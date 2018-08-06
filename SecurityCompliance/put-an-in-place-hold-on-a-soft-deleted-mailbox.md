@@ -1,0 +1,100 @@
+---
+title: 将就地保留置于 Exchange Online 中的软删除邮箱上
+ms.author: markjjo
+author: markjjo
+manager: laurawi
+ms.date: 1/18/2017
+ms.audience: ITPro
+ms.topic: article
+ms.service: O365-seccomp
+ms.custom: TN2DMC
+localization_priority: Normal
+ms.assetid: 421f72bd-dd43-4be1-82f5-0ae9ac43bd00
+description: 了解如何为软删除邮箱创建就地保留，以将其变为非活动邮箱并保留其内容。然后可以使用 Microsoft 电子数据展示工具来搜索非活动邮箱。
+ms.openlocfilehash: 226929764fe39b99f526301029d4a41e2fa486cc
+ms.sourcegitcommit: 22bca85c3c6d946083d3784f72e886c068d49f4a
+ms.translationtype: MT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 08/06/2018
+ms.locfileid: "22027609"
+---
+# <a name="put-an-in-place-hold-on-a-soft-deleted-mailbox-in-exchange-online"></a>将就地保留置于 Exchange Online 中的软删除邮箱上
+
+了解如何为软删除邮箱创建就地保留，以将其变为非活动邮箱并保留其内容。然后可以使用 Microsoft 电子数据展示工具来搜索非活动邮箱。
+  
+> [!NOTE]
+> 我们已推迟创建新的就地保留在 Exchange Online （在 Office 365 和 Exchange Online 独立计划） 的 2017 年 7 月 1，最后期限。但今年或早期明年，您将无法创建新的就地保留在 Exchange Online。作为使用就地保留的替代方法，您可以使用[电子数据展示事例](https://go.microsoft.com/fwlink/?linkid=780738)或[保留策略](https://go.microsoft.com/fwlink/?linkid=827811)在 Office 365 安全性&amp;合规性中心。我们停用新就地保留后，您仍可以修改现有的就地保留，并创建新的就地保留在 Exchange Server 2013 和 Exchange 混合部署仍会支持。然后您将仍然能够将邮箱置于诉讼保留。 
+  
+您可能必须其中联系人已离开组织和其相应的用户帐户和邮箱已删除的情况。然后，您认识到需要保留的邮箱中的信息。您可以做什么？如果没有过期的已删除的邮箱保留期，您可以将 （称为软删除邮箱） 的已删除邮箱置于就地保留，并使其非活动邮箱。*非活动邮箱*用于保留以前员工的电子邮件，他/她离开组织之后。非活动邮箱的内容会保留的已就地保留的持续时间置于软删除邮箱时已处于非活动状态。非活动邮箱后，您可以在 Exchange Online 中，Office 365 安全性内容搜索使用就地电子数据展示搜索邮箱&amp;合规性中心或 SharePoint Online 中的电子数据展示中心。 
+  
+> [!NOTE]
+> 在 Exchange Online 中，软删除邮箱是指已删除但可以在特定保留期内恢复的邮箱。Exchange Online 中的软删除邮箱保留期为 30 天。这意味着该邮箱可以在删除后 30 天内进行恢复（或变为非活动邮箱）。30 天后，软删除邮箱将标记为永久删除并且无法恢复或变为非活动邮箱。 
+  
+## <a name="before-you-begin"></a>准备工作
+<a name="sectionSection0"> </a>
+
+- 您必须使用 Windows PowerShell 中的**New-mailboxsearch** cmdlet 可以将软删除邮箱置于就地保留。不能使用 Exchange 管理员中心 (EAC) 或 SharePoint Online 中的电子数据展示中心。 
+    
+- 若要了解如何使用 Windows PowerShell 连接到 Exchange Online，请参阅[连接到 Exchange Online PowerShell](https://go.microsoft.com/fwlink/p/?linkid=396554)。
+    
+- 运行以下命令获取组织中软删除邮箱的标识信息。 
+    
+  ```
+  Get-Mailbox -SoftDeletedMailbox | FL Name,WhenSoftDeleted,DistinguishedName,ExchangeGuid,PrimarySmtpAddress
+  ```
+
+- 有关非活动邮箱的详细信息，请参阅 [Exchange Online 中的非活动邮箱](http://technet.microsoft.com/library/2f2948c5-1c5a-4643-865c-b36e4ac1414b.aspx)。
+    
+## <a name="put-an-in-place-hold-on-a-soft-deleted-mailbox-to-make-it-an-inactive-mailbox"></a>将就地保留置于软删除邮箱以使其变为非活动邮箱
+<a name="sectionSection1"> </a>
+
+使用 **New-MailboxSearch** cmdlet 将软删除邮箱变为非活动邮箱。有关详细信息，请参阅 [New-MailboxSearch](http://technet.microsoft.com/library/74303b47-bb49-407c-a43b-590356eae35c.aspx)。
+  
+1. 创建包含软删除邮箱的属性的变量。 
+    
+  ```
+  $SoftDeletedMailbox = Get-Mailbox -SoftDeletedMailbox -Identity <identity of soft-deleted mailbox>
+  ```
+
+    > [!IMPORTANT]
+    > 在上一命令中，使用**DistinguishedName**或**ExchangeGuid**属性的值标识软删除邮箱。这些属性是唯一的组织中的每个邮箱，而可以主动邮箱和软删除邮箱可能具有的相同的主 SMTP 地址。 
+  
+2. 创建就地保留并将其置于软删除邮箱上。在此示例中，未指定保留持续时间。这意味着项目将被无限期保留或一直保留到将该保留从非活动邮箱中删除为止。
+    
+  ```
+  New-MailboxSearch -Name "InactiveMailboxHold" -SourceMailboxes $SoftDeletedMailbox.DistinguishedName -InPlaceHoldEnabled $true
+  
+  ```
+
+    还可以在创建就地保留时指定保留持续时间。此示例保留非活动邮箱中的项目近 7 年。
+    
+  ```
+  New-MailboxSearch -Name "InactiveMailboxHold" -SourceMailboxes $SoftDeletedMailbox.DistinguishedName -InPlaceHoldEnabled $true -ItemHoldPeriod 2777
+  ```
+
+3. 一段时间后，运行下列命令之一，验证软删除邮箱是否为非活动邮箱。
+    
+  ```
+  Get-Mailbox -InactiveMailboxOnly
+  ```
+
+    或
+    
+  ```
+  Get-Mailbox -InactiveMailboxOnly -Identity $SoftDeletedMailbox.DistinguishedName  | FL IsInactiveMailbox
+  ```
+
+## <a name="more-information"></a>详细信息
+<a name="sectionSection2"> </a>
+
+在将软删除邮箱变为非活动邮箱后，有多种方法可以管理该邮箱。有关详细信息，请参阅：
+  
+- [在 Exchange Online 中更改非活动邮箱的保留期](http://technet.microsoft.com/library/96eb634e-af2f-454e-8014-b698396811c4.aspx)
+    
+- [恢复 Exchange Online 中的非活动邮箱](http://technet.microsoft.com/library/283838b4-66ba-4c34-b221-e1a3875e1d29.aspx)
+    
+- [还原 Exchange Online 中的非活动邮箱](http://technet.microsoft.com/library/1fb02feb-49e5-4485-aec5-9f1537b772b6.aspx)
+    
+- [从 Exchange Online 中的非活动邮箱删除保留](http://technet.microsoft.com/library/930a98c3-cd81-4aaa-8e22-19714cb2b731.aspx)
+    
+
