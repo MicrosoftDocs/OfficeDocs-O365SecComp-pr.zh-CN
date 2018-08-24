@@ -1,5 +1,4 @@
-# 
-  [入门](security-and-compliance.md)
+# [入门](security-and-compliance.md)
 ## [Office 365 安全路线图](security-roadmap.md)
 ## [配置 Office 365 租户为了提高安全性](tenant-wide-setup-for-increased-security.md)
 ## [转到安全性和合规性中心](go-to-the-securitycompliance-center.md)
@@ -411,6 +410,5 @@
 ### [向 Office 365 发送邮件](sending-mail-to-office-365.md)
 ### [非客户服务](services-for-non-customers.md)
 
-# 
-  [Office 365 企业版](https://docs.microsoft.com/Office365/Enterprise)
+# [Office 365 企业版](https://docs.microsoft.com/Office365/Enterprise)
 # [Office 365 for Business](https://support.office.com/office365admin)
