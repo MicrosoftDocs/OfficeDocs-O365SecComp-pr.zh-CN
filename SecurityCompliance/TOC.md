@@ -147,7 +147,7 @@
 ## [使用内容搜索](content-search.md)
 ### [内容搜索的关键字查询和搜索条件](keyword-queries-and-search-conditions.md)
 ### [查看内容搜索结果的关键字统计信息](view-keyword-statistics-for-content-search.md)
-### [导出内容搜索结果](content-search.md#export-search-results)
+### [导出内容搜索结果](export-search-results.md)
 ### [导出内容搜索报告](export-a-content-search-report.md)
 ### [搜索和删除电子邮件](search-for-and-delete-messagesadmin-help.md)
 ### [在 Office 365 中搜索本地用户基于云的邮箱](search-cloud-based-mailboxes-for-on-premises-users.md)
@@ -169,11 +169,11 @@
 ### [导出内容搜索结果时禁用报告](disable-reports-when-you-export-content-search-results.md)
 ## 使用内容搜索 PowerShell 脚本
 ### [使用内容搜索进行目标收集](use-content-search-for-targeted-collections.md)
-### [使用内容搜索在邮箱和 OneDrive for Business 站点中搜索用户列表](https://support.office.com/article/5f4f8206-2d6a-4cb2-bbc6-7a0698703cc0)
+### [使用内容搜索在邮箱和 OneDrive for Business 站点中搜索用户列表](search-the-mailbox-and-onedrive-for-business-for-a-list-of-users.md)
 ### [创建、报告和删除多个内容搜索](create-report-on-and-delete-multiple-content-searches.md)
 ### [克隆内容搜索](clone-a-content-search.md)
 
-# 管理法律调查
+# [管理法律调查](manage-legal-investigations.md)
 ## [创建和管理电子数据展示事例](ediscovery-cases.md)
 ## [分配电子数据展示权限](assign-ediscovery-permissions.md)
 ## [在 Office 365 中为电子数据展示调查设置合规性边界](set-up-compliance-boundaries.md)
@@ -183,7 +183,8 @@
 ## [使用脚本将用户添加到电子数据展示事例的保留中](use-a-script-to-add-users-to-a-hold-in-ediscovery.md)
 ## [创建电子数据展示事例中的保留的报告](create-a-report-on-holds-in-ediscovery-cases.md)
 ## 管理保留
-### [删除诉讼保留](create-a-litigation-hold.md)
+### [创建电子数据展示保留](ediscovery-cases.md#step-4-place-content-locations-on-hold)
+### [创建诉讼保留](create-a-litigation-hold.md)
 ### [删除保留状态云邮箱的“可恢复的项目”文件夹中的项目](delete-items-in-the-recoverable-items-folder-of-mailboxes-on-hold.md)
 ### [为置于保留状态的邮箱增加可恢复项目的配额](increase-the-recoverable-quota-for-mailboxes-on-hold.md)
 ### [如何识别为 Exchange Online 邮箱设置的保留类型](identify-a-hold-on-an-exchange-online-mailbox.md)
