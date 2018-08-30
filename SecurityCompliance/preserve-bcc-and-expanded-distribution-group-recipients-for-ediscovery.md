@@ -9,14 +9,16 @@ ms.topic: article
 ms.service: O365-seccomp
 ms.custom: TN2DMC
 localization_priority: Normal
+search.appverid:
+- MET150
 ms.assetid: eb8ddf15-0080-457e-9d83-e73e193da334
 description: 就地保留、 诉讼保留，和 Office 365 的保留策略允许您保留邮箱内容，以满足法规遵从性和电子数据展示要求。
-ms.openlocfilehash: 1149834181bca527bd06cea846f455e36fad283c
-ms.sourcegitcommit: 22bca85c3c6d946083d3784f72e886c068d49f4a
+ms.openlocfilehash: fe13884497db9e2549011815704c571c66a92476
+ms.sourcegitcommit: e9dca2d6a7838f98bb7eca127fdda2372cda402c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/06/2018
-ms.locfileid: "22026389"
+ms.lasthandoff: 08/21/2018
+ms.locfileid: "23002831"
 ---
 # <a name="preserve-bcc-and-expanded-distribution-group-recipients-for-ediscovery"></a>为电子数据展示保存密件抄送和展开的通讯组收件人
   

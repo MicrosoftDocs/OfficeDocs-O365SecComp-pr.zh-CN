@@ -9,14 +9,16 @@ ms.topic: reference
 ms.service: O365-seccomp
 ms.custom: TN2DMC
 localization_priority: Normal
+search.appverid:
+- MET150
 ms.assetid: 3aff33c5-1416-4867-a23b-e0c0c5b4d2be
 description: 摘要：本文介绍了 Office 365 如何在 DNS 中使用发件人策略框架 (SPF) TXT 记录，以确保目标电子邮件系统信任从自定义域发送的邮件。这适用于从 Office 365 发送的出站邮件。从 Office 365 发送给 Office 365 收件人的邮件始终可通过 SPF。
-ms.openlocfilehash: aea7f740a67ce282424efc409d25f3f135546ada
-ms.sourcegitcommit: 22bca85c3c6d946083d3784f72e886c068d49f4a
+ms.openlocfilehash: b42c2528f7a6a272e11d2434cce1e1735649962a
+ms.sourcegitcommit: e9dca2d6a7838f98bb7eca127fdda2372cda402c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/06/2018
-ms.locfileid: "22026459"
+ms.lasthandoff: 08/21/2018
+ms.locfileid: "23003281"
 ---
 # <a name="how-office-365-uses-sender-policy-framework-spf-to-prevent-spoofing"></a>Office 365 如何使用发件人策略框架 (SPF) 来防止欺骗
 
@@ -124,7 +126,7 @@ v=spf1 include:spf.protection.outlook.com -all
 
 请参考本文中的语法信息，构成自定义域的 SPF TXT 记录。尽管还有其他语法选项本文未提及，这些都是最常用的选项。在构成记录后，需要在域注册机构更新记录。
   
-有关 Office 365 需要包含的域的信息，请参阅 [SPF 所需的外部 DNS 记录](https://support.office.com/en-us/article/External-Domain-Name-System-records-for-Office-365-c0531a6f-9e25-4f2d-ad0e-a70bfef09ac0?ui=en-US&amp;rs=en-US&amp;ad=US)。使用[分步操作说明](https://office.microsoft.com/en-us/office365-suite-help/create-dns-records-for-office-365-HA102851099.aspx?CTT=5&amp;origin=HA102818404)更新域注册机构的 SPF (TXT) 记录。如果未列出你的注册机构，你将需要单独联系他们以了解如何更新你的记录。 
+有关 Office 365 需要包含的域的信息，请参阅 [SPF 所需的外部 DNS 记录](https://support.office.com/article/External-Domain-Name-System-records-for-Office-365-c0531a6f-9e25-4f2d-ad0e-a70bfef09ac0?ui=en-US&amp;rs=en-US&amp;ad=US)。使用[分步操作说明](https://office.microsoft.com/en-us/office365-suite-help/create-dns-records-for-office-365-HA102851099.aspx?CTT=5&amp;origin=HA102818404)更新域注册机构的 SPF (TXT) 记录。如果未列出你的注册机构，你将需要单独联系他们以了解如何更新你的记录。 
   
 ### <a name="spf-txt-record-syntax-for-office-365"></a>Office 365 的 SPF TXT 记录语法
 <a name="SPFSyntaxO365"> </a>
@@ -149,7 +151,7 @@ v=spf1 ip4:192.168.0.1 ip4:192.168.0.2 include:spf.protection.outlook.com -all
     
 -  _IP address_ 是要添加到 SPF TXT 记录的 IP 地址。通常情况下，这是组织的出站邮件服务器的 IP 地址。可以列出多个出站邮件服务器。有关详细信息，请参阅 [示例：多个出站本地邮件服务器和 Office 365 的 SPF TXT 记录](how-office-365-uses-spf-to-prevent-spoofing.md#ExampleSPFMultipleMailServerO365)。
     
--  _domain name_ 是您想要添加为合法发件人的域。有关 Office 365 应包含的域名列表，请参阅 [SPF 所需的外部 DNS 记录](https://support.office.com/en-us/article/External-Domain-Name-System-records-for-Office-365-c0531a6f-9e25-4f2d-ad0e-a70bfef09ac0?ui=en-US&amp;rs=en-US&amp;ad=US)。
+-  _domain name_ 是您想要添加为合法发件人的域。有关 Office 365 应包含的域名列表，请参阅 [SPF 所需的外部 DNS 记录](https://support.office.com/article/External-Domain-Name-System-records-for-Office-365-c0531a6f-9e25-4f2d-ad0e-a70bfef09ac0?ui=en-US&amp;rs=en-US&amp;ad=US)。
     
 - 强制规则通常是下列之一：
     

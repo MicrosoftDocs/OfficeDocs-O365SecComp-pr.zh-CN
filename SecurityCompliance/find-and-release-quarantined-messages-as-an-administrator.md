@@ -9,20 +9,22 @@ ms.topic: article
 ms.service: O365-seccomp
 ms.custom: TN2DMC
 localization_priority: Normal
+search.appverid:
+- MET150
 ms.assetid: ab95bf17-bb09-4dd1-9990-ddd02ddecf05
 description: 本主题介绍了 Exchange Online 和 Exchange Online Protection (EOP) 管理员如何在 Exchange 管理中心 (EAC) 中查找、释放和报告隔离邮件。
-ms.openlocfilehash: 5ebe65bf703087e8ad4bace827d84833eddb038f
-ms.sourcegitcommit: 22bca85c3c6d946083d3784f72e886c068d49f4a
+ms.openlocfilehash: a8c450471d2fe627346b5bea8db50b91d67ffd3f
+ms.sourcegitcommit: e9dca2d6a7838f98bb7eca127fdda2372cda402c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/06/2018
-ms.locfileid: "22027479"
+ms.lasthandoff: 08/21/2018
+ms.locfileid: "23003271"
 ---
 # <a name="find-and-release-quarantined-messages-as-an-administrator"></a>以管理员身份查找并释放隔离邮件
 
 本主题介绍了 Exchange Online 和 Exchange Online Protection (EOP) 管理员如何在 Exchange 管理中心 (EAC) 中查找、释放和报告隔离邮件。Office 365 将这些邮件发送到隔离邮箱的原因是，它们被标识为垃圾邮件或与传输规则匹配。 
   
-使用安全&amp;而不是 EAC 完成这些任务以及视图的任何和发送到隔离因为它们包含恶意软件的邮件处理的合规性中心。有关详细信息，请参阅[Office 365 中的隔离电子邮件](https://support.office.com/en-US/article/Quarantine-email-messages-in-Office-365-4c234874-015e-4768-8495-98fcccfc639b)。
+使用安全&amp;而不是 EAC 完成这些任务以及视图的任何和发送到隔离因为它们包含恶意软件的邮件处理的合规性中心。有关详细信息，请参阅[Office 365 中的隔离电子邮件](https://support.office.com/article/Quarantine-email-messages-in-Office-365-4c234874-015e-4768-8495-98fcccfc639b)。
   
 在 EAC 中的**隔离**页上列出了隔离的邮件。默认情况下，消息按降序对**RECEIVED**字段中。**发件人**、**主题**和**EXPIRES**值还会列出的每条消息。可以通过单击其邮件头在其中的任何字段进行排序。如果第二次单击列标题，将反转排序顺序。**隔离**页上显示最多 500 个邮件。 
   
@@ -158,7 +160,7 @@ ms.locfileid: "22027479"
     
 4. 单击**版本**。 
     
-如果单击**刷新**![刷新图标](media/ITPro-EAC-RefreshIcon.png)图标可刷新数据，然后双击邮件，您应看到它已释放给预期收件人。 
+如果单击**刷新**![刷新图标](media/ITPro-EAC-RefreshIcon.gif)图标可刷新数据，然后双击邮件，您应看到它已释放给预期收件人。 
   
 ### <a name="release-one-or-more-quarantined-messages-to-all-recipients"></a>将一个或多个隔离邮件释放给所有收件人
 <a name="Releaseoneormorequarantinedmessagestoallrecipients"> </a>
@@ -187,7 +189,7 @@ ms.locfileid: "22027479"
 > [!TIP]
 > 按照[如何确保邮件不会标记为垃圾邮件](how-to-help-ensure-that-a-message-isn-t-marked-as-spam.md)中的步骤，确保邮件未标记为垃圾邮件。 
   
-如果单击**刷新**![刷新图标](media/ITPro-EAC-RefreshIcon.png)图标可刷新数据，然后双击邮件，您应看到它已释放给预期收件人。 
+如果单击**刷新**![刷新图标](media/ITPro-EAC-RefreshIcon.gif)图标可刷新数据，然后双击邮件，您应看到它已释放给预期收件人。 
   
 ## <a name="for-more-information"></a>详细信息
 <a name="sectionSection4"> </a>

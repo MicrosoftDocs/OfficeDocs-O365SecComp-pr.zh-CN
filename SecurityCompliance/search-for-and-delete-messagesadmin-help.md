@@ -9,14 +9,16 @@ ms.topic: article
 ms.service: O365-seccomp
 ms.custom: TN2DMC
 localization_priority: Normal
+search.appverid:
+- MET150
 ms.assetid: 8c36bb03-e716-4fdd-9958-4aa7a2a1db42
 description: 管理员可以使用 Search-Mailbox cmdlet 来搜索用户邮箱，然后从邮箱中删除邮件。
-ms.openlocfilehash: ed110c4a3e36a93970af99e9548aa293d94307fd
-ms.sourcegitcommit: 22bca85c3c6d946083d3784f72e886c068d49f4a
+ms.openlocfilehash: c5f727d7772e23cc8723eee6a45e51e3ac074648
+ms.sourcegitcommit: e9dca2d6a7838f98bb7eca127fdda2372cda402c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/06/2018
-ms.locfileid: "22026579"
+ms.lasthandoff: 08/21/2018
+ms.locfileid: "23002820"
 ---
 # <a name="search-for-and-delete-messages---admin-help"></a>搜索和删除邮件 - 管理员帮助
   
@@ -26,8 +28,7 @@ ms.locfileid: "22026579"
   
 作为额外保护措施，可以使用  _TargetMailbox_ 和  _TargetFolder_ 参数，首先将邮件复制到另一个邮箱。这样可保留已删除邮件的副本，以防需要再次访问这些邮件。 
   
-## <a name="what-do-i-need-to-know-before-i-begin"></a>在开始之前，我需要知道什么？
-<a name="sectionSection0"> </a>
+## <a name="before-you-begin"></a>准备工作
 
 - 估计完成时间：10 分钟。实际时间可能因邮箱大小和搜索查询而异。
     
@@ -35,9 +36,9 @@ ms.locfileid: "22026579"
     
 - 您需要分配有以下两个管理角色才能在用户邮箱中搜索和删除邮件：
     
-  - **邮箱搜索**此角色允许您跨组织中的多个邮箱搜索的邮件。默认情况下，管理员不分配此角色。若要指定自己此角色，以便您可以搜索邮箱，请将自己添加为发现管理角色组的成员。请参阅[将用户添加到发现管理角色组](http://technet.microsoft.com/library/729e09d8-614b-431f-ae04-ae41fb4c628e.aspx)。
+  - **邮箱搜索**-此角色允许您跨组织中的多个邮箱搜索的邮件。默认情况下，管理员不分配此角色。若要指定自己此角色，以便您可以搜索邮箱，请将自己添加为发现管理角色组的成员。请参阅[将用户添加到发现管理角色组](http://technet.microsoft.com/library/729e09d8-614b-431f-ae04-ae41fb4c628e.aspx)。
     
-  - **邮箱导入导出**此角色可以从用户的邮箱中删除邮件。默认情况下，此角色不分配给任何角色组。若要从用户的邮箱中删除邮件，您可以向组织管理角色组添加邮箱导入导出角色。有关详细信息，请参阅[管理角色组](http://technet.microsoft.com/library/ab9b7a3b-bf67-4ba1-bde5-8e6ac174b82c.aspx)中的"将角色添加到角色组"部分。 
+  - **邮箱导入导出**-此角色可以从用户的邮箱中删除邮件。默认情况下，此角色不分配给任何角色组。若要从用户的邮箱中删除邮件，您可以向组织管理角色组添加邮箱导入导出角色。有关详细信息，请参阅[管理角色组](http://technet.microsoft.com/library/ab9b7a3b-bf67-4ba1-bde5-8e6ac174b82c.aspx)中的"将角色添加到角色组"部分。 
     
 - 如果要从中删除邮件的邮箱启用了单个项目恢复，则必须首先禁用该功能。有关详细信息，请参阅[启用或禁用邮箱的单个项目恢复](http://technet.microsoft.com/library/2e7f1bcd-8395-45ad-86ce-22868bd46af0.aspx)。
     
@@ -50,9 +51,8 @@ ms.locfileid: "22026579"
 - 运行**Search-mailbox** cmdlet 时，还将搜索用户的存档邮箱。同样，使用**Search-mailbox** cmdlet 与_DeleteContent_开关时，将删除主存档邮箱中的项目。要防止这样，您可以包括*DoNotIncludeArchive*开关。此外，我们建议不用于_DeleteContent_开关删除邮件在 Exchange Online 邮箱的自动扩展启用了存档因为可能出现意外的数据丢失。 
     
 ## <a name="search-messages-and-log-the-search-results"></a>搜索邮件并记录搜索结果
-<a name="sectionSection1"> </a>
 
-本示例在 April Stewart 的邮箱中搜索 Subject 字段中包含“Your bank statement”短语的邮件，并将搜索结果记录在管理员邮箱的 SearchAndDeleteLog 文件夹中。不会将邮件复制到目标邮箱或从目标邮箱删除。
+本示例在 April Stewart 的邮箱中搜索 Subject 字段中包含"Your bank statement"短语的邮件，并将搜索结果记录在管理员邮箱的 SearchAndDeleteLog 文件夹中。不会将邮件复制到目标邮箱或从目标邮箱删除。
   
 ```
 Search-Mailbox -Identity "April Stewart" -SearchQuery 'Subject:"Your bank statement"' -TargetMailbox administrator -TargetFolder "SearchAndDeleteLog" -LogOnly -LogLevel Full
@@ -66,10 +66,8 @@ Get-Mailbox -ResultSize unlimited | Search-Mailbox -SearchQuery attachment:troja
 
 有关详细的语法和参数信息，请参阅 [Search-Mailbox](http://technet.microsoft.com/library/9ee3b02c-d343-4816-a583-a90b1fad4b26.aspx)。
   
-[返回顶部](search-for-and-delete-messagesadmin-help.md#top)
-  
+ 
 ## <a name="search-and-delete-messages"></a>搜索并删除邮件
-<a name="sectionSection2"> </a>
 
 本示例在 April Stewart 的邮箱中搜索 Subject 字段中包含"Your bank statement"短语的邮件，然后从源邮箱中删除这些邮件，而不将搜索结果复制到另一个文件夹。如前所述，您需要分配"邮箱导入导出"管理角色才能从用户邮箱删除邮件。
   
@@ -93,12 +91,7 @@ Get-Mailbox -ResultSize unlimited | Search-Mailbox -SearchQuery 'Subject:"Downlo
 ```
 
 有关详细的语法和参数信息，请参阅 [Search-Mailbox](http://technet.microsoft.com/library/9ee3b02c-d343-4816-a583-a90b1fad4b26.aspx)。
-  
-[返回顶部](search-for-and-delete-messagesadmin-help.md#top)
-  
+
 ## <a name="using-the--loglevel-full-parameter"></a>使用 -LogLevel Full 参数
-<a name="sectionSection3"> </a>
 
 在上述部分示例中， _LogLevel_ 参数和  `Full` 值用于记录由 **Search-Mailbox** cmdlet 返回的结果的详细信息。 包含此参数时，将创建电子邮件并将其发送到  _TargetMailbox_ 参数指定的邮箱。日志文件（名为 Search Results.csv 的 CSV 格式文件）附加到此电子邮件，并置于由  _TargetFolder_ 参数指定的文件夹中。运行 **Search-Mailbox** cmdlet 时，日志文件包含搜索结果中的每个邮件的行。 
-  
-

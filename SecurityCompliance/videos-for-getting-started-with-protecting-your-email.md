@@ -9,14 +9,16 @@ ms.topic: article
 ms.service: O365-seccomp
 ms.custom: TN2DMC
 localization_priority: Normal
+search.appverid:
+- MET150
 ms.assetid: 393b0050-7c7e-49e6-a03d-b1e09fe4de9e
 description: 下面的一系列介绍视频将帮助您使用 Exchange Online Protection (EOP) 保护您的邮箱。这些视频适用于保护内部部署邮箱（如 Exchange Server 2013）的 EOP 独立客户，以及云托管邮箱默认由 EOP 保护的 Exchange Online 客户。
-ms.openlocfilehash: 190362750a47ff4efae9eff1b23e1f418d450087
-ms.sourcegitcommit: 22bca85c3c6d946083d3784f72e886c068d49f4a
+ms.openlocfilehash: 42d92b36cbfcf3261e391c8b3d74f44050f2881a
+ms.sourcegitcommit: e9dca2d6a7838f98bb7eca127fdda2372cda402c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/06/2018
-ms.locfileid: "22026709"
+ms.lasthandoff: 08/21/2018
+ms.locfileid: "23002911"
 ---
 # <a name="videos-for-getting-started-with-protecting-your-email"></a>电子邮件保护的入门视频
 

@@ -9,14 +9,16 @@ ms.topic: article
 ms.service: O365-seccomp
 ms.custom: TN2DMC
 localization_priority: Normal
+search.appverid:
+- MET150
 ms.assetid: b68df621-0a5f-4824-8abc-41e0c4fd1398
 description: Exchange Online Protection (EOP) 和 Exchange Online 支持通过 IPv6 的发件人不会发送邮件通过传输层安全性 (TLS) 的通信接收的匿名入站的电子邮件。您可以加入从 UNRESOLVED_TOKEN_VAL(exMCSS) 请求此功能，通过打开在 Office 365 管理中心通过 IPv6 接收邮件https://portal.office.com/adminportal/home，单击支持，然后单击新建服务请求)。如果您不加入到您将继续通过 IPv4 接收消息的 IPv6。
-ms.openlocfilehash: a07e79732e9027d5848b787101be11066b5f0cb5
-ms.sourcegitcommit: 22bca85c3c6d946083d3784f72e886c068d49f4a
+ms.openlocfilehash: 93575c57bb6eac5e0f92066dab3e6ed8b5f4b215
+ms.sourcegitcommit: e9dca2d6a7838f98bb7eca127fdda2372cda402c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/06/2018
-ms.locfileid: "22026289"
+ms.lasthandoff: 08/21/2018
+ms.locfileid: "23003011"
 ---
 # <a name="support-for-anonymous-inbound-email-messages-over-ipv6"></a>支持通过 IPv6 发送的匿名入站电子邮件
 

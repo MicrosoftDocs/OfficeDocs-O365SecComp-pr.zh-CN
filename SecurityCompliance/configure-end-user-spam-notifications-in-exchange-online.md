@@ -9,21 +9,23 @@ ms.topic: article
 ms.service: O365-seccomp
 ms.custom: TN2DMC
 localization_priority: Normal
+search.appverid:
+- MET150
 ms.assetid: bfc91c73-a955-40e1-a95f-ad466624339a
-description: 您可以配置最终用户垃圾邮件通知的默认公司范围内垃圾邮件筛选器策略或应用于域的自定义垃圾邮件筛选器策略。
-ms.openlocfilehash: 4a4c7c6b139fe0f8b0a1f6b69c1b95e321293af5
-ms.sourcegitcommit: 22bca85c3c6d946083d3784f72e886c068d49f4a
+description: 您可以针对默认的公司范围内内容筛选器策略或应用于域的自定义内容筛选器策略配置最终用户垃圾邮件通知。
+ms.openlocfilehash: da370497f78d7f253276c908061a9a80e2f74938
+ms.sourcegitcommit: e9dca2d6a7838f98bb7eca127fdda2372cda402c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/06/2018
-ms.locfileid: "22027529"
+ms.lasthandoff: 08/21/2018
+ms.locfileid: "23002737"
 ---
 # <a name="configure-end-user-spam-notifications-in-exchange-online"></a>Exchange Online 中配置最终用户垃圾邮件通知
 
 > [!IMPORTANT]
 > 本主题适用于 Exchange Online 客户正在保护云托管的邮箱。正在保护内部部署邮箱的 Exchange Online Protection (EOP) 独立客户应改为阅读以下主题：[在 EOP 中的配置最终用户垃圾邮件通知](configure-end-user-spam-notifications-in-eop.md)。 
   
-您可以配置最终用户垃圾邮件通知的默认公司范围内垃圾邮件筛选器策略或应用于域的自定义垃圾邮件筛选器策略。启用最终用户垃圾邮件通知消息允许最终用户自我管理自己的垃圾邮件隔离邮件。不能与策略应用于用户或组，或例外策略使用最终用户垃圾邮件通知。
+您可以针对默认的公司范围内内容筛选器策略或应用于域的自定义内容筛选器策略配置最终用户垃圾邮件通知。启用最终用户垃圾邮件通知邮件可以使您的最终用户自己管理自己的垃圾邮件隔离邮件。最终用户垃圾邮件通知无法与应用于用户、组的策略或有例外情况的策略一起使用。
   
 最终用户垃圾邮件通知包含最终用户在您所配置的时间段（您可以指定一个介于 1 到 15 天之间的值）内收到的所有垃圾邮件隔离邮件的列表。您还可以配置通知邮件的编写语言。
   
@@ -39,9 +41,9 @@ ms.locfileid: "22027529"
   
 ## <a name="use-the-eac-to-configure-end-user-spam-notifications"></a>使用 EAC 配置最终用户垃圾邮件通知
 
-1. 在 Exchange 管理员中心 (EAC) 中，导航到**保护** \> **垃圾邮件筛选器**。
+1. 在 Exchange 管理员中心 (EAC) 中，导航到**保护** \> **内容筛选器**。
     
-2. 选择您要为其启用 （其默认情况下禁用） 的最终用户垃圾邮件通知的垃圾邮件筛选器策略。
+2. 选择您想要启用最终用户垃圾邮件通知（默认禁用）的内容筛选器策略。
     
 3. 在右窗格中，其中显示有关您的策略的摘要信息，请单击**配置最终用户垃圾邮件通知**链接。 
     
@@ -53,12 +55,12 @@ ms.locfileid: "22027529"
     
 3. **通知语言**使用下拉列表，选择编写此策略的最终用户垃圾邮件通知的语言。 
     
-5. 单击**保存**。在右窗格中显示的垃圾邮件筛选器策略设置，包括您的最终用户垃圾邮件通知设置摘要。
+5. 单击**保存**。在右窗格中显示的内容筛选器策略设置，包括您的最终用户垃圾邮件通知设置摘要。
     
 > [!NOTE]
->  最终用户垃圾邮件通知只将垃圾邮件筛选器策略启用的功能。> 每天一次只发送最终用户垃圾邮件通知。通知的传递时间不能保证任何特定客户，并且不可配置。 
+>  最终用户垃圾邮件通知只对已启用的内容筛选器策略可用。 >  每天只发送一次最终用户垃圾邮件通知。无法保证和配置任何特定客户的通知发送时间。 
   
- **提示：** 如果您想要通过完全实现它们之前将其发送到一组有限的用户来测试最终用户垃圾邮件通知，创建使最终用户垃圾邮件通知用户所在的域的自定义垃圾邮件筛选器策略。然后，在 EAC 中，在**邮件流\>规则**，创建传输规则阻止邮件从 quarantine@messaging.microsoft.com （发送通知的电子邮件地址） 与您想要接收通知的用户的例外。下图是从域 Contoso.com 创建两个用户 （SaraD 和 AlexD） 的异常的示例： 
+ **提示：** 如果您想要通过完全实现它们之前将其发送到一组有限的用户来测试最终用户垃圾邮件通知，创建自定义内容筛选器策略，用户驻留在其中的域的最终用户垃圾邮件通知。然后，在 EAC 中，在**邮件流\>规则**，创建传输规则阻止邮件从 quarantine@messaging.microsoft.com （发送通知的电子邮件地址） 与您想要接收通知的用户的例外。下图是从域 Contoso.com 创建两个用户 （SaraD 和 AlexD） 的异常的示例： 
   
 ![测试最终用户垃圾邮件通知的传输规则](media/EOP-ESN-testspecificusers.jpg)
   

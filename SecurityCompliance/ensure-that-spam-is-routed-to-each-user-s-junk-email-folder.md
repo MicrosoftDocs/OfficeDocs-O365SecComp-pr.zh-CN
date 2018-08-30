@@ -9,14 +9,16 @@ ms.topic: article
 ms.service: O365-seccomp
 ms.custom: TN2DMC
 localization_priority: Normal
+search.appverid:
+- MET150
 ms.assetid: 0cbaccf8-4afc-47e3-a36d-a84598a55fb8
 description: EOP 客户的默认反垃圾邮件操作是将垃圾邮件移动到收件人的垃圾邮件文件夹。为了使此操作，以与内部部署邮箱一起使用，您必须来检测垃圾邮件邮件头由 EOP 添加您的内部边缘或集线器服务器上配置 Exchange 传输规则。这些传输规则设置 Set-organizationconfig cmdlet 的 SclJunkThreshold 属性用来将垃圾邮件移动到垃圾邮件文件夹中每个邮箱的垃圾邮件可信度 (SCL)。
-ms.openlocfilehash: 290a3cc6aed07cd4d91df65350fd49c9226a0d64
-ms.sourcegitcommit: 22bca85c3c6d946083d3784f72e886c068d49f4a
+ms.openlocfilehash: 1b0a9e5ee39820baade714612ca0b0bdb7a81bb9
+ms.sourcegitcommit: e9dca2d6a7838f98bb7eca127fdda2372cda402c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/06/2018
-ms.locfileid: "22026629"
+ms.lasthandoff: 08/21/2018
+ms.locfileid: "23002851"
 ---
 # <a name="ensure-that-spam-is-routed-to-each-users-junk-email-folder"></a>确保垃圾邮件已路由到每个用户的“垃圾邮件”文件夹
 

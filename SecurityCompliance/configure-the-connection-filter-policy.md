@@ -9,14 +9,16 @@ ms.topic: article
 ms.service: O365-seccomp
 ms.custom: TN2DMC
 localization_priority: Normal
+search.appverid:
+- MET150
 ms.assetid: 6ae78c12-7bbe-44fa-ab13-c3768387d0e3
 description: 若要确保不阻止从您信任的人员发送的电子邮件，可以使用的连接筛选器策略创建一个允许列表，也称为安全发件人列表，您信任的 IP 地址。您还可以创建阻止发件人列表。
-ms.openlocfilehash: d106e55779c6246b77018fef3ab9d58fa759d99e
-ms.sourcegitcommit: 22bca85c3c6d946083d3784f72e886c068d49f4a
+ms.openlocfilehash: cb9b73ff61b477f1c7ea0bb8da4039bebce83d1b
+ms.sourcegitcommit: e9dca2d6a7838f98bb7eca127fdda2372cda402c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/06/2018
-ms.locfileid: "22027599"
+ms.lasthandoff: 08/21/2018
+ms.locfileid: "23003261"
 ---
 # <a name="configure-the-connection-filter-policy"></a>配置连接筛选器策略
  
@@ -52,7 +54,7 @@ ms.locfileid: "22027599"
     
 2. 单击**连接筛选**菜单项，然后创建所需的列表： IP 允许列表、 IP 阻止列表，或同时。 
     
-    若要创建这些列表，请单击![添加图标](media/ITPro-EAC-AddIcon.png)。在随后出现的对话框中指定的 IP 地址或地址范围，，然后单击**ok**。重复此过程以添加其他地址。（您可以还编辑或删除 IP 地址后已添加。）
+    若要创建这些列表，请单击![添加图标](media/ITPro-EAC-AddIcon.gif)。在随后出现的对话框中指定的 IP 地址或地址范围，，然后单击**ok**。重复此过程以添加其他地址。（您可以还编辑或删除 IP 地址后已添加。）
     
     > [!NOTE]
     >  如果向这两个列表添加一个 IP 地址，则允许从其发送的电子邮件。 >  IPV4 IP 地址必须以 nnn.nnn.nnn.nnn 的格式进行指定，其中 nnn 代表 0 至 255 的任意数字。您也可以采用 nnn.nnn.nnn.nnn/rr 格式指定无类别域际路由选择 (CIDR) 的范围，其中 rr 代表 24 至 32 的任意数字。要指定超出 24 至 32 的范围，请参阅 [配置 IP 允许列表时的其他注意事项](configure-the-connection-filter-policy.md#bkmk_addtionalconsiderationswhenconfiguringipallowlists)。 >  您最多可以指定 1273 个条目，条目可以是单个 IP 地址或 IP 地址的 CIDR 范围（从 /24 到 /32）。 >  如果您发送 TLS 加密邮件，则不支持 IPv6 地址和地址范围。 
@@ -74,13 +76,13 @@ ms.locfileid: "22027599"
   
 1. 在 EAC 中，导航到**邮件流** \> **规则**。
     
-2. 单击![添加图标](media/ITPro-EAC-AddIcon.png)，然后选择**创建新规则**。
+2. 单击![添加图标](media/ITPro-EAC-AddIcon.gif)，然后选择**创建新规则**。
     
 3. 为该规则指定一个名称，然后单击**更多选项**。
     
 4. 在**以下情况应用此规则**，选择**发件人**，然后选择**IP 地址处于这些范围或完全匹配**。
     
-5. 在**指定 IP 地址**，请指定 IP 地址范围，单击**添加**![添加图标](media/ITPro-EAC-AddIcon.png)，然后单击**确定**。
+5. 在**指定 IP 地址**，请指定 IP 地址范围，单击**添加**![添加图标](media/ITPro-EAC-AddIcon.gif)，然后单击**确定**。
     
 6. 在**执行以下操作**下选择**修改邮件属性**，然后**将垃圾邮件可信度 (SCL) 设置**中设置操作。在**指定 SCL**框中，选择**绕过垃圾邮件筛选**，并单击**确定**。
     
@@ -100,19 +102,19 @@ ms.locfileid: "22027599"
   
 1. 在 EAC 中，导航到**邮件流** \> **规则**。
     
-2. 单击![添加图标](media/ITPro-EAC-AddIcon.png)，然后选择**创建新规则**。
+2. 单击![添加图标](media/ITPro-EAC-AddIcon.gif)，然后选择**创建新规则**。
     
 3. 为该规则指定一个名称，然后单击**更多选项**。
     
 4. 在**以下情况应用此规则**，选择**发件人**，然后选择**IP 地址处于这些范围或完全匹配**。
     
-5. 在**指定 IP 地址**框中，指定的 IP 地址或 IP 地址范围您输入的 IP 允许列表中，单击**添加**![添加图标](media/ITPro-EAC-AddIcon.png)，然后单击**确定**。
+5. 在**指定 IP 地址**框中，指定的 IP 地址或 IP 地址范围您输入的 IP 允许列表中，单击**添加**![添加图标](media/ITPro-EAC-AddIcon.gif)，然后单击**确定**。
     
 6. 下**执行以下操作**，通过选择**修改邮件属性**，然后**将垃圾邮件可信度 (SCL) 设置**来设置操作。在**指定 SCL**框中，选择**0**，并单击**确定**。
     
 7. 单击**添加例外**，并在**除非**下选择**发件人**选择**域**。 
     
-8. 在**指定域**框中，输入您要绕过垃圾邮件筛选，如**contosob.com**的域。单击**添加**![添加图标](media/ITPro-EAC-AddIcon.png)以将其移到的短语列表。如果您想要将其他域添加为异常，并在完成时单击**确定**，请重复此步骤。 
+8. 在**指定域**框中，输入您要绕过垃圾邮件筛选，如**contosob.com**的域。单击**添加**![添加图标](media/ITPro-EAC-AddIcon.gif)以将其移到的短语列表。如果您想要将其他域添加为异常，并在完成时单击**确定**，请重复此步骤。 
     
 9. 如果需要，您可以进行选择，在特定时间内审核规则、测试规则及激活规则，或者选择进行其他操作。我们建议首先在一段时间内测试规则，然后再强制应用。[Manage Transport Rules](http://technet.microsoft.com/library/e7a81372-b6d7-4d1f-bc9e-a845a7facac2.aspx)包含有关这些选择的详细信息。 
     

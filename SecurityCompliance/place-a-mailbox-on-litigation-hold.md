@@ -9,14 +9,16 @@ ms.topic: article
 ms.service: O365-seccomp
 ms.custom: TN2DMC
 localization_priority: Normal
+search.appverid:
+- MET150
 ms.assetid: adee4621-3626-4aec-aa53-00b35ff0d0b0
 description: '将邮箱置于"诉讼保留"以保留所有的邮箱内容，包括已删除项和已修改项的原始版本。 '
-ms.openlocfilehash: 8f440f5fc0bc7dafd639bdf8136808aa2f3bd35f
-ms.sourcegitcommit: 22bca85c3c6d946083d3784f72e886c068d49f4a
+ms.openlocfilehash: 9c2d5c77a604e4dbe6e1f1db75142d3bf5790618
+ms.sourcegitcommit: e9dca2d6a7838f98bb7eca127fdda2372cda402c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/06/2018
-ms.locfileid: "22026439"
+ms.lasthandoff: 08/21/2018
+ms.locfileid: "23002841"
 ---
 # <a name="place-a-mailbox-on-litigation-hold"></a>将邮箱放到诉讼保留中
  
@@ -51,7 +53,7 @@ ms.locfileid: "22026439"
 
 1. 转到" **收件人**"\>" **邮箱**"。
     
-2. 在用户邮箱列表中，单击您想要将置于诉讼保留状态，邮箱，然后单击**编辑**![编辑图标](media/ITPro-EAC-EditIcon.png)。
+2. 在用户邮箱列表中，单击您想要将置于诉讼保留状态，邮箱，然后单击**编辑**![编辑图标](media/ITPro-EAC-EditIcon.gif)。
     
 3. 在邮箱属性页上，单击**邮箱功能。**
     
@@ -124,7 +126,7 @@ P
     
 1. 转到" **收件人**"\>" **邮箱**"。
     
-2. 在用户邮箱列表中，单击您想要验证的诉讼保留设置的邮箱，然后单击**编辑**![编辑图标](media/ITPro-EAC-EditIcon.png)。
+2. 在用户邮箱列表中，单击您想要验证的诉讼保留设置的邮箱，然后单击**编辑**![编辑图标](media/ITPro-EAC-EditIcon.gif)。
     
 3. 在邮箱属性页上，单击**邮箱功能。**
     

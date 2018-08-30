@@ -9,14 +9,16 @@ ms.topic: troubleshooting
 ms.service: O365-seccomp
 ms.custom: TN2DMC
 localization_priority: Normal
+search.appverid:
+- MET150
 ms.assetid: 0bcecdd4-3343-4cc0-9e58-e19d4de515e8
 description: 当您尝试向其电子邮件地址位于 Office 365 中的收件人发送电子邮件时，是否收到一条错误消息？如果您认为不应该会收到错误消息，则可以使用除名门户将自己从 Office 365 阻止的发件人名单中删除。
-ms.openlocfilehash: 127b305cdb27cffadc7ad6a43a5d2db2440365ca
-ms.sourcegitcommit: 22bca85c3c6d946083d3784f72e886c068d49f4a
+ms.openlocfilehash: 4964429f4d3aa1a585b1b543929f83c2cebfb9a4
+ms.sourcegitcommit: e9dca2d6a7838f98bb7eca127fdda2372cda402c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/06/2018
-ms.locfileid: "22026229"
+ms.lasthandoff: 08/21/2018
+ms.locfileid: "23003251"
 ---
 # <a name="use-the-delist-portal-to-remove-yourself-from-the-office-365-blocked-senders-list"></a>使用除名门户来将自己从 Office 365 阻止的发件人名单中删除
 
@@ -28,7 +30,7 @@ Microsoft 使用阻止的发件人名单来防止其客户遭受垃圾邮件、�
   
 在您收到包含类似于以下错误的邮件回复时，您就知道自己已被添加到该列表中：
   
-访问被拒绝，550 5.7.606-649 禁止发送 IP [ _IP 地址_];请求此列表中的删除，请访问https://sender.office.com/然后按照说明操作。有关详细信息，请参阅[Office 365 中的电子邮件未送达报告](http://go.microsoft.com/fwlink/?LinkID=526653)。
+访问被拒绝，550 5.7.606-649 禁止发送 IP [_IP 地址_];请求此列表中的删除，请访问https://sender.office.com/然后按照说明操作。有关详细信息，请参阅[Office 365 中的电子邮件未送达报告](http://go.microsoft.com/fwlink/?LinkID=526653)。
   
 其中  _IP address_ 是邮件服务器在其上运行的计算机的 IP 地址。 
   

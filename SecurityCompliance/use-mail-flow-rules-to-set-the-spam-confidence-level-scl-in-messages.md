@@ -1,5 +1,5 @@
 ---
-title: Use mail flow rules to set the spam confidence level (SCL) in messages
+title: 使用邮件流规则设置邮件中的垃圾邮件可信度 (SCL)
 ms.author: krowley
 author: kccross
 manager: laurawi
@@ -9,16 +9,18 @@ ms.topic: article
 ms.service: O365-seccomp
 ms.custom: TN2DMC
 localization_priority: Normal
+search.appverid:
+- MET150
 ms.assetid: 4ccab17a-6d49-4786-aa28-92fb28893e99
 description: 您可以创建传输规则来设置电子邮件的垃圾邮件可信度 (SCL)。SCL 是判断某个邮件在多大程度上是垃圾邮件的衡量手段。"垃圾邮件"是未经请求的（并且通常是不必要的）电子邮件。根据 SCL 评级的不同，该服务对邮件采取不同的操作。例如，您可能想要使从您组织内部人员发送的邮件规避垃圾邮件内容筛选，因为您相信从内部同事发送的邮件并非垃圾邮件。使用传输规则设置邮件的 SCL 值可提高您处理垃圾邮件的控制能力。
-ms.openlocfilehash: ad89230dac9de668488b40090d70d2b697a86edd
-ms.sourcegitcommit: 22bca85c3c6d946083d3784f72e886c068d49f4a
+ms.openlocfilehash: 7abd0d1881374b1f2a4bd32ee480445f7683d1b3
+ms.sourcegitcommit: e9dca2d6a7838f98bb7eca127fdda2372cda402c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/06/2018
-ms.locfileid: "22026729"
+ms.lasthandoff: 08/21/2018
+ms.locfileid: "23002891"
 ---
-# <a name="use-mail-flow-rules-to-set-the-spam-confidence-level-scl-in-messages"></a>Use mail flow rules to set the spam confidence level (SCL) in messages
+# <a name="use-mail-flow-rules-to-set-the-spam-confidence-level-scl-in-messages"></a>使用邮件流规则设置邮件中的垃圾邮件可信度 (SCL)
 
 您可以创建传输规则来设置电子邮件的垃圾邮件可信度 (SCL)。SCL 是判断某个邮件在多大程度上是垃圾邮件的衡量手段。"垃圾邮件"是未经请求的（并且通常是不必要的）电子邮件。根据 SCL 评级的不同，该服务对邮件采取不同的操作。例如，您可能想要使从您组织内部人员发送的邮件规避垃圾邮件内容筛选，因为您相信从内部同事发送的邮件并非垃圾邮件。使用传输规则设置邮件的 SCL 值可提高您处理垃圾邮件的控制能力。 
   
@@ -34,7 +36,7 @@ ms.locfileid: "22026729"
 
 1. 在 Exchange 管理员中心 (EAC) 中，选择**邮件流** \> **规则**。
     
-2. 选择**新建**![添加图标](media/ITPro-EAC-AddIcon.png)，然后选择**创建新规则**。
+2. 选择**新建**![添加图标](media/ITPro-EAC-AddIcon.gif)，然后选择**创建新规则**。
     
 3. 指定规则名称。
     
