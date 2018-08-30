@@ -9,14 +9,16 @@ ms.topic: article
 ms.service: O365-seccomp
 ms.custom: TN2DMC
 localization_priority: Normal
+search.appverid:
+- MET150
 ms.assetid: 8079f193-1b40-4081-9e5d-d0e50dfbcc59
 description: 客户有时 askwhat 的垃圾邮件和批量邮件之间的区别？本主题的目的是来解释差并提供有关 Exchange Online 和 Exchange Online Protection (EOP) 中对两者可用的不同选项的信息。
-ms.openlocfilehash: 2cd9d9d91cf44af910983c045192ed7639d27417
-ms.sourcegitcommit: 22bca85c3c6d946083d3784f72e886c068d49f4a
+ms.openlocfilehash: 87f946c7309589595efd3e11e998e0a9f503b651
+ms.sourcegitcommit: e9dca2d6a7838f98bb7eca127fdda2372cda402c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/06/2018
-ms.locfileid: "22026239"
+ms.lasthandoff: 08/21/2018
+ms.locfileid: "23003151"
 ---
 # <a name="whats-the-difference-between-junk-email-and-bulk-email"></a>垃圾邮件和批量邮件之间有什么差异？
 

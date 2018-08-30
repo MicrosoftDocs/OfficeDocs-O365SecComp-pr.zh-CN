@@ -9,14 +9,16 @@ ms.topic: reference
 ms.service: O365-seccomp
 ms.custom: TN2DMC
 localization_priority: Normal
+search.appverid:
+- MET150
 ms.assetid: c440b2ac-cafa-4be5-ba4c-14278a7990ae
 description: 本主题提供了关于托管隔离的常见问题及解答。
-ms.openlocfilehash: 6aebeadc5155cbdb8cbeeb73e29c8b8cb0d53767
-ms.sourcegitcommit: 22bca85c3c6d946083d3784f72e886c068d49f4a
+ms.openlocfilehash: cc8a05b575e17dbc71d4b9e214cb29a4cafe8b6b
+ms.sourcegitcommit: e9dca2d6a7838f98bb7eca127fdda2372cda402c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/06/2018
-ms.locfileid: "22027079"
+ms.lasthandoff: 08/21/2018
+ms.locfileid: "23003191"
 ---
 # <a name="quarantine-faq"></a>隔离常见问题解答
 
@@ -24,7 +26,7 @@ ms.locfileid: "22027079"
   
  **问： 如何在隔离管理恶意软件隔离邮件？**
   
-您需要使用安全&amp;合规性中心以查看并使用发送到隔离因为它们包含恶意软件的邮件。有关详细信息，请参阅[Office 365 中的隔离电子邮件](https://support.office.com/en-US/article/Quarantine-email-messages-in-Office-365-4c234874-015e-4768-8495-98fcccfc639b)。
+您需要使用安全&amp;合规性中心以查看并使用发送到隔离因为它们包含恶意软件的邮件。有关详细信息，请参阅[Office 365 中的隔离电子邮件](https://support.office.com/article/Quarantine-email-messages-in-Office-365-4c234874-015e-4768-8495-98fcccfc639b)。
   
  **问：如何将该服务配置为将垃圾邮件隔离的邮件发送到隔离邮箱？**
   

@@ -1,5 +1,5 @@
 ---
-title: 使用传输规则来配置筛选批量电子邮件
+title: 使用传输规则来配置批量电子邮件筛选
 ms.author: krowley
 author: kccross
 manager: laurawi
@@ -9,16 +9,18 @@ ms.topic: article
 ms.service: O365-seccomp
 ms.custom: TN2DMC
 localization_priority: Normal
+search.appverid:
+- MET150
 ms.assetid: 2889c82e-fab0-4e85-87b0-b001b2ccd4f7
 description: 您可以使用默认的垃圾邮件内容筛选器策略针对垃圾邮件和批量电子设置公司范围的内容筛选器。请查看配置垃圾邮件筛选器策略和 Set-HostedContentFilterPolicy 以了解如何设置内容筛选器策略。
-ms.openlocfilehash: f72fa5cc50ab6aa5447e3af9fabc365457c82973
-ms.sourcegitcommit: 22bca85c3c6d946083d3784f72e886c068d49f4a
+ms.openlocfilehash: 8fa4ba619b55ae12207f36b7625acfaa9838e696
+ms.sourcegitcommit: e9dca2d6a7838f98bb7eca127fdda2372cda402c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/06/2018
-ms.locfileid: "22027679"
+ms.lasthandoff: 08/21/2018
+ms.locfileid: "23002467"
 ---
-# <a name="use-transport-rules-to-configure-bulk-email-filtering"></a>使用传输规则来配置筛选批量电子邮件
+# <a name="use-transport-rules-to-configure-bulk-email-filtering"></a>使用传输规则来配置批量电子邮件筛选
 
 您可以使用默认的垃圾邮件内容筛选器策略针对垃圾邮件和批量电子设置公司范围的内容筛选器。请查看[配置垃圾邮件筛选器策略](configure-your-spam-filter-policies.md)和 [Set-HostedContentFilterPolicy](http://technet.microsoft.com/library/f597aa65-baa7-49d0-8832-2a300073f211.aspx) 以了解如何设置内容筛选器策略。 
   
@@ -34,7 +36,7 @@ ms.locfileid: "22027679"
 
 1. 在 Exchange 管理员中心 (EAC) 中，转到**邮件流** \> **规则**。
     
-2. 单击**添加**![添加图标](media/ITPro-EAC-AddIcon.png)，然后选择**创建新规则**。
+2. 单击**添加**![添加图标](media/ITPro-EAC-AddIcon.gif)，然后选择**创建新规则**。
     
 3. 指定规则名称。
     
@@ -89,7 +91,7 @@ ms.locfileid: "22027679"
 
 1. 在 EAC 中，转到**邮件流** \> **规则**。
     
-2. 单击**添加**![添加图标](media/ITPro-EAC-AddIcon.png)，然后选择**创建新规则**。
+2. 单击**添加**![添加图标](media/ITPro-EAC-AddIcon.gif)，然后选择**创建新规则**。
     
 3. 指定规则名称。
     

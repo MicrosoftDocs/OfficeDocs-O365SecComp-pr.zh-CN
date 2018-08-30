@@ -9,14 +9,16 @@ ms.topic: article
 ms.service: O365-seccomp
 ms.custom: TN2DMC
 localization_priority: Normal
+search.appverid:
+- MET150
 ms.assetid: c7dee22c-9b5b-425c-91a9-d093204ff84e
 description: 为 Exchange 2013 和 Exchange Online 的组织管理员，您可以设置 Outlook Web App 以允许发送和接收 S/MIME 的受保护的邮件。使用等 cmdlet 可以管理此功能通过 Exchange 命令行管理程序接口。
-ms.openlocfilehash: d351129c7e12a66b530e0e4f82107728fd8387ae
-ms.sourcegitcommit: 22bca85c3c6d946083d3784f72e886c068d49f4a
+ms.openlocfilehash: e4bbf6cb8b0e2976b856045fc8a474bc2aa2a55a
+ms.sourcegitcommit: e9dca2d6a7838f98bb7eca127fdda2372cda402c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/06/2018
-ms.locfileid: "22027129"
+ms.lasthandoff: 08/21/2018
+ms.locfileid: "23002499"
 ---
 # <a name="configure-smime-settings-for-outlook-web-app"></a>配置 Outlook Web App 的 S/MIME 设置
 

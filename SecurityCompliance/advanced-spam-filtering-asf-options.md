@@ -9,14 +9,16 @@ ms.topic: article
 ms.service: O365-seccomp
 ms.custom: TN2DMC
 localization_priority: Normal
+search.appverid:
+- MET150
 ms.assetid: b286f853-b484-4af0-b01f-281fffd85e7a
 description: 高级垃圾邮件筛选选项使管理员能够检查的一条消息的各种内容属性。在邮件中的这些属性的状态会增加 （从而提高其标识为垃圾邮件的可能性） 的邮件的垃圾邮件得分，或将邮件标记为垃圾邮件。ASF 选项面向特定的邮件属性，如 HTML 标记和 URL 重定向，通常在垃圾邮件中找到。
-ms.openlocfilehash: 4b67c3a9a79c4a51bdebed5ca1a6415cc7bd13ae
-ms.sourcegitcommit: 22bca85c3c6d946083d3784f72e886c068d49f4a
+ms.openlocfilehash: 9a372d002717eacf9470b11b65c4b8f268f48e5a
+ms.sourcegitcommit: e9dca2d6a7838f98bb7eca127fdda2372cda402c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/06/2018
-ms.locfileid: "22026569"
+ms.lasthandoff: 08/21/2018
+ms.locfileid: "23003061"
 ---
 # <a name="advanced-spam-filtering--options"></a>高级垃圾邮件筛选选项
 

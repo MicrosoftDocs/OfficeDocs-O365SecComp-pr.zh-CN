@@ -11,12 +11,12 @@ ms.custom: TN2DMC
 localization_priority: Normal
 ms.assetid: 4bfaf2ab-e633-4227-8bde-effefb41a3db
 description: 定义邮件用户是管理 Exchange Online Protection (EOP) 服务的重要部分。
-ms.openlocfilehash: e985adf5659b50cf567ea798a092f809d77ca470
-ms.sourcegitcommit: 22bca85c3c6d946083d3784f72e886c068d49f4a
+ms.openlocfilehash: 46bc63232be3ece8b9e5c6fce6bbea18dcfdf2b4
+ms.sourcegitcommit: e9dca2d6a7838f98bb7eca127fdda2372cda402c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/06/2018
-ms.locfileid: "22027389"
+ms.lasthandoff: 08/21/2018
+ms.locfileid: "23003041"
 ---
 # <a name="manage-mail-users-in-eop"></a>在 EOP 中管理邮件用户
 
@@ -101,7 +101,7 @@ ms.locfileid: "22027389"
     
 ### <a name="to-edit-or-remove-a-mail-user-in-the-eac"></a>在 EAC 中编辑或删除邮件用户的步骤
 
-- 在 EAC 中，转到**收件人** \> **联系人**。在用户列表中，单击您想要查看或更改的用户，然后选择**编辑**![编辑图标](../media/ITPro-EAC-EditIcon.png)以根据需要更新的用户设置。您可以更改用户的名称、 别名或联系人信息，并且您可以在组织中记录有关用户的角色的详细的信息。您可以选择一名用户，然后选择**删除**![删除图标](../media/ITPro-EAC-RemoveIcon.png)删除它。 
+- 在 EAC 中，转到**收件人** \> **联系人**。在用户列表中，单击您想要查看或更改的用户，然后选择**编辑**![编辑图标](../media/ITPro-EAC-EditIcon.gif)以根据需要更新的用户设置。您可以更改用户的名称、 别名或联系人信息，并且您可以在组织中记录有关用户的角色的详细的信息。您可以选择一名用户，然后选择**删除**![删除图标](../media/ITPro-EAC-RemoveIcon.gif)删除它。 
     
 ## <a name="use-remote-windows-powershell-to-manage-mail-users"></a>使用远程 Windows PowerShell 管理邮件用户
 

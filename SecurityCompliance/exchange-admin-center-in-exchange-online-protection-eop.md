@@ -1,5 +1,5 @@
 ---
-title: 'Exchange Online Protection 中的 Exchange 管理员中心 '
+title: 'Exchange Online Protection 中的 Exchange 管理中心 '
 ms.author: krowley
 author: kccross
 manager: laurawi
@@ -9,22 +9,24 @@ ms.topic: overview
 ms.service: O365-seccomp
 ms.custom: TN2DMC
 localization_priority: Normal
+search.appverid:
+- MET150
 ms.assetid: 97921f0e-832f-40c7-b56d-414faede5191
 description: Exchange 管理中心 (EAC) 是基于 Web 的 Microsoft Exchange Online Protection (EOP) 的管理控制台。
-ms.openlocfilehash: 99640e561b41e47a74e7c22f0bbdcacd0dd80bd7
-ms.sourcegitcommit: 22bca85c3c6d946083d3784f72e886c068d49f4a
+ms.openlocfilehash: 144907110af9fcbec1c6399e0695abb705bef409
+ms.sourcegitcommit: e9dca2d6a7838f98bb7eca127fdda2372cda402c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/06/2018
-ms.locfileid: "22026309"
+ms.lasthandoff: 08/21/2018
+ms.locfileid: "23002941"
 ---
-# <a name="exchange-admin-center-in-exchange-online-protection"></a>Exchange Online Protection 中的 Exchange 管理员中心 
+# <a name="exchange-admin-center-in-exchange-online-protection"></a>Exchange Online Protection 中的 Exchange 管理中心 
 
 Exchange 管理中心 (EAC) 是基于 Web 的 Microsoft Exchange Online Protection (EOP) 的管理控制台。 
   
 正在查找此主题的 Exchange 2013 版本？请参阅 [Exchange admin center in Exchange 2013](http://technet.microsoft.com/library/a9aea11a-6ba3-4f4a-a76e-79072e7cfc7d.aspx)。
   
-正在查找此主题的 Exchange Online 版本？请参阅 [Exchange admin center in Exchange Online](http://technet.microsoft.com/library/ace44f6b-4084-4f9c-89b3-e0317962472b.aspx)。
+正在查找此主题的 Exchange Online 版本？请参阅 [Exchange admin center in Exchange Online](https://docs.microsoft.com/exchange/exchange-admin-center)。
   
 ## <a name="accessing-the-eac"></a>访问 EAC
 
@@ -33,7 +35,6 @@ Exchange 管理中心 (EAC) 是基于 Web 的 Microsoft Exchange Online Protecti
 您也可以通过以下 URL 直接访问 EAC 登录页面：https://admin.protection.outlook.com/ecp/\<companydomain\>。例如 https://admin.protection.outlook.com/ecp/contoso.onmicrosoft.com。指定用户凭据后，您将直接进入 EAC。
   
 ## <a name="common-user-interface-elements-in-the-eac"></a>EAC 中常用的用户界面元素
-<a name="BKMK_CommonUserInterfaceElements"> </a>
 
 本部分将介绍 EAC 中的用户界面元素。
   
@@ -63,14 +64,14 @@ Exchange 管理中心 (EAC) 是基于 Web 的 Microsoft Exchange Online Protecti
   
 |**图标**|**名称**|**Action**|
 |:-----|:-----|:-----|
-|![添加图标](media/ITPro-EAC-AddIcon.png)           <br/> |添加、新建  <br/> |使用此图标可创建一个新对象。其中一些图标有关联的向下箭头，单击该箭头会显示可以创建的其他对象。  <br/> |
-|![编辑图标](media/ITPro-EAC-EditIcon.png)           <br/> |编辑  <br/> |使用此图标可编辑对象。  <br/> |
-|![删除图标](media/ITPro-EAC-DeleteIcon.png)           <br/> |删除  <br/> |使用此图标可删除对象。有些删除图标有一个向下箭头，单击该箭头可显示其他选项。  <br/> |
-|![搜索图标](media/ITPro-EAC-.png)           <br/> |搜索  <br/> |使用此图标可打开一个搜索框，可在其中键入要查找的对象的搜索短语。  <br/> |
-|![刷新图标](media/ITPro-EAC-RefreshIcon.png)           <br/> |刷新  <br/> |使用此图标可刷新列表视图。  <br/> |
-|![更多选项图标](media/ITPro-EAC-MoreOptionsIcon.png)           <br/> |更多选项  <br/> |使用此图标可查看可以对该选项卡对象执行的操作。例如，在**收件人\>用户**单击此图标显示在**高级搜索**选项。<br/> |
-|![向上键图标](media/ITPro-EAC-UpArrowIcon.png)![向下键图标](media/ITPro-EAC-DownArrowIcon.png)           <br/> |向上箭头和向下箭头  <br/> |使用这些图标可以将对象的优先级上移或下移。  <br/> |
-|![删除图标](media/ITPro-EAC-RemoveIcon.png)           <br/> |删除  <br/> |使用此图标可从列表中删除对象。  <br/> |
+|![添加图标](media/ITPro-EAC-AddIcon.gif)           <br/> |添加、新建  <br/> |使用此图标可创建一个新对象。其中一些图标有关联的向下箭头，单击该箭头会显示可以创建的其他对象。  <br/> |
+|![编辑图标](media/ITPro-EAC-EditIcon.gif)           <br/> |编辑  <br/> |使用此图标可编辑对象。  <br/> |
+|![删除图标](media/ITPro-EAC-DeleteIcon.gif)           <br/> |删除  <br/> |使用此图标可删除对象。有些删除图标有一个向下箭头，单击该箭头可显示其他选项。  <br/> |
+|![搜索图标](media/ITPro-EAC-.gif)           <br/> |搜索  <br/> |使用此图标可打开一个搜索框，可在其中键入要查找的对象的搜索短语。  <br/> |
+|![刷新图标](media/ITPro-EAC-RefreshIcon.gif)           <br/> |刷新  <br/> |使用此图标可刷新列表视图。  <br/> |
+|![更多选项图标](media/ITPro-EAC-MoreOptionsIcon.gif)           <br/> |更多选项  <br/> |使用此图标可查看可以对该选项卡对象执行的操作。例如，在**收件人\>用户**单击此图标显示在**高级搜索**选项。<br/> |
+|![向上键图标](media/ITPro-EAC-UpArrowIcon.gif)![向下键图标](media/ITPro-EAC-DownArrowIcon.gif)           <br/> |向上箭头和向下箭头  <br/> |使用这些图标可以将对象的优先级上移或下移。  <br/> |
+|![删除图标](media/ITPro-EAC-RemoveIcon.gif)           <br/> |删除  <br/> |使用此图标可从列表中删除对象。  <br/> |
    
 ### <a name="list-view"></a>列表视图
 
@@ -82,9 +83,9 @@ Exchange 管理中心 (EAC) 是基于 Web 的 Microsoft Exchange Online Protecti
   
 ### <a name="me-tile-and-help"></a>自有图块和帮助
 
-**Me**图块，可以注销 EAC，并以其他用户身份登录。从**帮助**![帮助图标](media/ITPro-EAC-HelpIcon.png)下拉菜单中，您可以执行以下操作： 
+**Me**图块，可以注销 EAC，并以其他用户身份登录。从**帮助**![帮助图标](media/ITPro-EAC-HelpIcon.gif)下拉菜单中，您可以执行以下操作： 
   
-1. **帮助** 单击 ![帮助图标](media/ITPro-EAC-HelpIcon.png) 可查看联机帮助内容。 
+1. **帮助** 单击 ![帮助图标](media/ITPro-EAC-HelpIcon.gif) 可查看联机帮助内容。 
     
 2. **禁用帮助气泡图**创建或编辑对象时，帮助气泡显示上下文帮助字段。您可以关闭气泡的帮助，或者如果已禁用，则会将其打开。 
     
@@ -93,12 +94,10 @@ Exchange 管理中心 (EAC) 是基于 Web 的 Microsoft Exchange Online Protecti
 4. **隐私**单击以阅读有关 Exchange Online Protection 的隐私策略。 
     
 ## <a name="supported-browsers"></a>支持的浏览器
-<a name="BKMK_SupportedBrowsers"> </a>
 
 若要获得最佳的 EAC 使用体验，我们建议您始终使用最新的浏览器、Office 客户端和应用程序。我们还建议您安装可用的软件更新。有关服务支持的浏览器和系统要求的详细信息，请参阅 [Office 365 系统要求](https://go.microsoft.com/fwlink/p/?LinkID=402699)。 
   
 ## <a name="supported-languages-in-eop"></a>EOP 中支持的语言
-<a name="BKMK_SupportedLanguages"> </a>
 
 Exchange Online Protection 支持并提供以下语言。
   

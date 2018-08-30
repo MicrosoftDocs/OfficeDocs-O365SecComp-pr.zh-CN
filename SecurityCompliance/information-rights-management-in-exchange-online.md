@@ -9,14 +9,16 @@ ms.topic: article
 ms.service: O365-seccomp
 ms.custom: TN2DMC
 localization_priority: Normal
+search.appverid:
+- MET150
 ms.assetid: 2c956776-0016-4be6-b4cd-133a237f4a9e
 description: 人们经常使用电子邮件来交换敏感信息，例如财务数据、法律合同、机密产品信息、销售报表和预测、患者健康信息或客户和员工信息。因此，邮箱可能会成为一个包含大量潜在敏感信息的存储库，信息泄露可能会成为您组织的严重威胁。
-ms.openlocfilehash: de3bc22075a4a0f5e81fddece4c7ff3a54b22382
-ms.sourcegitcommit: 22bca85c3c6d946083d3784f72e886c068d49f4a
+ms.openlocfilehash: 5036fe359215de1c2674d7efabbb283c78418a19
+ms.sourcegitcommit: e9dca2d6a7838f98bb7eca127fdda2372cda402c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/06/2018
-ms.locfileid: "22027229"
+ms.lasthandoff: 08/21/2018
+ms.locfileid: "23002557"
 ---
 # <a name="information-rights-management-in-exchange-online"></a>Exchange Online 中的信息权限管理
 

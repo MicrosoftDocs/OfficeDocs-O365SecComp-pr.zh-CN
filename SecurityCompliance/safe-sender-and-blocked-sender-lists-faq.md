@@ -9,14 +9,16 @@ ms.topic: reference
 ms.service: O365-seccomp
 ms.custom: TN2DMC
 localization_priority: Normal
+search.appverid:
+- MET150
 ms.assetid: 111ab6b0-2dd2-4a87-a928-4931df6b3c4d
 description: 作为 Exchange Online 或 Exchange Online Protection (EOP) 管理员，你可以帮助确保通过服务传递的电子邮件不会被标记为垃圾邮件。实现上述任务的一种方法是为组织中的人员创建白名单和黑名单。
-ms.openlocfilehash: fcb43f990750782788dc6f459dd5c7d296146a38
-ms.sourcegitcommit: 22bca85c3c6d946083d3784f72e886c068d49f4a
+ms.openlocfilehash: cbf886bdcc40044a31b285b6806aecbc95f0f97c
+ms.sourcegitcommit: e9dca2d6a7838f98bb7eca127fdda2372cda402c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/06/2018
-ms.locfileid: "22028079"
+ms.lasthandoff: 08/21/2018
+ms.locfileid: "23003101"
 ---
 # <a name="safe-sender-and-blocked-sender-lists-in-exchange-online"></a>Exchange Online 中的安全发件人和阻止发件人列表
 
@@ -38,7 +40,7 @@ Exchange Online 中的安全发件人限制和阻止发件人限制与 Active Di
   
 您可能遇到的错误的所述 KB 2590466 （"会收到错误"垃圾电子邮件验证错误"Outlook Web App 中的 Exchange Server 2010"）。若要解决此问题，请清除"信任来自我的联系人的电子邮件"复选框。此外，减少的是在默认联系人文件夹将其放在允许的最大限制 1024 个在 Exchange Online 设置为"MaxSafeSenders"属性的电子邮件地址。有关此属性并使用 Set-mailbox cmdlet 的详细信息，seethe 以下主题：
   
-[Set-Mailbox](https://docs.microsoft.com/en-us/powershell/module/exchange/mailboxes/Set-Mailbox?view=exchange-ps)
+[Set-Mailbox](https://docs.microsoft.com/powershell/module/exchange/mailboxes/Set-Mailbox?view=exchange-ps)
   
 ## <a name="see-also"></a>See also
 

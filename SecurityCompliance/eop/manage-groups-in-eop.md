@@ -11,12 +11,12 @@ ms.custom: TN2DMC
 localization_priority: Normal
 ms.assetid: 212e68ac-6330-47e9-a169-6cf5e2f21e13
 description: Exchange Online Protection (EOP) 可用于创建启用邮件的 Exchange 组织的组。您还可以使用 EOP 定义或更新指定成员资格、 电子邮件地址和组的其他方面的组属性。
-ms.openlocfilehash: 744a28d2003496650e7350108797cc5cc4eaad4f
-ms.sourcegitcommit: 22bca85c3c6d946083d3784f72e886c068d49f4a
+ms.openlocfilehash: 1af39e3a55864a9a87f90e0a00957ebf1631bb45
+ms.sourcegitcommit: e9dca2d6a7838f98bb7eca127fdda2372cda402c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/06/2018
-ms.locfileid: "22026339"
+ms.lasthandoff: 08/21/2018
+ms.locfileid: "23003171"
 ---
 # <a name="manage-groups-in-eop"></a>在 EOP 中管理组
 
@@ -41,7 +41,7 @@ ms.locfileid: "22026339"
     
 - 此 cmdlet 使用批处理方法，在显示 cmdlet 结果之前，有几分钟的传播延迟。
     
-- 要了解如何使用 Windows PowerShell 连接到 Exchange Online Protection，请参阅[使用远程 PowerShell 连接到 Exchange Online Protection](http://technet.microsoft.com/library/054e0fd7-d465-4572-93f8-a00a9136e4d1.aspx)。
+- 要了解如何使用 Windows PowerShell 连接到 Exchange Online Protection，请参阅[使用远程 PowerShell 连接到 Exchange Online Protection](https://docs.microsoft.com/powershell/exchange/exchange-eop/connect-to-exchange-online-protection-powershell?view=exchange-ps)。
     
 - 若要了解可能适用于此主题中过程的键盘快捷键，请参阅 **Exchange 管理中心内的键盘快捷键**。
     
@@ -52,7 +52,7 @@ ms.locfileid: "22026339"
 
 1. 在 Exchange 管理员中心 (EAC) 中，转到**收件人** \> **组**。
     
-2. 单击**新建**![添加图标](../media/ITPro-EAC-AddIcon.png)，然后单击**通讯组**或**安全组**，根据您的需要。在搜索过程中，请参阅[类型的已启用邮件的组](manage-groups-in-eop.md)。 
+2. 单击**新建**![添加图标](../media/ITPro-EAC-AddIcon.gif)，然后单击**通讯组**或**安全组**，根据您的需要。在搜索过程中，请参阅[类型的已启用邮件的组](manage-groups-in-eop.md)。 
     
 3. 在**新建通讯组**或**新的安全组**页上，填写以下字段： 
     
@@ -62,12 +62,12 @@ ms.locfileid: "22026339"
     
   - **说明**键入组的说明，以使人们知道该组的用途。 
     
-  - **所有者**默认情况下，创建组的人是所有者。您可以通过选择**添加**添加所有者![添加图标](../media/ITPro-EAC-AddIcon.png)。所有组必须都有至少一个所有者。
+  - **所有者**默认情况下，创建组的人是所有者。您可以通过选择**添加**添加所有者![添加图标](../media/ITPro-EAC-AddIcon.gif)。所有组必须都有至少一个所有者。
     
     > [!NOTE]
     > 所有者不必是组的成员。 
   
-  - **成员**若要添加的组成员并指定是否需要对人员加入或离开该组进行审批，请使用此部分。要添加到组的成员，单击**添加**![添加图标](../media/ITPro-EAC-AddIcon.png)。
+  - **成员**若要添加的组成员并指定是否需要对人员加入或离开该组进行审批，请使用此部分。要添加到组的成员，单击**添加**![添加图标](../media/ITPro-EAC-AddIcon.gif)。
     
 4. 单击**确定**返回原始页面。 
     
@@ -79,9 +79,9 @@ ms.locfileid: "22026339"
     
 2. 执行以下操作之一：
     
-  - 编辑组： 在组列表中，单击通讯或您想要查看或更改的安全组，然后单击**编辑**![编辑图标](../media/ITPro-EAC-EditIcon.png)。您可以更新常规设置、 添加或删除组的所有者，以及添加或删除组成员，根据需要。
+  - 编辑组： 在组列表中，单击通讯或您想要查看或更改的安全组，然后单击**编辑**![编辑图标](../media/ITPro-EAC-EditIcon.gif)。您可以更新常规设置、 添加或删除组的所有者，以及添加或删除组成员，根据需要。
     
-  - 若要删除的组： 选择组，并单击**删除**![删除图标](../media/ITPro-EAC-RemoveIcon.png)。
+  - 若要删除的组： 选择组，并单击**删除**![删除图标](../media/ITPro-EAC-RemoveIcon.gif)。
     
 3. 当您完成更改后时，单击**保存**。
     
