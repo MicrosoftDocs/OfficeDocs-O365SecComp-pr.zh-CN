@@ -10,11 +10,9 @@
 ## [使用免费的 Azure Active Directory 订阅](use-your-free-azure-ad-subscription-in-office-365.md)
 ## [Office 365 中的安全与合规计划](plan-for-security-and-compliance.md)
 ## [使用安全与合规中心内的资源管理器](use-explorer-in-security-and-compliance.md)
-
 # 保护对数据和服务的访问
 ## [保护对 Office 365 数据和服务的访问](protect-access-to-data-and-services.md)
 ## [在 MDM 和 Intune 之间进行选择](choose-between-mdm-and-intune.md)
-
 # [数据丢失防护 (DLP)](data-loss-prevention-policies.md)
 ## [观看 DLP 的扩展概述](https://go.microsoft.com/fwlink/?linkid=852300)
 ## 设置 DLP
@@ -34,7 +32,6 @@
 ### [自定义内置敏感信息类型](customize-a-built-in-sensitive-information-type.md)
 ### [创建自定义敏感信息类型](create-a-custom-sensitive-information-type.md)
 ### [创建关键字字典](create-a-keyword-dictionary.md)
-
 # 管理数据治理        
 ## [导入数据](importing-pst-files-to-office-365.md)
 ### [使用网络上传导入 PST 文件](use-network-upload-to-import-pst-files.md)
@@ -68,7 +65,6 @@
 ### [监督报表](supervision-reports.md)
 ## 有关数据治理的详情
 ### [观看 Microsoft 数据治理团队的视频](https://go.microsoft.com/fwlink/?linkid=867039)
-
 # [威胁防护](protect-against-threats.md)
 ## [反垃圾邮件和反恶意软件保护](anti-spam-and-anti-malware-protection.md)
 ### [Office 365 中的防钓鱼保护](anti-phishing-protection.md)
@@ -141,9 +137,8 @@
 ### [以管理员身份管理隔离的邮件和文件](manage-quarantined-messages-and-files.md)
 ### [以用户身份查找并释放隔离的邮件](find-and-release-quarantined-messages-as-a-user.md)
 ### [Office 365 的隔离常见问题解答](quarantine-faq.md)
-### [使用用户垃圾邮件通知来释放和报告 Office 365 中的隔离邮件](use-spam-notifications-to-release-and-report-quarantined-messages.md)
-
-# 搜索内容
+### [在 Office 365 中使用用户垃圾邮件通知来发布和报告已隔离邮件](use-spam-notifications-to-release-and-report-quarantined-messages.md)
+# [搜索内容](search-for-content.md)
 ## [使用内容搜索](content-search.md)
 ### [内容搜索的关键字查询和搜索条件](keyword-queries-and-search-conditions.md)
 ### [查看内容搜索结果的关键字统计信息](view-keyword-statistics-for-content-search.md)
@@ -172,7 +167,6 @@
 ### [使用内容搜索在邮箱和 OneDrive for Business 站点中搜索用户列表](search-the-mailbox-and-onedrive-for-business-for-a-list-of-users.md)
 ### [创建、报告和删除多个内容搜索](create-report-on-and-delete-multiple-content-searches.md)
 ### [克隆内容搜索](clone-a-content-search.md)
-
 # [管理法律调查](manage-legal-investigations.md)
 ## [创建和管理电子数据展示事例](ediscovery-cases.md)
 ## [分配电子数据展示权限](assign-ediscovery-permissions.md)
@@ -223,14 +217,12 @@
 ### [在 Office 365 高级电子数据展示中设置分析高级设置](set-analyze-options-in-advanced-ediscovery.md)
 ### [了解 Office 365 高级电子数据展示中的相关性评估](assessment-in-relevance-in-advanced-ediscovery.md)
 ### [标记和搜索](search-and-tagging.md)
-
 # [搜索审核日志](search-the-audit-log-in-security-and-compliance.md)
 ## [启用或禁用审核日志搜索](turn-audit-log-search-on-or-off.md)
 ## [启用邮箱审核](enable-mailbox-auditing.md)
 ## [审核日志中的详细属性](detailed-properties-in-the-office-365-audit-log.md)
 ## [在审核日志中使用共享审核](use-sharing-auditing.md)
 ## [在审核日志中搜索电子数据展示活动](search-for-ediscovery-activities-in-the-audit-log.md)
-
 # 监视安全性和合规性
 ## [警报策略](alert-policies.md)
 ### [创建活动警报](create-activity-alerts.md)
@@ -245,7 +237,6 @@
 #### [下载现有报告](download-existing-reports.md)
 ## [启用或禁用 Office 365 中的安全提示](enable-or-disable-safety-tips.md)
 ## [启用报告消息加载项](enable-the-report-message-add-in.md)
-
 # 安全解决方案
 ## [Microsoft 针对政治宣传活动、非营利组织和其他敏捷性组织的安全指南](https://docs.microsoft.com/Office365/Enterprise/microsoft-security-guidance-for-political-campaigns-nonprofits-and-other-agile-o)
 ### [为政治宣传活动开发/测试环境配置组和用户](https://docs.microsoft.com/Office365/Enterprise/configure-groups-and-users-for-a-political-campaign-dev-test-environment)
@@ -264,27 +255,26 @@
 # 合规性解决方案
 ## [使用合规性管理器来帮助满足使用 Microsoft 云服务时的数据保护和法规要求](meet-data-protection-and-regulatory-reqs-using-microsoft-cloud.md)
 ## [使用 DSR 案例工具管理 GDPR 数据主题请求](manage-gdpr-data-subject-requests-with-the-dsr-case-tool.md)
-## [符合 GDPR 的 Office 365 信息保护](https://docs.microsoft.com/Office365/Enterprise/office-365-information-protection-for-gdpr)
-### [概述：符合 GDPR 的 Office 365 保护](https://docs.microsoft.com/Office365/Enterprise/office-365-info-protection-for-gdpr-overview)
-### [搜索和查找个人数据](https://docs.microsoft.com/Office365/Enterprise/search-for-and-find-personal-data)
-### [根据 GDPR 自定义或新建敏感信息类型](https://docs.microsoft.com/Office365/Enterprise/customize-or-create-a-new-sensitive-information-type)
-### [构建用于个人计划的分类架构](https://docs.microsoft.com/Office365/Enterprise/architect-a-classification-schema-for-personal-data)
-### [在 Office 365 中向个人数据应用标签](https://docs.microsoft.com/Office365/Enterprise/apply-labels-to-personal-data-in-office-365)
-### [在 Office 365 中向个人数据应用保护](https://docs.microsoft.com/Office365/Enterprise/apply-protection-to-personal-data-in-office-365)
-### [监视是否有个人数据泄露](https://docs.microsoft.com/Office365/Enterprise/monitor-for-leaks-of-personal-data)
-### [Office 365 GDPR 开发/测试环境](https://docs.microsoft.com/Office365/Enterprise/gdpr-discovery-protection-reporting-in-office365-dev-test-environment)
+## [符合 GDPR 的 Office 365 信息保护](office-365-information-protection-for-gdpr.md)
+### [概述：符合 GDPR 的 Office 365 保护](office-365-info-protection-for-gdpr-overview.md)
+### [搜索和查找个人数据](search-for-and-find-personal-data.md)
+### [根据 GDPR 自定义或新建敏感信息类型](customize-or-create-a-new-sensitive-information-type.md)
+### [构建用于个人计划的分类架构](architect-a-classification-schema-for-personal-data.md)
+### [向 Office 365 中的个人数据应用标签](apply-labels-to-personal-data-in-office-365.md)
+### [在 Office 365 中向个人数据应用保护](apply-protection-to-personal-data-in-office-365.md)
+### [监视是否有个人数据泄露](monitor-for-leaks-of-personal-data.md)
+### [Office 365 GDPR 开发/测试环境](gdpr-discovery-protection-reporting-in-office365-dev-test-environment.md)
 ## GDPR 对本地 Office 服务器的要求
-### [GDPR 对 SharePoint Server 的要求](https://docs.microsoft.com/Office365/Enterprise/gdpr-for-sharepoint-server)
-### [GDPR 对 Exchange Server 的要求](https://docs.microsoft.com/Office365/Enterprise/gdpr-for-exchange-server)
-### [GDPR 对 Skype for Business Server 和 Lync Server 的要求](https://docs.microsoft.com/Office365/Enterprise/gdpr-for-skype-for-business-server)
-### [GDPR 对 Project Server 的要求](https://docs.microsoft.com/Office365/Enterprise/gdpr-for-project-server)
-### [GDPR 对 Office Web Apps Server 和 Office Online Server 的要求](https://docs.microsoft.com/Office365/Enterprise/gdpr-for-office-online-server)
-### [GDPR 对本地 Windows Server 文件共享的要求](https://docs.microsoft.com/Office365/Enterprise/gdpr-for-on-premises-file-shares)
+### [用于 SharePoint Server 的 GDPR](gdpr-for-sharepoint-server.md)
+### [用于 Exchange Server 的 GDPR](gdpr-for-exchange-server.md)
+### [GDPR 对 Skype for Business Server 和 Lync Server 的要求](gdpr-for-skype-for-business-server.md)
+### [用于 Project Server 的 GDPR](gdpr-for-project-server.md)
+### [用于 Office Web Apps Server 和 Office Online Server 的 GDPR](gdpr-for-office-online-server.md)
+### [GDPR 对本地 Windows Server 文件共享的要求](gdpr-for-on-premises-file-shares.md)
 # 安全事件管理
-## [Office 365 安全事件响应](https://docs.microsoft.com/Office365/Enterprise/office365-security-incident-response-overview)
-## [检测和修正 Office 365 中的非法授权](https://docs.microsoft.com/Office365/Enterprise/detect-and-remediate-illicit-consent-grants)
-## [检测并修正 Office 365 中的 Outlook 规则和自定义窗体注入攻击](https://docs.microsoft.com/Office365/Enterprise/detect-and-remediate-outlook-rules-forms-attack)
-
+## [Office 365 安全事件响应](office365-security-incident-response-overview.md)
+## [检测和修正 Office 365 中的非法授权](detect-and-remediate-illicit-consent-grants.md)
+## [检测并修正 Office 365 中的 Outlook 规则和自定义窗体注入攻击](detect-and-remediate-outlook-rules-forms-attack.md)
 # 服务保证
 ## [Office 365 安全与合规中心内的服务保证](service-assurance.md)
 ## [Office 365 中的租户隔离](office-365-tenant-isolation-overview.md)
@@ -331,7 +321,6 @@
 ### [Office 365 工程部的内部日志记录](office-365-internal-logging.md)
 ### [Office 365 邮箱迁移](office-365-mailbox-migrations.md)
 ### [Office 365 管理活动 API](office-365-management-activity-api.md)
-
 # [Exchange Online Protection](eop/exchange-online-protection-overview.md)
 ## [EOP 功能](eop/eop-features.md)
 ## [EOP 中的功能权限](eop/feature-permissions-in-eop.md)
@@ -410,6 +399,5 @@
 ### [面向残障人士的辅助功能](eop/accessibility-for-people-with-disabilities.md)
 ### [向 Office 365 发送邮件](sending-mail-to-office-365.md)
 ### [非客户服务](services-for-non-customers.md)
-
 # [Office 365 企业版](https://docs.microsoft.com/Office365/Enterprise)
 # [Office 365 企业版](https://support.office.com/office365admin)
