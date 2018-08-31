@@ -3,7 +3,6 @@ title: 响应 Office 365 中遭到入侵的电子邮件帐户
 ms.author: chrfox
 author: chrfox
 manager: laurawi
-ms.date: 06/27/2018
 ms.audience: ITPro
 ms.topic: article
 ms.collection:
@@ -16,12 +15,12 @@ search.appverid:
 ms.custom: ''
 ms.assetid: ''
 description: 了解如何识别并响应在 Office 365 中受到攻击的电子邮件帐户
-ms.openlocfilehash: ef97ecd3198234cf2c3d609f81a4a4a8af2c237e
-ms.sourcegitcommit: 08f36794552e2213d0baf35180e47744d3e87fe4
+ms.openlocfilehash: 9a3dcc2d10c7487e525ae127674a830f9a921a60
+ms.sourcegitcommit: e7b87fae103a858981bdbcdf7ec55afa4751ad05
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/30/2018
-ms.locfileid: "23531875"
+ms.lasthandoff: 08/31/2018
+ms.locfileid: "23782179"
 ---
 # <a name="responding-to-a-compromised-email-account-in-office-365"></a>响应 Office 365 中遭到入侵的电子邮件帐户
 
@@ -31,13 +30,13 @@ ms.locfileid: "23531875"
 访问 Office 365 邮箱、 数据和其他服务，使用凭据，例如用户名和密码或 PIN 控制。当某人之外的预期用户窃取这些凭据时，被盗的凭据被视为受到威胁。与他们攻击者可以为原始用户登录并执行非法的操作。使用窃取的凭据，攻击者可以访问用户的 Office 365 邮箱、 SharePoint 文件夹或用户的 OneDrive 中的文件。常见的一个操作是攻击者向收件人组织内外均为原始用户发送电子邮件。如果攻击者向外部收件人电子邮件数据，这就称为数据 exfiltration。
 
 ## <a name="symptoms-of-a-compromised-office-365-email-account"></a>受到攻击的 Office 365 电子邮件帐户的症状
-用户可能会注意到和报告在其 Office 365 邮箱中的异常活动。下面是一些常见症状：
+用户可能注意和报告在其 Office 365 邮箱中的异常活动。下面是一些常见症状：
 - 可疑活动，如缺失或被删除的电子邮件。
 - 其他用户可能会收到电子邮件从受到攻击的帐户没有相应的发件人的**已发送邮件**文件夹中现有的电子邮件。
 - 预期的用户或管理员不需要创建的收件箱规则的状态。这些规则可能会自动转发到未知地址的电子邮件或将它们移动到的**注释**，**垃圾邮件**或**RSS 订阅**的文件夹。
-- 可能的全局地址列表中更改的用户显示名称。
+- 全局地址列表中，可能更改用户的显示名称。
 - 用户的邮箱阻止发送电子邮件。
-- 在 Microsoft Outlook 或 Microsoft Outlook Web App 中的已发送或已删除邮件文件夹包含常见黑客攻击-帐户邮件，如"我正在停止伦敦，发送资金。"
+- 在 Microsoft Outlook 或 Microsoft Outlook Web App 中的已发送或已删除邮件文件夹包含常见的黑客攻击帐户消息，如"我正在停止伦敦，发送资金。"
 - 特殊的配置文件更改，如名称、 电话号码或邮政编码已进行了更新。
 - 特殊凭据更改，如多个密码更改是必需的。
 - 最近添加了邮件转发。
