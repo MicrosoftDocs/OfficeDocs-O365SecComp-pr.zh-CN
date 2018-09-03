@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: c4639c2e-7223-4302-8e0d-b6e10f1c3be3
 description: '了解电子邮件和文件属性，您可以在 Office 365 安全性使用内容搜索工具的业务网站搜索在 Exchange Online 邮箱和 SharePoint 或 OneDrive&amp;合规性中心。  '
-ms.openlocfilehash: c043b6667e6847ff944b05e6bbe91df8ed2f600c
-ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+ms.openlocfilehash: 8501743d38425cb980088d65e1dd6bd0bd45cc08
+ms.sourcegitcommit: e7b87fae103a858981bdbcdf7ec55afa4751ad05
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22525562"
+ms.lasthandoff: 08/31/2018
+ms.locfileid: "23782099"
 ---
 # <a name="keyword-queries-and-search-conditions-for-content-search"></a>内容搜索的关键字查询和搜索条件
 
@@ -88,7 +88,7 @@ SharePoint 属性可搜索的完整列表，请参阅[Overview of 爬网和托�
 |SharedWithUsersOWSUser  <br/> |已与指定的用户共享和显示在用户的 OneDrive for Business 站点**与我共享**页上的文档。这些是已明确共享与指定用户的其他人在组织中的文档。导出的匹配搜索查询使用 SharedWithUsersOWSUser 属性的文档时，文档将导出从与指定的用户共享文档的人员的原始内容的位置。有关详细信息，请参阅[您的组织内共享的搜索网站内容](keyword-queries-and-search-conditions.md#internal)。<br/> |`sharedwithusersowsuser:garthf`  <br/> `sharedwithusersowsuser:"garthf@contoso.com"`  <br/> |这两个示例返回所有内部的文档的已明确共享与李军和的李军的**与我共享**页上显示的 OneDrive for Business 帐户。  <br/> |
 |Site  <br/> |组织中站点或站点组的 URL。  <br/> |`site:https://contoso-my.sharepoint.com`  <br/> `site:https://contoso.sharepoint.com/sites/teams`  <br/> |第一个示例返回从 OneDrive for Business 站点的组织中的所有用户的项。第二个示例返回所有工作组网站中的项。  <br/> |
 |Size  <br/> |邮件的大小（以字节为单位）。  <br/> |`size\>=1`  <br/> `size:1..10000`  <br/> |第一个示例返回大于 1 字节的项目。第二个示例返回大小介于 1 到 10,000 字节之间的项目。  <br/> |
-|Title  <br/> |文档的标题。Title 属性是在 Microsoft Office 文档中指定的元数据。它是文档的不同文件名。  <br/> |`title:"communication plan"`  <br/> |Office 文档的 Title 元数据属性中包含短语“communication plan”的任何文档。  <br/> |
+|标题  <br/> |文档的标题。Title 属性是在 Microsoft Office 文档中指定的元数据。它是文档的不同文件名。  <br/> |`title:"communication plan"`  <br/> |Office 文档的 Title 元数据属性中包含短语“communication plan”的任何文档。  <br/> |
    
 ## <a name="searchable-contact-properties"></a>搜索联系人属性
 
@@ -102,7 +102,7 @@ SharePoint 属性可搜索的完整列表，请参阅[Overview of 爬网和托�
 |BusinessAddress  <br/> |**业务地址**属性中的地址。在联系人的属性页上，属性也称为**工作**地址。<br/> |
 |BusinessPhone  <br/> |**商务电话**任一中的电话号码数字属性。  <br/> |
 |公司名称  <br/> |在**公司**属性名称。  <br/> |
-|Department  <br/> |在**部门**属性名称。  <br/> |
+|部门  <br/> |在**部门**属性名称。  <br/> |
 |DisplayName  <br/> |联系人的显示名称。这是该联系人的**完整名称**属性中的名称。<br/> |
 |EmailAddress  <br/> |该联系人的任何电子邮件地址属性的地址。请注意，用户可以添加多个联系人的电子邮件地址。使用此属性将返回匹配任何联系人的电子邮件地址的联系人。  <br/> |
 |FileAs  <br/> |该**文件另存为**属性。此属性用于指定如何为用户的联系人列表中列出该联系人。例如，无法为*FirstName、 LastName*或*LastName、 FirstName*列出联系人。<br/> |
@@ -116,7 +116,7 @@ SharePoint 属性可搜索的完整列表，请参阅[Overview of 爬网和托�
 |OfficeLocation  <br/> |**Office**或**办公地点**属性中的值。  <br/> |
 |OtherAddress  <br/> |**其他**地址属性的值。  <br/> |
 |Surname  <br/> |在**最近**的名称属性名称。  <br/> |
-|Title  <br/> |**职务**属性中的标题。  <br/> |
+|标题  <br/> |**职务**属性中的标题。  <br/> |
    
 
 ## <a name="searchable-sensitive-data-types"></a>可搜索敏感数据类型
@@ -134,7 +134,7 @@ SharePoint 属性可搜索的完整列表，请参阅[Overview of 爬网和托�
 |**运算符**|**用法**|**说明**|
 |:-----|:-----|:-----|
 |AND  <br/> |keyword1 AND keyword2  <br/> |返回项目，包括所有指定的关键字或`property:value`表达式。例如，`from:"Ann Beebe" AND subject:northwind`会返回发送包含 word northwind 的主题行中的 Ann Beebe 的所有邮件。<sup>2</sup> <br/> |
-|+  <br/> |keyword1 概览+ keyword2 概览+ keyword3  <br/> |返回包含*是*项`keyword2`或`keyword3`*和*还包含`keyword1`。因此，本示例为等同于查询`(keyword2 OR keyword3) AND keyword1`。  <br/> 请注意，查询`keyword1 + keyword2`(与之后的空格**+** 符号) 不相同使用 * * 和 * * 运算符。此查询将等价于`"keyword1 + keyword2"`，并返回项目的确切阶段`"keyword1 + keyword2"`。<br/> |
+|+  <br/> |keyword1 + keyword2 + keyword3  <br/> |返回包含*是*项`keyword2`或`keyword3`*和*还包含`keyword1`。因此，本示例为等同于查询`(keyword2 OR keyword3) AND keyword1`。  <br/> 请注意，查询`keyword1 + keyword2`(与之后的空格**+** 符号) 不相同使用 * * 和 * * 运算符。此查询将等价于`"keyword1 + keyword2"`，并返回项目的确切阶段`"keyword1 + keyword2"`。<br/> |
 |OR  <br/> |keyword1 OR keyword2  <br/> |返回包含一个或多个指定关键字的项，或`property:value`表达式。<sup>2</sup> <br/> |
 |NOT  <br/> |keyword1 NOT keyword2  <br/> NOT from:"Ann Beebe"  <br/> 不类型： im  <br/> |排除指定关键字的项目或`property:value`表达式。在第二个示例排除发送 Ann Beebe 的邮件。第三个示例排除任何即时消息对话，如 Skype 保存到对话历史记录邮箱文件夹的业务对话。<sup>2</sup> <br/> |
 |-  <br/> |keyword1 -keyword2  <br/> |与**NOT**运算符相同。此查询返回包含的项以便`keyword1`和将排除项包含的`keyword2`。<br/> |
@@ -152,7 +152,7 @@ SharePoint 属性可搜索的完整列表，请参阅[Overview of 爬网和托�
 |(  )  <br/> | (fair OR free) AND (from:contoso.com)  <br/> (IPO OR initial) AND (stock OR shares)  <br/> (quarterly financials)  <br/> |括号将布尔短语、 `property:value` 项目和关键字结合到一起。例如，  `(quarterly financials)` 返回包含单词"quarterly"和"financials"的项目。  <br/> |
    
 > [!NOTE]
-> <sup>1</sup>??????Use 此运算符具有日期或数字值的属性。> <sup>2</sup>??????Boolean 搜索运算符必须大写;例如，为**AND**。如果您使用小写运算符，如**和**，它将被视为搜索查询中的关键字。 
+> <sup>1</sup> 为含有日期或数值的属性使用此运算符。<br/> <sup>2</sup>布尔搜索运算符必须大写;例如，为**AND**。如果您使用小写运算符，如**和**，它将被视为搜索查询中的关键字。 
   
 ## <a name="search-conditions"></a>搜索条件
 
@@ -205,7 +205,7 @@ SharePoint 属性可搜索的完整列表，请参阅[Overview of 爬网和托�
 |**条件**|**说明**|
 |:-----|:-----|
 |Author  <br/> |仍然存在，如果复制文档作者字段从 Office 文档。例如，如果用户创建文档和电子邮件它向其他人某人然后将其上载到 SharePoint，文档将仍保留原始作者。  <br/> |
-|Title  <br/> |文档的标题。Title 属性是在 Office 文档中指定的元数据。它是文档的不同文件名。  <br/> |
+|标题  <br/> |文档的标题。Title 属性是在 Office 文档中指定的元数据。它是文档的不同文件名。  <br/> |
 |已创建  <br/> |创建文档的日期。  <br/> |
 |上次修改时间  <br/> |上次修改文档的日期。  <br/> |
 |文件类型  <br/> |文件; 扩展名例如，docx、 一个、 pptx 或 xlsx。这是作为文件扩展名站点属性相同的属性。  <br/> |

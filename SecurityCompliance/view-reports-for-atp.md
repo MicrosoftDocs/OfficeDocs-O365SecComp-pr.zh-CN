@@ -3,7 +3,6 @@ title: Office 365 高级威胁保护的视图报告
 ms.author: deniseb
 author: denisebmsft
 manager: laurawi
-ms.date: 08/06/2018
 ms.audience: ITPro
 ms.topic: article
 ms.service: o365-administration
@@ -13,12 +12,12 @@ search.appverid:
 - MOE150
 ms.assetid: e47e838c-d99e-4c0b-b9aa-e66c4fae902f
 description: 了解如何查找和使用适用于 Office 365 高级威胁保护安全中报告&amp;合规性中心。
-ms.openlocfilehash: bd02989711629cc67f7a7d5e061862a1146ff21b
-ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+ms.openlocfilehash: 13b2a4c142a223a8a912c9017b6033b0b5a1548b
+ms.sourcegitcommit: e7b87fae103a858981bdbcdf7ec55afa4751ad05
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22525236"
+ms.lasthandoff: 08/31/2018
+ms.locfileid: "23782109"
 ---
 # <a name="view-reports-for-office-365-advanced-threat-protection"></a>Office 365 高级威胁保护的视图报告
 
@@ -26,7 +25,7 @@ ms.locfileid: "22525236"
   
 ![安全&amp;合规性中心仪表板可帮助您看到正常高级威胁保护](media/6b213d34-adbb-44af-8549-be9a7e2db087.png)
   
-ATP 报告包括[威胁保护状态报告](view-reports-for-atp.md#advancedthreats)、 [ATP 文件类型报告](view-reports-for-atp.md#atpfiletypes)和[ATP 消息处置报告](view-reports-for-atp.md#atpmessagedisp)。本文介绍 ATP 报告，并包括指向[其他报告以查看](view-reports-for-atp.md#addl)。
+ATP 报告包括威胁保护状态报告、 ATP 文件类型报表和 ATP 消息处置报告。本文介绍 ATP 报告，并包括指向其他报告以查看。
   
 ## <a name="threat-protection-status-report"></a>威胁保护状态报告
 

@@ -13,12 +13,12 @@ search.appverid:
 - MET150
 ms.assetid: a8bdcbdd-9298-462f-b889-df26037a990c
 description: '启用存档邮箱并启用自动扩展以增加的 Office 365 中的邮箱可恢复邮件文件夹大小的存档。 '
-ms.openlocfilehash: 2e7149ef10152a11dc638c04b61a261440b539b8
-ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+ms.openlocfilehash: cd2d07e6ef1637343798ccb71870c8d436f10574
+ms.sourcegitcommit: e7b87fae103a858981bdbcdf7ec55afa4751ad05
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22524929"
+ms.lasthandoff: 08/31/2018
+ms.locfileid: "23782089"
 ---
 # <a name="increase-the-recoverable-items-quota-for-mailboxes-on-hold"></a>为置于保留状态的邮箱增加可恢复项目的配额
 
@@ -35,11 +35,11 @@ ms.locfileid: "22524929"
 |**“可恢复的项目”文件夹的总存储配额** <br/> |无限制  <br/> |无限制  <br/> |
    
 > [!NOTE]
-> <sup>\*</sup>存档邮箱的初始存储配额具有一个 Exchange Online (计划 2) 许可证的用户是 100 GB。但是，打开自动扩展存档后，用户的存档和存档中的可恢复邮件文件夹的存储配额为 unlimited。有关自动扩展存档，请参阅[Overview of Office 365 中的无限制存档](unlimited-archiving.md)。 
+> <sup>\*</sup>存档邮箱的初始存储配额具有一个 Exchange Online (计划 2) 许可证的用户是 100 GB。但是，当自动扩展存档打开置于保持状态的邮箱、 存储配额同存档邮箱和可恢复邮件文件夹增加到 110 GB。必要时，将设置其他存档存储空间哪些结果中的存档存储无限量。有关自动扩展存档，请参阅[Overview of Office 365 中的无限制存档](unlimited-archiving.md)。 
   
 当置于保留状态的邮箱的主邮箱"可恢复的项目"文件夹的存储配额接近其限额时，可以执行以下操作：
   
-- **启用存档邮箱，启用自动扩展存档**-只需通过启用存档邮箱并将其打开 Exchange 中的自动扩展的存档功能，可以启用不受限制的存储空间留给的可恢复邮件文件夹联机。这将导致 100 GB 的主邮箱和不限制的数量的存储容量用于在用户的存档可恢复邮件文件夹中可恢复邮件文件夹。请参阅如何： [Office 365 安全性启用存档邮箱&amp;合规性中心](enable-archive-mailboxes.md)和[启用 Office 365 中的无限制存档](enable-unlimited-archiving.md)。
+- **启用存档邮箱，启用自动扩展存档**-只需通过启用存档邮箱并将其打开 Exchange 中的自动扩展的存档功能，可以启用不受限制的存储空间留给的可恢复邮件文件夹联机。这将导致 110 GB 的主邮箱和不限制的数量的存储容量用于在用户的存档可恢复邮件文件夹中可恢复邮件文件夹。请参阅如何： [Office 365 安全性启用存档邮箱&amp;合规性中心](enable-archive-mailboxes.md)和[启用 Office 365 中的无限制存档](enable-unlimited-archiving.md)。
     
     > [!NOTE]
     > 启用存档以接近超出可恢复邮件文件夹的存储配额的邮箱后，您可能想要运行托管文件夹助理要手动触发助理处理邮箱，以便过期的项目移动可恢复项目文件夹中的存档邮箱。有关说明，请参阅[步骤 4](#optional-step-4-run-the-managed-folder-assistant-to-apply-the-new-retention-settings) 。请注意，可能会将用户邮箱中的其他项移动到新的存档邮箱。请考虑告知用户这可能会发生后启用存档邮箱。 

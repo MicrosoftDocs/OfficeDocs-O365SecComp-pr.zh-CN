@@ -14,16 +14,16 @@ search.appverid:
 - MET150
 ms.assetid: 37cdbb02-a24a-4093-8bdb-2a7f0b3a19ee
 description: 了解自动扩展 Office 365 中的存档，从而提高了对不受限制的存档存储为 Exchange Online 邮箱。
-ms.openlocfilehash: 4fc490871c1a0142ab0f68126cce6f2a51e0f7d0
-ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+ms.openlocfilehash: a762a0fb8295a645957404c1c88881f40329f7a1
+ms.sourcegitcommit: e7b87fae103a858981bdbcdf7ec55afa4751ad05
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22525102"
+ms.lasthandoff: 08/31/2018
+ms.locfileid: "23782119"
 ---
 # <a name="overview-of-unlimited-archiving-in-office-365"></a>Office 365 中的无限制存档的概述
 
-Office 365 中的存档邮箱向用户提供其他邮箱存储空间。启用用户的存档邮箱后，最多 100 GB 的额外是存储的可用。当达到 100 GB 存储配额时，组织必须与 Microsoft 联系到存档邮箱的请求额外的存储空间。不再是这样。（称为自动扩展存档） 的 Office 365 中的新的无限制存档功能提供存档邮箱中存储无限的的量。现在，当达到存储配额的存档邮箱中时，Office 365 自动增加存档，这意味着用户不会运行邮箱存储空间不足，且管理员无法请求其他存储存档邮箱的大小.
+Office 365 中的存档邮箱向用户提供其他邮箱存储空间。启用用户的存档邮箱后，最多 100 GB 的额外是存储的可用。当达到 100 GB 存储配额时，组织必须与 Microsoft 联系到存档邮箱的请求额外的存储空间。不再是这样。（称为*自动扩展存档*） 的 Office 365 中的新的无限制存档功能提供存档邮箱中存储无限的的量。现在，当达到存储配额的存档邮箱中时，Office 365 自动增加存档，这意味着用户不会运行邮箱存储空间不足，且管理员无法请求其他存储存档邮箱的大小.
   
 有关分步说明开启自动扩展存档，请参阅[启用无限制存档的 Office 365](enable-unlimited-archiving.md)。
   
@@ -38,12 +38,15 @@ Office 365 中的存档邮箱向用户提供其他邮箱存储空间。启用用
   
 ![自动扩展存档过程概述](media/74355385-d990-44fe-8a87-6c3639d1f63f.png)
   
-1. 对用户邮箱或共享的邮箱启用存档。创建存档邮箱与 100 GB 的存储空间。 
+1. 对用户邮箱或共享的邮箱启用存档。创建存档邮箱与 100 GB 的存储空间，并存档邮箱的警告配额设置为 90 GB。
     
 2. 管理员启用自动扩展存档邮箱。然后，当存档邮箱 （包括可恢复邮件文件夹） 到达 90 GB，它将转换为自动扩展存档和 Office 365 添加到存档存储空间。请注意，可能需要额外的存储空间设置为最多 30 天。
     
 3. Office 365 自动存档在必要时添加更多存储空间。
   
+> [!IMPORTANT]
+> 如果邮箱置于保持状态或者分配给 Office 365 保留策略，存档 maibox 的存储配额增加到 110 GB 启用自动扩展存档。同样，存档警告配额增加到 100 GB。
+
 ## <a name="what-gets-moved-to-the-additional-archive-storage-space"></a>什么获取移动到其他存档存储空间？
 
 若要使高效地利用自动扩展存档存储，可能会获取移动文件夹。Office 365 确定哪些文件夹获取移动到存档中添加其他存储时。当移动文件夹时，会自动在 Outlook 中的文件夹列表的存档部分的原始文件夹下创建子文件夹。此新的子文件夹指向已移动的项。此文件夹命名为 Office 365 使用的命名约定为**\<文件夹名称\>_yyyy （上创建 mmm dd，yyyy h_mm）**，其中： 
@@ -98,3 +101,7 @@ Office 365 中的存档邮箱向用户提供其他邮箱存储空间。启用用
 - 也会删除**消息记录管理 (MRM)** -如果在 Exchange Online 中使用 MRM 删除策略永久删除过期的邮箱项目，位于自动扩展存档的过期项目。
     
 - **导入服务**-您可以使用导入 Office 365 服务 PST 文件导入用户的自动扩展存档。您可以从导入数据的最多 100 GB PST 文件到用户的存档邮箱。 
+
+## <a name="more-information"></a>详细信息
+
+有关更多技术详细信息自动扩展存档，请参阅[Office 365： 自动扩展存档常见问题](https://blogs.technet.microsoft.com/exchange/2018/04/09/office-365-auto-expanding-archives-faq/)。

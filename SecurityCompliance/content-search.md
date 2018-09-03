@@ -15,12 +15,12 @@ search.appverid:
 - MET150
 ms.assetid: 53390468-eec6-45cb-b6cd-7511f9c909e4
 description: 在 Office 365 安全性使用内容搜索&amp;合规性中心业务对话搜索邮箱、 SharePoint Online 网站、 OneDrive 帐户、 Microsoft 团队、 Office 365 组和 Skype 中的内容。您可以使用关键字搜索查询和搜索条件以缩小搜索结果的范围。然后您可以预览和导出搜索结果。内容搜索也是有效的工具搜索可能与 GDPR 数据主题请求相关的内容。
-ms.openlocfilehash: f0064ae08226b1b0e864b25bb845054184f1efa4
-ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+ms.openlocfilehash: 11e96c6a11dd66c0095b7c624413e9e39036d8d6
+ms.sourcegitcommit: e7b87fae103a858981bdbcdf7ec55afa4751ad05
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22526086"
+ms.lasthandoff: 08/31/2018
+ms.locfileid: "23782079"
 ---
 # <a name="content-search-in-office-365"></a>Office 365 中的内容搜索
 
@@ -75,7 +75,7 @@ ms.locfileid: "22526086"
     
     为什么使用关键字列表？您可以获取显示的项目数与每个关键字匹配的统计信息。这可以帮助您快速识别的关键字是最 （和至少） 有效。行中，您还可以使用关键字短语 （用括号括起来）。有关搜索统计信息的详细信息，请参阅[视图的内容的搜索结果的关键字统计信息](view-keyword-statistics-for-content-search.md)。
     
-- **条件**-您可以添加搜索条件以缩小搜索范围并返回更精确的结果集。每个条件向 KQL 搜索查询创建和启动搜索时运行一个子句。条件逻辑**AND**运算符功能类似的逻辑运算符 ( **c:c**) 通过连接到 （在关键字框中指定） 的关键字查询。这意味着项目需要满足关键字查询和结果中包含的一个或多个条件。这是如何帮助条件以缩小结果。列表以及您可以使用搜索查询中的条件的说明，请参阅[关键字查询及搜索内容搜索条件](keyword-queries-and-search-conditions.md#search-conditions)中的"搜索条件"部分。
+- **条件**-您可以添加搜索条件以缩小搜索范围并返回更精确的结果集。每个条件向搜索查询创建和启动搜索时运行一个子句。条件逻辑**AND**运算符功能类似的逻辑运算符 ( **c:c**) 通过连接到 （在关键字框中指定） 的关键字查询。这意味着项目需要满足关键字查询和结果中包含的一个或多个条件。这是如何帮助条件以缩小结果。列表以及您可以使用搜索查询中的条件的说明，请参阅[关键字查询及搜索内容搜索条件](keyword-queries-and-search-conditions.md#search-conditions)中的"搜索条件"部分。
     
 - **位置**-选择要搜索的内容位置。
     
