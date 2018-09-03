@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.assetid: 0ce338d5-3666-4a18-86ab-c6910ff408cc
 description: 管理员可以从导入第三方数据社交媒体平台、 即时消息平台，以及文档协作平台到 Office 365 组织中的邮箱。这样可以存档来自 Office 365 中的 Facebook、 Twitter 和数据源的数据。然后您可以对第三方数据 appply Office 365 合规性功能 （如合法保留、 内容搜索和保留策略）。
-ms.openlocfilehash: 3d51d9f5cb546b33fa636fab0ca319e4d24b1ad4
-ms.sourcegitcommit: edf5db9357c0d34573f8cc406314525ef10d1eb9
+ms.openlocfilehash: f5590d170986b8ae69458e69cedeb8a0ef137ef4
+ms.sourcegitcommit: 81c2fd5cd940c51bc43ac7858c7bdfa207ce401a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/28/2018
-ms.locfileid: "23230034"
+ms.lasthandoff: 09/03/2018
+ms.locfileid: "23809707"
 ---
 # <a name="archiving-third-party-data-in-office-365"></a>在 Office 365 中存档第三方数据
 
@@ -46,6 +46,8 @@ Office 365 允许管理员导入和存档即时消息平台和文档协作平台
 [步骤 3：为第三方数据配置用户邮箱](#step-3-configure-user-mailboxes-for-third-party-data)
 
 [步骤 4：为合作伙伴提供信息](#step-4-provide-your-partner-with-information)
+
+[步骤 5： 在 Azure Active Directory 中注册第三方数据连接器](#step-5-register-the-third-party-data-connector-in-azure-active-directory)
 
 ## <a name="how-the-third-party-data-import-process-works"></a>如何第三方数据导入过程适用于 >
 
@@ -622,8 +624,28 @@ Microsoft Lync（2010、2013）
     ```
 
 - 您在步骤 2 中创建的第三方数据邮箱 （Office 365 用户 ID 和密码） 凭据登录。这些凭据是必需，以便合作伙伴连接器可以访问和项目导入到用户邮箱和第三方数据邮箱。
-    
+ 
+## <a name="step-5-register-the-third-party-data-connector-in-azure-active-directory"></a>步骤 5： 在 Azure Active Directory 中注册第三方数据连接器
 
+Office 365 中的 Azure 服务启动年 9 月 30 2018年将开始使用现代身份验证在 Exchange Online 进行身份验证尝试连接到 Office 365 组织导入数据的第三方数据连接器。此更改的原因是身份验证的现代提供更多安全比当前方法，基于前面所述的终结点用于连接到 Azure 服务添加到白名单第三方连接器。
+
+若要启用第三方数据连接器以连接到 Office 365 使用的新的现代身份验证方法，您的 Office 365 组织中的管理员必须同意以作为受信任的服务应用程序在 Azure Active Directory 中注册连接器。这是接受权限请求以允许访问您组织的 Azure Active Directory 中的数据的连接器。接受此请求后，第三方数据连接器是添加为 Azure Active Directory 的企业应用程序，表示为服务主体。同意过程的详细信息，请参阅[Consent 租户管理员](https://docs.microsoft.com/en-us/skype-sdk/trusted-application-api/docs/tenantadminconsent)。
+
+下面是访问并接受请求将连接器注册的步骤：
+
+1. 转到[此页](https://login.microsoftonline.com/common/oauth2/authorize?client_id=8dfbc50b-2111-4d03-9b4d-dd0d00aae7a2&response_type=code&redirect_uri=https://portal.azure.com/&nonce=1234&prompt=admin_consent)并使用的 Office 365 全局管理员凭据登录。<br/><br/>下面的对话框中显示。您可以展开插入符号以查看将分配给连接器的权限。<br/><br/>![显示权限请求对话框](media/O365_ThirdPartyDataConnector_OptIn1.png)
+2. 单击**接受**。
+
+接受请求后，将显示[Azure 门户仪表板](https://portal.azure.com)。若要查看为您的组织的应用程序的列表，请单击**Azure Active Directory** > **企业应用程序**。**企业应用程序**刀片上列出 Office 365 第三方数据连接器。
+
+> [!IMPORTANT]
+> 年 9 月 30 2018年后第三方将不再将数据导入您的组织中的邮箱如果不在 Azure Active Directory 中注册的第三方数据连接器。步骤 5 中的过程在 Azure Active Directory 中必须还进行注册现有第三方数据连接器 （那些之前 2018 年 9 月 30，创建） 的说明。
+
+### <a name="revoking-consent-for-a-third-party-data-connector"></a>撤消第三方数据连接器的同意
+
+您的组织同意在 Azure Active Directory 中注册的第三方数据连接器的权限请求后，您的组织可以取消随时的许可。但是，撤消连接器同意将意味着第三方数据源中的数据不再将导入 Office 365。
+
+要取消的第三方数据连接器的同意，您可以删除应用程序 （通过删除相应的服务主体） 使用**企业应用程序**刀片，在 Azure 门户中，或通过使用[的 Azure Active Directory删除 MsolServicePrincipal](https://docs.microsoft.com/en-us/powershell/module/msonline/remove-msolserviceprincipal) Office 365 PowerShell 中。您还可以使用 Azure Active Directory PowerShell 中[删除 AzureADServicePrincipal](https://docs.microsoft.com/en-us/powershell/module/azuread/remove-azureadserviceprincipal) cmdlet。
   
 ## <a name="more-information"></a>详细信息
 

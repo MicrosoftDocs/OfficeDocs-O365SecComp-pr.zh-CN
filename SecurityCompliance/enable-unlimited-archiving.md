@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.assetid: e2a789f2-9962-4960-9fd4-a00aa063559e
 description: 管理员： 了解如何启用自动扩展 Office 365，其 Exchange Online 邮箱的用户提供不受限制的存储的存档。您可以启用自动扩展为整个组织或特定用户的存档。
-ms.openlocfilehash: 823e4ed0049e7a28a6c97c4045fb75987f43db5f
-ms.sourcegitcommit: e7b87fae103a858981bdbcdf7ec55afa4751ad05
+ms.openlocfilehash: ede3e75a021d750160268ccf06ac4fe1637d219a
+ms.sourcegitcommit: 81c2fd5cd940c51bc43ac7858c7bdfa207ce401a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2018
-ms.locfileid: "23782149"
+ms.lasthandoff: 09/03/2018
+ms.locfileid: "23809697"
 ---
 # <a name="enable-unlimited-archiving-in-office-365---admin-help"></a>启用无限制存档的 Office 365-管理帮助
 
@@ -54,7 +54,7 @@ ms.locfileid: "23782149"
 
 而非启用自动扩展您的组织中的每个用户的存档，您可以只启用它为特定用户。因为只有某些用户可能非常大的存档存储需要，您可能需要执行此操作。
   
-当启用自动扩展存档特定用户时，还进行以下两种配置更改：
+当您启用自动扩展特定用户的存档和上的用户的邮箱中保留或分配给 Office 365 保留策略，进行以下两种配置更改：
   
 - 用户的主存档邮箱的存储配额增加了 10 GB （从为 110 GB 的 100 GB)。存档警告配额还增加了 10 GB （从为 100 GB 的 90 GB)。
     
