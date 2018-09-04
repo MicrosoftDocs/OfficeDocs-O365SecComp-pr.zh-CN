@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.assetid: 0ce338d5-3666-4a18-86ab-c6910ff408cc
 description: 管理员可以从导入第三方数据社交媒体平台、 即时消息平台，以及文档协作平台到 Office 365 组织中的邮箱。这样可以存档来自 Office 365 中的 Facebook、 Twitter 和数据源的数据。然后您可以对第三方数据 appply Office 365 合规性功能 （如合法保留、 内容搜索和保留策略）。
-ms.openlocfilehash: f5590d170986b8ae69458e69cedeb8a0ef137ef4
-ms.sourcegitcommit: 81c2fd5cd940c51bc43ac7858c7bdfa207ce401a
+ms.openlocfilehash: 7af88338333e90bd208d693fbfd5bb691d44b538
+ms.sourcegitcommit: 4c6c937ec51e8b754332e4c1c8d286e73e197e2c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/03/2018
-ms.locfileid: "23809707"
+ms.lasthandoff: 09/04/2018
+ms.locfileid: "23827086"
 ---
 # <a name="archiving-third-party-data-in-office-365"></a>在 Office 365 中存档第三方数据
 
@@ -636,7 +636,7 @@ Office 365 中的 Azure 服务启动年 9 月 30 2018年将开始使用现代身
 1. 转到[此页](https://login.microsoftonline.com/common/oauth2/authorize?client_id=8dfbc50b-2111-4d03-9b4d-dd0d00aae7a2&response_type=code&redirect_uri=https://portal.azure.com/&nonce=1234&prompt=admin_consent)并使用的 Office 365 全局管理员凭据登录。<br/><br/>下面的对话框中显示。您可以展开插入符号以查看将分配给连接器的权限。<br/><br/>![显示权限请求对话框](media/O365_ThirdPartyDataConnector_OptIn1.png)
 2. 单击**接受**。
 
-接受请求后，将显示[Azure 门户仪表板](https://portal.azure.com)。若要查看为您的组织的应用程序的列表，请单击**Azure Active Directory** > **企业应用程序**。**企业应用程序**刀片上列出 Office 365 第三方数据连接器。
+接受请求后，将显示在[Azure 门户](https://portal.azure.com)。若要查看为您的组织的应用程序的列表，请单击**Azure Active Directory** > **企业应用程序**。**企业应用程序**刀片上列出 Office 365 第三方数据连接器。
 
 > [!IMPORTANT]
 > 年 9 月 30 2018年后第三方将不再将数据导入您的组织中的邮箱如果不在 Azure Active Directory 中注册的第三方数据连接器。步骤 5 中的过程在 Azure Active Directory 中必须还进行注册现有第三方数据连接器 （那些之前 2018 年 9 月 30，创建） 的说明。
@@ -647,7 +647,7 @@ Office 365 中的 Azure 服务启动年 9 月 30 2018年将开始使用现代身
 
 要取消的第三方数据连接器的同意，您可以删除应用程序 （通过删除相应的服务主体） 使用**企业应用程序**刀片，在 Azure 门户中，或通过使用[的 Azure Active Directory删除 MsolServicePrincipal](https://docs.microsoft.com/en-us/powershell/module/msonline/remove-msolserviceprincipal) Office 365 PowerShell 中。您还可以使用 Azure Active Directory PowerShell 中[删除 AzureADServicePrincipal](https://docs.microsoft.com/en-us/powershell/module/azuread/remove-azureadserviceprincipal) cmdlet。
   
-## <a name="more-information"></a>详细信息
+## <a name="more-information"></a>更多信息
 
 - 与以前所述，从第三方数据源导入到 Exchange 邮箱作为电子邮件项目。合作伙伴连接器导入使用所需的 Office 365 API 的架构的项。下表说明了第三方数据源中的项目的邮件属性后导入到 Exchange 邮箱作为电子邮件。表还指示是否强制 message 属性。必须填充必需的属性。如果项目缺少必需属性，它不会导入到 Office 365。导入过程将返回解释原因项目未导入和哪个属性是缺少一条错误消息。
     
