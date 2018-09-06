@@ -3,7 +3,7 @@ title: 为 Office 365 中的管理员管理隔离的邮件和文件
 ms.author: krowley
 author: kccross
 manager: laurawi
-ms.date: 5/19/2018
+ms.date: 09/05/2018
 ms.audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.assetid: 065cc2cf-2f3a-47fd-a434-2a20b8f51d0c
 description: '作为一名管理员，您可以查看、 释放和报告误报隔离的邮件 Office 365 中。您可以设置策略，以便 Office 365 筛选消息，并将其原因有多种隔离发送： 因为他们已标识为垃圾邮件、 批量、 网络钓鱼、 恶意软件，或者因为它们匹配的邮件流规则。 '
-ms.openlocfilehash: f30604da185b3455d89ae7c1206bda2149ef7778
-ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+ms.openlocfilehash: be6384d8937e25aec55d82d8212c49d25b64b9a1
+ms.sourcegitcommit: d85fc77cba3a17d5ddf215e2f506f61b499e0cda
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22525455"
+ms.lasthandoff: 09/06/2018
+ms.locfileid: "23839096"
 ---
 # <a name="manage-quarantined-messages-and-files-as-an-administrator-in-office-365"></a>为 Office 365 中的管理员管理隔离的邮件和文件
 
@@ -34,7 +34,7 @@ Office 365 使用发送到其他用户的隔离邮件并使用隔离文件中，
   
 ## <a name="view-your-organizations-quarantined-messages"></a>查看贵组织的隔离的邮件
 
-1. 使用工作或学校 Office 365organization 中具有全局管理员权限的帐户，登录到 Office 365 和[转到的安全性和合规性中心](go-to-the-securitycompliance-center.md)。
+1. 使用 Office 365 组织中具有全局管理员权限的工作或学校帐户，登录到 Office 365 并[转到的安全性和合规性中心](go-to-the-securitycompliance-center.md)。
     
 2. 在左侧列表中，展开**威胁管理**，选择**查看**，，然后选择**隔离**。
     

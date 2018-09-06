@@ -3,7 +3,7 @@ title: 发送垃圾电子邮件后，从阻止列表中删除用户、域或 IP 
 ms.author: krowley
 author: kccross
 manager: laurawi
-ms.date: 6/20/2018
+ms.date: 09/05/2018
 ms.audience: ITPro
 ms.topic: article
 f1_keywords:
@@ -15,12 +15,12 @@ search.appverid:
 - MET150
 ms.assetid: 712cfcc1-31e8-4e51-8561-b64258a8f1e5
 description: 如果用户从为垃圾邮件分类的 Office 365 持续发送电子邮件，它们将阻止发送任何详细消息。
-ms.openlocfilehash: 87b7083fe1345a15ea582f12a5b0d417bbe6b568
-ms.sourcegitcommit: e9dca2d6a7838f98bb7eca127fdda2372cda402c
+ms.openlocfilehash: 3f3130bec3cde4cdc1343a0140a9013deacfc519
+ms.sourcegitcommit: d85fc77cba3a17d5ddf215e2f506f61b499e0cda
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/21/2018
-ms.locfileid: "23002587"
+ms.lasthandoff: 09/06/2018
+ms.locfileid: "23839106"
 ---
 # <a name="removing-a-user-domain-or-ip-address-from-a-block-list-after-sending-spam-email"></a>发送垃圾电子邮件后，从阻止列表中删除用户、域或 IP 地址
 
@@ -34,27 +34,19 @@ ms.locfileid: "23002587"
   
 ## <a name="unblock-a-blocked-office-365-email-account"></a>解除对被阻止的 Office 365 电子邮件帐户的阻止
 
-完成 Exchange 管理员中心 (EAC) 中的此任务。有关 EAC 的详细信息，请查看[Exchange 管理员中心在 Exchange Online Protection](exchange-admin-center-in-exchange-online-protection-eop.md) 。 
-  
-> [!NOTE]
-> 只有在 Exchange Online 的 EAC 中才能看到操作中心。 
-  
-1. 在 EAC 中，导航到**保护** \> **操作中心**。
+完成此任务中的 Office 365 安全性和合规性中心 (SCC)。有关 SCC 的详细信息[转到 Office 365 安全性和合规性中心](go-to-the-securitycompliance-center.md)。
+
+1. 使用具有 Office 365 全局管理员权限，登录到 Office 365 安全性和合规性中心和在左侧列表中，展开**威胁管理**，选择**查看**，然后选择**受限的工作或学校帐户用户**。
     
-    ![导航至 Exchange 管理中心的操作中心。](media/9bbf0844-7b34-4a86-a2b7-8c7e9c8519a3.png)
-  
-2. 选择**搜索**图标，然后输入阻止用户的 SMTP 地址。 
-    
-    ![在操作中心搜索受阻止的用户](media/f931b5a0-7115-4d95-9f6f-b403436031ba.png)
-  
-3. 在说明窗格中，单击**取消阻止客户**。 
-    
-    ![在操作中心取消阻止用户](media/c5d5b1b9-8416-45aa-9631-881e94d1d056.png)
-  
-4. 单击**是**以确认更改。 
+    > [!TIP]
+    > 若要直接转到安全中的**受限制的用户**页上&amp;合规性中心，使用以下 URL: >[https://protection.office.com/?hash=/restrictedusers](https://protection.office.com/?hash=/restrictedusers)
+
+2. 此页将包含已被阻止发送到组织外部的邮件的用户列表。 查找的用户要在**取消阻止**删除限制，然后单击。
+
+3. 单击**是**以确认更改。 
     
 > [!NOTE]
-> 没有帐户可以取消由租户管理员的次数限制如果已超出限制的用户，将显示一条错误消息。若要取消阻止用户的联系人支持。 
+> 没有帐户可以取消由租户管理员的次数限制如果已超出限制的用户，将显示一条错误消息。然后，您将需要联系支持取消阻止用户。 
   
 ## <a name="third-party-block-lists"></a>第三方阻止列表
 
