@@ -3,7 +3,7 @@ title: Office 365 邮件加密 FAQ
 ms.author: krowley
 author: kccross
 manager: laurawi
-ms.date: 7/23/2018
+ms.date: 8/28/2018
 ms.audience: ITPro
 ms.topic: overview
 ms.service: o365-administration
@@ -12,12 +12,12 @@ search.appverid:
 - MET150
 ms.assetid: 0432dce9-d9b6-4e73-8a13-4a932eb0081e
 description: 有关于 Office 365 中的新邮件保护功能的工作方式的问题？检查此处答案。
-ms.openlocfilehash: d435642d8ea98d37a58b28b55c9c1e68c746600c
-ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+ms.openlocfilehash: 8fc3fa2378dfc8dba6ed17c042269f726235bc58
+ms.sourcegitcommit: a8884b9675559018e1fddec1c0cc2de0bc3bdde5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22559247"
+ms.lasthandoff: 09/06/2018
+ms.locfileid: "23839952"
 ---
 # <a name="office-365-message-encryption-faq"></a>Office 365 邮件加密 FAQ
 
