@@ -223,7 +223,7 @@
 ## [审核日志中的详细属性](detailed-properties-in-the-office-365-audit-log.md)
 ## [在审核日志中使用共享审核](use-sharing-auditing.md)
 ## [在审核日志中搜索电子数据展示活动](search-for-ediscovery-activities-in-the-audit-log.md)
-# 监视安全性和合规性
+# [监视安全与合规](monitor-security-and-compliance.md)
 ## [警报策略](alert-policies.md)
 ### [创建活动警报](create-activity-alerts.md)
 ## [安全与合规中心内的智能报告和见解](reports-and-insights-in-security-and-compliance.md)
@@ -264,7 +264,7 @@
 ### [在 Office 365 中向个人数据应用保护](apply-protection-to-personal-data-in-office-365.md)
 ### [监视是否有个人数据泄露](monitor-for-leaks-of-personal-data.md)
 ### [Office 365 GDPR 开发/测试环境](gdpr-discovery-protection-reporting-in-office365-dev-test-environment.md)
-## GDPR 对本地 Office 服务器的要求
+## [用于本地 Office 服务器的 GDPR](gdpr-for-office-servers.md)
 ### [用于 SharePoint Server 的 GDPR](gdpr-for-sharepoint-server.md)
 ### [用于 Exchange Server 的 GDPR](gdpr-for-exchange-server.md)
 ### [GDPR 对 Skype for Business Server 和 Lync Server 的要求](gdpr-for-skype-for-business-server.md)
