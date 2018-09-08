@@ -3,7 +3,6 @@ title: 在 EOP 中配置最终用户垃圾邮件通知
 ms.author: krowley
 author: kccross
 manager: laurawi
-ms.date: 11/17/2014
 ms.audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
@@ -13,12 +12,12 @@ search.appverid:
 - MET150
 ms.assetid: e9947db5-1dd1-4493-872d-7362b24c7ba0
 description: 您可以针对默认的公司范围内内容筛选器策略或应用于域的自定义内容筛选器策略配置最终用户垃圾邮件通知。
-ms.openlocfilehash: 990fa31cc22b33d235d6e8f106511996a52212a2
-ms.sourcegitcommit: e9dca2d6a7838f98bb7eca127fdda2372cda402c
+ms.openlocfilehash: 3acb825a0b9e15c01c8b1c3266289c273b323d88
+ms.sourcegitcommit: 234a22c61859133ed5e7988a9551a569781518a4
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/21/2018
-ms.locfileid: "23002921"
+ms.lasthandoff: 09/07/2018
+ms.locfileid: "23875794"
 ---
 # <a name="configure-end-user-spam-notifications-in-eop"></a>在 EOP 中配置最终用户垃圾邮件通知
   
@@ -29,16 +28,28 @@ ms.locfileid: "23002921"
   
 最终用户垃圾邮件通知包含最终用户在您所配置的时间段（您可以指定一个介于 1 到 15 天之间的值）内收到的所有垃圾邮件隔离邮件的列表。您还可以配置通知邮件的编写语言。
   
-在收到通知邮件后，最终用户可以通过单击将垃圾电子邮件移动至收件箱，或将垃圾电子邮件报告为"非垃圾邮件"，在这种情况下，该邮件会被发送至 Microsoft 垃圾邮件分析团队。
+在收到一封通知邮件，最终用户可以选择以下选项：
+
+**预览**邮件如果您想要预览的内容或之前采取操作的标头。
+
+**下载**如果您想要在您的设备之前采取操作时，（如果有） 查看消息和附件的邮件。
+
+**版本**如果邮件不是垃圾邮件，并且您希望 Office 365 邮件发送给您的邮箱。
+
+**发行版和允许的发件人**如果邮件不是垃圾邮件，并且您希望 Office 365 将发件人添加到您的安全发件人和将来的电子邮件的收件人列表。请记住，您的管理员可能必须覆盖安全发件人列表的其他组织范围允许/阻止配置。
+
+**发布和报告**、 如果邮件不是垃圾邮件和您想要将邮件发送到您的邮箱并将其报告给 Microsoft 进行分析。
+
+**阻止**如果您希望 Office 365 将发件人添加到阻止的发件人列表。
   
-## <a name="what-do-you-need-to-know-before-you-begin"></a>在开始之前，需要知道什么？
+## <a name="what-do-you-need-to-know-before-you-begin"></a>开始前，有必要了解什么？
 <a name="sectionSection0"> </a>
 
 估计完成时间：5 分钟
   
 您必须先获得权限，然后才能执行此过程或多个过程。若要查看所需的权限，请参阅 [EOP 中的功能权限](eop/feature-permissions-in-eop.md)主题中的"反垃圾邮件"条目。 
   
-若要了解可能适用于此主题中过程的键盘快捷键，请参阅 **Exchange 管理中心内的键盘快捷键**。
+若要了解本主题中的过程可能适用的键盘快捷键，请参阅 **Exchange 管理中心内的键盘快捷键**。
   
 ## <a name="use-the-eac-to-configure-end-user-spam-notifications"></a>使用 EAC 配置最终用户垃圾邮件通知
 
