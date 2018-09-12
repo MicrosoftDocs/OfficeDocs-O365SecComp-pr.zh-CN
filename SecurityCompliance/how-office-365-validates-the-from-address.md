@@ -13,12 +13,12 @@ search.appverid:
 - MET150
 ms.assetid: eef8408b-54d3-4d7d-9cf7-ad2af10b2e0e
 description: 为了帮助防止网络钓鱼，Office 365 和 Outlook.com 现在需要 RFC 法规遵从性从： 地址。
-ms.openlocfilehash: 562e08aa54cb6544beccb6f0e8760735f67b834b
-ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+ms.openlocfilehash: 8425d4ef7635c2beddcd7915daf73736432d4ca9
+ms.sourcegitcommit: d89c24258123a3ffde574a391d59afd3aea8470d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22524844"
+ms.lasthandoff: 09/12/2018
+ms.locfileid: "23955424"
 ---
 # <a name="how-office-365-validates-the-from-address-to-prevent-phishing"></a>Office 365 如何验证发件人地址以防止网络钓鱼
 
@@ -35,8 +35,6 @@ Microsoft 将开始推出上 2017 年 11 月 9，本文中所述的策略的实�
 
 Office 365 正在更改的方式，它强制使用 From： 为了更好的接收的消息中的地址保护您从网络钓鱼攻击。本文内容：
   
-- [所有邮件都必须都包括从有效： 地址](how-office-365-validates-the-from-address.md#MustIncludeFromAddress)
-    
 - [所有邮件都必须都包括从有效： 地址](how-office-365-validates-the-from-address.md#MustIncludeFromAddress)
     
 - [从的格式： 如果不包括的显示名称的地址](how-office-365-validates-the-from-address.md#FormatNoDisplayName)

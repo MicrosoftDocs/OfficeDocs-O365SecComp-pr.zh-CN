@@ -12,12 +12,12 @@ search.appverid:
 - MET150
 ms.assetid: 7ff0c040-b25c-4378-9904-b1b50210d00e
 description: 可以使用内置到 Azure 信息保护，您的组织的顶部功能的新 Office 365 邮件加密保护与您的组织内外的人员的电子邮件通信。新的 OME 功能使用其他 Office 365 组织、 Outlook.com、 Gmail 和其他电子邮件服务。
-ms.openlocfilehash: e59368f5854c86c04f4f0bdf376537d3f6b02d33
-ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+ms.openlocfilehash: c24b2f9b612b863217df8afd951424d1a89295c9
+ms.sourcegitcommit: d89c24258123a3ffde574a391d59afd3aea8470d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22525983"
+ms.lasthandoff: 09/12/2018
+ms.locfileid: "23955414"
 ---
 # <a name="set-up-new-office-365-message-encryption-capabilities"></a>设置全新的 Office 365 邮件加密功能
 
@@ -25,7 +25,7 @@ ms.locfileid: "22525983"
   
 ## <a name="get-started-with-ome-by-activating-azure-rights-management-part-of-azure-information-protection"></a>开始使用 OME 通过激活 Azure 权限管理 Azure 信息保护的一部分
 
-现在，则很容易入门的新 OME 功能。从年 2 月 2018 Office 365 自动启用合格组织内我们数据中心的新 OME 功能。如果为一个新的 Office 365 租户并且您的组织具有相应的订阅，则合格您的组织。* * 如果 * * * * 已启用 Azure 权限管理 (Azure RMS)，一部分 Azure 信息保护，则我们为您自动启用 Office 365 邮件加密。* * 您无需进行任何其他启用 OME 操作。若要激活 Azure 权限管理，请参阅[激活 Azure 权限管理](https://docs.microsoft.com/azure/information-protection/deploy-use/activate-service)。订阅的信息，请参阅"哪些订阅我需要使用新的 OME capabilities?"在[Office 365 邮件加密 FAQ](ome-faq.md)。有关购买订阅 Azure 信息保护信息，请参阅[Azure 信息保护](https://azure.microsoft.com/services/information-protection/)。
+现在，则很容易入门的新 OME 功能。从年 2 月 2018 Office 365 自动启用合格组织内我们数据中心的新 OME 功能。如果为一个新的 Office 365 租户并且您的组织具有相应的订阅，则合格您的组织。**如果已启用 Azure 权限管理 (Azure RMS)，一部分 Azure 信息保护，则我们为您自动启用 Office 365 邮件加密。** 您无需进行任何其他启用 OME 操作。若要激活 Azure 权限管理，请参阅[激活 Azure 权限管理](https://docs.microsoft.com/azure/information-protection/deploy-use/activate-service)。订阅的信息，请参阅"哪些订阅我需要使用新的 OME capabilities?"在[Office 365 邮件加密 FAQ](ome-faq.md)。有关购买订阅 Azure 信息保护信息，请参阅[Azure 信息保护](https://azure.microsoft.com/services/information-protection/)。
   
 如果您使用 Exchange Online 与 Active Directory 权限管理服务 (AD RMS)，不能立即启用这些新功能。相反，您需要从迁移 AD RMS 到 Azure 信息保护第一次。完成迁移后，您可以成功完成这些步骤。
   
@@ -62,22 +62,18 @@ ms.locfileid: "22525983"
     
 2. 运行 Test-irmconfiguration cmdlet 使用以下语法：
     
-  ```
-  Test-IRMConfiguration [-Sender <email address >]
-  ```
+    ```Test-IRMConfiguration [-Sender <email address >]```  
 
-    例如：
+   例如：
     
-  ```
-  Test-IRMConfiguration -Sender securityadmin@contoso.com
-  ```
+    ```Test-IRMConfiguration -Sender securityadmin@contoso.com```
 
     其中电子邮件地址是用户的 Office 365 组织中的电子邮件地址。可选的提供的发件人电子邮件地址强制执行其他检查系统的同时。
     
     您的结果应类似于这些：
     
-  ```
-  Results : Acquiring RMS Templates ...
+    ```
+    Results : Acquiring RMS Templates ...
                 - PASS: RMS Templates acquired.  Templates available: Contoso  - Confidential View Only, Contoso  - Confidential, Do Not 
             Forward.
             Verifying encryption ...
@@ -88,7 +84,7 @@ ms.locfileid: "22525983"
                 - PASS: IRM verified successfully.
             
             OVERALL RESULT: PASS
-  ```
+    ```
 
     其中*Contoso*被替换 Office 365 组织的名称。 
     
@@ -98,9 +94,7 @@ ms.locfileid: "22525983"
     
 3. 运行 Remove-pssession cmdlet，以断开 Rights Management 服务。
     
-  ```
-  Remove-PSSession $session
-  ```
+    ```Remove-PSSession $session```
 
 ## <a name="next-steps-define-new-mail-flow-rules-that-use-the-new-ome-capabilities"></a>后续步骤： 定义使用新的 OME 功能的新邮件流规则
 <a name="Rules_1"> </a>

@@ -19,12 +19,12 @@ search.appverid:
 - ZWD160
 ms.assetid: dd6a1fef-ec4a-4cf4-a25a-bb591c5811e3
 description: 安全链接功能提供的超链接中 Office 文档和电子邮件中的时间的单击验证。使用安全的链接可从网络钓鱼和其他攻击保护您的组织。
-ms.openlocfilehash: 2844be795eade9cfe29fbd50a5b3678680999171
-ms.sourcegitcommit: 5befdaad0f84112cb71a97fce1322579458d1622
+ms.openlocfilehash: b2aa83d7958e030170bcbdc4bfb5e27578bf8b81
+ms.sourcegitcommit: d89c24258123a3ffde574a391d59afd3aea8470d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "23867385"
+ms.lasthandoff: 09/12/2018
+ms.locfileid: "23955454"
 ---
 # <a name="office-365-atp-safe-links"></a>Office 365 ATP 安全链接
 
@@ -85,6 +85,8 @@ Office 365 ATP 安全链接 （ATP 安全链接） （以及[Office 365 ATP 安�
 - 从开始后期年 10 月 2017年，ATP 安全链接保护扩展到 Url 为 Url 或电子邮件中 Office 365 ProPlus 的文档，如 Word、 Excel、 PowerPoint 和 Visio 中对应用 Windows，以及 Office iOS 和 Android 设备上的应用程序。（请确保您使用的[Office 现代身份验证](https://docs.microsoft.com/office365/enterprise/modern-auth-for-office-2013-and-2016)。）
     
 - 从开始年 3 月 2018年，被扩展 ATP 安全链接保护应用于组织内的人员之间发送的电子邮件。
+
+- 年 6 月 2018，当用户使用 Outlook Web 应用程序 (OWA)，在开始 ATP 安全链接呈现原始 Url，并不显示重写的 Url。这样用户电子邮件中查看原始的链接。（此功能尚不可用的 Outlook 客户端应用程序。）
     
 - 开始在 2018年的第二部分中，ATP 安全链接被扩展保护于 Url 的 Office Online （Word Online、 Excel Online、 PowerPoint Online 和 OneNote 联机） 和 Office 365 ProPlus 上 mac。
     

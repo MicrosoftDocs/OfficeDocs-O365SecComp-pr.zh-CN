@@ -15,22 +15,18 @@ search.appverid:
 - MET150
 ms.assetid: 712cfcc1-31e8-4e51-8561-b64258a8f1e5
 description: 如果用户从为垃圾邮件分类的 Office 365 持续发送电子邮件，它们将阻止发送任何详细消息。
-ms.openlocfilehash: ff5bb010f45b0c89e08239f0e37885bd7ae5c7cd
-ms.sourcegitcommit: 234a22c61859133ed5e7988a9551a569781518a4
+ms.openlocfilehash: 8dcd6c8f55d867e1c2e249ec71a3a5c6b78ac76a
+ms.sourcegitcommit: d89c24258123a3ffde574a391d59afd3aea8470d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "23875784"
+ms.lasthandoff: 09/12/2018
+ms.locfileid: "23955434"
 ---
 # <a name="removing-a-user-domain-or-ip-address-from-a-block-list-after-sending-spam-email"></a>发送垃圾电子邮件后，从阻止列表中删除用户、域或 IP 地址
 
-如果用户从为垃圾邮件分类的 Office 365 持续发送电子邮件，它们将阻止发送任何详细消息。 
-  
-当发件人阻止发送电子邮件消息时，他们将收到未送达报告 （NDR 或无法发送邮件的电子邮件），提供有关所必须采取取消阻止自己的步骤的特定信息。
-  
-不仅可以通过服务，而特定网站域，阻止各个用户，还会阻止 IP 地址。在某些情况下，域或网站可以被添加到阻止列表只是因为它们出现在垃圾邮件。为 Office 365 管理中心中，您可以尝试获取用户、 网站、 域和从第三方阻止列表删除 IP 地址。使用本主题底部表中的链接联系，每个第三方，然后按照说明进行操作。如果 Office 365 外部的某个人无法将邮件发送给您的 Office 365 帐户，其帐户可能外部阻止发件人列表上已结束。Office 365 以外的用户可以尝试通过使用[自助服务除名门户](https://technet.microsoft.com/library/mt661881%28v=exchg.150%29.aspx)中将自己删除被阻止的发件人名单。
-  
-您可以配置出站垃圾邮件设置，以便在 Office 365 用户阻止发送为垃圾邮件分类的电子邮件时获取 anotification。解决用户邮箱的问题后，您可以删除的阻止的发件人。
+如果用户从为垃圾邮件分类的 Office 365 持续发送电子邮件，它们将阻止发送任何详细消息。用户将列在作为错误出站发件人的服务，并将接收未送达报告 （NDR 或无法发送邮件的电子邮件），提供有关所必须采取取消阻止自己的步骤的特定信息。
+
+您可以配置出站垃圾邮件策略设置，以便在 Office 365 用户阻止发送电子邮件时收到通知。解决用户邮箱的问题后，您可以删除的阻止的发件人。
   
 ## <a name="unblock-a-blocked-office-365-email-account"></a>解除对被阻止的 Office 365 电子邮件帐户的阻止
 
@@ -46,9 +42,11 @@ ms.locfileid: "23875784"
 3. 单击**是**以确认更改。 
     
 > [!NOTE]
-> 没有帐户可以取消由租户管理员的次数限制如果已超出限制的用户，将显示一条错误消息。然后，您将需要联系支持取消阻止用户。 
+> 没有帐户可以取消由租户管理员的次数限制如果已超出限制的用户，将显示一条错误消息。然后，您将需要联系支持取消阻止用户。
   
 ## <a name="third-party-block-lists"></a>第三方阻止列表
+
+Exchange Online Protection 还使用第三方阻止列表来帮助在垃圾邮件筛选决策。可以添加用户、 网站、 域和 IP 地址阻止列表仅为显示在垃圾邮件。为 Office 365 管理中心中，您应尝试获取如果属于您从第三方列表提供程序中删除这些对象。使用中的链接表，每个第三方联系人，然后按照其说明下方。
 
 |**列表名称**|**除名门户**|**详细信息**|
 |:-----|:-----|:-----|
@@ -57,17 +55,18 @@ ms.locfileid: "23875784"
 |Spamhaus   <br/> |[https://www.spamhaus.org/lookup/](https://www.spamhaus.org/lookup/) <br/> |[了解 DNSBL 筛选](https://www.spamhaus.org/whitepapers/dnsbl_function/) <br/> |
 |invaluement  <br/> |[http://dnsbl.invaluement.com/lookup/](http://dnsbl.invaluement.com/lookup/) <br/> |[invaluement 反垃圾邮件列表](http://dnsbl.invaluement.com/) <br/> |
 |Phishtank  <br/> |[https://www.phishtank.com/](https://www.phishtank.com/) <br/> |[PhishTank 常见问题](https://www.phishtank.com/faq.php) <br/> |
-   
+
 > [!NOTE]
-> Exchange Online Protection 还使用第三方阻止列表的垃圾邮件筛选。 
-   
-## <a name="for-more-information"></a>详细信息
+> 如果 Office 365 外部的某个人无法将邮件发送给您的 Office 365 帐户，其帐户可能在外部的阻止发件人列表。Office 365 以外的用户可以尝试使用[自助服务除名门户](https://docs.microsoft.com/en-us/office365/SecurityCompliance/use-the-delist-portal-to-remove-yourself-from-the-office-365-blocked-senders-lis)删除本身。 
+
+## <a name="for-more-information"></a>更多信息
+
+[响应受到攻击的电子邮件帐户](responding-to-a-compromised-email-account.md)
 
 [配置出站垃圾邮件策略](configure-the-outbound-spam-policy.md)
   
 [出站邮件的高风险传递池](high-risk-delivery-pool-for-outbound-messages.md)
 
-[使用除名门户来将自己从 Office 365 阻止的发件人名单中删除](use-the-delist-portal-to-remove-yourself-from-the-office-365-blocked-senders-lis.md)
   
 
   

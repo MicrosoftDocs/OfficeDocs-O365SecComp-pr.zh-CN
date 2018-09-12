@@ -10,12 +10,12 @@ ms.service: o365-administration
 localization_priority: Normal
 ms.assetid: 5a6f2d7f-d998-4f31-b4f5-f7cbf6f38578
 description: ATP 防钓鱼保护，一部分 Office 365 高级威胁保护，可帮助您的组织防止恶意基于模拟的网络钓鱼攻击和其他网络钓鱼攻击。如果您的 Office 365 企业版全局或安全管理员，您可以设置 ATP 防钓鱼策略。网络钓鱼攻击来自在窗体的各种基于商品攻击到目标的矛网络钓鱼或 whaling。具有不断增长的复杂性，很难甚至培训眼睛标识其中一些复杂攻击。幸运的是，可以帮助 Office 365 高级威胁保护。您可以设置 ATP 防钓鱼策略，以帮助确保您的组织受到此类攻击。
-ms.openlocfilehash: 5c93ae5de7d7b021dbe1c1da682e35799938e456
-ms.sourcegitcommit: a8884b9675559018e1fddec1c0cc2de0bc3bdde5
+ms.openlocfilehash: 9ceef88a2d60a10a8911e7559e10850858015977
+ms.sourcegitcommit: d89c24258123a3ffde574a391d59afd3aea8470d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "23839962"
+ms.lasthandoff: 09/12/2018
+ms.locfileid: "23955444"
 ---
 # <a name="set-up-office-365-atp-anti-phishing-policies"></a>设置 Office 365 ATP 防钓鱼策略
 
@@ -38,7 +38,7 @@ ms.locfileid: "23839962"
 
 - 确保您的**公司管理员**或**安全管理员**角色组的成员。 
     
-- [了解 ATP 防钓鱼策略选项](set-up-atp-anti-phishing-policies.md#phishpolicyoptions)（本文中）。 
+- [了解 ATP 防钓鱼策略选项](set-up-atp-anti-phishing-policies.md#learn-about-atp-anti-phishing-policy-options)（本文中）。 
     
 - 您将可能将多个 ATP 防钓鱼策略设置为您的组织。Office 365 强制实施这些策略他们正在安全中为**ATP 防钓鱼**页面上列出的顺序&amp;合规性中心。一旦已检查的策略选项，请花一些时间来每个确定您将需要多少个策略和优先级。 
     
@@ -99,8 +99,8 @@ Contoso 的安全管理员可能要创建满足这些需求防钓鱼策略使用
 |||
 |:-----|:-----|
 |**设置或选项** <br/> |**示例** <br/> |
-|Name  <br/> |域和 CEO  <br/> |
-|描述  <br/> |确保，CEO 和我们的域不被模拟。  <br/> |
+|名称  <br/> |域和 CEO  <br/> |
+|说明  <br/> |确保，CEO 和我们的域不被模拟。  <br/> |
 |添加用户以保护  <br/> |至少 CEO 的电子邮件地址。  <br/> |
 |添加域，以保护  <br/> |组织域包含 CEO office。  <br/> |
 |选择操作  <br/> |如果由模拟用户发送电子邮件： 选择**重定向到另一个电子邮件地址的消息**，然后键入安全管理员的电子邮件地址，如`securityadmin@contoso.com`。  <br/> 如果由模拟域发送电子邮件： 选择**隔离邮件**。  <br/> |
