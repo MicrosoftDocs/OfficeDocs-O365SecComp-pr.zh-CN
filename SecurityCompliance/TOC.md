@@ -14,7 +14,7 @@
 ## [保护对 Office 365 数据和服务的访问](protect-access-to-data-and-services.md)
 ## [在 MDM 和 Intune 之间进行选择](choose-between-mdm-and-intune.md)
 # [数据丢失防护 (DLP)](data-loss-prevention-policies.md)
-## [观看 DLP 的扩展概述](https://go.microsoft.com/fwlink/?linkid=852300)
+## [观看 DLP 的扩展概述](https://channel9.msdn.com/events/ignite/microsoft-ignite-orlando-2017/brk3111)
 ## 设置 DLP
 ### [开始使用 DLP 策略建议](get-started-with-dlp-policy-recommendations.md)
 ### [开始使用默认 DLP 策略](get-started-with-the-default-dlp-policy.md)
@@ -32,7 +32,8 @@
 ### [自定义内置敏感信息类型](customize-a-built-in-sensitive-information-type.md)
 ### [创建自定义敏感信息类型](create-a-custom-sensitive-information-type.md)
 ### [创建关键字字典](create-a-keyword-dictionary.md)
-# 管理数据治理        
+### [文档指纹识别](document-fingerprinting.md) 
+# 管理数据管理        
 ## [导入数据](importing-pst-files-to-office-365.md)
 ### [使用网络上传导入 PST 文件](use-network-upload-to-import-pst-files.md)
 ### [使用驱动器传送导入 PST 文件](use-drive-shipping-to-import-pst-files-to-office-365.md)
