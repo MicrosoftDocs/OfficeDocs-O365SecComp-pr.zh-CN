@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.assetid: 82c382a5-b6db-44fd-995d-b333b3c7fc30
 description: 如果需要标识和保护其他类型的敏感信息（例如，使用组织专用格式的员工 ID），可创建自定义敏感信息类型。敏感信息类型是在称为“规则包”的 XML 文件中进行定义。本主题介绍了如何创建定义你自己的自定义敏感信息类型的 XML 文件。你需要知道如何创建正则表达式。
-ms.openlocfilehash: 65e55832a88ec7b31dba55930cc90960aa33a20d
-ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+ms.openlocfilehash: 56683dd8ceac286f79084d2c2f19f48f5849a02f
+ms.sourcegitcommit: 4be502d1fc6cbaef4c72d599758d51efe3a173c9
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22524955"
+ms.lasthandoff: 09/06/2018
+ms.locfileid: "23849425"
 ---
 # <a name="create-a-custom-sensitive-information-type"></a>创建自定义敏感信息类型
 
@@ -30,6 +30,12 @@ Office 365 中的数据丢失防护 (DLP) 包含许多[敏感信息类型](what-
 本主题介绍了如何创建定义你自己的自定义敏感信息类型的 XML 文件。你需要知道如何创建正则表达式。例如，本主题创建标识员工 ID 的自定义敏感信息类型。你可从此示例 XML 入手，创建自己的 XML 文件。
   
 创建格式标准的 XML 文件后，可直接使用 PowerShell 将它上传到 Office 365。然后就可以在 DLP 策略中使用自定义敏感信息类型，并测试它能否按预期检测敏感信息。
+
+## <a name="important-disclaimer"></a>重要免责声明
+
+由于客户环境和内容匹配要求的多样性，Microsoft 支持部门无法帮助提供自定义内容匹配定义（例如，定义自定义分类或正则表达式模式 (“RegEx”)）。对于自定义内容匹配的开发、测试和调试，Office 365 客户将需要依赖于内部 IT 资源，或使用 Microsoft 咨询服务 (MCS) 等外部咨询资源。支持工程师可提供针对功能的有限支持，但无法保证任何自定义内容匹配开发都将满足客户的要求或义务。作为可提供的支持类型的示例，可以提供示例正则表达式模式以供测试使用。或者，支持人员可以帮助对现有 RegEx 模式（单个特定内容示例未按预期触发）进行故障排除。
+
+ 有关用于处理文本的 .NET regex 引擎的其他信息，请参阅有关 [.NET 中的正则表达式](https://docs.microsoft.com/zh-CN/dotnet/standard/base-types/regular-expressions)的文档。
     
 ## <a name="sample-xml-of-a-rule-package"></a>规则包 XML 示例
 

@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.assetid: c8a95d1b-c3b6-4613-98ab-0331d1872cf3
 description: 标识敏感信息有时需要查找关键字，尤其是在标识通用内容（如与医疗保健相关的通信）或不当/露骨语言时。虽然可以在敏感信息类型中创建关键字列表，但关键字列表的大小受限，且必须修改 XML 才能创建或编辑它们。借助关键字词典，可以更大规模地轻松管理关键字（每个词典最多支持 100,000 个关键字）。
-ms.openlocfilehash: 3a6557e14a3dd8bdc9e803915ea460c1fbda704b
-ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+ms.openlocfilehash: 5dd0459c801b433b8f0a477aeb2ab4192236bd28
+ms.sourcegitcommit: 4be502d1fc6cbaef4c72d599758d51efe3a173c9
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "23013986"
+ms.lasthandoff: 09/06/2018
+ms.locfileid: "23849395"
 ---
 # <a name="create-a-keyword-dictionary"></a>创建关键字词典
 
@@ -29,7 +29,7 @@ Office 365 中的数据丢失防护 (DLP) 可标识、监视和保护敏感信�
 
 词典可能有多个关键字来源，最常见的来源是文件（如 .csv 或 .txt 列表）、你直接在 cmdlet 中输入的列表或现有词典。创建关键字词典时，请遵循下面的相同核心步骤：
   
-1. **连接到安全与合规中心 PowerShell** - 请参阅[这篇主题](https://go.microsoft.com/fwlink/p/?linkid=799771)。
+1. **连接到安全与合规中心 PowerShell** - 请参阅[这篇主题](https://docs.microsoft.com/zh-CN/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell)。
     
 2. **定义或加载目标来源中的关键字** - 用于创建关键字词典的 cmdlet 接受关键字的逗号分隔列表，所以这一步因关键字来源不同而略有差异。 
     
@@ -39,7 +39,7 @@ Office 365 中的数据丢失防护 (DLP) 可标识、监视和保护敏感信�
     
 ## <a name="create-a-keyword-dictionary-from-a-file"></a>通过文件创建关键字词典
 
-如果需要创建大词典，词典通常使用从其他某来源导出的文件或列表中的关键字。本示例将创建关键字词典，其中包含要在外部电子邮件中筛查的不当语言列表。首先，需要[连接到安全与合规中心 PowerShell](https://go.microsoft.com/fwlink/p/?linkid=799771)。
+如果需要创建大词典，词典通常使用从其他某来源导出的文件或列表中的关键字。本示例将创建关键字词典，其中包含要在外部电子邮件中筛查的不当语言列表。首先，需要[连接到 Office 365 安全与合规中心 PowerShell](https://docs.microsoft.com/zh-CN/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell)。
   
 1. 将关键字复制到文本文件中，并确保每个关键字都单独占一行。
     
