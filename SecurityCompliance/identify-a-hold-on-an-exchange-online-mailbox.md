@@ -11,18 +11,19 @@ localization_priority: Normal
 search.appverid:
 - MET150
 ms.assetid: 6057daa8-6372-4e77-a636-7ea599a76128
-ms.openlocfilehash: d24e51bca0e3d290f110b1ab40f3ee9ae7993678
-ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+description: 了解如何识别的不同类型的保留，可以放在 Office 365 邮箱。保留的这些类型包括诉讼保留、 电子数据展示保留和 Office 365 保留策略。您还可以确定是否用户已从组织范围内保留策略中排除
+ms.openlocfilehash: 375bd86df370fe34fbe59f6581836da7e9d06515
+ms.sourcegitcommit: 82fd4c85b952819157fbb13175c7b2dbbdff510f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22525670"
+ms.lasthandoff: 09/13/2018
+ms.locfileid: "23965259"
 ---
 # <a name="how-to-identify-the-type-of-hold-placed-on-an-exchange-online-mailbox"></a>如何识别为 Exchange Online 邮箱设置的保留类型
 
 本文介绍如何标识放置在 Office 365 中的 Exchange Online 邮箱的保留项。
 
-Office 365 提供多种方式的组织可以防止邮箱内容被永久删除。这将允许组织保留内容以满足合规性将或法律或其他类型的调查的持续时间。下面是在 Office 365 中的保留功能 （也称为保留项） 的列表：
+Office 365 提供多种方式的组织可以防止邮箱内容被永久删除。这将允许组织保留内容以满足合规性将或法律或其他类型的调查的持续时间。下面是在 Office 365 中的保留功能 （也称为*保留*） 的列表：
 
 - **诉讼保留**-于 Exchange Online 中的用户邮箱的保留项。
 
@@ -34,9 +35,11 @@ Office 365 提供多种方式的组织可以防止邮箱内容被永久删除。
 
   有两种类型的 Office 365 可以分配给邮箱的保留策略。
 
-    - **特定位置保留策略**-这是分配给特定用户的内容位置策略。在 Exchange Online PowerShell 中使用 Get-mailbox cmdlet，以获取有关分配给特定邮箱的保留策略的信息。
+    - **特定位置保留策略**-这是分配给特定用户的内容位置策略。在 Exchange Online PowerShell 中使用**Get-mailbox** cmdlet，以获取有关分配给特定邮箱的保留策略的信息。
 
-    - **组织范围内保留策略**-这是分配给您的组织中的所有内容位置策略。在 Exchange Online PowerShell 中使用 Get-organizationconfig cmdlet，以获取有关组织范围内保留策略的信息。有关详细信息，请参阅 Office 365 概述保留策略中的"将保留策略应用于整个组织或特定位置"一节。
+    - **组织范围内保留策略**-这是分配给您的组织中的所有内容位置策略。在 Exchange Online PowerShell 中使用**Get-organizationconfig** cmdlet，以获取有关组织范围内保留策略的信息。有关详细信息，请参阅[Office 365 概述保留策略](retention-policies.md#applying-a-retention-policy-to-an-entire-organization-or-specific-locations)中的"将保留策略应用于整个组织或特定位置"一节。
+
+- **Office 365 标签**-如果用户将 Office 365 标签 （一个配置为保留内容或保留，然后删除内容） 应用于*任何*文件夹或项目中保留其邮箱置于邮箱就像邮箱已置于诉讼挂起或分配给 Office 365 保留策略。有关详细信息，请参阅本文中的[标识邮箱保留因为已应用于文件夹或项目标签](#identifying-mailboxes-on-hold-because-a-label-has-been-applied-to-a-folder-or-item)一节。
 
 若要管理邮箱置于保留状态，您可能需要确定上，以便您可以执行任务，如更改保留持续时间、 临时或永久删除保留项，或从 Office 365 保留策略中排除邮箱置于邮箱的保留项的类型。在这些情况下，第一步是确定邮箱置于保留项的类型。因为可以对单个邮箱放置多个保留 （和不同类型的保留），您必须确定置于邮箱，如果您想要删除或更改这些保留项的所有保留项。
 
@@ -85,7 +88,7 @@ Get-OrganizationConfig | FL InPlaceHolds
 下表介绍不同类型的组织范围内保留项以及如何确定每种类型基于运行**Get-organizationconfig** cmdlet 时*InPlaceHolds*属性中包含的 Guid。
 
 
-|保留类型  |示例值  |描述  |
+|保留类型  |示例值  |说明  |
 |---------|---------|---------|
 |Office 365 的保留策略应用于 Exchange 邮箱、 Exchange 公用文件夹和团队聊天    |      `mbx7cfb30345d454ac0a989ab3041051209:2`   |   组织范围内保留策略应用于 Exchange 邮箱，Exchange 公用文件夹和来开始的 Guid 标识 1xN 聊天中的 Microsoft 团队`mbx`前缀。请注意，1xN 聊天存储在单个聊天参与者的邮箱。      |
 |Office 365 的保留策略应用于 Office 365 组和团队通道邮件     |   `grp1a0a132ee8944501a4bb6a452ec31171:3`      |    由开头的 Guid 标识组织范围内保留策略应用于 Office 365 组和 Microsoft 团队中的通道邮件`grp`前缀。请注意，通道消息存储在与 Microsoft 团队相关联的组邮箱。     |
@@ -104,7 +107,7 @@ Get-OrganizationConfig | FL InPlaceHolds
 
 下表定义的三种可能的保留期操作：
 
-|值  |描述  |
+|值  |说明  |
 |---------|---------|
 |**1**     | 指示保留策略配置为删除的项目;策略不会保留的项目。        |
 |**2**    |    指示保留策略已配置为容纳项目;保留期过后，策略不会删除项目。     |
@@ -150,6 +153,48 @@ Get-MailboxSearch -InPlaceHoldIdentity <hold GUID> | FL Name,SourceMailboxes
 ```
 Get-RetentionCompliancePolicy <hold GUID without prefix or suffix> -DistributionDetail  | FL Name,*Location
 ```
+
+## <a name="identifying-mailboxes-on-hold-because-a-label-has-been-applied-to-a-folder-or-item"></a>标识邮箱保留因为标签已应用于文件夹或项目
+
+只要用户应用配置保留内容或保留，然后删除任何文件夹或其邮箱中的项目的内容的标签，则将*ComplianceTagHoldApplied* mailbox 属性设置为**True**。这种情况下，邮箱被认为保持状态，就像它置于诉讼保留或分配给 Office 365 保留策略。当*ComplianceTagHoldApplied*属性设置为**True**时，可能会发生以下操作：
+
+- 如果删除邮箱或用户的 Office 365 用户帐户，邮箱将变为[非活动邮箱](inactive-mailboxes-in-office-365.md)。
+- 您将无法禁用 （主邮箱或存档邮箱，如果已启用） 的邮箱。
+- 可能比预期更长时间保留的邮箱中的项目。这是因为邮箱是置于保持状态，因此任何项目将被永久删除 （清除）。
+
+若要查看*ComplianceTagHoldApplied*属性的值，请在 Exchange Online PowerShell 中运行以下命令：
+
+```
+Get-Mailbox <username> |FL ComplianceTagHoldApplied
+```
+
+有关标签的详细信息，请参阅[Office 365 概述标签](labels.md)。
+
+## <a name="managing-mailboxes-on-delay-hold"></a>管理邮箱延迟保留
+
+从邮箱中删除任何类型的保留项后， *DelayHoldApplied*邮箱属性的值设置为**True**。这称为*延迟保留*，意味着 30 天，以防止被永久删除数据延迟，实际的保留项的删除 （清除） 从邮箱。这使管理员能够搜索或恢复将被清除后保留被实际删除的邮箱项目。延迟保留邮箱置于，当邮箱是仍可保持不受限制的持续时间，作为邮箱是否在诉讼保留。30 天后过期延迟保留，和 Office 365 将自动尝试删除延迟保留 （通过将*DelayHoldApplied*属性设置为**False**），以便将实际删除保留。之后将*DelayHoldApplied*属性设为**False**，标记为删除的项目将被清除的下次由托管文件夹助理处理邮箱。
+
+若要查看邮箱的*DelayHoldApplied*属性的值，请在 Exchange Online PowerShell 中运行以下命令。
+
+```
+Get-Mailbox <username> | FL DelayHoldApplied
+```
+
+若要在过期之前，请删除延迟保留，可以在 Exchange Online PowerShell 中运行以下命令： 
+ 
+```
+Set-Mailbox <username> -RemoveDelayHoldApplied
+```
+请注意，您必须将分配给法律挂起角色在 Exchange Online 使用*RemoveDelayHoldApplied*参数 
+
+若要删除非活动邮箱上的延迟保留项，请在 Exchange Online PowerShell 中运行以下命令：
+
+```
+Set-Mailbox <DN or Exchange GUID> -InactiveMailbox -RemoveDelayHoldApplied
+```
+
+> [!TIP]
+> 在上一命令中指定非活动邮箱的最佳方式是使用其可分辨名称或 Exchange GUID 值。使用下列值之一有助于防止意外指定错误的邮箱。 
 
 ## <a name="next-steps"></a>后续步骤
 

@@ -3,7 +3,6 @@ title: 动态交付和与 Office 365 ATP 安全附件预览
 ms.author: deniseb
 author: denisebmsft
 manager: laurawi
-ms.date: 2/28/2018
 ms.audience: Admin
 ms.topic: overview
 ms.service: o365-administration
@@ -13,12 +12,12 @@ search.appverid:
 - MOE150
 ms.assetid: f16c9928-8e3d-4219-b994-271dc9a16272
 description: 将您 ATP 附件安全策略设置，当您选择动态传递，以避免消息延迟和使人们可以预览正在被扫描的附件。
-ms.openlocfilehash: 23017f4f995dfe6a90479d83af9522531d7bf96b
-ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+ms.openlocfilehash: 23ef316ed35b89ef1fad5e9639dd10e76036a4f3
+ms.sourcegitcommit: 82fd4c85b952819157fbb13175c7b2dbbdff510f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22524809"
+ms.lasthandoff: 09/13/2018
+ms.locfileid: "23965239"
 ---
 # <a name="dynamic-delivery-and-previewing-with-office-365-atp-safe-attachments"></a>动态交付和与 Office 365 ATP 安全附件预览
 
@@ -65,6 +64,8 @@ ms.locfileid: "22524809"
 - 处于错误状态的用户的邮箱搜索文件夹
     
 - Exchange Online 管理员已在其中启用 Exclaimer 的环境。（请参阅[使用 ATP 动态传递和 Exclaimer 时都未将发送带附件的邮件](https://support.microsoft.com/help/4014438/messages-with-attachments-are-not-delivered-when-atp-dynamic-delivery)）
+
+- 使用安全/多用途 Internet 邮件扩展 ([S/MIME](s-mime-for-message-signing-and-encryption.md)) 加密的邮件
     
 ## <a name="related-topics"></a>相关主题
 

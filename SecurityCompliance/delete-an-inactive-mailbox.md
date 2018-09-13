@@ -13,12 +13,12 @@ search.appverid:
 - MET150
 ms.assetid: f5caf497-5e8d-4b7a-bfff-d02942f38150
 description: 当不再需要保留的 Office 365 非活动邮箱内容时，可以永久删除非活动邮箱中删除该保留。后删除保留，非活动邮箱标记为删除，则在处理后将被永久删除。
-ms.openlocfilehash: 91b73fff6ca319735289abe7ea9351b5fba931a0
-ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+ms.openlocfilehash: a7284be650d7ec6c89a6fdc43d8614603d6f1e19
+ms.sourcegitcommit: 82fd4c85b952819157fbb13175c7b2dbbdff510f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22524876"
+ms.lasthandoff: 09/13/2018
+ms.locfileid: "23965249"
 ---
 # <a name="delete-an-inactive-mailbox-in-office-365"></a>删除 Office 365 中的非活动邮箱
 
@@ -104,11 +104,7 @@ Set-Mailbox -InactiveMailbox -Identity <identity of inactive mailbox> -Litigatio
 
 2. 在 EAC 中，转到"合规管理"****"就地电子数据展示和保留"。
     
-<<<<<<< 头
 3. 选择您想要删除就地保留，然后单击**编辑**![编辑图标](media/ebd260e4-3556-4fb0-b0bb-cc489773042c.gif)。
-=======
-3. 选择您想要删除就地保留，然后单击**编辑**！[编辑图标](media/ebd260e4-3556-4fb0-b0bb-cc489773042c.gif)。
->>>>>>> markjjo 转换
     
 4. 在**就地电子数据展示&amp;保留**属性页上，单击**就地保留**，取消选中**选定的邮箱中的搜索查询匹配上的位置内容保留**框中，，然后单击**保存**。
     
@@ -204,7 +200,7 @@ Set-Mailbox -InactiveMailbox -Identity <identity of inactive mailbox> -Litigatio
   Get-MailboxSearch $InPlaceHold.Name | FL Sources
 ```
 
-## <a name="more-information"></a>详细信息
+## <a name="more-information"></a>更多信息
 
 - **非活动邮箱是一种软删除邮箱。** 在 Exchange Online 中，软删除邮箱是已删除，但可以在特定的保留期内恢复的邮箱。Exchange Online 中的软删除邮箱保留期为 30 天。这意味着正在软删除 30 天内，可以恢复邮箱。30 天后软删除邮箱标记为永久删除，并且无法恢复。 
     
