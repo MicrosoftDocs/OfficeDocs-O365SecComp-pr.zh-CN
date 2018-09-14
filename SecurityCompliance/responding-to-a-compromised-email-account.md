@@ -15,12 +15,12 @@ search.appverid:
 ms.custom: ''
 ms.assetid: ''
 description: 了解如何识别并响应在 Office 365 中受到攻击的电子邮件帐户
-ms.openlocfilehash: 9a3dcc2d10c7487e525ae127674a830f9a921a60
-ms.sourcegitcommit: e7b87fae103a858981bdbcdf7ec55afa4751ad05
+ms.openlocfilehash: bf3350da88804639356100fb5be2403c76cbcec6
+ms.sourcegitcommit: 17dda7ece5c9e884944a92ac0f842cf1e62ec506
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2018
-ms.locfileid: "23782179"
+ms.lasthandoff: 09/14/2018
+ms.locfileid: "23977587"
 ---
 # <a name="responding-to-a-compromised-email-account-in-office-365"></a>响应 Office 365 中遭到入侵的电子邮件帐户
 
@@ -70,6 +70,9 @@ ms.locfileid: "23782179"
 - 确保密码强，且它包含大写和小写字母、 至少一个数字和至少一个特殊字符。 
 - 不重用的任何您最近五密码。即使密码历史记录要求使您可以重用较新密码，您应选择内容的攻击者不能猜测。
 - 如果您的本地标识与 Office 365 联盟，则必须更改密码内部部署，然后必须通知危害的管理员。
+
+> [!TIP]
+> 强烈建议您启用多重身份验证 (MFA)，以阻止威胁，尤其是对于具有管理权限的帐户。 您可以了解更多信息[此处](https://support.office.com/en-us/article/Set-up-multi-factor-authentication-for-Office-365-users-8f0454b2-f51a-4d9c-bcde-2c48e41621c6)。
 
 ### <a name="step-2-remove-suspicious-email-forwarding-addresses"></a>步骤 2 删除可疑的电子邮件转发地址
 1. 打开**Office 365 管理中心 > 活动用户**。

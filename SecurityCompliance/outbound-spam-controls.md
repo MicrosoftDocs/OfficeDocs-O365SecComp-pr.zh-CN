@@ -3,7 +3,6 @@ title: 控制在 Office 365 中的出站垃圾邮件
 ms.author: krowley
 author: kccross
 manager: laurawi
-ms.date: 09/13/2018
 ms.audience: Admin
 ms.topic: overview
 ms.service: o365-administration
@@ -13,12 +12,12 @@ search.appverid:
 - MOE150
 ms.assetid: 6a601501-a6a8-4559-b2e7-56b59c96a586
 description: 如果您的组织发送大量的批量邮件标记为垃圾邮件，您无法获取阻止发送电子邮件与 Office 365。阅读此文，了解有关发生此问题，以及有关该产品可实现的功能。
-ms.openlocfilehash: 1e416ded5a7d91376a75075e5de1de60bc8a205b
-ms.sourcegitcommit: 82fd4c85b952819157fbb13175c7b2dbbdff510f
+ms.openlocfilehash: 916a062d08e01954e7736b6f22d297aea04baf28
+ms.sourcegitcommit: 17dda7ece5c9e884944a92ac0f842cf1e62ec506
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/13/2018
-ms.locfileid: "23968256"
+ms.lasthandoff: 09/14/2018
+ms.locfileid: "23977577"
 ---
 # <a name="controlling-outbound-spam-in-office-365"></a>控制在 Office 365 中的出站垃圾邮件
 
