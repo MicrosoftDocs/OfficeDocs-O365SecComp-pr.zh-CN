@@ -3,7 +3,6 @@ title: Office 365 中的数据保留、删除和销毁
 ms.author: robmazz
 author: robmazz
 manager: laurawi
-ms.date: 8/21/2018
 audience: ITPro
 ms.topic: article
 ms.service: Office 365 Administration
@@ -12,12 +11,12 @@ search.appverid:
 - MET150
 ms.collection: Strat_O365_Enterprise
 description: 有关数据保留期、 删除和销毁 for Office 365 的 Microsoft 的策略的概述。
-ms.openlocfilehash: 4d952058df8d0efb664f23e5495796fdb9e006f2
-ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+ms.openlocfilehash: bb038f8bd8e3f0286ea7d673e5e286bdc4a9677d
+ms.sourcegitcommit: 1bccdaacf358505604c9cf422cb1e272aefae19d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22525163"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "23999143"
 ---
 # <a name="data-retention-deletion-and-destruction-in-office-365"></a>Office 365 中的数据保留、删除和销毁
 
@@ -68,8 +67,8 @@ Microsoft 还有地址的回收和释放磁盘驱动器和失败或停用服务�
 订阅的所有时间期间术语 at，订阅者可以联系 Microsoft 支持和快速请求取消订阅设置。在此过程中，所有的用户数据，包括在 SharePoint Online 中，Exchange Online 的可能下的数据保留或存储在非活动邮箱是已删除的三天后管理员输入由 Microsoft 提供的锁定代码。加快取消设置的详细信息，请参阅[取消 Office 365](https://support.office.com/article/Cancel-Office-365-for-business-b1bc0bef-4608-4601-813a-cdd9f746709a)。
 
 ## <a name="related-links"></a>相关的链接
-- [Exchange Online 数据删除](/office365/enterprise/office-365-exchange-online-data-deletion)
-- [SharePoint Online 数据删除](/office365/enterprise/office-365-sharepoint-online-data-deletion)
-- [Skype for Business 数据删除](/office365/enterprise/office-365-skype-data-deletion)
-- [Office 365 中的永久性](/office365/enterprise/office-365-data-immutability)
-- [数据销毁](/office365/enterprise/office-365-data-destruction)
+- [Exchange Online 数据删除](office-365-exchange-online-data-deletion.md)
+- [SharePoint Online 数据删除](office-365-sharepoint-online-data-deletion.md)
+- [Skype for Business 数据删除](office-365-skype-data-deletion.md)
+- [Office 365 中的永久性](office-365-data-immutability.md)
+- [数据销毁](office-365-data-destruction.md)
