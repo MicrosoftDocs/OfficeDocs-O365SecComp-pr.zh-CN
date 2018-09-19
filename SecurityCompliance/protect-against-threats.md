@@ -13,12 +13,12 @@ search.appverid:
 - MET150
 ms.assetid: b10023f6-f30f-45d3-b3ad-b71aa4aa0d58
 description: 了解 Office 365 企业版如何帮助保护您的组织针对各种威胁，包括欺骗、 恶意软件、 垃圾邮件、 网络钓鱼诈骗和未经授权的访问数据。
-ms.openlocfilehash: ac4ac5d9800402c587ed52cc03905414a60471f6
-ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+ms.openlocfilehash: 4534e12280b5e627c2594c0365262a5c7c14a8c4
+ms.sourcegitcommit: 15dfa0c83aa88816c18e30a44a49e36e733d952c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22525274"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "24011264"
 ---
 # <a name="protect-against-threats-in-office-365"></a>Office 365 中的威胁防护
 
@@ -46,7 +46,7 @@ ms.locfileid: "22525274"
     
 - [提交给 Microsoft 可疑内容](https://technet.microsoft.com/en-us/library/dn762129%28v=exchg.150%29.aspx)
     
-## <a name="advanced-threat-protection"></a>高级强大的威胁保护
+## <a name="advanced-threat-protection"></a>高级威胁防护
 
 配置策略以管理欺骗、 防御网络钓鱼攻击和捕获恶意 Url 或电子邮件与高级威胁保护 (ATP) 中的文件。
   
@@ -88,6 +88,14 @@ ms.locfileid: "22525274"
     
 - [开始使用 Office 365 威胁智能](get-started-with-ti.md)
     
+## <a name="privileged-access-management"></a>特权访问管理
+
+帮助保护您的组织可以使用现有拥有权限的管理员帐户所访问敏感数据或关键的配置设置的访问权限的破坏。启用访问权限的管理后, 用户将需要请求中实时访问完成审批工作流高度范围和限制时间内通过提升和特权任务。
+  
+- [大致了解权限的访问管理](privileged-access-management-overview.md)
+    
+- [入门特权访问管理](privileged-access-management-configuration.md)
+
 ## <a name="additional-options"></a>其他选项
 
 获取有关相关的 Microsoft 技术和帮助抵御威胁的安全 Office 365 的进程的详细信息。

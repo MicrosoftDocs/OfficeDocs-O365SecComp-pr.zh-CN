@@ -13,12 +13,12 @@ search.appverid:
 - MET150
 ms.assetid: a6ef28a4-2447-4b43-aae2-f5af6d53c68e
 description: 用于保护访问 O365 数据和服务的登录页
-ms.openlocfilehash: 6ea617b1a7a7a34492689908d4816a851d58e776
-ms.sourcegitcommit: 0ce722533d72fa8dcc1d8a58d3c649cb345b938d
+ms.openlocfilehash: 652a14c5f1f29187aeac51355e7a924c9378806f
+ms.sourcegitcommit: 15dfa0c83aa88816c18e30a44a49e36e733d952c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/19/2018
-ms.locfileid: "24009098"
+ms.locfileid: "24011274"
 ---
 # <a name="protect-access-to-data-and-services-in-office-365"></a>保护对 Office 365 数据和服务的访问
 
@@ -58,7 +58,7 @@ ms.locfileid: "24009098"
 
 特权访问管理 Office 365 中允许精细的访问控制拥有权限的管理员任务。 它可以帮助保护您的组织可以使用现有拥有权限的管理员帐户所访问敏感数据或关键的配置设置的访问权限的破坏。
 
-- [概述特权访问管理](privileged-access-managment-overview.md)
+- [概述特权访问管理](privileged-access-management-overview.md)
 - [配置访问权限的管理](privileged-access-management-configuration.md)
 
 ## <a name="step-5-configure-sharepoint-device-access-policies"></a>步骤 5： 配置 SharePoint 设备访问策略
