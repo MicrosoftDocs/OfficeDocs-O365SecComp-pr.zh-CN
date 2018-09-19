@@ -16,16 +16,16 @@ search.appverid:
 - MET150
 ms.assetid: c4639c2e-7223-4302-8e0d-b6e10f1c3be3
 description: '了解电子邮件和文件属性，您可以在 Office 365 安全性使用内容搜索工具的业务网站搜索在 Exchange Online 邮箱和 SharePoint 或 OneDrive&amp;合规性中心。  '
-ms.openlocfilehash: 8501743d38425cb980088d65e1dd6bd0bd45cc08
-ms.sourcegitcommit: e7b87fae103a858981bdbcdf7ec55afa4751ad05
+ms.openlocfilehash: a797a8d6dd616616c5dc8606c3e3043530e873c3
+ms.sourcegitcommit: 7675230c9cda25cbf7ad7d4cadf4372c03789cf6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2018
-ms.locfileid: "23782099"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "24015353"
 ---
 # <a name="keyword-queries-and-search-conditions-for-content-search"></a>内容搜索的关键字查询和搜索条件
 
-本主题介绍您可以在 Exchange Online 和存储在 SharePoint 上的文档中的电子邮件项目中搜索的电子邮件和文档属性和使用 Office 365 安全性中的内容的搜索功能的 OneDrive for Business 站点&amp;合规性中心。您还可以使用**\*-ComplianceSearch**安全性 cmdlet&amp;合规性中心 PowerShell，可以搜索这些属性。主题还介绍： 
+本主题介绍您可以在 Exchange Online 和存储在 SharePoint 上的文档中的电子邮件项目中搜索的电子邮件和文档属性和使用 Office 365 安全性中的内容的搜索功能的 OneDrive for Business 站点&amp;合规性中心。您还可以使用**\*-ComplianceSearch**安全性 cmdlet&amp;合规性中心 PowerShell，可以搜索这些属性。主题还介绍：   
   
 - 使用布尔搜索运算符、 搜索条件和其他搜索查询技术来优化搜索结果。
     
