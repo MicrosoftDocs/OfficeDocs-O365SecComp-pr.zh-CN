@@ -13,12 +13,12 @@ search.appverid:
 - MET150
 ms.assetid: a6ef28a4-2447-4b43-aae2-f5af6d53c68e
 description: 用于保护访问 O365 数据和服务的登录页
-ms.openlocfilehash: e6e2d8d3ba6482d4b80593bd9e09d49d6120af80
-ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+ms.openlocfilehash: 6ea617b1a7a7a34492689908d4816a851d58e776
+ms.sourcegitcommit: 0ce722533d72fa8dcc1d8a58d3c649cb345b938d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22525664"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "24009098"
 ---
 # <a name="protect-access-to-data-and-services-in-office-365"></a>保护对 Office 365 数据和服务的访问
 
@@ -54,13 +54,20 @@ ms.locfileid: "22525664"
   
 - [Azure Active Directory 中的条件访问](https://docs.microsoft.com/azure/active-directory/active-directory-conditional-access-azure-portal)
     
-## <a name="step-4-configure-sharepoint-device-access-policies"></a>步骤 4： 配置 SharePoint 设备访问策略
+## <a name="step-4-configure-privileged-access-management"></a>步骤 4： 配置访问权限的管理
+
+特权访问管理 Office 365 中允许精细的访问控制拥有权限的管理员任务。 它可以帮助保护您的组织可以使用现有拥有权限的管理员帐户所访问敏感数据或关键的配置设置的访问权限的破坏。
+
+- [概述特权访问管理](privileged-access-managment-overview.md)
+- [配置访问权限的管理](privileged-access-management-configuration.md)
+
+## <a name="step-5-configure-sharepoint-device-access-policies"></a>步骤 5： 配置 SharePoint 设备访问策略
 
 SharePoint Online 和 OneDrive for Business 的设备访问策略被建议用于保护敏感、 保密，和监管的数据。即将推出是能够将设备访问策略应用于各个团队网站。
   
 - [通过非托管设备控制访问](https://support.office.com/article/Control-access-from-unmanaged-devices-5ae550c4-bd20-4257-847b-5c20fb053622?ui=en-US&amp;rs=en-US&amp;ad=US)
     
-## <a name="step-5-configure-app-and-data-protection-for-devices"></a>步骤 5： 配置应用程序和数据保护设备 （英文）
+## <a name="step-6-configure-app-and-data-protection-for-devices"></a>步骤 6： 配置应用程序和数据保护设备 （英文）
 
 您可以管理无论是否为移动设备管理注册设备的移动设备上的应用程序。这样可以防止意外泄露的 Office 365，包括邮件和文件中的数据。
   
@@ -72,13 +79,13 @@ Windows 10 的配置 Windows 的信息保护 (WIP) 以防止意外数据泄漏�
     
 - 取消托管设备：[创建和部署 Windows 信息保护 (WIP) 应用程序保护策略与 Intune](https://docs.microsoft.com/intune/windows-information-protection-policy-create)
     
-## <a name="step-6-manage-devices-with-intune"></a>步骤 6： 管理设备 Intune
+## <a name="step-7-manage-devices-with-intune"></a>步骤 7： 使用管理设备 Intune
 
 管理设备可以确保它们正常和合规性之前允许其在您的环境中对资源的访问。基于设备的条件规则帮助确保攻击者不能访问您的资源从非托管设备的访问。
   
 - [注册 Intune 中管理的设备](https://docs.microsoft.com/intune-classic/deploy-use/enroll-devices-in-microsoft-intune)
     
-## <a name="step-7-configure-additional-intune-policies-and-conditional-access-rules-for-your-environment"></a>步骤 7： 配置其他 Intune 策略和针对您的环境的条件访问规则
+## <a name="step-8-configure-additional-intune-policies-and-conditional-access-rules-for-your-environment"></a>步骤 8： 配置其他 Intune 策略和针对您的环境的条件访问规则
 
 使用以下建议企业规模或复杂的访问安全方案的起始点的配置。
   
