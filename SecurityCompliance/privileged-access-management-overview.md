@@ -13,12 +13,12 @@ ms.collection: Strat_O365_IP
 ms.custom: Ent_Solutions
 ms.assetid: ''
 description: 使用本主题可了解有关权限的详细信息访问 Office 365 中的管理
-ms.openlocfilehash: 979587e68ea0cbcf255e087eaaeb38dca4fc7ca1
-ms.sourcegitcommit: 0ce722533d72fa8dcc1d8a58d3c649cb345b938d
+ms.openlocfilehash: 063d291005ec40c21e55188e4ee7c6c8ed6594e8
+ms.sourcegitcommit: d31904e81f81d0fba75309a2bc8bbfb05565a0b4
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "24016092"
+ms.lasthandoff: 09/20/2018
+ms.locfileid: "24055257"
 ---
 # <a name="privileged-access-management-in-office-365"></a>Office 365 中的管理访问权限
 
@@ -57,7 +57,7 @@ ms.locfileid: "24016092"
 
 ### <a name="step-3-access-approval"></a>步骤 3： 访问审核
 
-生成审批请求，并审核组通知通过电子邮件的待处理的请求。如果授予审批，作为审批处理特权的访问请求并准备完成任务。如果请求被拒绝，任务已阻止并且没有访问权限授予 reqeustor。
+生成审批请求，并审核组通知通过电子邮件的待处理的请求。如果授予审批，作为审批处理特权的访问请求并准备完成任务。如果请求被拒绝，任务已阻止并且没有访问权限授予 reqeustor。请求者将请求批准或拒绝通过电子邮件通知。
 
 ![步骤 3-访问审核](media/pam-step3-access-approval.jpg)
 

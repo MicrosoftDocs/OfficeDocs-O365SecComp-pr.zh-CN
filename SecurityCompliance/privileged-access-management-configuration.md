@@ -13,12 +13,12 @@ ms.collection: Strat_O365_IP
 ms.custom: Ent_Solutions
 ms.assetid: ''
 description: 使用本主题以详细了解如何在 Office 365 中配置访问权限的管理
-ms.openlocfilehash: b2b6ab18687617c0da3425f4ee60cf81074f6f69
-ms.sourcegitcommit: 15dfa0c83aa88816c18e30a44a49e36e733d952c
+ms.openlocfilehash: 6494505554a02f005df8f45839c9575094acbf1a
+ms.sourcegitcommit: d31904e81f81d0fba75309a2bc8bbfb05565a0b4
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "24021395"
+ms.lasthandoff: 09/20/2018
+ms.locfileid: "24055247"
 ---
 # <a name="configuring-privileged-access-management-in-office-365"></a>Office 365 中配置的访问权限的管理
 
@@ -201,7 +201,7 @@ Get-ElevatedAccessRequest -Identity 28560ed0-419d-4cc3-8f5b-603911cbd450 | selec
 ```
 
 ### <a name="approving-an-elevation-authorization-request"></a>批准提升授权请求
-当创建审批请求时，相关的审批者组的成员将收到的电子邮件通知和可以批准请求 ID 与关联的请求
+当创建审批请求时，相关的审批者组的成员将收到的电子邮件通知和可以批准请求 ID 与关联的请求请求者将请求批准或拒绝通过电子邮件通知。
 
 #### <a name="using-the-microsoft-365-admin-center"></a>使用 Microsoft 365 管理中心
 
