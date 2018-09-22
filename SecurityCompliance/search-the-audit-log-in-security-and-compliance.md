@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: 0d4d0f35-390b-4518-800e-0c7ec95e946c
 description: '使用 Office 365 安全性&amp;搜索统一的审核日志，以查看 Office 365 组织中的用户和管理员的活动的合规性中心。 '
-ms.openlocfilehash: 3fe8b4ade1b82cc76fcc300284127693b7e5fc07
-ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+ms.openlocfilehash: dc673b8f52bacccfa746ad258ea91d8dd2074eeb
+ms.sourcegitcommit: bf70ec8e11b3f75bf45cd4f760cd1a982593dbad
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22525054"
+ms.lasthandoff: 09/22/2018
+ms.locfileid: "24962968"
 ---
 # <a name="search-the-audit-log-in-the-office-365-security-amp-compliance-center"></a>在 Office 365 安全&amp;合规中心搜索审核日志
 
@@ -122,7 +122,7 @@ ms.locfileid: "22525054"
   
 ### <a name="step-1-run-an-audit-log-search"></a>步骤 1： 运行审核日志搜索
 
-1. 转到[https://protection.office.com](https://protection.office.com)。
+1. 转到 [https://protection.office.com](https://protection.office.com)。
     
     > [!TIP]
     > 专用浏览会话 （不正则会话） 用于访问 Office 365 安全性&amp;合规性中心，因为这将阻止您当前登录与从正在使用的凭据。若要打开 Internet Explorer 或 Microsoft 边缘 InPrivate 浏览会话，只需按 CTRL + SHIFT + P。要打开私有浏览会话中 Google Chrome （称为 incognito 窗口），请按 CTRL + SHIFT + N。 
@@ -335,7 +335,7 @@ ms.locfileid: "22525054"
 |接受共享邀请  <br/> |SharingInvitationAccepted  <br/> |用户 （成员或来宾） 接受共享邀请并授予对资源的访问。此事件包括有关受邀用户和用于接受邀请的电子邮件地址的信息 （它们可能会不同）。介绍如何用户授予访问资源，例如，将用户添加到有权访问该资源组的第二个事件通常会附带此活动。  <br/> |
 |添加了的权限级别设置为网站集  <br/> |PermissionLevelAdded  <br/> |权限级别已添加到网站集。  <br/> |
 |用户添加到安全链接  <br/> |AddedToSecureLink  <br/> |用户已添加到可以使用此安全共享链接的实体列表。  <br/> |
-|阻止共享邀请  <br/> |SharingInvitationBlocked  <br/> | 由于允许或拒绝外部共享基于目标用户的域的外部共享策略，由您组织内的用户发送共享邀请而被阻止。在这种情况下，共享邀请已阻止因为：<br/>  目标用户的域不包含在允许的域的列表。  <br/>  或  <br/>  目标用户的域将包含在列表中被阻止的域。  <br/>  有关允许或阻止外部共享基于域的详细信息，请参阅[SharePoint Online 和 OneDrive for Business 中共享的受限的域](https://support.office.com/article/5d7589cd-0997-4a00-a2ba-2320ec49c4e9)。  <br/> |
+|阻止共享邀请  <br/> |SharingInvitationBlocked  <br/> | 由于允许或拒绝外部共享基于目标用户的域的外部共享策略，由您组织内的用户发送共享邀请而被阻止。在这种情况下，共享邀请已阻止因为：<br/>  目标用户的域不包含在允许的域的列表。  <br/>  或者  <br/>  目标用户的域将包含在列表中被阻止的域。  <br/>  有关允许或阻止外部共享基于域的详细信息，请参阅[SharePoint Online 和 OneDrive for Business 中共享的受限的域](https://support.office.com/article/5d7589cd-0997-4a00-a2ba-2320ec49c4e9)。  <br/> |
 |中断权限级别继承  <br/> |PermissionLevelsInheritanceBroken  <br/> |项目已更改，以便它不再从其父网站继承权限级别。  <br/> |
 |中断共享继承  <br/> |SharingInheritanceBroken  <br/> |项目已更改，以便它不再从其父级继承共享的权限。  <br/> |
 |创建公司可共享链接  <br/> |CompanyLinkCreated  <br/> |用户创建的资源的公司范围内链接。公司范围内链接仅可由组织中的成员。他们无法使用来宾。  <br/> |
@@ -647,3 +647,60 @@ Exchange 管理员审核日志记录 — 其 Office 365 中的默认情况下启
     
 - 您还可以使用 Exchange 管理中心 Exchange 管理员审核日志中查看事件。有关说明，请参阅[查看管理员审核日志](https://technet.microsoft.com/library/dn342832%28v=exchg.150%29.aspx)。
   
+## <a name="frequently-asked-questions"></a>常见问题
+
+**在哪里可以找到有关 Office 365 中的审核服务提供的功能？**
+
+有关 Office 365 中可用的审核和报告功能的详细信息，请参阅[审核和 Office 365 中的报告](office-365-auditing-and-reporting-overview.md)。 
+
+**当前审核的不同 Office 365 服务有哪些？**
+
+最常用的 Office 365 服务类似于 Exchange Online、 SharePoint、 OneDrive、 Azure Active Directory、 Microsoft 团队、 CRM、 高级威胁保护和数据丢失防护制约。请参阅本文的完整列表中的[简介](#search-the-audit-log-in-the-office-365-security-amp-compliance-center)一节。
+
+**通过审核 Office 365 中的服务审核哪些操作？**
+
+请参阅本文的列表和审核 Office 365 中的活动的说明中的[Audited 活动](#audited-activities)一节。
+
+**长长时间的审核记录可事件之后发生？**
+
+大多数审核数据可用在 30 分钟内但可能需要达 24 小时后事件发生相应的审核日志条目要显示在搜索结果中。请参阅本文表明花费的时间不同的 Office 365 服务中的事件的可[开始之前](#before-you-begin)部分中的表。
+
+**长是否对于保留审核记录？**
+
+当前的审核日志记录将会保留 90 天。Microsoft 主动从事的计划来增加此限制。 
+
+**可以以编程方式访问的审计数据？**
+
+是的。Office 365 管理活动 API 用于以编程方式获取审核日志。 若要开始，请参阅[开始使用 Office 365 管理 Api](https://docs.microsoft.com/office/office-365-management-api/get-started-with-office-365-management-apis)。
+
+**是否有其他方法来获取审核日志之外 suing Office 365 安全性和合规性中心或 Office 365 管理活动 API？**
+
+不。这些是从 Office 365 审核服务中获取数据的只有两个方法。 
+
+**是否需要单独启用每个服务，我希望捕获审核日志中的审核功能？**
+
+在大多数 Office 365 服务中，启用审核默认情况下您最初启用审核功能为您的 Office 365 组织 （如本文中的[开始之前](#before-you-begin)一节中所述） 后。但是，您必须启用邮箱审核您想要审核的每个邮箱的 Exchange Online。  我们正在启用邮箱审核默认情况下，Office 365 组织中的所有邮箱。有关详细信息，请参阅"Exchange 邮箱审核将默认情况下启用" [Microsoft 安全、 隐私和合规性博客 （英文）](https://techcommunity.microsoft.com/t5/Security-Privacy-and-Compliance/Exchange-Mailbox-Auditing-will-be-enabled-by-default/ba-p/215171)中。
+
+**Office 365 审核服务支持消除重复的记录？**
+
+不。审核服务管道是接近实时，，因此无法支持消除。
+ 
+**Office 365 审核数据流经地理区域？**
+
+不。我们当前具有审核 NA （北美洲）、 （欧洲、 中东和非洲） EMEA 和 APAC （亚太地区） 区域中的管道部署。但是，我们可能数据流经这些区域的负载平衡和仅在 live 网站问题。当我们执行执行这些操作时，在传输过程中的数据进行加密。   
+ 
+**审核加密的数据？**
+
+审核数据存储在其中部署审核管道同一区域中的 Exchange 邮箱 （静态数据）。此数据未加密。但是，始终加密在传输过程中的数据。 
+
+
+
+
+
+
+
+
+
+
+
+

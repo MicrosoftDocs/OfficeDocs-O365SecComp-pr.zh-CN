@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 ms.assetid: ed48d448-3714-4c42-85f5-10f75f6a4278
 description: '将搜索结果导出从 Office 365 安全性内容搜索&amp;合规性中心到本地计算机。Emaill 电子邮件结果导出为 PST 文件。内容来自 SharePoint 和 OneDrive for Business 网站导出为本机 Office 文档。 '
-ms.openlocfilehash: a1ea1daef438225b5e65d835efbcdecdb2178da8
-ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+ms.openlocfilehash: 9b6db129371b234713b5504f5763ee1dc3d7d638
+ms.sourcegitcommit: bf70ec8e11b3f75bf45cd4f760cd1a982593dbad
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22525879"
+ms.lasthandoff: 09/22/2018
+ms.locfileid: "24962958"
 ---
 # <a name="export-content-search-results-from-the-office-365-security-amp-compliance-center"></a>从 Office 365 安全性导出内容的搜索结果&amp;合规性中心
 
@@ -83,7 +83,7 @@ ms.locfileid: "22525879"
 
 第一步是准备导出搜索结果。当您准备结果时，其上载到云中 Microsoft Azure 的存储位置。请注意，从邮箱和网站内容上载每小时 2 gb 的最大速率。
   
-1. 转到[https://protection.office.com](https://protection.office.com)。
+1. 转到 [https://protection.office.com](https://protection.office.com)。
     
 2. 登录到 Office 365 使用工作或学校帐户。
     
@@ -182,7 +182,7 @@ ms.locfileid: "22525879"
   
 [导出报告](export-search-results.md#export-reports)
   
-[导出未编制索引的项](export-search-results.md#exporting-unindexed-items)
+[导出部分索引的项目](#exporting-partially-indexed-items)
   
 [导出单个邮件或 PST 文件](export-search-results.md#Exporting-individual-messages-or-PST-files)
   
@@ -279,6 +279,8 @@ ms.locfileid: "22525879"
     C-导出所有部分索引的项目从搜索中的所有网站，而不管网站是否包含与搜索条件匹配项。
     
     如果您选择要导出的部分索引的项，部分索引的邮箱项目将导出到一个单独的 PST 文件，无论在**导出 Exchange 内容**下选择的选项。
+
+- 如果部分索引的项目返回在搜索结果 （因为与搜索条件匹配的部分索引项目的其他属性），然后使用正则搜索结果导出部分索引。因此，如果您选择要导出的索引的项和部分索引的项目 （通过选择**所有项目，包括具有无法识别的格式，进行加密，或出于其他原因无法编制索引**的导出选项），则部分索引的项目导出使用正则机将列出 Results.csv 报告中。它们将不会在未编制索引的 items.csv 报告中列出。
     
  ### <a name="exporting-individual-messages-or-pst-files"></a>导出单个邮件或 PST 文件
   
