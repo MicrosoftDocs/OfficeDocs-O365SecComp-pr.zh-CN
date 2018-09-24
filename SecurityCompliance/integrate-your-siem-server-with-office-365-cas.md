@@ -12,18 +12,18 @@ search.appverid:
 - MOE150
 ms.assetid: dd6d2417-49c4-4de6-9294-67fdabbf8532
 description: 您可以与 Office 365 云应用程序安全性集成 SIEM 服务器。阅读这篇文章，获取它的工作方式以及如何将其设置的概述。
-ms.openlocfilehash: 6b9d51d91d4b1ae55dd0dd16a92872daa4ecef90
-ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+ms.openlocfilehash: a2bd75e73ddccef9359ace304faa3c8b1dd4a728
+ms.sourcegitcommit: 17c7e18d7d00135b1af40cbea117c9a817a41117
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "23043260"
+ms.lasthandoff: 09/24/2018
+ms.locfileid: "24972324"
 ---
 # <a name="integrate-your-siem-server-with-office-365-cloud-app-security"></a>将 SIEM 服务器与 Office 365 云应用安全集成
   
 |评估 * *\>**|规划 * *\>**|部署 * *\>**|使用率 ***|
 |:-----|:-----|:-----|:-----|
-|[启动评估](office-365-cas-overview.md) <br/> |[开始规划](get-ready-for-office-365-cas.md) <br/> |在这里 ！  <br/> [后续步骤](utilization-activities-for-ocas.md) <br/> |[开始利用](utilization-activities-for-ocas.md) <br/> |
+|[启动评估](office-365-cas-overview.md) <br/> |[开始规划](get-ready-for-office-365-cas.md) <br/> |在这里 ！  <br/> [下一步](utilization-activities-for-ocas.md) <br/> |[开始利用](utilization-activities-for-ocas.md) <br/> |
    
 您可以与要启用的通知的集中监控您安全信息和事件管理 (SIEM) 服务器集成[Office 365 云应用程序安全性](get-ready-for-office-365-cas.md)。这是将云服务的组织特别有用，本地服务器应用程序。将与 SIEM server 集成允许您以更好地保持通过自动化某些安全过程和关联之间的基于云的常规安全工作流，同时保护您的 Office 365 应用程序的安全团队和本地事件。  
   
@@ -71,25 +71,25 @@ Office 365 云应用程序安全性当前支持以下 SIEM 服务器：
     
 2. 转到**通知** \> **管理高级通知**。
     
-3. 选择**转到 Office 365 云应用程序安全性**。</br>
+3. 选择**转到 Office 365 云应用程序安全性**。<br/>
     ![安全中&amp;合规性中心中，选择管理高级通知转到 Office 365 云应用程序安全性](media/958632d4-03e3-4ade-8e22-d5509db6fca7.png)
   
-4. 单击**设置** \> **安全扩展**。</br>
+4. 单击**设置** \> **安全扩展**。<br/>
 ![选择设置 > 安全扩展](media/Settings-SecurityExtensions.png)
 
-5. 选择**添加 SIEM 代理**。</br>![选择添加 SIEM 代理。](media/SIEMAgents.png)
+5. 选择**添加 SIEM 代理**。<br/>![选择添加 SIEM 代理。](media/SIEMAgents.png)
     
-6. 选择**启动向导**。</br>![获取帮助或启动向导](media/HelpOrWizard.png) 
+6. 选择**启动向导**。<br/>![获取帮助或启动向导](media/HelpOrWizard.png) 
     
-7. 在**常规**步骤中，指定名称，并**选择 SIEM 格式**，并设置任何**高级设置**的格式与相关。然后选择**下一步**。</br>![指定名称和类型](media/ChooseAgentTypeAndName.png)
+7. 在**常规**步骤中，指定名称，并**选择 SIEM 格式**，并设置任何**高级设置**的格式与相关。然后选择**下一步**。<br/>![指定名称和类型](media/ChooseAgentTypeAndName.png)
     
-8. 在**远程系统日志**步骤中，指定的 IP 地址或**远程 syslog 主机**和**Syslog 端口号**的主机名。选择 TCP 或 UDP 作为远程 Syslog 协议。（您可以使用网络管理员或安全管理员获取这些详细信息，如果您没有这些。）然后选择**下一步**。</br>![指定远程系统日志的详细信息](media/ArcSightS1Syslog.png)
+8. 在**远程系统日志**步骤中，指定的 IP 地址或**远程 syslog 主机**和**Syslog 端口号**的主机名。选择 TCP 或 UDP 作为远程 Syslog 协议。（您可以使用网络管理员或安全管理员获取这些详细信息，如果您没有这些。）然后选择**下一步**。<br/>![指定远程系统日志的详细信息](media/ArcSightS1Syslog.png)
   
 9. 在**数据类型**步骤中，执行以下内容，之一，然后单击**下一步**：
-    - 保留**所有通知**的默认设置</br>OR
-    - 单击**所有通知**，，然后选择**特定的筛选器**。定义筛选器以选择要向 SIEM 服务器发送的通知的类型。</br>![向导的步骤的数据类型](media/ArcSightS1ExportOptions.png)
+    - 保留**所有通知**的默认设置<br/>OR
+    - 单击**所有通知**，，然后选择**特定的筛选器**。定义筛选器以选择要向 SIEM 服务器发送的通知的类型。<br/>![向导的步骤的数据类型](media/ArcSightS1ExportOptions.png)
   
-10. 在祝贺您屏幕上，复制标记并将其保存为更高版本。</br>![SIEM 创建代理屏幕](media/SIEMAgentFinished.png) 
+10. 在祝贺您屏幕上，复制标记并将其保存为更高版本。<br/>![SIEM 创建代理屏幕](media/SIEMAgentFinished.png) 
 
 > [!IMPORTANT]
 > 此时，您已设置 Office 365 云应用程序安全性，SIEM 代理，但尚未完成您 SIEM 服务器集成。继续执行下一步继续 SIEM server 的集成。
@@ -104,7 +104,7 @@ Office 365 云应用程序安全性当前支持以下 SIEM 服务器：
     
 2. 从 zip 文件夹中提取的.jar 文件，并在服务器上运行它。
     
-3. 在运行该文件之后, 运行以下命令： 命令：</br>
+3. 在运行该文件之后, 运行以下命令： 命令：<br/>
   ```
   java -jar mcas-siemagent-0.87.20-signed.jar [--logsDirectory DIRNAME] [--proxy ADDRESS[:PORT]] --token TOKEN
   ```
@@ -115,7 +115,7 @@ Office 365 云应用程序安全性当前支持以下 SIEM 服务器：
 - 我们建议在服务器安装过程中，您的服务器上运行 JAR 填充。
     - **Windows**： 运行作为计划任务，并确保配置任务**运行或不用户是否登录**和清除**如果运行超过停止任务**选项。
 
-    - **Linux**： 添加运行的命令与**&** 到`rc.local`文件。 </br>示例：</br> 
+    - **Linux**： 添加运行的命令与**&** 到`rc.local`文件。 <br/>示例：<br/> 
     ```
     java -jar mcas-siemagent-0.87.20-signed.jar [--logsDirectory DIRNAME] [--proxy ADDRESS[:PORT]] --token TOKEN &
     ```
@@ -128,7 +128,7 @@ Office 365 云应用程序安全性当前支持以下 SIEM 服务器：
   
 ### <a name="step-3-validate-that-the-siem-agent-is-working"></a>步骤 3： 验证 SIEM 代理工作
 
-1. 请确保在 Office 365 云应用程序安全性门户 SIEM 代理的状态不显示为**连接错误**或**已断开连接**，并且有任何代理通知。</br>例如，此处我们可以看到 SIEM 服务器连接：</br>![SIEM 服务器连接](media/siem-connected.png)</br>并在这里，我们可以看到 SIEM 服务器已断开连接：</br>![未连接的 SIEM 服务器](media/siem-not-connected.png) 
+1. 请确保在 Office 365 云应用程序安全性门户 SIEM 代理的状态不显示为**连接错误**或**已断开连接**，并且有任何代理通知。<br/>例如，此处我们可以看到 SIEM 服务器连接：<br/>![SIEM 服务器连接](media/siem-connected.png)<br/>并在这里，我们可以看到 SIEM 服务器已断开连接：<br/>![未连接的 SIEM 服务器](media/siem-not-connected.png) 
   
 2. 在您的系统日志/SIEM 服务器，请确保您看到通知均已到达从 Office 365 云应用程序安全性。
   
@@ -171,7 +171,7 @@ Office 365 云应用程序安全性当前支持以下 SIEM 服务器：
 以下是 CEF 格式的示例
 
 
-|CEF 字段名称  | 描述  |
+|CEF 字段名称  | 说明  |
 |---------|---------|
 |启动     | 通知的时间戳        |
 |结束     | 通知的时间戳        |

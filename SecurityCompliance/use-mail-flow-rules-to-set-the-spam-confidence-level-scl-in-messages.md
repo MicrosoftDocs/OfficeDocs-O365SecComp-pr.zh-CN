@@ -13,12 +13,12 @@ search.appverid:
 - MET150
 ms.assetid: 4ccab17a-6d49-4786-aa28-92fb28893e99
 description: 您可以创建传输规则来设置电子邮件的垃圾邮件可信度 (SCL)。SCL 是判断某个邮件在多大程度上是垃圾邮件的衡量手段。"垃圾邮件"是未经请求的（并且通常是不必要的）电子邮件。根据 SCL 评级的不同，该服务对邮件采取不同的操作。例如，您可能想要使从您组织内部人员发送的邮件规避垃圾邮件内容筛选，因为您相信从内部同事发送的邮件并非垃圾邮件。使用传输规则设置邮件的 SCL 值可提高您处理垃圾邮件的控制能力。
-ms.openlocfilehash: 7abd0d1881374b1f2a4bd32ee480445f7683d1b3
-ms.sourcegitcommit: e9dca2d6a7838f98bb7eca127fdda2372cda402c
+ms.openlocfilehash: 97b9a62e76efea134af5bb1bb7bd25a98bb466d2
+ms.sourcegitcommit: 17c7e18d7d00135b1af40cbea117c9a817a41117
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/21/2018
-ms.locfileid: "23002891"
+ms.lasthandoff: 09/24/2018
+ms.locfileid: "24972274"
 ---
 # <a name="use-mail-flow-rules-to-set-the-spam-confidence-level-scl-in-messages"></a>使用邮件流规则设置邮件中的垃圾邮件可信度 (SCL)
 
@@ -30,7 +30,7 @@ ms.locfileid: "23002891"
     
 - 您需要执行此过程之前为其分配权限。若要查看所需的权限，请参阅[Feature Permissions in Exchange Online](http://technet.microsoft.com/library/15073ce1-0917-403b-8839-02a2ebc96e16.aspx)或[功能在 EOP 中的权限](eop/feature-permissions-in-eop.md)中的"传输规则"条目。 
     
-- 若要了解可能适用于此主题中过程的键盘快捷键，请参阅 **Exchange 管理中心内的键盘快捷键**。
+- 若要了解本主题中的过程可能适用的键盘快捷键，请参阅 **Exchange 管理中心内的键盘快捷键**。
     
 ### <a name="to-create-a-transport-rule-that-sets-the-scl-of-a-message"></a>创建设置邮件的 SCL 的传输规则
 
@@ -42,7 +42,7 @@ ms.locfileid: "23002891"
     
 4. 选择**更多选项**，并在**以下情况应用此规则**，指定将触发的操作，您将设置为此规则 （这是设置 SCL 值） 的条件。
     
-    例如，您可以设置**发件人** \> **是内部/外部**，然后**选择发件人位置**对话框中，在选择**组织内部**，并选择**确定**。</br>
+    例如，您可以设置**发件人** \> **是内部/外部**，然后**选择发件人位置**对话框中，在选择**组织内部**，并选择**确定**。<br/>
     ![选择发件人位置](media/EOP-ETR-SetSCL-1.jpg)
   
 5. 在**执行以下操作**，下选择**修改邮件属性** \> **将垃圾邮件可信度 (SCL) 设置**。

@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 ms.assetid: 0a322724-08ca-43db-b69a-afbfa20484cd
 description: 与 Office 365 中，在 rest 和在传输过程中，使用最强的加密、 协议和技术，您的内容进行加密。获取 Office 365 中的加密的概述。
-ms.openlocfilehash: e5c21cf456f9ccca2393b8985dd47e34745902cf
-ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+ms.openlocfilehash: a9f37fddf28461ee4912e0b8a1f5b922c59c009f
+ms.sourcegitcommit: 17c7e18d7d00135b1af40cbea117c9a817a41117
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22525413"
+ms.lasthandoff: 09/24/2018
+ms.locfileid: "24972284"
 ---
 # <a name="encryption-in-office-365"></a>Office 365 中的加密
 
@@ -70,7 +70,7 @@ ms.locfileid: "22525413"
 |设置我的组织的加密  <br/> |[设置 Office 365 企业版中的加密](set-up-encryption.md) <br/> |
 |Office 365 中查看有关证书、 技术和 TLS 加密套件的详细信息  <br/> |[有关 Office 365 中的加密技术详细信息](technical-reference-details-about-encryption.md) <br/> |
 |在移动设备上处理加密邮件  <br/> |[在 Android 设备上查看加密的邮件](https://support.office.com/article/83d60f17-2305-407a-a762-7d518401fdeb) <br/> [在 iPhone 或 iPad 上查看加密的邮件](https://support.office.com/article/4d631321-0d26-4bcc-a483-d294dd0b1caf) <br/> |
-|加密使用密码保护的文档  <br/></br>  目前，在 Office Online 不支持密码保护。使用桌面版本的 Word、 Excel 和 PowerPoint 进行密码保护。           |[您的文档、 工作簿或演示文稿中添加或删除保护](https://support.office.com/article/05084cc3-300d-4c1a-8416-38d3e37d6826)（选择**添加 protection**内容中，，然后查看**用密码进行加密**）  <br/> |
+|加密使用密码保护的文档  <br/><br/>  目前，在 Office Online 不支持密码保护。使用桌面版本的 Word、 Excel 和 PowerPoint 进行密码保护。           |[您的文档、 工作簿或演示文稿中添加或删除保护](https://support.office.com/article/05084cc3-300d-4c1a-8416-38d3e37d6826)（选择**添加 protection**内容中，，然后查看**用密码进行加密**）  <br/> |
 |从文档中删除加密  <br/> |[您的文档、 工作簿或演示文稿中添加或删除保护](https://support.office.com/article/05084cc3-300d-4c1a-8416-38d3e37d6826)（选择**删除保护**部分中，并随后看到**删除密码加密**）  <br/> |
    
 ## <a name="related-topics"></a>相关主题

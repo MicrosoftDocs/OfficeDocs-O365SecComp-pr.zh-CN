@@ -13,12 +13,12 @@ localization_priority: Normal
 ms.collection: Strat_O365_IP
 ms.assetid: fd505979-76be-4d9f-b459-abef3fc9e86b
 description: Office 365 安全性的数据丢失防护 (DLP)&amp;合规性中心包括可供您可以使用 DLP 策略中的 80 敏感信息类型。本主题列出了所有这些敏感信息类型，并显示 DLP 策略时检测到每种类型的寻找。
-ms.openlocfilehash: 064606085363ba9de972511642993277451c8ce3
-ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+ms.openlocfilehash: 2e59b322730ca7fa828a685ed3a80c48ebdbbfd8
+ms.sourcegitcommit: 17c7e18d7d00135b1af40cbea117c9a817a41117
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22525778"
+ms.lasthandoff: 09/24/2018
+ms.locfileid: "24972354"
 ---
 # <a name="what-the-sensitive-information-types-look-for"></a>使用敏感信息类型查找什么
 
@@ -3050,7 +3050,7 @@ Sosiaaliturvatunnus
 - Personbeteckning
 - Personnummer
    
-## <a name="finland-passport-number"></a>芬兰护照号
+## <a name="finland-passport-number"></a>芬兰护照号码
 
 设置格式的九个字母和数字模式的九个字母和数字的组合组合： 两个字母 （不区分大小写） 的第七位数字校验和无定义 DLP 策略为 75%确信，如果，它已检测到此类型的敏感信息，在两者之间300 个字符的邻近性： 正则表达式 Regex_finland_passport_number 找到与模式匹配的内容。找到从 Keyword_finland_passport_number 关键字。<!-- Finland Passport Number --> 
  <Entity id="d1685ac3-1d3a-40f8-8198-32ef5669c7a5" recommendedConfidence="75" patternsProximity="300"> <Pattern confidenceLevel="75"> <IdMatch idRef="Regex_finland_passport_number"/> <Match idRef="Keyword_finland_passport_number"/> </Pattern> 
@@ -3225,7 +3225,7 @@ Passeportn °
 ### <a name="pattern"></a>模式
 
 必须匹配两种模式之一：
-- 13 跟两位数字后跟一个空格的数字</br>
+- 13 跟两位数字后跟一个空格的数字<br/>
 或
 - 15 个连续的数字
 
@@ -4018,7 +4018,7 @@ IP-כתובת ה
       </Entity>
 ```
 
-Keywords
+关键字
 
 Dictionary_icd_10_cm 关键字字典中的任何术语的基于[国际分类的科、 第十修订，临床修改 （ICD-10-厘米）](https://go.microsoft.com/fwlink/?linkid=852604)。此类型仅查找术语，不保险代码。
 
@@ -4050,7 +4050,7 @@ Dictionary_icd_10_cm 关键字字典中的任何术语的基于[国际分类的�
       </Entity>
 ```
 
-### <a name="keywords"></a>Keywords
+### <a name="keywords"></a>关键字
 
 Dictionary_icd_9_cm 关键字字典中的任何术语的基于[国际分类的科、 第九个修订，临床修改 （ICD-9-厘米）](https://go.microsoft.com/fwlink/?linkid=852605)。此类型仅查找术语，不保险代码。
    

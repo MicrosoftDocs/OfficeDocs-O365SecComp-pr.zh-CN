@@ -13,12 +13,12 @@ search.appverid:
 - MOE150
 ms.assetid: 4250c4bc-6102-420b-9e0a-a95064837676
 description: 了解如何启用报告消息加载项的 Outlook 和 Outlook web，为各个用户或您的整个组织上。
-ms.openlocfilehash: 2260f8823132d23e0e1f57a421fd223ea3ab14bd
-ms.sourcegitcommit: edf5db9357c0d34573f8cc406314525ef10d1eb9
+ms.openlocfilehash: 68b70cdb138ad38216f188116e576a24304a3769
+ms.sourcegitcommit: 17c7e18d7d00135b1af40cbea117c9a817a41117
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/28/2018
-ms.locfileid: "23229994"
+ms.lasthandoff: 09/24/2018
+ms.locfileid: "24972264"
 ---
 # <a name="enable-the-report-message-add-in"></a>启用报告消息加载项
 
@@ -40,8 +40,8 @@ ms.locfileid: "23229994"
     
 外接程序是安装并启用后，您将看到以下图标： 
 
-- 在 Outlook 中图标如下所示： </br> ![Outlook 报表消息外接程序图标](media/OutlookReportMessageIcon.png)</br>
-- 在 Outlook Web App 中图标如下所示：</br>![Outlook Web 报告消息外接程序图标](media/d9326d0b-1769-4bc2-ae58-51f0ebc69a17.png)</br>
+- 在 Outlook 中图标如下所示： <br/> ![Outlook 报表消息外接程序图标](media/OutlookReportMessageIcon.png)<br/>
+- 在 Outlook Web App 中图标如下所示：<br/>![Outlook Web 报告消息外接程序图标](media/d9326d0b-1769-4bc2-ae58-51f0ebc69a17.png)<br/>
 
   
 下一步，以了解如何[使用报告消息加载项](https://support.office.com/article/b5caa9f1-cdf3-4443-af8c-ff724ea719d2)。
