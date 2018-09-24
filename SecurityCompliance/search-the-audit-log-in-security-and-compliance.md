@@ -3,7 +3,7 @@ title: 在 Office 365 安全&amp;合规中心搜索审核日志
 ms.author: markjjo
 author: markjjo
 manager: laurawi
-ms.date: 6/29/2018
+ms.date: ''
 ms.audience: Admin
 ms.topic: article
 f1_keywords:
@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: 0d4d0f35-390b-4518-800e-0c7ec95e946c
 description: '使用 Office 365 安全性&amp;搜索统一的审核日志，以查看 Office 365 组织中的用户和管理员的活动的合规性中心。 '
-ms.openlocfilehash: dc673b8f52bacccfa746ad258ea91d8dd2074eeb
-ms.sourcegitcommit: bf70ec8e11b3f75bf45cd4f760cd1a982593dbad
+ms.openlocfilehash: 4c56f6f0c5f5a1ace7b94fab63d839760045c66f
+ms.sourcegitcommit: 6562a0d171dacdcdb945d192f45ea1a4c0c1c0c3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/22/2018
-ms.locfileid: "24962968"
+ms.lasthandoff: 09/24/2018
+ms.locfileid: "24974682"
 ---
 # <a name="search-the-audit-log-in-the-office-365-security-amp-compliance-center"></a>在 Office 365 安全&amp;合规中心搜索审核日志
 
@@ -47,7 +47,11 @@ ms.locfileid: "24962968"
 - Power BI for Office 365 中的用户和管理活动
     
 - 在 Microsoft 团队中的用户和管理活动
+
+- Dynamics 365 中的用户和管理活动
     
+- Microsoft 流中的用户和管理活动
+
 - Yammer 中的用户和管理活动
     
 - Microsoft 流中的用户和管理活动
@@ -57,7 +61,7 @@ ms.locfileid: "24962968"
 
 请务必阅读以下各项开始搜索 Office 365 之前审核日志。
   
-- 审核日志记录可以开始搜索的 Office 365 审核日志之前必须先打开您 （或其他管理员）。要将其打开，只需单击 * * 开始录制用户和管理活动 * * 在安全的**审核日志搜索**页上&amp;合规性中心。（如果您看不到此链接，具有已打开审核为您的组织。）您将其打开后，将显示一条消息，指出正在准备审核日志和，您可以在几个小时准备完毕后运行搜索。您只需执行一次。 
+- 审核日志记录可以开始搜索的 Office 365 审核日志之前必须先打开您 （或其他管理员）。要将其打开，只需单击**开始录制用户和管理活动**的**审核日志搜索**页上，在安全&amp;合规性中心。（如果您看不到此链接，具有已打开审核为您的组织。）您将其打开后，将显示一条消息，指出正在准备审核日志和，您可以在几个小时准备完毕后运行搜索。您只需执行一次。 
     
     > [!NOTE]
     > 我们启用审计默认情况下的过程。之前，您可以将其打开如上文所述。 
@@ -91,11 +95,20 @@ ms.locfileid: "24962968"
     
 |**Office 365 服务**|**30 分钟**|**24 小时**|
 |:-----|:-----|:-----|
-|Azure Active Directory （admin 事件）  <br/> ||![复选标记](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/> |
+|高级的威胁保护和威胁智能  <br/> |![复选标记](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)| |
 |Azure Active Directory （用户登录事件）  <br/> ||![复选标记](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/> |
+|Azure Active Directory （admin 事件）  <br/> ||![复选标记](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png) |
+|Azure Active Directory （用户登录事件）  <br/> ||![复选标记](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/> |
+|数据丢失防护  <br/> |![复选标记](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/>| |
+|Dynamics 365 CRM <br/> |![复选标记](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/>| |
+|电子数据展示  <br/> |![复选标记](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/>| |
 |Exchange Online  <br/> |![复选标记](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/> ||
+|Microsoft Flow  <br/> |![复选标记](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/>| |
+|Microsoft Forms  <br/> |![复选标记](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/>| |
+|Microsoft Project  <br/> |![复选标记](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/>| |
+|Microsoft Stream  <br/> |![复选标记](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/>| |
 |Microsoft Teams  <br/> |![复选标记](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/> ||
-|Power BI  <br/> ||![复选标记](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/> |
+|Power BI  <br/> |![复选标记](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/>| |
 |安全&amp;合规性中心  <br/> |![复选标记](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/> ||
 |SharePoint Online 和 OneDrive for Business  <br/> |![复选标记](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/> ||
 |Sway  <br/> ||![复选标记](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/> |
