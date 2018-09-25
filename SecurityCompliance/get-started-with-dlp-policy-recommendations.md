@@ -8,17 +8,14 @@ ms.audience: Admin
 ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
-search.appverid:
-- MOE150
-- MET150
 ms.assetid: 2ea4459b-cb13-4ce2-b9d1-0619316df88c
 description: 此驱动洞察建议可帮助您保护敏感内容安全时有存储，并且由告知您时没有中的可能间隙共享 Office 365 中的组织 DLP 策略覆盖范围。您将看到此建议在主页上的安全&amp;合规性中心，如果文档包含任何前五个最常见的敏感信息类型，但不受保护的 DLP 策略。
-ms.openlocfilehash: 842387397b9b95d236660c5809174c2b356cf14a
-ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+ms.openlocfilehash: fcd3a5a3a12932b22c310938c12f71fb01019411
+ms.sourcegitcommit: ede6230c2df398dc0a633e8f32ee0bfede0d5142
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22525949"
+ms.lasthandoff: 09/25/2018
+ms.locfileid: "25002625"
 ---
 # <a name="get-started-with-dlp-policy-recommendations"></a>开始使用 DLP 策略建议
 

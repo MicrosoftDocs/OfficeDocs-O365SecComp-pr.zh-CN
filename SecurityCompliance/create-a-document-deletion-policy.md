@@ -9,16 +9,15 @@ ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
 search.appverid:
-- MET150
 - SPO160
 ms.assetid: 41b2ed73-eb8d-4429-945e-a8197894585a
 description: 为了体现合规性以及遵守法律或其他法规，组织通常必须在一定期限内保留文档。不过，如果文档的保留时间长于要求时间，则会给组织带来法律风险。
-ms.openlocfilehash: 115e4d7df93d81e7ee5a860f20a00d9cb175f927
-ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+ms.openlocfilehash: 6bf4c0604708608ad7af064f4b32b57d33208a39
+ms.sourcegitcommit: ede6230c2df398dc0a633e8f32ee0bfede0d5142
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "23013996"
+ms.lasthandoff: 09/25/2018
+ms.locfileid: "25002655"
 ---
 # <a name="create-a-document-deletion-policy"></a>创建文档删除策略
 
