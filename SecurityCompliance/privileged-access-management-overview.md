@@ -13,12 +13,12 @@ ms.collection: Strat_O365_IP
 ms.custom: Ent_Solutions
 ms.assetid: ''
 description: 使用本主题可了解有关权限的详细信息访问 Office 365 中的管理
-ms.openlocfilehash: 063d291005ec40c21e55188e4ee7c6c8ed6594e8
-ms.sourcegitcommit: d31904e81f81d0fba75309a2bc8bbfb05565a0b4
+ms.openlocfilehash: 07e1f9090418e4261fef188ceb109c1b8083d34c
+ms.sourcegitcommit: c168410974bc90aaf55f1dcaa9e05c09b2b78d76
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2018
-ms.locfileid: "24055257"
+ms.lasthandoff: 09/25/2018
+ms.locfileid: "25011858"
 ---
 # <a name="privileged-access-management-in-office-365"></a>Office 365 中的管理访问权限
 
@@ -70,10 +70,14 @@ ms.locfileid: "24055257"
 ## <a name="frequently-asked-questions"></a>常见问题
 
 ### <a name="what-skus-do-i-need-to-use-privileged-access-in-office-365"></a>使用 Office 365 中的访问权限时，需要哪些 Sku？
-特权访问 Office 365 中的管理是当前仅适用于以 E5 和高级合规性 Sku 客户。
+特权访问管理是当前仅适用于 Office 365 E5 和高级合规性 Sku 以客户。
 
 ### <a name="when-will-privileged-access-be-available-for-office-365-workloads-beyond-exchange"></a>何时适用于 Office 365 工作负载超过 Exchange 访问权限？
 我们计划推出提供此功能的其他 Office 365 工作负载。我们准备好共享一个日程表，它将提供通过 Office 365 路线图。
+
+### <a name="my-organization-needs-more-than-30-privileged-access-polices-will-this-limit-be-increased"></a>我的组织需要多个 30 授权的访问权限策略，将增加此限制？
+
+我们计划以提高当前限制的每个推出 Office 365 组织的 30 特权的访问策略。
 
 ### <a name="do-i-need-to-be-a-global-admin-to-manage-privileged-access-in-office-365"></a>是否需要为全局管理员管理 Office 365 中的授权访问权限？
 您需要能够管理特权的访问 Office 365 中的全局管理员特权。包括在审批者组中的用户不需要是全局管理员才能查看和批准请求。 

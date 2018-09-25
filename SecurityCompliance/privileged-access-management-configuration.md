@@ -13,12 +13,12 @@ ms.collection: Strat_O365_IP
 ms.custom: Ent_Solutions
 ms.assetid: ''
 description: 使用本主题以详细了解如何在 Office 365 中配置访问权限的管理
-ms.openlocfilehash: 6494505554a02f005df8f45839c9575094acbf1a
-ms.sourcegitcommit: d31904e81f81d0fba75309a2bc8bbfb05565a0b4
+ms.openlocfilehash: 47cae93a41b0fd60645021f6f299645777a9a2e1
+ms.sourcegitcommit: c168410974bc90aaf55f1dcaa9e05c09b2b78d76
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2018
-ms.locfileid: "24055247"
+ms.lasthandoff: 09/25/2018
+ms.locfileid: "25011838"
 ---
 # <a name="configuring-privileged-access-management-in-office-365"></a>Office 365 中配置的访问权限的管理
 
@@ -102,6 +102,8 @@ Enable-ElevatedAccessControl -AdminGroup 'pamapprovers@fabrikam.onmicrosoft.com'
 
 ## <a name="step-3---create-an-access-policy"></a>步骤 3-创建访问策略
 
+可以创建和配置 Office 365 组织的最多 30 个特权的访问策略。
+
 ### <a name="using-the-microsoft-365-admin-center"></a>使用 Microsoft 365 管理中心
 
 1. 登录到[Microsoft 365 Admin Center](https://portal.office.com)使用您的组织中的管理帐户的凭据。
@@ -144,6 +146,8 @@ New-ElevatedAccessApprovalPolicy -Task 'Exchange\New-MoveRequest' -ApprovalType 
 
 ### <a name="requesting-elevation-authorization-to-execute-privileged-tasks"></a>请求提升授权执行特权的任务
 
+特权访问请求达 24 小时，提交请求后才有效。如果未批准或拒绝，过期请求和访问未获得批准。
+
 #### <a name="using-the-microsoft-365-admin-center"></a>使用 Microsoft 365 管理中心
 
 1. 登录到[Microsoft 365 Admin Center](https://portal.office.com)使用您的凭据。
@@ -160,7 +164,7 @@ New-ElevatedAccessApprovalPolicy -Task 'Exchange\New-MoveRequest' -ApprovalType 
 
     **请求**： 从可用的策略选择
 
-    **持续时间 （小时）**： 请求的访问的小时数
+    **持续时间 （小时）**： 请求的访问的小时数。在可以请求的小时数上没有限制。
 
     **注释**： 注释的文本字段与您的访问请求
 
@@ -235,6 +239,31 @@ Deny-ElevatedAccessRequest -RequestId <request id> -Comment '<denial comment>'
 示例：
 ```
 Deny-ElevatedAccessRequest -RequestId a4bc1bdf-00a1-42b4-be65-b6c63d6be279 -Comment '<denial comment>'
+```
+
+## <a name="delete-a-privileged-access-policy-in-office-365"></a>删除 Office 365 中的访问权限的策略
+如果您的组织中不再需要它，您可以删除授权的访问策略。
+
+### <a name="using-the-microsoft-365-admin-center"></a>使用 Microsoft 365 管理中心
+
+1. 登录到[Microsoft 365 Admin Center](https://portal.office.com)使用您的组织中的管理帐户的凭据。
+
+2. 在管理中心，转到**设置** > **安全性和隐私** > **访问权限**。
+
+3. 选择**管理访问策略和请求**。
+
+4. 选择**配置策略**。
+
+5. 选择您想要删除的策略，然后选择**删除策略**。
+
+6. 选择**关闭**。
+
+### <a name="using-exchange-management-powershell"></a>使用 Exchange Management PowerShell
+
+运行以下命令在 Exchange Online Powershell，可以删除授权的访问策略：
+
+```
+Remove-ElevatedAccessApprovalPolicy -Identity <identity GUID of the policy you want to delete>
 ```
 
 ## <a name="disable-privileged-access-in-office-365"></a>禁用 Office 365 中的特权的访问

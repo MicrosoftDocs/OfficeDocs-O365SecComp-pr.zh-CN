@@ -11,12 +11,12 @@ localization_priority: Normal
 search.appverid:
 - MET150
 description: 作为 Office 365 管理员，您可以撤消某些使用 Office 365 邮件加密已加密的电子邮件。
-ms.openlocfilehash: b2fd3e07bec6dfedd783a8a68169fc5f990a80d3
-ms.sourcegitcommit: 2150f49cf4305b75591a238ff649c57684c7632f
+ms.openlocfilehash: 19eb874fa15a21c29a9eb2823829e81ff244a555
+ms.sourcegitcommit: c168410974bc90aaf55f1dcaa9e05c09b2b78d76
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/24/2018
-ms.locfileid: "25004245"
+ms.lasthandoff: 09/25/2018
+ms.locfileid: "25011818"
 ---
 # <a name="office-365-message-encryption-email-revocation"></a>Office 365 邮件加密电子邮件吊销
 
@@ -62,7 +62,7 @@ ms.locfileid: "25004245"
 
 一旦您知道要取消的电子邮件的邮件 ID，您可以使用集 OMEMessageRevocation cmdlet 撤消电子邮件。 
 
-1. [连接到 Exchange Online 使用远程 PowerShell](http://technet.microsoft.com/library/jj984289%28v=exchg.150%29.aspx)。
+1. [连接到 Exchange Online 使用远程 PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell?view=exchange-ps)。
     
 2. 运行设置 OMEMessageRevocation cmdlet，如下所示：
     
