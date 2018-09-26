@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.assetid: 065cc2cf-2f3a-47fd-a434-2a20b8f51d0c
 description: '作为一名管理员，您可以查看、 释放和报告误报隔离的邮件 Office 365 中。您可以设置策略，以便 Office 365 筛选消息，并将其原因有多种隔离发送： 因为他们已标识为垃圾邮件、 批量、 网络钓鱼、 恶意软件，或者因为它们匹配的邮件流规则。 '
-ms.openlocfilehash: be6384d8937e25aec55d82d8212c49d25b64b9a1
-ms.sourcegitcommit: d85fc77cba3a17d5ddf215e2f506f61b499e0cda
+ms.openlocfilehash: 67fb4ac8e3a5fd443efb04d4f74e9844d2fa8c86
+ms.sourcegitcommit: f7fff49ae0b1c3056faa58d73c1070cb4e638fbf
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "23839096"
+ms.lasthandoff: 09/25/2018
+ms.locfileid: "25018876"
 ---
 # <a name="manage-quarantined-messages-and-files-as-an-administrator-in-office-365"></a>为 Office 365 中的管理员管理隔离的邮件和文件
 
@@ -59,7 +59,7 @@ Office 365 使用发送到其他用户的隔离邮件并使用隔离文件中，
   
 您可以筛选结果以查找特定的邮件。提示，请参阅[来筛选结果和查找隔离的邮件和文件](manage-quarantined-messages-and-files.md#BKMK_AdvSearch)本文中。 
   
-查找特定的隔离的邮件后，单击该消息即可查看详细信息，并执行操作，如释放消息与某人的收件箱。
+查找特定的隔离的邮件后，单击该消息即可查看详细信息，并执行操作，如释放某人的邮箱的邮件。
   
 ## <a name="view-your-organizations-quarantined-files"></a>查看贵组织的隔离的文件
 
