@@ -9,17 +9,15 @@ ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
 ms.collection: Strat_O365_IP
-search.appverid:
-- MOE150
-- MET150
+search.appverid: MOE150
 ms.assetid: 26af16df-34cd-4f4a-b893-bc1d2e74039e
 description: '使用 Office 365 导入服务中的新的智能导入功能实际上获取导入到的目标邮箱的项进行筛选。智能导入让您主动决定哪些数据导入和要保留的内容。智能导入的数据，正在导入到 Office 365 还提供见解。 '
-ms.openlocfilehash: 723a2e05a1f5d256e99bcf8497643435d0c98a23
-ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+ms.openlocfilehash: c90d9df62c7d8c411196b283acec37959fc95e57
+ms.sourcegitcommit: 7956955cd919f6e00b64e4506605a743c5872549
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22524815"
+ms.lasthandoff: 09/26/2018
+ms.locfileid: "25038195"
 ---
 # <a name="filter-data-when-importing-pst-files-to-office-365"></a>PST 文件导入到 Office 365 时筛选数据
 
@@ -114,7 +112,7 @@ ms.locfileid: "22524815"
     
     e.单击**导入数据**以开始导入。请注意，将显示的总将导入的数据量。 
     
-    或
+    或者
     
     答： 单击**否，我想要导入所有**PST 文件中的所有数据导入到 Office 365，然后单击**下一步**。
     
@@ -125,7 +123,7 @@ ms.locfileid: "22524815"
 7. 单击导入作业以显示更多详细的信息，如针对每个 PST 文件和配置的筛选器设置的状态。
 
   
-## <a name="more-information"></a>详细信息
+## <a name="more-information"></a>更多信息
 
 - Office 365 是如何确定期限筛选器的增量的？当 Office 365 分析 PST 文件时，它查找在每个项目的已发送或接收的时间戳 （如果项具有两个发送和接收时间戳，处于选中状态的最早日期）。然后 Office 365 的时间戳的年值查看并比较为当前日期确定项目的时间。这些岁然后用作**期限**筛选器下拉列表中的值。例如，如果 PST 文件具有 2016年、 2015，和 2014 年的消息，则**期限**筛选器中的值将为**1 年**、 **2 年**和**3 年**可以。
     

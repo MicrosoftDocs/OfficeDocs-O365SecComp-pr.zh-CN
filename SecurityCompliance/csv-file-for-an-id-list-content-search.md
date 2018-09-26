@@ -8,17 +8,15 @@ ms.audience: Admin
 ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
-search.appverid:
-- MOE150
-- MET150
+search.appverid: MOE150
 ms.assetid: 82c97bb4-2b64-4edc-804d-cedbda525d22
 description: 从现有的内容搜索的 Results.csv 或未编制索引 Items.csv 文件用于创建返回特定的电子邮件 ID 列表搜索。ID 列表搜索通常用于返回部分索引的邮箱项目。
-ms.openlocfilehash: 28e4a66e5c9be1817881004b1e4b3a3e6d4bfdb9
-ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+ms.openlocfilehash: 9a7583c8f83626afb8dc0452bf72d834c8a28275
+ms.sourcegitcommit: 7956955cd919f6e00b64e4506605a743c5872549
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22525799"
+ms.lasthandoff: 09/26/2018
+ms.locfileid: "25038275"
 ---
 # <a name="prepare-a-csv-file-for-an-id-list-content-search-in-office-365"></a>准备 CSV 文件的 ID 列表在 Office 365 中的内容搜索
 

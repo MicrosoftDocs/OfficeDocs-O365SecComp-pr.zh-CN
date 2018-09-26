@@ -8,17 +8,15 @@ ms.audience: Admin
 ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
-search.appverid:
-- MOE150
-- MET150
+search.appverid: MOE150
 ms.assetid: e3cbc79c-5e97-43d3-8371-9fbc398cd92e
 description: 在 Office 365 安全性中使用内容搜索&amp;合规性中心，以执行目标的集合。目标的集合表示您确信案例做出迅速响应项目或特权的项目位于特定邮箱或网站文件夹中。使用本文中脚本以获取文件夹 ID 或您要搜索的特定邮箱或网站文件夹的路径。
-ms.openlocfilehash: 3ff0ca00915bce53e9e932316c5ab47884f346b2
-ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+ms.openlocfilehash: bb808e38f24ebf09a975b3082ef1dc61bc6344c4
+ms.sourcegitcommit: 7956955cd919f6e00b64e4506605a743c5872549
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22524927"
+ms.lasthandoff: 09/26/2018
+ms.locfileid: "25038295"
 ---
 # <a name="use-content-search-in-office-365-for-targeted-collections"></a>使用 Office 365 中的目标集合的内容搜索
 
@@ -210,7 +208,7 @@ Office 365 安全性内容的搜索功能&amp;合规性中心没有提供在 UI 
 > [!NOTE]
 > 使用`path`属性来搜索 OneDrive 位置不会在搜索结果中返回媒体文件，如.png、.tiff 或.wav 文件。 
   
-1. 转到[https://protection.office.com](https://protection.office.com)。
+1. 转到 [https://protection.office.com](https://protection.office.com)。
     
 2. 登录到 Office 365 使用的帐户和用于在步骤 1 中运行脚本的凭据。
     
@@ -222,7 +220,7 @@ Office 365 安全性内容的搜索功能&amp;合规性中心没有提供在 UI 
     
     - 单击**选择要搜索的特定邮箱**，然后添加指定您在步骤 1 中运行该脚本时的同一邮箱。 
     
-      或
+      或者
     
     - 单击**选择特定网站搜索**以搜索，然后添加您在步骤 1 中运行该脚本时指定的网站相同的 URL。 
     
@@ -264,7 +262,7 @@ Office 365 安全性内容的搜索功能&amp;合规性中心没有提供在 UI 
   path:<path> AND (lastmodifiedtime>=01/01/2017 AND lastmodifiedtime<=01/21/2017)
   ```
   
-## <a name="more-information"></a>详细信息
+## <a name="more-information"></a>更多信息
 
 使用本文中的脚本和执行目标集合时，请保留记住以下事项。
   

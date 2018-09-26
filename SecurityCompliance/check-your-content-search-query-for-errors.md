@@ -8,17 +8,15 @@ ms.audience: Admin
 ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
-search.appverid:
-- MOE150
-- MET150
+search.appverid: MOE150
 ms.assetid: 88898874-e262-4c5c-b6d2-4e697497fc74
 description: 检查错误和错误，如不支持的字符的内容搜索关键字查询并运行搜索之前小写布尔运算符。如果我们发现的错误，我们将建议的修订后的查询。
-ms.openlocfilehash: 0d2119ceef4ce3777d3967a56357551e235e426c
-ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+ms.openlocfilehash: 6ae14edc29bb7f8bab5dd2306282a69443872633
+ms.sourcegitcommit: 7956955cd919f6e00b64e4506605a743c5872549
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22525394"
+ms.lasthandoff: 09/26/2018
+ms.locfileid: "25038285"
 ---
 # <a name="check-your-content-search-query-for-errors"></a>检查内容搜索查询中的错误
 

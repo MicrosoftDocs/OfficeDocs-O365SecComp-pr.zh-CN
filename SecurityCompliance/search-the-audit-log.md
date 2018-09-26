@@ -8,17 +8,15 @@ ms.audience: Admin
 ms.topic: hub-page
 ms.service: o365-administration
 localization_priority: Normal
-search.appverid:
-- MOE150
-- MET150
+search.appverid: MOE150
 ms.assetid: 57ca5138-0ae0-4d34-bd40-240441ef2fb6
 description: Office 365 审核日志是统一的审核日志。为什么统一的审核日志？因为大多数您组织的 Office 365 服务中的事件订阅中的可搜索的单个审核日志记录。这意味着您可以搜索用户和管理活动，这些服务：
-ms.openlocfilehash: 7a6a552b1d2569c9e21fe20b39d474dafc026172
-ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+ms.openlocfilehash: 230502f331babeef8f89eacce0d19a7756cb96fc
+ms.sourcegitcommit: 7956955cd919f6e00b64e4506605a743c5872549
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22525257"
+ms.lasthandoff: 09/26/2018
+ms.locfileid: "25038025"
 ---
 # <a name="search-the-audit-log-for-user-and-admin-activity-in-office-365"></a>Office 365 中搜索审核日志中的用户和管理员的活动
 

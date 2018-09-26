@@ -8,17 +8,15 @@ ms.audience: Admin
 ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
-search.appverid:
-- MOE150
-- MET150
+search.appverid: MOE150
 ms.assetid: c4c8f689-9d52-4e80-ae4b-1411ee9efc43
 description: 了解如何配置 Windows 注册表，以下载搜索结果时提高数据吞吐量和搜索数据从 Office 365 安全性&amp;合规性中心和 Office 365 高级电子数据展示。
-ms.openlocfilehash: 3f456f5ee0312d4d4d7b95f868520e6756a90fd1
-ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+ms.openlocfilehash: a05c2b786d1d1de7ff5014d12c708484345f908b
+ms.sourcegitcommit: 7956955cd919f6e00b64e4506605a743c5872549
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22526063"
+ms.lasthandoff: 09/26/2018
+ms.locfileid: "25038115"
 ---
 # <a name="increase-the-download-speed-when-exporting-ediscovery-search-results-from-office-365"></a>从 Office 365 导出电子数据展示搜索结果时增加下载速度
 
@@ -55,7 +53,7 @@ ms.locfileid: "22526063"
     > [!IMPORTANT]
     > 创建或更改后`DownloadConcurrency`注册表设置，请务必创建新的导出作业或重新启动的搜索结果或要下载的数据的现有导出作业。请参阅[详细信息](increase-download-speeds-when-exporting-ediscovery-results.md#moreinfo)部分的详细信息。 
   
-## <a name="more-information"></a>详细信息
+## <a name="more-information"></a>更多信息
 
 - 首次运行此过程中创建该.reg 文件创建一个新的注册表项。然后`DownloadConcurrency`注册表设置编辑每次更改并重新运行该.reg 编辑文件。 
     

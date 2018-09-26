@@ -3,7 +3,6 @@ title: Office 365 的 Office 365 工程内部日志记录
 ms.author: robmazz
 author: robmazz
 manager: laurawi
-ms.date: 8/18/2018
 audience: ITPro
 ms.topic: article
 ms.service: Office 365 Administration
@@ -12,15 +11,15 @@ search.appverid:
 - MET150
 ms.collection: Strat_O365_Enterprise
 description: 说明如何内部日志记录的 Office 365 工程团队的工作原理。
-ms.openlocfilehash: 1a613584b6b815524435acb20db7a8022d95e3bc
-ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+ms.openlocfilehash: 4cade759fb4c095565b4e1f85ce15ed546177082
+ms.sourcegitcommit: 7956955cd919f6e00b64e4506605a743c5872549
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22525112"
+ms.lasthandoff: 09/26/2018
+ms.locfileid: "25038185"
 ---
 # <a name="internal-logging-for-office-365-engineering"></a>Office 365 工程部的内部日志记录
-除了事件和可用于客户的日志数据，还有一些可供 Office 365 工程师内部日志数据收集系统。许多不同类型的日志数据上载到数据计算调用宇宙服务的内部、 大从 Office 365 服务器。每个服务工作组会从其各自的服务器的审核日志上载到聚合和分析的宇宙数据库。此数据传输通过 FIPS 140 2 验证 TLS 连接上专门批准的端口和协议使用专有自动化工具调用 Office 数据加载程序 (ODL) 发生此事件。
+除了事件和可用于客户的日志数据，还有一些可供 Office 365 工程师内部日志数据收集系统。许多不同类型的日志数据上载到数据计算调用宇宙服务的内部、 大从 Office 365 服务器。每个服务工作组会从其各自的服务器的审核日志上载到聚合和分析的宇宙数据库。此数据传输通过 FIPS 140 2 验证 TLS 连接上专门批准的端口和协议使用专有自动化工具调用 Office 数据加载程序 (ODL) 发生此事件。工具用于在 Office 365 中收集和处理审核记录不允许永久或不可逆转地更改原始审核记录的内容或时间排序。
 
 服务团队使用宇宙作为中央存储库的应用程序使用率，来测量系统和运行性能，并查找异常情况和可能指示问题或安全问题的模式进行分析。每个服务工作组上载比较基准的登录到宇宙，具体取决于他们希望分析，通常包括：
 - 事件日志

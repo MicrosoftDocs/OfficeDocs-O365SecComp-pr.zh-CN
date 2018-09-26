@@ -9,17 +9,15 @@ ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
 ms.collection: Strat_O365_IP
-search.appverid:
-- MOE150
-- MET150
+search.appverid: MOE150
 ms.assetid: 7a150c84-049c-4a9c-8c91-22355b35f2a7
 description: 使用 Microsoft PST 集合工具搜索贵组织的网络，若要获取分散在您的组织的 PST 文件的清单。查找 PST 文件后，您可以使用 PST 集合工具以将其复制在一个中心位置，以便您可以将其导入 Office 365。
-ms.openlocfilehash: 183ab968b894c824f2b23c08e98e671ef85316cc
-ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+ms.openlocfilehash: 0537a65a32fa25704045bd587cb20f9eee13f628
+ms.sourcegitcommit: 7956955cd919f6e00b64e4506605a743c5872549
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22525350"
+ms.lasthandoff: 09/26/2018
+ms.locfileid: "25038125"
 ---
 # <a name="use-the-pst-collection-tool-to-find-copy-and-delete-pst-files-in-your-organization"></a>使用 PST 集合工具查找、 复制和删除组织中的 PST 文件
 
@@ -89,7 +87,7 @@ Microsoft PST 收集工具可用于搜索的 PST 文件的组织的网络。该�
     | `DataSource` <br/> |指定要搜索数据的类型。目前，您可以使用 PST 收集工具搜索 PST 文件。  <br/> | `-DataSource Pst` <br/> |
     | `Mode` <br/> |指定该工具将执行的操作的类型。使用值`Find`来查找 PST 文件中指定的位置。请注意该工具可以查找和获取有关连接到 Outlook 配置文件的 Outlook 和 PST 文件中打开的 PST 文件的信息。<br/> | `-Mode Find` <br/> |
     | `JobName` <br/> |指定 PST 集合作业的名称。运行 PST 集合工具，以阻止、 收集和删除位于运行工具查找 PST 文件时的 PST 文件时，您将使用此相同的作业名称。作业名称也将添加到日志和配置文件名称。  <br/> | `-JobName PstSearch1` <br/> |
-    | `Locations` <br/> | 指定要搜索的 PST 文件的一个或多个位置。如果您指定多个位置，请使用分号 （;） 分隔各个位置。请务必包围各个值的此参数与双引号 ("")。<br/><br/>   下面是可以搜索的位置的类型的必需的 identity 值格式。  <br/><br/>        **Ou** -使用的可分辨名称 (DN) 来标识 Ou;例如：`"OU=NorthAmerica,OU=NWRegion,OU=ITServices,DC=contoso,DC=com"` <br/> > [!IMPORTANT]> 不能指定内置的计算机容器 (例如，CN = Computers，DC = contoso，DC = com") 因为组织单位。<br/> <br/> **机**-使用 DN 或完全限定的域名 (FQDN) 来确定客户端和服务器网络内计算机上;例如：  <br/>  DN:`"CN=FILESERVER01,CN=Computers,DC=contoso,DC=com"` <br/>  或  <br/>  FQDN:`"FILESERVER01.contoso.com"` <br/><br/>  **网络文件共享**-使用 UNC 名称来标识网络文件共享;例如，`"\\FILESERVER02\Users"` <br/> | `-Locations "CN=FILESERVER01,CN=Computers,DC=contoso,DC=com";"CN=FILESERVER02,CN=Computers,DC=contoso,DC=com"` <br/> |
+    | `Locations` <br/> | 指定要搜索的 PST 文件的一个或多个位置。如果您指定多个位置，请使用分号 （;） 分隔各个位置。请务必包围各个值的此参数与双引号 ("")。<br/><br/>   下面是可以搜索的位置的类型的必需的 identity 值格式。  <br/><br/>        **Ou** -使用的可分辨名称 (DN) 来标识 Ou;例如：`"OU=NorthAmerica,OU=NWRegion,OU=ITServices,DC=contoso,DC=com"` <br/> > [!IMPORTANT]> 不能指定内置的计算机容器 (例如，CN = Computers，DC = contoso，DC = com") 因为组织单位。<br/> <br/> **机**-使用 DN 或完全限定的域名 (FQDN) 来确定客户端和服务器网络内计算机上;例如：  <br/>  DN:`"CN=FILESERVER01,CN=Computers,DC=contoso,DC=com"` <br/>  或者  <br/>  FQDN:`"FILESERVER01.contoso.com"` <br/><br/>  **网络文件共享**-使用 UNC 名称来标识网络文件共享;例如，`"\\FILESERVER02\Users"` <br/> | `-Locations "CN=FILESERVER01,CN=Computers,DC=contoso,DC=com";"CN=FILESERVER02,CN=Computers,DC=contoso,DC=com"` <br/> |
     | `LogLocation` <br/> |指定日志文件将被复制到的文件夹。如果文件夹不存在，将运行该工具时创建它。  <br/> | `-LogLocation "c:\users\admin\desktop\PSTCollection"` <br/> |
     | `ConfigurationLocation` <br/> |指定.xml 配置文件将被复制到的文件夹。此文件包含有关运行该工具时找到每个 PST 文件的信息。步骤 3 复制找到 PST 文件中运行该工具时，将使用此文件。  <br/> | `-ConfigurationLocation "c:\users\admin\desktop\PSTCollection\Configuration"` <br/> |
     | `ExcludedLocations` <br/> |此可选参数指定要跳过查找操作过程中的位置。您可以排除特定 Ou、 机和网络文件共享。例如，可以排除机，如配置为 SQL server （或其他类型的应用程序服务器） 的计算机，用户不能访问。如果您指定要排除的多个位置，请使用分号 （;） 分隔各个位置。请务必包围各个值的此参数与双引号 ("")。  <br/> | `-ExcludedLocations "SQLSERVER01.contoso.com"` <br/> |

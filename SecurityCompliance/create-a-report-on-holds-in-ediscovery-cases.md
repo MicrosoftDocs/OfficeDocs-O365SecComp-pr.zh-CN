@@ -8,17 +8,15 @@ ms.audience: Admin
 ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
-search.appverid:
-- MOE150
-- MET150
+search.appverid: MOE150
 ms.assetid: cca08d26-6fbf-4b2c-b102-b226e4cd7381
 description: 使用本文中的脚本来生成报告包含有关与 Office 365 安全性的电子数据展示事例关联的所有保留项信息&amp;合规性中心。
-ms.openlocfilehash: 8bc1285f776e2b1aa0c0330c06ccffff8ce4585c
-ms.sourcegitcommit: c166964fe14eec69139a2d3d9c10d2c40ab33f91
+ms.openlocfilehash: b6cef2824002d7e45e4f500bc6c1e9bc880cbd41
+ms.sourcegitcommit: 7956955cd919f6e00b64e4506605a743c5872549
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/28/2018
-ms.locfileid: "23258640"
+ms.lasthandoff: 09/26/2018
+ms.locfileid: "25038205"
 ---
 # <a name="create-a-report-on-holds-in-ediscovery-cases-in-office-365"></a>在 Office 365 中的电子数据展示事例中保留创建报表
   
@@ -32,7 +30,7 @@ ms.locfileid: "23258640"
     
 - 本文中的脚本具有最少的错误处理。主要用途是快速创建有关保留与您的组织中的电子数据展示事例关联的报告。
     
-- 本主题中提供的示例脚本不支持在任何 Microsoft 标准支持程序或服务。是按原样提供的示例脚本，没有任何形式的担保。Microsoft 进一步否认所有默示的担保，包括但不限于，任何暗示对适销性或针对特定用途的适用性的担保。因使用或性能的示例脚本和文档的全部风险您自己承担。在任何事件应 Microsoft、 作者，或创建、 生产或脚本传递 else 所涉及的任何人都都不对因任何损害向 （包括但不限于损失业务损失、 业务中断丢失业务信息或其他 pecuniary 丢失） 因使用或不能使用的示例脚本或文档，即使 Microsoft 已被告知此类损害的可能性。
+- 本主题中的示例脚本不受任何 Microsoft 标准支持计划或服务支持。示例脚本按原样提供，不提供任何种类的担保。Microsoft 进一步声明，不提供任何默示担保，包括但不限于适销性或特定用途适用性的默示担保。使用或运行示例脚本和文档所产生的任何风险均由你自己承担。对于因使用或无法使用示例脚本或文档而产生的任何损失（包括但不限于商业利润损失、业务中断、业务信息丢失或其他金钱损失），Microsoft、脚本作者或参与创建、生成或交付脚本的任何人都不承担任何责任，即使 Microsoft 已被告知存在这种损失的可能性，也不例外。
     
 ## <a name="step-1-connect-to-the-security-amp-compliance-center-using-remote-powershell"></a>步骤 1： 连接到安全性&amp;合规性中心使用远程 PowerShell
 
@@ -175,7 +173,7 @@ Write-host "Script complete! Report files saved to this folder: '$Path'"
     
     ![后运行 CaseHoldsReport.ps1 脚本输出](media/7d312ed5-505e-4ec5-8f06-3571e3524a1a.png)
   
-## <a name="more-information"></a>详细信息
+## <a name="more-information"></a>更多信息
 
 这种情况，其中包含本文中运行该脚本时创建的报告包含有关每个保留的以下信息。如前所述，您必须是电子数据展示管理员联系，以返回组织中的所有保留项的信息。包含与案例相关的详细信息，请参阅[Office 365 安全性的电子数据展示事例&amp;合规性中心](ediscovery-cases.md)。
   

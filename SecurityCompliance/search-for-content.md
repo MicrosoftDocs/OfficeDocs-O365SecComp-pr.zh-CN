@@ -8,18 +8,15 @@ ms.audience: Admin
 ms.topic: hub-page
 ms.service: o365-administration
 localization_priority: Normal
-search.appverid:
-- MOE150
-- MET150
 ROBOTS: NOINDEX, NOFOLLOW
 ms.assetid: df2d1e0f-b476-42c9-aade-4a260b24f193
 description: 使用 Office 365 安全性中的内容搜索电子数据展示工具&amp;SharePoint 网站和 OneDrive 位置以及即时消息对话 Skype for Business 中的合规性中心，以快速找到在 Exchange 邮箱中的电子邮件文档。
-ms.openlocfilehash: b9595f66633cca762ea74eaa9402f50ec08c2d7c
-ms.sourcegitcommit: edf5db9357c0d34573f8cc406314525ef10d1eb9
+ms.openlocfilehash: d7ccdd8e501e38b67cc00ec457622080d6c58001
+ms.sourcegitcommit: 7956955cd919f6e00b64e4506605a743c5872549
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/28/2018
-ms.locfileid: "23229974"
+ms.lasthandoff: 09/26/2018
+ms.locfileid: "25038225"
 ---
 # <a name="search-for-content-in-office-365"></a>搜索的 Office 365 中的内容
 

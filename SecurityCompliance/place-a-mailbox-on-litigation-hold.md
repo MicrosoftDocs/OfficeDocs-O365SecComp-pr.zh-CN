@@ -9,16 +9,15 @@ ms.topic: article
 ms.service: O365-seccomp
 ms.custom: TN2DMC
 localization_priority: Normal
-search.appverid:
-- MET150
+search.appverid: ''
 ms.assetid: adee4621-3626-4aec-aa53-00b35ff0d0b0
 description: '将邮箱置于"诉讼保留"以保留所有的邮箱内容，包括已删除项和已修改项的原始版本。 '
-ms.openlocfilehash: 9c2d5c77a604e4dbe6e1f1db75142d3bf5790618
-ms.sourcegitcommit: e9dca2d6a7838f98bb7eca127fdda2372cda402c
+ms.openlocfilehash: 00f83d69d90f10659427986ffcb16f9e5358c054
+ms.sourcegitcommit: 7956955cd919f6e00b64e4506605a743c5872549
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/21/2018
-ms.locfileid: "23002841"
+ms.lasthandoff: 09/26/2018
+ms.locfileid: "25038035"
 ---
 # <a name="place-a-mailbox-on-litigation-hold"></a>将邮箱放到诉讼保留中
  
@@ -27,7 +26,7 @@ ms.locfileid: "23002841"
 > [!IMPORTANT]
 > 诉讼保留保留用户邮箱中可恢复邮件文件夹中的项目。根据数量和大小的已删除或修改的项目，可能会快速增加的邮箱的可恢复邮件文件夹大小。默认情况下，可恢复邮件文件夹配置使用高配额。在 Exchange Online 中，您将邮箱置于诉讼保留时自动增加此配额。在 Exchange Server 2013，我们建议您监视置于诉讼保留每周执行以确保它们不达到的可恢复的项目配额限制的邮箱。 
   
-## <a name="what-do-you-need-to-know-before-you-begin"></a>在开始之前，需要知道什么？
+## <a name="what-do-you-need-to-know-before-you-begin"></a>开始前，有必要了解什么？
 <a name="sectionSection0"> </a>
 
 - 估计完成时间：5 分钟

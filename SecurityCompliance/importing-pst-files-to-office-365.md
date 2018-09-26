@@ -11,15 +11,15 @@ f1_keywords:
 ms.service: o365-administration
 localization_priority: Normal
 ms.collection: Strat_O365_IP
-search.appverid: MOE150
+search.appverid: MET150
 ms.assetid: ba688e0a-0fcb-4bd7-8e57-2b669564ea84
 description: 管理员： 了解如何在 Office 365 安全性使用的导入服务&amp;合规性中心以批量导入电子邮件数据 （PST 文件） 到 Exchange Online 中的用户邮箱。本主题提供了常见问题，并说明 PST 导入过程工作方式。
-ms.openlocfilehash: 1cbe5627ffb906b6a87541f4c4582a2806562ca4
-ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+ms.openlocfilehash: 2bd58b879d9d4d1ff9d3d2c6c8680a0171d42689
+ms.sourcegitcommit: 7956955cd919f6e00b64e4506605a743c5872549
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22525702"
+ms.lasthandoff: 09/26/2018
+ms.locfileid: "25038015"
 ---
 # <a name="overview-of-importing-your-organization-pst-files-to-office-365"></a>将您的组织 PST 文件导入到 Office 365 的概述
 
@@ -121,7 +121,7 @@ ms.locfileid: "22525702"
   
 - 您必须分配 Mail Recipients 角色在 Exchange Online。默认情况下，此角色分配给组织管理和 Recipient Management 角色组。
     
-    或
+    或者
     
 - 您必须是 Office 365 组织中的全局管理员。
     
@@ -190,7 +190,7 @@ ms.locfileid: "22525702"
   
 - 您必须分配 Mail Recipients 角色在 Exchange Online。默认情况下，此角色分配给组织管理和 Recipient Management 角色组。
     
-    或
+    或者
     
 - 您必须是 Office 365 组织中的全局管理员。
     

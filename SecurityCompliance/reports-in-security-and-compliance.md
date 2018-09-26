@@ -10,17 +10,14 @@ f1_keywords:
 - ms.o365.cc.AuditingHelp
 ms.service: o365-administration
 localization_priority: Normal
-search.appverid:
-- SPO160
-- MOE150
 ms.assetid: 7acd33ce-1ec8-49fb-b625-43bac7b58c5a
 description: '使用 Office 365 安全性&amp;合规性中心以获取 SharePoint Online 和 Exchange Online 组织的各种报告以及 Azure Active Directory 报告。  '
-ms.openlocfilehash: 0b633583e14a18c7cf579d10462cf41714397812
-ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+ms.openlocfilehash: 019ccc49352db1aaf392287f62fa63f66913e293
+ms.sourcegitcommit: 7956955cd919f6e00b64e4506605a743c5872549
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22524884"
+ms.lasthandoff: 09/26/2018
+ms.locfileid: "25038335"
 ---
 # <a name="reports-in-the-office-365-security-amp-compliance-center"></a>Reports in Office 365 安全性&amp;合规性中心
 
@@ -41,7 +38,7 @@ ms.locfileid: "22524884"
   
  **在安全中打开查看报告页&amp;合规性中心：**
   
-1. 转到[https://protection.office.com/#/viewreports](https://protection.office.com/#/viewreports)。
+1. 转到 [https://protection.office.com/#/viewreports](https://protection.office.com/#/viewreports)。
     
 2. 登录到 Office 365 使用的 Office 365 组织中的用户帐户的凭据。
     

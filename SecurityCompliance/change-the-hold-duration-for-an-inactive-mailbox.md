@@ -8,17 +8,15 @@ ms.audience: Admin
 ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
-search.appverid:
-- MOE150
-- MET150
+search.appverid: MOE150
 ms.assetid: bdee24ed-b8cf-4dd0-92ae-b86ec4661e6b
 description: Office 365 邮箱进行非活动状态后，您可以更改保持或 Office 365 分配给非活动邮箱的保留策略的持续时间。保留持续时间定义在可恢复项目文件夹保留多长时间的项目。
-ms.openlocfilehash: 22bd9f9294b625a38d243f6235097d1aee437121
-ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+ms.openlocfilehash: e3d1d6c7ec0311813dfa1144cc960d2fed9e160d
+ms.sourcegitcommit: 7956955cd919f6e00b64e4506605a743c5872549
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22525440"
+ms.lasthandoff: 09/26/2018
+ms.locfileid: "25038055"
 ---
 # <a name="change-the-hold-duration-for-an-inactive-mailbox-in-office-365"></a>更改在 Office 365 中的非活动邮箱的保留持续时间
 
@@ -35,7 +33,7 @@ ms.locfileid: "22525440"
     
   - [使用远程 PowerShell 连接到 Exchange Online](https://go.microsoft.com/fwlink/p/?linkid=396554)
     
-  - [连接到 Office 365 安全性&amp;合规性中心 PowerShell](https://go.microsoft.com/fwlink/?linkid=799771)
+  - [连接到 Office 365 安全与合规中心 PowerShell](https://go.microsoft.com/fwlink/?linkid=799771)
     
 - 请注意，包含与电子数据展示事例关联是无限期保留，这意味着没有可更改没有保留持续时间。不限次数或直到保留被删除，并删除非活动邮箱保留项。
     
@@ -166,7 +164,7 @@ Set-Mailbox -InactiveMailbox -Identity <identity of inactive mailbox> -Litigatio
 
      运行以下命令，更改保留期。
   
-## <a name="more-information"></a>详细信息
+## <a name="more-information"></a>更多信息
 
 - **如何计算非活动邮箱中项目的保留期？** 保留期从邮箱项目的接收或创建原始日期开始计算。 
     

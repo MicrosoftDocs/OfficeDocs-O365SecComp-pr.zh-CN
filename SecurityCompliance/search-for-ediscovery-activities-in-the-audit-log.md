@@ -8,17 +8,15 @@ ms.audience: Admin
 ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
-search.appverid:
-- MOE150
-- MET150
+search.appverid: MOE150
 ms.assetid: 67cc7f42-a53d-4751-b929-6005c80798f7
 description: 了解如何搜索 Office 365 审核日志中的合规性管理员安全中执行内容搜索和电子数据展示案例任务时都会被记录的事件&amp;合规性中心。
-ms.openlocfilehash: 24bd629f5576fe042e59d5cbbdecf01b3fd59cf0
-ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+ms.openlocfilehash: a4cc3a6b5030a6412d739236e4c534f36948d57f
+ms.sourcegitcommit: 7956955cd919f6e00b64e4506605a743c5872549
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22525508"
+ms.lasthandoff: 09/26/2018
+ms.locfileid: "25038345"
 ---
 # <a name="search-for-ediscovery-activities-in-the-office-365-audit-log"></a>Office 365 审核日志中的电子数据展示活动搜索
 
@@ -43,7 +41,7 @@ ms.locfileid: "22525508"
 
 目前，您需要执行几个特定的操作，以查看 Office 365 审核日志中的电子数据展示活动。下面是如何。
   
-1. 转到[https://protection.office.com](https://protection.office.com)。
+1. 转到 [https://protection.office.com](https://protection.office.com)。
     
 2. 登录到 Office 365 使用工作或学校帐户。
     

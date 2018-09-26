@@ -11,15 +11,14 @@ localization_priority: Normal
 search.appverid:
 - MOE150
 - MED150
-- MET150
 ms.assetid: 7b40eeaa-544c-4534-b89b-9f79998e374c
 description: 使用本文中的 Windows PowerShell 脚本能够快速克隆现有内容安全中搜索&amp;Compliane 中心搜索。当您克隆搜索时，新的搜索 （具有新的名称） 创建包含与原始搜索相同的属性。然后您可以编辑 （通过更改关键字查询或日期范围），新搜索，然后运行它。
-ms.openlocfilehash: a4f801e3de281e8caf8aeb7d1c2bd48f0facb77c
-ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+ms.openlocfilehash: fd2ea0d8fa812d23e7479b664b13c786a62d5a38
+ms.sourcegitcommit: 7956955cd919f6e00b64e4506605a743c5872549
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22525276"
+ms.lasthandoff: 09/26/2018
+ms.locfileid: "25038045"
 ---
 # <a name="clone-a-content-search-in-the-office-365-security-amp-compliance-center"></a>克隆的内容搜索结果中的 Office 365 安全性&amp;合规性中心
 

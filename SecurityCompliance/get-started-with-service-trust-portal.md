@@ -8,15 +8,16 @@ ms.audience: Admin
 ms.topic: overview
 ms.service: o365-administration
 localization_priority: Normal
+search.appverid: MET150
 ms.custom: Adm_O365
 ms.assetid: f30e2353-0bd6-41ed-8347-eea1fb8d2662
 description: Office 365、 Azure 和 Dynamics 365 联机法规遵从性报告，若要查看第三方审核，了解 Microsoft 如何保留客户数据安全，以及如何使您符合 ISO、 HIPAA、 NIST、 FINRA、 GDPR 和 FedRAMP 时使用这些联机服务。
-ms.openlocfilehash: a924ce157b89215e3c9909d791f0e8adb4cd684d
-ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+ms.openlocfilehash: 886c6df96bfe0821dd277b279d5aa16d038fae18
+ms.sourcegitcommit: 7956955cd919f6e00b64e4506605a743c5872549
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22525246"
+ms.lasthandoff: 09/26/2018
+ms.locfileid: "25038215"
 ---
 # <a name="get-started-with-the-microsoft-service-trust-portal"></a>开始使用 Microsoft 服务信任门户
 
@@ -121,26 +122,26 @@ STP 功能和内容是可从主菜单中，如下所示：
   
 ### <a name="search"></a>搜索
 
-![服务信任门户-搜索输入字段](media/7c5cd817-3d62-420b-adb4-76e33fef941f.png)
+![服务信任门户 -“搜索”输入字段](media/7c5cd817-3d62-420b-adb4-76e33fef941f.png)
   
-单击通过页的右上角中的放大镜展开搜索输入的字段，输入搜索词，然后按 Enter。搜索控件将显示，请在搜索窗格中输入字段中，搜索词与并下方显示搜索结果。
+单击页面右上角的放大镜以展开“搜索”输入字段，输入搜索词并按 Enter。此时，“搜索”控件显示，其中搜索窗格输入字段中显示搜索词，下方显示搜索结果。
   
-默认情况下，搜索未返回文档结果，并可以使用筛选依据下拉列表来优化的显示，添加或从视图中删除搜索结果的文档的列表。您可以同时使用多个筛选器属性范围缩小到特定的云服务，类别的合规性或安全实践，区域的世界或行业返回的文档。单击以下载该文档的文档名称链接。
+默认情况下，“搜索”返回“文档”结果，你可以使用“筛选依据”下拉列表来精简所显示的文档列表，或从视图中添加或删除搜索结果。可同时使用多个筛选器特性，将返回的文档范围缩小到特定的云服务、合规性或安全做法类别、世界区域或行业。单击文档名称链接可下载文档。
   
-![服务信任门户-同时应用筛选器的文档的搜索](media/86b754e1-c63c-4514-89ac-d014bf334140.png)
+![服务信任门户 - 搜索文档（应用了筛选器）](media/86b754e1-c63c-4514-89ac-d014bf334140.png)
   
 单击合规性管理器链接，以显示搜索结果的合规性管理器评估控件。在列出的搜索结果显示日期评估已创建，分组评估适用的云服务的名称以及控件是 Microsoft 还是客户管理的。
   
-![服务信任门户-合规性管理器控件上的搜索](media/bafb811a-68ce-40b5-ad16-058498fe5439.png)
+![服务信任门户 - 搜索合规性管理器控制措施](media/bafb811a-68ce-40b5-ad16-058498fe5439.png)
   
 > [!NOTE]
-> 服务信任门户报告和文档可供下载至少 12 个月后发布或直到文档的新版本可用。 
+> 服务信任门户报告和文档在发布后的至少 12 个月内或在新版文档发布前都可供下载。 
   
 ## <a name="localization-support"></a>本地化支持
 
-服务信任门户，可以查看页面内容中不同的语言。若要更改网页语言，只需单击中页面的左下角的球形图标，然后选择您所选择的语言。 
+使用服务信任门户，可查看不同语言的页面内容。若要更改页面语言，只需单击页面左下角的地球图标，再选择所需语言即可。 
   
-![服务信任门户-本地化内容选项](media/b50c677e-a886-4267-9eca-915d880ead7a.png)
+![服务信任门户 - 本地化内容选项](media/b50c677e-a886-4267-9eca-915d880ead7a.png)
   
 ## <a name="feedback"></a>反馈
 

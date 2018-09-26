@@ -11,15 +11,14 @@ localization_priority: Normal
 search.appverid:
 - SPO160
 - MOE150
-- MET150
 ms.assetid: 422858ff-917b-46d4-9e5b-3397f60eee4d
 description: 可以使用 SharePoint Online 中的电子数据展示中心搜索特定关键字、 敏感信息和其他搜索条件组织中的所有 OneDrive for Business 站点。您的组织中的每个用户是 OneDrive for Business 站点，位于名为网站集的所有者https://domain-my.sharepoint.com。默认情况下，Office 365 全局管理员或合规性管理器无法使用 SharePoint Online 中的电子数据展示中心搜索任何 OneDrive for Business 站点。若要搜索的 OneDrive for Business 站点、 管理员或合规性管理员必须是网站集管理员的 onedrive for Business 站点。
-ms.openlocfilehash: 48f84dfe21f0f99913ba2c27123d6c0e1f8bc03f
-ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+ms.openlocfilehash: 61f068a03bcce599d9f1b7eb62d7b317b7feab68
+ms.sourcegitcommit: 7956955cd919f6e00b64e4506605a743c5872549
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22525426"
+ms.lasthandoff: 09/26/2018
+ms.locfileid: "25038085"
 ---
 # <a name="assign-ediscovery-permissions-to-onedrive-for-business-sites"></a>为 OneDrive for Business 站点分配电子数据展示权限
 
@@ -178,7 +177,7 @@ ms.locfileid: "22525426"
 
     系统将提示您输入的脚本中指定的管理员帐户的密码。如果该脚本运行成功，邮件`"Making  _\<user specified by $eDiscoveryUser\>_ a Site Collection Admin"`每个 onedrive for Business 站点 **$MySiteListFile**指定输入文件中列出的显示。
 
-## <a name="more-information"></a>详细信息
+## <a name="more-information"></a>更多信息
 
 - 您在步骤 3 中运行的脚本使用**集 SPOUser** cmdlet 将指定的用户作为网站集管理员分配给每个 OneDrive for Business 内 **$MySiteListFile**变量指定的文件中列出。如果您拥有数千名用户的大型组织，请考虑以下内容以使其更易于管理电子数据展示权限的分配。 
     

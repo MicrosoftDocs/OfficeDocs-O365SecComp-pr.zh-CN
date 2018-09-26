@@ -9,17 +9,15 @@ ms.topic: overview
 ms.service: o365-administration
 localization_priority: Normal
 ms.collection: Strat_O365_IP
-search.appverid:
-- MOE150
-- MET150
+search.appverid: MOE150
 ms.assetid: 5af334b6-a15d-4f73-97f8-1423457d9f6b
 description: 您可以选择要消除重复，以便只有一个电子邮件的副本将导出即使相同的消息的多个实例可能已发现在不同的邮箱中导出的电子数据展示搜索结果。
-ms.openlocfilehash: 02a4f9f6db0fb8831d5e5cc13adaffbd0c4dcecc
-ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+ms.openlocfilehash: 5e54f0e5841fdbd29d1ab8b6b9509ff06e827920
+ms.sourcegitcommit: 7956955cd919f6e00b64e4506605a743c5872549
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22525946"
+ms.lasthandoff: 09/26/2018
+ms.locfileid: "25038005"
 ---
 # <a name="de-duplication-in-ediscovery-search-results"></a>电子数据展示搜索结果中的重复数据删除
 
@@ -62,7 +60,7 @@ Office 365 电子数据展示工具使用下面的电子邮件属性的组合来
 > [!IMPORTANT]
 > 如果消除算法的限制可能会影响搜索结果的质量，则不应导出项目时启用重复数据删除。如果本节中所述的情况很可能无法在搜索结果中，一个因素，并且您希望减少最有可能是重复的项目数，则应考虑启用重复数据删除。 
   
-## <a name="more-information"></a>详细信息
+## <a name="more-information"></a>更多信息
 
 - 导出搜索结果使用的以下电子数据展示工具之一，本文中的信息时适用：
     

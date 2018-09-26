@@ -8,16 +8,14 @@ ms.audience: Admin
 ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
-search.appverid:
-- MET150
 ms.assetid: 56e2978f-71b6-4141-b769-ad856d31bbec
 description: 在 Office 365 的电子数据展示中心，您可以搜索所有 Exchange Online 邮箱、 SharePoint Online 网站和 OneDrive 单个电子数据展示都搜索中的业务网站。若要搜索组织中的所有内容源，电子数据展示经理必须分配适当的电子数据展示权限的每个内容源。
-ms.openlocfilehash: b3508d5929ca2b5b7a937eb2dccf677a2968cbbc
-ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+ms.openlocfilehash: 5612faf6113ceef292f90b49ec70ad7b30905646
+ms.sourcegitcommit: 7956955cd919f6e00b64e4506605a743c5872549
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22525245"
+ms.lasthandoff: 09/26/2018
+ms.locfileid: "25038095"
 ---
 # <a name="search-all-mailboxes-and-sites-using-the-ediscovery-center"></a>使用电子数据展示中心搜索所有邮箱和网站
 

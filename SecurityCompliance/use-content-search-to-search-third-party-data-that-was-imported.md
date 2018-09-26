@@ -8,17 +8,15 @@ ms.audience: Admin
 ms.topic: reference
 ms.service: o365-administration
 localization_priority: Normal
-search.appverid:
-- MOE150
-- MET150
+search.appverid: MOE150
 ms.assetid: ec2677ff-c4d7-4363-a9e7-22c80e015688
 description: 使用内容搜索电子数据展示工具来搜索已导入到 Office 365 中的邮箱从第三方数据源的项。您可以创建查询搜索所有导入的项或创建一个查询来搜索特定第三方数据类型。本文列出了您可以使用关键字查询中搜索可导入到 Office 365 的第三方数据类型的值。
-ms.openlocfilehash: 90d9dc52dcd9dba9bc273dfcf1c5f22e3913d6ba
-ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+ms.openlocfilehash: 6829e894ba687fb09184c32201f76394e37bbbf8
+ms.sourcegitcommit: 7956955cd919f6e00b64e4506605a743c5872549
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22525652"
+ms.lasthandoff: 09/26/2018
+ms.locfileid: "25037965"
 ---
 # <a name="use-content-search-to-search-third-party-data-that-was-imported-to-office-365"></a>使用内容搜索搜索第三方数据导入到 Office 365
 

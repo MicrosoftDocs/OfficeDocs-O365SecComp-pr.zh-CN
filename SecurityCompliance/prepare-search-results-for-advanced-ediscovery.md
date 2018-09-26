@@ -11,17 +11,15 @@ f1_keywords:
 ms.service: o365-administration
 localization_priority: Normal
 ms.collection: Strat_O365_IP
-search.appverid:
-- MOE150
-- MET150
+search.appverid: MOE150
 ms.assetid: 0b6fac2d-8627-4b05-9df0-03609db6248b
 description: 了解如何准备 Office 365 安全性内容的搜索结果的&amp;的进一步分析高级电子数据展示工具的合规性中心。
-ms.openlocfilehash: 4e5668c88d62e99f7a5f40ed2e17f4687a7e9adb
-ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+ms.openlocfilehash: f5b10ac7fcfa67f67618c936000832b9bdb7d533
+ms.sourcegitcommit: 7956955cd919f6e00b64e4506605a743c5872549
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22526074"
+ms.lasthandoff: 09/26/2018
+ms.locfileid: "25038305"
 ---
 # <a name="prepare-search-results-for-office-365-advanced-ediscovery"></a>为 Office 365 高级电子数据展示准备搜索结果
 
@@ -49,7 +47,7 @@ ms.locfileid: "22526074"
 
 您可以准备电子数据展示事例与相关联的搜索的结果。当您准备高级电子数据展示搜索结果时，并将数据上载临时存储在 Microsoft 云的唯一的 Windows Azure 存储区。此时是 OCR 功能从搜索结果中的图像中提取文本。在[步骤 2](#step-2-add-the-search-results-data-to-the-case-in-advanced-ediscovery)、 此文本和其他搜索结果数据中加载到中高级电子数据展示事例。
   
-1. 安全中&amp;合规性中心，单击**搜索&amp;调查** \> **电子数据展示**案例列表中的显示您的组织中。 
+1. 在安全与合规中心内，依次单击“搜索和调查”**** 和“电子数据展示”****，以显示组织中的案件集列表。 
     
 2. 旁边的情况下，您想要准备分析高级电子数据展示中搜索结果中，单击**打开**。 
     
@@ -82,11 +80,11 @@ ms.locfileid: "22526074"
 > [!NOTE]
 > 花费的时间的数据从安全&amp;合规性中心，以将其添加到在高级电子数据展示事例有所不同，具体取决于电子数据展示搜索的结果的大小。 
   
-1. 安全中&amp;合规性中心，单击**搜索&amp;调查** \> **电子数据展示**案例列表中的显示您的组织中。 
+1. 在安全与合规中心内，依次单击“搜索和调查”**** 和“电子数据展示”****，以显示组织中的案件集列表。 
     
 2. 要加载中的数据到高级电子数据展示案例旁边，单击**打开**。 
     
-3. 在**主页**页为用例，单击**高级电子数据展示**。 
+3. 在此案件集的“主页”**** 上，单击“高级电子数据展示”****。 
     
     ![单击切换高级电子数据展示高级电子数据展示中打开这种情况](media/8e34ba23-62e3-4e68-a530-b6ece39b54be.png)
   
@@ -102,7 +100,7 @@ ms.locfileid: "22526074"
 
 后的结果的电子数据展示搜索被添加到种情况下下, 一步是使用高级电子数据展示工具分析数据，并确定特定法律案件做出迅速响应的内容。有关使用高级电子数据展示的信息，请参阅[Office 365 高级电子数据展示](office-365-advanced-ediscovery.md)。
   
-## <a name="more-information"></a>详细信息
+## <a name="more-information"></a>更多信息
 
 当准备高级电子数据展示中的分析时，将解密的搜索结果中包含任何 RMS 加密电子邮件。默认情况下，此解密功能启用的电子数据展示管理员角色组的成员。这是因为 RMS 解密管理角色分配给此角色组。注意有关解密邮件以下几点：
   

@@ -12,15 +12,14 @@ search.appverid:
 - MOE150
 - MED150
 - MBS150
-- MET150
 ms.assetid: bad352ff-d5d2-45d8-ac2a-6cb832f10e73
 description: 运行脚本以快速添加邮箱和 OneDrive for Business 站点到新的保留项与 Office 365 安全性电子数据展示事例相关联的&amp;合规性中心。
-ms.openlocfilehash: eb53f01b4f1b7245e1411ac470db629115eb1ef5
-ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+ms.openlocfilehash: 2c93deb14bc8c1f89dab7bb054d2e94db06cfbd5
+ms.sourcegitcommit: 7956955cd919f6e00b64e4506605a743c5872549
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22525323"
+ms.lasthandoff: 09/26/2018
+ms.locfileid: "25038255"
 ---
 # <a name="use-a-script-to-add-users-to-a-hold-in-an-ediscovery-case-in-the-office-365-security-amp-compliance-center"></a>使用脚本来将用户添加到保留项中 Office 365 安全性电子数据展示事例&amp;合规性中心
 
@@ -48,7 +47,7 @@ Office 365 安全性&amp;合规性中心提供了大量让您的 Windows PowerSh
     
 - 该脚本包括最少的错误处理。其主要用途是快速、 方便地放置邮箱和 OneDrive for Business 站点上的每个用户的保留。
     
-- 本主题中提供的示例脚本不支持在任何 Microsoft 标准支持程序或服务。是按原样提供的示例脚本，没有任何形式的担保。Microsoft 进一步否认所有默示的担保，包括但不限于，任何暗示对适销性或针对特定用途的适用性的担保。因使用或性能的示例脚本和文档的全部风险您自己承担。在任何事件应 Microsoft、 作者，或创建、 生产或脚本传递 else 所涉及的任何人都都不对因任何损害向 （包括但不限于损失业务损失、 业务中断丢失业务信息或其他 pecuniary 丢失） 因使用或不能使用的示例脚本或文档，即使 Microsoft 已被告知此类损害的可能性。
+- 本主题中的示例脚本不受任何 Microsoft 标准支持计划或服务支持。示例脚本按原样提供，不提供任何种类的担保。Microsoft 进一步声明，不提供任何默示担保，包括但不限于适销性或特定用途适用性的默示担保。使用或运行示例脚本和文档所产生的任何风险均由你自己承担。对于因使用或无法使用示例脚本或文档而产生的任何损失（包括但不限于商业利润损失、业务中断、业务信息丢失或其他金钱损失），Microsoft、脚本作者或参与创建、生成或交付脚本的任何人都不承担任何责任，即使 Microsoft 已被告知存在这种损失的可能性，也不例外。
 
 ## <a name="step-1-install-the-sharepoint-online-management-shell"></a>步骤 1：安装 SharePoint Online 命令行管理程序
 

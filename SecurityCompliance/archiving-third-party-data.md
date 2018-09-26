@@ -9,17 +9,15 @@ ms.topic: overview
 ms.service: o365-administration
 localization_priority: Normal
 ms.collection: Strat_O365_IP
-search.appverid:
-- MOE150
-- MET150
+search.appverid: MOE150
 ms.assetid: 0ce338d5-3666-4a18-86ab-c6910ff408cc
 description: 管理员可以从导入第三方数据社交媒体平台、 即时消息平台，以及文档协作平台到 Office 365 组织中的邮箱。这样可以存档来自 Office 365 中的 Facebook、 Twitter 和数据源的数据。然后您可以对第三方数据 appply Office 365 合规性功能 （如合法保留、 内容搜索和保留策略）。
-ms.openlocfilehash: 7af88338333e90bd208d693fbfd5bb691d44b538
-ms.sourcegitcommit: 4c6c937ec51e8b754332e4c1c8d286e73e197e2c
+ms.openlocfilehash: 5e8fe94e0c3e8b39aec479f4755a263438513d35
+ms.sourcegitcommit: 7956955cd919f6e00b64e4506605a743c5872549
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/04/2018
-ms.locfileid: "23827086"
+ms.lasthandoff: 09/26/2018
+ms.locfileid: "25038105"
 ---
 # <a name="archiving-third-party-data-in-office-365"></a>在 Office 365 中存档第三方数据
 
