@@ -12,28 +12,18 @@ search.appverid:
 - MOE150
 ms.assetid: bdd5372d-775e-4442-9c1b-609627b94b5d
 description: 设置以从 Word、 Excel、 PowerPoint 和 Visio 文件中以及电子邮件中的恶意链接保护您的组织的安全链接策略。
-ms.openlocfilehash: f1b5ca193043c5fffdcf5e2dee21a08f388fdcdf
-ms.sourcegitcommit: 17c7e18d7d00135b1af40cbea117c9a817a41117
+ms.openlocfilehash: 94ad3a5d497a5fe97144e3aad29ba25d2073cde1
+ms.sourcegitcommit: 9826013c3e0532ae5d01b3d88a14691f8dd0f6b7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/24/2018
-ms.locfileid: "24972304"
+ms.lasthandoff: 09/27/2018
+ms.locfileid: "25092948"
 ---
 # <a name="set-up-office-365-atp-safe-links-policies"></a>设置 Office 365 ATP 安全链接策略
 
 [ATP 安全链接](atp-safe-links.md)， [Office 365 高级威胁保护](office-365-atp.md)(ATP) 的一项功能可帮助您的组织防止恶意欺诈和其他攻击中使用的链接。如果您有必要[Office 365 安全性分配权限&amp;合规性中心](permissions-in-the-security-and-compliance-center.md)，您可以设置 ATP 安全链接策略以帮助确保当人员单击 web 地址 (Url) 时，保护您的组织。可以将 ATP 安全链接策略配置为扫描电子邮件中的 Url 和 Office 文档中的 Url。
   
-不断到 ATP 安全链接添加了新功能：
-  
-- 在最晚年 10 月 2017，扩展 ATP 安全链接保护应用于为 Office 365 ProPlus 的文档，如 Word、 Excel、 PowerPoint Windows、 iOS 和 Android 设备和 Windows 上的 Visio 文件中的 Url 或电子邮件中的 Url。
-    
-- 从开始年 3 月 2018年，被扩展 ATP 安全链接保护应用于组织中的用户之间发送的电子邮件。
-    
-- 从开始后期年 3 月 2018年，ATP 安全链接保护扩展要应用于在 Office Online （Word Online、 Excel Online、 PowerPoint Online 和 OneNote 联机） 和 Office 365 ProPlus Mac 操作系统上的 Url。
-    
-- 从开始年 5 月 2018年，[警告页面](atp-safe-links-warning-pages.md)更新与新的配色方案、 更多详细信息，和以继续前进到而不考虑给定的建议的网站的功能。 
-
-添加新功能时，您可能需要对您现有的 ATP 安全链接策略进行调整。
+[ATP 安全链接到不断添加了新功能](atp-safe-links.md#new-features-added-to-atp-safe-links)。添加新功能时，您可能需要对您现有的 ATP 安全链接策略进行调整。
 
 ## <a name="what-to-do"></a>需执行的操作 
   
@@ -41,11 +31,11 @@ ms.locfileid: "24972304"
     
 2. [查看和编辑默认 ATP 安全链接策略可应用于所有人](#define-an-atp-safe-links-policy-that-applies-to-everyone)。例如，您可以[设置 ATP 安全链接阻止您自定义 Url 列表](set-up-a-custom-blocked-urls-list-wtih-atp.md)。
     
-3. [添加特定的电子邮件收件人的策略](#add-a-policy-for-specific-email-recipients)，包括[您自定义"执行不重写"Url 列表 ATP 安全链接的设置](set-up-a-custom-do-not-rewrite-urls-list-with-atp.md)。
+3. [为特定的电子邮件收件人添加或编辑策略](#add-a-policy-for-specific-email-recipients)，包括[您自定义"执行不重写"Url 列表 ATP 安全链接的设置](set-up-a-custom-do-not-rewrite-urls-list-with-atp.md)。
     
 4. [了解 ATP 安全链接策略选项](#learn-about-atp-safe-links-policy-options)（本文中），包括的最新更改的设置
     
-## <a name="review-the-prerequisites"></a>查看先决条件
+## <a name="step-1-review-the-prerequisites"></a>步骤 1： 查看必备组件
 
 - 请确保您的组织具有[Office 365 高级威胁保护](office-365-atp.md)。
     
@@ -57,9 +47,12 @@ ms.locfileid: "24972304"
     
 - 允许最多 30 分钟的新的或更新策略传播到所有 Office 365 数据中心。
     
-## <a name="define-an-atp-safe-links-policy-that-applies-to-everyone"></a>定义适用于每个人的 ATP 安全链接策略
+## <a name="step-2-define-or-review-the-atp-safe-links-policy-that-applies-to-everyone"></a>步骤 2： 定义 （或查看） ATP 安全链接策略应用于所有人
 
-Office 365 企业版中有高级威胁保护，您可以在适用于您的组织中的每个人的默认 ATP 安全链接策略。您可以编辑您的策略任一安全中&amp;合规性中心或 Exchange 管理员中心。**我们建议使用安全&amp;合规性中心以查看或编辑任何 ATP 策略**。
+Office 365 企业版中有高级威胁保护，您可以在适用于您的组织中的每个人的默认 ATP 安全链接策略。 
+
+> [!TIP]
+> 您可以编辑您的策略任一安全中&amp;合规性中心或 Exchange 管理员中心。**我们建议使用安全&amp;合规性中心以查看或编辑任何 ATP 策略**。
   
 1. 转到[https://protection.office.com](https://protection.office.com)和使用工作或学校帐户登录。 
     
@@ -75,9 +68,12 @@ Office 365 企业版中有高级威胁保护，您可以在适用于您的组织
     
 6. 选择**保存**。
     
-## <a name="add-a-policy-for-specific-email-recipients"></a>为特定的电子邮件收件人添加策略
+## <a name="step-3-add-or-edit-atp-safe-links-policies-that-apply-to-specific-email-recipients"></a>步骤 3： 添加 （或编辑） ATP 安全链接策略将应用于特定的电子邮件收件人
 
-检查所有用户的策略后，请考虑为电子邮件收件人的特定组定义其他策略。这样，您可以指定为默认策略例外。您可以添加策略使用任一安全&amp;合规性中心 （推荐） 或 Exchange 管理员中心。**我们建议使用安全&amp;合规性中心以查看或编辑任何 ATP 策略**。
+检查所有用户的安全链接 ATP 策略后，请考虑为电子邮件收件人的特定组定义其他策略。这样，您可以指定为默认策略例外。 
+
+> [!TIP]
+> 您可以添加策略使用任一安全&amp;合规性中心 （推荐） 或 Exchange 管理员中心。**我们建议使用安全&amp;合规性中心以查看或编辑任何 ATP 策略**。
   
 1. 转到[https://protection.office.com](https://protection.office.com)和使用工作或学校帐户登录。 
     
@@ -111,9 +107,12 @@ Office 365 企业版中有高级威胁保护，您可以在适用于您的组织
     
 6. 选择**保存**。
     
-## <a name="learn-about-atp-safe-links-policy-options"></a>了解 ATP 安全链接策略选项
+## <a name="step-5-learn-about-atp-safe-links-policy-options"></a>第 5 步： 了解 ATP 安全链接策略选项
 
-设置或编辑 ATP 安全链接策略时，将看到可用的几个选项。如果您想知道这些选项什么下, 表介绍每个和受到影响。请注意，有两种主要的策略定义或编辑： 适用于每个人的默认策略和其他策略定义的特定收件人。
+设置或编辑 ATP 安全链接策略时，将看到可用的几个选项。如果您想知道这些选项什么下, 表介绍每个和受到影响。 
+
+> [!NOTE]
+> 有两种主要的策略定义或编辑： 适用于每个人的默认策略和其他策略定义的特定收件人。下表中的"为此策略"列中对那些的区别在于。
   
 |**此策略**|**此选项**|**执行的操作**|
 |:-----|:-----|:-----|
