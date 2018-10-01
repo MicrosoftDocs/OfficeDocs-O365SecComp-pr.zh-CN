@@ -3,7 +3,6 @@ title: 设置自定义阻止 Url 列表使用 Office 365 ATP 安全链接
 ms.author: deniseb
 author: denisebmsft
 manager: laurawi
-ms.date: 5/30/2018
 ms.audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -13,12 +12,12 @@ search.appverid:
 - MOE150
 ms.assetid: 896a7efb-1683-465e-a394-261349e5d866
 description: 阅读此文，了解如何设置为使用 Office 365 高级威胁保护组织的阻止 Url 的列表。阻止的 Url 将适用于电子邮件和根据您 ATP 安全链接策略的 Office 文档。
-ms.openlocfilehash: cd1e7858c8929bf468b2a4d5e09ccde9d5adc7b1
-ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+ms.openlocfilehash: 36d295e6924d2e9972c185657885fa25bd96bf08
+ms.sourcegitcommit: 7032830867eb3fc71760e04b8342aff174c5d757
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22525448"
+ms.lasthandoff: 10/01/2018
+ms.locfileid: "25353248"
 ---
 # <a name="set-up-a-custom-blocked-urls-list-using-office-365-atp-safe-links"></a>设置自定义阻止 Url 列表使用 Office 365 ATP 安全链接
 
@@ -56,9 +55,9 @@ ms.locfileid: "22525448"
     
 |**示例条目**|**它的用途**|
 |:-----|:-----|
-|`contoso.com`或`\*contoso.com\*`  <br/> |阻止的域、 子域和路径，如`https://www.contoso.com`， `http://sub.contoso.com`，和`http://contoso.com/abc`  <br/> |
+|`contoso.com`或`*contoso.com*`  <br/> |阻止的域、 子域和路径，如`https://www.contoso.com`， `http://sub.contoso.com`，和`http://contoso.com/abc`  <br/> |
 |`http://contoso.com/a`  <br/> |阻止对网站`http://contoso.com/a`，但不是其他子路径 like`http://contoso.com/a/b`  <br/> |
-|`http://contoso.com/a\*`  <br/> |阻止对网站`http://contoso.com/a`以及其他子路径 like`http://contoso.com/a/b`  <br/> |
+|`http://contoso.com/a*`  <br/> |阻止对网站`http://contoso.com/a`以及其他子路径 like`http://contoso.com/a/b`  <br/> |
    
 5. 当您完成在屏幕的右下角中添加 Url 时，选择**保存**。
     

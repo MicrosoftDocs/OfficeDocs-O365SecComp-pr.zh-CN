@@ -13,12 +13,12 @@ search.appverid:
 - MOE150
 ms.assetid: e100fe7c-f2a1-4b7d-9e08-622330b83653
 description: Office 365 高级威胁保护包括欺骗智能、 安全链接、 安全的附件和高级的防钓鱼功能。For Business 和 Microsoft 团队之前，还进行了高级的威胁保护扩展到 SharePoint Online、 OneDrive 中的文件。
-ms.openlocfilehash: dbf604dfc6367ac225e57158e6b784952c081773
-ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+ms.openlocfilehash: 53488534d3a74f9e026142ed053dfcff5db6cbf9
+ms.sourcegitcommit: 7032830867eb3fc71760e04b8342aff174c5d757
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22525441"
+ms.lasthandoff: 10/01/2018
+ms.locfileid: "25353268"
 ---
 # <a name="office-365-advanced-threat-protection"></a>Office 365 高级威胁防护
 
@@ -34,7 +34,7 @@ Office 365 高级威胁保护 (ATP) 有助于防止恶意攻击通过您的组�
     
 - 检测何时某人尝试模拟用户和组织的自定义域与[Office 365 中的 ATP 防钓鱼功能](atp-anti-phishing.md)
     
-通过 Office 365 ATP 保护取决于组织的安全工作组的安全链接、 安全的附件和防钓鱼定义的策略。[报告可](view-reports-for-atp.md)显示如何使用 ATP 运行您的组织。然后，可以[可疑将文件提交给 Microsoft 进行分析](office-365-atp.md#submitlalware)。
+**通过 Office 365 ATP 保护由您组织的安全工作组的安全链接、 安全的附件和防钓鱼定义的策略**。非常重要定期查看和修改您的策略，以使其保持最新和要执行的新功能添加到服务的优点。[报告可](view-reports-for-atp.md)显示如何使用 ATP 运行您的组织。这些报告还可以显示您可能需要以查看并更新您的策略的区域。然后，如果您有标记为恶意软件不应是，或文件您希望 Microsoft 要检查的文件，可以[将文件提交给 Microsoft 进行分析](office-365-atp.md#submitlalware)。
   
 > [!IMPORTANT]
 > Office 365 ATP 包含订阅，例如 Office 365 企业 E5 和 Office 365 教育版 A5，以及截止年 4 月 30 2018年还[Microsoft 365 业务安全功能](https://support.office.com/article/c123694a-1efb-459e-a8d5-2187975373dc)。如果您的组织具有不包括 Office 365 ATP 的 Office 365 订阅，您可能可以作为购买 ATP。有关详细信息，请参阅[Office 365 高级威胁 Protection Service Description](https://technet.microsoft.com/library/exchange-online-advanced-threat-protection-service-description.aspx)。 
