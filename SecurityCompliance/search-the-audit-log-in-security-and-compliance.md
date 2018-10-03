@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: 0d4d0f35-390b-4518-800e-0c7ec95e946c
 description: '使用 Office 365 安全性&amp;搜索统一的审核日志，以查看 Office 365 组织中的用户和管理员的活动的合规性中心。 '
-ms.openlocfilehash: 4c56f6f0c5f5a1ace7b94fab63d839760045c66f
-ms.sourcegitcommit: 6562a0d171dacdcdb945d192f45ea1a4c0c1c0c3
+ms.openlocfilehash: 79aa544d7243a4f3a81aebea3ffce92e2ad057f8
+ms.sourcegitcommit: 09d34bf058c0afce2c3800f207d64020ca984d57
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/24/2018
-ms.locfileid: "24974682"
+ms.lasthandoff: 10/03/2018
+ms.locfileid: "25363145"
 ---
 # <a name="search-the-audit-log-in-the-office-365-security-amp-compliance-center"></a>在 Office 365 安全&amp;合规中心搜索审核日志
 
@@ -50,9 +50,9 @@ ms.locfileid: "24974682"
 
 - Dynamics 365 中的用户和管理活动
     
-- Microsoft 流中的用户和管理活动
-
 - Yammer 中的用户和管理活动
+ 
+- Microsoft 流中的用户和管理活动
     
 - Microsoft 流中的用户和管理活动
     
@@ -71,6 +71,15 @@ ms.locfileid: "24974682"
     > [!IMPORTANT]
     > 如果您安全中**权限**页上的仅查看审核日志或审核日志角色分配用户&amp;合规性中心，它们将无法搜索的 Office 365 审核日志。您必须分配 Exchange Online 中的权限。这是因为基础 cmdlet 用于搜索的审核日志是 Exchange Online cmdlet。 
   
+- 时由用户或管理员执行审核的活动，则审核记录生成并存储在您的组织的 Office 365 审核日志中。审计记录是保留 （并且可在审核日志中搜索） 的时间长度取决于您的 Office 365 订阅。
+
+     - **Office 365 E3** -审核记录保留 90 天。这意味着您可以搜索审核日志的最近 90 天内执行的活动。
+
+     - **Office 365 E5** -审核记录保留 for 365 天 （一年）。这意味着您可以搜索活动执行去年之内的审核日志。一年时间保留审核记录也是可供组织已 E3 订阅和 Office 365 高级合规性加载项订阅。
+
+        > [!NOTE]
+        > 一年保留期审核记录是当前可用的 Office 365 Preview 一部分程序和仅可供使用 E5 订阅预览计划中注册的组织。此外，审核之前年 10 月 2018年仍将保留仅 90 天内执行的活动记录。从年 10 月 2018年开始，新审核记录将保留一年时间，对于具有 E5 订阅的组织或的已 E3 订阅和高级合规性加载项订阅。
+
 - 如果您想要关闭为您的组织的 Office 365 中的审核日志搜索，您可以在远程 PowerShell 连接到 Exchange Online 组织中运行以下命令：
     
   ```
@@ -88,8 +97,6 @@ ms.locfileid: "24974682"
 - 如前面所述，用于搜索的审核日志的基础 cmdlet 为 Exchange Online cmdlet，即**搜索 UnifiedAuditLog**。这意味着您可以使用此 cmdlet 可以搜索而不是在安全使用**审核日志搜索**页上的 Office 365 审核日志&amp;合规性中心。您必须在连接到 Exchange Online 组织的远程 PowerShell 中运行此 cmdlet。有关详细信息，请参阅[搜索 UnifiedAuditLog](https://go.microsoft.com/fwlink/p/?linkid=834776)。
     
 - 如果您想要以编程方式下载 Office 365 审核日志中的数据，我们建议您使用 Office 365 管理活动 API，而不是使用 PowerShell 脚本。Office 365 管理活动 API 可用于开发操作、 安全性和合规性贵组织的监控解决方案的 REST web 服务。有关详细信息，请参阅[Office 365 管理活动 API 参考 （英文）](https://go.microsoft.com/fwlink/?linkid=852309)。
-    
-- 您可以搜索 Office 365 审核日志的最近 90 天内执行的活动。
     
 - 它可能需要 30 分钟或设置为 24 小时事件之后发生相应的审核日志条目要显示在搜索结果中。下表显示了 Office 365 中的不同服务所花的时间。
     
@@ -287,7 +294,8 @@ ms.locfileid: "24974682"
 |[Sway 活动](#sway-activities) <br/> |[用户管理活动](#user-administration-activities) <br/> |[Azure AD 组管理活动](#azure-ad-group-administration-activities) <br/> |
 |[应用程序管理活动](#application-administration-activities) <br/> |[角色管理活动](#role-administration-activities) <br/> |[目录管理活动](#directory-administration-activities) <br/> |
 |[电子数据展示活动](#ediscovery-activities) <br/> |[Power BI 活动](#power-bi-activities) <br/> |[Microsoft 团队活动](#microsoft-teams-activities) <br/> |
-|[Yammer 活动](#yammer-activities) <br/> |[Microsoft Stream](#microsoft-stream) <br/> |[Exchange 管理员审核日志](#exchange-admin-audit-log) <br/> |
+|[Yammer 活动](#yammer-activities) <br/> |[Microsoft Flow](#microsoft-flow) <br/> |[Microsoft Stream](#microsoft-stream) <br/>|
+|[Exchange 管理员审核日志](#exchange-admin-audit-log) <br/> |
    
   
 ### <a name="file-and-page-activities"></a>文件和页上的活动
@@ -640,6 +648,11 @@ ms.locfileid: "24974682"
 |更新的文件名称  <br/> |FileUpdateName  <br/> |在用户更改文件的名称。  <br/> |
 |查看的文件  <br/> |FileVisited  <br/> |用户可查看文件。  <br/> |
    
+### <a name="microsoft-flow"></a>Microsoft Flow
+
+Microsoft 流中，您可以搜索活动的审核日志。这些活动包括创建、 编辑和删除流和更改流权限。有关审核流活动的信息，请参阅博客[Microsoft 流审核事件现已在 Office 365 安全性和合规性中心](https://flow.microsoft.com/blog/security-and-compliance-center)。
+
+
 ### <a name="microsoft-stream"></a>Microsoft Stream
   
 您可以在 Microsoft 流中搜索活动的审核日志。这些活动包括由用户、 组频道活动和管理活动，如管理用户、 管理组织设置和导出报告执行的视频活动。有关这些活动的说明，请参阅[Microsoft 流中的审核日志](https://docs.microsoft.com/stream/audit-logs)中的"在 Microsoft 流中记录活动"一节。
@@ -678,9 +691,16 @@ Exchange 管理员审核日志记录 — 其 Office 365 中的默认情况下启
 
 大多数审核数据可用在 30 分钟内但可能需要达 24 小时后事件发生相应的审核日志条目要显示在搜索结果中。请参阅本文表明花费的时间不同的 Office 365 服务中的事件的可[开始之前](#before-you-begin)部分中的表。
 
-**长是否对于保留审核记录？**
+**多长时间的保留审核记录？**
 
-当前的审核日志记录将会保留 90 天。Microsoft 主动从事的计划来增加此限制。 
+如前所述，审核记录的保留期取决于组织的 Office 365 订阅。  
+
+- **Office 365 E3** -审核记录保留 90 天。
+
+- **Office 365 E5** -审核记录保留 for 365 天 （一年）。一年时间保留审核记录也是可供组织已 E3 订阅和 Office 365 高级合规性加载项订阅。
+
+     > [!NOTE]
+     > 当前仅适用于组织的注册 Office 365 Preview 程序审核记录的保留一年时间段。
 
 **可以以编程方式访问的审计数据？**
 
