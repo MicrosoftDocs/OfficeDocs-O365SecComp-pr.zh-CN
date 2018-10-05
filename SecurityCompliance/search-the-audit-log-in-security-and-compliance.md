@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: 0d4d0f35-390b-4518-800e-0c7ec95e946c
 description: '使用 Office 365 安全性&amp;搜索统一的审核日志，以查看 Office 365 组织中的用户和管理员的活动的合规性中心。 '
-ms.openlocfilehash: 79aa544d7243a4f3a81aebea3ffce92e2ad057f8
-ms.sourcegitcommit: 09d34bf058c0afce2c3800f207d64020ca984d57
+ms.openlocfilehash: 5e0d19841c0e512173e8c42d37c0ec13867299af
+ms.sourcegitcommit: e14dec9bed0c0009acbc1f1cb80b4d0794ad5739
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/03/2018
-ms.locfileid: "25363145"
+ms.lasthandoff: 10/05/2018
+ms.locfileid: "25435119"
 ---
 # <a name="search-the-audit-log-in-the-office-365-security-amp-compliance-center"></a>在 Office 365 安全&amp;合规中心搜索审核日志
 
@@ -71,14 +71,14 @@ ms.locfileid: "25363145"
     > [!IMPORTANT]
     > 如果您安全中**权限**页上的仅查看审核日志或审核日志角色分配用户&amp;合规性中心，它们将无法搜索的 Office 365 审核日志。您必须分配 Exchange Online 中的权限。这是因为基础 cmdlet 用于搜索的审核日志是 Exchange Online cmdlet。 
   
-- 时由用户或管理员执行审核的活动，则审核记录生成并存储在您的组织的 Office 365 审核日志中。审计记录是保留 （并且可在审核日志中搜索） 的时间长度取决于您的 Office 365 订阅。
+- 时由用户或管理员执行审核的活动，则审核记录生成并存储在您的组织的 Office 365 审核日志中。审计记录是保留 （并且可在审核日志中搜索） 的时间长度取决于您的 Office 365 订阅和专门分配给特定用户的许可证的类型。
 
      - **Office 365 E3** -审核记录保留 90 天。这意味着您可以搜索审核日志的最近 90 天内执行的活动。
 
-     - **Office 365 E5** -审核记录保留 for 365 天 （一年）。这意味着您可以搜索活动执行去年之内的审核日志。一年时间保留审核记录也是可供组织已 E3 订阅和 Office 365 高级合规性加载项订阅。
+     - **Office 365 E5** -审核记录保留 for 365 天 （一年）。这意味着您可以搜索活动执行去年之内的审核日志。一年时间保留审核记录也是可供用户分配一个 E3/Exchange Online 计划 1 许可证且具有的 Office 365 高级合规性附加许可证。
 
         > [!NOTE]
-        > 一年保留期审核记录是当前可用的 Office 365 Preview 一部分程序和仅可供使用 E5 订阅预览计划中注册的组织。此外，审核之前年 10 月 2018年仍将保留仅 90 天内执行的活动记录。从年 10 月 2018年开始，新审核记录将保留一年时间，对于具有 E5 订阅的组织或的已 E3 订阅和高级合规性加载项订阅。
+        > 一年保留期的审核记录将提供 Office 365 Preview 的一部分提供程序并将仅适用于组织注册了预览计划。如果审核记录的更长时间保留期确实是可在预览 （和更高版本的正式发布），将一年时间会保留唯一的新审核记录 （对于活动之后释放更长时间保留期执行）。
 
 - 如果您想要关闭为您的组织的 Office 365 中的审核日志搜索，您可以在远程 PowerShell 连接到 Exchange Online 组织中运行以下命令：
     
@@ -700,7 +700,9 @@ Exchange 管理员审核日志记录 — 其 Office 365 中的默认情况下启
 - **Office 365 E5** -审核记录保留 for 365 天 （一年）。一年时间保留审核记录也是可供组织已 E3 订阅和 Office 365 高级合规性加载项订阅。
 
      > [!NOTE]
-     > 当前仅适用于组织的注册 Office 365 Preview 程序审核记录的保留一年时间段。
+     > 一年保持期审核记录将推出可供注册 Office 365 Preview 程序的组织。
+
+另请注意，审核记录的保留时间段的持续时间基于每个用户授权。例如，如果您的组织中的用户分配一个 Office 365 E3 许可证，然后执行该用户的活动的审核记录保留 90 天。如果其他用户分配一个 Office 365 E5 许可证，其审核记录保留一年时间。 
 
 **可以以编程方式访问的审计数据？**
 
