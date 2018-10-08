@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.assetid: af398293-c69d-465e-a249-d74561552d30
 description: Office 365 中的标签可有助于对正确的内容执行适当的操作。借助标签，可对整个组织中的数据进行分类以管理数据，并能根据此分类强制执行保留规则。另外，还可以使用标签在 Office 365 中实现记录管理。
-ms.openlocfilehash: 3a99a3e563913a11da2d9f4a2eb745cb8fa80dd2
-ms.sourcegitcommit: e0f016aca7befc8806233a492ee916cbe646094f
+ms.openlocfilehash: 5507b694dc0c4655649a20c179ac2c49ce4a2ec9
+ms.sourcegitcommit: aa12f19b901d910e92e202d4e703aa2c31736bdb
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/27/2018
-ms.locfileid: "25342810"
+ms.lasthandoff: 10/03/2018
+ms.locfileid: "25362777"
 ---
 # <a name="overview-of-labels"></a>标签概述
 
@@ -267,28 +267,15 @@ ms.locfileid: "25342810"
     
 ![用于确定敏感信息类型的选项](media/de255881-f596-4c8d-8359-e974e3a0819a.png)
   
-### <a name="auto-apply-labels-to-content-with-keywords-or-searchable-properties"></a>将标签自动应用于包含关键字或可搜索属性的内容
+### <a name="auto-apply-labels-to-content-with-keywords"></a>将标签自动应用于包含关键字的内容
 
-可将标签自动应用于满足特定条件的内容。目前可用的条件支持将标签应用于包含特定字词、短语或可搜索属性值的内容。可使用搜索运算符（如 AND、OR 和 NOT）优化查询。 
+可将标签自动应用于满足特定条件的内容。目前可用的条件支持将标签应用于包含特定字词或短语的内容。可使用搜索运算符（如 AND、OR 和 NOT）优化查询。 
 
 有关查询语法的详细信息，请参阅：
 
 - [关键字查询语言 (KQL) 语法参考](https://docs.microsoft.com/zh-CN/sharepoint/dev/general-development/keyword-query-language-kql-syntax-reference)
 
-基于查询的标签使用搜索索引来标识内容。有关有效可搜索属性的详细信息，请参阅：
-
-- [内容搜索的关键字查询和搜索条件](keyword-queries-and-search-conditions.md)
-- [已爬网和托管属性在 SharePoint Server 中的概述](https://docs.microsoft.com/zh-CN/SharePoint/technical-reference/crawled-and-managed-properties-overview)
-  
-示例查询：
-
-- Exchange
-    - subject:"Quarterly Financials"
-    - recipients:garthf<!--nolink-->@contoso.com
-
-- Sharepoint 和 OneDrive for Business
-    - contenttype:contract
-    - site:https<!--nolink-->://contoso.sharepoint.com/sites/teams/procurement AND contenttype:contract
+基于查询的标签使用搜索索引来标识内容。
   
 ![查询编辑器](media/ac5b8e5e-7453-4ec7-905c-160df57298d3.png)
   
