@@ -13,12 +13,12 @@ search.appverid:
 - MET150
 ms.assetid: 758822b5-0126-463a-9d08-7366bb2a807d
 description: Microsoft Outlook 上 web 用户可以通过使用内置的电子邮件报告选项报告垃圾邮件和网络钓鱼诈骗。您还可以让 Microsoft 知道是否电子邮件被错误地标识为垃圾邮件。
-ms.openlocfilehash: 4dab3013f2ca9918dc8529cb67113469ea945015
-ms.sourcegitcommit: 17c7e18d7d00135b1af40cbea117c9a817a41117
+ms.openlocfilehash: d495f5648d4e4ac7ee7335d58a4268bdfecb6109
+ms.sourcegitcommit: 4a7d7717f0da05cf5a3c506df2989a9d02f33dfa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/24/2018
-ms.locfileid: "24972294"
+ms.lasthandoff: 10/08/2018
+ms.locfileid: "25450067"
 ---
 # <a name="report-junk-email-and-phishing-scams-in-outlook-on-the-web"></a>报告在 web 上的 Outlook 中的垃圾电子邮件和网络钓鱼诈骗 
 
@@ -56,9 +56,11 @@ ms.locfileid: "24972294"
   
 2. 将会打开一个对话框，询问如果您想要将非垃圾邮件的电子邮件的副本发送给 Microsoft 进行分析。单击以将邮件发送到 Microsoft 垃圾邮件分析团队**报告**。. 
     
-## <a name="for-more-information"></a>更多信息
+## <a name="for-more-information"></a>详细信息
 
 [了解垃圾邮件和网络钓鱼](https://go.microsoft.com/fwlink/p/?LinkId=270068)
+
+[Microsoft Outlook 垃圾电子邮件举报外接程序](https://docs.microsoft.com/en-us/office365/securitycompliance/junk-email-reporting-add-in-for-microsoft-outlook)
   
   
 
