@@ -3,7 +3,7 @@ title: 有关将 PST 文件导入到 Office 365 常见问题
 ms.author: markjjo
 author: markjjo
 manager: laurawi
-ms.date: 1/3/2018
+ms.date: ''
 ms.audience: Admin
 ms.topic: reference
 ms.service: o365-administration
@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.assetid: 2fe71b05-f5a2-4182-ade7-4dc5cabdfd51
 description: '有关使用 Office 365 导入服务将生成组织的 PST 文件导入到 Office 365 邮箱，常见问题 (英文） 的管理员。 '
-ms.openlocfilehash: 35080106f92b38e944ba31f74d5564e65ba1f752
-ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+ms.openlocfilehash: 7230e68f896766df643f12b2a132f987670e9afa
+ms.sourcegitcommit: eecf6f3aafbf460ee2ff9988f2b055e62b1fdb9d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22526082"
+ms.lasthandoff: 10/09/2018
+ms.locfileid: "25454049"
 ---
 # <a name="faq-about-importing-pst-files-to-office-365"></a>有关将 PST 文件导入到 Office 365 常见问题
 
@@ -39,7 +39,7 @@ ms.locfileid: "22526082"
   
 - 您必须分配 Mail Recipients 角色在 Exchange Online。默认情况下，此角色分配给组织管理和 Recipient Management 角色组。
     
-    或
+    或者
     
 - 您必须是 Office 365 组织中的全局管理员。
     
@@ -48,7 +48,7 @@ ms.locfileid: "22526082"
   
  **在哪里网络上载可用**
   
-在美国、 加拿大、 巴西、 英国、 欧洲、 印度、 中国、 东南方向亚洲，日本、 韩国、 和澳大利亚是当前可用网络上载。网络上载很快就会提供在多个区域中。
+在美国、 加拿大、 巴西、 英国、 法国、 欧洲、 印度、 中国、 东南方向亚洲，日本、 韩国、 和澳大利亚是当前可用网络上载。网络上载很快就会提供在多个区域中。
   
  **什么是使用网络上载导入 PST 文件的定价？**
   
@@ -110,7 +110,7 @@ ms.locfileid: "22526082"
   
 - 您必须分配 Mail Recipients 角色在 Exchange Online。默认情况下，此角色分配给组织管理和 Recipient Management 角色组。
     
-    或
+    或者
     
 - 您必须是 Office 365 组织中的全局管理员。
     
