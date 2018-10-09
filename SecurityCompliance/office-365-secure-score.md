@@ -1,7 +1,7 @@
 ---
 title: Office 365 安全功能分数简介
-ms.author: brendonb
-author: brendonb
+ms.author: deniseb
+author: denisebmsft
 manager: laurawi
 ms.date: 6/23/2018
 ms.audience: Admin
@@ -13,34 +13,22 @@ search.appverid:
 - MET150
 ms.assetid: c9e7160f-2c34-4bd0-a548-5ddcc862eaef
 description: 想知道真的是如何安全 Office 365 组织？若要停止想知道的时间-Office 365 安全 Score 是此处以帮助。安全分数分析基于您的正则活动和安全设置的 Office 365 组织的安全性，并分配分数。可以将其视为安全的 credit 分数。
-ms.openlocfilehash: 02f958ec4b9b9287f5db8ddbb5cd83f3cef68007
-ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+ms.openlocfilehash: 958744696e0d9d8c7e8f29b9bdc460c5aa05eb3a
+ms.sourcegitcommit: 2e41cc24ad92005084f2ba432e724bdcc4e295ff
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22524886"
+ms.lasthandoff: 10/09/2018
+ms.locfileid: "25450747"
 ---
 # <a name="introducing-the-office-365-secure-score"></a>Office 365 安全功能分数简介
 
 想知道真的是如何安全 Office 365 组织？若要停止想知道的时间-Office 365 安全 Score 是此处以帮助。安全分数分析基于您的正则活动和安全设置的 Office 365 组织的安全性，并分配分数。可以将其视为安全的 credit 分数。
   
-## <a name="in-this-article"></a>本文内容
-
-[如何获取安全分数？](office-365-secure-score.md#howtoaccess)
-  
-[它如何工作？](office-365-secure-score.md#HowWorks)
-  
-[它有助于我？](office-365-secure-score.md#HowHelps)
-  
-[常见问题](office-365-secure-score.md#FAQ)
-  
 ## <a name="how-do-i-get-to-secure-score"></a>如何获取安全分数？
-<a name="howtoaccess"> </a>
 
 具有管理员权限 （全局管理员或自定义管理角色） 的 Office 365 企业高级版或企业版订阅，可以访问在安全分数的人[https://securescore.office.com](https://securescore.office.com)。未分配管理员角色的用户将无法访问 Secure 分数。但是，管理员可以使用该工具与组织中的其他人共享其结果。
   
 ## <a name="how-does-it-work"></a>它是如何运行的？
-<a name="HowWorks"> </a>
 
 安全分数找出哪些 Office 365 服务，您在使用 （如 OneDrive、 SharePoint 和 Exchange），然后查看您的设置和活动并到一个比较基准建立由 Microsoft 对它们进行比较。您将获取基于您在与最佳安全做法如何对齐的分数。
   
@@ -63,7 +51,6 @@ ms.locfileid: "22524886"
 ![图表显示所选数据点分数分析器选项卡](media/b8427837-2ed9-4319-ba71-7d03bd99129c.png)
   
 ## <a name="how-will-it-help-me"></a>它有助于我？
-<a name="HowHelps"> </a>
 
 使用安全分数有助于提高组织的安全性鼓励您可以在 Office 365 （其中许多您已购买，但可能不知道的） 中使用的内置安全功能。若要了解有关这些功能使用工具会帮助您应注意，您采取右步骤保护您的组织免受威胁段。
   
@@ -75,7 +62,6 @@ ms.locfileid: "22524886"
 > 安全分数不 express 绝对的度量单位的方式可能要获取破坏。它表示您采用控件可以偏移正在看见的风险的程度。没有服务都无法保证，您将不违反，和安全分数不应视为以任何方式保证。 
   
 ## <a name="faqs"></a>常见问题
-<a name="FAQ"> </a>
 
 ### <a name="who-can-use-secure-score"></a>谁可以使用安全分数？
 
@@ -118,5 +104,9 @@ ms.locfileid: "22524886"
 ### <a name="my-organization-only-has-certain-security-features-does-this-affect-my-score"></a>我的组织只有某些安全功能。这将影响分数？
 
 安全分数计算您根据您购买的服务的分数。例如，如果仅购买 Exchange Online 的计划，您不被计分 SharePoint Online 的安全功能。分数的分母，为是适用于您购买的产品的控件的所有比较基准的总数。分子是为其所有控件的已完成或部分已完成的操作，以满足该控件的总和。
+
+## <a name="related-topics"></a>相关主题
+
+[安全仪表板概述 （英文)](security-dashboard.md)
   
 

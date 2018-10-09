@@ -12,24 +12,26 @@ search.appverid:
 - MOE150
 ms.assetid: dd6d2417-49c4-4de6-9294-67fdabbf8532
 description: 您可以与 Office 365 云应用程序安全性集成 SIEM 服务器。阅读这篇文章，获取它的工作方式以及如何将其设置的概述。
-ms.openlocfilehash: a2bd75e73ddccef9359ace304faa3c8b1dd4a728
-ms.sourcegitcommit: 17c7e18d7d00135b1af40cbea117c9a817a41117
+ms.openlocfilehash: d8603d53e156e89c53f13153cd90d400b1312538
+ms.sourcegitcommit: 2e41cc24ad92005084f2ba432e724bdcc4e295ff
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/24/2018
-ms.locfileid: "24972324"
+ms.lasthandoff: 10/09/2018
+ms.locfileid: "25450757"
 ---
 # <a name="integrate-your-siem-server-with-office-365-cloud-app-security"></a>将 SIEM 服务器与 Office 365 云应用安全集成
   
 |评估 * *\>**|规划 * *\>**|部署 * *\>**|使用率 ***|
 |:-----|:-----|:-----|:-----|
-|[启动评估](office-365-cas-overview.md) <br/> |[开始规划](get-ready-for-office-365-cas.md) <br/> |在这里 ！  <br/> [下一步](utilization-activities-for-ocas.md) <br/> |[开始利用](utilization-activities-for-ocas.md) <br/> |
+|[启动评估](office-365-cas-overview.md) <br/> |[开始规划](get-ready-for-office-365-cas.md) <br/> |在这里 ！  <br/> [后续步骤](utilization-activities-for-ocas.md) <br/> |[开始利用](utilization-activities-for-ocas.md) <br/> |
    
+## <a name="overview-and-prerequisites"></a>概述和先决条件
+
 您可以与要启用的通知的集中监控您安全信息和事件管理 (SIEM) 服务器集成[Office 365 云应用程序安全性](get-ready-for-office-365-cas.md)。这是将云服务的组织特别有用，本地服务器应用程序。将与 SIEM server 集成允许您以更好地保持通过自动化某些安全过程和关联之间的基于云的常规安全工作流，同时保护您的 Office 365 应用程序的安全团队和本地事件。  
   
 首先集成 SIEM 服务器与 Office 365 云应用程序安全性时, 从最近两天的通知转发到 SIEM 服务器，以及所有通知，然后从上 （基于您选择的任何筛选器）。此外，如果您禁用此功能长时间，当您启用它再次，它会将在过去两天的通知，然后所有通知此后转发。
- 
-## <a name="siem-integration-architecture"></a>SIEM 集成体系结构
+
+### <a name="siem-integration-architecture"></a>SIEM 集成体系结构
 
 在贵组织的网络中设置的 SIEM 代理。SIEM 代理配置和部署时, 提取已配置的数据类型 （警报） 使用 Office 365 云应用程序安全 RESTful Api。然后通过端口 443 上加密 HTTPS 通道发送通信。
   
@@ -37,13 +39,13 @@ ms.locfileid: "24972324"
 
 ![SIEM 和云应用程序安全体系结构](media/siem-architecture.png)
 
-## <a name="supported-siem-servers"></a>支持的 SIEM 服务器
+### <a name="supported-siem-servers"></a>支持的 SIEM 服务器
 
 Office 365 云应用程序安全性当前支持以下 SIEM 服务器：
 - 微焦点推荐 ArcSight
 - 泛型 CEF
 
-## <a name="prerequisites"></a>先决条件
+### <a name="prerequisites"></a>先决条件
 
 - 您必须是要执行本文中描述的任务的全局管理员或 security 管理员程序。请参阅[Permissions in Office 365 安全性&amp;合规性中心](permissions-in-the-security-and-compliance-center.md)
 
@@ -63,9 +65,7 @@ Office 365 云应用程序安全性当前支持以下 SIEM 服务器：
 
 - 您必须同意[软件许可条款](https://go.microsoft.com/fwlink/?linkid=862491)，若要下载[JAR 文件](https://go.microsoft.com/fwlink/?linkid=838596)需要将 SIEM 服务器集成。
  
-## <a name="integrate-office-365-cloud-app-security"></a>集成 Office 365 云应用程序安全性
-    
-### <a name="step-1-set-it-up-in-the-office-365-cloud-app-security-portal"></a>步骤 1： 设置其 Office 365 云应用程序安全性门户中
+## <a name="step-1-set-it-up-a-siem-agent-in-office-365-cloud-app-security"></a>步骤 1： 设置其 Office 365 云应用程序安全性的 SIEM 代理
 
 1. 转到[https://protection.office.com](https://protection.office.com)和 Office 365 中使用您的工作或学校帐户登录。(您将转到安全&amp;合规性中心。) 
     
@@ -98,21 +98,22 @@ Office 365 云应用程序安全性当前支持以下 SIEM 服务器：
 
 ![创建 SIEM 代理](media/SIEMAgentCreated.png)
     
-### <a name="step-2-download-the-jar-file-and-run-it-on-your-server"></a>步骤 2： 将 JAR 文件下载并运行在服务器上
+## <a name="step-2-download-a-jar-file-and-run-it-on-your-siem-server"></a>步骤 2: JAR 文件下载并运行 SIEM 服务器上
 
 1. 下载[Microsoft 云应用程序安全 SIEM 代理](https://go.microsoft.com/fwlink/?linkid=838596)并解压缩文件夹。（必须同意[软件许可条款](https://go.microsoft.com/fwlink/?linkid=862491)才能继续。） 
     
-2. 从 zip 文件夹中提取的.jar 文件，并在服务器上运行它。
+2. 从压缩文件夹中提取的.jar 文件并 SIEM 服务器上运行它。
     
 3. 在运行该文件之后, 运行以下命令： 命令：<br/>
   ```
   java -jar mcas-siemagent-0.87.20-signed.jar [--logsDirectory DIRNAME] [--proxy ADDRESS[:PORT]] --token TOKEN
   ```
-#### <a name="important-notes"></a>重要说明
+### <a name="important-notes"></a>重要说明
 
 - 文件名可能有所不同具体取决于 SIEM 代理的版本。 
 
-- 我们建议在服务器安装过程中，您的服务器上运行 JAR 填充。
+- 我们建议您在服务器安装过程中运行 SIEM 服务器上的 JAR 文件。
+
     - **Windows**： 运行作为计划任务，并确保配置任务**运行或不用户是否登录**和清除**如果运行超过停止任务**选项。
 
     - **Linux**： 添加运行的命令与**&** 到`rc.local`文件。 <br/>示例：<br/> 
@@ -126,31 +127,13 @@ Office 365 云应用程序安全性当前支持以下 SIEM 服务器：
     - **令牌**是您在第一个过程中复制 SIEM 代理标记。
     - 若要获取帮助，请键入`-h`。 
   
-### <a name="step-3-validate-that-the-siem-agent-is-working"></a>步骤 3： 验证 SIEM 代理工作
+## <a name="step-3-validate-that-the-siem-agent-is-working"></a>步骤 3： 验证 SIEM 代理工作
 
 1. 请确保在 Office 365 云应用程序安全性门户 SIEM 代理的状态不显示为**连接错误**或**已断开连接**，并且有任何代理通知。<br/>例如，此处我们可以看到 SIEM 服务器连接：<br/>![SIEM 服务器连接](media/siem-connected.png)<br/>并在这里，我们可以看到 SIEM 服务器已断开连接：<br/>![未连接的 SIEM 服务器](media/siem-not-connected.png) 
   
 2. 在您的系统日志/SIEM 服务器，请确保您看到通知均已到达从 Office 365 云应用程序安全性。
   
-## <a name="regenerating-your-token"></a>重新生成您的令牌
-
-如果您丢失了您的标记，则可以始终重新生成它。在表中，找到所在行的 SIEM 代理。单击省略号，，然后选择**重新生成令牌**。
-
-![通过单击省略号 SIEM 代理再生令牌](media/04de368a-b88e-4a9c-a830-58025cb98db6.png)
-  
-## <a name="editing-your-siem-agent"></a>编辑 SIEM 代理
-
-若要编辑您 SIEM 代理，在表中，找到 SIEM 代理所在行。单击省略号，，，然后选择**编辑**。如果您编辑 SIEM 代理，不需要重新运行.jar 文件;自动更新。
-
-![若要编辑 SIEM 代理，选择省略号，，，然后选择编辑。](media/96d0b362-3e0c-4dff-b2b4-d7af5b1bfb91.png)
-  
-## <a name="deleting-your-siem-agent"></a>删除 SIEM 代理
-
-若要删除您 SIEM 代理，在表中，找到 SIEM 代理所在行。单击省略号，，，然后选择**删除**。
-
-![若要删除的 SIEM 代理，选择省略号，，，然后选择删除。](media/540b5bdf-5574-4ecc-a7b0-92a499a387d7.png)
-
-## <a name="sample-logfiles"></a>示例日志文件
+## <a name="what-the-logfiles-look-like"></a>日志文件表现形式是什么
 
 下面是可能发送到 SIEM 服务器通知日志文件示例：
 
@@ -168,7 +151,7 @@ Office 365 云应用程序安全性当前支持以下 SIEM 服务器：
 2017-07-16T09:41:04.369Z CEF:0|MCAS|SIEM_Agent|0.102.17|ALERT_CABINET_EVENT_MATCH_AUDIT|test-activity-policy2|3|externalId=596b34b10c204203a33a5240 start=1500198064369 end=1500198064369 msg=Activity policy ''test-activity-policy2'' was triggered by ''user2@test15-adallom.com'' suser=user2@test15-adallom.com destinationServiceName=Google cn1Label=riskScore cn1= cs1Label=portalURL cs1=https://cloud-app-security.com/#/alerts/596b34b10c204203a33a5240 cs2Label=uniqueServiceAppIds cs2=APPID_33626 cs3Label=relatedAudits cs3=1500197996117_fd71f265-1e46-4f04-b372-2e32ec874cd3 cs4Label=policyIDs cs4=
 ```
 
-以下是 CEF 格式的示例
+下面是另一个示例中，这次 CEF 格式：
 
 
 |CEF 字段名称  | 说明  |
@@ -181,6 +164,37 @@ Office 365 云应用程序安全性当前支持以下 SIEM 服务器：
 |destinationServiceName     | 接收应用程序，如 Office 365、 SharePoint、 或 OneDrive 的通知        |
 |csLabel     | 有所不同 （标签具有不同的含义）。通常，标签是一目了然，如 targetObjects。        |
 |cs     | 对应于一个标签 （如警报标签示例根据目标用户） 的信息        |
+
+## <a name="additional-tasks-as-needed"></a>其他任务 （根据需要）
+
+您已配置 SIEM 服务器并具有与 Office 365 云应用程序安全性集成后，您可能需要重新生成令牌、 编辑 SIEM 代理，或删除 SIEM 代理。以下各节介绍如何执行这些任务。
+
+### <a name="regenerate-a-token"></a>重新生成令牌
+
+如果您丢失了您的令牌，您可以重新生成一个。 
+
+1. 在 Office 365 云应用程序安全性门户中，选择**设置** > **安全扩展**。
+
+2. 在表中，找到所在行的 SIEM 代理。 
+
+3. 单击省略号，，然后选择**重新生成令牌**。<br/>![通过单击省略号 SIEM 代理再生令牌](media/04de368a-b88e-4a9c-a830-58025cb98db6.png)
+  
+### <a name="edit-a-siem-agent"></a>编辑 SIEM 代理
+
+1. 在 Office 365 云应用程序安全性门户中，选择**设置** > **安全扩展**。
+
+2. SIEM 代理中找到的行。 
+
+3. 单击省略号，，，然后选择**编辑**。（如果您编辑 SIEM 代理，不需要重新运行.jar 文件; 它将自动更新。）<br/>![若要编辑 SIEM 代理，选择省略号，，，然后选择编辑。](media/96d0b362-3e0c-4dff-b2b4-d7af5b1bfb91.png)
+  
+### <a name="delete-a-siem-agent"></a>删除 SIEM 代理
+
+1. 在 Office 365 云应用程序安全性门户中，选择**设置** > **安全扩展**。
+
+2. SIEM 代理中找到的行。 
+
+3. 单击省略号，，，然后选择**删除**。<br/>![若要删除的 SIEM 代理，选择省略号，，，然后选择删除。](media/540b5bdf-5574-4ecc-a7b0-92a499a387d7.png)
+
   
 ## <a name="next-steps"></a>后续步骤
 

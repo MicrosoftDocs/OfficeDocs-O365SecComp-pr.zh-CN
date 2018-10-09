@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: 2cfce2c8-20c5-47f9-afc4-24b059c1bd76
 description: 用户需要为其分配权限 Office 365 安全性&amp;合规性中心之前可以管理其安全性或合规性功能的任何。
-ms.openlocfilehash: c612c99f7d72b19d072d728eb4851532d4012414
-ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+ms.openlocfilehash: e0c8b655b1b3300e4ffa9aba1d94e65a9ef26121
+ms.sourcegitcommit: 2e41cc24ad92005084f2ba432e724bdcc4e295ff
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "23013796"
+ms.lasthandoff: 10/09/2018
+ms.locfileid: "25450737"
 ---
 # <a name="give-users-access-to-the-office-365-security-amp-compliance-center"></a>授予用户访问 Office 365 安全性&amp;合规性中心
 
@@ -29,7 +29,7 @@ ms.locfileid: "23013796"
   
 有关不同的权限的详细信息可以授予用户安全中&amp;合规性中心，签出[Permissions in Office 365 安全性&amp;合规性中心](permissions-in-the-security-and-compliance-center.md)。
   
-## <a name="what-do-you-need-to-know-before-you-begin"></a>在开始之前，需要知道什么？
+## <a name="what-do-you-need-to-know-before-you-begin"></a>开始前，有必要了解什么？
 
 - 您必须是 Office 365 全局管理员或安全中 OrganizationManagement 角色组的成员&amp;合规性中心，以完成本文中的步骤。
     
@@ -41,11 +41,7 @@ ms.locfileid: "23013796"
 
 1. [登录到 Office 365 并转到 Admin center](https://go.microsoft.com/fwlink/p/?LinkId=525275)。
     
-<<<<<<< 头
-2. 在 Office 365 管理中心，打开**管理中心**，然后单击**安全&amp;合规性**。 
-=======
 2. 在 Office 365 管理中心中，打开**管理中心**，然后单击**安全&amp;合规性**。 
->>>>>>> master
     
 3. 安全中&amp;合规性中心中，转到**权限**。
     
@@ -57,7 +53,7 @@ ms.locfileid: "23013796"
     
 7. 单击**保存**以保存对角色组的更改。 
     
-### <a name="how-do-you-know-this-worked"></a>您如何知道操作成功？
+### <a name="how-do-you-know-this-worked"></a>如何判断是否生效？
 
 1. 安全中&amp;合规性中心中，转到**权限**。
     
@@ -84,7 +80,7 @@ ms.locfileid: "23013796"
     
 有关语法和参数的详细信息，请参阅[Add-rolegroupmember](https://go.microsoft.com/fwlink/p/?LinkId=510859)。
   
-### <a name="how-do-you-know-this-worked"></a>您如何知道操作成功？
+### <a name="how-do-you-know-this-worked"></a>如何判断是否生效？
 
 若要验证您是否已提供的用户访问到安全&amp;合规性中心使用**Get-rolegroupmember** cmdlet 可以查看组织管理角色组中，成员下面的示例中所示。 
   
