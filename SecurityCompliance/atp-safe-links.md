@@ -19,20 +19,22 @@ search.appverid:
 - ZWD160
 ms.assetid: dd6a1fef-ec4a-4cf4-a25a-bb591c5811e3
 description: 安全链接功能提供的超链接中 Office 文档和电子邮件中的时间的单击验证。使用安全的链接可从网络钓鱼和其他攻击保护您的组织。
-ms.openlocfilehash: 9199c69d73a1585d76181c7a5feba79e465289db
-ms.sourcegitcommit: e14dec9bed0c0009acbc1f1cb80b4d0794ad5739
+ms.openlocfilehash: 75703cbe6b6a5a5d102570288bb20e6814d095fc
+ms.sourcegitcommit: 099bbfb1d16b251fd5cf18ec6515faaf9a989176
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/05/2018
-ms.locfileid: "25435109"
+ms.lasthandoff: 10/09/2018
+ms.locfileid: "25454369"
 ---
 # <a name="office-365-atp-safe-links"></a>Office 365 ATP 安全链接
+
+## <a name="overview-of-office-365-atp-safe-links"></a>Overview of Office 365 ATP 安全链接
 
 Office 365 ATP 安全链接 （ATP 安全链接） （以及[Office 365 ATP 安全附件](atp-safe-attachments.md)） 是一套安全功能的[Office 365 高级威胁保护](office-365-atp.md)企业组织的一部分提供。ATP 安全链接可帮助保护您的组织提供的[电子邮件](#how-atp-safe-links-works-with-email)和[Office 文档](#how-atp-safe-links-works-with-office-documents)中的 web 地址 (Url) 的时间的单击验证。保护通过[ATP 安全链接策略](set-up-atp-safe-links-policies.md)设置您的 Office 365 安全工作组的定义。 
   
 位置 ATP 安全链接策略后，Office 365 全局管理员、 安全管理员和安全读者可以[用于高级威胁保护查看报告](view-reports-for-atp.md)。这些报告中的信息可帮助您采取进一步措施保护您的组织或调查安全事件的安全团队。
          
-## <a name="how-atp-safe-links-works-with-email"></a>电子邮件时，ATP 安全链接的工作方式
+### <a name="how-atp-safe-links-works-with-urls-in-email"></a>ATP 安全链接如何处理电子邮件中的 Url
 
 在高级别，下面是 ATP 安全链接保护的工作原理 Url 的电子邮件 （托管在 Office 365 中，不在本地） 中：
   
@@ -58,7 +60,7 @@ Office 365 ATP 安全链接 （ATP 安全链接） （以及[Office 365 ATP 安�
     
     - 如果 URL 确定为安全起见，打开网站。
     
-## <a name="how-atp-safe-links-works-with-office-documents"></a>Office 文档时，ATP 安全链接的工作方式
+### <a name="how-atp-safe-links-works-with-urls-in-office-documents"></a>ATP 安全链接如何处理在 Office 文档中的 Url
 
 在高级别，下面是 ATP 安全链接保护的工作原理 Url 的 Office 365 ProPlus 应用程序 （当前版本的 Word、 Excel 和 PowerPoint 在 Windows 或 Mac 上 iOS 或 Android 设备，在 Windows、 OneNote Online 和 Office Online 上的 Visio 的 Office 应用程序上） 中：
   
@@ -78,25 +80,9 @@ Office 365 ATP 安全链接 （ATP 安全链接） （以及[Office 365 ATP 安�
     
   - 如果认为 URL 是安全的用户将转到网站。
 
-## <a name="new-features-added-to-atp-safe-links"></a>新功能添加到 ATP 安全链接
-
-我们将继续向 ATP 安全链接添加新功能。以下是几个示例：
-  
-- 从开始后期年 10 月 2017年，ATP 安全链接保护扩展到 Url 为 Url 或电子邮件中 Office 365 ProPlus 的文档，如 Word、 Excel、 PowerPoint 和 Visio 中对应用 Windows，以及 Office iOS 和 Android 设备上的应用程序。（请确保您使用的[Office 现代身份验证](https://docs.microsoft.com/office365/enterprise/modern-auth-for-office-2013-and-2016)。）
-    
-- 从开始年 3 月 2018年，被扩展 ATP 安全链接保护应用于组织内的人员之间发送的电子邮件。（请确保[查看](set-up-atp-safe-links-policies.md)和编辑 ATP 安全链接策略。）
-
-- 年 6 月 2018，当用户使用 Outlook Web 应用程序 (OWA)，在开始 ATP 安全链接呈现原始 Url，并不显示重写的 Url。这样用户电子邮件中查看原始的链接。（我们调用此本机链接 visbility）。
-
-- 年 9 月 2018年中的开始、 [Office 365 ATP 警告页](atp-safe-links-warning-pages.md)功能新的配色方案、 更多详细信息，和以继续前进到尽管网站的功能在给定警告和建议。 
-  
-- 开始在 2018年的第二部分中，ATP 安全链接被扩展保护于 Url 的 Office Online （Word Online、 Excel Online、 PowerPoint Online 和 OneNote 联机） 和 Office 365 ProPlus 上 mac。（请确保[查看](set-up-atp-safe-links-policies.md)和编辑 ATP 安全链接策略。）
-   
-- 从开始后期 2018年，本机链接可见性是 Outlook 中可用。无论使用 OWA 或 Outlook，用户能够在电子邮件，查看原始 Url (不重写 Url)。
-    
 ## <a name="how-to-get-atp-safe-links-protection"></a>如何获取 ATP 安全链接保护
 
-ATP 安全链接功能是[高级威胁保护](office-365-atp.md)，包括在 Office 365 企业 E5 的一部分。如果您的组织使用的另一个 Office 365 企业版订阅，高级威胁保护可以作为加载项进行购买。有关详细信息，请参阅[Office 365 平台服务说明： Office 365 安全性&amp;合规性中心](https://technet.microsoft.com/en-us/library/dn933793.aspx)和[购买或编辑企业的 Office 365 的加载项](https://support.office.com/article/4e7b57d6-b93b-457d-aecd-0ea58bff07a6)。
+ATP 安全链接功能是[高级威胁保护](office-365-atp.md)，它包含 Office 365 企业 E5、 Microsoft 365 业务和 Microsoft 365 Enterprise 的一部分。如果您的组织使用的另一个 Office 365 企业版订阅，高级威胁保护可以作为加载项进行购买。有关详细信息，请参阅[Office 365 平台服务说明： Office 365 安全性&amp;合规性中心](https://technet.microsoft.com/en-us/library/dn933793.aspx)和[购买或编辑企业的 Office 365 的加载项](https://support.office.com/article/4e7b57d6-b93b-457d-aecd-0ea58bff07a6)。
   
 ATP 安全链接功能处于活动状态时：
   
@@ -108,21 +94,36 @@ ATP 安全链接功能处于活动状态时：
     
 - **贵组织的电子邮件托管 Office 365 中**，不在内部部署服务器。 
     
-## <a name="make-sure-atp-safe-links-protection-is-in-place"></a>请确保 ATP 安全链接保护就地
+### <a name="how-to-make-sure-atp-safe-links-protection-is-in-place"></a>如何使确保 ATP 安全链接保护已就绪
 
-请参阅如何使用 ATP 安全链接保护运行您的组织的一个好办法是通过[查看高级威胁保护报告](view-reports-for-atp.md)。此外，作为全局或安全管理员，请务必查看您的[ATP 安全链接策略](set-up-atp-safe-links-policies.md)。ATP 安全链接策略确定是否保护适用于电子邮件中的超链接，或 Url 以及 Office 文档中。
+请参阅如何使用 ATP 安全链接保护运行您的组织的一个好办法是通过[查看高级威胁保护报告](view-reports-for-atp.md)。此外，作为全局管理员或 security 管理员程序，请务必查看您的[ATP 安全链接策略](set-up-atp-safe-links-policies.md)。ATP 安全链接策略确定是否保护适用于电子邮件中的超链接，或 Url 以及 Office 文档中。
 
-## <a name="example-scenarios-where-atp-safe-links-protection-might-or-might-not-be-in-place"></a>示例方案 ATP 安全链接保护可能或可能不是就地的位置
+### <a name="example-scenarios-where-atp-safe-links-protection-might-or-might-not-be-in-place"></a>示例方案 ATP 安全链接保护可能或可能不是就地的位置
   
 下表介绍了一些示例方案 ATP 安全链接保护可能或可能不是就地的位置。（在所有这些情况下，我们假定组织具有 Office 365 企业 E5。）
   
 |**示例应用场景**|**ATP 安全链接保护不适用于这种情况下？**|
 |:-----|:-----|
-|Jean 是组的具有 ATP 安全链接策略涵盖电子邮件和 Office 文档中的 Url 的成员。Jean 某人发送 PowerPoint 2016 中打开一个演示文稿，然后单击演示文稿中的 URL。  <br/> |是的。定义 ATP 安全链接策略应用于 Jean 的组、 Jean 的电子邮件、 Word、 Excel、 PowerPoint 或 Visio 文档 Jean 打开，只要 Jean 登录，并在 Windows、 iOS 或 Android 设备上使用 Office 365 ProPlus。  <br/> |
+|Jean 是组的具有 ATP 安全链接策略涵盖电子邮件和 Office 文档中的 Url 的成员。Jean 某人发送，打开 PowerPoint 演示文稿，然后单击演示文稿中的 URL。  <br/> |是的。定义 ATP 安全链接策略应用于 Jean 的组、 Jean 的电子邮件、 Word、 Excel、 PowerPoint 或 Visio 文档 Jean 打开，只要 Jean 登录，并在 Windows、 iOS 或 Android 设备上使用 Office 365 ProPlus。  <br/> |
 |Chris 的组织，不全局或安全管理员具有尚未定义任何 ATP 安全链接策略。Chris 接收的电子邮件包含恶意网站的 URL。Chris 不知道是恶意 URL，并单击的链接。  <br/> |不。为了保护，以准备就绪，必须定义默认策略，以涵盖的组织中的每个人的 Url。  <br/> |
 |在 Pat 组织，不全局或安全管理员定义或者尚未编辑 ATP 安全链接的任何策略。Pat 打开 Word 文档，并单击该文件中的 URL。  <br/> |为了保护，以准备就绪，必须定义否。 A 策略，其中包括 Office 文档。请参阅[Office 365 中的安全链接 ATP 策略设置](set-up-atp-safe-links-policies.md)。<br/> |
 |李的组织具有 ATP 安全链接策略已`http://tailspintoys.com`列为被阻止的网站。李接收电子邮件包含 URL 的`http://tailspintoys.com/aboutus/trythispage`。李单击的 URL。<br/> |这取决于整个网站及其所有及其子页都包含在列表中是否阻止 Url。请参阅[设置自定义阻止 Url 列表使用 ATP 安全链接](set-up-a-custom-blocked-urls-list-wtih-atp.md)。<br/> |
 |晓明，Jean 的同事，将电子邮件发送到 Jean，不知道电子邮件包含恶意的 URL。  <br/> |这取决于是否为在组织中发送电子邮件定义 ATP 安全链接策略。请参阅[Office 365 中的安全链接 ATP 策略设置](set-up-atp-safe-links-policies.md)。<br/> |
+
+## <a name="new-features-are-continually-being-added-to-atp-safe-links"></a>ATP 安全链接到不断添加了新功能
+
+我们将继续向 ATP 安全链接添加新功能。有时，一种新功能调用 ATP 安全链接策略必须经过审核和更新。以下是几个示例：
+  
+- 从开始后期年 10 月 2017年，ATP 安全链接保护扩展到 Url 为 Url 或电子邮件中 Office 365 ProPlus 的文档，如 Word、 Excel、 PowerPoint 和 Visio 中对应用 Windows，以及 Office iOS 和 Android 设备上的应用程序。（请确保您使用的[Office 现代身份验证](https://docs.microsoft.com/office365/enterprise/modern-auth-for-office-2013-and-2016)。）
+    
+- 从开始年 3 月 2018年，被扩展 ATP 安全链接保护应用于组织内的人员之间发送的电子邮件。（请确保[查看](set-up-atp-safe-links-policies.md)和编辑 ATP 安全链接策略。）
+ 
+- 开始在 2018年的第二部分中，ATP 安全链接被扩展保护于 Url 的 Office Online （Word Online、 Excel Online、 PowerPoint Online 和 OneNote 联机） 和 Office 365 ProPlus 上 mac。（请确保[查看](set-up-atp-safe-links-policies.md)和编辑 ATP 安全链接策略。）
+
+- 年 9 月 2018年中的开始、 [Office 365 ATP 警告页](atp-safe-links-warning-pages.md)功能新的配色方案、 更多详细信息，和以继续前进到尽管网站的功能在给定警告和建议。 
+ 
+- 开始在年 10 月 2018年以及推出通过下的几个月，当用户正在使用 Outlook Web 应用程序 (OWA) 或 Outlook、 ATP 安全链接不呈现原始 Url 重写 Url。（我们调用此本机链接可见性）。
+
    
 ## <a name="related-topics"></a>相关主题
 

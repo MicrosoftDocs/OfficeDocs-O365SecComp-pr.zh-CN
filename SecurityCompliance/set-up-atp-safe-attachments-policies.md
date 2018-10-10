@@ -3,7 +3,6 @@ title: 设置 Office 365 ATP 安全附件策略
 ms.author: deniseb
 author: denisebmsft
 manager: laurawi
-ms.date: 5/8/2018
 ms.audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -13,12 +12,12 @@ search.appverid:
 - MOE150
 ms.assetid: 078eb946-819a-4e13-8673-fe0c0ad3a775
 description: 定义附件安全策略，以从电子邮件中的恶意文件保护您的组织。
-ms.openlocfilehash: bc52522a45071776835efe20f57cf37c415d2436
-ms.sourcegitcommit: 9826013c3e0532ae5d01b3d88a14691f8dd0f6b7
+ms.openlocfilehash: c57f9320c7cd2b8b75bc2dc58d1f72ce136acbb6
+ms.sourcegitcommit: 099bbfb1d16b251fd5cf18ec6515faaf9a989176
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/27/2018
-ms.locfileid: "25092938"
+ms.lasthandoff: 10/09/2018
+ms.locfileid: "25454279"
 ---
 # <a name="set-up-office-365-atp-safe-attachments-policies"></a>设置 Office 365 ATP 安全附件策略
 
@@ -43,9 +42,6 @@ ms.locfileid: "25092938"
 - 允许最多 30 分钟的新的或更新策略传播到所有 Office 365 数据中心。
     
 ## <a name="step-2-set-up-or-edit-an-atp-safe-attachments-policy"></a>步骤 2： 设置 （或编辑） ATP 安全附件策略
-
-> [!TIP]
-> 您可以设置 ATP 安全附件策略使用 Office 365 安全性&amp;合规性中心或 Exchange 管理员中心 (EAC)。**我们建议使用 Office 365 安全性&amp;合规性中心**。 
   
 1. 以全局管理员或 security 管理员程序中，转到[https://protection.office.com](https://protection.office.com)和使用工作或学校帐户登录。 
     

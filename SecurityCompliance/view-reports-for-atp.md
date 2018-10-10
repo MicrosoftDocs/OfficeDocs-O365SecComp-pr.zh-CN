@@ -12,20 +12,20 @@ search.appverid:
 - MOE150
 ms.assetid: e47e838c-d99e-4c0b-b9aa-e66c4fae902f
 description: 了解如何查找和使用适用于 Office 365 高级威胁保护安全中报告&amp;合规性中心。
-ms.openlocfilehash: 13b2a4c142a223a8a912c9017b6033b0b5a1548b
-ms.sourcegitcommit: e7b87fae103a858981bdbcdf7ec55afa4751ad05
+ms.openlocfilehash: 4a76c6a5b888142dc4c35af432fa61916145d648
+ms.sourcegitcommit: 099bbfb1d16b251fd5cf18ec6515faaf9a989176
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2018
-ms.locfileid: "23782109"
+ms.lasthandoff: 10/09/2018
+ms.locfileid: "25454299"
 ---
 # <a name="view-reports-for-office-365-advanced-threat-protection"></a>Office 365 高级威胁保护的视图报告
 
-如果您的组织具有[Office 365 高级威胁保护](office-365-atp.md)(ATP)，并且您所需的权限，可以使用中安全性的几个 ATP 报表&amp;合规性中心。(请转到**报告** \> **仪表板**。)
+如果您的组织具有[Office 365 高级威胁保护](office-365-atp.md)(ATP)，并且您[所需的权限](#what-permissions-are-needed-to-view-these-reports)，可以使用中安全性的几个 ATP 报表&amp;合规性中心。(请转到**报告** \> **仪表板**。)
   
 ![安全&amp;合规性中心仪表板可帮助您看到正常高级威胁保护](media/6b213d34-adbb-44af-8549-be9a7e2db087.png)
   
-ATP 报告包括威胁保护状态报告、 ATP 文件类型报表和 ATP 消息处置报告。本文介绍 ATP 报告，并包括指向其他报告以查看。
+ATP 报告包括[威胁保护状态报告](#threat-protection-status-report)、 [ATP 文件类型报告](#atp-file-types-report)和[ATP 消息处置报告](#atp-message-disposition-report)。本文介绍 ATP 报告，并包括指向[其他报告以查看](#additional-reports-to-view)。
   
 ## <a name="threat-protection-status-report"></a>威胁保护状态报告
 
@@ -77,9 +77,9 @@ ATP 报告包括威胁保护状态报告、 ATP 文件类型报表和 ATP 消息
   
 如果您的组织具有[Office 365 威胁智能](office-365-ti.md)，也可以[使用资源管理器中的安全中&amp;合规性中心](use-explorer-in-security-and-compliance.md)。
   
-## <a name="what-permissions-are-needed-to-view-these-reports"></a>查看这些报告需要哪些权限？
+## <a name="what-permissions-are-needed-to-view-the-atp-reports"></a>查看 ATP 报告需要哪些权限？
 
-为了查看和使用本文中所述的电子邮件安全报告，您必须具有安全中分配相应角色&amp;合规性中心和 Exchange Admin Center。
+为了查看和使用本文中所述的报告，您必须具有安全中分配相应角色&amp;合规性中心和 Exchange Admin Center。
   
 |**角色组**|**其中分配**|**了解更多**|
 |:-----|:-----|:-----|

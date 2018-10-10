@@ -3,7 +3,6 @@ title: 适用于 SharePoint、OneDrive 和 Microsoft Teams 的 Office 365 ATP
 ms.author: deniseb
 author: denisebmsft
 manager: laurawi
-ms.date: 6/18/2018
 ms.audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -13,21 +12,20 @@ search.appverid:
 - MOE150
 ms.assetid: 26261670-db33-4c53-b125-af0662c34607
 description: 将 Office 365 高级威胁保护扩展到 SharePoint Online、 OneDrive for Business 和 Microsoft 团队进行更安全协作为您的组织中的文件。
-ms.openlocfilehash: ea1c77273be70ce27f60bfaeae3544d605553a32
-ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+ms.openlocfilehash: ff07d88a150d3f059681556feec9a5e89b5875a8
+ms.sourcegitcommit: 099bbfb1d16b251fd5cf18ec6515faaf9a989176
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22525827"
+ms.lasthandoff: 10/09/2018
+ms.locfileid: "25454319"
 ---
 # <a name="office-365-atp-for-sharepoint-onedrive-and-microsoft-teams"></a>适用于 SharePoint、OneDrive 和 Microsoft Teams 的 Office 365 ATP
 
-定期人员共享文件和协作使用 SharePoint、 OneDrive 和 Microsoft 团队。与[Office 365 高级威胁保护](office-365-atp.md)(ATP)，您的组织可以更安全的方式进行协作。ATP 有助于检测和阻止的工作组网站和文档库中标识为恶意文件。阅读这篇文章，获取 SharePoint Online、 OneDrive for Business 和 Microsoft 团队 ATP 概述，然后中执行下一步步骤。 
+## <a name="overview-of-office-365-atp-for-sharepoint-onedrive-and-microsoft-teams"></a>Office 365 ATP SharePoint、 OneDrive 和 Microsoft 团队的概述
+
+定期人员共享文件和协作使用 SharePoint、 OneDrive 和 Microsoft 团队。与[Office 365 高级威胁保护](office-365-atp.md)(ATP)，您的组织可以更安全的方式进行协作。ATP 有助于检测和阻止的工作组网站和文档库中标识为恶意文件。  
   
-> [!TIP]
-> 若要执行本文中描述的任务，您必须是 Office 365 全局管理员或安全管理员。请参阅[Permissions in Office 365 安全性&amp;合规性中心](permissions-in-the-security-and-compliance-center.md)。 
-  
-## <a name="how-it-works"></a>如何工作
+### <a name="how-it-works"></a>如何工作
 
 当 SharePoint Online 中的文件时，OneDrive for Business 和 Microsoft 团队被标识为恶意，ATP 直接与锁定该文件的文件存储集成。下图显示了在库中检测到恶意文件的示例。
   
@@ -46,6 +44,8 @@ ms.locfileid: "22525827"
 ### <a name="keep-the-following-points-in-mind"></a>请记住以下几点
 
 - ATP 将不扫描业务，或 Microsoft 团队的 SharePoint Online、 OneDrive 中的每个文件。这是设计。通过使用共享和来宾活动事件，以及智能启发和威胁信号标识恶意文件的过程以异步方式，扫描文件。
+
+- 请确保您的 SharePoint 网站配置为使用[现代体验](https://docs.microsoft.com/sharepoint/guide-to-sharepoint-modern-experience)。当文件被标识为恶意和被阻止时，用户可以看到的现代的体验，但不是经典视图中已发生此。ATP 保护适用是使用现代体验还是经典视图;但是，文件被阻止的可视指示器中存在仅现代的体验。
     
 - 标识为恶意 SharePoint Online 中的文件，OneDrive for Business 或 Microsoft 团队会显示在[Office 365 高级威胁保护报告](view-reports-for-atp.md)和威胁资源管理器 （ [Office 365 威胁智能](office-365-ti.md)的一部分）。
     
@@ -53,11 +53,11 @@ ms.locfileid: "22525827"
     
 - SharePoint Online 管理员可以确定是否启用人员下载检测为恶意的文件。这通过运行 Set-spotenant PowerShell cmdlet 使用 DisallowInfectedFileDownload 参数 （请参阅[打开 SharePoint、 OneDrive 和 Microsoft 团队的 Office 365 ATP](turn-on-atp-for-spo-odb-and-teams.md)）。
     
-## <a name="new-quarantine-in-atp-for-sharepoint-online-onedrive-for-business-and-microsoft-teams"></a>（新） ！联机隔离 ATP for SharePoint、 OneDrive for Business 和 Microsoft 团队
+## <a name="quarantine-in-atp-for-sharepoint-online-onedrive-for-business-and-microsoft-teams"></a>联机隔离 ATP for SharePoint、 OneDrive for Business 和 Microsoft 团队
 
- * * 在后期年 5 月 2018 安全中[隔离](quarantine-email-messages.md)功能开始&amp;合规性中心将正在扩展到 ATP for SharePoint Online，OneDrive for Business 和 Microsoft 团队。 **
+ 开始在后期年 5 月 2018 安全中[隔离](quarantine-email-messages.md)功能&amp;合规性中心将正在扩展到 ATP for SharePoint Online，OneDrive for Business 和 Microsoft 团队。
   
-当 SharePoint Online 中的文件时，OneDrive for Business 或 Microsoft 团队被标识为恶意，除了 ATP 阻止中打开或共享的文件，该文件包含的隔离项目列表中。(安全中&amp;合规性中心中，转到**威胁管理** \> **审阅** \> **隔离**和内容筛选器。) 
+当 SharePoint Online 中的文件时，OneDrive for Business 或 Microsoft 团队被标识为恶意，除了 ATP 阻止中打开或共享的文件，该文件包含的隔离项目列表中。(安全中&amp;合规性中心中，转到**威胁管理** \> **审阅** \> **隔离**和**内容**筛选器。) 
   
 如果您是组织的 Office 365 安全工作组的一部分，并且具有必要[Office 365 安全性分配权限&amp;合规性中心](permissions-in-the-security-and-compliance-center.md)，可以下载、 发布、 报告和删除为恶意 ATP 检测的文件从隔离。
   

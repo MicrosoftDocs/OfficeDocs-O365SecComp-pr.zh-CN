@@ -3,7 +3,6 @@ title: 查看安全中的电子邮件安全报告&amp;合规性中心
 ms.author: deniseb
 author: denisebmsft
 manager: laurawi
-ms.date: 08/06/2018
 ms.audience: ITPro
 ms.topic: article
 ms.service: o365-administration
@@ -13,16 +12,16 @@ search.appverid:
 - MOE150
 ms.assetid: 3a137e28-1174-42d5-99af-f18868b43e86
 description: 了解如何查找和使用电子邮件安全报告为您的组织与 Office 365 企业版。电子邮件安全报告可安全中&amp;合规性中心。
-ms.openlocfilehash: 81716a3ecc506d36c786d53068f7d2cce8a44a9a
-ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+ms.openlocfilehash: 0dd0c2ee7090e488d8619e71c6e4931f1934e9b0
+ms.sourcegitcommit: 099bbfb1d16b251fd5cf18ec6515faaf9a989176
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22526075"
+ms.lasthandoff: 10/09/2018
+ms.locfileid: "25454339"
 ---
 # <a name="view-email-security-reports-in-the-security-amp-compliance-center"></a>查看安全中的电子邮件安全报告&amp;合规性中心
 
-安全中可用的各种电子邮件安全报告&amp;合规性中心，以帮助您查看 Office 365 中的反垃圾邮件和反恶意软件功能如何保护您的组织。如果您具有所需的权限，则可以安全中查看这些报告&amp;，转到**报告**的合规性中心\>**仪表板**。
+安全中可用的各种电子邮件安全报告&amp;合规性中心，以帮助您查看 Office 365 中的反垃圾邮件和反恶意软件功能如何保护您的组织。如果您拥有[所需的权限](#what-permissions-are-needed-to-view-these-reports)，则可以安全中查看这些报告&amp;，转到**报告**的合规性中心\>**仪表板**。
   
 ![安全&amp;合规性中心仪表板可帮助您看到正常高级威胁保护](media/6b213d34-adbb-44af-8549-be9a7e2db087.png)
   
@@ -186,7 +185,7 @@ ms.locfileid: "22526075"
   
 ## <a name="related-topics"></a>相关主题
 
-[Office 365 电子邮件反垃圾邮件保护](anti-spam-protection.md)
+[Office 365 反垃圾邮件保护](anti-spam-protection.md)
   
 [报告和 Office 365 安全性见解&amp;合规性中心](reports-and-insights-in-security-and-compliance.md)
   
