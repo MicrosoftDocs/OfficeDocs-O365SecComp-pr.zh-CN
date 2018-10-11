@@ -16,12 +16,12 @@ search.appverid:
 ms.custom: ''
 ms.assetid: ''
 description: 此解决方案告诉您哪些最常见计算机安全攻击可能类似于在 Office 365 以及如何对其进行响应
-ms.openlocfilehash: 3b72b9bf8c68df2fcc1233b56ee33eaf45695bfe
-ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+ms.openlocfilehash: d2caea8cc7ceecb18cd477b8a1ff12352d83c3df
+ms.sourcegitcommit: 87a3ca55b6e9cf7e9ccf73e64013dc78dd7660f5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22525820"
+ms.lasthandoff: 10/10/2018
+ms.locfileid: "25494073"
 ---
 # <a name="office-365-security-incident-response"></a>Office 365 安全事件响应
 
@@ -41,9 +41,14 @@ ms.locfileid: "22525820"
 这里检查每月会随着时间的推移添加更多文章。
 
 ## <a name="detect-and-remediate-articles"></a>检测和修正文章
+
 - [检测和修正 Office 365 中的非法授权](detect-and-remediate-illicit-consent-grants.md)
 - [检测并修正 Office 365 中的 Outlook 规则和自定义窗体注入攻击](detect-and-remediate-outlook-rules-forms-attack.md)
  
+## <a name="incident-response-articles"></a>事件响应文章
+
+- [响应 Office 365 中遭到入侵的电子邮件帐户](responding-to-a-compromised-email-account.md)
+
 ## <a name="secure-office-365-like-a-cybersecurity-pro"></a>像网络专业人员的安全保护 Office 365
 Office 365 订阅附带了强大的可用于保护您的数据和用户的安全功能集。 使用[Office 365 安全路线图： Top 优先级的前 30 天，90 天及其他认证实战](https://support.office.com/article/Office-365-security-roadmap-Top-priorities-for-the-first-30-days-90-days-and-beyond-28c86a1c-e4dd-4aad-a2a6-c768a21cb352)实现 Microsoft 建议的用于保护 Office 365 租户的最佳做法。
 - 第一个 30 天内完成的任务。 这些没有直接影响，因此低影响到您的用户。

@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 ms.assetid: ed48d448-3714-4c42-85f5-10f75f6a4278
 description: '将搜索结果导出从 Office 365 安全性内容搜索&amp;合规性中心到本地计算机。Emaill 电子邮件结果导出为 PST 文件。内容来自 SharePoint 和 OneDrive for Business 网站导出为本机 Office 文档。 '
-ms.openlocfilehash: 9b6db129371b234713b5504f5763ee1dc3d7d638
-ms.sourcegitcommit: bf70ec8e11b3f75bf45cd4f760cd1a982593dbad
+ms.openlocfilehash: 739d2c162dac938d593e0b65ebca3bf2101ec469
+ms.sourcegitcommit: 87a3ca55b6e9cf7e9ccf73e64013dc78dd7660f5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/22/2018
-ms.locfileid: "24962958"
+ms.lasthandoff: 10/10/2018
+ms.locfileid: "25494063"
 ---
 # <a name="export-content-search-results-from-the-office-365-security-amp-compliance-center"></a>从 Office 365 安全性导出内容的搜索结果&amp;合规性中心
 
@@ -280,7 +280,7 @@ ms.locfileid: "24962958"
     
     如果您选择要导出的部分索引的项，部分索引的邮箱项目将导出到一个单独的 PST 文件，无论在**导出 Exchange 内容**下选择的选项。
 
-- 如果部分索引的项目返回在搜索结果 （因为与搜索条件匹配的部分索引项目的其他属性），然后使用正则搜索结果导出部分索引。因此，如果您选择要导出的索引的项和部分索引的项目 （通过选择**所有项目，包括具有无法识别的格式，进行加密，或出于其他原因无法编制索引**的导出选项），则部分索引的项目导出使用正则机将列出 Results.csv 报告中。它们将不会在未编制索引的 items.csv 报告中列出。
+- 如果部分索引的项目返回在搜索结果 （因为与搜索条件匹配的部分索引项目的其他属性），然后使用正则搜索结果导出部分索引。因此，如果您选择要导出的索引的项和部分索引的项目 （通过选择**所有项目，包括具有无法识别的格式，进行加密，或出于其他原因无法编制索引**的导出选项），则部分索引的项目导出使用正则结果将列出 Results.csv 报告中。它们将不会在未编制索引的 items.csv 报告中列出。
     
  ### <a name="exporting-individual-messages-or-pst-files"></a>导出单个邮件或 PST 文件
   
