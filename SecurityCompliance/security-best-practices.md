@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 ms.assetid: 9295e396-e53d-49b9-ae9b-0b5828cdedc3
 description: 通过遵循这些建议的最佳实践数据违反或受到攻击的帐户的可能性降到最低。
-ms.openlocfilehash: 245302af0b08a4ee8183345fc386fe47985c93dd
-ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+ms.openlocfilehash: 63bda11afdd1e02e9e12e8c505aca7100c4deade
+ms.sourcegitcommit: a36d2692396786f49c8765c65145e5093578e9a1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22525966"
+ms.lasthandoff: 10/11/2018
+ms.locfileid: "25498088"
 ---
 # <a name="security-best-practices-for-office-365"></a>Office 365 的安全最佳做法
 
@@ -46,7 +46,7 @@ MFA 通过要求用户确认电话呼叫、 短信或其智能电话上正确输
   
 - [规划多因素身份验证的 Office 365 部署](https://support.office.com/article/043807b2-21db-4d5c-b430-c8a6dee0e6ba)
     
-- [设置多因素身份验证的 Office 365 用户](https://support.office.com/article/8f0454b2-f51a-4d9c-bcde-2c48e41621c6)
+- [为 Office 365 用户设置多重身份验证](https://support.office.com/article/8f0454b2-f51a-4d9c-bcde-2c48e41621c6)
     
 ## <a name="use-office-365-cloud-app-security"></a>使用 Office 365 云应用程序安全性
 
@@ -70,9 +70,9 @@ MFA 通过要求用户确认电话呼叫、 短信或其智能电话上正确输
     
 - 若要验证您的组织发送的邮件，并有助于防止欺骗，如果您使用的自定义域名 Office 365 中的组织，将设置 SPF、 DKIM，和 DMARC:
     
-  - [设置 Office 365 为了帮助防止欺骗中的 SPF](https://technet.microsoft.com/en-us/library/dn789058%28v=exchg.150%29.aspx)。
+  - [设置 Office 365 为了帮助防止欺骗中的 SPF](https://docs.microsoft.com/office365/SecurityCompliance/set-up-spf-in-office-365-to-help-prevent-spoofing)。
     
-  - [使用 DKIM 验证从您在 Office 365 中的自定义域发送出站电子邮件](https://technet.microsoft.com/en-us/library/dn789058%28v=exchg.150%29.aspx)。
+  - [使用 DKIM 验证从您在 Office 365 中的自定义域发送出站电子邮件](https://docs.microsoft.com/office365/SecurityCompliance/set-up-spf-in-office-365-to-help-prevent-spoofing)。
     
   - [使用 DMARC 用于验证 Office 365 中的电子邮件](https://technet.microsoft.com/library/mt734386%28v=exchg.150%29.aspx)。
     

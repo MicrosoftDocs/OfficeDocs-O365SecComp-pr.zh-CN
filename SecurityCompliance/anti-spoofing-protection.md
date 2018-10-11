@@ -12,12 +12,12 @@ search.appverid:
 - MET150
 ms.assetid: d24bb387-c65d-486e-93e7-06a4f1a436c0
 description: 本文介绍如何 Office 365 缓解了对网络钓鱼攻击使用伪造发件人域，即，造假的域。这是通过实现通过分析邮件和阻止的那些类型的值可以是经过 neithe 身份验证通过使用标准电子邮件身份验证方法，也其他发件人信誉方法。实现此更改是为了减少向公开 Office 365 中的组织的网络钓鱼攻击的数。
-ms.openlocfilehash: 37eddfcad9bc5e412f62dd857178eafa8cac9355
-ms.sourcegitcommit: ba2175e394d0cb9f8ede9206aabb44b5b677fa0a
+ms.openlocfilehash: 231f66b094a98363375a68fbddc8b71077b7baa4
+ms.sourcegitcommit: a36d2692396786f49c8765c65145e5093578e9a1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 10/11/2018
-ms.locfileid: "25496896"
+ms.locfileid: "25498108"
 ---
 # <a name="anti-spoofing-protection-in-office-365"></a>Office 365 中的防欺骗保护
 
@@ -55,7 +55,7 @@ Microsoft 的反欺骗技术已最初部署到其组织的 Office 365 企业 E5 
   
 上面的消息未来自 Microsoft，但同时，用户将用来获取网络钓鱼邮件的可能会诱使用户单击的链接和放弃其凭据、 下载恶意软件，或答复邮件包含敏感内容。因为很难告知实际密码重置和一个虚假之间的差异，很多用户忽略这些消息、 将其报告为垃圾邮件，或不必要地邮件后向 Microsoft 报告为错过网络钓鱼诈骗。
     
-若要停止欺骗，电子邮件筛选行业开发了[SPF](https://technet.microsoft.com/en-us/library/dn789058%28v=exchg.150%29.aspx)、 [DKIM](https://technet.microsoft.com/en-us/library/mt695945%28v=exchg.150%29.aspx)，等[DMARC](https://technet.microsoft.com/en-us/library/mt734386%28v=exchg.150%29.aspx)电子邮件身份验证协议。DMARC 阻止欺骗检查邮件的发件人-用户看到其电子邮件客户端中的一个 （在上述示例中，这是 service.outlook.com、 outlook.com 和 accountprotection.microsoft.com）-使用 SPF 或 DKIM 传递的域。即，用户看到的域已经过身份验证，因此不被篡改。有关更全面讨论，请参阅"*了解为什么电子邮件身份验证并不总是足以停止欺骗"* 本文档中的更高版本上。 
+若要停止欺骗，电子邮件筛选行业开发了[SPF](https://docs.microsoft.com/office365/SecurityCompliance/set-up-spf-in-office-365-to-help-prevent-spoofing)、 [DKIM](https://docs.microsoft.com/office365/SecurityCompliance/use-dkim-to-validate-outbound-email)，等[DMARC](https://docs.microsoft.com/office365/SecurityCompliance/use-dmarc-to-validate-email)电子邮件身份验证协议。DMARC 阻止欺骗检查邮件的发件人-用户看到其电子邮件客户端中的一个 （在上述示例中，这是 service.outlook.com、 outlook.com 和 accountprotection.microsoft.com）-使用 SPF 或 DKIM 传递的域。即，用户看到的域已经过身份验证，因此不被篡改。有关更全面讨论，请参阅"*了解为什么电子邮件身份验证并不总是足以停止欺骗"* 本文档中的更高版本上。 
   
 但是，问题在于该记录是可选的不需要的电子邮件身份验证。因此，同时使用强身份验证策略的域 like microsoft.com ヘ skype.com シ シ 术从欺骗的所有发布较弱的身份验证策略或无策略，是正在造假的目标域。从年 3 月 2018年只有 9%的域中财富 500 的公司的发布强的电子邮件身份验证策略。剩余的 91%可能被钓鱼欺骗和除非电子邮件筛选器检测到它使用其他策略可能会传递给最终用户和欺骗它们：
   
@@ -619,11 +619,11 @@ Set-AntiphishPolicy -Identity $name -EnableAntispoofEnforcement $false
 
 如果您是 Office 365 客户，并且您使用 Office 365 发送出站电子邮件：
   
-- 为您的域，[设置 Office 365 为了帮助防止欺骗中的 SPF](https://technet.microsoft.com/en-us/library/dn789058%28v=exchg.150%29.aspx)
+- 为您的域，[设置 Office 365 为了帮助防止欺骗中的 SPF](https://docs.microsoft.com/office365/SecurityCompliance/set-up-spf-in-office-365-to-help-prevent-spoofing)
     
-- 有关主域，[使用 DKIM 验证从您在 Office 365 中的自定义域发送出站电子邮件](https://technet.microsoft.com/en-us/library/mt695945%28v=exchg.150%29.aspx)
+- 有关主域，[使用 DKIM 验证从您在 Office 365 中的自定义域发送出站电子邮件](https://docs.microsoft.com/office365/SecurityCompliance/use-dkim-to-validate-outbound-email)
     
-- [考虑 DMARC 记录设置](https://technet.microsoft.com/en-us/library/mt734386%28v=exchg.150%29.aspx)为您的域以确定您的合法发件人是谁 
+- [考虑 DMARC 记录设置](https://docs.microsoft.com/office365/SecurityCompliance/use-dmarc-to-validate-email)为您的域以确定您的合法发件人是谁 
     
 Microsoft 不提供对每个 SPF、 DKIM，以及 DMARC 详细的实现准则。但是，没有大量联机发布的信息。还有第三方公司专用于帮助组织设置电子邮件身份验证记录。
   
