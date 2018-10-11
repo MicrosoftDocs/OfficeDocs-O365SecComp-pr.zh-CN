@@ -13,12 +13,12 @@ search.appverid:
 - MET150
 ms.assetid: b10023f6-f30f-45d3-b3ad-b71aa4aa0d58
 description: 了解 Office 365 企业版如何帮助保护您的组织针对各种威胁，包括欺骗、 恶意软件、 垃圾邮件、 网络钓鱼诈骗和未经授权的访问数据。
-ms.openlocfilehash: 4534e12280b5e627c2594c0365262a5c7c14a8c4
-ms.sourcegitcommit: 15dfa0c83aa88816c18e30a44a49e36e733d952c
+ms.openlocfilehash: 18e91b3a27ff9722a285a4c84f810876e1cab462
+ms.sourcegitcommit: ba2175e394d0cb9f8ede9206aabb44b5b677fa0a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "24011264"
+ms.lasthandoff: 10/11/2018
+ms.locfileid: "25496846"
 ---
 # <a name="protect-against-threats-in-office-365"></a>Office 365 中的威胁防护
 
@@ -54,7 +54,7 @@ ms.locfileid: "24011264"
     
 - [了解欺骗智能](learn-about-spoof-intelligence.md)
     
-- [设置 ATP 防钓鱼策略](set-up-atp-anti-phishing-policies.md)
+- [设置反钓鱼策略](set-up-anti-phishing-policies.md)
     
 - [设置 ATP 安全链接策略](set-up-atp-safe-links-policies.md)
     

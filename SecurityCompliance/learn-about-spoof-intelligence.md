@@ -3,7 +3,7 @@ title: 了解有关欺骗智能的详情
 ms.author: krowley
 author: kccross
 manager: laurawi
-ms.date: 3/14/2018
+ms.date: 10/11/2018
 ms.audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -13,12 +13,12 @@ search.appverid:
 - MET150
 ms.assetid: 978c3173-3578-4286-aaf4-8a10951978bf
 description: 在安全中使用欺骗智能&amp;反垃圾邮件设置页上的合规性中心以查看所有发件人是欺骗属于您的组织，或者是域或欺骗外部域。欺骗智能是作为 Office 365 企业 E5 的一部分或单独高级威胁保护和 Exchange Online Protection 的一部分。
-ms.openlocfilehash: 3be606c05dde4a13d3a6a4a43ce927cf4f0ca53c
-ms.sourcegitcommit: 176ce86e2b440c079414fe99d4b0b9e89ccebb40
+ms.openlocfilehash: 74fc1b3dd6fddd91a27785adcab111a02d8ba088
+ms.sourcegitcommit: ba2175e394d0cb9f8ede9206aabb44b5b677fa0a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 10/11/2018
-ms.locfileid: "25496553"
+ms.locfileid: "25496836"
 ---
 # <a name="learn-more-about-spoof-intelligence"></a>了解有关欺骗智能的详情
 
@@ -58,7 +58,7 @@ Office 365，始终强制实施欺骗智能策略设置。您不能禁用，但�
 |**参数**|**说明**|
 |:-----|:-----|
 |Sender  <br/> |也称为 true 发件人。这通常是源自欺骗电子邮件的域。Office 365 确定指针欺骗贵组织的发送 IP 地址 (PTR) DNS 记录的域。如果不找到任何域，则此报表显示发件人的 IP 地址。  <br/> |
-|带欺骗性的用户  <br/> |正在造假发件人的用户帐户。  <br/> 仅限**内部**标签。此字段包含单个电子邮件地址，或如果发件人欺骗多个用户帐户，它包含**多个**。<br/> 仅**外部**选项卡。外部域仅包含一个发送的域，并且不包含的完整电子邮件地址。<br/> > [!TIP]> **的高级 admins。** 带欺骗性的用户是从也是邮件客户端显示为发件人地址的地址 (5322.From) 地址。有时称为 header.from 地址。通过 SPF 不检查此地址此有效性。           |
+|带欺骗性的用户  <br/> |正在造假发件人的用户帐户。  <br/> 仅限**内部**标签。此字段包含单个电子邮件地址，或如果发件人欺骗多个用户帐户，它包含**多个**。<br/> 仅**外部**选项卡。外部域仅包含一个发送的域，并且不包含的完整电子邮件地址。<br/> **提示 ！对于高级管理员。** 带欺骗性的用户是从也是邮件客户端显示为发件人地址的地址 (5322.From) 地址。有时称为 header.from 地址。通过 SPF 不检查此地址的有效性。           |
 |消息的数目  <br/> |发件人发送到您的组织代表标识欺骗发件人的发件人在最近 30 天内的邮件数。  <br/> |
 |用户抱怨的数目  <br/> |最近 30 天内对此发件人与用户的用户字段的投诉。投诉通常是垃圾邮件向 Microsoft 提交的窗体中。  <br/> |
 |身份验证结果  <br/> |此值是**传递**如果发件人通过 Exchange Online Protection (EOP) 发件人的身份验证检查，如 SPF 或 DKIM，**失败**如果发件人失败 EOP 发件人的身份验证检查，或**未知**，如果不是这些检查的结果已知。  <br/> |
@@ -73,31 +73,31 @@ Office 365，始终强制实施欺骗智能策略设置。您不能禁用，但�
     
 2. 使用您的工作或学校帐户登录到 Office 365。Office 365 组织中，您的帐户必须具有管理员凭据。
     
-3. 安全中&amp;合规性中心中，展开**威胁管理** \> **策略** \> **反垃圾邮件**。
+3. 安全中&amp;合规性中心中，展开**威胁管理** \> **策略** \> **反垃圾邮件**。  
   
-![](media/0a098e68-5ecf-40d7-984f-d15fcc1f958d.jpg)
+    ![显示访问反垃圾邮件页的屏幕截图](media/0a098e68-5ecf-40d7-984f-d15fcc1f958d.jpg)
   
-4. 在右窗格中**反垃圾邮件设置**页上，选择**自定义**选项卡，，然后向下滚动，并展开**欺骗智能策略**。 
+4. 在右窗格中**反垃圾邮件设置**页上，选择**自定义**选项卡，，然后向下滚动，并展开**欺骗智能策略**。  
   
-![](media/a5112100-0b37-460f-932d-5b2f98157871.jpg)
+    ![显示访问的反垃圾邮件的自定义设置的屏幕截图](media/a5112100-0b37-460f-932d-5b2f98157871.jpg)
   
-5. 若要查看发件人欺骗您的域的列表，请选择**查看新的发件人**，并选择 * * Your 域 * * 选项卡。 
+5. 若要查看发件人欺骗您的域的列表，请选择**查看新的发件人**，并选择**您的域**选项卡。 
     
-    如果您已审查发件人，并且想要更改的一些您以前的选择，则可以选择**我已检查我的状态显示发件人**。在任一情况下，将显示以下窗格。 
+    如果您已审查发件人，并且想要更改的一些您以前的选择，则可以选择**我已检查我的状态显示发件人**。在任一情况下，将显示以下窗格。  
   
-![](media/c0c062fd-f4a4-4d78-96f7-2c22009052bb.jpg)
+    ![显示访问欺骗发件人选项卡的屏幕截图](media/c0c062fd-f4a4-4d78-96f7-2c22009052bb.jpg)
   
-每个欺骗的用户显示在单独的行，以便您可以选择是否允许或阻止发件人从分别欺骗每个用户。
+    每个欺骗的用户显示在单独的行，以便您可以选择是否允许或阻止发件人从分别欺骗每个用户。  
   
-将发件人添加到允许列表中的用户，请从**允许欺骗**列中选择**是**。将发件人添加到阻止列表中的用户，选择**否**。
+    将发件人添加到允许列表中的用户，请从**允许欺骗**列中选择**是**。将发件人添加到阻止列表中的用户，选择**否**。
+     
+    若要将域的策略设置不属于您，选择**外部域**选项卡更改任何发件人为**是****允许欺骗**该列允许的发件人发送到您的组织的未经身份验证的电子邮件中。或者，如果您认为 Office 365 中允许发件人发送带欺骗性的电子邮件已错误，更改为**否****允许欺骗**列。  
   
-若要将域的策略设置不属于您，选择**外部域**选项卡更改任何发件人为**是****允许欺骗**该列允许的发件人发送到您的组织的未经身份验证的电子邮件中。或者，如果您认为 Office 365 中允许发件人发送带欺骗性的电子邮件已错误，更改为**否****允许欺骗**列。 
-  
-![](media/5dbef9cf-103f-49cd-9638-4b0083d6baa7.jpg)
+    ![显示是否允许发件人欺骗的屏幕截图](media/5dbef9cf-103f-49cd-9638-4b0083d6baa7.jpg)
   
 6. 选择**保存**以保存更改。 
 
-如果您是 E5 或 ATP 客户，您还可以管理发件人在伪造通过[欺骗智能洞察](https://docs.microsoft.com/en-us/office365/securitycompliance/walkthrough-spoof-intelligence-insight)域
+如果您拥有 Office 365 企业 E5 订阅或单独购买作为高级威胁保护，您还可以管理发件人在伪造通过[欺骗智能洞察](https://docs.microsoft.com/en-us/office365/securitycompliance/walkthrough-spoof-intelligence-insight)域。
     
 ## <a name="configuring-the-anti-spoofing-policy"></a>配置反欺骗策略
 <a name="Managespooflist"> </a>
@@ -122,15 +122,15 @@ Office 365 包括默认反欺骗保护始终运行。此默认保护不安全中
     
 5. 在页面上出现在**欺骗**行中，选择**编辑**。 
     
-6. 接下来，配置邮件被检测为跨域欺骗时要采取的操作。默认行为是将邮件移动到收件人的垃圾邮件文件夹。其他选项是将邮件发送到隔离邮箱。有关管理邮件发送到隔离邮件的详细信息，请参阅[Office 365 中的隔离电子邮件](quarantine-email-messages.md)。
+6. 接下来，配置邮件被检测为跨域欺骗时要采取的操作。默认行为是将邮件移动到收件人的垃圾邮件文件夹。其他选项是将邮件发送到隔离邮箱。有关管理邮件发送到隔离邮件的详细信息，请参阅[Office 365 中的隔离电子邮件](quarantine-email-messages.md)。  
   
-![](media/7a868dff-2c4b-46b9-88ca-f2d523ca2307.jpg)(
+    ![屏幕截图显示反欺骗策略编辑选项](media/7a868dff-2c4b-46b9-88ca-f2d523ca2307.jpg)
   
-7. 选择是否启用或禁用反欺骗安全提示。Office 365 建议以便它们发件人无法验证其标识与交互时警告用户启用的**身份验证失败**安全提示。Office 365 还建议的安全提示启用较小用户组的**身份验证软传递**因为此安全提示可能会产生大量的警告，如果用户从多合法的但未经过身份验证源接收电子邮件。 
+7. 选择是否启用或禁用反欺骗安全提示。Office 365 建议以便它们发件人无法验证其标识与交互时警告用户启用的**身份验证失败**安全提示。Office 365 还建议的安全提示启用较小用户组的**身份验证软传递**因为此安全提示可能会产生大量的警告，如果用户从多合法的但未经过身份验证源接收电子邮件。  
   
-![](media/1ed675c0-48c2-4587-a957-60eb68dc9628.jpg)
-  
-做出选择，然后选择**保存**。 
+    ![显示反欺骗安全提示选项的屏幕截图](media/1ed675c0-48c2-4587-a957-60eb68dc9628.jpg)
+
+8. 做出选择，然后选择**保存**。 
     
 ## <a name="other-ways-to-manage-spoofing-and-phishing-with-office-365"></a>管理欺骗和网页仿冒与 Office 365 的其他方法
 <a name="Managespooflist"> </a>
@@ -139,14 +139,14 @@ Office 365 包括默认反欺骗保护始终运行。此默认保护不安全中
   
 - 检查 Exchange Online Protection 欺骗邮件报告为您例程的一部分。您可以使用此报告通常以查看并帮助管理欺骗发件人。有关信息，请参阅中[使用邮件保护报告查看关于恶意软件、 垃圾邮件和规则检测的数据的 Office 365 中](https://technet.microsoft.com/library/dn500744%28v=exchg.150%29.aspx)的**欺骗邮件报告**。
     
-- 对于更高级的 Office 365 管理员：
+对于更高级的 Office 365 管理员，您还可以完成这些检查：
     
-  - 查看您的发件人策略框架 (SPF) 配置。快速了解到 SPF 并获取快速配置，请参阅[Set up Office 365 为了帮助防止欺骗中的 SPF](https://technet.microsoft.com/library/dn789058%28v=exchg.150%29.aspx)。Office 365 如何使用 SPF，更深入地了解或故障排除或非标准部署如混合部署，启动与[Office 365 如何使用发件人策略框架 (SPF) 以防止欺骗](https://technet.microsoft.com/library/mt712724%28v=exchg.150%29.aspx)。
+- 查看您的发件人策略框架 (SPF) 配置。快速了解到 SPF 并获取快速配置，请参阅[Set up Office 365 为了帮助防止欺骗中的 SPF](https://technet.microsoft.com/library/dn789058%28v=exchg.150%29.aspx)。Office 365 如何使用 SPF，更深入地了解或故障排除或非标准部署如混合部署，启动与[Office 365 如何使用发件人策略框架 (SPF) 以防止欺骗](https://technet.microsoft.com/library/mt712724%28v=exchg.150%29.aspx)。
     
-  - 查看您的域密钥标识邮件 (DKIM) 配置。应使用 DKIM 除了 SPF 和 DMARC 为了帮助防止伪造者从发送看起来来自您的域的邮件。DKIM，可以将数字签名添加到邮件头中的电子邮件。有关信息，请参阅[使用 DKIM 验证从您在 Office 365 中的域发送出站电子邮件](https://technet.microsoft.com/library/mt695945%28v=exchg.150%29.aspx)。
+- 查看您的域密钥标识邮件 (DKIM) 配置。应使用 DKIM 除了 SPF 和 DMARC 为了帮助防止伪造者从发送看起来来自您的域的邮件。DKIM，可以将数字签名添加到邮件头中的电子邮件。有关信息，请参阅[使用 DKIM 验证从您在 Office 365 中的域发送出站电子邮件](https://technet.microsoft.com/library/mt695945%28v=exchg.150%29.aspx)。
     
-  - 查看您的基于域的邮件身份验证、 报告和一致性声明 (DMARC) 配置。实现与 SPF DKIM DMARC 提供了其他欺骗和网络钓鱼的电子邮件保护。接收邮件系统确定如何处理邮件的 DMARC 帮助发送从您的域失败 SPF 或 DKIM 检查。有关信息，请参阅[使用 DMARC 用于验证 Office 365 中的电子邮件](https://technet.microsoft.com/library/mt734386%28v=exchg.150%29.aspx)。
+- 查看您的基于域的邮件身份验证、 报告和一致性声明 (DMARC) 配置。实现与 SPF DKIM DMARC 提供了其他欺骗和网络钓鱼的电子邮件保护。接收邮件系统确定如何处理邮件的 DMARC 帮助发送从您的域失败 SPF 或 DKIM 检查。有关信息，请参阅[使用 DMARC 用于验证 Office 365 中的电子邮件](https://technet.microsoft.com/library/mt734386%28v=exchg.150%29.aspx)。
     
-  - 使用[Get-PhishFilterPolicy](https://technet.microsoft.com/en-us/library/mt735158%28v=exchg.160%29.aspx) Windows PowerShell cmdlet 上欺骗发件人收集详细的数据，生成允许和阻止列表，并帮助您确定如何生成更全面的 SPF、 DKIM 和 DMARC DNS 记录，而不在在外部的垃圾邮件筛选器受到合法的电子邮件。有关详细信息，请参阅[antispoofing 保护 Office 365 中的工作方式](https://blogs.msdn.microsoft.com/tzink/2016/02/23/how-antispoofing-protection-works-in-office-365/)。
+- 使用[Get-PhishFilterPolicy](https://technet.microsoft.com/en-us/library/mt735158%28v=exchg.160%29.aspx) Windows PowerShell cmdlet 上欺骗发件人收集详细的数据，生成允许和阻止列表，并帮助您确定如何生成更全面的 SPF、 DKIM 和 DMARC DNS 记录，而不在在外部的垃圾邮件筛选器受到合法的电子邮件。有关详细信息，请参阅[antispoofing 保护 Office 365 中的工作方式](https://blogs.msdn.microsoft.com/tzink/2016/02/23/how-antispoofing-protection-works-in-office-365/)。
     
 

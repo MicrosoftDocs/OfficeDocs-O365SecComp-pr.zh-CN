@@ -3,7 +3,7 @@ title: Office 365 中的防欺骗保护
 ms.author: krowley
 author: kccross
 manager: laurawi
-ms.date: 7/2/2018
+ms.date: 10/11/2018
 ms.audience: ITPro
 ms.topic: article
 ms.service: o365-administration
@@ -12,12 +12,12 @@ search.appverid:
 - MET150
 ms.assetid: d24bb387-c65d-486e-93e7-06a4f1a436c0
 description: 本文介绍如何 Office 365 缓解了对网络钓鱼攻击使用伪造发件人域，即，造假的域。这是通过实现通过分析邮件和阻止的那些类型的值可以是经过 neithe 身份验证通过使用标准电子邮件身份验证方法，也其他发件人信誉方法。实现此更改是为了减少向公开 Office 365 中的组织的网络钓鱼攻击的数。
-ms.openlocfilehash: bbcfbcdf32c87e070f10c9478a7c5978e909f009
-ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+ms.openlocfilehash: 37eddfcad9bc5e412f62dd857178eafa8cac9355
+ms.sourcegitcommit: ba2175e394d0cb9f8ede9206aabb44b5b677fa0a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22559217"
+ms.lasthandoff: 10/11/2018
+ms.locfileid: "25496896"
 ---
 # <a name="anti-spoofing-protection-in-office-365"></a>Office 365 中的防欺骗保护
 
@@ -25,7 +25,7 @@ ms.locfileid: "22559217"
   
 本文还介绍了为什么要进行此更改、 客户如何准备此更改、 如何查看将受影响的邮件，如何对邮件报告、 如何缓解误报，以及发件人向 Microsoft 对此应做好准备发生更改。
   
-Microsoft 的反欺骗技术最初部署到其 Office 365 高级威胁保护 (ATP) 和 E5 客户。但是，由于其筛选器的所有相互学习的方式，而非 ATP 客户和甚至 Outlook.com 用户也可能受到影响。
+Microsoft 的反欺骗技术已最初部署到其组织的 Office 365 企业 E5 订阅或已购买 Office 365 高级威胁保护 (ATP) 加载项为其订阅。从 2018 年 10 月，我们已扩展到以及具有 Exchange Online Protection (EOP) 的组织的保护。此外，由于我们筛选器的所有相互学习的方式，Outlook.com 用户也可能受到影响。
   
 ## <a name="how-spoofing-is-used-in-phishing-attacks"></a>如何欺骗网络钓鱼攻击中使用
 
@@ -174,7 +174,7 @@ Authentication-Results: spf=none (sender IP is 1.2.3.4)
 From: sender @ example.com
 To: receiver @ contoso.com
 ```
-后反欺骗，如果您是高级威胁保护或 E5 客户，compauth 值标 （非 ATP 和非 E5 客户不受影响）：
+后反欺骗，如果您具有 Office 365 企业 E5、 EOP 或 ATP，被标 compauth 值：
   
 ```
 Authentication-Results: spf=none (sender IP is 1.2.3.4)
@@ -250,7 +250,7 @@ To: someone@example.com
   
 有多种不同的方式可以 （请参阅上文中的[不同类型的欺骗之间 Differentiating](#differentiating-between-different-types-of-spoofing) ） 欺骗一条消息，但年 3 月 2018年从 Office 365 将这些邮件处理的方式不尚未统一。下表是摘要，使用跨域欺骗保护正在新行为： 
   
-|**欺骗的类型**|**Category**|**添加的安全提示？**|**应用于**|
+|**欺骗的类型**|**类别**|**添加的安全提示？**|**应用于**|
 |:-----|:-----|:-----|:-----|
 |DMARC 失败 （隔离或拒绝）  <br/> |HSPM （默认），也可能会 SPM 或 PHSH  <br/> |否 （尚未）  <br/> |所有 Office 365 客户 Outlook.com  <br/> |
 |自我到自我  <br/> |SPM  <br/> |是  <br/> |所有 Office 365 组织 Outlook.com  <br/> |
@@ -408,26 +408,26 @@ Set-PhishFilterPolicy -Identity Default -SpoofAllowBlockList $UpdateSpoofedSende
   
 ### <a name="understanding-how-spam-phishing-and-advanced-phishing-detections-are-combined"></a>了解如何垃圾邮件、 网络钓鱼和检测兼而有之高级网络钓鱼
 
-Exchange Online 客户-ATP 和非 ATP-就能够指定服务标识为恶意软件、 垃圾邮件、 高可信度垃圾邮件、 网络钓鱼和批量邮件时要采取的操作。但是，ATP 客户的新反钓鱼策略和一条消息可能命中多个检测类型 （例如，恶意软件、 网络钓鱼和用户模拟） 这一事实的引入，可能有哪些策略所适用的混乱。 
+如果组织使用或不 ATP，使用 Exchange Online 中，可以指定的服务标识为恶意软件、 垃圾邮件、 高可信度垃圾邮件、 网络钓鱼和批量邮件时要采取哪些操作。使用 ATP 客户的 ATP 防钓鱼策略和 EOP 客户的防钓鱼策略和一条消息可能命中多个检测类型 （例如，恶意软件、 网络钓鱼和用户模拟） 这一事实，可能有一些混乱策略适用。 
   
 一般情况下，CAT （类别） 属性中的 X Forefront 反垃圾邮件报表页眉中标识应用于邮件的策略。 
   
-|**Priority**|**策略**|**Category**|**其中托管？**|**应用于**|
+|**Priority**|**策略**|**类别**|**其中托管？**|**应用于**|
 |:-----|:-----|:-----|:-----|:-----|
-|1  <br/> |恶意软件  <br/> |MALW  <br/> |[恶意软件策略](https://technet.microsoft.com/en-us/library/jj200745%28v=exchg.150%29.aspx) <br/> |所有客户  <br/> |
-|2   <br/> |网络钓鱼  <br/> |PHSH  <br/> |[承载的内容筛选器策略](https://technet.microsoft.com/library/jj200684%28v=exchg.150%29.aspx) <br/> |所有客户  <br/> |
-|3   <br/> |可信度高的垃圾邮件  <br/> |HSPM  <br/> |[承载的内容筛选器策略](https://technet.microsoft.com/library/jj200684%28v=exchg.150%29.aspx) <br/> |所有客户  <br/> |
-|4   <br/> |欺骗  <br/> |欺骗  <br/> |[防钓鱼策略](https://go.microsoft.com/fwlink/?linkid=864553)，[欺骗智能](https://support.office.com/article/Learn-more-about-spoof-intelligence-978c3173-3578-4286-aaf4-8a10951978bf) <br/> |仅 ATP  <br/> |
-|5   <br/> |垃圾邮件  <br/> |SPM  <br/> |[承载的内容筛选器策略](https://technet.microsoft.com/library/jj200684%28v=exchg.150%29.aspx) <br/> |所有客户  <br/> |
-|6   <br/> |批量  <br/> |批量  <br/> |[承载的内容筛选器策略](https://technet.microsoft.com/library/jj200684%28v=exchg.150%29.aspx) <br/> |所有客户  <br/> |
-|7   <br/> |域模拟  <br/> |DIMP  <br/> |[防钓鱼策略](https://go.microsoft.com/fwlink/?linkid=864553) <br/> |仅 ATP  <br/> |
-|8   <br/> |用户模拟  <br/> |UIMP  <br/> |[防钓鱼策略](https://go.microsoft.com/fwlink/?linkid=864553) <br/> |仅 ATP  <br/> |
+|1   <br/> |恶意软件  <br/> |MALW  <br/> |[恶意软件策略](https://technet.microsoft.com/en-us/library/jj200745%28v=exchg.150%29.aspx) <br/> |所有组织  <br/> |
+|2   <br/> |网络钓鱼  <br/> |PHSH  <br/> |[承载的内容筛选器策略](https://technet.microsoft.com/library/jj200684%28v=exchg.150%29.aspx) <br/> |所有组织  <br/> |
+|3   <br/> |可信度高的垃圾邮件  <br/> |HSPM  <br/> |[承载的内容筛选器策略](https://technet.microsoft.com/library/jj200684%28v=exchg.150%29.aspx) <br/> |所有组织  <br/> |
+|4   <br/> |欺骗  <br/> |欺骗  <br/> |[防钓鱼策略](https://go.microsoft.com/fwlink/?linkid=864553)，[欺骗智能](https://support.office.com/article/Learn-more-about-spoof-intelligence-978c3173-3578-4286-aaf4-8a10951978bf) <br/> |所有组织  <br/> |
+|5   <br/> |垃圾邮件  <br/> |SPM  <br/> |[承载的内容筛选器策略](https://technet.microsoft.com/library/jj200684%28v=exchg.150%29.aspx) <br/> |所有组织  <br/> |
+|6   <br/> |批量  <br/> |批量  <br/> |[承载的内容筛选器策略](https://technet.microsoft.com/library/jj200684%28v=exchg.150%29.aspx) <br/> |所有组织  <br/> |
+|7   <br/> |域模拟  <br/> |DIMP  <br/> |[防钓鱼策略](https://go.microsoft.com/fwlink/?linkid=864553) <br/> |仅组织 ATP  <br/> |
+|8   <br/> |用户模拟  <br/> |UIMP  <br/> |[防钓鱼策略](https://go.microsoft.com/fwlink/?linkid=864553) <br/> |仅组织 ATP <br/> |
    
 如果您有多个不同的防钓鱼策略，将应用的最高优先级的一个。例如，假设您有两个策略：
   
 |**策略**|**Priority**|**用户/域模拟**|**反欺骗**|
 |:-----|:-----|:-----|:-----|
-|A  <br/> |1  <br/> |On  <br/> |Off  <br/> |
+|A  <br/> |1   <br/> |On  <br/> |Off  <br/> |
 |B  <br/> |2   <br/> |关  <br/> |位置  <br/> |
    
 如果一条消息起作用，并被标识为欺骗和用户模拟和一组相同的用户范围的策略和策略 B，则邮件将被视为欺骗但没有操作应用相防欺骗处于关闭状态并在用户模拟 (8) 比更高的优先级 (4) 欺骗运行。
@@ -683,7 +683,7 @@ Microsoft 本身首先采用此功能之前将其部署到其客户的其余部�
   
 ### <a name="will-microsoft-bring-this-feature-to-outlookcom-and-non-advanced-threat-protection-customers-of-office-365"></a>将 Microsoft 置于此功能的 Office 365 Outlook.com 和非高级威胁保护客户？
 
-反欺骗保护将最初推出 ATP/E5 客户和将来可能会释放到其其他用户。但是，如果是这样，可能有某些功能不应用如报告和自定义将覆盖。
+Microsoft 的反欺骗技术已最初部署到其组织的 Office 365 企业 E5 订阅或已购买 Office 365 高级威胁保护 (ATP) 加载项为其订阅。从 2018 年 10 月，我们已扩展到以及具有 Exchange Online Protection (EOP) 的组织的保护。将来，我们可能为 Outlook.com 发布它。但是，如果我们这样做，可能不会应用如报告某些功能，并将覆盖自定义。
   
 ### <a name="how-can-i-report-spam-or-non-spam-messages-back-to-microsoft"></a>如何报告垃圾邮件或非垃圾邮件后向 Microsoft？
 

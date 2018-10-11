@@ -3,7 +3,7 @@ title: 配置 Office 365 租户以提高安全性
 ms.author: bcarter
 author: BrendaCarter
 manager: laurawi
-ms.date: 6/27/2018
+ms.date: 10/11/2018
 ms.audience: ITPro
 ms.topic: get-started-article
 ms.service: o365-administration
@@ -11,12 +11,12 @@ localization_priority: Normal
 search.appverid: MET150
 ms.assetid: 8d274fe3-db51-4107-ba64-865e7155b355
 description: 指导您完成推荐配置租户范围会影响您的 Office 365 环境的安全性的设置。您的安全需求可能需要更多或更少的安全。使用这些建议作为起点。
-ms.openlocfilehash: e81c3e18bccc9ccaab7c6f018c6f40b5ea796e14
-ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+ms.openlocfilehash: de3a1d19e09144105f9576b3a4eb8ed76eb08585
+ms.sourcegitcommit: ba2175e394d0cb9f8ede9206aabb44b5b677fa0a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "23013866"
+ms.lasthandoff: 10/11/2018
+ms.locfileid: "25496866"
 ---
 # <a name="configure-your-office-365-tenant-for-increased-security"></a>配置 Office 365 租户以提高安全性
 
@@ -32,7 +32,7 @@ Office 365 安全性&amp;合规性中心包含保护您的环境的功能。它�
   
 |区域 ***|包含默认策略 ***|建议 ***|
 |:-----|:-----|:-----|
-|**ATP 防钓鱼** <br/> |否  <br/> | 如果您有自定义的域，创建防钓鱼策略，以保护您最有价值的用户，例如您 CEO 的电子邮件帐户，以及保护您的域。查看[ATP 防钓鱼策略设置](set-up-atp-anti-phishing-policies.md)，创建一个策略作为指南使用示例:"示例： 防钓鱼保护用户和域策略。"|
+|**防钓鱼** <br/> |是  <br/> | 如果您有自定义的域，创建防钓鱼策略，以保护您最有价值的用户，例如您 CEO 的电子邮件帐户，以及保护您的域。查看[防钓鱼策略设置](set-up-anti-phishing-policies.md)，创建一个策略作为指南使用示例:"示例： 防钓鱼保护用户和域策略。"|
 |**反恶意软件引擎** <br/> |是  <br/> | 编辑默认策略：  <br/> • 公共附件筛选器的类型 — 选择  <br/><br>  此外可以创建自定义恶意软件筛选器策略并将它们应用于指定的用户、 组或域中您的组织。  <br/> <br> 详细信息：  <br/> •[反恶意软件保护](https://technet.microsoft.com/en-us/library/jj200669%28v=exchg.150%29.aspx) <br/> •[配置反恶意软件策略](https://technet.microsoft.com/en-us/library/jj200745%28v=exchg.150%29.aspx) <br/> |
 |**ATP 安全附件** <br/> |否  <br/> | 在主页上的安全附件，通过选中此框保护 SharePoint、 OneDrive 和 Microsoft 团队中的文件：  <br/>  • 打开 ATP SharePoint、 OneDrive 和 Microsoft 团队  <br/> <br> 使用这些设置添加新的安全的附件策略：  <br/>  • Block-阻止当前和将来的电子邮件和附件与检测到恶意软件 （选择此选项）  <br/>  • 启用重定向 — （选中此复选框和输入的电子邮件地址，例如管理员或隔离帐户）  <br/>  • 应用以上所选内容，如果恶意软件扫描的附件超时或错误发生 （选中此复选框）  <br/>  • 应用于 — 是 （选择您的域） 的收件人域  <br/>  <br>详细信息：[设置 Office 365 ATP 附件安全策略](set-up-atp-safe-attachments-policies.md) <br/> |
 |**ATP 安全链接** <br/> |是  <br/> | 将此设置添加到整个组织的默认策略：  <br/> • 使用中的安全链接： Office 365 ProPlus、 适用于 iOS 的 Office 和 Android （选择此选项）。  <br/> <br>对特定收件人的建议的策略：  <br/>  将重写 • Url，并将其签针对一组已知的恶意链接，当用户单击的链接 （选择此选项）。  <br/>  • 要扫描的可下载内容的使用安全附件 （选中此复选框）。  <br/>  • 应用于 — 是 （选择您的域） 的收件人域。  <br/> <br> 详细信息： [Office 365 ATP 安全链接](atp-safe-links.md)。  <br/> |
