@@ -3,7 +3,7 @@ title: Office 365 邮件加密 FAQ
 ms.author: krowley
 author: kccross
 manager: laurawi
-ms.date: 09/27/2018
+ms.date: 10/9/2018
 ms.audience: ITPro
 ms.topic: overview
 ms.service: o365-administration
@@ -12,12 +12,12 @@ search.appverid:
 - MET150
 ms.assetid: 0432dce9-d9b6-4e73-8a13-4a932eb0081e
 description: 有关于 Office 365 中的新邮件保护功能的工作方式的问题？检查此处答案。
-ms.openlocfilehash: c580ef701f6ee98ea2fc71df792256b1792c73cd
-ms.sourcegitcommit: 411713004251ee62d29b550eabea04c08a87e41f
+ms.openlocfilehash: 63bea478e144f42cabc67f7075cd52199d954d9c
+ms.sourcegitcommit: d3f3e2eb9ef05ebef85d83935a2cb0f7690ee6fe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/27/2018
-ms.locfileid: "25341427"
+ms.lasthandoff: 10/11/2018
+ms.locfileid: "25495516"
 ---
 # <a name="office-365-message-encryption-faq"></a>Office 365 邮件加密 FAQ
 
@@ -89,7 +89,7 @@ Office 365 邮件加密的新功能的现有 IRM 和旧式 OME 解决方案的�
   
 ## <a name="my-organization-has-an-exchange-hybrid-deployment-can-i-use-this-feature"></a>我的组织具有的 Exchange 混合部署。可以使用此功能？
 
-内部部署用户可以发送加密的邮件使用 Exchange Online 邮件流规则。若要执行此操作，您需要通过 Exchange Online 电子邮件路由。
+内部部署用户可以发送加密的邮件使用 Exchange Online 邮件流规则。若要执行此操作，您需要通过 Exchange Online 电子邮件路由。有关详细信息，请参阅[部分 2： 配置邮件流从电子邮件服务器到 Office 365](https://docs.microsoft.com/exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/set-up-connectors-to-route-mail#part-2-configure-mail-to-flow-from-your-email-server-to-office-365)。
   
 ## <a name="what-email-client-do-i-need-to-use-in-order-to-create-an-ome-encrypted-message-what-applications-are-supported-for-sending-protected-messages"></a>需要哪些电子邮件客户端使用以创建 OME 加密的邮件？支持哪些应用程序发送受保护的邮件？
 
@@ -119,7 +119,7 @@ Office 365 邮件加密的新功能的现有 IRM 和旧式 OME 解决方案的�
   
 ## <a name="can-i-automatically-encrypt-messages-by-setting-up-policies-in-data-loss-prevention-dlp-through-the-security-amp-compliance-center"></a>可以我自动加密邮件的设置策略中的数据丢失防护 (DLP) 通过安全&amp;合规性中心？
 
-当前您可以仅设置邮件流规则在 Exchange Online。通过安全 DLP 中当前不支持加密&amp;合规性中心。
+是的！您可以设置邮件流规则在 Exchange Online 或中安全使用 DLP&amp;合规性中心。
   
 ## <a name="can-i-open-encrypted-messages-sent-to-a-shared-mailbox"></a>可以打开加密的邮件发送到共享邮箱？
 
