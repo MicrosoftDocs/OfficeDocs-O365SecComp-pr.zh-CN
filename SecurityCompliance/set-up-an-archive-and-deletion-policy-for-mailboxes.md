@@ -16,12 +16,12 @@ search.appverid:
 - BCS160
 ms.assetid: ec3587e4-7b4a-40fb-8fb8-8aa05aeae2ce
 description: 创建自动将项目移至用户的存档邮箱的 Office 365 中归档和删除策略。
-ms.openlocfilehash: 807488f9ec7088adccdf1fc111d67b9dab8e0a38
-ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+ms.openlocfilehash: 740164ee840a32aff20f5c2dc1b1ae433d95cfe5
+ms.sourcegitcommit: 448c5897e44448adfc82e3eaffb774c770c04815
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22525481"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "25522293"
 ---
 # <a name="set-up-an-archive-and-deletion-policy-for-mailboxes-in-your-office-365-organization"></a>设置 Office 365 组织中邮箱的存档和删除策略
 
@@ -60,7 +60,7 @@ ms.locfileid: "22525481"
 > [!NOTE]
 > 只要它们之前完成该过程启用某个时刻，可以随时在此过程中，启用存档邮箱。如果没有启用存档邮箱，任何有为其分配的存档策略的项不采取任何操作。 
   
-1. 转到[https://protection.office.com](https://protection.office.com)。
+1. 转到 [https://protection.office.com](https://protection.office.com)。
     
 2. 登录到 Office 365 使用全局管理员帐户。
     
@@ -238,7 +238,7 @@ ms.locfileid: "22525481"
 ## <a name="optional-step-5-run-the-managed-folder-assistant-to-apply-the-new-settings"></a>（可选）步骤 5： 运行托管文件夹助理应用新设置
 <a name="step3"> </a>
 
-将新的保留策略应用于步骤 4 中的邮箱后，可能需要多达 7 天在 Exchange Online 的新的保留设置要应用于邮箱。这是因为过程调用的托管文件夹助理流程邮箱 7 天一次。而不是等待托管文件夹助理运行，您可以强制这种情况，通过运行 Exchange Online PowerShell 中的**Start-managedfolderassistant** cmdlet。 
+将新的保留策略应用于步骤 4 中的邮箱后，可能需要多达 7 天在 Exchange Online 的新的保留设置要应用于邮箱。这是因为过程调用的托管文件夹助理流程邮箱 7 天一次。而不是等待托管文件夹助理运行，您可以强制此选项可通过运行**Start-managedfolderassistant** cmdlet 在 Exchange Online PowerShell 发生。 
   
  **当您运行托管文件夹助理时，会发生什么情况？** 它通过检查邮箱中的项目并确定是否它们受到保留应用保留策略的设置。它然后用相应的保留标记，标记受到保留的项目，然后承担超过其保留时间的项目指定的保留操作。 
   

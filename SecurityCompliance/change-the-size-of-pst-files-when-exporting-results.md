@@ -3,20 +3,20 @@ title: 导出电子数据展示搜索结果时更改 PST 文件的大小
 ms.author: markjjo
 author: markjjo
 manager: laurawi
-ms.date: 11/30/2016
+ms.date: 10/12/2018
 ms.audience: Admin
 ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
 search.appverid: MOE150
 ms.assetid: 04e9de2d-765b-457b-a98a-d0f60bfb13f2
-description: 您可以更改的下载到您的计算机来导出电子数据展示搜索结果时的 PST 文件的默认大小。
-ms.openlocfilehash: 1479db72117729d2e5cfa6feec1d9a0d9a60ffb5
-ms.sourcegitcommit: 7956955cd919f6e00b64e4506605a743c5872549
+description: 您可以更改下载到计算机时导出电子数据展示搜索结果的 PST 文件的默认大小。
+ms.openlocfilehash: c01f05a02fd94941eb2eb7a05b4c84ffecec9b39
+ms.sourcegitcommit: 448c5897e44448adfc82e3eaffb774c770c04815
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/26/2018
-ms.locfileid: "25037985"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "25522243"
 ---
 # <a name="change-the-size-of-pst-files-when-exporting-ediscovery-search-results"></a>导出电子数据展示搜索结果时更改 PST 文件的大小
 

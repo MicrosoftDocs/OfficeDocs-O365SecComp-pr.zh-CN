@@ -3,19 +3,19 @@ title: 管理 Office 365 安全性的电子数据展示事例&amp;合规性中�
 ms.author: markjjo
 author: markjjo
 manager: laurawi
-ms.date: 7/2/2018
+ms.date: 10/12/2018
 ms.audience: Admin
 ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
 ms.assetid: 9a00b9ea-33fd-4772-8ea6-9d3c65e829e6
 description: 使用 Office 365 安全性&amp;合规性中心创建电子数据展示保留项，并以访问、 和管理组织中的电子数据展示事例。
-ms.openlocfilehash: cf7d821b9883caa98e867f4a38ee3caeddb2712b
-ms.sourcegitcommit: 7956955cd919f6e00b64e4506605a743c5872549
+ms.openlocfilehash: 604bdb5adff69911945c279fcb4fcd8a2e105632
+ms.sourcegitcommit: 448c5897e44448adfc82e3eaffb774c770c04815
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/26/2018
-ms.locfileid: "25038325"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "25522303"
 ---
 # <a name="manage-ediscovery-cases-in-the-office-365-security-amp-compliance-center"></a>管理 Office 365 安全性的电子数据展示事例&amp;合规性中心
 
@@ -87,7 +87,7 @@ ms.locfileid: "25038325"
     
 4. 添加的所有用户后，单击**完成**，单击**保存**以向角色组中，保存所做的更改，然后单击**关闭**。
     
-[Return to top](manage-ediscovery-cases.md#top)
+
   
 ## <a name="step-2-create-a-new-case"></a>步骤 2： 创建新的案例
 <a name="step2_1"> </a>
@@ -108,8 +108,6 @@ ms.locfileid: "25038325"
     
     > [!TIP]
     > 创建新的案例后，可以随时重。只需单击**电子数据展示**页上的情况的名称。在**这种情况下管理**弹出页上，在**名称**框中显示名称更改，然后保存更改。 
-  
-[Return to top](manage-ediscovery-cases.md#top)
   
 ## <a name="step-3-add-members-to-a-case"></a>步骤 3： 将成员添加到事例
 <a name="step2a_1"> </a>
@@ -136,8 +134,6 @@ ms.locfileid: "25038325"
     中**管理这种情况下**，单击**保存**保存新案例成员的列表。 
     
 6. 单击**保存**以保存新案例成员的列表。 
-    
-[Return to top](manage-ediscovery-cases.md#top)
   
 ## <a name="step-4-place-content-locations-on-hold"></a>步骤 4： 位置上的内容位置保留
 <a name="step3_1"> </a>
@@ -178,11 +174,10 @@ ms.locfileid: "25038325"
   
 2. **网站**单击**添加**![添加图标](media/ITPro-EAC-AddIcon.gif)指定 SharePoint 和 OneDrive for Business 站点置于保持状态。键入您想要将置于保持状态的每个网站的 URL。您还可以为 Office 365 组或 Microsoft 团队添加 SharePoint 网站的 URL。 
     
-<<<<<<< 标头，请参阅[管理 Office 365 安全性的电子数据展示事例&amp;合规性中心](https://support.office.com/article/edea80d6-20a7-40fb-b8c4-5e8c8395f6da#moreinfo_1)部分上放置置于保持状态的 Office 365 组和 Microsoft 团队的提示和技巧。=== 参见上放置置于保持状态的 Office 365 组和 Microsoft 团队的提示的[详细信息](https://support.office.com/article/edea80d6-20a7-40fb-b8c4-5e8c8395f6da.aspx#moreinfo_1)部分。 
->>>>>>> deniseb 转换
+    请参阅上放置置于保持状态的 Office 365 组和 Microsoft 团队的提示和技巧[详细信息](https://support.office.com/article/edea80d6-20a7-40fb-b8c4-5e8c8395f6da.aspx#moreinfo_1)部分。 
     
     > [!NOTE]
-    > In the rare case that a person's user principal name (UPN) is changed, the URL for their OneDrive account will also be changed to incorporate the new UPN. If this happens, you'll have to modify the hold by adding the user's new OneDrive URL and removing the old one. 
+    > 在联系人的用户主体名称 (UPN) 已更改的情况很少，其 OneDrive 帐户的 URL 还将更改为合并新的 UPN。如果发生这种情况，您将需要通过添加用户的新 OneDrive URL 和删除旧修改保留项。 
   
 3. **公用文件夹**单击**保留所有公用文件夹**在 Exchange Online 组织在保留中放置的所有公用文件夹。请注意，不能选择特定的公用文件夹，以将置于保持状态。保持选中如果您不想要保留置于公用文件夹**不保留任何公用文件夹**选项。 
     
@@ -199,8 +194,6 @@ ms.locfileid: "25038325"
 2. 在**条件**下单击**添加条件**以添加一个或多个条件以缩小范围的搜索查询的保留项。每个条件将子句添加到 KQL 搜索查询创建和运行时创建保留项。例如可以指定日期范围，以便电子邮件或网站的日期范围内创建的文档置于保持状态。条件逻辑**AND**运算符通过连接到 （在关键字框中指定） 的关键字查询。意味着项目需要满足关键字查询和条件的置于保持状态。 
     
 9. 后配置基于查询的保留，单击**完成**以创建保留项。 
-    
-[Return to top](manage-ediscovery-cases.md#top)
   
 ### <a name="hold-statistics"></a>保留统计信息
 
@@ -217,8 +210,6 @@ ms.locfileid: "25038325"
 - 您可以获取最新保留通过单击**更新统计信息**重新运行搜索的统计信息估计的计算的保留项的当前数目。如有必要，单击**刷新**![刷新图标](media/O365-MDM-Policy-RefreshIcon.gif)在工具栏中更新的详细信息窗格中的保留统计信息。 
     
 - 它的普通上的项目数保留来提高随着时间的推移，因为其邮箱或网站处于保留状态的用户通常发送或接收新电子邮件并创建新的 SharePoint 和 OneDrive 的业务文档。
-    
-[Return to top](manage-ediscovery-cases.md#top)
   
 ## <a name="step-5-create-and-run-a-content-search-associated-with-a-case"></a>步骤 5： 创建并运行与案例相关的内容搜索
 <a name="step4_1"> </a>
@@ -265,13 +256,11 @@ ms.locfileid: "25038325"
     
 7. 后所选内容的位置，进行搜索，请单击**下一步**。
     
-8. 在“**新搜索**”页上，您可以添加用于创建搜索查询的关键字和条件。 
-    
-    ![搜索条件和条件](media/9064147e-feac-4090-bbf6-2298ad7622c6.png)
+8. 在“**新搜索**”页上，您可以添加用于创建搜索查询的关键字和条件。 <br/>![搜索条件和条件](media/9064147e-feac-4090-bbf6-2298ad7622c6.png)
   
-1. 在下框**希望什么我们查找？**，在框中键入搜索查询。您可以指定关键字，消息属性，如发送和接收日期或文档属性，如文件名或上次更改文档的日期。您可以使用使用布尔运算符，例如**AND**、**或**、**不**、 **NEAR**或**ONEAR**更复杂的查询。您还可以搜索文档或搜索外部共享的文档中的敏感信息 （如社会保险号码）。如果保留关键字框为空，则将在搜索结果中包含位于指定的内容位置的所有内容。 
+9. 在下框**希望什么我们查找？**，在框中键入搜索查询。您可以指定关键字，消息属性，如发送和接收日期或文档属性，如文件名或上次更改文档的日期。您可以使用使用布尔运算符，例如**AND**、**或**、**不**、 **NEAR**或**ONEAR**更复杂的查询。您还可以搜索文档或搜索外部共享的文档中的敏感信息 （如社会保险号码）。如果保留关键字框为空，则将在搜索结果中包含位于指定的内容位置的所有内容。 
     
-2. 您可以单击**显示关键字列表**复选框，键入每行中的关键字。如果这样做，每个行的关键字进行连接的**OR**运算符创建搜索查询中。 
+10. 您可以单击**显示关键字列表**复选框，键入每行中的关键字。如果这样做，每个行的关键字进行连接的**OR**运算符创建搜索查询中。 
     
     ![搜索关键字](media/c3ef511a-e0a3-4b5d-9779-36803270a193.png)
   
@@ -279,19 +268,17 @@ ms.locfileid: "25038325"
     
     有关使用关键字列表的详细信息，请参阅[详细信息](run-a-content-search-in-the-security-and-compliance-center.md#moreinfo)。
     
-3. 单击**检查错误的查询**来检查您的查询不支持的字符和不可能大写的布尔运算符。不支持的字符通常隐藏和通常会导致搜索错误或返回意外的结果。有关检查不支持的字符的详细信息，请参阅[检查错误内容的搜索查询](check-your-content-search-query-for-errors.md)。
+11. 单击**检查错误的查询**来检查您的查询不支持的字符和不可能大写的布尔运算符。不支持的字符通常隐藏和通常会导致搜索错误或返回意外的结果。有关检查不支持的字符的详细信息，请参阅[检查错误内容的搜索查询](check-your-content-search-query-for-errors.md)。
     
-4. 在**条件**下将添加到搜索查询来缩小搜索范围并返回一组多精简的结果的条件。每个条件向 KQL 搜索查询创建和启动搜索时运行一个子句。条件逻辑**AND**运算符通过连接到 （在关键字框中指定） 的关键字查询。这意味着项目需要满足关键字查询和结果中包含的条件。这是如何帮助条件以缩小结果。 
+12. 在**条件**下将添加到搜索查询来缩小搜索范围并返回一组多精简的结果的条件。每个条件向 KQL 搜索查询创建和启动搜索时运行一个子句。条件逻辑**AND**运算符通过连接到 （在关键字框中指定） 的关键字查询。这意味着项目需要满足关键字查询和结果中包含的条件。这是如何帮助条件以缩小结果。 
     
     有关如何创建搜索查询和使用条件的详细信息，请参阅[Keyword queries for Content Search](keyword-queries-and-search-conditions.md)。
     
-9. 单击**搜索**以保存的搜索设置并开始搜索。 
+13. 单击**搜索**以保存的搜索设置并开始搜索。 
     
     启动搜索。一段时间之后, 所估计的搜索结果显示详细信息窗格中。评估中包括的总大小和匹配的搜索条件的项目数。搜索 estimate 还包括在搜索内容位置的未编制索引的项目数。不满足搜索条件的未编制索引项的数目将包括在细节窗格中显示的搜索统计信息。如果未编制索引的项匹配的搜索查询 （因为其他消息或文档属性符合搜索条件），它不会包含在未编制索引的项的估计数目。如果未编制索引的项目中排除的搜索条件，它也不会包含中未编制索引的项的估计值。
     
     搜索完成后，您可以预览搜索结果。如有必要，单击**刷新**![刷新图标](media/O365-MDM-Policy-RefreshIcon.gif)要更新的详细信息窗格中的信息。 
-    
-[Return to top](manage-ediscovery-cases.md#top)
   
 ## <a name="step-6-export-the-results-of-a-content-search-associated-with-a-case"></a>步骤 6： 导出与案例相关的内容搜索的结果
 <a name="step5_1"> </a>
@@ -381,8 +368,6 @@ ms.locfileid: "25038325"
 - 如果您重新启动电子数据展示事例导出从**导出**页上，被转接到 Azure 存储区的搜索结果将覆盖之前的结果;以前的结果没有传输不会提供下载。 
     
 - 准备进行分析高级电子数据展示中的多个搜索结果的不可用。您可以仅准备一个分析高级电子数据展示中搜索的结果。
-    
-[Return to top](manage-ediscovery-cases.md#top)
   
 ## <a name="step-7-prepare-search-results-for-advanced-ediscovery"></a>步骤 7： 准备搜索结果的高级电子数据展示
 <a name="step7_1"> </a>
@@ -415,8 +400,6 @@ ms.locfileid: "25038325"
     搜索结果准备好使用高级电子数据展示的分析。
     
 7. 在细节窗格中，单击**检查准备状态**以显示有关准备过程的信息。准备过程完成后，您可以转到这种情况在高级电子数据展示处理分析的数据。 
-    
-[Return to top](manage-ediscovery-cases.md#top)
   
 ## <a name="step-8-go-to-the-case-in-advanced-ediscovery"></a>步骤 8： 转到中高级电子数据展示事例
 <a name="gotoAeD_1"> </a>
@@ -445,8 +428,6 @@ ms.locfileid: "25038325"
     
 > [!TIP]
 > 单击**切换到电子数据展示**以回到安全中相同的大小写&amp;合规性中心。 
-  
-[Return to top](manage-ediscovery-cases.md#top)
   
 ## <a name="optional-step-9-close-a-case"></a>（可选）步骤 9： 关闭的用例
 <a name="closecase_1"> </a>
@@ -484,8 +465,6 @@ ms.locfileid: "25038325"
 7. 在**电子数据展示**页上，单击![刷新图标](media/O365-MDM-Policy-RefreshIcon.gif)**刷新**更新关闭案例的状态。可能需要最多 60 分钟关闭过程完成。 
     
     在过程完成后，就会用例的状态更改为**关闭**并在**电子数据展示**上。单击以显示**管理这种情况下**弹出页，其中包含有关的信息，这种情况结束时，这种情况和用户关闭它的名称。 
-    
-[Return to top](manage-ediscovery-cases.md#top)
   
 ## <a name="optional-step-10-re-open-a-closed-case"></a>（可选）步骤 10： 重新打开结束的案例
 <a name="reopencase_1"> </a>
@@ -511,8 +490,6 @@ ms.locfileid: "25038325"
 6. 在**电子数据展示**页上，单击![刷新图标](media/O365-MDM-Policy-RefreshIcon.gif)**刷新**更新重新打开案例的状态。可能需要重新打开过程完成的最多 60 分钟。 
     
     完成该过程后，这种情况的状态更改为**活动****电子数据展示**上。 
-    
-[返回顶部](manage-ediscovery-cases.md#top)
   
 ## <a name="more-information"></a>详细信息
 <a name="moreinfo_1"> </a>
@@ -536,12 +513,9 @@ ms.locfileid: "25038325"
     
     最后，与以前所述，电子数据展示管理员安全中的&amp;合规性中心将自动添加为高级电子数据展示中的管理员。这意味着电子数据展示管理员某个人可以在高级电子数据展示，如设置用户、 创建情况下，并将数据添加到情况下执行管理任务。
     
-<<<<<<< 头
-- **若要将置于保持状态的内容位置的许可要求是什么？** 通常，组织需要的 Office 365 E3 订阅或更高版本，以将置于保持状态的内容位置。若要将邮箱置于保留状态，则需要 Exchange Online 计划 2 许可证。有关详细信息，请参阅此[电子数据展示常见问题](https://support.office.com/article/9d1a29ae-b7b4-4a27-9c8c-84289023dcae#Q5)。=======
 - **若要将置于保持状态的内容位置的许可要求是什么？** 通常，组织需要的 Office 365 E3 订阅或更高版本，以将置于保持状态的内容位置。若要将邮箱置于保留状态，则需要 Exchange Online 计划 2 许可证。有关详细信息，请参阅本[常见问题](https://support.office.com/article/9d1a29ae-b7b4-4a27-9c8c-84289023dcae.aspx#Q5)。
->>>>>>> deniseb 转换
-    
-- **什么应了解关于在步骤 5 中搜索所有案例内容？** 如前所述，您可以搜索的内容位置的尚未置于保留在这种情况。执行此操作时，仅内容保留条件相匹配时搜索。如果没有没有保留条件，则搜索所有内容。如果内容在基于查询的保留，仅匹配这两个保留 （从步骤 4 中放置保留） 的条件的内容和搜索条件 （从步骤 5 中搜索） 返回与搜索结果。
+
+- **什么应了解关于在步骤 5 中搜索所有案例内容？** 如前所述，您可以搜索置于保留情况的内容位置。执行此操作时，仅内容保留条件相匹配时搜索。如果没有没有保留条件，则搜索所有内容。如果内容在基于查询的保留，仅匹配这两个保留 （从步骤 4 中放置保留） 的条件的内容和搜索条件 （从步骤 5 中搜索） 返回与搜索结果。
     
     下面是一些搜索所有案例内容时，需要注意的其他事项：
     

@@ -13,19 +13,19 @@ ms.collection: Strat_O365_IP
 ms.custom: Ent_Solutions
 ms.assetid: ''
 description: 使用本主题以详细了解如何在 Office 365 中配置访问权限的管理
-ms.openlocfilehash: 47cae93a41b0fd60645021f6f299645777a9a2e1
-ms.sourcegitcommit: c168410974bc90aaf55f1dcaa9e05c09b2b78d76
+ms.openlocfilehash: 13d278c8e8555aa069035c2f03b23db69a475b43
+ms.sourcegitcommit: 448c5897e44448adfc82e3eaffb774c770c04815
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/25/2018
-ms.locfileid: "25011838"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "25522253"
 ---
 # <a name="configuring-privileged-access-management-in-office-365"></a>Office 365 中配置的访问权限的管理
 
 > [!IMPORTANT]
 > 本主题介绍了部署和配置指南仅当前 Office 365 E5 和高级合规性 Sku 中可用的功能。
 
-本主题将指导您完成启用和配置 Office 365 组织中的访问权限的管理。您可以使用管理和使用的 Microsoft 365 Admin Center 或 Exchange Management PowerShell 特权访问。 
+本主题将指导您完成启用和配置 Office 365 组织中的访问权限的管理。您可以使用 Microsoft 365 Admin Center 或 Exchange Management PowerShell 管理和使用授权访问权限。 
 
 ## <a name="enable-and-configure-privileged-access-management"></a>启用和配置访问权限的管理
 
