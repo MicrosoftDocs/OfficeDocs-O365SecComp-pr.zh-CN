@@ -15,12 +15,12 @@ search.appverid:
 - MET150
 ms.assetid: 1966b2a7-d1e2-4d92-ab61-42efbb137f5e
 description: 与 Office 365 安全性的数据丢失防护 (DLP) 策略&amp;合规性中心，您可以确定、 监视和自动跨 Office 365 中保护敏感信息。
-ms.openlocfilehash: e9d033bc54aae6bc1c8089793dbc618f11bef273
-ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+ms.openlocfilehash: c33fe53797f86208e7cd033029949737a5c84d2f
+ms.sourcegitcommit: 397a5fe594e4cf4bb64c0c6f233d310ef3cbd922
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "23013736"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "25540418"
 ---
 # <a name="overview-of-data-loss-prevention-policies"></a>数据丢失防护策略概述
 
@@ -304,7 +304,7 @@ DLP 策略可以帮助保护敏感信息，定义为**敏感信息类型**。Off
     
 - 任何中间可信度级别通常的范围从较低可信度到紧邻下方较高可信度级别的紧上方。
     
-## <a name="using-a-label-as-a-condition-in-a-dlp-policy"></a>使用中的 DLP 策略条件相同的标签
+## <a name="using-a-label-as-a-condition-in-a-dlp-policy"></a>将标签用作 DLP 策略中的条件
 
 您可以创建标签，然后：
   
@@ -312,7 +312,7 @@ DLP 策略可以帮助保护敏感信息，定义为**敏感信息类型**。Off
     
 - **自动应用**您选择的条件匹配其内容。 
     
-有关标签的详细信息，请参阅[Overview of 标签](labels.md)。
+若要详细了解标签，请参阅[标签概述](labels.md)。
   
 创建标签后，您可以使用该标签为条件 DLP 策略中。例如，您可能需要这样做是因为：
   
@@ -332,7 +332,7 @@ DLP 策略可以帮助保护敏感信息，定义为**敏感信息类型**。Off
 
 多个功能可以应用于包含敏感信息的内容：
   
-- [应用条件自动基于标签](labels.md#applying-a-label-automatically-based-on-conditions)和[保留策略](retention-policies.md)可以同时强制对此内容的**保留**操作。 
+- [应用自动根据条件标签][保留标签](labels.md#applying-a-retention-label-automatically-based-on-conditions)和[保留策略](retention-policies.md)都可以强制对此内容的**保留**操作。 
     
 - DLP 策略可以强制实施此内容**保护**操作。和强制实施这些操作之前, 的 DLP 策略可能需要其他条件满足除了包含标签的内容。 
     
@@ -478,7 +478,7 @@ Excel 2016、 PowerPoint 2016 和 Word 2016 包括确定敏感信息并将作为
 
 要用于安全的大部分 cmdlet&amp;合规性中心，您需要：
   
-1. [连接到 Office 365 安全性&amp;合规性中心使用远程 PowerShell](http://go.microsoft.com/fwlink/?LinkID=799771&amp;clcid=0x409)
+1. [使用远程 PowerShell 连接到 Office 365 安全与合规中心](http://go.microsoft.com/fwlink/?LinkID=799771&amp;clcid=0x409)
     
 2. 使用下列任一[Office 365 安全性&amp;合规性中心 cmdlet](http://go.microsoft.com/fwlink/?LinkID=799772&amp;clcid=0x409)
     
@@ -492,7 +492,7 @@ Excel 2016、 PowerPoint 2016 和 Word 2016 包括确定敏感信息并将作为
     
   - [Get-DlpDetailReport](http://go.microsoft.com/fwlink/?LinkID=799775&amp;clcid=0x409)
     
-## <a name="more-information"></a>详细信息
+## <a name="more-information"></a>更多信息
 
 - [从模板创建 DLP 策略](create-a-dlp-policy-from-a-template.md)
     
