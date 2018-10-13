@@ -12,61 +12,61 @@ search.appverid:
 - MOE150
 ms.assetid: 5ed8abf1-c0e9-4e5b-a5b7-2059cea50b61
 description: 了解在哪里查看有关在 SharePoint、 OneDrive 或团队中检测到的恶意文件的信息以及如何对这些文件执行操作。
-ms.openlocfilehash: 370e5e3d4d7fd5f35caa8ef993f6245d15ee9999
-ms.sourcegitcommit: 099bbfb1d16b251fd5cf18ec6515faaf9a989176
+ms.openlocfilehash: 37cd721c9ec2608ddcd74f9ae1ed6991b5f0cea7
+ms.sourcegitcommit: e0c6f99d5514d8da8a70d9bd3616d1a1c0851254
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "25454269"
+ms.lasthandoff: 10/13/2018
+ms.locfileid: "25552380"
 ---
-# <a name="view-information-about-malicious-files-detected-in-sharepoint-onedrive-or-microsoft-teams"></a><span data-ttu-id="7aaaf-103">查看有关在 SharePoint、 OneDrive 或的 Microsoft 团队中检测到的恶意文件的信息</span><span class="sxs-lookup"><span data-stu-id="7aaaf-103">View information about malicious files detected in SharePoint, OneDrive, or Microsoft Teams</span></span>
+# <a name="view-information-about-malicious-files-detected-in-sharepoint-onedrive-or-microsoft-teams"></a><span data-ttu-id="dc231-103">查看有关在 SharePoint、 OneDrive 或的 Microsoft 团队中检测到的恶意文件的信息</span><span class="sxs-lookup"><span data-stu-id="dc231-103">View information about malicious files detected in SharePoint, OneDrive, or Microsoft Teams</span></span>
 
-<span data-ttu-id="7aaaf-p101">[SharePoint、 OneDrive 和 Microsoft 团队的 office 365 ATP](atp-for-spo-odb-and-teams.md)从文档库和工作组网站中的恶意文件保护您的组织。检测到恶意文件时，该文件被阻止，以便没有打开、 复制、 移动或共享它，直到由组织的安全组采取进一步的操作。阅读此文，了解如何查看有关检测到的文件的信息和要采取的操作。</span><span class="sxs-lookup"><span data-stu-id="7aaaf-p101">[Office 365 ATP for SharePoint, OneDrive, and Microsoft Teams](atp-for-spo-odb-and-teams.md) protects your organization from malicious files in document libraries and team sites. When a malicious file is detected, that file is blocked so that no one can open, copy, move, or share it until further actions are taken by the organization's security team. Read this article to learn how to view information about detected files and what actions to take.</span></span> 
+<span data-ttu-id="dc231-p101">[SharePoint、 OneDrive 和 Microsoft 团队的 office 365 ATP](atp-for-spo-odb-and-teams.md)从文档库和工作组网站中的恶意文件保护您的组织。检测到恶意文件时，该文件被阻止，以便没有打开、 复制、 移动或共享它，直到由组织的安全组采取进一步的操作。阅读此文，了解如何查看有关检测到的文件的信息和要采取的操作。</span><span class="sxs-lookup"><span data-stu-id="dc231-p101">[Office 365 ATP for SharePoint, OneDrive, and Microsoft Teams](atp-for-spo-odb-and-teams.md) protects your organization from malicious files in document libraries and team sites. When a malicious file is detected, that file is blocked so that no one can open, copy, move, or share it until further actions are taken by the organization's security team. Read this article to learn how to view information about detected files and what actions to take.</span></span> 
 
-<span data-ttu-id="7aaaf-107">若要执行本文中描述的任务，您必须具有必要[Office 365 安全性分配权限&amp;合规性中心](permissions-in-the-security-and-compliance-center.md)。</span><span class="sxs-lookup"><span data-stu-id="7aaaf-107">In order to perform the tasks described in this article, you must have the necessary [permissions assigned in the Office 365 Security &amp; Compliance Center](permissions-in-the-security-and-compliance-center.md).</span></span> 
+<span data-ttu-id="dc231-107">若要执行本文中描述的任务，您必须具有必要[Office 365 安全性分配权限&amp;合规性中心](permissions-in-the-security-and-compliance-center.md)。</span><span class="sxs-lookup"><span data-stu-id="dc231-107">In order to perform the tasks described in this article, you must have the necessary [permissions assigned in the Office 365 Security &amp; Compliance Center](permissions-in-the-security-and-compliance-center.md).</span></span> 
   
-## <a name="view-reports-with-information-about-detected-files"></a><span data-ttu-id="7aaaf-108">查看报告包含有关检测到的文件的信息</span><span class="sxs-lookup"><span data-stu-id="7aaaf-108">View reports with information about detected files</span></span>
+## <a name="view-reports-with-information-about-detected-files"></a><span data-ttu-id="dc231-108">查看报告包含有关检测到的文件的信息</span><span class="sxs-lookup"><span data-stu-id="dc231-108">View reports with information about detected files</span></span>
 
-<span data-ttu-id="7aaaf-109">若要查看状态和有关通过 Office 365 ATP 检测到的文件的详细的信息，您可以使用威胁保护状态报告。</span><span class="sxs-lookup"><span data-stu-id="7aaaf-109">To view status and detailed information about files that were detected by Office 365 ATP, you can use the Threat protection status report.</span></span>
+<span data-ttu-id="dc231-109">若要查看状态和有关通过 Office 365 ATP 检测到的文件的详细的信息，您可以使用威胁保护状态报告。</span><span class="sxs-lookup"><span data-stu-id="dc231-109">To view status and detailed information about files that were detected by Office 365 ATP, you can use the Threat Protection Status report.</span></span>
   
-1. <span data-ttu-id="7aaaf-110">Office 365 安全性&amp;合规性中心中，选择**报告** \> **仪表板** \> **威胁保护状态**。</span><span class="sxs-lookup"><span data-stu-id="7aaaf-110">In the Office 365 Security &amp; Compliance Center, choose **Reports** \> **Dashboard** \> **Threat protection status**.</span></span>
+1. <span data-ttu-id="dc231-110">Office 365 安全性&amp;合规性中心中，选择**报告** \> **仪表板** \> **威胁保护状态**。</span><span class="sxs-lookup"><span data-stu-id="dc231-110">In the Office 365 Security &amp; Compliance Center, choose **Reports** \> **Dashboard** \> **Threat Protection Status**.</span></span>
     
-2. <span data-ttu-id="7aaaf-111">在报表的右上角，选择**查看详细信息表**。</span><span class="sxs-lookup"><span data-stu-id="7aaaf-111">In the upper right corner of the report, choose **View details table**.</span></span>
+2. <span data-ttu-id="dc231-111">在报表的右上角，选择**查看详细信息表**。</span><span class="sxs-lookup"><span data-stu-id="dc231-111">In the upper right corner of the report, choose **View details table**.</span></span>
     
-3. <span data-ttu-id="7aaaf-112">查看报告中检测到的文件的列表。</span><span class="sxs-lookup"><span data-stu-id="7aaaf-112">View the list of files that were detected in the report.</span></span>
+3. <span data-ttu-id="dc231-112">查看报告中检测到的文件的列表。</span><span class="sxs-lookup"><span data-stu-id="dc231-112">View the list of files that were detected in the report.</span></span>
     
-4. <span data-ttu-id="7aaaf-113">在查看详细的信息，包括执行的操作、 文件名、 文件路径，和列表中选择一个项目。</span><span class="sxs-lookup"><span data-stu-id="7aaaf-113">Select an item in the list to view detailed information, including actions taken, the file name, the file path, and more.</span></span>
+4. <span data-ttu-id="dc231-113">在查看详细的信息，包括执行的操作、 文件名、 文件路径，和列表中选择一个项目。</span><span class="sxs-lookup"><span data-stu-id="dc231-113">Select an item in the list to view detailed information, including actions taken, the file name, the file path, and more.</span></span>
     
-5. <span data-ttu-id="7aaaf-114">选择**高级分析**选项卡查看信息，如观察到的行为和分析详细信息。</span><span class="sxs-lookup"><span data-stu-id="7aaaf-114">Choose the **Advanced Analysis** tab to view information, such as observed behavior and analysis details.</span></span> 
+5. <span data-ttu-id="dc231-114">选择**高级分析**选项卡查看信息，如观察到的行为和分析详细信息。</span><span class="sxs-lookup"><span data-stu-id="dc231-114">Choose the **Advanced Analysis** tab to view information, such as observed behavior and analysis details.</span></span> 
   
-## <a name="view-and-take-action-on-files-in-quarantine"></a><span data-ttu-id="7aaaf-115">查看并隔离中对文件执行操作</span><span class="sxs-lookup"><span data-stu-id="7aaaf-115">View and take action on files in quarantine</span></span>
+## <a name="view-and-take-action-on-files-in-quarantine"></a><span data-ttu-id="dc231-115">查看并隔离中对文件执行操作</span><span class="sxs-lookup"><span data-stu-id="dc231-115">View and take action on files in quarantine</span></span>
 
-1. <span data-ttu-id="7aaaf-116">Office 365 安全性&amp;合规性中心中，选择**威胁管理** \> **审阅** \> **隔离**。</span><span class="sxs-lookup"><span data-stu-id="7aaaf-116">In the Office 365 Security &amp; Compliance Center, choose **Threat management** \> **Review** \> **Quarantine**.</span></span>
+1. <span data-ttu-id="dc231-116">Office 365 安全性&amp;合规性中心中，选择**威胁管理** \> **审阅** \> **隔离**。</span><span class="sxs-lookup"><span data-stu-id="dc231-116">In the Office 365 Security &amp; Compliance Center, choose **Threat management** \> **Review** \> **Quarantine**.</span></span>
     
-2. <span data-ttu-id="7aaaf-117">左上角，将筛选器从**电子邮件**更改为**内容**。</span><span class="sxs-lookup"><span data-stu-id="7aaaf-117">In the upper left corner, change the filter from **Email** to **Content**.</span></span>
+2. <span data-ttu-id="dc231-117">左上角，将筛选器从**电子邮件**更改为**内容**。</span><span class="sxs-lookup"><span data-stu-id="dc231-117">In the upper left corner, change the filter from **Email** to **Content**.</span></span>
     
-3. <span data-ttu-id="7aaaf-118">在查看详细的信息，包括文件的 URL 列表中选择一个项目。</span><span class="sxs-lookup"><span data-stu-id="7aaaf-118">Select an item in the list to view detailed information, including the file's URL.</span></span>
+3. <span data-ttu-id="dc231-118">在查看详细的信息，包括文件的 URL 列表中选择一个项目。</span><span class="sxs-lookup"><span data-stu-id="dc231-118">Select an item in the list to view detailed information, including the file's URL.</span></span>
     
-4. <span data-ttu-id="7aaaf-119">选择可用操作。</span><span class="sxs-lookup"><span data-stu-id="7aaaf-119">Choose an available action.</span></span>
+4. <span data-ttu-id="dc231-119">选择可用操作。</span><span class="sxs-lookup"><span data-stu-id="dc231-119">Choose an available action.</span></span>
     
-  - <span data-ttu-id="7aaaf-120">选择**版本&amp;报告**取消阻止的文件。</span><span class="sxs-lookup"><span data-stu-id="7aaaf-120">Choose **Release &amp; report** to unblock the file.</span></span> 
+  - <span data-ttu-id="dc231-120">选择**版本&amp;报告**取消阻止的文件。</span><span class="sxs-lookup"><span data-stu-id="dc231-120">Choose **Release &amp; report** to unblock the file.</span></span> 
     
-    <span data-ttu-id="7aaaf-121">选择**将报告发送给 Microsoft**以向 Microsoft 将该文件报告为误报。</span><span class="sxs-lookup"><span data-stu-id="7aaaf-121">Select **Send report to Microsoft** to report the file as a false positive to Microsoft.</span></span> 
+    <span data-ttu-id="dc231-121">选择**将报告发送给 Microsoft**以向 Microsoft 将该文件报告为误报。</span><span class="sxs-lookup"><span data-stu-id="dc231-121">Select **Send report to Microsoft** to report the file as a false positive to Microsoft.</span></span> 
     
-  - <span data-ttu-id="7aaaf-122">选择**文件下载**来进行调查进一步的文件。</span><span class="sxs-lookup"><span data-stu-id="7aaaf-122">Choose **Download file** to investigate the file further.</span></span> 
+  - <span data-ttu-id="dc231-122">选择**文件下载**来进行调查进一步的文件。</span><span class="sxs-lookup"><span data-stu-id="dc231-122">Choose **Download file** to investigate the file further.</span></span> 
     
-  - <span data-ttu-id="7aaaf-p102">选择**删除**以从隔离项目的列表中删除该文件。如果您选择此选项，还必须适用于商务或 Microsoft 团队从其各自的库中 SharePoint Online、 OneDrive 删除该文件。打开或共享，则此选项不会不取消阻止被文件。</span><span class="sxs-lookup"><span data-stu-id="7aaaf-p102">Choose **Delete** to remove the file from the list of quarantined items. If you choose this option, you must also delete the file from its respective library in SharePoint Online, OneDrive for Business, or Microsoft Teams. This option does not unblock a file from being opened or shared.</span></span> 
+  - <span data-ttu-id="dc231-p102">选择**删除**以从隔离项目的列表中删除该文件。如果您选择此选项，还必须适用于商务或 Microsoft 团队从其各自的库中 SharePoint Online、 OneDrive 删除该文件。打开或共享，则此选项不会不取消阻止被文件。</span><span class="sxs-lookup"><span data-stu-id="dc231-p102">Choose **Delete** to remove the file from the list of quarantined items. If you choose this option, you must also delete the file from its respective library in SharePoint Online, OneDrive for Business, or Microsoft Teams. This option does not unblock a file from being opened or shared.</span></span> 
     
-5. <span data-ttu-id="7aaaf-126">选择**关闭**以关闭的选定项的详细信息。</span><span class="sxs-lookup"><span data-stu-id="7aaaf-126">Choose **Close** to close the details for a selected item.</span></span> 
+5. <span data-ttu-id="dc231-126">选择**关闭**以关闭的选定项的详细信息。</span><span class="sxs-lookup"><span data-stu-id="dc231-126">Choose **Close** to close the details for a selected item.</span></span> 
   
-## <a name="related-topics"></a><span data-ttu-id="7aaaf-127">相关主题</span><span class="sxs-lookup"><span data-stu-id="7aaaf-127">Related topics</span></span>
+## <a name="related-topics"></a><span data-ttu-id="dc231-127">相关主题</span><span class="sxs-lookup"><span data-stu-id="dc231-127">Related topics</span></span>
 
-[<span data-ttu-id="7aaaf-128">Office 365 高级威胁防护</span><span class="sxs-lookup"><span data-stu-id="7aaaf-128">Office 365 Advanced Threat Protection</span></span>](office-365-atp.md)
+[<span data-ttu-id="dc231-128">Office 365 高级威胁防护</span><span class="sxs-lookup"><span data-stu-id="dc231-128">Office 365 Advanced Threat Protection</span></span>](office-365-atp.md)
   
-[<span data-ttu-id="7aaaf-129">查看 Office 365 高级威胁保护报告</span><span class="sxs-lookup"><span data-stu-id="7aaaf-129">View the reports for Office 365 Advanced Threat Protection</span></span>](view-reports-for-atp.md)
+[<span data-ttu-id="dc231-129">查看 Office 365 高级威胁保护报告</span><span class="sxs-lookup"><span data-stu-id="dc231-129">View the reports for Office 365 Advanced Threat Protection</span></span>](view-reports-for-atp.md)
   
-[<span data-ttu-id="7aaaf-130">Office 365 安全性权限&amp;合规性中心</span><span class="sxs-lookup"><span data-stu-id="7aaaf-130">Permissions in the Office 365 Security &amp; Compliance Center</span></span>](permissions-in-the-security-and-compliance-center.md)
+[<span data-ttu-id="dc231-130">Office 365 安全性权限&amp;合规性中心</span><span class="sxs-lookup"><span data-stu-id="dc231-130">Permissions in the Office 365 Security &amp; Compliance Center</span></span>](permissions-in-the-security-and-compliance-center.md)
 
-[<span data-ttu-id="7aaaf-131">为 Office 365 中的管理员管理隔离的邮件和文件</span><span class="sxs-lookup"><span data-stu-id="7aaaf-131">Manage quarantined messages and files as an administrator in Office 365</span></span>](manage-quarantined-messages-and-files.md)
+[<span data-ttu-id="dc231-131">为 Office 365 中的管理员管理隔离的邮件和文件</span><span class="sxs-lookup"><span data-stu-id="dc231-131">Manage quarantined messages and files as an administrator in Office 365</span></span>](manage-quarantined-messages-and-files.md)
   
 
