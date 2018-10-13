@@ -13,12 +13,12 @@ search.appverid:
 - MOE150
 ms.assetid: fe0b9b8f-faa9-44ff-8095-4d1b2f507b74
 description: 使用新的安全仪表板查看 Office 365 威胁保护状态，以及查看和操作安全警告。
-ms.openlocfilehash: 9f301bb819ec9c5c072cacee9060ff0e9672f039
-ms.sourcegitcommit: d85fc77cba3a17d5ddf215e2f506f61b499e0cda
+ms.openlocfilehash: d124ce07fbd3eba633e8c1e844ef3f83fc8fd04f
+ms.sourcegitcommit: e0c6f99d5514d8da8a70d9bd3616d1a1c0851254
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "23839076"
+ms.lasthandoff: 10/13/2018
+ms.locfileid: "25552360"
 ---
 # <a name="security-dashboard-overview"></a>安全仪表板概述 （英文)
 

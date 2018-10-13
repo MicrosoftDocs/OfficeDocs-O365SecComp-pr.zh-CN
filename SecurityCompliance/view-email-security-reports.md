@@ -12,12 +12,12 @@ search.appverid:
 - MOE150
 ms.assetid: 3a137e28-1174-42d5-99af-f18868b43e86
 description: 了解如何查找和使用电子邮件安全报告为您的组织与 Office 365 企业版。电子邮件安全报告可安全中&amp;合规性中心。
-ms.openlocfilehash: 0dd0c2ee7090e488d8619e71c6e4931f1934e9b0
-ms.sourcegitcommit: 099bbfb1d16b251fd5cf18ec6515faaf9a989176
+ms.openlocfilehash: ea5d60393809ef924d51435b695062fe51e772bd
+ms.sourcegitcommit: e0c6f99d5514d8da8a70d9bd3616d1a1c0851254
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "25454339"
+ms.lasthandoff: 10/13/2018
+ms.locfileid: "25552390"
 ---
 # <a name="view-email-security-reports-in-the-security-amp-compliance-center"></a>查看安全中的电子邮件安全报告&amp;合规性中心
 
@@ -43,9 +43,12 @@ ms.locfileid: "25454339"
     
 - [用户报告的邮件报告](view-email-security-reports.md#userreported)（新） ！ 
     
-## <a name="threat-protection-status-report-new"></a>威胁保护状态报告 （新） ！
+## <a name="threat-protection-status-report-new"></a>威胁 （新） ！ 的保护状态报告
 
 新的**威胁保护状态**报告是显示的已检测和阻止的 Exchange Online Protection 恶意电子邮件的智能报告。此报表显示有关标识为恶意软件或网络钓鱼尝试的电子邮件的信息。 
+
+> [!NOTE]
+> 威胁保护状态报告是适用于[Office 365 ATP](office-365-atp.md)或[Exchange Online Protection](eop/exchange-online-protection-eop.md) (EOP); 客户但是，ATP 客户威胁保护状态报告中显示的信息将可能包含比 EOP 客户可能会看到不同的数据。例如，EOP 客户可以查看关于恶意软件检测到的电子邮件，但不是[SharePoint Online、 OneDrive 或的 Microsoft 团队中检测到恶意文件](atp-for-spo-odb-and-teams.md)的信息，ATP 特定功能的信息。（[有关 ATP 报告详细了解](view-reports-for-atp.md)。）
   
 若要查看此报告中，安全中&amp;合规性中心中，转到**报告** \> **仪表板** \> **威胁保护状态**。
   
@@ -67,7 +70,7 @@ ms.locfileid: "25454339"
   
 ![恶意软件检测报告示例](media/a1ba61a3-565a-46d6-b0d5-6a6cff6b31d7.png)
   
-类似于其他报表，如威胁保护状态报告，报告显示数据的过去七天默认情况下。但是，您可以选择要更改的日期范围的**筛选器**。 
+类似于其他报表，如威胁保护状态报告，报表显示数据的过去七天默认情况下。但是，您可以选择要更改的日期范围的**筛选器**。 
   
 ## <a name="top-malware-report"></a>顶部的恶意软件报告
 
@@ -176,8 +179,8 @@ ms.locfileid: "25454339"
   
 |**角色组**|**其中分配**|**了解更多**|
 |:-----|:-----|:-----|
-| 以下各项之一：  <br/>  组织管理  <br/>  Security Administrator  <br/>  安全读者  <br/> |安全&amp;合规性中心  <br/> |[Office 365 安全性权限&amp;合规性中心](permissions-in-the-security-and-compliance-center.md) <br/> |
-| 以下各项之一：  <br/>  组织管理  <br/>  仅查看组织管理  <br/>  仅查看收件人角色  <br/>  遵从性管理  <br/> |Exchange 管理中心  <br/> |[Exchange Online 中的功能权限](https://technet.microsoft.com/library/jj200673%28v=exchg.150%29.aspx) <br/> |
+| 以下各项之一：  <br/><br/>-组织管理  <br/>--安全管理员  <br/>--安全读者  <br/> |安全&amp;合规性中心  <br/> |[Office 365 安全性权限&amp;合规性中心](permissions-in-the-security-and-compliance-center.md) <br/> |
+| 以下各项之一：  <br/><br/>-组织管理  <br/>-仅查看组织管理  <br/>-View-Only Recipients 角色  <br/>-合规性管理  <br/> |Exchange 管理中心  <br/> |[Exchange Online 中的功能权限](https://technet.microsoft.com/library/jj200673%28v=exchg.150%29.aspx) <br/> |
    
 ## <a name="what-if-the-reports-arent-showing-data"></a>如果报表不显示数据？
 
