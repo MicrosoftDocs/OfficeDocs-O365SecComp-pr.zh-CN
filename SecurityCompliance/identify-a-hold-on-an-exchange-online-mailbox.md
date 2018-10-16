@@ -12,12 +12,12 @@ search.appverid:
 - MET150
 ms.assetid: 6057daa8-6372-4e77-a636-7ea599a76128
 description: 了解如何识别的不同类型的保留，可以放在 Office 365 邮箱。保留的这些类型包括诉讼保留、 电子数据展示保留和 Office 365 保留策略。您还可以确定是否用户已从组织范围内保留策略中排除
-ms.openlocfilehash: 375bd86df370fe34fbe59f6581836da7e9d06515
-ms.sourcegitcommit: 82fd4c85b952819157fbb13175c7b2dbbdff510f
+ms.openlocfilehash: 821ec2a8be9ecd89a13ad9ad0378bc6e24fcee1e
+ms.sourcegitcommit: b164d4af65709133e0b512a4327a70fae13a974d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/13/2018
-ms.locfileid: "23965259"
+ms.lasthandoff: 10/16/2018
+ms.locfileid: "25577071"
 ---
 # <a name="how-to-identify-the-type-of-hold-placed-on-an-exchange-online-mailbox"></a>如何识别为 Exchange Online 邮箱设置的保留类型
 
@@ -172,7 +172,7 @@ Get-Mailbox <username> |FL ComplianceTagHoldApplied
 
 ## <a name="managing-mailboxes-on-delay-hold"></a>管理邮箱延迟保留
 
-从邮箱中删除任何类型的保留项后， *DelayHoldApplied*邮箱属性的值设置为**True**。这称为*延迟保留*，意味着 30 天，以防止被永久删除数据延迟，实际的保留项的删除 （清除） 从邮箱。这使管理员能够搜索或恢复将被清除后保留被实际删除的邮箱项目。延迟保留邮箱置于，当邮箱是仍可保持不受限制的持续时间，作为邮箱是否在诉讼保留。30 天后过期延迟保留，和 Office 365 将自动尝试删除延迟保留 （通过将*DelayHoldApplied*属性设置为**False**），以便将实际删除保留。之后将*DelayHoldApplied*属性设为**False**，标记为删除的项目将被清除的下次由托管文件夹助理处理邮箱。
+从邮箱中删除任何类型的保留项后， *DelayHoldApplied*邮箱属性的值设置为**True**。托管文件夹助理处理邮箱和检测已删除保留在下次出现此情况。这称为*延迟保留*，意味着 30 天，以防止被永久删除数据延迟，实际的保留项的删除 （清除） 从邮箱。这使管理员能够搜索或恢复将被清除后保留被实际删除的邮箱项目。延迟保留邮箱置于，当邮箱是仍可保持不受限制的持续时间，作为邮箱是否在诉讼保留。30 天后过期延迟保留，和 Office 365 将自动尝试删除延迟保留 （通过将*DelayHoldApplied*属性设置为**False**），以便将实际删除保留。之后将*DelayHoldApplied*属性设为**False**，标记为删除的项目将被清除的下次由托管文件夹助理处理邮箱。
 
 若要查看邮箱的*DelayHoldApplied*属性的值，请在 Exchange Online PowerShell 中运行以下命令。
 

@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.assetid: a85e1c87-a48e-4715-bfa9-d5275cde67b0
 description: 管理员： 删除用户的 Exchange Online 邮箱，可恢复的项目文件夹中的项目，即使该邮箱置于合法保留。这是有效的方法来删除已意外溢出至 Office 365 的数据。
-ms.openlocfilehash: 9174e953ebdd7f0032f411b99a814aeacd880a1e
-ms.sourcegitcommit: dd58ed6fd424272e361bc3c109ecd6d63d673048
+ms.openlocfilehash: a10965ad088da98b4e4d84d823c124e5b192d505
+ms.sourcegitcommit: b164d4af65709133e0b512a4327a70fae13a974d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/15/2018
-ms.locfileid: "25566883"
+ms.lasthandoff: 10/16/2018
+ms.locfileid: "25577081"
 ---
 # <a name="delete-items-in-the-recoverable-items-folder-of-cloud-based-mailboxes-on-hold---admin-help"></a>删除项目可恢复邮件文件夹中的基于云的邮箱置于保留状态的管理员帮助
 
@@ -245,22 +245,22 @@ $CaseHold.Name
   
 ## <a name="step-4-remove-the-delay-hold-from-the-mailbox"></a>步骤 4： 删除邮箱延迟保留项
 
-从邮箱中删除任何类型的保留项后， *DelayHoldApplied*邮箱属性的值设置为**True**。这称为*延迟保留*，意味着 30 天，以防止被永久删除数据延迟，实际的保留项的删除 （清除） 从邮箱。  延迟保留邮箱置于，当邮箱是仍可保持不受限制的持续时间，作为邮箱是否在诉讼保留。（延迟保留项的旨在使管理员可以搜索或恢复将被清除后保留被删除的邮箱项目。）Noe 的 30 天后延迟保留过期，和 Office 365 将自动尝试删除延迟保留 （通过将*DelayHoldApplied*属性设置为**False**），以便将实际删除保留。 
+从邮箱中删除任何类型的保留项后， *DelayHoldApplied*邮箱属性的值设置为**True**。托管文件夹助理处理邮箱和检测已删除保留在下次出现此情况。这称为*延迟保留*，意味着实际删除的保留项的延迟，30 天，以防止数据从邮箱被永久删除。（延迟保留项的旨在使管理员可以搜索或恢复将被清除后保留被删除的邮箱项目。） 延迟保留邮箱置于，当邮箱是仍可保持不受限制的持续时间，作为邮箱是否在诉讼保留。30 天后过期延迟保留，和 Office 365 将自动尝试 （通过将*DelayHoldApplied*属性设置为**False**） 删除延迟保留以便实际删除该保留。 
 
-您可以删除在步骤 5 中的项目之前，您必须从邮箱中删除延迟保留。运行以下命令在 Exchange Online PowerShell 中删除延迟保留项： 
- 
-```
-Set-Mailbox <username> -RemoveDelayHoldApplied
-```
-请注意，您必须将分配给法律挂起角色在 Exchange Online 使用*RemoveDelayHoldApplied*参数。
-
-若要验证已删除延迟保留，运行以下命令。
+您可以删除在步骤 5 中的项目之前，您必须从邮箱中删除延迟保留。首先，确定是否延迟保留应用于邮箱的 Exchange Online PowerShell 中运行以下命令：
 
 ```
 Get-Mailbox <username> | FL DelayHoldApplied
 ```
 
-*DelayHoldApplied*属性的值为**False**指示已删除的延迟。
+如果*DelayHoldApplied*属性的值设置为**False**，已不被邮箱上设置延迟保留。您可以转到步骤 5 和删除可恢复邮件文件夹中的项目。
+
+如果*DelayHoldApplied*属性的值设置为**True**，则运行以下命令以删除延迟保留：
+
+```
+Set-Mailbox <username> -RemoveDelayHoldApplied
+```
+请注意，您必须将分配给法律挂起角色在 Exchange Online 使用*RemoveDelayHoldApplied*参数。
 
 ## <a name="step-5-delete-items-in-the-recoverable-items-folder"></a>步骤 5： 删除可恢复邮件文件夹中的项目
 
