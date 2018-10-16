@@ -1,5 +1,5 @@
 ---
-title: 使用 Office 365 客户密钥进行服务加密的常见问题解答
+title: 有关使用 Office 365 客户密钥执行服务加密的 FAQ
 ms.author: krowley
 author: kccross
 manager: laurawi
@@ -12,14 +12,14 @@ search.appverid:
 - MET150
 ms.assetid: 41ae293a-bd5c-4083-acd8-e1a2b4329da6
 description: 除了基线，通过 BitLocker 和分布式密钥管理器 (DKM) 启用的音量级别加密 Office 365 提供加密的 Office 365，包括从交换的数据中的客户内容应用程序级别添加的层联机，业务、 SharePoint Online，和 OneDrive for Business 的 Skype。这称为服务加密。
-ms.openlocfilehash: 38731d22b78274e42b0886c41884a0395d8df69f
-ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+ms.openlocfilehash: ceba35233872bb65b7706ed4e11a263057adc6c1
+ms.sourcegitcommit: 659b5f5b38ef7e838cdb44eaa38c18e48d922768
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22559237"
+ms.lasthandoff: 10/16/2018
+ms.locfileid: "25575326"
 ---
-# <a name="service-encryption-with-customer-key-for-office-365-faq"></a>使用 Office 365 客户密钥进行服务加密的常见问题解答
+# <a name="service-encryption-with-customer-key-for-office-365-faq"></a>有关使用 Office 365 客户密钥执行服务加密的 FAQ
 
 除了基线，通过 BitLocker 和分布式密钥管理器 (DKM) 启用的音量级别加密 Office 365 提供加密的 Office 365，包括从交换的数据中的客户内容应用程序级别添加的层联机，业务、 SharePoint Online，和 OneDrive for Business 的 Skype。这称为服务加密。
   
@@ -29,8 +29,8 @@ ms.locfileid: "22559237"
   
 ## <a name="what-is-service-encryption-with-customer-key"></a>与客户参数服务加密是什么？
 
-客户参数是一项功能，允许您设置和管理用于在 Office 365 中的 rest 加密数据的键。此功能利用服务加密，这是由 Office 365 Exchange 和 SharePoint 的加密。加密服务提供了超出什么 BitLocker 可以提供-即更高版本中纵深防御攻击的优势。服务加密时攻击者尝试绕过用于处理所有客户数据访问请求的 Office 365 的访问控制系统强对策。这是因为服务加密意味着服务器管理员没有控件或偶数访问加密密钥，并且不能在与 BitLocker 加密，禁用与不同。因此，具有管理访问服务器承载使用服务加密加密的客户数据的攻击者将不能读取客户数据，并且即使加密的数据复制关闭服务器将保持无用。 
-  
+客户参数增强您的组织能够满足合规性要求指定排列云服务提供商的关键功能的要求。与客户参数提供，并为您 Office 365 存放的数据应用程序级别控制加密密钥。因此，您可能进行控制和撤消贵组织的键，您应确定退出服务。由撤消注册表项，数据不可读到服务。密钥吊销是数据删除达到路径上的第一步。
+
 ## <a name="what-office-365-data-at-rest-is-covered-by-customer-key"></a>由客户参数覆盖静态哪些 Office 365 数据？
 <a name="WhatDataIsCoveredbyCustomerKey"> </a>
 

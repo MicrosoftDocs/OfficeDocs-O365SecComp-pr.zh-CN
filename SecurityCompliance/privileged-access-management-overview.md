@@ -13,12 +13,12 @@ ms.collection: Strat_O365_IP
 ms.custom: Ent_Solutions
 ms.assetid: ''
 description: 使用本主题可了解有关权限的详细信息访问 Office 365 中的管理
-ms.openlocfilehash: 07e1f9090418e4261fef188ceb109c1b8083d34c
-ms.sourcegitcommit: c168410974bc90aaf55f1dcaa9e05c09b2b78d76
+ms.openlocfilehash: e92bbecd5957261c1eaf3088d872ae6572b7f235
+ms.sourcegitcommit: 659b5f5b38ef7e838cdb44eaa38c18e48d922768
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/25/2018
-ms.locfileid: "25011858"
+ms.lasthandoff: 10/16/2018
+ms.locfileid: "25575336"
 ---
 # <a name="privileged-access-management-in-office-365"></a>Office 365 中的管理访问权限
 
@@ -31,7 +31,7 @@ ms.locfileid: "25011858"
 
 特权访问管理补充中的 Office 365 安全体系结构的其他数据和访问功能保护。通过启用安全的集成方法的一部分的访问权限的管理和保护您的组织，可用于最大限度地保护敏感信息和 Office 365 配置设置的分层的安全模型。如下图所示下，启用特权访问管理帮助基于提供使用本机数据加密的 Office 365 和 Office 365 服务的基于角色的访问控制安全模型的保护。在与[Azure AD 特权标识管理](https://docs.microsoft.com/azure/active-directory/active-directory-privileged-identity-management-configure)一起使用时，这两个功能提供实时中访问在不同的范围的访问控制。
 
-![Office 365 中的分层的保护](media/pam-layered-protection.jpg)
+![Office 365 中的分层的保护](media/pam-layered-protection.png)
 
 特权访问 Office 365 中的管理可以定义和 Azure AD 特权身份管理能够执行多个任务适用级别**角色**的保护而**任务**级别范围。 Azure AD 权限身份管理主要允许管理 AD 角色和角色组的访问，Office 365 中的管理访问权限时仅在任务级别上应用。
 

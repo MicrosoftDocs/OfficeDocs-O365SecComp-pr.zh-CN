@@ -7,18 +7,19 @@ ms.date: 6/26/2018
 ms.audience: ITPro
 ms.topic: conceptual
 ms.service: o365-administration
+ROBOTS: NOINDEX, NOFOLLOW
 localization_priority: Normal
 search.appverid:
 - MET150
 ms.collection: Ent_O365
 ms.assetid: 0c03e6b3-e73f-4316-9e2b-bf4091ae96bb
 description: Office 365 利用大量的不同的证书提供商。下面介绍已知客户访问 Office 365 时可能遇到的 Office 365 根证书的完整的列表。您可能需要您自己的基础结构中安装证书的信息，请参阅 Plan 第三方 SSL 证书的 Office 365。下面的证书信息适用于 Office 365 的所有全球和国家/地区云实例。
-ms.openlocfilehash: 1dcc2dc38bb8e3239a3be3983791b0c60917dc5e
-ms.sourcegitcommit: 13f40ff7c1799152bf45af2d8110f4f3235b770a
+ms.openlocfilehash: 97e00833e57f8f6b7352650b0efdef51ddba77fa
+ms.sourcegitcommit: 659b5f5b38ef7e838cdb44eaa38c18e48d922768
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "25549741"
+ms.lasthandoff: 10/16/2018
+ms.locfileid: "25575356"
 ---
 # <a name="office-365-certificate-chains"></a>Office 365 证书链
 
@@ -27,7 +28,7 @@ Office 365 利用大量的不同的证书提供商。下面介绍已知客户访
 
 |**证书类型**|**P7b 下载**|**CRL 终结点**|**OCSP 终结点**|**AIA 终结点**|
 |:-----|:-----|:-----|:-----|:-----|
-|[公共受信任的根证书](https://support.office.com/article/0c03e6b3-e73f-4316-9e2b-bf4091ae96bb#rootcerts) <br/> |[Office 365 根证书绑定 (P7B)](http://download.microsoft.com/download/A/5/A/A5AE01F3-D19B-4A11-9407-801263CEF72C/O365_Root_Certs_20170321.p7b) <br/> |crl.globalsign.net  <br/> www.d-trust.net  <br/> |不适用  <br/> |不适用  <br/> |
+|[公共受信任的根证书](https://support.office.com/article/0c03e6b3-e73f-4316-9e2b-bf4091ae96bb#rootcerts) <br/> |[Office 365 根证书绑定 (P7B)](http://download.microsoft.com/download/A/5/A/A5AE01F3-D19B-4A11-9407-801263CEF72C/O365_Root_Certs_20170321.p7b) <br/> |crl.globalsign.net  <br/> www.d-trust.net  <br/> |N/A  <br/> |N/A  <br/> |
 |[公共受信任的中间证书](https://support.office.com/article/0c03e6b3-e73f-4316-9e2b-bf4091ae96bb#IntermediateCerts) <br/> |[Office 365 中间证书绑定 (P7B)](http://download.microsoft.com/download/4/D/5/4D5339A4-0A4A-46AB-AE52-B179DEDA4BEC/O365_Intermediate_Certs_20170321.p7b)  <br/> |cdp1.public trust.com  <br/> crl.cnnic.cn  <br/> crl.entrust.net  <br/> crl.globalsign.com  <br/> crl.globalsign.net  <br/> crl.identrust.com  <br/> crl.thawte.com  <br/> crl3.digicert.com  <br/> crl4.digicert.com  <br/> s1.symcb.com  <br/> www.d-trust.net  <br/> |isrg.trustid.ocsp.identrust.com  <br/> ocsp.digicert.com  <br/> ocsp.entrust.net  <br/> ocsp.globalsign.com  <br/> ocsp.omniroot.com  <br/> ocsp.startssl.com  <br/> ocsp.thawte.com  <br/> ocsp2.globalsign.com  <br/> ocspcnnicroot.cnnic.cn  <br/> 根-c3-ca2-2009.ocsp.d-trust.net  <br/> root-c3-ca2-ev-2009.ocsp.d-trust.net  <br/> s2.symcb.com  <br/> |aia.startssl.com  <br/> apps.identrust.com  <br/> cacert.omniroot.com  <br/> www.cnnic.cn  <br/> |
    
 展开根和下面有关证书提供商的其他详细信息，请参阅的中间部分。
