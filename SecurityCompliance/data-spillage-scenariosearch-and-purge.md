@@ -12,12 +12,12 @@ search.appverid:
 - MET150
 ms.assetid: d945f7dd-f62f-4ca7-b3e7-469824cfd493
 description: 使用 Office 365 电子数据展示和搜索工具来管理并响应在组织中的数据泄漏事件。
-ms.openlocfilehash: 2bf17923408bd5cf8325d27a38595331d169906f
-ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+ms.openlocfilehash: 4da8efdb6f5d129e08d85f9b6c94726a7d099cb3
+ms.sourcegitcommit: dd58ed6fd424272e361bc3c109ecd6d63d673048
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22524912"
+ms.lasthandoff: 10/15/2018
+ms.locfileid: "25566873"
 ---
 # <a name="ediscovery-solution-series-data-spillage-scenario---search-and-purge"></a>电子数据展示解决方案系列： 数据泄漏方案-搜索和清除
 
@@ -159,6 +159,8 @@ ms.locfileid: "22524912"
 - 请参阅"步骤 2： 准备邮箱"中[删除在可恢复项目文件夹中的基于云的邮箱的保留的项目](delete-items-in-the-recoverable-items-folder-of-mailboxes-on-hold.md#step-2-prepare-the-mailbox)有关禁用单个项目恢复的说明。 
     
 - 请参阅"步骤 3： 删除邮箱的所有保留项"中[删除在可恢复项目文件夹中的基于云的邮箱的保留的项目](delete-items-in-the-recoverable-items-folder-of-mailboxes-on-hold.md#step-3-remove-all-holds-from-the-mailbox)有关如何从邮箱中删除保持或保留策略的说明。 
+
+- 请参阅"步骤 4： 删除延迟从邮箱中保留"中[删除在可恢复项目文件夹中的基于云的邮箱的保留的项目](delete-items-in-the-recoverable-items-folder-of-mailboxes-on-hold.md#step-4-remove-the-delay-hold-from-the-mailbox)有关删除后删除任何类型的保留邮箱发出的延迟保留项的说明。
     
  **重要：** 删除保留或保留策略之前，请与记录管理或法律部门。您的组织可能有定义上的邮箱是否保留策略或数据泄漏事件优先。 
   
@@ -168,7 +170,7 @@ ms.locfileid: "22524912"
 
 使用收集和准备步骤 6 和创建和精简查找包含溅入的数据的电子邮件的步骤 3 中的搜索查询中的邮箱位置，您可以立即永久删除溅入的数据。如前所述，您必须为其分配邮箱导入导出角色在 Exchange Online 中删除邮件使用以下过程。
   
-1. [连接到 Exchange Online PowerShell 中](https://go.microsoft.com/fwlink/?linkid=396554)。
+1. [连接到 Exchange Online PowerShell](https://go.microsoft.com/fwlink/?linkid=396554)。
     
 2. 运行以下命令：
     
@@ -198,7 +200,7 @@ ms.locfileid: "22524912"
   
 ### <a name="reverting-the-mailboxes-to-their-previous-state"></a>还原到其以前的状态的邮箱
 
-如果您已经更改准备邮箱溅入的数据被删除之前的步骤 6 中的任何邮箱配置，您需要将其还原为其以前的状态。请参阅"步骤 5： 将恢复其先前状态的邮箱"中[删除在可恢复项目文件夹中的基于云的邮箱的保留的项目](delete-items-in-the-recoverable-items-folder-of-mailboxes-on-hold.md#step-5-revert-the-mailbox-to-its-previous-state)。
+如果您已经更改准备邮箱溅入的数据被删除之前的步骤 6 中的任何邮箱配置，您需要将其还原为其以前的状态。请参阅"步骤 6： 将恢复其先前状态的邮箱"中[删除在可恢复项目文件夹中的基于云的邮箱的保留的项目](delete-items-in-the-recoverable-items-folder-of-mailboxes-on-hold.md#step-6-revert-the-mailbox-to-its-previous-state)。
   
 ### <a name="deleting-the-search-query"></a>删除搜索查询
 

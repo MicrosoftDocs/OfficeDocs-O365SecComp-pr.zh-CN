@@ -3,7 +3,7 @@ title: 删除项目可恢复邮件文件夹中的基于云的邮箱置于保留�
 ms.author: markjjo
 author: markjjo
 manager: laurawi
-ms.date: 9/21/2017
+ms.date: ''
 ms.audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.assetid: a85e1c87-a48e-4715-bfa9-d5275cde67b0
 description: 管理员： 删除用户的 Exchange Online 邮箱，可恢复的项目文件夹中的项目，即使该邮箱置于合法保留。这是有效的方法来删除已意外溢出至 Office 365 的数据。
-ms.openlocfilehash: c984bcaa35a9bc7bc30e11d68ba8f7f0ce75b64d
-ms.sourcegitcommit: 31e0d94244c76a9f5118efee8bbc93395d080f91
+ms.openlocfilehash: 9174e953ebdd7f0032f411b99a814aeacd880a1e
+ms.sourcegitcommit: dd58ed6fd424272e361bc3c109ecd6d63d673048
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/01/2018
-ms.locfileid: "23796878"
+ms.lasthandoff: 10/15/2018
+ms.locfileid: "25566883"
 ---
 # <a name="delete-items-in-the-recoverable-items-folder-of-cloud-based-mailboxes-on-hold---admin-help"></a>删除项目可恢复邮件文件夹中的基于云的邮箱置于保留状态的管理员帮助
 
@@ -33,16 +33,18 @@ Exchange Online 邮箱的可恢复邮件文件夹存在以防止被意外或恶�
 
 [步骤 3： 从邮箱中删除所有保留项](#step-3-remove-all-holds-from-the-mailbox)
 
-[步骤 4： 删除可恢复邮件文件夹中的项目](#step-4-delete-items-in-the-recoverable-items-folder)
+[步骤 4： 删除邮箱延迟保留项](#step-4-remove-the-delay-hold-from-the-mailbox)
 
-[步骤 5： 将恢复其先前状态的邮箱](#step-5-revert-the-mailbox-to-its-previous-state)
+[步骤 5： 删除可恢复邮件文件夹中的项目](#step-5-delete-items-in-the-recoverable-items-folder)
+
+[步骤 6： 将恢复其先前状态的邮箱](#step-6-revert-the-mailbox-to-its-previous-state)
   
 > [!CAUTION]
 > 本文中所述的过程将导致数据被永久删除 （清除） 从 Exchange Online 邮箱。这意味着您从可恢复邮件文件夹中删除的消息无法恢复，不能用于法律或其他合规性目的。如果您想要将置于保持状态的诉讼保留，就地保留，一部分的邮箱中删除邮件保留电子数据展示，或在 Office 365 安全性中创建 Office 365 保留策略&amp;合规性中心，检查您的记录管理或法律之前删除保留项的部门。您的组织可能必须定义上的邮箱是否保留策略或数据泄漏事件优先。 
   
-## <a name="before-you-begin"></a>准备工作
+## <a name="before-you-begin"></a>开始之前
 
-- 您必须同时分配的以下管理角色在 Exchange Online 搜索并删除在步骤 4 可恢复邮件文件夹中的邮件。
+- 您必须同时分配的以下管理角色在 Exchange Online 搜索并删除在步骤 5 中可恢复邮件文件夹中的邮件。
     
   - **邮箱搜索**-此角色可使您能够搜索组织中的邮箱。默认情况下，Exchange 管理员不分配此角色。要将自己分配此角色，将自己添加为发现管理角色组的成员在 Exchange Online。 
     
@@ -56,13 +58,13 @@ Exchange Online 邮箱的可恢复邮件文件夹存在以防止被意外或恶�
   
 ## <a name="step-1-collect-information-about-the-mailbox"></a>步骤 1： 收集有关邮箱的信息
 
-此第一个步骤是收集从目标邮箱将影响此过程的所选的属性。确保记下这些设置，或将其保存到文本文件中，因为您将更改某些这些属性，然后还原到步骤 5 中的原始值，从可恢复邮件文件夹中删除项目之后。下面是您需要收集邮箱属性的列表。
+此第一个步骤是收集从目标邮箱将影响此过程的所选的属性。确保记下这些设置，或将其保存到文本文件中，因为您将更改某些这些属性，然后还原回步骤 6 中的原始值，从可恢复邮件文件夹中删除项目之后。下面是您需要收集邮箱属性的列表。
   
 -  *SingleItemRecoveryEnabled*和*RetainDeletedItemsFor* ;如有必要，将禁用单个恢复并增加步骤 3 中的已删除的邮件保留期。 
     
 -  *LitigationHoldEnabled*和*InPlaceHolds* ;您需要确定邮箱置于，以便可以在步骤 3 中临时删除它们的所有保留项。请参阅有关如何确定可能置于邮箱类型保留提示的[详细信息](delete-items-in-the-recoverable-items-folder-of-mailboxes-on-hold.md#moreinfo)部分。 
     
-此外，您需要获取邮箱客户端访问设置，因此，以便所有者 （或其他用户） 不能在此过程访问邮箱，您可以暂时禁用它们。最后，您可以在可恢复邮件文件夹中获取的当前大小和项目数。删除在步骤 4 可恢复邮件文件夹中的项目后，您将使用此信息来验证已实际删除项目。
+此外，您需要获取邮箱客户端访问设置，因此，以便所有者 （或其他用户） 不能在此过程访问邮箱，您可以暂时禁用它们。最后，您可以在可恢复邮件文件夹中获取的当前大小和项目数。删除在步骤 5 中可恢复邮件文件夹中的项目后，您将使用此信息来验证已实际删除项目。
   
 1. [连接到 Exchange Online PowerShell 中](https://go.microsoft.com/fwlink/?linkid=396554)。确保用于已分配 Exchange Online 中的适当的管理角色的管理员帐户的用户名和密码。 
     
@@ -114,7 +116,7 @@ Exchange Online 邮箱的可恢复邮件文件夹存在以防止被意外或恶�
     Get-MailboxFolderStatistics <username> -FolderScope RecoverableItems -Archive | FL Name,FolderAndSubfolderSize,ItemsInFolderAndSubfolders
     ```
 
-   删除在步骤 4 中的项目时，您可以选择删除或删除用户的主存档邮箱中可恢复邮件文件夹中的项目。请注意，是否为邮箱启用了自动扩展存档，则辅助存档邮箱中的项目不会删除。
+   删除在步骤 5 中的项目时，您可以选择删除或删除用户的主存档邮箱中可恢复邮件文件夹中的项目。请注意，是否为邮箱启用了自动扩展存档，则辅助存档邮箱中的项目不会删除。
   
 ## <a name="step-2-prepare-the-mailbox"></a>步骤 2： 准备邮箱
 
@@ -122,11 +124,11 @@ Exchange Online 邮箱的可恢复邮件文件夹存在以防止被意外或恶�
   
 - **禁用客户端对邮箱的访问权**，以便邮箱所有者无法访问其邮箱并在此过程的邮箱数据进行任何更改。 
     
-- 为 30 天**增加已删除的邮件保留期限**（Exchange Online 中的最大值），以便之前可以在步骤 4 中删除这些项目不清除从可恢复邮件文件夹。 
+- 为 30 天**增加已删除的邮件保留期限**（Exchange Online 中的最大值），以便在步骤 5 中删除之前，项目不从可恢复邮件文件夹中清除。 
     
-- **禁用单个项目的恢复**的项目以便不会保留 （已删除的邮件保留期限的持续时间） 后删除从步骤 4 中的可恢复项目文件夹。 
+- **禁用单个项目的恢复**的项目以便不会保留 （已删除的邮件保留期限的持续时间） 后删除从步骤 5 中可恢复邮件文件夹。 
     
-- **禁用托管文件夹助理**，以便使其不处理该邮箱并保留在步骤 4 中删除的项目。 
+- **禁用托管文件夹助理**，以便使其不处理该邮箱并保留在步骤 5 中删除的项目。 
     
 在 Exchange Online PowerShell 中执行以下步骤。
   
@@ -162,7 +164,7 @@ Exchange Online 邮箱的可恢复邮件文件夹存在以防止被意外或恶�
 
 ## <a name="step-3-remove-all-holds-from-the-mailbox"></a>步骤 3： 从邮箱中删除所有保留项
 
-您可以从可恢复邮件文件夹中删除项目之前的最后一步是删除所有保留项 （即在步骤 1 中确定） 邮箱置于。以便不会保留项，从可恢复邮件文件夹删除后，必须删除所有保留项。以下各节包含有关删除邮箱的保留项的不同类型的信息。请参阅有关如何确定可能置于邮箱类型保留提示的[详细信息](#more-information)部分。 
+您可以从可恢复邮件文件夹中删除项目之前的最后一步是删除所有保留项 （即在步骤 1 中确定） 邮箱置于。以便不会保留项，从可恢复邮件文件夹删除后，必须删除所有保留项。以下各节包含有关删除邮箱的保留项的不同类型的信息。请参阅有关如何确定可能置于邮箱类型保留提示的[详细信息](#more-information)部分。有关其他信息，请参阅[如何识别的类型保留放置在 Exchange Online 邮箱](identify-a-hold-on-an-exchange-online-mailbox.md)。
   
 > [!CAUTION]
 > 如前面所述，请与您的记录管理或法律部门邮箱中删除保留之前。 
@@ -208,7 +210,21 @@ Get-RetentionCompliancePolicy <retention policy GUID without prefix> | FL Name
 ```
 
 确定组织范围内的 Office 365 保留策略后，转到**日期调控** \> **保留**页面安全中的&amp;合规性中心编辑中标识的每个组织范围内保留策略上一步骤，并将邮箱添加到已排除的收件人列表。此操作将保留策略中删除用户邮箱。 
-  
+
+### <a name="office-365-retention-labels"></a>Office 365 保留标签
+
+只要用户应用配置保留内容或保留，然后删除任何文件夹或其邮箱中的项目的内容的标签，则将*ComplianceTagHoldApplied* mailbox 属性设置为**True**。这种情况下，邮箱被认为保持状态，就像它置于诉讼保留或分配给 Office 365 保留策略。
+
+若要查看*ComplianceTagHoldApplied*属性的值，请在 Exchange Online PowerShell 中运行以下命令：
+
+```
+Get-Mailbox <username> |FL ComplianceTagHoldApplied
+```
+
+您已确定邮箱位于后保留因为保留标签应用于文件夹或项目，您可以使用内容搜索工具中安全性和合规性中心搜索标记的项目使用 ComplianceTag 搜索条件。有关详细信息，请参阅[关键字查询及搜索内容搜索条件](keyword-queries-and-search-conditions.md#conditions-for-common-properties)中的"搜索条件"部分。
+
+有关标签的详细信息，请参阅[Office 365 概述标签](labels.md)。
+
  ### <a name="ediscovery-case-holds"></a>电子数据展示事例包含
   
 运行以下命令，[安全&amp;合规性中心 PowerShell](https://go.microsoft.com/fwlink/?linkid=627084)标识保留项应用于邮箱电子数据展示事例相关联。使用的 GUID (不包括`UniH`前缀) 的电子数据展示保留在步骤 1 中确定。请注意，第二个命令显示的电子数据展示案例保留项相关联; 名称第三个命令显示的保留项的名称。 
@@ -227,7 +243,26 @@ $CaseHold.Name
 
 您已确定的电子数据展示事例并保留名称后，转到**搜索&amp;调查**\>安全中的**电子数据展示**页&amp;合规性中心打开这种情况，并从保留中删除邮箱。有关详细信息，请参阅[管理 Office 365 安全性的电子数据展示事例&amp;合规性中心](manage-ediscovery-cases.md)。
   
-## <a name="step-4-delete-items-in-the-recoverable-items-folder"></a>步骤 4： 删除可恢复邮件文件夹中的项目
+## <a name="step-4-remove-the-delay-hold-from-the-mailbox"></a>步骤 4： 删除邮箱延迟保留项
+
+从邮箱中删除任何类型的保留项后， *DelayHoldApplied*邮箱属性的值设置为**True**。这称为*延迟保留*，意味着 30 天，以防止被永久删除数据延迟，实际的保留项的删除 （清除） 从邮箱。  延迟保留邮箱置于，当邮箱是仍可保持不受限制的持续时间，作为邮箱是否在诉讼保留。（延迟保留项的旨在使管理员可以搜索或恢复将被清除后保留被删除的邮箱项目。）Noe 的 30 天后延迟保留过期，和 Office 365 将自动尝试删除延迟保留 （通过将*DelayHoldApplied*属性设置为**False**），以便将实际删除保留。 
+
+您可以删除在步骤 5 中的项目之前，您必须从邮箱中删除延迟保留。运行以下命令在 Exchange Online PowerShell 中删除延迟保留项： 
+ 
+```
+Set-Mailbox <username> -RemoveDelayHoldApplied
+```
+请注意，您必须将分配给法律挂起角色在 Exchange Online 使用*RemoveDelayHoldApplied*参数。
+
+若要验证已删除延迟保留，运行以下命令。
+
+```
+Get-Mailbox <username> | FL DelayHoldApplied
+```
+
+*DelayHoldApplied*属性的值为**False**指示已删除的延迟。
+
+## <a name="step-5-delete-items-in-the-recoverable-items-folder"></a>步骤 5： 删除可恢复邮件文件夹中的项目
 
 现在，您就可以实际使用[Search-mailbox](https://go.microsoft.com/fwlink/?linkid=852595) cmdlet 在 Exchange Online PowerShell 中删除可恢复邮件文件夹中的项目。运行**Search-mailbox** cmdlet 时，您可以具有三个选项。 
   
@@ -308,7 +343,7 @@ Get-MailboxFolderStatistics <username> -FolderScope RecoverableItems | FL Name,F
 Get-MailboxFolderStatistics <username> -FolderScope RecoverableItems -Archive | FL Name,FolderAndSubfolderSize,ItemsInFolderAndSubfolders
 ```
   
-## <a name="step-5-revert-the-mailbox-to-its-previous-state"></a>步骤 5： 将恢复其先前状态的邮箱
+## <a name="step-6-revert-the-mailbox-to-its-previous-state"></a>步骤 6： 将恢复其先前状态的邮箱
 
 最后一步是将还原回先前的配置的邮箱。这意味着您在步骤 2 中更改的属性重置并重新应用您在步骤 3 中删除保留。这包括：
   
@@ -387,9 +422,11 @@ Get-MailboxFolderStatistics <username> -FolderScope RecoverableItems -Archive | 
     Get-CASMailbox <username> | FL EwsEnabled,ActiveSyncEnabled,MAPIEnabled,OWAEnabled,ImapEnabled,PopEnabled
     ```
   
-## <a name="more-information"></a>详细信息
+## <a name="more-information"></a>更多信息
 
-下面是一个表，介绍如何标识不同类型的保留项基于*InPlaceHolds*属性中的值，当您运行**Get-mailbox**或**Get-organizationconfig** cmdlet。如上文所述，必须删除所有保留项和 Office 365 之前邮箱的保留策略可以成功删除可恢复邮件文件夹中的项目。 
+下面是一个表，介绍如何标识不同类型的保留项基于*InPlaceHolds*属性中的值，当您运行**Get-mailbox**或**Get-organizationconfig** cmdlet。有关详细信息，请参阅[如何识别的类型保留放置在 Exchange Online 邮箱](identify-a-hold-on-an-exchange-online-mailbox.md)。
+
+如上文所述，必须删除所有保留项和 Office 365 之前邮箱的保留策略可以成功删除可恢复邮件文件夹中的项目。 
   
 |**保留类型**|**示例值**|**如何标识保留项**|
 |:-----|:-----|:-----|
