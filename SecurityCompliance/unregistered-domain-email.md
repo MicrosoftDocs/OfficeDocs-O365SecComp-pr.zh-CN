@@ -3,7 +3,7 @@ title: 未注册的域的电子邮件
 ms.author: krowley
 author: kccross
 manager: laurawi
-ms.date: 09/17/2018
+ms.date: 10/17/2018
 ms.audience: Admin
 ms.topic: overview
 ms.service: o365-administration
@@ -12,12 +12,12 @@ search.appverid:
 - MET150
 - MOE150
 description: 如果您发送大量未注册的域的电子邮件，则运行获取阻止您的电子邮件的风险。阅读此文，了解详细信息。
-ms.openlocfilehash: f2b60f492197bf0dadb702a1c3f184c2d7e56bf1
-ms.sourcegitcommit: 7b85c22fc85ec19e4b44a07e91bfa9ade768185a
+ms.openlocfilehash: 30d7887be0429195380f2c4ae1a328904dffd69c
+ms.sourcegitcommit: 6d72cdb882b93edf6dfddb5ff2e6d8a16e2fa0bc
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "23998596"
+ms.lasthandoff: 10/17/2018
+ms.locfileid: "25596725"
 ---
 # <a name="unregistered-domain-email-what-you-need-to-know"></a>未注册域电子邮件： 您需要知道
 
@@ -37,17 +37,22 @@ Office 365 允许租户中继某些消息通过 Exchange Online Protection (EOP)
 
 1. 请确保您注册您的域的所有 Office 365 管理中心中。可以找到更多信息[此处](https://docs.microsoft.com/en-us/exchange/mail-flow-best-practices/manage-accepted-domains/manage-accepted-domains)。
 
-2. 锁定的本地服务器，并确保它们不泄漏。有许多因素涉及到在这里，尤其是这些第三方服务器，但需要能够确保保留该服务器的所有邮件都是合法。
+2. 特殊的连接线的外观。通常，恶意参与者将在 Office 365 租户发送垃圾邮件中创建新的入站的连接器。可以找到检查您连接器的详细信息[此处](https://docs.microsoft.com/en-us/powershell/module/exchange/mail-flow/get-inboundconnector?view=exchange-ps)。 
 
-完成后，您将需要呼叫 Microsoft 支持联系，以获取您取消再次从未注册的域发送的租户。 提供的错误代码是非常有用，但您将需要证明安全的环境，不会在再次发送垃圾邮件。可以找到更多信息[此处](https://support.office.com/en-us/article/Contact-support-for-business-products-Admin-Help-32a17ca7-6fa0-4870-8a8d-e25ba4ccfd4b#ID0EAADAAA=online)。
+3. 锁定的本地服务器，并确保它们不泄漏。
+
+> [!TIP]
+> 有许多因素涉及到在这里，尤其是这些是第三方服务器。无论，您将需要能确认合法保留您的服务器的所有邮件。
+
+4. 完成后，您将需要呼叫 Microsoft 支持联系，以获取您取消再次从未注册的域发送的租户。 提供的错误代码是非常有用，但您将需要证明安全的环境，不会在再次发送垃圾邮件。打开支持案例的详细信息可以找到[此处](https://support.office.com/en-us/article/Contact-support-for-business-products-Admin-Help-32a17ca7-6fa0-4870-8a8d-e25ba4ccfd4b#ID0EAADAAA=online)。
   
-## <a name="for-more-information"></a>更多信息
+## <a name="for-more-information"></a>详细信息
 
-[Office 365 电子邮件反垃圾邮件保护](anti-spam-protection.md)
+[Office 365 email anti-spam protection](anti-spam-protection.md)
 
 [Office 365 中的电子邮件未送达报告](https://support.office.com/article/email-non-delivery-reports-in-office-365-51daa6b9-2e35-49c4-a0c9-df85bf8533c3)
 
-[为邮箱配置电子邮件转发](https://docs.microsoft.com/en-us/exchange/recipients-in-exchange-online/manage-user-mailboxes/configure-email-forwarding)
+[配置邮箱的电子邮件转发](https://docs.microsoft.com/en-us/exchange/recipients-in-exchange-online/manage-user-mailboxes/configure-email-forwarding)
 
 [如何设置多功能设备或应用程序以使用 Office 365 发送电子邮件](https://support.office.com/en-us/article/How-to-set-up-a-multifunction-device-or-application-to-send-email-using-Office-365-69f58e99-c550-4274-ad18-c805d654b4c4)
 
