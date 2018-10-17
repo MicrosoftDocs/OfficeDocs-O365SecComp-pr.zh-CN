@@ -13,12 +13,12 @@ search.appverid:
 - MET150
 ms.assetid: af341600-5f68-40b3-a73e-73562715acd1
 description: 使用 Office 365 安全与合规中心内的标签活动资源管理器，可快速搜索和查看过去 30 天内 SharePoint 和 OneDrive for Business 中所有内容的标签活动。此为实时数据，可便于你明确了解租户中发生了什么。
-ms.openlocfilehash: b40d1f9bdad4d0fcb3647f0c79c265bfe0713cd1
-ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+ms.openlocfilehash: 69e99ea7af683d7850cd56f356ad0ac99f8c084e
+ms.sourcegitcommit: 397a5fe594e4cf4bb64c0c6f233d310ef3cbd922
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "23013956"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "25540388"
 ---
 # <a name="view-label-activity-for-documents"></a>查看文档的标签活动
 
@@ -46,7 +46,7 @@ ms.locfileid: "23013956"
 
 在标签活动资源管理器的顶部，可选择是查看文件的标签活动，还是查看文件夹的标签活动。请注意，文件夹活动只包含文件夹本身的活动，并不包含文件夹内文件的活动。
   
-之所以要查看文件夹的标签活动是因为，文件夹中所有文件都会继承文件夹的标签（已显式应用有标签的文件除外）。因此，标记文件夹可能会影响大量文件。有关详细信息，请参阅[向 SharePoint 库、文件夹或文档集中的所有内容应用默认标签](labels.md#applying-a-default-label-to-all-content-in-a-sharepoint-library-folder-or-document-set)。
+建议查看文件夹的标签活动，因为文件夹中的所有文件都会继承文件夹的标签（已显式应用有标签的文件除外）。因此，标记文件夹可能会影响大量文件。有关详细信息，请参阅[向 SharePoint 库、文件夹或文档集中的所有内容应用默认保留标签](labels.md#applying-a-default-retention-label-to-all-content-in-a-sharepoint-library-folder-or-document-set)。
   
 ![用于显示文件和文件夹的标签活动的下拉菜单](media/11030584-f52d-49eb-86f3-7ead16a3b704.png)
   

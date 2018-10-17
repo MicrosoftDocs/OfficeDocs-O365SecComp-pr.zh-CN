@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.assetid: dd851332-747b-45b9-82de-e3cd7d01c8a7
 description: 使用 Office 365 中的标签，能让保留期以特定类型事件何时发生为依据。也就是说，事件触发开始计算保留期，并对包含与相应事件类型关联的标签的所有内容强制执行标签的保留操作。事件驱动保留通常用于记录管理流程。
-ms.openlocfilehash: 7a360ec665843db2e7fb3ec5dc11e286a99b3f12
-ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+ms.openlocfilehash: fca335d8218c2c22335592fd71bffd00a805f6fb
+ms.sourcegitcommit: 397a5fe594e4cf4bb64c0c6f233d310ef3cbd922
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "23013706"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "25540408"
 ---
 # <a name="overview-of-event-driven-retention"></a>事件驱动保留概述
 
@@ -35,7 +35,7 @@ ms.locfileid: "23013706"
     
 事件驱动保留通常用于记录管理流程。也就是说：
   
-- 基于事件的标签也通常将内容分类为记录。有关详细信息，请参阅[使用内容搜索来查找所有已应用有特定标签的内容](labels.md#using-content-search-to-find-all-content-with-a-specific-label-applied-to-it)。
+- 基于事件的标签也通常将内容分类为记录。有关详细信息，请参阅[使用内容搜索来查找所有已应用有特定保留标签的内容](labels.md#using-content-search-to-find-all-content-with-a-specific-retention-label-applied-to-it)。
     
 - 如果文档已声明为记录，但其触发事件尚未发生，那么文档会无限期保留（因为无法永久删除记录），直到触发文档保留期的事件发生。
     
