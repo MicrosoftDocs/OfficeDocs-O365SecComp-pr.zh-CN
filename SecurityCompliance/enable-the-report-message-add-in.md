@@ -3,7 +3,7 @@ title: 启用报告消息加载项
 ms.author: deniseb
 author: denisebmsft
 manager: laurawi
-ms.date: 10/04/2018
+ms.date: 10/18/2018
 ms.audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -13,18 +13,27 @@ search.appverid:
 - MOE150
 ms.assetid: 4250c4bc-6102-420b-9e0a-a95064837676
 description: 了解如何启用报告消息加载项的 Outlook 和 Outlook web，为各个用户或您的整个组织上。
-ms.openlocfilehash: 2eb12bd14f92e2d4ee26fbef817578d32e737b85
-ms.sourcegitcommit: e14dec9bed0c0009acbc1f1cb80b4d0794ad5739
+ms.openlocfilehash: ad07d594a78b8134984b48f08898ad1ba697e03a
+ms.sourcegitcommit: 49b565f6a57febe53f331b2605d6a06d11e2d0be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/05/2018
-ms.locfileid: "25435089"
+ms.lasthandoff: 10/18/2018
+ms.locfileid: "25638006"
 ---
 # <a name="enable-the-report-message-add-in"></a>启用报告消息加载项
 
-报告消息外接程序 Outlook 中，使人们能够轻松地分类的电子邮件安全还是恶意，向 Microsoft 和报告或其关联公司进行分析。Microsoft 使用这些提交来提高效率的电子邮件保护技术。此外，如果您的组织正在使用 Microsoft 云服务，包括[Office 365 高级威胁保护](office-365-atp.md)或[威胁智能](office-365-ti.md)，报告消息外接程序提供了有用信息的组织的安全工作组它们可用于查看和更新安全策略。 
+## <a name="overview"></a>概述
 
-例如，假设人员包括报告很多为网络钓鱼邮件。在[安全仪表板](security-dashboard.md)和其他报表中此信息曲面。贵组织的安全工作组可以使用此信息，以指示防钓鱼策略可能需要更新。或者，如果人员报告大量使用报告消息加载项已标记为垃圾邮件为非垃圾邮件的邮件，贵组织的安全工作组可能需要调整[反垃圾邮件策略](configure-the-anti-spam-policies.md)。  
+报告消息外接程序 Outlook 和在 Web 上的 Outlook 中，使人们能够轻松地分类的电子邮件安全还是恶意，向 Microsoft 和报告或其关联公司进行分析。Microsoft 使用这些提交来提高效率的电子邮件保护技术。此外，如果您的组织使用[Office 365 高级威胁保护](office-365-atp.md)或[Office 365 威胁智能](office-365-ti.md)，报告消息外接程序提供了有用的信息，它们可用于查看和更新组织的安全工作组安全策略。 
+
+例如，假设人员包括报告很多为网络钓鱼邮件。在[安全仪表板](security-dashboard.md)和其他报表中此信息曲面。贵组织的安全工作组可以使用此信息，以指示防钓鱼策略可能需要更新。或者，如果人员报告大量使用报告消息加载项已标记为垃圾邮件为非垃圾邮件的邮件，贵组织的安全工作组可能需要调整[反垃圾邮件策略](configure-the-anti-spam-policies.md)。 
+
+报告消息外接程序适用于 Office 365 订阅和以下产品：
+ - 在 Web 上的 outlook
+ - Outlook 2013 SP1
+ - Outlook 2016
+ - Outlook 2016 for Mac
+ - 包含 Office 365 ProPlus 的 outlook
   
 如果您是单个用户，您还可以[启用报告消息外接程序自己](#get-the-report-message-add-in-for-yourself)。 
   
@@ -77,32 +86,15 @@ ms.locfileid: "25435089"
     
 11. 指定谁报告消息外接程序。 <br/>![指定谁报告消息外接程序](media/ReportMessageChooseWhoGetsItAdminSettings.png)<br/>
 
-12. 选择**保存**。
+12. 选择" **保存**"。 <br/>
+> [!TIP]
+> 我们建议[设置规则来获取一份报告的用户的电子邮件](#set-up-a-rule-to-get-a-copy-of-email-messages-reported-by-your-users)
 
-根据您选择使用向导，在组织中的人员会报告消息外接程序可用。您的组织中的人员将看到以下图标： 
+根据您选择使用向导，在组织中的人员将具有[报告消息加载项](https://support.office.com/article/b5caa9f1-cdf3-4443-af8c-ff724ea719d2)可用。您的组织中的人员将看到以下图标： 
 
 - 在 Outlook 中图标如下所示： <br/> ![Outlook 报表消息外接程序图标](media/OutlookReportMessageIcon.png)<br/>
 - 在 Outlook Web App 中图标如下所示：<br/>![Outlook Web 报告消息外接程序图标](media/d9326d0b-1769-4bc2-ae58-51f0ebc69a17.png)<br/>
 
-
-接下来，了解如何[使用报告消息外接程序](https://support.office.com/article/b5caa9f1-cdf3-4443-af8c-ff724ea719d2)和设置规则以查看报告的电子邮件。
-
-## <a name="review-or-edit-the-default-settings-for-the-report-message-add-in"></a>查看或编辑报告消息加载项的默认设置
-
-您可以查看和编辑报告消息外接程序使用管理中心的默认设置。 
-
-> [!IMPORTANT]
-> 您必须是 Office 365 全局管理员或 Exchange Online 管理员才能完成此任务。
-    
-1. 如果已为您的组织只安装报告消息外接程序，您已将在服务和外接程序页。否则为请转[此处](https://portal.office.com/adminportal/home#/Settings/ServicesAndAddIns)和 Office 365 中使用工作或学校帐户登录。
-
-2. 搜索**报告消息**，然后选择它。<br/>![服务和 Office 365 的加载项](media/ReportMessage-o365servicesaddins.png)<br/> 
-    
-3. 将打开窗格显示在部署过程中选择要报告消息加载项的设置。<br/>![设置报告消息加载项](media/ReportMessage-reviewaddinsettings.png)<br/> 
-
-4. 查看，如果需要为报告消息外接程序，编辑设置，然后保存所做的更改。
-    
-  
 ## <a name="set-up-a-rule-to-get-a-copy-of-email-messages-reported-by-your-users"></a>设置规则来获取一份报告的用户的电子邮件
 
 > [!IMPORTANT]
@@ -134,9 +126,28 @@ ms.locfileid: "25435089"
     
     ![设置规则来获取每个报告的邮件的副本](media/f1cd95ce-e40d-4a8a-8f48-893469eba691.png)
   
-10. 选择**保存**。 
+10. 选择" **保存**"。 
     
 与就地此规则，当您的组织中的某人报告电子邮件的邮件报告加载项，使用您的全局管理员、 安全管理员和/或安全读者将收到该邮件的副本。这些信息使您可以设置或调整策略，如[Office 365 ATP 安全链接](atp-safe-links.md)策略。 
+
+## <a name="review-or-edit-the-default-settings-for-the-report-message-add-in"></a>查看或编辑报告消息加载项的默认设置
+
+您可以查看和编辑报告消息外接程序使用管理中心的默认设置。 
+
+> [!IMPORTANT]
+> 您必须是 Office 365 全局管理员或 Exchange Online 管理员才能完成此任务。
+    
+1. 如果已为您的组织只安装报告消息外接程序，您已将在服务和外接程序页。否则为请转[此处](https://portal.office.com/adminportal/home#/Settings/ServicesAndAddIns)和 Office 365 中使用工作或学校帐户登录。
+
+2. 搜索**报告消息**，然后选择它。<br/>![服务和 Office 365 的加载项](media/ReportMessage-o365servicesaddins.png)<br/> 
+    
+3. 将打开窗格显示在部署过程中选择要报告消息加载项的设置。<br/>![设置报告消息加载项](media/ReportMessage-reviewaddinsettings.png)<br/> 
+
+4. 查看，如果需要为报告消息外接程序，编辑设置，然后保存所做的更改。
+    
+## <a name="learn-how-to-use-the-report-message-add-in"></a>了解如何使用报告消息外接程序
+
+请参阅[使用报告消息加载项](https://support.office.com/article/b5caa9f1-cdf3-4443-af8c-ff724ea719d2)。
   
 ## <a name="related-topics"></a>相关主题
 

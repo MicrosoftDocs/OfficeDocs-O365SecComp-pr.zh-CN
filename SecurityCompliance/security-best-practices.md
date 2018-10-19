@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 ms.assetid: 9295e396-e53d-49b9-ae9b-0b5828cdedc3
 description: 通过遵循这些建议的最佳实践数据违反或受到攻击的帐户的可能性降到最低。
-ms.openlocfilehash: 63bda11afdd1e02e9e12e8c505aca7100c4deade
-ms.sourcegitcommit: a36d2692396786f49c8765c65145e5093578e9a1
+ms.openlocfilehash: 0d3dc30a9975f2ed8fe6d524b4fc67918b34e51d
+ms.sourcegitcommit: 49b565f6a57febe53f331b2605d6a06d11e2d0be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/11/2018
-ms.locfileid: "25498088"
+ms.lasthandoff: 10/18/2018
+ms.locfileid: "25637996"
 ---
 # <a name="security-best-practices-for-office-365"></a>Office 365 的安全最佳做法
 
@@ -44,7 +44,7 @@ ms.locfileid: "25498088"
 
 MFA 通过要求用户确认电话呼叫、 短信或其智能电话上正确输入自己的密码后应用程序通知向强密码策略额外的保护程序。就地 MFA，与 Office 365 用户帐户仍然会保护针对未经授权的访问，即使用户的密码受到威胁。帐户受到保护，因为后已满足其他质询没有向之前帐户授予访问。受到攻击或被盗密码不就足够了。
   
-- [规划多因素身份验证的 Office 365 部署](https://support.office.com/article/043807b2-21db-4d5c-b430-c8a6dee0e6ba)
+- [Office 365 部署的多重身份验证计划](https://support.office.com/article/043807b2-21db-4d5c-b430-c8a6dee0e6ba)
     
 - [为 Office 365 用户设置多重身份验证](https://support.office.com/article/8f0454b2-f51a-4d9c-bcde-2c48e41621c6)
     
@@ -90,7 +90,7 @@ DLP 允许您确定敏感数据，并创建策略，以防止用户无意或有�
   
 ## <a name="use-customer-lockbox"></a>使用客户密码箱
 
-作为 Office 365 管理员，您可以使用客户密码箱控制 Microsoft 支持工程师帮助会话期间访问您的数据的方式。在其中工程师需要访问数据以排除和修复问题的情况下，客户密码箱允许您批准或拒绝访问请求。如果您批准其工程师可以访问的数据。每个请求具有过期时间，一旦解决问题，关闭请求和访问权限被吊销。客户密码箱包含在 Office 365 企业版 5 计划中，或您可以购买与任何其他 Office 365 企业计划单独的订阅。有关信息，请参阅[Office 365 客户密码箱请求](https://support.office.com/article/36f9cdd1-e64c-421b-a7e4-4a54d16440a2)。
+作为 Office 365 管理员，您可以使用客户密码箱控制 Microsoft 支持工程师帮助会话期间访问您的数据的方式。在其中工程师需要访问数据以排除和修复问题的情况下，客户密码箱允许您批准或拒绝访问请求。如果您批准其工程师可以访问的数据。每个请求具有过期时间，一旦解决问题，关闭请求和访问权限被吊销。客户密码箱包含在 Office 365 企业 E5 计划中，或您可以购买与任何其他 Office 365 企业计划单独的订阅。有关信息，请参阅[Office 365 客户密码箱请求](https://support.office.com/article/36f9cdd1-e64c-421b-a7e4-4a54d16440a2)。
   
 ## <a name="try-it-yourself"></a>亲自试用
 <a name="SecureScore"> </a>
