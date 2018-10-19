@@ -14,22 +14,20 @@ search.appverid:
 - MET150
 ms.assetid: aaca8987-5b62-458b-9882-c28476a66918
 description: 在 Office 365 中，您可以打开邮箱审核日志记录，记录邮箱所有者、 委派和管理员访问邮箱。默认情况下，Office 365 中的邮箱审核功能不被打开的。启用邮箱审核日志记录邮箱后，您可以搜索活动执行邮箱上的 Office 365 审核日志。
-ms.openlocfilehash: 9952cc94fe48e289e6eaf8de665a82cb3da4746d
-ms.sourcegitcommit: b6473cd6ba3f9ac79dc6a2040fc148020dfbe464
+ms.openlocfilehash: 6d3de226e7c0e03be824b14e1b16fadaae3f040e
+ms.sourcegitcommit: 8294182d4dd124f035a221de0b90159ef7eec4ae
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/02/2018
-ms.locfileid: "25358381"
+ms.lasthandoff: 10/19/2018
+ms.locfileid: "25639661"
 ---
 # <a name="enable-mailbox-auditing-in-office-365"></a>在 Office 365 中启用邮箱审核
   
 在 Office 365 中，您可以打开邮箱审核日志记录，记录邮箱所有者、 委派和管理员访问邮箱。默认情况下，Office 365 中的邮箱审核功能不被打开的。这意味着邮箱审核事件时搜索邮箱活动的 Office 365 审核日志不会显示在结果中。但您启用邮箱审核日志记录用户邮箱后，您可以搜索邮箱活动的审核日志。此外，当邮箱审核日志记录处于打开状态，由管理员，代理人执行某些操作并所有者记录默认情况下。记录 （和然后搜索） 其他操作，请参阅 Step 3。
 
-## <a name="before-you-begin"></a>准备工作
+## <a name="before-you-begin"></a>开始之前
   
 - 您必须使用 Exchange Online PowerShell 中启用邮箱审核日志记录。不能使用 Office 365 安全性&amp;合规性中心或 Exchange 管理员中心。
-    
-- 启用邮箱审核日志记录邮箱后，默认情况下记录管理和某些委托邮箱操作的访问权限。若要记录邮箱所有者执行的操作，必须指定所有者操作审核。请参阅"的详细信息"部分，若要查看启用邮箱审核日志记录后所记录的操作的列表，以及哪些操作是适用于每种类型的用户登录名。
     
 - 无法启用邮箱审核日志记录的邮箱，与 Office 365 组或团队中的 Microsoft 团队相关联。
     
@@ -83,7 +81,7 @@ Get-Mailbox -ResultSize Unlimited -Filter {RecipientTypeDetails -eq "UserMailbox
   
 ## <a name="step-3-specify-owner-actions-to-audit"></a>步骤 3：指定要审核的所有者操作
 
-启用邮箱审核时，默认情况下审核邮箱所有者执行的操作 ( **UpdateFolderPermissions** ) 只有一个。您必须指定审核其他所有者操作。请参阅列表以及可以审核的所有者操作的说明"邮箱操作"部分中的表。 
+启用邮箱审核时，默认情况下审核邮箱所有者执行一些操作。您必须指定审核其他所有者操作。请参阅列表以及默认情况下记录的所有者操作和可审核的其他操作的说明[邮箱审核操作](#mailbox-auditing-actions)部分中的表。 
   
 本示例将**MailboxLogin**和**HardDelete**所有者操作添加到邮箱审核 Pilar Pinilla 的邮箱。本示例假定的邮箱审核已启用此邮箱。 
 
@@ -103,7 +101,7 @@ Set-Mailbox "Don Hall" -AuditEnabled $true -AuditOwner MailboxLogin
 Get-Mailbox -ResultSize Unlimited -Filter {RecipientTypeDetails -eq "UserMailbox"} | Set-Mailbox -AuditOwner @{Add="MailboxLogin","HardDelete","SoftDelete"}
 ```
   
-## <a name="how-do-you-know-this-worked"></a>如何判断是否生效？
+## <a name="how-do-you-know-this-worked"></a>怎样才能知道这是否已正常工作？
 
 若要验证是否已为某个邮箱成功启用邮箱审核日志记录，请使用 **Get-Mailbox** cmdlet 检索该邮箱的审核设置。 
   
@@ -123,7 +121,7 @@ Get-Mailbox -ResultSize Unlimited -Filter {RecipientTypeDetails -eq "UserMailbox
     
 ## <a name="mailbox-auditing-actions"></a>邮箱审核操作
   
-下表列出了可以由邮箱记录的操作审核日志记录。表包含了可以为不同用户登录类型记录的操作。在表中，**否**指示操作无法会为该登录类型记录。星号 ( **\*** ) 指示为邮箱启用了邮箱审核日志记录时，默认情况下记录操作。如前面所述，就启用邮箱审核功能时，默认情况下审核的唯一所有者操作是 UpdateFolderPermissions。若要记录邮箱所有者执行其他操作，必须指定其他所有者操作审核。若要执行此操作，请参阅本主题中的[步骤 3](#step-3-specify-owner-actions-to-audit) 。 
+下表列出了可以由邮箱记录的操作审核日志记录。表包含了可以为不同用户登录类型记录的操作。在表中，**否**指示操作无法会为该登录类型记录。星号 ( **\*** ) 指示为邮箱启用了邮箱审核日志记录时，默认情况下记录操作。 
   
 |**操作**|**说明**|**管理员**|**委派用户\*\*\***|**所有者**|
 |:-----|:-----|:-----|:-----|:-----|
@@ -146,9 +144,9 @@ Get-Mailbox -ResultSize Unlimited -Filter {RecipientTypeDetails -eq "UserMailbox
 > [!NOTE]
 > <sup>\*</sup> 如果为邮箱启用了审核功能，则默认为已审核。<br/><br/>  <sup>\*\*</sup>合并文件夹绑定操作执行的条目。为 24 小时的时间跨度内的单个文件夹访问生成一个日志条目。<br/><br/><sup>\*\*\*</sup>具有已分配给用户的邮箱的完全访问权限的管理员被视为代理用户。 
   
-如果您不再需要某些类型的邮箱操作进行审核，您应修改邮箱的审核日志记录配置以禁用这些操作。直到到达的审核日志条目 90 天期限不清除现有日志条目。
+如果您不再需要某些类型的邮箱操作进行审核，您应修改邮箱的审核日志记录配置以禁用这些操作。直到达到审核日志条目的保留期限限制不会清除现有日志条目。有关保留时间的审核日志条目的详细信息，请参阅中[搜索审核日志在 Office 365 安全性和合规性中心](search-the-audit-log-in-security-and-compliance.md#before-you-begin)的"开始之前"一节。
   
-## <a name="more-infotab"></a>[更多信息](#tab/)
+## <a name="more-infotab"></a>[详细信息](#tab/)
   
 - 使用 Office 365 审核日志搜索已记录的邮箱活动。您可以搜索特定用户邮箱的活动。以下屏幕快照显示了您可以在 Office 365 审核日志中搜索的邮箱活动的列表。请注意，这些活动本主题中的"邮箱审核操作"部分所述的相同操作。
     

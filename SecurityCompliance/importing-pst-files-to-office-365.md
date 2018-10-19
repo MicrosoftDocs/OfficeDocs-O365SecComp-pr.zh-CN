@@ -1,5 +1,5 @@
 ---
-title: 将您的组织 PST 文件导入到 Office 365 的概述
+title: Overview of importing your organization PST files to Office 365
 ms.author: markjjo
 author: markjjo
 manager: laurawi
@@ -14,14 +14,14 @@ ms.collection: Strat_O365_IP
 search.appverid: MET150
 ms.assetid: ba688e0a-0fcb-4bd7-8e57-2b669564ea84
 description: 管理员： 了解如何在 Office 365 安全性使用的导入服务&amp;合规性中心以批量导入电子邮件数据 （PST 文件） 到 Exchange Online 中的用户邮箱。本主题提供了常见问题，并说明 PST 导入过程工作方式。
-ms.openlocfilehash: 2bd58b879d9d4d1ff9d3d2c6c8680a0171d42689
-ms.sourcegitcommit: 7956955cd919f6e00b64e4506605a743c5872549
+ms.openlocfilehash: 3a6c3db966513be5c63588dac75643ffc1962323
+ms.sourcegitcommit: 8294182d4dd124f035a221de0b90159ef7eec4ae
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/26/2018
-ms.locfileid: "25038015"
+ms.lasthandoff: 10/19/2018
+ms.locfileid: "25639671"
 ---
-# <a name="overview-of-importing-your-organization-pst-files-to-office-365"></a>将您的组织 PST 文件导入到 Office 365 的概述
+# <a name="overview-of-importing-your-organization-pst-files-to-office-365"></a>Overview of importing your organization PST files to Office 365
 
 > [!NOTE]
 > 本文是针对管理员。您试图将 PST 文件导入到您自己的邮箱？请参阅[导入电子邮件、 联系人和日历从 Outlook.pst 文件](https://go.microsoft.com/fwlink/p/?LinkID=785075)
@@ -100,7 +100,15 @@ ms.locfileid: "25038015"
     
 ## <a name="importing-sharepoint-data-to-office-365"></a>将 SharePoint 数据导入到 Office 365
 
-您还可以导入文件和文档对 SharePoint 网站和 OneDrive 帐户在 Office 365 组织中。有关详细信息，请参阅[上载到 SharePoint Online 使用 PowerShell cmdlet 在本地内容](https://docs.microsoft.com/sharepointmigration/upload-on-premises-content-to-sharepoint-online-using-powershell-cmdlets)。
+您还可以导入文件和文档对 SharePoint 网站和 OneDrive 帐户在 Office 365 组织中。有关详细信息，请参阅以下文章：
+
+- [迁移到 SharePoint Online](https://docs.microsoft.com/sharepointmigration/migrate-to-sharepoint-online)
+
+- [SharePoint 迁移工具简介](https://docs.microsoft.com/sharepointmigration/introducing-the-sharepoint-migration-tool)
+
+- [使用 PowerShell 迁移到 SharePoint Online](https://docs.microsoft.com/sharepointmigration/overview-spmt-ps-cmdlets)
+
+- [将文件共享内容迁移到 SharePoint Online 使用 Azure 数据框](https://docs.microsoft.com/sharepointmigration/how-to-migrate-file-share-content-to-spo-using-azuredatabox)
 
 
 ## <a name="frequently-asked-questions-about-importing-pst-files-to-office-365"></a>有关将 PST 文件导入到 Office 365 常见问题
@@ -288,7 +296,7 @@ PST 文件上载到 Azure 存储区后，Office 365 分析 PST 文件中的数�
   
  **可以使用自定义 courier 传送服务，如 FedEx 自定义的传送提供给 Microsoft 我硬盘驱动器上？**
   
-是。
+可以。
   
  **如果我必须附带我到另一个国家/地区的硬盘，还有什么我需要做？**
   
