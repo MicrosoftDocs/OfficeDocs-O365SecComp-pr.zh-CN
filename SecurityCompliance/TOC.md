@@ -12,7 +12,9 @@
 # 保护对数据和服务的访问
 ## [保护对 Office 365 数据和服务的访问](protect-access-to-data-and-services.md)
 ## [在 MDM 和 Intune 之间进行选择](choose-between-mdm-and-intune.md)
-# [数据丢失防护 (DLP)](data-loss-prevention-policies.md)
+# 保护信息
+## [敏感度标签](sensitivity-labels.md)
+## [数据丢失防护 (DLP)](data-loss-prevention-policies.md)
 ## [观看 DLP 的扩展概述](https://channel9.msdn.com/events/ignite/microsoft-ignite-orlando-2017/brk3111)
 ## 设置 DLP
 ### [开始使用 DLP 策略建议](get-started-with-dlp-policy-recommendations.md)
@@ -47,11 +49,11 @@
 ### [启用无限制存档](enable-unlimited-archiving.md)
 ### [设置邮箱的存档和删除策略](set-up-an-archive-and-deletion-policy-for-mailboxes.md)
 ## 保留数据
-### [保留策略概述](retention-policies.md)
-### [标签概述](labels.md)
-### [处置评审概述](disposition-reviews.md)
-### [事件驱动的保留概述](event-driven-retention.md)
-### [文件计划管理器概述](file-plan-manager.md)
+### [保留策略](retention-policies.md)
+### [保留标签](labels.md)
+### [处置评审](disposition-reviews.md)
+### [事件驱动的保留](event-driven-retention.md)
+### [文件计划管理器](file-plan-manager.md)
 ## [管理非活动邮箱](inactive-mailboxes-in-office-365.md)
 ### [创建和管理非活动邮箱](create-and-manage-inactive-mailboxes.md)
 ### [更改非活动邮箱的保留期](change-the-hold-duration-for-an-inactive-mailbox.md)
@@ -70,8 +72,8 @@
 ## [反垃圾邮件和反恶意软件保护](anti-spam-and-anti-malware-protection.md)
 ### [Office 365 中的防钓鱼保护](anti-phishing-protection.md)
 #### [Office 365 中的 ATP 防钓鱼功能](atp-anti-phishing.md)
-#### [设置 Office 365 ATP 防钓鱼策略](set-up-atp-anti-phishing-policies.md)
-#### [Office 365 如何验证发件人地址以防止钓鱼](how-office-365-validates-the-from-address.md)
+#### [设置防钓鱼和 ATP 防钓鱼策略](set-up-anti-phishing-policies.md)
+#### [Office 365 如何通过验证发件人地址来防钓鱼](how-office-365-validates-the-from-address.md)
 ### [Office 365 中的防欺骗保护](anti-spoofing-protection.md)
 #### [了解有关欺骗智能的详情](learn-about-spoof-intelligence.md)
 ### [Office 365 电子邮件反垃圾邮件保护](anti-spam-protection.md)
