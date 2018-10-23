@@ -11,12 +11,12 @@ localization_priority: Normal
 search.appverid: MOE150
 ms.assetid: 67cc7f42-a53d-4751-b929-6005c80798f7
 description: 了解如何搜索 Office 365 审核日志中的合规性管理员安全中执行内容搜索和电子数据展示案例任务时都会被记录的事件&amp;合规性中心。
-ms.openlocfilehash: a4cc3a6b5030a6412d739236e4c534f36948d57f
-ms.sourcegitcommit: 7956955cd919f6e00b64e4506605a743c5872549
+ms.openlocfilehash: f3d8e49da32de85c127d6bbf28d0b53bd6974c09
+ms.sourcegitcommit: 98a418052be88137c06f5c1abe7012359a7e90ee
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/26/2018
-ms.locfileid: "25038345"
+ms.lasthandoff: 10/22/2018
+ms.locfileid: "25698028"
 ---
 # <a name="search-for-ediscovery-activities-in-the-office-365-audit-log"></a>Office 365 审核日志中的电子数据展示活动搜索
 
@@ -43,7 +43,7 @@ ms.locfileid: "25038345"
   
 1. 转到 [https://protection.office.com](https://protection.office.com)。
     
-2. 登录到 Office 365 使用工作或学校帐户。
+2. 使用工作或学校帐户登录到 Office 365。
     
 3. 在左窗格中，单击**搜索&amp;调查**，然后单击**审核日志搜索**。
     
@@ -81,9 +81,9 @@ ms.locfileid: "25038345"
 |已更改的电子数据展示案例成员资格  <br/> |CaseMemberUpdated  <br/> |更新 ComplianceCaseMember  <br/> |电子数据展示事例的成员身份列表已更改。所有成员都替换为一组新的用户时记录此活动。如果添加或删除单个成员，则记录 CaseMemberAdded 或 CaseMemberRemoved 操作。  <br/> |
 |更改搜索权限筛选器  <br/> |SearchPermissionUpdated  <br/> |设置 ComplianceSecurityFilter  <br/> |搜索权限筛选器已更改。  <br/> |
 |电子数据展示案例保留已更改的搜索查询  <br/> |HoldUpdated  <br/> |设置 CaseHoldRule  <br/> |已更改基于查询的保留电子数据展示事例相关联。可能的更改包括编辑查询或日期范围基于查询的保留。  <br/> |
-|下载内容搜索预览项目  <br/> |PreviewItemDownloaded  <br/> |不适用  <br/> |用户下载项目到其本地计算机 （通过单击**下载原始项目**链接） 时预览搜索结果。  <br/> |
-|内容搜索预览项列出  <br/> |PreviewItemListed  <br/> |不适用  <br/> |用户单击**预览搜索结果**显示预览搜索结果页面，其中列出的内容的搜索结果中的最多 1000 个项目。  <br/> |
-|内容搜索预览项查看  <br/> |PreviewItemRendered  <br/> |不适用  <br/> |电子数据展示管理器查看通过预览搜索结果时单击该项目。  <br/> |
+|下载内容搜索预览项目  <br/> |PreviewItemDownloaded  <br/> |N/A  <br/> |用户下载项目到其本地计算机 （通过单击**下载原始项目**链接） 时预览搜索结果。  <br/> |
+|内容搜索预览项列出  <br/> |PreviewItemListed  <br/> |N/A  <br/> |用户单击**预览搜索结果**显示预览搜索结果页面，其中列出的内容的搜索结果中的最多 1000 个项目。  <br/> |
+|内容搜索预览项查看  <br/> |PreviewItemRendered  <br/> |N/A  <br/> |电子数据展示管理器查看通过预览搜索结果时单击该项目。  <br/> |
 |创建内容搜索  <br/> |SearchCreated  <br/> |New-ComplianceSearch  <br/> |创建一个新的内容搜索。  <br/> |
 |创建电子数据展示管理员  <br/> |CaseAdminAdded  <br/> |添加 eDiscoveryCaseAdmin  <br/> |用户已添加为组织中电子数据展示管理员。  <br/> |
 |创建电子数据展示事例  <br/> |CaseAdded  <br/> |新 ComplianceCase  <br/> |创建电子数据展示事例。创建案例后，您只需为其提供一个名称。其他与案例相关的任务，如添加成员、 创建保留项，以及创建案例结果中要记录的其他事件相关联的内容搜索。  <br/> |
@@ -94,8 +94,8 @@ ms.locfileid: "25038345"
 |已删除电子数据展示事例  <br/> |CaseRemoved  <br/> |删除 ComplianceCase  <br/> |已删除电子数据展示事例。请注意，与案例关联任何保留具有要删除之前可删除这种情况。  <br/> |
 |已删除的搜索权限筛选器  <br/> |SearchPermissionRemoved  <br/> |删除 ComplianceSecurityFilter  <br/> |已删除的搜索权限筛选器。  <br/> |
 |电子数据展示案例保留已删除的搜索查询  <br/> |HoldRemoved  <br/> |删除 CaseHoldRule  <br/> |已删除基于查询的保留电子数据展示事例相关联。从保留中删除查询通常是删除保留的结果。删除保留或保留查询时将释放已置于保持状态的内容位置。  <br/> |
-|下载的导出的内容搜索  <br/> |SearchResultDownloaded  <br/> |不适用  <br/> |用户下载到他们的本地计算机的内容的搜索结果。请注意，**启动导出的内容搜索**活动具有可以下载搜索结果之前启动。<br/> |
-|预览内容搜索结果  <br/> |SearchPreviewed  <br/> |不适用  <br/> |用户预览内容搜索的结果。  <br/> |
+|下载的导出的内容搜索  <br/> |SearchExportDownloaded  <br/> |N/A  <br/> |用户下载到他们的本地计算机的内容的搜索结果。请注意，**启动导出的内容搜索**活动具有可以下载搜索结果之前启动。<br/> |
+|预览内容搜索结果  <br/> |SearchPreviewed  <br/> |N/A  <br/> |用户预览内容搜索的结果。  <br/> |
 |清除内容的搜索结果  <br/> |SearchResultsPurged  <br/> |New-ComplianceSearchAction  <br/> |用户通过运行清除的内容的搜索结果**新建 ComplianceSearchAction-清除**命令。  <br/> |
 |删除的分析的内容搜索  <br/> |RemovedSearchResultsSentToZoom  <br/> |删除 ComplianceSearchAction  <br/> |内容搜索准备 （要准备 Office 365 高级电子数据展示搜索结果） 操作已被删除。如果准备操作被小于两周时间，从 Microsoft Azure 存储区删除为高级电子数据展示已准备好的搜索结果。如果超过 2 个星期准备操作，此事件表示仅相应准备操作已被删除。  <br/> |
 |删除的导出的内容搜索  <br/> |RemovedSearchExported  <br/> |删除 ComplianceSearchAction  <br/> |已删除的内容搜索导出操作。如果导出操作被小于两周内，已删除已上载到 Microsoft Azure 存储区的搜索结果。如果导出操作被早于 2 周，此事件表示仅相应的导出操作已被删除。  <br/> |

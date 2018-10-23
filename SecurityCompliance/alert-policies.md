@@ -3,7 +3,7 @@ title: 通知 Office 365 安全性的策略&amp;合规性中心
 ms.author: markjjo
 author: markjjo
 manager: laurawi
-ms.date: 6/8/2018
+ms.date: ''
 ms.audience: Admin
 ms.topic: overview
 ms.service: o365-administration
@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 ms.assetid: 8927b8b9-c5bc-45a8-a9f9-96c732e58264
 description: 在 Office 365 安全性中创建警报策略&amp;合规性中心以监视潜在威胁、 数据丢失和权限问题。然后您可以查看和管理用户执行活动报警策略的条件相匹配时生成通知。
-ms.openlocfilehash: 1404f03fdc59583fdf402f2cdc6209f4d55c23f3
-ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+ms.openlocfilehash: 020e9871170091e63cd6a59e6f1a0bfe50124fef
+ms.sourcegitcommit: 98a418052be88137c06f5c1abe7012359a7e90ee
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22525354"
+ms.lasthandoff: 10/22/2018
+ms.locfileid: "25698018"
 ---
 # <a name="alert-policies-in-the-office-365-security-amp-compliance-center"></a>通知 Office 365 安全性的策略&amp;合规性中心
 
@@ -74,7 +74,9 @@ ms.locfileid: "22525354"
     
   - 数据治理
     
-  - 数据丢失保护
+  - 数据丢失防护
+
+  - 邮件流
     
   - 权限
     
@@ -100,6 +102,7 @@ Office 365 提供内置帮助确定 Exchange 管理权限滥用、 恶意软件�
 |**默认警报策略**|**说明**|**Office 365 企业版订阅**|
 |:-----|:-----|:-----|
 |**创建转接/重定向规则** <br/> |您的组织中的某个人创建他们的邮箱的转发或将邮件重定向到另一个电子邮件帐户的收件箱规则时生成警报。此策略只跟踪使用 Outlook Web App 或 Exchange Online PowerShell 中创建的收件箱规则。该策略有**低**严重性设置。使用收件箱规则转发和重定向 Outlook Web App 中的电子邮件的详细信息，请参阅[使用 Outlook Web App 自动转发至另一个帐户的邮件中的规则](https://support.office.com/article/1433e3a0-7fb0-4999-b536-50e05cb67fed)。<br/> |E1、 E3 或 E5  <br/> |
+|**启动或导出电子数据展示搜索** <br/> |如果有人在安全性和合规性中心中使用内容搜索工具将生成警报。执行下面的内容搜索活动时，将触发通知：<br/><br/>• 内容搜索已启动<br/>导出内容的搜索结果？<br/>导出内容的搜索报表？<br/><br/>以前的内容搜索活动执行电子数据展示事例的关联中时，还将触发通知。该策略有**中等**严重性设置。有关内容搜索活动的详细信息，请参阅[Office 365 中的电子数据展示活动的搜索审核日志](search-for-ediscovery-activities-in-the-audit-log.md#ediscovery-activities)。<br/> |E1、 E3 或 E5  <br/> |
 |**Exchange 管理员特权提升** <br/> |当某人分配管理权限，在 Exchange Online 组织; 生成警报例如，如果用户添加到 Organization Management 角色一组在 Exchange Online。该策略有**低**严重性设置。<br/> |E1、 E3 或 E5  <br/> |
 |**邮件已被延迟** <br/> |Office 365 无法传送电子邮件到内部部署组织或合作伙伴服务器使用连接器时生成警报。发生这种情况，当邮件在排队 Office 365 中。有 2,000 消息或更多的多个小时内已排队时，将触发此警报。该策略具有**高**严重性设置。<br/> |E1、 E3 或 E5  <br/> |
 |**在传递后检测到的恶意软件市场活动** <br/> |超大数量的包含恶意软件的邮件传送到您的组织中的邮箱，则生成警报。如果发生此事件，Office 365 从 Exchange Online 邮箱中删除受感染的邮件。该策略具有**高**严重性设置。<br/> |E5 或 Office 365 威胁智能加载项订阅  <br/> |
