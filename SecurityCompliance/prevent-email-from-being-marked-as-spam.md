@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.assetid: 34823bbc-a3e3-4949-ba42-97c73997eeed
 description: 了解如何避免在 Office 365 中将真实电子邮件标记为“垃圾邮件”。
-ms.openlocfilehash: 05fb9858adb279d74368fc979db44cfd84b7f71e
-ms.sourcegitcommit: ede6230c2df398dc0a633e8f32ee0bfede0d5142
+ms.openlocfilehash: f7ba560b4eb30abcda4c97617ead883659558bd8
+ms.sourcegitcommit: 6d72cdb882b93edf6dfddb5ff2e6d8a16e2fa0bc
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/25/2018
-ms.locfileid: "25002635"
+ms.lasthandoff: 10/17/2018
+ms.locfileid: "25596715"
 ---
 # <a name="how-to-prevent-real-email-from-being-marked-as-spam-in-office-365"></a>如何避免在 Office 365 中将真实电子邮件标记为“垃圾邮件”
 
@@ -59,7 +59,7 @@ Office 365 中的许多垃圾邮件问题都可以这样解决：[查看电子�
     
 - **在 Outlook 中禁用 SmartScreen 筛选**：如果用户使用的是 Outlook 桌面客户端，他们应禁用 SmartScreen 筛选功能（此功能已终止）。如果启用，可能会导致误报。如果运行的是更新后的桌面 Outlook 客户端，无需遵守此要求。 
     
-- **为用户启用“举报邮件”加载项**：强烈建议[为用户启用“举报邮件”加载项](enable-the-report-message-add-in.md)。作为管理员，还可以查看用户发送的反馈，并使用任意模式来调整可能导致问题出现的任何设置。
+- **为用户启用“举报邮件”加载项**：强烈建议[为用户启用“举报邮件”加载项](enable-the-report-message-add-in.md)。作为管理员，还可以查看用户发送的反馈，并使用任意模式来调整任何可能会导致问题发生的设置。
     
 - **立即允许发件人**：如果你需要立即允许发件人，强烈建议**仅允许特定发件人的 IP 地址**。也可以创建**同时**查找发件人域和成功的 Authentication-Results 头的传输规则，从而允许发件人，并还确保发件人通过 SPF 或 DKIM 等身份验证检查。 
     

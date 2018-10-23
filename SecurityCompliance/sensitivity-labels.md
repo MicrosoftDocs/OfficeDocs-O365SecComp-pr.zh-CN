@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.assetid: af398293-c69d-465e-a249-d74561552d30
 description: 使用 Office 365 中的敏感度标签，可以对敏感内容进行分类和保护，同时确保组织内人员的工作效率和协作能力不受阻碍。敏感度标签可用于强制执行保护设置，如对已标记内容设置加密或水印。
-ms.openlocfilehash: fae238e4c8409288175a3de305d12c76efcec5c2
-ms.sourcegitcommit: 13f40ff7c1799152bf45af2d8110f4f3235b770a
+ms.openlocfilehash: 736975d10084cb6672ae21b1716cd92d0956c6c6
+ms.sourcegitcommit: b164d4af65709133e0b512a4327a70fae13a974d
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "25549739"
+ms.lasthandoff: 10/16/2018
+ms.locfileid: "25577091"
 ---
 # <a name="overview-of-sensitivity-labels"></a>敏感度标签概述
 
@@ -37,13 +37,11 @@ ms.locfileid: "25549739"
     
 - **利用 Microsoft Intune 终结点保护，防止在 Windows 设备上驻留的敏感内容从组织中泄露。** 当 Windows 设备上驻留的内容已应用有敏感度标签后，终结点保护可以阻止此类内容被复制到第三方应用（如 Twitter 或 Gmail），也可以阻止此类内容被复制到可移动存储（如 U 盘）。
 
-- **利用 Cloud App Security (CAS) 保护第三方应用和服务中的内容。** 利用 CAS，可以对第三方服务和应用（如 SalesForce、Box 或 Dropbox）中的内容进行检测、分类、标记和保护，即使第三方应用或服务无法读取或不支持敏感度标签，也不例外。    
-
 - **将敏感度标签扩展到第三方应用和服务。** 借助 Microsoft 信息保护 SDK，Windows、Mac 和 Linux 上的第三方应用可以读取敏感度标签，并应用保护设置。我们即将推出对 iOS 和 Android 上应用的支持。
 
-- **对内容进行分类，而不使用任何保护设置。** 也可以只对内容进行分类（如不干胶标签），只要有人使用和共享内容，此分类就会随内容一起暂留和漫游。此分类可用于生成使用情况报告，并查看敏感内容的活动数据。根据此类信息，稍后始终可以根据文档分类来配置可应用的保护设置。
+- **对内容进行分类，而不使用任何保护设置。** 也可以只对内容进行分类（如不干胶标签），只要有人使用和共享内容，此分类就会随内容一起暂留和漫游。使用此分类，可生成使用情况报告，并查看敏感内容的活动数据。根据此类信息，稍后随时可以选择应用保护设置。
     
-无论是上述哪种用途，Office 365 中的敏感度标签都可有助于对正确的内容执行适当的操作。借助标签，可对整个组织中的数据进行分类，并根据此分类强制执行保护设置。
+无论是上述哪种用途，Office 365 中的敏感度标签都可有助于对正确的内容执行适当的操作。借助敏感度标签，可对整个组织中的数据进行分类，并根据此分类强制执行保护设置。
   
 敏感度标签是在 Office 365 安全与合规中心内创建。目前，安全与合规中心是跨 Azure 信息保护和 Office 365 配置敏感度标签和策略的唯一位置。这些敏感度标签可供 Azure 信息保护、Office 应用和 Office 365 服务使用。
 
@@ -73,7 +71,7 @@ Azure 信息保护客户可以在安全与合规中心内使用 Azure 信息保�
 
 - **加密**：仅加密电子邮件，或同时加密电子邮件和文档。可选择哪些用户或组在多长时间内有权执行哪些操作。例如，可选择允许组织外特定域中的用户，仅在内容应用有标签后的 7 天内有权查看相应内容。
 
-- **内容标记**：方法为向已应用标签的电子邮件或文档添加自定义水印、页眉或页脚（水印只能应用于文档，不得应用于电子邮件）。
+- **标记内容**：具体方法是将自定义水印、页眉或页脚添加到已应用有标签的电子邮件或文档中。（请注意，水印只能应用于文档，不能应用于电子邮件。水印的长度上限为 255 个字符。此外，页眉和页脚的长度上限为 1024 个字符，但在 Excel 中除外，其中的长度上限为 253 个字符。）
 
     ![应用于文档的水印和页眉](media/Sensitivity_label_watermark_header.png)
 
@@ -142,7 +140,7 @@ Azure 信息保护客户可以在安全与合规中心内使用 Azure 信息保�
 
 ## <a name="where-sensitivity-labels-can-appear"></a>敏感度标签可以显示在哪里
 
-敏感度标签显示在 Office 应用 UI 中。若要查看敏感度标签对特定应用和平台的最新适用情况，请参阅[此功能目前在何处适用？](https://support.office.com/zh-CN/article/apply-sensitivity-labels-to-your-documents-and-email-within-office-2f96e7cd-d5a4-403b-8bd7-4cc636bae0f9?ad=US&ui=en-US&rs=en-US#bkmk_whereavailable)。
+敏感度标签显示在 Office 应用 UI 中。若要查看敏感度标签对特定应用和平台的最新适用情况，请参阅**[此功能目前在何处适用？](https://support.office.com/zh-CN/article/apply-sensitivity-labels-to-your-documents-and-email-within-office-2f96e7cd-d5a4-403b-8bd7-4cc636bae0f9?ad=US&ui=en-US&rs=en-US#bkmk_whereavailable)**
 
 ### <a name="office-apps-on-windows"></a>Windows 上的 Office 应用
 
@@ -150,7 +148,7 @@ Azure 信息保护客户可以在安全与合规中心内使用 Azure 信息保�
 
 我们即将推出对 Windows 上 Office 应用中敏感度标签的本机支持。
 
-如果已是 Azure 信息保护客户，可以部署 Azure 信息保护统一标记客户端。此客户端即将推出，支持敏感度标签（请过一段时间再回来看看，以获取介绍如何部署此客户端的链接）。目前，我们正在努力推出对 Windows 上 Office 应用中敏感度标签的本机支持，所以届时将无需再使用 Azure 信息保护统一标记客户端。
+如果已是 Azure 信息保护客户，可以部署 Azure 信息保护统一标记客户端。此客户端即将推出，它支持敏感度标签（请过一段时间再回来看看，以获取介绍如何部署此客户端的链接）。目前，我们正在努力推出对 Windows 上 Office 应用中敏感度标签的本机支持，所以届时将无需再使用 Azure 信息保护统一标记客户端。
 
 ![Windows 上 Excel 功能区中的“敏感度”按钮](media/Sensitivity_label_Sensitivity_button.png)
 
@@ -188,7 +186,7 @@ Azure 信息保护客户可以在安全与合规中心内使用 Azure 信息保�
 
 ## <a name="protect-content-on-windows-devices-by-using-endpoint-protection-in-microsoft-intune"></a>使用 Microsoft Intune 终结点保护来保护 Windows 设备上的内容
 
-创建敏感度标签时，可视需要指示 Windows 具有此标签的文件是敏感内容，并保护存储在 Windows 设备上的此类文件，以防发生数据泄露。此选项有助于确保具有此标签的内容只能共享或复制到批准的位置上，即使内容存储在终结点上，也不例外。实际上，如果对敏感度标签启用此选项，便是在指示 Windows 这是非常关键的数据，有必要施加额外使用限制。
+创建敏感度标签时，可视需要指示 Windows 具有此标签的文件是敏感内容，需要保护存储在 Windows 设备上的此类文件，以防发生数据泄露。此选项有助于确保具有此标签的内容只能共享或复制到批准的位置上，即使内容存储在终结点上，也不例外。实际上，如果对敏感度标签启用此选项，便是在指示 Windows 这是非常关键的数据，有必要施加额外使用限制。
 
 当你启用此选项后，Windows 便能读取、理解和处理文档中的敏感度标签，并自动对内容应用 Windows 信息保护 (WIP)，无论内容是以何种方式到达 Windows 托管设备的。这样有助于防止已标记文件发生意外数据泄露，无论是否应用加密。
 
@@ -208,22 +206,9 @@ Azure 信息保护客户可以在安全与合规中心内使用 Azure 信息保�
 
 - 确保运行的是 Windows 10 版本 1809 或更高版本。
 - [设置 Windows Defender 高级威胁防护 (WDATP)](https://docs.microsoft.com/zh-CN/windows/security/threat-protection/windows-defender-atp/get-started)，以扫描内容中是否有标签，并应用相应的 WIP 保护。ATP 与 WIP 分开执行一些操作，如报告异常。
-- 创建适用于终结点设备的 Windows 信息保护 (WIP) 策略：
+- 创建适用于终结点设备的 Windows 信息保护 (WIP) 策略。可以在下列两个位置之一执行此操作：
     - [使用适用于 Microsoft Intune 的 Azure 门户通过 MDM 创建 Windows 信息保护 (WIP) 策略](https://docs.microsoft.com/zh-CN/windows/security/information-protection/windows-information-protection/create-wip-policy-using-intune-azure)
     - [使用 System Center Configuration Manager 创建并部署 Windows 信息保护 (WIP) 策略](https://docs.microsoft.com/zh-CN/windows/security/information-protection/windows-information-protection/create-wip-policy-using-sccm)
-
-## <a name="protect-content-in-third-party-apps-and-services-by-using-microsoft-cloud-app-security"></a>利用 Microsoft Cloud App Security 保护第三方应用和服务中的内容
-
-利用 Cloud App Security (CAS) 保护第三方应用和服务中的内容。利用 CAS，可以对第三方服务和应用（如 SalesForce、Box 或 Dropbox）中的内容进行检测、分类、标记和保护。例如，Dropbox 可能无法理解敏感度标签，但 CAS 可覆盖并保护此位置中的已标记内容。 
-
-有关详细信息，请参阅[自动应用 Azure 信息保护分类标签](https://docs.microsoft.com/zh-CN/cloud-app-security/use-case-information-protection)。
-
-### <a name="important-prerequisites"></a>重要先决条件
-
-必须先满足[自动应用 Azure 信息保护分类标签](https://docs.microsoft.com/zh-CN/cloud-app-security/use-case-information-protection)中提及的先决条件，然后敏感度标签才能使用 CAS。这篇主题提及以下先决条件：
-
-- 为租户[启用 Cloud App Security 和 Azure 信息保护](https://docs.microsoft.com/zh-CN/cloud-app-security/azip-integration)。
-- [将应用连接到](https://docs.microsoft.com/zh-CN/cloud-app-security/enable-instant-visibility-protection-and-governance-actions-for-your-apps) Cloud App Security。
 
 ## <a name="extend-sensitivity-labels-to-third-party-apps-and-services-by-using-the-microsoft-information-protection-sdk"></a>使用 Microsoft 信息保护 SDK 将敏感度标签扩展到第三方应用和服务
 
