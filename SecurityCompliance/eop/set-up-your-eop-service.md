@@ -3,7 +3,7 @@ title: 设置 EOP 服务
 ms.author: krowley
 author: kccross
 manager: laurawi
-ms.date: 12/9/2016
+ms.date: 10/23/2018
 ms.audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
@@ -11,12 +11,12 @@ ms.custom: TN2DMC
 localization_priority: Normal
 ms.assetid: d74c6ddf-11b0-43ee-b298-8bb0340895f0
 description: 本主题介绍了如何设置 Microsoft Exchange Online Protection (EOP)。如果您已从 Office 365 域向导登录到这里，则假如您不想使用 Exchange Online Protection，请返回到 Office 365 域向导。若要详细了解如何配置连接器，请参阅Configure mail flow using connectors in Office 365。
-ms.openlocfilehash: f1c65164adcaa17c58ae9c4b4b957c477b9e02f3
-ms.sourcegitcommit: 22bca85c3c6d946083d3784f72e886c068d49f4a
+ms.openlocfilehash: 6c9e3becf0f86deeee92ec7cf336bdbd950ac5e2
+ms.sourcegitcommit: f49ab866e21da83a0be6cb23ab7b6b4366a6a7ee
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/06/2018
-ms.locfileid: "22027109"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "25715898"
 ---
 # <a name="set-up-your-eop-service"></a>设置 EOP 服务
 
@@ -49,7 +49,7 @@ ms.locfileid: "22027109"
 2. 按照该步骤将适用的 DNS 记录添加到您的 DNS 托管提供程序以验证域所有权。
     
 > [!TIP]
-> [将域添加到 Office 365](https://go.microsoft.com/fwlink/p/?LinkId=282303) 和 [为 Office 365 创建 DNS 记录](https://go.microsoft.com/fwlink/p/?LinkId=304219)都是将你的域添加到服务和配置 DNS 的有用参考资源。 
+> [将域添加到 Office 365](https://support.office.com/en-us/article/add-a-domain-to-office-365-6383f56d-3d09-4dcb-9b41-b5f5a5efd611) 和 [为 Office 365 创建 DNS 记录](https://support.office.com/en-us/article/create-dns-records-at-any-dns-hosting-provider-for-office-365-7b7b075d-79f9-4e37-8a9e-fb60c1d95166)都是将你的域添加到服务和配置 DNS 的有用参考资源。 
   
 ### <a name="step-2-add-recipients-and-optionally-enable-dbeb"></a>步骤 2：添加收件人，并选择性启用 DBEB
 

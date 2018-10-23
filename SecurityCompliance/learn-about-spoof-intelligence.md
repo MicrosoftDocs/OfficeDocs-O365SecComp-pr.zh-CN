@@ -3,7 +3,7 @@ title: 了解有关欺骗智能的详情
 ms.author: krowley
 author: kccross
 manager: laurawi
-ms.date: 10/11/2018
+ms.date: 10/22/2018
 ms.audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -13,12 +13,12 @@ search.appverid:
 - MET150
 ms.assetid: 978c3173-3578-4286-aaf4-8a10951978bf
 description: 在安全中使用欺骗智能&amp;反垃圾邮件设置页上的合规性中心以查看所有发件人是欺骗属于您的组织，或者是域或欺骗外部域。欺骗智能是作为 Office 365 企业 E5 的一部分或单独高级威胁保护和 Exchange Online Protection 的一部分。
-ms.openlocfilehash: 74fc1b3dd6fddd91a27785adcab111a02d8ba088
-ms.sourcegitcommit: ba2175e394d0cb9f8ede9206aabb44b5b677fa0a
+ms.openlocfilehash: df5dedb6a9bdf9c25f570f960b9004524999bfdd
+ms.sourcegitcommit: f49ab866e21da83a0be6cb23ab7b6b4366a6a7ee
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/11/2018
-ms.locfileid: "25496836"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "25715908"
 ---
 # <a name="learn-more-about-spoof-intelligence"></a>了解有关欺骗智能的详情
 
@@ -102,7 +102,7 @@ Office 365，始终强制实施欺骗智能策略设置。您不能禁用，但�
 ## <a name="configuring-the-anti-spoofing-policy"></a>配置反欺骗策略
 <a name="Managespooflist"> </a>
 
-除了允许或阻止从带欺骗性的电子邮件发送到您的组织的特定发件人，您还可以配置所需的筛选器是如何严格、 找到欺骗消息，则时要采取的操作以及启用安全提示反欺骗。
+除了允许或阻止从带欺骗性的电子邮件发送到您的组织的特定发件人，您还可以配置如何严格所需的筛选器，并找到欺骗消息时要采取的操作。
   
 反欺骗保护应用于电子邮件从发件人的 Office 365 组织外部的域。您可以将策略应用于收件人邮箱经过许可 Office 365 企业 E5，高级威胁保护和截止年 10 月，2018 EOP 客户。管理反欺骗策略以及其他防钓鱼设置。有关反钓鱼设置的详细信息，请参阅[Office 365 防钓鱼策略设置](https://support.office.com/article/set-up-office-365-atp-anti-phishing-policies-5a6f2d7f-d998-4f31-b4f5-f7cbf6f38578?ui=en-US&amp;rs=en-US&amp;ad=US#phishpolicyoptions)。
   
@@ -126,11 +126,7 @@ Office 365 包括默认反欺骗保护始终运行。此默认保护不安全中
   
     ![屏幕截图显示反欺骗策略编辑选项](media/7a868dff-2c4b-46b9-88ca-f2d523ca2307.jpg)
   
-7. 选择是否启用或禁用反欺骗安全提示。Office 365 建议以便它们发件人无法验证其标识与交互时警告用户启用的**身份验证失败**安全提示。Office 365 还建议的安全提示启用较小用户组的**身份验证软传递**因为此安全提示可能会产生大量的警告，如果用户从多合法的但未经过身份验证源接收电子邮件。  
-  
-    ![显示反欺骗安全提示选项的屏幕截图](media/1ed675c0-48c2-4587-a957-60eb68dc9628.jpg)
-
-8. 做出选择，然后选择**保存**。 
+7. 做出选择，然后选择**保存**。 
     
 ## <a name="other-ways-to-manage-spoofing-and-phishing-with-office-365"></a>管理欺骗和网页仿冒与 Office 365 的其他方法
 <a name="Managespooflist"> </a>
@@ -140,6 +136,7 @@ Office 365 包括默认反欺骗保护始终运行。此默认保护不安全中
 - 检查 Exchange Online Protection 欺骗邮件报告为您例程的一部分。您可以使用此报告通常以查看并帮助管理欺骗发件人。有关信息，请参阅中[使用邮件保护报告查看关于恶意软件、 垃圾邮件和规则检测的数据的 Office 365 中](https://technet.microsoft.com/library/dn500744%28v=exchg.150%29.aspx)的**欺骗邮件报告**。
     
 对于更高级的 Office 365 管理员，您还可以完成这些检查：
+    
     
 - 查看您的发件人策略框架 (SPF) 配置。快速了解到 SPF 并获取快速配置，请参阅[Set up Office 365 为了帮助防止欺骗中的 SPF](https://technet.microsoft.com/library/dn789058%28v=exchg.150%29.aspx)。Office 365 如何使用 SPF，更深入地了解或故障排除或非标准部署如混合部署，启动与[Office 365 如何使用发件人策略框架 (SPF) 以防止欺骗](https://technet.microsoft.com/library/mt712724%28v=exchg.150%29.aspx)。
     
