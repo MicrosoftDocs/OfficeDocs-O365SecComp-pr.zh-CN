@@ -3,7 +3,7 @@ title: 管理 Office 365 中的法律调查
 ms.author: markjjo
 author: markjjo
 manager: laurawi
-ms.date: 5/18/2018
+ms.date: ''
 ms.audience: Admin
 ms.topic: hub-page
 ms.service: o365-administration
@@ -13,12 +13,12 @@ search.appverid:
 - MET150
 ms.assetid: 2e5fbe9f-ee4d-4178-8ff8-4356bc1b168e
 description: 在 Office 365 安全性中使用电子数据展示事例&amp;合规性中心管理组织的法律调查。如果您有 E5 订阅，您可以使用文本分析、 机器学习和预测编码功能的高级电子数据展示来进一步分析案例数据。
-ms.openlocfilehash: 7d00268a94613dfc0a1bef6314b5f917de5b9954
-ms.sourcegitcommit: 7956955cd919f6e00b64e4506605a743c5872549
+ms.openlocfilehash: 4e7b9117b3f0cb2fd6d4e70a7767f3cbe7b79724
+ms.sourcegitcommit: 01813cb9bbc2400d21bc99144745af953f9356e8
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/26/2018
-ms.locfileid: "25038265"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "25719046"
 ---
 # <a name="manage-legal-investigations-in-office-365"></a>管理 Office 365 中的法律调查
 
@@ -32,7 +32,7 @@ ms.locfileid: "25038265"
    
 ## <a name="manage-legal-investigations-with-ediscovery-cases"></a>管理法律调查与电子数据展示事例
 
-电子数据展示事例使您可以控制可以创建、 访问和管理组织中的电子数据展示事例。使用情况下添加成员和控制哪些类型的操作，他们可以执行，将内容位置置于保留与法律案件，并使用内容搜索工具来搜索位置保留可能对您的案例响应的内容。然后您还可以导出并下载进一步外部审阅者的调查这些结果。如果您的 Office 365 组织和 E5 订阅，还可以准备搜索结果进行高级电子数据展示中的分析。
+电子数据展示事例使您可以控制可以创建、 访问和管理组织中的电子数据展示事例。使用情况下添加成员和控制哪些类型的操作，他们可以执行，将内容位置置于保留与法律案件，并使用内容搜索工具来搜索位置保留可能对您的案例响应的内容。然后您还可以导出并下载进一步外部审阅者的调查这些结果。如果您的 Office 365 组织的 E5 订阅，您可以准备分析高级电子数据展示中搜索结果。
   
 - [管理电子数据展示工作流](ediscovery-cases.md)创建并使用每个法律调查电子数据展示事例贵组织必须将要 
     
