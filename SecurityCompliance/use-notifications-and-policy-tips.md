@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: 87496bc5-9601-4473-8021-cb05c71369c1
 description: '策略提示通知或某人正在使用的内容与某个 DLP 策略的冲突时出现的警告。您可以使用电子邮件通知和策略提示提高关注度和帮助了解有关您组织的策略的人员。您也可以的为用户选择重写策略，以便它们不将被阻止如果他们有有效的业务需要或策略检测误报。 '
-ms.openlocfilehash: a24afe6dd1203af4dc1f0f21468e828751bc5f3b
-ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+ms.openlocfilehash: f95e392cc6cced6da29d34abfcab0fa0c3add069
+ms.sourcegitcommit: 3ac6452ab77a761d06122c35c5f4a76da4472990
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22526012"
+ms.lasthandoff: 10/24/2018
+ms.locfileid: "25769911"
 ---
 # <a name="send-email-notifications-and-show-policy-tips-for-dlp-policies"></a>发送电子邮件通知和显示策略提示的 DLP 策略
 
@@ -49,7 +49,7 @@ Office 365 安全性&amp;合规性中心，您创建的 DLP 策略时，您可�
 
 创建 DLP 策略时，电子邮件通知和策略提示是**用户通知**节的一部分。 
   
-1. 转到[https://protection.office.com](https://protection.office.com)。
+1. 转到 [https://protection.office.com](https://protection.office.com)。
     
 2. 登录到 Office 365 使用工作或学校帐户。您现在正在使用的 Office 365 安全性&amp;合规性中心。
     
@@ -206,6 +206,25 @@ Office 365 安全性&amp;合规性中心，您创建的 DLP 策略时，您可�
 ![其中，可以覆盖策略提示的策略提示对话框](media/f97e836c-04bd-44b4-aec6-ed9526ea31f8.png)
   
 请注意，当您将敏感信息添加到电子邮件，可能有之间添加敏感信息时，显示策略提示的时的延迟。
+
+### <a name="outlook-2013-and-later-supports-showing-policy-tips-for-only-some-conditions"></a>Outlook 2013 及更高版本支持仅某些条件显示策略提示
+
+目前，Outlook 2013 及更高版本支持仅对这些条件的显示策略提示：
+
+- 内容包含
+- 共享内容
+
+我们当前正在使用的显示其他条件的策略提示的支持。这些工具包括：
+
+- 不会扫描任何电子邮件附件的内容
+- 任何电子邮件附件的内容未完成扫描
+- 附件的文件扩展名
+- 附件采用密码保护
+- 文档属性
+- 收件人的域
+- 发件人的 IP 地址
+
+请注意，所有这些条件在 Outlook 中，它们将在其中匹配内容和强制执行内容保护措施。但向用户显示策略提示尚不支持。
   
 ### <a name="policy-tips-in-the-exchange-admin-center-vs-the-office-365-security-amp-compliance-center"></a>在 Exchange 管理中心与 Office 365 安全性的策略提示&amp;合规性中心
 
@@ -218,8 +237,7 @@ Office 365 安全性&amp;合规性中心，您创建的 DLP 策略时，您可�
 ### <a name="default-text-for-policy-tips-in-email"></a>电子邮件中的策略提示的默认文本
 
 默认情况下，策略提示显示类似于以下的电子邮件的文本。
-  
-| |
+
 |**如果 DLP 策略规则也是如此...**|**然后默认策略提示的说明如下...**|
 |:-----|:-----|
 |发送通知，但不允许覆盖  <br/> |与您的组织中的某个策略您电子邮件冲突。  <br/> |
@@ -255,8 +273,7 @@ Office 365 安全性&amp;合规性中心，您创建的 DLP 策略时，您可�
 ### <a name="default-text-for-policy-tips-in-excel-2016-powerpoint-2016-and-word-2016"></a>Excel 2016、PowerPoint 2016 和 Word 2016 中的策略提示的默认文本
 
 默认情况下，策略提示将在打开文档的消息栏和 Backstage 视图中显示类似于以下的文本。通知文本针对每个规则单独配置，因此根据匹配的规则，显示的文本有所不同。
-  
-| |
+
 |**如果 DLP 策略规则也是如此...**|**然后默认策略提示的说明如下...**|
 |:-----|:-----|
 |发送通知，但不允许覆盖  <br/> |此文件与您的组织中的某个策略冲突。转到**文件**菜单的详细信息。<br/> |
@@ -267,7 +284,7 @@ Office 365 安全性&amp;合规性中心，您创建的 DLP 策略时，您可�
 
 您可以自定义电子邮件通知中的单独的策略提示的文本。像电子邮件通知 （请参阅以上部分） 的自定义文本，自定义策略提示文本不接受 HTML 或标记。而是自定义策略提示的文本是仅与 256 个字符限制的纯文本。
   
-## <a name="more-information"></a>详细信息
+## <a name="more-information"></a>更多信息
 
 - [数据丢失防护策略概述](data-loss-prevention-policies.md)
     

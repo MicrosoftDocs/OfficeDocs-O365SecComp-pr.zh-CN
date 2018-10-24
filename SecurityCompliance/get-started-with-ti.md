@@ -13,12 +13,12 @@ search.appverid:
 - MOE150
 ms.assetid: 38e9b67f-d188-490f-bc91-a1ae4b270441
 description: 了解 Office 365 威胁智能以及如何入门。
-ms.openlocfilehash: 59da671b4d9b7b697ad4caf3573f954f2a446d24
-ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+ms.openlocfilehash: b30543c7338bcd581bd0596f1c71d42c48559a59
+ms.sourcegitcommit: 3ac6452ab77a761d06122c35c5f4a76da4472990
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22525669"
+ms.lasthandoff: 10/24/2018
+ms.locfileid: "25769891"
 ---
 # <a name="get-started-with-office-365-threat-intelligence"></a>开始使用 Office 365 威胁智能
 
@@ -92,7 +92,7 @@ Office 365 企业 E5 包含 office 365 威胁智能。如果您的组织使用�
 |使用威胁仪表板 （或新的[安全仪表板](security-dashboard.md)）  <br/> 查看有关最近或当前威胁的信息  <br/> |Office 365 全局管理员  <br/> 安全管理员 (安全中分配&amp;合规性中心)  <br/> 安全读者 (安全中分配&amp;合规性中心)  <br/> |
 |使用威胁资源管理器 （也称为资源管理器）  <br/> 分析威胁  <br/> |Office 365 全局管理员  <br/> 安全管理员 (安全中分配&amp;合规性中心)  <br/> 安全读者 (安全中分配&amp;合规性中心)  <br/> |
 |查看事件  <br/> 将电子邮件消息添加到事件  <br/> |Office 365 全局管理员  <br/> 安全管理员 (安全中分配&amp;合规性中心)  <br/> 安全读者 (安全中分配&amp;合规性中心)  <br/> |
-|在事件的触发电子邮件操作  <br/> 查找并删除可疑的电子邮件  <br/> |Office 365 全局管理员  <br/> 搜索和清除 (安全中分配&amp;合规性中心)  <br/> |
+|在事件的触发电子邮件操作  <br/> 查找并删除可疑的电子邮件  <br/> |Office 365 全局管理员或安全管理员  <br/> 搜索和清除 (安全中分配&amp;合规性中心)  <br/> |
 |将 Office 365 威胁智能与 Windows Defender 高级威胁防护集成  <br/> 将 Office 365 威胁智能与 SIEM server 相集成  <br/> |Office 365 全局管理员  <br/> 安全管理员 (安全中分配&amp;合规性中心)  <br/> 其他应用程序 （例如 Windows Defender 高级威胁保护门户或 SIEM 服务器） 中分配的相应角色  <br/> |
    
 有关角色、 角色组和权限的信息，请参阅[Permissions in Office 365 安全性&amp;合规性中心](permissions-in-the-security-and-compliance-center.md)。
