@@ -13,12 +13,12 @@ ms.collection: Strat_O365_IP
 ms.custom: Ent_Solutions
 ms.assetid: ''
 description: 使用本主题可了解有关权限的详细信息访问 Office 365 中的管理
-ms.openlocfilehash: e92bbecd5957261c1eaf3088d872ae6572b7f235
-ms.sourcegitcommit: 659b5f5b38ef7e838cdb44eaa38c18e48d922768
+ms.openlocfilehash: 5056c19acb03b2486cc84fe085ffd6c2814007dc
+ms.sourcegitcommit: a07b91723bae9ecee2cb092bfbc5b208b30b11a1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/16/2018
-ms.locfileid: "25575336"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "25793547"
 ---
 # <a name="privileged-access-management-in-office-365"></a>Office 365 中的管理访问权限
 
@@ -80,7 +80,7 @@ ms.locfileid: "25575336"
 我们计划以提高当前限制的每个推出 Office 365 组织的 30 特权的访问策略。
 
 ### <a name="do-i-need-to-be-a-global-admin-to-manage-privileged-access-in-office-365"></a>是否需要为全局管理员管理 Office 365 中的授权访问权限？
-您需要能够管理特权的访问 Office 365 中的全局管理员特权。包括在审批者组中的用户不需要是全局管理员才能查看和批准请求。 
+否，您需要具有 Exchange 角色管理角色分配给管理 Office 365 中的授权访问权限的帐户。但是，全局管理员角色默认情况下包括此角色，并且可用于管理访问权限，如果您不想要配置为独立的帐户权限的角色管理角色。包括在审批者组中的用户不需要全局管理员或具有角色管理角色分配审阅和审批请求。 
 
 ### <a name="how-is-privileged-access-management-in-office-365-related-to-customer-lockbox"></a>是与客户密码箱的 Office 365 中的访问权限的管理如何？
 [客户密码箱](https://support.office.com/article/Office-365-Customer-Lockbox-Requests-36f9cdd1-e64c-421b-a7e4-4a54d16440a2)允许访问由其服务提供商，即 Microsoft 的数据的组织的访问控制的级别。特权访问 Office 365 中的管理允许的所有特权的 Office 365 任务组织内的精细的访问控制。
