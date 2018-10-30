@@ -13,12 +13,12 @@ search.appverid:
 - MET150
 ms.assetid: 3019fbc5-7f15-4972-8d0e-dc182dc7f836
 description: 与数据丢失防护 (DLP) SharePoint Online 中，可以发现文档包含在您的租户整个敏感数据。后发现文档，您可以使用文档所有者，以保护数据。本主题可帮助您表单查询搜索敏感数据。
-ms.openlocfilehash: 13954a856dd265e3b735d940c7d334d922713637
-ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+ms.openlocfilehash: c30cb2e4b93e1a7db90f3e3f922f406285c6f692
+ms.sourcegitcommit: 81e06e09bf5ca8e3f51b164d6251b1c35b3285cf
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "23013856"
+ms.lasthandoff: 10/27/2018
+ms.locfileid: "25829183"
 ---
 # <a name="form-a-query-to-find-sensitive-data-stored-on-sites"></a>创建查询以查找存储在站点上的敏感数据
 
@@ -82,11 +82,9 @@ ms.locfileid: "23013856"
 | SensitiveType:"信用卡号| |1.|80..."' <br/> |有太多管道分隔符 （|).而是遵循以下格式: SensitiveType:"信用卡号|1.|80..."' <br/> |
 | SensitiveType:"信用卡号|1.|80..101"' <br/> |因为可信度值代表百分比，他们不能超过 100。而是介于 1 至 100 选择一个号码。  <br/> |
    
-## <a name="for-more-information"></a>详细信息
+## <a name="for-more-information"></a>更多信息
 
-[查找存储在 SharePoint Online 网站中的敏感数据](https://support.office.com/article/ef788d8f-9748-4025-bfe4-40541ca4cfb2)
-  
-[敏感信息类型库存](https://go.microsoft.com/fwlink/?LinkID=509999)
+[敏感信息类型查找什么](what-the-sensitive-information-types-look-for.md)
   
 [运行 Office 365 安全性内容的搜索&amp;合规性中心](run-a-content-search-in-the-security-and-compliance-center.md)
   

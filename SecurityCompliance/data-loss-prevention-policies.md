@@ -15,12 +15,12 @@ search.appverid:
 - MET150
 ms.assetid: 1966b2a7-d1e2-4d92-ab61-42efbb137f5e
 description: 与 Office 365 安全性的数据丢失防护 (DLP) 策略&amp;合规性中心，您可以确定、 监视和自动跨 Office 365 中保护敏感信息。
-ms.openlocfilehash: c33fe53797f86208e7cd033029949737a5c84d2f
-ms.sourcegitcommit: 397a5fe594e4cf4bb64c0c6f233d310ef3cbd922
+ms.openlocfilehash: b342686f38d734a0eff0df896204d7a2f4bfde6a
+ms.sourcegitcommit: 81e06e09bf5ca8e3f51b164d6251b1c35b3285cf
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "25540418"
+ms.lasthandoff: 10/27/2018
+ms.locfileid: "25829193"
 ---
 # <a name="overview-of-data-loss-prevention-policies"></a>数据丢失防护策略概述
 
@@ -312,7 +312,7 @@ DLP 策略可以帮助保护敏感信息，定义为**敏感信息类型**。Off
     
 - **自动应用**您选择的条件匹配其内容。 
     
-若要详细了解标签，请参阅[标签概述](labels.md)。
+有关标签的详细信息，请参阅[Overview of 保留标签](labels.md)。
   
 创建标签后，您可以使用该标签为条件 DLP 策略中。例如，您可能需要这样做是因为：
   
@@ -327,12 +327,16 @@ DLP 策略可以帮助保护敏感信息，定义为**敏感信息类型**。Off
 通过使用标签中 DLP 规则条件相同，可以您有选择地实施一组特定的内容、 位置或用户的保护操作。
   
 ![为条件的标签](media/5b1752b4-a129-4a88-b010-8dcf8a38bb09.png)
+
+### <a name="support-for-sensitivity-labels-is-coming"></a>即将敏感度标签的支持
+
+注意，可以为条件，不[敏感度标签](sensitivity-labels.md)中当前使用仅保留标签。我们当前正在使用此条件中使用敏感度标签的支持。
   
 ### <a name="how-this-feature-relates-to-other-features"></a>此功能与其他功能的方式
 
 多个功能可以应用于包含敏感信息的内容：
   
-- [应用自动根据条件标签][保留标签](labels.md#applying-a-retention-label-automatically-based-on-conditions)和[保留策略](retention-policies.md)都可以强制对此内容的**保留**操作。 
+- [保留标签](labels.md#applying-a-retention-label-automatically-based-on-conditions)和[保留策略](retention-policies.md)都可以强制对此内容的**保留**操作。 
     
 - DLP 策略可以强制实施此内容**保护**操作。和强制实施这些操作之前, 的 DLP 策略可能需要其他条件满足除了包含标签的内容。 
     
@@ -484,7 +488,7 @@ Excel 2016、 PowerPoint 2016 和 Word 2016 包括确定敏感信息并将作为
     
 但是，DLP 报告需要拉跨 Office 365，包括 Exchange Online 中的数据。因此，DLP 报告的 cmdlet 可在 Exchange Online Powershell-不在安全&amp;合规性中心 Powershell。因此，若要使用 DLP 报告 cmdlet，您需要：
   
-1. [Connect to Exchange Online using remote PowerShell](http://go.microsoft.com/fwlink/?LinkID=799773&amp;clcid=0x409)
+1. [使用远程 PowerShell 连接到 Exchange Online](http://go.microsoft.com/fwlink/?LinkID=799773&amp;clcid=0x409)
     
 2. 使用这些 cmdlet 的任何 DLP 报告：
     
