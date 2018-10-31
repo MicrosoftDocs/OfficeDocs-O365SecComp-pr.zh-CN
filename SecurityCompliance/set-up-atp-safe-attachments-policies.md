@@ -12,12 +12,12 @@ search.appverid:
 - MOE150
 ms.assetid: 078eb946-819a-4e13-8673-fe0c0ad3a775
 description: 定义附件安全策略，以从电子邮件中的恶意文件保护您的组织。
-ms.openlocfilehash: c57f9320c7cd2b8b75bc2dc58d1f72ce136acbb6
-ms.sourcegitcommit: 099bbfb1d16b251fd5cf18ec6515faaf9a989176
+ms.openlocfilehash: 1fd831adf5166223ba5df159a131c71e3b467233
+ms.sourcegitcommit: cda46434094bc2837dba90256d044ba77552df12
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "25454279"
+ms.lasthandoff: 10/30/2018
+ms.locfileid: "25850836"
 ---
 # <a name="set-up-office-365-atp-safe-attachments-policies"></a>设置 Office 365 ATP 安全附件策略
 
@@ -59,13 +59,13 @@ ms.locfileid: "25454279"
     
       - 在**说明**框中，键入类似，立即提供了邮件和重新附加附件扫描后的说明。
     
-      - 在响应部分中，选择**动态传递**选项。（[了解更多有关动态交付和 ATP 安全附件预览](dynamic-delivery-and-previewing.md)。）
+      - 在响应部分中，选择**动态传递**选项。（[了解更多关于动态交付和 ATP 安全附件预览](dynamic-delivery-and-previewing.md)。）
     
       - 在**重定向附件**部分中，选择启用重定向并键入您的 Office 365 全局管理员、 安全管理员或安全分析师，负责调查恶意附件的电子邮件地址的选项。 
     
       - 在**应用于**部分中，选择**收件人的域是**，，然后选择您的域。选择**添加**，然后选择**确定**。
     
-6. 选择**保存**。
+6. 选择" **保存**"。
     
 请考虑您的组织的多个 ATP 安全附件策略设置。将它们在**ATP 安全附件**上列出的顺序应用这些策略。已定义或编辑策略后，允许至少 30 分钟的策略生效整个 Microsoft 数据中心。 
   

@@ -1,8 +1,9 @@
 ---
-title: 动态交付和与 Office 365 ATP 安全附件预览
+title: 动态传递和与 Office 365 ATP 安全附件预览
 ms.author: deniseb
 author: denisebmsft
 manager: laurawi
+ms.date: 10/30/2018
 ms.audience: Admin
 ms.topic: overview
 ms.service: o365-administration
@@ -12,26 +13,30 @@ search.appverid:
 - MOE150
 ms.assetid: f16c9928-8e3d-4219-b994-271dc9a16272
 description: 将您 ATP 附件安全策略设置，当您选择动态传递，以避免消息延迟和使人们可以预览正在被扫描的附件。
-ms.openlocfilehash: 23ef316ed35b89ef1fad5e9639dd10e76036a4f3
-ms.sourcegitcommit: 82fd4c85b952819157fbb13175c7b2dbbdff510f
+ms.openlocfilehash: b7b5f05170e6f27cbec9e0d5a121b2f71f16f41a
+ms.sourcegitcommit: cda46434094bc2837dba90256d044ba77552df12
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/13/2018
-ms.locfileid: "23965239"
+ms.lasthandoff: 10/30/2018
+ms.locfileid: "25850816"
 ---
-# <a name="dynamic-delivery-and-previewing-with-office-365-atp-safe-attachments"></a>动态交付和与 Office 365 ATP 安全附件预览
+# <a name="dynamic-delivery-and-previewing-with-office-365-atp-safe-attachments"></a>动态传递和与 Office 365 ATP 安全附件预览
 
-动态传递是可以为选择一个选项。阅读此文，了解有关动态交付和[Office 365 中的 ATP 安全附件](atp-safe-attachments.md)中的附件预览功能。
+**摘要**： 动态传递是可以为[ATP 安全附件](atp-safe-attachments.md)选择一个选项。阅读此文，了解有关动态交付和[Office 365 中的 ATP 安全附件](atp-safe-attachments.md)中的附件预览功能。
   
-## <a name="how-dynamic-delivery-works"></a>如何进行动态传递工作原理
+## <a name="how-dynamic-delivery-works"></a>动态传递的工作原理
 
-当您[在 Office 365 中的 ATP 安全附件策略设置](set-up-atp-safe-attachments-policies.md)，可以选择从几个选项，如**块**、**替换**和**动态传递**。根据您的策略的配置方式，电子邮件收件人可以次要在遇到延迟电子邮件传递时对其附件进行扫描。若要避免出现邮件延迟，请选择**动态传递**。
+当[ATP 安全附件策略设置](set-up-atp-safe-attachments-policies.md)为贵组织有多种选择如何处理电子邮件附件。其中包括**阻止**、**替换**和**动态传递**。根据 ATP 安全附件策略的配置方式，电子邮件收件人可以次要在遇到延迟电子邮件传递时对其附件进行扫描。若要避免出现邮件延迟，请选择**动态传递**。
   
-动态交付选项通过发送电子邮件通过与每个电子邮件附件的占位符的正文消除了电子邮件延迟。附件扫描的[Office 365 中的 ATP 安全附件](atp-safe-attachments.md)一直占位符。电子邮件收件人可以读取和对其电子邮件立即响应，了解，正在分析其附件。
-  
-大多数 Pdf 和 Office ATP 扫描正在进行时，可以在安全模式下预览文档。如果某个附件不可与动态传递预览器兼容，电子邮件收件人请参阅附件占位符，直到 ATP 安全附件扫描已完成。
-  
-为每个附件处于清除状态，它都会自动重新附加到原始电子邮件中。如果附件确定恶意，它是发送到隔离，某人贵组织的安全工作组 （例如 Office 365 全局管理员或安全管理员） 可以[管理 Office 365 中的隔离的邮件](manage-quarantined-messages-and-files.md)。
+动态传递通过将通过一封电子邮件的正文发送给收件人提供每个电子邮件附件的占位符，消除了电子邮件延迟。扫描附件的副本并将其由为安全起见[ATP 安全附件](atp-safe-attachments.md)一直占位符。大多数 Pdf 和 Office ATP 扫描正在进行时，可以在安全模式下预览文档。如果某个附件不可与动态传递预览器兼容，电子邮件收件人请参阅附件占位符，直到 ATP 安全附件扫描已完成。
+
+- 每个附件处于清除状态，它是可用于打开或下载。 
+
+- 如果附件确定恶意，它是发送到隔离，某人贵组织的安全工作组 （例如 Office 365 全局管理员或安全管理员） 可以[管理 Office 365 中的隔离的邮件](manage-quarantined-messages-and-files.md)。
+
+使用动态传递电子邮件收件人可以读取和对其电子邮件立即响应，了解，正在分析其附件。 
+
+ATP 安全附件扫描考虑放置在 Office 365 数据所在的同一区域中。有关数据中心地理区域的详细信息，请参阅[其中是位于数据？](https://products.office.com/where-is-your-data-located?geo=All) 
   
 ## <a name="what-happens-when-someone-forwards-an-email-that-contains-an-attachment"></a>当某人的转发电子邮件时，会发生什么情况包含附件？
 
