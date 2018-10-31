@@ -3,7 +3,7 @@ title: 为 Office 365 邮件加密激活 Azure 权限管理
 ms.author: krowley
 author: kccross
 manager: laurawi
-ms.date: 10/3/2017
+ms.date: 10/30/2018
 ms.audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -12,19 +12,22 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 2cba47b3-f09e-4911-9207-ac056fcb9db7
-description: 'Office 365 邮件加密取决于在 Microsoft Azure 权限管理 （以前称为 Windows Azure Active Directory 权限管理）。 '
-ms.openlocfilehash: 99c8de49330cf99545d28d81e0c99c2138797356
-ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+description: 以前版本的 Office 365 邮件加密取决于在 Microsoft Azure 权限管理 （以前称为 Windows Azure Active Directory 权限管理）。
+ms.openlocfilehash: f8759da8628d4c78fe5409f5c47e3fc2b3e9484e
+ms.sourcegitcommit: c05076501dfe118e575998ecfc08ad69d13c8abc
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22525454"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "25853067"
 ---
-# <a name="set-up-azure-rights-management-for-office-365-message-encryption"></a>为 Office 365 邮件加密激活 Azure 权限管理
+# <a name="this-article-applies-to-the-previous-version-of-ome"></a>本文适用于 OME 的早期版本
+如果您没有尚未将您的 Office 365 组织移到 OME 的新功能，但您已经部署了 OME，本文中的信息适用于您的组织。Microsoft 建议您进行规划，以将移动到新的 OME 功能只要很合理为您的组织。有关说明，请参阅[设置新的 Office 365 邮件加密功能](set-up-new-message-encryption-capabilities.md)。如果您想要找出有关的新功能，首先工作的方式的详细信息，请参阅[Office 365 邮件加密](ome.md)。本文的其余部分是指之前的版本的新功能，OME OME 行为。
+
+# <a name="set-up-azure-rights-management-for-the-previous-version-of-office-365-message-encryption"></a>为以前版本的 Office 365 邮件加密设置 Azure 权限管理
 
 本主题介绍需要才能激活并将设置 Azure 权限管理 (RMS)，用于与 Office 365 邮件加密 (OME) 的 Azure 信息保护的一部分执行的步骤。
   
-## <a name="prerequisites-for-using-office-365-message-encryption"></a>使用 Office 365 邮件加密的先决条件
+## <a name="prerequisites-for-using-the-previous-version-of-office-365-message-encryption"></a>使用以前版本的 Office 365 邮件加密的先决条件
 <a name="warmprereqs"> </a>
 
 Office 365 邮件加密 (OME)，包括 IRM，取决于 Azure 权限管理 (Azure RMS)。Azure RMS 是使用 Azure 信息保护保护技术。若要使用 OME，您的 Office 365 组织必须包括 Exchange Online 或 Exchange Online Protection 的订阅，反过来，包括 Azure 权限管理订阅。
@@ -39,12 +42,12 @@ Office 365 邮件加密 (OME)，包括 IRM，取决于 Azure 权限管理 (Azure
     
 - 如果您已设置 OME 能够使用 Azure 权限管理 Exchange Online 或 Exchange Online Protection，具体取决于您将其设置，您可能已准备好开始立即使用 OME 和其新的功能。本文介绍如何确定是否您已设置 OME 正确，如果您需要更改您的设置，怎么办以及如果您选择不更改您的安装程序会发生什么情况。例如，若要使用的新功能，您必须使用 Azure RMS OME。不能使用内部部署 Active Directory RMS 的新功能。
     
-## <a name="activate-azure-rights-management-for-ome-in-office-365"></a>激活 OME Office 365 中的 Azure 权限管理
+## <a name="activate-azure-rights-management-for--the-previous-version-of-ome-in-office-365"></a>早期版本的 Office 365 中的 OME 激活 Azure 权限管理
 <a name="activatewarm"> </a>
 
 您需要激活 Azure 权限管理，以便您的组织中的用户可以应用于他们发送的消息的信息保护和打开邮件和 Azure Rights Management 服务受保护的文件。有关说明，请参阅[激活 Azure 权限管理](https://go.microsoft.com/fwlink/p/?LinkId=525775)。完成激活之后，此处返回，并继续执行本文中的任务。
   
-## <a name="set-up-ome-to-use-azure-rms-by-importing-trusted-publishing-domains-tpds"></a>设置 OME 使用 Azure RMS 导入可信发布域 (TPDs)
+## <a name="set-up-the-previous-version-of-ome-to-use-azure-rms-by-importing-trusted-publishing-domains-tpds"></a>将以前版本的 OME 设置为使用 Azure RMS 通过导入可信发布域 (TPDs)
 <a name="importTPDs"> </a>
 
 TPD 是一个 XML 文件包含有关您组织的权限管理设置的信息。例如，TPD 包含有关用于签名和加密证书和许可证的服务器许可方证书 (SLC) 的信息，Url 用于许可和发布，等等。使用 Windows PowerShell 您导入您的 Office 365 组织的 TPD。
@@ -108,7 +111,7 @@ TPD 是一个 XML 文件包含有关您组织的权限管理设置的信息。�
 
 8. 若要验证您已成功导入 TPD 并启用 Azure 权限管理，请使用 Test-irmconfiguration cmdlet 来测试 Azure 权限管理功能。有关详细信息，请参阅[Test-irmconfiguration](https://technet.microsoft.com/library/dd979798%28v=exchg.150%29.aspx)中的"示例 1"。
     
-## <a name="i-have-ome-set-up-with-active-directory-rights-management-not-azure-information-protection-what-do-i-do"></a>我有 OME 设置与 Active Directory 权限管理不 Azure 信息保护，我该怎么办？
+## <a name="i-have-the-previous-version-of-ome-set-up-with-active-directory-rights-management-not-azure-information-protection-what-do-i-do"></a>我有以前版本的 OME 设置与 Active Directory 权限管理不 Azure 信息保护，我该怎么办？
 <a name="importTPDs"> </a>
 
 您可以继续使用您现有的 Office 365 邮件加密邮件流规则与 Active Directory 权限管理，但您无法配置或使用新的 OME 功能。相反，您需要将迁移到 Azure 信息保护。有关迁移和这意味着您的组织的信息，请参阅[Migrating from AD RMS 到 Azure 信息保护](https://docs.microsoft.com/information-protection/deploy-use/prepare-environment-adrms)。

@@ -3,7 +3,7 @@ title: Office 365 中的电子邮件加密
 ms.author: krowley
 author: kccross
 manager: laurawi
-ms.date: 6/22/2018
+ms.date: 10/30/2018
 ms.audience: Admin
 ms.topic: overview
 ms.service: o365-administration
@@ -13,12 +13,12 @@ search.appverid:
 - MET150
 ms.assetid: c0d87cbe-6d65-4c03-88ad-5216ea5564e8
 description: 比较 Office 365 包括 Office 邮件加密 (OME)、 S/MIME、 信息权限管理 (IRM) 中的加密选项并了解有关传输层安全性 (TLS)。
-ms.openlocfilehash: a705637b85e73c6d1e5bcb3595dcd0b7766411e2
-ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+ms.openlocfilehash: c9c83283cab09ac81ab2856aec53fe8682ec45b8
+ms.sourcegitcommit: c05076501dfe118e575998ecfc08ad69d13c8abc
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22525491"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "25853077"
 ---
 # <a name="email-encryption-in-office-365"></a>Office 365 中的电子邮件加密
 
@@ -54,7 +54,7 @@ Office 365 提供了多个加密选项，可帮助您实现您的电子邮件安
   
 ## <a name="comparing-email-encryption-options-available-in-office-365"></a>Office 365 中的电子邮件加密选项比较
 
-||**        ![介绍 OME 的概念性插图](media/2bf27b5e-bbb3-46d1-95bf-884dc27a746c.png)                 **|**        ![介绍 IRM 的概念性插图](media/9c0cc444-9448-40c6-b244-8fcc593a64e0.png)                 **|**        ![介绍 SMIME 的概念性插图](media/ae4613a8-c17e-47e1-8e13-12e891e43744.png)                 **|
+||        ![介绍 OME 的概念性插图](media/2bf27b5e-bbb3-46d1-95bf-884dc27a746c.png)                 |        ![介绍 IRM 的概念性插图](media/9c0cc444-9448-40c6-b244-8fcc593a64e0.png)                 |        ![介绍 SMIME 的概念性插图](media/ae4613a8-c17e-47e1-8e13-12e891e43744.png)                |
 |:-----|:-----|:-----|:-----|
 |它是什么？  <br/> |Office 365 邮件加密 (OME) 是一项基于 Azure 权限管理 (Azure RMS) 构建的服务，允许您向组织内外发送经加密的电子邮件，而无需考虑目标电子邮件地址（Gmail、Yahoo!Mail、Outlook.com 等）。  <br/> 作为管理员，您可以设置定义加密条件的传输规则。当用户发送的邮件与规则匹配时，则自动应用加密。  <br/> 若要查看加密的邮件，收件人可以获取一个一次性密码、 使用 Microsoft 帐户，登录或使用单位电话的登录或学校相关联与 Office 365 帐户。收件人还可以发送加密的答复。这些人不需要 Office 365 订阅以查看加密的邮件或发送加密的答复。  <br/> |IRM 是一种加密解决方案，还可向电子邮件应用用法限制。它可以帮助防止未经授权的人员打印、转发或复制敏感信息。  <br/> Office 365 中的 IRM 功能使用 Azure 权限管理 (Azure RMS)。 
   <br/> |S/MIME 是一种基于证书的加密解决方案，允许您加密和邮件进行数字签名。邮件加密有助于确保只有预期的收件人可以打开并读取消息。数字签名可帮助验证发件人的标识的收件人。  <br/> 数字签名和邮件加密都可通过使用包含用于验证数字签名和加密或解密邮件的密钥的唯一数字证书来实现。  <br/> 若要使用 S/MIME，您必须对每个收件人文件具有公钥。收件人必须维护自己私钥必须保持安全。如果收件人的私钥受到威胁，收件人需要获取新的私钥和重新分发给所有潜在的发件人的公钥。  <br/> |

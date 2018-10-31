@@ -3,7 +3,7 @@ title: 定义邮件流规则来加密 Office 365 中的电子邮件
 ms.author: krowley
 author: kccross
 manager: laurawi
-ms.date: 7/2/2018
+ms.date: 10/30/2018
 ms.audience: ITPro
 ms.topic: article
 ms.service: o365-administration
@@ -13,21 +13,26 @@ search.appverid:
 - MOE150
 ms.assetid: 9b7daf19-d5f2-415b-bc43-a0f5f4a585e8
 description: 作为 Office 365 全局管理员，您可以创建邮件流规则启用 Office 365 邮件加密 (OME)。可以对任何传出电子邮件进行加密，并从内部邮件或从组织发出的加密邮件答复中删除加密。
-ms.openlocfilehash: 06668f29e69c885adb8c67d723efe42b4a4aa166
-ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+ms.openlocfilehash: e9c6874ce304d1af9da093c02cbc954c54dae8cc
+ms.sourcegitcommit: c05076501dfe118e575998ecfc08ad69d13c8abc
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22525067"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "25853087"
 ---
 # <a name="define-mail-flow-rules-to-encrypt-email-messages-in-office-365"></a>定义邮件流规则来加密 Office 365 中的电子邮件
 
-作为 Office 365 全局管理员，您可以创建邮件流规则，也称为传输规则，来帮助保护发送和接收的电子邮件。您可以设置来加密任何传出电子邮件和加密的邮件来自您组织内从或从组织发出的加密邮件答复中删除加密的规则。您可以使用 Exchange 管理中心 (EAC) 或 Exchange Online 的 Windows PowerShell cmdlet 创建这些规则。除了整体加密规则，您可以启用或禁用最终用户的单个邮件加密选项。
+作为 Office 365 全局管理员，您可以创建邮件流规则，也称为传输规则，来帮助保护发送和接收的电子邮件。您可以设置来加密任何传出电子邮件和加密的邮件来自您组织内从或从组织发出的加密邮件答复中删除加密的规则。您可以使用 Exchange 管理中心 (EAC) 或 Exchange Online 的 Windows PowerShell cmdlet 创建这些规则。 除了整体加密规则，您可以启用或禁用最终用户的单个邮件加密选项。
   
 如果您最近迁移从 AD RMS 到 Azure 信息保护，您将需要查看您现有的邮件流规则，以确保它们继续在新环境中工作。此外，如果您想要通过 Azure 信息保护给您充分利用可用的新 Office 365 邮件加密 (OME) 功能，您需要更新现有的邮件流规则。否则，您的用户将继续接收加密电子邮件，而不是新的、 无缝 OME 体验使用以前的 HTML 附件格式。如果您尚未尚未设置 OME，信息，请参阅[设置新的 Office 365 邮件加密功能构建到 Azure 信息保护的顶部](set-up-new-message-encryption-capabilities.md)。 
   
 有关组件构成邮件流规则和如何邮件流规则工作的信息，请参阅[Exchange Online 中的邮件流规则 （传输规则）](https://technet.microsoft.com/library/jj919238%28v=exchg.150%29.aspx)。有关邮件流规则与 Azure 信息保护的工作方式的其他信息，请参阅[Azure 信息保护标签配置 Exchange Online 邮件流规则](https://docs.microsoft.com/azure/information-protection/deploy-use/configure-exo-rules)。
   
+## <a name="hybrid-exchange-environments-do-this-first"></a>Exchange 的混合环境： 第一步
+内部部署用户可以发送加密的邮件使用 OME，如果您将通过 Exchange Online 电子邮件路由。若要执行此操作，您需要配置邮件流到流从电子邮件服务器到 Office 365。配置邮件流过 Office 365 后，您可以使用本文为 OME 进行邮件流规则。
+
+有关说明，请参阅[设置连接器路由 Office 365 和电子邮件服务器之间的邮件](https://docs.microsoft.com/exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/set-up-connectors-to-route-mail)。具体而言，完成中的步骤"第 2 部分： 配置邮件流从电子邮件服务器到 Office 365"。
+
 ## <a name="create-a-mail-flow-rule-to-encrypt-email-messages-with-the-new-ome-capabilities"></a>创建新 OME 功能的电子邮件加密的邮件流规则
 
 您可以定义使用 EAC 触发新 OME 功能的邮件加密的邮件流规则。
@@ -84,7 +89,7 @@ ms.locfileid: "22525067"
     
 7. 从**执行以下操作**列表中，删除分配给**修改邮件安全性**的任何操作\>**应用 OME 的早期版本**。
     
-8. 选择**保存**。
+8. 选择" **保存**"。
     
 ## <a name="creating-rules-for-office-365-message-encryption-without-the-new-capabilities"></a>为 Office 365 邮件加密创建规则，不带新功能
 
@@ -165,7 +170,7 @@ ms.locfileid: "22525067"
     
 7. 在**执行以下操作**，选择**修改邮件安全性** \> **OME 的早期版本中删除**。
     
-8. 选择**保存**。
+8. 选择" **保存** "。
     
 #### <a name="to-create-a-rule-to-remove-encryption-from-email-replies-encrypted-without-the-new-ome-capabilities-by-using-windows-powershell-for-exchange-online"></a>若要创建从 Exchange online 中使用 Windows PowerShell 的新功能，OME 不加密的电子邮件答复中删除加密的规则
 <a name="DecryptrulePShellNoNewOME"> </a>
