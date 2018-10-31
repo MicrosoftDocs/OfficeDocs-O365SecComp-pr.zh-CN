@@ -15,12 +15,12 @@ search.appverid:
 - MET150
 ms.assetid: 96deb75f-64e8-4c10-b570-84c99c674e15
 description: 零时差自动清除 (ZAP) 是一个检测到的已发送到用户的收件箱，垃圾邮件或恶意软件的邮件的电子邮件保护功能，然后呈现恶意内容权衡。ZAP 原理这取决于检测到的恶意内容类型。
-ms.openlocfilehash: dc8901dc7c1db5b323ccbeee610647b8a302fcb3
-ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+ms.openlocfilehash: dabe4caf8916d3f0de7a70cb3d056dd9a7fdcc3f
+ms.sourcegitcommit: ceb70ea863d8b97afea077a04fc7ec612b870695
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22525008"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "25857240"
 ---
 # <a name="zero-hour-auto-purge---protection-against-spam-and-malware"></a>零时差自动清除 - 防范垃圾邮件和恶意软件
 
@@ -74,7 +74,7 @@ ZAP 已打开默认情况下，但您需要确保满足两个条件：
     
     如果您选择**保存**，将策略应用于 Office 365 租户。 
     
-    ![设置垃圾邮件和批量 Mpve 邮件到垃圾邮件文件夹的操作](media/4332cfb3-89e1-48ba-8da8-9286f2fa1089.PNG)
+    ![设置垃圾邮件和批量操作以将邮件移至垃圾邮件文件夹](media/4332cfb3-89e1-48ba-8da8-9286f2fa1089.PNG)
   
 4. 如果您创建新策略，并且想要将策略应用于一组的用户，滚动到**应用于**部分和菜单控件中策略筛选窗口中，选择**收件人**、**域**或**组成员身份**您要应用该策略。您还可以设置其他条件和例外。 
     
@@ -121,7 +121,7 @@ ZAP 不将邮件移动到隔离收件箱这一次。
 ## <a name="related-topics"></a>相关主题
 <a name="BK_FAQ"> </a>
 
-[Office 365 电子邮件反垃圾邮件保护](anti-spam-protection.md)
+[Office 365 反垃圾邮件保护](anti-spam-protection.md)
   
 [使用 Office 365 垃圾邮件筛选器阻止垃圾电子邮件，以防止出现漏报问题](block-email-spam-to-prevent-false-negatives.md)
   

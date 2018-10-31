@@ -13,12 +13,12 @@ search.appverid:
 - MOE150
 ms.assetid: 4250c4bc-6102-420b-9e0a-a95064837676
 description: 了解如何启用报告消息加载项的 Outlook 和 Outlook web，为各个用户或您的整个组织上。
-ms.openlocfilehash: ad07d594a78b8134984b48f08898ad1ba697e03a
-ms.sourcegitcommit: 49b565f6a57febe53f331b2605d6a06d11e2d0be
+ms.openlocfilehash: 8c9853c78a42d6eecd0989475ef8f0a44345f812
+ms.sourcegitcommit: ceb70ea863d8b97afea077a04fc7ec612b870695
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/18/2018
-ms.locfileid: "25638006"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "25857260"
 ---
 # <a name="enable-the-report-message-add-in"></a>启用报告消息加载项
 
@@ -41,7 +41,7 @@ ms.locfileid: "25638006"
     
 ## <a name="get-the-report-message-add-in-for-yourself"></a>获取外接程序为自己的报告邮件
 
-1. 在[Office 存储](https://appsource.microsoft.com/product/office/WA104381180?src=office)，请获取外接程序的报告消息。
+1. 在[Microsoft AppSource](https://appsource.microsoft.com/marketplace/apps)，搜索的[邮件报告加载项](https://appsource.microsoft.com/product/office/wa104381180)。
     
 2. 选择**获取 IT 现在**。<br/>![报告消息-立即获取](media/ReportMessageGETITNOW.png)<br/> 
     
