@@ -3,7 +3,7 @@ title: 定义邮件流规则来加密 Office 365 中的电子邮件
 ms.author: krowley
 author: kccross
 manager: laurawi
-ms.date: 10/30/2018
+ms.date: 10/31/2018
 ms.audience: ITPro
 ms.topic: article
 ms.service: o365-administration
@@ -13,12 +13,12 @@ search.appverid:
 - MOE150
 ms.assetid: 9b7daf19-d5f2-415b-bc43-a0f5f4a585e8
 description: 作为 Office 365 全局管理员，您可以创建邮件流规则启用 Office 365 邮件加密 (OME)。可以对任何传出电子邮件进行加密，并从内部邮件或从组织发出的加密邮件答复中删除加密。
-ms.openlocfilehash: e9c6874ce304d1af9da093c02cbc954c54dae8cc
-ms.sourcegitcommit: c05076501dfe118e575998ecfc08ad69d13c8abc
+ms.openlocfilehash: bd94d36543653d5767fe27aee0f859fe9e374b2f
+ms.sourcegitcommit: c0f5c92664b3fbed7b3c2f8232bb4046fc19d1b7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 10/31/2018
-ms.locfileid: "25853087"
+ms.locfileid: "25890030"
 ---
 # <a name="define-mail-flow-rules-to-encrypt-email-messages-in-office-365"></a>定义邮件流规则来加密 Office 365 中的电子邮件
 
@@ -29,7 +29,7 @@ ms.locfileid: "25853087"
 有关组件构成邮件流规则和如何邮件流规则工作的信息，请参阅[Exchange Online 中的邮件流规则 （传输规则）](https://technet.microsoft.com/library/jj919238%28v=exchg.150%29.aspx)。有关邮件流规则与 Azure 信息保护的工作方式的其他信息，请参阅[Azure 信息保护标签配置 Exchange Online 邮件流规则](https://docs.microsoft.com/azure/information-protection/deploy-use/configure-exo-rules)。
   
 ## <a name="hybrid-exchange-environments-do-this-first"></a>Exchange 的混合环境： 第一步
-内部部署用户可以发送加密的邮件使用 OME，如果您将通过 Exchange Online 电子邮件路由。若要执行此操作，您需要配置邮件流到流从电子邮件服务器到 Office 365。配置邮件流过 Office 365 后，您可以使用本文为 OME 进行邮件流规则。
+内部部署用户可以发送加密的邮件使用 OME，如果您将通过 Exchange Online 电子邮件路由。若要执行此操作，您需要配置邮件流从电子邮件服务器到 Office 365。一次已配置邮件流过 Office 365，然后您可以使用本文进行 OME 的邮件流规则。
 
 有关说明，请参阅[设置连接器路由 Office 365 和电子邮件服务器之间的邮件](https://docs.microsoft.com/exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/set-up-connectors-to-route-mail)。具体而言，完成中的步骤"第 2 部分： 配置邮件流从电子邮件服务器到 Office 365"。
 
