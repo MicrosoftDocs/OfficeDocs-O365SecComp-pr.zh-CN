@@ -17,28 +17,28 @@ search.appverid:
 ms.custom: ''
 ms.assetid: ''
 description: 了解如何修改或新建针对 GDPR 的 Office 365 敏感信息类型。
-ms.openlocfilehash: e0e217ed44c5206828468b57d778bffa28c95da3
-ms.sourcegitcommit: c31424cafbf1953f2864d7e2ceb95b329a694edb
+ms.openlocfilehash: ed1dca161b5580d67b5a9071ca1d5b32e8b23d80
+ms.sourcegitcommit: ceb70ea863d8b97afea077a04fc7ec612b870695
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "23272257"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "25857280"
 ---
 # <a name="customize-or-create-a-new-sensitive-information-type"></a>自定义或新建敏感信息类型
 
 本文提供了三个示例，说明如何修改或新建针对 GDPR 的 Office 365 敏感信息类型。
 
--   修改现有的敏感信息类型 — 欧盟借记卡号
+- 修改现有的敏感信息类型 — 欧盟借记卡号
 
--   新建敏感信息类型 — 电子邮件地址
+- 新建敏感信息类型 — 电子邮件地址
 
--   使用示例 XML 文件新建敏感信息类型 — Contoso 客户编号
+- 使用示例 XML 文件新建敏感信息类型 — Contoso 客户编号
 
 另请参阅：
 
--   [创建自定义敏感信息类型](https://support.office.com/zh-CN/article/Create-a-custom-sensitive-information-type-82c382a5-b6db-44fd-995d-b333b3c7fc30)
+- [使用 Office 365 安全与合规中心 PowerShell 创建自定义敏感信息类型](create-a-custom-sensitive-information-type-in-scc-powershell.md)
 
--   [自定义内置敏感信息类型](https://support.office.com/zh-CN/article/Customize-a-built-in-sensitive-information-type-2164ce3d-4d64-4283-b6b1-b81fbe835e8e)
+- [自定义内置敏感信息类型](customize-a-built-in-sensitive-information-type.md)
 
 ## <a name="modify-a-sensitive-information-type-to-improve-accuracy"></a>修改敏感信息类型以提高准确性
 
@@ -142,7 +142,7 @@ ms.locfileid: "23272257"
 
 -   [关键字查询语言 (KQL) 语法参考 (DMC)](https://docs.microsoft.com/zh-CN/sharepoint/dev/general-development/keyword-query-language-kql-syntax-reference)
 
--   [在 Office 365 安全与合规中心运行内容搜索](https://support.office.com/zh-CN/article/Run-a-Content-Search-in-the-Office-365-Security-Compliance-Center-61852fd9-fe8a-4880-a339-cb19ed3bff4a) 
+-   [在 Office 365 安全与合规中心运行内容搜索](https://support.office.com/zh-CN/article/Run-a-Content-Search-in-the-Office-365-Security-Compliance-Center-61852fd9-fe8a-4880-a339-cb19ed3bff4a) 
 
 内容搜索提供了可帮助开发 KQL 查询和敏感信息类型的其他资源 — 关键字。为什么要使用关键字列表？因为这样可以获取显示与各个关键字相匹配的项目数的统计信息。该信息有助于快速找到最有效（及最无效）的关键字。有关搜索统计信息的详细信息，请参阅[查看内容搜索结果的关键字统计信息](https://support.office.com/zh-CN/article/View-keyword-statistics-for-Content-Search-results-9701a024-c52e-43f0-b545-9a53478aec04)。
 

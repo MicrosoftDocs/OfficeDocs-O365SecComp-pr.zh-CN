@@ -14,6 +14,7 @@
 ## [在 MDM 和 Intune 之间进行选择](choose-between-mdm-and-intune.md)
 # 保护信息
 ## [敏感度标签](sensitivity-labels.md)
+## [使用敏感度标签中的加密限制对内容的访问](encryption-sensitivity-labels.md)
 ## [数据丢失防护 (DLP)](data-loss-prevention-policies.md)
 ## [观看 DLP 的扩展概述](https://channel9.msdn.com/events/ignite/microsoft-ignite-orlando-2017/brk3111)
 ## 设置 DLP
@@ -149,7 +150,7 @@
 ## [使用内容搜索](content-search.md)
 ### [内容搜索的关键字查询和搜索条件](keyword-queries-and-search-conditions.md)
 ### [查看内容搜索结果的关键字统计信息](view-keyword-statistics-for-content-search.md)
-### [导出内容搜索结果](export-search-results.md)
+### [导出内容搜索结果 ](export-search-results.md)
 ### [导出内容搜索报告](export-a-content-search-report.md)
 ### [搜索和删除电子邮件](search-for-and-delete-messagesadmin-help.md)
 ### [在 Office 365 中搜索本地用户基于云的邮箱](search-cloud-based-mailboxes-for-on-premises-users.md)
@@ -258,6 +259,7 @@
 ### [部署独立 SharePoint Online 团队网站](deploy-an-isolated-sharepoint-online-team-site.md)
 ### [管理独立 SharePoint Online 团队网站](manage-an-isolated-sharepoint-online-team-site.md)
 ### [独立 SharePoint Online 团队网站开发/测试环境](isolated-sharepoint-online-team-site-dev-test-environment.md)
+## [SIEM 服务器集成](siem-server-integration.md)
 
 # 合规性解决方案
 ## [使用合规性管理器来帮助满足使用 Microsoft 云服务时的数据保护和法规要求](meet-data-protection-and-regulatory-reqs-using-microsoft-cloud.md)
