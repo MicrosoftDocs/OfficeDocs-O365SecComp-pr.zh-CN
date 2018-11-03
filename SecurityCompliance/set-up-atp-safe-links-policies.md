@@ -5,6 +5,7 @@ author: denisebmsft
 manager: laurawi
 ms.audience: Admin
 ms.topic: article
+ms.date: 11/02/2018
 ms.service: o365-administration
 localization_priority: Normal
 search.appverid:
@@ -12,12 +13,12 @@ search.appverid:
 - MOE150
 ms.assetid: bdd5372d-775e-4442-9c1b-609627b94b5d
 description: 设置以从 Word、 Excel、 PowerPoint 和 Visio 文件中以及电子邮件中的恶意链接保护您的组织的安全链接策略。
-ms.openlocfilehash: 6c4e208e9f944d9c38d43b5669167e0cf425ec39
-ms.sourcegitcommit: e0c6f99d5514d8da8a70d9bd3616d1a1c0851254
+ms.openlocfilehash: 823dc6073dfa6302f19154a86bafa7f19d5affdc
+ms.sourcegitcommit: 49abeb8e57a5ee622d72a3782175a989b1a2e3c6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/13/2018
-ms.locfileid: "25552340"
+ms.lasthandoff: 11/02/2018
+ms.locfileid: "25935549"
 ---
 # <a name="set-up-office-365-atp-safe-links-policies"></a>设置 Office 365 ATP 安全链接策略
 
@@ -40,11 +41,11 @@ ms.locfileid: "25552340"
 - 请确保您的组织具有[Office 365 高级威胁保护](office-365-atp.md)。
     
 - 请确保您具有定义或编辑 ATP 策略所需的权限。请参阅[Permissions in Office 365 安全性&amp;合规性中心](permissions-in-the-security-and-compliance-center.md)。
+
+- 确保 Office 客户端被配置为使用[现代身份验证](https://docs.microsoft.com/office365/enterprise/modern-auth-for-office-2013-and-2016)（这适用于在 Office 文档中的安全链接 ATP 保护）。
     
 - [了解 ATP 安全链接策略选项](#learn-about-atp-safe-links-policy-options)（本文中）。 
 
-- 确保 Office 客户端配置为使用[现代身份验证](https://docs.microsoft.com/office365/enterprise/modern-auth-for-office-2013-and-2016)。
-    
 - 允许最多 30 分钟的新的或更新策略传播到所有 Office 365 数据中心。
     
 ## <a name="step-2-define-or-review-the-atp-safe-links-policy-that-applies-to-everyone"></a>步骤 2： 定义 （或查看） ATP 安全链接策略应用于所有人
@@ -63,7 +64,7 @@ Office 365 企业版中有高级威胁保护，您可以在适用于您的组织
     
 5. 在**设置，将应用于除电子邮件的内容**部分中，选中 （或清除） 您想要使用的选项。（我们建议您选择的所有选项。） 
     
-6. 选择**保存**。
+6. 选择" **保存**"。
     
 ## <a name="step-3-add-or-edit-atp-safe-links-policies-that-apply-to-specific-email-recipients"></a>步骤 3： 添加 （或编辑） ATP 安全链接策略将应用于特定的电子邮件收件人
 
@@ -95,7 +96,7 @@ Office 365 企业版中有高级威胁保护，您可以在适用于您的组织
     
   - 在**应用于**部分中，选择**收件人是的成员**，，然后选择您想要包括在您的策略的组。选择**添加**，然后选择**确定**。
     
-6. 选择**保存**。
+6. 选择" **保存**"。
     
 ## <a name="step-5-learn-about-atp-safe-links-policy-options"></a>第 5 步： 了解 ATP 安全链接策略选项
 

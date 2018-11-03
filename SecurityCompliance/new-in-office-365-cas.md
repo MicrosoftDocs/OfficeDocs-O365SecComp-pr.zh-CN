@@ -5,6 +5,7 @@ author: denisebmsft
 manager: laurawi
 ms.audience: Admin
 ms.topic: reference
+ms.date: 10/31/2018
 ms.service: o365-administration
 localization_priority: Normal
 search.appverid:
@@ -12,12 +13,12 @@ search.appverid:
 - MOE150
 ms.assetid: d674763c-a4c9-4604-8623-68c1836d27f3
 description: 请参阅 what's new in Office 365 云应用程序安全性
-ms.openlocfilehash: a8bca8cb62681491fb5a6964104b1aa1c626784d
-ms.sourcegitcommit: 31e0d94244c76a9f5118efee8bbc93395d080f91
+ms.openlocfilehash: f661d0d541e84db89b7abd99fd77ef9a767a4cd0
+ms.sourcegitcommit: 49abeb8e57a5ee622d72a3782175a989b1a2e3c6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/01/2018
-ms.locfileid: "23796868"
+ms.lasthandoff: 11/02/2018
+ms.locfileid: "25935569"
 ---
 # <a name="what-is-new-in-office-365-cloud-app-security"></a>What's new in Office 365 云应用程序安全性
 
@@ -27,11 +28,11 @@ ms.locfileid: "23796868"
   
 ## <a name="office-365-cloud-app-security-release-130"></a>Office 365 云应用程序安全性版本 130
 
-*版本 2018 年 9 月 5，*
+*年 9 月 5 2018*
 
 **与[Microsoft 云应用程序安全性释放 130](https://docs.microsoft.com/cloud-app-security/release-notes#cloud-app-security-release-130)释放**：
 
-- **新的菜单栏**若要跨 Microsoft 365 产品提供更一致的管理体验并使您能够更轻松地透视 Microsoft 安全解决方案之间，云应用程序安全性门户菜单栏已移动到屏幕的左侧。此一致的导航体验时将其从一个 Microsoft 安全门户移到另一个定向自己的帮助。
+- **新的菜单栏**若要跨 Microsoft 365 产品提供更一致的管理体验并使您能够更轻松地透视 Microsoft 安全解决方案之间，云应用程序安全性门户菜单栏已移动到屏幕的左侧。此一致的导航体验时将其从一个 Microsoft 安全门户移到另一个定向自己的帮助。<br/>![Office 云应用程序安全性的菜单栏](media/OCAS-MenuBar.png)<br/>
 
 - **影响 OAuth 应用程序分数**现在，您可以发送的云应用程序安全性团队反馈，以便让我们知道是否存在组织中的恶意视图可能会发现 OAuth 应用程序。这一新功能，可以是我们安全社区的和增强 OAuth 应用程序风险分数和分析。有关详细信息，请参阅[管理应用程序权限](manage-app-permissions-in-ocas.md)。
 

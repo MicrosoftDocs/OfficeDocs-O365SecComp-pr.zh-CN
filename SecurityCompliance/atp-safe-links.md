@@ -4,6 +4,7 @@ ms.author: deniseb
 author: denisebmsft
 manager: laurawi
 ms.audience: Admin
+ms.date: 11/02/2018
 ms.topic: overview
 f1_keywords:
 - "197503"
@@ -19,12 +20,12 @@ search.appverid:
 - ZWD160
 ms.assetid: dd6a1fef-ec4a-4cf4-a25a-bb591c5811e3
 description: 安全链接功能提供的超链接中 Office 文档和电子邮件中的时间的单击验证。使用安全的链接可从网络钓鱼和其他攻击保护您的组织。
-ms.openlocfilehash: 75703cbe6b6a5a5d102570288bb20e6814d095fc
-ms.sourcegitcommit: 099bbfb1d16b251fd5cf18ec6515faaf9a989176
+ms.openlocfilehash: fcb8fb5862a1b9b574008e91f8745e93b6d1a939
+ms.sourcegitcommit: 49abeb8e57a5ee622d72a3782175a989b1a2e3c6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "25454369"
+ms.lasthandoff: 11/02/2018
+ms.locfileid: "25935559"
 ---
 # <a name="office-365-atp-safe-links"></a>Office 365 ATP 安全链接
 
@@ -88,7 +89,7 @@ ATP 安全链接功能处于活动状态时：
   
 - 为电子邮件和 Word、 Excel、 PowerPoint 和 Visio 文档中，则**ATP 安全链接策略设置**。（请参阅[Set up ATP Office 365 中的安全链接策略](set-up-atp-safe-links-policies.md)）。
 
-- **Office 365 客户端应用程序配置为使用现代身份验证**。（请参阅[Office 2016 现代身份验证](https://docs.microsoft.com/office365/enterprise/modern-auth-for-office-2013-and-2016)。） 
+- **Office 365 客户端应用程序配置为使用现代身份验证**（这是 ATP 安全链接保护 Office 文档中的值）。（请参阅[Office 2016 现代身份验证](https://docs.microsoft.com/office365/enterprise/modern-auth-for-office-2013-and-2016)。） 
     
 - **用户已登录到 Office 365**使用其工作或学校帐户。（请参阅[登录到 Office 或 Office 365](https://support.office.com/article/b9582171-fd1f-4284-9846-bdd72bb28426)）。
     

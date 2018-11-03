@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: 0d4d0f35-390b-4518-800e-0c7ec95e946c
 description: '使用 Office 365 安全性&amp;搜索统一的审核日志，以查看 Office 365 组织中的用户和管理员的活动的合规性中心。 '
-ms.openlocfilehash: 5e0d19841c0e512173e8c42d37c0ec13867299af
-ms.sourcegitcommit: e14dec9bed0c0009acbc1f1cb80b4d0794ad5739
+ms.openlocfilehash: f44fa0a32a70a4b8d96b7bb7b9d9386f9efb74b6
+ms.sourcegitcommit: 49abeb8e57a5ee622d72a3782175a989b1a2e3c6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/05/2018
-ms.locfileid: "25435119"
+ms.lasthandoff: 11/02/2018
+ms.locfileid: "25935589"
 ---
 # <a name="search-the-audit-log-in-the-office-365-security-amp-compliance-center"></a>在 Office 365 安全&amp;合规中心搜索审核日志
 
@@ -57,7 +57,7 @@ ms.locfileid: "25435119"
 - Microsoft 流中的用户和管理活动
     
    
-## <a name="before-you-begin"></a>准备工作
+## <a name="before-you-begin"></a>开始之前
 
 请务必阅读以下各项开始搜索 Office 365 之前审核日志。
   
@@ -78,7 +78,7 @@ ms.locfileid: "25435119"
      - **Office 365 E5** -审核记录保留 for 365 天 （一年）。这意味着您可以搜索活动执行去年之内的审核日志。一年时间保留审核记录也是可供用户分配一个 E3/Exchange Online 计划 1 许可证且具有的 Office 365 高级合规性附加许可证。
 
         > [!NOTE]
-        > 一年保留期的审核记录将提供 Office 365 Preview 的一部分提供程序并将仅适用于组织注册了预览计划。如果审核记录的更长时间保留期确实是可在预览 （和更高版本的正式发布），将一年时间会保留唯一的新审核记录 （对于活动之后释放更长时间保留期执行）。
+        > E5 组织 （或高级合规性加载项许可证已 E3 公司） 的审核记录的一年保持期目前仅作为专用的预览计划的一部分。要在此预览计划中注册，请文件与[Microsoft 支持](https://docs.microsoft.com/en-us/office365/admin/contact-support-for-business-products?redirectSourcePath=%252fen-us%252farticle%252fcontact-support-for-business-products-admin-help-32a17ca7-6fa0-4870-8a8d-e25ba4ccfd4b&view=o365-worldwide&tabs=online)的请求，并包括以下内容作为需要帮助的说明： 长期 Office 365 审核日志专用预览版。
 
 - 如果您想要关闭为您的组织的 Office 365 中的审核日志搜索，您可以在远程 PowerShell 连接到 Exchange Online 组织中运行以下命令：
     
@@ -147,7 +147,7 @@ ms.locfileid: "25435119"
     > [!TIP]
     > 专用浏览会话 （不正则会话） 用于访问 Office 365 安全性&amp;合规性中心，因为这将阻止您当前登录与从正在使用的凭据。若要打开 Internet Explorer 或 Microsoft 边缘 InPrivate 浏览会话，只需按 CTRL + SHIFT + P。要打开私有浏览会话中 Google Chrome （称为 incognito 窗口），请按 CTRL + SHIFT + N。 
   
-2. 登录到 Office 365 使用工作或学校帐户。
+2. 使用工作或学校帐户登录到 Office 365。
     
 3. 安全的左窗格中&amp;合规性中心，单击**搜索&amp;调查**，然后单击**审核日志搜索**。
     
@@ -485,7 +485,7 @@ ms.locfileid: "25435119"
 |添加的用户  <br/> |添加用户  <br/> |创建 Office 365 用户帐户。  <br/> |
 |已更改的用户许可证  <br/> |更改用户许可证  <br/> |许可证分配给用户更改内容。若要查看哪些许可证已更改，请参阅的相应**更新了用户**活动。<br/> |
 |更改的用户密码  <br/> |更改用户密码  <br/> |管理员更改密码的用户的密码。  <br/> |
-|已删除的用户  <br/> |删除用户  <br/> |Office 365 用户帐户已被删除。  <br/> |
+|已删除的用户  <br/> |Delete user  <br/> |Office 365 用户帐户已被删除。  <br/> |
 |重置用户密码  <br/> |重置用户密码  <br/> |管理员重置用户的密码。  <br/> |
 |设置强制用户更改密码的属性  <br/> |设置强制更改用户密码  <br/> |管理员设置强制用户更改其密码下一次用户登录到 Office 365 的属性。  <br/> |
 |设置许可证属性  <br/> |设置许可证属性  <br/> |管理员修改许可分配给用户的属性。  <br/> |
@@ -700,7 +700,7 @@ Exchange 管理员审核日志记录 — 其 Office 365 中的默认情况下启
 - **Office 365 E5** -审核记录保留 for 365 天 （一年）。一年时间保留审核记录也是可供组织已 E3 订阅和 Office 365 高级合规性加载项订阅。
 
      > [!NOTE]
-     > 一年保持期审核记录将推出可供注册 Office 365 Preview 程序的组织。
+     > 如上文所述，E5 组织 （或高级合规性加载项许可证已 E3 公司） 的审核记录的一年保持期目前仅作为专用的预览计划的一部分。要在此预览计划中注册，请文件与[Microsoft 支持](https://docs.microsoft.com/en-us/office365/admin/contact-support-for-business-products?redirectSourcePath=%252fen-us%252farticle%252fcontact-support-for-business-products-admin-help-32a17ca7-6fa0-4870-8a8d-e25ba4ccfd4b&view=o365-worldwide&tabs=online)的请求，并包括以下内容作为需要帮助的说明： 长期 Office 365 审核日志专用预览版。
 
 另请注意，审核记录的保留时间段的持续时间基于每个用户授权。例如，如果您的组织中的用户分配一个 Office 365 E3 许可证，然后执行该用户的活动的审核记录保留 90 天。如果其他用户分配一个 Office 365 E5 许可证，其审核记录保留一年时间。 
 
