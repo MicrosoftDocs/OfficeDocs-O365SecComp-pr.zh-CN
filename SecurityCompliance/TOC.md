@@ -33,6 +33,7 @@
 ### [观看自定义 DLP 的扩展概述](https://go.microsoft.com/fwlink/?linkid=852306)
 ### [自定义内置敏感信息类型](customize-a-built-in-sensitive-information-type.md)
 ### [创建自定义敏感信息类型](create-a-custom-sensitive-information-type.md)
+### [使用 Office 365 安全与合规中心 PowerShell 创建自定义敏感信息类型](create-a-custom-sensitive-information-type-in-scc-powershell.md)
 ### [创建关键字字典](create-a-keyword-dictionary.md)
 ### [文档指纹识别](document-fingerprinting.md) 
 # 管理数据管理        
@@ -233,7 +234,7 @@
 ## [在审核日志中搜索电子数据展示活动](search-for-ediscovery-activities-in-the-audit-log.md)
 # [监视安全与合规]()
 ## [警报策略](alert-policies.md)
-### [创建活动警报](create-activity-alerts.md)
+## [活动警报](create-activity-alerts.md)
 ## [安全与合规中心内的智能报告和见解](reports-and-insights-in-security-and-compliance.md)
 ### [查看安全与合规中心内的电子邮件安全报告](view-email-security-reports.md)
 #### [演练 - 从详细报告到见解](from-a-detailed-report-to-an-insight.md)
