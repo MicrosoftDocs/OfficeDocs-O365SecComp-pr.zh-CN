@@ -14,16 +14,16 @@ search.appverid:
 - MET150
 ms.assetid: 82c382a5-b6db-44fd-995d-b333b3c7fc30
 description: 了解如何在 Office 365 安全与合规中心创建并导入 DLP 的自定义敏感信息类型。
-ms.openlocfilehash: 46e3e0cc502eb6135e18c30df3d96ec2e083b54c
-ms.sourcegitcommit: ceb70ea863d8b97afea077a04fc7ec612b870695
+ms.openlocfilehash: c1774b094163b5712519b3baeb5f0360d84896ea
+ms.sourcegitcommit: e044b4fd72e4151cd17bf2ad05acc057e0c0d45f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "25866044"
+ms.lasthandoff: 11/01/2018
+ms.locfileid: "25895271"
 ---
 # <a name="create-a-custom-sensitive-information-type-in-office-365-security--compliance-center-powershell"></a>在 Office 365 安全与合规中心 PowerShell 中创建自定义敏感信息类型
 
-Office 365 中的数据丢失防护 (DLP) 包含许多[敏感信息类型](what-the-sensitive-information-types-look-for.md)，可供用于 DLP 策略。这些内置类型可有助于标识和保护信用卡号、银行帐号、护照号等。 
+Office 365 中的数据丢失防护 (DLP) 包含许多内置[敏感信息类型](what-the-sensitive-information-types-look-for.md)，可供用于 DLP 策略。这些内置类型可有助于标识和保护信用卡号、银行帐号、护照号等。 
   
 不过，如果需要标识和保护其他类型的敏感信息（例如，使用组织专用格式的员工 ID），可创建自定义敏感信息类型。敏感信息类型在称为__“规则包”的 XML 文件中进行定义。
   
@@ -38,7 +38,7 @@ Office 365 中的数据丢失防护 (DLP) 包含许多[敏感信息类型](what-
 
 由于客户环境和内容匹配要求的多样性，Microsoft 支持部门无法帮助提供自定义内容匹配定义（例如，定义自定义分类或正则表达式（也称为“RegEx”）模式）。对于自定义内容匹配的开发、测试和调试，Office 365 客户将需要依赖于内部 IT 资源，或使用 Microsoft 咨询服务 (MCS) 等外部咨询资源。支持工程师可提供针对该功能的有限支持，但无法保证任何自定义内容匹配开发都能满足客户的要求或义务。作为可提供的支持类型的示例，可以提供示例正则表达式模式以供测试使用。或者，支持人员可以帮助对现有 RegEx 模式（单个特定内容示例未按预期触发）进行故障排除。
 
- 有关用于处理文本的 .NET RegEx 引擎的其他信息，请参阅有关 [.NET 中的正则表达式](https://docs.microsoft.com/dotnet/standard/base-types/regular-expressions)的文档。
+ 有关用于处理文本的 Boost.RegEx（以前称为 RegEx++）引擎的详细信息，请参阅 [Boost.Regex 5.1.3](https://www.boost.org/doc/libs/1_68_0/libs/regex/doc/html/)。
     
 ## <a name="sample-xml-of-a-rule-package"></a>规则包 XML 示例
 
