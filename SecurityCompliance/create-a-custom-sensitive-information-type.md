@@ -14,16 +14,16 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: 了解如何在 Office 365 安全与合规中心的图形用户界面中创建、修改、删除和测试 DLP 自定义敏感信息类型。
-ms.openlocfilehash: cd7041ee9c20038fb7cb0c337f31d7cef7f7192d
-ms.sourcegitcommit: ceb70ea863d8b97afea077a04fc7ec612b870695
+ms.openlocfilehash: 55c7476a1162f657194b9dab4376afb34a76c3f3
+ms.sourcegitcommit: e044b4fd72e4151cd17bf2ad05acc057e0c0d45f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "25857290"
+ms.lasthandoff: 11/01/2018
+ms.locfileid: "25895281"
 ---
 # <a name="create-a-custom-sensitive-information-type"></a>创建自定义敏感信息类型
 
-Office 365 中的数据丢失防护 (DLP) 包含许多[敏感信息类型](what-the-sensitive-information-types-look-for.md)，可供用于 DLP 策略。这些内置类型可有助于标识和保护信用卡号、银行帐号、护照号等。 
+Office 365 中的数据丢失防护 (DLP) 包含许多内置[敏感信息类型](what-the-sensitive-information-types-look-for.md)，可供用于 DLP 策略。这些内置类型可有助于标识和保护信用卡号、银行帐号、护照号等。 
 
 不过，如果需要标识和保护其他类型的敏感信息（例如，使用组织专用格式的员工 ID 或项目编号），可创建自定义敏感信息类型。
 
@@ -51,23 +51,21 @@ Office 365 中的数据丢失防护 (DLP) 包含许多[敏感信息类型](what-
 
 下表列出了关键区别：
 
-|使用 UI 创建的自定义敏感信息类型|使用 PowerShell 创建的自定义敏感信息类型|
+|使用 UI 创建的自定义敏感信息类型|PowerShell 中的自定义敏感信息类型|
 |:-----|:-----|
-|只支持“名称”和“说明”采用一种语言|支持“名称”和“说明”采用多种语言|
-|支持一个模式（主要模式）。|除主要模式外，还支持多个模式。|
+|名称和说明采用一种语言。|支持名称和说明的多种语言。|
+|支持一个模式。|支持多个模式。|
 |支持性证据可以是： <br/>• 正则表达式 <br/>• 关键字 <br/>• 关键字字典|支持性证据可以是： <br/>• 正则表达式 <br/>• 关键字 <br/>• 关键字字典 <br/>• [内置 DLP 函数](what-the-dlp-functions-look-for.md)|
-|可以为敏感信息类型配置可信度。|可以为敏感信息类型及其中各个模式配置可信度。|
-|模式匹配需要检测主要模式和所有支持性证据（使用的是隐式 AND 运算符）。|模式匹配需要检测主要模式和一组数量可配置的支持性证据（可使用隐式 AND 和 OR 运算符）。|
+|将自定义敏感信息类型添加到名为 Microsoft.SCCManaged.CustomRulePack 的规则包中|最多可创建 10 个包含自定义敏感信息类型的规则包。|
+|模式匹配需要检测主模式和所有支持性证据（使用隐式 AND 运算符）。|模式匹配需要检测主要模式和一组数量可配置的支持性证据（可使用隐式 AND 和 OR 运算符）。|
 
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>开始前，有必要了解什么？
 
 - 若要打开安全与合规中心，请参阅[转到 Office 365 安全与合规中心](go-to-the-securitycompliance-center.md)。
 
-- 若要创建自定义敏感信息类型，需要熟悉正则表达式 (RegEx)。若要详细了解用于处理文本的 .NET RegEx 引擎，请参阅 [.NET 正则表达式](https://docs.microsoft.com/dotnet/standard/base-types/regular-expressions)。
+- 自定义敏感信息类型需要熟悉正则表达式 (RegEx)。有关用于处理文本的 Boost.RegEx（以前称为 RegEx++）引擎的详细信息，请参阅 [Boost.Regex 5.1.3](https://www.boost.org/doc/libs/1_68_0/libs/regex/doc/html/)。
 
   Microsoft 客户服务和支持人员无法协助提供自定义内容匹配定义（创建自定义分类或正则表达式模式）。支持工程师可提供有限的功能支持（例如，出于测试目的提供示例正则表达式模式，或协助排查未按预期触发的现有正则表达式模式），但无法保证任何自定义内容匹配开发能够满足你的需求或履行你的义务。
-
-- 若要详细了解用于处理文本的 .NET RegEx 引擎，请参阅 [.NET 中的正则表达式](https://docs.microsoft.com/dotnet/standard/base-types/regular-expressions)。
 
 - DLP 使用搜索爬网程序标识并分类 SharePoint Online 和 OneDrive for Business 网站中的敏感信息。若要在现有内容中标识新自定义敏感信息类型，必须对内容进行重新爬网。虽然内容重新爬网是按日程安排进行，但你也可以手动对网站集、列表或库的内容进行重新爬网。有关详细信息，请参阅[手动请求对网站、库或列表进行爬网和重新编制索引](https://docs.microsoft.com/sharepoint/crawl-site-content)。
 
@@ -107,7 +105,7 @@ Office 365 中的数据丢失防护 (DLP) 包含许多[敏感信息类型](what-
  
     a. 单击“任意内容”****，再选择“正则表达式”****。
 
-    b. 在正则表达式框中，输入“`(\s)(\d{9})(\s)`”（两边是空格的 9 位数）
+    b. 在正则表达式框中，输入“`(\s)(\d{9})(\s)`”（两边是空格的 9 位数）。
   
   - **支持性元素**：单击“添加支持性元素”****，再选择“包含此关键字列表”****。
 
