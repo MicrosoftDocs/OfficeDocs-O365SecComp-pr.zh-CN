@@ -160,7 +160,8 @@
 ### [准备用于 ID 列表内容搜索的 CSV 文件](csv-file-for-an-id-list-content-search.md)
 ### [使用内容搜索来搜索第三方数据](use-content-search-to-search-third-party-data-that-was-imported.md)
 ### [在电子数据展示工作流中使用内容搜索](use-content-search-in-ediscovery.md)
-### [检查内容搜索查询中的错误](check-your-content-search-query-for-errors.md)
+### [检查内容搜索查询中是否有错误](check-your-content-search-query-for-errors.md)
+### [为内容搜索保留密件抄送收件人](https://docs.microsoft.com/exchange/policy-and-compliance/holds/preserve-bcc-recipients-and-group-members)
 ## 了解内容搜索
 ### [内容搜索限制](limits-for-content-search.md)
 ### [内容搜索中的部分索引项](partially-indexed-items-in-content-search.md)
@@ -235,7 +236,6 @@
 ## [在审核日志中搜索电子数据展示活动](search-for-ediscovery-activities-in-the-audit-log.md)
 # [监视安全与合规]()
 ## [警报策略](alert-policies.md)
-## [活动警报](create-activity-alerts.md)
 ## [安全与合规中心内的智能报告和见解](reports-and-insights-in-security-and-compliance.md)
 ### [查看安全与合规中心内的电子邮件安全报告](view-email-security-reports.md)
 #### [演练 - 从详细报告到见解](from-a-detailed-report-to-an-insight.md)
@@ -412,4 +412,4 @@
 ### [向 Office 365 发送邮件](sending-mail-to-office-365.md)
 ### [非客户服务](services-for-non-customers.md)
 # [Office 365 企业版](https://docs.microsoft.com/Office365/Enterprise)
-# [Office 365 企业版](https://support.office.com/office365admin)
+# [Office 365 企业版](https://docs.microsoft.com/office365/admin/admin-home)
