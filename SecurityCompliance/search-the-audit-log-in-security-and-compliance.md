@@ -6,8 +6,6 @@ manager: laurawi
 ms.date: ''
 ms.audience: Admin
 ms.topic: article
-f1_keywords:
-- O365AC_AlternativeEmailAddress
 ms.service: o365-administration
 localization_priority: Normal
 ms.collection: Strat_O365_IP
@@ -15,15 +13,15 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: 0d4d0f35-390b-4518-800e-0c7ec95e946c
-description: '使用 Office 365 安全性&amp;搜索统一的审核日志，以查看 Office 365 组织中的用户和管理员的活动的合规性中心。 '
-ms.openlocfilehash: f44fa0a32a70a4b8d96b7bb7b9d9386f9efb74b6
-ms.sourcegitcommit: 49abeb8e57a5ee622d72a3782175a989b1a2e3c6
+description: '使用 Office 365 安全性和合规性中心搜索统一的审核日志，以查看 Office 365 组织中的用户和管理员的活动。 '
+ms.openlocfilehash: 02e38917d3a82828d6602661b494ebc0ffb733d8
+ms.sourcegitcommit: 42c7ad69f95fc4d2de13293b39cc44931b9f82e6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/02/2018
-ms.locfileid: "25935589"
+ms.lasthandoff: 11/14/2018
+ms.locfileid: "26522804"
 ---
-# <a name="search-the-audit-log-in-the-office-365-security-amp-compliance-center"></a>在 Office 365 安全&amp;合规中心搜索审核日志
+# <a name="search-the-audit-log-in-the-office-365-security--compliance-center"></a>在 Office 365 安全性和合规性中心搜索审核日志
 
 是否要查找是否用户查看特定文档或清除其邮箱中的项目？如果是，可以使用 Office 365 安全性&amp;搜索统一的审核日志，以查看 Office 365 组织中的用户和管理员的活动的合规性中心。为什么统一的审核日志？因为您可以搜索以下类型的用户和管理 Office 365 中的活动：
   
@@ -100,26 +98,26 @@ ms.locfileid: "25935589"
     
 - 它可能需要 30 分钟或设置为 24 小时事件之后发生相应的审核日志条目要显示在搜索结果中。下表显示了 Office 365 中的不同服务所花的时间。
     
-|**Office 365 服务**|**30 分钟**|**24 小时**|
-|:-----|:-----|:-----|
-|高级的威胁保护和威胁智能  <br/> |![复选标记](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)| |
-|Azure Active Directory （用户登录事件）  <br/> ||![复选标记](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/> |
-|Azure Active Directory （admin 事件）  <br/> ||![复选标记](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png) |
-|Azure Active Directory （用户登录事件）  <br/> ||![复选标记](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/> |
-|数据丢失防护  <br/> |![复选标记](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/>| |
-|Dynamics 365 CRM <br/> |![复选标记](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/>| |
-|电子数据展示  <br/> |![复选标记](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/>| |
-|Exchange Online  <br/> |![复选标记](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/> ||
-|Microsoft Flow  <br/> |![复选标记](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/>| |
-|Microsoft Forms  <br/> |![复选标记](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/>| |
-|Microsoft Project  <br/> |![复选标记](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/>| |
-|Microsoft Stream  <br/> |![复选标记](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/>| |
-|Microsoft Teams  <br/> |![复选标记](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/> ||
-|Power BI  <br/> |![复选标记](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/>| |
-|安全&amp;合规性中心  <br/> |![复选标记](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/> ||
-|SharePoint Online 和 OneDrive for Business  <br/> |![复选标记](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/> ||
-|Sway  <br/> ||![复选标记](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/> |
-|Yammer  <br/> ||![复选标记](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/> |
+    |**Office 365 服务**|**30 分钟**|**24 小时**|
+    |:-----|:-----|:-----|
+    |高级的威胁保护和威胁智能  <br/> |![复选标记](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)| |
+    |Azure Active Directory （用户登录事件）  <br/> ||![复选标记](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/> |
+    |Azure Active Directory （admin 事件）  <br/> ||![复选标记](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png) |
+    |Azure Active Directory （用户登录事件）  <br/> ||![复选标记](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/> |
+    |数据丢失防护  <br/> |![复选标记](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/>| |
+    |Dynamics 365 CRM <br/> |![复选标记](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/>| |
+    |电子数据展示  <br/> |![复选标记](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/>| |
+    |Exchange Online  <br/> |![复选标记](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/> ||
+    |Microsoft Flow  <br/> |![复选标记](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/>| |
+    |Microsoft Forms  <br/> |![复选标记](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/>| |
+    |Microsoft Project  <br/> |![复选标记](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/>| |
+    |Microsoft Stream  <br/> |![复选标记](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/>| |
+    |Microsoft Teams  <br/> |![复选标记](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/> ||
+    |Power BI  <br/> |![复选标记](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/>| |
+    |安全&amp;合规性中心  <br/> |![复选标记](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/> ||
+    |SharePoint Online 和 OneDrive for Business  <br/> |![复选标记](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/> ||
+    |Sway  <br/> ||![复选标记](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/> |
+    |Yammer  <br/> ||![复选标记](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/> |
    
 - Azure Active Directory (Azure AD) 是 Office 365 的目录服务。统一的审核日志包含用户、 组、 应用程序、 域和目录执行 Office 365 管理中心中或在 Azure 中的活动管理门户。Azure AD 事件的完整列表，请参阅[Azure Active Directory 审核报表事件](https://go.microsoft.com/fwlink/p/?LinkID=616549)。
     
@@ -160,18 +158,18 @@ ms.locfileid: "25935589"
   
 4. 配置以下搜索条件：
     
-1. **活动**单击下拉列表以显示您可以搜索活动。用户和管理活动进行组织到组的相关活动。您可以选择特定的活动，或者您可以单击选择组中的所有活动的活动组名称。您还可以单击以清除选定内容的所选的活动。运行搜索后，将显示仅的审核日志条目的所选的活动。选择**显示所有活动的结果**将显示由所选的用户或用户组执行的所有活动的结果。 
+    a.**活动**单击下拉列表以显示您可以搜索活动。用户和管理活动进行组织到组的相关活动。您可以选择特定的活动，或者您可以单击选择组中的所有活动的活动组名称。您还可以单击以清除选定内容的所选的活动。运行搜索后，将显示仅的审核日志条目的所选的活动。选择**显示所有活动的结果**将显示由所选的用户或用户组执行的所有活动的结果。 
     
     Office 365 审核日志记录 100 多个用户和管理活动。单击在这篇文章，请参阅的每个活动中的每个不同的 Office 365 服务说明主题**Audited 活动**选项卡。 
     
-2. 默认情况下选中**开始日期**和**结束日期**最近七天。选择要显示在该时间段内发生的事件日期和时间范围。以协调世界时 (UTC) 格式显示日期和时间。您可以指定的最大的日期范围是 90 天。如果选定的日期范围大于 90 天，则显示错误。 
+    默认情况下选中 b.**开始日期**和**结束日期**最近七天。选择要显示在该时间段内发生的事件日期和时间范围。以协调世界时 (UTC) 格式显示日期和时间。您可以指定的最大的日期范围是 90 天。如果选定的日期范围大于 90 天，则显示错误。 
     
     > [!TIP]
     > 如果您使用的 90 天的最大的日期范围，选择当前时间的**开始日期**。否则，您会收到错误消息的开始日期早于的结束日期。如果您已打开审核最近 90 天内，打开已审核的日期之前，无法开始的最大的日期范围。 
   
-3. **用户**在此框中单击，然后选择一个或多个用户，以显示搜索结果。通过在此框中选择的用户执行所选活动审核日志条目的结果列表中显示。将此框保留为空返回组织中的所有用户 （和服务帐户） 的条目。 
+    c.**用户**在此框，然后选择一个或多个用户通过单击以显示搜索结果。通过在此框中选择的用户执行所选活动审核日志条目的结果列表中显示。将此框保留为空返回组织中的所有用户 （和服务帐户） 的条目。 
     
-4. **文件或文件夹**键入要与包含指定的关键字的文件夹的文件相关的活动搜索的文件或文件夹名称的部分或全部。您还可以指定文件或文件夹的 URL。如果您使用的 URL，确保类型的完整的 URL 路径或如果您只需键入 URL 的任何部分不包括任何特殊字符或空格。 
+    d.**文件或文件夹**键入一些或全部文件或文件夹名称到文件夹包含指定的关键字的文件相关的活动搜索。您还可以指定文件或文件夹的 URL。如果您使用的 URL，确保类型的完整的 URL 路径或如果您只需键入 URL 的任何部分不包括任何特殊字符或空格。 
     
     将此框保留为空返回组织中的所有文件和文件夹的条目。
     
@@ -356,7 +354,7 @@ ms.locfileid: "25935589"
 |接受共享邀请  <br/> |SharingInvitationAccepted  <br/> |用户 （成员或来宾） 接受共享邀请并授予对资源的访问。此事件包括有关受邀用户和用于接受邀请的电子邮件地址的信息 （它们可能会不同）。介绍如何用户授予访问资源，例如，将用户添加到有权访问该资源组的第二个事件通常会附带此活动。  <br/> |
 |添加了的权限级别设置为网站集  <br/> |PermissionLevelAdded  <br/> |权限级别已添加到网站集。  <br/> |
 |用户添加到安全链接  <br/> |AddedToSecureLink  <br/> |用户已添加到可以使用此安全共享链接的实体列表。  <br/> |
-|阻止共享邀请  <br/> |SharingInvitationBlocked  <br/> | 由于允许或拒绝外部共享基于目标用户的域的外部共享策略，由您组织内的用户发送共享邀请而被阻止。在这种情况下，共享邀请已阻止因为：<br/>  目标用户的域不包含在允许的域的列表。  <br/>  或者  <br/>  目标用户的域将包含在列表中被阻止的域。  <br/>  有关允许或阻止外部共享基于域的详细信息，请参阅[SharePoint Online 和 OneDrive for Business 中共享的受限的域](https://support.office.com/article/5d7589cd-0997-4a00-a2ba-2320ec49c4e9)。  <br/> |
+|阻止共享邀请  <br/> |SharingInvitationBlocked  <br/> | 由于允许或拒绝外部共享基于目标用户的域的外部共享策略，由您组织内的用户发送共享邀请而被阻止。在这种情况下，共享邀请已阻止因为：<br/>  目标用户的域不包含在允许的域的列表。  <br/>  或  <br/>  目标用户的域将包含在列表中被阻止的域。  <br/>  有关允许或阻止外部共享基于域的详细信息，请参阅[SharePoint Online 和 OneDrive for Business 中共享的受限的域](https://support.office.com/article/5d7589cd-0997-4a00-a2ba-2320ec49c4e9)。  <br/> |
 |中断权限级别继承  <br/> |PermissionLevelsInheritanceBroken  <br/> |项目已更改，以便它不再从其父网站继承权限级别。  <br/> |
 |中断共享继承  <br/> |SharingInheritanceBroken  <br/> |项目已更改，以便它不再从其父级继承共享的权限。  <br/> |
 |创建公司可共享链接  <br/> |CompanyLinkCreated  <br/> |用户创建的资源的公司范围内链接。公司范围内链接仅可由组织中的成员。他们无法使用来宾。  <br/> |

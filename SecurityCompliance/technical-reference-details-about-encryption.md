@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 ms.assetid: 862cbe93-4268-4ef9-ba79-277545ecf221
 description: Office 365 中查看有关加密技术详细信息。
-ms.openlocfilehash: d86692119f7558d74e2083165b4eb6ab4a07da70
-ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+ms.openlocfilehash: 69365b66479ab89a9c036fe489b4087d327460eb
+ms.sourcegitcommit: e4ebef6aaf756eefb86c9f3a602cf75f5d344271
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22525807"
+ms.lasthandoff: 11/07/2018
+ms.locfileid: "26026519"
 ---
 # <a name="technical-reference-details-about-encryption-in-office-365"></a>有关 Office 365 加密的技术参考详情
 
@@ -52,7 +52,11 @@ ms.locfileid: "22525807"
 ## <a name="deprecating-support-for-tls-10-and-11-and-what-this-means-for-you"></a>弃用的 TLS 1.0 和 1.1 这意味着您的支持
 <a name="TLS11and12deprecation"> </a>
 
-重要更改至此 Office 365 支持的加密选项。从年 10 月 31 2018 Office 365 将使用 TLS 1.0 或 1.1 不再支持到 Office 365 的通信。一旦 Office 365 成为对这些协议的支持，需要使用 TLS 1.2 与 Office 365 服务器的所有通信。有关如何影响您的信息，请参阅[强制使用 TLS 1.2 Office 365 中的 Preparing](https://support.microsoft.com/en-us/help/4057306/preparing-for-tls-1-2-in-office-365)。服务器和客户端与此日期之后的 O365 必须支持 TLS 1.2。
+从年 10 月 31 2018 TLS 1.0 和 1.1 将不再支持 Office 365。这意味着，Microsoft 将无法修复的客户端、 设备或使用 TLS 1.0 和 1.1 连接到 Office 365 服务中找到新问题。
+
+请注意这并不意味着 Office 365 将阻止 TLS 1.0 和 1.1 连接。禁用或删除 TLS 1.0 和 1.1 TLS 服务的客户连接中没有官方日期。最终否决日期将由客户遥测和还不知道。决定是后，将会通知六个月提前除非我们意识到已知威胁，在这种情况下，我们可能需要操作在小于六个月，以保护客户使用的服务。
+
+您应确保所有客户端-服务器和服务器浏览器的组合使用 TLS 1.2 （或更高版本） 以保持连接到 Office 365 服务。您可能需要更新某些客户端-服务器和服务器浏览器的组合。有关如何影响您的信息，请参阅[强制使用 TLS 1.2 Office 365 中的 Preparing](https://support.microsoft.com/en-us/help/4057306/preparing-for-tls-1-2-in-office-365)。
   
 ## <a name="deprecating-support-for-3des"></a>弃用支持 3DES
 <a name="TLS11and12deprecation"> </a>

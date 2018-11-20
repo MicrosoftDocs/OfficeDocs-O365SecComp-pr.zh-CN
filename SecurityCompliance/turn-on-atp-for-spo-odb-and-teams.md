@@ -1,7 +1,7 @@
 ---
 title: 打开 Office 365 ATP SharePoint、 OneDrive 和 Microsoft 团队
-ms.author: derng
-author: derng
+ms.author: deniseb
+author: denisebmsft
 manager: laurawi
 ms.audience: ITPro
 ms.topic: article
@@ -12,12 +12,12 @@ search.appverid:
 - MOE150
 ms.assetid: 07e76024-0c80-40dc-8c48-1dd0d0f863cb
 description: 了解如何开启 ATP for OneDrive 和团队，包括如何设置检测到的文件的通知。
-ms.openlocfilehash: eb3687f6afd2e7f9a3698944019bcdb8dcbff5ae
-ms.sourcegitcommit: 099bbfb1d16b251fd5cf18ec6515faaf9a989176
+ms.openlocfilehash: d70c574f002ca7e70ab6f9a4abad3ea5ef21a20f
+ms.sourcegitcommit: 147768bbe44c8c98c02fa29ae9d882cee4ec2d6b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "25454289"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "26238414"
 ---
 # <a name="turn-on-office-365-atp-for-sharepoint-onedrive-and-microsoft-teams"></a>打开 Office 365 ATP SharePoint、 OneDrive 和 Microsoft 团队
 
@@ -25,25 +25,23 @@ ms.locfileid: "25454289"
   
 若要执行本文中描述的任务，您必须分配 Office 365 中和安全性的必要权限&amp;合规性中心。
   
-## <a name="turn-on-atp-for-sharepoint-onedrive-and-microsoft-teams"></a>开启适用于 SharePoint、OneDrive 和 Microsoft Teams 的 ATP
+## <a name="turn-on-atp-for-sharepoint-onedrive-and-microsoft-teams"></a>启用适用于 SharePoint、OneDrive 和 Microsoft Teams 的 ATP
 
  **开始此过程，请确保审核日志记录您的 Office 365 环境已开启**。这通常是具有审核日志角色分配在 Exchange Online 的人。有关详细信息，请参阅[打开或关闭，打开 Office 365 审核日志搜索](turn-audit-log-search-on-or-off.md)。
   
 1. 以全局管理员或 security 管理员程序中，转到[https://protection.office.com](https://protection.office.com)，并使用您的工作或学校帐户登录。
     
-2. Office 365 安全性&amp;合规性中心在左侧的导航窗格中，**威胁管理**下面，选择**策略** \> **安全的附件**。
-    
-    ![安全中&amp;合规性中心中，选择威胁管理\>策略](media/08849c91-f043-4cd1-a55e-d440c86442f2.png)
+2. Office 365 安全性&amp;合规性中心在左侧的导航窗格中，**威胁管理**下面，选择**策略** \> **安全的附件**。 <br/>![安全中&amp;合规性中心中，选择威胁管理\>策略](media/08849c91-f043-4cd1-a55e-d440c86442f2.png)
   
-3. 选择**SharePoint、 OneDrive 和 Microsoft 团队 ATP 打开**。
-    
-    ![启用高级的威胁 Protection for SharePoint Online，OneDrive for Business 和 Microsoft 团队](media/48cfaace-59cc-4e60-bf86-05ff6b99bdbf.png)
+3. 选择**SharePoint、 OneDrive 和 Microsoft 团队 ATP 打开**。<br/>![启用高级的威胁 Protection for SharePoint Online，OneDrive for Business 和 Microsoft 团队](media/48cfaace-59cc-4e60-bf86-05ff6b99bdbf.png)
   
-4. 单击“保存”****。
+4. 单击 **"保存"**。
     
 5. 查看 （和，根据需要编辑） 贵组织的[安全附件策略](set-up-atp-safe-attachments-policies.md)和[安全链接策略](set-up-atp-safe-links-policies.md)。
     
-6. （推荐）以全局管理员或 SharePoint Online 管理员，运行**[Set-spotenant](https://docs.microsoft.com/powershell/module/sharepoint-online/Set-SPOTenant?view=sharepoint-ps)** cmdlet， **DisallowInfectedFileDownload**参数设置为*true* 。 <br/>设置为*true*的块的参数 （除删除） 的所有操作检测到文件。人员无法打开、 移动、 复制或共享检测到的文件。<br/>参数设置为*false*会阻止除删除和下载的所有操作。人员可以选择接受风险并下载检测到的文件。<br/>我们建议将参数设置为*true*。 
+6. （推荐）以全局管理员或 SharePoint Online 管理员，运行**[Set-spotenant](https://docs.microsoft.com/powershell/module/sharepoint-online/Set-SPOTenant?view=sharepoint-ps)** cmdlet， **DisallowInfectedFileDownload**参数设置为*true*。 <br/>
+  - 设置为*true*的块的参数 （除删除） 的所有操作检测到文件。人员无法打开、 移动、 复制或共享检测到的文件。
+  - 参数设置为*false*会阻止除删除和下载的所有操作。人员可以选择接受风险并下载检测到的文件。  
    
 7. 允许您更改传播到所有 Office 365 数据中心最多 30 分钟。
     
@@ -71,22 +69,16 @@ ms.locfileid: "25454289"
     
 6. 在**发送到此通知...** 部分中，选择一个或多个全局管理员、 安全管理员或安全读者应在检测到恶意文件时收到通知。 
     
-7. 单击“保存”****。
+7. 单击 **"保存"**。
     
 若要了解有关通知的详细信息，请参阅[在 Office 365 安全性中创建活动通知&amp;合规性中心](create-activity-alerts.md)。 
   
 ## <a name="next-steps"></a>后续步骤
 
-- [查看有关在 SharePoint、 OneDrive 或的 Microsoft 团队中检测到的恶意文件的信息](malicious-files-detected-in-spo-odb-or-teams.md)
+1. [查看有关在 SharePoint、 OneDrive 或的 Microsoft 团队中检测到的恶意文件的信息](malicious-files-detected-in-spo-odb-or-teams.md)
     
-- [为 Office 365 中的管理员管理隔离的邮件和文件](manage-quarantined-messages-and-files.md)
+2. [为 Office 365 中的管理员管理隔离的邮件和文件](manage-quarantined-messages-and-files.md)
     
-## <a name="related-topics"></a>相关主题
 
-[Office 365 高级威胁防护](office-365-atp.md)
-  
-[查看 Office 365 高级威胁保护报告](view-reports-for-atp.md)
-  
-[Office 365 安全性权限&amp;合规性中心](permissions-in-the-security-and-compliance-center.md)
   
 

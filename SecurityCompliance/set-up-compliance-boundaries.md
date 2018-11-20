@@ -3,7 +3,6 @@ title: 在 Office 365 中为电子数据展示调查设置合规性边界
 ms.author: markjjo
 author: markjjo
 manager: laurawi
-ms.date: 6/6/2018
 ms.audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -14,12 +13,12 @@ search.appverid:
 - MET150
 ms.assetid: 1b45c82f-26c8-44fb-9f3b-b45436fe2271
 description: 使用合规性边界来创建 Office 365 组织内逻辑控制电子数据展示管理员可以搜索用户内容位置的边界。合规性边界使用搜索筛选 （也称为遵从性安全筛选器） 来控制哪些邮箱、 SharePoint 网站的权限和 OneDrive 帐户可搜索的特定用户。
-ms.openlocfilehash: 822d228d64d2fd5432db327db98e8d7329c7d939
-ms.sourcegitcommit: c166964fe14eec69139a2d3d9c10d2c40ab33f91
+ms.openlocfilehash: 2bebd29fa7701ba07aae7170142263aeaec5569e
+ms.sourcegitcommit: c7264f3a6a97f1ff544544e2c722e7825e265fa1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/28/2018
-ms.locfileid: "23258630"
+ms.lasthandoff: 11/14/2018
+ms.locfileid: "26299236"
 ---
 # <a name="set-up-compliance-boundaries-for-ediscovery-investigations-in-office-365"></a>在 Office 365 中为电子数据展示调查设置合规性边界
 
@@ -179,9 +178,9 @@ New-ComplianceSecurityFilter -FilterName "Coho Winery Security Filter" -Users "C
     
 - 搜索权限筛选器不适用于 Exchange 公用文件夹。
 
-## <a name="searching-and-exporting-sharepoint-content-in-multi-geo-environments"></a>搜索和导出多地理环境中的 SharePoint 内容
+## <a name="searching-and-exporting-content-in-multi-geo-environments"></a>搜索和导出多地理环境中的内容
 
-搜索权限筛选器还允许您控制其中导出传送内容和[SharePoint 多地理环境](https://go.microsoft.com/fwlink/?linkid=860840)中的数据中心可搜索 SharePoint 网站和 OneDrive 帐户：
+搜索权限筛选器还允许您控制其中导出传送内容和搜索[SharePoint 多地理环境](https://go.microsoft.com/fwlink/?linkid=860840)中的 SharePoint 网站和 OneDrive 帐户时，可搜索的数据中心：
   
 - 从特定数据中心导出搜索结果。这意味着，您可以指定数据中心位置将从导出结果的搜索。
     
@@ -211,7 +210,7 @@ New-ComplianceSecurityFilter -FilterName "Coho Winery Security Filter" -Users "C
 |IND  <br/> |亚太地区  <br/> |
 |LAM  <br/> |美国  <br/> |
    
- **注意：** 如果不指定搜索权限筛选器的区域参数，然后搜索结果导出从最接近的数据中心中。 
+ **注意：** 如果不指定搜索权限筛选器的区域参数，将搜索组织默认 SharePoint 区域，然后搜索结果导出到最接近的数据中心。 
   
 下面是使用的示例 **-区域**参数创建搜索权限合规性边界的筛选器时。此，假定 Fourth Coffee 子公司位于北美和欧洲中是 Coho Winery。 
   
@@ -223,7 +222,7 @@ New-ComplianceSecurityFilter -FilterName "Fourth Coffee Security Filter" -Users 
 New-ComplianceSecurityFilter -FilterName "Coho Winery Security Filter" -Users "Coho Winery eDiscovery Managers", "Coho Winery Investigators" -Filters "Mailbox_Department -eq 'CohoWinery'", "Site_Department -eq 'CohoWinery' -or Site_Path -like 'https://contoso.sharepoint.com/sites/CohoWinery*'" -Action ALL -Region EUR
 ```
    
-内容多地理环境中保留中搜索和导出 SharePoint 和 OneDrive 时，请记住以下事项。
+保留以下操作中应注意时搜索和导出内容多地理环境中。
   
 - **Region**参数不控制 Exchange 邮箱; 的搜索搜索邮箱时，将搜索所有数据中心。若要限制的哪些 Exchange 邮箱可以将搜索范围，请使用**筛选器**参数创建或更改搜索权限筛选器时。 
     

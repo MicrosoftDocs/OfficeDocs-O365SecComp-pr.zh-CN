@@ -12,12 +12,12 @@ search.appverid:
 - MOE150
 ms.assetid: 35dbfd99-da5a-422b-9b0e-c6caf3b645fa
 description: 当您设置了您 ATP 的安全链接策略时，可以包括 do not 写以使您的组织中的某些用户访问列表中包括的网站的 Url 的列表。
-ms.openlocfilehash: 3ce783a3f783889bdc59ad8d412c80a79e7dd914
-ms.sourcegitcommit: 7032830867eb3fc71760e04b8342aff174c5d757
+ms.openlocfilehash: c954c12785659f9c025046bf3773cfec2d5dd5f9
+ms.sourcegitcommit: 147768bbe44c8c98c02fa29ae9d882cee4ec2d6b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/01/2018
-ms.locfileid: "25353258"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "26238384"
 ---
 # <a name="set-up-a-custom-do-not-rewrite-urls-list-using-office-365-atp-safe-links"></a>设置自定义重写不执行操作的 Url 列表使用 Office 365 ATP 安全链接
 
@@ -66,20 +66,4 @@ ATP 安全链接保护使用多个列表，其中包括贵组织的阻止的 Url
 |`http://contoso.com/a`  <br/> |允许特定收件人访问的站点，如`http://contoso.com/a`，但不是子路径 like`http://contoso.com/a/b`  <br/> |
 |`http://contoso.com/a*`  <br/> |允许特定收件人访问的站点，如`http://contoso.com/a`以及 like 子路径`http://contoso.com/a/b`  <br/> |
    
-  
-
-## <a name="related-topics"></a>相关主题
-
-[Office 365 高级威胁防护](office-365-atp.md)
-  
-[Office 365 中的 ATP 安全链接](atp-safe-links.md)
-  
-[设置 Office 365 中的安全链接 ATP 策略](set-up-atp-safe-links-policies.md)
-  
-[设置自定义阻止 Url 列表使用 ATP 安全链接](set-up-a-custom-blocked-urls-list-wtih-atp.md)
-
-[Office 365 高级威胁保护的视图报告](view-reports-for-atp.md)
-
-[Office 365 安全性权限&amp;合规性中心](permissions-in-the-security-and-compliance-center.md)
-  
-
+ 

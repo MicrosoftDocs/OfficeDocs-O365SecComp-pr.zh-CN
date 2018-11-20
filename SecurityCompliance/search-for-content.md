@@ -11,12 +11,12 @@ localization_priority: Normal
 ROBOTS: NOINDEX, NOFOLLOW
 ms.assetid: df2d1e0f-b476-42c9-aade-4a260b24f193
 description: 使用 Office 365 安全性中的内容搜索电子数据展示工具&amp;SharePoint 网站和 OneDrive 位置以及即时消息对话 Skype for Business 中的合规性中心，以快速找到在 Exchange 邮箱中的电子邮件文档。
-ms.openlocfilehash: d7ccdd8e501e38b67cc00ec457622080d6c58001
-ms.sourcegitcommit: 7956955cd919f6e00b64e4506605a743c5872549
+ms.openlocfilehash: 96a30bfe7b7cc5a1398cafa66577f0b7dc681d23
+ms.sourcegitcommit: 147768bbe44c8c98c02fa29ae9d882cee4ec2d6b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/26/2018
-ms.locfileid: "25038225"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "26238394"
 ---
 # <a name="search-for-content-in-office-365"></a>搜索的 Office 365 中的内容
 
@@ -42,6 +42,8 @@ ms.locfileid: "25038225"
     
 - [批量编辑](bulk-edit-content-searches.md)的查询和多个搜索的内容位置 
     
+- [保留密件抄送收件人](https://docs.microsoft.com/exchange/policy-and-compliance/holds/preserve-bcc-recipients-and-group-members)以便您可以搜索联系人 
+
 ## <a name="perform-actions-on-content-you-find"></a>对您查找的内容执行操作
 
 在运行搜索，并根据需要对其进行优化后下, 一步是内容处理搜索返回的结果。您可以导出并将结果下载到本地计算机或对于您的组织的电子邮件攻击，您可以从用户邮箱中删除的搜索结果。

@@ -3,7 +3,7 @@ title: Office 365 高级威胁防护
 ms.author: deniseb
 author: denisebmsft
 manager: laurawi
-ms.date: 10/09/2018
+ms.date: 11/08/2018
 ms.audience: Admin
 ms.topic: hub-page
 ms.service: o365-administration
@@ -13,14 +13,16 @@ search.appverid:
 - MOE150
 ms.assetid: e100fe7c-f2a1-4b7d-9e08-622330b83653
 description: Office 365 高级威胁保护包括欺骗智能、 安全链接、 安全的附件和高级的防钓鱼功能。For Business 和 Microsoft 团队之前，还进行了高级的威胁保护扩展到 SharePoint Online、 OneDrive 中的文件。
-ms.openlocfilehash: def22368f8bc219ebceda797dd04b234bc3c4435
-ms.sourcegitcommit: cda46434094bc2837dba90256d044ba77552df12
+ms.openlocfilehash: 1e6a2dc16bf5fb8dbf1b242a3495d8fb87cfda1c
+ms.sourcegitcommit: 147768bbe44c8c98c02fa29ae9d882cee4ec2d6b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/30/2018
-ms.locfileid: "25850826"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "26238474"
 ---
 # <a name="office-365-advanced-threat-protection"></a>Office 365 高级威胁防护
+
+## <a name="overview"></a>概述
 
 Office 365 高级威胁保护 (ATP) 有助于防止恶意攻击通过您的组织：
   
@@ -35,11 +37,28 @@ Office 365 高级威胁保护 (ATP) 有助于防止恶意攻击通过您的组�
 - 检测何时某人尝试模拟用户和组织的自定义域与[Office 365 中的 ATP 防钓鱼功能](atp-anti-phishing.md)
     
 **通过 Office 365 ATP 保护由您组织的安全工作组的安全链接、 安全的附件和防钓鱼定义的策略**。非常重要定期查看和修改您的策略，以使其保持最新和要执行的新功能添加到服务的优点。[报告可](view-reports-for-atp.md)显示如何使用 ATP 运行您的组织。这些报告还可以显示您可能需要以查看并更新您的策略的区域。然后，如果您有标记为恶意软件不应是，或文件您希望 Microsoft 要检查的文件，可以[将文件提交给 Microsoft 进行分析](#submit-a-suspicious-file-to-microsoft-for-analysis)。
+
+## <a name="new-features-are-continually-being-added-to-atp"></a>到 ATP 不断添加了新功能
+
+我们将继续向 Office 365 中，添加新功能，并包含 ATP。下面是一些新功能，其中一些调用 ATP 策略必须经过审核和更新的列表。若要了解有关至此 ATP （或 Microsoft 365 一般） 的新功能的详细信息，请访问[Microsoft 365 路线图](https://www.microsoft.com/microsoft-365/roadmap?filters=O365)。
+  
+- 从开始后期年 10 月 2017年，ATP 安全链接保护扩展到 Url 为 Url 或电子邮件中 Office 365 ProPlus 的文档，如 Word、 Excel、 PowerPoint 和 Visio 中对应用 Windows，以及 Office iOS 和 Android 设备上的应用程序。（请确保您使用的[Office 现代身份验证](https://docs.microsoft.com/office365/enterprise/modern-auth-for-office-2013-and-2016)。）
+    
+- 从开始年 3 月 2018年，被扩展 ATP 安全链接保护应用于组织内的人员之间发送的电子邮件。（请确保[查看](set-up-atp-safe-links-policies.md)和编辑 ATP 安全链接策略。）
+
+- 开始在后期年 5 月 2018 安全中[隔离](quarantine-email-messages.md)功能&amp;合规性中心将正在扩展到[的 SharePoint Online 的 OneDrive for Business 和 Microsoft 团队 ATP](atp-for-spo-odb-and-teams.md)。
+ 
+- 开始在 2018年的第二部分中，ATP 安全链接被扩展保护于 Url 的 Office Online （Word Online、 Excel Online、 PowerPoint Online 和 OneNote 联机） 和 Office 365 ProPlus 上 mac。（请确保[查看](set-up-atp-safe-links-policies.md)和编辑 ATP 安全链接策略。）
+
+- 年 9 月 2018年中的开始、 [Office 365 ATP 警告页](atp-safe-links-warning-pages.md)功能新的配色方案、 更多详细信息，和以继续前进到尽管网站的功能在给定警告和建议。 
+ 
+- 开始在年 10 月 2018年以及推出通过下的几个月，当用户正在使用 Outlook Web 应用程序 (OWA) 或 Outlook、 ATP 安全链接不呈现原始 Url 重写 Url。（我们调用此本机链接可见性）。
+
       
 ## <a name="get-office-365-atp"></a>获取 Office 365 ATP
 
 > [!IMPORTANT]
-> Office 365 ATP 包含订阅，如 Microsoft 365 企业版、 Office 365 企业 E5、 Office 365 教育版 A5，和[Microsoft 365 企业版](https://support.office.com/article/c123694a-1efb-459e-a8d5-2187975373dc)中。如果您的组织具有不包括 Office 365 ATP 的 Office 365 订阅，您可能可以作为购买 ATP。有关详细信息，请参阅[Office 365 高级威胁 Protection Service Description](https://technet.microsoft.com/library/exchange-online-advanced-threat-protection-service-description.aspx)。 
+> Office 365 ATP 包含订阅，如 Microsoft 365 企业版、 Office 365 企业 E5、 Office 365 教育版 A5，和[Microsoft 365 企业版](https://docs.microsoft.com/en-us/microsoft-365/business/security-features)中。如果您的组织具有不包括 Office 365 ATP 的 Office 365 订阅，您可能可以作为购买 ATP。有关详细信息，请参阅[Office 365 高级威胁 Protection Service Description](https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description)。 
 
 1. 作为全局或安全管理员，请转到[https://portal.office.com](https://portal.office.com)和使用 Office 365 您工作或学校的帐户登录。 
     
@@ -81,11 +100,5 @@ ATP 策略后，报告是可用于显示如何服务运行正常。
 - 如果您收到您怀疑可能恶意软件的文件，您可以提交给 Microsoft 进行分析该文件。请访问[Windows Defender 安全智能提交门户](https://go.microsoft.com/fwlink/?linkid=857185)。
 
 - 如果您要获取想要提交给 Microsoft 进行分析的电子邮件 （使用或不附件），请使用[报告消息加载项](enable-the-report-message-add-in.md)。 
-  
-## <a name="related-topics"></a>相关主题
-
-[查看高级威胁保护报告](view-reports-for-atp.md)
-  
-[Threat management in the Office 365 Security &amp; Compliance Center](threat-management.md)
   
 

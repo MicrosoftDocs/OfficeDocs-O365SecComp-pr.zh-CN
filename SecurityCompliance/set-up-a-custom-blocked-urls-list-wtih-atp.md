@@ -12,12 +12,12 @@ search.appverid:
 - MOE150
 ms.assetid: 896a7efb-1683-465e-a394-261349e5d866
 description: 阅读此文，了解如何设置为使用 Office 365 高级威胁保护组织的阻止 Url 的列表。阻止的 Url 将适用于电子邮件和根据您 ATP 安全链接策略的 Office 文档。
-ms.openlocfilehash: 0429546e521bf3f6b7144342ab0997e924c2f616
-ms.sourcegitcommit: 099bbfb1d16b251fd5cf18ec6515faaf9a989176
+ms.openlocfilehash: 1f7a991b9ab8f3a9f16616379cfb6c4c3c546260
+ms.sourcegitcommit: 147768bbe44c8c98c02fa29ae9d882cee4ec2d6b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "25454359"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "26238364"
 ---
 # <a name="set-up-a-custom-blocked-urls-list-using-office-365-atp-safe-links"></a>设置自定义阻止 Url 列表使用 Office 365 ATP 安全链接
 
@@ -64,17 +64,5 @@ ms.locfileid: "25454359"
 ## <a name="how-to-define-exceptions-for-certain-users-in-an-organization"></a>如何在组织中定义的特定用户的例外
 
 如果您希望某些组能够查看其他人可能被阻止的 Url，您可以指定适用于特定收件人 ATP 安全链接策略。请参阅[设置自定义"执行不重写"Url 列表使用 ATP 安全链接](set-up-a-custom-do-not-rewrite-urls-list-with-atp.md)。
-  
-## <a name="related-topics"></a>相关主题
-
-[Office 365 高级威胁防护](office-365-atp.md)
-  
-[Office 365 中的 ATP 安全链接](atp-safe-links.md)
-  
-[设置 Office 365 中的安全链接 ATP 策略](set-up-atp-safe-links-policies.md)
-  
-[Office 365 中的 ATP 安全附件](atp-safe-attachments.md)
-
-[Office 365 安全性权限&amp;合规性中心](permissions-in-the-security-and-compliance-center.md)
   
 

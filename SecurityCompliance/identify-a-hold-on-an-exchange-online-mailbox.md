@@ -12,12 +12,12 @@ search.appverid:
 - MET150
 ms.assetid: 6057daa8-6372-4e77-a636-7ea599a76128
 description: 了解如何识别的不同类型的保留，可以放在 Office 365 邮箱。保留的这些类型包括诉讼保留、 电子数据展示保留和 Office 365 保留策略。您还可以确定是否用户已从组织范围内保留策略中排除
-ms.openlocfilehash: 821ec2a8be9ecd89a13ad9ad0378bc6e24fcee1e
-ms.sourcegitcommit: b164d4af65709133e0b512a4327a70fae13a974d
+ms.openlocfilehash: 1572b34d3f9abef2fb922fc9b01d1f5a27fcdf7b
+ms.sourcegitcommit: e4ebef6aaf756eefb86c9f3a602cf75f5d344271
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/16/2018
-ms.locfileid: "25577071"
+ms.lasthandoff: 11/07/2018
+ms.locfileid: "26026509"
 ---
 # <a name="how-to-identify-the-type-of-hold-placed-on-an-exchange-online-mailbox"></a>如何识别为 Exchange Online 邮箱设置的保留类型
 
@@ -39,7 +39,7 @@ Office 365 提供多种方式的组织可以防止邮箱内容被永久删除。
 
     - **组织范围内保留策略**-这是分配给您的组织中的所有内容位置策略。在 Exchange Online PowerShell 中使用**Get-organizationconfig** cmdlet，以获取有关组织范围内保留策略的信息。有关详细信息，请参阅[Office 365 概述保留策略](retention-policies.md#applying-a-retention-policy-to-an-entire-organization-or-specific-locations)中的"将保留策略应用于整个组织或特定位置"一节。
 
-- **Office 365 标签**-如果用户将 Office 365 标签 （一个配置为保留内容或保留，然后删除内容） 应用于*任何*文件夹或项目中保留其邮箱置于邮箱就像邮箱已置于诉讼挂起或分配给 Office 365 保留策略。有关详细信息，请参阅本文中的[标识邮箱保留因为已应用于文件夹或项目标签](#identifying-mailboxes-on-hold-because-a-label-has-been-applied-to-a-folder-or-item)一节。
+- **Office 365 保留标签**-如果用户将 Office 365 保留标签 （一个配置为保留内容或保留，然后删除内容） 应用于*任何*文件夹或项目中保留其邮箱置于邮箱就像邮箱已置于诉讼保留或分配给 Office 365 保留策略。有关详细信息，请参阅本文中的[标识邮箱保留因为文件夹或项目已应用保留标签](#identifying-mailboxes-on-hold-because-a-label-has-been-applied-to-a-folder-or-item)一节。
 
 若要管理邮箱置于保留状态，您可能需要确定上，以便您可以执行任务，如更改保留持续时间、 临时或永久删除保留项，或从 Office 365 保留策略中排除邮箱置于邮箱的保留项的类型。在这些情况下，第一步是确定邮箱置于保留项的类型。因为可以对单个邮箱放置多个保留 （和不同类型的保留），您必须确定置于邮箱，如果您想要删除或更改这些保留项的所有保留项。
 
@@ -154,9 +154,9 @@ Get-MailboxSearch -InPlaceHoldIdentity <hold GUID> | FL Name,SourceMailboxes
 Get-RetentionCompliancePolicy <hold GUID without prefix or suffix> -DistributionDetail  | FL Name,*Location
 ```
 
-## <a name="identifying-mailboxes-on-hold-because-a-label-has-been-applied-to-a-folder-or-item"></a>标识邮箱保留因为标签已应用于文件夹或项目
+## <a name="identifying-mailboxes-on-hold-because-a-retention-label-has-been-applied-to-a-folder-or-item"></a>标识邮箱保留因为文件夹或项目已应用保留标签
 
-只要用户应用配置保留内容或保留，然后删除任何文件夹或其邮箱中的项目的内容的标签，则将*ComplianceTagHoldApplied* mailbox 属性设置为**True**。这种情况下，邮箱被认为保持状态，就像它置于诉讼保留或分配给 Office 365 保留策略。当*ComplianceTagHoldApplied*属性设置为**True**时，可能会发生以下操作：
+只要用户应用保留标签配置保留内容或保留，然后删除任何文件夹或其邮箱中的项目的内容，则将*ComplianceTagHoldApplied* mailbox 属性设置为**True**。这种情况下，邮箱被认为保持状态，就像它置于诉讼保留或分配给 Office 365 保留策略。当*ComplianceTagHoldApplied*属性设置为**True**时，可能会发生以下操作：
 
 - 如果删除邮箱或用户的 Office 365 用户帐户，邮箱将变为[非活动邮箱](inactive-mailboxes-in-office-365.md)。
 - 您将无法禁用 （主邮箱或存档邮箱，如果已启用） 的邮箱。
@@ -168,7 +168,7 @@ Get-RetentionCompliancePolicy <hold GUID without prefix or suffix> -Distribution
 Get-Mailbox <username> |FL ComplianceTagHoldApplied
 ```
 
-有关标签的详细信息，请参阅[Office 365 概述标签](labels.md)。
+有关保留标签的详细信息，请参阅[Office 365 概述保留标签](labels.md)。
 
 ## <a name="managing-mailboxes-on-delay-hold"></a>管理邮箱延迟保留
 

@@ -1,9 +1,9 @@
 ---
-title: 从 Office 365 安全性导出内容的搜索结果&amp;合规性中心
+title: 从 Office 365 安全性和合规性中心导出内容的搜索结果
 ms.author: markjjo
 author: markjjo
 manager: laurawi
-ms.date: 6/22/2018
+ms.date: ''
 ms.audience: Admin
 ms.topic: article
 f1_keywords:
@@ -17,14 +17,14 @@ search.appverid:
 - MET150
 ms.assetid: ed48d448-3714-4c42-85f5-10f75f6a4278
 description: '将搜索结果导出从 Office 365 安全性内容搜索&amp;合规性中心到本地计算机。Emaill 电子邮件结果导出为 PST 文件。内容来自 SharePoint 和 OneDrive for Business 网站导出为本机 Office 文档。 '
-ms.openlocfilehash: 739d2c162dac938d593e0b65ebca3bf2101ec469
-ms.sourcegitcommit: 87a3ca55b6e9cf7e9ccf73e64013dc78dd7660f5
+ms.openlocfilehash: 35fb0aa8a037fc77020269d1b42d738dd801ea0a
+ms.sourcegitcommit: da4aa7335b577148ecd61e09bbb11039b817b287
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/10/2018
-ms.locfileid: "25494063"
+ms.lasthandoff: 11/15/2018
+ms.locfileid: "26539114"
 ---
-# <a name="export-content-search-results-from-the-office-365-security-amp-compliance-center"></a>从 Office 365 安全性导出内容的搜索结果&amp;合规性中心
+# <a name="export-content-search-results-from-the-office-365-security--compliance-center"></a>从 Office 365 安全性和合规性中心导出内容的搜索结果
 
 内容搜索成功运行后，您可以将搜索结果导出到本地计算机。导出电子邮件结果时，他们正在下载到您的计算机作为 PST 文件。导出时内容来自 SharePoint 和 OneDrive for Business 站点，导出本机 Office 文档的副本。有更多文档和导出的搜索结果中包含的报告。
   
@@ -32,7 +32,7 @@ ms.locfileid: "25494063"
   
 导出内容的搜索结果包括准备结果，然后将其下载到本地计算机。
   
-## <a name="before-you-begin"></a>准备工作
+## <a name="before-you-begin"></a>开始之前
 
 - 若要导出搜索结果，您必须在 Office 365 安全性的导出管理角色分配&amp;合规性中心。此角色分配给内置电子数据展示管理员角色组。它不是默认情况下分配给组织管理角色组。有关详细信息，请参阅[分配 Office 365 安全性的电子数据展示权限&amp;合规性中心](assign-ediscovery-permissions.md)。
     
@@ -46,7 +46,7 @@ ms.locfileid: "25494063"
     
      - Microsoft Edge
     
-        OR
+        或者
     
      - Microsoft Internet Explorer 10 和更高版本
     
@@ -85,7 +85,7 @@ ms.locfileid: "25494063"
   
 1. 转到 [https://protection.office.com](https://protection.office.com)。
     
-2. 登录到 Office 365 使用工作或学校帐户。
+2. 使用工作或学校帐户登录到 Office 365。
     
 3. 在安全与合规中心的左侧窗格中，单击“搜索和调查”****\>****“内容搜索”。
     
@@ -173,24 +173,23 @@ ms.locfileid: "25494063"
     
 
   
-## <a name="more-information"></a>详细信息
-<a name="moreinfo"> </a>
+## <a name="more-information"></a>更多信息
 
 下面是有关导出搜索结果的详细信息。
   
-[导出限制](export-search-results.md#export-limits)
+[导出限制](#export-limits)
   
-[导出报告](export-search-results.md#export-reports)
+[导出报告](#export-reports)
   
 [导出部分索引的项目](#exporting-partially-indexed-items)
+
+[导出单个邮件或 PST 文件](#exporting-individual-messages-or-pst-files)
   
-[导出单个邮件或 PST 文件](export-search-results.md#Exporting-individual-messages-or-PST-files)
+[解密 RMS 加密的邮件](#decrypting-rms-encrypted-messages)
+
+[导出项的文件名](#filenames-of-exported-items)  
   
-[解密 RMS 加密的邮件](export-search-results.md#Decrypting-RMS-encrypted-messages)
-  
-[导出项的文件名](export-search-results.md#Filenames-of-exported-items)
-  
-[其他](export-search-results.md#miscellaneous)
+[其他](#miscellaneous)
   
  ### <a name="export-limits"></a>导出限制
   
@@ -206,7 +205,7 @@ ms.locfileid: "25494063"
     
   - 导出内容的搜索报告不计入任何导出限制。 
     
-- 如上文所述，从邮箱和网站的搜索结果上载到 Azure 的存储位置 (如中所述[步骤 1： 准备的搜索结果导出](export-search-results.md#step1)) 每小时 2 gb 的最大速率。
+- 如上文所述，从邮箱和网站的搜索结果上载到 Azure 的存储位置 (如中所述[步骤 1： 准备的搜索结果导出](#step-1-prepare-search-results-for-export)) 每小时 2 gb 的最大速率。
     
 - 默认情况下，可以导出的 PST 文件的最大大小为 10 GB。也就是说，如果用户的邮箱的搜索结果大于 10 GB，将在两个 （或多个） 单独的 PST 文件导出邮箱的搜索结果。此外，如果您选择要导出的单个 PST 文件中的所有搜索结果，PST 文件将被 spilt 到其他 PST 文件的搜索结果的总大小大于 10 GB。如果您想要更改此默认大小，您可以编辑用于导出搜索结果的计算机上的 Windows 注册表。请参阅[Change 导出电子数据展示搜索结果时的 PST 文件的大小](change-the-size-of-pst-files-when-exporting-results.md)。
     

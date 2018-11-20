@@ -12,12 +12,12 @@ search.appverid:
 - MOE150
 ms.assetid: 078eb946-819a-4e13-8673-fe0c0ad3a775
 description: 定义附件安全策略，以从电子邮件中的恶意文件保护您的组织。
-ms.openlocfilehash: 1fd831adf5166223ba5df159a131c71e3b467233
-ms.sourcegitcommit: cda46434094bc2837dba90256d044ba77552df12
+ms.openlocfilehash: 84625cc688be4b6aa98674563b5c6c30b1b35598
+ms.sourcegitcommit: 147768bbe44c8c98c02fa29ae9d882cee4ec2d6b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/30/2018
-ms.locfileid: "25850836"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "26238404"
 ---
 # <a name="set-up-office-365-atp-safe-attachments-policies"></a>设置 Office 365 ATP 安全附件策略
 
@@ -82,18 +82,9 @@ ms.locfileid: "25850836"
 |**动态传递** <br/> |立即发送的邮件  <br/> 替换附件是占位符文件之前扫描已完成，并且如果检测到没有恶意软件，然后重新附加附件  <br/> 包含附件预览功能对于大多数 Pdf 和 Office 在扫描过程中的文件  <br/> 将与检测到恶意软件的邮件发送到其中的安全管理员或分析师可以查看和版本 （或删除） 这些邮件隔离邮箱  <br/> [了解动态交付和 ATP 安全附件预览](dynamic-delivery-and-previewing.md) <br/> |避免同时从恶意文件保护收件人的邮件延迟  <br/> 启用收件人时扫描正在进行预览在安全模式下的附件  <br/> |
 |**启用重定向** <br/> |适用时选择了监视、 阻止或替换选项  <br/> 发送到指定的电子邮件地址的附件安全管理员或分析师可以调查  <br/> |启用安全管理员和分析师研究可疑附件  <br/> |
    
-## <a name="related-topics"></a>相关主题
+## <a name="next-steps"></a>后续步骤
 
-[Office 365 高级威胁防护](office-365-atp.md)
-  
-[Office 365 中的 ATP 安全附件](atp-safe-attachments.md)
-  
-[Office 365 中的 ATP 安全链接](atp-safe-links.md)
-  
-[设置 Office 365 中的安全链接 ATP 策略](set-up-atp-safe-links-policies.md)
-  
-[查看高级威胁保护报告](view-reports-for-atp.md)
-
-[Office 365 安全性权限&amp;合规性中心](permissions-in-the-security-and-compliance-center.md)
-  
-
+位置 ATP 安全附件策略后，您可以看到 ATP 通过查看报告的工作为您的组织。请参阅以下资源，以了解详细信息：
+- [Office 365 高级威胁保护的视图报告](view-reports-for-atp.md)
+- [在安全中使用资源管理器&amp;合规性中心](use-explorer-in-security-and-compliance.md)
+ 

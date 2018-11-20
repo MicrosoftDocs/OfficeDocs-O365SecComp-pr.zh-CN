@@ -12,12 +12,12 @@ search.appverid:
 - MOE150
 ms.assetid: 5ed8abf1-c0e9-4e5b-a5b7-2059cea50b61
 description: 了解在哪里查看有关在 SharePoint、 OneDrive 或团队中检测到的恶意文件的信息以及如何对这些文件执行操作。
-ms.openlocfilehash: 37cd721c9ec2608ddcd74f9ae1ed6991b5f0cea7
-ms.sourcegitcommit: e0c6f99d5514d8da8a70d9bd3616d1a1c0851254
+ms.openlocfilehash: ba1dc3551e66800213a9cb988ebe9fc5e03e31f2
+ms.sourcegitcommit: 147768bbe44c8c98c02fa29ae9d882cee4ec2d6b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/13/2018
-ms.locfileid: "25552380"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "26238504"
 ---
 # <a name="view-information-about-malicious-files-detected-in-sharepoint-onedrive-or-microsoft-teams"></a>查看有关在 SharePoint、 OneDrive 或的 Microsoft 团队中检测到的恶意文件的信息
 
@@ -59,14 +59,5 @@ ms.locfileid: "25552380"
     
 5. 选择**关闭**以关闭的选定项的详细信息。 
   
-## <a name="related-topics"></a>相关主题
-
-[Office 365 高级威胁防护](office-365-atp.md)
-  
-[查看 Office 365 高级威胁保护报告](view-reports-for-atp.md)
-  
-[Office 365 安全性权限&amp;合规性中心](permissions-in-the-security-and-compliance-center.md)
-
-[为 Office 365 中的管理员管理隔离的邮件和文件](manage-quarantined-messages-and-files.md)
   
 
