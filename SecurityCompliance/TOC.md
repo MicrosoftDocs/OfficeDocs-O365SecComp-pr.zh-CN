@@ -21,6 +21,7 @@
 ### [开始使用 DLP 策略建议](get-started-with-dlp-policy-recommendations.md)
 ### [开始使用默认 DLP 策略](get-started-with-the-default-dlp-policy.md)
 ### [从模板创建 DLP 策略](create-a-dlp-policy-from-a-template.md)
+### [创建、测试和优化 DLP 策略](create-test-tune-dlp-policy.md)
 ### [使用 DLP 策略中的通知和策略提示](use-notifications-and-policy-tips.md)
 ### [DLP 策略模板包含的内容](what-the-dlp-policy-templates-include.md)
 ### [创建 DLP 策略来保护具有 FCI 或其他属性的文档](protect-documents-that-have-fci-or-other-properties.md)
