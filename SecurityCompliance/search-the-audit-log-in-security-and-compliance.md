@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.assetid: 0d4d0f35-390b-4518-800e-0c7ec95e946c
 description: '使用 Office 365 安全性和合规性中心搜索统一的审核日志，以查看 Office 365 组织中的用户和管理员的活动。 '
-ms.openlocfilehash: 02e38917d3a82828d6602661b494ebc0ffb733d8
-ms.sourcegitcommit: 42c7ad69f95fc4d2de13293b39cc44931b9f82e6
+ms.openlocfilehash: 39b3d6438d4680fe7a50f831bbd2d5667c4acffe
+ms.sourcegitcommit: a138cf89095ab0d2bd07caf82b3d48149002c1fa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/14/2018
-ms.locfileid: "26522804"
+ms.lasthandoff: 11/21/2018
+ms.locfileid: "26626148"
 ---
 # <a name="search-the-audit-log-in-the-office-365-security--compliance-center"></a>在 Office 365 安全性和合规性中心搜索审核日志
 
@@ -40,9 +40,9 @@ ms.locfileid: "26522804"
     
 - Sway 中的用户和管理活动
     
-- Office 365 安全性的电子数据展示活动&amp;合规性中心
+- Office 365 安全性和合规性中心中的电子数据展示活动
     
-- Power BI for Office 365 中的用户和管理活动
+- Power BI 中的用户和管理活动
     
 - 在 Microsoft 团队中的用户和管理活动
 
@@ -55,7 +55,7 @@ ms.locfileid: "26522804"
 - Microsoft 流中的用户和管理活动
     
    
-## <a name="before-you-begin"></a>开始之前
+## <a name="before-you-begin"></a>准备工作
 
 请务必阅读以下各项开始搜索 Office 365 之前审核日志。
   
@@ -123,7 +123,7 @@ ms.locfileid: "26522804"
     
 - Exchange Online 审核日志包含两种类型的事件： Exchange admin 事件 （由管理员执行的操作） 和邮箱事件 （邮箱上的用户采取的操作）。请注意，不默认启用邮箱审核。它必须是邮箱事件可以在 Office 365 的审核日志搜索的每个用户邮箱启用。有关邮箱审核和邮箱审核记录的操作的详细信息，请参阅[启用邮箱审核 Office 365 中](enable-mailbox-auditing.md)。
     
-- 默认情况下不启用审核日志记录的 Power BI。若要搜索的 Office 365 审核日志中的 Power BI 活动，您必须在 Power BI 管理门户中启用审核。有关说明，请参阅[审核 Power BI](https://docs.microsoft.com/power-bi/service-admin-auditing#enabling-auditing-functionality-in-the-power-bi-admin-portal)。
+- 默认情况下不启用审核日志记录的 Power BI。若要搜索的 Office 365 审核日志中的 Power BI 活动，您必须在 Power BI 管理门户中启用审核。有关说明，请参阅[Power BI 管理门户](https://docs.microsoft.com/power-bi/service-admin-portal#audit-logs)中的"审核日志"一节。
     
     
 ## <a name="search-the-audit-log"></a>搜索审核日志
@@ -276,7 +276,6 @@ ms.locfileid: "26522804"
     
     一个适用于时下载所有结果和服务均为 CSV 文件中的**AuditData**列中列出的属性的说明，请参阅[Office 365 中的详细的属性审核日志](detailed-properties-in-the-office-365-audit-log.md)。
 
-  
 ## <a name="audited-activities"></a>审核的活动
 
 本节中的表介绍了审核 Office 365 中的活动。您可以搜索这些通过搜索审核的事件日志中安全&amp;合规性中心。单击**搜索审核日志**选项卡的分步说明。 
@@ -565,32 +564,9 @@ ms.locfileid: "26522804"
   
 ### <a name="power-bi-activities"></a>Power BI 活动
   
-下表列出用户和 Power BI 中的 Office 365 审核日志中记录的管理活动。
+Power BI 中，您可以搜索活动的审核日志。有关 Power BI 活动的信息，请参阅中[使用审核贵组织中](https://docs.microsoft.com/power-bi/service-admin-auditing#activities-audited-by-power-bi)的"活动审核电源 Power BI"一节。
   
- **重要：** 默认情况下不启用审核日志记录的 Power BI。若要搜索 theOffice 365 审核日志中的 Power BI 活动，您必须在 Power BI 管理门户中启用审核。有关说明，请参阅[审核 Power BI](https://docs.microsoft.com/power-bi/service-admin-auditing#enabling-auditing-functionality-in-the-power-bi-admin-portal)。
-  
-|**易记名称**|**Operation**|**说明**|
-|:-----|:-----|:-----|
-|添加了的 Power BI 组成员  <br/> |AddGroupMembers  <br/> |成员添加到 Power BI 组工作区中。  <br/> |
-|已分析的 Power BI 数据集  <br/> |AnalyzedByExternalApplication  <br/> |数据集是由外部应用程序分析。  <br/> |
-|创建的 Power BI 仪表板  <br/> |CreateDashboard  <br/> |创建新仪表板。  <br/> |
-|创建的 Power BI 组  <br/> |CreateGroup  <br/> |将创建一个组。  <br/> |
-|创建组织 Power BI 内容包  <br/> |CreateOrgApp  <br/> |创建了组织内容包。  <br/> |
-|已删除的 Power BI 仪表板  <br/> |DeleteDashboard  <br/> |删除仪表板。  <br/> |
-|已删除的 Power BI 数据集  <br/> |DeleteDataset  <br/> |删除数据集。  <br/> |
-|已删除的 Power BI 报告  <br/> |DeleteReport  <br/> |报表将删除。  <br/> |
-|下载的 Power BI 报告  <br/> |DownloadReport  <br/> |用户将从服务 Power BI 报告下载到其计算机。  <br/> |
-|编辑的 Power BI 仪表板  <br/> |EditDashboard  <br/> |重命名仪表板。  <br/> |
-|导出的 Power BI 报告可视化数据  <br/> |ExportReport  <br/> |从报表平铺导出数据。  <br/> |
-|导出的 Power BI 平铺数据  <br/> |ExportTile  <br/> |从仪表板平铺导出数据。  <br/> |
-|打印的 Power BI 仪表板  <br/> |PrintDashboard  <br/> |打印仪表板。  <br/> |
-|打印的 Power BI 报告页面  <br/> |PrintReport  <br/> |打印报表。  <br/> |
-|Power BI 报表发布到 web  <br/> |PublishToWebReport  <br/> |报表发布到网站。  <br/> |
-|共享的 Power BI 仪表板  <br/> |ShareDashboard  <br/> |共享仪表板。  <br/> |
-|开始的 Power BI 试用版  <br/> |OptInForProTrial  <br/> |用户启动 Power BI 专业人员的试用版订阅。  <br/> |
-|更新的组织的 Power BI 设置  <br/> |UpdatedAdminFeatureSwitch  <br/> |管理员更改 Power BI 管理门户中的组织设置。  <br/> |
-|查看的 Power BI 仪表板  <br/> |ViewDashboard  <br/> |查看仪表板。  <br/> |
-|查看的 Power BI 报告  <br/> |ViewReport  <br/> |查看报告。  <br/> |
+请注意，不默认启用审核日志记录的 Power BI。若要搜索的 Office 365 审核日志中的 Power BI 活动，您必须在 Power BI 管理门户中启用审核。有关说明，请参阅[Power BI 管理门户](https://docs.microsoft.com/power-bi/service-admin-portal#audit-logs)中的"审核日志"一节。
   
 ### <a name="microsoft-teams-activities"></a>Microsoft 团队活动
   
