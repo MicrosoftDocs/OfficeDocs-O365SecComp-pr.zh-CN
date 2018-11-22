@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.assetid: af398293-c69d-465e-a249-d74561552d30
 description: Office 365 中的保留标签可有助于对正确的内容执行适当的操作。借助保留标签，可对整个组织中的数据进行分类来管理数据，并根据此分类强制执行保留规则。另外，保留标签还可用于在 Office 365 中实现记录管理。
-ms.openlocfilehash: f172a723dad3cd555dd910458d27ec1bf7926d0f
-ms.sourcegitcommit: 98a418052be88137c06f5c1abe7012359a7e90ee
+ms.openlocfilehash: d957fc251aa4591d273a65d0a85ecde0df0845c9
+ms.sourcegitcommit: c7264f3a6a97f1ff544544e2c722e7825e265fa1
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/22/2018
-ms.locfileid: "25698038"
+ms.lasthandoff: 11/14/2018
+ms.locfileid: "26299246"
 ---
 # <a name="overview-of-retention-labels"></a>保留标签概述
 
@@ -52,9 +52,10 @@ ms.locfileid: "25698038"
   - 无需依赖用户，即可对全部内容进行正确分类。
     
   - 用户不再需要了解数据管理策略，反而可以专注于自己的工作。
-    
-    请注意，自动应用标签需要 Office 365 企业版 E5 订阅。
-    
+
+  > [!NOTE]
+  > 自动应用标签的功能需要为有权在网站或邮箱中编辑已自动标记的内容的每个用户提供一个 Office 365 企业版 E5 许可证。只有只读访问权限的用户不需要许可证。
+      
 - **将默认保留标签应用于 SharePoint 和 Office 365 组网站中的文档库**，让库中的所有文档都有默认保留标签。 
     
 - **在 Office 365 中实现记录管理**，包括电子邮件和文档。可使用保留标签将内容分类为记录。如果这样做，既无法更改或删除保留标签，也无法编辑或删除内容。 

@@ -13,13 +13,13 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: ''
-description: 了解如何在 Office 365 安全与合规中心的图形用户界面中创建、修改、删除和测试 DLP 自定义敏感信息类型。
-ms.openlocfilehash: 55c7476a1162f657194b9dab4376afb34a76c3f3
-ms.sourcegitcommit: e044b4fd72e4151cd17bf2ad05acc057e0c0d45f
+description: 了解如何在 Office 365 安全与合规中心的图形用户界面中为 DLP 创建、修改、删除和测试自定义敏感信息类型。
+ms.openlocfilehash: a9234b160d720a04ff6bfeac62899246500ec9b4
+ms.sourcegitcommit: e4291f751d6870d965dba191b4c8f10c5c4ce0b5
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/01/2018
-ms.locfileid: "25895281"
+ms.lasthandoff: 11/15/2018
+ms.locfileid: "26534023"
 ---
 # <a name="create-a-custom-sensitive-information-type"></a>创建自定义敏感信息类型
 
@@ -51,7 +51,7 @@ Office 365 中的数据丢失防护 (DLP) 包含许多内置[敏感信息类型]
 
 下表列出了关键区别：
 
-|使用 UI 创建的自定义敏感信息类型|PowerShell 中的自定义敏感信息类型|
+|**UI 中的自定义敏感信息类型**|**PowerShell 中的自定义敏感信息类型**|
 |:-----|:-----|
 |名称和说明采用一种语言。|支持名称和说明的多种语言。|
 |支持一个模式。|支持多个模式。|
@@ -91,41 +91,51 @@ Office 365 中的数据丢失防护 (DLP) 包含许多内置[敏感信息类型]
 
 1. 在安全与合规中心内，依次转到“分类”****\>“敏感信息类型”****，再单击“创建”****。
 
+    ![“敏感信息类型”和“创建”按钮的位置](media/scc-cust-sens-info-type-new.png)
+
 2. 在随即打开的“选择名称和说明”**** 页中，输入以下值：
 
   - **名称**：员工 ID。
 
   - **说明**：检测 9 位数 Contoso 员工 ID 号。
 
-  完成后，单击“下一步”****。
+    ![名称和说明页](media/scc-cust-sens-info-type-new-name-desc.png)
+
+    完成后，单击“下一步”****。
 
 3. 在随即打开的“匹配要求”**** 页中，单击“添加元素”****，以配置下列设置：
 
-  - **检测内容包含**：
+    - **检测内容包含**：
  
-    a. 单击“任意内容”****，再选择“正则表达式”****。
+      a. 单击“任意内容”****，再选择“正则表达式”****。
 
-    b. 在正则表达式框中，输入“`(\s)(\d{9})(\s)`”（两边是空格的 9 位数）。
+      b. 在正则表达式框中，输入“`(\s)(\d{9})(\s)`”（两边是空格的 9 位数）。
   
-  - **支持性元素**：单击“添加支持性元素”****，再选择“包含此关键字列表”****。
+    - **支持性元素**：单击“添加支持性元素”****，再选择“包含此关键字列表”****。
 
-  - 在随即显示的“包含此关键字列表”**** 区域中，配置下列设置：
+    - 在随即显示的“包含此关键字列表”**** 区域中，配置下列设置：
 
-    - **关键字列表**：输入以下值：员工、ID、徽章。
+      - **关键字列表**：输入以下值：员工、ID、徽章。
 
-    - **最小计数**：保留默认值 1。
+      - **最小计数**：保留默认值 1。
 
-  - 保留“可信度”**** 默认值 60。 
+    - 保留“可信度”**** 默认值 60。 
 
-  - 保留“字符临近度”**** 默认值 300。
+    - 保留“字符临近度”**** 默认值 300。
 
-  完成后，单击“下一步”****。
+    ![匹配页面要求](media/scc-cust-sens-info-type-new-reqs.png)
+
+    完成后，单击“下一步”****。
 
 4. 在随即打开的“检查并最终确定”**** 页中，检查设置并单击“完成”****。
 
-5. 下一页建议测试新自定义敏感信息类型。有关详细信息，请参阅[在安全与合规中心内测试自定义敏感信息类型](#test-custom-sensitive-information-types-in-the-security--compliance-center)。如果不想测试，请单击“取消”****。
+    ![检查并完成页面](media/scc-cust-sens-info-type-new-review.png)
 
-### <a name="how-do-you-know-this-worked"></a>如何判断是否生效？
+5. 下一页建议通过单击“是”**** 测试新自定义敏感信息类型。有关详细信息，请参阅[在安全与合规中心内测试自定义敏感信息类型](#test-custom-sensitive-information-types-in-the-security--compliance-center)。若要稍后测试规则，请单击“否”****。
+
+    ![测试建议页](media/scc-cust-sens-info-type-new-test.png)
+
+### <a name="how-do-you-know-this-worked"></a>如何知道操作成功？
 
 若要验证是否已成功新建敏感信息类型，请按以下任一步骤操作：
 
@@ -135,9 +145,15 @@ Office 365 中的数据丢失防护 (DLP) 包含许多内置[敏感信息类型]
 
 ## <a name="modify-custom-sensitive-information-types-in-the-security--compliance-center"></a>在安全与合规中心内修改自定义敏感信息类型
 
-**注意**：只能修改自定义敏感信息类型；不能修改内置敏感信息类型。不过，可使用 PowerShell 导出内置自定义敏感信息类型，然后自定义它们，并将它们作为自定义敏感信息类型导入。有关详细信息，请参阅[自定义内置敏感信息类型](customize-a-built-in-sensitive-information-type.md)。
+**注意**：
 
-在安全与合规中心内，依次转到“分类”****\>“敏感信息类型”****，并选择要修改的自定义敏感信息类型。
+- 只能修改自定义敏感信息类型；不能修改内置敏感信息类型。不过，可使用 PowerShell 导出内置自定义敏感信息类型，然后自定义它们，并将它们作为自定义敏感信息类型导入。有关详细信息，请参阅[自定义内置敏感信息类型](customize-a-built-in-sensitive-information-type.md)。
+
+- 只能修改在 UI 中创建的自定义敏感信息类型。如果使用 [PowerShell 过程](create-a-custom-sensitive-information-type-in-scc-powershell.md)导入自定义敏感信息类型规则包，将收到一个错误。
+
+在安全与合规中心内，依次转到“分类”****\>“敏感信息类型”****，选择要修改的自定义敏感信息类型，然后单击“编辑”****。
+
+  ![“敏感信息类型”和“编辑”按钮的位置](media/scc-cust-sens-info-type-edit.png)
 
 随后看到的选项与在安全与合规中心内创建自定义敏感信息类型时相同。有关详细信息，请参阅[在安全与合规中心内创建自定义敏感信息类型](#create-custom-sensitive-information-types-in-the-security--compliance-center)。
 
@@ -145,7 +161,7 @@ Office 365 中的数据丢失防护 (DLP) 包含许多内置[敏感信息类型]
 
 若要验证是否已成功修改敏感信息类型，请按以下任一步骤操作：
 
-  - 依次转到“分类”****\>“敏感信息类型”****，以验证修改后的自定义敏感信息类型的属性。
+  - 依次转到“分类”****\>“敏感信息类型”****，以验证修改后的自定义敏感信息类型的属性。 
 
   - 测试修改后的自定义敏感信息类型。有关详细信息，请参阅[在安全与合规中心内测试自定义敏感信息类型](#test-custom-sensitive-information-types-in-the-security--compliance-center)。
 
@@ -161,12 +177,13 @@ Office 365 中的数据丢失防护 (DLP) 包含许多内置[敏感信息类型]
 
 2. 在随即打开的弹出窗口中，单击“删除”****（或“删除多个敏感信息类型”****，如果选择了多个类型的话）。
 
+    ![“敏感信息类型”和“删除”按钮的位置](media/scc-cust-sens-info-type-delete.png)
+
 3. 在随即显示的警告消息中，单击“是”****。
 
 ### <a name="how-do-you-know-this-worked"></a>如何判断是否生效？
 
 若要验证是否已成功删除自定义敏感信息类型，请依次转到“分类”****\>“敏感信息类型”****，以验证自定义敏感信息类型是否已不再列出。
-
 
 ## <a name="test-custom-sensitive-information-types-in-the-security--compliance-center"></a>在安全与合规中心内测试自定义敏感信息类型
 
@@ -174,6 +191,14 @@ Office 365 中的数据丢失防护 (DLP) 包含许多内置[敏感信息类型]
 
 2. 选择要测试的一个或多个自定义敏感信息类型。在随即打开的弹出窗口中，单击“测试类型”****（或“测试多个敏感信息类型”****，如果选择了多个类型的话）。
 
-3. 在随即打开的页面上，拖放文件或单击“浏览”**** 并选择文件，以上传要测试的文档。
+    ![“敏感信息类型”和“测试类型”按钮的位置](media/scc-cust-sens-info-type-test.png)
+
+3. 在随即打开的“上传测试文件”**** 页面上，拖放文件或单击“浏览”**** 并选择文件，以上传要测试的文档。
+
+    ![“上传测试文件”页](media/scc-cust-sens-info-type-test-upload.png)
 
 4. 单击“测试”**** 按钮，以测试文档的模式匹配情况。
+
+5. 在“匹配结果”**** 页上，单击“完成”****。
+
+    ![匹配结果](media/scc-cust-sens-info-type-test-results.png)
