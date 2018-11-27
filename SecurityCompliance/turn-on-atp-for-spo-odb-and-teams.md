@@ -12,12 +12,12 @@ search.appverid:
 - MOE150
 ms.assetid: 07e76024-0c80-40dc-8c48-1dd0d0f863cb
 description: 了解如何开启 ATP for OneDrive 和团队，包括如何设置检测到的文件的通知。
-ms.openlocfilehash: d70c574f002ca7e70ab6f9a4abad3ea5ef21a20f
-ms.sourcegitcommit: 147768bbe44c8c98c02fa29ae9d882cee4ec2d6b
+ms.openlocfilehash: e413f0b57186dc1364b63e14985ef0f54ca7e442
+ms.sourcegitcommit: 0cc6083bd8cb2f7bbf18847149c6d5239f2a6403
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "26238414"
+ms.lasthandoff: 11/27/2018
+ms.locfileid: "26699935"
 ---
 # <a name="turn-on-office-365-atp-for-sharepoint-onedrive-and-microsoft-teams"></a>打开 Office 365 ATP SharePoint、 OneDrive 和 Microsoft 团队
 
@@ -40,14 +40,16 @@ ms.locfileid: "26238414"
 5. 查看 （和，根据需要编辑） 贵组织的[安全附件策略](set-up-atp-safe-attachments-policies.md)和[安全链接策略](set-up-atp-safe-links-policies.md)。
     
 6. （推荐）以全局管理员或 SharePoint Online 管理员，运行**[Set-spotenant](https://docs.microsoft.com/powershell/module/sharepoint-online/Set-SPOTenant?view=sharepoint-ps)** cmdlet， **DisallowInfectedFileDownload**参数设置为*true*。 <br/>
-  - 设置为*true*的块的参数 （除删除） 的所有操作检测到文件。人员无法打开、 移动、 复制或共享检测到的文件。
-  - 参数设置为*false*会阻止除删除和下载的所有操作。人员可以选择接受风险并下载检测到的文件。  
+      - 设置为*true*的块的参数 （除删除） 的所有操作检测到文件。人员无法打开、 移动、 复制或共享检测到的文件。
+      - 参数设置为*false*会阻止除删除和下载的所有操作。人员可以选择接受风险并下载检测到的文件。  
    
 7. 允许您更改传播到所有 Office 365 数据中心最多 30 分钟。
     
 8. （推荐）继续设置通知检测到的文件。
     
-若要了解有关使用 Office 365 PowerShell 的详细信息，请参阅[使用 PowerShell 管理 Office 365](https://docs.microsoft.com/office365/enterprise/powershell/manage-office-365-with-office-365-powershell)。> 到时为恶意检测到一个文件，请了解有关用户体验的详细信息，请参阅[SharePoint Online、 OneDrive 或的 Microsoft 团队中找到的恶意文件时要执行什么](https://support.office.com/article/01e902ad-a903-4e0f-b093-1e1ac0c37ad2)。 
+若要了解有关使用 Office 365 PowerShell 的详细信息，请参阅[使用 PowerShell 管理 Office 365](https://docs.microsoft.com/office365/enterprise/powershell/manage-office-365-with-office-365-powershell)。 
+
+若要了解有关用户体验的详细信息时为恶意检测到一个文件，请参阅[SharePoint Online、 OneDrive 或的 Microsoft 团队中找到的恶意文件时要执行什么](https://support.office.com/article/01e902ad-a903-4e0f-b093-1e1ac0c37ad2)。 
   
 ## <a name="set-up-alerts-for-detected-files"></a>设置通知检测到的文件
 
@@ -63,9 +65,9 @@ ms.locfileid: "26238414"
     
 5. 在**发送此通知时...** 部分中，执行以下操作： 
     
-  - 在**活动**列表中，选择**文件中的检测到恶意软件**。
+    答： 在**活动**列表中，选择**文件中的检测到恶意软件**。
     
-  - 该**用户**字段留空。 
+    b.保留**用户**字段为空。 
     
 6. 在**发送到此通知...** 部分中，选择一个或多个全局管理员、 安全管理员或安全读者应在检测到恶意文件时收到通知。 
     
