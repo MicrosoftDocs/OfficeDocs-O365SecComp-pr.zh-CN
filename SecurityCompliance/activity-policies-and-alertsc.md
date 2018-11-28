@@ -13,12 +13,12 @@ search.appverid:
 - MOE150
 ms.assetid: 367f25d3-10a0-4a91-bdae-70ebb7a79c98
 description: 定义与 Office 365 云应用程序安全性设置通知以触发特定活动发生或过于频繁发生时的活动策略。通过设置以触发通知的策略，您可以通知有关和监视特定活动。
-ms.openlocfilehash: a239e2bf453a01bf852a702a66cb2f09c02b8c96
-ms.sourcegitcommit: c31424cafbf1953f2864d7e2ceb95b329a694edb
+ms.openlocfilehash: ff1f0acd3c622f20bff26f6a77cc686193cf76fc
+ms.sourcegitcommit: 2cf7f5bb282c971d33e00f65d9982a3f14aec74e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "23272367"
+ms.lasthandoff: 11/27/2018
+ms.locfileid: "26706466"
 ---
 # <a name="activity-policies-and-alerts-in-office-365-cloud-app-security"></a>Office 365 云应用安全中的活动策略和警报
 
@@ -47,7 +47,7 @@ Office 365 高级安全管理现在是 Office 365 云应用程序安全性。
     
 ## <a name="create-a-new-activity-policy"></a>创建新的活动策略
 
-1. 以全局管理员或 security 管理员程序中，转到[https://protection.office.com](https://protection.office.com)和使用工作或学校帐户登录。 
+1. 以全局管理员或 security 管理员程序中，转到[https://security.microsoft.com](https://security.microsoft.com)和使用工作或学校帐户登录。 
     
 2. 安全中&amp;合规性中心中，选择**警报** \> **管理高级通知**。
     

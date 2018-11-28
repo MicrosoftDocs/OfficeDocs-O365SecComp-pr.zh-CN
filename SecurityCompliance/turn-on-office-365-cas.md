@@ -3,7 +3,6 @@ title: 开启 Office 365 云应用安全
 ms.author: deniseb
 author: denisebmsft
 manager: laurawi
-ms.date: 2/26/2018
 ms.audience: ITPro
 ms.topic: article
 ms.service: o365-administration
@@ -13,12 +12,12 @@ search.appverid:
 - MOE150
 ms.assetid: ba919c73-d021-404d-9850-eec57e78678c
 description: 阅读此文，了解如何启用 Office 365 高级安全管理，由 Microsoft Azure 中的云应用程序安全性。
-ms.openlocfilehash: 6e40dcf1abeae4f9e01502282d00b934431a8258
-ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+ms.openlocfilehash: 586ebc5f496652e05b4ab6d2421fa9bc42603895
+ms.sourcegitcommit: 2cf7f5bb282c971d33e00f65d9982a3f14aec74e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22524856"
+ms.lasthandoff: 11/27/2018
+ms.locfileid: "26706286"
 ---
 # <a name="turn-on-office-365-cloud-app-security"></a>开启 Office 365 云应用安全
   
@@ -31,17 +30,13 @@ ms.locfileid: "22524856"
 > [!IMPORTANT]
 > 您必须是要执行以下任务的全局管理员或 security 管理员程序。若要了解详细信息，请参阅[Permissions in Office 365 安全性&amp;合规性中心](permissions-in-the-security-and-compliance-center.md)。按顺序对 Office 365 云应用程序安全性，以更正，针对您的 Office 365 环境**必须打开审核日志记录**。有关详细信息，请参阅[打开或关闭，打开 Office 365 审核日志搜索](turn-audit-log-search-on-or-off.md)。 
   
-1. 以全局管理员或 security 管理员程序中，转到[https://protection.office.com](https://protection.office.com)和 Office 365 中使用您的工作或学校帐户登录。(您将转到安全&amp;合规性中心。) 
+1. 以全局管理员或 security 管理员程序中，转到[https://security.microsoft.com](https://security.microsoft.com)和 Office 365 中使用您的工作或学校帐户登录。(您将转到安全&amp;合规性中心。) 
     
 2. 转到**通知** \> **管理高级通知**。
     
 3. 选择**打开 Office 365 云应用程序安全性**。
     
-4. 选择**转到 Office 365 云应用程序安全性**。
-    
-    ![安全中&amp;合规性中心中，选择管理高级通知转到 Office 365 云应用程序安全性](media/958632d4-03e3-4ade-8e22-d5509db6fca7.png)
-  
-    转到 Office 365 云应用程序安全性门户，可在其中查看报告和创建或编辑您的策略。
+4. 选择**转到 Office 365 云应用程序安全性**。<br/>![安全中&amp;合规性中心中，选择管理高级通知转到 Office 365 云应用程序安全性](media/958632d4-03e3-4ade-8e22-d5509db6fca7.png)<br/>转到 Office 365 云应用程序安全性门户，可在其中查看报告和创建或编辑您的策略。
     
 > [!NOTE]
 > 当您打开 Office 365 云应用程序安全性时，您的 Office 365 用户帐户和用户活动的审核信息传输到[Microsoft 云应用程序安全性](https://aka.ms/whatiscas)。这将允许 Office 365 提供高级的通知、 筛选和其他功能，以便您可以获取信息并执行有关可疑活动的操作。 

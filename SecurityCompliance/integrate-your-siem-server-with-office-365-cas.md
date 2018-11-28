@@ -12,12 +12,12 @@ search.appverid:
 - MOE150
 ms.assetid: dd6d2417-49c4-4de6-9294-67fdabbf8532
 description: 您可以与 Office 365 云应用程序安全性集成 SIEM 服务器。阅读这篇文章，获取它的工作方式以及如何将其设置的概述。
-ms.openlocfilehash: d8603d53e156e89c53f13153cd90d400b1312538
-ms.sourcegitcommit: 2e41cc24ad92005084f2ba432e724bdcc4e295ff
+ms.openlocfilehash: f0965f822b50a0f06dfb69620a9d64c6ca509864
+ms.sourcegitcommit: 2cf7f5bb282c971d33e00f65d9982a3f14aec74e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "25450757"
+ms.lasthandoff: 11/27/2018
+ms.locfileid: "26706406"
 ---
 # <a name="integrate-your-siem-server-with-office-365-cloud-app-security"></a>将 SIEM 服务器与 Office 365 云应用安全集成
   
@@ -67,7 +67,7 @@ Office 365 云应用程序安全性当前支持以下 SIEM 服务器：
  
 ## <a name="step-1-set-it-up-a-siem-agent-in-office-365-cloud-app-security"></a>步骤 1： 设置其 Office 365 云应用程序安全性的 SIEM 代理
 
-1. 转到[https://protection.office.com](https://protection.office.com)和 Office 365 中使用您的工作或学校帐户登录。(您将转到安全&amp;合规性中心。) 
+1. 转到[https://security.microsoft.com](https://security.microsoft.com)和 Office 365 中使用您的工作或学校帐户登录。(您将转到安全&amp;合规性中心。) 
     
 2. 转到**通知** \> **管理高级通知**。
     
@@ -86,7 +86,7 @@ Office 365 云应用程序安全性当前支持以下 SIEM 服务器：
 8. 在**远程系统日志**步骤中，指定的 IP 地址或**远程 syslog 主机**和**Syslog 端口号**的主机名。选择 TCP 或 UDP 作为远程 Syslog 协议。（您可以使用网络管理员或安全管理员获取这些详细信息，如果您没有这些。）然后选择**下一步**。<br/>![指定远程系统日志的详细信息](media/ArcSightS1Syslog.png)
   
 9. 在**数据类型**步骤中，执行以下内容，之一，然后单击**下一步**：
-    - 保留**所有通知**的默认设置<br/>OR
+    - 保留**所有通知**的默认设置<br/>或者
     - 单击**所有通知**，，然后选择**特定的筛选器**。定义筛选器以选择要向 SIEM 服务器发送的通知的类型。<br/>![向导的步骤的数据类型](media/ArcSightS1ExportOptions.png)
   
 10. 在祝贺您屏幕上，复制标记并将其保存为更高版本。<br/>![SIEM 创建代理屏幕](media/SIEMAgentFinished.png) 
@@ -122,9 +122,13 @@ Office 365 云应用程序安全性当前支持以下 SIEM 服务器：
     ```
 
 - 中括号 [] 参数是可选的并应仅当相关。使用以下变量：
+
     - **DIRNAME**是您想要使用的本地代理调试日志目录的路径。
+
     - **地址 [: 端口]** 是代理服务器地址和服务器用于连接到 Internet 的端口。
+
     - **令牌**是您在第一个过程中复制 SIEM 代理标记。
+
     - 若要获取帮助，请键入`-h`。 
   
 ## <a name="step-3-validate-that-the-siem-agent-is-working"></a>步骤 3： 验证 SIEM 代理工作

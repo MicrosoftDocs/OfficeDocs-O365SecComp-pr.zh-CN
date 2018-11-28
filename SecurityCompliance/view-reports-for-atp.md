@@ -3,6 +3,7 @@ title: Office 365 高级威胁保护的视图报告
 ms.author: deniseb
 author: denisebmsft
 manager: laurawi
+ms.date: 11/27/2018
 ms.audience: ITPro
 ms.topic: article
 ms.service: o365-administration
@@ -12,12 +13,12 @@ search.appverid:
 - MOE150
 ms.assetid: e47e838c-d99e-4c0b-b9aa-e66c4fae902f
 description: 了解如何查找和使用适用于 Office 365 高级威胁保护安全中报告&amp;合规性中心。
-ms.openlocfilehash: 1a0ecb9a6722deb50a491a15f720481a5bb7b0a4
-ms.sourcegitcommit: e0c6f99d5514d8da8a70d9bd3616d1a1c0851254
+ms.openlocfilehash: e9d3088f81d1020e70de4c2260fba81cd469715d
+ms.sourcegitcommit: 2cf7f5bb282c971d33e00f65d9982a3f14aec74e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/13/2018
-ms.locfileid: "25552330"
+ms.lasthandoff: 11/27/2018
+ms.locfileid: "26706316"
 ---
 # <a name="view-reports-for-office-365-advanced-threat-protection"></a>Office 365 高级威胁保护的视图报告
 
@@ -34,7 +35,7 @@ ATP 报告包括[威胁保护状态报告](#threat-protection-status-report)、 
 > [!NOTE]
 > 威胁保护状态报告是适用于[Office 365 ATP](office-365-atp.md)或[Exchange Online Protection](eop/exchange-online-protection-eop.md) (EOP); 客户但是，ATP 客户威胁保护状态报告中显示的信息将可能包含比 EOP 客户可能会看到不同的数据。例如，ATP 客户的威胁保护状态报告将包含有关[SharePoint Online、 OneDrive 或的 Microsoft 团队中检测到恶意文件](atp-for-spo-odb-and-teams.md)的信息。此类信息是特定于 ATP，，因此客户拥有 EOP，但不是 ATP 将不会看到其威胁保护状态报告中的这些信息。
   
-安全中查看威胁保护状态报表，&amp;合规性中心中，转到**报告** \> **仪表板** \> **威胁保护状态**。
+若要查看中威胁保护状态报告，[安全&amp;合规性中心](https://security.microsoft.com)，请转到**报告** \> **仪表板** \> **威胁保护状态**。
   
 ![ATP 威胁保护状态报告](media/6bdd41eb-62e0-423b-9fd4-d1d5baf0cbd5.png)
   
@@ -54,7 +55,7 @@ ATP 报告包括[威胁保护状态报告](#threat-protection-status-report)、 
 
 **ATP 文件类型**报告将显示为恶意检测到[ATP 安全附件](atp-safe-attachments.md)的文件的类型。
   
-若要查看此报告中，安全中&amp;合规性中心中，转到**报告** \> **仪表板** \> **ATP 文件类型**。
+若要查看此报告中，在[安全&amp;合规性中心](https://security.microsoft.com)，请转到**报告** \> **仪表板** \> **ATP 文件类型**。
   
 ![ATP 文件类型报告](media/6e3f5d33-79aa-4b2d-938c-6ef135d9e54c.png)
   
@@ -66,7 +67,7 @@ ATP 报告包括[威胁保护状态报告](#threat-protection-status-report)、 
 
 **ATP 消息处置**报告将显示您的电子邮件被检测为具有恶意内容所采取的操作。 
   
-若要查看此报告中，安全中&amp;合规性中心中，转到**报告** \> **仪表板** \> **ATP 消息处置**。
+若要查看此报告中，在[安全&amp;合规性中心](https://security.microsoft.com)，请转到**报告** \> **仪表板** \> **ATP 消息处置**。
   
 ![ATP 邮件处置报告](media/b0ff65c4-53d3-496d-bafa-8937a5eb69e5.png)
   
@@ -79,7 +80,7 @@ ATP 报告包括[威胁保护状态报告](#threat-protection-status-report)、 
 除了本文中所述的 ATP 报告，多个其他报表有下, 表中所述：
 
 
-|报告类型  |了解更多  |
+|报告类型  |了解详细信息  |
 |---------|---------|
 |**电子邮件安全报告**，如前发件人和收件人报告、 欺骗邮件报表和垃圾邮件检测报告。 | [查看安全中的电子邮件安全报告&amp;合规性中心](view-email-security-reports.md)        |
 |**资源管理器**（也称为威胁资源管理器，这包含在[Office 365 威胁智能](office-365-ti.md)）     | [在安全中使用资源管理器&amp;合规性中心](use-explorer-in-security-and-compliance.md)        |
@@ -89,12 +90,24 @@ ATP 报告包括[威胁保护状态报告](#threat-protection-status-report)、 
   
 ## <a name="what-permissions-are-needed-to-view-the-atp-reports"></a>查看 ATP 报告需要哪些权限？
 
-为了查看和使用本文中所述的报告，您必须具有安全中分配相应角色&amp;合规性中心和 Exchange Admin Center。
-  
-|**角色组**|**其中分配**|**了解更多**|
-|:-----|:-----|:-----|
-| 以下各项之一：  <br/><br/>-组织管理  <br/>--安全管理员  <br/>--安全读者  <br/> |安全&amp;合规性中心  <br/> |[Office 365 安全性权限&amp;合规性中心](permissions-in-the-security-and-compliance-center.md) <br/> |
-| 以下各项之一：  <br/><br/>-组织管理  <br/>-仅查看组织管理  <br/>-View-Only Recipients 角色  <br/>-合规性管理  <br/> |Exchange 管理中心  <br/> |[Exchange Online 中的功能权限](https://technet.microsoft.com/library/jj200673%28v=exchg.150%29.aspx) <br/> |
+为了查看和使用本文中所述的报告，您必须具有适当的角色分配中的安全性&amp;合规性中心和 Exchange Admin Center。
+
+- 安全&amp;合规性中心，您必须拥有以下角色分配之一：
+    - 组织管理
+    - Security Administrator
+    - 安全读者
+
+- 有关 Exchange Online 中，必须具有以下角色分配之一：
+    - 组织管理
+    - 仅限查看组织管理
+    - “仅供查看收件人”角色
+    - 合规性管理
+
+若要了解详细信息，请参阅以下资源：
+
+- [Office 365 安全性权限&amp;合规性中心](permissions-in-the-security-and-compliance-center.md)
+
+- [Exchange Online 中的功能权限](https://docs.microsoft.com/exchange/permissions-exo/feature-permissions)
    
 ## <a name="what-if-the-reports-arent-showing-data"></a>如果报表不显示数据？
 

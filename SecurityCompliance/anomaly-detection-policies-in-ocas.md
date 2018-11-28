@@ -13,12 +13,12 @@ search.appverid:
 - MOE150
 ms.assetid: 88935b4e-dcb1-47f1-8aca-1bf8fb069db6
 description: 'Office 365 云应用程序安全性的异常检测策略使用内置的算法来帮助发现潜在的问题。您应具有至少一个异常检测策略，您可以通过使用筛选器调整 （当您创建它）。 '
-ms.openlocfilehash: 80f576d7c1c42ab60c1b031dcd33591f8e1ce4b8
-ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+ms.openlocfilehash: 8babe86dd5adb6c25a069096157cac121ad66ab1
+ms.sourcegitcommit: 2cf7f5bb282c971d33e00f65d9982a3f14aec74e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22525986"
+ms.lasthandoff: 11/27/2018
+ms.locfileid: "26706336"
 ---
 # <a name="anomaly-detection-policies-in-office-365-cloud-app-security"></a>Office 365 云应用安全中的异常检测策略
 
@@ -51,7 +51,7 @@ Office 365 云应用程序安全性开头[Microsoft 云应用程序安全性释�
     
 ## <a name="view-your-anomaly-detection-policies"></a>查看您异常检测策略
 
-1. 以全局管理员或 security 管理员程序中，转到[https://protection.office.com](https://protection.office.com)和使用工作或学校帐户登录。 
+1. 以全局管理员或 security 管理员程序中，转到[https://security.microsoft.com](https://security.microsoft.com)和使用工作或学校帐户登录。 
     
 2. 安全中&amp;合规性中心中，选择**警报** \> **管理高级通知**。
     
@@ -93,7 +93,7 @@ Office 365 云应用程序安全性开头[Microsoft 云应用程序安全性释�
 
 通知逐渐，您可以快速会审这些通知并确定要将哪些首先处理。具有上下文的通知，可以看到更大的图片，并确定是否有恶意确实情况发生。使用以下过程开始浏览通知：
   
-1. 以全局管理员或 security 管理员程序中，转到[https://protection.office.com](https://protection.office.com)和使用工作或学校帐户登录。 
+1. 以全局管理员或 security 管理员程序中，转到[https://security.microsoft.com](https://security.microsoft.com)和使用工作或学校帐户登录。 
     
 2. 安全中&amp;合规性中心中，选择**警报** \> **管理高级通知**。
     
@@ -118,7 +118,6 @@ Office 365 云应用程序安全性开头[Microsoft 云应用程序安全性释�
 在多个失败登录通知良言可能可疑，并可指示潜在的强力攻击。但是，此类通知也可能是应用程序配置不正确，导致通知为误报，则返回 true 误报。如果您看到其他可疑活动多失败登录警报，则帐户受到威胁的更高的概率。例如，假设，多失败登录通知后跟活动从或 IP 地址和意思差旅活动，这两个强指标的威胁。您甚至可能会看到相同的用户执行大量下载活动，它通常是攻击者执行 exfiltration 的数据的指示符。它的类，您可以了解 Office 365 云应用程序安全性，若要查看和会审通知，并执行操作中操作在需要时。
   
 ## <a name="next-steps"></a>后续步骤
-<a name="nextsteps"> </a>
 
 - [将 SIEM 服务器集成](integrate-your-siem-server-with-office-365-cas.md)
     

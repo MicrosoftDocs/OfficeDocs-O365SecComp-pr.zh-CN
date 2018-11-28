@@ -13,16 +13,18 @@ search.appverid:
 - MOE150
 ms.assetid: 3387bfc3-028a-42f4-8133-4cbecfaab812
 description: 了解 Office 365 威胁智能可以帮助您的组织检测入侵和威胁，快速缓解和恢复的威胁。
-ms.openlocfilehash: f628b941f824e7ad2e327b476288c93f2fc535ad
-ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+ms.openlocfilehash: ffcbf6cc179ec8a7e8887402e139d2a0cc716eef
+ms.sourcegitcommit: 2cf7f5bb282c971d33e00f65d9982a3f14aec74e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22525960"
+ms.lasthandoff: 11/27/2018
+ms.locfileid: "26706096"
 ---
 # <a name="keep-your-office-365-users-safe-with-office-365-threat-intelligence"></a>使用 Office 365 威胁智能确保 Office 365 用户安全
 
- *您知道哪些 Office 365 用户受到攻击中，或糟-泄露？知道如何缓解和面向您的用户的攻击恢复？您知道您可以这样做完全已对您在 Office 365 中可用的安全功能吗？* 
+## <a name="overview"></a>概述
+
+您知道哪些 Office 365 用户受到攻击中，或糟-泄露？知道如何缓解和面向您的用户的攻击恢复？您知道您可以这样做完全已对您在 Office 365 中可用的安全功能吗？ 
   
 [Office 365 威胁智能](office-365-ti.md)是一套在 Office 365 E5 订阅包含的功能。Office 365 威胁智能已帮助减少的平均时间社会工程事件的分辨率通过 80%，并增加了案例吞吐量 37%每月与以前的 2 个季度相比的 Microsoft IT ！ 
   
@@ -30,9 +32,9 @@ ms.locfileid: "22525960"
   
 ## <a name="detect-intrusions-and-threats"></a>检测入侵和威胁
 
-**Office 365 威胁资源管理器**帮助安全 admins 和分析师确定并了解是企业中处于活动状态，因为即使最复杂的安全设置可以避开像看起来无关紧要的用户配置的威胁安全发件人白名单中。威胁资源管理器可帮助 Office 365 全局或安全 admins 快速确定是否用户了受到威胁，如恶意软件或网络钓鱼诈骗。这有助于确定优先级其用户最位于风险的威胁和必要的响应。 
+[资源管理器](use-explorer-in-security-and-compliance.md)（也称为威胁资源管理器） 可帮助安全管理员和分析师确定并了解是您企业中处于活动状态，因为即使最复杂的安全设置可以避开看起来无关紧要的用户配置，如安全威胁发件人白名单中。资源管理器可帮助 Office 365 全局或安全 admins 快速确定是否用户了受到威胁，如恶意软件或网络钓鱼诈骗。这有助于确定优先级其用户最位于风险的威胁和必要的响应。 
   
-威胁资源管理器还有助于 admins 导航用户和邮件之间的关系。知道已损坏的特定邮件的？搜索以查看哪些用户接收邮件，然后，按照的一系列事件，请参阅这些用户又做了什么。
+资源管理器还有助于 admins 导航用户和邮件之间的关系。知道已损坏的特定邮件的？搜索以查看哪些用户接收邮件，然后，按照的一系列事件，请参阅这些用户又做了什么。
 
 如果您没有威胁智能，[立即尝试](https://aka.ms/tryo365threatintel3)！并[了解更多有关 Office 365 威胁智能](https://aka.ms/readmoreabouto365threatintel)。
   

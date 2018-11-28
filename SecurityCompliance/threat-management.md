@@ -1,5 +1,5 @@
 ---
-title: 威胁管理 Office 365 安全性&amp;合规性中心
+title: Threat management in the Office 365 Security &amp; Compliance Center
 ms.author: krowley
 author: kccross
 manager: laurawi
@@ -12,14 +12,14 @@ search.appverid:
 - MET150
 ms.assetid: 0a73d5fa-b2c8-43e7-9ed4-61f0552b1c98
 description: 使用威胁管理帮助控制和管理移动设备访问您组织的数据，帮助保护您的组织免受数据丢失，并帮助防止恶意软件和垃圾邮件的入站和出站邮件。您还使用从您的域帐户管理以保护您的域的声誉并确定恶意欺骗发件人的威胁。
-ms.openlocfilehash: df843ab95920d24af778a9edf31626f4d6b08cff
-ms.sourcegitcommit: e0c6f99d5514d8da8a70d9bd3616d1a1c0851254
+ms.openlocfilehash: 6aac4e7c3af0f1d2b7adc767f696653252674e6a
+ms.sourcegitcommit: 2cf7f5bb282c971d33e00f65d9982a3f14aec74e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/13/2018
-ms.locfileid: "25552400"
+ms.lasthandoff: 11/27/2018
+ms.locfileid: "26706426"
 ---
-# <a name="threat-management-in-the-office-365-security-amp-compliance-center"></a>威胁管理 Office 365 安全性&amp;合规性中心
+# <a name="threat-management-in-the-office-365-security-amp-compliance-center"></a>Threat management in the Office 365 Security &amp; Compliance Center
 
 使用威胁管理帮助控制和管理移动设备访问您组织的数据，帮助保护您的组织免受数据丢失，并帮助防止恶意软件和垃圾邮件的入站和出站邮件。您还使用从您的域帐户管理以保护您的域的声誉并确定恶意欺骗发件人的威胁。
   
@@ -31,7 +31,7 @@ Office 365 中使用安全&amp;合规性中心管理您的组织中的威胁。
   
 1. 转到 [https://protection.office.com](https://protection.office.com)。
     
-2. 登录到 Office 365 使用工作或学校帐户。
+2. 使用工作或学校帐户登录到 Office 365。
     
 3. 在左窗格中，选择**威胁管理**。
     
@@ -39,7 +39,7 @@ Office 365 中使用安全&amp;合规性中心管理您的组织中的威胁。
   
  **转到安全&amp;使用 Office 365 应用程序启动器的合规性中心：**
   
-1. 登录到 Office 365 使用工作或学校帐户。
+1. 使用工作或学校帐户登录到 Office 365。
     
 2. 选择应用程序启动器![Office 365 中的应用程序启动器图标](media/7502f4ec-3c9a-435d-a7b4-b9cda85189a7.png)在左上角，，，然后选择**安全&amp;合规性**平铺。 
     

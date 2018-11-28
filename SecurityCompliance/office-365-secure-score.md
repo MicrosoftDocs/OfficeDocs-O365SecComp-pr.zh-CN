@@ -3,7 +3,7 @@ title: Office 365 安全功能分数
 ms.author: deniseb
 author: denisebmsft
 manager: laurawi
-ms.date: 11/05/2018
+ms.date: 11/27/2018
 ms.audience: Admin
 ms.topic: overview
 ms.service: o365-administration
@@ -13,12 +13,12 @@ search.appverid:
 - MET150
 ms.assetid: c9e7160f-2c34-4bd0-a548-5ddcc862eaef
 description: 想知道如何安全组织真的是 Office 365 中？安全分数此处以帮助。安全分数分析基于您的正则活动和 Offic 365 中的安全设置的组织的安全性，并分配分数。
-ms.openlocfilehash: 0be9b68653ccdf17afedf7e22e1af5577f8a2caf
-ms.sourcegitcommit: 791d23e1c2dea622b6ef77a6e2bde32e1d31a41b
+ms.openlocfilehash: 0d19cd9512838bf2d8b0bff615ccaa1eea21266a
+ms.sourcegitcommit: 2cf7f5bb282c971d33e00f65d9982a3f14aec74e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/06/2018
-ms.locfileid: "25999986"
+ms.lasthandoff: 11/27/2018
+ms.locfileid: "26706176"
 ---
 # <a name="office-365-secure-score"></a>Office 365 安全功能分数
 
@@ -28,7 +28,7 @@ ms.locfileid: "25999986"
 
 如果您的组织具有订阅包含[Office 365 企业版](https://docs.microsoft.com/office365/enterprise/)、 [Microsoft 365 企业版](https://docs.microsoft.com/microsoft-365/business/)或 Office 365 企业高级版，并且您所需的权限，则可以查看贵组织的安全分数，请访问[https://securescore.office.com](https://securescore.office.com)。 
 
-此外，您可以访问安全性和合规性中心 ([https://protection.office.com](https://protection.office.com))，将在其中找到您当前的分数为您提供一个安全分数构件。
+此外，您可以访问安全性和合规性中心 ([https://security.microsoft.com](https://security.microsoft.com))，将在其中找到您当前的分数为您提供一个安全分数构件。
 
 ![安全分数小部件](media/SecureScoreWidget-o365.png)
 
@@ -39,7 +39,7 @@ ms.locfileid: "25999986"
 > [!NOTE]
 > 您必须是 Office 365 管理员，如全局管理员或安全管理员、 访问安全分数。
   
-## <a name="how-it-works"></a>运作方式
+## <a name="how-it-works"></a>如何工作
 
 安全分数找出 Office 365 服务，然后您将 （如 OneDrive、 SharePoint 和 Exchange） 查看您的设置和活动并到一个比较基准建立由 Microsoft 对它们进行比较。您将获取基于您在与最佳安全做法如何对齐的分数。
   
@@ -65,8 +65,6 @@ ms.locfileid: "25999986"
   
 但不只是为其相信我们所说。使用安全分数客户已看到其分数增加 5 次比客户不使用它。（及其分数增加对应于在组织中使用的安全功能）。
   
-签出我们的[博客文章](https://go.microsoft.com/fwlink/?linkid=836898)以了解详细信息。 
-  
 > [!NOTE]
 > 安全分数不 express 绝对的度量单位的方式可能要获取破坏。它表示您采用控件可以偏移正在看见的风险的程度。没有服务都无法保证，您将不违反，和安全分数不应视为以任何方式保证。 
   
@@ -74,7 +72,7 @@ ms.locfileid: "25999986"
 
 ### <a name="who-can-use-secure-score"></a>谁可以使用安全分数？
 
-具有管理员权限 （全局管理员或自定义管理角色） 的 Office 365 企业版、 Microsoft 365 业务或 Office 365 企业高级版订阅，可以访问在安全分数的人[https://securescore.office.com](https://securescore.office.com)。未分配管理员角色的用户将无法访问 Secure 分数。但是，管理员可以使用该工具与组织中的其他人共享其结果。我们要看包括权限列表中的其他，非管理员角色将来。如果您希望我们要考虑的特定角色，让我们知道上发布[Office 安全、 隐私&amp;合规性社区](https://go.microsoft.com/fwlink/?linkid=836898)。
+具有管理员权限 （全局管理员或自定义管理角色） 的 Office 365 企业版、 Microsoft 365 业务或 Office 365 企业高级版订阅，可以访问在安全分数的人[https://securescore.office.com](https://securescore.office.com)。未分配管理员角色的用户将无法访问 Secure 分数。但是，管理员可以使用该工具与组织中的其他人共享其结果。我们要看包括权限列表中的其他，非管理员角色将来。如果您希望我们要考虑的特定角色，让我们知道中发布[Office 安全、 隐私&amp;合规性社区](https://techcommunity.microsoft.com/t5/Security-Privacy-Compliance/bd-p/security_privacy)。
   
 ### <a name="what-does-not-scored-mean"></a>用途 [不对评分] 意味着？
 
@@ -108,7 +106,7 @@ ms.locfileid: "25999986"
   
 ### <a name="something-isnt-working-right-who-should-i-contact"></a>内容失效。我应与谁联系？
 
-如果您有任何问题，请让我们知道上发布[Office 安全、 隐私&amp;合规性社区](https://go.microsoft.com/fwlink/?linkid=836898)。我们正在监视社区，并将提供帮助。
+如果您有任何问题，请让我们知道中发布[Office 安全、 隐私&amp;合规性社区](hhttps://techcommunity.microsoft.com/t5/Security-Privacy-Compliance/bd-p/security_privacy)。我们正在监视社区，并将提供帮助。
   
 ### <a name="my-organization-only-has-certain-security-features-does-this-affect-my-score"></a>我的组织只有某些安全功能。这将影响分数？
 

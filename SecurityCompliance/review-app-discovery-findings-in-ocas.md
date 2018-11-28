@@ -3,7 +3,6 @@ title: 查看 Office 365 云应用安全中的应用发现结果
 ms.author: deniseb
 author: denisebmsft
 manager: laurawi
-ms.date: 3/19/2018
 ms.audience: ITPro
 ms.topic: article
 ms.service: o365-administration
@@ -13,12 +12,12 @@ search.appverid:
 - MOE150
 ms.assetid: aac65513-e75e-4c82-a668-9a6604dd9f9d
 description: 查看高级安全管理中的应用程序发现报告可帮助您了解有关如何在组织中的人员使用云应用程序的详细信息。您已创建应用程序发现报告使用从防火墙和代理日志文件后，查看应用程序发现仪表板中的结果。
-ms.openlocfilehash: 188ef87920b26069e7d99057662b3812be22e46c
-ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+ms.openlocfilehash: ddf3826f5aac9d3c837cf66f1b97b4650df70f32
+ms.sourcegitcommit: 2cf7f5bb282c971d33e00f65d9982a3f14aec74e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22524810"
+ms.lasthandoff: 11/27/2018
+ms.locfileid: "26706256"
 ---
 # <a name="review-app-discovery-findings-in-office-365-cloud-app-security"></a>查看 Office 365 云应用安全中的应用发现结果
   
@@ -36,9 +35,7 @@ ms.locfileid: "22524810"
 
 1. 转到[https://protection.office.com](https://protection.office.com)和 Office 365 中使用您的工作或学校帐户登录。(您将转到安全&amp;合规性中心。) 
     
-2. 安全中&amp;合规性中心中，选择**警报** \> **管理高级通知**。
-    
-    （如果尚未启用 Office 365 云应用程序安全性，并且已[打开 Office 365 云应用程序安全性](turn-on-office-365-cas.md)的全局管理员）。
+2. 安全中&amp;合规性中心中，选择**警报** \> **管理高级通知**。<br/>（如果尚未启用 Office 365 云应用程序安全性，并且已[打开 Office 365 云应用程序安全性](turn-on-office-365-cas.md)的全局管理员）。
     
 3. 选择**转到 Office 365 云应用程序安全性**。
     
@@ -70,21 +67,11 @@ ms.locfileid: "22524810"
     
 2. 使用筛选器部分可以查看按名称、 类别、 使用率级别或上次查看的日期的应用程序。
     
-3. 在结果列表中，悬停按应用程序名称以显示**查看子域**链接。 
+3. 在结果列表中，悬停按应用程序名称以显示**查看子域**链接。<br/> ![将鼠标悬停旁边显示一个链接，用于查看子域的详细信息的应用程序](media/4a212215-8a2c-46fd-9ef9-89e4064658a6.png)<br/>将显示所选应用程序的详细的信息。
     
-    ![将鼠标悬停旁边显示一个链接，用于查看子域的详细信息的应用程序](media/4a212215-8a2c-46fd-9ef9-89e4064658a6.png)
-  
-    将显示所选应用程序的详细的信息。
+4. 若要查看有关 IP 地址的详细信息，请选择**IP 地址**选项卡。<br/>![云发现显示 IP 地址的详细的信息](media/0c742bf6-da9e-4d22-8656-a27a5007d5d5.png)<br/>在结果列表中，选择单个 IP 地址以查看更多详细的信息。
     
-4. 若要查看有关 IP 地址的详细信息，请选择**IP 地址**选项卡。 
-    
-    ![云发现显示 IP 地址的详细的信息](media/0c742bf6-da9e-4d22-8656-a27a5007d5d5.png)
-  
-    在结果列表中，选择单个 IP 地址以查看更多详细的信息。
-    
-5. 若要查看有关组织内的 Office 365 用户的详细信息，请选择**用户**选项卡。 
-    
-    ![云发现-用户信息](media/2d9c2d85-01e6-4057-8020-d9a68f26bbac.png)
+5. 若要查看有关组织内的 Office 365 用户的详细信息，请选择**用户**选项卡。<br/>![云发现-用户信息](media/2d9c2d85-01e6-4057-8020-d9a68f26bbac.png)
   
 ## <a name="exclude-entities"></a>排除实体
 
@@ -98,7 +85,7 @@ ms.locfileid: "22524810"
     
 4. 指定的用户或 IP 地址，并在**注释**框中，键入有关为什么您不包括这些用户或 IP 地址的信息。 
     
-5. 选择**添加**。
+5. 选择" **添加**"。
     
 ## <a name="next-steps"></a>后续步骤
 

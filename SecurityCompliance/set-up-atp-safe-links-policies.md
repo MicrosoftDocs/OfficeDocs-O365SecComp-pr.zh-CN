@@ -5,7 +5,6 @@ author: denisebmsft
 manager: laurawi
 ms.audience: Admin
 ms.topic: article
-ms.date: 11/02/2018
 ms.service: o365-administration
 localization_priority: Normal
 search.appverid:
@@ -13,16 +12,16 @@ search.appverid:
 - MOE150
 ms.assetid: bdd5372d-775e-4442-9c1b-609627b94b5d
 description: 设置以从 Word、 Excel、 PowerPoint 和 Visio 文件中以及电子邮件中的恶意链接保护您的组织的安全链接策略。
-ms.openlocfilehash: 2fce043aaf6e5e844415bd0caaaded8d30c18291
-ms.sourcegitcommit: 147768bbe44c8c98c02fa29ae9d882cee4ec2d6b
+ms.openlocfilehash: fb2af8e29bfe2de027a2d0e88cf9bcc07299fba9
+ms.sourcegitcommit: 2cf7f5bb282c971d33e00f65d9982a3f14aec74e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "26238454"
+ms.lasthandoff: 11/27/2018
+ms.locfileid: "26706086"
 ---
 # <a name="set-up-office-365-atp-safe-links-policies"></a>设置 Office 365 ATP 安全链接策略
 
-[ATP 安全链接](atp-safe-links.md)， [Office 365 高级威胁保护](office-365-atp.md)(ATP) 的一项功能可帮助您的组织防止恶意欺诈和其他攻击中使用的链接。如果您有必要[Office 365 安全性分配权限&amp;合规性中心](permissions-in-the-security-and-compliance-center.md)，您可以设置 ATP 安全链接策略以帮助确保当人员单击 web 地址 (Url) 时，保护您的组织。可以将 ATP 安全链接策略配置为扫描电子邮件中的 Url 和 Office 文档中的 Url。
+[ATP 安全链接](atp-safe-links.md)， [Office 365 高级威胁保护](office-365-atp.md)(ATP) 的一项功能可帮助您的组织防止恶意欺诈和其他攻击中使用的链接。如果您有必要[Office 365 安全权限&amp;合规性中心](permissions-in-the-security-and-compliance-center.md)，您可以设置 ATP 安全链接策略以帮助确保当人员单击 web 地址 (Url) 时，保护您的组织。可以将 ATP 安全链接策略配置为扫描电子邮件中的 Url 和 Office 文档中的 Url。
   
 [到 ATP 不断添加了新功能](office-365-atp.md#new-features-are-continually-being-added-to-atp)。添加新功能时，您可能需要对您现有的 ATP 安全链接策略进行调整。
 
@@ -52,13 +51,11 @@ ms.locfileid: "26238454"
 
 [Office 365 高级威胁保护](office-365-atp.md)后，您将具有适用于您的组织中的每个人的默认 ATP 安全链接策略。请务必查看，，如果需要编辑默认策略。
   
-1. 转到[https://protection.office.com](https://protection.office.com)和使用工作或学校帐户登录。 
+1. 转到[https://security.microsoft.com](https://security.microsoft.com)和使用工作或学校帐户登录。 
     
 2. 在左侧导航窗格中，**威胁管理**下面，选择**策略\>****安全的链接**。
     
-3. 在**应用于整个组织的策略**部分中，选择**默认**，，然后选择**编辑**（编辑按钮图像类似铅笔）。 
-    
-    ![单击编辑来编辑您的安全链接保护的默认策略](media/d08f9615-d947-4033-813a-d310ec2c8cca.png)
+3. 在**应用于整个组织的策略**部分中，选择**默认**，，然后选择**编辑**（编辑按钮图像类似铅笔）。<br/>![单击编辑来编辑您的安全链接保护的默认策略](media/d08f9615-d947-4033-813a-d310ec2c8cca.png)
   
 4. 在**阻止以下 Url**部分中，指定您想要阻止访问从组织中的人员的一个或多个 Url。（请参阅[设置自定义阻止 Url 列表使用 ATP 安全链接](set-up-a-custom-blocked-urls-list-wtih-atp.md)）。
     
@@ -70,7 +67,7 @@ ms.locfileid: "26238454"
 
 您已审阅 （或编辑） 适用于每个人的默认 ATP 安全链接策略后下, 一步是定义将应用于特定收件人的其他策略。例如，您可以通过定义其他策略为默认策略指定例外。 
   
-1. 转到[https://protection.office.com](https://protection.office.com)和使用工作或学校帐户登录。 
+1. 转到[https://security.microsoft.com](https://security.microsoft.com)和使用工作或学校帐户登录。 
     
 2. 在左侧导航窗格中，**威胁管理**下面，选择**策略**。
     

@@ -3,7 +3,7 @@ title: 安全仪表板概述 （英文)
 ms.author: deniseb
 author: denisebmsft
 manager: laurawi
-ms.date: 09/05/2018
+ms.date: 11/27/2018
 ms.audience: ITPro
 ms.topic: overview
 ms.service: o365-administration
@@ -13,16 +13,16 @@ search.appverid:
 - MOE150
 ms.assetid: fe0b9b8f-faa9-44ff-8095-4d1b2f507b74
 description: 使用新的安全仪表板查看 Office 365 威胁保护状态，以及查看和操作安全警告。
-ms.openlocfilehash: d124ce07fbd3eba633e8c1e844ef3f83fc8fd04f
-ms.sourcegitcommit: e0c6f99d5514d8da8a70d9bd3616d1a1c0851254
+ms.openlocfilehash: d4dd20d5ce456bfca391925786a5cc02787dee54
+ms.sourcegitcommit: 2cf7f5bb282c971d33e00f65d9982a3f14aec74e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/13/2018
-ms.locfileid: "25552360"
+ms.lasthandoff: 11/27/2018
+ms.locfileid: "26706276"
 ---
 # <a name="security-dashboard-overview"></a>安全仪表板概述 （英文)
 
-安全&amp;合规性中心允许贵组织管理数据保护和合规性。开始在年 3 月 2018年安全&amp;合规性中心功能的新安全仪表板可用于查看您威胁的保护状态，以及查看和操作安全警告。 
+[安全&amp;合规性中心](go-to-the-securitycompliance-center.md)允许贵组织管理数据保护和合规性。开始在年 3 月 2018年安全&amp;合规性中心功能的新安全仪表板可用于查看您威胁的保护状态，以及查看和操作安全警告。 
   
 观看视频以大致了解，，然后阅读本文以了解详细信息。
   

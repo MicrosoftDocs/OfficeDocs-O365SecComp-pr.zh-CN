@@ -13,12 +13,12 @@ search.appverid:
 - MOE150
 ms.assetid: da5845db-c578-4a41-b2cb-5a09689a551b
 description: 作为 Office 365 全局管理员，您可以使用攻击模拟器若要运行您的组织中的实际攻击方案。这可以帮助您确定并查找易受攻击用户前真实攻击点击您的业务。
-ms.openlocfilehash: ccef127c4ce4d806ef9af04673b8c68d82ce9ec6
-ms.sourcegitcommit: 7c55721b51b2f321537a0cdad6644abf91996710
+ms.openlocfilehash: 9a7e1fd5327b4a764356df110c46ee7a9f496b53
+ms.sourcegitcommit: 2cf7f5bb282c971d33e00f65d9982a3f14aec74e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/10/2018
-ms.locfileid: "26256437"
+ms.lasthandoff: 11/27/2018
+ms.locfileid: "26706436"
 ---
 # <a name="attack-simulator-in-office-365"></a>Office 365 中的攻击模拟器
 
@@ -26,7 +26,7 @@ ms.locfileid: "26256437"
   
 ## <a name="the-attacks"></a>攻击
 
-目前，三种类型的攻击模拟有：
+三种类型的攻击模拟当前有：
   
 - [显示名称矛网络钓鱼攻击](attack-simulator.md#spearphish)
     
@@ -66,7 +66,7 @@ ms.locfileid: "26256437"
   
 可以创建定制直接在**电子邮件正文**字段本身中丰富的 HTML 编辑器，也可以使用 HTML 源代码。有两个重要字段以包含在 HTML 中： 
   
-1. 安全中&amp;合规性中心中，选择**威胁管理** \> **攻击模拟器**。
+1. 在[安全&amp;合规性中心](https://security.microsoft.com)，选择**威胁管理** \> **攻击模拟器**。
     
 2. 指定攻击的有意义的市场活动名称，或选择一个模板。 <br/>![网络钓鱼开始页](media/5e93b3cc-5981-462f-8b45-bdf85d97f1b8.jpg)
   
@@ -96,7 +96,7 @@ ms.locfileid: "26256437"
   
 ### <a name="to-simulate-a-password-spray-attack"></a>若要模拟密码喷涂攻击
 
-1. 安全中&amp;合规性中心中，选择**威胁管理** \> **攻击模拟器**。
+1. 在[安全&amp;合规性中心](https://security.microsoft.com)，选择**威胁管理** \> **攻击模拟器**。
     
 2. 指定攻击的有意义的市场活动名称。
     
@@ -112,7 +112,7 @@ ms.locfileid: "26256437"
   
 ### <a name="to-simulate-a-brute-force-password-attack"></a>模拟密码强力攻击
 
-1. 安全中&amp;合规性中心中，选择**威胁管理** \> **攻击模拟器**。
+1. 在[安全&amp;合规性中心](https://security.microsoft.com)，选择**威胁管理** \> **攻击模拟器**。
     
 2. 指定攻击的有意义的市场活动名称。
     

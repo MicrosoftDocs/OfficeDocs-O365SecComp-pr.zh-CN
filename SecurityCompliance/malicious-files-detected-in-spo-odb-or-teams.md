@@ -12,24 +12,24 @@ search.appverid:
 - MOE150
 ms.assetid: 5ed8abf1-c0e9-4e5b-a5b7-2059cea50b61
 description: 了解在哪里查看有关在 SharePoint、 OneDrive 或团队中检测到的恶意文件的信息以及如何对这些文件执行操作。
-ms.openlocfilehash: ba1dc3551e66800213a9cb988ebe9fc5e03e31f2
-ms.sourcegitcommit: 147768bbe44c8c98c02fa29ae9d882cee4ec2d6b
+ms.openlocfilehash: c22e57e34cccafa3dd30a77a5a6011f2999f708c
+ms.sourcegitcommit: 2cf7f5bb282c971d33e00f65d9982a3f14aec74e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "26238504"
+ms.lasthandoff: 11/27/2018
+ms.locfileid: "26706196"
 ---
 # <a name="view-information-about-malicious-files-detected-in-sharepoint-onedrive-or-microsoft-teams"></a>查看有关在 SharePoint、 OneDrive 或的 Microsoft 团队中检测到的恶意文件的信息
 
 [SharePoint、 OneDrive 和 Microsoft 团队的 office 365 ATP](atp-for-spo-odb-and-teams.md)从文档库和工作组网站中的恶意文件保护您的组织。检测到恶意文件时，该文件被阻止，以便没有打开、 复制、 移动或共享它，直到由组织的安全组采取进一步的操作。阅读此文，了解如何查看有关检测到的文件的信息和要采取的操作。 
 
-若要执行本文中描述的任务，您必须具有必要[Office 365 安全性分配权限&amp;合规性中心](permissions-in-the-security-and-compliance-center.md)。 
+若要执行本文中描述的任务，您必须具有必要[Office 365 安全权限&amp;合规性中心](permissions-in-the-security-and-compliance-center.md)。 
   
 ## <a name="view-reports-with-information-about-detected-files"></a>查看报告包含有关检测到的文件的信息
 
 若要查看状态和有关通过 Office 365 ATP 检测到的文件的详细的信息，您可以使用威胁保护状态报告。
   
-1. Office 365 安全性&amp;合规性中心中，选择**报告** \> **仪表板** \> **威胁保护状态**。
+1. 在[Office 365 安全性&amp;合规性中心](https://security.microsoft.com)，选择**报告** \> **仪表板** \> **威胁保护状态**。
     
 2. 在报表的右上角，选择**查看详细信息表**。
     

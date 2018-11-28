@@ -3,7 +3,6 @@ title: 威胁跟踪器 - 新增的和值得注意的威胁
 ms.author: deniseb
 author: denisebmsft
 manager: laurawi
-ms.date: 6/15/2018
 ms.audience: ITPro
 ms.topic: overview
 ms.service: o365-administration
@@ -13,16 +12,16 @@ search.appverid:
 - MOE150
 ms.assetid: a097f5ca-eac0-44a4-bbce-365f35b79ed1
 description: 了解威胁跟踪器，包括新值得注意跟踪器，以帮助组织掌控安全问题。
-ms.openlocfilehash: 1ec772d367446b20f1846a71a86d6f62a2370e6c
-ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+ms.openlocfilehash: e9dfdde563260ff7969f4749357c130ab98ce386
+ms.sourcegitcommit: 2cf7f5bb282c971d33e00f65d9982a3f14aec74e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22525299"
+ms.lasthandoff: 11/27/2018
+ms.locfileid: "26706376"
 ---
 # <a name="threat-trackers---new-and-noteworthy"></a>威胁跟踪器 - 新增的和值得注意的威胁
 
-[Office 365 威胁智能](office-365-ti.md)允许贵组织的安全工作组发现并执行网络安全威胁的操作。**开始在后期年 3 月 2018年，接下来的几周，通过 Office 365 威胁智能将包含新的威胁跟踪程序功能**，包括值得注意的跟踪器。阅读这篇文章，获取这些新功能和后续步骤的概述。 
+[Office 365 威胁智能](office-365-ti.md)允许贵组织的安全工作组发现并执行网络安全威胁的操作。后期年 3 月 2018年中和下一步的几个星期开始，Office 365 威胁智能将包含新的威胁跟踪程序功能，包括值得注意的跟踪器。阅读这篇文章，获取这些新功能和后续步骤的概述。 
   
 ## <a name="what-are-threat-trackers"></a>威胁跟踪器有哪些？
 
@@ -36,7 +35,7 @@ ms.locfileid: "22525299"
   
 跟踪器是只与[Office 365 威胁智能](office-365-ti.md)获取的许多重要功能。可用时，将新的威胁跟踪器将包括[值得注意的跟踪器](threat-trackers.md#notey)、[趋势跟踪器](threat-trackers.md#trending)、[跟踪查询](threat-trackers.md#trackedq)和[Saved 查询](threat-trackers.md#savedq)。
   
-若要查看和使用您威胁跟踪器时可供您的组织，请转到安全&amp;合规性中心 ([https://protection.office.com](https://protection.office.com))，然后选择**威胁管理** \> **威胁跟踪程序**。
+若要查看和使用您威胁跟踪器时可供您的组织，请转到安全&amp;合规性中心 ([https://security.microsoft.com](https://security.microsoft.com))，然后选择**威胁管理** \> **威胁跟踪程序**。
   
 > [!NOTE]
 > 若要使用威胁跟踪器，您必须是 Office 365 全局管理员、 安全管理员或安全读取器。请参阅[Permissions in Office 365 安全性&amp;合规性中心](permissions-in-the-security-and-compliance-center.md)。 
@@ -75,7 +74,7 @@ ms.locfileid: "22525299"
   
 对您可用威胁跟踪器后，请尝试出-它们，请记住，您可以始终为我们提供反馈 this 或其他 Office 365 安全功能通过单击右下角的[概述 Office 365 中的**反馈**按钮安全&amp;合规性中心](https://support.office.com/article/a5f2fd18-b029-4257-b5a8-ae83e7768c85)。
   
-![Office 365 安全性&amp;合规性中心](media/86c330db-8132-4150-8475-220258fe04fb.png)
+![Office 365 安全与合规中心](media/86c330db-8132-4150-8475-220258fe04fb.png)
   
 ## <a name="trackers-and-office-365-advanced-threat-protection"></a>跟踪器和 Office 365 的高级的威胁保护
 

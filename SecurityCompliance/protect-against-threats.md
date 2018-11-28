@@ -3,7 +3,6 @@ title: Office 365 中的威胁防护
 ms.author: deniseb
 author: denisebmsft
 manager: laurawi
-ms.date: 5/30/2018
 ms.audience: Admin
 ms.topic: hub-page
 ms.service: o365-administration
@@ -13,12 +12,12 @@ search.appverid:
 - MET150
 ms.assetid: b10023f6-f30f-45d3-b3ad-b71aa4aa0d58
 description: 了解 Office 365 企业版如何帮助保护您的组织针对各种威胁，包括欺骗、 恶意软件、 垃圾邮件、 网络钓鱼诈骗和未经授权的访问数据。
-ms.openlocfilehash: 18e91b3a27ff9722a285a4c84f810876e1cab462
-ms.sourcegitcommit: ba2175e394d0cb9f8ede9206aabb44b5b677fa0a
+ms.openlocfilehash: e5e14e66617af6a513979d93aa4764c8843b975f
+ms.sourcegitcommit: 2cf7f5bb282c971d33e00f65d9982a3f14aec74e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/11/2018
-ms.locfileid: "25496846"
+ms.lasthandoff: 11/27/2018
+ms.locfileid: "26706056"
 ---
 # <a name="protect-against-threats-in-office-365"></a>Office 365 中的威胁防护
 
@@ -28,11 +27,11 @@ ms.locfileid: "25496846"
 
 如果您使用的 Office 365 中的自定义域名，帮助停止从组织的发件人欺诈、 提高电子邮件安全和保护您的域的信誉。
   
-- [防止与 SPF 欺骗](https://go.microsoft.com/fwlink/?linkid=851943)
+- [防止与 SPF 欺骗]([Set up SPF in Office 365 to help prevent spoofing](set-up-spf-in-office-365-to-help-prevent-spoofing.md))
     
-- [验证使用 dkim 对出站电子邮件](https://go.microsoft.com/fwlink/?linkid=851944)
+- [验证使用 dkim 对出站电子邮件]([Use DKIM to validate outbound email sent from your custom domain in Office 365](use-dkim-to-validate-outbound-email.md))
     
-- [验证与 DMARC 电子邮件](https://go.microsoft.com/fwlink/?linkid=832951)
+- [验证与 DMARC 电子邮件]([Use DMARC to validate email in Office 365](use-dmarc-to-validate-email.md))
     
 ## <a name="anti-spam-amp-anti-malware"></a>反垃圾邮件&amp;反恶意软件
 
@@ -40,11 +39,11 @@ ms.locfileid: "25496846"
   
 - [反垃圾邮件&amp;反恶意软件保护](anti-spam-and-anti-malware-protection.md)
     
-- [打开的电子邮件记录](https://technet.microsoft.com/en-us/library/dn879651.aspx)
+- [打开的电子邮件记录]([Enable mailbox auditing in Office 365](enable-mailbox-auditing.md))
     
 - [在 Office 365 中隔离电子邮件](quarantine-email-messages.md)
     
-- [提交给 Microsoft 可疑内容](https://technet.microsoft.com/en-us/library/dn762129%28v=exchg.150%29.aspx)
+- [提交给 Microsoft 可疑内容]([Submitting malware and non-malware to Microsoft for analysis](submitting-malware-and-non-malware-to-microsoft-for-analysis.md))
     
 ## <a name="advanced-threat-protection"></a>高级威胁防护
 

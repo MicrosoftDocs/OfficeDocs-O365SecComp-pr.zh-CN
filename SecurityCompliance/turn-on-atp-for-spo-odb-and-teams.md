@@ -12,12 +12,12 @@ search.appverid:
 - MOE150
 ms.assetid: 07e76024-0c80-40dc-8c48-1dd0d0f863cb
 description: 了解如何开启 ATP for OneDrive 和团队，包括如何设置检测到的文件的通知。
-ms.openlocfilehash: e413f0b57186dc1364b63e14985ef0f54ca7e442
-ms.sourcegitcommit: 0cc6083bd8cb2f7bbf18847149c6d5239f2a6403
+ms.openlocfilehash: e9df56da5d5f1a087d4e75e0122b51933ae7b315
+ms.sourcegitcommit: 2cf7f5bb282c971d33e00f65d9982a3f14aec74e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 11/27/2018
-ms.locfileid: "26699935"
+ms.locfileid: "26706446"
 ---
 # <a name="turn-on-office-365-atp-for-sharepoint-onedrive-and-microsoft-teams"></a>打开 Office 365 ATP SharePoint、 OneDrive 和 Microsoft 团队
 
@@ -29,7 +29,7 @@ ms.locfileid: "26699935"
 
  **开始此过程，请确保审核日志记录您的 Office 365 环境已开启**。这通常是具有审核日志角色分配在 Exchange Online 的人。有关详细信息，请参阅[打开或关闭，打开 Office 365 审核日志搜索](turn-audit-log-search-on-or-off.md)。
   
-1. 以全局管理员或 security 管理员程序中，转到[https://protection.office.com](https://protection.office.com)，并使用您的工作或学校帐户登录。
+1. 以全局管理员或 security 管理员程序中，转到[https://security.microsoft.com](https://security.microsoft.com)，并使用您的工作或学校帐户登录。
     
 2. Office 365 安全性&amp;合规性中心在左侧的导航窗格中，**威胁管理**下面，选择**策略** \> **安全的附件**。 <br/>![安全中&amp;合规性中心中，选择威胁管理\>策略](media/08849c91-f043-4cd1-a55e-d440c86442f2.png)
   
@@ -55,7 +55,7 @@ ms.locfileid: "26699935"
 
 若要在 SharePoint Online、 OneDrive 业务，或 Microsoft 团队的文件已被标识为恶意时收到通知，您可以设置一条通知。
   
-1. Office 365 安全性&amp;合规性中心中，选择**警报** \> **管理通知**。
+1. 在[Office 365 安全性&amp;合规性中心](https://security.microsoft.com)，选择**警报** \> **管理通知**。
     
 2. 选择**新建通知的策略**。
     

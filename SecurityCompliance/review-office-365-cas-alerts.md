@@ -3,7 +3,6 @@ title: 查看 Office 365 云应用安全中的警报并执行相应操作
 ms.author: deniseb
 author: denisebmsft
 manager: laurawi
-ms.date: 2/26/2018
 ms.audience: ITPro
 ms.topic: article
 ms.service: o365-administration
@@ -13,12 +12,12 @@ search.appverid:
 - MOE150
 ms.assetid: 97e9c3d9-df89-458e-924b-369becee5532
 description: 使用在 Office 365 云应用程序安全性通知页上查看潜在问题并执行操作。可以关闭或解决通知，并有必要，暂停的用户帐户。
-ms.openlocfilehash: 62431adc73354e573978781f120a11746aef08d9
-ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+ms.openlocfilehash: 16d24ef7075a2db1dab86ee322b14f886c48b98b
+ms.sourcegitcommit: 2cf7f5bb282c971d33e00f65d9982a3f14aec74e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22524792"
+ms.lasthandoff: 11/27/2018
+ms.locfileid: "26706116"
 ---
 # <a name="review-and-take-action-on-alerts-in-office-365-cloud-app-security"></a>查看 Office 365 云应用安全中的警报并执行相应操作
   
@@ -33,17 +32,13 @@ ms.locfileid: "22524792"
   
 ## <a name="how-to-get-to-the-alerts-page"></a>如何获取通知页面
 
-1. 以全局管理员或 security 管理员程序中，转到[https://protection.office.com](https://protection.office.com)和使用工作或学校帐户登录。 
+1. 以全局管理员或 security 管理员程序中，转到[https://security.microsoft.com](https://security.microsoft.com)和使用工作或学校帐户登录。 
     
 2. 安全中&amp;合规性中心中，选择**警报** \> **管理高级通知**。
     
-3. 选择**转到 Office 365 云应用程序安全性**。
-    
-    ![安全中&amp;合规性中心中，选择管理高级通知转到 Office 365 云应用程序安全性](media/958632d4-03e3-4ade-8e22-d5509db6fca7.png)
+3. 选择**转到 Office 365 云应用程序安全性**。<br/>![安全中&amp;合规性中心中，选择管理高级通知转到 Office 365 云应用程序安全性](media/958632d4-03e3-4ade-8e22-d5509db6fca7.png)
   
-4. 在屏幕顶部导航栏中，选择**通知**。
-    
-    ![在通知页中，您可以看到触发的通知和执行任何操作。](media/3b53d4c9-4b13-435d-8547-8c0f9ae6b914.png)
+4. 在屏幕顶部导航栏中，选择**通知**。<br/>![在通知页中，您可以看到触发的通知和执行任何操作。](media/3b53d4c9-4b13-435d-8547-8c0f9ae6b914.png)
   
 ## <a name="review-and-handle-alerts"></a>查看并处理通知
 

@@ -13,12 +13,12 @@ search.appverid:
 - MOE150
 ms.assetid: 4250c4bc-6102-420b-9e0a-a95064837676
 description: 了解如何启用报告消息加载项的 Outlook 和 Outlook web，为各个用户或您的整个组织上。
-ms.openlocfilehash: a62e3e6250d2eccd2109a71f994713e2dd1b262e
-ms.sourcegitcommit: 6669b7aae26965145e85d9613d3091bf389f000b
+ms.openlocfilehash: f35899d3f0be9ee07cb6dae5c5fec40395948340
+ms.sourcegitcommit: 2cf7f5bb282c971d33e00f65d9982a3f14aec74e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/19/2018
-ms.locfileid: "26618918"
+ms.lasthandoff: 11/27/2018
+ms.locfileid: "26706366"
 ---
 # <a name="enable-the-report-message-add-in"></a>启用报告消息加载项
 
@@ -59,7 +59,7 @@ ms.locfileid: "26618918"
 ## <a name="get-and-enable-the-report-message-add-in-for-your-organization"></a>获取和报告消息外接程序为组织启用
 
 > [!IMPORTANT]
-> 您必须是 Office 365 全局管理员或 Exchange Online 管理员才能完成此任务。此外，Exchange 必须配置为使用 OAuth 身份验证以了解详细信息，请参阅[Exchange 要求 （集中部署的加载项）](https://docs.microsoft.com/en-us/office365/admin/manage/centralized-deployment-of-add-ins&view=o365-worldwide#exchange-requirements)。 
+> 您必须是 Office 365 全局管理员或 Exchange Online 管理员才能完成此任务。此外，Exchange 必须配置为使用 OAuth 身份验证以了解详细信息，请参阅[Exchange 要求 （集中部署的加载项）](https://docs.microsoft.com/office365/admin/manage/centralized-deployment-of-add-ins&view=o365-worldwide#exchange-requirements)。 
 
 1. 转到[服务和外接程序页](https://admin.microsoft.com/AdminPortal/Home#/Settings/ServicesAndAddIns)在新的 Microsoft 365 管理中心。<br/>![服务和加载项在新的 Microsoft 365 管理中心页](media/ServicesAddInsPageNewM365AdminCenter.png)<br/> 
     
@@ -92,7 +92,7 @@ ms.locfileid: "26618918"
   
 您可以设置规则，若要获取的电子邮件组织中的用户报告的副本。在下载并为组织启用报告消息外接程序后执行此操作。
   
-1. 在 EAC 中，选择**邮件流** \> **规则**。 
+1. 在 Exchange 管理中心中，选择**邮件流** \> **规则**。 
     
 2. 选择**+** \> **创建新规则**。 
     

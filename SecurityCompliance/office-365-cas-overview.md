@@ -3,7 +3,6 @@ title: Office 365 云应用安全概述
 ms.author: deniseb
 author: denisebmsft
 manager: laurawi
-ms.date: 2/26/2018
 ms.audience: ITPro
 ms.topic: overview
 ms.service: o365-administration
@@ -14,12 +13,12 @@ search.appverid:
 - MOE150
 ms.assetid: 81f0ee9a-9645-45ab-ba56-de9cbccab475
 description: 'Office 365 云应用程序安全性，您见解可疑的活动 Office 365 中这样可以调查情况下，可能存在问题，如果需要请执行解决安全问题的操作。 '
-ms.openlocfilehash: 84d5b412b62bf113101d6322032f3b643d87d741
-ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+ms.openlocfilehash: b146512c22cbe86ce3aef95c5916de6959341578
+ms.sourcegitcommit: 2cf7f5bb282c971d33e00f65d9982a3f14aec74e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22525130"
+ms.lasthandoff: 11/27/2018
+ms.locfileid: "26706396"
 ---
 # <a name="overview-of-office-365-cloud-app-security"></a>Office 365 云应用安全概述
   
@@ -40,13 +39,9 @@ Office 365 云应用程序安全性，您深入可疑的活动 Office 365 中这
   
 您可以获取到 Office 365 云应用程序安全性门户通过 Office 365 安全性&amp;合规性中心。下面是一个好方法执行此操作：
   
-1. 转到[https://protection.office.com](https://protection.office.com)和 Office 365 中使用您的工作或学校帐户登录。(您将转到安全&amp;合规性中心。) 
+1. 转到[https://security.microsoft.com](https://security.microsoft.com)和 Office 365 中使用您的工作或学校帐户登录。(您将转到安全&amp;合规性中心。) 
     
-2. 安全中&amp;合规性中心中，选择**警报** \> **管理高级通知**。 
-    
-    ![安全中&amp;合规性中心中，选择管理高级通知转到 Office 365 云应用程序安全性](media/958632d4-03e3-4ade-8e22-d5509db6fca7.png)
-  
-    （如果尚未启用 Office 365 云应用程序安全性，并且已[打开 Office 365 云应用程序安全性](turn-on-office-365-cas.md)的全局管理员）。
+2. 安全中&amp;合规性中心中，选择**警报** \> **管理高级通知**。 <br/>![安全中&amp;合规性中心中，选择管理高级通知转到 Office 365 云应用程序安全性](media/958632d4-03e3-4ade-8e22-d5509db6fca7.png)<br/>（如果尚未启用 Office 365 云应用程序安全性，并且已[打开 Office 365 云应用程序安全性](turn-on-office-365-cas.md)的全局管理员）。
     
 3. 选择**转到 Office 365 云应用程序安全性**。 
     
@@ -124,6 +119,6 @@ Office 365 云应用程序安全性，您深入可疑的活动 Office 365 中这
 
 - 获取[Office 365 云应用程序安全用例和使用指南](https://aka.ms/O365CASGuide)
     
-- [为 Office 365 云应用安全做好准备](get-ready-for-office-365-cas.md)
+- [准备使用 Office 365 云应用安全](get-ready-for-office-365-cas.md)
     
 

@@ -13,12 +13,12 @@ search.appverid:
 - MOE150
 ms.assetid: 703c41df-b3e2-4e7e-9eeb-1a0b8d60fb56
 description: 了解如何可以从仪表板访问与安全中建议的操作的真知灼见&amp;合规性中心。
-ms.openlocfilehash: 9245d26a98bac34836772cb1d895c638ed5e5564
-ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+ms.openlocfilehash: 933bf6e86bc1ddce9259d071b69654f68e4dd370
+ms.sourcegitcommit: 2cf7f5bb282c971d33e00f65d9982a3f14aec74e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22525792"
+ms.lasthandoff: 11/27/2018
+ms.locfileid: "26706146"
 ---
 # <a name="walkthrough---from-a-dashboard-to-an-insight"></a>演练 - 从仪表板到见解
 
@@ -30,7 +30,7 @@ ms.locfileid: "22525792"
 
 让我们该工作流中从仪表板向洞察和操作的报告。（这是一个简短[欺骗智能](learn-about-spoof-intelligence.md)示例）。 
   
-1. 我们首先中安全性的安全仪表板&amp;合规性中心。(请转到**威胁管理** \> **仪表板**。)
+1. 我们首先在安全仪表板[安全&amp;合规性中心](https://security.microsoft.com)。(请转到**威胁管理** \> **仪表板**。)
     
     ![安全中&amp;合规性中心中，选择威胁管理\>仪表板](media/05a38660-eb13-4960-a266-11809c453d95.png)
   

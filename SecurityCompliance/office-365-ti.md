@@ -13,12 +13,12 @@ search.appverid:
 - MOE150
 ms.assetid: 32405da5-bee1-4a4b-82e5-8399df94c512
 description: 了解 Office 365 威胁智能可以怎样帮助您研究针对您的组织的威胁、 响应恶意软件和网络钓鱼，代表您检测到 Office 365 其他攻击和搜索威胁指标。威胁智能内置于 Office 365 E5 为安全性和遵从性的系统产品。
-ms.openlocfilehash: bb6c254f90ba2d6ef5f7432b6fe1b44c80bcbfcf
-ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+ms.openlocfilehash: fb273b7d8f71cecb04722dfd6ea4b69b103123f5
+ms.sourcegitcommit: 2cf7f5bb282c971d33e00f65d9982a3f14aec74e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22525804"
+ms.lasthandoff: 11/27/2018
+ms.locfileid: "26705846"
 ---
 # <a name="office-365-threat-intelligence"></a>Office 365 威胁智能
 
@@ -31,9 +31,9 @@ Office 365 威胁智能帮助安全分析师和管理员保护其组织的 Offic
 3. 提供见解和知识为了帮助防止针对其组织攻击
     
 > [!IMPORTANT]
-> Office 365 威胁智能是在 Office 365 企业 E5 中可用。如果您的组织使用的另一个 Office 365 企业版订阅，可以作为购买 Office 365 威胁智能。(作为全局管理员，在 Office 365 管理中心中，选择**帐单** \> **添加订阅**。)有关详细信息，请参阅[Office 365 平台服务说明： Office 365 安全性&amp;合规性中心](https://technet.microsoft.com/en-us/library/dn933793.aspx)和[购买或编辑企业的 Office 365 的加载项](https://support.office.com/article/4e7b57d6-b93b-457d-aecd-0ea58bff07a6)。 
+> Office 365 威胁智能是在 Office 365 企业 E5 中可用。如果您的组织使用的另一个 Office 365 企业版订阅，可以作为购买 Office 365 威胁智能。(作为全局管理员，在 Office 365 管理中心中，选择**帐单** \> **添加订阅**。)有关详细信息，请参阅[Office 365 平台服务说明： Office 365 安全性&amp;合规性中心](https://docs.microsoft.com/office365/servicedescriptions/office-365-platform-service-description/office-365-securitycompliance-center)和[购买或编辑企业的 Office 365 的加载项](https://support.office.com/article/4e7b57d6-b93b-457d-aecd-0ea58bff07a6)。 
   
-## <a name="what-do-you-want-to-do"></a>要执行什么操作？
+## <a name="what-do-you-want-to-do"></a>您要做什么？
 
 在以下文章中，您将了解有关 Office 365 威胁智能服务产品，包括如何为您的优势使用保留用户安全的详细信息。
   

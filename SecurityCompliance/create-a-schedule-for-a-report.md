@@ -13,12 +13,12 @@ search.appverid:
 - MOE150
 ms.assetid: a74f637b-3710-4c41-b70f-b5a812929a81
 description: 了解如何设置安全中报表计划&amp;合规性中心。
-ms.openlocfilehash: 411379d0be2d0af3843c3ccfec87ea6184fdb0c8
-ms.sourcegitcommit: e0c6f99d5514d8da8a70d9bd3616d1a1c0851254
+ms.openlocfilehash: 4251296c75629062ca5cba2e6c2e1cb3972b3f8a
+ms.sourcegitcommit: 2cf7f5bb282c971d33e00f65d9982a3f14aec74e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/13/2018
-ms.locfileid: "25552350"
+ms.lasthandoff: 11/27/2018
+ms.locfileid: "26706016"
 ---
 # <a name="create-a-schedule-for-a-report-in-the-security-amp-compliance-center"></a>在安全中创建报表的计划&amp;合规性中心
 
@@ -29,7 +29,7 @@ ms.locfileid: "25552350"
 > [!IMPORTANT]
 > 请确保您具有执行此任务所需的权限。一般情况下，Office 365 全局管理员、 安全管理员和安全读者可以访问安全中的报告&amp;合规性中心。若要了解有关权限的详细信息，请参阅[Permissions in Office 365 安全性&amp;合规性中心](permissions-in-the-security-and-compliance-center.md)。
   
-1. 安全中&amp;合规性中心中，转到**报告** \> **仪表板**。
+1. 在[安全&amp;合规性中心](https://security.microsoft.com)，请转到**报告** \> **仪表板**。
     
 2. 选择报告。此示例中，我们将选择威胁保护状态报告。
     
