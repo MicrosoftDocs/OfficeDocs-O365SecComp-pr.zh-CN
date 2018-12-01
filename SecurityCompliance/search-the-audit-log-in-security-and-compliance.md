@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.assetid: 0d4d0f35-390b-4518-800e-0c7ec95e946c
 description: '使用 Office 365 安全性和合规性中心搜索统一的审核日志，以查看 Office 365 组织中的用户和管理员的活动。 '
-ms.openlocfilehash: 39b3d6438d4680fe7a50f831bbd2d5667c4acffe
-ms.sourcegitcommit: a138cf89095ab0d2bd07caf82b3d48149002c1fa
+ms.openlocfilehash: 95516cd88677955137e51401113844375cb1e082
+ms.sourcegitcommit: c34f1a0d560117153fc9a7b8da8994bc6fc53791
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/21/2018
-ms.locfileid: "26626148"
+ms.lasthandoff: 11/30/2018
+ms.locfileid: "27118138"
 ---
 # <a name="search-the-audit-log-in-the-office-365-security--compliance-center"></a>在 Office 365 安全性和合规性中心搜索审核日志
 
@@ -169,7 +169,7 @@ ms.locfileid: "26626148"
   
     c.**用户**在此框，然后选择一个或多个用户通过单击以显示搜索结果。通过在此框中选择的用户执行所选活动审核日志条目的结果列表中显示。将此框保留为空返回组织中的所有用户 （和服务帐户） 的条目。 
     
-    d.**文件或文件夹**键入一些或全部文件或文件夹名称到文件夹包含指定的关键字的文件相关的活动搜索。您还可以指定文件或文件夹的 URL。如果您使用的 URL，确保类型的完整的 URL 路径或如果您只需键入 URL 的任何部分不包括任何特殊字符或空格。 
+    d.**文件、 文件夹或网站**键入一些或全部文件或文件夹名称搜索与包含指定的关键字的文件夹的文件相关的活动。您还可以指定文件或文件夹的 URL。如果您使用的 URL，确保类型的完整的 URL 路径或如果您只需键入 URL 的任何部分不包括任何特殊字符或空格。 
     
     将此框保留为空返回组织中的所有文件和文件夹的条目。
     

@@ -11,12 +11,12 @@ localization_priority: Normal
 search.appverid: MET150
 ms.assetid: 8d274fe3-db51-4107-ba64-865e7155b355
 description: 指导您完成推荐配置租户范围会影响您的 Office 365 环境的安全性的设置。您的安全需求可能需要更多或更少的安全。使用这些建议作为起点。
-ms.openlocfilehash: 5c989b5a8abace686df50b6847a0a182393927d5
-ms.sourcegitcommit: a36d2692396786f49c8765c65145e5093578e9a1
+ms.openlocfilehash: af34d4b70c5cc1122dab840f9b4af8e2fe3c3a30
+ms.sourcegitcommit: c34f1a0d560117153fc9a7b8da8994bc6fc53791
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/11/2018
-ms.locfileid: "25498098"
+ms.lasthandoff: 11/30/2018
+ms.locfileid: "27118108"
 ---
 # <a name="configure-your-office-365-tenant-for-increased-security"></a>配置 Office 365 租户以提高安全性
 
@@ -37,7 +37,7 @@ Office 365 安全性&amp;合规性中心包含保护您的环境的功能。它�
 |**ATP 安全附件** <br/> |否  <br/> | 在主页上的安全附件，通过选中此框保护 SharePoint、 OneDrive 和 Microsoft 团队中的文件：  <br/>  • 打开 ATP SharePoint、 OneDrive 和 Microsoft 团队  <br/> <br> 使用这些设置添加新的安全的附件策略：  <br/>  • Block-阻止当前和将来的电子邮件和附件与检测到恶意软件 （选择此选项）  <br/>  • 启用重定向 — （选中此复选框和输入的电子邮件地址，例如管理员或隔离帐户）  <br/>  • 应用以上所选内容，如果恶意软件扫描的附件超时或错误发生 （选中此复选框）  <br/>  • 应用于 — 是 （选择您的域） 的收件人域  <br/>  <br>详细信息：[设置 Office 365 ATP 附件安全策略](set-up-atp-safe-attachments-policies.md) <br/> |
 |**ATP 安全链接** <br/> |是  <br/> | 将此设置添加到整个组织的默认策略：  <br/> • 使用中的安全链接： Office 365 ProPlus、 适用于 iOS 的 Office 和 Android （选择此选项）。  <br/> <br>对特定收件人的建议的策略：  <br/>  将重写 • Url，并将其签针对一组已知的恶意链接，当用户单击的链接 （选择此选项）。  <br/>  • 要扫描的可下载内容的使用安全附件 （选中此复选框）。  <br/>  • 应用于 — 是 （选择您的域） 的收件人域。  <br/> <br> 详细信息： [Office 365 ATP 安全链接](atp-safe-links.md)。  <br/> |
 |**反垃圾邮件 （邮件筛选）** <br/> |是  <br/> | 要监视的内容：  <br/>  • 太多垃圾邮件 — 选择自定义设置和编辑默认垃圾邮件筛选器策略。  <br/>  • 欺骗智能 — 查看欺骗您的域的发件人。阻止或允许这些发件人。<br/>  <br>详细信息： [Office 365 电子邮件防垃圾邮件保护](anti-spam-protection.md)。  <br/> |
-|**DKIM （域密钥标识邮件）** <br/> |是  <br/> |DKIM 是身份验证过程，可帮助保护发件人和收件人从伪造 （带欺骗性） 和网络钓鱼电子邮件。您的租户包括您的域的默认签名。如果将自定义域添加到您的租户，请创建其他 DKIM 签名。<br/> <br>详细信息：[使用 DKIM 验证从您在 Office 365 中的自定义域发送出站电子邮件](https://docs.microsoft.com/office365/SecurityCompliance/use-dkim-to-validate-outbound-email) <br/> |
+|**DKIM （域密钥标识邮件）** <br/> |是  <br/> |DKIM 是身份验证过程，可帮助保护发件人和收件人从伪造 （带欺骗性） 和网络钓鱼电子邮件。您的租户包括您的域的默认签名。如果将自定义域添加到您的租户，请创建其他 DKIM 签名。<br/> <br>使用本文中的说明配置一个新的 DKIM 签名，包括 CNAME、 SPF 和 DMARC 记录：[使用 DKIM 验证从您在 Office 365 中的自定义域发送出站电子邮件](https://docs.microsoft.com/office365/SecurityCompliance/use-dkim-to-validate-outbound-email)。  <br/> |
    
 ## <a name="view-dashboards-and-reports-in-the-security-amp-compliance-center"></a>安全中查看仪表板和报告&amp;合规性中心
 
