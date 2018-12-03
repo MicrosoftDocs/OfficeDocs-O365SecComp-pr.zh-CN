@@ -265,7 +265,8 @@
 ## [SIEM 服务器集成](siem-server-integration.md)
 
 # 合规性解决方案
-## [使用合规性管理器来帮助满足使用 Microsoft 云服务时的数据保护和法规要求](meet-data-protection-and-regulatory-reqs-using-microsoft-cloud.md)
+## [Microsoft 服务信任门户入门](get-started-with-service-trust-portal.md)
+## [使用合规性管理器有助于在使用 Microsoft 云服务时符合数据保护和法规要求](meet-data-protection-and-regulatory-reqs-using-microsoft-cloud.md)
 ## [使用 DSR 案例工具管理 GDPR 数据主题请求](manage-gdpr-data-subject-requests-with-the-dsr-case-tool.md)
 ## [符合 GDPR 的 Office 365 信息保护](office-365-information-protection-for-gdpr.md)
 ### [概述：符合 GDPR 的 Office 365 保护](office-365-info-protection-for-gdpr-overview.md)
