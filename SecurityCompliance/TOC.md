@@ -233,6 +233,7 @@
 ## [启用或禁用审核日志搜索](turn-audit-log-search-on-or-off.md)
 ## [启用邮箱审核](enable-mailbox-auditing.md)
 ## [审核日志中的详细属性](detailed-properties-in-the-office-365-audit-log.md)
+## [使用审核日志对常见方案进行故障排除](auditing-troubleshooting-scenarios.md)
 ## [在审核日志中使用共享审核](use-sharing-auditing.md)
 ## [在审核日志中搜索电子数据展示活动](search-for-ediscovery-activities-in-the-audit-log.md)
 # [监视安全与合规]()
