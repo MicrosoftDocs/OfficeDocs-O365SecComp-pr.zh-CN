@@ -3,7 +3,7 @@ title: 零时差自动清除 - 防范垃圾邮件和恶意软件
 ms.author: krowley
 author: kccross
 manager: laurawi
-ms.date: 10/23/2018
+ms.date: 12/05/2018
 ms.audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -15,18 +15,18 @@ search.appverid:
 - MET150
 ms.assetid: 96deb75f-64e8-4c10-b570-84c99c674e15
 description: 零时差自动清除 (ZAP) 是一个检测到的已发送到用户的收件箱，垃圾邮件或恶意软件的邮件的电子邮件保护功能，然后呈现恶意内容权衡。ZAP 原理这取决于检测到的恶意内容类型。
-ms.openlocfilehash: ac181a7c57b4b16a952ff9c046edbff1380828d1
-ms.sourcegitcommit: 791d23e1c2dea622b6ef77a6e2bde32e1d31a41b
+ms.openlocfilehash: 1cf14051e91801a74a0d739c69900bb3f825b318
+ms.sourcegitcommit: 204fb0269b5c10b63941055824e863d77e3e9b02
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/06/2018
-ms.locfileid: "25999968"
+ms.lasthandoff: 12/06/2018
+ms.locfileid: "27180842"
 ---
 # <a name="zero-hour-auto-purge---protection-against-spam-and-malware"></a>零时差自动清除 - 防范垃圾邮件和恶意软件
 
 ## <a name="overview"></a>概述
 
-零时差自动清除 (ZAP) 是一个检测到的已发送到用户的收件箱，垃圾邮件或恶意软件的邮件的电子邮件保护功能，然后呈现恶意内容权衡。ZAP 原理这取决于检测到的恶意内容类型。
+零时差自动清除 (ZAP) 是一个检测到的已发送到用户的收件箱，与网络钓鱼诈骗、 垃圾邮件或恶意软件的邮件的电子邮件保护功能，然后呈现恶意内容权衡。ZAP 原理这取决于检测到; 恶意内容类型由于邮件内容、 Url 或附件，可以 zapped 邮件。
   
 默认值是包含任何 Office 365 订阅包含 Exchange Online 邮箱的 Exchange Online Protection 提供 ZAP。
 
@@ -39,7 +39,11 @@ ZAP 已打开默认情况下，但必须满足下列条件：
 ## <a name="how-does-zap-work"></a>ZAP 如何工作？
 
 Office 365 更新中的反垃圾邮件引擎和恶意软件签名实时每天。但是，用户可能仍获取恶意邮件传递到各种起见，如果内容 weaponized 传递给用户后包括其收件箱。将清除此通过不断监视更新到 Office 365 垃圾邮件和恶意软件签名的地址。ZAP 可以查找并删除以前发送的邮件已被用户的收件箱。 
+
 - 标识为垃圾邮件的邮件，ZAP 将未读的邮件移动到用户的垃圾邮件文件夹。 
+
+- 标识为垃圾邮件的邮件，ZAP 将邮件移动到用户的垃圾邮件文件夹，而不管是否已读取电子邮件。
+
 - 对于新检测到恶意软件、 ZAP 中删除附件的电子邮件，而不管是否已读取电子邮件中。 
   
 ZAP 操作是无缝的邮箱用户;他们不通知如果移动电子邮件。
@@ -49,8 +53,11 @@ ZAP 操作是无缝的邮箱用户;他们不通知如果移动电子邮件。
 ## <a name="to-review-or-set-up-a-spam-filter-policy"></a>若要查看或设置的垃圾邮件筛选器策略
   
 1. 转到[https://protection.office.com](https://protection.office.com)和 Office 365 中使用您的工作或学校帐户登录。
+
 2. 在**威胁管理**下选择**反垃圾邮件**。
+
 3. 查看标准的设置。 
+
 4. 如果您想要自定义设置，选择**自定义**选项卡，并打开**自定义设置**。编辑您的设置，如果您希望，选择 **+ 创建策略**添加新策略。 
     
 ## <a name="to-see-if-zap-moved-your-message"></a>若要查看 ZAP 是否移动消息

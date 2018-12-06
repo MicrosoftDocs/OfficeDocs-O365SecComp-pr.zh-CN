@@ -3,7 +3,7 @@ title: 启用或禁用 Office 365 中的安全提示
 ms.author: krowley
 author: kccross
 manager: laurawi
-ms.date: 10/6/2017
+ms.date: 12/05/2018
 ms.audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -12,12 +12,12 @@ search.appverid:
 - MET150
 ms.assetid: f09668bd-fe1a-4c01-89e3-e88c370e66c7
 description: 向 Office 365 和 EOP 管理员介绍如何启用和禁用电子邮件中的安全提示。
-ms.openlocfilehash: 3a8257f9d34ec5def54e2b9c9e919172366d023f
-ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+ms.openlocfilehash: 8e5d8bf1d2f831b5d74ca3accd8b434519bfeaab
+ms.sourcegitcommit: 204fb0269b5c10b63941055824e863d77e3e9b02
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22525506"
+ms.lasthandoff: 12/06/2018
+ms.locfileid: "27180852"
 ---
 # <a name="enable-or-disable-safety-tips-in-office-365"></a>启用或禁用 Office 365 中的安全提示
 
@@ -36,9 +36,9 @@ Office 365 默认情况下，为您的组织中启用安全提示，我们建议
 ## <a name="to-enable-or-disable-safety-tips-by-using-the-office-365-security-amp-compliance-center"></a>启用或禁用使用 Office 365 安全性安全提示&amp;合规性中心
 <a name="SandCCsafetytip"> </a>
 
-1. 转到[https://protection.office.com](https://protection.office.com)。
+1. 转到 [https://protection.office.com](https://protection.office.com)。
     
-2. 使用您的工作或学校帐户登录 Office 365。
+2. 使用工作或学校帐户登录 Office 365。
     
 3. 选择**威胁管理** \> **策略**。 
     
@@ -60,7 +60,7 @@ Office 365 默认情况下，为您的组织中启用安全提示，我们建议
     
 9. 若要启用安全提示，在**安全提示**下的选中**上**复选框。若要禁用安全提示，请清除**上**复选框。 
     
-10. 选择**保存**。
+10. 选择" **保存**"。
     
 ## <a name="to-enable-or-disable-safety-tips-by-using-powershell"></a>启用或禁用使用 PowerShell 安全提示
 <a name="pshellsafetytip"> </a>
@@ -75,7 +75,7 @@ Office 365 默认情况下，为您的组织中启用安全提示，我们建议
   Set-HostedContentFilterPolicy -Identity "policy name " -InlineSafetyTipsEnabled <$true|$false>
   ```
 
-    其中：
+其中：
     
   -  *策略名称*是想要修改，例如**默认**策略的名称。
     
@@ -89,9 +89,9 @@ Office 365 默认情况下，为您的组织中启用安全提示，我们建议
   PS C:\> Set-HostedContentFilterPolicy -Identity "default" -InlineSafetyTipsEnabled $false
   ```
 
-    有关此 cmdlet 的详细信息，请参阅[Set-hostedcontentfilterpolicy](https://technet.microsoft.com/library/jj200781.aspx)。
+有关此 cmdlet 的详细信息，请参阅[Set-hostedcontentfilterpolicy](https://technet.microsoft.com/library/jj200781.aspx)。
     
-## <a name="still-need-help"></a>仍需要帮助？
+## <a name="still-need-help"></a>是否仍需要帮助？
 <a name="pshellsafetytip"> </a>
 
 如果您禁用安全提示，但仍在您的电子邮件中看到它们，检查以下事项：
