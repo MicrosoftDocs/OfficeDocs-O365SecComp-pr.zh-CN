@@ -3,7 +3,7 @@ title: Office 365 中的防欺骗保护
 ms.author: krowley
 author: kccross
 manager: laurawi
-ms.date: 10/11/2018
+ms.date: 12/06/2018
 ms.audience: ITPro
 ms.topic: article
 ms.service: o365-administration
@@ -12,12 +12,12 @@ search.appverid:
 - MET150
 ms.assetid: d24bb387-c65d-486e-93e7-06a4f1a436c0
 description: 本文介绍如何 Office 365 缓解了对网络钓鱼攻击使用伪造发件人域，即，造假的域。这是通过实现通过分析邮件和阻止的那些类型的值可以是经过 neithe 身份验证通过使用标准电子邮件身份验证方法，也其他发件人信誉方法。实现此更改是为了减少向公开 Office 365 中的组织的网络钓鱼攻击的数。
-ms.openlocfilehash: 231f66b094a98363375a68fbddc8b71077b7baa4
-ms.sourcegitcommit: a36d2692396786f49c8765c65145e5093578e9a1
+ms.openlocfilehash: 95f4995b6447870700bc483f205ca3ff831045f5
+ms.sourcegitcommit: 8c5a88433cff23c59b436260808cf3d91b06fdef
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/11/2018
-ms.locfileid: "25498108"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "27194713"
 ---
 # <a name="anti-spoofing-protection-in-office-365"></a>Office 365 中的防欺骗保护
 
@@ -302,17 +302,17 @@ Set-AntiphishPolicy -Identity $name <fill in rest of parameters>
   
 ![反钓鱼默认策略的详细信息](media/30c21ceb-df52-4c93-aa65-f44a55dc1009.jpg)
   
-更高版本上中 2018，设置您通过 PowerShell 自定义的默认保护：
+设置您通过 PowerShell 自定义的默认保护：
   
 ```
-$defaultAntiphishPolicy = Get-AntiphishingPolicy -IsDefault $true
+$defaultAntiphishPolicy = Get-AntiphishPolicy | ? {$_.IsDefault -eq $true}
 Set-AntiphishPolicy -Identity $defaultAntiphishPolicy.Name -EnableAntispoofEnforcement <$true|$false>
 ```
 
 您只应禁用反欺骗保护，如果您有另一个邮件服务器或 Office 365 之前的服务器 （请参阅合法方案禁用反欺骗的详细信息）。 
   
 ```
-$defaultAntiphishPolicy = Get-AntiphishingPolicy -IsDefault $true
+$defaultAntiphishPolicy = Get-AntiphishiPolicy | ? {$_.IsDefault $true}
 Set-AntiphishPolicy -Identity $defaultAntiphishPolicy.Name -EnableAntispoofEnforcement $false 
 
 ```
@@ -412,7 +412,7 @@ Set-PhishFilterPolicy -Identity Default -SpoofAllowBlockList $UpdateSpoofedSende
   
 一般情况下，CAT （类别） 属性中的 X Forefront 反垃圾邮件报表页眉中标识应用于邮件的策略。 
   
-|**Priority**|**策略**|**类别**|**其中托管？**|**应用于**|
+|**优先级**|**策略**|**类别**|**其中托管？**|**应用于**|
 |:-----|:-----|:-----|:-----|:-----|
 |1   <br/> |恶意软件  <br/> |MALW  <br/> |[恶意软件策略](https://technet.microsoft.com/en-us/library/jj200745%28v=exchg.150%29.aspx) <br/> |所有组织  <br/> |
 |2   <br/> |网络钓鱼  <br/> |PHSH  <br/> |[承载的内容筛选器策略](https://technet.microsoft.com/library/jj200684%28v=exchg.150%29.aspx) <br/> |所有组织  <br/> |
@@ -425,7 +425,7 @@ Set-PhishFilterPolicy -Identity Default -SpoofAllowBlockList $UpdateSpoofedSende
    
 如果您有多个不同的防钓鱼策略，将应用的最高优先级的一个。例如，假设您有两个策略：
   
-|**策略**|**Priority**|**用户/域模拟**|**反欺骗**|
+|**策略**|**优先级**|**用户/域模拟**|**反欺骗**|
 |:-----|:-----|:-----|:-----|
 |A  <br/> |1   <br/> |On  <br/> |Off  <br/> |
 |B  <br/> |2   <br/> |关  <br/> |位置  <br/> |
