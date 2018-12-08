@@ -16,13 +16,13 @@ search.appverid:
 - MED150
 - MET150
 ms.assetid: ed48d448-3714-4c42-85f5-10f75f6a4278
-description: '将搜索结果导出从 Office 365 安全性内容搜索&amp;合规性中心到本地计算机。Emaill 电子邮件结果导出为 PST 文件。内容来自 SharePoint 和 OneDrive for Business 网站导出为本机 Office 文档。 '
-ms.openlocfilehash: 35fb0aa8a037fc77020269d1b42d738dd801ea0a
-ms.sourcegitcommit: da4aa7335b577148ecd61e09bbb11039b817b287
+description: 'Office 365 安全性和合规性中心中的内容搜索搜索结果导出到本地计算机中。电子邮件结果导出为 PST 文件。内容来自 SharePoint 和 OneDrive for Business 网站导出为本机 Office 文档。 '
+ms.openlocfilehash: f4ecdb59b20138e8b159e6056cac791837a84387
+ms.sourcegitcommit: 9f08af5502070a42de22b6d83e3a08c67cc0c619
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/15/2018
-ms.locfileid: "26539114"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "27201576"
 ---
 # <a name="export-content-search-results-from-the-office-365-security--compliance-center"></a>从 Office 365 安全性和合规性中心导出内容的搜索结果
 
@@ -32,7 +32,7 @@ ms.locfileid: "26539114"
   
 导出内容的搜索结果包括准备结果，然后将其下载到本地计算机。
   
-## <a name="before-you-begin"></a>开始之前
+## <a name="before-you-begin"></a>准备工作
 
 - 若要导出搜索结果，您必须在 Office 365 安全性的导出管理角色分配&amp;合规性中心。此角色分配给内置电子数据展示管理员角色组。它不是默认情况下分配给组织管理角色组。有关详细信息，请参阅[分配 Office 365 安全性的电子数据展示权限&amp;合规性中心](assign-ediscovery-permissions.md)。
     
@@ -330,3 +330,5 @@ ms.locfileid: "26539114"
 - 所有搜索结果，并具有同名内容的搜索文件夹中包含导出报告。已导出的电子邮件消息位于名为**Exchange**文件夹中。文档位于名为**SharePoint**文件夹中。 
     
 - 当文档导出到本地计算机，将保持上 SharePoint 和 OneDrive for Business 站点的文档的文件系统元数据。意味着文档属性，如创建和上次修改日期，导出文档时不会更改。
+
+- 如果搜索结果中包括的列表项从 SharePoint 搜索查询相匹配，将除了与搜索查询匹配的项目导出列表中的所有行。这包括任何附件列表中。原因是提供搜索结果中返回的列表项的上下文。另外还需注意的其他列表项和附件可能导致的导出不同于搜索结果的原始估计值的项计数。
