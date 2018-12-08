@@ -3,7 +3,7 @@ title: 保留策略概述
 ms.author: stephow
 author: stephow-MSFT
 manager: laurawi
-ms.date: 6/29/2018
+ms.date: 11/16/2018
 ms.audience: Admin
 ms.topic: overview
 ms.service: o365-administration
@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.assetid: 5e377752-700d-4870-9b6d-12bfc12d2423
 description: 借助保留策略，可主动决定是保留内容还是删除内容，亦或是先保留再删除内容；可将一个策略应用于整个组织，或只应用于特定位置或用户；并能将策略应用于所有内容，或只应用于满足特定条件的内容
-ms.openlocfilehash: 5b02d57931a47ca86f4da884463cfc0e52476d3c
-ms.sourcegitcommit: 397a5fe594e4cf4bb64c0c6f233d310ef3cbd922
+ms.openlocfilehash: 57f782046fcac2bd28830a0204e0b663d69de842
+ms.sourcegitcommit: 8c5a88433cff23c59b436260808cf3d91b06fdef
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "25540398"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "27194703"
 ---
 # <a name="overview-of-retention-policies"></a>保留策略概述
 
@@ -110,7 +110,7 @@ Office 365 中的保留策略可有助于实现所有这些目标。管理内容
     
 ## <a name="how-a-retention-policy-works-with-document-versions-in-a-site"></a>保留策略如何处理网站中的文档版本
 
-版本控制是 SharePoint Online 和 OneDrive for Business 中所有文档库的一项功能。默认情况下，版本控制至少保留 100 个主要版本，但可以提高此限制。有关详细信息，请参阅[为列表或库启用和配置版本控制](https://support.office.com/article/1555d642-23ee-446a-990a-bcab618c7a37)。
+版本控制是 SharePoint Online 和 OneDrive for Business 中所有文档库的一项功能。默认情况下，版本控制至少保留 500 个主要版本，但可以提高此限制。有关详细信息，请参阅[为列表或库启用和配置版本控制](https://support.office.com/article/1555d642-23ee-446a-990a-bcab618c7a37)。
   
 保留策略保留 SharePoint 网站或 OneDrive 帐户中文档的所有版本。每当用户编辑或删除受保留策略约束的文档时，一版文档就会被复制到演示文稿保留库中。演示文稿保留库中的每一版文档都是有自己保留期的独立项：
   
@@ -197,17 +197,13 @@ Office 365 中的保留策略可有助于实现所有这些目标。管理内容
 - 策略可包含任意多个邮箱或网站。
     
 - 对于 Exchange，在保留策略应用后新建的任何邮箱都会自动继承策略。
-    
-不过，每个租户的组织范围策略数和位置整体策略数总共不得超过 10 个（请参阅下一部分）。
   
 ### <a name="a-policy-that-applies-to-entire-locations"></a>应用于位置整体的策略
 
 选择位置时，可以轻松添加或排除位置整体（如 Exchange 电子邮件或 OneDrive 帐户）。为此，只需将相应位置的“状态”**** 切换为“开”或“关”即可。 
   
 与组织范围策略一样，如果策略应用于任意组合的位置整体，策略可包含任意多个邮箱或网站。例如，如果策略包含所有 Exchange 电子邮件和所有 SharePoint 网站，那么全部网站和邮箱都会包含在内，无论有多少个。对于 Exchange，在保留策略应用后新建的任何邮箱都会自动继承策略。
-  
-不过，每个租户的组织范围策略数和位置整体策略数总共不得超过 10 个。
-  
+ 
 ![“选择位置”页](media/6ac0c2d6-1abf-4690-b3f6-9ca506887ba3.png)
   
 ### <a name="a-policy-with-specific-inclusions-or-exclusions"></a>包含或排除特定位置、用户或组的策略
