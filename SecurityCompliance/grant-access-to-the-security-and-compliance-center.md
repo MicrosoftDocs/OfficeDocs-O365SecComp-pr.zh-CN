@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: 2cfce2c8-20c5-47f9-afc4-24b059c1bd76
 description: 用户需要为其分配权限 Office 365 安全性&amp;合规性中心之前可以管理其安全性或合规性功能的任何。
-ms.openlocfilehash: 976c4e21351e352672f3075d0f713e63a634ce42
-ms.sourcegitcommit: da4aa7335b577148ecd61e09bbb11039b817b287
+ms.openlocfilehash: 5055c64d914e15a6570c339ade48bb8f7e802ea7
+ms.sourcegitcommit: a56fa2e184a2662fd8a7881ccea0891e9a26d497
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/15/2018
-ms.locfileid: "26539104"
+ms.lasthandoff: 12/11/2018
+ms.locfileid: "27221063"
 ---
 # <a name="give-users-access-to-the-office-365-security-amp-compliance-center"></a>授予用户访问 Office 365 安全性&amp;合规性中心
 
@@ -53,7 +53,7 @@ ms.locfileid: "26539104"
     
 7. 单击**保存**以保存对角色组的更改。 
     
-### <a name="how-do-you-know-this-worked"></a>如何知道操作成功？
+### <a name="how-do-you-know-this-worked"></a>如何判断是否生效？
 
 1. 安全中&amp;合规性中心中，转到**权限**。
     
@@ -74,13 +74,13 @@ ms.locfileid: "26539104"
 
  **参数**
   
--  _-Identity_ 是要向其中添加成员的角色组。 
+- _-Identity_ 是要向其中添加成员的角色组。 
     
-- - _成员_是要添加到角色组的邮箱、 通用安全组 (USG) 或计算机。可以指定每次只有一个成员。 
+- _成员_是要添加到角色组的邮箱、 通用安全组 (USG) 或计算机。可以指定每次只有一个成员。 
     
 有关语法和参数的详细信息，请参阅[Add-rolegroupmember](https://go.microsoft.com/fwlink/p/?LinkId=510859)。
   
-### <a name="how-do-you-know-this-worked"></a>如何知道操作成功？
+### <a name="how-do-you-know-this-worked"></a>如何判断是否生效？
 
 若要验证您是否已提供的用户访问到安全&amp;合规性中心使用**Get-rolegroupmember** cmdlet 可以查看组织管理角色组中，成员下面的示例中所示。 
   
