@@ -3,7 +3,7 @@ title: 使用 Office 365 中的目标集合的内容搜索
 ms.author: markjjo
 author: markjjo
 manager: laurawi
-ms.date: 10/12/2018
+ms.date: ''
 ms.audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -11,16 +11,16 @@ localization_priority: Normal
 search.appverid: MOE150
 ms.assetid: e3cbc79c-5e97-43d3-8371-9fbc398cd92e
 description: 在 Office 365 安全性中使用内容搜索&amp;合规性中心，以执行目标的集合。目标的集合表示您确信案例做出迅速响应项目或特权的项目位于特定邮箱或网站文件夹中。使用本文中脚本以获取文件夹 ID 或您要搜索的特定邮箱或网站文件夹的路径。
-ms.openlocfilehash: f4bb63a193a11e7467b3b296b2bdfa50657ae65a
-ms.sourcegitcommit: 448c5897e44448adfc82e3eaffb774c770c04815
+ms.openlocfilehash: 094fa4de4b8de9782a9bafb2eb8fb6ef3c52b46b
+ms.sourcegitcommit: 06ae71741875f604bcc7a4e01b0b62cc768cbe97
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "25522283"
+ms.lasthandoff: 12/13/2018
+ms.locfileid: "27245059"
 ---
 # <a name="use-content-search-in-office-365-for-targeted-collections"></a>使用 Office 365 中的目标集合的内容搜索
 
-Office 365 安全性内容的搜索功能&amp;合规性中心没有提供在 UI 中的直接方法业务网站 Exchange 邮箱或 SharePoint 和 OneDrive 中搜索特定的文件夹。但是，就可以通过在实际的搜索查询语法指定的文件夹 ID 或路径来搜索特定的文件夹 （称为目标的集合）。当您确信案例做出迅速响应项目或特权的项目位于特定邮箱或网站文件夹中，使用内容搜索执行目标的集合很有用。可以使用本文中的脚本来获取邮箱文件夹的文件夹 ID 或业务网站上的 SharePoint 和 OneDrive 文件夹的路径。然后您可以使用的文件夹 ID 或路径搜索查询中返回项目位于的文件夹中。
+Office 365 安全性内容的搜索功能&amp;合规性中心没有提供在 UI 中的直接方法业务网站 Exchange 邮箱或 SharePoint 和 OneDrive 中搜索特定的文件夹。但是，就可以通过在实际的搜索查询语法指定的文件夹 ID 或路径来搜索特定的文件夹 （称为*目标集合*）。当您确信案例做出迅速响应项目或特权的项目位于特定邮箱或网站文件夹中，使用内容搜索执行目标的集合很有用。可以使用本文中的脚本来获取邮箱文件夹的文件夹 ID 或业务网站上的 SharePoint 和 OneDrive 文件夹的路径。然后您可以使用的文件夹 ID 或路径搜索查询中返回项目位于的文件夹中。
   
 ## <a name="before-you-begin"></a>准备工作
 
@@ -44,7 +44,7 @@ Office 365 安全性内容的搜索功能&amp;合规性中心没有提供在 UI 
 
 在此步骤中第一个运行的脚本将返回邮箱文件夹的列表或 SharePoint 或 OneDrive for Business 文件夹和相应文件夹 ID 或每个文件夹的路径。运行此脚本时，它将提示您输入以下信息。
   
-- **电子邮件地址或网站 URL**键入要返回的 Exchange 邮箱文件夹列表并折叠 Id custodian 电子邮件地址。或键入 SharePoint 网站的 URL 或 OneDrive for Business 站点，可返回指定网站的路径的列表。下面是一些示例： 
+- **电子邮件地址或网站 URL**键入 custodian 返回 Exchange 邮箱文件夹和文件夹 Id 的列表的电子邮件地址。或键入 SharePoint 网站的 URL 或 OneDrive for Business 站点，可返回指定网站的路径的列表。下面是一些示例： 
     
   - **Exchange** -stacig@contoso.onmicrosoft.com 
     
@@ -138,7 +138,7 @@ Office 365 安全性内容的搜索功能&amp;合规性中心没有提供在 UI 
       }while ($complianceSearch.Status -ne 'Completed')
       if ($complianceSearch.Items -gt 0)
       {
-          # Create a Complinace Search Action and wait for it to complete. The folders will be listed in the .Results parameter
+          # Create a Compliance Search Action and wait for it to complete. The folders will be listed in the .Results parameter
           $complianceSearchAction = New-ComplianceSearchAction -SearchName $searchName -Preview
           do
           {
@@ -216,11 +216,11 @@ Office 365 安全性内容的搜索功能&amp;合规性中心没有提供在 UI 
     
 4. 在**新的搜索**页上，键入内容的搜索的名称。此名称必须是唯一组织中。 
     
-5. 在**希望在何处我们来看**，请执行以下一基于是否您搜索与邮箱文件夹或网站文件夹：
+5. 在**希望在何处我们来看**，请执行以下一基于您是否搜索邮箱文件夹或网站文件夹：
     
     - 单击**选择要搜索的特定邮箱**，然后添加指定您在步骤 1 中运行该脚本时的同一邮箱。 
     
-      或者
+      或
     
     - 单击**选择特定网站搜索**以搜索，然后添加您在步骤 1 中运行该脚本时指定的网站相同的 URL。 
     
@@ -264,14 +264,16 @@ Office 365 安全性内容的搜索功能&amp;合规性中心没有提供在 UI 
   
 ## <a name="more-information"></a>更多信息
 
-使用本文中的脚本和执行目标集合时，请保留记住以下事项。
+使用本文中的脚本来执行目标的集合时，请记住以下事项。
   
 - 脚本不从结果中删除任何文件夹。因此有些文件夹中列出结果可能不可搜索 （或返回零项） 因为它们包含系统生成的内容。
     
 - 此脚本只返回用户的主邮箱文件夹信息。它不在用户的存档邮箱中返回有关文件夹的信息。
     
-- 在搜索邮箱文件夹，只有指定的文件夹时 (由其`folderid`属性) 将搜索。不会搜索子文件夹。若要搜索的子文件夹，您需要使用`folderid`，您想要搜索的子文件夹。 
+- 在搜索邮箱文件夹，只有指定的文件夹时 (由其`folderid`属性) 将搜索。不会搜索子文件夹。若要搜索的子文件夹，您需要文件夹 ID 用于要搜索的子文件夹。 
     
 - 在搜索网站文件夹，该文件夹时 (由其`path`属性)，以及将搜索所有子文件夹。 
     
 - 如前面所述，不能使用`path`属性对于媒体文件，如.png、.tiff 或.wav 文件，搜索位于 OneDrive 位置。使用不同的[站点属性](keyword-queries-and-search-conditions.md#searchable-site-properties)搜索 OneDrive 文件夹中的媒体文件。 
+
+- 导出的顺序您仅指定的搜索结果时`folderid`中搜索查询的属性，您可以选择首次导出选项，"所有项目，但不包括那些具有无法识别的格式，进行加密，或出于其他原因无法编制索引。"始终将被文件夹中的所有项目都导出无论其索引状态，因为文件夹 ID 始终编制索引。

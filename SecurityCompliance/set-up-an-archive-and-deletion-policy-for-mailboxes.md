@@ -3,7 +3,7 @@ title: 设置 Office 365 组织中邮箱的存档和删除策略
 ms.author: markjjo
 author: markjjo
 manager: laurawi
-ms.date: 1/9/2018
+ms.date: ''
 ms.audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -16,20 +16,18 @@ search.appverid:
 - BCS160
 ms.assetid: ec3587e4-7b4a-40fb-8fb8-8aa05aeae2ce
 description: 创建自动将项目移至用户的存档邮箱的 Office 365 中归档和删除策略。
-ms.openlocfilehash: 740164ee840a32aff20f5c2dc1b1ae433d95cfe5
-ms.sourcegitcommit: 448c5897e44448adfc82e3eaffb774c770c04815
+ms.openlocfilehash: 903a91c590c47ad5de0b89ae51a25983221d2ffe
+ms.sourcegitcommit: 031781d0eecf33baabcd03ea53546d41076062b4
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "25522293"
+ms.lasthandoff: 12/12/2018
+ms.locfileid: "27240575"
 ---
 # <a name="set-up-an-archive-and-deletion-policy-for-mailboxes-in-your-office-365-organization"></a>设置 Office 365 组织中邮箱的存档和删除策略
 
- **本文是针对管理员。要添加到您的邮箱中的项目的存档和保留策略？[分配对电子邮件的保留策略](https://support.office.com/article/3e5fd2dc-633f-4a38-b313-b31b81f7cf7a)，请参阅 | [业务有关 web 上的 Outlook 中的保留和存档策略](https://support.office.com/article/465372e4-e16b-47db-bee0-aba44799085e)**
+ 在 Office 365 中，管理员可以创建自动将项目移至用户的存档邮箱并自动从邮箱中删除项目的存档和删除策略。管理员创建保留策略分配给邮箱，并将项目移至用户的存档邮箱后一段时间，并且还会删除项目从邮箱后达到特定期限限制来达到此目的。确定哪些项目的实际规则移动或删除并且出现这种情况称为的保留标记。保留标记链接到反过来分配给用户的邮箱的保留策略。保留标记适用于单个消息和用户的邮箱中的文件夹的保留设置。它定义一条消息的邮箱中保留的时间长度和当消息到达指定的保持期所采取的操作。当一条消息到达其保留时间时，它也移动到用户的存档邮箱或将其删除。 
   
-在 Office 365 中，您可以创建自动将项目移至用户的存档邮箱并自动从邮箱中删除项目的存档和删除策略。您可以执行此操作的创建保留策略 s 后一段时间，并且还会删除项目从邮箱后达到特定期限限制分配给邮箱，并将项目移动到用户的存档邮箱。确定哪些项目的实际规则移动或删除并且出现这种情况称为的保留标记。保留标记链接到反过来分配给用户的邮箱的保留策略。保留标记适用于单个消息和用户的邮箱中的文件夹的保留设置。它定义一条消息的邮箱中保留的时间长度和当消息到达指定的保持期所采取的操作。当一条消息到达其保留时间时，它也移动到用户的存档邮箱或将其删除。 
-  
-本主题中的步骤将设置名为 Alpine House 虚拟组织的存档和保留策略。设置此策略包括以下任务：
+本文中的步骤将设置名为 Alpine House 虚拟组织的存档和保留策略。设置此策略包括以下任务：
   
 - 启用存档邮箱的组织中的每个用户。这为用户提供了添加邮箱存储，并需要，以便将保留策略可以将项目移动到存档邮箱。它还我们通过移动用户存储存档信息项存档邮箱。 
     
@@ -37,7 +35,7 @@ ms.locfileid: "25522293"
     
   - 自动移动旧用户的存档邮箱的 3 年的项目。将项目移动到存档邮箱释放空间用户的主邮箱中。
     
-  - 自动删除旧的 5 年中的已删除邮件文件夹的项目。这还释放空间用户的主邮箱中。用户将有机会来恢复这些项目，如有必要。请参阅有关详细信息[详细信息](set-up-an-archive-and-deletion-policy-for-mailboxes.md#moreinfo)部分中的脚注。 
+  - 自动删除旧的 5 年中的已删除邮件文件夹的项目。这还释放空间用户的主邮箱中。用户将有机会来恢复这些项目，如有必要。请参阅有关详细信息[详细信息](#more-information)部分中的脚注。 
     
   - 自动 （并永久） 删除旧从两个主 7 年和存档邮箱的项目。合规性要求，因为一些组织需要一段时间保留电子邮件。此时间段后，组织可能想要永久删除这些项目用户邮箱。 
     
@@ -104,7 +102,7 @@ ms.locfileid: "25522293"
     
 2. 在 Office 365 管理中心的左侧的导航窗格中，单击**管理中心**，，然后单击**Exchange**。
     
-    ![屏幕快照显示了在 Office 365 管理中心内，管理员与中心选项扩展和选择 Exchange。](media/47399df2-0bc4-42e2-b183-07750a46bc68.png)
+    ![Screenshot shows the Office 365 admin center with the Admin centers option expanded and Exchange selected.](media/47399df2-0bc4-42e2-b183-07750a46bc68.png)
   
 3. 在 EAC 中，转到**合规性管理** \> **保留标记**
     
@@ -232,11 +230,8 @@ ms.locfileid: "25522293"
 2. 在所选用户邮箱属性页上，单击**邮箱功能**。
     
     在**保留策略**下拉列表中显示分配给邮箱的新策略的名称。 
-    
 
-  
 ## <a name="optional-step-5-run-the-managed-folder-assistant-to-apply-the-new-settings"></a>（可选）步骤 5： 运行托管文件夹助理应用新设置
-<a name="step3"> </a>
 
 将新的保留策略应用于步骤 4 中的邮箱后，可能需要多达 7 天在 Exchange Online 的新的保留设置要应用于邮箱。这是因为过程调用的托管文件夹助理流程邮箱 7 天一次。而不是等待托管文件夹助理运行，您可以强制此选项可通过运行**Start-managedfolderassistant** cmdlet 在 Exchange Online PowerShell 发生。 
   
@@ -271,7 +266,7 @@ ms.locfileid: "25522293"
     ```
 
     > [!NOTE]
-    > 有关详细信息，或者如果您在连接到 Exchange Online 组织时遇到问题，请参阅[使用远程 PowerShell 连接到 Exchange Online](https://go.microsoft.com/fwlink/p/?LinkId=517283)。 
+    > 有关详细信息或如果您有连接到 Exchange Online 组织的问题，请参阅[Connect to Exchange Online PowerShell 中](https://go.microsoft.com/fwlink/p/?LinkId=517283)。 
   
 5. 运行以下两个命令启动您的组织中的托管文件夹助理的所有用户邮箱。
     
@@ -285,8 +280,27 @@ ms.locfileid: "25522293"
 
 就是这样！您已设置 Alpine House 组织的存档和删除策略。
   
-## <a name="more-information"></a>详细信息
-<a name="moreinfo"> </a>
+## <a name="optional-step-6-make-the-new-retention-policy-the-default-for-your-organization"></a>（可选）步骤 6： 使新的保留策略的默认值为您的组织
+
+在步骤 4，您需要将新的保留策略分配给现有邮箱。但是，您可以配置 Exchange Online 使新的保留策略分配给将来创建的新邮箱。使用 Exchange Online PowerShell 中更新组织的默认邮箱计划执行此操作。*邮箱计划*已自动新邮箱配置的属性的模板。 在此可选步骤，您可以替换当前分配给您在步骤 3 中创建的保留策略 （默认情况下，默认 MRM 策略） 的邮箱计划的保留策略。更新邮箱计划后，新的保留策略将分配给新邮箱。
+
+1. [连接到 Exchange Online PowerShell 中](https://go.microsoft.com/fwlink/p/?LinkId=517283)或，请参阅第 5 步。
+
+2. 运行以下命令以显示组织中的有关邮箱计划的信息。
+
+    ```
+    Get-MailboxPlan | Format-Table DisplayName,RetentionPolicy,IsDefault
+    ```
+    请注意设置为默认邮箱计划。
+
+3. 向默认邮箱计划运行以下命令以分配在步骤 3 （例如， **Alpine House 存档和保留策略**） 中创建新的保留策略。此示例假定默认邮箱计划的名称是**ExchangeOnlineEnterprise**。
+
+    ```
+    Set-MailboxPlan "ExchangeOnlineEnterprise" -RetentionPolicy "Alpine House Archive and Retention Policy"
+    ```
+4. 步骤 2 以检查已更改分配给默认邮箱计划的保留策略中，可以重新运行该命令。
+
+## <a name="more-information"></a>更多信息
 
 - 保留时间的计算方式？邮箱项目的保留期限的计算公式从传递的日期或等不发送的邮件草稿项创建的日期，但由用户创建。在托管文件夹助理处理邮箱中的项时，它标记开始日期和具有与删除但允许恢复或永久删除保留操作的保留标记的所有项目的到期日期。使用 move date 被标有存档标记的项。 
     
@@ -294,9 +308,9 @@ ms.locfileid: "25522293"
     
     |**保留标记**|**此标记的用途**|**内置或自定义？**|**类型**|
     |:-----|:-----|:-----|:-----|
-    |Alpine House 3 年移动到存档  <br/> |将项目的 1095 天 （3 年） 到存档邮箱移动。  <br/> |自定义 (请参阅[步骤 2： 创建新的存档和删除策略的保留标记](set-up-an-archive-and-deletion-policy-for-mailboxes.md#step3))  <br/> |默认策略标记 （存档）;此标记将自动应用到整个邮箱。  <br/> |
-    |Alpine House 7 年永久删除  <br/> |他们何时 7 岁中永久删除主邮箱或存档邮箱中的项目。  <br/> |自定义 (请参阅[步骤 2： 创建新的存档和删除策略的保留标记](set-up-an-archive-and-deletion-policy-for-mailboxes.md#step3))  <br/> |默认策略标记 （删除）;此标记将自动应用到整个邮箱。  <br/> |
-    |Alpine House 删除项目 5 年删除但允许恢复  <br/> |从已删除邮件文件夹的旧 5 年中删除项目。用户可以恢复 up 14 天后他们正在删除这些项目。<sup>\*</sup> <br/> |自定义 (请参阅[步骤 2： 创建新的存档和删除策略的保留标记](set-up-an-archive-and-deletion-policy-for-mailboxes.md#step3))  <br/> |保留策略标记 （已删除项）;此标记自动应用于已删除邮件文件夹中的项目。  <br/> |
+    |Alpine House 3 年移动到存档  <br/> |将项目的 1095 天 （3 年） 到存档邮箱移动。  <br/> |自定义 (请参阅[步骤 2： 创建新的存档和删除策略的保留标记](#step-2-create-new-retention-tags-for-the-archive-and-deletion-policies))  <br/> |默认策略标记 （存档）;此标记将自动应用到整个邮箱。  <br/> |
+    |Alpine House 7 年永久删除  <br/> |他们何时 7 岁中永久删除主邮箱或存档邮箱中的项目。  <br/> |自定义 (请参阅[步骤 2： 创建新的存档和删除策略的保留标记](#step-2-create-new-retention-tags-for-the-archive-and-deletion-policies))  <br/> |默认策略标记 （删除）;此标记将自动应用到整个邮箱。  <br/> |
+    |Alpine House 删除项目 5 年删除但允许恢复  <br/> |从已删除邮件文件夹的旧 5 年中删除项目。用户可以恢复 up 14 天后他们正在删除这些项目。<sup>\*</sup> <br/> |自定义 (请参阅[步骤 2： 创建新的存档和删除策略的保留标记](#step-2-create-new-retention-tags-for-the-archive-and-deletion-policies))  <br/> |保留策略标记 （已删除项）;此标记自动应用于已删除邮件文件夹中的项目。  <br/> |
     |可恢复邮件 14 天后移动到存档  <br/> |将已在可恢复邮件文件夹中的存档邮箱中的可恢复的项目文件夹的 14 天内的项目移动。  <br/> |内置  <br/> |保留策略标记 （可恢复的项目）;此标记自动应用于可恢复邮件文件夹中的项目。  <br/> |
     |垃圾邮件  <br/> |永久删除已在垃圾邮件文件夹中 30 天的项目。用户可以恢复 up 14 天后他们正在删除这些项目。<sup>\*</sup> <br/> |内置  <br/> |保留策略标记 （垃圾邮件）;此标记将自动应用到垃圾邮件文件夹中的项目。  <br/> |
     |1 个月后删除  <br/> |永久删除 30 天之内的项目。用户可以恢复 up 14 天后他们正在删除这些项目。<sup>\*</sup> <br/> |内置  <br/> |个人;可以由用户应用此标记。  <br/> |
