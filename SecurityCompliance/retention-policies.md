@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.assetid: 5e377752-700d-4870-9b6d-12bfc12d2423
 description: 借助保留策略，可主动决定是保留内容还是删除内容，亦或是先保留再删除内容；可将一个策略应用于整个组织，或只应用于特定位置或用户；并能将策略应用于所有内容，或只应用于满足特定条件的内容
-ms.openlocfilehash: 57f782046fcac2bd28830a0204e0b663d69de842
-ms.sourcegitcommit: 8c5a88433cff23c59b436260808cf3d91b06fdef
+ms.openlocfilehash: a6d185484f83ca93c99153d584af6841397dbc2f
+ms.sourcegitcommit: ec465771a846de103a365fcb36cb7a7c0a5744c1
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "27194703"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "27380612"
 ---
 # <a name="overview-of-retention-policies"></a>保留策略概述
 
@@ -214,7 +214,7 @@ Office 365 中的保留策略可有助于实现所有这些目标。管理内容
   
 - 此类保留策略最多可包含 1,000 个邮箱和 100 个网站。
     
-- 租户最多可包含 1,000 个此类保留策略。
+- 租户最多可包含 10,000 个保留策略。
     
 尽管有这些限制，但需要明白的是，仍可应用组织范围策略或位置整体策略来克服这些限制。
   
