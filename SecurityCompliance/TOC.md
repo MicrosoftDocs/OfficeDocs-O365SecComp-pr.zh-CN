@@ -186,7 +186,6 @@
 ## [在 Office 365 中为电子数据展示调查设置合规性边界](set-up-compliance-boundaries.md)
 ## [电子数据展示解决方案系列 - 数据泄漏方案 - 搜索和清除](data-spillage-scenariosearch-and-purge.md)
 ## [为高级电子数据展示准备搜索结果](prepare-search-results-for-advanced-ediscovery.md)
-## [为 OneDrive for Business 站点分配电子数据展示权限](assign-permissions-to-onedrive-for-business-sites.md)
 ## [使用脚本将用户添加到电子数据展示事例的保留中](use-a-script-to-add-users-to-a-hold-in-ediscovery.md)
 ## [创建电子数据展示事例中的保留的报告](create-a-report-on-holds-in-ediscovery-cases.md)
 ## 管理保留
