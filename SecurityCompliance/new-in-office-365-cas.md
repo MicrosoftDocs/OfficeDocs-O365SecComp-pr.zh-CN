@@ -5,7 +5,7 @@ author: denisebmsft
 manager: laurawi
 ms.audience: Admin
 ms.topic: reference
-ms.date: 11/28/2018
+ms.date: 12/26/2018
 ms.service: o365-administration
 localization_priority: Normal
 search.appverid:
@@ -13,18 +13,41 @@ search.appverid:
 - MOE150
 ms.assetid: d674763c-a4c9-4604-8623-68c1836d27f3
 description: 请参阅 what's new in Office 365 云应用程序安全性
-ms.openlocfilehash: a3ca4504d80cbb39b51ecbcf3a5165bc5139e07c
-ms.sourcegitcommit: bf628da123a89d9422e8cff02165b1e2d35dfe12
+ms.openlocfilehash: 9f0c93d0de6ae8be72456c874ef8f5e3d42264e2
+ms.sourcegitcommit: 25f72d20e76463c2f0a075dfc0116f00c934bd77
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/28/2018
-ms.locfileid: "26872010"
+ms.lasthandoff: 12/27/2018
+ms.locfileid: "27447060"
 ---
 # <a name="what-is-new-in-office-365-cloud-app-security"></a>What's new in Office 365 云应用程序安全性
 
 **摘要**阅读这篇文章，获取 Office 365 云应用程序安全性 （之前被称为 Office 365 高级安全管理），这由[Microsoft 云应用程序安全性](https://aka.ms/whatiscas)中的更新和新功能的简单概述。
   
-添加或改进功能时，将经常，更新这篇文章。发布约两周，Microsoft 云应用程序安全性更新后的 office 365 云应用程序安全性更新并不是所有 Microsoft 云应用程序安全性更新都应用于 Office 365 云应用程序安全性。此外，一周或更多 Office 365 云应用程序安全性环境中显示其发布日期后，可能需要的新功能。
+> [!TIP]
+> 添加或改进功能时，将经常，更新这篇文章。发布约两周，Microsoft 云应用程序安全性更新后的 office 365 云应用程序安全性更新并不是所有 Microsoft 云应用程序安全性更新都应用于 Office 365 云应用程序安全性。此外，一周或更多 Office 365 云应用程序安全性环境中显示其发布日期后，可能需要的新功能。
+
+## <a name="office-365-cloud-app-security-release-138"></a>Office 365 云应用程序安全性版本 138
+
+*年 12 月 23 2018*
+
+**以下[Microsoft 云应用程序安全性释放 138](https://docs.microsoft.com/cloud-app-security/release-notes#cloud-app-security-release-138)**:
+
+- **自动日志上载使用 Docker Windows 上**云应用程序安全性现在支持 Windows 10 自动日志上载 ([秋季创建者更新](https://docs.microsoft.com/windows/whats-new/whats-new-windows-10-version-1709)和更高版本) 和 Windows Server ([版本 1709年](https://docs.microsoft.com/windows-server/get-started/whats-new-in-windows-server-1709)和更高版本) Windows 上使用 Docker。请参阅[本文](https://docs.microsoft.com/cloud-app-security/discovery-docker-windows)以了解详细信息并配置 Docker。  
+
+- **Microsoft 流集成**与[Microsoft 流](https://docs.microsoft.com/flow/getting-started)提供自定义警报自动化和业务流程 playbooks 现在集成云应用程序安全性。请参阅[本文](https://docs.microsoft.com/cloud-app-security/flow-integration)以了解详细信息并配置 Microsoft 流集成。 
+
+
+## <a name="office-365-cloud-app-security-release-137"></a>Office 365 云应用程序安全性版本 137
+
+*年 12 月 8 2018*
+
+**以下[Microsoft 云应用程序安全性释放 137](https://docs.microsoft.com/cloud-app-security/release-notes#cloud-app-security-release-137)**:
+
+- **添加了支持的动态**云应用程序安全性现在包括支持的 Microsoft Dynamics 活动的受支持的 Office 365 审核日志。 
+
+- **达 – 新术语 ！** 为清楚起见，已更改的应用程序权限功能名称 – 现在称为 OAuth 应用程序。 
+
 
 ## <a name="office-365-cloud-app-security-release-136"></a>Office 365 云应用程序安全性版本 136
 
@@ -73,7 +96,7 @@ ms.locfileid: "26872010"
 
 - **新的菜单栏**若要跨 Microsoft 365 产品提供更一致的管理体验并使您能够更轻松地透视 Microsoft 安全解决方案之间，云应用程序安全性门户菜单栏已移动到屏幕的左侧。此一致的导航体验时将其从一个 Microsoft 安全门户移到另一个定向自己的帮助。<br/>![Office 云应用程序安全性的菜单栏](media/OCAS-MenuBar.png)<br/>
 
-- **影响 OAuth 应用程序分数**现在，您可以发送的云应用程序安全性团队反馈，以便让我们知道是否存在组织中的恶意视图可能会发现 OAuth 应用程序。这一新功能，可以是我们安全社区的和增强 OAuth 应用程序风险分数和分析。有关详细信息，请参阅[管理应用程序权限](manage-app-permissions-in-ocas.md)。
+- **影响 OAuth 应用程序分数**现在，您可以发送的云应用程序安全性团队反馈，以便让我们知道是否存在组织中的恶意视图可能会发现 OAuth 应用程序。这一新功能，可以是我们安全社区的和增强 OAuth 应用程序风险分数和分析。有关详细信息，请参阅[管理 OAuth 应用程序](manage-app-permissions-in-ocas.md)。
 
 - **新的云发现分析程序**云发现分析程序现在支持 iboss 安全云网关和 Sophos XG。
 
@@ -84,9 +107,9 @@ ms.locfileid: "26872010"
   
 **以下[Microsoft 云应用程序安全性释放 128](https://docs.microsoft.com/cloud-app-security/release-notes#cloud-app-security-release-128)**: 
   
-- **跨多个应用程序的应用程序权限**对于已被授予应用程序权限的应用程序，您现在可以禁止或审批的单个操作中的多个应用程序。例如，您可以查看的已在组织中的用户授予权限，选择您要禁止，所有应用程序，然后单击要取消授予所有许可禁止应用程序的所有应用程序，并将不再允许用户授予对这些应用程序的权限。 
+- **跨多个应用程序的 OAuth 应用程序**对于 OAuth 应用程序，您现在可以禁止或审批的单个操作中的多个应用程序。例如，您可以查看的已在组织中的用户授予权限，选择您要禁止，所有应用程序，然后单击要取消授予所有许可禁止应用程序的所有应用程序，并将不再允许用户授予对这些应用程序的权限。若要了解详细信息，请参阅[使用 Office 365 云应用程序安全性的管理 OAuth 应用程序](manage-app-permissions-in-ocas.md)。 
     
-- **新建建议的查询： GDPR 准备**没有新的建议的查询，以使您能够识别的 GDPR 准备发现应用程序。GDPR 最近已成为对于安全管理员最高的优先级。此查询可帮助您轻松地识别的 GDPR 就绪，应用程序并通过来评估不的应用程序的风险缓解威胁。 
+- **新建建议的查询： GDPR 准备云应用程序**没有新的建议的查询，以使您能够识别的 GDPR 准备发现应用程序。您可能已经知道，GDPR 最近已成为对于安全管理员最高的优先级。此查询可帮助您轻松地识别的 GDPR 就绪，应用程序并通过来评估不的应用程序的风险缓解威胁。用于新查询，**云发现**仪表板， **Discovered 应用程序**选项卡中，选择**查询** > **GDPR 准备云应用程序**。<br/>![GDPR 准备云应用程序查询](media/OCAS-FindGDPRQueries.png)<br/>
     
 ## <a name="office-365-cloud-app-security-release-126"></a>Office 365 云应用程序安全性版本 126
 
@@ -96,7 +119,7 @@ ms.locfileid: "26872010"
   
 - **自动修复可疑活动**您现在可以由异常检测策略触发的可疑会话设置自动修复操作。此增强功能，您可以立即违反发生时通知和自动应用调控操作，如挂起用户。有关详细信息，请参阅[Office 365 云应用程序安全性的异常检测 policies](anomaly-detection-policies-in-ocas.md)。
     
-- **自动检测 risky OAuth 应用程序**除了 OAuth 连接到您的环境的应用程序的现有调查，Office 365 云应用程序安全性现在允许您设置自动的通知，让您知道 OAuth 应用程序时满足特定条件。例如，您可以自动通知应用程序时，需要高权限级别，并且已授权 50 个以上的用户。有关详细信息，请参阅[管理使用 Office 365 云应用程序安全性的应用程序权限](manage-app-permissions-in-ocas.md)。
+- **自动检测 risky OAuth 应用程序**除了 OAuth 连接到您的环境的应用程序的现有调查，Office 365 云应用程序安全性现在允许您设置自动的通知，让您知道 OAuth 应用程序时满足特定条件。例如，您可以自动通知应用程序时，需要高权限级别，并且已授权 50 个以上的用户。有关详细信息，请参阅[使用 Office 365 云应用程序安全性的管理 OAuth 应用程序](manage-app-permissions-in-ocas.md)。
     
 - **管理安全服务提供程序管理 (MSSP) 支持**Office 365 云应用程序安全性现在为 MSSPs，提供更好的管理体验，并允许您将外部合作伙伴配置为与任何当前提供 Office 365 云应用程序安全性的角色的管理员。此外，对多个租户具有访问权限的管理员可以立即轻松透视之间租户中。 
     
@@ -132,7 +155,7 @@ ms.locfileid: "26872010"
   
 - **为用户活动的内部应用程序**。有关 Office 365 和 Azure Active Directory (Azure AD)，我们现在逐步推出检测内部应用程序作为 Office 365 和 Azure AD 的应用程序 （内部和外部） 执行的用户帐户活动的能力。这使您创建策略，提醒您如果应用程序执行意外和未经授权的活动。 
     
-- **导出应用程序权限列表中的多个字段**。时将应用程序权限列表导出到 csv，如 publisher，其他字段的权限级别和社区的使用情况都包含帮助与合规性和调查过程。 
+- **OAuth 的应用程序列表中的多个字段导出**。将 OAuth 应用程序列表导出到 csv，如 publisher，其他字段时权限级别和社区的使用情况都包含帮助与合规性和调查过程。 
     
 ## <a name="office-365-cloud-app-security-release-119"></a>Office 365 云应用程序安全性版本 119
 
@@ -189,83 +212,8 @@ ms.locfileid: "26872010"
 **以下[Microsoft 云应用程序安全性释放 113](https://docs.microsoft.com/cloud-app-security/release-notes#cloud-app-security-release-113)**: 
   
 - **日志分析器支持泛型格式**。云发现日志分析程序现在支持以下泛型格式： LEEF、 CEF 和 W3C。 
-    
-## <a name="office-365-cloud-app-security-release-112"></a>Office 365 云应用程序安全性版本 112
 
-*发布 2017 年 12 月 24，* 
-  
-**以下[Microsoft 云应用程序安全性释放 112](https://docs.microsoft.com/cloud-app-security/release-notes#cloud-app-security-release-112)**: 
-  
-- **相关洞察纸盒**。在活动日志中，您现在可以通过单击用户名或 IP 地址上访问相关洞察纸盒。 
-    
-    ![单击用户名称或 IP 地址，以查看相关洞察银活动日志中。](media/8e32b3fa-8c0c-4c5e-b248-fe7d7e1b516d.png)
-  
-- **若要查看单击多个活动的能力**。在相关洞察银，您可以单击时钟图标可查看选定活动的 48 小时内执行的所有活动。 
-    
-    ![在相关见解银，可以单击该时钟图标可查看选定活动的 48 小时内执行的活动](media/c6c96aa0-98e5-4205-8873-45f8d6fd0843.png)
-  
-- **Juniper SRX 日志分析器改进**。改进了对 Juniper SRX 云发现日志分析器。 
-    
-## <a name="office-365-cloud-app-security-release-111"></a>Office 365 云应用程序安全性版本 111
+## <a name="releases-prior-to-113"></a>113 之前的版本
 
-*发布 2017 年 12 月 10，* 
-  
-**以下[Microsoft 云应用程序安全性释放 111](https://docs.microsoft.com/cloud-app-security/release-notes#cloud-app-security-release-111)**: 
-  
-- **时间筛选器的改进**。时间筛选器现在是易于使用。若要访问时间筛选，在视图中，如活动日志，策略、 通知，使用高级视图中，选择的筛选器列表中的**日期**。然后选择一个选项，如之前、 之后，或在之间要应用时间筛选器。 
+[请参阅 2017 updates for Office 365 云应用程序安全性](new-in-office-365-cas-2017.md)
     
-    ![使用日期筛选器可查看之前、 之后或日期之间的信息。](media/9dbb2a10-f68f-413b-8b4e-88911152cb92.png)
-  
-## <a name="office-365-cloud-app-security-release-110"></a>Office 365 云应用程序安全性版本 110
-
-*发布 2017 年 11 月 26，* 
-  
-**以下[Microsoft 云应用程序安全性释放 110](https://docs.microsoft.com/cloud-app-security/release-notes#cloud-app-security-release-110)**: 
-  
-- **现已推出通常 SIEM 服务器集成**。连接到 Office 365 云应用程序安全性 SIEM 服务器。您现在可以发送通知和活动自动为您所选择的 SIEM 服务器通过配置 SIEM 代理。请参阅[SIEM 服务器与 Office 365 云应用程序安全性集成](integrate-your-siem-server-with-office-365-cas.md)。
-    
-- **更轻松地访问以帮助内容**。在右上角中使用新问号，现在可以访问中的 Office 365 云应用程序安全性门户页中的帮助内容。上下文相关，使您所需的信息、 基于一页上的每个链接。 
-    
-- **向我们发送反馈**。使用笑脸右上角中，您可以立即发送反馈从 Office 365 云应用程序安全性门户的每一页。这样，您可以报告 bug、 请求的新功能和直接与 Office 365 云应用程序安全性团队共享您的体验。 
-    
-## <a name="office-365-cloud-app-security-release-102"></a>Office 365 云应用程序安全性版本 102
-
-*发布 2017 年 8 月 13，* 
-  
-**以下[Microsoft 云应用程序安全性释放 102](https://docs.microsoft.com/cloud-app-security/release-notes#cloud-app-security-release-102)**: 
-  
-- **新用户调查操作**启用额外的向下钻取级别为用户调查。在调查页上，您可以将鼠标悬停在活动、 用户或帐户，并将其应用作为筛选器，并据此，您可以查看相关的活动或事件。 
-    
-## <a name="office-365-cloud-app-security-release-100"></a>Office 365 云应用程序安全性版本 100
-
-*发布 2017 年 7 月 17，* 
-  
-**以下[Microsoft 云应用程序安全性版本 100](https://docs.microsoft.com/cloud-app-security/release-notes#cloud-app-security-release-100)**: 
-  
-- **安全扩展**是可在其中集中管理所有安全扩展插件对 Office 365 云应用程序安全性，包括 API 令牌和 SIEM 代理的新仪表板。若要查看安全扩展仪表板，请按照下列步骤： 
-    
-1. 转到[https://protection.office.com](https://protection.office.com)和 Office 365 中使用您的工作或学校帐户登录。(您将转到安全&amp;合规性中心。) 
-    
-2. 转到**通知** \> **管理高级通知**。
-    
-3. 选择**转到 Office 365 云应用程序安全性**。
-    
-    ![安全中&amp;合规性中心中，选择警报\>管理高级通知\>转到高级安全管理](media/9792b121-9cd4-4faa-a6e0-81cfab4bf2f2.png)
-  
-4. 选择**设置** \> **安全扩展**。
-    
-    ![在 ASM 门户中，选择设置\>安全扩展](media/f03d47a1-91ff-41b9-9baf-b514cffe41a8.png)
-  
-- **改进了分析**。云发现日志分析机制中所做的改进。都可能会显著较低，发生内部错误。 
-    
-- **预期日志格式**。云发现日志的预期的日志格式现在提供 Syslog 格式和 FTP 格式的示例。 
-    
-## <a name="related-topics"></a>相关主题
-
-[Office 365 云应用程序安全性帮助内容](office-365-cas-help.md)
-  
-[推出 Office 365 云应用安全后的利用率活动](utilization-activities-for-ocas.md)
-  
-[Office 365 安全性权限&amp;合规性中心](permissions-in-the-security-and-compliance-center.md)
-  
-
