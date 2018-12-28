@@ -5,19 +5,18 @@ services: office-365-security-compliance
 author: robmazz
 manager: laurawi
 layout: LandingPage
-ms.assetid: ''
 ms.service: office-365
 ms.tgt_pltfrm: na
 ms.devlang: na
 ms.topic: landing-page
-ms.date: 8/21/2018
+ms.date: 12/27/2018
 ms.author: robmazz
-ms.openlocfilehash: ed61d7995ab4b684f775b58f9fb4cd830222117a
-ms.sourcegitcommit: e5da81dd4c6ca7caa0f884fffff3876e87e2b217
+ms.openlocfilehash: 255bde226f5a284f2ac20d65124d4722e2357385
+ms.sourcegitcommit: 55762890e5129a5240054990ce64e93007ed7a32
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "26254549"
+ms.lasthandoff: 12/27/2018
+ms.locfileid: "27449876"
 ---
 # <a name="office-365-security-and-compliance"></a>Office 365 安全性和遵从性
 
@@ -52,7 +51,7 @@ ms.locfileid: "26254549"
                     </div>
                     <div class="cardText">
                         <h3>90 天内的后续步骤</h3>
-                        <p>这些任务需要更多时间规划和实现，但会显著增加安全状况： <br> - <a href="attack-simulator.md">进行攻击模拟</a> <br> - <a href="meet-data-protection-and-regulatory-reqs-using-microsoft-cloud.md">查看合规性管理器</a> <br> - <a href="https://docs.microsoft.com/azure/active-directory/privileged-identity-management/pim-configure">配置 Azure 特权的身份管理</a> <br> - <a href="https://docs.microsoft.com/azure/active-directory/authentication/concept-mfa-howitworks">启用多重身份验证</a> <br> - <a href="protect-against-threats.md">查看和更新保护策略</a> </p>
+                        <p>这些任务需要更多时间规划和实现，但会显著增加安全状况： <br> - <a href="attack-simulator.md">进行攻击模拟</a> <br> - <a href="meet-data-protection-and-regulatory-reqs-using-microsoft-cloud.md">查看合规性管理器</a> <br> - <a href="https://docs.microsoft.com/azure/active-directory/privileged-identity-management/pim-configure">配置 Azure 特权的身份管理</a> <br> - <a href="privileged-access-management-configuration.md">配置访问权限的管理</a>  <br> - <a href="https://docs.microsoft.com/azure/active-directory/authentication/concept-mfa-howitworks">启用多重身份验证</a> <br> - <a href="protect-against-threats.md">查看和更新保护策略</a> </p>
                     </div>
                 </div>
             </div>
@@ -70,7 +69,7 @@ ms.locfileid: "26254549"
                     <div class="cardText">
                         <h3>90 天后</h3>
                         <p>下面是生成以前的工作的重要安全措施：<br>
-                        - <a href="https://securescore.office.com" target="_blank">查看您安全分数</a><br>
+                        - <a href="office-365-secure-score.md" target="_blank">查看您安全分数</a><br>
                         - <a href="https://docs.microsoft.com/windows-server/identity/securing-privileged-access/securing-privileged-access">实现安全访问权限</a><br>
                         - <a href="https://docs.microsoft.com/azure/active-directory/active-directory-identityprotection">使用 Azure AD 身份保护</a><br>
                         - <a href="protect-against-threats.md">优化保护策略</a><br></p>
@@ -97,8 +96,8 @@ ms.locfileid: "26254549"
                     <div class="cardText">
                         <h3>保持安全</h3>
                         <p><a href="security-roadmap.md">Office 365 安全路线图</a></p>
-                        <p><a href="https://securescore.microsoft.com" target="_blank">Microsoft 安全分数</a></p>
-                        <p><a href="https://protection.office.com" target="_blank">Office 365 安全性和合规性中心</a></p>
+                        <p><a href="office-365-secure-score.md" target="_blank">Microsoft 安全分数</a></p>
+                        <p><a href="https://protection.office.com" target="_blank">Office 365 安全与合规中心</a></p>
                     </div>
                 </div>
             </div>
