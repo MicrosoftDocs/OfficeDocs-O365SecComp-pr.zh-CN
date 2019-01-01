@@ -1,9 +1,8 @@
 ---
-title: 定义邮件流规则来加密 Office 365 中的电子邮件
+title: 定义用于加密 Office 365 中的电子邮件的邮件流规则
 ms.author: krowley
 author: kccross
 manager: laurawi
-ms.date: ''
 ms.audience: ITPro
 ms.topic: article
 ms.service: o365-administration
@@ -13,14 +12,14 @@ search.appverid:
 - MOE150
 ms.assetid: 9b7daf19-d5f2-415b-bc43-a0f5f4a585e8
 description: 管理员可以了解到创建邮件流规则 （也称作传输规则） 进行加密和解密邮件使用 Office 365 邮件加密 (OME)。
-ms.openlocfilehash: 35867d45bb8ad5cb8de2fa1aa0c870ee9a66fe5d
-ms.sourcegitcommit: 8c5a88433cff23c59b436260808cf3d91b06fdef
+ms.openlocfilehash: 6633958478c947d765251145ecd6d45e34dea2ab
+ms.sourcegitcommit: 31098b35607d0fd949fd357f783d1e9ed2444deb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "27194673"
+ms.lasthandoff: 12/31/2018
+ms.locfileid: "27466921"
 ---
-# <a name="define-mail-flow-rules-to-encrypt-email-messages-in-office-365"></a>定义邮件流规则来加密 Office 365 中的电子邮件
+# <a name="define-mail-flow-rules-to-encrypt-email-messages-in-office-365"></a>定义用于加密 Office 365 中的电子邮件的邮件流规则
 
 作为 Office 365 全局管理员，您可以创建邮件流规则 （也称作传输规则） 来帮助保护发送和接收的电子邮件。您可以设置来加密任何传出电子邮件和加密的邮件来自您组织内从或从组织发出的加密邮件答复中删除加密的规则。您可以使用 Exchange 管理中心 (EAC) 或 Exchange Online PowerShell 中创建这些规则。除了整体加密规则，您可以启用或禁用最终用户的单个邮件加密选项。
 

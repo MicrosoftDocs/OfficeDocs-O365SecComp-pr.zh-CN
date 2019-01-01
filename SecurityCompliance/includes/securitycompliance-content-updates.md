@@ -3,82 +3,7 @@
 
 
 
-## <a name="week-of-november-05-2018"></a>2018 年 11 月 5 日所在周
-
-
-| 发布时间 |主题标题 | 更改 |
-|------|------------|--------|
-| 2018 年 11 月 5 日 | [Office 365 Security and Compliance](/Office365/SecurityCompliance/index) | 修改时间 |
-| 2018 年 11 月 5 日 | [Office 365 安全功能分数](/Office365/SecurityCompliance/office-365-secure-score) | 修改时间 |
-| 2018 年 11 月 5 日 | [零时差自动清除 - 防范垃圾邮件和恶意软件](/Office365/SecurityCompliance/zero-hour-auto-purge) | 修改时间 |
-| 11/6/2018 | [如何识别为 Exchange Online 邮箱设置的保留类型](/Office365/SecurityCompliance/identify-a-hold-on-an-exchange-online-mailbox) | 修改时间 |
-| 11/6/2018 | [有关 Office 365 加密的技术参考详情](/Office365/SecurityCompliance/technical-reference-details-about-encryption) | 修改时间 |
-| 11/8/2018 | [定义邮件流规则来加密 Office 365 中的电子邮件](/Office365/SecurityCompliance/define-mail-flow-rules-to-encrypt-email) | 修改时间 |
-| 11/8/2018 | [Office 365 中的内容搜索](/Office365/SecurityCompliance/search-for-content) | 修改时间 |
-| 11/8/2018 | [适用于 SharePoint、OneDrive 和 Microsoft Teams 的 Office 365 ATP](/Office365/SecurityCompliance/atp-for-spo-odb-and-teams) | 修改时间 |
-| 11/8/2018 | [Office 365 ATP 安全附件](/Office365/SecurityCompliance/atp-safe-attachments) | 修改时间 |
-| 11/8/2018 | [Office 365 ATP 安全链接警告页](/Office365/SecurityCompliance/atp-safe-links-warning-pages) | 修改时间 |
-| 11/8/2018 | [Office 365 ATP 安全链接](/Office365/SecurityCompliance/atp-safe-links) | 修改时间 |
-| 11/8/2018 | [动态传递和与 Office 365 ATP 安全附件预览](/Office365/SecurityCompliance/dynamic-delivery-and-previewing) | 修改时间 |
-| 11/8/2018 | [查看有关在 SharePoint、 OneDrive 或的 Microsoft 团队中检测到的恶意文件的信息](/Office365/SecurityCompliance/malicious-files-detected-in-spo-odb-or-teams) | 修改时间 |
-| 11/8/2018 | [Office 365 高级威胁防护](/Office365/SecurityCompliance/office-365-atp) | 修改时间 |
-| 11/8/2018 | [设置自定义阻止 Url 列表使用 Office 365 ATP 安全链接](/Office365/SecurityCompliance/set-up-a-custom-blocked-urls-list-wtih-atp) | 修改时间 |
-| 11/8/2018 | [设置自定义重写不执行操作的 Url 列表使用 Office 365 ATP 安全链接](/Office365/SecurityCompliance/set-up-a-custom-do-not-rewrite-urls-list-with-atp) | 修改时间 |
-| 11/8/2018 | [设置 Office 365 ATP 安全附件策略](/Office365/SecurityCompliance/set-up-atp-safe-attachments-policies) | 修改时间 |
-| 11/8/2018 | [设置 Office 365 ATP 安全链接策略](/Office365/SecurityCompliance/set-up-atp-safe-links-policies) | 修改时间 |
-| 11/8/2018 | [打开 Office 365 ATP SharePoint、 OneDrive 和 Microsoft 团队](/Office365/SecurityCompliance/turn-on-atp-for-spo-odb-and-teams) | 修改时间 |
-| 11/9/2018 | [Office 365 Security and Compliance](/Office365/SecurityCompliance/index) | 修改时间 |
-| 11/9/2018 | 针对 Office 365 提供的内置移动设备管理的功能 | 删除 |
-| 11/9/2018 | 创建和部署设备安全策略 | 删除 |
-| 11/9/2018 | 常见问题有关移动设备管理 Office 365 (英文） | 删除 |
-| 11/9/2018 | 管理设备访问设置 | 删除 |
-| 11/9/2018 | Set up Mobile Device Management (MDM) in Office 365 | 删除 |
-| 11/9/2018 | 如何关闭 Office 365 中的移动设备管理 | 删除 |
-| 11/9/2018 | Office 365 中擦除移动设备 | 删除 |
-| 11/9/2018 | [反垃圾邮件邮件头](/Office365/SecurityCompliance/anti-spam-message-headers) | 修改时间 |
-| 11/9/2018 | [保留标签概述](/Office365/SecurityCompliance/labels) | 修改时间 |
-| 11/9/2018 | [支持通过 IPv6 发送的匿名入站电子邮件](/Office365/SecurityCompliance/support-for-anonymous-inbound-email-messages-over-ipv6) | 修改时间 |
-| 11/9/2018 | [支持 DKIM 签名邮件验证](/Office365/SecurityCompliance/support-for-validation-of-dkim-signed-messages) | 修改时间 |
-| 11/9/2018 | [使用 DKIM 在 Office 365 中验证从自定义域发送的出站电子邮件](/Office365/SecurityCompliance/use-dkim-to-validate-outbound-email) | 修改时间 |
-| 11/9/2018 | [使用 DMARC 验证 Office 365 中的电子邮件](/Office365/SecurityCompliance/use-dmarc-to-validate-email) | 修改时间 |
-| 11/9/2018 | [Office 365 中的攻击模拟器](/Office365/SecurityCompliance/attack-simulator) | 修改时间 |
-
-
-## <a name="week-of-november-12-2018"></a>2018 年 11 月 12 日所在周
-
-
-| 发布时间 |主题标题 | 更改 |
-|------|------------|--------|
-| 11/12/2018 | [在 Office 365 安全性中创建活动通知&amp;合规性中心](/Office365/SecurityCompliance/create-activity-alerts) | 修改时间 |
-| 11/13/2018 | [在 Office 365 中为电子数据展示调查设置合规性边界](/Office365/SecurityCompliance/set-up-compliance-boundaries) | 修改时间 |
-| 11/13/2018 | [创建、测试和优化 DLP 策略](/Office365/SecurityCompliance/create-test-tune-dlp-policy) | 添加 |
-| 11/13/2018 | [保留标签概述](/Office365/SecurityCompliance/labels) | 修改时间 |
-| 11/13/2018 | [创建、测试和优化 DLP 策略](/Office365/SecurityCompliance/create-test-tune-dlp-policy) | 修改时间 |
-| 2018 年 11 月 14 日 | [创建、测试和优化 DLP 策略](/Office365/SecurityCompliance/create-test-tune-dlp-policy) | 修改时间 |
-| 2018 年 11 月 14 日 | [在 Office 365 安全&amp;合规中心搜索审核日志](/Office365/SecurityCompliance/search-the-audit-log-in-security-and-compliance) | 修改时间 |
-| 2018 年 11 月 14 日 | [创建自定义敏感信息类型](/Office365/SecurityCompliance/create-a-custom-sensitive-information-type) | 修改时间 |
-| 11/15/2018 | [从 Office 365 安全性和合规性中心导出内容的搜索结果](/Office365/SecurityCompliance/export-search-results) | 修改时间 |
-| 11/15/2018 | [授予用户访问 Office 365 安全性&amp;合规性中心](/Office365/SecurityCompliance/grant-access-to-the-security-and-compliance-center) | 修改时间 |
-| 11/16/2018 | [定义邮件流规则来加密 Office 365 中的电子邮件](/Office365/SecurityCompliance/define-mail-flow-rules-to-encrypt-email) | 修改时间 |
-| 11/16/2018 | [使用敏感度标签中的加密限制对内容的访问](/Office365/SecurityCompliance/encryption-sensitivity-labels) | 修改时间 |
-| 11/16/2018 | [开始使用 Office 365 威胁智能](/Office365/SecurityCompliance/get-started-with-ti) | 修改时间 |
-| 11/16/2018 | [使用合规性管理器有助于在使用 Microsoft 云服务时符合数据保护和法规要求](/Office365/SecurityCompliance/meet-data-protection-and-regulatory-reqs-using-microsoft-cloud) | 修改时间 |
-| 11/16/2018 | [保留策略概述](/Office365/SecurityCompliance/retention-policies) | 修改时间 |
-| 11/16/2018 | [敏感度标签概述](/Office365/SecurityCompliance/sensitivity-labels) | 修改时间 |
-| 11/16/2018 | [在安全中使用资源管理器&amp;合规性中心](/Office365/SecurityCompliance/use-explorer-in-security-and-compliance) | 修改时间 |
-
-
-## <a name="week-of-november-19-2018"></a>2018 年 11 月 19，这一周
-
-
-| 发布时间 |主题标题 | 更改 |
-|------|------------|--------|
-| 11/19/2018 | [使用合规性管理器有助于在使用 Microsoft 云服务时符合数据保护和法规要求](/Office365/SecurityCompliance/meet-data-protection-and-regulatory-reqs-using-microsoft-cloud) | 修改时间 |
-| 11/19/2018 | [启用报告消息加载项](/Office365/SecurityCompliance/enable-the-report-message-add-in) | 修改时间 |
-| 于 2018 11/20 年 | [在 Office 365 安全&amp;合规中心搜索审核日志](/Office365/SecurityCompliance/search-the-audit-log-in-security-and-compliance) | 修改时间 |
-
-
-## <a name="week-of-november-26-2018"></a>2018 年 11 月 26，这一周
+## <a name="week-of-november-26-2018"></a>2018 年 11 月 26 日所在周
 
 
 | 发布时间 |主题标题 | 更改 |
@@ -133,10 +58,10 @@
 | 11/27/2018 | [打开 Office 365 ATP SharePoint、 OneDrive 和 Microsoft 团队](/Office365/SecurityCompliance/turn-on-atp-for-spo-odb-and-teams) | 修改时间 |
 | 11/27/2018 | [开启 Office 365 云应用安全](/Office365/SecurityCompliance/turn-on-office-365-cas) | 修改时间 |
 | 11/27/2018 | 获取有关 Office 365 中管理移动设备管理 (MDM) 设备的详细信息 | 删除 |
-| 11/28/2018 | [What's new in Office 365 云应用程序安全性](/Office365/SecurityCompliance/new-in-office-365-cas) | 修改时间 |
-| 11/28/2018 | [Office 365 安全功能分数](/Office365/SecurityCompliance/office-365-secure-score) | 修改时间 |
-| 11/28/2018 | [Office 365 云应用安全概述](/Office365/SecurityCompliance/office-365-cas-overview) | 修改时间 |
-| 11/28/2018 | [使用 DKIM 在 Office 365 中验证从自定义域发送的出站电子邮件](/Office365/SecurityCompliance/use-dkim-to-validate-outbound-email) | 修改时间 |
+| 2018 年 11 月 28 日 | [What's new in Office 365 云应用程序安全性](/Office365/SecurityCompliance/new-in-office-365-cas) | 修改时间 |
+| 2018 年 11 月 28 日 | [Office 365 安全功能分数](/Office365/SecurityCompliance/office-365-secure-score) | 修改时间 |
+| 2018 年 11 月 28 日 | [Office 365 云应用安全概述](/Office365/SecurityCompliance/office-365-cas-overview) | 修改时间 |
+| 2018 年 11 月 28 日 | [使用 DKIM 在 Office 365 中验证从自定义域发送的出站电子邮件](/Office365/SecurityCompliance/use-dkim-to-validate-outbound-email) | 修改时间 |
 | 11/29/2018 | [通知 Office 365 安全性的策略&amp;合规性中心](/Office365/SecurityCompliance/alert-policies) | 修改时间 |
 | 11/30/2018 | [配置组织的监督策略](/Office365/SecurityCompliance/configure-supervision-policies) | 修改时间 |
 | 11/30/2018 | [安装适用于 Outlook 桌面版的监督加载项](/Office365/SecurityCompliance/install-the-supervision-add-in-for-outlook-desktop) | 修改时间 |
@@ -172,7 +97,7 @@
 | 12/5/2018 | [为 Office 365 中的管理员管理隔离的邮件和文件](/Office365/SecurityCompliance/manage-quarantined-messages-and-files) | 修改时间 |
 | 12/6/2018 | [高级垃圾邮件筛选选项](/Office365/SecurityCompliance/advanced-spam-filtering-asf-options) | 修改时间 |
 | 12/6/2018 | [Office 365 中的防欺骗保护](/Office365/SecurityCompliance/anti-spoofing-protection) | 修改时间 |
-| 12/6/2018 | [定义邮件流规则来加密 Office 365 中的电子邮件](/Office365/SecurityCompliance/define-mail-flow-rules-to-encrypt-email) | 修改时间 |
+| 12/6/2018 | [定义用于加密 Office 365 中的电子邮件的邮件流规则](/Office365/SecurityCompliance/define-mail-flow-rules-to-encrypt-email) | 修改时间 |
 | 12/6/2018 | [敏感信息类型查找的内容](/Office365/SecurityCompliance/what-the-sensitive-information-types-look-for) | 修改时间 |
 | 12/6/2018 | [保留策略概述](/Office365/SecurityCompliance/retention-policies) | 修改时间 |
 | 12/7/2018 | [从 Office 365 安全性和合规性中心导出内容的搜索结果](/Office365/SecurityCompliance/export-search-results) | 修改时间 |
@@ -181,3 +106,66 @@
 | 12/7/2018 | [重试失败的内容搜索，若要解决内容位置错误](/Office365/SecurityCompliance/retry-failed-content-search) | 添加 |
 | 12/7/2018 | [查看内容搜索结果的关键字统计信息](/Office365/SecurityCompliance/view-keyword-statistics-for-content-search) | 修改时间 |
 | 12/7/2018 | [重试内容搜索来解决内容位置错误](/Office365/SecurityCompliance/retry-failed-content-search) | 修改时间 |
+
+
+## <a name="week-of-december-10-2018"></a>2018 年 12 月 10，这一周
+
+
+| 发布时间 |主题标题 | 更改 |
+|------|------------|--------|
+| 12/10/2018 | [授予用户访问 Office 365 安全性&amp;合规性中心](/Office365/SecurityCompliance/grant-access-to-the-security-and-compliance-center) | 修改时间 |
+| 12/11/2018 | [设置自定义阻止 Url 列表使用 Office 365 ATP 安全链接](/Office365/SecurityCompliance/set-up-a-custom-blocked-urls-list-wtih-atp) | 修改时间 |
+| 12/11/2018 | [设置 Office 365 组织中邮箱的存档和删除策略](/Office365/SecurityCompliance/set-up-an-archive-and-deletion-policy-for-mailboxes) | 修改时间 |
+| 12/11/2018 | [在 Office 365 安全&amp;合规中心搜索审核日志](/Office365/SecurityCompliance/search-the-audit-log-in-security-and-compliance) | 修改时间 |
+| 12/12/2018 | 更改 EOP IP 地址的通知 | 删除 |
+| 12/12/2018 | [Exchange Online Protection IP 地址](/Office365/SecurityCompliance/eop/exchange-online-protection-ip-addresses) | 修改时间 |
+| 12/12/2018 | [使用 Office 365 标签和 DLP 保护 SharePoint Online 文件](/Office365/SecurityCompliance/protect-sharepoint-online-files-with-office-365-labels-and-dlp) | 修改时间 |
+| 12/12/2018 | [在开发/测试环境中保护 SharePoint Online 网站](/Office365/SecurityCompliance/secure-sharepoint-online-sites-in-a-dev-test-environment) | 修改时间 |
+| 12/12/2018 | [排除向 Office 365 发送邮件时的故障](/Office365/SecurityCompliance/troubleshooting-mail-sent-to-office-365) | 修改时间 |
+| 12/12/2018 | [使用 Office 365 中的目标集合的内容搜索](/Office365/SecurityCompliance/use-content-search-for-targeted-collections) | 修改时间 |
+| 12/13/2018 | [使用 DKIM 在 Office 365 中验证从自定义域发送的出站电子邮件](/Office365/SecurityCompliance/use-dkim-to-validate-outbound-email) | 修改时间 |
+| 12/13/2018 | [对敏感信息的新 Office 365 邮件加密策略](/Office365/SecurityCompliance/new-ome-encryption-policy) | 添加 |
+| 12/14/2018 | [对敏感信息的新 Office 365 邮件加密策略](/Office365/SecurityCompliance/new-ome-encryption-policy) | 修改时间 |
+| 12/14/2018 | [Office 365 中的管理访问权限](/Office365/SecurityCompliance/privileged-access-management-overview) | 修改时间 |
+| 12/14/2018 | [Office 365 中的 ATP 防钓鱼功能](/Office365/SecurityCompliance/atp-anti-phishing) | 修改时间 |
+| 12/14/2018 | [Office 365 ATP 安全链接](/Office365/SecurityCompliance/atp-safe-links) | 修改时间 |
+| 12/14/2018 | [Office 365 高级威胁防护](/Office365/SecurityCompliance/office-365-atp) | 修改时间 |
+| 12/14/2018 | [设置 Office 365 ATP 防钓鱼策略](/Office365/SecurityCompliance/set-up-anti-phishing-policies) | 修改时间 |
+| 12/14/2018 | [为 Office 365 高级电子数据展示准备搜索结果](/Office365/SecurityCompliance/prepare-search-results-for-advanced-ediscovery) | 修改时间 |
+| 12/14/2018 | [部署 SharePoint Online 网站以实现三重保护](/Office365/SecurityCompliance/deploy-sharepoint-online-sites-for-three-tiers-of-protection) | 修改时间 |
+| 12/14/2018 | [使用 Azure 信息保护来保护 SharePoint Online 文件](/Office365/SecurityCompliance/protect-sharepoint-online-files-with-azure-information-protection) | 修改时间 |
+| 12/14/2018 | 使用 Office 365 标签和 DLP 保护 SharePoint Online 文件 | 删除 |
+| 12/14/2018 | [保护 SharePoint Online 网站和文件](/Office365/SecurityCompliance/secure-sharepoint-online-sites-and-files) | 修改时间 |
+| 12/14/2018 | 在开发/测试环境中保护 SharePoint Online 网站 | 删除 |
+| 12/14/2018 | [导出内容搜索报告](/Office365/SecurityCompliance/export-a-content-search-report) | 修改时间 |
+
+
+## <a name="week-of-december-17-2018"></a>2018 年 12 月 17，这一周
+
+
+| 发布时间 |主题标题 | 更改 |
+|------|------------|--------|
+| 12/17/2018 | [Office 365 加密风险和保护功能](/Office365/SecurityCompliance/office-365-encryption-risks-and-protections) | 修改时间 |
+| 12/17/2018 | [Office 365 安全性的电子数据展示事例&amp;合规性中心](/Office365/SecurityCompliance/ediscovery-cases) | 修改时间 |
+| 12/18/2018 | [对敏感信息的新 Office 365 邮件加密策略](/Office365/SecurityCompliance/new-ome-encryption-policy) | 修改时间 |
+| 12/19/2018 | [Office 365 恶意软件和勒索软件保护](/Office365/SecurityCompliance/office-365-malware-and-ransomware-protection) | 修改时间 |
+| 12/19/2018 | [保留策略概述](/Office365/SecurityCompliance/retention-policies) | 修改时间 |
+| 12/20/2018 | [从 Office 365 安全性和合规性中心导出内容的搜索结果](/Office365/SecurityCompliance/export-search-results) | 修改时间 |
+| 12/20/2018 | [配置 Office 365 租户以提高安全性](/Office365/SecurityCompliance/tenant-wide-setup-for-increased-security) | 修改时间 |
+| 12/20/2018 | [使用邮件流规则配置 Exchange Online Protection 中筛选批量电子邮件](/Office365/SecurityCompliance/use-transport-rules-to-configure-bulk-email-filtering) | 修改时间 |
+| 12/20/2018 | [在 Office 365 安全&amp;合规中心搜索审核日志](/Office365/SecurityCompliance/search-the-audit-log-in-security-and-compliance) | 修改时间 |
+| 12/21/2018 | 为 OneDrive for Business 站点分配电子数据展示权限 | 删除 |
+| 12/21/2018 | 使用电子数据展示中心搜索所有邮箱和网站 | 删除 |
+| 12/21/2018 | [Office 365 SharePoint Online 数据删除](/Office365/SecurityCompliance/office-365-sharepoint-online-data-deletion) | 修改时间 |
+
+
+## <a name="week-of-december-24-2018"></a>2018 年 12 月 24，这一周
+
+
+| 发布时间 |主题标题 | 更改 |
+|------|------------|--------|
+| 12/26/2018 | [管理 Office 365 高级电子数据展示中的相关性设置](/Office365/SecurityCompliance/manage-relevance-setup-in-advanced-ediscovery) | 修改时间 |
+| 12/26/2018 | [What's new in Office 365 云应用程序安全性](/Office365/SecurityCompliance/new-in-office-365-cas) | 修改时间 |
+| 12/26/2018 | [使用 Office 365 云应用安全管理 OAuth 应用](/Office365/SecurityCompliance/manage-app-permissions-in-ocas) | 修改时间 |
+| 12/26/2018 | [Office 365 云应用安全的 Web 流量日志和数据源](/Office365/SecurityCompliance/web-traffic-logs-and-data-sources-for-ocas) | 修改时间 |
+| 12/27/2018 | [Office 365 Security and Compliance](/Office365/SecurityCompliance/index) | 修改时间 |
