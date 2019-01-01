@@ -92,7 +92,7 @@
 ### [Office 365 中的电子邮件加密](email-encryption.md)
 ### [Office 365 邮件加密 (OME)](ome.md)
 #### [设置全新的 Office 365 邮件加密功能](set-up-new-message-encryption-capabilities.md)
-#### [定义用于加密 Office 365 中的电子邮件的邮件流规则](https://docs.microsoft.com/zh-CN/office365/securitycompliance/define-mail-flow-rules-to-encrypt-mail.md)
+#### [定义用于加密 Office 365 中的电子邮件的邮件流规则](define-mail-flow-rules-to-encrypt-email.md)
 #### [管理 Office 365 邮件加密](manage-office-365-message-encryption.md)
 #### [Office 365 邮件加密常见问题解答](ome-faq.md)
 #### [撤销使用 Office 365 邮件加密进行加密的电子邮件](revoke-ome-encrypted-mail.md)
