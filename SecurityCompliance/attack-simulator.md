@@ -3,7 +3,7 @@ title: Office 365 中的攻击模拟器
 ms.author: deniseb
 author: denisebmsft
 manager: laurawi
-ms.date: 11/09/2018
+ms.date: 01/02/2019
 ms.audience: ITPro
 ms.topic: overview
 ms.service: o365-administration
@@ -13,12 +13,12 @@ search.appverid:
 - MOE150
 ms.assetid: da5845db-c578-4a41-b2cb-5a09689a551b
 description: 作为 Office 365 全局管理员，您可以使用攻击模拟器若要运行您的组织中的实际攻击方案。这可以帮助您确定并查找易受攻击用户前真实攻击点击您的业务。
-ms.openlocfilehash: 9a7e1fd5327b4a764356df110c46ee7a9f496b53
-ms.sourcegitcommit: 2cf7f5bb282c971d33e00f65d9982a3f14aec74e
+ms.openlocfilehash: 1a1d22b0b36ce8b6a2086296be8f8b5d47d79280
+ms.sourcegitcommit: d512c1df01377e305e8d5c0170c822cf78f09565
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/27/2018
-ms.locfileid: "26706436"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "27471995"
 ---
 # <a name="attack-simulator-in-office-365"></a>Office 365 中的攻击模拟器
 
@@ -49,7 +49,7 @@ ms.locfileid: "26706436"
     
 - 您是 Office 365 全局管理员
     
-- 您的组织使用[的 Office 365 用户的多因素身份验证](https://docs.microsoft.com/office365/admin/security-and-compliance/set-up-multi-factor-authentication&view=o365-worldwide)
+- 您的组织使用[的 Office 365 用户的多因素身份验证](https://docs.microsoft.com/office365/admin/security-and-compliance/set-up-multi-factor-authentication?view=o365-worldwide)
  
 - 贵组织拥有[Office 365 威胁智能](office-365-ti.md)与安全中可见的攻击模拟器&amp;合规性中心 (转到**威胁管理** \> **攻击模拟器**)<br/>![威胁管理-攻击模拟器](media/ThreatMgmt-AttackSimulator.png)
 
@@ -64,7 +64,7 @@ ms.locfileid: "26706436"
 
 ![撰写电子邮件正文](media/9bd65af4-1f9d-45c1-8c06-796d7ccfd425.jpg)
   
-可以创建定制直接在**电子邮件正文**字段本身中丰富的 HTML 编辑器，也可以使用 HTML 源代码。有两个重要字段以包含在 HTML 中： 
+可以创建定制直接在**电子邮件正文**字段本身中丰富的 HTML 编辑器，也可以使用 HTML 源代码。
   
 1. 在[安全&amp;合规性中心](https://security.microsoft.com)，选择**威胁管理** \> **攻击模拟器**。
     
@@ -118,7 +118,7 @@ ms.locfileid: "26706436"
     
 3. 指定目标收件人。目标的收件人必须具有 Exchange Online 邮箱为了攻击成功。
     
-4. 指定一组用于攻击的密码。文本文件 (.txt) 可用于您的密码列表。文本文件不能超过 10 MB 文件大小。使用一个密码每行，并确保可在列表中的最后一个密码后包含硬回车。
+4. 指定一组用于攻击的密码。若要执行此操作，您可用于文本 (.txt) 文件的密码列表。文本文件不能超过 10 MB 文件大小。使用一个密码每行，并确保可在列表中的最后一个密码后包含硬回车。
     
 5. 选择**完成**以启动攻击。 
     
