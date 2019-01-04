@@ -18,12 +18,12 @@ search.appverid:
 - MET150
 ms.assetid: 5c8c1db6-d8ac-4dbb-8a7a-f65d452169b9
 description: 而不是实际的 Office 365 安全性内容的搜索结果导出&amp;合规性中心，可以仅导出搜索结果报告。报告中包含搜索结果以及包含有关每个项目将导出的详细信息的文档的摘要。
-ms.openlocfilehash: e15c6550d58701abe9b268455deca0aef60265fb
-ms.sourcegitcommit: 1bc36cd57ab1604f057e2b5d336cf1893ba00125
+ms.openlocfilehash: db6ba2dd58befa782dc3a5968e0034bccfa46855
+ms.sourcegitcommit: ea625737c4be14927f69aa71d4fbd7d7d94d9334
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/15/2018
-ms.locfileid: "27283138"
+ms.lasthandoff: 01/04/2019
+ms.locfileid: "27544123"
 ---
 # <a name="export-a-content-search-report"></a>导出内容搜索报告
 
@@ -54,6 +54,8 @@ ms.locfileid: "27283138"
     **注意：** Microsoft 不制造第三方扩展或 ClickOnce 应用程序加载项。导出搜索结果不受支持的浏览器使用第三方扩展或加载项中不受支持。 
 
 - 如果内容搜索返回的结果的估计总大小超过 20&nbsp;TB，导出报表将失败。若要成功导出该报表，请尝试缩小范围，并重新运行搜索，因此结果的估计的大小是小于 20&nbsp;TB。
+
+- 导出内容的搜索报告针对运行在同一时间单个用户可以运行导出的最大数量的导出的最大数量的计数。有关导出限制的详细信息，请参阅[从 Office 365 安全性和合规性中心的导出内容的搜索结果](export-search-results.md#export-limits)。
 
 ## <a name="generate-and-download-a-content-search-report"></a>生成并下载内容的搜索报告
 

@@ -3,7 +3,7 @@ title: Office 365 安全性内容搜索限制&amp;合规性中心
 ms.author: markjjo
 author: markjjo
 manager: laurawi
-ms.date: 4/30/2018
+ms.date: ''
 ms.audience: Admin
 ms.topic: reference
 ms.service: o365-administration
@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.assetid: 78fe3147-1979-4c41-83bb-aeccf244368d
 description: '了解如何在 Office 365 安全性内容的搜索功能的限制&amp;合规性中心，如同时搜索的最大数量。 '
-ms.openlocfilehash: 917351f380c81ebfabfd4b3ff05a534c65c8f318
-ms.sourcegitcommit: b6473cd6ba3f9ac79dc6a2040fc148020dfbe464
+ms.openlocfilehash: 79142edf2e80378bf6f22474fca55c54fe5cc776
+ms.sourcegitcommit: ea625737c4be14927f69aa71d4fbd7d7d94d9334
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/02/2018
-ms.locfileid: "25358371"
+ms.lasthandoff: 01/04/2019
+ms.locfileid: "27544103"
 ---
 # <a name="limits-for-content-search-in-the-office-365-security-amp-compliance-center"></a>Office 365 安全性内容搜索限制&amp;合规性中心
 
@@ -28,16 +28,7 @@ ms.locfileid: "25358371"
   
 各种限制应用于 Office 365 安全性内容的搜索功能&amp;合规性中心。在**内容搜索**页和电子数据展示事例与关联的搜索上运行此包含搜索。这些限制帮助维护的运行状况和质量提供给 Office 365 组织的服务。也是提供与索引编制的电子邮件在 Exchange Online 的搜索相关的限制。不能修改的内容搜索或电子邮件索引限制，但是，以便您可以考虑这些限制时规划、 运行和故障排除内容搜索您应了解它们。 
   
- **目录**
-  
-[内容搜索限制](limits-for-content-search.md#searchlimits)
-  
-[索引限制电子邮件](limits-for-content-search.md#indexinglimits)
-  
-[详细信息](limits-for-content-search.md#moreinfo)
-  
 ## <a name="content-search-limits"></a>内容搜索限制
-<a name="searchlimits"> </a>
 
 下表列出了安全中的搜索限制&amp;合规性中心。
   
@@ -56,16 +47,13 @@ ms.locfileid: "25358371"
 |最大公用可以预览搜索结果的邮箱数。如果有多于 500 个包含与搜索查询匹配的内容的公用文件夹邮箱，仅前的 500 公用文件夹邮箱与大多数搜索结果将适用于预览。  <br/> |500  <br/> |
 |最大的内容搜索的搜索查询 （包括运算符和条件） 的字符数。  <br/><br/> **注意：** 此限制查询已展开，这意味着将获取查询扩展针对每个关键字后生效。例如，如果搜索查询有 15 关键字和其他参数和条件，查询获取扩展 15 次，每个都与其他参数和查询的条件。因此，即使限制以下可能的搜索查询中的字符数，它是超过此限制可能会导致扩展的查询。<br/> |**邮箱：** 10,000 个  <br/> **网站：** 4000 搜索最多 20 个网站<sup>1</sup>时搜索所有网站或 2,000 个时 <br/> |
 |变体时使用的前缀通配符搜索精确短语搜索查询中或使用前缀通配符和**NEAR**或**ONEAR**布尔运算符时返回的最大数量。  <br/> |10000 <sup>2</sup> <br/> |
-|最小前缀通配符; alpha 字符数例如， `time*`， `one*`，或`set*`。  <br/> |3   <br/> |
+|最小前缀通配符; alpha 字符数例如， `time*`， `one*`，或`set*`。  <br/> |3  <br/> |
 |通过执行操作的"搜索和清除"操作中项目的最大中内容的搜索，您可以删除的邮箱数 (使用**新建 ComplianceSearchAction-清除**命令)。如果您正在执行清除操作操作的内容搜索具有更多的源邮箱超过此限制，则清除操作将失败。有关搜索和清除的详细信息，请参阅[搜索和删除 Office 365 组织中的电子邮件](search-for-and-delete-messages-in-your-organization.md)。<br/> |50,000 个  <br/> |
    
 > [!NOTE]
 > <sup>1</sup>搜索时 SharePoint 和 OneDrive for Business 位置，所搜索的网站的 Url 中的字符在内针对此限制。<br/> <sup>2</sup>对于非短语查询 （一个关键字值，该值不使用双引号内） 我们使用特殊前缀索引。这会告诉我们，word 文档，但是不其中发生在文档中进行。若要执行的短语查询 （用双引号括起来的关键字值），我们需要比较单词的文档内的短语中的位置。这意味着我们不能使用短语查询的前缀索引。在这种情况下，我们内部展开前缀将扩展到; 所有可能的单词的查询例如，`"time*"`可以扩展到`"time OR timer OR times OR timex OR timeboxed OR …"`。10000 是的变量 word 可以扩展到，不与查询匹配的文档数的最大数量。非短语词没有上限。 
   
-[Return to top](limits-for-content-search.md#top)
-  
 ## <a name="indexing-limits-for-email-messages"></a>索引限制电子邮件
-<a name="indexinglimits"> </a>
 
 下表描述了可能会导致作为未编制索引的项目或部分索引的项内容的搜索结果中返回一封电子邮件的索引限制。
   
@@ -80,16 +68,13 @@ ms.locfileid: "25358371"
 |最大分析器输出  <br/> |200 万个字符  <br/> |来自编制索引的分析器的文本输出的最大数量。例如，如果分析程序从文档提取 8 万个字符，只有先 2 万个字符编制索引。  <br/> |
 |最大注释标记  <br/> |200 万个  <br/> |电子邮件编制索引后，每个单词将批注与指定的 word 应编制索引的不同的处理指令。每个处理指令集称为批注令牌。若要维护 Office 365 中的服务质量，没有电子邮件 2 万个注释标记的限制。  <br/> |
 |在索引中的最大正文大小  <br/> |67 万个字符  <br/> |总的电子邮件及其所有附件正文中的字符数。电子邮件编制索引后，为一个字符串串联和所有附件的邮件正文中的所有文字。编制索引此字符串的最大大小为 67 万个字符。  <br/> |
-|正文中的最大唯一令牌  <br/> |1 百万  <br/> |如上文所述，令牌是从内容中提取文本和删除标点符号和空格，然后将其划分为存储在索引中的单词 （称为标记） 的结果。例如，短语`"cat, mouse, bird, dog, dog"`包含 5 的令牌。但这些仅 4 是唯一的标记。没有电子邮件，有助于防止索引变得太大使用随机令牌每 100 万个唯一标记的限制。<br/> |
-   
-[返回顶部](limits-for-content-search.md#top)
+|正文中的最大唯一令牌  <br/> |100 万  <br/> |如上文所述，令牌是从内容中提取文本和删除标点符号和空格，然后将其划分为存储在索引中的单词 （称为标记） 的结果。例如，短语`"cat, mouse, bird, dog, dog"`包含 5 的令牌。但这些仅 4 是唯一的标记。没有电子邮件，有助于防止索引变得太大使用随机令牌每 100 万个唯一标记的限制。<br/> |
   
-## <a name="more-information"></a>详细信息
-<a name="moreinfo"> </a>
+## <a name="more-information"></a>更多信息
 
 如导出搜索结果以及内容索引没有其他限制的内容搜索相关的其他方面。这些限制的说明，请参阅下列主题：
   
-- 
+- [导出内容搜索结果](export-search-results.md#export-limits)
     
 - [处理 Office 365 内容搜索中的部分索引项](partially-indexed-items-in-content-search.md)
     
@@ -102,7 +87,3 @@ ms.locfileid: "25358371"
 - [Office 365 中的内容搜索](content-search.md)
     
 - [内容搜索的关键字查询和搜索条件](keyword-queries-and-search-conditions.md)
-    
-[Return to top](limits-for-content-search.md#top)
-  
-

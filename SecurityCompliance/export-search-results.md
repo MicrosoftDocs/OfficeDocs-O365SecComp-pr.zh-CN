@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 ms.assetid: ed48d448-3714-4c42-85f5-10f75f6a4278
 description: 'Office 365 安全性和合规性中心中的内容搜索搜索结果导出到本地计算机中。电子邮件结果导出为 PST 文件。内容来自 SharePoint 和 OneDrive for Business 网站导出为本机 Office 文档。 '
-ms.openlocfilehash: f4ecdb59b20138e8b159e6056cac791837a84387
-ms.sourcegitcommit: 9f08af5502070a42de22b6d83e3a08c67cc0c619
+ms.openlocfilehash: d67b6aeedd3f01bd21de0e07f42870db7a18767b
+ms.sourcegitcommit: ea625737c4be14927f69aa71d4fbd7d7d94d9334
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "27201576"
+ms.lasthandoff: 01/04/2019
+ms.locfileid: "27544113"
 ---
 # <a name="export-content-search-results-from-the-office-365-security--compliance-center"></a>从 Office 365 安全性和合规性中心导出内容的搜索结果
 
@@ -74,10 +74,6 @@ ms.locfileid: "27201576"
        </defaultProxy>
     </system.net>
     ```
-
-- 请参阅有关导出搜索结果的限制的说明部分。 
-    
-- 可以导出的 PST 文件的最大大小为 10 GB。如果您想要更改此默认大小，您可以编辑用于导出搜索结果的计算机上的 Windows 注册表。请参阅[Change 导出电子数据展示搜索结果时的 PST 文件的大小](change-the-size-of-pst-files-when-exporting-results.md)。
     
 ## <a name="step-1-prepare-search-results-for-export"></a>第 1 步：准备要导出的搜索结果
 
@@ -96,13 +92,13 @@ ms.locfileid: "27201576"
     > [!NOTE]
     > 如果搜索结果不超过 7 天，系统会提示您更新搜索结果。如果发生这种情况，取消导出单击**更新搜索结果**在所选的搜索的详细信息窗格中，然后在结果更新后重新启动导出。 
   
-6. 在**导出搜索结果**页上，在**包括中搜索这些项目**，选择下列选项之一：
+6. 在**导出搜索结果**页上的**输出选项**下，选择下列选项之一：
     
-    - 仅导出索引项
+    - 所有项目，但不包括那些具有无法识别的格式，进行加密，或出于其他原因无法编制索引
     
-    - 导出编制索引和部分，索引项目
+    - 所有项目，包括那些具有无法识别的格式，进行加密，或出于其他原因无法编制索引
     
-    - 仅部分索引的项目导出
+    - 仅具有无法识别的格式的项目进行加密，或出于其他原因无法编制索引
     
     有关导出有关如何部分索引项目的说明，请参阅[详细信息](#more-information)部分。有关部分索引项目的详细信息，请参阅[部分索引内容的搜索功能中的项目](partially-indexed-items-in-content-search.md)。
     
@@ -202,8 +198,9 @@ ms.locfileid: "27201576"
   - 在你的组织中最多可以同时运行 10 个导出。
     
   - 单个用户可以同时运行的三个导出的最大值。
-    
-  - 导出内容的搜索报告不计入任何导出限制。 
+
+  > [!NOTE]
+  > 从内容搜索导出仅报告还针对运行在同一时间和单个用户可以运行导出数的导出数计算。
     
 - 如上文所述，从邮箱和网站的搜索结果上载到 Azure 的存储位置 (如中所述[步骤 1： 准备的搜索结果导出](#step-1-prepare-search-results-for-export)) 每小时 2 gb 的最大速率。
     
