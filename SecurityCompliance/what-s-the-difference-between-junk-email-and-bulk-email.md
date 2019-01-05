@@ -13,12 +13,12 @@ search.appverid:
 - MET150
 ms.assetid: 8079f193-1b40-4081-9e5d-d0e50dfbcc59
 description: 客户有时 askwhat 的垃圾邮件和批量邮件之间的区别？本主题的目的是来解释差并提供有关 Exchange Online 和 Exchange Online Protection (EOP) 中对两者可用的不同选项的信息。
-ms.openlocfilehash: 87f946c7309589595efd3e11e998e0a9f503b651
-ms.sourcegitcommit: e9dca2d6a7838f98bb7eca127fdda2372cda402c
+ms.openlocfilehash: ea3f27bdd9ec2aa586dd55139825fc90390ca736
+ms.sourcegitcommit: b4e69c54c7bf405d37dfeadc5611803bea9554e3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/21/2018
-ms.locfileid: "23003151"
+ms.lasthandoff: 01/04/2019
+ms.locfileid: "27733298"
 ---
 # <a name="whats-the-difference-between-junk-email-and-bulk-email"></a>垃圾邮件和批量邮件之间有什么差异？
 
@@ -41,6 +41,6 @@ ms.locfileid: "23003151"
   
 ### <a name="enable-bulk-mail-sensitivity-control-in-the-content-filter-policy"></a>在内容筛选器策略中启用批量邮件敏感度控件
 
-根据您公司有关批量电子邮件的策略，管理员可以选择分配批量电子邮件的阈值。可以通过 EAC 中的内容筛选器处理来配置相关设置。查看 [配置垃圾邮件筛选器策略](configure-your-spam-filter-policies.md)，了解具体步骤。您可以从 1 - 9 中选择一个阈值设置，其中 1 将大部分批量电子邮件标记为垃圾邮件，9 允许传递大部分批量电子邮件。然后，服务执行配置的操作，如将邮件发送到收件人的"垃圾邮件"文件夹。 
+根据您的公司在批量电子邮件的策略，管理员可以选择分配批量电子邮件的阈值。可以通过在 EAC 中的内容筛选器策略配置设置。签出[配置垃圾邮件筛选器策略](configure-your-spam-filter-policies.md)的步骤。您可以从 1-9，其中 1 将标记为垃圾邮件，大多数批量电子邮件，并 9 允许大多数批量电子邮件传送选择的阈值设置。服务然后执行配置的操作，例如将邮件发送到收件人的垃圾邮件文件夹。 
   
 
