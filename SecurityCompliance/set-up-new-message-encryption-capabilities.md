@@ -12,12 +12,12 @@ search.appverid:
 - MET150
 ms.assetid: 7ff0c040-b25c-4378-9904-b1b50210d00e
 description: 可以使用内置到 Azure 信息保护，您的组织的顶部功能的新 Office 365 邮件加密保护与您的组织内外的人员的电子邮件通信。新的 OME 功能使用其他 Office 365 组织、 Outlook.com、 Gmail 和其他电子邮件服务。
-ms.openlocfilehash: c24b2f9b612b863217df8afd951424d1a89295c9
-ms.sourcegitcommit: d89c24258123a3ffde574a391d59afd3aea8470d
+ms.openlocfilehash: 0f601b425da294fbb2ddbfe1d7497c0d582e3238
+ms.sourcegitcommit: bd1762ccf63c7d2ad8b49a936115171c72fb2c0f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2018
-ms.locfileid: "23955414"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "27750031"
 ---
 # <a name="set-up-new-office-365-message-encryption-capabilities"></a>设置全新的 Office 365 邮件加密功能
 
@@ -43,34 +43,33 @@ ms.locfileid: "23955414"
   
 ### <a name="to-manually-set-up-the-new-capabilities-for-ome"></a>手动设置的新功能，为 OME
 
-1. 确保您的组织具有右订阅。有关订阅的信息，请参阅"哪些订阅我需要使用新的 OME capabilities?"中的[Office 365 邮件加密 FAQ。](ome-faq.md)有关购买订阅 Azure 信息保护信息，请参阅[Azure 信息保护](https://azure.microsoft.com/services/information-protection/)。
-    
+1. 确保您的组织具有右订阅。有关订阅的信息，请参阅"哪些订阅我需要使用新的 OME capabilities?"中的[Office 365 邮件加密 FAQ。](ome-faq.md)。有关购买订阅 Azure 信息保护信息，请参阅[Azure 信息保护](https://azure.microsoft.com/services/information-protection/)。
+
 2. 决定是否要在 Microsoft 管理根密钥的 Azure 信息保护 （默认），或生成并管理此密钥自己 （称为使您自己的项或 BYOK）。如果您想要生成并自己管理此项，需要完成一些步骤之前为 OME 设置的新功能。有关详细信息，请参阅[规划和实现您的 Azure 信息保护租户密钥](https://docs.microsoft.com/information-protection/plan-design/plan-implement-tenant-key)。Microsoft 建议您之前设置 OME 完成这些步骤。
-    
+
 3. 激活 Azure 权限管理 OME 中启用的新功能。有关说明，请参阅[激活 Azure 权限管理](https://docs.microsoft.com/azure/information-protection/deploy-use/activate-service)。当执行此操作时，Office 365 自动启用新的 OME 功能。
-    
+
     > [!TIP]
-    > 在 Web 上的 outlook 缓存其 UI，因此很好办法等待一天之前您尝试使用此客户端的电子邮件的 OME 应用的新功能。用户界面更新以反映新配置之前，新功能以 OME 将不可用。用户界面更新后，用户可以使用适用于 OME 的新功能保护电子邮件。 
+    > 在 Web 上的 outlook 缓存其 UI，因此很好办法等待一天之前您尝试使用此客户端的电子邮件的 OME 应用的新功能。用户界面更新以反映新配置之前，新功能以 OME 将不可用。用户界面更新后，用户可以使用适用于 OME 的新功能保护电子邮件。
   
 4. （可选）设置新的邮件流规则或更新现有定义如何以及何时要对从组织发出的邮件进行加密的 Office 365 的邮件流规则。
-    
+
 ## <a name="verify-that-the-new-capabilities-for-ome-are-configured-properly-by-using-windows-powershell"></a>验证 OME 的新功能正确配置，可以使用 Windows PowerShell
 
 按照以下步骤，若要验证正确配置您的租户 OME 通过 Exchange Online PowerShell 中使用的新功能。
   
-1. 使用 Office 365 组织中具有全局管理员权限的工作或学校帐户，请启动 Windows PowerShell 会话并连接到 Exchange Online。有关说明，请参阅[Connect to Exchange Online PowerShell 中](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell?view=exchange-ps)。
-    
+1. 使用 Office 365 组织中具有全局管理员权限的工作或学校帐户，请启动 Windows PowerShell 会话并连接到 Exchange Online。有关说明，请参阅[Connect to Exchange Online PowerShell 中](https://aka.ms/exopowershell)。
+
 2. 运行 Test-irmconfiguration cmdlet 使用以下语法：
-    
+
     ```Test-IRMConfiguration [-Sender <email address >]```  
 
    例如：
-    
+
     ```Test-IRMConfiguration -Sender securityadmin@contoso.com```
 
-    其中电子邮件地址是用户的 Office 365 组织中的电子邮件地址。可选的提供的发件人电子邮件地址强制执行其他检查系统的同时。
-    
-    您的结果应类似于这些：
+    其中电子邮件地址是用户的 Office 365 组织中的电子邮件地址。可选的提供的发件人电子邮件地址强制执行其他检查系统的同时。您的结果应类似于这些：
+
     
     ```
     Results : Acquiring RMS Templates ...
@@ -87,11 +86,11 @@ ms.locfileid: "23955414"
     ```
 
     其中*Contoso*被替换 Office 365 组织的名称。 
-    
+
     可能不同于上面结果中显示的结果中返回的默认模板的名称。
-    
+
     模板和信息的默认模板简介，请参阅[配置和管理 Azure 信息保护模板](https://docs.microsoft.com/information-protection/deploy-use/configure-policy-templates)。有关不要转发选项，仅用于加密的选项，以及如何创建其他模板或找出哪些权限中包含的现有模板，请参阅[Configuring Azure 权限管理的使用权限](https://docs.microsoft.com/information-protection/deploy-use/configure-usage-rights)。
-    
+
 3. 运行 Remove-pssession cmdlet，以断开 Rights Management 服务。
     
     ```Remove-PSSession $session```
@@ -106,7 +105,6 @@ ms.locfileid: "23955414"
 有关邮件流规则的详细信息，请参阅[定义邮件流规则来加密 Office 365 中的电子邮件](define-mail-flow-rules-to-encrypt-email.md)。
   
 ## <a name="related-topics"></a>相关主题
-<a name="Rules_1"> </a>
 
 [发送、 查看和回复 Outlook 中的加密邮件](https://support.office.com/article/eaa43495-9bbb-4fca-922a-df90dee51980.aspx)
   
@@ -114,6 +112,4 @@ ms.locfileid: "23955414"
   
 [使用远程 PowerShell 连接到 Exchange Online](https://technet.microsoft.com/library/jj984289%28v=exchg.160%29.aspx)
   
-[定义邮件流规则来加密 Office 365 中的电子邮件](define-mail-flow-rules-to-encrypt-email.md)
-  
-
+[定义用于加密 Office 365 中的电子邮件的邮件流规则](define-mail-flow-rules-to-encrypt-email.md)
