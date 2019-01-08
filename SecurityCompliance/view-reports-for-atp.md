@@ -3,7 +3,7 @@ title: Office 365 高级威胁保护的视图报告
 ms.author: deniseb
 author: denisebmsft
 manager: laurawi
-ms.date: 11/27/2018
+ms.date: 01/07/2019
 ms.audience: ITPro
 ms.topic: article
 ms.service: o365-administration
@@ -13,12 +13,12 @@ search.appverid:
 - MOE150
 ms.assetid: e47e838c-d99e-4c0b-b9aa-e66c4fae902f
 description: 了解如何查找和使用适用于 Office 365 高级威胁保护安全中报告&amp;合规性中心。
-ms.openlocfilehash: e9d3088f81d1020e70de4c2260fba81cd469715d
-ms.sourcegitcommit: 2cf7f5bb282c971d33e00f65d9982a3f14aec74e
+ms.openlocfilehash: d387e020e5834d4961e7bda50b418ea11b9f0f4d
+ms.sourcegitcommit: 30faa3ba91cab4c36e3d8d8ed5858d5269ea8a56
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/27/2018
-ms.locfileid: "26706316"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "27749346"
 ---
 # <a name="view-reports-for-office-365-advanced-threat-protection"></a>Office 365 高级威胁保护的视图报告
 
@@ -90,7 +90,7 @@ ATP 报告包括[威胁保护状态报告](#threat-protection-status-report)、 
   
 ## <a name="what-permissions-are-needed-to-view-the-atp-reports"></a>查看 ATP 报告需要哪些权限？
 
-为了查看和使用本文中所述的报告，您必须具有适当的角色分配中的安全性&amp;合规性中心和 Exchange Admin Center。
+若要查看和使用在本文中所述的报告**您必须具有适当的角色分配中的安全性&amp;合规性中心和 Exchange Admin Center**。
 
 - 安全&amp;合规性中心，您必须拥有以下角色分配之一：
     - 组织管理

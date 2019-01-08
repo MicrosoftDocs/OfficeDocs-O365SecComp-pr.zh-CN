@@ -3,7 +3,7 @@ title: 查看安全中的电子邮件安全报告&amp;合规性中心
 ms.author: deniseb
 author: denisebmsft
 manager: laurawi
-ms.date: 11/27/2018
+ms.date: 01/07/2019
 ms.audience: ITPro
 ms.topic: article
 ms.service: o365-administration
@@ -13,12 +13,12 @@ search.appverid:
 - MOE150
 ms.assetid: 3a137e28-1174-42d5-99af-f18868b43e86
 description: 了解如何查找和使用电子邮件安全报告为您的组织与 Office 365 企业版。电子邮件安全报告可安全中&amp;合规性中心。
-ms.openlocfilehash: 72039afd52cd6e9da7dfd05bb67aac2c7e7db001
-ms.sourcegitcommit: 2cf7f5bb282c971d33e00f65d9982a3f14aec74e
+ms.openlocfilehash: 670317707c5695161f23615fb87fe93258e8d95b
+ms.sourcegitcommit: 30faa3ba91cab4c36e3d8d8ed5858d5269ea8a56
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/27/2018
-ms.locfileid: "26706416"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "27749326"
 ---
 # <a name="view-email-security-reports-in-the-security-amp-compliance-center"></a>查看安全中的电子邮件安全报告&amp;合规性中心
 
@@ -28,7 +28,7 @@ ms.locfileid: "26706416"
   
 您的电子邮件安全报告包括：
   
-- [威胁保护状态报告](view-email-security-reports.md#tps)（新） ！ 
+- [威胁保护状态报告](view-email-security-reports.md#tps) 
     
 - [恶意软件检测报告](view-email-security-reports.md#maldet)
     
@@ -44,7 +44,7 @@ ms.locfileid: "26706416"
     
 - [用户报告的邮件报告](view-email-security-reports.md#userreported)（新） ！ 
     
-## <a name="threat-protection-status-report-new"></a>威胁 （新） ！ 的保护状态报告
+## <a name="threat-protection-status-report"></a>威胁保护状态报告
 
 新的**威胁保护状态**报告是显示的已检测和阻止的 Exchange Online Protection 恶意电子邮件的智能报告。此报表显示有关标识为恶意软件或网络钓鱼尝试的电子邮件的信息。 
 
@@ -176,7 +176,7 @@ ms.locfileid: "26706416"
   
 ## <a name="what-permissions-are-needed-to-view-these-reports"></a>查看这些报告需要哪些权限？
 
-为了查看和使用本文中所述的报告，您必须具有适当的角色分配中的安全性&amp;合规性中心和 Exchange Admin Center。
+若要查看和使用在本文中所述的报告**您必须具有适当的角色分配中的安全性&amp;合规性中心和 Exchange Admin Center**。
 
 - 安全&amp;合规性中心，您必须拥有以下角色分配之一：
     - 组织管理

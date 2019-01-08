@@ -11,16 +11,16 @@ localization_priority: Normal
 search.appverid: MOE150
 ms.assetid: 4e8ff113-6361-41e2-915a-6338a7e2a1ed
 description: 部分，索引项目 （还呼叫未编制索引项） 是 Exchange 邮箱项目和 SharePoint 上的文档和 OneDrive 网站的某种原因或者没有完全内容搜索编制索引。本文中，您可以了解项为什么不能用于搜索索引和部分索引项目以返回，识别部分已索引项，搜索错误并使用 PowerShell 脚本来确定贵组织的遭受部分索引的电子邮件项目。
-ms.openlocfilehash: 98f794e80ea8a6016887ff139bc5b546c438f093
-ms.sourcegitcommit: 7956955cd919f6e00b64e4506605a743c5872549
+ms.openlocfilehash: c1003f9907fffa37042ba62d01e4d938250cf570
+ms.sourcegitcommit: 30faa3ba91cab4c36e3d8d8ed5858d5269ea8a56
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/26/2018
-ms.locfileid: "25038075"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "27749336"
 ---
 # <a name="investigating-partially-indexed-items-in-office-365-ediscovery"></a>使用 Office 365 电子数据展示调查部分索引项
 
-从 Office 365 安全性运行内容搜索&amp;合规性中心自动包括部分索引的项目中估计的搜索结果时运行的搜索。部分索引的项目是 Exchange 邮箱项目和 SharePoint 和 OneDrive 上的一些原因或者没有完全编制索引以搜索业务网站的文档。大多数电子邮件和网站文档因为它们归属于[索引限制的电子邮件](limits-for-content-search.md#indexinglimits)成功编制索引。但是，某些项可能会超过这些索引限制，并将部分编制索引。下面是其他原因项不能用于搜索索引以及当您运行内容搜索部分索引项目以返回：
+从 Office 365 安全性运行内容搜索&amp;合规性中心自动包括部分索引的项目中估计的搜索结果时运行的搜索。部分索引的项目是 Exchange 邮箱项目和 SharePoint 和 OneDrive 上的一些原因或者没有完全编制索引以搜索业务网站的文档。大多数电子邮件和网站文档因为它们归属于[索引限制的电子邮件](limits-for-content-search.md#indexing-limits-for-email-messages)成功编制索引。但是，某些项可能会超过这些索引限制，并将部分编制索引。下面是其他原因项不能用于搜索索引以及当您运行内容搜索部分索引项目以返回：
   
 - 电子邮件有文件类型无法进行索引; 附加的的文件在大多数情况下，文件类型是[无法识别或不受支持的索引](partially-indexed-items-in-content-search.md#file-types-not-indexed-for-search)
     
