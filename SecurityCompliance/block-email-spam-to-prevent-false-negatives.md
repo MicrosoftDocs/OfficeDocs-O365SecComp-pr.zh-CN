@@ -13,12 +13,12 @@ search.appverid:
 - MET150
 ms.assetid: da21c0b6-e8f0-4cc8-af2e-5029a9433d59
 description: 本文介绍了设置 Office 365 垃圾邮件筛选器以阻止垃圾邮件并避免出现漏报邮件的技巧。管理员使用 Office 365 反垃圾邮件筛选是为了避免将垃圾邮件发送到用户收件箱。
-ms.openlocfilehash: 3502215dba4097d0643501dd089ec3fe94575c87
-ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+ms.openlocfilehash: d96dfa0cad4ef8c27303c9f77d259d4c8b2b04c9
+ms.sourcegitcommit: 03e64ead7805f3dfa9149252be8606efe50375df
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22525296"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "27769866"
 ---
 # <a name="block-email-spam-with-the-office-365-spam-filter-to-prevent-false-negative-issues"></a>使用 Office 365 垃圾邮件筛选器阻止垃圾邮件以避免出现漏报问题
 
@@ -97,9 +97,8 @@ EOP 旨在使用用户的允许列表和阻止的发件人名单，前提是此�
 > 如果使用邮件流规则将 SCL 值更改为 0（或除 -1 以外的任何值），将会对邮件应用所有 Outlook 垃圾邮件选项。也就是说，将使用阻止的发件人名单和安全列表。但同时也意味着，客户端垃圾邮件筛选处理流程可能会将阻止的发件人名单或安全列表中没有的地址发送的邮件标记为“垃圾邮件”。若要让 Outlook 处理阻止的发件人名单和安全列表，但不使用客户端垃圾邮件筛选器，必须将 Outlook 垃圾邮件选项设置为“无自动筛选”。虽然“无自动筛选”是最新版 Outlook 中的默认选项，但你也应确认此设置是否已就位，以确保不向邮件应用客户端垃圾邮件筛选器。作为管理员，可以按照 [Outlook：用于禁用垃圾邮件 UI 和筛选机制的策略设置](https://support.microsoft.com/zh-CN/kb/2180568)中的说明操作，强制禁用 Outlook 垃圾邮件筛选。
   
 ## <a name="see-also"></a>另请参阅
-<a name="BKMK_please_comment"> </a>
 
-[Office 365 反垃圾邮件保护](anti-spam-protection.md)
+[Office 365 电子邮件反垃圾邮件保护](anti-spam-protection.md)
   
 [使用安全列表或其他技术避免出现标记为“垃圾邮件”的误报电子邮件](prevent-email-from-being-marked-as-spam-0.md)
   
