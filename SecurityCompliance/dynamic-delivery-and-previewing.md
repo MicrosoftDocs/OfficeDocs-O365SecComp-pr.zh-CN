@@ -3,7 +3,7 @@ title: 动态传递和与 Office 365 ATP 安全附件预览
 ms.author: deniseb
 author: denisebmsft
 manager: laurawi
-ms.date: 11/08/2018
+ms.date: 01/08/2019
 ms.audience: Admin
 ms.topic: overview
 ms.service: o365-administration
@@ -13,34 +13,36 @@ search.appverid:
 - MOE150
 ms.assetid: f16c9928-8e3d-4219-b994-271dc9a16272
 description: 将您 ATP 附件安全策略设置，当您选择动态传递，以避免消息延迟和使人们可以预览正在被扫描的附件。
-ms.openlocfilehash: a272253594dda7ea720bb1e8b59e38e870f2f036
-ms.sourcegitcommit: 147768bbe44c8c98c02fa29ae9d882cee4ec2d6b
+ms.openlocfilehash: 95c270e871c3febb13eef8c4374d996fc763315b
+ms.sourcegitcommit: 03e64ead7805f3dfa9149252be8606efe50375df
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "26238424"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "27769826"
 ---
 # <a name="dynamic-delivery-and-previewing-with-office-365-atp-safe-attachments"></a>动态传递和与 Office 365 ATP 安全附件预览
 
 **摘要**： 动态传递是可以为[ATP 安全附件](atp-safe-attachments.md)选择一个选项。阅读此文，了解有关动态交付和[Office 365 中的 ATP 安全附件](atp-safe-attachments.md)中的附件预览功能。
+
+当[ATP 安全附件策略设置](set-up-atp-safe-attachments-policies.md)为贵组织有多种选择如何处理电子邮件附件。其中包括**阻止**、**替换**和**动态传递**。根据 ATP 安全附件策略的配置方式，电子邮件收件人在扫描及其附件时可能遇到次要中电子邮件传递延迟。若要避免出现邮件延迟，请选择**动态传递**。
   
 ## <a name="how-dynamic-delivery-works"></a>动态传递的工作原理
-
-当[ATP 安全附件策略设置](set-up-atp-safe-attachments-policies.md)为贵组织有多种选择如何处理电子邮件附件。其中包括**阻止**、**替换**和**动态传递**。根据 ATP 安全附件策略的配置方式，电子邮件收件人可以次要在遇到延迟电子邮件传递时对其附件进行扫描。若要避免出现邮件延迟，请选择**动态传递**。
   
-动态传递通过将通过一封电子邮件的正文发送给收件人提供每个电子邮件附件的占位符，消除了电子邮件延迟。扫描附件的副本并将其由为安全起见[ATP 安全附件](atp-safe-attachments.md)一直占位符。大多数 Pdf 和 Office ATP 扫描正在进行时，可以在安全模式下预览文档。如果某个附件不可与动态传递预览器兼容，电子邮件收件人请参阅附件占位符，直到 ATP 安全附件扫描已完成。
+动态传递通过将通过一封电子邮件的正文发送给收件人提供每个电子邮件附件的占位符，消除了电子邮件延迟。扫描附件的副本并将其由为安全起见[ATP 安全附件](atp-safe-attachments.md)一直占位符。 
 
 - 每个附件处于清除状态，它是可用于打开或下载。 
 
 - 如果附件确定恶意，它是发送到隔离，某人贵组织的安全工作组 （例如 Office 365 全局管理员或安全管理员） 可以[管理 Office 365 中的隔离的邮件](manage-quarantined-messages-and-files.md)。
 
-使用动态传递电子邮件收件人可以读取和对其电子邮件立即响应，了解，正在分析其附件。 
+大多数 Pdf 和 Office ATP 扫描正在进行时，可以在安全模式下预览文档。如果某个附件不可与动态传递预览器兼容，电子邮件收件人请参阅附件占位符，直到 ATP 安全附件扫描已完成。
+
+使用动态传递，用户可以读取和响应对其电子邮件立即时正在分析其附件。 
 
 ATP 安全附件扫描考虑放置在 Office 365 数据所在的同一区域中。有关数据中心地理区域的详细信息，请参阅[其中是位于数据？](https://products.office.com/where-is-your-data-located?geo=All) 
   
 ## <a name="what-happens-when-someone-forwards-an-email-that-contains-an-attachment"></a>当某人的转发电子邮件时，会发生什么情况包含附件？
 
-假设其[ATP 安全附件策略](set-up-atp-safe-attachments-policies.md)中，为组织使用动态传递有人收到包含附件的电子邮件。现在假设其即将转发给其他人的电子邮件。会发生什么情况？这取决于是否 ATP 安全附件策略中包含其他收件人。
+假设其[ATP 安全附件策略](set-up-atp-safe-attachments-policies.md)中，为组织使用动态传递有人收到包含附件的电子邮件。现在假设此人将电子邮件转发给其他人。会发生什么情况？这取决于是否 ATP 安全附件策略中包含其他收件人。
   
 - 如果收件人使用动态交付选项 ATP 安全附件策略涵盖，收件人会占位符，看到可以预览兼容的文件中。
     
@@ -62,13 +64,13 @@ ATP 安全附件扫描考虑放置在 Office 365 数据所在的同一区域中�
     
 - 外出时的路由，然后再返回到使用自定义规则的用户的邮箱的电子邮件
     
-- 托管的邮箱超出传到其他位置，包括移动 （自动或手动） 的邮件存档文件夹
+- 将托管的邮箱超出传到其他位置，包括移动 （自动或手动） 的电子邮件存档文件夹
     
-- 将被删除的邮件
+- 将被删除的电子邮件
     
 - 处于错误状态的用户的邮箱搜索文件夹
     
-- Exchange Online 管理员已在其中启用 Exclaimer 的环境。（请参阅[使用 ATP 动态传递和 Exclaimer 时都未将发送带附件的邮件](https://support.microsoft.com/help/4014438/messages-with-attachments-are-not-delivered-when-atp-dynamic-delivery)）
+- Exchange Online 管理员已在其中启用 Exclaimer 的环境。若要解决此问题，请参阅[使用 ATP 动态传递和 Exclaimer 时都未将发送带附件的邮件](https://support.microsoft.com/help/4014438/messages-with-attachments-are-not-delivered-when-atp-dynamic-delivery)
 
-- 使用安全/多用途 Internet 邮件扩展 ([S/MIME](s-mime-for-message-signing-and-encryption.md)) 加密的邮件
+- 使用[安全/多用途 Internet 邮件扩展 (S/MIME)](s-mime-for-message-signing-and-encryption.md)加密的邮件）
     

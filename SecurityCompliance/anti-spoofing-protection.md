@@ -12,12 +12,12 @@ search.appverid:
 - MET150
 ms.assetid: d24bb387-c65d-486e-93e7-06a4f1a436c0
 description: 本文介绍如何 Office 365 缓解了对网络钓鱼攻击使用伪造发件人域，即，造假的域。这是通过实现通过分析邮件和阻止的那些类型的值可以是经过 neithe 身份验证通过使用标准电子邮件身份验证方法，也其他发件人信誉方法。实现此更改是为了减少向公开 Office 365 中的组织的网络钓鱼攻击的数。
-ms.openlocfilehash: 95f4995b6447870700bc483f205ca3ff831045f5
-ms.sourcegitcommit: 8c5a88433cff23c59b436260808cf3d91b06fdef
+ms.openlocfilehash: 19e7ea957592a486a559dac222a51139bf79b574
+ms.sourcegitcommit: 03e64ead7805f3dfa9149252be8606efe50375df
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "27194713"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "27769856"
 ---
 # <a name="anti-spoofing-protection-in-office-365"></a>Office 365 中的防欺骗保护
 
@@ -414,21 +414,21 @@ Set-PhishFilterPolicy -Identity Default -SpoofAllowBlockList $UpdateSpoofedSende
   
 |**优先级**|**策略**|**类别**|**其中托管？**|**应用于**|
 |:-----|:-----|:-----|:-----|:-----|
-|1   <br/> |恶意软件  <br/> |MALW  <br/> |[恶意软件策略](https://technet.microsoft.com/en-us/library/jj200745%28v=exchg.150%29.aspx) <br/> |所有组织  <br/> |
-|2   <br/> |网络钓鱼  <br/> |PHSH  <br/> |[承载的内容筛选器策略](https://technet.microsoft.com/library/jj200684%28v=exchg.150%29.aspx) <br/> |所有组织  <br/> |
-|3   <br/> |可信度高的垃圾邮件  <br/> |HSPM  <br/> |[承载的内容筛选器策略](https://technet.microsoft.com/library/jj200684%28v=exchg.150%29.aspx) <br/> |所有组织  <br/> |
-|4   <br/> |欺骗  <br/> |欺骗  <br/> |[防钓鱼策略](https://go.microsoft.com/fwlink/?linkid=864553)，[欺骗智能](https://support.office.com/article/Learn-more-about-spoof-intelligence-978c3173-3578-4286-aaf4-8a10951978bf) <br/> |所有组织  <br/> |
-|5   <br/> |垃圾邮件  <br/> |SPM  <br/> |[承载的内容筛选器策略](https://technet.microsoft.com/library/jj200684%28v=exchg.150%29.aspx) <br/> |所有组织  <br/> |
-|6   <br/> |批量  <br/> |批量  <br/> |[承载的内容筛选器策略](https://technet.microsoft.com/library/jj200684%28v=exchg.150%29.aspx) <br/> |所有组织  <br/> |
-|7   <br/> |域模拟  <br/> |DIMP  <br/> |[防钓鱼策略](https://go.microsoft.com/fwlink/?linkid=864553) <br/> |仅组织 ATP  <br/> |
-|8   <br/> |用户模拟  <br/> |UIMP  <br/> |[防钓鱼策略](https://go.microsoft.com/fwlink/?linkid=864553) <br/> |仅组织 ATP <br/> |
+|1  <br/> |恶意软件  <br/> |MALW  <br/> |[恶意软件策略](https://technet.microsoft.com/en-us/library/jj200745%28v=exchg.150%29.aspx) <br/> |所有组织  <br/> |
+|2  <br/> |网络钓鱼  <br/> |PHSH  <br/> |[承载的内容筛选器策略](https://technet.microsoft.com/library/jj200684%28v=exchg.150%29.aspx) <br/> |所有组织  <br/> |
+|3  <br/> |可信度高的垃圾邮件  <br/> |HSPM  <br/> |[承载的内容筛选器策略](https://technet.microsoft.com/library/jj200684%28v=exchg.150%29.aspx) <br/> |所有组织  <br/> |
+|4  <br/> |欺骗  <br/> |欺骗  <br/> |[防钓鱼策略](https://go.microsoft.com/fwlink/?linkid=864553)，[欺骗智能](https://support.office.com/article/Learn-more-about-spoof-intelligence-978c3173-3578-4286-aaf4-8a10951978bf) <br/> |所有组织  <br/> |
+|5  <br/> |垃圾邮件  <br/> |SPM  <br/> |[承载的内容筛选器策略](https://technet.microsoft.com/library/jj200684%28v=exchg.150%29.aspx) <br/> |所有组织  <br/> |
+|6  <br/> |批量  <br/> |批量  <br/> |[承载的内容筛选器策略](https://technet.microsoft.com/library/jj200684%28v=exchg.150%29.aspx) <br/> |所有组织  <br/> |
+|7  <br/> |域模拟  <br/> |DIMP  <br/> |[防钓鱼策略](https://go.microsoft.com/fwlink/?linkid=864553) <br/> |仅组织 ATP  <br/> |
+|8  <br/> |用户模拟  <br/> |UIMP  <br/> |[防钓鱼策略](https://go.microsoft.com/fwlink/?linkid=864553) <br/> |仅组织 ATP <br/> |
    
 如果您有多个不同的防钓鱼策略，将应用的最高优先级的一个。例如，假设您有两个策略：
   
 |**策略**|**优先级**|**用户/域模拟**|**反欺骗**|
 |:-----|:-----|:-----|:-----|
-|A  <br/> |1   <br/> |On  <br/> |Off  <br/> |
-|B  <br/> |2   <br/> |关  <br/> |位置  <br/> |
+|A  <br/> |1  <br/> |On  <br/> |Off  <br/> |
+|B  <br/> |2  <br/> |关  <br/> |位置  <br/> |
    
 如果一条消息起作用，并被标识为欺骗和用户模拟和一组相同的用户范围的策略和策略 B，则邮件将被视为欺骗但没有操作应用相防欺骗处于关闭状态并在用户模拟 (8) 比更高的优先级 (4) 欺骗运行。
   
@@ -456,7 +456,7 @@ Set-PhishFilterPolicy -Identity Default -SpoofAllowBlockList $UpdateSpoofedSende
   
 ![收件人重写的路由关系图](media/070d90d1-50a0-42e4-9fd3-920bc99a7cad.jpg)
   
-域 contoso.com 的 MX 记录指向的内部服务器，同时域 @office365.contoso.net MX 记录指向在 Office 365，因为它包含\*。 protection.outlook.com，或\*。 eo.outlook.com 的 MX 记录中：
+域 contoso.com 的 MX 记录指向内部部署服务器，同时域 @office365.contoso.net MX 记录指向在 Office 365，因为它包含\*。 protection.outlook.com，或\*。 eo.outlook.com 的 MX 记录中：
   
 ![MX 记录指向 Office 365，因此可能收件人重写](media/4101ad51-ef92-4907-b466-b41d14d344ca.jpg)
   

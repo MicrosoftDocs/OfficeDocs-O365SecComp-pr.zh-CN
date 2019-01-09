@@ -1,5 +1,5 @@
 ---
-title: 控制在 Office 365 中的出站垃圾邮件
+title: 控制 Office 365 中的出站垃圾邮件
 ms.author: krowley
 author: kccross
 manager: laurawi
@@ -12,14 +12,14 @@ search.appverid:
 - MOE150
 ms.assetid: 6a601501-a6a8-4559-b2e7-56b59c96a586
 description: 如果您的组织发送大量的批量邮件标记为垃圾邮件，您无法获取阻止发送电子邮件与 Office 365。阅读此文，了解有关发生此问题，以及有关该产品可实现的功能。
-ms.openlocfilehash: 916a062d08e01954e7736b6f22d297aea04baf28
-ms.sourcegitcommit: 17dda7ece5c9e884944a92ac0f842cf1e62ec506
+ms.openlocfilehash: a18e584a260218a53494ef49dd2d7380a0a9a3f1
+ms.sourcegitcommit: 03e64ead7805f3dfa9149252be8606efe50375df
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/14/2018
-ms.locfileid: "23977577"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "27769778"
 ---
-# <a name="controlling-outbound-spam-in-office-365"></a>控制在 Office 365 中的出站垃圾邮件
+# <a name="controlling-outbound-spam-in-office-365"></a>控制 Office 365 中的出站垃圾邮件
 
 我们需要认真地管理出站垃圾邮件，因为我们是共享的服务。 有许多客户后面共享资源，其中如果一个客户发送出站垃圾邮件，则它会降低服务的出站 IP 信誉和影响的其他客户的电子邮件的成功的可交付性池中。如果客户 B 会发送垃圾邮件和各种第三方 IP blocklists 列表它使用的 IP 地址，则向客户 A 不平等。
 
@@ -50,7 +50,7 @@ ms.locfileid: "23977577"
 
 很难想要发送大量与该服务防止受到攻击的帐户和与较差的邮件列表获取做法的批量邮件发件人的电子邮件客户之间的平衡。同样，出站 IP 上第三方 blocklist 登录的成本是高于阻止发送出站电子邮件客户。如在[Exchange Online Service Description](https://technet.microsoft.com/en-us/library/exchange-online-limits.aspx#Receiving and sending limits)中所述，使用 EOP 发送批量电子邮件不支持使用的服务和仅允许基于"最大努力"。对于想发送批量电子邮件的客户，我们建议：
 
-答：**发送批量电子邮件通过其自己的内部部署邮件服务器**。这意味着客户需要维护其自己的电子邮件基础结构这种类型的电子邮件。
+答：**将通过其自己的本地批量电子邮件发送邮件服务器**。这意味着客户需要维护其自己的电子邮件基础结构这种类型的电子邮件。
 
 b.**使用第三方批量 emailer 发送大量通信**。有几个第三方批量邮件发件人其唯一业务会发送批量电子邮件。它们可以与客户合作以确保它们已良好在通过做法并拥有专用于强制实施该资源。 
 

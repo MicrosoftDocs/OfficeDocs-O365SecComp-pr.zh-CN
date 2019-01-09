@@ -13,12 +13,12 @@ search.appverid:
 - MOE150
 ms.assetid: 6a601501-a6a8-4559-b2e7-56b59c96a586
 description: 如果您的组织发送大量的批量邮件标记为垃圾邮件，您无法获取阻止发送电子邮件与 Office 365。阅读此文，了解有关发生此问题，以及有关该产品可实现的功能。
-ms.openlocfilehash: 947ea4ed7a37b2ba1c5332aa07582fa4c4949eb0
-ms.sourcegitcommit: 17c7e18d7d00135b1af40cbea117c9a817a41117
+ms.openlocfilehash: 2d198bc1b61da429f45f0d1f54c63876d59d890f
+ms.sourcegitcommit: 03e64ead7805f3dfa9149252be8606efe50375df
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/24/2018
-ms.locfileid: "24972244"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "27769806"
 ---
 # <a name="controlling-outbound-spam-in-office-365"></a>控制 Office 365 中的出站垃圾邮件
 
@@ -47,7 +47,7 @@ ms.locfileid: "24972244"
 
 很难想要发送大量与该服务防止受到攻击的帐户和与较差的邮件列表获取做法的批量邮件发件人的电子邮件客户之间的平衡。同样，出站 IP 上第三方 blocklist 登录的成本是高于阻止发送出站电子邮件客户。如在[Exchange Online Service Description](https://technet.microsoft.com/library/exchange-online-limits.aspx#RecipientLimits)中所述，使用 EOP 发送批量电子邮件不支持使用的服务和仅允许基于"最大努力"。对于想发送批量电子邮件的客户，我们建议：
 
-1. **发送批量电子邮件通过其自己的内部部署邮件服务器**。这意味着客户需要维护其自己的电子邮件基础结构这种类型的电子邮件。
+1. **将通过其自己的本地批量电子邮件发送邮件服务器**。这意味着客户需要维护其自己的电子邮件基础结构这种类型的电子邮件。
 
 2. **使用第三方批量 emailer 发送大量通信**。有几个第三方批量邮件发件人其唯一业务会发送批量电子邮件。它们可以与客户合作以确保它们已良好在通过做法并拥有专用于强制实施该资源。 
 
