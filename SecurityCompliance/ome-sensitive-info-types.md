@@ -3,7 +3,7 @@ title: 对敏感信息的新 Office 365 邮件加密策略
 ms.author: krowley
 author: kccross
 manager: laurawi
-ms.date: 1/7/2019
+ms.date: 1/9/2019
 ROBOTS: NOINDEX, NOFOLLOW
 audience: ITPro
 ms.topic: article
@@ -13,12 +13,12 @@ search.appverid:
 - MET150
 ms.collection: Strat_O365_Enterprise
 description: 摘要： 自动应用于 Office 365 邮件加密策略向所有租户推出的敏感信息类型。
-ms.openlocfilehash: f5996707d1cafe8dc1bf90856878de0a4fb7b77b
-ms.sourcegitcommit: 30faa3ba91cab4c36e3d8d8ed5858d5269ea8a56
+ms.openlocfilehash: a8cd132af2b1429698ea92779a3c54559e2b13e2
+ms.sourcegitcommit: b936a2fd4b7f7a7099b96cc29580ed55bdb8bf2b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/08/2019
-ms.locfileid: "27752080"
+ms.lasthandoff: 01/10/2019
+ms.locfileid: "27789450"
 ---
 # <a name="office-365-message-encryption-policy-for-sensitive-information"></a>Office 365 邮件加密敏感信息策略
 
@@ -30,7 +30,7 @@ ms.locfileid: "27752080"
 
 ## <a name="sensitive-information-type-policy-details"></a>敏感信息类型策略的详细信息
 
-Exchange 邮件流规则将创建组织中的将自动加密转与组织外部的电子邮件*仅加密*如果它们包含下列敏感信息类型的策略：
+Exchange 邮件流规则将创建组织中的将自动加密转与组织外部的电子邮件*仅加密*如果电子邮件或其附件包含下列敏感信息类型的策略：
 
 - ABA 银行代号
 - 信用卡号
@@ -70,6 +70,6 @@ Exchange 邮件流规则将创建组织中的将自动加密转与组织外部�
    Set-IRMConfiguration -AutomaticServiceUpdateEnabled $false
    ```
 
-## <a name="how-do-i-disable-the-automatic-policy"></a>如何禁用自动策略？
+## <a name="how-do-i-disable-or-customize-the-automatic-policy"></a>如何禁用或自定义自动策略？
 
-如果您未选择退出此更改，并且已创建 Exchange 邮件规则，您可以[禁用相应的规则](https://docs.microsoft.com/exchange/security-and-compliance/mail-flow-rules/manage-mail-flow-rules#enable-or-disable-a-mail-flow-rule)，转到**邮件流** > **规则**中 Exchange 管理员中心 (EAC) 和禁用规则"*加密出站敏感的电子邮件 （外出框规则）*"。
+如果您未选择退出此更改，并且已创建 Exchange 邮件流规则，您可以[禁用或编辑该规则](https://docs.microsoft.com/exchange/security-and-compliance/mail-flow-rules/manage-mail-flow-rules#enable-or-disable-a-mail-flow-rule)，转到**邮件流** > **规则**中 Exchange 管理员中心 (EAC)，并禁用"*进行加密的规则出站敏感的电子邮件 （外出框规则）*"。
