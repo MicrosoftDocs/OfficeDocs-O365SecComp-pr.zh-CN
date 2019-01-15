@@ -12,43 +12,43 @@ search.appverid:
 - MOE150
 ms.assetid: ba919c73-d021-404d-9850-eec57e78678c
 description: 阅读此文，了解如何启用 Office 365 高级安全管理，由 Microsoft Azure 中的云应用程序安全性。
-ms.openlocfilehash: 586ebc5f496652e05b4ab6d2421fa9bc42603895
-ms.sourcegitcommit: 2cf7f5bb282c971d33e00f65d9982a3f14aec74e
+ms.openlocfilehash: 8964a0b413b0350188c7f61638d04032534e5374
+ms.sourcegitcommit: 9034809b6f308bedc3b8ddcca8242586b5c30f94
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/27/2018
-ms.locfileid: "26706286"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "28014784"
 ---
-# <a name="turn-on-office-365-cloud-app-security"></a><span data-ttu-id="e5273-103">开启 Office 365 云应用安全</span><span class="sxs-lookup"><span data-stu-id="e5273-103">Turn on Office 365 Cloud App Security</span></span>
+# <a name="turn-on-office-365-cloud-app-security"></a><span data-ttu-id="0ce7d-103">开启 Office 365 云应用安全</span><span class="sxs-lookup"><span data-stu-id="0ce7d-103">Turn on Office 365 Cloud App Security</span></span>
   
-|<span data-ttu-id="e5273-104">评估 \* *\>*\*</span><span class="sxs-lookup"><span data-stu-id="e5273-104">\*\*\*\*Evaluation\*\* \>\*\*</span></span>|<span data-ttu-id="e5273-105">规划 \* *\>*\*</span><span class="sxs-lookup"><span data-stu-id="e5273-105">\*\*\*\*Planning\*\* \>\*\*</span></span>|<span data-ttu-id="e5273-106">部署 \* *\>*\*</span><span class="sxs-lookup"><span data-stu-id="e5273-106">\*\*\*\*Deployment\*\* \>\*\*</span></span>|<span data-ttu-id="e5273-107">使用率 \*\*\*</span><span class="sxs-lookup"><span data-stu-id="e5273-107">\*\*\*\*Utilization\*\*\*\*</span></span>|
+|<span data-ttu-id="0ce7d-104">评估 \* *\>*\*</span><span class="sxs-lookup"><span data-stu-id="0ce7d-104">\*\*\*\*Evaluation\*\* \>\*\*</span></span>|<span data-ttu-id="0ce7d-105">规划 \* *\>*\*</span><span class="sxs-lookup"><span data-stu-id="0ce7d-105">\*\*\*\*Planning\*\* \>\*\*</span></span>|<span data-ttu-id="0ce7d-106">部署 \* *\>*\*</span><span class="sxs-lookup"><span data-stu-id="0ce7d-106">\*\*\*\*Deployment\*\* \>\*\*</span></span>|<span data-ttu-id="0ce7d-107">使用率 \*\*\*</span><span class="sxs-lookup"><span data-stu-id="0ce7d-107">\*\*\*\*Utilization\*\*\*\*</span></span>|
 |:-----|:-----|:-----|:-----|
-|[<span data-ttu-id="e5273-108">启动评估</span><span class="sxs-lookup"><span data-stu-id="e5273-108">Start evaluating</span></span>](office-365-cas-overview.md) <br/> |[<span data-ttu-id="e5273-109">开始规划</span><span class="sxs-lookup"><span data-stu-id="e5273-109">Start planning</span></span>](get-ready-for-office-365-cas.md) <br/> |<span data-ttu-id="e5273-110">在这里 ！</span><span class="sxs-lookup"><span data-stu-id="e5273-110">You are here!</span></span>  <br/> [<span data-ttu-id="e5273-111">后续步骤</span><span class="sxs-lookup"><span data-stu-id="e5273-111">Next step</span></span>](activity-policies-and-alerts.md) <br/> |[<span data-ttu-id="e5273-112">开始利用</span><span class="sxs-lookup"><span data-stu-id="e5273-112">Start utilizing</span></span>](utilization-activities-for-ocas.md) <br/> |
+|[<span data-ttu-id="0ce7d-108">启动评估</span><span class="sxs-lookup"><span data-stu-id="0ce7d-108">Start evaluating</span></span>](office-365-cas-overview.md) <br/> |[<span data-ttu-id="0ce7d-109">开始规划</span><span class="sxs-lookup"><span data-stu-id="0ce7d-109">Start planning</span></span>](get-ready-for-office-365-cas.md) <br/> |<span data-ttu-id="0ce7d-110">在这里 ！</span><span class="sxs-lookup"><span data-stu-id="0ce7d-110">You are here!</span></span>  <br/> [<span data-ttu-id="0ce7d-111">后续步骤</span><span class="sxs-lookup"><span data-stu-id="0ce7d-111">Next step</span></span>](activity-policies-and-alerts.md) <br/> |[<span data-ttu-id="0ce7d-112">开始利用</span><span class="sxs-lookup"><span data-stu-id="0ce7d-112">Start utilizing</span></span>](utilization-activities-for-ocas.md) <br/> |
   
-## <a name="turn-on-office-365-cloud-app-security"></a><span data-ttu-id="e5273-113">开启 Office 365 云应用安全</span><span class="sxs-lookup"><span data-stu-id="e5273-113">Turn on Office 365 Cloud App Security</span></span>
+## <a name="turn-on-office-365-cloud-app-security"></a><span data-ttu-id="0ce7d-113">开启 Office 365 云应用安全</span><span class="sxs-lookup"><span data-stu-id="0ce7d-113">Turn on Office 365 Cloud App Security</span></span>
 
 > [!IMPORTANT]
-> <span data-ttu-id="e5273-p101">您必须是要执行以下任务的全局管理员或 security 管理员程序。若要了解详细信息，请参阅[Permissions in Office 365 安全性&amp;合规性中心](permissions-in-the-security-and-compliance-center.md)。按顺序对 Office 365 云应用程序安全性，以更正，针对您的 Office 365 环境**必须打开审核日志记录**。有关详细信息，请参阅[打开或关闭，打开 Office 365 审核日志搜索](turn-audit-log-search-on-or-off.md)。</span><span class="sxs-lookup"><span data-stu-id="e5273-p101">You must be a global administrator or security administrator to perform the following task. To learn more, see [Permissions in the Office 365 Security &amp; Compliance Center](permissions-in-the-security-and-compliance-center.md). In order for Office 365 Cloud App Security to work correct, **audit logging must be turned on** for your Office 365 environment. For more information, see [Turn Office 365 audit log search on or off](turn-audit-log-search-on-or-off.md).</span></span> 
+> <span data-ttu-id="0ce7d-p101">您必须是要执行以下任务的全局管理员或 security 管理员程序。若要了解详细信息，请参阅[Permissions in Office 365 安全性&amp;合规性中心](permissions-in-the-security-and-compliance-center.md)。按顺序对 Office 365 云应用程序安全性，以更正，针对您的 Office 365 环境**必须打开审核日志记录**。有关详细信息，请参阅[打开或关闭，打开 Office 365 审核日志搜索](turn-audit-log-search-on-or-off.md)。</span><span class="sxs-lookup"><span data-stu-id="0ce7d-p101">You must be a global administrator or security administrator to perform the following task. To learn more, see [Permissions in the Office 365 Security &amp; Compliance Center](permissions-in-the-security-and-compliance-center.md). In order for Office 365 Cloud App Security to work correct, **audit logging must be turned on** for your Office 365 environment. For more information, see [Turn Office 365 audit log search on or off](turn-audit-log-search-on-or-off.md).</span></span> 
   
-1. <span data-ttu-id="e5273-p102">以全局管理员或 security 管理员程序中，转到[https://security.microsoft.com](https://security.microsoft.com)和 Office 365 中使用您的工作或学校帐户登录。(您将转到安全&amp;合规性中心。)</span><span class="sxs-lookup"><span data-stu-id="e5273-p102">As a global administrator or security administrator, go to [https://security.microsoft.com](https://security.microsoft.com) and sign in using your work or school account for Office 365. (This takes you to the Security &amp; Compliance Center.)</span></span> 
+1. <span data-ttu-id="0ce7d-p102">以全局管理员或 security 管理员程序中，转到[https://protection.office.com](https://security.microsoft.com)和 Office 365 中使用您的工作或学校帐户登录。(您将转到安全&amp;合规性中心。)</span><span class="sxs-lookup"><span data-stu-id="0ce7d-p102">As a global administrator or security administrator, go to [https://protection.office.com](https://security.microsoft.com) and sign in using your work or school account for Office 365. (This takes you to the Security &amp; Compliance Center.)</span></span> 
     
-2. <span data-ttu-id="e5273-120">转到**通知** \> **管理高级通知**。</span><span class="sxs-lookup"><span data-stu-id="e5273-120">Go to **Alerts** \> **Manage advanced alerts**.</span></span>
+2. <span data-ttu-id="0ce7d-120">转到**通知** \> **管理高级通知**。</span><span class="sxs-lookup"><span data-stu-id="0ce7d-120">Go to **Alerts** \> **Manage advanced alerts**.</span></span>
     
-3. <span data-ttu-id="e5273-121">选择**打开 Office 365 云应用程序安全性**。</span><span class="sxs-lookup"><span data-stu-id="e5273-121">Select **Turn on Office 365 Cloud App Security**.</span></span>
+3. <span data-ttu-id="0ce7d-121">选择**打开 Office 365 云应用程序安全性**。</span><span class="sxs-lookup"><span data-stu-id="0ce7d-121">Select **Turn on Office 365 Cloud App Security**.</span></span>
     
-4. <span data-ttu-id="e5273-122">选择**转到 Office 365 云应用程序安全性**。</span><span class="sxs-lookup"><span data-stu-id="e5273-122">Choose **Go to Office 365 Cloud App Security**.</span></span><br/><span data-ttu-id="e5273-123">![安全中&amp;合规性中心中，选择管理高级通知转到 Office 365 云应用程序安全性](media/958632d4-03e3-4ade-8e22-d5509db6fca7.png)</span><span class="sxs-lookup"><span data-stu-id="e5273-123">![In the Security &amp; Compliance Center, choose Manage Advanced Alerts to go to Office 365 Cloud App Security](media/958632d4-03e3-4ade-8e22-d5509db6fca7.png)</span></span><br/><span data-ttu-id="e5273-124">转到 Office 365 云应用程序安全性门户，可在其中查看报告和创建或编辑您的策略。</span><span class="sxs-lookup"><span data-stu-id="e5273-124">This takes you to the Office 365 Cloud App Security portal, where you can view reports and create or edit your policies.</span></span>
+4. <span data-ttu-id="0ce7d-122">选择**转到 Office 365 云应用程序安全性**。</span><span class="sxs-lookup"><span data-stu-id="0ce7d-122">Choose **Go to Office 365 Cloud App Security**.</span></span><br/><span data-ttu-id="0ce7d-123">![安全中&amp;合规性中心中，选择管理高级通知转到 Office 365 云应用程序安全性](media/958632d4-03e3-4ade-8e22-d5509db6fca7.png)</span><span class="sxs-lookup"><span data-stu-id="0ce7d-123">![In the Security &amp; Compliance Center, choose Manage Advanced Alerts to go to Office 365 Cloud App Security](media/958632d4-03e3-4ade-8e22-d5509db6fca7.png)</span></span><br/><span data-ttu-id="0ce7d-124">转到 Office 365 云应用程序安全性门户，可在其中查看报告和创建或编辑您的策略。</span><span class="sxs-lookup"><span data-stu-id="0ce7d-124">This takes you to the Office 365 Cloud App Security portal, where you can view reports and create or edit your policies.</span></span>
     
 > [!NOTE]
-> <span data-ttu-id="e5273-p103">当您打开 Office 365 云应用程序安全性时，您的 Office 365 用户帐户和用户活动的审核信息传输到[Microsoft 云应用程序安全性](https://aka.ms/whatiscas)。这将允许 Office 365 提供高级的通知、 筛选和其他功能，以便您可以获取信息并执行有关可疑活动的操作。</span><span class="sxs-lookup"><span data-stu-id="e5273-p103">When you turn on Office 365 Cloud App Security, auditing information about your Office 365 user accounts and user activities is transferred to [Microsoft Cloud App Security](https://aka.ms/whatiscas). This allows Office 365 to provide advanced alerts, filtering, and other features so you can get information and take action about suspicious activities.</span></span> 
+> <span data-ttu-id="0ce7d-p103">当您打开 Office 365 云应用程序安全性时，您的 Office 365 用户帐户和用户活动的审核信息传输到[Microsoft 云应用程序安全性](https://aka.ms/whatiscas)。这将允许 Office 365 提供高级的通知、 筛选和其他功能，以便您可以获取信息并执行有关可疑活动的操作。</span><span class="sxs-lookup"><span data-stu-id="0ce7d-p103">When you turn on Office 365 Cloud App Security, auditing information about your Office 365 user accounts and user activities is transferred to [Microsoft Cloud App Security](https://aka.ms/whatiscas). This allows Office 365 to provide advanced alerts, filtering, and other features so you can get information and take action about suspicious activities.</span></span> 
   
-## <a name="next-steps"></a><span data-ttu-id="e5273-127">后续步骤</span><span class="sxs-lookup"><span data-stu-id="e5273-127">Next steps</span></span>
+## <a name="next-steps"></a><span data-ttu-id="0ce7d-127">后续步骤</span><span class="sxs-lookup"><span data-stu-id="0ce7d-127">Next steps</span></span>
 
-- [<span data-ttu-id="e5273-128">活动策略</span><span class="sxs-lookup"><span data-stu-id="e5273-128">Activity policies</span></span>](activity-policies-and-alerts.md)
+- [<span data-ttu-id="0ce7d-128">活动策略</span><span class="sxs-lookup"><span data-stu-id="0ce7d-128">Activity policies</span></span>](activity-policies-and-alerts.md)
     
-- [<span data-ttu-id="e5273-129">异常检测策略</span><span class="sxs-lookup"><span data-stu-id="e5273-129">Anomaly detection policies</span></span>](anomaly-detection-policies-in-ocas.md)
+- [<span data-ttu-id="0ce7d-129">异常检测策略</span><span class="sxs-lookup"><span data-stu-id="0ce7d-129">Anomaly detection policies</span></span>](anomaly-detection-policies-in-ocas.md)
     
-- [<span data-ttu-id="e5273-130">将 SIEM 服务器集成</span><span class="sxs-lookup"><span data-stu-id="e5273-130">Integrate your SIEM server</span></span>](integrate-your-siem-server-with-office-365-cas.md)
+- [<span data-ttu-id="0ce7d-130">将 SIEM 服务器集成</span><span class="sxs-lookup"><span data-stu-id="0ce7d-130">Integrate your SIEM server</span></span>](integrate-your-siem-server-with-office-365-cas.md)
     
-- [<span data-ttu-id="e5273-131">若要简化管理您 IP 地址进行分组</span><span class="sxs-lookup"><span data-stu-id="e5273-131">Group your IP addresses to simplify management</span></span>](group-your-ip-addresses-in-ocas.md)
+- [<span data-ttu-id="0ce7d-131">若要简化管理您 IP 地址进行分组</span><span class="sxs-lookup"><span data-stu-id="0ce7d-131">Group your IP addresses to simplify management</span></span>](group-your-ip-addresses-in-ocas.md)
     
 
