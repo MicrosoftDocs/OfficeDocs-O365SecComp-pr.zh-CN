@@ -12,23 +12,23 @@ search.appverid:
 - MOE150
 ms.assetid: 1a7be622-f6a5-4ce1-a343-f249475334f6
 description: 了解如何设置和下载的自定义日期范围和安全中的筛选器使用的报表&amp;合规性中心。
-ms.openlocfilehash: 4bfd2b0cc9d0076085e312c7478a0f356b4f39d5
-ms.sourcegitcommit: 2cf7f5bb282c971d33e00f65d9982a3f14aec74e
+ms.openlocfilehash: 313caf1e6d7a4cdca74979c3a5ccdbc413c6c7db
+ms.sourcegitcommit: 9034809b6f308bedc3b8ddcca8242586b5c30f94
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/27/2018
-ms.locfileid: "26706026"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "28014744"
 ---
 # <a name="set-up-and-download-a-custom-report-in-the-security-amp-compliance-center"></a>设置和下载安全中的自定义报表&amp;合规性中心
 
-在[安全&amp;合规性中心](https://security.microsoft.com)，多个[报表和见解](reports-and-insights-in-security-and-compliance.md)了可帮助您的组织的安全工作组缓解以及解决对您的组织的威胁。如果您的组织的安全工作组成员，您可以使用自定义日期范围和筛选器配置报表，然后下载自定义报表。 
+在[安全&amp;合规性中心](https://protection.office.com)，多个[报表和见解](reports-and-insights-in-security-and-compliance.md)了可帮助您的组织的安全工作组缓解以及解决对您的组织的威胁。如果您的组织的安全工作组成员，您可以使用自定义日期范围和筛选器配置报表，然后下载自定义报表。 
   
 ## <a name="download-a-custom-report"></a>下载自定义报告
 
 > [!IMPORTANT]
 > 请确保您具有必要[Office 365 安全权限&amp;合规性中心](permissions-in-the-security-and-compliance-center.md)。一般情况下，Office 365 全局管理员、 安全管理员和安全读者可以访问安全中的报告&amp;合规性中心。 
   
-1. 在[安全&amp;合规性中心](https://security.microsoft.com)，请转到**报告** \> **仪表板**。
+1. 在[安全&amp;合规性中心](https://protection.office.com)，请转到**报告** \> **仪表板**。
     
 2. 选择报告。（对于此示例，我们将使用邮件处置报告。）<br/>![选择请求报告以下载一个报表](media/b566925d-b9d9-453d-9bdd-f2637c7ba140.png)
   

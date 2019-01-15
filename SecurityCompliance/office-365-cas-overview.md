@@ -3,6 +3,7 @@ title: Office 365 云应用安全概述
 ms.author: deniseb
 author: denisebmsft
 manager: laurawi
+ms.date: 12/03/2018
 ms.audience: ITPro
 ms.topic: overview
 ms.service: o365-administration
@@ -13,12 +14,12 @@ search.appverid:
 - MOE150
 ms.assetid: 81f0ee9a-9645-45ab-ba56-de9cbccab475
 description: 'Office 365 云应用程序安全性，您见解可疑的活动 Office 365 中这样可以调查情况下，可能存在问题，如果需要请执行解决安全问题的操作。 '
-ms.openlocfilehash: b146512c22cbe86ce3aef95c5916de6959341578
-ms.sourcegitcommit: 2cf7f5bb282c971d33e00f65d9982a3f14aec74e
+ms.openlocfilehash: 62b1dc1d9285e60f30c1d5e541973640bb47ae35
+ms.sourcegitcommit: 9034809b6f308bedc3b8ddcca8242586b5c30f94
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/27/2018
-ms.locfileid: "26706396"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "28014924"
 ---
 # <a name="overview-of-office-365-cloud-app-security"></a>Office 365 云应用安全概述
   
@@ -39,7 +40,7 @@ Office 365 云应用程序安全性，您深入可疑的活动 Office 365 中这
   
 您可以获取到 Office 365 云应用程序安全性门户通过 Office 365 安全性&amp;合规性中心。下面是一个好方法执行此操作：
   
-1. 转到[https://security.microsoft.com](https://security.microsoft.com)和 Office 365 中使用您的工作或学校帐户登录。(您将转到安全&amp;合规性中心。) 
+1. 转到[https://protection.office.com](https://protection.office.com)和 Office 365 中使用您的工作或学校帐户登录。(您将转到安全&amp;合规性中心。) 
     
 2. 安全中&amp;合规性中心中，选择**警报** \> **管理高级通知**。 <br/>![安全中&amp;合规性中心中，选择管理高级通知转到 Office 365 云应用程序安全性](media/958632d4-03e3-4ade-8e22-d5509db6fca7.png)<br/>（如果尚未启用 Office 365 云应用程序安全性，并且已[打开 Office 365 云应用程序安全性](turn-on-office-365-cas.md)的全局管理员）。
     
@@ -47,7 +48,7 @@ Office 365 云应用程序安全性，您深入可疑的活动 Office 365 中这
     
 ## <a name="policies"></a>Policies
 
-为组织定义的策略云应用程序安全性适用于 office 365。与 Office 365 云应用程序安全性，您的组织中获取 10 个预定义的异常检测策略和多个活动策略模板。这些策略旨在检测一般异常，确定用户登录从 risky 的 IP 地址、 检测勒索软件活动，检测管理员从非企业 IP 地址和更多的活动。
+为组织定义的策略云应用程序安全性适用于 office 365。与 Office 365 云应用程序安全性，您的组织获取多个预定义的异常检测策略和多个活动策略模板。这些策略旨在检测一般异常，确定用户登录从 risky 的 IP 地址、 检测勒索软件活动，检测管理员从非企业 IP 地址和更多的活动。
   
 ![在 CAS 门户中，选择控件\>模板可以查看或创建策略模板](media/88f615b4-aa8a-480c-b239-323dfcd628e1.png)
   
@@ -91,17 +92,17 @@ Office 365 云应用程序安全性，您深入可疑的活动 Office 365 中这
   
 [了解 Office 365 云应用程序安全性 web 流量日志和数据源](web-traffic-logs-and-data-sources-for-ocas.md)
   
-## <a name="app-permissions"></a>应用程序权限
+## <a name="oauth-apps"></a>OAuth 应用程序
 
 与 Office 365 云应用程序安全性，您可以允许或阻止组织使用的访问 Office 365 中的数据的第三方应用程序中的人员。
   
-![O365 CA 中可以访问管理应用程序权限页上，从调查菜单。](media/78272cda-986f-4b3b-bbbe-8c236c74f5d3.png)
+![O365 CA 中可以访问管理 OAuth 的应用程序页上，从调查菜单。](media/78272cda-986f-4b3b-bbbe-8c236c74f5d3.png)
   
-若要获取对此页，请转到**调查** \> **应用程序权限**。 
+若要获取对此页，请转到**调查** \> **OAuth 应用程序**。 
   
 ![在 O365 CAS 门户中，选择调查。](media/8c7b87c9-71a6-4952-adb2-185e941ffe9a.png)
   
-[使用 Office 365 云应用安全管理应用权限](manage-app-permissions-in-ocas.md)
+[使用 Office 365 云应用安全管理 OAuth 应用](manage-app-permissions-in-ocas.md)
   
 ## <a name="cloud-discovery-dashboard"></a>云发现仪表板
 

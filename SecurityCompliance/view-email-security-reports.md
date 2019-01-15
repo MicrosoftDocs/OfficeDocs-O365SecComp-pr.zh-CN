@@ -13,12 +13,12 @@ search.appverid:
 - MOE150
 ms.assetid: 3a137e28-1174-42d5-99af-f18868b43e86
 description: 了解如何查找和使用电子邮件安全报告为您的组织与 Office 365 企业版。电子邮件安全报告可安全中&amp;合规性中心。
-ms.openlocfilehash: 670317707c5695161f23615fb87fe93258e8d95b
-ms.sourcegitcommit: 30faa3ba91cab4c36e3d8d8ed5858d5269ea8a56
+ms.openlocfilehash: 3fc6d3dd8468bc060efcaa7eadec2ff9257fe583
+ms.sourcegitcommit: 9034809b6f308bedc3b8ddcca8242586b5c30f94
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/08/2019
-ms.locfileid: "27749326"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "28014984"
 ---
 # <a name="view-email-security-reports-in-the-security-amp-compliance-center"></a>查看安全中的电子邮件安全报告&amp;合规性中心
 
@@ -51,7 +51,7 @@ ms.locfileid: "27749326"
 > [!NOTE]
 > 威胁保护状态报告是适用于[Office 365 ATP](office-365-atp.md)或[Exchange Online Protection](eop/exchange-online-protection-eop.md) (EOP); 客户但是，ATP 客户威胁保护状态报告中显示的信息将可能包含比 EOP 客户可能会看到不同的数据。例如，EOP 客户可以查看关于恶意软件检测到的电子邮件，但不是[SharePoint Online、 OneDrive 或的 Microsoft 团队中检测到恶意文件](atp-for-spo-odb-and-teams.md)的信息，ATP 特定功能的信息。（[有关 ATP 报告详细了解](view-reports-for-atp.md)。）
   
-若要查看此报告中，在[安全&amp;合规性中心](https://security.microsoft.com)，请转到**报告** \> **仪表板** \> **威胁保护状态**。
+若要查看此报告中，在[安全&amp;合规性中心](https://protection.office.com)，请转到**报告** \> **仪表板** \> **威胁保护状态**。
   
 ![威胁保护状态报告](media/0ff86e12-c2b2-4d89-92a5-cefb054dc070.png)
   
@@ -67,7 +67,7 @@ ms.locfileid: "27749326"
 
 **恶意软件检测**报告将显示多少传入和传出邮件检测为包含恶意软件为您的组织。 
   
-若要查看此报告中，在[安全&amp;合规性中心](https://security.microsoft.com)，请转到**报告** \> **仪表板** \> **恶意软件检测**。
+若要查看此报告中，在[安全&amp;合规性中心](https://protection.office.com)，请转到**报告** \> **仪表板** \> **恶意软件检测**。
   
 ![恶意软件检测报告示例](media/a1ba61a3-565a-46d6-b0d5-6a6cff6b31d7.png)
   
@@ -77,7 +77,7 @@ ms.locfileid: "27749326"
 
 **顶部恶意软件**报告将显示的各种通过 Exchange Online 中检测到的恶意软件。 
   
-若要查看此报告中，在[安全&amp;合规性中心](https://security.microsoft.com)，请转到**报告** \> **仪表板** \> **顶部恶意软件**。
+若要查看此报告中，在[安全&amp;合规性中心](https://protection.office.com)，请转到**报告** \> **仪表板** \> **顶部恶意软件**。
   
 ![SCC-EOP 流行恶意软件](media/763330b3-f56e-4ba4-b0bb-051500ae950a.png)
   
@@ -93,7 +93,7 @@ ms.locfileid: "27749326"
 
 **前发件人和收件人**报告是显示在顶部的电子邮件发件人饼图。 
   
-若要查看此报告中，在[安全&amp;合规性中心](https://security.microsoft.com)，请转到**报告** \> **仪表板** \> **前发件人和收件人**。
+若要查看此报告中，在[安全&amp;合规性中心](https://protection.office.com)，请转到**报告** \> **仪表板** \> **前发件人和收件人**。
   
 ![若要查看此报告中，安全中&amp;合规性中心中，转到报告\>仪表板\>前发件人和收件人](media/b5506b5c-2420-4a5a-9ea3-d654294ac838.png)
   
@@ -111,7 +111,7 @@ ms.locfileid: "27749326"
 
 **欺骗邮件**报告将显示多少欺骗邮件检测到，，其中，哪些已被视为"好"（欺骗邮件完成合法的业务原因）。 
   
-若要查看此报告中，在[安全&amp;合规性中心](https://security.microsoft.com)，请转到**报告** \> **仪表板** \> **欺骗邮件**。
+若要查看此报告中，在[安全&amp;合规性中心](https://protection.office.com)，请转到**报告** \> **仪表板** \> **欺骗邮件**。
   
 ![若要查看此报告中，安全中&amp;合规性中心中，转到报告\>仪表板\>欺骗邮件](media/0427e85c-9e40-4225-a0f0-e21a4e8b0e44.png)
   
@@ -123,7 +123,7 @@ ms.locfileid: "27749326"
 
 **垃圾邮件检测**报告将显示阻止的 Exchange Online 的所有垃圾邮件内容。 
   
-若要查看此报告中，在[安全&amp;合规性中心](https://security.microsoft.com)，请转到**报告** \> **仪表板** \> **垃圾邮件检测**。
+若要查看此报告中，在[安全&amp;合规性中心](https://protection.office.com)，请转到**报告** \> **仪表板** \> **垃圾邮件检测**。
   
 ![若要查看此报告中，安全中&amp;合规性中心中，转到报告\>仪表板\>EOP 垃圾邮件检测](media/028cff3c-79ce-4ec0-8f0f-ec32ac28243a.png)
   
@@ -139,7 +139,7 @@ ms.locfileid: "27749326"
 
 **发送和接收电子邮件**报告是智能报表的显示信息传入和传出电子邮件，其中包括垃圾邮件检测、 恶意软件和电子邮件标识为"良好"。 
   
-若要查看此报告中，在[安全&amp;合规性中心](https://security.microsoft.com)，请转到**报告** \> **仪表板** \> **发送和接收电子邮件**。
+若要查看此报告中，在[安全&amp;合规性中心](https://protection.office.com)，请转到**报告** \> **仪表板** \> **发送和接收电子邮件**。
   
 ![若要查看此报告中，安全中&amp;合规性中心中，转到报告\>仪表板\>发送和接收电子邮件](media/0e710ed0-1b0e-4dac-8796-94a01a710f3a.png)
   
@@ -163,7 +163,7 @@ ms.locfileid: "27749326"
   
 ![User-Reported 邮件报告将显示尝试标记为垃圾、 不是垃圾邮件或网络钓鱼邮件用户。](media/ad5e9a3d-b833-419c-bcc9-3425d9604ead.png)
   
-若要查看此报告中，在[安全&amp;合规性中心](https://security.microsoft.com)，执行下列操作之一：
+若要查看此报告中，在[安全&amp;合规性中心](https://protection.office.com)，执行下列操作之一：
   
 - 转到**威胁管理** \> **仪表板** \> **用户报告的邮件**。
     
@@ -202,7 +202,7 @@ ms.locfileid: "27749326"
   
 ## <a name="related-topics"></a>相关主题
 
-[Office 365 反垃圾邮件保护](anti-spam-protection.md)
+[Office 365 电子邮件反垃圾邮件保护](anti-spam-protection.md)
   
 [报告和 Office 365 安全性见解&amp;合规性中心](reports-and-insights-in-security-and-compliance.md)
   

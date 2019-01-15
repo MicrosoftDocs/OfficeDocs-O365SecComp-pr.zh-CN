@@ -13,12 +13,12 @@ search.appverid:
 - MOE150
 ms.assetid: e47e838c-d99e-4c0b-b9aa-e66c4fae902f
 description: 了解如何查找和使用适用于 Office 365 高级威胁保护安全中报告&amp;合规性中心。
-ms.openlocfilehash: d387e020e5834d4961e7bda50b418ea11b9f0f4d
-ms.sourcegitcommit: 30faa3ba91cab4c36e3d8d8ed5858d5269ea8a56
+ms.openlocfilehash: a17f182f5c8d79e7863b26324a3c073ef18f14c9
+ms.sourcegitcommit: 9034809b6f308bedc3b8ddcca8242586b5c30f94
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/08/2019
-ms.locfileid: "27749346"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "28014944"
 ---
 # <a name="view-reports-for-office-365-advanced-threat-protection"></a>Office 365 高级威胁保护的视图报告
 
@@ -35,7 +35,7 @@ ATP 报告包括[威胁保护状态报告](#threat-protection-status-report)、 
 > [!NOTE]
 > 威胁保护状态报告是适用于[Office 365 ATP](office-365-atp.md)或[Exchange Online Protection](eop/exchange-online-protection-eop.md) (EOP); 客户但是，ATP 客户威胁保护状态报告中显示的信息将可能包含比 EOP 客户可能会看到不同的数据。例如，ATP 客户的威胁保护状态报告将包含有关[SharePoint Online、 OneDrive 或的 Microsoft 团队中检测到恶意文件](atp-for-spo-odb-and-teams.md)的信息。此类信息是特定于 ATP，，因此客户拥有 EOP，但不是 ATP 将不会看到其威胁保护状态报告中的这些信息。
   
-若要查看中威胁保护状态报告，[安全&amp;合规性中心](https://security.microsoft.com)，请转到**报告** \> **仪表板** \> **威胁保护状态**。
+若要查看中威胁保护状态报告，[安全&amp;合规性中心](https://protection.office.com)，请转到**报告** \> **仪表板** \> **威胁保护状态**。
   
 ![ATP 威胁保护状态报告](media/6bdd41eb-62e0-423b-9fd4-d1d5baf0cbd5.png)
   
@@ -55,7 +55,7 @@ ATP 报告包括[威胁保护状态报告](#threat-protection-status-report)、 
 
 **ATP 文件类型**报告将显示为恶意检测到[ATP 安全附件](atp-safe-attachments.md)的文件的类型。
   
-若要查看此报告中，在[安全&amp;合规性中心](https://security.microsoft.com)，请转到**报告** \> **仪表板** \> **ATP 文件类型**。
+若要查看此报告中，在[安全&amp;合规性中心](https://protection.office.com)，请转到**报告** \> **仪表板** \> **ATP 文件类型**。
   
 ![ATP 文件类型报告](media/6e3f5d33-79aa-4b2d-938c-6ef135d9e54c.png)
   
@@ -67,7 +67,7 @@ ATP 报告包括[威胁保护状态报告](#threat-protection-status-report)、 
 
 **ATP 消息处置**报告将显示您的电子邮件被检测为具有恶意内容所采取的操作。 
   
-若要查看此报告中，在[安全&amp;合规性中心](https://security.microsoft.com)，请转到**报告** \> **仪表板** \> **ATP 消息处置**。
+若要查看此报告中，在[安全&amp;合规性中心](https://protection.office.com)，请转到**报告** \> **仪表板** \> **ATP 消息处置**。
   
 ![ATP 邮件处置报告](media/b0ff65c4-53d3-496d-bafa-8937a5eb69e5.png)
   

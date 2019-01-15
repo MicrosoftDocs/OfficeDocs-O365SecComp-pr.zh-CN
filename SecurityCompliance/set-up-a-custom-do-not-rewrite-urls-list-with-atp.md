@@ -12,12 +12,12 @@ search.appverid:
 - MOE150
 ms.assetid: 35dbfd99-da5a-422b-9b0e-c6caf3b645fa
 description: 当您设置了您 ATP 的安全链接策略时，可以包括 do not 写以使您的组织中的某些用户访问列表中包括的网站的 Url 的列表。
-ms.openlocfilehash: 89fafd5ff7def491a231bc8bc3eb19ef8db16a59
-ms.sourcegitcommit: 2cf7f5bb282c971d33e00f65d9982a3f14aec74e
+ms.openlocfilehash: d3883d6aff29b9a061b62e4854e7aad52656769f
+ms.sourcegitcommit: 9034809b6f308bedc3b8ddcca8242586b5c30f94
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/27/2018
-ms.locfileid: "26705976"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "28015044"
 ---
 # <a name="set-up-a-custom-do-not-rewrite-urls-list-using-office-365-atp-safe-links"></a>设置自定义重写不执行操作的 Url 列表使用 Office 365 ATP 安全链接
 
@@ -29,7 +29,7 @@ ms.locfileid: "26705976"
 
 ATP 安全链接保护使用多个列表，其中包括贵组织的阻止的 Url 列表和"执行不重写"的例外列表。如果您有必要的权限，您可以设置自定义"执行不重写"列表。添加或编辑将应用于特定收件人在组织中的安全链接策略时执行此操作。 
   
-1. 转到[https://security.microsoft.com](https://security.microsoft.com)和使用工作或学校帐户登录。 
+1. 转到[https://protection.office.com](https://protection.office.com)和使用工作或学校帐户登录。 
     
 2. 在左侧导航窗格中，在**威胁管理**下\>**策略** \> **安全的链接**。
     

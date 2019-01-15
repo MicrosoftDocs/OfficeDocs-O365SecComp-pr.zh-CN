@@ -13,24 +13,24 @@ search.appverid:
 - MOE150
 ms.assetid: f3724c6c-ec64-4a24-ba71-bfd68020d4d2
 description: 请参阅如何可以从洞察移动到安全中的详细报告&amp;数据丢失防护示例通过合规性中心。
-ms.openlocfilehash: 82689b7f58dfc729fa78912f41ed89a3a2933bfb
-ms.sourcegitcommit: 2cf7f5bb282c971d33e00f65d9982a3f14aec74e
+ms.openlocfilehash: d8ef40b000f9e5fcf7ee1826b020efc95776709c
+ms.sourcegitcommit: 9034809b6f308bedc3b8ddcca8242586b5c30f94
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/27/2018
-ms.locfileid: "26706106"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "28014854"
 ---
 # <a name="walkthrough---from-an-insight-to-a-detailed-report"></a>演练 - 从见解到详细报告
 
 如果您是新手[报告和 Office 365 安全性见解&amp;合规性中心](reports-and-insights-in-security-and-compliance.md)，它可能有助于请参阅如何您可以轻松地从导航洞察到详细报告。 
   
-这是一个多个演练[安全&amp;合规性中心](https://security.microsoft.com)。若要查看其他演练，请参阅[相关的主题](#related-topics)部分。 
+这是一个多个演练[安全&amp;合规性中心](https://protection.office.com)。若要查看其他演练，请参阅[相关的主题](#related-topics)部分。 
   
 ## <a name="from-an-insight-to-a-detailed-report"></a>从对详细报告见解
 
 让我们该工作流中从仪表板到对详细报告数据勘探见解。（这是一个简短的[数据丢失防护](data-loss-prevention-policies.md)示例）。 
   
-1. 我们首先仪表板中[安全&amp;合规性中心](https://security.microsoft.com)。(请转到**报告** \> **仪表板**。)<br/>![安全中&amp;合规性中心中，选择报告\>仪表板](media/2a668c3d-3fa3-4e37-8149-46989b33ae8c.png)
+1. 我们首先仪表板中[安全&amp;合规性中心](https://protection.office.com)。(请转到**报告** \> **仪表板**。)<br/>![安全中&amp;合规性中心中，选择报告\>仪表板](media/2a668c3d-3fa3-4e37-8149-46989b33ae8c.png)
   
 2. 在右上角的左下角仪表板中，单击**Top 见解&amp;建议**，我们有一个链接。（单击**查看全部**。)<br/>![安全中&amp;合规性中心中，选择报告\>仪表板以查看您顶部见解](media/9bb64e11-494f-40a4-ab3d-8d3c7789f300.png)<br/>此操作将我们见解我们组织的列表。<br/>![安全中&amp;合规性中心，您可以在列表中查看所有见解](media/1289af77-bf5a-444a-97a1-03d8a83f75a9.png)
   

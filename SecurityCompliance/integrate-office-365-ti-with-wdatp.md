@@ -13,12 +13,12 @@ search.appverid:
 - MOE150
 ms.assetid: 414fa693-d7b7-4a1d-a387-ebc3b6a52889
 description: 与 Windows Defender 高级威胁保护威胁管理的详细的信息，请参阅集成 Office 365 高级威胁保护。
-ms.openlocfilehash: 1198f53c47811d69b93106c413e3d3a09d83e736
-ms.sourcegitcommit: 2cf7f5bb282c971d33e00f65d9982a3f14aec74e
+ms.openlocfilehash: 48e879c1d41b5aa662f5128e234be91eb8225e7b
+ms.sourcegitcommit: 9034809b6f308bedc3b8ddcca8242586b5c30f94
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/27/2018
-ms.locfileid: "26706136"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "28014764"
 ---
 # <a name="integrate-office-365-threat-intelligence-with-windows-defender-advanced-threat-protection"></a>将 Office 365 威胁智能与 Windows Defender 高级威胁防护集成
 
@@ -34,7 +34,7 @@ ms.locfileid: "26706136"
 
 - 您的组织必须具有 Office 365 威胁智能和 Windows Defender ATP。
     
-- 您必须是 Office 365 全局管理员或具有安全管理员角色中分配[安全&amp;合规性中心](https://security.microsoft.com)。(请参阅[Permissions in Office 365 安全性&amp;合规性中心](permissions-in-the-security-and-compliance-center.md))
+- 您必须是 Office 365 全局管理员或具有安全管理员角色中分配[安全&amp;合规性中心](https://protection.office.com)。(请参阅[Permissions in Office 365 安全性&amp;合规性中心](permissions-in-the-security-and-compliance-center.md))
     
 - 您必须具有对 Office 365 威胁智能和 Windows Defender ATP 门户网站的访问。
     
@@ -42,7 +42,7 @@ ms.locfileid: "26706136"
 
 在 Office 365 和 Windows Defender ATP 门户中与 Windows Defender ATP 集成 Office 365 威胁智能是设置。
   
-1. 作为 Office 365 全局或安全管理员，请转到[https://security.microsoft.com](https://security.microsoft.com)和使用 Office 365 您工作或学校的帐户登录。 
+1. 作为 Office 365 全局或安全管理员，请转到[https://protection.office.com](https://protection.office.com)和使用 Office 365 您工作或学校的帐户登录。 
     
 2. 选择**威胁管理** \> **威胁资源管理器**。
     

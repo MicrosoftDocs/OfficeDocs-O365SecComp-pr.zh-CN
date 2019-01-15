@@ -13,12 +13,12 @@ search.appverid:
 - MOE150
 ms.assetid: 3e68e691-1fc4-4d3e-a2c0-d3134eb64055
 description: 使用 Office 365 云应用程序安全性，您可以了解在组织中的用户如何使用 Office 365 和其他应用程序创建报告。
-ms.openlocfilehash: f801c70e839a62b5bbb5423ff5e7c513dd1f09b4
-ms.sourcegitcommit: 2cf7f5bb282c971d33e00f65d9982a3f14aec74e
+ms.openlocfilehash: 6842912f42072e21608955bde5250f0774c7bba4
+ms.sourcegitcommit: 9034809b6f308bedc3b8ddcca8242586b5c30f94
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/27/2018
-ms.locfileid: "26706296"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "28014864"
 ---
 # <a name="create-app-discovery-reports-using-office-365-cloud-app-security"></a>使用 Office 365 云应用安全创建应用发现报告
 
@@ -44,7 +44,7 @@ Office 365 云应用程序安全性帮助全局管理员、 安全管理员和�
   
 1. 收集您的[web 流量日志和 Office 365 云应用程序安全性的数据源](web-traffic-logs-and-data-sources-for-ocas.md)。
     
-2. 转到[https://security.microsoft.com](https://security.microsoft.com)和使用工作或学校帐户登录。 
+2. 转到[https://protection.office.com](https://protection.office.com)和使用工作或学校帐户登录。 
     
 3. 安全中&amp;合规性中心中，选择**警报** \> **管理高级通知**。
     

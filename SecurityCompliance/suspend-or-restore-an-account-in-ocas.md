@@ -3,7 +3,7 @@ title: 暂停或还原 Office 365 云应用安全中的用户帐户
 ms.author: deniseb
 author: denisebmsft
 manager: laurawi
-ms.date: 2/26/2018
+ms.date: 12/03/2018
 ms.audience: ITPro
 ms.topic: article
 ms.service: o365-administration
@@ -13,12 +13,12 @@ search.appverid:
 - MOE150
 ms.assetid: 5f02d20f-b9aa-4b2f-ad2d-506a4a3c4540
 description: '与 Office 365 云应用程序安全性，您可以采取的治理操作的挂起或 unsuspend 的用户帐户。 '
-ms.openlocfilehash: a5c75edefc6ddb87b5676c4253aafe04817f6a1d
-ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+ms.openlocfilehash: 09d6ae870aa1a6b0a619ccf20f8cc19b392e23a8
+ms.sourcegitcommit: 9034809b6f308bedc3b8ddcca8242586b5c30f94
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22524997"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "28014844"
 ---
 # <a name="suspend-or-restore-a-user-account-in-office-365-cloud-app-security"></a>暂停或还原 Office 365 云应用安全中的用户帐户
 
@@ -44,9 +44,7 @@ Office 365 高级安全管理现在是 Office 365 云应用程序安全性。
     
 2. 安全中&amp;合规性中心中，选择**警报** \> **管理高级通知**。
     
-3. 选择**转到 Office 365 云应用程序安全性**。
-    
-    ![安全中&amp;合规性中心中，选择管理高级通知转到 Office 365 云应用程序安全性](media/958632d4-03e3-4ade-8e22-d5509db6fca7.png)
+3. 选择**转到 Office 365 云应用程序安全性**。<br>![安全中&amp;合规性中心中，选择管理高级通知转到 Office 365 云应用程序安全性](media/958632d4-03e3-4ade-8e22-d5509db6fca7.png)<br>
   
 4. 在屏幕顶部导航栏中，选择**通知**。
     
@@ -62,7 +60,7 @@ Office 365 高级安全管理现在是 Office 365 云应用程序安全性。
 
 - [查看 Office 365 云应用安全中的警报并执行相应操作](review-office-365-cas-alerts.md)
     
-- [使用 Office 365 云应用安全管理应用权限](manage-app-permissions-in-ocas.md)
+- [使用 Office 365 云应用安全管理 OAuth 应用](manage-app-permissions-in-ocas.md)
     
 - 查看您[的 Office 365 云应用程序安全性的使用率活动](utilization-activities-for-ocas.md)
     

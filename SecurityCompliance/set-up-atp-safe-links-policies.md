@@ -12,12 +12,12 @@ search.appverid:
 - MOE150
 ms.assetid: bdd5372d-775e-4442-9c1b-609627b94b5d
 description: 设置以从 Word、 Excel、 PowerPoint 和 Visio 文件中以及电子邮件中的恶意链接保护您的组织的安全链接策略。
-ms.openlocfilehash: fb2af8e29bfe2de027a2d0e88cf9bcc07299fba9
-ms.sourcegitcommit: 2cf7f5bb282c971d33e00f65d9982a3f14aec74e
+ms.openlocfilehash: 145e8998637756d204171f64021d6ad783b367f3
+ms.sourcegitcommit: 9034809b6f308bedc3b8ddcca8242586b5c30f94
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/27/2018
-ms.locfileid: "26706086"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "28015054"
 ---
 # <a name="set-up-office-365-atp-safe-links-policies"></a>设置 Office 365 ATP 安全链接策略
 
@@ -51,7 +51,7 @@ ms.locfileid: "26706086"
 
 [Office 365 高级威胁保护](office-365-atp.md)后，您将具有适用于您的组织中的每个人的默认 ATP 安全链接策略。请务必查看，，如果需要编辑默认策略。
   
-1. 转到[https://security.microsoft.com](https://security.microsoft.com)和使用工作或学校帐户登录。 
+1. 转到[https://protection.office.com](https://protection.office.com)和使用工作或学校帐户登录。 
     
 2. 在左侧导航窗格中，**威胁管理**下面，选择**策略\>****安全的链接**。
     
@@ -67,7 +67,7 @@ ms.locfileid: "26706086"
 
 您已审阅 （或编辑） 适用于每个人的默认 ATP 安全链接策略后下, 一步是定义将应用于特定收件人的其他策略。例如，您可以通过定义其他策略为默认策略指定例外。 
   
-1. 转到[https://security.microsoft.com](https://security.microsoft.com)和使用工作或学校帐户登录。 
+1. 转到[https://protection.office.com](https://protection.office.com)和使用工作或学校帐户登录。 
     
 2. 在左侧导航窗格中，**威胁管理**下面，选择**策略**。
     

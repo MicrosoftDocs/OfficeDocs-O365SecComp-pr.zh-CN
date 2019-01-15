@@ -3,7 +3,7 @@ title: 搜索并删除您的 Office 365 组织的管理员帮助中的电子邮�
 ms.author: markjjo
 author: markjjo
 manager: laurawi
-ms.date: 4/25/2018
+ms.date: ''
 ms.audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.assetid: 3526fd06-b45f-445b-aed4-5ebd37b3762a
 description: 使用搜索和清除 Office 365 安全性功能&amp;合规性中心以搜索并删除从您的组织中的所有邮箱的电子邮件。
-ms.openlocfilehash: d9ca212585f1cb7e98e5f577ce47fcdef7ea979f
-ms.sourcegitcommit: 08f36794552e2213d0baf35180e47744d3e87fe4
+ms.openlocfilehash: 82ba38ef2c3c8c6b78743a4b2263dde0ef3a5b48
+ms.sourcegitcommit: 9034809b6f308bedc3b8ddcca8242586b5c30f94
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/30/2018
-ms.locfileid: "23531865"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "28015014"
 ---
 # <a name="search-for-and-delete-email-messages-in-your-office-365-organization---admin-help"></a>搜索并删除您的 Office 365 组织的管理员帮助中的电子邮件
 
@@ -99,20 +99,31 @@ ms.locfileid: "23531865"
   
 ## <a name="step-3-delete-the-message"></a>步骤 3： 删除邮件
 
-您已创建并精简内容搜索以返回要删除并连接到安全的消息后&amp;合规性中心 PowerShell 中，最后一步是运行**新建 ComplianceSearchAction** cmdlet 删除邮件。已删除的邮件移动到用户的可恢复项目文件夹。 
+您已创建并精简内容搜索以返回要删除并连接到安全的消息后&amp;合规性中心 PowerShell 中，最后一步是运行**新建 ComplianceSearchAction** cmdlet 删除邮件。您还可以软-或硬-删除邮件。软删除邮件移动到用户的可恢复项目文件夹，保留已删除的邮件保留期限过期之前。硬已删除的邮件被标记为从邮箱中永久删除，将被永久删除的下次由托管文件夹助理处理邮箱。如果为邮箱启用单个项目恢复，则已删除的邮件保留期过后，将永久删除硬已删除邮件。如果邮箱置于保持状态，直到过期项目的保留持续时间或直到保留被删除从邮箱保留已删除的邮件。
   
-在下面的示例中，该命令将删除名为“删除钓鱼邮件”的内容搜索返回的搜索结果。 
+在以下示例中，命令将软删除名为"删除网络钓鱼邮件"内容搜索返回的搜索结果。 
 
 ```
 New-ComplianceSearchAction -SearchName "Remove Phishing Message" -Purge -PurgeType SoftDelete
 ```
-  
+在以下示例中，命令将硬删除名为"删除网络钓鱼邮件"内容搜索返回的搜索结果。 
+
+```
+New-ComplianceSearchAction -SearchName "Remove Phishing Message" -Purge -PurgeType HardDelete
+```
+
 *SearchName*参数指定搜索是您在步骤 1 中创建内容搜索。 
+
+硬-删除"删除网络钓鱼邮件"内容搜索返回的项，需要运行以下命令：
+
+```
+New-ComplianceSearchAction -SearchName "Remove Phishing Message" -Purge -PurgeType HardDelete
+```
   
 有关详细信息，请参阅[新建 ComplianceSearchAction](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-content-search/New-ComplianceSearchAction)。
   
 
-## <a name="more-information"></a>详细信息
+## <a name="more-information"></a>更多信息
 
 - **您如何获取的搜索状态并删除操作？**
 
@@ -120,11 +131,9 @@ New-ComplianceSearchAction -SearchName "Remove Phishing Message" -Purge -PurgeTy
     
 - **删除一条消息后，会发生什么情况？**
 
-    通过删除一条消息`New-ComplianceSearchAction -Purge -PurgeType SoftDelete`命令移动到用户的可恢复的项目文件夹中的删除文件夹。它不立即清除已从 Office 365。用户可以恢复基于配置邮箱的已删除的邮件保留期的持续时间内的已删除邮件文件夹中的邮件。此保留期 （或如果用户清除之前的邮件已到期） 后，邮件被移动到清除文件夹，并不再可以由用户访问。一次在清除文件夹中，消息是重新保留基于如果为邮箱启用单个项目恢复配置邮箱的已删除的邮件保留期的持续时间。（Office 365 中单个项目恢复为默认启用创建新邮箱时。）已删除的邮件保留期过后，邮件被标记为永久删除，并将被清除从 Office 365 下次由托管文件夹助理处理邮箱。 
-    
-- **您如何知道消息的删除和移动到用户的可恢复项目文件夹？**
+   一条消息，与删除`New-ComplianceSearchAction -Purge -PurgeType HardDelete`命令会移动到清除文件夹，并且用户无法访问。将邮件移至清除文件夹后，邮件保留已删除的邮件保留期限的持续时间内，如果为邮箱启用单个项目恢复。（Office 365 中单个项目恢复为默认启用创建新邮箱时。）已删除的邮件保留期过后，邮件被标记为永久删除，并将被清除从 Office 365 的下次由托管文件夹助理处理邮箱。 
 
-    如果您运行相同的内容搜索后删除一条消息，您仍会看到相同数量的搜索结果 （并可能假定该邮件不从用户邮箱删除）。这是因为内容搜索中搜索可恢复邮件文件夹中，这是其中已删除的邮件移至运行后`New-ComplianceSearchAction -Purge -PurgeType SoftDelete`命令。若要验证邮件已移动到可恢复邮件文件夹，可以运行 （步骤 1 中创建内容搜索，使用相同的源邮箱和搜索条件） 就地电子数据展示搜索，然后将搜索结果复制到发现邮箱。然后您可以的发现邮箱中查看搜索结果，并验证邮件已移动到可恢复邮件文件夹。创建使用源邮箱和从内容搜索的搜索查询的列表的就地电子数据展示搜索的详细信息，请参阅[使用电子数据展示工作流中的内容搜索](use-content-search-in-ediscovery.md)。 
+   如果您使用`New-ComplianceSearchAction -Purge -PurgeType SoftDelete`命令，邮件被移到用户的可恢复的项目文件夹中的删除文件夹。它不立即清除已从 Office 365。用户可以恢复基于配置邮箱的已删除的邮件保留期的持续时间内的已删除邮件文件夹中的邮件。此保留期 （或如果用户清除之前的邮件已到期） 后，邮件被移动到清除文件夹，并不再可以由用户访问。一次在清除文件夹中，邮件保留的基于如果为邮箱启用单个项目恢复配置邮箱的已删除的邮件保留期的持续时间。（Office 365 中单个项目恢复为默认启用创建新邮箱时。）已删除的邮件保留期过后，邮件被标记为永久删除，并将被清除从 Office 365 下次由托管文件夹助理处理邮箱。 
     
 - **如果您必须从超过 50,000 个邮箱中删除一条消息？**
 
@@ -132,12 +141,12 @@ New-ComplianceSearchAction -SearchName "Remove Phishing Message" -Purge -PurgeTy
     
 - **将删除未编制索引的项目包含在搜索结果？**
 
-    否，`New-ComplianceSearchAction -Purge -PurgeType SoftDelete`命令不删除未编制索引的项目。 
+    否，新建 ComplianceSearchAction-清除命令不删除未编制索引的项目。 
     
 - **如果从已被置于就地保留或诉讼保留或已分配给 Office 365 保留策略的邮箱中删除一条消息，则会发生什么情况？**
 
-    （由用户或已删除的邮件保留期过后） 清除邮件后，邮件保留，直到保留持续时间过期。如果是无限保留持续时间，然后直到保留被删除或更改保留持续时间也将保留项。
+    清除邮件并将其移至清除文件夹后，邮件保留，直到保留持续时间过期。如果是无限保留持续时间，然后直到保留被删除或更改保留持续时间也将保留项。
     
-- **搜索和删除工作流是为什么划分不同的安全的是&amp;合规性中心角色组？**
+- **为什么是搜索并删除划分不同的安全性和合规性中心角色组的工作流？**
 
     如前所述，人员必须是电子数据展示管理员角色组的成员，或者要搜索邮箱的合规性搜索管理角色分配。若要删除的邮件，人员必须是组织管理角色组的成员或搜索和清除管理角色分配。这便可以控制谁可以在组织中搜索邮箱和谁可以删除邮件。 

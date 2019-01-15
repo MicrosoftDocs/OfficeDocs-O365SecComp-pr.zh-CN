@@ -13,12 +13,12 @@ search.appverid:
 - MET150
 ms.assetid: c9e7160f-2c34-4bd0-a548-5ddcc862eaef
 description: 想知道如何安全组织真的是 Office 365 中？安全分数此处以帮助。安全分数分析基于您的正则活动和 Offic 365 中的安全设置的组织的安全性，并分配分数。
-ms.openlocfilehash: 0d19cd9512838bf2d8b0bff615ccaa1eea21266a
-ms.sourcegitcommit: 2cf7f5bb282c971d33e00f65d9982a3f14aec74e
+ms.openlocfilehash: 08d452f2b297948c13243a5eb36ae6e22839e545
+ms.sourcegitcommit: 9034809b6f308bedc3b8ddcca8242586b5c30f94
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/27/2018
-ms.locfileid: "26706176"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "28015064"
 ---
 # <a name="office-365-secure-score"></a>Office 365 安全功能分数
 
@@ -28,7 +28,7 @@ ms.locfileid: "26706176"
 
 如果您的组织具有订阅包含[Office 365 企业版](https://docs.microsoft.com/office365/enterprise/)、 [Microsoft 365 企业版](https://docs.microsoft.com/microsoft-365/business/)或 Office 365 企业高级版，并且您所需的权限，则可以查看贵组织的安全分数，请访问[https://securescore.office.com](https://securescore.office.com)。 
 
-此外，您可以访问安全性和合规性中心 ([https://security.microsoft.com](https://security.microsoft.com))，将在其中找到您当前的分数为您提供一个安全分数构件。
+此外，您可以访问安全性和合规性中心 ([https://protection.office.com](https://protection.office.com))，将在其中找到您当前的分数为您提供一个安全分数构件。
 
 ![安全分数小部件](media/SecureScoreWidget-o365.png)
 
@@ -55,7 +55,7 @@ ms.locfileid: "26706176"
   
 ![Office 365 安全分数工具分数分析器选项卡](media/SecureScore-ScoreAnalyzer-7days.png)
   
-下方图表中，您将看到分数和操作的 lsit，按类别。
+下面的图表中，您将看到分数和操作的列表，按类别。
   
 ![图表显示所选数据点分数分析器选项卡](media/SecureScore-Analyzer-breakdownbelowchart.png)
   

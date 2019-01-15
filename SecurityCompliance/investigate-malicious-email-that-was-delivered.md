@@ -13,12 +13,12 @@ search.appverid:
 - MOE150
 ms.assetid: 8f54cd33-4af7-4d1b-b800-68f8818e5b2a
 description: 了解如何使用威胁智能来查找和调查恶意电子邮件。
-ms.openlocfilehash: 4440b4d1503b9a13977ef773b95fa64873662b85
-ms.sourcegitcommit: 2cf7f5bb282c971d33e00f65d9982a3f14aec74e
+ms.openlocfilehash: b6d4f8a5d1fcfce4461b91796b1264f94d1eb4d1
+ms.sourcegitcommit: 9034809b6f308bedc3b8ddcca8242586b5c30f94
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/27/2018
-ms.locfileid: "26706036"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "28014914"
 ---
 # <a name="find-and-investigate-malicious-email-that-was-delivered-office-365-threat-intelligence"></a>查找并调查恶意电子邮件已送达 （Office 365 威胁智能）
 
@@ -48,7 +48,7 @@ ms.locfileid: "26706036"
 > [!TIP]
 > [威胁资源管理器](get-started-with-ti.md#threat-explorer)（也称为资源管理器） 是一个强大的报表，可以提供多种用途，如查找和删除邮件、 标识恶意电子邮件发件人的 IP 地址或启动进一步调查事件。下面的过程重点介绍使用资源管理器查找并从收件人邮箱删除恶意电子邮件。 
   
-1. 转到[https://security.microsoft.com](https://security.microsoft.com)和 Office 365 中使用您的工作或学校帐户登录。您将转到安全&amp;合规性中心。 
+1. 转到[https://protection.office.com](https://protection.office.com)和 Office 365 中使用您的工作或学校帐户登录。您将转到安全&amp;合规性中心。 
     
 2. 在左侧导航窗格中，选择**威胁管理** \> **资源管理器**。
     

@@ -13,12 +13,12 @@ search.appverid:
 - MOE150
 ms.assetid: d2104778-f0a1-4b69-baf3-c4b32e98a573
 description: 了解如何可以从详细报告移动到与安全中建议的操作的真知灼见&amp;合规性中心。
-ms.openlocfilehash: 8048e9aac9191bd89028ac3e4f5fdde577ad7226
-ms.sourcegitcommit: 2cf7f5bb282c971d33e00f65d9982a3f14aec74e
+ms.openlocfilehash: 48c7283723a75685e16e1f7ddbe34bc3779819cf
+ms.sourcegitcommit: 9034809b6f308bedc3b8ddcca8242586b5c30f94
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/27/2018
-ms.locfileid: "26706246"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "28014974"
 ---
 # <a name="walkthrough---from-a-detailed-report-to-an-insight"></a>演练 - 从详细报告到见解
 
@@ -30,7 +30,7 @@ ms.locfileid: "26706246"
 
 让我们该工作流中的详细报告从洞察和操作。（这是一个简短的[反垃圾邮件和反恶意软件](anti-spam-and-anti-malware-protection.md)的示例。） 
   
-1. 我们开头[安全&amp;合规性中心](https://security.microsoft.com)报告。(请转到**报告** \> **仪表板**。)<br/>![安全中&amp;合规性中心中，转到报告\>仪表板](media/68f3bb7c-b4f7-4cca-904b-478643a93c94.png)
+1. 我们开头[安全&amp;合规性中心](https://protection.office.com)报告。(请转到**报告** \> **仪表板**。)<br/>![安全中&amp;合规性中心中，转到报告\>仪表板](media/68f3bb7c-b4f7-4cca-904b-478643a93c94.png)
   
 2. 我们选择一个报表以获取更详细的视图。（选择报表，如**威胁保护状态**报告。）<br/>![显示见解威胁保护状态报告](media/f47d7dbd-816a-47ba-b8db-53919fbed192.png)
   
