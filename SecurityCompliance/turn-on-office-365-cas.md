@@ -12,12 +12,12 @@ search.appverid:
 - MOE150
 ms.assetid: ba919c73-d021-404d-9850-eec57e78678c
 description: 阅读此文，了解如何启用 Office 365 高级安全管理，由 Microsoft Azure 中的云应用程序安全性。
-ms.openlocfilehash: 586ebc5f496652e05b4ab6d2421fa9bc42603895
-ms.sourcegitcommit: 2cf7f5bb282c971d33e00f65d9982a3f14aec74e
+ms.openlocfilehash: 8964a0b413b0350188c7f61638d04032534e5374
+ms.sourcegitcommit: 9034809b6f308bedc3b8ddcca8242586b5c30f94
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/27/2018
-ms.locfileid: "26706286"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "28014784"
 ---
 # <a name="turn-on-office-365-cloud-app-security"></a>开启 Office 365 云应用安全
   
@@ -30,7 +30,7 @@ ms.locfileid: "26706286"
 > [!IMPORTANT]
 > 您必须是要执行以下任务的全局管理员或 security 管理员程序。若要了解详细信息，请参阅[Permissions in Office 365 安全性&amp;合规性中心](permissions-in-the-security-and-compliance-center.md)。按顺序对 Office 365 云应用程序安全性，以更正，针对您的 Office 365 环境**必须打开审核日志记录**。有关详细信息，请参阅[打开或关闭，打开 Office 365 审核日志搜索](turn-audit-log-search-on-or-off.md)。 
   
-1. 以全局管理员或 security 管理员程序中，转到[https://security.microsoft.com](https://security.microsoft.com)和 Office 365 中使用您的工作或学校帐户登录。(您将转到安全&amp;合规性中心。) 
+1. 以全局管理员或 security 管理员程序中，转到[https://protection.office.com](https://security.microsoft.com)和 Office 365 中使用您的工作或学校帐户登录。(您将转到安全&amp;合规性中心。) 
     
 2. 转到**通知** \> **管理高级通知**。
     

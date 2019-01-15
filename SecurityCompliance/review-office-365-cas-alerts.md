@@ -12,12 +12,12 @@ search.appverid:
 - MOE150
 ms.assetid: 97e9c3d9-df89-458e-924b-369becee5532
 description: 使用在 Office 365 云应用程序安全性通知页上查看潜在问题并执行操作。可以关闭或解决通知，并有必要，暂停的用户帐户。
-ms.openlocfilehash: 16d24ef7075a2db1dab86ee322b14f886c48b98b
-ms.sourcegitcommit: 2cf7f5bb282c971d33e00f65d9982a3f14aec74e
+ms.openlocfilehash: 2665f4ebc9c5c24b95da64954a606dfc0df99082
+ms.sourcegitcommit: 9034809b6f308bedc3b8ddcca8242586b5c30f94
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/27/2018
-ms.locfileid: "26706116"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "28014824"
 ---
 # <a name="review-and-take-action-on-alerts-in-office-365-cloud-app-security"></a>查看 Office 365 云应用安全中的警报并执行相应操作
   
@@ -32,7 +32,7 @@ ms.locfileid: "26706116"
   
 ## <a name="how-to-get-to-the-alerts-page"></a>如何获取通知页面
 
-1. 以全局管理员或 security 管理员程序中，转到[https://security.microsoft.com](https://security.microsoft.com)和使用工作或学校帐户登录。 
+1. 以全局管理员或 security 管理员程序中，转到[https://protection.office.com](https://protection.office.com)和使用工作或学校帐户登录。 
     
 2. 安全中&amp;合规性中心中，选择**警报** \> **管理高级通知**。
     

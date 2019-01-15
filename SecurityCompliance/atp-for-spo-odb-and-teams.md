@@ -13,12 +13,12 @@ search.appverid:
 - MOE150
 ms.assetid: 26261670-db33-4c53-b125-af0662c34607
 description: 将 Office 365 高级威胁保护扩展到 SharePoint Online、 OneDrive for Business 和 Microsoft 团队进行更安全协作为您的组织中的文件。
-ms.openlocfilehash: 6891184b49aa4ea03d5c13672ac9b95fc9e6d162
-ms.sourcegitcommit: 147768bbe44c8c98c02fa29ae9d882cee4ec2d6b
+ms.openlocfilehash: 29676bf7c326adf366cca79a59f5b4c40c672baa
+ms.sourcegitcommit: 9034809b6f308bedc3b8ddcca8242586b5c30f94
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "26238444"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "28014814"
 ---
 # <a name="office-365-atp-for-sharepoint-onedrive-and-microsoft-teams"></a>适用于 SharePoint、OneDrive 和 Microsoft Teams 的 Office 365 ATP
 
@@ -30,15 +30,15 @@ ms.locfileid: "26238444"
 
 当 SharePoint Online 中的文件时，OneDrive for Business 和 Microsoft 团队被标识为恶意，ATP 直接与锁定该文件的文件存储集成。下图显示了在库中检测到恶意文件的示例。
   
-[![文件中的 OneDrive for Business 使用一个检测为恶意的屏幕截图](media/2bba71cc-7ad1-4799-8b9d-d56f923db3a7.png)](https://support.office.com/article/01e902ad-a903-4e0f-b093-1e1ac0c37ad2)
+[![文件中的 OneDrive for Business 使用一个检测为恶意](media/2bba71cc-7ad1-4799-8b9d-d56f923db3a7.png)](https://support.office.com/article/01e902ad-a903-4e0f-b093-1e1ac0c37ad2)
   
 尽管阻止的文件仍列在的文档库和 web、 移动或桌面应用程序，但阻止的文件无法打开、 复制、 移动或共享。人员可以但是，删除被阻止的文件。下面是用户的移动设备的内容的示例如下所示：
   
-[![从 OneDrive 移动应用程序的 OneDrive for Business 中删除阻止的文件的屏幕截图](media/cb1c1705-fd0a-45b8-9a26-c22503011d54.png)](https://support.office.com/article/01e902ad-a903-4e0f-b093-1e1ac0c37ad2)
+[![从 OneDrive 移动应用程序的 OneDrive for Business 中删除阻止的文件](media/cb1c1705-fd0a-45b8-9a26-c22503011d54.png)](https://support.office.com/article/01e902ad-a903-4e0f-b093-1e1ac0c37ad2)
   
 根据 Office 365 的配置方式，人员可能或可能不具有下载阻止的文件的功能。下面是什么下载阻止的文件在用户的移动设备上如下所示：
   
-[![下载阻止的文件中的 OneDrive for Business 的屏幕截图](media/be288a82-bdd8-4371-93d8-1783db3b61bc.png)](https://support.office.com/article/01e902ad-a903-4e0f-b093-1e1ac0c37ad2)
+[![下载阻止的文件中的 OneDrive for Business](media/be288a82-bdd8-4371-93d8-1783db3b61bc.png)](https://support.office.com/article/01e902ad-a903-4e0f-b093-1e1ac0c37ad2)
   
 若要了解详细信息，请参阅[打开 SharePoint、 OneDrive 和 Microsoft 团队的 Office 365 ATP](turn-on-atp-for-spo-odb-and-teams.md)。
   
