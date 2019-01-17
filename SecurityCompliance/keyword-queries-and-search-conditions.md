@@ -3,7 +3,7 @@ title: 内容搜索的关键字查询和搜索条件
 ms.author: markjjo
 author: markjjo
 manager: laurawi
-ms.date: 6/29/2018
+ms.date: ''
 ms.audience: Admin
 ms.topic: reference
 f1_keywords:
@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: c4639c2e-7223-4302-8e0d-b6e10f1c3be3
 description: '了解电子邮件和文件属性，您可以在 Office 365 安全性使用内容搜索工具的业务网站搜索在 Exchange Online 邮箱和 SharePoint 或 OneDrive&amp;合规性中心。  '
-ms.openlocfilehash: 49dab5c26516f0549a6f72a24c98618db459dcc6
-ms.sourcegitcommit: bf70ec8e11b3f75bf45cd4f760cd1a982593dbad
+ms.openlocfilehash: c1b5c3721a892929535a7e699201d0bcfc39937b
+ms.sourcegitcommit: a2afa4c06e9b762cf689b0d2a0653076f9b00c49
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/22/2018
-ms.locfileid: "24962948"
+ms.lasthandoff: 01/17/2019
+ms.locfileid: "28328158"
 ---
 # <a name="keyword-queries-and-search-conditions-for-content-search"></a>内容搜索的关键字查询和搜索条件
 
@@ -84,9 +84,9 @@ SharePoint 属性可搜索的完整列表，请参阅[Overview of 爬网和托�
 |FileName  <br/> |文件的名称。  <br/> |`filename:"marketing plan"`  <br/> `filename:estimate`  <br/> |第一个示例返回标题中具有完全匹配短语“marketing plan”的文件。第二个示例返回文件名中具有单词“estimate”的文件。  <br/> |
 |LastModifiedTime  <br/> |项目的上次更改日期。  <br/> |`lastmodifiedtime>=05/01/2016`  <br/> `lastmodifiedtime>=05/10/2016 AND lastmodifiedtime<=06/1/2016`  <br/> |第一个示例返回当天或之后 2016 年 5 月 1，已发生更改的项目。第二个示例返回 2016 年 5 月 1 和 2016 年 6 月 1，之间修改的项。  <br/> |
 |ModifiedBy  <br/> |上次更改项目的人员。请务必使用此属性的用户的显示名称。  <br/> |`modifiedby:"Garth Fort"`  <br/> |由 Garth Fort 最后更改的所有项目。  <br/> |
-|路径  <br/> |上 SharePoint 或 OneDrive for Business 站点的特定文件夹的路径 (URL)。如果您使用此属性，请务必搜索指定的文件夹位于中的网站。<br/> 若要返回位于路径属性指定的文件夹中的子文件夹中的项，您必须添加 /\*到 URL 指定的文件夹中。例如， `path: https://contoso.sharepoint.com/Shared Documents/*`。  <br/> <br/> **注意：** 使用`Path`属性来搜索 OneDrive 位置不会在搜索结果中返回媒体文件，如.png、.tiff 或.wav 文件。使用不同网站属性在搜索查询中搜索 OneDrive 文件夹中的媒体文件。<br/> <br/> 有关为 Path 属性搜索和使用脚本来获取特定网站上的文件夹的路径 Url 的详细信息，请参阅[使用 Office 365 的目标集合中的内容搜索](use-content-search-for-targeted-collections.md)。  <br/> |`path:https://contoso-my.sharepoint.com/personal/garthf_contoso_com/Documents/Private`  <br/> `path:"https://contoso-my.sharepoint.com/personal/garthf_contoso_com/Documents/Shared with Everyone/*" AND filename:confidential`  <br/> |第一个示例返回在指定 OneDrive for Business 文件夹中的所有项。第二个示例返回指定的网站文件夹 （及其所有子文件夹） 中包含单词"confidential"的文件名称中的文档。  <br/> |
+|路径  <br/> |上 SharePoint 或 OneDrive for Business 站点的特定文件夹的路径 (URL)。如果您使用此属性，请务必搜索指定的文件夹位于中的网站。<br/> 若要返回位于路径属性指定的文件夹中的子文件夹中的项，您必须添加 /\*到 URL 指定的文件夹中。例如，`path: "https://contoso.sharepoint.com/Shared Documents/*"`  <br/> <br/> **注意：** 使用`Path`属性来搜索 OneDrive 位置不会在搜索结果中返回媒体文件，如.png、.tiff 或.wav 文件。使用不同网站属性在搜索查询中搜索 OneDrive 文件夹中的媒体文件。<br/> <br/> 有关为 Path 属性搜索和使用脚本来获取特定网站上的文件夹的路径 Url 的详细信息，请参阅[使用 Office 365 的目标集合中的内容搜索](use-content-search-for-targeted-collections.md)。  <br/> |`path:"https://contoso-my.sharepoint.com/personal/garthf_contoso_com/Documents/Private"`  <br/> `path:"https://contoso-my.sharepoint.com/personal/garthf_contoso_com/Documents/Shared with Everyone/*" AND filename:confidential`  <br/> |第一个示例返回在指定 OneDrive for Business 文件夹中的所有项。第二个示例返回指定的网站文件夹 （及其所有子文件夹） 中包含单词"confidential"的文件名称中的文档。  <br/> |
 |SharedWithUsersOWSUser  <br/> |已与指定的用户共享和显示在用户的 OneDrive for Business 站点**与我共享**页上的文档。这些是已明确共享与指定用户的其他人在组织中的文档。导出的匹配搜索查询使用 SharedWithUsersOWSUser 属性的文档时，文档将导出从与指定的用户共享文档的人员的原始内容的位置。有关详细信息，请参阅[您的组织内共享的搜索网站内容](keyword-queries-and-search-conditions.md#internal)。<br/> |`sharedwithusersowsuser:garthf`  <br/> `sharedwithusersowsuser:"garthf@contoso.com"`  <br/> |这两个示例返回所有内部的文档的已明确共享与李军和的李军的**与我共享**页上显示的 OneDrive for Business 帐户。  <br/> |
-|Site  <br/> |组织中站点或站点组的 URL。  <br/> |`site:https://contoso-my.sharepoint.com`  <br/> `site:https://contoso.sharepoint.com/sites/teams`  <br/> |第一个示例返回从 OneDrive for Business 站点的组织中的所有用户的项。第二个示例返回所有工作组网站中的项。  <br/> |
+|Site  <br/> |组织中站点或站点组的 URL。  <br/> |`site:"https://contoso-my.sharepoint.com"`  <br/> `site:"https://contoso.sharepoint.com/sites/teams"`  <br/> |第一个示例返回从 OneDrive for Business 站点的组织中的所有用户的项。第二个示例返回所有工作组网站中的项。  <br/> |
 |Size  <br/> |邮件的大小（以字节为单位）。  <br/> |`size>=1`  <br/> `size:1..10000`  <br/> |第一个示例返回大于 1 字节的项目。第二个示例返回大小介于 1 到 10,000 字节之间的项目。  <br/> |
 |标题  <br/> |文档的标题。Title 属性是在 Microsoft Office 文档中指定的元数据。它是文档的不同文件名。  <br/> |`title:"communication plan"`  <br/> |Office 文档的 Title 元数据属性中包含短语“communication plan”的任何文档。  <br/> |
    
@@ -95,7 +95,7 @@ SharePoint 属性可搜索的完整列表，请参阅[Overview of 爬网和托�
 下表列出了联系人编制索引的属性和，您可以使用内容搜索中搜索。这些是可供用户为位于用户邮箱的个人通讯簿中的联系人 （也称为个人联系人） 配置的属性。若要搜索联系人，您可以选择要搜索，然后使用关键字查询中的一个或多个联系人的属性的邮箱。
   
 > [!TIP]
-> 若要搜索的值包含空格，使用双引号 ("??") 包含短语;例如， `businessaddress:"123 Main Street"`。 
+> 若要搜索包含空格或特殊字符的值，使用双引号 ("") 包含短语;例如， `businessaddress:"123 Main Street"`。 
   
 |**属性**|**属性描述**|
 |:-----|:-----|
@@ -139,7 +139,7 @@ SharePoint 属性可搜索的完整列表，请参阅[Overview of 爬网和托�
 |NOT  <br/> |keyword1 NOT keyword2  <br/> NOT from:"Ann Beebe"  <br/> 不类型： im  <br/> |排除指定关键字的项目或`property:value`表达式。在第二个示例排除发送 Ann Beebe 的邮件。第三个示例排除任何即时消息对话，如 Skype 保存到对话历史记录邮箱文件夹的业务对话。<sup>2</sup> <br/> |
 |-  <br/> |keyword1 -keyword2  <br/> |与**NOT**运算符相同。此查询返回包含的项以便`keyword1`和将排除项包含的`keyword2`。<br/> |
 |NEAR  <br/> |keyword1 NEAR(n) keyword2  <br/> |返回项目的词彼此靠近，其中 n 等于分离的单词数。例如，`best NEAR(5) worst`返回任何项，其中的单词"差"是中的"最佳"的五个单词。如果未指定编号，默认的距离为八个单词。<sup>2</sup> <br/> |
-|ONEAR  <br/> |keyword1 ONEAR(n) keyword2  <br/> |类似于**附近**，但它返回项目中指定的顺序彼此靠近的单词。例如，`best ONEAR(5) worst`返回任何项，其中的单词"最佳"发生之前的单词"最差值"并且两个单词中的每个其他的五个单词。如果未指定编号，默认的距离为八个单词。<sup>2</sup> <br/> > [!NOTE]> 搜索邮箱; 时，不支持**ONEAR**运算符仅适用于搜索业务网站 SharePoint 和 OneDrive 时。如果您在同一个搜索中搜索邮箱和网站，并且该查询包括**ONEAR**运算符，搜索将像使用**NEAR**运算符返回的邮箱项目。换句话说，搜索返回的项目中指定的词彼此靠近无论单词发生的顺序。           |
+|ONEAR  <br/> |keyword1 ONEAR(n) keyword2  <br/> |类似于**附近**，但它返回项目中指定的顺序彼此靠近的单词。例如，`best ONEAR(5) worst`返回任何项，其中的单词"最佳"发生之前的单词"最差值"并且两个单词中的每个其他的五个单词。如果未指定编号，默认的距离为八个单词。<sup>2</sup> <br/> > [!NOTE]搜索邮箱; 时，不支持 > **ONEAR**运算符仅适用于搜索业务网站 SharePoint 和 OneDrive 时。如果您在同一个搜索中搜索邮箱和网站，并且该查询包括**ONEAR**运算符，搜索将像使用**NEAR**运算符返回的邮箱项目。换句话说，搜索返回的项目中指定的词彼此靠近无论单词发生的顺序。           |
 |:  <br/> |property:value  <br/> |中的冒号 （:）`property:value`语法指定搜索的属性的值包含指定的值。例如，`recipients:garthf@contoso.com`返回发送到 garthf@contoso.com 所有邮件。<br/> |
 |=  <br/> |property=value  <br/> |与 **:** 运算符相同。  <br/> |
 |\<  <br/> |property\<value  <br/> |表示正在搜索的属性小于指定的值。<sup>1</sup> <br/> |
@@ -196,7 +196,7 @@ SharePoint 属性可搜索的完整列表，请参阅[Overview of 爬网和托�
 |Sender  <br/> |电子邮件的发件人。  <br/> |
 |Sent  <br/> |发件人发送一封电子邮件的日期。这是作为发送电子邮件属性相同的属性。  <br/> |
 |Subject  <br/> |电子邮件主题行中的文本。  <br/> |
-|To  <br/> |电子邮件的收件人。  <br/> |
+|收件人  <br/> |电子邮件的收件人。  <br/> |
   
 ### <a name="conditions-for-document-properties"></a>文档属性的条件
 
@@ -322,11 +322,11 @@ SharePoint 属性可搜索的完整列表，请参阅[Overview of 爬网和托�
     
 - 允许与此链接可访问该资源，而无需进行身份验证的任何人都匿名来宾链接。
     
-下面是一些示例：
+此处为一些示例：
   
 - 查询`ViewableByExternalUsers:true AND SensitiveType:"Credit Card Number"`将返回与组织外部的人员共享且包含信用卡号的所有项。 
     
-- 查询`ViewableByExternalUsers:true AND ContentType:document AND Site:https://contoso.sharepoint.com/Sites/Teams`将返回组织中与外部用户共享的所有工作组网站上的文档的列表。 
+- 查询`ViewableByExternalUsers:true AND ContentType:document AND site:"https://contoso.sharepoint.com/Sites/Teams"`将返回组织中与外部用户共享的所有工作组网站上的文档的列表。 
     
 > [!TIP]
 > 搜索查询，如`ViewableByExternalUsers:true AND ContentType:document`可能会在搜索结果中返回大量的.aspx 文件。若要消除这些 （或其他类型的文件），您可以使用`FileExtension`属性来排除特定文件类型;例如`ViewableByExternalUsers:true AND ContentType:document NOT FileExtension:aspx`。 
