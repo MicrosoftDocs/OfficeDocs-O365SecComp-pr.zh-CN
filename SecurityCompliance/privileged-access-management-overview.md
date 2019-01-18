@@ -13,19 +13,19 @@ ms.collection: Strat_O365_IP
 ms.custom: Ent_Solutions
 ms.assetid: ''
 description: 使用本主题可了解有关权限的详细信息访问 Office 365 中的管理
-ms.openlocfilehash: 5056c19acb03b2486cc84fe085ffd6c2814007dc
-ms.sourcegitcommit: a07b91723bae9ecee2cb092bfbc5b208b30b11a1
+ms.openlocfilehash: f3cd5fb263fe3bb83d60a7938f0e22dc38f199e3
+ms.sourcegitcommit: b0b0b716718c22779c7c04775b8010d65cd6656b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "25793547"
+ms.lasthandoff: 01/17/2019
+ms.locfileid: "28723229"
 ---
 # <a name="privileged-access-management-in-office-365"></a>Office 365 中的管理访问权限
 
 > [!IMPORTANT]
 > 本主题介绍了部署和配置指南仅当前 Office 365 E5 和高级合规性 Sku 中可用的功能。
 
-特权访问管理 Office 365 中允许精细的访问控制拥有权限的管理员任务。 它可以帮助保护您的组织可以使用现有拥有权限的管理员帐户所访问敏感数据或关键的配置设置的访问权限的破坏。启用访问权限的管理后, 用户将需要请求中实时访问完成审批工作流高度范围和限制时间内通过提升和特权任务。这使用户刚刚-足够-访问执行的任务，而冒泄露敏感数据或关键的配置设置。启用访问权限的管理 Office 365 中将启用您的组织具有零个位置权限并提供防御下，因为此类所管理的访问权限的安全漏洞的层。 
+特权访问管理 Office 365 中允许精细的访问控制拥有权限的管理员任务。它可以帮助保护您的组织可以使用现有拥有权限的管理员帐户所访问敏感数据或关键的配置设置的访问权限的破坏。启用访问权限的管理后, 用户将需要请求中实时访问完成审批工作流高度范围和限制时间内通过提升和特权任务。这使用户刚刚-足够-访问执行的任务，而冒泄露敏感数据或关键的配置设置。启用访问权限的管理 Office 365 中将启用您的组织具有零个位置权限并提供防御下，因为此类所管理的访问权限的安全漏洞的层。 
 
 ## <a name="layers-of-protection"></a>层保护
 
@@ -57,7 +57,7 @@ ms.locfileid: "25793547"
 
 ### <a name="step-3-access-approval"></a>步骤 3： 访问审核
 
-生成审批请求，并审核组通知通过电子邮件的待处理的请求。如果授予审批，作为审批处理特权的访问请求并准备完成任务。如果请求被拒绝，任务已阻止并且没有访问权限授予 reqeustor。请求者将请求批准或拒绝通过电子邮件通知。
+生成审批请求，并审核组通知通过电子邮件的待处理的请求。如果授予审批，作为审批处理特权的访问请求并准备完成任务。如果请求被拒绝，任务将阻止并且没有访问权限授予 reqeustor。请求者将请求批准或拒绝通过电子邮件通知。
 
 ![步骤 3-访问审核](media/pam-step3-access-approval.jpg)
 
@@ -73,7 +73,7 @@ ms.locfileid: "25793547"
 特权访问管理是当前仅适用于 Office 365 E5 和高级合规性 Sku 以客户。
 
 ### <a name="when-will-privileged-access-be-available-for-office-365-workloads-beyond-exchange"></a>何时适用于 Office 365 工作负载超过 Exchange 访问权限？
-我们计划推出提供此功能的其他 Office 365 工作负载。我们准备好共享一个日程表，它将提供通过 Office 365 路线图。
+我们计划推出提供此功能的其他 Office 365 工作负载。我们准备好共享一个日程表，它将提供通过[Microsoft 365 路线图](https://www.microsoft.com/microsoft-365/roadmap)。
 
 ### <a name="my-organization-needs-more-than-30-privileged-access-polices-will-this-limit-be-increased"></a>我的组织需要多个 30 授权的访问权限策略，将增加此限制？
 
@@ -83,4 +83,4 @@ ms.locfileid: "25793547"
 否，您需要具有 Exchange 角色管理角色分配给管理 Office 365 中的授权访问权限的帐户。但是，全局管理员角色默认情况下包括此角色，并且可用于管理访问权限，如果您不想要配置为独立的帐户权限的角色管理角色。包括在审批者组中的用户不需要全局管理员或具有角色管理角色分配审阅和审批请求。 
 
 ### <a name="how-is-privileged-access-management-in-office-365-related-to-customer-lockbox"></a>是与客户密码箱的 Office 365 中的访问权限的管理如何？
-[客户密码箱](https://support.office.com/article/Office-365-Customer-Lockbox-Requests-36f9cdd1-e64c-421b-a7e4-4a54d16440a2)允许访问由其服务提供商，即 Microsoft 的数据的组织的访问控制的级别。特权访问 Office 365 中的管理允许的所有特权的 Office 365 任务组织内的精细的访问控制。
+[客户密码箱](https://docs.microsoft.com/office365/admin/manage/customer-lockbox-requests)允许访问由其服务提供商，即 Microsoft 的数据的组织的访问控制的级别。特权访问 Office 365 中的管理允许的所有特权的 Office 365 任务组织内的精细的访问控制。

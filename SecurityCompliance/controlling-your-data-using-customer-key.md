@@ -12,12 +12,12 @@ search.appverid:
 - MET150
 ms.assetid: f2cd475a-e592-46cf-80a3-1bfb0fa17697
 description: 了解如何设置客户参数 Office 365 的 Exchange Online、 Skype 的业务和 SharePoint Online 的 OneDrive for Business。与客户参数，您将控制组织的加密密钥，然后配置 Office 365 使用它们在 Microsoft 数据中心中的 rest 数据进行加密。
-ms.openlocfilehash: 3eeccd03b89aa5a79ceba536d3f13c7a881b6ca7
-ms.sourcegitcommit: ef0bb05a0cf7974ae5083c7551ce3fe4ab7a9544
+ms.openlocfilehash: c4a59af49efad3bb8539b6c83b9ad9fd1c2d1f43
+ms.sourcegitcommit: b0b0b716718c22779c7c04775b8010d65cd6656b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/13/2018
-ms.locfileid: "23965606"
+ms.lasthandoff: 01/17/2019
+ms.locfileid: "28723249"
 ---
 # <a name="controlling-your-data-in-office-365-using-customer-key"></a>使用客户密钥控制 Office 365 中的数据
 
@@ -54,7 +54,7 @@ ms.locfileid: "23965606"
     
 - [提交一个请求激活的 Office 365 客户参数](controlling-your-data-using-customer-key.md#FastTrack)
     
-    创建两个新 Azure 订阅后，您需要通过完成 Microsoft FastTrack 门户中承载的 web 表单提交适当的客户参数提供请求。FastTrack 团队不与客户参数提供帮助。Office 只需使用 FastTrack 门户以允许您来提交表单，并将有助于我们开发出跟踪客户项相关的产品。
+    创建两个新 Azure 订阅后，您需要通过完成 Microsoft FastTrack 门户中承载的 web 表单提交适当的客户参数提供请求。**FastTrack 团队不与客户参数提供帮助。Office 只需使用 FastTrack 门户以允许您来提交表单，并将有助于我们开发出跟踪客户项相关的产品**。
   
 后已提交客户参数版，Microsoft 审阅您的请求，并且可以继续执行安装任务的其余部分时通知您。此过程可能需要最多五个工作日。
     

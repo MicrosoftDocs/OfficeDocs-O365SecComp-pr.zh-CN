@@ -12,18 +12,18 @@ search.appverid:
 - MOE150
 ms.assetid: dd6d2417-49c4-4de6-9294-67fdabbf8532
 description: 您可以与 Office 365 云应用程序安全性集成 SIEM 服务器。阅读这篇文章，获取它的工作方式以及如何将其设置的概述。
-ms.openlocfilehash: 0e185dec44bed7657bed126f70dfc64ffc135611
-ms.sourcegitcommit: 9034809b6f308bedc3b8ddcca8242586b5c30f94
+ms.openlocfilehash: 3cdae0389065b18da090139528eceefb007363fa
+ms.sourcegitcommit: b0b0b716718c22779c7c04775b8010d65cd6656b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "28015024"
+ms.lasthandoff: 01/17/2019
+ms.locfileid: "28723259"
 ---
 # <a name="integrate-your-siem-server-with-office-365-cloud-app-security"></a>将 SIEM 服务器与 Office 365 云应用安全集成
   
 |评估 * *\>**|规划 * *\>**|部署 * *\>**|使用率 ***|
 |:-----|:-----|:-----|:-----|
-|[启动评估](office-365-cas-overview.md) <br/> |[开始规划](get-ready-for-office-365-cas.md) <br/> |在这里 ！  <br/> [后续步骤](utilization-activities-for-ocas.md) <br/> |[开始利用](utilization-activities-for-ocas.md) <br/> |
+|[启动评估](office-365-cas-overview.md) <br/> |[开始规划](get-ready-for-office-365-cas.md) <br/> |在这里 ！  <br/> [下一步](utilization-activities-for-ocas.md) <br/> |[开始利用](utilization-activities-for-ocas.md) <br/> |
    
 ## <a name="overview-and-prerequisites"></a>概述和先决条件
 
@@ -74,7 +74,7 @@ Office 365 云应用程序安全性当前支持以下 SIEM 服务器：
 3. 选择**转到 Office 365 云应用程序安全性**。<br/>
     ![安全中&amp;合规性中心中，选择管理高级通知转到 Office 365 云应用程序安全性](media/958632d4-03e3-4ade-8e22-d5509db6fca7.png)
   
-4. 单击**设置** \> **安全扩展**。<br/>
+4. 单击**设置** \> **安全扩展名**，然后选择 SIEM 代理。<br/>
 ![选择设置 > 安全扩展](media/Settings-SecurityExtensions.png)
 
 5. 选择**添加 SIEM 代理**。<br/>![选择添加 SIEM 代理。](media/SIEMAgents.png)

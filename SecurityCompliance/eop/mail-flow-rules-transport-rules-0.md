@@ -11,12 +11,12 @@ ms.custom: TN2DMC
 localization_priority: Normal
 ms.assetid: 9c2cf227-eff7-48ef-87fb-487186e47363
 description: 可以使用邮件流规则（也称为传输规则）识别通过 Office 365 组织进行传递的邮件并对其进行操作。
-ms.openlocfilehash: 841a88f7074ce469643630cf29e0674db8fb88b6
-ms.sourcegitcommit: 22bca85c3c6d946083d3784f72e886c068d49f4a
+ms.openlocfilehash: b6bd5f0510c8a9e5f5cc4679dce669b6da50f5e8
+ms.sourcegitcommit: b0b0b716718c22779c7c04775b8010d65cd6656b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/06/2018
-ms.locfileid: "22026609"
+ms.lasthandoff: 01/17/2019
+ms.locfileid: "28723239"
 ---
 # <a name="mail-flow-rules-transport-rules-in-exchange-online-protection"></a>Exchange Online Protection 中的邮件流规则（传输规则）
 
@@ -32,7 +32,7 @@ ms.locfileid: "22026609"
   
 - [Use mail flow rules to inspect message attachments in Office 365](http://technet.microsoft.com/library/874d1c78-a8ec-4938-b388-d3208c2fa971.aspx)
     
-- [Office 365 企业版中的加密设置](https://support.office.com/article/e86fc991-0161-4f01-9c1c-d25e87733d06)
+- [设置 Office 365 企业版中的加密](https://support.office.com/article/e86fc991-0161-4f01-9c1c-d25e87733d06)
     
 - [Organization-wide message disclaimers, signatures, footers, or headers in Office 365](http://technet.microsoft.com/library/29ac61c2-77f1-4071-b14e-8cc64e3e76ba.aspx)
     
@@ -54,7 +54,7 @@ ms.locfileid: "22026609"
   
 - **条件** 用于标识要将操作应用到的邮件。一些条件检查邮件头字段（例如"收件人"、"发件人"或"抄送"字段）。其他条件检查邮件属性（例如邮件主题、正文、附件、邮件大小或邮件分类）。大多数条件要求你指定比较运算符（例如等于、不等于或包含）以及要匹配的值。如果没有条件或例外，规则将应用到所有邮件。 
     
-    有关详细信息的邮件流规则条件在 Exchange Online Protection，请参阅[邮件流规则条件和例外 (predicates) 在 Exchange Online Protection](http://technet.microsoft.com/library/04edeaba-afd4-4207-b2cb-51bcc44e483c.aspx)。
+    有关 Exchange Online Protection 中的邮件流规则条件的详细信息，请参阅[Exchange Online 中的邮件流规则条件和例外 (predicates)。](https://docs.microsoft.com/en-us/exchange/security-and-compliance/mail-flow-rules/conditions-and-exceptions)。
     
 - **例外** 选择性地识别操作不应应用到的邮件。条件中可用的相同邮件标识符同样在例外中可用。例外会覆盖条件并阻止规则操作应用于邮件，即使邮件匹配所有配置的条件也是如此。 
     
@@ -122,7 +122,7 @@ ms.locfileid: "22026609"
     
 - 创建或修改的邮件流规则之后，，可能需要 30 分钟的时间要应用于邮件的新的或更新规则。
     
-## <a name="for-more-information"></a>详细信息
+## <a name="for-more-information"></a>更多信息
 
 [管理传输规则](http://technet.microsoft.com/library/e7a81372-b6d7-4d1f-bc9e-a845a7facac2.aspx)
   
