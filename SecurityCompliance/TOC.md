@@ -1,15 +1,8 @@
----
-ms.openlocfilehash: bc1508c3d07e62864ffb156d6e311ace421bc8bc
-ms.sourcegitcommit: a2afa4c06e9b762cf689b0d2a0653076f9b00c49
-ms.translationtype: HT
-ms.contentlocale: zh-CN
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28328128"
----
 # [入门]()
 ## [Office 365 安全路线图](security-roadmap.md)
 ## [配置 Office 365 租户以提高安全性](tenant-wide-setup-for-increased-security.md)
-## [转到安全与合规中心](go-to-the-securitycompliance-center.md)
+## [转到 Office 365 安全与合规中心](go-to-the-securitycompliance-center.md)
+## [为新的 Microsoft 365 安全中心和 Microsoft 365 合规中心做好准备](microsoft-security-and-compliance.md)
 ## [Office 365 安全功能分数](office-365-secure-score.md)
 ## [安全与合规中心内的权限](permissions-in-the-security-and-compliance-center.md)
 ## [向用户授予对安全与合规中心的访问权限](grant-access-to-the-security-and-compliance-center.md)
