@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 ms.assetid: 8927b8b9-c5bc-45a8-a9f9-96c732e58264
 description: 在 Office 365 安全性中创建警报策略&amp;合规性中心以监视潜在威胁、 数据丢失和权限问题。然后您可以查看和管理用户执行活动报警策略的条件相匹配时生成通知。
-ms.openlocfilehash: 6bdbf9c4c352bf16fd1a7b5c9f7b0af7eb4fadfd
-ms.sourcegitcommit: a2afa4c06e9b762cf689b0d2a0653076f9b00c49
+ms.openlocfilehash: 28ea842c74f2d3d232218e582d3de31f3841284e
+ms.sourcegitcommit: a1d8174240eb88b51af3a1ba26d715292fe08c53
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28328138"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "29426027"
 ---
 # <a name="alert-policies-in-the-office-365-security-amp-compliance-center"></a>通知 Office 365 安全性的策略&amp;合规性中心
 
@@ -34,11 +34,11 @@ ms.locfileid: "28328138"
   
 ![如何警报策略工作的概述](media/e02a622d-b429-448b-8107-dd1a4770b4e0.png)
   
-1. 管理组织中的创建、 配置，并打开报警策略中安全使用**通知的策略**页上&amp;合规性中心。您还可以在 PowerShell 中使用**新建 ProtectionAlert** cmdlet 创建通知的策略。 
+1. 管理组织中的创建、 配置，并通过使用安全 & 合规性中心中的**通知的策略**页打开通知的策略。您还可以在 PowerShell 中使用**新建 ProtectionAlert** cmdlet 创建通知的策略。若要创建通知的策略，您需要的组织配置角色或安全 & 合规中心的管理通知角色分配。
     
 2. 用户执行活动报警策略的条件相匹配。恶意软件攻击，对于受感染的电子邮件发送给组织中的用户将触发一条通知。
     
-3. Office 365 生成警报安全中**视图通知**页面上显示的&amp;合规性中心。此外，如果警报策略启用了电子邮件通知，Office 365 将通知发送到列表收件人。 
+3. Office 365 生成警报安全中**视图通知**页面上显示的&amp;合规性中心。此外，如果警报策略启用了电子邮件通知，Office 365 将通知发送到列表收件人。管理员或其他用户可以在**视图通知**页面看到通知，取决于分配给用户的角色。有关详细信息，请参阅[查看警报所需的 RBAC 权限](#rbac-permissions-required-to-view-alerts)部分。
     
 4. 管理员管理安全中的通知&amp;合规性中心。管理通知组成分配警报的状态，以帮助跟踪和管理任何调查。
     
