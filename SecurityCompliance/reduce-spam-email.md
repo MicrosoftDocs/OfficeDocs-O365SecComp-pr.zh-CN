@@ -1,7 +1,7 @@
 ---
 title: 如何减少 Office 365 中的垃圾邮件
-ms.author: stephow
-author: stephow-MSFT
+ms.author: krowley
+author: kccross
 manager: laurawi
 ms.date: 6/7/2018
 ms.audience: Admin
@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.assetid: 07824c51-2c45-4005-8596-03c0d7c4ff2a
 description: 了解有助于减少 Office 365 中垃圾邮件的最常用方法。
-ms.openlocfilehash: e462bbb11862d795650b6378cd5de2681f0edf74
-ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+ms.openlocfilehash: 59778f992ebc232ae31ebc9aaae4ca5333080698
+ms.sourcegitcommit: 7023fd3c4d6088f82a5cd2fda241897a3a1c7f5c
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22525483"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29453688"
 ---
 # <a name="how-to-reduce-spam-email-in-office-365"></a>如何减少 Office 365 中的垃圾邮件
 
