@@ -5,16 +5,16 @@ author: denisebmsft
 manager: laurawi
 ms.audience: Admin
 ms.topic: reference
-ms.date: 12/03/2018
+ms.date: 01/25/2019
 ms.service: o365-administration
 localization_priority: Normal
-description: 请参阅什么发布 2017年对 Office 365 云应用程序安全性
-ms.openlocfilehash: f30df4313b40007440aa37c9cc9aa17e16e5208f
-ms.sourcegitcommit: ce61b1ea9df1a69c6eef06a4de1f644ecb9b941d
+description: 请参阅什么 2017 年发布的 Office 365 云应用程序安全性
+ms.openlocfilehash: a5f17f626876298d1551c9ca4439448c536a4d62
+ms.sourcegitcommit: 38ba284b793b080b77d9c9d94ae5a0b6c1ba689b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/03/2018
-ms.locfileid: "27135073"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "29570178"
 ---
 # <a name="office-365-cloud-app-security-updates-during-2017"></a>Office 365 在 2017年期间更新的云应用程序安全性
     
@@ -91,9 +91,8 @@ ms.locfileid: "27135073"
 ## <a name="related-topics"></a>相关主题
 
 [Office 365 云应用程序安全性帮助内容](office-365-cas-help.md)
+
+[What's new in Office 365 云应用程序安全性](new-in-office-365-cas.md)
   
 [推出 Office 365 云应用安全后的利用率活动](utilization-activities-for-ocas.md)
-  
-[Office 365 安全性权限&amp;合规性中心](permissions-in-the-security-and-compliance-center.md)
-  
 
