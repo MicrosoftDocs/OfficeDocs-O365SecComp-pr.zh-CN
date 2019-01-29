@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.assetid: 5e377752-700d-4870-9b6d-12bfc12d2423
 description: 借助保留策略，可主动决定是保留内容还是删除内容，亦或是先保留再删除内容；可将一个策略应用于整个组织，或只应用于特定位置或用户；并能将策略应用于所有内容，或只应用于满足特定条件的内容
-ms.openlocfilehash: a6d185484f83ca93c99153d584af6841397dbc2f
-ms.sourcegitcommit: ec465771a846de103a365fcb36cb7a7c0a5744c1
+ms.openlocfilehash: 46b7cd133551d8a0756361fd209e93ab9e721678
+ms.sourcegitcommit: d05a9937780d210b7ad48e721b947397ac5405a2
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/20/2018
-ms.locfileid: "27380612"
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "29607164"
 ---
 # <a name="overview-of-retention-policies"></a>保留策略概述
 
@@ -263,8 +263,32 @@ Office 365 中的保留策略可有助于实现所有这些目标。管理内容
 在保留策略被锁定后，任何人都无法禁用它，也无法从策略中删除位置。此外，还无法修改或删除在保留期内受策略约束的内容。锁定策略后，只能执行以下保留策略修改操作：向策略添加位置或延长其保留持续时间。可以向已锁定策略添加位置或延长保留期，但不能减少位置或禁用策略。
   
 因此，锁定保留策略前，请**务必**了解组织的合规性要求，并且仅在确定必须这样做后，才**锁定策略**。
+
+### <a name="lock-a-retention-policy-by-using-powershell"></a>使用 PowerShell 锁定保留策略
   
-只能通过使用 PowerShell 来锁定保留策略。请使用 `New-RetentionCompliancePolicy` 或 `Set-RetentionCompliancePolicy` cmdlet 的 `RestrictiveRetention` 参数。若要详细了解 PowerShell，请参阅下面的[查找保留策略的 PowerShell cmdlet](#find-the-powershell-cmdlets-for-retention-policies) 部分。
+你只能使用 PowerShell 来锁定保留策略。
+
+首先，[连接到 Office 365 安全与合规中心 PowerShell](http://go.microsoft.com/fwlink/p/?LinkID=799771)。
+
+其次，若要查看保留策略列表并找到要锁定的策略的名称，请运行 `Get-RetentionCompliancePolicy`。
+
+![PowerShell 中的保留策略列表](media/retention-policy-preservation-lock-get-retentioncompliancepolicy.PNG)
+
+第三，若要在保留策略上启用保留锁定，请运行 `Set-RetentionCompliancePolicy` 并将 `RestrictiveRetention` 参数设置为 true -- 例如：
+
+`Set-RetentionCompliancePolicy -Identity “<Name of Policy>” – RestrictiveRetention $true`
+
+![PowerShell 中的 RestrictiveRetention 参数](media/retention-policy-preservation-lock-restrictiveretention.PNG)
+
+运行该 cmdlet 后，你将看到确认提示。选择“**全是**”。
+
+![用于确认你要在 PowerShell 中锁定保留策略的提示](media/retention-policy-preservation-lock-confirmation-prompt.PNG)
+
+现在已在保留策略上启用保留锁定。如果运行 `Get-RetentionCompliancePolicy`，则需要将 `RestrictiveRetention` 参数设置为 true -- 例如：
+
+`Get-RetentionCompliancePolicy -Identity “<Name of Policy>” |Fl`
+
+![已在 PowerShell 中显示所有参数的锁定策略](media/retention-policy-preservation-lock-locked-policy.PNG)
   
 ## <a name="the-principles-of-retention-or-what-takes-precedence"></a>保留原则或优先级
 
