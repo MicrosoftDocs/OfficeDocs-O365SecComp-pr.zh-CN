@@ -1,0 +1,270 @@
+---
+title: Office 365 中的监督策略
+ms.author: robmazz
+author: robmazz
+manager: laurawi
+ms.audience: Admin
+ms.topic: article
+f1_keywords:
+- ms.o365.cc.SupervisoryReview
+ms.service: o365-administration
+localization_priority: Normal
+ms.collection: Strat_O365_IP
+search.appverid:
+- MET150
+- MOE150
+ms.assetid: d14ae7c3-fcb0-4a03-967b-cbed861bb086
+description: 了解 Office 365 中的监督策略
+ms.openlocfilehash: 0c76ba5b17277d8bd441810415e7e9acd1adbf36
+ms.sourcegitcommit: 3cb775e60b3806b66568ed2f9664c17ef96ca8de
+ms.translationtype: MT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 01/28/2019
+ms.locfileid: "29603522"
+---
+# <a name="supervision-policies-in-office-365"></a><span data-ttu-id="afc60-103">Office 365 中的监督策略</span><span class="sxs-lookup"><span data-stu-id="afc60-103">Supervision policies in Office 365</span></span>
+
+<span data-ttu-id="afc60-p101">Office 365 中的监督策略，您可以捕获员工通信，以指定审阅者的检查。您可以定义捕获内部和外部的电子邮件、 Microsoft 团队或您的组织中的第三方通信的特定策略。审阅者可以检查以确保他们与您组织的邮件标准兼容的邮件并解决这些问题与分类类型。这些策略还可以帮助您解决许多现代合规性难题，包括监视增加类型的通信通道，增加量邮件数据和法规实施 & 罚款的风险。</span><span class="sxs-lookup"><span data-stu-id="afc60-p101">Supervision policies in Office 365 allow you to capture employee communications for examination by designated reviewers. You can define specific policies that capture internal and external email, Microsoft Teams, or 3rd-party communications in your organization. Reviewers can then examine the messages to make sure they are compliant with your organization's message standards and resolve them with classification type. These policies can also help you overcome many modern compliance challenges, including monitoring increasing types of communication channels, increasing volume of message data, and regulatory enforcement & the risk of fines.</span></span>
+
+<span data-ttu-id="afc60-p102">某些组织中可能存在的 IT 支持和合规性管理组之间的职责分离。Office 365 支持配置租户监督策略支持功能与策略的配置和执行捕获 communications 之间的距离。例如，组织的 IT 组可能负责设置角色权限和组，以支持的配置和管理组织的合规性团队的监督策略。</span><span class="sxs-lookup"><span data-stu-id="afc60-p102">In some organizations, there may be a separation of duties between IT support and the compliance management group. Office 365 supports the separation between configuring the tenant with supervision policy support features and the configuration of policies and acting on captured communications. For example, the IT group for an organization may be responsible for setting up role permissions and groups to support supervision policies that are configured and managed by the organization's compliance team.</span></span>
+
+## <a name="scenarios-for-supervision-policies"></a><span data-ttu-id="afc60-111">方案监督策略</span><span class="sxs-lookup"><span data-stu-id="afc60-111">Scenarios for supervision policies</span></span>
+
+<span data-ttu-id="afc60-112">监督策略可以帮助您的组织在多个区域中的监控通信：</span><span class="sxs-lookup"><span data-stu-id="afc60-112">Supervision policies can assist monitoring communications in your organization in several areas:</span></span>
+
+- <span data-ttu-id="afc60-113">**公司策略**</span><span class="sxs-lookup"><span data-stu-id="afc60-113">**Corporate policies**</span></span>
+
+    <span data-ttu-id="afc60-p103">员工必须符合可接受的使用和职业道德标准，其所有与业务相关的通信中的其他企业策略。监督策略可以检测策略违反行为，并帮助您采取纠正措施以帮助缓解这些类型的事件。例如，您可以监控您的组织如骚扰或使用不正确的或攻击性语言员工通信的潜在人力资源冲突。</span><span class="sxs-lookup"><span data-stu-id="afc60-p103">Employees must comply with acceptable use, ethical standards, and other corporate policies in all their business-related communications. Supervision policies can detect policy violations and help you take corrective actions to help mitigate these types of incidents. For example, you could monitor your organization for potential human resources violations such as harassment or the use of inappropriate or offensive language in employee communications.</span></span>
+
+- <span data-ttu-id="afc60-117">**风险管理**</span><span class="sxs-lookup"><span data-stu-id="afc60-117">**Risk management**</span></span>
+
+    <span data-ttu-id="afc60-p104">组织要负责对遍布其基础结构和企业网络系统的所有通信。使用监督策略来帮助标识和潜在的法律风险和风险管理可以帮助它们可能会损坏企业操作之前，风险降至最低。例如，您可以监控您的组织的未经授权通信机密的项目，如即将收购、 合并、 收益披露、 重组的情况下或领导团队更改。</span><span class="sxs-lookup"><span data-stu-id="afc60-p104">Organizations are responsible to all communications distributed throughout their infrastructure and corporate network systems. Using supervision policies to help identify and manage potential legal exposure and risk can help minimize risks before they can damage corporate operations. For example, you could monitor your organization for unauthorized communications for confidential projects such as upcoming acquisitions, mergers, earnings disclosures, reorganizations, or leadership team changes.</span></span>
+
+- <span data-ttu-id="afc60-121">**法规遵从性**</span><span class="sxs-lookup"><span data-stu-id="afc60-121">**Regulatory compliance**</span></span>
+
+    <span data-ttu-id="afc60-p105">大多数组织必须遵守某些类型的法规遵从性标准作为其正常操作过程的一部分。这些法规通常需要组织实现某些类型的监督或消息的监管过程适合其行业。较好的组织具有现成的监督的过程需要监视其员工的活动示例并在其中接合的企业的类型，金融行业法规证书颁发机构 (FINRA) 规则 3110。另一个示例可能需要监视经纪人组织中以防止潜在洗钱、 内幕交易、 的冲突或贿赂活动。监督策略可以帮助您的组织满足这些要求，通过向监控和报告在企业通信提供一个过程。</span><span class="sxs-lookup"><span data-stu-id="afc60-p105">Most organizations must comply with some type of regulatory compliance standards as part of their normal operating procedures. These regulations often require organizations to implement some type of supervisory or oversight process for messaging that is appropriate for their industry. The Financial Industry Regulatory Authority (FINRA) Rule 3110 is a good example of a requirement for organizations to have supervisory procedures in place to monitor the activities of its employees and the types of businesses in which it engages. Another example may be a need to monitor broker-dealers in your organization to safeguard against potential money-laundering, insider trading, collusion, or bribery activities. Supervision policies can help your organization meet these requirements by providing a process to both monitor and report on corporate communications.</span></span>
+
+## <a name="feature-components"></a><span data-ttu-id="afc60-127">功能组件</span><span class="sxs-lookup"><span data-stu-id="afc60-127">Feature components</span></span>
+
+### <a name="supervision-policy"></a><span data-ttu-id="afc60-128">监督策略</span><span class="sxs-lookup"><span data-stu-id="afc60-128">Supervision policy</span></span>
+
+<span data-ttu-id="afc60-p106">在安全 & 合规性中心，您将创建监督策略。这些策略定义的通信和用户受到您的组织中查看、 定义自定义条件通信必须满足，并指定用户应执行 reviews （英文）。角色组可以设置策略和分配此角色的任何人监督审阅中包括的用户可以访问 Office 365 安全性 & 合规性中心中的数据调控下监督页。</span><span class="sxs-lookup"><span data-stu-id="afc60-p106">You'll create supervision policies in the Security & Compliance Center. These policies define which communications and users are subject to review in your organization, define custom conditions that the communications must meet, and specifies who should perform reviews. Users included in the Supervisory Review role group can set up policies and anyone who has this role assigned can access the Supervision page under Data Governance in the Office 365 Security & Compliance Center.</span></span>
+
+### <a name="supervised-users"></a><span data-ttu-id="afc60-132">监管的用户</span><span class="sxs-lookup"><span data-stu-id="afc60-132">Supervised users</span></span>
+
+<span data-ttu-id="afc60-p107">开始使用监督之前，您需要决定谁将具有检查其通信。在策略，您将使用用户电子邮件地址来标识个人或组的人员监督。这些组的一些示例包括 Office 365 组、 基于 Exchange 通讯组列表和 Microsoft 团队通道。您还可以排除特定用户或组从监督包含监管的组或组的列表中。</span><span class="sxs-lookup"><span data-stu-id="afc60-p107">Before you start using supervision, you'll need to determine who will have their communications reviewed. In the policy, you'll use user email addresses to identify individuals or groups of people to supervise. Some examples of these groups are Office 365 Groups, Exchange-based distribution lists, and Microsoft Teams channels. You also can exclude specific users or groups from supervision that are included within a supervised group or a list of groups.</span></span>
+
+> [!IMPORTANT]
+> <span data-ttu-id="afc60-p108">监视监督策略的所有用户必须具有与高级合规性加载项的 Office 365 企业版 E3 许可证或包含在 Office 365 企业 E5 订阅。如果您不具有现有企业 E5 计划，并需要尝试监督，您还可以[注册试用版的 Office 365 企业 E5](https://go.microsoft.com/fwlink/p/?LinkID=698279)。</span><span class="sxs-lookup"><span data-stu-id="afc60-p108">All users monitored by supervision policies must have either an Office 365 Enterprise E3 license with the Advanced Compliance add-on or be included in an Office 365 Enterprise E5 subscription. If you don't have an existing Enterprise E5 plan and want to try supervision, you can [sign up for a trial of Office 365 Enterprise E5](https://go.microsoft.com/fwlink/p/?LinkID=698279).</span></span>
+
+### <a name="reviewers"></a><span data-ttu-id="afc60-139">审阅者</span><span class="sxs-lookup"><span data-stu-id="afc60-139">Reviewers</span></span>
+
+<span data-ttu-id="afc60-p109">创建监督策略时，您将决定谁将执行的监管的用户的消息的评论。在策略，您将使用用户电子邮件地址来标识个人或组的人员审查监管的通信。</span><span class="sxs-lookup"><span data-stu-id="afc60-p109">When you create a supervision policy, you'll also determine who will perform the reviews of the messages of the supervised users. In the policy, you'll use user email addresses to identify individuals or groups of people to review supervised communications.</span></span>
+
+### <a name="groups-for-supervised-users-and-reviewers"></a><span data-ttu-id="afc60-142">监管的用户和审阅者组</span><span class="sxs-lookup"><span data-stu-id="afc60-142">Groups for supervised users and reviewers</span></span>
+
+<span data-ttu-id="afc60-p110">若要简化您的设置，创建组会检查其通信的人员和组将查看这些通信的人员。如果您使用的组，您可能需要几个。例如，如果您想要监控的人员，两个不同组之间的通信，或如果您想要指定不打算管理组。</span><span class="sxs-lookup"><span data-stu-id="afc60-p110">To simplify your setup, create groups for people who will have their communication reviewed and groups for people who will review those communications. If you're using groups, you might need several. For example, if you want to monitor communications between two distinct groups of people, or if you want to specify a group that isn't going to be supervised.</span></span>
+
+### <a name="supported-communication-types"></a><span data-ttu-id="afc60-146">支持的通信类型</span><span class="sxs-lookup"><span data-stu-id="afc60-146">Supported communication types</span></span>
+
+<span data-ttu-id="afc60-147">使用监督策略中，您可以选择要监视的一个或多个下列通信平台中的邮件：</span><span class="sxs-lookup"><span data-stu-id="afc60-147">With supervision policies, you can choose to monitor messages in one or more of the following communication platforms:</span></span>
+
+- <span data-ttu-id="afc60-p111">**Exchange 电子邮件：** 驻留在 Exchange Online 的 Office 365 订阅一部分的邮箱的所有合格的消息监督。电子邮件和附件匹配监督策略条件是可立即使用的监控和监督报告中。所支持的附件类型有：</span><span class="sxs-lookup"><span data-stu-id="afc60-p111">**Exchange email:** Mailboxes that are hosted on Exchange Online as part of your Office 365 subscription are all eligible for message supervision. Emails and attachments matching supervision policy conditions are instantly available for monitoring and in supervision reports. Supported attachment types are:</span></span>
+
+    - <span data-ttu-id="afc60-151">Microsoft Word (.docx)</span><span class="sxs-lookup"><span data-stu-id="afc60-151">Microsoft Word (.docx)</span></span>
+    - <span data-ttu-id="afc60-152">Microsoft Excel (.xlsx)</span><span class="sxs-lookup"><span data-stu-id="afc60-152">Microsoft Excel (.xlsx)</span></span>
+    - <span data-ttu-id="afc60-153">Microsoft PowerPoint (.pptx)</span><span class="sxs-lookup"><span data-stu-id="afc60-153">Microsoft PowerPoint (.pptx)</span></span>
+
+- <span data-ttu-id="afc60-p112">**Microsoft 团队：** 可以监督聊天通信和公用和专用的 Microsoft 团队通道和单个聊天中关联的附件。团队聊天匹配监督策略条件和处理每 24 小时一次，然后可监控并在监督报告。</span><span class="sxs-lookup"><span data-stu-id="afc60-p112">**Microsoft Teams:** Chat communications and associated attachments in both public and private Microsoft Teams channels and individual chats can be supervised. Teams chats matching supervision policy conditions are processed once every 24 hours and then are available for monitoring and in supervision reports.</span></span>
+- <span data-ttu-id="afc60-p113">**第三方源：** 如果您已导入此数据到 Office 365 邮箱在组织中，您可以监督来自第三方源 （如从 Facebook 或收存箱） 的通信。[了解如何导入到 Office 365 的第三方数据](https://docs.microsoft.com/office365/securitycompliance/archiving-third-party-data)。</span><span class="sxs-lookup"><span data-stu-id="afc60-p113">**Third-party sources:** You can supervise communications from third-party sources (like from Facebook or DropBox) if you've imported this data into Office 365 mailboxes in your organization. [Learn how to import 3rd-party data into Office 365](https://docs.microsoft.com/office365/securitycompliance/archiving-third-party-data).</span></span>
+
+### <a name="policy-settings"></a><span data-ttu-id="afc60-158">策略设置</span><span class="sxs-lookup"><span data-stu-id="afc60-158">Policy settings</span></span>
+
+#### <a name="direction"></a><span data-ttu-id="afc60-159">方向</span><span class="sxs-lookup"><span data-stu-id="afc60-159">Direction</span></span>
+
+<span data-ttu-id="afc60-p114">默认情况下，**方向**条件显示，并且无法删除。在策略中的通信方向设置可以分别或同时选择：</span><span class="sxs-lookup"><span data-stu-id="afc60-p114">By default, the **Direction is** condition is displayed and can't be removed. Communication direction settings in a policy can be chosen individually or together:</span></span>
+
+- <span data-ttu-id="afc60-162">**入站**-您可以选择**入站**查看 communications 发送**到**您选择监督**从**人员的人不包含在策略。</span><span class="sxs-lookup"><span data-stu-id="afc60-162">**Inbound** - You can choose **Inbound** to review communications that are sent **to** the people you chose to supervise **from** people not included in the policy.</span></span>
+- <span data-ttu-id="afc60-163">**出站**-如果您想要查看**从**策略中不包含监督**到**人员您选择的人员发送的通信，您可以选择**出站**。</span><span class="sxs-lookup"><span data-stu-id="afc60-163">**Outbound** - You can choose **Outbound** if you want to review communications that are sent **from** the people you chose to supervise **to** people not included in the policy.</span></span>
+- <span data-ttu-id="afc60-164">**内部**-您可以选择**内部**查看发送通信**之间**标识的人员在策略。</span><span class="sxs-lookup"><span data-stu-id="afc60-164">**Internal** - You can choose **Internal** to review communications sent **between** the people you identified in the policy.</span></span>
+
+#### <a name="sensitive-information-types"></a><span data-ttu-id="afc60-165">敏感信息类型</span><span class="sxs-lookup"><span data-stu-id="afc60-165">Sensitive information types</span></span>
+
+<span data-ttu-id="afc60-p115">您必须作为监督策略的一部分包括敏感信息类型的选项。敏感信息类型是可帮助确定并保护信用卡号、 银行帐号、 护照号码和任一预定义或自定义数据类型。作为 Office 365[数据丢失防护 (DLP)](data-loss-prevention-policies.md)的一部分，敏感信息配置可以利用模式、 字符邻近、 可信度级别和自定义数据类型，可帮助识别和标记可能敏感的内容。默认敏感信息类型包括：</span><span class="sxs-lookup"><span data-stu-id="afc60-p115">You have the option of including sensitive information types as part of your supervision policy. Sensitive information types are either pre-defined or custom data types that can help identify and protect credit card numbers, bank account numbers, passport numbers, and more. As a part of Office 365 [data loss prevention (DLP)](data-loss-prevention-policies.md), the sensitive information configuration can leverage patterns, character proximity, confidence levels, and even custom data types to help identify and flag content that may be sensitive. The default sensitive information types are:</span></span>
+
+- <span data-ttu-id="afc60-170">财务</span><span class="sxs-lookup"><span data-stu-id="afc60-170">Financial</span></span>
+- <span data-ttu-id="afc60-171">医疗和运行状况</span><span class="sxs-lookup"><span data-stu-id="afc60-171">Medical and health</span></span>
+- <span data-ttu-id="afc60-172">隐私</span><span class="sxs-lookup"><span data-stu-id="afc60-172">Privacy</span></span>
+- <span data-ttu-id="afc60-173">自定义信息类型</span><span class="sxs-lookup"><span data-stu-id="afc60-173">Custom information type</span></span>
+
+<span data-ttu-id="afc60-174">若要了解更多敏感信息的详细信息和默认类型中包含的模式，请参阅[查找哪些敏感信息类型](what-the-sensitive-information-types-look-for.md)。</span><span class="sxs-lookup"><span data-stu-id="afc60-174">To learn more about sensitive information details and the patterns included in the default types, see [What sensitive information types look for](what-the-sensitive-information-types-look-for.md).</span></span>
+
+#### <a name="custom-keyword-dictionaries"></a><span data-ttu-id="afc60-175">自定义关键字词典</span><span class="sxs-lookup"><span data-stu-id="afc60-175">Custom keyword dictionaries</span></span>
+
+<span data-ttu-id="afc60-p116">配置自定义关键字词典 （或词典） 可提供简单管理的特定于您的组织或行业的关键字，并可以支持多达 100,000 个术语，每个词典。如果需要可以单个策略应用于多个自定义关键字字典或有一个单个关键字词典，每个策略。这些字典监督策略中分配，并且可以来源于某个文件 （如.csv 或.txt 列表），也可以从列表[输入直接在 PowerShell cmdlet](create-a-keyword-dictionary.md)。</span><span class="sxs-lookup"><span data-stu-id="afc60-p116">Configuring custom keyword dictionaries (or lexicons) can provide simple management of keywords specific to your organization or industry and can support up to 100,000 terms per dictionary. If needed, you can apply multiple custom keyword dictionaries to a single policy or have a single keyword dictionary per policy. These dictionaries are assigned in a supervision policy and can be sourced from a file (such as a .csv or .txt list), or from a list you can [enter directly in a PowerShell cmdlet](create-a-keyword-dictionary.md).</span></span>
+
+#### <a name="conditional-settings"></a><span data-ttu-id="afc60-179">条件设置</span><span class="sxs-lookup"><span data-stu-id="afc60-179">Conditional settings</span></span>
+
+<span data-ttu-id="afc60-180">您选择的策略的条件 （类似于从 Facebook 或收存箱） 在组织中的电子邮件和第三方源中将适用于通讯。</span><span class="sxs-lookup"><span data-stu-id="afc60-180">The conditions you choose for the policy will apply to communications from both email and 3rd-party sources in your organization (like from Facebook or DropBox).</span></span>
+
+<span data-ttu-id="afc60-181">下表详细解释每个条件。</span><span class="sxs-lookup"><span data-stu-id="afc60-181">The following table explains more about each condition.</span></span>
+  
+|<span data-ttu-id="afc60-182">**条件**</span><span class="sxs-lookup"><span data-stu-id="afc60-182">**Condition**</span></span>|<span data-ttu-id="afc60-183">**如何使用此条件**</span><span class="sxs-lookup"><span data-stu-id="afc60-183">**How to use this condition**</span></span>|
+|:-----|:-----|
+|<span data-ttu-id="afc60-184">从任何这些域收到邮件</span><span class="sxs-lookup"><span data-stu-id="afc60-184">Message is received from any of these domains</span></span>  <br><br> <span data-ttu-id="afc60-185">从任何这些域未收到消息</span><span class="sxs-lookup"><span data-stu-id="afc60-185">Message is not received from any of these domains</span></span> | <span data-ttu-id="afc60-p117">若要将策略应用特定域要包含或排除在收到邮件时，输入每个域，用逗号分隔多个域。您输入每个域将分别应用 （只有一个这些域必须应用要应用于邮件的策略）。</span><span class="sxs-lookup"><span data-stu-id="afc60-p117">To apply the policy when certain domains are included or excluded in a received message, enter each domain and separate multiple domains with a comma. Each domain you enter will be applied separately (only one of these domains must apply for the policy to apply to the message).</span></span> |
+|<span data-ttu-id="afc60-188">邮件发送给任何这些域</span><span class="sxs-lookup"><span data-stu-id="afc60-188">Message is sent to any of these domains</span></span>  <br><br> <span data-ttu-id="afc60-189">消息未发送到任何这些域</span><span class="sxs-lookup"><span data-stu-id="afc60-189">Message is not sent to  any of these domains</span></span> | <span data-ttu-id="afc60-p118">若要将策略应用特定域要包含或排除在已发送邮件时，输入每个域，用逗号分隔多个域。您输入每个域将分别应用 （只有一个这些域必须应用要应用于邮件的策略）。</span><span class="sxs-lookup"><span data-stu-id="afc60-p118">To apply the policy when certain domains are included or excluded in a sent message, enter each domain and separate multiple domains with a comma. Each domain you enter will be applied separately (only one of these domains must apply for the policy to apply to the message).</span></span> |
+|<span data-ttu-id="afc60-192">邮件分类与任何这些标签</span><span class="sxs-lookup"><span data-stu-id="afc60-192">Message is classified with any of these labels</span></span>  <br><br> <span data-ttu-id="afc60-193">邮件不与任何这些标签的分类</span><span class="sxs-lookup"><span data-stu-id="afc60-193">Message is not classified with any of these labels</span></span> | <span data-ttu-id="afc60-p119">若要将策略应用时包括或排除在邮件中某些保留标签。必须单独配置保留标签和配置的标签可以选择为此条件的一部分。将分别应用您选择每个标签 （要应用于邮件的策略必须应用这些标签中的只有一个）。有关配置保留标签的详细信息，请参阅[Overview of 保留标签](https://docs.microsoft.com/office365/securitycompliance/labels)。</span><span class="sxs-lookup"><span data-stu-id="afc60-p119">To apply the policy when certain retention labels are included or excluded in a message. Retention labels must be configured separately and configured labels can be chosen as part of this condition. Each label you choose will be applied separately (only one of these labels must apply for the policy to apply to the message). For more information about configuring retention labels, see [Overview of retention labels](https://docs.microsoft.com/office365/securitycompliance/labels).</span></span>|
+|<span data-ttu-id="afc60-198">邮件包含以下任何词语</span><span class="sxs-lookup"><span data-stu-id="afc60-198">Message contains any of these words</span></span>  <br><br> <span data-ttu-id="afc60-199">邮件包含无下列单词</span><span class="sxs-lookup"><span data-stu-id="afc60-199">Message contains none of these words</span></span> | <span data-ttu-id="afc60-p120">若要将策略应用时包括或排除在邮件中特定词或短语，输入每个单词或短语单独占一行。将分别应用您输入的单词的每一行 （要应用于邮件的策略必须应用这些行中的只有一个）。关于输入词或短语的详细信息，请参阅下一节[匹配单词和短语针对电子邮件或附件](supervision-policies.md#Matchwords)。</span><span class="sxs-lookup"><span data-stu-id="afc60-p120">To apply the policy when certain words or phrases are included or excluded in a message, enter each word or phrase on a separate line. Each line of words you enter will be applied separately (only one of these lines must apply for the policy to apply to the message). For more information about entering words or phrases, see the next section [Matching words and phrases to emails or attachments](supervision-policies.md#Matchwords).</span></span>|
+|<span data-ttu-id="afc60-203">附件包含以下任何词语</span><span class="sxs-lookup"><span data-stu-id="afc60-203">Attachment contains any of these words</span></span>  <br><br> <span data-ttu-id="afc60-204">附件包含无下列单词</span><span class="sxs-lookup"><span data-stu-id="afc60-204">Attachment contains none of these words</span></span> | <span data-ttu-id="afc60-p121">若要将策略应用时包括或排除在邮件附件 （如 Word 文档） 中特定词或短语，输入每个单词或短语单独占一行。将分别应用您输入的单词的每一行 （只有一个行必须应用于附件的策略）。关于输入词或短语的详细信息，请参阅下一节[匹配单词和短语针对电子邮件或附件](supervision-policies.md#Matchwords)。</span><span class="sxs-lookup"><span data-stu-id="afc60-p121">To apply the policy when certain words or phrases are included or excluded in a message attachment (such as a Word document), enter each word or phrase on a separate line. Each line of words you enter will be applied separately (only one line must apply for the policy to apply to the attachment). For more information about entering words or phrases, see the next section [Matching words and phrases to emails or attachments](supervision-policies.md#Matchwords).</span></span>|
+|<span data-ttu-id="afc60-208">附件是任何这些文件类型</span><span class="sxs-lookup"><span data-stu-id="afc60-208">Attachment is any of these file types</span></span>  <br><br> <span data-ttu-id="afc60-209">附件是无这些文件类型</span><span class="sxs-lookup"><span data-stu-id="afc60-209">Attachment is none of these file types</span></span> | <span data-ttu-id="afc60-p122">监督 communications 包含或排除特定类型的附件，输入 （如.exe 或.pdf） 的文件扩展名。如果您想要包括或排除多个文件扩展名，输入这些在单独的行。只有一个附件扩展需要匹配要应用的策略。</span><span class="sxs-lookup"><span data-stu-id="afc60-p122">To supervise communications that include or exclude specific types of attachments, enter the file extensions (such as .exe or .pdf). If you want to include or exclude multiple file extensions, enter these on separate lines. Only one attachment extension needs to match for the policy to apply.</span></span>|
+|<span data-ttu-id="afc60-213">邮件大小大于</span><span class="sxs-lookup"><span data-stu-id="afc60-213">Message size is larger than</span></span>  <br><br> <span data-ttu-id="afc60-214">不能超过消息大小</span><span class="sxs-lookup"><span data-stu-id="afc60-214">Message size is not larger than</span></span> | <span data-ttu-id="afc60-p123">若要查看基于特定大小的邮件，使用这些条件来指定受到审阅之前，可以是一条消息的最大值或最小大小。例如，如果您指定**邮件大小大于** \> **1.0 MB**，为 1.01 MB 和较大将的所有邮件采用审阅。您可以选择字节、 千字节、 兆字节或此条件千兆字节。</span><span class="sxs-lookup"><span data-stu-id="afc60-p123">To review messages based on a certain size, use these conditions to specify the maximum or minimum size a message can be before it is subject to review. For example, if you specify **Message size is larger than** \> **1.0 MB**, all messages that are 1.01 MB and larger will be subject to review. You can choose bytes, kilobytes, megabytes, or gigabytes for this condition.</span></span>|
+|<span data-ttu-id="afc60-218">附件大于</span><span class="sxs-lookup"><span data-stu-id="afc60-218">Attachment is larger than</span></span>  <br><br> <span data-ttu-id="afc60-219">附件是不大于</span><span class="sxs-lookup"><span data-stu-id="afc60-219">Attachment is not larger than</span></span> | <span data-ttu-id="afc60-p124">若要查看邮件及其附件的大小，指定附件的最大值或最小大小可在消息之前和及其附件将受到审阅。例如，如果您指定**附件大于** \> **2.0 MB**，所有邮件的附件 2.01 MB 和转移将采用审阅。您可以选择字节、 千字节、 兆字节或此条件千兆字节。</span><span class="sxs-lookup"><span data-stu-id="afc60-p124">To review messages based on the size of their attachments, specify the maximum or minimum size an attachment can be before the message and its attachments are subject to review. For example, if you specify **Attachment is larger than** \> **2.0 MB**, all messages with attachments 2.01 MB and over will be subject to review. You can choose bytes, kilobytes, megabytes, or gigabytes for this condition.</span></span>|
+   
+##### <a name="matching-words-and-phrases-to-emails-or-attachments"></a><span data-ttu-id="afc60-223">将字词和短语与电子邮件或附件匹配</span><span class="sxs-lookup"><span data-stu-id="afc60-223">Matching words and phrases to emails or attachments</span></span>
+<span data-ttu-id="afc60-224"><a name="Matchwords"> </a></span><span class="sxs-lookup"><span data-stu-id="afc60-224"></span></span>
+
+<span data-ttu-id="afc60-p125">将分别应用您输入的单词的每一行 （只有一个行必须应用于电子邮件或附件策略条件）。例如，我们使用条件时，**邮件包含以下任何词语**，与关键字"四"和"内幕交易"置于单独的行。该策略将应用到包括"四"单词或短语"内幕交易"任何消息。只有一个这些单词或短语必须进行要应用此策略条件。在邮件或附件的单词必须完全匹配您的输入。</span><span class="sxs-lookup"><span data-stu-id="afc60-p125">Each line of words you enter will be applied separately (only one line must apply for the policy condition to apply to the email or attachment). For example, let's use the condition, **Message contains any of these words**, with the keywords "banker" and "insider trading" on separate lines. The policy will apply to any messages that includes the word "banker" or the phrase "insider trading". Only one of these words or phrases must occur for this policy condition to apply. Words in the message or attachment must exactly match what you enter.</span></span>
+  
+##### <a name="entering-multiple-conditions"></a><span data-ttu-id="afc60-230">输入多个条件</span><span class="sxs-lookup"><span data-stu-id="afc60-230">Entering multiple conditions</span></span>
+
+<span data-ttu-id="afc60-p126">如果您输入多个条件，Office 365 使用的所有条件一起确定何时将策略应用于通信项。当您设置了多个条件时，它们必须所有满足策略应用，除非您输入的例外。例如，假设您需要创建的策略，应该应用如果邮件包含单词"贸易"，并且大于 2 MB。不过，如果邮件还包含单词"contoso 财务已批准"，应该不会应用策略。因此，在这种情况下，三个条件将，如下所示：</span><span class="sxs-lookup"><span data-stu-id="afc60-p126">If you enter multiple conditions, Office 365 uses all the conditions together to determine when to apply the policy to communication items. When you set up multiple conditions, they must all be met for the policy to apply, unless you enter an exception. For example, let's say you need to create a policy that should apply if a message contains the word "trade", and is larger than 2MB. However, if the message also contains the words "Approved by Contoso financial", the policy should not apply. Thus, in this case, the three conditions would be as follows:</span></span>
+  
+- <span data-ttu-id="afc60-236">**邮件包含以下任何词语**，与"贸易"的关键字</span><span class="sxs-lookup"><span data-stu-id="afc60-236">**Message contains any of these words**, with the keywords "trade"</span></span>
+
+- <span data-ttu-id="afc60-237">**邮件大小大于**，与值 2 MB</span><span class="sxs-lookup"><span data-stu-id="afc60-237">**Message size is larger than**, with the value 2 MB</span></span>
+
+- <span data-ttu-id="afc60-238">**邮件包含无下列单词**，与关键字"Contoso 财务团队已批准"。</span><span class="sxs-lookup"><span data-stu-id="afc60-238">**Message contains none of these words**, with the keywords "Approved by Contoso financial team".</span></span>
+
+#### <a name="review-percentage"></a><span data-ttu-id="afc60-239">查看百分比</span><span class="sxs-lookup"><span data-stu-id="afc60-239">Review percentage</span></span>
+
+<span data-ttu-id="afc60-p127">您可以指定为由监督策略，如果您希望以减少要查看的内容量的所有通信的百分比。从您选择的条件匹配的总百分比，我们将随机选择的内容量。如果您希望的审阅者的所有项目，则可以监督策略中输入**100%** 。</span><span class="sxs-lookup"><span data-stu-id="afc60-p127">You can specify a percentage of all the communications governed by a supervision policy if you want to reduce the amount of content to review. We'll randomly select that amount of content from the total percentage that matched the conditions you chose. If you want reviewers to review all items, you can enter **100%** in a supervision policy.</span></span>
+
+## <a name="monitoring--managing"></a><span data-ttu-id="afc60-243">监视 & 管理</span><span class="sxs-lookup"><span data-stu-id="afc60-243">Monitoring & managing</span></span>
+
+<span data-ttu-id="afc60-p128">监控监督策略的结果并应用解决方案标记为简便。您可以快速查看已审阅的项目、 用户和组下监管的用户和组指定为审阅者的状态。</span><span class="sxs-lookup"><span data-stu-id="afc60-p128">Monitoring the results of your supervision policies and applying a resolution tag is easy and convenient. You can quickly see the status of reviewed items, the users and groups under supervision, and the users and groups designated as reviewers.</span></span>
+
+### <a name="supervision-policy-dashboard"></a><span data-ttu-id="afc60-246">监督策略仪表板</span><span class="sxs-lookup"><span data-stu-id="afc60-246">Supervision policy dashboard</span></span>
+
+<span data-ttu-id="afc60-p129">若要管理监督策略结果并解决未处理的项目的最简单方式是使用监督策略仪表板。此仪表板允许审阅者快速查看需要检查、 项目，对其执行操作和检查的结果以前所需的项目审阅和解析为每个监督策略项。您可以访问 Office 365 安全性 & 合规性中心，网址为**监督**中的监督策略仪表板 > *您自定义策略* > **打开**。</span><span class="sxs-lookup"><span data-stu-id="afc60-p129">The easiest way to manage supervision policy results and to resolve outstanding items is to use the supervision policy dashboard. This dashboard allows reviewers to quickly see the items that need to be reviewed, take action on an item, and review the results of previously reviewed and resolved items for each supervision policy. You can access the supervision policy dashboard in the Office 365 Security & Compliance Center at **Supervision** > *Your Custom Policy* > **Open**.</span></span>
+
+#### <a name="dashboard-home"></a><span data-ttu-id="afc60-250">仪表板主页</span><span class="sxs-lookup"><span data-stu-id="afc60-250">Dashboard Home</span></span>
+
+<span data-ttu-id="afc60-p130">**主页**仪表板上有多个节，可帮助您快速监督策略对其执行操作。此处可以：</span><span class="sxs-lookup"><span data-stu-id="afc60-p130">The dashboard **Home** page has several sections to help you quickly take action on your supervision policies. Here you can:</span></span>
+
+- <span data-ttu-id="afc60-253">快速周查看待处理并解决要点</span><span class="sxs-lookup"><span data-stu-id="afc60-253">Quickly review the pending and resolved highlights for the week</span></span>
+- <span data-ttu-id="afc60-254">监管的用户和所选策略的监管的组的列表，请参阅</span><span class="sxs-lookup"><span data-stu-id="afc60-254">See a list of the supervised users and supervised groups for the selected policy</span></span>
+- <span data-ttu-id="afc60-255">审阅者的列表，请参阅并查看所选策略的团队</span><span class="sxs-lookup"><span data-stu-id="afc60-255">See a list of the reviewers and review teams for the selected policy</span></span>
+- <span data-ttu-id="afc60-256">了解哪些通信平台下监督策略的内容。</span><span class="sxs-lookup"><span data-stu-id="afc60-256">See which communication platforms have content under supervision for the policy.</span></span>
+
+#### <a name="supervise-tab"></a><span data-ttu-id="afc60-257">监督选项卡</span><span class="sxs-lookup"><span data-stu-id="afc60-257">Supervise tab</span></span>
+
+<span data-ttu-id="afc60-p131">**Supervise**选项卡审阅者可以在其中执行操作并解决项标识由所选策略。此处可以：</span><span class="sxs-lookup"><span data-stu-id="afc60-p131">The **Supervise** tab is where reviewers can take action and resolve items identified by the selected policy. Here you can:</span></span>
+
+- <span data-ttu-id="afc60-260">筛选待定符合、 非符合规范且有疑问的项</span><span class="sxs-lookup"><span data-stu-id="afc60-260">Filter by pending, compliant, non-compliant, and questionable items</span></span>
+- <span data-ttu-id="afc60-p132">标记为兼容的、 不符合标准的或可疑的单个项。您还可以记录与帮助阐明所标记的采取的项的注释。</span><span class="sxs-lookup"><span data-stu-id="afc60-p132">Tag a single item as compliant, non-compliant, or questionable. You can also record a comment with the item to help clarify the tagging action taken.</span></span>
+- <span data-ttu-id="afc60-p133">批量标记为兼容的、 不符合标准的或可疑的多个项目。您还可以记录与多个项目，以帮助阐明所标记的采取的注释。</span><span class="sxs-lookup"><span data-stu-id="afc60-p133">Bulk tag multiple items as compliant, non-compliant, or questionable. You can also record a comment with multiple items to help clarify the tagging action taken.</span></span>
+- <span data-ttu-id="afc60-265">查看的单个项，包括用户解析项目、 日期和时间的操作、 解决方案标签和包含的任何注释标记的历史记录。</span><span class="sxs-lookup"><span data-stu-id="afc60-265">View the history of the tagging for a single item, including who resolved the item, the date and time of the action, the resolution tag, and any included comments.</span></span>
+- <span data-ttu-id="afc60-p134">重新分类为兼容的、 不符合标准的或可疑先前已审阅的项目。您还可以记录与一个或多个项目，以帮助阐明重新分类采取的注释。</span><span class="sxs-lookup"><span data-stu-id="afc60-p134">Reclassify previously reviewed items as compliant, non-compliant, or questionable. You can also record a comment with single or multiple items to help clarify the reclassification action taken.</span></span>
+
+#### <a name="resolved-items-tab"></a><span data-ttu-id="afc60-268">解析项目选项卡</span><span class="sxs-lookup"><span data-stu-id="afc60-268">Resolved Items tab</span></span>
+
+<span data-ttu-id="afc60-p135">**解析项目**选项卡是审阅者可以在其中查看所选策略的所有以前解析的项目。此处可以：</span><span class="sxs-lookup"><span data-stu-id="afc60-p135">The **Resolved Items** tab is where reviewers can view all previously resolved items for the selected policy. Here you can:</span></span>
+
+- <span data-ttu-id="afc60-271">快速查看和排序的主题、 发件人和解析项目的日期。</span><span class="sxs-lookup"><span data-stu-id="afc60-271">Quickly view and sort the subject, sender, and date of resolved items.</span></span>
+- <span data-ttu-id="afc60-272">查看任何选定的项的分类和注释历史记录</span><span class="sxs-lookup"><span data-stu-id="afc60-272">View the classification and comment history of any selected item</span></span>
+
+### <a name="other-ways-to-review-items"></a><span data-ttu-id="afc60-273">查看项目的其他方法</span><span class="sxs-lookup"><span data-stu-id="afc60-273">Other ways to review items</span></span>
+
+<span data-ttu-id="afc60-274">如果审阅者不愿意 Office 365 中使用监督仪表板，他们还可以查看和管理项目收集监督策略的其他选项。</span><span class="sxs-lookup"><span data-stu-id="afc60-274">If reviewers would prefer not to use the supervision dashboard in Office 365, they also have other options to review and manage items collected by supervision policies.</span></span>
+
+#### <a name="outlook-on-the-web"></a><span data-ttu-id="afc60-275">Outlook 网页版</span><span class="sxs-lookup"><span data-stu-id="afc60-275">Outlook on the web</span></span>
+
+<span data-ttu-id="afc60-p136">用户指定为监督策略中的审阅者可以使用 Outlook web 上的查看和解析监督的项目。监督外接程序是自动安装在 web 上的 Outlook 中的所有策略中指定的审阅者。监督策略共享文件夹，以供审阅者配置您的组织不需要任何额外的配置。</span><span class="sxs-lookup"><span data-stu-id="afc60-p136">Users designated as reviewers in a supervision policy can use Outlook on the web to review and resolved supervision items. The Supervision add-in is installed automatically in Outlook on the web for all reviewers you specified in the policy. No extra configuration is needed by your organization for supervision policy shared folders to be available for configured reviewers.</span></span>
+
+<span data-ttu-id="afc60-279">使用 web 上的 Outlook，审阅者可以：</span><span class="sxs-lookup"><span data-stu-id="afc60-279">Using Outlook on the web, reviewers can:</span></span>
+
+- <span data-ttu-id="afc60-280">查看符合、 不符合标准、 可疑，和解析状态筛选的项目</span><span class="sxs-lookup"><span data-stu-id="afc60-280">View filtered items by compliant, non-compliant, questionable, and resolved status</span></span>
+- <span data-ttu-id="afc60-p137">标记的单个项为符合、 不符合标准、 可疑，或解决。您还可以记录与帮助阐明所标记的采取的项的注释。</span><span class="sxs-lookup"><span data-stu-id="afc60-p137">Tag a single item as compliant, non-compliant, questionable, or resolved. You can also record a comment with the item to help clarify the tagging action taken.</span></span>
+- <span data-ttu-id="afc60-283">查看的单个项，包括用户解析项目、 日期和时间的操作、 解决方案标签和包含的任何注释标记的历史记录。</span><span class="sxs-lookup"><span data-stu-id="afc60-283">View the history of the tagging for a single item, including who resolved the item, the date and time of the action, the resolution tag, and any included comments.</span></span>
+- <span data-ttu-id="afc60-p138">重新分类为兼容的、 不符合标准的或可疑先前已审阅的项目。您还可以记录与要帮助阐明所执行的重新分类操作的单个项的注释。</span><span class="sxs-lookup"><span data-stu-id="afc60-p138">Reclassify previously reviewed items as compliant, non-compliant, or questionable. You can also record a comment with single items to help clarify the reclassification action taken.</span></span>
+
+#### <a name="microsoft-outlook"></a><span data-ttu-id="afc60-286">Microsoft Outlook</span><span class="sxs-lookup"><span data-stu-id="afc60-286">Microsoft Outlook</span></span>
+
+<span data-ttu-id="afc60-p139">若要查看 communications 监督策略的标识，审阅者还可以使用监督外接程序的 Microsoft Outlook。但是，审阅者必须通过一些步骤将其安装桌面的 Outlook 版本中运行。有关监督外接程序 Outlook 安装的详细指南，请参阅[Configure 监督策略](configure-supervision-policies.md)。</span><span class="sxs-lookup"><span data-stu-id="afc60-p139">To review communications identified by a supervision policy, reviewers can also use the Supervision add-in for Microsoft Outlook. However, reviewers must run through some steps to install it in the desktop version of Outlook. For detailed guidance about installing the Supervision add-in for Outlook, see [Configure supervision policies](configure-supervision-policies.md).</span></span>
+
+<span data-ttu-id="afc60-290">使用 Outlook，审阅者可以：</span><span class="sxs-lookup"><span data-stu-id="afc60-290">Using Outlook, reviewers can:</span></span>
+
+- <span data-ttu-id="afc60-291">查看符合、 不符合标准、 可疑，和解析状态筛选的项目</span><span class="sxs-lookup"><span data-stu-id="afc60-291">View filtered items by compliant, non-compliant, questionable, and resolved status</span></span>
+- <span data-ttu-id="afc60-p140">标记的单个项为符合、 不符合标准、 可疑，或解决。您还可以记录与帮助阐明所标记的采取的项的注释。</span><span class="sxs-lookup"><span data-stu-id="afc60-p140">Tag a single item as compliant, non-compliant, questionable, or resolved. You can also record a comment with the item to help clarify the tagging action taken.</span></span>
+- <span data-ttu-id="afc60-294">查看的单个项，包括用户解析项目、 日期和时间的操作、 解决方案标签和包含的任何注释标记的历史记录。</span><span class="sxs-lookup"><span data-stu-id="afc60-294">View the history of the tagging for a single item, including who resolved the item, the date and time of the action, the resolution tag, and any included comments.</span></span>
+- <span data-ttu-id="afc60-p141">重新分类为兼容的、 不符合标准的或可疑先前已审阅的项目。您还可以记录与要帮助阐明所执行的重新分类操作的单个项的注释。</span><span class="sxs-lookup"><span data-stu-id="afc60-p141">Reclassify previously reviewed items as compliant, non-compliant, or questionable. You can also record a comment with single items to help clarify the reclassification action taken.</span></span>
+
+## <a name="reporting"></a><span data-ttu-id="afc60-297">报告</span><span class="sxs-lookup"><span data-stu-id="afc60-297">Reporting</span></span>
+
+<span data-ttu-id="afc60-p142">使用监督报表查看级别的策略和审阅者的查看活动。对于每个策略，您还可以查看活动的当前状态查看 live 统计信息。您可以使用监督报告：</span><span class="sxs-lookup"><span data-stu-id="afc60-p142">Use the supervision reports to see the review activity at the policy and reviewer level. For each policy, you can also view live statistics on the current state of review activity. You can use the supervision reports to:</span></span>
+  
+- <span data-ttu-id="afc60-301">验证您的策略都按预期工作。</span><span class="sxs-lookup"><span data-stu-id="afc60-301">Verify that your policies are working as you intended.</span></span>
+- <span data-ttu-id="afc60-302">正在进行审阅标识查明多少通信。</span><span class="sxs-lookup"><span data-stu-id="afc60-302">Find out how many communications are being identified for review.</span></span>
+- <span data-ttu-id="afc60-p143">找出多少 communications 不符合和传递哪些查看。此信息可帮助您决定是否要调整您的策略或更改审阅者的人数。</span><span class="sxs-lookup"><span data-stu-id="afc60-p143">Find out how many communications aren't compliant and which ones are passing review. This information can help you decide whether to fine-tune your policies or change the number of reviewers.</span></span>
+
+### <a name="view-the-supervision-report"></a><span data-ttu-id="afc60-305">查看监督报告</span><span class="sxs-lookup"><span data-stu-id="afc60-305">View the Supervision report</span></span>
+
+1. <span data-ttu-id="afc60-306">登录到[安全 & 合规中心](https://protection.office.com/)的管理帐户有权查看监督报告 Office 365 组织中使用的凭据。</span><span class="sxs-lookup"><span data-stu-id="afc60-306">Sign into the [Security & Compliance Center](https://protection.office.com/) using the credentials for an admin account in your Office 365 organization that has permissions to view supervision reports.</span></span>
+2. <span data-ttu-id="afc60-p144">转到任一**报告** \> **仪表板**或**监督**。您将看到报告与当前监督策略活动的摘要构件监督。</span><span class="sxs-lookup"><span data-stu-id="afc60-p144">Go to either **Reports** \> **Dashboard** or **Supervision**. You'll see a supervision reporting widget with a summary of current supervision policy activity.</span></span>
+3. <span data-ttu-id="afc60-309">选择要打开详细的报告页上的**监督**构件。</span><span class="sxs-lookup"><span data-stu-id="afc60-309">Select the **Supervision** widget to open the detailed report page.</span></span>
+
+> [!NOTE]
+> <span data-ttu-id="afc60-p145">如果您不能访问**报告**页上，检查您监督审阅角色组的成员[进行监督在组织中可用](configure-supervision-policies.md)中所述。要包含在此角色组，可以创建和管理监督策略并运行报告。</span><span class="sxs-lookup"><span data-stu-id="afc60-p145">If you aren't able to access the **Reports** page, check that you're a member of the Supervisory Review role group, as described in [Make supervision available in your organization](configure-supervision-policies.md). Being included in this role group lets you create and manage supervision polices and run the report.</span></span>
+  
+### <a name="how-to-use-the-report"></a><span data-ttu-id="afc60-312">如何使用报告</span><span class="sxs-lookup"><span data-stu-id="afc60-312">How to use the report</span></span>
+
+<span data-ttu-id="afc60-p146">当监督策略标识供审阅通信消息时，电子邮件传递到审阅者的监督文件夹中 Outlook 和 Outlook web 应用程序。此报告列出了在审阅过程中每个阶段每项策略的名称和通信数目。</span><span class="sxs-lookup"><span data-stu-id="afc60-p146">When a supervision policy identifies a communication message for review, the email is delivered to the reviewer's Supervision folder in Outlook and Outlook web app. This report lists each policy's name and the number of communications at each stage in the review process.</span></span>
+  
+<span data-ttu-id="afc60-315">使用报告：</span><span class="sxs-lookup"><span data-stu-id="afc60-315">Use the report to:</span></span>
+  
+- <span data-ttu-id="afc60-316">查看数据的所有或特定的策略。</span><span class="sxs-lookup"><span data-stu-id="afc60-316">View data for all or specific policies.</span></span>
+- <span data-ttu-id="afc60-317">查看按 （如符合、 Questionable 等） 的标记类型、 审阅者或消息类型分组的数据。</span><span class="sxs-lookup"><span data-stu-id="afc60-317">View data grouped by tag type (such as Compliant, Questionable, etc.), reviewer, or message type.</span></span>
+- <span data-ttu-id="afc60-318">将数据导出到 CSV 文件基于活动日期，策略，以及由审阅者活动。</span><span class="sxs-lookup"><span data-stu-id="afc60-318">Export data to a CSV file based on activity date, policy, and by reviewer activity.</span></span>
+- <span data-ttu-id="afc60-319">筛选数据基于活动日期、 标记类型、 审阅者，和消息类型。</span><span class="sxs-lookup"><span data-stu-id="afc60-319">Filter data based on activity date, tag type, reviewer, and message type.</span></span>
+
+<span data-ttu-id="afc60-320">下面是您可能会看到**标记类型**列中的值的细分。</span><span class="sxs-lookup"><span data-stu-id="afc60-320">Here's a breakdown of the values you might see in the **Tag type** column.</span></span>
+  
+|<span data-ttu-id="afc60-321">**标记类型**</span><span class="sxs-lookup"><span data-stu-id="afc60-321">**Tag type**</span></span>|<span data-ttu-id="afc60-322">**含义**</span><span class="sxs-lookup"><span data-stu-id="afc60-322">**What it means**</span></span>|
+|:-----|:-----|
+| <span data-ttu-id="afc60-323">未检查</span><span class="sxs-lookup"><span data-stu-id="afc60-323">Not Reviewed</span></span> | <span data-ttu-id="afc60-p147">尚未评审的电子邮件数。这些电子邮件正在等待审阅或 Outlook/Outlook Web App 中的审阅者的监督文件夹中的 Office 365 监督仪表板。</span><span class="sxs-lookup"><span data-stu-id="afc60-p147">The number of emails that have not been reviewed yet. These emails are awaiting review in the Office 365 supervision dashboard or in the reviewer's supervision folder in Outlook/Outlook Web App.</span></span>|
+| <span data-ttu-id="afc60-326">符合标准</span><span class="sxs-lookup"><span data-stu-id="afc60-326">Compliant</span></span> | <span data-ttu-id="afc60-p148">电子邮件数审核和标记为兼容。这些消息仍需要解决。</span><span class="sxs-lookup"><span data-stu-id="afc60-p148">The number of emails reviewed and marked as compliant. These messages still need to be resolved.</span></span> |
+| <span data-ttu-id="afc60-329">可疑</span><span class="sxs-lookup"><span data-stu-id="afc60-329">Questionable</span></span> | <span data-ttu-id="afc60-p149">电子邮件数审核和标记可疑。这会作为一个标志;其他审阅人可以帮助检查电子邮件是否需要合规性的调查。这些消息仍需要解决。</span><span class="sxs-lookup"><span data-stu-id="afc60-p149">The number of emails reviewed and marked questionable. This acts as a flag; other reviewers can help check whether an email needs investigation for compliance. These messages still need to be resolved.</span></span> |
+| <span data-ttu-id="afc60-333">不兼容 （活动）</span><span class="sxs-lookup"><span data-stu-id="afc60-333">Non-Compliant (Active)</span></span> | <span data-ttu-id="afc60-334">当前正在调查审阅者的不符合电子邮件数。</span><span class="sxs-lookup"><span data-stu-id="afc60-334">The number of non-compliant emails that reviewers are currently investigating.</span></span> |
+| <span data-ttu-id="afc60-335">不兼容 （解析）</span><span class="sxs-lookup"><span data-stu-id="afc60-335">Non-Compliant (Resolved)</span></span> | <span data-ttu-id="afc60-336">不兼容的电子邮件的审阅者调查和解析数。</span><span class="sxs-lookup"><span data-stu-id="afc60-336">The number of non-compliant emails that reviewers investigated and resolved.</span></span> |
+| <span data-ttu-id="afc60-337">命中策略</span><span class="sxs-lookup"><span data-stu-id="afc60-337">Hit Policy</span></span> | <span data-ttu-id="afc60-338">（每日） 消息的总数从 Exchange、 团队和匹配监督策略中定义的一个或多个条件的第三方数据源</span><span class="sxs-lookup"><span data-stu-id="afc60-338">The total number (daily) of messages from Exchange, Teams, and third-party data sources that matched one or more conditions defined in a supervision policy</span></span> |
+| <span data-ttu-id="afc60-339">在安全威胁</span><span class="sxs-lookup"><span data-stu-id="afc60-339">In Purview</span></span> | <span data-ttu-id="afc60-340">（每日） 消息的总数从 Exchange、 团队和第三方数据源扫描监督策略</span><span class="sxs-lookup"><span data-stu-id="afc60-340">The total number (daily) of messages from Exchange, Teams, and third-party data sources scanned by a supervision policy</span></span> |
+| <span data-ttu-id="afc60-341">解析</span><span class="sxs-lookup"><span data-stu-id="afc60-341">Resolved</span></span> | <span data-ttu-id="afc60-342">从 Exchange、 团队和已归类为**已解决**的第三方数据源的消息的总数</span><span class="sxs-lookup"><span data-stu-id="afc60-342">The total number of messages from Exchange, Teams, and third-party data sources that have been classified as **Resolved**</span></span>|
+
+> [!NOTE]
+> <span data-ttu-id="afc60-p150">将出现在此报告中之前，必须首先设置监督策略。此外，如果删除了策略，仍显示历史数据。但是，它们显示为"非存在策略"和**导出**函数不可用。</span><span class="sxs-lookup"><span data-stu-id="afc60-p150">Supervision policies must first be provisioned before they will appear in this report. Additionally, if policies are deleted, historical data is still shown. However, they're indicated as a "Non-existent policy" and the **Export** function isn't available.</span></span>
+
+## <a name="auditing"></a><span data-ttu-id="afc60-346">审核</span><span class="sxs-lookup"><span data-stu-id="afc60-346">Auditing</span></span>
+
+<span data-ttu-id="afc60-p151">在某些情况下，您需要提供信息法规或合规性审核员证明监督的员工活动和通信。这可能是所有监督的活动关联使用定义的策略或，只要监督策略已更改或更新的摘要。必须完成准备内部或外部审核的内置审核跟踪监督策略。可以使用监控监督策略的每个操作的详细的审核历史记录证明证明监督的过程。</span><span class="sxs-lookup"><span data-stu-id="afc60-p151">In some instances, you'll need to provide information to regulatory or compliance auditors to prove supervision of employee activities and communications. This may be a summary of all supervisory activities associated with a defined policy or anytime a supervision policy was changed or updated. Supervision policies have built-in audit trails for complete readiness for internal or external audits. Proof of supervisory procedures can be demonstrated with a detailed audit history of every action monitored by your supervision policies.</span></span>
+
+<span data-ttu-id="afc60-351">以下监督策略活动制约，并可以使用统一的 Office 365 审核日志来查看：</span><span class="sxs-lookup"><span data-stu-id="afc60-351">The following supervision policy activities are audited and can be viewed using the unified Office 365 audit logs:</span></span>
+
+|<span data-ttu-id="afc60-352">**活动**</span><span class="sxs-lookup"><span data-stu-id="afc60-352">**Activity**</span></span>|<span data-ttu-id="afc60-353">**相关的命令**</span><span class="sxs-lookup"><span data-stu-id="afc60-353">**Associated commands**</span></span>|
+|:-----|:-----|
+| <span data-ttu-id="afc60-354">创建策略</span><span class="sxs-lookup"><span data-stu-id="afc60-354">Creating a policy</span></span> | <span data-ttu-id="afc60-355">新 SupervisoryReviewPolicy</span><span class="sxs-lookup"><span data-stu-id="afc60-355">New-SupervisoryReviewPolicy</span></span> <br> <span data-ttu-id="afc60-356">新 SupervisoryReviewRule</span><span class="sxs-lookup"><span data-stu-id="afc60-356">New-SupervisoryReviewRule</span></span> |
+| <span data-ttu-id="afc60-357">编辑策略</span><span class="sxs-lookup"><span data-stu-id="afc60-357">Editing a policy</span></span> | <span data-ttu-id="afc60-358">设置 SupervisoryReviewPolicy</span><span class="sxs-lookup"><span data-stu-id="afc60-358">Set-SupervisoryReviewPolicy</span></span> <br> <span data-ttu-id="afc60-359">设置 SupervisoryReviewRule</span><span class="sxs-lookup"><span data-stu-id="afc60-359">Set-SupervisoryReviewRule</span></span> |
+| <span data-ttu-id="afc60-360">删除策略</span><span class="sxs-lookup"><span data-stu-id="afc60-360">Deleting a policy</span></span>| <span data-ttu-id="afc60-361">删除 SupervisoryReviewPolicy</span><span class="sxs-lookup"><span data-stu-id="afc60-361">Remove-SupervisoryReviewPolicy</span></span> |
+
+<span data-ttu-id="afc60-362">可以使用统一的审核日志搜索函数检索审计或使用[搜索 UnifiedAuditLog](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-audit/search-unifiedauditlog) PowerShell cmdlet。</span><span class="sxs-lookup"><span data-stu-id="afc60-362">The audits can be retrieved using the unified audit log search function or by using the [Search-UnifiedAuditLog](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-audit/search-unifiedauditlog) PowerShell cmdlet.</span></span>
+
+<span data-ttu-id="afc60-363">例如，下面的示例返回所有监督查看活动 （策略和规则） 的活动，并列出每个的详细的信息：</span><span class="sxs-lookup"><span data-stu-id="afc60-363">For example, the following example returns the activities for the all the supervisory review activities (policies and rules) and lists detailed information for each:</span></span>
+
+```
+Search-UnifiedAuditLog -StartDate $startDate -EndDate $endDate -RecordType DataGovernance -ResultSize 5000 | Where-Object {$_.Operations -like "*SupervisoryReview*"} | fl CreationDate,Operations,UserIds,AuditData 
+```
+
+<span data-ttu-id="afc60-364">除了监督报告和日志中提供的信息，您还可以使用[Get-SupervisoryReviewActivity](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance/get-supervisoryreviewactivity?view=exchange-ps) PowerShell cmdlet 可返回策略活动的所有监督的完整详细的列表。</span><span class="sxs-lookup"><span data-stu-id="afc60-364">In addition to information provided in the supervision reports and logs, you can also use the [Get-SupervisoryReviewActivity](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance/get-supervisoryreviewactivity?view=exchange-ps) PowerShell cmdlet to return a complete detailed listing of all supervision policy activities.</span></span>
+
+## <a name="ready-to-get-started"></a><span data-ttu-id="afc60-365">准备好开始了吗？</span><span class="sxs-lookup"><span data-stu-id="afc60-365">Ready to get started?</span></span>
+
+<span data-ttu-id="afc60-366">若要启动配置为组织的监督策略，请参阅[Configure 监督策略](configure-supervision-policies.md)。</span><span class="sxs-lookup"><span data-stu-id="afc60-366">To start configuring supervision policies for your organization, see [Configure supervision policies](configure-supervision-policies.md).</span></span>
