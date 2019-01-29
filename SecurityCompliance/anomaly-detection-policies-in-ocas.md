@@ -3,7 +3,7 @@ title: Office 365 云应用安全中的异常检测策略
 ms.author: deniseb
 author: denisebmsft
 manager: laurawi
-ms.date: 2/26/2018
+ms.date: 01/28/2019
 ms.audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -13,12 +13,12 @@ search.appverid:
 - MOE150
 ms.assetid: 88935b4e-dcb1-47f1-8aca-1bf8fb069db6
 description: 'Office 365 云应用程序安全性的异常检测策略使用内置的算法来帮助发现潜在的问题。您应具有至少一个异常检测策略，您可以通过使用筛选器调整 （当您创建它）。 '
-ms.openlocfilehash: 62e2db3ba46f41bce5c5c4fab9e6c685838d68e8
-ms.sourcegitcommit: 9034809b6f308bedc3b8ddcca8242586b5c30f94
+ms.openlocfilehash: 7a1cb795531df168f0a5c425e7555ae6b1412d2b
+ms.sourcegitcommit: ee28ee2b2bdfd049333c2f495d7f7780d13af4a6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "28015072"
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "29604413"
 ---
 # <a name="anomaly-detection-policies-in-office-365-cloud-app-security"></a>Office 365 云应用安全中的异常检测策略
 
@@ -28,13 +28,13 @@ Office 365 高级安全管理现在是 Office 365 云应用程序安全性。
 |:-----|:-----|:-----|:-----|
 |[启动评估](office-365-cas-overview.md) <br/> |[开始规划](get-ready-for-office-365-cas.md) <br/> |在这里 ！  <br/> [后续步骤](integrate-your-siem-server-with-office-365-cas.md) <br/> |[开始利用](utilization-activities-for-ocas.md) <br/> |
    
-Office 365 云应用程序安全性开头[Microsoft 云应用程序安全性释放 116](https://docs.microsoft.com/cloud-app-security/release-notes)，包括多个预定义的异常检测策略 （"开"），包括用户、 实体行为分析 (UEBA) 以及学习 (ML) 的计算机。
+Office 365 云应用程序安全性开头[Microsoft 云应用程序安全性释放 116](new-in-office-365-cas-2018.md#office-365-cloud-app-security-release-116-3)，包括多个预定义的异常检测策略 （"开"），包括用户、 实体行为分析 (UEBA) 以及学习 (ML) 的计算机。
   
 ![若要查看您的异常检测策略，请选择控件\>策略。](media/9663baa5-98bf-45e0-9458-6e572b43ec72.png)
   
 这些异常检测策略通过提供即时检测，在您的用户和计算机连接到您的网络设备设定大量行为异常提供即时结果。此外，新策略公开来自云应用程序安全性检测引擎，以帮助您调查处理速度和包含持续威胁的其他数据。
   
-作为[全局管理员或安全管理员](permissions-in-the-security-and-compliance-center.md)，您可以查看，并根据需要进行修改可用于 Office 365 云应用程序安全性的默认策略。
+为 Office 365 全局管理员或安全管理员，您可以查看，并有必要，修改可用于 Office 365 云应用程序安全性的默认策略。
   
  > [!IMPORTANT]
 > 没有七天期间异常行为通知不会触发初始学习期。异常检测算法经过优化，可减少误报警报的数。 
@@ -51,23 +51,13 @@ Office 365 云应用程序安全性开头[Microsoft 云应用程序安全性释�
     
 ## <a name="view-your-anomaly-detection-policies"></a>查看您异常检测策略
 
-1. 以全局管理员或 security 管理员程序中，转到[https://protection.office.com](https://protection.office.com)和使用工作或学校帐户登录。 
+1. 以全局管理员或 security 管理员程序中，转到云应用程序安全性门户 ([https://portal.cloudappsecurity.com](https://portal.cloudappsecurity.com)) 和登录。<br>您将转到 Office 365 云应用程序安全策略页。
     
-2. 安全中&amp;合规性中心中，选择**警报** \> **管理高级通知**。
-    
-3. 选择**转到 Office 365 云应用程序安全性**。
-    
-    您将转到 Office 365 云应用程序安全策略页。
-    
-4. 在**类型**列表中，选择**异常检测策略**。
-    
-    贵组织的默认 （或现有） 显示异常检测策略。
-    
-    ![多个异常检测策略是默认可在 Office 365 云应用程序安全性](media/2e0ee770-787a-4d4a-bea8-389dc765d4c6.png)
+2. 在**类型**列表中，选择**异常检测策略**。<br>贵组织的默认 （或现有） 显示异常检测策略。<br>![Office 365 云应用安全中的异常检测策略](media/2e0ee770-787a-4d4a-bea8-389dc765d4c6.png)
   
-5. 选择要查看或编辑其设置策略。
+3. 选择要查看或编辑其设置策略。
     
-6. 选择**更新**以保存所做的更改。 
+4. 选择**更新**以保存所做的更改。 
     
 ## <a name="learn-more-about-anomaly-detection-policies"></a>了解有关异常检测策略
 
@@ -92,27 +82,19 @@ Office 365 云应用程序安全性开头[Microsoft 云应用程序安全性释�
 
 通知逐渐，您可以快速会审这些通知并确定要将哪些首先处理。具有上下文的通知，可以看到更大的图片，并确定是否有恶意确实情况发生。使用以下过程开始浏览通知：
   
-1. 以全局管理员或 security 管理员程序中，转到[https://protection.office.com](https://protection.office.com)和使用工作或学校帐户登录。 
+1. 以全局管理员或 security 管理员程序中，转到云应用程序安全性门户 ([https://portal.cloudappsecurity.com](https://portal.cloudappsecurity.com)) 和登录。 
     
-2. 安全中&amp;合规性中心中，选择**警报** \> **管理高级通知**。
+2. 选择**通知**以查看您的通知。 
     
-3. 选择**转到 Office 365 云应用程序安全性**。
+3. 获取通知上下文，请按照以下步骤：
     
-4. 选择**通知**以查看您的通知。 
+4. 选择**调查** \> **活动日志**。
     
-5. 获取通知上下文，请按照以下步骤：
-    
-1. 选择**调查** \> **活动日志**。
-    
-2. 选择一个项目，如用户或 IP 地址。这将打开相关见解纸盒。
-    
-    ![在活动日志中，您可以调查的 IP 地址。](media/32a727c5-e406-4fe2-9443-c1a7fb6628fc.png)
+5. 选择一个项目，如用户或 IP 地址。这将打开相关见解纸盒。<br>![在活动日志中，您可以调查的 IP 地址。](media/32a727c5-e406-4fe2-9443-c1a7fb6628fc.png)
   
-3. 在相关见解银中，单击可用的命令，如**显示类似**部分中的图标。 
-    
-    ![在相关见解银，可以单击该时钟图标可查看选定活动的 48 小时内执行的活动](media/c6c96aa0-98e5-4205-8873-45f8d6fd0843.png)
+6. 在相关见解银中，单击可用的命令，如**显示类似**部分中的图标。<br> ![单击时钟图标以查看所选活动的 48 小时内执行的活动](media/c6c96aa0-98e5-4205-8873-45f8d6fd0843.png)
   
-4. 深入了解有关所选项目通过继续浏览该项目的详细信息。
+7. 深入了解有关所选项目通过继续浏览该项目的详细信息。
     
 在多个失败登录通知良言可能可疑，并可指示潜在的强力攻击。但是，此类通知也可能是应用程序配置不正确，导致通知为误报，则返回 true 误报。如果您看到其他可疑活动多失败登录警报，则帐户受到威胁的更高的概率。例如，假设，多失败登录通知后跟活动从或 IP 地址和意思差旅活动，这两个强指标的威胁。您甚至可能会看到相同的用户执行大量下载活动，它通常是攻击者执行 exfiltration 的数据的指示符。它的类，您可以了解 Office 365 云应用程序安全性，若要查看和会审通知，并执行操作中操作在需要时。
   
