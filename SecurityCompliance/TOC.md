@@ -1,4 +1,4 @@
-# [入门]
+# 入门
 ## [Office 365 安全路线图](security-roadmap.md)
 ## [配置 Office 365 租户以提高安全性](tenant-wide-setup-for-increased-security.md)
 ## [转到 Office 365 安全与合规中心](go-to-the-securitycompliance-center.md)

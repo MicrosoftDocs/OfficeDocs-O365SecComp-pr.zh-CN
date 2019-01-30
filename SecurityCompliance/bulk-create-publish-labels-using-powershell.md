@@ -12,12 +12,12 @@ search.appverid:
 - MET150
 ms.assetid: 8986701b-ffa1-46ec-8fd0-8f7e81d5b25f
 description: 在 Office 365 中，可使用标签为组织实现保留计划。记录管理者或合规部主管可能需要创建和发布数百个标签。为此，可使用安全与合规中心 UI，但一次只能创建一个标签，这样既费时又低效。使用下面的脚本和 .csv 文件，可批量创建和发布标签及标签策略。首先，在 Excel 中创建标签列表和标签策略列表。然后，使用 PowerShell 批量创建这些列表中的标签和标签策略。这样就可以更轻松地一次性创建和发布保留计划所需的全部标签。
-ms.openlocfilehash: 1cf597cf9453a2b9899141d708896b9782dc6047
-ms.sourcegitcommit: 83406a3258e722020e46a82bbf4bc9d5d8a326ca
+ms.openlocfilehash: d05246dacd71ee59a795121e60a2a4202cfef69f
+ms.sourcegitcommit: 98ec28932ae20e848f9f489c3c78e4a7edab6d18
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/01/2018
-ms.locfileid: "25899663"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "29629044"
 ---
 # <a name="bulk-create-and-publish-retention-labels-by-using-powershell"></a>使用 PowerShell 批量创建和发布保留标签
 
@@ -77,7 +77,7 @@ LabelName_t_4,Record label tag - financial,$true,Keep,730,CreationAgeInDays,
 Policy Name (Required),PublishComplianceTag (Required),Comment (Optional),Enabled (Required),ExchangeLocation (Optional),ExchangeLocationException (Optional),ModernGroupLocation (Optional),ModernGroupLocationException (Optional),OneDriveLocation (Optional),OneDriveLocationException (Optional),PublicFolderLocation (Optional),SharePointLocation (Optional),SharePointLocationException (Optional),SkypeLocation (Optional),SkypeLocationException (Optional)
 Publishing Policy Red1,"LabelName_t_1, LabelName_t_2, LabelName_t_3, LabelName_t_4",N/A,$true,All,,All,,All,,,All,,,
 Publishing Policy Orange1,"LabelName_t_1, LabelName_t_2",N/A,$true,All,,,,,,,,,,
-Publishing Policy Yellow1,"LabelName_t_3, LabelName_t_4",N/A,$false,,,,,,,,,,,
+Publishing Policy Yellow1,"LabelName_t_3, LabelName_t_4",N/A,$false,All,,,,,,,,,,
 ```
 
 ## <a name="step-3-create-the-powershell-script"></a>第 3 步：创建 PowerShell 脚本
