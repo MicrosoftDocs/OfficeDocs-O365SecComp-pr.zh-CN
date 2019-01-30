@@ -13,12 +13,12 @@ search.appverid:
 - MET150
 ms.assetid: 2e3fcfc5-5604-4b88-ac0a-c5c45c03f1db
 description: Exchange Online Protection 扫描到入站电子邮件时，它会在每封邮件中插入" **X-Forefront-Antispam-Report**"标头。
-ms.openlocfilehash: 39cac8e1406bd4f7505ae4bc626b8c7e78f88101
-ms.sourcegitcommit: 75b985b2574f4be70cf352498ea300b3d99dd338
+ms.openlocfilehash: d887fea94bac6177dde69fac9586d7d562ef50de
+ms.sourcegitcommit: 03b9221d9885bcde1cdb5df2c2dc5d835802d299
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/10/2018
-ms.locfileid: "26255887"
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "29614456"
 ---
 # <a name="anti-spam-message-headers"></a>反垃圾邮件邮件头
 
@@ -54,7 +54,7 @@ Exchange Online Protection 扫描到入站电子邮件时，它会在每封邮�
 |SFV:NSPM|邮件被标记为非垃圾邮件并发送给预期收件人。|
 |H:[helostring]|连接邮件服务器的 HELO 或 EHLO 字符串。|
 |PTR:[ReverseDNS]|发送 IP 地址的 PTR 记录或指针记录，亦称为反向 DNS 地址。|
-|SFTY|邮件标识为网络钓鱼并也将具有下列值之一标记： <br/>• 9.1： 默认值。邮件包含网络钓鱼 URL、 可能包含其他仿冒内容，或可能已被标记为网络钓鱼另一个邮件筛选器，如 Exchange 服务器的内部部署版本中继到 Office 365 邮件之前。 <br/>• 9.11： 失败的消息反欺骗检查其中在从的发送域： 页眉相同，或与，或属于同一组织为接收域。 <br/>• 9.21： 反欺骗检查和发送域在从失败的消息： 标头不进行身份验证。与 CompAuth 结合使用 （请参阅身份验证结果）。 <br/>• 9.22： 相同 9.21，只不过用户具有已被重写安全发件人。 <br/>• 9.23： 相同 9.22，只不过组织具有允许的发件人或域已被重写的。 <br/>• 9.24： 相同 9.23，只不过用户具有已被重写 Exchange 邮件流规则。|
+|SFTY|邮件标识为网络钓鱼并也将具有下列值之一标记： <br/>• 9.1： 默认值。邮件包含网络钓鱼 URL、 可能包含其他仿冒内容，或可能已被标记为网络钓鱼另一个邮件筛选器，如 Exchange 服务器的内部部署版本中继到 Office 365 邮件之前。 <br/>• 9.11： 失败的消息反欺骗检查其中在从的发送域： 页眉相同，或与，或属于同一组织为接收域。这指示组织内欺骗安全提示将添加到邮件。 <br/>• 9.19： 失败的消息的发送域尝试模拟归接收器的域或自定义受防钓鱼策略的域的域模拟检查。这指示模拟安全提示将添加到邮件中，如果启用通过反 Phishig 策略。 <br/>• 9.20： 失败的消息用户模拟检查发送用户尝试模拟接收器组织内的用户或防钓鱼策略受保护的自定义的用户的位置。这指示模拟安全提示将添加到邮件中，如果启用通过反 Phishig 策略。 <br/>• 9.21： 反欺骗检查和发送域在从失败的消息： 页眉的身份验证不和来自外部域。与 CompAuth 结合使用 （请参阅身份验证结果）。 <br/>• 9.22： 相同 9.21，只不过用户具有已被重写安全发件人。 <br/>• 9.23： 相同 9.22，只不过组织具有允许的发件人或域已被重写的。 <br/>• 9.24： 相同 9.23，只不过用户具有已被重写 Exchange 邮件流规则。|
 |X-CustomSpam：[ASFOption]|邮件匹配高级垃圾邮件筛选选项。例如， **X-customspam： 到远程站点的链接图像**表示**到远程站点的图像链接**ASF 选项是否相匹配。若要找出哪些 X 标头文本被添加为每个特定 ASF 选项，请参阅[高级垃圾邮件筛选选项](advanced-spam-filtering-asf-options.md)。|
    
 ## <a name="x-microsoft-antispam-message-header-fields"></a>X-Microsoft-Antispam 邮件标头字段

@@ -3,7 +3,7 @@ title: 对敏感信息的新 Office 365 邮件加密策略
 ms.author: krowley
 author: kccross
 manager: laurawi
-ms.date: 1/9/2019
+ms.date: 1/16/2019
 ROBOTS: NOINDEX, NOFOLLOW
 audience: ITPro
 ms.topic: article
@@ -13,16 +13,16 @@ search.appverid:
 - MET150
 ms.collection: Strat_O365_Enterprise
 description: 摘要： 自动应用于 Office 365 邮件加密策略向所有租户推出的敏感信息类型。
-ms.openlocfilehash: a8cd132af2b1429698ea92779a3c54559e2b13e2
-ms.sourcegitcommit: b936a2fd4b7f7a7099b96cc29580ed55bdb8bf2b
+ms.openlocfilehash: f83bf0fe572586b3becf2dd53395e611bdaaea24
+ms.sourcegitcommit: 03b9221d9885bcde1cdb5df2c2dc5d835802d299
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/10/2019
-ms.locfileid: "27789450"
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "29614376"
 ---
 # <a name="office-365-message-encryption-policy-for-sensitive-information"></a>Office 365 邮件加密敏感信息策略
 
-我们将创建一个新的自动策略将应用于所有电子邮件包含敏感信息和的组织外部发送的 Office 365 邮件加密的 Office 365 租户中。此新的 Exchange 邮件流规则将自动创建在 Office 365 租户，以便将默认情况下保护您的组织。
+我们执行慢推出的新的自动策略将应用于包含某些类型的敏感的电子邮件的 Office 365 邮件加密的 Office 365 租户中的租户，根据组织规模和复杂性的邮件流，选择组信息。我们要与租户一小组测试此。此策略将不会回滚到所有组织和注意事项，如组织规模和复杂性的邮件流将用于确定此推出资格。如果为此推出选择您的组织，则您将在通知您在其将创建此自动策略，并至少 30 天通知和选项可选择退出时，才将为您提供的日期 Office 365 邮件中心收到通知。如果您不希望等待 Microsoft 创建的此策略，并且想要这样做自己，可以创建使用 Exchange 邮件流规则此自动策略。
 
 ## <a name="when-to-expect-the-update-for-your-tenant"></a>预计您的租户的更新
 
@@ -52,7 +52,7 @@ Exchange 邮件流规则将创建组织中的将自动加密转与组织外部�
 
 ## <a name="how-will-this-change-be-represented-in-the-audit-log"></a>如何将此更改表示审核日志中？
 
-此活动审核，并且可供客户。 操作 ' 新建 TransportRule'，下面是示例审核条目中安全性和合规性中心的审核日志搜索的代码段：
+此活动审核，并且可供客户。 操作 ' 新建 TransportRule'，下面是示例审核条目中安全 & 合规中心的审核日志搜索的代码段：
 
 |     |
 | --- |
