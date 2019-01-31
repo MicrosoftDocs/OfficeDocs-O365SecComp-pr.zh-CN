@@ -3,7 +3,7 @@ title: 搜索和标记
 ms.author: chrfox
 author: chrfox
 manager: laurawi
-ms.date: 6/13/2018
+ms.date: ''
 ms.audience: ITPro
 ms.topic: article
 ms.service: o365-administration
@@ -12,65 +12,78 @@ search.appverid:
 - MET150
 ms.assetid: 22f5adad-1bc0-460d-94a9-8732929f5b99
 description: 高级电子数据展示中, 搜索和添加标签模块，可以搜索、 预览和组织您的案例中的文档。目前，这一模块是 beta 中。
-ms.openlocfilehash: fde887e496e9a40aa88d841053a0c66e48f04200
-ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+ms.openlocfilehash: 013e559ca55e9a877dfb2f8747c4696f81e1e095
+ms.sourcegitcommit: 25f1028643d8a20d17306e8b09cafea46eaf7a58
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22525484"
+ms.lasthandoff: 01/31/2019
+ms.locfileid: "29666142"
 ---
-# <a name="search-and-tagging"></a><span data-ttu-id="efbb1-104">搜索和标记</span><span class="sxs-lookup"><span data-stu-id="efbb1-104">Search and Tagging</span></span>
+# <a name="search-and-tagging"></a><span data-ttu-id="18c79-104">搜索和标记</span><span class="sxs-lookup"><span data-stu-id="18c79-104">Search and Tagging</span></span>
 
-<span data-ttu-id="efbb1-p102">高级电子数据展示中, 搜索和添加标签模块，可以搜索、 预览和组织您的案例中的文档。目前，这一模块是 beta 中。</span><span class="sxs-lookup"><span data-stu-id="efbb1-p102">In Advanced eDiscovery, the Search and Tagging module enables you to search, preview, and organize the documents in your case. Currently, this module is in beta.</span></span>
+<span data-ttu-id="18c79-p102">高级电子数据展示中, 搜索和添加标签模块，可以搜索、 预览和组织您的案例中的文档。目前，这一模块是 beta 中。搜索和标签的简要演示，请参阅[管理您的数据与高级电子数据展示](https://www.youtube.com/watch?v=VaPYL3DHP6I)视频。</span><span class="sxs-lookup"><span data-stu-id="18c79-p102">In Advanced eDiscovery, the Search and Tagging module enables you to search, preview, and organize the documents in your case. Currently, this module is in beta. For a brief demonstration of searching and tagging, see the [Manage your data with Advanced eDiscovery](https://www.youtube.com/watch?v=VaPYL3DHP6I) video.</span></span>
 
 > [!NOTE]
-> <span data-ttu-id="efbb1-p103">高级电子数据展示需要为您的组织使用的高级合规性加载项或 E5 订阅 Office 365 E3。如果您不具有该计划，并且想要尝试高级电子数据展示，您还可以[注册试用版的 Office 365 企业 E5](https://go.microsoft.com/fwlink/p/?LinkID=698279)。</span><span class="sxs-lookup"><span data-stu-id="efbb1-p103">Advanced eDiscovery requires an Office 365 E3 with the Advanced Compliance add-on or an E5 subscription for your organization. If you don't have that plan and want to try Advanced eDiscovery, you can [sign up for a trial of Office 365 Enterprise E5](https://go.microsoft.com/fwlink/p/?LinkID=698279).</span></span> 
+> <span data-ttu-id="18c79-p103">若要使用高级电子数据展示，组织必须订阅随附高级合规性加载项的 Office 365 E3，或订阅 E5。如果没有此计划，但又要试用高级电子数据展示，可以[注册 Office 365 企业版 E5 试用版](https://go.microsoft.com/fwlink/p/?LinkID=698279)。</span><span class="sxs-lookup"><span data-stu-id="18c79-p103">Advanced eDiscovery requires an Office 365 E3 with the Advanced Compliance add-on or an E5 subscription for your organization. If you don't have that plan and want to try Advanced eDiscovery, you can [sign up for a trial of Office 365 Enterprise E5](https://go.microsoft.com/fwlink/p/?LinkID=698279).</span></span> 
   
-## <a name="search-the-documents-in-your-case"></a><span data-ttu-id="efbb1-109">在您的案例中搜索文档</span><span class="sxs-lookup"><span data-stu-id="efbb1-109">Search the documents in your case</span></span>
+## <a name="search-the-documents-in-your-case"></a><span data-ttu-id="18c79-110">在您的案例中搜索文档</span><span class="sxs-lookup"><span data-stu-id="18c79-110">Search the documents in your case</span></span>
 
-<span data-ttu-id="efbb1-p104">一旦您已处理高级电子数据展示中的文档和 （可选） 运行分析模块或相关性模块，您可以使用搜索和添加标签搜索通过这种情况中的文档并将它们组织使用特定于案例的标记。您可以定义查询使用提供的条件卡中，或通过关键字中的类似的 KQL 查询语言条件卡片。常见的 KQL 语法，例如 AND、 OR，NOT、 NEAR(n) 且受支持，以及尾随多字符通配符 （\*）。在查询语言属性名称中支持以下属性：</span><span class="sxs-lookup"><span data-stu-id="efbb1-p104">Once you have processed documents in Advanced eDiscovery and optionally run the Analyze module or the Relevance module, you can use Search and Tagging to search through the documents in the case and organize them using case-specific tags. You can define your queries using the provided condition cards, or through a KQL-like query language in the Keywords condition card. Common KQL syntax, such as AND, OR, NOT, and NEAR(n) are supported, as well as trailing multi-character wildcard (\*). These properties are supported in the query language property name:</span></span>
+<span data-ttu-id="18c79-p104">在处理文档中的高级电子数据展示案例 （并 （可选） 运行分析或相关性模块之后），您可以使用搜索和标签可搜索文档，然后将其组织通过应用特定于案例的标记 （也称为标签）。您可以定义搜索查询使用提供的条件卡或中包含关键字使用类似的 KQL 查询语言条件卡片。常见的 KQL 语法，例如 AND、 OR，NOT、 NEAR(n) 且受支持，以及尾随多字符通配符 （\*）。</span><span class="sxs-lookup"><span data-stu-id="18c79-p104">After you have processed documents in an Advanced eDiscovery case (and optionally run the Analyze or Relevance module), you can use the Search and Tagging to search documents and then organize them by applying case-specific tags (also called labels). You can define a search query using the provided condition cards or by using a KQL-like query language in the Keywords condition card. Common KQL syntax, such as AND, OR, NOT, and NEAR(n) are supported, as well as trailing multi-character wildcard (\*).</span></span> 
 
-- <span data-ttu-id="efbb1-114">caselabel： 创建/应用标记中搜索和添加标签用于用例</span><span class="sxs-lookup"><span data-stu-id="efbb1-114">caselabel: tags created/applied in Search and Tagging for this case</span></span> 
-- <span data-ttu-id="efbb1-115">管理员： 分配情况-受限制的管理员</span><span class="sxs-lookup"><span data-stu-id="efbb1-115">custodians: custodians assigned in the case - subject to limitations</span></span>
-- <span data-ttu-id="efbb1-116">日期： 发送电子邮件的日期、 修改日期的文档</span><span class="sxs-lookup"><span data-stu-id="efbb1-116">date: sent date for email, modified date for documents</span></span>
-- <span data-ttu-id="efbb1-117">fileid： 文件 ID 在这种情况</span><span class="sxs-lookup"><span data-stu-id="efbb1-117">fileid: file ID within the case</span></span>
-- <span data-ttu-id="efbb1-118">filetype： 本机文件扩展名</span><span class="sxs-lookup"><span data-stu-id="efbb1-118">filetype: native file extension</span></span>
-- <span data-ttu-id="efbb1-119">fileclass： 电子邮件、 文档或附件</span><span class="sxs-lookup"><span data-stu-id="efbb1-119">fileclass: email, document, or attachment</span></span>
-- <span data-ttu-id="efbb1-120">senderauthor： 发件人的电子邮件，文档作者</span><span class="sxs-lookup"><span data-stu-id="efbb1-120">senderauthor: sender for emails, author for documents</span></span>
-- <span data-ttu-id="efbb1-121">大小： kb 的文件的大小</span><span class="sxs-lookup"><span data-stu-id="efbb1-121">size: size of the file in KB</span></span>
-- <span data-ttu-id="efbb1-122">subjecttitle： 的电子邮件，标题的文档主题</span><span class="sxs-lookup"><span data-stu-id="efbb1-122">subjecttitle: subject for emails, title for documents</span></span>
-- <span data-ttu-id="efbb1-123">bcc</span><span class="sxs-lookup"><span data-stu-id="efbb1-123">bcc</span></span>
-- <span data-ttu-id="efbb1-124">cc</span><span class="sxs-lookup"><span data-stu-id="efbb1-124">cc</span></span>
-- <span data-ttu-id="efbb1-125">参与者： 电子邮件地址的电子邮件线程，包括缺失的链接中的所有参与者</span><span class="sxs-lookup"><span data-stu-id="efbb1-125">participants: Email addresses of all participants in an email thread, including for missing links</span></span>
-- <span data-ttu-id="efbb1-126">接收： 接收日期</span><span class="sxs-lookup"><span data-stu-id="efbb1-126">received: received date</span></span>
-- <span data-ttu-id="efbb1-127">收件人： 电子邮件收件人的名称或地址 （，抄送，密件抄送)</span><span class="sxs-lookup"><span data-stu-id="efbb1-127">recipients: email recipient names or addresses (to, cc, bcc)</span></span>
-- <span data-ttu-id="efbb1-128">sender</span><span class="sxs-lookup"><span data-stu-id="efbb1-128">sender</span></span>
-- <span data-ttu-id="efbb1-129">lastmodifieddate： 上次修改日期的文档</span><span class="sxs-lookup"><span data-stu-id="efbb1-129">lastmodifieddate: last modified date of a document</span></span>
-- <span data-ttu-id="efbb1-130">发送： 发送的电子邮件的日期</span><span class="sxs-lookup"><span data-stu-id="efbb1-130">sent: sent date of an email</span></span>
-- <span data-ttu-id="efbb1-131">至</span><span class="sxs-lookup"><span data-stu-id="efbb1-131">to</span></span>
-- <span data-ttu-id="efbb1-132">作者： 作者的电子邮件</span><span class="sxs-lookup"><span data-stu-id="efbb1-132">author: author of an email</span></span>
-- <span data-ttu-id="efbb1-133">标题： 文档的标题</span><span class="sxs-lookup"><span data-stu-id="efbb1-133">title: title of a document</span></span>
-- <span data-ttu-id="efbb1-134">dominanttheme： 项目的基准主题\*</span><span class="sxs-lookup"><span data-stu-id="efbb1-134">dominanttheme: dominant theme of an item\*</span></span>
-- <span data-ttu-id="efbb1-135">themeslist： 与项目相关联的主题\*</span><span class="sxs-lookup"><span data-stu-id="efbb1-135">themeslist: themes that are associated with an item\*</span></span>
-- <span data-ttu-id="efbb1-136">readpercentile_ [issuenum]: 读取百分点值的项目问题 [issuenum]\*\*</span><span class="sxs-lookup"><span data-stu-id="efbb1-136">readpercentile_[issuenum]: read percentile of an item for issue [issuenum]\*\*</span></span>
-- <span data-ttu-id="efbb1-137">relevancescore_ [issuenum]: [issuenum] 问题项目的相关性分数\*\*</span><span class="sxs-lookup"><span data-stu-id="efbb1-137">relevancescore_[issuenum]: relevance score of an item for issue [issuenum]\*\*</span></span>
-- <span data-ttu-id="efbb1-138">relevancetag_ [issuenum]: 如果手动已项目标记为相关性，其标记 [issuenum]\*\*</span><span class="sxs-lookup"><span data-stu-id="efbb1-138">relevancetag_[issuenum]: if an item has been manually tagged for relevance, its tag for [issuenum]\*\*</span></span>
+<span data-ttu-id="18c79-p105">下表列出了您可以搜索使用 KQL 关键字查询的属性。此外，您可以使用高级电子数据展示搜索工具中的条件卡片搜索查询添加条件 （针对所选属性）。</span><span class="sxs-lookup"><span data-stu-id="18c79-p105">The following table lists the properties that you can search for using a KQL keyword query. Alternatively, you can use a condition card for in the Advanced eDiscovery Search tool to add a condition (for selected properties) to a search query.</span></span>
 
-<span data-ttu-id="efbb1-139">\*如果已运行主题模块唯一可用\*\*唯一可用，如果已运行相关性模块</span><span class="sxs-lookup"><span data-stu-id="efbb1-139">\* Only available if the Themes module has been run \*\* Only available if the Relevance module has been run</span></span>
-  
-## <a name="see-also"></a><span data-ttu-id="efbb1-140">另请参阅</span><span class="sxs-lookup"><span data-stu-id="efbb1-140">See also</span></span>
+|<span data-ttu-id="18c79-116">**属性**</span><span class="sxs-lookup"><span data-stu-id="18c79-116">**Property**</span></span>|<span data-ttu-id="18c79-117">**说明**</span><span class="sxs-lookup"><span data-stu-id="18c79-117">**Description**</span></span>|
+|:-----|:-----|
+|<span data-ttu-id="18c79-118">**caselabel**</span><span class="sxs-lookup"><span data-stu-id="18c79-118">**caselabel**</span></span> <br/> | <span data-ttu-id="18c79-119">创建/应用时标记文档的标记的名称。</span><span class="sxs-lookup"><span data-stu-id="18c79-119">The name of the tag created/applied when a document is tagged.</span></span> <br/> |
+|<span data-ttu-id="18c79-120">**custodian**</span><span class="sxs-lookup"><span data-stu-id="18c79-120">**custodian**</span></span> <br/> | <span data-ttu-id="18c79-121">在与文档; 关联 custodian受到限制。</span><span class="sxs-lookup"><span data-stu-id="18c79-121">The custodian associated with a document; subject to limitations.</span></span> <br/> |
+|<span data-ttu-id="18c79-122">**日期**</span><span class="sxs-lookup"><span data-stu-id="18c79-122">**date**</span></span> <br/> | <span data-ttu-id="18c79-123">发送电子邮件; 日期网站文档修改的日期。</span><span class="sxs-lookup"><span data-stu-id="18c79-123">Sent date for email; the modified date for site documents.</span></span> <br/> |
+|<span data-ttu-id="18c79-124">**fileid**</span><span class="sxs-lookup"><span data-stu-id="18c79-124">**fileid**</span></span> <br/> | <span data-ttu-id="18c79-125">在这种情况文件 ID。</span><span class="sxs-lookup"><span data-stu-id="18c79-125">The File ID within the case.</span></span> <br/> |
+|<span data-ttu-id="18c79-126">**文件类型**</span><span class="sxs-lookup"><span data-stu-id="18c79-126">**filetype**</span></span> <br/> | <span data-ttu-id="18c79-127">本机文件扩展名。</span><span class="sxs-lookup"><span data-stu-id="18c79-127">The native file extension.</span></span> <br/> |
+|<span data-ttu-id="18c79-128">**fileclass**</span><span class="sxs-lookup"><span data-stu-id="18c79-128">**fileclass**</span></span> <br/> | <span data-ttu-id="18c79-129">电子邮件、 文档或附件。</span><span class="sxs-lookup"><span data-stu-id="18c79-129">Email, document, or attachment.</span></span> <br/> |
+|<span data-ttu-id="18c79-130">**senderauthor**</span><span class="sxs-lookup"><span data-stu-id="18c79-130">**senderauthor**</span></span> <br/> | <span data-ttu-id="18c79-131">发件人的电子邮件;网站文档的作者。</span><span class="sxs-lookup"><span data-stu-id="18c79-131">The sender for email; the author for site documents.</span></span> <br/> |
+|<span data-ttu-id="18c79-132">**大小**</span><span class="sxs-lookup"><span data-stu-id="18c79-132">**size**</span></span> <br/> | <span data-ttu-id="18c79-133">Kb 文件的大小。</span><span class="sxs-lookup"><span data-stu-id="18c79-133">The size of the file in KB.</span></span> <br/> |
+|<span data-ttu-id="18c79-134">**subjecttitle**</span><span class="sxs-lookup"><span data-stu-id="18c79-134">**subjecttitle**</span></span> <br/> | <span data-ttu-id="18c79-135">电子邮件; 的主题网站文档标题。</span><span class="sxs-lookup"><span data-stu-id="18c79-135">The subject for email; the title for site documents.</span></span> <br/> |
+|<span data-ttu-id="18c79-136">**bcc**</span><span class="sxs-lookup"><span data-stu-id="18c79-136">**bcc**</span></span> <br/> | <span data-ttu-id="18c79-137">电子邮件的密件抄送字段中。</span><span class="sxs-lookup"><span data-stu-id="18c79-137">The Bcc field of an email.</span></span> <br/> |
+|<span data-ttu-id="18c79-138">**cc**</span><span class="sxs-lookup"><span data-stu-id="18c79-138">**cc**</span></span> <br/> | <span data-ttu-id="18c79-139">电子邮件的抄送字段中。</span><span class="sxs-lookup"><span data-stu-id="18c79-139">The Cc field of an email.</span></span> <br/> |
+|<span data-ttu-id="18c79-140">**参与者**</span><span class="sxs-lookup"><span data-stu-id="18c79-140">**participants**</span></span> <br/> | <span data-ttu-id="18c79-141">在电子邮件线程，包括缺失的链接中的所有参与者的电子邮件地址。</span><span class="sxs-lookup"><span data-stu-id="18c79-141">The email address of all participants in an email thread, including for missing links.</span></span> <br/> |
+|<span data-ttu-id="18c79-142">**接收**</span><span class="sxs-lookup"><span data-stu-id="18c79-142">**received**</span></span> <br/> | <span data-ttu-id="18c79-143">接收电子邮件的日期。</span><span class="sxs-lookup"><span data-stu-id="18c79-143">The date an email was received.</span></span> <br/> |
+|<span data-ttu-id="18c79-144">**收件人**</span><span class="sxs-lookup"><span data-stu-id="18c79-144">**recipients**</span></span> <br/> | <span data-ttu-id="18c79-145">收件人的电子邮件，包括在收件人、 抄送或密件抄送字段。</span><span class="sxs-lookup"><span data-stu-id="18c79-145">Recipients of an email, included on the To, Cc, or Bcc fields.</span></span> <br/> |
+|<span data-ttu-id="18c79-146">**sender**</span><span class="sxs-lookup"><span data-stu-id="18c79-146">**sender**</span></span> <br/> | <span data-ttu-id="18c79-147">发件人的电子邮件。</span><span class="sxs-lookup"><span data-stu-id="18c79-147">The sender of an email.</span></span> <br/> |
+|<span data-ttu-id="18c79-148">**lastmodifieddate**</span><span class="sxs-lookup"><span data-stu-id="18c79-148">**lastmodifieddate**</span></span> <br/> | <span data-ttu-id="18c79-149">上次修改日期网站文档。</span><span class="sxs-lookup"><span data-stu-id="18c79-149">The last modified date of a site document.</span></span> <br/> |
+|<span data-ttu-id="18c79-150">**发送**</span><span class="sxs-lookup"><span data-stu-id="18c79-150">**sent**</span></span> <br/> | <span data-ttu-id="18c79-151">发送电子邮件的日期。</span><span class="sxs-lookup"><span data-stu-id="18c79-151">The sent date of an email.</span></span> <br/> |
+|<span data-ttu-id="18c79-152">**自**</span><span class="sxs-lookup"><span data-stu-id="18c79-152">**to**</span></span> <br/> | <span data-ttu-id="18c79-153">收件人的电子邮件收件人字段中列出。</span><span class="sxs-lookup"><span data-stu-id="18c79-153">The recipient listed in the To field of an email.</span></span> <br/> |
+|<span data-ttu-id="18c79-154">**作者**</span><span class="sxs-lookup"><span data-stu-id="18c79-154">**author**</span></span> <br/> | <span data-ttu-id="18c79-155">网站文档的作者。</span><span class="sxs-lookup"><span data-stu-id="18c79-155">The author of a site document.</span></span> <br/> |
+|<span data-ttu-id="18c79-156">**title**</span><span class="sxs-lookup"><span data-stu-id="18c79-156">**title**</span></span> <br/> | <span data-ttu-id="18c79-157">网站文档的标题。</span><span class="sxs-lookup"><span data-stu-id="18c79-157">The title of a site document.</span></span> <br/> |
+|<span data-ttu-id="18c79-158">**dominanttheme**\*</span><span class="sxs-lookup"><span data-stu-id="18c79-158">**dominanttheme**\*</span></span> <br/> | <span data-ttu-id="18c79-159">项目基准主题。</span><span class="sxs-lookup"><span data-stu-id="18c79-159">The dominant theme of an item.</span></span> <br/> |
+|<span data-ttu-id="18c79-160">**themeslist**\*</span><span class="sxs-lookup"><span data-stu-id="18c79-160">**themeslist**\*</span></span> <br/> | <span data-ttu-id="18c79-161">与项目相关联的主题。</span><span class="sxs-lookup"><span data-stu-id="18c79-161">Themes that are associated with an item.</span></span> <br/> |
+|<span data-ttu-id="18c79-162">**readpercentile_ [issuenum]**\*\*</span><span class="sxs-lookup"><span data-stu-id="18c79-162">**readpercentile_[issuenum]**\*\*</span></span> <br/> | <span data-ttu-id="18c79-163">由 [issuenum] 定义问题的项目，读取百分点值。</span><span class="sxs-lookup"><span data-stu-id="18c79-163">The read percentile of an item, for the issue defined by [issuenum].</span></span> <br/> |
+|<span data-ttu-id="18c79-164">**relevancescore_ [issuenum]**\*\*</span><span class="sxs-lookup"><span data-stu-id="18c79-164">**relevancescore_[issuenum]**\*\*</span></span> <br/> | <span data-ttu-id="18c79-165">由 [issuenum] 定义问题的项目相关性分数。</span><span class="sxs-lookup"><span data-stu-id="18c79-165">The relevance score of an item, for the issue defined by [issuenum].</span></span> <br/> |
+|<span data-ttu-id="18c79-166">**relevancetag_ [tagname]**\*\*</span><span class="sxs-lookup"><span data-stu-id="18c79-166">**relevancetag_[tagname]**\*\*</span></span> <br/> | <span data-ttu-id="18c79-167">如果项目具有已手动标记相关性，由 [tagname] 定义的标记。</span><span class="sxs-lookup"><span data-stu-id="18c79-167">If an item has been manually tagged for relevance, the tag defined by  [tagname].</span></span> <br/> |
+|||
 
-[<span data-ttu-id="efbb1-141">Office 365 高级电子数据展示</span><span class="sxs-lookup"><span data-stu-id="efbb1-141">Office 365 Advanced eDiscovery</span></span>](office-365-advanced-ediscovery.md)
+<span data-ttu-id="18c79-168">\*如果已运行主题模块仅可用。</span><span class="sxs-lookup"><span data-stu-id="18c79-168">\* Only available if the Themes module has been run.</span></span>
+
+<span data-ttu-id="18c79-169">\*\*如果已运行相关性模块仅可用。</span><span class="sxs-lookup"><span data-stu-id="18c79-169">\*\* Only available if the Relevance module has been run.</span></span>
+
+<span data-ttu-id="18c79-p106">或者，可以使用的条件卡片高级电子数据展示搜索工具中添加到搜索查询的条件 （针对所选属性）。下面的屏幕快照显示了可以添加到查询的条件。**组**列指示属性是否适用于电子邮件、 网站文档，或同时 （由*公共*的值）。此列同时也会指出后运行相关性模块提供的可搜索属性。</span><span class="sxs-lookup"><span data-stu-id="18c79-p106">Alternatively, you can use a condition card in the Advanced eDiscovery Search tool to add a condition (for selected properties) to a search query. The following screenshot shows the conditions that can be added to a query. The **Group** column indicates whether the property applies to email, site documents, or both (indicated by the value *Common*). This column also identifies the searchable properties that are available after you run the Relevance module.</span></span>
+
+![在高级电子数据展示搜索工具中的搜索条件](media/AeDSearchConditions.png)
+
+<span data-ttu-id="18c79-175">有关可搜索的属性的详细信息，请参阅[关键字查询和搜索条件](keyword-queries-and-search-conditions.md)。</span><span class="sxs-lookup"><span data-stu-id="18c79-175">For more information about searchable properties, see [Keyword queries and search conditions](keyword-queries-and-search-conditions.md).</span></span>
   
-[<span data-ttu-id="efbb1-142">了解评估中相关性</span><span class="sxs-lookup"><span data-stu-id="efbb1-142">Understanding Assessment in Relevance</span></span>](assessment-in-relevance-in-advanced-ediscovery.md)
+## <a name="see-also"></a><span data-ttu-id="18c79-176">另请参阅</span><span class="sxs-lookup"><span data-stu-id="18c79-176">See also</span></span>
+
+[<span data-ttu-id="18c79-177">Office 365 高级电子数据展示</span><span class="sxs-lookup"><span data-stu-id="18c79-177">Office 365 Advanced eDiscovery</span></span>](office-365-advanced-ediscovery.md)
   
-[<span data-ttu-id="efbb1-143">标签和评估</span><span class="sxs-lookup"><span data-stu-id="efbb1-143">Tagging and Assessment</span></span>](tagging-and-assessment-in-advanced-ediscovery.md)
+[<span data-ttu-id="18c79-178">了解评估中相关性</span><span class="sxs-lookup"><span data-stu-id="18c79-178">Understanding Assessment in Relevance</span></span>](assessment-in-relevance-in-advanced-ediscovery.md)
   
-[<span data-ttu-id="efbb1-144">标签和相关性培训</span><span class="sxs-lookup"><span data-stu-id="efbb1-144">Tagging and Relevance training</span></span>](tagging-and-relevance-training-in-advanced-ediscovery.md)
+[<span data-ttu-id="18c79-179">标签和评估</span><span class="sxs-lookup"><span data-stu-id="18c79-179">Tagging and Assessment</span></span>](tagging-and-assessment-in-advanced-ediscovery.md)
   
-[<span data-ttu-id="efbb1-145">跟踪相关性分析</span><span class="sxs-lookup"><span data-stu-id="efbb1-145">Tracking Relevance analysis</span></span>](track-relevance-analysis-in-advanced-ediscovery.md)
+[<span data-ttu-id="18c79-180">标签和相关性培训</span><span class="sxs-lookup"><span data-stu-id="18c79-180">Tagging and Relevance training</span></span>](tagging-and-relevance-training-in-advanced-ediscovery.md)
   
-[<span data-ttu-id="efbb1-146">决定基于结果</span><span class="sxs-lookup"><span data-stu-id="efbb1-146">Deciding based on the results</span></span>](decision-based-on-the-results-in-advanced-ediscovery.md)
+[<span data-ttu-id="18c79-181">跟踪相关性分析</span><span class="sxs-lookup"><span data-stu-id="18c79-181">Tracking Relevance analysis</span></span>](track-relevance-analysis-in-advanced-ediscovery.md)
   
-[<span data-ttu-id="efbb1-147">测试相关性分析</span><span class="sxs-lookup"><span data-stu-id="efbb1-147">Testing Relevance analysis</span></span>](test-relevance-analysis-in-advanced-ediscovery.md)
+[<span data-ttu-id="18c79-182">决定基于结果</span><span class="sxs-lookup"><span data-stu-id="18c79-182">Deciding based on the results</span></span>](decision-based-on-the-results-in-advanced-ediscovery.md)
+  
+[<span data-ttu-id="18c79-183">测试相关性分析</span><span class="sxs-lookup"><span data-stu-id="18c79-183">Testing Relevance analysis</span></span>](test-relevance-analysis-in-advanced-ediscovery.md)
 
