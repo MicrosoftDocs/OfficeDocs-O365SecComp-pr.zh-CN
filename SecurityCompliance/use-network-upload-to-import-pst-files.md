@@ -3,7 +3,7 @@ title: 使用网络上载到 Office 365 导入您的组织 PST 文件
 ms.author: markjjo
 author: markjjo
 manager: laurawi
-ms.date: 6/29/2018
+ms.date: ''
 ms.audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -15,12 +15,12 @@ search.appverid:
 - MET150
 ms.assetid: 103f940c-0468-4e1a-b527-cc8ad13a5ea6
 description: 管理员： 了解如何使用网络上载批量导入到 Office 365 中的用户邮箱的多个 PST 文件。
-ms.openlocfilehash: c5bcaed9075939d098ac4bf9fbf4d8a94007232c
-ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+ms.openlocfilehash: 81c799a8c820e9d9287f4792fe463d6a99b90e36
+ms.sourcegitcommit: 25f1028643d8a20d17306e8b09cafea46eaf7a58
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22525156"
+ms.lasthandoff: 01/31/2019
+ms.locfileid: "29666152"
 ---
 # <a name="use-network-upload-to-import-your-organization-pst-files-to-office-365"></a>使用网络上载到 Office 365 导入您的组织 PST 文件
 
@@ -81,17 +81,19 @@ ms.locfileid: "22525156"
     > [!TIP]
     > 若要确定邮件接收大小为邮箱中，您可以运行此命令在 Exchange Online PowerShell: `Get-Mailbox <user mailbox> | FL MaxReceiveSize`。 
 
-### <a name="step-1-copy-the-sas-url-and-install-azure-azcopy"></a>步骤 1： 复制 SAS URL 并安装 Azure AzCopy
+## <a name="step-1-copy-the-sas-url-and-install-azure-azcopy"></a>步骤 1： 复制 SAS URL 并安装 Azure AzCopy
 
 第一步是下载并安装 Azure AzCopy 工具，它是您将运行在步骤 2 到上载 PST 文件迁移到 Office 365 的工具。您还将为您的组织复制 SAS URL。此 URL 是 Microsoft 云的组织和共享访问签名 (SA) 键中的 Azure 存储位置的网络 URL 的组合。此项为您提供所需的权限将 PST 文件上载到 Azure 存储位置。请确保采取预防措施来保护 SAS URL。它是唯一的组织，并将在步骤 2 中使用。
-  
- **重要：** 我们建议您使用 Azure AzCopy 版本 7.1.0 使用网络导入 PST 文件上载方法。在下面的过程的步骤 6b 中下载版本 7.1.0。 
+
+> [!IMPORTANT]
+> 若要导入 PST 文件使用网络上载方法中，我们建议使用以下过程中的步骤 6b 可以下载的 Azure AzCopy 的版本。
   
 1. 转到[https://protection.office.com](https://protection.office.com)和使用 Office 365 组织中的管理员帐户凭据登录。 
     
 2. 在左侧窗格中的安全&amp;合规性中心，单击**数据调控** \> **导入**。
     
-    **注意：** 您需要分配适当的权限访问安全中的**导入**页上&amp;合规性中心。请参阅**开始之前**部分中的详细信息。 
+    > [!NOTE]
+    > 您需要分配适当的权限访问安全中的**导入**页上&amp;合规性中心。请参阅**开始之前**部分中的详细信息。 
     
 3. 在**导入**页上单击![添加图标](media/ITPro-EAC-AddIcon.gif)**新建导入作业**。
     
@@ -109,9 +111,10 @@ ms.locfileid: "22525156"
   
     答： 在步骤 2 中，单击**显示网络上载 SAS URL**。显示 SAS URL 后，单击**复制到剪贴板**然后将其粘贴并将其保存到文件，以便您可以更高版本访问它。
     
-    b.在步骤 3 中，单击**下载 Azure AzCopy**下载和安装 Azure AzCopy 工具。如上文所述，将下载版本 7.1.0。在弹出窗口中，单击**运行**以安装 AzCopy。 
+    b.在步骤 3 中，单击**下载 Azure AzCopy**下载和安装 Azure AzCopy 工具。在弹出窗口中，单击**运行**以安装 AzCopy。 
     
-  **注意：** 您可以**导入数据**页将保持打开状态 （以防您需要再次复制 SAS URL），或单击**取消**以关闭它。 
+> [!NOTE]
+> 您可以**导入数据**页将保持打开状态 （以防您需要再次复制 SAS URL），或单击**取消**以关闭它。 
  
 ## <a name="step-2-upload-your-pst-files-to-office-365"></a>步骤 2： 将 PST 文件上载到 Office 365
 
@@ -146,8 +149,9 @@ ms.locfileid: "22525156"
 ```
 
 运行该命令后，显示的状态消息会显示对 PST 文件进行上载的进度。最终状态消息显示已成功上载的文件总数。 
-    
-**提示：** 在成功运行 AzCopy.exe 命令并确认所有参数都正确无误后，保存一份同一个复制信息的位置 （安全） 文件的命令行语法获取在步骤 1 中。然后可以复制并粘贴在命令提示符下每次您想要运行 AzCopy.exe 工具以将 PST 文件上载到 Office 365 的此命令。您可能需要更改的唯一值是为`/Source:`参数。这取决于源目录 PST 文件的位置。 
+
+> [!TIP]
+> 在成功运行 AzCopy.exe 命令并确认所有参数都正确无误后，保存一份同一个复制信息的位置 （安全） 文件的命令行语法获取在步骤 1 中。然后可以复制并粘贴在命令提示符下每次您想要运行 AzCopy.exe 工具以将 PST 文件上载到 Office 365 的此命令。您可能需要更改的唯一值是为`/Source:`参数。这取决于源目录 PST 文件的位置。
 
 ## <a name="optional-step-3-view-a-list-of-the-pst-files-uploaded-to-office-365"></a>（可选）步骤 3： 查看列表的 PST 文件上载到 Office 365
 
@@ -159,7 +163,8 @@ ms.locfileid: "22525156"
     
 Microsoft Azure 存储 Explorer 正处于预览。
   
- **重要：** 不能使用 Azure 存储资源管理器上载或修改 PST 文件。将 PST 文件导入到 Office 365 唯一受支持的方法是使用 AzCopy。此外，您不能删除已上载到 Azure blob 的 PST 文件。如果尝试删除 PST 文件，您会收到了有关未获得所需的权限的错误。请注意自动从您 Azure 存储区删除所有 PST 文件。如果没有导入作业正在运行，则所有 PST 文件中的 * * ingestiondata * * 容器被删除 30 天后创建的最新的导入作业。 
+> [!IMPORTANT]
+> 不能使用 Azure 存储资源管理器上载或修改 PST 文件。将 PST 文件导入到 Office 365 唯一受支持的方法是使用 AzCopy。此外，您不能删除已上载到 Azure blob 的 PST 文件。如果尝试删除 PST 文件，您会收到了有关未获得所需的权限的错误。请注意自动从您 Azure 存储区删除所有 PST 文件。如果有任何导入作业正在进行，然后中的所有 PST 文件**ingestiondata**容器中将不删除 30 天后创建的最新的导入作业。
   
 安装 Azure 存储浏览器并连接到 Azure 存储区：
   
@@ -283,7 +288,7 @@ PST 文件已上载到 Office 365 组织的 Azure 存储位置后下, 一步是�
     
     ![您可以修整 PST 文件中的数据或导入的所有](media/287fc030-99e9-417b-ace7-f64617ea5d4e.png)
   
-3. 执行以下操作之一：
+3. 执行下列操作之一：
     
     答： 来裁切导入的数据，请单击**是，我希望筛选其之前导入**。
     
@@ -319,7 +324,7 @@ PST 文件已上载到 Office 365 组织的 Azure 存储位置后下, 一步是�
     
 6. **启动 PST 导入作业**-启动导入作业后，Office 365 使用的信息在 PST 导入映射文件从他 Azure 的存储位置的 Pst 文件导入到用户邮箱。有关 （包括有关正在导入每个 PST 文件） 导入作业的状态信息显示在安全中的**导入**页上&amp;合规性中心。完成导入作业后，此作业的状态设置为**完成**。
   
-## <a name="more-information"></a>详细信息
+## <a name="more-information"></a>更多信息
 
 - 为什么到 Office 365 导入 PST 文件？
     
@@ -361,11 +366,11 @@ PST 文件已上载到 Office 365 组织的 Azure 存储位置后下, 一步是�
     AzCopy.exe /Source:"\\FILESERVER1\PSTs" /Dest:"https://3c3e5952a2764023ad14984.blob.core.windows.net/ingestiondata/PSTFiles?sv=2012-02-12&amp;se=9999-12-31T23%3A59%3A59Z&amp;sr=c&amp;si=IngestionSasForAzCopy201601121920498117&amp;sig=Vt5S4hVzlzMcBkuH8bH711atBffdrOS72TlV1mNdORg%3D" /V:"c:\Users\Admin\Desktop\AzCopy1.log" /Y
 ``
 
-- As previously explained, the Office 365 Import service turns on the retention hold setting (for an indefinite duration) after PST files are imported to a mailbox. This means the  *RetentionHoldEnabled*  property is set to  `True` so that the retention policy assigned to the mailbox won't be processed. This gives the mailbox owner time to manage the newly-imported messages by preventing a deletion or archive policy from deleting or archiving older messages. Here are some steps you can take to manage this retention hold: 
+- As previously explained, the Office 365 Import service turns on the retention hold setting (for an indefinite duration) after PST files are imported to a mailbox. This means the  *RetentionHoldEnabled*  property is set to  **True** so that the retention policy assigned to the mailbox won't be processed. This gives the mailbox owner time to manage the newly-imported messages by preventing a deletion or archive policy from deleting or archiving older messages. Here are some steps you can take to manage this retention hold: 
     
-    - After a certain period of time, you can turn off the retention hold by running the  `Set-Mailbox -RetentionHoldEnabled $false` command. For instructions, see [Place a mailbox on retention hold](https://go.microsoft.com/fwlink/p/?LinkId=544749).
+    - After a certain period of time, you can turn off the retention hold by running the **Set-Mailbox -RetentionHoldEnabled $false** command. For instructions, see [Place a mailbox on retention hold](https://go.microsoft.com/fwlink/p/?LinkId=544749).
     
-   - You can configure the retention hold so that it's turned off on some date in the future. You do this by running the  `Set-Mailbox -EndDateForRetentionHold <date>` command. For example, assuming that today's date is July 1, 2016 and you want the retention hold turned off in 30 days, you would run the following command:  `Set-Mailbox -EndDateForRetentionHold 8/1/2016`. In this scenario, you would leave the  *RetentionHoldEnabled*  property set to  *True*  . For more information, see [Set-Mailbox](https://go.microsoft.com/fwlink/p/?LinkId=150317).
+   - You can configure the retention hold so that it's turned off on some date in the future. You do this by running the **Set-Mailbox -EndDateForRetentionHold *date*** command. For example, assuming that today's date is July 1, 2016 and you want the retention hold turned off in 30 days, you would run the following command:  **Set-Mailbox -EndDateForRetentionHold 8/1/2016**. In this scenario, you would leave the  **RetentionHoldEnabled**  property set to  *True*. For more information, see [Set-Mailbox](https://go.microsoft.com/fwlink/p/?LinkId=150317).
     
    - You can change the settings for the retention policy that's assigned to the mailbox so that older items that were imported won't be immediately deleted or moved to the user's archive mailbox. For example, you could lengthen the retention age for a deletion or archive policy that's assigned to the mailbox. In this scenario, you would turn off the retention hold on the mailbox after you changed the settings of the retention policy. For more information, see [Set up an archive and deletion policy for mailboxes in your Office 365 organization](set-up-an-archive-and-deletion-policy-for-mailboxes.md).
     
