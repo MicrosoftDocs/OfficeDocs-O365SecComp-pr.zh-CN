@@ -1,0 +1,74 @@
+---
+title: Office 365 邮件加密版本比较
+ms.author: krowley
+author: kccross
+manager: laurawi
+ms.audience: Admin
+ms.topic: conceptual
+ms.service: o365-administration
+localization_priority: Normal
+search.appverid:
+- MET150
+description: 可以帮助您理解的两个继续为协同工作的方式与不同版本的 Office 365 邮件加密以及传递的功能差异。
+ms.openlocfilehash: a418d840c7e0eb50ae076bf2b03164bef9488058
+ms.sourcegitcommit: 88f3982217c29b558e3f9e838bcb425da395dd5e
+ms.translationtype: MT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 02/02/2019
+ms.locfileid: "29708539"
+---
+# <a name="compare-versions-of-ome"></a><span data-ttu-id="15db0-103">比较 OME 的版本</span><span class="sxs-lookup"><span data-stu-id="15db0-103">Compare versions of OME</span></span>
+
+<span data-ttu-id="15db0-p101">本文比较旧 Office 365 邮件加密的新 OME 功能。新的功能是合并和较新版本的 OME 和信息权限管理 (IRM)。我们还将介绍如何两个可以共存于您的 Office 365 组织。</span><span class="sxs-lookup"><span data-stu-id="15db0-p101">This article compares legacy Office 365 Message Encryption to the new OME capabilities. The new capabilities are a merger and newer version of both the OME and Information Rights Management (IRM). We'll also cover how the two can coexist in your Office 365 organization.</span></span>
+
+||
+|:-----|
+|<span data-ttu-id="15db0-p102">本文是系列的有关 Office 365 邮件加密的文章的较大一部分。本文旨在为管理员和 ITPros。如果您只查找有关的信息发送或接收加密的邮件， [Office 365 邮件加密 (OME)](ome.md)中的文章的列表，请参阅并找到最适合您的需求的文章。</span><span class="sxs-lookup"><span data-stu-id="15db0-p102">This article is part of a larger series of articles about Office 365 Message Encryption. This article is intended for administrators and ITPros. If you're just looking for information on sending or receiving an encrypted message, see the list of articles in [Office 365 Message Encryption (OME)](ome.md) and locate the article that best fits your needs.</span></span> |
+||
+
+## <a name="side-by-side-comparison-of-features-and-capabilities"></a><span data-ttu-id="15db0-110">特性和功能的并行比较</span><span class="sxs-lookup"><span data-stu-id="15db0-110">Side-by-side comparison of features and capabilities</span></span>
+
+|                                   |<span data-ttu-id="15db0-111">旧功能</span><span class="sxs-lookup"><span data-stu-id="15db0-111">Old features</span></span>       |                   |<span data-ttu-id="15db0-112">新增功能</span><span class="sxs-lookup"><span data-stu-id="15db0-112">New features</span></span>              |
+|-----------------------------------|-------------------|-------------------|--------------------------|
+|<span data-ttu-id="15db0-113">**功能**</span><span class="sxs-lookup"><span data-stu-id="15db0-113">**Capability**</span></span>                     | <span data-ttu-id="15db0-114">**旧 OME**</span><span class="sxs-lookup"><span data-stu-id="15db0-114">**Legacy OME**</span></span>    | <span data-ttu-id="15db0-115">**IRM**</span><span class="sxs-lookup"><span data-stu-id="15db0-115">**IRM**</span></span>           | <span data-ttu-id="15db0-116">**OME 的新功能**</span><span class="sxs-lookup"><span data-stu-id="15db0-116">**New OME capabilities**</span></span> |
+|<span data-ttu-id="15db0-117">*发送加密的邮件*</span><span class="sxs-lookup"><span data-stu-id="15db0-117">*Sending an encrypted mail*</span></span>        |<span data-ttu-id="15db0-118">通过 Exchange 邮件流规则</span><span class="sxs-lookup"><span data-stu-id="15db0-118">Through Exchange mail flow rules</span></span>|<span data-ttu-id="15db0-119">最终用户从 Outlook 桌面或 Outlook Web; 上启动或通过 Exchange 邮件流规则</span><span class="sxs-lookup"><span data-stu-id="15db0-119">End-user initiated from Outlook desktop or Outlook on the Web; or through Exchange mail flow rules</span></span>|<span data-ttu-id="15db0-120">最终用户从 Outlook 桌面、 for Mac、 Outlook 或 Outlook Web; 上启动通过 Exchange 传输规则和 Office 365 数据丢失防护 (DLP)</span><span class="sxs-lookup"><span data-stu-id="15db0-120">End-user initiated from Outlook desktop, Outlook for Mac, or Outlook on the Web; through Exchange Transport Rules and Office 365 Data Loss Prevention (DLP)</span></span>|
+|<span data-ttu-id="15db0-121">*权限管理模板*</span><span class="sxs-lookup"><span data-stu-id="15db0-121">*Rights management template*</span></span>       |   <span data-ttu-id="15db0-122">不适用</span><span class="sxs-lookup"><span data-stu-id="15db0-122">N/A</span></span>      |<span data-ttu-id="15db0-123">不转接选项和自定义模板</span><span class="sxs-lookup"><span data-stu-id="15db0-123">Do Not Forward option and custom templates</span></span>|<span data-ttu-id="15db0-124">执行不转接选项，仅加密选项和自定义模板</span><span class="sxs-lookup"><span data-stu-id="15db0-124">Do Not Forward option, Encrypt-Only option, and custom templates</span></span>|
+|<span data-ttu-id="15db0-125">*收件人类型*</span><span class="sxs-lookup"><span data-stu-id="15db0-125">*Recipient type*</span></span>                   |<span data-ttu-id="15db0-126">内部和外部收件人</span><span class="sxs-lookup"><span data-stu-id="15db0-126">Internal and external recipients</span></span>|<span data-ttu-id="15db0-127">仅内部收件人</span><span class="sxs-lookup"><span data-stu-id="15db0-127">Internal recipients only</span></span>         |<span data-ttu-id="15db0-128">内部和外部收件人</span><span class="sxs-lookup"><span data-stu-id="15db0-128">Internal and external recipients</span></span>|
+|<span data-ttu-id="15db0-129">*内部收件人的体验*</span><span class="sxs-lookup"><span data-stu-id="15db0-129">*Experience for internal recipient*</span></span>|<span data-ttu-id="15db0-130">收件人收到 HTML 邮件，其中他们下载并在 web 浏览器或移动应用程序中打开</span><span class="sxs-lookup"><span data-stu-id="15db0-130">Recipients receive an HTML message, which they download and open in a web browser or mobile app</span></span>|<span data-ttu-id="15db0-131">Outlook 客户端中的本机内嵌体验</span><span class="sxs-lookup"><span data-stu-id="15db0-131">Native inline experience in Outlook clients</span></span>|<span data-ttu-id="15db0-p103">Office 365 收件人的本机内嵌体验。所有其他收件人可以阅读邮件从 OME 门户 （任何下载或所需的应用程序）。</span><span class="sxs-lookup"><span data-stu-id="15db0-p103">Native inline experience for Office 365 recipients. All other recipients can read message from OME portal (no download or app required).</span></span>|
+|<span data-ttu-id="15db0-134">*外部收件人的体验*</span><span class="sxs-lookup"><span data-stu-id="15db0-134">*Experience for external recipient*</span></span>|<span data-ttu-id="15db0-135">收件人收到 HTML 邮件，其中他们下载并在 web 浏览器或移动应用程序中打开</span><span class="sxs-lookup"><span data-stu-id="15db0-135">Recipients receive an HTML message, which they download and open in a web browser or mobile app</span></span>|<span data-ttu-id="15db0-136">不适用</span><span class="sxs-lookup"><span data-stu-id="15db0-136">N/A</span></span>|<span data-ttu-id="15db0-p104">Office 365 收件人的本机内嵌体验。所有其他收件人可以阅读邮件从 OME 门户 （任何下载或所需的应用程序）。</span><span class="sxs-lookup"><span data-stu-id="15db0-p104">Native inline experience for Office 365 recipients. All other recipients can read message from OME portal (no download or app required).</span></span>|
+|<span data-ttu-id="15db0-139">*附件权限*</span><span class="sxs-lookup"><span data-stu-id="15db0-139">*Attachment permissions*</span></span>           |<span data-ttu-id="15db0-140">附件没有限制</span><span class="sxs-lookup"><span data-stu-id="15db0-140">No restrictions on attachments</span></span>|<span data-ttu-id="15db0-141">受保护附件</span><span class="sxs-lookup"><span data-stu-id="15db0-141">Attachments are protected</span></span>|<span data-ttu-id="15db0-p105">不要转发选项和自定义模板的受保护附件。管理员可以选择是否或不受保护附件仅加密选项。</span><span class="sxs-lookup"><span data-stu-id="15db0-p105">Attachments are protected for the Do Not Forward option and custom templates. Admins can choose whether attachments for the Encrypt-Only option are protected or not.</span></span>|
+|<span data-ttu-id="15db0-144">*使您自己的密钥 (BYOK) 支持*</span><span class="sxs-lookup"><span data-stu-id="15db0-144">*Bring your own key (BYOK) support*</span></span>|<span data-ttu-id="15db0-145">无</span><span class="sxs-lookup"><span data-stu-id="15db0-145">None</span></span>                |<span data-ttu-id="15db0-146">无</span><span class="sxs-lookup"><span data-stu-id="15db0-146">None</span></span>               |<span data-ttu-id="15db0-147">BYOK 支持</span><span class="sxs-lookup"><span data-stu-id="15db0-147">BYOK supported</span></span>          |
+||
+
+## <a name="advantages-of-using-the-new-ome-capabilities-over-legacy-ome"></a><span data-ttu-id="15db0-148">通过旧 OME 使用的新功能，OME 的优点</span><span class="sxs-lookup"><span data-stu-id="15db0-148">Advantages of using the new OME capabilities over legacy OME</span></span>
+
+<span data-ttu-id="15db0-149">新功能提供以下优点：</span><span class="sxs-lookup"><span data-stu-id="15db0-149">The new capabilities provide the following advantages:</span></span>
+
+- <span data-ttu-id="15db0-150">能够使用加密仅 （使安全协作），不要转发，以及自定义的限制。</span><span class="sxs-lookup"><span data-stu-id="15db0-150">Ability to use Encrypt-Only (which enables secure collaboration), Do Not Forward, as well as custom restrictions.</span></span>
+- <span data-ttu-id="15db0-151">发件人可以发送的新功能，从 Outlook 桌面、 Outlook for Mac 和 web 客户端上的 Outlook 中手动使用加密的邮件。</span><span class="sxs-lookup"><span data-stu-id="15db0-151">Senders can send mail encrypted with the new capabilities manually from Outlook Desktop, Outlook for Mac and Outlook on the web clients.</span></span>
+- <span data-ttu-id="15db0-p106">Office 365 收件人获取中支持的 Outlook 客户端使用内联体验。此外，管理员可以选择要显示的品牌的体验的 Office 365 收件人。</span><span class="sxs-lookup"><span data-stu-id="15db0-p106">Office 365 recipients get to use an inline experience in supported Outlook clients. Alternatively, admins can choose to show Office 365 recipients a branded experience.</span></span>
+- <span data-ttu-id="15db0-p107">与 OME 门户中，为这些收件人提供更好的用户体验联盟 Gmail、 Yahoo 和 Microsoft 帐户，例如 Office 365 以外的帐户。所有其他标识使用一次性密码来访问加密的邮件。</span><span class="sxs-lookup"><span data-stu-id="15db0-p107">Accounts outside of Office 365, such as Gmail, Yahoo, and Microsoft accounts, are federated with the OME portal, which provides a better user experience for these recipients. All other identities use a one-time pass code to access encrypted messages.</span></span>
+- <span data-ttu-id="15db0-156">管理员可以自定义品牌和创建多个品牌模板。</span><span class="sxs-lookup"><span data-stu-id="15db0-156">Admins can customize branding, and create multiple branding templates.</span></span>
+- <span data-ttu-id="15db0-157">管理员可以取消的新功能，通过加密的电子邮件。</span><span class="sxs-lookup"><span data-stu-id="15db0-157">Admins can revoke emails encrypted with the new capabilities.</span></span>
+- <span data-ttu-id="15db0-158">新功能提供通过安全性的详细的使用率报告&amp;合规性中心。</span><span class="sxs-lookup"><span data-stu-id="15db0-158">The new capabilities provide detailed usage reports through the Security &amp; Compliance Center.</span></span>
+
+## <a name="coexistence-of-legacy-ome-and-the-new-capabilities-in-the-same-tenant"></a><span data-ttu-id="15db0-159">旧 OME 和同一租户中的新功能共存</span><span class="sxs-lookup"><span data-stu-id="15db0-159">Coexistence of legacy OME and the new capabilities in the same tenant</span></span>
+
+<span data-ttu-id="15db0-p108">可以在同一租户中使用旧 OME 和新功能。作为管理员，您选择哪个版本的 OME 您想要使用创建您的邮件流规则时执行此操作。</span><span class="sxs-lookup"><span data-stu-id="15db0-p108">You can use both legacy OME and the new capabilities in the same tenant. As an administrator, you do this by choosing which version of OME you want to use when you create your mail flow rules.</span></span>
+
+- <span data-ttu-id="15db0-162">若要指定 OME 的旧版本，请使用 Exchange 邮件流规则操作"应用 OME 的早期版本"。</span><span class="sxs-lookup"><span data-stu-id="15db0-162">To specify the legacy version of OME, use the Exchange mail flow rule action “Apply the previous version of OME”.</span></span>
+- <span data-ttu-id="15db0-163">若要指定的新功能，请使用 Exchange 邮件流规则操作"应用 Office 365 邮件加密和权限保护"。</span><span class="sxs-lookup"><span data-stu-id="15db0-163">To specify the new capabilities, use the Exchange mail flow rule action “Apply Office 365 Message Encryption and rights protection”.</span></span>
+
+<span data-ttu-id="15db0-164">用户还可以发送的新功能，从 Outlook 桌面、 Outlook for Mac 和 web 客户端上的 Outlook 中手动使用加密的邮件。</span><span class="sxs-lookup"><span data-stu-id="15db0-164">Users can also send mail encrypted with the new capabilities manually from Outlook Desktop, Outlook for Mac and Outlook on the web clients.</span></span>
+
+## <a name="migrating-from-legacy-ome-to-the-new-capabilities"></a><span data-ttu-id="15db0-165">从旧 OME 迁移到新功能</span><span class="sxs-lookup"><span data-stu-id="15db0-165">Migrating from legacy OME to the new capabilities</span></span>
+
+<span data-ttu-id="15db0-p109">即使 OME 的两个版本可以共存，我们强烈建议您编辑您使用的规则操作的旧邮件流规则"应用 OME 的早期版本"使用指定的邮件流规则操作"应用 Office 365 邮件加密的新功能和权限保护"。有关说明，请参阅[定义邮件流规则来加密 Office 365 中的电子邮件](define-mail-flow-rules-to-encrypt-email.md)。</span><span class="sxs-lookup"><span data-stu-id="15db0-p109">Even though both versions of OME can co-exist, we highly recommend that you edit your old mail flow rules that use the rule action "Apply the previous version of OME" to use the new capabilities by specifying the mail flow rule action “Apply Office 365 Message Encryption and rights protection”. For instructions, see [Define mail flow rules to encrypt email messages in Office 365](define-mail-flow-rules-to-encrypt-email.md).</span></span>
+
+## <a name="getting-started-with-ome"></a><span data-ttu-id="15db0-168">入门 OME</span><span class="sxs-lookup"><span data-stu-id="15db0-168">Getting started with OME</span></span>
+
+<span data-ttu-id="15db0-p110">通常情况下，为您的 Office 365 组织自动启用新的 OME 功能。如果您已准备好开始使用您的组织中的新 OME 功能，请参阅[设置新的 Office 365 邮件加密功能](set-up-new-message-encryption-capabilities.md)。</span><span class="sxs-lookup"><span data-stu-id="15db0-p110">Typically, the new OME capabilities are automatically enabled for your Office 365 organization. If you're ready to get started using the new OME capabilities within your organization, see [Set up new Office 365 Message Encryption capabilities](set-up-new-message-encryption-capabilities.md).</span></span>
+
+<span data-ttu-id="15db0-p111">如果启用了 Azure 信息保护，会自动为您的 Office 365 组织启用 OME 的旧版本。过去，旧 OME 有效即使 Azure 信息保护未启用。不再是这样。</span><span class="sxs-lookup"><span data-stu-id="15db0-p111">The legacy version of OME is automatically enabled for your Office 365 organization if you have enabled Azure Information Protection. In the past, legacy OME worked even if Azure Information Protection wasn’t enabled. This is no longer the case.</span></span>
+
+<span data-ttu-id="15db0-p112">要开始使用旧 OME，如果已启用 Azure 信息保护，您需要执行所有，可以配置邮件流规则，使用"应用 OME 的早期版本"的规则操作。有关说明，请参阅[定义邮件流规则来加密 Office 365 中的电子邮件](define-mail-flow-rules-to-encrypt-email.md)。</span><span class="sxs-lookup"><span data-stu-id="15db0-p112">To start using legacy OME, if you have enabled Azure Information Protection, all you need to do is configure mail flow rules that use the rule action “Apply the previous version of OME”. For instructions, see [Define mail flow rules to encrypt email messages in Office 365](define-mail-flow-rules-to-encrypt-email.md).</span></span>
