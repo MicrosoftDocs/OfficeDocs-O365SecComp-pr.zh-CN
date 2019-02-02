@@ -14,14 +14,14 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: 457ee5ae019091275621cd29d66313852dff5425
-ms.sourcegitcommit: ee28ee2b2bdfd049333c2f495d7f7780d13af4a6
+ms.openlocfilehash: 65dce586f95d04294f51f16d361bfc659d6ab23b
+ms.sourcegitcommit: e3ea6eb9fab1a66b499458749838fe350d43d0d4
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "29607487"
+ms.lasthandoff: 02/01/2019
+ms.locfileid: "29694808"
 ---
-# <a name="fixing-processing-errors-in-advanced-ediscovery-preview"></a>高级电子数据展示 (Preview) 中修复处理错误
+# <a name="fix-processing-errors-in-advanced-ediscovery-preview"></a>高级电子数据展示 (Preview) 中修复处理错误
 
 处理是文件标识的过程、 扩展的嵌入的文档和附件，文本提取、 OCR （光学字符识别） 的图像文件和对该内容编制索引。 当管理员将置于保持状态时，从 Office 365 的所有部分索引的项目处理进行完全可搜索。 同样，从 Office 365 数据源或非 Office 365 数据源内容添加到工作集时, 还处理内容。
 

@@ -14,14 +14,14 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: 39ec0323b122bcfdf57234bfc14003e8525d9abd
-ms.sourcegitcommit: ee28ee2b2bdfd049333c2f495d7f7780d13af4a6
+ms.openlocfilehash: 493d1b6ec448f3de9b782028b903c7b290681e88
+ms.sourcegitcommit: e3ea6eb9fab1a66b499458749838fe350d43d0d4
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "29607421"
+ms.lasthandoff: 02/01/2019
+ms.locfileid: "29694798"
 ---
-# <a name="managing-jobs-in-advanced-ediscovery-preview"></a>管理高级电子数据展示 (Preview) 中的作业
+# <a name="manage-jobs-in-advanced-ediscovery-preview"></a>管理高级电子数据展示 (Preview) 中的作业
 
 下面是高级电子数据展示 (Preview) 中用例的**作业**选项卡跟踪作业的列表。
 
