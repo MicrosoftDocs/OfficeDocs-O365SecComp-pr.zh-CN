@@ -131,6 +131,7 @@
 ### [设置 Office 365 企业版中的加密](set-up-encryption.md)
 ### [Office 365 中的电子邮件加密](email-encryption.md)
 ### [Office 365 邮件加密 (OME)](ome.md)
+#### [比较 OME 的版本](ome-version-comparison.md)
 #### [设置全新的 Office 365 邮件加密功能](set-up-new-message-encryption-capabilities.md)
 #### [定义用于加密 Office 365 中的电子邮件的邮件流规则](define-mail-flow-rules-to-encrypt-email.md)
 #### [管理 Office 365 邮件加密](manage-office-365-message-encryption.md)
@@ -274,11 +275,11 @@
 #### [编辑保留通知](compliance20/edit-hold-notification.md)
 #### [确认保留通知](compliance20/acknowledge-hold-notification.md)
 
-### [管理保留项](compliance20/managing-holds.md)
+### [管理保留](compliance20/managing-holds.md)
 
 ### [解决处理错误](compliance20/processing-data-for-case.md)
 #### [保管人数据的高级索引](compliance20/indexing-custodian-data.md)
-#### [修正处理错误时出现的错误](compliance20/error-remediation.md)
+#### [修正处理数据时出现的错误](compliance20/error-remediation.md)
 
 ### [收集事例数据](compliance20/collecting-data-for-ediscovery.md)
 #### [创建搜索项来收集数据](compliance20/create-search-to-collect-data.md)
@@ -286,7 +287,7 @@
 #### [搜索统计信息](compliance20/search-statistics.md)
 #### [将搜索结果添加到工作集](compliance20/add-data-to-working-set.md)
 
-### [查看事例数据](compliance20/reviewing-data-in-working-set.md)
+### [审阅事例数据](compliance20/reviewing-data-in-working-set.md)
 #### [管理工作集](compliance20/managing-working-sets.md)
 #### [管理负载集](compliance20/manage-load-sets.md)
 #### [将非 Office 365 数据加载到工作集](compliance20/load-non-office365-data.md)
