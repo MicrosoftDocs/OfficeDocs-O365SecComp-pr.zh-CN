@@ -13,18 +13,20 @@ search.appverid:
 - MET150
 ms.assetid: 429e686f-d8a6-455e-a2b6-3791d763f000
 description: Microsoft 服务信任门户中的合规性管理器提供用于跟踪、实现和管理控制措施的工具，以确保在衡量依据为 Microsoft 云服务（如 Office 365 和 Microsoft Azure）时，组织符合安全和数据保护行业标准（如 GDPR、ISO 27001、27018 和 HIPAA）。使用合规性管理器，负责监督组织数据保护和隐私策略的人员可管理合规性和风险评估流程。
-ms.openlocfilehash: a8d26db2a28d5b022f20408caf418b23edd98167
-ms.sourcegitcommit: 6669b7aae26965145e85d9613d3091bf389f000b
+ms.openlocfilehash: 6f423ba29540bdc498c2725b9741dece2557e4be
+ms.sourcegitcommit: 25f1028643d8a20d17306e8b09cafea46eaf7a58
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/19/2018
-ms.locfileid: "26618928"
+ms.lasthandoff: 01/31/2019
+ms.locfileid: "29666172"
 ---
 # <a name="use-compliance-manager-to-help-meet-data-protection-and-regulatory-requirements-when-using-microsoft-cloud-services"></a>合规性管理器有助于在使用 Microsoft 云服务时符合数据保护和法规要求
 
  *由世纪互联运营的 Office 365、Office 365 Germany、Office 365 U.S. Government Community High (GCC High) 或 Office 365 Department of Defense 不提供合规性管理器。* 
   
-合规性管理器是 Microsoft [服务信任门户](https://support.office.com/article/f30e2353-0bd6-41ed-8347-eea1fb8d2662)中基于工作流的风险评估工具，以便于跟踪、分配和验证组织的合规性活动，这些活动与 Microsoft 专业服务和 Microsoft 云服务（如 Microsoft Office 365、Microsoft Dynamics 365 和 Microsoft Azure）相关。合规性管理器：
+合规性管理器是 Microsoft [服务信任门户](https://support.office.com/article/f30e2353-0bd6-41ed-8347-eea1fb8d2662)中基于工作流的风险评估工具，可跟踪、分配和验证组织的合规性活动，这些活动与 Microsoft 专业服务和 Microsoft 云服务（如 Microsoft Office 365、Microsoft Dynamics 365 和 Microsoft Azure）相关。 
+
+合规性管理器：
   
 - 结合使用在根据各种标准（例如，ISO 27001、ISO 27018 和 NIST）对 Microsoft 云服务执行的各种第三方审计过程中 Microsoft 提供给审计和监管人员的详细信息，，以及 Microsoft 为遵守法规（如 HIPAA 和欧盟一般数据保护条例 (GDPR)）在内部汇编的信息，与你自己对组织遵守这些标准和法规情况的自我评估。
     
@@ -35,36 +37,17 @@ ms.locfileid: "26618928"
 - 提供安全存储库，用于上传和管理与合规性活动相关的证据及其他项目。
     
 - 生成丰富详细的 Microsoft Excel 报告，记录 Microsoft 和组织执行的合规性活动，以提供给审计、监管人员和其他合规性利益干系人。
+
+有关合规性管理器的简短演示，请参阅此[合规性管理器](https://www.youtube.com/watch?v=r1vs8NdSXKQ)视频。
+
     
 > [!IMPORTANT]
 > 作为仪表板，合规性管理器汇总了数据保护和合规性状态，以及数据保护和合规性改进建议。合规性管理器中的“客户行动”就是建议；在实现前于各自监管环境中评估这些建议的有效性，完全取决于各个组织。不得将合规性管理器中的建议解读为合规性保证。
+
     
 ## <a name="what-is-compliance-manager"></a>什么是合规性管理器？
 
 合规性管理器是基于工作流的风险评估工具，旨在帮助管理云共同责任模型中的合规性。合规性管理器提供了仪表板视图，汇总了标准、法规和评估，其中包含 Microsoft 的控制措施实现详情和测试结果，以及供组织入门的客户控制措施实现指导和跟踪。合规性管理器提供了认证评估控制措施定义、控制措施实现和测试指导、控制措施风险加权评分、基于角色的访问管理和就地控制措施行动分配工作流，以便跟踪控制措施实现、测试状态和证据管理。合规性管理器可便于客户按逻辑对评估进行分组，并将评估控制措施测试应用于完全相同或相关的控制措施，同时减少了符合不同认证的完全相同控制措施要求所需的重复工作，从而优化了合规性工作负载。
-  
-## <a name="using-search"></a>使用搜索
-
-![服务信任门户 -“搜索”输入字段](media/7c5cd817-3d62-420b-adb4-76e33fef941f.png)
-  
-单击页面右上角的放大镜以展开“搜索”输入字段，输入搜索词并按 Enter。此时，“搜索”控件显示，其中搜索窗格输入字段中显示搜索词，下方显示搜索结果。
-  
-默认情况下，“搜索”返回“文档”结果，你可以使用“筛选依据”下拉列表来精简所显示的文档列表，或从视图中添加或删除搜索结果。可同时使用多个筛选器特性，将返回的文档范围缩小到特定的云服务、合规性或安全做法类别、世界区域或行业。单击文档名称链接可下载文档。
-  
-![服务信任门户 - 搜索文档（应用了筛选器）](media/86b754e1-c63c-4514-89ac-d014bf334140.png)
-  
-单击“合规性管理器”链接，可显示合规性管理器评估控制措施的搜索结果。列出的搜索结果显示评估创建日期、评估分组名称、适用云服务，以及控制措施是 Microsoft 管理还是客户管理的控制措施。
-  
-![服务信任门户 - 搜索合规性管理器控制措施](media/bafb811a-68ce-40b5-ad16-058498fe5439.png)
-  
-> [!NOTE]
-> 服务信任门户报告和文档在发布后的至少 12 个月内或在新版文档发布前都可供下载。 
- 
-## <a name="localization-support"></a>本地化支持
-
-使用服务信任门户，可查看不同语言的页面内容。若要更改页面语言，只需单击页面左下角的地球图标，再选择所需语言即可。 
-  
-![服务信任门户 - 本地化内容选项](media/b50c677e-a886-4267-9eca-915d880ead7a.png)
 
 ## <a name="assessments-in-compliance-manager"></a>合规性管理器中的评估
 
@@ -690,6 +673,30 @@ ms.locfileid: "26618928"
 3. 单击要查看的评估的名称。
     
 当你查看已存档评估时，所有通常可编辑的控件（即“实现”和“测试结果”）都处于禁用状态，且看不到“管理文档”**** 按钮。
+
+## <a name="using-search"></a>使用搜索
+
+![服务信任门户 -“搜索”输入字段](media/7c5cd817-3d62-420b-adb4-76e33fef941f.png)
+  
+单击页面右上角的放大镜以展开“搜索”输入字段，输入搜索词并按 Enter。此时，“搜索”控件显示，其中搜索窗格输入字段中显示搜索词，下方显示搜索结果。
+  
+默认情况下，“搜索”返回“文档”结果，你可以使用“筛选依据”下拉列表来精简所显示的文档列表，或从视图中添加或删除搜索结果。可同时使用多个筛选器特性，将返回的文档范围缩小到特定的云服务、合规性或安全做法类别、世界区域或行业。单击文档名称链接可下载文档。
+  
+![服务信任门户 - 搜索文档（应用了筛选器）](media/86b754e1-c63c-4514-89ac-d014bf334140.png)
+  
+单击“合规性管理器”链接，可显示合规性管理器评估控制措施的搜索结果。列出的搜索结果显示评估创建日期、评估分组名称、适用云服务，以及控制措施是 Microsoft 管理还是客户管理的控制措施。
+  
+![服务信任门户 - 搜索合规性管理器控制措施](media/bafb811a-68ce-40b5-ad16-058498fe5439.png)
+  
+> [!NOTE]
+> 服务信任门户报告和文档在发布后的至少 12 个月内或在新版文档发布前都可供下载。 
+ 
+## <a name="localization-support"></a>本地化支持
+
+使用服务信任门户，可查看不同语言的页面内容。若要更改页面语言，只需单击页面左下角的地球图标，再选择所需语言即可。 
+  
+![服务信任门户 - 本地化内容选项](media/b50c677e-a886-4267-9eca-915d880ead7a.png)
+
 
 ## <a name="change-log-for-customer-managed-controls"></a>客户管理的控制措施的更改日志
 
