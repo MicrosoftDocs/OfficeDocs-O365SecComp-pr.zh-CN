@@ -13,15 +13,15 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: 0d4d0f35-390b-4518-800e-0c7ec95e946c
-description: '使用 Office 365 安全性和合规性中心搜索统一的审核日志，以查看 Office 365 组织中的用户和管理员的活动。 '
-ms.openlocfilehash: 95516cd88677955137e51401113844375cb1e082
-ms.sourcegitcommit: c34f1a0d560117153fc9a7b8da8994bc6fc53791
+description: '使用 Office 365 安全性 & 合规性中心搜索统一的审核日志，以查看 Office 365 组织中的用户和管理员的活动。 '
+ms.openlocfilehash: 848dbbdeb8b7cd9abd664b5ac401f6afde31c1e1
+ms.sourcegitcommit: c40eee4ef3890056da58649e4617283b0b9d1673
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/30/2018
-ms.locfileid: "27118138"
+ms.lasthandoff: 02/05/2019
+ms.locfileid: "29735464"
 ---
-# <a name="search-the-audit-log-in-the-office-365-security--compliance-center"></a>在 Office 365 安全性和合规性中心搜索审核日志
+# <a name="search-the-audit-log-in-the-office-365-security--compliance-center"></a>Office 365 安全性 & 合规性中心中的搜索审核日志
 
 是否要查找是否用户查看特定文档或清除其邮箱中的项目？如果是，可以使用 Office 365 安全性&amp;搜索统一的审核日志，以查看 Office 365 组织中的用户和管理员的活动的合规性中心。为什么统一的审核日志？因为您可以搜索以下类型的用户和管理 Office 365 中的活动：
   
@@ -40,7 +40,7 @@ ms.locfileid: "27118138"
     
 - Sway 中的用户和管理活动
     
-- Office 365 安全性和合规性中心中的电子数据展示活动
+- Office 365 安全性 & 合规性中心中的电子数据展示活动
     
 - Power BI 中的用户和管理活动
     
@@ -172,6 +172,9 @@ ms.locfileid: "27118138"
     d.**文件、 文件夹或网站**键入一些或全部文件或文件夹名称搜索与包含指定的关键字的文件夹的文件相关的活动。您还可以指定文件或文件夹的 URL。如果您使用的 URL，确保类型的完整的 URL 路径或如果您只需键入 URL 的任何部分不包括任何特殊字符或空格。 
     
     将此框保留为空返回组织中的所有文件和文件夹的条目。
+    
+    > [!TIP]
+    > 如果您正在寻找与**网站**相关的所有活动，添加通配符 (\*) 后返回该网站; 的所有条目的 URL例如， **"https://contoso-my.sharepoint.com/personal/*"**。
     
 5. 单击**搜索**以运行搜索使用您的搜索条件。 
     
@@ -353,7 +356,7 @@ ms.locfileid: "27118138"
 |接受共享邀请  <br/> |SharingInvitationAccepted  <br/> |用户 （成员或来宾） 接受共享邀请并授予对资源的访问。此事件包括有关受邀用户和用于接受邀请的电子邮件地址的信息 （它们可能会不同）。介绍如何用户授予访问资源，例如，将用户添加到有权访问该资源组的第二个事件通常会附带此活动。  <br/> |
 |添加了的权限级别设置为网站集  <br/> |PermissionLevelAdded  <br/> |权限级别已添加到网站集。  <br/> |
 |用户添加到安全链接  <br/> |AddedToSecureLink  <br/> |用户已添加到可以使用此安全共享链接的实体列表。  <br/> |
-|阻止共享邀请  <br/> |SharingInvitationBlocked  <br/> | 由于允许或拒绝外部共享基于目标用户的域的外部共享策略，由您组织内的用户发送共享邀请而被阻止。在这种情况下，共享邀请已阻止因为：<br/>  目标用户的域不包含在允许的域的列表。  <br/>  或  <br/>  目标用户的域将包含在列表中被阻止的域。  <br/>  有关允许或阻止外部共享基于域的详细信息，请参阅[SharePoint Online 和 OneDrive for Business 中共享的受限的域](https://support.office.com/article/5d7589cd-0997-4a00-a2ba-2320ec49c4e9)。  <br/> |
+|阻止共享邀请  <br/> |SharingInvitationBlocked  <br/> | 由于允许或拒绝外部共享基于目标用户的域的外部共享策略，由您组织内的用户发送共享邀请而被阻止。在这种情况下，共享邀请已阻止因为：<br/>  目标用户的域不包含在允许的域的列表。  <br/>  或者  <br/>  目标用户的域将包含在列表中被阻止的域。  <br/>  有关允许或阻止外部共享基于域的详细信息，请参阅[SharePoint Online 和 OneDrive for Business 中共享的受限的域](https://support.office.com/article/5d7589cd-0997-4a00-a2ba-2320ec49c4e9)。  <br/> |
 |中断权限级别继承  <br/> |PermissionLevelsInheritanceBroken  <br/> |项目已更改，以便它不再从其父网站继承权限级别。  <br/> |
 |中断共享继承  <br/> |SharingInheritanceBroken  <br/> |项目已更改，以便它不再从其父级继承共享的权限。  <br/> |
 |创建公司可共享链接  <br/> |CompanyLinkCreated  <br/> |用户创建的资源的公司范围内链接。公司范围内链接仅可由组织中的成员。他们无法使用来宾。  <br/> |
@@ -400,7 +403,8 @@ ms.locfileid: "27118138"
 |**易记名称**|**Operation**|**说明**|
 |:-----|:-----|:-----|
 |添加免除用户代理  <br/> |ExemptUserAgentSet  <br/> |SharePoint 或全局管理员向 SharePoint 管理中心中的免除用户代理的列表中添加一个用户代理。  <br/> |
-|添加的网站集管理员  <br/> |SiteCollectionAdminAdded  <br/> |网站集管理员或所有者将用户添加为网站的网站集管理员。网站集管理员具有完全控制权限的网站集和所有子网站。  <br/> |
+|添加的网站集管理员  <br/> |SiteCollectionAdminAdded  <br/> |网站集管理员或所有者将用户添加为网站的网站集管理员。网站集管理员具有完全控制权限的网站集和所有子网站。管理员使自己访问用户的 OneDrive 帐户 （通过编辑 SharePoint 管理中心或[使用 Office 365 管理中心](https://docs.microsoft.com/office365/admin/add-users/get-access-to-and-back-up-a-former-user-s-data#part-1---get-access-to-the-former-employees-onedrive-for-business-documents)中的用户配置文件） 时，也会记录此活动。<br/> |
+|（无）  <br/> |SiteCollectionAdminRemoved <br/> |网站集管理员或所有者删除作为网站集管理员网站的人员。管理自己从列表中删除的网站集管理员的用户的 OneDrive 帐户 （通过编辑 SharePoint 管理中心中的用户配置文件） 时，也会记录此活动。 请注意，若要在审核日志搜索结果中返回此活动，您需要的所有活动搜索。 <br/> |
 |添加的用户或组的 SharePoint 组  <br/> |AddedToGroup  <br/> |用户添加到 SharePoint 组的成员或来宾。这可能已有意操作或另一个活动，例如共享的事件的结果。  <br/> |
 |允许用户创建组  <br/> |AllowGroupCreationSet  <br/> |网站管理员或所有者添加权限级别的网站的允许用户分配的权限创建该网站组。  <br/> |
 |已取消的站点地理位置移动  <br/> |SiteGeoMoveCancelled  <br/> |SharePoint 或全局管理员成功取消 SharePoint 或 OneDrive 网站地理位置移动。多地理位置功能允许 Office 365 组织跨越多个 Office 365 数据中心地域，称为 geo。有关详细信息，请参阅[OneDrive 和 Office 365 中 SharePoint Online 中的多地理位置功能](https://go.microsoft.com/fwlink/?linkid=860840)。<br/> |
@@ -421,7 +425,7 @@ ms.locfileid: "27118138"
 |启用的 RSS 源  <br/> |NewsFeedEnabledSet  <br/> |网站管理员或所有者使网站的 RSS 源。全局管理员可以使 SharePoint 管理中心中的整个组织的 RSS 源。  <br/> |
 |修改的访问请求设置  <br/> |WebRequestAccessModified  <br/> |在网站上已修改的访问请求设置。  <br/> |
 |已修改的成员可以共享设置  <br/> |WebMembersCanShareModified  <br/> |在网站上进行了修改的**成员可以共享**设置。  <br/> |
-|修改的网站权限  <br/> |SitePermissionsModified  <br/> |网站管理员或所有者 （或系统帐户） 更改分配给网站上的组的权限级别。如果从组中删除所有权限，也会记录此活动。<br/> > [!NOTE]> SharePoint Online 中已弃用此操作。要查找相关的事件，您可以搜索如**添加了网站集管理员**、**添加用户或组的 SharePoint 组**，**允许用户创建组**，**创建组**和**Deleted 其他权限相关的活动组。**         |
+|修改的网站权限  <br/> |SitePermissionsModified  <br/> |网站管理员或所有者 （或系统帐户） 更改分配给网站上的组的权限级别。如果从组中删除所有权限，也会记录此活动。<br/> > [!NOTE]此操作已被弃用 SharePoint Online 中的 >。要查找相关的事件，您可以搜索如**添加了网站集管理员**、**添加用户或组的 SharePoint 组**，**允许用户创建组**，**创建组**和**Deleted 其他权限相关的活动组。**         |
 |从 SharePoint 组中删除用户或组  <br/> |RemovedFromGroup  <br/> |用户从 SharePoint 组中删除一个成员或来宾。这可能已有意操作或另一个活动，如取消事件的结果。  <br/> |
 |重命名的网站  <br/> |SiteRenamed  <br/> |网站管理员或所有者重命名的网站  <br/> |
 |请求的网站管理员权限  <br/> |SiteAdminChangeRequest  <br/> |若要添加为网站集的网站集管理员的用户请求。网站集管理员具有完全控制权限的网站集和所有子网站。  <br/> |
@@ -624,7 +628,7 @@ Power BI 中，您可以搜索活动的审核日志。有关 Power BI 活动的�
    
 ### <a name="microsoft-flow"></a>Microsoft Flow
 
-Microsoft 流中，您可以搜索活动的审核日志。这些活动包括创建、 编辑和删除流和更改流权限。有关审核流活动的信息，请参阅博客[Microsoft 流审核事件现已在 Office 365 安全性和合规性中心](https://flow.microsoft.com/blog/security-and-compliance-center)。
+Microsoft 流中，您可以搜索活动的审核日志。这些活动包括创建、 编辑和删除流和更改流权限。有关审核流活动的信息，请参阅博客[Microsoft 流审核事件目前在合规中心的 Office 365 安全性 & 中可用](https://flow.microsoft.com/blog/security-and-compliance-center)。
 
 
 ### <a name="microsoft-stream"></a>Microsoft Stream
@@ -682,7 +686,7 @@ Exchange 管理员审核日志记录 — 其 Office 365 中的默认情况下启
 
 是的。Office 365 管理活动 API 用于以编程方式获取审核日志。 若要开始，请参阅[开始使用 Office 365 管理 Api](https://docs.microsoft.com/office/office-365-management-api/get-started-with-office-365-management-apis)。
 
-**是否有其他方法来获取审核日志之外 suing Office 365 安全性和合规性中心或 Office 365 管理活动 API？**
+**是否有其他方法来获取审核日志，而不使用 Office 365 安全 & 合规性中心或 Office 365 管理活动 API？**
 
 不。这些是从 Office 365 审核服务中获取数据的只有两个方法。 
 
