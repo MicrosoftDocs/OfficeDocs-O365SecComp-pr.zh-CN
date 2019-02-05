@@ -272,7 +272,6 @@
 #### [创建保留通知](compliance20/create-hold-notification.md)
 #### [使用通信编辑器](compliance20/using-communications-editor.md)
 #### [管理保留通知](compliance20/manage-hold-notification.md)
-#### [编辑保留通知](compliance20/edit-hold-notification.md)
 #### [确认保留通知](compliance20/acknowledge-hold-notification.md)
 
 ### [管理保留](compliance20/managing-holds.md)
