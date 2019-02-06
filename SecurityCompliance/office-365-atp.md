@@ -3,7 +3,7 @@ title: Office 365 高级威胁防护
 ms.author: deniseb
 author: denisebmsft
 manager: laurawi
-ms.date: 01/08/2019
+ms.date: 02/04/2019
 ms.audience: Admin
 ms.topic: hub-page
 ms.service: o365-administration
@@ -13,16 +13,16 @@ search.appverid:
 - MOE150
 ms.assetid: e100fe7c-f2a1-4b7d-9e08-622330b83653
 description: Office 365 高级威胁保护包括欺骗智能、 安全链接、 安全的附件和高级的防钓鱼功能。For Business 和 Microsoft 团队之前，还进行了高级的威胁保护扩展到 SharePoint Online、 OneDrive 中的文件。
-ms.openlocfilehash: 6cdbdde2c91f8a9a77eb688ae27d509163da42a1
-ms.sourcegitcommit: 03e64ead7805f3dfa9149252be8606efe50375df
+ms.openlocfilehash: 7d60ac9bff108a6746a5e89d05d70bba23d2671d
+ms.sourcegitcommit: a64af0ebd0b03e4a5e60a33e9108c44c7d74f356
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/08/2019
-ms.locfileid: "27769796"
+ms.lasthandoff: 02/05/2019
+ms.locfileid: "29741035"
 ---
 # <a name="office-365-advanced-threat-protection"></a>Office 365 高级威胁防护
 
-## <a name="overview"></a>概述
+## <a name="overview-of-office-365-advanced-threat-protection"></a>Office 365 的高级的威胁保护的概述
 
 Office 365 高级威胁保护 (ATP) 有助于防止恶意攻击通过您的组织：
   
@@ -36,7 +36,7 @@ Office 365 高级威胁保护 (ATP) 有助于防止恶意攻击通过您的组�
     
 - 检测何时某人尝试模拟用户和组织的自定义域与[Office 365 中的 ATP 防钓鱼功能](atp-anti-phishing.md)
     
-**通过 Office 365 ATP 保护由您组织的安全工作组的安全链接、 安全的附件和防钓鱼定义的策略**。非常重要定期查看和修改您的策略，以使其保持最新和要执行的新功能添加到服务的优点。 
+**通过 Office 365 ATP 保护由您组织的安全工作组的安全链接、 安全的附件和防钓鱼定义的策略**。务必定义策略，并进行定期查看和修改这些策略，以使其保持最新和要执行的新功能添加到服务的优点。 
 
 [报告可](view-reports-for-atp.md)显示如何使用 ATP 运行您的组织。这些报告还可以显示您可能需要以查看并更新您的策略的区域。然后，如果您有标记为恶意软件不应是，或文件您希望 Microsoft 要检查的文件，可以[将文件提交给 Microsoft 进行分析](#submit-a-suspicious-file-to-microsoft-for-analysis)。
 
@@ -47,37 +47,46 @@ Office 365 高级威胁保护 (ATP) 有助于防止恶意攻击通过您的组�
 
 |功能更新  |拟办事项  |
 |---------|---------|
-|开始在年 10 月 2018年以及推出通过下的几个月，当用户正在使用 Outlook Web 应用程序 (OWA) 或 Outlook、 ATP 安全链接不呈现原始 Url 重写 Url。（我们调用此本机链接可见性）。|无         |
+|开始在年 10 月 2018年以及推出通过下的几个月，当人员使用的 Outlook 或 Outlook Web 应用程序 (OWA)、 ATP 安全链接不呈现原始 Url 重写 Url。（我们调用此本机链接呈现）。<br>适用于您的组织本机链接呈现后，此功能将工作 Outlook 365 （单击以运行） 和 OWA 中。|无         |
 |年 9 月 2018年中的开始、 [Office 365 ATP 警告页](atp-safe-links-warning-pages.md)功能新的配色方案、 更多详细信息，和以继续前进到尽管网站的功能在给定警告和建议。 |无         |
 |开始在 2018年的第二部分中，ATP 安全链接被扩展保护于 Url 的 Office Online （Word Online、 Excel Online、 PowerPoint Online 和 OneNote 联机） 和 Office 365 ProPlus 上 mac。   |[查看和编辑 ATP 安全链接策略](set-up-atp-safe-links-policies.md)  |
 |开始在后期年 5 月 2018 安全中[隔离](quarantine-email-messages.md)功能&amp;合规性中心将正在扩展到[的 SharePoint Online 的 OneDrive for Business 和 Microsoft 团队 ATP](atp-for-spo-odb-and-teams.md)。 |[查看和编辑 ATP 安全附件策略](set-up-atp-safe-attachments-policies.md) |
 |从开始年 3 月 2018年，被扩展 ATP 安全链接保护应用于组织内的人员之间发送的电子邮件。 |[查看和编辑 ATP 安全链接策略](set-up-atp-safe-links-policies.md) |
 |从开始后期年 10 月 2017年，ATP 安全链接保护扩展到 Url 为 Url 或电子邮件中 Office 365 ProPlus 的文档，如 Word、 Excel、 PowerPoint 和 Visio 中对应用 Windows，以及 Office iOS 和 Android 设备上的应用程序。  |请确保您使用的[Office 现代身份验证](https://docs.microsoft.com/office365/enterprise/modern-auth-for-office-2013-and-2016) |
-
-      
+  
 ## <a name="get-office-365-atp"></a>获取 Office 365 ATP
 
 Office 365 ATP 包含订阅，如[Microsoft 365 企业版](https://www.microsoft.com/microsoft-365/enterprise/home)、 [Microsoft 365 业务](https://www.microsoft.com/microsoft-365/business)、 Office 365 企业 E5，和 Office 365 教育版 A5 中。如果您的组织具有不包括 Office 365 ATP 的 Office 365 订阅，您可能可以作为购买 ATP。有关详细信息，请参阅[Office 365 高级威胁 Protection Service Description](https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description)。 
 
 ## <a name="define-policies-for-atp"></a>为 ATP 定义策略
 
-- **[设置 Office 365 中的 ATP 防钓鱼策略](set-up-anti-phishing-policies.md)** 包括基于模拟的攻击保护的攻击者发送电子邮件消息的状态显示为来自受信任的人员或域 
+若要定义 （或编辑） ATP 策略，您必须为分配下表中所述的角色之一：
 
-- **[设置 Office 365 中的安全链接 ATP 策略](set-up-atp-safe-links-policies.md)** 包括您组织的[自定义被阻止的 Url 列表](set-up-a-custom-blocked-urls-list-wtih-atp.md)和[自定义"执行不重写"Url 列表](set-up-a-custom-do-not-rewrite-urls-list-with-atp.md)
+|角色  |其中/如何分配  |
+|---------|---------|
+|Office 365 全局管理员 |注册以购买 Office 365 的人是默认情况下是全局管理员。（请参阅要了解的[有关 Office 365 管理员角色](https://docs.microsoft.com/office365/admin/add-users/about-admin-roles)）。         |
+|Office 365 安全管理员 |管理中心 ([https://aka.ms/admincenter](https://aka.ms/admincenter))|
+|Exchange Online 组织管理 |Exchange 管理员中心 ([https://outlook.office365.com/ecp](https://outlook.office365.com/ecp)) <br>或 <br>  PowerShell cmdlet (请参阅[Exchange Online PowerShell 中](https://docs.microsoft.com/powershell/exchange/exchange-online/exchange-online-powershell?view=exchange-ps)) |
+
+有几种 ATP 策略用于定义和定期查看。
+
+1. **[设置 Office 365 中的 ATP 防钓鱼策略](set-up-anti-phishing-policies.md)** 包括基于模拟的攻击保护的攻击者发送电子邮件消息的显示为来自受信任的人员或域。 
+
+2. **[设置 Office 365 中的安全链接 ATP 策略](set-up-atp-safe-links-policies.md)** 包括您组织的[自定义被阻止的 Url 列表](set-up-a-custom-blocked-urls-list-wtih-atp.md)和[自定义"执行不重写"Url 列表](set-up-a-custom-do-not-rewrite-urls-list-with-atp.md)。
     
-- **[设置 Office 365 中的 ATP 安全附件策略](set-up-atp-safe-attachments-policies.md)** 和从多个选项，如[动态交付和预览过程](dynamic-delivery-and-previewing.md)中进行选择
+3. **[设置 Office 365 中的 ATP 安全附件策略](set-up-atp-safe-attachments-policies.md)** 和从多个选项，如[动态交付和预览过程](dynamic-delivery-and-previewing.md)中进行选择。
   
 ## <a name="see-how-atp-is-working-by-viewing-reports"></a>请参阅 ATP 通过查看报告的工作方式
 
-ATP 策略后，报告是可用于显示如何服务运行正常。
+ATP 策略后，报告是可用于显示如何服务运行正常。(在 Office 365 安全性 & 合规性中心中，转到**报告** > **仪表板**。)
 
 [![安全&amp;合规性中心仪表板可帮助您看到正常高级威胁保护](media/6b213d34-adbb-44af-8549-be9a7e2db087.png)](view-reports-for-atp.md)
   
-1. 请确保您是 Office 365 全局管理员、 安全管理员或安全读取器。(请参阅[Permissions in Office 365 安全性&amp;合规性中心](permissions-in-the-security-and-compliance-center.md)。)
+1. 为 Office 365 全局管理员、 安全管理员或安全读取器，转到[https://protection.office.com](https://protection.office.com)和登录。
     
-2. [查看报告的高级威胁保护](view-reports-for-atp.md)。
+2. 转到**报告** > **仪表板**。（若要获取这些报告的帮助，请参阅[View reports 高级威胁 protection](view-reports-for-atp.md)。）
     
-3. 如果需要对进行调整您的安全策略。请参阅以下资源：
+3. 如果需要对进行调整您的安全策略。若要获取与此帮助，请参阅以下资源：
       - [Office 365 中的 ATP 防钓鱼策略](set-up-anti-phishing-policies.md)
       - [Office 365 中的安全链接 ATP 策略](set-up-atp-safe-links-policies.md)
       - [Office 365 中的 ATP 安全附件策略](set-up-atp-safe-attachments-policies.md)

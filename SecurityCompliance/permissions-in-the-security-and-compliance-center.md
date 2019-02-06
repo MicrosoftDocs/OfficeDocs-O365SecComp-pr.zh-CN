@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: d10608af-7934-490a-818e-e68f17d0e9c1
 description: Office 365 安全性&amp;合规性中心，可以向执行合规性任务，如设备管理、 数据丢失防护、 电子数据展示、 保留、 等的人员授予权限。这些人员可以执行只能您明确向其授予权限的任务。若要访问安全性&amp;合规性中心，用户需要为 Office 365 全局管理员或成员的一个或多个安全&amp;合规性中心角色组。
-ms.openlocfilehash: e393bad7c3a57b0734835e56fcd781cc31327c18
-ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+ms.openlocfilehash: ef281ca7cda706ff78fbf1a5584674cdf41e9025
+ms.sourcegitcommit: a64af0ebd0b03e4a5e60a33e9108c44c7d74f356
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "23013426"
+ms.lasthandoff: 02/05/2019
+ms.locfileid: "29741055"
 ---
 # <a name="permissions-in-the-office-365-security-amp-compliance-center"></a>Office 365 安全性权限&amp;合规性中心
 
@@ -54,12 +54,12 @@ Office 365 安全性&amp;合规性中心，可以向执行合规性任务，如�
 |**角色组**|**说明**|
 |:-----|:-----|
 |**合规性管理员**<sup>1</sup> <br/> |成员可以管理设备管理、 数据丢失防护、 报表和保留的设置。  <br/> |
-|**电子数据展示管理员** <br/> | 成员可以执行搜索并将邮箱、SharePoint Online 网站和 OneDrive for Business 位置置于保留状态。成员还可以创建和管理电子数据展示事例、添加和删除成员至事例，并创建和编辑与事例关联的内容搜索。<br/>  电子数据展示管理员是电子数据展示管理员角色组的成员，该成员已分配有其他权限。电子数据展示管理员可以：<br/>  查看组织中的所有电子数据展示事例。  <br/>  将自己添加为任何电子数据展示事例的成员后管理这些事例。  <br/>  访问 Office 365 高级电子数据展示。这是因为电子数据展示管理员将自动添加为高级电子数据展示中的管理员。请注意，您必须是电子数据展示管理员安全中&amp;合规性中心以访问高级电子数据展示。有关进行电子数据展示管理员的用户的详细信息，请参阅[Office 365 安全性的电子数据展示事例&amp;合规性中心](https://go.microsoft.com/fwlink/p/?LinkId=780738)。<br/> 如果您希望为用户提供高级电子数据展示中的管理权限，但不希望让其电子数据展示管理员安全中&amp;合规性中心，您可以将其添加到电子数据展示管理员角色组，然后将其添加为中的管理员高级电子数据展示。有关说明，请参阅[用户和 Office 365 高级电子数据展示中的情况下的设置](https://go.microsoft.com/fwlink/p/?LinkId=780696)。           |
+|**电子数据展示管理员** <br/> | 成员可以执行搜索和业务位置保留邮箱、 SharePoint Online 网站和 OneDrive 上的位置。成员还可以创建和管理电子数据展示案例、 添加和删除成员为大写、 创建和编辑的情况下和 Office 365 高级电子数据展示中的访问案例数据相关联的内容搜索。<br/><br/>电子数据展示管理员是一个已分配有其他权限电子数据展示管理员角色组的成员。电子数据展示管理员可以执行的任务，除了电子数据展示管理员可以：<br/><br/>  • 查看组织中的所有电子数据展示事例。  <br/>  • 管理任何电子数据展示事例之后他们将自己添加为用例的成员。  <br/><br/>电子数据展示中管理器和电子数据展示管理员的主要区别是电子数据展示管理员可以访问所有的情况下，安全中**电子数据展示事例**上列出的&amp;合规性中心。电子数据展示 manager 只能访问他们创建的案件或正在的成员的情况。 有关进行电子数据展示管理员的用户的详细信息，请参阅[分配 Office 365 安全性的电子数据展示权限&amp;合规性中心](assign-ediscovery-permissions.md)。<br/>           |
 |**组织管理**<sup>1</sup> <br/> |成员可以控制用于访问安全中的功能的权限&amp;合规性中心以及管理的设备管理、 数据丢失防护、 报表和保留设置。  <br/> 请注意，在不是全局管理员才能通过 MDM 管理 Office 365 的设备列表，请参阅的用户的顺序和这些设备上执行操作，如为 Office 365 从 MDM retiring 设备，用户必须是 Exchange 管理员。  <br/> Office 365 全局管理员将自动添加为此角色组的成员。           |
 |**记录管理** <br/> |成员可以管理和释放记录内容。  <br/> |
 |**Reviewer** <br/> |成员只能在安全的电子数据展示案例页上查看的情况下列表&amp;合规性中心。他们无法创建、 打开或管理电子数据展示事例。此角色组的主要用途是允许成员添加到视图和访问 case 高级电子数据展示中的数据。  <br/> 此角色组中与电子数据展示相关的权限最具限制性。  <br/> |
-|**Security Administrator** <br/> |此角色组中的成员资格是同步服务和集中管理。此角色组不通过管理员门户易于管理。跨服务管理员，以及外部合作伙伴组和 Microsoft 支持，可能包括此角色组的成员。默认情况下，此组可能不被分配任何角色。但是，它将 Security Administrators 角色组的成员，并将继承该角色组的功能。  <br/> 所有安全读者角色，以及大量的相同服务的其他管理权限的只读权限： Azure 信息保护、 标识防护中心、 特权身份管理和监视 Office 365 服务运行状况和 Office 365 安全性&amp;合规性中心。  <br/> |
-|**安全读者** <br/> |成员具有只读访问权限的标识防护中心、 特权标识管理、 监控 Office 365 服务运行状况和 Office 365 安全性的安全功能的数量&amp;合规性中心。  <br/> 此角色组中的成员资格是同步服务和集中管理。此角色组不通过管理员门户易于管理。跨服务管理员，以及外部合作伙伴组和 Microsoft 支持，可能包括此角色组的成员。默认情况下，此组可能不被分配任何角色。但是，它将安全读者角色组的成员，并将继承该角色组的功能。  <br/> |
+|**Security Administrator** <br/> |跨服务管理员，以及外部合作伙伴组和 Microsoft 支持，可能包括此角色组的成员。默认情况下，此组可能不被分配任何角色。但是，它将在 Azure Active Directory 中的安全管理员角色的成员，并将继承该角色的功能。集中管理的权限，对此角色在 Azure Active Directory 管理中心-的详细信息进行更改，请参阅[在 Azure Active Directory 中的管理员角色权限](https://docs.microsoft.com/en-us/azure/active-directory/users-groups-roles/directory-assign-admin-roles)。如果您编辑了安全 & 合规性中心在此角色组，这些更改仅适用于安全 & 合规性中心和没有任何其他服务，而在 Azure Active Directory 管理中心所做的更改会影响所有服务。<br/> 所有安全读者角色，以及大量的相同服务的其他管理权限的只读权限： Azure 信息保护、 标识防护中心、 特权身份管理和监视 Office 365 服务运行状况和 Office 365 安全性&amp;合规性中心。  <br/> |
+|**安全读者** <br/> |成员具有只读访问权限的标识防护中心、 特权标识管理、 监控 Office 365 服务运行状况和 Office 365 安全性的安全功能的数量&amp;合规性中心。  <br/> 此角色组中的成员资格是同步服务和集中管理。跨服务管理员，以及外部合作伙伴组和 Microsoft 支持，可能包括此角色组的成员。默认情况下，此组可能不被分配任何角色。但是，它将在 Azure Active Directory 中的安全管理员角色的成员，并将继承该角色的功能。集中管理的权限，对此角色在 Azure Active Directory 管理中心-的详细信息进行更改，请参阅[在 Azure Active Directory 中的管理员角色权限](https://docs.microsoft.com/en-us/azure/active-directory/users-groups-roles/directory-assign-admin-roles)。如果您编辑了安全 & 合规性中心在此角色组，这些更改仅适用于安全 & 合规性中心和没有任何其他服务，而在 Azure Active Directory 管理中心所做的更改会影响所有服务。<br/> |
 |**服务保证用户** <br/> |成员可以访问 Office 365 安全性服务保证部分&amp;合规性中心。服务保证提供报告和描述 Microsoft 的安全做法客户数据存储在 Office 365 中的文档。它还提供有关 Office 365 的独立的第三方审核报告。有关详细信息，请参阅[服务 Office 365 安全性保证&amp;合规性中心](http://go.microsoft.com/fwlink/p/?LinkID=717765)。<br/> |
 |**监督审阅** <br/> |成员可以创建和管理其定义的策略 communications 受到查看组织中。有关详细信息，请参阅[Configure 监督查看为您的组织的策略](configure-supervision-policies.md)。<br/> |
    

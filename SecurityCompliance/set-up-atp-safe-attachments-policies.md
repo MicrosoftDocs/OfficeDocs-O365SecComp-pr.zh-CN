@@ -5,6 +5,7 @@ author: denisebmsft
 manager: laurawi
 ms.audience: Admin
 ms.topic: article
+ms.date: 02/05/2019
 ms.service: o365-administration
 localization_priority: Normal
 search.appverid:
@@ -12,12 +13,12 @@ search.appverid:
 - MOE150
 ms.assetid: 078eb946-819a-4e13-8673-fe0c0ad3a775
 description: 定义附件安全策略，以从电子邮件中的恶意文件保护您的组织。
-ms.openlocfilehash: c5c18e3e8300a5cb8eabb8a099d6757a09170ff7
-ms.sourcegitcommit: 9034809b6f308bedc3b8ddcca8242586b5c30f94
+ms.openlocfilehash: 229f5eb4ec1af4302f724151f599bd33b15055e1
+ms.sourcegitcommit: a64af0ebd0b03e4a5e60a33e9108c44c7d74f356
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "28014873"
+ms.lasthandoff: 02/05/2019
+ms.locfileid: "29741115"
 ---
 # <a name="set-up-office-365-atp-safe-attachments-policies"></a>设置 Office 365 ATP 安全附件策略
 
@@ -35,7 +36,13 @@ ms.locfileid: "28014873"
 
 - 请确保您的组织具有[Office 365 高级威胁保护](office-365-atp.md)。
     
-- 请确保您具有必要[Office 365 安全权限&amp;合规性中心](permissions-in-the-security-and-compliance-center.md)。
+- 请确保您具有所需的权限。若要定义 （或编辑） ATP 策略，您必须为分配下表中所述的角色之一： <br>
+
+    |角色  |其中/如何分配  |
+    |---------|---------|
+    |Office 365 全局管理员 |注册以购买 Office 365 的人是默认情况下是全局管理员。（请参阅要了解的[有关 Office 365 管理员角色](https://docs.microsoft.com/office365/admin/add-users/about-admin-roles)）。         |
+    |Office 365 安全管理员 |管理中心 ([https://aka.ms/admincenter](https://aka.ms/admincenter))|
+    |Exchange Online 组织管理 |Exchange 管理员中心 ([https://outlook.office365.com/ecp](https://outlook.office365.com/ecp)) <br>或 <br>  PowerShell cmdlet (请参阅[Exchange Online PowerShell 中](https://docs.microsoft.com/powershell/exchange/exchange-online/exchange-online-powershell?view=exchange-ps)) |
     
 - [了解 ATP 安全附件策略选项](#learn-about-atp-safe-attachments-policy-options)（本文中）。扫描的附件时，一些选项，如监视或替换选项中，会导致次要电子邮件的延迟。若要避免出现邮件延迟，请考虑使用[动态交付和预览](dynamic-delivery-and-previewing.md)。
     
@@ -43,7 +50,7 @@ ms.locfileid: "28014873"
     
 ## <a name="step-2-set-up-or-edit-an-atp-safe-attachments-policy"></a>步骤 2： 设置 （或编辑） ATP 安全附件策略
   
-1. 以全局管理员或 security 管理员程序中，转到[https://protection.office.com](https://protection.office.com)和使用工作或学校帐户登录。 
+1. 转到[https://protection.office.com](https://protection.office.com)和使用工作或学校帐户登录。 
     
 2. Office 365 安全性&amp;合规性中心在左侧的导航窗格中，**威胁管理**下面，选择**策略** \> **安全的附件**。
     
@@ -85,4 +92,6 @@ ms.locfileid: "28014873"
 位置 ATP 安全附件策略后，您可以看到 ATP 通过查看报告的工作为您的组织。请参阅以下资源，以了解详细信息：
 - [Office 365 高级威胁保护的视图报告](view-reports-for-atp.md)
 - [在安全中使用资源管理器&amp;合规性中心](use-explorer-in-security-and-compliance.md)
+
+掌控变成 ATP 的新功能。访问[Microsoft 365 路线图](https://www.microsoft.com/microsoft-365/roadmap?filters=O365)并了解[到 ATP 正在添加的新功能](office-365-atp.md#new-features-are-continually-being-added-to-atp)。
  

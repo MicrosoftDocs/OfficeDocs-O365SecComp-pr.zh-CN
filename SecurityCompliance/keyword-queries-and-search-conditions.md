@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: c4639c2e-7223-4302-8e0d-b6e10f1c3be3
 description: '了解电子邮件和文件属性，您可以在 Office 365 安全性使用内容搜索工具的业务网站搜索在 Exchange Online 邮箱和 SharePoint 或 OneDrive&amp;合规性中心。  '
-ms.openlocfilehash: c1b5c3721a892929535a7e699201d0bcfc39937b
-ms.sourcegitcommit: a2afa4c06e9b762cf689b0d2a0653076f9b00c49
+ms.openlocfilehash: 865affa06e32b440a71721487153044e036cc487
+ms.sourcegitcommit: a64af0ebd0b03e4a5e60a33e9108c44c7d74f356
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28328158"
+ms.lasthandoff: 02/05/2019
+ms.locfileid: "29741165"
 ---
 # <a name="keyword-queries-and-search-conditions-for-content-search"></a>内容搜索的关键字查询和搜索条件
 
@@ -401,4 +401,5 @@ kind:im AND subject:conversation AND (received=startdate..enddate)
 - 搜索时属性，则使用双引号 ("") 如果搜索值包含多个单词。例如`subject:budget Q1`返回包含**预算**中的邮件的主题行和包含**第 1 季度**无处不在邮件或任何消息属性。使用`subject:"budget Q1"`返回包含的主题行中的任意位置的**预算第 1 季度**的所有邮件。 
     
 - 若要排除从搜索结果的某些属性值与标记的内容，请将属性的名称之前减号 （-）。例如，`-from:"Sara Davis"`会排除任何由 Sara Davis 发送的消息。
-- 您可以导出根据项目类型的项目。例如，若要导出的用户的 Skype IM 消息 recived，使用语法类型： IM。此搜索查询 returen 所有 IM 消息。 
+
+- 您可以导出基于消息类型的项目。例如，若要导出 Skype 对话和 Microsoft 团队中的聊天，请使用语法`kind:im`。若要返回仅电子邮件，您需要使用`kind:email`。若要返回的 Microsoft 团队中的聊天、 会议和呼叫，请使用`kind:microsoftteams`。

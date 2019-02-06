@@ -5,6 +5,7 @@ author: denisebmsft
 manager: laurawi
 ms.audience: Admin
 ms.topic: article
+ms.date: 02/05/2019
 ms.service: o365-administration
 localization_priority: Normal
 search.appverid:
@@ -12,12 +13,12 @@ search.appverid:
 - MOE150
 ms.assetid: bdd5372d-775e-4442-9c1b-609627b94b5d
 description: 设置以从 Word、 Excel、 PowerPoint 和 Visio 文件中以及电子邮件中的恶意链接保护您的组织的安全链接策略。
-ms.openlocfilehash: 145e8998637756d204171f64021d6ad783b367f3
-ms.sourcegitcommit: 9034809b6f308bedc3b8ddcca8242586b5c30f94
+ms.openlocfilehash: 714b3df825272ab182443b31e0b2cf90b64b71b7
+ms.sourcegitcommit: a64af0ebd0b03e4a5e60a33e9108c44c7d74f356
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "28015054"
+ms.lasthandoff: 02/05/2019
+ms.locfileid: "29741085"
 ---
 # <a name="set-up-office-365-atp-safe-links-policies"></a>设置 Office 365 ATP 安全链接策略
 
@@ -33,13 +34,19 @@ ms.locfileid: "28015054"
     
 3. [为特定的电子邮件收件人添加或编辑策略](#add-a-policy-for-specific-email-recipients)，包括[您自定义"执行不重写"Url 列表 ATP 安全链接的设置](set-up-a-custom-do-not-rewrite-urls-list-with-atp.md)。
     
-4. [了解 ATP 安全链接策略选项](#learn-about-atp-safe-links-policy-options)（本文中），包括的最新更改的设置
+4. [了解 ATP 安全链接策略选项](#learn-about-atp-safe-links-policy-options)（本文中），包括最新更改设置。
     
 ## <a name="step-1-review-the-prerequisites"></a>步骤 1： 查看必备组件
 
 - 请确保您的组织具有[Office 365 高级威胁保护](office-365-atp.md)。
     
-- 请确保您具有定义或编辑 ATP 策略所需的权限。请参阅[Permissions in Office 365 安全性&amp;合规性中心](permissions-in-the-security-and-compliance-center.md)。
+- 请确保您具有所需的权限。若要定义 （或编辑） ATP 策略，您必须为分配下表中所述的角色之一： <br>
+
+    |角色  |其中/如何分配  |
+    |---------|---------|
+    |Office 365 全局管理员 |注册以购买 Office 365 的人是默认情况下是全局管理员。（请参阅要了解的[有关 Office 365 管理员角色](https://docs.microsoft.com/office365/admin/add-users/about-admin-roles)）。         |
+    |Office 365 安全管理员 |管理中心 ([https://aka.ms/admincenter](https://aka.ms/admincenter))|
+    |Exchange Online 组织管理 |Exchange 管理员中心 ([https://outlook.office365.com/ecp](https://outlook.office365.com/ecp)) <br>或 <br>  PowerShell cmdlet (请参阅[Exchange Online PowerShell 中](https://docs.microsoft.com/powershell/exchange/exchange-online/exchange-online-powershell?view=exchange-ps)) |
 
 - 确保 Office 客户端被配置为使用[现代身份验证](https://docs.microsoft.com/office365/enterprise/modern-auth-for-office-2013-and-2016)（这适用于在 Office 文档中的安全链接 ATP 保护）。
     
@@ -130,4 +137,6 @@ ms.locfileid: "28015054"
 
 - [Office 365 高级威胁保护的视图报告](view-reports-for-atp.md)
 
-- [在安全中使用资源管理器&amp;合规性中心](use-explorer-in-security-and-compliance.md) 
+- [在安全中使用资源管理器&amp;合规性中心](use-explorer-in-security-and-compliance.md)
+
+掌控变成 ATP 的新功能。访问[Microsoft 365 路线图](https://www.microsoft.com/microsoft-365/roadmap?filters=O365)并了解[到 ATP 正在添加的新功能](office-365-atp.md#new-features-are-continually-being-added-to-atp)。

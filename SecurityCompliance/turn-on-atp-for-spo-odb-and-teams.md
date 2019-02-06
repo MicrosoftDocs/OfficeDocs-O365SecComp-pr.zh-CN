@@ -5,6 +5,7 @@ author: denisebmsft
 manager: laurawi
 ms.audience: ITPro
 ms.topic: article
+ms.date: 02/05/2019
 ms.service: o365-administration
 localization_priority: Normal
 search.appverid:
@@ -12,30 +13,36 @@ search.appverid:
 - MOE150
 ms.assetid: 07e76024-0c80-40dc-8c48-1dd0d0f863cb
 description: 了解如何开启 ATP for OneDrive 和团队，包括如何设置检测到的文件的通知。
-ms.openlocfilehash: 770af7078166857bcb9784112710262b7de788bb
-ms.sourcegitcommit: 9034809b6f308bedc3b8ddcca8242586b5c30f94
+ms.openlocfilehash: 23eaa4def0fafdcd0df0ae30f8358104c0f877b6
+ms.sourcegitcommit: a64af0ebd0b03e4a5e60a33e9108c44c7d74f356
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "28014884"
+ms.lasthandoff: 02/05/2019
+ms.locfileid: "29741025"
 ---
 # <a name="turn-on-office-365-atp-for-sharepoint-onedrive-and-microsoft-teams"></a>打开 Office 365 ATP SharePoint、 OneDrive 和 Microsoft 团队
 
 [Office 365 ATP SharePoint、 OneDrive 和 Microsoft 团队](atp-for-spo-odb-and-teams.md)可防止组织不小心共享恶意文件。检测到恶意文件时，该文件被阻止，以便没有打开、 复制、 移动或共享它，直到由组织的安全组采取进一步的操作。阅读此文，针对 SharePoint 打开 ATP，OneDrive 和团队，设置警报通知有关检测到的文件，并执行您下一步步骤。 
   
-若要执行本文中描述的任务，您必须分配 Office 365 中和安全性的必要权限&amp;合规性中心。
+若要定义 （或编辑） ATP 策略，您必须为分配下表中所述的角色之一：
+
+|角色  |其中/如何分配  |
+|---------|---------|
+|Office 365 全局管理员 |注册以购买 Office 365 的人是默认情况下是全局管理员。（请参阅要了解的[有关 Office 365 管理员角色](https://docs.microsoft.com/office365/admin/add-users/about-admin-roles)）。         |
+|Office 365 安全管理员 |管理中心 ([https://aka.ms/admincenter](https://aka.ms/admincenter))|
+|Exchange Online 组织管理 |Exchange 管理员中心 ([https://outlook.office365.com/ecp](https://outlook.office365.com/ecp)) <br>或 <br>  PowerShell cmdlet (请参阅[Exchange Online PowerShell 中](https://docs.microsoft.com/powershell/exchange/exchange-online/exchange-online-powershell?view=exchange-ps)) |
   
 ## <a name="turn-on-atp-for-sharepoint-onedrive-and-microsoft-teams"></a>启用适用于 SharePoint、OneDrive 和 Microsoft Teams 的 ATP
 
- **开始此过程，请确保审核日志记录您的 Office 365 环境已开启**。这通常是具有审核日志角色分配在 Exchange Online 的人。有关详细信息，请参阅[打开或关闭，打开 Office 365 审核日志搜索](turn-audit-log-search-on-or-off.md)。
+**开始此过程，请确保审核日志记录您的 Office 365 环境已开启**。这通常是具有审核日志角色分配在 Exchange Online 的人。有关详细信息，请参阅[打开或关闭，打开 Office 365 审核日志搜索](turn-audit-log-search-on-or-off.md)。
   
-1. 以全局管理员或 security 管理员程序中，转到[https://protection.office.com](https://protection.office.com)，并使用您的工作或学校帐户登录。
+1. 转到[https://protection.office.com](https://protection.office.com)，并使用您的工作或学校帐户登录。
     
 2. Office 365 安全性&amp;合规性中心在左侧的导航窗格中，**威胁管理**下面，选择**策略** \> **安全的附件**。 <br/>![安全中&amp;合规性中心中，选择威胁管理\>策略](media/08849c91-f043-4cd1-a55e-d440c86442f2.png)
   
 3. 选择**SharePoint、 OneDrive 和 Microsoft 团队 ATP 打开**。<br/>![启用高级的威胁 Protection for SharePoint Online，OneDrive for Business 和 Microsoft 团队](media/48cfaace-59cc-4e60-bf86-05ff6b99bdbf.png)
   
-4. 单击 **"保存"**。
+4. 单击“**保存**”。
     
 5. 查看 （和，根据需要编辑） 贵组织的[安全附件策略](set-up-atp-safe-attachments-policies.md)和[安全链接策略](set-up-atp-safe-links-policies.md)。
     
@@ -71,7 +78,7 @@ ms.locfileid: "28014884"
     
 6. 在**发送到此通知...** 部分中，选择一个或多个全局管理员、 安全管理员或安全读者应在检测到恶意文件时收到通知。 
     
-7. 单击 **"保存"**。
+7. 单击“**保存**”。
     
 若要了解有关通知的详细信息，请参阅[在 Office 365 安全性中创建活动通知&amp;合规性中心](create-activity-alerts.md)。 
   
