@@ -5,17 +5,17 @@ author: kccross
 manager: laurawi
 ms.audience: ITPro
 ms.topic: article
-ms.date: 02/04/2019
+ms.date: 02/06/2019
 ms.service: o365-administration
 localization_priority: Normal
 ms.assetid: 5a6f2d7f-d998-4f31-b4f5-f7cbf6f38578
 description: 防钓鱼保护，与 Office 365 高级威胁保护和 Office 365 Exchange Online Protection 中的基本保护的一部分的全面防护可帮助您的组织防止恶意基于模拟的网络钓鱼攻击和其他网络钓鱼攻击。
-ms.openlocfilehash: 1ef1dc0781cc28e660cbebf8cde59f97d3e65000
-ms.sourcegitcommit: a64af0ebd0b03e4a5e60a33e9108c44c7d74f356
+ms.openlocfilehash: 1ecc76f674b1d64b59b5dec0f92cd06bbe8b55e8
+ms.sourcegitcommit: d6a28c4f6db6a676ca960173e8ff8f17d4aa1c4b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/05/2019
-ms.locfileid: "29741145"
+ms.lasthandoff: 02/06/2019
+ms.locfileid: "29755263"
 ---
 # <a name="set-up-office-365-atp-anti-phishing-and-anti-phishing-policies"></a>设置 Office 365 ATP 防钓鱼和防钓鱼策略
 
@@ -43,9 +43,11 @@ ms.locfileid: "29741145"
     |角色  |其中/如何分配  |
     |---------|---------|
     |Office 365 全局管理员 |注册以购买 Office 365 的人是默认情况下是全局管理员。（请参阅要了解的[有关 Office 365 管理员角色](https://docs.microsoft.com/office365/admin/add-users/about-admin-roles)）。         |
-    |Office 365 安全管理员 |管理中心 ([https://aka.ms/admincenter](https://aka.ms/admincenter))|
+    |Security Administrator |Azure Active Directory 管理员中心 ([https://aad.portal.azure.com](https://aad.portal.azure.com))|
     |Exchange Online 组织管理 |Exchange 管理员中心 ([https://outlook.office365.com/ecp](https://outlook.office365.com/ecp)) <br>或 <br>  PowerShell cmdlet (请参阅[Exchange Online PowerShell 中](https://docs.microsoft.com/powershell/exchange/exchange-online/exchange-online-powershell?view=exchange-ps)) |
     
+    若要了解有关角色和权限的详细信息，请参阅[Permissions in Office 365 安全性&amp;合规性中心](permissions-in-the-security-and-compliance-center.md)。
+
 - 您将可能将多个防钓鱼策略设置为您的组织。Office 365 强制实施这些策略他们正在安全中的**防钓鱼页面**和**ATP 防钓鱼**页面上列出的顺序&amp;合规性中心。一旦已审阅[策略选项](#learn-about-atp-anti-phishing-policy-options)，请花一些时间来每个确定您将需要多少个策略和优先级。 
     
 - Plan to 花约 5-15 分钟设置您的第一个防钓鱼策略。

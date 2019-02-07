@@ -15,12 +15,12 @@ search.appverid:
 - MOE150
 ms.assetid: d14ae7c3-fcb0-4a03-967b-cbed861bb086
 description: 了解 Office 365 中的监督策略
-ms.openlocfilehash: 0c76ba5b17277d8bd441810415e7e9acd1adbf36
-ms.sourcegitcommit: 3cb775e60b3806b66568ed2f9664c17ef96ca8de
+ms.openlocfilehash: c66ded719791c4a5ecaaa459f81d0a0d4a3db924
+ms.sourcegitcommit: e4d56cab6bbb77404457d506d17f6a7577f302be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/28/2019
-ms.locfileid: "29603522"
+ms.lasthandoff: 02/06/2019
+ms.locfileid: "29760074"
 ---
 # <a name="supervision-policies-in-office-365"></a>Office 365 中的监督策略
 
@@ -69,12 +69,7 @@ Office 365 中的监督策略，您可以捕获员工通信，以指定审阅者
 
 使用监督策略中，您可以选择要监视的一个或多个下列通信平台中的邮件：
 
-- **Exchange 电子邮件：** 驻留在 Exchange Online 的 Office 365 订阅一部分的邮箱的所有合格的消息监督。电子邮件和附件匹配监督策略条件是可立即使用的监控和监督报告中。所支持的附件类型有：
-
-    - Microsoft Word (.docx)
-    - Microsoft Excel (.xlsx)
-    - Microsoft PowerPoint (.pptx)
-
+- **Exchange 电子邮件：** 驻留在 Exchange Online 的 Office 365 订阅一部分的邮箱的所有合格的消息监督。电子邮件和附件匹配监督策略条件是可立即使用的监控和监督报告中。监督的受支持的附件类型是[Exchange 邮件流规则内容检查支持的文件类型](https://docs.microsoft.com/exchange/security-and-compliance/mail-flow-rules/inspect-message-attachments#supported-file-types-for-mail-flow-rule-content-inspection)的相同。
 - **Microsoft 团队：** 可以监督聊天通信和公用和专用的 Microsoft 团队通道和单个聊天中关联的附件。团队聊天匹配监督策略条件和处理每 24 小时一次，然后可监控并在监督报告。
 - **第三方源：** 如果您已导入此数据到 Office 365 邮箱在组织中，您可以监督来自第三方源 （如从 Facebook 或收存箱） 的通信。[了解如何导入到 Office 365 的第三方数据](https://docs.microsoft.com/office365/securitycompliance/archiving-third-party-data)。
 

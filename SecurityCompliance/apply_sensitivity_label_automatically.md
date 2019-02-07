@@ -12,12 +12,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 创建敏感度标签时，你可以自动为文档或电子邮件分配标签，也可以提示用户选择你建议的标签。
-ms.openlocfilehash: 8464847704b5e724b97b4af9b51397f2985311a8
-ms.sourcegitcommit: d05a9937780d210b7ad48e721b947397ac5405a2
+ms.openlocfilehash: 5165e9c7bd674046f6a3f3a9d1f1eeedc35f931e
+ms.sourcegitcommit: 44cea06d4b007988cadc1e9de2d5ef601f1b3863
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "29610579"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "29760763"
 ---
 # <a name="apply-a-sensitivity-label-to-content-automatically"></a>将敏感度标签自动应用于内容
 
@@ -36,7 +36,7 @@ ms.locfileid: "29610579"
 
 ![灵敏度标签的自动标签选项](media/Sensitivity_labels_Auto_labeling_options.png)
 
-# <a name="apply-a-sensitivity-label-automatically-based-on-conditions"></a>根据条件自动应用敏感度标签
+## <a name="apply-a-sensitivity-label-automatically-based-on-conditions"></a>根据条件自动应用敏感度标签
 
 敏感度标签的最强大功能之一是，能自动应用于符合特定条件的内容。在这种情况下，组织内人员无需应用敏感度标签，而是由 Office 365 代劳。
    
@@ -52,7 +52,7 @@ ms.locfileid: "29610579"
 
 ![指出文档自动应用了标签的通知](media/sensitivity_labels_msg_doc_was_auto_labeled.PNG)
 
-# <a name="recommend-that-the-user-apply-a-sensitivity-label"></a>建议用户应用敏感度标签
+## <a name="recommend-that-the-user-apply-a-sensitivity-label"></a>建议用户应用敏感度标签
 
 如果愿意，可以建议用户应用标签，而不是自动对内容应用敏感度标签。此做法为用户提供了灵活性，他们可以接受分类和任何相关保护，也可以在标签不适合其文档或电子邮件时拒绝该建议。
 
@@ -64,7 +64,7 @@ ms.locfileid: "29610579"
 
 ![关于应用建议标签的提示](media/Sensitivity_label_Prompt_for_required_label.png)
 
-# <a name="how-automatic-or-recommended-labels-are-applied"></a>如何应用自动标签或建议标签
+## <a name="how-automatic-or-recommended-labels-are-applied"></a>如何应用自动标签或建议标签
 
 - 自动标签适用于 Word、Excel 和 PowerPoint 的文档保存场合以及 Outlook 的电子邮件发送场合。这些条件下会检测文档和电子邮件正文中的敏感信息，以及页眉和页脚中的敏感信息，但不包括电子邮件的主题行和附件中的敏感信息。
 
@@ -74,6 +74,6 @@ ms.locfileid: "29610579"
 
 - 不能对以前使用更高分类级别标记的文档使用建议分类。在这种情况下，当内容已经标记有更高分类级别时，用户将看不到包含建议和策略提示的提示信息。
 
-# <a name="how-multiple-conditions-are-evaluated-when-they-apply-to-more-than-one-label"></a>在多个条件适用于多个标签时如何评估这些条件
+## <a name="how-multiple-conditions-are-evaluated-when-they-apply-to-more-than-one-label"></a>在多个条件适用于多个标签时如何评估这些条件
 
 根据你在策略中为标签指定的位置按顺序对标签进行评估：位置最靠前的标签具有最低位置（最不敏感），位置最靠后的标签具有最高位置（最敏感）。有关优先级的详细信息，请参阅[标签优先级（顺序很重要）](sensitivity-labels.md#label-priority-order-matters)。

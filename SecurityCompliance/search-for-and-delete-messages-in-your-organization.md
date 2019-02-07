@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.assetid: 3526fd06-b45f-445b-aed4-5ebd37b3762a
 description: 使用搜索和清除 Office 365 安全性功能&amp;合规性中心以搜索并删除从您的组织中的所有邮箱的电子邮件。
-ms.openlocfilehash: 82ba38ef2c3c8c6b78743a4b2263dde0ef3a5b48
-ms.sourcegitcommit: 9034809b6f308bedc3b8ddcca8242586b5c30f94
+ms.openlocfilehash: be83b2e3e765980ae401356b924c26c53386a2b3
+ms.sourcegitcommit: d6a28c4f6db6a676ca960173e8ff8f17d4aa1c4b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "28015014"
+ms.lasthandoff: 02/06/2019
+ms.locfileid: "29755253"
 ---
 # <a name="search-for-and-delete-email-messages-in-your-office-365-organization---admin-help"></a>搜索并删除您的 Office 365 组织的管理员帮助中的电子邮件
 
@@ -38,9 +38,9 @@ ms.locfileid: "28015014"
   
 ## <a name="before-you-begin"></a>准备工作
 
-- 若要创建和运行内容的搜索，您必须是**电子数据展示管理员**角色组的成员或**合规性搜索**管理角色分配。若要删除的邮件，您必须是**组织管理**角色组的成员或**搜索和清除**管理角色分配。有关将用户添加到角色组的信息，请参阅[向 Office 365 安全性授予用户访问&amp;合规性中心](grant-access-to-the-security-and-compliance-center.md)。
+- 若要创建和运行内容的搜索，您必须是**电子数据展示管理员**角色组的成员或**合规性搜索**管理角色分配。若要删除的邮件，您必须是**组织管理**角色组的成员或**搜索和清除**管理角色分配。有关将用户添加到角色组的信息，请参阅[授予用户对 Office 365 安全性 & 合规中心的访问](grant-access-to-the-security-and-compliance-center.md)。
     
-- 您必须使用安全&amp;合规性中心 PowerShell，可以删除邮件。有关如何将连接的说明，请参阅[Step 2](#step-2-connect-to-security-amp-compliance-center-powershell) 。
+- 您必须使用安全 & 合规性中心 PowerShell 删除邮件。有关如何将连接的说明，请参阅[Step 2](#step-2-connect-to-security-amp-compliance-center-powershell) 。
     
 - 每个邮箱的 10 项最多可以一次中删除。搜索并删除邮件的功能要用作事件响应工具，因为此限制有助于确保邮件快速将从邮箱中删除。此功能不适用于用户邮箱清理。若要删除 10 个以上的项目，可以在 Exchange Online PowerShell 中使用**Search-mailbox DeleteContent**命令。请参阅[搜索并删除邮件的管理员技术](search-for-and-delete-messagesadmin-help.md)。
     
@@ -50,7 +50,7 @@ ms.locfileid: "28015014"
     
 ## <a name="step-1-create-a-content-search-to-find-the-message-to-delete"></a>步骤 1：创建内容搜索来查找要删除的邮件
 
-第一步是创建和运行内容搜索以查找您想要从您的组织中的邮箱中删除的消息。您可以通过使用安全创建搜索&amp;合规性中心或通过运行**新建 ComplianceSearch**和**开始 ComplianceSearch** cmdlet。[步骤 3](#step-3-delete-the-message)中运行**新建 ComplianceSearchAction** cmdlet 将删除与此搜索查询匹配的邮件。有关创建内容搜索和配置搜索查询的信息，请参阅以下主题： 
+第一步是创建和运行内容搜索以查找您想要从您的组织中的邮箱中删除的消息。您可以通过使用安全创建搜索&amp;合规性中心或通过运行**新建 ComplianceSearch**和**开始 ComplianceSearch** cmdlet。与查询匹配将删除此搜索运行的邮件**新建 ComplianceSearchAction-清除**命令在[步骤 3](#step-3-delete-the-message)。有关创建内容搜索和配置搜索查询的信息，请参阅以下主题： 
   
 - [Office 365 中的内容搜索](content-search.md)
     
@@ -91,11 +91,11 @@ ms.locfileid: "28015014"
     (From:chatsuwloginsset12345@outlook.com) AND (Subject:"Update your account information")
     ```
 
-## <a name="step-2-connect-to-security-amp-compliance-center-powershell"></a>步骤 2： 连接到安全&amp;合规性中心 PowerShell
+## <a name="step-2-connect-to-security--compliance-center-powershell"></a>步骤 2： 连接到安全 & 合规性中心 PowerShell
 
-下一步是连接到安全&amp;为您的组织的合规性中心 PowerShell。有关分步说明，请参阅[连接到 Office 365 安全性&amp;合规性中心 PowerShell](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell)。
+下一步是连接到您的组织的安全 & 合规性中心 PowerShell。有关分步说明，请参阅[连接到 Office 365 安全性&amp;合规性中心 PowerShell](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell)。
   
-如果您的 Office 365 帐户使用多因素身份验证 (MFA) 或联合身份验证，则无法使用说明以前在连接到安全性主题中&amp;合规性中心 PowerShell。相反，请参阅主题中的说明[连接到 Office 365 安全性&amp;使用多因素身份验证的合规性中心 PowerShell](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/mfa-connect-to-scc-powershell)。
+如果您的 Office 365 帐户使用多因素身份验证 (MFA) 或联合身份验证，不能使用以前在连接到安全 & 合规性中心 PowerShell 主题中的说明。相反，请参阅[连接到 Office 365 安全性 & 合规性中心 PowerShell 使用多因素身份验证](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/mfa-connect-to-scc-powershell)的主题中的说明。
   
 ## <a name="step-3-delete-the-message"></a>步骤 3： 删除邮件
 
@@ -106,22 +106,16 @@ ms.locfileid: "28015014"
 ```
 New-ComplianceSearchAction -SearchName "Remove Phishing Message" -Purge -PurgeType SoftDelete
 ```
-在以下示例中，命令将硬删除名为"删除网络钓鱼邮件"内容搜索返回的搜索结果。 
-
-```
-New-ComplianceSearchAction -SearchName "Remove Phishing Message" -Purge -PurgeType HardDelete
-```
-
-*SearchName*参数指定搜索是您在步骤 1 中创建内容搜索。 
 
 硬-删除"删除网络钓鱼邮件"内容搜索返回的项，需要运行以下命令：
 
 ```
 New-ComplianceSearchAction -SearchName "Remove Phishing Message" -Purge -PurgeType HardDelete
 ```
+
+请注意，软-或硬-删除邮件到运行上述命令时，搜索*SearchName*参数指定您在步骤 1 中创建内容搜索。 
   
 有关详细信息，请参阅[新建 ComplianceSearchAction](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-content-search/New-ComplianceSearchAction)。
-  
 
 ## <a name="more-information"></a>更多信息
 
@@ -147,6 +141,6 @@ New-ComplianceSearchAction -SearchName "Remove Phishing Message" -Purge -PurgeTy
 
     清除邮件并将其移至清除文件夹后，邮件保留，直到保留持续时间过期。如果是无限保留持续时间，然后直到保留被删除或更改保留持续时间也将保留项。
     
-- **为什么是搜索并删除划分不同的安全性和合规性中心角色组的工作流？**
+- **为什么是搜索并删除划分不同安全 & 合规中心的角色组的工作流？**
 
     如前所述，人员必须是电子数据展示管理员角色组的成员，或者要搜索邮箱的合规性搜索管理角色分配。若要删除的邮件，人员必须是组织管理角色组的成员或搜索和清除管理角色分配。这便可以控制谁可以在组织中搜索邮箱和谁可以删除邮件。 

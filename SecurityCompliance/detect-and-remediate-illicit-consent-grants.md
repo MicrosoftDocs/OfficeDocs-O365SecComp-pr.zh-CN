@@ -16,12 +16,12 @@ ms.assetid: ''
 search.appverid:
 - MET150
 description: 了解如何识别和修正 Office 365 中的非法同意授予攻击。
-ms.openlocfilehash: 412b601af30ce87332225d271ec1a9e622012405
-ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+ms.openlocfilehash: 457279e6d9498ac132ed3fb77b7c0fef68a293fa
+ms.sourcegitcommit: d6a28c4f6db6a676ca960173e8ff8f17d4aa1c4b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22526060"
+ms.lasthandoff: 02/06/2019
+ms.locfileid: "29755233"
 ---
 # <a name="detect-and-remediate-illicit-consent-grants-in-office-365"></a>检测和修正 Office 365 中的非法授权
 
@@ -34,7 +34,7 @@ ms.locfileid: "22526060"
 您需要搜索 Office 365**审核日志**以查找迹象，也称为指示器的威胁 (IOC) 的此类攻击。对于具有多个 Azure 注册应用程序和大型用户群的组织，最佳做法是查看每周基于您组织同意授予。
 ### <a name="steps-for-finding-signs-of-this-attack"></a>查找此类攻击的迹象的步骤
 1. 在 Office 365 租户中打开的**安全性和合规性中心**。
-2. 导航到**搜索和调查**节点，然后选择**审核日志**搜索。
+2. 导航到**搜索 & 调查**节点，然后选择**审核日志**搜索。
 3. 创建搜索 （所有活动和所有用户） 和筛选的同意的结果，向应用程序，并添加 OAuth2PermissionGrant。
 4. 检查扩展属性并检查，以查看是否 IsAdminContent 设置为 True。
 
@@ -65,9 +65,9 @@ ms.locfileid: "22526060"
 让您的用户转到https://myapps.microsoft.com并查看那里其自己的应用程序访问。他们应能够看到具有访问权限的所有应用程序，查看有关其 （包括的访问范围） 的详细信息，并能够取消可疑或非法的应用程序的权限。
 
 ### <a name="steps-for-doing-this-with-powershell"></a>使用 PowerShell 进行此操作的步骤
-若要验证非法 Consent 授予攻击的最简单方式是运行[Get AzureADPSPermissions.ps1](https://gist.github.com/psignoret/41793f8c6211d2df5051d77ca3728c09)，其中将转储所有 OAuth 同意授予和应用程序权限的所有用户在您的租户成一个.csv 文件。 
+若要验证非法 Consent 授予攻击的最简单方式是运行[Get AzureADPSPermissions.ps1](https://gist.github.com/psignoret/41793f8c6211d2df5051d77ca3728c09)，其中将转储所有 OAuth 同意授予和 OAuth 相关应用程序的所有用户在您的租户成一个.csv 文件。 
 
-#### <a name="pre-requisites"></a>必备组件
+#### <a name="pre-requisites"></a>先决条件
 - 安装 Azure AD PowerShell 库。
 - 将对运行该脚本租户上的全局管理员权限。
 - 从中将运行脚本的计算机上的本地管理员。
@@ -79,7 +79,7 @@ ms.locfileid: "22526060"
 2. 下载，或将从 GitHub [Get AzureADPSPermissions.ps1](https://gist.github.com/psignoret/41793f8c6211d2df5051d77ca3728c09)脚本复制到从中将运行 scruipt 文件夹。 这将输出"permissions.csv"文件将写入的同一个文件夹。
 3. 打开作为管理员的 PowerShell 实例，并打开保存到脚本的文件夹。
 4. 连接到您的目录使用[连接 AzureAD](https://docs.microsoft.com/powershell/module/azuread/connect-azuread?view=azureadps-2.0) cmdlet。
-5. 运行以下 PowerShell 命令行，如下所示：`.Get-AzureASPSPermissions.ps1 | Export-csv -path "Permissions.csv" -NoTypeInformation`
+5. 运行以下 PowerShell 命令行，如下所示：`Get-AzureADPSPermissions.ps1 | Export-csv -path "Permissions.csv" -NoTypeInformation`
 
 该脚本将生成一个名为 Permissions.csv 的文件。请按照下列步骤以查找非法的应用程序权限授予： 
 1. ConsentType 列 （列 G） 中搜索"AllPrinciples"的值。AllPrincipals 权限允许客户端应用程序访问租赁中的每个人的内容。本机 Office 365 应用程序需要此权限，以便它们正确运行。拥有此权限的每个非 Microsoft 应用程序应仔细检查。
