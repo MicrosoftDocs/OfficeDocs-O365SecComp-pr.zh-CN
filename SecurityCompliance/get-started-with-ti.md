@@ -3,7 +3,7 @@ title: 开始使用 Office 365 威胁智能
 ms.author: deniseb
 author: denisebmsft
 manager: laurawi
-ms.date: 01/22/2019
+ms.date: 02/07/2019
 ms.audience: ITPro
 ms.topic: article
 ms.service: o365-administration
@@ -13,18 +13,16 @@ search.appverid:
 - MOE150
 ms.assetid: 38e9b67f-d188-490f-bc91-a1ae4b270441
 description: 了解 Office 365 威胁智能以及如何入门。
-ms.openlocfilehash: d2b3d245a0d3d26e26052468313da8db7df5ea9b
-ms.sourcegitcommit: a1d8174240eb88b51af3a1ba26d715292fe08c53
+ms.openlocfilehash: 141bc0d2ffc2084f56f50333c756507d04a37d44
+ms.sourcegitcommit: c2ec9a4b0279a248b85c2e4a4e91458214b5b31c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29426037"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "29770787"
 ---
 # <a name="get-started-with-office-365-threat-intelligence"></a>开始使用 Office 365 威胁智能
 
 如果您是组织的安全工作组的一部分，您可以使用 Office 365 威胁智能从攻击保护您的用户。Office 365 威胁智能帮助安全分析师和管理员保留用户安全通过冒泡 up 见解标识基于什么操作中的最新动态其 Office 365 环境。这些见解基于威胁智能数据和到专色模式的对应于攻击行为和可疑活动的系统的全面存储库。
-  
-![威胁智能可帮助您了解在您的组织目标的攻击](media/6ce67cf2-3bbb-4008-9c55-1b4c7af0471f.png)
   
 阅读此文，了解有关 Office 365 威胁智能所包含的内容和如何入门。
   
