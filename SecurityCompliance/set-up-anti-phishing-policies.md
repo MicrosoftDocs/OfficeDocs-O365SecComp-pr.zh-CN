@@ -10,12 +10,12 @@ ms.service: o365-administration
 localization_priority: Normal
 ms.assetid: 5a6f2d7f-d998-4f31-b4f5-f7cbf6f38578
 description: 防钓鱼保护，与 Office 365 高级威胁保护和 Office 365 Exchange Online Protection 中的基本保护的一部分的全面防护可帮助您的组织防止恶意基于模拟的网络钓鱼攻击和其他网络钓鱼攻击。
-ms.openlocfilehash: 1ecc76f674b1d64b59b5dec0f92cd06bbe8b55e8
-ms.sourcegitcommit: d6a28c4f6db6a676ca960173e8ff8f17d4aa1c4b
+ms.openlocfilehash: 333176ebef8d6367f5090730386fc820927cf3af
+ms.sourcegitcommit: c1c41744c2de89c9e172f817c8f73bb0ada81a58
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/06/2019
-ms.locfileid: "29755263"
+ms.lasthandoff: 02/09/2019
+ms.locfileid: "29792277"
 ---
 # <a name="set-up-office-365-atp-anti-phishing-and-anti-phishing-policies"></a>设置 Office 365 ATP 防钓鱼和防钓鱼策略
 
@@ -24,7 +24,7 @@ ms.locfileid: "29755263"
 网络钓鱼攻击来自在窗体的各种基于商品攻击到目标的矛网络钓鱼或 whaling。具有不断增长的复杂性，很难甚至培训眼睛标识其中一些复杂攻击。幸运的是，可以帮助 Office 365 高级威胁保护。您可以设置 ATP 防钓鱼策略，以帮助确保您的组织受到此类攻击。
   
 > [!NOTE]
-> ATP 防钓鱼才可用的高级威胁保护 (ATP)。ATP 中包含在订阅，如[Microsoft 365 企业版](https://www.microsoft.com/microsoft-365/enterprise/home)、 [Microsoft 365 企业版](https://www.microsoft.com/microsoft-365/business)、 Office 365 企业 E5、 Office 365 教育版 A5 等。如果您的组织具有不包括 Office 365 ATP 的 Office 365 订阅，您可能可以作为购买 ATP。有关详细信息，请参阅[Office 365 高级威胁 Protection Service Description](https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description)。请确保您的组织使用 Office 365 ProPlus 的最新版本 Windows 上以充分利用 ATP 防钓鱼保护。 
+> ATP 防钓鱼才可用的高级威胁保护 (ATP)。ATP 中包含在订阅，如[Microsoft 365 企业版](https://www.microsoft.com/microsoft-365/enterprise/home)、 [Microsoft 365 企业版](https://www.microsoft.com/microsoft-365/business)、 Office 365 企业 E5、 Office 365 教育版 A5 等。如果您的组织具有不包括 Office 365 ATP 的 Office 365 订阅，您可能可以作为购买 ATP。有关详细信息，请参阅[Office 365 高级威胁保护计划和定价](https://products.office.com/exchange/advance-threat-protection)和[Office 365 高级威胁 Protection Service Description](https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description)。请确保您的组织使用 Office 365 ProPlus 的最新版本 Windows 上以充分利用 ATP 防钓鱼保护。 
 
 防钓鱼策略也是可用于 Office 365 Exchange Online Protection，与一组有限的反欺骗保护旨在防止基于身份验证和基于欺骗攻击。
   

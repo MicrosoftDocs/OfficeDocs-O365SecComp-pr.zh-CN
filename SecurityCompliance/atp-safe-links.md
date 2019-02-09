@@ -20,12 +20,12 @@ search.appverid:
 - ZWD160
 ms.assetid: dd6a1fef-ec4a-4cf4-a25a-bb591c5811e3
 description: 安全链接功能提供的超链接中 Office 文档和电子邮件中的时间的单击验证。使用安全的链接可从网络钓鱼和其他攻击保护您的组织。
-ms.openlocfilehash: 7e610d23534dcd4c9ea20608bab6fca536f877cb
-ms.sourcegitcommit: a64af0ebd0b03e4a5e60a33e9108c44c7d74f356
+ms.openlocfilehash: 8c63de9e62e33dbca6dde5a5bb45a7f7875ab71f
+ms.sourcegitcommit: c1c41744c2de89c9e172f817c8f73bb0ada81a58
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/05/2019
-ms.locfileid: "29741105"
+ms.lasthandoff: 02/09/2019
+ms.locfileid: "29792237"
 ---
 # <a name="office-365-atp-safe-links"></a>Office 365 ATP 安全链接
 
@@ -88,7 +88,7 @@ Office 365 ATP 安全链接 （[高级威胁保护](office-365-atp.md)的一部�
 
 ## <a name="how-to-get-atp-safe-links-protection"></a>如何获取 ATP 安全链接保护
 
-首先，请确保您的订阅包括[高级威胁保护](office-365-atp.md)。ATP 中包含在订阅，如[Microsoft 365 企业版](https://www.microsoft.com/microsoft-365/enterprise/home)、 [Microsoft 365 企业版](https://www.microsoft.com/microsoft-365/business)、 Office 365 企业 E5、 Office 365 教育版 A5 等。如果您的组织具有不包括 Office 365 ATP 的 Office 365 订阅，您可能可以作为购买 ATP。有关详细信息，请参阅[Office 365 高级威胁 Protection Service Description](https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description)。 
+首先，请确保您的订阅包括[高级威胁保护](office-365-atp.md)。ATP 中包含在订阅，如[Microsoft 365 企业版](https://www.microsoft.com/microsoft-365/enterprise/home)、 [Microsoft 365 企业版](https://www.microsoft.com/microsoft-365/business)、 Office 365 企业 E5、 Office 365 教育版 A5 等。如果您的组织具有不包括 Office 365 ATP 的 Office 365 订阅，您可能可以作为购买 ATP。有关详细信息，请参阅[Office 365 高级威胁保护计划和定价](https://products.office.com/exchange/advance-threat-protection)和[Office 365 高级威胁 Protection Service Description](https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description)。 
   
 接下来，请确保您 ATP 安全链接的策略定义。（请参阅[Set up Office 365 ATP 安全链接策略](set-up-atp-safe-links-policies.md)）。ATP 安全链接功能处于活动状态时：
   
@@ -105,7 +105,7 @@ Office 365 ATP 安全链接 （[高级威胁保护](office-365-atp.md)的一部�
 |角色  |其中/如何分配  |
 |---------|---------|
 |Office 365 全局管理员 |注册以购买 Office 365 的人是默认情况下是全局管理员。（请参阅要了解的[有关 Office 365 管理员角色](https://docs.microsoft.com/office365/admin/add-users/about-admin-roles)）。         |
-|Office 365 安全管理员 |管理中心 ([https://aka.ms/admincenter](https://aka.ms/admincenter))|
+|Security Administrator |Azure Active Directory 管理员中心 ([https://aad.portal.azure.com](https://aad.portal.azure.com))|
 |Exchange Online 组织管理 |Exchange 管理员中心 ([https://outlook.office365.com/ecp](https://outlook.office365.com/ecp)) <br>或 <br>  PowerShell cmdlet (请参阅[Exchange Online PowerShell 中](https://docs.microsoft.com/powershell/exchange/exchange-online/exchange-online-powershell?view=exchange-ps)) |
     
 ## <a name="how-to-make-sure-atp-safe-links-protection-is-in-place"></a>如何使确保 ATP 安全链接保护已就绪
