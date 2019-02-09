@@ -13,12 +13,12 @@ search.appverid:
 - MET150
 ms.assetid: c440b2ac-cafa-4be5-ba4c-14278a7990ae
 description: 本主题提供了关于托管隔离的常见问题及解答。
-ms.openlocfilehash: cc8a05b575e17dbc71d4b9e214cb29a4cafe8b6b
-ms.sourcegitcommit: e9dca2d6a7838f98bb7eca127fdda2372cda402c
+ms.openlocfilehash: 1473e682faab0471f5a6356e8d54a65a9baf291a
+ms.sourcegitcommit: 7e2a0185cadea7f3a6afc5ddc445eac2e1ce22eb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/21/2018
-ms.locfileid: "23003191"
+ms.lasthandoff: 02/09/2019
+ms.locfileid: "29792493"
 ---
 # <a name="quarantine-faq"></a>隔离常见问题解答
 
@@ -50,7 +50,7 @@ ms.locfileid: "23003191"
   
  **问：邮件将在隔离邮箱中保留多长时间？**
   
-答： 默认情况下，垃圾邮件隔离邮件将保存在隔离的 15 天时匹配传输规则的隔离的邮件隔离邮箱中保留 7 天。这段时间后邮件将被删除，并且不可检索。匹配传输规则的隔离邮件的保留期不可配置。但是，可以通过在内容筛选器策略的**保留期限 （天） 的垃圾邮件**设置缩短的垃圾邮件隔离邮件的保留期。有关详细信息，请参阅[配置垃圾邮件筛选器策略](configure-your-spam-filter-policies.md)。
+答： 默认情况下，垃圾邮件隔离邮件将保存在隔离 30 天时匹配传输规则的隔离的邮件隔离邮箱中保留 7 天。这段时间后邮件将被删除，并且不可检索。匹配传输规则的隔离邮件的保留期不可配置。但是，可以通过在内容筛选器策略的**保留期限 （天） 的垃圾邮件**设置缩短的垃圾邮件隔离邮件的保留期。有关详细信息，请参阅[配置垃圾邮件筛选器策略](configure-your-spam-filter-policies.md)。
   
  **问：可以一次释放或报告多个被隔离的邮件吗？**
   
