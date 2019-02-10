@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.assetid: 5e377752-700d-4870-9b6d-12bfc12d2423
 description: 借助保留策略，可主动决定是保留内容还是删除内容，亦或是先保留再删除内容；可将一个策略应用于整个组织，或只应用于特定位置或用户；并能将策略应用于所有内容，或只应用于满足特定条件的内容
-ms.openlocfilehash: 61d5a79d46a35cf4a58fb3def8ae124f7025fd6d
-ms.sourcegitcommit: 71922c3e427008d904e5eb6c1a6dc7330e666c8c
+ms.openlocfilehash: 328d63265fdaa311b94c25902e7f380c9b0be89c
+ms.sourcegitcommit: c2ec9a4b0279a248b85c2e4a4e91458214b5b31c
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/01/2019
-ms.locfileid: "29690413"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "29770817"
 ---
 # <a name="overview-of-retention-policies"></a>保留策略概述
 
@@ -53,8 +53,6 @@ Office 365 中的保留策略可有助于实现所有这些目标。管理内容
   
 ![安全与合规中心内的“保留”页](media/107fc33a-6a29-44d1-85e4-0efef0544147.png)
   
-> [!NOTE]
-> 若要将 Exchange Online 邮箱纳入保留策略，必须向邮箱分配 Exchange Online 计划 2 许可证。如果向邮箱分配的是 Exchange Online 计划 1 许可证，必须向邮箱单独分配 Exchange Online Archiving 许可证，才能将它纳入保留策略。 
   
 ## <a name="how-a-retention-policy-works-with-content-in-place"></a>保留策略如何处理留在原处的内容
 
