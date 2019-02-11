@@ -13,12 +13,12 @@ search.appverid:
 - MOE150
 ms.assetid: 2062c312-b1e4-4ce7-8cb2-ea39bc0dfdad
 description: Office 365 云应用程序安全性的 OAuth 应用程序帮助您管理您的用户下载用于 Office 365 数据的应用程序
-ms.openlocfilehash: 2e3c6d9d42b22aa8bb666211431197744471e84f
-ms.sourcegitcommit: 25f72d20e76463c2f0a075dfc0116f00c934bd77
+ms.openlocfilehash: ae32e3c6b15f4ad4794a3dd08c3992adaeba655c
+ms.sourcegitcommit: 7e2a0185cadea7f3a6afc5ddc445eac2e1ce22eb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/27/2018
-ms.locfileid: "27447040"
+ms.lasthandoff: 02/11/2019
+ms.locfileid: "29603683"
 ---
 # <a name="manage-oauth-apps-using-office-365-cloud-app-security"></a>使用 Office 365 云应用安全管理 OAuth 应用
 
@@ -35,13 +35,9 @@ ms.locfileid: "27447040"
 > [!NOTE]
 > 在 Office 365 云应用程序安全性门户管理 OAuth 应用程序。您必须是要执行以下任务的全局管理员或 security 管理员程序。若要了解详细，请参阅[Permissions in Office 365 安全性&amp;合规性中心](permissions-in-the-security-and-compliance-center.md)。 
   
-1. 转到[https://protection.office.com](https://protection.office.com)和 Office 365 中使用您的工作或学校帐户登录。(您将转到安全&amp;合规性中心。) 
-    
-2. 转到**通知** \> **管理高级通知**。
-    
-3. 单击 （或点击）**转到 Office 365 云应用程序安全性**。<br/>![安全中&amp;合规性中心中，选择管理高级通知转到 Office 365 云应用程序安全性](media/958632d4-03e3-4ade-8e22-d5509db6fca7.png)<br/>**注意**： 如果未尚未开启 Office 365 云应用程序安全性，您可以执行的操作此页上。请参阅[为 Office 365 云应用程序安全性做好准备](get-ready-for-office-365-cas.md)。 
+1. 转到云应用程序安全性门户 ([https://portal.cloudappsecurity.com](https://portal.cloudappsecurity.com)) 和登录。
   
-4. 选择**调查** \> **OAuth 应用程序**。<br/>![在 O365 CAS 门户中，选择调查。](media/OCAS-OAuthApps.png)<br/>
+2. 选择**调查** \> **OAuth 应用程序**。<br/>![在 O365 CAS 门户中，选择调查。](media/OCAS-OAuthApps.png)<br/>
   
 ## <a name="what-youll-see-on-the-manage-oauth-apps-page"></a>您将看到上管理 OAuth 应用程序页
 

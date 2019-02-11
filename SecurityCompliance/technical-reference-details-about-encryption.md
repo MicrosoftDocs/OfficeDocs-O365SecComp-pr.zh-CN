@@ -3,7 +3,7 @@ title: 有关 Office 365 加密的技术参考详情
 ms.author: krowley
 author: kccross
 manager: laurawi
-ms.date: 4/12/2018
+ms.date: 1/15/2019
 ms.audience: ITPro
 ms.topic: reference
 ms.service: o365-administration
@@ -14,20 +14,20 @@ search.appverid:
 - MOE150
 ms.assetid: 862cbe93-4268-4ef9-ba79-277545ecf221
 description: Office 365 中查看有关加密技术详细信息。
-ms.openlocfilehash: 69365b66479ab89a9c036fe489b4087d327460eb
-ms.sourcegitcommit: e4ebef6aaf756eefb86c9f3a602cf75f5d344271
+ms.openlocfilehash: bb4629d89d2ed625cc1b817c53d2355484bfdf6c
+ms.sourcegitcommit: 7e2a0185cadea7f3a6afc5ddc445eac2e1ce22eb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/07/2018
-ms.locfileid: "26026519"
+ms.lasthandoff: 02/11/2019
+ms.locfileid: "28326933"
 ---
 # <a name="technical-reference-details-about-encryption-in-office-365"></a>有关 Office 365 加密的技术参考详情
 
 请参阅本文以了解有关证书、 技术和 TLS 用于[Office 365 中的加密](encryption.md)密码套件。本文还提供了有关计划弃用情况的详细信息。
   
 - 如果您正在寻找概述信息，请参阅[Office 365 中的加密](encryption.md)。
-    
 - 如果您正在寻找安装信息，请参阅[Office 365 企业版中的加密设置](set-up-encryption.md)。
+- 有关支持的特定版本的 Windows 密码套件的信息，请参阅[TLS/SSL (Schannel SSP) 中的密码套件](https://docs.microsoft.com/windows/desktop/SecAuthN/cipher-suites-in-schannel)。
     
 ## <a name="microsoft-office-365-certificate-ownership-and-management"></a>Microsoft Office 365 证书所有权和管理
 
@@ -35,7 +35,10 @@ ms.locfileid: "26026519"
   
 ## <a name="current-encryption-standards-and-planned-deprecations"></a>当前加密标准和计划弃用情况
 
-若要继续提供最佳的 Office 365 加密，Microsoft 定期审查支持的加密标准。有时，我们需要弃用旧标准，如随即过期，因此不安全。本主题介绍有关规划弃用情况当前支持的密码套件和其他标准以及详细信息。
+若要继续提供最佳的 Office 365 加密，Microsoft 定期审查支持的加密标准。有时，我们需要弃用旧标准，如随即过期，因此不安全。本主题介绍有关规划弃用情况当前支持的密码套件和其他标准以及详细信息。 
+
+## <a name="fips-compliance-for-office-365"></a>Office 365 FIPS 合规性
+Office 365 支持的所有密码套件都使用下 FIPS 140 2 可接受的算法。Office 365 FIPS 验证继承 Windows （通过 Schannel)。Schannel 有关的信息，请参阅[TLS/SSL (Schannel SSP) 中的密码套件](https://docs.microsoft.com/windows/desktop/SecAuthN/cipher-suites-in-schannel)。
   
 ## <a name="versions-of-tls-supported-by-office-365"></a>Office 365 支持的 TLS 版本
 
@@ -89,6 +92,8 @@ ms.locfileid: "26026519"
   
 |**协议**|**密码套件名称**|**密钥交换算法/强度**|**完全向前保密支持**|**身份验证算法/强度**|**密码/强度**|
 |:-----|:-----|:-----|:-----|:-----|:-----|
+|TLS 1.2  <br/> |TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384  <br/> |ECDH/192  <br/> |是  <br/> |RSA/112  <br/> |AES/256  <br/> |
+|TLS 1.2  <br/> |TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256  <br/> |ECDH/128  <br/> |是  <br/> |RSA/112  <br/> |AES/128  <br/> |
 |TLS 1.2  <br/> |TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA384_P384  <br/> |ECDH/192  <br/> |是  <br/> |RSA/112  <br/> |AES/256  <br/> |
 |TLS 1.2  <br/> |TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA256_P256  <br/> |ECDH/128  <br/> |是  <br/> |RSA/112  <br/> |AES/128  <br/> |
 |TLS 1.0、1.1、1.2  <br/> |TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA_P384  <br/> |ECDH/192  <br/> |是  <br/> |RSA/112  <br/> |AES/256  <br/> |
@@ -97,10 +102,9 @@ ms.locfileid: "26026519"
 |TLS 1.2  <br/> |TLS_RSA_WITH_AES_128_CBC_SHA256  <br/> |RSA/112  <br/> |否  <br/> |RSA/112  <br/> |AES/128  <br/> |
 |TLS 1.0、1.1、1.2  <br/> |TLS_RSA_WITH_AES_256_CBC_SHA  <br/> |RSA/112  <br/> |否  <br/> |RSA/112  <br/> |AES/256  <br/> |
 |TLS 1.0、1.1、1.2  <br/> |TLS_RSA_WITH_AES_128_CBC_SHA  <br/> |RSA/112  <br/> |否  <br/> |RSA/112  <br/> |AES/128  <br/> |
-|TLS 1.0、1.1、1.2  <br/> |TLS_RSA_WITH_3DES_EDE_CBC_SHA  <br/> |RSA/112  <br/> |否  <br/> |RSA/112  <br/> |3DES/192  <br/> |
    
 ## <a name="related-topics"></a>相关主题
-<a name="TLSCipherSuites"> </a>
+[在 Windows 10 v1607 TLS 加密套件](https://docs.microsoft.com/windows/desktop/SecAuthN/tls-cipher-suites-in-windows-10-v1607)
 
 [Office 365 中的加密](encryption.md)
   

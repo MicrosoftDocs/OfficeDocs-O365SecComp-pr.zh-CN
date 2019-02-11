@@ -13,17 +13,15 @@ ms.service: o365-solutions
 localization_priority: Normal
 search.appverid:
 - MET150
-ms.custom: ''
-ms.assetid: ''
 description: 了解如何识别和修正 Outlook 规则和 Office 365 中的自定义窗体注入攻击
-ms.openlocfilehash: 893ade67976d7e6d1442a23f1f61948cea591dad
-ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+ms.openlocfilehash: 1067d7c791217c146fedea839754e45f76ef5d8e
+ms.sourcegitcommit: 7e2a0185cadea7f3a6afc5ddc445eac2e1ce22eb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22525080"
+ms.lasthandoff: 02/11/2019
+ms.locfileid: "29603753"
 ---
-# <a name="detect-and-remediate-outlook-rules-and-custom-forms-injections-attacks-in-office-365"></a>检测并修正 Office 365 中的 Outlook 规则和自定义窗体注入攻击
+# <a name="detect-and-remediate-outlook-rules-and-custom-forms-injections-attacks-in-office-365"></a>在 Office 365 中检测并修正 Outlook 规则和自定义窗体注入攻击
 
 **摘要**了解如何识别和修正 Outlook 规则和 Office 365 中的自定义窗体注入攻击。
 
@@ -89,7 +87,7 @@ ms.locfileid: "22525080"
 ### <a name="steps-to-confirm-the-rules-and-forms-attack-using-powershell"></a>步骤确认使用 PowerShell 规则和窗体攻击
 验证规则的最简单方式或自定义窗体攻击是运行[Get AllTenantRulesAndForms.ps1](https://github.com/OfficeDev/O365-InvestigationTooling/blob/master/Get-AllTenantRulesAndForms.ps1) PowerShell 脚本。 此脚本连接到租户中的每个邮箱和转储所有规则和窗体为两个.csv 文件。
 
-#### <a name="pre-requisites"></a>必备组件
+#### <a name="pre-requisites"></a>先决条件
 您需要具有全局管理员权限运行脚本，因为该脚本连接到租赁读取的规则和窗体中的每个邮箱。
 
 1. 登录到将运行脚本从具有本地管理员权限的计算机。

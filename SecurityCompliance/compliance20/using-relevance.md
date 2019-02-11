@@ -1,5 +1,5 @@
 ---
-title: 使用相关性模块分析高级电子数据展示 (Preview) 中的数据
+title: 使用相关性模块高级电子数据展示 (Preview) 中的数据进行分析
 ms.author: markjjo
 author: markjjo
 manager: laurawi
@@ -14,14 +14,14 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: 5e30a7f6919f50d2d73606fae3b53f21ef33e223
-ms.sourcegitcommit: ee28ee2b2bdfd049333c2f495d7f7780d13af4a6
+ms.openlocfilehash: 56e83a1f8a951fd6e14172122a5e86447c6f2ccf
+ms.sourcegitcommit: 7e2a0185cadea7f3a6afc5ddc445eac2e1ce22eb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "29607429"
+ms.lasthandoff: 02/11/2019
+ms.locfileid: "29695168"
 ---
-# <a name="using-the-relevance-module-to-analyze-data-in-advanced-ediscovery-preview"></a>使用相关性模块分析高级电子数据展示 (Preview) 中的数据
+# <a name="use-the-relevance-module-to-analyze-data-in-advanced-ediscovery-preview"></a>使用相关性模块高级电子数据展示 (Preview) 中的数据进行分析
 
 高级电子数据展示 （预览），在相关性模块包括相关性培训和检查与案例相关的文件。相关性工作流所示，如下所述：
   

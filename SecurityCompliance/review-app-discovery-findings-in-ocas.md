@@ -12,12 +12,12 @@ search.appverid:
 - MOE150
 ms.assetid: aac65513-e75e-4c82-a668-9a6604dd9f9d
 description: 查看高级安全管理中的应用程序发现报告可帮助您了解有关如何在组织中的人员使用云应用程序的详细信息。您已创建应用程序发现报告使用从防火墙和代理日志文件后，查看应用程序发现仪表板中的结果。
-ms.openlocfilehash: ddf3826f5aac9d3c837cf66f1b97b4650df70f32
-ms.sourcegitcommit: 2cf7f5bb282c971d33e00f65d9982a3f14aec74e
+ms.openlocfilehash: 6195c9aae7ae5e398ac555cc820de04dee05d4fd
+ms.sourcegitcommit: 7e2a0185cadea7f3a6afc5ddc445eac2e1ce22eb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/27/2018
-ms.locfileid: "26706256"
+ms.lasthandoff: 02/11/2019
+ms.locfileid: "29603743"
 ---
 # <a name="review-app-discovery-findings-in-office-365-cloud-app-security"></a>查看 Office 365 云应用安全中的应用发现结果
   
@@ -27,19 +27,15 @@ ms.locfileid: "26706256"
    
 云发现仪表板适用于组织的 web 流量日志，以提供有关云应用程序使用率的详细的信息。如果您的全局管理员、 安全管理员或安全读者，并且您的组织已[创建应用程序发现 Office 365 云应用程序安全性的报告](create-app-discovery-reports-in-ocas.md)，您可以使用云发现仪表板深入了解如何在人员您组织使用 Office 365 和其他云应用程序。（云发现仪表板。 也称为工作效率应用程序发现）
   
- **从年 3 月 2018年云发现仪表板将具有的新功能**的更加轻松地查看有关您的组织中的用户如何使用 Office 365 和其他应用程序的详细的信息。 
+ 云发现仪表板，可以查看有关您的组织中的用户如何使用 Office 365 和其他应用程序的详细的信息。 
   
 ![已更新，云发现仪表板](media/12712681-c0b3-4cb3-b7fd-2cf2ad4e825f.png)
      
 ## <a name="go-to-the-cloud-discovery-dashboard"></a>转到云发现仪表板
 
-1. 转到[https://protection.office.com](https://protection.office.com)和 Office 365 中使用您的工作或学校帐户登录。(您将转到安全&amp;合规性中心。) 
+1. 转到云应用程序安全性门户 ([https://portal.cloudappsecurity.com](https://portal.cloudappsecurity.com)) 和登录。
     
-2. 安全中&amp;合规性中心中，选择**警报** \> **管理高级通知**。<br/>（如果尚未启用 Office 365 云应用程序安全性，并且已[打开 Office 365 云应用程序安全性](turn-on-office-365-cas.md)的全局管理员）。
-    
-3. 选择**转到 Office 365 云应用程序安全性**。
-    
-4. 转到**发现** \> **云发现仪表板**。
+2. 转到**发现** \> **云发现仪表板**。
     
 ## <a name="see-your-top-users-ip-addresses-apps-and-risk-levels"></a>请参阅您最多的用户、 IP 地址、 应用程序，以及风险级别
 

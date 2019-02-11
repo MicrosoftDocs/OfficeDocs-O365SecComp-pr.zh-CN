@@ -3,7 +3,7 @@ title: 调查 Office 365 云应用安全中的活动
 ms.author: deniseb
 author: denisebmsft
 manager: laurawi
-ms.date: 2/26/2018
+ms.date: 1/28/2019
 ms.audience: ITPro
 ms.topic: article
 ms.service: o365-administration
@@ -13,12 +13,12 @@ search.appverid:
 - MOE150
 ms.assetid: 15fa4545-28b4-4dd4-bf85-88e0926bd5fc
 description: '与 Office 365 云应用程序安全性，您可以看到查看和调查活动和帐户的最新动态 Office 365 环境中。 '
-ms.openlocfilehash: d988a86c5ceaa2ec46bc27f1aaff540fa3e0b3b4
-ms.sourcegitcommit: 9034809b6f308bedc3b8ddcca8242586b5c30f94
+ms.openlocfilehash: e463323cf28738e1d54fcdb65ed0d15290c79994
+ms.sourcegitcommit: 7e2a0185cadea7f3a6afc5ddc445eac2e1ce22eb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "28014894"
+ms.lasthandoff: 02/11/2019
+ms.locfileid: "29603653"
 ---
 # <a name="investigate-an-activity-in-office-365-cloud-app-security"></a>调查 Office 365 云应用安全中的活动
   
@@ -30,13 +30,9 @@ Office 365 云应用程序安全性适用于您的[Office 365 审核日志](deta
   
 ## <a name="how-to-get-to-the-activity-log-page"></a>如何获取活动日志页
 
-1. 以全局管理员或 security 管理员程序中，转到[https://protection.office.com](https://protection.office.com)和使用工作或学校帐户登录。(请参阅[Permissions in Office 365 安全性&amp;合规性中心](permissions-in-the-security-and-compliance-center.md)。)
-    
-2. 安全中&amp;合规性中心中，选择**警报** \> **管理高级通知**。
-    
-3. 选择**转到 Office 365 云应用程序安全性**。<br/>![安全中&amp;合规性中心中，选择管理高级通知转到 Office 365 云应用程序安全性](media/958632d4-03e3-4ade-8e22-d5509db6fca7.png)
+1. 转到云应用程序安全性门户 ([https://portal.cloudappsecurity.com](https://portal.cloudappsecurity.com)) 和登录。
   
-4. 在屏幕顶部导航栏中，选择**调查** \> **活动日志**。<br/>![在 O365 CAS 门户中，选择调查。](media/8c7b87c9-71a6-4952-adb2-185e941ffe9a.png)
+2. 在屏幕顶部导航栏中，选择**调查** \> **活动日志**。<br/>![在 O365 CAS 门户中，选择调查。](media/8c7b87c9-71a6-4952-adb2-185e941ffe9a.png)
   
 ## <a name="review-and-investigate-activities"></a>查看和调查活动
 

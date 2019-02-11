@@ -1,5 +1,5 @@
 ---
-title: 为 Office 365 云应用安全做好准备
+title: 准备使用 Office 365 云应用安全
 ms.author: deniseb
 author: denisebmsft
 manager: laurawi
@@ -12,14 +12,14 @@ search.appverid:
 - MOE150
 ms.assetid: d9ee4d67-f2b3-42b4-9c9e-c4529904990a
 description: 开始使用 Office 365 云应用程序安全性
-ms.openlocfilehash: 906570c6607c70b63fa9d2059d56b50f7807124a
-ms.sourcegitcommit: edf5db9357c0d34573f8cc406314525ef10d1eb9
+ms.openlocfilehash: 1d1ae464278a5d9aafa5a176298f03174b6a37dc
+ms.sourcegitcommit: 7e2a0185cadea7f3a6afc5ddc445eac2e1ce22eb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/28/2018
-ms.locfileid: "23229984"
+ms.lasthandoff: 02/11/2019
+ms.locfileid: "29603693"
 ---
-# <a name="get-ready-for-office-365-cloud-app-security"></a>为 Office 365 云应用安全做好准备
+# <a name="get-ready-for-office-365-cloud-app-security"></a>准备使用 Office 365 云应用安全
   
 |评估 * *\>**|规划 * *\>**|部署 * *\>**|使用率 ***|
 |:-----|:-----|:-----|:-----|
@@ -41,17 +41,15 @@ ms.locfileid: "23229984"
   
 ## <a name="step-3-go-to-the-office-365-cloud-app-security-portal"></a>步骤 3： 转到 Office 365 云应用程序安全性门户
 
-1. 转到[https://protection.office.com](https://protection.office.com)和 Office 365 中使用您的工作或学校帐户登录。(您将转到安全&amp;合规性中心。) 
+您可以获取到 Office 365 云应用程序安全性门户转到[https://portal.cloudappsecurity.com](https://portal.cloudappsecurity.com)和登录。 
+
+您还可以从 Office 365 安全性而存在获取&amp;合规性中心。下面是一个好方法执行此操作：
+
+1. 转到[https://protection.office.com](https://protection.office.com)和登录英寸 (您将转到安全&amp;合规性中心。)
     
 2. 转到**通知** \> **管理高级通知**。
     
-3. 选择**转到 Office 365 云应用程序安全性**转到 Office 365 云应用程序安全性门户。 
-    
-    ![安全中&amp;合规性中心中，选择管理高级通知转到 Office 365 云应用程序安全性](media/958632d4-03e3-4ade-8e22-d5509db6fca7.png)
-  
-    当您转到 Office 365 云应用程序安全性门户时，您看到的第一页是策略页上，类似于下图：
-    
-    ![当您转到 Office 365 云应用程序安全性门户时，启动与策略页](media/5cb8833c-4e08-438c-bab3-91b5106f6f3f.png)
+3. 选择**转到 Office 365 云应用程序安全性**转到 Office 365 云应用程序安全性门户。<br> ![选择管理高级通知转到 Office 365 云应用程序安全性](media/958632d4-03e3-4ade-8e22-d5509db6fca7.png)<br>当您转到 Office 365 云应用程序安全性门户时，您看到的第一页是策略页上，类似于下图：<br>![当您转到 Office 365 云应用程序安全性门户时，启动与策略页](media/5cb8833c-4e08-438c-bab3-91b5106f6f3f.png)<br>
   
 ## <a name="step-4-define-policies-and-set-up-alerts-amp-actions"></a>步骤 4： 定义策略和设置提醒&amp;操作
 
@@ -85,7 +83,7 @@ ms.locfileid: "23229984"
     
 ## <a name="step-6-manage-apps-that-your-organization-is-using-to-access-office-365"></a>步骤 6： 管理您的组织使用访问 Office 365 的应用程序
 
-以全局管理员或安全管理员，您可以管理应用程序，例如自定义应用程序或第三方应用程序，在与 Office 365 其设备上使用您的组织中的人员。例如，假设有人已下载他们想要与 Office 365 一起使用的自定义应用程序。您可以查看用户正在使用的应用程序、 禁止不受信任应用程序，或将应用程序标记为批准可用于跟踪目的。[管理应用程序使用 Office 365 云应用程序安全性的权限](manage-app-permissions-in-ocas.md)。
+以全局管理员或安全管理员，您可以管理应用程序，例如自定义应用程序或第三方应用程序，在与 Office 365 其设备上使用您的组织中的人员。例如，假设有人已下载他们想要与 Office 365 一起使用的自定义应用程序。您可以查看用户正在使用的应用程序、 禁止不受信任应用程序，或将应用程序标记为批准可用于跟踪目的。[使用 Office 365 云应用程序安全性的管理 OAuth 应用程序](manage-app-permissions-in-ocas.md)。
   
 ## <a name="step-7-use-your-siem-server-with-office-365-cloud-app-security"></a>步骤 7： 使用 SIEM 服务器与 Office 365 云应用程序安全性
 

@@ -12,18 +12,18 @@ search.appverid:
 - MOE150
 ms.assetid: dd6d2417-49c4-4de6-9294-67fdabbf8532
 description: 您可以与 Office 365 云应用程序安全性集成 SIEM 服务器。阅读这篇文章，获取它的工作方式以及如何将其设置的概述。
-ms.openlocfilehash: 3cdae0389065b18da090139528eceefb007363fa
-ms.sourcegitcommit: b0b0b716718c22779c7c04775b8010d65cd6656b
+ms.openlocfilehash: 8d231a16db1ef75993ffa484f3ac8717187fdef6
+ms.sourcegitcommit: 7e2a0185cadea7f3a6afc5ddc445eac2e1ce22eb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28723259"
+ms.lasthandoff: 02/11/2019
+ms.locfileid: "29603763"
 ---
 # <a name="integrate-your-siem-server-with-office-365-cloud-app-security"></a>将 SIEM 服务器与 Office 365 云应用安全集成
   
 |评估 * *\>**|规划 * *\>**|部署 * *\>**|使用率 ***|
 |:-----|:-----|:-----|:-----|
-|[启动评估](office-365-cas-overview.md) <br/> |[开始规划](get-ready-for-office-365-cas.md) <br/> |在这里 ！  <br/> [下一步](utilization-activities-for-ocas.md) <br/> |[开始利用](utilization-activities-for-ocas.md) <br/> |
+|[启动评估](office-365-cas-overview.md) <br/> |[开始规划](get-ready-for-office-365-cas.md) <br/> |在这里 ！  <br/> [后续步骤](utilization-activities-for-ocas.md) <br/> |[开始利用](utilization-activities-for-ocas.md) <br/> |
    
 ## <a name="overview-and-prerequisites"></a>概述和先决条件
 
@@ -67,29 +67,24 @@ Office 365 云应用程序安全性当前支持以下 SIEM 服务器：
  
 ## <a name="step-1-set-it-up-a-siem-agent-in-office-365-cloud-app-security"></a>步骤 1： 设置其 Office 365 云应用程序安全性的 SIEM 代理
 
-1. 转到[https://protection.office.com](https://protection.office.com)和 Office 365 中使用您的工作或学校帐户登录。(您将转到安全&amp;合规性中心。) 
-    
-2. 转到**通知** \> **管理高级通知**。
-    
-3. 选择**转到 Office 365 云应用程序安全性**。<br/>
-    ![安全中&amp;合规性中心中，选择管理高级通知转到 Office 365 云应用程序安全性](media/958632d4-03e3-4ade-8e22-d5509db6fca7.png)
+1. 转到云应用程序安全性门户 ([https://portal.cloudappsecurity.com](https://portal.cloudappsecurity.com)) 和登录。
   
-4. 单击**设置** \> **安全扩展名**，然后选择 SIEM 代理。<br/>
+2. 单击**设置** \> **安全扩展名**，然后选择 SIEM 代理。<br/>
 ![选择设置 > 安全扩展](media/Settings-SecurityExtensions.png)
 
-5. 选择**添加 SIEM 代理**。<br/>![选择添加 SIEM 代理。](media/SIEMAgents.png)
+3. 选择**添加 SIEM 代理**。<br/>![选择添加 SIEM 代理。](media/SIEMAgents.png)
     
-6. 选择**启动向导**。<br/>![获取帮助或启动向导](media/HelpOrWizard.png) 
+4. 选择**启动向导**。<br/>![获取帮助或启动向导](media/HelpOrWizard.png) 
     
-7. 在**常规**步骤中，指定名称，并**选择 SIEM 格式**，并设置任何**高级设置**的格式与相关。然后选择**下一步**。<br/>![指定名称和类型](media/ChooseAgentTypeAndName.png)
+5. 在**常规**步骤中，指定名称，并**选择 SIEM 格式**，并设置任何**高级设置**的格式与相关。然后选择**下一步**。<br/>![指定名称和类型](media/ChooseAgentTypeAndName.png)
     
-8. 在**远程系统日志**步骤中，指定的 IP 地址或**远程 syslog 主机**和**Syslog 端口号**的主机名。选择 TCP 或 UDP 作为远程 Syslog 协议。（您可以使用网络管理员或安全管理员获取这些详细信息，如果您没有这些。）然后选择**下一步**。<br/>![指定远程系统日志的详细信息](media/ArcSightS1Syslog.png)
+6. 在**远程系统日志**步骤中，指定的 IP 地址或**远程 syslog 主机**和**Syslog 端口号**的主机名。选择 TCP 或 UDP 作为远程 Syslog 协议。（您可以使用网络管理员或安全管理员获取这些详细信息，如果您没有这些。）然后选择**下一步**。<br/>![指定远程系统日志的详细信息](media/ArcSightS1Syslog.png)
   
-9. 在**数据类型**步骤中，执行以下内容，之一，然后单击**下一步**：
+7. 在**数据类型**步骤中，执行以下内容，之一，然后单击**下一步**：
     - 保留**所有通知**的默认设置<br/>或者
     - 单击**所有通知**，，然后选择**特定的筛选器**。定义筛选器以选择要向 SIEM 服务器发送的通知的类型。<br/>![向导的步骤的数据类型](media/ArcSightS1ExportOptions.png)
   
-10. 在祝贺您屏幕上，复制标记并将其保存为更高版本。<br/>![SIEM 创建代理屏幕](media/SIEMAgentFinished.png) 
+8. 在祝贺您屏幕上，复制标记并将其保存为更高版本。<br/>![SIEM 创建代理屏幕](media/SIEMAgentFinished.png) 
 
 > [!IMPORTANT]
 > 此时，您已设置 Office 365 云应用程序安全性，SIEM 代理，但尚未完成您 SIEM 服务器集成。继续执行下一步继续 SIEM server 的集成。
@@ -177,7 +172,7 @@ Office 365 云应用程序安全性当前支持以下 SIEM 服务器：
 
 如果您丢失了您的令牌，您可以重新生成一个。 
 
-1. 在 Office 365 云应用程序安全性门户中，选择**设置** > **安全扩展**。
+1. 在 Office 365 云应用程序安全性门户 ([https://portal.cloudappsecurity.com](https://portal.cloudappsecurity.com))，选择**设置** > **安全扩展**。
 
 2. 在表中，找到所在行的 SIEM 代理。 
 
@@ -185,7 +180,7 @@ Office 365 云应用程序安全性当前支持以下 SIEM 服务器：
   
 ### <a name="edit-a-siem-agent"></a>编辑 SIEM 代理
 
-1. 在 Office 365 云应用程序安全性门户中，选择**设置** > **安全扩展**。
+1. 在 Office 365 云应用程序安全性门户 ([https://portal.cloudappsecurity.com](https://portal.cloudappsecurity.com))，选择**设置** > **安全扩展**。
 
 2. SIEM 代理中找到的行。 
 
@@ -193,7 +188,7 @@ Office 365 云应用程序安全性当前支持以下 SIEM 服务器：
   
 ### <a name="delete-a-siem-agent"></a>删除 SIEM 代理
 
-1. 在 Office 365 云应用程序安全性门户中，选择**设置** > **安全扩展**。
+1. 在 Office 365 云应用程序安全性门户 ([https://portal.cloudappsecurity.com](https://portal.cloudappsecurity.com))，选择**设置** > **安全扩展**。
 
 2. SIEM 代理中找到的行。 
 

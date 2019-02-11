@@ -13,12 +13,12 @@ search.appverid:
 - MET150
 ms.assetid: 71373291-83d2-466f-86ea-fc61493743a6
 description: 摘要：本文介绍了如何更新域名服务 (DNS) 记录，以便可以在 Office 365 中结合使用发件人策略框架 (SPF) 和自定义域。SPF 有助于验证从自定义域发送的出站电子邮件。
-ms.openlocfilehash: 9c03f69cfd0c962214a3adc722690a4288940541
-ms.sourcegitcommit: e9dca2d6a7838f98bb7eca127fdda2372cda402c
+ms.openlocfilehash: 09adea835b793c638f50421a8f3970faefc5307e
+ms.sourcegitcommit: 7e2a0185cadea7f3a6afc5ddc445eac2e1ce22eb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/21/2018
-ms.locfileid: "23002881"
+ms.lasthandoff: 02/11/2019
+ms.locfileid: "28326408"
 ---
 # <a name="set-up-spf-in-office-365-to-help-prevent-spoofing"></a>在 Office 365 中设置 SPF 以防止欺骗
 
@@ -39,7 +39,6 @@ ms.locfileid: "23002881"
 - 打算设置 DKIM 和 DMARC（推荐）。
     
 ## <a name="updating-your-spf-txt-record-for-office-365"></a>为 Office 365 更新您的 SPF TXT 记录
-<a name="sectionSection0"> </a>
 
 更新 DNS 中的 TXT 记录之前，需要收集一些信息，并确定记录的格式。这将有助于防止生成 DNS 错误。有关高级示例（更详细地介绍了支持的 SPF 语法），请参阅 [SPF 在 Office 365 中防止欺骗和钓鱼的工作原理](how-office-365-uses-spf-to-prevent-spoofing.md#HowSPFWorks)。
   
@@ -81,19 +80,17 @@ ms.locfileid: "23002881"
    v=spf1 include:spf.protection.outlook.de -all
   ```
 
-1.4 如果您已部署 Office 365 中并已设置您的自定义域，SPF TXT 记录并将迁移到 Office 365 德国，您需要更新 SPF TXT 记录。若要执行此操作，更改到**include.spf.protection.outlook.de** **include:spf.protection.outlook.com** 。
+1.4 如果您已部署 Office 365 中并已设置您的自定义域，SPF TXT 记录并将迁移到 Office 365 德国，您需要更新 SPF TXT 记录。若要执行此操作，更改到**include:spf.protection.outlook.de** **include:spf.protection.outlook.com** 。
     
-2. 只要 SPF TXT 记录已构成，就需要更新 DNS 中的记录。只能对域使用一个 SPF TXT 记录。如果已有 SPF TXT 记录（而不是添加新记录），需要更新现有记录。请转到[为 Office 365 创建 DNS 记录](https://support.office.microsoft.com/article/b0f3fdca-8a80-4e8e-9ef3-61e8a2a9ab23)，然后单击 DNS 主机的链接。（如果此页上没有 DNS 主机的链接，可以[按常规说明操作](https://support.office.microsoft.com/article/7b7b075d-79f9-4e37-8a9e-fb60c1d95166)，从而添加记录或联系 DNS 主机以寻求帮助。） 
+2. 一旦组成 SPF TXT 记录，您需要更新 DNS 中的记录。您只能有一个 SPF TXT 记录的域。如果存在 SPF TXT 记录，而不是添加新记录，您需要更新现有记录。转到[Office 365 创建 DNS 记录](https://docs.microsoft.com/office365/admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider?view=o365-worldwide)，然后单击您的 DNS 主机的链接。 
     
 3. 测试您的 SPF TXT 记录。
     
 ## <a name="more-information-about-spf"></a>有关 SPF 的详细信息
-<a name="sectionSection1"> </a>
 
 有关支持的 SPF 语法、欺骗、故障排除以及 Office 365 如何支持 SPF 的更加详细的探讨的高级示例，请参阅 [SPF 在 Office 365 中防止欺骗和钓鱼的工作原理](how-office-365-uses-spf-to-prevent-spoofing.md#HowSPFWorks)。
   
 ## <a name="next-steps-after-you-set-up-spf-for-office-365"></a>后续步骤：为 Office 365 设置 SPF 之后
-<a name="sectionSection2"> </a>
 
 是否遇到与 SPF TXT 记录相关的问题？阅读[疑难解答：Office 365 中 SPF 的最佳实践。](how-office-365-uses-spf-to-prevent-spoofing.md#SPFTroubleshoot)。
   

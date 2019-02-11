@@ -12,12 +12,12 @@ search.appverid:
 - MET150
 ms.assetid: d24bb387-c65d-486e-93e7-06a4f1a436c0
 description: 本文介绍如何 Office 365 缓解了对网络钓鱼攻击使用伪造发件人域，即，造假的域。这是通过实现通过分析邮件和阻止的那些类型的值可以是经过 neithe 身份验证通过使用标准电子邮件身份验证方法，也其他发件人信誉方法。实现此更改是为了减少向公开 Office 365 中的组织的网络钓鱼攻击的数。
-ms.openlocfilehash: 19e7ea957592a486a559dac222a51139bf79b574
-ms.sourcegitcommit: 03e64ead7805f3dfa9149252be8606efe50375df
+ms.openlocfilehash: 4ce195feae002e468d1b6ed61c6b186af7f8950d
+ms.sourcegitcommit: 7e2a0185cadea7f3a6afc5ddc445eac2e1ce22eb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/08/2019
-ms.locfileid: "27769856"
+ms.lasthandoff: 02/11/2019
+ms.locfileid: "29614506"
 ---
 # <a name="anti-spoofing-protection-in-office-365"></a>Office 365 中的防欺骗保护
 
@@ -99,7 +99,7 @@ Authentication-Results:
 |||
 |:-----|:-----|
 |**原因**|**说明**|
-|0xx|消息失败复合身份验证。<br/>**000**意味着 DMARC 与拒绝或隔离操作失败的消息。                   -001 意味着隐式电子邮件身份验证失败的消息。这意味着的发送域没有电子邮件身份验证记录发布，或者如果那样，它们必须较弱的失败策略 (SPF 软故障或 neutral，DMARC 策略的 p = none)。<br/>**002**表示组织具有显式禁止发送带欺骗性的电子邮件的发件人/域对的策略，由管理员手动设置此设置。  <br/>**010**表示 DMARC 与拒绝或隔离，操作失败的消息并发送域是您组织的接受域之一 (这是自签名自我或组织内的一部分欺骗)。  <br/>**011**表示隐式电子邮件身份验证失败的消息并发送域是您组织的接受域之一 (这是自签名自我或组织内的一部分欺骗)。|
+|0xx|消息失败复合身份验证。<br/>**000**意味着 DMARC 与拒绝或隔离操作失败的消息。  <br/>**001**意味着隐式电子邮件身份验证失败的消息。这意味着的发送域没有电子邮件身份验证记录发布，或者如果那样，它们必须较弱的失败策略 (SPF 软故障或 neutral，DMARC 策略的 p = none)。<br/>**002**表示组织具有显式禁止发送带欺骗性的电子邮件的发件人/域对的策略，由管理员手动设置此设置。  <br/>**010**表示 DMARC 与拒绝或隔离，操作失败的消息并发送域是您组织的接受域之一 (这是自签名自我或组织内的一部分欺骗)。  <br/>**011**表示隐式电子邮件身份验证失败的消息并发送域是您组织的接受域之一 (这是自签名自我或组织内的一部分欺骗)。|
 |所有其他代码 （1xx 2xx、 3xx、 4xx、 5xx）|为什么一条消息传递隐式身份验证，或具有任何身份验证但不应用任何操作对应的各种内部代码。|
    
 通过查看邮件的标头，管理员或甚至最终用户将可以确定 Office 365 如何到达发件人可能具有欺骗性组成部分。
@@ -415,20 +415,20 @@ Set-PhishFilterPolicy -Identity Default -SpoofAllowBlockList $UpdateSpoofedSende
 |**优先级**|**策略**|**类别**|**其中托管？**|**应用于**|
 |:-----|:-----|:-----|:-----|:-----|
 |1  <br/> |恶意软件  <br/> |MALW  <br/> |[恶意软件策略](https://technet.microsoft.com/en-us/library/jj200745%28v=exchg.150%29.aspx) <br/> |所有组织  <br/> |
-|2  <br/> |网络钓鱼  <br/> |PHSH  <br/> |[承载的内容筛选器策略](https://technet.microsoft.com/library/jj200684%28v=exchg.150%29.aspx) <br/> |所有组织  <br/> |
-|3  <br/> |可信度高的垃圾邮件  <br/> |HSPM  <br/> |[承载的内容筛选器策略](https://technet.microsoft.com/library/jj200684%28v=exchg.150%29.aspx) <br/> |所有组织  <br/> |
-|4  <br/> |欺骗  <br/> |欺骗  <br/> |[防钓鱼策略](https://go.microsoft.com/fwlink/?linkid=864553)，[欺骗智能](https://support.office.com/article/Learn-more-about-spoof-intelligence-978c3173-3578-4286-aaf4-8a10951978bf) <br/> |所有组织  <br/> |
-|5  <br/> |垃圾邮件  <br/> |SPM  <br/> |[承载的内容筛选器策略](https://technet.microsoft.com/library/jj200684%28v=exchg.150%29.aspx) <br/> |所有组织  <br/> |
-|6  <br/> |批量  <br/> |批量  <br/> |[承载的内容筛选器策略](https://technet.microsoft.com/library/jj200684%28v=exchg.150%29.aspx) <br/> |所有组织  <br/> |
-|7  <br/> |域模拟  <br/> |DIMP  <br/> |[防钓鱼策略](https://go.microsoft.com/fwlink/?linkid=864553) <br/> |仅组织 ATP  <br/> |
-|8  <br/> |用户模拟  <br/> |UIMP  <br/> |[防钓鱼策略](https://go.microsoft.com/fwlink/?linkid=864553) <br/> |仅组织 ATP <br/> |
+|2   <br/> |网络钓鱼  <br/> |PHSH  <br/> |[承载的内容筛选器策略](https://technet.microsoft.com/library/jj200684%28v=exchg.150%29.aspx) <br/> |所有组织  <br/> |
+|3   <br/> |可信度高的垃圾邮件  <br/> |HSPM  <br/> |[承载的内容筛选器策略](https://technet.microsoft.com/library/jj200684%28v=exchg.150%29.aspx) <br/> |所有组织  <br/> |
+|4   <br/> |欺骗  <br/> |欺骗  <br/> |[防钓鱼策略](https://go.microsoft.com/fwlink/?linkid=864553)，[欺骗智能](https://support.office.com/article/Learn-more-about-spoof-intelligence-978c3173-3578-4286-aaf4-8a10951978bf) <br/> |所有组织  <br/> |
+|5   <br/> |垃圾邮件  <br/> |SPM  <br/> |[承载的内容筛选器策略](https://technet.microsoft.com/library/jj200684%28v=exchg.150%29.aspx) <br/> |所有组织  <br/> |
+|6   <br/> |批量  <br/> |批量  <br/> |[承载的内容筛选器策略](https://technet.microsoft.com/library/jj200684%28v=exchg.150%29.aspx) <br/> |所有组织  <br/> |
+|7   <br/> |域模拟  <br/> |DIMP  <br/> |[防钓鱼策略](https://go.microsoft.com/fwlink/?linkid=864553) <br/> |仅组织 ATP  <br/> |
+|8   <br/> |用户模拟  <br/> |UIMP  <br/> |[防钓鱼策略](https://go.microsoft.com/fwlink/?linkid=864553) <br/> |仅组织 ATP <br/> |
    
 如果您有多个不同的防钓鱼策略，将应用的最高优先级的一个。例如，假设您有两个策略：
   
 |**策略**|**优先级**|**用户/域模拟**|**反欺骗**|
 |:-----|:-----|:-----|:-----|
 |A  <br/> |1  <br/> |On  <br/> |Off  <br/> |
-|B  <br/> |2  <br/> |关  <br/> |位置  <br/> |
+|B  <br/> |2   <br/> |关  <br/> |位置  <br/> |
    
 如果一条消息起作用，并被标识为欺骗和用户模拟和一组相同的用户范围的策略和策略 B，则邮件将被视为欺骗但没有操作应用相防欺骗处于关闭状态并在用户模拟 (8) 比更高的优先级 (4) 欺骗运行。
   

@@ -3,7 +3,7 @@ title: 推出 Office 365 云应用安全后的利用率活动
 ms.author: deniseb
 author: denisebmsft
 manager: laurawi
-ms.date: 2/26/2018
+ms.date: 01/28/2019
 ms.audience: ITPro
 ms.topic: conceptual
 ms.service: o365-administration
@@ -13,12 +13,12 @@ search.appverid:
 - MOE150
 ms.assetid: 86f414ad-81de-4703-b40a-c6615bbe9108
 description: 您已设置并推出 Office 365 云应用程序安全性后，您需要执行某些任务，以确保您的配置正确，并且您已准备好定期检查。
-ms.openlocfilehash: bc8cfad8eb9d9444066c3193ec2978e9ffd9f56a
-ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+ms.openlocfilehash: 71b6793f2e325fcba3431ba5157640b29814ad30
+ms.sourcegitcommit: 7e2a0185cadea7f3a6afc5ddc445eac2e1ce22eb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22525173"
+ms.lasthandoff: 02/11/2019
+ms.locfileid: "29603703"
 ---
 # <a name="utilization-activities-after-rolling-out-office-365-cloud-app-security"></a>推出 Office 365 云应用安全后的利用率活动
   
@@ -27,7 +27,7 @@ ms.locfileid: "22525173"
 |[启动评估](office-365-cas-overview.md) <br/> |[开始规划](get-ready-for-office-365-cas.md) <br/> |[开始部署](turn-on-office-365-cas.md) <br/> |在这里 ！  <br/> [后续步骤](review-office-365-cas-alerts.md) <br/> |
    
 > [!NOTE]
-> Office 365 云应用程序安全性是在 Office 365 企业 E5 中可用。如果您的组织使用的另一个 Office 365 企业版订阅，可以作为购买 Office 365 云应用程序安全性。(作为全局管理员，在 Office 365 管理中心中，选择**帐单** \> **添加订阅**。)有关详细信息，请参阅[Office 365 平台服务说明： Office 365 安全性&amp;合规性中心](https://technet.microsoft.com/en-us/library/dn933793.aspx)和[购买或编辑企业的 Office 365 的加载项](https://support.office.com/article/4e7b57d6-b93b-457d-aecd-0ea58bff07a6)。 
+> Office 365 云应用程序安全性是在 Office 365 企业 E5 中可用。如果您的组织使用的另一个 Office 365 企业版订阅，可以作为购买 Office 365 云应用程序安全性。(作为全局管理员，在 Office 365 管理中心中，选择**帐单** \> **添加订阅**。)有关详细信息，请参阅[Office 365 平台服务说明： Office 365 安全性&amp;合规性中心](https://docs.microsoft.com/office365/servicedescriptions/office-365-platform-service-description/office-365-securitycompliance-center)和[购买或编辑企业的 Office 365 的加载项](https://support.office.com/article/4e7b57d6-b93b-457d-aecd-0ea58bff07a6)。 
   
 您已设置并配置 Office 365 云应用程序安全性之后，您需要为 Office 365 全局管理员或安全管理员为您的组织中执行某些利用率任务。 
 
@@ -92,7 +92,7 @@ Office 365 云应用程序安全性已配置并推出，以全局管理员或安
     
 - [暂停或还原的用户帐户](suspend-or-restore-an-account-in-ocas.md)
     
-- [管理应用程序的权限](manage-app-permissions-in-ocas.md)
+- [管理 OAuth 应用程序](manage-app-permissions-in-ocas.md)
     
 - [查看 Office 365 云应用安全中的应用发现结果](review-app-discovery-findings-in-ocas.md)
     

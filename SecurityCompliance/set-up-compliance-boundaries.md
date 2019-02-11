@@ -13,12 +13,12 @@ search.appverid:
 - MET150
 ms.assetid: 1b45c82f-26c8-44fb-9f3b-b45436fe2271
 description: 使用合规性边界来创建 Office 365 组织内逻辑控制电子数据展示管理员可以搜索用户内容位置的边界。合规性边界使用搜索筛选 （也称为遵从性安全筛选器） 来控制哪些邮箱、 SharePoint 网站的权限和 OneDrive 帐户可搜索的特定用户。
-ms.openlocfilehash: 2bebd29fa7701ba07aae7170142263aeaec5569e
-ms.sourcegitcommit: c7264f3a6a97f1ff544544e2c722e7825e265fa1
+ms.openlocfilehash: 23594673e70be4b960c463ae2344c2f4b0fd0cbe
+ms.sourcegitcommit: 7e2a0185cadea7f3a6afc5ddc445eac2e1ce22eb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/14/2018
-ms.locfileid: "26299236"
+ms.lasthandoff: 02/11/2019
+ms.locfileid: "29768013"
 ---
 # <a name="set-up-compliance-boundaries-for-ediscovery-investigations-in-office-365"></a>在 Office 365 中为电子数据展示调查设置合规性边界
 
@@ -55,8 +55,6 @@ ms.locfileid: "26299236"
 下面是可用于法规遵从性边界的 Azure Active Directory 用户属性的列表：
   
 - Company
-    
-- CountryCode
     
 - CustomAttribute1-CustomAttribute15
     
@@ -123,7 +121,7 @@ New-ComplianceSecurityFilter -FilterName <name of filter> -Users <role groups> -
     
   -  `Site`-指定的角色组中定义的 OneDrive 帐户`Users`参数可以搜索。对于 OneDrive 筛选器，使用实际字符串`ComplianceAttribute`;这将映射到您在步骤 1 中确定并的同步到 OneDrive 帐户，由于您在步骤 2; 中提交支持请求的同一属性 *AttributeValue*指定碳排放量。此筛选器允许仅在特定的机构; 中搜索 OneDrive 帐户角色组的成员例如， `"Site_ComplianceAttribute -eq 'FourthCoffee'"`。
     
-  -  `Site_Path`-指定 SharePoint 网站中定义的角色组的`Users`参数可以搜索。*SharePointURL*碳排放量，可以搜索角色组的成员; 中指定的站点例如，`Site_Path -like 'https://contoso.sharepoint.com/sites/FourthCoffee*'"`
+  -  `Site_Path`-指定 SharePoint 网站中定义的角色组的`Users`参数可以搜索。*SharePointURL*碳排放量，可以搜索角色组的成员; 中指定的站点例如，`"Site_Path -like 'https://contoso.sharepoint.com/sites/FourthCoffee*'"`
     
 -  `Action`-指定的筛选器应用于的合规性搜索操作的类型。例如，`-Action Search`中定义的角色组的成员时，仅将应用筛选器`Users`参数运行内容的搜索。在此例中导出搜索结果时，不会应用筛选器。合规性边界使用`-Action All`，以便筛选器应用于所有搜索操作。 
     

@@ -3,7 +3,7 @@ title: Office 365 中的内容搜索
 ms.author: markjjo
 author: markjjo
 manager: laurawi
-ms.date: 6/28/2018
+ms.date: ''
 ms.audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -15,12 +15,12 @@ search.appverid:
 - MET150
 ms.assetid: 53390468-eec6-45cb-b6cd-7511f9c909e4
 description: 在 Office 365 安全性使用内容搜索&amp;合规性中心业务对话搜索邮箱、 SharePoint Online 网站、 OneDrive 帐户、 Microsoft 团队、 Office 365 组和 Skype 中的内容。您可以使用关键字搜索查询和搜索条件以缩小搜索结果的范围。然后您可以预览和导出搜索结果。内容搜索也是有效的工具搜索可能与 GDPR 数据主题请求相关的内容。
-ms.openlocfilehash: 11e96c6a11dd66c0095b7c624413e9e39036d8d6
-ms.sourcegitcommit: e7b87fae103a858981bdbcdf7ec55afa4751ad05
+ms.openlocfilehash: befd2060e65cea73d3c8432b77727e27dd91b82a
+ms.sourcegitcommit: 7e2a0185cadea7f3a6afc5ddc445eac2e1ce22eb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2018
-ms.locfileid: "23782079"
+ms.lasthandoff: 02/11/2019
+ms.locfileid: "29686113"
 ---
 # <a name="content-search-in-office-365"></a>Office 365 中的内容搜索
 
@@ -43,7 +43,7 @@ ms.locfileid: "23782079"
 
 若要有权访问要运行搜索和预览，并将搜索结果导出的**内容搜索**页，管理员、 合规部主管，还是电子数据展示管理员必须是安全中的电子数据展示管理员角色组的成员&amp;合规性中心。有关详细信息，请参阅[分配 Office 365 安全性的电子数据展示权限&amp;合规性中心](assign-ediscovery-permissions.md)。
   
-1. 转到[https://protection.office.com](https://protection.office.com)。
+1. 转到 [https://protection.office.com](https://protection.office.com)。
     
 2. 使用您的 Office 365 电子邮件地址和密码登录。 
     
@@ -74,6 +74,8 @@ ms.locfileid: "23782079"
     或者，您可以单击**显示关键字列表**复选框，键入每行中的关键字。如果这样做，每个行的关键字进行连接的逻辑运算符 ( **c:s**) 中创建的搜索查询的**OR**运算符功能类似的。 
     
     为什么使用关键字列表？您可以获取显示的项目数与每个关键字匹配的统计信息。这可以帮助您快速识别的关键字是最 （和至少） 有效。行中，您还可以使用关键字短语 （用括号括起来）。有关搜索统计信息的详细信息，请参阅[视图的内容的搜索结果的关键字统计信息](view-keyword-statistics-for-content-search.md)。
+
+    [!NOTE] 为了帮助减少所导致的大型关键字列表问题，您现在限制为最多 20 关键字列表中的行。
     
 - **条件**-您可以添加搜索条件以缩小搜索范围并返回更精确的结果集。每个条件向搜索查询创建和启动搜索时运行一个子句。条件逻辑**AND**运算符功能类似的逻辑运算符 ( **c:c**) 通过连接到 （在关键字框中指定） 的关键字查询。这意味着项目需要满足关键字查询和结果中包含的一个或多个条件。这是如何帮助条件以缩小结果。列表以及您可以使用搜索查询中的条件的说明，请参阅[关键字查询及搜索内容搜索条件](keyword-queries-and-search-conditions.md#search-conditions)中的"搜索条件"部分。
     
@@ -210,7 +212,7 @@ ms.locfileid: "23782079"
     
     ![不正确的方式设置关键字列表格式 （通过关键字框中粘贴的列表）](media/fb54e3df-232a-439a-b3d7-27a60ec76a4c.png)
   
-    **正确**
+    **更正**
     
     ![正确的方式设置关键字列表格式 （通过选择复选框，然后粘贴列表）](media/5d511a7b-c1f9-499c-bffe-e075bfc9adec.png)
   
@@ -268,7 +270,7 @@ ms.locfileid: "23782079"
 - 此外，参与聊天的用户的 Exchange Online 邮箱中存储是在 Microsoft 团队中的聊天列表的一部分的对话。和用户共享聊天对话中的文件存储在 OneDrive for Business 帐户的用户的共享文件。因此，您需要将单个用户邮箱和 OneDrive 业务帐户添加为聊天列表中搜索对话和文件的内容位置。
     
     > [!NOTE]
-    > 参与对话中的 Microsoft 团队的聊天列表的一部分的用户必须具有 Exchange Online （基于云的） 使您可以搜索聊天邮箱。这是因为对话的一部分的聊天列表存储在基于云的邮箱的聊天参与者。如果聊天参与者没有 Exchange Online 邮箱，您将无法搜索聊天。例如，在 Exchange 混合部署，具有内部部署邮箱的用户可能能够参与对话中的 Microsoft 团队的聊天列表的一部分。但是在这种情况下，从这些对话的内容不搜索因为用户没有基于云的邮箱。 
+    > Exchange 混合部署，具有内部部署邮箱的用户可能参与对话中的 Microsoft 团队的聊天列表的一部分。在这种情况下，这些对话的内容是还可搜索，因为它具有内部部署邮箱的用户将保存到 （称为*基于云的邮箱的内部部署用户*） 的基于云的存储区。有关详细信息，请参阅[搜索基于云的邮箱的内部部署 Office 365 中的用户](search-cloud-based-mailboxes-for-on-premises-users.md)。
   
 - 每个通道，Microsoft 团队或团队包含 Wiki 笔记记录和协作。Wiki 内容将自动保存到.mht 格式的文件时。此文件存储在团队的 SharePoint 网站上的团队 Wiki 数据文档库。内容搜索工具可用于通过指定为要搜索的内容位置的团队的 SharePoint 网站中搜索 Wiki。 
     

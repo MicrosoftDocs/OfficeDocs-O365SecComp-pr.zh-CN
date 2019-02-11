@@ -14,14 +14,14 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: b27d6cca0382b18123cae4106f77ce0dcdf5e525
-ms.sourcegitcommit: ee28ee2b2bdfd049333c2f495d7f7780d13af4a6
+ms.openlocfilehash: 962bd13f66ec8fe4f3385656f1241dd5fb5c4dcf
+ms.sourcegitcommit: 7e2a0185cadea7f3a6afc5ddc445eac2e1ce22eb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "29607497"
+ms.lasthandoff: 02/11/2019
+ms.locfileid: "29695038"
 ---
-# <a name="working-with-communications-in-advanced-ediscovery-preview"></a>使用高级电子数据展示 (Preview) 中的通信
+# <a name="work-with-communications-in-advanced-ediscovery-preview"></a>使用高级电子数据展示 (Preview) 中的通信
 
 高级电子数据展示 （预览） 允许法律部门可以简化跟踪和分发合法保留通知围绕其流程。Custodian 通信功能，法律部门可以管理和自动化其整个合法保留流程-从通知、 提醒和上报-在一个位置。
 

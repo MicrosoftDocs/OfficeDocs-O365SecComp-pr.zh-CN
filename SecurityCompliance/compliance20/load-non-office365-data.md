@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: 427b4c8c9dfffe351827a6869ae26a5356d646d8
-ms.sourcegitcommit: ee28ee2b2bdfd049333c2f495d7f7780d13af4a6
+ms.openlocfilehash: 1dad52075303450673e7f48b87e2952e35629a5e
+ms.sourcegitcommit: 7e2a0185cadea7f3a6afc5ddc445eac2e1ce22eb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "29607460"
+ms.lasthandoff: 02/11/2019
+ms.locfileid: "29706083"
 ---
 # <a name="load-non-office-365-data-into-a-working-set"></a>将非 Office 365 数据加载到工作集
 
@@ -30,14 +30,21 @@ ms.locfileid: "29607460"
 
 ## <a name="before-you-begin"></a>准备工作
 此过程中所述使用上载非 Office 365 功能需要您具有：
-* 使用高级合规性加载项或 E5 订阅 Office 365 E3
-* 将上载其 Office 365 内容的所有管理员必须高级合规性加载项或 E5 许可证都已 E3
-* 现有的电子数据展示事例
-* 用于上载到文件夹其中没有 custodian 每个文件夹和文件夹的名称位于此格式*alias@domainname*中收集的所有文件。*Alias@domainname*必须是 Office 365 用户别名和域。您可以将所有*alias@domainname*文件夹都收集到根文件夹。根文件夹只能包含*alias@domainname*文件夹、 根文件夹中必须是没有松散文件
-* 电子数据展示中管理器，也有权访问 Office 365 内容文件夹结构的计算机上安装的电子数据展示管理员 Microsoft Azure 存储工具的帐户。
-* 安装 AzCopy，可以执行此操作从此处：https://docs.microsoft.com/en-us/azure/storage/common/storage-use-azcopy
+
+- 使用高级合规性加载项或 E5 订阅 Office 365 E3。
+
+- 将上载其 Office 365 内容的所有管理员必须都具有高级合规性加载项或 E5 许可证的 E3。
+
+- 现有的电子数据展示事例。
+
+- 用于上载到文件夹其中没有 custodian 每个文件夹和文件夹的名称位于此格式*alias@domainname*中收集的所有文件。*Alias@domainname*必须是 Office 365 用户别名和域。您可以将所有*alias@domainname*文件夹都收集到根文件夹。根文件夹只能包含*alias@domainname*文件夹，根文件夹中必须是没有松散文件。
+
+- 电子数据展示中管理器，也有权访问 Office 365 内容文件夹结构的计算机上安装的电子数据展示管理员 Microsoft Azure 存储工具的帐户。
+
+- 安装 AzCopy，您可以从此处：https://docs.microsoft.com/en-us/azure/storage/common/storage-use-azcopy
 
 ## <a name="upload-non-office-365-content-into-advanced-ediscovery"></a>将 Office 365 内容上载到高级电子数据展示
+
 1. 为电子数据展示管理器或电子数据展示管理员中，打开高级电子数据展示，然后用例的非 Office 365 数据将上载到。 单击**处理设置**选项卡，然后选择您希望对非 Office 365 将数据加载的工作集。 如果尚未创建工作集，您可以现在完成操作。 最后，单击**管理工作原理设置**，则非 Office 365 数据部分中的**视图上载**
 
 2. 单击**上载文件**按钮以启动非 Office 365 数据导入向导。

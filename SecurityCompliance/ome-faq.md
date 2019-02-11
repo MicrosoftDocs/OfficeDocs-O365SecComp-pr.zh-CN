@@ -12,16 +12,21 @@ search.appverid:
 - MET150
 ms.assetid: 0432dce9-d9b6-4e73-8a13-4a932eb0081e
 description: 有关于 Office 365 中的新邮件保护功能的工作方式的问题？检查此处答案。
-ms.openlocfilehash: 63bea478e144f42cabc67f7075cd52199d954d9c
-ms.sourcegitcommit: d3f3e2eb9ef05ebef85d83935a2cb0f7690ee6fe
+ms.openlocfilehash: e35495106b44ccb566f4da743264def8c7d4f96f
+ms.sourcegitcommit: 7e2a0185cadea7f3a6afc5ddc445eac2e1ce22eb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/11/2018
-ms.locfileid: "25495516"
+ms.lasthandoff: 02/11/2019
+ms.locfileid: "29696266"
 ---
 # <a name="office-365-message-encryption-faq"></a>Office 365 邮件加密 FAQ
 
-有关于 Office 365 中的新邮件保护功能的工作方式的问题？检查此处答案。此外，看看[有关在 Azure 信息保护的数据保护的常见问题](https://docs.microsoft.com/information-protection/get-started/faqs-rms)的 Azure 权限管理的数据保护服务有关的问题的解答在 Azure 信息保护。 
+有关于 Office 365 中的新邮件保护功能的工作方式的问题？检查此处答案。此外，看看[有关在 Azure 信息保护的数据保护的常见问题](https://docs.microsoft.com/information-protection/get-started/faqs-rms)的 Azure 权限管理的数据保护服务有关的问题的解答在 Azure 信息保护。
+
+||
+|:-----|
+|本文是系列的有关 Office 365 邮件加密的文章的较大一部分。本文旨在为管理员和 ITPros。如果您只查找有关的信息发送或接收加密的邮件， [Office 365 邮件加密 (OME)](ome.md)中的文章的列表，请参阅并找到最适合您的需求的文章。 |
+||
   
 ## <a name="what-is-office-365-message-encryption-ome"></a>什么是 Office 365 邮件加密 (OME)？
 

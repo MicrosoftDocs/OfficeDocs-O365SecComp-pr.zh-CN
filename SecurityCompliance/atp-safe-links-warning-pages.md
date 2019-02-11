@@ -12,14 +12,17 @@ search.appverid:
 - MOE150
 ms.assetid: fc4e6ebb-5acc-4bc5-bad8-4f3407d1d3f4
 description: 获取概述警告页，您可能会看到 Office 365 高级威胁保护时在工作场所。
-ms.openlocfilehash: ac7fdcd17ad449afd9107ce67ecc89a107eb152b
-ms.sourcegitcommit: 147768bbe44c8c98c02fa29ae9d882cee4ec2d6b
+ms.openlocfilehash: 422bdabf0593dd154461f973f86a4c1ca94e8651
+ms.sourcegitcommit: 7e2a0185cadea7f3a6afc5ddc445eac2e1ce22eb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "26238264"
+ms.lasthandoff: 02/11/2019
+ms.locfileid: "29686351"
 ---
 # <a name="office-365-atp-safe-links-warning-pages"></a>Office 365 ATP 安全链接警告页
+
+> [!IMPORTANT]
+> 本文适用于企业客户。如果您是家庭用户查找有关在 Outlook 中的安全链接的信息，请参阅[高级 Outlook.com security](https://support.office.com/article/advanced-outlook-com-security-for-office-365-subscribers-882d2243-eab9-4545-a58a-b36fee4a46e2)。
 
 [Office 365 的高级的威胁保护](office-365-atp.md)(ATP) 可帮助从网络钓鱼尝试和通过功能，如[ATP 安全链接](atp-safe-links.md)、 [ATP 安全的附件](atp-safe-attachments.md)和[防钓鱼保护](anti-phishing-protection.md)的恶意软件保护您的组织。进行保护时，则检查电子邮件和 Office 文档中的链接 (Url)。如果 URL 被标识为可疑或恶意，您可能会阻止单击它时打开 URL。而不是直接转到网站，您可能会看到改为警告页。 
   

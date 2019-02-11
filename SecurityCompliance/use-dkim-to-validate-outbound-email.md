@@ -13,12 +13,12 @@ search.appverid:
 - MET150
 ms.assetid: 56fee1c7-dc37-470e-9b09-33fff6d94617
 description: 摘要：本文介绍了如何结合使用域密钥识别邮件 (DKIM) 和 Office 365，从而确保目标电子邮件系统信任从自定义域发送的邮件。
-ms.openlocfilehash: b5b28bef60148749e3ea6ac2619358fbc425e36c
-ms.sourcegitcommit: 03b9221d9885bcde1cdb5df2c2dc5d835802d299
+ms.openlocfilehash: 080d873c91c2dfb5910588113f2a6709b3ee9ab4
+ms.sourcegitcommit: 7e2a0185cadea7f3a6afc5ddc445eac2e1ce22eb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "29614446"
+ms.lasthandoff: 02/11/2019
+ms.locfileid: "29696329"
 ---
 # <a name="use-dkim-to-validate-outbound-email-sent-from-your-custom-domain-in-office-365"></a>使用 DKIM 在 Office 365 中验证从自定义域发送的出站电子邮件
 
@@ -88,9 +88,7 @@ Office 365 自动设置的初始域 DKIM。初始域是 Office 365 服务，例�
 使用以下格式的 CNAME 记录。
 
 > [!IMPORTANT]
-> 如果您是 GCC 高客户之一，将不同计算_domainGuid_ ！而不是查找_initialDomain_计算_domainGuid_的 MX 记录，而是我们计算其直接从自定义的域。例如，如果您自定义的域为"contoso.com"您 domainGuid 成为"contoso com"，任何期间替换短划线。
-
-因此，无论哪个 MX 记录您 initialDomain 点，您将始终使用上述方法来计算 domainGuid 在 CNAME 记录中使用。
+> 如果您是 GCC 高客户之一，将不同计算_domainGuid_ ！而不是查找_initialDomain_计算_domainGuid_的 MX 记录，而是我们计算其直接从自定义的域。例如，如果您自定义的域为"contoso.com"您 domainGuid 成为"contoso com"，任何期间替换短划线。因此，无论哪个 MX 记录您 initialDomain 点，您将始终使用上述方法来计算 domainGuid 在 CNAME 记录中使用。
 
   
 ```

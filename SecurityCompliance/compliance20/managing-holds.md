@@ -14,14 +14,14 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: 861b8fb8c0595f4ede0327d7426650d21046eba3
-ms.sourcegitcommit: ee28ee2b2bdfd049333c2f495d7f7780d13af4a6
+ms.openlocfilehash: 476ea80e61b5354c53368613e29a79c55a50276f
+ms.sourcegitcommit: 7e2a0185cadea7f3a6afc5ddc445eac2e1ce22eb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "29607475"
+ms.lasthandoff: 02/11/2019
+ms.locfileid: "29695178"
 ---
-# <a name="managing-holds-in-advanced-ediscovery-preview"></a>管理保留项中高级电子数据展示 （预览）
+# <a name="manage-holds-in-advanced-ediscovery-preview"></a>管理保留项中高级电子数据展示 （预览）
 
 高级电子数据展示 （预览） 案例可用于创建保留项以保留可能与您的案例相关的内容。使用高级电子数据展示 （预览） 保留功能，就可以保留对管理员和它们的数据源。此外，您可以置于非监控保留邮箱和 OneDrive for Business 站点。您还可以进行保留组邮箱、 SharePoint 网站和 OneDrive for Business 站点 for Office 365 组。同样，您可以置于保留的邮箱和关联的 Microsoft 团队使用的网站。当您将内容位置置于保持状态时，内容将保存，直到释放 custodian、 删除一个特定的数据的位置，或完全删除保留策略。
 

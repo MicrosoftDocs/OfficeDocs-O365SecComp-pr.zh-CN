@@ -14,16 +14,16 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: 本文介绍了高级电子数据展示 （预览） Microsoft 365 中的新版本。
-ms.openlocfilehash: bcf10f5154723709b1cde761b0e8d02540341a26
-ms.sourcegitcommit: 98ec28932ae20e848f9f489c3c78e4a7edab6d18
+ms.openlocfilehash: 90bcbd4cae1e410e1544352a776ba4cbbedfa429
+ms.sourcegitcommit: 7e2a0185cadea7f3a6afc5ddc445eac2e1ce22eb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/30/2019
-ms.locfileid: "29636609"
+ms.lasthandoff: 02/11/2019
+ms.locfileid: "29695058"
 ---
 # <a name="release-notes-for-data-investigations-preview-in-microsoft-365"></a>Microsoft 365 中的数据调查 （预览） 发行说明
 
-您可以使用新的数据调查 （预览） 工具在 Microsoft 365 会审、 调查和修正数据中相关的事件，如数据泄漏事件或内部调查。公共数据预览调查为您提供了到即将到来的功能和更新的及早访问。若要获取的最新功能的及早访问，请在 Office 365 安全性 & 合规性中心中创建数据调查 (Preview) 中的新调查。若要了解如何，请参阅[管理 Microsoft 365 中的数据泄漏事件](manage-data-spillage-incidents.md)。
+您可以使用新的数据调查 （预览） 工具在 Microsoft 365 会审、 调查和修正数据中相关的事件，如数据泄漏事件或内部调查。公共数据预览调查为您提供了到即将到来的功能和更新的及早访问。若要获取的最新功能的及早访问，请在 Office 365 安全性 & 合规性中心中创建数据调查 (Preview) 中的新调查。若要了解如何，请参阅[Manage Microsoft 365 中的数据泄漏事件](manage-data-spillage-incidents.md)。
 
 ## <a name="whats-new"></a>新增功能 
 

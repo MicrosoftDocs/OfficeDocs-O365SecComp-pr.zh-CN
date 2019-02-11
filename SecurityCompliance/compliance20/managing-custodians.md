@@ -14,14 +14,14 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: 5f29ef72ed885ab268292667e6e5fd2f53c4d15a
-ms.sourcegitcommit: ee28ee2b2bdfd049333c2f495d7f7780d13af4a6
+ms.openlocfilehash: 4dd2c44b40b5d458f9b200c249fe2f9bb16f83e0
+ms.sourcegitcommit: 7e2a0185cadea7f3a6afc5ddc445eac2e1ce22eb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "29607476"
+ms.lasthandoff: 02/11/2019
+ms.locfileid: "29706013"
 ---
-# <a name="working-with-custodians-in-advanced-ediscovery-preview"></a>使用高级电子数据展示 (Preview) 中的管理员
+# <a name="work-with-custodians-in-advanced-ediscovery-preview"></a>使用高级电子数据展示 (Preview) 中的管理员
 
 通常，组织响应法律调查时, 关闭其组织内的人员或数据管理员基于识别、 保留，和收集潜在的相关内容周围的工作流。在电子数据展示，这些人称为数据管理员，定义为"无文档或电子文件的管理控制的人员"。例如，电子邮件的数据管理员可能是邮箱的其中包含相关邮件的所有者。  
 
@@ -33,7 +33,7 @@ ms.locfileid: "29607476"
 
 - [向事例添加保管人](add-custodians-to-case.md)
 
-- [用例中管理管理员](manage-new-custodians.md)
+- [管理用例中的管理员](manage-new-custodians.md)
 
 - [查看保管人活动](view-custodian-activity.md)
 

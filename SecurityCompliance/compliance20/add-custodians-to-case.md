@@ -14,14 +14,14 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: d9a7dc6b1c2eeffdcd49be64d1d09d4a2bda782b
-ms.sourcegitcommit: ee28ee2b2bdfd049333c2f495d7f7780d13af4a6
+ms.openlocfilehash: 88d2e64f4e1fb519955d8970b34e9670fb18d3f8
+ms.sourcegitcommit: 7e2a0185cadea7f3a6afc5ddc445eac2e1ce22eb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "29607463"
+ms.lasthandoff: 02/11/2019
+ms.locfileid: "29706103"
 ---
-# <a name="add-custodians-to-an-advanced-ediscovery-preview-case"></a>添加管理员的高级电子数据展示 （预览） 案例
+# <a name="add-custodians-to-an-advanced-ediscovery-preview-case"></a>向高级电子数据展示 （预览） 用例添加管理员
 
 使用高级电子数据展示 （预览），您可以利用内置 custodian 管理工具，来协调围绕管理管理员和标识相关、 监控数据源中种情况下工作流。添加管理员后，系统可以自动标识，并进行业务网站保留在其主 Exchange 邮箱和 OneDrive。为您执行您发现，您可能还发现并映射其他邮箱或网站的管理员访问过去或团队中管理员是今天的成员。
 

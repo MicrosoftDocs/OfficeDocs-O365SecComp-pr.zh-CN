@@ -3,6 +3,7 @@ title: Office 365 云应用程序安全性帮助和操作方法
 ms.author: deniseb
 author: denisebmsft
 manager: laurawi
+ms.date: 12/03/2018
 ms.audience: ITPro
 ms.topic: hub-page
 ms.service: o365-administration
@@ -12,12 +13,12 @@ search.appverid:
 - MOE150
 ms.assetid: ade98409-a15e-4de3-8c06-8e748f5b7e96
 description: 在 Office 365 中，现在称为 Office 365 云应用程序安全性寻找高级安全管理帮助内容。
-ms.openlocfilehash: d38b12afe50ac56b3047b24d68c9c00d3bcbf602
-ms.sourcegitcommit: 2cf7f5bb282c971d33e00f65d9982a3f14aec74e
+ms.openlocfilehash: 45f45812251d17a7a58d8c5f6cbd23d27407daf1
+ms.sourcegitcommit: 7e2a0185cadea7f3a6afc5ddc445eac2e1ce22eb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/27/2018
-ms.locfileid: "26706266"
+ms.lasthandoff: 02/11/2019
+ms.locfileid: "27131832"
 ---
 # <a name="office-365-cloud-app-security-help-and-how-to"></a>Office 365 云应用程序安全性帮助和操作方法
   
@@ -35,7 +36,7 @@ Office 365 云应用程序安全性，全局管理员、 安全管理员和安�
 |设置策略和通知为您的组织  <br/> |[Office 365 云应用安全中的活动策略和警报](activity-policies-and-alerts.md) <br/> [Office 365 云应用程序安全性的异常检测策略](anomaly-detection-policies-in-ocas.md)（新更新 ！）  <br/> [与 Office 365 云应用程序安全性的 SIEM 集成](integrate-your-siem-server-with-office-365-cas.md) <br/> [对 Office 365 云应用程序安全性的安全策略参考信息](security-policy-reference-information-for-ocas.md) <br/> |
 |微调设置 Office 365 云应用程序安全性  <br/> |[对 IP 地址进行分组以简化 Office 365 云应用安全中的管理](group-your-ip-addresses-in-ocas.md) <br/> [推出 Office 365 云应用安全后的利用率活动](utilization-activities-for-ocas.md) <br/> |
 |调查活动，并采取操作  <br/> |[查看和 Office 365 云应用程序安全性通知对其执行操作](review-office-365-cas-alerts.md) <br/> [调查 Office 365 云应用安全中的活动](investigate-an-activity-in-office-365-cas.md) <br/> [暂停或还原 Office 365 云应用安全中的用户帐户](suspend-or-restore-an-account-in-ocas.md) <br/> |
-|管理 Office 365 中的第三方应用程序  <br/> |[使用 Office 365 云应用安全管理应用权限](manage-app-permissions-in-ocas.md) <br/> |
+|管理 Office 365 中的第三方应用程序  <br/> |[使用 Office 365 云应用安全管理 OAuth 应用](manage-app-permissions-in-ocas.md) <br/> |
 |创建和查看应用程序发现报告  <br/> |[Office 365 云应用安全的 Web 流量日志和数据源](web-traffic-logs-and-data-sources-for-ocas.md) <br/> [在 Office 365 云应用程序安全性中创建应用程序发现报告](create-app-discovery-reports-in-ocas.md) <br/> [查看 Office 365 云应用程序安全性的应用程序发现结果](review-app-discovery-findings-in-ocas.md)（新更新 ！）  <br/> |
 |留在 what's new in Office 365 云应用程序安全性上循环  <br/> |[Office 365 云应用安全的新增功能](new-in-office-365-cas.md) <br/> |
    

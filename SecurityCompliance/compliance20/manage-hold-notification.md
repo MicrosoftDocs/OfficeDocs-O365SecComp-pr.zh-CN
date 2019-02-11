@@ -1,5 +1,5 @@
 ---
-title: 管理通信
+title: 管理保留通知
 ms.author: markjjo
 author: markjjo
 manager: laurawi
@@ -14,14 +14,14 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: 7189680f1ec022ae76e8003c7e6660a8da7c5906
-ms.sourcegitcommit: ee28ee2b2bdfd049333c2f495d7f7780d13af4a6
+ms.openlocfilehash: 38db73000e84db0bbdcac7710ef71431666a5494
+ms.sourcegitcommit: 7e2a0185cadea7f3a6afc5ddc445eac2e1ce22eb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "29607519"
+ms.lasthandoff: 02/11/2019
+ms.locfileid: "29706043"
 ---
-# <a name="manage-communications"></a>管理通信
+# <a name="manage-hold-notifications"></a>管理保留通知
 
 启动后您法律保留通知工作流，您可以利用高级电子数据展示 （预览） 来跟踪您的通信的状态。Communications 选项卡展示了所有高级电子数据展示 （预览） 案例内的保留通知。此处，您可以看到详细信息，例如管理员已分配或已确认通知数量。
 
@@ -71,6 +71,8 @@ ms.locfileid: "29607519"
 
 ## <a name="related-information"></a>相关信息 
 
-    - [创建合法保留通知](~ SecurityCompliance\compliance20\create-hold-notification.md)
-    - [确认合法保留通知](~/acknowledge-hold-notification.md)
-    - [用种情况下向管理员]
+- [创建合法保留通告](create-hold-notification.md)
+    
+- [确认保留通知](acknowledge-hold-notification.md)
+    
+- [向事例添加保管人](add-custodians-to-case.md)

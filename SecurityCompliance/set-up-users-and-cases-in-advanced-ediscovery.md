@@ -13,19 +13,19 @@ search.appverid:
 - MET150
 ms.assetid: 60ffd80b-4376-419d-b6e4-a72029b9907c
 description: '了解如何配置用户角色、 创建用例，并为用户分配 Office 365 高级电子数据展示中的情况下。  '
-ms.openlocfilehash: 49f76b415d86035cecafc19c23b36c413f7576e5
-ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+ms.openlocfilehash: 4c0043b7651cc82272492e19faf01041c6f67932
+ms.sourcegitcommit: 7e2a0185cadea7f3a6afc5ddc445eac2e1ce22eb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22525661"
+ms.lasthandoff: 02/11/2019
+ms.locfileid: "29559055"
 ---
 # <a name="set-up-users-and-cases-in-office-365-advanced-ediscovery"></a>设置 Office 365 高级电子数据展示中的用户和事例
 
 本主题介绍如何设置用户和 Office 365 高级电子数据展示案例。
   
 > [!NOTE]
-> 高级电子数据展示需要为您的组织使用的高级合规性加载项或 E5 订阅 Office 365 E3。如果您不具有该计划，并且想要尝试高级电子数据展示，您还可以[注册试用版的 Office 365 企业 E5](https://go.microsoft.com/fwlink/p/?LinkID=698279)。 
+> 若要使用高级电子数据展示，组织必须订阅随附高级合规性加载项的 Office 365 E3，或订阅 E5。如果没有此计划，但又要试用高级电子数据展示，可以[注册 Office 365 企业版 E5 试用版](https://go.microsoft.com/fwlink/p/?LinkID=698279)。 
   
 ## <a name="prerequisites"></a>先决条件
 
@@ -62,6 +62,4 @@ ms.locfileid: "22525661"
 [Office 365 高级电子数据展示](office-365-advanced-ediscovery.md)
   
 [准备数据](prepare-data-for-advanced-ediscovery.md)
-  
-[用户角色和访问](user-roles-and-access-in-advanced-ediscovery.md)
-
+ 

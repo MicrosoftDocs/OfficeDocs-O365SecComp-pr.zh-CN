@@ -1,5 +1,5 @@
 ---
-title: 高级电子数据展示 (Preview) 中用例的数据收集
+title: 收集数据高级电子数据展示 (Preview) 中用例
 ms.author: esclee
 author: markjjo
 manager: laurawi
@@ -14,14 +14,14 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: 6964cc00d7ae78078aa0729bd5408abd5ed9542a
-ms.sourcegitcommit: ee28ee2b2bdfd049333c2f495d7f7780d13af4a6
+ms.openlocfilehash: 11e2c336512c91d65bd046c3022d5375ebecde4a
+ms.sourcegitcommit: 7e2a0185cadea7f3a6afc5ddc445eac2e1ce22eb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "29607466"
+ms.lasthandoff: 02/11/2019
+ms.locfileid: "29695048"
 ---
-# <a name="collecting-data-for-a-case-in-advanced-ediscovery-preview"></a>高级电子数据展示 (Preview) 中用例的数据收集
+# <a name="collect-data-for-a-case-in-advanced-ediscovery-preview"></a>收集数据高级电子数据展示 (Preview) 中用例
 
 一旦您确定管理员和感兴趣您用例的数据源，就可以确定的深入探讨的文档集。您可以使用高级电子数据展示 (Preview) 中搜索工具确定这些从 Office 365 中的监控和非监控位置。
 

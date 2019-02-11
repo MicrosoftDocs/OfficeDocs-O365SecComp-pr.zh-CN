@@ -1,5 +1,5 @@
 ---
-title: 在高级电子数据展示 （预览） 情况下管理管理员
+title: 管理管理员在高级电子数据展示 （预览） 情况下
 ms.author: markjjo
 author: markjjo
 manager: laurawi
@@ -14,14 +14,14 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: 742f6bc35b67071fba528e6a0ce543ecc6915762
-ms.sourcegitcommit: ee28ee2b2bdfd049333c2f495d7f7780d13af4a6
+ms.openlocfilehash: cce823924502fa2617d7819dc0967733fbc072e0
+ms.sourcegitcommit: 7e2a0185cadea7f3a6afc5ddc445eac2e1ce22eb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "29607489"
+ms.lasthandoff: 02/11/2019
+ms.locfileid: "29706093"
 ---
-# <a name="managing-custodians-in-an-advanced-ediscovery-preview-case"></a>在高级电子数据展示 （预览） 情况下管理管理员
+# <a name="manage-custodians-in-an-advanced-ediscovery-preview-case"></a>管理管理员在高级电子数据展示 （预览） 情况下
 
 管理员选项卡包含情况下的所有管理员可排序的列表。向用例添加管理员后，将自动从 Azure Active Directory 中收集有关每个 custodian 的详细信息。
 
@@ -70,7 +70,7 @@ ms.locfileid: "29607489"
   
 4. 通过单击**选择数据源**中更新 Exchange 和 OneDrive 位置的选择。
   
-5. 添加或删除工作组、 SharePoint、 或 Exchange 邮箱映射用户通过单击**选择其他数据源**。有关如何可以映射数据源到管理员的详细信息，请参阅[的高级电子数据展示 (Preview) 中添加管理员案例](add-custodians-to-case.md)。
+5. 添加或删除工作组、 SharePoint、 或 Exchange 邮箱映射用户通过单击**选择其他数据源**。有关如何可以映射数据源到管理员的详细信息，请参阅[添加管理员为大写](add-custodians-to-case.md)。
   
 6. 若要更新的 custodian 保留状态，单击**位置监控保留**，和启用或禁用管理员保留项。
 
@@ -95,7 +95,7 @@ ms.locfileid: "29607489"
 
 5. 在**作业**选项卡上，还可以跟踪重新索引进程的状态。
 
-有关重新索引和补救部分索引项的详细信息，请参阅[处理高级电子数据展示 (Preview) 中的错误的修复](processing-data-for-case.md)。
+有关重新索引和补救部分索引项的详细信息，请参阅[修复处理错误](processing-data-for-case.md)。
 
 ## <a name="releasing-a-custodian-from-a-case"></a>释放从案例管理员
 
@@ -118,6 +118,5 @@ ms.locfileid: "29607489"
 
 ## <a name="related-information"></a>相关信息
 
- - Active Directory 中的用户属性 
- - [修正处理错误时出现的错误](error-remediation.md) 
- - [处理通信](managing-custodian-communications.md)
+ - [修正处理数据时出现的错误](error-remediation.md) 
+- [处理通信](managing-custodian-communications.md)

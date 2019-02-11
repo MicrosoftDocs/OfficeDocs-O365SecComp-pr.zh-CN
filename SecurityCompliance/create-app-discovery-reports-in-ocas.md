@@ -3,7 +3,7 @@ title: 使用 Office 365 云应用安全创建应用发现报告
 ms.author: deniseb
 author: denisebmsft
 manager: laurawi
-ms.date: 2/26/2018
+ms.date: 1/28/2019
 ms.audience: ITPro
 ms.topic: article
 ms.service: o365-administration
@@ -13,12 +13,12 @@ search.appverid:
 - MOE150
 ms.assetid: 3e68e691-1fc4-4d3e-a2c0-d3134eb64055
 description: 使用 Office 365 云应用程序安全性，您可以了解在组织中的用户如何使用 Office 365 和其他应用程序创建报告。
-ms.openlocfilehash: 6842912f42072e21608955bde5250f0774c7bba4
-ms.sourcegitcommit: 9034809b6f308bedc3b8ddcca8242586b5c30f94
+ms.openlocfilehash: 543a194ec9d441a4feea97b8ad49022094565d7a
+ms.sourcegitcommit: 7e2a0185cadea7f3a6afc5ddc445eac2e1ce22eb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "28014864"
+ms.lasthandoff: 02/11/2019
+ms.locfileid: "29603713"
 ---
 # <a name="create-app-discovery-reports-using-office-365-cloud-app-security"></a>使用 Office 365 云应用安全创建应用发现报告
 
@@ -44,28 +44,17 @@ Office 365 云应用程序安全性帮助全局管理员、 安全管理员和�
   
 1. 收集您的[web 流量日志和 Office 365 云应用程序安全性的数据源](web-traffic-logs-and-data-sources-for-ocas.md)。
     
-2. 转到[https://protection.office.com](https://protection.office.com)和使用工作或学校帐户登录。 
-    
-3. 安全中&amp;合规性中心中，选择**警报** \> **管理高级通知**。
-    
-4. 选择**转到 Office 365 云应用程序安全性**。
-    
-5. 选择**发现** \> **创建新报表**。
-    
-    ![在 Office 365 CAS 门户中，选择发现](media/73b5299f-94b5-49dd-a00f-154d188eb2c5.png)
+2. 转到云应用程序安全性门户 ([https://portal.cloudappsecurity.com](https://portal.cloudappsecurity.com)) 和登录。 
+       
+3. 选择**发现** \> **创建新报表**。 <br>![在 Office 365 CAS 门户中，选择发现](media/73b5299f-94b5-49dd-a00f-154d188eb2c5.png)<br>
   
-6. 指定的名称和说明为您的报表，然后选择**数据源**列表中的 web 流量日志的数据源。 
-    
-    ![在 O365 CAS 中，选择发现\>创建新报表](media/22e660f0-5eb2-49fa-9fea-f88a5809a07b.png)
+4. 指定的名称和说明为您的报表，然后选择**数据源**列表中的 web 流量日志的数据源。 <br>![在 O365 CAS 中，选择发现\>创建新报表](media/22e660f0-5eb2-49fa-9fea-f88a5809a07b.png)<br>如果未列出您想要使用的数据源，您可以请求将添加它。选择**其他**的**数据源**，然后键入您要上载的数据源的名称。我们将查看日志，并让您了解是否我们添加对它生成的数据源的支持。 
   
-    > [!NOTE]
-    > 如果未列出您想要使用的数据源，您可以请求将添加它。选择**其他**的**数据源**，然后键入您要上载的数据源的名称。我们将查看日志，并让您了解是否我们添加对它生成的数据源的支持。 
-  
-7. 浏览到您收集的日志文件的位置，然后选择文件。所选报表的数据源必须已生成的日志文件。
+5. 浏览到您收集的日志文件的位置，然后选择文件。所选报表的数据源必须已生成的日志文件。
     
-8. 单击**创建**以启动报表创建过程。 
+6. 单击**创建**以启动报表创建过程。 
     
-9. 若要查看的报表的状态，请单击**管理快照报告**。报表准备就绪后，您将看到**查看报告**选项。 
+7. 若要查看的报表的状态，请单击**管理快照报告**。报表准备就绪后，您将看到**查看报告**选项。 
     
 ## <a name="next-steps"></a>后续步骤
 

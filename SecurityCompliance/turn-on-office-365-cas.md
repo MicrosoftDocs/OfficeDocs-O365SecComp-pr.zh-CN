@@ -12,12 +12,12 @@ search.appverid:
 - MOE150
 ms.assetid: ba919c73-d021-404d-9850-eec57e78678c
 description: 阅读此文，了解如何启用 Office 365 高级安全管理，由 Microsoft Azure 中的云应用程序安全性。
-ms.openlocfilehash: 8964a0b413b0350188c7f61638d04032534e5374
-ms.sourcegitcommit: 9034809b6f308bedc3b8ddcca8242586b5c30f94
+ms.openlocfilehash: 057a7b3311384901b4c3683c350d1f26c91bf60d
+ms.sourcegitcommit: 7e2a0185cadea7f3a6afc5ddc445eac2e1ce22eb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "28014784"
+ms.lasthandoff: 02/11/2019
+ms.locfileid: "29603773"
 ---
 # <a name="turn-on-office-365-cloud-app-security"></a>开启 Office 365 云应用安全
   
@@ -37,6 +37,8 @@ ms.locfileid: "28014784"
 3. 选择**打开 Office 365 云应用程序安全性**。
     
 4. 选择**转到 Office 365 云应用程序安全性**。<br/>![安全中&amp;合规性中心中，选择管理高级通知转到 Office 365 云应用程序安全性](media/958632d4-03e3-4ade-8e22-d5509db6fca7.png)<br/>转到 Office 365 云应用程序安全性门户，可在其中查看报告和创建或编辑您的策略。
+
+Office 365 云应用程序安全性已打开后，您可以转到云应用程序安全性门户，请访问[https://portal.cloudappsecurity.com](https://portal.cloudappsecurity.com)和登录。
     
 > [!NOTE]
 > 当您打开 Office 365 云应用程序安全性时，您的 Office 365 用户帐户和用户活动的审核信息传输到[Microsoft 云应用程序安全性](https://aka.ms/whatiscas)。这将允许 Office 365 提供高级的通知、 筛选和其他功能，以便您可以获取信息并执行有关可疑活动的操作。 

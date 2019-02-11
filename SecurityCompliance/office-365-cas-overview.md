@@ -3,7 +3,7 @@ title: Office 365 云应用安全概述
 ms.author: deniseb
 author: denisebmsft
 manager: laurawi
-ms.date: 12/03/2018
+ms.date: 01/22/2019
 ms.audience: ITPro
 ms.topic: overview
 ms.service: o365-administration
@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 ms.assetid: 81f0ee9a-9645-45ab-ba56-de9cbccab475
 description: 'Office 365 云应用程序安全性，您见解可疑的活动 Office 365 中这样可以调查情况下，可能存在问题，如果需要请执行解决安全问题的操作。 '
-ms.openlocfilehash: 62b1dc1d9285e60f30c1d5e541973640bb47ae35
-ms.sourcegitcommit: 9034809b6f308bedc3b8ddcca8242586b5c30f94
+ms.openlocfilehash: edce16edca822bed30c78f34cf141b23f2b2fb8c
+ms.sourcegitcommit: 7e2a0185cadea7f3a6afc5ddc445eac2e1ce22eb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "28014924"
+ms.lasthandoff: 02/11/2019
+ms.locfileid: "29382545"
 ---
 # <a name="overview-of-office-365-cloud-app-security"></a>Office 365 云应用安全概述
   
@@ -28,7 +28,7 @@ ms.locfileid: "28014924"
 |在这里 ！  <br/> [后续步骤](get-ready-for-office-365-cas.md) <br/> |[开始规划](get-ready-for-office-365-cas.md) <br/> |[开始部署](turn-on-office-365-cas.md) <br/> |[开始利用](utilization-activities-for-ocas.md) <br/> |
    
 > [!NOTE]
-> Office 365 云应用程序安全性是在 Office 365 企业 E5 中可用。如果您的组织使用的另一个 Office 365 企业版订阅，可以作为购买 Office 365 云应用程序安全性。(作为全局管理员，在 Office 365 管理中心中，选择**帐单** \> **添加订阅**。)有关详细信息，请参阅[Office 365 平台服务说明： Office 365 安全性&amp;合规性中心](https://technet.microsoft.com/en-us/library/dn933793.aspx)和[购买或编辑企业的 Office 365 的加载项](https://support.office.com/article/4e7b57d6-b93b-457d-aecd-0ea58bff07a6)。 
+> Office 365 云应用程序安全性是在 Office 365 企业 E5 中可用。如果您的组织使用的另一个 Office 365 企业版订阅，可以作为购买 Office 365 云应用程序安全性。(作为全局管理员，在 Office 365 管理中心中，选择**帐单** \> **添加订阅**。)有关详细信息，请参阅[Office 365 平台服务说明： Office 365 安全性&amp;合规性中心](https://docs.microsoft.com/office365/servicedescriptions/office-365-platform-service-description/office-365-securitycompliance-center)和[购买或编辑企业的 Office 365 的加载项](https://docs.microsoft.com/office365/admin/subscriptions-and-billing/buy-or-edit-an-add-on)。 
   
 Office 365 云应用程序安全性，您深入可疑的活动 Office 365 中这样可以调查情况下，可能存在问题，如果需要请执行解决安全问题的操作。与 Office 365 云应用程序安全性，您可以接收的典型或可疑活动触发通知的通知，请参阅如何组织的 Office 365 中访问和使用数据，挂起出现可疑活动的用户帐户，并要求重新登录到 Office 365 应用程序后被触发通知的用户。阅读这篇文章，获取 Office 365 云应用程序安全性特性和功能的概述。
   
@@ -36,13 +36,15 @@ Office 365 云应用程序安全性，您深入可疑的活动 Office 365 中这
 ## <a name="how-to-find-the-office-365-cloud-app-security-portal"></a>如何查找 Office 365 云应用程序安全性门户
 
 > [!NOTE]
-> 若要访问 Office 365 云应用程序安全性门户，您必须是全局管理员、 安全管理员或安全读取器。若要了解详细信息，请参阅[Permissions in Office 365 安全性&amp;合规性中心](permissions-in-the-security-and-compliance-center.md)。 
+> 若要访问 Office 365 云应用程序安全性门户，您必须是 Office 365 全局管理员、 安全管理员或安全读取器。若要了解详细信息，请参阅[Permissions in Office 365 安全性&amp;合规性中心](permissions-in-the-security-and-compliance-center.md)。 
   
-您可以获取到 Office 365 云应用程序安全性门户通过 Office 365 安全性&amp;合规性中心。下面是一个好方法执行此操作：
+您可以获取到 Office 365 云应用程序安全性门户转到[https://portal.cloudappsecurity.com](https://portal.cloudappsecurity.com)和登录。 
+
+您还可以从 Office 365 安全性而存在获取&amp;合规性中心。下面是一个好方法执行此操作：
   
-1. 转到[https://protection.office.com](https://protection.office.com)和 Office 365 中使用您的工作或学校帐户登录。(您将转到安全&amp;合规性中心。) 
+1. 转到[https://protection.office.com](https://protection.office.com)和 Office 365 中使用您的工作或学校帐户登录。(您将转到安全&amp;合规性中心。)
     
-2. 安全中&amp;合规性中心中，选择**警报** \> **管理高级通知**。 <br/>![安全中&amp;合规性中心中，选择管理高级通知转到 Office 365 云应用程序安全性](media/958632d4-03e3-4ade-8e22-d5509db6fca7.png)<br/>（如果尚未启用 Office 365 云应用程序安全性，并且已[打开 Office 365 云应用程序安全性](turn-on-office-365-cas.md)的全局管理员）。
+2. 安全中&amp;合规性中心中，选择**警报** \> **管理高级通知**。 <br/>![选择管理高级通知转到 Office 365 云应用程序安全性](media/958632d4-03e3-4ade-8e22-d5509db6fca7.png)<br/>（如果尚未启用 Office 365 云应用程序安全性，并且已[打开 Office 365 云应用程序安全性](turn-on-office-365-cas.md)的全局管理员）。
     
 3. 选择**转到 Office 365 云应用程序安全性**。 
     

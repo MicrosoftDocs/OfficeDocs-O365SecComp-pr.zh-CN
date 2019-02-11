@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.assetid: 296a02bd-ebde-4022-900e-547acf38ddd7
 description: 通过将保持或 Office 365 保留策略应用于邮箱，然后删除相应的 Office 365 用户帐户，您可以在 Office 365 中创建非活动邮箱。非活动邮箱中的项目，将保留其进行非活动状态之前对其应用保留或保留策略的持续时间内。若要永久删除非活动邮箱，只需删除保留或保留策略。
-ms.openlocfilehash: ed0af9077222d9151dc41010bca10590769118b1
-ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+ms.openlocfilehash: de67068ded30f63e46a8a94c1030d45a12b56a2e
+ms.sourcegitcommit: 7e2a0185cadea7f3a6afc5ddc445eac2e1ce22eb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22525178"
+ms.lasthandoff: 02/11/2019
+ms.locfileid: "29740834"
 ---
 # <a name="create-and-manage-inactive-mailboxes-in-office-365"></a>创建和管理 Office 365 中的非活动邮箱
 
@@ -122,8 +122,6 @@ Get-Mailbox -InactiveMailboxOnly | Select Displayname,PrimarySMTPAddress,Disting
 ## <a name="recover-an-inactive-mailbox"></a>恢复非活动邮箱
 
 如果以前员工返回给您的组织，或新员工加入才能离开员工职责，您可以恢复非活动邮箱的内容。非活动邮箱恢复时，邮箱转换为新邮箱，将保留内容和非活动邮箱文件夹结构，以及邮箱链接到新的用户帐户。将在恢复之后，非活动邮箱不再存在。分步过程和详细信息发生非活动邮箱恢复时，请参阅[Office 365 中的非活动邮箱恢复](recover-an-inactive-mailbox.md)。
-  
-[管理非活动邮箱](create-and-manage-inactive-mailboxes.md#manageinactivemailboxes)
   
 ## <a name="restore-the-contents-of-an-inactive-mailbox-to-another-mailbox"></a>将非活动邮箱的内容还原到另一个邮箱
 

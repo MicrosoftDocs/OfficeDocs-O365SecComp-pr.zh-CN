@@ -13,12 +13,12 @@ search.appverid:
 - MET150
 ms.assetid: 2e3fcfc5-5604-4b88-ac0a-c5c45c03f1db
 description: Exchange Online Protection 扫描到入站电子邮件时，它会在每封邮件中插入" **X-Forefront-Antispam-Report**"标头。
-ms.openlocfilehash: d887fea94bac6177dde69fac9586d7d562ef50de
-ms.sourcegitcommit: 03b9221d9885bcde1cdb5df2c2dc5d835802d299
+ms.openlocfilehash: 5632aa28a0d23186e6a36fdf63f7968322c93e39
+ms.sourcegitcommit: 7e2a0185cadea7f3a6afc5ddc445eac2e1ce22eb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "29614456"
+ms.lasthandoff: 02/11/2019
+ms.locfileid: "29686442"
 ---
 # <a name="anti-spam-message-headers"></a>反垃圾邮件邮件头
 
@@ -38,7 +38,7 @@ Exchange Online Protection 扫描到入站电子邮件时，它会在每封邮�
 |CTRY|邮件与服务连接时所处的国家/地区。该值由连接 IP 地址决定，它可能与原始发送 IP 地址不同。|
 |LANG|邮件的编写语言，由国家/地区代码指定（例如，俄语的代码为 ru_RU）。|
 |SCL|邮件的垃圾邮件可信度 (SCL) 值。有关这些值的详细解释信息，请参阅[垃圾邮件可信度](spam-confidence-levels.md)。  |
-|PCL|邮件的网络钓鱼可能性等级 (PCL) 值。请参阅 [PCL](anti-spam-message-headers.md#PCL) 以查看有关 PCL 值的更多信息。  |
+|PCL|邮件的网络钓鱼可能性等级 (PCL) 值。 |
 |SRV:BULK|邮件被标识为批量电子邮件。如果" **阻止所有批量电子邮件高级垃圾邮件筛选选项**"已启用，则相应的邮件会被标记为垃圾邮件。如果未启用，则该邮件只会在剩余筛选规则确定邮件是垃圾邮件时才被标记为垃圾邮件。  |
 |SFV:SFE|由于邮件发送自个人的安全发件人列表上的地址，因此邮件会跳过筛选并得以通过。|
 |SFV:BLK|由于邮件发送自个人的阻止的发件人名单上的地址，因此邮件会跳过筛选并得以阻止。  <br/> **提示**： 有关如何最终用户可以创建白名单和黑名单发件人列表的详细信息，请参阅[阻止或允许 （垃圾邮件设置）](https://go.microsoft.com/fwlink/p/?LinkId=294862) (在 web 上的 Outlook) 和[垃圾邮件筛选器的概述](https://go.microsoft.com/fwlink/p/?LinkId=270065)(Outlook)。|

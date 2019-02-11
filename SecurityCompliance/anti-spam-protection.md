@@ -13,12 +13,12 @@ search.appverid:
 - MOE150
 ms.assetid: 6a601501-a6a8-4559-b2e7-56b59c96a586
 description: 了解有关反垃圾邮件设置和筛选器可帮助防止在 Exchange Online 和 Office 365 中的垃圾邮件。获取 Office 365 中的垃圾邮件太多？您可以自定义垃圾邮件筛选器和反垃圾邮件策略设置。
-ms.openlocfilehash: 5547904633a0be9ad57fa7431aeddf1267871662
-ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+ms.openlocfilehash: 0a23ddd0610599bbd6478781c61e5e32b06726bc
+ms.sourcegitcommit: 7e2a0185cadea7f3a6afc5ddc445eac2e1ce22eb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22525437"
+ms.lasthandoff: 02/11/2019
+ms.locfileid: "29652267"
 ---
 # <a name="office-365-email-anti-spam-protection"></a>Office 365 电子邮件反垃圾邮件保护
 
@@ -43,37 +43,35 @@ Office 365 中的垃圾邮件太多您担心？我们已将多个垃圾邮件筛
   
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/608be94c-d763-4c47-af94-99e7cb277713?autoplay=false]
   
-有关详细信息，请参阅[配置垃圾邮件筛选器策略](https://go.microsoft.com/fwlink/p/?LinkId=617147)主题。 
+有关详细信息，请参阅[配置垃圾邮件筛选器策略](https://go.microsoft.com/fwlink/p/?LinkId=617147)主题。
   
 ## <a name="check-your-outgoing-messages-to-prevent-spam-in-office-365"></a>检查您的传出消息以防止 Office 365 中的垃圾邮件
 
  **出站筛选。** Office 365 还会进行检查以确保您的用户不发送垃圾邮件。例如，用户的计算机可能获取感染后，即可发送垃圾邮件，因此我们构建防范调用*出站筛选*的恶意软件。无法关闭出站筛选，但您可以配置[配置出站垃圾邮件策略](https://technet.microsoft.com/library/jj200737%28v=exchg.150%29.aspx)中所述的设置。如果您担心 Office 365 中的垃圾邮件太多，则可以使用出站筛选，为了帮助防止 Exchange Online 中的垃圾邮件。
   
 ## <a name="beyond-the-basics-more-ways-to-prevent-spam-in-office-365"></a>除基础知识： 更多的方式，以防止 Office 365 中的垃圾邮件
-<a name="BeyondBasics"> </a>
 
- **邮件流规则。** 如果您希望超越内置垃圾邮件筛选和创建自定义规则的基于业务政策，*[邮件流规则](https://technet.microsoft.com/library/jj919238%28v=exchg.150%29.aspx)*，也称作*传输规则*，帮助您的另一个筛选器阻止 Office 365 中的垃圾邮件。例如，您可以使用邮件流规则设置的垃圾邮件可信度级别 (SCL) 值符合特定条件的邮件[使用设置垃圾邮件可信度 (SCL) 在消息中的邮件流规则](https://technet.microsoft.com/library/dn798345%28v=exchg.150%29.aspx)中所述。 
+ **邮件流规则。** 如果您希望超越内置垃圾邮件筛选和创建自定义规则的基于业务政策，*[邮件流规则](https://technet.microsoft.com/library/jj919238%28v=exchg.150%29.aspx)*，也称作*传输规则*，帮助您的另一个筛选器阻止 Office 365 中的垃圾邮件。例如，您可以使用邮件流规则设置的垃圾邮件可信度级别 (SCL) 值符合特定条件的邮件[使用设置垃圾邮件可信度 (SCL) 在消息中的邮件流规则](https://technet.microsoft.com/library/dn798345%28v=exchg.150%29.aspx)中所述。
   
- **电子邮件身份验证。** 域名系统 (DNS) 用于将可验证信息添加到有关电子邮件的发件人的电子邮件的技术称为电子邮件身份验证。更高级的 Office 365 管理员可以使用这些电子邮件身份验证方法： 
+ **电子邮件身份验证。** 域名系统 (DNS) 用于将可验证信息添加到有关电子邮件的发件人的电子邮件的技术称为电子邮件身份验证。更高级的 Office 365 管理员可以使用这些电子邮件身份验证方法：
   
 - **发件人策略框架 (SPF)。** SPF 通过验证声称的发送域所有者对发件人的 IP 地址来验证电子邮件的原点而言的。快速了解到 SPF 并获取快速配置，请参阅[Set up Office 365 为了帮助防止欺骗中的 SPF](https://technet.microsoft.com/library/dn789058%28v=exchg.150%29.aspx)。Office 365 如何使用 SPF，更深入地了解或故障排除或非标准部署如混合部署，启动与[Office 365 如何使用发件人策略框架 (SPF) 以防止欺骗](https://technet.microsoft.com/library/mt712724%28v=exchg.150%29.aspx)。
-    
+
 - **域密钥识别邮件 (DKIM)。** DKIM 允许您附加到您发送的电子邮件的电子邮件邮件头中的数字签名。从您的域中接收电子邮件的电子邮件系统使用此数字签名来确定是否合法收到的传入电子邮件。有关 DKIM 和 Office 365 的信息，请参阅[使用 DKIM 验证从您在 Office 365 中的域发送出站电子邮件](https://technet.microsoft.com/library/mt695945%28v=exchg.150%29.aspx)。
-    
+
 - **基于域的邮件身份验证、 报告和一致性声明 (DMARC)。** 接收邮件系统的 DMARC 帮助确定如何处理失败 SPF 或 DKIM 检查和电子邮件合作伙伴提供其他的信任级别的消息。DMARC 设置的信息，请参阅[使用 DMARC 用于验证 Office 365 中的电子邮件](https://technet.microsoft.com/library/mt734386%28v=exchg.150%29.aspx)。
-    
+
 如果您担心垃圾邮件和网络钓鱼欺骗 Office 365 中，使用 SPF、 DKIM 和 DMARC 一起为了帮助防止垃圾邮件和不需要欺骗。
   
  **最终用户管理设置。** 如果您正在寻找有关最终用户如何管理他们自己的垃圾邮件设置的信息，则签出[的垃圾邮件筛选器概述](https://go.microsoft.com/fwlink/?LinkId=270065)（针对 Microsoft Outlook 用户） 或[了解垃圾邮件和网络钓鱼](https://go.microsoft.com/fwlink/?LinkId=270068)（对于 web 用户的 Outlook)。如果您使用 EOP 保护本地邮箱，请务必使用目录同步，以确保这些设置都会同步到服务。有关设置目录同步的详细信息，请参阅在[EOP 中的管理邮件用户](https://technet.microsoft.com/library/dn636911%28v=exchg.150%29.aspx)的"使用目录同步管理邮件用户"。
   
-## <a name="for-more-information"></a>详细信息
-<a name="BeyondBasics"> </a>
+## <a name="for-more-information"></a>更多信息
 
 [博客： 为什么垃圾邮件和网络钓鱼获取通过 Office 365？](https://go.microsoft.com/fwlink/?LinkId=528179 )
   
 [反垃圾邮件保护常见问题](https://technet.microsoft.com/library/jj937231%28v=exchg.150%29.aspx)
   
-[使用安全列表或其他技术阻止误报电子邮件被标记为垃圾邮件](prevent-email-from-being-marked-as-spam-0.md)
+[使用安全列表或其他技术避免出现标记为“垃圾邮件”的误报电子邮件](prevent-email-from-being-marked-as-spam-0.md)
   
 [如何设置 Office 365 垃圾邮件筛选以帮助阻止垃圾邮件](block-email-spam-to-prevent-false-negatives.md)
   
@@ -82,14 +80,11 @@ Office 365 中的垃圾邮件太多您担心？我们已将多个垃圾邮件筛
 [反垃圾邮件邮件头](https://technet.microsoft.com/library/dn205071%28v=exchg.150%29.aspx)
   
 [退信消息和 EOP](https://technet.microsoft.com/library/dn499795%28v=exchg.150%29.aspx)
-  
-## <a name="still-need-help"></a>仍需要帮助？
-<a name="BeyondBasics"> </a>
 
-[![从 Office 365 社区论坛获取帮助](media/12a746cc-184b-4288-908c-f718ce9c4ba5.png)](https://go.microsoft.com/fwlink/p/?LinkId=518605)
-  
-[![管理员：登录并创建一个服务请求](media/10862798-181d-47a5-ae4f-3f8d5a2874d4.png)]( https://go.microsoft.com/fwlink/p/?LinkId=519124)
-  
-[![管理员：电话支持](media/9f262e67-e8c9-4fc0-85c2-b3f4cfbc064e.png)](https://go.microsoft.com/fwlink/p/?LinkID=518322)
-  
+## <a name="more-resources"></a>更多资源
 
+[从 Office 365 社区论坛获取帮助](https://go.microsoft.com/fwlink/p/?LinkId=518605)
+  
+[管理员：登录并创建服务请求](https://go.microsoft.com/fwlink/p/?LinkId=519124)
+  
+[管理员：呼叫支持](https://go.microsoft.com/fwlink/p/?LinkID=518322)

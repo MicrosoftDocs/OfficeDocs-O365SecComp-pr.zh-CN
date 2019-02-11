@@ -12,18 +12,23 @@ search.appverid:
 - MOE150
 ms.assetid: 9b7daf19-d5f2-415b-bc43-a0f5f4a585e8
 description: 管理员可以了解到创建邮件流规则 （也称作传输规则） 进行加密和解密邮件使用 Office 365 邮件加密 (OME)。
-ms.openlocfilehash: ce6b1ce60abb58c5f4e217c66bca013101af5f91
-ms.sourcegitcommit: 30faa3ba91cab4c36e3d8d8ed5858d5269ea8a56
+ms.openlocfilehash: db421c808f1eed69ddbece2b333f9edd61712235
+ms.sourcegitcommit: 7e2a0185cadea7f3a6afc5ddc445eac2e1ce22eb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/08/2019
-ms.locfileid: "27749356"
+ms.lasthandoff: 02/11/2019
+ms.locfileid: "29696276"
 ---
 # <a name="define-mail-flow-rules-to-encrypt-email-messages-in-office-365"></a>定义用于加密 Office 365 中的电子邮件的邮件流规则
 
 作为 Office 365 全局管理员，您可以创建邮件流规则 （也称作传输规则） 来帮助保护发送和接收的电子邮件。您可以设置来加密任何传出电子邮件和加密的邮件来自您组织内从或从组织发出的加密邮件答复中删除加密的规则。您可以使用 Exchange 管理中心 (EAC) 或 Exchange Online PowerShell 中创建这些规则。除了整体加密规则，您可以启用或禁用最终用户的单个邮件加密选项。
 
-如果您最近迁移从 AD RMS 到 Azure 信息保护，您将需要查看您现有的邮件流规则，以确保它们继续在新环境中工作。此外，如果您想要通过 Azure 信息保护给您充分利用可用的新 Office 365 邮件加密 (OME) 功能，您需要更新现有的邮件流规则。否则，您的用户将继续接收加密电子邮件，而不是新的、 无缝 OME 体验使用以前的 HTML 附件格式。如果您尚未尚未设置 OME，信息，请参阅[设置新的 Office 365 邮件加密功能构建到 Azure 信息保护的顶部](set-up-new-message-encryption-capabilities.md)。
+||
+|:-----|
+|本文是系列的有关 Office 365 邮件加密的文章的较大一部分。本文旨在为管理员和 ITPros。如果您只查找有关的信息发送或接收加密的邮件， [Office 365 邮件加密 (OME)](ome.md)中的文章的列表，请参阅并找到最适合您的需求的文章。 |
+||
+
+如果您最近迁移从 AD RMS 到 Azure 信息保护，您将需要查看您现有的邮件流规则，以确保它们继续在新环境中工作。此外，如果您想要通过 Azure 信息保护给您充分利用可用的新 Office 365 邮件加密 (OME) 功能，您需要更新现有的邮件流规则。否则，您的用户将继续接收加密电子邮件，而不是新的、 无缝 OME 体验使用以前的 HTML 附件格式。如果您尚未尚未设置 OME，信息，请参阅[Set up Office 365 邮件加密的新功能](set-up-new-message-encryption-capabilities.md)。
 
 有关组件构成邮件流规则和如何邮件流规则工作的信息，请参阅[Exchange Online 中的邮件流规则 （传输规则）](https://docs.microsoft.com/exchange/security-and-compliance/mail-flow-rules/mail-flow-rules)。有关邮件流规则与 Azure 信息保护的工作方式的其他信息，请参阅[Azure 信息保护标签配置 Exchange Online 邮件流规则](https://docs.microsoft.com/azure/information-protection/deploy-use/configure-exo-rules)。
 
@@ -51,7 +56,7 @@ ms.locfileid: "27749356"
    1. 在**以下情况应用此规则**，请选择**收件人**。
 
    2. 从联系人列表中选择一个现有名称，或在**检查名称**框中键入新的电子邮件地址。
-    
+
       - 要选择一个现有名称，从列表中选择，然后单击**确定**。
 
       - 若要输入新名称，在**检查名称**框中键入电子邮件地址，然后选择**检查名称** \> **确定**。
@@ -62,7 +67,7 @@ ms.locfileid: "27749356"
 
 8. 若要使用的新的 OME 功能，**执行以下操作**，从加密选择**修改邮件安全性**，然后选择**应用 Office 365 邮件加密和权限保护**。从列表中选择的 RMS 模板，选择**保存**，然后选择**确定**。
   
-  模板的列表包含所有的默认模板和选项，以及您已创建的任何自定义模板使用 Office 365。如果列表为空，确保您已设置 Office 365 邮件加密的新功能与[设置新的 Office 365 邮件加密功能基于顶部 Azure 信息保护](set-up-new-message-encryption-capabilities.md)中所述。有关默认模板的信息，请参阅[配置和管理 Azure 信息保护模板](https://docs.microsoft.com/information-protection/deploy-use/configure-policy-templates)。有关**不要转发**选项的信息，请参阅[不要转发的电子邮件选项](https://docs.microsoft.com/information-protection/deploy-use/configure-usage-rights#do-not-forward-option-for-emails)。有关**仅加密**选项的信息，请参阅[仅加密的电子邮件的选项](https://docs.microsoft.com/information-protection/deploy-use/configure-usage-rights#encrypt-only-option-for-emails)。
+  模板的列表包含所有的默认模板和选项，以及您已创建的任何自定义模板使用 Office 365。如果列表为空，确保您已设置 Office 365 邮件加密的新功能与[Office 365 邮件加密的新功能的设置](set-up-new-message-encryption-capabilities.md)中所述。有关默认模板的信息，请参阅[配置和管理 Azure 信息保护模板](https://docs.microsoft.com/information-protection/deploy-use/configure-policy-templates)。有关**不要转发**选项的信息，请参阅[不要转发的电子邮件选项](https://docs.microsoft.com/information-protection/deploy-use/configure-usage-rights#do-not-forward-option-for-emails)。有关**仅加密**选项的信息，请参阅[仅加密的电子邮件的选项](https://docs.microsoft.com/information-protection/deploy-use/configure-usage-rights#encrypt-only-option-for-emails)。
 
   如果您希望指定另一项操作，可以选择**添加操作**。
 
@@ -104,7 +109,7 @@ ms.locfileid: "27749356"
 
 5. 在**名称**框中，键入规则名称，如 Encrypt mail for DrToniRamos@hotmail.com。
 
-6. 在**以下情况应用此规则**中选择一个条件，并输入一个值，如有必要。例如，若要加密邮件转到 DrToniRamos@hotmail.com: 
+6. 在**以下情况应用此规则**中选择一个条件，并输入一个值，如有必要。例如，若要加密邮件转到 DrToniRamos@hotmail.com:
 
    1. 在**以下情况应用此规则**，请选择**收件人**。
 
@@ -132,11 +137,11 @@ ms.locfileid: "27749356"
 
    此示例要求对所有电子邮件发送到 DrToniRamos@hotmail.com 必须进行都加密。
 
-   ```
+   ```powershell
    New-TransportRule -Name "Encrypt rule for Dr Toni Ramos" -SentTo "DrToniRamos@hotmail.com" -SentToScope "NotinOrganization" -ApplyOME $true
    ```
 
-   **注意：**
+   **注意**：
 
    - 新规则的唯一名称是"灾难恢复 Toni Ramos 加密规则"。
 
@@ -176,15 +181,15 @@ ms.locfileid: "27749356"
 
    此示例从所有发送到 Office 365 组织中的收件人的邮件中删除加密。
 
-   ```
+   ```powershell
    New-TransportRule -Name "Remove encryption from incoming mail" -SentToScope "InOrganization" -RemoveOME $true
    ```
 
-   **注意：**
+   **注意**：
 
    - 新规则的唯一名称为"Remove encryption from incoming mail"。
 
-   - _SentToScope_参数指定的收件人的位置。在此示例中，值`InOrganization`使用了值，表示： 
+   - _SentToScope_参数指定的收件人的位置。在此示例中，值`InOrganization`使用了值，表示：
 
      - 收件人的邮箱、 邮件用户、 组或组织中已启用邮件的公用文件夹。
 
@@ -198,7 +203,7 @@ ms.locfileid: "27749356"
 
 [Office 365 中的加密](encryption.md)
 
-[设置新的 Office 365 邮件加密功能构建到 Azure 信息保护顶部](set-up-new-message-encryption-capabilities.md)
+[设置全新的 Office 365 邮件加密功能](set-up-new-message-encryption-capabilities.md)
 
 [将品牌添加到加密邮件](add-your-organization-brand-to-encrypted-messages.md)
 

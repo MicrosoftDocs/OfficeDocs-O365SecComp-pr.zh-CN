@@ -3,7 +3,7 @@ title: 为 Office 365 高级电子数据展示准备搜索结果
 ms.author: markjjo
 author: markjjo
 manager: laurawi
-ms.date: 5/10/2017
+ms.date: ''
 ms.audience: Admin
 ms.topic: article
 f1_keywords:
@@ -14,18 +14,24 @@ ms.collection: Strat_O365_IP
 search.appverid: MOE150
 ms.assetid: 0b6fac2d-8627-4b05-9df0-03609db6248b
 description: 了解如何准备 Office 365 安全性内容的搜索结果的&amp;的进一步分析高级电子数据展示工具的合规性中心。
-ms.openlocfilehash: f5b10ac7fcfa67f67618c936000832b9bdb7d533
-ms.sourcegitcommit: 7956955cd919f6e00b64e4506605a743c5872549
+ms.openlocfilehash: c70eec691359170ae67e431f20e3b8ad389443f3
+ms.sourcegitcommit: 7e2a0185cadea7f3a6afc5ddc445eac2e1ce22eb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/26/2018
-ms.locfileid: "25038305"
+ms.lasthandoff: 02/11/2019
+ms.locfileid: "27280165"
 ---
 # <a name="prepare-search-results-for-office-365-advanced-ediscovery"></a>为 Office 365 高级电子数据展示准备搜索结果
 
 与 Office 365 安全性电子数据展示事例相关联的搜索后&amp;成功运行合规性中心，您可以准备进一步分析 Office 365 高级电子数据展示，该对话框可以分析大型，搜索结果非结构化的数据设置，并降低与法律案件相关的数据量。高级电子数据展示功能包括：
   
-- **光学字符识别**-自动准备搜索结果的高级电子数据展示，光学字符识别 (OCR) 功能时从图像中提取文本和这包括与加载到的搜索结果高级电子数据展示进行分析。OCR 松散文件支持、 电子邮件附件，并嵌入图像。这样，您将高级电子数据展示 （近乎重复项、 电子邮件线程、 主题和预测编码） 的文本分析功能应用于图像文件中的文本内容。 
+- **光学字符识别**-自动准备搜索结果的高级电子数据展示，光学字符识别 (OCR) 功能时从图像中提取文本和这包括与加载到的搜索结果高级电子数据展示进行分析。OCR 松散文件支持、 电子邮件附件，并嵌入图像。这样，您将高级电子数据展示 （近乎重复项、 电子邮件线程、 主题和预测编码） 的文本分析功能应用于图像文件中的文本内容。高级电子数据展示 OCR 支持图像文件的以下格式：
+
+    - GIF
+    - JPEG
+    - JPG
+    - PNG
+    - TIFF
     
 - **近乎重复检测**-允许您更有效地结构您数据进行审阅以便人审阅类似的文档的组。这有助于防止多个审阅者不必查看不同版本的同一文档。 
     
@@ -41,7 +47,7 @@ ms.locfileid: "25038305"
 
 - 若要分析使用高级电子数据展示的用户的数据，用户 (数据的 custodian) 必须分配的 Office 365 E5 许可证。此外，可使用 Office 365 E1 或 E3 许可证的用户分配的高级电子数据展示独立许可证。管理员和合规部主管分配给情况下，并使用高级电子数据展示以分析数据不需要 E5 许可证。 
     
-- 您必须是电子数据展示中管理器或 Office 365 安全性的管理员电子数据展示&amp;合规性中心以准备高级电子数据展示搜索结果。电子数据展示中管理器是电子数据展示管理员角色组的成员。电子数据展示管理员也是电子数据展示管理员角色组的成员，但已分配其他电子数据展示权限。有关分配管理员权限的电子数据展示的说明，请参阅[电子数据展示](ediscovery-cases.md#step-1-assign-ediscovery-permissions-to-potential-case-members)的情况下，在 Office 365 安全性和合规性中心的步骤 1。
+- 您必须是电子数据展示中管理器或 Office 365 安全性的管理员电子数据展示&amp;合规性中心以准备高级电子数据展示搜索结果。电子数据展示中管理器是电子数据展示管理员角色组的成员。电子数据展示管理员也是电子数据展示管理员角色组的成员，但已分配其他电子数据展示权限。有关分配电子数据展示管理员权限的说明，请参阅[电子数据展示](ediscovery-cases.md#step-1-assign-ediscovery-permissions-to-potential-case-members)的情况下，在 Office 365 安全性 & 合规中心的步骤 1。
     
 ## <a name="step-1-prepare-search-results-for-advanced-ediscovery"></a>步骤 1： 准备搜索结果的高级电子数据展示
 

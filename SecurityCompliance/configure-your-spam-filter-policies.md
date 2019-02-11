@@ -13,12 +13,12 @@ search.appverid:
 - MET150
 ms.assetid: 316544cb-db1d-4c25-a5b9-c73bbcf53047
 description: 选择要对标识为垃圾邮件的邮件采取的操作，并选择是否要筛选以特定语言撰写或从特定国家或地区发送的邮件，包括基本的垃圾邮件筛选器设置。
-ms.openlocfilehash: c425be1814f9f04329f30254763cbbb5bd8b861e
-ms.sourcegitcommit: 204fb0269b5c10b63941055824e863d77e3e9b02
+ms.openlocfilehash: 64b66f53bb56c404acefebd4fa9d211f5458f29f
+ms.sourcegitcommit: 7e2a0185cadea7f3a6afc5ddc445eac2e1ce22eb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/06/2018
-ms.locfileid: "27180892"
+ms.lasthandoff: 02/11/2019
+ms.locfileid: "29614476"
 ---
 # <a name="configure-your-spam-filter-policies"></a>配置垃圾邮件筛选器策略
   
@@ -51,7 +51,7 @@ ms.locfileid: "27180892"
     
       - **删除消息**删除整个邮件，包括所有附件。 
         
-      - **隔离邮件**发送到预期接收人而不是隔离的邮件。如果选择此选项，请在**保留期限 （天） 的垃圾邮件**输入框中，指定将在此期间隔离垃圾邮件的天数。（它将自动删除后经过的时间。默认值为 15 天，这是最大值。最小值是 1 天）。<br/><br/>提示： 有关管理员如何管理 EAC 的隔离驻留的电子邮件的信息，请参阅[隔离](quarantine.md)和[查找并释放隔离的邮件，以管理员身份](find-and-release-quarantined-messages-as-an-administrator.md)。> 的有关如何配置垃圾邮件通知消息发送给用户的信息，请参阅[配置最终用户垃圾邮件在 EOP 中的通知](configure-end-user-spam-notifications-in-eop.md)或[配置最终用户垃圾邮件通知在 Exchange Online](configure-end-user-spam-notifications-in-exchange-online.md)。 
+      - **隔离邮件**发送到预期接收人而不是隔离的邮件。如果选择此选项，请在**保留期限 （天） 的垃圾邮件**输入框中，指定将在此期间隔离垃圾邮件的天数。（它将自动删除后经过的时间。默认值为 15 天，这是最大值。最小值是 1 天）。<br/><br/>提示： 有关管理员如何管理 EAC 的隔离驻留的电子邮件的信息，请参阅[隔离](quarantine.md)和[查找并释放隔离的邮件，以管理员身份](find-and-release-quarantined-messages-as-an-administrator.md)。> 有关如何配置垃圾邮件通知消息发送给用户，请参阅[配置最终用户垃圾邮件在 EOP 中的通知](configure-end-user-spam-notifications-in-eop.md)或[配置最终用户垃圾邮件通知在 Exchange Online](configure-end-user-spam-notifications-in-exchange-online.md)。 
   
       - **移动到垃圾邮件文件夹的邮件**将邮件发送到指定的收件人的垃圾邮件文件夹。这是这两个可信度阈值级别的默认操作。<br/><br/>**重要提示： 为 Exchange Online Protection (EOP) 客户： 使此操作，以与内部部署邮箱一起使用，必须配置这两种 Exchange 传输规则，来检测垃圾邮件邮件头由 EOP 添加您的本地服务器上。有关详细信息，请参阅[确保垃圾邮件被路由到每个用户的垃圾邮件文件夹](ensure-that-spam-is-routed-to-each-user-s-junk-email-folder.md)。**
   
@@ -62,6 +62,8 @@ ms.locfileid: "27180892"
       - 如果包括空格内的自定义标头文本，或者如果您自己添加冒号 (如"X 这是我的自定义标头"或"X-This-is-my-custom-header:")，则 X 标头文本恢复为默认值为"X 此-是-垃圾邮件： 出现此消息是垃圾邮件。"
     
       - 不能指定的标题文本格式的\<*标头*\>:\<*值*\>。如果这样做，同时值之前和之后冒号将被忽略，和默认 X 标头文本显示改为:"X 此-是-垃圾邮件： 出现此消息是垃圾邮件。"       
+      
+      - 请注意，此 X 标头的邮件可能将仍移动到由于邮箱垃圾邮件配置邮箱垃圾邮件文件夹。您可以禁用此功能使用 Set-mailboxjunkemailconfiguration 进行更改。
         
       - **Prepend 主题行文本**将邮件发送给预期收件人但预置的主题行**前缀与此文本的主题行**输入框中指定的文本。使用此文本作为标识符，您可以选择创建规则以筛选或将消息路由必要。 
         
@@ -112,7 +114,7 @@ ms.locfileid: "27180892"
 16. 单击**保存**。在右窗格中显示的策略设置摘要。
 
 > [!TIP]
->  您可以选择或清除**启用**列中启用或禁用您的自定义策略中的复选框。默认情况下，启用所有策略。无法禁用默认策略。> 到删除自定义策略，请选择该策略中，单击![删除图标](media/ITPro-EAC-DeleteIcon.gif)**删除**图标，然后确认您想要删除的策略。无法删除默认策略。> 自定义策略始终优先于默认策略。自定义策略与您在其中创建这些 （从最旧到最新），相反的顺序运行，但您可以通过单击更改您的自定义策略的优先级 （运行顺序）![向上箭头图标](media/ITPro-EAC-UpArrowIcon.gif)向上箭头和![向下箭头图标](media/ITPro-EAC-DownArrowIcon.gif)向下箭头。**优先级**为**0**的策略将运行第一个、 后跟**1**，然后**2**，依此类推。 
+>  您可以选择或清除**启用**列中启用或禁用您的自定义策略中的复选框。默认情况下，启用所有策略。无法禁用默认策略。> 删除自定义策略，选择策略，单击![删除图标](media/ITPro-EAC-DeleteIcon.gif)**删除**图标，然后确认您想要删除的策略。无法删除默认策略。> 自定义策略始终优先于默认策略。自定义策略与您在其中创建这些 （从最旧到最新），相反的顺序运行，但您可以通过单击更改您的自定义策略的优先级 （运行顺序）![向上箭头图标](media/ITPro-EAC-UpArrowIcon.gif)向上箭头和![向下箭头图标](media/ITPro-EAC-DownArrowIcon.gif)向下箭头。**优先级**为**0**的策略将运行第一个、 后跟**1**，然后**2**，依此类推。 
   
 ## <a name="use-remote-powershell-to-configure-spam-filter-policies"></a>使用远程 PowerShell 配置垃圾邮件筛选器策略
 

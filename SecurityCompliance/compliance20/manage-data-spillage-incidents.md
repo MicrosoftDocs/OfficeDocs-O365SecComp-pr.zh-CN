@@ -14,14 +14,14 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: 本文介绍如何使用 Office 365 安全性 & 合规性中心中新数据调查 （预览） 工具管理数据损耗情况事件。
-ms.openlocfilehash: d863d87cc667b9695f9bf619c35575715dfa144e
-ms.sourcegitcommit: 98ec28932ae20e848f9f489c3c78e4a7edab6d18
+ms.openlocfilehash: d7adc17d01a0ae2ad6b7bfb7052862a5a6419882
+ms.sourcegitcommit: 7e2a0185cadea7f3a6afc5ddc445eac2e1ce22eb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/30/2019
-ms.locfileid: "29636610"
+ms.lasthandoff: 02/11/2019
+ms.locfileid: "29706173"
 ---
-# <a name="managing-a-data-spillage-incident-in-microsoft-365"></a>管理 Microsoft 365 中的数据泄漏事件 
+# <a name="manage-a-data-spillage-incident-in-microsoft-365"></a>管理 Microsoft 365 中的数据泄漏事件 
 
 机密文档发布到不受信任的环境时，数据泄漏。检测到数据泄漏事件时，务必快速评估的大小和位置的损耗情况、 检查周围的用户活动，然后在系统中永久清除溅入的数据。
 
@@ -130,7 +130,7 @@ ms.locfileid: "29636610"
 
 ### <a name="deleting-site-items"></a>删除网站项目
 
-业务帐户从 SharePoint 网站或 OneDrive 中永久删除文档，您必须将其删除，那么您需要从网站中删除，然后从网站集回收站中删除它。有关说明，请参阅[SharePoint 和 OneDrive 中的删除文档](https://docs.microsoft.com/microsoft-365/compliance/gdpr-dsr-office365#deleting-documents-in-sharepoint-online-and-onedrive-for-business)。
+业务帐户从 SharePoint 网站或 OneDrive 中永久删除文档，您必须将其删除，那么您需要从网站中删除，然后从网站集回收站中删除它。有关说明，请参阅[删除 SharePoint 和 OneDrive 中的文档](https://docs.microsoft.com/microsoft-365/compliance/gdpr-dsr-office365#deleting-documents-in-sharepoint-online-and-onedrive-for-business)。
 
 或者，也可以删除整个网站集可能包含溅入的数据。有关说明，请参阅[删除网站集](https://docs.microsoft.com/sharepoint/delete-site-collection)。
 
@@ -141,6 +141,7 @@ ms.locfileid: "29636610"
 删除调查：
 
 1. 在**设置**选项卡中，单击**调查信息**。
+
 2. 单击**删除用例**。 
 
 如果您无需删除调查，或者如果您想要保存过程调查中收集的信息，您可以单击**关闭事例**。以后，您可以重新打开已关闭的调查。

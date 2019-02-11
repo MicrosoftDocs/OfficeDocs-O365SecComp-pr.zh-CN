@@ -3,7 +3,7 @@ title: Office 365 中的无限制存档的概述
 ms.author: markjjo
 author: markjjo
 manager: laurawi
-ms.date: 6/29/2018
+ms.date: ''
 ms.audience: Admin
 ms.topic: overview
 ms.service: o365-administration
@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.assetid: 37cdbb02-a24a-4093-8bdb-2a7f0b3a19ee
 description: 了解自动扩展 Office 365 中的存档，从而提高了对不受限制的存档存储为 Exchange Online 邮箱。
-ms.openlocfilehash: a762a0fb8295a645957404c1c88881f40329f7a1
-ms.sourcegitcommit: e7b87fae103a858981bdbcdf7ec55afa4751ad05
+ms.openlocfilehash: 83eb49b3f2a7da418b61e509f44023809ed396c3
+ms.sourcegitcommit: 7e2a0185cadea7f3a6afc5ddc445eac2e1ce22eb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2018
-ms.locfileid: "23782119"
+ms.lasthandoff: 02/11/2019
+ms.locfileid: "29740814"
 ---
 # <a name="overview-of-unlimited-archiving-in-office-365"></a>Office 365 中的无限制存档的概述
 
@@ -69,11 +69,11 @@ Office 365 中的存档邮箱向用户提供其他邮箱存储空间。启用用
 
 若要访问存储在自动扩展存档的消息，用户必须使用以下 Outlook 客户端之一：
   
-- Outlook 2016 for Windows
+- Outlook 2016 或 Windows 的 Outlook 2019
     
-- Web 上的 Outlook 
+- Outlook 网页版 
     
-- Outlook 2016 for Mac 
+- Outlook 2016 或 Outlook 2019 for Mac 
     
 > [!NOTE]
 > Outlook 2013 用户可以仅在最初存储其存档邮箱中的 access 项目。他们也不能以访问移动到其他存档存储的项目。 
@@ -96,12 +96,12 @@ Office 365 中的存档邮箱向用户提供其他邮箱存储空间。启用用
   
 - **电子数据展示**-当您使用 Office 365 电子数据展示工具，如内容搜索或就地电子数据展示，自动扩展存档中的其他存储区域还搜索。
     
-- **保留**-当您在 Exchange Online 中使用工具，例如诉讼保留将邮箱置于保持状态或电子数据展示事例包含和 Office 365 安全性的保留策略&amp;合规性中心位于自动扩展存档的内容还是置于保持状态。
+- **保留**-时将邮箱置于挂起使用工具，例如诉讼保留在 Exchange Online 或电子数据展示案例包含，并且也是自动扩展存档中位于 Office 365 安全性 & 合规性中心，内容中的保留策略置于保持状态。
     
 - 也会删除**消息记录管理 (MRM)** -如果在 Exchange Online 中使用 MRM 删除策略永久删除过期的邮箱项目，位于自动扩展存档的过期项目。
     
 - **导入服务**-您可以使用导入 Office 365 服务 PST 文件导入用户的自动扩展存档。您可以从导入数据的最多 100 GB PST 文件到用户的存档邮箱。 
 
-## <a name="more-information"></a>详细信息
+## <a name="more-information"></a>更多信息
 
 有关更多技术详细信息自动扩展存档，请参阅[Office 365： 自动扩展存档常见问题](https://blogs.technet.microsoft.com/exchange/2018/04/09/office-365-auto-expanding-archives-faq/)。

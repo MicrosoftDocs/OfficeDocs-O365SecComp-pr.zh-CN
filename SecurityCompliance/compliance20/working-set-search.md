@@ -1,5 +1,5 @@
 ---
-title: 查询数据的工作集
+title: 查询工作集中的数据
 ms.author: markjjo
 author: markjjo
 manager: laurawi
@@ -14,14 +14,14 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: 03c82741b3a4433c43ef709701ab40330ac5fd1f
-ms.sourcegitcommit: ee28ee2b2bdfd049333c2f495d7f7780d13af4a6
+ms.openlocfilehash: 3a503dd825cf65bef0dde537862561887d908563
+ms.sourcegitcommit: 7e2a0185cadea7f3a6afc5ddc445eac2e1ce22eb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "29607452"
+ms.lasthandoff: 02/11/2019
+ms.locfileid: "29694988"
 ---
-# <a name="querying-data-in-a-working-set"></a>查询数据的工作集
+# <a name="query-the-data-in-a-working-set"></a>查询工作集中的数据
 
 在大多数情况下，它将非常有用能够更加细化的内容有工作集和组织进行更有效地审阅。工作集内的查询，您可以执行操作，以便通过让您关注的文档满足条件同时由您定义的子集。
 

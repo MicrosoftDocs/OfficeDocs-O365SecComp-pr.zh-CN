@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: 3ebb9a40d3fb055fbb88b32175a4a22df3da44af
-ms.sourcegitcommit: ee28ee2b2bdfd049333c2f495d7f7780d13af4a6
+ms.openlocfilehash: 773137cbfc73d449766e04bf7eccc77f8bdd0cca
+ms.sourcegitcommit: 7e2a0185cadea7f3a6afc5ddc445eac2e1ce22eb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "29607491"
+ms.lasthandoff: 02/11/2019
+ms.locfileid: "29706133"
 ---
 # <a name="create-a-search-to-collect-data"></a>创建搜索项来收集数据
 
@@ -35,7 +35,7 @@ ms.locfileid: "29607491"
 
 ## <a name="choose-the-custodians-to-search-from"></a>选择要从搜索管理员
 
-一旦定义您的条件，您需要选择您要搜索的位置。执行此操作的一种方法是通过指定要搜索已添加到用例的管理员。通过选择管理员，您将所有数据源映射到 custodian 针对运行搜索。有关如何将管理员添加到您的案例和管理其数据源的详细信息，请参见[管理员使用](managing-custodians.md)。
+一旦定义您的条件，您需要选择您要搜索的位置。执行此操作的一种方法是通过指定要搜索已添加到用例的管理员。通过选择管理员，您将所有数据源映射到 custodian 针对运行搜索。有关如何将管理员添加到您的案例和管理其数据源的详细信息，请参阅[使用管理员](managing-custodians.md)。
 
 ## <a name="choose-non-custodial-locations"></a>选择非监控位置
 

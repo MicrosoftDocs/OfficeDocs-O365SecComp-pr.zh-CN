@@ -3,7 +3,7 @@ title: Office 365 安全性的存档邮箱启用&amp;合规性中心
 ms.author: markjjo
 author: markjjo
 manager: laurawi
-ms.date: 6/29/2018
+ms.date: ''
 ms.audience: Admin
 ms.topic: article
 f1_keywords:
@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: 268a109e-7843-405b-bb3d-b9393b2342ce
 description: 使用 Office 365 安全性&amp;合规性中心以启用存档邮箱以支持组织的邮件保留，电子数据展示，并保留要求。
-ms.openlocfilehash: 5ba578ba611f619194ac4f475121bd485b75f9e0
-ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+ms.openlocfilehash: 1c290cf19b396221dac702efd1395911e8a51631
+ms.sourcegitcommit: 7e2a0185cadea7f3a6afc5ddc445eac2e1ce22eb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22525495"
+ms.lasthandoff: 02/11/2019
+ms.locfileid: "28327094"
 ---
 # <a name="enable-archive-mailboxes-in-the-office-365-security-amp-compliance-center"></a>Office 365 安全性的存档邮箱启用&amp;合规性中心
   
@@ -36,9 +36,9 @@ ms.locfileid: "22525495"
   
 ## <a name="enable-an-archive-mailbox"></a>启用存档邮箱
   
-1. 转到[https://protection.office.com](https://protection.office.com)。
+1. 转到 [https://protection.office.com](https://protection.office.com)。
     
-2. 登录到 Office 365 使用工作或学校帐户。
+2. 使用工作或学校帐户登录到 Office 365。
     
 3. 在左侧窗格中的安全&amp;合规性中心，单击**数据调控** \> **存档**。
     
@@ -67,9 +67,9 @@ ms.locfileid: "22525495"
   
 若要禁用存档邮箱：
   
-1. 转到[https://protection.office.com](https://protection.office.com)。
+1. 转到 [https://protection.office.com](https://protection.office.com)。
     
-2. 登录到 Office 365 使用工作或学校帐户。
+2. 使用工作或学校帐户登录到 Office 365。
     
 3. 在左侧窗格中的安全&amp;合规性中心，单击**数据调控** \> **存档**。
     
@@ -88,7 +88,43 @@ ms.locfileid: "22525495"
 > [!TIP]
 > 您可以也批量-禁用通过选择多个用户 （使用 Shift 或 Ctrl 键） 启用的存档邮箱与存档邮箱。在选择多个邮箱后，单击详细信息窗格中的**禁用**。 
   
-## <a name="more-information"></a>详细信息
+## <a name="use-exchange-online-powershell-to-enable-or-disable-archive-mailboxes"></a>使用 Exchange Online PowerShell 中启用或禁用存档邮箱
+
+您可以使用 Exchange Online PowerShell 中启用存档邮箱。使用 PowerShell 的主要原因是可以快速启用存档邮箱的所有用户在组织中。
+
+第一步是连接到 Exchange Online PowerShell 中。有关说明，请参阅[Connect to Exchange Online PowerShell 中](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell)。
+
+您已连接到 Exchange Online 之后，您可以在以下小节以启用或禁用存档邮箱中运行命令。
+
+### <a name="enable-archive-mailboxes"></a>启用存档邮箱
+
+运行以下命令以启用单个用户的存档邮箱。
+    
+  ```
+  Enable-Mailbox -Identity <username> -Archive
+  ```
+
+运行以下命令以启用的组织 （当前，没有启用存档邮箱） 中的所有用户的存档邮箱。
+    
+  ```
+  Get-Mailbox -Filter {ArchiveStatus -Eq "None" -AND RecipientTypeDetails -eq "UserMailbox"} | Enable-Mailbox -Archive
+  ```
+  
+### <a name="disable-archive-mailboxes"></a>禁用存档邮箱
+
+运行以下命令以禁用单个用户的存档邮箱。
+    
+  ```
+  Disable-Mailbox -Identity <username> -Archive
+  ```
+
+运行以下命令以禁用的组织 （当前已启用存档邮箱） 中的所有用户的存档邮箱。
+    
+  ```
+  Get-Mailbox -Filter {ArchiveStatus -Eq "Active" -AND RecipientTypeDetails -eq "UserMailbox"} | Disable-Mailbox -Archive
+  ```
+
+## <a name="more-information"></a>更多信息
   
 - 存档邮箱帮助您和您的用户以满足组织的保留、 电子数据展示，并按住要求。例如，贵组织的 Exchange 保留策略可用于将邮箱内容移动到用户的存档邮箱。当您使用内容搜索工具中安全&amp;还将搜索合规性中心以搜索特定内容，用户的存档邮箱的用户的邮箱。和，当您放置诉讼保留或 Office 365 保留策略应用到用户的邮箱，也将保留存档邮箱中的项目。
   
@@ -102,7 +138,6 @@ ms.locfileid: "22525495"
     
 - 有关存档邮箱和 Exchange 保留策略的详细信息，请参阅：
   
-  - [Exchange Online 中的存档邮箱](https://go.microsoft.com/fwlink/?LinkId=404421)
     
   - [保留标记和保留策略](https://go.microsoft.com/fwlink/?LinkId=404424)
     

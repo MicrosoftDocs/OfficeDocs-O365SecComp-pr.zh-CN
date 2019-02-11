@@ -13,12 +13,12 @@ search.appverid:
 - MET150
 ms.assetid: 9701a024-c52e-43f0-b545-9a53478aec04
 description: 使用搜索统计信息功能来显示和统计信息比较 Office 365 安全性的多个内容搜索&amp;合规性中心。创建或编辑搜索查询来获取显示的项目数与每个关键字或关键字短语匹配的增强统计信息时，您还可以配置关键字列表。
-ms.openlocfilehash: cb71b30b32ff6a24cd68ea5728063c2997d8ada0
-ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+ms.openlocfilehash: 0f0258f228e296e48def8de16aabc068901dffc7
+ms.sourcegitcommit: 7e2a0185cadea7f3a6afc5ddc445eac2e1ce22eb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22525468"
+ms.lasthandoff: 02/11/2019
+ms.locfileid: "27209803"
 ---
 # <a name="view-keyword-statistics-for-content-search-results"></a>查看内容搜索结果的关键字统计信息
 
@@ -100,6 +100,10 @@ ms.locfileid: "22525468"
 ## <a name="get-keyword-statistics-for-content-searches"></a>获取内容搜索的关键字统计信息
 
 与以前所述，**查询**页上显示搜索查询和的数量 （和大小） 的查询匹配项。如果您使用关键字列表创建或编辑搜索查询时，您可以获取显示的项目数与每个关键字或关键字短语匹配的增强统计信息。这可以帮助您快速确定查询的哪些部分是最 （和至少） 有效。例如，如果关键字返回大量项目，则可能选择以优化关键字查询来缩小搜索结果的范围。创建或编辑内容的搜索时，您可以设置关键字列表。 
+
+
+
+
   
 创建关键字列表和查看的内容搜索的关键字统计信息：
   
@@ -130,3 +134,6 @@ ms.locfileid: "22525468"
     - 每个关键字，其中包括搜索查询任何条件实际的搜索查询。 
     
     - （标识为**主要**在**部件**列） 的完整搜索查询和完整的查询的统计信息。注意这些是显示在**摘要**页上的同一统计信息。 
+
+> [!NOTE]
+> 为了帮助减少所导致的大型关键字列表问题，您现在限制为最多个关键字列表中的搜索查询的 20 行。

@@ -1,5 +1,5 @@
 ---
-title: 高级电子数据展示 (Preview) 中的工作集中分析数据
+title: 分析高级电子数据展示 (Preview) 中的工作集数据
 ms.author: markjjo
 author: markjjo
 manager: laurawi
@@ -14,14 +14,14 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: a6284204fd709bcf936688f36f38f6b3283b1f98
-ms.sourcegitcommit: ee28ee2b2bdfd049333c2f495d7f7780d13af4a6
+ms.openlocfilehash: 68a8b7586700a9bffe78f2b3a4ff419a1f85ba8a
+ms.sourcegitcommit: 7e2a0185cadea7f3a6afc5ddc445eac2e1ce22eb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "29607423"
+ms.lasthandoff: 02/11/2019
+ms.locfileid: "29695138"
 ---
-# <a name="analyzing-data-in-a-working-set-in-advanced-ediscovery-preview"></a>高级电子数据展示 (Preview) 中的工作集中分析数据
+# <a name="analyze-data-in-a-working-set-in-advanced-ediscovery-preview"></a>分析高级电子数据展示 (Preview) 中的工作集数据
 
 大型收集文档数后，它可以是很难查看所有这些错误。高级电子数据展示 （预览） 提供了多种工具来分析的文档，以减少的文档审阅不会丢失任何中的信息，并帮助您组织全面一致的方式的文档数量。若要了解有关这些功能的详细信息，请参阅：
 
