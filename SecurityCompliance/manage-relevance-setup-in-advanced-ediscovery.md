@@ -12,13 +12,13 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: fd6be6d3-2e8d-449d-9851-03ab7546e6aa
-description: '获取有关在 Office 365 高级电子数据展示中设置相关性定型的建议，以计算文件相关性分数并生成分析结果。  '
-ms.openlocfilehash: b2f1f848d14bdf77444c2026cbc675042c792542
-ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+description: 获取有关在 Office 365 高级电子数据展示中设置相关性定型的建议，以计算文件相关性分数并生成分析结果。
+ms.openlocfilehash: 189c81bd415f94d4ded06fd13eaf5aea861b283d
+ms.sourcegitcommit: 7e2a0185cadea7f3a6afc5ddc445eac2e1ce22eb
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22524995"
+ms.lasthandoff: 02/11/2019
+ms.locfileid: "27446343"
 ---
 # <a name="manage-relevance-setup-in-office-365-advanced-ediscovery"></a>管理 Office 365 高级电子数据展示中的相关性设置
 
