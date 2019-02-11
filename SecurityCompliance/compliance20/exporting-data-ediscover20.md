@@ -1,5 +1,5 @@
 ---
-title: 导出案例高级电子数据展示 (Preview) 中的数据
+title: 高级电子数据展示 (Preview) 中的数据导出案例
 ms.author: markjjo
 author: markjjo
 manager: laurawi
@@ -14,13 +14,13 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: 241aa741f3e7c5a982c201aef7596d933522a893
-ms.sourcegitcommit: ee28ee2b2bdfd049333c2f495d7f7780d13af4a6
+ms.openlocfilehash: 02eccac2ecd1ee50597ddcaa8fcf0c35e724893e
+ms.sourcegitcommit: 7e2a0185cadea7f3a6afc5ddc445eac2e1ce22eb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "29607462"
+ms.lasthandoff: 02/11/2019
+ms.locfileid: "29695018"
 ---
-# <a name="exporting-case-data-in-advanced-ediscovery-preview"></a><span data-ttu-id="1bc37-102">导出案例高级电子数据展示 (Preview) 中的数据</span><span class="sxs-lookup"><span data-stu-id="1bc37-102">Exporting case data in Advanced eDiscovery (Preview)</span></span>
+# <a name="export-case-data-in-advanced-ediscovery-preview"></a><span data-ttu-id="59e4f-102">高级电子数据展示 (Preview) 中的数据导出案例</span><span class="sxs-lookup"><span data-stu-id="59e4f-102">Export case data in Advanced eDiscovery (Preview)</span></span>
 
-<span data-ttu-id="1bc37-103">内容即将推出。</span><span class="sxs-lookup"><span data-stu-id="1bc37-103">Content coming soon.</span></span>
+<span data-ttu-id="59e4f-103">内容即将推出。</span><span class="sxs-lookup"><span data-stu-id="59e4f-103">Content coming soon.</span></span>
