@@ -3,7 +3,7 @@ title: 部署具有三层保护的 SharePoint Online 网站
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 06/05/2018
+ms.date: 12/14/2018
 ms.audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -17,12 +17,12 @@ ms.custom:
 - Ent_Solutions
 ms.assetid: 1e8e3cfd-b878-4088-b941-9940363a5fae
 description: 摘要：为各种级别的信息保护创建和配置 SharePoint Online 团队网站。
-ms.openlocfilehash: 54392194f7ac5ce90337df3f33e23db595b1aa5c
-ms.sourcegitcommit: e0f016aca7befc8806233a492ee916cbe646094f
+ms.openlocfilehash: 69dc7395e8394694eab9eb6c27f229ea971516b0
+ms.sourcegitcommit: 7e2a0185cadea7f3a6afc5ddc445eac2e1ce22eb
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/27/2018
-ms.locfileid: "25345824"
+ms.lasthandoff: 02/11/2019
+ms.locfileid: "27281773"
 ---
 # <a name="deploy-sharepoint-online-sites-for-three-tiers-of-protection"></a>部署具有三层保护的 SharePoint Online 网站
 
@@ -264,13 +264,12 @@ ms.locfileid: "25345824"
   
 ## <a name="next-step"></a>后续步骤
 
-[使用 Office 365 标签和 DLP 保护 SharePoint Online 文件](protect-sharepoint-online-files-with-office-365-labels-and-dlp.md)
-    
+[使用 Azure 信息保护来保护 SharePoint Online 文件](protect-sharepoint-online-files-with-azure-information-protection.md)
+
+
 ## <a name="see-also"></a>另请参阅
 
 [保护 SharePoint Online 网站和文件](secure-sharepoint-online-sites-and-files.md)
-  
-[在开发/测试环境中保护 SharePoint Online 网站](secure-sharepoint-online-sites-in-a-dev-test-environment.md)
   
 [Microsoft 针对政治宣传活动、非营利组织和其他敏捷性组织的安全指南](microsoft-security-guidance-for-political-campaigns-nonprofits-and-other-agile-o.md)
   

@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.assetid: af398293-c69d-465e-a249-d74561552d30
 description: 使用 Office 365 中的敏感度标签，可以对敏感内容进行分类和保护，同时确保组织内人员的工作效率和协作能力不受阻碍。敏感度标签可用于强制执行保护设置，如对已标记内容设置加密或水印。
-ms.openlocfilehash: 2804785362b504137319f5560287b6b2319e840b
-ms.sourcegitcommit: d05a9937780d210b7ad48e721b947397ac5405a2
+ms.openlocfilehash: 48d66a93c82a7430bc34373975d385ebc7bfbf9a
+ms.sourcegitcommit: 7e2a0185cadea7f3a6afc5ddc445eac2e1ce22eb
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "29607154"
+ms.lasthandoff: 02/11/2019
+ms.locfileid: "29706163"
 ---
 # <a name="overview-of-sensitivity-labels"></a>敏感度标签概述
 
@@ -124,6 +124,9 @@ Azure 信息保护客户可以在安全与合规中心内使用 Azure 信息保�
     ![提示用户输入理由的页面](media/Sensitivity_label_justification_required.png)
 
 - **要求用户将标签应用于他们的电子邮件和文档。** 如果你希望标记用户的所有内容，则可以要求必须将标签应用于所有已保存的文档和已发送的电子邮件。标签可以由用户手动分配、按条件自动分配或者进行默认分配（上述默认标签选项）。以下是当要求用户分配标签时 Outlook 中显示的提示。
+
+    > [!NOTE]
+    > 要使用强制标签，需要具备 Azure 信息保护订阅。要使用此功能，必须下载并安装 [Azure 信息保护客户端](https://www.microsoft.com/en-us/download/details.aspx?id=53018)或后续的 [Azure 信息保护统一标签客户端](https://docs.microsoft.com/zh-CN/azure/information-protection/rms-client/install-unifiedlabelingclient-app)。我们正在设法实现 Office 应用对此功能的本机支持，因此届时将不需要 Azure 信息保护客户端。此外，客户端仅在 Windows 上运行，因此 Mac、iOS 和 Android 上尚不支持此功能。
 
     ![在 Outlook 中要求用户应用所需标签的提示](media/sensitivity_labels_mandatory_prompt_aipv2_outlook.PNG)
 

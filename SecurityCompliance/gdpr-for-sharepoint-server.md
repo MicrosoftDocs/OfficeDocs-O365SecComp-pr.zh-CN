@@ -9,12 +9,12 @@ ms.service: o365-solutions
 ms.custom: ''
 localization_priority: Priority
 description: 了解如何解决本地 SharePoint Server 中的 GDPR 要求。
-ms.openlocfilehash: f6f5e4a1b9309f846d47fda69a76ab4da396b2f5
-ms.sourcegitcommit: c31424cafbf1953f2864d7e2ceb95b329a694edb
+ms.openlocfilehash: 05c64c10c2fea80ed410258433c35efc33c4a9de
+ms.sourcegitcommit: 7e2a0185cadea7f3a6afc5ddc445eac2e1ce22eb
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "23272387"
+ms.lasthandoff: 02/11/2019
+ms.locfileid: "29740824"
 ---
 # <a name="gdpr-for-sharepoint-server"></a>适用于 SharePoint Server 的 GDPR
 
@@ -36,7 +36,7 @@ ms.locfileid: "23272387"
 
 对于文件共享和 SharePoint 站点和库，推荐的方法包括下列步骤：
 
-1.  **安装并配置 Azure 信息保护扫描程序。**
+1.  **[安装并配置 Azure 信息保护扫描程序。](https://docs.microsoft.com/zh-CN/azure/information-protection/rms-client/client-admin-guide-install#options-to-install-the-azure-information-protection-client-for-users)**
 
     -   决定要使用的敏感数据类型。
 
@@ -116,32 +116,32 @@ SharePoint Server 使用情况数据库（默认名称为 WSS_Logging）包含 U
 
 ```sql
 [In dbo].[LinkStore_<ID>]:
-CREATE PROCEDURE proc_MSS_GetQueryTermsForUser 
-( 
-    @UserName nvarchar(256), 
-    @StartTime datetime 
-) 
-AS 
-BEGIN 
-    SET NOCOUNT ON; 
-    SELECT searchTime, queryString 
-    FROM 
-        dbo.MSSQLogPageImpressionQuery 
-    WITH 
-        (NOLOCK) 
-    WHERE 
-        userName = @UserName AND 
-        searchTime > @StartTime 
-END 
-GO 
+CREATE PROCEDURE proc_MSS_GetQueryTermsForUser 
+( 
+    @UserName nvarchar(256), 
+    @StartTime datetime 
+) 
+AS 
+BEGIN 
+    SET NOCOUNT ON; 
+    SELECT searchTime, queryString 
+    FROM 
+        dbo.MSSQLogPageImpressionQuery 
+    WITH 
+        (NOLOCK) 
+    WHERE 
+        userName = @UserName AND 
+        searchTime > @StartTime 
+END 
+GO 
 ```
 
 #### <a name="export-a-users-queries-from-the-past-100-days"></a>导出用户过去 100 天的查询
 
 ```sql
-DECLARE @FROMDATE datetime 
-SET @FROMDATE = DATEADD(day, -100, GETUTCDATE()) 
-EXECUTE proc_MSS_GetQueryTermsForUser '0#.w|domain\username', @FROMDATE 
+DECLARE @FROMDATE datetime 
+SET @FROMDATE = DATEADD(day, -100, GETUTCDATE()) 
+EXECUTE proc_MSS_GetQueryTermsForUser '0#.w|domain\username', @FROMDATE 
 ```
 
 #### <a name="export-a-users-favorite-queries"></a>导出用户收藏的查询
@@ -150,34 +150,34 @@ EXECUTE proc_MSS_GetQueryTermsForUser '0#.w|domain\username', @FROMDATE
 
 ```sql
 In [dbo].[Search_<ID>]:
-CREATE PROCEDURE proc_MSS_GetPersonalFavoriteQueries 
-( 
-    @UserName nvarchar(256), 
-    @SearchTime datetime 
-) 
-AS 
-BEGIN 
-    SET NOCOUNT ON; 
-    SELECT max(queries.SearchTime) as SearchTime, 
-           max(queries.querystring) as queryString, 
-           max(url.url) as URL 
-    FROM MSSQLogOwner owners WITH(NOLOCK) 
-    JOIN MSSQLogPersonalResults results WITH(NOLOCK) on owners.OwnerId = results.OwnerId 
-    JOIN MSSQLogUrl url WITH(NOLOCK) on results.ClickedUrlId = url.urlId 
-    JOIN MSSQLogPersonalQueries queries WITH(NOLOCK) on results.OwnerId = queries.OwnerId 
-    WHERE queries.SearchTime > @SearchTime 
-        AND queries.UserName = @UserName 
-        GROUP BY queries.QueryString,url.url 
-END 
-GO 
+CREATE PROCEDURE proc_MSS_GetPersonalFavoriteQueries 
+( 
+    @UserName nvarchar(256), 
+    @SearchTime datetime 
+) 
+AS 
+BEGIN 
+    SET NOCOUNT ON; 
+    SELECT max(queries.SearchTime) as SearchTime, 
+           max(queries.querystring) as queryString, 
+           max(url.url) as URL 
+    FROM MSSQLogOwner owners WITH(NOLOCK) 
+    JOIN MSSQLogPersonalResults results WITH(NOLOCK) on owners.OwnerId = results.OwnerId 
+    JOIN MSSQLogUrl url WITH(NOLOCK) on results.ClickedUrlId = url.urlId 
+    JOIN MSSQLogPersonalQueries queries WITH(NOLOCK) on results.OwnerId = queries.OwnerId 
+    WHERE queries.SearchTime > @SearchTime 
+        AND queries.UserName = @UserName 
+        GROUP BY queries.QueryString,url.url 
+END 
+GO 
 ```
 
-#### <a name="export-a-users-favorite-queries-from-the-past-100-days"></a>导出用户过去 100 天收藏的查询 
+#### <a name="export-a-users-favorite-queries-from-the-past-100-days"></a>导出用户过去 100 天收藏的查询 
 
 ```sql
-DECLARE @FROMDATE datetime 
-SET @FROMDATE = DATEADD(day, -100, GETUTCDATE()) 
-EXECUTE proc_MSS_GetPersonalFavoriteQueries '0#.w|domain\username', @FROMDATE 
+DECLARE @FROMDATE datetime 
+SET @FROMDATE = DATEADD(day, -100, GETUTCDATE()) 
+EXECUTE proc_MSS_GetPersonalFavoriteQueries '0#.w|domain\username', @FROMDATE 
 ```
 
 #### <a name="remove-references-to-user-names-that-are-more-than-x-days-old"></a>删除超过 X 天的用户名引用
@@ -185,28 +185,28 @@ EXECUTE proc_MSS_GetPersonalFavoriteQueries '0#.w|domain\username', @FROMDATE
 使用以下步骤，从 Links Store 查询日志表中删除超过 @Days 的*所有*用户名引用。该过程仅删除时间倒退到 @LastCleanupTime 之前的引用。
 
 ```sql
-In [dbo].[LinksStore_<ID>]:  
-CREATE PROCEDURE proc_MSS_QLog_Cleanup_Users 
-( 
-    @LastCleanupTime datetime, 
-    @Days int 
-) 
-AS 
-BEGIN 
-    DECLARE @TooOld datetime 
-    SET @TooOld = DATEADD(day, -@Days, GETUTCDATE()) 
-    DECLARE @FromLast datetime 
-    SET @FromLast = DATEADD(day, -@Days, @LastCleanupTime) 
-    BEGIN TRANSACTION 
-         UPDATE MSSQLogPageImpressionQuery 
-    SET userName = 'NA' 
-    WHERE @FromLast <= searchTime AND searchTime < @TooOld 
-    UPDATE MSSQLogO14PageClick 
-    SET userName = 'NA' 
-    WHERE @FromLast <= searchTime AND searchTime < @TooOld 
-    COMMIT TRANSACTION 
-END 
-GO 
+In [dbo].[LinksStore_<ID>]:  
+CREATE PROCEDURE proc_MSS_QLog_Cleanup_Users 
+( 
+    @LastCleanupTime datetime, 
+    @Days int 
+) 
+AS 
+BEGIN 
+    DECLARE @TooOld datetime 
+    SET @TooOld = DATEADD(day, -@Days, GETUTCDATE()) 
+    DECLARE @FromLast datetime 
+    SET @FromLast = DATEADD(day, -@Days, @LastCleanupTime) 
+    BEGIN TRANSACTION 
+         UPDATE MSSQLogPageImpressionQuery 
+    SET userName = 'NA' 
+    WHERE @FromLast <= searchTime AND searchTime < @TooOld 
+    UPDATE MSSQLogO14PageClick 
+    SET userName = 'NA' 
+    WHERE @FromLast <= searchTime AND searchTime < @TooOld 
+    COMMIT TRANSACTION 
+END 
+GO 
 ```
 
 #### <a name="remove-references-to-a-specific-user-name-thats-more-than-x-days-old"></a>删除超过 X 天的特定用户名引用
@@ -215,67 +215,69 @@ GO
 
 ```sql
 In [dbo].[LinksStore_<ID>]:
-CREATE PROCEDURE proc_MSS_QLog_Cleanup_Users 
-( 
-    @UserName nvarchar(256),
-    @LastCleanupTime datetime, 
-    @Days int 
-) 
-AS 
-BEGIN 
-    DECLARE @TooOld datetime 
-    SET @TooOld = DATEADD(day, -@Days, GETUTCDATE()) 
-    DECLARE @FromLast datetime 
-    SET @FromLast = DATEADD(day, -@Days, @LastCleanupTime) 
-    BEGIN TRANSACTION 
-         UPDATE MSSQLogPageImpressionQuery 
-    SET userName = 'NA' 
-    WHERE @FromLast <= searchTime AND searchTime < @TooOld AND userName = @UserName
-    UPDATE MSSQLogO14PageClick 
-    SET userName = 'NA' 
-    WHERE @FromLast <= searchTime AND searchTime < @TooOld AND userName = @UserName
-    COMMIT TRANSACTION 
-END 
-GO 
+CREATE PROCEDURE proc_MSS_QLog_Cleanup_Users 
+( 
+    @UserName nvarchar(256),
+    @LastCleanupTime datetime, 
+    @Days int 
+) 
+AS 
+BEGIN 
+    DECLARE @TooOld datetime 
+    SET @TooOld = DATEADD(day, -@Days, GETUTCDATE()) 
+    DECLARE @FromLast datetime 
+    SET @FromLast = DATEADD(day, -@Days, @LastCleanupTime) 
+    BEGIN TRANSACTION 
+         UPDATE MSSQLogPageImpressionQuery 
+    SET userName = 'NA' 
+    WHERE @FromLast <= searchTime AND searchTime < @TooOld AND userName = @UserName
+    UPDATE MSSQLogO14PageClick 
+    SET userName = 'NA' 
+    WHERE @FromLast <= searchTime AND searchTime < @TooOld AND userName = @UserName
+    COMMIT TRANSACTION 
+END 
+GO 
 ```
 
 #### <a name="remove-references-to-all-user-names-in-the-query-history-from-a-date-and-up-to-the-past-30-days"></a>从查询历史记录中删除自某个日期起到过去 30 天内的所有用户名引用
 
 ```sql
-EXECUTE proc_MSS_QLog_Cleanup_Users '1-1-2017', 30 
+EXECUTE proc_MSS_QLog_Cleanup_Users '1-1-2017', 30 
 ```
 
 ### <a name="delete-usage-records"></a>删除使用情况记录
 
 SharePoint Server 自动在 3 年后删除使用情况记录。可使用以下步骤手动删除此类记录：
 
-删除与已删除文档相关联的所有使用情况记录： 
+删除与已删除文档相关联的所有使用情况记录： 
 
-1.  确保已安装最新 SharePoint 更新。 
+1.  确保已安装最新 SharePoint 更新。 
 
 2.  启动 SharePoint 命令行管理程序。
 
-3.  停止并清除“使用情况分析”分析： 
+3.  停止并清除“使用情况分析”分析： 
 
     ```powershell
-    $tj = Get-SPTimerJob -Type Microsoft.Office.Server.Search.Analytics.UsageAnalyticsJobDefinition 
-    $tj.StopAnalysis() 
-    $tj.ClearAnalysis() 
+    $tj = Get-SPTimerJob -Type Microsoft.Office.Server.Search.Analytics.UsageAnalyticsJobDefinition 
+    $tj.DisableTimerjobSchedule()
+    $tj.StopAnalysis() 
+    $tj.ClearAnalysis() 
+    $tj.EnableTimerjobSchedule()
     ```
 
-4.  等待分析再次启动（可能最多需要 24 小时）。 
+4.  等待分析再次启动（可能最多需要 24 小时）。 
 
 5.  下一次运行分析时，它会转储分析报告数据库中的所有记录。对于包含许多条目的大型数据库，这一完整转储可能需要一段时间。
 
-6.  等待 10 天。分析每日运行，并且与已删除文档相关联的记录将在运行 10 次后删除。如果需要删除许多记录，此运行所花费的时间可能会比平时长。 
+6.  等待 10 天。分析每日运行，并且与已删除文档相关联的记录将在运行 10 次后删除。如果需要删除许多记录，此运行所花费的时间可能会比平时长。 
 
 ### <a name="personal-information-and-search-in-sharepoint-server-2010"></a>SharePoint Server 2010 中的个人信息和搜索
 
-#### <a name="fast-search-server-2010-for-sharepoint"></a>FAST Search Server 2010 for SharePoint 
+#### <a name="fast-search-server-2010-for-sharepoint"></a>FAST Search Server 2010 for SharePoint 
 
 除了存储索引中的文件，FAST Search Server 2010 加载项还以 FixML 中间格式存储文件。FixML 文件定期在每晚 3 点到 5 点之间压缩。压缩可自动从 FiXML 文件中删除已删除的文件。若要确保及时删除属于已删除用户或文档的信息，请确保始终启用压缩。
 
-### <a name="hybrid-search"></a>混合搜索 
+### <a name="hybrid-search"></a>混合搜索 
 
 混合搜索解决方案的建议操作与 SharePoint Server 或 SharePoint Online 中的搜索相同。存在两种混合搜索解决方案：
 
@@ -317,7 +319,7 @@ $credentials = New-Object Microsoft.SharePoint.Client.SharePointOnlineCredential
 $clientContext.Credentials = $credentials
 if (!$clientContext.ServerObjectIsNull.Value)
 {
-    Write-Host "Connected to SharePoint Online site: '$Url'" -ForegroundColor Green
+    Write-Host "Connected to SharePoint Online site: '$Url'" -ForegroundColor Green
 }
 
 # Get user

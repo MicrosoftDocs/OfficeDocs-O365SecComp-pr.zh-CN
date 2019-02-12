@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.assetid: af398293-c69d-465e-a249-d74561552d30
 description: 创建敏感度标签时，可以限制对将要应用标签的内容的访问。敏感度标签可以使用加密来保护内容。
-ms.openlocfilehash: fff787e980b7dbbfea227734bb6caad0985cf158
-ms.sourcegitcommit: 77c50332c3dbb026f47da3ac2534198202d9ef64
+ms.openlocfilehash: 154be1d4dd1e891913e1b64d8f1ae5dfa34706bf
+ms.sourcegitcommit: 7e2a0185cadea7f3a6afc5ddc445eac2e1ce22eb
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/29/2018
-ms.locfileid: "25842594"
+ms.lasthandoff: 02/11/2019
+ms.locfileid: "26547314"
 ---
 # <a name="restrict-access-to-content-by-using-encryption-in-sensitivity-labels"></a>使用敏感度标签中的加密限制对内容的访问
 
@@ -44,7 +44,7 @@ ms.locfileid: "25842594"
 
 ## <a name="how-to-turn-on-encryption-for-a-sensitivity-label"></a>如何打开敏感度标签的加密
 
-若要开始，只需将“加密”**** 切换至“打开”****，然后使用下面的选项来控制谁能够访问应用了此标签的电子邮件或文档。可以：
+要开始使用，只需将“**加密**”切换到“**开**”，然后使用下述选项来控制哪些人员可访问应用了此标签的电子邮件或文档。你可执行以下操作：
 
 1. **向电子邮件和文档同时应用加密，或只向电子邮件应用加密。** 如果选择只向电子邮件应用加密，则具有此标签的邮件将在 Outlook 中被加密，但具有此标签的文档将不会在其他应用中加密（例如，Word 或 PowerPoint）。 
 2. **允许对标记的内容的访问权限过期**（在某个特定日期或在应用标签后的特定天数后）。在此时间后，用户将无法打开标记的项。如果指定某个日期，则它将于该日期午夜（在你的当前时区）生效。 

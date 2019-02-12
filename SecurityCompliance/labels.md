@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.assetid: af398293-c69d-465e-a249-d74561552d30
 description: Office 365 中的保留标签可有助于对正确的内容执行适当的操作。借助保留标签，可对整个组织中的数据进行分类来管理数据，并根据此分类强制执行保留规则。另外，保留标签还可用于在 Office 365 中实现记录管理。
-ms.openlocfilehash: d957fc251aa4591d273a65d0a85ecde0df0845c9
-ms.sourcegitcommit: c7264f3a6a97f1ff544544e2c722e7825e265fa1
+ms.openlocfilehash: 7f8ab61a4d42f1a032f19110ccd1d12f833c0737
+ms.sourcegitcommit: 7e2a0185cadea7f3a6afc5ddc445eac2e1ce22eb
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/14/2018
-ms.locfileid: "26299246"
+ms.lasthandoff: 02/11/2019
+ms.locfileid: "29614496"
 ---
 # <a name="overview-of-retention-labels"></a>保留标签概述
 
@@ -266,22 +266,34 @@ ms.locfileid: "26299246"
     
 - 检测到的敏感信息类型的匹配准确度（或可信度）至少为 75。许多敏感信息类型都是通过多个模式进行定义，其中模式的匹配准确度越高，需要发现的证据（如关键字、日期或地址）就越多，而模式的匹配准确度越低，需要发现的证据就越少。简而言之，“最小”**** 匹配准确度越低，内容就越容易与条件匹配。 
     
-    若要更改匹配准确度（或可信度），应使用相应敏感信息类型的模式中所用的可信度之一，如[敏感信息类型查找什么](what-the-sensitive-information-types-look-for.md)中所定义。
+要详细了解这些选项，请参阅[微调规则以增加或降低匹配的难度](data-loss-prevention-policies.md#tuning-rules-to-make-them-easier-or-harder-to-match)。
     
 ![用于确定敏感信息类型的选项](media/de255881-f596-4c8d-8359-e974e3a0819a.png)
   
-### <a name="auto-apply-retention-labels-to-content-with-keywords"></a>将保留标签自动应用于包含关键字的内容
+### <a name="auto-apply-labels-to-content-with-keywords-or-searchable-properties"></a>将标签自动应用于包含关键字或可搜索属性的内容
 
-可将保留标签自动应用于满足特定条件的内容。目前可用的条件支持将保留标签应用于包含特定字词或短语的内容。可使用搜索运算符（如 AND、OR 和 NOT）优化查询。 
+可将标签自动应用于满足特定条件的内容。目前可用的条件支持将标签应用于包含特定字词、短语或可搜索属性值的内容。可使用搜索运算符（如 AND、OR 和 NOT）优化查询。
 
-若要详细了解查询语法，请参阅：
+有关查询语法的详细信息，请参阅：
 
-- [关键字查询语言 (KQL) 语法参考](https://docs.microsoft.com/sharepoint/dev/general-development/keyword-query-language-kql-syntax-reference)
+- [关键字查询语言 (KQL) 语法参考](https://docs.microsoft.com/zh-CN/sharepoint/dev/general-development/keyword-query-language-kql-syntax-reference)
 
-基于查询的保留标签使用搜索索引来标识内容。
-  
+基于查询的标签使用搜索索引来标识内容。有关有效可搜索属性的详细信息，请参阅：
+
+- [内容搜索的关键字查询和搜索条件](keyword-queries-and-search-conditions.md)
+- [已爬网和托管属性在 SharePoint Server 中的概述](https://docs.microsoft.com/zh-CN/SharePoint/technical-reference/crawled-and-managed-properties-overview)
+
+示例查询：
+
+- Exchange
+    - subject:"Quarterly Financials"
+    - recipients:garthf<!--nolink-->@contoso.com
+- Sharepoint 和 OneDrive for Business
+    - contenttype:contract
+    - site:https<!--nolink-->://contoso.sharepoint.com/sites/teams/procurement AND contenttype:contract
+
 ![查询编辑器](media/ac5b8e5e-7453-4ec7-905c-160df57298d3.png)
-  
+
 ## <a name="applying-a-default-retention-label-to-all-content-in-a-sharepoint-library-folder-or-document-set"></a>将默认保留标签应用于 SharePoint 库、文件夹或文档集中的所有内容
 
 除了能让人员将保留标签应用于各个文档之外，还能将默认保留标签应用于 SharePoint 库、文件夹或文档集，这样这些位置上的所有文档都会获得默认保留标签。
@@ -346,7 +358,7 @@ ms.locfileid: "26299246"
     
 ### <a name="who-can-classify-content-as-a-record"></a>谁能将内容分类为记录
 
-对于 SharePoint 内容，默认成员组（拥有参与权限级别）中的任何用户都可将记录标签应用于内容。只有网站集管理员才能删除或更改已应用的保留标签。另外，还必须手动应用将内容分类为记录的保留标签，此标签无法自动应用。
+对于 SharePoint 内容，默认成员组（拥有参与权限级别）中的任何用户都可将记录标签应用于内容。只有网站集管理员才能删除或更改已应用的保留标签。另外，还必须手动应用将内容分类为记录的保留标签，此标签无法[自动应用到应用](#auto-apply-retention-labels)。
   
 ### <a name="records-and-folders"></a>记录和文件夹
 
