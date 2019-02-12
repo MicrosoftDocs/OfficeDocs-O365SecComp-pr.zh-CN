@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.assetid: 0d4d0f35-390b-4518-800e-0c7ec95e946c
 description: '使用 Office 365 安全性 & 合规性中心搜索统一的审核日志，以查看 Office 365 组织中的用户和管理员的活动。 '
-ms.openlocfilehash: 848dbbdeb8b7cd9abd664b5ac401f6afde31c1e1
-ms.sourcegitcommit: c40eee4ef3890056da58649e4617283b0b9d1673
+ms.openlocfilehash: 41f6f2c90a0171b52807cbf46f15eebb1f16cc9a
+ms.sourcegitcommit: d6b1632a44e40522a4a16e7cb05ba5189214baeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/05/2019
-ms.locfileid: "29735464"
+ms.lasthandoff: 02/11/2019
+ms.locfileid: "29890053"
 ---
 # <a name="search-the-audit-log-in-the-office-365-security--compliance-center"></a>Office 365 安全性 & 合规性中心中的搜索审核日志
 
@@ -281,7 +281,7 @@ ms.locfileid: "29735464"
 
 ## <a name="audited-activities"></a>审核的活动
 
-本节中的表介绍了审核 Office 365 中的活动。您可以搜索这些通过搜索审核的事件日志中安全&amp;合规性中心。单击**搜索审核日志**选项卡的分步说明。 
+本节中的表介绍了审核 Office 365 中的活动。您可以通过在安全 & 合规性中心中搜索审核日志搜索这些事件。
   
 这些表组相关的活动或特定的 Office 365 服务中的活动。表包括**活动**下拉列表中显示的友好名称和相应操作时导出搜索结果显示在审核记录的详细信息和 CSV 文件的名称。有关详细信息的说明，请参阅[Office 365 中的详细的属性审核日志](detailed-properties-in-the-office-365-audit-log.md)。
   
@@ -293,9 +293,10 @@ ms.locfileid: "29735464"
 |[同步活动](#synchronization-activities)<br/> |[网站管理活动](#site-administration-activities)<br/> |[Exchange 邮箱活动](#exchange-mailbox-activities)<br/> |
 |[Sway 活动](#sway-activities) <br/> |[用户管理活动](#user-administration-activities) <br/> |[Azure AD 组管理活动](#azure-ad-group-administration-activities) <br/> |
 |[应用程序管理活动](#application-administration-activities) <br/> |[角色管理活动](#role-administration-activities) <br/> |[目录管理活动](#directory-administration-activities) <br/> |
-|[电子数据展示活动](#ediscovery-activities) <br/> |[Power BI 活动](#power-bi-activities) <br/> |[Microsoft 团队活动](#microsoft-teams-activities) <br/> |
-|[Yammer 活动](#yammer-activities) <br/> |[Microsoft Flow](#microsoft-flow) <br/> |[Microsoft Stream](#microsoft-stream) <br/>|
-|[Exchange 管理员审核日志](#exchange-admin-audit-log) <br/> |
+|[电子数据展示活动](#ediscovery-activities) <br/> |[Power BI 活动](#power-bi-activities) <br/> |[Microsoft 工作场所分析](#microsoft-workplace-analytics-activities)<br/>|
+[Microsoft 团队活动](#microsoft-teams-activities) <br/> |[Yammer 活动](#yammer-activities) <br/> |[Microsoft Flow](#microsoft-flow) <br/> 
+|[Microsoft Stream](#microsoft-stream) <br/>|[Exchange 管理活动](#exchange-admin-audit-log)<br/>
+||||
    
   
 ### <a name="file-and-page-activities"></a>文件和页上的活动
@@ -326,6 +327,7 @@ ms.locfileid: "29735464"
 |上载的文件  <br/> |FileUploaded  <br/> |用户将文档上载到网站上的文件夹。  <br/> |
 |查看的页  <br/> |PageViewed  <br/> |用户查看网站上的页面。这不包括使用 Web 浏览器查看位于文档库中的文件。  <br/> |
 |（无）  <br/> |PageViewedExtended  <br/> |这与"查看页面"(PageViewed) 活动。同一个人将不断查看一段的时间 （最多为 3 小时） 的网页时，将记录 PageViewedExtended 事件。记录 PageViewedExtended 事件的目的是减少 PageViewed 不断查看页面时记录的事件数。这有助于减少噪音是什么本质上是相同的多个 PageViewed 记录的用户活动，并允许您关注的初始 （和更重要） PageViewed 事件。  <br/> |
+||||
   
 ### <a name="folder-activities"></a>文件夹活动
   
@@ -342,6 +344,7 @@ ms.locfileid: "29735464"
 |移动的文件夹  <br/> |FolderMoved  <br/> |用户在网站上移动到其他位置的文件夹。  <br/> |
 |重命名的文件夹  <br/> |FolderRenamed  <br/> |用户重命名的网站上的文件夹。  <br/> |
 |还原的文件夹  <br/> |FolderRestored  <br/> |用户从网站上的回收站还原已删除的文件夹。  <br/> |
+||||
   
 ### <a name="sharing-and-access-request-activities"></a>共享和访问请求活动
   
@@ -382,6 +385,7 @@ ms.locfileid: "29735464"
 |用户添加到安全链接  <br/> |AddedToSecureLink  <br/> |用户已添加到可以使用的安全共享链接的实体列表。  <br/> |
 |从安全链接中移除用户  <br/> |RemovedFromSecureLink  <br/> |可以使用的安全共享链接的实体的列表中删除用户。  <br/> |
 |Withdrew 共享邀请  <br/> |SharingInvitationRevoked  <br/> |用户 withdrew 资源共享邀请。  <br/> |
+||||
   
 ### <a name="synchronization-activities"></a>同步活动
   
@@ -395,6 +399,7 @@ ms.locfileid: "29735464"
 |对计算机下载的文件更改  <br/> |FileSyncDownloadedPartial  <br/> |用户成功下载的任何更改为文件从文档库。此活动指示对文档库中的文件所做的任何更改已下载到用户的计算机上。仅更改已下载，因为用户 （如由**下载文件复制到计算机**活动） 已先前下载的文档库。<br/> |
 |上载到文档库的文件  <br/> |FileSyncUploadedFull  <br/> |用户建立同步关系，并成功将文件上载到文档库首次从其计算机。  <br/> |
 |上载的文件更改到文档库  <br/> |FileSyncUploadedPartial  <br/> |用户成功将更改上载到文档库上的文件。此事件表示从文档库对文件的本地版本所做任何更改都成功上载到文档库。仅更改是卸载，因为这些文件之前已上载的用户 (由 * * 文件上载到文档库 * * 活动)。  <br/> |
+||||
   
 ### <a name="site-administration-activities"></a>网站管理活动
   
@@ -432,6 +437,7 @@ ms.locfileid: "29735464"
 |计划的网站地理位置移动  <br/> |SiteGeoMoveScheduled  <br/> |SharePoint 或全局管理员成功安排 SharePoint 或 OneDrive 网站地理位置移动。多地理位置功能允许 Office 365 组织跨越多个 Office 365 数据中心地域，称为 geo。有关详细信息，请参阅[OneDrive 和 Office 365 中 SharePoint Online 中的多地理位置功能](https://go.microsoft.com/fwlink/?linkid=860840)。<br/> |
 |主机网站集  <br/> |HostSiteSet  <br/> |SharePoint 或全局管理员更改指定的网站以承载个人或 OneDrive 业务网站。  <br/> |
 |更新的组  <br/> |GroupUpdated  <br/> |网站管理员或所有者更改网站的组的设置。这可能包括更改组的名称，用户可以查看或编辑组成员身份，并确定如何处理成员资格请求。  <br/> |
+||||
   
 ### <a name="exchange-mailbox-activities"></a>Exchange 邮箱活动
   
@@ -454,6 +460,7 @@ ms.locfileid: "29735464"
 |更新的消息  <br/> |Update  <br/> |已更改某个邮件或其属性。  <br/> |
 |登录到邮箱的用户  <br/> |MailboxLogin  <br/> |用户登录其邮箱。  <br/> |
 |（无）  <br/> |UpdateInboxRules  <br/> |已添加、 删除或更改收件箱规则。收件箱规则用于处理基于指定条件的用户的收件箱中的邮件，并执行操作，达到规则的条件时，例如将邮件移到指定的文件夹或删除一条消息。<br/> 若要返回的收件箱规则操作的条目，您必须在**活动**列表中选择**显示所有活动的结果**。使用日期范围框和**用户**列表来缩小搜索结果。<br/> |
+||||
   
 ### <a name="sway-activities"></a>Sway 活动
   
@@ -475,6 +482,7 @@ ms.locfileid: "29735464"
 |关闭 Sway 服务  <br/> |SwayServiceOff  <br/> |管理员通过使用 Office 365 管理中心，为整个组织中禁用 Sway。  <br/> |
 |开启 Sway 服务  <br/> |SwayServiceOn  <br/> |管理员使用 Office 365 管理中心内 (默认情况下启用服务 Sway) 整个组织启用 Sway。  <br/> |
 |查看的 Sway  <br/> |SwayView  <br/> |用户可查看 Sway。  <br/> |
+||||
 
   
 ### <a name="user-administration-activities"></a>用户管理活动
@@ -491,6 +499,7 @@ ms.locfileid: "29735464"
 |设置强制用户更改密码的属性  <br/> |设置强制更改用户密码  <br/> |管理员设置强制用户更改其密码下一次用户登录到 Office 365 的属性。  <br/> |
 |设置许可证属性  <br/> |设置许可证属性  <br/> |管理员修改许可分配给用户的属性。  <br/> |
 |更新的用户  <br/> |更新用户  <br/> |管理员将更改的用户帐户的一个或多个属性。有关可更新的用户属性的列表，请参阅在[Azure Active Directory 审核报表事件](https://go.microsoft.com/fwlink/p/?LinkID=616549)中的"更新用户属性"部分。<br/> |
+||||
   
 ### <a name="azure-ad-group-administration-activities"></a>Azure AD 组管理活动
   
@@ -503,6 +512,7 @@ ms.locfileid: "29735464"
 |删除的组  <br/> |删除组  <br/> |已删除的组。  <br/> |
 |从组删除的成员  <br/> |从组中删除成员  <br/> |已从组中删除成员。  <br/> |
 |更新的组  <br/> |更新组  <br/> |已更改的一组属性。  <br/> |
+||||
    
 ### <a name="application-administration-activities"></a>应用程序管理活动
   
@@ -517,6 +527,7 @@ ms.locfileid: "29735464"
 |从目录中删除的服务主体  <br/> |删除服务主体  <br/> |应用程序已从 Azure AD 中删除/注销。由在目录中的服务主体表示应用程序。  <br/> |
 |从服务主体的已删除的凭据  <br/> |删除服务主体凭据  <br/> |从服务主体 Azure AD 中移除了凭据。服务原则表示的目录中的应用程序。  <br/> |
 |设置委派条目  <br/> |设置委派条目  <br/> |身份验证的权限已更新的 Azure AD 中的应用程序。  <br/> |
+||||
 
 ### <a name="role-administration-activities"></a>角色管理活动
   
@@ -527,6 +538,7 @@ ms.locfileid: "29735464"
 |将成员添加到角色  <br/> |将角色成员添加到角色  <br/> |将某个用户添加到 Office 365 管理员角色。  <br/> |
 |从目录角色中删除用户  <br/> |从角色中移除角色成员  <br/> |Office 365 中删除用户从管理员角色。  <br/> |
 |设置公司联系人信息  <br/> |设置公司联系人信息  <br/> |更新 Office 365 组织的公司级别联系人首选项。这包括订阅相关的电子邮件发送的 Office 365，以及有关 Office 365 服务的技术通知的电子邮件地址。  <br/> |
+||||
    
 ### <a name="directory-administration-activities"></a>目录管理活动
   
@@ -546,6 +558,7 @@ ms.locfileid: "29735464"
 |更新后的域  <br/> |更新域  <br/> |更新 Office 365 组织中域的设置。  <br/> |
 |已验证的域  <br/> |验证域  <br/> |验证您的组织是域的所有者。  <br/> |
 |验证电子邮件已验证的域  <br/> |验证电子邮件已验证的域  <br/> |使用电子邮件验证来验证您的组织是域的所有者。  <br/> |
+||||
    
 ### <a name="ediscovery-activities"></a>电子数据展示活动
   
@@ -572,6 +585,24 @@ Power BI 中，您可以搜索活动的审核日志。有关 Power BI 活动的�
   
 请注意，不默认启用审核日志记录的 Power BI。若要搜索的 Office 365 审核日志中的 Power BI 活动，您必须在 Power BI 管理门户中启用审核。有关说明，请参阅[Power BI 管理门户](https://docs.microsoft.com/power-bi/service-admin-portal#audit-logs)中的"审核日志"一节。
   
+### <a name="microsoft-workplace-analytics-activities"></a>Microsoft 工作场所分析活动
+
+下表列出了管理员和分析师活动 Microsoft 工作场所分析登录 Office 365 中的审核日志。工作区分析提供深入组跨 Office 365 组织的协作方式。有关详细信息，请参阅[工作场所分析](https://docs.microsoft.com/en-us/workplace-analytics/index-orig)。
+
+|**易记名称**|**Operation**|**说明**|
+|:-----|:-----|:-----|
+|访问的 OData 链接 <br/> |AccessedOdataLink <br/> |分析师访问查询的 OData 链接。|
+|已取消的查询 <br/> |CanceledQuery <br/> |分析师取消正在运行的查询。|
+|创建的会议排除 <br/> |MeetingExclusionCreated <br/> |创建一个新的分析师会议排除规则。|
+|已删除的结果 <br/> |DeletedResult <br/> |分析师删除查询结果。|
+|下载的报表 <br/> |DownloadedReport <br/> |分析师下载查询结果文件。|
+|执行的查询 <br/> |ExecutedQuery <br/> |分析师运行查询。|
+|更新的数据访问设置 <br/> |UpdatedDataAccessSetting <br/> |管理更新数据访问设置。|
+|更新的隐私设置 <br/> |UpdatedPrivacySetting <br/> |管理更新隐私设置;例如，最小组大小。|
+|上载的组织数据 <br/> |UploadedOrgData <br/> |管理上载组织数据文件。|
+|查看浏览 <br/> |ViewedExplore <br/> |分析师查看一个或多个浏览页选项卡中的可视化。|
+||||
+
 ### <a name="microsoft-teams-activities"></a>Microsoft 团队活动
   
 下表列出用户和管理员在登录 Office 365 的 Microsoft 团队中的活动审核日志。Microsoft 团队是 Office 365 中的聊天居中工作区。汇集团队对话、 会议、 文件和 notes 到一个位置。有关详细信息和链接的帮助主题，请参阅：
@@ -601,6 +632,7 @@ Power BI 中，您可以搜索活动的审核日志。有关 Power BI 活动的�
 |更新了的连接器  <br/> |ConnectorUpdated  <br/> |用户修改通道中的连接器。  <br/> |
 |更新选项卡  <br/> |TabUpdated  <br/> |用户修改通道中的一个选项卡。  <br/> |
 |用户登录到团队  <br/> |TeamsSessionStarted  <br/> |一个用户登录到 Microsoft 团队客户端。  <br/> |
+||||
 
 ### <a name="yammer-activities"></a>Yammer 活动
   
@@ -625,6 +657,7 @@ Power BI 中，您可以搜索活动的审核日志。有关 Power BI 活动的�
 |更新的文件说明  <br/> |FileUpdateDescription  <br/> |用户更改文件的说明。  <br/> |
 |更新的文件名称  <br/> |FileUpdateName  <br/> |在用户更改文件的名称。  <br/> |
 |查看的文件  <br/> |FileVisited  <br/> |用户可查看文件。  <br/> |
+||||
    
 ### <a name="microsoft-flow"></a>Microsoft Flow
 
