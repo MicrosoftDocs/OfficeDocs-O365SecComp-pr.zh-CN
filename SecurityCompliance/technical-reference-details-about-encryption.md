@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 ms.assetid: 862cbe93-4268-4ef9-ba79-277545ecf221
 description: Office 365 中查看有关加密技术详细信息。
-ms.openlocfilehash: bb4629d89d2ed625cc1b817c53d2355484bfdf6c
-ms.sourcegitcommit: 7e2a0185cadea7f3a6afc5ddc445eac2e1ce22eb
+ms.openlocfilehash: c11f152b18a15886fc8a5108e6df66dafe53a758
+ms.sourcegitcommit: 6bdba12c13c02f7d9a7297d3042933b100c4e481
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/11/2019
-ms.locfileid: "28326933"
+ms.lasthandoff: 02/13/2019
+ms.locfileid: "29966186"
 ---
 # <a name="technical-reference-details-about-encryption-in-office-365"></a>有关 Office 365 加密的技术参考详情
 
@@ -89,6 +89,9 @@ Office 365 支持的所有密码套件都使用下 FIPS 140 2 可接受的算法
 <a name="TLSCipherSuites"> </a>
 
 密码套件是 TLS 用于建立安全连接的加密算法集合。Office 365 支持的密码套件按强度顺序从最强的密码套件开始依次在下表列出。当 Office 365 收到一个连接请求时，Office 365 首先会尝试使用最上面的密码套件进行连接，如果不成功，则会尝试使用列表中的第二个密码套件，以此类推。当 Office 365 发送连接请求至其他服务器或客户端时，由接收服务器或客户端决定是选择密码套件还是使用 TLS。
+
+> [!IMPORTANT]
+> 请注意，TLS 版本废弃，并的弃用版本*不应使用*较新版本有。换句话说，anywhere，但具有其中列出的 TLS 1.0，支持 1.1 版和 1.2、 选择 (TLS 1.2) 的*最新*版本。
   
 |**协议**|**密码套件名称**|**密钥交换算法/强度**|**完全向前保密支持**|**身份验证算法/强度**|**密码/强度**|
 |:-----|:-----|:-----|:-----|:-----|:-----|
