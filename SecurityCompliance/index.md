@@ -6,17 +6,18 @@ author: robmazz
 manager: laurawi
 layout: LandingPage
 ms.service: office-365
+ms.collection: M365-security-compliance
 ms.tgt_pltfrm: na
 ms.devlang: na
 ms.topic: landing-page
 ms.date: 12/27/2018
 ms.author: robmazz
-ms.openlocfilehash: 255bde226f5a284f2ac20d65124d4722e2357385
-ms.sourcegitcommit: 55762890e5129a5240054990ce64e93007ed7a32
+ms.openlocfilehash: aa6224754830e99f43deb8da5326622a46ccad51
+ms.sourcegitcommit: efccf5b4f22d34a9674bc55ebf3d88bc8bda2972
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/27/2018
-ms.locfileid: "27449876"
+ms.lasthandoff: 02/14/2019
+ms.locfileid: "29995173"
 ---
 # <a name="office-365-security-and-compliance"></a>Office 365 安全性和遵从性
 
@@ -51,7 +52,7 @@ ms.locfileid: "27449876"
                     </div>
                     <div class="cardText">
                         <h3>90 天内的后续步骤</h3>
-                        <p>这些任务需要更多时间规划和实现，但会显著增加安全状况： <br> - <a href="attack-simulator.md">进行攻击模拟</a> <br> - <a href="meet-data-protection-and-regulatory-reqs-using-microsoft-cloud.md">查看合规性管理器</a> <br> - <a href="https://docs.microsoft.com/azure/active-directory/privileged-identity-management/pim-configure">配置 Azure 特权的身份管理</a> <br> - <a href="privileged-access-management-configuration.md">配置访问权限的管理</a>  <br> - <a href="https://docs.microsoft.com/azure/active-directory/authentication/concept-mfa-howitworks">启用多重身份验证</a> <br> - <a href="protect-against-threats.md">查看和更新保护策略</a> </p>
+                        <p>这些任务需要更多时间规划和实现，但会显著增加安全状况： <br> - <a href="attack-simulator.md">进行攻击模拟</a> <br> - <a href="meet-data-protection-and-regulatory-reqs-using-microsoft-cloud.md">查看合规性管理器</a> <br> - <a href="https://docs.microsoft.com/azure/active-directory/privileged-identity-management/pim-configure">配置 Azure 特权的身份管理</a> <br> - <a href="privileged-access-management-configuration.md">配置访问权限的管理</a>  <br> - <a href="https://docs.microsoft.com/azure/active-directory/authentication/concept-mfa-howitworks">启用多重身份验证</a> <br> - <a href="protect-against-threats.md">查看 & 更新保护策略</a> </p>
                     </div>
                 </div>
             </div>
