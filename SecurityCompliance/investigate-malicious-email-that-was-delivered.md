@@ -3,7 +3,7 @@ title: 查找并调查恶意电子邮件已送达 （Office 365 威胁智能）
 ms.author: deniseb
 author: denisebmsft
 manager: laurawi
-ms.date: 8/6/2018
+ms.date: 02/13/2019
 ms.audience: ITPro
 ms.topic: article
 ms.service: o365-administration
@@ -12,20 +12,21 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 8f54cd33-4af7-4d1b-b800-68f8818e5b2a
+ms.collection: M365-security-compliance
 description: 了解如何使用威胁智能来查找和调查恶意电子邮件。
-ms.openlocfilehash: b6d4f8a5d1fcfce4461b91796b1264f94d1eb4d1
-ms.sourcegitcommit: 9034809b6f308bedc3b8ddcca8242586b5c30f94
+ms.openlocfilehash: c7492ccf2a7fa5d67b256264c6ed6fbdb06bcbc8
+ms.sourcegitcommit: efccf5b4f22d34a9674bc55ebf3d88bc8bda2972
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "28014914"
+ms.lasthandoff: 02/14/2019
+ms.locfileid: "29995183"
 ---
 # <a name="find-and-investigate-malicious-email-that-was-delivered-office-365-threat-intelligence"></a>查找并调查恶意电子邮件已送达 （Office 365 威胁智能）
 
 [Office 365 威胁智能](office-365-ti.md)可以调查您的用户处于风险，采取措施来保护您的组织的活动。例如，如果您是组织的安全工作组的一部分，您可以查找和调查的可疑邮件已送达您的用户。您可以使用[威胁资源管理器](get-started-with-ti.md#threat-explorer)来执行此操作。
   
-> [!NOTE]
-> Office 365 威胁智能是在 Office 365 企业 E5 中可用。如果您的组织使用的另一个 Office 365 企业版订阅，可以作为购买 Office 365 威胁智能。(作为全局管理员，在 Office 365 管理中心中，选择**帐单** \> **添加订阅**。)有关详细信息，请参阅[Office 365 平台服务说明： Office 365 安全性&amp;合规性中心](https://technet.microsoft.com/en-us/library/dn933793.aspx)和[购买或编辑企业的 Office 365 的加载项](https://support.office.com/article/4e7b57d6-b93b-457d-aecd-0ea58bff07a6)。 
+> [!IMPORTANT]
+> 开始在年 2 月 2019年和以后的几个月内推出，Office 365 威胁智能变得 Office 365 高级威胁保护计划 2，与其他威胁保护功能。若要了解详细信息，请参阅[Office 365 高级威胁保护计划和定价](https://products.office.com/exchange/advance-threat-protection)和[Office 365 高级威胁 Protection Service Description](https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description)。
   
 ## <a name="before-you-begin"></a>开始之前...
 

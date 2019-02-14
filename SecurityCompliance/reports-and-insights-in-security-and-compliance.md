@@ -1,5 +1,5 @@
 ---
-title: 智能和 Office 365 安全性真知灼见&amp;合规性中心
+title: 智能报告和 Office 365 安全性 & 合规性中心中的真知灼见
 ms.author: deniseb
 author: denisebmsft
 manager: laurawi
@@ -12,13 +12,14 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: e3e95f68-36e9-4256-bcca-78fe7fe5ea5d
+ms.collection: M365-security-compliance
 description: 安全中获取的报告和见解中提供概述&amp;合规性中心。
-ms.openlocfilehash: bdd04301c7a6e6d5230e5a74d6757ff81ac81bdc
-ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+ms.openlocfilehash: 30c6dcd324770a519f1501c6e7bfa85b28aa6969
+ms.sourcegitcommit: efccf5b4f22d34a9674bc55ebf3d88bc8bda2972
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "23013946"
+ms.lasthandoff: 02/14/2019
+ms.locfileid: "29995273"
 ---
 # <a name="smart-reports-and-insights-in-the-office-365-security-amp-compliance-center"></a>智能报告和 Office 365 安全性见解&amp;合规性中心
 
@@ -46,7 +47,7 @@ ms.locfileid: "23013946"
   
 |**信息类型**|**如何到达那里**|**位置了解详细信息**|
 |:-----|:-----|:-----|
-|**安全&amp;合规性中心报告**（所有最多）  <br/> Top 见解和建议和指向安全&amp;合规性报告，包括数据丢失防护报告、 标签、 电子邮件安全报告、 高级威胁保护报告和详细信息  <br/> |安全中&amp;合规性中心中，转到**报告** \> **仪表板** <br/> |[监视器的安全性和 Office 365 中的合规性](monitor-security-and-compliance.md) <br/> |
+|**安全&amp;合规性中心报告**（所有最多）  <br/> Top 见解和建议和指向安全&amp;合规性报告，包括数据丢失防护报告、 标签、 电子邮件安全报告、 高级威胁保护报告和详细信息  <br/> |安全中&amp;合规性中心中，转到**报告** \> **仪表板** <br/> |[Office 365 中的安全与合规监视](monitor-security-and-compliance.md) <br/> |
 |**数据丢失防护** <br/> 数据丢失预防策略与相匹配，误报和重写并链接创建或编辑策略  <br/> |安全中&amp;合规性中心中，转到**数据丢失防护** \> **策略** <br/> |[查看数据丢失防护报告](view-the-dlp-reports.md) <br/> |
 |**数据治理** <br/> 有关如何应用标签的信息，标签归类为记录、 标签趋势和更多  <br/> |安全中&amp;合规性中心中，转到**数据调控** \> **仪表板** <br/> |[查看数据治理报表](view-the-data-governance-reports.md) <br/> |
 |**威胁管理仪表板**（这也称为安全仪表板和威胁智能仪表板）  <br/> 威胁检测、 恶意软件趋势、 主要目标的用户、 发送和接收电子邮件，有关详细信息和更多  <br/> |安全中&amp;合规性中心中，转到**威胁管理** \> **仪表板** <br/> |[安全仪表板概述 （英文)](security-dashboard.md) <br/> |
@@ -71,7 +72,7 @@ ms.locfileid: "23013946"
     
 ## <a name="related-topics"></a>相关主题
 
-[监视器的安全性和 Office 365 中的合规性](monitor-security-and-compliance.md)
+[Office 365 中的安全与合规监视](monitor-security-and-compliance.md)
   
 [Office 365 中的威胁防护](protect-against-threats.md)
   

@@ -12,13 +12,15 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 4250c4bc-6102-420b-9e0a-a95064837676
+ms.collection:
+- M365-security-compliance
 description: 了解如何启用报告消息加载项的 Outlook 和 Outlook web，为各个用户或您的整个组织上。
-ms.openlocfilehash: 013145813e8feb3e7389f6248ee26195c1df3d08
-ms.sourcegitcommit: 1169a5759b9c2336fbc89d4651daf29e556f62fb
+ms.openlocfilehash: 8c061d14d11aa868567487186c5dcca534b86215
+ms.sourcegitcommit: efccf5b4f22d34a9674bc55ebf3d88bc8bda2972
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/18/2019
-ms.locfileid: "28727866"
+ms.lasthandoff: 02/14/2019
+ms.locfileid: "29995153"
 ---
 # <a name="enable-the-report-message-add-in"></a>启用报告消息加载项
 

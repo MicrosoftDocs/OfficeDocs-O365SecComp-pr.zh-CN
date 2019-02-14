@@ -3,7 +3,7 @@ title: 使用 Office 365 威胁智能确保 Office 365 用户安全
 ms.author: deniseb
 author: denisebmsft
 manager: laurawi
-ms.date: 2/12/2018
+ms.date: 02/13/2019
 ms.audience: ITPro
 ms.topic: article
 ms.service: o365-administration
@@ -12,13 +12,14 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 3387bfc3-028a-42f4-8133-4cbecfaab812
+ms.collection: M365-security-compliance
 description: 了解 Office 365 威胁智能可以帮助您的组织检测入侵和威胁，快速缓解和恢复的威胁。
-ms.openlocfilehash: ffcbf6cc179ec8a7e8887402e139d2a0cc716eef
-ms.sourcegitcommit: 2cf7f5bb282c971d33e00f65d9982a3f14aec74e
+ms.openlocfilehash: c049e6f811eec8a30eb2b94361f8cdcbdaa8ac49
+ms.sourcegitcommit: efccf5b4f22d34a9674bc55ebf3d88bc8bda2972
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/27/2018
-ms.locfileid: "26706096"
+ms.lasthandoff: 02/14/2019
+ms.locfileid: "29995363"
 ---
 # <a name="keep-your-office-365-users-safe-with-office-365-threat-intelligence"></a>使用 Office 365 威胁智能确保 Office 365 用户安全
 
@@ -27,6 +28,9 @@ ms.locfileid: "26706096"
 您知道哪些 Office 365 用户受到攻击中，或糟-泄露？知道如何缓解和面向您的用户的攻击恢复？您知道您可以这样做完全已对您在 Office 365 中可用的安全功能吗？ 
   
 [Office 365 威胁智能](office-365-ti.md)是一套在 Office 365 E5 订阅包含的功能。Office 365 威胁智能已帮助减少的平均时间社会工程事件的分辨率通过 80%，并增加了案例吞吐量 37%每月与以前的 2 个季度相比的 Microsoft IT ！ 
+
+> [!IMPORTANT]
+> 开始在年 2 月 2019年和以后的几个月内推出，Office 365 威胁智能变得 Office 365 高级威胁保护计划 2，与其他威胁保护功能。若要了解详细信息，请参阅[Office 365 高级威胁保护计划和定价](https://products.office.com/exchange/advance-threat-protection)和[Office 365 高级威胁 Protection Service Description](https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description)。
   
 我们最近添加了新功能以帮助提高如何检测和恢复威胁 ！下面是如何更新的威胁智能服务如何使您更加高效的快速演练一下。
   

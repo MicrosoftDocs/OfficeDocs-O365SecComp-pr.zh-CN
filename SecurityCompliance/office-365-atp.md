@@ -12,15 +12,20 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: e100fe7c-f2a1-4b7d-9e08-622330b83653
+ms.collection:
+- M365-security-compliance
 description: Office 365 高级威胁保护包括欺骗智能、 安全链接、 安全附件、 防钓鱼的高级的功能和威胁智能。
-ms.openlocfilehash: 213b262b0ecc821b8f139b1b63568b2b03e635c5
-ms.sourcegitcommit: c1c41744c2de89c9e172f817c8f73bb0ada81a58
+ms.openlocfilehash: 4899073247f4b39e7cda39f8f35544c436c0b2d7
+ms.sourcegitcommit: efccf5b4f22d34a9674bc55ebf3d88bc8bda2972
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/09/2019
-ms.locfileid: "29792247"
+ms.lasthandoff: 02/14/2019
+ms.locfileid: "29995213"
 ---
 # <a name="office-365-advanced-threat-protection"></a>Office 365 高级威胁防护
+
+> [!IMPORTANT]
+> 本文适用于企业客户。如果您是家庭用户查找有关在 Outlook 中的安全链接的信息，请参阅[高级 Outlook.com security](https://support.office.com/article/advanced-outlook-com-security-for-office-365-subscribers-882d2243-eab9-4545-a58a-b36fee4a46e2)。
 
 ## <a name="overview-of-office-365-advanced-threat-protection"></a>Office 365 的高级的威胁保护的概述
 

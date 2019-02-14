@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 ms.assetid: 0a322724-08ca-43db-b69a-afbfa20484cd
 description: 与 Office 365 中，在 rest 和在传输过程中，使用最强的加密、 协议和技术，您的内容进行加密。获取 Office 365 中的加密的概述。
-ms.openlocfilehash: a9f37fddf28461ee4912e0b8a1f5b922c59c009f
-ms.sourcegitcommit: 17c7e18d7d00135b1af40cbea117c9a817a41117
+ms.openlocfilehash: 5f64d6e758818d410f54370adee549f565d4f042
+ms.sourcegitcommit: efccf5b4f22d34a9674bc55ebf3d88bc8bda2972
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/24/2018
-ms.locfileid: "24972284"
+ms.lasthandoff: 02/14/2019
+ms.locfileid: "29995103"
 ---
 # <a name="encryption-in-office-365"></a>Office 365 中的加密
 
@@ -61,7 +61,7 @@ ms.locfileid: "24972284"
     
 - [激活 Office 365 管理中心的权限管理](https://support.office.com/article/5b6d3ac7-b1ac-428e-b03e-50e882f85a6e)
     
-- [在 SharePoint 管理中心中设置信息权限管理 (IRM)](set-up-irm-in-sp-admin-center.md)
+- [Set up Information Rights Management (IRM) in SharePoint admin center](set-up-irm-in-sp-admin-center.md)
     
 ## <a name="how-do-i"></a>如何实现...
 

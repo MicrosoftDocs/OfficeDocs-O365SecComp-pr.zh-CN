@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.assetid: 0d4d0f35-390b-4518-800e-0c7ec95e946c
 description: '使用 Office 365 安全性 & 合规性中心搜索统一的审核日志，以查看 Office 365 组织中的用户和管理员的活动。 '
-ms.openlocfilehash: 41f6f2c90a0171b52807cbf46f15eebb1f16cc9a
-ms.sourcegitcommit: d6b1632a44e40522a4a16e7cb05ba5189214baeb
+ms.openlocfilehash: 55d45d55bb515307ed94853878b6e9ae1cef4ad8
+ms.sourcegitcommit: efccf5b4f22d34a9674bc55ebf3d88bc8bda2972
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/11/2019
-ms.locfileid: "29890053"
+ms.lasthandoff: 02/14/2019
+ms.locfileid: "29995403"
 ---
 # <a name="search-the-audit-log-in-the-office-365-security--compliance-center"></a>Office 365 安全性 & 合规性中心中的搜索审核日志
 
@@ -53,6 +53,8 @@ ms.locfileid: "29890053"
 - Microsoft 流中的用户和管理活动
     
 - Microsoft 流中的用户和管理活动
+
+- Microsoft 工作场所分析中的分析师和管理员活动
     
    
 ## <a name="before-you-begin"></a>准备工作
@@ -562,7 +564,7 @@ ms.locfileid: "29890053"
    
 ### <a name="ediscovery-activities"></a>电子数据展示活动
   
-内容搜索和 Office 365 安全性执行的电子数据展示相关的活动&amp;合规性中心或通过运行相应的 Windows PowerShell cmdlet 会在 Office 365 的审核日志记录。这包括以下活动：
+在 Office 365 的审核日志记录内容搜索和 Office 365 安全性 & 合规性中心中或通过运行的相应的 Windows PowerShell cmdlet 执行的电子数据展示相关活动。这包括以下活动：
   
 - 创建和管理电子数据展示事例
     
@@ -587,7 +589,7 @@ Power BI 中，您可以搜索活动的审核日志。有关 Power BI 活动的�
   
 ### <a name="microsoft-workplace-analytics-activities"></a>Microsoft 工作场所分析活动
 
-下表列出了管理员和分析师活动 Microsoft 工作场所分析登录 Office 365 中的审核日志。工作区分析提供深入组跨 Office 365 组织的协作方式。有关详细信息，请参阅[工作场所分析](https://docs.microsoft.com/en-us/workplace-analytics/index-orig)。
+工作区分析提供深入组跨 Office 365 组织的协作方式。下表列出了由管理员角色或工作区分析中的分析师角色分配的用户执行的活动。分配分析师角色的用户具有完全访问权限服务的所有功能，并使用该产品执行分析。分配的管理员角色的用户可以配置隐私设置和系统默认值，可以准备、 上载，并验证组织中工作区中分析数据。有关详细信息，请参阅[工作场所分析](https://docs.microsoft.com/en-us/workplace-analytics/index-orig)。
 
 |**易记名称**|**Operation**|**说明**|
 |:-----|:-----|:-----|

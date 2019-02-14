@@ -12,15 +12,19 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 35dbfd99-da5a-422b-9b0e-c6caf3b645fa
+ms.collection: M365-security-compliance
 description: 当您设置了您 ATP 的安全链接策略时，可以包括 do not 写以使您的组织中的某些用户访问列表中包括的网站的 Url 的列表。
-ms.openlocfilehash: 5eb2d09f1d1d77fa9d6ffdb9f14ba9e7522da287
-ms.sourcegitcommit: d6a28c4f6db6a676ca960173e8ff8f17d4aa1c4b
+ms.openlocfilehash: 87a245e2f21408cd06d483ec5fdcdac47ce7e317
+ms.sourcegitcommit: efccf5b4f22d34a9674bc55ebf3d88bc8bda2972
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/06/2019
-ms.locfileid: "29755283"
+ms.lasthandoff: 02/14/2019
+ms.locfileid: "29995373"
 ---
 # <a name="set-up-a-custom-do-not-rewrite-urls-list-using-office-365-atp-safe-links"></a>设置自定义重写不执行操作的 Url 列表使用 Office 365 ATP 安全链接
+
+> [!IMPORTANT]
+> 本文适用于企业客户。如果您是家庭用户查找有关在 Outlook 中的安全链接的信息，请参阅[高级 Outlook.com security](https://support.office.com/article/advanced-outlook-com-security-for-office-365-subscribers-882d2243-eab9-4545-a58a-b36fee4a46e2)。
 
 [Office 365 高级威胁保护](office-365-atp.md)(ATP)，您的组织可以[自定义被阻止的 Url](set-up-a-custom-blocked-urls-list-wtih-atp.md)，以便当人员单击 web 地址 (Url) 中的电子邮件或某些 Office 文档，他们无法转到这些 Url。您的组织也可以在组织中有特定的组的自定义"执行不重写"列表。"执行不重写"列表使一些人访问否则阻止通过[ATP Office 365 中的安全链接](atp-safe-links.md)的 Url。 
   

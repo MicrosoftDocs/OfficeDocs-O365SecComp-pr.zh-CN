@@ -12,13 +12,14 @@ ms.collection: Ent_O365
 ms.custom:
 - Ent_Solutions
 - SIEM
+- M365-security-compliance
 description: 摘要： 阅读这篇文章，获取 SIEM server 与 Microsoft 365 的集成的概述。
-ms.openlocfilehash: bd512ca6d75928712e3444581a78610a0869123d
-ms.sourcegitcommit: 63ed467fc3e1ab1ab9ee122df97c64737169834e
+ms.openlocfilehash: a6e139d14a7ea3625b2d2fffec5ad5d913ea9184
+ms.sourcegitcommit: efccf5b4f22d34a9674bc55ebf3d88bc8bda2972
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/30/2018
-ms.locfileid: "25842675"
+ms.lasthandoff: 02/14/2019
+ms.locfileid: "29995193"
 ---
 # <a name="siem-server-integration-with-microsoft-365-services-and-applications"></a>SIEM server 与 Microsoft 365 服务和应用程序的集成
 
@@ -44,7 +45,7 @@ SIEM 服务器可以接收来自各种 Microsoft 365 服务和应用程序的数
 
 请确保之前配置 SIEM 服务器集成审核日志记录已打开。 
 
-- SharePoint online，OneDrive for Business 和 Azure Active Directory[中的安全性和合规性中心启用审核日志记录](https://docs.microsoft.com/office365/securitycompliance/turn-audit-log-search-on-or-off)。
+- SharePoint online，OneDrive for Business 和 Azure Active Directory[安全 & 合规性中心中启用审核日志记录](https://docs.microsoft.com/office365/securitycompliance/turn-audit-log-search-on-or-off)。
 
 - 有关 Exchange Online，[使用 Windows PowerShell 开启审核日志记录](https://docs.microsoft.com/office365/securitycompliance/enable-mailbox-auditing)。
  

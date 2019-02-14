@@ -3,7 +3,7 @@ title: 在安全中使用资源管理器&amp;合规性中心
 ms.author: deniseb
 author: denisebmsft
 manager: laurawi
-ms.date: 11/26/2018
+ms.date: 02/13/2019
 ms.audience: ITPro
 ms.topic: article
 ms.service: o365-administration
@@ -12,13 +12,14 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 82ac9922-939c-41be-9c8a-7c75b0a4e27d
+ms.collection: M365-security-compliance
 description: 了解在安全资源管理器 （也称为威胁资源管理器）&amp;合规性中心。
-ms.openlocfilehash: c5b6273120c605cb4233f62b5c52c6a794e554eb
-ms.sourcegitcommit: 0cc6083bd8cb2f7bbf18847149c6d5239f2a6403
+ms.openlocfilehash: 16f5b15c6993301f4f324f4b84c3b6e61f255e0f
+ms.sourcegitcommit: efccf5b4f22d34a9674bc55ebf3d88bc8bda2972
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/27/2018
-ms.locfileid: "26699925"
+ms.lasthandoff: 02/14/2019
+ms.locfileid: "29995113"
 ---
 # <a name="use-explorer-in-the-security-amp-compliance-center"></a>在安全中使用资源管理器&amp;合规性中心
 
@@ -27,6 +28,9 @@ ms.locfileid: "26699925"
 ![转到威胁管理\>资源管理器](media/cab32fa2-66f1-4ad5-bc1d-2bac4dbeb48c.png)
   
 安全中使用资源管理器，&amp;合规性中心中，转到**威胁管理** \> **资源管理器**。
+
+> [!IMPORTANT]
+> 开始在年 2 月 2019年和以后的几个月内推出，Office 365 威胁智能变得 Office 365 高级威胁保护计划 2，与其他威胁保护功能。若要了解详细信息，请参阅[Office 365 高级威胁保护计划和定价](https://products.office.com/exchange/advance-threat-protection)和[Office 365 高级威胁 Protection Service Description](https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description)。
       
 ## <a name="explorer-overview"></a>资源管理器概述
 

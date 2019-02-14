@@ -3,7 +3,7 @@ title: Office 365 高级威胁保护的视图报告
 ms.author: deniseb
 author: denisebmsft
 manager: laurawi
-ms.date: 01/07/2019
+ms.date: 02/13/2019
 ms.audience: ITPro
 ms.topic: article
 ms.service: o365-administration
@@ -12,13 +12,14 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: e47e838c-d99e-4c0b-b9aa-e66c4fae902f
+ms.collection: M365-security-compliance
 description: 了解如何查找和使用适用于 Office 365 高级威胁保护安全中报告&amp;合规性中心。
-ms.openlocfilehash: a17f182f5c8d79e7863b26324a3c073ef18f14c9
-ms.sourcegitcommit: 9034809b6f308bedc3b8ddcca8242586b5c30f94
+ms.openlocfilehash: a27fdf6c7d04a2526873047d4e2a33bb283878b3
+ms.sourcegitcommit: efccf5b4f22d34a9674bc55ebf3d88bc8bda2972
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "28014944"
+ms.lasthandoff: 02/14/2019
+ms.locfileid: "29995223"
 ---
 # <a name="view-reports-for-office-365-advanced-threat-protection"></a>Office 365 高级威胁保护的视图报告
 
@@ -79,7 +80,6 @@ ATP 报告包括[威胁保护状态报告](#threat-protection-status-report)、 
 
 除了本文中所述的 ATP 报告，多个其他报表有下, 表中所述：
 
-
 |报告类型  |了解详细信息  |
 |---------|---------|
 |**电子邮件安全报告**，如前发件人和收件人报告、 欺骗邮件报表和垃圾邮件检测报告。 | [查看安全中的电子邮件安全报告&amp;合规性中心](view-email-security-reports.md)        |
@@ -90,14 +90,14 @@ ATP 报告包括[威胁保护状态报告](#threat-protection-status-report)、 
   
 ## <a name="what-permissions-are-needed-to-view-the-atp-reports"></a>查看 ATP 报告需要哪些权限？
 
-若要查看和使用在本文中所述的报告**您必须具有适当的角色分配中的安全性&amp;合规性中心和 Exchange Admin Center**。
+若要查看和使用在本文中所述的报告**您必须具有适当的角色分配这两个安全&amp;合规性中心和 Exchange Admin Center**。
 
 - 安全&amp;合规性中心，您必须拥有以下角色分配之一：
     - 组织管理
-    - Security Administrator
+    - 安全管理员 (这可以在 Azure Active Directory 管理中心分配 ([https://aad.portal.azure.com](https://aad.portal.azure.com))
     - 安全读者
 
-- 有关 Exchange Online 中，必须具有以下角色分配之一：
+- Exchange Online 中，您必须拥有以下角色分配 Exchange 管理员中心中之一 ([https://outlook.office365.com/ecp](https://outlook.office365.com/ecp)) 或 PowerShell cmdlet (请参阅[Exchange Online PowerShell 中](https://docs.microsoft.com/powershell/exchange/exchange-online/exchange-online-powershell?view=exchange-ps)):
     - 组织管理
     - 仅限查看组织管理
     - “仅供查看收件人”角色

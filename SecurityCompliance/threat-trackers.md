@@ -11,17 +11,21 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: a097f5ca-eac0-44a4-bbce-365f35b79ed1
+ms.collection: M365-security-compliance
 description: 了解威胁跟踪器，包括新值得注意跟踪器，以帮助组织掌控安全问题。
-ms.openlocfilehash: 7729a78d0b18df7d73751f4480ef095bedc5965b
-ms.sourcegitcommit: 9034809b6f308bedc3b8ddcca8242586b5c30f94
+ms.openlocfilehash: 06fdd24e545a3ee04bccf177d777efea31fbe137
+ms.sourcegitcommit: efccf5b4f22d34a9674bc55ebf3d88bc8bda2972
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "28014994"
+ms.lasthandoff: 02/14/2019
+ms.locfileid: "29995303"
 ---
 # <a name="threat-trackers---new-and-noteworthy"></a>威胁跟踪器 - 新增的和值得注意的威胁
 
 [Office 365 威胁智能](office-365-ti.md)允许贵组织的安全工作组发现并执行网络安全威胁的操作。后期年 3 月 2018年中和下一步的几个星期开始，Office 365 威胁智能将包含新的威胁跟踪程序功能，包括值得注意的跟踪器。阅读这篇文章，获取这些新功能和后续步骤的概述。 
+
+> [!IMPORTANT]
+> 开始在年 2 月 2019年和以后的几个月内推出，Office 365 威胁智能变得 Office 365 高级威胁保护计划 2，与其他威胁保护功能。若要了解详细信息，请参阅[Office 365 高级威胁保护计划和定价](https://products.office.com/exchange/advance-threat-protection)和[Office 365 高级威胁 Protection Service Description](https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description)。
   
 ## <a name="what-are-threat-trackers"></a>威胁跟踪器有哪些？
 
