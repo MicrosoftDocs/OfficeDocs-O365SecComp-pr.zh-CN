@@ -10,65 +10,43 @@ localization_priority: None
 search.appverid:
 - MET150
 ms.collection: Strat_O365_Enterprise
-description: 有关数据保留期、 删除和销毁 for Office 365 的 Microsoft 的策略的概述。
-ms.openlocfilehash: bb038f8bd8e3f0286ea7d673e5e286bdc4a9677d
-ms.sourcegitcommit: 1bccdaacf358505604c9cf422cb1e272aefae19d
+description: 有关 Microsoft 针对 Office 365 的策略的概述, 涉及数据保留、删除和销毁。
+ms.openlocfilehash: 8a773ebafba0d7cdd36b9da30878dcc487685846
+ms.sourcegitcommit: 24659bdb09f49d0ffed180a4b80bbb7c45c2d301
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "23999143"
+ms.lasthandoff: 02/19/2019
+ms.locfileid: "24961568"
 ---
 # <a name="data-retention-deletion-and-destruction-in-office-365"></a>Office 365 中的数据保留、删除和销毁
 
-## <a name="introduction"></a>简介
-Microsoft 已指定客户数据后要删除的保留多长时间的 Office 365 的数据处理标准的策略。一般情况下，Office 365 中有两种方案中删除客户数据：
-- **活动删除**-用户删除数据，或专用于用户的数据将被删除之后的活动的租户管理员删除该用户。
+Microsoft 具有 Office 365 的数据处理标准策略, 用于指定客户数据在被删除后将保留多长时间。在以下两种情况下, 将删除客户数据:
+
+- **主动删除**-租户具有活动订阅且用户删除了数据, 或者由管理员删除了用户提供的数据。
 - **被动删除**-租户订阅结束。
 
-Microsoft 的 Office 365 的数据处理标准策略指定数据每个这些方案中的保留多长时间。以下各节描述数据 （基于 Microsoft 的 Office 365 资产分类标准） 和活动和被动删除方案的保留期的类别。
+## <a name="data-retention"></a>数据保留
 
-## <a name="active-deletion-retention"></a>活动删除保留
+对于每个删除方案, 下表显示了数据类别和分类的最大数据保留期:
 
-| 数据类别 | 至少保留 | 最保留 |
-|---------------------------------------|:-----------------:|:-----------------:|:----------------------------------:|:-------------------------------:|
-| 访问控制数据 | 不适用 | 不适用 |
-| 客户内容 | 7 天 | 30 天 |
-| 最终用户身份信息 | 90 天 | 180 天 |
-| 帐户数据 | 1 年 | 3 年 |
-| 组织识别信息 | 90 天 | 180 天 |
-| 系统元数据 | 请参阅安全日志 | 请参阅安全日志 |
-| 安全日志 | 最小值 1 年 | 最大 1 年 |
-| Exchange Online 存档日志 | Min 3 年 | 最大 3 年 |
+| 数据类别 | 数据分类 | 说明 | 示例 | 保留期 |
+|-----------------|-----------------|-----------------|----------------------------------|-------------------------------|
+| 客户数据 | 客户内容| 由管理员和用户直接提供/创建的内容 <br><br> 这包括在使用 Office 365 中的服务时, 创建和存储在 Microsoft 数据中心中的所有文本、声音、视频、图像文件和软件 | 最常用的 Office 365 应用程序的示例, 这些应用程序允许用户创作数据, 包括 Word、Excel、PowerPoint、Outlook 和 OneNote <br><br> 客户内容还包括由客户拥有/提供的机密 (密码、证书、加密密钥、存储密钥) | **主动删除方案:** 最多30天 <br><br> **被动删除方案:** 最多180天 |
+| 客户数据 | 最终用户身份信息 (EUII) | 标识或可用于标识 Microsoft 服务用户的数据。EUII 不包含客户内容 | 用户名或显示名称 (域 \ 用户名) <br><br> 用户主体名称 (name @ domain) <br><br>  特定于用户的 IP 地址 | **主动删除方案:** 最多180天 (仅租户管理员操作) <br><br> **被动删除方案:** 最多180天 |
+| 个人数据 <br> (客户数据中未包含的数据) | 最终用户匿名标识符 (EUPI) | microsoft 创建的与 microsoft 服务用户关联的标识符。当 EUPI 与其他信息 (如映射表) 结合使用时, 它将标识最终用户 <br><br> EUPI 不包含由客户上传或创建的信息 | 用户 guid、PUIDs 或 sid <br><br> 会话 id | **主动删除方案:** 最多30天 <br><br> **被动删除方案:** 最多180天 |
 
-## <a name="passive-deletion-retention"></a>被动删除保留
+## <a name="subscription-retention"></a>订阅保留
 
-| 数据类别 | 至少保留 | 最保留 |
-|---------------------------------------|:-----------------:|:-----------------:|:----------------------------------:|:-------------------------------:|
-| 访问控制数据 | 90 天 （用于内容恢复） | 180 天 （用于内容恢复） |
-| 客户内容 | 90 天 （功能有限的帐户） | 180 天 |
-| 最终用户身份信息 | 90 天 | 180 天 |
-| 帐户数据 | 1 年 | 3 年 |
-| 组织识别信息 | 90 天 | 180 天 |
-| 系统元数据 | 请参阅安全日志 | 请参阅安全日志 |
-| 安全日志 | 最小值 1 年 | 最大 1 年 |
-| Exchange Online 存档日志 | Min 3 年 | 最大 3 年 |
+在有效订阅期间的任何时候, 订阅者都可以访问、提取或删除存储在 Office 365 中的客户数据。如果付费订阅结束或终止, Microsoft 将在90天内将存储在 Office 365 中的客户数据保留天, 以使订阅者能够提取数据。在90天的保留期结束后, Microsoft 将禁用该帐户并删除客户数据。在过期或终止对 Office 365 的订阅后, 不超过180天, Microsoft 将禁用帐户并从帐户中删除所有客户数据。一旦所有数据的最大保留期已过, 数据将以商业方式呈现, 从而无法恢复。
 
-## <a name="subscription-rentention"></a>订阅 Rentention
+在免费试用的情况下, 在大多数国家和地区, 你的帐户将在30天内移动到宽限期状态。在此宽限期期间, 您可以选择购买 Office 365。如果你决定不购买 Office 365, 可以取消试用或让宽限期过期, 并且你的试用帐户信息和数据将被删除。
 
-客户内容定义为 Exchange Online 邮箱内容 (电子邮件正文、 日历项和电子邮件附件的内容，如果适用，则业务内容的 Skype)，SharePoint Online 网站内容的文件存储在网站和文件适用于商务或 for Business 的 Skype 上载到 OneDrive。
+## <a name="expedited-deletion"></a>加速删除
+在任何订阅的任何时候, 订阅者都可以与 Microsoft 支持人员联系, 并请求加速订阅取消。在此过程中, 在管理员输入 Microsoft 提供的锁定代码后, 将在三天内删除在 SharePoint online 中可能处于保留或存储在非活动邮箱中的 Exchange online 中的所有用户数据。有关快速取消启用的详细信息, 请参阅[Cancel Office 365](https://support.office.com/article/Cancel-Office-365-for-business-b1bc0bef-4608-4601-813a-cdd9f746709a)。
 
-订阅的所有时间期间术语 at，订阅者可以访问和提取存储在 Office 365 中的客户数据。除免费试用版和 LinkedIn 服务，Microsoft 保留客户数据存储在 Office 365 中的功能有限的帐户 90 天后到期或终止要启用订阅者提取数据的订阅。（对于免费的试用版、 试用版过期时，它将移至宽限期，为您提供 （对于大多数试用版，在大多数国家和地区） 的 30 天内购买 Office 365。如果您决定不购买 Office 365，您可以让您的试用版过期或取消该过程。推出后 30 天宽限期，您的试用版的帐户信息和数据是永久删除。）
-
-90 天保留期结束后，Microsoft 帐户禁用和删除客户数据。不能超过 180 天后到期或 Office 365 订阅终止 Microsoft 将禁用帐户和帐户中删除所有客户数据。后经过的任何数据的最大保留期后，数据呈现商业不可恢复。
-
-Microsoft 还有地址的回收和释放磁盘驱动器和失败或停用服务器的数据处理标准策略。重新使用 Office 365 中的任何磁盘驱动器之前, Microsoft 执行符合 NIST SP 800 88 物理过滤过程。使用现场包含被销毁磁盘的数据中心内执行的物理销毁过程的情况下，不能重复使用的磁盘驱动器都得到释放。由 Microsoft 云基础结构和操作 (MCIO) 执行这些过程。有关详细信息，请参阅审核报告[服务信任预览](https://aka.ms/STP)MCIO。
-
-## <a name="expedited-deletion"></a>加快的删除
-订阅的所有时间期间术语 at，订阅者可以联系 Microsoft 支持和快速请求取消订阅设置。在此过程中，所有的用户数据，包括在 SharePoint Online 中，Exchange Online 的可能下的数据保留或存储在非活动邮箱是已删除的三天后管理员输入由 Microsoft 提供的锁定代码。加快取消设置的详细信息，请参阅[取消 Office 365](https://support.office.com/article/Cancel-Office-365-for-business-b1bc0bef-4608-4601-813a-cdd9f746709a)。
-
-## <a name="related-links"></a>相关的链接
+## <a name="related-links"></a>相关链接
+- [数据销毁](office-365-data-destruction.md)
+- [Office 365 中的永久性](office-365-data-immutability.md)
 - [Exchange Online 数据删除](office-365-exchange-online-data-deletion.md)
 - [SharePoint Online 数据删除](office-365-sharepoint-online-data-deletion.md)
 - [Skype for Business 数据删除](office-365-skype-data-deletion.md)
-- [Office 365 中的永久性](office-365-data-immutability.md)
-- [数据销毁](office-365-data-destruction.md)
