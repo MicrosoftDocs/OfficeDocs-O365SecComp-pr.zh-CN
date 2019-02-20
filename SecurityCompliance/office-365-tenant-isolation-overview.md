@@ -10,34 +10,36 @@ ms.service: Office 365 Administration
 localization_priority: None
 search.appverid:
 - MET150
-ms.collection: Strat_O365_Enterprise
-description: Microsoft 如何强制实施 Office 365 租户隔离的摘要。
-ms.openlocfilehash: fcf66ee65c2a4cfdf73ae0eac77f54bd555d059d
-ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+ms.collection:
+- Strat_O365_IP
+- M365-security-compliance
+description: Microsoft 对 Office 365 强制实施租户隔离的方式的摘要。
+ms.openlocfilehash: c0b58f149ace1e6b1ecf179534bdd75d15840a7f
+ms.sourcegitcommit: c94cb88a9ce5bcc2d3c558f0fcc648519cc264a2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22525467"
+ms.lasthandoff: 02/20/2019
+ms.locfileid: "30090984"
 ---
 # <a name="tenant-isolation-in-office-365"></a>Office 365 中的租户隔离
 
-云计算同时跨多种客户共享的常见基础结构的概念，从而导致的规模经济的主要优点之一。此概念称为*多租户*。Microsoft 致力于持续确保我们云服务的多租户体系结构支持企业级安全、 保密性、 隐私、 完整性和可用性标准。
+云计算的主要优势之一是多个客户之间共享的通用基础结构的概念, 从而导致规模经济。此概念称为*多租户*。Microsoft 连续工作, 以确保云服务的多租户体系结构支持企业级安全性、机密性、隐私、完整性和可用性标准。
 
-根据重要方面的投入以及收集从[可信赖计算](https://www.microsoft.com/en-us/twc/default.aspx)[安全开发生命周期](http://www.microsoft.com/security/sdl/default.aspx)的体验，Microsoft 云服务在设计假定所有可能有害的所有租户其他租户，我们已实施安全措施，以阻止的操作的一个租户的影响的安全或服务的另一个租户或访问其他租户的内容。
+根据可[信赖的计算](https://www.microsoft.com/en-us/twc/default.aspx)和[安全开发生命周期](http://www.microsoft.com/security/sdl/default.aspx)收集到的大量投资和经验, Microsoft 云服务的设计假定所有租户都有可能与所有租户进行恶意其他租户, 我们已经实施了安全措施, 以防止一个租户的操作影响另一个租户的安全或服务, 或访问其他租户的内容。
 
-维护多租户环境中的租户隔离的两个主要目标是：
-1.  跨租户; 到，客户内容防止泄露或未经授权的访问和
-2.  阻止的操作的一个租户产生不利影响其他租户的服务
+在多租户环境中维护租户隔离的两个主要目标是:
+1.  防止对租户之间的客户内容的泄露或未经授权访问;并
+2.  防止一个租户的操作对另一个租户的服务产生不利影响
 
-整个 Office 365，以防止客户会影响 Office 365 服务或应用程序或未经授权访问的信息的其他租户或 Office 365 系统本身，包括已实现多个窗体的保护：
-- Office 365 服务的每个租户中的客户内容的逻辑隔离被通过 Azure Active Directory 授权和基于角色的访问控制。
-- SharePoint Online 提供数据存储级别的隔离机制。
-- Microsoft 使用严格的物理安全、 背景筛选和多层的加密策略来保护保密性和客户内容的完整性。所有 Office 365 数据中心都具有生物访问控制，与最要求棕榈打印物理访问。此外，所有基于美国的 Microsoft 员工完成所需成功标准背景检查作为雇用过程的一部分。用于 Office 365 中的管理访问的控件的详细信息，请参阅[Office 365 管理访问控制](office-365-administrative-access-controls-overview.md)。
-- Office 365 使用加密客户内容在 rest 和在传输过程中，包括 BitLocker，每个文件加密的服务商技术传输层安全性 (TLS) 和 Internet 协议安全性 (IPsec)。有关 Office 365 中的加密的详细信息，请参阅[Office 365 中的数据加密技术](office-365-encryption-in-the-microsoft-cloud-overview.md)。
+在整个 office 365 中实施了多种形式的保护, 以防止客户损害 Office 365 服务或应用程序, 或未经授权访问其他租户或 Office 365 系统本身的信息, 其中包括:
+- 通过 Azure Active Directory 授权和基于角色的访问控制实现每个租户中的客户内容在 Office 365 服务中的逻辑隔离。
+- SharePoint Online 在存储级别提供了数据隔离机制。
+- Microsoft 使用严格的物理安全、背景屏蔽和多层加密策略来保护客户内容的机密性和完整性。所有 Office 365 数据中心都具有生物特征访问控制, 大多数情况下需要 palm 打印才能获得物理访问权限。此外, 所有基于美国的 Microsoft 员工都需要在聘用过程中成功完成标准背景检查。有关 office 365 中用于管理访问的控件的详细信息, 请参阅[office 365 管理访问控制](office-365-administrative-access-controls-overview.md)。
+- Office 365 使用服务端技术来加密 rest 和传输中的客户内容, 包括 BitLocker、文件加密、传输层安全性 (TLS) 和 Internet 协议安全性 (IPsec)。有关 office 365 中的加密的具体详细信息, 请参阅[office 365 中的数据加密技术](office-365-encryption-in-the-microsoft-cloud-overview.md)。
 
-在一起，上面列出保护提供提供威胁保护和缓解等价于单独的物理隔离提供的强健逻辑隔离控件。
+上面列出的保护功能提供了可靠的逻辑隔离控制, 它们提供了与独立的物理隔离提供的威胁防护和缓解等效项。
 
-## <a name="related-links"></a>相关的链接
+## <a name="related-links"></a>相关链接
 - [Azure Active Directory 中的隔离和访问控制](office-365-isolation-in-azure-active-directory.md)
 - [Office Graph 和 Delve 中的租户隔离](office-365-isolation-in-graph-and-delve.md)
 - [Office 365 搜索中的租户隔离](office-365-isolation-in-office-365-search.md)

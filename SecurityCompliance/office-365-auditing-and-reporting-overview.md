@@ -10,14 +10,17 @@ ms.service: Office 365 Administration
 localization_priority: None
 search.appverid:
 - MET150
-ms.collection: Strat_O365_Enterprise
+ms.collection:
+- Strat_O365_IP
+- M365-security-compliance
+- M365-analytics
 description: Office 365 中的审核和报告功能以及服务保证的概述。
-ms.openlocfilehash: 54cc4d353545396084c0206abe1bbb1035b3a78f
-ms.sourcegitcommit: 24659bdb09f49d0ffed180a4b80bbb7c45c2d301
+ms.openlocfilehash: 0167239e854d9b96d9505f4264ada225804eef96
+ms.sourcegitcommit: c94cb88a9ce5bcc2d3c558f0fcc648519cc264a2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "27131882"
+ms.lasthandoff: 02/20/2019
+ms.locfileid: "30091034"
 ---
 # <a name="auditing-and-reporting-in-office-365"></a>Office 365 中的审核与报告
 
@@ -28,7 +31,7 @@ Microsoft 云服务包括几个审核和报告功能, 客户可以使用这些�
 [office 365 Security & 合规性中心](https://support.office.com/article/Go-to-the-Office-365-Security-Compliance-Center-7e696a40-b86b-4a20-afcc-559218b7b1b8)是一个用于保护 Office 365 中的数据的一站式门户, 其中包括许多审核和报告功能。这是 Office 365 合规性中心的演变。安全 & 合规性中心适用于具有数据保护或合规性需求的组织, 或者要审核用户和管理员活动的组织。您可以使用安全 & 合规性中心来管理组织的所有 Office 365 数据的合规性。您可以[http://protection.office.com](http://protection.office.com/)使用 Office 365 管理员帐户访问安全 & 合规性中心。
 
 Security & 合规性中心包含导航窗格, 可提供对多个功能的访问权限:
-- **警报**-使你能够管理警报、查看与安全相关的警报, 以及使用[高级安全管理](https://support.office.com/article/overview-of-office-365-cloud-app-security-81f0ee9a-9645-45ab-ba56-de9cbccab475)管理高级警报。 
+- **警报**-使你能够管理警报、查看与安全相关的警报, 以及使用[Office 365 云应用安全](https://docs.microsoft.com/en-us/Office365/SecurityCompliance/office-365-cas-overview)管理高级通知。 
 - **权限**-使您能够向组织中的人员[分配权限](https://support.office.com/article/Give-users-access-to-the-Office-365-Security-Compliance-Center-2cfce2c8-20c5-47f9-afc4-24b059c1bd76), 例如合规性管理员、电子数据展示管理器和其他人, 以便他们能够在安全 & 合规性中心执行任务。您可以为 Security & 合规中心中的大多数功能分配权限, 但必须使用 Exchange 管理中心和 SharePoint 管理中心配置其他权限。
 - **威胁管理**-使您能够创建和应用使用[Office 365 移动设备管理](https://support.office.com/article/Overview-of-Mobile-Device-Management-for-Office-365-faa7d8e5-645d-4d59-839c-c8d4c1869e4a)的设备管理策略、设置组织的[数据丢失防护](https://support.office.com/article/Overview-of-data-loss-prevention-policies-1966b2a7-d1e2-4d92-ab61-42efbb137f5e)(DLP) 策略、配置电子邮件筛选、反恶意软件、域密钥识别邮件 (DKIM)、安全附件、安全链接和 OAuth 应用。
 - **数据管理**-使您能够[将其他系统中的电子邮件或 SharePoint 数据导入到 Office 365](https://support.office.com/article/Import-PST-files-or-SharePoint-data-to-Office-365-ba688e0a-0fcb-4bd7-8e57-2b669564ea84)中,[配置存档邮箱](https://support.office.com/article/Enable-archive-mailboxes-in-the-Office-365-Security-Compliance-Center-268a109e-7843-405b-bb3d-b9393b2342ce), 并为电子邮件和组织中的其他内容设置[保留策略](https://support.office.com/article/Retention-in-the-Office-365-Security-Compliance-Center-2a0fc432-f18c-45aa-a539-30ab035c608c)。

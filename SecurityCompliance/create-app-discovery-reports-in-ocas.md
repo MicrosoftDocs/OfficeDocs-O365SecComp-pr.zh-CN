@@ -12,56 +12,54 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 3e68e691-1fc4-4d3e-a2c0-d3134eb64055
-description: 使用 Office 365 云应用程序安全性，您可以了解在组织中的用户如何使用 Office 365 和其他应用程序创建报告。
-ms.openlocfilehash: 543a194ec9d441a4feea97b8ad49022094565d7a
-ms.sourcegitcommit: 7e2a0185cadea7f3a6afc5ddc445eac2e1ce22eb
+description: 创建具有 office 365 云应用安全性的报告, 使您能够了解组织中的人员如何使用 office 365 和其他应用程序。
+ms.openlocfilehash: e0d515ddd9b08aa4a70276177060f273cc89949e
+ms.sourcegitcommit: 8679937354c1d8870ecd41519a59d2d7468c23c4
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/11/2019
-ms.locfileid: "29603713"
+ms.lasthandoff: 02/19/2019
+ms.locfileid: "30087291"
 ---
 # <a name="create-app-discovery-reports-using-office-365-cloud-app-security"></a>使用 Office 365 云应用安全创建应用发现报告
 
-Office 365 高级安全管理现在是 Office 365 云应用程序安全性。
-  
-|评估 * *\>**|规划 * *\>**|部署 * *\>**|使用率 ***|
+|评估 * *\>**|规划 * *\>**|部署 * *\>**|利用率 * * * *|
 |:-----|:-----|:-----|:-----|
-|[启动评估](office-365-cas-overview.md) <br/> |[开始规划](get-ready-for-office-365-cas.md) <br/> |[开始部署](turn-on-office-365-cas.md) <br/> |在这里 ！  <br/> [后续步骤](#next-steps) <br/> |
+|[开始评估](office-365-cas-overview.md) <br/> |[开始规划](get-ready-for-office-365-cas.md) <br/> |[开始部署](turn-on-office-365-cas.md) <br/> |你在这里!  <br/> [后续步骤](#next-steps) <br/> |
    
-Office 365 云应用程序安全性帮助全局管理员、 安全管理员和安全读者深入了解在组织中的人员将云服务。例如，您可以看到用户在其中存储并对文档协作和多少数据上载到应用程序或服务的 Office 365 以外。
+Office 365 云应用安全帮助全局管理员、安全管理员和安全读者深入了解组织中的云服务人员正在使用。例如, 您可以查看用户在何处存储和协作处理文档, 以及将多少数据上载到 Office 365 之外的应用或服务。
   
-要生成应用程序发现报告，您手动上载 web 流量日志文件从您的防火墙和代理，然后 Office 365 云应用程序安全性分析并分析报表的那些文件。
+若要生成应用发现报告, 请从防火墙和代理手动上载 web 流量日志文件, 然后 Office 365 云应用安全性分析并分析这些文件中的报告。
   
 > [!NOTE]
-> 您必须是全局管理员、 安全管理员或安全读者才能执行本文中描述的任务。若要了解详细信息，请参阅[Permissions in Office 365 安全性&amp;合规性中心](permissions-in-the-security-and-compliance-center.md)。 
+> 您必须是全局管理员、安全管理员或安全读者才能执行本文中所述的任务。若要了解详细信息, 请参阅[Office 365 安全&amp;合规中心中的权限](permissions-in-the-security-and-compliance-center.md)。 
   
-## <a name="create-a-report-with-app-discovery"></a>使用应用程序发现创建报表
+## <a name="create-a-report-with-app-discovery"></a>创建包含应用程序发现的报告
 
-要创建应用程序发现报告，请确定您想要已经分析，请选择日志文件，然后请求报告的日志文件的供应商数据源。
+若要创建应用发现报告, 请确定要分析的日志文件的供应商数据源, 选择日志文件, 然后请求报告。
   
 > [!NOTE]
-> 使用包括高峰流量时段，若要使用的最佳表示获取组织中的 web 流量日志文件。 
+> 使用包含峰值流量周期的 web 流量日志文件, 以获取组织中的使用情况的最佳表示。 
   
-1. 收集您的[web 流量日志和 Office 365 云应用程序安全性的数据源](web-traffic-logs-and-data-sources-for-ocas.md)。
+1. 收集[适用于 Office 365 云应用安全的 web 流量日志和数据源](web-traffic-logs-and-data-sources-for-ocas.md)。
     
-2. 转到云应用程序安全性门户 ([https://portal.cloudappsecurity.com](https://portal.cloudappsecurity.com)) 和登录。 
+2. 转到云应用安全门户 ([https://portal.cloudappsecurity.com](https://portal.cloudappsecurity.com)) 并登录。 
        
-3. 选择**发现** \> **创建新报表**。 <br>![在 Office 365 CAS 门户中，选择发现](media/73b5299f-94b5-49dd-a00f-154d188eb2c5.png)<br>
+3. 选择 "**发现** \> **创建新报告**"。 <br>![在 Office 365 CAS 门户中, 选择 "发现"](media/73b5299f-94b5-49dd-a00f-154d188eb2c5.png)<br>
   
-4. 指定的名称和说明为您的报表，然后选择**数据源**列表中的 web 流量日志的数据源。 <br>![在 O365 CAS 中，选择发现\>创建新报表](media/22e660f0-5eb2-49fa-9fea-f88a5809a07b.png)<br>如果未列出您想要使用的数据源，您可以请求将添加它。选择**其他**的**数据源**，然后键入您要上载的数据源的名称。我们将查看日志，并让您了解是否我们添加对它生成的数据源的支持。 
+4. 为报表指定名称和说明, 然后在 "**数据源**" 列表中选择 web 流量日志的数据源。 <br>![在 O365 CAS 中, 选择\> "发现创建新报告"](media/22e660f0-5eb2-49fa-9fea-f88a5809a07b.png)<br>如果未列出您想要使用的数据源, 则可以请求添加该数据源。选择 "**其他**" 作为 "**数据源**", 然后键入要尝试上载的数据源的名称。我们将查看日志, 并告知我们是否为生成它的数据源添加支持。 
   
-5. 浏览到您收集的日志文件的位置，然后选择文件。所选报表的数据源必须已生成的日志文件。
+5. 浏览到您收集的日志文件的位置, 并选择这些文件。日志文件必须由您为报告选择的数据源生成。
     
-6. 单击**创建**以启动报表创建过程。 
+6. 单击 "**创建**" 以启动报告创建过程。 
     
-7. 若要查看的报表的状态，请单击**管理快照报告**。报表准备就绪后，您将看到**查看报告**选项。 
+7. 若要查看报告的状态, 请单击 "**管理快照报告**"。报告准备就绪后, 您将看到 "**查看报告**" 选项。 
     
 ## <a name="next-steps"></a>后续步骤
 
-- [查看并通知对其执行操作](review-office-365-cas-alerts.md)
+- [查看警报并对其执行操作](review-office-365-cas-alerts.md)
     
 - [查看 Office 365 云应用安全中的应用发现结果](review-app-discovery-findings-in-ocas.md)
     
-- 查看您[的 Office 365 云应用程序安全性的使用率活动](utilization-activities-for-ocas.md)
+- 查看[Office 365 云应用安全性的利用率活动](utilization-activities-for-ocas.md)
     
 

@@ -11,12 +11,12 @@ ms.custom: TN2DMC
 localization_priority: Normal
 ms.assetid: 1270a65f-ddc3-4430-b500-4d3a481efb1e
 description: Microsoft Exchange Online Protection (EOP) 是基于云的电子邮件筛选服务，可帮助您的组织防御垃圾邮件和恶意邮件，并包括用于保护您的组织避免违反邮件策略的功能。
-ms.openlocfilehash: 16f2f423b6e517cf204e4b4f6a2949baebfd6223
-ms.sourcegitcommit: 7e2a0185cadea7f3a6afc5ddc445eac2e1ce22eb
+ms.openlocfilehash: baba6b56034ec5c3f2af1c291a7f8b5100f0f092
+ms.sourcegitcommit: 8679937354c1d8870ecd41519a59d2d7468c23c4
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/11/2019
-ms.locfileid: "29686361"
+ms.lasthandoff: 02/19/2019
+ms.locfileid: "30087341"
 ---
 # <a name="exchange-online-protection-overview"></a>Exchange Online Protection 概述
 
@@ -24,7 +24,7 @@ Microsoft Exchange Online Protection (EOP) 是基于云的电子邮件筛选服�
   
 以下是您可以使用 EOP 进行邮件保护的主要方式：
   
-- **在独立方案**EOP 提供基于云的电子邮件保护为您的本地 Microsoft Exchange Server 2013 环境、 旧版 Exchange Server，或任何其他内部部署 SMTP 电子邮件解决方案。 
+- **在独立方案中**EOP 为您的本地 Microsoft Exchange server 2013 环境、旧版 Exchange server 版本或任何其他本地 SMTP 电子邮件解决方案提供基于云的电子邮件保护。 
     
 - **作为 Microsoft Exchange Online 的一部分** 默认情况下，EOP 保护 Microsoft Exchange Online 云托管的邮箱。 
     
@@ -34,9 +34,9 @@ Microsoft Exchange Online Protection (EOP) 是基于云的电子邮件筛选服�
 
 了解 EOP 如何工作，有助于查看其如何处理传入的电子邮件：
   
-![EOP 电子邮件处理](../media/EOP-email-processing.png)
+![EOP-处理电子邮件](../media/EOP-email-processing.png)
   
-传入消息最初通过连接筛选，其检查发件人信誉，并将检查邮件进行恶意软件。垃圾邮件的大部分是停止此时，删除通过 EOP。邮件将继续通过策略筛选的邮件针对自定义传输规则创建或模板中强制实施的求值的位置。例如，您可以将通知发送给经理，邮件到达来自特定发件人时的规则。（数据丢失防护检查也会发生在这里，如果您有功能; 有关功能的可用性的信息，请参阅[Exchange Online Protection Service Description](https://go.microsoft.com/fwlink/p/?LinkId=320619)。）接下来，消息通过内容筛选，其中内容检查的术语或属性常见垃圾邮件。一条消息，确定内容筛选的垃圾邮件可以发送到用户的垃圾邮件文件夹或隔离，除了其他一些选项，根据您的设置。邮件成功通过所有这些保护层后，则将其传递给收件人。
+传入邮件最初通过连接筛选, 它会检查发件人的信誉并检查邮件中是否存在恶意软件。大多数垃圾邮件在此点停止, 并由 EOP 删除。邮件将继续通过策略筛选, 其中将根据您从模板创建或实施的自定义传输规则对邮件进行评估。例如, 可以在邮件到达特定发件人时, 将通知发送给经理的规则。(此时也会发生数据丢失防护检查, 如果你具有该功能, 则为; 有关功能可用性的信息, 请参阅[Exchange Online Protection 服务说明](https://go.microsoft.com/fwlink/p/?LinkId=320619)。)接下来, 邮件通过内容筛选, 在其中对内容进行检查, 了解公共的垃圾邮件的术语或属性。通过内容筛选器确定为垃圾邮件的邮件可以发送到用户的 "垃圾邮件" 文件夹或 "隔离", 具体取决于您的设置。在邮件成功传递所有这些保护层后, 会将其传递给收件人。
   
 ### <a name="eop-datacenters"></a>EOP 数据中心
 
@@ -47,13 +47,13 @@ EOP 在数据中心之间执行负载平衡，但仅限在一个区域内。如�
     
 - 在欧洲、中东和非洲 (EMEA)，所有 Exchange Online 邮箱均位于 EMEA 数据中心，所有邮件均通过 EMEA 数据中心路由以进行 EOP 筛选。
     
-- 在亚 (APAC)，所有 Exchange Online 邮箱都位于 APAC 数据中心，但当前通过路由的邮件以进行 EOP 筛选 APAC 数据中心。
-=======
-- 在美国，所有 Exchange Online 邮箱均都位于美国数据中心，除外南美洲巴西和智利中的数据中心的使用位置和加拿大使用在加拿大数据中心的位置。所有电子邮件，包括南美洲和加拿大的客户的消息都路由通过 EOP 筛选，则为本地数据中心quaratined 电子邮件都存储在租户所在的数据中心。
+- 在亚太地区 (APAC) 中, 所有 Exchange Online 邮箱均位于 APAC 数据中心, 但邮件当前通过 APAC 数据中心路由以进行 EOP 筛选。
+
+- 在美洲, 所有 Exchange Online 邮箱均位于美国数据中心, 但使用巴西和智利中的数据中心和加拿大中使用数据中心 (在加拿大的位置) 的情况除外。所有电子邮件 (包括在南美洲和加拿大的客户的邮件) 通过本地数据中心进行路由, 以进行 EOP 筛选;quaratined 电子邮件存储在租户所在的数据中心中。
     
 - 在欧洲、中东和非洲 (EMEA)，所有 Exchange Online 邮箱均位于 EMEA 数据中心，所有邮件均通过 EMEA 数据中心路由以进行 EOP 筛选。
     
-- 在亚 (APAC)，所有 Exchange Online 邮箱都位于 APAC 数据中心和消息当前通过 APAC 以进行 EOP 筛选的数据中心路由。
+- 在亚太地区 (APAC) 中, 所有 Exchange Online 邮箱均位于 APAC 数据中心中, 并且邮件当前通过 APAC 数据中心路由以进行 EOP 筛选。
     
 - 对于政府社区云 (GCC)，所有 Exchange Online 邮箱均位于美国数据中心，所有邮件均通过美国数据中心路由以进行 EOP 筛选。
     

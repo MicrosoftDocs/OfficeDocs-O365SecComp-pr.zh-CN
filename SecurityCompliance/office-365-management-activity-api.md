@@ -10,16 +10,18 @@ ms.service: Office 365 Administration
 localization_priority: None
 search.appverid:
 - MET150
-ms.collection: Strat_O365_Enterprise
-description: 有关 Office 365 管理活动 API 简短摘要。
-ms.openlocfilehash: 4753be89c008676d5244b5c659c3dd1a545975b2
-ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+ms.collection:
+- Strat_O365_IP
+- M365-analytics
+description: 有关 Office 365 管理活动 API 的简短摘要。
+ms.openlocfilehash: ca5517d3049830cd7be912b2e2e47a34a866aca0
+ms.sourcegitcommit: c94cb88a9ce5bcc2d3c558f0fcc648519cc264a2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22524900"
+ms.lasthandoff: 02/20/2019
+ms.locfileid: "30090555"
 ---
 # <a name="office-365-management-activity-api"></a>Office 365 管理活动 API
-Microsoft 提供的报告使管理员能够获取有关其 Office 365 租户的聚合事务性信息的服务。[Office 365 管理活动 API](https://docs.microsoft.com/office/office-365-management-api/office-365-management-apis-overview)使用可以轻松地开始试验检索数据和接收到的可视化工具和应用程序的身份验证的行业标准 RESTful 设计和 OAuth v2。该 API 提供了数据源包含 Office 365 中的用户、 管理员、 操作和安全活动的信息。可以为了法规，保留或购买的本地基础结构或其他源整个企业中生成的监控解决方案的操作、 安全性和合规性的日志数据与组合数据。
+Microsoft 提供了 reporting services, 使管理员能够获取有关其 Office 365 租户的聚合事务信息。[Office 365 管理活动 API](https://docs.microsoft.com/office/office-365-management-api/office-365-management-apis-overview)使用行业标准的 RESTful 设计和 OAuth v2 进行身份验证, 使您能够轻松开始体验检索数据, 并将数据 ingesting 到可视化工具和应用程序中。API 提供了一个数据源, 其中包括有关 Office 365 中的用户、管理员、操作和安全活动的信息。数据可出于法规目的而保留, 也可与本地基础结构或其他源中的日志数据采购结合使用, 以构建企业范围内的操作、安全性和合规性的监控解决方案。
 
-Office 365 管理活动 API 提供来自 Office 365 和 Azure Active Directory 活动日志有关各种用户、 管理、 系统和策略操作和事件的信息。该 API 提供了具有超过 10 个字段的所有服务的共同的一致审核架构。这将允许组织轻松之间建立的连接事件，并使原因的新方式对数据。大量独立软件供应商 (Isv) 具有与 Microsoft 合作，并构建基于 API 的解决方案。某些解决方案的重点是仅 Office 365 数据时其他人能够接收多个云提供商和本地系统以创建统一的所有操作、 安全性和合规性相关的活动视图中的数据。有关详细信息，请参阅[Office 365 管理活动 API 参考 （英文）](https://docs.microsoft.com/office/office-365-management-api/office-365-management-activity-api-reference)。
+office 365 管理活动 API 提供有关 office 365 和 Azure Active Directory 活动日志中各种用户、管理员、系统和策略操作以及事件的信息。API 提供了一个一致的审核架构, 其中包含10个以上的字段, 这些字段在所有服务中都是通用的。这使组织能够在事件之间建立轻松的连接, 并允许新方法对数据进行原因。几十个独立软件供应商 (isv) 与 Microsoft 建立了合作, 并基于 API 建立了解决方案。有些解决方案仅重点关注 Office 365 数据, 而其他解决方案则提供从多个云提供程序和内部部署系统中提取数据的功能, 以创建所有操作、安全性和合规性相关活动的统一视图。有关详细信息, 请参阅[Office 365 管理活动 API 参考](https://docs.microsoft.com/office/office-365-management-api/office-365-management-activity-api-reference)。

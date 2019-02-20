@@ -1,5 +1,5 @@
 ---
-title: Office 365 处理数据损坏
+title: 处理数据损坏的 Office 365
 ms.author: robmazz
 author: robmazz
 manager: laurawi
@@ -10,29 +10,31 @@ ms.service: Office 365 Administration
 localization_priority: None
 search.appverid:
 - MET150
-ms.collection: Strat_O365_Enterprise
-description: Office 365 和 Microsoft 的保护和恢复工作中的数据损坏的说明。
-ms.openlocfilehash: 087be23ce5dad1daf62357cb08e27c0a15962792
-ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+ms.collection:
+- Strat_O365_IP
+- M365-security-compliance
+description: Office 365 中的数据损坏的说明, 以及 Microsoft 预防和恢复的努力。
+ms.openlocfilehash: 54c7c69856f02d44d5c434badb30ababaa32ba1e
+ms.sourcegitcommit: c94cb88a9ce5bcc2d3c558f0fcc648519cc264a2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22525496"
+ms.lasthandoff: 02/20/2019
+ms.locfileid: "30090694"
 ---
 # <a name="dealing-with-data-corruption-in-office-365"></a>处理 Office 365 中的数据损坏
 
-运行大型云服务的具挑战性方面之一是如何处理数据损坏给定大量数据和独立的系统。数据损坏可能是由导致的：
-- 应用程序或基础结构的 bug，破坏部分或全部应用程序状态 
-- 硬件问题导致数据丢失或无法读取数据的结果 
-- 人工操作错误 
-- 恶意黑客和不满的员工 
-- 导致丢失一些数据的外部服务中的事件 
+运行大型云服务的一个有挑战性的方面是, 如果数据量和独立系统的数据量较大, 如何处理数据损坏。数据损坏可能是由以下原因导致的:
+- 应用程序或基础结构错误, 损坏部分或全部应用程序状态 
+- 导致数据丢失或无法读取数据的硬件问题 
+- 人为操作错误 
+- 恶意黑客和不满意的员工 
+- 外部服务中导致数据丢失的事件 
 
-数据完整性的更高版本恢复能力意味着更少数据损坏事件，因为 Microsoft 具有内置 Office 365 保护机制以防止从发生，以及系统和流程来帮助我们恢复数据，则毁坏。检查和流程存在工程的发布过程，以提高可恢复性防止数据损坏的各个阶段中包括：
+由于数据完整性方面的更高的恢复意味着较少的数据损坏事件, Microsoft 已经内置了 Office 365 保护机制, 以防止发生损坏, 以及使我们能够恢复数据的系统和进程。在工程发布过程的各个阶段中都存在检查和流程, 以提高对数据损坏的恢复能力, 包括:
 - 系统设计
 - 代码组织和结构 
 - 代码评审 
-- 单元测试、 集成测试和系统测试
-- 行程线测试/入口 
+- 单元测试、集成测试和系统测试
+- 行程线路测试/关口 
 
-Office 365 生产环境中数据中心之间的对等方复制确保总是有多个 live 副本的任何数据。使用标准图像和脚本以恢复丢失的服务器，并复制的数据用于还原客户数据。由于的内置数据恢复能力检查和流程，Microsoft 维护备份的 Office 365 信息系统文档 （包括与安全相关的文档），仅使用 SharePoint Online 和我们内部的代码中内置的复制库工具，源安装盘。SharePoint Online 中存储系统文档和源安装盘包含系统和应用程序的图像。SharePoint Online 和源安装盘使用版本控制和几乎可以实时复制到中。 
+在 Office 365 生产环境中, 数据中心之间的对等复制可确保始终有任何数据的多个活动副本。标准图像和脚本用于恢复丢失的服务器, 复制的数据用于还原客户数据。由于内置的数据弹性检查和过程, Microsoft 在 SharePoint Online 和我们的内部代码中使用内置复制功能, 仅维护 Office 365 信息系统文档 (包括与安全相关的文档) 的备份存储库工具, 源仓库。系统文档存储在 SharePoint Online 中, 源仓库包含系统和应用程序映像。SharePoint Online 和源仓库都使用版本控制, 并在近实时进行复制。 

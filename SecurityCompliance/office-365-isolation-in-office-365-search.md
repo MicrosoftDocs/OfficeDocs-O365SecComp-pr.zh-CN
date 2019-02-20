@@ -1,5 +1,5 @@
 ---
-title: Office 365 搜索中的 office 365 租户隔离
+title: office 365 搜索中的 office 365 租户隔离
 ms.author: robmazz
 author: robmazz
 manager: laurawi
@@ -10,45 +10,47 @@ ms.service: Office 365 Administration
 localization_priority: None
 search.appverid:
 - MET150
-ms.collection: Strat_O365_Enterprise
-description: 摘要： 在 Office 365 搜索租户隔离的说明。
-ms.openlocfilehash: cc73f3c157ffd20b3891a6b7c58e7d0b2adf4e55
-ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+ms.collection:
+- Strat_O365_IP
+- M365-security-compliance
+description: '摘要: Office 365 搜索中的租户隔离说明。'
+ms.openlocfilehash: b9faae9f1d61af181807f60243890b5115c0d679
+ms.sourcegitcommit: c94cb88a9ce5bcc2d3c558f0fcc648519cc264a2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22524802"
+ms.lasthandoff: 02/20/2019
+ms.locfileid: "30090804"
 ---
 # <a name="tenant-isolation-in-office-365-search"></a>Office 365 搜索中的租户隔离
-SharePoint Online 搜索使用租户分离模型来平衡防护信息泄漏租户之间的共享的数据结构的效率。使用此模型，我们将防止搜索功能：
-- 返回包含文档中的其他租户的查询结果
-- 公开足够查询结果中的信息熟练用户无法推断其他租户的信息
-- 显示架构或从另一个租户的设置
-- 混合分析处理租户或错误租户中的存储结果之间的信息
-- 使用从另一个租户的词典条目
+SharePoint Online 搜索使用租户分离模型来平衡共享数据结构的效率, 并防止租户之间的信息泄露。在此模型中, 我们阻止搜索功能来自:
+- 返回包含来自其他租户的文档的查询结果
+- 在查询结果中公开足够的信息, 训练有素的用户可以推断有关其他租户的信息
+- 显示其他租户中的架构或设置
+- 将分析处理信息混合在租户或存储结果中的错误租户中
+- 使用其他租户中的字典条目
 
-对于每个租户数据类型，我们使用一个或多个层保护在代码中以防止意外泄漏的信息。最重要的数据具有保护，以确保单个缺陷不会导致实际或察觉到信息泄露的大多数层。
+对于每种类型的租户数据, 我们在代码中使用一个或多个保护层, 以防止意外泄漏信息。最关键的数据具有最多的保护层, 以确保单个缺陷不会导致实际或感觉信息泄露。
 
-## <a name="tenant-separation-for-the-search-index"></a>搜索索引的的租户分离
-搜索索引存储在托管索引组件的服务器的磁盘上和租户共享索引文件。租户的索引的文档都能看到仅对该租户的查询。三个独立的机制以防止信息泄露：
+## <a name="tenant-separation-for-the-search-index"></a>搜索索引的租户分离
+搜索索引存储在磁盘上托管索引组件的服务器上, 租户共享索引文件。租户的已编制索引的文档仅对该租户的查询可见。三种独立的机制防止信息泄露:
 - 租户 ID 筛选
-- 租户 ID 术语前添加前缀
+- 租户 ID 条款前缀
 - ACL 检查
 
-所有三种机制者必须失败的搜索以返回到错误的租户的文档。
+所有三种机制都必须失败, 才能使搜索将文档返回到错误的租户。
 
-## <a name="tenant-id-filtering-and-tenant-id-term-prefixing"></a>租户 ID 筛选和前添加前缀的租户 ID 术语
-搜索前缀编入与租户 ID 全文本索引中每个术语例如，术语"*foo*"编制索引的租户 ID 为"*123*"后，全文本索引中的条目是"*123foo。*"
+## <a name="tenant-id-filtering-and-tenant-id-term-prefixing"></a>租户 id 筛选和租户 id 条款前缀
+搜索将为使用租户 ID 在全文索引中编制索引的每个术语加上前缀。例如, 当 ID 为 "*123*" 的租户为术语编制索引时, 全文本索引中的条目是 "*123foo"。***
 
-每个查询转换为包含使用此过程称为租户 ID 筛选的租户 ID。例如，"*foo*"查询转换为"<*guid*>。*foo*和*tenantID*: <*guid*>"，其中 <*guid*> 表示执行查询的租户。此查询转换中每个索引节点并查询和内容都不处理影响。因为的租户 ID 添加到每个查询时，无法通过查看在最佳匹配中一个租户排名推断其他租户中的术语的频率。
+每个查询都将转换为包含使用名为租户 id 筛选的过程的租户 id。例如, 查询 "*foo*" 将转换为 "<*guid*>。*foo*和*tenantID*: <*guid*> ", 其中 <*guid*> 表示执行查询的租户。此查询转换发生在每个索引节点中, 并且不能对查询和内容处理进行影响。由于租户 ID 已添加到每个查询中, 因此无法通过在一个租户中查看最佳匹配排名来推断出其他租户中术语的频率。
 
-租户 ID 术语前添加前缀，发生此事件仅在全文本索引。上市的搜索，例如"*标题： foo*"，转到综合搜索索引其中术语不作为前缀的租户 id。而是作为前缀上市的搜索具有字段名称。例如，"*标题： foo*"查询转换为"*fields.title:foo AND fields.tenantID*: <*guid*>。"术语的频率影响的综合搜索索引中的命中的排名，因为没有必要的租户隔离由术语前添加前缀。对于"*标题： foo*"像上市搜索，租户内容分离取决于按查询转换筛选的租户 ID。
+租户 ID 条款前缀仅发生在全文本索引中。上市搜索 (如 "*title: foo*") 转到一个合成搜索索引, 其中术语不以租户 ID 作为前缀。相反, 上市搜索将以字段名称作为前缀。例如, 查询 "*title: foo*" 将转换为 "fields:*foo 和 fields. tenantID*: <*guid*>"。由于术语的频率不影响合成搜索索引中的命中排名, 因此无需在术语 "前缀" 的情况下进行租户分隔。对于上市搜索 (如 "*title: foo*"), 租户内容分离取决于租户 ID 筛选 (通过查询转换)。
 
 ## <a name="document-access-control-list-checks"></a>文档访问控制列表检查
-搜索控制对通过搜索索引中保存的 Acl 的文档的访问。每个项目编制索引使用特殊 ACL 字段中的术语集。ACL 字段包含每个组或用户可以查看文档的一个术语。每个查询进行了补充的访问控制项 (ACE) 条款，一个用于每个身份验证的用户所属的组的列表。
+搜索控制通过在搜索索引中保存的 acl 对文档的访问。每个项目都使用特殊 ACL 字段中的一组术语编制索引。ACL 字段包含可查看文档的每个组或用户一个术语。每个查询都使用一系列访问控制项 (ACE) 术语进行扩充, 每个查询已通过身份验证的用户所属的组一个。
 
-例如，"<*guid*> 类似查询。*foo 和 tenantID*: <*guid*>"变为:"<*guid*>。*foo 和 tenantID*: <*guid*> *AND* (*docACL:*<*ace1*> *OR docACL*: <*ace2*> *OR docACL*: <*ace3*> *...*)"
+例如, 类似于 "<*guid*> 的查询。*foo 和 tenantID*: <*guid*> "将变为:" <*guid*>。*foo 和 tenantID*: <*guid*> *和*(*docACL:*<*ace1*> *OR docACL*: <*ace2*> *或 docACL*: <*ace3*> *.。。*)"
 
-由于用户和组标识符，因此 Ace 是唯一的这提供了一个额外的之间的文档只对某些用户可见的租户的安全级别。相同是特殊"之外的任何用户外部用户"这种情况 ACE 为租户中的常规用户授予访问权限。但由于为"任何人"Ace 都是相同的所有租户，为公共文档的租户分离取决于在租户 ID 筛选。拒绝 Ace 也支持。查询扩充添加与拒绝 ACE 匹配时，会从结果中删除文档的子句。
+由于用户和组标识符, 因此 ace 是唯一的, 因此这将为仅对某些用户可见的文档提供其他级别的安全性。对于在租户中向常规用户授予访问权限的特殊 "除外部用户之外的任何人" ACE 也是如此。但由于 "Everyone" 的 ace 对于所有租户都是相同的, 因此公共文档的租户分隔取决于租户 ID 筛选。此外, 还支持 Deny ace。当与 deny ACE 匹配时, 查询扩充将添加从结果中删除文档的子句。
 
-在 Exchange Online 搜索索引分区上而不是与 SharePoint Online 的租户 ID (订阅 ID) 的单个用户的邮箱的邮箱 ID。分区的机制等同于 SharePoint Online，但没有任何 ACL 筛选。
+在 Exchange online 搜索中, 索引在邮箱 id 上针对单个用户的邮箱 (而不是租户 id (订阅 id)) 进行分区, 就像在 SharePoint online 中一样。分区机制与 SharePoint Online 相同, 但没有 ACL 筛选。
