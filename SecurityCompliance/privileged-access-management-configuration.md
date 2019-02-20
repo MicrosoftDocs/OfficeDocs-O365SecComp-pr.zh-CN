@@ -1,5 +1,5 @@
 ---
-title: Office 365 中配置的访问权限的管理
+title: 在 Office 365 中配置特权访问管理
 ms.author: robmazz
 author: robmazz
 manager: laurawi
@@ -9,278 +9,280 @@ ms.service: o365-solutions
 localization_priority: Normal
 search.appverid:
 - MET150
-ms.collection: Strat_O365_IP
+ms.collection:
+- Strat_O365_IP
+- M365-security-compliance
 ms.custom: Ent_Solutions
 ms.assetid: ''
-description: 使用本主题以详细了解如何在 Office 365 中配置访问权限的管理
-ms.openlocfilehash: 13d278c8e8555aa069035c2f03b23db69a475b43
-ms.sourcegitcommit: 448c5897e44448adfc82e3eaffb774c770c04815
+description: 使用本主题可了解有关在 Office 365 中配置特权访问管理的详细信息
+ms.openlocfilehash: 63780da59afb245b35916a1e7a5b2eb780d535a8
+ms.sourcegitcommit: c94cb88a9ce5bcc2d3c558f0fcc648519cc264a2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "25522253"
+ms.lasthandoff: 02/20/2019
+ms.locfileid: "30090914"
 ---
-# <a name="configuring-privileged-access-management-in-office-365"></a><span data-ttu-id="ee453-103">Office 365 中配置的访问权限的管理</span><span class="sxs-lookup"><span data-stu-id="ee453-103">Configuring privileged access management in Office 365</span></span>
+# <a name="configuring-privileged-access-management-in-office-365"></a><span data-ttu-id="de8c3-103">在 Office 365 中配置特权访问管理</span><span class="sxs-lookup"><span data-stu-id="de8c3-103">Configuring privileged access management in Office 365</span></span>
 
 > [!IMPORTANT]
-> <span data-ttu-id="ee453-104">本主题介绍了部署和配置指南仅当前 Office 365 E5 和高级合规性 Sku 中可用的功能。</span><span class="sxs-lookup"><span data-stu-id="ee453-104">This topic covers deployment and configuration guidance for features only currently available in Office 365 E5 and Advanced Compliance SKUs.</span></span>
+> <span data-ttu-id="de8c3-104">本主题介绍了 Office 365 E5 和高级合规 sku 中目前仅提供的功能的部署和配置指南。</span><span class="sxs-lookup"><span data-stu-id="de8c3-104">This topic covers deployment and configuration guidance for features only currently available in Office 365 E5 and Advanced Compliance SKUs.</span></span>
 
-<span data-ttu-id="ee453-p101">本主题将指导您完成启用和配置 Office 365 组织中的访问权限的管理。您可以使用 Microsoft 365 Admin Center 或 Exchange Management PowerShell 管理和使用授权访问权限。</span><span class="sxs-lookup"><span data-stu-id="ee453-p101">This topic will guide you through enabling and configuring privileged access management in your Office 365 organization. You can use either the Microsoft 365 Admin Center or Exchange Management PowerShell to manage and use privileged access.</span></span> 
+<span data-ttu-id="de8c3-p101">本主题将指导您在 Office 365 组织中启用和配置特权访问管理。您可以使用 Microsoft 365 管理中心或 Exchange 管理 PowerShell 管理和使用特权访问。</span><span class="sxs-lookup"><span data-stu-id="de8c3-p101">This topic will guide you through enabling and configuring privileged access management in your Office 365 organization. You can use either the Microsoft 365 Admin Center or Exchange Management PowerShell to manage and use privileged access.</span></span> 
 
-## <a name="enable-and-configure-privileged-access-management"></a><span data-ttu-id="ee453-107">启用和配置访问权限的管理</span><span class="sxs-lookup"><span data-stu-id="ee453-107">Enable and configure privileged access management</span></span>
+## <a name="enable-and-configure-privileged-access-management"></a><span data-ttu-id="de8c3-107">启用和配置特权访问管理</span><span class="sxs-lookup"><span data-stu-id="de8c3-107">Enable and configure privileged access management</span></span>
 
-<span data-ttu-id="ee453-108">请按照下列步骤设置和使用 Office 365 组织中的访问权限：</span><span class="sxs-lookup"><span data-stu-id="ee453-108">Follow these steps to set up and use privileged access in your Office 365 organization:</span></span>
+<span data-ttu-id="de8c3-108">按照以下步骤设置和使用 Office 365 组织中的特权访问:</span><span class="sxs-lookup"><span data-stu-id="de8c3-108">Follow these steps to set up and use privileged access in your Office 365 organization:</span></span>
 
-- [<span data-ttu-id="ee453-109">步骤 1： 创建审批者组</span><span class="sxs-lookup"><span data-stu-id="ee453-109">Step 1: Create an approver's group</span></span>](privileged-access-management-configuration.md#step1)
+- [<span data-ttu-id="de8c3-109">步骤 1: 创建审批者的组</span><span class="sxs-lookup"><span data-stu-id="de8c3-109">Step 1: Create an approver's group</span></span>](privileged-access-management-configuration.md#step1)
 
-    <span data-ttu-id="ee453-p102">在开始使用最小特权 access 之前，决定谁将具有审批授权的传入请求访问提升特权的任务。审批者的组的一部分的任何用户都将能够批准访问请求。这被启用的 Office 365 中创建启用邮件的安全组。</span><span class="sxs-lookup"><span data-stu-id="ee453-p102">Before you start using privilege access, determine who will have approval authority for incoming requests for access to elevated and privileged tasks. Any user who is part of the Approvers’ group will be able to approve access requests. This is enabled by creating a mail-enabled security group in Office 365.</span></span>
+    <span data-ttu-id="de8c3-p102">在开始使用权限访问之前, 请确定谁将拥有对已提升和特权任务的传入请求的审批权限。作为审批者组的一部分的任何用户都将能够批准访问请求。这是通过在 Office 365 中创建启用邮件的安全组来启用的。</span><span class="sxs-lookup"><span data-stu-id="de8c3-p102">Before you start using privilege access, determine who will have approval authority for incoming requests for access to elevated and privileged tasks. Any user who is part of the Approvers’ group will be able to approve access requests. This is enabled by creating a mail-enabled security group in Office 365.</span></span>
 
-- [<span data-ttu-id="ee453-113">步骤 2： 启用访问权限</span><span class="sxs-lookup"><span data-stu-id="ee453-113">Step 2: Enable privileged access</span></span>](privileged-access-management-configuration.md#step2)
+- [<span data-ttu-id="de8c3-113">步骤 2: 启用特权访问</span><span class="sxs-lookup"><span data-stu-id="de8c3-113">Step 2: Enable privileged access</span></span>](privileged-access-management-configuration.md#step2)
 
-    <span data-ttu-id="ee453-114">需要显式打开 Office 365 中使用的默认审批者组和包括要排除的访问权限的管理访问控制从系统帐户的一组访问权限。</span><span class="sxs-lookup"><span data-stu-id="ee453-114">Privileged access needs to be explicitly turned on in Office 365 with the default approver group and including a set of system accounts that you’d want to be excluded from the privileged access management access control.</span></span>
+    <span data-ttu-id="de8c3-114">需要在 Office 365 中显式打开具有默认审批者组的特权访问权限, 并包含要从特权访问管理访问控制中排除的一组系统帐户。</span><span class="sxs-lookup"><span data-stu-id="de8c3-114">Privileged access needs to be explicitly turned on in Office 365 with the default approver group and including a set of system accounts that you’d want to be excluded from the privileged access management access control.</span></span>
 
-- [<span data-ttu-id="ee453-115">步骤 3： 创建访问策略</span><span class="sxs-lookup"><span data-stu-id="ee453-115">Step 3: Create an access policy</span></span>](privileged-access-management-configuration.md#step3)
+- [<span data-ttu-id="de8c3-115">步骤 3: 创建访问策略</span><span class="sxs-lookup"><span data-stu-id="de8c3-115">Step 3: Create an access policy</span></span>](privileged-access-management-configuration.md#step3)
 
-    <span data-ttu-id="ee453-p103">创建审批策略允许您定义的范围限制在各项任务的特定审批要求。**自动**或**手动**了审批类型选项。</span><span class="sxs-lookup"><span data-stu-id="ee453-p103">Creating an approval policy allows you to define the specific approval requirements scoped at individual tasks. The approval type options are **Auto** or **Manual**.</span></span>
+    <span data-ttu-id="de8c3-p103">通过创建审批策略, 可以定义各个任务范围内的特定审批要求。审批类型选项为 "**自动**" 或 "**手动**"。</span><span class="sxs-lookup"><span data-stu-id="de8c3-p103">Creating an approval policy allows you to define the specific approval requirements scoped at individual tasks. The approval type options are **Auto** or **Manual**.</span></span>
 
-- [<span data-ttu-id="ee453-118">步骤 4： 提交/批准特权的访问请求</span><span class="sxs-lookup"><span data-stu-id="ee453-118">Step 4: Submit/approve privileged access requests</span></span>](privileged-access-management-configuration.md#step4)
+- [<span data-ttu-id="de8c3-118">步骤 4: 提交/批准权限访问请求</span><span class="sxs-lookup"><span data-stu-id="de8c3-118">Step 4: Submit/approve privileged access requests</span></span>](privileged-access-management-configuration.md#step4)
 
-    <span data-ttu-id="ee453-p104">启用之后，特权访问需要执行任何任务已定义的关联的审批策略审批。无需执行中包含的任务的用户的审批策略必须请求，并让执行任务所需的权限授予访问审核。</span><span class="sxs-lookup"><span data-stu-id="ee453-p104">Once enabled, privileged access requires approvals for executing any task that has an associated approval policy defined. Users needing to execute tasks included in the an approval policy must request and be granted access approval in order to have permissions necessary to execute the task.</span></span>
+    <span data-ttu-id="de8c3-p104">启用后, 特权访问需要审批以执行任何定义了关联的审批策略的任务。需要执行审批策略中包含的任务的用户必须请求并授予访问审批权限, 以便拥有执行任务所需的权限。</span><span class="sxs-lookup"><span data-stu-id="de8c3-p104">Once enabled, privileged access requires approvals for executing any task that has an associated approval policy defined. Users needing to execute tasks included in the an approval policy must request and be granted access approval in order to have permissions necessary to execute the task.</span></span>
 
-<span data-ttu-id="ee453-p105">授予审批后，请求的用户可以执行预期的任务并特权的 access 将授权，并对代表用户执行任务。审批保持有效的请求持续时间 （默认持续时间是 4 个小时），在此期间请求者可以预期的任务多次执行。所有此类执行的记录，并使其可供安全性和合规性审核。</span><span class="sxs-lookup"><span data-stu-id="ee453-p105">After approval is granted, the requesting user can execute the intended task and privileged access will authorize and execute the task on users’ behalf. The approval remains valid for the requested duration (default duration is 4 hours), during which the requester can execute the intended task multiple times. All such executions are logged and made available for security and compliance auditing.</span></span> 
+<span data-ttu-id="de8c3-p105">授予批准后, 请求用户可以执行预期的任务, 而特权访问将代表用户授权和执行任务。审批在请求的持续时间 (默认持续时间为4小时) 内保持有效, 在此期间, 请求者可以多次执行预期任务。将记录所有此类执行情况, 并提供安全和合规性审核。</span><span class="sxs-lookup"><span data-stu-id="de8c3-p105">After approval is granted, the requesting user can execute the intended task and privileged access will authorize and execute the task on users’ behalf. The approval remains valid for the requested duration (default duration is 4 hours), during which the requester can execute the intended task multiple times. All such executions are logged and made available for security and compliance auditing.</span></span> 
 
 > [!NOTE]
-> <span data-ttu-id="ee453-p106">如果您想要使用 Exchange Management PowerShell 启用和配置访问权限，请按照[连接到 Exchange Online PowerShell 中使用多因素身份验证](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/mfa-connect-to-exchange-online-powershell?view=exchange-ps)连接到 Exchange Online PowerShell 中使用 Office 365 中的步骤凭据。不需要启用多重身份验证您的 Office 365 组织使用的步骤同时连接到 Exchange Online PowerShell 中启用访问权限。将与多因素身份验证连接创建由授权的访问权限，登录您的请求的 OAuth 令牌。</span><span class="sxs-lookup"><span data-stu-id="ee453-p106">If you want to use Exchange Management PowerShell to enable and configure privileged access, follow the steps in [Connect to Exchange Online PowerShell using Multi-Factor authentication](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/mfa-connect-to-exchange-online-powershell?view=exchange-ps) to connect to Exchange Online PowerShell with your Office 365 credentials. You do not need to enable multi-factor authentication for your Office 365 organization to use the steps to enable privileged access while connecting to Exchange Online PowerShell. Connecting with multi-factor authentication creates an OAuth token that is used by privileged access for signing your requests.</span></span>
+> <span data-ttu-id="de8c3-p106">如果要使用 Exchange 管理 PowerShell 启用和配置特权访问, 请按照[使用多重身份验证](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/mfa-connect-to-exchange-online-powershell?view=exchange-ps)连接到 exchange online powershell 与 Office 365 连接到 exchange online powershell 中的步骤操作。凭据.您无需为 Office 365 组织启用多重身份验证, 即可使用在连接到 Exchange Online PowerShell 时启用特权访问的步骤。使用多重身份验证进行连接将创建一个 OAuth 令牌, 该令牌由用于对您的请求进行签名的特权访问使用。</span><span class="sxs-lookup"><span data-stu-id="de8c3-p106">If you want to use Exchange Management PowerShell to enable and configure privileged access, follow the steps in [Connect to Exchange Online PowerShell using Multi-Factor authentication](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/mfa-connect-to-exchange-online-powershell?view=exchange-ps) to connect to Exchange Online PowerShell with your Office 365 credentials. You do not need to enable multi-factor authentication for your Office 365 organization to use the steps to enable privileged access while connecting to Exchange Online PowerShell. Connecting with multi-factor authentication creates an OAuth token that is used by privileged access for signing your requests.</span></span>
 
-<span data-ttu-id="ee453-127"><a name="step1"> </a></span><span class="sxs-lookup"><span data-stu-id="ee453-127"></span></span>
+<span data-ttu-id="de8c3-127"><a name="step1"> </a></span><span class="sxs-lookup"><span data-stu-id="de8c3-127"></span></span>
 
-## <a name="step-1---create-an-approvers-group"></a><span data-ttu-id="ee453-128">步骤 1-创建审批者组</span><span class="sxs-lookup"><span data-stu-id="ee453-128">Step 1 - Create an approver's group</span></span>
+## <a name="step-1---create-an-approvers-group"></a><span data-ttu-id="de8c3-128">步骤 1-创建审批者的组</span><span class="sxs-lookup"><span data-stu-id="de8c3-128">Step 1 - Create an approver's group</span></span>
 
-1. <span data-ttu-id="ee453-129">登录到[Microsoft 365 Admin Center](https://portal.office.com)使用您的组织中的管理帐户的凭据。</span><span class="sxs-lookup"><span data-stu-id="ee453-129">Sign into the [Microsoft 365 Admin Center](https://portal.office.com) using credentials for an admin account in your organization.</span></span>
+1. <span data-ttu-id="de8c3-129">使用组织中的管理员帐户的凭据登录[Microsoft 365 管理中心](https://portal.office.com)。</span><span class="sxs-lookup"><span data-stu-id="de8c3-129">Sign into the [Microsoft 365 Admin Center](https://portal.office.com) using credentials for an admin account in your organization.</span></span>
 
-2. <span data-ttu-id="ee453-130">在管理中心，转到**组** > **添加组**。</span><span class="sxs-lookup"><span data-stu-id="ee453-130">In the Admin Center, go to **Groups** > **Add a group**.</span></span>
+2. <span data-ttu-id="de8c3-130">在管理中心中, 转到 "**组** > " "**添加组**"。</span><span class="sxs-lookup"><span data-stu-id="de8c3-130">In the Admin Center, go to **Groups** > **Add a group**.</span></span>
 
-3. <span data-ttu-id="ee453-131">选择**已启用邮件的安全组**的组类型，然后完成新建组的**名称**、**组电子邮件地址**和**说明**字段。</span><span class="sxs-lookup"><span data-stu-id="ee453-131">Select the **mail-enabled security group** group type and then complete the **Name**, **Group email address**, and **Description** fields for the new group.</span></span>
+3. <span data-ttu-id="de8c3-131">选择 "**已启用邮件的安全组**" 组类型, 然后填写新组的**名称**、**组电子邮件地址**和**说明**字段。</span><span class="sxs-lookup"><span data-stu-id="de8c3-131">Select the **mail-enabled security group** group type and then complete the **Name**, **Group email address**, and **Description** fields for the new group.</span></span>
 
-4. <span data-ttu-id="ee453-p107">保存组。可能需要几分钟，以便完全配置并显示在 Office 365 管理中心中的组。</span><span class="sxs-lookup"><span data-stu-id="ee453-p107">Save the group. It may take a few minutes for the group to be fully configured and to appear in the Office 365 Admin Center.</span></span>
+4. <span data-ttu-id="de8c3-p107">保存组。可能需要几分钟的时间才能完全配置组并将其显示在 Office 365 管理中心中。</span><span class="sxs-lookup"><span data-stu-id="de8c3-p107">Save the group. It may take a few minutes for the group to be fully configured and to appear in the Office 365 Admin Center.</span></span>
 
-5. <span data-ttu-id="ee453-134">选择新的审批者组，然后选择**编辑**以将用户添加到组。</span><span class="sxs-lookup"><span data-stu-id="ee453-134">Select the new approver's group and select **edit** to add users to the group.</span></span>
+5. <span data-ttu-id="de8c3-134">选择新的审批者组, 然后选择 "**编辑**" 将用户添加到组中。</span><span class="sxs-lookup"><span data-stu-id="de8c3-134">Select the new approver's group and select **edit** to add users to the group.</span></span>
 
-6. <span data-ttu-id="ee453-135">保存组。</span><span class="sxs-lookup"><span data-stu-id="ee453-135">Save the group.</span></span>
+6. <span data-ttu-id="de8c3-135">保存组。</span><span class="sxs-lookup"><span data-stu-id="de8c3-135">Save the group.</span></span>
 
-<span data-ttu-id="ee453-136"><a name="step2"> </a></span><span class="sxs-lookup"><span data-stu-id="ee453-136"></span></span>
+<span data-ttu-id="de8c3-136"><a name="step2"> </a></span><span class="sxs-lookup"><span data-stu-id="de8c3-136"></span></span>
 
-## <a name="step-2---enable-privileged-access"></a><span data-ttu-id="ee453-137">步骤 2-启用访问权限</span><span class="sxs-lookup"><span data-stu-id="ee453-137">Step 2 - Enable privileged access</span></span>
+## <a name="step-2---enable-privileged-access"></a><span data-ttu-id="de8c3-137">步骤 2-启用特权访问</span><span class="sxs-lookup"><span data-stu-id="de8c3-137">Step 2 - Enable privileged access</span></span>
 
-### <a name="using-the-microsoft-365-admin-center"></a><span data-ttu-id="ee453-138">使用 Microsoft 365 管理中心</span><span class="sxs-lookup"><span data-stu-id="ee453-138">Using the Microsoft 365 Admin Center</span></span>
+### <a name="using-the-microsoft-365-admin-center"></a><span data-ttu-id="de8c3-138">使用 Microsoft 365 管理中心</span><span class="sxs-lookup"><span data-stu-id="de8c3-138">Using the Microsoft 365 Admin Center</span></span>
 
-1. <span data-ttu-id="ee453-139">登录到[Microsoft 365 Admin Center](https://portal.office.com)使用您的组织中的管理帐户的凭据。</span><span class="sxs-lookup"><span data-stu-id="ee453-139">Sign into the [Microsoft 365 Admin Center](https://portal.office.com) using credentials for an admin account in your organization.</span></span>
+1. <span data-ttu-id="de8c3-139">使用组织中的管理员帐户的凭据登录[Microsoft 365 管理中心](https://portal.office.com)。</span><span class="sxs-lookup"><span data-stu-id="de8c3-139">Sign into the [Microsoft 365 Admin Center](https://portal.office.com) using credentials for an admin account in your organization.</span></span>
 
-2. <span data-ttu-id="ee453-140">在管理中心，转到**设置 > 安全和隐私** > **访问权限**。</span><span class="sxs-lookup"><span data-stu-id="ee453-140">In the Admin Center, go to **Settings > Security & Privacy** > **Privileged access**.</span></span>
+2. <span data-ttu-id="de8c3-140">在管理中心中, 转到 "**设置" > Security & 隐私** > 权限**访问**。</span><span class="sxs-lookup"><span data-stu-id="de8c3-140">In the Admin Center, go to **Settings > Security & Privacy** > **Privileged access**.</span></span>
 
-3. <span data-ttu-id="ee453-141">启用**需要批准的访问权限**控件。</span><span class="sxs-lookup"><span data-stu-id="ee453-141">Enable the **Require approvals for privileged access** control.</span></span>
+3. <span data-ttu-id="de8c3-141">启用 "**需要批准以进行特权访问**控制"。</span><span class="sxs-lookup"><span data-stu-id="de8c3-141">Enable the **Require approvals for privileged access** control.</span></span>
 
-4. <span data-ttu-id="ee453-142">将作为**默认审批者组**的步骤 1 中创建审批者的组分配。</span><span class="sxs-lookup"><span data-stu-id="ee453-142">Assign the approver's group you created in Step 1 as the **Default approvers group**.</span></span>
+4. <span data-ttu-id="de8c3-142">将您在步骤1中创建的审批者组分配为默认的 "**审批者" 组**。</span><span class="sxs-lookup"><span data-stu-id="de8c3-142">Assign the approver's group you created in Step 1 as the **Default approvers group**.</span></span>
 
-5. <span data-ttu-id="ee453-143">**保存**并**关闭**。</span><span class="sxs-lookup"><span data-stu-id="ee453-143">**Save** and **Close**.</span></span>
+5. <span data-ttu-id="de8c3-143">**保存**并**关闭**。</span><span class="sxs-lookup"><span data-stu-id="de8c3-143">**Save** and **Close**.</span></span>
 
-### <a name="using-exchange-management-powershell"></a><span data-ttu-id="ee453-144">使用 Exchange Management PowerShell</span><span class="sxs-lookup"><span data-stu-id="ee453-144">Using Exchange Management PowerShell</span></span>
+### <a name="using-exchange-management-powershell"></a><span data-ttu-id="de8c3-144">使用 Exchange 管理 PowerShell</span><span class="sxs-lookup"><span data-stu-id="de8c3-144">Using Exchange Management PowerShell</span></span>
 
-<span data-ttu-id="ee453-145">若要启用访问权限，并将审批者的组分配 Exchange Online PowerShell 中运行以下命令：</span><span class="sxs-lookup"><span data-stu-id="ee453-145">Run the following command in Exchange Online PowerShell to enable privileged access and to assign the approver's group:</span></span>
+<span data-ttu-id="de8c3-145">在 Exchange Online PowerShell 中运行以下命令, 以启用特权访问并分配审批者的组:</span><span class="sxs-lookup"><span data-stu-id="de8c3-145">Run the following command in Exchange Online PowerShell to enable privileged access and to assign the approver's group:</span></span>
 ```
 Enable-ElevatedAccessControl -AdminGroup '<default approver group>' -SystemAccounts @('<systemAccountUPN1>','<systemAccountUPN2>')
 ```
-<span data-ttu-id="ee453-146">示例：</span><span class="sxs-lookup"><span data-stu-id="ee453-146">Example:</span></span>
+<span data-ttu-id="de8c3-146">示例：</span><span class="sxs-lookup"><span data-stu-id="de8c3-146">Example:</span></span>
 ```
 Enable-ElevatedAccessControl -AdminGroup 'pamapprovers@fabrikam.onmicrosoft.com' -SystemAccounts @('sys1@fabrikamorg.onmicrosoft.com', sys2@fabrikamorg.onmicrosoft.com')
 ```
 
 > [!NOTE]
-> <span data-ttu-id="ee453-147">系统帐户由可用于确保组织内的特定自动化功能可以处理不依赖项的情况下访问权限，但建议的此类排除在极那些允许应核准和审核定期。</span><span class="sxs-lookup"><span data-stu-id="ee453-147">System accounts feature is made available to ensure certain automations within your organizations can work without dependency on privileged access, however it is recommended that such exclusions be exceptional and those allowed should be approved and audited regularly.</span></span>
+> <span data-ttu-id="de8c3-147">系统帐户功能可用于确保组织内的某些自动脚本可以正常工作, 而无需对特权访问进行依赖性, 但建议将此类排除条件设为例外, 并且应批准和审核这些排除条件保持.</span><span class="sxs-lookup"><span data-stu-id="de8c3-147">System accounts feature is made available to ensure certain automations within your organizations can work without dependency on privileged access, however it is recommended that such exclusions be exceptional and those allowed should be approved and audited regularly.</span></span>
 
-<span data-ttu-id="ee453-148"><a name="step3"> </a></span><span class="sxs-lookup"><span data-stu-id="ee453-148"></span></span>
+<span data-ttu-id="de8c3-148"><a name="step3"> </a></span><span class="sxs-lookup"><span data-stu-id="de8c3-148"></span></span>
 
-## <a name="step-3---create-an-access-policy"></a><span data-ttu-id="ee453-149">步骤 3-创建访问策略</span><span class="sxs-lookup"><span data-stu-id="ee453-149">Step 3 - Create an access policy</span></span>
+## <a name="step-3---create-an-access-policy"></a><span data-ttu-id="de8c3-149">步骤 3-创建访问策略</span><span class="sxs-lookup"><span data-stu-id="de8c3-149">Step 3 - Create an access policy</span></span>
 
-<span data-ttu-id="ee453-150">可以创建和配置 Office 365 组织的最多 30 个特权的访问策略。</span><span class="sxs-lookup"><span data-stu-id="ee453-150">You can create and configure up to 30 privileged access policies for your Office 365 organization.</span></span>
+<span data-ttu-id="de8c3-150">您可以为 Office 365 组织创建和配置最高30个权限访问策略。</span><span class="sxs-lookup"><span data-stu-id="de8c3-150">You can create and configure up to 30 privileged access policies for your Office 365 organization.</span></span>
 
-### <a name="using-the-microsoft-365-admin-center"></a><span data-ttu-id="ee453-151">使用 Microsoft 365 管理中心</span><span class="sxs-lookup"><span data-stu-id="ee453-151">Using the Microsoft 365 Admin Center</span></span>
+### <a name="using-the-microsoft-365-admin-center"></a><span data-ttu-id="de8c3-151">使用 Microsoft 365 管理中心</span><span class="sxs-lookup"><span data-stu-id="de8c3-151">Using the Microsoft 365 Admin Center</span></span>
 
-1. <span data-ttu-id="ee453-152">登录到[Microsoft 365 Admin Center](https://portal.office.com)使用您的组织中的管理帐户的凭据。</span><span class="sxs-lookup"><span data-stu-id="ee453-152">Sign into the [Microsoft 365 Admin Center](https://portal.office.com) using credentials for an admin account in your organization.</span></span>
+1. <span data-ttu-id="de8c3-152">使用组织中的管理员帐户的凭据登录[Microsoft 365 管理中心](https://portal.office.com)。</span><span class="sxs-lookup"><span data-stu-id="de8c3-152">Sign into the [Microsoft 365 Admin Center](https://portal.office.com) using credentials for an admin account in your organization.</span></span>
 
-2. <span data-ttu-id="ee453-153">在管理中心，转到**设置** > **安全性和隐私** > **访问权限**。</span><span class="sxs-lookup"><span data-stu-id="ee453-153">In the Admin Center, go to **Settings** > **Security & Privacy** > **Privileged access**.</span></span>
+2. <span data-ttu-id="de8c3-153">在管理中心中, 转到 "**设置** > **安全 & 隐私** > 权限**访问**"。</span><span class="sxs-lookup"><span data-stu-id="de8c3-153">In the Admin Center, go to **Settings** > **Security & Privacy** > **Privileged access**.</span></span>
 
-3. <span data-ttu-id="ee453-154">选择**管理访问策略和请求**。</span><span class="sxs-lookup"><span data-stu-id="ee453-154">Select **Manage access policies and requests**.</span></span>
+3. <span data-ttu-id="de8c3-154">选择 "**管理访问策略和请求**"。</span><span class="sxs-lookup"><span data-stu-id="de8c3-154">Select **Manage access policies and requests**.</span></span>
 
-4. <span data-ttu-id="ee453-155">选择**配置策略**，然后选择**添加策略**。</span><span class="sxs-lookup"><span data-stu-id="ee453-155">Select **Configure policies** and select **Add a policy**.</span></span>
+4. <span data-ttu-id="de8c3-155">选择 "**配置策略**", 然后选择 "**添加策略**"。</span><span class="sxs-lookup"><span data-stu-id="de8c3-155">Select **Configure policies** and select **Add a policy**.</span></span>
 
-5. <span data-ttu-id="ee453-156">从下拉列表字段中，选择您的组织的相应值：</span><span class="sxs-lookup"><span data-stu-id="ee453-156">From the drop-down fields, select the appropriate values for your organization:</span></span>
+5. <span data-ttu-id="de8c3-156">从下拉字段中, 为您的组织选择适当的值:</span><span class="sxs-lookup"><span data-stu-id="de8c3-156">From the drop-down fields, select the appropriate values for your organization:</span></span>
     
-    <span data-ttu-id="ee453-157">**策略类型**： 任务、 角色或角色组</span><span class="sxs-lookup"><span data-stu-id="ee453-157">**Policy type**: Task, Role, or Role Group</span></span>
+    <span data-ttu-id="de8c3-157">**策略类型**: 任务、角色或角色组</span><span class="sxs-lookup"><span data-stu-id="de8c3-157">**Policy type**: Task, Role, or Role Group</span></span>
 
-    <span data-ttu-id="ee453-158">**策略作用域**： Exchange 或 Office 365</span><span class="sxs-lookup"><span data-stu-id="ee453-158">**Policy scope**: Exchange or Office 365</span></span>
+    <span data-ttu-id="de8c3-158">**策略作用域**: Exchange 或 Office 365</span><span class="sxs-lookup"><span data-stu-id="de8c3-158">**Policy scope**: Exchange or Office 365</span></span>
 
-    <span data-ttu-id="ee453-159">**策略名称**： 从可用的策略选择</span><span class="sxs-lookup"><span data-stu-id="ee453-159">**Policy name**: Select from the available policies</span></span>
+    <span data-ttu-id="de8c3-159">**策略名称**: 从可用策略中进行选择</span><span class="sxs-lookup"><span data-stu-id="de8c3-159">**Policy name**: Select from the available policies</span></span>
 
-    <span data-ttu-id="ee453-160">**审批类型**： 手动或自动</span><span class="sxs-lookup"><span data-stu-id="ee453-160">**Approval type**: Manual or Auto</span></span>
+    <span data-ttu-id="de8c3-160">**审批类型**: 手动或自动</span><span class="sxs-lookup"><span data-stu-id="de8c3-160">**Approval type**: Manual or Auto</span></span>
 
-    <span data-ttu-id="ee453-161">**审核组**： 选择在步骤 1 中创建的审批者组</span><span class="sxs-lookup"><span data-stu-id="ee453-161">**Approval group**: Select the approvers group created in Step 1</span></span>
+    <span data-ttu-id="de8c3-161">**审批组**: 选择在步骤1中创建的 "审批者" 组</span><span class="sxs-lookup"><span data-stu-id="de8c3-161">**Approval group**: Select the approvers group created in Step 1</span></span>
 
-6. <span data-ttu-id="ee453-p108">选择**创建**，然后**关闭**。可能需要几分钟，要完全配置并启用的策略。</span><span class="sxs-lookup"><span data-stu-id="ee453-p108">Select **Create** and then **Close**. It may take a few minutes for the policy to be fully configured and enabled.</span></span>
+6. <span data-ttu-id="de8c3-p108">选择 "**创建**", 然后单击 "**关闭**"。为策略完全配置和启用可能需要几分钟时间。</span><span class="sxs-lookup"><span data-stu-id="de8c3-p108">Select **Create** and then **Close**. It may take a few minutes for the policy to be fully configured and enabled.</span></span>
 
-### <a name="using-exchange-management-powershell"></a><span data-ttu-id="ee453-164">使用 Exchange Management PowerShell</span><span class="sxs-lookup"><span data-stu-id="ee453-164">Using Exchange Management PowerShell</span></span>
+### <a name="using-exchange-management-powershell"></a><span data-ttu-id="de8c3-164">使用 Exchange 管理 PowerShell</span><span class="sxs-lookup"><span data-stu-id="de8c3-164">Using Exchange Management PowerShell</span></span>
 
-<span data-ttu-id="ee453-165">运行以下命令在 Exchange Online PowerShell，可以创建并定义审批策略：</span><span class="sxs-lookup"><span data-stu-id="ee453-165">Run the following command in Exchange Online PowerShell to create and define an approval policy:</span></span>
+<span data-ttu-id="de8c3-165">在 Exchange Online PowerShell 中运行以下命令, 以创建和定义审批策略:</span><span class="sxs-lookup"><span data-stu-id="de8c3-165">Run the following command in Exchange Online PowerShell to create and define an approval policy:</span></span>
 
 ```
 New-ElevatedAccessApprovalPolicy -Task 'Exchange\<exchange management cmdlet name>' -ApprovalType <Manual, Auto> -ApproverGroup '<default/custom approver group>'
 ```
-<span data-ttu-id="ee453-166">示例：</span><span class="sxs-lookup"><span data-stu-id="ee453-166">Example:</span></span>
+<span data-ttu-id="de8c3-166">示例：</span><span class="sxs-lookup"><span data-stu-id="de8c3-166">Example:</span></span>
 ```
 New-ElevatedAccessApprovalPolicy -Task 'Exchange\New-MoveRequest' -ApprovalType Manual -ApproverGroup 'mbmanagers@fabrikamorg.onmicrosoft.com'
 ```
 
-<span data-ttu-id="ee453-167"><a name="step4"> </a></span><span class="sxs-lookup"><span data-stu-id="ee453-167"></span></span>
+<span data-ttu-id="de8c3-167"><a name="step4"> </a></span><span class="sxs-lookup"><span data-stu-id="de8c3-167"></span></span>
 
-## <a name="step-4-submitapprove-privileged-access-requests"></a><span data-ttu-id="ee453-168">步骤 4： 提交/批准特权的访问请求</span><span class="sxs-lookup"><span data-stu-id="ee453-168">Step 4: Submit/approve privileged access requests</span></span>
+## <a name="step-4-submitapprove-privileged-access-requests"></a><span data-ttu-id="de8c3-168">步骤 4: 提交/批准权限访问请求</span><span class="sxs-lookup"><span data-stu-id="de8c3-168">Step 4: Submit/approve privileged access requests</span></span>
 
-### <a name="requesting-elevation-authorization-to-execute-privileged-tasks"></a><span data-ttu-id="ee453-169">请求提升授权执行特权的任务</span><span class="sxs-lookup"><span data-stu-id="ee453-169">Requesting elevation authorization to execute privileged tasks</span></span>
+### <a name="requesting-elevation-authorization-to-execute-privileged-tasks"></a><span data-ttu-id="de8c3-169">请求提升授权以执行特权任务</span><span class="sxs-lookup"><span data-stu-id="de8c3-169">Requesting elevation authorization to execute privileged tasks</span></span>
 
-<span data-ttu-id="ee453-p109">特权访问请求达 24 小时，提交请求后才有效。如果未批准或拒绝，过期请求和访问未获得批准。</span><span class="sxs-lookup"><span data-stu-id="ee453-p109">Requests for privileged access are valid for up to 24 hours after the request is submitted. If not approved or denied, the requests expire and access is not approved.</span></span>
+<span data-ttu-id="de8c3-p109">特权访问请求在提交请求后最长24小时有效。如果未批准或被拒绝, 请求将过期, 并且不会获得访问权限。</span><span class="sxs-lookup"><span data-stu-id="de8c3-p109">Requests for privileged access are valid for up to 24 hours after the request is submitted. If not approved or denied, the requests expire and access is not approved.</span></span>
 
-#### <a name="using-the-microsoft-365-admin-center"></a><span data-ttu-id="ee453-172">使用 Microsoft 365 管理中心</span><span class="sxs-lookup"><span data-stu-id="ee453-172">Using the Microsoft 365 Admin Center</span></span>
+#### <a name="using-the-microsoft-365-admin-center"></a><span data-ttu-id="de8c3-172">使用 Microsoft 365 管理中心</span><span class="sxs-lookup"><span data-stu-id="de8c3-172">Using the Microsoft 365 Admin Center</span></span>
 
-1. <span data-ttu-id="ee453-173">登录到[Microsoft 365 Admin Center](https://portal.office.com)使用您的凭据。</span><span class="sxs-lookup"><span data-stu-id="ee453-173">Sign into the [Microsoft 365 Admin Center](https://portal.office.com) using your credentials.</span></span>
+1. <span data-ttu-id="de8c3-173">使用您的凭据登录到[Microsoft 365 管理中心](https://portal.office.com)。</span><span class="sxs-lookup"><span data-stu-id="de8c3-173">Sign into the [Microsoft 365 Admin Center](https://portal.office.com) using your credentials.</span></span>
 
-2. <span data-ttu-id="ee453-174">在管理中心，转到**设置** > **安全性和隐私** > **访问权限**。</span><span class="sxs-lookup"><span data-stu-id="ee453-174">In the Admin Center, go to **Settings** > **Security & Privacy** > **Privileged access**.</span></span>
+2. <span data-ttu-id="de8c3-174">在管理中心中, 转到 "**设置** > **安全 & 隐私** > 权限**访问**"。</span><span class="sxs-lookup"><span data-stu-id="de8c3-174">In the Admin Center, go to **Settings** > **Security & Privacy** > **Privileged access**.</span></span>
 
-3. <span data-ttu-id="ee453-175">选择**管理访问策略和请求**。</span><span class="sxs-lookup"><span data-stu-id="ee453-175">Select **Manage access policies and requests**.</span></span>
+3. <span data-ttu-id="de8c3-175">选择 "**管理访问策略和请求**"。</span><span class="sxs-lookup"><span data-stu-id="de8c3-175">Select **Manage access policies and requests**.</span></span>
 
-4. <span data-ttu-id="ee453-p110">选择**新的请求**。从下拉列表字段中，选择您的组织的相应值：</span><span class="sxs-lookup"><span data-stu-id="ee453-p110">Select **New request**. From the drop-down fields, select the appropriate values for your organization:</span></span>
+4. <span data-ttu-id="de8c3-p110">选择 "**新建请求**"。从下拉字段中, 为您的组织选择适当的值:</span><span class="sxs-lookup"><span data-stu-id="de8c3-p110">Select **New request**. From the drop-down fields, select the appropriate values for your organization:</span></span>
 
-    <span data-ttu-id="ee453-178">**请求类型**： 任务、 角色或角色组</span><span class="sxs-lookup"><span data-stu-id="ee453-178">**Request type**: Task, Role, or Role Group</span></span>
+    <span data-ttu-id="de8c3-178">**请求类型**: 任务、角色或角色组</span><span class="sxs-lookup"><span data-stu-id="de8c3-178">**Request type**: Task, Role, or Role Group</span></span>
 
-    <span data-ttu-id="ee453-179">**请求作用域**： Exchange</span><span class="sxs-lookup"><span data-stu-id="ee453-179">**Request scope**: Exchange</span></span>
+    <span data-ttu-id="de8c3-179">**请求范围**: Exchange</span><span class="sxs-lookup"><span data-stu-id="de8c3-179">**Request scope**: Exchange</span></span>
 
-    <span data-ttu-id="ee453-180">**请求**： 从可用的策略选择</span><span class="sxs-lookup"><span data-stu-id="ee453-180">**Request for**: Select from the available policies</span></span>
+    <span data-ttu-id="de8c3-180">**请求**: 从可用策略中选择</span><span class="sxs-lookup"><span data-stu-id="de8c3-180">**Request for**: Select from the available policies</span></span>
 
-    <span data-ttu-id="ee453-p111">**持续时间 （小时）**： 请求的访问的小时数。在可以请求的小时数上没有限制。</span><span class="sxs-lookup"><span data-stu-id="ee453-p111">**Duration (hours)**: Number of hours of requested access. There isn't a limit on the number of hours that can be requested.</span></span>
+    <span data-ttu-id="de8c3-p111">**持续时间 (小时)**: 请求的访问的小时数。对于可以请求的小时数没有限制。</span><span class="sxs-lookup"><span data-stu-id="de8c3-p111">**Duration (hours)**: Number of hours of requested access. There isn't a limit on the number of hours that can be requested.</span></span>
 
-    <span data-ttu-id="ee453-183">**注释**： 注释的文本字段与您的访问请求</span><span class="sxs-lookup"><span data-stu-id="ee453-183">**Comments**: Text field for comments related to your access request</span></span>
+    <span data-ttu-id="de8c3-183">**注释**: 与您的访问请求相关的注释的文本字段</span><span class="sxs-lookup"><span data-stu-id="de8c3-183">**Comments**: Text field for comments related to your access request</span></span>
 
-5. <span data-ttu-id="ee453-p112">选择**保存**和**关闭**。您的请求将发送到通过电子邮件的审批者的组。</span><span class="sxs-lookup"><span data-stu-id="ee453-p112">Select **Save** and then **Close**. Your request will be sent to the approver's group via email.</span></span>
+5. <span data-ttu-id="de8c3-p112">依次选择 "**保存**" 和 "**关闭**"。您的请求将通过电子邮件发送给审批者的组。</span><span class="sxs-lookup"><span data-stu-id="de8c3-p112">Select **Save** and then **Close**. Your request will be sent to the approver's group via email.</span></span>
 
-#### <a name="using-exchange-management-powershell"></a><span data-ttu-id="ee453-186">使用 Exchange Management PowerShell</span><span class="sxs-lookup"><span data-stu-id="ee453-186">Using Exchange Management PowerShell</span></span>
+#### <a name="using-exchange-management-powershell"></a><span data-ttu-id="de8c3-186">使用 Exchange 管理 PowerShell</span><span class="sxs-lookup"><span data-stu-id="de8c3-186">Using Exchange Management PowerShell</span></span>
 
-<span data-ttu-id="ee453-187">运行以下命令在 Exchange Online PowerShell 来创建和提交给审批者的组的审批请求：</span><span class="sxs-lookup"><span data-stu-id="ee453-187">Run the following command in Exchange Online PowerShell to create and submit an approval request to the approver's group:</span></span>
+<span data-ttu-id="de8c3-187">在 Exchange Online PowerShell 中运行以下命令, 以创建批准请求并将其提交给审批者的组:</span><span class="sxs-lookup"><span data-stu-id="de8c3-187">Run the following command in Exchange Online PowerShell to create and submit an approval request to the approver's group:</span></span>
 ```
 New-ElevatedAccessRequest -Task 'Exchange\<exchange management cmdlet name>' -Reason '<appropriate reason>' -DurationHours <duration in hours>
 ```
-<span data-ttu-id="ee453-188">示例：</span><span class="sxs-lookup"><span data-stu-id="ee453-188">Example:</span></span>
+<span data-ttu-id="de8c3-188">示例：</span><span class="sxs-lookup"><span data-stu-id="de8c3-188">Example:</span></span>
 ```
 New-ElevatedAccessRequest -Task 'Exchange\New-MoveRequest' -Reason 'Attempting to fix the user mailbox error' -DurationHours 4
 ```
-### <a name="view-status-of-elevation-requests"></a><span data-ttu-id="ee453-189">查看提升请求的状态</span><span class="sxs-lookup"><span data-stu-id="ee453-189">View status of elevation requests</span></span>
-<span data-ttu-id="ee453-190">创建审批请求后，可以在管理中心检查提升请求状态或在 Exchange Management PowerShell 请求使用关联的 id。</span><span class="sxs-lookup"><span data-stu-id="ee453-190">After an approval request is created, elevation request status can be reviewed in the Admin Center or in Exchange Management PowerShell using the associated with request ID.</span></span>
+### <a name="view-status-of-elevation-requests"></a><span data-ttu-id="de8c3-189">查看提升请求的状态</span><span class="sxs-lookup"><span data-stu-id="de8c3-189">View status of elevation requests</span></span>
+<span data-ttu-id="de8c3-190">在创建审批请求后, 可以在管理中心或 Exchange Management PowerShell 中使用与请求 ID 关联的权限来查看提升请求状态。</span><span class="sxs-lookup"><span data-stu-id="de8c3-190">After an approval request is created, elevation request status can be reviewed in the Admin Center or in Exchange Management PowerShell using the associated with request ID.</span></span>
 
-#### <a name="using-the-microsoft-365-admin-center"></a><span data-ttu-id="ee453-191">使用 Microsoft 365 管理中心</span><span class="sxs-lookup"><span data-stu-id="ee453-191">Using the Microsoft 365 Admin Center</span></span>
+#### <a name="using-the-microsoft-365-admin-center"></a><span data-ttu-id="de8c3-191">使用 Microsoft 365 管理中心</span><span class="sxs-lookup"><span data-stu-id="de8c3-191">Using the Microsoft 365 Admin Center</span></span>
 
-1. <span data-ttu-id="ee453-192">登录到[Microsoft 365 Admin Center](https://portal.office.com)使用您的凭据。</span><span class="sxs-lookup"><span data-stu-id="ee453-192">Sign into the [Microsoft 365 Admin Center](https://portal.office.com) using your credentials.</span></span>
+1. <span data-ttu-id="de8c3-192">使用您的凭据登录到[Microsoft 365 管理中心](https://portal.office.com)。</span><span class="sxs-lookup"><span data-stu-id="de8c3-192">Sign into the [Microsoft 365 Admin Center](https://portal.office.com) using your credentials.</span></span>
 
-2. <span data-ttu-id="ee453-193">在管理中心，转到**设置** > **安全性和隐私** > **访问权限**。</span><span class="sxs-lookup"><span data-stu-id="ee453-193">In the Admin Center, go to **Settings** > **Security & Privacy** > **Privileged access**.</span></span>
+2. <span data-ttu-id="de8c3-193">在管理中心中, 转到 "**设置** > **安全 & 隐私** > 权限**访问**"。</span><span class="sxs-lookup"><span data-stu-id="de8c3-193">In the Admin Center, go to **Settings** > **Security & Privacy** > **Privileged access**.</span></span>
 
-3. <span data-ttu-id="ee453-194">选择**管理访问策略和请求**。</span><span class="sxs-lookup"><span data-stu-id="ee453-194">Select **Manage access policies and requests**.</span></span>
+3. <span data-ttu-id="de8c3-194">选择 "**管理访问策略和请求**"。</span><span class="sxs-lookup"><span data-stu-id="de8c3-194">Select **Manage access policies and requests**.</span></span>
 
-4. <span data-ttu-id="ee453-195">选择要筛选**挂起**、**批准**、**拒绝**或**客户密码箱**状态提交的请求的**视图**。</span><span class="sxs-lookup"><span data-stu-id="ee453-195">Select **View** to filter submitted requests by **Pending**, **Approved**, **Denied**, or **Customer Lockbox** status.</span></span>
+4. <span data-ttu-id="de8c3-195">选择 "**查看**" 以按**待定**、**批准**、**拒绝**或**客户密码箱**状态筛选提交的请求。</span><span class="sxs-lookup"><span data-stu-id="de8c3-195">Select **View** to filter submitted requests by **Pending**, **Approved**, **Denied**, or **Customer Lockbox** status.</span></span>
 
-#### <a name="using-exchange-management-powershell"></a><span data-ttu-id="ee453-196">使用 Exchange Management PowerShell</span><span class="sxs-lookup"><span data-stu-id="ee453-196">Using Exchange Management PowerShell</span></span>
+#### <a name="using-exchange-management-powershell"></a><span data-ttu-id="de8c3-196">使用 Exchange 管理 PowerShell</span><span class="sxs-lookup"><span data-stu-id="de8c3-196">Using Exchange Management PowerShell</span></span>
 
-<span data-ttu-id="ee453-197">运行以下命令在 Exchange Online PowerShell，可以查看特定的请求 ID 审批请求状态：</span><span class="sxs-lookup"><span data-stu-id="ee453-197">Run the following command in Exchange Online PowerShell to view a approval request status for a specific request ID:</span></span>
+<span data-ttu-id="de8c3-197">在 Exchange Online PowerShell 中运行以下命令, 以查看特定请求 ID 的审批请求状态:</span><span class="sxs-lookup"><span data-stu-id="de8c3-197">Run the following command in Exchange Online PowerShell to view a approval request status for a specific request ID:</span></span>
 ```
 Get-ElevatedAccessRequest -Identity <request ID> | select RequestStatus
 ```
-<span data-ttu-id="ee453-198">示例：</span><span class="sxs-lookup"><span data-stu-id="ee453-198">Example:</span></span>
+<span data-ttu-id="de8c3-198">示例：</span><span class="sxs-lookup"><span data-stu-id="de8c3-198">Example:</span></span>
 ```
 Get-ElevatedAccessRequest -Identity 28560ed0-419d-4cc3-8f5b-603911cbd450 | select RequestStatus
 ```
 
-### <a name="approving-an-elevation-authorization-request"></a><span data-ttu-id="ee453-199">批准提升授权请求</span><span class="sxs-lookup"><span data-stu-id="ee453-199">Approving an elevation authorization request</span></span>
-<span data-ttu-id="ee453-p113">当创建审批请求时，相关的审批者组的成员将收到的电子邮件通知和可以批准请求 ID 与关联的请求请求者将请求批准或拒绝通过电子邮件通知。</span><span class="sxs-lookup"><span data-stu-id="ee453-p113">When an approval request is created, members of the relevant approver group will receive an email notification and can approve the request associated with the request ID. The requestor will be notified of the request approval or denial via email message.</span></span>
+### <a name="approving-an-elevation-authorization-request"></a><span data-ttu-id="de8c3-199">批准提升授权请求</span><span class="sxs-lookup"><span data-stu-id="de8c3-199">Approving an elevation authorization request</span></span>
+<span data-ttu-id="de8c3-p113">在创建审批请求时, 相关审批者组的成员将收到电子邮件通知, 并且可以批准与请求 ID 关联的请求。请求批准或通过电子邮件拒绝的请求程序将收到通知。</span><span class="sxs-lookup"><span data-stu-id="de8c3-p113">When an approval request is created, members of the relevant approver group will receive an email notification and can approve the request associated with the request ID. The requestor will be notified of the request approval or denial via email message.</span></span>
 
-#### <a name="using-the-microsoft-365-admin-center"></a><span data-ttu-id="ee453-202">使用 Microsoft 365 管理中心</span><span class="sxs-lookup"><span data-stu-id="ee453-202">Using the Microsoft 365 Admin Center</span></span>
+#### <a name="using-the-microsoft-365-admin-center"></a><span data-ttu-id="de8c3-202">使用 Microsoft 365 管理中心</span><span class="sxs-lookup"><span data-stu-id="de8c3-202">Using the Microsoft 365 Admin Center</span></span>
 
-1. <span data-ttu-id="ee453-203">登录到[Microsoft 365 Admin Center](https://portal.office.com)使用您的凭据。</span><span class="sxs-lookup"><span data-stu-id="ee453-203">Sign into the [Microsoft 365 Admin Center](https://portal.office.com) using your credentials.</span></span>
+1. <span data-ttu-id="de8c3-203">使用您的凭据登录到[Microsoft 365 管理中心](https://portal.office.com)。</span><span class="sxs-lookup"><span data-stu-id="de8c3-203">Sign into the [Microsoft 365 Admin Center](https://portal.office.com) using your credentials.</span></span>
 
-2. <span data-ttu-id="ee453-204">在管理中心，转到**设置** > **安全性和隐私** > **访问权限**。</span><span class="sxs-lookup"><span data-stu-id="ee453-204">In the Admin Center, go to **Settings** > **Security & Privacy** > **Privileged access**.</span></span>
+2. <span data-ttu-id="de8c3-204">在管理中心中, 转到 "**设置** > **安全 & 隐私** > 权限**访问**"。</span><span class="sxs-lookup"><span data-stu-id="de8c3-204">In the Admin Center, go to **Settings** > **Security & Privacy** > **Privileged access**.</span></span>
 
-3. <span data-ttu-id="ee453-205">选择**管理访问策略和请求**。</span><span class="sxs-lookup"><span data-stu-id="ee453-205">Select **Manage access policies and requests**.</span></span>
+3. <span data-ttu-id="de8c3-205">选择 "**管理访问策略和请求**"。</span><span class="sxs-lookup"><span data-stu-id="de8c3-205">Select **Manage access policies and requests**.</span></span>
 
-4. <span data-ttu-id="ee453-206">选择列出的请求，若要查看详细信息，以请求对其执行操作。</span><span class="sxs-lookup"><span data-stu-id="ee453-206">Select a listed request to view the details and to take action on the request.</span></span>
+4. <span data-ttu-id="de8c3-206">选择一个列出的请求以查看详细信息, 并对请求执行操作。</span><span class="sxs-lookup"><span data-stu-id="de8c3-206">Select a listed request to view the details and to take action on the request.</span></span>
 
-5. <span data-ttu-id="ee453-p114">选择**批准**批准请求或选择**拒绝**以拒绝该请求。以前批准的请求可以通过选择**取消**吊销的访问。</span><span class="sxs-lookup"><span data-stu-id="ee453-p114">Select **Approve** to approve the request or select **Deny** to deny the request. Previously approved requests can have access revoked by selecting **Revoke**.</span></span>
+5. <span data-ttu-id="de8c3-p114">选择 "**批准**" 以批准请求, 或选择 "**拒绝**" 以拒绝该请求。以前批准的请求可以通过选择 "**吊销**" 来撤销访问权限。</span><span class="sxs-lookup"><span data-stu-id="de8c3-p114">Select **Approve** to approve the request or select **Deny** to deny the request. Previously approved requests can have access revoked by selecting **Revoke**.</span></span>
 
-#### <a name="using-exchange-management-powershell"></a><span data-ttu-id="ee453-209">使用 Exchange Management PowerShell</span><span class="sxs-lookup"><span data-stu-id="ee453-209">Using Exchange Management PowerShell</span></span>
+#### <a name="using-exchange-management-powershell"></a><span data-ttu-id="de8c3-209">使用 Exchange 管理 PowerShell</span><span class="sxs-lookup"><span data-stu-id="de8c3-209">Using Exchange Management PowerShell</span></span>
 
-<span data-ttu-id="ee453-210">运行以下命令在 Exchange Online PowerShell 批准提升授权请求：</span><span class="sxs-lookup"><span data-stu-id="ee453-210">Run the following command in Exchange Online PowerShell to approve an elevation authorization request:</span></span>
+<span data-ttu-id="de8c3-210">在 Exchange Online PowerShell 中运行以下命令, 以批准提升授权请求:</span><span class="sxs-lookup"><span data-stu-id="de8c3-210">Run the following command in Exchange Online PowerShell to approve an elevation authorization request:</span></span>
 
 ```
 Approve-ElevatedAccessRequest -RequestId <request id> -Comment '<approval comment>'
 ```
-<span data-ttu-id="ee453-211">示例：</span><span class="sxs-lookup"><span data-stu-id="ee453-211">Example:</span></span>
+<span data-ttu-id="de8c3-211">示例：</span><span class="sxs-lookup"><span data-stu-id="de8c3-211">Example:</span></span>
 ```
 Approve-ElevatedAccessRequest -RequestId a4bc1bdf-00a1-42b4-be65-b6c63d6be279 -Comment '<approval comment>'
 ```
 
-<span data-ttu-id="ee453-212">运行以下命令在 Exchange Online PowerShell 拒绝提升授权请求：</span><span class="sxs-lookup"><span data-stu-id="ee453-212">Run the following command in Exchange Online PowerShell to deny an elevation authorization request:</span></span>
+<span data-ttu-id="de8c3-212">在 Exchange Online PowerShell 中运行以下命令, 以拒绝提升授权请求:</span><span class="sxs-lookup"><span data-stu-id="de8c3-212">Run the following command in Exchange Online PowerShell to deny an elevation authorization request:</span></span>
 
 ```
 Deny-ElevatedAccessRequest -RequestId <request id> -Comment '<denial comment>'
 ```
-<span data-ttu-id="ee453-213">示例：</span><span class="sxs-lookup"><span data-stu-id="ee453-213">Example:</span></span>
+<span data-ttu-id="de8c3-213">示例：</span><span class="sxs-lookup"><span data-stu-id="de8c3-213">Example:</span></span>
 ```
 Deny-ElevatedAccessRequest -RequestId a4bc1bdf-00a1-42b4-be65-b6c63d6be279 -Comment '<denial comment>'
 ```
 
-## <a name="delete-a-privileged-access-policy-in-office-365"></a><span data-ttu-id="ee453-214">删除 Office 365 中的访问权限的策略</span><span class="sxs-lookup"><span data-stu-id="ee453-214">Delete a privileged access policy in Office 365</span></span>
-<span data-ttu-id="ee453-215">如果您的组织中不再需要它，您可以删除授权的访问策略。</span><span class="sxs-lookup"><span data-stu-id="ee453-215">You can delete a privileged access policy if it is no longer needed in your organization.</span></span>
+## <a name="delete-a-privileged-access-policy-in-office-365"></a><span data-ttu-id="de8c3-214">删除 Office 365 中的特权访问策略</span><span class="sxs-lookup"><span data-stu-id="de8c3-214">Delete a privileged access policy in Office 365</span></span>
+<span data-ttu-id="de8c3-215">如果您的组织不再需要某个特权访问策略, 则可以将其删除。</span><span class="sxs-lookup"><span data-stu-id="de8c3-215">You can delete a privileged access policy if it is no longer needed in your organization.</span></span>
 
-### <a name="using-the-microsoft-365-admin-center"></a><span data-ttu-id="ee453-216">使用 Microsoft 365 管理中心</span><span class="sxs-lookup"><span data-stu-id="ee453-216">Using the Microsoft 365 Admin Center</span></span>
+### <a name="using-the-microsoft-365-admin-center"></a><span data-ttu-id="de8c3-216">使用 Microsoft 365 管理中心</span><span class="sxs-lookup"><span data-stu-id="de8c3-216">Using the Microsoft 365 Admin Center</span></span>
 
-1. <span data-ttu-id="ee453-217">登录到[Microsoft 365 Admin Center](https://portal.office.com)使用您的组织中的管理帐户的凭据。</span><span class="sxs-lookup"><span data-stu-id="ee453-217">Sign into the [Microsoft 365 Admin Center](https://portal.office.com) using credentials for an admin account in your organization.</span></span>
+1. <span data-ttu-id="de8c3-217">使用组织中的管理员帐户的凭据登录[Microsoft 365 管理中心](https://portal.office.com)。</span><span class="sxs-lookup"><span data-stu-id="de8c3-217">Sign into the [Microsoft 365 Admin Center](https://portal.office.com) using credentials for an admin account in your organization.</span></span>
 
-2. <span data-ttu-id="ee453-218">在管理中心，转到**设置** > **安全性和隐私** > **访问权限**。</span><span class="sxs-lookup"><span data-stu-id="ee453-218">In the Admin Center, go to **Settings** > **Security & Privacy** > **Privileged access**.</span></span>
+2. <span data-ttu-id="de8c3-218">在管理中心中, 转到 "**设置** > **安全 & 隐私** > 权限**访问**"。</span><span class="sxs-lookup"><span data-stu-id="de8c3-218">In the Admin Center, go to **Settings** > **Security & Privacy** > **Privileged access**.</span></span>
 
-3. <span data-ttu-id="ee453-219">选择**管理访问策略和请求**。</span><span class="sxs-lookup"><span data-stu-id="ee453-219">Select **Manage access policies and requests**.</span></span>
+3. <span data-ttu-id="de8c3-219">选择 "**管理访问策略和请求**"。</span><span class="sxs-lookup"><span data-stu-id="de8c3-219">Select **Manage access policies and requests**.</span></span>
 
-4. <span data-ttu-id="ee453-220">选择**配置策略**。</span><span class="sxs-lookup"><span data-stu-id="ee453-220">Select **Configure policies**.</span></span>
+4. <span data-ttu-id="de8c3-220">选择 "**配置策略**"。</span><span class="sxs-lookup"><span data-stu-id="de8c3-220">Select **Configure policies**.</span></span>
 
-5. <span data-ttu-id="ee453-221">选择您想要删除的策略，然后选择**删除策略**。</span><span class="sxs-lookup"><span data-stu-id="ee453-221">Select the policy you want to delete, then select **Remove Policy**.</span></span>
+5. <span data-ttu-id="de8c3-221">选择要删除的策略, 然后选择 "**删除策略**"。</span><span class="sxs-lookup"><span data-stu-id="de8c3-221">Select the policy you want to delete, then select **Remove Policy**.</span></span>
 
-6. <span data-ttu-id="ee453-222">选择**关闭**。</span><span class="sxs-lookup"><span data-stu-id="ee453-222">Select **Close**.</span></span>
+6. <span data-ttu-id="de8c3-222">选择 "**关闭**"。</span><span class="sxs-lookup"><span data-stu-id="de8c3-222">Select **Close**.</span></span>
 
-### <a name="using-exchange-management-powershell"></a><span data-ttu-id="ee453-223">使用 Exchange Management PowerShell</span><span class="sxs-lookup"><span data-stu-id="ee453-223">Using Exchange Management PowerShell</span></span>
+### <a name="using-exchange-management-powershell"></a><span data-ttu-id="de8c3-223">使用 Exchange 管理 PowerShell</span><span class="sxs-lookup"><span data-stu-id="de8c3-223">Using Exchange Management PowerShell</span></span>
 
-<span data-ttu-id="ee453-224">运行以下命令在 Exchange Online Powershell，可以删除授权的访问策略：</span><span class="sxs-lookup"><span data-stu-id="ee453-224">Run the following command in Exchange Online Powershell to delete a privileged access policy:</span></span>
+<span data-ttu-id="de8c3-224">在 Exchange Online Powershell 中运行以下命令以删除特权访问策略:</span><span class="sxs-lookup"><span data-stu-id="de8c3-224">Run the following command in Exchange Online Powershell to delete a privileged access policy:</span></span>
 
 ```
 Remove-ElevatedAccessApprovalPolicy -Identity <identity GUID of the policy you want to delete>
 ```
 
-## <a name="disable-privileged-access-in-office-365"></a><span data-ttu-id="ee453-225">禁用 Office 365 中的特权的访问</span><span class="sxs-lookup"><span data-stu-id="ee453-225">Disable privileged access in Office 365</span></span>
+## <a name="disable-privileged-access-in-office-365"></a><span data-ttu-id="de8c3-225">禁用 Office 365 中的特权访问</span><span class="sxs-lookup"><span data-stu-id="de8c3-225">Disable privileged access in Office 365</span></span>
 
-<span data-ttu-id="ee453-p115">如果需要您可以为组织禁用特权的访问管理。禁用权限访问不会删除任何关联的审批策略或审批者组。</span><span class="sxs-lookup"><span data-stu-id="ee453-p115">If needed, you can disable privileged access management for your organization. Disabling privileged access does not delete any associated approval policies or approver groups.</span></span>
+<span data-ttu-id="de8c3-p115">如果需要, 您可以为您的组织禁用特权访问管理。禁用特权访问不会删除任何关联的审批策略或审批者组。</span><span class="sxs-lookup"><span data-stu-id="de8c3-p115">If needed, you can disable privileged access management for your organization. Disabling privileged access does not delete any associated approval policies or approver groups.</span></span>
 
-### <a name="using-the-microsoft-365-admin-center"></a><span data-ttu-id="ee453-228">使用 Microsoft 365 管理中心</span><span class="sxs-lookup"><span data-stu-id="ee453-228">Using the Microsoft 365 Admin Center</span></span>
+### <a name="using-the-microsoft-365-admin-center"></a><span data-ttu-id="de8c3-228">使用 Microsoft 365 管理中心</span><span class="sxs-lookup"><span data-stu-id="de8c3-228">Using the Microsoft 365 Admin Center</span></span>
 
-1. <span data-ttu-id="ee453-229">登录到[Microsoft 365 Admin Center](https://portal.office.com)使用您的组织中的管理帐户的凭据。</span><span class="sxs-lookup"><span data-stu-id="ee453-229">Sign into the [Microsoft 365 Admin Center](https://portal.office.com) using credentials for an admin account in your organization.</span></span>
+1. <span data-ttu-id="de8c3-229">使用组织中的管理员帐户的凭据登录[Microsoft 365 管理中心](https://portal.office.com)。</span><span class="sxs-lookup"><span data-stu-id="de8c3-229">Sign into the [Microsoft 365 Admin Center](https://portal.office.com) using credentials for an admin account in your organization.</span></span>
 
-2. <span data-ttu-id="ee453-230">在管理中心，转到**设置** > **安全性和隐私** > **访问权限**。</span><span class="sxs-lookup"><span data-stu-id="ee453-230">In the Admin Center, go to **Settings** > **Security & Privacy** > **Privileged access**.</span></span>
+2. <span data-ttu-id="de8c3-230">在管理中心中, 转到 "**设置** > **安全 & 隐私** > 权限**访问**"。</span><span class="sxs-lookup"><span data-stu-id="de8c3-230">In the Admin Center, go to **Settings** > **Security & Privacy** > **Privileged access**.</span></span>
 
-3. <span data-ttu-id="ee453-231">启用**需要批准的访问权限**控件。</span><span class="sxs-lookup"><span data-stu-id="ee453-231">Enable the **Require approvals for privileged access** control.</span></span>
+3. <span data-ttu-id="de8c3-231">启用 "**需要批准以进行特权访问**控制"。</span><span class="sxs-lookup"><span data-stu-id="de8c3-231">Enable the **Require approvals for privileged access** control.</span></span>
 
-### <a name="using-exchange-management-powershell"></a><span data-ttu-id="ee453-232">使用 Exchange Management PowerShell</span><span class="sxs-lookup"><span data-stu-id="ee453-232">Using Exchange Management PowerShell</span></span>
+### <a name="using-exchange-management-powershell"></a><span data-ttu-id="de8c3-232">使用 Exchange 管理 PowerShell</span><span class="sxs-lookup"><span data-stu-id="de8c3-232">Using Exchange Management PowerShell</span></span>
 
-<span data-ttu-id="ee453-233">运行以下命令在 Exchange Online Powershell，可以禁用授权访问权限：</span><span class="sxs-lookup"><span data-stu-id="ee453-233">Run the following command in Exchange Online Powershell to disable privileged access:</span></span>
+<span data-ttu-id="de8c3-233">在 Exchange Online Powershell 中运行以下命令, 以禁用特权访问:</span><span class="sxs-lookup"><span data-stu-id="de8c3-233">Run the following command in Exchange Online Powershell to disable privileged access:</span></span>
 
 ```
 Disable-ElevatedAccessControl
