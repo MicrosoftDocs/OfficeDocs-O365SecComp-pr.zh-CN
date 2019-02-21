@@ -1,9 +1,8 @@
 ---
-title: 使用邮件流规则配置 Exchange Online Protection 中筛选批量电子邮件
+title: 使用邮件流规则在 Exchange Online Protection 中配置批量电子邮件筛选
 ms.author: krowley
 author: kccross
 manager: laurawi
-ms.date: ''
 ms.audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
@@ -12,129 +11,120 @@ localization_priority: Normal
 search.appverid:
 - MET150
 ms.assetid: 2889c82e-fab0-4e85-87b0-b001b2ccd4f7
-description: 管理员可以了解如何使用 Exchange Online Protection 中的邮件流规则，以筛选批量电子邮件。
-ms.openlocfilehash: ce95872d3d80436dce4c62037caea9a5f735726d
-ms.sourcegitcommit: 7e2a0185cadea7f3a6afc5ddc445eac2e1ce22eb
+description: 管理员可以了解如何使用 Exchange Online Protection 中的邮件流规则进行批量电子邮件筛选。
+ms.openlocfilehash: d308439b5c26569f85eb62ddee6f01786d2998b9
+ms.sourcegitcommit: 32cb896aef370764ec6e8f8278ebaf16f1c5ff37
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/11/2019
-ms.locfileid: "27382803"
+ms.lasthandoff: 02/20/2019
+ms.locfileid: "30123913"
 ---
-# <a name="use-mail-flow-rules-to-configure-bulk-email-filtering-in-exchange-online-protection"></a>使用邮件流规则配置 Exchange Online Protection 中筛选批量电子邮件
+# <a name="use-mail-flow-rules-to-configure-bulk-email-filtering-in-exchange-online-protection"></a>使用邮件流规则在 Exchange Online Protection 中配置批量电子邮件筛选
 
-您可以使用默认的垃圾邮件内容筛选器策略针对垃圾邮件和批量电子设置公司范围的内容筛选器。请查看[配置垃圾邮件筛选器策略](configure-your-spam-filter-policies.md)和 [Set-HostedContentFilterPolicy](http://technet.microsoft.com/library/f597aa65-baa7-49d0-8832-2a300073f211.aspx) 以了解如何设置内容筛选器策略。 
+您可以使用默认的垃圾邮件内容筛选器策略针对垃圾邮件和批量电子设置公司范围的内容筛选器。请查看[配置垃圾邮件筛选器策略](configure-your-spam-filter-policies.md)和 [Set-HostedContentFilterPolicy](https://docs.microsoft.com/powershell/module/exchange/antispam-antimalware/Set-HostedContentFilterPolicy?view=exchange-ps) 以了解如何设置内容筛选器策略。 
   
-如果需要更多选项以筛选批量邮件，您可以创建邮件流规则 （也称作传输规则） 搜索的文本模式或批量电子邮件中常见的短语。包含这些特征任何邮件将被标记为垃圾邮件。使用这些规则可帮助减少您的组织接收的多余的垃圾电子邮件的量。
-  
-**注意**：
+如果您想要更多的选项筛选批量邮件, 则可以创建邮件流规则 (也称为传输规则), 以搜索批量电子邮件中经常找到的文本模式或短语。包含这些特征的任何邮件都将被标记为垃圾邮件。使用这些规则有助于减少组织收到的不需要的批量电子邮件的数量。
 
-- 创建邮件流规则记录本主题之前，我们建议您先阅读[垃圾邮件和批量邮件之间的区别是什么？](what-s-the-difference-between-junk-email-and-bulk-email.md)和[批量投诉级别值](bulk-complaint-level-values.md)。 
+> [!IMPORTANT]
+> 在创建已记录的邮件流规则之前, 我们建议您先阅读[垃圾邮件和批量电子邮件之间的区别](what-s-the-difference-between-junk-email-and-bulk-email.md)和[批量投诉级别值](bulk-complaint-level-values.md)之间的区别。<br>下面的步骤为您的整个组织将邮件标记为垃圾邮件。但是，您可以添加其他条件，以仅将这些规则应用于组织中的特定收件人。通过这种方式，主动批量电子邮件筛选设置可应用于具有高度针对性的一些用户，同时又不影响其余用户（主要接收其注册的批量电子邮件）。 
   
-- 下面的步骤为您的整个组织将邮件标记为垃圾邮件。但是，您可以添加其他条件，以仅将这些规则应用于组织中的特定收件人。通过这种方式，主动批量电子邮件筛选设置可应用于具有高度针对性的一些用户，同时又不影响其余用户（主要接收其注册的批量电子邮件）。 
-  
-### <a name="create-mail-flow-rule-to-filter-bulk-email-messages-based-on-text-patterns"></a>创建要筛选批量电子邮件根据文本模式的邮件流规则
+## <a name="create-a-mail-flow-rule-to-filter-bulk-email-messages-based-on-text-patterns"></a>创建邮件流规则, 以根据文本模式筛选批量电子邮件
 
-1. 在 Exchange 管理员中心 (EAC) 中，转到**邮件流** \> **规则**。
+1. 在 Exchange 管理中心 (EAC) 中, 转到 "**邮件流** \> **规则**"。
     
-2. 单击**添加**![添加图标](media/ITPro-EAC-AddIcon.gif)，然后选择**创建新规则**。
+2. 单击 "**添加** !["](media/ITPro-EAC-AddIcon.gif) "添加" 图标, 然后选择 "**创建新规则**"。
     
 3. 指定规则名称。
     
-4. 单击**更多选项**。在**以下情况应用此规则**，请选择**主题或正文** \> **主题或正文匹配这些文本模式**。
+4. 单击 "**更多选项**"。在 "**应用此规则**" 下, 选择 **"主题" 或 "正文** \> "**主题或正文与这些文本模式相匹配**。
     
-5. 在**指定词语或短语**对话框中，添加以下正则表达式通常在批量电子邮件，一次一台中找到和完成后单击**确定**: 
+5. 在 "**指定词语或短语**" 对话框中, 添加以下通常在批量电子邮件中找到的正则表达式 (一次一个), 然后在完成后单击 **"确定"** : 
     
-   - 如果您将无法查看此电子邮件的内容\,请
+   - `If you are unable to view the content of this email\, please`
     
-   - \\>(安全 )?取消订阅( 此处)?\\</a\\>
+   - `\>(safe )?unsubscribe( here)?\</a\>`
     
-   - 如果您不希望接收类似进一步 communications\,请
+   - `If you do not wish to receive further communications like this\, please`
     
-   - \\<img height\="?1"? width\="?1"? src\=.?http\://
+   - `\<img height\="?1"? width\="?1"? sr\c=.?http\://`
     
-   - 若要停止接收 这些\s+电子邮件\:http\://
+   - `To stop receiving these+emails\:http\://`
     
-   - 若要取消订阅 \w+ (e\-?信件|e?-?邮件|新闻稿)
+   - `To unsubscribe from \w+ (e\-?letter|e?-?mail|newsletter)`
     
-   - 不再 (愿望 )?(以 )?(发送|接收) \w+ 电子邮件
+   - `no longer (wish )?(to )?(be sent|receive) w+ email`
     
-   - 如果您将无法查看此电子邮件的内容\,，请单击此处
+   - `If you are unable to view the content of this email\, please click here`
     
-   - 若要确保收到 (您每日 deals | 我们 e ?mails)\,添加
+   - `To ensure you receive (your daily deals|our e-?mails)\, add`
     
-   - 如果您不希望再接收这些电子邮件
+   - `If you no longer wish to receive these emails`
     
-   - 若要更改您的 (订阅首选项|首选项或取消订阅)
+   - `to change your (subscription preferences|preferences or unsubscribe)`
     
-   - 单击 (此处可|该) 取消订阅
+   - `click (here to|the) unsubscribe`
     
-   **注意**：
-
-   - 在以上列表不是详尽组批量电子邮件; 中找到的正则表达式可以添加或删除根据需要的详细信息。但是，它是很好的起点。
+   上述列表不是批量电子邮件中找到的一组详尽的正则表达式;可以根据需要添加或删除更多内容。但是, 它是一个很棒的起点。<br>在邮件从用于在 ASCII 文本中的 SMTP 服务器之间传输二进制邮件的 MIME 内容传输编码方法解码*之后*, 将在邮件中的主题或其他标头字段中搜索单词或文本模式。不能使用条件或例外来搜索邮件中的主题或其他标头字段的原始 (通常为 Base64) 编码值。 
     
-   - 搜索单词或主题中的文本模式或消息中的其他标头字段发生从编码方法用来将二进制邮件 ASCII 文本中的 SMTP 服务器之间传输的 MIME 内容传输解码*后*邮件。不能使用条件或例外的原始搜索 (通常是 Base64) 编码的主题或消息中的其他标头字段的值。 
+6. 在 "**执行以下操作**" 下, 选择 "**修改邮件属性** \> **" "设置垃圾邮件可信度 (SCL)"**。
     
-6. 在**执行以下操作**，下选择**修改邮件属性** \> **将垃圾邮件可信度 (SCL) 设置**。
+7. 在 "**指定 scl** " 对话框中, 将 SCL 设置为 " **5**"、" **6**" 或 " **9**", 然后单击 **"确定"**。
     
-7. 在**指定 SCL**对话框中，将 SCL 设置为**5**、 **6**或**9**，并单击**确定**。
+   将 scl 设置为5或6将接受**垃圾邮件**操作, 而将 scl 设置为9会采用内容筛选器策略中配置的**高可信度垃圾邮件**操作。该服务将执行内容筛选器策略中的操作集。默认操作是将邮件传递到收件人的 "垃圾邮件" 文件夹, 但可以按照[配置垃圾邮件筛选器策略](configure-your-spam-filter-policies.md)中的说明配置不同的操作。
     
-   将 SCL 设置为 5 或 6 只**垃圾邮件**操作，同时设置到 9 的 SCL**高可信度垃圾邮件**操作，如内容筛选器策略中配置。服务将执行的操作中的内容筛选器策略设置。默认操作是将邮件传递到收件人的垃圾邮件文件夹，但可以配置不同的操作，如[配置垃圾邮件筛选器策略](configure-your-spam-filter-policies.md)中所述。
-    
-   > [!NOTE]
-   > 为邮件流规则匹配项，并将不可用最终用户垃圾邮件隔离邮箱中或通过最终用户，邮件如果您配置的操作是隔离邮件，而不是将其发送给收件人的垃圾邮件文件夹，发送到管理员隔离垃圾邮件通知。 
+   如果配置的操作是隔离邮件, 而不是将其发送到收件人的 "垃圾邮件" 文件夹, 则邮件将作为邮件流规则的匹配项发送到管理员隔离区, 并且不会在最终用户垃圾邮件隔离中或通过最终用户使用垃圾邮件通知。 
   
    有关服务中 SCL 值的详细信息，请参阅[垃圾邮件可信度](spam-confidence-levels.md)。
     
 8. 保存规则。
     
-### <a name="create-a-mail-flow-rule-to-filter-bulk-email-messages-based-on-phrases"></a>创建筛选批量电子邮件根据短语的邮件流规则
+## <a name="create-a-mail-flow-rule-to-filter-bulk-email-messages-based-on-phrases"></a>创建邮件流规则以根据短语筛选批量电子邮件
 
-1. 在 EAC 中，转到**邮件流** \> **规则**。
+1. 在 EAC 中, 转到 "**邮件流** \> **规则**"。
     
-2. 单击**添加**![添加图标](media/ITPro-EAC-AddIcon.gif)，然后选择**创建新规则**。
+2. 单击 "**添加** !["](media/ITPro-EAC-AddIcon.gif) "添加" 图标, 然后选择 "**创建新规则**"。
     
 3. 指定规则名称。
     
-4. 单击**更多选项**。在**以下情况应用此规则**，请选择**主题或正文** \> **主题或正文中包含以下任何词语**。
+4. 单击 "**更多选项**"。在 "在**以下情况应用此规则**" 下, 选择 **"主题" 或 "正文** \> "**主题或正文包含以下任何词语**。
     
-5. 在**指定词语或短语**对话框中，添加以下短语通常在批量电子邮件，一次一台中找到和完成后单击**确定**: 
+5. 在 "**指定词语或短语**" 对话框中, 添加以下在批量电子邮件中常用的短语, 一次添加一个, 然后在完成后单击 **"确定"** : 
     
-   - 更改首选项或取消订阅
+   - `to change your preferences or unsubscribe`
     
-   - 修改电子邮件首选项或取消订阅
+   - `Modify email preferences or unsubscribe`
     
-   - 这是一封促销电子邮件
+   - `This is a promotional email`
     
-   - 由于您申请了订阅，因此向您发送此电子邮件
+   - `You are receiving this email because you requested a subscription`
     
-   - 单击此处可取消订阅
+   - `click here to unsubscribe`
     
-   - 由于您进行了订阅，因此向您发送了此电子邮件
+   - `You have received this email because you are subscribed`
     
-   - 如果您不再希望收到我们的电子邮件新闻稿
+   - `If you no longer wish to receive our email newsletter`
     
-   - 取消订阅此新闻稿
+   - `to unsubscribe from this newsletter`
     
-   - 如果您在查看此电子邮件时遇到问题
+   - `If you have trouble viewing this email`
     
-   - 这是一个广告
+   - `This is an advertisement`
     
-   - 您想取消订阅或更改
+   - `you would like to unsubscribe or change your`
     
-   - 以网页形式查看此电子邮件
+   - `view this email as a webpage`
     
-   - 由于您进行了订阅，因此向您发送此电子邮件
+   - `You are receiving this email because you are subscribed`
     
-   **注意**： 同样，此列表不是详尽套批量电子邮件; 中找到的短语可以添加或删除根据需要的详细信息。但是，它是很好的起点。
+   此列表不是批量电子邮件中找到的一组详尽的短语。可以根据需要添加或删除更多内容。但是, 它是一个很棒的起点。
     
-6. 在**执行以下操作**，下选择**修改邮件属性** \> **将垃圾邮件可信度 (SCL) 设置**。
+6. 在 "**执行以下操作**" 下, 选择 "**修改邮件属性** \> **" "设置垃圾邮件可信度 (SCL)"**。
     
-7. 在**指定 SCL**对话框中，将 SCL 设置为**5**、 **6**或**9**，并单击**确定**。
+7. 在 "**指定 scl** " 对话框中, 将 SCL 设置为 " **5**"、" **6**" 或 " **9**", 然后单击 **"确定"**。
     
-   将 SCL 设置为 5 或 6 只**垃圾邮件**操作，同时设置到 9 的 SCL**高可信度垃圾邮件**操作，如内容筛选器策略中配置。服务将执行的操作中的内容筛选器策略设置。默认操作是将邮件传递到收件人的垃圾邮件文件夹，但可以配置不同的操作，如[配置垃圾邮件筛选器策略](configure-your-spam-filter-policies.md)中所述。
+   将 scl 设置为5或6将接受**垃圾邮件**操作, 而将 scl 设置为9会采用内容筛选器策略中配置的**高可信度垃圾邮件**操作。该服务将执行内容筛选器策略中的操作集。默认操作是将邮件传递到收件人的 "垃圾邮件" 文件夹, 但可以按照[配置垃圾邮件筛选器策略](configure-your-spam-filter-policies.md)中的说明配置不同的操作。
     
-   > [!NOTE]
-   > 为邮件流规则匹配项，并将不可用最终用户垃圾邮件隔离邮箱中或通过最终用户，邮件如果您配置的操作是隔离邮件，而不是将其发送给收件人的垃圾邮件文件夹，发送到管理员隔离垃圾邮件通知。 
+   如果配置的操作是隔离邮件, 而不是将其发送到收件人的 "垃圾邮件" 文件夹, 则邮件将作为邮件流规则的匹配项发送到管理员隔离区, 并且不会在最终用户垃圾邮件隔离中或通过最终用户使用垃圾邮件通知。 
   
    有关服务中 SCL 值的详细信息，请参阅[垃圾邮件可信度](spam-confidence-levels.md)。
 
