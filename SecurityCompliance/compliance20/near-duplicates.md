@@ -6,7 +6,7 @@ manager: laurawi
 ms.date: ''
 ms.audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: ''
 search.appverid:
@@ -14,17 +14,17 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: a3f5945ee4ba0a1bc78ab6c8ccc9af934d392232
-ms.sourcegitcommit: ee28ee2b2bdfd049333c2f495d7f7780d13af4a6
+ms.openlocfilehash: 40270fa1e3a6f7cdf0dd2a83650aa36a935d9a6d
+ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "29607438"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "30213122"
 ---
-# <a name="near-duplicate-detection"></a><span data-ttu-id="adb20-102">近似重复检测</span><span class="sxs-lookup"><span data-stu-id="adb20-102">Near duplicate detection</span></span>
+# <a name="near-duplicate-detection"></a><span data-ttu-id="446c7-102">近似重复检测</span><span class="sxs-lookup"><span data-stu-id="446c7-102">Near duplicate detection</span></span>
 
-<span data-ttu-id="adb20-p101">请考虑一组文档审阅基于相同的模板和具有主要相同样本的语言，具有此处和存在一些差异子集。如果审阅者无法确定此子集、 全面，查看其中之一和查看 rest 的差异，它们将不错过任何唯一信息时，使只有一小部分时间可能需要花费以便读取封面到封面的所有文档。Near 重复检测组合在一起可帮助您让您查看过程更加高效的文本上类似文档。</span><span class="sxs-lookup"><span data-stu-id="adb20-p101">Consider a set of documents to be reviewed in which a subset is based on the same template and has mostly the same boilerplate language, with a few differences here and there. If a reviewer could identify this subset, review one of them thoroughly, and review the differences for the rest, they would not have missed any unique information while taking only a fraction of time that would have taken them to read all documents cover to cover. Near duplicate detection groups textually similar documents together to help you make your review process more efficient.</span></span>
+<span data-ttu-id="446c7-p101">考虑要审阅的一组文档, 其中子集基于同一个模板, 大多数采用相同的样本语言, 但此处和此处有一些差异。如果某个审阅者可以识别此子集, 请仔细查看其中一项, 并查看 rest 的不同之处, 他们不会错过任何独特的信息, 而只需要花费一小时间来阅读所有文档封面。临近的重复检测将多个类似的文档组合在一起, 以帮助您更有效地查看您的审阅过程。</span><span class="sxs-lookup"><span data-stu-id="446c7-p101">Consider a set of documents to be reviewed in which a subset is based on the same template and has mostly the same boilerplate language, with a few differences here and there. If a reviewer could identify this subset, review one of them thoroughly, and review the differences for the rest, they would not have missed any unique information while taking only a fraction of time that would have taken them to read all documents cover to cover. Near duplicate detection groups textually similar documents together to help you make your review process more efficient.</span></span>
 
-## <a name="how-does-it-work"></a><span data-ttu-id="adb20-106">它是如何运行的？</span><span class="sxs-lookup"><span data-stu-id="adb20-106">How does it work?</span></span>
+## <a name="how-does-it-work"></a><span data-ttu-id="446c7-106">它是如何运行的？</span><span class="sxs-lookup"><span data-stu-id="446c7-106">How does it work?</span></span>
 
-<span data-ttu-id="adb20-p102">重复检测附近运行时，系统将分析与文本的每个文档。然后，它将每个针对其他以确定其相似性是否大于设置阈值的文档进行比较。如果是，文档组合在一起。一旦已比较所有文档和分组，每个组中的一个文档标记为"数据透视表";中查看文档，您可以先查看数据透视表，并查看中近乎重复组相同的其他文档将重点放在数据透视表中查看的文档之间的差异。</span><span class="sxs-lookup"><span data-stu-id="adb20-p102">When near duplicate detection is run, the system parses every document with text. Then, it compares every document against each other to determine whether their similarity is greater than the set threshold. If it is, the documents are grouped together. Once all documents have been compared and grouped, a document from each group is marked as the "pivot"; in reviewing your documents, you can review a pivot first and review the other documents in the same near duplicate set, focusing on the difference between the pivot and the document that is in review.</span></span>
+<span data-ttu-id="446c7-p102">在接近重复检测运行时, 系统会使用文本分析每个文档。然后, 它将每个文档进行比较, 以确定它们的相似性是否大于设定的阈值。如果是, 则将文档组合在一起。对所有文档进行了比较和分组后, 每个组中的一个文档将标记为 "pivot";在审阅文档中, 可以先查看数据透视, 并查看相同临近重复集的其他文档, 重点介绍正在审阅的数据透视和文档之间的差异。</span><span class="sxs-lookup"><span data-stu-id="446c7-p102">When near duplicate detection is run, the system parses every document with text. Then, it compares every document against each other to determine whether their similarity is greater than the set threshold. If it is, the documents are grouped together. Once all documents have been compared and grouped, a document from each group is marked as the "pivot"; in reviewing your documents, you can review a pivot first and review the other documents in the same near duplicate set, focusing on the difference between the pivot and the document that is in review.</span></span>
