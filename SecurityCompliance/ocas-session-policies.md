@@ -1,5 +1,5 @@
 ---
-title: Office 365 中的会话策略云应用安全
+title: Office 365 云应用安全中的会话策略
 ms.author: deniseb
 author: denisebmsft
 manager: laurawi
@@ -7,17 +7,17 @@ ms.reviewer: alesibov
 ms.audience: Admin
 ms.topic: reference
 ms.date: 02/14/2019
-ms.service: o365-administration
+ms.service: O365-seccomp
 localization_priority: Normal
 description: office 365 云应用安全会话策略启用实时会话级别监控, affording 您可以精细查看 Office 365 应用程序, 以及根据您为用户会话设置的策略执行不同操作的能力。通过会话控制, 您可以在监视会话和/或限制特定会话活动时使用条件访问应用程序控件的反向代理功能, 而无需完全允许或阻止访问。
-ms.openlocfilehash: 0dbfb3e5827fb76e52f0262333d372860f0cb58a
-ms.sourcegitcommit: 8679937354c1d8870ecd41519a59d2d7468c23c4
+ms.openlocfilehash: a57b62073e93c95217a829f8aa381f4a585dacc5
+ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "30103337"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "30218602"
 ---
-# <a name="session-policies-in-office-365-cloud-app-security"></a>Office 365 中的会话策略云应用安全
+# <a name="session-policies-in-office-365-cloud-app-security"></a>Office 365 云应用安全中的会话策略
 
 |评估 * *\>**|规划 * *\>**|部署 * *\>**|利用率 * * * *|
 |:-----|:-----|:-----|:-----|

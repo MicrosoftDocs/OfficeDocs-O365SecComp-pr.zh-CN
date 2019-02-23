@@ -6,131 +6,131 @@ manager: laurawi
 ms.date: 12/15/2017
 ms.audience: ITPro
 ms.topic: article
-ms.service: o365-solutions
+ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid:
 - MET150
 ms.collection: Ent_O365
 ms.custom: Ent_Solutions
 ms.assetid: 775a4e9e-3135-4a48-b32f-bbdd9f2bd0aa
-description: 摘要： 通过独立的 SharePoint Online 团队网站的设计过程的步骤。
-ms.openlocfilehash: bd36044eb16b9f6ee3ee9bbb444fe8f4efe2fd63
-ms.sourcegitcommit: e0f016aca7befc8806233a492ee916cbe646094f
+description: '摘要: 逐步完成独立的 SharePoint Online 团队网站的设计过程。'
+ms.openlocfilehash: 09748fcc22a4a48efc4346ff75a225db612a0ef4
+ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/27/2018
-ms.locfileid: "25345804"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "30216152"
 ---
 # <a name="design-an-isolated-sharepoint-online-team-site"></a>设计独立 SharePoint Online 团队网站
 
- **摘要：** 通过独立的 SharePoint Online 团队网站的设计过程的步骤。
+ **摘要:** 逐步完成独立的 SharePoint Online 团队网站的设计过程。
   
-本文指导您创建独立的 SharePoint Online 团队网站之前必须做出的关键设计决策。
+本文将指导您完成在创建独立的 SharePoint Online 团队网站之前必须做出的关键设计决策。
   
-## <a name="phase-1-determine-your-sharepoint-groups-and-permission-levels"></a>阶段 1： 确定您的 SharePoint 组和权限级别
+## <a name="phase-1-determine-your-sharepoint-groups-and-permission-levels"></a>第1阶段: 确定您的 SharePoint 组和权限级别
 
-默认情况下每个 SharePoint Online 团队网站创建的以下 SharePoint 组：
+默认情况下, 每个 sharepoint Online 团队网站都使用以下 SharePoint 组创建:
   
-- \<网站名称 > 成员
+- \<网站 name> 成员
     
-- \<网站名称 > 访问者
+- \<网站 name> 访问者
     
-- \<网站名称 > 所有者
+- \<网站 name> 所有者
     
-这些组是独立于 Office 365 和 Azure Active Directory (AD) 的组，分配的资源的网站的权限的基础。
+这些组与 Office 365 和 Azure Active Directory (AD) 组是分开的, 并且是为网站资源分配权限的基础。
   
-确定网站中 SharePoint 组的成员可以执行哪些操作的特定权限集是一个权限级别。默认情况下，SharePoint Online 团队网站有三个权限级别： 编辑、 读取和完全控制。下表显示默认相关的 SharePoint 组和分配的权限级别：
+确定 SharePoint 组成员在网站中可执行的操作的特定权限集是权限级别。默认情况下, SharePoint Online 团队网站具有三个权限级别: "编辑"、"读取" 和 "完全控制"。下表显示了 SharePoint 组和分配的权限级别的默认关联:
   
 |**SharePoint 组**|**权限级别**|
 |:-----|:-----|
-|\<网站名称 > 成员  <br/> |编辑  <br/> |
-|\<网站名称 > 访问者  <br/> |读取  <br/> |
-|\<网站名称 > 所有者  <br/> |完全控制  <br/> |
+|\<网站 name> 成员  <br/> |编辑  <br/> |
+|\<网站 name> 访问者  <br/> |读取  <br/> |
+|\<网站 name> 所有者  <br/> |完全控制  <br/> |
    
- **最佳实践：** 您可以创建附加 SharePoint 组和权限级别。但是，我们建议您独立的 SharePoint Online 网站使用的默认 SharePoint 组和权限级别。
+ **最佳实践:** 您可以创建其他 SharePoint 组和权限级别。但是, 我们建议使用独立 sharepoint Online 网站的默认 SharePoint 组和权限级别。
   
-以下是默认 SharePoint 组和权限级别。
+下面是默认的 SharePoint 组和权限级别。
   
 ![SharePoint Online 网站的默认 SharePoint 组和权限级别。](media/3f892ab4-6479-42f0-a505-1ba0ef94b9c6.png)
   
-## <a name="phase-2-assign-permissions-to-users-with-access-groups"></a>第 2 阶段： 向用户与访问组分配权限
+## <a name="phase-2-assign-permissions-to-users-with-access-groups"></a>第2阶段: 将权限分配给具有访问组的用户
 
-您可以通过添加用户帐户或 Office 365 或 Azure AD 组的用户帐户是 SharePoint 组的成员，向用户分配权限。添加完毕后，Office 365 用户帐户，或者直接或间接通过 Office 365 或 Azure AD 的组的成员，分配与该 SharePoint 组关联的权限级别。
+您可以通过将用户帐户或用户帐户所属的 Office 365 或 Azure AD 组添加到 SharePoint 组, 向用户分配权限。添加后, 通过 office 365 或 Azure AD 组中的成员身份直接或间接分配的 office 365 用户帐户将被分配与 SharePoint 组相关联的权限级别。
   
-使用默认 SharePoint 组作为示例：
+使用默认 SharePoint 组作为示例:
   
-- 成员的**\<网站名称 > 成员**SharePoint 组，其中可以包括用户帐户和组，已分配的**编辑**权限级别
+- " ** \<网站 name> 成员**" SharePoint 组 (可包含用户帐户和组) 的成员被分配到 "**编辑**" 权限级别
     
-- 成员的**\<网站名称 > 访问者**SharePoint 组，其中可以包括用户帐户和组，已分配**读取**权限级别
+- " ** \<网站 name> 访问者**" SharePoint 组的成员 (可包含用户帐户和组) 被分配有 "**读取**" 权限级别
     
-- 成员的**\<网站名称 > 所有者**SharePoint 组，其中可以包括用户帐户和组，已分配**完全控制**权限级别
+- 网站 name> 所有者的成员 SharePoint 组 (可包含用户帐户和组) 被分配了 "**完全控制**" 权限级别** \<**
     
- **最佳实践：** 尽管您可以管理通过单个用户帐户的权限，但我们建议您使用一个 Azure AD 组，而是称为访问组中。这简化了通过在访问组的成员身份的权限管理，而不是每个 SharePoint 组的管理列表的用户帐户。
+ **最佳实践:** 虽然您可以通过单个用户帐户管理权限, 但我们建议您改用一个 Azure AD 组 (称为 "访问组")。这简化了通过访问组中的成员资格管理权限, 而不是管理每个 SharePoint 组的用户帐户列表。
   
-Office 365 的 azure AD 组是不同于 Office 365 组。Azure AD 组出现在其**类型**设置为**安全**Office 管理中心，且没有电子邮件地址。可以在管理 azure AD 组：
+office 365 的 Azure AD 组与 office 365 组不同。Azure AD 组显示在 Office 管理中心中, 其**类型**设置为 "**安全性**", 并且没有电子邮件地址。可以在以下范围内管理 Azure AD 组:
   
 - Windows Server Active Directory (AD)
     
-    这是已在您的本地 Windows Server AD 基础结构中创建并同步到 Office 365 订阅的组。在 Office 管理中心，这些组具有**与 active directory Synched****状态**。
+    这些组是在本地 Windows Server AD 基础结构中创建并同步到 Office 365 订阅的组。在 Office 管理中心中, 这些组的**状态**为 "已**与 active directory 同步**"。
     
 - Office 365
     
-    这些是使用 Office 管理中心、 Azure 门户或 PowerShell 的 Microsoft 已创建的组。在 Office 管理中心，这些组具有**云****状态**。
+    这些组是使用 Office 管理中心、Azure 门户或 Microsoft PowerShell 创建的组。在 Office 管理中心中, 这些组的**状态**为**云**。
     
- **最佳实践：** 如果您是使用 Windows Server AD 内部部署，并将与您的 Office 365 订阅同步，则执行您的用户和组管理与 Windows Server AD。
+ **最佳实践:** 如果使用的是本地 Windows server AD 并与 Office 365 订阅同步, 请使用 Windows Server ad 执行用户和组管理。
   
-对于独立 SharePoint Online 团队网站，建议的组结构如下所示：
+对于独立的 SharePoint Online 团队网站, 建议的组结构如下所示:
   
-|**SharePoint 组**|**Azure 基于 AD 的访问组**|**权限级别**|
+|**SharePoint 组**|**基于 Azure AD 的访问组**|**权限级别**|
 |:-----|:-----|:-----|
-|\<网站名称 > 成员  <br/> |\<网站名称 > 成员  <br/> |编辑  <br/> |
-|\<网站名称 > 访问者  <br/> |\<网站名称 > 查看器  <br/> |读取  <br/> |
-|\<网站名称 > 所有者  <br/> |\<网站名称 > 管理员  <br/> |完全控制  <br/> |
+|\<网站 name> 成员  <br/> |\<网站 name> 成员  <br/> |编辑  <br/> |
+|\<网站 name> 访问者  <br/> |\<网站 name> 查看者  <br/> |读取  <br/> |
+|\<网站 name> 所有者  <br/> |\<网站 name> 管理员  <br/> |完全控制  <br/> |
    
- **最佳实践：** 为 SharePoint 组的成员，您可以使用 Office 365 或 Azure AD 的组，虽然我们建议您使用 Azure AD 组。Azure AD 组，托管通过 Windows Server AD 或 Office 365 中，为您提供了更灵活地使用嵌套的组分配权限。
+ **最佳实践:** 虽然您可以使用 Office 365 或 Azure AD 组作为 SharePoint 组的成员, 但我们建议使用 Azure ad 组。Azure AD 组通过 Windows Server AD 或 Office 365 进行管理, 使您可以更灵活地使用嵌套组来分配权限。
   
-以下是默认 SharePoint 组配置为使用 Azure 基于 AD 的访问组。
+下面是配置为使用基于 Azure AD 的访问组的默认 SharePoint 组。
   
 ![将访问组用作默认 SharePoint Online 网站用户组的成员。](media/50a76328-ae69-483e-9029-ac4e7357b5ef.png)
   
-在设计时的三个访问组，请牢记以下事项：
+在设计三个访问组时, 请记住以下几点:
   
-- 应只有少数成员在**\<网站名称 > Admins**访问组中，对应于正在管理工作组网站的 SharePoint Online 管理员一个小数字。
+- site name> Admins access 组中应该只有少数成员, 这些成员对应于管理团队网站的少数 SharePoint Online 管理员。 ** \<**
     
-- 大多数网站成员处于**\<网站名称 > 成员**或**\<网站名称 > 查看**访问组。因为网站中的成员**\<网站名称 > 成员**访问组能够删除或修改站点中的资源，请仔细考虑其成员资格。当有疑问时，将添加到的网站成员**\<网站名称 > 查看**访问组。
+- 大多数网站成员都位于** \<网站 name> 成员**或** \<网站 name> 查看**器访问组中。由于** \<site name> members** access 组中的网站成员能够删除或修改网站中的资源, 因此请仔细考虑其成员资格。如果不确定, 请将网站成员添加到** \<网站 name> 查看者**访问组。
     
-下面是 SharePoint 组和名为 ProjectX 隔离网站的访问组的示例。
+下面的示例展示了名为 ProjectX 的独立网站的 SharePoint 组和访问组。
   
 ![对名为 ProjectX 的 SharePoint Online 网站使用访问组的示例。](media/13afe542-9ffd-4671-9f48-210a0e2a502a.png)
   
-## <a name="phase-3-use-nested-azure-ad-groups"></a>第 3 阶段： 使用嵌套 Azure AD 组
+## <a name="phase-3-use-nested-azure-ad-groups"></a>第3阶段: 使用嵌套的 Azure AD 组
 
-对于项目局限于少量的人员，Azure 基于 AD 的访问组添加到网站的 SharePoint 组中的一个级别将适合大多数的方案。但是，如果您有大量的人以及这些人已成员建立 Azure AD 组，您可以更轻松地分配 SharePoint 权限的方法使用嵌套的组或包含其他组作为成员的组。
+对于限制为少数用户的项目, 向网站的 SharePoint 组添加的基于 Azure AD 的访问组的单个级别将适合大多数场景。但是, 如果您的人员数量很多, 并且这些人已经是已建立的 Azure AD 组的成员, 则可以通过使用嵌套组或包含其他组作为成员的组来更轻松地分配 SharePoint 权限。
   
-例如，您想要创建销售、 市场营销、 工程、 法律管理人员之间的协作独立的 SharePoint online 团队网站和支持部门和这些部门已自己使用 executive 的用户帐户的组成员资格。而不是为新的网站成员创建新组并将所有的单个 executive 的用户帐户放置在它，将为每个部门的现有 executive 组置于新组。
+例如, 您想要创建独立的 SharePoint online 团队网站, 以便在销售、市场营销、工程、法律和支持部门的执行官之间进行协作, 这些部门已经有了拥有行政用户帐户的自己的组所属.而不是为新网站成员创建一个新组, 并在其中放置所有单个执行人员的用户帐户, 为新组中的每个部门放置现有管理组。
   
- 如果您正在共享多个组织之间的 Office 365 订阅，用于组织的隔离网站用户组成员身份的单级可能成为由于的大量用户帐户管理变得比较困难。在这种情况下，您可以使用嵌套每个组织的 Azure AD 组，包含其组织中要管理的权限的组。
+ 如果您在多个组织之间共享 Office 365 订阅, 则组织的独立网站的单个级别的组成员身份可能因用户帐户数量的巨大而受到很大的管理。在这种情况下, 您可以对包含组织内的组的每个组织使用嵌套的 Azure AD 组来管理权限。
   
-使用嵌套 Azure AD 组：
+要使用嵌套的 Azure AD 组, 请执行以下操作:
   
-1. 识别或创建将包含用户帐户，并将相应的用户帐户添加为成员的 Azure AD 组。
+1. 标识或创建将包含用户帐户的 Azure AD 组, 并将相应的用户帐户添加为成员。
     
-2. 创建将包含其他 Azure AD 组并将这些组添加为成员的容器 Azure 基于 AD 的访问组。
+2. 创建将包含其他 azure ad 组的基于 Azure ad 的容器访问组, 并将这些组添加为成员。
     
-3.  为相应的容器的访问组的访问级别，标识 SharePoint 组和相应的权限级别。
+3.  若要获取容器访问组的适当级别的访问权限, 请标识 SharePoint 组和相应的权限级别。
     
 > [!NOTE]
-> 不能使用嵌套的 Office 365 组。 
+> 您不能使用嵌套的 Office 365 组。 
   
-下面是嵌套的 Azure AD 的示例组 ProjectX 成员访问组。
+下面是 ProjectX 成员访问组的嵌套 Azure AD 组的示例。
   
 ![对 ProjectX 网站的成员访问组使用嵌套访问组的示例。](media/2abca710-bf9e-4ce8-9bcd-a8e128264fb1.png)
   
-由于中的所有用户帐户信息检索、 工程和 Project leads 团队旨在是网站成员，很方便地将其 Azure AD 组添加到 ProjectX 成员访问组。
+由于研究、工程和项目领导团队中的所有用户帐户都打算成为网站成员, 因此将其 Azure AD 组添加到 ProjectX 成员访问组中会更加简单。
   
 ## <a name="next-step"></a>后续步骤
 
-当您准备创建和配置生产环境中的一个独立的网站时，请参阅[部署独立的 SharePoint Online 团队网站](deploy-an-isolated-sharepoint-online-team-site.md)。
+当您准备好在生产中创建和配置独立网站时, 请参阅[部署独立的 SharePoint Online 团队网站](deploy-an-isolated-sharepoint-online-team-site.md)。
   
 ## <a name="see-also"></a>另请参阅
 
@@ -138,7 +138,7 @@ Office 365 的 azure AD 组是不同于 Office 365 组。Azure AD 组出现在�
   
 [管理独立 SharePoint Online 团队网站](manage-an-isolated-sharepoint-online-team-site.md)
 
-[部署单独的 SharePoint Online 团队网站](deploy-an-isolated-sharepoint-online-team-site.md)
+[部署独立 SharePoint Online 团队网站](deploy-an-isolated-sharepoint-online-team-site.md)
 
 
 

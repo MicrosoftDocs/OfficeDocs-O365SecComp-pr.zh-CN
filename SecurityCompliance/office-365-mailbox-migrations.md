@@ -6,7 +6,7 @@ manager: laurawi
 ms.date: 8/21/2018
 audience: ITPro
 ms.topic: article
-ms.service: Office 365 Administration
+ms.service: O365-seccomp
 localization_priority: None
 search.appverid:
 - MET150
@@ -14,12 +14,12 @@ ms.collection:
 - Strat_O365_IP
 - M365-security-compliance
 description: 用于 Office 365 邮箱迁移的 cmdlet 的简短摘要。
-ms.openlocfilehash: 195497d94ab434c66a176e37fb84f6cd1da48baa
-ms.sourcegitcommit: c94cb88a9ce5bcc2d3c558f0fcc648519cc264a2
+ms.openlocfilehash: 8e0f23a3efbbcf6f84364c09e667678972120e18
+ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/20/2019
-ms.locfileid: "30090774"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "30219142"
 ---
 # <a name="office-365-mailbox-migrations"></a>Office 365 邮箱迁移
 通过基于 Exchange 的混合部署, 客户可以选择将本地 Exchange 邮箱移动到[exchange online](https://docs.microsoft.com/Exchange/exchange-online)组织, 或将 exchange Online 邮箱移动到[exchange 内部部署](https://docs.microsoft.com/Exchange/exchange-server)组织。在内部部署组织和 Exchange Online 组织之间移动邮箱时使用迁移批处理。客户可以使用以下 cmdlet 查看有关邮箱迁移的统计信息和其他信息:

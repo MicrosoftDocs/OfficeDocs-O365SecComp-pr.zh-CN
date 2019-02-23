@@ -9,21 +9,21 @@ search.appverid: MET150
 ms.topic: reference
 f1_keywords:
 - ms.o365.cc.UnifiedDLPRuleContainsSensitiveInformation
-ms.service: o365-administration
+ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: Strat_O365_IP
 ms.assetid: fd505979-76be-4d9f-b459-abef3fc9e86b
-description: Office 365 安全性的数据丢失防护 (DLP)&amp;合规性中心包括可供您可以使用 DLP 策略中的 80 敏感信息类型。本主题列出了所有这些敏感信息类型，并显示 DLP 策略时检测到每种类型的寻找。
-ms.openlocfilehash: 4b083f80e02c80053b63ee897b2515a4505c16d9
-ms.sourcegitcommit: 8c5a88433cff23c59b436260808cf3d91b06fdef
+description: Office 365 安全&amp;合规中心中的数据丢失防护 (DLP) 包括可供您在 DLP 策略中使用的80敏感信息类型。本主题列出了所有这些敏感信息类型, 并显示 DLP 策略在检测到每种类型时所查找的内容。
+ms.openlocfilehash: 17fb0b8d745168f8000fba9e6fc42f3c255a1937
+ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "27194733"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "30216352"
 ---
 # <a name="what-the-sensitive-information-types-look-for"></a>使用敏感信息类型查找什么
 
-Office 365 安全性的数据丢失防护 (DLP)&amp;合规性中心包括许多可供您可以使用 DLP 策略中的敏感信息类型。本主题列出了所有这些敏感信息类型，并显示 DLP 策略时检测到每种类型的寻找。敏感信息类型定义的正则表达式或函数可以识别的模式。此外，如关键字和校验和确定证据可以用于标识的敏感信息类型。在评估过程还使用可信度和接近度。
+Office 365 安全&amp;合规中心中的数据丢失防护 (DLP) 包括许多可供您在 DLP 策略中使用的敏感信息类型。本主题列出了所有这些敏感信息类型, 并显示 DLP 策略在检测到每种类型时所查找的内容。敏感信息类型是通过可由正则表达式或函数标识的模式定义的。此外, 还可以使用确定证据 (如关键字和校验和) 来标识敏感的信息类型。置信度和近程也用于评估过程。
   
 ## <a name="aba-routing-number"></a>ABA 银行代号
 
@@ -35,12 +35,12 @@ Office 365 安全性的数据丢失防护 (DLP)&amp;合规性中心包括许多�
 
 有格式模式：
 - 四个数字，以 0、 1、 2、 3、 6、 7 或 8 开头
-- 连字符
+- 一个连字符 
 - 四位数字
-- 连字符
+- 一个连字符
 - 一位数字
 
-未格式化： 9 连续的数字开头 0、 1、 2、 3、 6、 7 或 8 
+无格式: 9 个连续的数字, 以0、1、2、3、6、7或8开头 
 
 ### <a name="checksum"></a>校验和
 
@@ -72,7 +72,7 @@ Office 365 安全性的数据丢失防护 (DLP)&amp;合规性中心包括许多�
 aba #
 - 
 aba routing #
-- aba 银行代号
+- aba 传送号码
 - 
 aba#
 - 
@@ -114,7 +114,7 @@ RTN
 - 一个点 
 - 三个数字 
 - 一个点 
-- 三个数字
+- 三位数字
 
 ### <a name="checksum"></a>校验和
 
@@ -143,10 +143,10 @@ RTN
 - Argentina National Identity number
  
 - 标识 
-- 标识国家/地区身份证 
+- 标识国家/地区身份卡片 
 - DNI
  
-- NIC 的人员的国家/地区注册表 
+- 个人的网络国家注册表 
 - Documento Nacional de Identidad
  
 - Registro Nacional de las Personas
@@ -164,9 +164,9 @@ RTN
 
 ### <a name="pattern"></a>模式
 
-帐号是 6-10 位数字。澳大利亚银行状态分支编号：
-- 三位数字 
-- 一个连字符  
+帐户号为6-10 位数字。澳大利亚银行状态分支号码:
+- 3 位数 
+- 连字符 
 - 三位数字
 
 ### <a name="checksum"></a>校验和
@@ -289,7 +289,7 @@ australian automobile association
 international driving permit
 - DriverLicence
 - DriverLicences
-- 驱动程序 Lic
+- 驱动程序许可证
 - Driver Licence
 
 - Driver Licences
@@ -297,24 +297,24 @@ international driving permit
 - DriversLic
 - DriversLicence
 - DriversLicences
-- 驱动因素 Lic
-- 驱动因素 Lics
-- 驱动程序许可
+- 驱动程序许可证
+- 驱动程序 driver'lics
+- 驱动程序许可证
 - 驱动程序许可
 - Driver'Lic
 - Driver'Lics
 - Driver'Licence
 - Driver'Licences
-- 驱动因素 Lic
-- 驱动因素 Lics
-- 驱动因素许可
-- 驱动因素许可
+- 驱动程序 "许可证
+- 驱动程序 "driver'lics
+- 驱动程序 ' 许可证
+- 驱动程序 ' 许可证
 - Driver'sLic
 - Driver'sLics
 - Driver'sLicence
 - Driver'sLicences
-- 驱动因素的 Lic
-- 驱动因素的 Lics
+- 驱动程序的许可证
+- 驱动程序的 driver'lics
 - Driver's Licence
 
 - Driver's Licences
@@ -327,16 +327,16 @@ international driving permit
 - 
 Driver Lics#
 
-- 驱动程序许可 #
-- 驱动程序许可 #
+- 驱动程序许可证 #
+- 驱动程序许可证 #
 - DriversLic #
 - DriversLics #
 - DriversLicence #
 - DriversLicences #
-- 驱动因素 Lic #
-- 驱动因素 Lics #
-- 驱动因素许可 #
-- 驱动因素许可 #
+- 驱动程序许可证数量
+- 驱动程序 driver'lics #
+- 驱动程序许可证 #
+- 驱动程序许可证 #
 - Driver'Lic#
 
 - Driver'Lics#
@@ -349,8 +349,8 @@ Driver Lics#
 
 - Driver' Lics#
 
-- 驱动因素许可 #
-- 驱动因素许可 #
+- 驱动程序 ' 许可证 #
+- 驱动程序 ' 许可证 #
 - Driver'sLic #
 - Driver'sLics #
 - Driver'sLicence #
@@ -359,8 +359,8 @@ Driver Lics#
 
 - Driver's Lics#
 
-- 驱动程序的许可 #
-- 驱动程序的许可 # 
+- 驾驶许可证 #
+- 驾驶许可证 # 
 
 #### <a name="keywordaustraliadriverslicensenumberexclusions"></a>Keyword_australia_drivers_license_number_exclusions
 
@@ -369,26 +369,26 @@ Driver Lics#
 - DriverLicenses
 - 驱动程序许可证
 - 驱动程序许可证
-- 驾驶员
+- DriversLicense
 - DriversLicenses
 - 驱动程序许可证
 - 驱动程序许可证
 - Driver'License
 - Driver'Licenses
-- 驱动因素许可证
-- 驱动因素许可证
+- 驱动程序 ' License
+- 驱动程序的许可证
 - Driver'sLicense
 - Driver'sLicenses
-- 驱动程序的许可证
-- 驱动程序的许可证
+- 驾驶执照
+- 驾驶许可证
 - DriverLicense #
 - DriverLicenses #
-- 驱动因素许可证 #
-- 驱动因素许可证 #
-- 驾驶员 #
+- 驱动程序许可证 #
+- 驱动程序许可证 #
+- DriversLicense #
 - DriversLicenses #
-- 驱动因素许可证 #
-- 驱动因素许可证 #
+- 驱动程序许可证 #
+- 驱动程序许可证 #
 - Driver'License#
 
 - Driver'Licenses#
@@ -489,11 +489,11 @@ medicare
 
 否
 
-### <a name="definition"></a>定义
+### <a name="definition"></a>Definition
 
 在 300 个字符的相似度内，如果出现以下情况，DLP 策略 75% 确信它检测到这种类型的敏感信息：
 - 正则表达式 Regex_australia_passport_number 找到与该模式匹配的内容。
-- 找到从 Keyword_passport 或 Keyword_australia_passport_number 关键字。
+- 找到来自 Keyword_passport 或 Keyword_australia_passport_number 的关键字。
 
 ```
 <!-- Australia Passport Number -->
@@ -677,7 +677,7 @@ tax file number
 - 六个数字加两个点，采用格式  YY.MM.DD，代表出生日期   
 - 一个连字符  
 - 三个连续的数字（男性用奇数，女性用偶数）  
-- 一个点  
+- 句点 
 - 两个数字，是校验位
 
 ### <a name="checksum"></a>校验和
@@ -747,10 +747,10 @@ identité
 有格式模式：
 - 三个数字  
 - 一个点  
-- 三个数字  
+- 三个数字 
 - 一个点  
-- 三个数字  
-- 一个连字符  
+- 3 位数 
+- 连字符 
 - 两个数字，是校验位
 
 非格式化：
@@ -813,7 +813,7 @@ identité
 ### <a name="pattern"></a>模式
 14 个数字，再加上分隔符：
 - 两个数字  
-- 一个点  
+- 一个点 
 - 三个数字  
 - 一个点  
 - 三个数字（前 8 位数是注册号）  
@@ -895,22 +895,22 @@ identité
 
 ### <a name="format"></a>格式
 
-Registro Geral （旧格式）： 九个数字
+Registro Geral (旧格式): 9 个数字
 
-Registro de Identidade (RIC) （新格式）： 11 位数字
+Registro de Identidade (RIC) (新格式):11 个数字
 
 ### <a name="pattern"></a>模式
 
 Registro Geral（旧格式）：
 - 两个数字  
-- 一个点  
+- 一个点 
 - 三个数字  
-- 一个点  
-- 三个数字  
+- 一个点 
+- 3 位数 
 - 一个连字符  
 - 一个数字，是校验位
 
-Registro de Identidade (RIC) （新格式）：
+Registro de Identidade (RIC) (新格式):
 - 10 个数字  
 - 一个连字符  
 - 一个数字，是校验位
@@ -947,7 +947,7 @@ Registro de Identidade (RIC) （新格式）：
 
 #### <a name="keywordbrazilrg"></a>Keyword_brazil_rg
 
-Cédula de identidade 身份证国家/地区 id número de rregistro registro de Iidentidade registro geral RG （此关键字是区分大小写） RIC （此关键字是区分大小写） 
+Cédula de identidade identity 卡片国家 id número de rregistro registro de Iidentidade registro geral RG (此关键字区分大小写) RIC (此关键字区分大小写) 
    
 ## <a name="canada-bank-account-number"></a>加拿大银行帐号
 
@@ -962,7 +962,7 @@ Cédula de identidade 身份证国家/地区 id número de rregistro registro de
 加拿大银行帐户的银行代号是：
 - 五位数字 
 - 一个连字符  
-- 三个数字或
+- 三位数字或
 - 一个零“0”  
 - 八个数字
 
@@ -1131,16 +1131,16 @@ direct deposit
 
 - DL
 - DLS
-- CDL
-- CDL
+- 采用
+- CDLS
 - DriverLic
 - DriverLics
 - DriverLicense
 - DriverLicenses
 - DriverLicence
 - DriverLicences
-- 驱动程序 Lic
-- 驱动程序 Lics
+- 驱动程序许可证
+- 驱动程序 driver'lics
 - 驱动程序许可证
 - 驱动程序许可证
 - Driver Licence
@@ -1151,13 +1151,13 @@ direct deposit
 - DriversLics
 - DriversLicence
 - DriversLicences
-- 驾驶员
+- DriversLicense
 - DriversLicenses
-- 驱动因素 Lic
-- 驱动因素 Lics
+- 驱动程序许可证
+- 驱动程序 driver'lics
 - 驱动程序许可证
 - 驱动程序许可证
-- 驱动程序许可
+- 驱动程序许可证
 - 驱动程序许可
 - Driver'Lic
 - Driver'Lics
@@ -1165,22 +1165,22 @@ direct deposit
 - Driver'Licenses
 - Driver'Licence
 - Driver'Licences
-- 驱动因素 Lic
-- 驱动因素 Lics
-- 驱动因素许可证
-- 驱动因素许可证
-- 驱动因素许可
-- 驱动因素许可
+- 驱动程序 "许可证
+- 驱动程序 "driver'lics
+- 驱动程序 ' License
+- 驱动程序的许可证
+- 驱动程序 ' 许可证
+- 驱动程序 ' 许可证
 - Driver'sLic
 - Driver'sLics
 - Driver'sLicense
 - Driver'sLicenses
 - Driver'sLicence
 - Driver'sLicences
-- 驱动因素的 Lic
-- 驱动因素的 Lics
 - 驱动程序的许可证
-- 驱动程序的许可证
+- 驱动程序的 driver'lics
+- 驾驶执照
+- 驾驶许可证
 - Driver's Licence
 
 - Driver's Licences
@@ -1197,7 +1197,7 @@ idcard #
 - 
 idcard #s
 - idcard 卡片
-- idcard 卡
+- idcard 卡片
 - idcard
 - identification number
 
@@ -1207,8 +1207,8 @@ idcard #s
 
 - 
 identification #s
-- 身份证
-- 身份证
+- 标识卡
+- 识别卡
 - 
 identification
  
@@ -1230,22 +1230,22 @@ DLS#
 - 
 Driver Lics#
  
-- 驱动因素许可证 # 
-- 驱动因素许可证 # 
-- 驱动因素许可证 # 
-- 驱动程序许可 # 
+- 驱动程序许可证 # 
+- 驱动程序许可证 # 
+- 驱动程序许可证 # 
+- 驱动程序许可证 # 
 - DriversLic # 
 - DriversLics # 
-- 驾驶员 # 
+- DriversLicense # 
 - DriversLicenses # 
 - DriversLicence # 
 - DriversLicences # 
-- 驱动因素 Lic # 
-- 驱动因素 Lics # 
-- 驱动因素许可证 # 
-- 驱动因素许可证 # 
-- 驱动因素许可 # 
-- 驱动因素许可 # 
+- 驱动程序许可证数量 
+- 驱动程序 driver'lics # 
+- 驱动程序许可证 # 
+- 驱动程序许可证 # 
+- 驱动程序许可证 # 
+- 驱动程序许可证 # 
 - Driver'Lic#
  
 - Driver'Lics#
@@ -1266,8 +1266,8 @@ Driver Lics#
  
 - Driver' Licenses#
  
-- 驱动因素许可 # 
-- 驱动因素许可 # 
+- 驱动程序 ' 许可证 # 
+- 驱动程序 ' 许可证 # 
 - Driver'sLic # 
 - Driver'sLics # 
 - Driver'sLicense # 
@@ -1282,11 +1282,11 @@ Driver Lics#
  
 - Driver's Licenses#
  
-- 驱动程序的许可 # 
-- 驱动程序的许可 # 
+- 驾驶许可证 # 
+- 驾驶许可证 # 
 - Permis de Conduire # 
-- id # 
-- id # 
+- 号 
+- id 
 - idcard card#
  
 - idcard cards#
@@ -1371,7 +1371,7 @@ disability
 
 在 300 个字符的相似度内，如果出现以下情况，DLP 策略 75% 确信它检测到这种类型的敏感信息：
 - 正则表达式 Regex_canada_passport_number 找到与该模式匹配的内容。
-- 找到从 Keyword_canada_passport_number 或 Keyword_passport 关键字。
+- 找到来自 Keyword_canada_passport_number 或 Keyword_passport 的关键字。
 
 ``` 
 <!-- Canada Passport Number -->
@@ -1458,7 +1458,7 @@ Passeportn °
 
 ### <a name="definition"></a>定义
 
-DLP 策略是相信它已检测到此类型的敏感信息的 75 %if、 内 300 个字符的邻近度： 正则表达式 Regex_canada_phin 找到与模式匹配的内容。找到来自 Keyword_canada_phin 或 Keyword_canada_provinces 至少两个关键字正在
+DLP 策略 75% 确信在300个字符的邻近度内检测到此类型的敏感信息: 正则表达式 Regex_canada_phin 找到与该模式匹配的内容。找到 Keyword_canada_phin 或 Keyword_canada_provinces 中至少有两个关键字。。
 
 ```
 <!-- Canada PHIN -->
@@ -1551,7 +1551,7 @@ Prince Edward Island
 - 连字符或空格 
 - 三位数字
 
-未格式化： 九个数字
+未格式化: 9 个数字
 
 ### <a name="checksum"></a>校验和
 
@@ -1603,7 +1603,7 @@ Prince Edward Island
  
 - ssn 
 - ssn 
-- 社会安全 
+- 社会保障 
 - numero d'assurance social
  
 - 国家/地区标识号 
@@ -1620,7 +1620,7 @@ national id
 
 - driver's license 
 - drivers license 
-- 驱动程序的许可 
+- 驾驶许可证 
 - drivers licence 
 - DOB
  
@@ -1633,16 +1633,16 @@ national id
 
 ### <a name="format"></a>格式
 
-7-8 数字以及定界符复选数字或字母
+7-8 位数加上分隔符一个校验位或字母
 
 ### <a name="pattern"></a>模式
 
 7-8 个数字加分隔符：
 - 1-2 个数字  
 - 一个点  
-- 三个数字  
-- 一个点  
-- 三个数字  
+- 三个数字 
+- 一个点 
+- 三位数字 
 - 一个短划线  
 - 一个数字或字母（不区分大小写），是校验位
 
@@ -1685,7 +1685,7 @@ national id
 - Identification 
 - Rol Único Nacional
  
-- 运行 
+- 以 
 - Rol Único Tributario
  
 - RUT
@@ -1747,8 +1747,7 @@ national id
 
 - Resident Identity Card
  
-- PRC
- 
+- 台湾 
 - National Identification Card
  
 - 身份证  
@@ -1766,7 +1765,7 @@ national id
 
 ### <a name="format"></a>格式
 
-16 位数字格式化或无格式 (dddddddddddddddd)，必须将传递 Luhn 测试。
+16个数字, 可以是格式化或无格式 (dddddddddddddddd), 并且必须通过 Luhn 测试。
 
 ### <a name="pattern"></a>模式
 
@@ -1856,7 +1855,7 @@ national id
 
 - cod. sicurezza
 
-- cod sicurezza
+- 货到付款 sicurezza
 - 
 n autorizzazione
 - código
@@ -1865,7 +1864,7 @@ n autorizzazione
 
 - cod. seg
 
-- cod seg
+- 货到付款 seg
 - código de segurança
 
 - codigo de seguranca
@@ -1876,11 +1875,11 @@ n autorizzazione
 
 - cód. segurança
 
-- cod。seguranca cod。segurança
+- 货.seguranca 货到付款。segurança
 - cód. seguranca
 
 - cód segurança
-- 货 seguranca cod segurança 到付款
+- 货到付款 seguranca 货到付款 segurança
 - cód seguranca
 - número de verificação
 
@@ -1933,7 +1932,7 @@ n autorizzazione
 american express
 - americanexpress
 
-- Visa
+- 反之
 - mastercard
 
 - Master Card
@@ -1944,7 +1943,7 @@ mc
 - mastercards
 - 
 master cards
-- 进餐的俱乐部
+- 用餐俱乐部
 - diners club
 
 - dinersclub
@@ -1964,8 +1963,8 @@ master cards
 
 - credit card
 
-- 抄送 #
-- 抄送 # 中：
+- 收件人
+- cc #:
 - 
 expiration date
 - exp date
@@ -2073,7 +2072,7 @@ kartennr
 - kartennummer
 - 
 kreditkartennummer
-- kreditkarten nummer
+- kreditkarten-nummer
 - carta di credito
 
 - carta credito
@@ -2113,7 +2112,7 @@ tarjeta de débito
 
 - no. de tarjeta
 
-- 没有 de tarjeta
+- 无 de tarjeta
 - numero de tarjeta
 
 - número de tarjeta
@@ -2157,13 +2156,13 @@ numero do cartao
 
 - numero de cartao
 
-- nº 执行 cartão
+- n º do cartão
 - nº do cartao
 
 - nº. do cartão
 
-- 没有执行 cartão
-- 没有执行 cartao
+- 不执行任何操作 cartão
+- 不执行任何操作 cartao
 - no. do cartão
 
 - 
@@ -2184,7 +2183,7 @@ no. do cartao
 
 否
 
-### <a name="definition"></a>定义
+### <a name="definition"></a>Definition
 
 在 300 个字符的相似度内，如果出现以下情况，DLP 策略 75% 确信它检测到这种类型的敏感信息：
 - 函数 Func_croatia_id_card 找到与该模式匹配的内容。
@@ -2218,7 +2217,7 @@ no. do cartao
 
 11 个数字：
 - 10 个数字 
-- 最后一数字的国际数据交换为复选位数，11 个数字的前面添加字母 HR。
+- 最后一个数字是用于国际数据交换目的的校验位, 字母 HR 将加上11位数字。
 
 ### <a name="checksum"></a>校验和
 
@@ -2259,31 +2258,31 @@ no. do cartao
  
 
    
-## <a name="czech-personal-identity-number"></a>捷克个人标识号
+## <a name="czech-personal-identity-number"></a>捷克个人识别码
 
 ### <a name="format"></a>格式
 
-使用可选的九个数字正斜杠 （旧格式） 使用可选的 10 位数字正斜杠 （新格式）
+9个带可选正斜杠 (旧格式) 的数字, 带可选正斜杠的10个数字 (新的格式)
 
 ### <a name="pattern"></a>模式
 
-九个数字 （旧格式）：
+9个数字 (旧格式):
 - 九个数字
 
 或者
 
-- 包含 6 位数字表示出生日期
+- 代表出生日期的六个数字
 - 一个正斜杠 
 - 三位数字
 
-10 位数字 （新格式）：
+10个数字 (新格式):
 - 10 个数字
 
 或者
 
-- 包含 6 位数字表示出生日期
+- 代表出生日期的六个数字
 - 一个正斜杠  
-- 其中最后一位是复选数字值的四位数字
+- 四个数字, 其中最后一个数字是校验位
 
 ### <a name="checksum"></a>校验和
 
@@ -2291,7 +2290,7 @@ no. do cartao
 
 ### <a name="definition"></a>定义
 
-DLP 策略是 85%相信它已检测到此类型的敏感信息 if、 内 300 个字符的邻近度： 函数 Func_czech_id_card 查找与模式匹配的内容。找到从 Keyword_czech_id_card 关键字。将传递校验和。
+DLP 策略 85% 确信在300个字符的邻近度内检测到此类型的敏感信息: 函数 Func_czech_id_card 找到与该模式匹配的内容。找到 Keyword_czech_id_card 中的关键字。校验和通过。
 
 ```
 <!-- Czech Personal Identity Number -->
@@ -2304,8 +2303,8 @@ DLP 策略是 85%相信它已检测到此类型的敏感信息 if、 内 300 个
 ```
 ### <a name="keywords"></a>关键字
 
-- 捷克个人标识号
-- Rodné číslo
+- 捷克个人识别码
+- Rodnéčíslo
    
 ## <a name="denmark-personal-identification-number"></a>	丹麦个人身份号码
 
@@ -2326,7 +2325,7 @@ DLP 策略是 85%相信它已检测到此类型的敏感信息 if、 内 300 个
 
 ### <a name="definition"></a>定义
 
-DLP 策略是相信它已检测到此类型的敏感信息的 75 %if、 内 300 个字符的邻近度： 正则表达式 Regex_denmark_id 找到与模式匹配的内容。找到从 Keyword_denmark_id 关键字。将传递校验和。
+DLP 策略 75% 确信在300个字符的邻近度内检测到此类型的敏感信息: 正则表达式 Regex_denmark_id 找到与该模式匹配的内容。找到 Keyword_denmark_id 中的关键字。校验和通过。
 
 ```
 <!-- Denmark Personal Identification Number -->
@@ -2430,14 +2429,14 @@ DLP 策略是相信它已检测到此类型的敏感信息的 75 %if、 内 300 
 
 #### <a name="keywordeudebitcard"></a>Keyword_eu_debit_card
 
-- 帐号 
+- 帐户号 
 - card number
  
 - card no.
  
 - security number
  
-- 抄送 # 
+- 收件人 
 
 #### <a name="keywordcardtermsdict"></a>Keyword_card_terms_dict
 
@@ -2580,7 +2579,7 @@ DLP 策略是相信它已检测到此类型的敏感信息的 75 %if、 内 300 
  
 - dinersclub
  
-- 发现 
+- 确定 
 - discover card
  
 - discover cards
@@ -2632,7 +2631,7 @@ kartennr
 - kartennummer 
 - kreditkarte
  
-- kreditkarten nummer 
+- kreditkarten-nummer 
 - kreditkarteninhaber
  
 - kreditkarteninstitut
@@ -2650,14 +2649,14 @@ kartennr
 - mastercard
  
 - mastercards 
-- mc 
+- emc 
 - mister cash
  
 - n carta 
 - carta 
-- 没有 de tarjeta 
-- 没有执行 cartao 
-- 没有执行 cartão 
+- 无 de tarjeta 
+- 不执行任何操作 cartao 
+- 不执行任何操作 cartão 
 - no. de tarjeta
  
 - no. do cartao
@@ -2701,7 +2700,7 @@ kartennr
  
 - nº do cartao
  
-- nº 执行 cartão 
+- n º do cartão 
 - nº. do cartão
  
 - número de cartao
@@ -2767,7 +2766,7 @@ kartennr
  
 - v pay
  
-- v 付薪 
+- v-支付 
 - visa
  
 - visa plus
@@ -2789,10 +2788,10 @@ kartennr
  
 - cid
  
-- cod seg 
-- cod seguranca 
-- cod segurança 
-- cod sicurezza 
+- 货到付款 seg 
+- 货到付款 seguranca 
+- 货到付款 segurança 
+- 货到付款 sicurezza 
 - cod. seg
  
 - cod. seguranca
@@ -2946,7 +2945,7 @@ kartennr
  
 - exp datum
  
-- 过期 
+- 时间 
 - expire
  
 - expires
@@ -2994,25 +2993,25 @@ kartennr
 - válido hasta
  
    
-## <a name="eu-drivers-license-number"></a>欧盟驾驶证号码
+## <a name="eu-drivers-license-number"></a>欧盟驾驶执照号码
 
-若要了解详细信息，请参阅[欧盟驱动程序驾驶证号码敏感信息类型](eu-driver-s-license-number.md)。
+若要了解详细信息, 请参阅[EU 驱动程序的许可号敏感信息类型](eu-driver-s-license-number.md)。
   
-## <a name="eu-national-identification-number"></a>欧盟 National 标识号
+## <a name="eu-national-identification-number"></a>欧盟国家身份证号
 
-若要了解详细信息，请参阅[欧盟国家/地区标识号敏感信息类型](eu-national-identification-number.md)。
+若要了解详细信息, 请参阅[EU 国家身份证号敏感信息类型](eu-national-identification-number.md)。
   
-## <a name="eu-passport-number"></a>欧盟护照号码
+## <a name="eu-passport-number"></a>EU 护照号码
 
-若要了解详细信息，请参阅[欧盟护照号码敏感信息类型](eu-passport-number.md)。
+若要了解详细信息, 请参阅[EU 护照号敏感信息类型](eu-passport-number.md)。
   
-## <a name="eu-social-security-number-or-equivalent-id"></a>欧盟社会保险号或等效 ID
+## <a name="eu-social-security-number-or-equivalent-id"></a>欧盟社会安全号码或等效 ID
 
-若要了解详细信息，请参阅[欧盟社会保险号或等效 ID 敏感信息类型](eu-social-security-number-or-equivalent-id.md)。
+若要了解详细信息, 请参阅[EU 社会保险号或等效 ID 敏感信息类型](eu-social-security-number-or-equivalent-id.md)。
   
-## <a name="eu-tax-identification-number"></a>欧盟纳税标识号
+## <a name="eu-tax-identification-number"></a>EU 税标识号
 
-若要了解详细信息，请参阅[欧盟纳税标识号敏感信息类型](eu-tax-identification-number.md)。
+若要了解详细信息, 请参阅[EU 纳税识别号敏感信息类型](eu-tax-identification-number.md)。
   
 ## <a name="finland-national-id"></a>芬兰国家/地区 ID
 
@@ -3061,9 +3060,9 @@ Sosiaaliturvatunnus
    
 ## <a name="finland-passport-number"></a>芬兰护照号码
 
-设置格式的九个字母和数字模式的九个字母和数字的组合组合： 两个字母 （不区分大小写） 的第七位数字校验和无定义 DLP 策略为 75%确信，如果，它已检测到此类型的敏感信息，在两者之间300 个字符的邻近性： 正则表达式 Regex_finland_passport_number 找到与模式匹配的内容。找到从 Keyword_finland_passport_number 关键字。<!-- Finland Passport Number --> 
+设置九个字母和数字的组合的组合九个字母和数字的组合: 两个字母 (不区分大小写) 七个数字校验和无定义 DLP 策略是 75% 确信它检测到这种类型的敏感信息, 如果在300个字符的邻近性: 正则表达式 Regex_finland_passport_number 找到与该模式匹配的内容。找到 Keyword_finland_passport_number 中的关键字。关键字 Keyword_finland_passport_number <!-- Finland Passport Number --> 
  <Entity id="d1685ac3-1d3a-40f8-8198-32ef5669c7a5" recommendedConfidence="75" patternsProximity="300"> <Pattern confidenceLevel="75"> <IdMatch idRef="Regex_finland_passport_number"/> <Match idRef="Keyword_finland_passport_number"/> </Pattern> 
-</Entity>关键字 Keyword_finland_passport_number Passport Passi
+ </Entity>
    
 ## <a name="france-drivers-license-number"></a>法国驾驶证号码
 
@@ -3079,7 +3078,7 @@ Sosiaaliturvatunnus
 
 否
 
-### <a name="definition"></a>定义
+### <a name="definition"></a>Definition
 
 在 300 个字符的相似度内，如果出现以下情况，DLP 策略 75% 确信它检测到这种类型的敏感信息：
 - 函数 Func_french_drivers_license 找到与该模式匹配的内容。
@@ -3108,7 +3107,7 @@ Sosiaaliturvatunnus
 - drivers license
 - driving licence
 
-- 驱动许可证
+- 驾驶执照
 - 
 permis de conduire
 - 
@@ -3170,7 +3169,7 @@ license numbers
 
 否
 
-### <a name="definition"></a>定义
+### <a name="definition"></a>Definition
 
 在 300 个字符的相似度内，如果出现以下情况，DLP 策略 75% 确信它检测到这种类型的敏感信息：
 - 函数 Func_fr_passport 找到与该模式匹配的内容。
@@ -3234,7 +3233,7 @@ Passeportn °
 ### <a name="pattern"></a>模式
 
 必须匹配两种模式之一：
-- 13 跟两位数字后跟一个空格的数字<br/>
+- 13位数, 后跟一个空格, 后跟两个数字<br/>
 或
 - 15 个连续的数字
 
@@ -3245,12 +3244,12 @@ Passeportn °
 ### <a name="definition"></a>定义
 
 在 300 个字符的相似度内，如果出现以下情况，DLP 策略 95% 确信它检测到这种类型的敏感信息：
-- 函数 Func_french_insee 或 Func_fr_insee 查找与模式匹配的内容。
+- 函数 Func_french_insee 或 Func_fr_insee 找到与该模式匹配的内容。
 - 找到 Keyword_fr_insee 中的一个关键字。
 - 校验和通过。
 
 在 300 个字符的相似度内，如果出现以下情况，DLP 策略 85% 确信它检测到这种类型的敏感信息：
-- 函数 Func_french_insee 或 Func_fr_insee 查找与模式匹配的内容。
+- 函数 Func_french_insee 或 Func_fr_insee 找到与该模式匹配的内容。
 - 未找到 Keyword_fr_insee 中的关键字。
 - 校验和通过。
 
@@ -3289,12 +3288,12 @@ national id
 national identification
 - 
 numéro d identité
-- 没有 d'identité
+- 无 d'identité
 - 
 no. d'identité
 - 
 numero d'identite
-- 没有 d'identite
+- 无 d'identite
 - 
 no. d'identite
 - social security number
@@ -3441,17 +3440,17 @@ Driv Licenses
  
 - Driver Licences
  
-- 驱动因素 Lic 
-- 驱动因素 Licen 
+- 驱动程序许可证 
+- 驱动程序 Licen 
+- 驱动程序许可证 
 - 驱动程序许可证 
 - 驱动程序许可证 
 - 驱动程序许可 
-- 驱动程序许可 
-- 驱动因素的 Lic 
+- 驱动程序的许可证 
 - Driver's Licen
  
-- 驱动程序的许可证 
-- 驱动程序的许可证 
+- 驾驶执照 
+- 驾驶许可证 
 - Driver's Licence
  
 - Driver's Licences
@@ -3600,7 +3599,7 @@ ausstellungsort
 
 #### <a name="keywordgermanpassportnumber"></a>Keyword_german_passport_number
 
-不-Reisepass Nr Reisepass
+Reisepass Nr-Reisepass
 
 #### <a name="keywordgermanpassport1"></a>Keyword_german_passport1
 
@@ -3609,15 +3608,15 @@ Reisepass-Nr
 
 #### <a name="keywordgermanpassport2"></a>Keyword_german_passport2
 
-bnationalit.t
+bnationalit
    
 ## <a name="germany-identity-card-number"></a>德国身份证号码
 
 ### <a name="format"></a>格式
 
-2010 年 11 月 1 相： 九个字母和数字
+自2010年11月1日起: 九个字母和数字
 
-从直到 31 年 10 月 2010年: 10 位数字 1 年 4 月 1987
+从1年4月1987至31年10月 2010:10 位数字
 
 ### <a name="pattern"></a>模式
 
@@ -3625,7 +3624,7 @@ bnationalit.t
 - 一个字母（不区分大小写）  
 - 八个数字
 
-从直到 31 2010 年 10 月 1 年 4 月 1987:
+介于1年4月1987至 31 10 月 2010:
 - 10 个数字
 
 ### <a name="checksum"></a>校验和
@@ -3682,7 +3681,7 @@ bnationalit.t
 
 否
 
-### <a name="definition"></a>定义
+### <a name="definition"></a>Definition
 
 在 300 个字符的相似度内，如果出现以下情况，DLP 策略 75% 确信它检测到这种类型的敏感信息：
 - 正则表达式 Regex_greece_id_card 找到与该模式匹配的内容。
@@ -3752,12 +3751,12 @@ bnationalit.t
 
 #### <a name="keywordhongkongidcard"></a>Keyword_hong_kong_id_card
 
-- 香港特别行政区身份证
+- 中国香港恒等卡片
 - HKIDC
-- 身份证
+- id 卡片
 - identity card
-- hk 身份证
-- 香港特别行政区 id
+- hk identity 卡片
+- 香港 id
 - 香港身份證
 
 - 香港永久性居民身份證
@@ -3804,7 +3803,7 @@ bnationalit.t
 
 10 个字母或数字：
 - 五个字母（不区分大小写）  
-- 四个数字  
+- 四位数字 
 - 一个字母，是字母校验位
 
 ### <a name="checksum"></a>校验和
@@ -3858,7 +3857,7 @@ bnationalit.t
 
 ### <a name="definition"></a>定义
 
-DLP 策略是 85%相信它已检测到此类型的敏感信息 if、 内 300 个字符的邻近度： 函数 Func_india_aadhaar 查找与模式匹配的内容。找到从 Keyword_india_aadhar 关键字。将传递校验和。DLP 策略是相信它已检测到此类型的敏感信息的 75 %if、 内 300 个字符的邻近度： 函数 Func_india_aadhaar 查找与模式匹配的内容。将传递校验和。<!-- India Unique Identification (Aadhaar) number -->
+DLP 策略 85% 确信在300个字符的邻近度内检测到此类型的敏感信息: 函数 Func_india_aadhaar 找到与该模式匹配的内容。找到 Keyword_india_aadhar 中的关键字。校验和通过。DLP 策略 75% 确信在300个字符的邻近度内检测到此类型的敏感信息: 函数 Func_india_aadhaar 找到与该模式匹配的内容。校验和通过。<!-- India Unique Identification (Aadhaar) number -->
 <Entity id="1ca46b29-76f5-4f46-9383-cfa15e91048f" recommendedConfidence="85" patternsProximity="300"> <Pattern confidenceLevel="85"> <IdMatch idRef="Func_india_aadhaar"/> <Match idRef="Keyword_india_aadhar"/> </Pattern> <Pattern confidenceLevel="75"> <IdMatch idRef="Func_india_aadhaar"/> </Pattern>
 </Entity>
 
@@ -3892,7 +3891,7 @@ DLP 策略是 85%相信它已检测到此类型的敏感信息 if、 内 300 个
 
 否
 
-### <a name="definition"></a>定义
+### <a name="definition"></a>Definition
 
 在 300 个字符的相似度内，如果出现以下情况，DLP 策略 75% 确信它检测到这种类型的敏感信息：
 - 正则表达式 Regex_indonesia_id_card 找到与该模式匹配的内容。
@@ -4033,11 +4032,11 @@ ad, ae, al, at, az, ba, be, bg, bh, ch, cr, cy, cz, de, dk, do, ee, es, fi, fo, 
 IP-כתובת ה
  
    
-## <a name="international-classification-of-diseases-icd-10-cm"></a>国际分类的科 （ICD-10-厘米）
+## <a name="international-classification-of-diseases-icd-10-cm"></a>国际分类的 Diseases (ICD-10 CM)
 
 ### <a name="format"></a>格式
 
-词典
+辞典
 
 ### <a name="pattern"></a>模式
 
@@ -4050,7 +4049,7 @@ IP-כתובת ה
 ### <a name="definition"></a>定义
 
 在 300 个字符的相似度内，如果出现以下情况，DLP 策略 85% 确信它检测到这种类型的敏感信息：
-- 找到从 Dictionary_icd_10_cm 关键字。
+- 找到 Dictionary_icd_10_cm 中的关键字。
 
 ```
       <!-- ICD-10 CM -->
@@ -4063,14 +4062,14 @@ IP-כתובת ה
 
 关键字
 
-Dictionary_icd_10_cm 关键字字典中的任何术语的基于[国际分类的科、 第十修订，临床修改 （ICD-10-厘米）](https://go.microsoft.com/fwlink/?linkid=852604)。此类型仅查找术语，不保险代码。
+Dictionary_icd_10_cm 关键字词典中的任何术语, 它基于[Diseases 的国际分类、第十个修订、临床修改 (icd-10-cm)](https://go.microsoft.com/fwlink/?linkid=852604)。此类型仅查找术语, 而不是保险代码。
 
    
-## <a name="international-classification-of-diseases-icd-9-cm"></a>国际分类的科 （ICD-9-厘米）
+## <a name="international-classification-of-diseases-icd-9-cm"></a>国际分类的 Diseases (ICD-9-CM)
 
 ### <a name="format"></a>格式
 
-词典
+辞典
 
 ### <a name="pattern"></a>模式
 
@@ -4083,7 +4082,7 @@ Dictionary_icd_10_cm 关键字字典中的任何术语的基于[国际分类的�
 ### <a name="definition"></a>定义
 
 在 300 个字符的相似度内，如果出现以下情况，DLP 策略 85% 确信它检测到这种类型的敏感信息：
-- 找到从 Dictionary_icd_9_cm 关键字。
+- 找到 Dictionary_icd_9_cm 中的关键字。
 
 ```
       <Entity id="fa3f9c74-ee07-4c52-b5f2-085d6b2c0ec4" patternsProximity="300" recommendedConfidence="85">
@@ -4095,25 +4094,25 @@ Dictionary_icd_10_cm 关键字字典中的任何术语的基于[国际分类的�
 
 ### <a name="keywords"></a>关键字
 
-Dictionary_icd_9_cm 关键字字典中的任何术语的基于[国际分类的科、 第九个修订，临床修改 （ICD-9-厘米）](https://go.microsoft.com/fwlink/?linkid=852605)。此类型仅查找术语，不保险代码。
+Dictionary_icd_9_cm 关键字词典中的任何术语, 基于[Diseases 的国际分类、第九修订版、临床修改 (icd-9 cm)](https://go.microsoft.com/fwlink/?linkid=852605)。此类型仅查找术语, 而不是保险代码。
    
 ## <a name="ireland-personal-public-service-pps-number"></a>爱尔兰个人公共服务 (PPS) 号码
 
 ### <a name="format"></a>格式
 
-（到 Dec 2012 年 31） 的旧格式：
+旧格式 (到 31 Dec 2012):
 - 七位数字后跟 1-2  个字母  
 
-新的格式 (2013 年 1 月 1 和之后):
+新格式 (2013 年1月1日和之后):
 - 七位数字后跟两个字母
 
 ### <a name="pattern"></a>模式
 
-（到 Dec 2012 年 31） 的旧格式：
+旧格式 (到 31 Dec 2012):
 - 七个数字  
 - 1-2 个字母（不区分大小写）  
 
-新的格式 (2013 年 1 月 1 和之后):
+新格式 (2013 年1月1日和之后):
 - 七个数字  
 - 一个字母（不区分大小写），是字母校验位  
 - 字母“A”或“H”（不区分大小写）
@@ -4165,7 +4164,7 @@ Dictionary_icd_9_cm 关键字字典中的任何术语的基于[国际分类的�
  
 - PPS #
  
-- PPS # 
+- .pps 
 - PPSN
  
 - Public Services Card
@@ -4187,8 +4186,8 @@ Dictionary_icd_9_cm 关键字字典中的任何术语的基于[国际分类的�
 
 有格式模式：
 - 两位数字 
-- 破折号 
-- 三位数字 
+- 一个短划线  
+- 三个数字  
 - 破折号 
 - 八个数字
 
@@ -4199,7 +4198,7 @@ Dictionary_icd_9_cm 关键字字典中的任何术语的基于[国际分类的�
 
 否
 
-### <a name="definition"></a>定义
+### <a name="definition"></a>Definition
 
 在 300 个字符的相似度内，如果出现以下情况，DLP 策略 75% 确信它检测到这种类型的敏感信息：
 - 正则表达式 Regex_israel_bank_account_number 找到与该模式匹配的内容。
@@ -4289,7 +4288,7 @@ Dictionary_icd_9_cm 关键字字典中的任何术语的基于[国际分类的�
 
 否
 
-### <a name="definition"></a>定义
+### <a name="definition"></a>Definition
 
 在 300 个字符的相似度内，如果出现以下情况，DLP 策略 75% 确信它检测到这种类型的敏感信息：
 - 正则表达式 Regex_italy_drivers_license_number 找到与该模式匹配的内容。
@@ -4329,7 +4328,7 @@ Dictionary_icd_9_cm 关键字字典中的任何术语的基于[国际分类的�
 - 银行帐户分支代码：
 - 四位数字 
 - 空格或破折号（可选） 
-- 三位数字
+- 三个数字
 
 校验和
 
@@ -4402,7 +4401,7 @@ Dictionary_icd_9_cm 关键字字典中的任何术语的基于[国际分类的�
  
 - Savings Account Number
  
-- 节省帐户 
+- 储蓄帐户 
 - Savings Account #
  
 - Savings Acct Number
@@ -4516,9 +4515,9 @@ Otemachi
 #### <a name="keywordjpdriverslicensenumber"></a>Keyword_jp_drivers_license_number
 
 - dl# 
-- DL # 
+- 通讯 
 - dls# 
-- DL # 
+- DLS 
 - driver license 
 - driver licenses 
 - drivers license 
@@ -4528,7 +4527,7 @@ Otemachi
 - driving licence
  
 - lic# 
-- LIC # 
+- .lic 
 - lics# 
 - 状态 id 
 - state identification
@@ -4659,7 +4658,7 @@ Otemachi
 7-12 位数字：
 - 四位数字 
 - 一个连字符（可选） 
-- 6 个数字或
+- 六位数字或
 - 7-12 个连续的数字
 
 ### <a name="checksum"></a>校验和
@@ -4705,15 +4704,15 @@ Otemachi
 - 社会保険番号
  
 
-## <a name="japanese-residence-card-number"></a>日语居住卡号
+## <a name="japanese-residence-card-number"></a>日本住宅电话卡号
 
 ### <a name="format"></a>格式
 
-12 字母和数字
+12个字母和数字
 
 ### <a name="pattern"></a>模式
 
-12 字母和数字：
+12个字母和数字:
 - 两个字母（不区分大小写） 
 - 八个数字 
 - 两个字母（不区分大小写） 
@@ -4725,8 +4724,8 @@ Otemachi
 ### <a name="definition"></a>定义
 
 在 300 个字符的相似度内，如果出现以下情况，DLP 策略 75% 确信它检测到这种类型的敏感信息：
-- 正则表达式 Regex_jp_residence_card_number 找到与模式匹配的内容。
-- 找到从 Keyword_jp_residence_card_number 关键字。
+- 正则表达式 Regex_jp_residence_card_number 找到与该模式匹配的内容。
+- 找到 Keyword_jp_residence_card_number 中的关键字。
 
 ```
 <!--Japan Residence Card Number-->
@@ -4742,9 +4741,9 @@ Otemachi
 
 #### <a name="keywordjpresidencecardnumber"></a>Keyword_jp_residence_card_number
 
-- 居住卡号
-- 居住卡片否
-- 居住卡片 #
+- 住宅电话卡号
+- 住宅卡编号
+- 住宅卡片 #
 - 在留カード番号
    
 ## <a name="malaysia-id-card-number"></a>马拉西亚身份证号码
@@ -4788,28 +4787,28 @@ Otemachi
    
 #### <a name="keywordmalaysiaidcardnumber"></a>Keyword_malaysia_id_card_number
 
-- 数字应用程序卡片
-- 我 /c
-- 我 /c 没有
+- 数字应用程序卡
+- i/c
+- i/c 否
 - ic
-- ic 没有
-- 身份证
-- 身份证
+- 内部公司编号
+- id 卡片
+- 标识卡
 - identity card
 - k/p
-- k/p 没有
+- k/p no
 - kad akuan diri
 - kad aplikasi 数字
 - kad pengenalan 马来西亚
 - kp
-- kp 没有
+- kp no
 - mykad
 - mykas
 - mykid
 - mypr
 - mytentera
-- 马来西亚身份证
-- 马来西亚身份证
+- 马来西亚身份卡片
+- 马来西亚身份卡片
 - nric
 - 个人标识卡
    
@@ -4878,7 +4877,7 @@ Otemachi
 
 ### <a name="pattern"></a>模式
 
-三个字母 （不区分大小写） 空间 （可选） 四位数字
+三个字母 (不区分大小写) 一个空格 (可选) 四个数字
 
 ### <a name="checksum"></a>校验和
 
@@ -4976,7 +4975,7 @@ Keyword_nz_terms
 
 12 个数字：
 - 四个数字  
-- 一个连字符  
+- 一个连字符 
 - 七个数字  
 - 一个连字符  
 - 一个数字
@@ -4985,7 +4984,7 @@ Keyword_nz_terms
 
 否
 
-### <a name="definition"></a>定义
+### <a name="definition"></a>Definition
 
 在 300 个字符的相似度内，如果出现以下情况，DLP 策略 75% 确信它检测到这种类型的敏感信息：
 - 正则表达式 Regex_philippines_unified_id 找到与该模式匹配的内容。
@@ -5028,7 +5027,7 @@ Keyword_nz_terms
 
 ### <a name="definition"></a>定义
 
-DLP 策略是相信它已检测到此类型的敏感信息的 75 %if、 内 300 个字符的邻近度： 函数 Func_polish_national_id 查找与模式匹配的内容。找到从 Keyword_polish_national_id_passport_number 关键字。将传递校验和。
+DLP 策略 75% 确信在300个字符的邻近度内检测到此类型的敏感信息: 函数 Func_polish_national_id 找到与该模式匹配的内容。找到 Keyword_polish_national_id_passport_number 中的关键字。校验和通过。
 
 ```
 <!-- Poland Identity Card-->
@@ -5045,9 +5044,9 @@ DLP 策略是相信它已检测到此类型的敏感信息的 75 %if、 内 300 
 #### <a name="keywordpolishnationalidpassportnumber"></a>Keyword_polish_national_id_passport_number
 
 - Dowód osobisty
-- 个数 dowodu osobistego
-- Nazwa 我个数 dowodu osobistego
-- Nazwa 我 nr dowodu osobistego
+- 器 dowodu osobistego
+- Nazwa i 器 dowodu osobistego
+- Nazwa i nr dowodu osobistego
 - Nazwa i nr dowodu tożsamości
 
 - Dowód Tożsamości
@@ -5131,8 +5130,8 @@ DLP 策略是相信它已检测到此类型的敏感信息的 75 %if、 内 300 
 
 #### <a name="keywordpolishnationalidpassportnumber"></a>Keyword_polish_national_id_passport_number
 
-- 个数 paszportu
-- Paszportu nr。
+- 器 paszportu
+- Nr. Paszportu
 - Paszport
 
    
@@ -5140,7 +5139,7 @@ DLP 策略是相信它已检测到此类型的敏感信息的 75 %if、 内 300 
 
 ### <a name="format"></a>格式
 
-八个数字
+八位数字
 
 ### <a name="pattern"></a>模式
 
@@ -5190,7 +5189,7 @@ DLP 策略是相信它已检测到此类型的敏感信息的 75 %if、 内 300 
 
 否
 
-### <a name="definition"></a>定义
+### <a name="definition"></a>Definition
 
 在 300 个字符的相似度内，如果出现以下情况，DLP 策略 75% 确信它检测到这种类型的敏感信息：
 - 正则表达式 Regex_saudi_arabia_national_id 找到与该模式匹配的内容。
@@ -5392,8 +5391,8 @@ DLP 策略是相信它已检测到此类型的敏感信息的 75 %if、 内 300 
 
 ### <a name="pattern"></a>模式
 
-11-12 数字：
-- 两位数字 
+11-12 位数:
+- 两个数字  
 - 正斜杠（可选） 
 - 7-8 位数字 
 - 正斜杠（可选） 
@@ -5595,7 +5594,7 @@ Passeport n °
 - iso 9362
  
 - iso9362 
-- swift\# 
+- 反应\# 
 - swiftcode
  
 - swiftnumber
@@ -5611,8 +5610,8 @@ Passeport n °
  
 - bic code
  
-- bic\# 
-- bic\# 
+- numéro\# 
+- numéro\# 
 - bank identifier code
  
 - 標準化9362 
@@ -5641,7 +5640,7 @@ Passeport n °
  
 - le numéro BIC
  
-- \#BIC 
+- \#numéro 
 - code identificateur de banque
  
    
@@ -5656,7 +5655,7 @@ Passeport n °
 一个字母后跟 9 位数字：
 - 一个字母（英文，不区分大小写） 
 - 数字“1”或“2” 
-- 八个数字
+- 八位数字
 
 ### <a name="checksum"></a>校验和
 
@@ -5715,22 +5714,22 @@ Passeport n °
 
 ### <a name="format"></a>格式
 
-- 生物护照号码： 九个数字
-- 非生物护照号码： 九个数字
+- 生物识别护照号码: 9 个数字
+- 不带生物的护照号码: 9 个数字
 
 ### <a name="pattern"></a>模式
-生物护照号码：
+生物识别护照号码:
 - 数字“3”  
 - 八个数字
 
-非生物护照号码：
+不带生物的护照号码:
 - 九个数字
 
 ### <a name="checksum"></a>校验和
 
 否
 
-### <a name="definition"></a>定义
+### <a name="definition"></a>Definition
 
 在 300 个字符的相似度内，如果出现以下情况，DLP 策略 75% 确信它检测到这种类型的敏感信息：
 - 正则表达式 Regex_taiwan_passport 找到与该模式匹配的内容。
@@ -5753,7 +5752,7 @@ Passeport n °
 - 台湾 passport number
  
 - 护照号码 
-- Passport 没有 
+- 护照号 
 - Passport Num
  
 - Passport #
@@ -5780,7 +5779,7 @@ Passeport n °
 
 否
 
-### <a name="definition"></a>定义
+### <a name="definition"></a>Definition
 
 在 300 个字符的相似度内，如果出现以下情况，DLP 策略 75% 确信它检测到这种类型的敏感信息：
 - 正则表达式 Regex_taiwan_resident_certificate 找到与该模式匹配的内容。
@@ -5802,14 +5801,13 @@ Passeport n °
 
 - Resident Certificate
  
-- 驻留的证书 
+- 驻留证书 
 - Resident Cert.
  
-- 身份证 
+- 标识卡 
 - Alien Resident Certificate
  
-- ARC
- 
+- ARC 
 - Taiwan Area Resident Certificate
  
 - TARC
@@ -5821,7 +5819,7 @@ Passeport n °
 - 台灣地區居留證
  
 
-## <a name="thai-population-identification-code"></a>泰语总体标识代码
+## <a name="thai-population-identification-code"></a>泰语填充标识代码
 
 ### <a name="format"></a>格式
 
@@ -5830,7 +5828,7 @@ Passeport n °
 ### <a name="pattern"></a>模式
 
 13 个数字：
-- 第一个数字不是 0 或 9 
+- 第一个数字不是0或9 
 - 12 个数字
 
 ### <a name="checksum"></a>校验和
@@ -5840,11 +5838,11 @@ Passeport n °
 ### <a name="definition"></a>定义
 
 在 300 个字符的相似度内，如果出现以下情况，DLP 策略 85% 确信它检测到这种类型的敏感信息：
-- 函数 Func_Thai_Citizen_Id 查找与模式匹配的内容。
-- 找到从 Keyword_Thai_Citizen_Id 关键字。
+- 函数 Func_Thai_Citizen_Id 找到与该模式匹配的内容。
+- 找到 Keyword_Thai_Citizen_Id 中的关键字。
 
 在 300 个字符的相似度内，如果出现以下情况，DLP 策略 75% 确信它检测到这种类型的敏感信息：
-- 函数 Func_Thai_Citizen_Id 查找与模式匹配的内容。
+- 函数 Func_Thai_Citizen_Id 找到与该模式匹配的内容。
 
 ```
 <!-- Thai Citizen ID -->
@@ -5864,13 +5862,13 @@ Passeport n °
 #### <a name="keywordthaicitizenid"></a>Keyword_Thai_Citizen_Id
 
 - ID Number
-- 标识号
+- 标识号码
 - บัตรประชาชน
 - รหัสบัตรประชาชน
 - บัตรประชาชน
 - รหัสบัตรประชาชน
   
-## <a name="turkish-national-identification-number"></a>土耳其语的国家/地区标识号
+## <a name="turkish-national-identification-number"></a>土耳其国家标识号码
 
 ### <a name="format"></a>格式
 
@@ -5887,11 +5885,11 @@ Passeport n °
 ### <a name="definition"></a>定义
 
 在 300 个字符的相似度内，如果出现以下情况，DLP 策略 85% 确信它检测到这种类型的敏感信息：
-- 函数 Func_Turkish_National_Id 查找与模式匹配的内容。
-- 找到从 Keyword_Turkish_National_Id 关键字。
+- 函数 Func_Turkish_National_Id 找到与该模式匹配的内容。
+- 找到 Keyword_Turkish_National_Id 中的关键字。
 
 在 300 个字符的相似度内，如果出现以下情况，DLP 策略 75% 确信它检测到这种类型的敏感信息：
-- 函数 Func_Turkish_National_Id 查找与模式匹配的内容。
+- 函数 Func_Turkish_National_Id 找到与该模式匹配的内容。
 
 ```
 <!-- Turkish National Identity -->
@@ -5910,10 +5908,10 @@ Passeport n °
 
 #### <a name="keywordturkishnationalid"></a>Keyword_Turkish_National_Id
 
-- TC Kimlik 否
+- TC Kimlik No
 - TC Kimlik numarası
 - Vatandaşlık numarası
-- Vatandaşlık 没有
+- Vatandaşlık no
 
 ## <a name="uk-drivers-license-number"></a>英国驾驶证号码
 
@@ -5999,7 +5997,7 @@ Passeport n °
 
 否
 
-### <a name="definition"></a>定义
+### <a name="definition"></a>Definition
 
 在 300 个字符的相似度内，如果出现以下情况，DLP 策略 75% 确信它检测到这种类型的敏感信息：
 - 正则表达式 Regex_uk_electoral 找到与该模式匹配的内容。
@@ -6103,7 +6101,7 @@ Passeport n °
 - GP 
 - DOB
  
-- D.O.B 
+- D. B。 
 - Date of Birth
  
 - Birth Date
@@ -6113,15 +6111,15 @@ Passeport n °
 
 ### <a name="format"></a>格式
 
-7 个字符或 9 个字符，并用空格或短划线
+由空格或短划线分隔的7个字符或9个字符
 
 ### <a name="pattern"></a>模式
 
-两种可能的模式：
+两种可能的模式:
 
-- 两个字母 (有效 NINOs 使用此前缀，此模式中验证; 中只有某些字符不区分大小写)
+- 两个字母 (有效 NINOs 仅使用此前缀中的特定字符, 此格式将对此进行验证; 不区分大小写)
 - 六位数字
-- 任一 'A'，'B'，'C'，或具有 （如前缀，只某些字符允许在后缀; 不区分大小写）
+- "A"、"B"、"C" 或 "d" (与前缀一样, 后缀中只允许有某些字符; 不区分大小写)
 
 或者
 
@@ -6133,7 +6131,7 @@ Passeport n °
 - 一个空格或破折号
 - 两位数字
 - 一个空格或破折号
-- 任一 'A'，'B'，'C'，或具有
+- 要么是 "A"、"B"、"C", 要么 ' d '
 
 ### <a name="checksum"></a>校验和
 
@@ -6189,7 +6187,7 @@ Passeport n °
  
 - medical attention
  
-- 社会安全 
+- 社会保障 
 - great britain
  
 - insurance
@@ -6400,10 +6398,10 @@ Passeport n °
 
 - DL 
 - DLS 
-- CDL 
-- CDL 
+- 采用 
+- CDLS 
 - ID 
-- Id 
+- id 
 - DL# 
 - 
 DLS#
@@ -6419,7 +6417,7 @@ IDs#
 - ID 号 
 - ID numbers
  
-- LIC 
+- .lic 
 - LIC#
  
 
@@ -6429,44 +6427,44 @@ IDs#
 - DriverLics 
 - DriverLicense 
 - DriverLicenses 
-- 驱动程序 Lic 
-- 驱动程序 Lics 
+- 驱动程序许可证 
+- 驱动程序 driver'lics 
 - 驱动程序许可证 
 - 驱动程序许可证 
 - DriversLic 
 - DriversLics 
-- 驾驶员 
+- DriversLicense 
 - DriversLicenses 
-- 驱动因素 Lic 
-- 驱动因素 Lics 
+- 驱动程序许可证 
+- 驱动程序 driver'lics 
 - 驱动程序许可证 
 - 驱动程序许可证 
 - Driver'Lic 
 - Driver'Lics 
 - Driver'License 
 - Driver'Licenses 
-- 驱动因素 Lic 
-- 驱动因素 Lics 
-- 驱动因素许可证 
-- 驱动因素许可证
+- 驱动程序 "许可证 
+- 驱动程序 "driver'lics 
+- 驱动程序 ' License 
+- 驱动程序的许可证
 - Driver'sLic 
 - Driver'sLics 
 - Driver'sLicense 
 - Driver'sLicenses 
-- 驱动因素的 Lic 
-- 驱动因素的 Lics 
 - 驱动程序的许可证 
-- 驱动程序的许可证 
+- 驱动程序的 driver'lics 
+- 驾驶执照 
+- 驾驶许可证 
 - identification number
  
 - identification numbers
  
 - identification #
  
-- 身份证 
+- id 卡片 
 - id 卡 
-- 身份证 
-- 身份证 
+- 标识卡 
+- 识别卡 
 - DriverLic # 
 - DriverLics # 
 - DriverLicense # 
@@ -6475,16 +6473,16 @@ IDs#
 - 
 Driver Lics#
  
-- 驱动因素许可证 # 
-- 驱动因素许可证 # 
+- 驱动程序许可证 # 
+- 驱动程序许可证 # 
 - DriversLic # 
 - DriversLics # 
-- 驾驶员 # 
+- DriversLicense # 
 - DriversLicenses # 
-- 驱动因素 Lic # 
-- 驱动因素 Lics # 
-- 驱动因素许可证 # 
-- 驱动因素许可证 # 
+- 驱动程序许可证数量 
+- 驱动程序 driver'lics # 
+- 驱动程序许可证 # 
+- 驱动程序许可证 # 
 - Driver'Lic#
  
 - Driver'Lics#
@@ -6612,7 +6610,7 @@ Driver Lics#
 - ssn 
 - tin
  
-- 社会安全 
+- 社会保障 
 - tax payer
  
 - itins

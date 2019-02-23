@@ -6,7 +6,7 @@ manager: laurawi
 ms.audience: Admin
 ms.date: 02/08/2019
 ms.topic: overview
-ms.service: o365-administration
+ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection:
 - M365-security-compliance
@@ -15,12 +15,12 @@ search.appverid:
 - MOE150
 ms.assetid: 6e13311e-92ae-495e-a619-56d770199170
 description: "\"安全附件\" 功能可提供电子邮件附件的单击时间验证。使用安全附件保护组织免受用户在电子邮件中发送或接收的恶意文件的攻击。"
-ms.openlocfilehash: f8cdfe8027804eaa06784502f72110173f8fa61f
-ms.sourcegitcommit: 32cb896aef370764ec6e8f8278ebaf16f1c5ff37
+ms.openlocfilehash: 9e0a53acb55e4fcb81c071f3decaccde3b45c96a
+ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/20/2019
-ms.locfileid: "30123903"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "30215182"
 ---
 # <a name="office-365-atp-safe-attachments"></a>Office 365 ATP 安全附件
 

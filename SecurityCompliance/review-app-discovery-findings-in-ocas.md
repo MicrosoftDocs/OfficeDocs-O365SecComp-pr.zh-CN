@@ -5,19 +5,19 @@ author: denisebmsft
 manager: laurawi
 ms.audience: ITPro
 ms.topic: article
-ms.service: o365-administration
+ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid:
 - MET150
 - MOE150
 ms.assetid: aac65513-e75e-4c82-a668-9a6604dd9f9d
 description: 查看 Office 365 中的应用程序发现报告云应用安全可帮助您了解有关组织中的人员如何使用云应用的详细信息。在使用防火墙和代理中的日志文件创建应用程序发现报告之后, 请在应用发现仪表板中查看结果。
-ms.openlocfilehash: fa5ab7c6cd734feb26878cf1a97f7ce708aa1478
-ms.sourcegitcommit: 8679937354c1d8870ecd41519a59d2d7468c23c4
+ms.openlocfilehash: f50ad372450b2a1404829eeb6f6964c1d954dccd
+ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "30087331"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "30216252"
 ---
 # <a name="review-app-discovery-findings-in-office-365-cloud-app-security"></a>查看 Office 365 云应用安全中的应用发现结果
   

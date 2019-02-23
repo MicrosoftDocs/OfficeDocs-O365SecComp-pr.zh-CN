@@ -6,7 +6,7 @@ manager: laurawi
 ms.date: 8/21/2018
 audience: ITPro
 ms.topic: article
-ms.service: Office 365 Administration
+ms.service: O365-seccomp
 localization_priority: None
 search.appverid:
 - MET150
@@ -14,12 +14,12 @@ ms.collection:
 - Strat_O365_IP
 - M365-security-compliance
 description: 有关电子数据展示功能的概述, 以及 Office 365 中用于审核使用和透明度的其他搜索功能。
-ms.openlocfilehash: 5bab284c5fb66e50c945091766a329de7628abed
-ms.sourcegitcommit: c94cb88a9ce5bcc2d3c558f0fcc648519cc264a2
+ms.openlocfilehash: 0d1d0341407546659f4efffac8409edd46312810
+ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/20/2019
-ms.locfileid: "30091064"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "30214853"
 ---
 # <a name="ediscovery-and-search-features"></a>电子数据展示和搜索功能 
 

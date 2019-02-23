@@ -1,140 +1,139 @@
 ---
-title: 管理 Office 365 中的法律调查
+title: Office 365 中的法律调查管理
 ms.author: markjjo
 author: markjjo
 manager: laurawi
-ms.date: ''
 ms.audience: Admin
 ms.topic: hub-page
-ms.service: o365-administration
+ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid:
 - MOE150
 - MET150
 ms.assetid: 2e5fbe9f-ee4d-4178-8ff8-4356bc1b168e
-description: 在 Office 365 安全性中使用电子数据展示事例&amp;合规性中心管理组织的法律调查。如果您有 E5 订阅，您可以使用文本分析、 机器学习和预测编码功能的高级电子数据展示来进一步分析案例数据。
-ms.openlocfilehash: 4e7b9117b3f0cb2fd6d4e70a7767f3cbe7b79724
-ms.sourcegitcommit: 01813cb9bbc2400d21bc99144745af953f9356e8
+description: 使用 Office 365 安全&amp;合规中心中的电子数据展示案例来管理您的组织的法律调查。如果你拥有 E5 订阅, 则可以使用高级电子数据展示的文本分析、机器学习和预测编码功能进一步分析事例数据。
+ms.openlocfilehash: 5b3feb16b638235d46f67f6aa16ce49e1e7c11d5
+ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "25719046"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "30214392"
 ---
-# <a name="manage-legal-investigations-in-office-365"></a>管理 Office 365 中的法律调查
+# <a name="manage-legal-investigations-in-office-365"></a>Office 365 中的法律调查管理
 
-组织有响应法律案件涉及特定的执行官或您的组织中的其他员工的多个原因。这样做可能会快速查找并保留的进一步调查中电子邮件、 文档、 即时消息对话和其他内容的位置中其日常工作的任务的用户使用的特定信息。您可以通过使用 Office 365 安全性中电子数据展示案例工具执行这些组件及其他类似的多个活动&amp;合规性中心。
+组织有许多理由来响应与组织中的特定执行官或其他员工有关的法律案件。这可能包括快速查找和保留电子邮件、文档、即时消息对话以及人员在日常工作任务中使用的其他内容位置中的详细调查特定信息。您可以使用 Office 365 安全&amp;合规中心中的电子数据展示案例工具执行这些和许多其他类似活动。
   
-[管理法律调查与电子数据展示事例](#manage-legal-investigations-with-ediscovery-cases)
+[使用电子数据展示事例管理法律调查](#manage-legal-investigations-with-ediscovery-cases)
   
-[分析使用 Office 365 高级电子数据展示事例数据](#analyze-case-data-using-office-365-advanced-ediscovery)
+[使用 Office 365 高级电子数据展示分析事例数据](#analyze-case-data-using-office-365-advanced-ediscovery)
   
-**想要了解 Microsoft 如何管理其电子数据展示调查？** 下面是一种[技术白皮书](https://go.microsoft.com/fwlink/?linkid=852161)可以下载说明如何我们使用相同的 Office 365 搜索和调查工具管理我们内部电子数据展示工作流。
+**想要了解 Microsoft 如何管理其电子数据展示调查？** 下面是可下载的[技术白皮书](https://go.microsoft.com/fwlink/?linkid=852161), 可说明我们如何使用相同的 Office 365 搜索和调查工具来管理我们的内部电子数据展示工作流。
    
-## <a name="manage-legal-investigations-with-ediscovery-cases"></a>管理法律调查与电子数据展示事例
+## <a name="manage-legal-investigations-with-ediscovery-cases"></a>使用电子数据展示事例管理法律调查
 
-电子数据展示事例使您可以控制可以创建、 访问和管理组织中的电子数据展示事例。使用情况下添加成员和控制哪些类型的操作，他们可以执行，将内容位置置于保留与法律案件，并使用内容搜索工具来搜索位置保留可能对您的案例响应的内容。然后您还可以导出并下载进一步外部审阅者的调查这些结果。如果您的 Office 365 组织的 E5 订阅，您可以准备分析高级电子数据展示中搜索结果。
+通过电子数据展示事例, 可以控制哪些用户可以在组织中创建、访问和管理电子数据展示事例。用例可添加成员并控制他们可以执行的操作类型, 在与法律案件相关的内容位置放置保留, 并使用内容搜索工具在保留状态中搜索可能对你的案例做出响应的内容。然后, 您还可以导出和下载这些结果, 以供外部审阅者进一步调查。如果您的 Office 365 组织拥有 E5 订阅, 您还可以在高级电子数据展示中准备搜索结果以供分析。
   
-- [管理电子数据展示工作流](ediscovery-cases.md)创建并使用每个法律调查电子数据展示事例贵组织必须将要 
+- 通过为组织必须执行的每个法律调查创建和使用电子数据展示事例来[管理您的电子数据展示工作流](ediscovery-cases.md) 
     
-- 以控制哪些人可以创建和管理组织中的电子数据展示事例[分配电子数据展示权限](assign-ediscovery-permissions.md) 
+- [分配电子数据展示权限](assign-ediscovery-permissions.md)以控制可以在组织中创建和管理电子数据展示事例的用户 
     
-- [设置合规性边界](set-up-compliance-boundaries.md)来控制电子数据展示管理员可以搜索用户内容位置 
+- [设置合规性边界](set-up-compliance-boundaries.md)以控制电子数据展示管理器可搜索的用户内容位置 
     
-- 您的组织中[的内容的搜索](search-for-content.md) 
+- [搜索组织中的内容](search-for-content.md) 
     
-- [准备高级电子数据展示案例内容](prepare-search-results-for-advanced-ediscovery.md)以便您可以执行分析使用高级电子数据展示的强大分析工具，如光学字符识别、 电子邮件超线程，和预测编码 
+- [为高级电子数据展示准备事例内容](prepare-search-results-for-advanced-ediscovery.md), 以便您可以使用高级电子数据展示功能强大的分析工具 (例如光学字符识别、电子邮件线程和预测编码) 执行分析 
     
-### <a name="use-scripts-for-advanced-scenarios"></a>高级方案中使用脚本
+### <a name="use-scripts-for-advanced-scenarios"></a>将脚本用于高级方案
 
-像上一节列出用于内容搜索方案脚本，我们已创建一些安全&amp;合规性中心 PowerShell 脚本能够帮助您管理电子数据展示事例。
+与列出的内容搜索方案脚本的前一节一样, 我们还创建了一些&amp;安全合规性中心 PowerShell 脚本, 以帮助您管理电子数据展示事例。
   
-- 您的组织中[创建电子数据展示保留报告](create-a-report-on-holds-in-ediscovery-cases.md)包含有关所有信息保留电子数据展示事例相关联 
+- [创建一个电子数据展示保留报告](create-a-report-on-holds-in-ediscovery-cases.md), 其中包含有关与组织中的电子数据展示事例相关的所有保留的信息 
     
-- [添加邮箱和 OneDrive 位置](use-a-script-to-add-users-to-a-hold-in-ediscovery.md)的一组用户的电子数据展示保留 
+- 将用户列表的[邮箱和 OneDrive 位置添加](use-a-script-to-add-users-to-a-hold-in-ediscovery.md)到电子数据展示保留 
   
-## <a name="analyze-case-data-using-office-365-advanced-ediscovery"></a>分析使用 Office 365 高级电子数据展示事例数据
+## <a name="analyze-case-data-using-office-365-advanced-ediscovery"></a>使用 Office 365 高级电子数据展示分析事例数据
 
-Office 365 高级电子数据展示基于前面几节中所述的内容搜索和电子数据展示功能。创建电子数据展示事例后上的位置 custodian 位置，并收集数据可能响应大小写的您可以然后进一步分析数据使用的文本分析、 学习，计算机和高级的预测编码功能电子数据展示。这可以帮助您快速处理数千个电子邮件、 文档和其他类型的数据，以查找最有可能的那些项目与特定案例相关的组织。以便您可以无缝地管理安全性中相同的大小写，我们已统一案例管理和高级电子数据展示&amp;合规性中心。
+Office 365 高级电子数据展示构建在上一节中介绍的内容搜索和电子数据展示功能。创建电子数据展示事例后, 将保管人位置置于保留状态, 并收集可能响应的数据, 然后可以使用文本分析、机器学习和高级的预测编码功能进一步分析数据发现.这可帮助您的组织快速处理数以千计的电子邮件、文档和其他类型的数据, 以查找最可能与特定事例相关的那些项目。而且, 我们有统一的案例管理和高级电子数据展示, 以便您可以在安全&amp;合规性中心内无缝地管理相同事例。
   
 > [!NOTE]
-> 若要分析使用高级电子数据展示的用户的数据，用户 (数据的 custodian) 必须分配的 Office 365 E5 许可证。此外，可使用 Office 365 E1 或 E3 许可证的用户分配的高级电子数据展示独立许可证。管理员和合规部主管分配给情况下，并使用高级电子数据展示以分析数据不需要 E5 许可证。 
+> 若要使用高级电子数据展示分析用户的数据, 必须为用户 (数据管理员) 分配 Office 365 E5 许可证。或者, 可以为具有 Office 365 E1 或 E3 许可证的用户分配高级电子数据展示独立许可证。分配给案例并使用高级电子数据展示分析数据的管理员和合规性监察官不需要 E5 许可证。 
   
 ### <a name="get-started"></a>入门
 
-开始使用高级电子数据展示的最快方式是创建案例并准备中安全的搜索结果&amp;合规性中心加载高级电子数据展示，在这些结果，并运行 Express 分析可分析 case 数据，然后将导出外部审阅结果。
+开始使用高级电子数据展示的最快方法是在安全&amp;合规中心中创建事例并准备搜索结果, 在高级电子数据展示中加载这些结果, 然后运行快速分析以分析该事例数据, 然后导出外部评审的结果。
   
-- 高级电子数据展示工作流的[快速概览](quick-setup-for-advanced-ediscovery.md) 
+- 获取高级电子数据展示工作流的[快速概述](quick-setup-for-advanced-ediscovery.md) 
     
-- 通过创建案例高级电子数据展示中[设置用户和情况下](set-up-users-and-cases-in-advanced-ediscovery.md)，将电子数据展示权限分配和添加案例成员，所有使用安全&amp;合规性中心 
+- 通过创建案例、分配电子数据展示权限和添加事例成员来设置高级电子数据展示的[用户和案例](set-up-users-and-cases-in-advanced-ediscovery.md), 具体方法是&amp;使用安全合规性中心 
     
-- [准备和负载搜索数据](prepare-data-for-advanced-ediscovery.md)中与在高级电子数据展示案例 
+- 在高级电子数据展示中为事例[准备和加载搜索数据](prepare-data-for-advanced-ediscovery.md) 
     
-- [加载非 Office 365 数据](import-non-office-365-data-into-advanced-ediscovery.md)中为案例分析高级电子数据展示中 
+- 将[非 Office 365 数据加载](import-non-office-365-data-into-advanced-ediscovery.md)到事例中, 以在高级电子数据展示中对其进行分析 
     
-- [使用 Express 分析](use-express-analysis-in-advanced-ediscovery.md)快速分析用例中的数据，然后方便地将导出结果 
+- [使用快速分析](use-express-analysis-in-advanced-ediscovery.md)在案例中快速分析数据, 然后轻松导出结果 
     
 ### <a name="analyze-data"></a>分析数据
 
-搜索数据加载到中高级电子数据展示案例后，您将使用分析模块启动分析它。分析过程的第一部分包含组织到组中的唯一文件，重复项的文件和近乎重复项 （又称文档相似性）。然后您将再次将数据组织为电子邮件线程和主题的分层结构组，并 （可选） 设置忽略文本筛选器，某些文本排除分析。然后您将运行分析，并查看结果。
+在高级电子数据展示中, 将搜索数据加载到事例中之后, 您将使用分析模块开始对其进行分析。分析过程的第一部分包括将文件组织成一组唯一的文件、重复项和临近的重复项 (也称为 "文档相似性")。然后, 将数据再次组织成分层的电子邮件线程和主题组, 并根据需要设置 "忽略文本" 筛选器, 以从分析中排除某些文本。然后, 运行分析并查看结果。
   
-- [了解有关文档相似性](understand-document-similarity-in-advanced-ediscovery.md)准备高级电子数据展示中分析数据 
+- 了解用于准备在高级电子数据展示中分析数据的[文档相似性](understand-document-similarity-in-advanced-ediscovery.md) 
     
-- 为近乎重复项、 主题和电子邮件超线程，然后运行分析模块中[设置选项](set-analyze-options-in-advanced-ediscovery.md) 
+- 设置临近的重复、主题和电子邮件线程[的选项](set-analyze-options-in-advanced-ediscovery.md), 然后运行分析模块 
     
-- [设置忽略文本筛选器](set-ignore-text-in-advanced-ediscovery.md)从正在分析; 排除文本和文本字符串运行相关性分析时，这些筛选器还将忽略文本 
+- [设置 "忽略文本" 筛选器](set-ignore-text-in-advanced-ediscovery.md)以排除分析文本和文本字符串;当您运行相关性分析时, 这些筛选器也将忽略文本 
     
-- 分析过程的[查看结果](view-analyze-results-in-advanced-ediscovery.md) 
+- [查看](view-analyze-results-in-advanced-ediscovery.md)分析过程的结果 
     
-- 分析过程的[高级设置的配置](set-analyze-advanced-settings-in-advanced-ediscovery.md) 
+- 配置分析过程的[高级设置](set-analyze-advanced-settings-in-advanced-ediscovery.md) 
     
 ### <a name="set-up-relevance-training"></a>设置相关性培训
 
-预测高级中编码 （称为的相关性） 电子数据展示可以培训上所需通过让您决定 （关于是否内容是相关或不） 的系统上的小型文档集。
+高级电子数据展示中的预测编码 (称为相关性) 使您能够通过在一小组文档中做出决定 (有关是否相关或不相关) 来培训系统。
   
-- [了解如何设置相关性培训](manage-relevance-setup-in-advanced-ediscovery.md)，标记与案例相关的文件和定义案例问题 
+- [了解如何设置相关性培训](manage-relevance-setup-in-advanced-ediscovery.md)、标记与案例相关的文件, 以及定义案例问题 
     
-- [定义案例问题](define-issues-and-assign-users.md)并将每个问题分配给将培训文件的用户 
+- [定义案例问题](define-issues-and-assign-users.md)并将每个问题分配给将对文件进行训练的用户 
     
-- [添加到当前或新负载导入的文件](set-up-loads-to-add-imported-files.md)将添加到的相关性培训;负载是一批新的文件添加到用例和然后可用于相关性培训 
+- 将[导入的文件添加到](set-up-loads-to-add-imported-files.md)将添加到相关性培训中的当前或新加载;负载是添加到事例中并用于相关性培训的一批新文件。 
     
-- [定义突出显示关键字](define-highlighted-keywords-and-advanced-options.md)可以添加到的相关性培训;这可以帮助您更好地标识与案例相关的文件 
+- 定义可添加到相关性培训中的[突出显示的关键字](define-highlighted-keywords-and-advanced-options.md);这有助于更好地识别与事例相关的文件 
     
 ### <a name="run-the-relevance-module"></a>运行相关性模块
 
-后设置培训，您就可以运行相关性模块并评估此结果的相关性排名，可帮助您决定如果您需要执行其他培训，或者如果您已经准备好开始标记文件作为的培训设置的有效性与您的案例相关。
+设置培训后, 您就可以运行相关性模块并评估相关培训设置的有效性, 这会导致相关性排名, 帮助您决定是否需要执行其他培训, 或者是否准备好开始将文件标记为与你的案例相关。
   
-- [了解有关相关性过程](use-relevance-in-advanced-ediscovery.md)和评估的迭代过程，标记、 跟踪和重新培训基于示例组文件 
+- 了解基于文件示例集的相关评估、标记、跟踪和重新培训的[相关性过程](use-relevance-in-advanced-ediscovery.md)和迭代过程 
     
-- [了解评估](assessment-in-relevance-in-advanced-ediscovery.md)，其中专家熟悉的与案例评审一案例文件并确定的相关性培训效果 
+- [了解评估](assessment-in-relevance-in-advanced-ediscovery.md), 即熟悉案例的专家将查看一组事例文件, 并确定相关性培训的有效性 
     
-- [Assess 案例文件](tagging-and-assessment-in-advanced-ediscovery.md)来计算有效性 （称为*丰富*） 的培训设置，然后选择作为相关或与您的案例; 不相关的标记文件这有助于您确定当前的培训是否足够，或者是否应调整培训设置。 
+- [评估事例文件](tagging-and-assessment-in-advanced-ediscovery.md)以计算培训设置的有效性 (称为*丰富*程度), 然后将文件标记为与您的事例相关或不相关。这可帮助您确定当前培训是否足够, 或者是否应调整培训设置。 
     
-- [执行相关性培训](tagging-and-relevance-training-in-advanced-ediscovery.md)后评估已完成，，然后再次标记为用例文件作为相关或不相关到已定义的问题 
+- 完成评估后[执行相关性培训](tagging-and-relevance-training-in-advanced-ediscovery.md), 然后再次将文件标记为与您为事例定义的问题相关或不相关 
     
-- [跟踪相关性分析](track-relevance-analysis-in-advanced-ediscovery.md)过程，以确定您评估目标 （称为*稳定培训状态*） 或是否需要更多培训; 是否实现相关性培训您还可以查看每个案例问题的相关性结果 
+- [跟踪相关性分析](track-relevance-analysis-in-advanced-ediscovery.md)流程, 以确定相关性培训是否已实现评估目标 (称为 "*稳定培训状态*"), 或者是否需要更多培训;您还可以查看每个案例问题的相关性结果 
     
-- [根据相关性分析做出决定](decision-based-on-the-results-in-advanced-ediscovery.md)确定用例的结果集的大小文件的可导出供审阅 
+- [根据相关性分析做出决策](decision-based-on-the-results-in-advanced-ediscovery.md), 以确定可导出以供审阅的结果事例文件集的大小 
     
-- [测试相关性分析的质量](test-relevance-analysis-in-advanced-ediscovery.md)以验证挑选相关性过程中所做的决策 
+- [测试相关性分析的质量](test-relevance-analysis-in-advanced-ediscovery.md), 以验证在相关性过程中做出的挑选决定 
     
 ### <a name="export-results"></a>导出结果
 
-案例中分析数据高级电子数据展示的最后一步是导出外部审阅分析的结果。
+在高级电子数据展示中分析事例数据的最后一步是导出分析结果以供外部审阅。
   
-- [了解如何导出案例数据](export-case-data-in-advanced-ediscovery.md)
+- [了解如何导出事例数据](export-case-data-in-advanced-ediscovery.md)
     
-- [将数据导出案例](export-results-in-advanced-ediscovery.md)
+- [导出事例数据](export-results-in-advanced-ediscovery.md)
     
 - [查看批处理历史记录和导出过去的结果](view-batch-history-and-export-past-results.md)
     
-- [导出报表字段](export-report-fields-in-advanced-ediscovery.md)
+- [导出报告字段](export-report-fields-in-advanced-ediscovery.md)
     
 ### <a name="other-advanced-ediscovery-tools"></a>其他高级电子数据展示工具
 
-高级电子数据展示提供其他工具和功能之外分析案例数据，相关性分析和导出数据的功能。
+高级电子数据展示不仅提供了分析事例数据、相关性分析和导出数据之外的其他工具和功能。
   
 - [运行高级电子数据展示报告](run-reports-in-advanced-ediscovery.md)
     
-- [定义案例和租户设置](define-case-and-tenant-settings-in-advanced-ediscovery.md)
+- [定义大小写和租户设置](define-case-and-tenant-settings-in-advanced-ediscovery.md)
     
 - [高级电子数据展示实用程序](use-advanced-ediscovery-utilities.md)

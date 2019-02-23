@@ -6,7 +6,7 @@ manager: laurawi
 ms.date: 8/21/2018
 audience: ITPro
 ms.topic: article
-ms.service: Office 365 Administration
+ms.service: O365-seccomp
 localization_priority: None
 search.appverid:
 - MET150
@@ -14,12 +14,12 @@ ms.collection:
 - Strat_O365_IP
 - M365-security-compliance
 description: Office 365 中的 SharePoint Online 中的数据恢复概述。
-ms.openlocfilehash: c550cb6572cb71b53cd544af64339129f72b888f
-ms.sourcegitcommit: c94cb88a9ce5bcc2d3c558f0fcc648519cc264a2
+ms.openlocfilehash: 4fd17b50551639f6e11975acbc3822fb6ffa8bb2
+ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/20/2019
-ms.locfileid: "30090884"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "30214802"
 ---
 # <a name="sharepoint-online-data-resiliency"></a>SharePoint Online 数据恢复能力
 SharePoint Online 的关键原则是永远不会有任何数据块的单个副本。SharePoint Online 使用 SQL Server 复制, 这是一组用于将数据和数据库对象从一个数据库复制并分发到另一个数据库的技术, 然后在数据库之间进行同步以保持一致性。 
