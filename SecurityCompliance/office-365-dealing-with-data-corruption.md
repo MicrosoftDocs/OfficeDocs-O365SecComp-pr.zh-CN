@@ -6,7 +6,7 @@ manager: laurawi
 ms.date: 8/21/2018
 audience: ITPro
 ms.topic: article
-ms.service: Office 365 Administration
+ms.service: O365-seccomp
 localization_priority: None
 search.appverid:
 - MET150
@@ -14,27 +14,27 @@ ms.collection:
 - Strat_O365_IP
 - M365-security-compliance
 description: Office 365 中的数据损坏的说明, 以及 Microsoft 预防和恢复的努力。
-ms.openlocfilehash: 54c7c69856f02d44d5c434badb30ababaa32ba1e
-ms.sourcegitcommit: c94cb88a9ce5bcc2d3c558f0fcc648519cc264a2
+ms.openlocfilehash: d33cb298c432db45d560e4c2876d9ac34ab9d6f4
+ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/20/2019
-ms.locfileid: "30090694"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "30216542"
 ---
-# <a name="dealing-with-data-corruption-in-office-365"></a><span data-ttu-id="b3ef1-103">处理 Office 365 中的数据损坏</span><span class="sxs-lookup"><span data-stu-id="b3ef1-103">Dealing with Data Corruption in Office 365</span></span>
+# <a name="dealing-with-data-corruption-in-office-365"></a><span data-ttu-id="ee6f4-103">处理 Office 365 中的数据损坏</span><span class="sxs-lookup"><span data-stu-id="ee6f4-103">Dealing with Data Corruption in Office 365</span></span>
 
-<span data-ttu-id="b3ef1-p101">运行大型云服务的一个有挑战性的方面是, 如果数据量和独立系统的数据量较大, 如何处理数据损坏。数据损坏可能是由以下原因导致的:</span><span class="sxs-lookup"><span data-stu-id="b3ef1-p101">One of the challenging aspects of running a large-scale cloud service is how to handle data corruption, given the large volume of data and independent systems. Data corruption can be caused by:</span></span>
-- <span data-ttu-id="b3ef1-106">应用程序或基础结构错误, 损坏部分或全部应用程序状态</span><span class="sxs-lookup"><span data-stu-id="b3ef1-106">Application or infrastructure bugs, corrupting some or all of the application state</span></span> 
-- <span data-ttu-id="b3ef1-107">导致数据丢失或无法读取数据的硬件问题</span><span class="sxs-lookup"><span data-stu-id="b3ef1-107">Hardware issues that result in lost data or an inability to read data</span></span> 
-- <span data-ttu-id="b3ef1-108">人为操作错误</span><span class="sxs-lookup"><span data-stu-id="b3ef1-108">Human operational errors</span></span> 
-- <span data-ttu-id="b3ef1-109">恶意黑客和不满意的员工</span><span class="sxs-lookup"><span data-stu-id="b3ef1-109">Malicious hackers and disgruntled employees</span></span> 
-- <span data-ttu-id="b3ef1-110">外部服务中导致数据丢失的事件</span><span class="sxs-lookup"><span data-stu-id="b3ef1-110">Incidents in external services that result in some loss of data</span></span> 
+<span data-ttu-id="ee6f4-p101">运行大型云服务的一个有挑战性的方面是, 如果数据量和独立系统的数据量较大, 如何处理数据损坏。数据损坏可能是由以下原因导致的:</span><span class="sxs-lookup"><span data-stu-id="ee6f4-p101">One of the challenging aspects of running a large-scale cloud service is how to handle data corruption, given the large volume of data and independent systems. Data corruption can be caused by:</span></span>
+- <span data-ttu-id="ee6f4-106">应用程序或基础结构错误, 损坏部分或全部应用程序状态</span><span class="sxs-lookup"><span data-stu-id="ee6f4-106">Application or infrastructure bugs, corrupting some or all of the application state</span></span> 
+- <span data-ttu-id="ee6f4-107">导致数据丢失或无法读取数据的硬件问题</span><span class="sxs-lookup"><span data-stu-id="ee6f4-107">Hardware issues that result in lost data or an inability to read data</span></span> 
+- <span data-ttu-id="ee6f4-108">人为操作错误</span><span class="sxs-lookup"><span data-stu-id="ee6f4-108">Human operational errors</span></span> 
+- <span data-ttu-id="ee6f4-109">恶意黑客和不满意的员工</span><span class="sxs-lookup"><span data-stu-id="ee6f4-109">Malicious hackers and disgruntled employees</span></span> 
+- <span data-ttu-id="ee6f4-110">外部服务中导致数据丢失的事件</span><span class="sxs-lookup"><span data-stu-id="ee6f4-110">Incidents in external services that result in some loss of data</span></span> 
 
-<span data-ttu-id="b3ef1-p102">由于数据完整性方面的更高的恢复意味着较少的数据损坏事件, Microsoft 已经内置了 Office 365 保护机制, 以防止发生损坏, 以及使我们能够恢复数据的系统和进程。在工程发布过程的各个阶段中都存在检查和流程, 以提高对数据损坏的恢复能力, 包括:</span><span class="sxs-lookup"><span data-stu-id="b3ef1-p102">Because greater resiliency in data integrity means fewer data corruption incidents, Microsoft has built into Office 365 protection mechanisms to prevent corruption from happening, as well as systems and processes that enable us to recover data if it does. Checks and processes exist within the various stages of the engineering release process to increase resiliency against data corruption, including:</span></span>
-- <span data-ttu-id="b3ef1-113">系统设计</span><span class="sxs-lookup"><span data-stu-id="b3ef1-113">System Design</span></span>
-- <span data-ttu-id="b3ef1-114">代码组织和结构</span><span class="sxs-lookup"><span data-stu-id="b3ef1-114">Code organization and structure</span></span> 
-- <span data-ttu-id="b3ef1-115">代码评审</span><span class="sxs-lookup"><span data-stu-id="b3ef1-115">Code review</span></span> 
-- <span data-ttu-id="b3ef1-116">单元测试、集成测试和系统测试</span><span class="sxs-lookup"><span data-stu-id="b3ef1-116">Unit tests, integration tests, and system tests</span></span>
-- <span data-ttu-id="b3ef1-117">行程线路测试/关口</span><span class="sxs-lookup"><span data-stu-id="b3ef1-117">Trip wires tests/gates</span></span> 
+<span data-ttu-id="ee6f4-p102">由于数据完整性方面的更高的恢复意味着较少的数据损坏事件, Microsoft 已经内置了 Office 365 保护机制, 以防止发生损坏, 以及使我们能够恢复数据的系统和进程。在工程发布过程的各个阶段中都存在检查和流程, 以提高对数据损坏的恢复能力, 包括:</span><span class="sxs-lookup"><span data-stu-id="ee6f4-p102">Because greater resiliency in data integrity means fewer data corruption incidents, Microsoft has built into Office 365 protection mechanisms to prevent corruption from happening, as well as systems and processes that enable us to recover data if it does. Checks and processes exist within the various stages of the engineering release process to increase resiliency against data corruption, including:</span></span>
+- <span data-ttu-id="ee6f4-113">系统设计</span><span class="sxs-lookup"><span data-stu-id="ee6f4-113">System Design</span></span>
+- <span data-ttu-id="ee6f4-114">代码组织和结构</span><span class="sxs-lookup"><span data-stu-id="ee6f4-114">Code organization and structure</span></span> 
+- <span data-ttu-id="ee6f4-115">代码评审</span><span class="sxs-lookup"><span data-stu-id="ee6f4-115">Code review</span></span> 
+- <span data-ttu-id="ee6f4-116">单元测试、集成测试和系统测试</span><span class="sxs-lookup"><span data-stu-id="ee6f4-116">Unit tests, integration tests, and system tests</span></span>
+- <span data-ttu-id="ee6f4-117">行程线路测试/关口</span><span class="sxs-lookup"><span data-stu-id="ee6f4-117">Trip wires tests/gates</span></span> 
 
-<span data-ttu-id="b3ef1-p103">在 Office 365 生产环境中, 数据中心之间的对等复制可确保始终有任何数据的多个活动副本。标准图像和脚本用于恢复丢失的服务器, 复制的数据用于还原客户数据。由于内置的数据弹性检查和过程, Microsoft 在 SharePoint Online 和我们的内部代码中使用内置复制功能, 仅维护 Office 365 信息系统文档 (包括与安全相关的文档) 的备份存储库工具, 源仓库。系统文档存储在 SharePoint Online 中, 源仓库包含系统和应用程序映像。SharePoint Online 和源仓库都使用版本控制, 并在近实时进行复制。</span><span class="sxs-lookup"><span data-stu-id="b3ef1-p103">Within Office 365 production environments, peer replication between datacenters ensures that there are always multiple live copies of any data. Standard images and scripts are used to recover lost servers, and replicated data is used to restore customer data. Because of the built-in data resiliency checks and processes, Microsoft maintains backups only of Office 365 information system documentation (including security-related documentation), using built-in replication in SharePoint Online and our internal code repository tool, Source Depot. System documentation is stored in SharePoint Online, and Source Depot contains system and application images. Both SharePoint Online and Source Depot use versioning and are replicated in near real-time.</span></span> 
+<span data-ttu-id="ee6f4-p103">在 Office 365 生产环境中, 数据中心之间的对等复制可确保始终有任何数据的多个活动副本。标准图像和脚本用于恢复丢失的服务器, 复制的数据用于还原客户数据。由于内置的数据弹性检查和过程, Microsoft 在 SharePoint Online 和我们的内部代码中使用内置复制功能, 仅维护 Office 365 信息系统文档 (包括与安全相关的文档) 的备份存储库工具, 源仓库。系统文档存储在 SharePoint Online 中, 源仓库包含系统和应用程序映像。SharePoint Online 和源仓库都使用版本控制, 并在近实时进行复制。</span><span class="sxs-lookup"><span data-stu-id="ee6f4-p103">Within Office 365 production environments, peer replication between datacenters ensures that there are always multiple live copies of any data. Standard images and scripts are used to recover lost servers, and replicated data is used to restore customer data. Because of the built-in data resiliency checks and processes, Microsoft maintains backups only of Office 365 information system documentation (including security-related documentation), using built-in replication in SharePoint Online and our internal code repository tool, Source Depot. System documentation is stored in SharePoint Online, and Source Depot contains system and application images. Both SharePoint Online and Source Depot use versioning and are replicated in near real-time.</span></span> 

@@ -1,42 +1,42 @@
 ---
-title: 在 Office 365 中的电子数据展示事例中保留创建报表
+title: 在 Office 365 中的电子数据展示事例中创建保留报告
 ms.author: markjjo
 author: markjjo
 manager: laurawi
 ms.date: 9/11/2017
 ms.audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid: MOE150
 ms.assetid: cca08d26-6fbf-4b2c-b102-b226e4cd7381
-description: 使用本文中的脚本来生成报告包含有关与 Office 365 安全性的电子数据展示事例关联的所有保留项信息&amp;合规性中心。
-ms.openlocfilehash: b6cef2824002d7e45e4f500bc6c1e9bc880cbd41
-ms.sourcegitcommit: 7956955cd919f6e00b64e4506605a743c5872549
+description: 使用本文中的脚本生成一个报告, 该报告包含有关与 Office 365 安全&amp;合规中心中的电子数据展示事例相关联的所有保留的信息。
+ms.openlocfilehash: cf547ff7c76ba6e16a3bde18465ae0aef9ab4075
+ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/26/2018
-ms.locfileid: "25038205"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "30217433"
 ---
-# <a name="create-a-report-on-holds-in-ediscovery-cases-in-office-365"></a><span data-ttu-id="d3076-103">在 Office 365 中的电子数据展示事例中保留创建报表</span><span class="sxs-lookup"><span data-stu-id="d3076-103">Create a report on holds in eDiscovery cases in Office 365</span></span>
+# <a name="create-a-report-on-holds-in-ediscovery-cases-in-office-365"></a><span data-ttu-id="088f9-103">在 Office 365 中的电子数据展示事例中创建保留报告</span><span class="sxs-lookup"><span data-stu-id="088f9-103">Create a report on holds in eDiscovery cases in Office 365</span></span>
   
-<span data-ttu-id="d3076-p101">本文中的脚本允许电子数据展示管理员和电子数据展示管理员生成报告包含有关与 Office 365 安全性的电子数据展示事例关联的所有保留的信息的&amp;合规性中心。该报告包含信息，如条件保留名称的相关联的内容位置的置于保持状态，以及是否保留项是基于查询的。如果没有任何保留的情况下，脚本将创建其他报告的情况下，不保留项列表。</span><span class="sxs-lookup"><span data-stu-id="d3076-p101">The script in this article lets eDiscovery administrators and eDiscovery managers generate a report that contains information about all holds that are associated with eDiscovery cases in the Office 365 Security &amp; Compliance Center. The report contains information such as the name of the case a hold is associated with, the content locations that are placed on hold, and whether the hold is query-based. If there are cases that don't have any holds, the script will create an additional report with a list of cases without holds.</span></span>
+<span data-ttu-id="088f9-p101">本文中的脚本允许电子数据展示管理员和电子数据展示管理器生成一个报告, 其中包含有关与 Office 365 安全&amp;合规中心中的电子数据展示事例相关联的所有保留的信息。报告包含与保留相关联的事例的名称、放置在保留中的内容位置以及保留是否基于查询的信息。如果存在不包含任何保留的案例, 该脚本将创建另一个报告, 其中包含不含 "保留" 的案例列表。</span><span class="sxs-lookup"><span data-stu-id="088f9-p101">The script in this article lets eDiscovery administrators and eDiscovery managers generate a report that contains information about all holds that are associated with eDiscovery cases in the Office 365 Security &amp; Compliance Center. The report contains information such as the name of the case a hold is associated with, the content locations that are placed on hold, and whether the hold is query-based. If there are cases that don't have any holds, the script will create an additional report with a list of cases without holds.</span></span>
 
-<span data-ttu-id="d3076-107">请参阅有关的信息包括在报表的详细说明[详细信息](#more-information)部分。</span><span class="sxs-lookup"><span data-stu-id="d3076-107">See the [More information](#more-information) section for a detailed description of the information included in the report.</span></span> 
+<span data-ttu-id="088f9-107">有关报告中包含的信息的详细说明, 请参阅[详细信息](#more-information)部分。</span><span class="sxs-lookup"><span data-stu-id="088f9-107">See the [More information](#more-information) section for a detailed description of the information included in the report.</span></span> 
   
-## <a name="before-you-begin"></a><span data-ttu-id="d3076-108">准备工作</span><span class="sxs-lookup"><span data-stu-id="d3076-108">Before you begin</span></span>
+## <a name="before-you-begin"></a><span data-ttu-id="088f9-108">准备工作</span><span class="sxs-lookup"><span data-stu-id="088f9-108">Before you begin</span></span>
 
-- <span data-ttu-id="d3076-p102">若要生成您的组织中的所有电子数据展示事例报告，您必须是电子数据展示管理员在组织中。如果您是经理电子数据展示，报告将仅包含有关您可以访问的用例信息。有关电子数据展示权限的详细信息，请参阅[分配 Office 365 安全性的电子数据展示权限&amp;合规性中心](assign-ediscovery-permissions.md)。</span><span class="sxs-lookup"><span data-stu-id="d3076-p102">To generate a report on all eDiscovery cases in your organization, you have to be an eDiscovery Administrator in your organization. If you are an eDiscovery Manager, the report will only include information about the cases that you can access. For more information about eDiscovery permissions, see [Assign eDiscovery permissions in the Office‍ 365 Security &amp; Compliance Center](assign-ediscovery-permissions.md).</span></span>
+- <span data-ttu-id="088f9-p102">若要生成组织中所有电子数据展示事例的报告, 您必须是组织中的电子数据展示管理员。如果您是电子数据展示管理器, 则报告将仅包含有关您可以访问的事例的信息。有关电子数据展示权限的详细信息, 请参阅[在 Office 365 安全&amp;合规中心中分配电子数据展示权限](assign-ediscovery-permissions.md)。</span><span class="sxs-lookup"><span data-stu-id="088f9-p102">To generate a report on all eDiscovery cases in your organization, you have to be an eDiscovery Administrator in your organization. If you are an eDiscovery Manager, the report will only include information about the cases that you can access. For more information about eDiscovery permissions, see [Assign eDiscovery permissions in the Office‍ 365 Security &amp; Compliance Center](assign-ediscovery-permissions.md).</span></span>
     
-- <span data-ttu-id="d3076-p103">本文中的脚本具有最少的错误处理。主要用途是快速创建有关保留与您的组织中的电子数据展示事例关联的报告。</span><span class="sxs-lookup"><span data-stu-id="d3076-p103">The script in this article has minimal error handling. The primary purpose is to quickly create report about the holds that are associated with the eDiscovery cases in your organization.</span></span>
+- <span data-ttu-id="088f9-p103">本文中的脚本具有最少的错误处理。主要目的是快速创建有关与组织中的电子数据展示事例相关联的保留报告。</span><span class="sxs-lookup"><span data-stu-id="088f9-p103">The script in this article has minimal error handling. The primary purpose is to quickly create report about the holds that are associated with the eDiscovery cases in your organization.</span></span>
     
-- <span data-ttu-id="d3076-p104">本主题中的示例脚本不受任何 Microsoft 标准支持计划或服务支持。示例脚本按原样提供，不提供任何种类的担保。Microsoft 进一步声明，不提供任何默示担保，包括但不限于适销性或特定用途适用性的默示担保。使用或运行示例脚本和文档所产生的任何风险均由你自己承担。对于因使用或无法使用示例脚本或文档而产生的任何损失（包括但不限于商业利润损失、业务中断、业务信息丢失或其他金钱损失），Microsoft、脚本作者或参与创建、生成或交付脚本的任何人都不承担任何责任，即使 Microsoft 已被告知存在这种损失的可能性，也不例外。</span><span class="sxs-lookup"><span data-stu-id="d3076-p104">The sample scripts provided in this topic aren't supported under any Microsoft standard support program or service. The sample scripts are provided AS IS without warranty of any kind. Microsoft further disclaims all implied warranties including, without limitation, any implied warranties of merchantability or of fitness for a particular purpose. The entire risk arising out of the use or performance of the sample scripts and documentation remains with you. In no event shall Microsoft, its authors, or anyone else involved in the creation, production, or delivery of the scripts be liable for any damages whatsoever (including, without limitation, damages for loss of business profits, business interruption, loss of business information, or other pecuniary loss) arising out of the use of or inability to use the sample scripts or documentation, even if Microsoft has been advised of the possibility of such damages.</span></span>
+- <span data-ttu-id="088f9-p104">本主题中的示例脚本不受任何 Microsoft 标准支持计划或服务支持。示例脚本按原样提供，不提供任何种类的担保。Microsoft 进一步声明，不提供任何默示担保，包括但不限于适销性或特定用途适用性的默示担保。使用或运行示例脚本和文档所产生的任何风险均由你自己承担。对于因使用或无法使用示例脚本或文档而产生的任何损失（包括但不限于商业利润损失、业务中断、业务信息丢失或其他金钱损失），Microsoft、脚本作者或参与创建、生成或交付脚本的任何人都不承担任何责任，即使 Microsoft 已被告知存在这种损失的可能性，也不例外。</span><span class="sxs-lookup"><span data-stu-id="088f9-p104">The sample scripts provided in this topic aren't supported under any Microsoft standard support program or service. The sample scripts are provided AS IS without warranty of any kind. Microsoft further disclaims all implied warranties including, without limitation, any implied warranties of merchantability or of fitness for a particular purpose. The entire risk arising out of the use or performance of the sample scripts and documentation remains with you. In no event shall Microsoft, its authors, or anyone else involved in the creation, production, or delivery of the scripts be liable for any damages whatsoever (including, without limitation, damages for loss of business profits, business interruption, loss of business information, or other pecuniary loss) arising out of the use of or inability to use the sample scripts or documentation, even if Microsoft has been advised of the possibility of such damages.</span></span>
     
-## <a name="step-1-connect-to-the-security-amp-compliance-center-using-remote-powershell"></a><span data-ttu-id="d3076-119">步骤 1： 连接到安全性&amp;合规性中心使用远程 PowerShell</span><span class="sxs-lookup"><span data-stu-id="d3076-119">Step 1: Connect to the Security &amp; Compliance Center using Remote PowerShell</span></span>
+## <a name="step-1-connect-to-the-security-amp-compliance-center-using-remote-powershell"></a><span data-ttu-id="088f9-119">步骤 1: 使用远程 PowerShell 连接&amp;到安全合规中心</span><span class="sxs-lookup"><span data-stu-id="088f9-119">Step 1: Connect to the Security &amp; Compliance Center using Remote PowerShell</span></span>
 
-<span data-ttu-id="d3076-120">第一步是将 Windows PowerShell 连接到安全性&amp;的组织的合规性中心。</span><span class="sxs-lookup"><span data-stu-id="d3076-120">The first step is to connect Windows PowerShell to the Security &amp; Compliance Center for your organization.</span></span>
+<span data-ttu-id="088f9-120">第一步是将 Windows PowerShell 连接到组织的&amp;安全合规中心。</span><span class="sxs-lookup"><span data-stu-id="088f9-120">The first step is to connect Windows PowerShell to the Security &amp; Compliance Center for your organization.</span></span>
   
-1. <span data-ttu-id="d3076-121">使用.ps1; filename 后缀将以下文本保存到的 Windows PowerShell 脚本文件例如， `ConnectSCC.ps1`。</span><span class="sxs-lookup"><span data-stu-id="d3076-121">Save the following text to a Windows PowerShell script file by using a filename suffix of .ps1; for example, `ConnectSCC.ps1`.</span></span> 
+1. <span data-ttu-id="088f9-121">使用文件名后缀. ps1; 将以下文本保存到 Windows PowerShell 脚本文件中。例如, `ConnectSCC.ps1`。</span><span class="sxs-lookup"><span data-stu-id="088f9-121">Save the following text to a Windows PowerShell script file by using a filename suffix of .ps1; for example, `ConnectSCC.ps1`.</span></span> 
     
       ```
       # Get login credentials 
@@ -46,21 +46,21 @@ ms.locfileid: "25038205"
       $Host.UI.RawUI.WindowTitle = $UserCredential.UserName + " (Office 365 Security &amp; Compliance Center)" 
     ```
 
-2. <span data-ttu-id="d3076-122">在本地计算机上打开 Windows PowerShell 并转到保存该脚本的文件夹。</span><span class="sxs-lookup"><span data-stu-id="d3076-122">On your local computer, open Windows PowerShell and go to the folder where you saved the script.</span></span> 
+2. <span data-ttu-id="088f9-122">在本地计算机上, 打开 Windows PowerShell 并转到保存该脚本的文件夹。</span><span class="sxs-lookup"><span data-stu-id="088f9-122">On your local computer, open Windows PowerShell and go to the folder where you saved the script.</span></span> 
     
-3. <span data-ttu-id="d3076-123">运行脚本。例如：</span><span class="sxs-lookup"><span data-stu-id="d3076-123">Run the script; for example:</span></span>
+3. <span data-ttu-id="088f9-123">运行脚本;例如:</span><span class="sxs-lookup"><span data-stu-id="088f9-123">Run the script; for example:</span></span>
 
     ```
     .\ConnectSCC.ps1
     ```
    
-4. <span data-ttu-id="d3076-124">当提示输入凭据，输入您的电子邮件地址和密码，，，然后单击**确定**。</span><span class="sxs-lookup"><span data-stu-id="d3076-124">When prompted for your credentials, enter your email address and password, and then click **OK**.</span></span> 
+4. <span data-ttu-id="088f9-124">当系统提示你输入凭据时, 请输入你的电子邮件地址和密码, 然后单击 **"确定"**。</span><span class="sxs-lookup"><span data-stu-id="088f9-124">When prompted for your credentials, enter your email address and password, and then click **OK**.</span></span> 
   
-## <a name="step-2-run-the-script-to-report-on-holds-associated-with-ediscovery-cases"></a><span data-ttu-id="d3076-125">步骤 2： 运行脚本，以报告包含与电子数据展示事例</span><span class="sxs-lookup"><span data-stu-id="d3076-125">Step 2: Run the script to report on holds associated with eDiscovery cases</span></span>
+## <a name="step-2-run-the-script-to-report-on-holds-associated-with-ediscovery-cases"></a><span data-ttu-id="088f9-125">步骤 2: 运行脚本以报告与电子数据展示事例相关联的保留</span><span class="sxs-lookup"><span data-stu-id="088f9-125">Step 2: Run the script to report on holds associated with eDiscovery cases</span></span>
 
-<span data-ttu-id="d3076-126">已连接到安全性后&amp;使用远程 PowerShell 的合规性中心下, 一步是创建和运行的脚本收集有关您的组织中的电子数据展示事例的信息。</span><span class="sxs-lookup"><span data-stu-id="d3076-126">After you've connected to the Security &amp; Compliance Center with remote PowerShell, the next step is to create and run the script that collects information about the eDiscovery cases in your organization.</span></span> 
+<span data-ttu-id="088f9-126">在使用远程 PowerShell 连接到安全&amp;合规中心之后, 下一步是创建并运行脚本, 该脚本收集组织中的电子数据展示事例的相关信息。</span><span class="sxs-lookup"><span data-stu-id="088f9-126">After you've connected to the Security &amp; Compliance Center with remote PowerShell, the next step is to create and run the script that collects information about the eDiscovery cases in your organization.</span></span> 
   
-1. <span data-ttu-id="d3076-127">使用.ps1; filename 后缀将以下文本保存到的 Windows PowerShell 脚本文件例如，CaseHoldsReport.ps1。</span><span class="sxs-lookup"><span data-stu-id="d3076-127">Save the following text to a Windows PowerShell script file by using a filename suffix of .ps1; for example, CaseHoldsReport.ps1.</span></span> 
+1. <span data-ttu-id="088f9-127">使用文件名后缀. ps1; 将以下文本保存到 Windows PowerShell 脚本文件中。例如, CaseHoldsReport。</span><span class="sxs-lookup"><span data-stu-id="088f9-127">Save the following text to a Windows PowerShell script file by using a filename suffix of .ps1; for example, CaseHoldsReport.ps1.</span></span> 
     
   ```
 #script begin
@@ -150,49 +150,49 @@ Write-host "Script complete! Report files saved to this folder: '$Path'"
 #script end
   ```
 
-2. <span data-ttu-id="d3076-128">在 Windows PowerShell 会话中打开在步骤 1 中，转到保存该脚本的文件夹。</span><span class="sxs-lookup"><span data-stu-id="d3076-128">In the Windows PowerShell session that opened in Step 1, go to the folder where you saved the script.</span></span> 
+2. <span data-ttu-id="088f9-128">在步骤1中打开的 Windows PowerShell 会话中, 转到保存脚本的文件夹。</span><span class="sxs-lookup"><span data-stu-id="088f9-128">In the Windows PowerShell session that opened in Step 1, go to the folder where you saved the script.</span></span> 
     
-3. <span data-ttu-id="d3076-129">运行脚本。例如：</span><span class="sxs-lookup"><span data-stu-id="d3076-129">Run the script; for example:</span></span>
+3. <span data-ttu-id="088f9-129">运行脚本;例如:</span><span class="sxs-lookup"><span data-stu-id="088f9-129">Run the script; for example:</span></span>
 
     ```
     .\CaseHoldsReport.ps1
     ```
 
-    <span data-ttu-id="d3076-130">该脚本将会进行提示保存报表的目标文件夹。</span><span class="sxs-lookup"><span data-stu-id="d3076-130">The script will prompt for a target folder to save the report to.</span></span> 
+    <span data-ttu-id="088f9-130">脚本将提示要将报告保存到的目标文件夹。</span><span class="sxs-lookup"><span data-stu-id="088f9-130">The script will prompt for a target folder to save the report to.</span></span> 
     
-4. <span data-ttu-id="d3076-131">键入要保存，该报表的文件夹的完整路径名称，然后按**Enter**。</span><span class="sxs-lookup"><span data-stu-id="d3076-131">Type the full path name of the folder to save the report to, and then press **Enter**.</span></span>
+4. <span data-ttu-id="088f9-131">键入要将报告保存到的文件夹的完整路径名称, 然后按**enter**。</span><span class="sxs-lookup"><span data-stu-id="088f9-131">Type the full path name of the folder to save the report to, and then press **Enter**.</span></span>
     
     > [!TIP]
-    > <span data-ttu-id="d3076-p105">若要将报告保存该脚本位于同一文件夹中，键入一段 ("。") 时提示您目标文件夹。若要保存该脚本所在的文件夹中的子文件夹中的报告，只需键入子文件夹的名称。</span><span class="sxs-lookup"><span data-stu-id="d3076-p105">To save the report in the same folder that the script is located in, type a period (".") when prompted for a target folder. To save the report in a subfolder in the folder where the script is located, just type the name of the subfolder.</span></span> 
+    > <span data-ttu-id="088f9-p105">若要将报告保存在脚本所在的同一文件夹中, 请在系统提示输入目标文件夹时键入句点 (".")。若要将报告保存在脚本所在的文件夹的子文件夹中, 只需键入子文件夹的名称即可。</span><span class="sxs-lookup"><span data-stu-id="088f9-p105">To save the report in the same folder that the script is located in, type a period (".") when prompted for a target folder. To save the report in a subfolder in the folder where the script is located, just type the name of the subfolder.</span></span> 
   
-    <span data-ttu-id="d3076-p106">脚本开始收集有关您的组织中的所有电子数据展示事例的信息。脚本运行时，不访问报告文件。完成该脚本后，在 Windows PowerShell 会话中显示一条确认消息。显示此消息之后，您可以访问您在步骤 4 中指定的文件夹中的报告。报表的文件名为`CaseHoldsReport<DateTimeStamp>.csv`。</span><span class="sxs-lookup"><span data-stu-id="d3076-p106">The script starts to collect information about all the eDiscovery cases in your organization. Don't access the report file while the script is running. After the script is complete, a confirmation message is displayed in the Windows PowerShell session. After this message is displayed, you can access the report in the folder that you specified in Step 4. The file name for the report is `CaseHoldsReport<DateTimeStamp>.csv`.</span></span>
+    <span data-ttu-id="088f9-p106">脚本开始收集组织中所有电子数据展示事例的相关信息。在运行脚本时不访问报告文件。脚本完成后, 将在 Windows PowerShell 会话中显示一条确认消息。显示此消息后, 您可以访问您在步骤4中指定的文件夹中的报告。报告的文件名为`CaseHoldsReport<DateTimeStamp>.csv`。</span><span class="sxs-lookup"><span data-stu-id="088f9-p106">The script starts to collect information about all the eDiscovery cases in your organization. Don't access the report file while the script is running. After the script is complete, a confirmation message is displayed in the Windows PowerShell session. After this message is displayed, you can access the report in the folder that you specified in Step 4. The file name for the report is `CaseHoldsReport<DateTimeStamp>.csv`.</span></span>
 
-    <span data-ttu-id="d3076-p107">另外，该脚本还创建报表的情况下没有任何保留项的列表。此报告的文件名为`CaseswithNoHolds<DateTimeStamp>.csv`。</span><span class="sxs-lookup"><span data-stu-id="d3076-p107">Addtionally, the script also creates a report with a list of cases that don't have any holds. The file name for this report is `CaseswithNoHolds<DateTimeStamp>.csv`.</span></span>
+    <span data-ttu-id="088f9-p107">此外, 该脚本还将创建一个报告, 其中包含不包含任何保留的案例列表。此报告的文件名为`CaseswithNoHolds<DateTimeStamp>.csv`。</span><span class="sxs-lookup"><span data-stu-id="088f9-p107">Addtionally, the script also creates a report with a list of cases that don't have any holds. The file name for this report is `CaseswithNoHolds<DateTimeStamp>.csv`.</span></span>
     
-    <span data-ttu-id="d3076-141">下面是运行 CaseHoldsReport.ps1 脚本的一个示例。</span><span class="sxs-lookup"><span data-stu-id="d3076-141">Here's an example of running the CaseHoldsReport.ps1 script.</span></span> 
+    <span data-ttu-id="088f9-141">下面的示例展示了如何运行 CaseHoldsReport 脚本。</span><span class="sxs-lookup"><span data-stu-id="088f9-141">Here's an example of running the CaseHoldsReport.ps1 script.</span></span> 
     
-    ![后运行 CaseHoldsReport.ps1 脚本输出](media/7d312ed5-505e-4ec5-8f06-3571e3524a1a.png)
+    ![运行 CaseHoldsReport 脚本后的输出](media/7d312ed5-505e-4ec5-8f06-3571e3524a1a.png)
   
-## <a name="more-information"></a><span data-ttu-id="d3076-143">更多信息</span><span class="sxs-lookup"><span data-stu-id="d3076-143">More information</span></span>
+## <a name="more-information"></a><span data-ttu-id="088f9-143">更多信息</span><span class="sxs-lookup"><span data-stu-id="088f9-143">More information</span></span>
 
-<span data-ttu-id="d3076-p108">这种情况，其中包含本文中运行该脚本时创建的报告包含有关每个保留的以下信息。如前所述，您必须是电子数据展示管理员联系，以返回组织中的所有保留项的信息。包含与案例相关的详细信息，请参阅[Office 365 安全性的电子数据展示事例&amp;合规性中心](ediscovery-cases.md)。</span><span class="sxs-lookup"><span data-stu-id="d3076-p108">The case holds report that's created when you run the script in this article contains the following information about each hold. As previously explained, you have to be an eDiscovery Administrator to return information for all holds in your organization. For more information about case holds, see [eDiscovery cases in the Office 365 Security &amp; Compliance Center](ediscovery-cases.md).</span></span>
+<span data-ttu-id="088f9-p108">事例包含运行本文中的脚本时创建的报告, 其中包含有关每个保留的以下信息。如前面所述, 您必须是电子数据展示管理员才能返回组织中所有保留的信息。有关案例保留的详细信息, 请参阅[Office 365 安全&amp;合规中心中的电子数据展示事例](ediscovery-cases.md)。</span><span class="sxs-lookup"><span data-stu-id="088f9-p108">The case holds report that's created when you run the script in this article contains the following information about each hold. As previously explained, you have to be an eDiscovery Administrator to return information for all holds in your organization. For more information about case holds, see [eDiscovery cases in the Office 365 Security &amp; Compliance Center](ediscovery-cases.md).</span></span>
   
-  - <span data-ttu-id="d3076-147">保留和电子数据展示案例保留项关联的名称的名称。</span><span class="sxs-lookup"><span data-stu-id="d3076-147">The name of the hold and the name of the eDiscovery case that the hold is associated with.</span></span>
+  - <span data-ttu-id="088f9-147">保留的名称和与该保留相关联的电子数据展示事例的名称。</span><span class="sxs-lookup"><span data-stu-id="088f9-147">The name of the hold and the name of the eDiscovery case that the hold is associated with.</span></span>
     
-  - <span data-ttu-id="d3076-148">是否电子数据展示事例是活动还是关闭。</span><span class="sxs-lookup"><span data-stu-id="d3076-148">Whether or not the eDiscovery case is active or closed.</span></span>
+  - <span data-ttu-id="088f9-148">电子数据展示事例是否处于活动状态或已关闭状态。</span><span class="sxs-lookup"><span data-stu-id="088f9-148">Whether or not the eDiscovery case is active or closed.</span></span>
     
-  - <span data-ttu-id="d3076-149">是否启用或禁用保留项。</span><span class="sxs-lookup"><span data-stu-id="d3076-149">Whether or not the hold is enabled or disabled.</span></span>
+  - <span data-ttu-id="088f9-149">保留是否已启用或已禁用。</span><span class="sxs-lookup"><span data-stu-id="088f9-149">Whether or not the hold is enabled or disabled.</span></span>
     
-  - <span data-ttu-id="d3076-p109">与关联保留电子数据展示事例的成员。案例成员可以查看或管理的情况下，根据已被分配给他们的电子数据展示权限。</span><span class="sxs-lookup"><span data-stu-id="d3076-p109">The members of the eDiscovery case that the hold is associated with. Case members can view or manage a case, depending on the eDiscovery permissions they've been assigned.</span></span>
+  - <span data-ttu-id="088f9-p109">与保留相关联的电子数据展示事例的成员。事例成员可以查看或管理事例, 具体取决于他们已分配的电子数据展示权限。</span><span class="sxs-lookup"><span data-stu-id="088f9-p109">The members of the eDiscovery case that the hold is associated with. Case members can view or manage a case, depending on the eDiscovery permissions they've been assigned.</span></span>
     
-  - <span data-ttu-id="d3076-152">这种情况的创建的日期和时间。</span><span class="sxs-lookup"><span data-stu-id="d3076-152">The time and date the case was created.</span></span>
+  - <span data-ttu-id="088f9-152">案例的创建时间和日期。</span><span class="sxs-lookup"><span data-stu-id="088f9-152">The time and date the case was created.</span></span>
     
-  - <span data-ttu-id="d3076-153">如果已关闭种情况下，关闭关闭它与时间和日期它的人员。</span><span class="sxs-lookup"><span data-stu-id="d3076-153">If a case is closed, the person who closed it and the time and date it was closed.</span></span>
+  - <span data-ttu-id="088f9-153">如果案例关闭, 则关闭它以及关闭它的时间和日期。</span><span class="sxs-lookup"><span data-stu-id="088f9-153">If a case is closed, the person who closed it and the time and date it was closed.</span></span>
     
-  - <span data-ttu-id="d3076-154">Exchange 邮箱和 SharePoint 网站处于保持状态的位置。</span><span class="sxs-lookup"><span data-stu-id="d3076-154">The Exchange mailboxes and SharePoint sites locations that are on hold.</span></span>
+  - <span data-ttu-id="088f9-154">处于保留状态的 Exchange 邮箱和 SharePoint 网站位置。</span><span class="sxs-lookup"><span data-stu-id="088f9-154">The Exchange mailboxes and SharePoint sites locations that are on hold.</span></span>
     
-  - <span data-ttu-id="d3076-155">如果保留项是基于查询的查询语法。</span><span class="sxs-lookup"><span data-stu-id="d3076-155">If the hold is query-based, the query syntax.</span></span>
+  - <span data-ttu-id="088f9-155">如果保留是基于查询的查询语法, 则为。</span><span class="sxs-lookup"><span data-stu-id="088f9-155">If the hold is query-based, the query syntax.</span></span>
     
-  - <span data-ttu-id="d3076-156">时间和保留项的创建的日期和创建它的人员。</span><span class="sxs-lookup"><span data-stu-id="d3076-156">The time and date the hold was created and the person who created it.</span></span>
+  - <span data-ttu-id="088f9-156">创建保留的时间和日期以及创建该保留的人员。</span><span class="sxs-lookup"><span data-stu-id="088f9-156">The time and date the hold was created and the person who created it.</span></span>
     
-  - <span data-ttu-id="d3076-157">时间和日期上次更改保留更改它的人员。</span><span class="sxs-lookup"><span data-stu-id="d3076-157">The time and date the hold was last changed and the person who changed it.</span></span>
+  - <span data-ttu-id="088f9-157">上次更改保留的时间和日期以及更改了保留的人员。</span><span class="sxs-lookup"><span data-stu-id="088f9-157">The time and date the hold was last changed and the person who changed it.</span></span>

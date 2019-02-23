@@ -6,58 +6,58 @@ manager: laurawi
 ms.date: 01/22/2019
 ms.audience: ITPro
 ms.topic: article
-ms.service: o365-administration
+ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid:
 - MET150
 - MOE150
 ms.assetid: 414fa693-d7b7-4a1d-a387-ebc3b6a52889
 ms.collection: M365-security-compliance
-description: 与 Windows Defender 高级威胁保护威胁管理的详细的信息，请参阅集成 Office 365 高级威胁保护。
-ms.openlocfilehash: f8f5f50af10fb668aa67b68604e95e8dd19c9e69
-ms.sourcegitcommit: efccf5b4f22d34a9674bc55ebf3d88bc8bda2972
+description: 将 Office 365 高级威胁防护与 Windows Defender 高级威胁防护集成, 以查看更详细的威胁管理信息。
+ms.openlocfilehash: ec7c7f565a4a316085b586168512699bb13cad47
+ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/14/2019
-ms.locfileid: "29995203"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "30220922"
 ---
-# <a name="integrate-office-365-threat-intelligence-with-windows-defender-advanced-threat-protection"></a><span data-ttu-id="9747c-103">将 Office 365 威胁智能与 Windows Defender 高级威胁防护集成</span><span class="sxs-lookup"><span data-stu-id="9747c-103">Integrate Office 365 Threat Intelligence with Windows Defender Advanced Threat Protection</span></span>
+# <a name="integrate-office-365-threat-intelligence-with-windows-defender-advanced-threat-protection"></a><span data-ttu-id="050fa-103">将 Office 365 威胁智能与 Windows Defender 高级威胁防护集成</span><span class="sxs-lookup"><span data-stu-id="050fa-103">Integrate Office 365 Threat Intelligence with Windows Defender Advanced Threat Protection</span></span>
 
-<span data-ttu-id="9747c-p101">如果您是组织的安全工作组的一部分，您可以与 Windows Defender 高级威胁保护集成 Office 365 高级威胁保护和威胁智能功能。这可以帮助您快速了解用户的计算机是否在风险时正在调查 Office 365 中的威胁。例如，启用集成后，您将能够列表，请参阅使用检测到的电子邮件的收件人的计算机以及如何在 Windows Defender 高级威胁保护中的多个最近的通知这些计算机具有。</span><span class="sxs-lookup"><span data-stu-id="9747c-p101">If you are part of your organization's security team, you can integrate Office 365 Advanced Threat Protection and Threat Intelligence features with Windows Defender Advanced Threat Protection. This can help you quickly understand if users' machines are at risk when you are investigating threats in Office 365. For example, once integration is enabled, you will be able to see a list of machines that are used by the recipients of a detected email message, as well as how many recent alerts those machines have in Windows Defender Advanced Threat Protection.</span></span>
+<span data-ttu-id="050fa-p101">如果您是组织的安全团队的一部分, 则可以使用 Windows Defender 高级威胁防护将 Office 365 高级威胁防护和威胁智能功能集成在一起。这可以帮助您快速了解在调查 Office 365 中的威胁时用户的计算机是否存在风险。例如, 在启用集成后, 您将能够查看检测到的电子邮件的收件人使用的计算机列表, 以及这些计算机在 Windows Defender 高级威胁防护中的最近通知数。</span><span class="sxs-lookup"><span data-stu-id="050fa-p101">If you are part of your organization's security team, you can integrate Office 365 Advanced Threat Protection and Threat Intelligence features with Windows Defender Advanced Threat Protection. This can help you quickly understand if users' machines are at risk when you are investigating threats in Office 365. For example, once integration is enabled, you will be able to see a list of machines that are used by the recipients of a detected email message, as well as how many recent alerts those machines have in Windows Defender Advanced Threat Protection.</span></span>
   
-<span data-ttu-id="9747c-107">下图显示**设备**选项卡，您将看到已启用 Windows Defender 高级威胁保护集成时：</span><span class="sxs-lookup"><span data-stu-id="9747c-107">The following image shows the **Devices** tab that you'll see when have Windows Defender Advanced Threat Protection integration enabled:</span></span> 
+<span data-ttu-id="050fa-107">下图显示了启用 Windows Defender 高级威胁防护集成时将看到的 "**设备**" 选项卡:</span><span class="sxs-lookup"><span data-stu-id="050fa-107">The following image shows the **Devices** tab that you'll see when have Windows Defender Advanced Threat Protection integration enabled:</span></span> 
   
-![启用 Windows Defender ATP 后，您可以看到计算机的通知的列表。](media/fec928ea-8f0c-44d7-80b9-a2e0a8cd4e89.PNG)
+![启用 Windows Defender ATP 后, 你可以查看包含警报的计算机列表。](media/fec928ea-8f0c-44d7-80b9-a2e0a8cd4e89.PNG)
   
-<span data-ttu-id="9747c-p102">本示例中，您可以看到收件人的电子邮件有四个设备和一个具有一条通知。单击设备链接将在 Windows Defender 高级威胁保护门户中打开其页面。</span><span class="sxs-lookup"><span data-stu-id="9747c-p102">In this example, you can see that the recipients of the email message have four devices and one has an alert. Clicking the link for a device opens its page in the Windows Defender Advanced Threat Protection portal.</span></span>
+<span data-ttu-id="050fa-p102">在此示例中, 您可以看到电子邮件的收件人有四台设备, 并且有一个警报。单击设备的链接将在 Windows Defender 高级威胁防护门户中打开其页面。</span><span class="sxs-lookup"><span data-stu-id="050fa-p102">In this example, you can see that the recipients of the email message have four devices and one has an alert. Clicking the link for a device opens its page in the Windows Defender Advanced Threat Protection portal.</span></span>
   
-## <a name="requirements"></a><span data-ttu-id="9747c-111">要求</span><span class="sxs-lookup"><span data-stu-id="9747c-111">Requirements</span></span>
+## <a name="requirements"></a><span data-ttu-id="050fa-111">要求</span><span class="sxs-lookup"><span data-stu-id="050fa-111">Requirements</span></span>
 
-- <span data-ttu-id="9747c-112">您的组织必须具有 Office 365 威胁智能和 Windows Defender ATP。</span><span class="sxs-lookup"><span data-stu-id="9747c-112">Your organization must have Office 365 Threat Intelligence and Windows Defender ATP.</span></span>
+- <span data-ttu-id="050fa-112">您的组织必须具有 Office 365 威胁智能和 Windows Defender ATP。</span><span class="sxs-lookup"><span data-stu-id="050fa-112">Your organization must have Office 365 Threat Intelligence and Windows Defender ATP.</span></span>
     
-- <span data-ttu-id="9747c-p103">您必须是 Office 365 全局管理员或具有安全管理员角色 （如安全管理员） 中分配[安全&amp;合规性中心](https://protection.office.com)。(请参阅[Permissions in Office 365 安全性&amp;合规性中心](permissions-in-the-security-and-compliance-center.md))</span><span class="sxs-lookup"><span data-stu-id="9747c-p103">You must be an Office 365 Global Administrator or have a security administrator role (such as Security Administrator) assigned in the [Security &amp; Compliance Center](https://protection.office.com). (See [Permissions in the Office 365 Security &amp; Compliance Center](permissions-in-the-security-and-compliance-center.md))</span></span>
+- <span data-ttu-id="050fa-p103">您必须是 Office 365 全局管理员或在[ &amp;安全合规中心](https://protection.office.com)中分配安全管理员角色 (例如安全管理员)。(请参阅[Office 365 安全&amp;合规中心中的权限](permissions-in-the-security-and-compliance-center.md))</span><span class="sxs-lookup"><span data-stu-id="050fa-p103">You must be an Office 365 Global Administrator or have a security administrator role (such as Security Administrator) assigned in the [Security &amp; Compliance Center](https://protection.office.com). (See [Permissions in the Office 365 Security &amp; Compliance Center](permissions-in-the-security-and-compliance-center.md))</span></span>
     
-- <span data-ttu-id="9747c-115">您必须具有对 Office 365 威胁智能和 Windows Defender 高级威胁保护门户网站的访问。</span><span class="sxs-lookup"><span data-stu-id="9747c-115">You must have access to both Office 365 Threat Intelligence and the Windows Defender Advanced Threat Protection portal.</span></span>
+- <span data-ttu-id="050fa-115">您必须具有对 Office 365 威胁智能和 Windows Defender 高级威胁防护门户的访问权限。</span><span class="sxs-lookup"><span data-stu-id="050fa-115">You must have access to both Office 365 Threat Intelligence and the Windows Defender Advanced Threat Protection portal.</span></span>
     
-## <a name="to-integrate-office-365-threat-intelligence-with-windows-defender-atp"></a><span data-ttu-id="9747c-116">与 Windows Defender ATP 集成 Office 365 威胁智能</span><span class="sxs-lookup"><span data-stu-id="9747c-116">To integrate Office 365 Threat Intelligence with Windows Defender ATP</span></span>
+## <a name="to-integrate-office-365-threat-intelligence-with-windows-defender-atp"></a><span data-ttu-id="050fa-116">将 Office 365 威胁智能与 Windows Defender ATP 集成</span><span class="sxs-lookup"><span data-stu-id="050fa-116">To integrate Office 365 Threat Intelligence with Windows Defender ATP</span></span>
 
-<span data-ttu-id="9747c-117">与 Windows Defender 高级威胁保护集成 Office 365 威胁智能设置使用这两个 Office 365 安全性 & 合规性中心和 Windows Defender 高级威胁保护门户。</span><span class="sxs-lookup"><span data-stu-id="9747c-117">Integrating Office 365 Threat Intelligence with Windows Defender Advanced Threat Protection is set up by using both the Office 365 Security & Compliance Center AND the Windows Defender Advanced Threat Protection portal.</span></span>
+<span data-ttu-id="050fa-117">通过使用 office 365 安全 & 合规中心和 windows defender 高级威胁防护门户, 将 office 365 威胁智能集成到 windows defender 高级威胁防护中。</span><span class="sxs-lookup"><span data-stu-id="050fa-117">Integrating Office 365 Threat Intelligence with Windows Defender Advanced Threat Protection is set up by using both the Office 365 Security & Compliance Center AND the Windows Defender Advanced Threat Protection portal.</span></span>
   
-1. <span data-ttu-id="9747c-118">作为 Office 365 全局管理员或安全管理员，请转到[https://protection.office.com](https://protection.office.com)和使用 Office 365 您工作或学校的帐户登录。</span><span class="sxs-lookup"><span data-stu-id="9747c-118">As an Office 365 global administrator or a security administrator, go to [https://protection.office.com](https://protection.office.com) and sign in with your work or school account for Office 365.</span></span> 
+1. <span data-ttu-id="050fa-118">作为 office 365 全局管理员或安全管理员, 请转到[https://protection.office.com](https://protection.office.com)并使用 Office 365 的工作或学校帐户登录。</span><span class="sxs-lookup"><span data-stu-id="050fa-118">As an Office 365 global administrator or a security administrator, go to [https://protection.office.com](https://protection.office.com) and sign in with your work or school account for Office 365.</span></span> 
     
-2. <span data-ttu-id="9747c-119">选择**威胁管理** \> **资源管理器**。</span><span class="sxs-lookup"><span data-stu-id="9747c-119">Choose **Threat management** \> **Explorer**.</span></span><br><span data-ttu-id="9747c-120">![威胁管理菜单中的资源管理器](media/ThreatMgmt-Explorer-nav.png)</span><span class="sxs-lookup"><span data-stu-id="9747c-120">![Explorer in Threat Management menu](media/ThreatMgmt-Explorer-nav.png)</span></span><br>
+2. <span data-ttu-id="050fa-119">选择 "**威胁管理** \> **资源管理器**"。</span><span class="sxs-lookup"><span data-stu-id="050fa-119">Choose **Threat management** \> **Explorer**.</span></span><br><span data-ttu-id="050fa-120">![威胁管理菜单中的资源管理器](media/ThreatMgmt-Explorer-nav.png)</span><span class="sxs-lookup"><span data-stu-id="050fa-120">![Explorer in Threat Management menu](media/ThreatMgmt-Explorer-nav.png)</span></span><br>
     
-3. <span data-ttu-id="9747c-121">在屏幕的右上角，选择**WDATP 设置**。</span><span class="sxs-lookup"><span data-stu-id="9747c-121">In the upper right corner of the screen, choose **WDATP Settings**.</span></span>
+3. <span data-ttu-id="050fa-121">在屏幕的右上角, 选择 " **WDATP 设置**"。</span><span class="sxs-lookup"><span data-stu-id="050fa-121">In the upper right corner of the screen, choose **WDATP Settings**.</span></span>
     
-4. <span data-ttu-id="9747c-122">在 Windows Defender ATP 连接对话框中，打开连接到 Windows ATP。</span><span class="sxs-lookup"><span data-stu-id="9747c-122">In the Windows Defender ATP connection dialog box, turn on Connect to Windows ATP.</span></span><br>![Windows Defender ATP 连接](media/Explorer-WDATPConnection-dialog.png)<br>
+4. <span data-ttu-id="050fa-122">在 "Windows Defender ATP 连接" 对话框中, 启用 "连接到 Windows ATP"。</span><span class="sxs-lookup"><span data-stu-id="050fa-122">In the Windows Defender ATP connection dialog box, turn on Connect to Windows ATP.</span></span><br>![Windows Defender ATP 连接](media/Explorer-WDATPConnection-dialog.png)<br>
     
-5. <span data-ttu-id="9747c-p104">启用 Windows Defender 高级威胁 Protection 中的连接。请参阅[Use Windows Defender 高级威胁保护门户](https://go.microsoft.com/fwlink/?linkid=859690)。</span><span class="sxs-lookup"><span data-stu-id="9747c-p104">Enable the connection in Windows Defender Advanced Threat Protection. See [Use the Windows Defender Advanced Threat Protection portal](https://go.microsoft.com/fwlink/?linkid=859690).</span></span>
+5. <span data-ttu-id="050fa-p104">启用 Windows Defender 高级威胁防护中的连接。请参阅[使用 Windows Defender 高级威胁防护门户](https://go.microsoft.com/fwlink/?linkid=859690)。</span><span class="sxs-lookup"><span data-stu-id="050fa-p104">Enable the connection in Windows Defender Advanced Threat Protection. See [Use the Windows Defender Advanced Threat Protection portal](https://go.microsoft.com/fwlink/?linkid=859690).</span></span>
 
   
-## <a name="related-topics"></a><span data-ttu-id="9747c-126">相关主题</span><span class="sxs-lookup"><span data-stu-id="9747c-126">Related topics</span></span>
+## <a name="related-topics"></a><span data-ttu-id="050fa-126">相关主题</span><span class="sxs-lookup"><span data-stu-id="050fa-126">Related topics</span></span>
 
-[<span data-ttu-id="9747c-127">Office 365 威胁智能</span><span class="sxs-lookup"><span data-stu-id="9747c-127">Office 365 Threat Intelligence</span></span>](office-365-ti.md)
+[<span data-ttu-id="050fa-127">Office 365 威胁智能</span><span class="sxs-lookup"><span data-stu-id="050fa-127">Office 365 Threat Intelligence</span></span>](office-365-ti.md)
   
-[<span data-ttu-id="9747c-128">Office 365 高级威胁防护</span><span class="sxs-lookup"><span data-stu-id="9747c-128">Office 365 Advanced Threat Protection</span></span>](office-365-atp.md)
+[<span data-ttu-id="050fa-128">Office 365 高级威胁防护</span><span class="sxs-lookup"><span data-stu-id="050fa-128">Office 365 Advanced Threat Protection</span></span>](office-365-atp.md)
   
 
