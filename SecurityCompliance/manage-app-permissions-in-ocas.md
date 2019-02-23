@@ -6,121 +6,121 @@ manager: laurawi
 ms.date: 12/26/2018
 ms.audience: ITPro
 ms.topic: article
-ms.service: o365-administration
+ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid:
 - MET150
 - MOE150
 ms.assetid: 2062c312-b1e4-4ce7-8cb2-ea39bc0dfdad
-description: Office 365 云应用程序安全性的 OAuth 应用程序帮助您管理您的用户下载用于 Office 365 数据的应用程序
-ms.openlocfilehash: ae32e3c6b15f4ad4794a3dd08c3992adaeba655c
-ms.sourcegitcommit: 7e2a0185cadea7f3a6afc5ddc445eac2e1ce22eb
+description: office 365 中的 OAuth 应用程序安全性帮助您管理用户下载的用于 Office 365 数据的应用程序
+ms.openlocfilehash: 510cb64f2267c99b783f86a69f7b7a84db8d84dd
+ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/11/2019
-ms.locfileid: "29603683"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "30219822"
 ---
 # <a name="manage-oauth-apps-using-office-365-cloud-app-security"></a>使用 Office 365 云应用安全管理 OAuth 应用
 
-|评估 * *\>**|规划 * *\>**|部署 * *\>**|使用率 ***|
+|评估 * *\>**|规划 * *\>**|部署 * *\>**|利用率 * * * *|
 |:-----|:-----|:-----|:-----|
-|[启动评估](office-365-cas-overview.md) <br/> |[开始规划](get-ready-for-office-365-cas.md) <br/> |[开始部署](turn-on-office-365-cas.md) <br/> |在这里 ！  <br/> [后续步骤](manage-app-permissions-in-ocas.md#nextsteps) <br/> |
+|[开始评估](office-365-cas-overview.md) <br/> |[开始规划](get-ready-for-office-365-cas.md) <br/> |[开始部署](turn-on-office-365-cas.md) <br/> |你在这里!  <br/> [后续步骤](manage-app-permissions-in-ocas.md#nextsteps) <br/> |
    
-人员喜欢的应用程序和他们通常下载这些，尤其是人员思考的应用程序将通过使其更易于获取在其工作或学校信息节省时间。但是，某些应用程序可能存在一定的安全风险到您的组织，哪些信息取决于他们访问和如何处理该信息。[Office 365 云应用程序安全性](office-365-cas-overview.md)，如果您是全局或安全管理员，您可以管理 OAuth 应用程序为您的组织。您可以查看正在使用的应用程序的人员的 Office 365 数据哪些权限这些应用程序都有和更多内容。 
+人们喜欢应用程序, 并且他们经常下载它们, 尤其是人们认为, 人们可以通过更轻松地获取工作或学校信息, 从而节省时间。但是, 某些应用可能会对您的组织造成安全风险, 具体取决于他们访问的信息以及它们如何处理这些信息。使用[Office 365 云应用安全](office-365-cas-overview.md), 如果您是全局管理员或安全管理员, 则可以管理您的组织的 OAuth 应用程序。您可以查看使用 Office 365 数据的应用程序, 这些应用程序具有哪些权限, 等等。 
   
-本文介绍在哪里管理 OAuth 应用程序、 如何批准、 禁止，或报告应用程序，以及如何创建应用程序查询。
+本文介绍在哪里可以转到管理 OAuth 应用程序、如何批准、禁止或报告应用程序, 以及如何创建应用程序查询。
   
-## <a name="how-to-find-the-manage-oauth-apps-page"></a>如何查找管理 OAuth 应用程序页
+## <a name="how-to-find-the-manage-oauth-apps-page"></a>如何查找 "管理 OAuth 应用程序" 页
 
 > [!NOTE]
-> 在 Office 365 云应用程序安全性门户管理 OAuth 应用程序。您必须是要执行以下任务的全局管理员或 security 管理员程序。若要了解详细，请参阅[Permissions in Office 365 安全性&amp;合规性中心](permissions-in-the-security-and-compliance-center.md)。 
+> 在 Office 365 云应用安全门户中管理 OAuth 应用程序。您必须是全局管理员或安全管理员才能执行以下任务。若要了解详细信息, 请参阅[Office 365 &amp;安全合规中心中的权限](permissions-in-the-security-and-compliance-center.md)。 
   
-1. 转到云应用程序安全性门户 ([https://portal.cloudappsecurity.com](https://portal.cloudappsecurity.com)) 和登录。
+1. 转到云应用安全门户 ([https://portal.cloudappsecurity.com](https://portal.cloudappsecurity.com)) 并登录。
   
-2. 选择**调查** \> **OAuth 应用程序**。<br/>![在 O365 CAS 门户中，选择调查。](media/OCAS-OAuthApps.png)<br/>
+2. 选择**调查** \> **OAuth 应用程序**。<br/>![在 O365 CAS 门户中, 选择 "调查"。](media/OCAS-OAuthApps.png)<br/>
   
-## <a name="what-youll-see-on-the-manage-oauth-apps-page"></a>您将看到上管理 OAuth 应用程序页
+## <a name="what-youll-see-on-the-manage-oauth-apps-page"></a>您将在 "管理 OAuth 应用程序" 页上看到的内容
 
-下表介绍了管理 OAuth 的应用程序页上的控件和可用选项。
+下表介绍了 "管理 OAuth 应用" 页上可用的控件和选项。
   
 |**项**|**说明**|
 |:-----|:-----|
-|应用程序查询栏中的基本图标  <br/> ![指示查询的基本查询视图的图标](media/a459bc51-e86b-43d5-a0ee-661b9fb4afc9.png)|选择此选项可切换到的高级视图。  <br/> （如果您看到**基本**，所使用的高级的视图）  <br/> |
-|应用程序查询栏中的高级的图标  <br/> ![指示查询的高级的查询视图的图标](media/9958d832-2c81-45ed-a642-d926310ba6b6.png)|选择此选项可切换到基本视图。  <br/> （如果您看到**高级**，您使用基本视图）。  <br/> |
-|打开或关闭应用程序列表中的所有详细信息图标  <br/> ![单击此图标可打开或关闭所有应用程序的所有详细信息](media/018fa996-10e8-48ff-986e-55f2b69a5753.png)|选择此图标可查看有关每个应用程序的更多或更少的详细信息。  <br/> |
-|在应用程序列表的导出图标  <br/> ![单击此图标可导出 csv 文件的所有应用程序](media/98446851-fd96-4d09-9bb0-831db33090c1.png)|选择此图标可导出 CSV 文件包含列表的应用程序，每个应用程序与应用程序、 权限级别、 应用程序状态和社区使用级别关联的权限的用户数。  <br/> |
-|名称  <br/> |使用此查看应用程序选择的名称的名称，以查看详细信息，例如其说明、 publisher、 应用程序网站和应用程序 id。  <br/> |
-|经过授权  <br/> |使用此查看多少用户有权访问其 Office 365 帐户的应用程序。选择要查看详细信息，如用户帐户的列表的编号。  <br/> |
-|权限级别  <br/> ![指示 permisiions 级别应用程序的图标](media/aaebdd29-35b6-4c62-aef1-7c7817bd803d.png)|用于查看的应用程序多少访问已对 Office 365 数据。权限级别指示**低**、**中等**或**高**，其中**低**可能表示应用程序仅访问用户的配置文件和名称。选择要查看详细信息，如权限授予对应用程序、 社区使用和[调控日志](suspend-or-restore-an-account-in-ocas.md)中的相关的活动的级别。<br/> |
-|上次授权 <br/> |用于查看的日期和时间 OAuth 应用程序已最后一个权访问您组织的 Office 365 数据。 <br/>  |
-|操作<br/>![OAuth 应用程序](media/OCAS-OAuthAppApproveBanReport.png)<br/> |使用此要查看或将应用程序标记为已批准或 Banned，向 Microsoft 报告 OAuth 应用程序或将其保留为未确定。  <br/> |
+|应用程序查询栏中的基本图标  <br/> ![指示查询的基本查询视图的图标](media/a459bc51-e86b-43d5-a0ee-661b9fb4afc9.png)|选择此选项以切换到 "高级" 视图。  <br/> (如果看到的是 "**基本**", 则使用的是 "高级" 视图)  <br/> |
+|应用程序查询栏中的高级图标  <br/> ![指示查询的高级查询视图的图标](media/9958d832-2c81-45ed-a642-d926310ba6b6.png)|选择此选项以切换到 "基本" 视图。  <br/> (如果看到 "**高级**", 则使用的是 "基本" 视图。)  <br/> |
+|在应用程序列表中打开或关闭所有详细信息图标  <br/> ![单击此图标可打开或关闭所有应用的所有详细信息](media/018fa996-10e8-48ff-986e-55f2b69a5753.png)|选择此图标可查看有关每个应用程序的更多或更少详细信息。  <br/> |
+|在应用程序列表中导出图标  <br/> ![单击此图标可导出所有应用程序的 csv 文件](media/98446851-fd96-4d09-9bb0-831db33090c1.png)|选择此图标可导出包含应用程序列表的 CSV 文件、每个应用程序的用户数、与应用程序关联的权限、权限级别、应用程序状态和社区使用级别。  <br/> |
+|名称  <br/> |使用此内容可以查看应用程序的名称。选择名称以查看详细信息, 例如其说明、发布者、应用程序网站和应用 ID。  <br/> |
+|授权人  <br/> |使用此方法可查看有多少用户已授权应用程序访问其 Office 365 帐户。选择号码以查看详细信息, 如用户帐户列表。  <br/> |
+|权限级别  <br/> ![指示应用程序的 permisiions 级别的图标](media/aaebdd29-35b6-4c62-aef1-7c7817bd803d.png)|使用此方法可查看应用对 Office 365 数据的访问量。权限级别指示 "**低**"、"**中**" 或 "**高**", 其中**低**可能表明应用程序仅访问用户的配置文件和名称。选择要查看详细信息的级别, 例如授予应用程序的权限、社区使用以及[调控日志](suspend-or-restore-an-account-in-ocas.md)中的相关活动。<br/> |
+|上次授权 <br/> |使用此操作可查看 OAuth 应用上次授权访问组织的 Office 365 数据的日期和时间。 <br/>  |
+|操作<br/>![OAuth 应用程序](media/OCAS-OAuthAppApproveBanReport.png)<br/> |使用此方法可查看或将应用程序标记为已批准或禁止, 将 OAuth 应用报告给 Microsoft, 或将其保留为未定。  <br/> |
    
 ## <a name="mark-an-app-as-approved"></a>将应用程序标记为已批准
 
-在**管理 OAuth 应用程序**页上，找到您想要批准的应用程序，然后选择**作为标记应用程序获得批准**图标。 
+在 "**管理 OAuth 应用**程序" 页上, 找到要批准的应用程序, 然后选择 "将**应用标记为已批准**" 图标。 
   
-![选择应用程序标记为已批准的图标](media/OCAS-MarkOAuthApproved.png)
+![选择 "将应用标记为已批准" 图标](media/OCAS-MarkOAuthApproved.png)
   
-图标将变为绿色，并且应用程序已获得批准对所有 Office 365 用户。
+图标将变为绿色, 并且应用程序将针对所有 Office 365 用户进行审批。
   
 > [!NOTE]
-> 当您将应用程序标记为已批准时，最终用户没有影响。直观地标记批准的应用程序有助于分隔它们从您尚未尚未已审阅的应用程序。 
+> 当您将某个应用程序标记为已批准时, 最终用户将不会有任何影响。以可视方式标记已批准的应用程序有助于将它们与尚未审阅的应用程序分开。 
   
-## <a name="ban-an-app"></a>禁止应用程序
+## <a name="ban-an-app"></a>禁止应用
 
-1. 在**管理 OAuth 应用程序**页上，找到您要禁止，应用的程序，然后选择**作为标记应用程序禁止**图标。<br/>![选择为禁止图标的标记应用程序](media/OCAS-MarkOAuthBanned.png)
+1. 在 "**管理 OAuth 应用**程序" 页上, 找到要禁止的应用程序, 然后选择 "**标记应用" 作为 "禁止**" 图标。<br/>![选择 "标记应用" 作为 "禁止" 图标](media/OCAS-MarkOAuthBanned.png)
   
-2. 在通知消息框中，保留现有的文本，按原样，或自定义的文本。选择是否让用户了解其应用程序已被禁止。 <br/>![邮件模板禁止应用程序](media/6d132700-5f7f-472c-bfb5-a44549e69c16.jpg)<br/>
+2. 在通知消息框中, 保留现有文本, 或自定义文本。选择是否让用户知道他们的应用程序已被禁止。 <br/>![阻止的应用程序的邮件模板](media/6d132700-5f7f-472c-bfb5-a44549e69c16.jpg)<br/>
   
-3. 选择**禁止应用程序**。
+3. 选择 "**禁止应用**"。
 
-## <a name="report-an-oauth-app-to-microsoft"></a>向 Microsoft 报告 OAuth 应用程序
+## <a name="report-an-oauth-app-to-microsoft"></a>向 Microsoft 报告 OAuth 应用
 
-如果您想要 OAuth 的应用程序提交给 Microsoft 进行分析，您可以报告该应用程序。
+如果要将 OAuth 应用程序提交到 Microsoft 进行分析, 可以报告该应用程序。
 
-1. 在**管理 OAuth 应用程序**页中，找到要用于分析提交应用的程序。
+1. 在 "**管理 OAuth 应用**程序" 页上, 找到要提交以供分析的应用程序。
 
-2. 选择的垂直省略号，然后选择**报告应用程序...**。<br/>![报告 OAuth 应用程序](media/OCAS-MarkOAuthReported.png)<br/>
+2. 选择垂直省略号, 然后选择 "**报告应用 ...**"。<br/>![报告 OAuth 应用](media/OCAS-MarkOAuthReported.png)<br/>
 
-3. 在**报告此应用程序**对话框中，使用下拉列表以指示您的问题。默认情况下，**此应用程序是恶意**处于选中状态。但是，您可以选择其他可用选项之一。<br/>![报告 OAuth 应用程序](media/OCAS-ReportOAuthApp.png)<br/>
+3. 在 "**报告此应用程序**" 对话框中, 使用下拉列表指示你的关注。默认情况下, 将选择**此应用程序是恶意**的。不过, 您可以选择其他可用选项之一。<br/>![报告 OAuth 应用](media/OCAS-ReportOAuthApp.png)<br/>
 
-4. （推荐）保留选项可与您选择，联系，确认 （或编辑） 列出的电子邮件地址。
+4. 适合保留选择 "联系" 选项, 并确认 (或编辑) 列出的电子邮件地址。
 
 5. 选择" **提交**"。 
     
 ## <a name="create-an-app-query"></a>创建应用程序查询
 
-我们建议使用的高级的视图，如下所示： 
+我们建议使用 "高级" 视图, 如下所示: 
 
-![高级的视图](media/OCAS-OAuthAppsAdvQueryView.png)
+![高级视图](media/OCAS-OAuthAppsAdvQueryView.png)
 
-在应用程序查询栏中，请参阅**高级**，如果您正使用的基本视图。单击 （或点击）**高级**以转到的高级视图。 
+在应用程序查询栏中, 如果您看到 "**高级**", 则使用的是 "基本" 视图。单击 (或点击) "**高级**" 以转到 "高级" 视图。 
 
 ![基本视图](media/OCAS-OAuthAppsBasicQueryView.png)
     
-1. 在查询栏中，使用**选择筛选器**列表选择一个选项。 
-    - **应用程序**具有某些名称的应用程序
-    - **应用程序状态**根据状态 （已批准、 Banned 或未确定） 的应用程序
-    - **使用社区**基于社区的应用程序使用级别 （Rare、 Uncommon 或通用）
-    - **权限级别**基于特定权限级别的应用程序 
-    - **权限**需要哪些权限的应用程序
-    - **Publisher** 从特定的发布者的应用程序
-    - **用户**特定用户授权的应用程序
+1. 在查询栏中, 使用 "**选择筛选器**" 列表选择一个选项。 
+    - **应用**具有特定名称的应用程序
+    - **应用程序状态**基于其状态 ("已批准"、"禁止" 或 "不确定") 的应用程序
+    - **社区使用**基于社区使用级别的应用程序 (极少、不常见或常见)
+    - **权限级别**基于某些权限级别的应用程序 
+    - **权限**需要特定权限的应用程序
+    - **发布服务器** 来自特定发布者的应用程序
+    - **用户**某个用户授权的应用程序
    
-2. 选择**等于**或**不等于**，，然后指定为筛选器值。
+2. 选择 "**等于**或**不等于**", 然后为您的筛选器指定值。
     
-3. 若要添加更多筛选器，请选择加号 （![添加用于查询应用程序的筛选器图标](media/771b2958-67cd-4e14-9302-283ef238cae5.jpg))，然后对重复步骤 2 和 3。
+3. 若要添加更多筛选器, 请选择加号 (![添加用于查询应用程序的筛选器图标](media/771b2958-67cd-4e14-9302-283ef238cae5.jpg)), 然后重复步骤2和3。
     
-4. 若要删除筛选器，请选择 x (![删除查询应用程序的筛选器图标](media/5339277f-555d-4749-8dcc-d2574250556e.jpg)) 旁边的筛选器名称。
+4. 若要删除筛选器, 请选择 x (![删除用于查询应用程序的筛选器图标](media/5339277f-555d-4749-8dcc-d2574250556e.jpg)) 旁边的筛选器名称。
     
-自动应用筛选器并相应地更新应用程序列表。
+将自动应用筛选器, 并相应地更新 "应用" 列表。
   
 ## <a name="next-steps"></a>后续步骤
 
-- [查看并通知对其执行操作](review-office-365-cas-alerts.md)
+- [查看警报并对其执行操作](review-office-365-cas-alerts.md)
     
-- 查看您的[Web 流量日志和 Office 365 云应用程序安全性的数据源](web-traffic-logs-and-data-sources-for-ocas.md)
+- 查看[适用于 Office 365 云应用程序安全性的 Web 流量日志和数据源](web-traffic-logs-and-data-sources-for-ocas.md)
     
-- 查看您[的 Office 365 云应用程序安全性的使用率活动](utilization-activities-for-ocas.md)
+- 查看[Office 365 云应用安全性的利用率活动](utilization-activities-for-ocas.md)
     
 

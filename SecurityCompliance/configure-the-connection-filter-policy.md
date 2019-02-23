@@ -1,7 +1,7 @@
 ---
 title: 配置连接筛选器策略
-ms.author: krowley
-author: kccross
+ms.author: tracyp
+author: MSFTTracyP
 manager: laurawi
 ms.date: 10/24/2018
 ms.audience: ITPro
@@ -12,13 +12,15 @@ localization_priority: Normal
 search.appverid:
 - MET150
 ms.assetid: 6ae78c12-7bbe-44fa-ab13-c3768387d0e3
-description: 若要确保不阻止从您信任的人员发送的电子邮件，可以使用的连接筛选器策略创建一个允许列表，也称为安全发件人列表，您信任的 IP 地址。您还可以创建阻止发件人列表。
-ms.openlocfilehash: 2f8ec3d01de4358d7394c68d0efae9222db08282
-ms.sourcegitcommit: a07b91723bae9ecee2cb092bfbc5b208b30b11a1
+ms.collection:
+- M365-security-compliance
+description: 若要确保从不受信任的人发送的电子邮件被阻止, 可以使用连接筛选器策略创建您信任的 IP 地址的允许列表 (也称为 "安全发件人列表")。您还可以创建阻止的发件人列表。
+ms.openlocfilehash: d7c99f8fb6b9b05efb800804927ccb26f7dd9f40
+ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "25793557"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "30216902"
 ---
 # <a name="configure-the-connection-filter-policy"></a>配置连接筛选器策略
  
@@ -35,35 +37,35 @@ ms.locfileid: "25793557"
 
 - 预计完成时间：15 分钟
     
-- 您需要执行此过程之前为其分配权限。若要查看所需的权限，请参阅[Feature Permissions in Exchange Online](http://technet.microsoft.com/library/15073ce1-0917-403b-8839-02a2ebc96e16.aspx)主题中的"反垃圾邮件"条目。 
+- 您需要先分配权限, 然后才能执行此过程或过程。若要查看所需的权限, 请参阅[Exchange Online 中的功能权限](http://technet.microsoft.com/library/15073ce1-0917-403b-8839-02a2ebc96e16.aspx)主题中的 "反垃圾邮件" 条目。 
     
-- 若要获取想要允许或阻止其邮件的发件人的 IP 地址，您可以检查邮件的 Internet 标头。查找 CIP 页眉[反垃圾邮件邮件头](anti-spam-message-headers.md)中所述。有关如何在各种电子邮件客户端中查看邮件头的信息，请参阅[消息标头分析器](https://go.microsoft.com/fwlink/p/?LinkId=306583)。 
+- 若要获取要允许或阻止其邮件的发件人的 IP 地址, 可以检查邮件的 Internet 邮件头。如[反垃圾邮件邮件头](anti-spam-message-headers.md)中所述, 查找 CIP 标头。有关如何在各种电子邮件客户端中查看邮件头的信息, 请参阅[邮件头分析器](https://go.microsoft.com/fwlink/p/?LinkId=306583)。 
     
 - 从 IP 阻止列表中的 IP 地址发送的电子邮件被拒绝，未标记为垃圾邮件，且未进行其他筛选。
     
-- 也可以通过远程 PowerShell 执行下面的连接筛选器过程。使用[Get-HostedConnectionFilterPolicy](http://technet.microsoft.com/library/bd751db2-3f26-495b-8e5a-4fcab53b17fd.aspx) cmdlet 可以查看您的设置，以及[Set-hostedconnectionfilterpolicy](http://technet.microsoft.com/library/ccb5731b-3fca-4d69-a91f-5049ea963fac.aspx)编辑您的连接筛选器策略设置。若要了解如何使用 Windows PowerShell 连接到 Exchange Online Protection，请参阅[Connect to Exchange Online Protection PowerShell](https://go.microsoft.com/fwlink/p/?linkid=627290)。若要了解如何使用 Windows PowerShell 连接到 Exchange Online，请参阅[Connect to Exchange Online PowerShell 中](https://go.microsoft.com/fwlink/p/?linkid=396554)。
+- 还可以通过远程 PowerShell 执行以下连接筛选过程。使用[set-hostedconnectionfilterpolicy](http://technet.microsoft.com/library/bd751db2-3f26-495b-8e5a-4fcab53b17fd.aspx) cmdlet 可查看您的设置, 以及用于编辑连接筛选器策略设置的[set-hostedconnectionfilterpolicy](http://technet.microsoft.com/library/ccb5731b-3fca-4d69-a91f-5049ea963fac.aspx) 。若要了解如何使用 Windows PowerShell 连接到 exchange online protection, 请参阅[连接到 exchange online protection PowerShell](https://go.microsoft.com/fwlink/p/?linkid=627290)。若要了解如何使用 Windows PowerShell 连接到 exchange online, 请参阅[连接到 exchange online PowerShell](https://go.microsoft.com/fwlink/p/?linkid=396554)。
     
 ## <a name="use-the-eac-to-edit-the-default-connection-filter-policy"></a>使用 EAC 编辑默认连接筛选器策略
 <a name="sectionSection1"> </a>
 
 在 Exchange 管理中心 (EAC) 编辑连接筛选器策略，创建 IP 允许列表或 IP 阻止列表。连接筛选器策略设置只适用于入站邮件。
   
-1. 在 Exchange 管理员中心 (EAC) 中，导航到**保护** \> **连接筛选器**，然后双击默认策略。
+1. 在 Exchange 管理中心 (EAC) 中, 导航到 "**保护** \> **连接筛选器**", 然后双击默认策略。
     
-2. 单击**连接筛选**菜单项，然后创建所需的列表： IP 允许列表、 IP 阻止列表，或同时。 
+2. 单击 "**连接筛选**" 菜单项, 然后创建所需的列表: ip 允许列表和/或 ip 阻止列表。 
     
-    若要创建这些列表，请单击![添加图标](media/ITPro-EAC-AddIcon.gif)。在随后出现的对话框中指定的 IP 地址或地址范围，，然后单击**ok**。重复此过程以添加其他地址。（您可以还编辑或删除 IP 地址后已添加。）
+    若要创建这些列表, ![请单击](media/ITPro-EAC-AddIcon.gif)"添加图标"。在随后出现的对话框中, 指定 IP 地址或地址范围, 然后单击 **"确定"**。重复此过程以添加其他地址。(添加或删除已添加的 IP 地址后, 也可以对其进行编辑或删除。)
     
     > [!NOTE]
-    >  如果向这两个列表添加一个 IP 地址，则允许发送来自该 IP 地址的电子邮件。 
+    >  如果将 IP 地址添加到两个列表中, 则允许从该 ip 地址发送的电子邮件。 
 
-    指定在其中 nnn 是一个介于 0 到 255 之间的格式 nnn.nnn.nnn.nnn IPV4 的 IP 地址。您还可以在其中 rr 是 24 到 32 的数字格式 nnn.nnn.nnn.nnn/rr 指定无类别域际路由选择 (CIDR) 区域。若要指定范围的 24 到 32 个范围之外，请参阅[配置 IP 允许时的其他注意事项列表](configure-the-connection-filter-policy.md#bkmk_addtionalconsiderationswhenconfiguringipallowlists)。 
+    以 nnn 的格式指定 IPV4 IP 地址。 nnn 为0到255之间的数字。您还可以指定无类别的域间路由 (CIDR) 范围, 格式为 nnn/rr, 其中 rr 是介于24到32之间的数字。若要指定从24至32范围之外的范围, 请参阅[配置 IP 允许列表时的其他注意事项](configure-the-connection-filter-policy.md#bkmk_addtionalconsiderationswhenconfiguringipallowlists)。 
 
-    您可以指定 1273年个条目，其中一个条目是单个 IP 地址或从/24 到/32 CIDR 范围内的 IP 地址的最大值。> 如果您发送 TLS 加密的邮件，不支持 IPv6 地址和地址范围。 
+    最多可以指定1273个条目, 其中条目是单个 ip 地址或 ip 地址的 CIDR 范围 (从/24 到/32)。> 如果要发送 TLS 加密邮件, 则不支持 IPv6 地址和地址范围。 
   
-3. （可选） 选中**启用安全列表**复选框，以防止缺少来自特定已知发件人的电子邮件。如何？Microsoft 订阅到的受信任的发件人的第三方源。使用此安全列表意味着这些受信任的发件人不会错误地标记为垃圾邮件。我们建议选择此选项，因为它应减少误报 （为垃圾邮件分类的良好邮件） 的数目，您将收到。 
+3. (可选) 选中 "**启用安全列表**" 复选框以防止某些已知发件人丢失的电子邮件。计算?Microsoft 订阅了受信任发件人的第三方来源。使用此安全列表意味着这些受信任的发件人不会被错误地标记为垃圾邮件。我们建议选择此选项, 因为它应减少您收到的误报数 (作为垃圾邮件分类的邮件)。 
     
-4. 单击**保存**。在右窗格中显示的默认策略设置摘要。
+4. 单击 "**保存**"。右窗格中将显示默认策略设置的摘要。
     
 ## <a name="additional-considerations-when-configuring-ip-allow-lists"></a>配置 IP 允许列表时的其他注意事项
 <a name="bkmk_addtionalconsiderationswhenconfiguringipallowlists"> </a>
@@ -72,27 +74,27 @@ ms.locfileid: "25793557"
   
 ### <a name="specifying-a-cidr-range-that-falls-outside-of-the-recommended-range"></a>指定超出建议范围的 CIDR 范围
 
-若要指定 CIDR IP 地址范围为从/1 到 /23，必须创建的 IP 地址范围的设置的垃圾邮件可信度 (SCL) 运行的邮件流规则**绕过垃圾邮件筛选**（这意味着从收到此 IP 地址范围内的所有消息都都到设置为"非垃圾邮件"） 和任何其他筛选服务执行)。但是，如果任何这些 IP 地址出现在任何 Microsoft 的专有阻止列表或我们第三方阻止的任何列表，仍能阻止这些邮件。因此强烈建议您使用/24 到/32 IP 地址范围。 
+若要指定从/1 到/23 的 CIDR IP 地址范围, 必须创建一个邮件流规则, 该规则在设置垃圾邮件可信度 (SCL) 的 IP 地址范围上运行, 以**绕过垃圾邮件筛选**(意味着从该 IP 地址范围内接收的所有邮件都是设置为 "非垃圾邮件"), 并且服务不执行其他筛选。但是, 如果这些 IP 地址中的任何一个出现在任何 Microsoft 的专用阻止列表或任何第三方阻止列表中, 则这些邮件仍将被阻止。因此, 强烈建议使用/24 to/32 IP 地址范围。 
   
-若要创建此邮件流规则，请执行以下步骤。
+若要创建此邮件流规则, 请执行以下步骤。
   
-1. 在 EAC 中，导航到**邮件流** \> **规则**。
+1. 在 EAC 中, 导航到 "**邮件流** \> "**规则**。
     
-2. 单击![添加图标](media/ITPro-EAC-AddIcon.gif)，然后选择**创建新规则**。
+2. 单击!["添加](media/ITPro-EAC-AddIcon.gif)图标", 然后选择 "**创建新规则**"。
     
-3. 为该规则指定一个名称，然后单击**更多选项**。
+3. 为该规则命名, 然后单击 "**更多选项**"。
     
-4. 在**以下情况应用此规则**，选择**发件人**，然后选择**IP 地址处于这些范围或完全匹配**。
+4. 在 "在以下**情况应用此规则**" 下, 选择 **"发件人"** , 然后选择 " **IP 地址" 在这些范围中的任何范围或完全匹配**。
     
-5. 在**指定 IP 地址**，请指定 IP 地址范围，单击**添加**![添加图标](media/ITPro-EAC-AddIcon.gif)，然后单击**确定**。
+5. 在 "**指定 ip 地址**" 中, 指定 ip 地址范围, **** ![单击 "添加](media/ITPro-EAC-AddIcon.gif)" "添加图标", 然后单击 **"确定"**。
     
-6. 在**执行以下操作**下选择**修改邮件属性**，然后**将垃圾邮件可信度 (SCL) 设置**中设置操作。在**指定 SCL**框中，选择**绕过垃圾邮件筛选**，并单击**确定**。
+6. 在 "**执行以下**操作" 框中, 通过选择 **"修改邮件属性**", 然后**设置垃圾邮件可信度 (SCL)** 来设置操作。在 "**指定 SCL** " 框中, 选择 "**绕过垃圾邮件筛选**", 然后单击 **"确定"**。
     
-7. 如果您愿意，您可以选择审核规则、 测试规则，在特定时间段，激活规则和其他选择。我们建议测试一段之前您强制执行规则。[在 Exchange 服务器的邮件流的过程，规则](https://docs.microsoft.com/en-us/Exchange/policy-and-compliance/mail-flow-rules/mail-flow-rule-procedures)包含有关这些选项的详细信息。 
+7. 如果你愿意, 可以选择审核规则、测试规则、在特定时间段内激活规则, 以及进行其他选择。建议在强制执行规则之前对其进行测试。[Exchange Server 中的邮件流规则的过程](https://docs.microsoft.com/en-us/Exchange/policy-and-compliance/mail-flow-rules/mail-flow-rule-procedures)包含有关这些选择的详细信息。 
     
-8. 单击**保存**以保存规则。此规则的规则列表中显示。 
+8. 单击 "**保存**" 以保存该规则。规则将显示在规则列表中。 
     
-创建和强制执行规则后，该服务绕过垃圾邮件筛选您指定的 IP 地址范围。
+创建并强制执行规则后, 服务将绕过您指定的 IP 地址范围的垃圾邮件筛选。
   
 ### <a name="scoping-an-ip-allow-list-exception-for-a-specific-domain"></a>为特定域设置 IP 允许列表例外作用域
 
@@ -102,25 +104,25 @@ ms.locfileid: "25793557"
   
 为此，请执行下列步骤：
   
-1. 在 EAC 中，导航到**邮件流** \> **规则**。
+1. 在 EAC 中, 导航到 "**邮件流** \> "**规则**。
     
-2. 单击![添加图标](media/ITPro-EAC-AddIcon.gif)，然后选择**创建新规则**。
+2. 单击!["添加](media/ITPro-EAC-AddIcon.gif)图标", 然后选择 "**创建新规则**"。
     
-3. 为该规则指定一个名称，然后单击**更多选项**。
+3. 为该规则命名, 然后单击 "**更多选项**"。
     
-4. 在**以下情况应用此规则**，选择**发件人**，然后选择**IP 地址处于这些范围或完全匹配**。
+4. 在 "在以下**情况应用此规则**" 下, 选择 **"发件人"** , 然后选择 " **IP 地址" 在这些范围中的任何范围或完全匹配**。
     
-5. 在**指定 IP 地址**框中，指定的 IP 地址或 IP 地址范围您输入的 IP 允许列表中，单击**添加**![添加图标](media/ITPro-EAC-AddIcon.gif)，然后单击**确定**。
+5. 在 "**指定 ip 地址**" 框中, 指定在 ip 允许列表中输入的 ip 地址或 ip 地址范围, **** ![单击 "添加](media/ITPro-EAC-AddIcon.gif)" "添加" 图标, 然后单击 **"确定"**。
     
-6. 下**执行以下操作**，通过选择**修改邮件属性**，然后**将垃圾邮件可信度 (SCL) 设置**来设置操作。在**指定 SCL**框中，选择**0**，并单击**确定**。
+6. 在 "**执行以下**操作" 下, 通过选择 **"修改邮件属性**", 然后**设置垃圾邮件可信度 (SCL)** 来设置操作。在 "**指定 SCL** " 框中, 选择 " **0**", 然后单击 **"确定"**。
     
-7. 单击**添加例外**，并在**除非**下选择**发件人**选择**域**。 
+7. 单击 "**添加例外**", 并在 "**除非**" 下选择 **"发件人"** , 然后选择 "**域为**"。 
     
-8. 在**指定域**框中，输入您要绕过垃圾邮件筛选，如**contosob.com**的域。单击**添加**![添加图标](media/ITPro-EAC-AddIcon.gif)以将其移到的短语列表。如果您想要将其他域添加为异常，并在完成时单击**确定**，请重复此步骤。 
+8. 在 "**指定域**" 框中, 输入要绕过垃圾邮件筛选的域, 例如**contosob.com**。单击 "**添加** !["](media/ITPro-EAC-AddIcon.gif)图标将其移动到短语列表。如果要将其他域添加为例外, 请重复此步骤, 然后在完成时单击 **"确定"** 。 
     
-9. 如果您愿意，您可以选择审核规则、 测试规则，在特定时间段，激活规则和其他选择。我们建议测试一段之前您强制执行规则。[在 Exchange 服务器的邮件流的过程，规则](https://docs.microsoft.com/en-us/Exchange/policy-and-compliance/mail-flow-rules/mail-flow-rule-procedures)包含有关这些选项的详细信息。 
+9. 如果你愿意, 可以选择审核规则、测试规则、在特定时间段内激活规则, 以及进行其他选择。建议在强制执行规则之前对其进行测试。[Exchange Server 中的邮件流规则的过程](https://docs.microsoft.com/en-us/Exchange/policy-and-compliance/mail-flow-rules/mail-flow-rule-procedures)包含有关这些选择的详细信息。 
     
-10. 单击**保存**以保存规则。此规则的规则列表中显示。 
+10. 单击 "**保存**" 以保存该规则。规则将显示在规则列表中。 
     
 在创建和强制应用规则后，仅为您输入的例外的域绕过指定 IP 地址或 IP 地址范围的垃圾邮件筛选。
   

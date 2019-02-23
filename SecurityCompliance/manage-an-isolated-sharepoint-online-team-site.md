@@ -6,42 +6,42 @@ manager: laurawi
 ms.date: 12/15/2017
 ms.audience: ITPro
 ms.topic: article
-ms.service: o365-solutions
+ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: Ent_O365
 ms.custom: Ent_Solutions
 ms.assetid: 79a61003-4905-4ba8-9e8a-16def7add37c
-description: 摘要： 管理您的独立的 SharePoint Online 团队网站使用这些过程。
-ms.openlocfilehash: 22b4cbbdd926635286d23570e1f61b64529d0e76
-ms.sourcegitcommit: e0f016aca7befc8806233a492ee916cbe646094f
+description: '摘要: 使用这些过程管理独立的 SharePoint Online 团队网站。'
+ms.openlocfilehash: 81a6fcd80bb3e4950eb7b783d1ad964b9bc67cc5
+ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/27/2018
-ms.locfileid: "25345934"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "30214482"
 ---
 # <a name="manage-an-isolated-sharepoint-online-team-site"></a>管理独立 SharePoint Online 团队网站
 
- **摘要：** 管理您的独立的 SharePoint Online 团队网站使用这些过程。
+ **摘要:** 使用这些过程管理独立的 SharePoint Online 团队网站。
   
-本文介绍为独立的 SharePoint Online 团队网站的常见管理操作。
+本文介绍了独立的 SharePoint Online 团队网站的常见管理操作。
   
 ## <a name="add-a-new-user"></a>添加新用户
 
-当某个新人加入网站时，您必须决定在网站中的参与其级别：
+当有人新建加入网站时, 您必须决定其在网站中的参与级别:
   
-- 管理： 将新的用户帐户添加到网站管理员访问组
+- 管理: 将新用户帐户添加到网站管理员访问组
     
-- 活动的协作： 向网站添加用户帐户成员访问组
+- 主动协作: 将用户帐户添加到网站成员访问组
     
-- 查看： 将用户帐户添加到网站查看器访问组
+- 查看: 将用户帐户添加到网站查看者访问组
     
-如果您在管理用户帐户和组通过 Windows Server Active Directory (AD)，将相应的用户添加到适当的访问组使用您正常的 Windows Server AD 用户和组管理过程并等待与同步您Office 365 订阅。
+如果通过 Windows Server Active Directory (AD) 管理用户帐户和组, 请使用正常的 Windows server AD 用户和组管理程序将相应的用户添加到相应的访问组, 并等待与您的计算机同步Office 365 订阅。
   
-如果您在管理用户帐户和组通过 Office 365，您可以使用 Office 管理中心或 Microsoft PowerShell:
+如果您通过 office 365 管理用户帐户和组, 则可以使用 office 管理中心或 Microsoft PowerShell:
   
-- 对于 Office 管理中心中，使用已分配的用户帐户管理员或公司管理员角色的用户帐户登录，并使用组将相应的用户添加到适当的访问组。
+- 对于 Office 管理中心, 使用已分配有用户帐户管理员或公司管理员角色的用户帐户登录, 并使用组将相应的用户添加到相应的访问组。
     
-- Powershell，第一个[使用 Azure Active Directory V2 PowerShell 模块的连接](https://go.microsoft.com/fwlink/?linkid=842218)。若要向其用户主体名称 (UPN) 与 access 组添加用户帐户，使用以下 PowerShell 命令块：
+- 对于 PowerShell, 首先[使用 Azure Active Directory V2 PowerShell 模块进行连接](https://go.microsoft.com/fwlink/?linkid=842218)。若要将用户帐户添加到具有其用户主体名称 (UPN) 的访问组, 请使用以下 PowerShell 命令块:
     
 ```
 $userUPN="<UPN of the user account>"
@@ -50,9 +50,9 @@ Add-AzureADGroupMember -RefObjectId (Get-AzureADUser | Where { $_.UserPrincipalN
 ```
 
 > [!TIP]
-> 对于包含所有 PowerShell 命令和 Excel 的文本文件配置工作表中生成 PowerShell 命令的基于您的组和用户帐户名，下载[独立 SharePoint Online 团队网站部署工具包](https://gallery.technet.microsoft.com/Isolated-SharePoint-Online-0b364907)。 
+> 对于包含所有 powershell 命令的文本文件和基于您的组和用户帐户名称生成 PowerShell 命令的 Excel 配置工作表, 请下载[独立的 SharePoint Online 团队网站部署工具包](https://gallery.technet.microsoft.com/Isolated-SharePoint-Online-0b364907)。 
 
-若要向其显示名称与 access 组添加用户帐户，请使用以下 PowerShell 命令块：
+若要向具有其显示名称的访问组添加用户帐户, 请使用以下 PowerShell 命令块:
 
 ```
 $userDisplayName="<display name of the user account>"
@@ -62,21 +62,21 @@ Add-AzureADGroupMember -RefObjectId (Get-AzureADUser | Where { $_.DisplayName -e
 
 ## <a name="add-a-new-group"></a>添加新组
 
-若要添加到整个组的访问，必须决定参与组的所有成员的站点中的级别：
+若要添加对整个组的访问权限, 您必须确定网站中组的所有成员的参与级别:
   
-- 管理： 将组添加到网站管理员访问组
+- 管理: 将组添加到网站管理员访问组
     
-- 活动的协作： 将组添加到网站成员访问组
+- 主动协作: 将组添加到网站成员访问组
     
-- 查看： 将组添加到网站查看器访问组
+- 查看: 将组添加到网站查看器访问组
     
-如果您在管理用户帐户和通过 Windows Server AD 的组，将相应的组添加到适当的组使用普通的 Windows Server AD 用户和组管理过程并等待与 Office 365 订阅的同步。
+如果通过 Windows Server ad 管理用户帐户和组, 请使用正常的 Windows server ad 用户和组管理过程将适当的组添加到适当的组, 并等待与 Office 365 订阅同步。
   
-如果您在管理用户帐户和组通过 Office 365，您可以使用 Office 管理中心或 PowerShell:
+如果您通过 office 365 管理用户帐户和组, 则可以使用 office 管理中心或 PowerShell:
   
-- 对于 Office 管理中心中，使用已分配的用户帐户管理员或公司管理员角色的用户帐户登录，并使用组将相应的组添加到适当的访问组。
+- 对于 Office 管理中心, 使用已分配有用户帐户管理员或公司管理员角色的用户帐户登录, 并使用组将适当的组添加到相应的访问组。
     
-- Powershell，第一个[使用 Azure Active Directory V2 PowerShell 模块的连接](https://go.microsoft.com/fwlink/?linkid=842218)。然后，使用以下 PowerShell 命令：
+- 对于 PowerShell, 首先[使用 Azure Active Directory V2 PowerShell 模块进行连接](https://go.microsoft.com/fwlink/?linkid=842218)。然后, 使用以下 PowerShell 命令:
  
 ```
 $newGroupName="<display name of the new group to add>"
@@ -86,21 +86,21 @@ Add-AzureADGroupMember -RefObjectId (Get-AzureADGroup | Where { $_.DisplayName -
 
 ## <a name="remove-a-user"></a>删除用户
 
-必须从网站删除某人的访问，它们从组中删除访问它们所当前基于其参与网站成员：
+当必须从网站中删除某人的访问权限时, 您可以从访问组中删除他们当前为其成员的访问组, 具体取决于其在网站中的参与情况:
   
-- 管理： 删除网站管理员访问组中的用户帐户
+- 管理: 从网站管理员访问组中删除用户帐户
     
-- 活动的协作： 删除网站成员访问组中的用户帐户
+- 主动协作: 从网站成员访问组中删除用户帐户
     
-- 查看： 删除网站的查看者访问组中的用户帐户
+- 查看: 从网站查看器访问组中删除用户帐户
     
-如果您在管理用户帐户和组通过 Windows Server AD，从使用普通的 Windows Server AD 用户和组管理过程的适当的访问组中删除相应的用户并等待与 Office 365 同步订阅。
+如果通过 Windows Server ad 管理用户帐户和组, 请使用正常的 Windows server ad 用户和组管理过程从适当的访问组中删除相应的用户, 并等待与 Office 365 同步订购.
   
-如果您在管理用户帐户和组通过 Office 365，您可以使用 Office 管理中心或 PowerShell:
+如果您通过 office 365 管理用户帐户和组, 则可以使用 office 管理中心或 PowerShell:
   
-- 为 Office 管理中心中，使用已分配的用户帐户管理员或公司管理员角色的用户帐户登录并使用组来从适当的访问组中删除相应的用户。
+- 对于 Office 管理中心, 使用已分配有用户帐户管理员或公司管理员角色的用户帐户登录, 并使用组从相应的访问组中删除相应的用户。
     
-- Powershell，第一个[使用 Azure Active Directory V2 PowerShell 模块的连接](https://go.microsoft.com/fwlink/?linkid=842218)。若要从其 UPN 与访问组中删除的用户帐户，请使用以下 PowerShell 命令块：
+- 对于 PowerShell, 首先[使用 Azure Active Directory V2 PowerShell 模块进行连接](https://go.microsoft.com/fwlink/?linkid=842218)。若要从具有 UPN 的访问组中删除用户帐户, 请使用以下 PowerShell 命令块:
     
 ```
 $userUPN="<UPN of the user account>"
@@ -108,7 +108,7 @@ $grpName="<display name of the access group>"
 Remove-AzureADGroupMember -MemberId (Get-AzureADUser | Where { $_.UserPrincipalName -eq $userUPN }).ObjectID -ObjectID (Get-AzureADGroup | Where { $_.DisplayName -eq $grpName }).ObjectID
 ```
 
-若要从其显示名称访问组中删除的用户帐户，请使用以下 PowerShell 命令块：
+若要从具有显示名称的访问组中删除用户帐户, 请使用以下 PowerShell 命令块:
     
 ```
 $userDisplayName="<display name of the user account>"
@@ -118,22 +118,22 @@ Remove-AzureADGroupMember -MemberId (Get-AzureADUser | Where { $_.DisplayName -e
 
 ## <a name="remove-a-group"></a>删除组
 
-删除整个组的访问权限，您可以从它们所当前基于其参与网站成员访问组中删除组：
+若要删除对整个组的访问权限, 您可以从访问组中删除其当前为其成员的访问组, 这些组基于其在站点中的参与情况:
   
-- 管理： 删除从网站管理员访问组的组
+- 管理: 从网站管理员访问组中删除组
     
-- 活动的协作： 删除从网站成员访问组的组
+- 主动协作: 从网站成员访问组中删除组
     
-- 查看： 删除从网站查看器访问组的组
+- 查看: 从网站查看器访问组中删除组
     
-如果您在管理用户帐户和通过 Windows Server Active Directory 组，从使用您正常的 Windows Server AD 用户和组管理过程的适当的访问组中删除相应的组并等待与同步您Office 365 订阅。
+如果通过 Windows Server Active Directory 管理用户帐户和组, 请使用正常的 Windows server AD 用户和组管理过程从适当的访问组中删除相应的组, 并等待与您的计算机同步Office 365 订阅。
   
-如果您在管理用户帐户和组通过 Office 365，您可以使用 Office 管理中心或 PowerShell:
+如果您通过 office 365 管理用户帐户和组, 则可以使用 office 管理中心或 PowerShell:
   
-- 为 Office 管理中心中，使用已分配的用户帐户管理员或公司管理员角色的用户帐户登录并使用组来从适当的访问组中删除相应的组。
+- 对于 Office 管理中心, 使用已分配有用户帐户管理员或公司管理员角色的用户帐户登录, 并使用组从相应的访问组中删除相应的组。
     
-- Powershell，第一个[使用 Azure Active Directory V2 PowerShell 模块的连接](https://go.microsoft.com/fwlink/?linkid=842218)。    
-若要从使用其显示名称的访问组中删除组，请使用以下 PowerShell 命令块：
+- 对于 PowerShell, 首先[使用 Azure Active Directory V2 PowerShell 模块进行连接](https://go.microsoft.com/fwlink/?linkid=842218)。    
+若要使用用户的显示名称从访问组中删除组, 请使用以下 PowerShell 命令块:
     
 ```
 $groupMemberName="<display name of the group to remove>"
@@ -141,45 +141,45 @@ $grpName="<display name of the access group>"
 Remove-AzureADGroupMember -MemberId (Get-AzureADGroup | Where { $_.DisplayName -eq $groupMemberName }).ObjectID -ObjectID (Get-AzureADGroup | Where { $_.DisplayName -eq $grpName }).ObjectID
 ```
 
-## <a name="create-a-documents-subfolder-with-custom-permissions"></a>使用自定义权限创建的文档子文件夹
+## <a name="create-a-documents-subfolder-with-custom-permissions"></a>使用自定义权限创建 documents 子文件夹
 
-在某些情况下，使用隔离网站内的人员的子集需要进行协作的更多专用位置。对于 SharePoint Online 网站，您可以在网站的文档文件夹中创建子文件夹，并分配自定义权限。那些没有权限将不会看到子文件夹。
+在某些情况下, 在独立网站中工作的人员的子集需要更多的专用空间进行协作。对于 SharePoint Online 网站, 可以在网站的 "文档" 文件夹中创建一个子文件夹, 并分配自定义权限。没有权限的人员将看不到子文件夹。
   
-要创建自定义权限文档子文件夹，请执行以下操作：
+若要创建具有自定义权限的 documents 子文件夹, 请执行以下操作:
   
-1. 使用网站的管理员访问组的成员的帐户登录到 Office 365。为了帮助，请参阅[从何处登录到 Office 365](https://support.office.com/Article/Where-to-sign-in-to-Office-365-e9eb7d51-5430-4929-91ab-6157c5a050b4)。
+1. 使用作为网站的管理员访问组成员的帐户登录到 Office 365。若要获取帮助, 请参阅[登录到 Office 365 的位置](https://support.office.com/Article/Where-to-sign-in-to-Office-365-e9eb7d51-5430-4929-91ab-6157c5a050b4)。
     
-2. 转到独立的工作组网站，并单击**文档**。
+2. 转到独立的团队网站, 然后单击 "**文档**"。
     
-3. 浏览到的文件夹中文档文件夹，将包含自定义权限的子文件夹，创建文件夹，然后再打开它。
+3. 浏览到 "documents" 文件夹中将包含具有自定义权限的子文件夹的文件夹, 创建该文件夹, 然后将其打开。
     
 4. 单击"共享"。
     
-5. 单击**与共享 > 高级**。
+5. 单击 "**与 > 共享**" "高级"。
     
-6. 单击**停止继承权限**，然后单击**确定**。
+6. 单击 "**停止继承权限**", 然后单击 **"确定"**。
     
 7. 单击"共享"。
     
-8. 单击**与共享 > 高级**。
+8. 单击 "**与 > 共享**" "高级"。
     
-9. 单击**授予权限 > 与共享 > 高级**。
+9. 单击 "**授予权限 > 与 > 共享**" "高级"。
     
-10. 在权限页上单击**\<网站名称 > 列表中的成员**。
+10. 在 "权限" 页上, 单击** \<列表中的 "网站 name> 成员"**。
     
-11. 在**\<网站名称 > 成员**页上，选择网站成员访问组旁的复选标记，单击**操作**，单击**删除用户组**，然后单击**确定**。
+11. 在 " ** \<网站 name> 成员**" 页上, 选中 "网站成员访问" 组旁边的复选标记, 单击 "**操作**", 单击 "**从组中删除用户**", 然后单击 **"确定"**。
     
-12. 若要添加此子文件夹的特定成员，请单击**新建 > 将用户添加**。
+12. 若要向该子文件夹添加特定成员, 请单击 "**新建 > 添加用户**"。
     
-13. 在**共享**对话框中，键入可以协作处理的子文件夹中的文件，然后单击**共享**的用户帐户的名称。
+13. 在 "**共享**" 对话框中, 键入可在子文件夹中的文件上进行协作的用户帐户的名称, 然后单击 "**共享**"。
     
-14. 刷新网页以查看新的结果。
+14. 刷新网页以查看新结果。
     
-15. 在左侧导航窗格中的**组**下, 单击**\<网站名称 > 访问者**组并用于指定一组可以查看文件的子文件夹中 （根据需要） 的用户帐户的步骤 11 至 14。
+15. 在左侧导航组中的 "**组**" 下, 单击 " ** \<网站 name> 访问者**" 组, 并使用步骤11-14 指定可以查看子文件夹中的文件的用户帐户集 (根据需要)。
     
-16. 在左侧导航窗格中的**组**下, 单击**\<网站名称 > 所有者**组和步骤 11 至 14 用于指定的用户帐户 （根据需要） 可以管理子文件夹中的权限集。
+16. 在左侧导航组中的 "**组**" 下, 单击 " ** \<网站 name> 所有者**" 组, 并使用步骤11-14 指定可在子文件夹中管理权限的用户帐户集 (如果需要)。
     
-17. 关闭浏览器中的**人员和组**选项卡。
+17. 关闭浏览器中的 "**人员和组**" 选项卡。
     
 ## <a name="see-also"></a>另请参阅
 

@@ -6,19 +6,21 @@ manager: laurawi
 ms.date: 2/14/2018
 ms.audience: Admin
 ms.topic: hub-page
-ms.service: o365-administration
+ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid:
 - MOE150
 - BCS160
 ms.assetid: 2bb4e7c0-5f7f-4144-b647-cc6a956aaa53
+ms.collection:
+- M365-security-compliance
 description: 了解有关 Office 365 中的安全性可设置为帮助的通知。
-ms.openlocfilehash: 657bd35bd537db731b7994af625f95094a5bceab
-ms.sourcegitcommit: 8679937354c1d8870ecd41519a59d2d7468c23c4
+ms.openlocfilehash: e02e78b091c7e5e2347c90c14a99cf838b4482b4
+ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "30087321"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "30220542"
 ---
 # <a name="alerts-in-the-office-365-security-amp-compliance-center"></a>Office 365 安全&amp;合规中心中的警报
 

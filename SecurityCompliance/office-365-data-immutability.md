@@ -6,7 +6,7 @@ manager: laurawi
 ms.date: 8/21/2018
 audience: ITPro
 ms.topic: article
-ms.service: Office 365 Administration
+ms.service: O365-seccomp
 localization_priority: None
 search.appverid:
 - MET150
@@ -14,12 +14,12 @@ ms.collection:
 - Strat_O365_IP
 - M365-security-compliance
 description: 定义并解释数据永久性或必须可发现且无法销毁或更改的数据。
-ms.openlocfilehash: ab7bfc3795da761eacc9e9aa7d41e69e482fc411
-ms.sourcegitcommit: c94cb88a9ce5bcc2d3c558f0fcc648519cc264a2
+ms.openlocfilehash: 5d0deef04d879959238dbbcfe36bb98ed0159242
+ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/20/2019
-ms.locfileid: "30090874"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "30215562"
 ---
 # <a name="immutability-in-office-365"></a>Office 365 中的永久性
 对于某些组织, 法规遵从性、内部治理要求或诉讼风险要求将电子邮件和相关数据保留在可检测到的表单中。系统中的所有数据都必须是可检测到的, 且不能销毁或更改任何内容。本行业标准术语是 "不可变性" 的。 

@@ -6,17 +6,17 @@ manager: laurawi
 ms.date: 12/9/2016
 ms.audience: ITPro
 ms.topic: article
-ms.service: o365-administration
+ms.service: O365-seccomp
 ms.custom: TN2DMC
 localization_priority: Normal
 ms.assetid: 4b250bc9-0056-4426-8397-7b4398f1b026
 description: ''
-ms.openlocfilehash: 0bd13c74bab60f74650a010d38f0f4ff6b0c7c1d
-ms.sourcegitcommit: c31424cafbf1953f2864d7e2ceb95b329a694edb
+ms.openlocfilehash: 314c8ae028a24370c9c47fb3f005f18f9881e9e9
+ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "23272187"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "30215902"
 ---
 # <a name="use-end-user-spam-notifications-to-release-and-report-spam-quarantined-messages"></a>使用最终用户垃圾邮件通知释放和报告垃圾邮件隔离邮件
 

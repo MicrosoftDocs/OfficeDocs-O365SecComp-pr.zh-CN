@@ -6,40 +6,40 @@ manager: laurawi
 ms.date: 9/14/2017
 ms.audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid:
 - MET150
 - MOE150
 ms.assetid: dce7a700-3b6e-435f-88ba-e4b82c0f2b26
-description: '获取分析过程，以便您可以设置参数，运行选项，并查看结果，在 Office 365 高级电子数据展示的概述。 '
-ms.openlocfilehash: d20ce3acb9c21e8c35b098df2ffae3fa6c871c3e
-ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+description: '概述了 "Office 365 高级电子数据展示" 中的分析过程, 该过程允许您设置参数、运行选项和查看结果。 '
+ms.openlocfilehash: a3e9bc84c09b40b9751dd985faaf0931c77fa37b
+ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22525929"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "30217462"
 ---
 # <a name="analyze-case-data-with-office-365-advanced-ediscovery"></a>使用 Office 365 高级电子数据展示分析事例数据
 
 > [!NOTE]
-> 高级电子数据展示需要为您的组织使用的高级合规性加载项或 E5 订阅 Office 365 E3。如果您不具有该计划，并且想要尝试高级电子数据展示，您还可以[注册试用版的 Office 365 企业 E5](https://go.microsoft.com/fwlink/p/?LinkID=698279)。 
+> 若要使用高级电子数据展示，组织必须订阅随附高级合规性加载项的 Office 365 E3，或订阅 E5。如果没有此计划，但又要试用高级电子数据展示，可以[注册 Office 365 企业版 E5 试用版](https://go.microsoft.com/fwlink/p/?LinkID=698279)。 
   
-**准备**\>高级电子数据展示中的**分析**过程适用于包含的文件的以下功能： 
+高级电子数据展示中的**准备** \> **分析**过程将以下功能应用于所包含的文件: 
   
-- 标识，并将加载的文件组织到组的唯一文件、 重复项和近乎重复项。
+- 标识加载的文件并将其组织成组的唯一文件、重复项和临近的重复项。
     
-- 标识，并将电子邮件组织到的电子邮件线程，基于电子邮件渐进式 inclusiveness 的分层结构组。
+- 根据电子邮件的累进 inclusiveness, 识别电子邮件并将其组织为分层的电子邮件线索组。
     
-- 允许使用高级电子数据展示处理和批处理文件中的主题。
+- 允许在高级电子数据展示处理和文件批处理中使用主题。
     
- 分析允许您设置参数，运行选项，并查看结果，，如下所示： 
+ 分析允许您设置参数、运行选项并查看结果, 如下所示: 
   
-- **分析安装程序**： 允许运行分析的文件之前指定的设置。
+- **分析安装程序**: 允许在对文件运行分析之前指定设置。
     
-- **分析结果**： 显示分析的指标。 
+- **分析结果**: 显示分析的指标。 
     
-运行分析之前, 定义的选择和处理文件，包括哪些加载的文件将分析的条件和分析将向其提交每种类型的文件的类型。 
+在运行分析之前, 请定义用于选择和处理文件的条件, 包括将对哪些已加载文件进行分析, 以及每种类型的文件将被提交到的分析类型。 
   
 ## <a name="see-also"></a>另请参阅
 

@@ -6,7 +6,7 @@ manager: laurawi
 ms.date: 8/21/2018
 audience: ITPro
 ms.topic: article
-ms.service: Office 365 Administration
+ms.service: O365-seccomp
 localization_priority: None
 search.appverid:
 - MET150
@@ -14,12 +14,12 @@ ms.collection:
 - Strat_O365_IP
 - M365-analytics
 description: 有关 Office 365 管理活动 API 的简短摘要。
-ms.openlocfilehash: ca5517d3049830cd7be912b2e2e47a34a866aca0
-ms.sourcegitcommit: c94cb88a9ce5bcc2d3c558f0fcc648519cc264a2
+ms.openlocfilehash: df90eba0d019a862d4699f3e2aa0a04e88b0c371
+ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/20/2019
-ms.locfileid: "30090555"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "30214572"
 ---
 # <a name="office-365-management-activity-api"></a>Office 365 管理活动 API
 Microsoft 提供了 reporting services, 使管理员能够获取有关其 Office 365 租户的聚合事务信息。[Office 365 管理活动 API](https://docs.microsoft.com/office/office-365-management-api/office-365-management-apis-overview)使用行业标准的 RESTful 设计和 OAuth v2 进行身份验证, 使您能够轻松开始体验检索数据, 并将数据 ingesting 到可视化工具和应用程序中。API 提供了一个数据源, 其中包括有关 Office 365 中的用户、管理员、操作和安全活动的信息。数据可出于法规目的而保留, 也可与本地基础结构或其他源中的日志数据采购结合使用, 以构建企业范围内的操作、安全性和合规性的监控解决方案。

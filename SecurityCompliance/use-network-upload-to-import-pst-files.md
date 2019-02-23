@@ -1,12 +1,12 @@
 ---
-title: 使用网络上载到 Office 365 导入您的组织 PST 文件
+title: 使用网络上传将组织 PST 文件导入到 Office 365
 ms.author: markjjo
 author: markjjo
 manager: laurawi
 ms.date: ''
 ms.audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: Strat_O365_IP
 search.appverid:
@@ -14,132 +14,132 @@ search.appverid:
 - MED150
 - MET150
 ms.assetid: 103f940c-0468-4e1a-b527-cc8ad13a5ea6
-description: 管理员： 了解如何使用网络上载批量导入到 Office 365 中的用户邮箱的多个 PST 文件。
-ms.openlocfilehash: 81c799a8c820e9d9287f4792fe463d6a99b90e36
-ms.sourcegitcommit: 25f1028643d8a20d17306e8b09cafea46eaf7a58
+description: '对于管理员: 了解如何使用网络上传将多个 PST 文件批量导入 Office 365 中的用户邮箱。'
+ms.openlocfilehash: 04beb021b34a7357556e4d6e4d26d43de6a85c5d
+ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/31/2019
-ms.locfileid: "29666152"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "30217352"
 ---
-# <a name="use-network-upload-to-import-your-organization-pst-files-to-office-365"></a>使用网络上载到 Office 365 导入您的组织 PST 文件
+# <a name="use-network-upload-to-import-your-organization-pst-files-to-office-365"></a>使用网络上传将组织 PST 文件导入到 Office 365
 
 > [!NOTE]
-> 本文是针对管理员。您试图将 PST 文件导入到您自己的邮箱？请参阅[导入电子邮件、 联系人和日历从 Outlook.pst 文件](https://go.microsoft.com/fwlink/p/?LinkID=785075)
+> 本文适用于管理员。您是否尝试将 PST 文件导入到自己的邮箱？请参阅[从 Outlook .pst 文件导入电子邮件、联系人和日历](https://go.microsoft.com/fwlink/p/?LinkID=785075)
   
-以下是需要使用网络上载批量导入到 Office 365 邮箱的多个 PST 文件的分步说明。有关使用网络上载批量导入 PST 文件迁移到 Office 365 邮箱，请参阅[使用网络上载导入 PST 文件的常见问题](faqimporting-pst-files-to-office-365.md#using-network-upload-to-import-pst-files)的常见问题进行了问题。
+下面是使用网络上载批量导入 Office 365 邮箱中的多个 PST 文件所需的分步说明。有关使用网络上载将 pst 文件批量导入到 Office 365 邮箱的常见问题, 请参阅[使用网络上载导入 pst 文件中的 faq](faqimporting-pst-files-to-office-365.md#using-network-upload-to-import-pst-files)。
   
-[步骤 1： 复制 SAS URL 并安装 Azure AzCopy](#step-1-copy-the-sas-url-and-install-azure-azcopy)
+[步骤 1: 复制 SAS URL 并安装 Azure AzCopy](#step-1-copy-the-sas-url-and-install-azure-azcopy)
 
-[步骤 2： 将 PST 文件上载到 Office 365](#step-2-upload-your-pst-files-to-office-365)
+[步骤 2: 将 PST 文件上传到 Office 365](#step-2-upload-your-pst-files-to-office-365)
 
-[（可选）步骤 3： 查看列表的 PST 文件上载到 Office 365](#optional-step-3-view-a-list-of-the-pst-files-uploaded-to-office-365)
+[Optional步骤 3: 查看已上载到 Office 365 的 PST 文件的列表](#optional-step-3-view-a-list-of-the-pst-files-uploaded-to-office-365)
 
-[步骤 4： 创建 PST 导入映射文件](#step-4-create-the-pst-import-mapping-file)
+[步骤 4: 创建 PST 导入映射文件](#step-4-create-the-pst-import-mapping-file)
 
 [步骤 5：在 Office 365 中创建 PST 导入作业](#step-5-create-a-pst-import-job-in-office-365)
 
-[步骤 6： 筛选数据，并启动 PST 导入作业](#step-6-filter-data-and-start-the-pst-import-job)
+[步骤 6: 筛选数据并启动 PST 导入作业](#step-6-filter-data-and-start-the-pst-import-job)
 
-请注意，您需要执行步骤 1 仅执行一次将 PST 文件导入到 Office 365 邮箱。执行这些步骤后，按照步骤 2 至步骤 6 每的次您想要上载并导入一批 PST 文件。
+请注意, 您只需执行步骤1一次即可将 PST 文件导入到 Office 365 邮箱。执行这些步骤后, 请按照步骤2到步骤6操作, 每次上载和导入一批 PST 文件。
 
 ## <a name="before-you-begin"></a>准备工作
   
-- 您必须为其分配导入导出邮箱角色在 Exchange Online 到 Office 365 邮箱导入 PST 文件。默认情况下，此角色不分配给任何角色组在 Exchange Online。您可以向组织管理角色组中添加邮箱导入导出角色。或者，您可以创建新的角色组、 分配的邮箱导入导出角色中，然后将自己添加为成员。有关详细信息，请参阅"添加角色向角色组"或"创建角色组"部分中[管理角色组](https://go.microsoft.com/fwlink/p/?LinkId=730688)。
+- 您必须在 Exchange Online 中分配 "邮箱导入导出" 角色, 才能将 PST 文件导入到 Office 365 邮箱。默认情况下, 此角色不会分配给 Exchange Online 中的任何角色组。您可以将邮箱导入导出角色添加到 "组织管理" 角色组。或者, 您可以创建新的角色组, 分配邮箱导入导出角色, 然后将自己添加为成员。有关详细信息, 请参阅[管理角色组](https://go.microsoft.com/fwlink/p/?LinkId=730688)中的 "向角色组添加角色" 或 "创建角色组" 部分。
     
-    此外，若要创建导入作业 Office 365 安全性&amp;必须满足合规中心，下列选项之一：
+    此外, 若要在 Office 365 安全&amp;合规中心中创建导入作业, 必须满足以下条件之一:
     
-  - 您必须分配 Mail Recipients 角色在 Exchange Online。默认情况下，此角色分配给组织管理和 Recipient Management 角色组。
+  - 您必须在 Exchange Online 中向您分配 "邮件收件人" 角色。默认情况下, 将此角色分配给组织管理和收件人管理角色组。
     
-    或
+    或者
     
   - 您必须是 Office 365 组织中的全局管理员。
     
   > [!TIP]
-    > 请考虑在 Exchange Online 的专门用于将 PST 文件导入到 Office 365 中创建新的角色组。最小的导入 PST 文件所需的权限级别，将邮箱导入导出和 Mail Recipients 角色分配给新角色组中，，然后添加成员。 
+    > 请考虑在 Exchange Online 中创建一个专门用于将 PST 文件导入到 Office 365 的新角色组。若要获取导入 PST 文件所需的最低级别权限, 请将 "邮箱导入导出" 和 "邮件收件人" 角色分配给新的角色组, 然后添加成员。 
   
-- 将 PST 文件导入到 Office 365 唯一受支持的方法是使用 Azure AzCopy 工具，如本主题中所述。不能使用 Azure 存储资源管理器上载直接到 Azure 存储区的 PST 文件。
+- 将 PST 文件导入到 Office 365 的唯一受支持的方法是使用 Azure AzCopy 工具, 如本主题中所述。无法使用 azure 存储资源管理器将 PST 文件直接上载到 Azure 存储区域。
     
-- 您需要存储要导入到 Office 365 上的文件服务器或在组织中的共享的文件夹的 PST 文件。在步骤 2 中，您将运行 Azure AzCopy 工具将上载该文件服务器上存储或共享到 Office 365 的文件夹的 PST 文件。
+- 您需要将您要导入的 PST 文件存储到组织中的文件服务器或共享文件夹上的 Office 365 中。在步骤2中, 将运行 Azure AzCopy 工具, 该工具会将存储在此文件服务器或共享文件夹上的 PST 文件上载到 Office 365。
     
-- 此过程涉及复制并保存一份包含访问键的 URL。如果您想要查看上载到 Office 365 的 PST 文件的列表，在步骤 2 上载 PST 文件，并在步骤 3 中将使用此信息。请确保采取预防措施来保护此 URL，如将保护密码或其他安全相关的信息。例如受密码保护的 Microsoft Word 文档或加密的 USB 驱动器可能将其保存。请参阅此示例为[详细信息](#more-information)部分组合 URL 和密钥。 
+- 此过程涉及复制和保存包含访问键的 URL 的副本。如果要查看上传到 Office 365 的 pst 文件的列表, 则将在步骤2中使用此信息来上载 PST 文件, 并在步骤3中使用此信息。请务必采取预防措施来保护此 URL, 如保护密码或其他与安全相关的信息。例如, 您可以将其保存到受密码保护的 Microsoft Word 文档或加密的 USB 驱动器。有关此组合 URL 和密钥的示例, 请参阅[详细信息](#more-information)部分。 
     
-- 您可以向 Office 365 中的非活动邮箱导入 PST 文件。执行此操作通过指定中的非活动邮箱的 GUID `Mailbox` PST 导入映射文件中的参数。有关此主题中的**说明**选项卡上，请参阅步骤 4。 
+- 您可以将 PST 文件导入到 Office 365 中的非活动邮箱。为此, 请在 PST 导入映射文件的`Mailbox`参数中指定非活动邮箱的 GUID。有关信息, 请参阅本主题中的 "**说明**" 选项卡上的步骤4。 
     
-- 在 Exchange 混合部署，您可以 PST 文件导入为其主邮箱位于内部部署用户的基于云的存档邮箱。通过执行以下 PST 导入映射文件中的执行此操作：
+- 在 Exchange 混合部署中, 可以将 PST 文件导入到主邮箱位于本地的用户的基于云的存档邮箱。为此, 请在 PST 导入映射文件中执行以下操作:
     
-  - 指定用户的内部部署邮箱中的电子邮件地址`Mailbox`参数。 
+  - 在`Mailbox`参数中指定用户的内部部署邮箱的电子邮件地址。 
     
-  - 指定**TRUE**值在`IsArchive`参数。 
+  - 在`IsArchive`参数中指定**TRUE**值。 
     
-    有关详细信息，请参阅[步骤 4](#step-4-create-the-pst-import-mapping-file) 。 
+    有关详细信息, 请参阅[步骤 4](#step-4-create-the-pst-import-mapping-file) 。 
     
-- PST 文件导入到 Office 365 邮箱后，设置为该邮箱保留挂起是无限期的持续时间内，打开的。这意味着关闭保留挂起或设置要关闭保留日期之前，将不会处理分配给邮箱的保留策略。为什么做的原因？如果旧导入到邮箱的邮件，它们可能被永久删除 （清除） 由于其保留期已过期基于配置为该邮箱的保留设置。将邮箱放在保留挂起将给邮箱所有者时间来管理这些新导入的邮件或授予时间更改邮箱的保留设置。请参阅有关管理保留挂起的建议本主题中的**详细信息**选项卡。 
+- 将 PST 文件导入到 Office 365 邮箱后, 邮箱的保留挂起设置将处于无限期的期限内打开。这意味着将不会处理分配给邮箱的保留策略, 除非您关闭保留挂起或设置关闭保留的日期。我们为什么要这么做呢？如果导入到邮箱的邮件是旧邮件, 则可能会永久删除 (清除), 因为他们的保留期已过, 因为其保留期已根据邮箱配置的保留设置而过期。将邮箱置于保留挂起状态将使邮箱所有者时间管理这些新导入的邮件, 或为您提供更改邮箱保留设置的时间。有关管理保留挂起的建议, 请参阅本主题中的 "**详细信息**" 选项卡。 
     
-- 默认情况下，可以接收的 Office 365 邮箱的最大邮件大小为 35 MB。这是因为邮箱的*MaxReceiveSize*属性的默认值设置为 35 MB。但是，此限制的最大邮件接收 Office 365 中的大小为 150 MB。因此，如果导入 PST 文件包含大于 35 MB，我们将自动更改为 150 MB 的目标邮箱上*MaxReceiveSize*属性的值的导入 Office 365 服务的项。这将允许邮件 150 MB 要导入到用户邮箱。 
+- 默认情况下, Office 365 邮箱可以接收的最大邮件大小为 35 MB。这是因为邮箱的*MaxReceiveSize*属性的默认值设置为 35 MB。但是, Office 365 中最大邮件接收大小的限制是 150 MB。因此, 如果您导入的 PST 文件中包含大于 35 MB 的项目, 则 Office 365 导入服务会将目标邮箱上的*MaxReceiveSize*属性值自动更改为 150 MB。这将允许将最大为 150 MB 的邮件导入到用户邮箱。 
     
     > [!TIP]
-    > 若要确定邮件接收大小为邮箱中，您可以运行此命令在 Exchange Online PowerShell: `Get-Mailbox <user mailbox> | FL MaxReceiveSize`。 
+    > 若要标识邮箱的邮件接收大小, 可以在 Exchange Online PowerShell 中运行以下命令: `Get-Mailbox <user mailbox> | FL MaxReceiveSize`。 
 
-## <a name="step-1-copy-the-sas-url-and-install-azure-azcopy"></a>步骤 1： 复制 SAS URL 并安装 Azure AzCopy
+## <a name="step-1-copy-the-sas-url-and-install-azure-azcopy"></a>步骤 1: 复制 SAS URL 并安装 Azure AzCopy
 
-第一步是下载并安装 Azure AzCopy 工具，它是您将运行在步骤 2 到上载 PST 文件迁移到 Office 365 的工具。您还将为您的组织复制 SAS URL。此 URL 是 Microsoft 云的组织和共享访问签名 (SA) 键中的 Azure 存储位置的网络 URL 的组合。此项为您提供所需的权限将 PST 文件上载到 Azure 存储位置。请确保采取预防措施来保护 SAS URL。它是唯一的组织，并将在步骤 2 中使用。
+第一步是下载并安装 Azure AzCopy 工具, 该工具是您将在步骤2中运行以将 PST 文件上载到 Office 365 的工具。您还将为您的组织复制 SAS URL。此 URL 是用于组织的 Microsoft 云中的 Azure 存储位置的网络 URL 和共享访问签名 (SAS) 密钥的组合。此项为你提供将 PST 文件上载到 Azure 存储位置所需的权限。请务必采取预防措施来保护 SAS URL。它对您的组织是唯一的, 将在步骤2中使用。
 
 > [!IMPORTANT]
-> 若要导入 PST 文件使用网络上载方法中，我们建议使用以下过程中的步骤 6b 可以下载的 Azure AzCopy 的版本。
+> 若要使用网络上传方法导入 PST 文件, 我们建议您在以下过程中使用可在步骤6b 中下载的 Azure AzCopy 版本。
   
-1. 转到[https://protection.office.com](https://protection.office.com)和使用 Office 365 组织中的管理员帐户凭据登录。 
+1. 转到[https://protection.office.com](https://protection.office.com)并使用 Office 365 组织中的管理员帐户凭据登录。 
     
-2. 在左侧窗格中的安全&amp;合规性中心，单击**数据调控** \> **导入**。
+2. 在安全&amp;合规性中心的左侧窗格中, 单击 "**数据调控** \> **导入**"。
     
     > [!NOTE]
-    > 您需要分配适当的权限访问安全中的**导入**页上&amp;合规性中心。请参阅**开始之前**部分中的详细信息。 
+    > 必须为您分配适当的权限, 才能访问安全&amp;合规中心中的 "**导入**" 页。有关详细信息, 请参阅 "**开始之前**" 部分。 
     
-3. 在**导入**页上单击![添加图标](media/ITPro-EAC-AddIcon.gif)**新建导入作业**。
+3. 在 "**导入**" 页![上,](media/ITPro-EAC-AddIcon.gif)单击 "添加图标" "**新建导入作业**"。
     
-    将显示导入作业向导。
+    将显示 "导入作业向导"。
     
-4. 为 PST 导入作业中，键入一个名称，然后单击**下一步**。使用小写字母、 数字、 连字符和下划线。您无法使用大写字母或名称中包含空格。
+4. 键入 PST 导入作业的名称, 然后单击 "**下一步**"。使用小写字母、数字、连字符和下划线。不能在名称中使用大写字母或包含空格。
     
-5. 在**要上载或附带数据？** 页上，单击**上载数据**，然后单击**下一步**。
+5. 在 "**是否要上载或传送数据？** " 页上, 单击 "**上载数据**", 然后单击 "**下一步**"。
     
-    ![单击上载以创建网络上载将数据导入作业](media/e59f9dc3-ccde-44ff-ac38-c4e39d76ae85.png)
+    ![单击 "上载数据" 以创建网络上载导入作业](media/e59f9dc3-ccde-44ff-ac38-c4e39d76ae85.png)
   
-6. 在**导入数据**页上，执行以下两项操作： 
+6. 在 "**导入数据**" 页上, 执行以下两项操作: 
     
-    ![复制 SAS URL 并下载导入数据页上的 Azure AzCopy 工具](media/74411014-ec4b-4e25-9065-404c934cce17.png)
+    ![复制 SAS URL 并在 "导入数据" 页面上下载 Azure AzCopy 工具](media/74411014-ec4b-4e25-9065-404c934cce17.png)
   
-    答： 在步骤 2 中，单击**显示网络上载 SAS URL**。显示 SAS URL 后，单击**复制到剪贴板**然后将其粘贴并将其保存到文件，以便您可以更高版本访问它。
+    在步骤2中, 单击 "**显示网络上载 SAS URL**"。显示 SAS URL 后, 单击 "**复制到剪贴板**", 然后将其粘贴并保存到文件中, 以便稍后对其进行访问。
     
-    b.在步骤 3 中，单击**下载 Azure AzCopy**下载和安装 Azure AzCopy 工具。在弹出窗口中，单击**运行**以安装 AzCopy。 
+    b. 在步骤3中, 单击 "**下载 azure AzCopy** " 以下载并安装 azure AzCopy 工具。在弹出窗口中, 单击 "**运行**" 以安装 AzCopy。 
     
 > [!NOTE]
-> 您可以**导入数据**页将保持打开状态 （以防您需要再次复制 SAS URL），或单击**取消**以关闭它。 
+> 您可以将 "**导入数据**" 页保留为打开状态 (如果需要再次复制 SAS URL) 或单击 "**取消**" 关闭它。 
  
-## <a name="step-2-upload-your-pst-files-to-office-365"></a>步骤 2： 将 PST 文件上载到 Office 365
+## <a name="step-2-upload-your-pst-files-to-office-365"></a>步骤 2: 将 PST 文件上传到 Office 365
 
-现在您已准备好使用 AzCopy.exe 工具将 PST 文件上载到 Office 365。此工具上载，并将其存储在云中的 Microsoft Azure 的存储位置。如前所述，则上载到 PST 文件的 Azure 的存储位置位于同一区域 Microsoft 数据中心中您的 Office 365 组织所在的位置。若要完成此步骤，PST 文件必须位于文件共享或组织中的文件服务器。这就是在下面的过程的源目录。每次运行 AzCopy 工具，您可以指定一个不同的源目录。 
+现在, 您可以使用 AzCopy 工具将 PST 文件上传到 Office 365。此工具将其上载到 Microsoft 云中的 Azure 存储位置并将其存储在其中。如前所述, 您将 PST 文件上传到的 Azure 存储位置位于 Office 365 组织所在的相同区域 Microsoft 数据中心。若要完成此步骤, PST 文件必须位于组织中的文件共享或文件服务器中。这在下面的过程中称为 "源目录"。每次运行 AzCopy 工具时, 都可以指定不同的源目录。 
   
 1. 在您的本地计算机上打开命令提示符。
     
-2. 转到的目录 AzCopy.exe 工具在步骤 1 中的安装位置。如果您在默认位置安装该工具，请转到`%ProgramFiles(x86)%\Microsoft SDKs\Azure\AzCopy`。
+2. 转到在步骤1中安装 AzCopy 工具的目录。如果将该工具安装在默认位置, 请转到`%ProgramFiles(x86)%\Microsoft SDKs\Azure\AzCopy`。
     
-3. 运行以下命令以将 PST 文件上载到 Office 365。
+3. 运行以下命令, 将 PST 文件上载到 Office 365。
 
     ```
     AzCopy.exe /Source:<Location of PST files> /Dest:<SAS URL> /V:<Log file location> /Y
   
     ```
  
-    下表介绍参数以及它们所需的值。请注意您在上一步中获得该信息用于这些参数的值。
+    下表介绍了参数及其必需的值。请注意, 在上一步中获取的信息在这些参数的值中使用。
     
     |**参数**|**说明**|**示例**|
     |:-----|:-----|:-----|
-    | `/Source:` <br/> |指定包含 PST 文件将上载到 Office 365 组织中的源目录。  <br/> 请务必用双引号 (" ") 引住此参数的值。  <br/> | `/Source:"\\FILESERVER01\PSTs"` <br/> |
-    | `/Dest:` <br/> |步骤 1 中指定您获取的 SAS URL。  <br/> 请务必用双引号 (" ") 引住此参数的值。  <br/> **提示：**（可选）Azure 的存储位置上载到 PST 文件中，您可以指定子文件夹。通过添加 （之后"ingestiondata") 的子文件夹位置 SAS URL 中执行此操作。第一个示例不指定子文件夹;这意味着 Pst 将上载到根目录 （名为*ingestiondata* ） Azure 的存储位置。第二个示例上载到子文件夹 （名为*PSTFiles* ） 的 PST 文件的 Azure 的存储位置的根目录。<br/> | `/Dest:"https://3c3e5952a2764023ad14984.blob.core.windows.net/ingestiondata?sv=2012-02-12&amp;se=9999-12-31T23%3A59%3A59Z&amp;sr=c&amp;si=IngestionSasForAzCopy201601121920498117&amp;sig=Vt5S4hVzlzMcBkuH8bH711atBffdrOS72TlV1mNdORg%3D"` <br/> 或  <br/>  `/Dest:"https://3c3e5952a2764023ad14984.blob.core.windows.net/ingestiondata/PSTFiles?sv=2012-02-12&amp;se=9999-12-31T23%3A59%3A59Z&amp;sr=c&amp;si=IngestionSasForAzCopy201601121920498117&amp;sig=Vt5S4hVzlzMcBkuH8bH711atBffdrOS72TlV1mNdORg%3D"` <br/> |
+    | `/Source:` <br/> |指定组织中包含将上载到 Office 365 的 PST 文件的源目录。  <br/> 请务必用双引号 (" ") 引住此参数的值。  <br/> | `/Source:"\\FILESERVER01\PSTs"` <br/> |
+    | `/Dest:` <br/> |指定您在步骤1中获取的 SAS URL。  <br/> 请务必用双引号 (" ") 引住此参数的值。  <br/> **提示:** Optional您可以在 Azure 存储位置指定一个子文件夹, 将 PST 文件上载到。为此, 请在 SAS URL 中添加子文件夹位置 (在 "ingestiondata" 之后)。第一个示例未指定子文件夹;这意味着 pst 将被上载到 Azure 存储位置的根 (名为*ingestiondata* )。第二个示例将 PST 文件上载到 Azure 存储位置的根目录中的子文件夹 (名为*PSTFiles* )。<br/> | `/Dest:"https://3c3e5952a2764023ad14984.blob.core.windows.net/ingestiondata?sv=2012-02-12&amp;se=9999-12-31T23%3A59%3A59Z&amp;sr=c&amp;si=IngestionSasForAzCopy201601121920498117&amp;sig=Vt5S4hVzlzMcBkuH8bH711atBffdrOS72TlV1mNdORg%3D"` <br/> 或者  <br/>  `/Dest:"https://3c3e5952a2764023ad14984.blob.core.windows.net/ingestiondata/PSTFiles?sv=2012-02-12&amp;se=9999-12-31T23%3A59%3A59Z&amp;sr=c&amp;si=IngestionSasForAzCopy201601121920498117&amp;sig=Vt5S4hVzlzMcBkuH8bH711atBffdrOS72TlV1mNdORg%3D"` <br/> |
     | `/V:` <br/> |将详细状态消息输出到日志文件。默认情况下，详细日志文件名为 AzCopyVerbose.log，所在路径为 %LocalAppData%\Microsoft\Azure\AzCopy。如果对此选项指定现有的文件位置，则详细日志将被附加到该文件中。  <br/> 请务必用双引号 (" ") 引住此参数的值。  <br/> | `/V:"c:\Users\Admin\Desktop\Uploadlog.log"` <br/> |
-    | `/S` <br/> |此可选开关指定递归模式，以便 AzCopy 工具会将位于指定源目录中的子文件夹中的 Pst 文件复制`/Source:`参数。  <br/> **注意：** 如果包括此开关，子文件夹中的 PST 文件将 Azure 存储位置中具有不同文件路径名，他们正在上载后。您将需要在您在步骤 4 中创建的 CSV 文件中指定的确切文件路径名。<br/> | `/S` <br/> |
-    | `/Y` <br/> |此必需的开关允许使用只写 SAS 令牌，当您将 PST 文件上载到 Azure 存储位置。您在步骤 1 中获得 SAS URL (和指定的`/Dest:`参数) 是只写 SAS URL，因此，您必须包括此开关。请注意，只写 SAS URL 不会阻止您使用 Azure 存储浏览器查看上载到 Azure 存储位置的 PST 文件的列表。<br/> | `/Y` <br/> |
+    | `/S` <br/> |此可选开关指定递归模式, 以便 AzCopy 工具将复制位于由`/Source:`参数指定的源目录中的子文件夹中的 pst 文件。  <br/> **注意:** 如果包含此开关, 则在上载后, 在 Azure 存储位置中, 子文件夹中的 PST 文件将具有不同的文件路径。您必须在您在步骤4中创建的 CSV 文件中指定确切的文件路径名。<br/> | `/S` <br/> |
+    | `/Y` <br/> |当您将 PST 文件上传到 Azure 存储位置时, 此必需的开关允许使用仅写 SAS 令牌。您在步骤 1 (和在参数中`/Dest:`指定) 中获取的 sas url 是只写 sas url, 这就是必须包含此开关的原因。请注意, 只写 SAS URL 不会阻止你使用 Azure 存储资源管理器查看上载到 Azure 存储位置的 PST 文件的列表。<br/> | `/Y` <br/> |
    
 以下是对每个参数使用实际值的 AzCopy.exe 工具的语法示例：
     
@@ -151,46 +151,46 @@ ms.locfileid: "29666152"
 运行该命令后，显示的状态消息会显示对 PST 文件进行上载的进度。最终状态消息显示已成功上载的文件总数。 
 
 > [!TIP]
-> 在成功运行 AzCopy.exe 命令并确认所有参数都正确无误后，保存一份同一个复制信息的位置 （安全） 文件的命令行语法获取在步骤 1 中。然后可以复制并粘贴在命令提示符下每次您想要运行 AzCopy.exe 工具以将 PST 文件上载到 Office 365 的此命令。您可能需要更改的唯一值是为`/Source:`参数。这取决于源目录 PST 文件的位置。
+> 在成功运行 AzCopy 命令并验证所有参数是否正确后, 将命令行语法的副本保存到您在步骤1中获取的信息所复制到的相同 (安全) 文件中。然后, 您可以在每次运行 AzCopy 工具以将 PST 文件上载到 Office 365 时, 在命令提示符下复制并粘贴此命令。您可能需要更改的唯一值是`/Source:`参数的值。这取决于 PST 文件所在的源目录。
 
-## <a name="optional-step-3-view-a-list-of-the-pst-files-uploaded-to-office-365"></a>（可选）步骤 3： 查看列表的 PST 文件上载到 Office 365
+## <a name="optional-step-3-view-a-list-of-the-pst-files-uploaded-to-office-365"></a>Optional步骤 3: 查看已上载到 Office 365 的 PST 文件的列表
 
-作为一个可选步骤，您可以安装和使用 Microsoft Azure 存储浏览器 （这是一个免费的开源工具） 若要查看已上载到 Azure blob PST 文件的列表。有两个理由，让您执行此操作：
+作为可选步骤, 您可以安装并使用 Microsoft Azure 存储资源管理器 (它是一个免费的开源工具), 以查看已上载到 Azure blob 的 PST 文件的列表。为此, 有两个很有理由的原因:
   
-- 验证 PST 文件从共享的文件夹或组织中的文件服务器已成功上载到 Azure 的 blob。
+- 验证组织中的共享文件夹或文件服务器中的 PST 文件是否已成功上载到 Azure blob。
     
-- 验证每个 PST 文件上载到 Azure blob 的文件名 （和子文件夹路径名如果包括了一个）。正在创建 PST 映射文件的下一步，因为您有时必须指定的文件夹路径名和文件名为每个 PST 文件时，这是非常有用。验证这些名称，可帮助减少 PST 映射文件中的潜在错误。
+- 验证上载到 Azure blob 的每个 PST 文件的文件名 (和子文件夹路径名)。这在下一步中创建 PST 映射文件时非常有用, 因为您必须为每个 PST 文件指定文件夹路径名和文件名。验证这些名称有助于减少 PST 映射文件中的潜在错误。
     
-Microsoft Azure 存储 Explorer 正处于预览。
+Microsoft Azure 存储资源管理器处于预览阶段。
   
 > [!IMPORTANT]
-> 不能使用 Azure 存储资源管理器上载或修改 PST 文件。将 PST 文件导入到 Office 365 唯一受支持的方法是使用 AzCopy。此外，您不能删除已上载到 Azure blob 的 PST 文件。如果尝试删除 PST 文件，您会收到了有关未获得所需的权限的错误。请注意自动从您 Azure 存储区删除所有 PST 文件。如果有任何导入作业正在进行，然后中的所有 PST 文件**ingestiondata**容器中将不删除 30 天后创建的最新的导入作业。
+> 无法使用 Azure 存储资源管理器上传或修改 PST 文件。将 PST 文件导入到 Office 365 的唯一受支持的方法是使用 AzCopy。此外, 也不能删除已上载到 Azure blob 的 PST 文件。如果您尝试删除 PST 文件, 您将收到一条有关不具有所需权限的错误。请注意, 所有 PST 文件都将自动从 Azure 存储区域中删除。如果没有正在进行的导入作业, 则在创建最近的导入作业30天后删除**ingestiondata**容器中的所有 PST 文件。
   
-安装 Azure 存储浏览器并连接到 Azure 存储区：
+若要安装 azure 存储资源管理器并连接到 Azure 存储区, 请执行以下操作:
   
 1. 下载并安装[Microsoft Azure 存储资源管理器工具](https://go.microsoft.com/fwlink/p/?LinkId=544842)。
     
-2. 启动 Microsoft Azure 存储资源管理器，在左窗格中右键单击**存储帐户**，然后单击**连接到 Azure 存储**。
+2. 启动 Microsoft Azure 存储资源管理器, 在左窗格中右键单击 "**存储帐户**", 然后单击 "**连接到 Azure 存储**"。
     
-    ![右键单击存储帐户，然后单击连接到 Azure 存储](media/75b80cc3-c336-4f96-ad32-54ac9b96a7af.png)
+    ![右键单击 "存储帐户", 然后单击 "连接到 Azure 存储"](media/75b80cc3-c336-4f96-ad32-54ac9b96a7af.png)
   
-3. 单击**使用共享的访问签名 (SA) URI 或连接字符串**，然后单击**下一步**。
+3. 单击 "**使用共享访问签名 (SAS) URI 或连接字符串**", 然后单击 "**下一步**"。
     
-4. 单击**使用 SAS URI**，将在步骤 1 中的获取 SAS URL 粘贴到**URI**下的框，然后单击**下一步**。
+4. 单击 "**使用 SAS URI**", 将您在步骤1中获取的 SAS URL 粘贴到 " **URI**" 下的框中, 然后单击 "**下一步**"。
     
-5. 在**连接摘要**页中，您可以查看连接信息，然后单击**连接**。
+5. 在 "**连接摘要**" 页上, 您可以查看连接信息, 然后单击 "**连接**"。
     
-    打开**ingestiondata**容器;它包含您在步骤 2 中上载的 PST 文件。**Ingestiondata**容器位于**存储帐户**下\> **（SAS-Attached 服务）** \> **Blob 容器**。 
+    打开**ingestiondata**容器;它包含您在步骤2中上载的 PST 文件。**ingestiondata**容器位于**存储帐户** \> **(SAS 附加服务)** \> **Blob 容器**下。 
     
     ![Azure 存储资源管理器显示你上载的 PST 文件的列表](media/12376fed-13a5-4a09-8fe6-e819e011b334.png)
   
-6. 完成后使用 Microsoft Azure 存储浏览器，右键单击**ingestiondata**，，然后单击**分离**断开 Azure 存储区。否则，您会收到错误的下次尝试附加。 
+6. 使用 Microsoft Azure 存储资源管理器完成后, 右键单击 " **ingestiondata**", 然后单击 "**分离**" 断开与 Azure 存储区域的连接。否则, 下次尝试附加时, 将会收到错误。 
     
     ![右键单击“引入”，然后单击“分离”以从 Azure 存储区域断开连接](media/1e8e5e95-4215-4ce4-a13d-ab5f826a0510.png)
   
-## <a name="step-4-create-the-pst-import-mapping-file"></a>步骤 4： 创建 PST 导入映射文件
+## <a name="step-4-create-the-pst-import-mapping-file"></a>步骤 4: 创建 PST 导入映射文件
 
-PST 文件已上载到 Office 365 组织的 Azure 存储位置后下, 一步是创建逗号分隔值 (CSV) 文件，指定 PST 文件将被导入到哪些用户邮箱。创建 PST 导入作业时，您将提交的下一步此 CSV 文件。
+将 pst 文件上传到 Office 365 组织的 Azure 存储位置之后, 下一步是创建一个逗号分隔值 (CSV) 文件, 该文件指定要将 PST 文件导入到哪些用户邮箱。创建 PST 导入作业时, 将在下一步中提交此 CSV 文件。
   
 1. [下载 PST 导入映射文件的副本](https://go.microsoft.com/fwlink/p/?LinkId=544717)。
     
@@ -210,145 +210,145 @@ PST 文件已上载到 Office 365 组织的 Azure 存储位置后下, 一步是�
     Exchange,PSTFiles,zrinkam.pst,zrinkam@contoso.onmicrosoft.com,FALSE,,,,,
     Exchange,PSTFiles,zrinkam_archive.pst,zrinkam@contoso.onmicrosoft.com,TRUE,/ImportedPst,,,,
     ```
-    标题行，CSV 文件的第一行中，列出 PST 导入服务将用于将 PST 文件导入到用户邮箱的参数。每个参数名称并用逗号分隔。在标题行下的各行代表 PST 文件导入到特定邮箱的参数值。对于每个要导入到用户邮箱的 PST 文件，您将需要一行。请务必映射文件中的占位符数据替换为实际数据。
+    CSV 文件的第一行 (即标题行) 列出了 pst 导入服务将用于将 pst 文件导入到用户邮箱的参数。每个参数名称之间用逗号分隔。标题行下的每一行表示用于将 PST 文件导入到特定邮箱的参数值。对于要导入到用户邮箱中的每个 PST 文件, 您都需要一行。请务必将映射文件中的占位符数据替换为实际数据。
 
-   **注意：** 不更改包括 SharePoint 参数; 在标题行中的任何内容它们将 PST 导入过程中忽略。 
+   **注意:** 请勿更改标题行中的任何内容, 包括 SharePoint 参数;在 PST 导入过程中将忽略它们。 
 
  3. 使用下表中的信息来填充附有所需信息的 CSV 文件。
 
 
     |**参数**|**说明**|**示例**|
     |:-----|:-----|:-----|
-    | `Workload` <br/> |指定数据将导入到的 Office 365 服务。若要为用户邮箱导入 PST 文件，请使用`Exchange`。<br/> | `Exchange` <br/> |
-    | `FilePath` <br/> |在您上载 PST 文件迁移到在步骤 2 中的 Azure 的存储位置指定的文件夹位置。  <br/> 如果您没有在 SAS URL 中包括的可选子文件夹名称`/Dest:`参数在步骤 2 中，将此参数留空 CSV 文件中。包含子文件夹名称，如果指定此参数中 （请参阅第二个示例）。此参数的值是区分大小写。<br/> 两种方法，在的值*不*包括"ingestiondata"`FilePath`参数。  <br/><br/> **重要：** 这种情况的文件路径名称必须使用如果您在 SAS URL 中包括的可选子文件夹名称的情况下相同`/Dest:`在步骤 2 中的参数。例如，如果您使用`PSTFiles`的子文件夹命名为在步骤 2 中，然后使用`pstfiles`的`FilePath`CSV 文件中的参数，PST 文件导入将失败。请务必在这两种情况下使用相同的大小写。<br/> |（保留为空白）  <br/> 或  <br/>  `PSTFiles` <br/> |
-    | `Name` <br/> |指定将导入到用户邮箱的 PST 文件的名称。此参数的值是区分大小写。<br/> <br/>**重要：** CSV 文件中的 PST 文件名称的大小写必须与已上载到在步骤 2 中的 Azure 的存储位置的 PST 文件相同。例如，如果您使用`annb.pst`中`Name`CSV 文件，但实际的 PST 文件的名称中的参数是`AnnB.pst`，该 PST 文件导入将失败。确保 CSV 文件中 PST 的名称，为实际的 PST 文件使用相同的大小写。<br/> | `annb.pst` <br/> |
-    | `Mailbox` <br/> |指定的邮箱的 PST 文件导入到的电子邮件地址。请注意，不能指定公用文件夹，因为 PST 导入服务不支持将 PST 文件导入到公用文件夹。<br/> 若要导入非活动邮箱 PST 文件，您必须指定此参数的邮箱的邮箱 GUID。若要获取此 GUID，请运行以下 PowerShell 命令在 Exchange Online: Get-mailbox <identity of inactive mailbox> -InactiveMailboxOnly | FL Guid` <br/> <br/>**Note:** In some cases, you might have multiple mailboxes with the same email address, where one mailbox is an active mailbox and the other mailbox is in a soft-deleted (or inactive) state. In these situations, you have to specify the mailbox GUID to uniquely identify the mailbox to import the PST file to. To obtain this GUID for active mailboxes, run the following PowerShell command:  `Get-mailbox<identity of active mailbox> | FL Guid`. To obtain the GUID for soft-deleted (or inactive) mailboxes, run this command  `Get-mailbox <identity of soft-deleted or inactive mailbox> -SoftDeletedMailbox | FL Guid。  <br/> | `annb@contoso.onmicrosoft.com` <br/> 或  <br/>  `2d7a87fe-d6a2-40cc-8aff-1ebea80d4ae7` <br/> |
-    | `IsArchive` <br/> | 指定是否要将 PST 文件导入到用户的存档邮箱。有两个选项：<br/><br/>**FALSE** -导入用户的主邮箱的 PST 文件。  <br/> **TRUE** -将 PST 文件导入用户的存档邮箱。这假定[已启用用户的存档邮箱](enable-archive-mailboxes.md)。<br/><br/>如果将此参数设置为`TRUE`和用户的存档邮箱未启用，为该用户导入将失败。请注意，如果导入失败的一个用户 (因为其归档未启用，此属性设置为`TRUE`)，不会影响导入作业中的其他用户。<br/>  如果将此参数留空，PST 文件导入到用户的主邮箱。  <br/> <br/>**注意：** PST 文件导入到其主邮箱位于内部部署用户的基于云的存档邮箱中，只需指定`TRUE`为此参数指定用户的内部部署邮箱的电子邮件地址和`Mailbox`参数。  <br/> | `FALSE` <br/> 或  <br/>  `TRUE` <br/> |
-    | `TargetRootFolder` <br/> | 指定 PST 文件导入到的邮箱文件夹。  <br/>  如果将此参数留空，PST 将导入到新文件夹命名的**导入**位于 （相同级别的收件箱文件夹和其他默认邮箱文件夹） 的邮箱的根级别。  <br/>  如果指定`/`，PST 文件中的项目在导入将直接在用户的收件箱文件夹。  <br/><br/>  如果指定`/<foldername>`，PST 文件中的项目将导入到一个名为文件夹*\<foldername\> * 。例如，如果您使用`/ImportedPst`，项目将导入到一个名为**ImportedPst**文件夹。此文件夹将位于收件箱文件夹相同级别的用户的邮箱。<br/><br/> **提示：** 考虑运行几个测试批次试验使用此参数，以便您可以确定要导入到 Pst 文件的最佳文件夹位置。  <br/> |（保留为空白）  <br/> 或  <br/>  `/` <br/> 或  <br/>  `/ImportedPst` <br/> |
-    | `ContentCodePage` <br/> |此可选参数指定要用于导入 PST 文件中的 ANSI 文件格式的代码页的数字值。此参数用于中文、 日语和朝鲜语 (CJK) 的组织中导入 PST 文件，因为这些语言通常用于双字节字符集 (DBCS) 字符编码。如果此参数不用于导入 PST 文件的邮箱文件夹名称中使用 DBCS 的语言，文件夹名称是通常会乱码后会在导入。<br/><br/> 有关受支持的值用于此参数的列表，请参阅[代码页标识符](https://go.microsoft.com/fwlink/p/?LinkId=328514)。  <br/> <br/>**注意：** 如上文所述，这是一个可选参数，并且没有要包含在 CSV 文件中。或者，您可以将其包括并保留为空的一个或多个行。<br/> |（保留为空白）  <br/> 或  <br/>  `932`（这是代码页标识符的 ANSI/OEM 日语）  <br/> |
+    | `Workload` <br/> |指定要将数据导入到的 Office 365 服务。若要将 PST 文件导入到用户`Exchange`邮箱, 请使用。<br/> | `Exchange` <br/> |
+    | `FilePath` <br/> |指定您在步骤2中将 PST 文件上载到的 Azure 存储位置中的文件夹位置。  <br/> 如果在步骤2中的`/Dest:`参数中未将可选子文件夹名称包括在 SAS URL 中, 则在 CSV 文件中将此参数留空。如果包含子文件夹名称, 请在此参数中指定它 (请参阅第二个示例)。此参数的值区分大小写。<br/> 无论采用哪种方式, 都*不要*在`FilePath`参数的值中包含 "ingestiondata"。  <br/><br/> **重要说明:** 如果在步骤2的`/Dest:`参数中的 SAS URL 中包含可选子文件夹名称, 则文件路径名称的大小写必须与您使用的大小写相同。例如, 如果您在步骤`PSTFiles` 2 中用于子文件夹名称, 然后在 CSV `pstfiles`文件中`FilePath`的参数中使用, 则 PST 文件的导入将失败。请务必在两个实例中使用相同的大小写。<br/> |（保留为空白）  <br/> 或  <br/>  `PSTFiles` <br/> |
+    | `Name` <br/> |指定将导入到用户邮箱的 PST 文件的名称。此参数的值区分大小写。<br/> <br/>**重要说明:** CSV 文件中的 pst 文件名的大小写必须与上载到步骤2中的 Azure 存储位置的 pst 文件相同。例如, 如果在 CSV 文件`annb.pst`的`Name`参数中使用, 但实际的 pst 文件的名称是`AnnB.pst`, 则该 pst 文件的导入将失败。请确保 CSV 文件中的 PST 名称使用与实际 pst 文件相同的大小写。<br/> | `annb.pst` <br/> |
+    | `Mailbox` <br/> |指定将向其导入 PST 文件的邮箱的电子邮件地址。请注意, 不能指定公用文件夹, 因为 pst 导入服务不支持将 pst 文件导入到公用文件夹。<br/> 若要将 PST 文件导入到非活动邮箱, 您必须为此参数指定邮箱 GUID。若要获取此 GUID, 请在 Exchange Online 中运行以下 PowerShell 命令:`Get-Mailbox <identity of inactive mailbox> -InactiveMailboxOnly | FL Guid` <br/> <br/>**注意:** 在某些情况下, 您可能有多个邮箱具有相同的电子邮件地址, 其中一个邮箱是活动邮箱, 另一个邮箱处于软删除 (或非活动) 状态。在这些情况下, 您必须指定邮箱 GUID, 以唯一标识要将 PST 文件导入到的邮箱。若要获取活动邮箱的此 GUID, 请运行以下 PowerShell 命令`Get-Mailbox <identity of active mailbox> | FL Guid`:。若要获取软删除 (或非活动) 邮箱的 GUID, 请运行此`Get-Mailbox <identity of soft-deleted or inactive mailbox> -SoftDeletedMailbox | FL Guid`命令。<br/> | `annb@contoso.onmicrosoft.com` <br/> 或者  <br/>  `2d7a87fe-d6a2-40cc-8aff-1ebea80d4ae7` <br/> |
+    | `IsArchive` <br/> | 指定是否要将 PST 文件导入到用户的存档邮箱。有两个选项：<br/><br/>**FALSE** -将 PST 文件导入到用户的主邮箱。  <br/> **TRUE** -将 PST 文件导入到用户的存档邮箱。这假定[用户的存档邮箱已启用](enable-archive-mailboxes.md)。<br/><br/>如果将此参数设置为`TRUE`且用户的存档邮箱未启用, 则该用户的导入将失败。请注意, 如果一个用户的导入失败 (因为未启用其存档, 并且此属性设置`TRUE`为), 则导入作业中的其他用户将不会受到影响。<br/>  如果将此参数留空, 则会将 PST 文件导入到用户的主邮箱。  <br/> <br/>**注意:** 若要将 PST 文件导入到其主邮箱是本地邮箱的用户的基于云的存档邮箱, 只需`TRUE`为此参数指定, 并为该`Mailbox`参数指定用户的内部部署邮箱的电子邮件地址。  <br/> | `FALSE` <br/> 或者  <br/>  `TRUE` <br/> |
+    | `TargetRootFolder` <br/> | 指定将 PST 文件导入到的邮箱文件夹。  <br/>  如果将此参数留空, 则会将 PST 导入到位于邮箱根级别 (与 "收件箱" 文件夹和其他默认邮箱文件夹相同的级别) 的名为 "**导入**" 的新文件夹中。  <br/>  如果指定`/`, 则 PST 文件中的项目将直接导入到用户的 "收件箱" 文件夹中。  <br/><br/>  如果指定`/<foldername>`, 则 PST 文件中的项目将被导入到名为* \<"\> *文件夹名称" 的文件夹中。例如, 如果使用`/ImportedPst`, 则会将项目导入到名为**ImportedPst**的文件夹中。此文件夹将位于与 "收件箱" 文件夹相同级别的用户邮箱中。<br/><br/> **提示:** 请考虑运行几个测试批处理, 以试用此参数, 以便您可以确定将 pst 文件导入到的最佳文件夹位置。  <br/> |（保留为空白）  <br/> 或  <br/>  `/` <br/> 或者  <br/>  `/ImportedPst` <br/> |
+    | `ContentCodePage` <br/> |此可选参数指定用于以 ANSI 文件格式导入 PST 文件的代码页的数值。此参数用于从中文、日语和朝鲜语 (CJK) 组织导入 PST 文件, 这是因为这些语言通常使用双字节字符集 (DBCS) 进行字符编码。如果未使用此参数导入使用 DBCS 作为邮箱文件夹名称的语言的 PST 文件, 则在导入这些文件夹名称时通常会出现乱码。<br/><br/> 有关要用于此参数的受支持值的列表, 请参阅[代码页标识符](https://go.microsoft.com/fwlink/p/?LinkId=328514)。  <br/> <br/>**注意:** 如前所述, 这是一个可选参数, 无需将其包含在 CSV 文件中。或者, 可以将其包含在一个或多个行中, 并为其保留值为空。<br/> |（保留为空白）  <br/> 或  <br/>  `932`(ANSI/OEM 日语的代码页标识符)  <br/> |
     | `SPFileContainer` <br/> |对于 PST 导入，将该参数留空。   <br/> |不适用  <br/> |
     | `SPManifestContainer` <br/> |对于 PST 导入，将该参数留空。   <br/> |不适用  <br/> |
     | `SPSiteUrl` <br/> |对于 PST 导入，将该参数留空。   <br/> |不适用  <br/> |
 
 ## <a name="step-5-create-a-pst-import-job-in-office-365"></a>步骤 5：在 Office 365 中创建 PST 导入作业
 
-下一步是创建 Office 365 中导入服务中的 PST 导入作业。如前所述，您将提交您在步骤 4 中创建的 PST 导入映射文件。创建新的作业后，Office 365 分析 PST 文件中的数据，并使您能够筛选实际上获取导入到邮箱 PST 导入映射文件中指定的数据 （请参阅[步骤 6](#step-6-filter-data-and-start-the-pst-import-job)）。
+下一步是在 Office 365 中的 "导入服务" 中创建 PST 导入作业。如前面所述, 您将提交在步骤4中创建的 PST 导入映射文件。在创建新作业之后, Office 365 将分析 pst 文件中的数据, 然后让您有机会筛选实际导入到在 PST 导入映射文件中指定的邮箱的数据 (请参阅[步骤 6](#step-6-filter-data-and-start-the-pst-import-job))。
   
-1. 转到[https://protection.office.com](https://protection.office.com)和使用 Office 365 组织中的管理员帐户凭据登录。 
+1. 转到[https://protection.office.com](https://protection.office.com)并使用 Office 365 组织中的管理员帐户凭据登录。 
     
-2. 在左侧窗格中的安全&amp;合规性中心，单击**数据调控**，然后单击**导入**。
+2. 在安全&amp;合规性中心的左侧窗格中, 单击 "**数据管理**", 然后单击 "**导入**"。
     
-3. 在**导入**页上单击![添加图标](media/ITPro-EAC-AddIcon.gif)**新建导入作业**。
+3. 在 "**导入**" 页![上,](media/ITPro-EAC-AddIcon.gif)单击 "添加图标" "**新建导入作业**"。
     
-    **注意：** 您需要分配访问安全性中的**导入**页的适当权限&amp;合规性中心，以创建新的导入作业。请参阅**开始之前**部分中的详细信息。 
+    **注意:** 您必须分配有适当的权限才能访问安全&amp;合规中心中的 "**导入**" 页, 以创建新的导入作业。有关详细信息, 请参阅 "**开始之前**" 部分。 
     
-4. 为 PST 导入作业中，键入一个名称，然后单击**下一步**。使用小写字母、 数字、 连字符和下划线。您无法使用大写字母或名称中包含空格。
+4. 键入 PST 导入作业的名称, 然后单击 "**下一步**"。使用小写字母、数字、连字符和下划线。不能在名称中使用大写字母或包含空格。
     
-5. 在**要上载或附带数据？** 页上，单击**上载数据**，然后单击**下一步**。
+5. 在 "**是否要上载或传送数据？** " 页上, 单击 "**上载数据**", 然后单击 "**下一步**"。
     
-    ![单击上载以创建网络上载将数据导入作业](media/e59f9dc3-ccde-44ff-ac38-c4e39d76ae85.png)
+    ![单击 "上载数据" 以创建网络上载导入作业](media/e59f9dc3-ccde-44ff-ac38-c4e39d76ae85.png)
   
-6. 在**导入数据**页上的步骤 4 中，单击**我已经完成了上载我文件**和**我有权访问映射文件**，选中框中，，然后单击**下一步**。
+6. 在步骤4中的 "**导入数据**" 页上, 单击 "已**完成上传我的文件**" 和 **"我有权访问映射文件"** 复选框, 然后单击 "**下一步**"。
     
-    ![单击在步骤 4 中的两个复选框](media/9f2427e8-3af2-4e27-95e6-a9f08430d3d8.png)
+    ![单击步骤4中的两个复选框](media/9f2427e8-3af2-4e27-95e6-a9f08430d3d8.png)
   
-7. 在**选择映射文件**页上，单击**选择映射文件**以提交您在步骤 4 中创建的 PST 导入映射文件。 
+7. 在 "**选择映射文件**" 页上, 单击 "**选择映射文件**" 以提交您在步骤4中创建的 PST 导入映射文件。 
     
-    ![单击选择映射文件以提交您创建的导入作业的 CSV 文件](media/d30b1d73-80bb-491e-a642-a21673d06889.png)
+    ![单击 "选择映射文件" 以提交为导入作业创建的 CSV 文件](media/d30b1d73-80bb-491e-a642-a21673d06889.png)
   
-8. 后的 CSV 名称文件显示在**映射文件名称**下，单击**验证**检查 CSV 文件中的错误。 
+8. 在 "**映射**文件名" 下显示 csv 文件的名称后, 单击 "**验证**" 以检查 CSV 文件中的错误。 
     
-    ![单击验证检查 CSV 文件中的错误](media/4680999d-5538-4059-b878-2736a5445037.png)
+    ![单击 "验证" 以检查 CSV 文件是否存在错误](media/4680999d-5538-4059-b878-2736a5445037.png)
   
-    CSV 文件已成功验证创建 PST 导入作业。请注意成功验证后，更改文件名为绿色。如果验证失败，请单击**查看日志**链接。打开时验证错误报告，失败的文件中的各行的错误消息。 
+    必须成功验证 CSV 文件, 才能创建 PST 导入作业。注释成功验证后, 文件名更改为绿色。如果验证失败, 请单击 "**查看日志**" 链接。打开验证错误报告, 并对文件中每个失败的行提供错误消息。 
     
-9. 在成功验证 PST 映射文件后，读取条款和条件的文档，，，然后单击复选框。
+9. 在成功验证了 PST 映射文件后, 请阅读条款和条件文档, 然后单击该复选框。
     
-10. 单击**保存**以提交的作业，然后单击**关闭**后作业已成功创建。 
+10. 单击 "**保存**" 以提交作业, 然后在作业成功创建后单击 "**关闭**"。 
     
-    将显示状态弹出页，**正在进行分析**的状态，并在**导入**页上的列表中显示新的导入作业。 
+    显示状态弹出页面, 状态为 "**正在进行分析**", 新的导入作业显示在 "**导入**" 页上的列表中。 
     
-11. 单击**刷新**![刷新图标](media/O365-MDM-Policy-RefreshIcon.gif)以更新**状态**列中显示的状态信息。当完成分析，并已准备好要导入数据时，状态更改为**完成分析**。
+11. 单击 "**刷新** ![刷新](media/O365-MDM-Policy-RefreshIcon.gif) " 图标可更新 "**状态**" 列中显示的状态信息。分析完成并准备好导入数据后, 状态将更改为 "**分析已完成**"。
     
-    您可以单击导入作业以显示状态弹出页，其中包含有关导入作业状态等的映射文件中列出的每个 PST 文件的详细的信息。
+    您可以单击 "导入作业" 以显示 "状态弹出页面", 其中包含有关导入作业的更多详细信息, 如映射文件中列出的每个 PST 文件的状态。
  
-## <a name="step-6-filter-data-and-start-the-pst-import-job"></a>步骤 6： 筛选数据，并启动 PST 导入作业
+## <a name="step-6-filter-data-and-start-the-pst-import-job"></a>步骤 6: 筛选数据并启动 PST 导入作业
 
-步骤 5 中创建导入作业后，Office 365 分析 PST 文件中的数据 （以安全方式） 标识的项目和 PST 文件中包含的其他消息类型的期限。在完成分析，并且已准备好导入数据，您可以选择要导入 PST 文件中包含的所有数据或可以修整通过设置控制哪些数据获取导入的筛选器导入的数据。
+在步骤5中创建导入作业后, Office 365 将通过标识项目的期限和 pst 文件中包含的不同邮件类型来分析 pst 文件中的数据 (以安全和安全的方式)。分析完成并准备导入数据后, 可以选择导入 PST 文件中包含的所有数据, 也可以通过设置用于控制导入数据的筛选器来裁切导入的数据。
   
-1. 在安全中的**导入**页上&amp;合规性中心，单击步骤 5 中创建的导入作业的**已准备好导入到 Office 365** 。 
+1. 在安全&amp;合规性中心的 "**导入**" 页上, 单击 "已**准备好为**您在步骤5中创建的导入作业导入 Office 365"。 
     
-    ![单击您创建的导入作业旁边导入到 Office 365 准备](media/5760aac3-300b-4e31-b894-253c42a4b82b.png)
+    ![单击您创建的导入作业旁边的 "已准备好导入到 Office 365"](media/5760aac3-300b-4e31-b894-253c42a4b82b.png)
   
-    飞出页将显示有关 PST 文件的信息以及其他信息导入作业。
+    将显示一个 "飞出" 页面, 其中包含有关 PST 文件的信息以及有关导入作业的其他信息。
     
-2. 在弹出页上，单击**导入到 Office 365**。
+2. 在弹出页面上, 单击 "**导入到 Office 365**"。
     
-    显示**筛选数据**页。它包含生成 Office 365，包括有关数据的期限对 PST 文件执行分析数据见解。此时，您可以选择要筛选的数据将导入或导入原样的所有数据。 
+    将显示 "**筛选数据**" 页。它包含由 Office 365 对 PST 文件执行的分析生成的数据见解, 包括有关数据期限的信息。此时, 您可以选择筛选将导入的数据, 也可以按自己的方式导入所有数据。 
     
-    ![您可以修整 PST 文件中的数据或导入的所有](media/287fc030-99e9-417b-ace7-f64617ea5d4e.png)
+    ![您可以裁切 PST 文件中的数据, 也可以将其全部导入](media/287fc030-99e9-417b-ace7-f64617ea5d4e.png)
   
 3. 执行下列操作之一：
     
-    答： 来裁切导入的数据，请单击**是，我希望筛选其之前导入**。
+    一. 若要修整导入的数据, 请单击 **"是, 我想在导入前筛选它**"。
     
-    有关筛选 PST 文件中的数据，然后启动导入作业的详细分步说明，请参阅[筛选器数据导入 PST 文件迁移到 Office 365 时](filter-data-when-importing-pst-files.md)。
+    有关筛选 PST 文件中的数据, 然后启动导入作业的详细分步说明, 请参阅[在将 pst 文件导入到 Office 365 时筛选数据](filter-data-when-importing-pst-files.md)。
     
-    或
+    或者
     
-    b.若要导入 PST 文件中的所有数据中,，单击**否，我想要导都入的所有内容，** 然后单击**下一步**。
+    b. 若要导入 PST 文件中的所有数据, 请单击 "**否, 我想要导入所有内容",** 然后单击 "**下一步**"。
     
-4. 如果您选择要导入的所有数据，请单击都**导都入数据**以启动导都入作业。 
+4. 如果选择导入所有数据, 请单击 "**导入数据**" 以启动导入作业。 
     
-    导入作业的状态是**导入**页上的显示。单击![刷新图标](media/O365-MDM-Policy-RefreshIcon.gif)**刷新**以更新**状态**列中显示的状态信息。单击显示状态弹出页，显示状态信息正在导入每个 PST 文件导入作业。 
+    导入作业的状态将显示在 "**导入**" 页上。单击!["刷新](media/O365-MDM-Policy-RefreshIcon.gif)图标**刷新**" 以更新显示在 "**状态**" 列中的状态信息。单击 "导入作业" 以显示 "状态弹出页面", 其中显示有关导入的每个 PST 文件的状态信息。 
 
 ## <a name="how-the-import-process-works"></a>导入过程的工作原理
   
-您可以使用网络上载选项和导入 Office 365 服务批量导入到用户邮箱的 PST 文件。网络上载意味着您在 Microsoft 云中的临时存储区上载 PST 文件。然后 Office 365 导入服务将复制的 PST 文件从存储区域到目标用户邮箱。
+您可以使用 "网络上载" 选项和 Office 365 导入服务将 PST 文件批量导入到用户邮箱。网络上载是指将 PST 文件上载到 Microsoft 云中的临时存储区域。然后, Office 365 导入服务将 PST 文件从存储区域复制到目标用户邮箱。
   
-以下是图和 PST 文件导入 Office 365 中的邮箱的网络上载过程的说明。
+以下是将 PST 文件导入 Office 365 中的邮箱的网络上载过程的图示和说明。
   
-![网络的工作流上载到 Office 365 导入 PST 文件的过程](media/9e05a19e-1e7a-4f1f-82df-9118f51588c4.png)
+![将 PST 文件导入到 Office 365 的网络上载过程的工作流](media/9e05a19e-1e7a-4f1f-82df-9118f51588c4.png)
   
-1. **下载 PST 导入工具和密钥对专用的 Azure 存储位置**-第一步是下载 Azure AzCopy 命令行工具和用于将 PST 文件上载到云中 Microsoft Azure 存储位置访问键。您获取这些从 Office 365 安全性**导入**页上&amp;合规性中心。键 （调用安全访问 (SA) 签名密钥、 到专用提供了上载 PST 文件所需的权限和安全 Azure 的存储位置。此访问键所特有的组织，并帮助防止未授权的访问到 PST 文件，它们上载到 Microsoft 云后。请注意到 Office 365 导入 PST 文件不需要组织拥有单独的 Azure 订阅。 
+1. 将**pst 导入工具和密钥下载到专用 Azure 存储位置**-第一步是下载 azure AzCopy 命令行工具和用于将 PST 文件上载到 Microsoft 云中的 Azure 存储位置的访问密钥。您可以从 Office 365 安全&amp;合规中心的 "**导入**" 页中获取它们。密钥 (称为安全访问签名 (SAS) 密钥) 为你提供将 PST 文件上载到专用和安全 Azure 存储位置所需的权限。此访问密钥对于您的组织是唯一的, 并且有助于防止在将 PST 文件上传到 Microsoft 云后对其进行未经授权的访问。请注意, 将 PST 文件导入到 Office 365 不需要您的组织拥有单独的 Azure 订阅。 
     
-2. **上载到 Azure 存储位置的 PST 文件**的下一步是使用 AzCopy.exe 工具 （步骤 1 中下载） 上载，并将 PST 文件存储在驻留在同一区域 Microsoft 数据中心中的 Azure 存储位置其中 Office 365组织所在。若要将它们上载，您希望导入到 Office 365 的 PST 文件必须位于文件共享或组织中的文件服务器。
+2. 将**pst 文件上载到 Azure 存储位置**-下一步是使用 AzCopy 工具 (在第1步中下载) 将 PST 文件上载并存储在位于与 Office 365 相同的区域 Microsoft 数据中心的 Azure 存储位置中。组织位于。若要上传它们, 您要导入到 Office 365 的 PST 文件必须位于组织中的文件共享或文件服务器中。
     
-    请注意，您可执行的用于查看 PST 文件的列表，它们上载到 Azure 存储位置后可选步骤。
+    请注意, 在将 PST 文件上载到 Azure 存储位置之后, 可以执行此可选步骤来查看 PST 文件的列表。
     
-3. **创建 PST 导入映射文件**-PST 文件已上载到 Azure 存储位置后下, 一步是创建指定哪些用户邮箱的 PST 文件将被导入以，请注意，可以是 PST 文件的以逗号分隔的值 (CSV) 文件 导入到用户的主邮箱或其存档邮箱。导入 Office 365 服务将使用该 CSV 文件中的信息导入 PST 文件。
+3. **创建 pst 导入映射文件**-将 pst 文件上载到 Azure 存储位置之后, 下一步是创建逗号分隔值 (CSV) 文件, 该文件指定要将 pst 文件导入到的用户邮箱, 请注意, pst 文件可以 导入到用户的主邮箱或其存档邮箱。Office 365 导入服务将使用 CSV 文件中的信息导入 PST 文件。
     
-4. **创建 PST 导入作业**-下一步是在安全的**导入**页上创建 PST 导入作业&amp;合规性中心和提交上一步中创建的 PST 导入映射文件。创建导入作业后，Office 365 分析 PST 文件中的数据，并使您能够设置控制哪些数据获取实际导入 PST 导入映射文件中指定的邮箱的筛选器。 
+4. **创建 pst 导入作业**-下一步是在安全&amp;合规性中心的 "**导入**" 页上创建一个 pst 导入作业, 并提交在上一步中创建的 pst 导入映射文件。在创建导入作业之后, Office 365 将分析 PST 文件中的数据, 并为您提供一个设置筛选器的机会, 该筛选器控制实际导入到 PST 导入映射文件中指定的邮箱的数据。 
     
-5. **筛选器，将导入到邮箱的 PST 数据**-导入作业的创建和启动后，Office 365 分析 PST 文件中的数据 （安全、 可靠地） 通过确定项目和 PST 文件中包含的其他消息类型的期限.在完成分析，并且已准备好导入数据，您可以选择要导入 PST 文件中包含的所有数据或可以修整通过设置控制哪些数据获取导入的筛选器导入的数据。
+5. **筛选将导入到邮箱的 PST 数据**-在创建和启动导入作业之后, Office 365 将通过标识项目的期限和 pst 文件中包含的不同邮件类型来分析 pst 文件中的数据 (安全和安全).分析完成并准备导入数据后, 可以选择导入 PST 文件中包含的所有数据, 也可以通过设置用于控制导入数据的筛选器来裁切导入的数据。
     
-6. **启动 PST 导入作业**-启动导入作业后，Office 365 使用的信息在 PST 导入映射文件从他 Azure 的存储位置的 Pst 文件导入到用户邮箱。有关 （包括有关正在导入每个 PST 文件） 导入作业的状态信息显示在安全中的**导入**页上&amp;合规性中心。完成导入作业后，此作业的状态设置为**完成**。
+6. **启动 pst 导入作业**-在开始导入作业后, Office 365 将使用 pst 导入映射文件中的信息将 pst 文件从其 Azure 存储位置导入到用户邮箱。有关导入作业的状态信息 (包括有关导入的每个 PST 文件的信息) 显示在安全&amp;合规性中心的 "**导入**" 页上。导入作业完成后, 会将作业的状态设置为 "**完成**"。
   
 ## <a name="more-information"></a>更多信息
 
-- 为什么到 Office 365 导入 PST 文件？
+- 为什么要将 PST 文件导入 Office 365？
     
-  - 它是贵组织的存档消息数据导入到 Office 365 的好方法。
+  - 这是将组织的存档邮件数据导入到 Office 365 的一个不错的方法。
     
   - 用户在任意设备上都可以使用数据，因为数据存储在云中。
     
-  - 允许您从 PST 文件导入应用于数据的 Office 365 合规性功能，从而帮助您的组织满足合规性需求。这包括：
+  - 它通过允许您将 Office 365 合规性功能应用于您导入的 PST 文件中的数据, 帮助满足组织的合规性需求。这包括:
     
-  - 启用[存档邮箱](enable-archive-mailboxes.md)和[自动扩展存档](enable-unlimited-archiving.md)为用户提供其他邮箱空间来存储您导入的数据。 
+  - 启用[存档邮箱](enable-archive-mailboxes.md)和[自动扩展存档](enable-unlimited-archiving.md), 以向用户提供额外的邮箱存储空间以存储您导入的数据。 
     
-  - 将邮箱置于[诉讼保留](https://go.microsoft.com/fwlink/?linkid=856286)保留您导入的数据。 
+  - 将邮箱置于[诉讼保留状态](https://go.microsoft.com/fwlink/?linkid=856286)以保留您导入的数据。 
     
   - 使用 Microsoft[电子数据展示工具](search-for-content.md)搜索您导入的数据。 
     
-  - 使用[Office 365 保留策略](retention-policies.md)来控制您导入的数据将保留多长时间，和要采取的保留期过后哪些操作。 
+  - 使用[Office 365 保留策略](retention-policies.md)来控制您导入的数据将保留多长时间, 以及在保留期到期后要执行的操作。 
     
-  - 搜索[Office 365 审核日志](search-the-audit-log-in-security-and-compliance.md)的邮箱相关的事件的会影响您导入的数据。 
+  - 在[Office 365 审核日志](search-the-audit-log-in-security-and-compliance.md)中搜索影响您导入的数据的与邮箱相关的事件。 
     
-  - 将数据导入到存档数据，出于合规性目的的[非活动邮箱](create-and-manage-inactive-mailboxes.md)。 
+  - 出于合规目的将数据导入到[非活动邮箱](create-and-manage-inactive-mailboxes.md)以存档数据。 
     
-  - 使用[数据丢失预防策略](data-loss-prevention-policies.md)阻止敏感数据泄漏组织外部。 
+  - 使用[数据丢失防护策略](data-loss-prevention-policies.md)防止敏感数据泄露到组织外部。 
   
-- 下面是一个示例获取在步骤 1 中的共享访问签名 (SA) url。此示例还包含到上载 PST 文件迁移到 Office 365 中运行 AzCopy.exe 工具中的命令的语法。请确保采取预防措施来保护 SAS URL 像将保护密码或其他安全相关的信息。
+- 下面是在步骤1中获取的共享访问签名 (sa) URL 的示例。此示例还包含您在 AzCopy 工具中运行以将 PST 文件上载到 Office 365 的命令的语法。请务必采取预防措施来保护 SAS URL, 就像保护密码或其他与安全相关的信息一样。
 
     ```
     SAS URL: https://3c3e5952a2764023ad14984.blob.core.windows.net/ingestiondata?sv=2012-02-12&amp;se=9999-12-31T23%3A59%3A59Z&amp;sr=c&amp;si=IngestionSasForAzCopy201601121920498117&amp;sig=Vt5S4hVzlzMcBkuH8bH711atBffdrOS72TlV1mNdORg%3D

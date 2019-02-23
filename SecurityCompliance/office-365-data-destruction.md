@@ -5,7 +5,7 @@ author: robmazz
 manager: laurawi
 audience: ITPro
 ms.topic: article
-ms.service: Office 365 Administration
+ms.service: O365-seccomp
 localization_priority: None
 search.appverid:
 - MET150
@@ -13,12 +13,12 @@ ms.collection:
 - Strat_O365_IP
 - M365-security-compliance
 description: 有关对 Office 365 数据中心磁盘驱动器和服务器进行回收、处置或销毁的 Microsoft 策略的概述。
-ms.openlocfilehash: 638f1964be0573f5f053a95b1dfa475776dd7b25
-ms.sourcegitcommit: c94cb88a9ce5bcc2d3c558f0fcc648519cc264a2
+ms.openlocfilehash: 6b9f6bacfa1c3bf5ee6c8cb76bc5a394812b49be
+ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/20/2019
-ms.locfileid: "30091084"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "30220782"
 ---
 # <a name="office-365-data-destruction"></a>Office 365 数据销毁
 

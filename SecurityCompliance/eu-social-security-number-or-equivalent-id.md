@@ -1,41 +1,41 @@
 ---
-title: 欧盟社会保险号或等效 ID
+title: 欧盟社会安全号码或等效 ID
 ms.author: stephow
 author: stephow-MSFT
 manager: laurawi
 ms.date: 8/17/2018
 ms.audience: Admin
 ms.topic: reference
-ms.service: o365-administration
+ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: 1fabd341-e594-4bfe-961c-62aa82893f60
-description: 本主题演示数据丢失防护 (DLP) 策略检测到的欧盟社会保险号或等效 ID 敏感信息类型时的寻找。此敏感信息类型定义不同的模式、 关键字和每个国家/地区其他证据。
-ms.openlocfilehash: 6f1027dcfb648ed937b8180d74d4bc6348dab650
-ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+description: 本主题介绍当数据丢失防护 (DLP) 策略检测到欧盟社会保险号码或等效 ID 敏感信息类型时, 将会查找什么。此敏感信息类型为每个国家/地区定义不同的模式、关键字和其他证据。
+ms.openlocfilehash: abcefb6930e9c02d2f32d84b65accfecf1e20d95
+ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22525285"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "30216522"
 ---
-# <a name="eu-social-security-number-or-equivalent-id"></a>欧盟社会保险号或等效 ID
+# <a name="eu-social-security-number-or-equivalent-id"></a>欧盟社会安全号码或等效 ID
 
-本主题演示数据丢失防护 (DLP) 策略检测到的欧盟社会保险号码 (SSN) 或等效 ID 敏感信息类型时的寻找。此敏感信息类型定义不同的模式、 关键字和每个国家/地区其他证据。
+本主题介绍当数据丢失防护 (DLP) 策略检测到欧盟社会保险号码 (SSN) 或等效 ID 敏感信息类型时, 会查找什么内容。此敏感信息类型为每个国家/地区定义不同的模式、关键字和其他证据。
   
 ## <a name="austria"></a>奥地利
 
 ### <a name="format"></a>格式
 
-10 位数字以指定格式
+以指定格式表示的10个数字
   
 ### <a name="pattern"></a>模式
 
 10 个数字：
   
--  三个转成序列号对应的数字 
+-  与序列号对应的三个数字 
     
-- 一个检查数字
+- 一个校验位
     
-- 对应于出生日期月日的 6 个数字
+- 与出生日期对应的6个数字 (DDMMYY)
     
 ### <a name="checksum"></a>校验和
 
@@ -45,13 +45,13 @@ ms.locfileid: "22525285"
 
 在 300 个字符的相似度内，如果出现以下情况，DLP 策略 85% 确信它检测到这种类型的敏感信息：
   
-- 该函数`Func_austria_eu_ssn_or_equivalent`查找与模式匹配的内容。 
+- 函数`Func_austria_eu_ssn_or_equivalent`找到与该模式匹配的内容。 
     
-- 从关键字`Keywords_austria_eu_ssn_or_equivalent`找到。 
+- 找到了中`Keywords_austria_eu_ssn_or_equivalent`的关键字。 
     
 在 300 个字符的相似度内，如果出现以下情况，DLP 策略 75% 确信它检测到这种类型的敏感信息：
   
-- 该函数`Func_austria_eu_ssn_or_equivalent`查找与模式匹配的内容。 
+- 函数`Func_austria_eu_ssn_or_equivalent`找到与该模式匹配的内容。 
     
 ```
  <!-- EU SSN or Equivalent Number -->
@@ -66,11 +66,11 @@ ms.locfileid: "22525285"
 </Entity>
 ```
 
-### <a name="keywords"></a>Keywords
+### <a name="keywords"></a>关键字
 
 #### <a name="keywordsaustriaeussnorequivalent"></a>Keywords_austria_eu_ssn_or_equivalent
 
-社会保障没有
+社会保障号
   
 social security number
 
@@ -82,11 +82,11 @@ social security code
   
 奥地利 ssn
   
-ssn #
+ssn
   
 ssn
   
-保险代码
+保险费代码
   
 保险代码 #
   
@@ -102,7 +102,7 @@ versicherungsnummer
 
 ### <a name="format"></a>格式
 
-不含空格或分隔符 11 位数字
+11位数, 不含空格或分隔符
   
 ### <a name="pattern"></a>模式
 
@@ -116,13 +116,13 @@ versicherungsnummer
 
 在 300 个字符的相似度内，如果出现以下情况，DLP 策略 85% 确信它检测到这种类型的敏感信息：
   
-- 该函数`Func_belgium_eu_ssn_or_equivalent`查找与模式匹配的内容。 
+- 函数`Func_belgium_eu_ssn_or_equivalent`找到与该模式匹配的内容。 
     
-- 从关键字`Keywords_belgium_eu_ssn_or_equivalent`找到。 
+- 找到了中`Keywords_belgium_eu_ssn_or_equivalent`的关键字。 
     
 在 300 个字符的相似度内，如果出现以下情况，DLP 策略 75% 确信它检测到这种类型的敏感信息：
   
-- 该函数`Func_belgium_eu_ssn_or_equivalent`查找与模式匹配的内容。 
+- 函数`Func_belgium_eu_ssn_or_equivalent`找到与该模式匹配的内容。 
     
 ```
  <!-- EU SSN or Equivalent Number -->
@@ -137,7 +137,7 @@ versicherungsnummer
 </Entity>
 ```
 
-### <a name="keywords"></a>Keywords
+### <a name="keywords"></a>关键字
 
 #### <a name="keywordsbelgiumeussnorequivalent"></a>Keywords_belgium_eu_ssn_or_equivalent
 
@@ -150,7 +150,7 @@ social security number
   
 nationalnumber #
   
-ssn #
+ssn
   
 ssn
   
@@ -160,18 +160,18 @@ bnn #
   
 bnn
   
-个人标识号
+个人 id 号
   
 personalidnumber #
   
-numéro 国家/地区
+numéro 国家
   
 numéro de sécurité
 
   
 numéro d'assuré
   
-identifiant 国家/地区
+identifiant 国家
   
 identifiantnational #
   
@@ -181,15 +181,15 @@ numéronational #
 
 ### <a name="format"></a>格式
 
-没有空格和分隔符 11 位数字
+11个数字, 无空格和分隔符
   
 ### <a name="pattern"></a>模式
 
  11 个数字： 
   
--  10 位数字 
+-  10位数字 
     
-- 一个检查数字
+- 一个校验位
     
 ### <a name="checksum"></a>校验和
 
@@ -199,13 +199,13 @@ numéronational #
 
 在 300 个字符的相似度内，如果出现以下情况，DLP 策略 85% 确信它检测到这种类型的敏感信息：
   
-- 该函数`Func_croatia_eu_ssn_or_equivalent`查找与模式匹配的内容。 
+- 函数`Func_croatia_eu_ssn_or_equivalent`找到与该模式匹配的内容。 
     
-- 从关键字`Keywords_croatia_eu_ssn_or_equivalent`找到。 
+- 找到了中`Keywords_croatia_eu_ssn_or_equivalent`的关键字。 
     
 在 300 个字符的相似度内，如果出现以下情况，DLP 策略 75% 确信它检测到这种类型的敏感信息：
   
-- 该函数`Func_croatia_eu_ssn_or_equivalent`查找与模式匹配的内容。 
+- 函数`Func_croatia_eu_ssn_or_equivalent`找到与该模式匹配的内容。 
     
 ```
  <!-- EU SSN or Equivalent Number -->
@@ -220,11 +220,11 @@ numéronational #
 </Entity>
 ```
 
-### <a name="keywords"></a>Keywords
+### <a name="keywords"></a>关键字
 
 #### <a name="keywordscroatiaeussnorequivalent"></a>Keywords_croatia_eu_ssn_or_equivalent
 
-个人识别号
+个人标识号
   
 主公民号码
   
@@ -235,7 +235,7 @@ social security number
   
 nationalnumber #
   
-ssn #
+ssn
   
 ssn
   
@@ -245,7 +245,7 @@ bnn #
   
 bnn
   
-个人标识号
+个人 id 号
   
 personalidnumber #
   
@@ -257,19 +257,19 @@ osobni identifikacijski broj
 
 ### <a name="format"></a>格式
 
-10 位数字和反斜杠中指定的模式
+指定模式中的10个数字和一个反斜杠
   
 ### <a name="pattern"></a>模式
 
-10 位数字和反斜杠：
+10个数字和一个反斜杠:
   
-- 对应于出生日期 (YYMMDD) 的 6 个数字： 
+- 与出生日期对应的6个数字 (YYMMDD): 
     
 - 反斜杠
     
-- 与用于分隔人员在相同日期出生日期序列号对应的三个数字
+- 与一个序列号相对应的三个数字, 用于分隔出生于同一日期的人员
     
-- 一个检查数字
+- 一个校验位
     
 ### <a name="checksum"></a>校验和
 
@@ -279,13 +279,13 @@ osobni identifikacijski broj
 
 在 300 个字符的相似度内，如果出现以下情况，DLP 策略 85% 确信它检测到这种类型的敏感信息：
   
-- 该函数`Func_czech_republic_eu_ssn_or_equivalent`查找与模式匹配的内容。 
+- 函数`Func_czech_republic_eu_ssn_or_equivalent`找到与该模式匹配的内容。 
     
-- 从关键字`Keywords_czech_republic_eu_ssn_or_equivalent`找到。 
+- 找到了中`Keywords_czech_republic_eu_ssn_or_equivalent`的关键字。 
     
 在 300 个字符的相似度内，如果出现以下情况，DLP 策略 75% 确信它检测到这种类型的敏感信息：
   
-- 该函数`Func_czech_republic_eu_ssn_or_equivalent`查找与模式匹配的内容。 
+- 函数`Func_czech_republic_eu_ssn_or_equivalent`找到与该模式匹配的内容。 
     
 ```
  <!-- EU SSN or Equivalent Number -->
@@ -300,7 +300,7 @@ osobni identifikacijski broj
 </Entity>
 ```
 
-### <a name="keywords"></a>Keywords
+### <a name="keywords"></a>关键字
 
 #### <a name="keywordsczechrepubliceussnorequivalent"></a>Keywords_czech_republic_eu_ssn_or_equivalent
 
@@ -308,26 +308,26 @@ osobni identifikacijski broj
   
 国家/地区标识号
   
-个人识别号
+个人标识号
   
 social security number
 
   
 nationalnumber #
   
-ssn #
+ssn
   
 ssn
   
 国家/地区号码
   
-个人标识号
+个人 id 号
   
 personalidnumber #
   
 rč
   
-rodné číslo
+rodnéčíslo
   
 rodne cislo
   
@@ -335,17 +335,17 @@ rodne cislo
 
 ### <a name="format"></a>格式
 
-10 位数字和连字符中指定的模式
+指定模式中的10个数字和一个连字符
   
 ### <a name="pattern"></a>模式
 
-10 位数字和连字符：
+10个数字和一个连字符:
   
-- 对应于出生日期月日的 6 个数字 
+- 与出生日期对应的6个数字 (DDMMYY) 
     
 - 一个连字符 
     
-- 四位数字对应序列号
+- 与序列号对应的四个数字
     
 ### <a name="checksum"></a>校验和
 
@@ -355,13 +355,13 @@ rodne cislo
 
 在 300 个字符的相似度内，如果出现以下情况，DLP 策略 85% 确信它检测到这种类型的敏感信息：
   
-- 该函数`Func_denmark_eu_ssn_or_equivalent`查找与模式匹配的内容。 
+- 函数`Func_denmark_eu_ssn_or_equivalent`找到与该模式匹配的内容。 
     
-- 从关键字`Keywords_denmark_eu_ssn_or_equivalent`找到。 
+- 找到了中`Keywords_denmark_eu_ssn_or_equivalent`的关键字。 
     
 在 300 个字符的相似度内，如果出现以下情况，DLP 策略 75% 确信它检测到这种类型的敏感信息：
   
-- 该函数`Func_denmark_eu_ssn_or_equivalent`查找与模式匹配的内容。 
+- 函数`Func_denmark_eu_ssn_or_equivalent`找到与该模式匹配的内容。 
     
 ```
  <!-- EU SSN or Equivalent Number -->
@@ -376,11 +376,11 @@ rodne cislo
 </Entity>
 ```
 
-### <a name="keywords"></a>Keywords
+### <a name="keywords"></a>关键字
 
 #### <a name="keywordsdenmarkeussnorequivalent"></a>Keywords_denmark_eu_ssn_or_equivalent
 
-个人识别号
+个人标识号
   
 国家/地区标识号
   
@@ -389,17 +389,17 @@ social security number
   
 nationalnumber #
   
-ssn #
+ssn
   
 ssn
   
 国家/地区号码
   
-个人标识号
+个人 id 号
   
 personalidnumber #
   
-cpr nummer
+cpr-nummer
   
 personnummer
   
@@ -407,25 +407,25 @@ personnummer
 
 ### <a name="format"></a>格式
 
-以指定格式 11 个字符组合
+指定格式的11个字符的组合
   
 ### <a name="pattern"></a>模式
 
-以指定格式 11 个字符组合：
+指定格式的11个字符的组合:
   
 -  六位数字 
     
-- 一个实例下列选项之一：
+- 以下任一实例:
     
-  - Plus 符号
+  - 加号符号
     
-  - 减号
+  - 负号
     
-  - 字母"A"（不区分大小写）
+  - 字母 "A" (不区分大小写)
     
 - 三位数字
     
-- 一个字母或一位数
+- 一个字母或一个数字
     
 ### <a name="checksum"></a>校验和
 
@@ -435,13 +435,13 @@ personnummer
 
 在 300 个字符的相似度内，如果出现以下情况，DLP 策略 85% 确信它检测到这种类型的敏感信息：
   
-- 该函数`Func_finland_eu_ssn_or_equivalent`查找与模式匹配的内容。 
+- 函数`Func_finland_eu_ssn_or_equivalent`找到与该模式匹配的内容。 
     
-- 从关键字`Keywords_finland_eu_ssn_or_equivalent`找到。 
+- 找到了中`Keywords_finland_eu_ssn_or_equivalent`的关键字。 
     
 在 300 个字符的相似度内，如果出现以下情况，DLP 策略 75% 确信它检测到这种类型的敏感信息：
   
-- 该函数`Func_finland_eu_ssn_or_equivalent`查找与模式匹配的内容。 
+- 函数`Func_finland_eu_ssn_or_equivalent`找到与该模式匹配的内容。 
     
 ```
  <!-- EU SSN or Equivalent Number -->
@@ -456,7 +456,7 @@ personnummer
 </Entity>
 ```
 
-### <a name="keywords"></a>Keywords
+### <a name="keywords"></a>关键字
 
 #### <a name="keywordsfinlandeussnorequivalent"></a>Keywords_finland_eu_ssn_or_equivalent
 
@@ -465,7 +465,7 @@ identification number
   
 个人 id
   
-标识号
+标识号码
   
 芬兰国家/地区 id 号
   
@@ -475,11 +475,11 @@ personalidnumber #
   
 id 号
   
-国家/地区 id 没有。
+国家/地区 id 编号。
   
 国家/地区 id 号
   
-id 没有
+id 号
   
 tunnistenumero
   
@@ -505,21 +505,21 @@ hetu
   
 ## <a name="france"></a>法国
 
-有关详细信息，请参阅中[查找敏感信息类型](what-the-sensitive-information-types-look-for.md)的部分"法国社会保险号 (INSEE)"。
+有关详细信息, 请参阅[敏感信息类型查找的内容](what-the-sensitive-information-types-look-for.md)中的 "华北社会安全号码 (INSEE)" 一节。
   
 ## <a name="germany"></a>德国
 
-有关详细信息，请参阅中[查找敏感信息类型](what-the-sensitive-information-types-look-for.md)的部分"德国身份证编号"。
+有关详细信息, 请参阅[敏感信息类型查找的内容](what-the-sensitive-information-types-look-for.md)中的 "德国身份证号码" 一节。
   
 ## <a name="greece"></a>希腊
 
-有关详细信息，请参阅中[查找敏感信息类型](what-the-sensitive-information-types-look-for.md)的部分"希腊国家 ID 卡"。
+有关详细信息, 请参阅[敏感信息类型查找的内容](what-the-sensitive-information-types-look-for.md)中的 "希腊国家 ID 卡" 一节。
   
 ## <a name="hungary"></a>匈牙利
 
 ### <a name="format"></a>格式
 
-没有空格和分隔符的九个数字
+9个数字, 不带空格和分隔符
   
 ### <a name="pattern"></a>模式
 
@@ -533,13 +533,13 @@ hetu
 
 在 300 个字符的相似度内，如果出现以下情况，DLP 策略 85% 确信它检测到这种类型的敏感信息：
   
-- 该函数`Func_hungary_eu_ssn_or_equivalent`查找与模式匹配的内容。 
+- 函数`Func_hungary_eu_ssn_or_equivalent`找到与该模式匹配的内容。 
     
-- 从关键字`Keywords_hungary_eu_ssn_or_equivalent`找到。 
+- 找到了中`Keywords_hungary_eu_ssn_or_equivalent`的关键字。 
     
 在 300 个字符的相似度内，如果出现以下情况，DLP 策略 75% 确信它检测到这种类型的敏感信息：
   
-- 该函数`Func_hungary_eu_ssn_or_equivalent`查找与模式匹配的内容。 
+- 函数`Func_hungary_eu_ssn_or_equivalent`找到与该模式匹配的内容。 
     
 ```
  <!-- EU SSN or Equivalent Number -->
@@ -554,11 +554,11 @@ hetu
 </Entity>
 ```
 
-### <a name="keywords"></a>Keywords
+### <a name="keywords"></a>关键字
 
 #### <a name="keywordshungaryeussnorequivalent"></a>Keywords_hungary_eu_ssn_or_equivalent
 
-匈牙利语社会保险号码
+匈牙利语社会安全号码
   
 social security number
 
@@ -571,15 +571,15 @@ socialsecuritynno
   
 hssn
   
-泰姬陵
+taj
   
-泰姬陵 #
+taj #
   
 ssn
   
-ssn #
+ssn
   
-社会保障没有
+社会保障号
   
 áfa
   
@@ -595,31 +595,31 @@ magyar áfa szám
   
 ## <a name="portugal"></a>葡萄牙
 
-有关详细信息，请参阅中[查找敏感信息类型](what-the-sensitive-information-types-look-for.md)的部分"葡萄牙公民卡号"。
+有关详细信息, 请参阅[敏感信息类型查找的内容](what-the-sensitive-information-types-look-for.md)中的 "葡萄牙公民卡片号" 部分。
   
 ## <a name="spain"></a>西班牙
 
-有关详细信息，请参阅中[查找敏感信息类型](what-the-sensitive-information-types-look-for.md)的部分"西班牙社会保险号码 (SSN)"。
+有关详细信息, 请参阅[敏感信息类型查找的内容](what-the-sensitive-information-types-look-for.md)中的 "西班牙社会安全号码 (SSN)" 一节。
   
 ## <a name="sweden"></a>瑞典
 
 ### <a name="format"></a>格式
 
-没有空格和分隔符的 12 个数字
+12个数字, 不含空格和分隔符
   
 ### <a name="pattern"></a>模式
 
 12 个数字：
   
--  八个数字对应于出生日期 （年月日） 
+-  与出生日期对应的8位数字 (YYYYMMDD) 
     
-- 三个转成序列号对应的数字位置： 
+- 与序列号对应的三个数字, 其中: 
     
-  - 序列号中的最后一位指示通过分配的奇数的男性和女性为偶数的性别
+  - 序列号中的最后一个数字指示在为 "男" 分配一个奇数号码时的性别, 以及一个 "女" 的偶数号码。
     
-  - 过去 1990，分配的序列号通过信到县或其中出生号码的持有者 （如果出生日期之前 1947年） 其中他/她具有已生活，根据税费记录 1947，年 1 月 1，与特殊代码 (通常为 7 位数字 9) 的移民 
+  - 最多 1990, 将序列号 corresponded 分配给在其中, 号码持有者出生或 (如果在1947之前出生) 的县 (根据纳税记录, 在年1月1日, 使用特殊代码 (通常为第七个数字) 的特殊代码 (通常为9号)immigrants 
     
-- 一个检查数字
+- 一个校验位
     
 ### <a name="checksum"></a>校验和
 
@@ -629,13 +629,13 @@ magyar áfa szám
 
 在 300 个字符的相似度内，如果出现以下情况，DLP 策略 85% 确信它检测到这种类型的敏感信息：
   
-- 该函数`Func_sweden_eu_ssn_or_equivalent`查找与模式匹配的内容。 
+- 函数`Func_sweden_eu_ssn_or_equivalent`找到与该模式匹配的内容。 
     
-- 从关键字`Keywords_sweden_eu_ssn_or_equivalent`找到。 
+- 找到了中`Keywords_sweden_eu_ssn_or_equivalent`的关键字。 
     
 在 300 个字符的相似度内，如果出现以下情况，DLP 策略 75% 确信它检测到这种类型的敏感信息：
   
-- 该函数`Func_sweden_eu_ssn_or_equivalent`查找与模式匹配的内容。 
+- 函数`Func_sweden_eu_ssn_or_equivalent`找到与该模式匹配的内容。 
     
 ```
  <!-- EU SSN or Equivalent Number -->
@@ -650,28 +650,28 @@ magyar áfa szám
 </Entity>
 ```
 
-### <a name="keywords"></a>Keywords
+### <a name="keywords"></a>关键字
 
 #### <a name="keywordsswedeneussnorequivalent"></a>Keywords_sweden_eu_ssn_or_equivalent
 
-个人标识号
+个人 id 号
   
 identification number
 
   
-个人 id 没有
+个人 id 否
   
-标识无
+identity no
   
-标识无
+标识否
   
-个人标识号没有
+个人标识编号
   
 personnummer id
   
-personligt id nummer
+personligt id-nummer
   
-unikt id nummer
+unikt id-nummer
   
 personnummer
   

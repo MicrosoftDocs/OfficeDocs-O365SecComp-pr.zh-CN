@@ -1,51 +1,51 @@
 ---
-title: 欧盟 National 标识号
+title: 欧盟国家身份证号
 ms.author: stephow
 author: stephow-MSFT
 manager: laurawi
 ms.date: 8/17/2018
 ms.audience: Admin
 ms.topic: reference
-ms.service: o365-administration
+ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: 2ea971bf-9434-4b61-b825-2bbd28ae6064
-description: 本主题演示数据丢失防护 (DLP) 策略检测到的欧盟国家/地区标识号敏感信息类型时的寻找。此敏感信息类型定义不同的模式、 关键字和每个国家/地区其他证据。
-ms.openlocfilehash: 29d2126b937ff46039284a74eb2a84f2ebbacb41
-ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+description: 本主题介绍当数据丢失防护 (DLP) 策略检测到欧盟国家身份证的敏感信息类型时, 会对其进行查找。此敏感信息类型为每个国家/地区定义不同的模式、关键字和其他证据。
+ms.openlocfilehash: 9a85fd6954f39de348874e03268a2e19ae47366c
+ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22525345"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "30220632"
 ---
-# <a name="eu-national-identification-number"></a>欧盟 National 标识号
+# <a name="eu-national-identification-number"></a>欧盟国家身份证号
 
-本主题演示数据丢失防护 (DLP) 策略检测到的欧盟国家/地区标识号敏感信息类型时的寻找。此敏感信息类型定义不同的模式、 关键字和每个国家/地区其他证据。
+本主题介绍当数据丢失防护 (DLP) 策略检测到欧盟国家身份证的敏感信息类型时, 会对其进行查找。此敏感信息类型为每个国家/地区定义不同的模式、关键字和其他证据。
   
 ## <a name="austria"></a>奥地利
 
 ### <a name="format"></a>格式
 
-字母、 数字和特殊字符的 24 个字符组合
+字母、数字和特殊字符的24个字符的组合
   
 ### <a name="pattern"></a>模式
 
-24 个字符：
+24个字符:
   
--  22 （不区分大小写） 的字母、 数字、 反斜杠、 正斜杠或加号 
+-  22个字母 (不区分大小写)、数字、反斜杠、正斜杠或加号 
     
-- （不区分大小写） 的两个字母、 数字、 反斜杠、 正斜杠、 加号或等号
+- 两个字母 (不区分大小写)、数字、反斜杠、正斜杠、加号或等号
     
 ### <a name="checksum"></a>校验和
 
 不适用
   
-### <a name="definition"></a>定义
+### <a name="definition"></a>Definition
 
 在 300 个字符的相似度内，如果出现以下情况，DLP 策略 75% 确信它检测到这种类型的敏感信息：
   
-- 正则表达式`Regex_austria_eu_national_id_card`查找与模式匹配的内容。 
+- 正则表达式`Regex_austria_eu_national_id_card`找到与该模式匹配的内容。 
     
-- 从关键字`Keywords_austria_eu_national_id_card`找到。 
+- 找到了中`Keywords_austria_eu_national_id_card`的关键字。 
     
 ```
  
@@ -57,15 +57,15 @@ ms.locfileid: "22525345"
 </Entity>
 ```
 
-### <a name="keywords"></a>Keywords
+### <a name="keywords"></a>关键字
 
 #### <a name="keywordsaustriaeunationalidcard"></a>Keywords_austria_eu_national_id_card
 
-奥地利标识号
+奥地利身份证号码
   
-国家/地区的 identity 号码
+国家/地区身份证号码
   
-标识号
+标识号码
   
 
 national id
@@ -74,25 +74,25 @@ personalausweis republik österreich
   
 ## <a name="belgium"></a>比利时
 
-有关详细信息，请参阅中[查找敏感信息类型](what-the-sensitive-information-types-look-for.md)的部分"比利时国家/地区号码"。
+有关详细信息, 请参阅[敏感信息类型查找的内容](what-the-sensitive-information-types-look-for.md)中的 "比利时国家数" 一节。
   
 ## <a name="bulgaria"></a>保加利亚
 
 ### <a name="format"></a>格式
 
-没有空格和分隔符的 10 位数字
+10个数字, 无空格和分隔符
   
 ### <a name="pattern"></a>模式
 
-没有空格和分隔符的 10 位数字
+10个数字, 无空格和分隔符
   
--  对应于出生日期 (YYMMDD) 的 6 个数字 
+-  与出生日期对应的6个数字 (YYMMDD) 
     
-- 出生顺序对应的两位数
+- 与出生顺序对应的两个数字
     
-- 对应于性别的一位数： 偶数位男性和女性为奇数数字
+- 与性别对应的一位数字: 男的偶数位和用于女的奇数位
     
-- 一个检查数字
+- 一个校验位
     
 ### <a name="checksum"></a>校验和
 
@@ -102,13 +102,13 @@ personalausweis republik österreich
 
 在 300 个字符的相似度内，如果出现以下情况，DLP 策略 85% 确信它检测到这种类型的敏感信息：
   
-- 该函数`Func_bulgaria_national_number`查找与模式匹配的内容。 
+- 函数`Func_bulgaria_national_number`找到与该模式匹配的内容。 
     
-- 从关键字`Keywords_bulgaria_national_number`找到。 
+- 找到了中`Keywords_bulgaria_national_number`的关键字。 
     
 在 300 个字符的相似度内，如果出现以下情况，DLP 策略 75% 确信它检测到这种类型的敏感信息：
   
-- 该函数`Func_bulgaria_national_number`查找与模式匹配的内容。 
+- 函数`Func_bulgaria_national_number`找到与该模式匹配的内容。 
     
 ```
 <Entity id="419f449f-6d9d-4be1-a154-b531f7a91b41" patternsProximity="300" recommendedConfidence="75">
@@ -122,7 +122,7 @@ personalausweis republik österreich
 </Entity>
 ```
 
-### <a name="keywords"></a>Keywords
+### <a name="keywords"></a>关键字
 
 #### <a name="keywordsbulgarianationalnumber"></a>Keywords_bulgaria_national_number
 
@@ -130,7 +130,7 @@ egn
   
 egn #
   
-保加利亚语的国家/地区号码
+保加利亚语国家/地区号码
   
 国家/地区号码
   
@@ -139,7 +139,7 @@ social security number
   
 nationalnumber #
   
-ssn #
+ssn
   
 ssn
   
@@ -149,43 +149,43 @@ bnn #
   
 bnn
   
-个人标识号
+个人 id 号
   
 personalidnumber #
   
-ЕДИНЕН ГРАЖДАНСКИ НОМЕР
+единенгражданскиномер
   
 edinen grazhdanski nomer
   
-ЕГН
+егн
   
-ЕГН #
+егн #
   
 ## <a name="croatia"></a>克罗地亚
 
-有关详细信息，请参阅中[查找敏感信息类型](what-the-sensitive-information-types-look-for.md)的部分"克罗地亚标识号"。
+有关详细信息, 请参阅[敏感信息类型查找的内容](what-the-sensitive-information-types-look-for.md)部分中的 "克罗地亚恒等号码" 一节。
   
 ## <a name="cyprus"></a>塞浦路斯
 
 ### <a name="format"></a>格式
 
-没有空格和分隔符的 10 位数字
+10个数字, 无空格和分隔符
   
 ### <a name="pattern"></a>模式
 
- 10 位数字 
+ 10位数字 
   
 ### <a name="checksum"></a>校验和
 
 不适用
   
-### <a name="definition"></a>定义
+### <a name="definition"></a>Definition
 
 在 300 个字符的相似度内，如果出现以下情况，DLP 策略 75% 确信它检测到这种类型的敏感信息：
   
-- 正则表达式`Regex_cyprus_eu_national_id_card`查找与模式匹配的内容。 
+- 正则表达式`Regex_cyprus_eu_national_id_card`找到与该模式匹配的内容。 
     
-- 从关键字`Keywords_cyprus_eu_national_id_card`找到。 
+- 找到了中`Keywords_cyprus_eu_national_id_card`的关键字。 
     
 ```
  
@@ -197,45 +197,45 @@ edinen grazhdanski nomer
 </Entity>
 ```
 
-### <a name="keywords"></a>Keywords
+### <a name="keywords"></a>关键字
 
 #### <a name="keywordscypruseunationalidcard"></a>Keywords_cyprus_eu_national_id_card
 
-身份证号码
+id 卡号
   
 国家/地区标识号
   
-个人标识号
+个人 id 号
   
-身份证号码
+标识卡号
   
-ΤΑΥΤΟΤΗΤΑΣ
+ταυτοτητασ
   
 ## <a name="czech-republic"></a>捷克共和国
 
-有关详细信息，请参阅中[查找敏感信息类型](what-the-sensitive-information-types-look-for.md)的部分"捷克语国家/地区的 Identity 号码"。
+有关详细信息, 请参阅[敏感信息类型查找的内容](what-the-sensitive-information-types-look-for.md)中的 "捷克国家身份证号码" 一节。
   
 ## <a name="denmark"></a>丹麦
 
-有关详细信息，请参阅中[查找敏感信息类型](what-the-sensitive-information-types-look-for.md)的部分"丹麦个人识别号"。
+有关详细信息, 请参阅[敏感信息类型查找的内容](what-the-sensitive-information-types-look-for.md)中的 "丹麦个人识别码" 一节。
   
 ## <a name="estonia"></a>爱沙尼亚
 
 ### <a name="format"></a>格式
 
-没有空格和分隔符 11 位数字
+11个数字, 无空格和分隔符
   
 ### <a name="pattern"></a>模式
 
 11 个数字：
   
-- 对应于性别和出生的 century 的一位数 (奇数号码男性、 偶数女; 1-2: 19 century; 3-4: 20 世纪; 5-6: 21 世纪)
+- 一种数字, 对应于性别和出生世纪 (奇数号男, 甚至是数字女; 1-2:19 世纪; 3-4:20 世纪; 5-6:21 世纪)
     
-- 对应于 (YYMMDD) 出生日期的 6 个数字
+- 六个数字, 对应于出生日期 (YYMMDD)
     
-- 对应于分隔人员在相同日期出生日期序列号的三个数字
+- 三个数字, 对应于将出生在同一日期的人员组成的序列号
     
-- 一个检查数字
+- 一个校验位
     
 ### <a name="checksum"></a>校验和
 
@@ -245,13 +245,13 @@ edinen grazhdanski nomer
 
 在 300 个字符的相似度内，如果出现以下情况，DLP 策略 85% 确信它检测到这种类型的敏感信息：
   
-- 该函数`Func_estonia_eu_national_id_card`查找与模式匹配的内容。 
+- 函数`Func_estonia_eu_national_id_card`找到与该模式匹配的内容。 
     
-- 从关键字`Keywords_estonia_eu_national_id_card`找到。 
+- 找到了中`Keywords_estonia_eu_national_id_card`的关键字。 
     
 在 300 个字符的相似度内，如果出现以下情况，DLP 策略 75% 确信它检测到这种类型的敏感信息：
   
-- 该函数`Func_estonia_eu_national_id_card`查找与模式匹配的内容。 
+- 函数`Func_estonia_eu_national_id_card`找到与该模式匹配的内容。 
     
 ```
  
@@ -266,19 +266,19 @@ edinen grazhdanski nomer
 </Entity>
 ```
 
-### <a name="keywords"></a>Keywords
+### <a name="keywords"></a>关键字
 
 #### <a name="keywordsestoniaeunationalidcard"></a>Keywords_estonia_eu_national_id_card
 
-个人识别码代码
+个人标识代码
   
-个人识别号
+个人标识号
   
 国家/地区标识号
   
 国家/地区号码
   
-个人标识号
+个人 id 号
   
 personalidnumber #
   
@@ -286,23 +286,23 @@ ik
   
 isikukood
   
-id kaart
+id-kaart
   
 ## <a name="finland"></a>芬兰
 
-有关详细信息，请参阅中[查找敏感信息类型](what-the-sensitive-information-types-look-for.md)的部分"芬兰国家/地区 ID"。
+有关详细信息, 请参阅[敏感信息类型查找的内容](what-the-sensitive-information-types-look-for.md)中的 "芬兰国 ID" 一节。
   
 ## <a name="france"></a>法国
 
-有关详细信息，请参阅中[查找敏感信息类型](what-the-sensitive-information-types-look-for.md)的部分"法国国家 ID 卡 (CNI)"。
+有关详细信息, 请参阅[敏感信息类型查找的内容](what-the-sensitive-information-types-look-for.md)中的 "法国国家 ID 卡 (CNI)" 一节。
   
 ## <a name="germany"></a>德国
 
-有关详细信息，请参阅中[查找敏感信息类型](what-the-sensitive-information-types-look-for.md)的部分"德国身份证编号"。
+有关详细信息, 请参阅[敏感信息类型查找的内容](what-the-sensitive-information-types-look-for.md)中的 "德国身份证号码" 一节。
   
 ## <a name="greece"></a>希腊
 
-有关详细信息，请参阅中[查找敏感信息类型](what-the-sensitive-information-types-look-for.md)的部分"希腊国家 ID 卡"。
+有关详细信息, 请参阅[敏感信息类型查找的内容](what-the-sensitive-information-types-look-for.md)中的 "希腊国家 ID 卡" 一节。
   
 ## <a name="hungary"></a>匈牙利
 
@@ -314,13 +314,13 @@ id kaart
 
 11 个数字：
   
--  对应于性别 （1-插头 2 女性、 其他号码也是可行市民出生日期之前 1900年或与双公民市民的） 的一位数 
+-  一种与性别对应的数字 (1--男, 2-母, 其他号码也适用于在两个公民前出生的公民的1900或公民) 
     
-- 对应于出生日期 (YYMMDD) 的 6 个数字
+- 与出生日期对应的6个数字 (YYMMDD)
     
-- 三个转成序列号对应的数字
+- 与序列号对应的三个数字
     
-- 一个检查数字
+- 一个校验位
     
 ### <a name="checksum"></a>校验和
 
@@ -330,13 +330,13 @@ id kaart
 
 在 300 个字符的相似度内，如果出现以下情况，DLP 策略 85% 确信它检测到这种类型的敏感信息：
   
-- 该函数`Func_hungary_eu_national_id_card`查找与模式匹配的内容。 
+- 函数`Func_hungary_eu_national_id_card`找到与该模式匹配的内容。 
     
-- 从关键字`Keywords_hungary_eu_national_id_card`找到。 
+- 找到了中`Keywords_hungary_eu_national_id_card`的关键字。 
     
 在 300 个字符的相似度内，如果出现以下情况，DLP 策略 75% 确信它检测到这种类型的敏感信息：
   
-- 该函数`Func_hungary_eu_national_id_card`查找与模式匹配的内容。 
+- 函数`Func_hungary_eu_national_id_card`找到与该模式匹配的内容。 
     
 ```
 <Entity id="419f449f-6d9d-4be1-a154-b531f7a91b41" patternsProximity="300" recommendedConfidence="75">
@@ -350,16 +350,16 @@ id kaart
 </Entity>
 ```
 
-### <a name="keywords"></a>Keywords
+### <a name="keywords"></a>关键字
 
 #### <a name="keywordshungaryeunationalidcard"></a>Keywords_hungary_eu_national_id_card
 
-个人识别号
+个人标识号
   
 identification number
 
   
-个人标识号
+个人 id 号
   
 személyazonosító igazolvány
   
@@ -367,27 +367,27 @@ személyazonosító igazolvány
 
 ### <a name="format"></a>格式
 
-字母、 数字和空间以指定的模式的九个字符组合
+指定模式中的字母、数字和空格的九个字符的组合
   
 ### <a name="pattern"></a>模式
 
-字母、 数字和空间以指定的模式的九个字符组合
+指定模式中的字母、数字和空格的九个字符的组合
   
-从到现在为止的 01 2013 年 1 月：
-  
--  七个数字  
-    
-- 一个检查数字
-    
-- 一个空格或大写字母"W"（区分大小写）
-    
-之前 01 2013 年 1 月：
+从01年1月2013到现在:
   
 -  七个数字  
     
-- 一个检查数字
+- 一个校验位
     
-- 一个空格或大写字母 （区分大小写）
+- 一个空格或大写的字母 "W" (区分大小写)
+    
+在01月1日之前1月 2013:
+  
+-  七个数字  
+    
+- 一个校验位
+    
+- 一个空格或大写字母 (区分大小写)
     
 ### <a name="checksum"></a>校验和
 
@@ -397,13 +397,13 @@ személyazonosító igazolvány
 
 在 300 个字符的相似度内，如果出现以下情况，DLP 策略 85% 确信它检测到这种类型的敏感信息：
   
-- 该函数查找与模式匹配的内容。
+- 函数找到与该模式匹配的内容。
     
-- 从关键字是找到。
+- 找到了中的关键字。
     
 在 300 个字符的相似度内，如果出现以下情况，DLP 策略 75% 确信它检测到这种类型的敏感信息：
   
-- 该函数查找与模式匹配的内容。
+- 函数找到与该模式匹配的内容。
     
 ```
  
@@ -418,24 +418,24 @@ személyazonosító igazolvány
 </Entity>
 ```
 
-### <a name="keywords"></a>Keywords
+### <a name="keywords"></a>关键字
 
 #### <a name="keywordsirelandeunationalidcard"></a>Keywords_ireland_eu_national_id_card
 
-个人公共服务号码
+个人公开服务号码
   
-pps 没有
+pps no
   
-收入和社会保险号码
+收入和社会保险电话号码
   
-rsi 没有
+rsi no
   
-个人识别号
+个人标识号
   
 identification number
 
   
-个人标识号
+个人 id 号
   
 uimhir phearsanta seirbhíse poiblí
   
@@ -445,25 +445,25 @@ uimh。psp
 
 ### <a name="format"></a>格式
 
-字母和指定的模式中数字位数的 16 个字符组合
+在指定模式中, 由16个字符组成的字母和数字的组合
   
 ### <a name="pattern"></a>模式
 
-16 个字符字母和数字的组合：
+字母和数字的16个字符的组合:
   
-- 对应于系列名称中的前三个辅音的三个字母
+- 与系列名称中的前三个辅音对应的三个字母
     
-- 对应于第一、 第三个和第四个的三个字母辅音中第一个名称
+- 与名字中的第一个、第三个和第四个辅音对应的三个字母
     
-- 两位数的最后一个对应出生年份的数字
+- 与出生年份的最后一个数字对应的两个数字
     
-- 举行的出生对应于的字母的一个字母 — 字母使用以字母顺序列出，但仅字母 A 到 E、 H、 L、 M、 P、 R T 到使用 （即年 1 月是 A 和年 10 月为 R）
+- 一个与出生月份的字母对应的字母–字母按字母顺序使用, 但仅使用字母 A 到 E、H、L、M、P、R 和 T (因此, 一月为 a, 10 月为 r)
     
-- 对应于的出生日期的两位数 — 为了区分 gender，40 添加到女性出生日期
+- 与出生月份的某一天对应的两个数字, 为了区分 genders, 40 已添加到女性的出生日。
     
-- 对应于特定于此人出生上级主管机构区号的四位数字 （国家/地区范围代码使用外的国家/地区）
+- 与专用于 municipality 的区域代码相对应的四个数字 (国家/地区内的国家/地区代码适用于外国国家)
     
-- 奇偶校验的一位数
+- 一个奇偶校验数字
     
 ### <a name="checksum"></a>校验和
 
@@ -473,13 +473,13 @@ uimh。psp
 
 在 300 个字符的相似度内，如果出现以下情况，DLP 策略 85% 确信它检测到这种类型的敏感信息：
   
-- 该函数`Func_italy_eu_national_id_card`查找与模式匹配的内容。 
+- 函数`Func_italy_eu_national_id_card`找到与该模式匹配的内容。 
     
-- 从关键字`Keywords_italy_eu_national_id_card`找到。 
+- 找到了中`Keywords_italy_eu_national_id_card`的关键字。 
     
 在 300 个字符的相似度内，如果出现以下情况，DLP 策略 75% 确信它检测到这种类型的敏感信息：
   
-- 该函数`Func_italy_eu_national_id_card`查找与模式匹配的内容。 
+- 函数`Func_italy_eu_national_id_card`找到与该模式匹配的内容。 
     
 ```
 <Entity id="419f449f-6d9d-4be1-a154-b531f7a91b41" patternsProximity="300" recommendedConfidence="75">
@@ -493,7 +493,7 @@ uimh。psp
 </Entity>
 ```
 
-### <a name="keywords"></a>Keywords
+### <a name="keywords"></a>关键字
 
 #### <a name="keywordsitalyeunationalidcard"></a>Keywords_italy_eu_national_id_card
 
@@ -501,13 +501,13 @@ uimh。psp
   
 个人代码编号
   
-个人证书号
+个人证书号码
   
 会计代码
   
 personalcodeno #
   
-个人标识号
+个人 id 号
   
 个人 id 代码
   
@@ -527,19 +527,19 @@ codice fiscale
 
 ### <a name="format"></a>格式
 
-11 位数字并且以指定格式连字符
+11位数字和指定格式的连字符
   
 ### <a name="pattern"></a>模式
 
-11 位数字和连字符：
+11个数字和一个连字符:
   
--  对应于出生日期月日的 6 个数字 
+-  与出生日期对应的6个数字 (DDMMYY) 
     
 - 一个连字符 
     
-- 对应于出生 （19 century"0"、"1"的 20 世纪和"2"的 21 世纪） century 的一位数
+- 一个数字, 对应于出生世纪 ("0" 表示19世纪, "1" 表示20世纪, "2" 表示21世纪)
     
-- 四位数字，随机生成
+- 四个数字, 随机生成
     
 ### <a name="checksum"></a>校验和
 
@@ -549,13 +549,13 @@ codice fiscale
 
 在 300 个字符的相似度内，如果出现以下情况，DLP 策略 85% 确信它检测到这种类型的敏感信息：
   
-- 该函数`Func_latvia_eu_national_id_card`查找与模式匹配的内容。 
+- 函数`Func_latvia_eu_national_id_card`找到与该模式匹配的内容。 
     
-- 从关键字`Keywords_latvia_eu_national_id_card`找到。 
+- 找到了中`Keywords_latvia_eu_national_id_card`的关键字。 
     
 在 300 个字符的相似度内，如果出现以下情况，DLP 策略 75% 确信它检测到这种类型的敏感信息：
   
-- 该函数`Func_latvia_eu_national_id_card`查找与模式匹配的内容。 
+- 函数`Func_latvia_eu_national_id_card`找到与该模式匹配的内容。 
     
 ```
 <Entity id="419f449f-6d9d-4be1-a154-b531f7a91b41" patternsProximity="300" recommendedConfidence="75">
@@ -569,7 +569,7 @@ codice fiscale
 </Entity>
 ```
 
-### <a name="keywords"></a>Keywords
+### <a name="keywords"></a>关键字
 
 #### <a name="keywordslatviaeunationalidcard"></a>Keywords_latvia_eu_national_id_card
 
@@ -577,11 +577,11 @@ codice fiscale
   
 个人代码编号
   
-个人证书号
+个人证书号码
   
 personalcodeno #
   
-个人标识号
+个人 id 号
   
 个人 id 代码
   
@@ -591,19 +591,19 @@ personalcodeno #
 
 ### <a name="format"></a>格式
 
-没有空格和分隔符 11 位数字
+11个数字, 无空格和分隔符
   
 ### <a name="pattern"></a>模式
 
-没有空格和分隔符 11 位数字：
+11个数字, 不含空格和分隔符:
   
-- 对应于此人的性别和出生的 century 的一位数
+- 一个与人的性别和出生世纪对应的数字
     
--  对应于出生日期 (YYMMDD) 的 6 个数字 
+-  与出生日期对应的6个数字 (YYMMDD) 
     
-- 出生日期序列号对应的三个数字
+- 与出生日期的序列号对应的三个数字
     
-- 一个检查数字
+- 一个校验位
     
 ### <a name="checksum"></a>校验和
 
@@ -613,13 +613,13 @@ personalcodeno #
 
 在 300 个字符的相似度内，如果出现以下情况，DLP 策略 85% 确信它检测到这种类型的敏感信息：
   
-- 该函数`Func_lithuania_eu_national_id_card`查找与模式匹配的内容。 
+- 函数`Func_lithuania_eu_national_id_card`找到与该模式匹配的内容。 
     
-- 从关键字`Keywords_lithuania_eu_national_id_card`找到。 
+- 找到了中`Keywords_lithuania_eu_national_id_card`的关键字。 
     
 在 300 个字符的相似度内，如果出现以下情况，DLP 策略 75% 确信它检测到这种类型的敏感信息：
   
-- 该函数`Func_lithuania_eu_national_id_card`查找与模式匹配的内容。 
+- 函数`Func_lithuania_eu_national_id_card`找到与该模式匹配的内容。 
     
 ```
  
@@ -634,7 +634,7 @@ personalcodeno #
 </Entity>
 ```
 
-### <a name="keywords"></a>Keywords
+### <a name="keywords"></a>关键字
 
 #### <a name="keywordslithuaniaeunationalidcard"></a>Keywords_lithuania_eu_national_id_card
 
@@ -644,7 +644,7 @@ personalcodeno #
   
 公民服务号码
   
-唯一标识号码
+唯一标识号
   
 uniqueidentityno #
   
@@ -660,35 +660,35 @@ unikalus identifikavimo kodas
   
 asmens kodas。
   
-## <a name="luxemburg"></a>卢森堡
+## <a name="luxemburg"></a>Luxemburg
 
 ### <a name="format"></a>格式
 
-没有空格和分隔符 11 位数字
+11个数字, 无空格和分隔符
   
 ### <a name="pattern"></a>模式
 
 11 个数字
   
-- 对应于此人的性别和出生的 century 的一位数
+- 一个与人的性别和出生世纪对应的数字
     
--  对应于出生日期 (YYMMDD) 的 6 个数字 
+-  与出生日期对应的6个数字 (YYMMDD) 
     
-- 出生日期序列号对应的三个数字
+- 与出生日期的序列号对应的三个数字
     
-- 一个检查数字
+- 一个校验位
     
 ### <a name="checksum"></a>校验和
 
 不适用
   
-### <a name="definition"></a>定义
+### <a name="definition"></a>Definition
 
 在 300 个字符的相似度内，如果出现以下情况，DLP 策略 75% 确信它检测到这种类型的敏感信息：
   
-- 正则表达式`Regex_luxemburg_eu_national_id_card`查找与模式匹配的内容。 
+- 正则表达式`Regex_luxemburg_eu_national_id_card`找到与该模式匹配的内容。 
     
-- 从关键字`Keywords_luxemburg_eu_national_id_card`找到。 
+- 找到了中`Keywords_luxemburg_eu_national_id_card`的关键字。 
     
 ```
 <Entity id="419f449f-6d9d-4be1-a154-b531f7a91b41" patternsProximity="300" recommendedConfidence="75">
@@ -699,13 +699,13 @@ asmens kodas。
 </Entity>
 ```
 
-### <a name="keywords"></a>Keywords
+### <a name="keywords"></a>关键字
 
 #### <a name="keywordsluxemburgeunationalidcard"></a>Keywords_luxemburg_eu_national_id_card
 
 个人 id
   
-个人标识号
+个人 id 号
   
 personalidno #
   
@@ -721,9 +721,9 @@ uniqueidkey #
   
 单个代码
   
-单个 id
+个人 id
   
-eindeutige id nummer
+eindeutige id-nummer
   
 eindeutige id
   
@@ -745,27 +745,27 @@ eindeutigeid #
   
 ### <a name="pattern"></a>模式
 
-七位数字后跟一个字母：
+七位数字后跟一个字母:
   
 -  七个数字  
     
-- 一个大写字母 （区分大小写）
+- 一个大写字母 (区分大小写)
     
 ### <a name="checksum"></a>校验和
 
 不适用
   
-### <a name="definition"></a>定义
+### <a name="definition"></a>Definition
 
 在 300 个字符的相似度内，如果出现以下情况，DLP 策略 75% 确信它检测到这种类型的敏感信息：
   
-- 正则表达式`Regex_malta_eu_national_id_card`查找与模式匹配的内容。 
+- 正则表达式`Regex_malta_eu_national_id_card`找到与该模式匹配的内容。 
     
-- 从关键字`Keywords_malta_eu_national_id_card`找到。 
+- 找到了中`Keywords_malta_eu_national_id_card`的关键字。 
     
 在 300 个字符的相似度内，如果出现以下情况，DLP 策略 65% 确信它检测到这种类型的敏感信息：
   
-- 正则表达式`Regex_malta_eu_national_id_card`查找与模式匹配的内容。 
+- 正则表达式`Regex_malta_eu_national_id_card`找到与该模式匹配的内容。 
     
 ```
  
@@ -780,7 +780,7 @@ eindeutigeid #
 </Entity>
 ```
 
-### <a name="keywords"></a>Keywords
+### <a name="keywords"></a>关键字
 
 #### <a name="keywordsmaltaeunationalidcard"></a>Keywords_malta_eu_national_id_card
 
@@ -790,23 +790,23 @@ eindeutigeid #
   
 公民服务号码
   
-唯一标识号码
+唯一标识号
   
 uniqueidentityno #
   
 kodiċi numerali personali
   
-numru 选项卡 identifikazzjoni uniku
+numru ta "identifikazzjoni uniku
   
-numru tas servizz taċ ċittadin
+numru tas-servizz taċ-ċittadin
   
-numru 选项卡 identità uniku
+numru ta "identità uniku
   
 ## <a name="netherlands"></a>荷兰
 
 ### <a name="format"></a>格式
 
-不含空格或分隔符的九个数字
+9个数字, 不带空格或分隔符
   
 ### <a name="pattern"></a>模式
 
@@ -820,13 +820,13 @@ numru 选项卡 identità uniku
 
 在 300 个字符的相似度内，如果出现以下情况，DLP 策略 85% 确信它检测到这种类型的敏感信息：
   
-- 该函数`Func_netherlands_eu_national_id_card`查找与模式匹配的内容。 
+- 函数`Func_netherlands_eu_national_id_card`找到与该模式匹配的内容。 
     
-- 从关键字是找到。
+- 找到了中的关键字。
     
 在 300 个字符的相似度内，如果出现以下情况，DLP 策略 75% 确信它检测到这种类型的敏感信息：
   
-- 该函数`Func_netherlands_eu_national_id_card`查找与模式匹配的内容。 
+- 函数`Func_netherlands_eu_national_id_card`找到与该模式匹配的内容。 
     
 ```
  
@@ -841,7 +841,7 @@ numru 选项卡 identità uniku
 </Entity>
 ```
 
-### <a name="keywords"></a>Keywords
+### <a name="keywords"></a>关键字
 
 #### <a name="keywordsnetherlandseunationalidcard"></a>Keywords_netherlands_eu_national_id_card
 
@@ -851,13 +851,13 @@ numru 选项卡 identità uniku
   
 公民服务号码
   
-唯一标识号码
+唯一标识号
   
 uniqueidentityno #
   
 bsn
   
-bsn #
+bsn
   
 persoonlijke numerieke 代码
   
@@ -869,17 +869,17 @@ uniek identiteitsnummer
   
 ## <a name="poland"></a>波兰
 
-有关详细信息，请参阅中[查找敏感信息类型](what-the-sensitive-information-types-look-for.md)的部分"波兰国家/地区 ID (PESEL)"。
+有关详细信息, 请参阅[敏感信息类型查找的内容](what-the-sensitive-information-types-look-for.md)中的 "波兰国家 ID (PESEL)" 一节。
   
 ## <a name="portugal"></a>葡萄牙
 
-有关详细信息，请参阅中[查找敏感信息类型](what-the-sensitive-information-types-look-for.md)的部分"葡萄牙公民卡号"。
+有关详细信息, 请参阅[敏感信息类型查找的内容](what-the-sensitive-information-types-look-for.md)中的 "葡萄牙公民卡片号" 部分。
   
 ## <a name="romania"></a>罗马尼亚
 
 ### <a name="format"></a>格式
 
-13 没有空格和分隔符的数字
+13位数, 不含空格和分隔符
   
 ### <a name="pattern"></a>模式
 
@@ -893,13 +893,13 @@ uniek identiteitsnummer
 
 在 300 个字符的相似度内，如果出现以下情况，DLP 策略 85% 确信它检测到这种类型的敏感信息：
   
-- 该函数`Func_romania_eu_national_id_card`查找与模式匹配的内容。 
+- 函数`Func_romania_eu_national_id_card`找到与该模式匹配的内容。 
     
-- 从关键字`Keywords_romania_eu_national_id_card`找到。 
+- 找到了中`Keywords_romania_eu_national_id_card`的关键字。 
     
 在 300 个字符的相似度内，如果出现以下情况，DLP 策略 75% 确信它检测到这种类型的敏感信息：
   
-- 该函数`Func_romania_eu_national_id_card`查找与模式匹配的内容。 
+- 函数`Func_romania_eu_national_id_card`找到与该模式匹配的内容。 
     
 ```
  
@@ -914,7 +914,7 @@ uniek identiteitsnummer
 </Entity>
 ```
 
-### <a name="keywords"></a>Keywords
+### <a name="keywords"></a>关键字
 
 #### <a name="keywordsromaniaeunationalidcard"></a>Keywords_romania_eu_national_id_card
 
@@ -928,21 +928,21 @@ cnp #
   
 固定
   
-pin #
+针
   
 保险号
   
 insurancenumber #
   
-唯一标识号码
+唯一标识号
   
 uniqueidentityno #
   
-cod 数值个人
+付款的个人数字
   
-货 identificare 个人到付款
+货到 identificare 个人
   
-cod unic identificare
+货到付款 unic identificare
   
 număr 个人 unic
   
@@ -960,11 +960,11 @@ numărpersonalunic #
 
 ### <a name="format"></a>格式
 
-包含一个反斜杠 10 位数字
+10个数字, 包含一个反斜杠
   
 ### <a name="pattern"></a>模式
 
-包含一个反斜杠 10 位数字：
+10个数字, 包含一个反斜杠:
   
 ### <a name="checksum"></a>校验和
 
@@ -974,13 +974,13 @@ numărpersonalunic #
 
 在 300 个字符的相似度内，如果出现以下情况，DLP 策略 85% 确信它检测到这种类型的敏感信息：
   
-- 该函数`Func_slovakia_eu_national_id_card`查找与模式匹配的内容。 
+- 函数`Func_slovakia_eu_national_id_card`找到与该模式匹配的内容。 
     
-- 从关键字`Keywords_slovakia_eu_national_id_card`找到。 
+- 找到了中`Keywords_slovakia_eu_national_id_card`的关键字。 
     
 在 300 个字符的相似度内，如果出现以下情况，DLP 策略 75% 确信它检测到这种类型的敏感信息：
   
-- 该函数`Func_slovakia_eu_national_id_card`查找与模式匹配的内容。 
+- 函数`Func_slovakia_eu_national_id_card`找到与该模式匹配的内容。 
     
 ```
  
@@ -995,7 +995,7 @@ numărpersonalunic #
 </Entity>
 ```
 
-### <a name="keywords"></a>Keywords
+### <a name="keywords"></a>关键字
 
 #### <a name="keywordsslovakiaeunationalidcard"></a>Keywords_slovakia_eu_national_id_card
 
@@ -1003,26 +1003,26 @@ numărpersonalunic #
   
 国家/地区标识号
   
-个人识别号
+个人标识号
   
 social security number
 
   
 nationalnumber #
   
-ssn #
+ssn
   
 ssn
   
 国家/地区号码
   
-个人标识号
+个人 id 号
   
 personalidnumber #
   
 rč
   
-rodné číslo
+rodnéčíslo
   
 rodne cislo
   
@@ -1030,19 +1030,19 @@ rodne cislo
 
 ### <a name="format"></a>格式
 
-不含空格或分隔符 13 数字
+13位数, 不含空格或分隔符
   
 ### <a name="pattern"></a>模式
 
-在指定的模式的 13 数字：
+指定模式中的13个数字:
   
--  对应于出生日期 (DDMMLLL)，其中，"LLL"对应于上次出生一年中的三个数字的七个数字 
+-  与出生日期 (DDMMLLL) 对应的七位数, 其中 "LLL" 对应于出生年份的后三个数字 
     
-- 对应于出生的区域的两位数
+- 与出生区域对应的两个数字
     
-- 人员在同一天 (000-499 插孔) 和女性为 500-999 出生日期对应的性别和序列号组合的三个数字
+- 三个数字, 对应于出生在同一天的人的性别和序列号组合 (000-499 的男和500-999 的女)
     
-- 一个检查数字
+- 一个校验位
     
 ### <a name="checksum"></a>校验和
 
@@ -1052,13 +1052,13 @@ rodne cislo
 
 在 300 个字符的相似度内，如果出现以下情况，DLP 策略 85% 确信它检测到这种类型的敏感信息：
   
-- 该函数`Func_slovenia_eu_national_id_card`查找与模式匹配的内容。 
+- 函数`Func_slovenia_eu_national_id_card`找到与该模式匹配的内容。 
     
-- 从关键字`Keywords_slovenia_eu_national_id_card`找到。 
+- 找到了中`Keywords_slovenia_eu_national_id_card`的关键字。 
     
 在 300 个字符的相似度内，如果出现以下情况，DLP 策略 75% 确信它检测到这种类型的敏感信息：
   
-- 该函数`Func_slovenia_eu_national_id_card`查找与模式匹配的内容。 
+- 函数`Func_slovenia_eu_national_id_card`找到与该模式匹配的内容。 
     
 ```
  
@@ -1073,7 +1073,7 @@ rodne cislo
 </Entity>
 ```
 
-### <a name="keywords"></a>Keywords
+### <a name="keywords"></a>关键字
 
 #### <a name="keywordssloveniaeunationalidcard"></a>Keywords_slovenia_eu_national_id_card
 
@@ -1081,9 +1081,9 @@ rodne cislo
   
 唯一标识号
   
-注册的唯一编号
+唯一注册号码
   
-唯一标识号码
+唯一标识号
   
 uniqueidentityno #
   
@@ -1101,27 +1101,27 @@ emšo
 
 ### <a name="format"></a>格式
 
-一个字符后跟七位数字
+七位数字后跟一个字符
   
 ### <a name="pattern"></a>模式
 
-一个字符后跟七位数字
+七位数字后跟一个字符
   
 - 七个数字 
     
-- 一个数字或字母 （不区分大小写）
+- 一个数字或字母 (不区分大小写)
     
 ### <a name="checksum"></a>校验和
 
 不适用
   
-### <a name="definition"></a>定义
+### <a name="definition"></a>Definition
 
 在 300 个字符的相似度内，如果出现以下情况，DLP 策略 75% 确信它检测到这种类型的敏感信息：
   
-- 正则表达式`Regex_spain_eu_national_id_card`查找与模式匹配的内容。 
+- 正则表达式`Regex_spain_eu_national_id_card`找到与该模式匹配的内容。 
     
-- 从关键字`Keywords_spain_eu_national_id_card"`找到。 
+- 找到了中`Keywords_spain_eu_national_id_card"`的关键字。 
     
 ```
  
@@ -1133,7 +1133,7 @@ emšo
 </Entity>
 ```
 
-### <a name="keywords"></a>Keywords
+### <a name="keywords"></a>关键字
 
 #### <a name="keywordsspaineunationalidcard"></a>Keywords_spain_eu_national_id_card
 
@@ -1141,23 +1141,23 @@ dni
   
 国家/地区标识号
   
-国家/地区的 identity 号码
+国家/地区身份证号码
   
 保险号
   
-个人识别号
+个人标识号
   
-国家/地区的标识
+国家标识
   
-个人标识无
+个人标识编号
   
-唯一标识号码
+唯一标识号
   
 nationalidno #
   
-uniqueid #
+uniqueid
   
-dni #
+dni
   
 nationalid #
   
@@ -1183,7 +1183,7 @@ identidadúnico #
   
 ## <a name="sweden"></a>瑞典
 
-有关详细信息，请参阅中[查找敏感信息类型](what-the-sensitive-information-types-look-for.md)的部分"瑞典国家/地区 ID"。
+有关详细信息, 请参阅[敏感信息类型查找的内容](what-the-sensitive-information-types-look-for.md)中的 "瑞典国家 ID" 一节。
   
 ## <a name="see-also"></a>另请参阅
 

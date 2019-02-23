@@ -6,76 +6,76 @@ manager: laurawi
 ms.date: 02/13/2019
 ms.audience: ITPro
 ms.topic: article
-ms.service: o365-administration
+ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid:
 - MET150
 - MOE150
 ms.assetid: 3387bfc3-028a-42f4-8133-4cbecfaab812
 ms.collection: M365-security-compliance
-description: 了解 Office 365 威胁智能可以帮助您的组织检测入侵和威胁，快速缓解和恢复的威胁。
-ms.openlocfilehash: c049e6f811eec8a30eb2b94361f8cdcbdaa8ac49
-ms.sourcegitcommit: efccf5b4f22d34a9674bc55ebf3d88bc8bda2972
+description: 了解 Office 365 威胁智能如何帮助您的组织检测入侵和威胁, 并快速缓解和恢复威胁。
+ms.openlocfilehash: c2c601c7828e947c6cfa1c91723a19acee9e09ee
+ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/14/2019
-ms.locfileid: "29995363"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "30213692"
 ---
 # <a name="keep-your-office-365-users-safe-with-office-365-threat-intelligence"></a>使用 Office 365 威胁智能确保 Office 365 用户安全
 
 ## <a name="overview"></a>概述
 
-您知道哪些 Office 365 用户受到攻击中，或糟-泄露？知道如何缓解和面向您的用户的攻击恢复？您知道您可以这样做完全已对您在 Office 365 中可用的安全功能吗？ 
+您是否知道您的 Office 365 用户受攻击或更糟的威胁？知道如何缓解和恢复面向用户的攻击？您是否知道您可以使用 Office 365 中已有的安全功能完全完成此操作？ 
   
-[Office 365 威胁智能](office-365-ti.md)是一套在 Office 365 E5 订阅包含的功能。Office 365 威胁智能已帮助减少的平均时间社会工程事件的分辨率通过 80%，并增加了案例吞吐量 37%每月与以前的 2 个季度相比的 Microsoft IT ！ 
+[office 365 威胁智能](office-365-ti.md)是 office 365 E5 订阅中包含的一系列功能。Office 365 威胁智能已帮助 Microsoft IT 将社会工程活动的平均解决时间降低了 80%, 并将每月的大小写提高了 200%, 与前两个季度相比! 
 
 > [!IMPORTANT]
-> 开始在年 2 月 2019年和以后的几个月内推出，Office 365 威胁智能变得 Office 365 高级威胁保护计划 2，与其他威胁保护功能。若要了解详细信息，请参阅[Office 365 高级威胁保护计划和定价](https://products.office.com/exchange/advance-threat-protection)和[Office 365 高级威胁 Protection Service Description](https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description)。
+> 从2019年2月起开始, 在接下来的几个月中, office 365 威胁情报将成为 office 365 高级威胁防护计划 2, 其中包含其他威胁防护功能。若要了解详细信息, 请参阅[office 365 高级威胁防护计划和定价](https://products.office.com/exchange/advance-threat-protection)以及[Office 365 高级威胁防护服务说明](https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description)。
   
-我们最近添加了新功能以帮助提高如何检测和恢复威胁 ！下面是如何更新的威胁智能服务如何使您更加高效的快速演练一下。
+我们最近添加了新功能, 可帮助改进检测和恢复威胁的方式!下面简单介绍了更新后的威胁智能服务如何提高效率。
   
 ## <a name="detect-intrusions-and-threats"></a>检测入侵和威胁
 
-[资源管理器](use-explorer-in-security-and-compliance.md)（也称为威胁资源管理器） 可帮助安全管理员和分析师确定并了解是您企业中处于活动状态，因为即使最复杂的安全设置可以避开看起来无关紧要的用户配置，如安全威胁发件人白名单中。资源管理器可帮助 Office 365 全局或安全 admins 快速确定是否用户了受到威胁，如恶意软件或网络钓鱼诈骗。这有助于确定优先级其用户最位于风险的威胁和必要的响应。 
+[浏览器](use-explorer-in-security-and-compliance.md)(也称为 "威胁浏览器") 可帮助安全管理员和分析师识别和理解企业中的活动威胁, 因为看似无害的用户配置 (如安全) 可能会规避最复杂的安全设置发件人白名单。资源管理器可帮助 Office 365 全局或安全管理员快速确定用户是否已被威胁 (如恶意软件或网络钓鱼诈骗) 所危害。这有助于确定哪些用户最面临威胁的风险以及必需的响应的优先级。 
   
-资源管理器还有助于 admins 导航用户和邮件之间的关系。知道已损坏的特定邮件的？搜索以查看哪些用户接收邮件，然后，按照的一系列事件，请参阅这些用户又做了什么。
+资源管理器还可帮助管理员导航用户和邮件之间的关系。知道有误的特定邮件吗？搜索它以查看哪些用户收到了邮件, 然后按照一系列事件进行操作, 并查看这些用户接下来的操作。
 
-如果您没有威胁智能，[立即尝试](https://aka.ms/tryo365threatintel3)！并[了解更多有关 Office 365 威胁智能](https://aka.ms/readmoreabouto365threatintel)。
+如果尚无威胁智能, 请[立即试用](https://aka.ms/tryo365threatintel3)!并[了解有关 Office 365 威胁智能的详细信息](https://aka.ms/readmoreabouto365threatintel)。
   
-![在 Office 365 中，按恶意软件系列彩色编码的威胁资源管理器的屏幕截图](media/591338dd-252a-437d-b5f2-87aa42e74b0c.png)
+![Office 365 中的威胁资源管理器的屏幕截图, 由恶意软件系列进行颜色编码](media/591338dd-252a-437d-b5f2-87aa42e74b0c.png)
   
-## <a name="quickly-mitigate-and-recover-from-threats"></a>快速缓解和恢复的威胁
+## <a name="quickly-mitigate-and-recover-from-threats"></a>快速缓解威胁并从威胁中恢复
 
-一旦安全管理员确定可疑或恶意最新动态其租户中的内容，它们可以快速包含并响应**事件框架**的威胁。组不需要的邮件通过一次单击，并快速从用户的邮箱中删除电子邮件。 
+一旦安全管理员发现了其租户中发生可疑或恶意的问题, 他们就可以使用**事件框架**快速包含和响应该威胁。通过单击对不需要的邮件进行分组并快速删除用户邮箱中的电子邮件。 
   
- **更新：** 我们最近已添加，能够直接从事件的框架中删除 （软或硬删除） 电子邮件。以前管理员只能到用户的垃圾邮件文件夹，其中用户无法恢复项目移动邮件。新发布的删除功能，您现在可以确保恶意或不需要的邮件永久删除。 
+ **更新:** 我们最近添加了直接从事件框架中删除 (软删除或硬删除) 电子邮件的功能。以前的管理员只能将邮件移动到用户的垃圾邮件文件夹, 用户可以在那里恢复项目。使用新的已发布的删除功能, 现在可以确保永久删除恶意或不需要的邮件。 
   
-如果您没有威胁智能，[立即尝试](https://aka.ms/tryo365threatintel3)！并[了解更多有关 Office 365 威胁智能](https://aka.ms/readmoreabouto365threatintel)。
+如果尚无威胁智能, 请[立即试用](https://aka.ms/tryo365threatintel3)!并[了解有关 Office 365 威胁智能的详细信息](https://aka.ms/readmoreabouto365threatintel)。
   
-![电子邮件事故修正列表的屏幕截图](media/9d8452d3-d8d2-4b26-81f9-76396e08dd17.png)
+![事件修正的电子邮件列表的屏幕截图](media/9d8452d3-d8d2-4b26-81f9-76396e08dd17.png)
   
-## <a name="leverage-the-threat-telemetry-of-microsoft"></a>利用 Microsoft 的威胁遥测数据
+## <a name="leverage-the-threat-telemetry-of-microsoft"></a>利用 Microsoft 的威胁遥测
 
-Office 365 威胁智能被支持与 Microsoft 智能安全图形中的数据。此图获取最新的威胁信号，从多 1 亿 Windows 设备、 450 亿每月 Azure 登录和 Office 365 中 400 亿每月的电子邮件。此无与伦比的威胁信号是什么提供到客户租户的至关重要的管理员和安全分析师进行全面了解影响其组织的威胁的全面了解。 
+Office 365 威胁智能使用 Microsoft 智能安全图形中的数据提供支持。graph 从 1000000000 Windows 设备、450000000000每月 Azure 登录和 400000000000 Office 365 中的每月电子邮件获取最新的威胁信号。这一无与伦比的威胁信号是为管理员和安全分析员提供了对影响其组织的威胁的完整视图的客户租户的广泛可见性。 
   
-## <a name="more-to-come"></a>更多内容
+## <a name="more-to-come"></a>更多要推出
 
-以下是 Office 365 威胁智能如何帮助您保护您的企业只是一些示例 ！在接下来的几周我们要添加到产品包括进行了大幅增强：
+以下是有关 Office 365 威胁智能如何帮助您保护企业安全的一些示例。在接下来的几周中, 我们将向产品中添加重大增强功能, 包括:
   
-- 提供深入有潜在危险对 Exchange Online 电子邮件和 SharePoint Online 文档所执行的操作
+- 提供对 Exchange online 电子邮件和 SharePoint online 文档执行的可能有风险的操作的见解
     
-- 提供深入恶意网络钓鱼已发送给用户的电子邮件，包括一些有可能已接收和它们已 weaponized 之前阅读用户
+- 提供对已发送给用户的恶意网络钓鱼电子邮件的见解, 包括可能已由用户在 weaponized 之前收到和阅读的一些电子邮件
     
-- 增加一的操作管理员可以采取响应事件
+- 增加管理员可对事件做出响应所需采取的一组操作
     
-## <a name="why-threat-intelligence"></a>为什么威胁智能？
+## <a name="why-threat-intelligence"></a>为什么要进行威胁智能？
 
-Gartner 评估，在通过 $90B 表达 2017年上花费了网络安全。Sid Deshpande，主体的信息检索分析师在 Gartner，括在引号作为说，"检测和响应...业界 shift 发送清除邮件保护是没有意义，除非它绑定到检测和响应的功能。"威胁智能是每个企业项目组合的服务的关键部分，可使用作为独立服务或作为 Office 365 E5 的一部分。
+Gartner 估计在2017中仅限 $ 90B 用在 cybersecurity 上。Sid Deshpande (Gartner 的主要研究分析师) 的报价如下所示: "业界转向检测和响应的方式 .。。发送清除阻止的 futile, 除非将其绑定到检测和响应功能。威胁智能是每个企业的一系列服务中的一个重要组成部分, 可作为独立服务或作为 Office 365 E5 的一部分使用。
   
-## <a name="whats-next"></a>什么是下一步
+## <a name="whats-next"></a>接下来做什么
 
-- 在此录制会话中了解有关 Office 365 威胁智能：[的与 Office 365 威胁智能事件进行提前保持](https://myignite.microsoft.com/videos/53723)
+- 详细了解此录制的会话中的 Office 365 威胁智能:[使用 Office 365 威胁智能保持在 Cyberattacks 之前](https://myignite.microsoft.com/videos/53723)
     
-- [试用 Office 365 威胁智能现在](https://aka.ms/tryo365threatintel3)或开始 Office E5 试用版今天 ！ 
+- [立即试用 office 365 威胁智能](https://aka.ms/tryo365threatintel3)或立即开始你的 office E5 试用版! 
     
 

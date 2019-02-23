@@ -1,7 +1,7 @@
 ---
 title: 抵制发送到 Office 365 的垃圾邮件
-ms.author: krowley
-author: kccross
+ms.author: tracyp
+author: MSFTTracyP
 manager: laurawi
 ms.date: 12/9/2016
 ms.audience: ITPro
@@ -12,13 +12,15 @@ localization_priority: Normal
 search.appverid:
 - MET150
 ms.assetid: 5fd7d05b-96db-456f-81d6-1ac0e5bff530
+ms.collection:
+- M365-security-compliance
 description: Microsoft 的电子邮件安全路线图包括不匹配的跨产品方法。跨 Microsoft 电子邮件平台应用 Exchange Online Protection (EOP) 反垃圾邮件和反网络钓鱼筛选技术，以便为用户提供整个网络的最新反垃圾和反网络钓鱼工具及创新。 EOP 的目标是提供全面且可用的电子邮件服务，以帮助用户检测垃圾邮件、诈骗电子邮件威胁（网络钓鱼）和恶意软件，并免受其侵扰。
-ms.openlocfilehash: d4047e373b7808fe4b30dd23a1e7486ee7eb5a66
-ms.sourcegitcommit: e9dca2d6a7838f98bb7eca127fdda2372cda402c
+ms.openlocfilehash: b4a7f581792922abdf92d37558ebbbbb8947a978
+ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/21/2018
-ms.locfileid: "23002871"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "30216562"
 ---
 # <a name="fighting-junk-email-sent-to-office-365"></a>抵制发送到 Office 365 的垃圾邮件
 
@@ -44,7 +46,7 @@ EOP 提供了大量步骤，以最大程度减少垃圾邮件对我们用户的�
   
 #### <a name="eop-filters"></a>EOP 筛选器
 
-反垃圾邮件筛选技术，除了 EOP 还使系统管理员能够设置筛选器级别来进一步自定义电子邮件传递到这些用户帐户。管理员可以向安全发件人和域列表轻松添加发件人或域的名称，以便从发件人或域的电子邮件永远不会视为垃圾邮件的内容无论。有关信息，请参阅[安全发件人和阻止发件人列表在 Exchange Online](safe-sender-and-blocked-sender-lists-faq.md)。
+除了反垃圾邮件筛选技术以外, EOP 还为系统管理员提供了设置筛选器级别的功能, 以进一步自定义将电子邮件传递给其用户帐户的能力。管理员可以轻松地将发件人或域名添加到 "安全发件人和域" 列表, 这样, 无论邮件的内容如何, 来自该发件人或域的电子邮件永远不会被视为垃圾邮件。有关信息, 请参阅[Exchange Online 中的安全发件人和阻止的发件人列表](safe-sender-and-blocked-sender-lists-faq.md)。
   
 ### <a name="phishing-protection"></a>网络钓鱼防护
 

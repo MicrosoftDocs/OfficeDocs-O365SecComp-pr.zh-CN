@@ -6,54 +6,54 @@ manager: laurawi
 ms.date: 5/14/2018
 ms.audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: Strat_O365_IP
 search.appverid:
 - MOE150
 - MET150
 ms.assetid: 1adffc35-38e5-4f7d-8495-8e0e8721f377
-description: 使用筛选以让您的 Office 365 组织中的搜索邮箱和网站的子集电子数据展示管理器的内容搜索权限。
-ms.openlocfilehash: 2b6968a097e7abe5943a84b9ceb9b6d126057cc2
-ms.sourcegitcommit: c166964fe14eec69139a2d3d9c10d2c40ab33f91
+description: 使用内容搜索权限筛选使电子数据展示管理器仅搜索您的 Office 365 组织中的一部分邮箱和网站。
+ms.openlocfilehash: ddf474dca814a8e4dc2c8a374b8d74a17d583d27
+ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/28/2018
-ms.locfileid: "23258620"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "30214642"
 ---
 # <a name="configure-permissions-filtering-for-content-search"></a>配置内容搜索的权限筛选
 
-您可以使用搜索筛选以让您的 Office 365 组织中的搜索邮箱和网站的子集电子数据展示管理器的权限。您还可以使用筛选以便仅搜索满足特定搜索条件的邮箱或网站内容的同一个电子数据展示管理器的权限。例如，您可能会让的特定位置或部门中的搜索仅的邮箱用户的电子数据展示管理器。通过创建使用受支持的收件人筛选器以限制哪些邮箱可搜索的筛选器来执行此操作。您还可以创建筛选器指定要搜索邮箱内容。这是创建筛选器所使用的可搜索的邮件属性。同样，您可能会让电子数据展示管理器中仅在您的组织中搜索特定的 SharePoint 网站。通过创建限制哪些网站可搜索的筛选器来执行此操作。您还可以创建筛选器指定要搜索网站内容。这是创建筛选器所使用的可搜索网站属性。
+您可以使用搜索权限筛选让电子数据展示管理器仅搜索您的 Office 365 组织中的一部分邮箱和网站。您还可以使用权限筛选, 使相同的电子数据展示管理器仅搜索符合特定搜索条件的邮箱或网站内容。例如, 您可能会让电子数据展示管理器仅搜索特定位置或部门中的用户的邮箱。为此, 可以创建一个筛选器, 该筛选器使用支持的收件人筛选器来限制可搜索的邮箱。您还可以创建筛选器, 以指定可以搜索的邮箱内容。这是通过创建使用可搜索邮件属性的筛选器完成的。同样, 您可能会让电子数据展示管理器仅搜索组织中的特定 SharePoint 网站。为此, 请创建限制可搜索的网站的筛选器。您还可以创建筛选器, 以指定可以搜索的网站内容。这是通过创建使用可搜索的网站属性的筛选器完成的。
 
-您还可以使用搜索权限筛选以创建逻辑边界 （称为*合规性边界*） 中的 Office 365 组织的控制用户 （如邮箱、 SharePoint 网站和 OneDrive 帐户） 的内容位置的特定的电子数据展示管理员可以搜索。有关详细信息，请参阅[设置 Office 365 中的电子数据展示调查的合规性边界](set-up-compliance-boundaries.md)。
+您还可以使用搜索权限筛选在 Office 365 组织中创建逻辑边界 (称为 "*合规性边界*"), 以控制用户内容位置 (如邮箱、SharePoint 网站和 OneDrive 帐户)。可以搜索特定的电子数据展示管理器。有关详细信息, 请参阅[Office 365 中的为电子数据展示调查设置合规性边界](set-up-compliance-boundaries.md)。
   
-搜索权限筛选支持 Office 365 安全性内容的搜索功能的&amp;合规性中心。这些四个 cmdlet 可以配置和管理搜索 permisisons 筛选器：
+Office 365 安全&amp;合规中心中的内容搜索功能支持搜索权限筛选。以下四个 cmdlet 可用于配置和管理 search permisisons 筛选器:
   
-[新 ComplianceSecurityFilter](#new-compliancesecurityfilter)
+[新 new-compliancesecurityfilter](#new-compliancesecurityfilter)
 
 [Get-ComplianceSecurityFilter](#get-compliancesecurityfilter)
 
-[设置 ComplianceSecurityFilter](#set-compliancesecurityfilter)
+[new-compliancesecurityfilter](#set-compliancesecurityfilter)
 
-[删除 ComplianceSecurityFilter](#remove-compliancesecurityfilter)
+[new-compliancesecurityfilter](#remove-compliancesecurityfilter)
 
 ## <a name="before-you-begin"></a>准备工作
 
-- 若要运行的合规性安全筛选器 cmdlet，您必须是安全中的 Organization Management 角色组的成员&amp;合规性中心。有关详细信息，请参阅[Permissions in Office 365 安全性&amp;合规性中心](permissions-in-the-security-and-compliance-center.md)。
+- 若要运行合规性安全筛选器 cmdlet, 您必须是安全&amp;合规性中心中 "组织管理" 角色组的成员。有关详细信息, 请参阅[Office 365 安全&amp;合规中心中的权限](permissions-in-the-security-and-compliance-center.md)。
     
-- 您必须将 Windows PowerShell 连接到两个安全&amp;合规性中心和 Exchange Online 组织使用合规性安全筛选器 cmdlet。这是必要的因为这些 cmdlet 需要访问邮箱属性，因此，您必须连接到 Exchange Online。请参阅下一节中的步骤。 
+- 您必须将 Windows PowerShell 连接到安全&amp;合规中心和 Exchange Online 组织, 才能使用合规性安全筛选器 cmdlet。这是必要的, 因为这些 cmdlet 需要访问邮箱属性, 这就是为什么必须连接到 Exchange Online 的原因所在。请参阅下一节中的步骤。 
     
 - 请参阅[More information](#more-information)部分，了解有关搜索权限筛选器的其他信息。 
     
-- 适用于非活动邮箱，这意味着您可以使用邮箱和邮箱内容筛选可以搜索非活动邮箱的限制筛选搜索权限。请参阅有关权限筛选和非活动邮箱的其他信息的[详细信息](#more-information)部分。 
+- 搜索权限筛选适用于非活动邮箱, 这意味着您可以使用邮箱和邮箱内容筛选来限制可以搜索非活动邮箱的用户。有关权限筛选和非活动邮箱的其他信息, 请参阅[详细信息](#more-information)部分。 
     
--  筛选搜索权限不能用于限制用户可以在 Exchange 搜索公用文件夹。 
+-  搜索权限筛选不能用于限制谁可以在 Exchange 中搜索公用文件夹。 
     
-- 可在组织中创建的搜索权限筛选器的数量没有限制。但是，有 100 多个搜索权限筛选器时，将会影响搜索性能。若要保留在组织中的搜索权限筛选器数目尽可能的小，创建单个筛选器尽可能中的 Exchange、 SharePoint 和 OneDrive 合并的规则的筛选器。
+- 对于可以在组织中创建的搜索权限筛选器的数量没有限制。但是, 当搜索权限筛选器超过100个时, 搜索性能将受到影响。若要尽可能减少组织中的搜索权限筛选器数量, 请在可能时创建筛选器, 将 Exchange、SharePoint 和 OneDrive 的规则合并到一个筛选器中。
     
-## <a name="connect-to-the-security-amp-compliance-center-and-exchange-online-in-a-single-remote-powershell-session"></a>连接到安全性&amp;合规性中心和 Exchange Online 中的单个的远程 PowerShell 会话
+## <a name="connect-to-the-security-amp-compliance-center-and-exchange-online-in-a-single-remote-powershell-session"></a>在单个远程 PowerShell &amp;会话中连接到安全合规性中心和 Exchange Online
 
-1. 将以下文本保存到的 Windows PowerShell 脚本文件中，使用.ps1 filename 后缀。例如，您无法将其保存到名为 ConnectEXO CC.ps1 的文件。
+1. 使用文件名后缀. ps1 将以下文本保存到 Windows PowerShell 脚本文件中。例如, 可以将其保存到名为 ConnectEXO-CC 的文件中。
     
     ```
     $UserCredential = Get-Credential
@@ -64,49 +64,49 @@ ms.locfileid: "23258620"
     $Host.UI.RawUI.WindowTitle = $UserCredential.UserName + " (Exchange Online + Compliance Center)"
     ```
 
-2. 本地计算机上打开 Windows PowerShell，转到您在上一步中创建的脚本所在的文件夹，然后运行脚本。例如：
+2. 在本地计算机上, 打开 Windows PowerShell, 转到上一步中创建的脚本所在的文件夹, 然后运行该脚本;例如:
     
     ```
     .\ConnectEXO-CC.ps1
     ```
  
-您如何知道是否这有效？运行脚本，cmdlet 从安全后&amp;合规性中心和 Exchange Online 导入本地 PowerShell 会话。如果未收到任何错误，您将成功连接。快速测试是运行安全&amp;合规性中心 cmdlet — 例如，**安装 UnifiedCompliancePrerequisite** — 和 Exchange Online cmdlet，如**Get-mailbox**。 
+您如何知道这是否有效？运行该脚本后, 安全&amp;合规性中心和 Exchange Online 中的 cmdlet 将导入到您的本地 Windows PowerShell 会话中。如果您未收到任何错误, 则您已成功连接。快速测试是运行安全&amp;合规性中心 cmdlet (例如, **UnifiedCompliancePrerequisite** ) 和 Exchange Online cmdlet (如**Get 邮箱**)。 
   
 如果收到错误，则查看以下要求：
   
 - 常见问题是密码错误。重新运行上述两个步骤，并仔细查看在步骤 1 中输入的用户名和密码。
     
-- 验证您的帐户有权访问安全性&amp;合规性中心。有关详细信息，请参阅[让安全的用户访问&amp;合规性中心](grant-access-to-the-security-and-compliance-center.md)。
+- 验证您的帐户是否有权访问安全&amp;合规性中心。有关详细信息, 请参阅[为用户提供对&amp;安全合规性中心的访问权限](grant-access-to-the-security-and-compliance-center.md)。
     
-- 为了帮助防止受到拒绝服务 (DoS) 攻击，您限制为三个 open 远程 PowerShell 连接到安全性&amp;合规性中心。
+- 为了帮助防止受到拒绝服务 (DoS) 攻击, 您最多只能打开三次与安全&amp;合规中心的远程 PowerShell 连接。
     
 - Windows PowerShell 需要进行相关配置，以运行脚本。只需在计算机上配置一次此设置即可，无需每次连接时都进行配置。为了使 Windows PowerShell 能够运行已签名脚本，请在提升的 Windows PowerShell 窗口（通过选择"以管理员身份运行"打开的 Windows PowerShell 窗口）中运行以下命令。
 
     ```
     Set-ExecutionPolicy RemoteSigned
     ```
-- 需要之间本地计算机和 Office 365 开放 TCP 端口 80 通信。很可能打开，但是这是一个要考虑是否您的组织具有限制 Internet 访问策略。
+- 需要在本地计算机和 Office 365 之间打开 TCP 端口80流量。它可能处于打开状态, 但如果您的组织具有限制性 Internet 访问策略, 则需要考虑以下事项。
     
 
   
-## <a name="new-compliancesecurityfilter"></a>新 ComplianceSecurityFilter
+## <a name="new-compliancesecurityfilter"></a>新 new-compliancesecurityfilter
 <a name="New"> </a>
 
-**新建 ComplianceSecurityFilter**用于创建新的搜索权限筛选器。下表描述此 cmdlet 的参数。创建合规性安全筛选器所需的所有参数。 
+new-compliancesecurityfilter 用于创建新**的**搜索权限筛选器。下表介绍了此 cmdlet 的参数。所有参数都是创建合规性安全筛选器所必需的。 
   
 |**参数**|**说明**|
 |:-----|:-----|
-| _Action_ <br/> | _Action_参数指定的筛选器应用于的搜索操作的类型。内容搜索操作可以是：<br/><br/> 导出搜索结果时，应用**导出**-筛选器。  <br/> 预览搜索结果时应用**预览**-筛选器。  <br/> 清除搜索结果时，将应用**清除**-筛选器。  <br/> 运行 search 时应用**搜索**-筛选器。  <br/> **所有**的筛选器应用于所有搜索操作。  <br/> |
-| _FilterName_ <br/> |_FilterName_参数指定的权限筛选器的名称。此名称用于标识筛选器时使用**Get-ComplianceSecurityFilter**、 **Set-ComplianceSecurityFilter**和**删除 ComplianceSecurityFilter** cmdlet。<br/> |
-| _筛选器_ <br/> | _筛选器_参数指定的合规性安全筛选器的搜索条件。您可以创建三种不同的筛选器：<br/><br/> **邮箱筛选**-此类型的筛选器指定分配给的用户 （_用户_参数指定） 可以搜索的邮箱。此类型的筛选器的语法是**Mailbox_** _MailboxPropertyName_，其中_MailboxPropertyName_指定用于确定范围可搜索的邮箱的邮箱属性。例如，邮箱筛选器`"Mailbox_CustomAttribute10 -eq 'OttawaUsers'"`CustomAttribute10 属性中允许的用户分配此筛选器仅搜索邮箱具有值"OttawaUsers"。<br/>  任何支持的可筛选收件人属性可用于_MailboxPropertyName_属性。有关支持的属性列表，请参阅[-RecipientFilter 参数的可筛选属性](https://go.microsoft.com/fwlink/p/?LinkId=784903)。<br/><br/> **邮箱内容筛选**-此类型的筛选器应用上的内容的可搜索。指定已分配的用户可以搜索邮箱内容。此类型的筛选器的语法是**MailboxContent_** _SearchablePropertyName:value_，其中_SearchablePropertyName_指定可以指定在内容搜索的关键字查询语言 (KQL) 属性。例如，邮箱内容筛选器`MailboxContent_recipients:contoso.com`将允许为用户分配此筛选器仅搜索发送到 contoso.com 域中的收件人的邮件。<br/>  可搜索的邮件属性的列表，请参阅[关键字查询和内容搜索的搜索条件](keyword-queries-and-search-conditions.md)。  <br/><br/> **网站和网站内容筛选**-有两种 SharePoint 和 OneDrive for Business 与网站相关的筛选器可用于指定哪些网站或网站内容已分配的用户可以搜索：  <br/><br/> - **Site_**_SearchableSiteProperty_ <br/> - **SiteContent_**_SearchableSiteProperty_ <br/><br/>  以下两个筛选器可互换;例如`"Site_Path -like 'https://contoso.sharepoint.com/sites/doctors*'"`和`"SiteContent_Path -like 'https://contoso.sharepoint.com/sites/doctors*'"`将返回相同的结果。但为了帮助您确定筛选器的用途，您可以使用`Site_`指定与网站相关的属性 （如网站 URL) 和`SiteContent_`指定内容相关的属性 （例如文档类型。例如，筛选器`"Site_Path -like 'https://contoso.sharepoint.com/sites/doctors*'"`将允许为用户分配此筛选器中的内容仅搜索https://contoso.sharepoint.com/sites/doctors网站集。筛选器`"SiteContent_FileExtension -eq 'docx'"`将允许为用户分配此筛选器，以仅搜索的 Word 文档 (Word 2007 和更高版本)。<br/><br/>  可搜索站点属性列表，请参阅[Overview of 爬网和托管 SharePoint 中的属性](https://go.microsoft.com/fwlink/p/?LinkId=331599)。属性标有**是**中 * * 可查询 * * 列可用于创建网站内容筛选器。<br/> <br/> **重要：** 单个搜索筛选器只能有一种类型的筛选器;它不能包含邮箱筛选和网站筛选;同样，它不能包含邮箱筛选器和邮箱内容筛选器。但是，筛选器可以包含同一类型的更复杂的查询。例如，`"Mailbox_CustomAttribute10 -eq 'FTE' -and Mailbox_MemberOfGroup -eq '$($DG.DistinguishedName)'"` <br/><br/> **重要：** 您必须创建一个搜索权限筛选器明确阻止用户在特定的 Office 365 服务 （如防止用户搜索任何 Exchange 邮箱或任何 SharePoint 网站） 中搜索内容的位置。换句话说，创建允许用户搜索组织中的所有 SharePoint 网站的都搜索权限筛选器不阻止用户从搜索邮箱。例如，若要允许 SharePoint 管理员可以仅搜索 SharePoint 网站，您需要创建一个创建防止这些搜索邮箱的筛选器。同样，以允许仅搜索邮箱的 Exchange 管理员，您需要创建一个创建筛选器阻止它们搜索网站。           |
-| _用户_ <br/> |_用户_参数指定要获取其内容的搜索应用于此筛选器的用户。标识通过其别名或主 SMTP 地址的用户。您可以指定用逗号分隔的多个值，也可以向所有用户分配筛选器，使用的**所有**值。<br/> 您还可以使用_用户_参数来指定安全&amp;合规性中心角色组。此使您能够创建自定义角色组并将该角色组的搜索权限筛选器。例如，假设您具有多个国家/地区的公司的美国子公司的电子数据展示管理员自定义角色组。您可以使用_用户_参数指定该角色组 （通过使用角色组的名称属性），然后使用_Filter_参数允许仅在美国要搜索的邮箱。<br/> 不能使用此参数指定通讯组。  <br/> |
+| _Action_ <br/> | _Action_参数指定筛选器应用于的搜索操作的类型。可能的内容搜索操作包括:<br/><br/> **Export** -导出搜索结果时应用筛选器。  <br/> **预览**-在预览搜索结果时应用筛选器。  <br/> **清除**-在清除搜索结果时应用筛选器。  <br/> **搜索**-在运行搜索时应用筛选器。  <br/> **所有**-筛选器应用于所有搜索操作。  <br/> |
+| _FilterName_ <br/> |_FilterName_参数指定权限筛选器的名称。使用**new-compliancesecurityfilter**、 **new-compliancesecurityfilter**和**new-compliancesecurityfilter** cmdlet 时, 此名称用于标识筛选器。<br/> |
+| _筛选器_ <br/> | _Filters_参数指定合规性安全筛选器的搜索条件。您可以创建三种不同类型的筛选器:<br/><br/> **邮箱筛选**-此类型的筛选器指定分配的用户 (由_users_参数指定) 可以搜索的邮箱。此类筛选器的语法为**Mailbox_** _MailboxPropertyName_, 其中_MailboxPropertyName_指定用于限定可搜索的邮箱的邮箱属性。例如, 邮箱筛选器`"Mailbox_CustomAttribute10 -eq 'OttawaUsers'"`允许分配此筛选器的用户仅在 CustomAttribute10 属性中搜索值为 "OttawaUsers" 的邮箱。<br/>  任何受支持的可筛选收件人属性都可用于_MailboxPropertyName_属性。有关受支持的属性的列表, 请参阅可[筛选属性的-RecipientFilter 参数](https://go.microsoft.com/fwlink/p/?LinkId=784903)。<br/><br/> **邮箱内容筛选**-对可搜索的内容应用此类型的筛选器。它指定分配的用户可以搜索的邮箱内容。此类筛选器的语法为**MailboxContent_** _SearchablePropertyName: value_, 其中_SearchablePropertyName_指定可在内容搜索中指定的关键字查询语言 (KQL) 属性。例如, 邮箱内容筛选器`MailboxContent_recipients:contoso.com`允许分配此筛选器的用户仅搜索发送到 contoso.com 域中的收件人的邮件。<br/>  有关可搜索邮件属性的列表, 请参阅[用于内容搜索的关键字查询和搜索条件](keyword-queries-and-search-conditions.md)。  <br/><br/> **网站和网站内容筛选**-您可以使用两个 SharePoint 和 OneDrive for business 网站相关的筛选器来指定分配的用户可以搜索的网站或网站内容:  <br/><br/> - **Site_**_SearchableSiteProperty_ <br/> - **SiteContent_**_SearchableSiteProperty_ <br/><br/>  这两个筛选器是可互换的;例如`"Site_Path -like 'https://contoso.sharepoint.com/sites/doctors*'"` , `"SiteContent_Path -like 'https://contoso.sharepoint.com/sites/doctors*'"`将返回相同的结果。但是, 为了帮助您确定筛选器的功能, 您可以`Site_`使用来指定与网站相关的属性 (如网站 URL), `SiteContent_`并指定与内容相关的属性 (如文档类型)。例如, 筛选器`"Site_Path -like 'https://contoso.sharepoint.com/sites/doctors*'"`允许分配此筛选器的用户仅搜索https://contoso.sharepoint.com/sites/doctors网站集中的内容。筛选器`"SiteContent_FileExtension -eq 'docx'"`将允许分配此筛选器的用户仅搜索 word 文档 (word 2007 及更高版本)。<br/><br/>  有关可搜索网站属性的列表, 请参阅[SharePoint 中的已爬网和托管属性概述](https://go.microsoft.com/fwlink/p/?LinkId=331599)。在 * * 可查询 * * 列中标记为 **"是"** 的属性可用于创建网站或网站内容筛选器。<br/> <br/> **重要说明:** 一个搜索筛选器只能具有一种类型的筛选器;它不能包含邮箱筛选器和网站筛选器;同样, 它不能包含邮箱筛选器和邮箱内容筛选器。但是, 筛选器可以包含相同类型的更复杂的查询。例如,`"Mailbox_CustomAttribute10 -eq 'FTE' -and Mailbox_MemberOfGroup -eq '$($DG.DistinguishedName)'"` <br/><br/> **重要说明:** 您必须创建搜索权限筛选器, 以明确阻止用户搜索特定 Office 365 服务中的内容位置 (例如, 阻止用户搜索任何 Exchange 邮箱或任何 SharePoint 网站)。换言之, 创建搜索权限筛选器, 允许用户搜索组织中的所有 SharePoint 网站并不会阻止该用户搜索邮箱。例如, 若要允许 SharePoint 管理员仅搜索 sharepoint 网站, 您必须创建一个可阻止他们搜索邮箱的创建筛选器。同样, 若要仅允许 Exchange 管理员搜索邮箱, 您必须创建一个阻止他们搜索网站的创建筛选器。           |
+| _用户_ <br/> |_Users_参数指定将此筛选器应用于其内容搜索的用户。根据用户的别名或主 SMTP 地址识别用户。可以指定用逗号分隔的多个值, 也可以使用**all**值将筛选器分配给所有用户。<br/> 您还可以使用_Users_参数指定安全&amp;合规中心角色组。这样, 您就可以创建自定义角色组, 然后将该角色组分配给搜索权限筛选器。例如, 假设您有一个用于多国公司的美国子公司的电子数据展示管理器的自定义角色组。您可以使用_Users_参数指定此角色组 (通过使用角色组的 Name 属性), 然后使用_Filter_参数仅允许在美国的邮箱中进行搜索。<br/> 不能使用此参数指定通讯组。  <br/> |
    
 
 ## <a name="examples-of-creating-search-permissions-filters"></a>创建搜索权限筛选器的示例
 
 下面是使用 **New-ComplianceSecurityFilter** cmdlet 创建搜索权限筛选器的示例。 
   
-本示例允许用户 annb@contoso.com 只为在加拿大邮箱执行所有内容搜索操作。此筛选器包含从 ISO 3166-1 加拿大的三位数字的国家/地区代码。
+本示例允许用户 annb@contoso.com 仅对加拿大的邮箱执行所有内容搜索操作。此筛选器包含 ISO 3166-1 中加拿大的三位数字国家/地区代码。
 
 ```
 New-ComplianceSecurityFilter -FilterName CountryFilter  -Users annb@contoso.com -Filters "Mailbox_CountryCode  -eq '124'" -Action All
@@ -143,14 +143,14 @@ $DG = Get-DistributionGroup "Executive Team"
 New-ComplianceSecurityFilter -FilterName NoExecutivesPreview  -Users all -Filters "Mailbox_MemberOfGroup -ne '$($DG.DistinguishedName)'" -Action Purge
 ```
    
-本示例允许组织中的业务位置 onedrive 仅搜索内容的 OneDrive 电子数据展示管理员自定义角色组的成员。
+本示例允许 OneDrive 电子数据展示管理器自定义角色组的成员仅搜索组织中 onedrive for business 位置中的内容。
 
 ```
 New-ComplianceSecurityFilter -FilterName OneDriveOnly  -Users "OneDrive eDiscovery Managers" -Filters "Site_Path -like 'https://contoso-my.sharepoint.com/personal*'" -Action Search
 ```
    
 > [!NOTE]
-> 若要限制对搜索特定站点的用户，使用筛选器`Site_Path`，在上面的示例所示。使用`Site_Site`不起作用。 
+> 若要限制用户搜索特定网站, 请使用筛选`Site_Path`器, 如上面的示例中所示。使用`Site_Site`将不起作用。 
   
 此示例将用户限制为仅对 2015 日历年期间发送的电子邮件执行所有内容搜索操作。
 
@@ -164,7 +164,7 @@ New-ComplianceSecurityFilter -FilterName EmailDateRestrictionFilter -Users donh@
 New-ComplianceSecurityFilter -FilterName DocumentDateRestrictionFilter -Users donh@contoso.com -Filters "SiteContent_LastModifiedTime -ge '01-01-2015' -and SiteContent_LastModifiedTime -le '12-31-2015'" -Action All
 ```
    
-本示例阻止对组织中的任何邮箱执行内容搜索操作"OneDrive 发现管理员"角色组的成员。 
+此示例阻止 "OneDrive 发现管理器" 角色组的成员对组织中的任何邮箱执行内容搜索操作。 
 
 ```
 New-ComplianceSecurityFilter -FilterName NoEXO -Users "OneDrive Discovery Managers" -Filters "Mailbox_Alias -notlike '*'"  -Action All
@@ -172,22 +172,22 @@ New-ComplianceSecurityFilter -FilterName NoEXO -Users "OneDrive Discovery Manage
   
 ## <a name="get-compliancesecurityfilter"></a>Get-ComplianceSecurityFilter
 
-**Get ComplianceSecurityFilter**用于返回的搜索权限筛选器列表。使用_FilterName_参数返回特定搜索筛选器的信息。 
+**new-compliancesecurityfilter**用于返回搜索权限筛选器的列表。使用_FilterName_参数可返回特定搜索筛选器的信息。 
   
-## <a name="set-compliancesecurityfilter"></a>设置 ComplianceSecurityFilter
+## <a name="set-compliancesecurityfilter"></a>new-compliancesecurityfilter
 
-**设置 ComplianceSecurityFilter**用于修改现有的搜索权限筛选器。所需的唯一参数是_FilterName_。 
+**new-compliancesecurityfilter**用于修改现有搜索权限筛选器。唯一必需的参数是_FilterName_。 
   
 |**参数**|**说明**|
 |:-----|:-----|
-| _Action_| _Action_参数指定的筛选器应用于的搜索操作的类型。内容搜索操作可以是：<br/><br/> 导出搜索结果时，应用**导出**-筛选器。  <br/> 预览搜索结果时应用**预览**-筛选器。  <br/> 清除搜索结果时，将应用**清除**-筛选器。  <br/> 运行 search 时应用**搜索**-筛选器。  <br/> **所有**的筛选器应用于所有搜索操作。  <br/> |
-| _FilterName_|_FilterName_参数指定的权限筛选器的名称。 |
-| _筛选器_| _筛选器_参数指定的合规性安全筛选器的搜索条件。您可以创建两种不同的筛选器：<br/><br/>**邮箱筛选**-此类型的筛选器指定分配给的用户 （_用户_参数指定） 可以搜索的邮箱。此类型的筛选器的语法是**Mailbox_** _MailboxPropertyName_，其中_MailboxPropertyName_指定用于确定范围可搜索的邮箱的邮箱属性。例如，邮箱筛选器`"Mailbox_CustomAttribute10 -eq 'OttawaUsers'"`CustomAttribute10 属性中允许的用户分配此筛选器仅搜索邮箱具有值"OttawaUsers"。 任何支持的可筛选收件人属性可用于_MailboxPropertyName_属性。有关支持的属性列表，请参阅[-RecipientFilter 参数的可筛选属性](https://go.microsoft.com/fwlink/p/?LinkId=784903)。<br/><br/>**邮箱内容筛选**-此类型的筛选器应用上的内容的可搜索。指定已分配的用户可以搜索邮箱内容。此类型的筛选器的语法是**MailboxContent_** _SearchablePropertyName:value_，其中_SearchablePropertyName_指定可以指定在内容搜索的关键字查询语言 (KQL) 属性。例如，邮箱内容筛选器`MailboxContent_recipients:contoso.com`将允许为用户分配此筛选器仅搜索发送到 contoso.com 域中的收件人的邮件。 可搜索的邮件属性的列表，请参阅[内容搜索的关键字查询](keyword-queries-and-search-conditions.md)。<br/><br/>**网站和网站内容筛选**有两种 SharePoint 和 OneDrive for Business 与网站相关的筛选器可用于指定哪些网站或网站内容已分配的用户可以搜索： <br/><br/>- **Site_***SearchableSiteProperty* <br/>- **SiteContent**_*SearchableSiteProperty*<br/><br/>以下两个筛选器可互换;例如`"Site_Path -like 'https://contoso.spoppe.com/sites/doctors*'"`和`"SiteContent_Path -like 'https://contoso.spoppe.com/sites/doctors*'"`将返回相同的结果。但为了帮助您确定筛选器的用途，您可以使用`Site_`指定与网站相关的属性 （如网站 URL) 和`SiteContent_`指定内容相关的属性 （例如文档类型。例如，筛选器`"Site_Path -like 'https://contoso.spoppe.com/sites/doctors*'"`将允许为用户分配此筛选器中的内容仅搜索https://contoso.spoppe.com/sites/doctors网站集。筛选器`"SiteContent_FileExtension -eq 'docx'"`将允许为用户分配此筛选器，以仅搜索的 Word 文档 (Word 2007 和更高版本)。<br/><br/>可搜索站点属性列表，请参阅[Overview of 爬网和托管 SharePoint 中的属性](https://go.microsoft.com/fwlink/p/?LinkId=331599)。标有**是****可查询**列中的属性可用于创建网站内容筛选器。<br/><br/> **重要：** 单个搜索筛选器只能有一种类型的筛选器;它不能包含邮箱筛选和网站筛选;同样，它不能包含邮箱筛选器和邮箱内容筛选器。但是，筛选器可以包含同一类型的更复杂的查询。例如，`"Mailbox_CustomAttribute10 -eq 'FTE' -and Mailbox_MemberOfGroup -eq '$($DG.DistinguishedName)'"`          |
-| _用户_|_用户_参数指定要获取其内容的搜索应用于此筛选器的用户。因为这是一个多值属性，该参数指定用户组将覆盖现有的用户列表。请参阅下面的示例添加和删除所选的用户的语法。<br/><br/>您还可以使用_用户_参数来指定安全&amp;合规性中心角色组。此使您能够创建自定义角色组并将该角色组的搜索权限筛选器。例如，假设您具有多个国家/地区的公司的美国子公司的电子数据展示管理员自定义角色组。您可以使用_用户_参数指定该角色组 （通过使用角色组的名称属性），然后使用_Filter_参数允许仅在美国要搜索的邮箱。<br/><br/>不能使用此参数指定通讯组。 |
+| _Action_| _Action_参数指定筛选器应用于的搜索操作的类型。可能的内容搜索操作包括:<br/><br/> **Export** -导出搜索结果时应用筛选器。  <br/> **预览**-在预览搜索结果时应用筛选器。  <br/> **清除**-在清除搜索结果时应用筛选器。  <br/> **搜索**-在运行搜索时应用筛选器。  <br/> **所有**-筛选器应用于所有搜索操作。  <br/> |
+| _FilterName_|_FilterName_参数指定权限筛选器的名称。 |
+| _筛选器_| _Filters_参数指定合规性安全筛选器的搜索条件。您可以创建两种不同类型的筛选器:<br/><br/>**邮箱筛选**-此类型的筛选器指定分配的用户 (由_users_参数指定) 可以搜索的邮箱。此类筛选器的语法为**Mailbox_** _MailboxPropertyName_, 其中_MailboxPropertyName_指定用于限定可搜索的邮箱的邮箱属性。例如, 邮箱筛选器`"Mailbox_CustomAttribute10 -eq 'OttawaUsers'"`允许分配此筛选器的用户仅在 CustomAttribute10 属性中搜索值为 "OttawaUsers" 的邮箱。 任何受支持的可筛选收件人属性都可用于_MailboxPropertyName_属性。有关受支持的属性的列表, 请参阅可[筛选属性的-RecipientFilter 参数](https://go.microsoft.com/fwlink/p/?LinkId=784903)。<br/><br/>**邮箱内容筛选**-对可搜索的内容应用此类型的筛选器。它指定分配的用户可以搜索的邮箱内容。此类筛选器的语法为**MailboxContent_** _SearchablePropertyName: value_, 其中_SearchablePropertyName_指定可在内容搜索中指定的关键字查询语言 (KQL) 属性。例如, 邮箱内容筛选器`MailboxContent_recipients:contoso.com`允许分配此筛选器的用户仅搜索发送到 contoso.com 域中的收件人的邮件。 有关可搜索邮件属性的列表, 请参阅[用于内容搜索的关键字查询](keyword-queries-and-search-conditions.md)。<br/><br/>**网站和网站内容筛选**有两个 SharePoint 和 OneDrive for business 网站相关筛选器, 可用于指定分配的用户可以搜索的网站或网站内容: <br/><br/>- **Site_***SearchableSiteProperty* <br/>- **SiteContent**_*SearchableSiteProperty*<br/><br/>这两个筛选器是可互换的;例如`"Site_Path -like 'https://contoso.spoppe.com/sites/doctors*'"` , `"SiteContent_Path -like 'https://contoso.spoppe.com/sites/doctors*'"`将返回相同的结果。但是, 为了帮助您确定筛选器的功能, 您可以`Site_`使用来指定与网站相关的属性 (如网站 URL), `SiteContent_`并指定与内容相关的属性 (如文档类型)。例如, 筛选器`"Site_Path -like 'https://contoso.spoppe.com/sites/doctors*'"`允许分配此筛选器的用户仅搜索https://contoso.spoppe.com/sites/doctors网站集中的内容。筛选器`"SiteContent_FileExtension -eq 'docx'"`将允许分配此筛选器的用户仅搜索 word 文档 (word 2007 及更高版本)。<br/><br/>有关可搜索网站属性的列表, 请参阅[SharePoint 中的已爬网和托管属性概述](https://go.microsoft.com/fwlink/p/?LinkId=331599)。可使用可**查询**列中的 **"是"** 标记的属性来创建网站或网站内容筛选器。<br/><br/> **重要说明:** 一个搜索筛选器只能具有一种类型的筛选器;它不能包含邮箱筛选器和网站筛选器;同样, 它不能包含邮箱筛选器和邮箱内容筛选器。但是, 筛选器可以包含相同类型的更复杂的查询。例如,`"Mailbox_CustomAttribute10 -eq 'FTE' -and Mailbox_MemberOfGroup -eq '$($DG.DistinguishedName)'"`          |
+| _用户_|_Users_参数指定将此筛选器应用于其内容搜索的用户。由于这是一个多值属性, 因此使用此参数指定用户或用户组将覆盖现有的用户列表。有关添加和删除选定用户的语法, 请参阅下面的示例。<br/><br/>您还可以使用_Users_参数指定安全&amp;合规中心角色组。这样, 您就可以创建自定义角色组, 然后将该角色组分配给搜索权限筛选器。例如, 假设您有一个用于多国公司的美国子公司的电子数据展示管理器的自定义角色组。您可以使用_Users_参数指定此角色组 (通过使用角色组的 Name 属性), 然后使用_Filter_参数仅允许在美国的邮箱中进行搜索。<br/><br/>不能使用此参数指定通讯组。 |
 
 ## <a name="examples-of-changing-search-permissions-filters"></a>更改搜索权限筛选器的示例
 
-这些示例演示如何使用**Get-ComplianceSecurityFilter**和**设置 ComplianceSecurityFilter** cmdlet 来添加或删除现有列表的筛选器分配给用户的用户。当您添加或删除筛选器的用户时，指定的用户使用他们的 SMTP 地址。 
+这些示例演示如何使用**new-compliancesecurityfilter**和**new-compliancesecurityfilter** cmdlet 在向其分配了筛选器的现有用户列表中添加或删除用户。当您在筛选器中添加或删除用户时, 请使用其 SMTP 地址指定该用户。 
   
 此示例是将用户添加到筛选器。
 
@@ -216,18 +216,18 @@ $filterusers.users.remove("annb@contoso.com")
 Set-ComplianceSecurityFilter -FilterName OttawaUsersFilter -Users $filterusers.users
 ```
   
-## <a name="remove-compliancesecurityfilter"></a>删除 ComplianceSecurityFilter
+## <a name="remove-compliancesecurityfilter"></a>new-compliancesecurityfilter
 
-**删除 ComplianceSecurityFilter**用于删除的搜索筛选器。使用_FilterName_参数指定要删除的筛选器。 
+**new-compliancesecurityfilter**用于删除搜索筛选器。使用_FilterName_参数指定要删除的筛选器。 
   
-## <a name="more-information"></a>详细信息
+## <a name="more-information"></a>更多信息
 
-- **如何搜索筛选工作的权限？** 内容搜索运行时，将向搜索查询添加权限筛选器。权限筛选器本质上通过**AND**布尔运算符加入向搜索查询。例如，如果您具有允许 Bob 的工作者通讯组的成员邮箱上执行所有搜索操作的权限筛选器。然后 Bob 搜索查询与组织中所有邮箱上运行内容搜索`sender:jerry@adatum.com`。因为由**AND**运算符逻辑组合权限筛选器和搜索查询，搜索将返回由 jerry@adatum.com 发送到任何工作人员通讯组的成员的任何消息。 
+- **搜索权限筛选的工作原理是什么？** 在运行内容搜索时, 权限筛选器将添加到搜索查询中。"权限" 筛选器实质上是通过**AND** Boolean 运算符加入搜索查询。例如, 假设您有一个权限筛选器, 它允许王俊元对工作人员通讯组的成员邮箱执行所有搜索操作。然后, Bob 使用搜索查询`sender:jerry@adatum.com`在组织中的所有邮箱上运行内容搜索。由于权限筛选器和搜索查询是通过**and**运算符逻辑组合的, 因此搜索将返回任何由 jerry@adatum.com 发送给工作人员通讯组的任何成员的邮件。 
     
-- **如果您有多个搜索权限筛选器，将会发生什么情况？** 在内容搜索查询中，由**或**布尔运算符组合多个权限筛选器。因此，任何筛选器时，将返回结果。在内容搜索 （通过**或**运算符组合） 的所有筛选器后组合与搜索查询通过**AND**运算符。我们来看上面的示例，其中的搜索筛选器允许 Bob 仅搜索的邮箱的工作者通讯组的成员。然后，我们创建另一个筛选器阻止 Bob 搜索 Phil 的邮箱 ("Mailbox_Alias-ne Phil")。我们还假定 Phil 是工作者组的成员。当 Bob 对组织中的所有邮箱 （从上面的示例中） 上运行内容搜索时，搜索结果将返回 Phil 的邮箱中，即使应用筛选器以阻止 Bob 搜索 Phil 的邮箱。这是因为第一个筛选器，它允许 Bob 搜索人员组中，为 true。和 Bob 由于 Phil 工作者组的成员，可以搜索 Phil 的邮箱。 
+- **如果您有多个搜索权限筛选器, 会发生什么情况？** 在内容搜索查询中, 多个权限筛选器被**or or** Boolean 运算符组合。因此, 如果任何筛选器为 true, 则将返回结果。在内容搜索中, 所有筛选器 (按**OR**运算符组合) 然后通过**AND**运算符与搜索查询组合在一起。我们采用上面的示例, 其中的搜索筛选器允许王俊元仅搜索工作人员通讯组成员的邮箱。然后, 创建另一个阻止王俊元搜索 Phil 的邮箱的筛选器 ("Mailbox_Alias-ne" Phil "")。此外, 我们还假定 Phil 是工作人员组的成员。当王俊元对组织中的所有邮箱运行内容搜索 (上一示例) 时, 即使您应用了筛选器以防止王俊元搜索 Phil 的邮箱, 也会为 Phil 的邮箱返回搜索结果。这是因为第一个允许王俊元搜索工作人员组的筛选器为 true。由于 Phil 是工作人员组的成员, 小明可以搜索 Phil 的邮箱。 
     
-- **搜索筛选工时非活动邮箱的权限？** 是，您可以使用邮箱和邮箱内容筛选器以限制用户可以搜索您的组织中的非活动邮箱。常规邮箱，如非活动邮箱已用于创建权限筛选器的收件人属性用来配置。如有必要，您可以使用**Get-mailbox InactiveMailboxOnly**命令显示非活动邮箱的属性。有关详细信息，请参阅[创建和管理 Office 365 中的非活动邮箱](create-and-manage-inactive-mailboxes.md)。
+- **搜索权限筛选是否适用于非活动邮箱？** 是的, 您可以使用邮箱和邮箱内容筛选器来限制谁可以搜索组织中的非活动邮箱。与常规邮箱一样, 非活动邮箱必须使用用于创建权限筛选器的收件人属性进行配置。如有必要, 可以使用**InactiveMailboxOnly**命令来显示非活动邮箱的属性。有关详细信息, 请参阅[在 Office 365 中创建和管理非活动邮箱](create-and-manage-inactive-mailboxes.md)。
     
-- **搜索筛选工作为公用文件夹的权限？** 不。与前面所述，搜索筛选的权限不能用于限制用户可以在 Exchange 搜索公用文件夹。例如，不能权限筛选搜索结果中排除公用文件夹位置中的项目。 
+- **搜索权限筛选是否适用于公用文件夹？** 不。如上文所述, 不能使用搜索权限筛选来限制可以在 Exchange 中搜索公用文件夹的成员身份。例如, 无法通过权限筛选器从搜索结果中排除公用文件夹位置中的项目。 
     
-- **确实会允许用户在特定服务中搜索的所有内容位置还阻止它们在不同的服务中搜索内容的位置？** 不。如前所述，您需要创建一个搜索权限筛选器明确阻止用户在特定的 Office 365 服务 （如防止用户搜索任何 Exchange 邮箱或任何 SharePoint 网站） 中搜索内容的位置。换句话说，创建允许用户搜索组织中的所有 SharePoint 网站的都搜索权限筛选器不阻止用户从搜索邮箱。例如，若要允许 SharePoint 管理员可以仅搜索 SharePoint 网站，您需要创建一个创建防止这些搜索邮箱的筛选器。同样，以允许仅搜索邮箱的 Exchange 管理员，您需要创建一个创建筛选器阻止它们搜索网站。
+- **允许用户搜索特定服务中的所有内容位置也会阻止他们搜索不同服务中的内容位置吗？** 不。如前所述, 您必须创建搜索权限筛选器, 以明确阻止用户搜索特定 Office 365 服务中的内容位置 (例如, 阻止用户搜索任何 Exchange 邮箱或任何 SharePoint 网站)。换言之, 创建搜索权限筛选器, 允许用户搜索组织中的所有 SharePoint 网站并不会阻止该用户搜索邮箱。例如, 若要允许 SharePoint 管理员仅搜索 sharepoint 网站, 您必须创建一个可阻止他们搜索邮箱的创建筛选器。同样, 若要仅允许 Exchange 管理员搜索邮箱, 您必须创建一个阻止他们搜索网站的创建筛选器。

@@ -6,32 +6,32 @@ manager: laurawi
 ms.date: 10/12/2018
 ms.audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid: MOE150
 ms.assetid: 04e9de2d-765b-457b-a98a-d0f60bfb13f2
-description: 您可以更改下载到计算机时导出电子数据展示搜索结果的 PST 文件的默认大小。
-ms.openlocfilehash: c01f05a02fd94941eb2eb7a05b4c84ffecec9b39
-ms.sourcegitcommit: 448c5897e44448adfc82e3eaffb774c770c04815
+description: 您可以在导出电子数据展示搜索结果时更改下载到您的计算机上的 PST 文件的默认大小。
+ms.openlocfilehash: 8a956091f29ec1b564d3194c7e3ca2680fdeb564
+ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "25522243"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "30214622"
 ---
 # <a name="change-the-size-of-pst-files-when-exporting-ediscovery-search-results"></a>导出电子数据展示搜索结果时更改 PST 文件的大小
 
-如果您使用 Office 365 电子数据展示导出工具从不同的 Microsoft 电子数据展示工具导出电子数据展示搜索的电子邮件结果，可以导出的 PST 文件的默认大小是 10 GB。如果您想要更改此默认大小，您可以编辑用于导出搜索结果的计算机上的 Windows 注册表。若要执行此操作的一个原因是以便 PST 文件可容纳的可移动介质、 此类 DVD、 光盘或 USB 驱动器。 
+使用 Office 365 电子数据展示导出工具从不同的 Microsoft 电子数据展示工具导出电子数据展示搜索的电子邮件结果时, 可以导出的 PST 文件的默认大小为 10 GB。如果要更改此默认大小, 可以在用于导出搜索结果的计算机上编辑 Windows 注册表。执行此操作的一个原因是, PST 文件可以放置在可移动媒体 (如 DVD、光盘或 USB 驱动器) 上。 
   
 > [!NOTE]
->  Office 365 电子数据展示导出工具用于在 Office 365 安全性使用内容搜索时导出搜索结果&amp;合规性中心、 Exchange Online 中的就地电子数据展示和 SharePoint Online 中的电子数据展示中心。 
+>  office 365 电子数据展示导出工具用于导出在 Office 365 安全&amp;合规性中心、Exchange online 中的就地电子数据展示和 SharePoint online 中的电子数据展示中心中使用内容搜索时的搜索结果。 
   
-## <a name="create-a-registry-setting-to-change-the-size-of-pst-files-when-you-export-ediscovery-search-results"></a>创建一个注册表设置来导出电子数据展示搜索结果时更改的 PST 文件大小
+## <a name="create-a-registry-setting-to-change-the-size-of-pst-files-when-you-export-ediscovery-search-results"></a>创建注册表设置以在导出电子数据展示搜索结果时更改 PST 文件的大小
 
-您将使用导出的电子数据展示搜索结果的计算机上执行以下过程。
+在用于导出电子数据展示搜索结果的计算机上执行以下过程。
   
-1. 如果已打开，请关闭 Office 365 电子数据展示导出工具。 
+1. 如果 Office 365 电子数据展示导出工具处于打开状态, 则将其关闭。 
     
-2. 使用 filename 后缀.reg; 将以下文本保存到窗口注册表文件例如，PstExportSize.reg。 
+2. 使用文件名后缀 .reg 将以下文本保存到窗口注册表文件;例如, PstExportSize。 
     
     ```
     Windows Registry Editor Version 5.00
@@ -39,45 +39,45 @@ ms.locfileid: "25522243"
     "PstSizeLimitInBytes"="1073741824"
     ```
 
-    在上例中，`PstSizeLimitInBytes`值设置为 1073741824 字节或约为 1 GB。下面是一些其他示例值`PstSizeLimitInBytes`设置。 
+    在上面的示例中, `PstSizeLimitInBytes`值设置为1073741824个字节或约 1 GB。下面是`PstSizeLimitInBytes`设置的一些其他示例值。 
     
-    |**Gb （约） 大小**|**以字节为单位的大小**|
+    |**大小 (以 GB 为单位) (近似)**|**以字节为单位的大小**|
     |:-----|:-----|
-    |.7 GB (700 MB)  <br/> |751619277  <br/> |
+    |7 GB (700 MB)  <br/> |751619277  <br/> |
     |2 GB  <br/> |2147483648  <br/> |
     |4 GB  <br/> |4294967296  <br/> |
     |8 GB  <br/> |8589934592  <br/> |
    
-3. 更改`PstSizeLimitInBytes`的 PST 文件时导出搜索结果中，然后保存该文件所需的最大大小的值。 
+3. 在导出`PstSizeLimitInBytes`搜索结果时, 将值更改为所需的最大 PST 文件大小, 然后保存该文件。 
     
-4. 在 Windows 资源管理器中，单击或双击在上一步骤中创建该.reg 文件。
+4. 在 Windows 资源管理器中, 单击或双击您在前面步骤中创建的 .reg 文件。
     
-5. 在用户访问控制窗口中，单击**是**可允许注册表编辑器中进行的更改。 
+5. 在 "用户访问控制" 窗口中, 单击 **"是"** 以让注册表编辑器进行更改。 
     
-6. 当提示您继续，请单击**是**。
+6. 当系统提示您继续时, 请单击 **"是"**。
     
-    在注册表编辑器将显示一条消息告知设置已成功添加到注册表。
+    注册表编辑器将显示一条消息, 指出已成功将设置添加到注册表中。
     
-7. 您可以重复步骤 3-6 以更改的值`PstSizeLimitInBytes`注册表设置。 
+7. 您可以重复步骤 3-6 以更改`PstSizeLimitInBytes`注册表设置的值。 
   
-## <a name="frequently-asked-questions-about-changing-the-default-size-of-pst-files-when-you-export-ediscovery-search-results"></a>有关导出电子数据展示搜索结果时更改 PST 文件的默认大小的常见问题
+## <a name="frequently-asked-questions-about-changing-the-default-size-of-pst-files-when-you-export-ediscovery-search-results"></a>在导出电子数据展示搜索结果时, 有关更改 PST 文件默认大小的常见问题
 
- **为什么是默认大小为 10 GB？**
+ **为什么默认大小为 10 GB？**
   
-10 GB 的默认大小基于客户反馈;10 GB 是内容的很好的平衡之间中单个 PST 文件损坏的最小有机会及最佳量。
+10 GB 的默认大小是基于客户反馈;10 GB 是一种很好的平衡单个 PST 中的内容量, 并具有最小的文件损坏可能性。
   
- **应增加或减少 PST 文件的默认大小？**
+ **是否应增加或减小 PST 文件的默认大小？**
   
-客户通常以减小大小限制，以便他们可以从物理上隔离附带其组织中的其他位置的可移动介质适合的搜索结果。我们不建议您增加默认大小，因为 PST 文件大于 10 GB 可能有损坏问题。
+客户倾向于减小大小限制, 以便搜索结果能够在可在其组织中物理传送其他位置的可移动媒体上进行调整。我们建议您不要增加默认大小, 因为 PST 文件大于 10 GB 可能存在损坏问题。
   
- **有哪些计算机上执行此？**
+ **我必须在哪台计算机上执行此操作？**
   
-您需要更改运行 Office 365 电子数据展示导出工具的任何本地计算机上的注册表设置。
+您需要更改在其上运行 Office 365 电子数据展示导出工具的任何本地计算机上的注册表设置。
   
- **更改此设置后，是否需要重新启动计算机？**
+ **更改此设置后, 必须重新启动计算机吗？**
   
-否，您无需重新启动计算机。但是，如果正在运行 Office 365 电子数据展示导出工具，您将需要关闭它，并在重新启动它后更改此设置。
+否, 无需重新启动计算机。但是, 如果 Office 365 电子数据展示导出工具正在运行, 则必须将其关闭, 并在更改此设置后重新启动它。
   
- **执行获取编辑现有的注册表项或执行创建新的密钥？**
+ **是否已编辑现有注册表项或是否创建新的密钥？**
   
-首次运行此过程中创建该.reg 文件创建一个新的注册表项。然后设置编辑每次更改并重新运行该.reg 编辑文件。
+首次运行您在此过程中创建的 .reg 文件时, 会创建一个新的注册表项。然后, 在每次更改并重新运行 .reg 编辑文件时, 都会编辑该设置。

@@ -1,12 +1,12 @@
 ---
-title: 高级电子数据展示 (Preview) 中修复处理错误
+title: 解决高级电子数据展示中的处理错误 (预览)
 ms.author: markjjo
 author: markjjo
 manager: laurawi
 ms.date: ''
 ms.audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: ''
 search.appverid:
@@ -14,20 +14,20 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: 65dce586f95d04294f51f16d361bfc659d6ab23b
-ms.sourcegitcommit: e3ea6eb9fab1a66b499458749838fe350d43d0d4
+ms.openlocfilehash: 1e473ee3813e53600d8843c0db399e54fc16915f
+ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/01/2019
-ms.locfileid: "29694808"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "30219552"
 ---
-# <a name="fix-processing-errors-in-advanced-ediscovery-preview"></a>高级电子数据展示 (Preview) 中修复处理错误
+# <a name="fix-processing-errors-in-advanced-ediscovery-preview"></a>解决高级电子数据展示中的处理错误 (预览)
 
-处理是文件标识的过程、 扩展的嵌入的文档和附件，文本提取、 OCR （光学字符识别） 的图像文件和对该内容编制索引。 当管理员将置于保持状态时，从 Office 365 的所有部分索引的项目处理进行完全可搜索。 同样，从 Office 365 数据源或非 Office 365 数据源内容添加到工作集时, 还处理内容。
+处理是文件标识、嵌入文档和附件的扩展、图像文件的文本提取、OCR (光学字符识别) 以及该内容的索引的过程。 当保管人置于保留状态时, 将处理 Office 365 中的所有部分索引项目, 使其完全可搜索。 同样, 将内容添加到 Office 365 数据源或非 Office 365 数据源中的工作集时, 也会处理该内容。
 
-**处理**选项卡高级电子数据展示 (Preview) 中的提供的所有这些方案的高级索引状态的透明度。
+高级电子数据展示中的**处理**选项卡 (预览) 为所有这些方案提供了高级索引的状态透明度。
 
-请参阅以下文章的详细信息。
+有关更多详细信息, 请参阅以下文章。
 
 - [保管人数据的高级索引](indexing-custodian-data.md)
-- [修正处理错误时出现的错误](error-remediation.md)
+- [修正处理数据时出现的错误](error-remediation.md)

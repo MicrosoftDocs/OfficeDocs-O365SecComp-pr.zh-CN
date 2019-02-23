@@ -1,5 +1,5 @@
 ---
-title: Office 365 中的访问策略云应用安全
+title: Office 365 云应用安全中的访问策略
 ms.author: deniseb
 author: denisebmsft
 manager: laurawi
@@ -7,17 +7,17 @@ ms.reviewer: alesibov
 ms.audience: Admin
 ms.topic: reference
 ms.date: 02/14/2019
-ms.service: o365-administration
+ms.service: O365-seccomp
 localization_priority: Normal
 description: Office 365 云应用安全访问策略支持实时监视和控制基于用户、位置、设备和应用程序对云应用的访问。您可以为任何设备 (包括未加入域的设备) 创建访问策略, 而不是通过将客户端证书滚动到托管设备或使用现有证书 (如第三方 MDM 证书) 来管理 Windows Intune。例如, 可以将客户端证书部署到托管设备, 然后阻止不使用证书的设备的访问。
-ms.openlocfilehash: bb4404793647c65ab8addc148e6efe24242f3079
-ms.sourcegitcommit: 8679937354c1d8870ecd41519a59d2d7468c23c4
+ms.openlocfilehash: a8651cb51419c93998f2ce6e176fab7c1651b6ea
+ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "30103307"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "30219772"
 ---
-# <a name="access-policies-in-office-365-cloud-app-security"></a>Office 365 中的访问策略云应用安全
+# <a name="access-policies-in-office-365-cloud-app-security"></a>Office 365 云应用安全中的访问策略
 
 |评估 * *\>**|规划 * *\>**|部署 * *\>**|利用率 * * * *|
 |:-----|:-----|:-----|:-----|

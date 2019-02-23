@@ -1,38 +1,37 @@
 ---
-title: Office 365 安全性的存档邮箱启用&amp;合规性中心
+title: 在 Office 365 安全&amp;合规中心中启用存档邮箱
 ms.author: markjjo
 author: markjjo
 manager: laurawi
-ms.date: ''
 ms.audience: Admin
 ms.topic: article
 f1_keywords:
 - ms.o365.cc.ArchivingHelp
-ms.service: o365-administration
+ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: Strat_O365_IP
 search.appverid:
 - MOE150
 - MET150
 ms.assetid: 268a109e-7843-405b-bb3d-b9393b2342ce
-description: 使用 Office 365 安全性&amp;合规性中心以启用存档邮箱以支持组织的邮件保留，电子数据展示，并保留要求。
-ms.openlocfilehash: 1c290cf19b396221dac702efd1395911e8a51631
-ms.sourcegitcommit: 7e2a0185cadea7f3a6afc5ddc445eac2e1ce22eb
+description: 使用 Office 365 安全&amp;合规中心启用存档邮箱, 以支持组织的邮件保留、电子数据展示和保留要求。
+ms.openlocfilehash: 10e20d09c531d6758d8011030aea64a6c30cdf9b
+ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/11/2019
-ms.locfileid: "28327094"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "30217282"
 ---
-# <a name="enable-archive-mailboxes-in-the-office-365-security-amp-compliance-center"></a>Office 365 安全性的存档邮箱启用&amp;合规性中心
+# <a name="enable-archive-mailboxes-in-the-office-365-security-amp-compliance-center"></a>在 Office 365 安全&amp;合规中心中启用存档邮箱
   
-存档 （也称为就地存档） 的 Office 365 中为用户提供其他邮箱存储空间。存档邮箱中打开后，用户可以访问并在其存档邮箱中存储的邮件，使用 Microsoft Outlook 和 Outlook Web 应用程序用户也可以移动或复制其主邮箱和其存档邮箱之间的邮件。他们可以通过使用恢复已删除邮件工具从其存档邮箱中可恢复邮件文件夹恢复已删除的项目。 
+Office 365 中的存档 (也称为就地存档) 为用户提供额外的邮箱存储空间。打开存档邮箱后, 用户可以使用 Microsoft Outlook 和 web 上的 outlook (以前称为 outlook web App) 访问存档邮箱中的邮件并将其存储在其存档邮箱中。用户还可以在主邮箱与其存档邮箱之间移动或复制邮件。他们还可以使用 "恢复已删除邮件" 工具, 从存档邮箱中的 "可恢复的项目" 文件夹中恢复已删除的邮件。 
   
 > [!TIP]
-> Office 365 提供与自动扩展存档功能的存档存储无限的量。时自动扩展存档处于打开状态，然后达到用户的存档邮箱中的初始存储配额，Office 365 会自动添加额外的存储空间。这意味着，用户不运行邮箱存储空间不足，并且您不必最初后管理任何启用存档邮箱，并打开自动扩展您的组织的存档。有关详细信息，请参阅[Overview of Office 365 中的无限制存档](unlimited-archiving.md)。 
+> Office 365 提供了无限制的存档存储量和自动扩展的存档功能。如果启用了自动扩展存档, 然后达到用户存档邮箱中的初始存储配额, Office 365 将自动添加额外的存储空间。这意味着用户不会用尽邮箱存储空间, 并且在最初启用存档邮箱并为您的组织启用自动扩展存档后, 无需管理任何内容。有关详细信息, 请参阅[Office 365 中的无限制存档概述](unlimited-archiving.md)。 
   
 ## <a name="before-you-begin"></a>准备工作
 
-您必须分配 Mail Recipients 角色在 Exchange Online 以启用或禁用存档邮箱。默认情况下，此角色分配给 Exchange 管理中心中的**权限**页上的收件人管理和组织管理角色组。如果您看不到安全中的**存档**页上&amp;合规性中心，请让管理员为您分配所需的权限。 
+您必须分配有 Exchange Online 中的 "邮件收件人" 角色, 才能启用或禁用存档邮箱。默认情况下, 此角色分配给 Exchange 管理中心中的 "**权限**" 页上的 "收件人管理" 和 "组织管理" 角色组。如果您在安全&amp;合规中心中看不到 "**存档**" 页, 请让管理员为您分配必要的权限。 
   
 ## <a name="enable-an-archive-mailbox"></a>启用存档邮箱
   
@@ -40,71 +39,71 @@ ms.locfileid: "28327094"
     
 2. 使用工作或学校帐户登录到 Office 365。
     
-3. 在左侧窗格中的安全&amp;合规性中心，单击**数据调控** \> **存档**。
+3. 在安全&amp;合规性中心的左侧窗格中, 单击 "**数据调控** \> **存档**"。
     
-    显示**存档**页。**存档邮箱**列指示是否启用或禁用每个用户的存档邮箱。 
+    将显示 "**存档**" 页。"**存档邮箱**" 列指示是否为每个用户启用或禁用存档邮箱。 
     
 4. 在邮箱的列表中，选择要启用存档邮箱的用户。
     
-    ![在所选用户启用存档邮箱的详细信息窗格中单击启用](media/8b53cdec-d5c9-4c28-af11-611f95c37b34.png)
+    ![在选定用户的细节窗格中单击 "启用" 以启用存档邮箱](media/8b53cdec-d5c9-4c28-af11-611f95c37b34.png)
   
-5. 在所选用户的详细信息窗格中，单击**启用**。 
+5. 在所选用户的详细信息窗格中, 单击 "**启用**"。 
     
-    显示一则警告说，是否您启用存档邮箱，超过分配给邮箱的存档策略的用户的邮箱内的项目将被移动到新的存档邮箱。默认存档策略分配给 Exchange Online 邮箱的保留策略的一部分将项目移动到存档邮箱项目已传递到邮箱或由用户创建的日期之后的两年。有关详细信息，请参阅本文中的**详细信息**一节。 
+    将显示一条警告消息, 指出如果您启用存档邮箱, 用户邮箱中早于分配给邮箱的存档策略的项目将移至新的存档邮箱。作为分配给 Exchange Online 邮箱的保留策略的一部分的默认存档策略将项目移至存档邮箱, 在将项目传递到邮箱或由用户创建的日期之后两年。有关详细信息, 请参阅本文中的**详细**信息部分。 
     
-6. 单击**是**以启用存档邮箱。 
+6. 单击 **"是"** 启用存档邮箱。 
     
-    可能需要一些时间来创建存档邮箱。当创建它时，**存档邮箱： 启用**所选用户的详细信息窗格中显示。您可能需要单击**刷新**![刷新图标](media/O365-MDM-Policy-RefreshIcon.gif)要更新的详细信息窗格中的信息。 
+    可能需要几分钟才能创建存档邮箱。创建后, 会在所选用户的详细信息窗格中显示 "**存档邮箱: 已启用**"。您可能需要单击 "**刷新** ![刷新"](media/O365-MDM-Policy-RefreshIcon.gif)图标以更新详细信息窗格中的信息。 
     
 > [!TIP]
-> 您可以还批量启用存档通过选择多个用户的邮箱禁用存档邮箱 （使用 Shift 或 Ctrl 键）。在选择多个邮箱后，单击详细信息窗格中的**启用**。 
+> 您还可以通过选择多个已禁用存档邮箱的用户 (使用 Shift 或 Ctrl 键) 来批量启用存档邮箱。选择多个邮箱后, 在详细信息窗格中单击 "**启用**"。 
   
 ## <a name="disable-an-archive-mailbox"></a>禁用存档邮箱
   
-您还可以在安全使用**存档**页上&amp;合规性中心以禁用用户的存档邮箱。禁用存档邮箱后，您可以将其重新连接到用户的主邮箱禁用它 30 天内。在这种情况下，还原存档邮箱的原始内容。30 天后，原始的存档邮箱的内容被永久删除，并且无法恢复。因此，如果您重新启用存档超过 30 天后禁用它，将创建新的存档邮箱。 
+您还可以使用安全**** &amp;合规中心中的 "存档" 页来禁用用户的存档邮箱。禁用存档邮箱后, 可以在禁用存档邮箱后的30天内将其重新连接到用户的主邮箱。在这种情况下, 将还原存档邮箱的原始内容。30天后, 原始存档邮箱的内容将被永久删除且无法恢复。因此, 如果在禁用存档后30天内重新启用存档, 则会创建一个新的存档邮箱。 
   
-传递的默认存档策略分配到用户的邮箱移动到存档邮箱的项目两个年后项目的注释。如果您禁用用户的存档邮箱时，将邮箱项目上执行任何操作，并将保持在用户的主邮箱。
+请注意, 分配给用户邮箱的默认存档策略将项目移动到存档邮箱的时间, 在该项目送达后两年。如果禁用用户的存档邮箱, 则不会对邮箱项目执行任何操作, 它们将保留在用户的主邮箱中。
   
-若要禁用存档邮箱：
+要禁用存档邮箱, 请执行以下操作:
   
 1. 转到 [https://protection.office.com](https://protection.office.com)。
     
 2. 使用工作或学校帐户登录到 Office 365。
     
-3. 在左侧窗格中的安全&amp;合规性中心，单击**数据调控** \> **存档**。
+3. 在安全&amp;合规性中心的左侧窗格中, 单击 "**数据调控** \> **存档**"。
     
-    显示**存档**页。**存档邮箱**列指示是否启用或禁用每个用户的存档邮箱。 
+    将显示 "**存档**" 页。"**存档邮箱**" 列指示是否为每个用户启用或禁用存档邮箱。 
     
 4. 在邮箱的列表中，选择要禁用存档邮箱的用户。
     
-5. 在详细信息窗格中，单击**禁用**。 
+5. 在详细信息窗格中, 单击 "**禁用**"。 
     
-    将显示一条警告消息，告知您必须重新启用存档邮箱中，30 天内的 30 天后存档中的所有信息将被永久都删除。 
+    将显示一条警告消息, 指出您将有30天时间重新启用存档邮箱, 并且30天后, 存档中的所有信息将永久删除。 
     
-6. 单击**是**以禁用存档邮箱。 
+6. 单击 **"是"** 以禁用存档邮箱。 
     
-    可能需要一些时间来禁用存档邮箱。禁用它时，**存档邮箱： 禁用**所选用户的详细信息窗格中显示。您可能需要单击**刷新**![刷新图标](media/O365-MDM-Policy-RefreshIcon.gif)要更新的详细信息窗格中的信息。 
+    可能需要几分钟才能禁用存档邮箱。如果禁用此选项, 则会在所选用户的详细信息窗格中显示 "**存档邮箱: 禁用**"。您可能需要单击 "**刷新** ![刷新"](media/O365-MDM-Policy-RefreshIcon.gif)图标以更新详细信息窗格中的信息。 
     
 > [!TIP]
-> 您可以也批量-禁用通过选择多个用户 （使用 Shift 或 Ctrl 键） 启用的存档邮箱与存档邮箱。在选择多个邮箱后，单击详细信息窗格中的**禁用**。 
+> 您还可以通过选择具有已启用存档邮箱的多个用户 (使用 Shift 或 Ctrl 键) 来批量禁用存档邮箱。选择多个邮箱后, 在详细信息窗格中单击 "**禁用**"。 
   
-## <a name="use-exchange-online-powershell-to-enable-or-disable-archive-mailboxes"></a>使用 Exchange Online PowerShell 中启用或禁用存档邮箱
+## <a name="use-exchange-online-powershell-to-enable-or-disable-archive-mailboxes"></a>使用 Exchange Online PowerShell 启用或禁用存档邮箱
 
-您可以使用 Exchange Online PowerShell 中启用存档邮箱。使用 PowerShell 的主要原因是可以快速启用存档邮箱的所有用户在组织中。
+您还可以使用 Exchange Online PowerShell 启用存档邮箱。使用 PowerShell 的主要原因是您可以为组织中的所有用户快速启用存档邮箱。
 
-第一步是连接到 Exchange Online PowerShell 中。有关说明，请参阅[Connect to Exchange Online PowerShell 中](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell)。
+第一步是连接到 Exchange Online PowerShell。有关说明, 请参阅[连接到 Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell)。
 
-您已连接到 Exchange Online 之后，您可以在以下小节以启用或禁用存档邮箱中运行命令。
+连接到 Exchange Online 后, 可以运行以下各节中的命令来启用或禁用存档邮箱。
 
 ### <a name="enable-archive-mailboxes"></a>启用存档邮箱
 
-运行以下命令以启用单个用户的存档邮箱。
+运行以下命令, 为单个用户启用存档邮箱。
     
   ```
   Enable-Mailbox -Identity <username> -Archive
   ```
 
-运行以下命令以启用的组织 （当前，没有启用存档邮箱） 中的所有用户的存档邮箱。
+运行以下命令, 为组织中的所有用户启用存档邮箱 (其存档邮箱当前未启用)。
     
   ```
   Get-Mailbox -Filter {ArchiveStatus -Eq "None" -AND RecipientTypeDetails -eq "UserMailbox"} | Enable-Mailbox -Archive
@@ -112,13 +111,13 @@ ms.locfileid: "28327094"
   
 ### <a name="disable-archive-mailboxes"></a>禁用存档邮箱
 
-运行以下命令以禁用单个用户的存档邮箱。
+运行以下命令, 为单个用户禁用存档邮箱。
     
   ```
   Disable-Mailbox -Identity <username> -Archive
   ```
 
-运行以下命令以禁用的组织 （当前已启用存档邮箱） 中的所有用户的存档邮箱。
+运行以下命令, 为组织中的所有用户 (其存档邮箱当前已启用) 禁用存档邮箱。
     
   ```
   Get-Mailbox -Filter {ArchiveStatus -Eq "Active" -AND RecipientTypeDetails -eq "UserMailbox"} | Disable-Mailbox -Archive
@@ -126,21 +125,21 @@ ms.locfileid: "28327094"
 
 ## <a name="more-information"></a>更多信息
   
-- 存档邮箱帮助您和您的用户以满足组织的保留、 电子数据展示，并按住要求。例如，贵组织的 Exchange 保留策略可用于将邮箱内容移动到用户的存档邮箱。当您使用内容搜索工具中安全&amp;还将搜索合规性中心以搜索特定内容，用户的存档邮箱的用户的邮箱。和，当您放置诉讼保留或 Office 365 保留策略应用到用户的邮箱，也将保留存档邮箱中的项目。
+- 存档邮箱可帮助您和您的用户满足组织的保留、电子数据展示和保留要求。例如, 您可以使用组织的 Exchange 保留策略将邮箱内容移动到用户的存档邮箱。当您使用安全&amp;合规中心中的内容搜索工具搜索特定内容的用户邮箱时, 还会搜索用户的存档邮箱。在你将诉讼保留或应用 Office 365 保留策略到用户的邮箱时, 存档邮箱中的项目也会保留。
   
-- 启用存档邮箱后，用户可以在其存档邮箱中存储的邮件。用户可以访问其存档邮箱使用 Microsoft Outlook 和 Outlook Web 应用程序使用这些客户端应用程序之一，用户可以查看其存档邮箱中的邮件和移动或复制其主邮箱和其存档邮箱之间的消息。用户可以恢复已删除的项目从其存档邮箱中可恢复邮件文件夹使用恢复已删除邮件工具。 
+- 启用存档邮箱后, 用户可以将邮件存储在其存档邮箱中。用户可以使用 Microsoft Outlook 和 web 上的 outlook 访问其存档邮箱。通过使用这些客户端应用程序中的任何一个, 用户都可以查看其存档邮箱中的邮件, 并在其主邮箱与其存档邮箱之间移动或复制邮件。用户还可以使用 "恢复已删除邮件" 工具, 从存档邮箱的 "可恢复的项目" 文件夹中恢复已删除的邮件。 
   
-- 启用邮箱的存档后, 您的组织可以充分利用的默认 Exchange 保留策略 （也称为邮件记录管理或 MRM 策略） 的自动分配给每个邮箱。启用存档邮箱后，将默认 Exchange 保留策略自动执行以下操作： 
+- 启用存档邮箱后, 您的组织可以利用自动分配给每个邮箱的默认 Exchange 保留策略 (也称为 "邮件记录管理" 或 "MRM 策略")。启用存档邮箱后, 默认的 Exchange 保留策略将自动执行以下操作: 
   
     - 将两年或以上的邮件从用户主邮箱移动到存档邮箱。 
     
     - 将 14 天或以上的邮件从用户主邮箱的"可恢复的项目"文件夹移动到存档邮箱中的"可恢复的项目"文件夹。
     
-- 有关存档邮箱和 Exchange 保留策略的详细信息，请参阅：
+- 有关存档邮箱和 Exchange 保留策略的详细信息, 请参阅:
   
     
   - [保留标记和保留策略](https://go.microsoft.com/fwlink/?LinkId=404424)
     
-  - [默认值保留策略在 Exchange Online](https://go.microsoft.com/fwlink/?linkid=839418)
+  - [Exchange Online 中的默认保留策略](https://go.microsoft.com/fwlink/?linkid=839418)
     
-  - [设置 Office 365 组织中邮箱的存档和删除策略](set-up-an-archive-and-deletion-policy-for-mailboxes.md)
+  - [为 Office 365 组织中的邮箱设置存档和删除策略](set-up-an-archive-and-deletion-policy-for-mailboxes.md)

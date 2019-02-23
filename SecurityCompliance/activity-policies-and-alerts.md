@@ -6,75 +6,73 @@ manager: laurawi
 ms.date: 01/28/2019
 ms.audience: ITPro
 ms.topic: article
-ms.service: o365-administration
+ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid:
 - MET150
 - MOE150
 ms.assetid: 367f25d3-10a0-4a91-bdae-70ebb7a79c98
-description: 定义与 Office 365 云应用程序安全性设置通知以触发特定活动发生或过于频繁发生时的活动策略。通过设置以触发通知的策略，您可以通知有关和监视特定活动。
-ms.openlocfilehash: af364e7ff96f6d18b60d3267c5992d4c5533ea8c
-ms.sourcegitcommit: 7e2a0185cadea7f3a6afc5ddc445eac2e1ce22eb
+description: 使用 Office 365 云应用安全性定义活动策略, 以设置在特定活动发生或发生过于频繁时触发的警报。通过设置策略来触发通知, 可以通知并监视特定活动。
+ms.openlocfilehash: cfa58182ea35551ca3a3807c23e09c9f87c7be82
+ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/11/2019
-ms.locfileid: "29604089"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "30219762"
 ---
 # <a name="activity-policies-and-alerts-in-office-365-cloud-app-security"></a>Office 365 云应用安全中的活动策略和警报
 
-Office 365 高级安全管理现在是 Office 365 云应用程序安全性。
-  
-|评估 * *\>**|规划 * *\>**|部署 * *\>**|使用率 ***|
+|评估 * *\>**|规划 * *\>**|部署 * *\>**|利用率 * * * *|
 |:-----|:-----|:-----|:-----|
-|[启动评估](office-365-cas-overview.md) <br/> |[开始规划](get-ready-for-office-365-cas.md) <br/> |在这里 ！  <br/> [后续步骤](anomaly-detection-policies-in-ocas.md) <br/> |[开始利用](utilization-activities-for-ocas.md) <br/> |
+|[开始评估](office-365-cas-overview.md) <br/> |[开始规划](get-ready-for-office-365-cas.md) <br/> |你在这里!  <br/> [后续步骤](anomaly-detection-policies-in-ocas.md) <br/> |[开始利用](utilization-activities-for-ocas.md) <br/> |
    
-与 Office 365 云应用程序安全性，高级的云管理策略触发特定的活动发生或过于频繁发生的通知。例如，假设用户尝试登录到 Office 365，并在一分钟内 70 时间失败。假设另一个用户下载 7,000 文件，或显示为从加拿大时登录该用户应该位于另一个位置。或糟糕的是，假设已泄露某人的帐户，攻击者在使用该帐户访问您组织的云应用程序和敏感数据。
+借助 Office 365 云应用安全性, 高级云管理策略将触发发生或发生过于频繁的特定活动的警报。例如, 假设用户尝试登录到 Office 365, 并在一分钟内失败70次。假设另一位用户下载7000文件, 或看起来像是从加拿大登录, 而该用户应位于另一个位置。或者更糟的是, 假设某人的帐户受到威胁, 并且攻击者使用该帐户访问您组织的云应用程序和敏感数据。
   
-如果您是[全局管理员或安全管理员](permissions-in-the-security-and-compliance-center.md)，活动警报通知您事件，如这些时出现。您然后可以执行特定操作，如挂起的用户帐户，直到您可以调查发生了什么变化。
+如果您是[全局管理员或安全管理员](permissions-in-the-security-and-compliance-center.md), 活动警报会在发生类似事件时通知您。然后, 您可以执行特定操作, 如挂起用户帐户, 直到您能够调查所发生的情况。
   
 > [!NOTE]
-> Office 365 云应用程序安全性策略是不同[警报策略在 Office 365 安全性&amp;合规性中心](alert-policies.md)。本文中所述的策略在 Office 365 云应用程序安全性门户中，定义和可帮助您更好的活动管理组织的云环境。 
+> office 365 云应用安全策略与[office 365 安全&amp;合规中心中的警报策略](alert-policies.md)不同。本文中所述的活动策略在 Office 365 云应用安全门户中定义, 可帮助您更好地管理组织的云环境。 
   
 ## <a name="before-you-begin"></a>准备工作
 
 请确保：
   
-- 您的组织具有[Office 365 云应用程序安全性](office-365-cas-overview.md)，并且该服务[开启](turn-on-office-365-cas.md)。
+- 您的组织具有[Office 365 云应用安全性](office-365-cas-overview.md), 并且该服务已[打开](turn-on-office-365-cas.md)。
     
-- [审核日志记录](turn-audit-log-search-on-or-off.md)处于打开状态的 Office 365 环境。 
+- 已为您的 Office 365 环境启用[审核日志记录](turn-audit-log-search-on-or-off.md)。 
     
-- 您是全局管理员或 Office 365 安全管理员。
+- 您是 Office 365 的全局管理员或安全管理员。
     
 ## <a name="create-a-new-activity-policy"></a>创建新的活动策略
 
-1. 以全局管理员或 security 管理员程序中，转到云应用程序安全性门户 ([https://portal.cloudappsecurity.com](https://portal.cloudappsecurity.com)) 和登录。 <br>您将转到 Office 365 云应用程序安全策略页。<br>![当您转到 Office 365 云应用程序安全性门户时，启动与策略页](media/5cb8833c-4e08-438c-bab3-91b5106f6f3f.png)
+1. 作为全局管理员或安全管理员, 请转到云应用安全门户 ([https://portal.cloudappsecurity.com](https://portal.cloudappsecurity.com)) 并登录。 <br>将转到 "Office 365 云应用安全策略" 页。<br>![当您转到 Office 365 云应用安全门户时, 将从 "策略" 页开始](media/5cb8833c-4e08-438c-bab3-91b5106f6f3f.png)
   
-2. 单击**创建策略**，，然后选择**活动策略**。<br>![在 O365 CAS 创建策略时，您可以选择活动策略和异常检测策略。](media/79f34535-ddf9-4a5b-a0a3-8766bf9c174c.png)
+2. 单击 "**创建策略**", 然后选择 "**活动策略**"。<br>![在 O365 CAS 中创建策略时, 可以在活动策略和异常情况检测策略之间进行选择。](media/79f34535-ddf9-4a5b-a0a3-8766bf9c174c.png)
   
-3. 在**创建活动策略**页中，指定**策略名称**和**说明**。若要在默认模板上基于您的策略，请在**策略模板**列表中，选择一个或不使用模板创建您自己的策略。<br>![您可以与 Office 365 云应用程序安全性创建活动策略。](media/4083a76f-7074-4d6a-8200-6d76d49259d7.png)
+3. 在 "**创建活动策略**" 页上, 指定**策略名称**和**说明**。若要将策略基于默认模板, 请在 "**策略模板**" 列表中选择一个模板, 或在不使用模板的情况下创建自己的策略。<br>![您可以使用 Office 365 云应用安全性创建活动策略。](media/4083a76f-7074-4d6a-8200-6d76d49259d7.png)
   
-4. 选择**策略严重性**（低、 中或高） 的度量如何严重其将您如果此策略会触发一条通知。这将帮助您筛选警报时正在查看其更高版本。 
+4. 选择**策略严重性**(低、中或高), 以衡量在此策略触发警报时对您有多严重。这将帮助您在以后查看警报时对其进行筛选。 
     
-5. 选择该策略的一个**类别**。这将帮助您筛选和排序的已触发通知或组策略时正在查看其进行更改。 
+5. 为此策略选择一个**类别**。这将帮助您筛选和排序已触发的警报, 或在审阅以进行更改时对策略进行分组。 
     
-6. 选择**活动筛选器**设置其他操作或将触发通知基于此策略的指标。 
+6. 选择 "**活动筛选器**" 以设置将触发基于此策略的警报的其他操作或指标。 
     
-7. 下**活动匹配参数**，指定单个活动匹配筛选器时，将触发策略违规还是指定的数量的重复活动需要先触发警报。<br>如果您选择**Repeated 活动**，请指定活动，时间段的数目和冲突的特定应用程序中的用户或任何应用程序的相同用户是否对计数。
+7. 在 "**活动匹配参数**" 下, 指定单个活动匹配筛选器时是否将触发策略违规, 或者在警报触发之前是否需要指定数量的重复活动。<br>如果选择 "**重复活动**", 请指定活动的数量、时间范围, 以及是否会对特定应用程序中的用户或与任何应用程序相同的用户计数冲突。
     
-8. （可选） 您可以选择要创建其他通知以接收通知 （通过电子邮件、 文本消息，或两者） 此策略中的**创建通知**。<br>**请确保您的电子邮件提供商不阻止发送的电子邮件`no-reply@cloudappsecurity.com`**。 
+8. (可选) 可以选择 "**创建通知**", 以创建从该策略接收通知的其他通知 (通过电子邮件、短信或两者)。<br>**确保您的电子邮件提供商不会阻止发送`no-reply@cloudappsecurity.com`的电子邮件**。 
   
-9. 选择触发挂起用户或需要用户再次登录到 Office 365 应用程序时应采取的**操作**。 
+9. 选择触发警报时应采取的**操作**, 以挂起用户或要求用户再次登录 Office 365 应用。 
     
-10. 选择**创建**以完成创建您的策略。 
+10. 选择 "**创建**" 以完成策略的创建。 
     
 ## <a name="next-steps"></a>后续步骤
 
-- [异常检测策略](anomaly-detection-policies-in-ocas.md)
+- [异常情况检测策略](anomaly-detection-policies-in-ocas.md)
     
-- [将 SIEM 服务器集成](integrate-your-siem-server-with-office-365-cas.md)
+- [集成您的 SIEM 服务器](integrate-your-siem-server-with-office-365-cas.md)
     
-- [查看并通知对其执行操作](review-office-365-cas-alerts.md)
+- [查看警报并对其执行操作](review-office-365-cas-alerts.md)
     
-- [若要简化管理您 IP 地址进行分组](group-your-ip-addresses-in-ocas.md)
+- [将 IP 地址分组以简化管理](group-your-ip-addresses-in-ocas.md)
     
 

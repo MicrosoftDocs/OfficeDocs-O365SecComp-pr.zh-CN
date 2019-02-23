@@ -1,5 +1,5 @@
 ---
-title: 使用 Office 365 云应用安全条件访问应用程序控件保护应用程序
+title: 使用 Office 365 云应用安全条件访问应用控制保护应用
 ms.author: deniseb
 author: denisebmsft
 manager: laurawi
@@ -7,17 +7,17 @@ ms.reviewer: alesibov
 ms.audience: Admin
 ms.topic: reference
 ms.date: 02/14/2019
-ms.service: o365-administration
+ms.service: O365-seccomp
 localization_priority: Normal
 description: 使用 Office 365 云应用安全条件访问应用程序控制实时停止泄露和泄露。
-ms.openlocfilehash: 8656bf9d3e028bf6b44731c397b74d9c883db707
-ms.sourcegitcommit: 8679937354c1d8870ecd41519a59d2d7468c23c4
+ms.openlocfilehash: 23c4b29e86eb8ba92cfa8a544d6484965ec6372b
+ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "30103357"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "30217082"
 ---
-# <a name="protect-apps-with-office-365-cloud-app-security-conditional-access-app-control"></a>使用 Office 365 云应用安全条件访问应用程序控件保护应用程序
+# <a name="protect-apps-with-office-365-cloud-app-security-conditional-access-app-control"></a>使用 Office 365 云应用安全条件访问应用控制保护应用
 
 |评估 * *\>**|规划 * *\>**|部署 * *\>**|利用率 * * * *|
 |:-----|:-----|:-----|:-----|
@@ -104,7 +104,7 @@ Office 365 的条件访问应用程序控制支持以下特色应用程序:
 
 ## <a name="next-steps"></a>后续步骤
 
-- [为 Office 365 应用程序部署条件访问应用程序控制](ocas-deploy-conditional-access-app-control.md)
+- [为 Office 365 应用部署条件访问应用控制](ocas-deploy-conditional-access-app-control.md)
 
 - [了解 Office 365 中的会话策略云应用安全性](ocas-session-policies.md)
 

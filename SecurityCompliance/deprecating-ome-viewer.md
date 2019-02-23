@@ -1,54 +1,54 @@
 ---
-title: 弃用 Office 365 邮件加密查看器应用程序
+title: 弃用 Office 365 邮件加密查看器应用
 ms.author: krowley
 author: kccross
 ms.date: 6/29/2018
 ms.audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid:
 - MET150
 - MOE150
 ms.assetid: 6336cabb-b06e-402f-9e85-8bb9eb4ce68f
-description: 在年 8 月 15 2018年我们走 Office 365 邮件加密 (OME) 查看器的移动应用程序从 Android 和 Apple 存储。Office 365 邮件加密查看器的移动应用程序所需阅读电子邮件和加密与早期版本的 OME Apple 和 Android 电话上的附件。除了删除 OME 查看器应用程序，我们不到 OME 的早期版本进行任何其他更改。
-ms.openlocfilehash: 43e514bd8336d283aaf774ffa4f49565f86e7102
-ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+description: 在2018年8月15日, 我们将从 Android 和 Apple 商店中删除 Office 365 邮件加密 (OME) 查看器移动应用。Office 365 邮件加密查看器移动应用程序需要阅读使用 Apple 和 Android 手机上的早期版本的 OME 加密的电子邮件和附件。除了删除 OME Viewer 应用程序, 我们不会对早期版本的 OME 进行任何其他更改。
+ms.openlocfilehash: e08b6ecac9d68d7aa8e9e1d6cca6450a6461f67e
+ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22524806"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "30216832"
 ---
-# <a name="deprecating-office-365-message-encryption-viewer-app"></a>弃用 Office 365 邮件加密查看器应用程序
+# <a name="deprecating-office-365-message-encryption-viewer-app"></a>弃用 Office 365 邮件加密查看器应用
 
-在年 8 月 15 2018年我们走 Office 365 邮件加密 (OME) 查看器的移动应用程序从 Android 和 Apple 存储。Office 365 邮件加密查看器的移动应用程序所需阅读电子邮件和加密与早期版本的 OME Apple 和 Android 电话上的附件。除了删除 OME 查看器应用程序，我们不到 OME 的早期版本进行任何其他更改。
+在2018年8月15日, 我们将从 Android 和 Apple 商店中删除 Office 365 邮件加密 (OME) 查看器移动应用。Office 365 邮件加密查看器移动应用程序需要阅读使用 Apple 和 Android 手机上的早期版本的 OME 加密的电子邮件和附件。除了删除 OME Viewer 应用程序, 我们不会对早期版本的 OME 进行任何其他更改。
   
-## <a name="changes-beginning-august-2018"></a>开始年 8 月 2018年的更改
+## <a name="changes-beginning-august-2018"></a>2018年8月开始的更改
 
-作为宣布最后一年 9 月，我们已发布新版本的[Office 365 邮件加密](https://aka.ms/ome2017)，以便用户可以发送加密和受保护的内部或外部的移动应用程序的要求不组织的任何人的邮件。从那时起，我们已添加其他功能： 
+如最后在九月宣布宣布, 我们发布了[Office 365 邮件加密](https://aka.ms/ome2017)的新版本, 以便用户可以向组织内外的任何人发送加密和受保护的邮件, 而不需要移动应用。从那时起, 我们添加了其他功能: 
   
-- [仅用于加密的模板](https://aka.ms/encryptonly)
+- [仅加密模板](https://aka.ms/encryptonly)
     
-- [解密附件控件](https://techcommunity.microsoft.com/t5/Security-Privacy-and-Compliance/Admin-control-for-attachments-now-available-in-Office-365/ba-p/204007)
+- [用于解密附件的控件](https://techcommunity.microsoft.com/t5/Security-Privacy-and-Compliance/Admin-control-for-attachments-now-available-in-Office-365/ba-p/204007)
     
-通过此更改，用户将不再能够下载 Office 365 邮件加密查看器移动应用程序开始 8 月 1 日。因此，邮件收件人可能无法读取与早期版本的 OME 一些 Android 和 Apple 移动设备上加密的邮件。但是，他们仍然能够阅读这些邮件 （通过桌面浏览器） 的个人计算机上。已下载应用程序的用户将继续能够使用它。
+进行此更改后, 用户将不再能够从8月1日开始下载 Office 365 邮件加密查看器移动应用。因此, 邮件收件人可能无法读取在某些 Android 和 Apple 移动设备上使用 OME 的早期版本加密的邮件。但是, 他们仍可以在个人计算机上读取这些邮件 (通过桌面浏览器)。已下载应用程序的用户将继续能够使用它。
   
-## <a name="why-this-change-was-made"></a>为什么进行此更改
+## <a name="why-this-change-was-made"></a>为什么要进行此更改
 
-新版本的 OME 不再需要移动应用程序读取受保护的电子邮件和附件。Office 365 客户使用新 OME 功能可以查看受保护的邮件中 Outlook mobile 和 Office 365 客户可以查看受保护的浏览器中的邮件。
+新版本的 OME 不再需要移动应用读取受保护的电子邮件和附件。使用新 OME 功能的 Office 365 客户可以在 Outlook mobile 和非 Office 365 客户中查看受保护的邮件。可以在浏览器中查看受保护的邮件。
   
-要求用户下载移动应用程序是另一个障碍，以便客户能够查看受保护的邮件。新的 Office 365 邮件加密功能提供更好的移动体验。
+要求用户下载移动应用是客户查看受保护邮件的另一个障碍。新的 Office 365 邮件加密功能可提供更好的移动体验。
   
-## <a name="can-i-still-use-the-previous-version-of-office-365-message-encryption"></a>仍可以使用以前版本的 Office 365 邮件加密
+## <a name="can-i-still-use-the-previous-version-of-office-365-message-encryption"></a>我仍然可以使用以前版本的 Office 365 邮件加密
 
-Office 365 邮件加密的早期版本不被弃用这一次，但是，我们做显著改进新版本的 Office 365 邮件加密，使其更易于加密和保护敏感数据的任何人的权限和任何设备-包括用于 Office 365 用户读取直接在 Outlook 中受保护的邮件的功能 (桌面，mobile，和 web)。 
+早期版本的 office 365 邮件加密目前不会被弃用。但是, 我们对 office 365 邮件加密的新版本进行了重大增强, 这使得加密和权限保护对敏感数据的保护变得更加简单以及任何设备 (包括 Office 365 用户在 Outlook 中直接阅读受保护的邮件的功能) (桌面、移动和 web)。 
   
-## <a name="what-do-i-need-to-do-to-prepare-for-this-change"></a>需要执行的操作，此更改准备的什么
+## <a name="what-do-i-need-to-do-to-prepare-for-this-change"></a>需要执行哪些操作才能为此更改做准备
 
-如果您的组织当前发送给收件人需要 OME 查看器应用程序的加密的附件，则应更新您的文档和培训资源。
+如果您的组织当前向需要 OME 查看器应用程序的收件人发送了加密附件, 则应更新您的文档和培训资源。
   
-我们建议更新现有的 Exchange 邮件流规则使用 OME 的当前版本，以便您的组织可以利用新的和改进功能。一旦您已设置的新功能，OME，收件人不需要 OME 查看器应用程序来阅读加密的邮件在移动设备上。
+我们建议您更新现有的 Exchange 邮件流规则, 以使用当前版本的 OME, 以便您的组织可以利用新的和改进的功能。一旦设置了新的 OME 功能, 收件人就不需要 OME 查看器应用来在移动设备上阅读加密的邮件。
   
-Microsoft 建议您进行规划，以将移动到新的 OME 功能只要很合理为您的组织。有关说明，请参阅[设置新的 Office 365 邮件加密功能](set-up-new-message-encryption-capabilities.md)。如果您想要找出有关的新功能，首先工作的方式的详细信息，请参阅[Office 365 邮件加密](ome.md)。
+Microsoft 建议您制定一个计划, 尽快移动到新的 OME 功能, 因为它对您的组织合理。有关说明, 请参阅[设置新的 Office 365 邮件加密功能](set-up-new-message-encryption-capabilities.md)。如果您想要详细了解新功能的工作方式, 请参阅[Office 365 邮件加密](ome.md)。
   
 

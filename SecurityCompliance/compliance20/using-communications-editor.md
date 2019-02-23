@@ -6,7 +6,7 @@ manager: laurawi
 ms.date: ''
 ms.audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: ''
 search.appverid:
@@ -14,33 +14,33 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: b148ff1a77cd9225a26f98e7612e9fb5b57331e3
-ms.sourcegitcommit: 7e2a0185cadea7f3a6afc5ddc445eac2e1ce22eb
+ms.openlocfilehash: 967320aeb960258d77d90cca4e3b681849f9952e
+ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/11/2019
-ms.locfileid: "29706053"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "30215802"
 ---
 # <a name="use-the-communications-editor"></a>使用通信编辑器
 
-定义门户内容的内容，如法律保留通知以及相关的提醒升级，您可以利用 Communications 编辑器格式和动态自定义您的内容。
+在定义门户内容、法律保留通知和相关提醒/上报的内容时, 可以利用通信编辑器格式化和动态自定义内容。
 
-## <a name="rich-text-editor"></a>格式文本编辑器 
+## <a name="rich-text-editor"></a>富文本编辑器 
 
-Communications 编辑器允许用户自定义使用编辑器选项的文本。例如，用户可以更改字体类型，创建项目符号列表、 突出显示内容和详细信息。 
+通过通信编辑器, 用户可以使用编辑器选项自定义文本。例如, 用户可以更改字体类型、创建项目符号列表、突出显示内容等。 
 
-## <a name="merge-field-variables"></a>合并域变量
+## <a name="merge-field-variables"></a>合并字段变量
 
-您可以利用电子邮件合并变量从 Communications 编辑器要将自定义的 custodian 属性嵌入通信的正文文本。发送到 custodian 时，将相应的字段与填充合并域。例如，当发送到 custodian John Smith，则翻译合并域 [Custodian 名] 的相应名称。 
+您可以利用通信编辑器中的电子邮件合并变量将自定义的保管人属性嵌入到通信的正文文本中。当发送给管理员时, 将使用对应的字段填充合并域。例如, 当发送给保管人 John Smith 时, 合并域 [保管人 Name] 将转换为相应的名称。 
 
-您可以通过选择格式文本编辑器控件顶部**合并域**图标使用电子邮件合并域。将基于用户的指针的位置禁用添加占位符。 
+您可以通过选择 "rtf" 文本编辑器控件顶部的 "**合并域**" 图标来使用电子邮件合并域。将根据用户光标的位置添加占位符。 
 
-### <a name="list-of-merge-field-variables"></a>合并字段变量的列表
+### <a name="list-of-merge-field-variables"></a>合并域变量的列表
 
-| 字段名称                  | 字段的详细信息 | 
+| 字段名称                  | 字段详细信息 | 
 | :------------------- | :------------------- |
-| 显示名称  | Custodian 的姓和姓。 | 
-| 确认链接 | 记录每个 custodian 确认自定义的链接。|                 |
-| 门户链接     | 自定义的链接 custodian 的合规性门户。|                |
-| 发出部主管                   | 指定颁发部主管电子邮件地址。|                   |
-| 发布日期                   | 请注意颁发 (UTC) 的日期。              |
+| 显示名称  | 保管人的名字和姓氏。 | 
+| 确认链接 | 记录每个保管人的确认的自定义链接。|                 |
+| 门户链接     | 用于保管人合规性门户的自定义链接。|                |
+| 签发专员                   | 指定的颁发专员的电子邮件地址。|                   |
+| 签发日期                   | 通知发布的日期 (UTC)。              |

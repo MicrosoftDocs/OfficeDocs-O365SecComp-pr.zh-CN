@@ -6,19 +6,19 @@ manager: laurawi
 ms.audience: Admin
 ms.topic: reference
 ms.date: 01/25/2019
-ms.service: o365-administration
+ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid:
 - MET150
 - MOE150
 ms.assetid: d674763c-a4c9-4604-8623-68c1836d27f3
 description: 请参阅 Office 365 中的新增功能云应用安全
-ms.openlocfilehash: 9c0a93a29efb71704cf4ed0f9219018b5dd79d88
-ms.sourcegitcommit: 8679937354c1d8870ecd41519a59d2d7468c23c4
+ms.openlocfilehash: c85671eb135afb1cb92883a5d75ad112c46538c1
+ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "30087351"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "30219512"
 ---
 # <a name="what-is-new-in-office-365-cloud-app-security"></a>Office 365 云应用安全中的新增功能
 

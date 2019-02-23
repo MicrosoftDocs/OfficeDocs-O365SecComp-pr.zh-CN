@@ -1,5 +1,5 @@
 ---
-title: 为 Office 365 应用程序部署条件访问应用程序控制
+title: 为 Office 365 应用部署条件访问应用控制
 ms.author: deniseb
 author: denisebmsft
 manager: laurawi
@@ -7,17 +7,17 @@ ms.reviewer: alesibov
 ms.audience: Admin
 ms.topic: reference
 ms.date: 02/14/2019
-ms.service: o365-administration
+ms.service: O365-seccomp
 localization_priority: Normal
 description: 按照以下步骤操作, 将 Azure AD Office 365 应用程序配置为由 Office 365 云应用安全条件访问应用程序控制。
-ms.openlocfilehash: ba3980615815fa45b1385a67560cc635506e2c22
-ms.sourcegitcommit: 8679937354c1d8870ecd41519a59d2d7468c23c4
+ms.openlocfilehash: cfb3d885fdfaf0e4698b1f8f9a0e13baacf43f66
+ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "30103287"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "30221052"
 ---
-# <a name="deploy-conditional-access-app-control-for-office-365-apps"></a>为 Office 365 应用程序部署条件访问应用程序控制
+# <a name="deploy-conditional-access-app-control-for-office-365-apps"></a>为 Office 365 应用部署条件访问应用控制
 
 |评估 * *\>**|规划 * *\>**|部署 * *\>**|利用率 * * * *|
 |:-----|:-----|:-----|:-----|

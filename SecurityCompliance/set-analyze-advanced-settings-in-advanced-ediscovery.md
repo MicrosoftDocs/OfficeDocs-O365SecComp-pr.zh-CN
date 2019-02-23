@@ -6,42 +6,42 @@ manager: laurawi
 ms.date: 9/14/2017
 ms.audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid:
 - MOE150
 - MET150
 ms.assetid: a797682f-ad85-4c08-a354-3850ba2237ee
-description: '了解如何配置高级的设置，包括近乎重复项、 电子邮件线程和主题、 为 Office 365 高级电子数据展示中的分析过程。 '
-ms.openlocfilehash: 7ffb80230a43eacb98a9c4ecb569f03cff134aac
-ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+description: '了解如何为 Office 365 高级电子数据展示中的分析过程配置高级设置, 包括接近重复的电子邮件线程和主题。 '
+ms.openlocfilehash: d8dfb9f3ecfcda0f267dfccdc716eda40fe450b2
+ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22524868"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "30220082"
 ---
 # <a name="set-analyze-advanced-settings-in-office-365-advanced-ediscovery"></a>在 Office 365 高级电子数据展示中设置分析高级设置
 
 > [!NOTE]
-> 高级电子数据展示需要为您的组织使用的高级合规性加载项或 E5 订阅 Office 365 E3。如果您不具有该计划，并且想要尝试高级电子数据展示，您还可以[注册试用版的 Office 365 企业 E5](https://go.microsoft.com/fwlink/p/?LinkID=698279)。 
+> 若要使用高级电子数据展示，组织必须订阅随附高级合规性加载项的 Office 365 E3，或订阅 E5。如果没有此计划，但又要试用高级电子数据展示，可以[注册 Office 365 企业版 E5 试用版](https://go.microsoft.com/fwlink/p/?LinkID=698279)。 
   
-高级电子数据展示提供用于分析模块设置默认的高级参数。以下过程介绍了可为指定的设置。
+高级电子数据展示可提供分析模块设置的默认高级参数。下面的过程介绍了可指定的设置。
   
-1. 在**准备\>分析\>安装**选项卡上，单击**高级设置**（位于页面底部）。将显示以下窗格。 
+1. 在 "**准备\>分析\>设置**" 选项卡上, 单击页面底部的 "**高级设置**"。将显示以下面板。 
     
     ![设置分析高级设置](media/c9ea3017-e19a-456b-a742-c3d07121a3f6.png)
   
-2. 在**靠近重复项和电子邮件线程参数**，根据需要选择以下值：
+2. 在 "**临近副本" 和 "电子邮件线程" 参数**中, 根据需要选择以下值:
     
-  - **单词的最小数目**： 单词，下面的文件不会提交进行近乎重复分析的最小数字。 
+  - **最小单词数**: 单词的最小数目, 在以下情况下, 不会将文件提交到接近重复的分析。 
     
-  - **最大单词数**： 单词，上面的文件不会提交进行近乎重复分析的最大数量。
+  - **最大单词数**: 单词的最大数目, 超过该数目时不会将文件提交到接近重复的分析。
     
-  - **电子邮件相似性**： 类似的两个电子邮件视为类似的最低级别。该值始终是等于或大于文档相似性。默认值为 90%。
+  - **电子邮件相似性**: 将两封电子邮件视为相似的最小 resemblance 级别。值始终等于或大于文档相似性。默认值为 90%。
     
-3. **主题参数**，选择**包含主题分析中的号码**复选框，在处理期间分析主题中包括号。 
+3. 在 "**主题参数**" 中, 选中 "将**数字包含在主题分析**中" 复选框, 以在分析期间包含处理主题过程中的数字。 
     
-4. 单击“保存”****。 
+4. 单击“**保存**”。 
     
 ## <a name="see-also"></a>另请参阅
 

@@ -6,7 +6,7 @@ manager: laurawi
 ms.date: 8/21/2018
 audience: ITPro
 ms.topic: article
-ms.service: Office 365 Administration
+ms.service: O365-seccomp
 localization_priority: None
 search.appverid:
 - MET150
@@ -14,12 +14,12 @@ ms.collection:
 - Strat_O365_IP
 - M365-security-compliance
 description: 有关 Office 365 监视和自愈功能的信息。
-ms.openlocfilehash: 799c4dc97e9cc88dcc77f17b0f11ab76525012d9
-ms.sourcegitcommit: c94cb88a9ce5bcc2d3c558f0fcc648519cc264a2
+ms.openlocfilehash: 4878ca5889c9b893154e0e7b910cb17c4b36402c
+ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/20/2019
-ms.locfileid: "30090514"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "30217542"
 ---
 # <a name="office-365-monitoring-and-self-healing"></a>Office 365 监控和自我修复
 考虑到 Office 365 的规模, 无法保持客户数据的恢复能力和安全, 而无需进行全面的内置监控、智能化的警报, 以及快速而可靠的自我修复。以 Office 365 的规模监控一组服务是非常困难的。需要引入新的 mindsets 和方法, 并需要创建全新的技术集, 以在连接的全局环境中运行和管理服务。我们已从传统监控数据收集和筛选的方法中移走, 以创建基于数据分析的方法的警报;在该数据中接受信号并建立可信度, 然后使用自动化来恢复或解决问题。此方法有助于防止人离开恢复等式, 进而使操作更便宜、速度更快且容易出错。 

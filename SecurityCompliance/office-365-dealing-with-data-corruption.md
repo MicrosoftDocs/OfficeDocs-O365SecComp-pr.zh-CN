@@ -6,7 +6,7 @@ manager: laurawi
 ms.date: 8/21/2018
 audience: ITPro
 ms.topic: article
-ms.service: Office 365 Administration
+ms.service: O365-seccomp
 localization_priority: None
 search.appverid:
 - MET150
@@ -14,12 +14,12 @@ ms.collection:
 - Strat_O365_IP
 - M365-security-compliance
 description: Office 365 中的数据损坏的说明, 以及 Microsoft 预防和恢复的努力。
-ms.openlocfilehash: 54c7c69856f02d44d5c434badb30ababaa32ba1e
-ms.sourcegitcommit: c94cb88a9ce5bcc2d3c558f0fcc648519cc264a2
+ms.openlocfilehash: d33cb298c432db45d560e4c2876d9ac34ab9d6f4
+ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/20/2019
-ms.locfileid: "30090694"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "30216542"
 ---
 # <a name="dealing-with-data-corruption-in-office-365"></a>处理 Office 365 中的数据损坏
 

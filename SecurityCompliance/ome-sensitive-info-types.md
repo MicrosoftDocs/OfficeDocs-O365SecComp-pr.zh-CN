@@ -7,18 +7,18 @@ ms.date: 1/31/2019
 ROBOTS: NOINDEX, NOFOLLOW
 audience: ITPro
 ms.topic: article
-ms.service: Office 365 Administration
+ms.service: O365-seccomp
 localization_priority: None
 search.appverid:
 - MET150
 ms.collection: Strat_O365_Enterprise
 description: '摘要: 敏感信息类型的 Office 365 邮件加密策略现已可用。'
-ms.openlocfilehash: e2a72ee85ca65a2fe8ae1543979b51915ff0a88f
-ms.sourcegitcommit: 24659bdb09f49d0ffed180a4b80bbb7c45c2d301
+ms.openlocfilehash: 99cb7a9f94c9cf4036c11b74a5208ddf0e819ceb
+ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "29696196"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "30213974"
 ---
 # <a name="office-365-message-encryption-policy-for-sensitive-information"></a>适用于敏感信息的 Office 365 邮件加密策略
 

@@ -6,7 +6,7 @@ manager: laurawi
 ms.date: ''
 ms.audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: ''
 search.appverid:
@@ -14,13 +14,29 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: d50cd6cc66f5745852f415533b9aaf2047a91317
-ms.sourcegitcommit: ee28ee2b2bdfd049333c2f495d7f7780d13af4a6
+ms.openlocfilehash: 32e71dc73df1e9abc709a2a1106fcf1b96a354b2
+ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "29607442"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "30217812"
 ---
 # <a name="add-or-remove-members-from-a-case"></a>向/从事例中添加或删除成员
 
-内容即将推出。
+您可以添加或删除成员, 以管理可以访问该事例的人员。请注意, 添加到审阅者或电子数据展示管理器角色组的用户可以添加为该案例的成员。请注意, 创建该事例的电子数据展示管理器将自动添加为成员。
+
+1. 在 "**高级电子数据展示 (预览)** " 页上, 转到您的案例。
+
+2. 转到 "**设置**", 然后选择 "Access & 权限"。
+ 
+3. 单击 "**更新**"。
+ 
+4. 在 "**管理成员**" 下, 单击 "添加图标添加" 以向事例添加成员。您还可以选择向事例中添加角色组。在 "**管理角色组**" 下, 单击 "添加图标"。 请记住, 角色组控制访问该案例的权限。这意味着您只能分配具有案例管理角色的审阅者、电子数据展示管理器或自定义角色组。
+ 
+5. 在可以添加为案例成员的人员或角色组列表中, 单击要添加的人员或角色组的名称旁边的复选框。
+
+6. 选择要添加为组成员的人员或角色组后, 单击 "**添加**"。
+
+7. 在 "**管理此案例**" 中, 单击 "**保存**" 以保存新的事例成员列表。
+
+8. 单击 "**保存**" 以保存新的事例成员列表。

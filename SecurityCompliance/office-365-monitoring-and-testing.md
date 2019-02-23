@@ -6,7 +6,7 @@ manager: laurawi
 ms.date: 8/21/2018
 audience: ITPro
 ms.topic: article
-ms.service: Office 365 Administration
+ms.service: O365-seccomp
 localization_priority: None
 search.appverid:
 - MET150
@@ -14,12 +14,12 @@ ms.collection:
 - Strat_O365_IP
 - M365-security-compliance
 description: '摘要: 说明 Microsoft 如何为 Office 365 监视和测试租户边界。'
-ms.openlocfilehash: 25b6f713d766b4b12e1c250b54421ad99dff8a1c
-ms.sourcegitcommit: c94cb88a9ce5bcc2d3c558f0fcc648519cc264a2
+ms.openlocfilehash: fce217bfcb5fec1ba3fb6da70eb6f9da9a2c1d44
+ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/20/2019
-ms.locfileid: "30090934"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "30221092"
 ---
 # <a name="monitoring-and-testing-tenant-boundaries"></a>监视和测试租户边界
 Microsoft 持续监视和显式测试租户边界中的弱点和漏洞, 包括监视入侵、权限违规尝试和资源不足。我们还使用多个内部系统连续监视不适当的资源利用率 (如果检测到, 则触发内置限制)。

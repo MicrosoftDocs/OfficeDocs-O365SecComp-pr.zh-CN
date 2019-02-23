@@ -7,7 +7,7 @@ ms.audience: Admin
 ms.topic: article
 f1_keywords:
 - ms.o365.cc.SupervisoryReview
-ms.service: o365-administration
+ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection:
 - Strat_O365_IP
@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 ms.assetid: d14ae7c3-fcb0-4a03-967b-cbed861bb086
 description: 设置监管审核策略以捕获员工通信以供审阅。
-ms.openlocfilehash: dee9f21d4b88338a092a64538cca33b41cc481c4
-ms.sourcegitcommit: c94cb88a9ce5bcc2d3c558f0fcc648519cc264a2
+ms.openlocfilehash: af317194fcf551acde8c53cdf6aa38bfb040dc84
+ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/20/2019
-ms.locfileid: "30090954"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "30216732"
 ---
 # <a name="configure-supervision-policies-for-your-organization"></a>配置组织的监督策略
 
@@ -53,7 +53,7 @@ ms.locfileid: "30090954"
 
     测试您的监督策略以确保其正常运行是确保合规性策略满足您的标准所需的重要部分。
 
-- **步骤 6-(可选)**[为不希望使用 Office 365 监督仪表板或 OWA 查看受监督的通信的审阅者设置 Outlook 外接程序](configure-supervision-policies.md#UseOutlook)
+- **步骤 6-(可选)**[为不希望使用 Office 365 监督仪表板或 web 上的 outlook (以前称为 "outlook web App") 的审阅者设置 Outlook 外接程序, 以查看受监督的通信](configure-supervision-policies.md#UseOutlook)
 
     outlook 的监督外接程序为审阅者提供了对 outlook 客户端中的监督功能的访问权限, 以便他们能够评估和分类每个项目。
 

@@ -7,7 +7,7 @@ ms.audience: Admin
 ms.topic: article
 f1_keywords:
 - ms.o365.cc.SupervisoryReview
-ms.service: o365-administration
+ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection:
 - Strat_O365_IP
@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 ms.assetid: d14ae7c3-fcb0-4a03-967b-cbed861bb086
 description: 了解 Office 365 中的监督策略
-ms.openlocfilehash: f715fdcd073f8d75f0046bb3ed5adb1987eec263
-ms.sourcegitcommit: c94cb88a9ce5bcc2d3c558f0fcc648519cc264a2
+ms.openlocfilehash: 7a173809f37262f73671fe6ee96485cda97c1eb3
+ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/20/2019
-ms.locfileid: "30090974"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "30214112"
 ---
 # <a name="supervision-policies-in-office-365"></a>Office 365 中的监督策略
 
@@ -215,7 +215,7 @@ Office 365 中的监督策略使您可以捕获指定审阅者进行检查的员
   
 ### <a name="how-to-use-the-report"></a>如何使用报表
 
-当监督策略标识要审阅的通信邮件时, 该电子邮件将被传递到 outlook 和 outlook web app 中的审阅者的监督文件夹。此报告列出每个策略的名称和审阅过程中每个阶段的通信数。
+当监督策略标识要审阅的通信邮件时, 电子邮件会传递到 outlook 和 web 上的 outlook (以前称为 Outlook web App) 中的审阅者的监督文件夹。此报告列出每个策略的名称和审阅过程中每个阶段的通信数。
   
 使用报告可执行以下操作:
   
@@ -228,7 +228,7 @@ Office 365 中的监督策略使您可以捕获指定审阅者进行检查的员
   
 |**标记类型**|**含义**|
 |:-----|:-----|
-| 未审阅 | 尚未审阅的电子邮件数。这些电子邮件等待在 Office 365 监督仪表板中或在 outlook/outlook Web App 中的审阅者监督文件夹中进行审阅。|
+| 未审阅 | 尚未审阅的电子邮件数。这些电子邮件等待审阅在 Office 365 监督仪表板中, 或在 outlook/outlook 网页网站中的审阅者的监督文件夹中。
 | 合格 | 已审阅并标记为合规的电子邮件数。这些邮件仍需要解析。 |
 | 可靠 | 审阅并标记为可疑的电子邮件数量。此操作可用作标志;其他审阅者可以帮助检查电子邮件是否需要调查合规性。这些邮件仍需要解析。 |
 | 不符合 (活动) | 审阅者当前正在调查的不合规电子邮件数。 |

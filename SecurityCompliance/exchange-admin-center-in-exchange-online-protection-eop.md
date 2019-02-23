@@ -1,7 +1,7 @@
 ---
 title: 'Exchange Online Protection 中的 Exchange 管理中心 '
-ms.author: krowley
-author: kccross
+ms.author: tracyp
+author: MSFTTracyP
 manager: laurawi
 ms.date: 12/9/2016
 ms.audience: ITPro
@@ -12,13 +12,15 @@ localization_priority: Normal
 search.appverid:
 - MET150
 ms.assetid: 97921f0e-832f-40c7-b56d-414faede5191
+ms.collection:
+- M365-security-compliance
 description: Exchange 管理中心 (EAC) 是基于 Web 的 Microsoft Exchange Online Protection (EOP) 的管理控制台。
-ms.openlocfilehash: 144907110af9fcbec1c6399e0695abb705bef409
-ms.sourcegitcommit: e9dca2d6a7838f98bb7eca127fdda2372cda402c
+ms.openlocfilehash: 0d1e56b85afe6655b5c6d08df51d4607df92d1d5
+ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/21/2018
-ms.locfileid: "23002941"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "30220462"
 ---
 # <a name="exchange-admin-center-in-exchange-online-protection"></a>Exchange Online Protection 中的 Exchange 管理中心 
 
@@ -30,7 +32,7 @@ Exchange 管理中心 (EAC) 是基于 Web 的 Microsoft Exchange Online Protecti
   
 ## <a name="accessing-the-eac"></a>访问 EAC
 
-在大多数情况下，EOP 客户将通过 Office 365 管理中心访问 EAC。在**管理员**图块，**我**平铺旁边的下拉列表菜单中，您可以找到到 EOP 的链接。单击**管理员**图块，然后从下拉列表菜单，可以跳转到 EAC 选择**Exchange Online Protection** 。 
+在大多数情况下, EOP 客户将通过 Office 365 管理中心访问 EAC。您可以在**管理**磁贴 ("**我**" 磁贴旁边) 的下拉菜单中找到指向 EOP 的链接。单击 "**管理**" 磁贴, 然后从下拉菜单中选择 " **Exchange Online Protection** " 以转到 EAC。 
   
 您也可以通过以下 URL 直接访问 EAC 登录页面：https://admin.protection.outlook.com/ecp/\<companydomain\>。例如 https://admin.protection.outlook.com/ecp/contoso.onmicrosoft.com。指定用户凭据后，您将直接进入 EAC。
   
@@ -38,21 +40,21 @@ Exchange 管理中心 (EAC) 是基于 Web 的 Microsoft Exchange Online Protecti
 
 本部分将介绍 EAC 中的用户界面元素。
   
-![EOP AdminCenter](media/EOP-AdminCenter.png)
+![EOP-AdminCenter](media/EOP-AdminCenter.png)
   
 ### <a name="feature-pane"></a>功能窗格
 
 这是您要在 EAC 中执行的大部分任务的第一级导航。功能窗格按功能区域组织。
   
-1. **收件人**这是您将在其中查看内部用户和外部联系人。 
+1. **收件人**你可以在此处查看内部用户和外部联系人。 
     
-2. **权限**这将在其中管理管理员角色。 
+2. **权限**这将管理管理员角色。 
     
-3. **合规性管理**这是，您将在其中找到审核日志和报告，例如管理员角色组报告。 
+3. **合规性管理**你可以在此处找到审核日志和报告, 如管理员角色组报告。 
     
-4. **保护**这是，您将为您的组织中管理反恶意软件和反垃圾邮件保护以及管理隔离中的邮件。 
+4. **保护**你可以在此处管理组织的反恶意软件和反垃圾邮件保护, 以及管理隔离邮件。 
     
-5. **邮件流**这是在此处管理规则、 接受的域和连接器，以及您将转执行邮件跟踪。 
+5. **邮件流**你可以在此处管理规则、接受域和连接器, 以及你将在其中执行邮件跟踪的位置。 
     
 ### <a name="tabs"></a>选项卡
 
@@ -69,7 +71,7 @@ Exchange 管理中心 (EAC) 是基于 Web 的 Microsoft Exchange Online Protecti
 |![删除图标](media/ITPro-EAC-DeleteIcon.gif)           <br/> |删除  <br/> |使用此图标可删除对象。有些删除图标有一个向下箭头，单击该箭头可显示其他选项。  <br/> |
 |![搜索图标](media/ITPro-EAC-.gif)           <br/> |搜索  <br/> |使用此图标可打开一个搜索框，可在其中键入要查找的对象的搜索短语。  <br/> |
 |![刷新图标](media/ITPro-EAC-RefreshIcon.gif)           <br/> |刷新  <br/> |使用此图标可刷新列表视图。  <br/> |
-|![更多选项图标](media/ITPro-EAC-MoreOptionsIcon.gif)           <br/> |更多选项  <br/> |使用此图标可查看可以对该选项卡对象执行的操作。例如，在**收件人\>用户**单击此图标显示在**高级搜索**选项。<br/> |
+|![更多选项图标](media/ITPro-EAC-MoreOptionsIcon.gif)           <br/> |更多选项  <br/> |使用此图标可查看可对该选项卡的对象执行的更多操作。例如, 在 "**收件人\> " 用户**单击此图标时, 将显示用于执行**高级搜索**的选项。<br/> |
 |![向上键图标](media/ITPro-EAC-UpArrowIcon.gif)![向下键图标](media/ITPro-EAC-DownArrowIcon.gif)           <br/> |向上箭头和向下箭头  <br/> |使用这些图标可以将对象的优先级上移或下移。  <br/> |
 |![删除图标](media/ITPro-EAC-RemoveIcon.gif)           <br/> |删除  <br/> |使用此图标可从列表中删除对象。  <br/> |
    
@@ -83,15 +85,15 @@ Exchange 管理中心 (EAC) 是基于 Web 的 Microsoft Exchange Online Protecti
   
 ### <a name="me-tile-and-help"></a>自有图块和帮助
 
-**Me**图块，可以注销 EAC，并以其他用户身份登录。从**帮助**![帮助图标](media/ITPro-EAC-HelpIcon.gif)下拉菜单中，您可以执行以下操作： 
+使用 "**我**" 磁贴, 可以注销 EAC 并以其他用户的的形式登录。从 "**帮助**![帮助"](media/ITPro-EAC-HelpIcon.gif)图标下拉菜单中, 可以执行下列操作: 
   
 1. **帮助** 单击 ![帮助图标](media/ITPro-EAC-HelpIcon.gif) 可查看联机帮助内容。 
     
-2. **禁用帮助气泡图**创建或编辑对象时，帮助气泡显示上下文帮助字段。您可以关闭气泡的帮助，或者如果已禁用，则会将其打开。 
+2. **禁用帮助气泡**当您创建或编辑对象时, 帮助气泡会显示字段的上下文帮助。您可以关闭 "帮助" 气泡, 也可以将其打开 (如果已禁用)。 
     
-3. **版权**单击此链接可以阅读 Exchange Online Protection 的版权说明。 
+3. **版权**单击此链接可阅读适用于 Exchange Online Protection 的版权通知。 
     
-4. **隐私**单击以阅读有关 Exchange Online Protection 的隐私策略。 
+4. **隐私**单击以阅读 Exchange Online Protection 的隐私策略。 
     
 ## <a name="supported-browsers"></a>支持的浏览器
 

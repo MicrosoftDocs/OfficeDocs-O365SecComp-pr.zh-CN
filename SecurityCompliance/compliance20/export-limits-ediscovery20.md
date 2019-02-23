@@ -1,12 +1,12 @@
 ---
-title: 导出高级电子数据展示 (Preview) 中的限制
+title: 在高级电子数据展示中导出限制 (预览)
 ms.author: markjjo
 author: markjjo
 manager: laurawi
 ms.date: ''
 ms.audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: ''
 search.appverid:
@@ -14,13 +14,13 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: af5578ead0e676c892fa0c01bacdf42dc347d268
-ms.sourcegitcommit: ee28ee2b2bdfd049333c2f495d7f7780d13af4a6
+ms.openlocfilehash: f8c2ab0ea0f01f436bb1d365e3b7bd87affcef5f
+ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "29607434"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "30220572"
 ---
-# <a name="export-limits-in-advanced-ediscovery-preview"></a>导出高级电子数据展示 (Preview) 中的限制
+# <a name="export-limits-in-advanced-ediscovery-preview"></a>在高级电子数据展示中导出限制 (预览)
 
 内容即将推出。

@@ -1,174 +1,173 @@
 ---
-title: 电子数据展示解决方案系列数据泄漏方案-搜索和清除
+title: 电子数据展示解决方案系列数据外泄方案-搜索和清除
 ms.author: markjjo
 author: markjjo
 manager: laurawi
-ms.date: ''
 ms.audience: ITPro
 ms.topic: article
-ms.service: o365-administration
+ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid:
 - MET150
 ms.assetid: d945f7dd-f62f-4ca7-b3e7-469824cfd493
-description: 使用 Office 365 电子数据展示和搜索工具来管理并响应在组织中的数据泄漏事件。
-ms.openlocfilehash: d2c5a0a6efcc75a38df97c7c597503e5642f83eb
-ms.sourcegitcommit: 659b5f5b38ef7e838cdb44eaa38c18e48d922768
+description: 使用 Office 365 电子数据展示和搜索工具来管理和响应组织中的数据外泄事件。
+ms.openlocfilehash: 0da49dfbe8104d89a1abf4a14adce51ec0ef25f1
+ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/16/2018
-ms.locfileid: "25575346"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "30219422"
 ---
-# <a name="ediscovery-solution-series-data-spillage-scenario---search-and-purge"></a>电子数据展示解决方案系列： 数据泄漏方案-搜索和清除
+# <a name="ediscovery-solution-series-data-spillage-scenario---search-and-purge"></a>电子数据展示解决方案系列: Data 外泄方案-搜索和清除
 
- **什么是数据泄漏为什么小心您？** 机密文档发布到不受信任的环境时，数据泄漏。检测到数据泄漏事件时，务必快速评估的大小和位置的损耗情况、 检查周围的用户活动，然后在系统中永久清除溅入的数据。 
+ **什么是数据外泄, 为什么要关注？** 数据外泄是将机密文档发布到不受信任的环境时。检测到 data 外泄事件时, 务必要快速评估外泄的大小和位置, 检查其周围的用户活动, 然后从系统中永久清除溢出的数据。 
   
-## <a name="data-spillage-scenario"></a>数据泄漏方案
+## <a name="data-spillage-scenario"></a>Data 外泄方案
 
-您在 Contoso 的潜在顾客信息安全专员。其中员工不知情的情况下共享高度机密文档与多人通过电子邮件的数据泄漏情况的情况下将通知您。您希望快速评估内部和外部，用户会收到此文档。确定后，您想要与其他调查员查看，，然后从 Office 365 永久移除数据共享案例研究结果。完成调查后，您想要永久删除和其他案例的详细信息的任何供他们将来参考的证据生成报告。
+你是 Contoso 的潜在客户信息安全官员。您会收到一种数据外泄情况, 其中员工在不知情的情况下通过电子邮件与多个人共享高度机密的文档。您希望快速评估在内部和外部接收此文档的用户。确定后, 您想要与其他调查人员共享案例发现以进行审核, 然后永久删除 Office 365 中的数据。调查完成后, 您需要生成一个报告, 其中包含永久删除的证据和其他案例的详细信息, 以供将来参考。
   
 ### <a name="scope-of-this-article"></a>本文的范围
 
-本文档提供有关如何从中永久删除一条消息，Office 365，以便不访问或可恢复的说明的列表。若要删除一条消息，并使其可恢复已删除的邮件保留期限过期之前，请参阅[搜索和删除 Office 365 组织中的电子邮件](search-for-and-delete-messages-in-your-organization.md)。
+本文档提供了有关如何从 Office 365 中永久删除邮件以使其不可访问或可恢复的说明的列表。若要在已删除项目的保留期过期之前删除邮件并使其可恢复, 请参阅[在 Office 365 组织中搜索和删除电子邮件](search-for-and-delete-messages-in-your-organization.md)。
   
-## <a name="workflow-for-managing-data-spillage-incidents"></a>用于管理数据泄漏事件工作流
+## <a name="workflow-for-managing-data-spillage-incidents"></a>用于管理数据外泄事件的工作流
 
-下面是如何管理数据泄漏事件：
+下面介绍了如何管理数据外泄事件:
 
-![用于管理数据泄漏事件 8 步骤工作流](media/O365-eDiscoverySolutions-DataSpillage-workflow.png)
+![用于管理数据外泄事件的8步工作流](media/O365-eDiscoverySolutions-DataSpillage-workflow.png)
   
-[（可选）步骤 1： 管理谁可以访问案例和设置合规性边界](#optional-step-1-manage-who-can-access-the-case-and-set-compliance-boundaries)<br/>
-[步骤 2： 创建电子数据展示事例](#step-2-create-an-ediscovery-case)<br/>
-[步骤 3： 搜索溅入数据](#step-3-search-for-the-spilled-data)<br/>
-[步骤 4： 检查和验证案例研究结果](#step-4-review-and-validate-case-findings)<br/>
-[步骤 5： 使用邮件跟踪日志以检查如何溅入的数据的共享](#step-5-use-message-trace-log-to-check-how-spilled-data-was-shared)<br/>
-[步骤 6： 准备邮箱](#step-6-prepare-the-mailboxes)<br/>
-[步骤 7： 永久删除溅入的数据](#step-7-permanently-delete-the-spilled-data)<br/>
-[步骤 8： 验证，提供身份证明删除，并审核](#step-8-verify-provide-a-proof-of-deletion-and-audit)<br/>
+[Optional第1步: 管理可访问事例和设置合规性边界的人士](#optional-step-1-manage-who-can-access-the-case-and-set-compliance-boundaries)<br/>
+[步骤 2: 创建电子数据展示事例](#step-2-create-an-ediscovery-case)<br/>
+[步骤 3: 搜索溢出的数据](#step-3-search-for-the-spilled-data)<br/>
+[步骤 4: 查看和验证案例发现](#step-4-review-and-validate-case-findings)<br/>
+[步骤 5: 使用邮件跟踪日志检查溢出数据的共享方式](#step-5-use-message-trace-log-to-check-how-spilled-data-was-shared)<br/>
+[步骤 6: 准备邮箱](#step-6-prepare-the-mailboxes)<br/>
+[步骤 7: 永久删除溢出的数据](#step-7-permanently-delete-the-spilled-data)<br/>
+[步骤 8: 验证、提供删除证明和审核](#step-8-verify-provide-a-proof-of-deletion-and-audit)<br/>
 
-## <a name="things-to-know-before-you-start"></a>在开始前须知
+## <a name="things-to-know-before-you-start"></a>开始之前需要了解的事项
 
-- 置于保持状态的邮箱后，已删除的邮件将一直在可恢复邮件文件夹保留期到期或保留释放。[步骤 6](#step-6-prepare-the-mailboxes)介绍如何删除邮箱的保留。删除保留之前咨询您的记录管理或法律部门。您的组织可能必须定义上的邮箱是否保留策略或数据泄漏事件优先。 
+- 当邮箱处于保留状态时, 已删除邮件将保留在 "可恢复的项目" 文件夹中, 直到保留期过期或释放保留期。[步骤 6](#step-6-prepare-the-mailboxes)介绍了如何从邮箱中删除保留。在删除保留之前, 请与您的记录管理或法律部门确认。您的组织可能有定义邮箱处于保留状态或 data 外泄事件是否优先的策略。 
     
-- 若要控制哪些用户邮箱数据泄漏调查员可以搜索和管理谁可以访问这种情况，可以设置合规性边界，还可以创建自定义角色组，[第 1 步](#optional-step-1-manage-who-can-access-the-case-and-set-compliance-boundaries)中所述。若要执行此操作，您必须是组织管理角色组的成员或角色管理角色分配。如果您或在组织中的管理员已设置合规性边界，则可以跳过步骤 1。
+- 若要控制数据外泄调查人员可以搜索和管理可访问该案例的用户邮箱, 您可以设置合规性边界并创建自定义角色组, 如[步骤 1](#optional-step-1-manage-who-can-access-the-case-and-set-compliance-boundaries)中所述。若要执行此操作, 您必须是 "组织管理" 角色组的成员, 或分配有角色管理角色。如果您或您的组织中的管理员已设置了合规性边界, 则可以跳过步骤1。
     
-- 创建用例，您必须是电子数据展示管理员角色组的成员，或者是已分配的案例管理角色自定义角色组的成员。如果您不是成员，请求[将您添加到电子数据展示管理员角色组](assign-ediscovery-permissions.md)向 Office 365 管理员。
+- 若要创建案例, 您必须是电子数据展示管理器角色组的成员, 或者是分配有案例管理角色的自定义角色组的成员。如果你不是成员, 请让 Office 365 管理员[将你添加到电子数据展示管理器角色组](assign-ediscovery-permissions.md)。
     
-- 若要删除溢出至您的组织的数据，您需要在 Exchange Online PowerShell 中使用[Search-mailbox DeleteContent](https://docs.microsoft.com/powershell/module/exchange/mailboxes/Search-Mailbox?view=exchange-ps)命令。此外，若要使用*DeleteContent*参数，您还必须是 Exchange Online 邮箱导入导出角色分配中角色组的成员。请参阅在[管理角色组](https://technet.microsoft.com/library/jj657480%28v=exchg.150%29.aspx)"将角色添加到角色组"部分。
+- 若要删除溢出组织中的数据, 需要使用 Exchange Online PowerShell 中的[搜索-邮箱-DeleteContent](https://docs.microsoft.com/powershell/module/exchange/mailboxes/Search-Mailbox?view=exchange-ps)命令。此外, 若要使用*DeleteContent*参数, 您还必须是 Exchange Online 中分配有邮箱导入导出角色的角色组的成员。请参阅[管理角色组](https://technet.microsoft.com/library/jj657480%28v=exchg.150%29.aspx)中的 "向角色组添加角色" 部分。
     
-- 若要在步骤 8 中搜索的 Office 365 审核日志电子数据展示活动，必须打开审核为您的组织。您可以搜索最近 90 天内执行的活动。若要详细了解如何启用和使用审核，请参阅步骤 8 中的[审核数据泄漏调查过程](#auditing-the-data-spillage-investigation-process)一节。 
+- 若要在步骤8中搜索 Office 365 审核日志电子数据展示活动, 必须为您的组织启用审核。您可以搜索在过去的90天内执行的活动。若要了解有关如何启用和使用审核的详细信息, 请参阅步骤8中的 "[审核数据外泄调查过程](#auditing-the-data-spillage-investigation-process)" 一节。 
     
-## <a name="optional-step-1-manage-who-can-access-the-case-and-set-compliance-boundaries"></a>（可选）步骤 1： 管理谁可以访问案例和设置合规性边界
+## <a name="optional-step-1-manage-who-can-access-the-case-and-set-compliance-boundaries"></a>Optional第1步: 管理可访问事例和设置合规性边界的人士
 
-根据您组织的做法是，您需要控制哪些人可以访问用于调查数据泄漏事件并设置合规性边界电子数据展示事例。执行此操作的最简单方式是为 Office 365 安全性和合规性中心中的现有角色组的成员添加调查人员，然后添加以电子数据展示事例的成员身份的角色组。有关内置电子数据展示角色组以及如何将成员添加到电子数据展示事例的信息，请参阅[分配 Office 365 安全性的电子数据展示权限&amp;合规性中心](assign-ediscovery-permissions.md)。
+根据您的组织实践, 您需要控制谁可以访问用于调查 data 外泄事件和设置合规性边界的电子数据展示事例。执行此操作最简单的方法是将调查人员添加为 Office 365 Security & 合规中心中现有角色组的成员, 然后将该角色组添加为电子数据展示事例的成员。有关内置电子数据展示角色组以及如何将成员添加到电子数据展示事例的信息, 请参阅[在 Office 365 安全&amp;合规中心中分配电子数据展示权限](assign-ediscovery-permissions.md)。
   
-您还可以创建新的角色组的与您组织的需求。例如，您可能希望来访问和协作的所有数据泄漏情况下在组织中的数据泄漏调查人员组。您可以通过创建"数据泄漏调查员"角色组、 分配适当的角色 （导出、 RMS 解密、 审阅、 预览、 合规性搜索和案例管理）、 向角色组中，添加数据泄漏调查人员，然后添加执行此操作数据泄漏电子数据展示事例的成员身份的角色组。有关如何执行此操作的详细说明，请参阅[设置 Office 365 中的电子数据展示调查的合规性边界](set-up-compliance-boundaries.md)。 
+您还可以创建与您的组织需求相符的新角色组。例如, 您可能希望组织中的一组数据外泄调查人员访问所有数据外泄案例并对其进行协作。若要执行此操作, 可以创建 "Data 外泄调查者" 角色组, 分配适当的角色 (导出、RMS 解密、审阅、预览、合规性搜索和事例管理), 将数据外泄调查人员添加到角色组, 然后添加作为数据外泄电子数据展示事例的成员的角色组。有关如何执行此操作的详细说明, 请参阅为[Office 365 中的电子数据展示调查设置合规性边界](set-up-compliance-boundaries.md)。 
   
-## <a name="step-2-create-an-ediscovery-case"></a>步骤 2： 创建电子数据展示事例
+## <a name="step-2-create-an-ediscovery-case"></a>步骤 2: 创建电子数据展示事例
 
-电子数据展示事例提供有效的方式来管理您的数据泄漏调查。可以将成员添加到您在步骤 1 中创建的角色组、 角色组添加成员的新电子数据展示事例，身份执行迭代搜索以查找溅入的数据、 导出报表以共享、 跟踪状态的情况下，然后回顾到 c 的详细信息如果需要，ase。请考虑建立用于数据泄漏事件的电子数据展示事例的命名约定，并提供尽可能多的信息，您可以在的大小写的名称和说明，以便您可以找到并如有必要，以便将来参考。
+电子数据展示案例提供了一种有效的方法来管理数据外泄调查。您可以将成员添加到您在步骤1中创建的角色组, 将角色组添加为新的电子数据展示事例的成员, 执行迭代搜索以查找溢出的数据、将报告导出到共享、跟踪该事例的状态, 然后返回 c 的详细信息。如果需要, 则为 ase。考虑为数据外泄事件使用的电子数据展示事例建立命名约定, 并在事例名称和说明中提供尽可能多的信息, 以便在将来必要时可以找到并参考。
   
-若要创建新的用例，可以使用电子数据展示中安全&amp;合规性中心。请参阅[Office 365 安全性和合规性中心中的电子数据展示事例](ediscovery-cases.md#step-2-create-a-new-case)中的"创建新的用例"。
+若要创建新的案例, 可以使用安全&amp;合规性中心中的电子数据展示。请参阅[Office 365 Security & 合规中心中的电子数据展示案例](ediscovery-cases.md#step-2-create-a-new-case)中的 "创建新事例"。
   
-## <a name="step-3-search-for-the-spilled-data"></a>步骤 3： 搜索溅入数据
+## <a name="step-3-search-for-the-spilled-data"></a>步骤 3: 搜索溢出的数据
 
-现在您已创建案例和托管的访问，您可以使用这种情况反复搜索来查找溅入的数据并确定包含溅入的数据的邮箱。您将使用您用来查找要删除在[步骤 7](#step-7-permanently-delete-the-spilled-data)中这些相同的邮件的电子邮件的同一个搜索查询。
+现在, 您已经创建了一个事例和托管访问, 您可以使用这种情况进行反复搜索, 以查找溢出的数据, 并识别包含溢出数据的邮箱。您将使用相同的搜索查询来查找在[步骤 7](#step-7-permanently-delete-the-spilled-data)中删除这些相同邮件的电子邮件。
   
-若要创建内容电子数据展示事例与搜索关联，请参阅[Office 365 安全性和合规性中心中的电子数据展示事例](ediscovery-cases.md#step-5-create-and-run-a-content-search-associated-with-a-case)中的"创建和运行与案例相关的内容搜索"。
+若要创建与电子数据展示事例相关联的内容搜索, 请参阅[Office 365 Security & 合规中心中的](ediscovery-cases.md#step-5-create-and-run-a-content-search-associated-with-a-case)"创建和运行与事例关联的内容搜索"。
   
- **重要：** 搜索查询中使用的关键字可能包含您要搜索的实际溅入的数据。例如，如果搜索包含社会保险号码和您的文档使用 it 作为搜索关键字，则必须删除查询以后避免进一步损耗情况。请参阅在步骤 8 中的[删除搜索查询](#deleting-the-search-query)。 
+ **重要说明:** 您在搜索查询中使用的关键字可能包含要搜索的实际溢出数据。例如, 如果您搜索包含社会保险号码的文档, 并将其用作搜索关键字, 则必须随后删除该查询以避免进一步外泄。请参阅在步骤8中[删除搜索查询](#deleting-the-search-query)。 
   
-## <a name="step-4-review-and-validate-case-findings"></a>步骤 4： 检查和验证案例研究结果
+## <a name="step-4-review-and-validate-case-findings"></a>步骤 4: 查看和验证案例发现
 
-创建内容搜索后，您需要能够查看并验证搜索结果，并验证仅包含，必须先删除电子邮件。在内容搜索中，您可以预览 1,000 电子邮件的随机采样而不导出搜索结果，以避免更多数据泄漏。您可以阅读更多有关预览限制在[Limits for Office 365 安全性内容搜索&amp;合规性中心](limits-for-content-search.md)。
+创建内容搜索后, 需要查看并验证搜索结果, 并验证它们是否仅包含必须删除的电子邮件。在内容搜索中, 可以预览1000电子邮件的随机采样, 而无需导出搜索结果以避免进一步的数据外泄。您可以阅读有关[Office 365 安全&amp;合规性中心中的内容搜索限制](limits-for-content-search.md)的预览限制的详细信息。
   
-如果您有邮箱，可查看每 1,000 个以上的邮箱或 100 多个电子邮件，您可以使用其他关键字或日期范围或发件人/收件人如条件的初始搜索将多个搜索分成并查看每个搜索结果单独。请确保记下您删除[步骤 7](#step-7-permanently-delete-the-spilled-data)中的邮件时要使用的所有搜索查询。
+如果要查看的邮箱超过1000个或多于100个电子邮件, 可以使用其他关键字或条件 (如日期范围或发件人/收件人) 并查看每个搜索的结果, 将初始搜索划分为多个搜索。零售.请务必记下在[步骤 7](#step-7-permanently-delete-the-spilled-data)中删除邮件时要使用的所有搜索查询。
 
-如果管理员或最终用户分配一个 Office 36 E5 许可证，您可以检查最多 10,000 同时使用 Office 365 高级电子数据展示的搜索结果。如果有 10,000 个以上的电子邮件以查看，您可以除以日期范围的搜索查询并按日期排序结果的搜索单独查看每个结果。在高级电子数据展示，可以标记预览面板中使用**标签作为**功能的搜索结果，并按您标记的标记筛选搜索结果。与辅助审阅者协作时，这非常有用。使用高级电子数据展示，如光学字符识别、 电子邮件超线程，和预测编码中其他分析工具可以快速处理和查看数千个邮件并标记这些进行进一步审阅。请参阅[快速设置 Office 365 高级电子数据展示](quick-setup-for-advanced-ediscovery.md)。
+如果为保管人或最终用户分配了 Office 36 E5 许可证, 则可以使用 office 365 高级电子数据展示一次性检查10000个搜索结果。如果要查看的电子邮件数超过10000个, 可以按日期范围划分搜索查询, 并在搜索结果按日期排序时分别查看每个结果。在高级电子数据展示中, 可以使用预览面板中的 "**标签为**" 功能标记搜索结果, 并按标记的标记筛选搜索结果。当您与辅助审阅者进行协作时, 这将非常有用。通过使用高级电子数据展示中的其他分析工具 (如光学字符识别、电子邮件线程和预测编码), 您可以快速处理和查看成千上万封邮件, 并标记它们以供进一步审阅。请参阅[Office 365 高级电子数据展示的快速设置](quick-setup-for-advanced-ediscovery.md)。
 
-找到包含溅入的数据的电子邮件后，检查邮件以确定共享已从外部的收件人。为进一步的跟踪消息，可以收集发件人信息和日期范围，以便您可以使用邮件跟踪日志，[步骤 5](#step-5-use-message-trace-log-to-check-how-spilled-data-was-shared)中所述。
+当您找到包含溢出数据的电子邮件时, 请检查邮件的收件人以确定它是否是在外部共享的。若要进一步跟踪邮件, 可以收集发件人信息和日期范围, 以便您可以使用[步骤 5](#step-5-use-message-trace-log-to-check-how-spilled-data-was-shared)中所述的邮件跟踪日志。
 
-验证搜索结果的做，您可能想要第二审阅与其他人共享您的发现。分配给这种情况，在步骤 1 中的人员可以查看案例中电子数据展示和高级电子数据展示内容和批准案例研究结果。您还可以生成报表，而不将导出的实际内容。您还可以用作此相同的报告证明删除[第 8 步](#step-8-verify-provide-a-proof-of-deletion-and-audit)中所述。
+Afer 您验证了搜索结果, 您可能需要与其他人共享你的发现以进行辅助评审。在步骤1中分配案例的人员可以在电子数据展示和高级电子数据展示和批准案例发现中查看事例内容。您还可以在不导出实际内容的情况下生成报告。您还可以使用此报告作为删除证明, 如[步骤 8](#step-8-verify-provide-a-proof-of-deletion-and-audit)中所述。
   
- **若要生成统计报告：**
+ **生成统计报告:**
   
-1. 转到电子数据展示案例，在**搜索**页上，单击您想要生成的报告的搜索。 
+1. 转到电子数据展示事例中的 "**搜索**" 页, 然后单击要为其生成报告的搜索。 
     
-2. 在弹出页上，单击**更多 > 将报表导出**。
+2. 在弹出页面上, 单击 "**更多 > 导出报告**"。
  
-      显示导出报告页。
+      将显示 "导出报告" 页。
 
-    ![选择搜索，然后单击更多 > 导出弹出上的报告](media/O365-eDiscoverySolutions-DataSpillage-ExportReport1.png)
+    ![选择搜索, 然后单击弹出页面上的 "更多 > 导出报告"。](media/O365-eDiscoverySolutions-DataSpillage-ExportReport1.png)
     
-3. 选择**所有项目，包括具有无法识别的格式进行加密，或出于其他原因或者没有索引**，然后单击**生成报表**。
+3. 选择**所有项目, 包括不可识别格式的项目、加密的项目或未针对其他原因编制索引的项目**, 然后单击 "**生成报告**"。
 
-4. 在电子数据展示案例中，单击**导出**要显示的导出作业列表。您可能需要单击**刷新**更新该列表以显示您刚创建的导出作业。
+4. 在电子数据展示事例中, 单击 "**导出**" 以显示导出作业的列表。您可能需要单击 "**刷新**" 以更新列表, 以显示刚创建的导出作业。
 
-5. 单击导出作业，，然后单击**下载**弹出页上的报告。
+5. 单击 "导出" 作业, 然后单击弹出页面上的 "**下载**报告"。
  
-    ![在导出页上，单击导出，然后单击"下载报告"](media/O365-eDiscoverySolutions-DataSpillage-ExportReport2.png)
+    ![在 "导出" 页上, 单击 "导出", 然后单击 "下载报告"](media/O365-eDiscoverySolutions-DataSpillage-ExportReport2.png)
 
-**导出摘要**报告中包含位置发现结果和大小的搜索结果数。您可以使用此进行比较的删除后生成的报告中提供与证明删除。**结果**报告包含搜索结果，包括主题、 发件人、 收件人，如果读取的电子邮件、 日期和每封邮件的大小的更详细的摘要。如果在此报告的详细信息的任何包含实际溅入的数据，请务必完成调查后永久删除 Results.csv 文件。
+"**导出摘要**" 报告包含找到的位置数以及搜索结果的大小。您可以使用它来与删除后生成的报告进行比较, 并作为删除证明提供。**结果**报告包含搜索结果的更详细摘要, 包括主题、发件人、收件人、电子邮件的阅读时间、日期以及每封邮件的大小。如果此报告中的任何详细信息包含实际溢出的数据, 请务必在调查完成后永久删除结果 .csv 文件。
 
-有关导出报告的详细信息，请参阅[导出内容的搜索报告](export-a-content-search-report.md)。
+有关导出报告的详细信息, 请参阅[导出内容搜索报告](export-a-content-search-report.md)。
     
-## <a name="step-5-use-message-trace-log-to-check-how-spilled-data-was-shared"></a>步骤 5： 使用邮件跟踪日志以检查如何溅入的数据的共享
+## <a name="step-5-use-message-trace-log-to-check-how-spilled-data-was-shared"></a>步骤 5: 使用邮件跟踪日志检查溢出数据的共享方式
 
-若要进一步调查如果共享溅入数据的电子邮件，您可以 （可选） 查询邮件跟踪日志的发件人信息和步骤 4 中收集的日期范围信息。请注意，邮件跟踪的保留期 30 天的实时数据和 90 天的历史数据。
+若要进一步调查是否已共享带有溢出数据的电子邮件, 您可以选择使用您在步骤4中收集的发件人信息和日期范围信息查询邮件跟踪日志。请注意, 邮件跟踪的保留期为实时数据的30天, 历史数据为90天。
   
-您可以使用安全性和合规性中心中的邮件跟踪，或使用相应的 cmdlet 在 Exchange Online PowerShell。请务必注意邮件跟踪不提供完整保证能返回的数据完整性。有关使用邮件跟踪的详细信息，请参阅： 
+您可以使用 Security & 合规性中心中的邮件跟踪或在 Exchange Online PowerShell 中使用相应的 cmdlet。需要注意的重要一点是, 邮件跟踪没有提供对返回数据完整性的完全保证。有关使用邮件跟踪的详细信息, 请参阅: 
   
-- [邮件跟踪 Office 365 安全性&amp;合规性中心](https://support.office.com/article/3e64f99d-ac33-4aba-91c5-9cb4ca476803.aspx)
+- [Office 365 安全&amp;合规中心中的邮件跟踪](https://support.office.com/article/3e64f99d-ac33-4aba-91c5-9cb4ca476803.aspx)
     
-- [新的 Message Trace in Office 365 安全性&amp;合规性中心](https://blogs.technet.microsoft.com/exchange/2018/05/02/new-message-trace-in-office-365-security-compliance-center/)
+- [Office 365 安全&amp;合规中心中的新邮件跟踪](https://blogs.technet.microsoft.com/exchange/2018/05/02/new-message-trace-in-office-365-security-compliance-center/)
     
-## <a name="step-6-prepare-the-mailboxes"></a>步骤 6： 准备邮箱
+## <a name="step-6-prepare-the-mailboxes"></a>步骤 6: 准备邮箱
 
-查看并验证搜索结果包含必须删除邮件之后，您需要收集受影响的邮箱，运行**搜索邮箱 DeleteContent**命令时，在步骤 7 中使用的电子邮件地址的列表。您可能还需要准备邮箱之前，可永久删除电子邮件，具体取决于是否在包含溅入的数据或如果任何这些邮箱上保留的邮箱启用单个项目恢复。
+在查看并验证搜索结果只包含必须删除的邮件之后, 您需要收集受影响邮箱的电子邮件地址列表, 以便在运行**搜索邮箱-DeleteContent**命令时在步骤7中使用。您可能还必须准备邮箱, 然后才能永久删除电子邮件, 具体取决于是否在包含溢出数据的邮箱上启用单个项目恢复, 或者这些邮箱处于保留状态。
   
-### <a name="get-a-list-of-addresses-of-mailboxes-with-spilled-data"></a>获取与溅入数据的邮箱的地址列表
+### <a name="get-a-list-of-addresses-of-mailboxes-with-spilled-data"></a>获取带溢出数据的邮箱的地址列表
 
-有两种方法来收集的与溅入数据的邮箱的电子邮件地址列表。
+有两种方法可以收集带有溢出数据的邮箱的电子邮件地址列表。
 
-**选项 1： 获取与溅入数据的邮箱的地址列表**
+**选项 1: 获取带有溢出数据的邮箱的地址列表**
 
-1. 打开电子数据展示事例，转到**搜索**页并选择适当的内容搜索。 
+1. 打开电子数据展示事例, 转到 "**搜索**" 页并选择相应的内容搜索。 
     
-2. 在弹出页上，单击**查看结果**。
+2. 在弹出页面上, 单击 "**查看结果**"。
     
-3. 在**单个结果**下拉列表中单击**搜索统计信息**。
+3. 在 "**单个结果**" 下拉列表中, 单击 "**搜索统计信息**"。
     
-4. 在**类型**下拉列表中，单击**顶部的位置**。
+4. 在 "**类型**" 下拉列表中, 单击 "**顶部位置**"。
     
-    ![获取包含在搜索统计信息的顶部的位置页上的搜索结果的邮箱的列表](media/O365-eDiscoverySolutions-DataSpillage-TopLocations.png)
+    ![获取搜索统计信息的 "顶部位置" 页上包含搜索结果的邮箱的列表](media/O365-eDiscoverySolutions-DataSpillage-TopLocations.png)
 
-    显示包含搜索结果的邮箱的列表。此外会显示每个邮箱中的搜索查询匹配的项目数。
+    将显示包含搜索结果的邮箱的列表。同时显示与搜索查询匹配的每个邮箱中的项目数。
     
-5. 列表中的信息复制和保存到文件或单击**下载**以下载到 CSV 文件的信息。 
+5. 复制列表中的信息并将其保存到文件中, 或单击 "**下载**" 将信息下载到 CSV 文件中。 
     
-**选项 2： 将邮箱位置获得导出报告**
+**选项 2: 从导出报告中获取邮箱位置**
 
-在[步骤 4](#step-4-review-and-validate-case-findings)中打开您下载的导出摘要报表。在报表的第一列，**位置**下列出每个邮箱的电子邮件地址。
+打开您在[步骤 4](#step-4-review-and-validate-case-findings)中下载的导出摘要报告。在报告中的第一列中, 每个邮箱的电子邮件地址在 "**位置**" 下列出。
   
-### <a name="prepare-the-mailboxes-so-you-can-delete-the-spilled-data"></a>准备邮箱，因此您可以删除溅入的数据
+### <a name="prepare-the-mailboxes-so-you-can-delete-the-spilled-data"></a>准备邮箱, 以便您可以删除溢出的数据
 
-如果启用单个项目恢复或邮箱置于保持状态，则将可恢复的项目文件夹中保留永久删除 （清除） 的邮件。因此，可以清除溅入的数据之前，您需要检查的现有邮箱配置并禁用单个项目恢复，删除任何保持或 Office 365 保留策略。请记住，您可以准备一个邮箱一次，然后在不同的邮箱上运行在同一个命令或创建同时准备多个邮箱的 PowerShell 脚本。
+如果启用了单个项目恢复或将邮箱置于保留状态, 则将在 "可恢复的项目" 文件夹中保留永久删除的 (清除的) 邮件。因此, 在清除溢出的数据之前, 您需要检查现有的邮箱配置并禁用单个项目恢复, 并删除任何保留或 Office 365 保留策略。请注意, 您可以一次准备一个邮箱, 然后在不同的邮箱上运行相同的命令, 也可以创建一个 PowerShell 脚本来同时准备多个邮箱。
 
-- 请参阅"步骤 1： 收集信息有关邮箱"中的说明有关如何检查是否启用单个项目恢复或如果邮箱置于保留或分配给[删除在可恢复项目文件夹中的基于云的邮箱的保留项](delete-items-in-the-recoverable-items-folder-of-mailboxes-on-hold.md#step-1-collect-information-about-the-mailbox)保留策略。 
+- 请参阅 "[删除基于云的邮箱的可恢复项目文件夹中的邮件" 文件夹](delete-items-in-the-recoverable-items-folder-of-mailboxes-on-hold.md#step-1-collect-information-about-the-mailbox)中的 "步骤 1: 收集有关邮箱的信息", 了解有关如何检查是否启用了单个项目恢复或者是否将邮箱置于保留状态或分配给了邮箱的说明保留策略。 
     
-- 请参阅"步骤 2： 准备邮箱"中[删除在可恢复项目文件夹中的基于云的邮箱的保留的项目](delete-items-in-the-recoverable-items-folder-of-mailboxes-on-hold.md#step-2-prepare-the-mailbox)有关禁用单个项目恢复的说明。 
+- 若要了解如何禁用单个项目恢复, 请参阅 "[删除基于云的邮箱的可恢复项目文件夹中的项目](delete-items-in-the-recoverable-items-folder-of-mailboxes-on-hold.md#step-2-prepare-the-mailbox)" 中的 "步骤 2: 准备邮箱"。 
     
-- 请参阅"步骤 3： 删除邮箱的所有保留项"中[删除在可恢复项目文件夹中的基于云的邮箱的保留的项目](delete-items-in-the-recoverable-items-folder-of-mailboxes-on-hold.md#step-3-remove-all-holds-from-the-mailbox)有关如何从邮箱中删除保持或保留策略的说明。 
+- 有关如何从邮箱中删除保留策略或保留策略的说明, 请参阅在[保留基于云的邮箱的 "可恢复的项目" 文件夹的 "删除邮件](delete-items-in-the-recoverable-items-folder-of-mailboxes-on-hold.md#step-3-remove-all-holds-from-the-mailbox)" 中的 "删除邮箱中的所有保留"。 
 
-- 请参阅"步骤 4： 删除延迟从邮箱中保留"中[删除在可恢复项目文件夹中的基于云的邮箱的保留的项目](delete-items-in-the-recoverable-items-folder-of-mailboxes-on-hold.md#step-4-remove-the-delay-hold-from-the-mailbox)有关删除后删除任何类型的保留邮箱发出的延迟保留项的说明。
+- 请参阅在 "[删除基于云的邮箱的可恢复项目" 文件夹](delete-items-in-the-recoverable-items-folder-of-mailboxes-on-hold.md#step-4-remove-the-delay-hold-from-the-mailbox)中的 "删除项目" 中的 "删除邮箱中的延迟保留" 中的 "删除项目" 中有关删除在删除任何类型的保留后邮箱的延迟保留的说明。
     
- **重要：** 删除保留或保留策略之前，请与记录管理或法律部门。您的组织可能有定义上的邮箱是否保留策略或数据泄漏事件优先。 
+ **重要说明:** 在删除保留策略或保留策略之前, 请与您的记录管理或法律部门进行确认。您的组织可能有定义邮箱处于保留状态或 data 外泄事件是否优先的策略。 
   
-请务必验证溅入的数据已被永久删除后还原到先前的配置的邮箱。请参阅[步骤 7](#step-7-permanently-delete-the-spilled-data)中的详细信息。
+确认溢出的数据已永久删除后, 请务必将邮箱还原为以前的配置。请参阅[第7步](#step-7-permanently-delete-the-spilled-data)中的详细信息。
 
-## <a name="step-7-permanently-delete-the-spilled-data"></a>步骤 7： 永久删除溅入的数据
+## <a name="step-7-permanently-delete-the-spilled-data"></a>步骤 7: 永久删除溢出的数据
 
-使用收集和准备步骤 6 和创建和精简查找包含溅入的数据的电子邮件的步骤 3 中的搜索查询中的邮箱位置，您可以立即永久删除溅入的数据。如前所述，您必须为其分配邮箱导入导出角色在 Exchange Online 中删除邮件使用以下过程。
+使用您在步骤6中收集和准备的邮箱位置以及在步骤3中创建并完善的搜索查询中的步骤 3, 以查找包含溢出数据的电子邮件, 您现在可以永久删除溢出的数据。如前所述, 您必须分配有 Exchange Online 中的 "邮箱导入导出" 角色, 才能使用以下过程删除邮件。
   
 1. [连接到 Exchange Online PowerShell](https://go.microsoft.com/fwlink/?linkid=396554)。
     
@@ -178,7 +177,7 @@ ms.locfileid: "25575346"
     Search-Mailbox -Identity <mailbox identity> -SearchDumpster -DeleteContent $true -SearchQuery <search query>
     ```
   
-3. 重新运行前面的命令通过将为 Identity 参数; 值包含溅入的数据，每个邮箱例如：
+3. 通过替换 Identity 参数的值, 为包含溢出数据的每个邮箱重新运行上一个命令;例如:
 
     ```
     Search-Mailbox -Identity sarad@contoso.onmicrosoft.com -SearchQuery <search query> -DeleteContent
@@ -192,34 +191,34 @@ ms.locfileid: "25575346"
    Search-Mailbox -Identity pilarp@contoso.onmicrosoft.com -SearchQuery <search query> -DeleteContent
    ```
   
-如前面所述，您还可以创建[powershell 脚本](https://docs.microsoft.com/powershell/scripting/powershell-scripting?view=powershell-6)并运行对邮箱的列表，以便该脚本将删除每个邮箱中的溅入的数据。
+如前所述, 您还可以创建[powershell 脚本](https://docs.microsoft.com/powershell/scripting/powershell-scripting?view=powershell-6)并对邮箱列表运行该脚本, 以便脚本删除每个邮箱中溢出的数据。
   
-## <a name="step-8-verify-provide-a-proof-of-deletion-and-audit"></a>步骤 8： 验证，提供身份证明删除，并审核
+## <a name="step-8-verify-provide-a-proof-of-deletion-and-audit"></a>步骤 8: 验证、提供删除证明和审核
 
-工作流来管理数据泄漏事件中的最后一步是确认溅入的数据被永久删除从邮箱通过转到电子数据展示事例并重新运行用于删除该数据，以确认没有结果 ar 同一个搜索查询返回的 e。确认已被永久移除溅入的数据后，可以将报表导出并将其作为证明删除包含 （以及原始报告）。然后，您可以[关闭这种情况](ediscovery-cases.md#optional-step-9-close-a-case)，将使您能够重新打开它，如果将来引用到它。此外，还可以恢复邮箱为其以前的状态，删除用于查找溅入的数据，并搜索审核记录的任务管理数据泄漏事件时执行的搜索查询。 
+工作流中用于管理数据外泄事件的最后一步是, 通过转到电子数据展示事例并重新运行用于删除数据的相同搜索查询来验证溢出的数据是否已从邮箱中永久删除, 以确认没有结果 are 返回。确认溢出的数据被永久删除后, 您可以导出报告并将其包含 (连同原始报告) 作为删除证明。然后, 你可以[关闭该事例](ediscovery-cases.md#optional-step-9-close-a-case), 如果你将来引用它, 将允许你重新打开它。此外, 还可以将邮箱还原到以前的状态, 删除用于查找溢出数据的搜索查询, 并搜索在管理 data 外泄事件时执行的任务的审核记录。 
   
-### <a name="reverting-the-mailboxes-to-their-previous-state"></a>还原到其以前的状态的邮箱
+### <a name="reverting-the-mailboxes-to-their-previous-state"></a>将邮箱还原到其以前的状态
 
-如果您已经更改准备邮箱溅入的数据被删除之前的步骤 6 中的任何邮箱配置，您需要将其还原为其以前的状态。请参阅"步骤 6： 将恢复其先前状态的邮箱"中[删除在可恢复项目文件夹中的基于云的邮箱的保留的项目](delete-items-in-the-recoverable-items-folder-of-mailboxes-on-hold.md#step-6-revert-the-mailbox-to-its-previous-state)。
+如果在步骤6中更改了任何邮箱配置, 以在溢出的数据被删除之前准备邮箱, 则需要将其还原到以前的状态。请参阅在[保留的基于云的邮箱的 "可恢复的项目" 文件夹中的 "删除项目](delete-items-in-the-recoverable-items-folder-of-mailboxes-on-hold.md#step-6-revert-the-mailbox-to-its-previous-state)" 中的 "步骤 6: 将邮箱还原为以前的状态"。
   
 ### <a name="deleting-the-search-query"></a>删除搜索查询
 
-如果您创建和使用在步骤 3 中的搜索查询中的关键字包含的所有实际溅入数据的一些，应删除的搜索查询，以防止进一步数据泄漏。
+如果您在步骤3中创建和使用的搜索查询中的关键字包含一些实际溢出的数据, 则应删除搜索查询以防止进一步的数据外泄。
   
-1. 中安全性和合规性中心中，打开电子数据展示事例，转到**搜索**页上，然后选择适当的内容搜索。
+1. 在安全 & 合规性中心中, 打开电子数据展示事例, 转到 "**搜索**" 页, 然后选择适当的内容搜索。
     
-2. 在弹出页上，单击**删除**。
+2. 在弹出页面上, 单击 "**删除**"。
 
-    ![选择搜索，然后单击弹出页上的删除](media/O365-eDiscoverySolutions-DataSpillage-DeleteSearch.png)
+    ![选择搜索, 然后单击弹出页面上的 "删除"。](media/O365-eDiscoverySolutions-DataSpillage-DeleteSearch.png)
     
-### <a name="auditing-the-data-spillage-investigation-process"></a>审核数据泄漏调查过程
+### <a name="auditing-the-data-spillage-investigation-process"></a>审核数据外泄调查过程
 
-您可以搜索在调查期间已执行的电子数据展示活动的 Office 365 审核日志。您还可以搜索审核日志来返回审核记录运行**搜索邮箱 DeleteContent**命令以删除溅入的数据时创建的。有关详细信息，请参阅：
+您可以在 Office 365 审核日志中搜索在调查过程中执行的电子数据展示活动。您还可以搜索审核日志, 以返回运行**搜索邮箱-DeleteContent**命令删除溢出的数据时创建的审核记录。有关详细信息, 请参阅:
 
 - [在 Office 365 安全&amp;合规中心搜索审核日志](search-the-audit-log-in-security-and-compliance.md)
 
-- [Office 365 审核日志中的电子数据展示活动搜索](search-for-ediscovery-activities-in-the-audit-log.md)
+- [在 Office 365 审核日志中搜索电子数据展示活动](search-for-ediscovery-activities-in-the-audit-log.md)
 
-- 请参阅有关如何搜索审核记录与 Exchange Online 中运行 cmdlet 的指南[搜索审核日志在 Office 365 安全性和合规性中心](search-the-audit-log-in-security-and-compliance.md#audited-activities)中的"审核活动-Exchange 管理员审核日志"部分。
+- 有关如何在 Exchange Online 中搜索与运行 cmdlet 相关的审核记录的指南, 请参阅在[Office 365 安全 & 合规中心中搜索审核日志中](search-the-audit-log-in-security-and-compliance.md#audited-activities)的 "已审核的活动-Exchange 管理员审核日志" 部分。
   
 

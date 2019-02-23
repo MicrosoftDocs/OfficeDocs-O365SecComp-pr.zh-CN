@@ -6,7 +6,7 @@ manager: laurawi
 ms.date: 8/21/2018
 audience: ITPro
 ms.topic: article
-ms.service: Office 365 Administration
+ms.service: O365-seccomp
 localization_priority: None
 search.appverid:
 - MET150
@@ -14,12 +14,12 @@ ms.collection:
 - Strat_O365_IP
 - M365-security-compliance
 description: '摘要: 有关生产环境中 Yammer 企业访问控制的简要摘要。'
-ms.openlocfilehash: 33126ee6acf42a97148c12917855535a8578e8cf
-ms.sourcegitcommit: c94cb88a9ce5bcc2d3c558f0fcc648519cc264a2
+ms.openlocfilehash: 76b62e7ea026a52d822e5a213461e930b1d595e3
+ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/20/2019
-ms.locfileid: "30090724"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "30217882"
 ---
 # <a name="yammer-enterprise-access-controls"></a>Yammer Enterprise访问控制 
 

@@ -6,83 +6,83 @@ manager: laurawi
 ms.date: 6/7/2018
 ms.audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid:
 - MOE150
 - MET150
 ms.assetid: 41eb4324-c513-4fa5-91c8-8fbd8aaba83b
-description: 与 Office 365 中的 DLP 报告，您可以快速查看 DLP 策略匹配、 重写或误报; 的数请参阅是否他们正在向上或向下随时间推移趋势;以不同方式; 筛选报表和通过选择在图表上线上的某个点查看其他详细信息。
-ms.openlocfilehash: 379e66fc3f2611cf338739d030c2b1d48e7416d8
-ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+description: 使用 Office 365 中的 dlp 报告, 您可以快速查看 dlp 策略匹配、覆盖或误报的数量;查看它们是按时间趋势上升还是下降;以不同的方式筛选报表;并在图表上的某一行上选择一个点, 以查看其他详细信息。
+ms.openlocfilehash: 4e9e5405b5c35719c1b14efca91cdf87f416e7bd
+ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "23013906"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "30217572"
 ---
 # <a name="view-the-reports-for-data-loss-prevention"></a>查看数据丢失防护报告
 
-创建数据丢失防护 (DLP) 策略后，您需要确认他们正在使用为您应和帮助您保持兼容。使用 DLP 报告 Office 365 安全性&amp;合规性中心，您可以快速查看：
+创建数据丢失防护 (DLP) 策略后, 您需要验证它们是否按预期工作, 并帮助您保持合规性。在 Office 365 安全&amp;合规中心中使用 DLP 报告, 您可以快速查看:
   
-- **DLP 策略匹配**此报表显示一段时间的 DLP 策略匹配的计数。您可以按日期、 位置、 策略或操作筛选报告。您可以使用此报告： 
+- **DLP 策略匹配**此报告显示一段时间内 DLP 策略匹配项的计数。您可以按日期、位置、策略或操作筛选报告。您可以使用此报告执行以下操作: 
     
-  - 调整或优化您的 DLP 策略，当您在测试模式下运行它们。您可以查看匹配内容的特定规则。
+  - 在测试模式下运行 DLP 策略时对其进行调整或优化。您可以查看与内容匹配的特定规则。
     
   - 重点关注特定的时间段，并了解峰值和发展趋势的原因。
     
   - 发现违反组织的 DLP 策略的业务流程。
     
-  - 通过查看操作应用于的内容，了解 DLP 策略的任何业务影响。
+  - 通过查看应用于内容的操作来了解 DLP 策略的任何业务影响。
     
   - 通过显示该策略的匹配结果，验证该策略是否遵守特定 DLP 策略。
     
-  - 查看最多的用户的列表，并重复用户分配给您的组织中的事件。
+  - 查看最常用用户的列表, 并重复在您的组织中参与事件的用户。
     
-  - 查看组织中的顶部的敏感信息类型列表。
+  - 查看组织中的最高敏感信息类型的列表。
     
-- **DLP 事件**此报告还会显示策略匹配随时间推移，如策略匹配报告。但是，策略匹配规则级别; 报表显示匹配项例如，如果电子邮件匹配三个不同的规则，该策略匹配报表显示三个不同行项。相比之下，事件报告将显示匹配项级别;例如，如果电子邮件匹配三个不同的规则，事件报告将显示的内容的单个行项。 
+- **DLP 事件**此报告还显示策略匹配一段时间, 如策略匹配报告。但是, 策略匹配报告将显示规则级别的匹配项;例如, 如果电子邮件符合三个不同的规则, 则策略匹配报告将显示三个不同的行项目。相比之下, 事件报告在项目级别显示匹配项;例如, 如果电子邮件与三个不同的规则匹配, 则事件报告将显示该内容的单个行项目。 
     
-  由于不同聚合报告计数，策略匹配报告是更好的匹配标识与特定规则和微调 DLP 策略。事件报告是内容的用于标识特定片段 DLP 策略有问题的更好。
+  由于报告计数的聚合方式不同, 因此策略匹配报告可更好地识别与特定规则的匹配项, 并精确优化 DLP 策略。事件报告更适合标识对 DLP 策略存在问题的特定内容片段。
     
-- **DLP 误报和覆盖**如果您的 DLP 策略允许用户将其重写或报告为误报，此报告显示随时间这种情况下的计数。您可以按日期、 位置或策略筛选报告。您可以使用此报告： 
+- **DLP 误报和重写**如果您的 DLP 策略允许用户覆盖它或报告误报, 则此报告将显示一段时间内此类实例的计数。您可以按日期、位置或策略筛选报告。您可以使用此报告执行以下操作: 
     
-  - 调整或通过查看哪些策略会引发大量误报优化您的 DLP 策略。
+  - 通过查看哪些策略会导致大量误报来调整或优化 DLP 策略。
     
-  - 查看用户提交的时它们通过覆盖该策略解析策略提示的理由。
+  - 查看用户通过覆盖策略解析策略提示时提交的理由。
     
-  - 发现与通过承担大量的用户的有效业务流程的 DLP 策略冲突将重写。
+  - 通过提供大量用户覆盖来发现 DLP 策略与有效业务流程发生冲突的位置。
     
-所有 DLP 报告可以都显示的最新的四个月的时间段中的数据。最新的数据可能需要 24 小时要显示在报告中。
+所有 DLP 报告都可以显示最近四个月的时间段内的数据。最新的数据可能需要长达24小时才能显示在报告中。
   
-您可以安全中找到这些报告&amp;合规性中心\>**报告** \> **仪表板**。
+您&amp;可以在安全合规性中心\> **报告** \> **仪表板**中找到这些报告。
   
 ![DLP 策略匹配报告](media/117d20c9-d379-403f-ad68-1f5cd6c4e5cf.png)
   
-## <a name="view-the-justification-submitted-by-a-user-for-an-override"></a>查看由重写为用户提交理由
+## <a name="view-the-justification-submitted-by-a-user-for-an-override"></a>查看用户为替代而提交的理由
 
-如果您的 DLP 策略允许用户覆盖它，您可以使用误报以及如何重写报表以查看策略提示中的用户提交的文本。
+如果你的 DLP 策略允许用户覆盖它, 则可以使用误报和覆盖报告查看用户在策略提示中提交的文本。
   
-![理由字段中的 DLP 误报和覆盖报告的详细信息](media/e11e3126-026d-4e77-a16d-74a0686d1fa3.png)
+![DLP 误报和重写报告详细信息中的调整字段](media/e11e3126-026d-4e77-a16d-74a0686d1fa3.png)
   
-## <a name="take-action-on-insights-and-recommendations"></a>执行上见解和建议的操作
+## <a name="take-action-on-insights-and-recommendations"></a>对见解和建议采取措施
 
-报告可显示见解和建议，您可以单击红色的警告图标以查看有关潜在问题的详细信息并采取可能补救措施。
+报告可以显示见解和建议, 在其中可以单击红色警告图标以查看有关潜在问题的详细信息, 并采取可能的补救措施。
   
-![单击以查看详细信息和要执行的操作的真知灼见图标](media/51782036-7299-4960-8175-75c2b1637159.png)
+![单击见解图标可查看详细信息和要执行的操作](media/51782036-7299-4960-8175-75c2b1637159.png)
   
-## <a name="find-the-cmdlets-for-the-dlp-reports"></a>查找适用于 DLP 报告 cmdlet
+## <a name="find-the-cmdlets-for-the-dlp-reports"></a>查找 DLP 报告的 cmdlet
 
-要用于安全的大部分 cmdlet&amp;合规性中心，您需要：
+若要将大多数 cmdlet 用于安全&amp;合规性中心, 您需要执行以下操作:
   
-1. [连接到 Office 365 安全性&amp;合规性中心使用远程 PowerShell](http://go.microsoft.com/fwlink/?LinkID=799771&amp;clcid=0x409)
+1. [使用远程 PowerShell 连接到 Office 365 安全与合规中心](http://go.microsoft.com/fwlink/?LinkID=799771&amp;clcid=0x409)
     
-2. 使用下列任一[Office 365 安全性&amp;合规性中心 cmdlet](http://go.microsoft.com/fwlink/?LinkID=799772&amp;clcid=0x409)
+2. 使用这些[Office 365 安全&amp;合规中心 cmdlet](http://go.microsoft.com/fwlink/?LinkID=799772&amp;clcid=0x409)中的任何一个
     
-但是，DLP 报告需要拉跨 Office 365，包括 Exchange Online 中的数据。因此，DLP 报告的 cmdlet 是在 Exchange Online Powershell 中可用 — 不在安全&amp;合规性中心 Powershell。因此，若要使用 DLP 报告 cmdlet，您需要：
+但是, DLP 报告需要跨 Office 365 请求获取数据, 包括 Exchange Online。因此, DLP 报告的 cmdlet 在 Exchange Online powershell 中可用, 而不在安全&amp;合规中心 powershell 中。因此, 若要使用 DLP 报告的 cmdlet, 需要执行以下操作:
   
-1. [Connect to Exchange Online using remote PowerShell](http://go.microsoft.com/fwlink/?LinkID=799773&amp;clcid=0x409)
+1. [使用远程 PowerShell 连接到 Exchange Online](http://go.microsoft.com/fwlink/?LinkID=799773&amp;clcid=0x409)
     
-2. 使用这些 cmdlet 的任何 DLP 报告：
+2. 为 DLP 报告使用以下任一 cmdlet:
     
       - [Get-DlpDetectionsReport](http://go.microsoft.com/fwlink/?LinkID=799774&amp;clcid=0x409)
     

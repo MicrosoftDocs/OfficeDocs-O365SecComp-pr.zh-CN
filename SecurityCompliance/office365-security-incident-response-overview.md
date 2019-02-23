@@ -9,51 +9,51 @@ ms.topic: overview
 ms.collection:
 - o365_security_incident_response
 - Strat_O365_IP
-ms.service: o365-solutions
+ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid:
 - MET150
 ms.custom: ''
 ms.assetid: ''
-description: 此解决方案告诉您哪些最常见计算机安全攻击可能类似于在 Office 365 以及如何对其进行响应
-ms.openlocfilehash: d2caea8cc7ceecb18cd477b8a1ff12352d83c3df
-ms.sourcegitcommit: 87a3ca55b6e9cf7e9ccf73e64013dc78dd7660f5
+description: 此解决方案告诉您在 Office 365 中最常见的网络安全攻击可能是什么, 以及如何对其进行响应
+ms.openlocfilehash: 473a7db30df72ecbe0bdc58d578f4c82c31beaca
+ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/10/2018
-ms.locfileid: "25494073"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "30217262"
 ---
 # <a name="office-365-security-incident-response"></a>Office 365 安全事件响应
 
- **摘要：** 此解决方案将向您介绍什么是 Office 365 中最常见的网络安全攻击指标、 如何产生积极确认任何给定的攻击，以及如何对其做出响应。
+ **摘要:** 此解决方案告诉你在 Office 365 中最常见的网络安全攻击的指标, 如何正确确认任何给定的攻击以及如何对其做出响应。
   
 ## <a name="overview"></a>概述
-不是所有网络攻击都将被都阻止。攻击者一直在寻找在防御策略中的新劣势或他们在利用旧的。了解如何识别攻击允许您以更快地响应，这就缩短安全事件的持续时间。
+并不是所有的网络攻击都可以 thwarted。攻击者经常在防御策略中寻找新的弱点, 或者他们在利用旧弱点。了解如何识别攻击允许您更快地响应它, 从而缩短了安全事件的持续时间。
 
-本系列文章帮助您了解特定类型攻击的可能外观 Office 365 中，并为您提供了您可以采取响应的步骤。了解快速入口点，这些文件：
+本系列文章可帮助您了解特定类型的攻击在 Office 365 中的外观, 并提供您可以采取的措施来做出响应。它们是快速入门点以了解:
  
-- 哪些攻击是及其工作原理。
-- 对内容进行签名，调用威胁 (IOC)，以查找以及如何查找这些指标。
-- 如何产生积极确认攻击。
-- 要执行截断攻击和更好的步骤保护您的组织将来。
-- 在每台上的深入信息的链接攻击类型。
+- 什么是攻击以及它的工作原理。
+- 应查找的标志 (称为 "泄露" (IOC)) 以及如何查找它们。
+- 如何正确地确认攻击。
+- 减少攻击并在将来更好地保护组织的步骤。
+- 指向有关每种攻击类型的详细信息的链接。
 
-这里检查每月会随着时间的推移添加更多文章。
+每月查看一次, 在一段时间后将添加更多文章。
 
 ## <a name="detect-and-remediate-articles"></a>检测和修正文章
 
 - [检测和修正 Office 365 中的非法授权](detect-and-remediate-illicit-consent-grants.md)
-- [检测并修正 Office 365 中的 Outlook 规则和自定义窗体注入攻击](detect-and-remediate-outlook-rules-forms-attack.md)
+- [在 Office 365 中检测并修正 Outlook 规则和自定义窗体注入攻击](detect-and-remediate-outlook-rules-forms-attack.md)
  
 ## <a name="incident-response-articles"></a>事件响应文章
 
 - [响应 Office 365 中遭到入侵的电子邮件帐户](responding-to-a-compromised-email-account.md)
 
-## <a name="secure-office-365-like-a-cybersecurity-pro"></a>像网络专业人员的安全保护 Office 365
-Office 365 订阅附带了强大的可用于保护您的数据和用户的安全功能集。 使用[Office 365 安全路线图： Top 优先级的前 30 天，90 天及其他认证实战](https://support.office.com/article/Office-365-security-roadmap-Top-priorities-for-the-first-30-days-90-days-and-beyond-28c86a1c-e4dd-4aad-a2a6-c768a21cb352)实现 Microsoft 建议的用于保护 Office 365 租户的最佳做法。
-- 第一个 30 天内完成的任务。 这些没有直接影响，因此低影响到您的用户。
-- 若要在 90 天内完成的任务。这些需要更多时间规划和实现，但会显著提高安全状况
-- 90 天前。在您的第一个 90 天工作中构建这些增强功能。
+## <a name="secure-office-365-like-a-cybersecurity-pro"></a>安全的 Office 365, 如 cybersecurity pro
+您的 Office 365 订阅附带了一组功能强大的安全功能, 可用于保护您的数据和用户。 使用[Office 365 安全路线图: 前30天、90天和更高版本的首要优先级](https://support.office.com/article/Office-365-security-roadmap-Top-priorities-for-the-first-30-days-90-days-and-beyond-28c86a1c-e4dd-4aad-a2a6-c768a21cb352), 以实现 Microsoft 建议的保护 Office 365 租户的最佳做法。
+- 在前30天内要完成的任务。 这些值会立即生效, 并对用户造成影响较小。
+- 要在90天内完成的任务。这些工作需要花一点时间来进行规划和实施, 但大大提高了安全状况
+- 超过90天。这些增强功能将在您的前90天工作中构建。
 
 
 

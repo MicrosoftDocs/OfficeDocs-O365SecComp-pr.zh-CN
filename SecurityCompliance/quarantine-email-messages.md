@@ -6,32 +6,32 @@ manager: laurawi
 ms.date: 6/29/2018
 ms.audience: Admin
 ms.topic: hub-page
-ms.service: o365-administration
+ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid:
 - MOE150
 - MED150
 - MET150
 ms.assetid: 4c234874-015e-4768-8495-98fcccfc639b
-description: 您可以设置隔离的 Office 365 其中传入电子邮件已被作为垃圾邮件筛选批量，网络钓鱼邮件中的传入电子邮件和恶意软件可以保留供以后查看。
-ms.openlocfilehash: a336e1fed0bd9a3c1e347610f6a42b70f5c80b1b
-ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+description: 您可以在 Office 365 中为传入电子邮件设置隔离, 在其中已被筛选为垃圾邮件、批量、网络钓鱼邮件和恶意软件的传入电子邮件可以保留下来供以后查看。
+ms.openlocfilehash: fe8e59718a6b7293821875d19ba2b98070396f0f
+ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22525256"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "30217762"
 ---
 # <a name="quarantine-email-messages-in-office-365"></a>在 Office 365 中隔离电子邮件
 
-您可以设置为传入电子邮件被过滤为垃圾邮件、 批量邮件、 网络钓鱼邮件、 邮件包含恶意软件、 和与指定的邮件流规则匹配的邮件的邮件可以保留位置的 Office 365 中供以后查看的隔离。
+可以在 Office 365 中为传入电子邮件设置隔离, 其中已筛选为垃圾邮件的邮件、批量邮件、网络钓鱼邮件、包含恶意软件的邮件以及与指定的邮件流规则匹配的邮件可以保留下来供以后查看。
   
-默认情况下已筛选的邮件发送到收件人的垃圾邮件文件夹中，除邮件包含恶意软件将它发送到隔离默认情况下。作为一名管理员，您可以设置内容筛选器策略以将发送所有筛选的邮件而隔离。您可以采取的内容筛选邮件的不同操作取决于[垃圾邮件已定义的筛选器策略](https://go.microsoft.com/fwlink/?LinkId=799736)。
+默认情况下, 筛选出的邮件将被发送到收件人的 "垃圾邮件" 文件夹, 但包含默认情况下发送到隔离的恶意软件的邮件除外。作为管理员, 您可以设置内容筛选器策略, 以将所有筛选出的邮件发送到隔离。您可以对内容筛选邮件执行的不同操作取决于[您定义的垃圾邮件筛选器策略](https://go.microsoft.com/fwlink/?LinkId=799736)。
   
-用户和管理员可以使用隔离邮件。隔离中，用户可以使用自己筛选的邮件。管理员可以搜索和管理隔离的邮件的所有用户。
+用户和管理员都可以使用隔离邮件。用户只能在隔离中处理自己的已筛选邮件。管理员可以搜索和管理所有用户的隔离邮件。
   
-了解有关使用隔离邮件的详细信息：
+了解有关使用隔离邮件的详细信息:
   
-- [以管理员身份管理隔离的邮件](manage-quarantined-messages-and-files.md)
+- [以管理员身份管理隔离邮件](manage-quarantined-messages-and-files.md)
     
 - [以用户身份查找并释放隔离的邮件](find-and-release-quarantined-messages-as-a-user.md)
     

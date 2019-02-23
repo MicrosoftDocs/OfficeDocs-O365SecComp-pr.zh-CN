@@ -1,44 +1,28 @@
 ---
-title: 反垃圾邮件保护常见问题解答
-ms.author: krowley
-author: kccross
-manager: laurawi
-ms.date: 12/9/2016
-ms.audience: ITPro
-ms.topic: article
-ms.service: O365-seccomp
-ms.custom: TN2DMC
-localization_priority: Normal
-search.appverid:
-- MET150
-ms.assetid: c534a35d-b121-45da-9d0a-ce738ce51fce
-description: 本主题提供了有关反垃圾邮件保护的常见问题和解答。 解答适用于 Microsoft Exchange Online 和 Exchange Online Protection (EOP) 客户。
-ms.openlocfilehash: 77b3dc26d55f75e7476a3b52a550174a3876c56f
-ms.sourcegitcommit: e9dca2d6a7838f98bb7eca127fdda2372cda402c
-ms.translationtype: MT
-ms.contentlocale: zh-CN
-ms.lasthandoff: 08/21/2018
-ms.locfileid: "23003071"
+标题: "反垃圾邮件保护常见问题" ms. author: krowley author: kccross 管理器: laurawi ms. 日期: 12/9/2016: it 专业 ms. 主题: 文章 ms. 服务: O365-seccomp ms. custom: TN2DMC 使用: Normal search. appverid:
+- MET150 assetid: c534a35d-b121-45da-9d0a-ce738ce51fce ms. 集合:
+    - M365-安全合规性说明: "本主题提供有关反垃圾邮件保护的常见问题和解答。适用于 Microsoft Exchange online 和 Exchange online Protection (EOP) 客户的答案。
 ---
+
 # <a name="anti-spam-protection-faq"></a>反垃圾邮件保护常见问题解答
 
 本主题提供了有关反垃圾邮件保护的常见问题和解答。 解答适用于 Microsoft Exchange Online 和 Exchange Online Protection (EOP) 客户。 
   
 > [!TIP]
-> 有关问题和解答有关安全发件人和阻止发件人列表，请参阅[安全发件人和阻止发件人列表在 Exchange Online](safe-sender-and-blocked-sender-lists-faq.md)。有关问题和解答有关隔离，请参阅[隔离常见问题解答](quarantine-faq.md)。 
+> 有关安全发件人和阻止发件人列表的问题和解答, 请参阅[Exchange Online 中的安全发件人和阻止发件人列表](safe-sender-and-blocked-sender-lists-faq.md)。有关隔离的问题和解答, 请参阅[隔离 FAQ](quarantine-faq.md)。 
   
  **问：默认情况下，如何处理检测到的垃圾邮件？**
   
 A. **对于入站邮件：** 大部分垃圾邮件都是通过基于发件人 IP 地址的连接筛选检测到的。 然后，服务会检查邮件内容。 默认情况下，内容筛选的垃圾邮件会发送到发件人的垃圾邮件文件夹。 可以更改此操作。 例如，可以选择将垃圾邮件发送到隔离区，而不是配置内容筛选策略。 
   
 > [!IMPORTANT]
-> 为独立 EOP 客户： 为了确保**移动到垃圾邮件文件夹的邮件**操作将处理的本地邮箱，必须配置这两种 Exchange 传输规则，来检测垃圾邮件邮件头由 EOP 添加您的本地服务器上。有关详细信息，请参阅[确保垃圾邮件被路由到每个用户的垃圾邮件文件夹](ensure-that-spam-is-routed-to-each-user-s-junk-email-folder.md)。 
+> 对于 EOP 独立客户: 为了确保 "**将邮件移动到垃圾邮件文件夹**" 操作可用于内部部署邮箱, 您必须在本地服务器上配置两个 Exchange 传输规则, 以检测 EOP 添加的垃圾邮件头。有关详细信息, 请参阅[确保垃圾邮件已路由到每个用户的 "垃圾邮件" 文件夹](ensure-that-spam-is-routed-to-each-user-s-junk-email-folder.md)。 
   
  **对于出站邮件：** 邮件要么通过高风险传递池进行路由，要么被退回、未传递。不管是哪种情况，发件人都会收到一封告知其邮件未传递的传递状态通知 (DSN) 邮件。 
   
  **问：什么是零日垃圾邮件变体，该服务将如何处理它？**
   
-答： 零时差垃圾邮件 variant 是第一代、 以前未知的垃圾邮件永远不会已捕获或分析，variant，因此我们垃圾邮件内容筛选器尚未没有可用于检测其任何信息。零时差垃圾邮件后示例是捕获和分析我们垃圾邮件分析师，如果它符合垃圾邮件分类标准，我们垃圾邮件内容筛选器更新来检测，并且它不再被认为"零时差。"(**注意：** 如果您收到一条消息，以帮助我们改善服务可能 variant 零时差垃圾邮件，请将邮件提交给 Microsoft 使用[提交垃圾邮件、 非垃圾邮件和网络钓鱼诈骗邮件提交给 Microsoft 的中所述的方法之一分析](submit-spam-non-spam-and-phishing-scam-messages-to-microsoft-for-analysis.md)。)
+一天: 零天垃圾邮件变种是指第一代未知的垃圾邮件, 即从未捕获或分析的垃圾邮件, 因此我们的垃圾邮件内容筛选器尚未提供任何可用于检测到的信息。由垃圾邮件分析员捕获和分析零天的垃圾邮件示例后, 如果它满足垃圾邮件分类标准, 我们的垃圾邮件内容筛选器将进行更新以进行检测, 并且不再被视为 "零天"。(**注意:** 如果收到的邮件可能是零天垃圾邮件变种, 为了帮助我们改进服务, 请使用将[垃圾邮件、非垃圾邮件和网络钓鱼诈骗邮件中所述的方法之一提交给 microsoft 以进行分析](submit-spam-non-spam-and-phishing-scam-messages-to-microsoft-for-analysis.md)。)
   
  **问：我需要配置用于提供反垃圾邮件保护的服务吗？**
   
@@ -58,7 +42,7 @@ A. **对于入站邮件：** 大部分垃圾邮件都是通过基于发件人 IP
   
  **问：批量电子邮件筛选会自动启用吗？**
   
-答： 默认情况下，为新客户启用**批量邮件**高级垃圾邮件筛选选项。对于已迁移的客户，此设置将匹配您的 FOPE 配置。有关批量电子邮件的详细信息，请参阅[垃圾邮件和批量邮件之间的区别是什么？](what-s-the-difference-between-junk-email-and-bulk-email.md)
+。默认情况下, 为新客户启用**批量邮件**高级垃圾邮件筛选选项。对于已迁移的客户, 此设置将与您的 FOPE 配置相匹配。有关批量电子邮件的详细信息, 请参阅[垃圾邮件和批量电子邮件之间有何区别？](what-s-the-difference-between-junk-email-and-bulk-email.md)
   
  **问：该服务是否提供 URL 筛选？**
   
@@ -66,15 +50,15 @@ A. **对于入站邮件：** 大部分垃圾邮件都是通过基于发件人 IP
   
  **问：客户如何使用此服务将假负（垃圾邮件）和误报（非垃圾邮件）邮件发送到 Microsoft？**
   
-答： 垃圾邮件和非垃圾邮件可以分析多种方式提交给 Microsoft。有关详细信息，请参阅[提交垃圾邮件和非垃圾邮件和网络钓鱼诈骗邮件提交给 Microsoft 进行分析](submit-spam-non-spam-and-phishing-scam-messages-to-microsoft-for-analysis.md)。 
+在几个方面, 可以将垃圾邮件和非垃圾邮件提交给 Microsoft 进行分析。有关详细信息, 请参阅[将垃圾邮件、非垃圾邮件和网络钓鱼诈骗邮件提交给 Microsoft 进行分析](submit-spam-non-spam-and-phishing-scam-messages-to-microsoft-for-analysis.md)。 
   
  **问：我可以获取垃圾邮件报告吗？**
   
 答：可以，例如，您可以在 Office 365 管理中心中获取垃圾邮件检测报告。 此报告将垃圾邮件数量显示为唯一邮件的计数。 有关报告的详细信息，请参阅下列链接：
   
-Exchange Online 客户：[监视、 报告和邮件跟踪在 Exchange Online](http://technet.microsoft.com/library/87bdeeae-bd80-4a3b-95c5-62fbaf97c2e8.aspx)
+exchange online 客户: [exchange online 中的监视、报告和邮件跟踪](http://technet.microsoft.com/library/87bdeeae-bd80-4a3b-95c5-62fbaf97c2e8.aspx)
   
-Exchange Online Protection 客户：[报告和邮件跟踪在 Exchange Online Protection](eop/reporting-and-message-trace-in-exchange-online-protection.md)
+exchange online protection 客户: [exchange online protection 中的报告和邮件跟踪](eop/reporting-and-message-trace-in-exchange-online-protection.md)
   
  **问：有人发送一封邮件给我，但是我找不到它。 我怀疑此邮件可能被检测为垃圾邮件了。 有什么工具可以让我找到这封邮件吗？**
   
@@ -108,7 +92,7 @@ A.如果通过服务发送自用户的超过一半的邮件是在某段时间范
   
 1. **电子邮件的发送域应在 DNS 中解析。**
     
-    例如，如果发件人，user@example.com 域 example.com 解析为 IP 地址 192.0.43.10 发送。如果发送域没有 A 记录，并且在 DNS 中，服务没有 MX 记录将通过其高风险传递池无论消息的内容是否是垃圾邮件路由邮件。有关高风险传递池的详细信息，请参阅[高风险传递池用于出站邮件](high-risk-delivery-pool-for-outbound-messages.md)。 
+    例如, 如果发件人为 user@example.com, 则域 example.com 解析为 IP 地址192.0.43.10。如果发送域在 DNS 中没有 a 记录且无 MX 记录, 则该服务将通过其更高的风险传递池路由邮件, 而不管邮件的内容是否为垃圾邮件。有关更高风险传递池的详细信息, 请参阅[出站邮件的高风险传递池](high-risk-delivery-pool-for-outbound-messages.md)。 
     
 2. **出站电子邮件服务器的发送 IP 地址应该有一个反向 DNS (PTR) 条目。**
     
