@@ -5,18 +5,18 @@ author: kccross
 manager: laurawi
 audience: ITPro
 ms.topic: article
-ms.service: Office 365 Administration
+ms.service: O365-seccomp
 localization_priority: None
 search.appverid:
 - MET150
 ms.collection: Strat_O365_Enterprise
 description: '摘要: 有关云中的加密的 BitLocker 相关信息。'
-ms.openlocfilehash: 2f532282622abef49e3499c692f664b4714c3192
-ms.sourcegitcommit: 24659bdb09f49d0ffed180a4b80bbb7c45c2d301
+ms.openlocfilehash: 77de478899591be54bdaf7c3ac9e7d591dd418b1
+ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "29664098"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "30212902"
 ---
 # <a name="bitlocker-and-distributed-key-manager-dkm-for-encryption"></a>用于加密的 BitLocker 和 Distributed Key Manager (DKM)
 Office 365 服务器使用 BitLocker 在卷级别加密包含客户数据的磁盘驱动器。BitLocker 加密是 Windows 中内置的数据保护功能。BitLocker 是一种用于预防威胁的技术, 以防发生其他进程或控件 (例如, 对硬件的访问控制或回收) 发生时出现的情况, 从而导致某人能够物理访问包含客户数据的磁盘。在这种情况下, BitLocker 可消除因丢失、被盗或取消授权不当的计算机和磁盘而导致数据失窃或泄露的可能性。

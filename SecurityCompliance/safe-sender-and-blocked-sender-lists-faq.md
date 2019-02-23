@@ -3,7 +3,7 @@ title: Exchange Online 中的安全发件人和阻止发件人列表
 ms.author: krowley
 author: kccross
 manager: laurawi
-ms.date: 5/22/2018
+ms.date: ''
 ms.audience: ITPro
 ms.topic: reference
 ms.service: O365-seccomp
@@ -13,12 +13,12 @@ search.appverid:
 - MET150
 ms.assetid: 111ab6b0-2dd2-4a87-a928-4931df6b3c4d
 description: 作为 Exchange Online 或 Exchange Online Protection (EOP) 管理员，你可以帮助确保通过服务传递的电子邮件不会被标记为垃圾邮件。实现上述任务的一种方法是为组织中的人员创建白名单和黑名单。
-ms.openlocfilehash: cbf886bdcc40044a31b285b6806aecbc95f0f97c
-ms.sourcegitcommit: e9dca2d6a7838f98bb7eca127fdda2372cda402c
+ms.openlocfilehash: d785f5f605dd9b8610eaed95f3f2783d04bcbc14
+ms.sourcegitcommit: 06d6e63225f912d0f3c6bb836c61eb11c1dbe97a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/21/2018
-ms.locfileid: "23003101"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "30206345"
 ---
 # <a name="safe-sender-and-blocked-sender-lists-in-exchange-online"></a>Exchange Online 中的安全发件人和阻止发件人列表
 
@@ -32,15 +32,15 @@ ms.locfileid: "23003101"
 
 Exchange Online 中的安全发件人限制和阻止发件人限制与 Active Directory 和 Outlook 限制不同。区别在于：
   
-- 安全发件人限制： 1024
+- 安全发件人限制: 1024
     
-- 阻止发件人限制： 500
+- 阻止的发件人限制: 500
     
 注意：
   
-您可能遇到的错误的所述 KB 2590466 （"会收到错误"垃圾电子邮件验证错误"Outlook Web App 中的 Exchange Server 2010"）。若要解决此问题，请清除"信任来自我的联系人的电子邮件"复选框。此外，减少的是在默认联系人文件夹将其放在允许的最大限制 1024 个在 Exchange Online 设置为"MaxSafeSenders"属性的电子邮件地址。有关此属性并使用 Set-mailbox cmdlet 的详细信息，seethe 以下主题：
+您可能会遇到[KB2590466](https://support.microsoft.com/help/2590466/you-receive-the-error-junk-e-mail-validation-error-in-outlook-web-app)中所述的错误。若要解决此问题, 请清除 "信任来自我的联系人的电子邮件" 复选框。或者, 减少默认 "联系人" 文件夹中的电子邮件地址量, 使其在 Exchange Online 中为 "MaxSafeSenders" 属性设置的最大允许限制为1024。有关此属性和 Set 邮箱 cmdlet 的详细信息, 请 seethe 以下主题:
   
-[Set-Mailbox](https://docs.microsoft.com/powershell/module/exchange/mailboxes/Set-Mailbox?view=exchange-ps)
+[Set-Mailbox](https://docs.microsoft.com/powershell/module/exchange/mailboxes/Set-Mailbox)
   
 ## <a name="see-also"></a>See also
 

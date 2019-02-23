@@ -6,60 +6,60 @@ manager: laurawi
 ms.date: 9/24/2018
 ms.audience: Admin
 ms.topic: hub-page
-ms.service: o365-administration
+ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid:
 - MET150
 ms.assetid: 0a73d5fa-b2c8-43e7-9ed4-61f0552b1c98
-description: 使用威胁管理帮助控制和管理移动设备访问您组织的数据，帮助保护您的组织免受数据丢失，并帮助防止恶意软件和垃圾邮件的入站和出站邮件。您还使用从您的域帐户管理以保护您的域的声誉并确定恶意欺骗发件人的威胁。
-ms.openlocfilehash: fc7d0a3fd73c03e6eec6cfd265edbf3c47ce1803
-ms.sourcegitcommit: 7e2a0185cadea7f3a6afc5ddc445eac2e1ce22eb
+description: 使用威胁管理来帮助控制和管理对组织数据的移动设备访问, 帮助保护组织不会丢失数据, 并帮助保护入站和出站邮件免受恶意软件和垃圾邮件的攻击。您还可以使用威胁管理来保护您的域的信誉, 并确定发件人是否是您的域中的恶意欺骗帐户。
+ms.openlocfilehash: 30083c1e030921598d950afbedc78acab2a24910
+ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/11/2019
-ms.locfileid: "29652247"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "30221162"
 ---
 # <a name="threat-management-in-the-office-365-security-amp-compliance-center"></a>Threat management in the Office 365 Security &amp; Compliance Center
 
-使用威胁管理帮助控制和管理移动设备访问您组织的数据，帮助保护您的组织免受数据丢失，并帮助防止恶意软件和垃圾邮件的入站和出站邮件。您还使用从您的域帐户管理以保护您的域的声誉并确定恶意欺骗发件人的威胁。
+使用威胁管理来帮助控制和管理对组织数据的移动设备访问, 帮助保护组织不会丢失数据, 并帮助保护入站和出站邮件免受恶意软件和垃圾邮件的攻击。您还可以使用威胁管理来保护您的域的信誉, 并确定发件人是否是您的域中的恶意欺骗帐户。
   
-## <a name="how-to-view-and-use-threat-management-in-the-security-amp-compliance-center"></a>如何查看和使用中的安全威胁管理&amp;合规性中心
+## <a name="how-to-view-and-use-threat-management-in-the-security-amp-compliance-center"></a>如何在安全&amp;合规中心中查看和使用威胁管理
 
-Office 365 中使用安全&amp;合规性中心管理您的组织中的威胁。
+在 Office 365 中, 使用安全&amp;合规性中心管理组织中的威胁。
   
- **若要直接转到安全&amp;合规性中心：**
+ **若要直接转到安全&amp;合规中心, 请执行以下操作:**
   
 1. 转到 [https://protection.office.com](https://protection.office.com)。
 
 2. 使用工作或学校帐户登录到 Office 365。
 
-3. 在左窗格中，选择**威胁管理**。
+3. 在左窗格中, 选择 "**威胁管理**"。
 
-    ![Office 365 安全性&amp;合规性中心威胁管理菜单](media/dca29ff2-ad6d-4c27-becb-b5947268d55a.png)
+    ![Office 365 安全&amp;合规中心威胁管理菜单](media/dca29ff2-ad6d-4c27-becb-b5947268d55a.png)
   
- **转到安全&amp;使用 Office 365 应用程序启动器的合规性中心：**
+ **若要使用 Office 365 &amp;应用启动器转到安全合规中心, 请执行以下操作:**
   
 1. 使用工作或学校帐户登录到 Office 365。
 
-2. 选择应用程序启动器![Office 365 中的应用程序启动器图标](media/7502f4ec-3c9a-435d-a7b4-b9cda85189a7.png)在左上角，，，然后选择**安全&amp;合规性**平铺。 
+2. 在左上角的![Office 365](media/7502f4ec-3c9a-435d-a7b4-b9cda85189a7.png)中选择应用启动器图标, 然后选择 " ** &amp;安全符合性**磁贴"。 
 
-3. 在左窗格中，选择**威胁管理**。
+3. 在左窗格中, 选择 "**威胁管理**"。
 
-## <a name="about-threat-management-in-office-365"></a>有关 Office 365 中的威胁管理
+## <a name="about-threat-management-in-office-365"></a>关于 Office 365 中的威胁管理
 
-这些选项才可用**威胁管理**安全性下&amp;合规性中心。
+这些选项在安全&amp;合规性中心中的 "**威胁管理**" 下提供。
   
-我们仍推出安全威胁管理&amp;此处列出合规性中心，因此，您可能看不到所有这些或可能会看到多个选项。在推出，其中，例如反恶意软件、 Dkim，或其他一些将继续可通过 Exchange 管理员中心 (EAC) 的有限的时间。
+我们仍在为安全&amp;合规中心推出威胁管理, 因此您可能无法看到所有这些, 也可能会看到此处列出的选项不止这些。在首次部署期间, 在有限的时间内, 将继续在 Exchange 管理中心 (EAC) 中提供其中一些 (例如反恶意软件、Dkim 和其他)。
 
-在某些情况下，有 EAC 和安全性的次要区别&amp;合规性中心实现。例如的垃圾邮件筛选器的支持的字符是其他两个平台之间。文章所提供的发生时提供有关特定的差异的详细信息。
+在某些情况下, EAC 和安全&amp;合规性中心实现之间存在细微差异。例如, 两个平台之间的垃圾邮件筛选器支持的字符不同。提供了可在发生特定差异时提供详细信息的文章。
   
 |**工具**|**说明**|
 |:-----|:-----|
-|**仪表板、 威胁资源管理器和事件** <br/> |启用后，这些窗格将允许您管理 Office 365 分析和威胁智能。有关详细信息，请参阅[Office 365 威胁智能 overview](office-365-ti.md)。<br/> |
-|**邮件筛选** <br/> |优化，监视帮助防止 Office 365 中的垃圾邮件的设置。创建允许和阻止列表，请确定谁欺骗您的域及使用原因，配置和查看垃圾邮件筛选器策略。有关详细信息，请参阅[Office 365 电子邮件防垃圾邮件保护](anti-spam-protection.md)。<br/> 您还可以设置策略，检查您的用户不发送垃圾邮件。可以这样做，例如，如果用户的计算机获取感染编程发送电子邮件的恶意软件。若要了解如何，可以避免为出站垃圾邮件，请参阅[配置出站垃圾邮件策略](https://technet.microsoft.com/library/jj200737%28v=exchg.150%29.aspx)。<br/> 如果当前遇到问题垃圾邮件，您可以使用[垃圾邮件和恶意软件疑难解答](https://configure.office.com/Scenario.aspx?sid=73)。           |
-|**反恶意软件** <br/> |防止病毒和间谍软件旅行或从您的组织在 Office 365。病毒是恶意软件程序时执行,、 进行自我复制和修改其他程序和计算机上的数据。病毒整个计算机查找程序感染分布和从一台计算机也到另一个，通常通过电子邮件共享。间谍软件收集您的个人信息，如登录信息，并将其发送回其作者。若要开始配置反恶意软件策略，请参阅[配置反恶意软件策略](https://technet.microsoft.com/library/jj200745%28v=exchg.150%29.aspx)。<br/> 如果当前遇到恶意软件的问题，您可以使用[垃圾邮件和恶意软件疑难解答](https://configure.office.com/Scenario.aspx?sid=73)。           |
-|**DKIM** <br/> |适用于更高级的 Office 365 管理员，但适用于所有的 Office 365 客户，域密钥标识邮件 (DKIM) 有助于确保其他电子邮件系统的信任您从 Office 365 发送的邮件。DKIM 添加对从组织发送的电子邮件的唯一数字签名来达到此目的。接收电子邮件从您的电子邮件系统可以使用该数字签名可帮助确定是否合法电子邮件。<br/> 如果不要担心原理的详细信息看起来复杂，因为在 Office 365 中为您设置默认也适用于大多数组织。如果您无需设置 DKIM 自己，Office 365 使用其默认策略和它创建 DKIM 以便为您的域的密钥。此外，如果您禁用 DKIM 签名后一段时间，Office 365 将自动启用您的域的 Office 365 默认策略。<br/> 如果您希望，您可以查看此页中安全&amp;合规性中心，请参阅是否为您的域和您当前启用 DKIM 签名可以查看 Office 365 使用的加密密钥已旋转最后一次。您还手动可以自己旋转注册表项。<br/> **重要说明 ！** DKIM 是只有一个电子邮件身份验证方法使用 Office 365。若要最有效，如发件人策略框架 (SPF) 和基于域的邮件身份验证、 报告和一致性声明 (DMARC) 其他受支持的技术以及使用 DKIM。在一起，这些基于域的身份验证技术帮助防止垃圾邮件和不需要欺骗。<br/>  使用安全 DKIM 对进行更改之前&amp;合规性中心变得越来越熟悉的技术和工作原理。若要开始，请参阅[基础知识以外： 更多的方式，以防止 Office 365 中的垃圾邮件](anti-spam-protection.md#beyond-the-basics-more-ways-to-prevent-spam-in-office-365)。           |
-|**安全附件**<br/>|[安全附件](atp-safe-attachments.md)是高级威胁保护的一部分。如果启用，是独立于 Office 365 之前，会向收件人的收件箱发送的特殊的独立环境中打开电子邮件附件。安全附件旨在帮助甚至之前防病毒签名可检测到恶意附件。若要了解详细信息，请参阅[Office 365 中的安全附件](atp-safe-attachments.md)。<br/> |
-|**安全链接** <br/> |[安全链接](atp-safe-links.md)是高级威胁保护的一部分。安全链接帮助防止用户在电子邮件或指向的可识别为恶意网站的 Office 文档中的以下 Url。若要了解详细信息，请参阅[Office 365 中的安全链接](atp-safe-links.md)。<br/> |
-|**隔离**<br/>|设置[隔离](http://go.microsoft.com/fwlink/p/?LinkID=809005)的 Office 365 其中已过滤为垃圾邮件的邮件批量，网络钓鱼中的传入电子邮件和恶意软件邮件可以保留供以后查看。用户和管理员可以使用隔离邮件。隔离中，用户可以使用自己筛选的邮件。管理员可以搜索和管理隔离的邮件的所有用户。<br/> |
-|**高级的威胁** <br/> |查看[威胁保护状态报告](https://support.office.com/article/View-the-reports-for-Advanced-Threat-Protection-E47E838C-D99E-4C0B-B9AA-E66C4FAE902F#advancedthreats)，以查看关于恶意内容找到和 Exchange Online Protection 和高级威胁保护被阻止的信息。  <br/> |
+|**仪表板、威胁资源管理器和事件** <br/> |启用后, 这些窗格允许您管理 Office 365 分析和威胁智能。有关详细信息, 请参阅[Office 365 威胁智能概述](office-365-ti.md)。<br/> |
+|**邮件筛选** <br/> |微调和监控有助于防止 Office 365 中的垃圾邮件的设置。创建允许和阻止名单, 确定谁正在欺骗你的域和原因, 以及配置和查看垃圾邮件筛选器策略。有关详细信息, 请参阅[Office 365 电子邮件反垃圾邮件保护](anti-spam-protection.md)。<br/> 您还可以设置策略以检查您的用户是否不会发送垃圾邮件。例如, 如果用户的计算机受到编程为发送电子邮件的恶意软件感染, 则可能会发生这种情况。若要了解如何阻止出站垃圾邮件, 请参阅[配置出站垃圾邮件策略](https://technet.microsoft.com/library/jj200737%28v=exchg.150%29.aspx)。<br/> 如果您当前遇到垃圾邮件问题, 则可以使用[垃圾邮件和恶意软件疑难解答](https://configure.office.com/Scenario.aspx?sid=73)。           |
+|**反恶意软件** <br/> |防止在 Office 365 中传播到组织或从组织传播的病毒和间谍软件。病毒是恶意软件程序, 这些程序在执行时复制自己并修改计算机上的其他程序和数据。病毒在整个计算机中查找要感染的程序, 同时还从一台计算机共享到另一台计算机, 通常通过电子邮件进行共享。间谍软件可收集你的个人信息, 例如登录信息, 并将其发送回其作者。若要开始配置反恶意软件策略, 请参阅[配置反恶意软件策略](https://technet.microsoft.com/library/jj200745%28v=exchg.150%29.aspx)。<br/> 如果您当前遇到恶意软件问题, 则可以使用[垃圾邮件和恶意软件疑难解答](https://configure.office.com/Scenario.aspx?sid=73)。           |
+|**DKIM** <br/> |适用于更高级的 office 365 管理员, 但适用于所有 office 365 客户, 域密钥识别邮件 (DKIM) 可帮助确保其他电子邮件系统信任从 Office 365 发送的邮件。DKIM 通过向从您的组织发送的电子邮件添加唯一的数字签名来实现此功能。接收电子邮件的电子邮件系统可以使用此数字签名来帮助确定电子邮件是否合法。<br/> 如果在 Office 365 中为您设置的默认设置应适用于大多数组织, 请不要担心。如果您没有自己设置 DKIM, Office 365 将使用其默认策略和创建的密钥, 以便为您的域启用 DKIM。此外, 如果您禁用 DKIM 签名, 在一段时间后, office 365 将自动为您的域启用 Office 365 默认策略。<br/> 如果需要, 可以在安全&amp;合规中心中查看此页, 并查看当前是否为您的域启用了 DKIM 签名, 并且您可以查看 Office 365 使用的加密密钥的上次旋转时间。您也可以手动旋转键。<br/> **重要!** DKIM 是 Office 365 使用的一种电子邮件身份验证技术。为最有效, DKIM 将与其他受支持的技术 (如发件人策略框架 (SPF) 和基于域的邮件身份验证、报告和一致性 (DMARC)) 一起使用。这些基于域的身份验证技术共同帮助防止垃圾邮件和不必要的欺骗。<br/>  在使用安全&amp;合规中心对 DKIM 进行更改之前, 请先熟悉该技术及其工作方式。若要开始, 请参阅[除了基础知识之外, 阻止 Office 365 中的垃圾邮件的方法](anti-spam-protection.md#beyond-the-basics-more-ways-to-prevent-spam-in-office-365)。           |
+|**安全附件**<br/>|[安全附件](atp-safe-attachments.md)是高级威胁防护的一部分。启用后, 电子邮件附件将在特殊的独立环境中打开, 并在将其发送到收件人收件箱之前与 Office 365 分开。安全附件旨在帮助检测恶意附件, 即使在防病毒签名可用之前也是如此。若要了解详细信息, 请参阅[Office 365 中的安全附件](atp-safe-attachments.md)。<br/> |
+|**安全链接** <br/> |[安全链接](atp-safe-links.md)是高级威胁防护的一部分。安全链接有助于防止用户在电子邮件或 Office 文档中以指向被识别为恶意的网站的 url。若要了解详细信息, 请参阅[Office 365 中的安全链接](atp-safe-links.md)。<br/> |
+|**隔离**<br/>|为 Office 365 中的传入电子邮件设置[隔离](http://go.microsoft.com/fwlink/p/?LinkID=809005), 其中已被筛选为垃圾邮件、批量、网络钓鱼和恶意软件邮件的邮件可以保留供以后查看。用户和管理员都可以使用隔离邮件。用户只能在隔离中处理自己的已筛选邮件。管理员可以搜索和管理所有用户的隔离邮件。<br/> |
+|**高级威胁** <br/> |查看 "[威胁防护状态报告](https://support.office.com/article/View-the-reports-for-Advanced-Threat-Protection-E47E838C-D99E-4C0B-B9AA-E66C4FAE902F#advancedthreats)", 以查看 Exchange Online Protection 和高级威胁防护发现和阻止的恶意内容的相关信息。  <br/> |

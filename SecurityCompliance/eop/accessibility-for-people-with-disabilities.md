@@ -12,12 +12,12 @@ localization_priority: Normal
 ms.collection: Ent_O365_Hybrid
 ms.assetid: a7203ebd-ffac-4a8d-a2d0-6c8a61c8eeb8
 description: Microsoft 努力使每个用户更容易使用其产品和服务。
-ms.openlocfilehash: 1e59e995ffaa4b3324913d8e49a9c2ee00b142fb
-ms.sourcegitcommit: 22bca85c3c6d946083d3784f72e886c068d49f4a
+ms.openlocfilehash: 2403ef4ec5a99202a45b40bf639193643b6ad02b
+ms.sourcegitcommit: 06d6e63225f912d0f3c6bb836c61eb11c1dbe97a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/06/2018
-ms.locfileid: "22026209"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "30206375"
 ---
 # <a name="accessibility-for-people-with-disabilities"></a>面向残障人士的辅助功能
 
@@ -25,9 +25,9 @@ ms.locfileid: "22026209"
 
 以下功能有助于残障人士更容易使用 Microsoft Exchange：
   
-- [在 Exchange 2013 Preview 中的键盘快捷方式](http://technet.microsoft.com/library/146b2b52-1ef8-4606-991a-4cf4da694970.aspx)
+- [Exchange Server 中的键盘快捷方式](http://technet.microsoft.com/library/146b2b52-1ef8-4606-991a-4cf4da694970.aspx)
     
-- [Outlook Web App 中的键盘快捷方式](https://go.microsoft.com/fwlink/p/?LinkId=268079)
+- [web 上的 Outlook 中的键盘快捷方式](https://go.microsoft.com/fwlink/p/?LinkId=268079)
     
 此外，Windows 中的某些辅助功能和实用程序也可能对 Exchange 用户中的残障人士有用。使用 Exchange 命令行管理程序时，还可以通过 Windows PowerShell 大小和颜色的变化提供辅助功能选项。有关 Windows PowerShell 辅助功能选项的详细信息，请参阅 [Windows PowerShell 2.0 ISE 中的辅助功能](https://go.microsoft.com/fwlink/p/?LinkId=258240)。
   
@@ -74,7 +74,7 @@ Windows 操作系统包含许多内置的辅助功能，可以帮助键入和使
     
 Microsoft 支持服务受使用服务时执行的价格、条款和条件的约束。有关详细信息，请参阅 [Microsoft 支持](https://go.microsoft.com/fwlink/p/?linkId=18142)。
   
-## <a name="for-more-information"></a>详细信息
+## <a name="for-more-information"></a>更多信息
 
 有关计算机的辅助技术如何改善残障人士的生活的详细信息，请参阅 [Microsoft 辅助功能](http://go.microsoft.com/fwlink/p/?linkId=18139)。 
   

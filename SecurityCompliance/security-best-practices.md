@@ -6,7 +6,7 @@ manager: laurawi
 ms.date: 5/22/2018
 ms.audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: Strat_O365_IP
 search.appverid:
@@ -16,95 +16,95 @@ search.appverid:
 - BCS160
 - MET150
 ms.assetid: 9295e396-e53d-49b9-ae9b-0b5828cdedc3
-description: 通过遵循这些建议的最佳实践数据违反或受到攻击的帐户的可能性降到最低。
-ms.openlocfilehash: 0d3dc30a9975f2ed8fe6d524b4fc67918b34e51d
-ms.sourcegitcommit: 49b565f6a57febe53f331b2605d6a06d11e2d0be
+description: 通过遵循这些建议的最佳实践, 最大程度地降低数据泄露或泄露帐户的潜能。
+ms.openlocfilehash: d40fa5e4534bef1bb8389989022c44967a162aee
+ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/18/2018
-ms.locfileid: "25637996"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "30212812"
 ---
 # <a name="security-best-practices-for-office-365"></a>Office 365 的安全最佳做法
 
-通过遵循这些建议的最佳实践数据违反或受到攻击的帐户的可能性降到最低。
+通过遵循这些建议的最佳实践, 最大程度地降低数据泄露或泄露帐户的潜能。
   
-本文包含最佳实践快速的列表。有关更多深入分析和安全设置的信息，请参阅[Office 365 安全路线图： Top 优先级的前 30 天，90 天及其他认证实战](security-roadmap.md)。在这篇文章，您将发现信息基于现实世界攻击的调查其中我们顶部的 Microsoft Office 365 网络安全专家将提供指导如何评估风险和实现最重要的安全、 遵从性和信息保护控制来保护您的 Office 365 租户。您将了解如何设置优先级威胁、 到技术战略翻译威胁，然后到实现功能和控件使系统的方法。
+本文包含最佳实践的快速列表。有关设置安全性的更深入的分析和信息, 请参阅[Office 365 安全路线图: 前30天、90天和之后的主要优先级](security-roadmap.md)。在这篇文章中, 您将根据实际攻击的调查查找信息, 其中我们的主要 Microsoft Office 365 cybersecurity 专家为如何评估风险和实现最关键的安全性、合规性和信息提供了指导保护 Office 365 租户的保护控制。您将了解如何对威胁进行优先级划分, 将威胁转换为技术策略, 然后采用系统化的方法来实现功能和控制。
   
 ## <a name="use-office-365-secure-score"></a>使用 Office 365 安全分数
 
-安全 Score 是一个安全分析工具，建议您可以以进一步降低风险。安全分数查看您的 Office 365 设置和活动，并对它们进行比较到由 Microsoft 建立一个比较基准。您将获取基于您在与最佳安全做法如何对齐的分数。有关如何获取安全分数和使用它来提高 Office 365 组织的安全性的详细信息，请参阅[介绍 Office 365 安全分数](office-365-secure-score.md)。
+安全得分是一种安全分析工具, 它建议您可以执行哪些操作以进一步降低风险。安全分数查看 Office 365 设置和活动, 并将它们与 Microsoft 建立的基准进行比较。你将根据最佳安全实践的对齐方式获得分数。若要详细了解如何获取安全得分并使用它来提高 office 365 组织的安全性, 请参阅[简介 office 365 安全分数](office-365-secure-score.md)。
   
-要试用安全分数？
+想要试用安全分数？
   
-使用工作或学校帐户已分配的[有关 Office 365 管理员角色](https://support.office.com/article/da585eea-f576-4f55-a1e0-87090b6aaa9d)的 Office 365 角色，[登录到 Office 365](https://www.office.com/signin)。
+使用已分配了 office 365[关于 office 365 管理员角色](https://support.office.com/article/da585eea-f576-4f55-a1e0-87090b6aaa9d)角色的工作或学校帐户,[登录到 Office 365](https://www.office.com/signin)。
   
-访问安全分数在[https://SecureScore.office.com](https://SecureScore.office.com)。
+在上[https://SecureScore.office.com](https://SecureScore.office.com)访问安全分数。
   
-## <a name="use-multi-factor-authentication-mfa"></a>使用多因素身份验证 (MFA)
+## <a name="use-multi-factor-authentication-mfa"></a>使用多重身份验证 (MFA)
 
-MFA 通过要求用户确认电话呼叫、 短信或其智能电话上正确输入自己的密码后应用程序通知向强密码策略额外的保护程序。就地 MFA，与 Office 365 用户帐户仍然会保护针对未经授权的访问，即使用户的密码受到威胁。帐户受到保护，因为后已满足其他质询没有向之前帐户授予访问。受到攻击或被盗密码不就足够了。
+通过在正确输入密码后, 通过请求用户在智能手机上确认电话呼叫、短信或应用程序通知, MFA 向强密码策略添加了一层额外的保护。在进行 MFA 时, 即使用户的密码受到威胁, Office 365 用户帐户仍会受到保护以防未经授权的访问。帐户受到保护, 因为在满足其他挑战之前, 不向帐户授予访问权限。已泄露或被盗的密码不足。
   
 - [Office 365 部署的多重身份验证计划](https://support.office.com/article/043807b2-21db-4d5c-b430-c8a6dee0e6ba)
     
 - [为 Office 365 用户设置多重身份验证](https://support.office.com/article/8f0454b2-f51a-4d9c-bcde-2c48e41621c6)
     
-## <a name="use-office-365-cloud-app-security"></a>使用 Office 365 云应用程序安全性
+## <a name="use-office-365-cloud-app-security"></a>使用 Office 365 云应用安全
 
-将基于您的业务需求，以便跟踪异常活动和对其执行操作的策略设置。设置与 Office 365 云应用程序安全性的通知，以便管理员可以查看异常或 risky 用户活动，如下载大量数据，多失败尝试登录时或登录从一个未知或危险的 IP 地址。对于与 Office 365 企业 E5 计划的组织，您可以立即开始使用 Office 365 云应用程序安全性。如果您有不同的企业计划，您可以作为购买 Office 365 云应用程序安全性。
+根据您的业务需求来设置策略, 以跟踪异常活动并对其执行操作。设置与 Office 365 云应用安全有关的通知, 以便管理员可以查看异常或风险的用户活动, 如下载大量数据、多次失败的登录尝试或来自未知或危险的 IP 地址的登录。对于具有 Office 365 企业版 E5 计划的组织, 可以立即开始使用 office 365 云应用安全。如果你有一个不同的企业计划, 则可以将 Office 365 云应用安全作为加载项进行购买。
   
-- [O365 云应用程序安全性概述](office-365-cas-overview.md)
+- [O365 云应用安全概述](office-365-cas-overview.md)
     
 - [开启 Office 365 云应用安全](turn-on-office-365-cas.md)
     
 ## <a name="secure-mail-flow"></a>安全邮件流
 
-通过电子邮件传输的实现富客户端功能集 in Exchange Online Protection 和获得更好的保证有关每个电子邮件、 发件人的标识和防御未知的恶意软件、 病毒和恶意 Url。
+在 Exchange Online Protection 中实现丰富的功能集, 并更好地保证每封电子邮件的发件人的身份, 并防止通过电子邮件传输的未知恶意软件、病毒和恶意 url。
   
-- 配置您的组织的[Office 365 电子邮件防垃圾邮件保护](anti-spam-protection.md)策略。 
+- 为您的组织配置[Office 365 电子邮件反垃圾邮件保护](anti-spam-protection.md)策略。 
     
-- 了解有关的信息，然后使用[高级的威胁保护安全的附件和安全的链接](https://technet.microsoft.com/library/mt148491.aspx)。
+- 了解并使用[安全附件和安全链接的高级威胁防护](https://technet.microsoft.com/library/mt148491.aspx)。
     
-- [添加到您的组织的反恶意软件保护](https://technet.microsoft.com/en-us/library/jj200669%28v=exchg.150%29.aspx)。
+- 向[你的组织添加反恶意软件保护](https://technet.microsoft.com/en-us/library/jj200669%28v=exchg.150%29.aspx)。
     
-- 了解并为用户启用[Office 365 中的电子邮件中的安全提示](safety-tips-in-office-365.md)。 
+- 了解并为用户启用[Office 365 中电子邮件中的安全提示](safety-tips-in-office-365.md)。 
     
-- 若要验证您的组织发送的邮件，并有助于防止欺骗，如果您使用的自定义域名 Office 365 中的组织，将设置 SPF、 DKIM，和 DMARC:
+- 如果您在 Office 365 中为您的组织使用自定义域, 请设置 SPF、DKIM 和 DMARC 以验证您的组织发送的邮件并帮助防止欺骗:
     
-  - [设置 Office 365 为了帮助防止欺骗中的 SPF](https://docs.microsoft.com/office365/SecurityCompliance/set-up-spf-in-office-365-to-help-prevent-spoofing)。
+  - [在 Office 365 中设置 SPF 以帮助防止欺骗](https://docs.microsoft.com/office365/SecurityCompliance/set-up-spf-in-office-365-to-help-prevent-spoofing)。
     
-  - [使用 DKIM 验证从您在 Office 365 中的自定义域发送出站电子邮件](https://docs.microsoft.com/office365/SecurityCompliance/set-up-spf-in-office-365-to-help-prevent-spoofing)。
+  - [使用 DKIM 验证从 Office 365 中的自定义域发送的出站电子邮件](https://docs.microsoft.com/office365/SecurityCompliance/set-up-spf-in-office-365-to-help-prevent-spoofing)。
     
-  - [使用 DMARC 用于验证 Office 365 中的电子邮件](https://technet.microsoft.com/library/mt734386%28v=exchg.150%29.aspx)。
+  - [使用 DMARC 验证 Office 365 中的电子邮件](https://technet.microsoft.com/library/mt734386%28v=exchg.150%29.aspx)。
     
 ## <a name="enable-mailbox-audit-logging"></a>启用邮箱审核日志记录
 
-某些审核日志记录将自动为您启用在 Office 365;但是，邮箱审核日志记录不会默认情况下。使用 Exchange Online PowerShell 中启用了 Office 365 中的所有用户邮箱的审核日志记录。有关信息，请参阅[启用邮箱审核 Office 365 中](https://go.microsoft.com/fwlink/p/?LinkID=626109)。
+在 Office 365 中会自动为你启用一些审核日志记录;但是, 邮箱审核日志记录在默认情况下不会启用。您可以使用 Exchange Online PowerShell 为 Office 365 中的所有用户邮箱启用审核日志记录。有关信息, 请参阅[在 Office 365 中启用邮箱审核](https://go.microsoft.com/fwlink/p/?LinkID=626109)。
   
-启用后可以审核日志记录您[Office 365 安全性搜索审核日志&amp;合规性中心](search-the-audit-log-in-security-and-compliance.md)以找出用户已登录到您的用户邮箱，发送消息，并由邮箱所有者、 委派用户执行其他活动或管理员。包含 Office 365 中的邮箱活动的列表默认情况下审核日志，请参阅[Exchange 邮箱活动](search-the-audit-log-in-security-and-compliance.md#exchange-mailbox-activities)。
+启用审核日志记录后, 可以[在 Office 365 安全&amp;合规中心中搜索审核日志](search-the-audit-log-in-security-and-compliance.md), 以查明登录到用户邮箱的用户、已发送的邮件以及邮箱所有者、委派用户执行的其他活动或管理员。有关默认情况下包含在 Office 365 审核日志中的邮箱活动的列表, 请参阅[Exchange 邮箱活动](search-the-audit-log-in-security-and-compliance.md#exchange-mailbox-activities)。
   
-可以使用审核日志执行其他操作的信息，如更改的时间，可以将项保存在审核日志，请参阅[邮箱审核日志记录中 Exchange 2016](https://technet.microsoft.com/en-us/library/ff459237%28v=exchg.160%29.aspx)。
+有关您可以使用审核日志执行的其他操作的信息, 如更改在审核日志中保存条目的时间量, 请参阅[Exchange 2016 中的邮箱审核日志记录](https://technet.microsoft.com/en-us/library/ff459237%28v=exchg.160%29.aspx)。
   
 ## <a name="configure-data-loss-prevention-dlp"></a>配置数据丢失防护 (DLP)
 
-DLP 允许您确定敏感数据，并创建策略，以防止用户无意或有意共享数据。DLP 适用于跨 Office 365，以便用户可以保持兼容不中断其工作流的情况包括 Exchange Online、 SharePoint Online 和 OneDrive。有关详细信息，请参阅[Overview of 数据丢失预防策略](data-loss-prevention-policies.md)。
+DLP 允许您标识敏感数据, 并创建有助于防止用户意外或有意地共享数据的策略。DLP 在 Office 365 中工作, 包括 Exchange online、SharePoint online 和 OneDrive, 以便您的用户在不中断其工作流的情况下保持合规性。有关详细信息, 请参阅[数据丢失防护策略概述](data-loss-prevention-policies.md)。
   
 ## <a name="use-customer-lockbox"></a>使用客户密码箱
 
-作为 Office 365 管理员，您可以使用客户密码箱控制 Microsoft 支持工程师帮助会话期间访问您的数据的方式。在其中工程师需要访问数据以排除和修复问题的情况下，客户密码箱允许您批准或拒绝访问请求。如果您批准其工程师可以访问的数据。每个请求具有过期时间，一旦解决问题，关闭请求和访问权限被吊销。客户密码箱包含在 Office 365 企业 E5 计划中，或您可以购买与任何其他 Office 365 企业计划单独的订阅。有关信息，请参阅[Office 365 客户密码箱请求](https://support.office.com/article/36f9cdd1-e64c-421b-a7e4-4a54d16440a2)。
+作为 Office 365 管理员, 你可以使用客户密码箱控制 Microsoft 支持工程师在帮助会话过程中访问你的数据的方式。如果工程师需要访问数据以排查和解决问题, 客户密码箱允许您批准或拒绝访问请求。如果你批准它, 则工程师可以访问数据。每个请求都有过期时间, 一旦问题得到解决, 请求将关闭, 并且访问被吊销。客户密码箱包含在 office 365 企业版 E5 计划中, 也可以使用任何其他 Office 365 企业版计划购买单独的订阅。有关信息, 请参阅[Office 365 客户密码箱请求](https://support.office.com/article/36f9cdd1-e64c-421b-a7e4-4a54d16440a2)。
   
 ## <a name="try-it-yourself"></a>亲自试用
 <a name="SecureScore"> </a>
 
-请参阅 Office 365 试用版订阅之前采用它们在生产中使用这些安全功能。
+在将其采用生产环境之前, 请参阅在 Office 365 试用订阅中工作的这些安全功能。
   
-- [创建 Office 365 试用版订阅](https://technet.microsoft.com/library/mt736406.aspx)
+- [创建 Office 365 试用订阅](https://technet.microsoft.com/library/mt736406.aspx)
     
-- [配置和测试 MFA 用户帐户](https://technet.microsoft.com/library/mt492459.aspx)
+- [为用户帐户配置和测试 MFA](https://technet.microsoft.com/library/mt492459.aspx)
     
-- [配置和测试 Office 365 云应用程序安全性，通知您的全局管理员活动](https://technet.microsoft.com/library/mt757250.aspx)
+- [配置和测试 Office 365 云应用安全性以通知您全局管理活动](https://technet.microsoft.com/library/mt757250.aspx)
     
-- [配置和测试 ATP 可疑的电子邮件](https://technet.microsoft.com/library/mt490479.aspx)
+- [配置和测试可疑电子邮件的 ATP](https://technet.microsoft.com/library/mt490479.aspx)
     
-- 检查每个上述步骤您的试用[Office 365 安全分数](https://securescore.office.com/) 
+- 在上述每个步骤中检查试用版订阅的[Office 365 安全分数](https://securescore.office.com/) 
     
 

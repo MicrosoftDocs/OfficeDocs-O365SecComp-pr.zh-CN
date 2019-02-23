@@ -6,7 +6,7 @@ manager: laurawi
 ms.date: ''
 ms.audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: ''
 search.appverid:
@@ -14,29 +14,29 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: 773137cbfc73d449766e04bf7eccc77f8bdd0cca
-ms.sourcegitcommit: 7e2a0185cadea7f3a6afc5ddc445eac2e1ce22eb
+ms.openlocfilehash: 09af09c4a538bb43fed5fce044eb1be60c235aaa
+ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/11/2019
-ms.locfileid: "29706133"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "30212642"
 ---
 # <a name="create-a-search-to-collect-data"></a>创建搜索项来收集数据
 
-在您的案例**搜索**选项卡，可以通过单击**新建搜索**并执行向导来创建新的搜索。
+在您的案例的 "**搜索**" 选项卡上, 您可以通过单击 "**新建搜索**" 并按照向导创建新的搜索。
 
-## <a name="name-your-search-and-give-description"></a>命名您的搜索，并介绍
+## <a name="name-your-search-and-give-description"></a>命名您的搜索并提供说明
 
-每个搜索与用例应具有唯一的名称。（可选），您可以为搜索提供说明。 
+每个具有事例的搜索应具有唯一的名称。您可以选择为搜索提供说明。 
 
-## <a name="define-your-conditions"></a>定义您的条件
+## <a name="define-your-conditions"></a>定义条件
 
-您可以定义为搜索使用预建的条件卡或使用关键字查询语言 (KQL) 的条件。有关详细信息，请参阅[生成搜索查询](building-search-queries.md)。
+您可以使用预建的条件卡或使用关键字查询语言 (KQL) 定义搜索条件。有关详细信息, 请参阅[构建搜索查询](building-search-queries.md)。
 
-## <a name="choose-the-custodians-to-search-from"></a>选择要从搜索管理员
+## <a name="choose-the-custodians-to-search-from"></a>选择要从中搜索的保管人
 
-一旦定义您的条件，您需要选择您要搜索的位置。执行此操作的一种方法是通过指定要搜索已添加到用例的管理员。通过选择管理员，您将所有数据源映射到 custodian 针对运行搜索。有关如何将管理员添加到您的案例和管理其数据源的详细信息，请参阅[使用管理员](managing-custodians.md)。
+定义条件后, 需要选择要搜索的位置。执行此操作的一种方法是指定您已添加到您要搜索的事例的保管人。通过选择管理员, 你将对映射到保管人的所有数据源运行搜索。有关如何将保管人添加到你的事例并管理其数据源的详细信息, 请参阅[使用保管人](managing-custodians.md)。
 
-## <a name="choose-non-custodial-locations"></a>选择非监控位置
+## <a name="choose-non-custodial-locations"></a>选择非 custodial 位置
 
-在某些情况下，您可能希望搜索未映射到管理员的数据源。在这种情况下，您可以指定您希望搜索或选择搜索特定的 Office 365 服务 （如搜索所有 Exchange 邮箱或所有 SharePoint 和 OneDrive for Business 站点） 的所有内容位置的位置。
+在某些情况下, 您可能希望搜索未映射到保管人的数据源。在这种情况下, 您可以指定要搜索的位置, 或选择搜索特定 Office 365 服务的所有内容位置 (例如, 搜索所有 Exchange 邮箱或所有 SharePoint 和 OneDrive for business 网站)。
