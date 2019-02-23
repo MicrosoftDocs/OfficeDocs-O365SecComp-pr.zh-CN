@@ -3,10 +3,9 @@ title: 创建自定义敏感信息类型
 ms.author: stephow
 author: stephow-MSFT
 manager: laurawi
-ms.date: ''
 ms.audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: O365-seccomp
 localization_priority: Priority
 ms.collection: Strat_O365_IP
 search.appverid:
@@ -14,12 +13,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: 了解如何在 Office 365 安全与合规中心的图形用户界面中为 DLP 创建、修改、删除和测试自定义敏感信息类型。
-ms.openlocfilehash: a9234b160d720a04ff6bfeac62899246500ec9b4
-ms.sourcegitcommit: e4291f751d6870d965dba191b4c8f10c5c4ce0b5
+ms.openlocfilehash: 4a94ae8c5fd2f4aed9df0d481fecaaaef8b08074
+ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/15/2018
-ms.locfileid: "26534023"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "30213852"
 ---
 # <a name="create-a-custom-sensitive-information-type"></a>创建自定义敏感信息类型
 

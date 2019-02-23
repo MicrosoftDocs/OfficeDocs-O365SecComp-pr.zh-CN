@@ -1,9 +1,26 @@
 ---
-标题: "反垃圾邮件邮件头" ms. author: krowley author: kccross 管理器: laurawi: it 专业毫秒. 主题: 文章 ms. service: O365-seccomp ms. custom: TN2DMC 使用: Normal search. appverid:
-- MET150 assetid: 2e3fcfc5-5604-4b88-ac0a-c5c45c03f1db ms. 集合:
-    - M365-安全合规性说明: "当 Exchange Online Protection 扫描入站电子邮件时, 它会将**X Forefront-反垃圾邮件报告**标头插入每封邮件中。"
+title: 反垃圾邮件邮件头
+ms.author: krowley
+author: kccross
+manager: laurawi
+ms.audience: ITPro
+ms.topic: article
+ms.service: O365-seccomp
+ms.custom: TN2DMC
+localization_priority: Normal
+search.appverid:
+- MET150
+ms.assetid: 2e3fcfc5-5604-4b88-ac0a-c5c45c03f1db
+ms.collection:
+- M365-security-compliance
+description: Exchange Online Protection 扫描到入站电子邮件时，它会在每封邮件中插入" **X-Forefront-Antispam-Report**"标头。
+ms.openlocfilehash: 4851c05f4db8d120eb54b9c22025fe2972e1e515
+ms.sourcegitcommit: a80bd8626720fabdf592b84e4424cd3a83d08280
+ms.translationtype: MT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "30223581"
 ---
-
 # <a name="anti-spam-message-headers"></a>反垃圾邮件邮件头
 
 Exchange Online Protection 扫描到入站电子邮件时，它会在每封邮件中插入" **X-Forefront-Antispam-Report**"标头。该邮件头中的这些字段有助于为管理员提供与邮件及其处理方式有关的信息。" **X-Microsoft-Antispam**"标头中的字段提供批量邮件和网络钓鱼的更多信息。除这两种标头外，Exchange Online Protection 还会在" **Authentication-results**"标头中为每封邮件插入其处理的电子邮件身份验证结果。

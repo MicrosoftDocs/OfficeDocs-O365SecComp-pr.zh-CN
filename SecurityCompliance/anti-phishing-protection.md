@@ -1,9 +1,26 @@
 ---
-标题: "Office 365 中的反网络钓鱼防护" ms. author: krowley author: kccross 管理器: laurawi 毫秒。日期: 10/11/2018: it 专业毫秒。主题: 文章 ms. 服务: O365-seccomp 使用: 正常搜索。 appverid:
-- MET150 assetid: 75af74b2-c7ea-4556-a912-8c48e07271d3 毫秒。集合:
-    - M365-安全性合规性说明: "Office 365 提供了各种针对网络钓鱼攻击的防护, 同时还提供了其他服务, 例如 ATP 反网络钓鱼。本主题介绍可用于了解和实现 Office 365 中的反钓鱼选项和策略的联机资源。
+title: Office 365 中的防钓鱼保护
+ms.author: krowley
+author: kccross
+manager: laurawi
+ms.date: 10/11/2018
+ms.audience: ITPro
+ms.topic: article
+ms.service: O365-seccomp
+localization_priority: Normal
+search.appverid:
+- MET150
+ms.assetid: 75af74b2-c7ea-4556-a912-8c48e07271d3
+ms.collection:
+- M365-security-compliance
+description: 默认情况下, Office 365 提供各种针对网络钓鱼攻击的防护, 也可以通过其他服务 (如 ATP 反网络钓鱼) 进行保护。本主题介绍可用于了解和实现 Office 365 中的反钓鱼选项和策略的联机资源。
+ms.openlocfilehash: b930e4d41e96225e9b2685ebda02c74c5f8bb7d1
+ms.sourcegitcommit: a80bd8626720fabdf592b84e4424cd3a83d08280
+ms.translationtype: MT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "30222801"
 ---
-
 # <a name="anti-phishing-protection-in-office-365"></a>Office 365 中的防钓鱼保护
 
 默认情况下, Office 365 提供各种针对网络钓鱼攻击的防护, 也可以通过其他服务 (如 ATP 反网络钓鱼) 进行保护。本主题介绍可用于了解和实现 Office 365 中的反钓鱼选项和策略的联机资源。

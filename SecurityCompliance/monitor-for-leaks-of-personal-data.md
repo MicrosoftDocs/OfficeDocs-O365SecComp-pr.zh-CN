@@ -10,19 +10,17 @@ ms.collection:
 - Strat_O365_Enterprise
 - Ent_O365
 - GDPR
-ms.service: o365-solutions
+ms.service: O365-seccomp
 localization_priority: Priority
 search.appverid:
 - MET150
-ms.custom: ''
-ms.assetid: ''
 description: 了解可用于监视个人数据泄露的三种工具。
-ms.openlocfilehash: b2ff4e686c3131260327b1c935603693eaa7f816
-ms.sourcegitcommit: c31424cafbf1953f2864d7e2ceb95b329a694edb
+ms.openlocfilehash: e86dc8fdfa8de600c6de4e4a28309862771c3cea
+ms.sourcegitcommit: a80bd8626720fabdf592b84e4424cd3a83d08280
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "23272407"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "30223571"
 ---
 # <a name="monitor-for-leaks-of-personal-data"></a>监视个人数据泄露
 
@@ -92,7 +90,7 @@ Office 365 安全与合规中心提供两种方法针对 Office 365 审核日志
   [在 Office 365 安全与合规中心搜索审核日志](https://support.office.com/en-us/article/Search-the-audit-log-in-the-Office-365-Security-Compliance-Center-0d4d0f35-390b-4518-800e-0c7ec95e946c?ui=en-US&rs=en-US&ad=US)
 
 -   
-  [Search-UnifiedAuditLog](https://technet.microsoft.com/en-us/library/mt238501(v=exchg.160).aspx) (cmdlet) 
+  [Search-UnifiedAuditLog](https://technet.microsoft.com/en-us/library/mt238501(v=exchg.160).aspx) (cmdlet) 
 
 -   [Office 365 审核日志中的属性详细信息](https://support.office.com/zh-CN/article/Detailed-properties-in-the-Office-365-audit-log-ce004100-9e7f-443e-942b-9b04098fcfc3)
 

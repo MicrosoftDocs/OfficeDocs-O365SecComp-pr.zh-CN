@@ -3,7 +3,6 @@ title: 支持 DKIM 签名邮件验证
 ms.author: krowley
 author: kccross
 manager: laurawi
-ms.date: ''
 ms.audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
@@ -12,13 +11,13 @@ localization_priority: Normal
 search.appverid:
 - MET150
 ms.assetid: a4c95148-a00c-4d12-85ed-88520b547d97
-description: 了解 DKIM 验证签名 Exchange Online Protection 和 Exchange Online 中的邮件
-ms.openlocfilehash: 22f0d1c4fdd6b1e159db732d6ef3d956efbf99c9
-ms.sourcegitcommit: 75b985b2574f4be70cf352498ea300b3d99dd338
+description: 了解 exchange online Protection 和 exchange online 中的 DKIM 签名邮件验证
+ms.openlocfilehash: 7b40769e18c01199669043c42031987695bba639
+ms.sourcegitcommit: a80bd8626720fabdf592b84e4424cd3a83d08280
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/10/2018
-ms.locfileid: "26255827"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "30223321"
 ---
 # <a name="support-for-validation-of-dkim-signed-messages"></a>支持 DKIM 签名邮件验证
 
@@ -28,6 +27,6 @@ DKIM 可在邮件标头中验证出现在 DKIM 签名标头中的数字签名邮
   
  `Authentication-Results: <contoso.com>; dkim=pass (signature was verified) header.d=example.com;`
   
-管理员可以筛选 DKIM 验证结果创建 Exchange[邮件流规则](http://technet.microsoft.com/library/743bd525-0ca2-426d-b76c-b4a052bc8886.aspx)（也称作传输规则） 或路由邮件作为需要。 
+管理员可以在 DKIM 验证结果中创建 Exchange[邮件流规则](http://technet.microsoft.com/library/743bd525-0ca2-426d-b76c-b4a052bc8886.aspx)(也称为传输规则), 以根据需要筛选或路由邮件。 
   
 

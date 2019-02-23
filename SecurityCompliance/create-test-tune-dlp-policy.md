@@ -15,19 +15,19 @@ search.appverid:
 - MET150
 ms.assetid: 59414438-99f5-488b-975c-5023f2254369
 description: '开始使用 DLP 策略的最简单、最常用的方法是使用 Office 365 中包含的模板之一。 '
-ms.openlocfilehash: 58ff52e0fdcd1579985d05d06887d6aca2bb2940
-ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
+ms.openlocfilehash: 14582a6507d271bc569aeb0c5456a662962d20a9
+ms.sourcegitcommit: a80bd8626720fabdf592b84e4424cd3a83d08280
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 02/23/2019
-ms.locfileid: "30220472"
+ms.locfileid: "30223741"
 ---
 # <a name="create-test-and-tune-a-dlp-policy"></a>创建、测试和优化 DLP 策略
 
-**主体作者** </br>
-Paul Cunningham, Microsoft MVP </br>
-[实用365](https://practical365.com/) </br>
-[@Practical365](https://twitter.com/practical365)</br>
+**主体作者** <br/>
+Paul Cunningham, Microsoft MVP <br/>
+[实用365](https://practical365.com/) <br/>
+[@Practical365](https://twitter.com/practical365)<br/>
 __________________________________________________
 
 数据丢失防护是 Office 365 的一项合规性功能, 旨在帮助您的组织防止对不需要的敏感信息进行有意或无意的暴露。DLP 的根在 exchange Server 和 exchange online 中, 也适用于 SharePoint online 和 OneDrive for business。

@@ -3,7 +3,6 @@ title: 使用网络上传将组织 PST 文件导入到 Office 365
 ms.author: markjjo
 author: markjjo
 manager: laurawi
-ms.date: ''
 ms.audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
@@ -15,12 +14,12 @@ search.appverid:
 - MET150
 ms.assetid: 103f940c-0468-4e1a-b527-cc8ad13a5ea6
 description: '对于管理员: 了解如何使用网络上传将多个 PST 文件批量导入 Office 365 中的用户邮箱。'
-ms.openlocfilehash: 04beb021b34a7357556e4d6e4d26d43de6a85c5d
-ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
+ms.openlocfilehash: a92217ad4126851a042b3492614aaa35ef215f61
+ms.sourcegitcommit: a80bd8626720fabdf592b84e4424cd3a83d08280
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 02/23/2019
-ms.locfileid: "30217352"
+ms.locfileid: "30223601"
 ---
 # <a name="use-network-upload-to-import-your-organization-pst-files-to-office-365"></a>使用网络上传将组织 PST 文件导入到 Office 365
 

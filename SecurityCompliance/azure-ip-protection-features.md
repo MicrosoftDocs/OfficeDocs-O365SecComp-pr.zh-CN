@@ -1,9 +1,26 @@
 ---
-标题: "Azure 信息保护中的保护功能向现有 Office 365 租户推出" ms. author: krowley author: kccross 管理器: laurawi 毫秒。日期: 6/29/2018 (): it 专业毫秒。主题: 文章 ms. 服务: O365-seccomp localization_优先级: 正常搜索。 appverid:
-- MET150 assetid: 7ad6f58e-65d7-4c82-8e65-0b773666634d ms. 集合:
-    - M365-安全合规性说明: "帮助解决保护你的信息的初始步骤, 从2018年7月起, 所有受 azure 信息保护的租户都将在 azure 信息保护中默认启用保护功能。azure 信息保护中的保护功能以前在 Office 365 中称为 "权限管理" 或 "Azure RMS"。如果你的组织具有 Office E3 服务计划或更高的服务计划, 你现在将在推出这些功能时通过 Azure 信息保护获取一个头开始保护信息。
+title: Azure 信息保护中的保护功能向现有 Office 365 租户推出
+ms.author: krowley
+author: kccross
+manager: laurawi
+ms.date: 6/29/2018
+ms.audience: ITPro
+ms.topic: article
+ms.service: O365-seccomp
+localization_priority: Normal
+search.appverid:
+- MET150
+ms.assetid: 7ad6f58e-65d7-4c82-8e65-0b773666634d
+ms.collection:
+- M365-security-compliance
+description: 为了帮助保护你的信息的初始步骤, 从2018年7月起, 所有 azure 信息保护符合条件的租户在默认情况下将启用 azure 信息保护中的保护功能。azure 信息保护中的保护功能以前在 Office 365 中称为 "权限管理" 或 "Azure RMS"。如果你的组织具有 Office E3 服务计划或更高的服务计划, 你现在将通过 Azure 信息保护在我们推出这些功能时获取一个头开始保护信息。
+ms.openlocfilehash: 2484f9b335a6698894046aaf429fdad68d82491e
+ms.sourcegitcommit: a80bd8626720fabdf592b84e4424cd3a83d08280
+ms.translationtype: MT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "30223251"
 ---
-
 # <a name="protection-features-in-azure-information-protection-rolling-out-to-existing-office-365-tenants"></a>Azure 信息保护中的保护功能向现有 Office 365 租户推出
 
 为了帮助保护你的信息的初始步骤, 从2018年7月起, 所有 azure 信息保护符合条件的租户在默认情况下将启用 azure 信息保护中的保护功能。azure 信息保护中的保护功能以前在 Office 365 中称为 "权限管理" 或 "Azure RMS"。如果你的组织具有 Office E3 服务计划或更高的服务计划, 你现在将通过 Azure 信息保护在我们推出这些功能时获取一个头开始保护信息。

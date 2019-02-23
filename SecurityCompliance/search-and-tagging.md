@@ -3,87 +3,86 @@ title: 搜索和标记
 ms.author: chrfox
 author: chrfox
 manager: laurawi
-ms.date: ''
 ms.audience: ITPro
 ms.topic: article
-ms.service: o365-administration
+ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid:
 - MET150
 ms.assetid: 22f5adad-1bc0-460d-94a9-8732929f5b99
-description: 高级电子数据展示中, 搜索和添加标签模块，可以搜索、 预览和组织您的案例中的文档。目前，这一模块是 beta 中。
-ms.openlocfilehash: 013e559ca55e9a877dfb2f8747c4696f81e1e095
-ms.sourcegitcommit: 25f1028643d8a20d17306e8b09cafea46eaf7a58
+description: 在高级电子数据展示中, 搜索和标记模块使您能够在您的案例中搜索、预览和组织文档。目前, 此模块在 beta 版中。
+ms.openlocfilehash: 58913a01f30b4169470592f5fc271e3ce785ac5d
+ms.sourcegitcommit: a80bd8626720fabdf592b84e4424cd3a83d08280
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/31/2019
-ms.locfileid: "29666142"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "30222961"
 ---
 # <a name="search-and-tagging"></a>搜索和标记
 
-高级电子数据展示中, 搜索和添加标签模块，可以搜索、 预览和组织您的案例中的文档。目前，这一模块是 beta 中。搜索和标签的简要演示，请参阅[管理您的数据与高级电子数据展示](https://www.youtube.com/watch?v=VaPYL3DHP6I)视频。
+在高级电子数据展示中, 搜索和标记模块使您能够在您的案例中搜索、预览和组织文档。目前, 此模块在 beta 版中。有关搜索和标记的简短演示, 请参阅[使用高级电子数据展示视频管理数据](https://www.youtube.com/watch?v=VaPYL3DHP6I)。
 
 > [!NOTE]
 > 若要使用高级电子数据展示，组织必须订阅随附高级合规性加载项的 Office 365 E3，或订阅 E5。如果没有此计划，但又要试用高级电子数据展示，可以[注册 Office 365 企业版 E5 试用版](https://go.microsoft.com/fwlink/p/?LinkID=698279)。 
   
-## <a name="search-the-documents-in-your-case"></a>在您的案例中搜索文档
+## <a name="search-the-documents-in-your-case"></a>在你的案例中搜索文档
 
-在处理文档中的高级电子数据展示案例 （并 （可选） 运行分析或相关性模块之后），您可以使用搜索和标签可搜索文档，然后将其组织通过应用特定于案例的标记 （也称为标签）。您可以定义搜索查询使用提供的条件卡或中包含关键字使用类似的 KQL 查询语言条件卡片。常见的 KQL 语法，例如 AND、 OR，NOT、 NEAR(n) 且受支持，以及尾随多字符通配符 （*）。 
+在高级电子数据展示案例中处理文档 (并根据需要运行分析或相关性模块) 后, 您可以使用搜索和标记来搜索文档, 然后通过应用大小写特定的标记 (也称为 "标签") 来组织这些文档。您可以使用提供的条件卡或使用关键字条件卡中类似 KQL 的查询语言来定义搜索查询。常用 KQL 语法, 如 AND、OR、NOT 和 NEAR (n), 以及尾部多字符通配符 (*)。 
 
-下表列出了您可以搜索使用 KQL 关键字查询的属性。此外，您可以使用高级电子数据展示搜索工具中的条件卡片搜索查询添加条件 （针对所选属性）。
+下表列出了您可以使用 KQL 关键字查询搜索的属性。或者, 您可以使用高级电子数据展示搜索工具中的条件卡将条件 (对于选定的属性) 添加到搜索查询中。
 
 |**属性**|**说明**|
 |:-----|:-----|
-|**caselabel** <br/> | 创建/应用时标记文档的标记的名称。 <br/> |
-|**custodian** <br/> | 在与文档; 关联 custodian受到限制。 <br/> |
-|**日期** <br/> | 发送电子邮件; 日期网站文档修改的日期。 <br/> |
-|**fileid** <br/> | 在这种情况文件 ID。 <br/> |
-|**文件类型** <br/> | 本机文件扩展名。 <br/> |
-|**fileclass** <br/> | 电子邮件、 文档或附件。 <br/> |
-|**senderauthor** <br/> | 发件人的电子邮件;网站文档的作者。 <br/> |
-|**大小** <br/> | Kb 文件的大小。 <br/> |
-|**subjecttitle** <br/> | 电子邮件; 的主题网站文档标题。 <br/> |
-|**bcc** <br/> | 电子邮件的密件抄送字段中。 <br/> |
-|**cc** <br/> | 电子邮件的抄送字段中。 <br/> |
-|**参与者** <br/> | 在电子邮件线程，包括缺失的链接中的所有参与者的电子邮件地址。 <br/> |
-|**接收** <br/> | 接收电子邮件的日期。 <br/> |
-|**收件人** <br/> | 收件人的电子邮件，包括在收件人、 抄送或密件抄送字段。 <br/> |
-|**sender** <br/> | 发件人的电子邮件。 <br/> |
-|**lastmodifieddate** <br/> | 上次修改日期网站文档。 <br/> |
-|**发送** <br/> | 发送电子邮件的日期。 <br/> |
-|**自** <br/> | 收件人的电子邮件收件人字段中列出。 <br/> |
-|**作者** <br/> | 网站文档的作者。 <br/> |
+|**caselabel** <br/> | 标记文档时创建/应用的标记的名称。 <br/> |
+|**保管人** <br/> | 与文档关联的保管人;受限制。 <br/> |
+|**结束** <br/> | 电子邮件的发送日期;网站文档的修改日期。 <br/> |
+|**fileid** <br/> | 事例中的文件 ID。 <br/> |
+|**类型** <br/> | 本机文件扩展名。 <br/> |
+|**fileclass** <br/> | 电子邮件、文档或附件。 <br/> |
+|**senderauthor** <br/> | 电子邮件的发件人;网站文档的作者。 <br/> |
+|**字体** <br/> | 文件大小 (以 KB 为单位)。 <br/> |
+|**subjecttitle** <br/> | 电子邮件的主题;网站文档的标题。 <br/> |
+|**bcc** <br/> | 电子邮件的 "密件抄送" 字段。 <br/> |
+|**cc** <br/> | 电子邮件的 "抄送" 字段。 <br/> |
+|**参与者** <br/> | 电子邮件线索中所有参与者的电子邮件地址, 包括缺少的链接。 <br/> |
+|**收到** <br/> | 接收电子邮件的日期。 <br/> |
+|**发送** <br/> | 电子邮件的收件人, 包括在 "收件人"、"抄送" 或 "密件抄送" 字段中。 <br/> |
+|**sender** <br/> | 电子邮件的发件人。 <br/> |
+|**lastmodifieddate** <br/> | 网站文档的上次修改日期。 <br/> |
+|**送** <br/> | 电子邮件的发送日期。 <br/> |
+|**自** <br/> | 在电子邮件的 "收件人" 字段中列出的收件人。 <br/> |
+|**编写** <br/> | 网站文档的作者。 <br/> |
 |**title** <br/> | 网站文档的标题。 <br/> |
-|**dominanttheme**\* <br/> | 项目基准主题。 <br/> |
+|**dominanttheme**\* <br/> | 项目的主要主题。 <br/> |
 |**themeslist**\* <br/> | 与项目相关联的主题。 <br/> |
-|**readpercentile_ [issuenum]**\*\* <br/> | 由 [issuenum] 定义问题的项目，读取百分点值。 <br/> |
-|**relevancescore_ [issuenum]**\*\* <br/> | 由 [issuenum] 定义问题的项目相关性分数。 <br/> |
-|**relevancetag_ [tagname]**\*\* <br/> | 如果项目具有已手动标记相关性，由 [tagname] 定义的标记。 <br/> |
+|**readpercentile_ [issuenum]**\*\* <br/> | 项目的已读百分点值, 针对 [issuenum] 定义的问题。 <br/> |
+|**relevancescore_ [issuenum]**\*\* <br/> | 项目的相关性分数, 针对 [issuenum] 定义的问题。 <br/> |
+|**relevancetag_ [tagname]**\*\* <br/> | 如果已手动为项目标记相关性, 则由 [tagname] 定义的标记。 <br/> |
 |||
 
-\*如果已运行主题模块仅可用。
+\*仅当主题模块已运行时才可用。
 
-\*\*如果已运行相关性模块仅可用。
+\*\*仅在已运行相关性模块时可用。
 
-或者，可以使用的条件卡片高级电子数据展示搜索工具中添加到搜索查询的条件 （针对所选属性）。下面的屏幕快照显示了可以添加到查询的条件。**组**列指示属性是否适用于电子邮件、 网站文档，或同时 （由*公共*的值）。此列同时也会指出后运行相关性模块提供的可搜索属性。
+或者, 您可以使用高级电子数据展示搜索工具中的条件卡向搜索查询添加条件 (对于选定的属性)。下面的屏幕截图显示了可以添加到查询中的条件。"**组**" 列指示属性是应用于电子邮件、网站文档还是两者 (由*常见*值表示)。此列还标识了在运行相关性模块后可用的可搜索属性。
 
-![在高级电子数据展示搜索工具中的搜索条件](media/AeDSearchConditions.png)
+![高级电子数据展示搜索工具中的搜索条件](media/AeDSearchConditions.png)
 
-有关可搜索的属性的详细信息，请参阅[关键字查询和搜索条件](keyword-queries-and-search-conditions.md)。
+有关可搜索属性的详细信息, 请参阅[关键字查询和搜索条件](keyword-queries-and-search-conditions.md)。
   
 ## <a name="see-also"></a>另请参阅
 
 [Office 365 高级电子数据展示](office-365-advanced-ediscovery.md)
   
-[了解评估中相关性](assessment-in-relevance-in-advanced-ediscovery.md)
+[了解相关性方面的评估](assessment-in-relevance-in-advanced-ediscovery.md)
   
-[标签和评估](tagging-and-assessment-in-advanced-ediscovery.md)
+[标记和评估](tagging-and-assessment-in-advanced-ediscovery.md)
   
-[标签和相关性培训](tagging-and-relevance-training-in-advanced-ediscovery.md)
+[标记和相关性培训](tagging-and-relevance-training-in-advanced-ediscovery.md)
   
 [跟踪相关性分析](track-relevance-analysis-in-advanced-ediscovery.md)
   
-[决定基于结果](decision-based-on-the-results-in-advanced-ediscovery.md)
+[根据结果做出决定](decision-based-on-the-results-in-advanced-ediscovery.md)
   
 [测试相关性分析](test-relevance-analysis-in-advanced-ediscovery.md)
 

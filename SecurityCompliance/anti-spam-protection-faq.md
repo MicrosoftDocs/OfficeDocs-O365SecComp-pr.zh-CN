@@ -1,9 +1,27 @@
 ---
-标题: "反垃圾邮件保护常见问题" ms. author: krowley author: kccross 管理器: laurawi ms. 日期: 12/9/2016: it 专业 ms. 主题: 文章 ms. 服务: O365-seccomp ms. custom: TN2DMC 使用: Normal search. appverid:
-- MET150 assetid: c534a35d-b121-45da-9d0a-ce738ce51fce ms. 集合:
-    - M365-安全合规性说明: "本主题提供有关反垃圾邮件保护的常见问题和解答。适用于 Microsoft Exchange online 和 Exchange online Protection (EOP) 客户的答案。
+title: 反垃圾邮件保护常见问题解答
+ms.author: krowley
+author: kccross
+manager: laurawi
+ms.date: 12/9/2016
+ms.audience: ITPro
+ms.topic: article
+ms.service: O365-seccomp
+ms.custom: TN2DMC
+localization_priority: Normal
+search.appverid:
+- MET150
+ms.assetid: c534a35d-b121-45da-9d0a-ce738ce51fce
+ms.collection:
+- M365-security-compliance
+description: 本主题提供了有关反垃圾邮件保护的常见问题和解答。 解答适用于 Microsoft Exchange Online 和 Exchange Online Protection (EOP) 客户。
+ms.openlocfilehash: f41799a3870e899fd3601453aaa11f6f9c51c608
+ms.sourcegitcommit: a80bd8626720fabdf592b84e4424cd3a83d08280
+ms.translationtype: MT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "30223051"
 ---
-
 # <a name="anti-spam-protection-faq"></a>反垃圾邮件保护常见问题解答
 
 本主题提供了有关反垃圾邮件保护的常见问题和解答。 解答适用于 Microsoft Exchange Online 和 Exchange Online Protection (EOP) 客户。 

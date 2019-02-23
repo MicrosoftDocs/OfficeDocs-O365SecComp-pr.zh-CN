@@ -13,12 +13,12 @@ search.appverid:
 - MET150
 ms.assetid: dad30e2f-93fe-4d21-9a36-21c87ced85c1
 description: '你和你的用户可以将虚假的负垃圾邮件和假肯定垃圾邮件提交给 Microsoft 进行分析。 '
-ms.openlocfilehash: 584331411c836e25f2818cfb8ed9f1596910cc53
-ms.sourcegitcommit: 06d6e63225f912d0f3c6bb836c61eb11c1dbe97a
+ms.openlocfilehash: 80eef1ad5612509080f92b103084b248cf8d1369
+ms.sourcegitcommit: a80bd8626720fabdf592b84e4424cd3a83d08280
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "30206525"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "30223341"
 ---
 # <a name="submit-spam-non-spam-and-phishing-scam-messages-to-microsoft-for-analysis"></a>将垃圾邮件、非垃圾邮件和网络欺诈邮件提交给 Microsoft 进行分析
 

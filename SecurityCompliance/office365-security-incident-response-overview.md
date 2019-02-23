@@ -13,15 +13,13 @@ ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid:
 - MET150
-ms.custom: ''
-ms.assetid: ''
 description: 此解决方案告诉您在 Office 365 中最常见的网络安全攻击可能是什么, 以及如何对其进行响应
-ms.openlocfilehash: 473a7db30df72ecbe0bdc58d578f4c82c31beaca
-ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
+ms.openlocfilehash: ac0a61e31f50846547517d721456a5229a7fb64c
+ms.sourcegitcommit: a80bd8626720fabdf592b84e4424cd3a83d08280
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 02/23/2019
-ms.locfileid: "30217262"
+ms.locfileid: "30223281"
 ---
 # <a name="office-365-security-incident-response"></a>Office 365 安全事件响应
 

@@ -5,16 +5,15 @@ author: MikePlumleyMSFT
 manager: pamgreen
 ms.audience: ITPro
 ms.topic: article
-ms.service: o365-solutions
-ms.custom: ''
+ms.service: O365-seccomp
 localization_priority: Priority
 description: 了解如何解决本地 Project Server 中的 GDPR 要求。
-ms.openlocfilehash: aa74f29e522f24f330db6e53c7c81bc5b708bcf0
-ms.sourcegitcommit: c31424cafbf1953f2864d7e2ceb95b329a694edb
+ms.openlocfilehash: 67097cdab4fdab31537cf4b6dd27ce17234c2bdc
+ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "23272147"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "30219011"
 ---
 # <a name="gdpr-for-project-server"></a>适用于 Project Server 的 GDPR
 

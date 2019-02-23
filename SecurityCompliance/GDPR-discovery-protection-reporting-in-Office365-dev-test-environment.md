@@ -8,19 +8,18 @@ ms.topic: article
 ms.collection:
 - Ent_O365
 - Strat_O365_Enterprise
-ms.service: o365-solutions
+ms.service: O365-seccomp
 localization_priority: Priority
 search.appverid:
 - MET150
-ms.custom: ''
 ms.assetid: c2112ce8-1c4b-424f-b200-59e161db2d21
 description: 演示 Office 365 中的 GDPR 功能。
-ms.openlocfilehash: 2c5c64d14fdfe7d18c0cf07a01c52a5609f5ee9c
-ms.sourcegitcommit: c31424cafbf1953f2864d7e2ceb95b329a694edb
+ms.openlocfilehash: ec715302a7e17ca3660c31f7143a94f8432d3086
+ms.sourcegitcommit: a80bd8626720fabdf592b84e4424cd3a83d08280
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "23272537"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "30223861"
 ---
 # <a name="gdpr-discovery-protection-and-reporting-in-the-office-365-devtest-environment"></a>Office 365 开发/测试环境中的 GDPR 发现、保护和报告
 
@@ -63,7 +62,7 @@ ms.locfileid: "23272537"
 
 请注意：此示例数据集源自公开信息，仅用于测试目的。
 
-3. 在浏览器的新标签页中，键入“https://**** YourTenantName\<\>.sharepoint.com****”
+3. 在浏览器新选项卡中，键入以下内容：**https://**\<YourTenantName\>**.sharepoint.com**
 4. 单击“文档”**** 打开此网站的文档库。如果系统提示你体验新的列表，请单击“下一步”**** 直至其完成。
 5.  单击“上传”**** > “文件”**** 并选择在步骤 2 中创建的 IBANs.docx。
 

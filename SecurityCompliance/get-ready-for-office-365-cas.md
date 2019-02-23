@@ -4,21 +4,21 @@ ms.author: deniseb
 author: denisebmsft
 manager: laurawi
 ms.audience: ITPro
-ms.topic: overview
+ms.topic: article
 ms.date: 02/15/2019
-ms.service: o365-administration
+ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid:
 - MET150
 - MOE150
 ms.assetid: d9ee4d67-f2b3-42b4-9c9e-c4529904990a
 description: 开始使用 Office 365 云应用安全
-ms.openlocfilehash: eef1a4f0465b583bb0f0589d213f61c9a15fd152
-ms.sourcegitcommit: 8679937354c1d8870ecd41519a59d2d7468c23c4
+ms.openlocfilehash: 89718adcbb7c77735db3009937d887e88d4a8bc3
+ms.sourcegitcommit: a80bd8626720fabdf592b84e4424cd3a83d08280
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "30087431"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "30223711"
 ---
 # <a name="get-ready-for-office-365-cloud-app-security"></a>准备使用 Office 365 云应用安全
   
@@ -73,9 +73,9 @@ Office 365 Cloud App Security 中有两种类型的警报: 检测可疑活动的
 
 若要了解详细信息, 请参阅以下资源:
 
-- [使用 Office 365 云应用安全条件访问应用程序控件保护应用程序](ocas-conditional-access-app-control.md)
+- [使用 Office 365 云应用安全条件访问应用控制保护应用](ocas-conditional-access-app-control.md)
 
-- [为 Office 365 应用程序部署条件访问应用程序控制](ocas-deploy-conditional-access-app-control.md)
+- [为 Office 365 应用部署条件访问应用控制](ocas-deploy-conditional-access-app-control.md)
 
 ## <a name="step-6-learn-about-your-organizations-cloud-usage"></a>步骤 6: 了解组织的云使用情况
 

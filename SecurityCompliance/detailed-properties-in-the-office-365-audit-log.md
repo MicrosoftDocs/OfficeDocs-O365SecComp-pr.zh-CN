@@ -3,7 +3,6 @@ title: Office 365 审核日志中的属性详细信息
 ms.author: markjjo
 author: markjjo
 manager: laurawi
-ms.date: ''
 ms.audience: Admin
 ms.topic: reference
 ms.service: O365-seccomp
@@ -15,12 +14,12 @@ search.appverid:
 - MET150
 ms.assetid: ce004100-9e7f-443e-942b-9b04098fcfc3
 description: Office 365 审核日志记录中包含的其他属性的说明。
-ms.openlocfilehash: 762e5cc89e4815454869a7c350e7b7af9ca0db6e
-ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
+ms.openlocfilehash: 0219ed1fe29dc3ae1f940cd6991781368ae2d519
+ms.sourcegitcommit: a80bd8626720fabdf592b84e4424cd3a83d08280
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 02/23/2019
-ms.locfileid: "30217652"
+ms.locfileid: "30223471"
 ---
 # <a name="detailed-properties-in-the-office-365-audit-log"></a>Office 365 审核日志中的属性详细信息
 

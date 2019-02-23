@@ -10,19 +10,17 @@ ms.collection:
 - Ent_O365
 - Strat_O365_Enterprise
 - GDPR
-ms.service: o365-solutions
+ms.service: O365-seccomp
 localization_priority: Priority
 search.appverid:
 - MET150
-ms.custom: ''
-ms.assetid: ''
 description: 概述针对 GDPR 的 Office 365 信息保护。了解如何发现、分类、保护和监视个人数据。
-ms.openlocfilehash: cdd3dc2d8f2053f0005ee490057c65d8889f2d68
-ms.sourcegitcommit: c31424cafbf1953f2864d7e2ceb95b329a694edb
+ms.openlocfilehash: 7070f719698f92acf7ad885340e59c496559063a
+ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "23272377"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "30212702"
 ---
 # <a name="overview-of-office-365-information-protection-for-gdpr"></a>针对 GDPR 的 Office 365 信息保护概述
 

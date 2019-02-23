@@ -13,12 +13,12 @@ search.appverid:
 - MET150
 ms.assetid: 78fe3147-1979-4c41-83bb-aeccf244368d
 description: '了解 Office 365 安全&amp;合规中心中的内容搜索功能的有效限制, 例如最大并发搜索数。 '
-ms.openlocfilehash: 711aedf8df80bfe2c769721b8c16b01fb705c289
-ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
+ms.openlocfilehash: 0d114db30e9c5b61477789f8a2b91b88c936b253
+ms.sourcegitcommit: a80bd8626720fabdf592b84e4424cd3a83d08280
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 02/23/2019
-ms.locfileid: "30213282"
+ms.locfileid: "30223111"
 ---
 # <a name="limits-for-content-search-in-the-office-365-security-amp-compliance-center"></a>Office 365 安全&amp;合规中心中的内容搜索限制
 

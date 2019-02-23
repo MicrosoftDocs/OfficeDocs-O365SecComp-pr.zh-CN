@@ -12,13 +12,15 @@ localization_priority: Normal
 search.appverid:
 - MET150
 ms.assetid: 6f64f2de-d626-48ed-8084-03cc72301aa4
-description: 退信消息是自动的弹跳发送的邮件服务器，通常是由于传入垃圾邮件。Backscatterer DNSBL 是发送退信消息的 IP 地址的列表。它不是垃圾邮件列表中，并我们不尝试删除 Backscatterer DNSBL 我们的服务器。
-ms.openlocfilehash: 2ab5c6a3bec347446452acd3bdfd8c5d309994a9
-ms.sourcegitcommit: e9dca2d6a7838f98bb7eca127fdda2372cda402c
+ms.collection:
+- M365-security-compliance
+description: 退信邮件是邮件服务器发送的自动弹跳邮件, 通常是由于传入的垃圾邮件造成的。退信 DNSBL 是发送退信邮件的 IP 地址的列表。它不是垃圾邮件制造者列表, 我们不会尝试从退信 DNSBL 中删除我们的服务器。
+ms.openlocfilehash: 075200ff85762056290690f40d6047ea25a1dbde
+ms.sourcegitcommit: a80bd8626720fabdf592b84e4424cd3a83d08280
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/21/2018
-ms.locfileid: "23002676"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "30222771"
 ---
 # <a name="backscatter-messages-and-eop"></a>退信消息和 EOP
 
@@ -31,6 +33,6 @@ ms.locfileid: "23002676"
 
 [Backscatterer.org IP 列表](https://blogs.msdn.com/b/tzink/archive/2012/08/22/the-backscatterer-org-ip-list.aspx)
   
-请参阅[高级垃圾邮件筛选选项](advanced-spam-filtering-asf-options.md)中的"NDR 退信"条目
+请参阅[高级垃圾邮件筛选选项](advanced-spam-filtering-asf-options.md)中的 "NDR 退信" 条目
   
 

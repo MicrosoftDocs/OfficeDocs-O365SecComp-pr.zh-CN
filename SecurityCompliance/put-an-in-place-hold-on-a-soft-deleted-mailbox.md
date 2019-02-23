@@ -3,7 +3,6 @@ title: 将就地保留置于 Exchange Online 中的软删除邮箱上
 ms.author: markjjo
 author: markjjo
 manager: laurawi
-ms.date: ''
 ms.audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
@@ -12,28 +11,28 @@ localization_priority: Normal
 search.appverid: ''
 ms.assetid: 421f72bd-dd43-4be1-82f5-0ae9ac43bd00
 description: 了解如何为软删除邮箱创建就地保留，以将其变为非活动邮箱并保留其内容。然后可以使用 Microsoft 电子数据展示工具来搜索非活动邮箱。
-ms.openlocfilehash: e666ac608ec224bf97caa947be2cb42b742c6fa9
-ms.sourcegitcommit: ca97beff215d154b6ab006ce1222056434fde1a9
+ms.openlocfilehash: 70feb265e95741406dbf170c6be70bd83b2ec081
+ms.sourcegitcommit: a80bd8626720fabdf592b84e4424cd3a83d08280
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/05/2019
-ms.locfileid: "29740794"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "30223521"
 ---
 # <a name="put-an-in-place-hold-on-a-soft-deleted-mailbox-in-exchange-online"></a>将就地保留置于 Exchange Online 中的软删除邮箱上
 
 了解如何为软删除邮箱创建就地保留，以将其变为非活动邮箱并保留其内容。然后可以使用 Microsoft 电子数据展示工具来搜索非活动邮箱。
   
 > [!NOTE]
-> 我们已推迟创建新的就地保留在 Exchange Online 中 （在 Office 365 和 Exchange Online 独立计划） 的最后期限。但今年或早期明年，您将无法创建新的就地保留在 Exchange Online。作为使用就地保留的替代方法，您可以使用[电子数据展示事例](https://go.microsoft.com/fwlink/?linkid=780738)或[保留策略](https://go.microsoft.com/fwlink/?linkid=827811)在 Office 365 安全性&amp;合规性中心。我们停用新就地保留后，您仍可以修改现有的就地保留，并创建新的就地保留在 Exchange Server 2013 和 Exchange 混合部署仍会支持。然后您将仍然能够将邮箱置于诉讼保留。 
+> 我们已推迟在 Exchange online 中创建新的就地保留的截止时间 (在 Office 365 和 Exchange Online 独立计划中)。但在今年下半年或明年早些时候, 你将无法在 Exchange Online 中创建新的就地保留。作为使用就地保留的替代方法, 您可以在 Office 365 安全&amp;合规中心中使用[电子数据展示案例](https://go.microsoft.com/fwlink/?linkid=780738)或[保留策略](https://go.microsoft.com/fwlink/?linkid=827811)。在取消新的就地保留之后, 您仍可以修改现有的就地保留, 并在 exchange Server 2013 中创建新的就地保留, 并且仍支持 exchange 混合部署。而且, 您仍可以将邮箱置于诉讼保留状态。 
   
-您可能必须其中联系人已离开组织和其相应的用户帐户和邮箱已删除的情况。然后，您认识到需要保留的邮箱中的信息。您可以做什么？如果没有过期的已删除的邮箱保留期，您可以将 （称为软删除邮箱） 的已删除邮箱置于就地保留，并使其非活动邮箱。*非活动邮箱*用于保留以前员工的电子邮件，他/她离开组织之后。非活动邮箱的内容会保留的已就地保留的持续时间置于软删除邮箱时已处于非活动状态。非活动邮箱后，您可以在 Exchange Online 中，Office 365 安全性内容搜索使用就地电子数据展示搜索邮箱&amp;合规性中心或 SharePoint Online 中的电子数据展示中心。 
+您可能会遇到这样的情况: 某人已离开您的组织, 并且其相应的用户帐户和邮箱已被删除。随后, 您会发现邮箱中有需要保留的信息。您可以执行什么操作？如果已删除的邮箱保留期尚未过期, 则可以对已删除的邮箱 (称为软删除的邮箱) 设置就地保留, 并使其成为非活动邮箱。*非活动邮箱*用于在离开组织后保留以前的员工的电子邮件。非活动邮箱的内容将保留在软删除邮箱上被置为非活动状态时对其进行就地保留的持续时间。将邮箱设为非活动状态后, 可以使用 Exchange online 中的就地电子数据展示、Office 365 安全&amp;合规中心中的内容搜索或 SharePoint Online 中的电子数据展示中心来搜索邮箱。 
   
 > [!NOTE]
 > 在 Exchange Online 中，软删除邮箱是指已删除但可以在特定保留期内恢复的邮箱。Exchange Online 中的软删除邮箱保留期为 30 天。这意味着该邮箱可以在删除后 30 天内进行恢复（或变为非活动邮箱）。30 天后，软删除邮箱将标记为永久删除并且无法恢复或变为非活动邮箱。 
   
 ## <a name="before-you-begin"></a>准备工作
 
-- 您必须使用 Windows PowerShell 中的**New-mailboxsearch** cmdlet 可以将软删除邮箱置于就地保留。不能使用 Exchange 管理员中心 (EAC) 或 SharePoint Online 中的电子数据展示中心。 
+- 您必须在 Windows PowerShell 中使用**new-mailboxsearch** cmdlet 在软删除的邮箱上放置就地保留。您不能在 SharePoint Online 中使用 Exchange 管理中心 (EAC) 或电子数据展示中心。 
     
 - 若要了解如何使用 Windows PowerShell 连接到 Exchange Online，请参阅[连接到 Exchange Online PowerShell](https://go.microsoft.com/fwlink/p/?linkid=396554)。
     
@@ -43,7 +42,7 @@ ms.locfileid: "29740794"
   Get-Mailbox -SoftDeletedMailbox | FL Name,WhenSoftDeleted,DistinguishedName,ExchangeGuid,PrimarySmtpAddress
   ```
 
-- 有关非活动邮箱的详细信息，请参阅[Overview of Office 365 中的非活动邮箱](inactive-mailboxes-in-office-365.md)。
+- 有关非活动邮箱的详细信息, 请参阅[Office 365 中的非活动邮箱概述](inactive-mailboxes-in-office-365.md)。
     
 ## <a name="put-an-in-place-hold-on-a-soft-deleted-mailbox-to-make-it-an-inactive-mailbox"></a>将就地保留置于软删除邮箱以使其变为非活动邮箱
 
@@ -56,7 +55,7 @@ ms.locfileid: "29740794"
    ```
 
     > [!IMPORTANT]
-    > 在上一命令中，使用**DistinguishedName**或**ExchangeGuid**属性的值标识软删除邮箱。这些属性是唯一的组织中的每个邮箱，而可以主动邮箱和软删除邮箱可能具有的相同的主 SMTP 地址。 
+    > 在上一个命令中, 使用**DistinguishedName**或**ExchangeGuid**属性的值来标识软删除的邮箱。这些属性对于组织中的每个邮箱都是唯一的, 但是, 活动邮箱和软删除邮箱可能具有相同的主 SMTP 地址。 
   
 2. 创建就地保留并将其置于软删除邮箱上。在此示例中，未指定保留持续时间。这意味着项目将被无限期保留或一直保留到将该保留从非活动邮箱中删除为止。
     
@@ -91,4 +90,4 @@ ms.locfileid: "29740794"
     
 - [还原非活动邮箱](restore-an-inactive-mailbox.md)
     
-- [删除非活动邮箱](delete-an-inactive-mailbox.md)（通过删除保留）
+- [删除非活动邮箱](delete-an-inactive-mailbox.md)(通过删除保留)

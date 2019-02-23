@@ -10,29 +10,29 @@ ms.service: O365-seccomp
 ms.custom: TN2DMC
 localization_priority: Normal
 ms.assetid: eb14f38b-7b55-4a47-84a0-4a56a59e4111
-description: 以下 Microsoft 数据中心 IP 地址用于通过 Microsoft Exchange Online Protection (EOP) 发送电子邮件、 时接收电子邮件，或 Exchange Online Protection 门户和管理服务。发送和接收来自 EOP 的邮件或使用管理服务，请确保您的网络以允许从这些 IP 地址连接。
-ms.openlocfilehash: 5ea1a3df2ba1ea6853e2e44983fa7a97877c0778
-ms.sourcegitcommit: 031781d0eecf33baabcd03ea53546d41076062b4
+description: microsoft Exchange online protection (EOP) 在发送电子邮件、接收电子邮件或 Exchange Online protection 门户和管理服务时使用以下 microsoft 数据中心 IP 地址。为了从 EOP 发送和接收邮件, 或使用管理服务, 请确保您的网络允许来自这些 IP 地址的连接。
+ms.openlocfilehash: 6c7d8c78a012be3928317eac1e9b6fcdeab64a24
+ms.sourcegitcommit: a80bd8626720fabdf592b84e4424cd3a83d08280
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/12/2018
-ms.locfileid: "27240505"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "30222821"
 ---
 # <a name="exchange-online-protection-ip-addresses"></a>Exchange Online Protection IP 地址
 
-以下 Microsoft 数据中心 IP 地址用于通过 Microsoft Exchange Online Protection (EOP) 发送电子邮件、 时接收电子邮件，或 Exchange Online Protection 门户和管理服务。发送和接收来自 EOP 的邮件或使用管理服务，请确保您的网络以允许从这些 IP 地址连接。
+microsoft Exchange online protection (EOP) 在发送电子邮件、接收电子邮件或 Exchange Online protection 门户和管理服务时使用以下 microsoft 数据中心 IP 地址。为了从 EOP 发送和接收邮件, 或使用管理服务, 请确保您的网络允许来自这些 IP 地址的连接。
  
 > [!NOTE]
-> Microsoft 开发了基于 REST 的 web 服务的 IP 地址和此页上的 FQDN 条目。此新服务可帮助您配置和更新网络外围设备，如防火墙和代理服务器。您可以下载的终结点、 列表或特定更改的当前版本的列表。此服务将替换的 XML 文档、 RSS 源，和 IP 地址和此页上的 FQDN 条目。若要试用此新的服务，请转到[Office 365 IP 地址和 URL Web 服务](https://docs.microsoft.com/office365/enterprise/office-365-ip-web-service)。 
+> Microsoft 为此页面上的 IP 地址和 FQDN 条目开发了基于 REST 的 web 服务。此新服务可帮助您配置和更新网络外围设备, 例如防火墙和代理服务器。您可以下载终结点列表、列表的当前版本或特定更改。此服务将替换此页面上的 XML 文档、RSS 源以及 IP 地址和 FQDN 条目。若要试用此新服务, 请转到[Office 365 IP 地址和 URL Web 服务](https://docs.microsoft.com/office365/enterprise/office-365-ip-web-service)。 
  
 ## <a name="eop-ip-address-ranges"></a>EOP IP 地址范围
 
 ||||
 |:-----|:-----|:-----|
 |**IPv4 地址范围** <br/> |**IPv6 地址范围** <br/> |
-| 23.103.132.0/22 | 2a01:111:f400:7 c 00:: / 54 |
-| 23.103.136.0/21 | 2a01:111:f400:fc00:: / 54 |
-| 23.103.144.0/20 | 2a01:111:f403:: / 48 |
+| 23.103.132.0/22 | 2a01: 111: f400: 7c00::/54 |
+| 23.103.136.0/21 | 2a01: 111: f400: fc00::/54 |
+| 23.103.144.0/20 | 2a01: 111: f403:/48 |
 | 23.103.198.0/23 |  |
 | 23.103.200.0/22 |  |
 | 40.92.0.0/14 |  |
@@ -54,7 +54,7 @@ ms.locfileid: "27240505"
 ||||
  
 > [!IMPORTANT]
-> 此处提供的 IP 地址范围仅用于通过客户连接器的中继。到的 IP 地址列表的更改很少，和提前传送。若要确保到您的业务合作伙伴、 智能主机或在本地环境路由通过该服务的已发布的 IP 地址范围发送的邮件，您必须配置路由到每个目标的正确连接器。有关连接器的详细信息，请参阅[决定其连接器用于](https://docs.microsoft.com/exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/set-up-connectors-to-route-mail)。 本主题中的 IP 地址可随时间变化。  
+> 此处提供的 IP 地址范围仅用于通过客户连接器的中继。对 IP 地址列表所做的更改极少, 并提前进行传递。若要确保发送给业务合作伙伴、智能主机或本地环境的邮件通过服务的已发布 IP 地址范围进行路由, 必须将正确的连接器配置为路由到每个目标。有关连接器的详细信息, 请参阅[确定要使用的连接器](https://docs.microsoft.com/exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/set-up-connectors-to-route-mail)。本主题中的 IP 地址可能会随着时间的推移而发生变化。  
  
 有关 Microsoft Office 365 使用的 IP 地址的信息，请参阅 [Office 365 URL 和 IP 地址范围](https://go.microsoft.com/fwlink/p/?LinkId=324165)。
 

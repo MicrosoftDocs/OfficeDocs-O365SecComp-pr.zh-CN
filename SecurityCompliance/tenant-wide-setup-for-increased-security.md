@@ -11,12 +11,12 @@ localization_priority: Normal
 search.appverid: MET150
 ms.assetid: 8d274fe3-db51-4107-ba64-865e7155b355
 description: 引导您完成影响 Office 365 环境安全性的租户范围设置的建议配置。您的安全需求可能需要更高或更低的安全性。使用这些建议作为起点。
-ms.openlocfilehash: 95b00d2f5a5c77eff1fcef2450ffb20ce5c57617
-ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
+ms.openlocfilehash: 982e9b73821553ae1f666cf54e143d4a806e3cb3
+ms.sourcegitcommit: a80bd8626720fabdf592b84e4424cd3a83d08280
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 02/23/2019
-ms.locfileid: "30213922"
+ms.locfileid: "30223161"
 ---
 # <a name="configure-your-office-365-tenant-for-increased-security"></a>配置 Office 365 租户以提高安全性
 
@@ -37,7 +37,7 @@ Office 365 安全&amp;合规中心包括保护环境的功能。它还包括可�
 |**ATP 安全附件** <br/> |否  <br/> | 在安全附件的主页上, 通过选中此框来保护 SharePoint、OneDrive 和 Microsoft 团队中的文件:  <br/>  &ensp;&ensp;•打开适用于 SharePoint、OneDrive 和 Microsoft 团队的 ATP  <br/> <br> 使用以下设置添加新的安全附件策略:  <br/>  &ensp;&ensp;•阻止—使用检测到的恶意软件阻止当前和将来的电子邮件和附件 (选择此选项)  <br/>  &ensp;&ensp;•启用重定向-(选中此框并输入电子邮件地址, 如管理员或隔离帐户)  <br/>  &ensp;&ensp;•如果恶意软件扫描附件超时或发生错误, 则应用上述选择 (选中此框)  <br/>  &ensp;&ensp;•适用于—收件人域为 (选择您的域)  <br/>  <br>详细信息:[设置 Office 365 ATP 安全附件策略](set-up-atp-safe-attachments-policies.md) <br/> |
 |**ATP 安全链接** <br/> |可访问  <br/> | 将此设置添加到整个组织的默认策略:  <br/> &ensp;&ensp;•使用中的安全链接: office 365 专业增强版中的 office for iOS 和 Android (选择此选项)。  <br/> <br>针对特定收件人的推荐策略:  <br/>  &ensp;&ensp;•当用户单击链接 (选择此选项) 时, 将对 url 进行重写并对已知恶意链接列表进行检查。  <br/>  &ensp;&ensp;•使用安全附件扫描可下载的内容 (选中此框)。  <br/>  &ensp;&ensp;•适用于—收件人域为 (选择您的域)。  <br/> <br> 有关详细信息, 请: [Office 365 ATP 安全链接](atp-safe-links.md)。  <br/> |
 |**反垃圾邮件 (邮件筛选)** <br/> |可访问  <br/> | 要监视的内容:  <br/>  &ensp;&ensp;•垃圾邮件过多—选择 "自定义设置" 并编辑 "默认垃圾邮件筛选器" 策略。  <br/>  &ensp;&ensp;•欺骗性智能—查看欺骗您的域的发件人。阻止或允许这些发件人。<br/>  <br>有关详细信息, 请执行以下操作: [Office 365 电子邮件反垃圾邮件保护](anti-spam-protection.md)。  <br/> |
-|***电子邮件身份验证*** <br/> |可访问  <br/> |电子邮件身份验证使用域名系统 (DNS) 将可验证的信息添加到有关电子邮件发件人的电子邮件中。office 365 为其默认域 (onmicrosoft.com) 设置电子邮件身份验证, 但 Office 365 管理员还可以对自定义域使用电子邮件身份验证。使用三种身份验证方法:<br/> <br> &ensp;&ensp;•发件人策略框架 (或 SPF)。<br/>&ensp;&ensp;&ensp;&ensp;-有关设置, 请参阅[在 Office 365 中设置 SPF 以帮助防止欺骗](set-up-spf-in-office-365-to-help-prevent-spoofing.md)。 <br/> &ensp;&ensp;•域密钥识别邮件 (DKIM)。 <br/> &ensp;&ensp;&ensp;&ensp;-请参阅[在 Office 365 中使用自定义域中的电子邮件 DKIM](https://docs.microsoft.com/office365/SecurityCompliance/use-dkim-to-validate-outbound-email)。 <br>&ensp;&ensp;&ensp;&ensp;-配置 DKIM 后, 在安全&amp;合规中心中启用它。<br/> &ensp;&ensp;•基于域的邮件身份验证、报告和一致性 (DMARC)。 </br> &ensp;&ensp;&ensp;&ensp;-适用于 DMARC 安装程序[使用 DMARC 验证 Office 365 中的电子邮件](use-dmarc-to-validate-email.md)。<br/>  <br/>
+|***电子邮件身份验证*** <br/> |可访问  <br/> |电子邮件身份验证使用域名系统 (DNS) 将可验证的信息添加到有关电子邮件发件人的电子邮件中。office 365 为其默认域 (onmicrosoft.com) 设置电子邮件身份验证, 但 Office 365 管理员还可以对自定义域使用电子邮件身份验证。使用三种身份验证方法:<br/> <br> &ensp;&ensp;•发件人策略框架 (或 SPF)。<br/>&ensp;&ensp;&ensp;&ensp;-有关设置, 请参阅[在 Office 365 中设置 SPF 以帮助防止欺骗](set-up-spf-in-office-365-to-help-prevent-spoofing.md)。 <br/> &ensp;&ensp;•域密钥识别邮件 (DKIM)。 <br/> &ensp;&ensp;&ensp;&ensp;-请参阅[在 Office 365 中使用自定义域中的电子邮件 DKIM](https://docs.microsoft.com/office365/SecurityCompliance/use-dkim-to-validate-outbound-email)。 <br>&ensp;&ensp;&ensp;&ensp;-配置 DKIM 后, 在安全&amp;合规中心中启用它。<br/> &ensp;&ensp;•基于域的邮件身份验证、报告和一致性 (DMARC)。 <br/> &ensp;&ensp;&ensp;&ensp;-适用于 DMARC 安装程序[使用 DMARC 验证 Office 365 中的电子邮件](use-dmarc-to-validate-email.md)。<br/>  <br/>
 |
 
 > [!NOTE]

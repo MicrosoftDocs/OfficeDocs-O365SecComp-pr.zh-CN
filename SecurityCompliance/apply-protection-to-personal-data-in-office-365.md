@@ -10,19 +10,17 @@ ms.collection:
 - Ent_O365
 - Strat_O365_Enterprise
 - GDPR
-ms.service: o365-solutions
+ms.service: O365-seccomp
 localization_priority: Priority
-ms.custom: ''
-ms.assetid: ''
 search.appverid:
 - MET150
 description: 了解如何使用 DLP 策略保护 Office 365 中的个人数据。
-ms.openlocfilehash: 133d518ea2cc0c25271429cf3bd243b6d934fdc1
-ms.sourcegitcommit: c31424cafbf1953f2864d7e2ceb95b329a694edb
+ms.openlocfilehash: 637992ac673cd59adebf22f6c039ed85c2184477
+ms.sourcegitcommit: a80bd8626720fabdf592b84e4424cd3a83d08280
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "23272427"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "30223441"
 ---
 # <a name="apply-protection-to-personal-data-in-office-365"></a>向 Office 365 中的个人数据应用保护
 

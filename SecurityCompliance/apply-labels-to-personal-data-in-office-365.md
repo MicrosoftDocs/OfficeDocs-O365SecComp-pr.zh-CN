@@ -10,19 +10,17 @@ ms.collection:
 - Ent_O365
 - Strat_O365_Enterprise
 - GDPR
-ms.service: o365-solutions
+ms.service: O365-seccomp
 localization_priority: Priority
-ms.custom: ''
-ms.assetid: ''
 search.appverid:
 - MET150
 description: 了解如何使用 Office 标签作为 GDPR 保护计划的一部分。
-ms.openlocfilehash: 35fc3be6f2c98d6b7f6c4d6f6150eeef6d552437
-ms.sourcegitcommit: c31424cafbf1953f2864d7e2ceb95b329a694edb
+ms.openlocfilehash: d92d132190296e2243bf7ea00c3c0dba4e38930f
+ms.sourcegitcommit: a80bd8626720fabdf592b84e4424cd3a83d08280
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "23272337"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "30223151"
 ---
 # <a name="apply-labels-to-personal-data-in-office-365"></a>向 Office 365 中的个人数据应用标签
 
