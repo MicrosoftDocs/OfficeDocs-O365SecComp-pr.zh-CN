@@ -1,12 +1,12 @@
 ---
-title: 使用相关性模块高级电子数据展示 (Preview) 中的数据进行分析
+title: 使用相关性模块分析高级电子数据展示中的数据 (预览)
 ms.author: markjjo
 author: markjjo
 manager: laurawi
 ms.date: ''
 ms.audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: ''
 search.appverid:
@@ -14,130 +14,130 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: 56e83a1f8a951fd6e14172122a5e86447c6f2ccf
-ms.sourcegitcommit: 7e2a0185cadea7f3a6afc5ddc445eac2e1ce22eb
+ms.openlocfilehash: 53f1906b28c6c6b467e147951e7c55aa7358a4a7
+ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/11/2019
-ms.locfileid: "29695168"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "30215432"
 ---
-# <a name="use-the-relevance-module-to-analyze-data-in-advanced-ediscovery-preview"></a><span data-ttu-id="986fb-102">使用相关性模块高级电子数据展示 (Preview) 中的数据进行分析</span><span class="sxs-lookup"><span data-stu-id="986fb-102">Use the Relevance module to analyze data in Advanced eDiscovery (Preview)</span></span>
+# <a name="use-the-relevance-module-to-analyze-data-in-advanced-ediscovery-preview"></a><span data-ttu-id="e9b0c-102">使用相关性模块分析高级电子数据展示中的数据 (预览)</span><span class="sxs-lookup"><span data-stu-id="e9b0c-102">Use the Relevance module to analyze data in Advanced eDiscovery (Preview)</span></span>
 
-<span data-ttu-id="986fb-p101">高级电子数据展示 （预览），在相关性模块包括相关性培训和检查与案例相关的文件。相关性工作流所示，如下所述：</span><span class="sxs-lookup"><span data-stu-id="986fb-p101">In Advanced eDiscovery (Preview), the Relevance module includes the Relevance training and review of files related to a case. The Relevance workflow is shown and described as follows:</span></span>
+<span data-ttu-id="e9b0c-p101">在高级电子数据展示 (预览版) 中, 相关性模块包含与案例相关的相关文件的相关性培训和审核。相关性工作流如下所示, 如下所示:</span><span class="sxs-lookup"><span data-stu-id="e9b0c-p101">In Advanced eDiscovery (Preview), the Relevance module includes the Relevance training and review of files related to a case. The Relevance workflow is shown and described as follows:</span></span>
   
 ![相关性工作流](../media/44c67dd2-7a20-40a9-b0ed-784364845c77.gif)
   
-- <span data-ttu-id="986fb-106">**评估和跟踪的循环**：</span><span class="sxs-lookup"><span data-stu-id="986fb-106">**Cycles of assessment and tracking**:</span></span>
+- <span data-ttu-id="e9b0c-106">**评估和跟踪周期**:</span><span class="sxs-lookup"><span data-stu-id="e9b0c-106">**Cycles of assessment and tracking**:</span></span>
     
-  - <span data-ttu-id="986fb-107">**评估**： 启用基于文件的随机示例早期评估，并使用此评估将确定预测的编码过程的性能的决策。</span><span class="sxs-lookup"><span data-stu-id="986fb-107">**Assessment**: Enables early assessment based on a random sample of files and uses this assessment to apply decisions to determine the performance of the predictive coding process.</span></span> 
+  - <span data-ttu-id="e9b0c-107">**评估**: 基于文件的随机样本启用早期评估, 并使用此评估来应用决策, 以确定预测编码过程的性能。</span><span class="sxs-lookup"><span data-stu-id="e9b0c-107">**Assessment**: Enables early assessment based on a random sample of files and uses this assessment to apply decisions to determine the performance of the predictive coding process.</span></span> 
     
-  - <span data-ttu-id="986fb-108">**跟踪**： 计算并显示监视统计有效性的过程时评估的中间结果。</span><span class="sxs-lookup"><span data-stu-id="986fb-108">**Track**: Calculate and display interim results of the assessment while monitoring statistical validity of the process.</span></span> 
+  - <span data-ttu-id="e9b0c-108">**跟踪**: 计算并显示评估的中间结果, 同时监视流程的统计有效性。</span><span class="sxs-lookup"><span data-stu-id="e9b0c-108">**Track**: Calculate and display interim results of the assessment while monitoring statistical validity of the process.</span></span> 
     
-- <span data-ttu-id="986fb-109">**培训和跟踪的循环**</span><span class="sxs-lookup"><span data-stu-id="986fb-109">**Cycles of training and tracking**</span></span>
+- <span data-ttu-id="e9b0c-109">**培训和跟踪周期**</span><span class="sxs-lookup"><span data-stu-id="e9b0c-109">**Cycles of training and tracking**</span></span>
     
-  - <span data-ttu-id="986fb-110">**标记**： 高级电子数据展示 (Preview) 了解特定于基于专家的迭代查看每个问题和标记的单个文件的相关性条件。</span><span class="sxs-lookup"><span data-stu-id="986fb-110">**Tag**: Advanced eDiscovery (Preview) learns Relevance criteria specific to each issue based on the expert's iterative review and tagging of individual files.</span></span>
+  - <span data-ttu-id="e9b0c-110">**标记**: 高级电子数据展示 (预览) 根据专家对各个文件的迭代评审和标记, 了解特定于每个问题的相关性条件。</span><span class="sxs-lookup"><span data-stu-id="e9b0c-110">**Tag**: Advanced eDiscovery (Preview) learns Relevance criteria specific to each issue based on the expert's iterative review and tagging of individual files.</span></span>
     
-  - <span data-ttu-id="986fb-111">**跟踪**： 计算并显示中间结果的相关性培训时监控统计有效性的过程。</span><span class="sxs-lookup"><span data-stu-id="986fb-111">**Track**: Calculate and display interim results of the Relevance training while monitoring statistical validity of the process.</span></span> 
+  - <span data-ttu-id="e9b0c-111">**跟踪**: 计算并显示相关培训的中间结果, 同时监视流程的统计有效性。</span><span class="sxs-lookup"><span data-stu-id="e9b0c-111">**Track**: Calculate and display interim results of the Relevance training while monitoring statistical validity of the process.</span></span> 
     
-- <span data-ttu-id="986fb-112">**批次计算**： 累计和学习相关性条件应用到整个文件集合，并为每个文件生成的相关性分数。</span><span class="sxs-lookup"><span data-stu-id="986fb-112">**Batch calculation**: The accumulated and learned Relevance criteria is applied to the entire file collection, and a Relevance score is generated for each file.</span></span>
+- <span data-ttu-id="e9b0c-112">**批处理计算**: 累积的和已知的相关性条件应用于整个文件集合, 并为每个文件生成相关性分数。</span><span class="sxs-lookup"><span data-stu-id="e9b0c-112">**Batch calculation**: The accumulated and learned Relevance criteria is applied to the entire file collection, and a Relevance score is generated for each file.</span></span>
     
-- <span data-ttu-id="986fb-113">**Decide**： 应用于整个案例分析的结果显示后批次计算并显示用于决定文档审阅的数据。</span><span class="sxs-lookup"><span data-stu-id="986fb-113">**Decide**: The results of the analysis applied to the entire case is displayed after Batch calculation, and data used to make document review decisions is displayed.</span></span>
+- <span data-ttu-id="e9b0c-113">**决定**: 在批处理计算后显示应用于整个事例的分析结果, 并显示用于做出文档审阅决定的数据。</span><span class="sxs-lookup"><span data-stu-id="e9b0c-113">**Decide**: The results of the analysis applied to the entire case is displayed after Batch calculation, and data used to make document review decisions is displayed.</span></span>
     
-- <span data-ttu-id="986fb-114">**测试**： 可以测试结果，以验证的有效性和高级电子数据展示 （预览） 处理的有效性。</span><span class="sxs-lookup"><span data-stu-id="986fb-114">**Test**: Results can be tested to verify the validity and effectiveness of the Advanced eDiscovery (Preview) processing.</span></span>
+- <span data-ttu-id="e9b0c-114">**测试**: 可以测试结果, 以验证高级电子数据展示 (预览) 处理的有效性和有效性。</span><span class="sxs-lookup"><span data-stu-id="e9b0c-114">**Test**: Results can be tested to verify the validity and effectiveness of the Advanced eDiscovery (Preview) processing.</span></span>
 
-- <span data-ttu-id="986fb-115">**搜索**： 相关性工作流完成后，可用于文档的读取百分点值如输出您的问题时工作集内运行查询。</span><span class="sxs-lookup"><span data-stu-id="986fb-115">**Search**: Once the Relevance workflow is complete, you can use the output such as read percentile of a document for your issue when you run a query within your working set.</span></span>
+- <span data-ttu-id="e9b0c-115">**搜索**: 一旦完成了相关性工作流, 则在工作集内运行查询时, 可以使用输出 (如文档的已读百分比) 来解决问题。</span><span class="sxs-lookup"><span data-stu-id="e9b0c-115">**Search**: Once the Relevance workflow is complete, you can use the output such as read percentile of a document for your issue when you run a query within your working set.</span></span>
     
-## <a name="guidelines-for-relevance-training-and-review"></a><span data-ttu-id="986fb-116">相关性培训和审阅准则</span><span class="sxs-lookup"><span data-stu-id="986fb-116">Guidelines for Relevance training and review</span></span>
+## <a name="guidelines-for-relevance-training-and-review"></a><span data-ttu-id="e9b0c-116">相关培训和审阅指南</span><span class="sxs-lookup"><span data-stu-id="e9b0c-116">Guidelines for Relevance training and review</span></span>
 
-<span data-ttu-id="986fb-117">以下是概述相关性培训和审阅准则：</span><span class="sxs-lookup"><span data-stu-id="986fb-117">Following is an overview of guidelines for Relevance training and review:</span></span>
+<span data-ttu-id="e9b0c-117">下面概述了相关培训和审查指南:</span><span class="sxs-lookup"><span data-stu-id="e9b0c-117">Following is an overview of guidelines for Relevance training and review:</span></span>
   
-- <span data-ttu-id="986fb-p102">**错误和不一致情况**： 如果在培训过程进行了标记错误，返回到以前的文件示例，用于对其进行更正。如果有太多错误正确或没有在案例或问题的新的角度来看，相关性条件应重新定义由管理员，并且相关性培训重新启动。</span><span class="sxs-lookup"><span data-stu-id="986fb-p102">**Errors and inconsistencies**: If tagging errors are made during training, return to previous file samples to correct them. If there are too many errors to correct or there is a new perspective of the case or issue, the Relevance criteria should be redefined by the Administrator, and the Relevance training restarted.</span></span>
+- <span data-ttu-id="e9b0c-p102">**错误和不一致**: 如果在培训过程中进行了标记错误, 请返回到之前的文件示例以更正这些错误。如果要更正的错误太多, 或者案例或问题的新透视, 则应由管理员重新定义相关性条件, 并重新启动相关性培训。</span><span class="sxs-lookup"><span data-stu-id="e9b0c-p102">**Errors and inconsistencies**: If tagging errors are made during training, return to previous file samples to correct them. If there are too many errors to correct or there is a new perspective of the case or issue, the Relevance criteria should be redefined by the Administrator, and the Relevance training restarted.</span></span>
     
-- <span data-ttu-id="986fb-120">**添加标签和培训**：</span><span class="sxs-lookup"><span data-stu-id="986fb-120">**Tagging and training**:</span></span> 
+- <span data-ttu-id="e9b0c-120">**标记和培训**:</span><span class="sxs-lookup"><span data-stu-id="e9b0c-120">**Tagging and training**:</span></span> 
     
-  - <span data-ttu-id="986fb-p103">应根据内容仅标记文件。不考虑元数据，例如 custodian、 日期或文件路径。</span><span class="sxs-lookup"><span data-stu-id="986fb-p103">Files should be tagged based on content only. Do not consider metadata, such as custodian, date, or file path.</span></span> 
+  - <span data-ttu-id="e9b0c-p103">应仅根据内容对文件进行标记。请勿考虑元数据, 例如保管人、date 或 file path。</span><span class="sxs-lookup"><span data-stu-id="e9b0c-p103">Files should be tagged based on content only. Do not consider metadata, such as custodian, date, or file path.</span></span> 
     
-  - <span data-ttu-id="986fb-123">执行操作时不考虑日期范围指示文本中的标记文件。</span><span class="sxs-lookup"><span data-stu-id="986fb-123">Do not consider date range indications in the text when tagging files.</span></span>
+  - <span data-ttu-id="e9b0c-123">在标记文件时, 不要在文本中考虑日期范围指示。</span><span class="sxs-lookup"><span data-stu-id="e9b0c-123">Do not consider date range indications in the text when tagging files.</span></span>
     
-  - <span data-ttu-id="986fb-124">标记文件时，不考虑嵌入式图形的图像。</span><span class="sxs-lookup"><span data-stu-id="986fb-124">Do not consider embedded graphical images when tagging files.</span></span>
+  - <span data-ttu-id="e9b0c-124">在标记文件时不考虑嵌入的图形图像。</span><span class="sxs-lookup"><span data-stu-id="e9b0c-124">Do not consider embedded graphical images when tagging files.</span></span>
      
-  - <span data-ttu-id="986fb-p104">忽略于相关性的文本的文本视图中显示的文件内容中删除中相关性。如果忽略文本的值已定义相关性培训已开始后，新忽略的文本将应用于从点在其中定义创建的示例文件中。忽略文本功能应谨慎，使用，因为其使用可能会降低文件分析的性能</span><span class="sxs-lookup"><span data-stu-id="986fb-p104">Ignore text applied to Relevance will be removed in the displayed file content in the text view in Relevance. If the values for Ignore text were defined after Relevance training already started, the new ignored text will be applied to sample files created from the point in which it was defined. The Ignore Text feature should be used cautiously, as its use may reduce the performance of file analysis</span></span>
+  - <span data-ttu-id="e9b0c-p104">"忽略应用于相关性的文本将在相关性中的文本视图中的显示文件内容中删除。如果 "忽略文本" 的值是在已启动相关性培训之后定义的, 则新的被忽略的文本将应用于从定义该位置创建的示例文件。应慎重使用 Ignore Text 功能, 因为它的使用可能会降低文件分析的性能</span><span class="sxs-lookup"><span data-stu-id="e9b0c-p104">Ignore text applied to Relevance will be removed in the displayed file content in the text view in Relevance. If the values for Ignore text were defined after Relevance training already started, the new ignored text will be applied to sample files created from the point in which it was defined. The Ignore Text feature should be used cautiously, as its use may reduce the performance of file analysis</span></span>
     
-  - <span data-ttu-id="986fb-p105">使用**跳过标记**选项仅在必要时。高级电子数据展示 （预览） 不培训基于上跳过的文件。在评估中，如果很难判断文件是否相关，最好是到标记为 Relevant (R) 或不相关 (NR) 尽可能而不是选择**跳过**。当高级电子数据展示 （预览） 计算培训时，它可以然后看到程度如何处理这些类型的文件。</span><span class="sxs-lookup"><span data-stu-id="986fb-p105">Use the **Skip tagging** option only when necessary. Advanced eDiscovery (Preview) does not train based on skipped files. In assessment, if it's hard to tell whether a file is relevant, it is better to tag as Relevant (R) or Not relevant (NR) whenever possible rather than selecting **Skip**. When Advanced eDiscovery (Preview) evaluates training, it can then be seen how well these types of files were processed.</span></span>
+  - <span data-ttu-id="e9b0c-p105">仅在必要时使用**跳过标签**选项。高级电子数据展示 (预览) 不基于跳过的文件进行训练。在评估中, 如果很难判断文件是否相关, 最好在可能时标记相关 (R) 或不相关 (NR), 而不是选择 "**跳过**"。当高级电子数据展示 (预览) 评估培训时, 可以看到这些类型的文件的处理效果。</span><span class="sxs-lookup"><span data-stu-id="e9b0c-p105">Use the **Skip tagging** option only when necessary. Advanced eDiscovery (Preview) does not train based on skipped files. In assessment, if it's hard to tell whether a file is relevant, it is better to tag as Relevant (R) or Not relevant (NR) whenever possible rather than selecting **Skip**. When Advanced eDiscovery (Preview) evaluates training, it can then be seen how well these types of files were processed.</span></span>
     
-  - <span data-ttu-id="986fb-132">应将偶数文件提取文本非常少量标记进行培训作为 R/NR，而不是"跳过"，如果可能。</span><span class="sxs-lookup"><span data-stu-id="986fb-132">Even files with a very small amount of extracted text should be tagged in training as R/NR, rather than as "Skip", when possible.</span></span> 
+  - <span data-ttu-id="e9b0c-132">即使具有非常少的提取文本的文件, 也应在训练中将其标记为 R/NR, 而不是 "Skip" (如果可能)。</span><span class="sxs-lookup"><span data-stu-id="e9b0c-132">Even files with a very small amount of extracted text should be tagged in training as R/NR, rather than as "Skip", when possible.</span></span> 
     
-  - <span data-ttu-id="986fb-133">标记会影响分类器，前提是该文件是可读，可以标记为 R/NR。</span><span class="sxs-lookup"><span data-stu-id="986fb-133">Tagging can impact the classifier as long as the file is readable and can be tagged as R/NR.</span></span>
+  - <span data-ttu-id="e9b0c-133">只要文件可读, 并且可以将其标记为 R/NR, 标记就会影响分类器。</span><span class="sxs-lookup"><span data-stu-id="e9b0c-133">Tagging can impact the classifier as long as the file is readable and can be tagged as R/NR.</span></span>
     
-  - <span data-ttu-id="986fb-134">在显示的示例文件列表**标记**选项卡上的文件序列号允许用户以返回到文件的原始的显示顺序。</span><span class="sxs-lookup"><span data-stu-id="986fb-134">The file sequence number on the displayed Sample files list on the **Tag** tab allows the user to return to the original displayed order of the files.</span></span> 
+  - <span data-ttu-id="e9b0c-134">"**标记**" 选项卡上的 "显示的示例文件" 列表中的文件序列号允许用户返回到文件的原始显示顺序。</span><span class="sxs-lookup"><span data-stu-id="e9b0c-134">The file sequence number on the displayed Sample files list on the **Tag** tab allows the user to return to the original displayed order of the files.</span></span> 
     
-  - <span data-ttu-id="986fb-p106">您可以返回到任何示例并更改评估的标记和培训设置文件。创建接下来的示例时，将应用所做的更改。</span><span class="sxs-lookup"><span data-stu-id="986fb-p106">You can go back to any sample and change the tagging of the assessment and training set files. The changes will be applied when creating the next sample.</span></span>
+  - <span data-ttu-id="e9b0c-p106">您可以返回到任何示例并更改评估和培训集文件的标记。将在创建下一个示例时应用这些更改。</span><span class="sxs-lookup"><span data-stu-id="e9b0c-p106">You can go back to any sample and change the tagging of the assessment and training set files. The changes will be applied when creating the next sample.</span></span>
     
-  - <span data-ttu-id="986fb-137">应为 PDF 格式的文件的扫描的 Excel 视为相同本机 Excel 文件时标记文件。</span><span class="sxs-lookup"><span data-stu-id="986fb-137">Scanned Excel files in PDF format should be treated the same as native Excel files when tagging files.</span></span>
+  - <span data-ttu-id="e9b0c-137">在标记文件时, PDF 格式的 excel 文件的处理方式应与本机 excel 文件相同。</span><span class="sxs-lookup"><span data-stu-id="e9b0c-137">Scanned Excel files in PDF format should be treated the same as native Excel files when tagging files.</span></span>
     
-  - <span data-ttu-id="986fb-p107">当有疑问有关标记文件的相关性时，请参阅专家。在相关性培训的不正确标签可能会导致更高版本过程中丢失的时间和还可能产生负面影响的总体结果质量。</span><span class="sxs-lookup"><span data-stu-id="986fb-p107">When in doubt regarding the Relevance tagging of a file, consult an expert. Incorrect tagging during the Relevance training can lead to lost time later in the process and may also have a negative impact on the quality of the overall results.</span></span>
+  - <span data-ttu-id="e9b0c-p107">如果不确定文件的相关性标记, 请咨询专家。在相关性培训期间, 标记错误可能会导致在进程中的时间丢失, 并可能对总体结果的质量产生负面影响。</span><span class="sxs-lookup"><span data-stu-id="e9b0c-p107">When in doubt regarding the Relevance tagging of a file, consult an expert. Incorrect tagging during the Relevance training can lead to lost time later in the process and may also have a negative impact on the quality of the overall results.</span></span>
     
-  - <span data-ttu-id="986fb-140">已定义的关键字的关键字列表将显示在颜色以帮助用户标记时找出有关文件。</span><span class="sxs-lookup"><span data-stu-id="986fb-140">Keywords that were defined in Keyword lists will be displayed in colors to help the user identify relevant files while tagging.</span></span>
+  - <span data-ttu-id="e9b0c-140">关键字列表中定义的关键字将以颜色显示, 以帮助用户在标记时确定相关文件。</span><span class="sxs-lookup"><span data-stu-id="e9b0c-140">Keywords that were defined in Keyword lists will be displayed in colors to help the user identify relevant files while tagging.</span></span>
     
-- <span data-ttu-id="986fb-p108">**批次计算**： R/NR 专家将接收的 0 或 100 的分数标记的文件。这适用于标记进行之前批次计算。如果专家批次计算后切换到空闲的问题，并继续标记此问题，新的已标记的分数不可 100/0 但而不显示原始分数。</span><span class="sxs-lookup"><span data-stu-id="986fb-p108">**Batch calculation**: Files that were tagged as R/NR by the expert will receive a score of either 0 or 100. This applies to tagging made before Batch calculation. If the expert switched the issue to Idle after Batch Calculation and continued tagging this issue, the newly tagged scores will not be 100/0 but rather the original score.</span></span>
+- <span data-ttu-id="e9b0c-p108">**批量计算**: 由专家标记为 R/NR 的文件将获得0或100的分数。这适用于在批处理计算前进行的标记。如果专家在批量计算后将问题切换到空闲并继续标记此问题, 则新标记的分数不会是 100/0, 而是原始分数。</span><span class="sxs-lookup"><span data-stu-id="e9b0c-p108">**Batch calculation**: Files that were tagged as R/NR by the expert will receive a score of either 0 or 100. This applies to tagging made before Batch calculation. If the expert switched the issue to Idle after Batch Calculation and continued tagging this issue, the newly tagged scores will not be 100/0 but rather the original score.</span></span>
     
-- <span data-ttu-id="986fb-144">**问题和采样模式**： 问题通常已关闭，它们的工作完成 （稳定相关性培训和执行批次计算） 时取消问题，或当另一个用户正常对问题。</span><span class="sxs-lookup"><span data-stu-id="986fb-144">**Issues and sampling mode**: Issues are usually turned Off when work on them is completed (Relevance training is stabilized and Batch calculation was performed), when the issues are canceled, or when another user is working on the issues.</span></span>
+- <span data-ttu-id="e9b0c-144">**问题和采样模式**: 当完成工作时, 通常会关闭问题 (相关性培训为 "稳定" 和 "已执行批量计算")、问题取消或其他用户正在处理问题。</span><span class="sxs-lookup"><span data-stu-id="e9b0c-144">**Issues and sampling mode**: Issues are usually turned Off when work on them is completed (Relevance training is stabilized and Batch calculation was performed), when the issues are canceled, or when another user is working on the issues.</span></span>
     
-## <a name="steps-in-relevance-training"></a><span data-ttu-id="986fb-145">相关性培训中的步骤</span><span class="sxs-lookup"><span data-stu-id="986fb-145">Steps in Relevance training</span></span>
+## <a name="steps-in-relevance-training"></a><span data-ttu-id="e9b0c-145">相关培训中的步骤</span><span class="sxs-lookup"><span data-stu-id="e9b0c-145">Steps in Relevance training</span></span>
 
-<span data-ttu-id="986fb-p109">在**相关性\>跟踪**选项卡上，高级电子数据展示提供建议如何继续在处理中，使用以下接下来的步骤。当每个以下步骤建议相关性培训过程中，如下所述的含义。</span><span class="sxs-lookup"><span data-stu-id="986fb-p109">In the **Relevance \> Track** tab, Advanced eDiscovery provides recommendations on how to proceed in the processing, with the following next steps. The implications are described below when each of the following steps is recommended in the Relevance training process.</span></span> 
+<span data-ttu-id="e9b0c-p109">在 "**相关性\>跟踪**" 选项卡中, 高级电子数据展示了在处理过程中如何继续进行操作的建议, 并提供以下后续步骤。如果在相关培训过程中建议执行以下每个步骤, 则会对这些含义进行说明。</span><span class="sxs-lookup"><span data-stu-id="e9b0c-p109">In the **Relevance \> Track** tab, Advanced eDiscovery provides recommendations on how to proceed in the processing, with the following next steps. The implications are described below when each of the following steps is recommended in the Relevance training process.</span></span> 
   
-- <span data-ttu-id="986fb-148">标记 / 继续标记： 文件查看和相关性标记执行每个专家的文件和发出中的示例。</span><span class="sxs-lookup"><span data-stu-id="986fb-148">Tagging / Continue tagging: File review and Relevance tagging performed by an expert for each file and issue within a sample.</span></span>
+- <span data-ttu-id="e9b0c-148">标记/继续标记: 专家对示例中的每个文件和问题执行的文件审阅和相关性标记。</span><span class="sxs-lookup"><span data-stu-id="e9b0c-148">Tagging / Continue tagging: File review and Relevance tagging performed by an expert for each file and issue within a sample.</span></span>
     
-  - <span data-ttu-id="986fb-149">暗示： 现有的示例需要标记。</span><span class="sxs-lookup"><span data-stu-id="986fb-149">Implication: An existing sample needs to be tagged.</span></span>
+  - <span data-ttu-id="e9b0c-149">暗示: 现有示例需要加上标记。</span><span class="sxs-lookup"><span data-stu-id="e9b0c-149">Implication: An existing sample needs to be tagged.</span></span>
     
-- <span data-ttu-id="986fb-150">评估 / 继续评估： 使早期验证案例问题相关性和导入当前的用例文件总体的相关性的初步视图。</span><span class="sxs-lookup"><span data-stu-id="986fb-150">Assessment / Continue assessment: Enables early validation of case issue relevance and a preliminary view of the relevance of the file population imported for the current case.</span></span>
+- <span data-ttu-id="e9b0c-150">评估/继续评估: 支持早期验证案例问题相关性, 并初步了解为当前事例导入的文件填充的相关性。</span><span class="sxs-lookup"><span data-stu-id="e9b0c-150">Assessment / Continue assessment: Enables early validation of case issue relevance and a preliminary view of the relevance of the file population imported for the current case.</span></span>
     
-  - <span data-ttu-id="986fb-151">暗示： 更多评估所需或建议。</span><span class="sxs-lookup"><span data-stu-id="986fb-151">Implication: More assessment is required or recommended.</span></span>
+  - <span data-ttu-id="e9b0c-151">暗示: 需要或建议进行更多评估。</span><span class="sxs-lookup"><span data-stu-id="e9b0c-151">Implication: More assessment is required or recommended.</span></span>
     
-- <span data-ttu-id="986fb-152">培训 / 继续培训： 期间的高级电子数据展示学习从专家用户标记文件的过程示例，并获取能够标识相关性条件相关的每种情况下上下文中的每个问题。</span><span class="sxs-lookup"><span data-stu-id="986fb-152">Training / Continue training: Process during which Advanced eDiscovery learns from the expert who is tagging the file samples and acquires the ability to identify Relevance criteria pertinent to each issue within the context of each case.</span></span>
+- <span data-ttu-id="e9b0c-152">培训/继续培训: 在此过程中, 高级电子数据展示从标记文件示例的专家学习, 并在每个事例的上下文中找出与每个问题相关的相关条件的功能。</span><span class="sxs-lookup"><span data-stu-id="e9b0c-152">Training / Continue training: Process during which Advanced eDiscovery learns from the expert who is tagging the file samples and acquires the ability to identify Relevance criteria pertinent to each issue within the context of each case.</span></span>
     
-  - <span data-ttu-id="986fb-153">暗示： 问题需要更多培训;接下来的示例应创建和标记。</span><span class="sxs-lookup"><span data-stu-id="986fb-153">Implication: The issue needs more training; the next sample should be created and tagged.</span></span> 
+  - <span data-ttu-id="e9b0c-153">含义: 此问题需要更多培训;应创建并标记下一个示例。</span><span class="sxs-lookup"><span data-stu-id="e9b0c-153">Implication: The issue needs more training; the next sample should be created and tagged.</span></span> 
     
-- <span data-ttu-id="986fb-p110">批处理计算： 相关性过程中的高级电子数据展示采用知识培训阶段并将其应用于整个文件填充。相关文件组中的所有文件的相关性评估，并分配的相关性分数。</span><span class="sxs-lookup"><span data-stu-id="986fb-p110">Batch calculation: Relevance process in which Advanced eDiscovery takes the knowledge acquired during the training stage and applies it to the entire file population. All files in the pertinent file group are assessed for relevance and assigned a Relevance score.</span></span>
+- <span data-ttu-id="e9b0c-p110">批处理计算: 高级电子数据展示在培训阶段获取的知识的相关性过程, 并将其应用于整个文件填充。将评估相关文件组中的所有文件的相关性, 并为其分配相关性分数。</span><span class="sxs-lookup"><span data-stu-id="e9b0c-p110">Batch calculation: Relevance process in which Advanced eDiscovery takes the knowledge acquired during the training stage and applies it to the entire file population. All files in the pertinent file group are assessed for relevance and assigned a Relevance score.</span></span>
     
-  - <span data-ttu-id="986fb-156">稳定隐含： 问题，并可以执行批次计算。</span><span class="sxs-lookup"><span data-stu-id="986fb-156">Implication: The issue has stabilized, and Batch calculation can be performed.</span></span>
+  - <span data-ttu-id="e9b0c-156">暗示: 问题已稳定, 可以执行批处理计算。</span><span class="sxs-lookup"><span data-stu-id="e9b0c-156">Implication: The issue has stabilized, and Batch calculation can be performed.</span></span>
     
-- <span data-ttu-id="986fb-157">追赶： 相关性指示当专家审阅和标记在推出加载的情况下，从其他文件加载所选文件的示例。</span><span class="sxs-lookup"><span data-stu-id="986fb-157">Catch-up: Relevance indicates when an expert reviews and tags a sample of files selected from an additional file load during a Rolling Loads scenario.</span></span>
+- <span data-ttu-id="e9b0c-157">追赶: 相关性指示当专家在滚动负载方案中从其他文件加载中查看和标记所选文件的示例时。</span><span class="sxs-lookup"><span data-stu-id="e9b0c-157">Catch-up: Relevance indicates when an expert reviews and tags a sample of files selected from an additional file load during a Rolling Loads scenario.</span></span>
     
-  - <span data-ttu-id="986fb-158">暗示： 已添加的新负载，，，追赶并且才能继续工作。</span><span class="sxs-lookup"><span data-stu-id="986fb-158">Implication: A new load has been added, and Catch-up is required to continue working.</span></span>
+  - <span data-ttu-id="e9b0c-158">暗示: 添加了新的负载, 需要追赶才能继续工作。</span><span class="sxs-lookup"><span data-stu-id="e9b0c-158">Implication: A new load has been added, and Catch-up is required to continue working.</span></span>
     
-- <span data-ttu-id="986fb-159">标记不一致情况： 进程标识，通过高级电子数据展示算法标记可能会产生负面影响分析的过程在文件中的不一致情况。</span><span class="sxs-lookup"><span data-stu-id="986fb-159">Tag inconsistencies: Process identifies, via an Advanced eDiscovery algorithm, inconsistencies in the file tagging process that may negatively impact the analysis.</span></span>
+- <span data-ttu-id="e9b0c-159">标记不一致: 进程通过高级电子数据展示算法识别可能对分析产生负面影响的文件标记过程中的不一致情况。</span><span class="sxs-lookup"><span data-stu-id="e9b0c-159">Tag inconsistencies: Process identifies, via an Advanced eDiscovery algorithm, inconsistencies in the file tagging process that may negatively impact the analysis.</span></span>
     
-  - <span data-ttu-id="986fb-160">暗示： 接下来的示例将上一示例中包括已标记的文件和其标记必须重做。</span><span class="sxs-lookup"><span data-stu-id="986fb-160">Implication: The next sample will include files that have been tagged in previous samples, and their tagging must be redone.</span></span>
+  - <span data-ttu-id="e9b0c-160">暗示: 下一个示例将包含已在之前的示例中标记的文件, 并且必须恢复它们的标记。</span><span class="sxs-lookup"><span data-stu-id="e9b0c-160">Implication: The next sample will include files that have been tagged in previous samples, and their tagging must be redone.</span></span>
     
-- <span data-ttu-id="986fb-161">更新分类器： 允许用户应用标记或种子设定的更改。</span><span class="sxs-lookup"><span data-stu-id="986fb-161">Update classifier: Allows the user to apply tagging or seeding changes.</span></span>
+- <span data-ttu-id="e9b0c-161">更新分类器: 允许用户应用标记或种子设定更改。</span><span class="sxs-lookup"><span data-stu-id="e9b0c-161">Update classifier: Allows the user to apply tagging or seeding changes.</span></span>
     
-  - <span data-ttu-id="986fb-162">暗示： 而无需手动运行另一个相关性示例可以应用标记和种子设定的更改。</span><span class="sxs-lookup"><span data-stu-id="986fb-162">Implication: Tagging and seeding changes can be applied without needing to manually run another Relevance sample.</span></span>
+  - <span data-ttu-id="e9b0c-162">暗示: 可以应用标记和种子设定更改, 而无需手动运行另一个相关性示例。</span><span class="sxs-lookup"><span data-stu-id="e9b0c-162">Implication: Tagging and seeding changes can be applied without needing to manually run another Relevance sample.</span></span>
     
-- <span data-ttu-id="986fb-163">保持： 相关性培训过程完成。</span><span class="sxs-lookup"><span data-stu-id="986fb-163">On hold: The Relevance training process is completed.</span></span>
+- <span data-ttu-id="e9b0c-163">保留: 相关培训过程已完成。</span><span class="sxs-lookup"><span data-stu-id="e9b0c-163">On hold: The Relevance training process is completed.</span></span>
     
-  - <span data-ttu-id="986fb-164">暗示： 无相关性培训，则需要此位置。</span><span class="sxs-lookup"><span data-stu-id="986fb-164">Implication: No Relevance training is required at this point.</span></span>
+  - <span data-ttu-id="e9b0c-164">暗示: 此时不需要相关培训。</span><span class="sxs-lookup"><span data-stu-id="e9b0c-164">Implication: No Relevance training is required at this point.</span></span>
     
-<span data-ttu-id="986fb-165">尽管高级电子数据展示将指导您完成此过程中，使用建议的不同阶段的后续步骤，但它还允许您之间的选项卡和网页、 导航和对地址的情况下可能与单个情况下，问题以及相关的选项或文档审阅流程。</span><span class="sxs-lookup"><span data-stu-id="986fb-165">Although Advanced eDiscovery guides you through the process, with recommended Next steps at different stages, it also allows you to navigate between tabs and pages, and to make choices to address situations that may be pertinent to your individual case, issue, or document review process.</span></span> 
+<span data-ttu-id="e9b0c-165">虽然高级电子数据展示引导您完成整个过程, 但建议在不同阶段执行后续步骤, 它还允许您在选项卡和页面之间导航, 并做出选择, 以解决可能与您的个人案例、问题或其他方面相关的情况。文档审阅过程。</span><span class="sxs-lookup"><span data-stu-id="e9b0c-165">Although Advanced eDiscovery guides you through the process, with recommended Next steps at different stages, it also allows you to navigate between tabs and pages, and to make choices to address situations that may be pertinent to your individual case, issue, or document review process.</span></span> 
   
-<span data-ttu-id="986fb-p111">它是可以接受或重写高级电子数据展示处理选项的下一步。如果您想要执行之外的建议的下一步步骤，请单击**下一步**中扩展的问题显示在对话框中列出，单击**修改**按钮旁边的下一步，以及选择另一个下一步步骤选项。</span><span class="sxs-lookup"><span data-stu-id="986fb-p111">It is possible to accept or override Advanced eDiscovery Next step processing choices. If you want to perform a step other than the recommended Next step, click the **Next step** listed in the expanded issue display in the dialog, click the **Modify** button next to the Next step, and select another Next step option.</span></span> 
+<span data-ttu-id="e9b0c-p111">可以接受或替代高级电子数据展示后续步骤处理选项。如果要执行除建议的下一步之外的步骤, 请单击对话框中展开的问题显示中列出的**下一步**, 单击下一步旁边的 "**修改**" 按钮, 然后选择另一个 "下一步" 选项。</span><span class="sxs-lookup"><span data-stu-id="e9b0c-p111">It is possible to accept or override Advanced eDiscovery Next step processing choices. If you want to perform a step other than the recommended Next step, click the **Next step** listed in the expanded issue display in the dialog, click the **Modify** button next to the Next step, and select another Next step option.</span></span> 
   
 > [!NOTE]
-> <span data-ttu-id="986fb-168">解锁因为它们不受支持的过程中使用此时之后，某些选项可能会被禁用。</span><span class="sxs-lookup"><span data-stu-id="986fb-168">Some options may remain disabled after unlocking as they are not supported for use at that point in the process.</span></span> 
+> <span data-ttu-id="e9b0c-168">在解锁后, 某些选项可能仍处于禁用状态, 因为在此过程中不支持使用这些选项。</span><span class="sxs-lookup"><span data-stu-id="e9b0c-168">Some options may remain disabled after unlocking as they are not supported for use at that point in the process.</span></span> 
   
-## <a name="more-information"></a><span data-ttu-id="986fb-169">更多信息</span><span class="sxs-lookup"><span data-stu-id="986fb-169">More information</span></span>
+## <a name="more-information"></a><span data-ttu-id="e9b0c-169">更多信息</span><span class="sxs-lookup"><span data-stu-id="e9b0c-169">More information</span></span>
 
-[<span data-ttu-id="986fb-170">了解评估中相关性</span><span class="sxs-lookup"><span data-stu-id="986fb-170">Understanding Assessment in Relevance</span></span>](../assessment-in-relevance-in-advanced-ediscovery.md)
+[<span data-ttu-id="e9b0c-170">了解相关性方面的评估</span><span class="sxs-lookup"><span data-stu-id="e9b0c-170">Understanding Assessment in Relevance</span></span>](../assessment-in-relevance-in-advanced-ediscovery.md)
   
-[<span data-ttu-id="986fb-171">标签和评估</span><span class="sxs-lookup"><span data-stu-id="986fb-171">Tagging and Assessment</span></span>](../tagging-and-assessment-in-advanced-ediscovery.md)
+[<span data-ttu-id="e9b0c-171">标记和评估</span><span class="sxs-lookup"><span data-stu-id="e9b0c-171">Tagging and Assessment</span></span>](../tagging-and-assessment-in-advanced-ediscovery.md)
   
-[<span data-ttu-id="986fb-172">标签和相关性培训</span><span class="sxs-lookup"><span data-stu-id="986fb-172">Tagging and Relevance training</span></span>](../tagging-and-relevance-training-in-advanced-ediscovery.md)
+[<span data-ttu-id="e9b0c-172">标记和相关性培训</span><span class="sxs-lookup"><span data-stu-id="e9b0c-172">Tagging and Relevance training</span></span>](../tagging-and-relevance-training-in-advanced-ediscovery.md)
   
-[<span data-ttu-id="986fb-173">跟踪相关性分析</span><span class="sxs-lookup"><span data-stu-id="986fb-173">Tracking Relevance analysis</span></span>](../track-relevance-analysis-in-advanced-ediscovery.md)
+[<span data-ttu-id="e9b0c-173">跟踪相关性分析</span><span class="sxs-lookup"><span data-stu-id="e9b0c-173">Tracking Relevance analysis</span></span>](../track-relevance-analysis-in-advanced-ediscovery.md)
   
-[<span data-ttu-id="986fb-174">决定基于结果</span><span class="sxs-lookup"><span data-stu-id="986fb-174">Deciding based on the results</span></span>](../decision-based-on-the-results-in-advanced-ediscovery.md)
+[<span data-ttu-id="e9b0c-174">根据结果做出决定</span><span class="sxs-lookup"><span data-stu-id="e9b0c-174">Deciding based on the results</span></span>](../decision-based-on-the-results-in-advanced-ediscovery.md)
   
-[<span data-ttu-id="986fb-175">测试相关性分析</span><span class="sxs-lookup"><span data-stu-id="986fb-175">Testing Relevance analysis</span></span>](../test-relevance-analysis-in-advanced-ediscovery.md)
+[<span data-ttu-id="e9b0c-175">测试相关性分析</span><span class="sxs-lookup"><span data-stu-id="e9b0c-175">Testing Relevance analysis</span></span>](../test-relevance-analysis-in-advanced-ediscovery.md)
 
-[<span data-ttu-id="986fb-176">在工作集查询</span><span class="sxs-lookup"><span data-stu-id="986fb-176">Query within working set</span></span>](working-set-search.md)
+[<span data-ttu-id="e9b0c-176">工作集内的查询</span><span class="sxs-lookup"><span data-stu-id="e9b0c-176">Query within working set</span></span>](working-set-search.md)

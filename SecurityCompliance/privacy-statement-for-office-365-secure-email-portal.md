@@ -1,54 +1,54 @@
 ---
-title: Office 365 Secure Email Portal 隐私声明
+title: 适用于 Office 365 安全电子邮件门户的隐私声明
 ms.author: krowley
 author: kccross
 manager: laurawi
 ms.date: 10/12/2018
 ms.audience: End User
 ms.topic: reference
-ms.service: o365-administration
+ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid:
 - MET150
 ms.assetid: 278917cd-a930-46cc-9580-6b9d2361a5f9
-description: 上次更新时间： 5 月 2017
-ms.openlocfilehash: 75714c097690b222ebd3b8d25ab2e0eca8fe8d91
-ms.sourcegitcommit: 448c5897e44448adfc82e3eaffb774c770c04815
+description: '上次更新时间: 5 月2017'
+ms.openlocfilehash: bd49b496685b94ed4555e6d8b0ff82c0aff5a202
+ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "25522233"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "30219152"
 ---
-# <a name="privacy-statement-for-office-365-secure-email-portal"></a><span data-ttu-id="5ba02-103">Office 365 Secure Email Portal 隐私声明</span><span class="sxs-lookup"><span data-stu-id="5ba02-103">Privacy statement for Office 365 Secure Email Portal</span></span>
+# <a name="privacy-statement-for-office-365-secure-email-portal"></a><span data-ttu-id="54618-103">适用于 Office 365 安全电子邮件门户的隐私声明</span><span class="sxs-lookup"><span data-stu-id="54618-103">Privacy statement for Office 365 Secure Email Portal</span></span>
 
-<span data-ttu-id="5ba02-104">上次更新时间： 5 月 2017</span><span class="sxs-lookup"><span data-stu-id="5ba02-104">Last Updated: May 2017</span></span>
+<span data-ttu-id="54618-104">上次更新时间: 5 月2017</span><span class="sxs-lookup"><span data-stu-id="54618-104">Last Updated: May 2017</span></span>
   
-<span data-ttu-id="5ba02-p101">本隐私声明控制 Office 365 门户的新 OME 功能 ("的新 OME 功能门户")。以前的版本中已称为 Office 365 邮件加密 (OME) 和"OME 门户"。本隐私声明不适用于其他联机或脱机 Microsoft 站点、 产品或服务。其他隐私声明还可应用于通过新 OME 功能门户，如 Microsoft 帐户 （如果它用于进行身份验证） 的隐私声明或与设备关联的隐私声明处理的数据。</span><span class="sxs-lookup"><span data-stu-id="5ba02-p101">This privacy statement governs the Office 365 the new OME capabilities Portal (the "the new OME capabilities Portal"). Previous versions were known as Office 365 Message Encryption (OME) and the "OME Portal". This privacy statement does not apply to other online or offline Microsoft sites, products, or services. Other privacy statements may also apply to the data you process through the new OME capabilities Portal, such as the privacy statement for Microsoft account (if it is used for authentication) or the privacy statement associated with your device.</span></span>
+<span data-ttu-id="54618-p101">本隐私声明控制 Office 365 新的 OME 功能门户 ("新 OME 功能门户")。以前的版本称为 Office 365 邮件加密 (OME) 和 "OME 门户"。本隐私声明不适用于其他联机或脱机 Microsoft 网站、产品或服务。其他隐私声明也可能适用于通过新的 OME 功能门户处理的数据, 例如 Microsoft 帐户的隐私声明 (如果用于身份验证) 或与设备关联的隐私声明。</span><span class="sxs-lookup"><span data-stu-id="54618-p101">This privacy statement governs the Office 365 the new OME capabilities Portal (the "the new OME capabilities Portal"). Previous versions were known as Office 365 Message Encryption (OME) and the "OME Portal". This privacy statement does not apply to other online or offline Microsoft sites, products, or services. Other privacy statements may also apply to the data you process through the new OME capabilities Portal, such as the privacy statement for Microsoft account (if it is used for authentication) or the privacy statement associated with your device.</span></span>
   
-## <a name="collection-processing-and-use-of-your-information"></a><span data-ttu-id="5ba02-109">收集、 处理和信息的使用</span><span class="sxs-lookup"><span data-stu-id="5ba02-109">Collection, Processing and Use of Your Information</span></span>
+## <a name="collection-processing-and-use-of-your-information"></a><span data-ttu-id="54618-109">信息的收集、处理和使用</span><span class="sxs-lookup"><span data-stu-id="54618-109">Collection, Processing and Use of Your Information</span></span>
 
-<span data-ttu-id="5ba02-p102">新的 OME 功能门户，可以查看使用从多个终结点，例如台式计算机或移动设备的 Office 365 加密的电子邮件。加密的电子邮件作为普通邮件的 HTML 附件到达邮箱中。如果邮件发送到您的 Microsoft 帐户、 工作或学校帐户或 Gmail 帐户时，您将需要登录到基于 web 的新 OME 功能门户具有这样的帐户。如果加密的邮件发送到 Microsoft 帐户、 工作或学校帐户或的 Gmail 帐户的帐户时，将提示您创建的 Microsoft 帐户，并将其与向其发送加密的邮件; 的帐户关联此外，您可以选择请求一次性密码身份验证，然后将其发送到同一向其发送加密的邮件的电子邮件地址。成功验证后将解密并显示新 OME 功能门户通过邮件。</span><span class="sxs-lookup"><span data-stu-id="5ba02-p102">The new OME capabilities Portal enables you to view email encrypted with Office 365 from a variety of end points, such as desktop computers or mobile devices. The encrypted email arrives in your mailbox as an HTML attachment to a regular mail. If the mail is sent to your Microsoft account, work or school account, or Gmail account, you will be asked to sign in to the web-based the new OME capabilities Portal with such account. If the encrypted mail is sent to an account other than the Microsoft Account, the work or school account, or a Gmail account, you will be prompted to create a Microsoft account and associate it with the account to which the encrypted message was sent; alternatively, you can choose to request a one-time passcode for authentication which will be sent to the same email address to which the encrypted message was sent. After successful authentication, the message will be decrypted and displayed via the new OME capabilities Portal.</span></span>
+<span data-ttu-id="54618-p102">通过新的 OME 功能门户, 可以从各种终结点 (如桌面计算机或移动设备) 查看使用 Office 365 加密的电子邮件。加密的电子邮件作为 HTML 附件送达常规邮件。如果将邮件发送到你的 Microsoft 帐户、工作或学校帐户或 Gmail 帐户, 系统将要求你登录到基于 web 的新 OME 功能门户, 以使用此类帐户。如果加密邮件发送给除 Microsoft 帐户、工作或学校帐户或 Gmail 帐户之外的帐户, 则系统将提示您创建一个 Microsoft 帐户, 并将其与加密邮件所发送到的帐户相关联。或者, 也可以选择请求一次性密码进行身份验证, 并将其发送到发送加密邮件的同一电子邮件地址。成功进行身份验证后, 将通过新的 OME 功能门户对邮件进行解密和显示。</span><span class="sxs-lookup"><span data-stu-id="54618-p102">The new OME capabilities Portal enables you to view email encrypted with Office 365 from a variety of end points, such as desktop computers or mobile devices. The encrypted email arrives in your mailbox as an HTML attachment to a regular mail. If the mail is sent to your Microsoft account, work or school account, or Gmail account, you will be asked to sign in to the web-based the new OME capabilities Portal with such account. If the encrypted mail is sent to an account other than the Microsoft Account, the work or school account, or a Gmail account, you will be prompted to create a Microsoft account and associate it with the account to which the encrypted message was sent; alternatively, you can choose to request a one-time passcode for authentication which will be sent to the same email address to which the encrypted message was sent. After successful authentication, the message will be decrypted and displayed via the new OME capabilities Portal.</span></span>
   
-<span data-ttu-id="5ba02-115">您的凭据信息的 Microsoft 帐户、 工作或学校帐户或的 Gmail 帐户，以及一次性密码，将仅用于身份验证;它将无法存储中的新 OME 功能门户，或新 OME 功能用于任何其他目的。</span><span class="sxs-lookup"><span data-stu-id="5ba02-115">Your credential information to the Microsoft account, the work or school account, or the Gmail account, as well as the one-time passcode, will be used solely for the purpose of authentication; it will not be stored in the new OME capabilities Portal, or used by the new OME capabilities for any other purpose.</span></span>
+<span data-ttu-id="54618-115">你的凭据信息到 Microsoft 帐户、工作或学校帐户或 Gmail 帐户以及 Gmail 帐户以及一次性密码将仅用于身份验证的目的;它不会存储在新的 OME 功能门户中, 也不会被新的 OME 功能用于任何其他用途。</span><span class="sxs-lookup"><span data-stu-id="54618-115">Your credential information to the Microsoft account, the work or school account, or the Gmail account, as well as the one-time passcode, will be used solely for the purpose of authentication; it will not be stored in the new OME capabilities Portal, or used by the new OME capabilities for any other purpose.</span></span>
   
-<span data-ttu-id="5ba02-116">解密过程中，您收到的加密的邮件将不会存储通过新 OME 功能门户;它将不会传输之外的新 OME 功能门户随时。</span><span class="sxs-lookup"><span data-stu-id="5ba02-116">During the decryption process, the encrypted mail you receive will not be stored by the new OME capabilities Portal; it will not be transmitted outside the new OME capabilities Portal at any time.</span></span>
+<span data-ttu-id="54618-116">在解密过程中, 收到的加密邮件不会被新的 OME 功能门户存储;它不会随时在新的 OME 功能门户之外进行传输。</span><span class="sxs-lookup"><span data-stu-id="54618-116">During the decryption process, the encrypted mail you receive will not be stored by the new OME capabilities Portal; it will not be transmitted outside the new OME capabilities Portal at any time.</span></span>
   
-<span data-ttu-id="5ba02-p103">门户可能，在某些情况下，新 OME 功能收集有关的使用和性能 （对于频率示例查看加密的邮件、 浏览器或应用程序使用和遇到的任何错误），新 OME 功能，可能分析中的数据点为了提高质量、 安全性和完整性这和其他 Microsoft 应用程序、 产品或服务的聚合。此信息不用于标识、 联系人或目标广告给您。</span><span class="sxs-lookup"><span data-stu-id="5ba02-p103">The new OME capabilities Portal may, in some instances, collect data points about the use and performance of the new OME capabilities (for example, how often encrypted messages are viewed, the browser or app used, and any errors encountered), which may be analyzed in aggregate for purposes of improving the quality, security, and integrity of this and other Microsoft apps, products, or services. This information is not used to identify, contact, or target advertising to you.</span></span>
+<span data-ttu-id="54618-p103">在某些情况下, 新的 OME 功能门户可能会收集有关新 OME 功能的使用和性能的数据点 (例如, 查看加密邮件的频率、所使用的浏览器或应用以及遇到的任何错误), 可能会在中进行分析为提高此和其他 Microsoft 应用、产品或服务的质量、安全性和完整性而进行聚合。此信息不用于识别、联系或瞄准你的广告。</span><span class="sxs-lookup"><span data-stu-id="54618-p103">The new OME capabilities Portal may, in some instances, collect data points about the use and performance of the new OME capabilities (for example, how often encrypted messages are viewed, the browser or app used, and any errors encountered), which may be analyzed in aggregate for purposes of improving the quality, security, and integrity of this and other Microsoft apps, products, or services. This information is not used to identify, contact, or target advertising to you.</span></span>
   
-## <a name="for-more-information"></a><span data-ttu-id="5ba02-119">详细信息</span><span class="sxs-lookup"><span data-stu-id="5ba02-119">For More Information</span></span>
+## <a name="for-more-information"></a><span data-ttu-id="54618-119">详细信息</span><span class="sxs-lookup"><span data-stu-id="54618-119">For More Information</span></span>
 
-<span data-ttu-id="5ba02-120">请直接隐私相关查询向 Microsoft 通过[omepriv@microsoft.com](mailto:omepriv@microsoft.com)，或通过邮件，以下地址：</span><span class="sxs-lookup"><span data-stu-id="5ba02-120">Please direct privacy related inquiries to Microsoft through [omepriv@microsoft.com](mailto:omepriv@microsoft.com), or by mail, at the following address:</span></span>
+<span data-ttu-id="54618-120">请在以下地址通过[omepriv@microsoft.com](mailto:omepriv@microsoft.com)或 mail 将与隐私声明相关的相关查询传递给 Microsoft:</span><span class="sxs-lookup"><span data-stu-id="54618-120">Please direct privacy related inquiries to Microsoft through [omepriv@microsoft.com](mailto:omepriv@microsoft.com), or by mail, at the following address:</span></span>
   
-<span data-ttu-id="5ba02-121">Microsoft 隐私-信息保护</span><span class="sxs-lookup"><span data-stu-id="5ba02-121">Microsoft Privacy - Information Protection</span></span>
+<span data-ttu-id="54618-121">Microsoft 隐私-信息保护</span><span class="sxs-lookup"><span data-stu-id="54618-121">Microsoft Privacy - Information Protection</span></span>
   
-<span data-ttu-id="5ba02-122">Microsoft Corporation</span><span class="sxs-lookup"><span data-stu-id="5ba02-122">Microsoft Corporation</span></span>
+<span data-ttu-id="54618-122">Microsoft Corporation</span><span class="sxs-lookup"><span data-stu-id="54618-122">Microsoft Corporation</span></span>
   
-<span data-ttu-id="5ba02-123">One Microsoft Way</span><span class="sxs-lookup"><span data-stu-id="5ba02-123">One Microsoft Way</span></span>
+<span data-ttu-id="54618-123">One Microsoft Way</span><span class="sxs-lookup"><span data-stu-id="54618-123">One Microsoft Way</span></span>
   
-<span data-ttu-id="5ba02-124">Redmond, Washington 98052 USA</span><span class="sxs-lookup"><span data-stu-id="5ba02-124">Redmond, Washington 98052 USA</span></span>
+<span data-ttu-id="54618-124">Redmond, Washington 98052 USA</span><span class="sxs-lookup"><span data-stu-id="54618-124">Redmond, Washington 98052 USA</span></span>
   
-## <a name="changes"></a><span data-ttu-id="5ba02-125">更改</span><span class="sxs-lookup"><span data-stu-id="5ba02-125">Changes</span></span>
+## <a name="changes"></a><span data-ttu-id="54618-125">更改</span><span class="sxs-lookup"><span data-stu-id="54618-125">Changes</span></span>
 
-<span data-ttu-id="5ba02-p104">如果我们发布本隐私声明的更改后，我们将修改语句的顶部的"上次更新"的数据。与组织提供访问其服务，以了解有关更改隐私实践的详细信息，请参阅。</span><span class="sxs-lookup"><span data-stu-id="5ba02-p104">If we post changes to this statement, we will revise the "last updated" data at the top of the statement. Consult with the organization that provides you access to their services to learn more about changes to the privacy practices.</span></span>
+<span data-ttu-id="54618-p104">如果我们发布了对此语句的更改, 我们将修改语句顶部的 "最后更新的数据"。向您提供对其服务的访问权限的组织咨询, 以了解有关隐私惯例更改的详细信息。</span><span class="sxs-lookup"><span data-stu-id="54618-p104">If we post changes to this statement, we will revise the "last updated" data at the top of the statement. Consult with the organization that provides you access to their services to learn more about changes to the privacy practices.</span></span>
   
 
