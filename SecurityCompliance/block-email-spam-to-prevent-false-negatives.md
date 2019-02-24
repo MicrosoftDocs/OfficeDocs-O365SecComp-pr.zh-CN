@@ -6,19 +6,21 @@ manager: laurawi
 ms.date: 7/2/2018
 ms.audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: O365-seccomp
 localization_priority: Priority
 search.appverid:
 - MOE150
 - MET150
 ms.assetid: da21c0b6-e8f0-4cc8-af2e-5029a9433d59
+ms.collection:
+- M365-security-compliance
 description: 本文介绍了设置 Office 365 垃圾邮件筛选器以阻止垃圾邮件并避免出现漏报邮件的技巧。管理员使用 Office 365 反垃圾邮件筛选是为了避免将垃圾邮件发送到用户收件箱。
-ms.openlocfilehash: d96dfa0cad4ef8c27303c9f77d259d4c8b2b04c9
-ms.sourcegitcommit: 03e64ead7805f3dfa9149252be8606efe50375df
+ms.openlocfilehash: 4b2708b55cf44794552f1327c947c15598fe0b7f
+ms.sourcegitcommit: a80bd8626720fabdf592b84e4424cd3a83d08280
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/08/2019
-ms.locfileid: "27769866"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "30222851"
 ---
 # <a name="block-email-spam-with-the-office-365-spam-filter-to-prevent-false-negative-issues"></a>使用 Office 365 垃圾邮件筛选器阻止垃圾邮件以避免出现漏报问题
 
@@ -34,7 +36,7 @@ Exchange Online Protection (EOP) 是一项基于云的电子邮件筛选服务�
 
 通过将发件人 IP 地址添加到连接筛选器 IP 阻止列表，自定义 Office 365 垃圾邮件筛选器：
   
-1. 按照[邮件头分析器](https://go.microsoft.com/fwlink/p/?LinkId=306583)中所述，获取要在邮件客户端（如 Outlook 或 Outlook Web App）中阻止的邮件的邮件头。
+1. 按照[邮件头分析器](https://go.microsoft.com/fwlink/p/?LinkId=306583)中所述，获取要在邮件客户端（如 Outlook 或 Outlook 网页版，先前称为 Outlook Web App）中阻止的邮件的邮件头。
     
 2. 在 X-Forefront-Antispam-Report 头中，使用[邮件头分析器](https://testconnectivity.microsoft.com/?tabid=mha)或手动搜索 CIP 标记后面的 IP 地址。 
     
@@ -58,9 +60,9 @@ Exchange Online Protection (EOP) 是一项基于云的电子邮件筛选服务�
   
 ## <a name="email-users-can-also-help-ensure-that-false-negative-and-email-spam-is-blocked-with-office-365-spam-filter"></a>电子邮件用户还可有助于确保通过 Office 365 垃圾邮件筛选器避免漏报和阻止垃圾邮件
 
-如果让用户在 [Outlook](https://go.microsoft.com/fwlink/p/?LinkId=270065) 或 [Outlook Web App](https://go.microsoft.com/fwlink/p/?LinkId=294862) 中将垃圾邮件发件人地址添加到阻止的发件人名单中，将有助于 Office 365 反垃圾邮件筛选器避免漏报并阻止垃圾邮件。在 Outlook Web App 中，首先依次单击“设置”****\>“选项”****“阻止或允许”\>****，再将地址添加到“阻止的发件人名单”**** 中，如下所示。 
+如果让用户在 [Outlook](https://go.microsoft.com/fwlink/p/?LinkId=270065) 或 [Outlook 网页版](https://go.microsoft.com/fwlink/p/?LinkId=294862)中将垃圾邮件发件人地址添加到阻止的发件人名单中，将有助于 Office 365 反垃圾邮件筛选器避免漏报并阻止垃圾邮件。在 Outlook 网页版中，首先依次单击“**设置**”\>“**选项**”\>“**阻止或允许**”，再将地址添加到“**阻止的发件人**”名单中，如下所示。 
   
-![在 Outlook Web App 中阻止发件人](media/fdf51381-2527-4819-ac2a-5dff84d2a36d.png)
+![在 Outlook 网页版中阻止发件人](media/fdf51381-2527-4819-ac2a-5dff84d2a36d.png)
   
 > [!NOTE]
 > 若要详细了解允许列表，请参阅[允许列表和阻止的发件人名单 FAQ](https://technet.microsoft.com/zh-CN/library/dn133608%28v=exchg.150%29.aspx)。 
