@@ -6,7 +6,7 @@ manager: laurawi
 ms.date: 11/16/2018
 ms.audience: Admin
 ms.topic: overview
-ms.service: o365-administration
+ms.service: O365-seccomp
 localization_priority: Priority
 ms.collection: Strat_O365_IP
 search.appverid:
@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.assetid: 5e377752-700d-4870-9b6d-12bfc12d2423
 description: 借助保留策略，可主动决定是保留内容还是删除内容，亦或是先保留再删除内容；可将一个策略应用于整个组织，或只应用于特定位置或用户；并能将策略应用于所有内容，或只应用于满足特定条件的内容
-ms.openlocfilehash: e76ec96b83dd5870416d864cf9f3b0b5f43cb9b2
-ms.sourcegitcommit: 942726b33ba67f2b89b5c593ccd534af6715c8b9
+ms.openlocfilehash: 26f28b1e4ce0b8bce69d135bf54332585bdf9745
+ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "30202753"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "30214272"
 ---
 # <a name="overview-of-retention-policies"></a>保留策略概述
 

@@ -6,7 +6,7 @@ manager: laurawi
 ms.date: 6/22/2018
 ms.audience: Admin
 ms.topic: overview
-ms.service: o365-administration
+ms.service: O365-seccomp
 localization_priority: Priority
 ms.collection: Strat_O365_IP
 search.appverid:
@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.assetid: af398293-c69d-465e-a249-d74561552d30
 description: Office 365 中的保留标签可有助于对正确的内容执行适当的操作。借助保留标签，可对整个组织中的数据进行分类来管理数据，并根据此分类强制执行保留规则。另外，保留标签还可用于在 Office 365 中实现记录管理。
-ms.openlocfilehash: 6599c9daf3cd2dc7c7c22179c132e58ba28aa487
-ms.sourcegitcommit: 942726b33ba67f2b89b5c593ccd534af6715c8b9
+ms.openlocfilehash: 444d3ad676514781152ef2eb23f175f94d723e67
+ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "30202763"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "30219062"
 ---
 # <a name="overview-of-retention-labels"></a>保留标签概述
 
