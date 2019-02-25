@@ -3,22 +3,21 @@ title: 合规性管理器有助于在使用 Microsoft 云服务时符合数据�
 ms.author: markjjo
 author: markjjo
 manager: laurawi
-ms.date: ''
 ms.audience: Admin
 ms.topic: overview
-ms.service: o365-administration
+ms.service: O365-seccomp
 localization_priority: Priority
 search.appverid:
 - MOE150
 - MET150
 ms.assetid: 429e686f-d8a6-455e-a2b6-3791d763f000
 description: Microsoft 服务信任门户中的合规性管理器提供用于跟踪、实现和管理控制措施的工具，以确保在衡量依据为 Microsoft 云服务（如 Office 365 和 Microsoft Azure）时，组织符合安全和数据保护行业标准（如 GDPR、ISO 27001、27018 和 HIPAA）。使用合规性管理器，负责监督组织数据保护和隐私策略的人员可管理合规性和风险评估流程。
-ms.openlocfilehash: 6f423ba29540bdc498c2725b9741dece2557e4be
-ms.sourcegitcommit: 25f1028643d8a20d17306e8b09cafea46eaf7a58
+ms.openlocfilehash: 5f0982aaf807e22440d0f35dd285d06c5ed343b2
+ms.sourcegitcommit: a80bd8626720fabdf592b84e4424cd3a83d08280
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/31/2019
-ms.locfileid: "29666172"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "30223771"
 ---
 # <a name="use-compliance-manager-to-help-meet-data-protection-and-regulatory-requirements-when-using-microsoft-cloud-services"></a>合规性管理器有助于在使用 Microsoft 云服务时符合数据保护和法规要求
 
