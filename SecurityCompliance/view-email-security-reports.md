@@ -12,14 +12,15 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 3a137e28-1174-42d5-99af-f18868b43e86
-ms.collection: M365-security-compliance
+ms.collection:
+- M365-security-compliance
 description: 了解如何使用 Office 365 企业版查找和使用组织的电子邮件安全报告。安全&amp;合规性中心中提供了电子邮件安全报告。
-ms.openlocfilehash: 809bfbdfdda8bd1ed9b88c9bca7e9ce14d774868
-ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
+ms.openlocfilehash: fb9f8234f1febf98daf0382f2ad8ece3e3ecbbfe
+ms.sourcegitcommit: 1c73c2f83703af0a30a5b0633db00d8e0e6b39b5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30216412"
+ms.lasthandoff: 02/25/2019
+ms.locfileid: "30241994"
 ---
 # <a name="view-email-security-reports-in-the-security-amp-compliance-center"></a>查看安全&amp;合规性中心中的电子邮件安全报告
 

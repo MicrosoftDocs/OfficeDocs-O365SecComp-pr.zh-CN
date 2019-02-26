@@ -12,14 +12,13 @@ ms.collection: Ent_O365
 ms.custom:
 - Ent_Solutions
 - SIEM
-- M365-security-compliance
 description: '摘要: 阅读本文, 了解 SIEM server 与 Microsoft 365 集成的概述。'
-ms.openlocfilehash: 56ac1b244bc7bfc62bd6edb097a733e8477baa26
-ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
+ms.openlocfilehash: 4b9b631ab27d777be610ed3b954acc7b2c3bdf50
+ms.sourcegitcommit: 1c73c2f83703af0a30a5b0633db00d8e0e6b39b5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30215652"
+ms.lasthandoff: 02/25/2019
+ms.locfileid: "30241874"
 ---
 # <a name="siem-server-integration-with-microsoft-365-services-and-applications"></a>SIEM server 与 Microsoft 365 服务和应用程序的集成
 

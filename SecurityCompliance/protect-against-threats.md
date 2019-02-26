@@ -11,20 +11,43 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: b10023f6-f30f-45d3-b3ad-b71aa4aa0d58
-ms.collection: M365-security-compliance
+ms.collection:
+- M365-security-compliance
 description: 了解 Office 365 企业如何帮助保护您的组织免受各种威胁, 包括欺骗、恶意软件、垃圾邮件、网络钓鱼尝试和对数据的未授权访问。
-ms.openlocfilehash: ca2bfda0403a1f482989977f7bc018bbd94afeb5
-ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
+ms.openlocfilehash: da39421184deacdc19adf073f086a3d8a2021acd
+ms.sourcegitcommit: 5b5bbced1577701bdb6befc8ed252e9d9e776529
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30220482"
+ms.lasthandoff: 02/25/2019
+ms.locfileid: "30245578"
 ---
 # <a name="protect-against-threats-in-office-365"></a>Office 365 中的威胁防护
 
-使用 Office 365 企业版, 您可以帮助您的组织防御各种威胁, 包括欺骗、恶意软件、垃圾邮件、网络钓鱼尝试和对数据的未授权访问。使用此页面上的资源了解可以执行的威胁防护和操作。
-  
-## <a name="anti-spoofing"></a>反欺骗
+使用 Office 365 企业版, 您可以帮助您的组织防御各种威胁, 包括欺骗、恶意软件、垃圾邮件、网络钓鱼尝试和对数据的未授权访问。使用此页面上的资源可了解您可以采取的威胁防护选项和操作。
+
+## <a name="malware"></a>恶意软件
+
+- [反垃圾邮件&amp;反恶意软件保护](anti-spam-and-anti-malware-protection.md)
+    
+- [在 Office 365 中隔离电子邮件](quarantine-email-messages.md)
+    
+- [将恶意软件和非恶意软件提交给 Microsoft 进行分析](submitting-malware-and-non-malware-to-microsoft-for-analysis.md)
+
+## <a name="zero-day-protection"></a>零日保护
+
+- [零时差自动清除 - 防范垃圾邮件和恶意软件](zero-hour-auto-purge.md)
+
+- [Office 365 ATP 安全附件](atp-safe-attachments.md)
+
+- [Office 365 ATP 安全链接](atp-safe-links.md)
+
+## <a name="anti-phishing"></a>反网络钓鱼
+
+反网络钓鱼保护包括用户模拟、域模拟和外部欺骗保护。 
+
+- [Office 365 中的防欺骗保护](anti-spoofing-protection.md)
+
+- [详细了解防欺骗智能](learn-about-spoof-intelligence.md)
 
 如果您使用的是 Office 365 中的自定义域, 请帮助阻止来自您组织的发件人欺诈、提高电子邮件安全性并保护您的域的声誉。
   
@@ -33,26 +56,23 @@ ms.locfileid: "30220482"
 - [使用 DKIM 在 Office 365 中验证从自定义域发送的出站电子邮件](use-dkim-to-validate-outbound-email.md)
     
 - [使用 DMARC 验证 Office 365 中的电子邮件](use-dmarc-to-validate-email.md)
-    
-## <a name="anti-spam-amp-anti-malware"></a>反垃圾邮件&amp;反恶意软件
 
-了解 Office 365 反垃圾邮件计分、连接筛选和恶意软件捕获, 包括默认设置以及如何报告恶意电子邮件。
+## <a name="anti-spam"></a>反垃圾邮件
+
+- [Office 365 电子邮件反垃圾邮件保护](anti-spam-protection.md)
+
+- [在 Office 365 中创建整个组织的安全发件人或阻止发件人名单](create-organization-wide-safe-sender-or-blocked-sender-lists-in-office-365.md)
+
+- [确保垃圾邮件已路由到每个用户的“垃圾邮件”文件夹](ensure-that-spam-is-routed-to-each-user-s-junk-email-folder.md)
   
-- [反垃圾邮件&amp;反恶意软件保护](anti-spam-and-anti-malware-protection.md)
-    
-- [在 Office 365 中启用邮箱审核](enable-mailbox-auditing.md)
-    
-- [在 Office 365 中隔离电子邮件](quarantine-email-messages.md)
-    
-- [将恶意软件和非恶意软件提交给 Microsoft 进行分析](submitting-malware-and-non-malware-to-microsoft-for-analysis.md)
     
 ## <a name="advanced-threat-protection"></a>高级威胁防护
 
 配置策略以管理欺骗、防御网络钓鱼攻击, 并通过高级威胁防护 (ATP) 捕捉电子邮件中的恶意 url 或文件。
   
 - [了解 Office 365 ATP](office-365-atp.md)
-    
-- [了解欺骗情报](learn-about-spoof-intelligence.md)
+
+- [获取 Office 365 威胁智能的概述](office-365-ti.md)
     
 - [设置反网络钓鱼策略](set-up-anti-phishing-policies.md)
     
@@ -71,23 +91,7 @@ ms.locfileid: "30220482"
 - [Office 365 邮件加密 (OME)](ome.md)
     
 - [实现将带您自己的密钥 (BYOK)](https://docs.microsoft.com/azure/key-vault/key-vault-hsm-protected-keys#implementing-bring-your-own-key-byok-for-azure-key-vault)
-    
-## <a name="managing-devices-amp-apps"></a>管理设备&amp;应用程序
-
-监视和控制移动设备访问 Office 365 数据的方式, 以及禁止或批准在组织中使用的移动应用程序。
-  
-- [创建和部署设备安全策略](https://support.office.com/article/d310f556-8bfb-497b-9bd7-fe3c36ea2fd6)
-    
-- [使用 Office 365 云应用安全管理应用权限](manage-app-permissions-in-ocas.md)
-    
-## <a name="threat-intelligence"></a>威胁智能
-
-识别、监控和理解攻击, 并通过使用可防止攻击的见解和知识快速解决威胁。
-  
-- [获取 Office 365 威胁智能的概述](office-365-ti.md)
-    
-- [开始使用 Office 365 威胁智能](get-started-with-ti.md)
-    
+        
 ## <a name="privileged-access-management"></a>特权访问管理
 
 帮助保护您的组织免受可能使用现有特权管理员帐户访问敏感数据或访问关键配置设置的用户泄露的行为。启用特权访问管理后, 用户将需要请求实时访问, 以通过高度范围和时间限制的审批工作流来完成提升和特权的任务。

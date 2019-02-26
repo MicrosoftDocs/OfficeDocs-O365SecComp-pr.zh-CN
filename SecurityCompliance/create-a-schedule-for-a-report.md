@@ -13,12 +13,12 @@ search.appverid:
 - MOE150
 ms.assetid: a74f637b-3710-4c41-b70f-b5a812929a81
 description: 了解如何为安全&amp;合规中心中的报告设置计划。
-ms.openlocfilehash: 25e8ee175314c5447da95d3636236d1682479c70
-ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
+ms.openlocfilehash: f3730c6f2bd6a7c307cd17c0894116b1e8328dc9
+ms.sourcegitcommit: 1c73c2f83703af0a30a5b0633db00d8e0e6b39b5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30216752"
+ms.lasthandoff: 02/25/2019
+ms.locfileid: "30241864"
 ---
 # <a name="create-a-schedule-for-a-report-in-the-security-amp-compliance-center"></a>在安全&amp;合规中心中创建报表的日程安排
 
@@ -45,7 +45,7 @@ ms.locfileid: "30216752"
   
     如果选择自定义报告计划, 则可以指定报告的频率、发件人的电子邮件地址和收件人的电子邮件地址。 
     
-创建报表的计划后, 该报告将通过电子邮件自动传递到收件人的 emali 地址。 
+创建报表的计划后, 该报告将通过电子邮件自动传递给收件人的电子邮件地址。 
   
 ## <a name="related-topics"></a>相关主题
 
