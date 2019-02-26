@@ -146,7 +146,7 @@
 #### [将 IRM 配置为使用本地 AD RMS 服务器](configure-irm-to-use-an-on-premises-ad-rms-server.md)
 ### [S/MIME](s-mime-for-message-signing-and-encryption.md)
 #### [将 S/MIME 用于邮件签名和加密](s-mime-for-message-signing-and-encryption.md)
-#### [配置 Outlook Web App 的 S/MIME 设置](configure-s-mime-settings-for-outlook-web-app.md)
+#### [配置 Outlook 网页版的 S/MIME 设置](configure-s-mime-settings-for-outlook-web-app.md)
 #### [发送和接收 S/MIME 签名和加密的电子邮件](send-and-receive-s-mime-signed-and-encrypted-email.md)
 #### [出于 S/MIME 目的将用户证书同步到 Office 365](sync-user-certificates-to-office-365-for-s-mime.md)
 #### [设置虚拟证书集合以验证 S/MIME](set-up-virtual-certificate-collection-to-validate-s-mime.md)
