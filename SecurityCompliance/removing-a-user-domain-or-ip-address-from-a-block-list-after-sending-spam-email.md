@@ -1,7 +1,7 @@
 ---
 title: 发送垃圾电子邮件后，从阻止列表中删除用户、域或 IP 地址
-ms.author: krowley
-author: kccross
+ms.author: tracyp
+author: MSFTTracyP
 manager: laurawi
 ms.date: 11/01/2018
 ms.audience: ITPro
@@ -14,13 +14,15 @@ localization_priority: Normal
 search.appverid:
 - MET150
 ms.assetid: 712cfcc1-31e8-4e51-8561-b64258a8f1e5
+ms.collection:
+- M365-security-compliance
 description: 如果用户连续发送来自被分类为垃圾邮件的 Office 365 的电子邮件, 则会阻止发送更多的邮件。
-ms.openlocfilehash: 3ffd8b65d6994699093237e9f9a0a3aaa802f5e2
-ms.sourcegitcommit: a80bd8626720fabdf592b84e4424cd3a83d08280
+ms.openlocfilehash: 870e5eabca9e799dfca1e99846a5bfe845f65df4
+ms.sourcegitcommit: 686bc9a8f7a7b6810a096f07d36751d10d334409
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30223081"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "30275932"
 ---
 # <a name="removing-a-user-domain-or-ip-address-from-a-block-list-after-sending-spam-email"></a>发送垃圾电子邮件后，从阻止列表中删除用户、域或 IP 地址
 

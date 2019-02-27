@@ -1,7 +1,7 @@
 ---
 title: 关闭 web 上的 Outlook 中的垃圾邮件报告
-ms.author: krowley
-author: kccross
+ms.author: tracyp
+author: MSFTTracyP
 manager: laurawi
 ms.audience: ITPro
 ms.topic: article
@@ -9,13 +9,15 @@ ms.service: O365-seccomp
 ms.custom: TN2DMC
 localization_priority: Normal
 ms.assetid: 8d57fe9e-57b8-4884-9317-80b380804b4a
+ms.collection:
+- M365-security-compliance
 description: 作为 Office 365 管理员, 您可以关闭用户将电子邮件报告为垃圾邮件的功能。
-ms.openlocfilehash: efe898f57fdf322ce49edd9e2577daab46dd8d8f
-ms.sourcegitcommit: a80bd8626720fabdf592b84e4424cd3a83d08280
+ms.openlocfilehash: 1e45f258bea2ea75d9b4cabcacc43b54c44f83c3
+ms.sourcegitcommit: 686bc9a8f7a7b6810a096f07d36751d10d334409
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30223821"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "30275582"
 ---
 # <a name="turn-off-junk-email-reporting-in-outlook-on-the-web"></a>关闭 web 上的 Outlook 中的垃圾邮件报告
 

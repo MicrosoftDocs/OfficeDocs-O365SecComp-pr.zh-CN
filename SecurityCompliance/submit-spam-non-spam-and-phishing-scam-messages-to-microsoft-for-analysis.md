@@ -1,7 +1,7 @@
 ---
 title: 将垃圾邮件、非垃圾邮件和网络欺诈邮件提交给 Microsoft 进行分析
-ms.author: krowley
-author: kccross
+ms.author: tracyp
+author: MSFTTracyP
 manager: laurawi
 ms.date: 6/11/2018
 ms.audience: ITPro
@@ -12,13 +12,15 @@ localization_priority: Normal
 search.appverid:
 - MET150
 ms.assetid: dad30e2f-93fe-4d21-9a36-21c87ced85c1
+ms.collection:
+- M365-security-compliance
 description: '你和你的用户可以将虚假的负垃圾邮件和假肯定垃圾邮件提交给 Microsoft 进行分析。 '
-ms.openlocfilehash: 80eef1ad5612509080f92b103084b248cf8d1369
-ms.sourcegitcommit: a80bd8626720fabdf592b84e4424cd3a83d08280
+ms.openlocfilehash: 553f73ffc82dc6f7091b81171213f95f7a092674
+ms.sourcegitcommit: 686bc9a8f7a7b6810a096f07d36751d10d334409
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30223341"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "30276092"
 ---
 # <a name="submit-spam-non-spam-and-phishing-scam-messages-to-microsoft-for-analysis"></a>将垃圾邮件、非垃圾邮件和网络欺诈邮件提交给 Microsoft 进行分析
 

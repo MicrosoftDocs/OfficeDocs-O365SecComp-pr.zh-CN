@@ -8,18 +8,20 @@ ms.audience: Admin
 ms.topic: overview
 ms.service: O365-seccomp
 localization_priority: Normal
-ms.collection: Strat_O365_IP
+ms.collection:
+- Strat_O365_IP
+- M365-security-compliance
 search.appverid:
 - SPO160
 - MOE150
 ms.assetid: 8f20ca4f-a908-46ec-99e6-9890d269ecf2
 description: '了解在 Office 365 中使用电子数据展示工具的搜索运行中估计的估计和实际搜索结果可能有所不同。 '
-ms.openlocfilehash: 35aa1163e33e6c8a07c765d620803e93a8e6290d
-ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
+ms.openlocfilehash: d3edc73d94d51c2582b6ef2077c5e4c834d1ff82
+ms.sourcegitcommit: baf23be44f1ed5abbf84f140b5ffa64fce605478
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30217342"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "30296115"
 ---
 # <a name="differences-between-estimated-and-actual-ediscovery-search-results-in-office-365"></a>Office 365 中的预计和实际电子数据展示搜索结果之间的差异
 

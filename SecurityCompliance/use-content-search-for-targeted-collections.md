@@ -7,16 +7,17 @@ ms.date: ''
 ms.audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
+ms.collection: M365-security-compliance
 localization_priority: Normal
 search.appverid: MOE150
 ms.assetid: e3cbc79c-5e97-43d3-8371-9fbc398cd92e
 description: 在 Office 365 安全&amp;合规中心中使用内容搜索来执行目标集合。目标集合意味着您确信项目响应的是事例或特权项目位于特定的邮箱或站点文件夹中。使用本文中的脚本获取要搜索的特定邮箱或网站文件夹的文件夹 ID 或路径。
-ms.openlocfilehash: 81628c670f80053479b3b7987e8c4ece884793c6
-ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
+ms.openlocfilehash: c6e837e2f95b4f2ae3e32344f966f096407e360e
+ms.sourcegitcommit: baf23be44f1ed5abbf84f140b5ffa64fce605478
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30215012"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "30296925"
 ---
 # <a name="use-content-search-in-office-365-for-targeted-collections"></a>将 Office 365 中的内容搜索用于目标集合
 

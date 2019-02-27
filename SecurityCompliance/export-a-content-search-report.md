@@ -9,7 +9,9 @@ f1_keywords:
 - ms.o365.cc.CustomizeExportReport
 ms.service: O365-seccomp
 localization_priority: Normal
-ms.collection: Strat_O365_IP
+ms.collection:
+- Strat_O365_IP
+- M365-security-compliance
 search.appverid:
 - MOE150
 - MED150
@@ -17,12 +19,12 @@ search.appverid:
 - MET150
 ms.assetid: 5c8c1db6-d8ac-4dbb-8a7a-f65d452169b9
 description: 除了在 Office 365 安全&amp;合规中心中导出内容搜索的实际结果, 您只需导出搜索结果报告即可。报告包含搜索结果摘要和文档, 其中包含有关要导出的每个项目的详细信息。
-ms.openlocfilehash: 12799474bfb099c521f72cd3902173d42b17d4dd
-ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
+ms.openlocfilehash: d98f70d4f38f524de8751aecb197d0f85ee7f088
+ms.sourcegitcommit: baf23be44f1ed5abbf84f140b5ffa64fce605478
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30216232"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "30295975"
 ---
 # <a name="export-a-content-search-report"></a>导出内容搜索报告
 

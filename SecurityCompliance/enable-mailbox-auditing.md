@@ -7,18 +7,20 @@ ms.audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
-ms.collection: Strat_O365_IP
+ms.collection:
+- Strat_O365_IP
+- M365-security-compliance
 search.appverid:
 - MOE150
 - MET150
 ms.assetid: aaca8987-5b62-458b-9882-c28476a66918
 description: 在 Office 365 中, 可以启用邮箱审核日志记录, 以记录邮箱所有者、代理和管理员的邮箱访问权限。默认情况下, 未打开 Office 365 中的邮箱审核。为邮箱启用邮箱审核日志记录后, 可以在 Office 365 审核日志中搜索在该邮箱上执行的活动。
-ms.openlocfilehash: bb110e95d27feb8ae82b62803d218a2b38528692
-ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
+ms.openlocfilehash: a9bc84bad8532dd546d5ce3e2f149151967050d6
+ms.sourcegitcommit: baf23be44f1ed5abbf84f140b5ffa64fce605478
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30214602"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "30295915"
 ---
 # <a name="enable-mailbox-auditing-in-office-365"></a>在 Office 365 中启用邮箱审核
   
@@ -100,7 +102,7 @@ Set-Mailbox "Don Hall" -AuditEnabled $true -AuditOwner MailboxLogin
 Get-Mailbox -ResultSize Unlimited -Filter {RecipientTypeDetails -eq "UserMailbox"} | Set-Mailbox -AuditOwner @{Add="MailboxLogin","HardDelete","SoftDelete"}
 ```
   
-## <a name="how-do-you-know-this-worked"></a>如何知道操作成功？
+## <a name="how-do-you-know-this-worked"></a>如何判断是否生效？
 
 若要验证是否已为某个邮箱成功启用邮箱审核日志记录，请使用 **Get-Mailbox** cmdlet 检索该邮箱的审核设置。 
   
@@ -124,18 +126,18 @@ Get-Mailbox -ResultSize Unlimited -Filter {RecipientTypeDetails -eq "UserMailbox
   
 |**操作**|**说明**|**管理员**|**委派用户\*\*\***|**所有者**|
 |:-----|:-----|:-----|:-----|:-----|
-|**复制** <br/> |已将某个邮件复制到另一个文件夹。  <br/> |可访问  <br/> |不支持  <br/> |否  <br/> |
-|**创建** <br/> |在邮箱中的 "日历"、"联系人"、"便笺" 或 "任务" 文件夹中创建项;例如, 创建一个新的会议请求。请注意, 不会审核创建、发送或接收邮件。此外, 还不会审核创建邮箱文件夹的情况。  <br/> |是\*  <br/> |是\*  <br/> |可访问  <br/> |
-|**FolderBind** <br/> |已访问某个邮箱文件夹。当管理员或代理人打开邮箱时，也将记录此操作。  <br/> |可访问  <br/> |是\*\*  <br/> |否  <br/> |
-|**HardDelete** <br/> |已将某个邮件从"已恢复邮件"文件夹中清除。  <br/> |是\*  <br/> |是\*  <br/> |可访问  <br/> |
-|**mailboxlogin 该值** <br/> |用户登录其邮箱。  <br/> |否  <br/> |否  <br/> |可访问  <br/> |
+|**复制** <br/> |已将某个邮件复制到另一个文件夹。  <br/> |是  <br/> |不支持  <br/> |否  <br/> |
+|**创建** <br/> |在邮箱中的 "日历"、"联系人"、"便笺" 或 "任务" 文件夹中创建项;例如, 创建一个新的会议请求。请注意, 不会审核创建、发送或接收邮件。此外, 还不会审核创建邮箱文件夹的情况。  <br/> |是\*  <br/> |是\*  <br/> |是  <br/> |
+|**FolderBind** <br/> |已访问某个邮箱文件夹。当管理员或代理人打开邮箱时，也将记录此操作。  <br/> |是  <br/> |是\*\*  <br/> |否  <br/> |
+|**HardDelete** <br/> |已将某个邮件从"已恢复邮件"文件夹中清除。  <br/> |是\*  <br/> |是\*  <br/> |是  <br/> |
+|**mailboxlogin 该值** <br/> |用户登录其邮箱。  <br/> |否  <br/> |否  <br/> |是  <br/> |
 |**MessageBind** <br/> |在预览窗格查看邮件或打开邮件。  <br/> |是  <br/> |不支持  <br/> |否  <br/> |
 |**移动** <br/> |已将某个邮件移至另一个文件夹。  <br/> |是  <br/> |支持  <br/> |可访问  <br/> |
-|**MoveToDeletedItems** <br/> |已将某个邮件删除并移至“已删除邮件”文件夹。  <br/> |是\*  <br/> |是\*  <br/> |可访问  <br/> |
+|**MoveToDeletedItems** <br/> |已将某个邮件删除并移至“已删除邮件”文件夹。  <br/> |是\*  <br/> |是\*  <br/> |是  <br/> |
 |**SendAs** <br/> |已使用 SendAs 权限发送某个邮件。这表示另一个用户发送了邮件，而该邮件就好像来自于邮箱所有者。  <br/> |是\*  <br/> |是\*  <br/> |否  <br/> |
 |**SendOnBehalf** <br/> |已使用 SendOnBehalf 权限发送某个邮件。这表示另一个用户代表邮箱所有者发送了邮件。此邮件向收件人表明，此邮件是代表谁发送的以及实际发送此邮件的是谁。  <br/> |是\*  <br/> |是\*  <br/> |否  <br/> |
-|**SoftDelete** <br/> |已将某个邮件永久删除或从“已删除邮件”文件夹中删除。软删除的项目将移至“可恢复的项目”文件夹。  <br/> |是\*  <br/> |是\*  <br/> |可访问  <br/> |
-|**更新** <br/> |已更改某个邮件或其属性。  <br/> |是\*  <br/> |是\*  <br/> |可访问  <br/> |
+|**SoftDelete** <br/> |已将某个邮件永久删除或从“已删除邮件”文件夹中删除。软删除的项目将移至“可恢复的项目”文件夹。  <br/> |是\*  <br/> |是\*  <br/> |是  <br/> |
+|**更新** <br/> |已更改某个邮件或其属性。  <br/> |是\*  <br/> |是\*  <br/> |是  <br/> |
 |**UpdateCalendarDelegation** <br/> |向邮箱分配了日历委派。日历委派向同一组织中的其他人授予对邮箱所有者日历的管理权限。  <br/> |是\*  <br/> |否  <br/> |是\*  <br/> |
 |**UpdateFolderPermissions** <br/> |更改了文件夹权限。文件夹权限控制组织中的哪些用户可以访问邮箱中的文件夹和位于这些文件夹中的邮件。  <br/> |是\*  <br/> |是\*  <br/> |是\*  <br/> |
 |**UpdateInboxRules** <br/> |已添加、删除或更改收件箱规则。"收件箱" 规则用于根据指定的条件处理用户收件箱中的邮件, 并在满足规则条件时采取操作, 例如将邮件移动到指定文件夹或删除邮件。  <br/> |是\*  <br/> |是\*  <br/> |是\*  <br/> |

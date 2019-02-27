@@ -1,7 +1,7 @@
 ---
 title: 使用客户密钥控制 Office 365 中的数据
-ms.author: tracyp
-author: MSFTTracyP
+ms.author: krowley
+author: kccross
 manager: laurawi
 ms.date: 8/1/2018
 ms.audience: ITPro
@@ -14,16 +14,16 @@ ms.assetid: f2cd475a-e592-46cf-80a3-1bfb0fa17697
 ms.collection:
 - M365-security-compliance
 description: 了解如何为 Exchange Online、Skype for business、SharePoint Online 和 OneDrive for business 设置适用于 Office 365 的客户密钥。使用 "客户密钥", 可以控制组织的加密密钥, 然后配置 Office 365 以使用它们在 Microsoft 数据中心中对静态数据进行加密。
-ms.openlocfilehash: a14a213951bc87e4106e150c88c6b1461a5e685e
-ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
+ms.openlocfilehash: 219ddb94727cd2b708f734a77a8397b3bc3f1064
+ms.sourcegitcommit: baf23be44f1ed5abbf84f140b5ffa64fce605478
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30218752"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "30296665"
 ---
 # <a name="controlling-your-data-in-office-365-using-customer-key"></a>使用客户密钥控制 Office 365 中的数据
 
-使用 "客户密钥", 可以控制组织的加密密钥, 然后配置 Office 365 以使用它们在 Microsoft 数据中心中对静态数据进行加密。静态数据包含来自 Exchange online 和 Skype for business 的数据, 这些数据存储在存储在 SharePoint online 和 OneDrive for business 中的邮箱和文件中。
+使用 "客户密钥", 可以控制组织的加密密钥, 然后配置 Office 365 以使用它们在 Microsoft 数据中心中对静态数据进行加密。换言之, 客户密钥允许客户添加属于其密钥的加密层。静态数据包含来自 Exchange online 和 Skype for business 的数据, 这些数据存储在存储在 SharePoint online 和 OneDrive for business 中的邮箱和文件中。
   
 您必须先安装 Azure, 然后才能使用适用于 Office 365 的客户密钥。本主题介绍了创建和配置所需 Azure 资源时需要遵循的步骤, 然后提供在 Office 365 中设置客户密钥的步骤。完成 Azure 安装后, 确定要为组织中的邮箱和文件分配的策略, 并因此确定哪些项。未分配策略的邮箱和文件将使用由 Microsoft 控制和管理的加密策略。有关客户密钥的详细信息, 或有关一般概述的详细信息, 请参阅[Customer key for Office 365 FAQ](service-encryption-with-customer-key-faq.md)。
   

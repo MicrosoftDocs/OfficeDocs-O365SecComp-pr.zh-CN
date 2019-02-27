@@ -1,9 +1,9 @@
 ---
-title: 设置虚拟证书集合以验证 S/MIME
-ms.author: krowley
-author: kccross
-manager: laurawi
-ms.date: 12/9/2016
+title: 在 Exchange Online 中设置虚拟证书集合以验证 S/MIME
+ms.author: chrisda
+author: chrisda
+manager: serdars
+ms.date: ''
 ms.audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
@@ -12,37 +12,42 @@ localization_priority: Normal
 search.appverid:
 - MET150
 ms.assetid: 04a616e6-197c-490c-ae8c-c8d5f0f0b3dd
-description: s 租户管理员您将需要配置将用于验证 S/MIME 证书的虚拟证书集合。
-ms.openlocfilehash: 0e8226ca35e872cd8c7da16ba353bf8b99a6954d
-ms.sourcegitcommit: c94cb88a9ce5bcc2d3c558f0fcc648519cc264a2
+description: 管理员可以了解如何创建将用于验证 Exchange Online 中的 S/MIME 证书的虚拟证书集合。
+ms.openlocfilehash: 2aa6e529f5ca374af6fe6d80a403058a8b6e468a
+ms.sourcegitcommit: baf23be44f1ed5abbf84f140b5ffa64fce605478
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/20/2019
-ms.locfileid: "30091054"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "30296945"
 ---
-# <a name="set-up-virtual-certificate-collection-to-validate-smime"></a>设置虚拟证书集合以验证 S/MIME
+# <a name="set-up-virtual-certificate-collection-in-exchange-online-to-validate-smime"></a>在 Exchange Online 中设置虚拟证书集合以验证 S/MIME
 
-作为租户管理员，您将需要配置用于验证 S/MIME 证书的虚拟证书集合。虚拟证书集合设置为具有 SST 文件名扩展名的证书存储文件类型。SST 文件包含验证 S/MIME 证书时使用的所有根证书和中间证书。
-  
+作为管理员, 你将需要在 Exchange Online 中配置将用于验证 S/MIME 证书的虚拟证书集合。此虚拟证书集合设置为具有 SST 文件扩展名的证书存储。SST 文件包含在验证 S/MIME 证书时使用的所有根证书和中间证书。
+
 ## <a name="create-and-save-an-sst"></a>创建并保存 SST
-<a name="sectionSection0"> </a>
 
-只能使用命令行管理程序执行此过程。 若要了解如何在本地 Exchange 组织中打开 Exchange 命令行管理程序，请参阅 **Open the Shell**。 若要了解如何使用 Windows PowerShell 连接到 Exchange Online，请参阅[连接到 Exchange Online PowerShell](https://go.microsoft.com/fwlink/p/?linkid=396554)。
-  
-作为管理员，您可以创建此 SST 文件，方法是使用  `Export-Certificate` cmdlet 从受信任的计算机导出证书并将类型指定为 SST。有关  `Export-Certificate` cmdlet 的详细信息，请参阅 [Export-Certificate](https://docs.microsoft.com/en-us/powershell/module/pkiclient/export-certificate?view=win10-ps) 参考主题。 
-  
-生成 SST 文件后，使用  `Set-Smimeconfig` cmdlet 将其保存在虚拟证书存储中，方法是使用  _-SMIMECertificateIssuingCA_ 参数。例如：  `Set-SmimeConfig -SMIMECertificateIssuingCA (Get-Content filename.sst -Encoding Byte)`
-  
+您可以通过在 Windows PowerShell 中使用**导出证书**cmdlet 导出证书, 并将_Type_值指定为 SST, 从而创建此 SST 证书存储文件。有关说明, 请参阅[Export-Certificate](https://docs.microsoft.com/powershell/module/pkiclient/export-certificate)。
+
+拥有 SST 证书存储文件后, 在 exchange online PowerShell 中使用以下语法将 SST 文件内容保存在 exchange online 虚拟证书存储中。若要连接到 exchange online powershell, 请参阅[连接到 exchange online powershell](https://go.microsoft.com/fwlink/p/?linkid=396554)。
+
+```
+Set-SmimeConfig -SMIMECertificateIssuingCA (Get-Content <FileNameAndPath>.sst -Encoding Byte)
+```
+
+本示例将导入 SST 文件 C:\My Documents\Exported 证书存储 SST。
+
+```
+Set-SmimeConfig -SMIMECertificateIssuingCA (Get-Content "C:\My Documents\Exported Certificate Store.sst" -Encoding Byte)
+```
+
+有关语法和参数的详细信息, 请参阅[get-smimeconfig](https://docs.microsoft.com/en-us/powershell/module/exchange/encryption-and-certificates/set-smimeconfig)。
+
 ## <a name="ensuring-a-certificate-is-valid"></a>确保证书有效
-<a name="sectionSection1"> </a>
 
-Exchange 2013 SP1 首先检查 SST 文件并验证证书。如果验证失败，它将检查本地计算机证书存储以验证证书。此行为是 Exchange 2013 SP1 的新增功能，与 Exchange 的以前版本不同。在 Exchange Online 中，仅使用 SST 进行验证。
-  
+在 Exchange Online 中, 仅将 SST 用于证书验证。
+
 ## <a name="more-information"></a>详细信息
-<a name="sectionSection2"> </a>
 
 [邮件签名和加密的 S/MIME](s-mime-for-message-signing-and-encryption.md)
-  
-[get-smimeconfig](http://technet.microsoft.com/library/4b29fa89-0840-4fe9-8885-019fcef2e02b.aspx)
-  
 
+[get-smimeconfig](http://technet.microsoft.com/library/4b29fa89-0840-4fe9-8885-019fcef2e02b.aspx)

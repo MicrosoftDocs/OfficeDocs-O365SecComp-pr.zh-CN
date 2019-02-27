@@ -5,19 +5,21 @@ author: markjjo
 manager: laurawi
 ms.date: 9/5/2017
 ms.audience: Admin
-ms.topic: overview
+ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
-ms.collection: Strat_O365_IP
+ms.collection:
+- Strat_O365_IP
+- M365-security-compliance
 search.appverid: MOE150
 ms.assetid: 0ce338d5-3666-4a18-86ab-c6910ff408cc
 description: 管理员可以将来自社交媒体平台、即时消息平台和文档协作平台的第三方数据导入 Office 365 组织中的邮箱。这使您可以在 Office 365 中存档 Facebook、Twitter 和数据源中的数据。然后, 您可以将 Office 365 合规性功能 (如合法保留、内容搜索和保留策略) appply 到第三方数据中。
-ms.openlocfilehash: 37811fdbee52cf956c6371deea53a242c2a3c550
-ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
+ms.openlocfilehash: 0f9f8b5a4ce5b4359430a3b15acc7bf16b2f0290
+ms.sourcegitcommit: baf23be44f1ed5abbf84f140b5ffa64fce605478
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30218492"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "30296675"
 ---
 # <a name="archiving-third-party-data-in-office-365"></a>在 Office 365 中存档第三方数据
 
@@ -650,13 +652,13 @@ Microsoft Lync（2010、2013）
     
     |**邮件属性**|**强制?**|**说明**|**示例值**|
     |:-----|:-----|:-----|:-----|
-    |**发件人** <br/> |可访问  <br/> |最初在第三方数据源中创建或发送项目的用户。合作伙伴连接器将尝试将源项目 (例如 Twitter 句柄) 中的用户 ID 映射到所有参与者 ("from" 和 "to" 字段中的用户) 的 Office 365 用户帐户。邮件的副本将导入到每个参与者的邮箱中。如果无法将项目中的任何参与者映射到 office 365 用户帐户, 则会将该项目导入 office 365 中的第三方存档邮箱。<br/> <br/> 标识为项目的发件人的参与者必须在要向其导入项目的 Office 365 组织中具有活动邮箱。如果发件人没有活动邮箱, 则返回以下错误:<br/><br/>  `One or more messages in the Request failed to be delivered to either From or Sender email address. You will need to resend your entire Request. Error: The request failed. The remote server returned an error: (401) Unauthorized.`  | `bob@contoso.com` <br/> |
-    |**收件人** <br/> |可访问  <br/> |接收项目的用户（如果适用于数据源中的项目）。  <br/> | `bob@contoso.com` <br/> |
+    |**发件人** <br/> |是  <br/> |最初在第三方数据源中创建或发送项目的用户。合作伙伴连接器将尝试将源项目 (例如 Twitter 句柄) 中的用户 ID 映射到所有参与者 ("from" 和 "to" 字段中的用户) 的 Office 365 用户帐户。邮件的副本将导入到每个参与者的邮箱中。如果无法将项目中的任何参与者映射到 office 365 用户帐户, 则会将该项目导入 office 365 中的第三方存档邮箱。<br/> <br/> 标识为项目的发件人的参与者必须在要向其导入项目的 Office 365 组织中具有活动邮箱。如果发件人没有活动邮箱, 则返回以下错误:<br/><br/>  `One or more messages in the Request failed to be delivered to either From or Sender email address. You will need to resend your entire Request. Error: The request failed. The remote server returned an error: (401) Unauthorized.`  | `bob@contoso.com` <br/> |
+    |**收件人** <br/> |是  <br/> |接收项目的用户（如果适用于数据源中的项目）。  <br/> | `bob@contoso.com` <br/> |
     |**主题** <br/> |否  <br/> |源项目中的主题。  <br/> | `"Mega deals with Contoso coming your way! #ContosoHolidayDeals"` <br/> |
     |**结束** <br/> |是  <br/> |最初在客户数据源中创建或发布项目的日期；例如，发布 Twitter 消息的日期。  <br/> | `01 NOV 2015` <br/> |
     |**正文** <br/> |否  <br/> |邮件或公告的内容。对于某些数据源, 此属性的内容可以与**SUBJECT**属性的内容相同。在导入过程中, 合作伙伴连接器将尝试尽可能保持内容源的完全保真。如果可能的文件、图形或来自源项目的正文的其他内容包含在此属性中。否则, 源项中的内容将包含在**附件**属性中。此属性的内容将取决于合作伙伴连接器和源平台的功能。<br/> | `Author: bob@contoso.com` <br/>  `Date: 10 DEC 2014` <br/>  `Tweet: "Mega deals with Contoso coming your way! #ContosoHolidayDeals"` <br/>  `Date: 01 NOV 2015` <br/> |
     |**附件** <br/> |否  <br/> |如果数据源中的项 (如 Twitter 或即时消息对话中的 twitter) 具有附加的文件或包含图像, 则合作伙伴连接将首先尝试在**BODY**属性中包含附件。如果无法这样做, 则会将其添加到 * * 附件 * * 属性中。其他附件示例包括 Facebook 中的赞、内容源中的元数据以及对邮件或公告的响应。<br/> | `image.gif` <br/> |
-    |**邮件类** <br/> |可访问  <br/> | 这是一个多值属性, 该属性由合作伙伴连接器创建和填充。此属性的格式为`IPM.NOTE.Source.Event`。(此属性必须以开头`IPM.NOTE`; 这种格式类似于`IPM.NOTE.X`消息类的格式。)此属性包含以下信息:<br/><br/>`Source`-指示第三方数据源;例如, Twitter、Facebook 或 BlackBerry。  <br/> <br/>  `Event`-指示在生成项目的第三方数据源中执行的活动类型。例如, 在 Twitter 中的 twitter 或 Facebook 中的帖子。事件是特定于数据源的。<br/> <br/>  此属性的一个用途是基于项目来源的数据源或基于事件类型筛选特定项目。例如, 在电子数据展示搜索中, 可以创建搜索查询, 以查找由特定用户发布的所有推文。<br/> | `IPM.NOTE.Twitter.Tweet` <br/> |
+    |**邮件类** <br/> |是  <br/> | 这是一个多值属性, 该属性由合作伙伴连接器创建和填充。此属性的格式为`IPM.NOTE.Source.Event`。(此属性必须以开头`IPM.NOTE`; 这种格式类似于`IPM.NOTE.X`消息类的格式。)此属性包含以下信息:<br/><br/>`Source`-指示第三方数据源;例如, Twitter、Facebook 或 BlackBerry。  <br/> <br/>  `Event`-指示在生成项目的第三方数据源中执行的活动类型。例如, 在 Twitter 中的 twitter 或 Facebook 中的帖子。事件是特定于数据源的。<br/> <br/>  此属性的一个用途是基于项目来源的数据源或基于事件类型筛选特定项目。例如, 在电子数据展示搜索中, 可以创建搜索查询, 以查找由特定用户发布的所有推文。<br/> | `IPM.NOTE.Twitter.Tweet` <br/> |
    
 - 将项目成功导入 Office 365 中的邮箱时, 会将唯一标识符作为 HTTP 响应的一部分返回给调用方。此标识符 (称为`x-IngestionCorrelationID`) 可用于合作伙伴对项目进行端到端跟踪的后续故障排除目的。建议合作伙伴捕获此信息, 并在最终进行相应的记录。下面的示例展示了显示此标识符的 HTTP 响应:
 

@@ -8,15 +8,16 @@ ms.audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
+ms.collection: M365-security-compliance
 search.appverid: MOE150
 ms.assetid: 4e8ff113-6361-41e2-915a-6338a7e2a1ed
 description: 部分索引项目 (也称为未编制索引项) 是 SharePoint 和 OneDrive 网站上的 Exchange 邮箱项目和文档, 由于某些原因未完全为内容搜索编制索引。在本文中, 您可以了解为什么无法将项目编入搜索, 并作为部分索引项目返回, 确定部分索引项目的搜索错误, 以及使用 PowerShell 脚本确定组织的部分索引电子邮件的公开程度。items.
-ms.openlocfilehash: d9137ba4095d6e16d4525a24141d82bc6143d8b5
-ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
+ms.openlocfilehash: d8fec240964ad84b811221754060af3e342af01f
+ms.sourcegitcommit: baf23be44f1ed5abbf84f140b5ffa64fce605478
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30220972"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "30295625"
 ---
 # <a name="investigating-partially-indexed-items-in-office-365-ediscovery"></a>使用 Office 365 电子数据展示调查部分索引项
 

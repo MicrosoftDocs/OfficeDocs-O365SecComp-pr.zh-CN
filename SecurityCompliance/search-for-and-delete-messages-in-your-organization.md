@@ -7,18 +7,20 @@ ms.audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
-ms.collection: Strat_O365_IP
+ms.collection:
+- Strat_O365_IP
+- M365-security-compliance
 search.appverid:
 - MOE150
 - MET150
 ms.assetid: 3526fd06-b45f-445b-aed4-5ebd37b3762a
 description: 使用 Office 365 安全&amp;合规中心中的 "搜索和清除" 功能搜索和删除组织中所有邮箱的电子邮件。
-ms.openlocfilehash: ecdacd4e484d6de267e029b8e3fcdafc9b1fce4d
-ms.sourcegitcommit: a80bd8626720fabdf592b84e4424cd3a83d08280
+ms.openlocfilehash: 15d67e42e4bdc63838f7ec1701d643391fa5c552
+ms.sourcegitcommit: baf23be44f1ed5abbf84f140b5ffa64fce605478
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30223611"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "30296855"
 ---
 # <a name="search-for-and-delete-email-messages-in-your-office-365-organization---admin-help"></a>在 Office 365 组织中搜索和删除电子邮件-管理员帮助
 

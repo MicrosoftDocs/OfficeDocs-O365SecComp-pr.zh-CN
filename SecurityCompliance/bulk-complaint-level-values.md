@@ -12,17 +12,19 @@ localization_priority: Normal
 search.appverid:
 - MET150
 ms.assetid: a5b03b3c-37dd-429e-8e9b-2c1b25031794
+ms.collection:
+- M365-security-compliance
 description: 批量邮件群发程序因其发送模式、内容创建以及列表获取做法的不同而不同。一些是合理的批量邮件群发程序，可以将所需的邮件和相关内容发送到它们的订阅者。这些邮件使收件人产生少量抱怨。其他批量邮件群发程序发送与垃圾邮件极其相似的未经请求的邮件，并且使收件人产生许多抱怨。为了区分这些类型的批量邮件群发程序，会为批量邮件群发程序中的邮件分配批量投诉级别 (BCL) 评级。BCL 评级范围介于 1 到 9 之间，这取决于批量邮件群发程序产生抱怨的可能性大小。BCL 评级为 9 的发件人可能使收件人产生许多抱怨，而 BCL 评级为 3 的发件人产生许多抱怨的可能性较小。Microsoft 使用内部和第三方源识别批量邮件，并确定适当的 BCL。此评级显示在每封邮件的"X-Microsoft-Antispam"标头中。有关此邮件头的详细信息，请参阅反垃圾邮件邮件头。
-ms.openlocfilehash: c4100b0d289398d9333369071c9886309f2abcb4
-ms.sourcegitcommit: e9dca2d6a7838f98bb7eca127fdda2372cda402c
+ms.openlocfilehash: a948e90ba436dcfdb78df856e090983e6015bb0a
+ms.sourcegitcommit: 686bc9a8f7a7b6810a096f07d36751d10d334409
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/21/2018
-ms.locfileid: "23003051"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "30276012"
 ---
 # <a name="bulk-complaint-level-values"></a>批量投诉级别值
 
-批量邮件程序在其发送模式，内容创建和邮件列表获取做法不同。一些良好批量广告邮件发送需要的具有向其订阅者的相关内容的邮件。这些邮件从收件人生成几投诉。其他批量邮件程序发送的紧密类似于垃圾邮件并从收件人生成许多投诉垃圾的邮件。为了区分这些类型的批量邮件程序，来自批量邮件程序的邮件是分配给批量投诉级别 (BCL)。BCL 评级范围为 1 到 9，具体取决于如何可能群发是生成的投诉。可能从收件人生成许多投诉发件人已分级 BCL 9，而 BCL 3 的分级不太生成许多投诉。Microsoft 使用内部和第三方源来确定批量邮件，并确定相应的 BCL。**X-Microsoft 的反垃圾邮件**标头的每个邮件中公开此分级。有关此邮件头的详细信息，请参阅[反垃圾邮件邮件头](anti-spam-message-headers.md)。 
+批量发件用户的发送模式、内容创建和列表获取实践各不相同。有些是极大批量邮件程序, 可向订阅者发送带有相关内容的所需邮件。这些邮件会生成来自收件人的少数投诉。其他批量邮件发件人发送与垃圾邮件相似的未经请求的邮件, 并生成来自收件人的许多投诉。若要区分这些类型的批量邮件, 批量邮件发件人的邮件被分配了一个批量投诉级别 (BCL) 评级。BCL 评级范围为1到 9, 具体取决于批量邮件发件人生成投诉的可能性。评级为9的发件人很可能会生成来自收件人的多个投诉, 而 bcl 3 的评级不可能生成许多投诉。Microsoft 使用内部和第三方源来标识批量邮件, 并确定相应的 BCL。此分级在每封邮件的**X-Microsoft 反垃圾**邮件头中公开。有关此邮件头的详细信息, 请参阅[反垃圾邮件邮件头](anti-spam-message-headers.md)。 
   
 通过按照[配置垃圾邮件筛选器策略](configure-your-spam-filter-policies.md)中的步骤操作，您可以使用 BCL 值设置您组织所需的批量筛选级别。
   

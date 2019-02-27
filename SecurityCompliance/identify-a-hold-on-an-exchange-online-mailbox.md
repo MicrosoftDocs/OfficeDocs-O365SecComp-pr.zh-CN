@@ -7,17 +7,18 @@ ms.date: 6/22/2018
 ms.audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
+ms.collection: M365-security-compliance
 localization_priority: Normal
 search.appverid:
 - MET150
 ms.assetid: 6057daa8-6372-4e77-a636-7ea599a76128
 description: 了解如何识别可在 Office 365 邮箱中放置的不同类型的保留。这些保留类型包括诉讼保留、电子数据展示保留和 Office 365 保留策略。您还可以确定是否已从组织范围的保留策略中排除了用户
-ms.openlocfilehash: 9c286ac6303a4d1f85e94e4ae6ca2163081e51b9
-ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
+ms.openlocfilehash: 5b9e8437b688a5c1b35726834c3d80d07cc4ba50
+ms.sourcegitcommit: baf23be44f1ed5abbf84f140b5ffa64fce605478
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30219102"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "30296805"
 ---
 # <a name="how-to-identify-the-type-of-hold-placed-on-an-exchange-online-mailbox"></a>如何识别为 Exchange Online 邮箱设置的保留类型
 
@@ -88,7 +89,7 @@ Get-OrganizationConfig | FL InPlaceHolds
 下表介绍了不同类型的组织范围的保留, 以及在运行**set-organizationconfig** cmdlet 时如何根据*InPlaceHolds*属性中包含的 guid 标识每种类型。
 
 
-|保留类型  |示例值  |说明  |
+|保留类型  |示例值  |描述  |
 |---------|---------|---------|
 |应用于 exchange 邮箱、exchange 公用文件夹和团队聊天的 Office 365 保留策略    |      `mbx7cfb30345d454ac0a989ab3041051209:2`   |   在 Microsoft 团队中应用于 exchange 邮箱、exchange 公用文件夹和1xN 聊天的组织范围内的保留策略由以`mbx`前缀开头的 guid 进行标识。请注意, 1xN 聊天存储在各个聊天参与者的邮箱中。      |
 |应用于 office 365 组和团队频道消息的 office 365 保留策略     |   `grp1a0a132ee8944501a4bb6a452ec31171:3`      |    在 Microsoft 团队中应用于 Office 365 组和频道消息的组织范围内的保留策略由以`grp`前缀开头的 guid 标识。请注意, 信道邮件存储在与 Microsoft 团队相关联的组邮箱中。     |
@@ -107,7 +108,7 @@ Get-OrganizationConfig | FL InPlaceHolds
 
 下表定义了三种可能的保留操作:
 
-|值  |说明  |
+|值  |描述  |
 |---------|---------|
 |**1**     | 指示保留策略已配置为删除项目;策略不会保留项目。        |
 |**双面**    |    指示保留策略配置为保留项;在保留期过期后, 策略不会删除项目。     |

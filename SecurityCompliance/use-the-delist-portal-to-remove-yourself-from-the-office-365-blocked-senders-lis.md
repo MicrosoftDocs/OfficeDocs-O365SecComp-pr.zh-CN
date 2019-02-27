@@ -1,7 +1,7 @@
 ---
 title: 使用除名门户来将自己从 Office 365 阻止的发件人名单中删除
-ms.author: krowley
-author: kccross
+ms.author: tracyp
+author: MSFTTracyP
 manager: laurawi
 ms.date: 4/18/2016
 ms.audience: ITPro
@@ -12,13 +12,15 @@ localization_priority: Normal
 search.appverid:
 - MET150
 ms.assetid: 0bcecdd4-3343-4cc0-9e58-e19d4de515e8
+ms.collection:
+- M365-security-compliance
 description: 当您尝试向其电子邮件地址位于 Office 365 中的收件人发送电子邮件时，是否收到一条错误消息？如果您认为不应该会收到错误消息，则可以使用除名门户将自己从 Office 365 阻止的发件人名单中删除。
-ms.openlocfilehash: 4964429f4d3aa1a585b1b543929f83c2cebfb9a4
-ms.sourcegitcommit: e9dca2d6a7838f98bb7eca127fdda2372cda402c
+ms.openlocfilehash: 9b4834ae474d781497043bd8800879c57f36d785
+ms.sourcegitcommit: 686bc9a8f7a7b6810a096f07d36751d10d334409
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/21/2018
-ms.locfileid: "23003251"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "30276175"
 ---
 # <a name="use-the-delist-portal-to-remove-yourself-from-the-office-365-blocked-senders-list"></a>使用除名门户来将自己从 Office 365 阻止的发件人名单中删除
 
@@ -30,7 +32,7 @@ Microsoft 使用阻止的发件人名单来防止其客户遭受垃圾邮件、�
   
 在您收到包含类似于以下错误的邮件回复时，您就知道自己已被添加到该列表中：
   
-访问被拒绝，550 5.7.606-649 禁止发送 IP [_IP 地址_];请求此列表中的删除，请访问https://sender.office.com/然后按照说明操作。有关详细信息，请参阅[Office 365 中的电子邮件未送达报告](http://go.microsoft.com/fwlink/?LinkID=526653)。
+550 5.7.606-649 访问被拒绝, 禁止发送 IP [_ip 地址_];若要请求从此列表中删除, https://sender.office.com/请访问并按照说明操作。有关详细信息, 请参阅[Office 365 中的电子邮件未送达报告](http://go.microsoft.com/fwlink/?LinkID=526653)。
   
 其中  _IP address_ 是邮件服务器在其上运行的计算机的 IP 地址。 
   
@@ -40,15 +42,15 @@ Microsoft 使用阻止的发件人名单来防止其客户遭受垃圾邮件、�
     
 2. 按照页面上的说明执行操作。请确保您使用收到错误消息的电子邮件地址，以及错误消息中指定的 IP 地址。每次访问只能输入一个电子邮件地址和一个 IP 地址。
     
-3. 单击"提交"。
+3. 单击 **“提交”**。
     
-    门户向您提供的电子邮件地址发送电子邮件。电子邮件将类似于以下：![提交通过 delist 门户请求时所接收的电子邮件的屏幕截图](media/bf13e4f7-f68c-4e46-baa7-b6ab4cfc13f3.png)
+    门户向您提供的电子邮件地址发送电子邮件。电子邮件的外观如下所示: ![通过除名门户提交请求时收到的电子邮件的屏幕截图](media/bf13e4f7-f68c-4e46-baa7-b6ab4cfc13f3.png)
   
 4. 单击除名门户发送给您的电子邮件中的确认链接。
     
     这将使您返回到除名门户。
     
-5. 在 delist 门户中，单击**Delist IP**。
+5. 在除名门户中, 单击 "**除名 IP**"。
     
     从阻止的发件人名单中删除 IP 地址后，来自该 IP 地址的电子邮件将发送给使用 Office 365 的收件人。因此，请确保您确信从该 IP 地址发送的电子邮件不会被滥用或恶意攻击。否则，可能会再次阻止该 IP 地址。
     

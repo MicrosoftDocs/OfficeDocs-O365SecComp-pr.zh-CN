@@ -7,18 +7,20 @@ ms.audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
-ms.collection: Strat_O365_IP
+ms.collection:
+- Strat_O365_IP
+- M365-security-compliance
 search.appverid:
 - MOE150
 - MET150
 ms.assetid: 0d4d0f35-390b-4518-800e-0c7ec95e946c
 description: '使用 office 365 安全 & 合规中心搜索统一审核日志, 以查看 Office 365 组织中的用户和管理员活动。 '
-ms.openlocfilehash: 5fe4eac59f3e60e75a7452b0dcc51b6b8ca88a5b
-ms.sourcegitcommit: a80bd8626720fabdf592b84e4424cd3a83d08280
+ms.openlocfilehash: 6cab2a0495b4c4b1976a5c45b898603653568599
+ms.sourcegitcommit: baf23be44f1ed5abbf84f140b5ffa64fce605478
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30223761"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "30296605"
 ---
 # <a name="search-the-audit-log-in-the-office-365-security--compliance-center"></a>在 Office 365 安全 & 合规中心中搜索审核日志
 
@@ -54,6 +56,8 @@ ms.locfileid: "30223761"
 - Microsoft Stream 中的用户和管理员活动
 
 - Microsoft 工作区分析中的分析师和管理员活动
+
+- PowerApps 中的用户和管理员活动
     
    
 ## <a name="before-you-begin"></a>准备工作
@@ -295,8 +299,8 @@ ms.locfileid: "30223761"
 |[应用程序管理活动](#application-administration-activities) <br/> |[角色管理活动](#role-administration-activities) <br/> |[目录管理活动](#directory-administration-activities) <br/> |
 |[电子数据展示活动](#ediscovery-activities) <br/> |[Power BI 活动](#power-bi-activities) <br/> |[Microsoft 工作区分析](#microsoft-workplace-analytics-activities)<br/>|
 [Microsoft 团队活动](#microsoft-teams-activities) <br/> |[Yammer 活动](#yammer-activities) <br/> |[Microsoft Flow](#microsoft-flow) <br/> 
-|[Microsoft Stream](#microsoft-stream) <br/>|[Exchange 管理活动](#exchange-admin-audit-log)<br/>
-||||
+|[Microsoft PowerApps](#microsoft-powerapps)<br/>|[Microsoft Stream](#microsoft-stream) <br/>|[Exchange 管理活动](#exchange-admin-audit-log)<br/>|
+|||
    
   
 ### <a name="file-and-page-activities"></a>文件和页面活动
@@ -663,6 +667,9 @@ ms.locfileid: "30223761"
 
 可以在审核日志中搜索 Microsoft Flow 中的活动。这些活动包括创建、编辑和删除流以及更改流权限。有关流活动审核的信息, 请参阅现已[在 Office 365 Security & 合规中心中提供的博客 Microsoft 流审核事件](https://flow.microsoft.com/blog/security-and-compliance-center)。
 
+### <a name="microsoft-powerapps"></a>Microsoft PowerApps
+
+您可以在 PowerApps 中搜索与应用程序相关的活动的审核日志。这些活动包括创建、启动和发布应用程序。还会审核为应用程序分配权限。有关所有 powerapps 活动的说明, 请参阅[powerapps 的活动日志记录](https://docs.microsoft.com/en-us/power-platform/admin/logging-powerapps#what-events-are-audited)。
 
 ### <a name="microsoft-stream"></a>Microsoft Stream
   

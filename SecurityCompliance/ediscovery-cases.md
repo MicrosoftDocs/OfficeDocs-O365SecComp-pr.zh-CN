@@ -7,18 +7,20 @@ ms.audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
-ms.collection: Strat_O365_IP
+ms.collection:
+- Strat_O365_IP
+- M365-security-compliance
 search.appverid:
 - MOE150
 - MET150
 ms.assetid: 8dd335ab-29d0-41c3-8dd8-9f7c7481e60c
 description: 使用 Office 365 安全&amp;合规中心在您的组织中创建和管理电子数据展示案例。您可以向事例分配成员、将内容位置置于保留状态、运行与事例关联的内容 Searchs, 以及导出搜索结果。您还可以准备事例数据, 以便在高级电子数据展示中进行进一步分析。
-ms.openlocfilehash: 92ef00bbdd8de5b1ba6bdae40bce96720ac46089
-ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
+ms.openlocfilehash: 1265aa5f4d08f5bbbff4c52a50dd2fd8eacffd21
+ms.sourcegitcommit: baf23be44f1ed5abbf84f140b5ffa64fce605478
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30214012"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "30296845"
 ---
 # <a name="ediscovery-cases-in-the-office-365-security-amp-compliance-center"></a>Office 365 安全&amp;合规中心中的电子数据展示案例
 

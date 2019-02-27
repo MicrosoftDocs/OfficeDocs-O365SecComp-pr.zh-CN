@@ -9,14 +9,15 @@ ms.service: O365-seccomp
 localization_priority: None
 search.appverid:
 - MET150
-ms.collection: Strat_O365_Enterprise
+ms.collection:
+- M365-security-compliance
 description: '摘要: 关于 Microsoft 如何在传输中加密数据的简要说明。'
-ms.openlocfilehash: 987e923e242b47b07ad1ef65e5c7ce791c27d5bd
-ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
+ms.openlocfilehash: 596b884ac76c9b138d01958363c7921acf926345
+ms.sourcegitcommit: 686bc9a8f7a7b6810a096f07d36751d10d334409
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30217502"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "30275842"
 ---
 # <a name="office-365-encryption-for-data-in-transit"></a>Office 365 传输中的数据加密
 

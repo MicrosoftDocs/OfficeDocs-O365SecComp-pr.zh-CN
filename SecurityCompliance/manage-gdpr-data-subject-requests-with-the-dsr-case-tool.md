@@ -10,15 +10,17 @@ ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid:
 - MET150
-ms.collection: Strat_O365_IP
+ms.collection:
+- Strat_O365_IP
+- M365-security-compliance
 ms.assetid: ce9eb942-3589-42cb-88fd-1576ecb09c5c
 description: GDPR 向欧盟公民 (称为 "数据主体") 授予对其个人数据的特定权限;这些权限包括获取副本、请求对其进行更改、限制处理、删除或以电子格式接收。通过数据主体对其个人数据执行操作的正式请求称为 "数据" 主题请求或 "DSR"。您可以使用 Office 365 安全&amp;合规中心中的 DSR 案例来管理您的组织的 DSR 调查。
-ms.openlocfilehash: 8338ca2eed4f5120571f642a1cbb4408ce36e2c3
-ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
+ms.openlocfilehash: fe702ab9050e76b6b8f00fbc8d2670505a030756
+ms.sourcegitcommit: baf23be44f1ed5abbf84f140b5ffa64fce605478
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30213492"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "30296585"
 ---
 # <a name="manage-gdpr-data-subject-requests-with-the-dsr-case-tool-in-the-office-365-security-amp-compliance-center"></a>在 Office 365 安全&amp;合规中心中使用 DSR 机箱工具管理 GDPR 数据主体请求
 

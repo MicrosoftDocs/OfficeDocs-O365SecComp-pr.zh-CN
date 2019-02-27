@@ -1,7 +1,7 @@
 ---
 title: 管理 Office 365 邮件加密
-ms.author: krowley
-author: kccross
+ms.author: tracyp
+author: MSFTTracyP
 manager: laurawi
 ms.audience: ITPro
 ms.topic: article
@@ -10,13 +10,15 @@ localization_priority: Normal
 search.appverid:
 - MET150
 ms.assetid: 09f6737e-f03f-4bc8-8281-e46d24ee2a74
+ms.collection:
+- M365-security-compliance
 description: 完成设置 Office 365 邮件加密 (OME) 后, 可以通过多种方式自定义部署的配置。例如, 您可以配置是否启用一次性传递代码, 在 Outlook 网页版中显示 "保护" 按钮, 等等。本文中的任务介绍了如何。
-ms.openlocfilehash: 8b044898efb1ef86790773cd3f8e8061523b0ec0
-ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
+ms.openlocfilehash: 7b5297ae42d3efa071408540863c6ff7dbdee407
+ms.sourcegitcommit: 686bc9a8f7a7b6810a096f07d36751d10d334409
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30213752"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "30275972"
 ---
 # <a name="manage-office-365-message-encryption"></a>管理 Office 365 邮件加密
 

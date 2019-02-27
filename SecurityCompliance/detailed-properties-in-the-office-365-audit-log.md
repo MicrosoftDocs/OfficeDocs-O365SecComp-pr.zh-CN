@@ -7,19 +7,21 @@ ms.audience: Admin
 ms.topic: reference
 ms.service: O365-seccomp
 localization_priority: Normal
-ms.collection: Strat_O365_IP
+ms.collection:
+- Strat_O365_IP
+- M365-security-compliance
 search.appverid:
 - MOE150
 - BCS160
 - MET150
 ms.assetid: ce004100-9e7f-443e-942b-9b04098fcfc3
 description: Office 365 审核日志记录中包含的其他属性的说明。
-ms.openlocfilehash: 0219ed1fe29dc3ae1f940cd6991781368ae2d519
-ms.sourcegitcommit: a80bd8626720fabdf592b84e4424cd3a83d08280
+ms.openlocfilehash: d5c8d45454ddf45823ff96109194c4a1013fa4ea
+ms.sourcegitcommit: baf23be44f1ed5abbf84f140b5ffa64fce605478
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30223471"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "30296865"
 ---
 # <a name="detailed-properties-in-the-office-365-audit-log"></a>Office 365 审核日志中的属性详细信息
 
@@ -65,7 +67,7 @@ ms.locfileid: "30223471"
 |OrganizationID  <br/> |Office 365 组织的 GUID。  <br/> |全部  <br/> |
 |路径  <br/> |所访问邮件所在的邮箱文件夹的名称。此属性还标识在其中创建或复制/移动邮件的文件夹。  <br/> |Exchange (邮箱活动)  <br/> |
 |Parameters  <br/> |对于 Exchange 管理员活动, 与在 Operation 属性中标识的 cmdlet 一起使用的所有参数的名称和值。  <br/> |Exchange (管理员活动)  <br/> |
-|RecordType  <br/> |由记录指示的操作的类型。以下值指示记录类型。<br/><br/> **1** -指示 Exchange 管理员审核日志中的记录。 <br/>**2** -指示对 singled 邮箱项目执行的操作的 Exchange 邮箱审核日志中的记录。 <br/>**3** -还指示 Exchange 邮箱审核日志中的记录。此记录类型指示对源邮箱中的多个项目执行的操作 (例如, 将多个项目移动到 "已删除邮件" 文件夹或永久删除多个项目)。<br/>**4** -指示 SharePoint 中的网站管理员操作, 例如管理员或用户分配对网站的权限。 <br/>**6** -指示 SharePoint 中与文件或文件夹相关的操作, 例如用户查看或修改文件。 <br/>**8** -指示在 Azure Active Directory 中执行的管理员操作。 <br/>**9** -指示 Azure Active Directory 中的 OrgId 登录事件。此记录类型已被弃用。<br/>**10** -指示由 Microsoft 人员在数据中心执行的安全 cmdlet 事件。 <br/>**11** -指示 SharePoint 中的数据丢失保护 (DLP) 事件。<br/> **12** -指示 Sway 事件。 <br/>**13** -当使用统一的 DLP 策略进行配置时, 指示 Exchange 中的 DLP 事件。不支持基于 Exchange 传输规则的 DLP 事件。<br>**14** -指示 SharePoint 中的共享事件。<br/> **15** -指示 Azure Active Directory 中的安全令牌服务 (STS) 登录事件。 <br/>**18** -表示安全&amp;合规中心事件。 <br/>**20** -指示 Power BI 事件。 <br/>**21**-指示 Dynamics 365 事件。<br/>**22** -指示 Yammer 事件。 <br/>**23** -指示 Skype for business 事件。 <br/>**24** -指示电子数据展示事件。此记录类型指示通过在安全&amp;合规中心中运行内容搜索和管理电子数据展示事例所执行的活动。有关详细信息, 请参阅在 Office 365 审核日志中搜索电子数据展示活动。<br/>**25、26或 27** -表示 Microsoft 团队活动。 <br/>**28** -指示来自 Exchange Online Protection 和 Office 365 高级威胁防护事件的网络钓鱼和恶意软件事件。<br/> **30** -指示 Microsoft Flow 事件。<br/> **32** -指示 Microsoft Stream 事件。<br/> **35** -指示 Microsoft 项目事件。 <br/> **36** -指示 SharePoint 列表事件。<br/> **40** -指示安全性和合规性警报信号中产生的事件。<br/> **41** -指示 Office 365 高级威胁防护中的安全链接时间段和阻止覆盖事件。<br/>**44** -指示 Workplace Analytics 事件。 <br/>**47** -指示 SharePoint、OneDrive 和 Microsoft 团队中的文件的来自 Office 365 高级威胁防护的网络钓鱼和恶意软件事件。 |全部  <br/> |
+|RecordType  <br/> |由记录指示的操作的类型。以下值指示记录类型。<br/><br/> **1** -指示 Exchange 管理员审核日志中的记录。 <br/>**2** -指示对 singled 邮箱项目执行的操作的 Exchange 邮箱审核日志中的记录。 <br/>**3** -还指示 Exchange 邮箱审核日志中的记录。此记录类型指示对源邮箱中的多个项目执行的操作 (例如, 将多个项目移动到 "已删除邮件" 文件夹或永久删除多个项目)。<br/>**4** -指示 SharePoint 中的网站管理员操作, 例如管理员或用户分配对网站的权限。 <br/>**6** -指示 SharePoint 中与文件或文件夹相关的操作, 例如用户查看或修改文件。 <br/>**8** -指示在 Azure Active Directory 中执行的管理员操作。 <br/>**9** -指示 Azure Active Directory 中的 OrgId 登录事件。此记录类型已被弃用。<br/>**10** -指示由 Microsoft 人员在数据中心执行的安全 cmdlet 事件。 <br/>**11** -指示 SharePoint 中的数据丢失保护 (DLP) 事件。<br/> **12** -指示 Sway 事件。 <br/>**13** -当使用统一的 DLP 策略进行配置时, 指示 Exchange 中的 DLP 事件。不支持基于 Exchange 传输规则的 DLP 事件。<br>**14** -指示 SharePoint 中的共享事件。<br/> **15** -指示 Azure Active Directory 中的安全令牌服务 (STS) 登录事件。 <br/>**18** -表示安全&amp;合规中心事件。 <br/>**20** -指示 Power BI 事件。 <br/>**21**-指示 Dynamics 365 事件。<br/>**22** -指示 Yammer 事件。 <br/>**23** -指示 Skype for business 事件。 <br/>**24** -指示电子数据展示事件。此记录类型指示通过在安全&amp;合规中心中运行内容搜索和管理电子数据展示事例所执行的活动。有关详细信息, 请参阅在 Office 365 审核日志中搜索电子数据展示活动。<br/>**25、26或 27** -表示 Microsoft 团队活动。 <br/>**28** -指示来自 Exchange Online Protection 和 Office 365 高级威胁防护事件的网络钓鱼和恶意软件事件。<br/> **30** -指示 Microsoft Flow 事件。<br/> **32** -指示 Microsoft Stream 事件。<br/> **35** -指示 Microsoft 项目事件。 <br/> **36** -指示 SharePoint 列表事件。<br/> **40** -指示安全性和合规性警报信号中产生的事件。<br/> **41** -指示 Office 365 高级威胁防护中的安全链接时间段和阻止覆盖事件。<br/>**44** -指示 Workplace Analytics 事件。 <br/>**45** -指示 PowerApps 应用程序事件。 <br/> **47** -指示 SharePoint、OneDrive 和 Microsoft 团队中的文件的来自 Office 365 高级威胁防护的网络钓鱼和恶意软件事件。 |全部  <br/> |
 |ResultStatus  <br/> |指示操作 (在**Operation**属性中指定) 是否成功。  <br/> 对于 Exchange 管理员活动, 值可以为**True** (成功) 或**False** (失败)。  <br/> |全部  <br/>|
 |SecurityComplianceCenterEventType  <br/> |指示活动是安全&amp;合规中心事件。所有安全&amp;合规性中心活动的值都为此属性的值为**0** 。<br/> |Office 365 安全与合规中心  <br/> |
 |SharingType  <br/> |分配给用户的共享权限类型, 该用户是与资源共享的。此用户在**UserSharedWith**属性中进行标识。<br/> |SharePoint  <br/> |

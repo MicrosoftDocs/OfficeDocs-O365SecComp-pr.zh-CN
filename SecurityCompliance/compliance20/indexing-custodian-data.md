@@ -8,22 +8,29 @@ ms.audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
-ms.collection: ''
+ms.collection: M365-security-compliance
 search.appverid:
 - MOE150
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: f8f1a92f001bf8f9e23f54bbb05fbbcf443bf4b9
-ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
+ms.openlocfilehash: 1521aadca42c8119ae341065865b227fb16ffcf3
+ms.sourcegitcommit: baf23be44f1ed5abbf84f140b5ffa64fce605478
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30218662"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "30295025"
 ---
 # <a name="advanced-indexing-of-custodian-data"></a>保管人数据的高级索引
 
-将管理员添加到高级电子数据展示 (预览版) 时, 将重新处理 Office 365 中被视为部分索引的任何内容, 以使其完全可搜索。 此过程称为 "*高级索引*"。可以对内容进行部分索引, 其中包括图像存在、不受支持的文件类型或在遇到索引文件大小限制时的原因。 若要了解有关部分索引项目的详细信息, 请参阅[在 Office 365 中的内容搜索中的部分索引项目](https://docs.microsoft.com/en-us/office365/securitycompliance/partially-indexed-items-in-content-search)。
+将管理员添加到高级电子数据展示 (预览版) 时, 将重新处理 Office 365 中被视为部分索引的任何内容, 以使其完全可搜索。 此过程称为 "*高级索引*"。可以对内容进行部分索引, 其中包括图像存在、不受支持的文件类型或在遇到索引文件大小限制时的原因。
+
+若要了解有关 Office 365 中的处理支持和部分索引项目的详细信息, 请参阅:
+
+- [高级电子数据展示中支持的文件类型](supported-filetypes-ediscovery20.md)
+- [处理 Office 365 内容搜索中的部分索引项](https://docs.microsoft.com/en-us/office365/securitycompliance/partially-indexed-items-in-content-search)
+- [由 Exchange 搜索编制索引的文件格式](https://docs.microsoft.com/en-us/exchange/file-formats-indexed-by-exchange-search-exchange-2013-help)
+- [SharePoint Server 中的默认爬网文件扩展名和分析文件类型](https://docs.microsoft.com/en-us/SharePoint/technical-reference/default-crawled-file-name-extensions-and-parsed-file-types)
 
 ## <a name="viewing-advanced-indexing-results"></a>查看高级索引结果
 

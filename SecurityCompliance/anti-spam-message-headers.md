@@ -14,12 +14,12 @@ ms.assetid: 2e3fcfc5-5604-4b88-ac0a-c5c45c03f1db
 ms.collection:
 - M365-security-compliance
 description: Exchange Online Protection 扫描到入站电子邮件时，它会在每封邮件中插入" **X-Forefront-Antispam-Report**"标头。
-ms.openlocfilehash: 4851c05f4db8d120eb54b9c22025fe2972e1e515
-ms.sourcegitcommit: a80bd8626720fabdf592b84e4424cd3a83d08280
+ms.openlocfilehash: 13bcb3598552bbb63bd50b50963b9806c3f34844
+ms.sourcegitcommit: 686bc9a8f7a7b6810a096f07d36751d10d334409
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30223581"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "30276192"
 ---
 # <a name="anti-spam-message-headers"></a>反垃圾邮件邮件头
 
@@ -55,7 +55,7 @@ Exchange Online Protection 扫描到入站电子邮件时，它会在每封邮�
 |SFV:NSPM|邮件被标记为非垃圾邮件并发送给预期收件人。|
 |H:[helostring]|连接邮件服务器的 HELO 或 EHLO 字符串。|
 |PTR:[ReverseDNS]|发送 IP 地址的 PTR 记录或指针记录，亦称为反向 DNS 地址。|
-|SFTY|该邮件被标识为 "网络钓鱼", 也将使用以下值之一进行标记: <br/>• 9.1: 默认值。邮件包含仿冒 URL, 可能包含其他仿冒内容, 或者在将邮件中继到 Office 365 之前, 另一个邮件筛选器 (如本地版本的 Exchange Server) 已将其标记为 "仿冒"。 <br/>• 9.11: 邮件未通过反欺骗检查, 发件人: 头中的发送域与接收域相同, 或与之对齐, 或者是同一个组织的一部分。这表示将向邮件中添加组织内欺骗安全提示。 <br/>• 9.19: 邮件未能通过域模拟检查, 其中发送域尝试模拟收件人拥有的域, 或由反网络钓鱼策略保护的自定义域。这表示将向邮件中添加模拟安全提示 (如果通过反 Phishig 策略启用)。 <br/>• 9.20: 邮件失败用户模拟检查, 其中发送用户试图模拟收件人组织内的用户, 或由反网络钓鱼策略保护的自定义用户。这表示将向邮件中添加模拟安全提示 (如果通过反 Phishig 策略启用)。 <br/>• 9.21: 邮件未能通过反欺骗检查, 发件人: 头中的发送域不会进行身份验证, 并且来自外部域。与 CompAuth 结合使用 (请参阅身份验证-结果)。 <br/>• 9.22: 与9.21 相同, 不同之处在于用户的安全发件人已被覆盖。 <br/>• 9.23: 与9.22 相同, 不同之处在于组织具有允许的已覆盖发件人或域。 <br/>• 9.24: 与9.23 相同, 不同之处在于用户具有替代的 Exchange 邮件流规则。|
+|SFTY|该邮件被标识为 "网络钓鱼", 也将使用以下值之一进行标记: <br/>• 9.1: 默认值。邮件包含仿冒 URL, 可能包含其他仿冒内容, 或者在将邮件中继到 Office 365 之前, 另一个邮件筛选器 (如本地版本的 Exchange Server) 已将其标记为 "仿冒"。 <br/>• 9.11: 邮件未通过反欺骗检查, 发件人: 头中的发送域与接收域相同, 或与之对齐, 或者是同一个组织的一部分。这表示将向邮件中添加组织内欺骗安全提示。 <br/>• 9.19: 邮件未能通过域模拟检查, 其中发送域尝试模拟收件人拥有的域, 或由反网络钓鱼策略保护的自定义域。这表示将向邮件中添加模拟安全提示 (如果通过反网络钓鱼策略启用)。 <br/>• 9.20: 邮件失败用户模拟检查, 其中发送用户试图模拟收件人组织内的用户, 或由反网络钓鱼策略保护的自定义用户。这表示将向邮件中添加模拟安全提示 (如果通过反网络钓鱼策略启用)。 <br/>• 9.21: 邮件未能通过反欺骗检查, 发件人: 头中的发送域不会进行身份验证, 并且来自外部域。与 CompAuth 结合使用 (请参阅身份验证-结果)。 <br/>• 9.22: 与9.21 相同, 不同之处在于用户的安全发件人已被覆盖。 <br/>• 9.23: 与9.22 相同, 不同之处在于组织具有允许的已覆盖发件人或域。 <br/>• 9.24: 与9.23 相同, 不同之处在于用户具有替代的 Exchange 邮件流规则。|
 |X-CustomSpam：[ASFOption]|邮件符合高级垃圾邮件筛选选项。例如, **X-x-customspam: 指向远程站点的图像链接**表示匹配 "**远程站点的链接**" ASF 选项。若要了解为每个特定 ASF 选项添加的 X 标头文本, 请参阅[高级垃圾邮件筛选选项](advanced-spam-filtering-asf-options.md)。|
    
 ## <a name="x-microsoft-antispam-message-header-fields"></a>X-Microsoft-Antispam 邮件标头字段

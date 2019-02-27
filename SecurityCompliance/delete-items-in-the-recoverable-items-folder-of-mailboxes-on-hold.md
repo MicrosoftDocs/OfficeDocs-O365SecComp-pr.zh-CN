@@ -7,18 +7,20 @@ ms.audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
-ms.collection: Strat_O365_IP
+ms.collection:
+- Strat_O365_IP
+- M365-security-compliance
 search.appverid:
 - MOE150
 - MET150
 ms.assetid: a85e1c87-a48e-4715-bfa9-d5275cde67b0
 description: '对于管理员: 删除 Exchange Online 邮箱的用户的 "可恢复的项目" 文件夹中的项目, 即使该邮箱位于 "合法保留" 中也是如此。这是一种删除意外溅入 Office 365 中的数据的有效方法。'
-ms.openlocfilehash: f3518dc1009b4e95472473f76e6cd41011bc6b3e
-ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
+ms.openlocfilehash: 4b7b12b33a2364d76b5d7dab6c7e94dc8f00d151
+ms.sourcegitcommit: baf23be44f1ed5abbf84f140b5ffa64fce605478
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30216952"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "30296175"
 ---
 # <a name="delete-items-in-the-recoverable-items-folder-of-cloud-based-mailboxes-on-hold---admin-help"></a>删除保留的基于云的邮箱的 "可恢复的项目" 文件夹中的项目-管理员帮助
 

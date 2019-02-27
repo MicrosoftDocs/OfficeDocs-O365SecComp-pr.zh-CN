@@ -8,19 +8,21 @@ ms.audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
-ms.collection: Strat_O365_IP
+ms.collection:
+- Strat_O365_IP
+- M365-security-compliance
 search.appverid:
 - MOE150
 - MED150
 - MET150
 ms.assetid: e893b19a-660c-41f2-9074-d3631c95a014
 description: 可以在 "Office 365 安全&amp;合规中心" 中打开 "审核日志搜索" 功能。如果你更改了想法, 你可以随时关闭。当 "审核日志搜索" 关闭时, 管理员无法在组织中搜索用户和管理员活动的 Office 365 审核日志。
-ms.openlocfilehash: f0532ae7ba205001d89164ac3f00822d14aa81cd
-ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
+ms.openlocfilehash: 17b98cce26054d073006fa78c55fe418b5f327d8
+ms.sourcegitcommit: baf23be44f1ed5abbf84f140b5ffa64fce605478
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30218002"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "30295455"
 ---
 # <a name="turn-office-365-audit-log-search-on-or-off"></a>启用或禁用 Office 365 审核日志搜索
 

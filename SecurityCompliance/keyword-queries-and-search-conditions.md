@@ -9,18 +9,20 @@ f1_keywords:
 - ms.o365.cc.SearchQueryLearnMore
 ms.service: O365-seccomp
 localization_priority: Normal
-ms.collection: Strat_O365_IP
+ms.collection:
+- Strat_O365_IP
+- M365-security-compliance
 search.appverid:
 - MOE150
 - MET150
 ms.assetid: c4639c2e-7223-4302-8e0d-b6e10f1c3be3
 description: '了解可以使用 Office 365 安全&amp;合规中心中的内容搜索工具在 Exchange Online 邮箱和 SharePoint 或 OneDrive for business 网站中搜索的电子邮件和文件属性。  '
-ms.openlocfilehash: 3963105a790f8cc149bb5522f386f7bffe974e6c
-ms.sourcegitcommit: a80bd8626720fabdf592b84e4424cd3a83d08280
+ms.openlocfilehash: 2596ba9e86a0dc4d5324b9593d164430e0daf30b
+ms.sourcegitcommit: baf23be44f1ed5abbf84f140b5ffa64fce605478
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30223691"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "30296705"
 ---
 # <a name="keyword-queries-and-search-conditions-for-content-search"></a>内容搜索的关键字查询和搜索条件
 

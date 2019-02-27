@@ -1,7 +1,7 @@
 ---
 title: Office 365 如何使用发件人策略框架 (SPF) 来防止欺骗
-ms.author: krowley
-author: kccross
+ms.author: tracyp
+author: MSFTTracyP
 manager: laurawi
 ms.date: 12/15/2016
 ms.audience: ITPro
@@ -12,13 +12,15 @@ localization_priority: Normal
 search.appverid:
 - MET150
 ms.assetid: 3aff33c5-1416-4867-a23b-e0c0c5b4d2be
+ms.collection:
+- M365-security-compliance
 description: 摘要：本文介绍了 Office 365 如何在 DNS 中使用发件人策略框架 (SPF) TXT 记录，以确保目标电子邮件系统信任从自定义域发送的邮件。这适用于从 Office 365 发送的出站邮件。从 Office 365 发送给 Office 365 收件人的邮件始终可通过 SPF。
-ms.openlocfilehash: b4898bf8b607e7ad600455c915f99baaab21f6f6
-ms.sourcegitcommit: a80bd8626720fabdf592b84e4424cd3a83d08280
+ms.openlocfilehash: 76267f89744b696185022a2bb036dcde09dfcde5
+ms.sourcegitcommit: 686bc9a8f7a7b6810a096f07d36751d10d334409
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30223561"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "30276102"
 ---
 # <a name="how-office-365-uses-sender-policy-framework-spf-to-prevent-spoofing"></a>Office 365 如何使用发件人策略框架 (SPF) 来防止欺骗
 

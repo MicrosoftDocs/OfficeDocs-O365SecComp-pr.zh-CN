@@ -9,14 +9,15 @@ ms.service: O365-seccomp
 localization_priority: None
 search.appverid:
 - MET150
-ms.collection: Strat_O365_Enterprise
+ms.collection:
+- M365-security-compliance
 description: '摘要: Azure 中的加密说明。'
-ms.openlocfilehash: 317fafe34c642d6c78cdf856e7391715770c1659
-ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
+ms.openlocfilehash: 4d6d898ecd711f09519ca53eaebb8c345f443488
+ms.sourcegitcommit: 686bc9a8f7a7b6810a096f07d36751d10d334409
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30219832"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "30276252"
 ---
 # <a name="office-365-encryption-in-azure"></a>Azure 中的 Office 365 加密
 

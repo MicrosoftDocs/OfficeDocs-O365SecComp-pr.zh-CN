@@ -7,18 +7,19 @@ ms.audience: Admin
 ms.topic: reference
 ms.service: O365-seccomp
 localization_priority: Normal
+ms.collection: M365-security-compliance
 search.appverid:
 - MOE150
 - MED150
 - MET150
 ms.assetid: 2fe71b05-f5a2-4182-ade7-4dc5cabdfd51
 description: '有关使用 office 365 导入服务将 organizaiton 的 PST 文件导入到 office 365 邮箱的管理员的常见问题。 '
-ms.openlocfilehash: 9ca2e206a1d06c1398181c51e41b4dc68d8d965c
-ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
+ms.openlocfilehash: bef9c9e80f4f4c8261e9c44ba201a978937e2841
+ms.sourcegitcommit: baf23be44f1ed5abbf84f140b5ffa64fce605478
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30218402"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "30296875"
 ---
 # <a name="faq-about-importing-pst-files-to-office-365"></a>将 PST 文件导入到 Office 365 的常见问题解答
 

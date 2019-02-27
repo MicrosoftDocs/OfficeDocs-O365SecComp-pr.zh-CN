@@ -1,7 +1,7 @@
 ---
 title: 安装 Microsoft Outlook 的垃圾邮件报告外接程序
-ms.author: krowley
-author: kccross
+ms.author: MSFTTracyP
+author: tracyp
 manager: laurawi
 ms.date: 12/9/2016
 ms.audience: ITPro
@@ -10,13 +10,15 @@ ms.service: O365-seccomp
 ms.custom: TN2DMC
 localization_priority: Normal
 ms.assetid: 8dcc752f-e22e-44ce-a104-4cc4d7e439f3
+ms.collection:
+- M365-security-compliance
 description: 在此 articleSupported 中 LanguagesInstall 垃圾电子邮件报告外接 inUninstall 垃圾电子邮件报告添加-inFor 详细信息
-ms.openlocfilehash: 20fb879d3a965a973513a69cf8055f0d96507e9a
-ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
+ms.openlocfilehash: b29bd367ca168ff45d983796b8ae6e68ee9df297
+ms.sourcegitcommit: 686bc9a8f7a7b6810a096f07d36751d10d334409
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30217022"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "30276302"
 ---
 # <a name="install-the-junk-email-reporting-add-in-for-microsoft-outlook"></a>安装 Microsoft Outlook 的垃圾邮件报告外接程序
   

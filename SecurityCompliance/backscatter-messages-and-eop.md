@@ -1,7 +1,7 @@
 ---
 title: 退信消息和 EOP
-ms.author: krowley
-author: kccross
+ms.author: tracyp
+author: MSFTTracyP
 manager: laurawi
 ms.date: 12/9/2016
 ms.audience: ITPro
@@ -15,12 +15,12 @@ ms.assetid: 6f64f2de-d626-48ed-8084-03cc72301aa4
 ms.collection:
 - M365-security-compliance
 description: 退信邮件是邮件服务器发送的自动弹跳邮件, 通常是由于传入的垃圾邮件造成的。退信 DNSBL 是发送退信邮件的 IP 地址的列表。它不是垃圾邮件制造者列表, 我们不会尝试从退信 DNSBL 中删除我们的服务器。
-ms.openlocfilehash: 075200ff85762056290690f40d6047ea25a1dbde
-ms.sourcegitcommit: a80bd8626720fabdf592b84e4424cd3a83d08280
+ms.openlocfilehash: 73f8631c50bcfb8a023b2b6007b7ccf48038e16e
+ms.sourcegitcommit: 686bc9a8f7a7b6810a096f07d36751d10d334409
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30222771"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "30275292"
 ---
 # <a name="backscatter-messages-and-eop"></a>退信消息和 EOP
 

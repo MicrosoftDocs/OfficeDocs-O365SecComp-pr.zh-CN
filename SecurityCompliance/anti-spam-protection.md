@@ -15,12 +15,12 @@ ms.assetid: 6a601501-a6a8-4559-b2e7-56b59c96a586
 ms.collection:
 - M365-security-compliance
 description: 了解可帮助您阻止 Exchange Online 和 Office 365 中的垃圾邮件的反垃圾邮件设置和筛选器。在 Office 365 中获取过多垃圾邮件？您可以自定义垃圾邮件筛选器和反垃圾邮件策略设置。
-ms.openlocfilehash: 2d8f433cabda4408da2e29b7bc6570e09e6989dd
-ms.sourcegitcommit: a80bd8626720fabdf592b84e4424cd3a83d08280
+ms.openlocfilehash: f4d32bb0efae0a38fdc6789feef73bd5014eb75b
+ms.sourcegitcommit: baf23be44f1ed5abbf84f140b5ffa64fce605478
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30223421"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "30296315"
 ---
 # <a name="office-365-email-anti-spam-protection"></a>Office 365 电子邮件反垃圾邮件保护
 
@@ -75,7 +75,7 @@ ms.locfileid: "30223421"
   
 [使用安全列表或其他技术避免出现标记为“垃圾邮件”的误报电子邮件](prevent-email-from-being-marked-as-spam-0.md)
   
-[如何设置 Office 365 垃圾邮件筛选以帮助阻止垃圾邮件](block-email-spam-to-prevent-false-negatives.md)
+[如何设置 Office 365 垃圾邮件筛选以帮助阻止垃圾邮件](reduce-spam-email.md)
   
 [垃圾邮件和批量电子邮件之间有什么区别？](https://technet.microsoft.com/library/dn720441%28v=exchg.150%29.aspx)
   

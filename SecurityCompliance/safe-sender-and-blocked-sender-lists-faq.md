@@ -1,7 +1,7 @@
 ---
 title: Exchange Online 中的安全发件人和阻止发件人列表
-ms.author: krowley
-author: kccross
+ms.author: tracyp
+author: MSFTTracyP
 manager: laurawi
 ms.audience: ITPro
 ms.topic: reference
@@ -11,13 +11,15 @@ localization_priority: Normal
 search.appverid:
 - MET150
 ms.assetid: 111ab6b0-2dd2-4a87-a928-4931df6b3c4d
+ms.collection:
+- M365-security-compliance
 description: 作为 Exchange Online 或 Exchange Online Protection (EOP) 管理员，你可以帮助确保通过服务传递的电子邮件不会被标记为垃圾邮件。实现上述任务的一种方法是为组织中的人员创建白名单和黑名单。
-ms.openlocfilehash: 923d71c4feeae16db538e381ee7c2ed7814cb8f8
-ms.sourcegitcommit: a80bd8626720fabdf592b84e4424cd3a83d08280
+ms.openlocfilehash: 390b414c44da6b30193bcb6b9db0b8162aafffb7
+ms.sourcegitcommit: 686bc9a8f7a7b6810a096f07d36751d10d334409
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30222941"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "30275652"
 ---
 # <a name="safe-sender-and-blocked-sender-lists-in-exchange-online"></a>Exchange Online 中的安全发件人和阻止发件人列表
 

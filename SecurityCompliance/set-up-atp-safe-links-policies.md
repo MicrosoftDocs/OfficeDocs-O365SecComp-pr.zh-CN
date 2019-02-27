@@ -5,7 +5,7 @@ author: denisebmsft
 manager: laurawi
 ms.audience: Admin
 ms.topic: article
-ms.date: 02/06/2019
+ms.date: 02/26/2019
 ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid:
@@ -15,12 +15,12 @@ ms.assetid: bdd5372d-775e-4442-9c1b-609627b94b5d
 ms.collection:
 - M365-security-compliance
 description: 设置安全链接策略以保护您的组织免受 Word、Excel、PowerPoint 和 Visio 文件以及电子邮件中的恶意链接。
-ms.openlocfilehash: 0cf6c22be42f11fe52a1f43d0ebef48bd639675d
-ms.sourcegitcommit: 5b5bbced1577701bdb6befc8ed252e9d9e776529
+ms.openlocfilehash: e9ab086454703113bca6e8b260ba898a5e36ef9b
+ms.sourcegitcommit: baf23be44f1ed5abbf84f140b5ffa64fce605478
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/25/2019
-ms.locfileid: "30245598"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "30296825"
 ---
 # <a name="set-up-office-365-atp-safe-links-policies"></a>设置 Office 365 ATP 安全链接策略
 
@@ -112,8 +112,8 @@ ms.locfileid: "30245598"
 ## <a name="step-4-learn-about-atp-safe-links-policy-options"></a>步骤 4: 了解 ATP 安全链接策略选项
 
 在设置或编辑 ATP 安全链接策略时, 将看到几个可用选项。如果您想知道这些选项是什么, 下表介绍了每一个选项及其效果。请注意, 有两种主要的 ATP 安全链接策略可供定义或编辑:
-- 适用于每个人的[默认策略](#default-policy-options) 
-- [为特定收件人定义](#policies-that-apply-to-specific-email-recipients)的其他策略 
+- 适用于每个人的[默认策略](#default-policy-options);并  
+- [针对特定收件人的其他策略](#policies-that-apply-to-specific-email-recipients) 
 
 ### <a name="default-policy-options"></a>默认策略选项
 
@@ -121,8 +121,8 @@ ms.locfileid: "30245598"
 
 |此选项  |执行的操作  |
 |---------|---------|
-| **阻止以下 url** <br/>    | 允许您的组织具有自动阻止的自定义 url 的自定义列表。当用户单击此列表中的某个 URL 时, 将会看到一个[警告页面](atp-safe-links-warning-pages.md), 说明为什么阻止了该 url。<br/> 若要了解详细信息, 请参阅 [使用 ATP 安全链接设置自定义阻止的 url 列表      |
-| **office 365 专业增强版、适用于 iOS 和 Android 的 office** <br/>    | 选择此选项后, ATP 安全链接保护将应用于在 Office 365 专业增强版 (Word、Excel 和 PowerPoint on windows 或 Mac OS)、iOS 或 Android 设备上的 office 文档、windows 上的 Visio 2016 和 Office Online (word) 中打开的文档中的 url。Online、PowerPoint online、Excel Online 和 OneNote Online) (如果用户已登录 Office 365)。 <br/><br/>如果你**在 Windows 上仅看到 office 2016**, 则功能更新尚未到达你的 office 365 环境 (即将推出)。在此之前, ATP 安全链接保护适用于在 Windows 上运行的 Word 2016、Excel 2016、PowerPoint 2016 或 Visio 2016。            |
+| **阻止以下 url** <br/>    | 允许您的组织具有自动阻止的自定义 url 的自定义列表。当用户单击此列表中的某个 URL 时, 将会看到一个[警告页面](atp-safe-links-warning-pages.md), 说明为什么阻止了该 url。若要了解详细信息, 请参阅[使用 Office 365 ATP 安全链接设置自定义阻止的 url 列表](set-up-a-custom-blocked-urls-list-wtih-atp.md)。 |
+| **office 365 专业增强版、适用于 iOS 和 Android 的 office** <br/>    | 如果选择此选项, 则将 ATP 安全链接保护应用于 windows 或 Mac OS 上的 Word、Excel 和 PowerPoint 文件中的 url、iOS 上的 Office 文档、Windows 上的 Visio 2016 和 Office Online (Word Online、PowerPoint online、Excel Online和 OneNote Online) (如果用户已登录到 Office 365)。 |
 | **在用户单击 ATP 安全链接时不进行跟踪** <br/>  | 选择此选项后, 将不存储在 Word、Excel、PowerPoint 和 Visio 文档中的 url 的数据。  <br/> |
 |**不要让用户点击到原始 URL 的 ATP 安全链接** <br/> |选择此选项后, 用户将无法继续处理被确定为恶意的 URL 之后的[警告页](atp-safe-links-warning-pages.md)。  <br/> |
 

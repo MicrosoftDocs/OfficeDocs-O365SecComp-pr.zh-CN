@@ -5,18 +5,19 @@ author: markjjo
 manager: laurawi
 ms.date: 10/27/2017
 ms.audience: Admin
-ms.topic: reference
+ms.topic: conceptual
 ms.service: O365-seccomp
+ms.collection: M365-security-compliance
 localization_priority: Normal
 search.appverid: MOE150
 ms.assetid: ec2677ff-c4d7-4363-a9e7-22c80e015688
 description: 使用内容搜索电子数据展示工具搜索从第三方数据源导入到 Office 365 中的邮箱的项目。您可以创建查询以搜索所有导入的项, 或创建查询以搜索特定的第三方数据类型。本文列出了可以在关键字查询中使用的值, 以搜索可导入到 Office 365 的第三方数据类型。
-ms.openlocfilehash: 793024f765aa1d016f7a043d14eb75ca6c2435c3
-ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
+ms.openlocfilehash: f1ab3cfc8dd866aa0d70014b22a301de2a65f3c5
+ms.sourcegitcommit: baf23be44f1ed5abbf84f140b5ffa64fce605478
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30214872"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "30296035"
 ---
 # <a name="use-content-search-to-search-third-party-data-that-was-imported-to-office-365"></a>使用内容搜索来搜索导入到 Office 365 的第三方数据
 

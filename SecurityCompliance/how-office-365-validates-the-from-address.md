@@ -1,7 +1,7 @@
 ---
 title: Office 365 如何验证发件人地址以防止仿冒
-ms.author: krowley
-author: kccross
+ms.author: tracyp
+author: MSFTTracyp
 manager: laurawi
 ms.date: 10/11/2017
 ms.audience: ITPro
@@ -12,13 +12,15 @@ search.appverid:
 - OWC150
 - MET150
 ms.assetid: eef8408b-54d3-4d7d-9cf7-ad2af10b2e0e
+ms.collection:
+- M365-security-compliance
 description: '为了帮助防止网络钓鱼, Office 365 和 Outlook.com 现在要求来自: 地址的 RFC 合规性。'
-ms.openlocfilehash: df2f399e4044e9e96eab20e6789a8a53fad9015c
-ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
+ms.openlocfilehash: e540e56a7a40d13a92719865fccefefa61de47c2
+ms.sourcegitcommit: 686bc9a8f7a7b6810a096f07d36751d10d334409
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30217162"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "30276142"
 ---
 # <a name="how-office-365-validates-the-from-address-to-prevent-phishing"></a>Office 365 如何验证发件人地址以防止仿冒
 

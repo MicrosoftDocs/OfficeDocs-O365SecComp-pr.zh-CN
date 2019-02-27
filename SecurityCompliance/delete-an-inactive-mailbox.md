@@ -8,17 +8,18 @@ ms.audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
+ms.collection: M365-security-compliance
 search.appverid:
 - MOE150
 - MET150
 ms.assetid: f5caf497-5e8d-4b7a-bfff-d02942f38150
 description: 当不再需要保留 Office 365 非活动邮箱的内容时, 可以通过删除保留永久删除非活动邮箱。删除保留后, 非活动邮箱将标记为删除, 并在处理后被永久删除。
-ms.openlocfilehash: 0dddbb7c5093519914cbf3a2fc33daf709f0a160
-ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
+ms.openlocfilehash: 6af107face519ac18d5b072d675e76f70dc4c4a6
+ms.sourcegitcommit: baf23be44f1ed5abbf84f140b5ffa64fce605478
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30220842"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "30295735"
 ---
 # <a name="delete-an-inactive-mailbox-in-office-365"></a>删除 Office 365 中的非活动邮箱
 

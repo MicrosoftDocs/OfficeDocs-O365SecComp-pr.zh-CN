@@ -7,19 +7,21 @@ ms.audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
-ms.collection: Strat_O365_IP
+ms.collection:
+- Strat_O365_IP
+- M365-security-compliance
 search.appverid:
 - MOE150
 - MED150
 - MET150
 ms.assetid: 103f940c-0468-4e1a-b527-cc8ad13a5ea6
 description: '对于管理员: 了解如何使用网络上传将多个 PST 文件批量导入 Office 365 中的用户邮箱。'
-ms.openlocfilehash: a92217ad4126851a042b3492614aaa35ef215f61
-ms.sourcegitcommit: a80bd8626720fabdf592b84e4424cd3a83d08280
+ms.openlocfilehash: 7de27e7dc15e823727544437ff79de6f72c61d5e
+ms.sourcegitcommit: baf23be44f1ed5abbf84f140b5ffa64fce605478
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30223601"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "30297145"
 ---
 # <a name="use-network-upload-to-import-your-organization-pst-files-to-office-365"></a>使用网络上传将组织 PST 文件导入到 Office 365
 

@@ -8,18 +8,20 @@ ms.audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
-ms.collection: Strat_O365_IP
+ms.collection:
+- Strat_O365_IP
+- M365-security-compliance
 search.appverid:
 - MOE150
 - MET150
 ms.assetid: 296a02bd-ebde-4022-900e-547acf38ddd7
 description: 通过对邮箱应用保留或 Office 365 保留策略, 然后删除相应的 Office 365 用户帐户, 可以在 Office 365 中创建非活动邮箱。非活动邮箱中的项目会在保留或应用到其非活动状态的保留策略的持续时间内保留。若要永久删除非活动邮箱, 只需删除保留策略或保留策略即可。
-ms.openlocfilehash: 8f798873da7d787b54932438e81aebf2dfe85181
-ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
+ms.openlocfilehash: 1f5d0aa01e9688aaa5955b9721dded9b85afdfba
+ms.sourcegitcommit: baf23be44f1ed5abbf84f140b5ffa64fce605478
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30217772"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "30295515"
 ---
 # <a name="create-and-manage-inactive-mailboxes-in-office-365"></a>在 Office 365 中创建和管理非活动邮箱
 

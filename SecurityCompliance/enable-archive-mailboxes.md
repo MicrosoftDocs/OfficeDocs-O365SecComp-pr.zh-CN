@@ -9,18 +9,20 @@ f1_keywords:
 - ms.o365.cc.ArchivingHelp
 ms.service: O365-seccomp
 localization_priority: Normal
-ms.collection: Strat_O365_IP
+ms.collection:
+- Strat_O365_IP
+- M365-security-compliance
 search.appverid:
 - MOE150
 - MET150
 ms.assetid: 268a109e-7843-405b-bb3d-b9393b2342ce
 description: 使用 Office 365 安全&amp;合规中心启用存档邮箱, 以支持组织的邮件保留、电子数据展示和保留要求。
-ms.openlocfilehash: 10e20d09c531d6758d8011030aea64a6c30cdf9b
-ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
+ms.openlocfilehash: 763097925ed0910fe9a66e5c556b8a2995df74e6
+ms.sourcegitcommit: baf23be44f1ed5abbf84f140b5ffa64fce605478
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30217282"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "30296055"
 ---
 # <a name="enable-archive-mailboxes-in-the-office-365-security-amp-compliance-center"></a>在 Office 365 安全&amp;合规中心中启用存档邮箱
   

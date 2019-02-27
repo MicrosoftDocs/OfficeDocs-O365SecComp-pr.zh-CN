@@ -8,18 +8,20 @@ ms.audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
-ms.collection: Strat_O365_IP
+ms.collection:
+- Strat_O365_IP
+- M365-security-compliance
 search.appverid:
 - MOE150
 - MET150
 ms.assetid: e2a789f2-9962-4960-9fd4-a00aa063559e
 description: '对于管理员: 了解如何在 Office 365 中启用自动扩展存档, 从而为用户提供对其 Exchange Online 邮箱的无限制存储。您可以为整个组织或仅为特定用户启用自动扩展存档。'
-ms.openlocfilehash: 39098ffc78d0379436cafb20e5a484ec0e7aa283
-ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
+ms.openlocfilehash: 96e9fdd4b645df9e52cf9e11c3a43a80ef029ffa
+ms.sourcegitcommit: baf23be44f1ed5abbf84f140b5ffa64fce605478
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30215392"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "30296025"
 ---
 # <a name="enable-unlimited-archiving-in-office-365---admin-help"></a>在 Office 365 中启用无限制存档-管理员帮助
 

@@ -1,7 +1,7 @@
 ---
 title: 隔离常见问题解答
-ms.author: krowley
-author: kccross
+ms.author: tracyp
+author: MSFTTracyP
 manager: laurawi
 ms.date: 6/16/2017
 ms.audience: ITPro
@@ -12,21 +12,23 @@ localization_priority: Normal
 search.appverid:
 - MET150
 ms.assetid: c440b2ac-cafa-4be5-ba4c-14278a7990ae
+ms.collection:
+- M365-security-compliance
 description: 本主题提供了关于托管隔离的常见问题及解答。
-ms.openlocfilehash: 1473e682faab0471f5a6356e8d54a65a9baf291a
-ms.sourcegitcommit: 7e2a0185cadea7f3a6afc5ddc445eac2e1ce22eb
+ms.openlocfilehash: 381eb0aba25d7149c2f164f9e0173034568d5eff
+ms.sourcegitcommit: 686bc9a8f7a7b6810a096f07d36751d10d334409
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/09/2019
-ms.locfileid: "29792493"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "30276022"
 ---
 # <a name="quarantine-faq"></a>隔离常见问题解答
 
 本主题提供了关于托管隔离的常见问题及解答。解答适用于 Microsoft Exchange Online 和 Exchange Online Protection 客户。
   
- **问： 如何在隔离管理恶意软件隔离邮件？**
+ **问: 如何在隔离中管理恶意软件隔离的邮件？**
   
-您需要使用安全&amp;合规性中心以查看并使用发送到隔离因为它们包含恶意软件的邮件。有关详细信息，请参阅[Office 365 中的隔离电子邮件](https://support.office.com/article/Quarantine-email-messages-in-Office-365-4c234874-015e-4768-8495-98fcccfc639b)。
+您需要使用安全&amp;合规性中心, 以便查看和处理发送到隔离的邮件, 因为它们包含恶意软件。有关详细信息, 请参阅[在 Office 365 中隔离电子邮件消息](https://support.office.com/article/Quarantine-email-messages-in-Office-365-4c234874-015e-4768-8495-98fcccfc639b)。
   
  **问：如何将该服务配置为将垃圾邮件隔离的邮件发送到隔离邮箱？**
   
@@ -42,7 +44,7 @@ ms.locfileid: "29792493"
         
  **问：如何为我的最终用户授予访问垃圾邮件隔离的权限？**
   
-答： 以便访问最终用户垃圾邮件隔离，最终用户必须具有有效的 Office 365 用户 ID 和密码。保护内部部署邮箱的 EOP 客户必须是有效的电子邮件用户通过目录同步或 EAC 创建。有关管理用户的详细信息，EOP 管理员可以引用[在 EOP 中的管理邮件用户](eop/manage-mail-users-in-eop.md)。对于独立 EOP 客户，我们建议使用目录同步和启用 Directory Based Edge Blocking;有关详细信息，请参阅[使用 Directory Based Edge Blocking to Reject Messages Sent to Invalid Recipients](http://technet.microsoft.com/library/ca7b7416-92ed-40ad-abdb-695be46ea2e4.aspx)。
+A. 为了访问最终用户垃圾邮件隔离, 最终用户必须具有有效的 Office 365 用户 ID 和密码。保护本地邮箱的 EOP 客户必须是通过目录同步或 EAC 创建的有效电子邮件用户。有关管理用户的详细信息, EOP 管理员可以参阅[Manage mail users in EOP](eop/manage-mail-users-in-eop.md)。对于 EOP 独立客户, 我们建议使用目录同步并启用基于目录的边缘阻止功能;有关详细信息, 请参阅[使用基于目录的边缘阻止拒绝发送给无效收件人的邮件](http://technet.microsoft.com/library/ca7b7416-92ed-40ad-abdb-695be46ea2e4.aspx)。
   
  **问：除垃圾邮件以外的其他邮件可以发送到隔离邮箱吗？**
   
@@ -50,7 +52,7 @@ ms.locfileid: "29792493"
   
  **问：邮件将在隔离邮箱中保留多长时间？**
   
-答： 默认情况下，垃圾邮件隔离邮件将保存在隔离 30 天时匹配传输规则的隔离的邮件隔离邮箱中保留 7 天。这段时间后邮件将被删除，并且不可检索。匹配传输规则的隔离邮件的保留期不可配置。但是，可以通过在内容筛选器策略的**保留期限 （天） 的垃圾邮件**设置缩短的垃圾邮件隔离邮件的保留期。有关详细信息，请参阅[配置垃圾邮件筛选器策略](configure-your-spam-filter-policies.md)。
+默认情况下, 垃圾邮件隔离的邮件在隔离中保留30天, 而与传输规则匹配的隔离邮件在隔离中保存7天。在此时间段后, 邮件将被删除且不可检索。与传输规则匹配的隔离邮件的保留期不可配置。但是, 垃圾邮件隔离邮件的保留期可以通过内容筛选器策略中的 "**保留垃圾邮件 (天)** " 设置来降低。有关详细信息, 请参阅[配置垃圾邮件筛选器策略](configure-your-spam-filter-policies.md)。
   
  **问：可以一次释放或报告多个被隔离的邮件吗？**
   

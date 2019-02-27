@@ -1,7 +1,7 @@
 ---
 title: EOP 入门视频
-ms.author: krowley
-author: kccross
+ms.author: tracyp
+author: MSFTTracyP
 manager: laurawi
 ms.date: 3/13/2015
 ms.audience: ITPro
@@ -10,13 +10,15 @@ ms.service: O365-seccomp
 ms.custom: TN2DMC
 localization_priority: Normal
 ms.assetid: c9c39ada-6100-4034-a479-8bd39d428498
+ms.collection:
+- M365-security-compliance
 description: 通过下面的一系列视频，您可以了解如何设置和使用 Exchange Online Protection (EOP) 托管的电子邮件筛选服务。
-ms.openlocfilehash: 950d12ef9b4f8fdd8964a93b2c6d04e1799e51c4
-ms.sourcegitcommit: 22bca85c3c6d946083d3784f72e886c068d49f4a
+ms.openlocfilehash: 524eb25a3564a844d5cdd147a1101af87ddfc393
+ms.sourcegitcommit: 686bc9a8f7a7b6810a096f07d36751d10d334409
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/06/2018
-ms.locfileid: "22027639"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "30276002"
 ---
 # <a name="videos-for-getting-started-with-eop"></a>EOP 入门视频
 
@@ -54,14 +56,14 @@ EOP 的设置还针对如何处理服务检测到的恶意软件，反恶意软�
 - 配置反恶意软件策略
     > [!VIDEO https://www.microsoft.com/videoplayer/embed/12517702-ab48-4df8-a7ff-8eb02aa31724?autoplay=false]
   
-    有关详细信息，请参阅[配置反恶意软件 policies](../configure-anti-malware-policies.md)主题。 
+    有关更多详细信息, 请参阅[配置反恶意软件策略](../configure-anti-malware-policies.md)主题。 
     
 若要根据公司策略或法规基于设置的特定条件筛选并路由邮件，您需要观看有关如何创建传输规则的视频。
   
 - 在 EOP 中配置 Exchange 传输规则
     > [!VIDEO https://www.microsoft.com/videoplayer/embed/7cdcd2cb-9382-4065-98e1-81257b32a189?autoplay=false]
   
-    有关详细信息，请参阅[邮件流规则 （传输规则） 在 Exchange Online Protection](mail-flow-rules-transport-rules-0.md)主题 （如果您使用 EOP 独立版，或如果您使用 Exchange Online，请参阅[Transport rules](http://technet.microsoft.com/library/743bd525-0ca2-426d-b76c-b4a052bc8886.aspx)主题。 
+    有关更多详细信息, 请参阅[Exchange online Protection 主题中的邮件流规则 (传输规则) (](mail-flow-rules-transport-rules-0.md)如果您使用 EOP 独立版), 或者查看[传输规则](http://technet.microsoft.com/library/743bd525-0ca2-426d-b76c-b4a052bc8886.aspx)主题 (如果使用 Exchange online)。 
     
 如果您想要通过从命令行运行脚本来配置服务，远程 PowerShell 视频将帮助您入门。
   

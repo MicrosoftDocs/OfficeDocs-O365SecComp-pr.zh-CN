@@ -1,7 +1,7 @@
 ---
 title: 使用 Exchange Online Protection 保护本地邮箱
-ms.author: krowley
-author: kccross
+ms.author: tracyp
+author: MSFTTracyP
 manager: laurawi
 ms.date: 6/1/2017
 ms.audience: ITPro
@@ -14,13 +14,15 @@ search.appverid:
 - GPA150
 - MET150
 ms.assetid: c5e95951-da67-4ec7-92c5-982abd477e69
+ms.collection:
+- M365-security-compliance
 description: 即使您计划在本地承载部分或全部邮箱, 仍可以使用 Exchange Online Protection (EOP) 保护邮箱。若要配置连接器, 你的帐户必须是 Office 365 全局管理员或 Exchange 公司管理员 (组织管理角色组)。有关 Office 365 权限与 Exchange 权限的关系的信息, 请参阅在由世纪互联运营的 office 365 中分配管理员角色。如果所有 Exchange 邮箱都是本地的, 请按照以下步骤设置您的 EOP 服务。
-ms.openlocfilehash: 01a364accd40bfd5889e7b0203cfaa7e156d0997
-ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
+ms.openlocfilehash: 40fb5471a084cf245d9aef7f7b2b88effb5c4a83
+ms.sourcegitcommit: 686bc9a8f7a7b6810a096f07d36751d10d334409
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30216626"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "30276032"
 ---
 # <a name="protect-on-premises-mailboxes-with-exchange-online-protection"></a>使用 Exchange Online Protection 保护本地邮箱
 

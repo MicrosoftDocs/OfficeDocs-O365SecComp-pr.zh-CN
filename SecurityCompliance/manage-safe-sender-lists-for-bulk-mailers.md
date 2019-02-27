@@ -1,7 +1,7 @@
 ---
 title: 管理邮件群发程序的白名单
-ms.author: krowley
-author: kccross
+ms.author: tracyp
+author: MSFTTracyP
 manager: laurawi
 ms.date: 11/17/2014
 ms.audience: ITPro
@@ -12,13 +12,15 @@ localization_priority: Normal
 search.appverid:
 - MET150
 ms.assetid: d48db4a3-9fbe-45e2-bbaa-1017ffdf96f8
+ms.collection:
+- M365-security-compliance
 description: 如果您想使用白名单，您应当了解 Exchange Online Protection (EOP) 和 Outlook 处理进程的方式是不同的。通过检查 RFC 5321.MailFrom 地址和 RFC 5322.From 地址，服务遵守白名单和安全域，而 Outlook 将 RFC 5322.From 地址添加到用户的白名单中。（注意：服务对黑名单和阻止域检查 5321.MailFrom 地址和 5322.From 地址。）
-ms.openlocfilehash: 9442bb39e15b9db9a826472dd6110a8fa14130c6
-ms.sourcegitcommit: e9dca2d6a7838f98bb7eca127fdda2372cda402c
+ms.openlocfilehash: 27d635ec93dd04df8ebf22d5d3d8f8ead4b7bcf8
+ms.sourcegitcommit: 686bc9a8f7a7b6810a096f07d36751d10d334409
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/21/2018
-ms.locfileid: "23002991"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "30276132"
 ---
 # <a name="manage-safe-sender-lists-for-bulk-mailers"></a>管理邮件群发程序的白名单
 

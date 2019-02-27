@@ -7,18 +7,19 @@ ms.date: 6/21/2018
 ms.audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
+ms.collection: M365-security-compliance
 localization_priority: Normal
 search.appverid:
 - MOE150
 - MET150
 ms.assetid: 35d0ecdb-7cb0-44be-ad5c-69df2f8f8b25
 description: '如果以前的员工返回到您的组织, 或者如果雇用新员工来承担 departed 员工的工作职责, 则可以在 Office 365 中恢复非活动邮箱的内容。恢复非活动邮箱时, 会将其转换为新邮箱, 其中包含非活动邮箱的内容。 '
-ms.openlocfilehash: bebcf5cbb569c9e2e591294a084defea15af4c0f
-ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
+ms.openlocfilehash: f5c844b5841518f1aa74a122d4c43663ebcccd14
+ms.sourcegitcommit: baf23be44f1ed5abbf84f140b5ffa64fce605478
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30216132"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "30295835"
 ---
 # <a name="recover-an-inactive-mailbox-in-office-365"></a>在 Office 365 中恢复非活动邮箱
 

@@ -1,7 +1,7 @@
 ---
 title: Office 365 电子邮件中的安全提示
-ms.author: krowley
-author: kccross
+ms.author: tracyp
+author: MSFTTracyP
 manager: scotv
 ms.date: 10/6/2016
 ms.audience: Admin
@@ -12,13 +12,15 @@ search.appverid:
 - MET150
 - BCS160
 ms.assetid: fb4f8e49-0468-4be2-8fa6-99501f1ad9d5
+ms.collection:
+- M365-security-compliance
 description: 介绍 EOP 和 Office 365 垃圾邮件筛选器筛选出的电子邮件的安全提示。
-ms.openlocfilehash: 54f41d1ae0b7d0ca883bf6be7e2dbe006536d1aa
-ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
+ms.openlocfilehash: d85eb0bde24220fbbfc12e7b5f01acec69571dee
+ms.sourcegitcommit: 686bc9a8f7a7b6810a096f07d36751d10d334409
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30214302"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "30276282"
 ---
 # <a name="safety-tips-in-email-messages-in-office-365"></a>Office 365 电子邮件中的安全提示
 

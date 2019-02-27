@@ -1,7 +1,7 @@
 ---
 title: 未注册的域电子邮件
-ms.author: krowley
-author: kccross
+ms.author: tracyp
+author: MSFTTracyP
 manager: laurawi
 ms.date: 10/17/2018
 ms.audience: Admin
@@ -11,13 +11,15 @@ localization_priority: Normal
 search.appverid:
 - MET150
 - MOE150
+ms.collection:
+- M365-security-compliance
 description: 如果您发送大量未注册的域电子邮件, 则可能会导致电子邮件被阻止。阅读本文以了解详细信息。
-ms.openlocfilehash: bef39780438a6d9669354bddaed391b2364badf8
-ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
+ms.openlocfilehash: 8120bd147da2a7aab41ae14c444d2fe57242199e
+ms.sourcegitcommit: 686bc9a8f7a7b6810a096f07d36751d10d334409
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30220772"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "30276222"
 ---
 # <a name="unregistered-domain-email-what-you-need-to-know"></a>未注册的域电子邮件: 需要了解的内容
 

@@ -1,7 +1,7 @@
 ---
 title: 电子邮件保护的入门视频
-ms.author: krowley
-author: kccross
+ms.author: tracyp
+author: MSFTTracyP
 manager: laurawi
 ms.date: 11/17/2014
 ms.audience: ITPro
@@ -12,13 +12,15 @@ localization_priority: Normal
 search.appverid:
 - MET150
 ms.assetid: 393b0050-7c7e-49e6-a03d-b1e09fe4de9e
+ms.collection:
+- M365-security-compliance
 description: 下面的一系列介绍视频将帮助您使用 Exchange Online Protection (EOP) 保护您的邮箱。这些视频适用于保护内部部署邮箱（如 Exchange Server 2013）的 EOP 独立客户，以及云托管邮箱默认由 EOP 保护的 Exchange Online 客户。
-ms.openlocfilehash: 42d92b36cbfcf3261e391c8b3d74f44050f2881a
-ms.sourcegitcommit: e9dca2d6a7838f98bb7eca127fdda2372cda402c
+ms.openlocfilehash: b590ac9bdd12c49a644977573048edac22de21f1
+ms.sourcegitcommit: 686bc9a8f7a7b6810a096f07d36751d10d334409
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/21/2018
-ms.locfileid: "23002911"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "30275872"
 ---
 # <a name="videos-for-getting-started-with-protecting-your-email"></a>电子邮件保护的入门视频
 
@@ -53,13 +55,13 @@ ms.locfileid: "23002911"
 - 配置反恶意软件策略
     > [!VIDEO https://www.microsoft.com/videoplayer/embed/12517702-ab48-4df8-a7ff-8eb02aa31724?autoplay=false]
   
-    有关详细信息，请参阅[配置反恶意软件 policies](configure-anti-malware-policies.md)主题。 
+    有关更多详细信息, 请参阅[配置反恶意软件策略](configure-anti-malware-policies.md)主题。 
     
 若要根据公司策略或法规基于设置的特定条件筛选并路由邮件，您需要观看有关如何创建传输规则的视频。
   
 - 在 EOP 中配置 Exchange 传输规则
     > [!VIDEO https://www.microsoft.com/videoplayer/embed/7cdcd2cb-9382-4065-98e1-81257b32a189?autoplay=false]
   
-    有关详细信息，请参阅[邮件流规则 （传输规则） 在 Exchange Online Protection](eop/mail-flow-rules-transport-rules-0.md)主题 （如果您使用 EOP 独立版，或如果您使用 Exchange Online，请参阅[Transport rules](http://technet.microsoft.com/library/743bd525-0ca2-426d-b76c-b4a052bc8886.aspx)主题。 
+    有关更多详细信息, 请参阅[Exchange online Protection 主题中的邮件流规则 (传输规则) (](eop/mail-flow-rules-transport-rules-0.md)如果您使用 EOP 独立版), 或者查看[传输规则](http://technet.microsoft.com/library/743bd525-0ca2-426d-b76c-b4a052bc8886.aspx)主题 (如果使用 Exchange online)。 
     
 

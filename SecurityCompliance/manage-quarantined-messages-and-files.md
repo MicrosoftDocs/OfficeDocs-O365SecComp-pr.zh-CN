@@ -1,7 +1,7 @@
 ---
 title: 以 Office 365 中的管理员身份管理隔离的邮件和文件
-ms.author: krowley
-author: kccross
+ms.author: tracyp
+author: MSFTTracyp
 manager: laurawi
 ms.date: 09/05/2018
 ms.audience: Admin
@@ -13,13 +13,15 @@ search.appverid:
 - MED150
 - MET150
 ms.assetid: 065cc2cf-2f3a-47fd-a434-2a20b8f51d0c
+ms.collection:
+- M365-security-compliance
 description: '作为管理员, 您可以在 Office 365 中查看、释放和报告误报的已隔离邮件。您可以设置策略, 以便 Office 365 筛选邮件并将其发送到隔离区, 原因如下: 因为它们被标识为垃圾邮件、批量、网络钓鱼和恶意软件, 或者它们与邮件流规则匹配。 '
-ms.openlocfilehash: d62aded09f3560de6ba4485757c1bb5ce3f8cb6d
-ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
+ms.openlocfilehash: 797a2e54d6f0a0b1f0d06bd287dd636988f078b5
+ms.sourcegitcommit: 686bc9a8f7a7b6810a096f07d36751d10d334409
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30219192"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "30276262"
 ---
 # <a name="manage-quarantined-messages-and-files-as-an-administrator-in-office-365"></a>以 Office 365 中的管理员身份管理隔离的邮件和文件
 

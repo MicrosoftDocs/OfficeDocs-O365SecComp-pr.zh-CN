@@ -7,18 +7,19 @@ ms.date: 12/20/2017
 ms.audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
+ms.collection: M365-security-compliance
 ms.custom: TN2DMC
 localization_priority: Normal
 search.appverid:
 - MET150
 ms.assetid: 8c36bb03-e716-4fdd-9958-4aa7a2a1db42
 description: 管理员可以使用 Search-Mailbox cmdlet 来搜索用户邮箱，然后从邮箱中删除邮件。
-ms.openlocfilehash: c5f727d7772e23cc8723eee6a45e51e3ac074648
-ms.sourcegitcommit: e9dca2d6a7838f98bb7eca127fdda2372cda402c
+ms.openlocfilehash: 718a23f649843420ccfd924be72752a99278da4c
+ms.sourcegitcommit: baf23be44f1ed5abbf84f140b5ffa64fce605478
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/21/2018
-ms.locfileid: "23002820"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "30297125"
 ---
 # <a name="search-for-and-delete-messages---admin-help"></a>搜索和删除邮件 - 管理员帮助
   
@@ -36,19 +37,19 @@ ms.locfileid: "23002820"
     
 - 您需要分配有以下两个管理角色才能在用户邮箱中搜索和删除邮件：
     
-  - **邮箱搜索**-此角色允许您跨组织中的多个邮箱搜索的邮件。默认情况下，管理员不分配此角色。若要指定自己此角色，以便您可以搜索邮箱，请将自己添加为发现管理角色组的成员。请参阅[将用户添加到发现管理角色组](http://technet.microsoft.com/library/729e09d8-614b-431f-ae04-ae41fb4c628e.aspx)。
+  - **邮箱搜索**-此角色允许您在组织中的多个邮箱中搜索邮件。默认情况下, 不会向管理员分配此角色。若要为自己分配此角色, 以便您可以搜索邮箱, 请将自己添加为 "发现管理" 角色组的成员。请参阅[将用户添加到发现管理角色组](http://technet.microsoft.com/library/729e09d8-614b-431f-ae04-ae41fb4c628e.aspx)。
     
-  - **邮箱导入导出**-此角色可以从用户的邮箱中删除邮件。默认情况下，此角色不分配给任何角色组。若要从用户的邮箱中删除邮件，您可以向组织管理角色组添加邮箱导入导出角色。有关详细信息，请参阅[管理角色组](http://technet.microsoft.com/library/ab9b7a3b-bf67-4ba1-bde5-8e6ac174b82c.aspx)中的"将角色添加到角色组"部分。 
+  - **邮箱导入导出**-此角色允许您从用户的邮箱中删除邮件。默认情况下, 此角色不会分配给任何角色组。若要从用户的邮箱中删除邮件, 您可以将邮箱导入导出角色添加到 "组织管理" 角色组。有关详细信息, 请参阅[管理角色组](http://technet.microsoft.com/library/ab9b7a3b-bf67-4ba1-bde5-8e6ac174b82c.aspx)中的 "向角色组添加角色" 部分。 
     
 - 如果要从中删除邮件的邮箱启用了单个项目恢复，则必须首先禁用该功能。有关详细信息，请参阅[启用或禁用邮箱的单个项目恢复](http://technet.microsoft.com/library/2e7f1bcd-8395-45ad-86ce-22868bd46af0.aspx)。
     
-- 如果您要从中删除邮件的邮箱置于保持状态，建议您先咨询您的记录管理或法律部门之前保留中移除并删除邮箱内容。您获得批准后，请按照列出[Clean Up Recoverable Items Folder](http://technet.microsoft.com/library/82c310f8-de2f-46f2-8e1a-edb6055d6e69.aspx)主题中的步骤。
+- 如果要从中删除邮件的邮箱置于保留状态, 我们建议您在删除保留和删除邮箱内容之前, 先与您的记录管理或法律部门进行确认。获得批准后, 请按照主题[清除 "可恢复的项目" 文件夹](http://technet.microsoft.com/library/82c310f8-de2f-46f2-8e1a-edb6055d6e69.aspx)中列出的步骤操作。
     
 - 使用 **Search-Mailbox** cmdlet，最多可搜索到 10,000 个邮箱。如果你是 Exchange Online 组织，并拥有超过 10,000 个邮箱，则可以使用合规性搜索功能（或相应的 **New-ComplianceSearch** cmdlet）搜索任意数量的邮箱。然后，你可以使用 **New-ComplianceSearchAction** cmdlet 删除由合规性搜索返回的邮件。有关详细信息，请参阅 [从你的 Office 365 组织搜索和删除电子邮件](https://go.microsoft.com/fwlink/p/?LinkId=786856)。
     
 - 如果添加一个搜索查询（通过使用  *SearchQuery*  参数）， **Search-Mailbox** cmdlet 最多返回搜索结果中的 10,000 个项目。因此，如果添加一个搜索查询，则可能需要多次运行 **Search-Mailbox** 命令才能将 10,000 多个项目删除。 
     
-- 运行**Search-mailbox** cmdlet 时，还将搜索用户的存档邮箱。同样，使用**Search-mailbox** cmdlet 与_DeleteContent_开关时，将删除主存档邮箱中的项目。要防止这样，您可以包括*DoNotIncludeArchive*开关。此外，我们建议不用于_DeleteContent_开关删除邮件在 Exchange Online 邮箱的自动扩展启用了存档因为可能出现意外的数据丢失。 
+- 当您运行**搜索邮箱**cmdlet 时, 也会搜索用户的存档邮箱。同样, 当您将**搜索邮箱**cmdlet 与_DeleteContent_开关一起使用时, 将删除主存档邮箱中的项目。若要防止出现这种情况, 可以包含*DoNotIncludeArchive*开关。此外, 建议您不要使用_DeleteContent_开关删除启用了自动扩展存档的 Exchange Online 邮箱中的邮件, 因为可能会发生意外的数据丢失。 
     
 ## <a name="search-messages-and-log-the-search-results"></a>搜索邮件并记录搜索结果
 

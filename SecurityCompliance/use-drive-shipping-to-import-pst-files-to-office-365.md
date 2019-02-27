@@ -8,18 +8,20 @@ ms.audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
-ms.collection: Strat_O365_IP
+ms.collection:
+- Strat_O365_IP
+- M365-security-compliance
 search.appverid:
 - MOE150
 - MET150
 ms.assetid: 40829b57-793c-4d41-b171-e9270129173d
 description: '对于管理员: 了解如何通过将 pst 文件复制到硬盘并将其发送到 Microsoft, 来批量将组织的 pst 文件导入到 Office 365 邮箱。 '
-ms.openlocfilehash: 44ca6e58d9273c73a807ba0b186c47721949c6f6
-ms.sourcegitcommit: a80bd8626720fabdf592b84e4424cd3a83d08280
+ms.openlocfilehash: 0e902df03628711d8ccdaaf1fd42153eba1e1623
+ms.sourcegitcommit: baf23be44f1ed5abbf84f140b5ffa64fce605478
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30223681"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "30296815"
 ---
 # <a name="use-drive-shipping-to-import-your-organization-pst-files-to-office-365"></a>使用驱动器传送将组织的 PST 文件导入到 Office 365
 
