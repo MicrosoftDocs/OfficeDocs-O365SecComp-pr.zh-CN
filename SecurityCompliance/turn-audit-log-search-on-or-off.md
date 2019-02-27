@@ -8,89 +8,91 @@ ms.audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
-ms.collection: Strat_O365_IP
+ms.collection:
+- Strat_O365_IP
+- M365-security-compliance
 search.appverid:
 - MOE150
 - MED150
 - MET150
 ms.assetid: e893b19a-660c-41f2-9074-d3631c95a014
 description: 可以在 "Office 365 安全&amp;合规中心" 中打开 "审核日志搜索" 功能。如果你更改了想法, 你可以随时关闭。当 "审核日志搜索" 关闭时, 管理员无法在组织中搜索用户和管理员活动的 Office 365 审核日志。
-ms.openlocfilehash: f0532ae7ba205001d89164ac3f00822d14aa81cd
-ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
+ms.openlocfilehash: 17b98cce26054d073006fa78c55fe418b5f327d8
+ms.sourcegitcommit: baf23be44f1ed5abbf84f140b5ffa64fce605478
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30218002"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "30295455"
 ---
-# <a name="turn-office-365-audit-log-search-on-or-off"></a><span data-ttu-id="4e0c4-105">启用或禁用 Office 365 审核日志搜索</span><span class="sxs-lookup"><span data-stu-id="4e0c4-105">Turn Office 365 audit log search on or off</span></span>
+# <a name="turn-office-365-audit-log-search-on-or-off"></a><span data-ttu-id="b2b10-105">启用或禁用 Office 365 审核日志搜索</span><span class="sxs-lookup"><span data-stu-id="b2b10-105">Turn Office 365 audit log search on or off</span></span>
 
-<span data-ttu-id="4e0c4-p102">您 (或另一个管理员) 必须先启用审核日志记录, 然后才能开始搜索 Office 365 审核日志。如果启用了 Office 365 安全&amp;合规中心中的审核日志搜索, 则组织中的用户和管理员活动将记录在审核日志中, 并保留90天。但是, 您的组织可能不想记录和保留审核日志数据。或者, 您可能使用第三方安全信息和事件管理 (SIEM) 应用程序访问您的审核数据。在这些情况下, 全局管理员可以在 Office 365 中关闭审核日志搜索。</span><span class="sxs-lookup"><span data-stu-id="4e0c4-p102">You (or another admin) must turn on audit logging before you can start searching the Office 365 audit log. When audit log search in the Office 365 Security &amp; Compliance Center is turned on, user and admin activity from your organization is recorded in the audit log and retained for 90 days. However, your organization might not want to record and retain audit log data. Or you might be using a third-party security information and event management (SIEM) application to access your auditing data. In those cases, a global admin can turn off audit log search in Office 365.</span></span>
+<span data-ttu-id="b2b10-p102">您 (或另一个管理员) 必须先启用审核日志记录, 然后才能开始搜索 Office 365 审核日志。如果启用了 Office 365 安全&amp;合规中心中的审核日志搜索, 则组织中的用户和管理员活动将记录在审核日志中, 并保留90天。但是, 您的组织可能不想记录和保留审核日志数据。或者, 您可能使用第三方安全信息和事件管理 (SIEM) 应用程序访问您的审核数据。在这些情况下, 全局管理员可以在 Office 365 中关闭审核日志搜索。</span><span class="sxs-lookup"><span data-stu-id="b2b10-p102">You (or another admin) must turn on audit logging before you can start searching the Office 365 audit log. When audit log search in the Office 365 Security &amp; Compliance Center is turned on, user and admin activity from your organization is recorded in the audit log and retained for 90 days. However, your organization might not want to record and retain audit log data. Or you might be using a third-party security information and event management (SIEM) application to access your auditing data. In those cases, a global admin can turn off audit log search in Office 365.</span></span>
   
-## <a name="before-you-begin"></a><span data-ttu-id="4e0c4-111">准备工作</span><span class="sxs-lookup"><span data-stu-id="4e0c4-111">Before you begin</span></span>
+## <a name="before-you-begin"></a><span data-ttu-id="b2b10-111">准备工作</span><span class="sxs-lookup"><span data-stu-id="b2b10-111">Before you begin</span></span>
 
-- <span data-ttu-id="4e0c4-p103">您必须在 Exchange Online 中向您分配 "审核日志" 角色, 才能在 Office 365 组织中打开或关闭审核日志搜索。默认情况下, 此角色在 Exchange 管理中心中的 "**权限**" 页上分配给合规性管理和组织管理角色组。Office 365 中的全局管理员是 Exchange Online 中的 "组织管理" 角色组的成员。</span><span class="sxs-lookup"><span data-stu-id="4e0c4-p103">You have to be assigned the Audit Logs role in Exchange Online to turn audit log search on or off in your Office 365 organization. By default, this role is assigned to the Compliance Management and Organization Management role groups on the **Permissions** page in the Exchange admin center. Global admins in Office 365 are members of the Organization Management role group in Exchange Online.</span></span> 
+- <span data-ttu-id="b2b10-p103">您必须在 Exchange Online 中向您分配 "审核日志" 角色, 才能在 Office 365 组织中打开或关闭审核日志搜索。默认情况下, 此角色在 Exchange 管理中心中的 "**权限**" 页上分配给合规性管理和组织管理角色组。Office 365 中的全局管理员是 Exchange Online 中的 "组织管理" 角色组的成员。</span><span class="sxs-lookup"><span data-stu-id="b2b10-p103">You have to be assigned the Audit Logs role in Exchange Online to turn audit log search on or off in your Office 365 organization. By default, this role is assigned to the Compliance Management and Organization Management role groups on the **Permissions** page in the Exchange admin center. Global admins in Office 365 are members of the Organization Management role group in Exchange Online.</span></span> 
     
     > [!IMPORTANT]
-    > <span data-ttu-id="4e0c4-p104">必须在 Exchange Online 中向用户分配权限, 才能打开或关闭审核日志搜索。如果在安全&amp;合规中心中向用户分配 "**权限**" 页上的 "审核日志" 角色, 他们将无法打开或关闭审核日志搜索。这是因为基础 cmdlet 是 Exchange Online cmdlet。</span><span class="sxs-lookup"><span data-stu-id="4e0c4-p104">Users have to be assigned permissions in Exchange Online to turn audit log search on or off. If you assign users the Audit Logs role on the **Permissions** page in the Security &amp; Compliance Center, they won't be able to turn audit log search on or off. This is because the underlying cmdlet is an Exchange Online cmdlet.</span></span> 
+    > <span data-ttu-id="b2b10-p104">必须在 Exchange Online 中向用户分配权限, 才能打开或关闭审核日志搜索。如果在安全&amp;合规中心中向用户分配 "**权限**" 页上的 "审核日志" 角色, 他们将无法打开或关闭审核日志搜索。这是因为基础 cmdlet 是 Exchange Online cmdlet。</span><span class="sxs-lookup"><span data-stu-id="b2b10-p104">Users have to be assigned permissions in Exchange Online to turn audit log search on or off. If you assign users the Audit Logs role on the **Permissions** page in the Security &amp; Compliance Center, they won't be able to turn audit log search on or off. This is because the underlying cmdlet is an Exchange Online cmdlet.</span></span> 
   
-- <span data-ttu-id="4e0c4-p105">如果关闭了 office 365 中的审核日志搜索, 您仍可以使用 Office 365 管理活动 API 访问您的组织的审核数据。按照本文中的步骤关闭审核日志搜索意味着, 在使用安全&amp;合规中心搜索审核日志或在 Exchange Online 中运行**UnifiedAuditLog** cmdlet 时, 不会返回任何结果。PowerShell.但是, 如果你已通过 Office 365 管理活动 API 授权任何应用程序访问组织的审核数据, 则这些应用程序将继续工作。</span><span class="sxs-lookup"><span data-stu-id="4e0c4-p105">If you turn off audit log search in Office 365, you can still use the Office 365 Management Activity API to access auditing data for your organization. Turning off audit log search by following the steps in this article means that no results will be returned when you search the audit log using the Security &amp; Compliance Center or when you run the **Search-UnifiedAuditLog** cmdlet in Exchange Online PowerShell. However, if you've authorized any application to access your organization's auditing data via the Office 365 Management Activity API , those applications will continue to work.</span></span> 
+- <span data-ttu-id="b2b10-p105">如果关闭了 office 365 中的审核日志搜索, 您仍可以使用 Office 365 管理活动 API 访问您的组织的审核数据。按照本文中的步骤关闭审核日志搜索意味着, 在使用安全&amp;合规中心搜索审核日志或在 Exchange Online 中运行**UnifiedAuditLog** cmdlet 时, 不会返回任何结果。PowerShell.但是, 如果你已通过 Office 365 管理活动 API 授权任何应用程序访问组织的审核数据, 则这些应用程序将继续工作。</span><span class="sxs-lookup"><span data-stu-id="b2b10-p105">If you turn off audit log search in Office 365, you can still use the Office 365 Management Activity API to access auditing data for your organization. Turning off audit log search by following the steps in this article means that no results will be returned when you search the audit log using the Security &amp; Compliance Center or when you run the **Search-UnifiedAuditLog** cmdlet in Exchange Online PowerShell. However, if you've authorized any application to access your organization's auditing data via the Office 365 Management Activity API , those applications will continue to work.</span></span> 
     
-- <span data-ttu-id="4e0c4-121">有关搜索 office 365 审核日志的分步说明, 请参阅[在 office 365 安全&amp;合规中心中搜索审核日志](search-the-audit-log-in-security-and-compliance.md)。</span><span class="sxs-lookup"><span data-stu-id="4e0c4-121">For step-by-step instructions on searching the Office 365 audit log, see [Search the audit log in the Office 365 Security &amp; Compliance Center](search-the-audit-log-in-security-and-compliance.md).</span></span>
+- <span data-ttu-id="b2b10-121">有关搜索 office 365 审核日志的分步说明, 请参阅[在 office 365 安全&amp;合规中心中搜索审核日志](search-the-audit-log-in-security-and-compliance.md)。</span><span class="sxs-lookup"><span data-stu-id="b2b10-121">For step-by-step instructions on searching the Office 365 audit log, see [Search the audit log in the Office 365 Security &amp; Compliance Center](search-the-audit-log-in-security-and-compliance.md).</span></span>
     
-## <a name="turn-on-audit-log-search"></a><span data-ttu-id="4e0c4-122">启用审核日志搜索</span><span class="sxs-lookup"><span data-stu-id="4e0c4-122">Turn on audit log search</span></span>
+## <a name="turn-on-audit-log-search"></a><span data-ttu-id="b2b10-122">启用审核日志搜索</span><span class="sxs-lookup"><span data-stu-id="b2b10-122">Turn on audit log search</span></span>
 
-<span data-ttu-id="4e0c4-p106">您可以使用安全&amp;合规性中心或 PowerShell 在 Office 365 中启用审核日志搜索。在您打开审核日志搜索后, 可能需要几个小时才能在搜索审核日志时返回结果。您必须在 Exchange Online 中向您分配 "审核日志" 角色, 才能启用审核日志搜索。</span><span class="sxs-lookup"><span data-stu-id="4e0c4-p106">You can use the Security &amp; Compliance Center or PowerShell to turn on audit log search in Office 365. It might take several hours after you turn on audit log search before you can return results when you search the audit log. You have to be assigned the Audit Logs role in Exchange Online to turn on audit log search.</span></span>
+<span data-ttu-id="b2b10-p106">您可以使用安全&amp;合规性中心或 PowerShell 在 Office 365 中启用审核日志搜索。在您打开审核日志搜索后, 可能需要几个小时才能在搜索审核日志时返回结果。您必须在 Exchange Online 中向您分配 "审核日志" 角色, 才能启用审核日志搜索。</span><span class="sxs-lookup"><span data-stu-id="b2b10-p106">You can use the Security &amp; Compliance Center or PowerShell to turn on audit log search in Office 365. It might take several hours after you turn on audit log search before you can return results when you search the audit log. You have to be assigned the Audit Logs role in Exchange Online to turn on audit log search.</span></span>
   
-### <a name="use-the-security-amp-compliance-center-to-turn-on-audit-log-search"></a><span data-ttu-id="4e0c4-126">使用安全&amp;合规性中心启用审核日志搜索</span><span class="sxs-lookup"><span data-stu-id="4e0c4-126">Use the Security &amp; Compliance Center to turn on audit log search</span></span>
+### <a name="use-the-security-amp-compliance-center-to-turn-on-audit-log-search"></a><span data-ttu-id="b2b10-126">使用安全&amp;合规性中心启用审核日志搜索</span><span class="sxs-lookup"><span data-stu-id="b2b10-126">Use the Security &amp; Compliance Center to turn on audit log search</span></span>
 
-1. <span data-ttu-id="4e0c4-127">在 "安全&amp;合规性中心" 中, 转到 "**搜索&amp;调查** \> **审核日志搜索**"。</span><span class="sxs-lookup"><span data-stu-id="4e0c4-127">In the Security &amp; Compliance Center, go to **Search &amp; investigation** \> **Audit log search**.</span></span>
+1. <span data-ttu-id="b2b10-127">在 "安全&amp;合规性中心" 中, 转到 "**搜索&amp;调查** \> **审核日志搜索**"。</span><span class="sxs-lookup"><span data-stu-id="b2b10-127">In the Security &amp; Compliance Center, go to **Search &amp; investigation** \> **Audit log search**.</span></span>
     
-2. <span data-ttu-id="4e0c4-128">单击 "**开始记录用户和管理员活动**"。</span><span class="sxs-lookup"><span data-stu-id="4e0c4-128">Click **Start recording user and admin activities**.</span></span>
+2. <span data-ttu-id="b2b10-128">单击 "**开始记录用户和管理员活动**"。</span><span class="sxs-lookup"><span data-stu-id="b2b10-128">Click **Start recording user and admin activities**.</span></span>
     
     ![单击“开始记录用户和管理员活动”启用审核](media/39a9d35f-88d0-4bbe-a962-0be2f838e2bf.png)
   
-    <span data-ttu-id="4e0c4-130">将显示一个对话框, 指出组织中的用户和管理员活动将记录到 Office 365 审核日志中, 并可在报告中查看。</span><span class="sxs-lookup"><span data-stu-id="4e0c4-130">A dialog box is displayed saying that user and admin activity in your organization will be recorded to the Office 365 audit log and available to view in a report.</span></span> 
+    <span data-ttu-id="b2b10-130">将显示一个对话框, 指出组织中的用户和管理员活动将记录到 Office 365 审核日志中, 并可在报告中查看。</span><span class="sxs-lookup"><span data-stu-id="b2b10-130">A dialog box is displayed saying that user and admin activity in your organization will be recorded to the Office 365 audit log and available to view in a report.</span></span> 
     
-3. <span data-ttu-id="4e0c4-131">单击" **开启** "。</span><span class="sxs-lookup"><span data-stu-id="4e0c4-131">Click **Turn on**.</span></span>
+3. <span data-ttu-id="b2b10-131">单击" **开启** "。</span><span class="sxs-lookup"><span data-stu-id="b2b10-131">Click **Turn on**.</span></span>
     
-    <span data-ttu-id="4e0c4-132">将显示一条消息, 指出正在准备审核日志, 并且您可以在准备完成后的几小时内运行搜索。</span><span class="sxs-lookup"><span data-stu-id="4e0c4-132">A message is displayed that says the audit log is being prepared and that you can run a search in a couple of hours after the preparation is complete.</span></span>
+    <span data-ttu-id="b2b10-132">将显示一条消息, 指出正在准备审核日志, 并且您可以在准备完成后的几小时内运行搜索。</span><span class="sxs-lookup"><span data-stu-id="b2b10-132">A message is displayed that says the audit log is being prepared and that you can run a search in a couple of hours after the preparation is complete.</span></span>
     
-### <a name="use-powershell-to-turn-on-audit-log-search"></a><span data-ttu-id="4e0c4-133">使用 PowerShell 打开审核日志搜索</span><span class="sxs-lookup"><span data-stu-id="4e0c4-133">Use PowerShell to turn on audit log search</span></span>
+### <a name="use-powershell-to-turn-on-audit-log-search"></a><span data-ttu-id="b2b10-133">使用 PowerShell 打开审核日志搜索</span><span class="sxs-lookup"><span data-stu-id="b2b10-133">Use PowerShell to turn on audit log search</span></span>
 
-1. [<span data-ttu-id="4e0c4-134">使用远程 PowerShell 连接到 Exchange Online</span><span class="sxs-lookup"><span data-stu-id="4e0c4-134">Connect to Exchange Online PowerShell</span></span>](https://go.microsoft.com/fwlink/p/?LinkID=396554)
+1. [<span data-ttu-id="b2b10-134">使用远程 PowerShell 连接到 Exchange Online</span><span class="sxs-lookup"><span data-stu-id="b2b10-134">Connect to Exchange Online PowerShell</span></span>](https://go.microsoft.com/fwlink/p/?LinkID=396554)
     
-2. <span data-ttu-id="4e0c4-135">运行以下 PowerShell 命令以在 Office 365 中启用审核日志搜索。</span><span class="sxs-lookup"><span data-stu-id="4e0c4-135">Run the following PowerShell command to turn on audit log search in Office 365.</span></span>
+2. <span data-ttu-id="b2b10-135">运行以下 PowerShell 命令以在 Office 365 中启用审核日志搜索。</span><span class="sxs-lookup"><span data-stu-id="b2b10-135">Run the following PowerShell command to turn on audit log search in Office 365.</span></span>
     
     ```
     Set-AdminAuditLogConfig -UnifiedAuditLogIngestionEnabled $true
     ```
 
-    <span data-ttu-id="4e0c4-136">将显示一条消息, 指出可能需要长达60分钟的时间才能使更改生效。</span><span class="sxs-lookup"><span data-stu-id="4e0c4-136">A message is displayed saying that it might take up to 60 minutes for the change to take effect.</span></span>
+    <span data-ttu-id="b2b10-136">将显示一条消息, 指出可能需要长达60分钟的时间才能使更改生效。</span><span class="sxs-lookup"><span data-stu-id="b2b10-136">A message is displayed saying that it might take up to 60 minutes for the change to take effect.</span></span>
   
-## <a name="turn-off-audit-log-search"></a><span data-ttu-id="4e0c4-137">关闭审核日志搜索</span><span class="sxs-lookup"><span data-stu-id="4e0c4-137">Turn off audit log search</span></span>
+## <a name="turn-off-audit-log-search"></a><span data-ttu-id="b2b10-137">关闭审核日志搜索</span><span class="sxs-lookup"><span data-stu-id="b2b10-137">Turn off audit log search</span></span>
 
-<span data-ttu-id="4e0c4-p107">您必须使用连接到 Exchange Online 组织的远程 PowerShell, 才能关闭审核日志搜索。与启用审核日志搜索类似, 您必须在 Exchange Online 中将 "审核日志" 角色分配给 "关闭审核日志搜索"。</span><span class="sxs-lookup"><span data-stu-id="4e0c4-p107">You have to use remote PowerShell connected to your Exchange Online organization to turn off audit log search. Similar to turning on audit log search, you have to be assigned the Audit Logs role in Exchange Online to turn off audit log search.</span></span>
+<span data-ttu-id="b2b10-p107">您必须使用连接到 Exchange Online 组织的远程 PowerShell, 才能关闭审核日志搜索。与启用审核日志搜索类似, 您必须在 Exchange Online 中将 "审核日志" 角色分配给 "关闭审核日志搜索"。</span><span class="sxs-lookup"><span data-stu-id="b2b10-p107">You have to use remote PowerShell connected to your Exchange Online organization to turn off audit log search. Similar to turning on audit log search, you have to be assigned the Audit Logs role in Exchange Online to turn off audit log search.</span></span>
   
-1. [<span data-ttu-id="4e0c4-140">使用远程 PowerShell 连接到 Exchange Online</span><span class="sxs-lookup"><span data-stu-id="4e0c4-140">Connect to Exchange Online PowerShell</span></span>](https://go.microsoft.com/fwlink/p/?LinkID=396554)
+1. [<span data-ttu-id="b2b10-140">使用远程 PowerShell 连接到 Exchange Online</span><span class="sxs-lookup"><span data-stu-id="b2b10-140">Connect to Exchange Online PowerShell</span></span>](https://go.microsoft.com/fwlink/p/?LinkID=396554)
     
-2. <span data-ttu-id="4e0c4-141">运行以下 PowerShell 命令以关闭 Office 365 中的审核日志搜索。</span><span class="sxs-lookup"><span data-stu-id="4e0c4-141">Run the following PowerShell command to turn off audit log search in Office 365.</span></span>
+2. <span data-ttu-id="b2b10-141">运行以下 PowerShell 命令以关闭 Office 365 中的审核日志搜索。</span><span class="sxs-lookup"><span data-stu-id="b2b10-141">Run the following PowerShell command to turn off audit log search in Office 365.</span></span>
     
     ```
     Set-AdminAuditLogConfig -UnifiedAuditLogIngestionEnabled $false
     ```
 
-3. <span data-ttu-id="4e0c4-p108">一段时间后, 验证审核日志搜索是否已关闭 (已禁用)。有两种方法可以实现此目的:</span><span class="sxs-lookup"><span data-stu-id="4e0c4-p108">After a while, verify that audit log search is turned off (disabled). There are two ways to do this:</span></span>
+3. <span data-ttu-id="b2b10-p108">一段时间后, 验证审核日志搜索是否已关闭 (已禁用)。有两种方法可以实现此目的:</span><span class="sxs-lookup"><span data-stu-id="b2b10-p108">After a while, verify that audit log search is turned off (disabled). There are two ways to do this:</span></span>
     
-    - <span data-ttu-id="4e0c4-144">在 PowerShell 中, 运行以下命令:</span><span class="sxs-lookup"><span data-stu-id="4e0c4-144">In PowerShell, run the following command:</span></span>
+    - <span data-ttu-id="b2b10-144">在 PowerShell 中, 运行以下命令:</span><span class="sxs-lookup"><span data-stu-id="b2b10-144">In PowerShell, run the following command:</span></span>
 
         ```
         Get-AdminAuditLogConfig | FL UnifiedAuditLogIngestionEnabled
         ```
 
-        <span data-ttu-id="4e0c4-145">UnifiedAuditLogIngestionEnabled 属性的`False`值指示__ 已关闭审核日志搜索。</span><span class="sxs-lookup"><span data-stu-id="4e0c4-145">The value of  `False` for the  _UnifiedAuditLogIngestionEnabled_ property indicates that audit log search is turned off.</span></span> 
+        <span data-ttu-id="b2b10-145">UnifiedAuditLogIngestionEnabled 属性的`False`值指示__ 已关闭审核日志搜索。</span><span class="sxs-lookup"><span data-stu-id="b2b10-145">The value of  `False` for the  _UnifiedAuditLogIngestionEnabled_ property indicates that audit log search is turned off.</span></span> 
     
-    - <span data-ttu-id="4e0c4-146">在 "安全&amp;合规性中心" 中, 转到 "**搜索&amp;调查** \> **审核日志搜索**", 然后单击 "**搜索**"。</span><span class="sxs-lookup"><span data-stu-id="4e0c4-146">In the Security &amp; Compliance Center, go to **Search &amp; investigation** \> **Audit log search**, and then click **Search**.</span></span>
+    - <span data-ttu-id="b2b10-146">在 "安全&amp;合规性中心" 中, 转到 "**搜索&amp;调查** \> **审核日志搜索**", 然后单击 "**搜索**"。</span><span class="sxs-lookup"><span data-stu-id="b2b10-146">In the Security &amp; Compliance Center, go to **Search &amp; investigation** \> **Audit log search**, and then click **Search**.</span></span>
     
-      <span data-ttu-id="4e0c4-147">将显示一条消息, 指出未启用审核日志搜索。</span><span class="sxs-lookup"><span data-stu-id="4e0c4-147">A message is displayed saying that audit log search isn't turned on.</span></span> 
+      <span data-ttu-id="b2b10-147">将显示一条消息, 指出未启用审核日志搜索。</span><span class="sxs-lookup"><span data-stu-id="b2b10-147">A message is displayed saying that audit log search isn't turned on.</span></span> 
     
       ![如果启用了审核功能, 则会 dispayed 邮件](media/dca53da6-1cbe-4fa3-9860-f0d674de9538.png)

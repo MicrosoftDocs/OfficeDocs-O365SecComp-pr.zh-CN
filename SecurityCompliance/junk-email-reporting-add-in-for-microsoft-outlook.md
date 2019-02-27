@@ -1,7 +1,7 @@
 ---
 title: Microsoft Outlook 垃圾电子邮件举报外接程序
-ms.author: krowley
-author: kccross
+ms.author: tracyp
+author: MSFTTracyP
 manager: laurawi
 ms.date: 1/14/2016
 ms.audience: ITPro
@@ -10,32 +10,34 @@ ms.service: O365-seccomp
 ms.custom: TN2DMC
 localization_priority: Normal
 ms.assetid: 4650fec1-4ee3-4659-abbc-bf091718cb26
+ms.collection:
+- M365-security-compliance
 description: 通过 Microsoft Outlook 的垃圾邮件报告外接程序，Exchange Online 和 Exchange Online Protection 用户可轻松将垃圾邮件报告给 Microsoft 进行分析，以帮助减少服务以后筛选的垃圾邮件数量和影响。该报告外接程序与 Microsoft Outlook 2013、Outlook 2010 或适用于 Windows 7、Windows 8 或 Windows 10 的 Outlook 2007 兼容，具有下列优点：
-ms.openlocfilehash: ec99ecc16137741b2f0de3043601105825417d37
-ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
+ms.openlocfilehash: 2434edbf51523f80a8bcf3cb5c7ace5ff3369f4d
+ms.sourcegitcommit: 686bc9a8f7a7b6810a096f07d36751d10d334409
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30214582"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "30276079"
 ---
-# <a name="junk-email-reporting-add-in-for-microsoft-outlook"></a><span data-ttu-id="0750a-104">Microsoft Outlook 垃圾电子邮件举报外接程序</span><span class="sxs-lookup"><span data-stu-id="0750a-104">Junk email reporting add-in for Microsoft Outlook</span></span>
+# <a name="junk-email-reporting-add-in-for-microsoft-outlook"></a><span data-ttu-id="e7bcc-104">Microsoft Outlook 垃圾电子邮件举报外接程序</span><span class="sxs-lookup"><span data-stu-id="e7bcc-104">Junk email reporting add-in for Microsoft Outlook</span></span>
 
-<span data-ttu-id="0750a-p102">通过 Microsoft Outlook 的垃圾邮件报告外接程序，Exchange Online 和 Exchange Online Protection 用户可轻松将垃圾邮件报告给 Microsoft 进行分析，以帮助减少服务以后筛选的垃圾邮件数量和影响。该报告外接程序与 Microsoft Outlook 2013、Outlook 2010 或适用于 Windows 7、Windows 8 或 Windows 10 的 Outlook 2007 兼容，具有下列优点：</span><span class="sxs-lookup"><span data-stu-id="0750a-p102">The Junk Email Reporting Add-in for Microsoft Outlook lets Exchange Online and Exchange Online Protection users easily report junk (spam) email to Microsoft for analysis to help reduce the number and impact of future junk email messages filtered by the service. Compatible with Microsoft Outlook 2013, Outlook 2010, or Outlook 2007 with Windows 7, Windows 8, or Windows 10, the reporting add-in offers the following benefits:</span></span>
+<span data-ttu-id="e7bcc-p102">通过 Microsoft Outlook 的垃圾邮件报告外接程序，Exchange Online 和 Exchange Online Protection 用户可轻松将垃圾邮件报告给 Microsoft 进行分析，以帮助减少服务以后筛选的垃圾邮件数量和影响。该报告外接程序与 Microsoft Outlook 2013、Outlook 2010 或适用于 Windows 7、Windows 8 或 Windows 10 的 Outlook 2007 兼容，具有下列优点：</span><span class="sxs-lookup"><span data-stu-id="e7bcc-p102">The Junk Email Reporting Add-in for Microsoft Outlook lets Exchange Online and Exchange Online Protection users easily report junk (spam) email to Microsoft for analysis to help reduce the number and impact of future junk email messages filtered by the service. Compatible with Microsoft Outlook 2013, Outlook 2010, or Outlook 2007 with Windows 7, Windows 8, or Windows 10, the reporting add-in offers the following benefits:</span></span>
   
-- <span data-ttu-id="0750a-107">一键式报告，让用户能够选择垃圾邮件并将其提交到 Microsoft 进行分析。</span><span class="sxs-lookup"><span data-stu-id="0750a-107">One-click reporting that enables users to select junk email and submit it to Microsoft for analysis.</span></span>
+- <span data-ttu-id="e7bcc-107">一键式报告，让用户能够选择垃圾邮件并将其提交到 Microsoft 进行分析。</span><span class="sxs-lookup"><span data-stu-id="e7bcc-107">One-click reporting that enables users to select junk email and submit it to Microsoft for analysis.</span></span>
     
-- <span data-ttu-id="0750a-108">一键选择并提交多封电子邮件的功能。</span><span class="sxs-lookup"><span data-stu-id="0750a-108">The ability to select and then submit multiple email messages with a single click.</span></span>
+- <span data-ttu-id="e7bcc-108">一键选择并提交多封电子邮件的功能。</span><span class="sxs-lookup"><span data-stu-id="e7bcc-108">The ability to select and then submit multiple email messages with a single click.</span></span>
     
-- <span data-ttu-id="0750a-109">选定的电子邮件被移动到 Microsoft Outlook 垃圾邮件文件夹。</span><span class="sxs-lookup"><span data-stu-id="0750a-109">Selected email messages are moved to the Microsoft Outlook Junk Email folder.</span></span>
+- <span data-ttu-id="e7bcc-109">选定的电子邮件被移动到 Microsoft Outlook 垃圾邮件文件夹。</span><span class="sxs-lookup"><span data-stu-id="e7bcc-109">Selected email messages are moved to the Microsoft Outlook Junk Email folder.</span></span>
     
-- <span data-ttu-id="0750a-110">多语言支持。</span><span class="sxs-lookup"><span data-stu-id="0750a-110">Multi-language support.</span></span>
+- <span data-ttu-id="e7bcc-110">多语言支持。</span><span class="sxs-lookup"><span data-stu-id="e7bcc-110">Multi-language support.</span></span>
     
-<span data-ttu-id="0750a-111">以下主题提供有关如何部署、使用 Outlook 的 Microsoft 垃圾邮件报告外接程序以及进行故障排除的指导：</span><span class="sxs-lookup"><span data-stu-id="0750a-111">The following topics provide guidance about how to deploy, use, and troubleshoot the Microsoft Junk Email Reporting Add-in for Outlook:</span></span>
+<span data-ttu-id="e7bcc-111">以下主题提供有关如何部署、使用 Outlook 的 Microsoft 垃圾邮件报告外接程序以及进行故障排除的指导：</span><span class="sxs-lookup"><span data-stu-id="e7bcc-111">The following topics provide guidance about how to deploy, use, and troubleshoot the Microsoft Junk Email Reporting Add-in for Outlook:</span></span>
   
-- <span data-ttu-id="0750a-p103">[安装 Microsoft Outlook 的垃圾邮件报告外接程序](install-the-junk-email-reporting-add-in-for-microsoft-outlook.md) 为管理员提供有关在组织中安装和部署加载项的信息。此外，还提供有关如何卸载加载项的信息。</span><span class="sxs-lookup"><span data-stu-id="0750a-p103">[Install the Junk Email Reporting Add-in for Microsoft Outlook](install-the-junk-email-reporting-add-in-for-microsoft-outlook.md) Provides information for administrators to install and deploy the add-in in their organization. It also provides information about how to uninstall the add-in.</span></span> 
+- <span data-ttu-id="e7bcc-p103">[安装 Microsoft Outlook 的垃圾邮件报告外接程序](install-the-junk-email-reporting-add-in-for-microsoft-outlook.md) 为管理员提供有关在组织中安装和部署加载项的信息。此外，还提供有关如何卸载加载项的信息。</span><span class="sxs-lookup"><span data-stu-id="e7bcc-p103">[Install the Junk Email Reporting Add-in for Microsoft Outlook](install-the-junk-email-reporting-add-in-for-microsoft-outlook.md) Provides information for administrators to install and deploy the add-in in their organization. It also provides information about how to uninstall the add-in.</span></span> 
     
-- <span data-ttu-id="0750a-114">[向 Microsoft 报告垃圾邮件](report-junk-email-messages-to-microsoft.md) 为最终用户提供有关如何使用加载项向 Microsoft 报告垃圾邮件的信息。</span><span class="sxs-lookup"><span data-stu-id="0750a-114">[Report junk email messages to Microsoft](report-junk-email-messages-to-microsoft.md) Provides information for end users about how to use the add-in to report junk email messages to Microsoft.</span></span> 
+- <span data-ttu-id="e7bcc-114">[向 Microsoft 报告垃圾邮件](report-junk-email-messages-to-microsoft.md) 为最终用户提供有关如何使用加载项向 Microsoft 报告垃圾邮件的信息。</span><span class="sxs-lookup"><span data-stu-id="e7bcc-114">[Report junk email messages to Microsoft](report-junk-email-messages-to-microsoft.md) Provides information for end users about how to use the add-in to report junk email messages to Microsoft.</span></span> 
     
-- <span data-ttu-id="0750a-115">[故障排除和支持信息](troubleshooting-and-support-information.md)提供针对最终用户和管理员的故障排除步骤, 以及有关如何联系技术支持以获取帮助的信息。</span><span class="sxs-lookup"><span data-stu-id="0750a-115">[Troubleshooting and support information](troubleshooting-and-support-information.md) Provides troubleshooting steps for end users and administrators, and information about how to contact technical support for assistance.</span></span> 
+- <span data-ttu-id="e7bcc-115">[故障排除和支持信息](troubleshooting-and-support-information.md)提供针对最终用户和管理员的故障排除步骤, 以及有关如何联系技术支持以获取帮助的信息。</span><span class="sxs-lookup"><span data-stu-id="e7bcc-115">[Troubleshooting and support information](troubleshooting-and-support-information.md) Provides troubleshooting steps for end users and administrators, and information about how to contact technical support for assistance.</span></span> 
     
 
