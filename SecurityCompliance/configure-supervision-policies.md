@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 ms.assetid: d14ae7c3-fcb0-4a03-967b-cbed861bb086
 description: 设置监管审核策略以捕获员工通信以供审阅。
-ms.openlocfilehash: af317194fcf551acde8c53cdf6aa38bfb040dc84
-ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
+ms.openlocfilehash: bb84520fed1eb5015d46c2c35931f786d29855e7
+ms.sourcegitcommit: 13c601ea11ce6a3c71036fdafda059061c6998d0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30216732"
+ms.lasthandoff: 02/27/2019
+ms.locfileid: "30313168"
 ---
 # <a name="configure-supervision-policies-for-your-organization"></a>配置组织的监督策略
 
@@ -53,9 +53,9 @@ ms.locfileid: "30216732"
 
     测试您的监督策略以确保其正常运行是确保合规性策略满足您的标准所需的重要部分。
 
-- **步骤 6-(可选)**[为不希望使用 Office 365 监督仪表板或 web 上的 outlook (以前称为 "outlook web App") 的审阅者设置 Outlook 外接程序, 以查看受监督的通信](configure-supervision-policies.md#UseOutlook)
+- **步骤 6-(可选)**[为不希望使用 Office 365 监督仪表板或 web 上的 outlook (以前称为 Outlook web App) 的审阅者配置 Outlook 以查看受监督的通信](configure-supervision-policies.md#UseOutlook)
 
-    outlook 的监督外接程序为审阅者提供了对 outlook 客户端中的监督功能的访问权限, 以便他们能够评估和分类每个项目。
+    outlook 可以配置为使审阅者能够访问 Outlook 客户端中的监督功能, 以便他们能够评估和分类每个项目。
 
 <a name="exampledist"> </a>
 
@@ -189,13 +189,13 @@ ms.locfileid: "30216732"
 
 <a name="UseOutlook"> </a>
 
-## <a name="step-6---set-up-outlook-add-in-for-reviewers-optional"></a>步骤 6-为审阅者设置 Outlook 外接程序 (可选)
+## <a name="step-6---configure-outlook-for-reviewers-optional"></a>步骤 6-配置 Outlook for 审阅者 (可选)
 
-希望使用 outlook 而不是使用 Office 365 中的监督仪表板或 web 上的 outlook 的审阅者的审阅者必须为其 Outlook 客户端安装监督外接程序。
+要使用 Outlook 而不是使用 Office 365 中的监督仪表板检查通信的审阅者必须配置其 Outlook 客户端。
 
 ### <a name="step-1-copy-the-address-for-the-supervision-mailbox"></a>步骤 1: 复制监督邮箱的地址
 
-若要安装适用于 Outlook 桌面的外接程序, 您将需要作为监督策略安装程序的一部分创建的监督邮箱的地址。
+若要为 outlook 桌面或 outlook for web 配置审阅, 你将需要作为监督策略安装程序的一部分创建的监督邮箱的地址。
   
 > [!NOTE]
 > 如果其他人创建了该策略, 则需要从这些地址获取该地址以安装加载项。
@@ -210,7 +210,7 @@ ms.locfileid: "30216732"
 
 4. 在 "策略详细信息" 浮出控件的 "**监督邮箱**" 下, 复制地址。<br/>![监督策略的详细信息浮出控件的 "监督邮箱" 部分, 显示监督邮箱地址突出显示](media/71779d0e-4f01-4dd3-8234-5f9c30eeb067.jpg)
   
-### <a name="step-2-configure-the-supervision-mailbox-for-outlook-desktop-access"></a>步骤 2: 为 Outlook 桌面访问配置监督邮箱
+### <a name="step-2-configure-the-supervision-mailbox-for-outlook-access"></a>步骤 2: 为 Outlook access 配置监督邮箱
 
 接下来, 审阅者将需要运行几个 Exchange Online PowerShell 命令, 以便他们可以将 Outlook 连接到监督邮箱。
   
