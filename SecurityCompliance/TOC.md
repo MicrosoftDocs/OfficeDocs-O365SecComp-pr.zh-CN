@@ -95,7 +95,7 @@
 ### [如何减少 Office 365 中的垃圾电子邮件](reduce-spam-email.md)
 ### [防止电子邮件在 EOP 和 Office 365 中标记为垃圾邮件](prevent-email-from-being-marked-as-spam-0.md)
 ### [控制 Office 365 中的出站垃圾邮件](outbound-spam-controls.md)
-### [使用 Office 365 垃圾邮件筛选器阻止垃圾电子邮件以免出现漏报问题](block-email-spam-to-prevent-false-negatives.md)
+### [使用 Office 365 垃圾邮件筛选器阻止垃圾电子邮件以免出现漏报问题](reduce-spam-email.md)
 ### [零时差自动清除 - 防范垃圾邮件和恶意软件](zero-hour-auto-purge.md)
 ### [确保垃圾邮件已路由到每个用户的“垃圾邮件”文件夹](ensure-that-spam-is-routed-to-each-user-s-junk-email-folder.md)
 ### [向 Microsoft 报告垃圾邮件](report-junk-email-messages-to-microsoft.md)
@@ -297,7 +297,7 @@
 #### [管理负载集](compliance20/manage-load-sets.md)
 #### [将非 Office 365 数据加载到工作集](compliance20/load-non-office365-data.md)
 #### [查询工作集中的数据](compliance20/working-set-search.md)
-#### [查看工作集中的文档](compliance20/annotating-and-redacting-documents.md)
+#### [查看工作集中的文档](compliance20/view-documents-in-working-set.md)
 #### [标记工作集中的文档](compliance20/tagging-documents.md)
 
 ### [分析事例数据](compliance20/analyzing-data-in-working-set.md)
@@ -318,10 +318,7 @@
 #### [配置搜索和分析设置](compliance20/configure-search-analytics-settings.md)
 
 ### 高级电子数据展示（预览版）参考
-#### [搜索限制](compliance20/search-limits-ediscovery20.md)
-#### [索引限制](compliance20/indexing-limits-ediscovery20.md)
-#### [导出限制](compliance20/export-limits-ediscovery20.md)
-#### [下载限制](compliance20/download-limits-ediscovery20.md)
+#### [高级电子数据展示（预览版）限制](compliance20/limits-ediscovery20.md)
 #### [支持的文件类型](compliance20/supported-filetypes-ediscovery20.md)
 #### [文档元数据字段](compliance20/document-metadata-fields.md)
 

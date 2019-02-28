@@ -14,24 +14,20 @@ search.appverid:
 - MET150
 ms.assetid: 34823bbc-a3e3-4949-ba42-97c73997eeed
 description: 了解如何避免在 Office 365 中发生误报和将真实电子邮件标记为“垃圾邮件”。
-ms.openlocfilehash: be6e534608544c8db7a33ae6ed6492d4f730a2a0
-ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
+ms.openlocfilehash: 7d64beb5070b62640ce0af2e7f18ed8ea4199dda
+ms.sourcegitcommit: baf23be44f1ed5abbf84f140b5ffa64fce605478
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30219412"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "30296885"
 ---
 # <a name="how-to-prevent-real-email-from-being-marked-as-spam-in-office-365"></a>如何避免在 Office 365 中将真实电子邮件标记为“垃圾邮件”
 
  **真实电子邮件是否在 Office 365 中被标记为“垃圾邮件”？试试本文中介绍的方法吧。**
   
-Exchange Online Protection (EOP) 是一项基于云的电子邮件筛选服务，有助于保护组织免受垃圾邮件和恶意软件威胁。如果你在 Office 365 中有邮箱，则它们已自动受 EOP 保护，因为这是该服务的一部分。
-
-EOP 旨在筛选掉垃圾邮件，让收件箱中没有用户不想看到的内容。但有时 EOP 筛选掉的内容却是用户想看到的。如果邮件被垃圾邮件筛选器错误地标记为“垃圾邮件”，这就称为误报。
-
 如果发生误报，则应使用“[使用报告消息](https://support.office.com/article/b5caa9f1-cdf3-4443-af8c-ff724ea719d2)”加载项将此邮件报告给 Microsoft。此外，还可以将此邮件*作为附件*转发至 not_junk@office365.microsoft.com。
 
-    **Important** If you do not forward the messages as attachments, then the headers will be missing and we will be unable to improve the junk mail filtering in Office 365.
+**重要提示** 如果未将邮件作为附件转发，则标头将会缺失并且我们无法在 Office 365 中改进垃圾邮件筛选。
     
 ## <a name="determine-the-reason-why-the-message-was-marked-as-spam"></a>确定邮件被标记为“垃圾邮件”的原因
 
