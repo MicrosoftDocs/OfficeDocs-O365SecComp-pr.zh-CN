@@ -15,12 +15,12 @@ ms.assetid: c534a35d-b121-45da-9d0a-ce738ce51fce
 ms.collection:
 - M365-security-compliance
 description: 本主题提供了有关反垃圾邮件保护的常见问题和解答。 解答适用于 Microsoft Exchange Online 和 Exchange Online Protection (EOP) 客户。
-ms.openlocfilehash: f41799a3870e899fd3601453aaa11f6f9c51c608
-ms.sourcegitcommit: a80bd8626720fabdf592b84e4424cd3a83d08280
+ms.openlocfilehash: 47ab5202e4f20bbb8cdcf1d83987b0c0c20e8f29
+ms.sourcegitcommit: 48fa456981b5c52ab8aeace173c8366b9f36723b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30223051"
+ms.lasthandoff: 02/28/2019
+ms.locfileid: "30341673"
 ---
 # <a name="anti-spam-protection-faq"></a>反垃圾邮件保护常见问题解答
 
@@ -34,7 +34,7 @@ ms.locfileid: "30223051"
 A. **对于入站邮件：** 大部分垃圾邮件都是通过基于发件人 IP 地址的连接筛选检测到的。 然后，服务会检查邮件内容。 默认情况下，内容筛选的垃圾邮件会发送到发件人的垃圾邮件文件夹。 可以更改此操作。 例如，可以选择将垃圾邮件发送到隔离区，而不是配置内容筛选策略。 
   
 > [!IMPORTANT]
-> 对于 EOP 独立客户: 为了确保 "**将邮件移动到垃圾邮件文件夹**" 操作可用于内部部署邮箱, 您必须在本地服务器上配置两个 Exchange 传输规则, 以检测 EOP 添加的垃圾邮件头。有关详细信息, 请参阅[确保垃圾邮件已路由到每个用户的 "垃圾邮件" 文件夹](ensure-that-spam-is-routed-to-each-user-s-junk-email-folder.md)。 
+> 对于 EOP 独立客户: 为了确保 "**将邮件移动到垃圾邮件文件夹**" 操作可用于内部部署邮箱, 您必须在您的本地服务器上配置两个 Exchange 邮件流规则 (也称为传输规则), 以检测由 EOP 添加的垃圾邮件头。有关详细信息, 请参阅[确保垃圾邮件已路由到每个用户的 "垃圾邮件" 文件夹](ensure-that-spam-is-routed-to-each-user-s-junk-email-folder.md)。 
   
  **对于出站邮件：** 邮件要么通过高风险传递池进行路由，要么被退回、未传递。不管是哪种情况，发件人都会收到一封告知其邮件未传递的传递状态通知 (DSN) 邮件。 
   

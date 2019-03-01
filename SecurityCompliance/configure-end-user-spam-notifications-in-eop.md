@@ -14,12 +14,12 @@ ms.assetid: e9947db5-1dd1-4493-872d-7362b24c7ba0
 ms.collection:
 - M365-security-compliance
 description: 您可以针对默认的公司范围内内容筛选器策略或应用于域的自定义内容筛选器策略配置最终用户垃圾邮件通知。
-ms.openlocfilehash: 2cab65347c726cab482eb127f5068586f4f3afd3
-ms.sourcegitcommit: a80bd8626720fabdf592b84e4424cd3a83d08280
+ms.openlocfilehash: 87a55de49a01c69f3392a3740e19e52630f4dcc8
+ms.sourcegitcommit: 48fa456981b5c52ab8aeace173c8366b9f36723b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30222971"
+ms.lasthandoff: 02/28/2019
+ms.locfileid: "30341293"
 ---
 # <a name="configure-end-user-spam-notifications-in-eop"></a>在 EOP 中配置最终用户垃圾邮件通知
   
@@ -74,7 +74,7 @@ ms.locfileid: "30222971"
 > [!NOTE]
 >  最终用户垃圾邮件通知只对已启用的内容筛选器策略可用。 >  每天只发送一次最终用户垃圾邮件通知。无法保证和配置任何特定客户的通知发送时间。 
   
- **提示:** 如果要在完全实现最终用户垃圾邮件通知之前将其发送给一组有限的用户, 请创建自定义内容筛选器策略, 为用户驻留的域启用最终用户垃圾邮件通知。然后, 在 EAC 中的 "**邮件流\>规则**" 下, 创建一个传输规则以阻止来自 quarantine@messaging.microsoft.com (发送通知的电子邮件地址) 的邮件, 其中包含要接收通知的用户的例外。下面的图像是一个为来自 domain Contoso.com 的两个用户 (SaraD 和 AlexD) 创建异常的示例: 
+ **提示:** 如果要在完全实现最终用户垃圾邮件通知之前将其发送给一组有限的用户, 请创建自定义内容筛选器策略, 为用户驻留的域启用最终用户垃圾邮件通知。然后, 在 EAC 中的 "**邮件流\>规则**" 下, 创建邮件流规则 (也称为 "传输规则"), 以阻止来自 quarantine@messaging.microsoft.com 的邮件 (发送通知的电子邮件地址), 并对所需的用户例外。以接收通知。下面的图像是一个为来自 domain Contoso.com 的两个用户 (SaraD 和 AlexD) 创建异常的示例: 
   
 ![测试最终用户垃圾邮件通知的传输规则](media/EOP-ESN-testspecificusers.jpg)
   

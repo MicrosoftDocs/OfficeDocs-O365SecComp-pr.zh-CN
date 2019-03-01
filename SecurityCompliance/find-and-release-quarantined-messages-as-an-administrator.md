@@ -15,16 +15,16 @@ ms.assetid: ab95bf17-bb09-4dd1-9990-ddd02ddecf05
 ms.collection:
 - M365-security-compliance
 description: 本主题介绍了 Exchange Online 和 Exchange Online Protection (EOP) 管理员如何在 Exchange 管理中心 (EAC) 中查找、释放和报告隔离邮件。
-ms.openlocfilehash: 9c3501b79c6a733fd7b6239a26b7e7cfa69f3edc
-ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
+ms.openlocfilehash: aec067169b343ed186d506ed33c29385a7dc6450
+ms.sourcegitcommit: 48fa456981b5c52ab8aeace173c8366b9f36723b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30219032"
+ms.lasthandoff: 02/28/2019
+ms.locfileid: "30341783"
 ---
 # <a name="find-and-release-quarantined-messages-as-an-administrator"></a>以管理员身份查找并释放隔离邮件
 
-本主题介绍了 Exchange Online 和 Exchange Online Protection (EOP) 管理员如何在 Exchange 管理中心 (EAC) 中查找、释放和报告隔离邮件。Office 365 将这些邮件发送到隔离邮箱的原因是，它们被标识为垃圾邮件或与传输规则匹配。 
+本主题介绍 exchange online 和 Exchange online Protection (EOP) 管理员如何在 exchange 管理中心 (EAC) 中查找、释放和报告隔离邮件。Office 365 将邮件定向到隔离区, 因为它们被标识为垃圾邮件或与邮件流规则匹配 (也称为 "传输规则")。 
   
 使用安全&amp;合规中心 (而不是 EAC) 完成这些任务, 并查看和处理发送到隔离的邮件, 因为它们包含恶意软件。有关详细信息, 请参阅[在 Office 365 中隔离电子邮件消息](https://support.office.com/article/Quarantine-email-messages-in-Office-365-4c234874-015e-4768-8495-98fcccfc639b)。
   
@@ -70,9 +70,9 @@ ms.locfileid: "30219032"
 6. **过期**您可以选择在接下来的24小时内 ("**今天**"), 在接下来的48小时内 (**接下来的2天**), 在下一周内 ("**接下来7天**"), 或者您可以选择一个自定义时间间隔, 邮件将从隔离区中删除。
     
     > [!IMPORTANT]
-    > 默认情况下, 垃圾邮件隔离的邮件在15天内保留隔离, 而与传输规则匹配的隔离邮件在隔离中保存7天。在此时间段后, Office 365 将删除邮件, 并且这些邮件无法检索。与传输规则匹配的隔离邮件的保留期不可配置。但是, 垃圾邮件隔离邮件的保留期可以通过内容筛选器策略中的 "**保留垃圾邮件 (天)** " 设置来降低。有关详细信息, 请参阅[配置垃圾邮件筛选器策略](configure-your-spam-filter-policies.md)。 
+    > 默认情况下, 垃圾邮件隔离的邮件在15天内保留隔离, 而与邮件流规则匹配的隔离邮件将保留在隔离时间7天内。在此时间段后, Office 365 将删除邮件, 并且这些邮件无法检索。与邮件流规则匹配的隔离邮件的保留期不可配置。但是, 垃圾邮件隔离邮件的保留期可以通过内容筛选器策略中的 "**保留垃圾邮件 (天)** " 设置来降低。有关详细信息, 请参阅[配置垃圾邮件筛选器策略](configure-your-spam-filter-policies.md)。 
   
-7. **类型**您可以指定是否搜索已被标识为**垃圾**邮件的隔离邮件, 或者是否搜索与**传输规则**匹配的邮件。
+7. **类型**您可以指定是否搜索已被标识为**垃圾**邮件的隔离邮件, 或者是否搜索与邮件流规则匹配的邮件 (**传输规则**)。
     
 3. 单击 **"确定"** 开始运行高级搜索。 
     
@@ -90,7 +90,7 @@ ms.locfileid: "30219032"
     
     **邮件状态**值如下所示: 
     
-  - **类型**指示是否已将邮件标识为**垃圾**邮件或与**传输规则**相匹配。
+  - **类型**指示是否已将邮件标识为**垃圾**邮件或与邮件流规则 (**传输规则**) 相匹配。
     
   - **过期**将从隔离区中删除邮件的日期。 
     
@@ -145,7 +145,7 @@ ms.locfileid: "30219032"
   
 从下拉列表中单击 "**释放所选邮件并允许发件人**"。 
     
-3. 将打开 "**释放邮件并允许发件人**" 对话框。(可选) 您可以选择向 Microsoft 报告邮件, 然后单击 "**释放并允许**"。该邮件将被释放给所有收件人, 并将允许来自此发件人的所有未来邮件。但是, 如果此邮件由于传输规则或阻止的发件人而被隔离, 则将继续阻止发件人的后续邮件。 
+3. 将打开 "**释放邮件并允许发件人**" 对话框。(可选) 您可以选择向 Microsoft 报告邮件, 然后单击 "**释放并允许**"。该邮件将被释放给所有收件人, 并将允许来自此发件人的所有未来邮件。但是, 如果此邮件是由于邮件流规则或阻止发件人而被隔离的, 则将继续阻止发件人的后续邮件。 
     
 ### <a name="release-a-quarantined-message-to-specific-recipients-without-reporting-it-as-a-false-positive"></a>将隔离邮件释放给特定收件人，而不将其报告为误报
 <a name="Releasequarantinedmessagetospecificrecipientswithoutreportingasfalsepositive"> </a>

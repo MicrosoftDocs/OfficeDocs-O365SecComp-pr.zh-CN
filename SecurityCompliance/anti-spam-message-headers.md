@@ -14,12 +14,12 @@ ms.assetid: 2e3fcfc5-5604-4b88-ac0a-c5c45c03f1db
 ms.collection:
 - M365-security-compliance
 description: Exchange Online Protection 扫描到入站电子邮件时，它会在每封邮件中插入" **X-Forefront-Antispam-Report**"标头。
-ms.openlocfilehash: 13bcb3598552bbb63bd50b50963b9806c3f34844
-ms.sourcegitcommit: 686bc9a8f7a7b6810a096f07d36751d10d334409
+ms.openlocfilehash: fa14d32f06d07bf7c5131e9c417e9baa0720fcdd
+ms.sourcegitcommit: 48fa456981b5c52ab8aeace173c8366b9f36723b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "30276192"
+ms.lasthandoff: 02/28/2019
+ms.locfileid: "30341733"
 ---
 # <a name="anti-spam-message-headers"></a>反垃圾邮件邮件头
 
@@ -46,10 +46,10 @@ Exchange Online Protection 扫描到入站电子邮件时，它会在每封邮�
 |IPV:CAL|邮件已获得垃圾邮件筛选器的允许，因为 IP 地址已在连接筛选器的 IP 允许列表中指定。|
 |IPV:NLI|IP 地址没有在任何 IP 信誉列表中列出。|
 |SFV:SPM|邮件由内容筛选器标记为垃圾邮件。|
-|SFV:SKS|在内容筛选器处理之前，邮件被标记为垃圾邮件。这包括符合以下传输规则条件的邮件：自动将邮件标记为垃圾邮件并规避其他所有筛选。|
+|SFV:SKS|在内容筛选器处理之前, 邮件被标记为垃圾邮件。这包括邮件与邮件流规则匹配的邮件 (也称为传输规则), 以自动将其标记为垃圾邮件, 并绕过所有其他筛选。|
 |SFV:SKA|邮件跳过了筛选并传递到收件箱, 因为它与垃圾邮件筛选器策略中的允许列表 (如 "**发件人允许**列表") 相匹配。|
 |SFV:SKB|邮件被标记为垃圾邮件，因为它符合垃圾邮件筛选器策略中的阻止列表，例如" **发件人阻止**"列表。|
-|SFV:SKN|在内容筛选器处理之前，邮件被标记为非垃圾邮件。这包括符合以下传输规则条件的邮件：自动将邮件标记为非垃圾邮件并绕过其他所有筛选。|
+|SFV:SKN|在内容筛选器处理之前, 邮件被标记为非垃圾邮件。这包括邮件与邮件流规则匹配的邮件, 以自动将其标记为非垃圾邮件, 并绕过所有其他筛选。|
 |SFV:SKI|与 SFV:SKN 类似，由于其他原因而导致邮件跳过筛选，例如该邮件是租户内的组织间电子邮件。|
 |SFV:SKQ|邮件从隔离区释放，并发送给目标收件人。|
 |SFV:NSPM|邮件被标记为非垃圾邮件并发送给预期收件人。|

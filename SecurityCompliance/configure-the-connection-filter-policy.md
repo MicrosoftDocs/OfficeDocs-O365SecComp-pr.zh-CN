@@ -15,12 +15,12 @@ ms.assetid: 6ae78c12-7bbe-44fa-ab13-c3768387d0e3
 ms.collection:
 - M365-security-compliance
 description: 若要确保从不受信任的人发送的电子邮件被阻止, 可以使用连接筛选器策略创建您信任的 IP 地址的允许列表 (也称为 "安全发件人列表")。您还可以创建阻止的发件人列表。
-ms.openlocfilehash: d7c99f8fb6b9b05efb800804927ccb26f7dd9f40
-ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
+ms.openlocfilehash: 2b6cbb709eec6911e8aa83d560d5c00ad2a6e344
+ms.sourcegitcommit: 48fa456981b5c52ab8aeace173c8366b9f36723b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30216902"
+ms.lasthandoff: 02/28/2019
+ms.locfileid: "30341603"
 ---
 # <a name="configure-the-connection-filter-policy"></a>配置连接筛选器策略
  
@@ -98,9 +98,9 @@ ms.locfileid: "30216902"
   
 ### <a name="scoping-an-ip-allow-list-exception-for-a-specific-domain"></a>为特定域设置 IP 允许列表例外作用域
 
-通常情况下，我们建议您将您认为对于所有域而言安全的 IP 地址（或 IP 地址范围）添加到 IP 允许列表。但是，如果您不希望 IP 允许列表条目应用于所有域，则可以创建一条应用范围不包括特定域的传输规则。 
+通常情况下, 我们建议您为所有您认为可安全地登录到 IP 允许列表的域添加 ip 地址 (或 ip 地址范围)。但是, 如果您不希望您的 IP 允许列表条目应用于您的所有域, 则可以创建 excepts 特定域的邮件流规则 (也称为传输规则)。 
   
-例如，让我们假设您有三个域：ContosoA.com、ContosoB.com 和 ContosoC.com，您希望添加 IP 地址（为了简便起见，我们使用 1.2.3.4），并且只针对域 ContosoB.com 跳过筛选。您可以为 1.2.3.4 创建 IP 允许列表，它会将所有域的垃圾邮件可信度 (SCL) 设置为 -1（意味着它被分类为非垃圾邮件）。然后，您可以创建一条传输规则，将除 ContosoB.com 之外的所有域的 SCL 设置为 0。这将使与该 IP 地址相关、除 ContosoB.com（在规则中被列为例外的域）之外的所有域的邮件被重新扫描。ContosoB.com 的 SCL 仍为 -1，这意味着它将跳过筛选，而 ContosoA.com 和 ContosoC.com 的 SCL 为 0，这意味着内容筛选器将重新扫描它们。
+例如, 假设您有三个域: ContosoA.com、ContosoB.com 和 ContosoC.com, 您希望添加 IP 地址 (为简单起见, 让我们使用 1.2.3.4), 并跳过仅对域 ContosoB.com 的筛选。您可以为1.2.3.4 创建 IP 允许列表, 该列表将所有域的垃圾邮件可信度 (SCL) 设置为-1 (表示它被分类为非垃圾邮件)。然后, 您可以创建邮件流规则, 将除 ContosoB.com 之外的所有域的 SCL 设置为0。这将导致为与该 IP 地址关联的所有域 (即作为规则中的例外列出的域) 所 ContosoB.com 的所有域重新扫描邮件。ContosoB.com 仍具有-1 SCL, 这意味着将跳过筛选, 而 ContosoA.com 和 ContosoC.com 的 SCLs 为 0, 这意味着内容筛选器将重新扫描它们。
   
 为此，请执行下列步骤：
   

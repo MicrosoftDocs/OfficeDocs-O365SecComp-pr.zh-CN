@@ -14,22 +14,22 @@ search.appverid:
 ms.assetid: 0cbaccf8-4afc-47e3-a36d-a84598a55fb8
 ms.collection:
 - M365-security-compliance
-description: EOP 客户的默认反垃圾邮件操作是将垃圾邮件移到收件人的 "垃圾邮件" 文件夹。为了使此操作能够与本地邮箱配合使用, 必须在本地边缘或中心服务器上配置 Exchange 传输规则, 以检测由 EOP 添加的垃圾邮件头。这些传输规则将 set-organizationconfig cmdlet 的 SclJunkThreshold 属性使用的垃圾邮件可信度 (SCL) 设置为将垃圾邮件移动到每个邮箱的 "垃圾邮件" 文件夹中。
-ms.openlocfilehash: f712e66934956bcf46215e4016501003ce9b1725
-ms.sourcegitcommit: a80bd8626720fabdf592b84e4424cd3a83d08280
+description: 管理员可以了解如何将垃圾邮件路由到 Exchange Online Protection 中的用户垃圾邮件文件夹。
+ms.openlocfilehash: 80c3e3cab1bdaf85e815ab1acc790cc907ebbb91
+ms.sourcegitcommit: 48fa456981b5c52ab8aeace173c8366b9f36723b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30222881"
+ms.lasthandoff: 02/28/2019
+ms.locfileid: "30341373"
 ---
 # <a name="ensure-that-spam-is-routed-to-each-users-junk-email-folder"></a>确保垃圾邮件已路由到每个用户的“垃圾邮件”文件夹
 
 > [!IMPORTANT]
 > 本主题仅适用于在混合部署中承载本地邮箱的 Exchange Online Protection (EOP) 客户。其邮箱在 Office 365 中完全托管的 Exchange Online 客户无需运行这些命令。 
   
-EOP 客户的默认反垃圾邮件操作是将垃圾邮件移到收件人的 "垃圾邮件" 文件夹。为了使此操作能够与本地邮箱配合使用, 必须在本地边缘或中心服务器上配置 Exchange 传输规则, 以检测由 EOP 添加的垃圾邮件头。这些传输规则将 set-organizationconfig cmdlet 的 SclJunkThreshold 属性使用的垃圾邮件可信度 (SCL) 设置为将垃圾邮件移动到每个邮箱的 "垃圾邮件" 文件夹中。 
+EOP 客户的默认反垃圾邮件操作是将垃圾邮件移到收件人的 "垃圾邮件" 文件夹。为了使此操作能够与本地邮箱配合使用, 必须在本地边缘或中心服务器上配置 Exchange 邮件流规则 (也称为传输规则), 以检测由 EOP 添加的垃圾邮件头。这些邮件流规则将 set-organizationconfig cmdlet 的 SclJunkThreshold 属性使用的垃圾邮件可信度 (SCL) 设置为将垃圾邮件移到每个邮箱的 "垃圾邮件" 文件夹中。 
   
-### <a name="to-add-transport-rules-to-ensure-spam-is-moved-to-the-junk-email-folder-by-using-windows-powershell"></a>添加传输规则以确保通过使用 Windows PowerShell 将垃圾邮件移动到 "垃圾邮件" 文件夹
+### <a name="to-add-mail-flow-rules-to-ensure-spam-is-moved-to-the-junk-email-folder-by-using-windows-powershell"></a>添加邮件流规则, 以确保使用 Windows PowerShell 将垃圾邮件移动到 "垃圾邮件" 文件夹
 
 1. 访问本地 exchange server 的 exchange 命令行管理程序。若要了解如何在本地 Exchange 组织中打开 Exchange 命令行管理程序, 请参阅**打开命令行**管理程序。
     

@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 ms.assetid: 268a109e-7843-405b-bb3d-b9393b2342ce
 description: 使用 Office 365 安全&amp;合规中心启用存档邮箱, 以支持组织的邮件保留、电子数据展示和保留要求。
-ms.openlocfilehash: 763097925ed0910fe9a66e5c556b8a2995df74e6
-ms.sourcegitcommit: baf23be44f1ed5abbf84f140b5ffa64fce605478
+ms.openlocfilehash: 39cd5fd8d7991b787d95e39e4994dc9b0786522c
+ms.sourcegitcommit: 48fa456981b5c52ab8aeace173c8366b9f36723b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "30296055"
+ms.lasthandoff: 02/28/2019
+ms.locfileid: "30341793"
 ---
 # <a name="enable-archive-mailboxes-in-the-office-365-security-amp-compliance-center"></a>在 Office 365 安全&amp;合规中心中启用存档邮箱
   
@@ -138,7 +138,6 @@ Office 365 中的存档 (也称为就地存档) 为用户提供额外的邮箱�
     - 将 14 天或以上的邮件从用户主邮箱的"可恢复的项目"文件夹移动到存档邮箱中的"可恢复的项目"文件夹。
     
 - 有关存档邮箱和 Exchange 保留策略的详细信息, 请参阅:
-  
     
   - [保留标记和保留策略](https://go.microsoft.com/fwlink/?LinkId=404424)
     

@@ -15,19 +15,19 @@ ms.assetid: 316544cb-db1d-4c25-a5b9-c73bbcf53047
 ms.collection:
 - M365-security-compliance
 description: 基本垃圾邮件筛选器设置包括选择要对被标识为垃圾邮件的邮件执行的操作, 并选择是筛选以特定语言编写的邮件还是从特定的国家或地区发送的邮件。
-ms.openlocfilehash: 44ed773ae95976714d502a142aed75fa24a1b843
-ms.sourcegitcommit: baf23be44f1ed5abbf84f140b5ffa64fce605478
+ms.openlocfilehash: 1f5ff5db88d11971df070d316ad4aaff6eb88712
+ms.sourcegitcommit: 48fa456981b5c52ab8aeace173c8366b9f36723b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "30296985"
+ms.lasthandoff: 02/28/2019
+ms.locfileid: "30341803"
 ---
 # <a name="configure-your-spam-filter-policies"></a>配置垃圾邮件筛选器策略
   
 基本垃圾邮件筛选器设置包括选择要对被标识为垃圾邮件的邮件执行的操作。垃圾邮件筛选器策略设置仅适用于入站邮件。您可以编辑默认垃圾邮件筛选器策略, 以配置公司范围的垃圾邮件筛选器设置并创建自定义垃圾邮件筛选器策略, 然后将其应用到组织中的特定用户、组或域。自定义策略的优先级始终高于默认策略。您可以通过更改每个自定义策略的优先级来更改自定义策略的运行顺序;但是, 如果有多个策略满足条件集, 将仅应用最高优先级策略。 
   
 > [!IMPORTANT]
-> 对于 Exchange Online Protection (EOP) 独立客户: 默认情况下, EOP 垃圾邮件筛选器将检测到的垃圾邮件发送到每个收件人的 "垃圾邮件" 文件夹。但是, 为了确保 "**将邮件移动到垃圾邮件文件夹**" 操作适用于本地邮箱, 您必须在本地服务器上配置 Exchange 传输规则, 以检测由 EOP 添加的垃圾邮件头。有关详细信息, 请参阅[确保垃圾邮件已路由到每个用户的 "垃圾邮件" 文件夹](ensure-that-spam-is-routed-to-each-user-s-junk-email-folder.md)。 
+> 对于 Exchange Online Protection (EOP) 独立客户: 默认情况下, EOP 垃圾邮件筛选器将检测到的垃圾邮件发送到每个收件人的 "垃圾邮件" 文件夹。但是, 为了确保 "**将邮件移动到垃圾邮件文件夹**" 操作适用于本地邮箱, 您必须在您的本地服务器上配置 Exchange 邮件流规则 (也称为传输规则), 以检测通过添加的垃圾邮件头。EOP.有关详细信息, 请参阅[确保垃圾邮件已路由到每个用户的 "垃圾邮件" 文件夹](ensure-that-spam-is-routed-to-each-user-s-junk-email-folder.md)。 
   
 ## <a name="what-you-must-know-before-you-begin"></a>开始之前您必须了解的内容
 
@@ -45,7 +45,7 @@ ms.locfileid: "30296985"
     
       - 查看 "标准设置" 下的 "默认公司范围" 策略。
     
-      - 单击 "**自定义**" 选项卡, 将 "**自定义设置**选择器" 更改为 **"打开**", 然后单击 "![添加图标](media/ITPro-EAC-AddIcon.gif) " "**创建策略**" 按钮, 以便创建可应用于用户、组的新自定义垃圾邮件筛选器策略组织中的和域。您还可以通过双击现有的自定义策略对其进行编辑。 
+      - 单击 "**自定义**" 选项卡, 将 "**自定义设置**选择器" 更改为![ **"打开**", 然后单击 "添加图标](media/ITPro-EAC-AddIcon.gif) " "**创建策略**" 按钮, 以便创建可应用于用户、组和的新自定义垃圾邮件筛选器策略组织中的域。您还可以通过双击现有的自定义策略对其进行编辑。 
     
 3. 对于 "仅限自定义策略", 请指定策略的名称。(可选) 还可以指定更详细的说明。您不能重命名默认策略。<br/><br/>注意: 创建策略时, 所有配置设置都将显示在单个屏幕上。相比之下, 在编辑策略时, 您必须在多个屏幕中导航。在这两种情况下, 设置都是相同的, 但此过程的其余部分介绍在编辑策略时如何访问这些设置。 
   
@@ -55,7 +55,7 @@ ms.locfileid: "30296985"
         
       - **隔离邮件:** 将邮件发送到隔离, 而不是发送给预期的收件人。如果选择此选项, 请在 "**保留垃圾邮件时间 (天)** " 输入框中, 指定隔离垃圾邮件的天数。(它将在经过一段时间后自动删除。默认值为15天, 即最大值。最小值为1天。<br/><br/>提示: 有关管理员如何管理 EAC 中隔离的电子邮件的信息, 请参阅[隔离](quarantine.md)并[以管理员身份查找并释放隔离邮件](find-and-release-quarantined-messages-as-an-administrator.md)。> 有关如何配置要发送给用户的垃圾邮件通知邮件的信息, 请参阅[在 EOP 中配置最终用户垃圾邮件通知](configure-end-user-spam-notifications-in-eop.md)或[在 Exchange Online 中配置最终用户垃圾邮件通知](configure-end-user-spam-notifications-in-exchange-online.md)。 
   
-      - **将邮件移动到垃圾邮件文件夹:** 将邮件发送到指定收件人的 "垃圾邮件" 文件夹。这是这两个置信度阈值级别的默认操作。<br/><br/>**重要说明: 对于 Exchange Online Protection (EOP) 客户: 为了使此操作能够使用本地邮箱, 必须在您的本地服务器上配置两个 Exchange 传输规则, 以检测 EOP 添加的垃圾邮件头。有关详细信息, 请参阅[确保垃圾邮件已路由到每个用户的 "垃圾邮件" 文件夹](ensure-that-spam-is-routed-to-each-user-s-junk-email-folder.md)。**
+      - **将邮件移动到垃圾邮件文件夹:** 将邮件发送到指定收件人的 "垃圾邮件" 文件夹。这是这两个置信度阈值级别的默认操作。<br/><br/>**重要说明**: 对于 Exchange Online Protection (EOP) 客户: 为了使此操作能够使用本地邮箱, 必须在您的本地服务器上配置两个 Exchange 邮件流规则, 以检测 EOP 添加的垃圾邮件头。有关详细信息, 请参阅[确保垃圾邮件已路由到每个用户的 "垃圾邮件" 文件夹](ensure-that-spam-is-routed-to-each-user-s-junk-email-folder.md)。
   
       - **添加 X 标头:** 将邮件发送给指定的收件人, 但将 X 标头文本添加到邮件头, 以便将邮件标识为垃圾邮件。使用此文本作为标识符, 您可以选择创建收件箱规则或使用下游设备对邮件进行操作。默认的 X 标头文本是**此消息看起来是垃圾**邮件。<br/>您可以使用 "**添加此 x 标头文本**输入" 框自定义 X 标头文本。如果自定义 X 标头文本, 请注意以下条件: 
     

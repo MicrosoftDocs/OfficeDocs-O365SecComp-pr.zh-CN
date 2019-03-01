@@ -11,12 +11,12 @@ ms.custom: TN2DMC
 localization_priority: Normal
 ms.assetid: 1270a65f-ddc3-4430-b500-4d3a481efb1e
 description: Microsoft Exchange Online Protection (EOP) 是基于云的电子邮件筛选服务，可帮助您的组织防御垃圾邮件和恶意邮件，并包括用于保护您的组织避免违反邮件策略的功能。
-ms.openlocfilehash: baba6b56034ec5c3f2af1c291a7f8b5100f0f092
-ms.sourcegitcommit: 8679937354c1d8870ecd41519a59d2d7468c23c4
+ms.openlocfilehash: 3f00cc07058bd2399732299b3221ebd4258dc5ff
+ms.sourcegitcommit: 48fa456981b5c52ab8aeace173c8366b9f36723b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "30087341"
+ms.lasthandoff: 02/28/2019
+ms.locfileid: "30341623"
 ---
 # <a name="exchange-online-protection-overview"></a>Exchange Online Protection 概述
 
@@ -36,7 +36,7 @@ Microsoft Exchange Online Protection (EOP) 是基于云的电子邮件筛选服�
   
 ![EOP-处理电子邮件](../media/EOP-email-processing.png)
   
-传入邮件最初通过连接筛选, 它会检查发件人的信誉并检查邮件中是否存在恶意软件。大多数垃圾邮件在此点停止, 并由 EOP 删除。邮件将继续通过策略筛选, 其中将根据您从模板创建或实施的自定义传输规则对邮件进行评估。例如, 可以在邮件到达特定发件人时, 将通知发送给经理的规则。(此时也会发生数据丢失防护检查, 如果你具有该功能, 则为; 有关功能可用性的信息, 请参阅[Exchange Online Protection 服务说明](https://go.microsoft.com/fwlink/p/?LinkId=320619)。)接下来, 邮件通过内容筛选, 在其中对内容进行检查, 了解公共的垃圾邮件的术语或属性。通过内容筛选器确定为垃圾邮件的邮件可以发送到用户的 "垃圾邮件" 文件夹或 "隔离", 具体取决于您的设置。在邮件成功传递所有这些保护层后, 会将其传递给收件人。
+传入邮件最初通过连接筛选, 它会检查发件人的信誉并检查邮件中是否存在恶意软件。大多数垃圾邮件在此点停止, 并由 EOP 删除。邮件将继续通过策略筛选, 其中将根据您从模板创建或实施的自定义邮件流规则 (也称为传输规则) 对邮件进行评估。例如, 可以在邮件到达特定发件人时, 将通知发送给经理的规则。(此时也会发生数据丢失防护检查, 如果你具有该功能, 则为; 有关功能可用性的信息, 请参阅[Exchange Online Protection 服务说明](https://go.microsoft.com/fwlink/p/?LinkId=320619)。)接下来, 邮件通过内容筛选, 在其中对内容进行检查, 了解公共的垃圾邮件的术语或属性。通过内容筛选器确定为垃圾邮件的邮件可以发送到用户的 "垃圾邮件" 文件夹或 "隔离", 具体取决于您的设置。在邮件成功传递所有这些保护层后, 会将其传递给收件人。
   
 ### <a name="eop-datacenters"></a>EOP 数据中心
 

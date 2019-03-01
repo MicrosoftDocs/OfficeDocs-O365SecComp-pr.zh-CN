@@ -3,7 +3,7 @@ title: 查看安全&amp;合规性中心中的电子邮件安全报告
 ms.author: deniseb
 author: denisebmsft
 manager: laurawi
-ms.date: 01/07/2019
+ms.date: 02/21/2019
 ms.audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
@@ -15,20 +15,22 @@ ms.assetid: 3a137e28-1174-42d5-99af-f18868b43e86
 ms.collection:
 - M365-security-compliance
 description: 了解如何使用 Office 365 企业版查找和使用组织的电子邮件安全报告。安全&amp;合规性中心中提供了电子邮件安全报告。
-ms.openlocfilehash: fb9f8234f1febf98daf0382f2ad8ece3e3ecbbfe
-ms.sourcegitcommit: 1c73c2f83703af0a30a5b0633db00d8e0e6b39b5
+ms.openlocfilehash: 833cb4e0b90375179a4ce2097cb986926a9856d0
+ms.sourcegitcommit: 48fa456981b5c52ab8aeace173c8366b9f36723b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/25/2019
-ms.locfileid: "30241994"
+ms.lasthandoff: 02/28/2019
+ms.locfileid: "30341443"
 ---
 # <a name="view-email-security-reports-in-the-security-amp-compliance-center"></a>查看安全&amp;合规性中心中的电子邮件安全报告
 
-[安全&amp;合规性中心](https://security.microsoft.com)中提供了各种电子邮件安全报告, 可帮助您了解 Office 365 中的反垃圾邮件和反恶意软件功能如何保护您的组织。如果您具有[所需的权限](#what-permissions-are-needed-to-view-these-reports), 则可以转到 "**报告** \> " &amp; **仪表板**, 在安全合规中心中查看这些报告。
+[安全&amp;合规性中心](https://protection.office.com)中提供了多种报告, 可帮助您了解电子邮件安全功能 (如 Office 365 中的反垃圾邮件、反恶意软件和加密功能如何保护组织)。如果您具有[所需的权限](#what-permissions-are-needed-to-view-these-reports), 则可以转到 "**报告** \> " &amp; **仪表板**, 在安全合规中心中查看这些报告。
   
-![安全&amp;合规中心仪表板可帮助您了解高级威胁防护的工作情况](media/6b213d34-adbb-44af-8549-be9a7e2db087.png)
+![可在其中查看高级威胁防护的工作方式的仪表板](media/6b213d34-adbb-44af-8549-be9a7e2db087.png)
   
 您的电子邮件安全报告包括以下内容:
+
+- [加密报告](#encryption-report)(新!)
   
 - [威胁防护状态报告](view-email-security-reports.md#tps) 
     
@@ -43,12 +45,36 @@ ms.locfileid: "30241994"
 - [垃圾邮件检测报告](#spam-detections-report)
     
 - [发送和接收的电子邮件报告](view-email-security-reports.md#sentreceivedemail)
+
+- [用户报告的邮件报告](view-email-security-reports.md#userreported)
     
-- [用户报告的邮件报告](view-email-security-reports.md#userreported)(新!) 
-    
+## <a name="encryption-report"></a>加密报告
+
+(**新!**)**加密报告**显示通过策略或最终用户控制措施加密的电子邮件的相关信息。您组织的安全团队可以使用此信息来确定模式, 并主动应用或调整敏感电子邮件的策略。
+
+若要查看此报告, 请在 Security & 合规性中心中, 转到 "**报告** \> **" 仪表板** \> **加密报告**。
+
+![加密报告](media/encryptionreport-defaultview.png) 
+
+当报告第一次打开时, 您将看到有关过去七 (7) 天的电子邮件上使用的加密方法的数据。您可以通过单击屏幕右上角的 "筛选器" 更改报告中的日期范围和详细信息。
+
+![加密报告筛选器](media/encryptionreport-filters.png)   
+
+您还可以使用 "向下分页" 菜单查看通过加密模板 (或方法) 的数据。
+
+![加密方法或模板](media/encryptionreport-breakdownby.png)
+
+您还可以使用 "查看数据方式" 菜单更改视图, 以查看前五个收件人域的加密邮件数。
+
+![加密报告按菜单查看数据](media/encryptionreport-viewdataby.png)
+
+通过新的加密报告的灵活性, 您可以查看趋势并采取适当的操作。例如, 如果您看到用户加密了大量的电子邮件, 您可能希望添加加密策略以对某些用例自动进行加密。而且, 如果有许多可用的加密模板, 但没有用户正在使用它们, 则可以考察用户是否需要针对该功能的培训。 
+
+此报告使贵组织的安全和合规性团队能够监视邮件加密的使用情况, 以及是否需要进一步的操作。
+
 ## <a name="threat-protection-status-report"></a>威胁防护状态报告
 
-新的**威胁防护状态**报告是一个智能报告, 显示 Exchange Online Protection 检测到并阻止的恶意电子邮件。此报告显示有关被标识为恶意软件或网络钓鱼尝试的电子邮件的信息。 
+**威胁防护状态**报告是一个智能报告, 显示 Exchange Online Protection 检测到并阻止的恶意电子邮件。此报告显示有关被标识为恶意软件或网络钓鱼尝试的电子邮件的信息。 
 
 > [!NOTE]
 > 拥有[Office 365 ATP](office-365-atp.md)或[Exchange Online Protection](eop/exchange-online-protection-eop.md) (EOP) 的客户可以使用威胁防护状态报告;但是, 在 ATP 客户的威胁防护状态报告中显示的信息可能包含不同的 EOP 客户可能看到的数据。例如, EOP 客户可以查看有关在电子邮件中检测到的恶意软件的信息, 但不是关于[在 SharePoint Online、OneDrive 或 Microsoft 团队中检测到的恶意文件](atp-for-spo-odb-and-teams.md)的信息, 这是与 ATP 相关的功能。([了解有关 ATP 报告的详细信息](view-reports-for-atp.md)。)
@@ -109,13 +135,13 @@ ms.locfileid: "30241994"
   
 在图表下方, 你将看到首要的电子邮件发件人或收件人, 以及在给定时间段内发送或接收的邮件数。
   
-## <a name="spoof-mail-report"></a>欺骗邮件报告
+## <a name="spoof-detections-report"></a>欺骗检测报告
 
-**欺骗邮件**报告显示检测到的欺骗邮件的数量以及这些邮件被视为 "好" (欺骗邮件出于合理商业原因而完成)。 
+**欺骗检测**报告显示检测到的欺骗邮件的数量以及这些邮件被视为 "好" (欺骗邮件出于合理商业原因而完成)。 
   
 若要查看此报告, 请[在&amp;安全合规性中心](https://protection.office.com)中, 转到 "**报告** \> "**仪表板** \> **欺骗邮件**。
   
-![若要查看此报告, 请在&amp;安全合规性中心中, \>转\>到 "报告" 仪表板欺骗邮件](media/0427e85c-9e40-4225-a0f0-e21a4e8b0e44.png)
+![在安全&amp;合规性中心中, 转到\> " \>报告" 仪表板欺骗邮件](media/0427e85c-9e40-4225-a0f0-e21a4e8b0e44.png)
   
 当您将鼠标指针悬停在图表中的某一天时, 您可以看到通过的欺骗邮件的数量。
   
@@ -157,7 +183,7 @@ ms.locfileid: "30241994"
   
 ![此报告告诉你有关反恶意软件、反垃圾邮件和其他邮件检测](media/9ea4b606-f27a-46ee-97a7-be018e2b839c.png)
   
-## <a name="user-reported-messages-report-new"></a>用户报告的邮件报告 (新!)
+## <a name="user-reported-messages-report"></a>用户报告的邮件报告
 
 "**用户报告的邮件**" 报告显示用户通过使用[报告邮件外接程序](enable-the-report-message-add-in.md)报告为垃圾邮件、网络钓鱼尝试或良好邮件的电子邮件的相关信息。
   

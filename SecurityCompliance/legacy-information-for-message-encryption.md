@@ -14,12 +14,12 @@ ms.assetid: 5986b9e1-c824-4f8f-9b7d-a2b0ae2a7fe9
 ms.collection:
 - M365-security-compliance
 description: 如果您尚未将 Office 365 组织移动到新的 OME 功能, 但您已经部署了 OME, 则本文中的信息适用于您的组织。Microsoft 建议您制定一个计划, 尽快移动到新的 OME 功能, 因为它对您的组织合理。有关说明, 请参阅设置基于 Azure 信息保护基础构建的新 Office 365 邮件加密功能。如果您想要详细了解新功能的工作方式, 请参阅 Office 365 邮件加密。本文的其余部分是在发布新的 OME 功能之前的 OME 行为。
-ms.openlocfilehash: f6e407208735a53b98033e58a6f7b36fe9a37f62
-ms.sourcegitcommit: 686bc9a8f7a7b6810a096f07d36751d10d334409
+ms.openlocfilehash: 03e2cb9c1f7d447f2fcf222382fcc2366faf0658
+ms.sourcegitcommit: 48fa456981b5c52ab8aeace173c8366b9f36723b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "30276062"
+ms.lasthandoff: 02/28/2019
+ms.locfileid: "30341493"
 ---
 # <a name="legacy-information-for-office-365-message-encryption"></a>Office 365 邮件加密的旧信息
 
@@ -167,7 +167,7 @@ RMS 通过提供内置模板 (例如: 不要转发和公司机密) 为组织的�
   
  **问: Office 365 邮件加密与 S/MIME 有何不同？**
   
-S/MIME 实质上是一种客户端加密技术，需要复杂的证书管理和发布基础结构。Office 365 邮件加密使用传输规则，且不依赖于证书发布。
+S/MIME 实质上是一种客户端加密技术, 需要复杂的证书管理和发布基础结构。Office 365 邮件加密使用邮件流规则 (也称为传输规则), 而不依赖于证书发布。
   
  **问：能否通过移动设备阅读加密邮件？**
   
@@ -213,7 +213,7 @@ Office 365 邮件加密使用权限管理服务 (RMS) 作为其加密基础结�
   
  **问：是否可以查看已接收和阅读的加密邮件报告吗？**
   
-没有显示已查看加密邮件的报告, 但有 Office 365 报告可用, 可以利用这些报告来确定匹配特定传输规则的邮件数, 例如。
+没有显示已查看加密邮件的报告, 但有 Office 365 报告可用, 可以利用这些报告来确定匹配特定邮件流规则 (也称为传输规则) 的邮件数 (例如,)。
   
  **问：Microsoft 会如何处理我通过 OME 门户和 OME 查看器应用提供的信息？**
   

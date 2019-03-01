@@ -14,12 +14,12 @@ ms.assetid: 4a05898c-b8e4-4eab-bd70-ee912e349737
 ms.collection:
 - M365-security-compliance
 description: 了解如何配置基于域的邮件身份验证、报告和一致性 (DMARC), 以验证从 Office 365 组织发送的邮件。
-ms.openlocfilehash: 178eb9658f1cfe298d3b5600ecdc524d7bd66a72
-ms.sourcegitcommit: 686bc9a8f7a7b6810a096f07d36751d10d334409
+ms.openlocfilehash: d224acaf6b1d53cdf9ababca87c5880a5499c613
+ms.sourcegitcommit: 48fa456981b5c52ab8aeace173c8366b9f36723b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "30276173"
+ms.lasthandoff: 02/28/2019
+ms.locfileid: "30341573"
 ---
 # <a name="use-dmarc-to-validate-email-in-office-365"></a>使用 DMARC 验证 Office 365 中的电子邮件
 
@@ -209,7 +209,7 @@ _dmarc.domain  TTL  IN  TXT  "v=DMARC1; pct=100; p=policy"
   
 - 用户使用其电子邮件客户端分别添加安全发件人
     
-- 管理员创建一个适用于所有用户的 Exchange 传输规则 (ETR)，允许那些特定发件人的邮件。 
+- 管理员为所有用户创建一个 Exchange 邮件流规则 (也称为传输规则), 以允许这些特定发件人的邮件。 
     
 ## <a name="troubleshooting-your-dmarc-implementation"></a>DMARC 实现疑难解答
 <a name="dmarctroubleshoot"> </a>

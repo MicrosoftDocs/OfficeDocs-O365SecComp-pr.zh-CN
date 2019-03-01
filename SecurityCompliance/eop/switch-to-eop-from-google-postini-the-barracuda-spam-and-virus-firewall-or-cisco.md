@@ -11,12 +11,12 @@ ms.custom: TN2DMC
 localization_priority: Normal
 ms.assetid: 81b75194-3b04-48da-8b81-951afbabedde
 description: 本主题的目的是帮助您了解从内部部署电子邮件卫生设备或基于云的保护服务切换到 Exchange Online Protection (EOP) 的过程，然后为您提供开始操作的帮助资源。
-ms.openlocfilehash: d1dc75e8d020f865e4f358899802d0da320deeb5
-ms.sourcegitcommit: 22bca85c3c6d946083d3784f72e886c068d49f4a
+ms.openlocfilehash: a1fa7b63dfc1e6eb193d458545722c4b5331bc48
+ms.sourcegitcommit: 48fa456981b5c52ab8aeace173c8366b9f36723b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/06/2018
-ms.locfileid: "22026399"
+ms.lasthandoff: 02/28/2019
+ms.locfileid: "30340753"
 ---
 # <a name="switch-to-eop-from-google-postini-the-barracuda-spam-and-virus-firewall-or-cisco-ironport"></a>从 Google Postini、Barracuda 垃圾邮件和病毒防火墙或 Cisco IronPort 切换到 EOP
 
@@ -56,9 +56,9 @@ ms.locfileid: "22026399"
 
 当决定切换到 EOP 时，请确保特别留意下列几个方面：
   
-- **自定义筛选规则** 如果您有自定义筛选或业务策略规则来捕获特定垃圾邮件，则建议您迁移规则之前，尝试一段时间带有默认设置的 EOP。EOP 提供了具有默认设置的企业级垃圾邮件保护，这可能表示您不需要将某些规则迁移到 EOP。当然，如果您有现成的强制特定自定义业务策略的规则，则可以创建这些规则。 [Transport Rules](http://technet.microsoft.com/library/c3d2031c-fb7b-4866-8ae1-32928d0138ef.aspx)为在 EOP 中创建传输规则提供了详细说明。 
+- **自定义筛选规则**如果您具有自定义筛选或业务策略规则来捕获特定垃圾邮件, 我们建议您在迁移规则之前, 使用默认设置尝试 EOP。EOP 提供了具有默认设置的企业级垃圾邮件保护, 它可能会导致您不需要将某些规则迁移到 EOP。当然, 如果有强制实施特定自定义业务策略的规则, 则可以创建这些规则。[Exchange Online Protection 中的邮件流规则 (传输规则)](mail-flow-rules-transport-rules-0.md)提供了有关在 EOP 中创建邮件流规则的详细说明。 
     
-- **IP 允许列表和 IP 阻止列表**如果您有每个用户允许列表和阻止名单，允许一些时间来安装过程的一部分复制到 EOP 的列表。有关 IP 允许列表和 IP 阻止列表，请参阅[配置连接筛选器策略](../configure-the-connection-filter-policy.md)。
+- **ip 允许列表和 ip 阻止列表**如果您具有每用户允许列表和阻止列表, 请在设置过程中留出一些时间将列表复制到 EOP。有关 ip 允许列表和 ip 阻止列表的详细信息, 请参阅[Configure the connection filter policy](../configure-the-connection-filter-policy.md)。
     
 - **安全通信** 如果您的合作伙伴需要加密邮件传递，我们建议在 Exchange 管理中心中进行该设置。若要配置此方案，请参阅 [Create connectors for a secure mail channel using transport layer security (TLS)](http://technet.microsoft.com/library/1ce4d6a4-41ba-4d1e-9ca9-e826252c1041.aspx)。
     

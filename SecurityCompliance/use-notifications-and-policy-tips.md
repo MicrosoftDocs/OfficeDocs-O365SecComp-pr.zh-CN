@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: 87496bc5-9601-4473-8021-cb05c71369c1
 description: '策略提示是当有人使用与 DLP 策略冲突的内容时显示的通知或警告。您可以使用电子邮件通知和策略提示来提高知名度并帮助人们了解组织的策略。您还可以为用户提供替代策略的选项, 以便它们不会被阻止, 如果他们具有有效的业务需求, 或者如果策略检测到误报也是如此。 '
-ms.openlocfilehash: 1e161aa1b8de48cea32718f2c04b05436b25c0ff
-ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
+ms.openlocfilehash: 77bf9947356a4c8986e8b8cca7544350fa300c01
+ms.sourcegitcommit: 48fa456981b5c52ab8aeace173c8366b9f36723b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30216442"
+ms.lasthandoff: 02/28/2019
+ms.locfileid: "30341693"
 ---
 # <a name="send-email-notifications-and-show-policy-tips-for-dlp-policies"></a>发送电子邮件通知并显示 DLP 策略的策略提示
 
@@ -227,7 +227,7 @@ ms.locfileid: "30216442"
 
 策略提示可使用在 Exchange 管理中心中创建的 dlp 策略和邮件流规则, 或使用在 Office 365 安全&amp;合规中心中创建的 dlp 策略, 但不能同时使用这两种策略。这是因为这些策略存储在不同的位置, 但策略提示只能从一个位置进行绘制。
   
-如果已在 Exchange 管理中心中配置了策略提示, 则在 Office 365 安全&amp;合规中心中配置的任何策略提示都不会显示在 outlook 网页和 outlook 2013 及更高版本的 outlook 中, 直到您关闭 Exchange 中的提示。管理中心。这样可确保您当前的 Exchange 传输规则将继续运行, 直到您选择切换到 Office 365 安全&amp;合规中心。
+如果已在 Exchange 管理中心中配置了策略提示, 则在 Office 365 安全&amp;合规中心中配置的任何策略提示都不会显示在 outlook 网页和 outlook 2013 及更高版本的 outlook 中, 直到您关闭 Exchange 中的提示。管理中心。这样可确保当前的 Exchange 邮件流规则 (也称为传输规则) 在您选择切换到 "Office 365 安全&amp;合规中心" 之前仍有效。
   
 请注意, 虽然策略提示只能从一个位置进行绘制, 但总是发送电子邮件通知, 即使您在 Office 365 安全&amp;合规中心和 Exchange 管理中心中使用的是 DLP 策略也是如此。
   

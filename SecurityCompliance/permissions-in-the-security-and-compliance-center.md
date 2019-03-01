@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: d10608af-7934-490a-818e-e68f17d0e9c1
 description: 通过 Office 365 安全&amp;合规中心, 您可以向执行合规性任务 (如设备管理、数据丢失防护、电子数据展示、保留等) 的人员授予权限。这些人员只能执行您明确授予他们访问权限的任务。若要访问安全&amp;合规性中心, 用户必须是 Office 365 全局管理员或一个或多个安全&amp;合规中心角色组的成员。
-ms.openlocfilehash: 3ff5583a0a4f9dcabcc1b7d676593b7c6eb0bbba
-ms.sourcegitcommit: a80bd8626720fabdf592b84e4424cd3a83d08280
+ms.openlocfilehash: e935c71f9324dbce8e0b359bfe723b93ff500b0a
+ms.sourcegitcommit: 48fa456981b5c52ab8aeace173c8366b9f36723b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30223501"
+ms.lasthandoff: 02/28/2019
+ms.locfileid: "30341353"
 ---
 # <a name="permissions-in-the-office-365-security-amp-compliance-center"></a>Office 365 安全&amp;合规中心中的权限
 
@@ -47,7 +47,7 @@ ms.locfileid: "30223501"
 
 下表列出了安全&amp;合规性中心中提供的默认角色组。若要向用户授予执行合规性任务的权限, 请将其添加到相应&amp;的安全合规中心角色组。
   
-管理安全&amp;合规性中心中的权限仅使用户能够访问安全&amp;合规性中心本身提供的合规性功能。如果要向不在安全&amp;合规中心中的其他合规性功能 (如 Exchange 传输规则) 授予权限, 则需要使用 exchange 管理中心。
+管理安全&amp;合规性中心中的权限仅使用户能够访问安全&amp;合规性中心本身提供的合规性功能。如果要向不在安全&amp;合规中心中的其他合规性功能 (如 Exchange 邮件流规则 (也称为传输规则) 授予权限, 则需要使用 exchange 管理中心。
   
 若要了解如何授予对安全&amp;合规中心的访问权限, 请参阅[授予用户对 Office 365 合规性管理中心的访问权限](grant-access-to-the-security-and-compliance-center.md)。
   

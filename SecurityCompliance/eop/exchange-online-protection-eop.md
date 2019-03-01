@@ -11,12 +11,12 @@ ms.custom: TN2DMC
 localization_priority: Normal
 ms.assetid: 70ab4af2-fec4-4886-8e12-27d348649204
 description: 在开始使用 EOP 之前, 应注意以下几点。
-ms.openlocfilehash: 2535a796a0ac1548160545226586233af7b50080
-ms.sourcegitcommit: 06d6e63225f912d0f3c6bb836c61eb11c1dbe97a
+ms.openlocfilehash: fc5ea726de190395407952ceac69c4c682ac8f67
+ms.sourcegitcommit: 48fa456981b5c52ab8aeace173c8366b9f36723b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "30206555"
+ms.lasthandoff: 02/28/2019
+ms.locfileid: "30341743"
 ---
 # <a name="exchange-online-protection"></a>Exchange Online Protection 
 
@@ -50,7 +50,7 @@ ms.locfileid: "30206555"
     
 - [配置 EOP 的最佳实践](best-practices-for-configuring-eop.md) 介绍设置和配置服务后推荐的配置设置和注意事项。 
     
-- [EOP 中的邮件策略和合规性](messaging-policy-and-compliance-in-eop.md) 介绍如何使用 Exchange 传输规则（自定义筛选规则）来执行特定的公司法规和政策，以及如何使用审核报告追踪服务的配置更改。 
+- [EOP 中的邮件策略和合规性](messaging-policy-and-compliance-in-eop.md)介绍如何使用 Exchange 邮件流规则 (也称为传输规则) 强制实施特定的公司规章和策略, 以及如何使用审核报告来跟踪对服务的配置更改。 
     
 - [Anti-Spam and Anti-Malware Protection](http://technet.microsoft.com/library/93c6c227-7442-4293-b64d-ec8f15c928db.aspx) 介绍垃圾邮件筛选和恶意软件筛选，展示了如何对其自定义以最大程度地满足组织的需要。还介绍了管理员和最终用户可以对隔离邮件执行的任务。 
     

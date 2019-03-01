@@ -15,12 +15,12 @@ search.appverid:
 - MET150
 ms.assetid: 0d4d0f35-390b-4518-800e-0c7ec95e946c
 description: '使用 office 365 安全 & 合规中心搜索统一审核日志, 以查看 Office 365 组织中的用户和管理员活动。 '
-ms.openlocfilehash: 6cab2a0495b4c4b1976a5c45b898603653568599
-ms.sourcegitcommit: baf23be44f1ed5abbf84f140b5ffa64fce605478
+ms.openlocfilehash: ac4ded889b913b2a090e4002f917ec06485948e1
+ms.sourcegitcommit: 48fa456981b5c52ab8aeace173c8366b9f36723b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "30296605"
+ms.lasthandoff: 02/28/2019
+ms.locfileid: "30341770"
 ---
 # <a name="search-the-audit-log-in-the-office-365-security--compliance-center"></a>在 Office 365 安全 & 合规中心中搜索审核日志
 
@@ -295,12 +295,13 @@ ms.locfileid: "30296605"
 |:-----|:-----|:-----|
 |[文件和页面活动](#file-and-page-activities)<br/> |[文件夹活动](#folder-activities)<br/> |[共享和访问请求活动](#sharing-and-access-request-activities)<br/> |
 |[同步活动](#synchronization-activities)<br/> |[网站管理活动](#site-administration-activities)<br/> |[Exchange 邮箱活动](#exchange-mailbox-activities)<br/> |
-|[Sway 活动](#sway-activities) <br/> |[用户管理活动](#user-administration-activities) <br/> |[Azure AD 组管理活动](#azure-ad-group-administration-activities) <br/> |
-|[应用程序管理活动](#application-administration-activities) <br/> |[角色管理活动](#role-administration-activities) <br/> |[目录管理活动](#directory-administration-activities) <br/> |
-|[电子数据展示活动](#ediscovery-activities) <br/> |[Power BI 活动](#power-bi-activities) <br/> |[Microsoft 工作区分析](#microsoft-workplace-analytics-activities)<br/>|
-[Microsoft 团队活动](#microsoft-teams-activities) <br/> |[Yammer 活动](#yammer-activities) <br/> |[Microsoft Flow](#microsoft-flow) <br/> 
-|[Microsoft PowerApps](#microsoft-powerapps)<br/>|[Microsoft Stream](#microsoft-stream) <br/>|[Exchange 管理活动](#exchange-admin-audit-log)<br/>|
-|||
+|[保留策略和标签活动](#retention-policy-and-label-activities) <br/>|[Sway 活动](#sway-activities) <br/> |[用户管理活动](#user-administration-activities) <br/> 
+|[Azure AD 组管理活动](#azure-ad-group-administration-activities) <br/> |[应用程序管理活动](#application-administration-activities) <br/> |[角色管理活动](#role-administration-activities) <br/> |
+|[目录管理活动](#directory-administration-activities) <br/> |[电子数据展示活动](#ediscovery-activities) <br/> |[Power BI 活动](#power-bi-activities) <br/> |
+|[Microsoft 工作区分析](#microsoft-workplace-analytics-activities)<br/>|[Microsoft 团队活动](#microsoft-teams-activities) <br/> |[Yammer 活动](#yammer-activities) <br/> |
+[Microsoft Flow](#microsoft-flow) <br/> |[Microsoft PowerApps](#microsoft-powerapps)<br/>|[Microsoft Stream](#microsoft-stream) <br/>|
+|[Exchange 管理活动](#exchange-admin-audit-log)<br/>
+||||
    
   
 ### <a name="file-and-page-activities"></a>文件和页面活动
@@ -450,8 +451,10 @@ ms.locfileid: "30296605"
 |**易记名称**|**Operation**|**说明**|
 |:-----|:-----|:-----|
 |添加了委派邮箱权限  <br/> |外接 add-mailboxpermission  <br/> |管理员向其他人的邮箱分配了对用户 (称为代理) 的 FullAccess 邮箱权限。FullAccess 权限允许代理打开其他人的邮箱, 并读取和管理邮箱的内容。  <br/> |
+|将邮件分类为记录  <br/> |ApplyRecordLabel<br/> |邮件被分类为记录。当手动或自动应用将内容分类为记录时, 将发生这种情况。<br/> |
 |将邮件复制到另一个文件夹  <br/> |Copy  <br/> |已将某个邮件复制到另一个文件夹。  <br/> |
 |创建的邮箱项目  <br/> |Create  <br/> |在邮箱中的 "日历"、"联系人"、"便笺" 或 "任务" 文件夹中创建项;例如, 创建一个新的会议请求。请注意, 不会审核创建、发送或接收邮件。此外, 还不会审核创建邮箱文件夹的情况。  <br/> |
+|在 Outlook web app 中创建了新的收件箱规则  <br/> |NewInboxRule<br/> |<br/> |
 |从 "已删除邮件" 文件夹中删除邮件  <br/> |SoftDelete  <br/> |邮件已从 "已删除邮件" 文件夹中永久删除或删除。这些项目将移动到 "可恢复的项目" 文件夹中。当用户选择邮件并按**Shift + Delete**时, 邮件也会移动到 "可恢复的项目" 文件夹中。<br/> |
 |将邮件移动到另一个文件夹  <br/> |Move  <br/> |已将某个邮件移至另一个文件夹。  <br/> |
 |将邮件移动到 "已删除邮件" 文件夹  <br/> |MoveToDeletedItems  <br/> |已将某个邮件删除并移至“已删除邮件”文件夹。  <br/> |
@@ -466,6 +469,28 @@ ms.locfileid: "30296605"
 |全都  <br/> |UpdateInboxRules  <br/> |已添加、删除或更改收件箱规则。"收件箱" 规则用于根据指定的条件处理用户收件箱中的邮件, 并在满足规则条件时采取操作, 例如将邮件移动到指定文件夹或删除邮件。<br/> 若要返回收件箱规则活动的条目, 您必须在 "**活动**" 列表中选择 "**显示所有活动的结果**"。使用 "日期范围" 框和 "**用户**" 列表缩小搜索结果的范围。<br/> |
 ||||
   
+### <a name="retention-policy-and-label-activities"></a>保留策略和标签活动
+
+下表介绍了与 office 365 保留策略和 office 365 保留标签相关的活动, 详细信息, 请参阅:
+
+- [保留策略概述](retention-policies.md)
+- [保留标签概述](labels.md)
+<br/>
+
+|**活动**|**Operation**|**说明**|
+|:-----|:-----|:-----|
+| 为保留策略创建保留配置<br/> |NewRetentionComplianceRule<br/> |管理员为新的保留策略配置保留设置。保留设置包括项目保留的时间, 以及保留期过期时的项目发生的情况 (例如, 删除项目、保留项目或保留, 然后将其删除)。此活动还对应于运行[new-retentioncompliancerule](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-retention/new-retentioncompliancerule) cmdlet。<br/>|
+| 创建的保留标签 <br/> |NewComplianceTag<br/>  |管理员创建一个新的保留标签。<br/> |
+| 创建的保留策略<br/> |NewRetentionCompliancePolicy<br/> |管理员创建新的保留策略。<br/>  |
+| 保留策略的已删除保留配置<br/> | RemoveRetentionComplianceRule<br/>| 管理员删除保留策略的配置设置。当管理员删除保留策略或运行**new-retentioncompliancerule** cmdlet 时, 最可能会记录此活动。<br/> |
+| 已删除保留标签 <br/> |RemoveComplianceTag<br/>  | 管理员删除保留标签。<br/>|
+| 已删除保留策略<br/> |RemoveRetentionCompliancePolicy<br/> |管理员删除保留策略。 <br/>  |
+| 启用法规遵从性功能<br/> |SetRestrictiveRetentionUI<br/> |管理员通过运行**RegulatoryComplianceUI** cmdlet 来启用法规遵从性功能。在运行此 cmdlet 之后, 管理员可以使用安全 & 合规中心 UI 锁定保留策略, 并将保留标签指定为规章记录。在组织使用**RegulatoryComplianceUI** cmdlet 启用这些功能之前, 锁定保留策略和创建规章保留标签只能通过使用 PowerShell 来完成。<br/>|
+| 更新了保留策略的保留配置<br/> | SetRetentionComplianceRule<br/>| 管理员更改现有保留策略的保留设置。保留设置包括项目保留的时间, 以及保留期过期时的项目发生的情况 (例如, 删除项目、保留项目或保留, 然后将其删除)。此活动还对应于运行[new-retentioncompliancerule](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-retention/set-retentioncompliancerule) cmdlet。<br/>|
+| 更新的保留标签 <br/> |SetComplianceTag<br/>  | 管理员更新现有保留标签。<br/>|
+| 更新的保留策略<br/> |SetRetentionCompliancePolicy <br/>|管理员更新现有的保留策略。触发此事件的更新包括添加或排除应用保留策略的内容位置。<br/>|
+||||
+
 ### <a name="sway-activities"></a>Sway 活动
   
 下表列出了 Sway 中的用户和管理员活动。Sway 是 Office 365 应用程序, 可帮助用户在基于 web 的交互式画布上收集、格式化和共享想法、情景和演示文稿。有关详细信息, 请参阅[有关 Sway 的常见问题-管理员帮助](https://support.office.com/article/446380fa-25bf-47b2-996c-e12cb2f9d075)。
@@ -663,7 +688,7 @@ ms.locfileid: "30296605"
 |查看文件  <br/> |FileVisited  <br/> |用户查看文件。  <br/> |
 ||||
    
-### <a name="microsoft-flow"></a>Microsoft Flow
+### <a name="microsoft-flow-activities"></a>Microsoft 流活动
 
 可以在审核日志中搜索 Microsoft Flow 中的活动。这些活动包括创建、编辑和删除流以及更改流权限。有关流活动审核的信息, 请参阅现已[在 Office 365 Security & 合规中心中提供的博客 Microsoft 流审核事件](https://flow.microsoft.com/blog/security-and-compliance-center)。
 
@@ -671,10 +696,10 @@ ms.locfileid: "30296605"
 
 您可以在 PowerApps 中搜索与应用程序相关的活动的审核日志。这些活动包括创建、启动和发布应用程序。还会审核为应用程序分配权限。有关所有 powerapps 活动的说明, 请参阅[powerapps 的活动日志记录](https://docs.microsoft.com/en-us/power-platform/admin/logging-powerapps#what-events-are-audited)。
 
-### <a name="microsoft-stream"></a>Microsoft Stream
+### <a name="microsoft-stream-activities"></a>Microsoft Stream 活动
   
 可以在审核日志中搜索 Microsoft Stream 中的活动。这些活动包括用户执行的视频活动、组频道活动和管理活动, 如管理用户、管理组织设置和导出报告。有关这些活动的说明, 请参阅[microsoft stream 中的审核日志](https://docs.microsoft.com/stream/audit-logs)中的 "microsoft stream 中记录的活动" 部分。
-  
+
 ### <a name="exchange-admin-audit-log"></a>Exchange 管理员审核日志
   
 exchange 管理员审核日志记录 (默认情况下在 office 365 中启用) 在管理员 (或已分配管理权限的用户) 在 Exchange Online 组织中进行更改时, 会在 office 365 审核日志中记录一个事件。通过使用 exchange 管理中心或通过在 Windows PowerShell 中运行 cmdlet 所做的更改将记录在 Exchange 管理员审核日志中。有关 Exchange 中的管理员审核日志记录的更多详细信息, 请参阅[管理员审核日志记录](https://go.microsoft.com/fwlink/p/?LinkID=619225)。

@@ -11,19 +11,19 @@ ms.custom: TN2DMC
 localization_priority: Normal
 ms.assetid: 9d64867b-ebdb-4323-8e30-4560d76b4c97
 description: 更改业务需求有时可能需要将一个 Microsoft Exchange Online Protection (EOP) 组织（租户）分成两个单独的组织，将两个组织合并为一个组织，或将您的域和 EOP 设置从一个组织移动到另一个组织。
-ms.openlocfilehash: f822e9e5aa91a67a15b327f73c29bf9bee2ff99e
-ms.sourcegitcommit: 380ea5b269a64bd581a225e122cbd82d2ce0bf98
+ms.openlocfilehash: e2b030064ce180bd7eeebfb281751dc147dca899
+ms.sourcegitcommit: 48fa456981b5c52ab8aeace173c8366b9f36723b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/20/2018
-ms.locfileid: "23002201"
+ms.lasthandoff: 02/28/2019
+ms.locfileid: "30341553"
 ---
 # <a name="move-domains-and-settings-from-one-eop-organization-to-another-eop-organization"></a>将域和设置从一个 EOP 组织移动到另一个 EOP 组织
 
 更改业务需求有时可能需要将一个 Microsoft Exchange Online Protection (EOP) 组织（租户）分成两个单独的组织，将两个组织合并为一个组织，或将您的域和 EOP 设置从一个组织移动到另一个组织。从一个 EOP 组织移动到另一个 EOP 组织极具挑战性，但通过一些基本的远程 Windows PowerShell 脚本和少量的准备工作，您便可以通过相对较小的维护窗口实现此目标。 
   
 > [!NOTE]
->  设置可以可靠地移动仅能从独立 EOP 服务 （EOP 高级版） 的组织，与到另一个 EOP 标准或 Exchange Enterprise CAL （标准） 组织或从 EOP Premium 组织到另一个 EOP Premium 组织。EOP 标准，组织中不支持某些高级功能，因为从 EOP Premium 组织移动到 EOP 标准的组织可能不会成功。> 对于 EOP 筛选限组织的这些说明。有一些将从一个 Exchange Online 组织移至另一个 Exchange Online 组织中的其他注意事项。Exchange Online 组织是超出范围的这些说明。 
+>  只能将设置从 EOP 独立 (标准) 组织中可靠地移动到另一个 EOP 标准或 Exchange Enterprise CAL with Services (EOP Premium) 组织, 或从 EOP Premium 组织移动到另一个 EOP 高级组织。由于某些高级功能在 EOP 标准组织中不受支持, 因此从 EOP premium 组织移动到 EOP 标准组织可能不会成功。> 这些说明适用于仅限 EOP 筛选组织。从一个 exchange online 组织移动到另一个 exchange online 组织时, 需要考虑其他注意事项。Exchange Online 组织不在这些说明的作用域内。 
   
 在以下示例中，Contoso, Ltd. 已与 Contoso Suites 合并。下图显示了将域、邮件用户和组，以及设置从源 EOP 组织 (contoso.onmicrosoft.com) 移动到目标 EOP 组织 (contososuites.onmicrosoft.com) 的过程。
   
@@ -47,10 +47,10 @@ ms.locfileid: "23002201"
     
 - 连接器
     
-- 传输规则
+- 邮件流规则 (也称为传输规则)
     
     > [!NOTE]
-    > 对传输规则集合导出和导入操作的 Cmdlet 支持当前仅支持 EOP Premium 订阅计划。 
+    > Cmdlet 对邮件流规则集的导出和导入的支持目前仅支持 EOP 高级订阅计划。 
   
 收集您的所有设置最简便的方法是使用远程 Windows PowerShell。若要使用远程 Windows PowerShell 连接到 EOP，请参阅[使用远程 PowerShell 连接到 Exchange Online Protection](http://technet.microsoft.com/library/054e0fd7-d465-4572-93f8-a00a9136e4d1.aspx)。
   
@@ -66,10 +66,10 @@ mkdir C:\EOP\Export
 cd C:\EOP\Export
 ```
 
-可以使用以下脚本收集源组织中的所有邮件用户、组、反垃圾邮件设置、反恶意软件设置、连接器以及传输规则。将下面的文本复制并粘贴到记事本等文本编辑器，将文件在刚刚创建的“Export”目录中另存为 Source_EOP_Settings.ps1，然后运行以下命令：
+以下脚本可用于收集源组织中的所有邮件用户、组、反垃圾邮件设置、反恶意软件设置、连接器和邮件流规则。将以下文本复制并粘贴到记事本之类的文本编辑器中, 将该文件保存为 Source_EOP_Settings。在您刚创建的导出目录中, 然后运行以下命令:
   
 ```
-&amp; "C:\EOP\Export\Source_EOP_Settings.ps1"
+& "C:\EOP\Export\Source_EOP_Settings.ps1"
 
 ```
 
@@ -133,11 +133,10 @@ Get-MalwareFilterRule | Export-Clixml MalwareFilterRule.xml
 Get-InboundConnector | Export-Clixml InboundConnector.xml
 Get-OutboundConnector | Export-Clixml OutboundConnector.xml
 #****************************************************************************
-# Exchange transport rules
+# Exchange mail flow rules
 #****************************************************************************
 $file = Export-TransportRuleCollection
 Set-Content -Path ".TransportRules.xml" -Value $file.FileData -Encoding Byte
-
 ```
 
 从“Export”目录运行以下命令，以通过目标组织更新 .xml 文件。将 contoso.onmicrosoft.com 和 contososuites.onmicrosoft.com 分别替换为您的源组织名称和目标组织名称。
@@ -177,11 +176,11 @@ Foreach ($domain in $Domains) {
   
 1. 登录 Office 365 管理中心 [https://portal.office.com](https://portal.office.com)。
     
-2. 单击**域**。
+2. 单击 "**域**"。
     
-3. 单击每个**启动安装程序**的链接，然后再继续通过安装向导。 
+3. 单击每个 "**启动安装程序**" 链接, 然后继续执行安装向导。 
     
-4. 在**确认所有权**页的**分步说明如何执行此步骤，请参阅**，请选择**一般说明**。
+4. 在 "**确认所有权**" 页上, 有关**如何执行此步骤**的分步说明, 请选择 "**一般说明**"。
     
 5. 记录您将用来验证域的 MX 记录或 TXT 记录，并完成安装向导。
     
@@ -246,9 +245,9 @@ Remove-MsolDomain -DomainName $Domain.Name -Force
 
 1. 登录 Office 365 管理中心 [https://portal.office.com](https://portal.office.com)。
     
-2. 单击**域**。
+2. 单击 "**域**"。
     
-3. 单击目标域的每个**启动安装程序**链接，然后继续完成安装向导。 
+3. 单击目标域的每个 "**启动安装程序**" 链接, 然后继续执行安装向导。 
     
 ## <a name="step-6-add-mail-users-and-groups-to-the-target-organization"></a>步骤 6：将邮件用户和组添加到目标组织
 

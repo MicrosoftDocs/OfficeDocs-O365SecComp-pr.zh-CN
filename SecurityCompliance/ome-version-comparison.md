@@ -10,12 +10,12 @@ localization_priority: Normal
 search.appverid:
 - MET150
 description: 帮助解释随不同版本的 Office 365 邮件加密提供的功能之间的差异, 以及这两个如何继续协同工作。
-ms.openlocfilehash: 477fbe8f9d71bd92225a7ba5043576f164933b4e
-ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
+ms.openlocfilehash: 47632d7e960e2dee2b068baaf46b98716fc8d4d0
+ms.sourcegitcommit: 48fa456981b5c52ab8aeace173c8366b9f36723b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30216672"
+ms.lasthandoff: 02/28/2019
+ms.locfileid: "30341433"
 ---
 # <a name="compare-versions-of-ome"></a>比较 OME 的版本
 
@@ -31,7 +31,7 @@ ms.locfileid: "30216672"
 |                                   |旧功能       |                   |新增功能              |
 |-----------------------------------|-------------------|-------------------|--------------------------|
 |**功能**                     | **旧版 OME**    | **IRM**           | **新的 OME 功能** |
-|*发送加密邮件*        |通过 Exchange 邮件流规则|最终用户是从 Outlook 桌面或 Web 上的 outlook 启动的;或通过 Exchange 邮件流规则|最终用户从 outlook 桌面、outlook for Mac 或 Web 上的 outlook 启动;通过 Exchange 传输规则和 Office 365 数据丢失防护 (DLP)|
+|*发送加密邮件*        |通过 Exchange 邮件流规则|最终用户是从 Outlook 桌面或 Web 上的 outlook 启动的;或通过 Exchange 邮件流规则|最终用户从 outlook 桌面、outlook for Mac 或 Web 上的 outlook 启动;通过 Exchange 邮件流规则 (也称为传输规则) 和 Office 365 数据丢失防护 (DLP)|
 |*权限管理模板*       |   不适用      |"不要转发" 选项和自定义模板|不转发选项、仅加密选项和自定义模板|
 |*收件人类型*                   |内部和外部收件人|仅限内部收件人         |内部和外部收件人|
 |*内部收件人的体验*|收件人收到 HTML 邮件, 并在 web 浏览器或移动应用程序中将其下载和打开|Outlook 客户端中的本机内嵌体验|Office 365 收件人的本机内嵌体验。所有其他收件人都可以从 OME 门户读取邮件 (无需下载或应用程序)。|

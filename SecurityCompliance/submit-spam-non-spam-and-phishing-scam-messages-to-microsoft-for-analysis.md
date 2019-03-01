@@ -15,12 +15,12 @@ ms.assetid: dad30e2f-93fe-4d21-9a36-21c87ced85c1
 ms.collection:
 - M365-security-compliance
 description: '你和你的用户可以将虚假的负垃圾邮件和假肯定垃圾邮件提交给 Microsoft 进行分析。 '
-ms.openlocfilehash: 553f73ffc82dc6f7091b81171213f95f7a092674
-ms.sourcegitcommit: 686bc9a8f7a7b6810a096f07d36751d10d334409
+ms.openlocfilehash: af11c7ab8e6d80737d2b25ca2b37c3bf7da9fe07
+ms.sourcegitcommit: 48fa456981b5c52ab8aeace173c8366b9f36723b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "30276092"
+ms.lasthandoff: 02/28/2019
+ms.locfileid: "30341523"
 ---
 # <a name="submit-spam-non-spam-and-phishing-scam-messages-to-microsoft-for-analysis"></a>将垃圾邮件、非垃圾邮件和网络欺诈邮件提交给 Microsoft 进行分析
 
@@ -79,7 +79,7 @@ ms.locfileid: "30276092"
     
 - 如果您在配置内容筛选器时使用 "**隔离邮件**" 操作而不是 "**将邮件移动到垃圾邮件文件夹**" 操作, 请执行以下操作: 
     
-  - 管理员可以释放垃圾邮件隔离的邮件, 并将其报告为来自 Exchange 管理中心的误报。有关详细信息, 请参阅[以管理员身份查找并释放隔离的邮件](find-and-release-quarantined-messages-as-an-administrator.md)。
+  - 管理员可以释放隔离的垃圾邮件并从 Exchange 管理中心将其报告为误报。有关详细信息，请参阅[以管理员身份查找并释放隔离邮件](find-and-release-quarantined-messages-as-an-administrator.md)。
     
   - 用户可以释放自己的垃圾邮件隔离邮件, 并通过以下频道将其报告为误报: 
     

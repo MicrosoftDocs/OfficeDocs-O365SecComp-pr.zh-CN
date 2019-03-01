@@ -13,13 +13,13 @@ search.appverid:
 ms.assetid: 9b7daf19-d5f2-415b-bc43-a0f5f4a585e8
 ms.collection:
 - M365-security-compliance
-description: 管理员可以了解如何创建邮件流规则 (也称为传输规则), 以使用 Office 365 邮件加密 (OME) 对邮件进行加密和解密。
-ms.openlocfilehash: f76abe2d341b9e3677a90d447e70f6091e3a91cc
-ms.sourcegitcommit: 686bc9a8f7a7b6810a096f07d36751d10d334409
+description: 管理员可以学习使用 Office 365 邮件加密 (OME) 来创建邮件流规则 (传输规则), 以对邮件进行加密和解密。
+ms.openlocfilehash: 29199856600b05cf45e3e9b23c943c87867d169d
+ms.sourcegitcommit: 48fa456981b5c52ab8aeace173c8366b9f36723b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "30276202"
+ms.lasthandoff: 02/28/2019
+ms.locfileid: "30341533"
 ---
 # <a name="define-mail-flow-rules-to-encrypt-email-messages-in-office-365"></a>定义用于加密 Office 365 中的电子邮件的邮件流规则
 

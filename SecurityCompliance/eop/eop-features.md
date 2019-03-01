@@ -11,12 +11,12 @@ ms.custom: TN2DMC
 localization_priority: Normal
 ms.assetid: 599b8048-1056-457b-aae4-c063138fd319
 description: 下表提供了 Exchange Online Protection (EOP) 托管的电子邮件筛选服务中可用的功能列表。
-ms.openlocfilehash: ab63cea5fb0e774f0242cfc4f85194eee5b0ffd9
-ms.sourcegitcommit: a80bd8626720fabdf592b84e4424cd3a83d08280
+ms.openlocfilehash: d98451619503e28b032087855c06088079ac4d55
+ms.sourcegitcommit: 48fa456981b5c52ab8aeace173c8366b9f36723b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30223191"
+ms.lasthandoff: 02/28/2019
+ms.locfileid: "30341663"
 ---
 # <a name="eop-features"></a>EOP 功能
 
@@ -29,10 +29,10 @@ ms.locfileid: "30223191"
 |:-----|:-----|
 |**功能**|**说明**|
 |**反垃圾邮件保护**||
-|入站垃圾邮件检测|入站反垃圾邮件保护始终处于启用状态，不能禁用。您可以通过连接筛选器和内容筛选器策略配置自定义设置。  <br/> 对于 EOP 独立客户: 默认情况下, EOP 内容筛选器将检测到的垃圾邮件发送到每个收件人的 "垃圾邮件" 文件夹。但是, 为了帮助确保 "**将邮件移动到垃圾邮件文件夹**" 操作可用于内部部署邮箱, 必须在您的本地服务器上配置两个 Exchange 传输规则, 以检测由 EOP 添加的垃圾邮件头。有关详细信息, 请参阅[确保垃圾邮件已路由到每个用户的 "垃圾邮件" 文件夹](../ensure-that-spam-is-routed-to-each-user-s-junk-email-folder.md)。|
+|入站垃圾邮件检测|入站反垃圾邮件保护始终处于启用状态，不能禁用。您可以通过连接筛选器和内容筛选器策略配置自定义设置。  <br/> 对于 EOP 独立客户: 默认情况下, EOP 内容筛选器将检测到的垃圾邮件发送到每个收件人的 "垃圾邮件" 文件夹。但是, 为了帮助确保 "**将邮件移动到垃圾邮件文件夹**" 操作可用于内部部署邮箱, 必须在您的本地服务器上配置两个 Exchange 邮件流规则 (也称为传输规则), 以检测添加的垃圾邮件头由 EOP。有关详细信息, 请参阅[确保垃圾邮件已路由到每个用户的 "垃圾邮件" 文件夹](../ensure-that-spam-is-routed-to-each-user-s-junk-email-folder.md)。|
 |出站垃圾邮件检测|如果您使用该服务发送出站电子邮件, 则会始终启用出站反垃圾邮件保护, 从而帮助保护使用该服务的组织及其预期的收件人。与入站筛选类似, 出站垃圾邮件筛选由连接筛选和内容筛选组成。出站垃圾邮件筛选设置不可配置, 但有一些出站垃圾邮件策略设置可用于为可疑和阻止的出站邮件配置管理员通知。有关详细信息, 请参阅[配置出站垃圾邮件策略](../configure-the-outbound-spam-policy.md)。|
 |NDR 退信保护|有关 NDR 退信的详细信息, 请参阅[高级垃圾邮件筛选选项](../advanced-spam-filtering-asf-options.md)中的 ndr 退信设置以及[退信邮件和 EOP](../backscatter-messages-and-eop.md)。|
-|批量邮件筛选|EOP 具有用于识别批量电子邮件的增强检测方法。您可以将服务配置为通过用户界面标记批量电子邮件。您还可以通过搜索批量邮件邮件头标记来创建传输规则, 以更严格地筛选批量邮件。有关批量电子邮件的详细信息, 请参阅[垃圾邮件和批量电子邮件之间的区别是什么？](../what-s-the-difference-between-junk-email-and-bulk-email.md)及其关联的副标题。|
+|批量邮件筛选|EOP 具有用于识别批量电子邮件的增强检测方法。您可以将服务配置为通过用户界面标记批量电子邮件。您还可以通过搜索批量邮件邮件头标记来创建邮件流规则, 以更严格地筛选批量邮件。有关批量电子邮件的详细信息, 请参阅[垃圾邮件和批量电子邮件之间的区别是什么？](../what-s-the-difference-between-junk-email-and-bulk-email.md)及其关联的副标题。|
 |恶意 URL 阻止列表|EOP 使用多个 URL 阻止列表，帮助检测邮件中的已知恶意链接。|
 |防钓鱼保护|EOP 包括 750,000 个已知垃圾邮件制造者的域。|
 |**垃圾邮件管理**||
@@ -65,18 +65,18 @@ ms.locfileid: "30223191"
 |区域路由（将邮件流限制到指定区域）|有关详细信息，请参阅 [Exchange Online Protection 概述](exchange-online-protection-overview.md)中的"EOP 数据中心"部分。|
 |SMTP 连接检查程序工具|有关使用此工具测试邮件流的详细信息，请参阅[Test Mail Flow with the Remote Connectivity Analyzer](http://technet.microsoft.com/library/6c8c2964-d553-4329-8166-6e508dd63fa0.aspx)。|
 |匹配子域|有关发送至接受域的子域或从其发送的电子邮件流的详细信息，请参阅[在 EOP 中为子域启用电子邮件流](http://technet.microsoft.com/library/b5684042-dadc-4111-95b3-c2fd06e368bf.aspx)。|
-|**传输规则**||
-|基于策略的筛选和操作|自定义策略基于 Exchange 传输规则。您可以按域、关键字、文件名、文件类型、主题行、邮件正文、发件人、收件人、邮件头和 IP 地址进行筛选。有关详细信息, 请参阅[Exchange Online Protection 中的邮件流规则 (传输规则)](mail-flow-rules-transport-rules-0.md)。|
-|按文本模式进行筛选|传输规则可以使用数组或正则表达式匹配文本。您也可以使用一个字符串或字符串数组匹配多个邮件属性，例如地址、主题、正文或附件名称。有关详细信息，请参阅[Transport Rule Conditions (Predicates)](http://technet.microsoft.com/library/04edeaba-afd4-4207-b2cb-51bcc44e483c.aspx)。|
-|自定义词典|传输规则可包括文本和关键字的长列表，提供与自定义词典相同的功能。|
-|每个域策略规则|传输规则的范围可以自定义，以匹配发件人或收件人域名称、IP 地址范围，地址关键字或模式、组成员关系及其他条件。有关详细信息，请参阅[Transport Rule Conditions (Predicates)](http://technet.microsoft.com/library/04edeaba-afd4-4207-b2cb-51bcc44e483c.aspx)。|
+|**邮件流规则**||
+|基于策略的筛选和操作|自定义策略基于 Exchange 邮件流规则。您可以按域、关键字、文件名、文件类型、主题行、邮件正文、发件人、收件人、邮件头和 IP 地址进行筛选。有关详细信息, 请参阅[Exchange Online Protection 中的邮件流规则 (传输规则)](mail-flow-rules-transport-rules-0.md)。|
+|按文本模式进行筛选|邮件流规则可以使用数组或正则表达式匹配文本。您还可以使用一个字符串或一个字符串数组来匹配许多邮件属性, 如地址、主题、正文或附件名称。有关详细信息, 请参阅[Exchange Online Protection 中的邮件流规则 (传输规则)](mail-flow-rules-transport-rules-0.md)|
+|自定义词典|邮件流规则可以包括长文本和关键字列表, 并提供与自定义词典相同的功能。|
+|每个域策略规则|可以自定义邮件流规则的作用域, 以匹配发件人或收件人域名、IP 地址范围、地址关键字或模式、组成员身份以及其他条件。|
 |附件扫描|可以创建规则，以扫描附件的文件名、扩展名和内容。|
-|向发件人发送策略规则通知|您可以拒绝邮件, 并通过使用 "**增强状态代码**" 操作**说明**或拒绝邮件, 将未送达报告 (NDR) 发送给发件人。有关详细信息, 请参阅[传输规则操作](http://technet.microsoft.com/library/f8621ecb-a177-4025-9011-a6569999746a.aspx)。|
-|将邮件发送到固定地址（如重定向或将邮件复制到特定地址）|传输规则可以重定向收件人、通过抄送或密件抄送添加收件人、仅添加收件人，还有其他选项。有关详细信息，请参阅[Transport rule actions](http://technet.microsoft.com/library/f8621ecb-a177-4025-9011-a6569999746a.aspx)。|
-|轻松调整多个规则的优先级的能力|使用 Exchange 管理中心更改规则的处理顺序。有关详细信息，请参阅[Manage Transport Rules](http://technet.microsoft.com/library/e7a81372-b6d7-4d1f-bc9e-a845a7facac2.aspx)。  |
+|向发件人发送策略规则通知|您可以拒绝邮件, 并通过使用 "**增强状态代码**" 操作**说明**或拒绝邮件, 将未送达报告 (NDR) 发送给发件人。有关详细信息, 请参阅[Mail flow rule actions](http://technet.microsoft.com/library/f8621ecb-a177-4025-9011-a6569999746a.aspx)。|
+|将邮件发送到固定地址（如重定向或将邮件复制到特定地址）|邮件流规则可以通过抄送或密件抄送添加收件人, 只需添加收件人和其他选项即可进行重定向。有关详细信息, 请参阅[Mail flow rule actions](http://technet.microsoft.com/library/f8621ecb-a177-4025-9011-a6569999746a.aspx)。|
+|轻松调整多个规则的优先级的能力|使用 Exchange 管理中心更改规则的处理顺序。|
 |筛选邮件并更改邮件的路由或属性的能力|您可以根据各种条件筛选邮件, 然后对每封邮件应用一系列操作。有关详细信息, 请参阅[Exchange Online Protection 中的邮件流规则 (传输规则)](mail-flow-rules-transport-rules-0.md)。|
 |按照规则更改邮件的垃圾邮件可信度。|您可以检查传输中的邮件, 并根据您选择的条件向其分配垃圾邮件可信度级别。有关详细信息, 请参阅[使用邮件流规则在邮件中设置垃圾邮件可信度级别 (SCL)](../use-mail-flow-rules-to-set-the-spam-confidence-level-scl-in-messages.md)。|
-|检查邮件附件|您可以检查附件内容或附加文件的特性，并根据结果定义要采取的操作。有关详细信息，请参阅[Using transport rules to inspect message attachments](http://technet.microsoft.com/library/874d1c78-a8ec-4938-b388-d3208c2fa971.aspx)。  |
+|检查邮件附件|您可以检查附件的内容或附加文件的特征, 并根据找到的内容定义要执行的操作。有关详细信息, 请参阅[使用邮件流规则检查邮件附件](http://technet.microsoft.com/library/874d1c78-a8ec-4938-b388-d3208c2fa971.aspx)。|
 |**管理**||
 |基于 Web 的管理|EOP 管理员可以通过 Exchange 管理中心 (EAC) 接口 (60 语言支持) 管理服务。有关详细信息, 请参阅 exchange [Online Protection 中的 exchange 管理中心](../exchange-admin-center-in-exchange-online-protection-eop.md)。|
 |目录同步|目录同步通过 Azure Active Directory 同步工具提供。有关详细信息，请参阅[在 EOP 中管理邮件用户](manage-mail-users-in-eop.md)中的"使用目录同步管理邮件用户"部分。  |
@@ -84,7 +84,7 @@ ms.locfileid: "30223191"
 |远程 Windows PowerShell 访问|远程 Windows PowerShell 提供完整的 EOP 功能。有关详细信息，请参阅 [Exchange Online Protection 中的 PowerShell](http://technet.microsoft.com/library/f7918a88-774a-405e-945b-bc2f5ee9f748.aspx)。  |
 |**报告和日志记录**||
 |邮件跟踪|邮件跟踪功能使您可以作为管理员在邮件经过服务时对邮件进行跟踪。该功能有助于您确定目标邮件是否被接收、拒绝、推迟或由 Exchange 服务进行了传递。这使得您可以有效回答用户的问题，解决邮件流问题，验证策略更改，并减少联系技术支持寻求帮助的需要。有关详细信息，请参阅[Trace an Email Message](http://technet.microsoft.com/library/0c83cde6-5b09-4106-8587-c200cdc59094.aspx)。  |
-|基于 Web 的报告|Office 365 管理中心的邮件保护报告提供邮件数据。例如，您可以监控检测到多少垃圾邮件和恶意软件，或者传输规则匹配的频率如何。通过这些交互式报告，您可以快速获取摘要数据的可视报告，并进一步了解每封邮件的详细信息（可回溯 90 天）。有关详细信息，请参阅[Use mail protection reports in Office 365 to view data about malware, spam, and rule detections](http://technet.microsoft.com/library/bcef7984-4bfa-4ca8-9fa5-a65af8618f5d.aspx)。  |
+|基于 Web 的报告|Office 365 管理中心中的邮件保护报告提供了邮件传输数据。例如, 您可以监视检测到的垃圾邮件和恶意软件的数量或邮件流规则匹配的频率。使用这些交互式报表, 可以快速获取摘要数据的可视报表, 并深入了解各个邮件的详细信息, 即回退为90天。有关详细信息, 请参阅[使用 Office 365 中的邮件保护报告查看关于恶意软件、垃圾邮件和规则检测的数据](http://technet.microsoft.com/library/bcef7984-4bfa-4ca8-9fa5-a65af8618f5d.aspx)。|
 |通过 Excel 报告工作簿进行详细报告|另外还提供 Excel 2013 报告工作簿格式的电子邮件保护报告。但是，我们建议转为使用增强的 Office 365 管理中心报告。Excel 2013 报告工作簿计划将在未来弃用。|
 |审核日志记录|向 EOP 管理员提供管理员角色组报告和管理员审核日志。有关详细信息，请参阅[EOP 中的审核报告](auditing-reports-in-eop.md)。  |
 |**服务级别协议 (SLA) 及支持**||

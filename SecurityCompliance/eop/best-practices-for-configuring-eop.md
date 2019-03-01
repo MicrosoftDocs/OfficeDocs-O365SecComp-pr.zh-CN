@@ -11,12 +11,12 @@ ms.custom: TN2DMC
 localization_priority: Normal
 ms.assetid: faf1efd1-3b0c-411a-804d-17f37292eac0
 description: 请遵循所建议的这些 Exchange Online Protection (EOP) 最佳做法，以成功达到目的，并避免常见的配置错误。
-ms.openlocfilehash: ef58e2cd5a3ffdbbeb02124442c355974d174073
-ms.sourcegitcommit: 22bca85c3c6d946083d3784f72e886c068d49f4a
+ms.openlocfilehash: a70fe44eb80b49c6e8c6ea46bc1d38b92bd07279
+ms.sourcegitcommit: 48fa456981b5c52ab8aeace173c8366b9f36723b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/06/2018
-ms.locfileid: "22027269"
+ms.lasthandoff: 02/28/2019
+ms.locfileid: "30341543"
 ---
 # <a name="best-practices-for-configuring-eop"></a>配置 EOP 的最佳实践
   
@@ -32,42 +32,42 @@ ms.locfileid: "22027269"
   
 ## <a name="spf-record-customization-to-help-prevent-spoofing"></a>SPF 记录自定义帮助防止欺骗
 
-时设置 EOP，您添加 SPF （发件人策略框架） 记录 eop 到您的 DNS 记录。SPF 记录有助于防止欺骗。有关如何 SPF 记录阻止欺骗和如何将您的本地 IP 地址添加到 SPF 记录的详细信息，请参阅[Set up Office 365 为了帮助防止欺骗中的 SPF](../set-up-spf-in-office-365-to-help-prevent-spoofing.md)。 
+在设置 EOP 时, 您已向 DNS 记录中添加了 EOP 的 SPF (发件人策略框架) 记录。SPF 记录有助于防止欺骗。有关 SPF 记录如何阻止欺骗以及如何将本地 IP 地址添加到 SPF 记录的详细信息, 请参阅[Set up SPF in Office 365 以帮助防止欺骗](../set-up-spf-in-office-365-to-help-prevent-spoofing.md)。 
   
 ## <a name="set-anti-spam-options"></a>设置反垃圾邮件选项
 
-管理您的连接筛选器设置通过将 IP 地址添加到 IP 允许和 IP 阻止列表，以及选择**启用安全列表**选项，其中应减少误报 （为垃圾邮件分类的良好邮件） 数收到。有关详细信息[配置连接筛选器策略](../configure-the-connection-filter-policy.md)。对于应用于整个组织的多个垃圾邮件设置，请了解一下[如何帮助确保邮件未标记为垃圾邮件](https://go.microsoft.com/fwlink/p/?LinkId=534224)或[阻止电子邮件与 Office 365 垃圾邮件筛选器以阻止假负问题垃圾邮件](https://go.microsoft.com/fwlink/p/?LinkId=534225)。如果您具有管理员级控件，并且想要防止误报或 false 负片，这些是非常有用。
+通过将 ip 地址添加到 ip 允许和 ip 阻止列表来管理连接筛选器设置, 并选择 "**启用安全列表**" 选项, 该选项应减少收到的误报数 (适用于分类为垃圾邮件的邮件)。有关详细信息, 请参阅[配置连接筛选器策略](../configure-the-connection-filter-policy.md)。有关适用于整个组织的更多垃圾邮件设置, 请查看[如何帮助确保邮件不会标记为垃圾](https://go.microsoft.com/fwlink/p/?LinkId=534224)邮件, 或[阻止使用 Office 365 垃圾邮件筛选器的电子邮件垃圾邮件, 以防止误报问题](https://go.microsoft.com/fwlink/p/?LinkId=534225)。如果你拥有管理员级别的控制, 并且想要避免误报或漏报, 这些将非常有用。
   
-通过审阅和 （可选） 更改默认设置来管理您的内容筛选器。例如，您可以更改为垃圾邮件检测到的邮件时会发生什么情况的操作。如果您想要使用垃圾邮件筛选保守方法，您可以配置高级垃圾邮件筛选选项。我们建议您测试这些选项首先之前实现它们在生产环境中 （通过打开其） 建议关注网络钓鱼的组织打开**SPF 记录： 硬失败**选项。有关详细信息[配置垃圾邮件筛选器策略](../configure-your-spam-filter-policies.md)和[高级垃圾邮件筛选选项](../advanced-spam-filtering-asf-options.md)。
+通过查看和 (可选) 更改默认设置来管理内容筛选器。例如, 您可以更改对垃圾邮件检测到的邮件发生的操作。如果要采用严格的垃圾邮件筛选方法, 可以配置高级垃圾邮件筛选选项。我们建议您先测试这些选项, 然后再在生产环境中实施它们 (通过启用它们), 建议关注网络钓鱼的组织启用 " **SPF 记录: 硬失败**" 选项。有关详细信息, 请参阅[配置垃圾邮件筛选器策略](../configure-your-spam-filter-policies.md)和[高级垃圾邮件筛选选项](../advanced-spam-filtering-asf-options.md)。
   
 > [!IMPORTANT]
-> 如果您使用默认内容筛选器操作，**移动到垃圾邮件文件夹的邮件**，以确保此操作将处理的本地邮箱，则必须配置 Exchange 邮件流规则，也称为内部部署上的传输规则服务器来检测由 EOP 添加的垃圾邮件邮件头。有关详细信息，请参阅[确保垃圾邮件被路由到每个用户的垃圾邮件文件夹](../ensure-that-spam-is-routed-to-each-user-s-junk-email-folder.md)。 
+> 如果使用默认内容筛选器操作, 请**将邮件移动到 "垃圾邮件" 文件夹**, 以确保此操作适用于本地邮箱, 则必须在本地邮箱上配置 Exchange 邮件流规则 (也称为传输规则)用于检测由 EOP 添加的垃圾邮件头的服务器。有关详细信息, 请参阅[确保垃圾邮件已路由到每个用户的 "垃圾邮件" 文件夹](../ensure-that-spam-is-routed-to-each-user-s-junk-email-folder.md)。 
   
-我们建议您查看[anti-spam protection FAQ](../anti-spam-protection-faq.md)，其中包括出站邮件最佳实践部分，有助于确保出站邮件传递。
+我们建议您查看[反垃圾邮件保护常见问题解答](../anti-spam-protection-faq.md), 包括 "出站邮件最佳实践" 部分, 这将有助于确保出站邮件已送达。
   
-您可以提交假负 （垃圾邮件） 和误报 （非垃圾邮件） 向 Microsoft 进行分析以下几种方式。有关详细信息，请参阅[提交垃圾邮件和非垃圾邮件和网络钓鱼诈骗邮件提交给 Microsoft 进行分析](../submit-spam-non-spam-and-phishing-scam-messages-to-microsoft-for-analysis.md)。
+您可以通过多种方式将漏报 (垃圾邮件) 和误报 (非垃圾邮件) 提交给 Microsoft 进行分析。有关详细信息, 请参阅[将垃圾邮件、非垃圾邮件和网络钓鱼诈骗邮件提交给 Microsoft 进行分析](../submit-spam-non-spam-and-phishing-scam-messages-to-microsoft-for-analysis.md)。
   
 ## <a name="set-anti-malware-options"></a>设置反恶意软件选项
 
-查看并微调 Exchange 管理员 center(EAC) 中的恶意软件筛选器设置。有关详细信息[配置反恶意软件策略](../configure-anti-malware-policies.md)。我们还建议阅读有关其他的常见问题和解答与我们的[反恶意软件保护常见问题](../anti-malware-protection-faq-eop.md)中的反恶意软件保护。
+查看和微调 Exchange 管理中心 (EAC) 中的恶意软件筛选器设置。有关详细信息, 请参阅[配置反恶意软件策略](../configure-anti-malware-policies.md)。我们还建议阅读有关反恶意软件[保护常见问题解答](../anti-malware-protection-faq-eop.md)中有关反恶意软件保护的其他常见问题和解答。
   
-如果你对包含恶意软件的可执行文件有点担心，则可以创建一个 Exchange 邮件流规则来拦截所有包含可执行内容的电子邮件附件。若要拦截[Use mail flow rules to inspect message attachments](https://support.microsoft.com/kb/2959596)中"传输规则检查支持的可执行文件类型"下方列出的文件类型，请按 [How to reduce malware threats through file attachment blocking in Exchange Online Protection](http://technet.microsoft.com/library/874d1c78-a8ec-4938-b388-d3208c2fa971.aspx)（如何在 Exchange Online Protection 中通过文件附件拦截来减少恶意软件威胁）中的步骤操作。
+如果您担心包含恶意软件的可执行文件, 则可以创建一个 Exchange 邮件流规则, 该规则阻止具有可执行内容的任何电子邮件附件。按照[如何通过 Exchange online Protection 中的文件附件阻止功能降低恶意软件威胁](https://support.microsoft.com/kb/2959596)的步骤, 以阻止在[exchange online 中使用邮件流规则检查邮件附件](https://docs.microsoft.com/exchange/security-and-compliance/mail-flow-rules/inspect-message-attachments#supported-file-types-for-mail-flow-rule-content-inspection)中列出的文件类型。
   
-在 EAC 中，可以使用常见的附件类型筛选器。选择**保护** \> **恶意软件筛选器**。您可以创建 Exchange 邮件流规则，也称为传输规则，阻止具有可执行内容任何电子邮件附件。 
+您可以使用 EAC 中的常用附件类型筛选器。选择 "**保护** \> **恶意软件筛选器**"。您可以创建阻止任何具有可执行内容的电子邮件附件的邮件流规则。 
   
-为加强保护，我们还建议使用邮件流规则阻止下列扩展名的部分或全部： ade、 adp、 ani、 营业活动报表、 bat、 chm、 cmd、 com、 cpl、 crt、 hlp、 超线程、 hta、 inf、 项、 isp、 作业、 js、 jse、 lnk，mda、 mdb、 mde、 mdz、 msc、 msi、 mspmst、 pcd、 注册表、 scr、 sct、 shs、 url、 vb、 vbe、 vbs、 wsc、 wsf、 wsh。这可以通过使用的**任何附件的文件扩展名包含这些词**的条件。 
+为了增强保护功能, 我们还建议使用邮件流规则阻止以下部分或全部的扩展: ade、adp、ani、bas、bat、chm、cmd、com、cpl、crt、.hlp、ht、hta、jse、.lnk、mda、命令、mdb、mde、mdz、msc、msi、msp、mst、pcd、reg、scr、sct、shs、url、vb、vbe、wsc、wsf、wsh。可以通过使用 "**任何附件文件扩展名包含这些词**" 条件来完成此操作。 
   
 管理员和最终用户可以提交通过筛选器的恶意软件，或提交被误检为恶意软件的文件，只需将其发送给 Microsoft 进行分析即可。有关详细信息，请参阅[Submitting malware and non-malware to Microsoft for analysis](../submitting-malware-and-non-malware-to-microsoft-for-analysis.md)。
   
 ## <a name="create-mail-flow-rules"></a>创建邮件流规则
 
-创建邮件流规则（也称为传输规则或自定义筛选器），满足业务需求。
+创建邮件流规则 (也称为传输规则) 或自定义筛选器, 以满足您的业务需求。
   
-到生产环境中部署一个新规则时，选择一种测试模式，查看规则的效果。满意规则处理预期的方式，将规则模式更改为**Enforce**。
+在将新规则部署到生产环境时, 首先选择测试模式之一, 以查看规则的效果。当您认为规则以预期方式工作后, 请将规则模式更改为 "**强制**"。
   
-在部署新规则时，请考虑添加附加操作**生成事件报告**，以监视操作中的规则。 
+部署新规则时, 请考虑添加其他操作 "**生成事件报告**", 以监视操作中的规则。 
   
-如果你的组织采用部分本地、部分 Office 365 的混合部署配置，可以创建应用于整个组织的规则。为此，请使用本地和 Office 365 都适用的条件。虽然大多数条件都可用于这两种部署，但也有少数条件特定于特定的部署方案。有关详细信息，请参阅[Mail flow or Transport rules](http://technet.microsoft.com/library/743bd525-0ca2-426d-b76c-b4a052bc8886.aspx)。
+如果您使用的是混合部署配置, 并且您的组织内部部署和 Office 365 中的一部分, 则可以创建适用于整个组织的规则。为此, 请使用内部部署和 Office 365 中可用的条件。虽然大多数条件在这两个部署中都可用, 但有一个特定于特定部署方案的小型集。有关详细信息, 请参阅[Exchange Online 中的邮件流规则 (传输规则)](http://technet.microsoft.com/library/743bd525-0ca2-426d-b76c-b4a052bc8886.aspx)。
   
 如果希望检查在组织内部传递的邮件的附件，可以通过设置邮件流规则来实现。然后，可以根据这些附件的内容或特征对经过检查的邮件采取操作。有关详细信息，请参阅[Use mail flow rules to inspect message attachments](http://technet.microsoft.com/library/874d1c78-a8ec-4938-b388-d3208c2fa971.aspx)。
   
@@ -90,7 +90,7 @@ ms.locfileid: "22027269"
   
 ### <a name="extension-blocking"></a>扩展名阻止
 
-如果您担心包含恶意软件的可执行文件，您可以配置反恶意软件策略来阻止具有可执行内容任何电子邮件附件。按照[配置反恶意软件策略](../configure-anti-malware-policies.md)中的步骤。
+如果您担心包含恶意软件的可执行文件, 则可以将反恶意软件策略配置为阻止任何具有可执行内容的电子邮件附件。按照[配置反恶意软件策略](../configure-anti-malware-policies.md)中的步骤操作。
   
 为了加强保护，仍建议阻止以下部分或全部的扩展名：ade、adp、ani、bas、bat、chm、cmd、com、cpl、crt、hlp、ht、hta、inf、ins、isp、job、js、jse、lnk、mda、mdb、mde、mdz、msc、msi、msp、mst、pcd、reg、scr、sct、shs、url、vb、vbe、vbs、wsc、wsf 和 wsh。
   

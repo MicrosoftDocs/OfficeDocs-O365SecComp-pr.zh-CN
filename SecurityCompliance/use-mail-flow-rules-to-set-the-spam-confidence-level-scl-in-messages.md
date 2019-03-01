@@ -14,27 +14,27 @@ search.appverid:
 ms.assetid: 4ccab17a-6d49-4786-aa28-92fb28893e99
 ms.collection:
 - M365-security-compliance
-description: 您可以创建传输规则来设置电子邮件的垃圾邮件可信度 (SCL)。SCL 是判断某个邮件在多大程度上是垃圾邮件的衡量手段。"垃圾邮件"是未经请求的（并且通常是不必要的）电子邮件。根据 SCL 评级的不同，该服务对邮件采取不同的操作。例如，您可能想要使从您组织内部人员发送的邮件规避垃圾邮件内容筛选，因为您相信从内部同事发送的邮件并非垃圾邮件。使用传输规则设置邮件的 SCL 值可提高您处理垃圾邮件的控制能力。
-ms.openlocfilehash: dfce98aa9d4fec25a06674eb68d6e00ae2964e87
-ms.sourcegitcommit: 686bc9a8f7a7b6810a096f07d36751d10d334409
+description: 管理员可以了解如何在 Exchange Online Protection 中设置邮件的 SCL。
+ms.openlocfilehash: 48569087fe8455dbb5500add435430ec8e78ea30
+ms.sourcegitcommit: 48fa456981b5c52ab8aeace173c8366b9f36723b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "30275622"
+ms.lasthandoff: 02/28/2019
+ms.locfileid: "30341343"
 ---
 # <a name="use-mail-flow-rules-to-set-the-spam-confidence-level-scl-in-messages"></a>使用邮件流规则设置邮件中的垃圾邮件可信度 (SCL)
 
-您可以创建传输规则来设置电子邮件的垃圾邮件可信度 (SCL)。SCL 是判断某个邮件在多大程度上是垃圾邮件的衡量手段。"垃圾邮件"是未经请求的（并且通常是不必要的）电子邮件。根据 SCL 评级的不同，该服务对邮件采取不同的操作。例如，您可能想要使从您组织内部人员发送的邮件规避垃圾邮件内容筛选，因为您相信从内部同事发送的邮件并非垃圾邮件。使用传输规则设置邮件的 SCL 值可提高您处理垃圾邮件的控制能力。 
+您可以创建邮件流规则 (也称为传输规则), 以设置电子邮件的垃圾邮件可信度 (SCL)。SCL 可衡量邮件是垃圾邮件的可能性。垃圾邮件是未经请求的 (通常是不必要的) 电子邮件。根据邮件的 SCL 分级, 该服务对邮件采取不同的操作。例如, 您可能希望对从组织内部人员发送的邮件绕过垃圾邮件内容筛选, 因为您信任从某个同事内部发送的邮件不是垃圾邮件。使用邮件流规则设置邮件的 SCL 值为您提供了对处理垃圾邮件的更多控制。 
   
  **在开始之前，您需要知道什么？**
   
 - 估计完成该过程的时间：10 分钟。
     
-- 您需要先分配权限, 然后才能执行此过程或过程。若要查看所需的权限, 请参阅[Exchange Online 中的功能权限](http://technet.microsoft.com/library/15073ce1-0917-403b-8839-02a2ebc96e16.aspx)或 EOP 中的[功能权限](eop/feature-permissions-in-eop.md)中的 "传输规则" 条目。 
+- 您需要先分配权限, 然后才能执行此过程或过程。若要查看所需的权限, 请参阅[Exchange Online 中的功能权限](http://technet.microsoft.com/library/15073ce1-0917-403b-8839-02a2ebc96e16.aspx)或 EOP 中的[功能权限](eop/feature-permissions-in-eop.md)中的 "邮件流规则" 条目。 
     
 - 若要了解本主题中的过程可能适用的键盘快捷键，请参阅 **Exchange 管理中心内的键盘快捷键**。
     
-### <a name="to-create-a-transport-rule-that-sets-the-scl-of-a-message"></a>创建设置邮件的 SCL 的传输规则
+### <a name="to-create-a-mail-flow-rule-that-sets-the-scl-of-a-message"></a>创建设置邮件 SCL 的邮件流规则
 
 1. 在 Exchange 管理中心 (EAC) 中, 选择 "**邮件流** \> **规则**"。
     
@@ -64,9 +64,9 @@ ms.locfileid: "30275622"
 7. 指定规则的其他属性, 然后选择 "**保存**"。
     
     > [!TIP]
-    > 有关可以为此规则选择或指定的其他属性的详细信息，请参阅[Use the EAC to create a transport rule](http://technet.microsoft.com/library/e7a81372-b6d7-4d1f-bc9e-a845a7facac2.aspx#CreateEAC)。 
+    > 有关可以为此规则选择或指定的其他属性的详细信息, 请参阅[使用 EAC 创建邮件流规则](https://docs.microsoft.com/Exchange/policy-and-compliance/mail-flow-rules/mail-flow-rule-procedures#use-the-eac-to-create-mail-flow-rules)。 
   
-## <a name="how-do-you-know-this-worked"></a>您如何知道操作成功？
+## <a name="how-do-you-know-this-worked"></a>如何知道操作成功？
 
 若要验证此过程是否正常运行, 请将电子邮件发送给组织内部的某个人, 并验证对邮件执行的操作是否符合预期。例如, 如果**将垃圾邮件可信度 (SCL) 设置**为 "**绕过垃圾邮件筛选**", 则应将邮件发送到指定收件人的收件箱。但是, 如果**将垃圾邮件可信度 (SCL) 设置**为**9**, 并且适用的内容筛选器策略的**高可信度垃圾邮件**操作是将邮件移动到 "垃圾邮件" 文件夹, 则应将邮件发送到指定的收件人的 "垃圾邮件" 文件夹。 
   
