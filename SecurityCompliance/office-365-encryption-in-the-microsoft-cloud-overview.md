@@ -10,14 +10,16 @@ localization_priority: None
 search.appverid:
 - MET150
 ms.collection:
+- Strat_O365_Enterprise
 - M365-security-compliance
+- Strat_O365_Enterprise
 description: Microsoft 云中的加密概述。
-ms.openlocfilehash: 8d4b94908e9847062ff5f4612b8726b44a36a59f
-ms.sourcegitcommit: 686bc9a8f7a7b6810a096f07d36751d10d334409
+ms.openlocfilehash: 36bb50cda5f39461401b14ca3e7ada77a6e2cc0d
+ms.sourcegitcommit: 7adfd8eda038cf25449bdf3df78b5e2fcc1999e7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "30275942"
+ms.lasthandoff: 03/01/2019
+ms.locfileid: "30357513"
 ---
 # <a name="encryption-in-the-microsoft-cloud"></a>Microsoft 云中的加密
 
@@ -36,6 +38,7 @@ Microsoft 提供了在 rest 和途对客户数据进行加密的服务端技术�
 FIPS 140-2 是一种标准, 专门用于验证实施加密的产品模块, 而不是使用它们的产品。在服务内实施的加密模块可以通过符合哈希强度、密钥管理等的要求进行认证。任何时间都使用加密功能来保护 Microsoft 云服务中的数据的机密性、完整性或可用性, 使用的模块和密码符合 FIPS 140-2 标准。
 
 Microsoft 通过每个新版本的 Windows 操作系统证明在云服务中使用的基础加密模块:
+
 - azure 和 azure 美国政府版
 - Dynamics 365 和 dynamics 365 美国政府版
 - office 365、office 365 美国政府版和 office 365 美国政府防御

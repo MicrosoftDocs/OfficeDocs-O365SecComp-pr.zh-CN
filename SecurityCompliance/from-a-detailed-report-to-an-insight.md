@@ -12,13 +12,15 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: d2104778-f0a1-4b69-baf3-c4b32e98a573
+ms.collection:
+- M365-security-compliance
 description: 了解如何从详细报告移动到安全&amp;合规性中心中推荐的操作的洞察力。
-ms.openlocfilehash: b0fdb3a75db8e3b18813193a5fa7c5523de16fe8
-ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
+ms.openlocfilehash: 062ae0931e78b01e26fc0d723e6d6d2ad1c04095
+ms.sourcegitcommit: 7adfd8eda038cf25449bdf3df78b5e2fcc1999e7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30219082"
+ms.lasthandoff: 03/01/2019
+ms.locfileid: "30357583"
 ---
 # <a name="walkthrough---from-a-detailed-report-to-an-insight"></a>演练 - 从详细报告到见解
 

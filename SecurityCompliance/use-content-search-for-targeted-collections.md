@@ -12,12 +12,12 @@ localization_priority: Normal
 search.appverid: MOE150
 ms.assetid: e3cbc79c-5e97-43d3-8371-9fbc398cd92e
 description: 在 Office 365 安全&amp;合规中心中使用内容搜索来执行目标集合。目标集合意味着您确信项目响应的是事例或特权项目位于特定的邮箱或站点文件夹中。使用本文中的脚本获取要搜索的特定邮箱或网站文件夹的文件夹 ID 或路径。
-ms.openlocfilehash: c6e837e2f95b4f2ae3e32344f966f096407e360e
-ms.sourcegitcommit: baf23be44f1ed5abbf84f140b5ffa64fce605478
+ms.openlocfilehash: 6c41069a268991553f03763ae80dea032d5db202
+ms.sourcegitcommit: 03054baf50c1dd5cd9ca6a9bd5d056f3db98f964
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "30296925"
+ms.lasthandoff: 03/01/2019
+ms.locfileid: "30354684"
 ---
 # <a name="use-content-search-in-office-365-for-targeted-collections"></a>将 Office 365 中的内容搜索用于目标集合
 
@@ -55,7 +55,7 @@ Office 365 安全&amp;合规中心中的内容搜索功能不会在 UI 中直接
     
 - **你的用户凭据**-脚本将使用你的凭据连接到 Exchange Online 和与远程&amp; PowerShell 的安全合规性中心。如前面所述, 您必须分配适当的权限才能成功运行此脚本。
     
-若要显示邮箱文件夹或网站路径名称的列表, 请执行以下操作:
+若要显示邮箱文件夹或网站 documentlink (路径) 名称的列表, 请执行以下操作:
   
 1. 使用文件名后缀. ps1; 将以下文本保存到 Windows PowerShell 脚本文件中。例如, `GetFolderSearchParameters.ps1`。
     
@@ -66,9 +66,10 @@ Office 365 安全&amp;合规中心中的内容搜索功能不会在 UI 中直接
   #      Online and who is an eDiscovery Manager in the Security &amp; Compliance Center.           #
   # The script will then:                                           #
   #    * If an email address is supplied: list the folders for the target mailbox.          #
-  #    * If a SharePoint or OneDrive for Business site is supplied: list the folder paths for the site. #
-  #    * In both cases, the script supplies the correct search properties (folderid: or path:)      #
-  #      appended to the folder ID or path ID to use in a Content Search.               #
+  #    * If a SharePoint or OneDrive for Business site is supplied: list the documentlinks (folder paths) #
+  #    * for the site.                                                                                  #
+  #    * In both cases, the script supplies the correct search properties (folderid: or documentlink:)  #
+  #      appended to the folder ID or documentlink to use in a Content Search.              #
   # Notes:                                              #
   #    * For SharePoint and OneDrive for Business, the paths are searched recursively; this means the   #
   #      the current folder and all sub-folders are searched.                       #
@@ -154,7 +155,7 @@ Office 365 安全&amp;合规中心中的内容搜索功能不会在 UI 中直接
           {
               $rawUrl = $match.Value
               $rawUrl = $rawUrl -replace "Data Link: " -replace "," -replace "}"
-              Write-Host "path:""$rawUrl"""
+              Write-Host "DocumentLink:""$rawUrl"""
           }
       }
       else
@@ -196,18 +197,15 @@ Office 365 安全&amp;合规中心中的内容搜索功能不会在 UI 中直接
   
 ### <a name="script-output-for-site-folders"></a>网站文件夹的脚本输出
 
-如果要获取来自 SharePoint 或 OneDrive for business 网站的路径, 则该脚本会使用远程&amp; PowerShell 连接到安全合规中心, 并创建一个新的内容搜索, 以搜索网站中的文件夹, 然后显示文件夹的列表。位于指定站点中。该脚本将显示每个文件夹的名称, 并将**路径**(网站属性的名称) 的前缀添加到文件夹 URL。由于**path**属性是一个可搜索的属性, 因此您`path:<path>`将在步骤2中的搜索查询中使用搜索该文件夹。 
+如果从 SharePoint 或 OneDrive for business 网站获取 documentlinks, 则该脚本将使用远程 PowerShell 连接&amp;到安全合规中心, 并创建一个新的内容搜索, 以搜索网站中的文件夹, 然后显示位于指定网站中的文件夹。该脚本将显示每个文件夹的名称, 并将**路径**(网站属性的名称) 的前缀添加到文件夹 URL。由于**path**属性是一个可搜索的属性, 因此您`path:<path>`将在步骤2中的搜索查询中使用搜索该文件夹。 
   
 下面的示例展示了网站文件夹的脚本返回的输出。
   
-![脚本返回的网站文件夹的路径名称列表示例](media/519e8347-7365-4067-af78-96c465dc3d15.png)
+![脚本返回的网站文件夹的 documentlink 名称列表示例](media/519e8347-7365-4067-af78-96c465dc3d15.png)
   
-## <a name="step-2-use-a-folder-id-or-path-to-perform-a-targeted-collection"></a>步骤 2: 使用文件夹 ID 或路径执行目标集合
+## <a name="step-2-use-a-folder-id-or-documentlink-to-perform-a-targeted-collection"></a>步骤 2: 使用文件夹 ID 或 documentlink 执行目标集合
 
-在运行脚本以收集特定用户的文件夹 id 或路径列表后, 下一步是转到安全&amp;合规性中心, 并创建新的内容搜索以搜索特定文件夹。您将在 " `folderid:<folderid>`内容`path:<path>`搜索关键字" 框中配置的搜索查询中使用或属性 (如果使用**new-compliancesearch** cmdlet, 则为*ContentMatchQuery*参数的值)。您可以将`folderid`或`path`属性与其他搜索参数或搜索条件结合使用。如果只在查询中`folderid`包括`path`或属性, 则搜索将返回位于指定文件夹中的所有项目。 
-  
-> [!NOTE]
-> 使用该`path`属性搜索 OneDrive 位置不会在搜索结果中返回媒体文件, 如 .png、tiff 或 .wav 文件。 
+在运行脚本以收集特定用户的文件夹 id 或 documentlinks 的列表后, 下一步是转到安全&amp;符合性中心并创建新的内容搜索以搜索特定文件夹。您将在 " `folderid:<folderid>`内容`documentlink:<path>`搜索关键字" 框中配置的搜索查询中使用或属性 (如果使用**new-compliancesearch** cmdlet, 则为*ContentMatchQuery*参数的值)。您可以将`folderid`或`documentlink`属性与其他搜索参数或搜索条件结合使用。如果只在查询中`folderid`包括`documentlink`或属性, 则搜索将返回位于指定文件夹中的所有项目。 
   
 1. 转到 [https://protection.office.com](https://protection.office.com)。
     
@@ -227,17 +225,17 @@ Office 365 安全&amp;合规中心中的内容搜索功能不会在 UI 中直接
     
 6. 单击“下一步”。****
     
-7. 在 "**您希望我们在什么情况下查找**" 页上的 "关键字" 框`folderid:<folderid>`中`path:<path>` , 粘贴步骤1中的脚本返回的 or 值。 
+7. 在 "**您希望我们在什么情况下查找**" 页上的 "关键字" 框`folderid:<folderid>`中`documentlink:<path>` , 粘贴步骤1中的脚本返回的 or 值。 
     
     例如, 下面的屏幕截图中的查询将搜索用户的 "可恢复项目" 文件夹中的 "清除" 子文件夹中的任何项目`folderid` ("清除" 子文件夹的属性值显示在步骤1中的屏幕截图中):
     
-    ![将 folderid 或路径粘贴到搜索查询的关键字框中](media/84057516-b663-48a4-a78f-8032a8f8da80.png)
+    ![将 folderid 或 documentlink 粘贴到搜索查询的关键字框中](media/84057516-b663-48a4-a78f-8032a8f8da80.png)
   
 8. 单击 "**搜索**" 以启动目标集合搜索。 
   
 ### <a name="examples-of-search-queries-for-targeted-collections"></a>目标集合的搜索查询示例
 
-下面是在搜索查询中使用`folderid`和`path`属性执行目标集合的一些示例。请注意, 占位符用于`folderid:<folderid>` `path:<path>`节省空间。 
+下面是在搜索查询中使用`folderid`和`documentlink`属性执行目标集合的一些示例。请注意, 占位符用于`folderid:<folderid>` `documentlink:<path>`节省空间。 
   
 - 本示例将搜索三个不同的邮箱文件夹。可以使用类似的查询语法搜索用户的 "可恢复的项目" 文件夹中的隐藏文件夹。
     
@@ -254,13 +252,13 @@ Office 365 安全&amp;合规中心中的内容搜索功能不会在 UI 中直接
 - 本示例在标题中搜索包含字母 "NDA" 的文档的网站文件夹 (和任何子文件夹)。
     
   ```
-  path:<path> AND filename:nda
+  documentlink:<path> AND filename:nda
   ```
 
 - 本示例搜索某个日期范围内已更改的文档的网站文件夹 (和任何子文件夹)。
     
   ```
-  path:<path> AND (lastmodifiedtime>=01/01/2017 AND lastmodifiedtime<=01/21/2017)
+  documentlink:<path> AND (lastmodifiedtime>=01/01/2017 AND lastmodifiedtime<=01/21/2017)
   ```
   
 ## <a name="more-information"></a>更多信息
@@ -273,8 +271,6 @@ Office 365 安全&amp;合规中心中的内容搜索功能不会在 UI 中直接
     
 - 搜索邮箱文件夹时, 将仅搜索指定的文件夹 (由`folderid`其属性标识)。不搜索子文件夹。若要搜索子文件夹, 您需要使用要搜索的子文件夹的文件夹 ID。 
     
-- 搜索站点文件夹时, 将搜索文件夹 (由其`path`属性标识) 和所有子文件夹。 
+- 搜索站点文件夹时, 将搜索文件夹 (由其`documentlink`属性标识) 和所有子文件夹。 
     
-- 如前所述, 不能使用`path`属性来搜索位于 OneDrive 位置的媒体文件, 如 .png、tiff 或 .wav 文件。使用不同的[site 属性](keyword-queries-and-search-conditions.md#searchable-site-properties)搜索 OneDrive 文件夹中的媒体文件。 
-
 - 当您在搜索查询中导出仅指定`folderid`属性的搜索结果时, 可以选择第一个导出选项 "。所有项目 (不包括具有不可识别的格式的项目) 已加密, 或未对其他原因编制索引。将始终导出文件夹中的所有项目 (无论其索引状态如何), 因为文件夹 ID 始终编制索引。
