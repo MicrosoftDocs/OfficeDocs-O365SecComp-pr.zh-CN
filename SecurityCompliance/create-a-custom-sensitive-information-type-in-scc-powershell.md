@@ -13,12 +13,12 @@ search.appverid:
 - MET150
 ms.assetid: 82c382a5-b6db-44fd-995d-b333b3c7fc30
 description: 了解如何在 Office 365 安全与合规中心创建并导入 DLP 的自定义敏感信息类型。
-ms.openlocfilehash: 1f94da09bd455a82c9b9d7c5cf12e91de3a1ad29
-ms.sourcegitcommit: a80bd8626720fabdf592b84e4424cd3a83d08280
+ms.openlocfilehash: b6289b962211bbe1764e2b6e3b4f08900cb6abd8
+ms.sourcegitcommit: 48fa456981b5c52ab8aeace173c8366b9f36723b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30223301"
+ms.lasthandoff: 02/28/2019
+ms.locfileid: "30341513"
 ---
 # <a name="create-a-custom-sensitive-information-type-in-office-365-security--compliance-center-powershell"></a>在 Office 365 安全与合规中心 PowerShell 中创建自定义敏感信息类型
 
@@ -319,9 +319,9 @@ Version 元素也很重要。当你首次上传规则包时，Office 365 会记�
   
 ## <a name="changes-for-exchange-online"></a>针对 Exchange Online 的变化
 
-以前可能使用的是 Exchange Online PowerShell 来为 DLP 导入自定义敏感信息类型。现在，自定义敏感信息类型既可用于 Exchange 管理中心，也能用于安全与合规中心。本次改进包括，应使用安全与合规中心 PowerShell 导入自定义敏感信息类型，无法再通过 Exchange PowerShell 导入。自定义敏感信息类型将继续像往常一样运行；不过，在安全与合规中心内对自定义敏感信息类型所做的更改最长可能需要一小时，才能在 Exchange 管理中心内有所反映。
+之前，你可能使用 Exchange Online PowerShell 来导入 DLP 的自定义敏感信息类型。而现在，自定义敏感信息类型可同时在 Exchange 管理中心和安全与合规中心使用。作为该项改进的一部分，你应使用安全与合规中心 PowerShell 来导入自定义敏感信息类型 - 不可再从 Exchange PowerShell 中导入它们。自定义敏感信息类型将继续像之前一样发挥作用，但是可能 1 小时（最长时间）后，在安全与合规中心对自定义敏感信息所作的更改才会在 Exchange 管理中心显示。
   
-请注意，在安全与合规中心内，请使用 `DlpSensitiveInformationTypeRulePackage` cmdlet 上传规则包。以前在 Exchange 管理中心内使用的是 `ClassificationRuleCollection` cmdlet。 
+请注意，在安全与合规中心，请使用 `DlpSensitiveInformationTypeRulePackage` cmdlet 上传规则包。以前在 Exchange 管理中心使用的是 `ClassificationRuleCollection` cmdlet。 
   
 ## <a name="upload-your-rule-package"></a>上传规则包
 

@@ -16,12 +16,12 @@ ms.assetid: da21c0b6-e8f0-4cc8-af2e-5029a9433d59
 ms.collection:
 - M365-security-compliance
 description: 用于帮助阻止垃圾邮件误报的独立 EOP 管理员文档
-ms.openlocfilehash: c9b17704c514fd83f8c00a51fad76cddb26e378c
-ms.sourcegitcommit: baf23be44f1ed5abbf84f140b5ffa64fce605478
+ms.openlocfilehash: 598f63bba4be32c6c664db83126b40c5fae159a0
+ms.sourcegitcommit: 48fa456981b5c52ab8aeace173c8366b9f36723b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "30306541"
+ms.lasthandoff: 02/28/2019
+ms.locfileid: "30341813"
 ---
 ## <a name="customize-the-office-365-anti-spam-filter-with-these-settings"></a>为 Office 365 反垃圾邮件筛选器自定义这些设置
 
@@ -37,9 +37,9 @@ ms.locfileid: "30306541"
     
 3. 按照[配置连接筛选器策略](https://technet.microsoft.com/zh-CN/library/jj200718%28v=exchg.150%29.aspx)中的“使用 EAC 编辑默认连接筛选器策略”步骤操作，将此 IP 地址添加到 IP 阻止列表。
     
-### <a name="block-bulk-mail-with-transport-rules-or-the-spam-filter"></a>使用传输规则或垃圾邮件筛选器阻止大量邮件
+### <a name="block-bulk-mail-with-mail-flow-rules-transport-rules-or-the-spam-filter"></a>使用邮件流规则（也称为传输规则）或垃圾邮件筛选器阻止大量邮件
 
-垃圾邮件主要是大量邮件（例如，新闻稿或促销邮件）吗？可以在[使用传输规则主动筛选批量电子邮件](https://technet.microsoft.com/zh-CN/library/dn720438%28v=exchg.150%29.aspx)的情况下自定义 Office 365 垃圾邮件筛选器，也可以启用垃圾邮件筛选器[高级垃圾邮件筛选选项](https://technet.microsoft.com/zh-CN/library/jj200750%28v=exchg.150%29.aspx)中的“大量邮件”**** 设置。在 Exchange 管理中心内，首先依次单击“保护”****\>“内容筛选器”****，再双击要调整的筛选器策略。单击“垃圾邮件和大量邮件操作”**** 以调整设置，如下所示。 
+垃圾邮件主要是大量邮件（例如，新闻稿或促销邮件）吗？可以在[使用邮件流规则配置批量电子邮件筛选](use-transport-rules-to-configure-bulk-email-filtering.md)的情况下自定义 Office 365 垃圾邮件筛选器，也可以启用垃圾邮件筛选器[高级垃圾邮件筛选选项](advanced-spam-filtering-asf-options.md)中的“**大量邮件**”设置。在 Exchange 管理中心内，首先依次单击“**保护**”\>“**内容筛选器**”，再双击要调整的筛选器策略。单击“**垃圾邮件和大量邮件操作**”以调整设置，如下所示。 
   
 ![在 Exchange Online 中设置大量邮件筛选器](media/a45095c2-269d-45b8-a76c-999b5e78da68.png)
   
