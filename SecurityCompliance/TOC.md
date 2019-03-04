@@ -501,7 +501,7 @@
 ## [EOP 中的邮件流](eop/mail-flow-in-eop.md)
 ### [如何确保邮件不会标记为垃圾邮件](how-to-help-ensure-that-a-message-isn-t-marked-as-spam.md)
 ### [邮件流规则（传输规则）](eop/mail-flow-rules-transport-rules-0.md)
-### [使用传输规则来配置批量电子邮件筛选](use-transport-rules-to-configure-bulk-email-filtering.md)
+### [使用邮件流规则来配置批量电子邮件筛选](use-transport-rules-to-configure-bulk-email-filtering.md)
 ### [使用邮件流规则来查看用户向 Microsoft 报告的内容](use-mail-flow-rules-to-see-what-your-users-are-reporting-to-microsoft.md)
 ### [通过文件附件阻止功能降低恶意软件的威胁](eop/reducing-malware-threats-through-file-attachment-blocking-in-exchange-online-pro.md)
 ### [报告和邮件跟踪](eop/reporting-and-message-trace-in-exchange-online-protection.md)

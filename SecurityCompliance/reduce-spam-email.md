@@ -15,12 +15,12 @@ search.appverid:
 - MET150
 ms.assetid: 07824c51-2c45-4005-8596-03c0d7c4ff2a
 description: 了解有助于减少 Office 365 中垃圾邮件的最常用方法。
-ms.openlocfilehash: 0cc07d543618b154570231dcf1d45b39cfe20fec
-ms.sourcegitcommit: baf23be44f1ed5abbf84f140b5ffa64fce605478
+ms.openlocfilehash: e1915bd51fcda8b587f3a7f248dc54fa18941c7d
+ms.sourcegitcommit: 48fa456981b5c52ab8aeace173c8366b9f36723b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "30295505"
+ms.lasthandoff: 02/28/2019
+ms.locfileid: "30340883"
 ---
 # <a name="how-to-reduce-spam-email-in-office-365"></a>如何减少 Office 365 中的垃圾邮件
 
@@ -28,11 +28,12 @@ ms.locfileid: "30295505"
   
 我们强烈建议你[使用报告消息加载项](https://support.office.com/article/b5caa9f1-cdf3-4443-af8c-ff724ea719d2)报告误报邮件，帮助我们改进筛选器。此外，你可以将邮件*作为附件*转发至 junk@office365.microsoft.com 或 phish@office365.microsoft.com（如果是钓鱼邮件）。
 
->[警告] 如果你认为邮件是垃圾邮件且它位于“垃圾邮件”文件夹中，则这没有问题。如果完全不想在邮箱中看到该邮件，则应更改反垃圾邮件策略以隔离该邮件。有关隔离邮件的更多信息，请参阅[在 Office 365 中隔离电子邮件](quarantine-email-messages.md)。
+> [!TIP]
+> 如果你认为邮件是垃圾邮件且它位于“垃圾邮件”文件夹中，则这没有问题。如果完全不想在邮箱中看到该邮件，则应更改反垃圾邮件策略以隔离该邮件。有关隔离邮件的更多信息，请参阅[在 Office 365 中隔离电子邮件](quarantine-email-messages.md)。
 
 ## <a name="fixing-allowed-spam"></a>修复允许的垃圾邮件
 
-我们经常看到客户因配置不正确而使垃圾邮件出现在收件箱中。其中最常见的是在传输规则中将域配置为绕过筛选器或者列出允许/安全发件人列表中的域。不推荐这样做，因为这些本应视为垃圾邮件的邮件会跳过垃圾邮件筛选。  
+我们经常看到客户因配置不正确而使垃圾邮件出现在收件箱中。其中最常见的是在邮件流规则（也称为传输规则）中将域配置为绕过筛选器或者列出允许/安全发件人列表中的域。不推荐这样做，因为这些本应视为垃圾邮件的邮件会跳过垃圾邮件筛选。  
 
 ## <a name="solutions-to-other-common-causes-of-getting-too-much-spam"></a>其他垃圾邮件过多常见原因的解决方案
 
@@ -50,7 +51,7 @@ ms.locfileid: "30295505"
     
 - **将大量电子邮件标记为“垃圾邮件”**：大量电子邮件是指用户已申请，但仍不想接收的电子邮件。在邮件头中的 X-Microsoft-Antispam 头内，找到 BCL（大量邮件可信度）属性。如果 BCL 值低于垃圾邮件筛选器中设置的阈值，建议调整阈值，以将这些类型的大量邮件标记为“垃圾邮件”。用户对[大量电子邮件的处理方式](https://docs.microsoft.com/zh-CN/office365/SecurityCompliance/bulk-complaint-level-values)的容忍度和偏好不同。可创建因用户偏好而异的不同策略或规则。 
     
-- **立即阻止发件人**：如果需要立即阻止发件人，可按电子邮件地址、域或 IP 地址进行阻止。请参阅[使用 Office 365 垃圾邮件筛选器阻止垃圾邮件以避免出现漏报问题](create-organization-wide-safe-sender-or-blocked-sender-lists-in-office-365.md#use-the-eac-to-create-a-transport-rule-that-blocks-messages-sent-from-a-domain-or-user)。最终用户允许列表中的项可替代管理员设置的阻止操作。
+- **立即阻止发件人** 在需要立即阻止发件人的情况下，可通过电子邮件地址、域或 IP 地址来阻止。请参阅[使用 EAC 创建邮件流规则来阻止从某个域或用户发送的邮件](create-organization-wide-safe-sender-or-blocked-sender-lists-in-office-365.md#use-the-eac-to-create-a-mail-flow-rule-that-blocks-messages-sent-from-a-domain-or-user)。最终用户允许列表中的条目可以覆盖管理员设置的阻止。
     
 - **为用户启用“举报邮件”加载项**：强烈建议[为用户启用“举报邮件”加载项](enable-the-report-message-add-in.md)。作为管理员，还可以查看用户发送的反馈，并使用任意模式来调整可能导致问题出现的任何设置。
     

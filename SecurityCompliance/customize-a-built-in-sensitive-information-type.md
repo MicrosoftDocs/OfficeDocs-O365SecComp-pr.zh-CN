@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.assetid: 2164ce3d-4d64-4283-b6b1-b81fbe835e8e
 description: 在内容中查找敏感信息时，需要在规则中描述相应信息。数据丢失防护 (DLP) 包含最常见敏感信息类型对应的规则，可供立即使用。若要使用这些规则，必须将它们添加到策略中。你可能会发现，需要调整这些内置规则，才能满足组织的特定需求。为此，请创建自定义敏感信息类型。本主题介绍了如何将包含现有规则集合的 XML 文件自定义为，检测更广泛的潜在信用卡信息。
-ms.openlocfilehash: 9014a2270947fb97edc1ce834985fbd084bc19e6
-ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
+ms.openlocfilehash: 6ac047bc6d8ce601dd8f582a429c1dd7353aa48e
+ms.sourcegitcommit: 48fa456981b5c52ab8aeace173c8366b9f36723b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30215442"
+ms.lasthandoff: 02/28/2019
+ms.locfileid: "30341453"
 ---
 # <a name="customize-a-built-in-sensitive-information-type"></a>自定义内置敏感信息类型
 
@@ -212,16 +212,16 @@ ms.locfileid: "30215442"
   
 |**术语**|**定义**|
 |:-----|:-----|
-|实体  <br/> |实体是我们称为敏感信息类型的项目，例如信用卡号。每个实体都有一个唯一的 GUID 作为其 ID。如果您复制 GUID 并在 XML 中搜索它，您将找到 XML 规则定义以及该 XML 规则的所有本地化翻译。您也可以通过查找翻译的 GUID 并搜索该 GUID 来查找此定义。  <br/> |
-|函数  <br/> |XML 文件引用 `Func_credit_card`，这是用代码编译而成的函数。函数用于运行复杂的正则表达式，并验证校验和是否符合内置规则。由于这是发生在代码中，因此一些变量不会显示在 XML 文件中。<br/> |
-|IdMatch  <br/> |这是模式尝试要匹配的标识符（例如，信用卡号）。可参阅[实体规则](https://support.office.com/article/c4ab8707-0839-4855-9390-3dbcb43475a7.aspx#dlp-entity)，详细了解此标识符和 `Match` 标记。<br/> |
-|关键字列表  <br/> |XML 文件还引用 `keyword_cc_verification` 和 `keyword_cc_name`，这是要在实体的 `patternsProximity` 范围内匹配的关键字列表。这些关键字暂不显示在 XML 中。<br/> |
-|模式  <br/> |模式包含敏感类型所查找内容的列表。这包括关键字、regex 和内部函数（执行验证校验和之类的任务）。敏感信息类型可能具有多个模式，每个模式均具有唯一的可信度。这在创建敏感信息类型时非常有用：当它找到确定证据时，返回高可信度；当未找到确定证据时，则返回较低的可信度。  <br/> |
-|模式可信度  <br/> |这是指 DLP 引擎找到匹配的可信度。如果满足模式的要求，则可信度与模式匹配有关。这是当您使用 Exchange 传输规则 (ETR) 时应考虑的可信度衡量标准。  <br/> |
-|patternsProximity  <br/> |`patternsProximity` 是指在查找信用卡号模式时，在与信用卡号多近的范围内查找确证性证据。  <br/> |
-|recommendedConfidence  <br/> |这是建议用于此规则的可信度。建议可信度适用于实体和关联。对于实体，永远不会根据模式的 `confidenceLevel` 评估此数值。它只是帮助你在需要时选择可信度的建议。对于关联，模式的 `confidenceLevel` 必须高于 `recommendedConfidence` 数值，才能调用 ETR 操作。`recommendedConfidence` 是调用操作的 ETR 使用的默认可信度。如果需要，可根据模式的可信度来手动更改要调用的 ETR。<br/> |
+|实体|实体是我们称为敏感信息类型的项目，例如信用卡号。每个实体都有一个唯一的 GUID 作为其 ID。如果您复制 GUID 并在 XML 中搜索它，您将找到 XML 规则定义以及该 XML 规则的所有本地化翻译。您也可以通过查找翻译的 GUID 并搜索该 GUID 来查找此定义。|
+|函数|XML 文件引用 `Func_credit_card`，这是用代码编译而成的函数。函数用于运行复杂的正则表达式，并验证校验和是否符合内置规则。由于这是发生在代码中，因此一些变量不会显示在 XML 文件中。|
+|IdMatch|这是模式尝试要匹配的标识符（例如，信用卡号）。可参阅[实体规则](https://support.office.com/article/c4ab8707-0839-4855-9390-3dbcb43475a7.aspx#dlp-entity)，详细了解此标识符和 `Match` 标记。|
+|关键字列表|XML 文件还引用 `keyword_cc_verification` 和 `keyword_cc_name`，这是要在实体的 `patternsProximity` 范围内匹配的关键字列表。这些关键字暂不显示在 XML 中。|
+|模式|模式包含敏感类型所查找内容的列表。这包括关键字、regex 和内部函数（执行验证校验和之类的任务）。敏感信息类型可能具有多个模式，每个模式均具有唯一的可信度。这在创建敏感信息类型时非常有用：当它找到确定证据时，返回高可信度；当未找到确定证据时，则返回较低的可信度。|
+|模式可信度|这是指 DLP 引擎找到匹配的可信度。如果满足模式的要求，则可信度与模式匹配有关。这是当您使用 Exchange 邮件流规则（也称为传输规则）时应考虑的可信度衡量标准。|
+|patternsProximity|`patternsProximity` 是指在查找信用卡号模式时，在与信用卡号多近的范围内查找确证性证据。|
+|recommendedConfidence|这是建议用于此规则的可信度。建议可信度适用于实体和关联。对于实体，永远不会根据模式的 `confidenceLevel` 评估此数值。它只是帮助你在需要时选择可信度的建议。对于关联，模式的 `confidenceLevel` 必须高于 `recommendedConfidence` 数值，才能调用邮件流规则操作。`recommendedConfidence` 是调用操作的邮件流规则使用的默认可信度。如果需要，可根据模式的可信度来手动更改要调用的邮件流规则。|
    
-## <a name="for-more-information"></a>更多信息
+## <a name="for-more-information"></a>有关详细信息
 
 - [敏感信息类型查找什么](what-the-sensitive-information-types-look-for.md)
     
