@@ -8,19 +8,21 @@ ms.audience: Admin
 ms.topic: overview
 ms.service: O365-seccomp
 localization_priority: Priority
-ms.collection:
-- M365-security-compliance
 search.appverid:
 - MOE150
 - MET150
 ms.assetid: 07824c51-2c45-4005-8596-03c0d7c4ff2a
+ms.collection:
+- Strat_O365_IP
+- M365-security-compliance
+- Strat_O365_IP
 description: 了解有助于减少 Office 365 中垃圾邮件的最常用方法。
-ms.openlocfilehash: e1915bd51fcda8b587f3a7f248dc54fa18941c7d
-ms.sourcegitcommit: 48fa456981b5c52ab8aeace173c8366b9f36723b
+ms.openlocfilehash: 5dac207393864f95f769ac205277b0c969f2fe32
+ms.sourcegitcommit: 7adfd8eda038cf25449bdf3df78b5e2fcc1999e7
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/28/2019
-ms.locfileid: "30340883"
+ms.lasthandoff: 03/01/2019
+ms.locfileid: "30357543"
 ---
 # <a name="how-to-reduce-spam-email-in-office-365"></a>如何减少 Office 365 中的垃圾邮件
 
