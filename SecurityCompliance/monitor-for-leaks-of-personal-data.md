@@ -10,17 +10,18 @@ ms.collection:
 - Strat_O365_Enterprise
 - Ent_O365
 - GDPR
+- M365-security-compliance
 ms.service: O365-seccomp
 localization_priority: Priority
 search.appverid:
 - MET150
 description: 了解可用于监视个人数据泄露的三种工具。
-ms.openlocfilehash: e86dc8fdfa8de600c6de4e4a28309862771c3cea
-ms.sourcegitcommit: a80bd8626720fabdf592b84e4424cd3a83d08280
+ms.openlocfilehash: 1923aa00f4ababb66ff8c915a8c3d7a99ff1cd04
+ms.sourcegitcommit: 15983a08a4ae9c2050344172c7e957830ce3867e
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30223571"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "30373883"
 ---
 # <a name="monitor-for-leaks-of-personal-data"></a>监视个人数据泄露
 

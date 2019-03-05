@@ -10,17 +10,18 @@ ms.collection:
 - Strat_O365_Enterprise
 - Ent_O365
 - GDPR
+- M365-security-compliance
 ms.service: O365-seccomp
 localization_priority: Priority
 search.appverid:
 - MET150
 description: 确定组织是否使用标签作为 GDPR 计划的一部分。
-ms.openlocfilehash: 4ec495d82a37742d1315673e2a7d089778cd52e4
-ms.sourcegitcommit: a80bd8626720fabdf592b84e4424cd3a83d08280
+ms.openlocfilehash: be700d0b055346822ddd63c3c250fad048a7fce8
+ms.sourcegitcommit: 15983a08a4ae9c2050344172c7e957830ce3867e
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30223531"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "30373863"
 ---
 # <a name="architect-a-classification-schema-for-personal-data"></a>为个人数据构建分类架构
 

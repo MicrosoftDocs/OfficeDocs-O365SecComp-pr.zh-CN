@@ -8,18 +8,19 @@ ms.topic: article
 ms.collection:
 - Ent_O365
 - Strat_O365_Enterprise
+- M365-security-compliance
 ms.service: O365-seccomp
 localization_priority: Priority
 search.appverid:
 - MET150
 ms.assetid: c2112ce8-1c4b-424f-b200-59e161db2d21
 description: 演示 Office 365 中的 GDPR 功能。
-ms.openlocfilehash: ec715302a7e17ca3660c31f7143a94f8432d3086
-ms.sourcegitcommit: a80bd8626720fabdf592b84e4424cd3a83d08280
+ms.openlocfilehash: c0d46eb8839fe594e00ae40fae3b2eb69dc2adcc
+ms.sourcegitcommit: 15983a08a4ae9c2050344172c7e957830ce3867e
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30223861"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "30373903"
 ---
 # <a name="gdpr-discovery-protection-and-reporting-in-the-office-365-devtest-environment"></a>Office 365 开发/测试环境中的 GDPR 发现、保护和报告
 
