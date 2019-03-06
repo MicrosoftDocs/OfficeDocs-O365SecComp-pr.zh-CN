@@ -7,19 +7,19 @@ ms.date: 8/17/2018
 ms.audience: Admin
 ms.topic: reference
 ms.service: O365-seccomp
+ms.collection: M365-security-compliance
 localization_priority: Normal
-ms.assetid: f04919c8-2356-4de2-bb2a-b9f67f339726
-description: 本主题介绍当数据丢失防护 (DLP) 策略检测到欧盟税务识别号敏感信息类型时, 应查找什么。此敏感信息类型为每个国家/地区定义不同的模式、关键字和其他证据。
-ms.openlocfilehash: f851cce4be70fd41c24a7876d97c452f0a738eda
-ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
+description: 本主题介绍当数据丢失防护 (DLP) 策略检测到欧盟税务识别号敏感信息类型时, 应查找什么。 此敏感信息类型为每个国家/地区定义不同的模式、关键字和其他证据。
+ms.openlocfilehash: 4914ff078695519c2a298190d82c86a6abebceb9
+ms.sourcegitcommit: ed822a776d3419853453583e882f3c61ca26d4b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30213822"
+ms.lasthandoff: 03/05/2019
+ms.locfileid: "30410907"
 ---
 # <a name="eu-tax-identification-number"></a>EU 税标识号
 
-本主题介绍了数据丢失防护 (DLP) 策略在检测到欧盟纳税标识号 (TIN) 敏感信息类型时的查找内容。此敏感信息类型为每个国家/地区定义不同的模式、关键字和其他证据。
+本主题介绍了数据丢失防护 (DLP) 策略在检测到欧盟纳税标识号 (TIN) 敏感信息类型时的查找内容。 此敏感信息类型为每个国家/地区定义不同的模式、关键字和其他证据。
   
 ## <a name="austria"></a>奥地利
 
@@ -76,12 +76,11 @@ ms.locfileid: "30213822"
 
 税号
   
-多种
+number
   
 税务登记编号
   
 tax id
-
   
 st.nr。
   
@@ -111,7 +110,7 @@ steuernummer
 
 不适用
   
-### <a name="definition"></a>Definition
+### <a name="definition"></a>定义
 
 在 300 个字符的相似度内，如果出现以下情况，DLP 策略 75% 确信它检测到这种类型的敏感信息：
   
@@ -140,7 +139,6 @@ steuernummer
 税务登记编号
   
 tax id
-
   
 \n\n
   
@@ -150,7 +148,7 @@ numéro de registre 国
   
 numéro d'identification fiscale
   
-## <a name="bulgaria"></a>保加利亚
+## <a name="bulgaria"></a>保加利亚语
 
 ### <a name="format"></a>格式
 
@@ -273,9 +271,8 @@ egn #
 税种
   
 tax id
-
   
-排列
+oid
   
 排列
   
@@ -335,7 +332,6 @@ Pattern confidenceLevel="75">
 税种
   
 tax id
-
   
 税标识代码
   
@@ -369,7 +365,7 @@ tax id
 
 不适用
   
-### <a name="definition"></a>Definition
+### <a name="definition"></a>定义
 
 在 300 个字符的相似度内，如果出现以下情况，DLP 策略 75% 确信它检测到这种类型的敏感信息：
   
@@ -396,7 +392,6 @@ tax id
 税种
   
 tax id
-
   
 个人号码
   
@@ -458,7 +453,6 @@ osobníčíslo
 税种
   
 tax id
-
   
 cpr 编号
   
@@ -524,7 +518,6 @@ skat id
 税种
   
 tax id
-
   
 个人代码
   
@@ -586,7 +579,6 @@ isikukood
 #### <a name="keywordsfinlandeutaxfilenumber"></a>Keywords_finland_eu_tax_file_number
 
 identification number
-
   
 个人 id
   
@@ -596,7 +588,7 @@ identification number
   
 personalidnumber #
   
-国家/地区标识号
+national identification number
   
 id 号
   
@@ -680,7 +672,6 @@ kansallinen tunnus numero
 税号
   
 tax id
-
   
 numéro d'identification fiscale
   
@@ -742,7 +733,6 @@ taxnumber #
 taxnumber
   
 tax id
-
   
 taxid #
   
@@ -770,7 +760,7 @@ steueridentifikationsnummer
 
 不适用
   
-### <a name="definition"></a>Definition
+### <a name="definition"></a>定义
 
 在 300 个字符的相似度内，如果出现以下情况，DLP 策略 75% 确信它检测到这种类型的敏感信息：
   
@@ -794,8 +784,7 @@ steueridentifikationsnummer
 
 afm
   
-tin
-
+锡
   
 税号编号
   
@@ -1043,7 +1032,6 @@ taxnumber #
 taxnumber
   
 tax id
-
   
 taxid #
   
@@ -1111,7 +1099,6 @@ taxnumber #
 taxnumber
   
 tax id
-
   
 taxid #
   
@@ -1179,7 +1166,6 @@ taxnumber #
 taxnumber
   
 tax id
-
   
 taxid #
   
@@ -1251,7 +1237,6 @@ taxnumber #
 taxnumber
   
 tax id
-
   
 taxid #
   
@@ -1265,7 +1250,7 @@ steuer id
   
 steueridentifikationsnummer
   
-## <a name="malta"></a>马耳他
+## <a name="malta"></a>Malta（马耳他）
 
 ### <a name="format"></a>格式
 
@@ -1289,7 +1274,7 @@ steueridentifikationsnummer
 
 不适用
   
-### <a name="definition"></a>Definition
+### <a name="definition"></a>定义
 
 在 300 个字符的相似度内，如果出现以下情况，DLP 策略 75% 确信它检测到这种类型的敏感信息：
   
@@ -1329,7 +1314,6 @@ taxnumber #
 taxnumber
   
 tax id
-
   
 taxid #
   
@@ -1401,7 +1385,6 @@ netherland 的税标识
 荷兰纳税标识号
   
 tax id
-
   
 税号 #
   
@@ -1411,8 +1394,7 @@ tax id
   
 税种
   
-tin
-
+锡
   
 锡
   
@@ -1494,7 +1476,6 @@ nip
 nip #
   
 tax id
-
   
 税号 #
   
@@ -1597,7 +1578,7 @@ número de identificação 会计
 
 不适用
   
-### <a name="definition"></a>Definition
+### <a name="definition"></a>定义
 
 在 300 个字符的相似度内，如果出现以下情况，DLP 策略 75% 确信它检测到这种类型的敏感信息：
   
@@ -1620,14 +1601,11 @@ número de identificação 会计
 #### <a name="keywordsromaniaeutaxfilenumber"></a>Keywords_romania_eu_tax_file_number
 
 tax id
-
   
 税务 id 号
   
 税文件编号
   
-
-
 tax file number
   
 免税
@@ -1656,7 +1634,7 @@ numărul de identificare fiscală
 
 不适用
   
-### <a name="definition"></a>Definition
+### <a name="definition"></a>定义
 
 在 300 个字符的相似度内，如果出现以下情况，DLP 策略 75% 确信它检测到这种类型的敏感信息：
   
@@ -1679,7 +1657,6 @@ numărul de identificare fiscală
 #### <a name="keywordsslovakiaeutaxfilenumber"></a>Keywords_slovakia_eu_tax_file_number
 
 tax id
-
   
 税务 id 号
   
@@ -1689,13 +1666,10 @@ tin 编号
   
 斯洛伐克纳税人标识号 id
   
-tin
-
+锡
   
 税文件编号
   
-
-
 tax file number
   
 免税
@@ -1712,7 +1686,7 @@ daňovéčíslo
   
 daňovéčíslo súboru
   
-## <a name="slovenia"></a>斯诺文尼亚
+## <a name="slovenia"></a>斯洛文尼亚
 
 ### <a name="format"></a>格式
 
@@ -1756,7 +1730,6 @@ daňovéčíslo súboru
 #### <a name="keywordssloveniaeutaxfilenumber"></a>Keywords_slovenia_eu_tax_file_number
 
 tax id
-
   
 税务 id 号
   
@@ -1766,13 +1739,10 @@ tin 编号
   
 斯洛文尼亚纳税人标识号 id
   
-tin
-
+锡
   
 税文件编号
   
-
-
 tax file number
   
 免税
@@ -1869,7 +1839,6 @@ davčna številka
 #### <a name="keywordsspaineutaxfilenumber"></a>Keywords_spain_eu_tax_file_number
 
 tax id
-
   
 税务 id 号
   
@@ -1885,8 +1854,6 @@ cif
   
 西班牙语 cif 号码
   
-
-
 tax file number
   
 西班牙语 cif no
@@ -1971,14 +1938,12 @@ cifnúmero #
 #### <a name="keywordsswedeneutaxfilenumber"></a>Keywords_sweden_eu_tax_file_number
 
 tax id
-
   
 税号编号
   
 税务 id 号
   
 tax identification
-
   
 纳税标识号
   
@@ -2006,13 +1971,13 @@ personnummer
 
 唯一的纳税人参考 (UTR):10 个数字, 无空格和分隔符
   
-国家保险业号码 (NINO): 有关详细信息, 请参阅[敏感信息类型查找的内容](what-the-sensitive-information-types-look-for.md)中的 "英国国家保险业号码 (NINO)" 一节。
+国家保险业号码 (NINO): 有关详细信息, 请参阅 "英国 [敏感信息类型查找的内容](what-the-sensitive-information-types-look-for.md)中的国家保险业号码 (NINO)。
   
 ### <a name="pattern"></a>模式
 
 唯一的纳税人引用 (UTR):10 个数字
   
-国家保险业号码 (NINO): 有关详细信息, 请参阅[敏感信息类型查找的内容](what-the-sensitive-information-types-look-for.md)中的 "英国国家保险业号码 (NINO)" 一节。
+国家保险业号码 (NINO): 有关详细信息, 请参阅 "英国 [敏感信息类型查找的内容](what-the-sensitive-information-types-look-for.md)中的国家保险业号码 (NINO)。
   
 ### <a name="checksum"></a>校验和
 
@@ -2041,14 +2006,12 @@ personnummer
 #### <a name="keywordsukeutaxfilenumber"></a>Keywords_uk_eu_tax_file_number
 
 tax id
-
   
 税号编号
   
 税务 id 号
   
 tax identification
-
   
 纳税标识号
   

@@ -7,19 +7,19 @@ ms.date: 8/17/2018
 ms.audience: Admin
 ms.topic: reference
 ms.service: O365-seccomp
+ms.collection: M365-security-compliance
 localization_priority: Normal
-ms.assetid: 2ea971bf-9434-4b61-b825-2bbd28ae6064
-description: 本主题介绍当数据丢失防护 (DLP) 策略检测到欧盟国家身份证的敏感信息类型时, 会对其进行查找。此敏感信息类型为每个国家/地区定义不同的模式、关键字和其他证据。
-ms.openlocfilehash: 9a85fd6954f39de348874e03268a2e19ae47366c
-ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
+description: 本主题介绍当数据丢失防护 (DLP) 策略检测到欧盟国家身份证的敏感信息类型时, 会对其进行查找。 此敏感信息类型为每个国家/地区定义不同的模式、关键字和其他证据。
+ms.openlocfilehash: afae2c3fa54fe5fcd93990cdf5797f5517c46202
+ms.sourcegitcommit: ed822a776d3419853453583e882f3c61ca26d4b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30220632"
+ms.lasthandoff: 03/05/2019
+ms.locfileid: "30410967"
 ---
 # <a name="eu-national-identification-number"></a>欧盟国家身份证号
 
-本主题介绍当数据丢失防护 (DLP) 策略检测到欧盟国家身份证的敏感信息类型时, 会对其进行查找。此敏感信息类型为每个国家/地区定义不同的模式、关键字和其他证据。
+本主题介绍当数据丢失防护 (DLP) 策略检测到欧盟国家身份证的敏感信息类型时, 会对其进行查找。 此敏感信息类型为每个国家/地区定义不同的模式、关键字和其他证据。
   
 ## <a name="austria"></a>奥地利
 
@@ -39,7 +39,7 @@ ms.locfileid: "30220632"
 
 不适用
   
-### <a name="definition"></a>Definition
+### <a name="definition"></a>定义
 
 在 300 个字符的相似度内，如果出现以下情况，DLP 策略 75% 确信它检测到这种类型的敏感信息：
   
@@ -67,7 +67,6 @@ ms.locfileid: "30220632"
   
 标识号码
   
-
 national id
   
 personalausweis republik österreich
@@ -76,7 +75,7 @@ personalausweis republik österreich
 
 有关详细信息, 请参阅[敏感信息类型查找的内容](what-the-sensitive-information-types-look-for.md)中的 "比利时国家数" 一节。
   
-## <a name="bulgaria"></a>保加利亚
+## <a name="bulgaria"></a>保加利亚语
 
 ### <a name="format"></a>格式
 
@@ -135,7 +134,6 @@ egn #
 国家/地区号码
   
 social security number
-
   
 nationalnumber #
   
@@ -179,7 +177,7 @@ edinen grazhdanski nomer
 
 不适用
   
-### <a name="definition"></a>Definition
+### <a name="definition"></a>定义
 
 在 300 个字符的相似度内，如果出现以下情况，DLP 策略 75% 确信它检测到这种类型的敏感信息：
   
@@ -203,7 +201,7 @@ edinen grazhdanski nomer
 
 id 卡号
   
-国家/地区标识号
+national identification number
   
 个人 id 号
   
@@ -274,7 +272,7 @@ id 卡号
   
 个人标识号
   
-国家/地区标识号
+national identification number
   
 国家/地区号码
   
@@ -357,7 +355,6 @@ id-kaart
 个人标识号
   
 identification number
-
   
 个人 id 号
   
@@ -433,13 +430,12 @@ rsi no
 个人标识号
   
 identification number
-
   
 个人 id 号
   
 uimhir phearsanta seirbhíse poiblí
   
-uimh。psp
+uimh。 psp
   
 ## <a name="italy"></a>意大利
 
@@ -682,7 +678,7 @@ asmens kodas。
 
 不适用
   
-### <a name="definition"></a>Definition
+### <a name="definition"></a>定义
 
 在 300 个字符的相似度内，如果出现以下情况，DLP 策略 75% 确信它检测到这种类型的敏感信息：
   
@@ -737,7 +733,7 @@ persönliche identifikationsnummer
   
 eindeutigeid #
   
-## <a name="malta"></a>马耳他
+## <a name="malta"></a>Malta（马耳他）
 
 ### <a name="format"></a>格式
 
@@ -755,7 +751,7 @@ eindeutigeid #
 
 不适用
   
-### <a name="definition"></a>Definition
+### <a name="definition"></a>定义
 
 在 300 个字符的相似度内，如果出现以下情况，DLP 策略 75% 确信它检测到这种类型的敏感信息：
   
@@ -926,7 +922,7 @@ cnp
   
 cnp #
   
-固定
+针
   
 针
   
@@ -1001,12 +997,11 @@ numărpersonalunic #
 
 出生号码
   
-国家/地区标识号
+national identification number
   
 个人标识号
   
 social security number
-
   
 nationalnumber #
   
@@ -1026,7 +1021,7 @@ rodnéčíslo
   
 rodne cislo
   
-## <a name="slovenia"></a>斯诺文尼亚
+## <a name="slovenia"></a>斯洛文尼亚
 
 ### <a name="format"></a>格式
 
@@ -1115,7 +1110,7 @@ emšo
 
 不适用
   
-### <a name="definition"></a>Definition
+### <a name="definition"></a>定义
 
 在 300 个字符的相似度内，如果出现以下情况，DLP 策略 75% 确信它检测到这种类型的敏感信息：
   
@@ -1139,7 +1134,7 @@ emšo
 
 dni
   
-国家/地区标识号
+national identification number
   
 国家/地区身份证号码
   

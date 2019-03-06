@@ -7,19 +7,19 @@ ms.date: 8/17/2018
 ms.audience: Admin
 ms.topic: reference
 ms.service: O365-seccomp
+ms.collection: M365-security-compliance
 localization_priority: Normal
-ms.assetid: 1fabd341-e594-4bfe-961c-62aa82893f60
-description: 本主题介绍当数据丢失防护 (DLP) 策略检测到欧盟社会保险号码或等效 ID 敏感信息类型时, 将会查找什么。此敏感信息类型为每个国家/地区定义不同的模式、关键字和其他证据。
-ms.openlocfilehash: abcefb6930e9c02d2f32d84b65accfecf1e20d95
-ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
+description: 本主题介绍当数据丢失防护 (DLP) 策略检测到欧盟社会保险号码或等效 ID 敏感信息类型时, 将会查找什么。 此敏感信息类型为每个国家/地区定义不同的模式、关键字和其他证据。
+ms.openlocfilehash: c0c808eafa52209c79f3b4e8a2113f587fd8a771
+ms.sourcegitcommit: ed822a776d3419853453583e882f3c61ca26d4b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30216522"
+ms.lasthandoff: 03/05/2019
+ms.locfileid: "30410797"
 ---
 # <a name="eu-social-security-number-or-equivalent-id"></a>欧盟社会安全号码或等效 ID
 
-本主题介绍当数据丢失防护 (DLP) 策略检测到欧盟社会保险号码 (SSN) 或等效 ID 敏感信息类型时, 会查找什么内容。此敏感信息类型为每个国家/地区定义不同的模式、关键字和其他证据。
+本主题介绍当数据丢失防护 (DLP) 策略检测到欧盟社会保险号码 (SSN) 或等效 ID 敏感信息类型时, 会查找什么内容。 此敏感信息类型为每个国家/地区定义不同的模式、关键字和其他证据。
   
 ## <a name="austria"></a>奥地利
 
@@ -73,9 +73,7 @@ ms.locfileid: "30216522"
 社会保障号
   
 social security number
-
   
-
 social security code
   
 保险号
@@ -146,7 +144,6 @@ versicherungsnummer
 国家/地区号码
   
 social security number
-
   
 nationalnumber #
   
@@ -167,7 +164,6 @@ personalidnumber #
 numéro 国家
   
 numéro de sécurité
-
   
 numéro d'assuré
   
@@ -228,10 +224,9 @@ numéronational #
   
 主公民号码
   
-国家/地区标识号
+national identification number
   
 social security number
-
   
 nationalnumber #
   
@@ -306,12 +301,11 @@ osobni identifikacijski broj
 
 出生号码
   
-国家/地区标识号
+national identification number
   
 个人标识号
   
 social security number
-
   
 nationalnumber #
   
@@ -382,10 +376,9 @@ rodne cislo
 
 个人标识号
   
-国家/地区标识号
+national identification number
   
 social security number
-
   
 nationalnumber #
   
@@ -461,7 +454,6 @@ personnummer
 #### <a name="keywordsfinlandeussnorequivalent"></a>Keywords_finland_eu_ssn_or_equivalent
 
 identification number
-
   
 个人 id
   
@@ -471,7 +463,7 @@ identification number
   
 personalidnumber #
   
-国家/地区标识号
+national identification number
   
 id 号
   
@@ -561,7 +553,6 @@ hetu
 匈牙利语社会安全号码
   
 social security number
-
   
 socialsecuritynumber #
   
@@ -657,7 +648,6 @@ magyar áfa szám
 个人 id 号
   
 identification number
-
   
 个人 id 否
   

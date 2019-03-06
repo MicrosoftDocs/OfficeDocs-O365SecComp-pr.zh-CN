@@ -7,19 +7,19 @@ ms.date: 8/16/2018
 ms.audience: Admin
 ms.topic: reference
 ms.service: O365-seccomp
+ms.collection: M365-security-compliance
 localization_priority: Normal
-ms.assetid: 8c00df57-9fb3-459c-ba87-40480c87bd55
-description: 本主题介绍当数据丢失防护 (DLP) 策略检测到欧盟护照号敏感信息类型时, 应查找什么内容。此敏感信息类型为每个国家/地区定义不同的模式、关键字和其他证据。
-ms.openlocfilehash: c46f683bd1baf651bcf13c1766dfff3cb953b341
-ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
+description: 本主题介绍当数据丢失防护 (DLP) 策略检测到欧盟护照号敏感信息类型时, 应查找什么内容。 此敏感信息类型为每个国家/地区定义不同的模式、关键字和其他证据。
+ms.openlocfilehash: 3ab92e87607f41cffa8c15f1179a4eef5369cb29
+ms.sourcegitcommit: ed822a776d3419853453583e882f3c61ca26d4b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30218262"
+ms.lasthandoff: 03/05/2019
+ms.locfileid: "30410927"
 ---
 # <a name="eu-passport-number"></a>EU 护照号码
 
-本主题介绍当数据丢失防护 (DLP) 策略检测到欧盟护照号敏感信息类型时, 应查找什么内容。此敏感信息类型为每个国家/地区定义不同的模式、关键字和其他证据。
+本主题介绍当数据丢失防护 (DLP) 策略检测到欧盟护照号敏感信息类型时, 应查找什么内容。 此敏感信息类型为每个国家/地区定义不同的模式、关键字和其他证据。
   
 ## <a name="austria"></a>奥地利
 
@@ -64,7 +64,7 @@ ms.locfileid: "30218262"
 | |
 |**Keywords_austria_eu_passport_number**|
 |:-----|
-|护照号码  <br/> 奥地利护照号码  <br/> 护照号  <br/> reisepass  <br/> österreichisch reisepass  <br/> |
+|passport number  <br/> 奥地利护照号码  <br/> 护照号  <br/> reisepass  <br/> österreichisch reisepass  <br/> |
    
 ## <a name="belgium"></a>比利时
 
@@ -103,9 +103,9 @@ ms.locfileid: "30218262"
 | |
 |**Keywords_belgium_eu_passport_number**|
 |:-----|
-|护照号码  <br/> 比利时护照号码  <br/> 护照号  <br/> paspoort  <br/> paspoortnummer  <br/> reisepass kein  <br/> reisepass  <br/> |
+|passport number  <br/> 比利时护照号码  <br/> 护照号  <br/> paspoort  <br/> paspoortnummer  <br/> reisepass kein  <br/> reisepass  <br/> |
    
-## <a name="bulgaria"></a>保加利亚
+## <a name="bulgaria"></a>保加利亚语
 
 ### <a name="format"></a>格式
 
@@ -142,7 +142,7 @@ ms.locfileid: "30218262"
 | |
 |**Keywords_bulgaria_eu_passport_number**|
 |:-----|
-|护照号码  <br/> 保加利亚语护照号码  <br/> 护照号  <br/> номернапаспорта  <br/> |
+|passport number  <br/> 保加利亚语护照号码  <br/> 护照号  <br/> номернапаспорта  <br/> |
    
 ## <a name="croatia"></a>克罗地亚
 
@@ -181,7 +181,7 @@ ms.locfileid: "30218262"
 | |
 |**Keywords_croatia_eu_passport_number**|
 |:-----|
-|护照号码  <br/> 克罗地亚护照号码  <br/> 护照号  <br/> broj putovnice  <br/> |
+|passport number  <br/> 克罗地亚护照号码  <br/> 护照号  <br/> broj putovnice  <br/> |
    
 ## <a name="cyprus"></a>塞浦路斯
 
@@ -220,7 +220,7 @@ ms.locfileid: "30218262"
 | |
 |**Keywords_cyprus_eu_passport_number**|
 |:-----|
-|护照号码  <br/> 塞浦路斯护照号码  <br/> 护照号  <br/> αριθμόδιαβατηρίου  <br/> |
+|passport number  <br/> 塞浦路斯护照号码  <br/> 护照号  <br/> αριθμόδιαβατηρίου  <br/> |
    
 ## <a name="czech-republic"></a>捷克共和国
 
@@ -259,7 +259,7 @@ ms.locfileid: "30218262"
 | |
 |**Keywords_czech_republic_eu_passport_number**|
 |:-----|
-|护照号码  <br/> 捷克语护照号码  <br/> 护照号  <br/> cestovní pas  <br/> pas  <br/> |
+|passport number  <br/> 捷克语护照号码  <br/> 护照号  <br/> cestovní pas  <br/> pas  <br/> |
    
 ## <a name="denmark"></a>丹麦
 
@@ -298,7 +298,7 @@ ms.locfileid: "30218262"
 | |
 |**Keywords_denmark_eu_passport_number**|
 |:-----|
-|护照号码  <br/> 丹麦护照号码  <br/> 护照号  <br/> pas  <br/> pasnummer  <br/> |
+|passport number  <br/> 丹麦护照号码  <br/> 护照号  <br/> pas  <br/> pasnummer  <br/> |
    
 ## <a name="estonia"></a>爱沙尼亚
 
@@ -337,7 +337,7 @@ ms.locfileid: "30218262"
 | |
 |**Keywords_estonia_eu_passport_number**|
 |:-----|
-|护照号码  <br/> 爱沙尼亚语护照号码  <br/> 护照号  <br/> eesti kodaniku pass  <br/> |
+|passport number  <br/> 爱沙尼亚语护照号码  <br/> 护照号  <br/> eesti kodaniku pass  <br/> |
    
 ## <a name="finland"></a>芬兰
 
@@ -388,7 +388,7 @@ ms.locfileid: "30218262"
 | |
 |**Keywords_greece_eu_passport_number**|
 |:-----|
-|护照号码  <br/> 希腊护照号码  <br/> 护照号  <br/> διαβατηριο  <br/> |
+|passport number  <br/> 希腊护照号码  <br/> 护照号  <br/> διαβατηριο  <br/> |
    
 ## <a name="hungary"></a>匈牙利
 
@@ -427,7 +427,7 @@ ms.locfileid: "30218262"
 | |
 |**Keywords_hungary_eu_passport_number**|
 |:-----|
-|护照号码  <br/> 匈牙利语护照号码  <br/> 护照号  <br/> útlevél száma  <br/> |
+|passport number  <br/> 匈牙利语护照号码  <br/> 护照号  <br/> útlevél száma  <br/> |
    
 ## <a name="ireland"></a>Ireland
 
@@ -470,7 +470,7 @@ ms.locfileid: "30218262"
 | |
 |**Keywords_ireland_eu_passport_number**|
 |:-----|
-|护照号码  <br/> 爱尔兰护照号码  <br/> 护照号  <br/> pas  <br/> passport  <br/> passeport  <br/> passeport numero  <br/> |
+|passport number  <br/> 爱尔兰护照号码  <br/> 护照号  <br/> pas  <br/> 登记卡  <br/> passeport  <br/> passeport numero  <br/> |
    
 ## <a name="italy"></a>意大利
 
@@ -513,7 +513,7 @@ ms.locfileid: "30218262"
 | |
 |**Keywords_italy_eu_passport_number**|
 |:-----|
-|意大利护照号码  <br/> repubblica italiana passaporto  <br/> passaporto  <br/> passaporto italiana  <br/> 护照号码  <br/> italiana passaporto numero  <br/> passaporto numero  <br/> numéro passeport italien  <br/> numéro passeport  <br/> |
+|意大利护照号码  <br/> repubblica italiana passaporto  <br/> passaporto  <br/> passaporto italiana  <br/> passport number  <br/> italiana passaporto numero  <br/> passaporto numero  <br/> numéro passeport italien  <br/> numéro passeport  <br/> |
    
 ## <a name="latvia"></a>拉脱维亚
 
@@ -556,7 +556,7 @@ ms.locfileid: "30218262"
 | |
 |**Keywords_latvia_eu_passport_number**|
 |:-----|
-|护照号码  <br/> 拉脱维亚语护照号码  <br/> 护照号  <br/> pase numurs  <br/> |
+|passport number  <br/> 拉脱维亚语护照号码  <br/> 护照号  <br/> pase numurs  <br/> |
    
 ## <a name="lithuania"></a>立陶宛
 
@@ -595,7 +595,7 @@ ms.locfileid: "30218262"
 | |
 |**Keywords_lithuania_eu_passport_number**|
 |:-----|
-|护照号码  <br/> lithunian 护照号码  <br/> 护照号  <br/> paso numeris  <br/> |
+|passport number  <br/> lithunian 护照号码  <br/> 护照号  <br/> paso numeris  <br/> |
    
 ## <a name="luxemburg"></a>Luxemburg
 
@@ -634,9 +634,9 @@ ms.locfileid: "30218262"
 | |
 |**Keywords_nation_eu_passport_number**|
 |:-----|
-|护照号码  <br/> 拉脱维亚语护照号码  <br/> 护照号  <br/> passnummer  <br/> |
+|passport number  <br/> 拉脱维亚语护照号码  <br/> 护照号  <br/> passnummer  <br/> |
    
-## <a name="malta"></a>马耳他
+## <a name="malta"></a>Malta（马耳他）
 
 ### <a name="format"></a>格式
 
@@ -673,7 +673,7 @@ ms.locfileid: "30218262"
 | |
 |**Keywords_malta_eu_passport_number**|
 |:-----|
-|护照号码  <br/> 马耳他护照号码  <br/> 护照号  <br/> numru tal-passaport  <br/> |
+|passport number  <br/> 马耳他护照号码  <br/> 护照号  <br/> numru tal-passaport  <br/> |
    
 ## <a name="netherlands"></a>荷兰
 
@@ -712,7 +712,7 @@ ms.locfileid: "30218262"
 | |
 |**Keywords_netherlands_eu_passport_number**|
 |:-----|
-|荷兰护照号码  <br/> 护照号码  <br/> 荷兰护照号码  <br/> nederlanden paspoort nummer  <br/> paspoort  <br/> nederlanden paspoortnummer  <br/> paspoortnummer  <br/> |
+|荷兰护照号码  <br/> passport number  <br/> 荷兰护照号码  <br/> nederlanden paspoort nummer  <br/> paspoort  <br/> nederlanden paspoortnummer  <br/> paspoortnummer  <br/> |
    
 ## <a name="poland"></a>波兰
 
@@ -759,7 +759,7 @@ ms.locfileid: "30218262"
 | |
 |**Keywords_portugal_eu_passport_number**|
 |:-----|
-|护照号码  <br/> 葡萄牙语护照号码  <br/> 护照号  <br/> número do passaporte  <br/> |
+|passport number  <br/> 葡萄牙语护照号码  <br/> 护照号  <br/> número do passaporte  <br/> |
    
 ## <a name="romania"></a>罗马尼亚
 
@@ -798,7 +798,7 @@ ms.locfileid: "30218262"
 | |
 |**Keywords_romania_eu_passport_number**|
 |:-----|
-|护照号码  <br/> 罗马尼亚护照号码  <br/> 护照号  <br/> numărul pașaportului  <br/> |
+|passport number  <br/> 罗马尼亚护照号码  <br/> 护照号  <br/> numărul pașaportului  <br/> |
    
 ## <a name="slovakia"></a>斯洛伐克
 
@@ -837,9 +837,9 @@ ms.locfileid: "30218262"
 | |
 |**Keywords_slovakia_eu_passport_number**|
 |:-----|
-|护照号码  <br/> 斯洛伐克护照号码  <br/> 护照号  <br/> číslo pasu  <br/> |
+|passport number  <br/> 斯洛伐克护照号码  <br/> 护照号  <br/> číslo pasu  <br/> |
    
-## <a name="slovenia"></a>斯诺文尼亚
+## <a name="slovenia"></a>斯洛文尼亚
 
 ### <a name="format"></a>格式
 
@@ -882,7 +882,7 @@ ms.locfileid: "30218262"
 | |
 |**Keywords_slovenia_eu_passport_number**|
 |:-----|
-|护照号码  <br/> 斯洛文尼亚护照号码  <br/> 护照号  <br/> številka potnega lista  <br/> |
+|passport number  <br/> 斯洛文尼亚护照号码  <br/> 护照号  <br/> številka potnega lista  <br/> |
    
 ## <a name="spain"></a>西班牙
 
@@ -927,7 +927,7 @@ ms.locfileid: "30218262"
 | |
 |**Keywords_spain_eu_passport_number**|
 |:-----|
-|passport  <br/> 西班牙护照  <br/> 护照书籍  <br/> 护照号码  <br/> 护照号  <br/> libreta pasaporte  <br/> número pasaporte  <br/> 西班牙 pasaporte  <br/> pasaporte  <br/> |
+|登记卡  <br/> 西班牙护照  <br/> 护照书籍  <br/> passport number  <br/> 护照号  <br/> libreta pasaporte  <br/> número pasaporte  <br/> 西班牙 pasaporte  <br/> pasaporte  <br/> |
    
 ## <a name="sweden"></a>瑞典
 
@@ -935,7 +935,7 @@ ms.locfileid: "30218262"
   
 ## <a name="uk"></a>英国
 
-有关详细信息, 请参阅[敏感信息类型查找的内容](what-the-sensitive-information-types-look-for.md)部分中的 "美国/英国护照号码" 一节。
+有关详细信息, 请参阅 "美国/英国" 一节。 "Passport 号码", 在[敏感信息类型查找的内容](what-the-sensitive-information-types-look-for.md)中。
   
 ## <a name="see-also"></a>另请参阅
 

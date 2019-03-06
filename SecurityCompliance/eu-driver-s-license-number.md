@@ -7,19 +7,19 @@ ms.date: 8/17/2018
 ms.audience: Admin
 ms.topic: reference
 ms.service: O365-seccomp
+ms.collection: M365-security-compliance
 localization_priority: Normal
-ms.assetid: c3923cd3-ec84-435f-bf41-cadc37996a4b
-description: 本主题介绍当数据丢失防护 (DLP) 策略检测到欧盟驱动程序的敏感信息类型时, 应查找什么内容。此敏感信息类型为每个国家/地区定义不同的模式、关键字和其他证据。
-ms.openlocfilehash: 86be7b52aed7581fd62ab595ac2c4b63ab33aab3
-ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
+description: 本主题介绍当数据丢失防护 (DLP) 策略检测到欧盟驱动程序的敏感信息类型时, 应查找什么内容。 此敏感信息类型为每个国家/地区定义不同的模式、关键字和其他证据。
+ms.openlocfilehash: be9497c325866a670dff8d82b5170f4ca947c4ad
+ms.sourcegitcommit: ed822a776d3419853453583e882f3c61ca26d4b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30217742"
+ms.lasthandoff: 03/05/2019
+ms.locfileid: "30410747"
 ---
 # <a name="eu-drivers-license-number"></a>欧盟驾驶执照号码
 
-本主题介绍当数据丢失防护 (DLP) 策略检测到欧盟驱动程序的敏感信息类型时, 应查找什么内容。此敏感信息类型为每个国家/地区定义不同的模式、关键字和其他证据。
+本主题介绍当数据丢失防护 (DLP) 策略检测到欧盟驱动程序的敏感信息类型时, 应查找什么内容。 此敏感信息类型为每个国家/地区定义不同的模式、关键字和其他证据。
   
 ## <a name="austria"></a>奥地利
 
@@ -59,7 +59,7 @@ ms.locfileid: "30217742"
 | |
 |**Keywords_austria_eu_driver's_license_number**|
 |:-----|
-|dl#  <br/> driver license  <br/> 驱动程序许可证编号  <br/> 驱动程序许可证  <br/> 驱动程序许可证。  <br/> drivers license  <br/> 驾驶许可证  <br/> driver's license  <br/> 驾驶执照号码  <br/> 驾驶许可证编号  <br/>  驾驶执照号码  <br/> dlno #  <br/> fuhrerschein  <br/> fuhrerschein republik osterreich  <br/> |
+|通讯  <br/> driver license  <br/> 驱动程序许可证编号  <br/> 驱动程序许可证  <br/> 驱动程序许可证。  <br/> drivers license  <br/> driver's licence  <br/> driver's license  <br/> 驾驶执照号码  <br/> 驾驶许可证编号  <br/>  驾驶执照号码  <br/> dlno #  <br/> fuhrerschein  <br/> fuhrerschein republik osterreich  <br/> |
    
 ## <a name="belgium"></a>比利时
 
@@ -99,9 +99,9 @@ ms.locfileid: "30217742"
 | |
 |**Keywords__belgium_eu_driver's_license_number**|
 |:-----|
-|dl#  <br/> driver license  <br/> 驱动程序许可证编号  <br/> 驱动程序许可证  <br/> 驱动程序许可证。  <br/> drivers license  <br/> drivers licence  <br/> driver's license  <br/> 驾驶执照号码  <br/> 驾驶许可证编号  <br/> dlno #  <br/> rijbewijs  <br/> rijbewijsnummer  <br/> führerscheinnummer  <br/> fuhrerscheinnummer  <br/> fuehrerscheinnummer  <br/> führerschein-nr-nr  <br/> fuehrerschein-Nr  <br/> fuehrerschein-nr  <br/> |
+|通讯  <br/> driver license  <br/> 驱动程序许可证编号  <br/> 驱动程序许可证  <br/> 驱动程序许可证。  <br/> drivers license  <br/> drivers licence  <br/> driver's license  <br/> 驾驶执照号码  <br/> 驾驶许可证编号  <br/> dlno #  <br/> rijbewijs  <br/> rijbewijsnummer  <br/> führerscheinnummer  <br/> fuhrerscheinnummer  <br/> fuehrerscheinnummer  <br/> führerschein-nr-nr  <br/> fuehrerschein-Nr  <br/> fuehrerschein-nr  <br/> |
    
-## <a name="bulgaria"></a>保加利亚
+## <a name="bulgaria"></a>保加利亚语
 
 ### <a name="format"></a>格式
 
@@ -139,7 +139,7 @@ ms.locfileid: "30217742"
 | |
 |**Keywords_bulgaria_eu_driver's_license_number**|
 |:-----|
-|dl#  <br/> driver license  <br/> 驱动程序许可证编号  <br/> 驱动程序许可证  <br/> 驱动程序许可证。  <br/> drivers license  <br/> drivers licence  <br/> driver's license  <br/> 驾驶执照号码  <br/> 驾驶许可证编号  <br/> 驾驶执照号码  <br/> dlno #  <br/> свидетелствозауправлениенампс  <br/> свидетелствозауправлениенамоторнопревозносредство  <br/> сумпс  <br/> шофьорскакнижка  <br/> |
+|通讯  <br/> driver license  <br/> 驱动程序许可证编号  <br/> 驱动程序许可证  <br/> 驱动程序许可证。  <br/> drivers license  <br/> drivers licence  <br/> driver's license  <br/> 驾驶执照号码  <br/> 驾驶许可证编号  <br/> 驾驶执照号码  <br/> dlno #  <br/> свидетелствозауправлениенампс  <br/> свидетелствозауправлениенамоторнопревозносредство  <br/> сумпс  <br/> шофьорскакнижка  <br/> |
    
 ## <a name="croatia"></a>克罗地亚
 
@@ -179,7 +179,7 @@ ms.locfileid: "30217742"
 | |
 |**Keywords_croatia_eu_driver's_license_number**|
 |:-----|
-|dl#  <br/> driver license  <br/> 驱动程序许可证编号  <br/> 驱动程序许可证  <br/> 驱动程序许可证。  <br/> drivers license  <br/> drivers licence  <br/> driver's license  <br/> 驾驶执照号码  <br/> 驾驶许可证编号  <br/> 驾驶执照号码  <br/> dlno #  <br/> vozačka dozvola  <br/> |
+|通讯  <br/> driver license  <br/> 驱动程序许可证编号  <br/> 驱动程序许可证  <br/> 驱动程序许可证。  <br/> drivers license  <br/> drivers licence  <br/> driver's license  <br/> 驾驶执照号码  <br/> 驾驶许可证编号  <br/> 驾驶执照号码  <br/> dlno #  <br/> vozačka dozvola  <br/> |
    
 ## <a name="cyprus"></a>塞浦路斯
 
@@ -218,7 +218,7 @@ ms.locfileid: "30217742"
 | |
 |**Keywords_cyprus_eu_driver's_license_number**|
 |:-----|
-|dl#  <br/> driver license  <br/> 驱动程序许可证编号  <br/> 驱动程序许可证  <br/> 驱动程序许可证。  <br/> drivers license  <br/> drivers licence  <br/> 驾驶执照号码  <br/> 驾驶许可证编号  <br/> 驾驶执照号码  <br/> dlno #  <br/> άδειαοδήγησης  <br/> |
+|通讯  <br/> driver license  <br/> 驱动程序许可证编号  <br/> 驱动程序许可证  <br/> 驱动程序许可证。  <br/> drivers license  <br/> drivers licence  <br/> 驾驶执照号码  <br/> 驾驶许可证编号  <br/> 驾驶执照号码  <br/> dlno #  <br/> άδειαοδήγησης  <br/> |
    
 ## <a name="czech-republic"></a>捷克共和国
 
@@ -264,7 +264,7 @@ ms.locfileid: "30217742"
 | |
 |**Keywords_czech_republic_eu_driver's_license_number**|
 |:-----|
-|dl#  <br/> driver license  <br/> 驱动程序许可证编号  <br/> 驱动程序许可证  <br/> 驱动程序许可证。  <br/> drivers license  <br/> drivers licence  <br/> driver's license  <br/> 驾驶执照号码  <br/> 驾驶执照号码  <br/> 驾驶许可证编号  <br/> 驾驶执照号码  <br/> dlno #  <br/> řidičský prúkaz  <br/> |
+|通讯  <br/> driver license  <br/> 驱动程序许可证编号  <br/> 驱动程序许可证  <br/> 驱动程序许可证。  <br/> drivers license  <br/> drivers licence  <br/> driver's license  <br/> 驾驶执照号码  <br/> 驾驶执照号码  <br/> 驾驶许可证编号  <br/> 驾驶执照号码  <br/> dlno #  <br/> řidičský prúkaz  <br/> |
    
 ## <a name="denmark"></a>丹麦
 
@@ -304,7 +304,7 @@ ms.locfileid: "30217742"
 | |
 |**Keywords_denmark_eu_driver's_license_number**|
 |:-----|
-|dl#  <br/> driver license  <br/> 驱动程序许可证编号  <br/> 驱动程序许可证  <br/> 驱动程序许可证。  <br/> drivers license  <br/> drivers licence  <br/> driver's license  <br/> 驾驶执照号码  <br/> 驾驶许可证编号  <br/> 驾驶执照号码  <br/> dlno #  <br/> kørekort  <br/> kørekortnummer  <br/> |
+|通讯  <br/> driver license  <br/> 驱动程序许可证编号  <br/> 驱动程序许可证  <br/> 驱动程序许可证。  <br/> drivers license  <br/> drivers licence  <br/> driver's license  <br/> 驾驶执照号码  <br/> 驾驶许可证编号  <br/> 驾驶执照号码  <br/> dlno #  <br/> kørekort  <br/> kørekortnummer  <br/> |
    
 ## <a name="estonia"></a>爱沙尼亚
 
@@ -347,8 +347,7 @@ ms.locfileid: "30217742"
 | |
 |**Keywords_estonia_eu_driver's_license_number**|
 |:-----|
-|dl#  <br/> driver license  <br/> 驱动程序许可证编号  <br/> 驱动程序许可证编号  <br/> 驱动程序许可证  <br/> 驱动程序许可证。  <br/> drivers license  <br/> drivers licence  <br/> driver's license  <br/> 驾驶执照号码  <br/> 驾驶执照号码  <br/> dlno #  <br/> 
-permis de conduire  <br/> |
+|通讯  <br/> driver license  <br/> 驱动程序许可证编号  <br/> 驱动程序许可证编号  <br/> 驱动程序许可证  <br/> 驱动程序许可证。  <br/> drivers license  <br/> drivers licence  <br/> driver's license  <br/> 驾驶执照号码  <br/> 驾驶执照号码  <br/> dlno #  <br/> permis de conduire  <br/> |
    
 ## <a name="finland"></a>芬兰
 
@@ -362,9 +361,9 @@ permis de conduire  <br/> |
   
 -  六位数字 
     
-- 连字符
+- 一个连字符
     
--  四位数字 
+-  四个数字 
     
 ### <a name="checksum"></a>校验和
 
@@ -393,7 +392,7 @@ permis de conduire  <br/> |
 | |
 |**Keywords_finland_eu_driver's_license_number**|
 |:-----|
-|dl#  <br/> driver license  <br/> 驱动程序许可证编号  <br/> 驱动程序许可证  <br/> 驱动程序许可证。  <br/> drivers license  <br/> drivers licence  <br/> driver's license  <br/> 驾驶执照号码  <br/> 驾驶许可证编号  <br/> 驾驶执照号码  <br/> dlno #  <br/> ajokortti  <br/> |
+|通讯  <br/> driver license  <br/> 驱动程序许可证编号  <br/> 驱动程序许可证  <br/> 驱动程序许可证。  <br/> drivers license  <br/> drivers licence  <br/> driver's license  <br/> 驾驶执照号码  <br/> 驾驶许可证编号  <br/> 驾驶执照号码  <br/> dlno #  <br/> ajokortti  <br/> |
    
 ## <a name="france"></a>法国
 
@@ -483,7 +482,7 @@ permis de conduire  <br/> |
 | |
 |**Keywords_hungary_eu_driver's_license_number**|
 |:-----|
-|dl#  <br/> driver license  <br/> 驱动程序许可证编号  <br/> 驱动程序许可证  <br/> 驱动程序许可证。  <br/> drivers license  <br/> drivers licence  <br/> driver's license  <br/> 驾驶执照号码  <br/> 驾驶许可证编号  <br/> 驾驶执照号码  <br/> dlno #  <br/> vezetoi engedely  <br/> |
+|通讯  <br/> driver license  <br/> 驱动程序许可证编号  <br/> 驱动程序许可证  <br/> 驱动程序许可证。  <br/> drivers license  <br/> drivers licence  <br/> driver's license  <br/> 驾驶执照号码  <br/> 驾驶许可证编号  <br/> 驾驶执照号码  <br/> dlno #  <br/> vezetoi engedely  <br/> |
    
 ## <a name="ireland"></a>Ireland
 
@@ -526,7 +525,7 @@ permis de conduire  <br/> |
 | |
 |**Keywords_ireland_eu_driver's_license_number**|
 |:-----|
-|dl#  <br/> driver license  <br/> 驱动程序许可证编号  <br/> 驱动程序许可证  <br/> 驱动程序许可证。  <br/> drivers license  <br/> drivers licence  <br/> driver's license  <br/> 驾驶执照号码  <br/> 驾驶许可证编号  <br/> 驾驶执照号码  <br/> dlno #  <br/> ceadúnas tiomána  <br/> |
+|通讯  <br/> driver license  <br/> 驱动程序许可证编号  <br/> 驱动程序许可证  <br/> 驱动程序许可证。  <br/> drivers license  <br/> drivers licence  <br/> driver's license  <br/> 驾驶执照号码  <br/> 驾驶许可证编号  <br/> 驾驶执照号码  <br/> dlno #  <br/> ceadúnas tiomána  <br/> |
    
 ## <a name="italy"></a>意大利
 
@@ -573,7 +572,7 @@ permis de conduire  <br/> |
 | |
 |**Keywords_latvia_eu_driver's_license_number**|
 |:-----|
-|dl#  <br/> driver license  <br/> 驱动程序许可证编号  <br/> 驱动程序许可证  <br/> 驱动程序许可证。  <br/> drivers license  <br/> drivers licence  <br/> driver's license  <br/> 驾驶执照号码  <br/> 驾驶许可证编号  <br/> 驾驶执照号码  <br/> dlno #  <br/> autovadītāja apliecība  <br/> |
+|通讯  <br/> driver license  <br/> 驱动程序许可证编号  <br/> 驱动程序许可证  <br/> 驱动程序许可证。  <br/> drivers license  <br/> drivers licence  <br/> driver's license  <br/> 驾驶执照号码  <br/> 驾驶许可证编号  <br/> 驾驶执照号码  <br/> dlno #  <br/> autovadītāja apliecība  <br/> |
    
 ## <a name="lithuania"></a>立陶宛
 
@@ -612,7 +611,7 @@ permis de conduire  <br/> |
 | |
 |**Keywords_lithuania_eu_driver's_license_number**|
 |:-----|
-|dl#  <br/> driver license  <br/> 驱动程序许可证编号  <br/> 驱动程序许可证  <br/> 驱动程序许可证。  <br/> drivers license  <br/> drivers licence  <br/> driver's license  <br/> 驾驶执照号码  <br/> 驾驶许可证编号  <br/> 驾驶执照号码  <br/> dlno #  <br/> vairuotojo pažymėjimas  <br/> |
+|通讯  <br/> driver license  <br/> 驱动程序许可证编号  <br/> 驱动程序许可证  <br/> 驱动程序许可证。  <br/> drivers license  <br/> drivers licence  <br/> driver's license  <br/> 驾驶执照号码  <br/> 驾驶许可证编号  <br/> 驾驶执照号码  <br/> dlno #  <br/> vairuotojo pažymėjimas  <br/> |
    
 ## <a name="luxemburg"></a>Luxemburg
 
@@ -651,9 +650,9 @@ permis de conduire  <br/> |
 | |
 |**Keywords_luxemburg_eu_driver's_license_number**|
 |:-----|
-|dl#  <br/> driver license  <br/> 驱动程序许可证编号  <br/> 驱动程序许可证  <br/> 驱动程序许可证。  <br/> drivers license  <br/> drivers licence  <br/> driver's license  <br/> 驾驶执照号码  <br/> 驾驶许可证编号  <br/> 驾驶执照号码  <br/> dlno #  <br/> fahrerlaubnis  <br/> |
+|通讯  <br/> driver license  <br/> 驱动程序许可证编号  <br/> 驱动程序许可证  <br/> 驱动程序许可证。  <br/> drivers license  <br/> drivers licence  <br/> driver's license  <br/> 驾驶执照号码  <br/> 驾驶许可证编号  <br/> 驾驶执照号码  <br/> dlno #  <br/> fahrerlaubnis  <br/> |
    
-## <a name="malta"></a>马耳他
+## <a name="malta"></a>Malta（马耳他）
 
 ### <a name="format"></a>格式
 
@@ -700,7 +699,7 @@ permis de conduire  <br/> |
 | |
 |**Keywords_malta_eu_driver's_license_number**|
 |:-----|
-|dl#  <br/> driver license  <br/> 驱动程序许可证编号  <br/> 驱动程序许可证  <br/> 驱动程序许可证。  <br/> drivers license  <br/> drivers licence  <br/> driver's license  <br/> 驾驶执照号码  <br/> 驾驶许可证编号  <br/> 驾驶执照号码  <br/> dlno #  <br/> liċenzja tas-sewqan  <br/> |
+|通讯  <br/> driver license  <br/> 驱动程序许可证编号  <br/> 驱动程序许可证  <br/> 驱动程序许可证。  <br/> drivers license  <br/> drivers licence  <br/> driver's license  <br/> 驾驶执照号码  <br/> 驾驶许可证编号  <br/> 驾驶执照号码  <br/> dlno #  <br/> liċenzja tas-sewqan  <br/> |
    
 ## <a name="netherlands"></a>荷兰
 
@@ -739,8 +738,7 @@ permis de conduire  <br/> |
 | |
 |**Keywords_netherlands_eu_driver's_license_number**|
 |:-----|
-|dl#  <br/> driver license  <br/> 驱动程序许可证编号  <br/> 驱动程序许可证  <br/> 驱动程序许可证。  <br/> drivers license  <br/> drivers licence  <br/> driver's license  <br/> 驾驶执照号码  <br/> 驾驶许可证编号  <br/> 驾驶执照号码  <br/> dlno #  <br/> 
-permis de conduire  <br/> rijbewijs  <br/> rijbewijsnummer  <br/> |
+|通讯  <br/> driver license  <br/> 驱动程序许可证编号  <br/> 驱动程序许可证  <br/> 驱动程序许可证。  <br/> drivers license  <br/> drivers licence  <br/> driver's license  <br/> 驾驶执照号码  <br/> 驾驶许可证编号  <br/> 驾驶执照号码  <br/> dlno #  <br/> permis de conduire  <br/> rijbewijs  <br/> rijbewijsnummer  <br/> |
    
 ## <a name="poland"></a>波兰
 
@@ -789,7 +787,7 @@ permis de conduire  <br/> rijbewijs  <br/> rijbewijsnummer  <br/> |
 | |
 |**Keywords_poland_eu_driver's_license_number**|
 |:-----|
-|dl#  <br/> driver license  <br/> 驱动程序许可证编号  <br/> 驱动程序许可证  <br/> 驱动程序许可证。  <br/> drivers license  <br/> drivers licence  <br/> driver's license  <br/> 驾驶执照号码  <br/> 驾驶许可证编号  <br/> 驾驶执照号码  <br/> dlno #  <br/> prawo jazdy  <br/> |
+|通讯  <br/> driver license  <br/> 驱动程序许可证编号  <br/> 驱动程序许可证  <br/> 驱动程序许可证。  <br/> drivers license  <br/> drivers licence  <br/> driver's license  <br/> 驾驶执照号码  <br/> 驾驶许可证编号  <br/> 驾驶执照号码  <br/> dlno #  <br/> prawo jazdy  <br/> |
    
 ## <a name="portugal"></a>葡萄牙
 
@@ -838,7 +836,7 @@ permis de conduire  <br/> rijbewijs  <br/> rijbewijsnummer  <br/> |
 | |
 |**Keywords_portugal_eu_driver's_license_number**|
 |:-----|
-|dl#  <br/> driver license  <br/> 驱动程序许可证编号  <br/> 驱动程序许可证  <br/> 驱动程序许可证。  <br/> drivers license  <br/> drivers licence  <br/> driver's license  <br/> 驾驶执照号码  <br/> 驾驶许可证编号  <br/> 驾驶执照号码  <br/> dlno #  <br/> carteira de motorista  <br/> |
+|通讯  <br/> driver license  <br/> 驱动程序许可证编号  <br/> 驱动程序许可证  <br/> 驱动程序许可证。  <br/> drivers license  <br/> drivers licence  <br/> driver's license  <br/> 驾驶执照号码  <br/> 驾驶许可证编号  <br/> 驾驶执照号码  <br/> dlno #  <br/> carteira de motorista  <br/> |
    
 ## <a name="romania"></a>罗马尼亚
 
@@ -881,7 +879,7 @@ permis de conduire  <br/> rijbewijs  <br/> rijbewijsnummer  <br/> |
 | |
 |**Keywords_romania_eu_driver's_license_number**|
 |:-----|
-|dl#  <br/> driver license  <br/> 驱动程序许可证编号  <br/> 驱动程序许可证  <br/> 驱动程序许可证。  <br/> drivers license  <br/> drivers licence  <br/> driver's license  <br/> 驾驶执照号码  <br/> 驾驶许可证编号  <br/> 驾驶执照号码  <br/> dlno #  <br/> permis de conducere  <br/> |
+|通讯  <br/> driver license  <br/> 驱动程序许可证编号  <br/> 驱动程序许可证  <br/> 驱动程序许可证。  <br/> drivers license  <br/> drivers licence  <br/> driver's license  <br/> 驾驶执照号码  <br/> 驾驶许可证编号  <br/> 驾驶执照号码  <br/> dlno #  <br/> permis de conducere  <br/> |
    
 ## <a name="slovakia"></a>斯洛伐克
 
@@ -924,9 +922,9 @@ permis de conduire  <br/> rijbewijs  <br/> rijbewijsnummer  <br/> |
 | |
 |**Keywords_slovakia_eu_driver's_license_number**|
 |:-----|
-|dl#  <br/> driver license  <br/> 驱动程序许可证编号  <br/> 驱动程序许可证  <br/> 驱动程序许可证。  <br/> drivers license  <br/> drivers licence  <br/> driver's license  <br/> 驾驶执照号码  <br/> 驾驶许可证编号  <br/> 驾驶执照号码  <br/> dlno #  <br/> vodičský preukaz  <br/> |
+|通讯  <br/> driver license  <br/> 驱动程序许可证编号  <br/> 驱动程序许可证  <br/> 驱动程序许可证。  <br/> drivers license  <br/> drivers licence  <br/> driver's license  <br/> 驾驶执照号码  <br/> 驾驶许可证编号  <br/> 驾驶执照号码  <br/> dlno #  <br/> vodičský preukaz  <br/> |
    
-## <a name="slovenia"></a>斯诺文尼亚
+## <a name="slovenia"></a>斯洛文尼亚
 
 ### <a name="format"></a>格式
 
@@ -963,7 +961,7 @@ permis de conduire  <br/> rijbewijs  <br/> rijbewijsnummer  <br/> |
 | |
 |**Keywords_slovenia_eu_driver's_license_number**|
 |:-----|
-|dl#  <br/> driver license  <br/> 驱动程序许可证编号  <br/> 驱动程序许可证  <br/> 驱动程序许可证。  <br/> drivers license  <br/> drivers licence  <br/> driver's license  <br/> 驾驶执照号码  <br/> 驾驶许可证编号  <br/> 驾驶执照号码  <br/> dlno #  <br/> vozniško dovoljenje  <br/> |
+|通讯  <br/> driver license  <br/> 驱动程序许可证编号  <br/> 驱动程序许可证  <br/> 驱动程序许可证。  <br/> drivers license  <br/> drivers licence  <br/> driver's license  <br/> 驾驶执照号码  <br/> 驾驶许可证编号  <br/> 驾驶执照号码  <br/> dlno #  <br/> vozniško dovoljenje  <br/> |
    
 ## <a name="spain"></a>西班牙
 
@@ -1006,8 +1004,7 @@ permis de conduire  <br/> rijbewijs  <br/> rijbewijsnummer  <br/> |
 | |
 |**Keywords_spain_eu_driver's_license_number**|
 |:-----|
-|dlno #  <br/> dl#  <br/> 驱动程序许可证。  <br/> 驱动程序许可证  <br/> driver license  <br/> drivers licence  <br/> drivers license  <br/> 驾驶许可证  <br/> driver's license  <br/> driving licence
-  <br/> 驾驶执照  <br/> 驱动程序许可证编号  <br/> 驱动程序许可证编号  <br/> 驱动程序许可证编号  <br/> 驱动程序许可证编号  <br/> 驾驶许可证编号  <br/> 驾驶执照号码  <br/> 驾驶许可证编号  <br/> 驾驶执照号码  <br/> 促进允许  <br/> 驾驶允许号码  <br/> permiso de conducción  <br/> permiso conducción  <br/> número licencia conducir  <br/> número de carnet de conducir  <br/> número carnet conducir  <br/> licencia conducir  <br/> número de permiso de conducir  <br/> número de permiso conducir  <br/> número permiso conducir  <br/> permiso conducir  <br/> licencia de manejo  <br/> el carnet de conducir  <br/> carnet conducir  <br/> |
+|dlno #  <br/> 通讯  <br/> 驱动程序许可证。  <br/> 驱动程序许可证  <br/> driver license  <br/> drivers licence  <br/> drivers license  <br/> driver's licence  <br/> driver's license  <br/> driving licence  <br/> driving license  <br/> 驱动程序许可证编号  <br/> 驱动程序许可证编号  <br/> 驱动程序许可证编号  <br/> 驱动程序许可证编号  <br/> 驾驶许可证编号  <br/> 驾驶执照号码  <br/> 驾驶许可证编号  <br/> 驾驶执照号码  <br/> 促进允许  <br/> 驾驶允许号码  <br/> permiso de conducción  <br/> permiso conducción  <br/> número licencia conducir  <br/> número de carnet de conducir  <br/> número carnet conducir  <br/> licencia conducir  <br/> número de permiso de conducir  <br/> número de permiso conducir  <br/> número permiso conducir  <br/> permiso conducir  <br/> licencia de manejo  <br/> el carnet de conducir  <br/> carnet conducir  <br/> |
    
 ## <a name="sweden"></a>瑞典
 
@@ -1021,9 +1018,9 @@ permis de conduire  <br/> rijbewijs  <br/> rijbewijsnummer  <br/> |
   
 -  六位数字 
     
-- 连字符
+- 一个连字符
     
-- 四位数字
+- 四个数字
     
 ### <a name="checksum"></a>校验和
 
@@ -1052,11 +1049,11 @@ permis de conduire  <br/> rijbewijs  <br/> rijbewijsnummer  <br/> |
 | |
 |**Keywords_sweden_eu_driver's_license_number**|
 |:-----|
-|dl#  <br/> driver license  <br/> 驱动程序许可证编号  <br/> 驱动程序许可证  <br/> 驱动程序许可证。  <br/> drivers license  <br/> drivers licence  <br/> driver's license  <br/> 驾驶执照号码  <br/> 驾驶许可证编号  <br/> 驾驶执照号码  <br/> dlno #  <br/> körkort  <br/> |
+|通讯  <br/> driver license  <br/> 驱动程序许可证编号  <br/> 驱动程序许可证  <br/> 驱动程序许可证。  <br/> drivers license  <br/> drivers licence  <br/> driver's license  <br/> 驾驶执照号码  <br/> 驾驶许可证编号  <br/> 驾驶执照号码  <br/> dlno #  <br/> körkort  <br/> |
    
 ## <a name="uk"></a>英国
 
-有关详细信息, 请参阅[敏感信息类型查找的内容](what-the-sensitive-information-types-look-for.md)部分的 "英国驾 License 号码" 一节。
+有关详细信息, 请参阅部分 "英国 "[敏感信息类型查找的内容](what-the-sensitive-information-types-look-for.md)" 中的 "驾驶执照号码"。
   
 ## <a name="see-also"></a>另请参阅
 
