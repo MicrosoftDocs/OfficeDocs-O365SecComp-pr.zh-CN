@@ -5,20 +5,20 @@ author: stephow-MSFT
 manager: laurawi
 ms.date: 5/9/2018
 ms.audience: Admin
-ms.topic: overview
+ms.topic: article
 ms.service: O365-seccomp
+ms.collection: M365-security-compliance
 localization_priority: Priority
 search.appverid:
 - MOE150
 - MET150
-ms.assetid: af341600-5f68-40b3-a73e-73562715acd1
 description: 使用 Office 365 安全与合规中心内的标签活动资源管理器，可快速搜索和查看过去 30 天内 SharePoint 和 OneDrive for Business 中所有内容的标签活动。此为实时数据，可便于你明确了解租户中发生了什么。
-ms.openlocfilehash: 7ef74e46465192e3d145d526ea9660d32409cedf
-ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
+ms.openlocfilehash: 8401e612a117700c0c8338860555c4d52dc4346c
+ms.sourcegitcommit: ed822a776d3419853453583e882f3c61ca26d4b2
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30213322"
+ms.lasthandoff: 03/05/2019
+ms.locfileid: "30410467"
 ---
 # <a name="view-label-activity-for-documents"></a>查看文档的标签活动
 

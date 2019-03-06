@@ -7,17 +7,17 @@ ms.audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Priority
-ms.collection: Strat_O365_IP
+ms.collection: M365-security-compliance
 search.appverid:
 - MOE150
 - MET150
 description: 本主题介绍如何使用 Microsoft 365 REST API 设置业务流程以通过事件自动执行保留。
-ms.openlocfilehash: 799f831e937d3f676bb05eb188b813b1ca23622c
-ms.sourcegitcommit: a80bd8626720fabdf592b84e4424cd3a83d08280
+ms.openlocfilehash: bfd33550eea447fb787ef981f9b0d7a36274b2cc
+ms.sourcegitcommit: ed822a776d3419853453583e882f3c61ca26d4b2
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30223751"
+ms.lasthandoff: 03/05/2019
+ms.locfileid: "30410857"
 ---
 # <a name="automate-event-based-retention"></a>自动执行基于事件的保留
 

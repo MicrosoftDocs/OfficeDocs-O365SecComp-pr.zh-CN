@@ -5,31 +5,27 @@ author: stephow-MSFT
 manager: laurawi
 ms.date: 9/25/2018
 ms.audience: Admin
-ms.topic: overview
+ms.topic: conceptual
 ms.service: O365-seccomp
 localization_priority: Priority
-ms.collection: Strat_O365_IP
+ms.collection: M365-security-compliance
 search.appverid:
 - MOE150
 - MET150
 ms.assetid: af398293-c69d-465e-a249-d74561552d30
 description: 文件计划管理器提供了对保留标签和保留策略的高级管理功能，并提供了便于遍历整个内容生存期（从创建、协作、记录声明、保留到最终处置）中的标签活动和标签到内容活动的集成方式。
-ms.openlocfilehash: 792729d55f7096114694a59d7202b36fc130e48c
-ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
+ms.openlocfilehash: 328b8f1aeed3e25fb0ab5eb651fb3846b123747c
+ms.sourcegitcommit: ed822a776d3419853453583e882f3c61ca26d4b2
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30221182"
+ms.lasthandoff: 03/05/2019
+ms.locfileid: "30410517"
 ---
 # <a name="overview-of-file-plan-manager"></a>文件计划管理器概述
 
 文件计划管理器提供了对保留标签和保留策略的高级管理功能，并提供了便于遍历整个内容生存期（从创建、协作、记录声明、保留到最终处置）中的标签活动和标签到内容活动的集成方式。
 
 ![文件计划页面](media/file-plan-page.png)
-
-## <a name="important-this-feature-is-currently-available-only-as-part-of-the-office-365-preview-program"></a>重要提示：目前，只能在 Office 365 Preview 程序中使用此功能
-
-仅当组织已注册 Office 365 Preview 程序时，此功能才会在租户中可用。
 
 ## <a name="accessing-file-plan-manager"></a>访问文件计划管理器
 
