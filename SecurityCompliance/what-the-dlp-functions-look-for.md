@@ -8,17 +8,18 @@ ms.audience: Admin
 ms.topic: reference
 ms.service: O365-seccomp
 localization_priority: Normal
-ms.collection: M365-security-compliance
+ms.collection:
+- M365-security-compliance
 search.appverid:
 - MOE150
 - MET150
 description: 敏感信息类型查找特定模式, 并通过确保正确的格式设置、强制校验和来查找相关的关键字或其他信息来 corroborate。 其中一些功能是由内部函数执行的。 本主题说明这些函数查找的内容, 以帮助您了解预定义的敏感信息类型的工作原理。
-ms.openlocfilehash: 4cc6f4d27e106aeedb2fa8cae0f3634b9e3d6319
-ms.sourcegitcommit: ed822a776d3419853453583e882f3c61ca26d4b2
+ms.openlocfilehash: f64a4f174483b2aa57520991dcf85d13515074fb
+ms.sourcegitcommit: 6aa82374eef09d2c1921f93bda3eabeeb28aadeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2019
-ms.locfileid: "30410547"
+ms.lasthandoff: 03/06/2019
+ms.locfileid: "30454964"
 ---
 # <a name="what-the-dlp-functions-look-for"></a>DLP 函数查找的内容
 

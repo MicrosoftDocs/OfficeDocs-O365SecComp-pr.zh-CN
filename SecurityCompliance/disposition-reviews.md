@@ -8,17 +8,18 @@ ms.audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
-ms.collection: M365-security-compliance
+ms.collection:
+- M365-security-compliance
 search.appverid:
 - MOE150
 - MET150
 description: 在创建保留 Office 365 中的内容的标签时, 可以选择在保留期结束时触发处置评审。
-ms.openlocfilehash: a3125ee3f0ae388fce71968f25a68d5ccf3fc652
-ms.sourcegitcommit: ed822a776d3419853453583e882f3c61ca26d4b2
+ms.openlocfilehash: 5dac91368ff2aff6ca7e1a2c3591b50466b869ac
+ms.sourcegitcommit: 6aa82374eef09d2c1921f93bda3eabeeb28aadeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2019
-ms.locfileid: "30410757"
+ms.lasthandoff: 03/06/2019
+ms.locfileid: "30455034"
 ---
 # <a name="overview-of-disposition-reviews"></a>处置评审概述
 

@@ -5,21 +5,20 @@ author: stephow-MSFT
 manager: laurawi
 ms.date: 10/22/2018
 ms.audience: Admin
-ms.topic: overview
+ms.topic: conceptual
 ms.service: O365-seccomp
 localization_priority: Priority
-ms.collection: Strat_O365_IP
+ms.collection: M365-security-compliance
 search.appverid:
 - MOE150
 - MET150
-ms.assetid: af398293-c69d-465e-a249-d74561552d30
 description: 使用 Office 365 中的敏感度标签，可以对敏感内容进行分类和保护，同时确保组织内人员的工作效率和协作能力不受阻碍。敏感度标签可用于强制执行保护设置，如对已标记内容设置加密或水印。
-ms.openlocfilehash: 449b2567366bb262d469d78d3de447cccf04389b
-ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
+ms.openlocfilehash: 6f624308e7cbfb7aae738e0c08505412314200e7
+ms.sourcegitcommit: 0a1ce1ac45672d1d98eb7dbcfd4f0179d9eb4509
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30220942"
+ms.lasthandoff: 03/05/2019
+ms.locfileid: "30412950"
 ---
 # <a name="overview-of-sensitivity-labels"></a>敏感度标签概述
 
@@ -97,9 +96,11 @@ Azure 信息保护客户可以在安全与合规中心内使用 Azure 信息保�
 
 ### <a name="sublabels-grouping-labels"></a>子标签（对标签进行分组）
 
-使用子标签，你可以对用户在 Office 应用中看到的页眉下的一个或多个标签进行分组。例如，在“保密”下，你的组织可能会对该分类的具体类型使用多种不同的标签。在本示例中，标签“保密”只是一个没有保护设置的文本标签，而且因为它具有子标签，因此无法应用于内容。相反，用户必须选择“保密”以查看子标签，然后他们可以选择要应用于内容的子标签。
+使用子标签，你可以将一个或多个标签分组到用户在 Office 应用程序中看到的父标签下方。 例如，在“机密”下，你的组织可能会为该分类的特定类型使用多个不同的标签。 在此示例中，父标签“机密”仅仅是没有保护设置的文本标签，并且因为它具有子标签，所以它不能应用于内容。 相反，用户必须选择“机密”才能查看子标签，然后他们可以选择要应用于内容的子标签。
 
-子标签只是一种以逻辑组形式向用户呈现标签的方法。子标签不继承其父标签的任何设置。
+子标签只是向逻辑组中的用户显示标签的一种方式。 子标签不会从其父标签继承任何设置。 子标签可以应用于内容；父标签不能。
+
+（另外，不应选择父标签作为默认标签（请参阅下一节），或将父标签配置为自动应用或推荐使用，因为父标签不会应用于使用 Azure 信息保护统一标签客户端的 Office 应用程序中的内容。）
 
 ![功能区上的已分组子标签](media/Sensitivity_label_grouped_labels.png)
 
@@ -117,7 +118,7 @@ Azure 信息保护客户可以在安全与合规中心内使用 Azure 信息保�
 
 - **选择向哪些用户和组显示标签。** 可以将标签发布到任意启用电子邮件的安全组、通讯组、Office 365 组或动态通讯组。
 
-- **将默认标签应用于**标签策略包含的用户和组新建的所有文档和电子邮件。此默认标签可设置要对所有内容应用的保护设置的基本级别。
+- **将默认标签**应用于标签策略中包含的用户和组创建的所有新文档和电子邮件。 此默认标签可以设置要应用于所有内容的基本级别的保护设置。 （请注意，）
 
 - **要求提供更改标签的理由。** 如果内容应用有“机密”标签，但用户要删除此标签或将它替换为较低分类（如“公开”标签），你可以要求用户必须在执行此操作时提供理由。这些理由可供管理员查看。目前，我们正在努力推出可供管理员查看用户理由的报告。
 

@@ -9,18 +9,19 @@ ms.topic: reference
 f1_keywords:
 - ms.o365.cc.DLPNewPolicyFromTemplate
 ms.service: O365-seccomp
-ms.collection: M365-security-compliance
+ms.collection:
+- M365-security-compliance
 localization_priority: Normal
 search.appverid:
 - MOE150
 - MET150
 description: Office 365 安全&amp;合规中心中的数据丢失防护 (DLP) 包括可满足常见合规性要求的现成的策略模板, 例如, 帮助您保护受美国卫生保险业法案组织的敏感信息 (HIPAA)、美国格雷姆-里奇-比利雷法案 (GLBA) 或美国爱国 act。本主题列出了所有策略模板, 它们查找的敏感信息类型, 以及默认条件和操作的具体内容。
-ms.openlocfilehash: 74c575df18c7e75eba9f01c7864b7fe8502ccde9
-ms.sourcegitcommit: ed822a776d3419853453583e882f3c61ca26d4b2
+ms.openlocfilehash: 00e2c4ff42df039804b1b8a3962be7e3c3798022
+ms.sourcegitcommit: 6aa82374eef09d2c1921f93bda3eabeeb28aadeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2019
-ms.locfileid: "30411007"
+ms.lasthandoff: 03/06/2019
+ms.locfileid: "30455204"
 ---
 # <a name="what-the-dlp-policy-templates-include"></a>DLP 策略模板包含的内容
 

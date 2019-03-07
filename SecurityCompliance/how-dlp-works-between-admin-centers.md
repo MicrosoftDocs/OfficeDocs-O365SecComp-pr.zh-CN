@@ -7,19 +7,20 @@ ms.date: 8/4/2017
 ms.audience: Admin
 ms.topic: conceptual
 ms.service: O365-seccomp
-ms.collection: M365-security-compliance
+ms.collection:
+- M365-security-compliance
 localization_priority: Normal
 search.appverid:
 - MOE150
 - MET150
 ms.assetid: a7e4342a-a0a1-4b43-b166-3d7eecf5d2fd
 description: 了解 Security & 合规性中心中的 dlp 如何在 Exchange 管理中心中与 dlp 和邮件流规则 (传输规则) 结合使用。
-ms.openlocfilehash: 512d9e4c9d3181cbaec2d58faac4f95f649b78c8
-ms.sourcegitcommit: ed822a776d3419853453583e882f3c61ca26d4b2
+ms.openlocfilehash: 9912103ec95af9fed61c5c2d52d12b46342d16fb
+ms.sourcegitcommit: 6aa82374eef09d2c1921f93bda3eabeeb28aadeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2019
-ms.locfileid: "30410677"
+ms.lasthandoff: 03/06/2019
+ms.locfileid: "30454904"
 ---
 # <a name="how-dlp-works-between-the-security--compliance-center-and-exchange-admin-center"></a>DLP 在安全 & 合规中心和 Exchange 管理中心之间如何工作
 

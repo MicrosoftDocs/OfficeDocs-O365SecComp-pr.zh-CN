@@ -11,34 +11,34 @@ f1_keywords:
 - ms.o365.cc.UnifiedDLPRuleContainsSensitiveInformation
 ms.service: O365-seccomp
 localization_priority: Normal
-ms.collection: Strat_O365_IP
-ms.assetid: fd505979-76be-4d9f-b459-abef3fc9e86b
-description: Office 365 安全&amp;合规中心中的数据丢失防护 (DLP) 包括可供您在 DLP 策略中使用的80敏感信息类型。本主题列出了所有这些敏感信息类型, 并显示 DLP 策略在检测到每种类型时所查找的内容。
-ms.openlocfilehash: 17fb0b8d745168f8000fba9e6fc42f3c255a1937
-ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
+ms.collection:
+- M365-security-compliance
+description: Office 365 安全&amp;合规中心中的数据丢失防护 (DLP) 包括可供您在 DLP 策略中使用的80敏感信息类型。 本主题列出了所有这些敏感信息类型，并显示 DLP 策略在检测到每种类型时查找的内容。
+ms.openlocfilehash: 55fa8b6855a9a5bf2c84f6555dd8c8227a2ad9cf
+ms.sourcegitcommit: 6aa82374eef09d2c1921f93bda3eabeeb28aadeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30216352"
+ms.lasthandoff: 03/06/2019
+ms.locfileid: "30455264"
 ---
 # <a name="what-the-sensitive-information-types-look-for"></a>使用敏感信息类型查找什么
 
-Office 365 安全&amp;合规中心中的数据丢失防护 (DLP) 包括许多可供您在 DLP 策略中使用的敏感信息类型。本主题列出了所有这些敏感信息类型, 并显示 DLP 策略在检测到每种类型时所查找的内容。敏感信息类型是通过可由正则表达式或函数标识的模式定义的。此外, 还可以使用确定证据 (如关键字和校验和) 来标识敏感的信息类型。置信度和近程也用于评估过程。
+Office 365 安全&amp;合规中心中的数据丢失防护 (DLP) 包括许多可供您在 DLP 策略中使用的敏感信息类型。 本主题列出了所有这些敏感信息类型，并显示 DLP 策略在检测到每种类型时查找的内容。 敏感信息类型通过正则表达式或函数可以识别的模式定义。 此外，关键字和校验和等确凿的证据可用于识别敏感信息类型。 可信度和相似度也会在评估过程中使用。
   
 ## <a name="aba-routing-number"></a>ABA 银行代号
 
-### <a name="format"></a>格式
+### <a name="format"></a>Format
 
 9 个数字，可以是格式化模式，也可以是非格式化模式 
 
 ### <a name="pattern"></a>模式
 
-有格式模式：
+格式
 - 四个数字，以 0、 1、 2、 3、 6、 7 或 8 开头
 - 一个连字符 
-- 四位数字
-- 一个连字符
-- 一位数字
+- 四个数字
+- 一个连字符 
+- 一个数字
 
 无格式: 9 个连续的数字, 以0、1、2、3、6、7或8开头 
 
@@ -68,42 +68,26 @@ Office 365 安全&amp;合规中心中的数据丢失防护 (DLP) 包括许多可
 #### <a name="keywordabarouting"></a>Keyword_ABA_Routing
 
 - aba
-- 
-aba #
-- 
-aba routing #
-- aba 传送号码
-- 
-aba#
-- 
-abarouting#
-- 
-aba number
-- 
-abaroutingnumber
-- 
-american bank association routing #
-- 
-american bank association routing number
-- 
-americanbankassociationrouting#
-- 
-americanbankassociationroutingnumber
-- 
-bank routing number
-- 
-bankrouting#
-- 
-bankroutingnumber
-- 
-routing transit number
-- 
-RTN
- 
+- aba #
+- aba routing #
+- aba routing number
+- aba
+- abarouting #
+- aba number
+- abaroutingnumber
+- american bank association routing #
+- american bank association routing number
+- americanbankassociationrouting #
+- americanbankassociationroutingnumber
+- bank routing number
+- bankrouting #
+- bankroutingnumber
+- routing transit number
+- RTN 
    
 ## <a name="argentina-national-identity-dni-number"></a>阿根廷国家身份证 (DNI) 号
 
-### <a name="format"></a>格式
+### <a name="format"></a>Format
 
 八个数字，用点分隔
 
@@ -140,32 +124,27 @@ RTN
 
 #### <a name="keywordargentinanationalid"></a>Keyword_argentina_national_id
 
-- Argentina National Identity number
- 
+- Argentina National Identity number 
 - 标识 
 - 标识国家/地区身份卡片 
-- DNI
- 
+- DNI 
 - 个人的网络国家注册表 
-- Documento Nacional de Identidad
- 
-- Registro Nacional de las Personas
- 
-- Identidad
- 
-- Identificación
- 
+- Documento Nacional de Identidad 
+- Registro Nacional de las Personas 
+- Identidad 
+- Identificación 
    
 ## <a name="australia-bank-account-number"></a>澳大利亚银行帐号
 
-### <a name="format"></a>格式
+### <a name="format"></a>Format
 
 6-10 个数字，带或不带 BSB 号码 
 
 ### <a name="pattern"></a>模式
 
-帐户号为6-10 位数字。澳大利亚银行状态分支号码:
-- 3 位数 
+帐号为 6-10 个数字。
+澳大利亚银行州级分部编号：
+- 三个数字  
 - 连字符 
 - 三位数字
 
@@ -204,36 +183,23 @@ RTN
 #### <a name="keywordaustraliabankaccountnumber"></a>Keyword_australia_bank_account_number
 
 - swift bank code
-- 
-correspondent bank
-- 
-base currency
-- 
-usa account
-- 
-holder address
-- 
-bank address
-- 
-information account
-- 
-fund transfers
-- 
-bank charges
-- 
-bank details
-- 
-banking information
-- 
-full names
-- 
-
-iaea
+- correspondent bank
+- base currency
+- usa account
+- holder address
+- bank address
+- information account
+- fund transfers
+- bank charges
+- bank details
+- banking information
+- full names
+- iaea
 
    
 ## <a name="australia-drivers-license-number"></a>澳大利亚驾驶证号码
 
-### <a name="format"></a>格式
+### <a name="format"></a>Format
 
 九个字母和数字
 
@@ -283,131 +249,108 @@ iaea
 #### <a name="keywordaustraliadriverslicensenumber"></a>Keyword_australia_drivers_license_number
 
 - international driving permits
-- 
-australian automobile association
-- 
-international driving permit
+- australian automobile association
+- international driving permit
 - DriverLicence
 - DriverLicences
-- 驱动程序许可证
+- Driver Lic
 - Driver Licence
-
 - Driver Licences
-
 - DriversLic
 - DriversLicence
 - DriversLicences
-- 驱动程序许可证
-- 驱动程序 driver'lics
-- 驱动程序许可证
-- 驱动程序许可
+- Drivers Lic
+- Drivers Lics
+- Drivers Licence
+- Drivers Licences
 - Driver'Lic
 - Driver'Lics
 - Driver'Licence
 - Driver'Licences
-- 驱动程序 "许可证
-- 驱动程序 "driver'lics
-- 驱动程序 ' 许可证
-- 驱动程序 ' 许可证
+- Driver' Lic
+- Driver' Lics
+- Driver' Licence
+- Driver' Licences
 - Driver'sLic
 - Driver'sLics
 - Driver'sLicence
 - Driver'sLicences
-- 驱动程序的许可证
-- 驱动程序的 driver'lics
+- Driver's Lic
+- Driver's Lics
 - Driver's Licence
-
 - Driver's Licences
-
 - DriverLic #
 - DriverLics #
 - DriverLicence #
 - DriverLicences #
 - Driver Lic#
-- 
-Driver Lics#
-
-- 驱动程序许可证 #
-- 驱动程序许可证 #
+- Driver Lics#
+- Driver Licence#
+- Driver Licences#
 - DriversLic #
 - DriversLics #
 - DriversLicence #
 - DriversLicences #
-- 驱动程序许可证数量
-- 驱动程序 driver'lics #
-- 驱动程序许可证 #
-- 驱动程序许可证 #
-- Driver'Lic#
-
-- Driver'Lics#
-
-- Driver'Licence#
-
-- Driver'Licences#
-
+- Drivers Lic#
+- Drivers Lics#
+- Drivers Licence#
+- Drivers Licences#
+- Driver'Lic #
+- Driver'Lics #
+- Driver'Licence #
+- Driver'Licences #
 - Driver' Lic#
-
 - Driver' Lics#
-
-- 驱动程序 ' 许可证 #
-- 驱动程序 ' 许可证 #
+- Driver' Licence#
+- Driver' Licences#
 - Driver'sLic #
 - Driver'sLics #
 - Driver'sLicence #
 - Driver'sLicences #
 - Driver's Lic#
-
 - Driver's Lics#
-
-- 驾驶许可证 #
-- 驾驶许可证 # 
+- Driver's Licence#
+- Driver's Licences# 
 
 #### <a name="keywordaustraliadriverslicensenumberexclusions"></a>Keyword_australia_drivers_license_number_exclusions
 
 - aaa
 - DriverLicense
 - DriverLicenses
-- 驱动程序许可证
-- 驱动程序许可证
+- Driver License
+- Driver Licenses
 - DriversLicense
 - DriversLicenses
-- 驱动程序许可证
-- 驱动程序许可证
+- Drivers License
+- Drivers Licenses
 - Driver'License
 - Driver'Licenses
-- 驱动程序 ' License
-- 驱动程序的许可证
+- Driver' License
+- Driver' Licenses
 - Driver'sLicense
 - Driver'sLicenses
-- 驾驶执照
-- 驾驶许可证
+- Driver's License
+- Driver's Licenses
 - DriverLicense #
 - DriverLicenses #
-- 驱动程序许可证 #
-- 驱动程序许可证 #
+- Driver License#
+- Driver Licenses#
 - DriversLicense #
 - DriversLicenses #
-- 驱动程序许可证 #
-- 驱动程序许可证 #
-- Driver'License#
-
-- Driver'Licenses#
-
+- Drivers License#
+- Drivers Licenses#
+- Driver'License #
+- Driver'Licenses #
 - Driver' License#
-
 - Driver' Licenses#
-
 - Driver'sLicense #
 - Driver'sLicenses #
 - Driver's License#
-
-- 
-
-Driver's Licenses#
+- Driver's Licenses#
    
 ## <a name="australia-medical-account-number"></a>澳大利亚医疗帐号
 
-### <a name="format"></a>格式
+### <a name="format"></a>Format
 
 10-11 个数字
 
@@ -457,27 +400,19 @@ Driver's Licenses#
 #### <a name="keywordaustraliamedicalaccountnumber"></a>Keyword_Australia_Medical_Account_Number
 
 - bank account details
-- 
-medicare payments
-- 
-mortgage account
-- 
-bank payments
-- 
-information branch
-- 
-credit card loan
-- 
-department of human services
-- 本地服务
-- 
-
-medicare
+- medicare payments
+- mortgage account
+- bank payments
+- information branch
+- credit card loan
+- department of human services
+- local service
+- medicare
 
    
 ## <a name="australia-passport-number"></a>澳大利亚护照号
 
-### <a name="format"></a>格式
+### <a name="format"></a>Format
 
 一个字母后跟七个数字
 
@@ -489,7 +424,7 @@ medicare
 
 否
 
-### <a name="definition"></a>Definition
+### <a name="definition"></a>定义
 
 在 300 个字符的相似度内，如果出现以下情况，DLP 策略 75% 确信它检测到这种类型的敏感信息：
 - 正则表达式 Regex_australia_passport_number 找到与该模式匹配的内容。
@@ -513,67 +448,42 @@ medicare
 #### <a name="keywordpassport"></a>Keyword_passport
 
 - Passport Number
-- 
-Passport No
+- Passport No
 - Passport #
-
-- Passport#
-
+- 登记卡
 - PassportID
 - Passportno
-
 - passportnumber
-
 - パスポート
 - パスポート番号
-
 - パスポートのNum
-
-- 
-パスポート ＃
- 
+- パスポート ＃ 
 - Numéro de passeport
-- 
-Passeport n °
+- Passeport n °
 - Passeport Non
-
 - Passeport #
-
-- Passeport#
-
+- Passeport #
 - PasseportNon
 - Passeportn °
 
-
 #### <a name="keywordaustraliapassportnumber"></a>Keyword_australia_passport_number
 
-- passport
-- 
-passport details
-- 
-immigration and citizenship
-- 
-commonwealth of australia
-- 
-department of immigration
-- 
-residential address
-- 
-department of immigration and citizenship
-- visa
-
-- 
-national identity card
-- 护照号码
-- 
-travel document
-- 
-
-issuing authority
+- 登记卡
+- passport details
+- immigration and citizenship
+- commonwealth of australia
+- department of immigration
+- residential address
+- department of immigration and citizenship
+- 反之
+- national identity card
+- passport number
+- travel document
+- issuing authority
    
 ## <a name="australia-tax-file-number"></a>澳大利亚税号
 
-### <a name="format"></a>格式
+### <a name="format"></a>Format
 
 8-9 个数字
 
@@ -616,21 +526,13 @@ issuing authority
 #### <a name="keywordaustraliataxfilenumber"></a>Keyword_Australia_Tax_File_Number
 
 - australian business number
-- 
-marginal tax rate
-- 
-medicare levy
-- 
-portfolio number
-- 
-service veterans
-- 
-withholding tax
-- 
-individual tax return
-- 
-
-tax file number
+- marginal tax rate
+- medicare levy
+- portfolio number
+- service veterans
+- withholding tax
+- individual tax return
+- tax file number
 
 #### <a name="keywordnumberexclusions"></a>Keyword_number_exclusions
 
@@ -667,7 +569,7 @@ tax file number
    
 ## <a name="belgium-national-number"></a>比利时国家号码
 
-### <a name="format"></a>格式
+### <a name="format"></a>Format
 
 11 个数字加分隔符
 
@@ -677,7 +579,7 @@ tax file number
 - 六个数字加两个点，采用格式  YY.MM.DD，代表出生日期   
 - 一个连字符  
 - 三个连续的数字（男性用奇数，女性用偶数）  
-- 句点 
+- 一个点  
 - 两个数字，是校验位
 
 ### <a name="checksum"></a>校验和
@@ -705,29 +607,21 @@ tax file number
 
 #### <a name="keywordbelgiumnationalnumber"></a>Keyword_belgium_national_number
 
-- Identity
-- Registration
-- Identification 
+- 标识
+- 注册
+- id 
 - ID 
 - Identiteitskaart
 - Registratie nummer 
- 
-- Identificatie nummer
- 
+- Identificatie nummer 
 - Identiteit
 - Registratie
-- Identificatie
-
- 
-- Carte d’identité
- 
+- Identificatie 
+- Carte d’identité 
 - numéro d'immatriculation
 - numéro d'identification
-- 
-identité
- 
-- inscription
- 
+- identité 
+- inscription 
 - Identifikation
 - Identifizierung
 - Identifikationsnummer
@@ -738,22 +632,22 @@ identité
    
 ## <a name="brazil-cpf-number"></a>巴西 CPF 号码
 
-### <a name="format"></a>格式
+### <a name="format"></a>Format
 
 11 个数字（包括校验位），可以格式化，也可以非格式化
 
 ### <a name="pattern"></a>模式
 
-有格式模式：
-- 三个数字  
+格式
+- 三位数字 
 - 一个点  
-- 三个数字 
+- 三位数字 
 - 一个点  
-- 3 位数 
+- 三位数字 
 - 连字符 
 - 两个数字，是校验位
 
-非格式化：
+纯
 - 11 个数字，其中最后两个数字是校验位
 
 ### <a name="checksum"></a>校验和
@@ -789,32 +683,26 @@ identité
 #### <a name="keywordbrazilcpf"></a>Keyword_brazil_cpf
 
 - CPF
-- Identification
-- Registration
-- Revenue
-- Cadastro de Pessoas Físicas
- 
-- Imposto
- 
-- Identificação
- 
-- Inscrição
- 
-- Receita
-
- 
+- id
+- 注册
+- 营业
+- Cadastro de Pessoas Físicas 
+- Imposto 
+- Identificação 
+- Inscrição 
+- Receita 
    
 ## <a name="brazil-legal-entity-number-cnpj"></a>巴西法律实体编号 (CNPJ)
 
-### <a name="format"></a>格式
+### <a name="format"></a>Format
 
 14 个数字（包括注册号、分行号码和校验位），再加上分隔符
 
 ### <a name="pattern"></a>模式
 14 个数字，再加上分隔符：
 - 两个数字  
-- 一个点 
-- 三个数字  
+- 一个点  
+- 三位数字 
 - 一个点  
 - 三个数字（前 8 位数是注册号）  
 - 正斜杠  
@@ -854,46 +742,29 @@ identité
 
 #### <a name="keywordbrazilcnpj"></a>Keyword_brazil_cnpj
 
-- CNPJ
- 
+- CNPJ 
 - CNPJ/MF 
-- CNPJ-MF
- 
-- National Registry of Legal Entities
- 
-- Taxpayers Registry
- 
-- Legal entity
- 
-- Legal entities
- 
-- Registration Status
- 
-- Business
- 
+- CNPJ-MF 
+- National Registry of Legal Entities 
+- Taxpayers Registry 
+- Legal entity 
+- Legal entities 
+- Registration Status 
+- 商业版 
 - Company
-- CNPJ
- 
-- Cadastro Nacional da Pessoa Jurídica
- 
-- Cadastro Geral de Contribuintes
- 
-- CGC
- 
-- Pessoa jurídica
- 
-- Pessoas jurídicas
- 
-- Situação cadastral
- 
-- Inscrição
- 
-- Empresa
- 
+- CNPJ 
+- Cadastro Nacional da Pessoa Jurídica 
+- Cadastro Geral de Contribuintes 
+- CGC 
+- Pessoa jurídica 
+- Pessoas jurídicas 
+- Situação cadastral 
+- Inscrição 
+- Empresa 
    
-## <a name="brazil-national-id-card-rg"></a>巴西国家身份证 (RG)
+## <a name="brazil-national-id-card-rg"></a>	巴西国家身份证 (RG)
 
-### <a name="format"></a>格式
+### <a name="format"></a>Format
 
 Registro Geral (旧格式): 9 个数字
 
@@ -903,15 +774,15 @@ Registro de Identidade (RIC) (新格式):11 个数字
 
 Registro Geral（旧格式）：
 - 两个数字  
-- 一个点 
-- 三个数字  
-- 一个点 
-- 3 位数 
+- 一个点  
+- 三位数字 
+- 一个点  
+- 三位数字 
 - 一个连字符  
 - 一个数字，是校验位
 
 Registro de Identidade (RIC) (新格式):
-- 10 个数字  
+- 10 个数字 
 - 一个连字符  
 - 一个数字，是校验位
 
@@ -951,7 +822,7 @@ Cédula de identidade identity 卡片国家 id número de rregistro registro de 
    
 ## <a name="canada-bank-account-number"></a>加拿大银行帐号
 
-### <a name="format"></a>格式
+### <a name="format"></a>Format
 
 七个或十二个数字
 
@@ -961,10 +832,10 @@ Cédula de identidade identity 卡片国家 id número de rregistro registro de 
 
 加拿大银行帐户的银行代号是：
 - 五位数字 
-- 一个连字符  
+- 连字符 
 - 三位数字或
 - 一个零“0”  
-- 八个数字
+- 八位数字
 
 ### <a name="checksum"></a>校验和
 
@@ -1001,50 +872,30 @@ Cédula de identidade identity 卡片国家 id número de rregistro registro de 
 #### <a name="keywordcanadabankaccountnumber"></a>Keyword_canada_bank_account_number
 
 - canada savings bonds
-- 
-canada revenue agency
-- 
-canadian financial institution
-- 
-direct deposit form
-- 
-canadian citizen
-- 
-legal representative
-- 
-notary public
-- 
-commissioner for oaths
-- 
-child care benefit
-- 
-universal child care
-- 
-canada child tax benefit
-- 
-income tax benefit
-- 
-harmonized sales tax
+- canada revenue agency
+- canadian financial institution
+- direct deposit form
+- canadian citizen
+- legal representative
+- notary public
+- commissioner for oaths
+- child care benefit
+- universal child care
+- canada child tax benefit
+- income tax benefit
+- harmonized sales tax
 - social insurance number
-- 
-income tax refund
-- 
-child tax benefit
-- 
-territorial payments
-- 
-institution number
-- 
-deposit request
-- 
-banking information
-- 
-
-direct deposit
+- income tax refund
+- child tax benefit
+- territorial payments
+- institution number
+- deposit request
+- banking information
+- direct deposit
    
 ## <a name="canada-drivers-license-number"></a>加拿大驾驶证号码
 
-### <a name="format"></a>格式
+### <a name="format"></a>Format
 
 因省而异
 
@@ -1121,15 +972,14 @@ direct deposit
 
 ### <a name="keywords"></a>关键字
 
-#### <a name="keywordprovincenamedriverslicensename"></a>Keyword_[province_name]_drivers_license_name
+#### <a name="keywordprovincenamedriverslicensename"></a>Keyword_ [province_name] _drivers_license_name
 
 - 省/市/自治区的缩写，例如 AB
-- 
-省名称，例如 Alberta
+- 省名称，例如 Alberta
 
 #### <a name="keywordcanadadriverslicense"></a>Keyword_canada_drivers_license
 
-- DL
+- 通讯
 - DLS
 - 采用
 - CDLS
@@ -1139,87 +989,69 @@ direct deposit
 - DriverLicenses
 - DriverLicence
 - DriverLicences
-- 驱动程序许可证
-- 驱动程序 driver'lics
-- 驱动程序许可证
-- 驱动程序许可证
+- Driver Lic
+- Driver Lics
+- Driver License
+- Driver Licenses
 - Driver Licence
-
 - Driver Licences
-
 - DriversLic
 - DriversLics
 - DriversLicence
 - DriversLicences
 - DriversLicense
 - DriversLicenses
-- 驱动程序许可证
-- 驱动程序 driver'lics
-- 驱动程序许可证
-- 驱动程序许可证
-- 驱动程序许可证
-- 驱动程序许可
+- Drivers Lic
+- Drivers Lics
+- Drivers License
+- Drivers Licenses
+- Drivers Licence
+- Drivers Licences
 - Driver'Lic
 - Driver'Lics
 - Driver'License
 - Driver'Licenses
 - Driver'Licence
 - Driver'Licences
-- 驱动程序 "许可证
-- 驱动程序 "driver'lics
-- 驱动程序 ' License
-- 驱动程序的许可证
-- 驱动程序 ' 许可证
-- 驱动程序 ' 许可证
+- Driver' Lic
+- Driver' Lics
+- Driver' License
+- Driver' Licenses
+- Driver' Licence
+- Driver' Licences
 - Driver'sLic
 - Driver'sLics
 - Driver'sLicense
 - Driver'sLicenses
 - Driver'sLicence
 - Driver'sLicences
-- 驱动程序的许可证
-- 驱动程序的 driver'lics
-- 驾驶执照
-- 驾驶许可证
+- Driver's Lic
+- Driver's Lics
+- Driver's License
+- Driver's Licenses
 - Driver's Licence
-
 - Driver's Licences
-
 - Permis de Conduire
 - id
-- id
-- 
-idcard number
-- 
-idcard numbers
-- 
-idcard #
-- 
-idcard #s
-- idcard 卡片
-- idcard 卡片
+- ids
+- idcard number
+- idcard numbers
+- idcard #
+- idcard #s
+- idcard card
+- idcard cards
 - idcard
 - identification number
-
 - identification numbers
-
 - identification #
-
-- 
-identification #s
-- 标识卡
-- 识别卡
-- 
-identification
- 
-- DL#
-- 
-DLS#
- 
-- CDL#
- 
-- CDLS#
- 
+- identification #s
+- identification card
+- identification cards
+- id 
+- 通讯
+- DLS 
+- 采用 
+- CDLS # 
 - DriverLic # 
 - DriverLics # 
 - DriverLicense # 
@@ -1227,82 +1059,60 @@ DLS#
 - DriverLicence # 
 - DriverLicences # 
 - Driver Lic#
-- 
-Driver Lics#
- 
-- 驱动程序许可证 # 
-- 驱动程序许可证 # 
-- 驱动程序许可证 # 
-- 驱动程序许可证 # 
+- Driver Lics# 
+- Driver License# 
+- Driver Licenses# 
+- Driver License# 
+- Driver Licences# 
 - DriversLic # 
 - DriversLics # 
 - DriversLicense # 
 - DriversLicenses # 
 - DriversLicence # 
 - DriversLicences # 
-- 驱动程序许可证数量 
-- 驱动程序 driver'lics # 
-- 驱动程序许可证 # 
-- 驱动程序许可证 # 
-- 驱动程序许可证 # 
-- 驱动程序许可证 # 
-- Driver'Lic#
- 
-- Driver'Lics#
- 
-- Driver'License#
- 
-- Driver'Licenses#
- 
-- Driver'Licence#
- 
-- Driver'Licences#
- 
-- Driver' Lic#
- 
-- Driver' Lics#
- 
-- Driver' License#
- 
-- Driver' Licenses#
- 
-- 驱动程序 ' 许可证 # 
-- 驱动程序 ' 许可证 # 
+- Drivers Lic# 
+- Drivers Lics# 
+- Drivers License# 
+- Drivers Licenses# 
+- Drivers Licence# 
+- Drivers Licences# 
+- Driver'Lic # 
+- Driver'Lics # 
+- Driver'License # 
+- Driver'Licenses # 
+- Driver'Licence # 
+- Driver'Licences # 
+- Driver' Lic# 
+- Driver' Lics# 
+- Driver' License# 
+- Driver' Licenses# 
+- Driver' Licence# 
+- Driver' Licences# 
 - Driver'sLic # 
 - Driver'sLics # 
 - Driver'sLicense # 
 - Driver'sLicenses # 
 - Driver'sLicence # 
 - Driver'sLicences # 
-- Driver's Lic#
- 
-- Driver's Lics#
- 
-- Driver's License#
- 
-- Driver's Licenses#
- 
-- 驾驶许可证 # 
-- 驾驶许可证 # 
-- Permis de Conduire # 
+- Driver's Lic# 
+- Driver's Lics# 
+- Driver's License# 
+- Driver's Licenses# 
+- Driver's Licence# 
+- Driver's Licences# 
+- Permis de Conduire# 
 - 号 
 - id 
-- idcard card#
- 
-- idcard cards#
- 
-- idcard#
- 
-- identification card#
- 
-- identification cards#
- 
-- identification#
- 
+- idcard card# 
+- idcard cards# 
+- idcard # 
+- identification card# 
+- identification cards# 
+- id 
    
 ## <a name="canada-health-service-number"></a>加拿大卫生服务号
 
-### <a name="format"></a>格式
+### <a name="format"></a>Format
 
 10 个数字
 
@@ -1337,25 +1147,18 @@ Driver Lics#
 #### <a name="keywordcanadahealthservicenumber"></a>Keyword_canada_health_service_number
 
 - personal health number
-- 
-patient information
-- 运行状况服务
-- 
-speciality services
-- 
-automobile accident
-- 
-patient hospital
-- 
-psychiatrist
-- 
-workers compensation
-- 
-disability
+- patient information
+- health services
+- speciality services
+- automobile accident
+- patient hospital
+- psychiatrist
+- workers compensation
+- 障碍
       
 ## <a name="canada-passport-number"></a>加拿大护照号码
 
-### <a name="format"></a>格式
+### <a name="format"></a>Format
 
 两个大写字母后跟六个数字
 
@@ -1391,60 +1194,38 @@ disability
 #### <a name="keywordcanadapassportnumber"></a>Keyword_canada_passport_number
 
 - canadian citizenship
-- 
-canadian passport
-- 
-passport application
-- 
-passport photos
-- 
-certified translator
-- 
-canadian citizens
-- 
-processing times
-- 
-
-renewal application
+- canadian passport
+- passport application
+- passport photos
+- certified translator
+- canadian citizens
+- processing times
+- renewal application
 
 #### <a name="keywordpassport"></a>Keyword_passport
 
 - Passport Number
-- 
-Passport No
+- Passport No
 - Passport #
-
-- Passport#
-
+- 登记卡
 - PassportID
 - Passportno
-
 - passportnumber
-
 - パスポート
 - パスポート番号
-
 - パスポートのNum
-
-- パスポート＃
-
+- パスポート #
 - Numéro de passeport
-- 
-Passeport n °
+- Passeport n °
 - Passeport Non
-
 - Passeport #
-
-- Passeport#
-
+- Passeport #
 - PasseportNon
-- 
-
-Passeportn °
+- Passeportn °
    
 ## <a name="canada-personal-health-identification-number-phin"></a>加拿大个人健康标识号 (PHIN)
 
-### <a name="format"></a>格式
+### <a name="format"></a>Format
 
 九个数字
 
@@ -1458,7 +1239,8 @@ Passeportn °
 
 ### <a name="definition"></a>定义
 
-DLP 策略 75% 确信在300个字符的邻近度内检测到此类型的敏感信息: 正则表达式 Regex_canada_phin 找到与该模式匹配的内容。找到 Keyword_canada_phin 或 Keyword_canada_provinces 中至少有两个关键字。。
+DLP 策略 75% 确信在300个字符的邻近度内检测到此类型的敏感信息: 正则表达式 Regex_canada_phin 找到与该模式匹配的内容。
+找到 Keyword_canada_phin 或 Keyword_canada_provinces 中至少有两个关键字。。
 
 ```
 <!-- Canada PHIN -->
@@ -1478,74 +1260,48 @@ DLP 策略 75% 确信在300个字符的邻近度内检测到此类型的敏感�
 #### <a name="keywordcanadaphin"></a>Keyword_canada_phin
 
 - social insurance number
-- 
-health information act
-- 
-income tax information
-- 
-manitoba health
-- 
-health registration
-- 
-prescription purchases
-- 
-benefit eligibility
-- 
-personal health
-- 
-power of attorney
-- 
-registration number
+- health information act
+- income tax information
+- manitoba health
+- health registration
+- prescription purchases
+- benefit eligibility
+- personal health
+- power of attorney
+- registration number
 - personal health number
-- 
-practitioner referral
-- 
-wellness professional
-- 
-patient referral
-- 
-
-health and wellness
+- practitioner referral
+- wellness professional
+- patient referral
+- health and wellness
 
 #### <a name="keywordcanadaprovinces"></a>Keyword_canada_provinces
 
 - Nunavut
-- 
-Quebec
-- 
-Northwest Territories
-- 
-Ontario
-- 
-British Columbia
-- 
-Alberta
-- 
-Saskatchewan
-- 
-Manitoba
-- 
-Yukon
-- 
-Newfoundland and Labrador
-- 
-New Brunswick
-- 
-Nova Scotia
-- 
-Prince Edward Island
+- 省
+- Northwest Territories
+- 省
+- British Columbia
+- Alberta
+- 彻
+- Manitoba
+- Yukon
+- Newfoundland and Labrador
+- New Brunswick
+- Nova Scotia
+- Prince Edward Island
 - 加拿大
    
 ## <a name="canada-social-insurance-number"></a>加拿大社会保险号码
 
-### <a name="format"></a>格式
+### <a name="format"></a>Format
 
 九个数字，包含可选连字符或空格
 
 ### <a name="pattern"></a>模式
 
-有格式模式：
-- 三位数字 
+格式
+- 三个数字  
 - 连字符或空格 
 - 三位数字 
 - 连字符或空格 
@@ -1595,43 +1351,33 @@ Prince Edward Island
 #### <a name="keywordsin"></a>Keyword_sin
 
 - sin 
-- social insurance
- 
-- numero d'assurance sociale
- 
-- sins
- 
+- social insurance 
+- numero d'assurance sociale 
+- 罪 
 - ssn 
 - ssn 
-- 社会保障 
-- numero d'assurance social
- 
-- 国家/地区标识号 
-- 
-national id 
-- sin#
- 
-- soc ins
- 
-- social ins
- 
+- social security 
+- numero d'assurance social 
+- national identification number 
+- national id 
+- sin 
+- soc ins 
+- social ins 
 
 #### <a name="keywordsincollaborative"></a>Keyword_sin_collaborative
 
 - driver's license 
 - drivers license 
-- 驾驶许可证 
+- driver's licence 
 - drivers licence 
-- DOB
- 
+- DOB 
 - 出生日期 
-- 生日  
-- Date of Birth
- 
+- 生日 
+- Date of Birth 
    
 ## <a name="chile-identity-card-number"></a>	智利身份证号
 
-### <a name="format"></a>格式
+### <a name="format"></a>Format
 
 7-8 位数加上分隔符一个校验位或字母
 
@@ -1640,8 +1386,8 @@ national id
 7-8 个数字加分隔符：
 - 1-2 个数字  
 - 一个点  
-- 三个数字 
-- 一个点 
+- 三位数字 
+- 一个点  
 - 三位数字 
 - 一个短划线  
 - 一个数字或字母（不区分大小写），是校验位
@@ -1678,30 +1424,22 @@ national id
 
 #### <a name="keywordchileidcard"></a>Keyword_chile_id_card
 
-- National Identification Number
- 
+- National Identification Number 
 - Identity card 
 - ID 
-- Identification 
-- Rol Único Nacional
- 
+- id 
+- Rol Único Nacional 
 - 以 
-- Rol Único Tributario
- 
-- RUT
- 
-- Cédula de Identidad
- 
-- Número De Identificación Nacional
- 
-- Tarjeta de identificación
- 
-- Identificación
- 
+- Rol Único Tributario 
+- 墨守成规 
+- Cédula de Identidad 
+- Número De Identificación Nacional 
+- Tarjeta de identificación 
+- Identificación 
    
 ## <a name="china-resident-identity-card-prc-number"></a>	中国居民身份证号
 
-### <a name="format"></a>格式
+### <a name="format"></a>Format
 
 18 个数字
 
@@ -1745,25 +1483,20 @@ national id
 
 ### <a name="keywordchinaresidentid"></a>Keyword_china_resident_id
 
-- Resident Identity Card
- 
+- Resident Identity Card 
 - 台湾 
-- National Identification Card
- 
-- 身份证  
-- 居民 身份证  
-- 居民身份证
- 
-- 鉴定
-
- 
-- 身分證  
+- National Identification Card 
+- 身份证 
+- 居民 身份证 
+- 居民身份证 
+- 鉴定 
+- 身分證 
 - 居民身份證
-- 鑑定  
+- 鑑定 
    
 ## <a name="credit-card-number"></a>信用卡号
 
-### <a name="format"></a>格式
+### <a name="format"></a>Format
 
 16个数字, 可以是格式化或无格式 (dddddddddddddddd), 并且必须通过 Luhn 测试。
 
@@ -1813,365 +1546,201 @@ national id
 - card verification
 - card identification number
 - cvn
-
 - cid
-
 - cvc2
 - cvv2
 - pin block
-
 - security code
-
 - security number
-
 - security no
-
 - issue number
-
 - issue no
-
 - cryptogramme
-
 - numéro de sécurité
-
 - numero de securite
-
 - kreditkartenprüfnummer
-
 - kreditkartenprufnummer
-
 - prüfziffer
-
 - prufziffer
-
 - sicherheits Kode
 - sicherheitscode
-
 - sicherheitsnummer
-
 - verfalldatum
-
 - codice di verifica
-
-- cod. sicurezza
-
-- 货到付款 sicurezza
-- 
-n autorizzazione
+- 货. sicurezza
+- cod sicurezza
+- n autorizzazione
 - código
-
 - codigo
-
-- cod. seg
-
-- 货到付款 seg
+- 货. seg
+- cod seg
 - código de segurança
-
 - codigo de seguranca
-
 - codigo de segurança
-
 - código de seguranca
-
-- cód. segurança
-
-- 货.seguranca 货到付款。segurança
-- cód. seguranca
-
+- cód。 segurança
+- 货. seguranca 货到付款。 segurança
+- cód。 seguranca
 - cód segurança
 - 货到付款 seguranca 货到付款 segurança
 - cód seguranca
 - número de verificação
-
 - numero de verificacao
-
 - ablauf
-
 - gültig bis
-
 - gültigkeitsdatum
-
 - gultig bis
-
 - gultigkeitsdatum
-
 - scadenza
-
 - data scad
-
 - fecha de expiracion
-
 - fecha de venc
-
 - vencimiento
-
 - válido hasta
-
 - valido hasta
-
 - vto
-
 - data de expiração
-
 - data de expiracao
-
 - data em que expira
-
 - validade
-
 - valor
-
 - vencimento
-
 - Venc 
 
 #### <a name="keywordccname"></a>Keyword_cc_name
 
 - amex
-- 
-american express
+- american express
 - americanexpress
-
 - 反之
 - mastercard
-
 - Master Card
-
-- 
-mc
- 
+- emc 
 - mastercards
-- 
-master cards
-- 用餐俱乐部
+- master cards
+- diner's Club
 - diners club
-
 - dinersclub
-
 - discover card
-
 - discovercard
-
 - discover cards
-
 - JCB
 - japanese card bureau
-
 - carte blanche
-
 - carteblanche
-
 - credit card
-
 - 收件人
 - cc #:
-- 
-expiration date
+- expiration date
 - exp date
-
-- 
-expiry date
-- 
-date d’expiration
-- 
-date d'exp
-- 
-date expiration
+- expiry date
+- date d’expiration
+- date d'exp
+- date expiration
 - bank card
-
-- 
-bankcard
+- bankcard
 - card number
-
 - card num
-
 - cardnumber
-
 - cardnumbers
-
 - card numbers
-
 - creditcard
-
 - credit cards
-
 - creditcards
-
 - ccn
-
 - card holder
-
-- cardholder
-
+- 持卡人
 - card holders
-
 - cardholders
-
 - check card
-
 - checkcard
-
 - check cards
-
 - checkcards
-
 - debit card
-
 - debitcard
-
 - debit cards
-
 - debitcards
-
 - atm card
-
 - atmcard
-
 - atm cards
-
 - atmcards
-
-- 
-enroute
-- 
-en route
+- enroute
+- en route
 - card type
-
 - carte bancaire
-
 - carte de crédit
-
 - carte de credit
-
 - numéro de carte
-
 - numero de carte
-
 - nº de la carte
-
 - nº de carte
-
 - kreditkarte
-
 - karte
-
 - karteninhaber
-
 - karteninhabers
 - kreditkarteninhaber
-
 - kreditkarteninstitut
-
 - kreditkartentyp
-
 - eigentümername
-
-- 
-kartennr
- 
+- kartennr 
 - kartennummer
-- 
-kreditkartennummer
+- kreditkartennummer
 - kreditkarten-nummer
 - carta di credito
-
 - carta credito
-
 - carta
 - n carta
-- nr. carta
-
+- führerschein-nr. carta
 - nr carta
 - numero carta
-
 - numero della carta
-
 - numero di carta
-
 - tarjeta credito
-
 - tarjeta de credito
-
-- 
-tarjeta crédito
-- 
-tarjeta de crédito
+- tarjeta crédito
+- tarjeta de crédito
 - tarjeta de atm
-
 - tarjeta atm
-
 - tarjeta debito
-
 - tarjeta de debito
-
-- 
-tarjeta débito
-- 
-tarjeta de débito
+- tarjeta débito
+- tarjeta de débito
 - nº de tarjeta
-
-- no. de tarjeta
-
-- 无 de tarjeta
+- 不。 de tarjeta
+- no de tarjeta
 - numero de tarjeta
-
 - número de tarjeta
-
 - tarjeta no
-
 - tarjetahabiente
-
 - cartão de crédito
-
 - cartão de credito
-
 - cartao de crédito
-
 - cartao de credito
-
 - cartão de débito
-
 - cartao de débito
-
 - cartão de debito
-
 - cartao de debito
-
 - débito automático
 - debito automatico
-
-- 
-número do cartão
-- 
-numero do cartão
- 
+- número do cartão
+- numero do cartão 
 - número do cartao
-- 
-numero do cartao
+- numero do cartao
 - número de cartão
-
 - numero de cartão
-
 - número de cartao
-
 - numero de cartao
-
-- n º do cartão
+- nº do cartão
 - nº do cartao
-
-- nº. do cartão
-
-- 不执行任何操作 cartão
-- 不执行任何操作 cartao
-- no. do cartão
-
-- 
-no. do cartao
- 
+- n º。 do cartão
+- no do cartão
+- no do cartao
+- 不。 do cartão
+- 不。 do cartao 
    
 ## <a name="croatia-identity-card-number"></a>	克罗地亚身份证号
 
-### <a name="format"></a>格式
+### <a name="format"></a>Format
 
 九个数字
 
@@ -2183,7 +1752,7 @@ no. do cartao
 
 否
 
-### <a name="definition"></a>Definition
+### <a name="definition"></a>定义
 
 在 300 个字符的相似度内，如果出现以下情况，DLP 策略 75% 确信它检测到这种类型的敏感信息：
 - 函数 Func_croatia_id_card 找到与该模式匹配的内容。
@@ -2209,7 +1778,7 @@ no. do cartao
    
 ## <a name="croatia-personal-identification-oib-number"></a>	Croatia Personal Identification (OIB) Number
 
-### <a name="format"></a>格式
+### <a name="format"></a>Format
 
 11 个数字
 
@@ -2252,15 +1821,13 @@ no. do cartao
 #### <a name="keywordcroatiaoibnumber"></a>Keyword_croatia_oib_number
 
 - Personal Identification Number
-- Osobni identifikacijski broj
- 
-- OIB
- 
+- Osobni identifikacijski broj 
+- OIB 
 
    
 ## <a name="czech-personal-identity-number"></a>捷克个人识别码
 
-### <a name="format"></a>格式
+### <a name="format"></a>Format
 
 9个带可选正斜杠 (旧格式) 的数字, 带可选正斜杠的10个数字 (新的格式)
 
@@ -2290,7 +1857,9 @@ no. do cartao
 
 ### <a name="definition"></a>定义
 
-DLP 策略 85% 确信在300个字符的邻近度内检测到此类型的敏感信息: 函数 Func_czech_id_card 找到与该模式匹配的内容。找到 Keyword_czech_id_card 中的关键字。校验和通过。
+DLP 策略 85% 确信在300个字符的邻近度内检测到此类型的敏感信息: 函数 Func_czech_id_card 找到与该模式匹配的内容。
+找到 Keyword_czech_id_card 中的一个关键字。
+校验和通过。
 
 ```
 <!-- Czech Personal Identity Number -->
@@ -2308,7 +1877,7 @@ DLP 策略 85% 确信在300个字符的邻近度内检测到此类型的敏感�
    
 ## <a name="denmark-personal-identification-number"></a>	丹麦个人身份号码
 
-### <a name="format"></a>格式
+### <a name="format"></a>Format
 
 10 个数字，包含连字符
 
@@ -2325,7 +1894,9 @@ DLP 策略 85% 确信在300个字符的邻近度内检测到此类型的敏感�
 
 ### <a name="definition"></a>定义
 
-DLP 策略 75% 确信在300个字符的邻近度内检测到此类型的敏感信息: 正则表达式 Regex_denmark_id 找到与该模式匹配的内容。找到 Keyword_denmark_id 中的关键字。校验和通过。
+DLP 策略 75% 确信在300个字符的邻近度内检测到此类型的敏感信息: 正则表达式 Regex_denmark_id 找到与该模式匹配的内容。
+找到 Keyword_denmark_id 中的一个关键字。
+校验和通过。
 
 ```
 <!-- Denmark Personal Identification Number -->
@@ -2348,7 +1919,7 @@ DLP 策略 75% 确信在300个字符的邻近度内检测到此类型的敏感�
    
 ## <a name="drug-enforcement-agency-dea-number"></a>药品管制局 (DEA) 号码
 
-### <a name="format"></a>格式
+### <a name="format"></a>Format
 
 两个字母后跟七个数字
 
@@ -2380,12 +1951,12 @@ DLP 策略 75% 确信在300个字符的邻近度内检测到此类型的敏感�
 
 ### <a name="keywords"></a>关键字
 
-无
+None
 
    
 ## <a name="eu-debit-card-number"></a>欧盟借记卡号
 
-### <a name="format"></a>格式
+### <a name="format"></a>Format
 
 16 个数字
 
@@ -2429,569 +2000,308 @@ DLP 策略 75% 确信在300个字符的邻近度内检测到此类型的敏感�
 
 #### <a name="keywordeudebitcard"></a>Keyword_eu_debit_card
 
-- 帐户号 
-- card number
- 
-- card no.
- 
-- security number
- 
+- account number 
+- card number 
+- card no. 
+- security number 
 - 收件人 
 
 #### <a name="keywordcardtermsdict"></a>Keyword_card_terms_dict
 
-- acct nbr
- 
-- acct num
- 
-- acct no
- 
-- american express
- 
-- americanexpress
- 
-- americano espresso
- 
+- acct nbr 
+- acct num 
+- acct no 
+- american express 
+- americanexpress 
+- americano espresso 
 - amex 
-- atm card
- 
-- atm cards
- 
-- atm kaart
- 
-- atmcard
- 
-- atmcards
- 
-- atmkaart
- 
-- atmkaarten
- 
-- bancontact
- 
-- bank card
- 
-- bankkaart
- 
-- card holder
- 
-- card holders
- 
-- card num
- 
-- card number
- 
-- card numbers
- 
-- card type
- 
-- cardano numerico
- 
-- cardholder
- 
-- cardholders
- 
-- cardnumber
- 
-- cardnumbers
- 
-- carta bianca
- 
-- carta credito
- 
-- carta di credito
- 
-- cartao de credito
- 
-- cartao de crédito
- 
-- cartao de debito
- 
-- cartao de débito
- 
-- carte bancaire
- 
-- carte blanche
- 
-- carte bleue
- 
-- carte de credit
- 
-- carte de crédit
- 
-- carte di credito
- 
-- carteblanche
- 
-- cartão de credito
- 
-- cartão de crédito
- 
-- cartão de debito
- 
-- cartão de débito
- 
-- cb
- 
-- ccn
- 
-- check card
- 
-- check cards
- 
+- atm card 
+- atm cards 
+- atm kaart 
+- atmcard 
+- atmcards 
+- atmkaart 
+- atmkaarten 
+- bancontact 
+- bank card 
+- bankkaart 
+- card holder 
+- card holders 
+- card num 
+- card number 
+- card numbers 
+- card type 
+- cardano numerico 
+- 持卡人 
+- cardholders 
+- cardnumber 
+- cardnumbers 
+- carta bianca 
+- carta credito 
+- carta di credito 
+- cartao de credito 
+- cartao de crédito 
+- cartao de debito 
+- cartao de débito 
+- carte bancaire 
+- carte blanche 
+- carte bleue 
+- carte de credit 
+- carte de crédit 
+- carte di credito 
+- carteblanche 
+- cartão de credito 
+- cartão de crédito 
+- cartão de debito 
+- cartão de débito 
+- cb 
+- ccn 
+- check card 
+- check cards 
 - checkcard
-
-- checkcards
- 
-- chequekaart
- 
-- cirrus
- 
-- cirrus-edc-maestro
- 
-- controlekaart
- 
-- controlekaarten
- 
-- credit card
- 
-- credit cards
- 
-- creditcard
- 
-- creditcards
- 
-- debetkaart
- 
-- debetkaarten
- 
-- debit card
- 
-- debit cards
- 
-- debitcard
- 
-- debitcards
- 
-- debito automatico
- 
-- diners club
- 
-- dinersclub
- 
+- checkcards 
+- chequekaart 
+- cirrus 
+- cirrus-edc-maestro 
+- controlekaart 
+- controlekaarten 
+- credit card 
+- credit cards 
+- creditcard 
+- creditcards 
+- debetkaart 
+- debetkaarten 
+- debit card 
+- debit cards 
+- debitcard 
+- debitcards 
+- debito automatico 
+- diners club 
+- dinersclub 
 - 确定 
-- discover card
- 
-- discover cards
- 
-- discovercard
- 
-- discovercards
- 
+- discover card 
+- discover cards 
+- discovercard 
+- discovercards 
 - débito automático
-- 
-edc
- 
-- eigentümername
- 
-- european debit card
- 
-- hoofdkaart
- 
-- hoofdkaarten
- 
-- in viaggio
- 
-- japanese card bureau
- 
-- japanse kaartdienst
- 
-- jcb
- 
-- kaart
- 
-- kaart num
- 
-- kaartaantal
- 
-- kaartaantallen
- 
-- kaarthouder
- 
-- kaarthouders
- 
-- karte
-  
-- karteninhaber
- 
+- edc 
+- eigentümername 
+- european debit card 
+- hoofdkaart 
+- hoofdkaarten 
+- in viaggio 
+- japanese card bureau 
+- japanse kaartdienst 
+- jcb 
+- kaart 
+- kaart num 
+- kaartaantal 
+- kaartaantallen 
+- kaarthouder 
+- kaarthouders 
+- karte  
+- karteninhaber 
 - karteninhabers
-- 
-kartennr
- 
+- kartennr 
 - kartennummer 
-- kreditkarte
- 
+- kreditkarte 
 - kreditkarten-nummer 
-- kreditkarteninhaber
- 
-- kreditkarteninstitut
- 
-- kreditkartennummer
- 
-- kreditkartentyp
- 
-- maestro
- 
-- Master Card
- 
-- master cards
- 
-- mastercard
- 
+- kreditkarteninhaber 
+- kreditkarteninstitut 
+- kreditkartennummer 
+- kreditkartentyp 
+- maestro 
+- Master Card 
+- master cards 
+- mastercard 
 - mastercards 
 - emc 
-- mister cash
- 
+- mister cash 
 - n carta 
 - carta 
-- 无 de tarjeta 
-- 不执行任何操作 cartao 
-- 不执行任何操作 cartão 
-- no. de tarjeta
- 
-- no. do cartao
- 
-- no. do cartão
- 
+- no de tarjeta 
+- no do cartao 
+- no do cartão 
+- 不。 de tarjeta 
+- 不。 do cartao 
+- 不。 do cartão 
 - nr carta 
-- nr. carta
- 
-- numeri di scheda
- 
-- numero carta
- 
-- numero de cartao
- 
-- numero de carte
- 
-- numero de cartão
- 
+- führerschein-nr. carta 
+- numeri di scheda 
+- numero carta 
+- numero de cartao 
+- numero de carte 
+- numero de cartão 
 - numero de tarjeta
-
-- numero della carta
- 
-- numero di carta
- 
-- numero di scheda
- 
-- numero do cartao
- 
-- numero do cartão
- 
-- numéro de carte
- 
-- nº carta
- 
-- nº de carte
- 
-- nº de la carte
- 
-- nº de tarjeta
- 
-- nº do cartao
- 
-- n º do cartão 
-- nº. do cartão
- 
-- número de cartao
- 
-- número de cartão
- 
-- número de tarjeta
- 
+- numero della carta 
+- numero di carta 
+- numero di scheda 
+- numero do cartao 
+- numero do cartão 
+- numéro de carte 
+- nº carta 
+- nº de carte 
+- nº de la carte 
+- nº de tarjeta 
+- nº do cartao 
+- nº do cartão 
+- n º。 do cartão 
+- número de cartao 
+- número de cartão 
+- número de tarjeta 
 - número do cartao 
-- scheda dell'assegno
- 
-- scheda dell'atmosfera
- 
-- scheda dell'atmosfera
- 
-- scheda della banca
- 
-- scheda di controllo
- 
-- scheda di debito
- 
-- scheda matrice
- 
-- schede dell'atmosfera
- 
-- schede di controllo
- 
-- schede di debito
- 
-- schede matrici
- 
-- scoprono la scheda
- 
-- scoprono le schede
- 
-- solo
- 
-- supporti di scheda
- 
-- supporto di scheda
- 
-- 切换 
-- tarjeta atm
- 
-- tarjeta credito
- 
-- tarjeta de atm
- 
-- tarjeta de credito
- 
-- tarjeta de debito
- 
-- tarjeta debito
- 
+- scheda dell'assegno 
+- scheda dell'atmosfera 
+- scheda dell'atmosfera 
+- scheda della banca 
+- scheda di controllo 
+- scheda di debito 
+- scheda matrice 
+- schede dell'atmosfera 
+- schede di controllo 
+- schede di debito 
+- schede matrici 
+- scoprono la scheda 
+- scoprono le schede 
+- solo 
+- supporti di scheda 
+- supporto di scheda 
+- 器 
+- tarjeta atm 
+- tarjeta credito 
+- tarjeta de atm 
+- tarjeta de credito 
+- tarjeta de debito 
+- tarjeta debito 
 - tarjeta no
-
-- tarjetahabiente
- 
-- tipo della scheda
- 
+- tarjetahabiente 
+- tipo della scheda 
 - ufficio giapponese della 
-- scheda
- 
-- v pay
- 
+- scheda 
+- v pay 
 - v-支付 
-- visa
- 
-- visa plus
- 
-- visa electron
- 
-- visto
- 
-- visum
- 
-- vpay
-   
+- 反之 
+- visa plus 
+- visa electron 
+- visto 
+- visum 
+- vpay   
 
 #### <a name="keywordcardsecuritytermsdict"></a>Keyword_card_security_terms_dict
 
 - card identification number
 - card verification 
-- cardi la verifica
- 
-- cid
- 
-- 货到付款 seg 
-- 货到付款 seguranca 
-- 货到付款 segurança 
-- 货到付款 sicurezza 
-- cod. seg
- 
-- cod. seguranca
- 
-- cod. segurança
- 
-- cod. sicurezza
- 
-- codice di sicurezza
- 
-- codice di verifica
- 
-- codigo
- 
-- codigo de seguranca
- 
-- codigo de segurança
- 
-- crittogramma
- 
-- cryptogram
- 
-- cryptogramme
- 
+- cardi la verifica 
+- cid 
+- cod seg 
+- cod seguranca 
+- cod segurança 
+- cod sicurezza 
+- 货. seg 
+- 货. seguranca 
+- 货. segurança 
+- 货. sicurezza 
+- codice di sicurezza 
+- codice di verifica 
+- codigo 
+- codigo de seguranca 
+- codigo de segurança 
+- crittogramma 
+- cryptogram 
+- cryptogramme 
 - cv2 
-- cvc
- 
+- cvc 
 - cvc2 
-- cvn
- 
-- cvv
- 
+- cvn 
+- cvv 
 - cvv2 
 - cód seguranca 
 - cód segurança 
-- cód. seguranca
- 
-- cód. segurança
- 
-- código
- 
-- código de seguranca
- 
-- código de segurança
- 
-- de kaart controle
- 
-- geeft nr uit
- 
-- issue no
- 
-- issue number
- 
-- kaartidentificatienummer
- 
-- kreditkartenprufnummer
- 
-- kreditkartenprüfnummer
- 
-- kwestieaantal
- 
-- no. dell'edizione
- 
-- no. di sicurezza
- 
-- numero de securite
- 
-- numero de verificacao
- 
-- numero dell'edizione
- 
+- cód。 seguranca 
+- cód。 segurança 
+- código 
+- código de seguranca 
+- código de segurança 
+- de kaart controle 
+- geeft nr uit 
+- issue no 
+- issue number 
+- kaartidentificatienummer 
+- kreditkartenprufnummer 
+- kreditkartenprüfnummer 
+- kwestieaantal 
+- 不。 dell'edizione 
+- 不。 di sicurezza 
+- numero de securite 
+- numero de verificacao 
+- numero dell'edizione 
 - numero di identificazione della 
-- scheda
- 
-- numero di sicurezza
- 
-- numero van veiligheid
- 
-- numéro de sécurité
- 
-- nº autorizzazione
- 
-- número de verificação
- 
-- perno il blocco
- 
-- pin block
- 
-- prufziffer
- 
-- prüfziffer
- 
-- security code
- 
-- security no
- 
-- security number
- 
-- sicherheits kode
- 
-- sicherheitscode
- 
-- sicherheitsnummer
- 
-- speldblok
- 
-- veiligheid nr
- 
-- veiligheidsaantal
- 
-- veiligheidscode
- 
-- veiligheidsnummer
- 
-- verfalldatum
- 
+- scheda 
+- numero di sicurezza 
+- numero van veiligheid 
+- numéro de sécurité 
+- nº autorizzazione 
+- número de verificação 
+- perno il blocco 
+- pin block 
+- prufziffer 
+- prüfziffer 
+- security code 
+- security no 
+- security number 
+- sicherheits kode 
+- sicherheitscode 
+- sicherheitsnummer 
+- speldblok 
+- veiligheid nr 
+- veiligheidsaantal 
+- veiligheidscode 
+- veiligheidsnummer 
+- verfalldatum 
 
 #### <a name="keywordcardexpirationtermsdict"></a>Keyword_card_expiration_terms_dict
 
-- ablauf
- 
-- data de expiracao
- 
-- data de expiração
- 
-- data del exp
- 
-- data di exp
- 
-- data di scadenza
- 
-- data em que expira
- 
-- data scad
- 
-- data scadenza
- 
-- date de validité
- 
-- datum afloop
- 
-- datum van exp
- 
-- de afloop
- 
-- espira
- 
-- espira
- 
-- exp date
- 
-- exp datum
- 
+- ablauf 
+- data de expiracao 
+- data de expiração 
+- data del exp 
+- data di exp 
+- data di scadenza 
+- data em que expira 
+- data scad 
+- data scadenza 
+- date de validité 
+- datum afloop 
+- datum van exp 
+- de afloop 
+- espira 
+- espira 
+- exp date 
+- exp datum 
 - 时间 
-- expire
- 
-- expires
- 
-- expiry
- 
-- fecha de expiracion
- 
-- fecha de venc
- 
-- gultig bis
- 
-- gultigkeitsdatum
- 
-- gültig bis
- 
-- gültigkeitsdatum
- 
-- la scadenza
- 
-- scadenza
- 
-- valable
- 
-- validade
- 
-- valido hasta
- 
-- valor
- 
-- venc
- 
-- vencimento
- 
-- vencimiento
- 
-- verloopt
- 
-- vervaldag
- 
-- vervaldatum
- 
-- vto
- 
-- válido hasta
- 
+- 何时 
+- 不久 
+- 过期 
+- fecha de expiracion 
+- fecha de venc 
+- gultig bis 
+- gultigkeitsdatum 
+- gültig bis 
+- gültigkeitsdatum 
+- la scadenza 
+- scadenza 
+- valable 
+- validade 
+- valido hasta 
+- valor 
+- venc 
+- vencimento 
+- vencimiento 
+- verloopt 
+- vervaldag 
+- vervaldatum 
+- vto 
+- válido hasta 
    
 ## <a name="eu-drivers-license-number"></a>欧盟驾驶执照号码
 
@@ -3015,7 +2325,7 @@ kartennr
   
 ## <a name="finland-national-id"></a>芬兰国家/地区 ID
 
-### <a name="format"></a>格式
+### <a name="format"></a>Format
 
 六个数字加一个字符（表示一个世纪），加三个数字再加一个校验位
 
@@ -3051,22 +2361,23 @@ kartennr
 ### <a name="keywords"></a>关键字
 
 - Keyword_finnish_national_id
-- 
-
-Sosiaaliturvatunnus
+- Sosiaaliturvatunnus
 - SOTU Henkilötunnus HETU
 - Personbeteckning
 - Personnummer
    
-## <a name="finland-passport-number"></a>芬兰护照号码
+## <a name="finland-passport-number"></a>芬兰护照号
 
-设置九个字母和数字的组合的组合九个字母和数字的组合: 两个字母 (不区分大小写) 七个数字校验和无定义 DLP 策略是 75% 确信它检测到这种类型的敏感信息, 如果在300个字符的邻近性: 正则表达式 Regex_finland_passport_number 找到与该模式匹配的内容。找到 Keyword_finland_passport_number 中的关键字。关键字 Keyword_finland_passport_number <!-- Finland Passport Number --> 
- <Entity id="d1685ac3-1d3a-40f8-8198-32ef5669c7a5" recommendedConfidence="75" patternsProximity="300"> <Pattern confidenceLevel="75"> <IdMatch idRef="Regex_finland_passport_number"/> <Match idRef="Keyword_finland_passport_number"/> </Pattern> 
- </Entity>
+设置九个字母和数字的组合的组合九个字母和数字的组合: 两个字母 (不区分大小写) 七个数字校验和无定义 DLP 策略是 75% 确信它检测到这种类型的敏感信息, 如果在300个字符的邻近性: 正则表达式 Regex_finland_passport_number 找到与该模式匹配的内容。
+找到 Keyword_finland_passport_number 中的一个关键字。
+<!-- Finland Passport Number -->
+<Entity id="d1685ac3-1d3a-40f8-8198-32ef5669c7a5" recommendedConfidence="75" patternsProximity="300"> <Pattern confidenceLevel="75"> <IdMatch idRef="Regex_finland_passport_number"/> <Match idRef="Keyword_finland_passport_number"/> </Pattern>
+</Entity>
+关键字 Keyword_finland_passport_number passport Passi
    
 ## <a name="france-drivers-license-number"></a>法国驾驶证号码
 
-### <a name="format"></a>格式
+### <a name="format"></a>Format
 
 12 个数字
 
@@ -3078,7 +2389,7 @@ Sosiaaliturvatunnus
 
 否
 
-### <a name="definition"></a>Definition
+### <a name="definition"></a>定义
 
 在 300 个字符的相似度内，如果出现以下情况，DLP 策略 75% 确信它检测到这种类型的敏感信息：
 - 函数 Func_french_drivers_license 找到与该模式匹配的内容。
@@ -3106,23 +2417,16 @@ Sosiaaliturvatunnus
 - drivers licence
 - drivers license
 - driving licence
-
-- 驾驶执照
-- 
-permis de conduire
-- 
-licence number
-- 
-license number
-- 
-licence numbers
-- 
-
-license numbers
+- driving license
+- permis de conduire
+- licence number
+- license number
+- licence numbers
+- license numbers
 
 ## <a name="france-national-id-card-cni"></a>法国国家/地区 ID 卡 (CNI)
 
-### <a name="format"></a>格式
+### <a name="format"></a>Format
 
 12 个数字
 
@@ -3150,11 +2454,11 @@ license numbers
 
 ### <a name="keywords"></a>关键字
 
-无
+None
    
 ## <a name="france-passport-number"></a>法国护照号码
 
-### <a name="format"></a>格式
+### <a name="format"></a>Format
 
 9 个数字和字母
 
@@ -3162,14 +2466,14 @@ license numbers
 
 九位数字和字母：
 - 两位数字 
-- 两个字母（不区分大小写）  
+- 两个字母（不区分大小写） 
 - 五位数字
 
 ### <a name="checksum"></a>校验和
 
 否
 
-### <a name="definition"></a>Definition
+### <a name="definition"></a>定义
 
 在 300 个字符的相似度内，如果出现以下情况，DLP 策略 75% 确信它检测到这种类型的敏感信息：
 - 函数 Func_fr_passport 找到与该模式匹配的内容。
@@ -3190,43 +2494,28 @@ license numbers
 #### <a name="keywordpassport"></a>Keyword_passport
 
 - Passport Number
-- 
-Passport No
+- Passport No
 - Passport #
-
-- Passport#
-
+- 登记卡
 - PassportID
 - Passportno
-
 - passportnumber
-
 - パスポート
 - パスポート番号
-
 - パスポートのNum
-
-- 
-パスポート ＃
- 
+- パスポート ＃ 
 - Numéro de passeport
-- 
-Passeport n °
+- Passeport n °
 - Passeport Non
-
 - Passeport #
-
-- Passeport#
-
+- Passeport #
 - PasseportNon
-- 
-
-Passeportn °
+- Passeportn °
 
       
 ## <a name="france-social-security-number-insee"></a>法国社会保险号 (INSEE)
 
-### <a name="format"></a>格式
+### <a name="format"></a>Format
 
 15 个数字
 
@@ -3234,7 +2523,7 @@ Passeportn °
 
 必须匹配两种模式之一：
 - 13位数, 后跟一个空格, 后跟两个数字<br/>
-或
+或者
 - 15 个连续的数字
 
 ### <a name="checksum"></a>校验和
@@ -3278,48 +2567,30 @@ Passeportn °
 #### <a name="keywordfrinsee"></a>Keyword_fr_insee
 
 - insee
-- 
-securité sociale
-- 
-securite sociale
-- 
-national id
-- 
-national identification
-- 
-numéro d identité
-- 无 d'identité
-- 
-no. d'identité
-- 
-numero d'identite
-- 无 d'identite
-- 
-no. d'identite
+- securité sociale
+- securite sociale
+- national id
+- national identification
+- numéro d identité
+- no d'identité
+- 不。 d'identité
+- numero d'identite
+- no d'identite
+- 不。 d'identite
 - social security number
-
-- 
-social security code
+- social security code
 - social insurance number
-- 
-le numéro d'identification nationale
-- 
-d'identité nationale
-- 
-numéro de sécurité sociale
-- 
-le code de la sécurité sociale
-- 
-numéro d'assurance sociale
-- 
-numéro de sécu
-- 
-code sécu
- 
+- le numéro d'identification nationale
+- d'identité nationale
+- numéro de sécurité sociale
+- le code de la sécurité sociale
+- numéro d'assurance sociale
+- numéro de sécu
+- code sécu 
    
 ## <a name="german-drivers-license-number"></a>德国驾驶证号码
 
-### <a name="format"></a>格式
+### <a name="format"></a>Format
 
 11 个数字和字母组合
 
@@ -3364,23 +2635,15 @@ code sécu
 
 #### <a name="keywordgermandriverslicensenumber"></a>Keyword_german_drivers_license_number
 
-- Führerschein
-- 
-Fuhrerschein
+- führerschein-nr
+- Fuhrerschein
 - Fuehrerschein
-- 
-Führerscheinnummer
-- 
-Fuhrerscheinnummer
-- 
-Fuehrerscheinnummer
-- 
-Führerschein-
- 
-- Fuhrerschein-
- 
-- Fuehrerschein-
- 
+- Führerscheinnummer
+- Fuhrerscheinnummer
+- Fuehrerscheinnummer
+- führerschein-nr 
+- Fuhrerschein- 
+- Fuehrerschein- 
 - FührerscheinnummerNr
 - FuhrerscheinnummerNr
 - FuehrerscheinnummerNr
@@ -3388,15 +2651,10 @@ Führerschein-
 - FuhrerscheinnummerKlasse
 - FuehrerscheinnummerKlasse
 - Führerschein-Nr
-
 - Fuhrerschein- Nr
-
-- Fuehrerschein- Nr
- 
-- Führerschein- Klasse
- 
-- Fuhrerschein- Klasse
- 
+- Fuehrerschein- Nr 
+- Führerschein- Klasse 
+- Fuhrerschein- Klasse 
 - Fuehrerschein- Klasse
 - FührerscheinnummerNr 
 - FuhrerscheinnummerNr 
@@ -3404,125 +2662,77 @@ Führerschein-
 - FührerscheinnummerKlasse 
 - FuhrerscheinnummerKlasse 
 - FuehrerscheinnummerKlasse 
-- Führerschein-Nr
- 
-- Fuhrerschein- Nr
- 
-- Fuehrerschein- Nr
- 
-- Führerschein- Klasse
- 
-- Fuhrerschein- Klasse
- 
+- Führerschein-Nr 
+- Fuhrerschein- Nr 
+- Fuehrerschein- Nr 
+- Führerschein- Klasse 
+- Fuhrerschein- Klasse 
 - Fuehrerschein- Klasse 
-- DL 
+- 通讯 
 - DLS
-- 
-Driv Lic
- 
-- Driv Licen
- 
+- Driv Lic 
+- Driv Licen 
 - Driv License
-- 
-Driv Licenses
- 
-- Driv Licence
- 
-- Driv Licences
- 
-- Driv Lic
- 
-- Driver Licen
- 
-- 驱动程序许可证 
-- 驱动程序许可证 
-- Driver Licence
- 
-- Driver Licences
- 
-- 驱动程序许可证 
-- 驱动程序 Licen 
-- 驱动程序许可证 
-- 驱动程序许可证 
-- 驱动程序许可证 
-- 驱动程序许可 
-- 驱动程序的许可证 
-- Driver's Licen
- 
-- 驾驶执照 
-- 驾驶许可证 
-- Driver's Licence
- 
-- Driver's Licences
- 
-- Driving Lic
- 
-- Driving Licen
- 
-- Driving License
- 
-- Driving Licenses
- 
-- Driving Licence
-
- 
+- Driv Licenses 
+- Driv Licence 
+- Driv Licences 
+- Driv Lic 
+- Driver Licen 
+- Driver License 
+- Driver Licenses 
+- Driver Licence 
+- Driver Licences 
+- Drivers Lic 
+- Drivers Licen 
+- Drivers License 
+- Drivers Licenses 
+- Drivers Licence 
+- Drivers Licences 
+- Driver's Lic 
+- Driver's Licen 
+- Driver's License 
+- Driver's Licenses 
+- Driver's Licence 
+- Driver's Licences 
+- Driving Lic 
+- Driving Licen 
+- Driving License 
+- Driving Licenses 
+- Driving Licence 
 - Driving Licences
 
 #### <a name="keywordgermandriverslicensecollaborative"></a>Keyword_german_drivers_license_collaborative
 
-- 
-Nr-Führerschein
- 
-- Nr-Fuhrerschein
- 
-- Nr-Fuehrerschein
- 
-- No-Führerschein
- 
-- No-Fuhrerschein
- 
-- No-Fuehrerschein
- 
-- N-Führerschein
- 
-- N-Fuhrerschein
- 
+- Nr-führerschein-nr 
+- Nr-Fuhrerschein 
+- Nr-Fuehrerschein 
+- führerschein-nr 
+- Fuhrerschein 
+- Fuehrerschein 
+- N-führerschein-nr 
+- N-Fuhrerschein 
 - N-Fuehrerschein
-- 
-Nr-Führerschein
- 
-- Nr-Fuhrerschein
- 
-- Nr-Fuehrerschein
- 
-- No-Führerschein
- 
-- No-Fuhrerschein
- 
-- No-Fuehrerschein
- 
-- N-Führerschein
- 
-- N-Fuhrerschein
- 
+- Nr-führerschein-nr 
+- Nr-Fuhrerschein 
+- Nr-Fuehrerschein 
+- führerschein-nr 
+- Fuhrerschein 
+- Fuehrerschein 
+- N-führerschein-nr 
+- N-Fuhrerschein 
 - N-Fuehrerschein 
 
 #### <a name="keywordgermandriverslicense"></a>Keyword_german_drivers_license
 
 - ausstellungsdatum
-- 
-ausstellungsort
-- 
-ausstellende behöde
-- 
-ausstellende behorde
-- 
-
-ausstellende behoerde
+- ausstellungsort
+- ausstellende behöde
+- ausstellende behorde
+- ausstellende behoerde
    
 ## <a name="german-passport-number"></a>德国护照号码
 
-### <a name="format"></a>格式
+### <a name="format"></a>Format
 
 10 个数字或字母
 
@@ -3581,21 +2791,16 @@ ausstellende behoerde
 #### <a name="keywordgermanpassport"></a>Keyword_german_passport
 
 - reisepass
-- 
-reisepasse
-- 
-reisepassnummer
-- passport
-- 
-
-passports
+- reisepasse
+- reisepassnummer
+- 登记卡
+- passports
 
 #### <a name="keywordgermanpassportcollaborative"></a>Keyword_german_passport_collaborative
 
 - geburtsdatum
 - ausstellungsdatum
-- 
-ausstellungsort
+- ausstellungsort
 
 #### <a name="keywordgermanpassportnumber"></a>Keyword_german_passport_number
 
@@ -3605,14 +2810,13 @@ Reisepass Nr-Reisepass
 
 Reisepass-Nr
 
-
 #### <a name="keywordgermanpassport2"></a>Keyword_german_passport2
 
 bnationalit
    
 ## <a name="germany-identity-card-number"></a>德国身份证号码
 
-### <a name="format"></a>格式
+### <a name="format"></a>Format
 
 自2010年11月1日起: 九个字母和数字
 
@@ -3621,7 +2825,7 @@ bnationalit
 ### <a name="pattern"></a>模式
 
 自 2010 年 11 月 1 日起：
-- 一个字母（不区分大小写）  
+- 一个字母（不区分大小写） 
 - 八个数字
 
 介于1年4月1987至 31 10 月 2010:
@@ -3653,7 +2857,7 @@ bnationalit
 
 - Identity Card
 - ID
-- Identification
+- id
 - Personalausweis
 - Identifizierungsnummer
 - Ausweis
@@ -3661,7 +2865,7 @@ bnationalit
    
 ## <a name="greece-national-id-card"></a>希腊国家 ID 卡
 
-### <a name="format"></a>格式
+### <a name="format"></a>Format
 
 7-8 个字母和数字组合加一个短划线
 
@@ -3675,13 +2879,13 @@ bnationalit
 八个字母和数字（新格式）：
 - 大写字符同时出现在希腊和拉丁字母表中的两个字母 (ABEZHIKMNOPTYX)  
 - 一个短划线  
-- 六个数字
+- 六位数字
 
 ### <a name="checksum"></a>校验和
 
 否
 
-### <a name="definition"></a>Definition
+### <a name="definition"></a>定义
 
 在 300 个字符的相似度内，如果出现以下情况，DLP 策略 75% 确信它检测到这种类型的敏感信息：
 - 正则表达式 Regex_greece_id_card 找到与该模式匹配的内容。
@@ -3708,7 +2912,7 @@ bnationalit
    
 ## <a name="hong-kong-identity-card-hkid-number"></a>香港身份证 (HKID) 号
 
-### <a name="format"></a>格式
+### <a name="format"></a>Format
 
 8-9 个字母和数字组合，最后一个字符两边可选择加括号
 
@@ -3753,24 +2957,20 @@ bnationalit
 
 - 中国香港恒等卡片
 - HKIDC
-- id 卡片
+- id card
 - identity card
 - hk identity 卡片
 - 香港 id
 - 香港身份證
-
 - 香港永久性居民身份證
-
-- 身份證
-
+- 證
 - 身份証
-- 身分證 
+- 身分證
 - 身分証
 - 香港身份証
 - 香港身分證
 - 香港身分証
 - 香港身份證
-
 - 香港居民身份證
 - 香港居民身份証
 - 香港居民身分證
@@ -3779,7 +2979,6 @@ bnationalit
 - 香港永久性居民身分證
 - 香港永久性居民身分証
 - 香港永久性居民身份證
-
 - 香港非永久性居民身份證
 - 香港非永久性居民身份証
 - 香港非永久性居民身分證
@@ -3795,7 +2994,7 @@ bnationalit
    
 ## <a name="india-permanent-account-number-pan"></a>印度永久帐号 (PAN)
 
-### <a name="format"></a>格式
+### <a name="format"></a>Format
 
 10 个字母或数字
 
@@ -3831,23 +3030,21 @@ bnationalit
 
 #### <a name="keywordindiapermanentaccountnumber"></a>Keyword_india_permanent_account_number
 
-- Permanent Account Number
- 
-- PAN
- 
+- Permanent Account Number 
+- 蛋糕 
    
 ## <a name="india-unique-identification-aadhaar-number"></a>India Unique Identification (Aadhaar) Number
 
-### <a name="format"></a>格式
+### <a name="format"></a>Format
 
 12 个数字（包含可选空格或短划线）
 
 ### <a name="pattern"></a>模式
 
 12 个数字：
-- 四个数字  
+- 四个数字 
 - 一个可选空格或短划线  
-- 四个数字  
+- 四个数字 
 - 一个可选空格或短划线  
 - 最后一个数字是校验位
 
@@ -3857,7 +3054,12 @@ bnationalit
 
 ### <a name="definition"></a>定义
 
-DLP 策略 85% 确信在300个字符的邻近度内检测到此类型的敏感信息: 函数 Func_india_aadhaar 找到与该模式匹配的内容。找到 Keyword_india_aadhar 中的关键字。校验和通过。DLP 策略 75% 确信在300个字符的邻近度内检测到此类型的敏感信息: 函数 Func_india_aadhaar 找到与该模式匹配的内容。校验和通过。<!-- India Unique Identification (Aadhaar) number -->
+DLP 策略 85% 确信在300个字符的邻近度内检测到此类型的敏感信息: 函数 Func_india_aadhaar 找到与该模式匹配的内容。
+找到 Keyword_india_aadhar 中的一个关键字。
+校验和通过。
+DLP 策略 75% 确信在300个字符的邻近度内检测到此类型的敏感信息: 函数 Func_india_aadhaar 找到与该模式匹配的内容。
+校验和通过。
+<!-- India Unique Identification (Aadhaar) number -->
 <Entity id="1ca46b29-76f5-4f46-9383-cfa15e91048f" recommendedConfidence="85" patternsProximity="300"> <Pattern confidenceLevel="85"> <IdMatch idRef="Func_india_aadhaar"/> <Match idRef="Keyword_india_aadhar"/> </Pattern> <Pattern confidenceLevel="75"> <IdMatch idRef="Func_india_aadhaar"/> </Pattern>
 </Entity>
 
@@ -3871,7 +3073,7 @@ DLP 策略 85% 确信在300个字符的邻近度内检测到此类型的敏感�
    
 ## <a name="indonesia-identity-card-ktp-number"></a>印度尼西亚身份证 (KTP) 号
 
-### <a name="format"></a>格式
+### <a name="format"></a>Format
 
 16 个数字（包含可选点）
 
@@ -3891,7 +3093,7 @@ DLP 策略 85% 确信在300个字符的邻近度内检测到此类型的敏感�
 
 否
 
-### <a name="definition"></a>Definition
+### <a name="definition"></a>定义
 
 在 300 个字符的相似度内，如果出现以下情况，DLP 策略 75% 确信它检测到这种类型的敏感信息：
 - 正则表达式 Regex_indonesia_id_card 找到与该模式匹配的内容。
@@ -3918,14 +3120,12 @@ DLP 策略 85% 确信在300个字符的邻近度内检测到此类型的敏感�
 #### <a name="keywordindonesiaidcard"></a>Keyword_indonesia_id_card
 
 - KTP
-- Kartu Tanda Penduduk
- 
-- Nomor Induk Kependudukan
- 
+- Kartu Tanda Penduduk 
+- Nomor Induk Kependudukan 
    
 ## <a name="international-banking-account-number-iban"></a>国际银行帐号 (IBAN)
 
-### <a name="format"></a>格式
+### <a name="format"></a>Format
 
 国家/地区代码（两个字母）加校验位（两个数字）以及 bban 号码（最多 30 个字符）
 
@@ -3962,17 +3162,17 @@ ad, ae, al, at, az, ba, be, bg, bh, ch, cr, cy, cz, de, dk, do, ee, es, fi, fo, 
 
 ### <a name="keywords"></a>关键字
 
-无
+None
 
    
 ## <a name="ip-address"></a>IP 地址
 
-### <a name="format"></a>格式
+### <a name="format"></a>Format
 
-#### <a name="ipv4"></a>IPv4：
+#### <a name="ipv4"></a>IPv4
 解释 IPv4 地址格式化（点）版本或非格式化（没有点）版本的复杂模式
 
-#### <a name="ipv6"></a>IPv6：
+#### <a name="ipv6"></a>ipv4
  解释格式化 IPv6 号码（包含冒号）的复杂模式
 
 ### <a name="pattern"></a>模式
@@ -4024,19 +3224,16 @@ ad, ae, al, at, az, ba, be, bg, bh, ch, cr, cy, cz, de, dk, do, ee, es, fi, fo, 
 #### <a name="keywordipaddress"></a>Keyword_ipaddress
 
 - IP（此关键字区分大小写）
-- ip address
- 
+- ip address 
 - ip addresses
 - internet protocol
-- 
-IP-כתובת ה
- 
+- IP-כתובת ה 
    
 ## <a name="international-classification-of-diseases-icd-10-cm"></a>国际分类的 Diseases (ICD-10 CM)
 
-### <a name="format"></a>格式
+### <a name="format"></a>Format
 
-辞典
+Dictionary
 
 ### <a name="pattern"></a>模式
 
@@ -4062,14 +3259,14 @@ IP-כתובת ה
 
 关键字
 
-Dictionary_icd_10_cm 关键字词典中的任何术语, 它基于[Diseases 的国际分类、第十个修订、临床修改 (icd-10-cm)](https://go.microsoft.com/fwlink/?linkid=852604)。此类型仅查找术语, 而不是保险代码。
+Dictionary_icd_10_cm 关键字词典中的任何术语, 它基于[Diseases 的国际分类、第十个修订、临床修改 (icd-10-cm)](https://go.microsoft.com/fwlink/?linkid=852604)。 此类型仅查找术语, 而不是保险代码。
 
    
 ## <a name="international-classification-of-diseases-icd-9-cm"></a>国际分类的 Diseases (ICD-9-CM)
 
-### <a name="format"></a>格式
+### <a name="format"></a>Format
 
-辞典
+Dictionary
 
 ### <a name="pattern"></a>模式
 
@@ -4094,11 +3291,11 @@ Dictionary_icd_10_cm 关键字词典中的任何术语, 它基于[Diseases 的�
 
 ### <a name="keywords"></a>关键字
 
-Dictionary_icd_9_cm 关键字词典中的任何术语, 基于[Diseases 的国际分类、第九修订版、临床修改 (icd-9 cm)](https://go.microsoft.com/fwlink/?linkid=852605)。此类型仅查找术语, 而不是保险代码。
+Dictionary_icd_9_cm 关键字词典中的任何术语, 基于[Diseases 的国际分类、第九修订版、临床修改 (icd-9 cm)](https://go.microsoft.com/fwlink/?linkid=852605)。 此类型仅查找术语, 而不是保险代码。
    
 ## <a name="ireland-personal-public-service-pps-number"></a>爱尔兰个人公共服务 (PPS) 号码
 
-### <a name="format"></a>格式
+### <a name="format"></a>Format
 
 旧格式 (到 31 Dec 2012):
 - 七位数字后跟 1-2  个字母  
@@ -4155,50 +3352,40 @@ Dictionary_icd_9_cm 关键字词典中的任何术语, 基于[Diseases 的国际
 #### <a name="keywordirelandpps"></a>Keyword_ireland_pps
 
 - Personal Public Service Number 
- 
-- PPS Number
- 
-- PPS Num
- 
-- PPS No.
- 
-- PPS #
- 
+- PPS Number 
+- PPS Num 
+- PPS No. 
+- PPS # 
 - .pps 
-- PPSN
- 
-- Public Services Card
- 
-- Uimhir Phearsanta Seirbhíse Poiblí
- 
-- Uimh.PSP
- 
-- PSP
- 
+- PPSN 
+- Public Services Card 
+- Uimhir Phearsanta Seirbhíse Poiblí 
+- Uimh。 PSP 
+- PSP 
    
 ## <a name="israel-bank-account-number"></a>以色列银行帐号
 
-### <a name="format"></a>格式
+### <a name="format"></a>Format
 
 13 位数字
 
 ### <a name="pattern"></a>模式
 
-有格式模式：
+格式
 - 两位数字 
-- 一个短划线  
-- 三个数字  
 - 破折号 
-- 八个数字
+- 三位数字 
+- 破折号 
+- 八位数字
 
-无格式模式：
+纯
 - 	13 个连续的数字
 
 ### <a name="checksum"></a>校验和
 
 否
 
-### <a name="definition"></a>Definition
+### <a name="definition"></a>定义
 
 在 300 个字符的相似度内，如果出现以下情况，DLP 策略 75% 确信它检测到这种类型的敏感信息：
 - 正则表达式 Regex_israel_bank_account_number 找到与该模式匹配的内容。
@@ -4220,18 +3407,14 @@ Dictionary_icd_9_cm 关键字词典中的任何术语, 基于[Diseases 的国际
 
 #### <a name="keywordisraelbankaccountnumber"></a>Keyword_israel_bank_account_number
 
-- Bank Account Number
- 
-- Bank Account
- 
-- Account Number
- 
-- מספר חשבון בנק
- 
+- Bank Account Number 
+- Bank Account 
+- Account Number 
+- מספר חשבון בנק 
    
 ## <a name="israel-national-id"></a>以色列国家/地区 ID
 
-### <a name="format"></a>格式
+### <a name="format"></a>Format
 
 九个数字
 
@@ -4266,13 +3449,12 @@ Dictionary_icd_9_cm 关键字词典中的任何术语, 基于[Diseases 的国际
 
 #### <a name="keywordisraelnationalid"></a>Keyword_Israel_National_ID
 
-- מספר זהות
- 
+- מספר זהות 
 - National ID Number
    
 ## <a name="italy-drivers-license-number"></a>意大利驾驶证号码
 
-### <a name="format"></a>格式
+### <a name="format"></a>Format
 
 10 个字母和数字的组合
 
@@ -4288,7 +3470,7 @@ Dictionary_icd_9_cm 关键字词典中的任何术语, 基于[Diseases 的国际
 
 否
 
-### <a name="definition"></a>Definition
+### <a name="definition"></a>定义
 
 在 300 个字符的相似度内，如果出现以下情况，DLP 策略 75% 确信它检测到这种类型的敏感信息：
 - 正则表达式 Regex_italy_drivers_license_number 找到与该模式匹配的内容。
@@ -4310,14 +3492,12 @@ Dictionary_icd_9_cm 关键字词典中的任何术语, 基于[Diseases 的国际
 
 #### <a name="keyworditalydriverslicensenumber"></a>Keyword_italy_drivers_license_number
 
-- numero di patente di guida
- 
-- patente di guida
- 
+- numero di patente di guida 
+- patente di guida 
    
 ## <a name="japan-bank-account-number"></a>日本银行帐号
 
-### <a name="format"></a>格式
+### <a name="format"></a>Format
 
 七个或八个数字
 
@@ -4328,7 +3508,7 @@ Dictionary_icd_9_cm 关键字词典中的任何术语, 基于[Diseases 的国际
 - 银行帐户分支代码：
 - 四位数字 
 - 空格或破折号（可选） 
-- 三个数字
+- 三位数字
 
 校验和
 
@@ -4371,110 +3551,60 @@ Dictionary_icd_9_cm 关键字词典中的任何术语, 基于[Diseases 的国际
 
 #### <a name="keywordjpbankaccount"></a>Keyword_jp_bank_account
 
-- Checking Account Number
- 
-- Checking Account
- 
-- Checking Account #
- 
-- Checking Acct Number
- 
-- Checking Acct #
- 
-- Checking Acct No.
- 
-- Checking Account No.
- 
-- Bank Account Number
- 
-- Bank Account
- 
-- Bank Account #
- 
-- Bank Acct Number
- 
-- Bank Acct #
- 
-- Bank Acct No.
- 
-- Bank Account No.
- 
-- Savings Account Number
- 
-- 储蓄帐户 
-- Savings Account #
- 
-- Savings Acct Number
- 
-- Savings Acct #
- 
-- Savings Acct No.
- 
-- Savings Account No.
- 
-- Debit Account Number
- 
-- Debit Account
- 
-- Debit Account #
- 
-- Debit Acct Number
- 
-- Debit Acct #
- 
-- Debit Acct No.
- 
-- Debit Account No.
- 
-- 口座番号を当座預金口座の確認
- 
-- ＃アカウントの確認、勘定番号の確認
- 
-- ＃勘定の確認
- 
-- 勘定番号の確認
- 
-- 口座番号の確認
- 
+- Checking Account Number 
+- Checking Account 
+- Checking Account # 
+- Checking Acct Number 
+- Checking Acct # 
+- Checking Acct No. 
+- Checking Account No. 
+- Bank Account Number 
+- Bank Account 
+- Bank Account # 
+- Bank Acct Number 
+- Bank Acct # 
+- Bank Acct No. 
+- Bank Account No. 
+- Savings Account Number 
+- Savings Account 
+- Savings Account # 
+- Savings Acct Number 
+- Savings Acct # 
+- Savings Acct No. 
+- Savings Account No. 
+- Debit Account Number 
+- Debit Account 
+- Debit Account # 
+- Debit Acct Number 
+- Debit Acct # 
+- Debit Acct No. 
+- Debit Account No. 
+- 口座番号を当座預金口座の確認 
+- #アカウントの確認、勘定番号の確認 
+- #勘定の確認 
+- 勘定番号の確認 
+- 口座番号の確認 
 - 銀行口座番号 
 - 銀行口座 
-- 銀行口座＃
- 
-- 銀行の勘定番号
- 
-- 銀行のacct＃
- 
-- 銀行の勘定いいえ
- 
+- 銀行口座 # 
+- 銀行の勘定番号 
+- 銀行のacct # 
+- 銀行の勘定いいえ 
 - 銀行口座番号
-- 
-普通預金口座番号
- 
-- 預金口座
- 
-- 貯蓄口座＃
- 
-- 貯蓄勘定の数
- 
-- 貯蓄勘定＃
- 
-- 貯蓄勘定番号
- 
-- 普通預金口座番号
- 
-- 引き落とし口座番号
- 
+- 普通預金口座番号 
+- 預金口座 
+- 貯蓄口座 # 
+- 貯蓄勘定の数 
+- 貯蓄勘定 # 
+- 貯蓄勘定番号 
+- 普通預金口座番号 
+- 引き落とし口座番号 
 - 口座番号 
-- 口座番号＃
- 
-- デビットのacct番号
- 
-- デビット勘定＃
- 
-- デビットACCTの番号
- 
-- デビット口座番号
- 
+- 口座番号 # 
+- デビットのacct番号 
+- デビット勘定 # 
+- デビットACCTの番号 
+- デビット口座番号 
 
 #### <a name="keywordjpbankbranchcode"></a>Keyword_jp_bank_branch_code
 
@@ -4482,7 +3612,7 @@ Otemachi
 
 ## <a name="japan-drivers-license-number"></a>日本驾驶证号码
 
-### <a name="format"></a>格式
+### <a name="format"></a>Format
 
 12 个数字
 
@@ -4514,9 +3644,9 @@ Otemachi
 
 #### <a name="keywordjpdriverslicensenumber"></a>Keyword_jp_drivers_license_number
 
-- dl# 
 - 通讯 
-- dls# 
+- 通讯 
+- dls 
 - DLS 
 - driver license 
 - driver licenses 
@@ -4524,32 +3654,25 @@ Otemachi
 - driver's license 
 - drivers licenses 
 - driver's licenses 
-- driving licence
- 
-- lic# 
+- driving licence 
 - .lic 
-- lics# 
-- 状态 id 
-- state identification
- 
-- state identification number
- 
-- 低所得国＃
- 
+- .lic 
+- driver'lics 
+- state id 
+- state identification 
+- state identification number 
+- 低所得国 # 
 - 免許証 
 - 状態ID
-- 
-状態の識別
- 
-- 状態の識別番号
- 
+- 状態の識別 
+- 状態の識別番号 
 - 運転免許 
 - 運転免許証 
 - 運転免許証番号 
    
 ## <a name="japan-passport-number"></a>日本护照号码
 
-### <a name="format"></a>格式
+### <a name="format"></a>Format
 
 两个字母后跟七个数字
 
@@ -4581,18 +3704,14 @@ Otemachi
 
 #### <a name="keywordjppassport"></a>Keyword_jp_passport
 
-- パスポート
- 
-- パスポート番号
- 
-- パスポートのNum
- 
-- パスポート＃
- 
+- パスポート 
+- パスポート番号 
+- パスポートのNum 
+- パスポート # 
    
 ## <a name="japan-resident-registration-number"></a>日本居民登记号码
 
-### <a name="format"></a>格式
+### <a name="format"></a>Format
 
 11 个数字
 
@@ -4625,31 +3744,21 @@ Otemachi
 #### <a name="keywordjpresidentregistrationnumber"></a>Keyword_jp_resident_registration_number
 
 - Resident Registration Number
-- Resident Register Number
- 
-- Residents Basic Registry Number
- 
-- Resident Registration No.
- 
-- Resident Register No.
- 
-- Residents Basic Registry No.
- 
-- Basic Resident Register No.
- 
-- 住民登録番号、登録番号をレジデント
- 
-- 住民基本登録番号、登録番号
- 
-- 住民基本レジストリ番号を常駐
- 
-- 登録番号を常駐住民基本台帳登録番号
- 
+- Resident Register Number 
+- Residents Basic Registry Number 
+- Resident Registration No. 
+- Resident Register No. 
+- Residents Basic Registry No. 
+- Basic Resident Register No. 
+- 住民登録番号、登録番号をレジデント 
+- 住民基本登録番号、登録番号 
+- 住民基本レジストリ番号を常駐 
+- 登録番号を常駐住民基本台帳登録番号 
 
    
 ## <a name="japan-social-insurance-number-sin"></a>日本社会保险号码 (SIN)
 
-### <a name="format"></a>格式
+### <a name="format"></a>Format
 
 7-12 个数字 
 
@@ -4693,20 +3802,15 @@ Otemachi
 
 #### <a name="keywordjpsin"></a>Keyword_jp_sin
 
-- Social Insurance No.
- 
-- Social Insurance Num
- 
-- Social Insurance Number
- 
-- 社会保険のテンキー
- 
-- 社会保険番号
- 
+- Social Insurance No. 
+- Social Insurance Num 
+- Social Insurance Number 
+- 社会保険のテンキー 
+- 社会保険番号 
 
 ## <a name="japanese-residence-card-number"></a>日本住宅电话卡号
 
-### <a name="format"></a>格式
+### <a name="format"></a>Format
 
 12个字母和数字
 
@@ -4748,7 +3852,7 @@ Otemachi
    
 ## <a name="malaysia-id-card-number"></a>马拉西亚身份证号码
 
-### <a name="format"></a>格式
+### <a name="format"></a>Format
 
 12 个数字（包含可选连字符）
 
@@ -4792,7 +3896,7 @@ Otemachi
 - i/c 否
 - ic
 - 内部公司编号
-- id 卡片
+- id card
 - 标识卡
 - identity card
 - k/p
@@ -4814,7 +3918,7 @@ Otemachi
    
 ## <a name="netherlands-citizens-service-bsn-number"></a>荷兰公民服务 (BSN) 号码
 
-### <a name="format"></a>格式
+### <a name="format"></a>Format
 
 8-9 个数字（包含可选空格）
 
@@ -4854,24 +3958,17 @@ Otemachi
 
 #### <a name="keywordnetherlandsbsn"></a>Keyword_netherlands_bsn
 
-- Citizen service number
- 
-- BSN
-
- 
-- Burgerservicenummer
- 
-- Sofinummer
- 
-- Persoonsgebonden nummer
- 
-- Persoonsnummer
-    
+- Citizen service number 
+- BSN 
+- Burgerservicenummer 
+- Sofinummer 
+- Persoonsgebonden nummer 
+- Persoonsnummer    
 
    
 ## <a name="new-zealand-ministry-of-health-number"></a>新西兰卫生部号码
 
-### <a name="format"></a>格式
+### <a name="format"></a>Format
 
 三个字母、一个空格（可选）以及四个数字
 
@@ -4906,16 +4003,14 @@ Otemachi
 
 Keyword_nz_terms
 
-- NHI
- 
-- 新西兰 
+- NHI 
+- New Zealand 
 - 运行状况 
-- treatment
- 
+- 治疗 
    
 ## <a name="norway-identification-number"></a>挪威身份证号
 
-### <a name="format"></a>格式
+### <a name="format"></a>Format
 
 11 个数字
 
@@ -4960,22 +4055,22 @@ Keyword_nz_terms
 - Personal identification number
 - Norwegian ID Number
 - ID Number
-- Identification
+- id
 - Personnummer
 - Fødselsnummer
 
    
 ## <a name="philippines-unified-multi-purpose-id-number"></a>菲律宾统一多用途身份证号码
 
-### <a name="format"></a>格式
+### <a name="format"></a>Format
 
 12 个数字，通过连字符分隔 
 
 ### <a name="pattern"></a>模式
 
 12 个数字：
-- 四个数字  
-- 一个连字符 
+- 四个数字 
+- 一个连字符  
 - 七个数字  
 - 一个连字符  
 - 一个数字
@@ -4984,7 +4079,7 @@ Keyword_nz_terms
 
 否
 
-### <a name="definition"></a>Definition
+### <a name="definition"></a>定义
 
 在 300 个字符的相似度内，如果出现以下情况，DLP 策略 75% 确信它检测到这种类型的敏感信息：
 - 正则表达式 Regex_philippines_unified_id 找到与该模式匹配的内容。
@@ -5004,16 +4099,14 @@ Keyword_nz_terms
    
 #### <a name="keywordphilippinesid"></a>Keyword_philippines_id
 
-- Unified Multi-Purpose ID
- 
-- UMID
- 
+- Unified Multi-Purpose ID 
+- UMID 
 - Identity Card 
 - Pinag-isang Multi-Layunin ID
    
 ## <a name="poland-identity-card"></a>波兰身份证
 
-### <a name="format"></a>格式
+### <a name="format"></a>Format
 
 三个字母和六个数字
 
@@ -5027,7 +4120,9 @@ Keyword_nz_terms
 
 ### <a name="definition"></a>定义
 
-DLP 策略 75% 确信在300个字符的邻近度内检测到此类型的敏感信息: 函数 Func_polish_national_id 找到与该模式匹配的内容。找到 Keyword_polish_national_id_passport_number 中的关键字。校验和通过。
+DLP 策略 75% 确信在300个字符的邻近度内检测到此类型的敏感信息: 函数 Func_polish_national_id 找到与该模式匹配的内容。
+找到 Keyword_polish_national_id_passport_number 中的一个关键字。
+校验和通过。
 
 ```
 <!-- Poland Identity Card-->
@@ -5048,16 +4143,13 @@ DLP 策略 75% 确信在300个字符的邻近度内检测到此类型的敏感�
 - Nazwa i 器 dowodu osobistego
 - Nazwa i nr dowodu osobistego
 - Nazwa i nr dowodu tożsamości
-
 - Dowód Tożsamości
-
 - dow. os.
-
 
    
 ## <a name="poland-national-id-pesel"></a>波兰国家/地区 ID (PESEL)
 
-### <a name="format"></a>格式
+### <a name="format"></a>Format
 
 11 个数字
 
@@ -5096,7 +4188,7 @@ DLP 策略 75% 确信在300个字符的邻近度内检测到此类型的敏感�
    
 ## <a name="poland-passport"></a>波兰护照
 
-### <a name="format"></a>格式
+### <a name="format"></a>Format
 
 两个字母和七个数字
 
@@ -5131,15 +4223,15 @@ DLP 策略 75% 确信在300个字符的邻近度内检测到此类型的敏感�
 #### <a name="keywordpolishnationalidpassportnumber"></a>Keyword_polish_national_id_passport_number
 
 - 器 paszportu
-- Nr. Paszportu
+- führerschein-nr. Paszportu
 - Paszport
 
    
 ## <a name="portugal-citizen-card-number"></a>葡萄牙公民身份证号
 
-### <a name="format"></a>格式
+### <a name="format"></a>Format
 
-八位数字
+八个数字
 
 ### <a name="pattern"></a>模式
 
@@ -5177,7 +4269,7 @@ DLP 策略 75% 确信在300个字符的邻近度内检测到此类型的敏感�
    
 ## <a name="saudi-arabia-national-id"></a>沙特阿拉伯国家 ID
 
-### <a name="format"></a>格式
+### <a name="format"></a>Format
 
 10 个数字
 
@@ -5189,7 +4281,7 @@ DLP 策略 75% 确信在300个字符的邻近度内检测到此类型的敏感�
 
 否
 
-### <a name="definition"></a>Definition
+### <a name="definition"></a>定义
 
 在 300 个字符的相似度内，如果出现以下情况，DLP 策略 75% 确信它检测到这种类型的敏感信息：
 - 正则表达式 Regex_saudi_arabia_national_id 找到与该模式匹配的内容。
@@ -5211,18 +4303,15 @@ DLP 策略 75% 确信在300个字符的邻近度内检测到此类型的敏感�
 
 #### <a name="keywordsaudiarabianationalid"></a>Keyword_saudi_arabia_national_id
 
-- Identification Card
- 
-- I card number
- 
-- ID 号 
-- الوطنية الهوية بطاقة رقم
- 
+- Identification Card 
+- I card number 
+- ID number 
+- الوطنية الهوية بطاقة رقم 
 
    
 ## <a name="singapore-national-registration-identity-card-nric-number"></a>新加坡国家登记身份证 (NRIC) 号
 
-### <a name="format"></a>格式
+### <a name="format"></a>Format
 
 九个字母和数字
 
@@ -5265,25 +4354,18 @@ DLP 策略 75% 确信在300个字符的邻近度内检测到此类型的敏感�
    
 #### <a name="keywordsingaporenric"></a>Keyword_singapore_nric
 
-- National Registration Identity Card
- 
-- Identity Card Number
- 
-- NRIC
- 
-- IC
- 
-- Foreign Identification Number
- 
-- FIN
- 
-- 身份证  
-- 身份證
- 
+- National Registration Identity Card 
+- Identity Card Number 
+- NRIC 
+- IC 
+- Foreign Identification Number 
+- FIN 
+- 身份证 
+- 證 
    
 ## <a name="south-africa-identification-number"></a>南非身份证号
 
-### <a name="format"></a>格式
+### <a name="format"></a>Format
 
 13 个数字（可能包含空格）
 
@@ -5291,7 +4373,7 @@ DLP 策略 75% 确信在300个字符的邻近度内检测到此类型的敏感�
 
 13 个数字：
 - 六个数字，采用  YYMMDD 格式，代表出生日期  
-- 四个数字  
+- 四个数字 
 - 一位公民指示码  
 - 数字“8”或“9”  
 - 一个数字，是校验位
@@ -5323,11 +4405,11 @@ DLP 策略 75% 确信在300个字符的邻近度内检测到此类型的敏感�
 
 - Identity card
 - ID
-- Identification 
+- id 
    
 ## <a name="south-korea-resident-registration-number"></a>韩国居民注册号码
 
-### <a name="format"></a>格式
+### <a name="format"></a>Format
 
 13 个数字（包含连字符）
 
@@ -5373,26 +4455,22 @@ DLP 策略 75% 确信在300个字符的邻近度内检测到此类型的敏感�
    
 #### <a name="keywordsouthkorearesidentnumber"></a>Keyword_south_korea_resident_number
 
-- National ID card
- 
-- Citizen's Registration Number
- 
-- Jumin deungnok beonho
- 
-- RRN
- 
+- National ID card 
+- Citizen's Registration Number 
+- Jumin deungnok beonho 
+- RRN 
 - 주민등록번호
    
 ## <a name="spain-social-security-number-ssn"></a>西班牙社会保险号码 (SSN)
 
-### <a name="format"></a>格式
+### <a name="format"></a>Format
 
 11-12 个数字
 
 ### <a name="pattern"></a>模式
 
 11-12 位数:
-- 两个数字  
+- 两位数字 
 - 正斜杠（可选） 
 - 7-8 位数字 
 - 正斜杠（可选） 
@@ -5419,11 +4497,11 @@ DLP 策略 75% 确信在300个字符的邻近度内检测到此类型的敏感�
 
 ### <a name="keywords"></a>关键字
 
-无
+None
    
 ## <a name="sweden-national-id"></a>瑞典国家 ID
 
-### <a name="format"></a>格式
+### <a name="format"></a>Format
 
 10 个或 12 个数字和一个可选分隔符
 
@@ -5433,7 +4511,7 @@ DLP 策略 75% 确信在300个字符的邻近度内检测到此类型的敏感�
 - 2-4 位数字（可选） 
 - 采用日期格式 YYMMDD 的六位数字 
 - “-”或“+”（可选）的分隔符，加
-- 四位数字
+- 四个数字
 
 ### <a name="checksum"></a>校验和
 
@@ -5460,7 +4538,7 @@ DLP 策略 75% 确信在300个字符的邻近度内检测到此类型的敏感�
    
 ## <a name="sweden-passport-number"></a>瑞典护照号码
 
-### <a name="format"></a>格式
+### <a name="format"></a>Format
 
 八个数字
 
@@ -5497,63 +4575,40 @@ DLP 策略 75% 确信在300个字符的邻近度内检测到此类型的敏感�
    
 #### <a name="keywordswedenpassport"></a>Keyword_sweden_passport
 
-- visa requirements
- 
-- Alien Registration Card
- 
-- Schengen visas
- 
-- Schengen visa
- 
-- Visa Processing
- 
-- Visa Type
- 
-- Single Entry
- 
-- Multiple Entry
- 
-- G3 Processing Fees
-
- 
+- visa requirements 
+- Alien Registration Card 
+- Schengen visas 
+- Schengen visa 
+- Visa Processing 
+- Visa Type 
+- Single Entry 
+- Multiple Entry 
+- G3 Processing Fees 
 
 #### <a name="keywordpassport"></a>Keyword_passport
 
 - Passport Number 
-- 
-Passport No 
-- Passport #
- 
-- Passport#
- 
+- Passport No 
+- Passport # 
+- 登记卡 
 - PassportID 
-- Passportno
- 
-- passportnumber
- 
+- Passportno 
+- passportnumber 
 - パスポート 
-- パスポート番号
- 
-- パスポートのNum
- 
-- パスポート＃
- 
+- パスポート番号 
+- パスポートのNum 
+- パスポート # 
 - Numéro de passeport 
-- 
-Passeport n ° 
-- Passeport Non
- 
-- Passeport #
- 
-- Passeport#
- 
+- Passeport n ° 
+- Passeport Non 
+- Passeport # 
+- Passeport # 
 - PasseportNon 
-- Passeportn °
- 
+- Passeportn ° 
    
 ## <a name="swift-code"></a>SWIFT 代码
 
-### <a name="format"></a>格式
+### <a name="format"></a>Format
 
 四个字母后跟 5-31 个字母或数字
 
@@ -5589,64 +4644,41 @@ Passeport n °
    
 #### <a name="keywordswift"></a>Keyword_swift
 
-- international organization for standardization 9362
- 
-- iso 9362
- 
+- international organization for standardization 9362 
+- iso 9362 
 - iso9362 
 - 反应\# 
-- swiftcode
- 
-- swiftnumber
- 
-- swiftroutingnumber
- 
-- swift 代码 
-- swift number #
- 
-- swift routing number
- 
-- bic number
- 
-- bic code
- 
+- swiftcode 
+- swiftnumber 
+- swiftroutingnumber 
+- swift code 
+- swift number # 
+- swift routing number 
+- bic number 
+- bic code 
 - numéro\# 
 - numéro\# 
-- bank identifier code
- 
+- bank identifier code 
 - 標準化9362 
-- 迅速＃
- 
-- SWIFTコード
- 
-- SWIFT番号
- 
-- 迅速なルーティング番号
- 
-- BIC番号
- 
-- BICコード
- 
-- 銀行識別コードのための国際組織
- 
-- Organisation internationale de normalisation 9362
- 
+- 迅速 # 
+- SWIFTコード 
+- SWIFT番号 
+- 迅速なルーティング番号 
+- BIC番号 
+- BICコード 
+- 銀行識別コードのための国際組織 
+- Organisation internationale de normalisation 9362 
 - rapide\# 
-- code SWIFT
- 
-- le numéro de swift
- 
-- swift numéro d'acheminement
- 
-- le numéro BIC
- 
+- code SWIFT 
+- le numéro de swift 
+- swift numéro d'acheminement 
+- le numéro BIC 
 - \#numéro 
-- code identificateur de banque
- 
+- code identificateur de banque 
    
 ## <a name="taiwan-national-id"></a>台湾国家/地区 ID
 
-### <a name="format"></a>格式
+### <a name="format"></a>Format
 
 一个字母后跟九个数字
 
@@ -5682,37 +4714,24 @@ Passeport n °
 
 #### <a name="keywordtaiwanesenationalid"></a>Keyword_taiwanese_national_id
 
-- 身份證字號
- 
-- 身份證
- 
-- 身份證號碼
- 
-- 身份證號
- 
-- 身分證字號
- 
-- 身分證  
-- 身分證號碼
- 
-- 身份證號
- 
-- 身分證統一編號
- 
-- 國民身分證統一編號
- 
-- 簽名
- 
-- 蓋章
- 
-- 簽名或蓋章
-
- 
+- 身份證字號 
+- 證 
+- 身份證號碼 
+- 身份證號 
+- 身分證字號 
+- 身分證 
+- 身分證號碼 
+- 身份證號 
+- 身分證統一編號 
+- 國民身分證統一編號 
+- 簽名 
+- 蓋章 
+- 簽名或蓋章 
 - 簽章   
    
 ## <a name="taiwan-passport-number"></a>	台湾护照号码
 
-### <a name="format"></a>格式
+### <a name="format"></a>Format
 
 - 生物识别护照号码: 9 个数字
 - 不带生物的护照号码: 9 个数字
@@ -5729,7 +4748,7 @@ Passeport n °
 
 否
 
-### <a name="definition"></a>Definition
+### <a name="definition"></a>定义
 
 在 300 个字符的相似度内，如果出现以下情况，DLP 策略 75% 确信它检测到这种类型的敏感信息：
 - 正则表达式 Regex_taiwan_passport 找到与该模式匹配的内容。
@@ -5749,23 +4768,18 @@ Passeport n °
 
 #### <a name="keywordtaiwanpassport"></a>Keyword_taiwan_passport
 
-- 台湾 passport number
- 
-- 护照号码 
-- 护照号 
-- Passport Num
- 
-- Passport #
- 
-- 护照
- 
-- 中華民國護照
- 
+- ROC passport number 
+- Passport number 
+- Passport no 
+- Passport Num 
+- Passport # 
+- 护照 
+- 中華民國護照 
 - Zhōnghuá Mínguó hùzhào
    
 ## <a name="taiwan-resident-certificate-arctarc-number"></a>台湾居民证 (ARC/TARC) 号码
 
-### <a name="format"></a>格式
+### <a name="format"></a>Format
 
 10 letters and digits
 
@@ -5779,7 +4793,7 @@ Passeport n °
 
 否
 
-### <a name="definition"></a>Definition
+### <a name="definition"></a>定义
 
 在 300 个字符的相似度内，如果出现以下情况，DLP 策略 75% 确信它检测到这种类型的敏感信息：
 - 正则表达式 Regex_taiwan_resident_certificate 找到与该模式匹配的内容。
@@ -5799,29 +4813,21 @@ Passeport n °
 
 #### <a name="keywordtaiwanresidentcertificate"></a>Keyword_taiwan_resident_certificate
 
-- Resident Certificate
- 
-- 驻留证书 
-- Resident Cert.
- 
-- 标识卡 
-- Alien Resident Certificate
- 
+- Resident Certificate 
+- Resident Cert 
+- Resident Cert. 
+- Identification card 
+- Alien Resident Certificate 
 - ARC 
-- Taiwan Area Resident Certificate
- 
-- TARC
- 
-- 居留證
- 
-- 外僑居留證
- 
-- 台灣地區居留證
- 
+- Taiwan Area Resident Certificate 
+- TARC 
+- 居留證 
+- 外僑居留證 
+- 台灣地區居留證 
 
 ## <a name="thai-population-identification-code"></a>泰语填充标识代码
 
-### <a name="format"></a>格式
+### <a name="format"></a>Format
 
 13 位数字
 
@@ -5870,7 +4876,7 @@ Passeport n °
   
 ## <a name="turkish-national-identification-number"></a>土耳其国家标识号码
 
-### <a name="format"></a>格式
+### <a name="format"></a>Format
 
 11 个数字
 
@@ -5915,7 +4921,7 @@ Passeport n °
 
 ## <a name="uk-drivers-license-number"></a>英国驾驶证号码
 
-### <a name="format"></a>格式
+### <a name="format"></a>Format
 
 特定格式的 18 个字母和数字组合
 
@@ -5953,39 +4959,25 @@ Passeport n °
 
 #### <a name="keywordukdriverslicense"></a>Keyword_uk_drivers_license
 
-- DVLA
- 
-- light vans
- 
-- quadbikes
- 
-- motor cars
- 
+- DVLA 
+- light vans 
+- quadbikes 
+- motor cars 
 - 125cc 
-- sidecar
- 
-- tricycles
- 
-- motorcycles
- 
-- photocard licence
- 
-- learner drivers
- 
-- licence holder
- 
-- licence holders
- 
-- driving licences
- 
-- driving licence
- 
-- dual control car
- 
+- sidecar 
+- tricycles 
+- motorcycles 
+- photocard licence 
+- learner drivers 
+- licence holder 
+- licence holders 
+- driving licences 
+- driving licence 
+- dual control car 
    
 ## <a name="uk-electoral-roll-number"></a>英国选民名册号码
 
-### <a name="format"></a>格式
+### <a name="format"></a>Format
 
 两个字母后跟 1-4 个数字
 
@@ -5997,7 +4989,7 @@ Passeport n °
 
 否
 
-### <a name="definition"></a>Definition
+### <a name="definition"></a>定义
 
 在 300 个字符的相似度内，如果出现以下情况，DLP 策略 75% 确信它检测到这种类型的敏感信息：
 - 正则表达式 Regex_uk_electoral 找到与该模式匹配的内容。
@@ -6019,19 +5011,15 @@ Passeport n °
 
 #### <a name="keywordukelectoral"></a>Keyword_uk_electoral
 
-- council nomination
- 
-- nomination form
- 
-- electoral register
-
- 
+- council nomination 
+- nomination form 
+- electoral register 
 - electoral roll
 
    
 ## <a name="uk-national-health-service-number"></a>英国国家卫生服务号码
 
-### <a name="format"></a>格式
+### <a name="format"></a>Format
 
 10-17 个数字，通过空格分隔 
 
@@ -6076,40 +5064,29 @@ Passeport n °
    
 #### <a name="keyworduknhsnumber"></a>Keyword_uk_nhs_number
 
-- national health service
- 
-- nhs
- 
-- health services authority
-
- 
+- national health service 
+- nhs 
+- health services authority 
 - health authority
 
 #### <a name="keyworduknhsnumber1"></a>Keyword_uk_nhs_number1
 
-- patient id
- 
-- patient identification
- 
-- patient no
-
- 
+- patient id 
+- patient identification 
+- patient no 
 - patient number
 
 #### <a name="keyworduknhsnumberdob"></a>Keyword_uk_nhs_number_dob
 
 - GP 
-- DOB
- 
+- DOB 
 - D. B。 
-- Date of Birth
- 
-- Birth Date
- 
+- Date of Birth 
+- Birth Date 
    
 ## <a name="uk-national-insurance-number-nino"></a>英国国家保险号码 (NINO)
 
-### <a name="format"></a>格式
+### <a name="format"></a>Format
 
 由空格或短划线分隔的7个字符或9个字符
 
@@ -6169,33 +5146,22 @@ Passeport n °
 
 #### <a name="keyworduknino"></a>Keyword_uk_nino
 
-- national insurance number
- 
-- national insurance contributions
- 
-- protection act
- 
-- insurance
- 
-- social security number
- 
-- insurance application
- 
-- medical application
- 
-- social insurance
- 
-- medical attention
- 
-- 社会保障 
-- great britain
- 
-- insurance
-    
+- national insurance number 
+- national insurance contributions 
+- protection act 
+- 方面 
+- social security number 
+- insurance application 
+- medical application 
+- social insurance 
+- medical attention 
+- social security 
+- great britain 
+- 方面    
    
 ## <a name="us--uk-passport-number"></a>美国/英国护照号码
 
-### <a name="format"></a>格式
+### <a name="format"></a>Format
 
 九个数字
 
@@ -6227,40 +5193,27 @@ Passeport n °
 #### <a name="keywordpassport"></a>Keyword_passport
 
 - Passport Number 
-- 
-Passport No 
-- Passport #
- 
-- Passport#
- 
+- Passport No 
+- Passport # 
+- 登记卡 
 - PassportID 
-- Passportno
- 
-- passportnumber
- 
+- Passportno 
+- passportnumber 
 - パスポート 
-- パスポート番号
- 
-- パスポートのNum
- 
-- パスポート＃
- 
+- パスポート番号 
+- パスポートのNum 
+- パスポート # 
 - Numéro de passeport 
-- 
-Passeport n ° 
-- Passeport Non
- 
-- Passeport #
- 
-- Passeport#
- 
+- Passeport n ° 
+- Passeport Non 
+- Passeport # 
+- Passeport # 
 - PasseportNon 
-- Passeportn °
- 
+- Passeportn ° 
    
 ## <a name="us-bank-account-number"></a>美国银行帐号
 
-### <a name="format"></a>格式
+### <a name="format"></a>Format
 
 8-17 个数字
 
@@ -6292,71 +5245,44 @@ Passeport n °
 
 #### <a name="keywordusabankaccount"></a>Keyword_usa_Bank_Account
 
-- Checking Account Number
- 
-- Checking Account
- 
-- Checking Account #
- 
-- Checking Acct Number
- 
-- Checking Acct #
- 
-- Checking Acct No.
- 
-- Checking Account No.
- 
-- Bank Account Number
- 
-- Bank Account #
- 
-- Bank Acct Number
- 
-- Bank Acct #
- 
-- Bank Acct No.
- 
-- Bank Account No.
- 
-- Savings Account Number
- 
-- Savings Account.
- 
-- Savings Account #
- 
-- Savings Acct Number
- 
-- Savings Acct #
- 
-- Savings Acct No.
- 
-- Savings Account No.
- 
-- Debit Account Number
- 
-- Debit Account
- 
-- Debit Account #
- 
-- Debit Acct Number
- 
-- Debit Acct #
- 
-- Debit Acct No.
- 
-- Debit Account No.
- 
+- Checking Account Number 
+- Checking Account 
+- Checking Account # 
+- Checking Acct Number 
+- Checking Acct # 
+- Checking Acct No. 
+- Checking Account No. 
+- Bank Account Number 
+- Bank Account # 
+- Bank Acct Number 
+- Bank Acct # 
+- Bank Acct No. 
+- Bank Account No. 
+- Savings Account Number 
+- Savings Account. 
+- Savings Account # 
+- Savings Acct Number 
+- Savings Acct # 
+- Savings Acct No. 
+- Savings Account No. 
+- Debit Account Number 
+- Debit Account 
+- Debit Account # 
+- Debit Acct Number 
+- Debit Acct # 
+- Debit Acct No. 
+- Debit Account No. 
    
 ## <a name="us-drivers-license-number"></a>美国驾驶证号码
 
-### <a name="format"></a>格式
+### <a name="format"></a>Format
 
 取决于州
 
 ### <a name="pattern"></a>模式
 
 取决于州 — 例如，纽约：
-- 诸如 ddd ddd ddd 的 9 个数字的格式将匹配。
+- 与 ddd ddd ddd 相匹配的9个数字的格式将会匹配。
 - 诸如 dddddddd 的 9 个数字将不匹配。
 
 ### <a name="checksum"></a>校验和
@@ -6396,30 +5322,22 @@ Passeport n °
 
 #### <a name="keywordusdriverslicenseabbreviations"></a>Keyword_us_drivers_license_abbreviations
 
-- DL 
+- 通讯 
 - DLS 
 - 采用 
 - CDLS 
 - ID 
 - id 
-- DL# 
-- 
-DLS#
- 
-- CDL#
- 
-- CDLS#
- 
-- ID#
-- 
-IDs#
- 
-- ID 号 
-- ID numbers
- 
+- 通讯 
+- DLS 
+- 采用 
+- CDLS # 
+- 号
+- id 
+- ID number 
+- ID numbers 
 - .lic 
-- LIC#
- 
+- .lic 
 
 #### <a name="keywordusdriverslicense"></a>Keyword_us_drivers_license
 
@@ -6427,115 +5345,93 @@ IDs#
 - DriverLics 
 - DriverLicense 
 - DriverLicenses 
-- 驱动程序许可证 
-- 驱动程序 driver'lics 
-- 驱动程序许可证 
-- 驱动程序许可证 
+- Driver Lic 
+- Driver Lics 
+- Driver License 
+- Driver Licenses 
 - DriversLic 
 - DriversLics 
 - DriversLicense 
 - DriversLicenses 
-- 驱动程序许可证 
-- 驱动程序 driver'lics 
-- 驱动程序许可证 
-- 驱动程序许可证 
+- Drivers Lic 
+- Drivers Lics 
+- Drivers License 
+- Drivers Licenses 
 - Driver'Lic 
 - Driver'Lics 
 - Driver'License 
 - Driver'Licenses 
-- 驱动程序 "许可证 
-- 驱动程序 "driver'lics 
-- 驱动程序 ' License 
-- 驱动程序的许可证
+- Driver' Lic 
+- Driver' Lics 
+- Driver' License 
+- Driver' Licenses
 - Driver'sLic 
 - Driver'sLics 
 - Driver'sLicense 
 - Driver'sLicenses 
-- 驱动程序的许可证 
-- 驱动程序的 driver'lics 
-- 驾驶执照 
-- 驾驶许可证 
-- identification number
- 
-- identification numbers
- 
-- identification #
- 
-- id 卡片 
-- id 卡 
-- 标识卡 
-- 识别卡 
+- Driver's Lic 
+- Driver's Lics 
+- Driver's License 
+- Driver's Licenses 
+- identification number 
+- identification numbers 
+- identification # 
+- id card 
+- id cards 
+- identification card 
+- identification cards 
 - DriverLic # 
 - DriverLics # 
 - DriverLicense # 
 - DriverLicenses # 
 - Driver Lic# 
-- 
-Driver Lics#
- 
-- 驱动程序许可证 # 
-- 驱动程序许可证 # 
+- Driver Lics# 
+- Driver License# 
+- Driver Licenses# 
 - DriversLic # 
 - DriversLics # 
 - DriversLicense # 
 - DriversLicenses # 
-- 驱动程序许可证数量 
-- 驱动程序 driver'lics # 
-- 驱动程序许可证 # 
-- 驱动程序许可证 # 
-- Driver'Lic#
- 
-- Driver'Lics#
- 
-- Driver'License#
- 
-- Driver'Licenses#
- 
-- Driver' Lic#
- 
-- Driver' Lics#
- 
-- Driver' License#
- 
-- Driver' Licenses#
- 
+- Drivers Lic# 
+- Drivers Lics# 
+- Drivers License# 
+- Drivers Licenses# 
+- Driver'Lic # 
+- Driver'Lics # 
+- Driver'License # 
+- Driver'Licenses # 
+- Driver' Lic# 
+- Driver' Lics# 
+- Driver' License# 
+- Driver' Licenses# 
 - Driver'sLic # 
 - Driver'sLics # 
 - Driver'sLicense # 
 - Driver'sLicenses # 
-- Driver's Lic#
- 
-- Driver's Lics#
- 
-- Driver's License#
- 
-- Driver's Licenses#
- 
-- id 卡 # 
-- id cards#
- 
-- identification card#
- 
-- identification cards#
- 
+- Driver's Lic# 
+- Driver's Lics# 
+- Driver's License# 
+- Driver's Licenses# 
+- id card# 
+- id cards# 
+- identification card# 
+- identification cards# 
 
 
-#### <a name="keywordstatenamedriverslicensename"></a>Keyword_[state_name]_drivers_license_name
+#### <a name="keywordstatenamedriverslicensename"></a>Keyword_ [state_name] _drivers_license_name
 
-- 州缩写（例如，“NY”）
- 
-- 州名称（例如，“New York”）
-    
+- 州缩写（例如，“NY”） 
+- 州名称（例如，“New York”）    
    
 ## <a name="us-individual-taxpayer-identification-number-itin"></a>美国单独的纳税人标识号 (ITIN)
 
-### <a name="format"></a>格式
+### <a name="format"></a>Format
 
 九个数字，以“9”开头，“7”或“8”作为第四个数字，可以采用空格或短划线格式
 
 ### <a name="pattern"></a>模式
 
-有格式模式：
+格式
 - 数字“9” 
 - 两位数字 
 - 一个空格或破折号 
@@ -6544,7 +5440,7 @@ Driver Lics#
 - 一个空格或破折号 
 - 四位数字
 
-无格式模式：
+纯
 - 数字“9” 
 - 两位数字 
 - “7”或“8” 
@@ -6599,42 +5495,30 @@ Driver Lics#
 
 #### <a name="keyworditin"></a>Keyword_itin
 
-- taxpayer
- 
-- tax id
- 
-- tax identification
- 
-- itin
- 
+- 报税 
+- tax id 
+- tax identification 
+- itin 
 - ssn 
-- tin
- 
-- 社会保障 
-- tax payer
- 
-- itins
- 
-- taxid
-
- 
-- individual taxpayer
- 
+- 锡 
+- social security 
+- tax payer 
+- itins 
+- taxid 
+- individual taxpayer 
 
 #### <a name="keyworditincollaborative"></a>Keyword_itin_collaborative
 
 - License 
-- DL 
-- DOB
- 
+- 通讯 
+- DOB 
 - 出生日期 
-- 生日  
-- Date of Birth
- 
+- 生日 
+- Date of Birth 
    
 ## <a name="us-social-security-number-ssn"></a>美国社会保险号 (SSN)
 
-### <a name="format"></a>格式
+### <a name="format"></a>Format
 
 9 个数字，可以是格式化模式，也可以是非格式化模式
 
@@ -6706,20 +5590,13 @@ Driver Lics#
 
 #### <a name="keywordssn"></a>Keyword_ssn
 
-- Social Security
- 
-- Social Security#
- 
-- Soc Sec
- 
+- Social Security 
+- Social Security# 
+- Soc Sec 
 - SSN 
-- SSNS
- 
-- SSN#
- 
-- SS#
- 
-- SSID
- 
+- ssn 
+- SSN 
+- SS 
+- SSID 
    
 

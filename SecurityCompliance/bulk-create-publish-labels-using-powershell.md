@@ -6,18 +6,19 @@ ms.date: 1/17/2018
 ms.audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
-ms.collection: M365-security-compliance
+ms.collection:
+- M365-security-compliance
 localization_priority: Priority
 search.appverid:
 - MOE150
 - MET150
 description: 在 Office 365 中，可使用标签为组织实现保留计划。记录管理者或合规部主管可能需要创建和发布数百个标签。为此，可使用安全与合规中心 UI，但一次只能创建一个标签，这样既费时又低效。使用下面的脚本和 .csv 文件，可批量创建和发布标签及标签策略。首先，在 Excel 中创建标签列表和标签策略列表。然后，使用 PowerShell 批量创建这些列表中的标签和标签策略。这样就可以更轻松地一次性创建和发布保留计划所需的全部标签。
-ms.openlocfilehash: 273dbcd705792769b13a997ae6ca0bd5faaee31c
-ms.sourcegitcommit: ed822a776d3419853453583e882f3c61ca26d4b2
+ms.openlocfilehash: 982ce21a0cbd1c465f6e04db52e10022a4980c5b
+ms.sourcegitcommit: 6aa82374eef09d2c1921f93bda3eabeeb28aadeb
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2019
-ms.locfileid: "30410767"
+ms.lasthandoff: 03/06/2019
+ms.locfileid: "30454894"
 ---
 # <a name="bulk-create-and-publish-retention-labels-by-using-powershell"></a>使用 PowerShell 批量创建和发布保留标签
 

@@ -10,16 +10,17 @@ f1_keywords:
 - ms.o365.cc.DLPLandingPage
 ms.service: O365-seccomp
 localization_priority: Normal
-ms.collection: M365-security-compliance
+ms.collection:
+- M365-security-compliance
 search.appverid:
 - MET150
 description: 使用 office 365 安全&amp;合规中心中的数据丢失防护 (DLP) 策略, 可以在 office 365 中识别、监视和自动保护敏感信息。
-ms.openlocfilehash: 53f9e3b4fca296c35d4c07b912a9bd1d41e62fc8
-ms.sourcegitcommit: ed822a776d3419853453583e882f3c61ca26d4b2
+ms.openlocfilehash: 80416ba0a402e33ed8af6390d261d3224fa0be2f
+ms.sourcegitcommit: 6aa82374eef09d2c1921f93bda3eabeeb28aadeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2019
-ms.locfileid: "30410867"
+ms.lasthandoff: 03/06/2019
+ms.locfileid: "30455044"
 ---
 # <a name="overview-of-data-loss-prevention-policies"></a>数据丢失防护策略概述
 
@@ -495,7 +496,7 @@ Office 2016 中的 DLP 策略评估旨在不对程序的性能或处理内容的
     
   - [get-dlpdetailreport](http://go.microsoft.com/fwlink/?LinkID=799775&amp;clcid=0x409)
     
-## <a name="more-information"></a>详细信息
+## <a name="more-information"></a>更多信息
 
 - [从模板创建 DLP 策略](create-a-dlp-policy-from-a-template.md)
     
@@ -505,9 +506,9 @@ Office 2016 中的 DLP 策略评估旨在不对程序的性能或处理内容的
     
 - [DLP 策略模板包含的内容](what-the-dlp-policy-templates-include.md)
     
-- [敏感信息类型查找的内容](what-the-sensitive-information-types-look-for.md)
+- [敏感信息类型查找什么](what-the-sensitive-information-types-look-for.md)
     
-- [DLP 函数查找的内容](what-the-dlp-functions-look-for.md)
+- [DLP 函数查找什么](what-the-dlp-functions-look-for.md)
     
 - [创建自定义敏感信息类型](create-a-custom-sensitive-information-type.md)
     

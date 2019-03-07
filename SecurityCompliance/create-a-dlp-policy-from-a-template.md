@@ -10,16 +10,17 @@ f1_keywords:
 - ms.o365.cc.NewPolicyFromTemplate
 ms.service: O365-seccomp
 localization_priority: Normal
-ms.collection: M365-security-compliance
+ms.collection:
+- M365-security-compliance
 search.appverid:
 - MET150
 description: '开始使用 DLP 策略的最简单、最常见方法是，使用包含在 Office 365 中的模板之一。 '
-ms.openlocfilehash: 2a1802592edbc3cfbcc05f5db979a0b4c3988e0d
-ms.sourcegitcommit: ed822a776d3419853453583e882f3c61ca26d4b2
+ms.openlocfilehash: 7e07c79df8ff9b65e2b213b180c607008007550e
+ms.sourcegitcommit: 6aa82374eef09d2c1921f93bda3eabeeb28aadeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2019
-ms.locfileid: "30410947"
+ms.lasthandoff: 03/06/2019
+ms.locfileid: "30455254"
 ---
 # <a name="create-a-dlp-policy-from-a-template"></a>通过模板创建 DLP 策略
 
@@ -159,7 +160,7 @@ OneDrive for business 帐户使组织内的人员可以轻松协作和共享文�
   
 下面介绍了不同的状态及其含义。
   
-|**状态**|**说明**|
+|**Status**|**说明**|
 |:-----|:-----|
 |**正在启用...** <br/> |系统正在将策略部署到它所包含的内容源。策略尚未强制应用于所有源。  <br/> |
 |**测试并发送通知** <br/> |策略处于测试模式。不会应用规则中的操作，但可以收集策略匹配项，并通过使用 DLP 报告进行查看。有关策略匹配项的通知会发送给指定的收件人。  <br/> |

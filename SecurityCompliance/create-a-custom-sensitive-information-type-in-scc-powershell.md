@@ -7,18 +7,18 @@ ms.audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Priority
-ms.collection: M365-security-compliance
-ms. topic: article
+ms.collection:
+- M365-security-compliance
 search.appverid:
 - MOE150
 - MET150
 description: 了解如何在 Office 365 安全与合规中心创建并导入 DLP 的自定义敏感信息类型。
-ms.openlocfilehash: bd85b28bab8201291070a72df799bbaf28acaa28
-ms.sourcegitcommit: ed822a776d3419853453583e882f3c61ca26d4b2
+ms.openlocfilehash: 03121a76a7c7cf21d0ae21138c43bca594a7839b
+ms.sourcegitcommit: 6aa82374eef09d2c1921f93bda3eabeeb28aadeb
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2019
-ms.locfileid: "30410847"
+ms.lasthandoff: 03/06/2019
+ms.locfileid: "30455124"
 ---
 # <a name="create-a-custom-sensitive-information-type-in-office-365-security--compliance-center-powershell"></a>在 Office 365 安全与合规中心 PowerShell 中创建自定义敏感信息类型
 
