@@ -13,12 +13,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 使用 Office 365 中的敏感度标签，可以对敏感内容进行分类和保护，同时确保组织内人员的工作效率和协作能力不受阻碍。敏感度标签可用于强制执行保护设置，如对已标记内容设置加密或水印。
-ms.openlocfilehash: 6f624308e7cbfb7aae738e0c08505412314200e7
-ms.sourcegitcommit: 0a1ce1ac45672d1d98eb7dbcfd4f0179d9eb4509
+ms.openlocfilehash: 05f53c508126962d36be3e131413d5a4314875a9
+ms.sourcegitcommit: 6aa82374eef09d2c1921f93bda3eabeeb28aadeb
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2019
-ms.locfileid: "30412950"
+ms.lasthandoff: 03/06/2019
+ms.locfileid: "30455024"
 ---
 # <a name="overview-of-sensitivity-labels"></a>敏感度标签概述
 
