@@ -13,16 +13,17 @@ search.appverid:
 - MET150
 ms.assetid: dc4f704c-6fcc-4cab-9a02-95a824e4fb57
 description: 用于规划安全性和合规性的登录页
-ms.openlocfilehash: 71d814fbbc946fddbc57d4528f43b83589454e31
-ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
+ms.collection: M365-security-compliance
+ms.openlocfilehash: 4c653e20fbab8f93897b00589a00cb53b1e36963
+ms.sourcegitcommit: 07a4f9a8888756e05cd67ca24f6121b2a4e9f464
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30218462"
+ms.lasthandoff: 03/09/2019
+ms.locfileid: "30512647"
 ---
 # <a name="plan-for-security-amp-compliance-in-office-365"></a>在 Office 365 &amp;中规划安全合规性
 
-管理安全性和合规性是一个合作关系。您负责保护您的数据、标识和设备, 而 Microsoft 大力保护 Office 365 服务。您可以结合使用 Office 365 和企业移动性 + 安全性 (EMS) 来帮助您为您的组织实现适当级别的保护。
+管理安全性和合规性是一个合作关系。 您负责保护您的数据、标识和设备, 而 Microsoft 大力保护 Office 365 服务。 您可以结合使用 Office 365 和企业移动性 + 安全性 (EMS) 来帮助您为您的组织实现适当级别的保护。
   
 ## <a name="step-1-review-capabilities"></a>步骤 1: 查看功能
 
@@ -32,13 +33,13 @@ ms.locfileid: "30218462"
   
 ## <a name="step-2-check-your-secure-score"></a>步骤 2: 检查安全分数
 
-设置 Office 365 订阅后, 请记下你的起始分数。安全分数提供了 Office 365 配置建议, 您可以采用这些建议来增加成绩。目标是了解为保护您的环境而不会对用户工作效率产生负面影响的机会。
+设置 Office 365 订阅后, 请记下你的起始分数。 安全分数提供了 Office 365 配置建议, 您可以采用这些建议来增加成绩。 目标是了解为保护您的环境而不会对用户工作效率产生负面影响的机会。
   
-- [Office 365 安全功能分数简介](office-365-secure-score.md)
+- [引入 Office 365 安全分数](office-365-secure-score.md)
     
 ## <a name="step-3-plan-access-protection-for-identity-and-devices"></a>步骤 3: 规划身份和设备的访问保护
 
-若要抵御网络攻击和防止数据丢失，关键在于保护对 Office 365 数据和服务的访问。
+保护对 Office 365 数据和服务的访问对于防御网络攻击和防止数据丢失至关重要。
   
 - [保护对 Office 365 数据和服务的访问](protect-access-to-data-and-services.md)
     
@@ -58,7 +59,7 @@ ms.locfileid: "30218462"
   
 - [转到 Office 365 安全&amp;合规中心](go-to-the-securitycompliance-center.md)
     
-- [Office 365 安全&amp;合规中心中的权限](permissions-in-the-security-and-compliance-center.md)
+- [Permissions in the Office 365 Security &amp; Compliance Center](permissions-in-the-security-and-compliance-center.md)
     
 - [向用户授予对 Office 365 安全&amp;合规中心的访问权限](grant-access-to-the-security-and-compliance-center.md)
     
@@ -76,7 +77,7 @@ ms.locfileid: "30218462"
   
 |**订阅**|**管理 URL**|**仪表板和管理中心**|
 |:-----|:-----|:-----|
-|Office 365  <br/> |`https://portal.office.com`  <br/> | Office 365 管理中心  <br/>  安全&amp;合规中心  <br/>  Exchange 管理中心  <br/>  SharePoint 管理员中心和 OneDrive for business 管理中心  <br/> |
+|Office 365  <br/> |`https://portal.office.com`  <br/> | Office 365 管理中心  <br/>  Security &amp; Compliance Center  <br/>  Exchange 管理中心  <br/>  SharePoint 管理员中心和 OneDrive for business 管理中心  <br/> |
 |企业移动性 + 安全性  <br/> |`https://portal.azure.com`  <br/> | Azure Active Directory  <br/>  Microsoft 移动应用程序管理  <br/>  Microsoft Intune  <br/> |
 |企业移动性 + 安全性  <br/> |`https://portal.cloudappsecurity.com`  <br/> | 云应用安全  <br/> |
    

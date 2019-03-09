@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 ms.assetid: d14ae7c3-fcb0-4a03-967b-cbed861bb086
 description: 了解 Office 365 中的监督策略
-ms.openlocfilehash: f4eae6aebde130bdacdc45b419becc32953bffd2
-ms.sourcegitcommit: 5d6be2b208dbe28d5d5da057c60cf97729799c1b
+ms.openlocfilehash: 99957accb6a1f52f0e0a895fc96ef2b6ac0ac757
+ms.sourcegitcommit: 5eb664b6ecef94aef4018a75684ee4ae66c486bb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/07/2019
-ms.locfileid: "30465469"
+ms.lasthandoff: 03/08/2019
+ms.locfileid: "30492851"
 ---
 # <a name="supervision-policies-in-office-365"></a>Office 365 中的监督策略
 
@@ -57,7 +57,8 @@ Office 365 中的监督策略使您可以捕获指定审阅者进行检查的员
 在开始使用监督之前, 你需要确定谁将查看其通信。 在策略中, 您将使用用户电子邮件地址来标识要监督的个人或用户组。 这些组的一些示例包括 Office 365 组、基于 Exchange 的通讯组列表和 Microsoft 团队频道。 您还可以从监督中排除特定用户或组, 这些用户或组包含在受监督的组中或组列表中。
 
 > [!IMPORTANT]
-> 监督策略监视的所有用户都必须拥有 office 365 企业版 E3 许可证和高级合规性加载项, 或将其包含在 Office 365 企业版 E5 订阅中。 如果你没有现有的企业版 E5 计划, 并且想要尝试监督, 则可以[注册 Office 365 企业版 e5 的试用版](https://go.microsoft.com/fwlink/p/?LinkID=698279)。
+> 监督策略监视的用户必须拥有 Microsoft 365 E5 合规性许可证、具有高级合规性加载项的 Office 365 企业版 E3 许可证, 或包含在 office 365 企业版 E5 订阅中。
+如果你没有现有的企业版 E5 计划, 并且想要尝试监督, 则可以[注册 Office 365 企业版 e5 的试用版](https://go.microsoft.com/fwlink/p/?LinkID=698279)。
 
 ### <a name="reviewers"></a>Reviewers
 
@@ -106,7 +107,7 @@ Office 365 中的监督策略使您可以捕获指定审阅者进行检查的员
 
 下表对每个条件进行了详细说明。
   
-|**条件**|**如何使用此条件**|
+|**Condition**|**如何使用此条件**|
 |:-----|:-----|
 |从这些域中的任何域接收邮件  <br><br> 不从这些域中的任何域接收邮件 | 若要在收到的邮件中包含或排除某些域时应用策略, 请输入每个域并使用逗号分隔多个域。 您输入的每个域都将单独应用 (这些域中只有一个适用于该策略的域必须应用于该邮件)。 |
 |将邮件发送到这些域中的任何域  <br><br> 邮件不会发送到这些域中的任何域 | 若要在已发送的邮件中包含或排除某些域时应用策略, 请输入每个域并使用逗号分隔多个域。 您输入的每个域都将单独应用 (这些域中只有一个适用于该策略的域必须应用于该邮件)。 |
@@ -153,9 +154,9 @@ Office 365 中的监督策略使您可以捕获指定审阅者进行检查的员
 - 查看所选策略的审阅者和审阅团队的列表
 - 查看哪些通信平台在监督策略下具有内容。
 
-#### <a name="supervise-tab"></a>监督选项卡
+#### <a name="review-tab"></a>审阅选项卡
 
-在 "**监督**" 选项卡上, 审阅者可以执行操作并解决选定策略标识的项目。 您可以在此处执行以下操作:
+"**审阅**" 选项卡是审阅者可以执行操作并解决选定策略标识的项目的地方。 您可以在此处执行以下操作:
 
 - 按挂起、合规、不兼容和可疑项目进行筛选
 - 将单个项目标记为兼容、不符合或不必要。 您还可以记录项目注释以帮助阐明所执行的标记操作。

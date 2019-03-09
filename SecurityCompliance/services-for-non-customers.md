@@ -1,7 +1,7 @@
 ---
 title: 非客户向 Office 365 发送邮件的服务
-ms.author: krowley
-author: kccross
+ms.author: tracyp
+author: MSFTTracyP
 manager: laurawi
 ms.date: 5/2/2016
 ms.audience: ITPro
@@ -12,13 +12,15 @@ localization_priority: Normal
 search.appverid:
 - MET150
 ms.assetid: 19fd3e0f-8dbf-4049-a810-2c8ee6cefd48
+ms.collection:
+- M365-security-compliance
 description: 为了维护用户对使用电子邮件的信任，Microsoft 已出台多项帮助保护我们的用户的策略和技术。
-ms.openlocfilehash: fca916f57ad1b7dc6ebcd13fabbea2f0971f5a00
-ms.sourcegitcommit: e9dca2d6a7838f98bb7eca127fdda2372cda402c
+ms.openlocfilehash: 868f5491ae9433e115090567b40abcd39ef2ebf8
+ms.sourcegitcommit: 5eb664b6ecef94aef4018a75684ee4ae66c486bb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/21/2018
-ms.locfileid: "23002697"
+ms.lasthandoff: 03/08/2019
+ms.locfileid: "30492791"
 ---
 # <a name="services-for-non-customers-sending-mail-to-office-365"></a>非客户向 Office 365 发送邮件的服务
   
@@ -61,6 +63,6 @@ Microsoft 提供了多种支持方案，以支持向 Office 365 收件箱发送�
 ## <a name="abuse-and-spam-reporting-for-junk-email-originating-from-exchange-online"></a>源自 Exchange Online 的垃圾邮件的滥用和垃圾邮件报告
 <a name="ReportOurJunk"> </a>
 
-有时第三方使用 Office 365 发送垃圾邮件违反了我们使用条款和策略。如果您收到来自 Office 365 的任何垃圾邮件，您可以报告[junk@office365.microsoft.com](mailto:junk@office365.microsoft.com)到这些消息。请附加完整的邮件头，包括 RFC 5322 或 ARF 格式的其余部分消息。Outlook web 用户可以使用内置工具报告垃圾邮件。有关信息，请参阅[报告垃圾邮件和网络钓鱼诈骗在 web 上的 Outlook 中](report-junk-email-and-phishing-scams-in-outlook-on-the-web-eop.md)。
+有时第三方使用 Office 365 来发送垃圾邮件，违反了我们的使用条款和策略。 如果您收到来自 Office 365 的任何垃圾邮件，您可以向 [junk@office365.microsoft.com](mailto:junk@office365.microsoft.com) 报告这些邮件。 请附上有问题的邮件，包括完整的邮件头（RFC 5322 或 ARF 格式）。 Web 上有 Outlook 的用户可以使用内置工具报告垃圾邮件。 有关信息, 请参阅[在 Outlook 网页版中报告垃圾电子邮件和网络钓鱼诈骗](report-junk-email-and-phishing-scams-in-outlook-on-the-web-eop.md)。
   
 

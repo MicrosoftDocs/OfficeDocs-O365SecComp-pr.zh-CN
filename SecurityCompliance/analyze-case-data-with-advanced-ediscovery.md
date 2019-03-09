@@ -13,12 +13,13 @@ search.appverid:
 - MOE150
 ms.assetid: dce7a700-3b6e-435f-88ba-e4b82c0f2b26
 description: '概述了 "Office 365 高级电子数据展示" 中的分析过程, 该过程允许您设置参数、运行选项和查看结果。 '
-ms.openlocfilehash: a3e9bc84c09b40b9751dd985faaf0931c77fa37b
-ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
+ms.collection: M365-security-compliance
+ms.openlocfilehash: 0329e64bc507c0ddc3158ac6ae189730b506bb49
+ms.sourcegitcommit: 07a4f9a8888756e05cd67ca24f6121b2a4e9f464
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30217462"
+ms.lasthandoff: 03/09/2019
+ms.locfileid: "30512637"
 ---
 # <a name="analyze-case-data-with-office-365-advanced-ediscovery"></a>使用 Office 365 高级电子数据展示分析事例数据
 

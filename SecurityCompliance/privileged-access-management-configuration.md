@@ -15,19 +15,19 @@ ms.collection:
 ms.custom: Ent_Solutions
 ms.assetid: ''
 description: 使用本主题可了解有关在 Office 365 中配置特权访问管理的详细信息
-ms.openlocfilehash: af8058ff852bbf290084e42d1f4c72d6fcee0e27
-ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
+ms.openlocfilehash: 3d186998006dd3cc59877b1571f50314af5bbce8
+ms.sourcegitcommit: 5eb664b6ecef94aef4018a75684ee4ae66c486bb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30221082"
+ms.lasthandoff: 03/08/2019
+ms.locfileid: "30492821"
 ---
 # <a name="configuring-privileged-access-management-in-office-365"></a>在 Office 365 中配置特权访问管理
 
 > [!IMPORTANT]
 > 本主题介绍了 Office 365 E5 和高级合规 sku 中目前仅提供的功能的部署和配置指南。
 
-本主题将指导您在 Office 365 组织中启用和配置特权访问管理。您可以使用 Microsoft 365 管理中心或 Exchange 管理 PowerShell 管理和使用特权访问。 
+本主题将指导您在 Office 365 组织中启用和配置特权访问管理。 您可以使用 Microsoft 365 管理中心或 Exchange 管理 PowerShell 管理和使用特权访问。 
 
 ## <a name="enable-and-configure-privileged-access-management"></a>启用和配置特权访问管理
 
@@ -35,7 +35,7 @@ ms.locfileid: "30221082"
 
 - [步骤 1: 创建审批者的组](privileged-access-management-configuration.md#step1)
 
-    在开始使用权限访问之前, 请确定谁将拥有对已提升和特权任务的传入请求的审批权限。作为审批者组的一部分的任何用户都将能够批准访问请求。这是通过在 Office 365 中创建启用邮件的安全组来启用的。
+    在开始使用权限访问之前, 请确定谁将拥有对已提升和特权任务的传入请求的审批权限。 作为审批者组的一部分的任何用户都将能够批准访问请求。 这是通过在 Office 365 中创建启用邮件的安全组来启用的。
 
 - [步骤 2: 启用特权访问](privileged-access-management-configuration.md#step2)
 
@@ -43,16 +43,16 @@ ms.locfileid: "30221082"
 
 - [步骤 3: 创建访问策略](privileged-access-management-configuration.md#step3)
 
-    通过创建审批策略, 可以定义各个任务范围内的特定审批要求。审批类型选项为 "**自动**" 或 "**手动**"。
+    通过创建审批策略, 可以定义各个任务范围内的特定审批要求。 审批类型选项为 "**自动**" 或 "**手动**"。
 
 - [步骤 4: 提交/批准权限访问请求](privileged-access-management-configuration.md#step4)
 
-    启用后, 特权访问需要审批以执行任何定义了关联的审批策略的任务。需要执行审批策略中包含的任务的用户必须请求并授予访问审批权限, 以便拥有执行任务所需的权限。
+    启用后, 特权访问需要审批以执行任何定义了关联的审批策略的任务。 需要执行审批策略中包含的任务的用户必须请求并授予访问审批权限, 以便拥有执行任务所需的权限。
 
-授予批准后, 请求用户可以执行预期的任务, 而特权访问将代表用户授权和执行任务。审批在请求的持续时间 (默认持续时间为4小时) 内保持有效, 在此期间, 请求者可以多次执行预期任务。将记录所有此类执行情况, 并提供安全和合规性审核。 
+授予批准后, 请求用户可以执行预期的任务, 而特权访问将代表用户授权和执行任务。 审批在请求的持续时间 (默认持续时间为4小时) 内保持有效, 在此期间, 请求者可以多次执行预期任务。 将记录所有此类执行情况, 并提供安全和合规性审核。 
 
 > [!NOTE]
-> 如果要使用 Exchange 管理 PowerShell 启用和配置特权访问, 请按照[使用多重身份验证](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/mfa-connect-to-exchange-online-powershell?view=exchange-ps)连接到 exchange online powershell 与 Office 365 连接到 exchange online powershell 中的步骤操作。凭据.您无需为 Office 365 组织启用多重身份验证, 即可使用在连接到 Exchange Online PowerShell 时启用特权访问的步骤。使用多重身份验证进行连接将创建一个 OAuth 令牌, 该令牌由用于对您的请求进行签名的特权访问使用。
+> 如果要使用 Exchange 管理 PowerShell 启用和配置特权访问, 请按照[使用多重身份验证](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/mfa-connect-to-exchange-online-powershell?view=exchange-ps)连接到 exchange online powershell 与 Office 365 连接到 exchange online powershell 中的步骤操作。凭据. 您无需为 Office 365 组织启用多重身份验证, 即可使用在连接到 Exchange Online PowerShell 时启用特权访问的步骤。 使用多重身份验证进行连接将创建一个 OAuth 令牌, 该令牌由用于对您的请求进行签名的特权访问使用。
 
 <a name="step1"> </a>
 
@@ -64,7 +64,7 @@ ms.locfileid: "30221082"
 
 3. 选择 "**已启用邮件的安全组**" 组类型, 然后填写新组的**名称**、**组电子邮件地址**和**说明**字段。
 
-4. 保存组。可能需要几分钟的时间才能完全配置组并将其显示在 Office 365 管理中心中。
+4. 保存组。 可能需要几分钟的时间才能完全配置组并将其显示在 Office 365 管理中心中。
 
 5. 选择新的审批者组, 然后选择 "**编辑**" 将用户添加到组中。
 
@@ -120,7 +120,7 @@ Enable-ElevatedAccessControl -AdminGroup 'pamapprovers@fabrikam.onmicrosoft.com'
     
     **策略类型**: 任务、角色或角色组
 
-    **策略作用域**: Exchange 或 Office 365
+    **策略作用域**: Exchange
 
     **策略名称**: 从可用策略中进行选择
 
@@ -128,7 +128,7 @@ Enable-ElevatedAccessControl -AdminGroup 'pamapprovers@fabrikam.onmicrosoft.com'
 
     **审批组**: 选择在步骤1中创建的 "审批者" 组
 
-6. 选择 "**创建**", 然后单击 "**关闭**"。为策略完全配置和启用可能需要几分钟时间。
+6. 选择 "**创建**", 然后单击 "**关闭**"。 为策略完全配置和启用可能需要几分钟时间。
 
 ### <a name="using-exchange-management-powershell"></a>使用 Exchange 管理 PowerShell
 
@@ -148,7 +148,7 @@ New-ElevatedAccessApprovalPolicy -Task 'Exchange\New-MoveRequest' -ApprovalType 
 
 ### <a name="requesting-elevation-authorization-to-execute-privileged-tasks"></a>请求提升授权以执行特权任务
 
-特权访问请求在提交请求后最长24小时有效。如果未批准或被拒绝, 请求将过期, 并且不会获得访问权限。
+特权访问请求在提交请求后最长24小时有效。 如果未批准或被拒绝, 请求将过期, 并且不会获得访问权限。
 
 #### <a name="using-the-microsoft-365-admin-center"></a>使用 Microsoft 365 管理中心
 
@@ -158,7 +158,7 @@ New-ElevatedAccessApprovalPolicy -Task 'Exchange\New-MoveRequest' -ApprovalType 
 
 3. 选择 "**管理访问策略和请求**"。
 
-4. 选择 "**新建请求**"。从下拉字段中, 为您的组织选择适当的值:
+4. 选择 "**新建请求**"。 从下拉字段中, 为您的组织选择适当的值:
 
     **请求类型**: 任务、角色或角色组
 
@@ -166,11 +166,11 @@ New-ElevatedAccessApprovalPolicy -Task 'Exchange\New-MoveRequest' -ApprovalType 
 
     **请求**: 从可用策略中选择
 
-    **持续时间 (小时)**: 请求的访问的小时数。对于可以请求的小时数没有限制。
+    **持续时间 (小时)**: 请求的访问的小时数。 对于可以请求的小时数没有限制。
 
     **注释**: 与您的访问请求相关的注释的文本字段
 
-5. 依次选择 "**保存**" 和 "**关闭**"。您的请求将通过电子邮件发送给审批者的组。
+5. 依次选择 "**保存**" 和 "**关闭**"。 您的请求将通过电子邮件发送给审批者的组。
 
 #### <a name="using-exchange-management-powershell"></a>使用 Exchange 管理 PowerShell
 
@@ -207,7 +207,7 @@ Get-ElevatedAccessRequest -Identity 28560ed0-419d-4cc3-8f5b-603911cbd450 | selec
 ```
 
 ### <a name="approving-an-elevation-authorization-request"></a>批准提升授权请求
-在创建审批请求时, 相关审批者组的成员将收到电子邮件通知, 并且可以批准与请求 ID 关联的请求。请求批准或通过电子邮件拒绝的请求程序将收到通知。
+在创建审批请求时, 相关审批者组的成员将收到电子邮件通知, 并且可以批准与请求 ID 关联的请求。 请求批准或通过电子邮件拒绝的请求程序将收到通知。
 
 #### <a name="using-the-microsoft-365-admin-center"></a>使用 Microsoft 365 管理中心
 
@@ -219,7 +219,7 @@ Get-ElevatedAccessRequest -Identity 28560ed0-419d-4cc3-8f5b-603911cbd450 | selec
 
 4. 选择一个列出的请求以查看详细信息, 并对请求执行操作。
 
-5. 选择 "**批准**" 以批准请求, 或选择 "**拒绝**" 以拒绝该请求。以前批准的请求可以通过选择 "**吊销**" 来撤销访问权限。
+5. 选择 "**批准**" 以批准请求, 或选择 "**拒绝**" 以拒绝该请求。 以前批准的请求可以通过选择 "**吊销**" 来撤销访问权限。
 
 #### <a name="using-exchange-management-powershell"></a>使用 Exchange 管理 PowerShell
 
@@ -258,7 +258,7 @@ Deny-ElevatedAccessRequest -RequestId a4bc1bdf-00a1-42b4-be65-b6c63d6be279 -Comm
 
 5. 选择要删除的策略, 然后选择 "**删除策略**"。
 
-6. 选择 "**关闭**"。
+6. 选择“关闭”****。
 
 ### <a name="using-exchange-management-powershell"></a>使用 Exchange 管理 PowerShell
 
@@ -270,7 +270,7 @@ Remove-ElevatedAccessApprovalPolicy -Identity <identity GUID of the policy you w
 
 ## <a name="disable-privileged-access-in-office-365"></a>禁用 Office 365 中的特权访问
 
-如果需要, 您可以为您的组织禁用特权访问管理。禁用特权访问不会删除任何关联的审批策略或审批者组。
+如果需要, 您可以为您的组织禁用特权访问管理。 禁用特权访问不会删除任何关联的审批策略或审批者组。
 
 ### <a name="using-the-microsoft-365-admin-center"></a>使用 Microsoft 365 管理中心
 
