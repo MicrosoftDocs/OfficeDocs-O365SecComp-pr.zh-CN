@@ -15,19 +15,19 @@ ms.assetid: da5845db-c578-4a41-b2cb-5a09689a551b
 ms.collection:
 - M365-security-compliance
 description: 作为 Office 365 全局管理员, 你可以使用攻击模拟器在你的组织中运行实际的攻击方案。 这可帮助你在真正的攻击击中你的业务之前识别和查找易受攻击的用户。
-ms.openlocfilehash: 25686ce194deca8d1ca07fca40f8142492951574
-ms.sourcegitcommit: ed822a776d3419853453583e882f3c61ca26d4b2
+ms.openlocfilehash: 8cbe3c5c34bbc68fc89c8550d9711d953dced9b5
+ms.sourcegitcommit: 74ad22a5c6c3c9d9324f0f97070909e323a4e9cf
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2019
-ms.locfileid: "30410827"
+ms.lasthandoff: 03/11/2019
+ms.locfileid: "30524056"
 ---
 # <a name="attack-simulator-in-office-365"></a>Office 365 中的攻击模拟器
 
-**摘要**如果您是 office 365 全局管理员, 并且您的组织拥有[office 365 的威胁智能](office-365-ti.md), 则可以使用攻击模拟器在组织中运行实际的攻击方案。 这可以帮助您识别和查找易受攻击的用户, 在真正的攻击影响你的底线之前。 阅读本文以了解详细信息。
+**摘要**如果您是 office 365 全局管理员, 并且您的组织具有[office 365 威胁调查和响应 capabilties](office-365-ti.md), 则可以使用攻击模拟器在您的组织中运行实际的攻击方案。 这可以帮助您识别和查找易受攻击的用户, 在真正的攻击影响你的底线之前。 阅读本文以了解详细信息。
 
 > [!IMPORTANT]
-> 从2019年2月起开始, 在接下来的几个月中, office 365 威胁情报将成为 office 365 高级威胁防护计划 2, 其中包含其他威胁防护功能。 若要了解详细信息, 请参阅[office 365 高级威胁防护计划和定价](https://products.office.com/exchange/advance-threat-protection)以及[Office 365 高级威胁防护服务说明](https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description)。
+> office 365 威胁智能现已成为 office 365 高级威胁防护计划2的一部分, 其中包含额外的威胁防护功能。 若要了解详细信息, 请参阅[office 365 高级威胁防护计划和定价](https://products.office.com/exchange/advance-threat-protection)以及[Office 365 高级威胁防护服务说明](https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description)。
   
 ## <a name="the-attacks"></a>攻击
 
