@@ -15,12 +15,12 @@ ms.assetid: 38e9b67f-d188-490f-bc91-a1ae4b270441
 ms.collection:
 - M365-security-compliance
 description: 了解 Office 365 威胁调查和响应, 以及如何开始。
-ms.openlocfilehash: 826c4c1a8c06efbc287b21723758dc5d5087e1ef
-ms.sourcegitcommit: 74ad22a5c6c3c9d9324f0f97070909e323a4e9cf
+ms.openlocfilehash: 3e77e79a38da10ed80a611d93dbd55ab9cfc0fda
+ms.sourcegitcommit: 6e8e2b43a4bea31c1e835c5b050824651c6a0094
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 03/11/2019
-ms.locfileid: "30524066"
+ms.locfileid: "30537619"
 ---
 # <a name="get-started-with-threat-investigation-and-response"></a>开始使用威胁调查和响应 
 
@@ -73,40 +73,30 @@ ms.locfileid: "30524066"
   
 ## <a name="how-do-we-get-these-threat-investigation-and-response-capabilities"></a>我们如何获取这些威胁调查和响应功能？
 
-office 365 高级威胁防护计划2和企业版 E5 中包含 <<<<<<< HEAD Office 365 威胁 Invesigation 和响应功能。 
+office 365 高级威胁防护计划2和企业版 E5 中包含 office 威胁 Invesigation 和响应功能。 
 
 > [!TIP]
 > 如果你的组织具有不包含这些威胁调查和响应功能的 Office 365 订阅, 你可以将其作为加载项购买, 并附带 Office 365 高级威胁防护。 有关计划选项的详细信息, 请参阅[office 365 Platform 服务说明: office 365 &amp;安全合规性中心](https://docs.microsoft.com/office365/servicedescriptions/office-365-platform-service-description/office-365-securitycompliance-center)和[购买或编辑 Office 365 for business 的加载](https://docs.microsoft.com/office365/admin/subscriptions-and-billing/buy-or-edit-an-add-on)项。
-=======
-**高级威胁防护和威胁智能现已成为 Office 365 高级威胁防护计划 2**中的一部分, 在某些订阅 (如[microsoft 365 企业版](https://www.microsoft.com/microsoft-365/enterprise/home)、 [microsoft 365 Business](https://www.microsoft.com/microsoft-365/business)、Office 365) 中包含。企业版 E5、Office 365 教育版 A5 等。如果您的组织有一个不包含 Office 365 ATP 的订阅, 则可能会将 atp 作为加载项进行购买。 有关详细信息, 请参阅[office 365 高级威胁防护计划和定价](https://products.office.com/exchange/advance-threat-protection)和[Office 365 高级威胁防护服务说明](https://docs.microsoft.com/en-us/office365/servicedescriptions/office-365-advanced-threat-protection-service-description#whats-new-in-office-365-advanced-threat-protection-atp)。
->>>>>>> 上游/compliance20
   
 1. 作为 office 365 全局管理员, 请转到[https://portal.office.com](https://portal.office.com)并使用 Office 365 的工作或学校帐户登录并登录。 
     
 2. 选择 "**管理员** \> **帐单**" 以查看您的当前订阅包括的内容。 
-
-<<<<<<< 头
     - 如果您看到**office 365 企业版 E5**, 则您的组织具有 Office 365 威胁智能。 
     - 如果你看到不同的订阅 (如**Office 365 企业版 E3**或**office 365 企业版 E1**), 请考虑添加威胁智能。 (为此, 请选择 " **+ 添加订阅**"。)
     
 3. 在 Office 365 管理中心中, 选择 "**用户** \> **活动用户**"。
     
-5. 将 Office 365 威胁智能许可证分配给所有活动用户。 (只有拥有威胁智能许可证的用户才会显示在报告中, 如 Explorer。)=======
-    - 如果您看到**office 365 企业版 E5**, 则您的组织具有 office 365 高级威胁防护计划 2, 其中包括威胁智能。 
-    - 如果你看到不同的订阅 (如**Office 365 企业版 E3**或**office 365 企业版 E1**), 请考虑添加高级威胁防护计划2。 (为此, 请选择 " **+ 添加订阅**"。)
+5. 将 Office 365 威胁智能许可证分配给所有活动用户。 (只有拥有威胁智能许可证的用户才会显示在报告中, 如 Explorer。)
     
-3. 在 Office 365 管理中心中, 选择 "**用户** \> **活动用户**"。
-    
-5. 将 Office 365 高级威胁防护许可证分配给所有活动用户。 (只有拥有威胁智能功能许可证的用户才会显示在报告中, 如 Explorer)。
->>>>>>> 上游/compliance20
-    
-6. 为组织中将使用 Office 365 高级威胁防护的人员分配角色。 请参阅[向用户授予对 Office 365 安全&amp;合规中心的访问权限](grant-access-to-the-security-and-compliance-center.md), 并参阅下表:
-    
-|||
-|:-----|:-----|
-|**若要执行此活动 .。。** <br/> |**您必须具有以下角色之一** <br/> |
-<<<<<<< 头 |使用威胁仪表板 (或新[安全仪表板](security-dashboard.md))  <br/> 查看有关最近或当前威胁的信息  <br/> |Office 365 全局管理员  <br/> 安全管理员 (在安全&amp;合规中心中分配)  <br/> 安全读者 (在安全&amp;合规中心中分配)  <br/> |======= |使用威胁仪表板 (或新[安全仪表板](security-dashboard.md))  <br/> 查看有关最近或当前威胁的信息  <br/> |Office 365 全局管理员  <br/> 安全管理员 (在 Azure Active Directory 管理中心中分配)  <br/> 安全读者 (在 Azure Active Directory 管理中心中分配)  <br/> |
->>>>>>> 上游/compliance20 |使用威胁资源管理器 (也称为资源管理器)  <br/> 分析威胁  <br/> |Office 365 全局管理员  <br/> 安全管理员 (在安全&amp;合规中心中分配)  <br/> 安全读者 (在安全&amp;合规中心中分配)  <br/> | |查看事件 (也称为调查) <br/> 将电子邮件添加到事件  <br/> |Office 365 全局管理员  <br/> 安全管理员 (在安全&amp;合规中心中分配)  <br/> 安全读者 (在安全&amp;合规中心中分配)  <br/> | |触发事件中的电子邮件操作  <br/> 查找和删除可疑电子邮件  <br/> |Office 365 全局管理员或安全管理员  <br/> 上述角色之一和搜索和清除 (在安全&amp;合规中心中分配)  <br/> | |将 Office 365 威胁智能与 Windows Defender 高级威胁防护集成  <br/> 将 Office 365 威胁智能与 SIEM 服务器集成  <br/> |Office 365 全局管理员  <br/> 安全管理员 (在安全&amp;合规中心中分配)  <br/> 在其他应用程序中分配的相应角色 (如 Windows Defender 高级威胁防护门户或 SIEM server)  <br/> |
+6. 为组织中将使用 Office 365 高级威胁防护的人员分配角色。 请参阅[向用户授予对 Office 365 安全&amp;合规中心的访问权限](grant-access-to-the-security-and-compliance-center.md), 并参阅下表:<br/>
+
+  |**若要执行此活动 .。。** <br/> |**您必须具有以下角色之一** <br/> |  
+  |:-----|:-----|
+  |使用威胁仪表板 (或新[安全仪表板](security-dashboard.md))<br/> 查看有关最近或当前威胁的信息  <br/> |Office 365 全局管理员  <br/> 安全管理员 (在安全&amp;合规中心中分配)  <br/> 安全读者 (在安全&amp;合规中心中分配)  <br/> |
+  |使用威胁资源管理器 (也称为资源管理器)  <br/> 分析威胁  <br/> |Office 365 全局管理员  <br/> 安全管理员 (在安全&amp;合规中心中分配)  <br/> 安全读者 (在安全&amp;合规中心中分配)  <br/> |
+  |查看事件 (也称为调查) <br/> 将电子邮件添加到事件  <br/> |Office 365 全局管理员  <br/> 安全管理员 (在安全&amp;合规中心中分配)  <br/> 安全读者 (在安全&amp;合规中心中分配)  <br/> |
+  |触发事件中的电子邮件操作  <br/> 查找和删除可疑电子邮件  <br/> |Office 365 全局管理员或安全管理员  <br/> 上述角色之一和搜索和清除 (在安全&amp;合规中心中分配)  <br/> |
+  |将 Office 365 威胁智能与 Windows Defender 高级威胁防护集成  <br/> 将 Office 365 威胁智能与 SIEM 服务器集成  <br/> |Office 365 全局管理员  <br/> 安全管理员 (在安全&amp;合规中心中分配)  <br/> 在其他应用程序中分配的相应角色 (如 Windows Defender 高级威胁防护门户或 SIEM server)  <br/> |
    
 有关角色、角色组和权限的信息, 请参阅[Office 365 安全&amp;合规中心中的权限](permissions-in-the-security-and-compliance-center.md)。
     

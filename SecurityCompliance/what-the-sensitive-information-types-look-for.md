@@ -14,12 +14,12 @@ localization_priority: Normal
 ms.collection:
 - M365-security-compliance
 description: Office 365 安全&amp;合规中心中的数据丢失防护 (DLP) 包括可供您在 DLP 策略中使用的80敏感信息类型。 本主题列出了所有这些敏感信息类型，并显示 DLP 策略在检测到每种类型时查找的内容。
-ms.openlocfilehash: 55fa8b6855a9a5bf2c84f6555dd8c8227a2ad9cf
-ms.sourcegitcommit: 6aa82374eef09d2c1921f93bda3eabeeb28aadeb
+ms.openlocfilehash: e9811b285e98a791570dc91e275cb5cead4f8bc9
+ms.sourcegitcommit: 6e8e2b43a4bea31c1e835c5b050824651c6a0094
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/06/2019
-ms.locfileid: "30455264"
+ms.lasthandoff: 03/11/2019
+ms.locfileid: "30537639"
 ---
 # <a name="what-the-sensitive-information-types-look-for"></a>使用敏感信息类型查找什么
 
@@ -211,12 +211,12 @@ Office 365 安全&amp;合规中心中的数据丢失防护 (DLP) 包括许多可
 - 两位数字 
 - 五位数字或字母（不区分大小写）
 
-或者
+OR
 
 - 1-2 个可选字母（不区分大小写）  
 - 4-9 位数字
 
-或者
+OR
 
 - 九个数字或字母（不区分大小写）
 
@@ -566,7 +566,476 @@ Office 365 安全&amp;合规中心中的数据丢失防护 (DLP) 包括许多可
 - 7777777777
 - 8888888888
 - 9999999999
-   
+
+## <a name="azure-documentdb-auth-key"></a>Azure DocumentDB 身份验证密钥
+
+### <a name="format"></a>Format
+
+字符串 "DocumentDb", 后跟下面模式中所示的字符和字符串。
+
+### <a name="pattern"></a>模式
+
+- 字符串 "DocumentDb"
+- 介于3-200 个字母、数字、符号、特殊字符或空格之间的任意组合
+- 大于号 (>)、等号 (=)、引号 (") 或撇号 (')
+- 86字母、数字、数字、正斜杠 (/) 或加号 (+) 的任意组合
+- 两个等号 (=)
+
+### <a name="checksum"></a>校验和
+
+否
+
+### <a name="definition"></a>定义
+
+在 300 个字符的相似度内，如果出现以下情况，DLP 策略 85% 确信它检测到这种类型的敏感信息：
+- 正则表达式 CEP_Regex_AzureDocumentDBAuthKey 找到与该模式匹配的内容。
+- 正则表达式 CEP_CommonExampleKeywords**未**找到与该模式匹配的内容。
+
+```
+<!-- Azure Document DB Auth Key -->
+<Entity id="0f587d92-eb28-44a9-bd1c-90f2892b47aa" patternsProximity="300" recommendedConfidence="85">
+  <Pattern confidenceLevel="85">
+        <IdMatch idRef="CEP_Regex_AzureDocumentDBAuthKey" />
+        <Any minMatches="0" maxMatches="0">
+            <Match idRef="CEP_CommonExampleKeywords" />
+          </Any>
+  </Pattern>
+</Entity>
+```
+
+### <a name="keywords"></a>关键字
+
+#### <a name="cepcommonexamplekeywords"></a>CEP_CommonExampleKeywords
+
+(请注意, 从技术上讲, 此敏感信息类型通过使用正则表达式 (而不是关键字列表) 来标识这些关键字。
+
+- 尚未
+- 送交
+- 罗斯
+- 沙盒
+- onebox
+- localhost
+- 127.0.0。1
+- testacs。<!--no-hyperlink-->com
+- s-int.<!--no-hyperlink-->net
+
+## <a name="azure-iaas-database-connection-string-and-azure-sql-connection-string"></a>azure IAAS 数据库连接字符串和 azure SQL 连接字符串
+
+### <a name="format"></a>Format
+
+字符串 "server"、"server" 或 "data source", 后跟下面模式中所述的字符和字符串, 包括字符串 "cloudapp"。<!--no-hyperlink-->com "或" cloudapp "。<!--no-hyperlink-->net "或" database。<!--no-hyperlink-->net "和字符串" password "或" password "或" pwd "。
+
+### <a name="pattern"></a>模式
+
+- 字符串 "server"、"server" 或 "data source"
+- 0-2 空白字符
+- 等号 (=)
+- 0-2 空白字符
+- 介于1-200 个字母、数字、符号、特殊字符或空格之间的任意组合
+- 字符串 "cloudapp"。<!--no-hyperlink-->com "," cloudapp。<!--no-hyperlink-->net "或" database。<!--no-hyperlink-->net "
+- 介于1-300 个字母、数字、符号、特殊字符或空格之间的任意组合
+- 字符串 "password"、"password" 或 "pwd"
+- 0-2 空白字符
+- 等号 (=)
+- 0-2 空白字符
+- 一个或多个不是分号 (;)、引号 (") 或撇号 (') 的字符
+- 分号 (;)、引号 (") 或撇号 (')
+
+### <a name="checksum"></a>校验和
+
+否
+
+### <a name="definition"></a>定义
+
+在 300 个字符的相似度内，如果出现以下情况，DLP 策略 85% 确信它检测到这种类型的敏感信息：
+- 正则表达式 CEP_Regex_AzureConnectionString 找到与该模式匹配的内容。
+- 正则表达式 CEP_CommonExampleKeywords**未**找到与该模式匹配的内容。
+
+```
+<!--Azure IAAS Database Connection String and Azure SQL Connection String-->
+<Entity id="ce1a126d-186f-4700-8c0c-486157b953fd" patternsProximity="300" recommendedConfidence="85">
+  <Pattern confidenceLevel="85">
+        <IdMatch idRef="CEP_Regex_AzureConnectionString" />
+        <Any minMatches="0" maxMatches="0">
+            <Match idRef="CEP_CommonExampleKeywords" />
+        </Any>
+    </Pattern>
+</Entity>
+```
+
+### <a name="keywords"></a>关键字
+
+#### <a name="cepcommonexamplekeywords"></a>CEP_CommonExampleKeywords
+
+(请注意, 从技术上讲, 此敏感信息类型通过使用正则表达式 (而不是关键字列表) 来标识这些关键字。
+
+- 尚未
+- 送交
+- 罗斯
+- 沙盒
+- onebox
+- localhost
+- 127.0.0。1
+- testacs。<!--no-hyperlink-->com
+- s-int.<!--no-hyperlink-->net
+
+## <a name="azure-iot-connection-string"></a>Azure IoT 连接字符串
+
+### <a name="format"></a>Format
+
+字符串 "HostName", 后跟下面模式中所示的字符和字符串, 包括字符串 "azure 设备"。<!--no-hyperlink-->net "和" SharedAccessKey "。
+
+### <a name="pattern"></a>模式
+
+- 字符串 "HostName"
+- 0-2 空白字符
+- 等号 (=)
+- 0-2 空白字符
+- 介于1-200 个字母、数字、符号、特殊字符或空格之间的任意组合
+- 字符串 "azure 设备。<!--no-hyperlink-->net "
+- 介于1-200 个字母、数字、符号、特殊字符或空格之间的任意组合
+- 字符串 "SharedAccessKey"
+- 0-2 空白字符
+- 等号 (=)
+- 0-2 空白字符
+- 43字母、数字、数字、正斜杠 (/) 或加号 (+) 的任意组合
+- 等号 (=)
+
+### <a name="checksum"></a>校验和
+
+否
+
+### <a name="definition"></a>定义
+
+在 300 个字符的相似度内，如果出现以下情况，DLP 策略 85% 确信它检测到这种类型的敏感信息：
+- 正则表达式 CEP_Regex_AzureIoTConnectionString 找到与该模式匹配的内容。
+- 正则表达式 CEP_CommonExampleKeywords**未**找到与该模式匹配的内容。
+
+```
+<!--Azure IoT Connection String-->
+<Entity id="0b34bec3-d5d6-4974-b7b0-dcdb5c90c29d" patternsProximity="300" recommendedConfidence="85">
+  <Pattern confidenceLevel="85">
+        <IdMatch idRef="CEP_Regex_AzureIoTConnectionString" />
+        <Any minMatches="0" maxMatches="0">
+            <Match idRef="CEP_CommonExampleKeywords" />
+        </Any>
+  </Pattern>
+</Entity>
+```
+
+### <a name="keywords"></a>关键字
+
+#### <a name="cepcommonexamplekeywords"></a>CEP_CommonExampleKeywords
+
+(请注意, 从技术上讲, 此敏感信息类型通过使用正则表达式 (而不是关键字列表) 来标识这些关键字。
+
+- 尚未
+- 送交
+- 罗斯
+- 沙盒
+- onebox
+- localhost
+- 127.0.0。1
+- testacs。<!--no-hyperlink-->com
+- s-int.<!--no-hyperlink-->net
+
+## <a name="azure-publish-setting-password"></a>Azure 发布设置密码
+
+### <a name="format"></a>Format
+
+字符串 "userpwd =", 后跟一个字母数字字符串。
+
+### <a name="pattern"></a>模式
+
+- 字符串 "userpwd ="
+- 任何60小写字母或数字的组合
+- 一个引号 (")
+
+### <a name="checksum"></a>校验和
+
+否
+
+### <a name="definition"></a>定义
+
+在 300 个字符的相似度内，如果出现以下情况，DLP 策略 85% 确信它检测到这种类型的敏感信息：
+- 正则表达式 CEP_Regex_AzurePublishSettingPasswords 找到与该模式匹配的内容。
+- 正则表达式 CEP_CommonExampleKeywords**未**找到与该模式匹配的内容。
+
+
+```
+<!--Azure Publish Setting Password-->
+<Entity id="75f4cc8a-a68e-49e5-89ce-fa8f03d286a5" patternsProximity="300" recommendedConfidence="85">
+  <Pattern confidenceLevel="85">
+       <IdMatch idRef="CEP_Regex_AzurePublishSettingPasswords" />
+       <Any minMatches="0" maxMatches="0">
+           <Match idRef="CEP_CommonExampleKeywords" />
+       </Any>
+  </Pattern>
+</Entity>
+```
+
+### <a name="keywords"></a>关键字
+
+#### <a name="cepcommonexamplekeywords"></a>CEP_CommonExampleKeywords
+
+(请注意, 从技术上讲, 此敏感信息类型通过使用正则表达式 (而不是关键字列表) 来标识这些关键字。
+
+- 尚未
+- 送交
+- 罗斯
+- 沙盒
+- onebox
+- localhost
+- 127.0.0。1
+- testacs。<!--no-hyperlink-->com
+- s-int.<!--no-hyperlink-->net
+
+## <a name="azure-redis-cache-connection-string"></a>Azure Redis 缓存连接字符串
+
+### <a name="format"></a>Format
+
+字符串 "redis"。<!--no-hyperlink-->net ", 后跟下面的模式中所述的字符和字符串, 包括字符串" password "或" pwd "。
+
+### <a name="pattern"></a>模式
+
+- 字符串 "redis"。<!--no-hyperlink-->net "
+- 介于1-200 个字母、数字、符号、特殊字符或空格之间的任意组合
+- 字符串 "password" 或 "pwd"
+- 0-2 空白字符
+- 等号 (=)
+- 0-2 空白字符
+- 43个字符的任意组合, 这些字符为小写字母、数字、斜杠 (/) 或加号 (+)
+- 等号 (=)
+
+### <a name="checksum"></a>校验和
+
+否
+
+### <a name="definition"></a>定义
+
+在 300 个字符的相似度内，如果出现以下情况，DLP 策略 85% 确信它检测到这种类型的敏感信息：
+- 正则表达式 CEP_Regex_AzureRedisCacheConnectionString 找到与该模式匹配的内容。。
+- 正则表达式 CEP_CommonExampleKeywords**未**找到与该模式匹配的内容。
+
+```
+<!--Azure Redis Cache Connection String-->
+<Entity id="095a7e6c-efd8-46d5-af7b-5298d53a49fc" patternsProximity="300" recommendedConfidence="85">
+  <Pattern confidenceLevel="85">
+        <IdMatch idRef="CEP_Regex_AzureRedisCacheConnectionString" />
+        <Any minMatches="0" maxMatches="0">
+            <Match idRef="CEP_CommonExampleKeywords" />
+        </Any>
+  </Pattern>
+</Entity>
+```
+
+### <a name="keywords"></a>关键字
+
+#### <a name="cepcommonexamplekeywords"></a>CEP_CommonExampleKeywords
+
+(请注意, 从技术上讲, 此敏感信息类型通过使用正则表达式 (而不是关键字列表) 来标识这些关键字。
+
+- 尚未
+- 送交
+- 罗斯
+- 沙盒
+- onebox
+- localhost
+- 127.0.0。1
+- testacs。<!--no-hyperlink-->com
+- s-int.<!--no-hyperlink-->net
+
+## <a name="azure-sas"></a>Azure sa
+
+### <a name="format"></a>Format
+
+字符串 "sig", 后跟下面模式中所示的字符和字符串。
+
+### <a name="pattern"></a>模式
+
+- 字符串 "sig"
+- 0-2 空白字符
+- 等号 (=)
+- 0-2 空白字符
+- 介于43-53 个字符和小写字母、数字或百分比符号 (%) 之间的任意组合
+- 字符串 "% 3d"
+- 不是字母或大写字符、数字或百分号 (%) 的任何字符
+
+### <a name="checksum"></a>校验和
+
+否
+
+### <a name="definition"></a>定义
+
+在 300 个字符的相似度内，如果出现以下情况，DLP 策略 85% 确信它检测到这种类型的敏感信息：
+- 正则表达式 CEP_Regex_AzureSAS 找到与该模式匹配的内容。
+
+```
+<!--Azure SAS-->
+<Entity id="4d235014-e564-47f4-a6fb-6ebb4a826834" patternsProximity="300" recommendedConfidence="85">
+  <Pattern confidenceLevel="85">
+        <IdMatch idRef="CEP_Regex_AzureSAS" />
+  </Pattern>
+</Entity>
+```
+
+## <a name="azure-service-bus-connection-string"></a>Azure 服务总线连接字符串
+
+### <a name="format"></a>Format
+
+字符串 "终结点", 后跟下面模式中所示的字符和字符串, 包括字符串 "<!--no-hyperlink-->net "和" SharedAccesKey "。
+
+### <a name="pattern"></a>模式
+
+- 字符串 "EndPoint"
+- 0-2 空白字符
+- 等号 (=)
+- 0-2 空白字符
+- 介于1-200 个字母、数字、符号、特殊字符或空格之间的任意组合
+- 字符串 "<!--no-hyperlink-->net "
+- 介于1-200 个字母、数字、符号、特殊字符或空格之间的任意组合
+- 字符串 "SharedAccessKey"
+- 0-2 空白字符
+- 等号 (=)
+- 0-2 空白字符
+- 43个字符的任意组合, 这些字符为小写字母、数字、斜杠 (/) 或加号 (+)
+- 等号 (=)
+
+### <a name="checksum"></a>校验和
+
+否
+
+### <a name="definition"></a>定义
+
+在 300 个字符的相似度内，如果出现以下情况，DLP 策略 85% 确信它检测到这种类型的敏感信息：
+- 正则表达式 CEP_Regex_AzureServiceBusConnectionString 找到与该模式匹配的内容。。
+- 正则表达式 CEP_CommonExampleKeywords**未**找到与该模式匹配的内容。
+
+```
+<!--Azure Service Bus Connection String-->
+<Entity id="b9a6578f-a83f-4fcd-bf44-2130bae49a6f" patternsProximity="300" recommendedConfidence="85">
+  <Pattern confidenceLevel="85">
+        <IdMatch idRef="CEP_Regex_AzureServiceBusConnectionString" />
+        <Any minMatches="0" maxMatches="0">
+            <Match idRef="CEP_CommonExampleKeywords" />
+        </Any>
+  </Pattern>
+</Entity>
+```
+
+### <a name="keywords"></a>关键字
+
+#### <a name="cepcommonexamplekeywords"></a>CEP_CommonExampleKeywords
+
+(请注意, 从技术上讲, 此敏感信息类型通过使用正则表达式 (而不是关键字列表) 来标识这些关键字。
+
+- 尚未
+- 送交
+- 罗斯
+- 沙盒
+- onebox
+- localhost
+- 127.0.0。1
+- testacs。<!--no-hyperlink-->com
+- s-int.<!--no-hyperlink-->net
+
+## <a name="azure-storage-account-key"></a>Azure 存储帐户密钥
+
+### <a name="format"></a>Format
+
+字符串 "DefaultEndpointsProtocol", 后跟下面模式中所述的字符和字符串, 包括字符串 "AccountKey"。
+
+### <a name="pattern"></a>模式
+
+- 字符串 "DefaultEndpointsProtocol"
+- 0-2 空白字符
+- 等号 (=)
+- 0-2 空白字符
+- 介于1-200 个字母、数字、符号、特殊字符或空格之间的任意组合
+- 字符串 "AccountKey"
+- 0-2 空白字符
+- 等号 (=)
+- 0-2 空白字符
+- 86个字符的任意组合, 这些字符为小写字母、数字、斜杠 (/) 或加号 (+)
+- 两个等号 (=)
+
+### <a name="checksum"></a>校验和
+
+否
+
+### <a name="definition"></a>定义
+
+在 300 个字符的相似度内，如果出现以下情况，DLP 策略 85% 确信它检测到这种类型的敏感信息：
+- 正则表达式 CEP_Regex_AzureStorageAccountKey 找到与该模式匹配的内容。
+- 正则表达式 CEP_AzureEmulatorStorageAccountFilter**未**找到与该模式匹配的内容。
+- 正则表达式 CEP_CommonExampleKeywords**未**找到与该模式匹配的内容。
+
+```
+<!--Azure Storage Account Key-->
+<Entity id="c7bc98e8-551a-4c35-a92d-d2c8cda714a7" patternsProximity="300" recommendedConfidence="85">
+  <Pattern confidenceLevel="85">
+        <IdMatch idRef="CEP_Regex_AzureStorageAccountKey" />
+        <Any minMatches="0" maxMatches="0">
+            <Match idRef="CEP_AzureEmulatorStorageAccountFilter" />
+            <Match idRef="CEP_CommonExampleKeywords" />
+        </Any>
+  </Pattern>
+</Entity>
+```
+
+### <a name="keywords"></a>关键字
+
+#### <a name="cepazureemulatorstorageaccountfilter"></a>CEP_AzureEmulatorStorageAccountFilter
+
+(请注意, 从技术上讲, 此敏感信息类型通过使用正则表达式 (而不是关键字列表) 来标识这些关键字。
+
+- Eby8vdM02xNOcqFlqUwJPLlmEtlCDXJ1OUzFT50uSRZ6IFsuFq2UVErCz4I6tq/K1SZFPTOtr/KBHBeksoGMGw = =
+
+#### <a name="cepcommonexamplekeywords"></a>CEP_CommonExampleKeywords
+
+(请注意, 从技术上讲, 此敏感信息类型通过使用正则表达式 (而不是关键字列表) 来标识这些关键字。
+
+- 尚未
+- 送交
+- 罗斯
+- 沙盒
+- onebox
+- localhost
+- 127.0.0。1
+- testacs。<!--no-hyperlink-->com
+- s-int.<!--no-hyperlink-->net
+
+## <a name="azure-storage-account-key-generic"></a>Azure 存储帐户密钥 (常规)
+
+### <a name="format"></a>Format
+
+任何86位或大写字母、数字、正斜杠 (/) 或加号 (+) 的任意组合, 前面或后面是下面模式中所述的字符。
+
+### <a name="pattern"></a>模式
+
+- 大于号 (>)、撇号 (')、等号 (=)、引号 (") 或数字符号 (#) 的0-1
+- 86个字符的任意组合, 这些字符为小写字母、数字、斜杠 (/) 或加号 (+)
+- 两个等号 (=)
+
+
+### <a name="checksum"></a>校验和
+
+否
+
+### <a name="definition"></a>定义
+
+在 300 个字符的相似度内，如果出现以下情况，DLP 策略 85% 确信它检测到这种类型的敏感信息：
+- 正则表达式 CEP_Regex_AzureStorageAccountKeyGeneric 找到与该模式匹配的内容。
+
+```
+<!--Azure Storage Account Key (Generic)-->
+<Entity id="7ff41bd0-5419-4523-91d6-383b3a37f084" patternsProximity="300" recommendedConfidence="85">
+  <Pattern confidenceLevel="85">
+        <IdMatch idRef="CEP_Regex_AzureStorageAccountKeyGeneric" />
+  </Pattern>
+</Entity>
+```
+
 ## <a name="belgium-national-number"></a>比利时国家号码
 
 ### <a name="format"></a>Format
@@ -579,7 +1048,7 @@ Office 365 安全&amp;合规中心中的数据丢失防护 (DLP) 包括许多可
 - 六个数字加两个点，采用格式  YY.MM.DD，代表出生日期   
 - 一个连字符  
 - 三个连续的数字（男性用奇数，女性用偶数）  
-- 一个点  
+- 一个点 
 - 两个数字，是校验位
 
 ### <a name="checksum"></a>校验和
@@ -644,7 +1113,7 @@ Office 365 安全&amp;合规中心中的数据丢失防护 (DLP) 包括许多可
 - 三位数字 
 - 一个点  
 - 三位数字 
-- 连字符 
+- 一个连字符  
 - 两个数字，是校验位
 
 纯
@@ -775,9 +1244,9 @@ Registro de Identidade (RIC) (新格式):11 个数字
 Registro Geral（旧格式）：
 - 两个数字  
 - 一个点  
-- 三位数字 
+- 三个数字  
 - 一个点  
-- 三位数字 
+- 三个数字  
 - 一个连字符  
 - 一个数字，是校验位
 
@@ -1301,7 +1770,7 @@ DLP 策略 75% 确信在300个字符的邻近度内检测到此类型的敏感�
 ### <a name="pattern"></a>模式
 
 格式
-- 三个数字  
+- 三位数字 
 - 连字符或空格 
 - 三位数字 
 - 连字符或空格 
@@ -1386,9 +1855,9 @@ DLP 策略 75% 确信在300个字符的邻近度内检测到此类型的敏感�
 7-8 个数字加分隔符：
 - 1-2 个数字  
 - 一个点  
-- 三位数字 
+- 三个数字  
 - 一个点  
-- 三位数字 
+- 三个数字  
 - 一个短划线  
 - 一个数字或字母（不区分大小写），是校验位
 
@@ -1836,7 +2305,7 @@ DLP 策略 75% 确信在300个字符的邻近度内检测到此类型的敏感�
 9个数字 (旧格式):
 - 九个数字
 
-或者
+OR
 
 - 代表出生日期的六个数字
 - 一个正斜杠 
@@ -1845,7 +2314,7 @@ DLP 策略 75% 确信在300个字符的邻近度内检测到此类型的敏感�
 10个数字 (新格式):
 - 10 个数字
 
-或者
+OR
 
 - 代表出生日期的六个数字
 - 一个正斜杠  
@@ -2874,7 +3343,7 @@ bnationalit
 七个字母和数字（旧格式）：
 - 一个字母（希腊字母表中的任一字母）  
 - 一个短划线  
-- 六个数字
+- 六位数字
 
 八个字母和数字（新格式）：
 - 大写字符同时出现在希腊和拉丁字母表中的两个字母 (ABEZHIKMNOPTYX)  
@@ -3042,9 +3511,9 @@ bnationalit
 ### <a name="pattern"></a>模式
 
 12 个数字：
-- 四个数字 
+- 四个数字  
 - 一个可选空格或短划线  
-- 四个数字 
+- 四个数字  
 - 一个可选空格或短划线  
 - 最后一个数字是校验位
 
@@ -3087,7 +3556,7 @@ DLP 策略 75% 确信在300个字符的邻近度内检测到此类型的敏感�
 - 一个点（可选）  
 - 六个数字，采用  DDMMYY 格式，代表出生日期  
 - 一个点（可选）  
-- 四个数字
+- 四位数字
 
 ### <a name="checksum"></a>校验和
 
@@ -4498,7 +4967,83 @@ DLP 策略 75% 确信在300个字符的邻近度内检测到此类型的敏感�
 ### <a name="keywords"></a>关键字
 
 None
-   
+
+## <a name="sql-server-connection-string"></a>SQL Server 连接字符串
+
+### <a name="format"></a>Format
+
+字符串 "user id"、"user id"、"uid" 或 "UserId", 后跟下面模式中所述的字符和字符串。
+
+### <a name="pattern"></a>模式
+
+- 字符串 "user id"、"user id"、"uid" 或 "UserId"
+- 介于1-200 个字母、数字、符号、特殊字符或空格之间的任意组合
+- 字符串 "Password" 或 "pwd", 其中 "pwd" 不以小写字母开头
+- 等号 (=)
+- 任何不是美元符号 ($)、百分号 (%)、大于号 (>)、符号 (@)、引号 (")、分号 (;)、左大括号 ([) 或左中括号 ({) 的任何字符
+- 7-128 个字符的任意组合, 不是分号 (;)、正斜杠 (/) 或引号 (")
+- 一个分号 (;)或引号 (")
+
+### <a name="checksum"></a>校验和
+
+否
+
+### <a name="definition"></a>定义
+
+在 300 个字符的相似度内，如果出现以下情况，DLP 策略 85% 确信它检测到这种类型的敏感信息：
+- 正则表达式 CEP_Regex_SQLServerConnectionString 找到与该模式匹配的内容。
+- 找**不**到 CEP_GlobalFilter 中的关键字。
+- 正则表达式 CEP_PasswordPlaceHolder**未**找到与该模式匹配的内容。
+- 正则表达式 CEP_CommonExampleKeywords**未**找到与该模式匹配的内容。
+
+```
+<!---SQL Server Connection String>
+<Entity id="e76b6205-d3cb-46f2-bd63-c90153f2f97d" patternsProximity="300" recommendedConfidence="85">
+  <Pattern confidenceLevel="85">
+        <IdMatch idRef="CEP_Regex_SQLServerConnectionString" />
+        <Any minMatches="0" maxMatches="0">
+            <Match idRef="CEP_GlobalFilter" />
+            <Match idRef="CEP_PasswordPlaceHolder" />
+            <Match idRef="CEP_CommonExampleKeywords" />
+        </Any>
+    </Pattern>
+</Entity>
+```
+
+### <a name="keywords"></a>关键字
+
+#### <a name="cepglobalfilter"></a>CEP_GlobalFilter
+
+- 部分密码
+- somepassword
+- secretPassword
+- 采用
+
+#### <a name="ceppasswordplaceholder"></a>CEP_PasswordPlaceHolder
+
+(请注意, 从技术上讲, 此敏感信息类型通过使用正则表达式 (而不是关键字列表) 来标识这些关键字。
+
+- 密码或密码后跟0-2 个空格、一个等号 (=)、0-2 个空格和一个星号 (*)--或--
+- 密码或密码后跟:
+    - 等号 (=)
+    - 小于号 (<)
+    - 1-200 个字符的任意组合, 这些字符为大写或小写字母、数字、星号 (*)、连字符 (-)、下划线 (_) 或空白字符
+    - 大于号 (>)
+
+#### <a name="cepcommonexamplekeywords"></a>CEP_CommonExampleKeywords
+
+(请注意, 从技术上讲, 此敏感信息类型通过使用正则表达式 (而不是关键字列表) 来标识这些关键字。
+
+- 尚未
+- 送交
+- 罗斯
+- 沙盒
+- onebox
+- localhost
+- 127.0.0。1
+- testacs。<!--no-hyperlink-->com
+- s-int.<!--no-hyperlink-->net
+
 ## <a name="sweden-national-id"></a>瑞典国家 ID
 
 ### <a name="format"></a>Format
@@ -5098,7 +5643,7 @@ None
 - 六位数字
 - "A"、"B"、"C" 或 "d" (与前缀一样, 后缀中只允许有某些字符; 不区分大小写)
 
-或者
+OR
 
 - 两个字母
 - 一个空格或破折号
