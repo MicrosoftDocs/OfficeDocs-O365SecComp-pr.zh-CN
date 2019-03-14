@@ -11,13 +11,13 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: dd6d2417-49c4-4de6-9294-67fdabbf8532
-description: 你可以将 SIEM 服务器与 Office 365 云应用安全集成。阅读本文, 了解其工作方式以及如何进行设置的概述。
-ms.openlocfilehash: b4baeda3cb836c0b1aa528d29176bbf4321d1fe2
-ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
+description: 你可以将 SIEM 服务器与 Office 365 云应用安全集成。 阅读本文, 了解其工作方式以及如何进行设置的概述。
+ms.openlocfilehash: 82b5e0e6467bd42acba3c40d67e4e0363a7e0f72
+ms.sourcegitcommit: 4abcc03497478abf1ae7fc84792f44360d8e59c1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30215871"
+ms.lasthandoff: 03/12/2019
+ms.locfileid: "30548582"
 ---
 # <a name="integrate-your-siem-server-with-office-365-cloud-app-security"></a>将 SIEM 服务器与 Office 365 云应用安全集成
   
@@ -27,13 +27,13 @@ ms.locfileid: "30215871"
    
 ## <a name="overview-and-prerequisites"></a>概述和先决条件
 
-您可以将[Office 365 云应用安全性](get-ready-for-office-365-cas.md)与安全信息和事件管理 (SIEM) 服务器集成, 以启用对警报的集中式监视。对于使用云服务和本地服务器应用程序的组织而言, 这一点尤其有用。通过与 SIEM 服务器集成, 您的安全团队可以在维护常规安全工作流的同时, 通过自动执行某些安全过程以及在基于云的和本地事件之间关联, 从而更好地保护 Office 365 应用程序。  
+您可以将[Office 365 云应用安全性](get-ready-for-office-365-cas.md)与安全信息和事件管理 (SIEM) 服务器集成, 以启用对警报的集中式监视。 对于使用云服务和本地服务器应用程序的组织而言, 这一点尤其有用。 你可以将 SIEM 服务器集成到 SIEM 服务器中, 以将 Office 365 云应用安全中的警报和活动放入其中。 通过与 SIEM 服务器集成, 您的安全团队可以在维护常规安全工作流的同时, 通过自动执行某些安全过程以及在基于云的和本地事件之间关联, 从而更好地保护 Office 365 应用程序。  
   
-当您首次将 SIEM 服务器与 Office 365 云应用程序集成在一起时, 来自最近两天的警报将被转发到 SIEM 服务器, 以及来自随后的所有警报 (基于您选择的任何筛选器)。此外, 如果您在较长的时间段内禁用此功能, 则再次启用它时, 它会将过去两天的通知转发给过去两天的通知, 然后在上转发所有警报。
+当您首次将 SIEM 服务器与 Office 365 云应用程序集成在一起时, 来自最近两天的警报将被转发到 SIEM 服务器, 以及来自随后的所有警报 (基于您选择的任何筛选器)。 此外, 如果您在较长的时间段内禁用此功能, 则再次启用它时, 它会将过去两天的通知转发给过去两天的通知, 然后在上转发所有警报。
 
 ### <a name="siem-integration-architecture"></a>SIEM 集成体系结构
 
-在组织的网络中设置 SIEM 代理。部署和配置后, SIEM 代理将使用 Office 365 云应用安全 RESTful api 提取已配置 (警报) 的数据类型。然后, 通过端口443上的加密 HTTPS 通道发送流量。
+在组织的网络中设置 SIEM 代理。 部署和配置后, SIEM 代理将使用 Office 365 云应用安全 RESTful api 提取已配置 (警报) 的数据类型。 然后, 通过端口443上的加密 HTTPS 通道发送流量。
   
 当 SIEM 代理从 Office 365 云应用安全中检索数据时, 会使用在安装过程中提供的网络配置 (TCP 或 UDP 具有自定义端口) 将 Syslog 邮件发送到本地 SIEM 服务器。
 
@@ -47,7 +47,7 @@ Office 365 云应用安全目前支持以下 SIEM 服务器:
 
 ### <a name="prerequisites"></a>先决条件
 
-- 您必须是全局管理员或安全管理员才能执行本文中所述的任务。查看[Office 365 安全&amp;合规中心中的权限](permissions-in-the-security-and-compliance-center.md)
+- 您必须是全局管理员或安全管理员才能执行本文中所述的任务。 查看[Office 365 安全&amp;合规中心中的权限](permissions-in-the-security-and-compliance-center.md)
 
 - 您必须为您的组织[启用 Office 365 云应用安全性](turn-on-office-365-cas.md)。
 
@@ -61,7 +61,7 @@ Office 365 云应用安全目前支持以下 SIEM 服务器:
     - 已安装[Oracle Java 8](http://www.oracle.com/technetwork/java/javase/downloads/index.html)
     - 按照[网络要求](https://docs.microsoft.com/cloud-app-security/network-requirements)中所述配置的防火墙
 
-- 您必须具有有关**远程 syslog 主机**和**Syslot 端口号**的详细信息。网络管理员或安全管理员应能够帮助您找到该信息。 
+- 您必须具有有关**远程 syslog 主机**和**Syslot 端口号**的详细信息。 网络管理员或安全管理员应能够帮助您找到该信息。 
 
 - 您必须同意[软件许可条款](https://go.microsoft.com/fwlink/?linkid=862491), 才能下载集成您的 SIEM 服务器所需的[JAR 文件](https://go.microsoft.com/fwlink/?linkid=838596)。
  
@@ -76,26 +76,27 @@ Office 365 云应用安全目前支持以下 SIEM 服务器:
     
 4. 选择 "**启动向导**"。<br/>![获取帮助或启动向导](media/HelpOrWizard.png) 
     
-5. 在 "**常规**" 步骤中, 指定一个名称, 然后**选择您的 SIEM 格式**并设置与该格式相关的任何**高级设置**。然后选择 "**下一步**"。<br/>![指定名称和类型](media/ChooseAgentTypeAndName.png)
+5. 在 "**常规**" 步骤中, 指定一个名称, 然后**选择您的 SIEM 格式**并设置与该格式相关的任何**高级设置**。 然后选择 "**下一步**"。<br/>![指定名称和类型](media/ChooseAgentTypeAndName.png)
     
-6. 在**远程 syslog**步骤中, 指定**远程 syslog 主机**的 IP 地址或主机名和**Syslog 端口号**。选择 "TCP" 或 "UDP" 作为远程 Syslog 协议。(如果您没有这些详细信息, 则可以与网络管理员或安全管理员合作获取这些详细信息。)然后选择 "**下一步**"。<br/>![指定远程 Syslog 详细信息](media/ArcSightS1Syslog.png)
+6. 在**远程 syslog**步骤中, 指定**远程 syslog 主机**的 IP 地址或主机名和**Syslog 端口号**。 选择 "TCP" 或 "UDP" 作为远程 Syslog 协议。 (如果您没有这些详细信息, 则可以与网络管理员或安全管理员合作获取这些详细信息。)然后选择 "**下一步**"。<br/>![指定远程 Syslog 详细信息](media/ArcSightS1Syslog.png)
   
 7. 在 "**数据类型**" 步骤中, 执行下列操作之一, 然后单击 "**下一步**":
-    - 保留**所有通知**的默认设置<br/>或者
-    - 单击 "**所有通知**", 然后选择 "**特定筛选器**"。定义筛选器以选择要发送到 SIEM 服务器的警报类型。<br/>![向导的数据类型步骤](media/ArcSightS1ExportOptions.png)
+    - 保留**所有通知**的默认设置<br/>OR
+    - 单击 "**所有通知**", 然后选择 "**特定筛选器**"。 定义筛选器以选择要发送到 SIEM 服务器的警报类型。
+<br/>![向导的数据类型步骤](media/ArcSightS1ExportOptions.png)
   
 8. 在祝贺屏幕上, 复制令牌并将其保存到稍后。<br/>![SIEM 代理创建屏幕](media/SIEMAgentFinished.png) 
 
 > [!IMPORTANT]
-> 此时, 您已在 Office 365 Cloud App Security 中设置了 SIEM 代理, 但您的 SIEM 服务器集成尚未完成。继续执行下一步, 以继续进行 SIEM 服务器集成。
+> 此时, 您已在 Office 365 Cloud App Security 中设置了 SIEM 代理, 但您的 SIEM 服务器集成尚未完成。 继续执行下一步, 以继续进行 SIEM 服务器集成。
 
-单击 "关闭" 并退出向导后, 在 "安全扩展" 屏幕上, 可以看到您在表中添加的 SIEM 代理。它将显示 "已**创建**" 状态, 直到稍后连接。
+单击 "关闭" 并退出向导后, 在 "安全扩展" 屏幕上, 可以看到您在表中添加的 SIEM 代理。 它将显示 "已**创建**" 状态, 直到稍后连接。
 
 ![创建的 SIEM 代理](media/SIEMAgentCreated.png)
     
 ## <a name="step-2-download-a-jar-file-and-run-it-on-your-siem-server"></a>步骤 2: 下载 JAR 文件并在您的 SIEM 服务器上运行它
 
-1. 下载[Microsoft 云应用安全 SIEM 代理](https://go.microsoft.com/fwlink/?linkid=838596)并解压缩该文件夹。(您必须同意[软件许可条款](https://go.microsoft.com/fwlink/?linkid=862491)才能继续。) 
+1. 下载[Microsoft 云应用安全 SIEM 代理](https://go.microsoft.com/fwlink/?linkid=838596)并解压缩该文件夹。 (您必须同意[软件许可条款](https://go.microsoft.com/fwlink/?linkid=862491)才能继续。) 
     
 2. 从压缩文件夹中提取 .jar 文件, 并在 SIEM 服务器上运行该文件。
     
@@ -116,7 +117,7 @@ Office 365 云应用安全目前支持以下 SIEM 服务器:
     java -jar mcas-siemagent-0.87.20-signed.jar [--logsDirectory DIRNAME] [--proxy ADDRESS[:PORT]] --token TOKEN &
     ```
 
-- 括号 [] 中的参数是可选的, 应仅在相关时使用。使用以下变量:
+- 括号 [] 中的参数是可选的, 应仅在相关时使用。 使用以下变量:
 
     - **DIRNAME**是要用于本地代理调试日志的目录的路径。
 
@@ -155,18 +156,18 @@ Office 365 云应用安全目前支持以下 SIEM 服务器:
 
 |CEF 字段名称  | 说明  |
 |---------|---------|
-|起步     | 警报时间戳        |
-|停止     | 警报时间戳        |
+|start     | 警报时间戳        |
+|end     | 警报时间戳        |
 |rt     | 警报时间戳        |
 |msg     | Office 365 云应用安全门户中所示的警报说明        |
 |suser     | 通知主题用户        |
 |destinationServiceName     | 通知源应用程序 (如 Office 365、SharePoint 或 OneDrive)        |
-|csLabel     | 变化 (标签具有不同的含义)。通常情况下, 标签是一目了然的, 如 targetObjects。        |
+|csLabel     | 变化 (标签具有不同的含义)。 通常情况下, 标签是一目了然的, 如 targetObjects。        |
 |cs     | 与标签对应的信息 (如警报的目标用户, 按标签示例)        |
 
 ## <a name="additional-tasks-as-needed"></a>其他任务 (根据需要)
 
-配置 SIEM 服务器并将其与 Office 365 云应用安全性集成后, 您可能需要重新生成令牌、编辑 SIEM 代理或删除 SIEM 代理。以下各节介绍如何执行这些任务。
+配置 SIEM 服务器并将其与 Office 365 云应用安全性集成后, 您可能需要重新生成令牌、编辑 SIEM 代理或删除 SIEM 代理。 以下各节介绍如何执行这些任务。
 
 ### <a name="regenerate-a-token"></a>重新生成令牌
 
@@ -184,7 +185,7 @@ Office 365 云应用安全目前支持以下 SIEM 服务器:
 
 2. 找到 SIEM 代理的行。 
 
-3. 单击省略号, 然后选择 "**编辑**"。(如果编辑 SIEM 代理, 则无需重新运行 .jar 文件; 它会自动更新。)<br/>![若要编辑您的 SIEM 代理, 请选择省略号, 然后选择 "编辑"。](media/96d0b362-3e0c-4dff-b2b4-d7af5b1bfb91.png)
+3. 单击省略号, 然后选择 "**编辑**"。 (如果编辑 SIEM 代理, 则无需重新运行 .jar 文件; 它会自动更新。) <br/>![若要编辑您的 SIEM 代理, 请选择省略号, 然后选择 "编辑"。](media/96d0b362-3e0c-4dff-b2b4-d7af5b1bfb91.png)
   
 ### <a name="delete-a-siem-agent"></a>删除 SIEM 代理
 

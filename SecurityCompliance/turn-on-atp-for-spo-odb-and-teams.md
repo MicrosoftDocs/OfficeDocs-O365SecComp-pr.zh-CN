@@ -12,30 +12,31 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 07e76024-0c80-40dc-8c48-1dd0d0f863cb
-ms.collection: M365-security-compliance
+ms.collection:
+- M365-security-compliance
 description: 了解如何为 SharePoint、OneDrive 和团队打开 ATP, 包括如何为检测到的文件设置通知。
-ms.openlocfilehash: 88eae37b0da3df75807436d66a5c80e0c40f82d8
-ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
+ms.openlocfilehash: 30eb28bfc5156664656ca1c200f9e999661b3b0c
+ms.sourcegitcommit: 1c73c2f83703af0a30a5b0633db00d8e0e6b39b5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30220392"
+ms.lasthandoff: 02/25/2019
+ms.locfileid: "30242144"
 ---
 # <a name="turn-on-office-365-atp-for-sharepoint-onedrive-and-microsoft-teams"></a>打开适用于 SharePoint、OneDrive 和 Microsoft 团队的 Office 365 ATP
 
-[适用于 SharePoint、OneDrive 和 Microsoft 团队的 Office 365 ATP](atp-for-spo-odb-and-teams.md)可防止您的组织无意中共享恶意文件。检测到恶意文件时, 将阻止该文件, 以便在组织的安全团队执行进一步操作之前, 任何人都无法打开、复制、移动或共享该文件。阅读本文以打开 SharePoint、OneDrive 和团队的 ATP, 设置通知以获得检测到的文件的通知, 并采取后续步骤。 
+[适用于 SharePoint、OneDrive 和 Microsoft 团队的 Office 365 ATP](atp-for-spo-odb-and-teams.md)可防止您的组织无意中共享恶意文件。 检测到恶意文件时, 将阻止该文件, 以便在组织的安全团队执行进一步操作之前, 任何人都无法打开、复制、移动或共享该文件。 阅读本文以打开 SharePoint、OneDrive 和团队的 ATP, 设置通知以获得检测到的文件的通知, 并采取后续步骤。 
   
-若要定义 (或编辑) ATP 策略, 必须为您分配适当的角色。下表介绍了一些示例:
+若要定义 (或编辑) ATP 策略, 必须为您分配适当的角色。 下表介绍了一些示例:
 
 |角色  |分配的位置/方式  |
 |---------|---------|
-|Office 365 全局管理员 |默认情况下, 注册购买 Office 365 的人是全局管理员。(请参阅[关于 Office 365 管理员角色](https://docs.microsoft.com/office365/admin/add-users/about-admin-roles)以了解详细信息。)         |
+|Office 365 全局管理员 |默认情况下, 注册购买 Office 365 的人是全局管理员。 (请参阅[关于 Office 365 管理员角色](https://docs.microsoft.com/office365/admin/add-users/about-admin-roles)以了解详细信息。)         |
 |Security Administrator |Azure Active Directory 管理中心 ([https://aad.portal.azure.com](https://aad.portal.azure.com))|
-|Exchange Online 组织管理 |Exchange 管理中心 ([https://outlook.office365.com/ecp](https://outlook.office365.com/ecp)) <br>或 <br>  PowerShell cmdlet (请参阅[Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/exchange-online-powershell?view=exchange-ps)) |
+|Exchange Online 组织管理 |Exchange 管理中心 ([https://outlook.office365.com/ecp](https://outlook.office365.com/ecp)) <br>或者 <br>  PowerShell cmdlet (请参阅[Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/exchange-online-powershell?view=exchange-ps)) |
   
 ## <a name="turn-on-atp-for-sharepoint-onedrive-and-microsoft-teams"></a>启用适用于 SharePoint、OneDrive 和 Microsoft Teams 的 ATP
 
-在**开始此过程之前, 请确保已为您的 Office 365 环境启用审核日志记录**。这通常由在 Exchange Online 中分配了审核日志角色的人完成。有关详细信息, 请参阅[打开或关闭 Office 365 审核日志搜索](turn-audit-log-search-on-or-off.md)。
+在**开始此过程之前, 请确保已为您的 Office 365 环境启用审核日志记录**。 这通常由在 Exchange Online 中分配了审核日志角色的人完成。 有关详细信息, 请参阅[打开或关闭 Office 365 审核日志搜索](turn-audit-log-search-on-or-off.md)。
   
 1. 转到[https://protection.office.com](https://protection.office.com), 然后使用你的工作或学校帐户登录。
     
@@ -48,8 +49,8 @@ ms.locfileid: "30220392"
 5. 查看 (并根据需要编辑) 您组织的[安全附件策略](set-up-atp-safe-attachments-policies.md)和[安全链接策略](set-up-atp-safe-links-policies.md)。
     
 6. 适合作为全局管理员或 SharePoint Online 管理员, 运行**[set-spotenant](https://docs.microsoft.com/powershell/module/sharepoint-online/Set-SPOTenant?view=sharepoint-ps)** cmdlet, 并将**DisallowInfectedFileDownload**参数设置为*true*。 <br/>
-      - 如果将参数设置为*true, 则*会阻止检测到的文件的所有操作 (删除除外)。用户无法打开、移动、复制或共享检测到的文件。
-      - 将参数设置为*false*将阻止除 "删除" 和 "下载" 以外的所有操作。用户可以选择接受风险并下载检测到的文件。  
+      - 如果将参数设置为*true, 则*会阻止检测到的文件的所有操作 (删除除外)。 用户无法打开、移动、复制或共享检测到的文件。
+      - 将参数设置为*false*将阻止除 "删除" 和 "下载" 以外的所有操作。 用户可以选择接受风险并下载检测到的文件。  
    
 7. 允许最长30分钟的更改传播到所有的 Office 365 数据中心。
     
@@ -67,13 +68,13 @@ ms.locfileid: "30220392"
     
 2. 选择 "**新建警报策略**"。
     
-3. 指定警报的名称。例如, 可以在库中键入恶意文件。
+3. 指定警报的名称。 例如, 可以在库中键入恶意文件。
     
-4. 键入警报的说明。例如, 可以键入在 SharePoint Online、OneDrive 或 Microsoft 团队中检测到恶意文件时通知管理员。
+4. 键入警报的说明。 例如, 可以键入在 SharePoint Online、OneDrive 或 Microsoft 团队中检测到恶意文件时通知管理员。
     
 5. 在 "**发送此通知**的条件 ..." 部分, 执行下列操作: 
     
-    在 "**活动**" 列表中, 选择 "**文件中检测到的恶意软件**"。
+    a. 在 "**活动**" 列表中, 选择 "**文件中检测到的恶意软件**"。
     
     b. 将 "**用户**" 字段留空。 
     

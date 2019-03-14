@@ -15,12 +15,12 @@ ms.assetid: 3387bfc3-028a-42f4-8133-4cbecfaab812
 ms.collection:
 - M365-security-compliance
 description: 了解 Office 365 威胁调查和响应功能如何帮助您的组织检测入侵和威胁, 并快速缓解和恢复威胁。
-ms.openlocfilehash: 4cb1355e841ee4b416bf5471872421b4c05433c5
-ms.sourcegitcommit: 74ad22a5c6c3c9d9324f0f97070909e323a4e9cf
+ms.openlocfilehash: 924ec3522b056b267f5e8af394f380aaff8392a2
+ms.sourcegitcommit: f25a667e4c7d11c43c87604d576f1e6d6155b14f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 03/11/2019
-ms.locfileid: "30524026"
+ms.locfileid: "30536132"
 ---
 # <a name="keep-your-office-365-users-safe-with-office-365-threat-investigation-and-response-capabilities"></a>使用 office 365 威胁调查和响应功能保持 office 365 用户安全
 
@@ -31,7 +31,7 @@ ms.locfileid: "30524026"
 [office 365 威胁调查和响应](office-365-ti.md)是 office 365 E5 订阅中包含的一系列功能。 Office 365 威胁调查和响应功能已帮助 Microsoft IT 将社会工程活动的平均解决时间降低了 80%, 并将每月的大小写提高了 200%, 与前两个季度相比! 
 
 > [!IMPORTANT]
-> office 365 高级威胁防护和威胁智能现在是 office 365 高级威胁防护计划2的一部分, 其中包含其他威胁防护功能。 若要了解详细信息, 请参阅[office 365 高级威胁防护计划和定价](https://products.office.com/exchange/advance-threat-protection)以及[Office 365 高级威胁防护服务说明](https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description)。
+> office 365 高级威胁防护和威胁调查和响应 (以前称为 office 365 威胁智能) 现在是 office 365 高级威胁防护计划2的一部分, 其中包含其他威胁保护功能。 若要了解详细信息, 请参阅[office 365 高级威胁防护计划和定价](https://products.office.com/exchange/advance-threat-protection)以及[Office 365 高级威胁防护服务说明](https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description)。
   
 我们最近添加了新功能, 可帮助改进检测和恢复威胁的方式! 下面简单介绍了更新后的威胁调查和响应功能如何提高效率。
   
@@ -60,7 +60,7 @@ ms.locfileid: "30524026"
 Office 365 威胁调查和响应功能使用 Microsoft 智能安全图形中的数据提供支持。 graph 从 1000000000 Windows 设备、450000000000每月 Azure 登录和 400000000000 Office 365 中的每月电子邮件获取最新的威胁信号。 这一无与伦比的威胁信号是为管理员和安全分析员提供了对影响其组织的威胁的完整视图的客户租户的广泛可见性。 
   
    
-## <a name="why-threat-intelligence"></a>为什么要进行威胁智能？
+## <a name="why-use-office-365-threat-investigation-and-response-capabilities"></a>为什么要使用 Office 365 威胁调查和响应功能？
 
 Gartner 估计在2017中仅限 $ 90B 用在 cybersecurity 上。 Sid Deshpande (Gartner 的主要研究分析师) 的报价如下所示: "业界转向检测和响应的方式 .。。 发送清除阻止的 futile, 除非将其绑定到检测和响应功能。 威胁 investigtion 和响应是每个企业的一系列服务的关键组成部分, 可作为独立服务或作为 Office 365 E5 的一部分使用。
   

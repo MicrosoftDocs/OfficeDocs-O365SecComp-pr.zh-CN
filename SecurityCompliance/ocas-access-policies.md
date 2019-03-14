@@ -6,16 +6,16 @@ manager: laurawi
 ms.reviewer: alesibov
 ms.audience: Admin
 ms.topic: reference
-ms.date: 02/14/2019
+ms.date: 02/27/2019
 ms.service: O365-seccomp
 localization_priority: Normal
-description: Office 365 云应用安全访问策略支持实时监视和控制基于用户、位置、设备和应用程序对云应用的访问。您可以为任何设备 (包括未加入域的设备) 创建访问策略, 而不是通过将客户端证书滚动到托管设备或使用现有证书 (如第三方 MDM 证书) 来管理 Windows Intune。例如, 可以将客户端证书部署到托管设备, 然后阻止不使用证书的设备的访问。
-ms.openlocfilehash: a8651cb51419c93998f2ce6e176fab7c1651b6ea
-ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
+description: Office 365 云应用安全访问策略支持实时监视和控制基于用户、位置、设备和应用程序对云应用的访问。 您可以为任何设备 (包括未加入域的设备) 创建访问策略, 而不是通过将客户端证书滚动到托管设备或使用现有证书 (如第三方 MDM 证书) 来管理 Windows Intune。 例如, 可以将客户端证书部署到托管设备, 然后阻止不使用证书的设备的访问。
+ms.openlocfilehash: 5e8b8fa293420bc9ff3616daf288b8e02a2eb768
+ms.sourcegitcommit: 866d8cab6bcfdd124516a8369e47ec797bc7cf8a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30219772"
+ms.lasthandoff: 02/27/2019
+ms.locfileid: "30312079"
 ---
 # <a name="access-policies-in-office-365-cloud-app-security"></a>Office 365 云应用安全中的访问策略
 
@@ -23,7 +23,7 @@ ms.locfileid: "30219772"
 |:-----|:-----|:-----|:-----|
 |[开始评估](office-365-cas-overview.md) <br/> |[开始规划](get-ready-for-office-365-cas.md) <br/> |你在这里!  <br/> [后续步骤](group-your-ip-addresses-in-ocas.md) <br/> |[开始利用](utilization-activities-for-ocas.md) <br/> |
 
-Office 365 云应用安全访问策略支持实时监视和控制基于用户、位置、设备和应用程序对云应用的访问。您可以为任何设备 (包括未加入域的设备) 创建访问策略, 而不是通过将客户端证书滚动到托管设备或使用现有证书 (如第三方 MDM 证书) 来管理 Windows Intune。例如, 可以将客户端证书部署到托管设备, 然后阻止不使用证书的设备的访问。
+Office 365 云应用安全访问策略支持实时监视和控制基于用户、位置、设备和应用程序对云应用的访问。 您可以为任何设备 (包括未加入域的设备) 创建访问策略, 而不是通过将客户端证书滚动到托管设备或使用现有证书 (如第三方 MDM 证书) 来管理 Windows Intune。 例如, 可以将客户端证书部署到托管设备, 然后阻止不使用证书的设备的访问。
 
  [会话策略](ocas-session-policies.md) 不会完全允许或阻止访问, 而是在监视会话和/或限制特定会话活动时允许访问。
 
@@ -37,7 +37,7 @@ Office 365 云应用安全访问策略支持实时监视和控制基于用户、
 
 ## <a name="create-an-azure-ad-conditional-access-policy"></a>创建 Azure AD 条件访问策略
 
-Azure Active Directory 条件访问策略和云应用安全会话策略一起运行, 以检查每个用户会话并为每个应用制定策略决策。若要在 Azure AD 中设置条件访问策略, 请按照以下过程操作:
+Azure Active Directory 条件访问策略和云应用安全会话策略一起运行, 以检查每个用户会话并为每个应用制定策略决策。 若要在 Azure AD 中设置条件访问策略, 请按照以下过程操作:
 
 1. 使用用户或用户组的工作分配以及要使用条件访问应用程序控件控制的应用程序配置 [Azure AD 条件访问策略](https://docs.microsoft.com/azure/active-directory/active-directory-conditional-access-azure-portal) 。<br>注意: 仅此策略会影响 [使用条件访问应用程序控件](https://docs.microsoft.com/cloud-app-security/proxy-deployment-aad) 部署的应用程序。
 
@@ -53,7 +53,7 @@ Azure Active Directory 条件访问策略和云应用安全会话策略一起运
 
 3. 在 " **访问策略** " 窗口中, 为策略分配一个名称, 例如 " *阻止来自非托管设备的访问*"。
 
-4. 在 **匹配以下** 所有部分的活动中, 在 " **活动源**" 下, 选择 "要应用于策略的其他活动筛选器"。筛选器包括以下选项:
+4. 在 **匹配以下** 所有部分的活动中, 在 " **活动源**" 下, 选择 "要应用于策略的其他活动筛选器"。 筛选器包括以下选项:
     
     - **设备标记**: 使用此筛选器可标识非托管设备。
     
@@ -61,7 +61,7 @@ Azure Active Directory 条件访问策略和云应用安全会话策略一起运
     
     - **IP 地址**: 使用此筛选器筛选每个 IP 地址或使用之前分配的 ip 地址标记。
     
-    - **用户代理标记**: 使用此筛选器可启用启发, 以确定移动和桌面应用。此筛选器可设置为等于或不等于。应针对每个云应用对移动和桌面应用程序测试这些值。
+    - **用户代理标记**: 使用此筛选器可启用启发, 以确定移动和桌面应用。 此筛选器可设置为等于或不等于。 应针对每个云应用对移动和桌面应用程序测试这些值。
 
 5. 在 " **操作**" 下, 选择下列选项之一:
     

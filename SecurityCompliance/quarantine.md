@@ -1,7 +1,7 @@
 ---
 title: 隔离
-ms.author: krowley
-author: kccross
+ms.author: tracyp
+author: MSFTTracyP
 manager: laurawi
 ms.date: 6/16/2017
 ms.audience: ITPro
@@ -11,14 +11,16 @@ ms.custom: TN2DMC
 localization_priority: Normal
 search.appverid:
 - MET150
-ms.assetid: e9eecdde-dcc2-4283-a820-98d1e740e4f1
-description: 了解有关托管隔离邮箱的 Exchange Online 和 Exchange Online Protection。
-ms.openlocfilehash: 2455f912fbe3b309e3759a0fdc3fd7df7ed47390
-ms.sourcegitcommit: e9dca2d6a7838f98bb7eca127fdda2372cda402c
+ms.assetid: e9eecdde-dcc2-4283-a820-98d1e740e4f
+ms.collection:
+- M365-security-compliance
+description: 了解 exchange online 和 exchange online Protection 的托管隔离。
+ms.openlocfilehash: 9d0f00f5305838f1862eebdc649de0205679d282
+ms.sourcegitcommit: 173936324ea015d788703440924ec8a9fb0db88b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/21/2018
-ms.locfileid: "23003001"
+ms.lasthandoff: 03/08/2019
+ms.locfileid: "30510209"
 ---
 # <a name="quarantine"></a>隔离
 
@@ -28,10 +30,10 @@ ms.locfileid: "23003001"
     
 - [以管理员身份查找并释放隔离邮件](find-and-release-quarantined-messages-as-an-administrator.md) - 介绍管理员如何在 Exchange 管理中心 (EAC) 中查找和释放位于隔离邮箱中的任何邮件，并选择向 Microsoft 将其报告为误报（非垃圾邮件）。 
     
-- [Find and Release Quarantined Messages （最终用户）](http://technet.microsoft.com/library/e439b560-827a-4807-abd3-6b861c1ff786.aspx) -介绍最终用户可以查找和释放垃圾邮件隔离用户界面，其自己的垃圾邮件隔离邮件并向 Microsoft 将其报告为非垃圾邮件。 
+- [查找并释放隔离邮件 (最终用户)](http://technet.microsoft.com/library/e439b560-827a-4807-abd3-6b861c1ff786.aspx) -介绍最终用户如何在垃圾邮件隔离用户界面中查找和释放自己的垃圾邮件隔离邮件, 并将其报告为非垃圾邮件到 Microsoft。 
     
     > [!IMPORTANT]
-    > 为了访问最终用户垃圾邮件隔离，最终用户必须具有有效的 Office 365 用户 ID 和密码。保护内部部署邮箱的 EOP 客户必须是有效的电子邮件用户通过目录同步或 EAC 创建。有关管理用户的详细信息，EOP 管理员可以引用[在 EOP 中的管理邮件用户](eop/manage-mail-users-in-eop.md)。对于独立 EOP 客户，我们建议使用目录同步和启用 Directory Based Edge Blocking;有关详细信息，请参阅[使用 Directory Based Edge Blocking to Reject Messages Sent to Invalid Recipients](http://technet.microsoft.com/library/ca7b7416-92ed-40ad-abdb-695be46ea2e4.aspx)。 
+    > 若要访问最终用户垃圾邮件隔离邮箱，最终用户必须具有有效 Office 365 用户 ID 和密码。 保护本地邮箱的 EOP 客户必须是通过目录同步或 EAC 创建的有效电子邮件用户。 有关管理用户的详细信息, EOP 管理员可以参阅[Manage mail users in EOP](eop/manage-mail-users-in-eop.md)。 对于 EOP 独立客户，建议使用目录同步并启用基于目录的边缘阻止，有关详细信息，请参阅[使用基于目录的边缘阻止拒绝发送给无效收件人的邮件](http://technet.microsoft.com/library/ca7b7416-92ed-40ad-abdb-695be46ea2e4.aspx)。 
   
     
 

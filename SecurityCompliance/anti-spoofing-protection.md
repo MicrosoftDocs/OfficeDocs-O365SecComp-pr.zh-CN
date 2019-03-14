@@ -15,12 +15,12 @@ ms.collection:
 - M365-security-compliance
 - Strat_O365_IP
 description: 本文介绍了 Office 365 如何缓解使用伪造的发件人域 (即欺骗的域) 的网络钓鱼攻击。 这是通过分析邮件并阻止可通过使用标准电子邮件身份验证方法 (也不是其他发件人信誉技术) 进行身份验证的邮件来完成的。 此更改已实现, 以减少对 Office 365 中的组织公开的网络钓鱼攻击的数量。
-ms.openlocfilehash: 422bac2ad5fd0c58928d79467721204b20583fd7
-ms.sourcegitcommit: 5d6be2b208dbe28d5d5da057c60cf97729799c1b
+ms.openlocfilehash: 377bc75e7538dacab1180045ddfdeb1a2ac32a65
+ms.sourcegitcommit: 5eb664b6ecef94aef4018a75684ee4ae66c486bb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/07/2019
-ms.locfileid: "30465479"
+ms.lasthandoff: 03/08/2019
+ms.locfileid: "30492871"
 ---
 # <a name="anti-spoofing-protection-in-office-365"></a>Office 365 中的防欺骗保护
 
@@ -92,7 +92,7 @@ Authentication-Results:
 
 ```
 
-|**CompAuth 结果**|**Description**|
+|**CompAuth 结果**|**说明**|
 |:-----|:-----|
 |失败|消息无法显式身份验证 (在 dns 中显式发送域已发布的记录) 或隐式身份验证 (发送域在 dns 中未发布记录, 因此 Office 365 将结果插上为已发布的记录一样)。|
 |超出|邮件已通过显式身份验证 (通过 DMARC 传递的邮件, 或[最佳推测传递的 DMARC](https://blogs.msdn.microsoft.com/tzink/2015/05/06/what-is-dmarc-bestguesspass-in-office-365)) 或具有高可信度的隐式身份验证 (发送域不会发布电子邮件身份验证记录, 但 Office 365 具有强大的后端信号来指明邮件可能是合法的。|
@@ -101,7 +101,7 @@ Authentication-Results:
    
 |||
 |:-----|:-----|
-|**原因**|**Description**|
+|**原因**|**说明**|
 |0xx|邮件的复合身份验证失败。<br/>**000**表示邮件失败, DMARC 操作为 "拒绝" 或 "隔离"。  <br/>**001**表示邮件的隐式电子邮件身份验证失败。 这意味着发送域未发布电子邮件身份验证记录, 或者如果用户执行了此操作, 则它们具有较弱的失败策略 (SPF soft fail 或中立性, p = none 的 DMARC 策略)。  <br/>**002**表示组织具有对发件人/域对 (明确禁止发送欺骗电子邮件) 的策略, 管理员手动设置此设置。  <br/>**010**表示邮件失败, DMARC 操作为 "拒绝或隔离", 并且发送域是组织的接受域之一 (这是自到自助或组织内电子欺骗的一部分)。  <br/>**011**表示邮件的隐式电子邮件身份验证失败, 并且发送域是组织的接受域之一 (这是自到自助或组织内电子欺骗的一部分)。|
 |所有其他代码 (1xx、2xx、3xx、4xx、5xx)|对应于邮件通过隐式身份验证传递的原因的各种内部代码, 或者不进行身份验证但未应用任何操作。|
    
@@ -253,7 +253,7 @@ To: someone@example.com
   
 有多种不同的方法可欺骗邮件 (请参阅本文前面的[不同类型的欺骗之间的区分](#differentiating-between-different-types-of-spoofing)), 但从3月2018日起, Office 365 处理这些邮件的方式还不是统一的。 下表是一个快速摘要, 其中包含跨域欺骗保护的新行为: 
   
-|**哄骗类型**|**Category**|**是否添加安全提示？**|**应用于**|
+|**哄骗类型**|**类别**|**是否添加安全提示？**|**应用于**|
 |:-----|:-----|:-----|:-----|
 |DMARC 失败 (隔离或拒绝)  <br/> |HSPM (默认值), 也可以是 SPM 或 PHSH  <br/> |否 (尚未)  <br/> |所有 Office 365 客户, Outlook.com  <br/> |
 |自到自我  <br/> |SPM  <br/> |是  <br/> |所有 Office 365 组织, Outlook.com  <br/> |
@@ -415,7 +415,7 @@ Set-PhishFilterPolicy -Identity Default -SpoofAllowBlockList $UpdateSpoofedSende
   
 通常情况下, 应用于邮件的策略在 CAT (Category) 属性中的 X-Forefront-反垃圾邮件报告标头中进行标识。
   
-|**Priority**|**政策**|**Category**|**在什么情况下托管？**|**应用于**|
+|**Priority**|**策略**|**类别**|**在什么情况下托管？**|**应用于**|
 |:-----|:-----|:-----|:-----|:-----|
 |1  <br/> |受到  <br/> |MALW  <br/> |[恶意软件策略](configure-anti-malware-policies.md) <br/> |所有组织  <br/> |
 |双面  <br/> |骗术  <br/> |PHSH  <br/> |[配置垃圾邮件筛选器策略](configure-your-spam-filter-policies.md) <br/> |所有组织  <br/> |
@@ -428,7 +428,7 @@ Set-PhishFilterPolicy -Identity Default -SpoofAllowBlockList $UpdateSpoofedSende
 
 如果有多个不同的反网络钓鱼策略, 则会应用最高优先级的策略。 例如, 假设您有两个策略:
 
-|**政策**|**Priority**|**用户/域模拟**|**反欺骗**|
+|**策略**|**Priority**|**用户/域模拟**|**反欺骗**|
 |:-----|:-----|:-----|:-----|
 |A  <br/> |1  <br/> |位置  <br/> |关  <br/> |
 |B  <br/> |双面  <br/> |关  <br/> |位置  <br/> |

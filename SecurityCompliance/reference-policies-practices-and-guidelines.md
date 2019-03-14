@@ -1,7 +1,7 @@
 ---
 title: 参考：策略、实践和指南
-ms.author: krowley
-author: kccross
+ms.author: tracyp
+author: MSFTTracyP
 manager: laurawi
 ms.date: 12/9/2016
 ms.audience: ITPro
@@ -12,13 +12,15 @@ localization_priority: Normal
 search.appverid:
 - MET150
 ms.assetid: ff3f140b-b005-445f-bfe0-7bc3f328aaf0
-description: Microsoft 开发不同的策略，过程，并采用多种行业最佳实践来帮助保护滥用，不需要，或恶意电子邮件从我们的用户。
-ms.openlocfilehash: e552128a06ce942383e7c5410508df61331fb874
-ms.sourcegitcommit: e9dca2d6a7838f98bb7eca127fdda2372cda402c
+ms.collection:
+- M365-security-compliance
+description: Microsoft 制定了各种策略和过程, 并采用了几个行业最佳实践来帮助我们的用户避免滥用、不受欢迎或恶意的电子邮件。
+ms.openlocfilehash: a7f29ed77b373ee2b66831e074fda16fcda30508
+ms.sourcegitcommit: 686bc9a8f7a7b6810a096f07d36751d10d334409
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/21/2018
-ms.locfileid: "23003081"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "30276362"
 ---
 # <a name="reference-policies-practices-and-guidelines"></a>参考：策略、实践和指南
   
@@ -86,14 +88,14 @@ Microsoft 积极与行业机构和服务提供商合作，以改善互联网和�
   
 - [信息传送、恶意软件和移动反滥用工作组](https://www.m3aawg.org/)
     
-- [联机信任联盟](https://www.otalliance.org/resources)
+- [在线信任联盟](https://www.otalliance.org/resources)
     
-- [发件人的电子邮件&amp;提供程序联盟](http://www.espcoalition.org/)
+- [Email Sender &amp; Provider Coalition](http://www.espcoalition.org/)
     
 ## <a name="abuse-and-spam-reporting"></a>滥用和垃圾邮件报告
 <a name="AbuseSpamReports"> </a>
 
-若要报告非法、 滥用、 不需要或恶意电子邮件，请[在 web 上的 Outlook 中的电子邮件和网络钓鱼诈骗垃圾邮件的报告](report-junk-email-and-phishing-scams-in-outlook-on-the-web-eop.md)。发送这些类型的通信是违反了 Microsoft 策略和经确认的报表上不会执行相应操作。
+若要报告非法、滥用、不受欢迎或恶意的电子邮件, 请[在 web 上的 Outlook 中报告垃圾电子邮件和网络钓鱼诈骗](report-junk-email-and-phishing-scams-in-outlook-on-the-web-eop.md)。 发送这些类型的通信将违反 Microsoft 策略，我们将对已确认的报告采取适当措施。
   
 ## <a name="law-enforcement"></a>法律执行
 <a name="sectionSection7"> </a>

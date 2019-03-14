@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 使用 Office 365 中的 dlp 报告, 您可以快速查看 dlp 策略匹配、覆盖或误报的数量;查看它们是按时间趋势上升还是下降;以不同的方式筛选报表;并在图表上的某一行上选择一个点, 以查看其他详细信息。
-ms.openlocfilehash: 6f97a29b5a80eeff60b13ba4467d44e3ef87b028
-ms.sourcegitcommit: 6aa82374eef09d2c1921f93bda3eabeeb28aadeb
+ms.openlocfilehash: bd2bc63fa3e2ea08f44ddb3923786010c59e829f
+ms.sourcegitcommit: 173936324ea015d788703440924ec8a9fb0db88b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/06/2019
-ms.locfileid: "30454844"
+ms.lasthandoff: 03/08/2019
+ms.locfileid: "30510219"
 ---
 # <a name="view-the-reports-for-data-loss-prevention"></a>查看数据丢失防护报告
 
@@ -71,6 +71,16 @@ ms.locfileid: "30454844"
   
 ![单击见解图标可查看详细信息和要执行的操作](media/51782036-7299-4960-8175-75c2b1637159.png)
   
+## <a name="permissions-for-dlp-reports"></a>DLP 报告的权限
+
+若要在 Security & 合规性中心中查看 DLP 报告, 您必须分配:
+
+- Exchange 管理中心中的**安全读者**角色。 默认情况下, 将此角色分配给 Exchange 管理中心中的 "组织管理" 和 "安全读者" 角色组。
+
+- Security & 合规性中心中**仅查看 DLP 合规性管理**角色。 默认情况下, 将此角色分配给安全 & 合规中心中的合规性管理员、组织管理、安全管理员和安全读者角色组。
+
+- Exchange 管理中心中的 "**仅查看收件人**" 角色。 默认情况下, 将此角色分配给 Exchange 管理中心中的合规性管理、组织管理和仅查看组织管理角色组。
+
 ## <a name="find-the-cmdlets-for-the-dlp-reports"></a>查找 DLP 报告的 cmdlet
 
 若要将大多数 cmdlet 用于安全&amp;合规性中心, 您需要执行以下操作:
