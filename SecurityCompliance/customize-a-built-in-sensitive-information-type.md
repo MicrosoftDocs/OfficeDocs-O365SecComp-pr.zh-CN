@@ -8,18 +8,18 @@ ms.audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Priority
-ms.collection: Strat_O365_IP
+ms.collection:
+- M365-security-compliance
 search.appverid:
 - MOE150
 - MET150
-ms.assetid: 2164ce3d-4d64-4283-b6b1-b81fbe835e8e
 description: 在内容中查找敏感信息时，需要在规则中描述相应信息。数据丢失防护 (DLP) 包含最常见敏感信息类型对应的规则，可供立即使用。若要使用这些规则，必须将它们添加到策略中。你可能会发现，需要调整这些内置规则，才能满足组织的特定需求。为此，请创建自定义敏感信息类型。本主题介绍了如何将包含现有规则集合的 XML 文件自定义为，检测更广泛的潜在信用卡信息。
-ms.openlocfilehash: 6ac047bc6d8ce601dd8f582a429c1dd7353aa48e
-ms.sourcegitcommit: 48fa456981b5c52ab8aeace173c8366b9f36723b
+ms.openlocfilehash: 9596fe6aac92dca4d2dd66b5eff13005c5c6724b
+ms.sourcegitcommit: 6aa82374eef09d2c1921f93bda3eabeeb28aadeb
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/28/2019
-ms.locfileid: "30341453"
+ms.lasthandoff: 03/06/2019
+ms.locfileid: "30455424"
 ---
 # <a name="customize-a-built-in-sensitive-information-type"></a>自定义内置敏感信息类型
 
@@ -44,7 +44,7 @@ ms.locfileid: "30341453"
      `Set-Content -path "C:\custompath\exportedRules.xml" -Encoding Byte -Value $ruleCollections.SerializedClassificationRuleCollection`
     
     > [!IMPORTANT]
-    > 请务必使用规则包实际存储到的文件位置。`C:\custompath\` 是占位符。 
+    > 确保使用规则包实际存储的文件位置。  `C:\custompath\` 是一个占位符。 
   
 ## <a name="find-the-rule-that-you-want-to-modify-in-the-xml"></a>在 XML 中查找要修改的规则
 
