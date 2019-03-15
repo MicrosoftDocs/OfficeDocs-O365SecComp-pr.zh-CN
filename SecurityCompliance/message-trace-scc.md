@@ -9,12 +9,12 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: 3e64f99d-ac33-4aba-91c5-9cb4ca476803
 description: 管理员可以使用安全 & 合规中心中的邮件跟踪来查明邮件发生了什么情况。
-ms.openlocfilehash: 73d4aa6f9a12b8e1bf955dad09e4c4ca7290dae8
-ms.sourcegitcommit: 74ad22a5c6c3c9d9324f0f97070909e323a4e9cf
+ms.openlocfilehash: ebfc8d5e19bbc45c32ad65451f3f850662f358b4
+ms.sourcegitcommit: f86383dcb9c52352661d51b22617f1809445beaa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/11/2019
-ms.locfileid: "30524086"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "30573546"
 ---
 # <a name="message-trace-in-the-security--compliance-center"></a>Security & 合规性中心中的邮件跟踪
 
@@ -56,8 +56,8 @@ Security & 合规性中心中的邮件跟踪改进了在 Exchange 管理中心 (
 
 - 对于**以下人员**: 在此字段中单击以选择组织中的一个或多个收件人。
 
-> [!NOTE]您还可以键入外部发件人和收件人的电子邮件地址。 支持通配符 (`*@contoso.com`或`scot?@contoso.com`), 但不能同时在同一字段中使用多个通配符条目。
-> [!NOTE]可以粘贴多个发件人或收件人列表, 用`;`分号 () 分隔。 允许使用`\s`空格 ()、回车`\r`符 () 或下`\n`一行 () 符号。
+> [!NOTE]
+> 您还可以键入外部发件人和收件人的电子邮件地址。 支持通配符 (`*@contoso.com`或`scot?@contoso.com`), 但不能同时在同一字段中使用多个通配符条目。<br/>可以粘贴多个发件人或收件人列表, 用`;`分号 () 分隔。 允许使用`\s`空格 ()、回车`\r`符 () 或下`\n`一行 () 符号。
 
 ### <a name="time-range"></a>时间范围
 
@@ -339,7 +339,7 @@ Security & 合规性中心中的邮件跟踪改进了在 Exchange 管理中心 (
 |`DI=SJ`|邮件已发送至收件人的"垃圾邮件"文件夹。|
 |`DI=SN`|邮件已通过高风险传送池路由。 有关详细信息, 请参阅[出站邮件的高风险传递池](https://technet.microsoft.com/library/jj200746.aspx)。|
 |`DI=SO`|邮件已通过正常出站传送池路由。|
-|"SFS = [a]|SFS = [b] '|说明匹配此垃圾邮件规则。|
+|`SFS=[a]|SFS=[b]`|说明匹配此垃圾邮件规则。|
 |`IPV=CAL`|邮件已通过垃圾邮件筛选器允许，因为已在连接筛选器中的 IP 允许列表中指定该 IP 地址。|
 |`H=<EHLOstring>`|连接电子邮件服务器的 HELO 或 EHLO 字符串。|
 |`PTR=<ReverseDNS>`|发送 IP 地址的 PTR 记录，也被称为反向 DNS 地址。|
@@ -354,7 +354,7 @@ Security & 合规性中心中的邮件跟踪改进了在 Exchange 管理中心 (
 
 |**值**|**说明**|
 |:-----|:-----|
-|' AMA = SUM|v=1|` or `AMA=EV|v = 1 '|已确定此邮件包含恶意软件。 `SUM`指示任意数量的引擎可能检测到恶意软件。 `EV`指示特定引擎检测到恶意软件。 引擎检测到恶意软件后，将触发后续操作。|
+|`AMA=SUM|v=1|` 或 `AMA=EV|v=1`|已确定此邮件包含恶意软件。 `SUM`指示任意数量的引擎可能检测到恶意软件。 `EV`指示特定引擎检测到恶意软件。 引擎检测到恶意软件后，将触发后续操作。|
 |`Action=r`|邮件已被替换。|
 |`Action=p`|邮件已被忽略。|
 |`Action=d`|邮件已被延迟。|
@@ -377,7 +377,7 @@ Security & 合规性中心中的邮件跟踪改进了在 Exchange 管理中心 (
 
 |**值**|**说明**|
 |:-----|:-----|
-|' ETR|ruleId =<guid>`|匹配的规则 ID。|
+|`ETR|ruleId=<guid>`|匹配的规则 ID。|
 |`St=<datetime>`|发生规则匹配时的日期和时间 (以 UTC 为单位)。|
 |`Action=<ActionDefinition>`|应用的操作。 有关可用操作的列表, 请参阅[Exchange Online 中的邮件流规则操作](https://technet.microsoft.com/library/jj919237.aspx)。|
 |`Mode=<Mode>`|规则模式。 有效值为： <br/>•**强制实施**: 将强制执行对规则的所有操作。 <br/>•**使用策略提示进行测试:**: 将发送所有策略提示操作, 但不会对其他强制操作执行操作。 <br/>•**测试没有策略提示**: 将在日志文件中列出操作, 但不会以任何方式通知发件人, 并且不会对强制性操作进行处理。|

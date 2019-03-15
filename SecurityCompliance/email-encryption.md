@@ -1,10 +1,27 @@
 ---
-标题: "Office 365 中的电子邮件加密" ms. author: krowley author: kccross 管理器: laurawi 毫秒. 日期: 10/30/2018 (): Admin ms. 主题: 概述 ms. 服务: o365-管理使用: 正常搜索。 appverid: 
+title: Office 365 中的电子邮件加密
+ms.author: krowley
+author: kccross
+manager: laurawi
+ms.date: 10/30/2018
+ms.audience: Admin
+ms.topic: overview
+ms.service: o365-administration
+localization_priority: Normal
+search.appverid:
 - MOE150
-- MET150 assetid: c0d87cbe-6d65-4c03-88ad-5216ea5564e8 ms. 集合:
-    - M365-安全合规性说明: 比较 office 365 中的加密选项, 包括 office 邮件加密 (OME)、S/MIME、信息权限管理 (IRM), 并了解传输层安全性 (TLS)。
+- MET150
+ms.assetid: c0d87cbe-6d65-4c03-88ad-5216ea5564e8
+ms.collection:
+- M365-security-compliance
+description: 比较 office 365 中的加密选项, 包括 office 邮件加密 (OME)、S/MIME、信息权限管理 (IRM), 并了解传输层安全性 (TLS)。
+ms.openlocfilehash: 8b8eb96b49d2b3d875ceba5216edfd0f12f8aa97
+ms.sourcegitcommit: f86383dcb9c52352661d51b22617f1809445beaa
+ms.translationtype: MT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "30573536"
 ---
-
 # <a name="email-encryption-in-office-365"></a>Office 365 中的电子邮件加密
 
 本文比较 office 365 中的加密选项, 包括 office 邮件加密 (OME)、S/MIME、信息权限管理 (IRM), 并引入了传输层安全性 (TLS)。
