@@ -1,7 +1,7 @@
 ---
 title: 发送电子邮件通知并显示 DLP 策略的策略提示
-ms.author: stephow
-author: stephow-MSFT
+ms.author: deniseb
+author: denisebmsft
 manager: laurawi
 ms.date: 3/21/2018
 ms.audience: Admin
@@ -16,12 +16,12 @@ search.appverid:
 - MOE150
 - MET150
 description: '策略提示是当有人使用与 DLP 策略冲突的内容时显示的通知或警告。 您可以使用电子邮件通知和策略提示来提高知名度并帮助人们了解组织的策略。 您还可以为用户提供替代策略的选项, 以便它们不会被阻止, 如果他们具有有效的业务需求, 或者如果策略检测到误报也是如此。 '
-ms.openlocfilehash: ad351a4f24ce566a47692c190b455e9e680882ca
-ms.sourcegitcommit: 6aa82374eef09d2c1921f93bda3eabeeb28aadeb
+ms.openlocfilehash: b598b665de3d45846e221ea4c1b5c2f49a659c6b
+ms.sourcegitcommit: 8657e003ab1ff49113f222d1ee8400eff174cb54
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/06/2019
-ms.locfileid: "30455184"
+ms.lasthandoff: 03/16/2019
+ms.locfileid: "30639149"
 ---
 # <a name="send-email-notifications-and-show-policy-tips-for-dlp-policies"></a>发送电子邮件通知并显示 DLP 策略的策略提示
 
@@ -90,7 +90,7 @@ ms.locfileid: "30455184"
 - 使用 HTML 或标记自定义通知中包含的文本。 有关详细信息, 请参阅下面的部分。
     
 > [!NOTE]
->  电子邮件通知只能发送给各个收件人, 而不是组或通讯组列表。 > 仅新内容将触发电子邮件通知。 编辑现有内容将触发策略提示，但不会触发电子邮件通知。 
+>  电子邮件通知只能发送给各个收件人, 而不是组或通讯组列表。 只有新内容才会触发电子邮件通知。 编辑现有内容将触发策略提示，但不会触发电子邮件通知。 
   
 ![电子邮件通知选项](media/4e7b9500-2a78-44e6-9067-09f4bfd50301.png)
   

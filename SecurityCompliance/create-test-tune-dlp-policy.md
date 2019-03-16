@@ -1,7 +1,7 @@
 ---
 title: 创建、测试和优化 DLP 策略
-ms.author: stephow
-author: stephow-MSFT
+ms.author: deniseb
+author: denisebmsft
 manager: laurawi
 ms.audience: Admin
 ms.topic: article
@@ -15,12 +15,12 @@ search.appverid:
 - MET150
 ms.assetid: 59414438-99f5-488b-975c-5023f2254369
 description: '开始使用 DLP 策略的最简单、最常见方法是，使用包含在 Office 365 中的模板之一。 '
-ms.openlocfilehash: b4a41a3594b52267000f5f272a6048deb5bea64b
-ms.sourcegitcommit: 6aa82374eef09d2c1921f93bda3eabeeb28aadeb
+ms.openlocfilehash: a025b006810c7f03b44fa9d307e263ba20af0903
+ms.sourcegitcommit: 8657e003ab1ff49113f222d1ee8400eff174cb54
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/06/2019
-ms.locfileid: "30454954"
+ms.lasthandoff: 03/16/2019
+ms.locfileid: "30639089"
 ---
 # <a name="create-test-and-tune-a-dlp-policy"></a>创建、测试和优化 DLP 策略
 
@@ -217,6 +217,6 @@ DLP 策略模板不能完全直接从盒中得到。 您可能会发现环境中
 
 ![内容受限制的策略提示](media/DLP-create-test-tune-restrict-warning.png)
 
-## <a name="summary"></a>Summary
+## <a name="summary"></a>摘要
 
 数据丢失防护策略对于所有类型的组织都很有用。 由于您对策略提示、最终用户覆盖和事件报告等的控制, 测试某些 DLP 策略是一个低风险的实践。 您可以安静地测试一些 DLP 策略, 以查看组织中已发生的冲突类型, 然后使用较低的误报率手工创建策略, 向用户介绍允许和不允许的情况, 然后将 DLP 策略回滚到组织.

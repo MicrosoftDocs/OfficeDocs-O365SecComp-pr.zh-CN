@@ -1,7 +1,7 @@
 ---
 title: 数据丢失防护策略概述
-ms.author: stephow
-author: stephow-MSFT
+ms.author: deniseb
+author: denisebmsft
 manager: laurawi
 ms.date: 6/29/2018
 ms.audience: Admin
@@ -15,12 +15,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: 使用 office 365 安全&amp;合规中心中的数据丢失防护 (DLP) 策略, 可以在 office 365 中识别、监视和自动保护敏感信息。
-ms.openlocfilehash: 80416ba0a402e33ed8af6390d261d3224fa0be2f
-ms.sourcegitcommit: 6aa82374eef09d2c1921f93bda3eabeeb28aadeb
+ms.openlocfilehash: 69ec5b2925d70c503655837af600f106379e1485
+ms.sourcegitcommit: 8657e003ab1ff49113f222d1ee8400eff174cb54
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/06/2019
-ms.locfileid: "30455044"
+ms.lasthandoff: 03/16/2019
+ms.locfileid: "30639139"
 ---
 # <a name="overview-of-data-loss-prevention-policies"></a>数据丢失防护策略概述
 
@@ -508,7 +508,7 @@ Office 2016 中的 DLP 策略评估旨在不对程序的性能或处理内容的
     
 - [敏感信息类型查找什么](what-the-sensitive-information-types-look-for.md)
     
-- [DLP 函数查找什么](what-the-dlp-functions-look-for.md)
+- [DLP 函数查找的内容](what-the-dlp-functions-look-for.md)
     
 - [创建自定义敏感信息类型](create-a-custom-sensitive-information-type.md)
     

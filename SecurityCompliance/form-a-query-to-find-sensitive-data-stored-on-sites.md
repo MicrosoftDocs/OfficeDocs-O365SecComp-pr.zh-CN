@@ -1,7 +1,7 @@
 ---
 title: 创建查询以查找存储在站点上的敏感数据
-ms.author: stephow
-author: stephow-MSFT
+ms.author: deniseb
+author: denisebmsft
 manager: laurawi
 ms.date: 6/29/2018
 ms.audience: Admin
@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 使用 SharePoint Online 中的数据丢失防护 (DLP), 您可以发现在整个租户中包含敏感数据的文档。 在发现文档之后, 可以使用文档所有者来保护数据。 本主题可帮助您形成查询以搜索敏感数据。
-ms.openlocfilehash: 8ea9622242775e7d411280707a61ba10aa02f4f2
-ms.sourcegitcommit: 6aa82374eef09d2c1921f93bda3eabeeb28aadeb
+ms.openlocfilehash: 91ef057170ef10614d3888e128769129e4c33fb9
+ms.sourcegitcommit: 8657e003ab1ff49113f222d1ee8400eff174cb54
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/06/2019
-ms.locfileid: "30455064"
+ms.lasthandoff: 03/16/2019
+ms.locfileid: "30639129"
 ---
 # <a name="form-a-query-to-find-sensitive-data-stored-on-sites"></a>创建查询以查找存储在站点上的敏感数据
 
@@ -64,9 +64,9 @@ SharePoint 中的 DLP 还引入了 LastSensitiveContentScan 属性, 此属性可
 |**Query**|**说明**|
 |:-----|:-----|
 | `SensitiveType:"International Banking Account Number (IBAN)"` <br/> |该名称可能看起来很奇怪, 因为它很长, 但它是该敏感类型的正确名称。 请务必使用[敏感信息类型清单](https://go.microsoft.com/fwlink/?LinkID=509999)中的确切名称。 您还可以使用为您的组织创建的[自定义敏感信息类型](create-a-custom-sensitive-information-type.md)的名称。  <br/> |
-| "SensitiveType:" 信用卡号码|1-4294967295|1.. 100 "" <br/> |这将返回至少有一个与敏感类型 "信用卡号码" 匹配的文档。 每个范围的值分别是最小值和最大值。 编写此查询的更简单的方法`SensitiveType:"Credit Card Number"`是, 但其中有什么有趣之处？  <br/> |
-| "SensitiveType:" 信用卡号码| 5 .. 25 "和 LastSensitiveContentScan:" 8/11/2018 8/13/2018 "" <br/> |这将返回5-25 年8月11日至8月13日 (2018) 从8月11日扫描的包含信用卡号的文档。  <br/> |
-| "SensitiveType:" 信用卡号码| 5 .. 25 "和 LastSensitiveContentScan:" 8/11/2018 8/13/2018 "NOT 文件扩展名: .xlsx ' <br/> |这将返回5-25 年8月11日至8月13日 (2018) 从8月11日扫描的包含信用卡号的文档。 具有 .xlsx 扩展名的文件不包含在查询结果中。  `FileExtension`是可以包含在查询中的多个属性之一。 有关详细信息, 请参阅将[搜索属性和运算符与电子数据展示结合使用](https://go.microsoft.com/fwlink/?LinkId=510093)。  <br/> |
+| `SensitiveType:"Credit Card Number|1..4294967295|1..100"` <br/> |这将返回至少有一个与敏感类型 "信用卡号码" 匹配的文档。 每个范围的值分别是最小值和最大值。 编写此查询的更简单的方法`SensitiveType:"Credit Card Number"`是, 但其中有什么有趣之处？  <br/> |
+| `SensitiveType:"Credit Card Number| 5..25" AND LastSensitiveContentScan:"8/11/2018..8/13/2018"` <br/> |这将返回5-25 年8月11日至8月13日 (2018) 从8月11日扫描的包含信用卡号的文档。  <br/> |
+| `SensitiveType:"Credit Card Number| 5..25" AND LastSensitiveContentScan:"8/11/2018..8/13/2018" NOT FileExtension:XLSX` <br/> |这将返回5-25 年8月11日至8月13日 (2018) 从8月11日扫描的包含信用卡号的文档。 具有 .xlsx 扩展名的文件不包含在查询结果中。  `FileExtension`是可以包含在查询中的多个属性之一。 有关详细信息, 请参阅将[搜索属性和运算符与电子数据展示结合使用](https://go.microsoft.com/fwlink/?LinkId=510093)。  <br/> |
 | `SensitiveType:"Credit Card Number" OR SensitiveType:"U.S. Social Security Number (SSN)"` <br/> |这将返回包含信用卡号或社会保障号的文档。  <br/> |
    
 ## <a name="examples-of-queries-to-avoid"></a>示例
@@ -75,15 +75,15 @@ SharePoint 中的 DLP 还引入了 LastSensitiveContentScan 属性, 此属性可
   
 |**不支持的查询**|**原因**|
 |:-----|:-----|
-| "SensitiveType:" 信用卡号码|.."` <br/> |必须至少添加一个数值。  <br/> |
+| `SensitiveType:"Credit Card Number|.."` <br/> |必须至少添加一个数值。  <br/> |
 | `SensitiveType:"NotARule"` <br/> |"NotARule" 不是有效的敏感类型名称。 仅在 DLP 查询中的[敏感信息类型](https://go.microsoft.com/fwlink/?LinkID=509999)中的名称可供使用。  <br/> |
-| "SensitiveType:" 信用卡号码|0 " <br/> |0不是有效的范围中的最小值或最大值。  <br/> |
+| `SensitiveType:"Credit Card Number|0"` <br/> |0不是有效的范围中的最小值或最大值。  <br/> |
 | `SensitiveType:"Credit Card Number"` <br/> |可能很难看到, 但在 "信用卡" 和 "卡片" 之间有额外的空白, 这会导致查询无效。 从[敏感信息类型的清单](https://go.microsoft.com/fwlink/?LinkID=509999)中使用精确敏感类型名称。  <br/> |
-| "SensitiveType:" 信用卡号码|1.. 3 "" <br/> |两个句点部分不应由空格分隔。  <br/> |
-| "SensitiveType:" 信用卡号码| |1 .。。|80 ... "" <br/> |管道分隔符过多 (|). 请改为遵循以下格式: ' SensitiveType: ' 信用卡号码|1 .。。|80 ... "" <br/> |
-| "SensitiveType:" 信用卡号码|1 .。。|80. 101 "" <br/> |因为可信度值表示百分比, 所以它们不能超过100。 请选择 1 至 100 之间的数值。  <br/> |
+| `SensitiveType:"Credit Card Number|1. .3"` <br/> |两个句点部分不应由空格分隔。  <br/> |
+| `SensitiveType:"Credit Card Number| |1..|80.."` <br/> |管道分隔符过多 (|). 请改为遵循以下格式:`SensitiveType: "Credit Card Number|1..|80.."` <br/> |
+| `SensitiveType:"Credit Card Number|1..|80..101"` <br/> |因为可信度值表示百分比, 所以它们不能超过100。 请选择 1 至 100 之间的数值。  <br/> |
    
-## <a name="for-more-information"></a>更多信息
+## <a name="for-more-information"></a>有关详细信息
 
 [敏感信息类型查找什么](what-the-sensitive-information-types-look-for.md)
   

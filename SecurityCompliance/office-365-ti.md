@@ -15,12 +15,12 @@ ms.assetid: 32405da5-bee1-4a4b-82e5-8399df94c512
 ms.collection:
 - M365-security-compliance
 description: 了解 office 365 中的威胁智能功能。高级威胁防护可帮助您研究组织的威胁、响应恶意软件、网络钓鱼和 Office 365 已代表您检测到的其他攻击, 并搜索威胁指示器.
-ms.openlocfilehash: e3696306b5188858e6ca72e265c4f1aa24574f79
-ms.sourcegitcommit: f25a667e4c7d11c43c87604d576f1e6d6155b14f
+ms.openlocfilehash: 54dbe4cc39456189bca2af71294d181adce6f50b
+ms.sourcegitcommit: 8657e003ab1ff49113f222d1ee8400eff174cb54
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/11/2019
-ms.locfileid: "30536182"
+ms.lasthandoff: 03/16/2019
+ms.locfileid: "30639029"
 ---
 # <a name="office-365-threat-investigation-and-response"></a>Office 365 威胁调查和响应
 
@@ -41,7 +41,7 @@ Office 365 中的威胁调查和响应功能高级威胁防护帮助安全分析
 
 以前, office 365 威胁调查和响应功能包含在订阅中, 如 office 365 企业版 E5 中。 但现在, 这些功能现在是 office 365 高级威胁防护计划2的一部分 (这包括在 office 365 企业版 E5 中)。 
 
-此外, office 365 威胁调查和响应 capbailities 以前可作为 office 365 for business 客户的附加设备购买。 现在, 这些功能包括在 office 365 高级威胁防护计划 2 (也包括 office 365 高级威胁防护计划 1)。 若要了解详细信息, 请参阅[Office 365 高级威胁防护计划和定价](https://products.office.com/exchange/advance-threat-protection)。
+此外, office 365 威胁调查和响应功能以前可作为 office 365 for business 客户的附加产品购买。 现在, 这些功能包括在 office 365 高级威胁防护计划 2 (也包括 office 365 高级威胁防护计划 1)。 若要了解详细信息, 请参阅[Office 365 高级威胁防护计划和定价](https://products.office.com/exchange/advance-threat-protection)。
 
 下面是这一切的含义:
 
@@ -53,7 +53,7 @@ Office 365 中的威胁调查和响应功能高级威胁防护帮助安全分析
 
 有关详细信息, 请参阅[office 365 高级威胁防护计划和定价](https://products.office.com/exchange/advance-threat-protection)和[Office 365 高级威胁防护服务说明](https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description#whats-new-in-office-365-advanced-threat-protection-atp)
 
-## <a name="get-started-with-threat-investigaiton-and-response-capabilities"></a>开始使用威胁 investigaiton 和响应功能
+## <a name="get-started-with-threat-investigation-and-response-capabilities"></a>开始使用威胁调查和响应功能
 
 使用以下资源了解有关 Office 365 中的威胁调查和响应功能的详细信息, 以及如何使用它来使组织中的人员更加安全。
   

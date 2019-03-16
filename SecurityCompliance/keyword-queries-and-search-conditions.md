@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 ms.assetid: c4639c2e-7223-4302-8e0d-b6e10f1c3be3
 description: '了解可以使用 Office 365 安全&amp;合规中心中的内容搜索工具在 Exchange Online 邮箱和 SharePoint 或 OneDrive for business 网站中搜索的电子邮件和文件属性。  '
-ms.openlocfilehash: 49236223392af94a5641a9b319d2168f53bbcc06
-ms.sourcegitcommit: 03054baf50c1dd5cd9ca6a9bd5d056f3db98f964
+ms.openlocfilehash: 478f0f7089046cea9a1650fc090e59fc056db8a9
+ms.sourcegitcommit: 8657e003ab1ff49113f222d1ee8400eff174cb54
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "30354754"
+ms.lasthandoff: 03/16/2019
+ms.locfileid: "30639159"
 ---
 # <a name="keyword-queries-and-search-conditions-for-content-search"></a>内容搜索的关键字查询和搜索条件
 
@@ -123,11 +123,14 @@ ms.locfileid: "30354754"
 
 ## <a name="searchable-sensitive-data-types"></a>可搜索敏感数据类型
 
-您可以使用安全&amp;合规中心中的内容搜索功能来搜索存储在 SharePoint 和 OneDrive for business 网站上的文档中的敏感数据 (如信用卡号或社会保险号)。 可以通过在关键字查询中使用`SensitiveType`属性和敏感信息类型的名称来执行此操作。 例如, 查询`SensitiveType:"Credit Card Number"`返回包含信用卡号的文档。 查询`SensitiveType:"U.S. Social Security Number (SSN)"`返回包含美国社会保险号的文档。 若要查看您可以搜索的敏感数据类型的列表, &amp;请转到安全合规性中心中的 "**分类** \> **敏感信息类型**"。 或者, 您可以使用**** 安全&amp;合规中心 PowerShell 中的 DlpSensitiveInformationType cmdlet 来显示敏感信息类型的列表。 
+您可以使用安全 & 合规中心中的内容搜索功能来搜索存储在 SharePoint 和 OneDrive for business 网站上的文档中的敏感数据 (如信用卡号或社会保险号)。 可以通过在关键字查询中使用`SensitiveType`属性和敏感信息类型的名称来执行此操作。 例如, 查询`SensitiveType:"Credit Card Number"`返回包含信用卡号的文档。 查询`SensitiveType:"U.S. Social Security Number (SSN)"`返回包含美国社会保险号的文档。 若要查看您可以搜索的敏感数据类型的列表, &amp;请转到安全合规性中心中的 "**分类** \> **敏感信息类型**"。 或者, 您可以使用**** 安全&amp;合规中心 PowerShell 中的 DlpSensitiveInformationType cmdlet 来显示敏感信息类型的列表。 
   
 您还可以使用`SensitiveType`属性来搜索您 (或其他管理员) 为您的组织创建的自定义敏感信息类型的名称。 请注意, &amp;您可以使用安全合规性中心 (或 PowerShell 中的**Publisher**属性) 中的 "**敏感信息类型**" 页上的 "**发布者**" 列来区分内置和自定义的敏感信息类型。 有关详细信息, 请参阅[创建自定义敏感信息类型](create-a-custom-sensitive-information-type.md)。
   
 有关使用`SensitiveType`属性创建查询的详细信息, 请参阅[窗体 a 查询来查找存储在网站上的敏感数据](form-a-query-to-find-sensitive-data-stored-on-sites.md)。
+
+> [!NOTE]
+> 您不能使用敏感数据类型和`SensitiveType` search 属性在 Exchange Online 邮箱中搜索敏感数据。 但是, 可以使用数据丢失防护 (DLP) 策略来保护传输中的敏感 emaill 数据。 有关详细信息, 请参阅[数据丢失防护策略概述](data-loss-prevention-policies.md)和[搜索和查找个人数据](search-for-and-find-personal-data.md)。
   
 ## <a name="search-operators"></a>搜索运算符
 
@@ -143,7 +146,7 @@ ms.locfileid: "30354754"
 |NEAR|keyword1 NEAR(n) keyword2|返回包含邻近字词的项目，其中 n 表示间隔的字词数量。 例如, `best NEAR(5) worst`返回任何一个 "最差" 为 "最佳" 的五个字中的项。 如果您没有指定数目，则默认距离是 8 个字词。 <sup>双面</sup>|
 |ONEAR|keyword1 ONEAR(n) keyword2|类似于**near**, 但以指定的顺序返回彼此相邻的单词的项。 例如, `best ONEAR(5) worst`返回在单词 "最差" 之前出现 "最佳" 的任何项目, 并且两个单词在彼此之间的五个单词之间。 如果您没有指定数目，则默认距离是 8 个字词。 <sup>双面</sup> <br/> > [!NOTE]> 搜索邮箱时不支持**ONEAR**运算符;它仅在搜索 SharePoint 和 OneDrive for business 网站时有效。 如果要在同一搜索中搜索邮箱和网站, 并且查询包含**ONEAR**运算符, 则搜索将返回邮箱项目, 就像您使用的是**NEAR**运算符一样。 换言之, 搜索返回的项目, 其中指定的单词彼此接近, 而不考虑单词出现的顺序。|
 |:|property:value|冒号 (:)在语法`property:value`中, 指定要搜索的属性的值包含指定的值。 例如，  `recipients:garthf@contoso.com` 返回发送至 garthf@contoso.com 的所有邮件。|
-|=|property=value|与 **:** 运算符相同。|
+|=|属性 = 值|与 **:** 运算符相同。|
 |\<|property\<value|表示正在搜索的属性小于指定的值。<sup>1</sup>|
 |\>|property\>value|表示正在搜索的属性大于指定的值。<sup>1</sup>|
 |\<=|property\<=value|表示正在搜索的属性小于等于指定的值。<sup>1</sup>|
@@ -216,7 +219,7 @@ ms.locfileid: "30354754"
 
 当您添加一个条件时，您可以选择与该条件的属性类型相关的运算符。下表描述了与条件一起使用的运算符，并列出了在搜索查询中使用的等效项。
   
-|**运算符**|**查询等效项**|**说明**|
+|**Operator**|**查询等效项**|**Description**|
 |:-----|:-----|:-----|
 |After|`property>date`|使用日期条件。返回在指定日期后发送、接收或修改的项。 |
 |Before|`property<date`|使用日期条件。返回在指定日期前发送、接收或修改的项。|

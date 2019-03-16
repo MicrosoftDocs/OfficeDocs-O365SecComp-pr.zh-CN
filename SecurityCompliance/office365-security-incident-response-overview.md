@@ -8,27 +8,27 @@ ms.audience: ITPro
 ms.topic: overview
 ms.collection:
 - o365_security_incident_response
-- Strat_O365_IP
+- M365-security-compliance
 ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid:
 - MET150
 description: 此解决方案告诉您在 Office 365 中最常见的网络安全攻击可能是什么, 以及如何对其进行响应
-ms.openlocfilehash: ac0a61e31f50846547517d721456a5229a7fb64c
-ms.sourcegitcommit: a80bd8626720fabdf592b84e4424cd3a83d08280
+ms.openlocfilehash: 13e57d914138edc44d0001781459852fba994f61
+ms.sourcegitcommit: 8657e003ab1ff49113f222d1ee8400eff174cb54
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30223281"
+ms.lasthandoff: 03/16/2019
+ms.locfileid: "30656018"
 ---
 # <a name="office-365-security-incident-response"></a>Office 365 安全事件响应
 
  **摘要:** 此解决方案告诉你在 Office 365 中最常见的网络安全攻击的指标, 如何正确确认任何给定的攻击以及如何对其做出响应。
   
 ## <a name="overview"></a>概述
-并不是所有的网络攻击都可以 thwarted。攻击者经常在防御策略中寻找新的弱点, 或者他们在利用旧弱点。了解如何识别攻击允许您更快地响应它, 从而缩短了安全事件的持续时间。
+并不是所有的网络攻击都可以 thwarted。 攻击者经常在防御策略中寻找新的弱点, 或者他们在利用旧弱点。 了解如何识别攻击允许您更快地响应它, 从而缩短了安全事件的持续时间。
 
-本系列文章可帮助您了解特定类型的攻击在 Office 365 中的外观, 并提供您可以采取的措施来做出响应。它们是快速入门点以了解:
+本系列文章可帮助您了解特定类型的攻击在 Office 365 中的外观, 并提供您可以采取的措施来做出响应。 它们是快速入门点以了解:
  
 - 什么是攻击以及它的工作原理。
 - 应查找的标志 (称为 "泄露" (IOC)) 以及如何查找它们。
@@ -48,10 +48,10 @@ ms.locfileid: "30223281"
 - [响应 Office 365 中遭到入侵的电子邮件帐户](responding-to-a-compromised-email-account.md)
 
 ## <a name="secure-office-365-like-a-cybersecurity-pro"></a>安全的 Office 365, 如 cybersecurity pro
-您的 Office 365 订阅附带了一组功能强大的安全功能, 可用于保护您的数据和用户。 使用[Office 365 安全路线图: 前30天、90天和更高版本的首要优先级](https://support.office.com/article/Office-365-security-roadmap-Top-priorities-for-the-first-30-days-90-days-and-beyond-28c86a1c-e4dd-4aad-a2a6-c768a21cb352), 以实现 Microsoft 建议的保护 Office 365 租户的最佳做法。
-- 在前30天内要完成的任务。 这些值会立即生效, 并对用户造成影响较小。
-- 要在90天内完成的任务。这些工作需要花一点时间来进行规划和实施, 但大大提高了安全状况
-- 超过90天。这些增强功能将在您的前90天工作中构建。
+您的 Office 365 订阅附带了一组功能强大的安全功能, 可用于保护您的数据和用户。  使用[Office 365 安全路线图: 前30天、90天和更高版本的首要优先级](https://support.office.com/article/Office-365-security-roadmap-Top-priorities-for-the-first-30-days-90-days-and-beyond-28c86a1c-e4dd-4aad-a2a6-c768a21cb352), 以实现 Microsoft 建议的保护 Office 365 租户的最佳做法。
+- 在前30天内要完成的任务。  这些值会立即生效, 并对用户造成影响较小。
+- 要在90天内完成的任务。 这些工作需要花一点时间来进行规划和实施, 但大大提高了安全状况
+- 超过90天。 这些增强功能将在您的前90天工作中构建。
 
 
 

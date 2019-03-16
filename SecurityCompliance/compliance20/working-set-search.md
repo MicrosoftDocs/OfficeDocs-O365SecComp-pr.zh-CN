@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: 2523072181307cce510f0f318834329b2c70b376
-ms.sourcegitcommit: 6aa82374eef09d2c1921f93bda3eabeeb28aadeb
+ms.openlocfilehash: 3000a066bf69f71327801035e7c270cc602565ac
+ms.sourcegitcommit: 8657e003ab1ff49113f222d1ee8400eff174cb54
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/06/2019
-ms.locfileid: "30454984"
+ms.lasthandoff: 03/16/2019
+ms.locfileid: "30639009"
 ---
 # <a name="query-the-data-in-a-working-set"></a>查询工作集中的数据
 
@@ -31,7 +31,7 @@ ms.locfileid: "30454984"
 
 ## <a name="building-your-query"></a>构建查询
 
-您可以在关键字条件卡中使用条件卡片和查询语言的组合生成查询。
+您可以在关键字条件卡中使用条件卡片和查询语言的组合生成查询。 您可以将条件卡组合成一个块, 以创建更复杂的查询。
 
 ### <a name="condition-card"></a>条件卡片
 
@@ -40,9 +40,15 @@ ms.locfileid: "30454984"
 有多种类型的条件卡:
 - Freetext: freetext 条件卡片用于文本字段, 如 subject。 您可以通过用逗号分隔多个搜索词来列出它们。
 - 日期: 日期条件卡片用于日期字段 (如 "上次修改日期")。
-- 搜索选项: 搜索选项条件卡片将为工作集中的特定字段提供可能的值列表。 这用于发件人之类的字段, 其中的工作集中有有限数量的可能值。
+- 搜索选项: 搜索选项条件卡片将为工作集中的特定字段提供可能的值列表。 这用于在工作集中有有限数量的可能值的字段, 如发件人。
 - 关键字: 关键字条件卡片是 freetext 条件卡的特定实例, 可用于搜索术语, 或在中使用类似 KQL 的查询语言。 有关更多详细信息, 请参阅下文。
 
 ### <a name="query-language"></a>查询语言
 
 除了条件卡片之外, 还可以使用关键字卡片中类似于 KQL 的查询语言来手工创建查询。 查询语言支持标准 KQL 语法, 如 AND、OR、NOT 和 NEAR (n)。 它还支持单字符通配符 (？) 和多字符通配符 (*)。
+
+## <a name="filter"></a>筛选
+
+除了可以保存的查询之外, 还可以使用筛选器将其他条件动态覆盖到查询结果中。 筛选器与查询的不同之处在于以下几个重要方式:
+- 筛选器是瞬态的 (即, 它们不会在不同的会话中持续), 而是将查询保存到工作集。
+- 筛选器始终是累加的;筛选器将应用于您在此时生效的查询的顶部, 而应用查询将替换有效的查询。

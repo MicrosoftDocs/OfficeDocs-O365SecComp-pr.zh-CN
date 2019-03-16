@@ -3,7 +3,7 @@ title: 在 Office 365 中使用用户垃圾邮件通知来发布和报告已隔�
 ms.author: tracyp
 author: MSFTTracyP
 manager: laurawi
-ms.date: 5/12/2018
+ms.date: 03/14/2019
 ms.audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
@@ -16,12 +16,12 @@ ms.assetid: 56de4ed5-b0aa-4195-9f46-033d7cc086bc
 ms.collection:
 - M365-security-compliance
 description: 如果管理员为用户启用通知, 则会收到一条通知消息, 其中列出了发送到邮箱的邮件, 并被标识为垃圾邮件、批量邮件或网络钓鱼邮件。 您可以在收到通知后释放或报告邮件。
-ms.openlocfilehash: 7f68b70298fca7d8ed5f5e5b8dc9c727c3a6a6c1
-ms.sourcegitcommit: 5eb664b6ecef94aef4018a75684ee4ae66c486bb
+ms.openlocfilehash: de67987b0028102bdf61889ce54ca4215182e279
+ms.sourcegitcommit: 8657e003ab1ff49113f222d1ee8400eff174cb54
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/08/2019
-ms.locfileid: "30492721"
+ms.lasthandoff: 03/16/2019
+ms.locfileid: "30638969"
 ---
 # <a name="use-user-spam-notifications-to-release-and-report-quarantined-messages-in-office-365"></a>在 Office 365 中使用用户垃圾邮件通知来发布和报告已隔离邮件
 
@@ -40,12 +40,20 @@ ms.locfileid: "30492721"
     
 - **尺寸**邮件的大小, 以千字节 (kb) 为单位。 
     
-目前, 您可以对隔离邮件执行以下两个操作:
-  
-- **释放到收件箱**选择此 "" 将邮件发送到您的收件箱, 您可以在其中查看邮件。 
-    
-- **报告为非垃圾邮件**选择此 "" 以将邮件副本发送给 Microsoft 进行分析。 垃圾邮件团队将评估和分析邮件，同时依照分析结果，调整反垃圾邮件筛选器规则以允许传输邮件。 
-    
+以下是您可以使用隔离邮件执行的操作:
+
+- 如果要在执行操作之前预览内容或标题, 请**预览**邮件。
+
+- 如果要在执行操作之前查看设备上的邮件和附件 (如果有), 请**下载**邮件。
+
+- 如果邮件不是垃圾邮件, 并且您希望 Office 365 将邮件发送到您的邮箱, 则**释放**。
+
+- **发布 &** 如果邮件不是垃圾邮件, 并且您希望 Office 365 将发件人添加到安全发件人和收件人列表中, 以供将来的电子邮件。 请注意, 您的管理员可能有其他组织范围的允许/阻止配置替代安全发件人列表。
+
+- **发布 & 报告**, 如果邮件不是垃圾邮件, 并且您想要将邮件发送到您的邮箱并将其报告给 Microsoft 进行分析。
+
+- 如果您希望 Office 365 将发件人添加到阻止发件人列表, 则**阻止**。
+
 请注意以下事项：
   
 - 由于与邮件流规则匹配而被隔离的邮件不会包括在用户隔离的邮件中。 只有垃圾邮件隔离邮件才会列出。

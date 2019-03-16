@@ -14,19 +14,19 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: 7559653c5c92b26535fb3a16ae7dbb442dc0ba97
-ms.sourcegitcommit: 6aa82374eef09d2c1921f93bda3eabeeb28aadeb
+ms.openlocfilehash: ed252eca2b05f3d44e0c69e5b9649a4d7819e92c
+ms.sourcegitcommit: 8657e003ab1ff49113f222d1ee8400eff174cb54
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/06/2019
-ms.locfileid: "30455404"
+ms.lasthandoff: 03/16/2019
+ms.locfileid: "30639109"
 ---
 # <a name="document-metadata-fields"></a>文档元数据字段
 
 
 |**字段名** </br>|**在工作集中可搜索和查看** |**文件元数据面板** |**多余** |
 |:-------------------------- |:---------------------------------------- |:------------------------|:------------------|
-|Case 标记                  | 是                                             |                         | 是         |
+|Case 标记                  | 是 (标记)                                      |                         | 是         |
 |合规性标签          |                                                 |                         | 是         |
 |复合路径              |                                                 |                         | 是         |
 |容器 ID               |                                                 |                         | 是         |
@@ -37,11 +37,11 @@ ms.locfileid: "30455404"
 |Deduped 复合路径      |                                                 |                         | 是         |
 |Deduped 保管人         |                                                 |                         | 是         |
 |Deduped 文件 id           |                                                 |                         | 是         |
-|文档作者                |                                                 |                         | 是         |
+|文档作者                | 是 (作者) *                                   |                         | 是         |
 |文档注释               |                                                 |                         | 是         |
 |Doc 公司                |                                                 |                         | 是         |
-|文档创建日期           |                                                 |                         | 是         |
-|修改的文档日期          |                                                 |                         | 是         |
+|文档创建日期           | 是 (createdTime) *                              |                         | 是         |
+|修改的文档日期          | 是 (lastModifiedDate) *                         |                         | 是         |
 |Doc 关键字               |                                                 |                         | 是         |
 |文档上次保存者          |                                                 |                         | 是         |
 |修改的文档            |                                                 |                         | 是         |
@@ -103,10 +103,10 @@ ms.locfileid: "30455404"
 |ND ET 排序排除附加     |                                                 |                         | 是         |
 |ND ET 排序 (包括附加)     |                                                 |                         | 是         |
 |ND 集                     |                                                 |                         | 是         |
-|O365 作者               |                                                 |                         | 是         |
+|O365 作者               | 是 (作者) *                                   |                         | 是         |
 |O365 创建者            |                                                 |                         | 是         |
-|O365 创建日期          |                                                 |                         | 是         |
-|O365 修改日期         |                                                 |                         | 是         |
+|O365 创建日期          | 是 (createdTime) *                              |                         | 是         |
+|O365 修改日期         | 是 (lastModifiedDate) *                         |                         | 是         |
 |O365 修改者           |                                                 |                         | 是         |
 |父节点                |                                                 |                         | 是         |
 |透视 ID                   | 是 (pivotId)                                   |                         | 是         |
@@ -117,3 +117,8 @@ ms.locfileid: "30455404"
 |相似性百分比         |                                                 |                         | 是         |
 |主题列表                | 是 (themesList)                                |                         | 是         |
 |Word count                 | 是 (wordCount)                                 |                         | 是         |
+|相关性分数 (问题)    | 是 (relevanceScore_issueNum)                   |                         |             |
+|读取百分点值 (问题)    | 是 (readPercentile_issueNum)                   |                         |             |
+|相关性标记 (问题)      | 是 (relevanceTag_issueNum)                     |                         |             |
+
+  \*对于这些字段, 如果文档中有嵌入的值, 则搜索将设置这些值的优先级;否则, 它将尝试从 O365 呈现值。

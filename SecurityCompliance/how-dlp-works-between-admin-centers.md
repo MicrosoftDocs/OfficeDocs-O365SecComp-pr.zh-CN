@@ -1,7 +1,7 @@
 ---
 title: DLP 在安全 & 合规中心和 Exchange 管理中心之间如何工作
-ms.author: stephow
-author: stephow-msft
+ms.author: deniseb
+author: denisebmsft
 manager: laurawi
 ms.date: 8/4/2017
 ms.audience: Admin
@@ -15,12 +15,12 @@ search.appverid:
 - MET150
 ms.assetid: a7e4342a-a0a1-4b43-b166-3d7eecf5d2fd
 description: 了解 Security & 合规性中心中的 dlp 如何在 Exchange 管理中心中与 dlp 和邮件流规则 (传输规则) 结合使用。
-ms.openlocfilehash: 9912103ec95af9fed61c5c2d52d12b46342d16fb
-ms.sourcegitcommit: 6aa82374eef09d2c1921f93bda3eabeeb28aadeb
+ms.openlocfilehash: 66dceb447e02eb01810997c23644c76f68795844
+ms.sourcegitcommit: 8657e003ab1ff49113f222d1ee8400eff174cb54
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/06/2019
-ms.locfileid: "30454904"
+ms.lasthandoff: 03/16/2019
+ms.locfileid: "30638999"
 ---
 # <a name="how-dlp-works-between-the-security--compliance-center-and-exchange-admin-center"></a>DLP 在安全 & 合规中心和 Exchange 管理中心之间如何工作
 
