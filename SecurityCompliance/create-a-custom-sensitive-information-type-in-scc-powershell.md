@@ -1,7 +1,7 @@
 ---
 title: 在 Office 365 安全与合规中心 PowerShell 中创建自定义敏感信息类型
-ms.author: stephow
-author: stephow-MSFT
+ms.author: deniseb
+author: denisebmsft
 manager: laurawi
 ms.audience: Admin
 ms.topic: article
@@ -13,12 +13,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 了解如何在 Office 365 安全与合规中心创建并导入 DLP 的自定义敏感信息类型。
-ms.openlocfilehash: 03121a76a7c7cf21d0ae21138c43bca594a7839b
-ms.sourcegitcommit: 6aa82374eef09d2c1921f93bda3eabeeb28aadeb
+ms.openlocfilehash: bf917ac40f98ec19332aac90f2d954d44b9a834d
+ms.sourcegitcommit: 8657e003ab1ff49113f222d1ee8400eff174cb54
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/06/2019
-ms.locfileid: "30455124"
+ms.lasthandoff: 03/16/2019
+ms.locfileid: "30639119"
 ---
 # <a name="create-a-custom-sensitive-information-type-in-office-365-security--compliance-center-powershell"></a>在 Office 365 安全与合规中心 PowerShell 中创建自定义敏感信息类型
 

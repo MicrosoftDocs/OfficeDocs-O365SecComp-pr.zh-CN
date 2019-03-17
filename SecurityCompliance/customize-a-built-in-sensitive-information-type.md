@@ -1,7 +1,7 @@
 ---
 title: 自定义内置敏感信息类型
-ms.author: stephow
-author: stephow-MSFT
+ms.author: deniseb
+author: denisebmsft
 manager: laurawi
 ms.date: 6/25/2018
 ms.audience: Admin
@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 在内容中查找敏感信息时，需要在规则中描述相应信息。数据丢失防护 (DLP) 包含最常见敏感信息类型对应的规则，可供立即使用。若要使用这些规则，必须将它们添加到策略中。你可能会发现，需要调整这些内置规则，才能满足组织的特定需求。为此，请创建自定义敏感信息类型。本主题介绍了如何将包含现有规则集合的 XML 文件自定义为，检测更广泛的潜在信用卡信息。
-ms.openlocfilehash: 9596fe6aac92dca4d2dd66b5eff13005c5c6724b
-ms.sourcegitcommit: 6aa82374eef09d2c1921f93bda3eabeeb28aadeb
+ms.openlocfilehash: c0a3fcb86acf1eaa5df72e385b21e8dba9b0d668
+ms.sourcegitcommit: 8657e003ab1ff49113f222d1ee8400eff174cb54
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/06/2019
-ms.locfileid: "30455424"
+ms.lasthandoff: 03/16/2019
+ms.locfileid: "30639069"
 ---
 # <a name="customize-a-built-in-sensitive-information-type"></a>自定义内置敏感信息类型
 
@@ -44,7 +44,7 @@ ms.locfileid: "30455424"
      `Set-Content -path "C:\custompath\exportedRules.xml" -Encoding Byte -Value $ruleCollections.SerializedClassificationRuleCollection`
     
     > [!IMPORTANT]
-    > 确保使用规则包实际存储的文件位置。  `C:\custompath\` 是一个占位符。 
+    > 请务必使用规则包实际存储到的文件位置。`C:\custompath\` 是占位符。 
   
 ## <a name="find-the-rule-that-you-want-to-modify-in-the-xml"></a>在 XML 中查找要修改的规则
 
