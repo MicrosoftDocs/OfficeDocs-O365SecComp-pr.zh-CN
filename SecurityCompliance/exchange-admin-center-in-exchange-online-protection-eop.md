@@ -15,12 +15,12 @@ ms.assetid: 97921f0e-832f-40c7-b56d-414faede5191
 ms.collection:
 - M365-security-compliance
 description: Exchange 管理中心 (EAC) 是基于 Web 的 Microsoft Exchange Online Protection (EOP) 的管理控制台。
-ms.openlocfilehash: 0d1e56b85afe6655b5c6d08df51d4607df92d1d5
-ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
+ms.openlocfilehash: d1e3ee90f3df20359634ae55286270b49d766324
+ms.sourcegitcommit: b688d67935edb036658bb5aa1671328498d5ddd3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30220462"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "30670427"
 ---
 # <a name="exchange-admin-center-in-exchange-online-protection"></a>Exchange Online Protection 中的 Exchange 管理中心 
 
@@ -32,7 +32,7 @@ Exchange 管理中心 (EAC) 是基于 Web 的 Microsoft Exchange Online Protecti
   
 ## <a name="accessing-the-eac"></a>访问 EAC
 
-在大多数情况下, EOP 客户将通过 Office 365 管理中心访问 EAC。您可以在**管理**磁贴 ("**我**" 磁贴旁边) 的下拉菜单中找到指向 EOP 的链接。单击 "**管理**" 磁贴, 然后从下拉菜单中选择 " **Exchange Online Protection** " 以转到 EAC。 
+在大多数情况下, EOP 客户将通过 Microsoft 365 管理中心访问 EAC。 可以在“**自有**”磁贴旁的“**管理**”磁贴中的下拉菜单中找到指向 EOP 的链接。 单击“**管理**”磁贴，从下拉菜单中选择“**Exchange Online Protection**”以进入 EAC。 
   
 您也可以通过以下 URL 直接访问 EAC 登录页面：https://admin.protection.outlook.com/ecp/\<companydomain\>。例如 https://admin.protection.outlook.com/ecp/contoso.onmicrosoft.com。指定用户凭据后，您将直接进入 EAC。
   
@@ -71,7 +71,7 @@ Exchange 管理中心 (EAC) 是基于 Web 的 Microsoft Exchange Online Protecti
 |![删除图标](media/ITPro-EAC-DeleteIcon.gif)           <br/> |删除  <br/> |使用此图标可删除对象。有些删除图标有一个向下箭头，单击该箭头可显示其他选项。  <br/> |
 |![搜索图标](media/ITPro-EAC-.gif)           <br/> |搜索  <br/> |使用此图标可打开一个搜索框，可在其中键入要查找的对象的搜索短语。  <br/> |
 |![刷新图标](media/ITPro-EAC-RefreshIcon.gif)           <br/> |刷新  <br/> |使用此图标可刷新列表视图。  <br/> |
-|![更多选项图标](media/ITPro-EAC-MoreOptionsIcon.gif)           <br/> |更多选项  <br/> |使用此图标可查看可对该选项卡的对象执行的更多操作。例如, 在 "**收件人\> " 用户**单击此图标时, 将显示用于执行**高级搜索**的选项。<br/> |
+|![更多选项图标](media/ITPro-EAC-MoreOptionsIcon.gif)           <br/> |更多选项  <br/> |使用此图标可以查看可对该选项卡的对象执行的更多操作。 例如, 在 "**收件人\> " 用户**单击此图标时, 将显示用于执行**高级搜索**的选项。  <br/> |
 |![向上键图标](media/ITPro-EAC-UpArrowIcon.gif)![向下键图标](media/ITPro-EAC-DownArrowIcon.gif)           <br/> |向上箭头和向下箭头  <br/> |使用这些图标可以将对象的优先级上移或下移。  <br/> |
 |![删除图标](media/ITPro-EAC-RemoveIcon.gif)           <br/> |删除  <br/> |使用此图标可从列表中删除对象。  <br/> |
    
@@ -85,11 +85,11 @@ Exchange 管理中心 (EAC) 是基于 Web 的 Microsoft Exchange Online Protecti
   
 ### <a name="me-tile-and-help"></a>自有图块和帮助
 
-使用 "**我**" 磁贴, 可以注销 EAC 并以其他用户的的形式登录。从 "**帮助**![帮助"](media/ITPro-EAC-HelpIcon.gif)图标下拉菜单中, 可以执行下列操作: 
+使用“自有”**** 图块可以注销 EAC，然后以其他用户身份登录。 从 "**帮助**![帮助"](media/ITPro-EAC-HelpIcon.gif)图标下拉菜单中, 可以执行下列操作: 
   
 1. **帮助** 单击 ![帮助图标](media/ITPro-EAC-HelpIcon.gif) 可查看联机帮助内容。 
     
-2. **禁用帮助气泡**当您创建或编辑对象时, 帮助气泡会显示字段的上下文帮助。您可以关闭 "帮助" 气泡, 也可以将其打开 (如果已禁用)。 
+2. **禁用帮助气泡**当您创建或编辑对象时, 帮助气泡会显示字段的上下文帮助。 您可以关闭"帮助"气泡，如果已被禁用，也可以打开它。 
     
 3. **版权**单击此链接可阅读适用于 Exchange Online Protection 的版权通知。 
     
@@ -115,9 +115,9 @@ Exchange Online Protection 支持并提供以下语言。
     
 - 加泰罗尼亚语
     
-- 中文(简体)
+- 中文（简体）
     
-- 中文(繁体)
+- 中文（繁体）
     
 - 克罗地亚语
     
@@ -149,7 +149,7 @@ Exchange Online Protection 支持并提供以下语言。
     
 - 希伯来语
     
-- 印地语
+- 印度语
     
 - 匈牙利语
     

@@ -15,12 +15,12 @@ ms.assetid: 5d9f75f5-bb7f-458c-ad30-5c8eae0b0e4e
 ms.collection:
 - M365-security-compliance
 description: 本主题介绍了针对最终用户和管理员的疑难解答步骤，并提供了有关如何联系技术支持以寻求帮助的信息。
-ms.openlocfilehash: d9ff55350487b21325d9a95491fa6861fcc441fd
-ms.sourcegitcommit: 686bc9a8f7a7b6810a096f07d36751d10d334409
+ms.openlocfilehash: 43af048a457835ef16e36c8587f811cb0963bc97
+ms.sourcegitcommit: b688d67935edb036658bb5aa1671328498d5ddd3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "30275992"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "30670477"
 ---
 # <a name="troubleshooting-and-support-information"></a>疑难解答信息和支持信息
 
@@ -30,11 +30,11 @@ ms.locfileid: "30275992"
 
 有时，您的 Microsoft Office Outlook 在添加垃圾邮件报告插件之后可能出现故障。以下是您可能遇到的问题以及解决这些问题的提示。 
   
-- 单击 "**报告垃圾邮件**" 时不会发生什么情况
+- Nothing happens when you click **Report Junk**
     
 - 当您选择一封电子邮件之后，Outlook 停止响应
     
-- 由于收到"未送达"回复，报告的垃圾邮件无法传递
+- 由于收到“未送达”回复，报告的垃圾邮件无法传递
     
 ### <a name="troubleshooting-tip"></a>疑难解答提示
 
@@ -45,7 +45,7 @@ ms.locfileid: "30275992"
 如果问题仍然存在，请与 IT 管理员联系。
   
 > [!TIP]
-> 您还可以通过使用[junk@office365.microsoft.com](mailto:junk@office365.microsoft.com)电子邮件地址和误报邮件 (使用[not_junk@office365.microsoft.com](mailto: not_junk@office365.microsoft.com)电子邮件地址) 将垃圾邮件直接提交到 Microsoft。有关详细信息, 请参阅[将垃圾邮件、非垃圾邮件和网络钓鱼诈骗邮件提交给 Microsoft 进行分析](submit-spam-non-spam-and-phishing-scam-messages-to-microsoft-for-analysis.md)。 
+> 您还可以将垃圾邮件直接提交给 Microsoft，电子邮件地址为 [junk@office365.microsoft.com](mailto:junk@office365.microsoft.com)；或者将误报邮件提交至 [not_junk@office365.microsoft.com](mailto: not_junk@office365.microsoft.com)。 有关详细信息, 请参阅[将垃圾邮件、非垃圾邮件和网络钓鱼诈骗邮件提交给 Microsoft 进行分析](submit-spam-non-spam-and-phishing-scam-messages-to-microsoft-for-analysis.md)。 
   
 ## <a name="troubleshooting-for-administrators"></a>管理员的疑难解答
 
@@ -87,9 +87,9 @@ ms.locfileid: "30275992"
     
 ## <a name="support-information"></a>支持信息
 
-如果你需要有关加载项的安装、配置或卸载的帮助, 请使用 Office 365 管理中心中的 "支持" 页面上的 "新建服务请求" 链接联系技术支持。有关其他选项, 包括通过电话提交服务请求和自助支持选项, 请参阅[Help and support for EOP](eop/help-and-support-for-eop.md)。
+如果你需要有关加载项的安装、配置或卸载的帮助, 请使用 Microsoft 365 管理中心中的 "支持" 页面上的 "新建服务请求" 链接联系技术支持。 有关其他选项, 包括通过电话提交服务请求和自助支持选项, 请参阅[Help and support for EOP](eop/help-and-support-for-eop.md)。
   
-## <a name="for-more-information"></a>更多信息
+## <a name="for-more-information"></a>有关详细信息
 
 [启用报告消息加载项](https://support.office.com/article/4250c4bc-6102-420b-9e0a-a95064837676)
   

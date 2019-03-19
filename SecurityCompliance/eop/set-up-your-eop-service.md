@@ -10,13 +10,13 @@ ms.service: O365-seccomp
 ms.custom: TN2DMC
 localization_priority: Normal
 ms.assetid: d74c6ddf-11b0-43ee-b298-8bb0340895f0
-description: 本主题介绍了如何设置 Microsoft Exchange Online Protection (EOP)。如果您已从 Office 365 域向导登录到这里，则假如您不想使用 Exchange Online Protection，请返回到 Office 365 域向导。若要详细了解如何配置连接器，请参阅Configure mail flow using connectors in Office 365。
-ms.openlocfilehash: 6c9e3becf0f86deeee92ec7cf336bdbd950ac5e2
-ms.sourcegitcommit: f49ab866e21da83a0be6cb23ab7b6b4366a6a7ee
+description: 本主题介绍了如何设置 Microsoft Exchange Online Protection (EOP)。 如果您已从 Office 365 域向导登录到这里，则假如您不想使用 Exchange Online Protection，请返回到 Office 365 域向导。 若要详细了解如何配置连接器，请参阅Configure mail flow using connectors in Office 365。
+ms.openlocfilehash: 96751f1f68e0b73c1d92b6868e99f4eb1c2739bf
+ms.sourcegitcommit: b688d67935edb036658bb5aa1671328498d5ddd3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "25715898"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "30670607"
 ---
 # <a name="set-up-your-eop-service"></a>设置 EOP 服务
 
@@ -40,11 +40,11 @@ ms.locfileid: "25715898"
   
 ## <a name="how-do-you-do-this"></a>您该如何做？
 
-### <a name="step-1-use-the-office-365-admin-center-to-add-and-verify-your-domain"></a>步骤 1：使用 Office 365 管理中心添加并验证你的域
+### <a name="step-1-use-the-microsoft-365-admin-center-to-add-and-verify-your-domain"></a>步骤 1: 使用 Microsoft 365 管理中心添加并验证你的域
 
-1. 在 Office 365 管理中心中，导航至" **设置**"，将你的域添加到服务中。 
+1. 在 Microsoft 365 管理中心, 导航到 "**安装程序**" 以将您的域添加到服务中。 
     
-    不确定在哪里可以找到 Office 365 管理中心？在[关于 Office 365 管理中心](https://go.microsoft.com/fwlink/p/?LinkId=521888)中了解更多相关信息。
+    不确定在哪里可以找到 Microsoft 365 管理中心？ 有关详细信息, 请[参阅 Microsoft 365 管理中心](https://go.microsoft.com/fwlink/p/?LinkId=521888)。
     
 2. 按照该步骤将适用的 DNS 记录添加到您的 DNS 托管提供程序以验证域所有权。
     
@@ -59,7 +59,7 @@ ms.locfileid: "25715898"
 
 在能使邮件在 EOP 和你的内部部署邮件服务器间流动的 [Set up connectors to route mail between Office 365 and your own email servers](http://technet.microsoft.com/library/2e93fd60-a5ef-4e64-8e62-2b862b2d1033.aspx) (EAC) 中创建连接器。有关详细说明，请参阅Exchange 管理中心。
   
-#### <a name="how-do-you-know-this-task-worked"></a>您如何知道此任务有效？
+#### <a name="how-do-you-know-this-task-worked"></a>如何判断此任务生效？
 
 使用远程连接分析器来运行测试，该测试将检查服务与您的环境之间的邮件流。有关详细信息，请参阅[Testing Mail Flow with the Remote Connectivity Analyzer](http://technet.microsoft.com/library/6c8c2964-d553-4329-8166-6e508dd63fa0.aspx)中的"使用远程连接分析器测试电子邮件传递"部分。
   
@@ -72,21 +72,21 @@ ms.locfileid: "25715898"
   
 ### <a name="step-5-use-the-shell-to-ensure-that-spam-is-routed-to-each-users-junk-email-folder"></a>步骤 5：使用命令行管理程序确保垃圾邮件被路由到每个用户的垃圾邮件文件夹
 
-若要确保垃圾邮件 （垃圾） 电子邮件正确路由到每个用户的垃圾邮件文件夹，您必须执行以下几个配置步骤。[确保垃圾邮件被路由到每个用户的垃圾邮件文件夹](../ensure-that-spam-is-routed-to-each-user-s-junk-email-folder.md)中提供的步骤。
+若要确保垃圾邮件被正确路由到每个用户的 "垃圾邮件" 文件夹, 您必须执行几个配置步骤。 提供的步骤可[确保将垃圾邮件路由到每个用户的 "垃圾邮件" 文件夹](../ensure-that-spam-is-routed-to-each-user-s-junk-email-folder.md)。
   
-如果您不想要将邮件移动到每个用户的垃圾邮件文件夹，您可以通过编辑您在 Exchange 管理中心中的内容筛选器策略选择另一项操作。有关详细信息，请参阅[配置垃圾邮件筛选器策略](../configure-your-spam-filter-policies.md)。
+如果您不想将邮件移至每个用户的垃圾电子邮件文件夹，可以选择其他操作，方法是在 Exchange 管理中心编辑内容筛选策略。 有关详细信息，请参阅[配置垃圾邮件筛选器策略](../configure-your-spam-filter-policies.md)。
   
-### <a name="step-6-use-the-office-365-admin-center-to-point-your-mx-record-to-eop"></a>步骤 6：使用 Office 365 管理中心将 MX 记录指向 EOP
+### <a name="step-6-use-the-microsoft-365-admin-center-to-point-your-mx-record-to-eop"></a>步骤 6: 使用 Microsoft 365 管理中心将 MX 记录指向 EOP
 
 按照 Office 365 域配置步骤更新你的域的 MX 记录，以便于你的入站电子邮件能够通过 EOP。请务必将你的 MX 记录直接指向 EOP 而不是让第三方筛选服务将电子邮件中继到 EOP。有关详细信息，请再次参阅[为 Office 365 创建 DNS 记录](https://go.microsoft.com/fwlink/p/?LinkId=304219)。
   
-#### <a name="how-do-you-know-this-task-worked"></a>您如何知道此任务有效？
+#### <a name="how-do-you-know-this-task-worked"></a>如何判断此任务生效？
 
 使用远程连接分析器运行测试，该测试验证您的 MX 记录。有关详细信息，请参阅[Testing Mail Flow with the Remote Connectivity Analyzer](http://technet.microsoft.com/library/6c8c2964-d553-4329-8166-6e508dd63fa0.aspx)中的"使用远程连接分析器测试 MX 记录和出站连接器"部分。 
   
 此时，您已验证经过适当配置的出站内部部署连接器的服务传递，而且已验证 MX 记录是否指向 EOP。现在，您可以选择运行以下其他测试来验证该服务是否会将电子邮件成功传递到内部部署环境：
   
-- 在远程连接分析器中，单击**Office 365**选项卡，，然后运行**入站 SMTP 电子邮件**测试位于下**Internet 电子邮件测试**。 
+- In the Remote Connectivity Analyzer, click the **Office 365** tab, and then run the **Inbound SMTP Email** test located under **Internet Email Tests**. 
     
 - 将来自基于 Web 的任何电子邮件帐户的电子邮件发送到组织中的邮件收件人，组织的域与您添加到服务上的域相匹配。使用 Microsoft Outlook 或另一个电子邮件客户端确认邮件是否已传递到内部部署邮箱。
     

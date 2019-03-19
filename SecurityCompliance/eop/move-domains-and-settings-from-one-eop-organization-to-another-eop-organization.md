@@ -11,19 +11,19 @@ ms.custom: TN2DMC
 localization_priority: Normal
 ms.assetid: 9d64867b-ebdb-4323-8e30-4560d76b4c97
 description: 更改业务需求有时可能需要将一个 Microsoft Exchange Online Protection (EOP) 组织（租户）分成两个单独的组织，将两个组织合并为一个组织，或将您的域和 EOP 设置从一个组织移动到另一个组织。
-ms.openlocfilehash: e2b030064ce180bd7eeebfb281751dc147dca899
-ms.sourcegitcommit: 48fa456981b5c52ab8aeace173c8366b9f36723b
+ms.openlocfilehash: 4cc3c7273a06374050f705f51d6b3d85fa8e037c
+ms.sourcegitcommit: b688d67935edb036658bb5aa1671328498d5ddd3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/28/2019
-ms.locfileid: "30341553"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "30670587"
 ---
 # <a name="move-domains-and-settings-from-one-eop-organization-to-another-eop-organization"></a>将域和设置从一个 EOP 组织移动到另一个 EOP 组织
 
 更改业务需求有时可能需要将一个 Microsoft Exchange Online Protection (EOP) 组织（租户）分成两个单独的组织，将两个组织合并为一个组织，或将您的域和 EOP 设置从一个组织移动到另一个组织。从一个 EOP 组织移动到另一个 EOP 组织极具挑战性，但通过一些基本的远程 Windows PowerShell 脚本和少量的准备工作，您便可以通过相对较小的维护窗口实现此目标。 
   
 > [!NOTE]
->  只能将设置从 EOP 独立 (标准) 组织中可靠地移动到另一个 EOP 标准或 Exchange Enterprise CAL with Services (EOP Premium) 组织, 或从 EOP Premium 组织移动到另一个 EOP 高级组织。由于某些高级功能在 EOP 标准组织中不受支持, 因此从 EOP premium 组织移动到 EOP 标准组织可能不会成功。> 这些说明适用于仅限 EOP 筛选组织。从一个 exchange online 组织移动到另一个 exchange online 组织时, 需要考虑其他注意事项。Exchange Online 组织不在这些说明的作用域内。 
+>  仅可将设置稳定可靠地从一个 EOP 独立 (Standard) 组织移动到另一个 EOP Standard 或 Exchange Enterprise CAL with Services (EOP Premium) 组织，或从一个 EOP Premium 组织移动到另一个 EOP Premium 组织。 由于某些高级功能在 EOP 标准组织中不受支持, 因此从 EOP premium 组织移动到 EOP 标准组织可能不会成功。 >  这些说明是针对 EOP 仅筛选组织。 从一个 Exchange Online 组织移动到另一个 Exchange Online 组织还有其他一些注意事项。 Exchange Online 组织不在这些说明的范畴内。 
   
 在以下示例中，Contoso, Ltd. 已与 Contoso Suites 合并。下图显示了将域、邮件用户和组，以及设置从源 EOP 组织 (contoso.onmicrosoft.com) 移动到目标 EOP 组织 (contososuites.onmicrosoft.com) 的过程。
   
@@ -58,22 +58,22 @@ ms.locfileid: "30341553"
   
 连接到远程 Windows PowerShell 后，在易于找到并进行更改的位置创建一个名为"Export"的目录。例如：
   
-```
+```Powershell
 mkdir C:\EOP\Export
 ```
 
-```
+```Powershell
 cd C:\EOP\Export
 ```
 
-以下脚本可用于收集源组织中的所有邮件用户、组、反垃圾邮件设置、反恶意软件设置、连接器和邮件流规则。将以下文本复制并粘贴到记事本之类的文本编辑器中, 将该文件保存为 Source_EOP_Settings。在您刚创建的导出目录中, 然后运行以下命令:
+以下脚本可用于收集源组织中的所有邮件用户、组、反垃圾邮件设置、反恶意软件设置、连接器和邮件流规则。 将下面的文本复制并粘贴到记事本等文本编辑器，将文件在刚刚创建的"Export"目录中另存为 Source_EOP_Settings.ps1，然后运行以下命令：
   
-```
+```Powershell
 & "C:\EOP\Export\Source_EOP_Settings.ps1"
 
 ```
 
-```
+```Powershell
 #****************************************************************************
 # Export Domains
 #*****************************************************************************
@@ -141,7 +141,7 @@ Set-Content -Path ".TransportRules.xml" -Value $file.FileData -Encoding Byte
 
 从“Export”目录运行以下命令，以通过目标组织更新 .xml 文件。将 contoso.onmicrosoft.com 和 contososuites.onmicrosoft.com 分别替换为您的源组织名称和目标组织名称。
   
-```
+```Powershell
 $files = ls
 ForEach ($file in $files) { (Get-Content $file.Name) | Foreach-Object {$_ -replace 'contoso.onmicrosoft.com', 'contososuites.onmicrosoft.com'} | Set-Content $file.Name}
 ```
@@ -150,13 +150,13 @@ ForEach ($file in $files) { (Get-Content $file.Name) | Foreach-Object {$_ -repla
 
 通过使用以下脚本将域添加到目标组织。将文本复制并粘贴到记事本等文本编辑器，将脚本另存为 C:\EOP\Export\Add_Domains.ps1，然后运行以下命令：
   
-```
+```Powershell
 &amp; "C:\EOP\Export\Add_Domains.ps1"
 ```
 
 这些域将不会经过验证，且不能用于路由邮件，但添加域之后，您就可以收集所需信息来验证域，并最终更新新租户的 MX 记录。
   
-```
+```Powershell
 #***********************************************************************
 # Login to Azure Active Directory
 #*****************************************************************************
@@ -172,15 +172,15 @@ Foreach ($domain in $Domains) {
 
 ```
 
-现在，您可以从目标组织的 Office 365 管理中心查看并收集信息，从而在合适的时机快速验证域：
+现在, 您可以查看和收集目标组织的 Microsoft 365 管理中心中的信息, 以便您可以在时间到来时快速验证您的域:
   
-1. 登录 Office 365 管理中心 [https://portal.office.com](https://portal.office.com)。
+1. 登录到 Microsoft 365 管理中心[https://portal.office.com](https://portal.office.com)。
     
-2. 单击 "**域**"。
+2. Click **Domains**.
     
-3. 单击每个 "**启动安装程序**" 链接, 然后继续执行安装向导。 
+3. Click each **Start setup** link, and then proceed through the setup wizard. 
     
-4. 在 "**确认所有权**" 页上, 有关**如何执行此步骤**的分步说明, 请选择 "**一般说明**"。
+4. On the **Confirm ownership** page, for **See step-by-step instructions for performing this step with**, select **General instructions**.
     
 5. 记录您将用来验证域的 MX 记录或 TXT 记录，并完成安装向导。
     
@@ -203,11 +203,11 @@ Foreach ($domain in $Domains) {
 
 以下脚本将使用 Azure Active Directory 远程 Windows PowerShell 从源租户删除用户、组和域。将以下文本复制并粘贴到记事本等文本编辑器，将文件另存为 C:\EOP\Export\Remove_Users_and_Groups.ps1，然后运行以下命令：
   
-```
-&amp; "C:\EOP\Export\Remove_Users_and_Groups.ps1"
+```Powershell
+& "C:\EOP\Export\Remove_Users_and_Groups.ps1"
 ```
 
-```
+```Powershell
 #*****************************************************************************
 # Login to Azure Active Directory
 #*****************************************************************************
@@ -243,11 +243,11 @@ Remove-MsolDomain -DomainName $Domain.Name -Force
 
 ## <a name="step-5-verify-domains-for-the-target-organization"></a>步骤 5：验证目标组织的域
 
-1. 登录 Office 365 管理中心 [https://portal.office.com](https://portal.office.com)。
+1. 登录到的管理中心[https://portal.office.com](https://portal.office.com)。
     
-2. 单击 "**域**"。
+2. Click **Domains**.
     
-3. 单击目标域的每个 "**启动安装程序**" 链接, 然后继续执行安装向导。 
+3. 单击目标域的每个“启动安装程序”**** 链接，然后再通过安装向导继续操作。 
     
 ## <a name="step-6-add-mail-users-and-groups-to-the-target-organization"></a>步骤 6：将邮件用户和组添加到目标组织
 
@@ -255,11 +255,11 @@ EOP 的一个最佳做法是使用 Azure Active Directory 将内部部署 Active
   
 若要使用脚本，可以将以下文本复制并粘贴到记事本等文本编辑器，将文件另存为 C:\EOP\Export\Add_Users_and_Groups.ps1，然后运行以下命令：
   
-```
-&amp; "C:\EOP\Export\Add_Users_and_Groups.ps1"
+```Powershell
+& "C:\EOP\Export\Add_Users_and_Groups.ps1"
 ```
 
-```
+```Powershell
 #***********************************************************************
 # makeparam helper function
 #****************************************************************************
@@ -608,13 +608,13 @@ if($MailContactsCount -gt 0){
   
 将脚本文本复制并粘贴到记事本等文本编辑器，将文件另存为 C:\EOP\Export\Import_Settings.ps1，然后运行以下命令：
   
-```
-&amp; "C:\EOP\Export\Import_Settings.ps1"
+```Powershell
+& "C:\EOP\Export\Import_Settings.ps1"
 ```
 
 此脚本将导入 .xml 文件，并创建名为 Settings.ps1 的 Windows PowerShell 脚本文件，您可以查看、编辑，然后运行此脚本文件来重新创建保护设置和邮件流设置。
   
-```
+```Powershell
 #***********************************************************************
 # makeparam helper function
 #****************************************************************************
@@ -926,6 +926,6 @@ if($HostedContentFilterPolicyCount -gt 0){
 
 ## <a name="step-8-revert-your-dns-settings-to-stop-mail-queuing"></a>步骤 8：还原 DNS 设置以停止邮件排队
 
-如果你选择将 MX 记录设置为无效地址，使发件人在转换期间对邮件进行排队，你将需要将其设置回在 [Office 365 管理中心](https://portal.office.com)中指定的正确值。有关配置 DNS 的详细信息，请参阅[为 Office 365 创建 DNS 记录](https://go.microsoft.com/fwlink/p/?LinkId=304219)。
+如果您选择将 MX 记录设置为无效地址以使发件人在您转换期间对邮件进行排队, 则需要将其设置回[管理中心](https://admin.microsoft.com)中指定的正确值。 有关配置 DNS 的详细信息，请参阅[为 Office 365 创建 DNS 记录](https://go.microsoft.com/fwlink/p/?LinkId=304219)。
   
 

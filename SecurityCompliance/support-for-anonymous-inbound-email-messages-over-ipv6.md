@@ -15,16 +15,16 @@ ms.assetid: b68df621-0a5f-4824-8abc-41e0c4fd1398
 ms.collection:
 - M365-security-compliance
 description: 了解如何为 exchange online Protection 和 exchange online 配置来自 IPv6 源的匿名邮件支持。
-ms.openlocfilehash: 229ee045d03b3fa4ccb7b4d5e59e1b2b7df6a7d7
-ms.sourcegitcommit: 686bc9a8f7a7b6810a096f07d36751d10d334409
+ms.openlocfilehash: 328cef29b7f8b9637ece7aca729ad1d706351667
+ms.sourcegitcommit: b688d67935edb036658bb5aa1671328498d5ddd3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "30276352"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "30670517"
 ---
 # <a name="support-for-anonymous-inbound-email-messages-over-ipv6"></a>支持通过 IPv6 发送的匿名入站电子邮件
 
-Exchange Online Protection (EOP) 和 Exchange Online 支持通过 IPv6 通信，从并非通过传输层安全 (TLS) 发送邮件的发件人接收匿名入站电子邮件。 您可以通过在[https://portal.office.com/adminportal/home](https://portal.office.com/adminportal/home)Microsoft 支持中打开 Office 365 管理中心, 单击 "**支持**", 然后单击 "**新建服务请求**", 选择通过从 Microsoft 支持中请求此功能来通过 IPv6 接收邮件。 如果您未选择加入 IPv6，将继续通过 IPv4 接收邮件。
+Exchange Online Protection (EOP) 和 Exchange Online 支持通过 IPv6 通信，从并非通过传输层安全 (TLS) 发送邮件的发件人接收匿名入站电子邮件。 您可以通过在[https://admin.microsoft.com/adminportal/home](https://admin.microsoft.com/adminportal/home)microsoft 支持中打开 microsoft 365 管理中心, 单击 "**支持**", 然后单击 "**新建服务请求**", 选择通过以下方式在 IPv6 上接收邮件。 如果您未选择加入 IPv6，将继续通过 IPv4 接收邮件。
   
 通过 IPv6 将邮件传输到服务的发件人必须符合以下两个要求：
   
@@ -42,7 +42,7 @@ Exchange Online Protection (EOP) 和 Exchange Online 支持通过 IPv6 通信，
   
  `550 5.2.1 Service unavailable, [contoso.com] does not accept email over IPv6.`
   
-## <a name="for-more-information"></a>详细信息
+## <a name="for-more-information"></a>有关详细信息
 
 [支持 DKIM 签名邮件验证](support-for-validation-of-dkim-signed-messages.md)
   

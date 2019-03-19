@@ -11,12 +11,12 @@ ms.custom: TN2DMC
 localization_priority: Normal
 ms.assetid: d6a87ce8-2c22-433a-b430-5eab14f6afdc
 description: 本主题为希望执行委派 Office 365 管理任务（包括能够为其他租户（公司）管理 Exchange Online Protection (EOP)）的 Microsoft 合作伙伴和经销商提供常见问题解答。
-ms.openlocfilehash: b6096e835f90a0d5f22a39a5df76e52f1a25a79d
-ms.sourcegitcommit: 22bca85c3c6d946083d3784f72e886c068d49f4a
+ms.openlocfilehash: 61f939932ab221343b67f87dd5c63f6697e70026
+ms.sourcegitcommit: b688d67935edb036658bb5aa1671328498d5ddd3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/06/2018
-ms.locfileid: "22027489"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "30670437"
 ---
 # <a name="delegated-administration-faq"></a>委派管理常见问题解答
 
@@ -24,7 +24,7 @@ ms.locfileid: "22027489"
   
  **问：我是经销商，需要管理客户的租户。具体工作原理是什么？**
   
-答：如果您是 Microsoft 合作伙伴或经销商，且已注册成为 Microsoft 顾问，则可以请求在 Office 365 管理中心中管理其租户的权限。这称为委派管理，它允许您如同其组织中的管理员一样配置其 Office 365 租户（包括 EOP 设置）。执行委派管理的步骤如下所示：
+A. 如果你是 microsoft 合作伙伴或经销商, 并且已注册为 microsoft advisor, 则可以请求在管理中心内管理其租户的权限。 这称为 "委派管理", 它允许您管理其 Office 365 租户 (包括 EOP 设置), 就像您是组织内的管理员一样。 执行委派管理的步骤如下所示:
   
 1. 注册成为 [Microsoft Office 365 顾问](https://aka.ms/cloudbenefits)。
     
@@ -44,6 +44,6 @@ ms.locfileid: "22027489"
   
  **问：能否将所有子租户的报告合并在一起？**
   
-答：您管理的公司之间的合并报告目前不适用于 Office 365 管理中心报告。但是，这可以通过远程 Windows PowerShell 或[报告 Web 服务](https://go.microsoft.com/fwlink/?LinkId=279926)实现。 
+A. 您管理的公司内的合并报告目前不可用于 Micrsoft 365 管理中心报告。 但是, 可以通过远程 Windows PowerShell 或[报告 web 服务](https://go.microsoft.com/fwlink/?LinkId=279926)执行此操作。 
   
 

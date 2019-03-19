@@ -14,12 +14,12 @@ ms.assetid: 56fee1c7-dc37-470e-9b09-33fff6d94617
 ms.collection:
 - M365-security-compliance
 description: 摘要： 本文介绍了如何结合使用域密钥识别邮件 (DKIM) 和 Office 365，从而确保目标电子邮件系统信任从自定义域发送的邮件。
-ms.openlocfilehash: 28e529038cefc955da4c76309d169a9f3b5e4a23
-ms.sourcegitcommit: 74ad22a5c6c3c9d9324f0f97070909e323a4e9cf
+ms.openlocfilehash: 8792f41ade704c7742445646b3cb965561994d02
+ms.sourcegitcommit: b688d67935edb036658bb5aa1671328498d5ddd3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/11/2019
-ms.locfileid: "30524076"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "30670677"
 ---
 # <a name="use-dkim-to-validate-outbound-email-sent-from-your-custom-domain-in-office-365"></a>使用 DKIM 在 Office 365 中验证从自定义域发送的出站电子邮件
 
@@ -137,9 +137,9 @@ TTL:                3600
 ### <a name="enable-dkim-signing-for-your-custom-domain-in-office-365"></a>在 Office 365 中为自定义域启用 DKIM 签名
 <a name="EnableDKIMinO365"> </a>
 
-在 DNS 中发布了 CNAME 记录后，就可以通过 Office 365 启用 DKIM 签名。为此，可以使用 Office 365 管理中心或 PowerShell。
+在 DNS 中发布了 CNAME 记录后，就可以通过 Office 365 启用 DKIM 签名。 您可以通过 Microsoft 365 管理中心或使用 PowerShell 执行此操作。
   
-#### <a name="to-enable-dkim-signing-for-your-custom-domain-through-the-office-365-admin-center"></a>使用 Office 365 管理中心为自定义域启用 DKIM 签名的具体步骤
+#### <a name="to-enable-dkim-signing-for-your-custom-domain-through-the-admin-center"></a>通过管理中心为您的自定义域启用 DKIM 签名
 
 1. [登录到 Office 365](https://support.office.microsoft.com/article/e9eb7d51-5430-4929-91ab-6157c5a050b4) 
     

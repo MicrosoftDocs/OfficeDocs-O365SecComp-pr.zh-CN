@@ -10,13 +10,13 @@ ms.service: O365-seccomp
 ms.custom: TN2DMC
 localization_priority: Normal
 ms.assetid: 212e68ac-6330-47e9-a169-6cf5e2f21e13
-description: Exchange Online Protection (EOP) 可用于创建启用邮件的 Exchange 组织的组。您还可以使用 EOP 定义或更新指定成员资格、 电子邮件地址和组的其他方面的组属性。
-ms.openlocfilehash: 1af39e3a55864a9a87f90e0a00957ebf1631bb45
-ms.sourcegitcommit: e9dca2d6a7838f98bb7eca127fdda2372cda402c
+description: 您可以使用 Exchange Online Protection (EOP) 为 Exchange 组织创建启用邮件的组。 您还可以使用 EOP 定义或更新可指定成员资格、电子邮件地址和组其他方面的组属性。
+ms.openlocfilehash: 2e747dc9a26cbbc1ce214107235ccea62f175dd0
+ms.sourcegitcommit: b688d67935edb036658bb5aa1671328498d5ddd3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/21/2018
-ms.locfileid: "23003171"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "30670457"
 ---
 # <a name="manage-groups-in-eop"></a>在 EOP 中管理组
 
@@ -50,40 +50,40 @@ ms.locfileid: "23003171"
   
 ## <a name="create-a-group-in-the-eac"></a>在 EAC 中创建组
 
-1. 在 Exchange 管理员中心 (EAC) 中，转到**收件人** \> **组**。
+1. 在 Exchange 管理中心 (EAC) 中, 转到 "**收件人** \> **组**"。
     
-2. 单击**新建**![添加图标](../media/ITPro-EAC-AddIcon.gif)，然后单击**通讯组**或**安全组**，根据您的需要。在搜索过程中，请参阅[类型的已启用邮件的组](manage-groups-in-eop.md)。 
+2. 单击 "**新建**![添加](../media/ITPro-EAC-AddIcon.gif)图标", 然后单击 "**通讯组**" 或 "**安全组**", 具体取决于您的需要。 请参阅[Types of mail-enabled groups](manage-groups-in-eop.md)了解区别。 
     
-3. 在**新建通讯组**或**新的安全组**页上，填写以下字段： 
+3. 在“新建通讯组”**** 或“新建安全组”**** 页面上，填写以下字段： 
     
-  - **显示名称**键入是唯一的组织和 EOP 用户有意义的显示名称。所需的显示名称。 
+  - **显示名称**键入您的组织独有的显示名称, 并对 EOP 用户有意义。 显示名称是必填项。 
     
-  - **别名**键入组的别名的最多为 64 个字符所特有的组织。EOP 用户在键入的别名： 线电子邮件和别名解析为组的显示名称。如果您更改别名，该组的主 SMTP 地址将还更改，并且将包含新别名。别名是必需的。 
+  - **别名**键入一个最高为64个字符的组别名, 这些字符对您的组织是唯一的。 EOP 用户在"收件人"电子邮件行中键入别名，别名会解析成组的显示名称。 如果您更改别名，组的主 SMTP 地址也会更改，并会包含新别名。 别名为必填项。 
     
-  - **说明**键入组的说明，以使人们知道该组的用途。 
+  - **说明**键入组的说明, 以便用户了解组的用途。 
     
-  - **所有者**默认情况下，创建组的人是所有者。您可以通过选择**添加**添加所有者![添加图标](../media/ITPro-EAC-AddIcon.gif)。所有组必须都有至少一个所有者。
+  - **所有者**默认情况下, 创建组的人员是所有者。 您可以通过选择 "**添加**![添加" 图标](../media/ITPro-EAC-AddIcon.gif)来添加所有者。 所有组都必须至少有一个所有者。
     
     > [!NOTE]
     > 所有者不必是组的成员。 
   
-  - **成员**若要添加的组成员并指定是否需要对人员加入或离开该组进行审批，请使用此部分。要添加到组的成员，单击**添加**![添加图标](../media/ITPro-EAC-AddIcon.gif)。
+  - **成员**使用此部分可以添加组成员, 并指定是否需要审批人员加入或离开组。 若要向组中添加成员, ****![请单击 "](../media/ITPro-EAC-AddIcon.gif)添加添加图标"。
     
-4. 单击**确定**返回原始页面。 
+4. 单击“确定”**** 返回原始页面。 
     
-5. 后完成后，单击**保存**以创建组。新组应出现在组列表。 
+5. 完成后, 请单击 "**保存**" 以创建组。 此时，新组应该会出现在组列表中。 
     
 ## <a name="edit-or-remove-a-group-in-the-eac"></a>在 EAC 中编辑或删除组
 
-1. 在 EAC 中，导航到**收件人** \> **组**。
+1. In the EAC, navigate to **Recipients** \> **Groups**.
     
-2. 执行以下操作之一：
+2. 执行下列操作之一：
     
-  - 编辑组： 在组列表中，单击通讯或您想要查看或更改的安全组，然后单击**编辑**![编辑图标](../media/ITPro-EAC-EditIcon.gif)。您可以更新常规设置、 添加或删除组的所有者，以及添加或删除组成员，根据需要。
+  - 若要编辑组, 请执行以下操作: 在组列表中, 单击要查看或更改的分发或安全组, 然后单击 "**编辑** ![编辑](../media/ITPro-EAC-EditIcon.gif)图标"。 您可以根据需要更新常规设置、添加或删除组所有者，以及添加或删除组成员。
     
-  - 若要删除的组： 选择组，并单击**删除**![删除图标](../media/ITPro-EAC-RemoveIcon.gif)。
+  - 若要删除组, 请选择组, 然后****![单击 "删除](../media/ITPro-EAC-RemoveIcon.gif)删除图标"。
     
-3. 当您完成更改后时，单击**保存**。
+3. 完成更改后, 请单击 "**保存**"。
     
 ## <a name="create-edit-or-remove-a-group-using-remote-windows-powershell"></a>使用远程 Windows PowerShell 创建、编辑或删除组
 
@@ -93,7 +93,7 @@ ms.locfileid: "23003171"
   
 该示例使用 [New-EOPDistributionGroup](http://technet.microsoft.com/library/4610dfe5-fca8-4ba8-be3c-535d1753e0f4.aspx) cmdlet 创建别名为"itadmin"且名称为"IT 管理员"的通信组。还会将用户添加为该组的成员。 
   
-```
+```Powershell
 New-EOPDistributionGroup -Type "Distribution" -Name "IT Administrators" -Alias itadmin -Members @("Member1","Member2","Member3") -ManagedBy "Member1"
 
 ```
@@ -102,21 +102,21 @@ New-EOPDistributionGroup -Type "Distribution" -Name "IT Administrators" -Alias i
   
 若要验证已成功创建"IT 管理员"组，请运行 [Get-Recipient](http://technet.microsoft.com/library/2ce6250f-0ad3-4b29-870c-e1d6e1e154bc.aspx) cmdlet 显示有关新组的信息： 
   
-```
+```Powershell
 Get-Recipient "IT Administrators" | Format-List
 
 ```
 
 若要获取组中成员的列表，请运行 [Get-DistributionGroupMember](http://technet.microsoft.com/library/15c71bc5-4246-44ac-8b34-8ccd585294b5.aspx) cmdlet，如下所示： 
   
-```
+```Powershell
 Get-DistributionGroupMember "IT Administrators"
 
 ```
 
 若要获取所有组的完整列表，请运行 [Get-Recipient](http://technet.microsoft.com/library/2ce6250f-0ad3-4b29-870c-e1d6e1e154bc.aspx) cmdlet，如下所示： 
   
-```
+```Powershell
 Get-Recipient -RecipientType "MailUniversalDistributionGroup" | FT | more
 
 ```
@@ -129,28 +129,28 @@ Get-Recipient -RecipientType "MailUniversalDistributionGroup" | FT | more
   
 此示例使用 [Set-EOPDistributionGroup](http://technet.microsoft.com/library/689a66c5-a524-4870-88f3-091fd6eae3b7.aspx) cmdlet 将"西雅图员工"组的主 SMTP 地址（也称为答复地址）更改为 sea.employees@contoso.com。 
   
-```
+```Powershell
 Set-EOPDistributionGroup "Seattle Employees" -PrimarysmptAddress "sea.employees@contoso.com"
 
 ```
 
 若要验证已成功更改组的属性，请使用 [Get-Recipient](http://technet.microsoft.com/library/2ce6250f-0ad3-4b29-870c-e1d6e1e154bc.aspx) cmdlet 验证更改。使用远程 PowerShell 的一个优势是可以查看多个组的多个属性。在之前更改主 SMTP 地址组的示例中，运行以下命令来验证新值： 
   
-```
+```Powershell
 Get-Recipient "Seattle Employees" | FL "PrimarySmtpAddress"
 
 ```
 
 此示例使用 [Update-EOPDistributionGroupMember](http://technet.microsoft.com/library/a6d4f790-1b94-42f8-af6f-fa79c504d8ec.aspx) cmdlet 更新"西雅图员工"组的所有成员。使用逗号分隔所有成员。 
   
-```
+```Powershell
 Update-EOPDistributionGroupMember -Identity "Seattle Employees" -Members @("Member1","Member2","Member3","Member4","Member5")
 
 ```
 
 若要获取组"西雅图员工"中所有成员的列表，请使用 [Get-DistributionGroupMember](http://technet.microsoft.com/library/15c71bc5-4246-44ac-8b34-8ccd585294b5.aspx) cmdlet，如下所示： 
   
-```
+```Powershell
 Get-DistributionGroupMember "Seattle Employees"
 
 ```
@@ -159,14 +159,14 @@ Get-DistributionGroupMember "Seattle Employees"
   
 此示例使用 [Remove-EOPDistributionGroup](http://technet.microsoft.com/library/a17b1307-3187-40b0-a438-c7b35a34c002.aspx) cmdlet 删除名为"IT 管理员"的通讯组。 
   
-```
+```Powershell
 Remove-EOPDistributionGroup -Identity "IT Administrators" 
 
 ```
 
 若要验证该组已删除，请运行 [Get-Recipient](http://technet.microsoft.com/library/2ce6250f-0ad3-4b29-870c-e1d6e1e154bc.aspx) cmdlet，如下所示，并确认该组（在此案例中为"IT 管理员"）已删除。 
   
-```
+```Powershell
 Get-Recipient -RecipientType "MailUniversalDistributionGroup"
 
 ```

@@ -17,12 +17,12 @@ ms.assetid: 96deb75f-64e8-4c10-b570-84c99c674e15
 ms.collection:
 - M365-security-compliance
 description: 零小时自动清除 (ZAP) 是一种电子邮件保护功能, 可检测到已发送到用户收件箱的垃圾邮件或恶意软件的邮件, 然后将恶意内容无害。 ZAP 的工作方式取决于检测到的恶意内容的类型。
-ms.openlocfilehash: b28de1b05843e3f5b0f6e7fc905c96f094c277f9
-ms.sourcegitcommit: 74ad22a5c6c3c9d9324f0f97070909e323a4e9cf
+ms.openlocfilehash: b49f7e3b5effec7b67daf6ab8acbf049705a4841
+ms.sourcegitcommit: b688d67935edb036658bb5aa1671328498d5ddd3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/11/2019
-ms.locfileid: "30524016"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "30670577"
 ---
 # <a name="zero-hour-auto-purge---protection-against-spam-and-malware"></a>零时差自动清除 - 防范垃圾邮件和恶意软件
 
@@ -72,7 +72,7 @@ Office 365 每天实时更新反垃圾邮件引擎和恶意软件签名。 但�
     
 在下面的示例中, 对名为 "Test" 的内容筛选器策略禁用了 ZAP。
     
-```
+```Powershell
   Set-HostedContentFilterPolicy -Identity Test -ZapEnabled $false
 ```
 
@@ -80,7 +80,7 @@ Office 365 每天实时更新反垃圾邮件引擎和恶意软件签名。 但�
 
 ### <a name="what-happens-if-a-legitimate-message-is-moved-to-the-junk-mail-folder"></a>如果将合法邮件移动到 "垃圾邮件" 文件夹中, 会发生什么情况？
   
-您应遵循正常的报告过程假阳性。 将邮件从 "收件箱" 移动到 "垃圾邮件" 文件夹的唯一原因是, 该服务已确定邮件是垃圾邮件还是恶意邮件。
+您应遵循正常的报告过程[假阳性](prevent-email-from-being-marked-as-spam.md)。 将邮件从 "收件箱" 移动到 "垃圾邮件" 文件夹的唯一原因是, 该服务已确定邮件是垃圾邮件还是恶意邮件。
   
 ### <a name="what-if-i-use-the-office-365-quarantine-instead-of-the-junk-mail-folder"></a>如果我使用的是 Office 365 隔离, 而不是垃圾邮件文件夹, 该怎么办？
   
@@ -88,7 +88,7 @@ Office 365 每天实时更新反垃圾邮件引擎和恶意软件签名。 但�
   
 ### <a name="what-if-i-have-a-custom-mail-flow-rule-block-allow-rule"></a>如果我有自定义邮件流规则 (阻止/允许规则), 该怎么办？
   
-由管理员 (邮件流规则) 或阻止和允许规则创建的规则优先。 将从功能条件中排除此类邮件。
+由管理员 (邮件流规则) 或阻止和允许规则创建的规则优先。 将从功能条件中排除此类邮件, 以便邮件流遵循规则操作 (阻止/允许规则)。
   
 ## <a name="related-topics"></a>相关主题
 

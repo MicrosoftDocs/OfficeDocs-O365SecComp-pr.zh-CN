@@ -11,12 +11,12 @@ ms.custom: TN2DMC
 localization_priority: Normal
 ms.assetid: 9dbff00a-474e-4452-aeb5-5be9a6b8c6d5
 description: 我们在此处回答了有关 Microsoft Exchange Online Protection (EOP) 云托管电子邮件筛选服务的一般常见问题。有关其他常见问题 (FAQ) 的主题，请转到下列链接：
-ms.openlocfilehash: 9a8ac96678e33623803e95998780b4544dec5a78
-ms.sourcegitcommit: 22bca85c3c6d946083d3784f72e886c068d49f4a
+ms.openlocfilehash: 888cf338a3f1767ddd6ba01a2f0f60f2f8794e3e
+ms.sourcegitcommit: b688d67935edb036658bb5aa1671328498d5ddd3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/06/2018
-ms.locfileid: "22027379"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "30670447"
 ---
 # <a name="eop-general-faq"></a>EOP 一般常见问题解答
 
@@ -64,7 +64,7 @@ ms.locfileid: "22027379"
   
  **问：EOP 是否具有可在其中查找已知问题及预期解决方案的通信门户？有哪些新功能？**
   
-答：Office 365 管理中心将包含一部分此类信息。如果您受到服务级别事件的影响，在登录 Office 365 管理中心后应查看通信警报（通常伴随着铃图标）。我们建议您阅读项目信息并根据情况进行处理。
+A. Microsoft 365 管理中心将包含此信息中的一些信息。 如果您受到服务级别事件的影响, 则在登录到 Microsoft 365 管理中心后, 您应该会看到一条通信警报 (通常伴随响铃图标)。 我们建议你阅读所有项的信息，然后酌情进行处理。
   
 关于新的 EOP 功能，[适用于企业的 Office 365 路线图](https://office.microsoft.com/en-us/products/office-365-roadmap-FX104343353.aspx)在找到有关即将推出的新功能的信息方面是不错的资源。我们还会在[官方博客](https://go.microsoft.com/fwlink/p/?LinkId=392724)网站上发布有关新功能的博客文章。 
   

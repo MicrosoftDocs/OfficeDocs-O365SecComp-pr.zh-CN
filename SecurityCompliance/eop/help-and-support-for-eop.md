@@ -11,12 +11,12 @@ ms.custom: TN2DMC
 localization_priority: Normal
 ms.assetid: 64535a0a-1044-413f-8bc2-ed8e8a0bc54c
 description: Microsoft 在多处通过多种方法为 EOP 提供帮助，包括自助支持和协助支持。
-ms.openlocfilehash: af99b029fec25368cafcacef7558eda0dc94af25
-ms.sourcegitcommit: 22bca85c3c6d946083d3784f72e886c068d49f4a
+ms.openlocfilehash: 7321b93f8391a3238535c905b1f9c916278843a9
+ms.sourcegitcommit: b688d67935edb036658bb5aa1671328498d5ddd3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/06/2018
-ms.locfileid: "22027549"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "30670527"
 ---
 # <a name="help-and-support-for-eop"></a>EOP 帮助与支持
 
@@ -38,7 +38,7 @@ ms.locfileid: "22027549"
   
 ## <a name="assisted-support-from-microsoft"></a>Microsoft 协助支持
 
-通过在 Office 365 管理中心 内启动新服务请求或致电联系，您可以获取 Microsoft 的帮助。Premier Support 订阅者具有额外支持选项。
+你可以通过在 microsoft 365 管理中心或通过电话呼叫来启动新的服务请求, 获取 microsoft 的帮助。 Premier Support 订阅者具有额外支持选项。
   
 ### <a name="support-for-microsoft-premier-support-subscribers"></a>对 Microsoft Premier Support 订阅者的支持
 
@@ -48,19 +48,19 @@ ms.locfileid: "22027549"
   
 ### <a name="ask-for-help-on-the-web"></a>在 Web 上寻求帮助
 
-1. 登录 Office 365 管理中心。
+1. 登录到 Microsoft 365 管理中心。
     
-2. 转到**支持** \> **请求客户支持** \> **新服务请求**
+2. Go to **Support** \> **Ask for Customer Support** \> **New Service Request**
     
 3. 使用表格添加您的问题信息，搜索以往问题的解决方案，或附上日志或相关文件。
     
 ### <a name="ask-for-help-on-the-telephone"></a>致电寻求帮助
 
-1. 登录 Office 365 管理中心。
+1. 登录到 Microsoft 365 管理中心。
     
-2. 对于一般产品问题请转到**支持** \> **请求客户支持** \> **呼叫技术支持**。
+2. For general product issues go to **Support** \> **Ask for Customer Support** \> **Call technical support**.
     
-    对于 EOP，售前问题或疑问账单和订阅，请转到**支持** \> **请求客户支持** \> **呼叫账单和订阅支持**。
+    For questions before you buy EOP, or questions about billing and subscriptions, go to **Support** \> **Ask for Customer Support** \> **Call billing and subscription support**.
     
 3. 使用 Microsoft Office 365 虚拟代理搜索目前最合适的电话号码。
     
