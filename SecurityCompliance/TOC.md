@@ -106,7 +106,7 @@
 ### [配置垃圾邮件筛选器策略](configure-your-spam-filter-policies.md)
 ### [配置连接筛选器策略](configure-the-connection-filter-policy.md)
 ### [配置出站垃圾邮件策略](configure-the-outbound-spam-policy.md)
-### [从阻止列表删除用户、域或 IP 地址](removing-a-user-domain-or-ip-address-from-a-block-list-after-sending-spam-email.md)
+### [发送垃圾电子邮件后，从受限用户门户删除用户](removing-user-from-restricted-users-portal-after-spam.md)
 ### [垃圾邮件可信度](spam-confidence-levels.md)
 #### [使用邮件流规则设置邮件中的垃圾邮件可信度 (SCL)](use-mail-flow-rules-to-set-the-spam-confidence-level-scl-in-messages.md)
 #### [将垃圾邮件、非垃圾邮件和网络欺诈邮件提交给 Microsoft 进行分析](submit-spam-non-spam-and-phishing-scam-messages-to-microsoft-for-analysis.md)
