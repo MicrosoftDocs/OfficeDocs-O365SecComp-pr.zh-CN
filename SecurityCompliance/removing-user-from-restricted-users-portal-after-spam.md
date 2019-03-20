@@ -1,5 +1,5 @@
 ---
-title: 发送垃圾电子邮件后, 从受限用户门户中删除用户
+title: 发送垃圾电子邮件后，从受限用户门户删除用户
 ms.author: tracyp
 author: MSFTTracyP
 manager: laurawi
@@ -9,7 +9,6 @@ ms.topic: article
 f1_keywords:
 - ms.exch.eac.ActionCenter.Restricted.Users.RestrictedUsers
 ms.service: O365-seccomp
-ms.custom: TN2DMC
 localization_priority: Normal
 search.appverid:
 - MET150
@@ -17,14 +16,14 @@ ms.assetid: 712cfcc1-31e8-4e51-8561-b64258a8f1e5
 ms.collection:
 - M365-security-compliance
 description: 如果用户不断发送来自受分类为垃圾邮件的 Office 365 的电子邮件, 则会受到限制, 无法发送更多的邮件。
-ms.openlocfilehash: 61d52ad1f25dc3767ad51da5b3a217ace59303ce
-ms.sourcegitcommit: 9918411c01e962d5c67d53dd30a8a9c28c547397
+ms.openlocfilehash: 9370df691bfe30498e32115d7c77dd5cf02556f1
+ms.sourcegitcommit: 0f93b37c39d807dec91f118aa671a3430c47a9ac
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/15/2019
-ms.locfileid: "30654549"
+ms.lasthandoff: 03/20/2019
+ms.locfileid: "30692011"
 ---
-# <a name="removing-a-user-from-the-restricted-users-portal-after-sending-spam-email"></a>发送垃圾电子邮件后, 从受限用户门户中删除用户
+# <a name="removing-a-user-from-the-restricted-users-portal-after-sending-spam-email"></a>发送垃圾电子邮件后，从受限用户门户删除用户
 
 如果用户持续发送来自受分类为垃圾邮件的 Office 365 的电子邮件, 则会受到限制, 无法发送出出站邮件。 用户将在服务中列为错误的出站发件人, 并将收到一份状态为的未送达报告 (NDR):
 

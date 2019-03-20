@@ -7,7 +7,6 @@ ms.date: 12/9/2016
 ms.audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
-ms.custom: TN2DMC
 localization_priority: Normal
 search.appverid:
 - MET150
@@ -15,12 +14,12 @@ ms.assetid: 758822b5-0126-463a-9d08-7366bb2a807d
 ms.collection:
 - M365-security-compliance
 description: Microsoft Outlook 网页上的用户可以使用内置的电子邮件报告选项报告垃圾邮件和网络钓鱼诈骗。 如果一封电子邮件被错误地识别为垃圾邮件，您还可以让 Microsoft 了解这一情况。
-ms.openlocfilehash: e40770d8ff7e2c24058674f25b9ee8eb72e2bf7c
-ms.sourcegitcommit: 5eb664b6ecef94aef4018a75684ee4ae66c486bb
+ms.openlocfilehash: 089792ab8e46f4b200a2d98781cd378c2666c35f
+ms.sourcegitcommit: 0f93b37c39d807dec91f118aa671a3430c47a9ac
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/08/2019
-ms.locfileid: "30492811"
+ms.lasthandoff: 03/20/2019
+ms.locfileid: "30693311"
 ---
 # <a name="report-junk-email-and-phishing-scams-in-outlook-on-the-web"></a>在 web 上的 Outlook 中报告垃圾电子邮件和网络钓鱼诈骗 
 

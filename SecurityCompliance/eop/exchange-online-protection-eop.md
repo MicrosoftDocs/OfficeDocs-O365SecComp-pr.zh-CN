@@ -7,16 +7,15 @@ ms.date: 12/9/2016
 ms.audience: ITPro
 ms.topic: hub-page
 ms.service: O365-seccomp
-ms.custom: TN2DMC
 localization_priority: Normal
 ms.assetid: 70ab4af2-fec4-4886-8e12-27d348649204
 description: 在开始使用 EOP 之前, 应注意以下几点。
-ms.openlocfilehash: fc5ea726de190395407952ceac69c4c682ac8f67
-ms.sourcegitcommit: 48fa456981b5c52ab8aeace173c8366b9f36723b
+ms.openlocfilehash: 878380adb039961334413019551847717ace0cc7
+ms.sourcegitcommit: 0f93b37c39d807dec91f118aa671a3430c47a9ac
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/28/2019
-ms.locfileid: "30341743"
+ms.lasthandoff: 03/20/2019
+ms.locfileid: "30692321"
 ---
 # <a name="exchange-online-protection"></a>Exchange Online Protection 
 
@@ -28,7 +27,7 @@ ms.locfileid: "30341743"
     
 - 如果您需要更多帮助或想要分享观点，[EOP 论坛](https://go.microsoft.com/fwlink/?LinkId=285351)是很好的入门之地。 
     
-- 您可以使用任何 TechNet 页面右上侧的"导出"选项来添加主题，然后将其导出到 PDF 文件中。 
+- 您可以使用任何 TechNet 页面右上侧的“导出”选项来添加主题，然后将其导出到 PDF 文件中。 
     
 ## <a name="eop-help-for-administrators"></a>EOP 管理员帮助
 
@@ -69,11 +68,11 @@ ms.locfileid: "30341743"
   
 - [Find and Release Quarantined Messages as an End User](http://technet.microsoft.com/library/e439b560-827a-4807-abd3-6b861c1ff786.aspx) 介绍最终用户如何在自己的垃圾邮件隔离用户界面中查找和释放其自己的垃圾邮件隔离邮件，并且可以选择向 Microsoft 将其报告为非垃圾邮件。 
         
-- [将垃圾邮件、非垃圾邮件和网络钓鱼诈骗邮件提交给 Microsoft 进行分析](../submit-spam-non-spam-and-phishing-scam-messages-to-microsoft-for-analysis.md)介绍最终用户可以将垃圾邮件 (垃圾邮件) 和非垃圾邮件 (非垃圾邮件) 提交给 Microsoft 的不同方法。本主题包括指向 Microsoft Outlook 和 web 上的 Outlook (以前称为 Outlook web App) 中提供的报告工具的链接。 
+- [将垃圾邮件、非垃圾邮件和网络钓鱼诈骗邮件提交给 Microsoft 进行分析](../submit-spam-non-spam-and-phishing-scam-messages-to-microsoft-for-analysis.md)介绍最终用户可以将垃圾邮件 (垃圾邮件) 和非垃圾邮件 (非垃圾邮件) 提交给 Microsoft 的不同方法。 本主题包括指向 Microsoft Outlook 和 web 上的 Outlook (以前称为 Outlook web App) 中提供的报告工具的链接。 
     
 - [Submitting malware and non-malware to Microsoft for analysis](../submitting-malware-and-non-malware-to-microsoft-for-analysis.md) 介绍最终用户如何提交通过筛选器的恶意软件，或者如何提交被错误检测为恶意软件的文件。 
     
-- 最终用户可以通过在 outlook 或 web 上的 outlook 中配置其垃圾邮件设置, 将特定用户或域添加到安全发件人列表或阻止的发件人列表中。请注意, 从阻止的发件人发送的邮件被标记为垃圾邮件, 而不是被拒绝, 这意味着可以从 "垃圾邮件" 文件夹或隔离区中检索邮件 (具体取决于管理员已将该服务配置为发送垃圾邮件的位置)。有关详细信息, 请参阅[使用报告邮件外接程序](https://support.office.com/article/addin-b5caa9f1-cdf3-4443-af8c-ff724ea719d2)。
+- 最终用户可以通过在 outlook 或 web 上的 outlook 中配置其垃圾邮件设置, 将特定用户或域添加到安全发件人列表或阻止的发件人列表中。 请注意, 从阻止的发件人发送的邮件被标记为垃圾邮件, 而不是被拒绝, 这意味着可以从 "垃圾邮件" 文件夹或隔离区中检索邮件 (具体取决于管理员已将该服务配置为发送垃圾邮件的位置)。有关详细信息, 请参阅[使用报告邮件外接程序](https://support.office.com/article/addin-b5caa9f1-cdf3-4443-af8c-ff724ea719d2)。
     
 - [EOP 帮助与支持](help-and-support-for-eop.md) 提供有关获取帮助和技术支持的信息。 
     

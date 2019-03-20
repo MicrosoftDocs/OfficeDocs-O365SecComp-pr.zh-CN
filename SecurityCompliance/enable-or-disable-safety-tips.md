@@ -6,7 +6,7 @@ manager: laurawi
 ms.date: 12/05/2018
 ms.audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid:
 - MET150
@@ -14,12 +14,12 @@ ms.assetid: f09668bd-fe1a-4c01-89e3-e88c370e66c7
 ms.collection:
 - M365-security-compliance
 description: 通知 Office 365 和 EOP 管理员如何在电子邮件中启用和禁用安全提示。
-ms.openlocfilehash: 020ee15676cc2d4dd6156db9e4d50558ff7793f0
-ms.sourcegitcommit: f86383dcb9c52352661d51b22617f1809445beaa
+ms.openlocfilehash: 9be9c4cd7fc8e94208aac2ad8812c93a3465f58b
+ms.sourcegitcommit: 0f93b37c39d807dec91f118aa671a3430c47a9ac
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "30573526"
+ms.lasthandoff: 03/20/2019
+ms.locfileid: "30693431"
 ---
 # <a name="enable-or-disable-safety-tips-in-office-365"></a>启用或禁用 Office 365 中的安全提示
 
@@ -62,7 +62,7 @@ Office 365 默认为您的组织启用安全提示, 我们建议您将其保持�
     
 9. 若要启用安全提示, 请在 "**安全提示**" 下选中 "**打开**" 复选框。 若要禁用安全提示, 请清除 "**打开**" 复选框。 
     
-10. 选择“**保存**”。
+10. 选择“保存”****。
     
 ## <a name="to-enable-or-disable-safety-tips-by-using-powershell"></a>使用 PowerShell 启用或禁用安全提示的具体方法
 <a name="pshellsafetytip"> </a>

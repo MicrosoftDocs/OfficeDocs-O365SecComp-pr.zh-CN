@@ -7,20 +7,19 @@ ms.date: 12/9/2016
 ms.audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
-ms.custom: TN2DMC
 localization_priority: Normal
 search.appverid:
 - MET150
 ms.assetid: ceeda109-6c24-4270-bd09-a36959417276
 ms.collection:
 - M365-security-compliance
-description: 作为 Exchange Online 或 Exchange Online Protection (EOP) 管理员，你可以帮助确保通过服务进行传递的电子邮件不会被标记为垃圾邮件。有关完成此操作的更新提示和过程，请参阅 使用安全列表或其他方法防止标记为垃圾邮件的误报电子邮件（使用安全列表或其他技术防止误报电子邮件被标记为垃圾邮件）。
-ms.openlocfilehash: e8fecb3bd7411f2d5d24bf607dc2517b278eb108
-ms.sourcegitcommit: 686bc9a8f7a7b6810a096f07d36751d10d334409
+description: 作为 Exchange Online 或 Exchange Online Protection (EOP) 管理员，你可以帮助确保通过服务传递的电子邮件不会被标记为垃圾邮件。 有关完成此操作的更新提示和过程，请参阅 使用安全列表或其他方法防止标记为垃圾邮件的误报电子邮件（使用安全列表或其他技术防止误报电子邮件被标记为垃圾邮件）。
+ms.openlocfilehash: bfd0ea72facbf5675e47177c7757ff5fe168ffe7
+ms.sourcegitcommit: 0f93b37c39d807dec91f118aa671a3430c47a9ac
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "30275882"
+ms.lasthandoff: 03/20/2019
+ms.locfileid: "30691781"
 ---
 # <a name="how-to-help-ensure-that-a-message-isnt-marked-as-spam"></a>如何确保邮件不会标记为垃圾邮件
 

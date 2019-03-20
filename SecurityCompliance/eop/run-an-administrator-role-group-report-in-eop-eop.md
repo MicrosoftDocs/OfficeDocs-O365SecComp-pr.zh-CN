@@ -7,16 +7,15 @@ ms.date: 11/17/2014
 ms.audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
-ms.custom: TN2DMC
 localization_priority: Normal
 ms.assetid: 23b47b57-0eec-46a3-a03b-366ea014ab31
 description: 每当管理员在管理员角色组中添加或删除成员时，Microsoft Exchange Online Protection (EOP) 都会进行记录。
-ms.openlocfilehash: 49311faa4ee54fafa1c05a2314ed2f9d74cbe5a5
-ms.sourcegitcommit: 22bca85c3c6d946083d3784f72e886c068d49f4a
+ms.openlocfilehash: 752def771d95fcfbb3f7cbe0bc86a33b3967716d
+ms.sourcegitcommit: 0f93b37c39d807dec91f118aa671a3430c47a9ac
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/06/2018
-ms.locfileid: "22027199"
+ms.lasthandoff: 03/20/2019
+ms.locfileid: "30692711"
 ---
 # <a name="run-an-administrator-role-group-report-in-eop"></a>在 EOP 中运行管理员角色组报告 
 
@@ -37,17 +36,17 @@ ms.locfileid: "22027199"
 
 运行管理员角色组报告，以查找在特定时间段内对组织中的管理角色组所做的更改。
   
-1. 在 EAC 中，导航到**合规性管理** \> **审核**，并选择**运行管理员角色组报告**。
+1. 在 EAC 中, 导航到 "**合规性管理** \> **审核**", 然后选择 "**运行管理员角色组报告**"。
     
-2. 选择**开始日期**和**结束日期**。默认情况下，报表搜索在过去两周内管理员角色组所做的更改。
+2. 选择 "**开始日期**" 和 "**结束日期**"。 默认情况下，报告将搜索在过去两周内对管理员角色组所做的更改。
     
-3. 若要查看特定的角色组的更改，请单击**选择角色组**。在随后出现的对话框中，选择角色组 （或组），然后单击**确定**。您还可以将字段留空，以查找所有已更改的角色组。
+3. 若要查看特定角色组的更改, 请单击 "**选择角色组**"。 在随后的对话框中选择角色组, 然后单击 **"确定"**。 您也可以将字段留空，以查找所有更改的角色组。
     
 4. 单击"搜索"。
     
 如果使用指定的条件找到了所有更改，则这些更改会显示在结果窗格中。单击搜索结果中的角色组可在详细信息窗格中查看更改。
   
-## <a name="how-do-you-know-this-worked"></a>您如何知道操作成功？
+## <a name="how-do-you-know-this-worked"></a>如何判断是否生效？
 
 如果您已成功运行管理员角色组报告，那么在此日期范围内更改的角色组将显示在搜索结果窗格中。如果没有显示任何结果，那么在指定日期范围内没有发生对角色组的任何更改。如果您认为应该显示结果，请更改日期范围，然后再次运行报告。
   
@@ -55,7 +54,7 @@ ms.locfileid: "22027199"
 
 向某个角色组添加成员或删除其中的成员时，在详细信息窗格中显示的搜索结果将会指示角色组成员身份已进行更新，并列出当前的成员。但搜索结果并不会明确地指出已添加或已删除的用户。
   
-若要确定已添加或删除用户，您需要比较报表中的两个单独的条目。例如，让我们看一下**HelpDesk**角色组的以下日志项： 
+若要确定是否添加或删除了某个用户，则必须对报告中的两个不同条目进行比较。 例如, 让我们来看看 "**支持人员**" 角色组的以下日志条目: 
   
  **1/27/2013 4:43 PM**
   

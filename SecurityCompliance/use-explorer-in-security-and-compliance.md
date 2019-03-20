@@ -15,12 +15,12 @@ ms.assetid: 82ac9922-939c-41be-9c8a-7c75b0a4e27d
 ms.collection:
 - M365-security-compliance
 description: 了解安全&amp;合规性中心中的资源管理器 (也称为 "威胁浏览器")。
-ms.openlocfilehash: 626d827712760aa0b7b6faf75d94f525cfe38dc2
-ms.sourcegitcommit: 74ad22a5c6c3c9d9324f0f97070909e323a4e9cf
+ms.openlocfilehash: 0c86792d8ed84b43b28bde31004dc95d2fa2b547
+ms.sourcegitcommit: 0f93b37c39d807dec91f118aa671a3430c47a9ac
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/11/2019
-ms.locfileid: "30524006"
+ms.lasthandoff: 03/20/2019
+ms.locfileid: "30693611"
 ---
 # <a name="use-threat-explorer-in-the-security-amp-compliance-center"></a>在安全&amp;合规中心中使用威胁资源管理器
 
@@ -31,7 +31,7 @@ ms.locfileid: "30524006"
 若要使用资源管理器, &amp;请在安全合规性中心中, 转到 "**威胁管理** \> **资源管理器**"。
 
 > [!IMPORTANT]
-> office 365 威胁智能现已成为 office 365 高级威胁防护计划2的一部分, 其中包含额外的威胁防护功能。 若要了解详细信息, 请参阅[office 365 高级威胁防护计划和定价](https://products.office.com/exchange/advance-threat-protection)以及[Office 365 高级威胁防护服务说明](https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description)。
+> office 365 威胁智能现已成为 office 365 高级威胁防护计划 2, 以及其他威胁防护功能。 若要了解详细信息, 请参阅[office 365 高级威胁防护计划和定价](https://products.office.com/exchange/advance-threat-protection)以及[Office 365 高级威胁防护服务说明](https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description)。
       
 ## <a name="explorer-overview"></a>Explorer 概述
 

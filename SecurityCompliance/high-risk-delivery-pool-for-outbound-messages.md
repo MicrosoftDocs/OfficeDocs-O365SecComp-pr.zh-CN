@@ -7,7 +7,6 @@ ms.date: 8/24/2016
 ms.audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
-ms.custom: TN2DMC
 localization_priority: Normal
 search.appverid:
 - MET150
@@ -15,12 +14,12 @@ ms.assetid: ac11edd9-2da3-462d-8ea3-bbf9dbc6f948
 ms.collection:
 - M365-security-compliance
 description: 当客户的电子邮件系统遭到恶意软件或恶意垃圾邮件攻击的威胁, 并且通过托管筛选服务发送出站垃圾邮件时, 这可能会导致第三方块上列出的 Office 365 数据中心服务器的 IP 地址列.
-ms.openlocfilehash: 604fdf2df11b6dff493444fe9dbcc6f95ced6a7d
-ms.sourcegitcommit: 686bc9a8f7a7b6810a096f07d36751d10d334409
+ms.openlocfilehash: b3c0aecd45dd01d407712af2e3945e1cff521710
+ms.sourcegitcommit: 0f93b37c39d807dec91f118aa671a3430c47a9ac
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "30275542"
+ms.lasthandoff: 03/20/2019
+ms.locfileid: "30692081"
 ---
 # <a name="high-risk-delivery-pool-for-outbound-messages"></a>出站邮件的高风险传递池
 
@@ -46,7 +45,7 @@ DSN 邮件激增的可能原因包括：
     
 所有这些问题都会导致该服务处理的 DSN 邮件数量的激增。在很多情况下，这些 DSN 邮件对其他电子邮件服务器和服务来说是垃圾邮件。
   
-## <a name="for-more-information"></a>详细信息
+## <a name="for-more-information"></a>有关详细信息
 
 [配置出站垃圾邮件策略](configure-the-outbound-spam-policy.md)
   

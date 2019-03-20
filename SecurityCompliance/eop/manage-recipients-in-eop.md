@@ -7,16 +7,15 @@ ms.date: 11/17/2014
 ms.audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
-ms.custom: TN2DMC
 localization_priority: Normal
 ms.assetid: 2921f544-8257-4bae-8e3a-ce9250e9f162
 description: Microsoft Exchange Online Protection (EOP) 提供了几种用于管理邮件收件人的方法。 作为管理员, 您可以在 Exchange 管理中心 (EAC) 或使用远程 Windows PowerShell 中执行某些管理任务, 并验证在 Microsoft 365 管理中心内执行的其他管理任务。
-ms.openlocfilehash: 52d423960444605382bd0314a5c12114fad755a2
-ms.sourcegitcommit: b688d67935edb036658bb5aa1671328498d5ddd3
+ms.openlocfilehash: 1d9436cf02538ab5c69e0e68d20eda1af5b0a5cd
+ms.sourcegitcommit: 0f93b37c39d807dec91f118aa671a3430c47a9ac
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "30670397"
+ms.lasthandoff: 03/20/2019
+ms.locfileid: "30691681"
 ---
 # <a name="manage-recipients-in-eop"></a>在 EOP 中管理收件人
 

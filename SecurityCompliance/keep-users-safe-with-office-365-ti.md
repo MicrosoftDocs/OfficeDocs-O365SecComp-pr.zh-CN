@@ -15,12 +15,12 @@ ms.assetid: 3387bfc3-028a-42f4-8133-4cbecfaab812
 ms.collection:
 - M365-security-compliance
 description: 了解 Office 365 威胁调查和响应功能如何帮助您的组织检测入侵和威胁, 并快速缓解和恢复威胁。
-ms.openlocfilehash: 924ec3522b056b267f5e8af394f380aaff8392a2
-ms.sourcegitcommit: f25a667e4c7d11c43c87604d576f1e6d6155b14f
+ms.openlocfilehash: 9ed20713cac07631e63b969efea402e8dbeb8f6d
+ms.sourcegitcommit: 0f93b37c39d807dec91f118aa671a3430c47a9ac
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/11/2019
-ms.locfileid: "30536132"
+ms.lasthandoff: 03/20/2019
+ms.locfileid: "30692281"
 ---
 # <a name="keep-your-office-365-users-safe-with-office-365-threat-investigation-and-response-capabilities"></a>使用 office 365 威胁调查和响应功能保持 office 365 用户安全
 
@@ -28,10 +28,10 @@ ms.locfileid: "30536132"
 
 您是否知道您的 Office 365 用户受攻击或更糟的威胁？ 知道如何缓解和恢复面向用户的攻击？ 您是否知道您可以使用 Office 365 中已有的安全功能完全完成此操作？ 
   
-[office 365 威胁调查和响应](office-365-ti.md)是 office 365 E5 订阅中包含的一系列功能。 Office 365 威胁调查和响应功能已帮助 Microsoft IT 将社会工程活动的平均解决时间降低了 80%, 并将每月的大小写提高了 200%, 与前两个季度相比! 
+[office 365 威胁调查和响应](office-365-ti.md)是 office 365 E5 订阅中包含的一系列功能 (作为 office 365 高级威胁防护计划2的一部分)。 Office 365 威胁调查和响应功能已帮助 Microsoft IT 将社会工程活动的平均解决时间降低了 80%, 并将每月的大小写提高了 200%, 与前两个季度相比! 
 
 > [!IMPORTANT]
-> office 365 高级威胁防护和威胁调查和响应 (以前称为 office 365 威胁智能) 现在是 office 365 高级威胁防护计划2的一部分, 其中包含其他威胁保护功能。 若要了解详细信息, 请参阅[office 365 高级威胁防护计划和定价](https://products.office.com/exchange/advance-threat-protection)以及[Office 365 高级威胁防护服务说明](https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description)。
+> 威胁调查和响应功能 (以前称为 office 365 威胁智能) 现在是 office 365 高级威胁防护计划2的一部分, 以及其他威胁防护功能。 若要了解详细信息, 请参阅[office 365 高级威胁防护计划和定价](https://products.office.com/exchange/advance-threat-protection)以及[Office 365 高级威胁防护服务说明](https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description)。
   
 我们最近添加了新功能, 可帮助改进检测和恢复威胁的方式! 下面简单介绍了更新后的威胁调查和响应功能如何提高效率。
   
@@ -51,7 +51,7 @@ ms.locfileid: "30536132"
   
  **更新:** 我们已添加了直接从事件框架中删除 (软删除或硬删除) 电子邮件的功能。 以前的管理员只能将邮件移动到用户的垃圾邮件文件夹, 用户可以在那里恢复项目。 使用新的已发布的删除功能, 现在可以确保永久删除恶意或不需要的邮件。 
   
-如果您尚不具备这些 Office 365 威胁调查和响应功能, 请[立即试用](https://aka.ms/tryo365threatintel3)! 并[了解有关 Office 365 威胁调查和响应功能的详细信息](https://aka.ms/readmoreabouto365threatintel)。
+如果您还没有这些功能, 请[立即试用](https://aka.ms/tryo365threatintel3)! 并[了解有关 Office 365 威胁调查和响应功能的详细信息](https://aka.ms/readmoreabouto365threatintel)。
   
 ![事件修正的电子邮件列表的屏幕截图](media/9d8452d3-d8d2-4b26-81f9-76396e08dd17.png)
   
@@ -66,7 +66,7 @@ Gartner 估计在2017中仅限 $ 90B 用在 cybersecurity 上。 Sid Deshpande (
   
 ## <a name="whats-next"></a>接下来做什么
 
-- 详细了解此录制的会话中的 Office 365 威胁调查和响应功能:[使用 Office 365 威胁智能保持在 Cyberattacks 之前](https://myignite.microsoft.com/videos/53723)
+- 有关此录制的会话中的 Office 365 威胁调查和响应功能的详细信息, 请参阅以下内容:[使用 Office 365 保持在 Cyberattacks 之前](https://myignite.microsoft.com/videos/53723)
     
 - [立即试用 office 365 威胁调查和响应功能, 或立即](https://aka.ms/tryo365threatintel3)开始你的 office E5 试用版! 
     

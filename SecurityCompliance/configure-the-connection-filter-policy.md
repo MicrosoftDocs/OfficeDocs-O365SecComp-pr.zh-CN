@@ -7,20 +7,19 @@ ms.date: 10/24/2018
 ms.audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
-ms.custom: TN2DMC
 localization_priority: Normal
 search.appverid:
 - MET150
 ms.assetid: 6ae78c12-7bbe-44fa-ab13-c3768387d0e3
 ms.collection:
 - M365-security-compliance
-description: 若要确保从不受信任的人发送的电子邮件被阻止, 可以使用连接筛选器策略创建您信任的 IP 地址的允许列表 (也称为 "安全发件人列表")。您还可以创建阻止的发件人列表。
-ms.openlocfilehash: 2b6cbb709eec6911e8aa83d560d5c00ad2a6e344
-ms.sourcegitcommit: 48fa456981b5c52ab8aeace173c8366b9f36723b
+description: 若要确保从不受信任的人发送的电子邮件被阻止, 可以使用连接筛选器策略创建您信任的 IP 地址的允许列表 (也称为 "安全发件人列表")。 您还可以创建阻止的发件人列表。
+ms.openlocfilehash: 5ca6ad6721ac03e5ae62b40dda219671bde3e1c1
+ms.sourcegitcommit: 0f93b37c39d807dec91f118aa671a3430c47a9ac
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/28/2019
-ms.locfileid: "30341603"
+ms.lasthandoff: 03/20/2019
+ms.locfileid: "30693541"
 ---
 # <a name="configure-the-connection-filter-policy"></a>配置连接筛选器策略
  
@@ -32,18 +31,18 @@ ms.locfileid: "30341603"
   
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/b2f5bea3-e1a7-44b3-b7e2-07fac0d0ca40?autoplay=false]
   
-## <a name="what-do-you-need-to-know-before-you-begin"></a>在开始之前，您需要知道什么？
+## <a name="what-do-you-need-to-know-before-you-begin"></a>开始前，有必要了解什么？
 <a name="sectionSection0"> </a>
 
-- 预计完成时间：15 分钟
+- 估计完成时间：15 分钟
     
-- 您需要先分配权限, 然后才能执行此过程或过程。若要查看所需的权限, 请参阅[Exchange Online 中的功能权限](http://technet.microsoft.com/library/15073ce1-0917-403b-8839-02a2ebc96e16.aspx)主题中的 "反垃圾邮件" 条目。 
+- 您必须先获得权限，然后才能执行此过程或多个过程。 若要查看所需的权限, 请参阅[Exchange Online 中的功能权限](http://technet.microsoft.com/library/15073ce1-0917-403b-8839-02a2ebc96e16.aspx)主题中的 "反垃圾邮件" 条目。 
     
-- 若要获取要允许或阻止其邮件的发件人的 IP 地址, 可以检查邮件的 Internet 邮件头。如[反垃圾邮件邮件头](anti-spam-message-headers.md)中所述, 查找 CIP 标头。有关如何在各种电子邮件客户端中查看邮件头的信息, 请参阅[邮件头分析器](https://go.microsoft.com/fwlink/p/?LinkId=306583)。 
+- 要获取想要允许或阻止其邮件的发件人的 IP 地址，你可以检查邮件的 Internet 标题。 查找 CIP 标题，如[反垃圾邮件邮件头](anti-spam-message-headers.md)中所述。 有关如何在各种电子邮件客户端中查看邮件头的信息, 请参阅[邮件头分析器](https://go.microsoft.com/fwlink/p/?LinkId=306583)。 
     
 - 从 IP 阻止列表中的 IP 地址发送的电子邮件被拒绝，未标记为垃圾邮件，且未进行其他筛选。
     
-- 还可以通过远程 PowerShell 执行以下连接筛选过程。使用[set-hostedconnectionfilterpolicy](http://technet.microsoft.com/library/bd751db2-3f26-495b-8e5a-4fcab53b17fd.aspx) cmdlet 可查看您的设置, 以及用于编辑连接筛选器策略设置的[set-hostedconnectionfilterpolicy](http://technet.microsoft.com/library/ccb5731b-3fca-4d69-a91f-5049ea963fac.aspx) 。若要了解如何使用 Windows PowerShell 连接到 exchange online protection, 请参阅[连接到 exchange online protection PowerShell](https://go.microsoft.com/fwlink/p/?linkid=627290)。若要了解如何使用 Windows PowerShell 连接到 exchange online, 请参阅[连接到 exchange online PowerShell](https://go.microsoft.com/fwlink/p/?linkid=396554)。
+- 以下连接筛选器步骤也可以通过远程 PowerShell 执行。 使用 [Get-HostedConnectionFilterPolicy](http://technet.microsoft.com/library/bd751db2-3f26-495b-8e5a-4fcab53b17fd.aspx) cmdlet 查看设置，以及使用 [Set-HostedConnectionFilterPolicy](http://technet.microsoft.com/library/ccb5731b-3fca-4d69-a91f-5049ea963fac.aspx) 编辑连接筛选策略设置。 若要了解如何使用 Windows PowerShell 连接到 exchange online protection, 请参阅[连接到 exchange online protection PowerShell](https://go.microsoft.com/fwlink/p/?linkid=627290)。 若要了解如何使用 Windows PowerShell 连接到 Exchange Online，请参阅[连接到 Exchange Online PowerShell](https://go.microsoft.com/fwlink/p/?linkid=396554)。
     
 ## <a name="use-the-eac-to-edit-the-default-connection-filter-policy"></a>使用 EAC 编辑默认连接筛选器策略
 <a name="sectionSection1"> </a>
@@ -52,20 +51,20 @@ ms.locfileid: "30341603"
   
 1. 在 Exchange 管理中心 (EAC) 中, 导航到 "**保护** \> **连接筛选器**", 然后双击默认策略。
     
-2. 单击 "**连接筛选**" 菜单项, 然后创建所需的列表: ip 允许列表和/或 ip 阻止列表。 
+2. 单击“连接筛选”**** 菜单项目，然后创建所需列表：IP 允许列表和/或 IP 阻止列表。 
     
-    若要创建这些列表, ![请单击](media/ITPro-EAC-AddIcon.gif)"添加图标"。在随后出现的对话框中, 指定 IP 地址或地址范围, 然后单击 **"确定"**。重复此过程以添加其他地址。(添加或删除已添加的 IP 地址后, 也可以对其进行编辑或删除。)
+    若要创建这些列表, ![请单击](media/ITPro-EAC-AddIcon.gif)"添加图标"。 重复此过程以添加其他地址。 （您还可以在添加完 IP 地址后编辑或删除它们。 ）
     
     > [!NOTE]
     >  如果将 IP 地址添加到两个列表中, 则允许从该 ip 地址发送的电子邮件。 
 
-    以 nnn 的格式指定 IPV4 IP 地址。 nnn 为0到255之间的数字。您还可以指定无类别的域间路由 (CIDR) 范围, 格式为 nnn/rr, 其中 rr 是介于24到32之间的数字。若要指定从24至32范围之外的范围, 请参阅[配置 IP 允许列表时的其他注意事项](configure-the-connection-filter-policy.md#bkmk_addtionalconsiderationswhenconfiguringipallowlists)。 
+    以 nnn 的格式指定 IPV4 IP 地址。 nnn 为0到255之间的数字。 您也可以采用 nnn.nnn.nnn.nnn/rr 格式指定无类别域际路由选择 (CIDR) 的范围，其中 rr 代表 24 至 32 的任意数字。 要指定超出 24 至 32 的范围，请参阅 [配置 IP 允许列表时的其他注意事项](configure-the-connection-filter-policy.md#bkmk_addtionalconsiderationswhenconfiguringipallowlists)。 
 
-    最多可以指定1273个条目, 其中条目是单个 ip 地址或 ip 地址的 CIDR 范围 (从/24 到/32)。> 如果要发送 TLS 加密邮件, 则不支持 IPv6 地址和地址范围。 
+    您最多可以指定 1273 个条目，条目可以是单个 IP 地址或 IP 地址的 CIDR 范围（从 /24 到 /32）。 >  如果您发送 TLS 加密邮件，则不支持 IPv6 地址和地址范围。 
   
-3. (可选) 选中 "**启用安全列表**" 复选框以防止某些已知发件人丢失的电子邮件。计算?Microsoft 订阅了受信任发件人的第三方来源。使用此安全列表意味着这些受信任的发件人不会被错误地标记为垃圾邮件。我们建议选择此选项, 因为它应减少您收到的误报数 (作为垃圾邮件分类的邮件)。 
+3. （可选）选中“启用安全列表”**** 复选框，防止漏掉某些已知发件人的邮件。 如何操作？ Microsoft 订阅到第三方受信任发件人来源。 使用此安全列表意味着这些信任的发件人不会被错误地标记为垃圾邮件。 我们建议选择此选项, 因为它应减少您收到的误报数 (作为垃圾邮件分类的邮件)。 
     
-4. 单击 "**保存**"。右窗格中将显示默认策略设置的摘要。
+4. 单击“保存”****。右侧窗格中将会显示默认策略设置的摘要。
     
 ## <a name="additional-considerations-when-configuring-ip-allow-lists"></a>配置 IP 允许列表时的其他注意事项
 <a name="bkmk_addtionalconsiderationswhenconfiguringipallowlists"> </a>
@@ -74,7 +73,7 @@ ms.locfileid: "30341603"
   
 ### <a name="specifying-a-cidr-range-that-falls-outside-of-the-recommended-range"></a>指定超出建议范围的 CIDR 范围
 
-若要指定从/1 到/23 的 CIDR IP 地址范围, 必须创建一个邮件流规则, 该规则在设置垃圾邮件可信度 (SCL) 的 IP 地址范围上运行, 以**绕过垃圾邮件筛选**(意味着从该 IP 地址范围内接收的所有邮件都是设置为 "非垃圾邮件"), 并且服务不执行其他筛选。但是, 如果这些 IP 地址中的任何一个出现在任何 Microsoft 的专用阻止列表或任何第三方阻止列表中, 则这些邮件仍将被阻止。因此, 强烈建议使用/24 to/32 IP 地址范围。 
+若要指定从/1 到/23 的 CIDR IP 地址范围, 必须创建一个邮件流规则, 该规则在设置垃圾邮件可信度 (SCL) 的 IP 地址范围上运行, 以**绕过垃圾邮件筛选**(意味着从该 IP 地址范围内接收的所有邮件都是设置为 "非垃圾邮件"), 并且服务不执行其他筛选。 但是, 如果这些 IP 地址中的任何一个出现在任何 Microsoft 的专用阻止列表或任何第三方阻止列表中, 则这些邮件仍将被阻止。 因此, 强烈建议使用/24 to/32 IP 地址范围。 
   
 若要创建此邮件流规则, 请执行以下步骤。
   
@@ -82,25 +81,25 @@ ms.locfileid: "30341603"
     
 2. 单击!["添加](media/ITPro-EAC-AddIcon.gif)图标", 然后选择 "**创建新规则**"。
     
-3. 为该规则命名, 然后单击 "**更多选项**"。
+3. 为该规则命名，然后单击“更多选项”****。
     
-4. 在 "在以下**情况应用此规则**" 下, 选择 **"发件人"** , 然后选择 " **IP 地址" 在这些范围中的任何范围或完全匹配**。
+4. 在“应用此规则的条件”**** 下，选择“发件人”****，然后选择“IP 地址处于这些范围之内或准确匹配”****。
     
 5. 在 "**指定 ip 地址**" 中, 指定 ip 地址范围, **** ![单击 "添加](media/ITPro-EAC-AddIcon.gif)" "添加图标", 然后单击 **"确定"**。
     
-6. 在 "**执行以下**操作" 框中, 通过选择 **"修改邮件属性**", 然后**设置垃圾邮件可信度 (SCL)** 来设置操作。在 "**指定 SCL** " 框中, 选择 "**绕过垃圾邮件筛选**", 然后单击 **"确定"**。
+6. 在“执行以下操作”**** 框下，通过选择“修改邮件属性”**** 和“设置垃圾邮件可信度 (SCL)”**** 来设置操作。在“指定 SCL”**** 框中，选择“绕过垃圾邮件筛选”****，然后单击“确定”****。
     
-7. 如果你愿意, 可以选择审核规则、测试规则、在特定时间段内激活规则, 以及进行其他选择。建议在强制执行规则之前对其进行测试。[Exchange Server 中的邮件流规则的过程](https://docs.microsoft.com/en-us/Exchange/policy-and-compliance/mail-flow-rules/mail-flow-rule-procedures)包含有关这些选择的详细信息。 
+7. 如果需要，您可以进行选择，在特定时间内审核规则、测试规则及激活规则，或者选择进行其他操作。 我们建议首先在一段时间内测试规则，然后再强制应用。 [Exchange Server 中的邮件流规则的过程](https://docs.microsoft.com/en-us/Exchange/policy-and-compliance/mail-flow-rules/mail-flow-rule-procedures)包含有关这些选择的详细信息。 
     
-8. 单击 "**保存**" 以保存该规则。规则将显示在规则列表中。 
+8. 单击 "**保存**" 以保存该规则。 规则将显示在规则列表中。 
     
 创建并强制执行规则后, 服务将绕过您指定的 IP 地址范围的垃圾邮件筛选。
   
 ### <a name="scoping-an-ip-allow-list-exception-for-a-specific-domain"></a>为特定域设置 IP 允许列表例外作用域
 
-通常情况下, 我们建议您为所有您认为可安全地登录到 IP 允许列表的域添加 ip 地址 (或 ip 地址范围)。但是, 如果您不希望您的 IP 允许列表条目应用于您的所有域, 则可以创建 excepts 特定域的邮件流规则 (也称为传输规则)。 
+通常情况下，我们建议您将您认为对于所有域而言安全的 IP 地址（或 IP 地址范围）添加到 IP 允许列表。 但是, 如果您不希望您的 IP 允许列表条目应用于您的所有域, 则可以创建 excepts 特定域的邮件流规则 (也称为传输规则)。 
   
-例如, 假设您有三个域: ContosoA.com、ContosoB.com 和 ContosoC.com, 您希望添加 IP 地址 (为简单起见, 让我们使用 1.2.3.4), 并跳过仅对域 ContosoB.com 的筛选。您可以为1.2.3.4 创建 IP 允许列表, 该列表将所有域的垃圾邮件可信度 (SCL) 设置为-1 (表示它被分类为非垃圾邮件)。然后, 您可以创建邮件流规则, 将除 ContosoB.com 之外的所有域的 SCL 设置为0。这将导致为与该 IP 地址关联的所有域 (即作为规则中的例外列出的域) 所 ContosoB.com 的所有域重新扫描邮件。ContosoB.com 仍具有-1 SCL, 这意味着将跳过筛选, 而 ContosoA.com 和 ContosoC.com 的 SCLs 为 0, 这意味着内容筛选器将重新扫描它们。
+例如，让我们假设您有三个域：ContosoA.com、ContosoB.com 和 ContosoC.com，您希望添加 IP 地址（为了简便起见，我们使用 1.2.3.4），并且只针对域 ContosoB.com 跳过筛选。 您可以为 1.2.3.4 创建 IP 允许列表，它会将所有域的垃圾邮件可信度 (SCL) 设置为 -1（意味着它被分类为非垃圾邮件）。 然后, 您可以创建邮件流规则, 将除 ContosoB.com 之外的所有域的 SCL 设置为0。 这将使与该 IP 地址相关、除 ContosoB.com（在规则中被列为例外的域）之外的所有域的邮件被重新扫描。 ContosoB.com 的 SCL 仍为 -1，这意味着它将跳过筛选，而 ContosoA.com 和 ContosoC.com 的 SCL 为 0，这意味着内容筛选器将重新扫描它们。
   
 为此，请执行下列步骤：
   
@@ -108,21 +107,21 @@ ms.locfileid: "30341603"
     
 2. 单击!["添加](media/ITPro-EAC-AddIcon.gif)图标", 然后选择 "**创建新规则**"。
     
-3. 为该规则命名, 然后单击 "**更多选项**"。
+3. 为该规则命名，然后单击“更多选项”****。
     
-4. 在 "在以下**情况应用此规则**" 下, 选择 **"发件人"** , 然后选择 " **IP 地址" 在这些范围中的任何范围或完全匹配**。
+4. 在“应用此规则的条件”**** 下，选择“发件人”****，然后选择“IP 地址处于这些范围之内或准确匹配”****。
     
 5. 在 "**指定 ip 地址**" 框中, 指定在 ip 允许列表中输入的 ip 地址或 ip 地址范围, **** ![单击 "添加](media/ITPro-EAC-AddIcon.gif)" "添加" 图标, 然后单击 **"确定"**。
     
-6. 在 "**执行以下**操作" 下, 通过选择 **"修改邮件属性**", 然后**设置垃圾邮件可信度 (SCL)** 来设置操作。在 "**指定 SCL** " 框中, 选择 " **0**", 然后单击 **"确定"**。
+6. 在“执行以下操作”**** 下，通过选择“修改邮件属性”**** 和“设置垃圾邮件可信度 (SCL)”**** 来设置操作。在“指定 SCL”**** 框中，选择“0”****，然后单击“确定”****。
     
-7. 单击 "**添加例外**", 并在 "**除非**" 下选择 **"发件人"** , 然后选择 "**域为**"。 
+7. 单击“添加例外”****，并在“除非”**** 下选择“发件人”****，然后选择“域为”****。 
     
-8. 在 "**指定域**" 框中, 输入要绕过垃圾邮件筛选的域, 例如**contosob.com**。单击 "**添加** !["](media/ITPro-EAC-AddIcon.gif)图标将其移动到短语列表。如果要将其他域添加为例外, 请重复此步骤, 然后在完成时单击 **"确定"** 。 
+8. 在“指定域”**** 框中，输入希望绕过垃圾邮件筛选的域，如“contosob.com”****。 单击 "**添加** !["](media/ITPro-EAC-AddIcon.gif)图标将其移动到短语列表。 如果要添加其他域作为例外，请重复此步骤，然后在完成时单击“确定”****。 
     
-9. 如果你愿意, 可以选择审核规则、测试规则、在特定时间段内激活规则, 以及进行其他选择。建议在强制执行规则之前对其进行测试。[Exchange Server 中的邮件流规则的过程](https://docs.microsoft.com/en-us/Exchange/policy-and-compliance/mail-flow-rules/mail-flow-rule-procedures)包含有关这些选择的详细信息。 
+9. 如果需要，您可以进行选择，在特定时间内审核规则、测试规则及激活规则，或者选择进行其他操作。 我们建议首先在一段时间内测试规则，然后再强制应用。 [Exchange Server 中的邮件流规则的过程](https://docs.microsoft.com/en-us/Exchange/policy-and-compliance/mail-flow-rules/mail-flow-rule-procedures)包含有关这些选择的详细信息。 
     
-10. 单击 "**保存**" 以保存该规则。规则将显示在规则列表中。 
+10. 单击 "**保存**" 以保存该规则。 规则将显示在规则列表中。 
     
 在创建和强制应用规则后，仅为您输入的例外的域绕过指定 IP 地址或 IP 地址范围的垃圾邮件筛选。
   
@@ -133,7 +132,7 @@ ms.locfileid: "30341603"
 |:-----|
 |![LinkedIn Learning 短图标](media/eac8a413-9498-4220-8544-1e37d1aaea13.png) **刚开始接触 Office 365？**         发现 LinkedIn Learning 向 **Office 365 admins and IT pros**提供的免费视频课程。 |
    
-## <a name="for-more-information"></a>详细信息
+## <a name="for-more-information"></a>有关详细信息
 <a name="sectionSection4"> </a>
 
 [Exchange Online 中的安全发件人和阻止发件人列表](safe-sender-and-blocked-sender-lists-faq.md)

@@ -7,16 +7,15 @@ ms.date: 11/17/2014
 ms.audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
-ms.custom: TN2DMC
 localization_priority: Normal
 ms.assetid: 9d015a0d-52a0-484d-9a08-121d04f973d3
 description: 本主题回答了有关在 Microsoft Exchange Online Protection (EOP) 筛选过程中涉及已排队、延迟或退回邮件的常见问题。
-ms.openlocfilehash: 4b2c902adacd6e72e587aadaceecd22dd0084d85
-ms.sourcegitcommit: 7e2a0185cadea7f3a6afc5ddc445eac2e1ce22eb
+ms.openlocfilehash: e8fdb07d11a1f540e94b82730eb848a97f51523a
+ms.sourcegitcommit: 0f93b37c39d807dec91f118aa671a3430c47a9ac
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/11/2019
-ms.locfileid: "29686422"
+ms.lasthandoff: 03/20/2019
+ms.locfileid: "30693201"
 ---
 # <a name="eop-queued-deferred-and-bounced-messages-faq"></a>EOP 排队、延迟以及退回邮件的常见问题
 
@@ -32,7 +31,7 @@ ms.locfileid: "29686422"
   
  **问：邮件保持延迟状态多长时间以及什么是重试间隔？**
   
-A.2 天，邮件延迟将保留在我们的队列。消息重试次数基于收件人的邮件系统中将返回错误。第一个几延期是 15 分钟或小于与后续重试次数 （通过下一步半打或这样） 增加转移到最大值为 60 分钟的多次重试时间间隔。间隔的持续时间扩展为动态，考虑多个变量，如队列大小和内部邮件优先级。在 basic 中，它为 15 分钟 （或更少） 开始，然后展开从中通过下一步的几个小时到最大的 60 分钟。
+A. 延期的邮件将在我们的队列中保留 2 天。 重试发送邮件的依据为从收件人的邮件系统返回的错误。 前几个 deferrals 为15分钟或更短, 随后的重试次数 (在接下来的6到6或更长时间) 内, 将多次重试次数增加到最大的60分钟。 间隔持续时间扩展是动态的, 其中考虑了多个变量 (如队列大小和内部邮件优先级)。 在基本版中, 启动时间为15分钟 (或更短), 然后在接下来的几小时内扩展到60分钟的最大值。
   
  **问：恢复电子邮件服务器后，如何分配列队中的邮件？**
   

@@ -7,20 +7,19 @@ ms.date: 12/9/2016
 ms.audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
-ms.custom: TN2DMC
 localization_priority: Normal
 search.appverid:
 - MET150
 ms.assetid: 6f64f2de-d626-48ed-8084-03cc72301aa4
 ms.collection:
 - M365-security-compliance
-description: 退信邮件是邮件服务器发送的自动弹跳邮件, 通常是由于传入的垃圾邮件造成的。退信 DNSBL 是发送退信邮件的 IP 地址的列表。它不是垃圾邮件制造者列表, 我们不会尝试从退信 DNSBL 中删除我们的服务器。
-ms.openlocfilehash: 73f8631c50bcfb8a023b2b6007b7ccf48038e16e
-ms.sourcegitcommit: 686bc9a8f7a7b6810a096f07d36751d10d334409
+description: 退信邮件是邮件服务器发送的自动退回邮件，这通常是由传入的垃圾邮件所致。 退信 DNSBL 是发送退信消息的 IP 地址的列表。 它不是垃圾邮件制造者列表，我们不会尝试从退信 DNSBL 中删除我们的服务器。
+ms.openlocfilehash: 7581255ce4e68f6eb661df280ecb0cb94b7515ef
+ms.sourcegitcommit: 0f93b37c39d807dec91f118aa671a3430c47a9ac
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "30275292"
+ms.lasthandoff: 03/20/2019
+ms.locfileid: "30693361"
 ---
 # <a name="backscatter-messages-and-eop"></a>退信消息和 EOP
 
@@ -29,7 +28,7 @@ ms.locfileid: "30275292"
 > [!TIP]
 > 根据退信网站上的说明，对所有传入邮件使用拒绝模式并非该服务的推荐配置或使用。它应改为在安全模式下使用。有关实现正确的退信配置的详细信息，请访问 [Backscatterer.org 网站](http://www.backscatterer.org/?target=usage)。 
   
-## <a name="for-more-information"></a>详细信息
+## <a name="for-more-information"></a>有关详细信息
 
 [Backscatterer.org IP 列表](https://blogs.msdn.com/b/tzink/archive/2012/08/22/the-backscatterer-org-ip-list.aspx)
   

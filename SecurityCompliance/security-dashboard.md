@@ -3,7 +3,7 @@ title: 安全仪表板概述
 ms.author: deniseb
 author: denisebmsft
 manager: laurawi
-ms.date: 02/07/2019
+ms.date: 03/19/2019
 ms.audience: ITPro
 ms.topic: overview
 ms.service: O365-seccomp
@@ -15,18 +15,18 @@ ms.assetid: fe0b9b8f-faa9-44ff-8095-4d1b2f507b74
 ms.collection:
 - M365-security-compliance
 description: 使用新的安全仪表板查看 Office 365 的威胁防护状态, 查看安全警报并对其采取操作。
-ms.openlocfilehash: 7a4535a0cc02a6ad046cadb99b8ebb94df5fd9fe
-ms.sourcegitcommit: 1c73c2f83703af0a30a5b0633db00d8e0e6b39b5
+ms.openlocfilehash: 83e75f1a38038f1c95697f4db3e7b1134d03779d
+ms.sourcegitcommit: 0f93b37c39d807dec91f118aa671a3430c47a9ac
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/25/2019
-ms.locfileid: "30241884"
+ms.lasthandoff: 03/20/2019
+ms.locfileid: "30692751"
 ---
 # <a name="security-dashboard"></a>安全仪表板
 
 ## <a name="overview"></a>概述
 
-[安全&amp;合规性中心](go-to-the-securitycompliance-center.md)使您的组织能够管理数据保护和合规性。如果您具有必要的权限, 安全仪表板将使您能够查看威胁保护状态, 并查看安全警报并对其采取措施。 
+[安全&amp;合规性中心](go-to-the-securitycompliance-center.md)使您的组织能够管理数据保护和合规性。 如果您具有必要的权限, 安全仪表板将使您能够查看威胁保护状态, 并查看安全警报并对其采取措施。 
   
 观看视频以获取概述, 然后阅读本文以了解详细信息。
   
@@ -37,7 +37,7 @@ ms.locfileid: "30241884"
 若要查看安全仪表板, 请在 " [Office &amp; 365 安全合规中心](go-to-the-securitycompliance-center.md)" 中, 转到 "**威胁管理** \> **仪表板**"。
   
 > [!NOTE]
-> 您必须是 Office 365 全局管理员、安全管理员或安全读者才能查看安全仪表板。某些小部件需要其他权限才能查看。若要了解详细信息, 请参阅[Office 365 安全&amp;合规中心中的权限](permissions-in-the-security-and-compliance-center.md)。 
+> 您必须是 Office 365 全局管理员、安全管理员或安全读者才能查看安全仪表板。 某些小部件需要其他权限才能查看。 若要了解详细信息, 请参阅[Office 365 安全&amp;合规中心中的权限](permissions-in-the-security-and-compliance-center.md)。 
   
 ## <a name="threat-management-summary"></a>威胁管理摘要
 
@@ -45,14 +45,14 @@ ms.locfileid: "30241884"
 
 ![安全仪表板-威胁管理摘要小部件](media/SecDash-ThreatMgmtSummary.png)
 
-您在威胁管理摘要中看到的信息取决于订阅所包含的内容。下表介绍了 Office 365 企业版 E3 和 office 365 企业版 E5 中包含的信息。
+您在威胁管理摘要中看到的信息取决于订阅所包含的内容。 下表介绍了 Office 365 企业版 E3 和 office 365 企业版 E5 中包含的信息。
 
 
 |Office 365 企业版 E3  |Office 365 企业版 E5  |
 |---------|---------|
 |阻止的恶意软件邮件<br/>阻止的仿冒邮件<br>用户报告的邮件<br><br><br><br> |阻止的恶意软件邮件<br>阻止的仿冒邮件<br>用户报告的邮件<br>已阻止零天恶意软件<br>检测到高级网络钓鱼邮件<br>阻止的恶意 url |
 
-若要查看或访问 "威胁管理摘要" 小部件, 您必须具有查看高级威胁防护报告的权限。若要了解详细信息, 请参阅[查看 ATP 报告所需的权限？](view-reports-for-atp.md#what-permissions-are-needed-to-view-the-atp-reports)。 
+若要查看或访问 "威胁管理摘要" 小部件, 您必须具有查看高级威胁防护报告的权限。 若要了解详细信息, 请参阅[查看 ATP 报告所需的权限？](view-reports-for-atp.md#what-permissions-are-needed-to-view-the-atp-reports)。 
 
 ## <a name="threat-protection-status"></a>威胁保护状态
 
@@ -68,7 +68,7 @@ ms.locfileid: "30241884"
 |EOP, 而不是 Office 365 ATP     |EOP 检测到并阻止的恶意电子邮件<br> 请参阅[威胁防护状态报告 (EOP)](view-email-security-reports.md#threat-protection-status-report)。| |
 |Office 365 ATP |EOP 和 Office 365 ATP 检测到并阻止了恶意内容和恶意电子邮件<br>由反恶意软件引擎、[零小时自动清除](zero-hour-auto-purge.md)和 atp 功能 (包括[安全链接](atp-safe-links.md)、[安全附件](atp-safe-attachments.md)和[atp 反网络钓鱼](atp-anti-phishing.md)) 阻止的包含恶意内容的独特电子邮件的聚合计数。<br>请参阅[威胁防护状态报告 (ATP)](view-reports-for-atp.md#threat-protection-status-report)。 | 
 
-若要查看或访问威胁防护状态小部件, 您必须具有查看高级威胁防护报告的权限。若要了解详细信息, 请参阅[查看 ATP 报告所需的权限？](view-reports-for-atp.md#what-permissions-are-needed-to-view-the-atp-reports)。 
+若要查看或访问威胁防护状态小部件, 您必须具有查看高级威胁防护报告的权限。 若要了解详细信息, 请参阅[查看 ATP 报告所需的权限？](view-reports-for-atp.md#what-permissions-are-needed-to-view-the-atp-reports)。 
 
 ## <a name="global-weekly-threat-detections"></a>全球每周威胁检测
  
@@ -78,14 +78,14 @@ ms.locfileid: "30241884"
 
 指标的计算如下表所述:
 
-|度量  |如何计算  |
+|多重  |如何计算  |
 |---------|---------|
 |扫描的邮件 |扫描的电子邮件数乘以收件人数 |
 |威胁已停止  |被标识为包含恶意软件的电子邮件数乘以收件人数 |
 |由[ATP](office-365-atp.md)阻止 |由 ATP 阻止的电子邮件数乘以收件人数 |
 |传递后删除 |由[零小时自动清除](zero-hour-auto-purge.md)删除的邮件数乘以收件人数 |
 
-## <a name="malware"></a>恶意软件
+## <a name="malware"></a>受到
 
 恶意软件小组件显示过去七 (7) 天的恶意软件趋势和恶意软件系列类型的详细信息。
 
@@ -97,26 +97,26 @@ ms.locfileid: "30241884"
 
 ![智能见解](media/smartinsights.png)
 
-例如, 您可能会看到网络钓鱼电子邮件被传递, 因为某些用户禁用了其 "垃圾邮件" 选项。若要详细了解见解的工作方式, 请参阅[Office 365 安全&amp;合规中心中的报告和见解](reports-and-insights-in-security-and-compliance.md)。
+例如, 您可能会看到网络钓鱼电子邮件被传递, 因为某些用户禁用了其 "垃圾邮件" 选项。 若要详细了解见解的工作方式, 请参阅[Office 365 安全&amp;合规中心中的报告和见解](reports-and-insights-in-security-and-compliance.md)。
   
-## <a name="threat-intelligence"></a>威胁智能
+## <a name="threat-investigation-and-response"></a>威胁调查和响应
 
-如果你的组织的订阅包括[威胁智能功能](office-365-ti.md), 则安全仪表板包含包含高级工具的**威胁智能**部分。您的组织的安全团队可以使用本节中的信息来了解新兴的市场活动、调查威胁和管理事件。 
+如果贵组织的订阅包括[Office 365 高级威胁防护计划 2](office-365-ti.md), 则安全仪表板包含一个包含高级威胁调查和响应工具的部分。 您的组织的安全团队可以使用本节中的信息来了解新兴的市场活动、调查威胁和管理事件。 
   
 ![威胁智能可帮助您了解组织的目标攻击](media/threatintelwidget.png)
   
   
 ## <a name="trends"></a>趋势
 
-靠近安全仪表板底部的是 "**趋势**" 部分, 它汇总了贵组织的电子邮件流趋势。报告提供有关分类为垃圾邮件、恶意软件、网络钓鱼尝试和优质电子邮件的电子邮件的信息。单击平铺可在报告中查看更详细的信息。 
+靠近安全仪表板底部的是 "**趋势**" 部分, 它汇总了贵组织的电子邮件流趋势。 报告提供有关分类为垃圾邮件、恶意软件、网络钓鱼尝试和优质电子邮件的电子邮件的信息。 单击平铺可在报告中查看更详细的信息。 
   
 ![趋势部分汇总了组织的电子邮件流趋势](media/trends.png)
   
-此外, 如果组织的 Office 365 订阅包含[威胁智能功能](office-365-ti.md), 则您还将在此部分中提供**最近的威胁管理警报**报告, 使安全团队能够查看并对其执行操作高优先级的安全警报。 
+如果组织的 office 365 订阅包括[office 365 高级威胁防护计划 2](office-365-ti.md), 您还将在此部分中添加一个**最近的威胁管理警报**报告, 使安全团队能够查看并对其执行操作高优先级的安全警报。 
 
-若要查看或访问已发送和已接收的电子邮件小组件, 您必须具有查看高级威胁防护报告的权限。若要了解详细信息, 请参阅[查看 ATP 报告所需的权限？](view-reports-for-atp.md#what-permissions-are-needed-to-view-the-atp-reports)。 
+若要查看或访问已发送和已接收的电子邮件小组件, 您必须具有查看高级威胁防护报告的权限。 若要了解详细信息, 请参阅[查看 ATP 报告所需的权限？](view-reports-for-atp.md#what-permissions-are-needed-to-view-the-atp-reports)。 
 
-若要查看或访问最新的威胁管理警报小部件, 您必须具有查看警报的权限。若要了解详细信息, 请参阅[查看警报所需的 RBAC 权限](alert-policies.md#rbac-permissions-required-to-view-alerts)。
+若要查看或访问最新的威胁管理警报小部件, 您必须具有查看警报的权限。 若要了解详细信息, 请参阅[查看警报所需的 RBAC 权限](alert-policies.md#rbac-permissions-required-to-view-alerts)。
   
 ## <a name="related-topics"></a>相关主题
 
@@ -126,6 +126,6 @@ ms.locfileid: "30241884"
   
 [Office 365 高级威胁防护](office-365-atp.md)
   
-[Office 365 威胁智能](office-365-ti.md)
+[Office 365 威胁调查和响应](office-365-ti.md)
   
 

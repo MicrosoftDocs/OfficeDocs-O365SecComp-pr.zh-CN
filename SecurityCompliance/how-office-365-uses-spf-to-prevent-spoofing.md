@@ -7,20 +7,19 @@ ms.date: 12/15/2016
 ms.audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
-ms.custom: TN2DMC
 localization_priority: Normal
 search.appverid:
 - MET150
 ms.assetid: 3aff33c5-1416-4867-a23b-e0c0c5b4d2be
 ms.collection:
 - M365-security-compliance
-description: 摘要：本文介绍了 Office 365 如何在 DNS 中使用发件人策略框架 (SPF) TXT 记录，以确保目标电子邮件系统信任从自定义域发送的邮件。这适用于从 Office 365 发送的出站邮件。从 Office 365 发送给 Office 365 收件人的邮件始终可通过 SPF。
-ms.openlocfilehash: 76267f89744b696185022a2bb036dcde09dfcde5
-ms.sourcegitcommit: 686bc9a8f7a7b6810a096f07d36751d10d334409
+description: 摘要： 本文介绍了 Office 365 如何在 DNS 中使用发件人策略框架 (SPF) TXT 记录，以确保目标电子邮件系统信任从自定义域发送的邮件。 这适用于从 Office 365 发送的出站邮件。 从 Office 365 发送给 Office 365 收件人的邮件始终可通过 SPF。
+ms.openlocfilehash: 5abe892eae4840b44a606f4004eb3b66a94accdc
+ms.sourcegitcommit: 0f93b37c39d807dec91f118aa671a3430c47a9ac
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "30276102"
+ms.lasthandoff: 03/20/2019
+ms.locfileid: "30693591"
 ---
 # <a name="how-office-365-uses-sender-policy-framework-spf-to-prevent-spoofing"></a>Office 365 如何使用发件人策略框架 (SPF) 来防止欺骗
 
@@ -31,10 +30,10 @@ SPF TXT 记录是一个 DNS 记录，通过验证发出电子邮件的域的域�
 > [!NOTE]
 > Internet 工程任务组 (IETF) 于 2014 年弃用 SPF 记录类型。请务必在 DNS 中改用 TXT 记录来发布 SPF 信息。为清楚起见，本文的其余部分使用 SPF TXT 记录一词。 
   
-域管理员在 DNS 的 TXT 记录中发布 SPF 信息。SPF 信息可以标识得到授权的出站电子邮件服务器。目标电子邮件系统验证邮件是否来自得到授权的出站电子邮件服务器。如果您已熟悉 SPF，或者有一个简单的部署，则只需了解要针对 Office 365 在 DNS 的 SPF TXT 记录中包含的内容，您可以转到[Set up SPF in Office 365 to help prevent spoofing](set-up-spf-in-office-365-to-help-prevent-spoofing.md)。如果您没有完全托管在 Office 365 中的部署，或者您希望了解有关 SPF 的工作原理或如何针对 Office 365 解决 SPF 的详细信息，请继续阅读。
+域管理员在 DNS 的 TXT 记录中发布 SPF 信息。 SPF 信息可以标识得到授权的出站电子邮件服务器。 目标电子邮件系统验证邮件是否来自得到授权的出站电子邮件服务器。 如果您已熟悉 SPF，或者有一个简单的部署，则只需了解要针对 Office 365 在 DNS 的 SPF TXT 记录中包含的内容，您可以转到[Set up SPF in Office 365 to help prevent spoofing](set-up-spf-in-office-365-to-help-prevent-spoofing.md)。 如果您没有完全托管在 Office 365 中的部署，或者您希望了解有关 SPF 的工作原理或如何针对 Office 365 解决 SPF 的详细信息，请继续阅读。
   
 > [!NOTE]
-> 以前，如果还使用了 SharePoint Online，必须向自定义域添加不同的 SPF TXT 记录。现在，不再需要这样做。此更改应该会降低 SharePoint Online 通知邮件最终被转入垃圾电子邮件文件夹的风险。虽然无需立即进行任何更改，但如果看到“查找次数太多”错误消息，请修改 SPF TXT 记录，如[Set up SPF in Office 365 to help prevent spoofing](set-up-spf-in-office-365-to-help-prevent-spoofing.md)中所述。 
+> 以前，如果还使用了 SharePoint Online，必须向自定义域添加不同的 SPF TXT 记录。 现在，不再需要这样做。 此更改应该会降低 SharePoint Online 通知邮件最终被转入垃圾电子邮件文件夹的风险。 虽然无需立即进行任何更改，但如果看到“查找次数太多”错误消息，请修改 SPF TXT 记录，如[Set up SPF in Office 365 to help prevent spoofing](set-up-spf-in-office-365-to-help-prevent-spoofing.md)中所述。 
      
 ## <a name="how-spf-works-to-prevent-spoofing-and-phishing-in-office-365"></a>SPF 在 Office 365 中防止欺骗和钓鱼的工作原理
 <a name="HowSPFWorks"> </a>
@@ -242,7 +241,7 @@ cust-spf.exacttarget.com
 
 可以使用 nslookup 查看 DNS 记录，包括 SPF TXT 记录。或者，如果需要，还可以使用许多免费的联机工具来查看 SPF TXT 记录的内容。通过查看 SPF TXT 记录并遵循 include 语句链和重定向，可以确定记录需要的 DNS 查找次数。一些联机工具甚至会计算并显示查找次数。跟踪查找次数将有助于防止从组织发送的邮件触发接收服务器生成永久性错误（称为 permerror）。
   
-## <a name="for-more-information"></a>详细信息
+## <a name="for-more-information"></a>有关详细信息
 <a name="SPFTroubleshoot"> </a>
 
 需要有关添加 SPF TXT 记录的？我们提供有关更新多种流行域注册机构的 SPF (TXT) 记录的[分步操作说明](https://office.microsoft.com/en-us/office365-suite-help/create-dns-records-for-office-365-HA102851099.aspx?CTT=5&amp;origin=HA102818404)。[反垃圾邮件邮件头](anti-spam-message-headers.md)包括 Office 365 进行 SPF 检查时使用的语法和标头字段。 

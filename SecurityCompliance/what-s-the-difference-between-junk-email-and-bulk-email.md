@@ -7,7 +7,6 @@ ms.date: 1/7/2015
 ms.audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
-ms.custom: TN2DMC
 localization_priority: Normal
 search.appverid:
 - MET150
@@ -15,12 +14,12 @@ ms.assetid: 8079f193-1b40-4081-9e5d-d0e50dfbcc59
 ms.collection:
 - M365-security-compliance
 description: 客户有时 askwhat 是垃圾邮件和批量电子邮件之间的区别？本主题旨在说明不同之处, 并提供有关 exchange online 和 exchange online Protection (EOP) 中可用的不同选项的信息。
-ms.openlocfilehash: 877912c94af5d4b399769759189d091c62d50075
-ms.sourcegitcommit: 686bc9a8f7a7b6810a096f07d36751d10d334409
+ms.openlocfilehash: 146cc5654e39441be3544f7ac24bd1300811936f
+ms.sourcegitcommit: 0f93b37c39d807dec91f118aa671a3430c47a9ac
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "30275712"
+ms.lasthandoff: 03/20/2019
+ms.locfileid: "30693211"
 ---
 # <a name="whats-the-difference-between-junk-email-and-bulk-email"></a>垃圾邮件和批量邮件之间有什么差异？
 
@@ -31,7 +30,7 @@ ms.locfileid: "30275712"
 垃圾邮件是经服务筛选的未经请求的（并且通常是不必要的）电子邮件。默认情况下，服务根据发送 IP 地址的信誉拒绝垃圾邮件。但是，如果邮件通过 IP 检查，但内容筛选器将其归为垃圾邮件，那么该邮件将会被发送到预期收件人的"垃圾邮件"文件夹。 
   
 > [!NOTE]
-> 对内容筛选邮件执行的操作可通过 Exchange 管理中心 (EAC) 中的内容筛选器策略进行配置, 如[配置垃圾邮件筛选器策略](configure-your-spam-filter-policies.md)中所述。此外, 如果您不同意垃圾邮件分类, 您可以通过几种方式报告您认为是垃圾邮件或非垃圾邮件的邮件, 如[将垃圾邮件、非垃圾邮件和网络钓鱼诈骗邮件提交到 microsoft 进行分析](submit-spam-non-spam-and-phishing-scam-messages-to-microsoft-for-analysis.md)中所述。 
+> 对经过内容筛选的邮件执行的操作可通过 Exchange 管理中心 (EAC) 的内容筛选器策略进行配置，如[配置垃圾邮件筛选器策略](configure-your-spam-filter-policies.md)中所述。 此外, 如果您不同意垃圾邮件分类, 您可以通过几种方式报告您认为是垃圾邮件或非垃圾邮件的邮件, 如[将垃圾邮件、非垃圾邮件和网络钓鱼诈骗邮件提交到 microsoft 进行分析](submit-spam-non-spam-and-phishing-scam-messages-to-microsoft-for-analysis.md)中所述。 
   
  **什么是批量邮件？**
   
@@ -43,6 +42,6 @@ ms.locfileid: "30275712"
   
 ### <a name="enable-bulk-mail-sensitivity-control-in-the-content-filter-policy"></a>在内容筛选器策略中启用批量邮件敏感度控件
 
-根据贵公司对批量电子邮件的策略, 管理员可以选择分配批量电子邮件的阈值。可通过 EAC 中的内容筛选器策略配置该设置。有关步骤, 请参阅[配置垃圾邮件筛选器策略](configure-your-spam-filter-policies.md)。您可以从1-9 中选择一个阈值设置, 其中1将最大批量电子邮件标记为垃圾邮件, 9 允许传递大多数批量电子邮件。然后, 该服务执行配置的操作, 例如, 将邮件发送到收件人的 "垃圾邮件" 文件夹。 
+根据您公司有关批量电子邮件的策略，管理员可以选择分配批量电子邮件的阈值。 可通过 EAC 中的内容筛选器策略配置该设置。 有关步骤, 请参阅[配置垃圾邮件筛选器策略](configure-your-spam-filter-policies.md)。 您可以从1-9 中选择一个阈值设置, 其中1将最大批量电子邮件标记为垃圾邮件, 9 允许传递大多数批量电子邮件。 然后，服务执行配置的操作，如将邮件发送到收件人的"垃圾邮件"文件夹。 
   
 

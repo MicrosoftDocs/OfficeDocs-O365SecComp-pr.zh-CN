@@ -7,18 +7,17 @@ ms.date: 3/13/2015
 ms.audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
-ms.custom: TN2DMC
 localization_priority: Normal
 ms.assetid: c9c39ada-6100-4034-a479-8bd39d428498
 ms.collection:
 - M365-security-compliance
 description: 通过下面的一系列视频，您可以了解如何设置和使用 Exchange Online Protection (EOP) 托管的电子邮件筛选服务。
-ms.openlocfilehash: 65568d21f6b4cb718526a9c9dcddfef2f58b1ca1
-ms.sourcegitcommit: 48fa456981b5c52ab8aeace173c8366b9f36723b
+ms.openlocfilehash: 1e8aadd173f4e30c528679347171230e83752af0
+ms.sourcegitcommit: 0f93b37c39d807dec91f118aa671a3430c47a9ac
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/28/2019
-ms.locfileid: "30341183"
+ms.lasthandoff: 03/20/2019
+ms.locfileid: "30693561"
 ---
 # <a name="videos-for-getting-started-with-eop"></a>EOP 入门视频
 
@@ -27,7 +26,7 @@ ms.locfileid: "30341183"
 > [!NOTE]
 > 在开始执行视频中介绍的任务之前，我们建议您先设置邮件流。有关详细信息，请参阅[Configure mail flow using connectors in Office 365](http://technet.microsoft.com/library/854b5a50-4462-4836-a092-37e208d29624.aspx)主题。 
   
-这些视频是为了满足贵组织的需求而定制您的反垃圾邮件设置。对于通过服务传送到您的组织的入站邮件, 这包括创建安全发件人列表和阻止的发件人列表 (基于 IP 地址) 和配置内容筛选器设置。此外, 还显示了管理员如何查找和释放与发送到隔离的邮件流规则 (也称为传输规则) 相匹配的内容筛选的垃圾邮件或邮件, 以及如何报告垃圾邮件以帮助我们改进服务。
+这些视频旨在介绍如何通过定制您的反垃圾邮件设置来满足您组织的需求。 对于通过服务传递到组织的入站邮件，这包括如何根据 IP 地址创建白名单和黑名单列表，以及如何配置内容筛选设置。 此外, 还显示了管理员如何查找和释放与发送到隔离的邮件流规则 (也称为传输规则) 相匹配的内容筛选的垃圾邮件或邮件, 以及如何报告垃圾邮件以帮助我们改进服务。
   
 - 在 EOP 中配置 IP 允许和 IP 阻止列表
     > [!VIDEO https://www.microsoft.com/videoplayer/embed/b2f5bea3-e1a7-44b3-b7e2-07fac0d0ca40?autoplay=false]

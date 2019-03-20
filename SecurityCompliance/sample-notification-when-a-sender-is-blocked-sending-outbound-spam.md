@@ -7,7 +7,6 @@ ms.date: 11/2/2017
 ms.audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
-ms.custom: TN2DMC
 localization_priority: Normal
 search.appverid:
 - MET150
@@ -15,12 +14,12 @@ ms.assetid: c33fd406-a4c8-4ac8-ad85-123996c5cded
 ms.collection:
 - M365-security-compliance
 description: 当发件人由于发送出站垃圾邮件而被服务阻止时，您配置出站垃圾邮件策略时指定的域管理员将收到如下所示的通知电子邮件：
-ms.openlocfilehash: 94af965505f7541600a6cd7937ae881226a2ac79
-ms.sourcegitcommit: 686bc9a8f7a7b6810a096f07d36751d10d334409
+ms.openlocfilehash: 04d8bde8e9cadd3525191a5bee7d368229e85056
+ms.sourcegitcommit: 0f93b37c39d807dec91f118aa671a3430c47a9ac
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "30275472"
+ms.lasthandoff: 03/20/2019
+ms.locfileid: "30691803"
 ---
 # <a name="sample-notification-when-a-sender-is-blocked-sending-outbound-spam"></a>发件人被阻止发送出站垃圾邮件时的示例通知
 
@@ -32,11 +31,11 @@ ms.locfileid: "30275472"
   
  **正文:** 这是 Exchange Online Protection 垃圾邮件分析系统的自动答复。 
   
-正在联系你, 因为我们检测到大量的电子邮件被标记为垃圾邮件, 或来自你的组织的其他可疑行为。已阻止以下电子邮件帐户发送电子邮件 (他们仍可接收电子邮件):
+我们联系您是因为我们检测到从您组织发出的大量电子邮件标记为垃圾邮件或存在其他可疑行为。 已阻止以下电子邮件帐户发送电子邮件 (他们仍可接收电子邮件):
   
 \< *帐户名*  \> 
   
-可能是此电子邮件帐户已泄露。请按照以下步骤操作:
+很可能此电子邮件帐户已受到威胁。 请按照以下步骤操作:
   
 1. 在以下位置解决此问题:
     

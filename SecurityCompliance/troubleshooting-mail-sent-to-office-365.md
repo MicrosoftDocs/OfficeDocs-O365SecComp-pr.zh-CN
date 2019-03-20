@@ -7,7 +7,6 @@ ms.date: 5/2/2016
 ms.audience: ITPro
 ms.topic: troubleshooting
 ms.service: O365-seccomp
-ms.custom: TN2DMC
 localization_priority: Normal
 search.appverid:
 - MET150
@@ -15,12 +14,12 @@ ms.assetid: f4caa4e1-e414-4b21-8822-31c08064c059
 ms.collection:
 - M365-security-compliance
 description: 本文提供了发件人尝试向 Office 365 中的收件箱发送邮件时遇到的问题的故障排除信息，以及向 Office 365 客户群发邮件的最佳做法。
-ms.openlocfilehash: cfb3901b930b63ef8a33391c673a32a73eaa1b07
-ms.sourcegitcommit: 686bc9a8f7a7b6810a096f07d36751d10d334409
+ms.openlocfilehash: ac465e7ef42b9cfeb2587481202fab1b5adb5f75
+ms.sourcegitcommit: 0f93b37c39d807dec91f118aa671a3430c47a9ac
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "30276292"
+ms.lasthandoff: 03/20/2019
+ms.locfileid: "30692101"
 ---
 # <a name="troubleshooting-mail-sent-to-office-365"></a>向 Office 365 发送故障排除邮件
 
@@ -117,14 +116,14 @@ ms.locfileid: "30276292"
 ### <a name="i-cant-receive-email-from-senders-in-office-365"></a>我不能接收来自 Office 365 中的发件人的电子邮件
 <a name="AllowEOPIPs"> </a>
 
- 为了从我们的用户接收邮件, 请确保您的网络允许来自 EOP 在我们的数据中心中使用的 IP 地址的连接。有关详细信息, 请参阅[Exchange Online Protection IP 地址](eop/exchange-online-protection-ip-addresses.md)。 
+ 为了从我们的用户接收邮件，请确保您的网络允许来自 EOP 在我们的数据中心使用的 IP 地址的连接。 有关详细信息, 请参阅[Exchange Online Protection IP 地址](eop/exchange-online-protection-ip-addresses.md)。 
   
 ## <a name="best-practices-for-bulk-emailing-to-office-365-users"></a>向 Office 365 用户群发邮件的最佳做法
 <a name="BulkMailer"> </a>
 
 如果您经常向 Office 365 用户发起批量邮件活动，并想要确保您的电子邮件安全及时地到达，请执行本部分的操作。
   
-### <a name="ensure-that-the-from-name-reflects-who-is-sending-the-message"></a>确保"发件人:"的名称体现出邮件的发送人。
+### <a name="ensure-that-the-from-name-reflects-who-is-sending-the-message"></a>确保“发件人:”的名称体现出邮件的发送人。
 
 邮件主题应是邮件内容的简要概括，且邮件正文应清楚并简洁地表明优惠、服务或产品的相关内容。 例如：
   
@@ -142,7 +141,7 @@ ms.locfileid: "30276292"
   
 越容易让人知道您是谁、在做什么，您在通过大部分垃圾邮件筛选器传送邮件时遇到的困难就会越少。
   
-### <a name="always-include-an-unsubscribe-option-in-campaign-emails"></a>始终在营销邮件中包含"取消订阅"选项
+### <a name="always-include-an-unsubscribe-option-in-campaign-emails"></a>始终在营销邮件中包含“取消订阅”选项
 
 营销邮件，尤其是新闻稿，应始终包含取消订阅未来邮件的方法。例如：
   

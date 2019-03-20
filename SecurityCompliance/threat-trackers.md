@@ -14,19 +14,19 @@ ms.assetid: a097f5ca-eac0-44a4-bbce-365f35b79ed1
 ms.collection:
 - M365-security-compliance
 description: 了解有关威胁跟踪程序的信息, 包括新的重要跟踪程序, 以帮助您的组织保持安全方面的顾虑。
-ms.openlocfilehash: 4cf3e13b7379e26deec90bbae2c4f9cf42fa91b7
-ms.sourcegitcommit: 74ad22a5c6c3c9d9324f0f97070909e323a4e9cf
+ms.openlocfilehash: 6870e8d613dbd5d72f20e96be9615712bac711a9
+ms.sourcegitcommit: 0f93b37c39d807dec91f118aa671a3430c47a9ac
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/11/2019
-ms.locfileid: "30524046"
+ms.lasthandoff: 03/20/2019
+ms.locfileid: "30693071"
 ---
 # <a name="threat-trackers---new-and-noteworthy"></a>威胁跟踪器 - 新增的和值得注意的威胁
 
 通过[Office 365 的威胁调查和响应](office-365-ti.md)功能, 贵组织的安全团队可以发现并针对 cybersecurity 威胁采取措施。 Office 365 威胁调查和响应功能包括威胁跟踪器功能, 包括值得注意的跟踪器。 阅读本文以获取这些新功能以及后续步骤的概述。 
 
 > [!IMPORTANT]
-> office 365 威胁智能现已成为 office 365 高级威胁防护计划2的一部分, 其中包含额外的威胁防护功能。 若要了解详细信息, 请参阅[office 365 高级威胁防护计划和定价](https://products.office.com/exchange/advance-threat-protection)以及[Office 365 高级威胁防护服务说明](https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description)。
+> office 365 威胁智能现已成为 office 365 高级威胁防护计划 2, 以及其他威胁防护功能。 若要了解详细信息, 请参阅[office 365 高级威胁防护计划和定价](https://products.office.com/exchange/advance-threat-protection)以及[Office 365 高级威胁防护服务说明](https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description)。
   
 ## <a name="what-are-threat-trackers"></a>什么是威胁跟踪跟踪？
 

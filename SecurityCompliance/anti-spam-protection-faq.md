@@ -7,7 +7,6 @@ ms.date: 12/9/2016
 ms.audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
-ms.custom: TN2DMC
 localization_priority: Normal
 search.appverid:
 - MET150
@@ -15,32 +14,32 @@ ms.assetid: c534a35d-b121-45da-9d0a-ce738ce51fce
 ms.collection:
 - M365-security-compliance
 description: 本主题提供了有关反垃圾邮件保护的常见问题和解答。 解答适用于 Microsoft Exchange Online 和 Exchange Online Protection (EOP) 客户。
-ms.openlocfilehash: 47ab5202e4f20bbb8cdcf1d83987b0c0c20e8f29
-ms.sourcegitcommit: 48fa456981b5c52ab8aeace173c8366b9f36723b
+ms.openlocfilehash: 8ac5fff97828764524c8bfa1510549396d509866
+ms.sourcegitcommit: 0f93b37c39d807dec91f118aa671a3430c47a9ac
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/28/2019
-ms.locfileid: "30341673"
+ms.lasthandoff: 03/20/2019
+ms.locfileid: "30692231"
 ---
 # <a name="anti-spam-protection-faq"></a>反垃圾邮件保护常见问题解答
 
 本主题提供了有关反垃圾邮件保护的常见问题和解答。 解答适用于 Microsoft Exchange Online 和 Exchange Online Protection (EOP) 客户。 
   
 > [!TIP]
-> 有关安全发件人和阻止发件人列表的问题和解答, 请参阅[Exchange Online 中的安全发件人和阻止发件人列表](safe-sender-and-blocked-sender-lists-faq.md)。有关隔离的问题和解答, 请参阅[隔离 FAQ](quarantine-faq.md)。 
+> 有关安全发件人和阻止发件人列表的问题和解答, 请参阅[Exchange Online 中的安全发件人和阻止发件人列表](safe-sender-and-blocked-sender-lists-faq.md)。 有关隔离的问题和解答，请参阅[隔离常见问题解答](quarantine-faq.md)。 
   
  **问：默认情况下，如何处理检测到的垃圾邮件？**
   
 A. **对于入站邮件：** 大部分垃圾邮件都是通过基于发件人 IP 地址的连接筛选检测到的。 然后，服务会检查邮件内容。 默认情况下，内容筛选的垃圾邮件会发送到发件人的垃圾邮件文件夹。 可以更改此操作。 例如，可以选择将垃圾邮件发送到隔离区，而不是配置内容筛选策略。 
   
 > [!IMPORTANT]
-> 对于 EOP 独立客户: 为了确保 "**将邮件移动到垃圾邮件文件夹**" 操作可用于内部部署邮箱, 您必须在您的本地服务器上配置两个 Exchange 邮件流规则 (也称为传输规则), 以检测由 EOP 添加的垃圾邮件头。有关详细信息, 请参阅[确保垃圾邮件已路由到每个用户的 "垃圾邮件" 文件夹](ensure-that-spam-is-routed-to-each-user-s-junk-email-folder.md)。 
+> 对于 EOP 独立客户: 为了确保 "**将邮件移动到垃圾邮件文件夹**" 操作可用于内部部署邮箱, 您必须在您的本地服务器上配置两个 Exchange 邮件流规则 (也称为传输规则), 以检测由 EOP 添加的垃圾邮件头。 For details, see [Ensure that spam is routed to each user's Junk Email folder](ensure-that-spam-is-routed-to-each-user-s-junk-email-folder.md). 
   
  **对于出站邮件：** 邮件要么通过高风险传递池进行路由，要么被退回、未传递。不管是哪种情况，发件人都会收到一封告知其邮件未传递的传递状态通知 (DSN) 邮件。 
   
  **问：什么是零日垃圾邮件变体，该服务将如何处理它？**
   
-一天: 零天垃圾邮件变种是指第一代未知的垃圾邮件, 即从未捕获或分析的垃圾邮件, 因此我们的垃圾邮件内容筛选器尚未提供任何可用于检测到的信息。由垃圾邮件分析员捕获和分析零天的垃圾邮件示例后, 如果它满足垃圾邮件分类标准, 我们的垃圾邮件内容筛选器将进行更新以进行检测, 并且不再被视为 "零天"。(**注意:** 如果收到的邮件可能是零天垃圾邮件变种, 为了帮助我们改进服务, 请使用将[垃圾邮件、非垃圾邮件和网络钓鱼诈骗邮件中所述的方法之一提交给 microsoft 以进行分析](submit-spam-non-spam-and-phishing-scam-messages-to-microsoft-for-analysis.md)。)
+答：零日垃圾邮件变体是第一代，是之前从未捕获或分析过的未知垃圾邮件变体，所以我们的垃圾邮件内容筛选器还没有可用于检测它的任何信息。 在我们的垃圾邮件分析师们捕获和分析过零日垃圾邮件样本之后，如果符合垃圾分类条件，我们的垃圾邮件内容筛选器会更新对它的检测，此后不再将其看做"零日"。 ( 注意： 如果您收到一封可能是一个零日垃圾邮件变体的邮件，为了帮助我们改进服务，请使用以下 将垃圾邮件和非垃圾邮件提交给 Microsoft 进行分析中介绍的方法之一将邮件提交给 Microsoft。 (**注意:** 如果收到的邮件可能是零天垃圾邮件变种, 为了帮助我们改进服务, 请使用将[垃圾邮件、非垃圾邮件和网络钓鱼诈骗邮件中所述的方法之一提交给 microsoft 以进行分析](submit-spam-non-spam-and-phishing-scam-messages-to-microsoft-for-analysis.md)。)
   
  **问：我需要配置用于提供反垃圾邮件保护的服务吗？**
   
@@ -60,7 +59,7 @@ A. **对于入站邮件：** 大部分垃圾邮件都是通过基于发件人 IP
   
  **问：批量电子邮件筛选会自动启用吗？**
   
-。默认情况下, 为新客户启用**批量邮件**高级垃圾邮件筛选选项。对于已迁移的客户, 此设置将与您的 FOPE 配置相匹配。有关批量电子邮件的详细信息, 请参阅[垃圾邮件和批量电子邮件之间有何区别？](what-s-the-difference-between-junk-email-and-bulk-email.md)
+A. By default, the **Bulk mail** advanced spam filtering option is enabled for new customers. For migrated customers, this setting will match your FOPE configuration. For more information about bulk email, see [What's the difference between junk email and bulk email?](what-s-the-difference-between-junk-email-and-bulk-email.md)
   
  **问：该服务是否提供 URL 筛选？**
   
@@ -68,7 +67,7 @@ A. **对于入站邮件：** 大部分垃圾邮件都是通过基于发件人 IP
   
  **问：客户如何使用此服务将假负（垃圾邮件）和误报（非垃圾邮件）邮件发送到 Microsoft？**
   
-在几个方面, 可以将垃圾邮件和非垃圾邮件提交给 Microsoft 进行分析。有关详细信息, 请参阅[将垃圾邮件、非垃圾邮件和网络钓鱼诈骗邮件提交给 Microsoft 进行分析](submit-spam-non-spam-and-phishing-scam-messages-to-microsoft-for-analysis.md)。 
+A. 可以通过几种方式将垃圾邮件和非垃圾邮件提交给 Microsoft 进行分析。 有关详细信息, 请参阅[将垃圾邮件、非垃圾邮件和网络钓鱼诈骗邮件提交给 Microsoft 进行分析](submit-spam-non-spam-and-phishing-scam-messages-to-microsoft-for-analysis.md)。 
   
  **问：我可以获取垃圾邮件报告吗？**
   
@@ -110,7 +109,7 @@ A.如果通过服务发送自用户的超过一半的邮件是在某段时间范
   
 1. **电子邮件的发送域应在 DNS 中解析。**
     
-    例如, 如果发件人为 user@example.com, 则域 example.com 解析为 IP 地址192.0.43.10。如果发送域在 DNS 中没有 a 记录且无 MX 记录, 则该服务将通过其更高的风险传递池路由邮件, 而不管邮件的内容是否为垃圾邮件。有关更高风险传递池的详细信息, 请参阅[出站邮件的高风险传递池](high-risk-delivery-pool-for-outbound-messages.md)。 
+    例如，如果发件人是 user@example.com，则 example.com 域解析为 IP 地址 192.0.43.10。 如果发送域在 DNS 中没有 A 记录和 MX 记录，则无论邮件内容是否为垃圾邮件，服务都将会通过高风险传送池路由邮件。 有关更高风险传递池的详细信息, 请参阅[出站邮件的高风险传递池](high-risk-delivery-pool-for-outbound-messages.md)。 
     
 2. **出站电子邮件服务器的发送 IP 地址应该有一个反向 DNS (PTR) 条目。**
     

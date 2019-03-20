@@ -9,30 +9,29 @@ ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid:
 - MET150
-ms.custom: TN2DMC
 ms.assetid: 4a05898c-b8e4-4eab-bd70-ee912e349737
 ms.collection:
 - M365-security-compliance
 description: 了解如何配置基于域的邮件身份验证、报告和一致性 (DMARC), 以验证从 Office 365 组织发送的邮件。
-ms.openlocfilehash: d224acaf6b1d53cdf9ababca87c5880a5499c613
-ms.sourcegitcommit: 48fa456981b5c52ab8aeace173c8366b9f36723b
+ms.openlocfilehash: de92825726225549fda1b0dc57d737763f273043
+ms.sourcegitcommit: 0f93b37c39d807dec91f118aa671a3430c47a9ac
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/28/2019
-ms.locfileid: "30341573"
+ms.lasthandoff: 03/20/2019
+ms.locfileid: "30693401"
 ---
 # <a name="use-dmarc-to-validate-email-in-office-365"></a>使用 DMARC 验证 Office 365 中的电子邮件
 
-基于域的邮件身份验证、报告和一致性 ([DMARC](https://dmarc.org)) 适用于发件人策略框架 (SPF) 和域密钥识别邮件 (DKIM), 用于对邮件发件人进行身份验证, 并确保目标电子邮件系统信任从发送的邮件您的域。使用 SPF 和 DKIM 实现 DMARC 会针对哄骗和网络钓鱼电子邮件提供额外的保护。DMARC 可帮助接收邮件系统, 确定如何处理从您的域发送的未通过 SPF 或 DKIM 检查的邮件。
+基于域的邮件身份验证、报告和一致性 ([DMARC](https://dmarc.org)) 适用于发件人策略框架 (SPF) 和域密钥识别邮件 (DKIM), 用于对邮件发件人进行身份验证, 并确保目标电子邮件系统信任从发送的邮件您的域。 实现使用 SPF 和 DKIM 的 DMARC 可以针对欺骗和钓鱼电子邮件提供额外的保护。 DMARC 可帮助接收邮件系统确定如何处理从你的域发送且未通过 SPF 或 DKIM 检查的邮件。
   
 ## <a name="how-do-spf-and-dmarc-work-together-to-protect-email-in-office-365"></a>SPF 和 DMARC 如何协同工作来保护 Office 365 中的电子邮件？
 <a name="SPFandDMARC"> </a>
 
  电子邮件可能包含多个发送方、发件人或地址。这些地址用于不同用途。例如，以下列地址为例： 
   
-- "发件人发件人 **" 地址**: 标识发件人并指定在邮件传递时出现任何问题 (例如, 未送达通知) 时将返回通知发送到的位置。这将显示在电子邮件的信封部分, 并且通常不会由您的电子邮件应用程序显示。这有时称为 "5321" 或 "反向路径" 地址。
+- "发件人发件人 **" 地址**: 标识发件人并指定在邮件传递时出现任何问题 (例如, 未送达通知) 时将返回通知发送到的位置。 该地址出现在电子邮件的信封部分，而电子邮件应用程序通常不显示此地址。 有时称其为" 5321.MailFrom 地址"或"反向路径地址"。
     
-- **"发件人" 地址**: 邮件应用程序显示为 "发件人" 地址的地址。此地址标识电子邮件的作者。即负责撰写邮件的个人或系统的邮箱。这有时称为 "5322.from 地址"。
+- **"发件人" 地址**: 邮件应用程序显示为 "发件人" 地址的地址。 此地址标识电子邮件的作者。 即，负责撰写邮件的个人或系统的邮箱。 有时称其为" 5322.From 地址"。
     
 SPF 使用 DNS TXT 记录为给定的域提供获得授权的发送 IP 地址的列表。通常情况下，仅会针对 5321.MailFrom 地址执行 SPF 检查。这意味着，使用 SPF 本身时 5322.From 地址未通过身份验证。这样允许用户接收通过 SPF 检查但具有伪造的 5322.From 发件人地址的邮件。以下面的 SMTP 脚本为例：
   
@@ -142,13 +141,13 @@ _dmarc.domain  TTL  IN  TXT  "v=DMARC1; pct=100; p=policy"
 
 其中：
   
-- *domain*是要保护的域。默认情况下, 该记录将保护来自域和所有子域的邮件。例如, 如果指定\_dmarc.contoso.com, 则 dmarc 将保护来自域和所有子域的邮件, 如 housewares.contoso.com 或 plumbing.contoso.com。 
+- *域*是你想要保护的域。 默认情况下，该记录可保护从该域和所有子域发送的邮件。 例如, 如果指定\_dmarc.contoso.com, 则 dmarc 将保护来自域和所有子域的邮件, 如 housewares.contoso.com 或 plumbing.contoso.com。 
     
-- *TTL*应始终是一个小时的等效项。用于 TTL 的单位 (小时 (1 小时)、分钟数 (60 分钟) 或秒 (3600 秒)) 将因您的域的注册器而异。 
+- *TTL* 应始终相当于一小时。用于 TTL 的单位可以为小时（1 小时）、分钟（60 分钟）或秒（3600 秒），具体取决于你的域的注册机构。 
     
 - *pct = 100*表示应将此规则用于电子邮件的 100%。
     
-- *策略*指定您希望接收服务器在 DMARC 失败时遵循的策略。您可以将策略设置为 "无"、"隔离" 或 "拒绝"。 
+- *策略*指定 DMARC 失败时你希望接收服务器遵循的策略。你可以将策略设置为无、隔离或拒绝。 
     
 有关要使用的选项的信息，请熟悉[在 Office 365 中实现 DMARC 的最佳做法](use-dmarc-to-validate-email.md#DMARCbestpractices)中的概念。
   
@@ -196,7 +195,7 @@ _dmarc.domain  TTL  IN  TXT  "v=DMARC1; pct=100; p=policy"
 ## <a name="how-office-365-handles-outbound-email-that-fails-dmarc"></a>Office 365 如何处理未通过 DMARC 的出站电子邮件
 <a name="outbounddmarcfail"> </a>
 
-如果从 Office 365 出站邮件且 DMARC 失败, 并且您已将策略设置为 p = 隔离或 p = 拒绝, 则邮件将通过[高风险传递池中的出站邮件进行](high-risk-delivery-pool-for-outbound-messages.md)路由。没有针对出站电子邮件的替代。
+如果从 Office 365 出站邮件且 DMARC 失败, 并且您已将策略设置为 p = 隔离或 p = 拒绝, 则邮件将通过[高风险传递池中的出站邮件进行](high-risk-delivery-pool-for-outbound-messages.md)路由。 出站电子邮件不存在任何替代方法。
   
 如果你发布 DMARC 拒绝策略 (p=reject)，则 Office 365 中的任何其他客户都无法欺骗你的域，因为通过服务中继出站邮件时邮件将无法通过你的域的 SPF 或 DKIM。 不过，如果你发布 DMARC 拒绝策略，但并非所有电子邮件均通过 Office 365 进行了验证，部分可能会被标记为入站电子邮件的垃圾邮件（如上所述），或者如果你不发布 SPF 且尝试通过服务将其中继到出站，邮件将被拒绝。 例如，当你生成 DMARC TXT 记录时，如果你忘记包括代表你的域发送邮件的服务器和应用的某些 IP 地址，就会出现这种情况。
   
@@ -223,9 +222,9 @@ contoso.com     3600   IN  MX  0  mail.contoso.com
 contoso.com     3600   IN  MX  10 contoso-com.mail.protection.outlook.com
 ```
 
-所有或大多数电子邮件将首先被路由到 mail.contoso.com, 因为它是主 MX, 而邮件将路由到 EOP。在某些情况下, 您甚至可能根本不会将 EOP 作为 MX 记录列出, 而只需挂钩连接器即可路由您的电子邮件。EOP 不一定是要完成的 DMARC 验证的第一个条目。它只是确保验证, 因为我们无法确保所有内部部署/非 O365 服务器将执行 DMARC 检查。 当您设置 DMARC TXT 记录时, DMARC 有资格强制实施客户的域 (而不是服务器), 但在接收服务器上实际执行强制。 如果将 EOP 设置为接收服务器, 则 EOP 执行 DMARC 强制。
+由于它是主 MX，全部或大部分电子邮件将首先被路由到 mail.contoso.com，然后将邮件路由到 EOP。 在某些情况下，你甚至不可能将 EOP 列为 MX 记录，并直接挂接连接器来路由你的电子邮件。 EOP 不一定是要完成的 DMARC 验证的第一个条目。 它只是确保验证, 因为我们无法确保所有内部部署/非 O365 服务器将执行 DMARC 检查。  当您设置 DMARC TXT 记录时, DMARC 有资格强制实施客户的域 (而不是服务器), 但在接收服务器上实际执行强制。  如果将 EOP 设置为接收服务器, 则 EOP 执行 DMARC 强制。
   
-## <a name="for-more-information"></a>详细信息
+## <a name="for-more-information"></a>有关详细信息
 <a name="sectionSection8"> </a>
 
 想要了解有关 DMARC 的详细信息？以下资源可以派上用场。
@@ -238,7 +237,7 @@ contoso.com     3600   IN  MX  10 contoso-com.mail.protection.outlook.com
     
 - 直接访问源，位于 [DMARC.org](https://dmarc.org)。
     
-## <a name="see-also"></a>See also
+## <a name="see-also"></a>另请参阅
 <a name="sectionSection8"> </a>
 
 [Office 365 如何使用发件人策略框架 (SPF) 来防止欺骗](how-office-365-uses-spf-to-prevent-spoofing.md)

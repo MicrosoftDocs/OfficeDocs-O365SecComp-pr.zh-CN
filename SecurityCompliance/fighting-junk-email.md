@@ -7,7 +7,6 @@ ms.date: 12/9/2016
 ms.audience: ITPro
 ms.topic: reference
 ms.service: O365-seccomp
-ms.custom: TN2DMC
 localization_priority: Normal
 search.appverid:
 - MET150
@@ -15,12 +14,12 @@ ms.assetid: 5fd7d05b-96db-456f-81d6-1ac0e5bff530
 ms.collection:
 - M365-security-compliance
 description: Microsoft 的电子邮件安全路线图包括不匹配的跨产品方法。跨 Microsoft 电子邮件平台应用 Exchange Online Protection (EOP) 反垃圾邮件和反网络钓鱼筛选技术，以便为用户提供整个网络的最新反垃圾和反网络钓鱼工具及创新。 EOP 的目标是提供全面且可用的电子邮件服务，以帮助用户检测垃圾邮件、诈骗电子邮件威胁（网络钓鱼）和恶意软件，并免受其侵扰。
-ms.openlocfilehash: b4a7f581792922abdf92d37558ebbbbb8947a978
-ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
+ms.openlocfilehash: 510b04d3f111c269d5f8579abcc809ddc283636b
+ms.sourcegitcommit: 0f93b37c39d807dec91f118aa671a3430c47a9ac
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30216562"
+ms.lasthandoff: 03/20/2019
+ms.locfileid: "30692851"
 ---
 # <a name="fighting-junk-email-sent-to-office-365"></a>抵制发送到 Office 365 的垃圾邮件
 
@@ -28,7 +27,7 @@ Microsoft 的电子邮件安全路线图包括不匹配的跨产品方法。跨 
   
 ## <a name="the-challenge"></a>挑战
 
-无论对于客户，还是对于营销人员、支持人员、销售组织和各种规模的企业，电子邮件已经成为一个重要的通信工具。随着电子邮件的普及，电子邮件滥用的问题也日趋严重。无人监控的垃圾邮件会阻塞收件箱和网络、影响用户满意度，并阻碍合法电子邮件通信的有效性。这就是 Microsoft 仍继续致力于反垃圾邮件技术的原因。简单地说，它从包含和筛选垃圾邮件开始。  
+无论对于客户，还是对于营销人员、支持人员、销售组织和各种规模的企业，电子邮件已经成为一个重要的通信工具。随着电子邮件的普及，电子邮件滥用的问题也日趋严重。无人监控的垃圾邮件会阻塞收件箱和网络、影响用户满意度，并阻碍合法电子邮件通信的有效性。这就是 Microsoft 仍继续致力于反垃圾邮件技术的原因。简单地说，它从包含和筛选垃圾邮件开始。 
   
 ## <a name="our-efforts"></a>我们的努力
 
@@ -46,11 +45,11 @@ EOP 提供了大量步骤，以最大程度减少垃圾邮件对我们用户的�
   
 #### <a name="eop-filters"></a>EOP 筛选器
 
-除了反垃圾邮件筛选技术以外, EOP 还为系统管理员提供了设置筛选器级别的功能, 以进一步自定义将电子邮件传递给其用户帐户的能力。管理员可以轻松地将发件人或域名添加到 "安全发件人和域" 列表, 这样, 无论邮件的内容如何, 来自该发件人或域的电子邮件永远不会被视为垃圾邮件。有关信息, 请参阅[Exchange Online 中的安全发件人和阻止的发件人列表](safe-sender-and-blocked-sender-lists-faq.md)。
+除了反垃圾邮件筛选技术以外，EOP 还允许系统管理员设置筛选器级别，以进一步自定义向他们的用户帐户的电子邮件传送。 管理员可以轻松地将发件人或域名添加到安全发件人和域列表，以便来自该发件人或域的电子邮件永远不会被视为垃圾邮件，而无需考虑邮件内容。 有关信息, 请参阅[Exchange Online 中的安全发件人和阻止的发件人列表](safe-sender-and-blocked-sender-lists-faq.md)。
   
 ### <a name="phishing-protection"></a>网络钓鱼防护
 
-网络钓鱼（Phishing，读作“fishing”）是一种身份盗用的形式，也是互联网增长最快的威胁之一。您通常可以标识出钓鱼邮件（当它请求个人或财务信息，或通过包含一个网站的链接来请求该类信息）。EOP 提供钓鱼保护作为 EOP 筛选技术的专有部分。EOP 筛选技术分析电子邮件，帮助检测欺诈性链接或欺骗域，以保护用户免受这些在线诈骗类型的侵扰。
+网络钓鱼（Phishing，读作"fishing"）是一种身份盗用的形式，也是互联网增长最快的威胁之一。您通常可以标识出钓鱼邮件（当它请求个人或财务信息，或通过包含一个网站的链接来请求该类信息）。EOP 提供钓鱼保护作为 EOP 筛选技术的专有部分。EOP 筛选技术分析电子邮件，帮助检测欺诈性链接或欺骗域，以保护用户免受这些在线诈骗类型的侵扰。
   
 #### <a name="how-does-phishing-protection-work"></a>网络钓鱼防护的工作原理
 

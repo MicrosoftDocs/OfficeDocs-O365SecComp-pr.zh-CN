@@ -7,17 +7,16 @@ ms.date: 12/15/2016
 ms.audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
-ms.custom: TN2DMC
 localization_priority: Normal
 ms.collection: Ent_O365_Hybrid
 ms.assetid: a7203ebd-ffac-4a8d-a2d0-6c8a61c8eeb8
-description: Microsoft 努力使每个用户更容易使用其产品和服务。
-ms.openlocfilehash: 2403ef4ec5a99202a45b40bf639193643b6ad02b
-ms.sourcegitcommit: 06d6e63225f912d0f3c6bb836c61eb11c1dbe97a
+description: Microsoft 致力于帮助用户更轻松地使用其产品和服务。
+ms.openlocfilehash: 271383361ee99f6959e81a1f38dea4b200c54fb5
+ms.sourcegitcommit: 0f93b37c39d807dec91f118aa671a3430c47a9ac
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "30206375"
+ms.lasthandoff: 03/20/2019
+ms.locfileid: "30693101"
 ---
 # <a name="accessibility-for-people-with-disabilities"></a>面向残障人士的辅助功能
 
@@ -52,9 +51,9 @@ Windows 操作系统包含许多内置的辅助功能，可以帮助键入和使
     
 - **Windows 的辅助技术产品** 提供了多种辅助技术产品，使残障人士更容易使用计算机。可以在 Microsoft Accessibility（Microsoft 辅助功能）上搜索 Windows 上运行的辅助技术产品目录。 
     
-    如果使用辅助产品，请确保在升级软件或硬件之前与辅助技术供应商联系，检查可能存在的兼容性问题。 
+    如果您使用辅助技术，请确保在升级软件或硬件之前与辅助技术供应商联系以检查可能的兼容性问题。 
     
-### <a name="documentation-in-alternative-formats"></a>备选格式的文档
+### <a name="documentation-in-alternative-formats"></a>替代格式的文档
 
 如果你阅读或处理打印材料有困难，可以获取更容易使用的格式的许多 Microsoft 产品文档。可以在 [Microsoft 辅助功能](https://go.microsoft.com/fwlink/p/?linkId=18139)上获取可访问的产品文档索引。 
   
@@ -64,17 +63,17 @@ Windows 操作系统包含许多内置的辅助功能，可以帮助键入和使
 |:-----|
 |Learning Ally  <br/> 20 Roszel Road  <br/> Princeton, NJ 08540  <br/> 美国以内拨打的电话号码：(800) 221-4792  <br/> 网站：[Learning Ally](https://www.learningally.org/) <br/> |
    
-### <a name="customer-service-for-people-with-hearing-impairments"></a>针对听力受损人士的客户服务
+### <a name="customer-service-for-people-with-hearing-impairments"></a>针对听力损伤人士的客户服务
 
-如果您失聪或听力不好，可以通过文字电话 (TTY/TDD) 服务完整地访问 Microsoft 产品和客户服务：
+如果您是失聪人士或有听力障碍的人士，可通过文本电话 (TTY/TDD) 服务访问 Microsoft 产品和客户服务：
   
-- 若要获得客户服务，请在星期一到星期五（节假日除外）太平洋时间早上 6:30 到下午 5:30，与 Microsoft 销售信息中心联系，联系电话是 (800) 892-5234。 
+- 要获得客户服务，请在周一至周五（节假日除外）的太平洋时间 6:30 A.M. 和 5:30 P.M. 之间通过 (800) 892-5234 与 Microsoft 销售信息中心联系。 
     
 - 要获得美国境内的技术帮助，请在周一至周五（节假日除外）的太平洋时间 6:00 A.M. 和 6:00 P.M. 之间通过 (800) 892-5234 与 Microsoft 产品支持服务部门联系。在加拿大，请在周一至周五（节假日除外）的东部时间 8:00 A.M. 和 8:00 P.M. 之间拨打 (905) 568-9641。 
     
 Microsoft 支持服务受使用服务时执行的价格、条款和条件的约束。有关详细信息，请参阅 [Microsoft 支持](https://go.microsoft.com/fwlink/p/?linkId=18142)。
   
-## <a name="for-more-information"></a>更多信息
+## <a name="for-more-information"></a>有关详细信息
 
 有关计算机的辅助技术如何改善残障人士的生活的详细信息，请参阅 [Microsoft 辅助功能](http://go.microsoft.com/fwlink/p/?linkId=18139)。 
   

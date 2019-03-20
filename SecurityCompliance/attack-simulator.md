@@ -15,16 +15,16 @@ ms.assetid: da5845db-c578-4a41-b2cb-5a09689a551b
 ms.collection:
 - M365-security-compliance
 description: 作为 Office 365 全局管理员, 你可以使用攻击模拟器在你的组织中运行实际的攻击方案。 这可帮助你在真正的攻击击中你的业务之前识别和查找易受攻击的用户。
-ms.openlocfilehash: 1956dd2dda187b9d1d0147911dd278e8ae3650b3
-ms.sourcegitcommit: f25a667e4c7d11c43c87604d576f1e6d6155b14f
+ms.openlocfilehash: e372fe3c4cc10c4f96836db394fbccd2f180145a
+ms.sourcegitcommit: 0f93b37c39d807dec91f118aa671a3430c47a9ac
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/11/2019
-ms.locfileid: "30536152"
+ms.lasthandoff: 03/20/2019
+ms.locfileid: "30693661"
 ---
 # <a name="attack-simulator-in-office-365"></a>Office 365 中的攻击模拟器
 
-**摘要**如果您是 office 365 全局管理员, 并且您的组织具有[office 365 威胁调查和响应 capabilties](office-365-ti.md), 则可以使用攻击模拟器在您的组织中运行实际的攻击方案。 这可以帮助您识别和查找易受攻击的用户, 在真正的攻击影响你的底线之前。 阅读本文以了解详细信息。
+**摘要**如果您是 office 365 全局管理员, 并且您的组织具有[office 365 威胁调查和响应功能](office-365-ti.md), 则可以使用攻击模拟器在您的组织中运行实际的攻击方案。 这可以帮助您识别和查找易受攻击的用户, 在真正的攻击影响你的底线之前。 阅读本文以了解详细信息。
 
 > [!IMPORTANT]
 > office 365 高级威胁防护和威胁调查和响应 (以前称为威胁智能) 现在是 Office 365 高级威胁防护计划2的一部分, 其中包含额外的威胁防护功能。 若要了解详细信息, 请参阅[office 365 高级威胁防护计划和定价](https://products.office.com/exchange/advance-threat-protection)以及[Office 365 高级威胁防护服务说明](https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description)。
@@ -56,7 +56,7 @@ ms.locfileid: "30536152"
     
 - **[多因素身份验证](https://docs.microsoft.com/office365/admin/security-and-compliance/set-up-multi-factor-authentication?view=o365-worldwide)(MFA) 已打开, 至少适用于 Office 365 全局管理员帐户**。 (理想情况下, 将为组织中的所有用户启用 MFA。)
  
-- **您的组织具有[Office 365 威胁智能](office-365-ti.md)**, 在安全&amp;合规性中心中显示攻击模拟器 (转到**威胁管理** \> **攻击模拟器**)<br/>![威胁管理-攻击模拟器](media/ThreatMgmt-AttackSimulator.png)
+- **您的组织具有[Office 365 高级威胁防护计划 2](office-365-ti.md)**, 在安全&amp;合规性中心中显示攻击模拟器 (转到**威胁管理** \> **攻击模拟器**)<br/>![威胁管理-攻击模拟器](media/ThreatMgmt-AttackSimulator.png)
 
     
 ## <a name="display-name-spear-phishing-attack"></a>显示名称 spear 网络钓鱼攻击

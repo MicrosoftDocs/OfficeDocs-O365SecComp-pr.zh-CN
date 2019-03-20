@@ -7,18 +7,17 @@ ms.date: 12/9/2016
 ms.audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
-ms.custom: TN2DMC
 localization_priority: Normal
 ms.assetid: 8dcc752f-e22e-44ce-a104-4cc4d7e439f3
 ms.collection:
 - M365-security-compliance
 description: 在此 articleSupported 中 LanguagesInstall 垃圾电子邮件报告外接 inUninstall 垃圾电子邮件报告添加-inFor 详细信息
-ms.openlocfilehash: b29bd367ca168ff45d983796b8ae6e68ee9df297
-ms.sourcegitcommit: 686bc9a8f7a7b6810a096f07d36751d10d334409
+ms.openlocfilehash: ee7d1ef3f906c7c03433140c50c5c975f456cb08
+ms.sourcegitcommit: 0f93b37c39d807dec91f118aa671a3430c47a9ac
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "30276302"
+ms.lasthandoff: 03/20/2019
+ms.locfileid: "30693011"
 ---
 # <a name="install-the-junk-email-reporting-add-in-for-microsoft-outlook"></a>安装 Microsoft Outlook 的垃圾邮件报告外接程序
   
@@ -26,7 +25,7 @@ ms.locfileid: "30276302"
   
 该外接程序（针对所有受支持的语言）允许您直接从 Outlook 功能区报告垃圾邮件。该外接程序的英语版本包括直接通过功能区向 Microsoft 报告电子邮件问题的其他选项：
   
--   报告您收到的网页仿冒垃圾电子邮件 
+-  报告您收到的网页仿冒垃圾电子邮件 
     
 - 报告被错误识别为垃圾邮件的电子邮件。
     
@@ -96,17 +95,17 @@ ms.locfileid: "30276302"
     
 3. 双击 .msi 文件。 
     
-4. 在 "**欢迎使用 Microsoft 垃圾电子邮件报告外接程序安装程序**" 页上, 单击 "**下一步**"。 
+4. 在“欢迎使用 Microsoft 垃圾电子邮件报告外接程序安装程序”**** 页面上，单击“下一步”****。 
     
-5. 查看许可协议, 如果您同意安装条款 (必须继续安装), 请单击 "**我接受许可协议中的条款"** 。单击 "**下一步**" 继续。 
+5. 查看许可证协议，如果您同意安装条款（必须同意才能继续安装），则单击“我接受许可协议中的条款”****。单击“下一步”**** 继续。 
     
-6. 向导完成后, 单击 "**完成**"。 
+6. 向导完成后，单击“完成”****。  
     
 7. 启动 Outlook。
     
-8. 查找 Outlook 功能区上的 "**垃圾邮件**" 按钮。您现在可以通过在收件箱中选择垃圾电子邮件并单击 "**报告垃圾**邮件" 按钮, 将垃圾电子邮件报告给 Microsoft。 
+8. 查找 Outlook 功能区上的 "**垃圾邮件**" 按钮。 现在，可以通过在收件箱中选择垃圾电子邮件并单击“报告垃圾邮件”**** 按钮，向 Microsoft 报告垃圾电子邮件。 
     
-9. 如果要向 Microsoft 报告网络钓鱼诈骗电子邮件, 请选择 "**垃圾邮件**" 旁边的向下箭头, 如 "**报告为网络钓鱼**"。在 "垃圾邮件" 文件夹中, 如果电子邮件被错误地标识为垃圾邮件, 则还可以选择 "**不报告垃圾**邮件"。 
+9. 如果想要向 Microsoft 报告仿冒垃圾电子邮件，请选择****“垃圾邮件”旁边的向下箭头查看更多选项，如****“报告为仿冒邮件”。如果一封电子邮件被错误识别为垃圾邮件，则在垃圾邮件文件夹中，您还可以选择“报告不是垃圾邮件”****。 
     
 ### <a name="install-the-junk-email-reporting-add-in-using-silent-mode"></a>使用静默模式安装垃圾电子邮件报告外接程序
 <a name="BKMK_InstalltheJunkEmailReportingAdd-IninSilentMode"> </a>
@@ -142,9 +141,9 @@ ms.locfileid: "30276302"
 
 4. 安装完成后，启动 Outlook。
     
-5. 查找 Outlook 功能区上的 "**垃圾邮件**" 按钮。您现在可以通过在收件箱中选择垃圾电子邮件并单击 "**报告垃圾**邮件" 按钮, 将垃圾电子邮件报告给 Microsoft。 
+5. 查找 Outlook 功能区上的 "**垃圾邮件**" 按钮。 现在，可以通过在收件箱中选择垃圾电子邮件并单击“报告垃圾邮件”**** 按钮，向 Microsoft 报告垃圾电子邮件。 
     
-6. 如果要向 Microsoft 报告网络钓鱼诈骗电子邮件, 请选择 "**垃圾邮件**" 旁边的向下箭头, 如 "**报告为网络钓鱼**"。在 "垃圾邮件" 文件夹中, 如果电子邮件被错误地标识为垃圾邮件, 则还可以选择 "**不报告垃圾**邮件"。 
+6. 如果想要向 Microsoft 报告仿冒垃圾电子邮件，请选择****“垃圾邮件”旁边的向下箭头查看更多选项，如****“报告为仿冒邮件”。如果一封电子邮件被错误识别为垃圾邮件，则在垃圾邮件文件夹中，您还可以选择“报告不是垃圾邮件”****。 
     
 ## <a name="uninstall-the-junk-email-reporting-add-in"></a>卸载垃圾电子邮件报告外接程序
 <a name="sectionSection2"> </a>
@@ -165,13 +164,13 @@ ms.locfileid: "30276302"
 
 1. 在您的计算机上关闭 Outlook。
     
-2. 从计算机上的 "开始" 菜单中, 选择 **"控制面板"**。
+2. 从计算机上的“开始”菜单，选择“控制面板”****。
     
-3. 选择 "**程序和功能**"。
+3. 选择“程序和功能”****。
     
-4. **为 microsoft Office Outlook 选择 microsoft 垃圾电子邮件报告外接程序**。
+4. 选择“Microsoft Office Outlook 的 Microsoft 垃圾电子邮件报告外接程序”****。
     
-5. 选择 "**卸载**"。
+5. 选择“卸载”****。
     
 6. 再次启动 Outlook 以确认该外接程序不再显示在 Outlook 功能区中。
     

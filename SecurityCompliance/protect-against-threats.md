@@ -1,5 +1,5 @@
 ---
-title: Office 365 中的威胁防护
+title: 防御 Office 365 中的威胁
 ms.author: deniseb
 author: denisebmsft
 manager: laurawi
@@ -14,18 +14,18 @@ ms.assetid: b10023f6-f30f-45d3-b3ad-b71aa4aa0d58
 ms.collection:
 - M365-security-compliance
 description: 了解 Office 365 企业如何帮助保护您的组织免受各种威胁, 包括欺骗、恶意软件、垃圾邮件、网络钓鱼尝试和对数据的未授权访问。
-ms.openlocfilehash: da39421184deacdc19adf073f086a3d8a2021acd
-ms.sourcegitcommit: 5b5bbced1577701bdb6befc8ed252e9d9e776529
+ms.openlocfilehash: 1d6abe6bd9347a625c6e533737ffe4bb3b7cee7a
+ms.sourcegitcommit: 0f93b37c39d807dec91f118aa671a3430c47a9ac
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/25/2019
-ms.locfileid: "30245578"
+ms.lasthandoff: 03/20/2019
+ms.locfileid: "30693241"
 ---
-# <a name="protect-against-threats-in-office-365"></a>Office 365 中的威胁防护
+# <a name="protect-against-threats-in-office-365"></a>防御 Office 365 中的威胁
 
-使用 Office 365 企业版, 您可以帮助您的组织防御各种威胁, 包括欺骗、恶意软件、垃圾邮件、网络钓鱼尝试和对数据的未授权访问。使用此页面上的资源可了解您可以采取的威胁防护选项和操作。
+使用 Office 365 企业版, 您可以帮助您的组织防御各种威胁, 包括欺骗、恶意软件、垃圾邮件、网络钓鱼尝试和对数据的未授权访问。 使用此页面上的资源可了解您可以采取的威胁防护选项和操作。
 
-## <a name="malware"></a>恶意软件
+## <a name="malware"></a>受到
 
 - [反垃圾邮件&amp;反恶意软件保护](anti-spam-and-anti-malware-protection.md)
     
@@ -66,13 +66,13 @@ ms.locfileid: "30245578"
 - [确保垃圾邮件已路由到每个用户的“垃圾邮件”文件夹](ensure-that-spam-is-routed-to-each-user-s-junk-email-folder.md)
   
     
-## <a name="advanced-threat-protection"></a>高级威胁防护
+## <a name="advanced-threat-protection"></a>高级强大的威胁保护
 
 配置策略以管理欺骗、防御网络钓鱼攻击, 并通过高级威胁防护 (ATP) 捕捉电子邮件中的恶意 url 或文件。
   
 - [了解 Office 365 ATP](office-365-atp.md)
 
-- [获取 Office 365 威胁智能的概述](office-365-ti.md)
+- [获取 Office 365 ATP 计划2的概述](office-365-ti.md)
     
 - [设置反网络钓鱼策略](set-up-anti-phishing-policies.md)
     
@@ -82,7 +82,7 @@ ms.locfileid: "30245578"
     
 ## <a name="encryption"></a>加密
 
-获取加密的入门知识, 设置权限管理策略和电子邮件加密, 并配置其他加密设置。获取有关适用于 Office 365 的邮件服务器的根证书的详细信息。
+获取加密的入门知识, 设置权限管理策略和电子邮件加密, 并配置其他加密设置。 获取有关适用于 Office 365 的邮件服务器的根证书的详细信息。
   
 - [了解 Office 365 中的加密](encryption.md)
     
@@ -94,7 +94,7 @@ ms.locfileid: "30245578"
         
 ## <a name="privileged-access-management"></a>特权访问管理
 
-帮助保护您的组织免受可能使用现有特权管理员帐户访问敏感数据或访问关键配置设置的用户泄露的行为。启用特权访问管理后, 用户将需要请求实时访问, 以通过高度范围和时间限制的审批工作流来完成提升和特权的任务。
+帮助保护您的组织免受可能使用现有特权管理员帐户访问敏感数据或访问关键配置设置的用户泄露的行为。 启用特权访问管理后, 用户将需要请求实时访问, 以通过高度范围和时间限制的审批工作流来完成提升和特权的任务。
   
 - [获取权限访问管理的概述](privileged-access-management-overview.md)
     

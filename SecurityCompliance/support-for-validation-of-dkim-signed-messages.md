@@ -6,7 +6,6 @@ manager: laurawi
 ms.audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
-ms.custom: TN2DMC
 localization_priority: Normal
 search.appverid:
 - MET150
@@ -14,12 +13,12 @@ ms.assetid: a4c95148-a00c-4d12-85ed-88520b547d97
 ms.collection:
 - M365-security-compliance
 description: 了解 exchange online Protection 和 exchange online 中的 DKIM 签名邮件验证
-ms.openlocfilehash: 126586235d17fc123ed266d6c4ce5004df5df25a
-ms.sourcegitcommit: 686bc9a8f7a7b6810a096f07d36751d10d334409
+ms.openlocfilehash: b1e2af0511c3aa9eb819206aa859ad96e834e3ec
+ms.sourcegitcommit: 0f93b37c39d807dec91f118aa671a3430c47a9ac
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "30275902"
+ms.lasthandoff: 03/20/2019
+ms.locfileid: "30691662"
 ---
 # <a name="support-for-validation-of-dkim-signed-messages"></a>支持 DKIM 签名邮件验证
 

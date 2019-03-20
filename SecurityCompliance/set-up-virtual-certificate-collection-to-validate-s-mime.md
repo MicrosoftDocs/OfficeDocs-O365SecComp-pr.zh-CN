@@ -7,28 +7,27 @@ ms.date: ''
 ms.audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
-ms.custom: TN2DMC
 localization_priority: Normal
 search.appverid:
 - MET150
 ms.assetid: 04a616e6-197c-490c-ae8c-c8d5f0f0b3dd
 description: 管理员可以了解如何创建将用于验证 Exchange Online 中的 S/MIME 证书的虚拟证书集合。
-ms.openlocfilehash: 2aa6e529f5ca374af6fe6d80a403058a8b6e468a
-ms.sourcegitcommit: baf23be44f1ed5abbf84f140b5ffa64fce605478
+ms.openlocfilehash: 15998bce1971952286d8dd4401a92f1e9e47c25d
+ms.sourcegitcommit: 0f93b37c39d807dec91f118aa671a3430c47a9ac
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "30296945"
+ms.lasthandoff: 03/20/2019
+ms.locfileid: "30693551"
 ---
 # <a name="set-up-virtual-certificate-collection-in-exchange-online-to-validate-smime"></a>在 Exchange Online 中设置虚拟证书集合以验证 S/MIME
 
-作为管理员, 你将需要在 Exchange Online 中配置将用于验证 S/MIME 证书的虚拟证书集合。此虚拟证书集合设置为具有 SST 文件扩展名的证书存储。SST 文件包含在验证 S/MIME 证书时使用的所有根证书和中间证书。
+作为管理员, 你将需要在 Exchange Online 中配置将用于验证 S/MIME 证书的虚拟证书集合。 此虚拟证书集合设置为具有 SST 文件扩展名的证书存储。 SST 文件包含验证 S/MIME 证书时使用的所有根证书和中间证书。
 
 ## <a name="create-and-save-an-sst"></a>创建并保存 SST
 
-您可以通过在 Windows PowerShell 中使用**导出证书**cmdlet 导出证书, 并将_Type_值指定为 SST, 从而创建此 SST 证书存储文件。有关说明, 请参阅[Export-Certificate](https://docs.microsoft.com/powershell/module/pkiclient/export-certificate)。
+您可以通过在 Windows PowerShell 中使用**导出证书**cmdlet 导出证书, 并将_Type_值指定为 SST, 从而创建此 SST 证书存储文件。 有关说明, 请参阅[Export-Certificate](https://docs.microsoft.com/powershell/module/pkiclient/export-certificate)。
 
-拥有 SST 证书存储文件后, 在 exchange online PowerShell 中使用以下语法将 SST 文件内容保存在 exchange online 虚拟证书存储中。若要连接到 exchange online powershell, 请参阅[连接到 exchange online powershell](https://go.microsoft.com/fwlink/p/?linkid=396554)。
+拥有 SST 证书存储文件后, 在 exchange online PowerShell 中使用以下语法将 SST 文件内容保存在 exchange online 虚拟证书存储中。 若要连接到 exchange online powershell, 请参阅[连接到 exchange online powershell](https://go.microsoft.com/fwlink/p/?linkid=396554)。
 
 ```
 Set-SmimeConfig -SMIMECertificateIssuingCA (Get-Content <FileNameAndPath>.sst -Encoding Byte)

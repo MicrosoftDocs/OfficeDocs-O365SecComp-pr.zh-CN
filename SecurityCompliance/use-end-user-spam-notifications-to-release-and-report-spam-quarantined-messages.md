@@ -7,18 +7,17 @@ ms.date: 12/9/2016
 ms.audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
-ms.custom: TN2DMC
 localization_priority: Normal
 ms.assetid: 4b250bc9-0056-4426-8397-7b4398f1b026
 ms.collection:
 - M365-security-compliance
 description: '查看有关隔离电子邮件的管理员的最终用户垃圾邮件通知消息的用户可以对邮件执行以下操作。 '
-ms.openlocfilehash: adddd5032e6254b6084a7f6e714859b713815ed2
-ms.sourcegitcommit: 48fa456981b5c52ab8aeace173c8366b9f36723b
+ms.openlocfilehash: f9a8cdf21dfae631b311651aa2259af2f76d73b8
+ms.sourcegitcommit: 0f93b37c39d807dec91f118aa671a3430c47a9ac
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/28/2019
-ms.locfileid: "30341233"
+ms.lasthandoff: 03/20/2019
+ms.locfileid: "30691971"
 ---
 # <a name="use-end-user-spam-notifications-to-release-and-report-spam-quarantined-messages"></a>使用最终用户垃圾邮件通知释放和报告垃圾邮件隔离邮件
 
@@ -41,6 +40,6 @@ ms.locfileid: "30341233"
 - **报告为非垃圾邮件** 单击此链接将邮件副本发送到 Microsoft 进行分析。垃圾邮件团队将评估和分析邮件，同时依照分析结果，调整反垃圾邮件筛选器规则以允许传输邮件。 
     
 > [!NOTE]
->  由于邮件流规则 (也称为 a) 匹配而被隔离的邮件不包含在最终用户垃圾邮件隔离邮件中。仅列出垃圾邮件隔离的邮件。> 您只能释放一封邮件, 并将其报告为误报 (非垃圾邮件) 一次。 
+>  由于邮件流规则 (也称为 a) 匹配而被隔离的邮件不包含在最终用户垃圾邮件隔离邮件中。 只有垃圾邮件隔离邮件才会列出。 >  您可以释放邮件并将其报告为误报（非垃圾邮件），但只能执行一次。 
   
 

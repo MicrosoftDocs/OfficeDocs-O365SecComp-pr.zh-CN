@@ -6,33 +6,32 @@ manager: laurawi
 ms.audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
-ms.custom: TN2DMC
 localization_priority: Normal
 search.appverid: ''
 ms.assetid: 421f72bd-dd43-4be1-82f5-0ae9ac43bd00
 description: 了解如何为软删除邮箱创建就地保留，以将其变为非活动邮箱并保留其内容。然后可以使用 Microsoft 电子数据展示工具来搜索非活动邮箱。
-ms.openlocfilehash: 70feb265e95741406dbf170c6be70bd83b2ec081
-ms.sourcegitcommit: a80bd8626720fabdf592b84e4424cd3a83d08280
+ms.openlocfilehash: 5113bd0dffe98a7af1c65af234caaefffff95184
+ms.sourcegitcommit: 0f93b37c39d807dec91f118aa671a3430c47a9ac
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30223521"
+ms.lasthandoff: 03/20/2019
+ms.locfileid: "30692591"
 ---
 # <a name="put-an-in-place-hold-on-a-soft-deleted-mailbox-in-exchange-online"></a>将就地保留置于 Exchange Online 中的软删除邮箱上
 
 了解如何为软删除邮箱创建就地保留，以将其变为非活动邮箱并保留其内容。然后可以使用 Microsoft 电子数据展示工具来搜索非活动邮箱。
   
 > [!NOTE]
-> 我们已推迟在 Exchange online 中创建新的就地保留的截止时间 (在 Office 365 和 Exchange Online 独立计划中)。但在今年下半年或明年早些时候, 你将无法在 Exchange Online 中创建新的就地保留。作为使用就地保留的替代方法, 您可以在 Office 365 安全&amp;合规中心中使用[电子数据展示案例](https://go.microsoft.com/fwlink/?linkid=780738)或[保留策略](https://go.microsoft.com/fwlink/?linkid=827811)。在取消新的就地保留之后, 您仍可以修改现有的就地保留, 并在 exchange Server 2013 中创建新的就地保留, 并且仍支持 exchange 混合部署。而且, 您仍可以将邮箱置于诉讼保留状态。 
+> 我们已推迟在 Exchange online 中创建新的就地保留的截止时间 (在 Office 365 和 Exchange Online 独立计划中)。 But later this year or early next year, you won't be able to create new In-Place Holds in Exchange Online. As an alternative to using In-Place Holds, you can use [eDiscovery cases](https://go.microsoft.com/fwlink/?linkid=780738) or [retention policies](https://go.microsoft.com/fwlink/?linkid=827811) in the Office 365 Security &amp; Compliance Center. After we decommission new In-Place Holds, you'll still be able to modify existing In-Place Holds, and creating new In-Place Holds in Exchange Server 2013 and Exchange hybrid deployments will still be supported. And, you'll still be able to place mailboxes on Litigation Hold. 
   
-您可能会遇到这样的情况: 某人已离开您的组织, 并且其相应的用户帐户和邮箱已被删除。随后, 您会发现邮箱中有需要保留的信息。您可以执行什么操作？如果已删除的邮箱保留期尚未过期, 则可以对已删除的邮箱 (称为软删除的邮箱) 设置就地保留, 并使其成为非活动邮箱。*非活动邮箱*用于在离开组织后保留以前的员工的电子邮件。非活动邮箱的内容将保留在软删除邮箱上被置为非活动状态时对其进行就地保留的持续时间。将邮箱设为非活动状态后, 可以使用 Exchange online 中的就地电子数据展示、Office 365 安全&amp;合规中心中的内容搜索或 SharePoint Online 中的电子数据展示中心来搜索邮箱。 
+You might have a situation where a person has left your organization, and their corresponding user account and mailbox were deleted. Afterwards, you realize there's information in the mailbox that needs to be preserved. What can you do? If the deleted mailbox retention period hasn't expired, you can put an In-Place Hold on the deleted mailbox (called a  soft-deleted mailbox ) and make it an inactive mailbox. An  *inactive mailbox*  is used to preserve a former employee's email after he or she leaves your organization. The contents of an inactive mailbox are preserved for the duration of the In-Place Hold that was is placed on the soft-deleted mailbox when it was made inactive. After the mailbox is made inactive, you can search the mailbox by using In-Place eDiscovery in Exchange Online, Content Search in the Office 365 Security &amp; Compliance Center, or the eDiscovery Center in SharePoint Online. 
   
 > [!NOTE]
 > 在 Exchange Online 中，软删除邮箱是指已删除但可以在特定保留期内恢复的邮箱。Exchange Online 中的软删除邮箱保留期为 30 天。这意味着该邮箱可以在删除后 30 天内进行恢复（或变为非活动邮箱）。30 天后，软删除邮箱将标记为永久删除并且无法恢复或变为非活动邮箱。 
   
 ## <a name="before-you-begin"></a>准备工作
 
-- 您必须在 Windows PowerShell 中使用**new-mailboxsearch** cmdlet 在软删除的邮箱上放置就地保留。您不能在 SharePoint Online 中使用 Exchange 管理中心 (EAC) 或电子数据展示中心。 
+- 您必须在 Windows PowerShell 中使用**new-mailboxsearch** cmdlet 在软删除的邮箱上放置就地保留。 不能使用 SharePoint Online 中的 Exchange 管理中心 (EAC) 或电子数据展示中心。 
     
 - 若要了解如何使用 Windows PowerShell 连接到 Exchange Online，请参阅[连接到 Exchange Online PowerShell](https://go.microsoft.com/fwlink/p/?linkid=396554)。
     
@@ -46,7 +45,7 @@ ms.locfileid: "30223521"
     
 ## <a name="put-an-in-place-hold-on-a-soft-deleted-mailbox-to-make-it-an-inactive-mailbox"></a>将就地保留置于软删除邮箱以使其变为非活动邮箱
 
-使用 **New-MailboxSearch** cmdlet 将软删除邮箱变为非活动邮箱。有关详细信息，请参阅 [New-MailboxSearch](http://technet.microsoft.com/library/74303b47-bb49-407c-a43b-590356eae35c.aspx)。
+使用**new-mailboxsearch** cmdlet 可将软删除的邮箱设置为非活动邮箱。 有关详细信息，请参阅 [New-MailboxSearch](http://technet.microsoft.com/library/74303b47-bb49-407c-a43b-590356eae35c.aspx)。
   
 1. 创建包含软删除邮箱的属性的变量。 
     
@@ -55,7 +54,7 @@ ms.locfileid: "30223521"
    ```
 
     > [!IMPORTANT]
-    > 在上一个命令中, 使用**DistinguishedName**或**ExchangeGuid**属性的值来标识软删除的邮箱。这些属性对于组织中的每个邮箱都是唯一的, 但是, 活动邮箱和软删除邮箱可能具有相同的主 SMTP 地址。 
+    > 在上一个命令中, 使用**DistinguishedName**或**ExchangeGuid**属性的值来标识软删除的邮箱。 这些属性对于组织中的每个邮箱都是唯一的，但活动邮箱和软删除邮箱可能具有相同的主 SMTP 地址。 
   
 2. 创建就地保留并将其置于软删除邮箱上。在此示例中，未指定保留持续时间。这意味着项目将被无限期保留或一直保留到将该保留从非活动邮箱中删除为止。
     
