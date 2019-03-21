@@ -17,12 +17,12 @@ ms.collection:
 - M365-security-compliance
 - Strat_O365_IP
 description: 了解有助于减少 Office 365 中垃圾邮件的最常用方法。
-ms.openlocfilehash: 5dac207393864f95f769ac205277b0c969f2fe32
-ms.sourcegitcommit: 7adfd8eda038cf25449bdf3df78b5e2fcc1999e7
+ms.openlocfilehash: d32cad18cf3972a667f2eb9a11b50d1b12e809a7
+ms.sourcegitcommit: b688d67935edb036658bb5aa1671328498d5ddd3
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "30357543"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "30670557"
 ---
 # <a name="how-to-reduce-spam-email-in-office-365"></a>如何减少 Office 365 中的垃圾邮件
 
@@ -56,6 +56,9 @@ ms.locfileid: "30357543"
 - **立即阻止发件人** 在需要立即阻止发件人的情况下，可通过电子邮件地址、域或 IP 地址来阻止。请参阅[使用 EAC 创建邮件流规则来阻止从某个域或用户发送的邮件](create-organization-wide-safe-sender-or-blocked-sender-lists-in-office-365.md#use-the-eac-to-create-a-mail-flow-rule-that-blocks-messages-sent-from-a-domain-or-user)。最终用户允许列表中的条目可以覆盖管理员设置的阻止。
     
 - **为用户启用“举报邮件”加载项**：强烈建议[为用户启用“举报邮件”加载项](enable-the-report-message-add-in.md)。作为管理员，还可以查看用户发送的反馈，并使用任意模式来调整可能导致问题出现的任何设置。
+- **启用 [DKIM](use-dkim-to-validate-outbound-email.md)**，以对出站邮件进行签名，从而增强域和租户内的安全性。
+ > [!TIP]
+> 启用 DKIM 后，必须启用 [DMARC](use-dkim-to-validate-outbound-email.md)，这是因为此记录将验证 DKIM 和 SPF 是否正常运行，而且欺骗电子邮件通常没有签名，因为对称私钥和公钥是由 O365 管理。
     
 ### <a name="for-users"></a>对于用户
 

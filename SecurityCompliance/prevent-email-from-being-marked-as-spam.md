@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 了解如何避免在 Office 365 中发生误报和将真实电子邮件标记为“垃圾邮件”。
-ms.openlocfilehash: 31977cee26b894e915744b76e717b829bd540fc0
-ms.sourcegitcommit: 6aa82374eef09d2c1921f93bda3eabeeb28aadeb
+ms.openlocfilehash: 65f7e927d64051e82a135234703e0c86123dab15
+ms.sourcegitcommit: b688d67935edb036658bb5aa1671328498d5ddd3
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/06/2019
-ms.locfileid: "30455094"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "30670647"
 ---
 # <a name="how-to-prevent-real-email-from-being-marked-as-spam-in-office-365"></a>如何避免在 Office 365 中将真实电子邮件标记为“垃圾邮件”
 
@@ -62,6 +62,10 @@ Office 365 中的许多垃圾邮件问题都可以这样解决：[查看电子�
 - **让 DNS 记录指向 Office 365**：所有域的邮件交换器 (MX) DNS 记录都必须指向 Office 365，且只能指向 Office 365，这样 EOP 才能提供保护。如果 MX 没有指向 Office 365，EOP 就不会为用户提供垃圾邮件筛选服务。若要使用其他服务或设备为域提供垃圾邮件筛选服务，应考虑在 EOP 中禁用垃圾邮件保护。为此，可创建将 SCL 值设为 -1 的邮件流规则。如果稍后决定使用 EOP，请务必删除邮件流规则。 
     
 - **为用户启用“举报邮件”加载项**：强烈建议[为用户启用“举报邮件”加载项](enable-the-report-message-add-in.md)。作为管理员，还可以查看用户发送的反馈，并使用任意模式来调整任何可能会导致问题发生的设置。
+
+- **确保用户在发送和接收电子邮件的允许限制范围内[，如](https://docs.microsoft.com/zh-CN/office365/servicedescriptions/exchange-online-service-description/exchange-online-limits)这篇文章**所述。
+
+ - **仔细检查批量级别**，如[这篇文章](bulk-complaint-level-values.md)所规定
     
 ### <a name="for-users"></a>对于用户
     
@@ -74,7 +78,7 @@ EOP 将会指定用户的安全发件人和收件人，但不是安全域。无�
 - **在 Outlook 中禁用 SmartScreen 筛选**：如果使用的是旧版 Outlook 桌面客户端，则你应禁用 SmartScreen 筛选功能（此功能已终止）。如果启用，可能会导致误报。如果运行的是更新后的桌面 Outlook 客户端，无需遵守此要求。
 
 ## <a name="troubleshooting-a-message-ends-up-in-the-junk-folder-even-though-eop-marked-the-message-as-non-spam"></a>疑难解答：即便 EOP 已将邮件标记为“非垃圾邮件”，邮件还是出现在“垃圾邮件”文件夹中
-<a name="TroubleshootingJunkEOPNonSpam"> </a>
+
 
 如果用户在 Outlook 中启用了“仅限安全列表：仅来自安全发件人列表或安全收件人列表的人员或域的邮件将传送至收件箱”，则所有电子邮件均会投递至某个发件人的垃圾邮件文件夹，除非该发件人位于收件人的安全发件人列表上。无论 EOP 是否已将邮件标记为“非垃圾邮件”，或者已在 EOP 中设立将邮件标记为“非垃圾邮件”的规则，情况均会如此。
   
@@ -90,7 +94,7 @@ EOP 将会指定用户的安全发件人和收件人，但不是安全域。无�
     
 2. 运行以下命令，以查看用户的垃圾邮件配置设置：
     
-  ```
+  ```Powershell
   Get-MailboxJunkEmailConfiguration example@contoso.com | fl TrustedListsOnly,ContactsTrusted,TrustedSendersAndDomains
   ```
 
