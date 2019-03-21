@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 ms.assetid: d14ae7c3-fcb0-4a03-967b-cbed861bb086
 description: 了解 Office 365 中的监督策略
-ms.openlocfilehash: 99957accb6a1f52f0e0a895fc96ef2b6ac0ac757
-ms.sourcegitcommit: 5eb664b6ecef94aef4018a75684ee4ae66c486bb
+ms.openlocfilehash: c22abdf315b2301ae9c63b26f548eff302df8e2a
+ms.sourcegitcommit: fec1010e405f14e792d650aee0312b78fced3343
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/08/2019
-ms.locfileid: "30492851"
+ms.lasthandoff: 03/21/2019
+ms.locfileid: "30720272"
 ---
 # <a name="supervision-policies-in-office-365"></a>Office 365 中的监督策略
 
@@ -99,7 +99,7 @@ Office 365 中的监督策略使您可以捕获指定审阅者进行检查的员
 
 #### <a name="custom-keyword-dictionaries"></a>自定义关键字词典
 
-配置自定义关键字词典 (或词典) 可以提供对组织或行业特有的关键字的简单管理, 并且每个字典最长可支持100000个术语。 如果需要, 您可以将多个自定义关键字词典应用于单个策略或每个策略包含一个关键字词典。 这些词典在监督策略中分配, 可从文件 (如 .csv 或 .txt 列表) 或可以[直接在 PowerShell cmdlet 中输入](create-a-keyword-dictionary.md)的列表中获得。
+配置自定义关键字词典 (或词典) 可以提供对组织或行业特有的关键字的简单管理, 并且每个字典最长可支持100000个术语。 如果需要, 您可以将多个自定义关键字词典应用于单个策略或每个策略包含一个关键字词典。 这些词典在监督策略中分配, 可从文件 (如 .csv 或 .txt 列表) 或可以[在合规中心中导入](create-a-keyword-dictionary.md)的列表中获得。
 
 #### <a name="conditional-settings"></a>条件设置
 
@@ -249,16 +249,17 @@ Office 365 中的监督策略使您可以捕获指定审阅者进行检查的员
 
 |**活动**|**关联命令**|
 |:-----|:-----|
-| 创建策略 | 新 SupervisoryReviewPolicy <br> 新 SupervisoryReviewRule |
-| 编辑策略 | SupervisoryReviewPolicy <br> SupervisoryReviewRule |
-| 删除策略| SupervisoryReviewPolicy |
+| 创建策略 | [新 SupervisoryReviewPolicyV2](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance/new-supervisoryreviewpolicyv2) <br> [新 SupervisoryReviewRule](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance/new-supervisoryreviewrule) |
+| 编辑策略 | [SupervisoryReviewPolicyV2](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance/set-supervisoryreviewpolicyv2) <br> [SupervisoryReviewRule](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance/set-supervisoryreviewrule) |
+| 删除策略| [SupervisoryReviewPolicyV2](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance/remove-supervisoryreviewpolicyv2) |
+| 查看策略 | [SupervisoryReviewPolicyV2](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance/get-supervisoryreviewpolicyv2) |
 
 可以使用统一审核日志搜索功能或通过使用[UnifiedAuditLog](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-audit/search-unifiedauditlog) PowerShell cmdlet 来检索审核。
 
 例如, 以下示例返回所有监管审核活动 (策略和规则) 的活动, 并列出每个活动的详细信息:
 
 ```
-Search-UnifiedAuditLog -StartDate $startDate -EndDate $endDate -RecordType DataGovernance -ResultSize 5000 | Where-Object {$_.Operations -like "*SupervisoryReview*"} | fl CreationDate,Operations,UserIds,AuditData 
+Search-UnifiedAuditLog -StartDate 3/1/2019 -EndDate ([System.DateTime]::Now) -RecordType DataGovernance -ResultSize 5000 | Where-Object {$_.Operations -like "*SupervisoryReview*"}  | fl CreationDate,Operations,UserIds,AuditData
 ```
 
 除了监督报告和日志中提供的信息之外, 您还可以使用[SupervisoryReviewActivity](https://docs.microsoft.com/powershell/module/exchange/reporting/get-supervisoryreviewactivity?view=exchange-ps) PowerShell cmdlet 来返回所有监察策略活动的完整详细列表。

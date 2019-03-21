@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 ms.assetid: d14ae7c3-fcb0-4a03-967b-cbed861bb086
 description: 设置监管审核策略以捕获员工通信以供审阅。
-ms.openlocfilehash: 2e321989934402b833d6190f65d696f4eb7919ca
-ms.sourcegitcommit: 547a05da067a8f66fdaccf1cc399afcf863f5a87
+ms.openlocfilehash: 76a5e7152b609944eeb2fe1390e204e1463a673b
+ms.sourcegitcommit: 9a69ea604b415af4fef4964a19a09f3cead5a2ce
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/07/2019
-ms.locfileid: "30474153"
+ms.lasthandoff: 03/20/2019
+ms.locfileid: "30701287"
 ---
 # <a name="configure-supervision-policies-for-your-organization"></a>配置组织的监督策略
 
@@ -62,26 +62,20 @@ ms.locfileid: "30474153"
 
 ## <a name="step-1---set-up-groups-for-supervision-optional"></a>步骤 1-设置监控组 (可选)
 
- 当您创建监督策略时, 您将确定谁将查看其通信, 以及谁将执行这些审阅。 在策略中, 您将使用电子邮件地址来标识个人或用户组。 若要简化设置, 请为将查看其通信的用户创建组, 并为将查看这些通信的用户分组。 如果使用的是组, 则可能需要多个 (例如, 如果要监视两个不同的人员组之间的通信, 或者如果要指定不受监督的组)。 有关其工作方式的详细信息, 请参阅[示例通讯组](configure-supervision-policies.md#GroupExample)。
-  
-若要监督组织中的组之间的通信, 请在 Exchange 管理中心内设置通讯组 (转到 "**收件人** \> **组**")。 有关设置通讯组的详细信息, 请参阅[管理通讯组](http://go.microsoft.com/fwlink/?LinkId=613635)
-  
-> [!NOTE]
-> 如果你愿意, 也可以将动态通讯组或安全组用于监督。 若要帮助您确定这些是否更适合您的组织需求, 请参阅[管理启用邮件的安全组](http://go.microsoft.com/fwlink/?LinkId=627033)和[管理动态通讯组](http://go.microsoft.com/fwlink/?LinkId=627058)。
-  
-<a name="GroupExample"> </a>
+ 当您创建监督策略时, 您将确定谁将查看其通信, 以及谁将执行这些审阅。 在策略中, 您将使用电子邮件地址来标识个人或用户组。 为简化您的设置, 您可以为要查看其通信的用户创建组, 并为将查看这些通信的用户分组。 如果您使用的是组, 则可能需要多个 (例如, 如果要监视两个不同的人员组之间的通信, 或者如果您想要指定一个不受监督的组)。
 
-### <a name="example-distribution-groups"></a>示例通讯组
+使用以下图表可帮助您在组织中配置监督策略的组:
 
-此示例包含已为名为 Contoso 金融国际的财务组织设置的通讯组。
-  
-在 Contoso Financial International 中，必须监督美国经纪人之间的通信抽样。但是，无需监督该组中的合规部主管。对于本例，我们可以创建以下组：
-  
-|**设置此通讯组**|**组地址（别名）**|**说明**|
+| **Policy 成员** | **支持的组** | **不受支持的组** |
 |:-----|:-----|:-----|
-|所有美国经纪人 | US_Brokers@Contoso.com | 此组包括为 Contoso 工作的所有在美国的经纪人的电子邮件地址。 |
-| 所有美国合规部主管 | US_Compliance@Contoso.com  | 此组包括为 Contoso 工作的所有在美国的合规部主管的电子邮件地址。 由于此组是所有基于美国的代理的子集, 因此您可以使用此别名将合规性监察官从监督策略中排除。 |
+|受监督用户 | 通讯组 <br> Office 365 组 | 动态通讯组 |
+| Reviewers | 启用邮件功能的安全组  | 通讯组 <br> 动态通讯组 |
   
+有关设置组的详细信息, 请参阅:
+- [创建和管理通讯组](https://docs.microsoft.com/Exchange/recipients-in-exchange-online/manage-distribution-groups/manage-distribution-groups)
+- [管理启用邮件的安全组](https://docs.microsoft.com/Exchange/recipients-in-exchange-online/manage-mail-enabled-security-groups)
+- [Office 365 组概述](https://docs.microsoft.com/office365/admin/create-groups/office-365-groups?view=o365-worldwide)
+
 <a name="MakeAvailable"> </a>
 
 ## <a name="step-2---make-supervision-available-in-your-organization-required"></a>第2步-使监督在你的组织可用 (必需)
@@ -118,43 +112,26 @@ ms.locfileid: "30474153"
 
 <a name="sensitiveinfo"> </a>
   
-## <a name="step-3---create-custom-sensitive-information-types-or-custom-keyword-dictionaries-optional"></a>步骤 3-创建自定义敏感信息类型或自定义关键字词典 (可选)
+## <a name="step-3---create-custom-sensitive-information-types-and-custom-keyword-dictionaries-optional"></a>步骤 3-创建自定义敏感信息类型和自定义关键字词典 (可选)
 
 若要从监督策略向导中的现有自定义敏感信息类型或自定义关键字词典中进行选择, 需要先创建这些项目。
 
+### <a name="create-custom-keyword-dictionarylexicon-optional"></a>创建自定义关键字词典/词典 (可选)
+
+使用文本编辑器 (如记事本), 创建一个新文件, 其中包含要在监督策略中监视的关键字术语。 确保每个术语都位于单独的行中, 并将该文件保存为**Unicode/utf-16 (小 Endian)** 格式。
+
 ### <a name="create-custom-sensitive-information-types"></a>创建自定义敏感信息类型
 
-1. 在 Office 365 Security & 合规中心中创建新的敏感信息类型。 导航到 "**分类** \> " "**敏感信息**类型", 然后按照新的 "**敏感信息类型" 向导**中的步骤操作。 你将在此处执行以下操作:
+1. 创建新的敏感信息类型, 并将您的自定义词典添加到 Office 365 Security & 合规中心。 导航到 "**分类** \> " "**敏感信息**类型", 然后按照新的 "**敏感信息类型" 向导**中的步骤操作。 你将在此处执行以下操作:
 
     - 定义敏感信息类型的名称和说明
     - 定义邻近度、置信度和主要模式元素
+    - 将自定义词典作为匹配元素的要求导入
     - 查看您的选择并创建敏感信息类型
 
-    有关更多详细信息, 请参阅[创建自定义敏感信息类型](create-a-custom-sensitive-information-type.md)。
-
-### <a name="create-custom-keyword-dictionarylexicon"></a>创建自定义关键字词典/词典
-
-1. 使用文本编辑器 (如记事本), 创建一个新文件, 其中包含要在监督策略中监视的关键字术语。 确保每个术语都位于单独的行中, 并将该文件保存为**Unicode/utf-16 (小 Endian)** 格式。
-2. 使用 PowerShell 将关键字文件导入到 Office 365 租户中。 若要使用 PowerShell 连接到 office 365, 请参阅[连接到 office 365 Security & 合规中心 PowerShell](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell)。
-
-    在使用 PowerShell 连接到 Office 365 之后, 请运行以下命令以导入关键字词典:
-
-    ```
-    $fileData = Get-Content "your keyword path and file name" -Encoding Byte -ReadCount 0
-
-    New-DlpKeywordDictionary -Name "Name for your keyword dictionary" -Description "optional description for your keyword dictionary" -FileData $fileData
-    ```
-    有关更多详细信息, 请参阅[Create a 关键字 dictionary](create-a-keyword-dictionary.md)。
-
-3. 在 Office 365 Security & 合规中心中创建新的敏感信息类型。 导航到 "**分类** \> " "**敏感信息**类型", 然后按照新的 "**敏感信息类型" 向导**中的步骤操作。 你将在此处执行以下操作:
-
-    - 定义敏感信息类型的名称和说明
-    - 添加您的自定义词典作为匹配元素的要求
-    - 查看您的选择并创建敏感信息类型
+    有关更多详细信息, 请参阅[创建自定义敏感信息类型](create-a-custom-sensitive-information-type.md)和[创建关键字词典](create-a-keyword-dictionary.md)
 
     创建自定义词典/词典之后, 可以使用[DlpKeywordDictionary](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-dlp/get-dlpkeyworddictionary) cmdlet 查看配置的关键字, 也可以使用[DlpKeywordDictionary](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-dlp/set-dlpkeyworddictionary) cmdlet 添加和删除术语。
-
-    有关更多详细信息, 请参阅[创建自定义敏感信息类型](create-a-custom-sensitive-information-type.md)。
 
 <a name="setupsuper"> </a>
 

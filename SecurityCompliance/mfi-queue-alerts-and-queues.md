@@ -9,12 +9,12 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: 37640c80-ce6f-47e2-afd1-bc1d3c50e637
 description: 管理员可以在 Office 365 Security & 合规中心的邮件流仪表板中了解队列通知和队列。
-ms.openlocfilehash: 6abfe9e8b3edfc6b0ca02e11a9713dcdb5c19b7c
-ms.sourcegitcommit: 6aa82374eef09d2c1921f93bda3eabeeb28aadeb
+ms.openlocfilehash: 642aa672cda124873eb0b2ca8e9294e64325f55d
+ms.sourcegitcommit: fec1010e405f14e792d650aee0312b78fced3343
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/06/2019
-ms.locfileid: "30454864"
+ms.lasthandoff: 03/21/2019
+ms.locfileid: "30720302"
 ---
 # <a name="queue-alerts-and-queues"></a>队列警报和队列
 
@@ -69,3 +69,7 @@ Office 365 将继续重试传递48小时。 在48小时后, 邮件将会过期, 
 单击**队列**中已排队的邮件数时, 将在弹出窗口中显示有关如何修复问题的队列详细信息和指南 (在队列警报的详细信息中单击 "**查看队列**" 后出现的同一浮出控件)。
 
 ![队列详细信息](media/4eb088fe-5dd9-4bf4-b959-c1bb2545c515.png)
+
+## <a name="see-also"></a>另请参阅
+
+有关邮件流仪表板中的其他邮件流见解的详细信息, 请参阅[Security & 合规性中心中的邮件流见解](mail-flow-insights.md)。

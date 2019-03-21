@@ -10,12 +10,12 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: f2738dec-41b0-43c4-b814-84c0a4e45c6d
 description: 管理员可以了解 Office 365 Security & 合规中心的邮件流仪表板中的出站和入站邮件流小组件。
-ms.openlocfilehash: 98806a699909056b4295911a031bb7b14233ede5
-ms.sourcegitcommit: 6aa82374eef09d2c1921f93bda3eabeeb28aadeb
+ms.openlocfilehash: b3e92228506267e674f2f428fab1ef54d5aee38e
+ms.sourcegitcommit: fec1010e405f14e792d650aee0312b78fced3343
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/06/2019
-ms.locfileid: "30454884"
+ms.lasthandoff: 03/21/2019
+ms.locfileid: "30720282"
 ---
 # <a name="outbound-and-inbound-mail-flow"></a>入站和出站邮件流
 
@@ -48,3 +48,7 @@ ms.locfileid: "30454884"
 您可以从下拉视图中选择 " **tls 使用状况**" 视图, 以查看通过连接器的邮件的 tls 保护细目。 与**tls 概述报告**报告一样, 此视图显示不同 TLS 版本的百分比。 对于 tls 1.0 连接, 确实需要将您的电子邮件服务器或合作伙伴的服务器升级或修复, 以避免在 TLS 1.0 支持最终在 Office 365 中被弃用时出现的任何问题。 有关详细信息, 请参阅[Office 365 中有关加密的技术参考详细](https://support.office.com/article/862cbe93-4268-4ef9-ba79-277545ecf221)信息。
 
 Insights 指向连接器, 有助于吸引你关注连接器的潜在 TLS 加密问题。 见解为:**没有任何 TLS 超过 25%** 或**tls 1.0 高于 50%**。 如果你看到这些见解, 则需要调查与连接器关联的电子邮件服务器, 或与合作伙伴组织联系。
+
+## <a name="see-also"></a>另请参阅
+
+有关邮件流仪表板中的其他邮件流见解的详细信息, 请参阅[Security & 合规性中心中的邮件流见解](mail-flow-insights.md)。

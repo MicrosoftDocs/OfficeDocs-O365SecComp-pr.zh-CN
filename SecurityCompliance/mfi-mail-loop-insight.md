@@ -9,12 +9,12 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: cb801985-3c89-4979-9c18-17829a4cb563
 description: 管理员可以了解 Office 365 Security & 合规性中心的邮件流仪表板中的邮件循环洞察力。
-ms.openlocfilehash: babf102e7645de26d4af0a947319856468ccf755
-ms.sourcegitcommit: 6aa82374eef09d2c1921f93bda3eabeeb28aadeb
+ms.openlocfilehash: 5fa7267d68183ea9f8117e420a769a2beaafdac1
+ms.sourcegitcommit: fec1010e405f14e792d650aee0312b78fced3343
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/06/2019
-ms.locfileid: "30455234"
+ms.lasthandoff: 03/21/2019
+ms.locfileid: "30720292"
 ---
 # <a name="mail-loop-insight"></a>邮件循环见解
 
@@ -25,3 +25,7 @@ ms.locfileid: "30455234"
 您可以单击 "**查看详细信息**" 来查看浮出控件窗格中的详细信息。 此外, 我们还确定了最常见的循环方案, 并提供了建议的操作 (如果有) 来修复循环。
 
 ![在邮件流仪表板中单击 "查看详细信息" 中的 "查看详细信息" 后的浮出控件窗格](media/f7e21300-c62f-41ec-853f-4a2775cd8aa7.png)
+
+## <a name="see-also"></a>另请参阅
+
+有关邮件流仪表板中的其他邮件流见解的详细信息, 请参阅[Security & 合规性中心中的邮件流见解](mail-flow-insights.md)。
