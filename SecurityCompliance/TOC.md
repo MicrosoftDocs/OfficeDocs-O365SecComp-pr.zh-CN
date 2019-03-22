@@ -88,12 +88,12 @@
 ### [观看 Microsoft 数据治理团队的视频](https://go.microsoft.com/fwlink/?linkid=867039)
 
 # [威胁防护](protect-against-threats.md)
+## [快速入门指南：设置 Office 365 高级威胁防护](checklist-atp-setup.md)
 ## [反垃圾邮件和反恶意软件保护](anti-spam-and-anti-malware-protection.md)
 ### [EOP 概述](videos-for-getting-started-with-protecting-your-email.md)
 ### [Office 365 电子邮件反垃圾邮件保护](anti-spam-protection.md)
 ### [如何防止真实电子邮件在 Office 365 中标记为垃圾邮件](prevent-email-from-being-marked-as-spam.md)
 ### [如何减少 Office 365 中的垃圾电子邮件](reduce-spam-email.md)
-### [防止电子邮件在 EOP 和 Office 365 中标记为垃圾邮件](prevent-email-from-being-marked-as-spam-0.md)
 ### [控制 Office 365 中的出站垃圾邮件](outbound-spam-controls.md)
 ### [使用 Office 365 垃圾邮件筛选器阻止垃圾电子邮件以免出现漏报问题](reduce-spam-email.md)
 ### [零时差自动清除 - 防范垃圾邮件和恶意软件](zero-hour-auto-purge.md)
@@ -369,7 +369,7 @@
 
 # [搜索审核日志](search-the-audit-log-in-security-and-compliance.md)
 ## [启用或禁用审核日志搜索](turn-audit-log-search-on-or-off.md)
-## [启用邮箱审核](enable-mailbox-auditing.md)
+## [管理邮箱审核](enable-mailbox-auditing.md)
 ## [审核日志中的详细属性](detailed-properties-in-the-office-365-audit-log.md)
 ## [使用审核日志对常见方案进行故障排除](auditing-troubleshooting-scenarios.md)
 ## [在审核日志中使用共享审核](use-sharing-auditing.md)
