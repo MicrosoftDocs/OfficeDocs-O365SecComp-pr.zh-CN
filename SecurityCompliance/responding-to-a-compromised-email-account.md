@@ -8,17 +8,18 @@ ms.topic: article
 ms.collection:
 - o365_security_incident_response
 - M365-security-compliance
+ms.custom: TopSMBIssues
 ms.service: O365-seccomp
 localization_priority: Priority
 search.appverid:
 - MET150
 description: 了解如何识别和响应 Office 365 中的受损电子邮件帐户
-ms.openlocfilehash: 6d5bed2172aaade02de617efa1c9c9c8d851e647
-ms.sourcegitcommit: 8657e003ab1ff49113f222d1ee8400eff174cb54
+ms.openlocfilehash: 5598b424c8175fd8cbb173d4b7b96839f64472dd
+ms.sourcegitcommit: f6073deec39a18581ed12abef18728417a52cdf4
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/16/2019
-ms.locfileid: "30656048"
+ms.lasthandoff: 03/22/2019
+ms.locfileid: "30747548"
 ---
 # <a name="responding-to-a-compromised-email-account-in-office-365"></a>响应 Office 365 中遭到入侵的电子邮件帐户
 
