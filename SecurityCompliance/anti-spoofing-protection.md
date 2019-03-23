@@ -13,14 +13,15 @@ ms.assetid: d24bb387-c65d-486e-93e7-06a4f1a436c0
 ms.collection:
 - M365-security-compliance
 - Strat_O365_IP
+ms.custom: TopSMBIssues
 localization_priority: Priority
 description: 本文介绍 Office 365 如何缓解使用伪造发件人域（即欺骗性域）的网络钓鱼攻击。 通过分析邮件并阻止无法使用标准电子邮件身份验证方法或其他发件人信誉技术进行身份验证的邮件，它可以实现这一目标。 实施此更改是为了减少 Office 365 中的组织所面临的网络钓鱼攻击的数量。
-ms.openlocfilehash: bcd5dd27ac0061277a47dcc5875990cc473cb768
-ms.sourcegitcommit: 0f93b37c39d807dec91f118aa671a3430c47a9ac
+ms.openlocfilehash: 8b308e4b5ce651632834884c12a4500989b43bf5
+ms.sourcegitcommit: f6073deec39a18581ed12abef18728417a52cdf4
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/20/2019
-ms.locfileid: "30693371"
+ms.lasthandoff: 03/22/2019
+ms.locfileid: "30747578"
 ---
 # <a name="anti-spoofing-protection-in-office-365"></a>Office 365 中的反欺骗保护
 
