@@ -166,7 +166,7 @@
 #### [Microsoft Dynamics 365 中的加密](office-365-encryption-in-microsoft-dynamics-365.md)
 #### [Azure 中的加密](office-365-azure-encryption.md)
 
-## [高级威胁防护（安全链接和安全附件）](office-365-atp.md)
+## [高级威胁防护](office-365-atp.md)
 ### [ATP 安全链接](atp-safe-links.md)
 #### [设置 ATP 安全链接策略](set-up-atp-safe-links-policies.md)
 #### [设置自定义“不重写”URL 列表](set-up-a-custom-do-not-rewrite-urls-list-with-atp.md)
@@ -183,7 +183,10 @@
 ## [威胁调查和响应](office-365-ti.md)
 ### [入门](get-started-with-ti.md)
 ### [威胁跟踪器](threat-trackers.md)
-### [使用安全与合规中心内的资源管理器](use-explorer-in-security-and-compliance.md)
+### [威胁资源管理器](use-explorer-in-security-and-compliance.md)
+#### [威胁资源管理器视图](threat-explorer-views.md)
+#### [查找和调查投递的恶意电子邮件](investigate-malicious-email-that-was-delivered.md)
+### [自动调查和响应](automated-investigation-response-office.md)
 ### [查看 ATP 报表](view-reports-for-atp.md)
 ### [Office 365 中的攻击模拟器](attack-simulator.md)
 ### [利用威胁调查和响应保障用户安全](keep-users-safe-with-office-365-ti.md)
@@ -319,6 +322,7 @@
 #### [高级电子数据展示（预览版）限制](compliance20/limits-ediscovery20.md)
 #### [支持的文件类型](compliance20/supported-filetypes-ediscovery20.md)
 #### [文档元数据字段](compliance20/document-metadata-fields.md)
+#### [疑难解答 AzCopy](compliance20/troubleshooting-azcopy.md)
 
 ## [Office 365 高级电子数据展示](office-365-advanced-ediscovery.md)
 ### [高级电子数据展示入门](quick-setup-for-advanced-ediscovery.md)
