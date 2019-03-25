@@ -3,7 +3,7 @@ title: 向 Office 365 中的个人数据应用标签
 ms.author: bcarter
 author: brendacarter
 manager: laurawi
-ms.date: 2/7/2018
+ms.date: ''
 ms.audience: ITPro
 ms.topic: overview
 ms.collection:
@@ -16,38 +16,42 @@ localization_priority: Priority
 search.appverid:
 - MET150
 description: 了解如何使用 Office 标签作为 GDPR 保护计划的一部分。
-ms.openlocfilehash: 9474d4b911936bca2c06c9660578790578fba4a2
-ms.sourcegitcommit: 15983a08a4ae9c2050344172c7e957830ce3867e
+ms.openlocfilehash: e31cd420fe476ace8031fc2c6e52158762814c7a
+ms.sourcegitcommit: ef27da3ea5340d6e7a2eaa1288e2e005ef8e4788
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "30373893"
+ms.lasthandoff: 03/23/2019
+ms.locfileid: "30789427"
 ---
 # <a name="apply-labels-to-personal-data-in-office-365"></a>向 Office 365 中的个人数据应用标签
 
- 如果要使用 Office 标签作为 GDPR 保护计划的一部分，可使用此主题。现在可在 Office 365 安全与合规中心及 Azure 信息保护中创建标签。随着时间的推移，这些技术将整合为统一的标记和分类体验，届时将可以获得更多功能。
+ 如果你使用分类标签作为 GDPR 保护计划的一部分，请使用此主题。 
 
-若要使用标签保护 Office 365 中的个人数据，Microsoft 建议从 Office 标签开始。可以使用高级数据管理，根据敏感信息类型或其他条件自动应用标签。可以结合使用 Office 标签和数据丢失防护来应用保护。还可以将标签与电子数据展示和内容搜索结合使用。即将可以同时将标签和敏感信息类型与 Cloud App Security 结合使用，用于监视位于其他 SaaS 应用中的个人数据。
+如果要在 Office 365 中使用标签保护个人数据，Microsoft 建议你开始使用[保留标签](labels.md)。 借助保留标签，你可以：
+- 使用“高级数据治理”根据敏感信息类型或其他条件自动应用标签。
+-  使用具有数据丢失防护的保留标签来应用保护。 
+- 在电子数据展示和内容搜索中使用标签。 
+- 通过 Cloud App Security 使用标签和敏感信息类型来监控驻留在其他 SaaS 应用中的个人数据。
 
-目前，建议将 Azure 信息保护标签用于向本地和其他云服务及提供程序中的文件应用标签。同时还建议将它们用于 Office 365 中需要进行 Azure 权限管理 (Azure RMS) 加密以实现数据保护的文件，例如商业机密文件。
+目前建议使用[敏感度标签](sensitivity-labels.md)为本地和其他云服务及提供程序中的文件应用标签。 对于在 Office 365 中需要通过 Azure 信息保护 (AIP) 加密来保护数据的文件（如商业机密文件），也建议使用这些标签。
 
-目前对于 Office 365 中包含受 GDPR 制约的数据的文件，不建议使用 Azure 信息保护来应用 Azure RMS 加密。Office 365 服务目前无法读取 RMS 加密的文件。因此该服务无法查找这些文件中的敏感数据。
+目前，对于 Office 365 中包含受 GDPR 约束的数据的文件，建议不要使用 Azure 信息保护来应用加密。 Office 365 服务目前无法读入 AIP 加密的文件。 因此，该服务无法在这些文件中找到敏感数据。
 
-Azure 信息保护标签可应用于 Exchange Online 中的邮件，并且这些标签将与 Office 365 数据丢失防护协作。即将推出统一的分类和标记引擎，届时可以将相同的标签用于电子邮件和文件，包括自动标记和保护传输中的电子邮件。
+敏感度标签可以应用于 Exchange Online 中的邮件，并且这些标签可与 Office 365 数据丢失防护功能一起使用。 
 
 ![Office 365 标签和 Azure 信息保护标签](Media/Apply-labels-to-personal-data-in-Office-365-image1.png)
 
+
 在此图中：
 
--   将 Office 365 标签用于 SharePoint Online 和 OneDrive for Business 中的个人数据和高度监管的商业机密文件。
+-   在 SharePoint Online 和 OneDrive for Business 中为个人数据、严格监管的文件和商业机密文件使用保留标签。
 
--   将 Azure 信息保护 (AIP) 标签用于高度监管的商业机密文件、Exchange Online  电子邮件、其他 SaaS 服务中的文件、本地数据中心中的文件及其他云提供程序中的文件。
+-   为严格监管的文件和商业机密文件、Exchange Online 电子邮件、其他 SaaS 服务中的文件、本地数据中心内的文件以及其他云提供程序中的文件使用敏感度标签。
 
--   即将实现：两种标签类型将整合为统一的分类和标记体验。
 
-## <a name="use-office-labels-and-sensitive-information-types-across-microsoft-365-for-information-protection"></a>使用 Microsoft 365 中的 Office 标签和敏感信息类型进行信息保护
+## <a name="use-retention-labels-and-sensitive-information-types-across-microsoft-365-for-information-protection"></a>在 Microsoft 365 中使用保留标签和敏感信息类型进行信息保护
 
-下图显示了如何将 Office 标签和敏感信息类型用于标签策略、数据丢失防护策略和 Cloud App Security 策略。
+下图显示了如何在标签策略、数据丢失防护策略和 Cloud App Security 策略中使用保留标签和敏感信息类型。
 
 ![Office 标签和敏感信息类型](Media/Apply-labels-to-personal-data-in-Office-365-image2.png)
 
@@ -64,7 +68,7 @@ Azure 信息保护标签可应用于 Exchange Online 中的邮件，并且这些
 </thead>
 <tbody>
 <tr class="odd">
-<td align="left">Office 标签。示例：个人、公用、客户数据、HR 数据、机密、高度机密</td>
+<td align="left">保留标签。 示例：个人、公共、客户数据、人力资源数据、机密、高度机密</td>
 <td align="left"><p>自动将此标签 . . .</p>
 <p>客户数据</p>
 <p>. . . 应用于与这些敏感信息类型匹配的文档 . . .</p>
@@ -178,8 +182,8 @@ Azure 信息保护标签可应用于 Exchange Online 中的邮件，并且这些
 <p>请参阅<a href="https://support.office.com/en-ie/article/Give-users-access-to-the-Office-365-Security-Compliance-Center-2cfce2c8-20c5-47f9-afc4-24b059c1bd76">向用户授予对 Office 365 安全与合规中心的访问权限</a>。</p></td>
 </tr>
 <tr class="even">
-<td align="left"><p>创建 Office 标签。</p></td>
-<td align="left">转到安全与合规中心中的“分类”，选择标签，然后为环境创建标签。</td>
+<td align="left"><p>创建保留标签。</p></td>
+<td align="left">转到安全与合规中心的“分类”，选择“保留标签”，然后为你的环境创建标签。</td>
 </tr>
 <tr class="odd">
 <td align="left"><p>为标签创建自动应用策略。</p></td>

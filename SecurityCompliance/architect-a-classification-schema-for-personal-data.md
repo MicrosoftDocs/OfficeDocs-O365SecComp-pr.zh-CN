@@ -3,7 +3,7 @@ title: 为个人数据构建分类架构
 ms.author: bcarter
 author: brendacarter
 manager: laurawi
-ms.date: 2/7/2018
+ms.date: ''
 ms.audience: ITPro
 ms.topic: overview
 ms.collection:
@@ -16,12 +16,12 @@ localization_priority: Priority
 search.appverid:
 - MET150
 description: 确定组织是否使用标签作为 GDPR 计划的一部分。
-ms.openlocfilehash: be700d0b055346822ddd63c3c250fad048a7fce8
-ms.sourcegitcommit: 15983a08a4ae9c2050344172c7e957830ce3867e
+ms.openlocfilehash: 79c68b8340209c3cc3e3a7081a4075c31a112e80
+ms.sourcegitcommit: ef27da3ea5340d6e7a2eaa1288e2e005ef8e4788
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "30373863"
+ms.lasthandoff: 03/23/2019
+ms.locfileid: "30789437"
 ---
 # <a name="architect-a-classification-schema-for-personal-data"></a>为个人数据构建分类架构
 
@@ -45,13 +45,13 @@ ms.locfileid: "30373863"
 
 -   今后，这些类型将可用于 Cloud App Security，因此可以检测其他 SaaS 应用中的敏感信息。
 
-### <a name="option-2-use-sensitive-information-types--office-labels"></a>选项 2：使用敏感信息类型 + Office 标签
+### <a name="option-2-use-sensitive-information-types--retention-labels"></a>选项 2：使用敏感信息类型 + 保留标签
 
 -   将需要敏感信息类型将标签自动应用到符合 GDPR 的个人数据，因此，这些敏感信息类型是先决条件。
 
--   使用 Office 标签，可将符合 GDPR 的个人数据加入组织的更广泛数据管理计划。
+-   使用保留标签，可将符合 GDPR 的个人数据加入组织的更广泛数据管理计划。
 
--   今后，Office 标签将与 Azure 信息保护标签整合为统一的分类和标记引擎。
+
 
 ## <a name="develop-a-label-schema-that-includes-personal-data"></a>开发包含个人数据的标签架构
 
