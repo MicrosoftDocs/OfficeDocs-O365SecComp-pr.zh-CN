@@ -3,7 +3,7 @@ title: 在安全&amp;合规中心中使用威胁资源管理器
 ms.author: deniseb
 author: denisebmsft
 manager: laurawi
-ms.date: 03/10/2019
+ms.date: 03/21/2019
 ms.audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
@@ -15,124 +15,112 @@ ms.assetid: 82ac9922-939c-41be-9c8a-7c75b0a4e27d
 ms.collection:
 - M365-security-compliance
 description: 了解安全&amp;合规性中心中的资源管理器 (也称为 "威胁浏览器")。
-ms.openlocfilehash: 0c86792d8ed84b43b28bde31004dc95d2fa2b547
-ms.sourcegitcommit: 0f93b37c39d807dec91f118aa671a3430c47a9ac
+ms.openlocfilehash: 202898873bb9611c747aed335d295c749c7cd0fa
+ms.sourcegitcommit: a56128c7be5d59e976851c27301031e19fa1997d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/20/2019
-ms.locfileid: "30693611"
+ms.lasthandoff: 03/21/2019
+ms.locfileid: "30732255"
 ---
-# <a name="use-threat-explorer-in-the-security-amp-compliance-center"></a><span data-ttu-id="d66a7-103">在安全&amp;合规中心中使用威胁资源管理器</span><span class="sxs-lookup"><span data-stu-id="d66a7-103">Use Threat Explorer in the Security &amp; Compliance Center</span></span>
+# <a name="use-threat-explorer-in-the-security-amp-compliance-center"></a><span data-ttu-id="6751f-103">在安全&amp;合规中心中使用威胁资源管理器</span><span class="sxs-lookup"><span data-stu-id="6751f-103">Use Threat Explorer in the Security &amp; Compliance Center</span></span>
 
-<span data-ttu-id="d66a7-104">如果您的组织具有[Office 365 高级威胁防护计划 2](office-365-ti.md), 并且您具有所需的权限, 则可以使用威胁资源管理器来确定和分析威胁。</span><span class="sxs-lookup"><span data-stu-id="d66a7-104">If your organization has [Office 365 Advanced Threat Protection Plan 2](office-365-ti.md), and you have the necessary permissions, you can use Threat Explorer to identify and analyze threats.</span></span> <span data-ttu-id="d66a7-105">例如, 您可以识别和删除已传递的恶意电子邮件, 或查看 Office 365 安全功能捕获的恶意软件。</span><span class="sxs-lookup"><span data-stu-id="d66a7-105">For example, you can identify and delete malicious email that was delivered, or see malware that was caught by Office 365 security features.</span></span> <span data-ttu-id="d66a7-106">威胁资源管理器 (也称为浏览器) 是一种功能强大的近实时工具, 可帮助安全操作团队在安全&amp;合规中心中调查和响应威胁。</span><span class="sxs-lookup"><span data-stu-id="d66a7-106">Threat Explorer (also referred to as Explorer) is a powerful near real-time tool to help Security Operations teams investigate and respond to threats in the Security &amp; Compliance Center.</span></span>
+<span data-ttu-id="6751f-104">如果您的组织具有[Office 365 高级威胁防护计划 2](office-365-ti.md), 并且您具有所需的权限, 则可以使用威胁资源管理器来确定和分析威胁。</span><span class="sxs-lookup"><span data-stu-id="6751f-104">If your organization has [Office 365 Advanced Threat Protection Plan 2](office-365-ti.md), and you have the necessary permissions, you can use Threat Explorer to identify and analyze threats.</span></span> <span data-ttu-id="6751f-105">例如, 您可以识别和删除已传递的恶意电子邮件, 或查看 Office 365 安全功能捕获的恶意软件。</span><span class="sxs-lookup"><span data-stu-id="6751f-105">For example, you can identify and delete malicious email that was delivered, or see malware that was caught by Office 365 security features.</span></span> <span data-ttu-id="6751f-106">威胁资源管理器 (也称为浏览器) 是一种功能强大的近实时工具, 可帮助安全操作团队在安全&amp;合规中心中调查和响应威胁。</span><span class="sxs-lookup"><span data-stu-id="6751f-106">Threat Explorer (also referred to as Explorer) is a powerful near real-time tool to help Security Operations teams investigate and respond to threats in the Security &amp; Compliance Center.</span></span>
   
 ![转到 "威胁\>管理资源管理器"](media/cab32fa2-66f1-4ad5-bc1d-2bac4dbeb48c.png)
   
-<span data-ttu-id="d66a7-108">若要使用资源管理器, &amp;请在安全合规性中心中, 转到 "**威胁管理** \> **资源管理器**"。</span><span class="sxs-lookup"><span data-stu-id="d66a7-108">To use Explorer, in the Security &amp; Compliance Center, go to **Threat management** \> **Explorer**.</span></span>
+<span data-ttu-id="6751f-108">若要使用资源管理器, &amp;请在安全合规性中心中, 转到 "**威胁管理** \> **资源管理器**"。</span><span class="sxs-lookup"><span data-stu-id="6751f-108">To use Explorer, in the Security &amp; Compliance Center, go to **Threat management** \> **Explorer**.</span></span>
 
 > [!IMPORTANT]
-> <span data-ttu-id="d66a7-109">office 365 威胁智能现已成为 office 365 高级威胁防护计划 2, 以及其他威胁防护功能。</span><span class="sxs-lookup"><span data-stu-id="d66a7-109">Office 365 Threat Intelligence is now Office 365 Advanced Threat Protection Plan 2, along with additional threat protection capabilities.</span></span> <span data-ttu-id="d66a7-110">若要了解详细信息, 请参阅[office 365 高级威胁防护计划和定价](https://products.office.com/exchange/advance-threat-protection)以及[Office 365 高级威胁防护服务说明](https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description)。</span><span class="sxs-lookup"><span data-stu-id="d66a7-110">To learn more, see [Office 365 Advanced Threat Protection plans and pricing](https://products.office.com/exchange/advance-threat-protection) and the [Office 365 Advanced Threat Protection Service Description](https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description).</span></span>
+> <span data-ttu-id="6751f-109">office 365 威胁智能现已成为 office 365 高级威胁防护计划 2, 以及其他威胁防护功能。</span><span class="sxs-lookup"><span data-stu-id="6751f-109">Office 365 Threat Intelligence is now Office 365 Advanced Threat Protection Plan 2, along with additional threat protection capabilities.</span></span> <span data-ttu-id="6751f-110">若要了解详细信息, 请参阅[office 365 高级威胁防护计划和定价](https://products.office.com/exchange/advance-threat-protection)以及[Office 365 高级威胁防护服务说明](https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description)。</span><span class="sxs-lookup"><span data-stu-id="6751f-110">To learn more, see [Office 365 Advanced Threat Protection plans and pricing](https://products.office.com/exchange/advance-threat-protection) and the [Office 365 Advanced Threat Protection Service Description](https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description).</span></span>
       
-## <a name="explorer-overview"></a><span data-ttu-id="d66a7-111">Explorer 概述</span><span class="sxs-lookup"><span data-stu-id="d66a7-111">Explorer overview</span></span>
+## <a name="explorer-overview"></a><span data-ttu-id="6751f-111">Explorer 概述</span><span class="sxs-lookup"><span data-stu-id="6751f-111">Explorer overview</span></span>
 
-<span data-ttu-id="d66a7-112">资源管理器显示有关 Office 365 中的电子邮件和文件中可疑的恶意软件和网络钓鱼的信息, 以及组织中的其他安全威胁和风险。</span><span class="sxs-lookup"><span data-stu-id="d66a7-112">Explorer displays information about suspected malware and phish in email and files in Office 365, as well as other security threats and risks to your organization.</span></span> <span data-ttu-id="d66a7-113">首次打开资源管理器时, 默认视图将显示过去7天内的电子邮件恶意软件检测。</span><span class="sxs-lookup"><span data-stu-id="d66a7-113">When you first open Explorer, the default view shows email malware detections for the past 7 days.</span></span> <span data-ttu-id="d66a7-114">资源管理器还可以显示 Office 365 中的安全保护功能, 包括[安全链接](atp-safe-links.md)和[安全附件](atp-safe-attachments.md), 并且可以修改以显示过去30天的数据。</span><span class="sxs-lookup"><span data-stu-id="d66a7-114">Explorer can also show security protection features in Office 365, including [Safe Links](atp-safe-links.md) and [Safe Attachments](atp-safe-attachments.md) and can be modified to show data for the past 30 days.</span></span> <span data-ttu-id="d66a7-115">如果你有 Office 365 的试用订阅高级威胁防护计划2或 Office 365 E5, 你将只能看到过去7天的检测和电子邮件数据。</span><span class="sxs-lookup"><span data-stu-id="d66a7-115">If you have a trial subcription for Office 365 Advanced Threat Protection Plan 2 or Office 365 E5, you will only see detections and email data for the past 7 days.</span></span>
-  
-![资源管理器显示有关主要恶意软件和目标用户的信息](media/8e8c1582-d6f4-4521-8591-686a1cb01f7e.png)
-  
-<span data-ttu-id="d66a7-117">使用 "视图" 菜单更改要显示的信息。</span><span class="sxs-lookup"><span data-stu-id="d66a7-117">Use the View menu to change what information is displayed.</span></span>
-  
-![浏览器的视图菜单](media/2bb34f58-555f-4967-ba55-740334ef1f8e.png)
-  
-<span data-ttu-id="d66a7-119">资源管理器具有几个筛选和查询功能, 这些功能使您能够深入了解详细信息, 如主要目标用户、主要恶意软件系列、检测技术等。</span><span class="sxs-lookup"><span data-stu-id="d66a7-119">Explorer has several filtering and querying capabilities that enable you to drill into details, such as top targeted users, top malware families, detection technology and more.</span></span> <span data-ttu-id="d66a7-120">每种报告都提供了查看和浏览数据的各种方式。</span><span class="sxs-lookup"><span data-stu-id="d66a7-120">Each kind of report offers a variety of ways to view and explore data.</span></span>
+<span data-ttu-id="6751f-112">如果您的组织具有[Office 365 威胁调查和响应功能](office-365-ti.md)(这包括在 ATP 计划2中), 并且您具有必要的权限, 则可以使用威胁浏览器 (也称为 "资源管理器") 来识别和分析威胁。</span><span class="sxs-lookup"><span data-stu-id="6751f-112">If your organization has [Office 365 Threat investigation and response capabilities](office-365-ti.md) (this is included in ATP Plan 2), and you have the necessary permissions, you can use Threat Explorer (also referred to as Explorer) to identify and analyze threats.</span></span> <span data-ttu-id="6751f-113">(在安全&amp;合规性中心中, 转到 "**威胁管理** \> **资源管理器**"。)</span><span class="sxs-lookup"><span data-stu-id="6751f-113">(In the Security &amp; Compliance Center, go to **Threat management** \> **Explorer**.)</span></span>
 
-> [!IMPORTANT]
-> <span data-ttu-id="d66a7-121">不要在浏览器中使用通配符, 如星号 (\*) 或问号 (？)。</span><span class="sxs-lookup"><span data-stu-id="d66a7-121">Do not use wildcard characters, such as an asterisk (\*) or a question mark (?), with Explorer.</span></span> <span data-ttu-id="d66a7-122">当您在 "主题" 字段中搜索电子邮件时, 资源管理器将执行部分匹配并生成类似于通配符搜索的结果。</span><span class="sxs-lookup"><span data-stu-id="d66a7-122">When you search on the Subject field for email messages, Explorer will perform partial matching and yield results similar to a wildcard search.</span></span>
-
-## <a name="email--malware"></a><span data-ttu-id="d66a7-123">电子\>邮件恶意软件</span><span class="sxs-lookup"><span data-stu-id="d66a7-123">Email \> Malware</span></span>
-
-<span data-ttu-id="d66a7-124">此视图显示标识为包含恶意软件的电子邮件。</span><span class="sxs-lookup"><span data-stu-id="d66a7-124">This view shows email messages identified as containing malware.</span></span>  
-
-<span data-ttu-id="d66a7-125">在图表中查看由恶意软件系列、发件人域、发件人 IP、保护状态 (由 Office 365 中的威胁防护功能和策略执行的操作) 和检测技术 (检测到恶意软件) 的信息。</span><span class="sxs-lookup"><span data-stu-id="d66a7-125">View information in the chart by malware family, sender domain, sender IP, protection status (actions taken by your threat protection features and policies in Office 365), and detection technology (how the malware was detected).</span></span>  
-
-![查看检测到的恶意软件的相关数据](media/d11dc568-b091-4159-b261-df13d76b520b.png)         
-
-<span data-ttu-id="d66a7-127">在图表下方, 查看有关主要恶意软件系列、主要目标用户和特定邮件的详细信息的详细信息。</span><span class="sxs-lookup"><span data-stu-id="d66a7-127">Below the chart, view details about top malware families, top targeted users, and more details about specific messages.</span></span> 
-
-## <a name="email--phish"></a><span data-ttu-id="d66a7-128">电子\>邮件网络钓鱼</span><span class="sxs-lookup"><span data-stu-id="d66a7-128">Email \> Phish</span></span>
-
-<span data-ttu-id="d66a7-129">此视图显示被标识为 "仿冒尝试" 的电子邮件。</span><span class="sxs-lookup"><span data-stu-id="d66a7-129">This view shows email messages identified as phishing attempts.</span></span>  
-
-<span data-ttu-id="d66a7-130">按发件人域、发件人 IP 和保护状态查看信息 (由 Office 365 中的威胁防护功能和策略执行的操作)。</span><span class="sxs-lookup"><span data-stu-id="d66a7-130">View information by sender domain, sender IP, and protection status (actions taken by your threat protection features and policies in Office 365).</span></span> 
-
-![查看标识为 "仿冒尝试" 的电子邮件的相关数据](media/2e3f97fa-2b99-47f9-afd6-216d10633c50.png) 
-
-<span data-ttu-id="d66a7-132">在图表下方, 查看有关特定邮件的更多详细信息。</span><span class="sxs-lookup"><span data-stu-id="d66a7-132">Below the chart, view more details about specific messages.</span></span> 
-
-## <a name="email--user-reported"></a><span data-ttu-id="d66a7-133">电子\>邮件用户报告</span><span class="sxs-lookup"><span data-stu-id="d66a7-133">Email \> User-reported</span></span>
-
-<span data-ttu-id="d66a7-134">此视图显示用户已报告为垃圾邮件、非垃圾邮件或仿冒电子邮件的电子邮件。</span><span class="sxs-lookup"><span data-stu-id="d66a7-134">This view shows email that users have reported as junk, not junk, or phishing email.</span></span>  
-
-<span data-ttu-id="d66a7-135">按报告类型查看信息 (用户确定电子邮件是垃圾邮件, 而非垃圾邮件或网络钓鱼), 传递原因 (电子邮件发送到特定位置的原因 (如垃圾邮件筛选器策略、邮件流规则、阻止发件人列表、安全发件人列表)等)。</span><span class="sxs-lookup"><span data-stu-id="d66a7-135">View information by report type (the user's determination that the email was junk, not junk, or phish), and by delivery reason (reasons why email went to a specific location, such as a spam filter policy, a mail flow rule, a blocked-senders list, a safe-senders list, etc.).</span></span>  
-
-![查看报告为垃圾邮件、非垃圾邮件或网络钓鱼的电子邮件用户的相关数据](media/255acd04-0d07-4b29-82af-5060a60c20ab.png)  
-
-<span data-ttu-id="d66a7-137">在图表下方, 查看有关特定电子邮件 (如主题行、发件人的 IP 地址、将邮件报告为垃圾邮件、非垃圾邮件或网络钓鱼的用户) 的更多详细信息。</span><span class="sxs-lookup"><span data-stu-id="d66a7-137">Below the chart, view more details about specific email messages, such as subject line, the sender's IP address, the user that reported the message as junk, not junk, or phish, and more.</span></span> 
-
-## <a name="email--all-mail"></a><span data-ttu-id="d66a7-138">通过\>电子邮件发送所有邮件</span><span class="sxs-lookup"><span data-stu-id="d66a7-138">Email \> All mail</span></span>
-
-<span data-ttu-id="d66a7-139">此视图显示电子邮件活动的一个全视图方式, 包括因网络钓鱼或恶意软件而被标识为恶意的电子邮件, 以及所有非恶意邮件 (普通电子邮件、垃圾邮件和批量邮件)。</span><span class="sxs-lookup"><span data-stu-id="d66a7-139">This views shows an all-up view of email activity, including email identified as malicious due to phishing or malware, as well all non-malicious mail (normal email, spam, and bulk mail).</span></span> 
-
-> [!NOTE]
-> <span data-ttu-id="d66a7-140">如果收到一条错误, 指示**要显示的数据过多**, 请添加筛选器, 并在必要时缩小正在查看的日期范围。</span><span class="sxs-lookup"><span data-stu-id="d66a7-140">If you get an error that reads **Too much data to display**, add a filter and, if necessary, narrow the date range you're viewing.</span></span> 
-
-<span data-ttu-id="d66a7-141">若要应用筛选器, 请选择 "**发件人**", 选择列表中的项目, 然后单击 "刷新" 按钮。</span><span class="sxs-lookup"><span data-stu-id="d66a7-141">To apply a filter, choose **Sender**, select an item in the list, and then click the Refresh button.</span></span> <span data-ttu-id="d66a7-142">在我们的示例中, 我们将**检测技术**用作筛选器 (有几种可用选项)。</span><span class="sxs-lookup"><span data-stu-id="d66a7-142">In our example, we used **Detection technology** as a filter (there are several options available).</span></span> <span data-ttu-id="d66a7-143">按发件人、发件人的域、收件人、主题、附件文件名、恶意软件系列、保护状态 (由 Office 365 中的威胁防护功能和策略执行的操作) 查看信息、检测技术 (检测恶意软件的方式) 以及多.</span><span class="sxs-lookup"><span data-stu-id="d66a7-143">View information by sender, sender's domain, recipients, subject, attachment filename, malware family, protection status (actions taken by your threat protection features and policies in Office 365), detection technology (how the malware was detected), and more.</span></span> 
-
-![查看检测技术检测到的电子邮件的相关数据](media/0c032eb3-6021-4174-9f06-ff8f30c245ca.png) 
-
-<span data-ttu-id="d66a7-145">在图表下方, 查看有关特定电子邮件的详细信息, 如主题行、收件人、发件人、状态等。</span><span class="sxs-lookup"><span data-stu-id="d66a7-145">Below the chart, view more details about specific email messages, such as subject line, recipient, sender, status, and so on.</span></span> 
-
-## <a name="content--malware"></a><span data-ttu-id="d66a7-146">内容\>恶意软件</span><span class="sxs-lookup"><span data-stu-id="d66a7-146">Content \> Malware</span></span>
-
-<span data-ttu-id="d66a7-147">此视图显示了 Office 365 高级威胁防护在 SharePoint Online、OneDrive for business 和 Microsoft 团队中被标识为恶意的文件。</span><span class="sxs-lookup"><span data-stu-id="d66a7-147">This view shows files that were identified as malicious by Office 365 Advanced Threat Protection in SharePoint Online, OneDrive for Business, and Microsoft Teams.</span></span>
-
-<span data-ttu-id="d66a7-148">查看恶意软件系列的信息、检测技术 (检测恶意软件的方式) 以及工作负荷 (OneDrive、SharePoint 或团队)。</span><span class="sxs-lookup"><span data-stu-id="d66a7-148">View information by malware family, detection technology (how the malware was detected), and workload (OneDrive, SharePoint, or Teams).</span></span> 
-
-![查看检测到的恶意软件的相关数据](media/d11dc568-b091-4159-b261-df13d76b520b.png)  
-
-<span data-ttu-id="d66a7-150">在图表下方, 查看有关特定文件的更多详细信息, 如附件文件名、工作负荷、文件大小、上次修改文件的时间等。</span><span class="sxs-lookup"><span data-stu-id="d66a7-150">Below the chart, view more details about specific files, such as attachment filename, workload, file size, who last modified the file, and more.</span></span> 
-  
-## <a name="new-click-to-filter-capabilities"></a><span data-ttu-id="d66a7-151">(新!)单击-筛选功能</span><span class="sxs-lookup"><span data-stu-id="d66a7-151">(New!) Click-to-filter capabilities</span></span>
-
-<span data-ttu-id="d66a7-152">浏览器的新增功能是可以通过单击进行筛选。</span><span class="sxs-lookup"><span data-stu-id="d66a7-152">New to Explorer is the ability to click to filter.</span></span> <span data-ttu-id="d66a7-153">当您单击图例中的项目时, 该项目将成为报表的筛选器。</span><span class="sxs-lookup"><span data-stu-id="d66a7-153">When you click an item in the legend, that item becomes a filter for the report.</span></span> <span data-ttu-id="d66a7-154">例如, 假设我们在资源管理器中查看恶意软件视图:</span><span class="sxs-lookup"><span data-stu-id="d66a7-154">For example, suppose we are looking at the Malware view in Explorer:</span></span>
-  
 ![转到 "威胁\>管理资源管理器"](media/cab32fa2-66f1-4ad5-bc1d-2bac4dbeb48c.png)
-  
-<span data-ttu-id="d66a7-156">单击此图表中的**ATP 沙箱**将生成如下所示的视图:</span><span class="sxs-lookup"><span data-stu-id="d66a7-156">Clicking **ATP Detonation** in this chart results in a view like this:</span></span> 
-  
-![筛选器已筛选为仅显示 ATO 沙箱结果](media/7241d7dd-27bc-467d-9db8-6e806c49df14.png)
-  
-<span data-ttu-id="d66a7-158">在此视图中, 我们现在正在查看由[Office 365 ATP 安全附件](atp-safe-attachments.md)触发的文件的数据。</span><span class="sxs-lookup"><span data-stu-id="d66a7-158">In this view, we are now looking at data for files that were detonated by [Office 365 ATP Safe Attachments](atp-safe-attachments.md).</span></span> <span data-ttu-id="d66a7-159">在图表下方, 我们可以查看包含由 ATP 安全附件检测到的附件的特定电子邮件的详细信息。</span><span class="sxs-lookup"><span data-stu-id="d66a7-159">Below the chart, we can see details about specific email messages that had attachments that were detected by ATP Safe Attachments.</span></span>
-  
-![包含检测到的附件的电子邮件的特定详细信息](media/c91fb05c-d1d4-4085-acc6-f7008a415c2a.png)
-  
-<span data-ttu-id="d66a7-161">选择一个或多个项目将激活 "**操作**" 菜单, 其中提供了几个选项, 可从中选择所选的项目。</span><span class="sxs-lookup"><span data-stu-id="d66a7-161">Selecting one or more items activates the **Actions** menu, which offers several choices from which to choose for the selected item(s).</span></span> 
-  
-![选择项会激活 "操作" 菜单](media/95f127a4-1b2a-4a76-88b9-096e3ba27d1b.png)
-  
-<span data-ttu-id="d66a7-163">通过单击并导航到特定详细信息的功能, 可以在调查威胁方面为你节省大量时间。</span><span class="sxs-lookup"><span data-stu-id="d66a7-163">The ability to filter in a click and navigate to specific details can save you a lot of time in investigating threats.</span></span>
-  
-## <a name="how-do-i-get-explorer"></a><span data-ttu-id="d66a7-164">如何获取资源管理器？</span><span class="sxs-lookup"><span data-stu-id="d66a7-164">How do I get Explorer?</span></span>
 
-<span data-ttu-id="d66a7-165">资源管理器包含在[Office 365 高级威胁防护计划 2](office-365-ti.md)中。</span><span class="sxs-lookup"><span data-stu-id="d66a7-165">Explorer is included in [Office 365 Advanced Threat Protection Plan 2](office-365-ti.md).</span></span> 
+<span data-ttu-id="6751f-115">本文介绍了您可以使用资源管理器执行的几项操作 (还有更多可能):</span><span class="sxs-lookup"><span data-stu-id="6751f-115">This article describes a few things you can do with Explorer (there are many more possibilities):</span></span>
 
-<span data-ttu-id="d66a7-166">若要查看和使用资源管理器, 您必须具有适当的权限, 如已授予安全管理员或安全阅读者的权限。</span><span class="sxs-lookup"><span data-stu-id="d66a7-166">You must have appropriate permissions, such as those granted to a security administrator or security reader, in order to view and use Explorer.</span></span> <span data-ttu-id="d66a7-167">若要了解详细信息, 请参阅[Office 365 安全&amp;合规中心中的权限](permissions-in-the-security-and-compliance-center.md)。</span><span class="sxs-lookup"><span data-stu-id="d66a7-167">To learn more, see [Permissions in the Office 365 Security &amp; Compliance Center](permissions-in-the-security-and-compliance-center.md).</span></span>
-  
-## <a name="related-topics"></a><span data-ttu-id="d66a7-168">相关主题</span><span class="sxs-lookup"><span data-stu-id="d66a7-168">Related topics</span></span>
+- <span data-ttu-id="6751f-116">[查看在电子邮件中检测到的恶意软件](#see-malware-detected-in-email-by-technology), 以及威胁防护技术 (反恶意软件保护、ATP 安全附件等)</span><span class="sxs-lookup"><span data-stu-id="6751f-116">[See what kinds of malware were detected in email](#see-malware-detected-in-email-by-technology), and by threat protection technology (anti-malware protection, ATP Safe Attachments, etc.)</span></span>
 
-[<span data-ttu-id="d66a7-169">Office 365 安全&amp;合规中心中的报告和见解</span><span class="sxs-lookup"><span data-stu-id="d66a7-169">Reports and insights in the Office 365 Security &amp; Compliance Center</span></span>](reports-and-insights-in-security-and-compliance.md)
-  
-[<span data-ttu-id="d66a7-170">查找并调查已传递的恶意电子邮件 (Office 365 威胁 Invesitgation and Response)</span><span class="sxs-lookup"><span data-stu-id="d66a7-170">Find and investigate malicious email that was delivered (Office 365 Threat Invesitgation and Response)</span></span>](investigate-malicious-email-that-was-delivered.md)
-  
-[<span data-ttu-id="d66a7-171">Office 365 中的反垃圾邮件和反恶意软件保护</span><span class="sxs-lookup"><span data-stu-id="d66a7-171">Anti-spam and anti-malware protection in Office 365</span></span>](anti-spam-and-anti-malware-protection.md)
-  
+- <span data-ttu-id="6751f-117">[查看有关仿冒链接 (url) 的数据](#view-data-about-phishing-urls-and-click-verdict), 以及单击 verdicts 的内容 (阻止、允许或访问的 url (无论是警告)</span><span class="sxs-lookup"><span data-stu-id="6751f-117">[View data about phishing links (URLs)](#view-data-about-phishing-urls-and-click-verdict), and what the click verdicts were (URLs blocked, allowed, or visited despite warnings)</span></span>
 
+- <span data-ttu-id="6751f-118">[查看被报告为垃圾邮件、非垃圾邮件或网络钓鱼的电子](#review-email-messages-reported-by-users)邮件, 并确定任何趋势 (例如, 报告为网络钓鱼的邮件数大于常规邮件数)</span><span class="sxs-lookup"><span data-stu-id="6751f-118">[Review email messages that were reported as Junk, Not Junk, or Phishing](#review-email-messages-reported-by-users), and identify any trends (such as a larger than usual number of messages reported as Phish)</span></span> 
+
+## <a name="see-malware-detected-in-email-by-technology"></a><span data-ttu-id="6751f-119">查看电子邮件中的技术检测到恶意软件</span><span class="sxs-lookup"><span data-stu-id="6751f-119">See malware detected in email by technology</span></span>
+
+<span data-ttu-id="6751f-120">假设您想要查看在电子邮件中检测到的恶意软件, 以及 Office 365 中的哪种技术。</span><span class="sxs-lookup"><span data-stu-id="6751f-120">Suppose you want to see malware that was detected in email, and by what technology in Office 365.</span></span> <span data-ttu-id="6751f-121">为此, 请使用资源管理器的[电子邮件 > 恶意软件](threat-explorer-views.md#email--malware)视图。</span><span class="sxs-lookup"><span data-stu-id="6751f-121">To do this, use the [Email > Malware](threat-explorer-views.md#email--malware) view of Explorer.</span></span>
+
+1. <span data-ttu-id="6751f-122">在 "Office 365 安全 & 合规中心 ([https://protection.office.com](https://protection.office.com))" 中, 选择 "**威胁管理** > **资源管理器**"。</span><span class="sxs-lookup"><span data-stu-id="6751f-122">In the Office 365 Security & Compliance Center ([https://protection.office.com](https://protection.office.com)), choose **Threat management** > **Explorer**.</span></span>
+2. <span data-ttu-id="6751f-123">在 "**视图**" 菜单中, 选择 "**电子邮件** > **恶意软件**"。</span><span class="sxs-lookup"><span data-stu-id="6751f-123">In the **View** menu, choose **Email** > **Malware**.</span></span><br/><span data-ttu-id="6751f-124">![浏览器的视图菜单](media/ExplorerViewEmailMalwareMenu.png)</span><span class="sxs-lookup"><span data-stu-id="6751f-124">![View menu for Explorer](media/ExplorerViewEmailMalwareMenu.png)</span></span><br/>
+3. <span data-ttu-id="6751f-125">单击 "**发件人**", 然后选择 "**基本** > **检测技术**"。</span><span class="sxs-lookup"><span data-stu-id="6751f-125">Click **Sender**, and then choose **Basic** > **Detection technology**.</span></span><br/><span data-ttu-id="6751f-126">您的检测技术现在可用作报告的筛选器。</span><span class="sxs-lookup"><span data-stu-id="6751f-126">Your detection technologies are now available as filters for the report.</span></span><br/><span data-ttu-id="6751f-127">![恶意软件检测技术](media/ExplorerEmailMalwareDetectionTech.png)</span><span class="sxs-lookup"><span data-stu-id="6751f-127">![Malware detection technologies](media/ExplorerEmailMalwareDetectionTech.png)</span></span><br/> 
+4. <span data-ttu-id="6751f-128">选择一个选项, 然后单击 "刷新" 按钮以应用该筛选器。</span><span class="sxs-lookup"><span data-stu-id="6751f-128">Select an option, and then click the Refresh button to apply that filter.</span></span><br/>![选定的检测技术](media/ExplorerEmailMalwareDetectionTechATP.png)<br/> 
+
+<span data-ttu-id="6751f-130">报告将刷新, 以显示使用您选择的技术选项在电子邮件中检测到恶意软件的结果。</span><span class="sxs-lookup"><span data-stu-id="6751f-130">The report refreshes to show the results malware detected in email, using the technology option you selected.</span></span> <span data-ttu-id="6751f-131">在这里, 你可以进行进一步分析。</span><span class="sxs-lookup"><span data-stu-id="6751f-131">From here, you can conduct further analysis.</span></span>
+
+## <a name="view-data-about-phishing-urls-and-click-verdict"></a><span data-ttu-id="6751f-132">查看有关仿冒 url 的数据, 然后单击 "判定"</span><span class="sxs-lookup"><span data-stu-id="6751f-132">View data about phishing URLs and click verdict</span></span>
+
+<span data-ttu-id="6751f-133">假设您要查看通过电子邮件中的 url 进行的网络钓鱼尝试, 包括允许、阻止和重写的 url 的列表。</span><span class="sxs-lookup"><span data-stu-id="6751f-133">Suppose you want to see phishing attempts through URLs in email, including a list of URLs that were allowed, blocked, and overridden.</span></span> <span data-ttu-id="6751f-134">为此, 请使用资源管理器的[电子邮件 > 网络钓鱼](threat-explorer-views.md#email--phish)视图。</span><span class="sxs-lookup"><span data-stu-id="6751f-134">To do this, use the [Email > Phish](threat-explorer-views.md#email--phish) view of Explorer.</span></span>
+
+1. <span data-ttu-id="6751f-135">在 "Office 365 安全 & 合规中心 ([https://protection.office.com](https://protection.office.com))" 中, 选择 "**威胁管理** > **资源管理器**"。</span><span class="sxs-lookup"><span data-stu-id="6751f-135">In the Office 365 Security & Compliance Center ([https://protection.office.com](https://protection.office.com)), choose **Threat management** > **Explorer**.</span></span>
+2. <span data-ttu-id="6751f-136">在 "**视图**" 菜单中, 选择 "**电子邮件** > **网络钓鱼**"。</span><span class="sxs-lookup"><span data-stu-id="6751f-136">In the **View** menu, choose **Email** > **Phish**.</span></span><br/><span data-ttu-id="6751f-137">![浏览器的视图菜单](media/ExplorerViewEmailPhishMenu.png)</span><span class="sxs-lookup"><span data-stu-id="6751f-137">![View menu for Explorer](media/ExplorerViewEmailPhishMenu.png)</span></span><br/>
+3. <span data-ttu-id="6751f-138">单击 "**发件人**", 然后选择 " **url** > **" 单击 "判定"**。</span><span class="sxs-lookup"><span data-stu-id="6751f-138">Click **Sender**, and then choose **URLs** > **Click verdict**.</span></span>
+4. <span data-ttu-id="6751f-139">选择一个或多个选项 (如 "已**阻止**" 和 "**阻止被覆盖**"), 然后单击 "**刷新**" 按钮以应用该筛选器。</span><span class="sxs-lookup"><span data-stu-id="6751f-139">Select one or more options, such as **Blocked** and **Block overridden**, and then click the **Refresh** button to apply that filter.</span></span><br/><span data-ttu-id="6751f-140">![url 并单击 "verdicts"](media/ThreatExplorerEmailPhishClickVerdictOptions.png)</span><span class="sxs-lookup"><span data-stu-id="6751f-140">![URLs and click verdicts](media/ThreatExplorerEmailPhishClickVerdictOptions.png)</span></span><br/>
+
+<span data-ttu-id="6751f-141">报告将刷新以显示检测到的电子邮件中被阻止的仿冒 url (或在出现警告的情况下访问) 以及电子邮件传递状态。</span><span class="sxs-lookup"><span data-stu-id="6751f-141">The report refreshes to show detected phishing URLs in email that were blocked (or visited despite a warning), along with email delivery status.</span></span> <span data-ttu-id="6751f-142">在这里, 你可以进行进一步分析。</span><span class="sxs-lookup"><span data-stu-id="6751f-142">From here, you can conduct further analysis.</span></span> <span data-ttu-id="6751f-143">例如, 在图表下方, 您可以看到在组织的电子邮件中被阻止的最高 url。</span><span class="sxs-lookup"><span data-stu-id="6751f-143">For example, below the chart, you can see the top URLs that were blocked in your organization's email.</span></span> 
+
+![阻止的资源管理器 url](media/ExplorerPhishClickVerdictURLs.png) 
+
+<span data-ttu-id="6751f-145">选择一个 URL 以查看更详细的信息。</span><span class="sxs-lookup"><span data-stu-id="6751f-145">Select a URL to view more detailed information.</span></span>
+
+## <a name="review-email-messages-reported-by-users"></a><span data-ttu-id="6751f-146">查看用户报告的电子邮件</span><span class="sxs-lookup"><span data-stu-id="6751f-146">Review email messages reported by users</span></span>
+
+<span data-ttu-id="6751f-147">假设您要查看组织中的用户通过使用[Outlook 和 web 上的 outlook 的报告消息外接程序](enable-the-report-message-add-in.md)报告为垃圾邮件、非垃圾邮件或网络钓鱼的电子邮件。</span><span class="sxs-lookup"><span data-stu-id="6751f-147">Suppose you want to see email messages that users in your organization have reported as Junk, Not Junk, or Phishing by using the [Report Message add-in for Outlook and Outlook on the web](enable-the-report-message-add-in.md).</span></span> <span data-ttu-id="6751f-148">为此, 请使用[电子邮件 >](threat-explorer-views.md#email--user-reported)浏览器的用户报告视图。</span><span class="sxs-lookup"><span data-stu-id="6751f-148">To do this, use the [Email > User-reported](threat-explorer-views.md#email--user-reported) view of Explorer.</span></span>
+
+1. <span data-ttu-id="6751f-149">在 "Office 365 安全 & 合规中心 ([https://protection.office.com](https://protection.office.com))" 中, 选择 "**威胁管理** > **资源管理器**"。</span><span class="sxs-lookup"><span data-stu-id="6751f-149">In the Office 365 Security & Compliance Center ([https://protection.office.com](https://protection.office.com)), choose **Threat management** > **Explorer**.</span></span>
+2. <span data-ttu-id="6751f-150">在 "**视图**" 菜单中, 选择 "**电子邮件** > **用户报告**"。</span><span class="sxs-lookup"><span data-stu-id="6751f-150">In the **View** menu, choose **Email** > **User-reported**.</span></span><br/><span data-ttu-id="6751f-151">![浏览器的视图菜单](media/ExplorerViewMenuEmailUserReported.png)</span><span class="sxs-lookup"><span data-stu-id="6751f-151">![View menu for Explorer](media/ExplorerViewMenuEmailUserReported.png)</span></span><br/>
+3. <span data-ttu-id="6751f-152">单击 "**发件人**", 然后选择 "**基本** > **报告类型**"。</span><span class="sxs-lookup"><span data-stu-id="6751f-152">Click **Sender**, and then choose **Basic** > **Report type**.</span></span>
+4. <span data-ttu-id="6751f-153">选择一个选项, 如 "**网络钓鱼**", 然后单击 "**刷新**" 按钮。</span><span class="sxs-lookup"><span data-stu-id="6751f-153">Select an option, such as **Phish**, and then click the **Refresh** button.</span></span> <br/><span data-ttu-id="6751f-154">![用户报告的网络钓鱼](media/EmailUserReportedReportType.png)</span><span class="sxs-lookup"><span data-stu-id="6751f-154">![User-reported phish](media/EmailUserReportedReportType.png)</span></span><br/> 
+
+<span data-ttu-id="6751f-155">报告将刷新, 以显示组织中的人员已报告为网络钓鱼尝试的电子邮件的相关数据。</span><span class="sxs-lookup"><span data-stu-id="6751f-155">The report refreshes to show data about email messages that people in your organization have reported as a phishing attempt.</span></span> <span data-ttu-id="6751f-156">您可以使用此信息进行进一步分析, 如有必要, 调整您的[ATP 反网络钓鱼策略](set-up-anti-phishing-policies.md)。</span><span class="sxs-lookup"><span data-stu-id="6751f-156">You can use this information to conduct further analysis, and if necessary, adjust your [ATP anti-phishing policies](set-up-anti-phishing-policies.md).</span></span>
+
+## <a name="theres-more"></a><span data-ttu-id="6751f-157">还有更多!</span><span class="sxs-lookup"><span data-stu-id="6751f-157">There's more!</span></span>
+
+<span data-ttu-id="6751f-158">除了本文中介绍的三个方案之外, 您还可以使用浏览器中提供的多种报告方案。</span><span class="sxs-lookup"><span data-stu-id="6751f-158">In addition to the three scenarios outlined in this article, you have many reporting scenarios available with Explorer.</span></span> <span data-ttu-id="6751f-159">以下是几个更多示例:</span><span class="sxs-lookup"><span data-stu-id="6751f-159">Here are a few more examples:</span></span>
+
+- [<span data-ttu-id="6751f-160">查找和调查投递的恶意电子邮件</span><span class="sxs-lookup"><span data-stu-id="6751f-160">Find and investigate malicious email that was delivered</span></span>](investigate-malicious-email-that-was-delivered.md)
+
+- [<span data-ttu-id="6751f-161">查看 SharePoint Online、OneDrive 和 Microsoft 团队中检测到的恶意文件</span><span class="sxs-lookup"><span data-stu-id="6751f-161">View malicious files detected in SharePoint Online, OneDrive, and Microsoft Teams</span></span>](malicious-files-detected-in-spo-odb-or-teams.md)
+
+- [<span data-ttu-id="6751f-162">获取有关威胁资源管理器中的视图的概述</span><span class="sxs-lookup"><span data-stu-id="6751f-162">Get an overview of the views in Threat Explorer</span></span>](threat-explorer-views.md)
+
+## <a name="how-to-get-explorer"></a><span data-ttu-id="6751f-163">如何获取资源管理器</span><span class="sxs-lookup"><span data-stu-id="6751f-163">How to get Explorer</span></span>
+
+<span data-ttu-id="6751f-164">资源管理器包含在[Office 365 高级威胁防护计划 2](office-365-ti.md)中。</span><span class="sxs-lookup"><span data-stu-id="6751f-164">Explorer is included in [Office 365 Advanced Threat Protection Plan 2](office-365-ti.md).</span></span> 
+
+<span data-ttu-id="6751f-165">若要查看和使用资源管理器, 您必须具有适当的权限, 例如, 授予安全管理员或安全阅读者的权限。</span><span class="sxs-lookup"><span data-stu-id="6751f-165">To view and use Explorer, you must have appropriate permissions, such as those granted to a security administrator or security reader.</span></span> 
+
+- <span data-ttu-id="6751f-166">对于安全&amp;合规中心, 您必须具有以下分配的角色之一:</span><span class="sxs-lookup"><span data-stu-id="6751f-166">For the Security &amp; Compliance Center, you must have one of the following roles assigned:</span></span>
+    - <span data-ttu-id="6751f-167">组织管理</span><span class="sxs-lookup"><span data-stu-id="6751f-167">Organization Management</span></span>
+    - <span data-ttu-id="6751f-168">安全管理员 (可在 Azure Active Directory 管理中心中分配 ([https://aad.portal.azure.com](https://aad.portal.azure.com)))</span><span class="sxs-lookup"><span data-stu-id="6751f-168">Security Administrator (this can be assigned in the Azure Active Directory admin center ([https://aad.portal.azure.com](https://aad.portal.azure.com)))</span></span>
+    - <span data-ttu-id="6751f-169">安全读者</span><span class="sxs-lookup"><span data-stu-id="6751f-169">Security Reader</span></span>
+
+- <span data-ttu-id="6751f-170">对于 exchange Online, 必须在 exchange 管理中心 ([https://outlook.office365.com/ecp](https://outlook.office365.com/ecp)) 或 PowerShell cmdlet 中分配以下角色之一 (请参阅[Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/exchange-online-powershell?view=exchange-ps)):</span><span class="sxs-lookup"><span data-stu-id="6751f-170">For Exchange Online, you must have one of the following roles assigned in either the Exchange admin center ([https://outlook.office365.com/ecp](https://outlook.office365.com/ecp)) or with PowerShell cmdlets (See [Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/exchange-online-powershell?view=exchange-ps)):</span></span>
+    - <span data-ttu-id="6751f-171">组织管理</span><span class="sxs-lookup"><span data-stu-id="6751f-171">Organization Management</span></span>
+    - <span data-ttu-id="6751f-172">仅限查看组织管理</span><span class="sxs-lookup"><span data-stu-id="6751f-172">View-only Organization Management</span></span>
+    - <span data-ttu-id="6751f-173">“仅供查看收件人”角色</span><span class="sxs-lookup"><span data-stu-id="6751f-173">View-Only Recipients role</span></span>
+    - <span data-ttu-id="6751f-174">合规性管理</span><span class="sxs-lookup"><span data-stu-id="6751f-174">Compliance Management</span></span>
+
+<span data-ttu-id="6751f-175">若要了解详细信息, 请参阅以下资源:</span><span class="sxs-lookup"><span data-stu-id="6751f-175">To learn more, see the following resources:</span></span>
+
+- [<span data-ttu-id="6751f-176">Permissions in the Office 365 Security &amp; Compliance Center</span><span class="sxs-lookup"><span data-stu-id="6751f-176">Permissions in the Office 365 Security &amp; Compliance Center</span></span>](permissions-in-the-security-and-compliance-center.md)
+
+- [<span data-ttu-id="6751f-177">Exchange Online 中的功能权限</span><span class="sxs-lookup"><span data-stu-id="6751f-177">Feature permissions in Exchange Online</span></span>](https://docs.microsoft.com/exchange/permissions-exo/feature-permissions)
+  
+## <a name="related-topics"></a><span data-ttu-id="6751f-178">相关主题</span><span class="sxs-lookup"><span data-stu-id="6751f-178">Related topics</span></span>
+
+- [<span data-ttu-id="6751f-179">自动化调查和响应 (空中)</span><span class="sxs-lookup"><span data-stu-id="6751f-179">Automated Investigation and Response (AIR)</span></span>](automated-investigation-response-office.md)
+
+- [<span data-ttu-id="6751f-180">威胁资源管理器视图</span><span class="sxs-lookup"><span data-stu-id="6751f-180">Threat Explorer views</span></span>](threat-explorer-views.md)
+
+- [<span data-ttu-id="6751f-181">查看 Office 365 高级威胁防护报告</span><span class="sxs-lookup"><span data-stu-id="6751f-181">View reports for Office 365 Advanced Threat Protection</span></span>](view-reports-for-atp.md)
