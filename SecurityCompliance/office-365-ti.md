@@ -3,7 +3,7 @@ title: Office 365 威胁调查和响应
 ms.author: deniseb
 author: denisebmsft
 manager: laurawi
-ms.date: 03/09/2019
+ms.date: 03/18/2019
 ms.audience: Admin
 ms.topic: overview
 ms.service: O365-seccomp
@@ -15,12 +15,12 @@ ms.assetid: 32405da5-bee1-4a4b-82e5-8399df94c512
 ms.collection:
 - M365-security-compliance
 description: 了解 office 365 中的威胁智能功能。高级威胁防护可帮助您研究组织的威胁、响应恶意软件、网络钓鱼和 Office 365 已代表您检测到的其他攻击, 并搜索威胁指示器.
-ms.openlocfilehash: 3d7bc40c4d5bec0c218adf093655cbbccde07ff9
-ms.sourcegitcommit: 0f93b37c39d807dec91f118aa671a3430c47a9ac
+ms.openlocfilehash: 6f7e6e0a49bb4035458af2e9d7e45fd954a1f9fc
+ms.sourcegitcommit: a56128c7be5d59e976851c27301031e19fa1997d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/20/2019
-ms.locfileid: "30693501"
+ms.lasthandoff: 03/21/2019
+ms.locfileid: "30732265"
 ---
 # <a name="office-365-threat-investigation-and-response"></a>Office 365 威胁调查和响应
 
@@ -49,7 +49,7 @@ Office 365 中的威胁调查和响应功能[高级威胁防护](office-365-atp.
 
 - **如果您的组织以前的 office 365 威胁情报 (但不是 office 365 高级威胁防护) 作为**其他 Office 365 订阅的外接程序, 您现在将拥有 office 365 高级威胁防护计划 2, 其中包括威胁调查和响应功能。 
 
-- **如果您的组织以前的 office 365 高级威胁防护 (而不是 office 365 威胁智能) 作为**其他 Office 365 订阅的附加项, 则您将拥有 office 365 高级威胁防护计划1。 这包括 Office 365 高级威胁防护计划 1, 但不包括威胁调查和响应功能。
+- **如果贵组织以前的 office 365 高级威胁防护 (而不是 office 365 威胁智能) 作为**其他 Office 365 订阅的附加项, 则现在将拥有 office 365 高级威胁防护计划1。 这包括 Office 365 高级威胁防护计划 1, 但不包括威胁调查和响应功能。
 
 有关详细信息, 请参阅[office 365 高级威胁防护计划和定价](https://products.office.com/exchange/advance-threat-protection)和[Office 365 高级威胁防护服务说明](https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description#whats-new-in-office-365-advanced-threat-protection-atp)
 
@@ -60,14 +60,20 @@ Office 365 中的威胁调查和响应功能[高级威胁防护](office-365-atp.
 - [开始使用威胁调查和响应](get-started-with-ti.md)(其中包括有关所需角色的信息) 
     
 - [了解威胁跟踪-新增和值得注意的事项](threat-trackers.md)
+
+- [使用 Office 365 威胁智能进行自动调查和响应 (空中)](automated-investigation-response-office.md)
+
+- [在安全&amp;合规中心中使用威胁资源管理器](use-explorer-in-security-and-compliance.md)
     
-- [查找并调查已传递的恶意电子邮件](investigate-malicious-email-that-was-delivered.md)
+- [查找和调查投递的恶意电子邮件](investigate-malicious-email-that-was-delivered.md)
     
 - [使用攻击模拟器](attack-simulator.md)
     
 - [将威胁调查和响应与 Windows Defender 高级威胁防护集成](integrate-office-365-ti-with-wdatp.md)
     
 ## <a name="related-topics"></a>相关主题
+
+[威胁资源管理器视图](threat-explorer-views.md)
 
 [防御 Office 365 中的威胁](protect-against-threats.md)
   

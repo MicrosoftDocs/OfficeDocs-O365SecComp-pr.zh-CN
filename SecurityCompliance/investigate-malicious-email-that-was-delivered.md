@@ -1,5 +1,5 @@
 ---
-title: 查找并调查提供的恶意电子邮件 (Office 365 威胁智能)
+title: 查找并调查已传递的恶意电子邮件 (Office 365 威胁调查和响应
 ms.author: deniseb
 author: denisebmsft
 manager: laurawi
@@ -15,12 +15,12 @@ ms.assetid: 8f54cd33-4af7-4d1b-b800-68f8818e5b2a
 ms.collection:
 - M365-security-compliance
 description: 了解如何使用威胁调查和响应功能查找和调查恶意电子邮件。
-ms.openlocfilehash: 167a587e16b464bcc7b45bca25e9f3adceda758c
-ms.sourcegitcommit: 0f93b37c39d807dec91f118aa671a3430c47a9ac
+ms.openlocfilehash: d19833a5d2acf69b79cca7e58c5796d967337c9f
+ms.sourcegitcommit: a56128c7be5d59e976851c27301031e19fa1997d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/20/2019
-ms.locfileid: "30692451"
+ms.lasthandoff: 03/21/2019
+ms.locfileid: "30732245"
 ---
 # <a name="find-and-investigate-malicious-email-that-was-delivered-office-365-advanced-threat-protection-plan-2"></a>查找并调查提供的恶意电子邮件 (Office 365 高级威胁防护计划 2)
 
@@ -37,7 +37,7 @@ ms.locfileid: "30692451"
     
 - 为你的组织启用了[Office 365 审核日志记录](turn-audit-log-search-on-or-off.md)。 
     
-- 您的组织具有为反垃圾邮件、反恶意软件、反网络钓鱼等定义的策略。 请参阅[Office 365 安全&amp;合规中心中的威胁管理](threat-management.md)。
+- 您的组织具有为反垃圾邮件、反恶意软件、反网络钓鱼等定义的策略。 请参阅[Office 365 高级威胁防护](office-365-atp.md)。
     
 - 您是 Office 365 全局管理员, 或者您具有安全管理员或在安全&amp;合规中心中分配的搜索和清除角色。 请参阅[Office 365 安全&amp;合规中心中的权限](permissions-in-the-security-and-compliance-center.md)。
     

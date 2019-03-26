@@ -1,7 +1,7 @@
 ---
 title: 使用敏感信息类型查找什么
-ms.author: stephow
-author: stephow-MSFT
+ms.author: deniseb
+author: denisebmsft
 manager: laurawi
 ms.date: 6/29/2018
 ms.audience: Admin
@@ -14,12 +14,12 @@ localization_priority: Normal
 ms.collection:
 - M365-security-compliance
 description: Office 365 安全&amp;合规中心中的数据丢失防护 (DLP) 包括可供您在 DLP 策略中使用的80敏感信息类型。 本主题列出了所有这些敏感信息类型，并显示 DLP 策略在检测到每种类型时查找的内容。
-ms.openlocfilehash: e9811b285e98a791570dc91e275cb5cead4f8bc9
-ms.sourcegitcommit: 6e8e2b43a4bea31c1e835c5b050824651c6a0094
+ms.openlocfilehash: d161435c75149183289cfbfd6abe79d55e371e31
+ms.sourcegitcommit: b688d67935edb036658bb5aa1671328498d5ddd3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/11/2019
-ms.locfileid: "30537639"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "30639189"
 ---
 # <a name="what-the-sensitive-information-types-look-for"></a>使用敏感信息类型查找什么
 
@@ -617,7 +617,7 @@ OR
 - localhost
 - 127.0.0。1
 - testacs。<!--no-hyperlink-->com
-- s-int.<!--no-hyperlink-->net
+- s-int。<!--no-hyperlink-->netmeeting
 
 ## <a name="azure-iaas-database-connection-string-and-azure-sql-connection-string"></a>azure IAAS 数据库连接字符串和 azure SQL 连接字符串
 
@@ -632,7 +632,7 @@ OR
 - 等号 (=)
 - 0-2 空白字符
 - 介于1-200 个字母、数字、符号、特殊字符或空格之间的任意组合
-- 字符串 "cloudapp"。<!--no-hyperlink-->com "," cloudapp。<!--no-hyperlink-->net "或" database。<!--no-hyperlink-->net "
+- 字符串 "cloudapp"。<!--no-hyperlink-->com "," cloudapp。<!--no-hyperlink-->net "或" database。<!--no-hyperlink-->netmeeting
 - 介于1-300 个字母、数字、符号、特殊字符或空格之间的任意组合
 - 字符串 "password"、"password" 或 "pwd"
 - 0-2 空白字符
@@ -677,7 +677,7 @@ OR
 - localhost
 - 127.0.0。1
 - testacs。<!--no-hyperlink-->com
-- s-int.<!--no-hyperlink-->net
+- s-int。<!--no-hyperlink-->netmeeting
 
 ## <a name="azure-iot-connection-string"></a>Azure IoT 连接字符串
 
@@ -692,7 +692,7 @@ OR
 - 等号 (=)
 - 0-2 空白字符
 - 介于1-200 个字母、数字、符号、特殊字符或空格之间的任意组合
-- 字符串 "azure 设备。<!--no-hyperlink-->net "
+- 字符串 "azure 设备。<!--no-hyperlink-->netmeeting
 - 介于1-200 个字母、数字、符号、特殊字符或空格之间的任意组合
 - 字符串 "SharedAccessKey"
 - 0-2 空白字符
@@ -737,7 +737,7 @@ OR
 - localhost
 - 127.0.0。1
 - testacs。<!--no-hyperlink-->com
-- s-int.<!--no-hyperlink-->net
+- s-int。<!--no-hyperlink-->netmeeting
 
 ## <a name="azure-publish-setting-password"></a>Azure 发布设置密码
 
@@ -788,7 +788,7 @@ OR
 - localhost
 - 127.0.0。1
 - testacs。<!--no-hyperlink-->com
-- s-int.<!--no-hyperlink-->net
+- s-int。<!--no-hyperlink-->netmeeting
 
 ## <a name="azure-redis-cache-connection-string"></a>Azure Redis 缓存连接字符串
 
@@ -798,7 +798,7 @@ OR
 
 ### <a name="pattern"></a>模式
 
-- 字符串 "redis"。<!--no-hyperlink-->net "
+- 字符串 "redis"。<!--no-hyperlink-->netmeeting
 - 介于1-200 个字母、数字、符号、特殊字符或空格之间的任意组合
 - 字符串 "password" 或 "pwd"
 - 0-2 空白字符
@@ -843,7 +843,7 @@ OR
 - localhost
 - 127.0.0。1
 - testacs。<!--no-hyperlink-->com
-- s-int.<!--no-hyperlink-->net
+- s-int。<!--no-hyperlink-->netmeeting
 
 ## <a name="azure-sas"></a>Azure sa
 
@@ -892,7 +892,7 @@ OR
 - 等号 (=)
 - 0-2 空白字符
 - 介于1-200 个字母、数字、符号、特殊字符或空格之间的任意组合
-- 字符串 "<!--no-hyperlink-->net "
+- 字符串 "<!--no-hyperlink-->netmeeting
 - 介于1-200 个字母、数字、符号、特殊字符或空格之间的任意组合
 - 字符串 "SharedAccessKey"
 - 0-2 空白字符
@@ -937,7 +937,7 @@ OR
 - localhost
 - 127.0.0。1
 - testacs。<!--no-hyperlink-->com
-- s-int.<!--no-hyperlink-->net
+- s-int。<!--no-hyperlink-->netmeeting
 
 ## <a name="azure-storage-account-key"></a>Azure 存储帐户密钥
 
@@ -1003,7 +1003,7 @@ OR
 - localhost
 - 127.0.0。1
 - testacs。<!--no-hyperlink-->com
-- s-int.<!--no-hyperlink-->net
+- s-int。<!--no-hyperlink-->netmeeting
 
 ## <a name="azure-storage-account-key-generic"></a>Azure 存储帐户密钥 (常规)
 
@@ -1171,7 +1171,7 @@ OR
 14 个数字，再加上分隔符：
 - 两个数字  
 - 一个点  
-- 三位数字 
+- 三个数字  
 - 一个点  
 - 三个数字（前 8 位数是注册号）  
 - 正斜杠  
@@ -2420,7 +2420,7 @@ DLP 策略 75% 确信在300个字符的邻近度内检测到此类型的敏感�
 
 ### <a name="keywords"></a>关键字
 
-None
+无
 
    
 ## <a name="eu-debit-card-number"></a>欧盟借记卡号
@@ -2923,7 +2923,7 @@ None
 
 ### <a name="keywords"></a>关键字
 
-None
+无
    
 ## <a name="france-passport-number"></a>法国护照号码
 
@@ -2992,7 +2992,7 @@ None
 
 必须匹配两种模式之一：
 - 13位数, 后跟一个空格, 后跟两个数字<br/>
-或者
+或
 - 15 个连续的数字
 
 ### <a name="checksum"></a>校验和
@@ -3511,9 +3511,9 @@ bnationalit
 ### <a name="pattern"></a>模式
 
 12 个数字：
-- 四个数字  
+- 四个数字 
 - 一个可选空格或短划线  
-- 四个数字  
+- 四个数字 
 - 一个可选空格或短划线  
 - 最后一个数字是校验位
 
@@ -3556,7 +3556,7 @@ DLP 策略 75% 确信在300个字符的邻近度内检测到此类型的敏感�
 - 一个点（可选）  
 - 六个数字，采用  DDMMYY 格式，代表出生日期  
 - 一个点（可选）  
-- 四位数字
+- 四个数字
 
 ### <a name="checksum"></a>校验和
 
@@ -3631,7 +3631,7 @@ ad, ae, al, at, az, ba, be, bg, bh, ch, cr, cy, cz, de, dk, do, ee, es, fi, fo, 
 
 ### <a name="keywords"></a>关键字
 
-None
+无
 
    
 ## <a name="ip-address"></a>IP 地址
@@ -4966,7 +4966,7 @@ DLP 策略 75% 确信在300个字符的邻近度内检测到此类型的敏感�
 
 ### <a name="keywords"></a>关键字
 
-None
+无
 
 ## <a name="sql-server-connection-string"></a>SQL Server 连接字符串
 
@@ -5042,7 +5042,7 @@ None
 - localhost
 - 127.0.0。1
 - testacs。<!--no-hyperlink-->com
-- s-int.<!--no-hyperlink-->net
+- s-int。<!--no-hyperlink-->netmeeting
 
 ## <a name="sweden-national-id"></a>瑞典国家 ID
 
