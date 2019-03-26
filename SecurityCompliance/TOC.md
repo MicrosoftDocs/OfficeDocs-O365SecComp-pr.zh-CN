@@ -3,13 +3,15 @@
 ## [配置 Office 365 租户以提高安全性](tenant-wide-setup-for-increased-security.md)
 ## [转到安全与合规中心](go-to-the-securitycompliance-center.md)
 ## [为新的 Microsoft 365 安全中心和 Microsoft 365 合规中心做好准备](microsoft-security-and-compliance.md)
+## [Microsoft 365 安全中心](overview-security-center.md)
+### [Microsoft 安全功能分数](microsoft-secure-score.md)
 ## [Office 365 安全功能分数](office-365-secure-score.md)
-## [Microsoft 安全功能分数](microsoft-secure-score.md)
 ## [安全与合规中心内的权限](permissions-in-the-security-and-compliance-center.md)
 ## [向用户授予对安全与合规中心的访问权限](grant-access-to-the-security-and-compliance-center.md)
 ## [安全仪表板概述](security-dashboard.md)
 ## [使用免费的 Azure Active Directory 订阅](use-your-free-azure-ad-subscription-in-office-365.md)
 ## [Office 365 中的安全与合规计划](plan-for-security-and-compliance.md)
+
 # 保护对数据和服务的访问
 ## [保护对 Office 365 数据和服务的访问](protect-access-to-data-and-services.md)
 
@@ -88,6 +90,8 @@
 ### [观看 Microsoft 数据治理团队的视频](https://go.microsoft.com/fwlink/?linkid=867039)
 
 # [威胁防护](protect-against-threats.md)
+## [在Microsoft 365 中寻找](hunting.md)
+## [通过威胁分析了解最新的攻击活动](latest-attack-campaigns.md)
 ## [快速入门指南：设置 Office 365 高级威胁防护](checklist-atp-setup.md)
 ## [反垃圾邮件和反恶意软件保护](anti-spam-and-anti-malware-protection.md)
 ### [EOP 概述](videos-for-getting-started-with-protecting-your-email.md)
@@ -380,6 +384,11 @@
 ## [在审核日志中搜索电子数据展示活动](search-for-ediscovery-activities-in-the-audit-log.md)
 
 # 监视安全性和合规性
+## [Microsoft 365 安全中心监视和报告功能](monitoring-and-reporting.md)
+### [监视和报告 Microsoft 365 安全中的标识](monitor-and-report-identities.md)
+### [监视 Microsoft 365 安全中的数据](monitor-data.md)
+### [监视 Microsoft 365 安全中的设备](monitor-devices.md)
+### [监视 Microsoft 365 安全中的应用](monitor-apps.md)
 ## [警报策略](alert-policies.md)
 ## [安全与合规中心内的智能报告和见解](reports-and-insights-in-security-and-compliance.md)
 ### [查看安全与合规中心内的电子邮件安全报告](view-email-security-reports.md)
