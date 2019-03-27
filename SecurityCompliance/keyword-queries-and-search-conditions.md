@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 ms.assetid: c4639c2e-7223-4302-8e0d-b6e10f1c3be3
 description: '了解可以使用 Office 365 安全&amp;合规中心中的内容搜索工具在 Exchange Online 邮箱和 SharePoint 或 OneDrive for business 网站中搜索的电子邮件和文件属性。  '
-ms.openlocfilehash: 478f0f7089046cea9a1650fc090e59fc056db8a9
-ms.sourcegitcommit: 8657e003ab1ff49113f222d1ee8400eff174cb54
+ms.openlocfilehash: ec8f5c049fbaaa6cc17049154774faa128d2f18d
+ms.sourcegitcommit: c0d4fe3e43e22353f30034567ade28330266bcf7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/16/2019
-ms.locfileid: "30639159"
+ms.lasthandoff: 03/27/2019
+ms.locfileid: "30900201"
 ---
 # <a name="keyword-queries-and-search-conditions-for-content-search"></a>内容搜索的关键字查询和搜索条件
 
@@ -87,7 +87,7 @@ ms.locfileid: "30639159"
 |LastModifiedTime|项目的上次更改日期。|`lastmodifiedtime>=05/01/2016`  <br/> `lastmodifiedtime>=05/10/2016 AND lastmodifiedtime<=06/1/2016`|第一个示例返回在2016年5月1日或之后更改的项。 第二个示例返回在5月1日、2016和6月1日之间更改的项目2016。|
 |ModifiedBy|上次更改项目的人员。 请务必对此属性使用用户的显示名称。|`modifiedby:"Garth Fort"`|由 Garth Fort 最后更改的所有项目。|
 |Path|SharePoint 或 OneDrive for business 网站中特定网站的路径 (URL)。  <br/> 若要返回在为 path 属性指定的网站中的文件夹中的项目, 您必须添加/\*到指定网站的 URL;例如,`path: "https://contoso.sharepoint.com/Shared Documents/*"`  <br/> <br/> **注意:** 使用该`Path`属性搜索 OneDrive 位置不会在搜索结果中返回媒体文件, 如 .png、tiff 或 .wav 文件。 在搜索查询中使用不同的 site 属性搜索 OneDrive 文件夹中的媒体文件。 <br/>|`path:"https://contoso-my.sharepoint.com/personal/garthf_contoso_com/"`  <br/> `path:"https://contoso-my.sharepoint.com/personal/garthf_contoso_com/*" AND filename:confidential`|第一个示例返回指定的 OneDrive for business 网站中的所有项目。 第二个示例返回指定网站 (和网站中的文件夹) 中的文档, 其中包含文件名中的 "保密" 一词。|
-|SharedWithUsersOWSUser|与指定用户共享并显示在用户的 OneDrive for business 网站中的 "**与我共享**" 页上的文档。 这些文档已与组织中的其他人员明确与指定的用户共享。 当您导出与使用 SharedWithUsersOWSUser 属性的搜索查询匹配的文档时, 文档将从与指定用户共享文档的人员的原始内容位置导出。 有关更多详细信息, 请参阅[搜索组织中共享的网站内容](keyword-queries-and-search-conditions.md#internal)。|`sharedwithusersowsuser:garthf`  <br/> `sharedwithusersowsuser:"garthf@contoso.com"`|这两个示例都将返回所有已与 Garth Fort 显式共享且显示在 Garth Fort 的 OneDrive for business 帐户中的 "**与我共享**" 页上的内部文档。|
+|SharedWithUsersOWSUser|与指定用户共享并显示在用户的 OneDrive for business 网站中的 "**与我共享**" 页上的文档。 这些文档已与组织中的其他人员明确与指定的用户共享。 当您导出与使用 SharedWithUsersOWSUser 属性的搜索查询匹配的文档时, 文档将从与指定用户共享文档的人员的原始内容位置导出。 有关更多详细信息, 请参阅[搜索组织中共享的网站内容](#searching-for-site-content-shared-within-your-organization)。|`sharedwithusersowsuser:garthf`  <br/> `sharedwithusersowsuser:"garthf@contoso.com"`|这两个示例都将返回所有已与 Garth Fort 显式共享且显示在 Garth Fort 的 OneDrive for business 帐户中的 "**与我共享**" 页上的内部文档。|
 |Site|组织中站点或站点组的 URL。|`site:"https://contoso-my.sharepoint.com"`  <br/> `site:"https://contoso.sharepoint.com/sites/teams"`|第一个示例返回组织中所有用户的 OneDrive for business 网站中的项目。 第二个示例返回所有团队网站中的项目。|
 |Size|邮件的大小（以字节为单位）。|`size>=1`  <br/> `size:1..10000`|第一个示例返回大于 1 字节的项目。第二个示例返回大小介于 1 到 10,000 字节之间的项目。|
 |标题|文档的标题。 Title 属性是在 Microsoft Office 文档中指定的元数据。 它不同于文档的文件名。|`title:"communication plan"`|Office 文档的 Title 元数据属性中包含短语“communication plan”的任何文档。|
@@ -181,7 +181,7 @@ ms.locfileid: "30639159"
   
 |**条件**|**说明**|
 |:-----|:-----|
-|日期|对于电子邮件而言，是指收件人收到邮件的日期，或发件人发送邮件的日期。 对于文档, 是上次修改文档的日期。|
+|Date|对于电子邮件而言，是指收件人收到邮件的日期，或发件人发送邮件的日期。 对于文档, 是上次修改文档的日期。|
 |发件人/作者|对于电子邮件而言，是指发送邮件的人。 对于文档而言，是指从 Office 文档的作者字段中引用的人员。 你可以键入多个名称，用逗号分隔。 通过 **OR** 运算符在逻辑上连接两个或多个值。|
 |大小 (以字节为单位)|对于电子邮件和文档而言，是项目的大小（以字节为单位）。|
 |主题/职务|对电子邮件而言，是指邮件的主题行中的文本。 对于文档而言，是指文档的标题。 如上文所述, Title 属性是在 Microsoft Office 文档中指定的元数据。 您可以键入多个主题/标题的名称, 以逗号分隔。 通过 **OR** 运算符在逻辑上连接两个或多个值。|
@@ -219,7 +219,7 @@ ms.locfileid: "30639159"
 
 当您添加一个条件时，您可以选择与该条件的属性类型相关的运算符。下表描述了与条件一起使用的运算符，并列出了在搜索查询中使用的等效项。
   
-|**Operator**|**查询等效项**|**Description**|
+|**Operator**|**查询等效项**|**说明**|
 |:-----|:-----|:-----|
 |After|`property>date`|使用日期条件。返回在指定日期后发送、接收或修改的项。 |
 |Before|`property<date`|使用日期条件。返回在指定日期前发送、接收或修改的项。|

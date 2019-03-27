@@ -10,12 +10,12 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: faf1efd1-3b0c-411a-804d-17f37292eac0
 description: 请遵循所建议的这些 Exchange Online Protection (EOP) 最佳做法，以成功达到目的，并避免常见的配置错误。
-ms.openlocfilehash: e9bd83c8b38a20ae0ced4300648461c0cb135e4b
-ms.sourcegitcommit: 0f93b37c39d807dec91f118aa671a3430c47a9ac
+ms.openlocfilehash: 3b8cf41be41e199017dcff7fd3762711402d8ca2
+ms.sourcegitcommit: c0d4fe3e43e22353f30034567ade28330266bcf7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/20/2019
-ms.locfileid: "30693181"
+ms.lasthandoff: 03/27/2019
+ms.locfileid: "30900181"
 ---
 # <a name="best-practices-for-configuring-eop"></a>配置 EOP 的最佳实践
   
@@ -102,8 +102,6 @@ ms.locfileid: "30693181"
 [EOP 一般常见问题解答](eop-general-faq.md)
   
 [EOP 帮助与支持](help-and-support-for-eop.md)
-  
-[EOP 入门视频](videos-for-getting-started-with-eop.md)
   
 [如何帮助确保邮件不会标记为垃圾邮件](https://go.microsoft.com/fwlink/p/?LinkId=534224)
   
