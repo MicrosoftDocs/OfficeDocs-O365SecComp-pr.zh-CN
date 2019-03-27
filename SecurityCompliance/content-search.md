@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: 53390468-eec6-45cb-b6cd-7511f9c909e4
 description: 使用 Office 365 安全&amp;合规中心中的内容搜索来搜索邮箱、SharePoint Online 网站、OneDrive 帐户、Microsoft 团队、Office 365 组和 Skype for business 对话中的内容。 您可以使用关键字搜索查询和搜索条件来缩小搜索结果的范围。 然后, 您可以预览和导出搜索结果。 内容搜索也是一个有效的工具, 可用于搜索可能与 GDPR 数据主体请求相关的内容。
-ms.openlocfilehash: 22792e9513d0e9a7be468bb13db2e4286f9f140c
-ms.sourcegitcommit: b688d67935edb036658bb5aa1671328498d5ddd3
+ms.openlocfilehash: 93bac47c4d83aa75e0581dbba0b40386a451fe3d
+ms.sourcegitcommit: c0d4fe3e43e22353f30034567ade28330266bcf7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "30670717"
+ms.lasthandoff: 03/27/2019
+ms.locfileid: "30900101"
 ---
 # <a name="content-search-in-office-365"></a>Office 365 中的内容搜索
 
@@ -76,7 +76,8 @@ ms.locfileid: "30670717"
     
     为什么要使用关键字列表？ 您可以获取显示与每个关键字匹配的项目数的统计信息。 这可以帮助您快速确定哪些关键字最有效 (最少)。 您还可以在行中使用关键字短语 (括在括号中)。 有关搜索统计信息的详细信息, 请参阅[查看内容搜索结果的关键字统计](view-keyword-statistics-for-content-search.md)信息。
 
-    [!NOTE] 为了帮助减少由大型关键字列表导致的问题, 您现在限制为关键字列表中的最多20行。
+    > [!NOTE]
+    > 为了帮助减少由大型关键字列表导致的问题, 您现在限制为关键字列表中的最多20行。
     
 - **条件**-您可以添加搜索条件以缩小搜索范围, 并返回一组更细化的结果。 每个条件都会向搜索查询添加一个子句, 该子句在您开始搜索时创建并运行。 条件以逻辑方式连接到关键字查询 (在 "关键字" 框中指定), 逻辑运算符 ( **c:c**) 与**AND**运算符的功能相似。 这意味着项目必须同时满足关键字查询和要包含在结果中的一个或多个条件。 这就是条件如何帮助缩小结果范围的原理。 有关可在搜索查询中使用的条件的列表和说明, 请参阅[内容搜索的关键字查询和搜索条件](keyword-queries-and-search-conditions.md#search-conditions)中的 "搜索条件" 部分。
     

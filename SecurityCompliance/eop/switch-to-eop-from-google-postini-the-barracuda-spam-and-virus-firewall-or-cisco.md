@@ -10,12 +10,12 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: 81b75194-3b04-48da-8b81-951afbabedde
 description: 本主题的目的是帮助您了解从内部部署电子邮件卫生设备或基于云的保护服务切换到 Exchange Online Protection (EOP) 的过程，然后为您提供开始操作的帮助资源。
-ms.openlocfilehash: 0923bf0060891536ac11c5f9fa773f74aed1463f
-ms.sourcegitcommit: 0f93b37c39d807dec91f118aa671a3430c47a9ac
+ms.openlocfilehash: 0c33d89be5cb4ebf7719e6742532ebfc7a2e5c20
+ms.sourcegitcommit: c0d4fe3e43e22353f30034567ade28330266bcf7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/20/2019
-ms.locfileid: "30693411"
+ms.lasthandoff: 03/27/2019
+ms.locfileid: "30899951"
 ---
 # <a name="switch-to-eop-from-google-postini-the-barracuda-spam-and-virus-firewall-or-cisco-ironport"></a>从 Google Postini、Barracuda 垃圾邮件和病毒防火墙或 Cisco IronPort 切换到 EOP
 
@@ -25,14 +25,13 @@ ms.locfileid: "30693411"
   
 在切换到 EOP 之前，有必要考虑是要在云中、Exchange Online、内部部署还是在混合方案中托管 EOP 保护的邮箱。（混合方案意味着某些邮箱在内部部署中托管，其他一些邮箱使用 Exchange Online 托管。）各托管方案：可能是云、内部部署和混合，但安装步骤可能有所不同。有一些考虑事项可帮助您选择合适的部署：
   
-- **使用内部部署邮箱的 EOP 保护** 如果您有要使用的现有邮件托管基础结构或者有在内部部署中保留邮箱的业务需要，且您希望使用 EOP 基于云的电子邮件保护，则适合选择此方案。 [独立切换到 EOP](#BKMK_SwitchStandalone.md)详细描述了此方案。 
+- **使用内部部署邮箱的 EOP 保护** 如果您有要使用的现有邮件托管基础结构或者有在内部部署中保留邮箱的业务需要，且您希望使用 EOP 基于云的电子邮件保护，则适合选择此方案。 [独立切换到 EOP](#switch-to-eop-standalone)详细描述了此方案。 
     
 - **使用 Exchange Online 邮箱的 EOP 保护** 如果您希望使用 EOP 保护且在云中托管所有邮箱，则适合选择此方案。它可以帮助您降低复杂性，因为您不必维护内部部署邮件传递服务器。 [切换到 Exchange Online](switch-to-eop-from-google-postini-the-barracuda-spam-and-virus-firewall-or-cisco.md#BKMK_SwitchEXO) 描述了此方案。 
     
-- **使用混合邮箱的 EOP 保护** 可能您要使用云邮箱，但是需要在内部部署中为某些用户保留邮箱。如果您希望在内部部署中托管某些邮箱并使用 Exchange Online 托管其他邮箱，则选择此方案。 [切换到混合解决方案](#BKMK_SwitchHybrid.md)描述了此方案。 
+- **使用混合邮箱的 EOP 保护** 可能您要使用云邮箱，但是需要在内部部署中为某些用户保留邮箱。如果您希望在内部部署中托管某些邮箱并使用 Exchange Online 托管其他邮箱，则选择此方案。 [切换到混合解决方案](#switch-to-a-hybrid-solution)描述了此方案。 
     
 ## <a name="switch-to-eop-standalone"></a>独立切换到 EOP
-<a name="BKMK_SwitchStandalone"> </a>
 
 如果当前在内部部署中托管邮箱，并使用内部部署保护设备或云邮件传递保护服务，则可以切换到 EOP 以利用其保护功能和可用性。要在独立方案中设置 EOP（这意味着在内部部署中托管邮箱并使用 EOP 提供电子邮件保护），可以按照[设置 EOP 服务](set-up-your-eop-service.md)中所述的步骤执行操作。该主题概述了设置 EOP 保护的步骤，包括注册、添加域和使用连接器设置邮件流。
   

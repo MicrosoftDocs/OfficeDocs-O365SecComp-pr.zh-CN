@@ -10,12 +10,12 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: 1270a65f-ddc3-4430-b500-4d3a481efb1e
 description: Microsoft Exchange Online Protection (EOP) 是基于云的电子邮件筛选服务，可帮助您的组织防御垃圾邮件和恶意邮件，并包括用于保护您的组织避免违反邮件策略的功能。
-ms.openlocfilehash: e639b1185d75959061163b5391cf046bc789e3c4
-ms.sourcegitcommit: 0f93b37c39d807dec91f118aa671a3430c47a9ac
+ms.openlocfilehash: c8450d5204635788a044538d701e23f4f77d1e0f
+ms.sourcegitcommit: c0d4fe3e43e22353f30034567ade28330266bcf7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/20/2019
-ms.locfileid: "30693521"
+ms.lasthandoff: 03/27/2019
+ms.locfileid: "30899941"
 ---
 # <a name="exchange-online-protection-overview"></a>Exchange Online Protection 概述
 
@@ -77,8 +77,6 @@ EOP 在数据中心之间执行负载平衡，但仅限在一个区域内。如�
 ## <a name="for-more-information"></a>有关详细信息
 
 [EOP 功能](eop-features.md)
-  
-[EOP 入门视频](videos-for-getting-started-with-eop.md)
   
 [EOP 一般常见问题解答](eop-general-faq.md)
   

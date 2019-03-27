@@ -10,12 +10,12 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: 70ab4af2-fec4-4886-8e12-27d348649204
 description: 在开始使用 EOP 之前, 应注意以下几点。
-ms.openlocfilehash: 878380adb039961334413019551847717ace0cc7
-ms.sourcegitcommit: 0f93b37c39d807dec91f118aa671a3430c47a9ac
+ms.openlocfilehash: fdaeba4f38d2e7676b336519f6d04649ee9d8137
+ms.sourcegitcommit: c0d4fe3e43e22353f30034567ade28330266bcf7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/20/2019
-ms.locfileid: "30692321"
+ms.lasthandoff: 03/27/2019
+ms.locfileid: "30900121"
 ---
 # <a name="exchange-online-protection"></a>Exchange Online Protection 
 
@@ -23,7 +23,7 @@ ms.locfileid: "30692321"
   
 - 要了解有关 EOP 的详细信息，请查看 [Exchange Online Protection 服务说明](https://go.microsoft.com/fwlink/p/?LinkId=320619)。其他有用资源有 [Exchange Online Protection 概述](exchange-online-protection-overview.md)、[EOP 一般常见问题解答](eop-general-faq.md)和 [EOP 功能](eop-features.md)，以及 [Exchange Online Protection 主页](https://go.microsoft.com/fwlink/?LinkId=279912)。
     
-- 若要开始使用 EOP，新客户应转到[设置 EOP 服务](set-up-your-eop-service.md)。本主题提供的步骤可帮助您启动并运行 EOP。您可能还想查看[EOP 入门视频](videos-for-getting-started-with-eop.md)上的一系列介绍视频。
+- 若要开始使用 EOP，新客户应转到[设置 EOP 服务](set-up-your-eop-service.md)。 本主题提供的步骤可帮助您启动并运行 EOP。 
     
 - 如果您需要更多帮助或想要分享观点，[EOP 论坛](https://go.microsoft.com/fwlink/?LinkId=285351)是很好的入门之地。 
     
@@ -36,8 +36,6 @@ ms.locfileid: "30692321"
 - [Exchange Online Protection 概述](exchange-online-protection-overview.md) 介绍 EOP 如何工作，并提供其他信息链接。 
     
 - [EOP 功能](eop-features.md) 提供 EOP 中可用的功能列表。 
-    
-- [EOP 入门视频](videos-for-getting-started-with-eop.md) 通过一系列详细说明常规设置任务的视频来介绍 EOP。 
     
 - [设置 EOP 服务](set-up-your-eop-service.md) 提供有关设置 EOP 服务的步骤，以及指向其他信息的链接。 
     

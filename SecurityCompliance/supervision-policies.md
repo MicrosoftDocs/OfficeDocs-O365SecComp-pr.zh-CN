@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 ms.assetid: d14ae7c3-fcb0-4a03-967b-cbed861bb086
 description: 了解 Office 365 中的监督策略
-ms.openlocfilehash: c22abdf315b2301ae9c63b26f548eff302df8e2a
-ms.sourcegitcommit: fec1010e405f14e792d650aee0312b78fced3343
+ms.openlocfilehash: db0dedbbb41eef334165a4bde65c45a52d14299a
+ms.sourcegitcommit: c0d4fe3e43e22353f30034567ade28330266bcf7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/21/2019
-ms.locfileid: "30720272"
+ms.lasthandoff: 03/27/2019
+ms.locfileid: "30900091"
 ---
 # <a name="supervision-policies-in-office-365"></a>Office 365 中的监督策略
 
@@ -73,7 +73,11 @@ Office 365 中的监督策略使您可以捕获指定审阅者进行检查的员
 使用监督策略, 您可以选择监视以下一个或多个通信平台中的邮件:
 
 - **Exchange 电子邮件:** 作为 Office 365 订阅的一部分托管在 Exchange Online 上的邮箱都有资格进行邮件监督。 与监察策略条件匹配的电子邮件和附件可立即用于监控和监控报告。 受支持的监督附件类型与[Exchange 邮件流规则内容检查支持的文件类型](https://docs.microsoft.com/exchange/security-and-compliance/mail-flow-rules/inspect-message-attachments#supported-file-types-for-mail-flow-rule-content-inspection)相同。
-- **Microsoft 团队:** 可以监督公共和私有 Microsoft 团队频道和个人聊天中的聊天通信和相关附件。 团队聊天匹配监督策略条件每24小时处理一次, 然后可在监督报告中进行监视。
+- **Microsoft 团队:** 可以监督公共和私有 Microsoft 团队频道和个人聊天中的聊天通信和相关附件。 团队聊天匹配监督策略条件每24小时处理一次, 然后可在监督报告中进行监视。 使用以下组管理配置在团队中有效管理单个用户聊天和通道通信:
+
+    - **对于团队聊天监督:** 需要分配单个用户或将[通讯组](https://support.office.com/article/Distribution-groups-E8BA58A8-FAB2-4AAF-8AA1-2A304052D2DE)分配给监督策略。 这适用于1对1或一对多用户/聊天的关系。
+    - **对于团队渠道通信:** 需要将您想要监视的每个 Microsoft 团队频道或 Office 365 组分配给监督策略中包含特定用户的。 如果将同一用户添加到其他 Microsoft 团队频道或 Office 365 组, 请确保同时将这些新的频道和组添加到监督策略中。
+
 - **第三方来源:** 如果已将此数据导入组织中的 Office 365 邮箱, 则可以监督来自第三方源 (如 Facebook 或 DropBox) 的通信。 [了解如何将第三方数据导入 Office 365](https://docs.microsoft.com/office365/securitycompliance/archiving-third-party-data)。
 
 ### <a name="policy-settings"></a>策略设置

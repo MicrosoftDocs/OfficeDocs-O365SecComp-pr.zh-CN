@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 使用 SharePoint Online 中的数据丢失防护 (DLP), 您可以发现在整个租户中包含敏感数据的文档。 在发现文档之后, 可以使用文档所有者来保护数据。 本主题可帮助您形成查询以搜索敏感数据。
-ms.openlocfilehash: 91ef057170ef10614d3888e128769129e4c33fb9
-ms.sourcegitcommit: 8657e003ab1ff49113f222d1ee8400eff174cb54
+ms.openlocfilehash: 8ecce920810d52fadb311c6c4925c9fa4b6fb2b1
+ms.sourcegitcommit: c0d4fe3e43e22353f30034567ade28330266bcf7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/16/2019
-ms.locfileid: "30639129"
+ms.lasthandoff: 03/27/2019
+ms.locfileid: "30900051"
 ---
 # <a name="form-a-query-to-find-sensitive-data-stored-on-sites"></a>创建查询以查找存储在站点上的敏感数据
 
@@ -53,7 +53,7 @@ ms.locfileid: "30639129"
   
 ### <a name="additional-query-properties-and-search-operators-available-in-the-ediscovery-center"></a>电子数据展示中心可用的其他查询属性和搜索运算符
 
-SharePoint 中的 DLP 还引入了 LastSensitiveContentScan 属性, 此属性可帮助您搜索在特定时间范围内扫描的文件。 有关`LastSensitiveContentScan`属性的查询示例, 请参阅下一节中的[复杂查询示例](form-a-query-to-find-sensitive-data-stored-on-sites.md#BKMK_ExamplesOfComplexQueries)。 
+SharePoint 中的 DLP 还引入了 LastSensitiveContentScan 属性, 此属性可帮助您搜索在特定时间范围内扫描的文件。 有关`LastSensitiveContentScan`属性的查询示例, 请参阅下一节中的[复杂查询示例](#examples-of-complex-queries)。 
   
 您不仅可以使用特定于 DLP 的属性来创建查询, 还可以使用标准的 SharePoint 电子数据展示搜索`Author`属性`FileExtension`(如或)。 您可以使用运算符来构建复杂的查询。 有关可用属性和运算符的列表, 请参阅[Using Search properties and operators with eDiscovery](https://go.microsoft.com/fwlink/?LinkId=510093)博客文章。 
   

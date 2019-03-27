@@ -13,12 +13,12 @@ search.appverid:
 - MET150
 ms.assetid: 429e686f-d8a6-455e-a2b6-3791d763f000
 description: Microsoft 服务信任门户中的合规性管理器提供用于跟踪、实现和管理控制措施的工具，以确保在衡量依据为 Microsoft 云服务（如 Office 365 和 Microsoft Azure）时，组织符合安全和数据保护行业标准（如 GDPR、ISO 27001、27018 和 HIPAA）。使用合规性管理器，负责监督组织数据保护和隐私策略的人员可管理合规性和风险评估流程。
-ms.openlocfilehash: cb12299dee5392cb75d41156a834a7190b8ade1b
-ms.sourcegitcommit: baf23be44f1ed5abbf84f140b5ffa64fce605478
+ms.openlocfilehash: bd61920967cfeacbefc09d1347203565617af5a1
+ms.sourcegitcommit: c0d4fe3e43e22353f30034567ade28330266bcf7
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "30296835"
+ms.lasthandoff: 03/27/2019
+ms.locfileid: "30900171"
 ---
 # <a name="use-compliance-manager-to-help-meet-data-protection-and-regulatory-requirements-when-using-microsoft-cloud-services"></a>合规性管理器有助于在使用 Microsoft 云服务时符合数据保护和法规要求
 
@@ -385,7 +385,7 @@ ms.locfileid: "30296835"
   
 - [搜索用户](#search-for-a-user)
 
-- [导出帐户数据历史记录报告](#export-report-of-account-data-history)
+- [导出帐户数据历史记录报告](#export-a-report-of-account-data-history)
 
 - [重新分配行动项](#reassign-action-items)
 
@@ -511,9 +511,9 @@ ms.locfileid: "30296835"
   
 1. 在合规性管理器仪表板中，单击 ![“添加”图标](media/ITPro-EAC-AddIcon.gif)“添加评估”****。 
     
-2. 在“添加评估”**** 窗口中，可新建用于添加评估的组，也可将评估添加到现有组（名为“初始组”的内置组）中。可以键入新组的名称，也可以从下拉列表中选择现有组，具体视选择的选项而定。有关详细信息，请参阅[对评估进行分组](meet-data-protection-and-regulatory-reqs-using-microsoft-cloud.md#grouping)。
+2. 在“添加评估”**** 窗口中，可新建用于添加评估的组，也可将评估添加到现有组（名为“初始组”的内置组）中。可以键入新组的名称，也可以从下拉列表中选择现有组，具体视选择的选项而定。有关详细信息，请参阅[对评估进行分组](#grouping-assessments)。
     
-    如果新建组，还可以视需要将信息从现有组复制到新评估中。也就是说，要复制的组中评估内客户管理的控制措施的“实现详情”、“测试计划”和“管理响应”字段中添加的任何信息，都会复制到新评估中的相同（或相关）客户管理的控制措施。若要向现有组添加新评估，此组中评估的共用信息会复制到新评估中。有关详细信息，请参阅[从现有评估复制信息](meet-data-protection-and-regulatory-reqs-using-microsoft-cloud.md#copying)。
+    如果新建组，还可以视需要将信息从现有组复制到新评估中。也就是说，要复制的组中评估内客户管理的控制措施的“实现详情”、“测试计划”和“管理响应”字段中添加的任何信息，都会复制到新评估中的相同（或相关）客户管理的控制措施。若要向现有组添加新评估，此组中评估的共用信息会复制到新评估中。有关详细信息，请参阅[从现有评估复制信息](#copying-information-from-existing-assessments)。
     
 3. 单击“下一步”****，再按照以下步骤操作：
     
@@ -553,7 +553,7 @@ ms.locfileid: "30296835"
   
 1. 此部分显示了评估摘要信息，包括评估分组名称、产品、评估名称和评估控制措施数
     
-2. 此部分显示了评估筛选器控件。若要详细了解如何使用评估筛选器控件，请参阅[管理评估流程](meet-data-protection-and-regulatory-reqs-using-microsoft-cloud.md#managecomplianceprocess_1)部分。 
+2. 此部分显示了评估筛选器控件。若要详细了解如何使用评估筛选器控件，请参阅[管理评估流程](#managing-the-assessment-process)部分。 
     
 3. 此部分显示了评估的各个范围内云服务。
     
@@ -561,7 +561,7 @@ ms.locfileid: "30296835"
     
 5. 此部分显示了客户管理的控制措施，它们同样也是按控制措施系列进行整理。单击控制措施系列，即可展开它并查看各项控制措施。
     
-6. 此部分显示了控制措施系列中的总控制措施数，以及已评估的控制措施数。合规性管理器的一项关键功能是，跟踪组织评估客户管理的控制措施的进度。有关详细信息，请参阅[了解合规性分数](meet-data-protection-and-regulatory-reqs-using-microsoft-cloud.md#compliancescore)部分。 
+6. 此部分显示了控制措施系列中的总控制措施数，以及已评估的控制措施数。合规性管理器的一项关键功能是，跟踪组织评估客户管理的控制措施的进度。有关详细信息，请参阅[了解合规性分数](#understanding-the-compliance-score)部分。 
 
 ## <a name="managing-the-assessment-process"></a>管理评估流程
 
