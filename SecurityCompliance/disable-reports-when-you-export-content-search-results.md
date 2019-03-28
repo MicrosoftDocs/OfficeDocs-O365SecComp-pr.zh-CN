@@ -10,17 +10,17 @@ ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid: MOE150
 ms.assetid: c9b0ff0c-282b-4a44-b43f-cfc5b96557f9
-description: 在您的本地计算机上编辑 Windows 注册表, 以在从 Office 365 Security &amp; Comliance Center 导出内容搜索结果时禁用报告。禁用这些报告可加快下载时间并节省磁盘空间。
-ms.openlocfilehash: 0be2be18eaccb618a49e1b58a5c0e53d0a339d1e
-ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
+description: 在您的本地计算机上编辑 Windows 注册表, 以在从 Office 365 Security &amp; Comliance Center 导出内容搜索结果时禁用报告。 禁用这些报告可加快下载时间并节省磁盘空间。
+ms.openlocfilehash: f08f5e7143022591d38bda787301e71ae80fb3d3
+ms.sourcegitcommit: 8a65a29aa3bfe5dcad0ff152a7cd795e02877dd9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30213472"
+ms.lasthandoff: 03/28/2019
+ms.locfileid: "30936712"
 ---
 # <a name="disable-reports-when-you-export-content-search-results-in-the-office-365-security-amp-compliance-center"></a>在 Office 365 安全&amp;合规中心中导出内容搜索结果时禁用报告
 
-当您使用 Office 365 电子数据展示导出工具导出安全&amp;合规中心中的内容搜索结果时, 该工具会自动创建和导出包含有关导出内容的其他信息的两个报告。这些报告是结果 .csv 文件和 Manifest .xml 文件 (有关这些报告的详细说明, 请参阅本主题中[有关禁用导出报告](#frequently-asked-questions-about-disabling-export-reports)部分的常见问题)。由于这些文件可能非常大, 因此可以通过防止导出这些文件, 加快下载时间并节省磁盘空间。您可以通过更改用于导出搜索结果的计算机上的 Windows 注册表来执行此操作。如果您想要在以后包含这些报告, 可以编辑注册表设置。 
+当您使用 Office 365 电子数据展示导出工具导出安全&amp;合规中心中的内容搜索结果时, 该工具会自动创建和导出包含有关导出内容的其他信息的两个报告。 这些报告是结果 .csv 文件和 Manifest .xml 文件 (有关这些报告的详细说明, 请参阅本主题中[有关禁用导出报告](#frequently-asked-questions-about-disabling-export-reports)部分的常见问题)。 由于这些文件可能非常大, 因此可以通过防止导出这些文件, 加快下载时间并节省磁盘空间。 您可以通过更改用于导出搜索结果的计算机上的 Windows 注册表来执行此操作。 如果您想要在以后包含这些报告, 可以编辑注册表设置。 
   
 ## <a name="create-registry-settings-to-disable-the-export-reports"></a>创建注册表设置以禁用导出报告
 
@@ -58,7 +58,7 @@ ms.locfileid: "30213472"
   
 ## <a name="edit-registry-settings-to-re-enable-the-export-reports"></a>编辑注册表设置以重新启用导出报告
 
-如果通过在上一过程中创建 .reg 文件禁用了结果. .csv 和 .manifest 报告, 则可以编辑这些文件以重新启用报告, 以便将其导出到搜索结果中。再次在将用于将结果导出到内容搜索的计算机上执行以下过程。
+如果通过在上一过程中创建 .reg 文件禁用了结果. .csv 和 .manifest 报告, 则可以编辑这些文件以重新启用报告, 以便将其导出到搜索结果中。 再次在将用于将结果导出到内容搜索的计算机上执行以下过程。
   
 1. 如果 Office 365 电子数据展示导出工具处于打开状态, 则将其关闭。
     
@@ -66,7 +66,7 @@ ms.locfileid: "30213472"
     
     - **结果 .csv**
     
-        在记事本中打开 DisableResultsCsv 文件, 将值`False`更改为`True`, 然后保存文件。例如, 在编辑文件后, 其外观如下所示:
+        在记事本中打开 DisableResultsCsv 文件, 将值`False`更改为`True`, 然后保存文件。 例如, 在编辑文件后, 其外观如下所示:
     
         ```
         Windows Registry Editor Version 5.00
@@ -75,7 +75,7 @@ ms.locfileid: "30213472"
 
     - **清单 .xml**
     
-        在记事本中打开 DisableManifestXml 文件, 将值`False`更改为`True`, 然后保存文件。例如, 在编辑文件后, 其外观如下所示:
+        在记事本中打开 DisableManifestXml 文件, 将值`False`更改为`True`, 然后保存文件。 例如, 在编辑文件后, 其外观如下所示:
     
       ```
       Windows Registry Editor Version 5.00
@@ -97,7 +97,7 @@ ms.locfileid: "30213472"
   
 结果 .csv 和清单 .xml 文件包含有关导出的内容的其他信息。
   
-- **结果 .csv**包含作为搜索结果下载的每个项目的相关信息的 Excel 文档。对于电子邮件, 结果日志包含有关每封邮件的信息, 其中包括: 
+- **结果 .csv**包含作为搜索结果下载的每个项目的相关信息的 Excel 文档。 对于电子邮件, 结果日志包含有关每封邮件的信息, 其中包括: 
     
   - 邮件在源邮箱中的位置（包括邮件位于主邮箱还是存档邮箱）。
     
@@ -107,7 +107,7 @@ ms.locfileid: "30213472"
     
   - 邮件的发件人和收件人。
     
-  - 如果在导出搜索结果时启用重复数据删除功能, 则该邮件是否为重复的邮件。重复邮件在**父 ItemId**列中有一个将该邮件标识为重复的值。**父 ItemId**列中的值与导出的邮件的 "**项目 DocumentId** " 列中的值相同。 
+  - 如果在导出搜索结果时启用重复数据删除功能, 则该邮件是否为重复的邮件。 重复邮件在**父 ItemId**列中有一个将该邮件标识为重复的值。 **父 ItemId**列中的值与导出的邮件的 "**项目 DocumentId** " 列中的值相同。 
     
     对于 SharePoint 和 OneDrive for business 网站中的文档, 结果日志包含有关每个文档的信息, 包括:
     
@@ -119,11 +119,11 @@ ms.locfileid: "30213472"
     
   - 文档的名称（位于结果日志中的主题列）。
     
-- **.manifest**一个清单文件 (xml 格式), 包含搜索结果中包含的每个项目的相关信息。此报告中的信息与 "结果 .csv" 报告相同, 但其格式为 "电子发现参考模型 (EDRM)" 指定的格式。有关 EDRM 的详细信息, 请转[https://www.edrm.net](https://www.edrm.net)到。
+- **.manifest**一个清单文件 (xml 格式), 包含搜索结果中包含的每个项目的相关信息。 此报告中的信息与 "结果 .csv" 报告相同, 但其格式为 "电子发现参考模型 (EDRM)" 指定的格式。 有关 EDRM 的详细信息, 请转[https://www.edrm.net](https://www.edrm.net)到。
     
  **何时应禁止导出这些报告？**
   
-这取决于您的特定需求。许多组织不需要有关搜索结果的其他信息, 也不需要这些报告。
+这取决于您的特定需求。 许多组织不需要有关搜索结果的其他信息, 也不需要这些报告。
   
  **我必须在哪台计算机上执行此操作？**
   
@@ -131,8 +131,8 @@ ms.locfileid: "30213472"
   
  **更改此设置后, 必须重新启动计算机吗？**
   
-否, 无需重新启动计算机。但是, 如果 Office 365 电子数据展示导出工具正在运行, 则必须将其关闭, 然后在更改注册表设置后重新启动它。
+否, 无需重新启动计算机。 但是, 如果 Office 365 电子数据展示导出工具正在运行, 则必须将其关闭, 然后在更改注册表设置后重新启动它。
   
  **是否已编辑现有注册表项或是否创建新的密钥？**
   
-首次运行本主题中的过程中创建的 .reg 文件时, 会创建一个新的注册表项。然后, 在每次更改并重新运行 .reg 编辑文件时, 都会编辑该设置。
+首次运行本主题中的过程中创建的 .reg 文件时, 会创建一个新的注册表项。 然后, 在每次更改并重新运行 .reg 编辑文件时, 都会编辑该设置。

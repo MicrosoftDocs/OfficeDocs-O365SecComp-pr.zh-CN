@@ -16,12 +16,12 @@ localization_priority: Priority
 search.appverid:
 - MET150
 description: 了解如何使用 Office 标签作为 GDPR 保护计划的一部分。
-ms.openlocfilehash: e31cd420fe476ace8031fc2c6e52158762814c7a
-ms.sourcegitcommit: ef27da3ea5340d6e7a2eaa1288e2e005ef8e4788
+ms.openlocfilehash: 4167ace41c5d7534b7e90130c189e3c04e5c5100
+ms.sourcegitcommit: ae7ebae8801a69a825a363443e2676379197de19
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/23/2019
-ms.locfileid: "30789427"
+ms.lasthandoff: 03/26/2019
+ms.locfileid: "30800284"
 ---
 # <a name="apply-labels-to-personal-data-in-office-365"></a>向 Office 365 中的个人数据应用标签
 
@@ -29,15 +29,16 @@ ms.locfileid: "30789427"
 
 如果要在 Office 365 中使用标签保护个人数据，Microsoft 建议你开始使用[保留标签](labels.md)。 借助保留标签，你可以：
 - 使用“高级数据治理”根据敏感信息类型或其他条件自动应用标签。
--  使用具有数据丢失防护的保留标签来应用保护。 
+- 使用具有数据丢失防护的保留标签来应用保护。 
 - 在电子数据展示和内容搜索中使用标签。 
-- 通过 Cloud App Security 使用标签和敏感信息类型来监控驻留在其他 SaaS 应用中的个人数据。
+
+Cloud App Security 当前不支持保留标签，但你可以通过 Cloud App Security 使用 Office 365 敏感信息，以监控驻留在其他 SaaS 应用上的个人数据。
 
 目前建议使用[敏感度标签](sensitivity-labels.md)为本地和其他云服务及提供程序中的文件应用标签。 对于在 Office 365 中需要通过 Azure 信息保护 (AIP) 加密来保护数据的文件（如商业机密文件），也建议使用这些标签。
 
 目前，对于 Office 365 中包含受 GDPR 约束的数据的文件，建议不要使用 Azure 信息保护来应用加密。 Office 365 服务目前无法读入 AIP 加密的文件。 因此，该服务无法在这些文件中找到敏感数据。
 
-敏感度标签可以应用于 Exchange Online 中的邮件，并且这些标签可与 Office 365 数据丢失防护功能一起使用。 
+保留标签可以应用于 Exchange Online 中的邮件，并且这些标签可与 Office 365 数据丢失防护功能一起使用。 
 
 ![Office 365 标签和 Azure 信息保护标签](Media/Apply-labels-to-personal-data-in-Office-365-image1.png)
 
@@ -45,7 +46,7 @@ ms.locfileid: "30789427"
 在此图中：
 
 -   在 SharePoint Online 和 OneDrive for Business 中为个人数据、严格监管的文件和商业机密文件使用保留标签。
-
+-   可以通过 Cloud App Security 在 Office 365 中使用 Office 365 敏感信息类型，以监控驻留在其他 SaaS 应用中的个人数据。
 -   为严格监管的文件和商业机密文件、Exchange Online 电子邮件、其他 SaaS 服务中的文件、本地数据中心内的文件以及其他云提供程序中的文件使用敏感度标签。
 
 
@@ -78,8 +79,8 @@ ms.locfileid: "30789427"
 <p>. . . 应用于带此标签的文档 . . .</p>
 <p>客户数据</p></td>
 <td align="left"><p>在以下情况下发出警报：当批准的 SaaS 应用中的带这些属性的文件 . . .</p>
-<p>&lt;预定义的 PII 属性或自定义表达式&gt;</p>
-<p>. . . 被共享到组织外部时</p></td>
+<p>选择一个或多个属性：预定义的 PII 属性、Office 365 敏感信息类型、敏感性标签 (AIP)、自定义表达式</p>
+<p>。 。 。 （组织外部共享的任何批准 SaaS 应用中）</p><p>注释：保留标签当前在 Cloud App Security 中不受支持。</td>
 </tr>
 <tr class="even">
 <td align="left">敏感信息类型示例：比利时国家/地区号码、信用卡号、克罗地亚身份证号、芬兰国家/地区身份证号码</td>
@@ -90,7 +91,7 @@ ms.locfileid: "30789427"
 <td align="left"><p>将此保护 . . .</p>
 <p>&lt;定义保护&gt;</p>
 <p>. . . 应用于与这些敏感信息类型匹配的文档&gt;</p></td>
-<td align="left">注意：Cloud App Security 中即将推出的属性包括 Office 365 敏感信息类型和 Office 365 及 Azure 信息保护中的统一标签。</td>
+<td align="left"></td>
 </tr>
 </tbody>
 </table>

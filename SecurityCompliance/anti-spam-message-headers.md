@@ -13,12 +13,12 @@ ms.assetid: 2e3fcfc5-5604-4b88-ac0a-c5c45c03f1db
 ms.collection:
 - M365-security-compliance
 description: Exchange Online Protection 扫描到入站电子邮件时，它会在每封邮件中插入" **X-Forefront-Antispam-Report**"标头。
-ms.openlocfilehash: de5e1b16ac6c9e7515e23f083f2e938125c7e9cd
-ms.sourcegitcommit: 0f93b37c39d807dec91f118aa671a3430c47a9ac
+ms.openlocfilehash: 92614b8cb6e1571c3d5438206f9dcd106579669a
+ms.sourcegitcommit: 8a65a29aa3bfe5dcad0ff152a7cd795e02877dd9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/20/2019
-ms.locfileid: "30693571"
+ms.lasthandoff: 03/28/2019
+ms.locfileid: "30936742"
 ---
 # <a name="anti-spam-message-headers"></a>反垃圾邮件邮件头
 
@@ -28,9 +28,8 @@ Exchange Online Protection 扫描到入站电子邮件时，它会在每封邮�
 > 有关如何查看各种电子邮件客户端中的电子邮件头的信息，请参阅[邮件头分析器](https://go.microsoft.com/fwlink/p/?LinkId=306583)。你可以将邮件头的内容复制并粘贴到[邮件头分析器](https://testconnectivity.microsoft.com/?tabid=mha)工具中。当你在 Exchange 管理中心隔离邮箱中选择一封邮件时，" **查看邮件头**"链接也使你可以轻松地将邮件头文本复制并粘贴到工具中。进入邮件头分析器工具后，单击" **分析标头**"以检索关于标头的信息。
   
 ## <a name="x-forefront-antispam-report-message-header-fields"></a>X-Forefront-Antispam-Report 邮件标头字段
-<a name="sectionSection0"> </a>
 
-获取邮件头信息后，搜索" **X-Forefront-Antispam-Report**"，然后查找这些字段。此标头中的其他字段专供 Microsoft 反垃圾邮件团队用于进行诊断。
+获取邮件头信息后，搜索“**X-Forefront-Antispam-Report**”，然后查找这些字段。此标头中的其他字段专供 Microsoft 反垃圾邮件团队用于进行诊断。
 
 |**标头字段**|**描述**|
 |:-----|:-----|
@@ -38,7 +37,7 @@ Exchange Online Protection 扫描到入站电子邮件时，它会在每封邮�
 |CTRY|邮件与服务连接时所处的国家/地区。该值由连接 IP 地址决定，它可能与原始发送 IP 地址不同。|
 |LANG|邮件的编写语言，由国家/地区代码指定（例如，俄语的代码为 ru_RU）。|
 |SCL|邮件的垃圾邮件可信度 (SCL) 值。有关这些值的详细解释信息，请参阅[垃圾邮件可信度](spam-confidence-levels.md)。  |
-|PCL|邮件的网络钓鱼可能性等级 (PCL) 值。 |
+|PCL|邮件的网络钓鱼可能性等级 (PCL) 值。|
 |SRV:BULK|邮件被标识为批量电子邮件。如果" **阻止所有批量电子邮件高级垃圾邮件筛选选项**"已启用，则相应的邮件会被标记为垃圾邮件。如果未启用，则该邮件只会在剩余筛选规则确定邮件是垃圾邮件时才被标记为垃圾邮件。  |
 |SFV:SFE|由于邮件发送自个人的安全发件人列表上的地址，因此邮件会跳过筛选并得以通过。|
 |SFV:BLK|由于邮件发送自个人的阻止的发件人名单上的地址，因此邮件会跳过筛选并得以阻止。  <br/> **提示**: 有关最终用户如何创建安全和阻止的发件人列表的详细信息, 请参阅[阻止或允许 (垃圾邮件设置)](https://go.microsoft.com/fwlink/p/?LinkId=294862) (outlook 网页版) 和[垃圾邮件筛选器](https://go.microsoft.com/fwlink/p/?LinkId=270065)(outlook) 概述。|
@@ -58,9 +57,8 @@ Exchange Online Protection 扫描到入站电子邮件时，它会在每封邮�
 |X-CustomSpam：[ASFOption]|邮件符合高级垃圾邮件筛选选项。 For example, **X-CustomSpam: Image links to remote sites** denotes that the **Image links to remote sites** ASF option was matched. 若要了解为每个特定 ASF 选项添加的 X 标头文本, 请参阅[高级垃圾邮件筛选选项](advanced-spam-filtering-asf-options.md)。|
    
 ## <a name="x-microsoft-antispam-message-header-fields"></a>X-Microsoft-Antispam 邮件标头字段
-<a name="sectionSection1"> </a>
 
-下表描述了" **X-Microsoft-Antispam**"邮件头中的有用字段。此标头中的其他字段专供 Microsoft 反垃圾邮件团队用于进行诊断。
+下表描述了“**X-Microsoft-Antispam**”邮件头中的有用字段。此标头中的其他字段专供 Microsoft 反垃圾邮件团队用于进行诊断。
   
 |**标头字段**|**说明**|
 |:-----|:-----|
@@ -68,16 +66,14 @@ Exchange Online Protection 扫描到入站电子邮件时，它会在每封邮�
 |PCL|邮件的网络钓鱼可能性等级 (PCL) 显示这是否为网络钓鱼邮件。 此状态会以下列其中一个数值返回： <br/>• **0-3**: 邮件的内容不太可能是网络钓鱼。 <br/>• **4-8**: 邮件的内容可能是网络钓鱼。 <br/>• **-9990**: (仅限 Exchange Online Protection) 邮件的内容可能是网络钓鱼。  <br/>  这些值用于确定你的电子邮件客户端对这些邮件采取什么操作。 例如, Outlook 使用 PCL 标记来阻止可疑邮件的内容。 有关网络钓鱼和 Outlook 如何处理网络钓鱼邮件的详细信息，请参阅 [打开或关闭电子邮件中的链接](https://support.office.com/article/2D79B907-93B6-4774-82E6-1F0385CF20F8)。|
    
 ## <a name="authentication-results-message-header"></a>“Authentication-results”邮件头
-<a name="sectionSection2"> </a>
 
 邮件服务器收到电子邮件后，Office 365 将基于 SPF、DKIM 或 DMARC 将检查结果记录或标记在“**Authentication-results**”邮件头中。
   
 ### <a name="check-stamp-syntax-and-examples"></a>检查标记语法和示例
-<a name="referenceSPFstamp"> </a>
 
-以下语法示例演示了 Office 365 应用于每封电子邮件（在由我们的邮件服务器接收时执行电子邮件身份验证检查）的邮件头的部分文本"标记"。此标记已添加到" **Authentication-Results**"标头。
+以下语法示例演示了 Office 365 应用于每封电子邮件（在由我们的邮件服务器接收时执行电子邮件身份验证检查）的邮件头的部分文本“标记”。此标记已添加到“**Authentication-Results**”标头。
   
- **语法：SPF 检查标记**
+**语法：SPF 检查标记**
   
 以下语法适用于 SPF。
   
@@ -85,14 +81,14 @@ Exchange Online Protection 扫描到入站电子邮件时，它会在每封邮�
 spf=<pass (IP address)|fail (IP address)|softfail (reason)|neutral|none|temperror|permerror> smtp.mailfrom=<domain>
 ```
 
- **示例：SPF 检查标记**
+**示例：SPF 检查标记**
   
 ```
 spf=pass (sender IP is 192.168.0.1) smtp.mailfrom=contoso.com
 spf=fail (sender IP is 127.0.0.1) smtp.mailfrom=contoso.com
 ```
 
- **语法：DKIM 检查标记**
+**语法：DKIM 检查标记**
   
 以下语法适用于 DKIMF。
   
@@ -100,14 +96,14 @@ spf=fail (sender IP is 127.0.0.1) smtp.mailfrom=contoso.com
 dkim=<pass|fail (reason)|none> header.d=<domain>
 ```
 
- **示例：DKIM 检查标记**
+**示例：DKIM 检查标记**
   
 ```
 dkim=pass (signature was verified) header.d=contoso.com
 dkim=fail (body hash did not verify) header.d=contoso.com
 ```
 
- **语法：DMARC 检查标记**
+**语法：DMARC 检查标记**
   
 以下语法适用于 DMARC。
   
@@ -115,7 +111,7 @@ dkim=fail (body hash did not verify) header.d=contoso.com
 dmarc=<pass|fail|bestguesspass|none> action=<permerror|temperror|oreject|pct.quarantine|pct.reject> header.from=<domain>
 ```
 
- **示例：DMARC 检查标记**
+**示例：DMARC 检查标记**
   
 ```
 dmarc=pass action=none header.from=contoso.com
@@ -125,7 +121,6 @@ dmarc=fail action=oreject header.from=contoso.com
 ```
 
 ### <a name="authentication-results-message-header-fields-used-by-office-365-email-authentication"></a>Office 365 电子邮件身份验证使用的“Authentication-results”邮件头字段
-<a name="referenceSPFstamp"> </a>
 
 本表描述了每封电子邮件身份验证检查的字段和可能的值。
   

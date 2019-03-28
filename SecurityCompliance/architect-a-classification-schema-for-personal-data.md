@@ -16,12 +16,12 @@ localization_priority: Priority
 search.appverid:
 - MET150
 description: 确定组织是否使用标签作为 GDPR 计划的一部分。
-ms.openlocfilehash: 79c68b8340209c3cc3e3a7081a4075c31a112e80
-ms.sourcegitcommit: ef27da3ea5340d6e7a2eaa1288e2e005ef8e4788
+ms.openlocfilehash: 6886adaa09599b32eb2f3084efdea06fd5794af0
+ms.sourcegitcommit: ae7ebae8801a69a825a363443e2676379197de19
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/23/2019
-ms.locfileid: "30789437"
+ms.lasthandoff: 03/26/2019
+ms.locfileid: "30800294"
 ---
 # <a name="architect-a-classification-schema-for-personal-data"></a>为个人数据构建分类架构
 
@@ -41,9 +41,9 @@ ms.locfileid: "30789437"
 
 -   如果你的组织尚未使用或计划使用标签执行更广泛的数据管理计划，这些类型会更易于使用。
 
--   这些类型适用于 DLP 规则（Office 标签也是如此）。
+-   这些适用于 DLP 规则（保留标签同样如此）。
 
--   今后，这些类型将可用于 Cloud App Security，因此可以检测其他 SaaS 应用中的敏感信息。
+-   敏感信息类型将可用于 Cloud App Security，因此可以检测其他 SaaS 应用中的敏感信息。
 
 ### <a name="option-2-use-sensitive-information-types--retention-labels"></a>选项 2：使用敏感信息类型 + 保留标签
 
