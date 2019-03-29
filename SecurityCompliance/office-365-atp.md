@@ -3,7 +3,7 @@ title: Office 365 高级威胁防护
 ms.author: deniseb
 author: denisebmsft
 manager: laurawi
-ms.date: 03/19/2019
+ms.date: 03/28/2019
 ms.audience: Admin
 ms.topic: hub-page
 ms.service: O365-seccomp
@@ -15,17 +15,17 @@ ms.assetid: e100fe7c-f2a1-4b7d-9e08-622330b83653
 ms.collection:
 - M365-security-compliance
 description: Office 365 高级威胁防护包括安全附件、安全链接、高级反钓鱼工具、报告工具和威胁智能功能。
-ms.openlocfilehash: ce4652e19f97cda6dbbea7df8083531ee0a0a1fc
-ms.sourcegitcommit: 0f93b37c39d807dec91f118aa671a3430c47a9ac
+ms.openlocfilehash: 442c827f9844184fc6f03f6e253a0f492d12dd62
+ms.sourcegitcommit: 787a0fef671e5dc6f5e805b580321b2edbfad8e9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/20/2019
-ms.locfileid: "30693051"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30989617"
 ---
 # <a name="office-365-advanced-threat-protection"></a>Office 365 高级威胁防护
 
 > [!IMPORTANT]
-> 本文适用于 Office 365 企业客户。 如果您使用的是 Outlook.com、office 365 家庭版或 office 365 个人版, 并且您正在查找有关 Outlook 中的安全链接的信息, 请参阅[Advanced Outlook.com security](https://support.office.com/article/advanced-outlook-com-security-for-office-365-subscribers-882d2243-eab9-4545-a58a-b36fee4a46e2)。
+> 本文适用于 Office 365 企业版和 Microsoft 365 企业客户。 如果您使用的是 Outlook.com、office 365 家庭版或 office 365 个人版, 并且您正在查找有关 Outlook 中的安全链接的信息, 请参阅[Advanced Outlook.com security](https://support.office.com/article/advanced-outlook-com-security-for-office-365-subscribers-882d2243-eab9-4545-a58a-b36fee4a46e2)。
 
 ## <a name="overview"></a>概述
 
@@ -36,13 +36,14 @@ Office 365 高级威胁防护 (ATP) 针对电子邮件、链接 (url) 和协作�
 - [报告](#view-atp-reports): 查看实时报告以监视组织中的 ATP 绩效。 
 
 - [威胁调查和响应功能](#use-threat-investigation-and-response-capabilities): 使用前沿工具调查、了解、模拟和阻止威胁。 
- 
+
+- [自动化调查和响应功能](#save-time-with-automated-investigation-and-response): 节省时间和精力来调查和缓解威胁。
 
 ## <a name="configure-atp-policies"></a>配置 ATP 策略
 
 Office 365 ATP 提供了多种工具来为您的组织设置适当的保护级别。 
 
-您的组织的安全团队必须为 Office 365 security & 合规中心中的每个 ATP 工具定义策略。 转到 "**威胁管理** > **策略**" 以访问策略选项。 
+您的组织的安全团队必须为 Office 365 security & 合规中心中的每个 ATP 工具定义策略。 转到 "**威胁管理** > **策略**" 以访问策略选项。 (若要获取有关这方面的一些帮助, 请参阅[快速入门指南: 设置 Office 365 高级威胁防护](checklist-atp-setup.md)。)
 
 为你的组织定义的策略将确定预定义威胁的行为和保护级别。 策略选项非常灵活。 例如, 组织的安全团队可以在用户、组织、收件人和域级别设置细化的威胁保护。 定期检查策略是非常重要的, 因为每天都会出现新的威胁和挑战。  
 
@@ -58,7 +59,7 @@ Office 365 ATP 提供了多种工具来为您的组织设置适当的保护级�
 
 Office 365 ATP 包含一个高级[报告仪表板](view-reports-for-atp.md), 用于监控 ATP 性能。 您可以在 Security & 合规性中心的**Reports > 仪表板**中访问它。 
 
-实时报告更新, 为你提供最新的见解。 这些报告还提供了建议, 并提醒您应对即将发生的威胁。 预定义的报告包括[威胁防护状态报告](view-reports-for-atp.md#threat-protection-status-report)、 [atp 文件类型报告](view-reports-for-atp.md#atp-file-types-report)、 [atp 邮件处置报告](view-reports-for-atp.md#atp-message-disposition-report)等。 
+实时报告更新, 为你提供最新的见解。 这些报告还提供了建议, 并提醒您应对即将发生的威胁。 预定义报告包括[威胁资源管理器](use-explorer-in-security-and-compliance.md)、[威胁防护状态报告](view-reports-for-atp.md#threat-protection-status-report)、 [atp 文件类型报告](view-reports-for-atp.md#atp-file-types-report)、 [atp 邮件处置报告](view-reports-for-atp.md#atp-message-disposition-report)等。 
 
 ## <a name="use-threat-investigation-and-response-capabilities"></a>使用威胁调查和响应功能
 
@@ -70,6 +71,12 @@ Office 365 ATP 计划2包括一流的[威胁调查和响应工具](office-365-ti
 
 - 利用[攻击模拟器](attack-simulator.md), 您可以在组织中运行现实的攻击方案, 以确定 vulnerabilites。 可以模拟当前类型的攻击, 包括[显示名称 spear 网络钓鱼](attack-simulator.md#display-name-spear-phishing-attack)攻击、[密码喷涂攻击](attack-simulator.md#password-spray-attack)、[强力密码攻击](attack-simulator.md#brute-force-password-attack)等等。
     
+## <a name="save-time-with-automated-investigation-and-response"></a>通过自动调查和响应节省时间
+
+(**新!**)在调查潜在的网络攻击时, 时间是实质上的。 您可以更快地识别和缓解威胁, 您的组织就越好。 Office 365 ATP 计划2现在将包括[自动调查和响应 (空气)](automated-investigation-response-office.md)功能。 (如果尚无这些功能, 你将很快使用 ATP 计划2。)
+
+AIR 包括一组可自动启动的安全行动手册, 例如触发警报的时间或手动启动的行动手册 (如从威胁 Explorer 中的视图)。 空气可有效地节省安全运营团队的时间和精力, 从而减轻威胁的效率。 若要了解详细信息, 请参阅[使用 Office 365 的自动化调查和响应 (AIR)](automated-investigation-response-office.md)。
+
 ## <a name="permissions-required-to-use-atp-features"></a>使用 ATP 功能所需的权限
 
 若要访问安全 & 合规性中心中的 ATP 功能, 必须为您分配适当的角色。 下表包括一些示例:
@@ -88,7 +95,7 @@ Office 365 ATP 计划2包括一流的[威胁调查和响应工具](office-365-ti
 
 ## <a name="get-office-365-atp"></a>获取 Office 365 ATP
 
-office 365 ATP 包含在 office 365 企业版 E5、Office 365 教育版 A5 和 Microsoft 365 商业版中。 如果你的订阅不包含 Office 365 ATP, 则可能会将 atp 作为加载项进行购买。 若要了解详细信息, 请参阅以下资源:
+office 365 ATP 计划2包含在 office 365 企业版 E5、Office 365 教育版 A5 和 Microsoft 365 商业版中。 如果你的订阅不包含 Office 365 ATP, 则可能会将 atp 作为加载项进行购买。 若要了解详细信息, 请参阅以下资源:
 
 - 有关包含 ATP 计划的订阅的列表, 请参阅[Office 365 高级威胁防护 (ATP) 可用性](https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description#office-365-advanced-threat-protection-atp-availability)。
 
