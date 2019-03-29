@@ -1,74 +1,53 @@
 ---
-title: EOP 入门视频
+title: 什么是 EOP
 ms.author: tracyp
-author: MSFTTracyP
+author: msfttracyp
+ms.reviewer: andypunt
 manager: laurawi
-ms.date: 3/13/2015
+ms.date: 2/25/2019
 ms.audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
+ms.custom: TN2DMC
 localization_priority: Normal
-ms.assetid: c9c39ada-6100-4034-a479-8bd39d428498
-ms.collection:
-- M365-security-compliance
-description: 通过下面的一系列视频，您可以了解如何设置和使用 Exchange Online Protection (EOP) 托管的电子邮件筛选服务。
-ms.openlocfilehash: 1e8aadd173f4e30c528679347171230e83752af0
-ms.sourcegitcommit: c0d4fe3e43e22353f30034567ade28330266bcf7
+search.appverid:
+- MET150
+ms.assetid: 393b0050-7c7e-49e6-a03d-b1e09fe4de9e
+description: 本简介文档将帮助您了解 Exchange Online Protection (EOP) 和一些重要的术语。 这适用于保护 exchange Online 云托管邮箱的 Office 365 客户和保护本地邮箱 (如 Exchange Server 2016) 的 EOP 独立客户。
+ms.openlocfilehash: f23f28b5c15c7057d1fd8ec77cce67bf1746410c
+ms.sourcegitcommit: fb50bf2f2c9d780c911f245a2f78c6bb5e357f67
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/27/2019
-ms.locfileid: "30926715"
+ms.lasthandoff: 03/28/2019
+ms.locfileid: "30950429"
 ---
-# <a name="videos-for-getting-started-with-eop"></a><span data-ttu-id="7a804-103">EOP 入门视频</span><span class="sxs-lookup"><span data-stu-id="7a804-103">Videos for getting started with EOP</span></span>
+## <a name="what-is-exchange-online-protection-eop"></a><span data-ttu-id="9c996-104">什么是 Exchange Online Protection (EOP)</span><span class="sxs-lookup"><span data-stu-id="9c996-104">What is Exchange Online Protection (EOP)</span></span>
 
-<span data-ttu-id="7a804-104">通过下面的一系列视频，您可以了解如何设置和使用 Exchange Online Protection (EOP) 托管的电子邮件筛选服务。</span><span class="sxs-lookup"><span data-stu-id="7a804-104">The following series of videos will help you set up and use the Exchange Online Protection (EOP) hosted email filtering service.</span></span>
-  
-> [!NOTE]
-> <span data-ttu-id="7a804-p101">在开始执行视频中介绍的任务之前，我们建议您先设置邮件流。有关详细信息，请参阅[Configure mail flow using connectors in Office 365](http://technet.microsoft.com/library/854b5a50-4462-4836-a092-37e208d29624.aspx)主题。</span><span class="sxs-lookup"><span data-stu-id="7a804-p101">Before you start the tasks described in the videos, we recommend that you set up mail flow. For more information, see the [Configure mail flow using connectors in Office 365](http://technet.microsoft.com/library/854b5a50-4462-4836-a092-37e208d29624.aspx) topic.</span></span> 
-  
-<span data-ttu-id="7a804-107">这些视频旨在介绍如何通过定制您的反垃圾邮件设置来满足您组织的需求。</span><span class="sxs-lookup"><span data-stu-id="7a804-107">These videos are about tailoring your anti-spam settings to fit the needs of your organization.</span></span> <span data-ttu-id="7a804-108">对于通过服务传递到组织的入站邮件，这包括如何根据 IP 地址创建白名单和黑名单列表，以及如何配置内容筛选设置。</span><span class="sxs-lookup"><span data-stu-id="7a804-108">For inbound mail traveling through the service to your organization, this includes creating safe sender and blocked sender lists based on IP addresses, and configuring content filter settings.</span></span> <span data-ttu-id="7a804-109">此外, 还显示了管理员如何查找和释放与发送到隔离的邮件流规则 (也称为传输规则) 相匹配的内容筛选的垃圾邮件或邮件, 以及如何报告垃圾邮件以帮助我们改进服务。</span><span class="sxs-lookup"><span data-stu-id="7a804-109">There's also a video showing how admins can find and release content-filtered spam messages or messages that matched a mail flow rule (also known as a transport rule) that were sent to the quarantine, and also how to report spam messages to help us improve the service.</span></span>
-  
-- <span data-ttu-id="7a804-110">在 EOP 中配置 IP 允许和 IP 阻止列表</span><span class="sxs-lookup"><span data-stu-id="7a804-110">Configure IP Allow and IP Block Lists in EOP</span></span>
-    > [!VIDEO https://www.microsoft.com/videoplayer/embed/b2f5bea3-e1a7-44b3-b7e2-07fac0d0ca40?autoplay=false]
-  
-    <span data-ttu-id="7a804-111">有关更多详细信息，请参阅[配置连接筛选器策略](../configure-the-connection-filter-policy.md)主题。</span><span class="sxs-lookup"><span data-stu-id="7a804-111">For more details, see the [Configure the connection filter policy](../configure-the-connection-filter-policy.md) topic.</span></span> 
-    
-- <span data-ttu-id="7a804-112">在 EOP 中配置垃圾邮件内容筛选</span><span class="sxs-lookup"><span data-stu-id="7a804-112">Configure Spam Content Filtering in EOP</span></span>
-    > [!VIDEO https://www.microsoft.com/videoplayer/embed/608be94c-d763-4c47-af94-99e7cb277713?autoplay=false]
-  
-    <span data-ttu-id="7a804-113">有关更多详细信息，请参阅[配置垃圾邮件筛选器策略](../configure-your-spam-filter-policies.md)主题。</span><span class="sxs-lookup"><span data-stu-id="7a804-113">For more details, see the [Configure your spam filter policies](../configure-your-spam-filter-policies.md) topic.</span></span> 
-    
-- <span data-ttu-id="7a804-114">从隔离区中查找和释放邮件</span><span class="sxs-lookup"><span data-stu-id="7a804-114">Find and Release Messages From the Quarantine</span></span>
-    > [!VIDEO https://www.microsoft.com/videoplayer/embed/2a78346d-a3ab-4d70-a88e-0c9d562f7545?autoplay=false]
-  
-    <span data-ttu-id="7a804-115">有关更多详细信息，请参阅[以管理员身份查找并释放隔离邮件](../find-and-release-quarantined-messages-as-an-administrator.md)主题。</span><span class="sxs-lookup"><span data-stu-id="7a804-115">For more details, see the [Find and release quarantined messages as an administrator](../find-and-release-quarantined-messages-as-an-administrator.md) topic.</span></span> 
-    
-<span data-ttu-id="7a804-p103">您可能还想要配置出站垃圾邮件策略，因为您想要监视垃圾邮件是否从组织发出。请查看出站垃圾邮件视频进行了解。</span><span class="sxs-lookup"><span data-stu-id="7a804-p103">You'll also want to configure the outbound spam policy because you'll want to monitor if spam is being sent from your organization. Check out the outbound spam video to learn how.</span></span>
-  
-- <span data-ttu-id="7a804-118">配置出站垃圾邮件策略</span><span class="sxs-lookup"><span data-stu-id="7a804-118">Configure the Outbound Spam Policy</span></span>
-    > [!VIDEO https://www.microsoft.com/videoplayer/embed/1f20d655-0d3d-4141-9cae-e57f5a6cffe8?autoplay=false]
-  
-    <span data-ttu-id="7a804-119">有关更多详细信息，请参阅[配置出站垃圾邮件策略](../configure-the-outbound-spam-policy.md)。</span><span class="sxs-lookup"><span data-stu-id="7a804-119">For more details, see the [Configure the outbound spam policy](../configure-the-outbound-spam-policy.md)</span></span>
-    
-<span data-ttu-id="7a804-120">EOP 的设置还针对如何处理服务检测到的恶意软件，反恶意软件筛选视频对此进行了说明。</span><span class="sxs-lookup"><span data-stu-id="7a804-120">EOP also has settings for how to handle malware that's detected by the service, which the anti-malware filtering video describes.</span></span>
-  
-- <span data-ttu-id="7a804-121">配置反恶意软件策略</span><span class="sxs-lookup"><span data-stu-id="7a804-121">Configure the Anti-Malware Policy</span></span>
-    > [!VIDEO https://www.microsoft.com/videoplayer/embed/12517702-ab48-4df8-a7ff-8eb02aa31724?autoplay=false]
-  
-    <span data-ttu-id="7a804-122">有关更多详细信息, 请参阅[配置反恶意软件策略](../configure-anti-malware-policies.md)主题。</span><span class="sxs-lookup"><span data-stu-id="7a804-122">For more details, see the [Configure anti-malware policies](../configure-anti-malware-policies.md) topic.</span></span> 
-    
-<span data-ttu-id="7a804-123">若要根据公司策略或管理法规根据您设置的特定条件筛选和路由邮件, 您需要观看有关如何创建邮件流规则的视频。</span><span class="sxs-lookup"><span data-stu-id="7a804-123">To filter and route messages based on specific conditions you set, based on company policy or regulations, you'll want to watch the video about how to create mail flow rules.</span></span>
-  
-- <span data-ttu-id="7a804-124">在 EOP 中配置 Exchange 邮件流规则</span><span class="sxs-lookup"><span data-stu-id="7a804-124">Configure Exchange mail flow rules in EOP</span></span>
-    > [!VIDEO https://www.microsoft.com/videoplayer/embed/7cdcd2cb-9382-4065-98e1-81257b32a189?autoplay=false]
-  
-    <span data-ttu-id="7a804-125">有关更多详细信息, 请参阅[exchange online Protection 主题中的邮件流规则 (传输规则)](mail-flow-rules-transport-rules-0.md)如果您使用 EOP 独立, 或者查看[exchange online 主题中的邮件流规则 (传输规则) (](http://technet.microsoft.com/library/743bd525-0ca2-426d-b76c-b4a052bc8886.aspx)如果使用的是 exchange online)。</span><span class="sxs-lookup"><span data-stu-id="7a804-125">For more details, see the [Mail flow rules (transport rules) in Exchange Online Protection](mail-flow-rules-transport-rules-0.md) topic if you use EOP standalone, or see [Mail flow rules (transport rules) in Exchange Online](http://technet.microsoft.com/library/743bd525-0ca2-426d-b76c-b4a052bc8886.aspx) topic if you use Exchange Online.</span></span>
-    
-<span data-ttu-id="7a804-126">如果您想要通过从命令行运行脚本来配置服务，远程 PowerShell 视频将帮助您入门。</span><span class="sxs-lookup"><span data-stu-id="7a804-126">f you're interested in configuring the service by running scripts from the command line, the remote PowerShell video will help you get started.</span></span>
-  
-- <span data-ttu-id="7a804-127">在 EOP 中使用远程 PowerShell</span><span class="sxs-lookup"><span data-stu-id="7a804-127">Use Remote PowerShell in EOP</span></span>
-    > [!VIDEO https://www.microsoft.com/videoplayer/embed/9cb28006-c2cb-45b6-b72e-eeed8767dee7?autoplay=false]
-  
-    <span data-ttu-id="7a804-128">有关更多详细信息，请参阅[Exchange Online Protection 中的 PowerShell](http://technet.microsoft.com/library/f7918a88-774a-405e-945b-bc2f5ee9f748.aspx)主题（如果您使用 EOP 独立版）或者[Exchange Online PowerShell](http://technet.microsoft.com/library/1cb603b0-2961-4afe-b879-b048fe0f64a2.aspx)主题（如果您使用 Exchange Online）。</span><span class="sxs-lookup"><span data-stu-id="7a804-128">For more details, see the [PowerShell in Exchange Online Protection](http://technet.microsoft.com/library/f7918a88-774a-405e-945b-bc2f5ee9f748.aspx) topic if you use EOP standalone, or see the [Exchange Online PowerShell](http://technet.microsoft.com/library/1cb603b0-2961-4afe-b879-b048fe0f64a2.aspx) topic if you use Exchange Online.</span></span> 
-    
+<span data-ttu-id="9c996-105">Exchange Online Protection (EOP) 是一种基于云的电子邮件筛选服务, 可帮助组织抵御垃圾邮件和恶意软件。</span><span class="sxs-lookup"><span data-stu-id="9c996-105">Exchange Online Protection (EOP) is a cloud-based email filtering service that helps protect your organization against spam and malware.</span></span> <span data-ttu-id="9c996-106">如果您的邮箱在 Office 365 中, 它们将自动受 EOP 保护, 因为它是服务的一部分。</span><span class="sxs-lookup"><span data-stu-id="9c996-106">If you have mailboxes in Office 365, they are automatically protected by EOP since it is part of the service.</span></span> <span data-ttu-id="9c996-107">这包括在 Office 365 和内部部署中具有邮箱的组织, 这些邮箱通常称为混合方案。</span><span class="sxs-lookup"><span data-stu-id="9c996-107">This includes organizations that have mailboxes in both Office 365 and on-premise, which is commonly known as a hybrid scenario.</span></span> <span data-ttu-id="9c996-108">此外, EOP 还可用于在云中没有邮箱但要保护其内部部署邮箱的客户。</span><span class="sxs-lookup"><span data-stu-id="9c996-108">EOP standalone is also available for customers who do not have mailboxes in the cloud but want to protect their on-premise mailboxes.</span></span> 
 
+<span data-ttu-id="9c996-109">EOP 尝试筛选出垃圾邮件, 使您的收件箱不清楚用户不希望看到的内容。</span><span class="sxs-lookup"><span data-stu-id="9c996-109">EOP attempts to filter out junk, keeping your Inbox clear of content that users don't want to see.</span></span> <span data-ttu-id="9c996-110">通常情况下, 垃圾邮件会传递到 "垃圾邮件" 文件夹。</span><span class="sxs-lookup"><span data-stu-id="9c996-110">Normally, junk mail is delivered to the Junk Email folder.</span></span> <span data-ttu-id="9c996-111">一些用户希望进行检查以确保筛选正在执行所需的操作, 因此 "垃圾邮件" 文件夹是用户自己进行签的简单方法。</span><span class="sxs-lookup"><span data-stu-id="9c996-111">Some users like to check to make sure the filtering is doing what they want so the Junk Email folder is an easy way for users to check on their own.</span></span>  
+
+> [!TIP]
+> <span data-ttu-id="9c996-112">如果垃圾邮件自动进入垃圾邮件文件夹, 这是一件好事。</span><span class="sxs-lookup"><span data-stu-id="9c996-112">It is a good thing when junk or otherwise bad email goes into the Junk Email folder automatically.</span></span> <span data-ttu-id="9c996-113">该服务将根据默认或自定义管理员设置的状态, 执行所需的操作。</span><span class="sxs-lookup"><span data-stu-id="9c996-113">The service will do what is necessary based on what the default or the custom admin settings state.</span></span> <span data-ttu-id="9c996-114">换句话说, 用户不应担心在 "垃圾邮件" 文件夹中看到大量垃圾邮件。</span><span class="sxs-lookup"><span data-stu-id="9c996-114">In other words, users should not worry about seeing a lot of spam mail in the Junk Email folder.</span></span> <span data-ttu-id="9c996-115">如果管理员更喜欢移动所有垃圾邮件, 则应配置隔离。</span><span class="sxs-lookup"><span data-stu-id="9c996-115">If admins prefer to move all junk out of sight, then the Quarantine should be configured.</span></span> <span data-ttu-id="9c996-116">有关更多详细信息, 请参阅[在 Office 365 文章中隔离电子](../quarantine-email-messages.md)邮件。</span><span class="sxs-lookup"><span data-stu-id="9c996-116">For more details, see the [Quarantine email messages in Office 365](../quarantine-email-messages.md) article.</span></span>
+
+## <a name="important-terms"></a><span data-ttu-id="9c996-117">重要术语</span><span class="sxs-lookup"><span data-stu-id="9c996-117">Important terms</span></span>
+
+<span data-ttu-id="9c996-118">**入站:** 将进入 Office 365 的邮件。</span><span class="sxs-lookup"><span data-stu-id="9c996-118">**Inbound:** Messages that are coming into Office 365.</span></span>
+
+<span data-ttu-id="9c996-119">**出站:** 来自 Office 365 的邮件。</span><span class="sxs-lookup"><span data-stu-id="9c996-119">**Outbound:** Messages that are going out of Office 365.</span></span>
+
+<span data-ttu-id="9c996-120">**Internal:** 来自组织内部的某个人的邮件到组织内的某个人。</span><span class="sxs-lookup"><span data-stu-id="9c996-120">**Internal:** Messages that are from someone inside the organization to someone inside the organization.</span></span> <span data-ttu-id="9c996-121">这包括在混合方案中的客户和一个邮箱可以在本地, 另一个邮箱位于云中。</span><span class="sxs-lookup"><span data-stu-id="9c996-121">This includes customers who are in hybrid scenarios and one mailbox could be on-premise and the other mailbox is in the cloud.</span></span>
+
+<span data-ttu-id="9c996-122">**假负 (FN):** 垃圾邮件和其他不正确发送到收件箱的垃圾邮件。</span><span class="sxs-lookup"><span data-stu-id="9c996-122">**False Negative (FN):** Spam and other junk that incorrectly gets sent into the inbox.</span></span>
+
+<span data-ttu-id="9c996-123">**误报 (FP):** 错误地被标记为垃圾邮件并放入垃圾电子邮件文件夹或隔离的合法邮件。</span><span class="sxs-lookup"><span data-stu-id="9c996-123">**False Positive (FP):** Legitimate messages that incorrectly get marked as spam and put into the Junk Email folder or Quarantine.</span></span>
+
+<span data-ttu-id="9c996-124">**垃圾邮件, 也称为主动电子邮件:** 这是商业广告、连锁信函、政治邮件等的形式。这是一封电子邮件, 用户不会在试图提出产品或试图提交欺诈行为的垃圾邮件发件人注册和发件人。</span><span class="sxs-lookup"><span data-stu-id="9c996-124">**Spam, also known as unsolicited e-mail:** This comes in the form of commercial advertising, chain letters, political mailings, etc. This is email that users do not sign up for and from spammers who are trying to solicit products or attempting to commit fraud.</span></span>
+
+<span data-ttu-id="9c996-125">**网络钓鱼:**"网络钓鱼" 是一种特殊类型的垃圾邮件, 旨在欺骗您出于提交身份盗窃或欺诈行为的目的而提供个人信息。</span><span class="sxs-lookup"><span data-stu-id="9c996-125">**Phish:** Phishing is a special type of spam that is intended to trick you into giving up personal information for the purpose of committing identity theft or fraud.</span></span> <span data-ttu-id="9c996-126">这种类型的邮件通常包含恶意链接或附件, 但并不总是。</span><span class="sxs-lookup"><span data-stu-id="9c996-126">This type of message usually contains a malicious link or attachment, but not always.</span></span>
+
+<span data-ttu-id="9c996-127">**哄骗:** 哄骗是指当垃圾邮件制造者伪造发件人邮件头, 以便邮件看起来来自于实际来源以外的其他人或其他地方。</span><span class="sxs-lookup"><span data-stu-id="9c996-127">**Spoof:** Spoofing is when spammers forge the FROM header so that messages appear to have originated from someone or somewhere other than the actual source.</span></span> <span data-ttu-id="9c996-128">这可以是垃圾邮件, 但最常用于网络钓鱼用户。</span><span class="sxs-lookup"><span data-stu-id="9c996-128">This can be spam but most commonly used to phish users.</span></span>
+
+<span data-ttu-id="9c996-129">**模拟:** 这种类型的垃圾邮件也是伪造发件人地址的一种方法, 但通过修改名称或域的一部分使其看起来像真实的来源一样实现。</span><span class="sxs-lookup"><span data-stu-id="9c996-129">**Impersonation:** This type of spam is also a way to forge the sender address, but it is done by modifying part of the name or domain so that it looks like the real source.</span></span> <span data-ttu-id="9c996-130">例如, Bi11@micr0s0ft.com, 即 Bill 中的 "l" 实际上是数字十一, 而 Microsoft 中的 "o" 替换为数字零。</span><span class="sxs-lookup"><span data-stu-id="9c996-130">For example, Bi11@micr0s0ft.com, where the "l" in Bill was actually the number eleven and the "o" in Microsoft was replaced with the number zero.</span></span>
+
+<span data-ttu-id="9c996-131">**批量:** 通常情况下, 用户会请求批量邮件, 尽管有时会在公司向其他公司销售信息时间接使用。</span><span class="sxs-lookup"><span data-stu-id="9c996-131">**Bulk:** Bulk mail is usually solicited by users, although sometimes indirectly when companies sell information to other companies.</span></span> <span data-ttu-id="9c996-132">用户有意注册批量邮件 (如 newletters), 但稍后又忘记了垃圾邮件, 这很常见。</span><span class="sxs-lookup"><span data-stu-id="9c996-132">It is common that users intentionally sign up for bulk mail (i.e. newletters) but forget later on and think it is spam.</span></span> <span data-ttu-id="9c996-133">当批量邮件发送超过用户的注册和投诉级别变得过高时, 批量邮件将成为垃圾邮件。</span><span class="sxs-lookup"><span data-stu-id="9c996-133">Bulk mail becomes spam when bulk mailers send more than users sign up and complaint levels get too high.</span></span>

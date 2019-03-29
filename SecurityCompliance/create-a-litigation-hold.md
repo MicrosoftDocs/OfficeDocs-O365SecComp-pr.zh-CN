@@ -1,5 +1,5 @@
 ---
-title: 在 Office 365 中创建诉讼保留
+title: 创建诉讼保留
 ms.author: markjjo
 author: markjjo
 manager: laurawi
@@ -10,54 +10,82 @@ ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid: MET150
 ms.assetid: 39db1659-0b12-4243-a21c-2614512dcb44
-ms.openlocfilehash: f2d3793eac84e8f80158842c833c30986b0549c5
-ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
+ms.openlocfilehash: e4cb614167f89cb6e99d96aa94027ba90d86543e
+ms.sourcegitcommit: 1658be51e2c21ed23bc4467a98af74300a45b975
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30218652"
+ms.lasthandoff: 03/26/2019
+ms.locfileid: "30862404"
 ---
-# <a name="create-a-litigation-hold-in-office-365"></a><span data-ttu-id="6105c-102">在 Office 365 中创建诉讼保留</span><span class="sxs-lookup"><span data-stu-id="6105c-102">Create a Litigation Hold in Office 365</span></span>
+# <a name="create-a-litigation-hold"></a><span data-ttu-id="0da92-102">创建诉讼保留</span><span class="sxs-lookup"><span data-stu-id="0da92-102">Create a Litigation Hold</span></span>
 
-<span data-ttu-id="6105c-p101">您可以将邮箱置于诉讼保留状态, 以保留所有邮箱内容, 包括已删除项目和已修改项目的原始版本。将用户邮箱置于诉讼保留状态时, 用户的存档邮箱 (如果已启用) 中的内容也会保留。创建保留时, 可以指定保留持续时间 (也称为*基于时间的保留*), 以便在指定时间段内保留已删除和已修改的项目, 然后从邮箱中永久删除。或者, 也可以无限期保留内容 (称为*无限保留*), 或者直到删除诉讼保留。如果您指定保留持续时间段, 则它将根据接收邮件的日期或创建邮箱项目计算得出。</span><span class="sxs-lookup"><span data-stu-id="6105c-p101">You can place a mailbox on Litigation Hold to retain all mailbox content, including deleted items and the original versions of modified items. When you place a user mailbox on Litigation Hold, content in the user's archive mailbox (if it's enabled) is also retained. When you create a hold, you can specify a hold duration (also called a *time-based hold*) so that deleted and modified items are retained for a specified period and then permanently deleted from the mailbox. Or you can just retain content indefinitely (called an *infinite hold*) or until the Litigation Hold is removed. If you do specify a hold duration period, it's calculated from the date a message is received or a mailbox item is created.</span></span> 
+<span data-ttu-id="0da92-103">您可以将邮箱置于诉讼保留状态, 以保留所有邮箱内容, 包括已删除项目和已修改项目的原始版本。</span><span class="sxs-lookup"><span data-stu-id="0da92-103">You can place a mailbox on Litigation Hold to retain all mailbox content, including deleted items and the original versions of modified items.</span></span> <span data-ttu-id="0da92-104">将用户邮箱置于诉讼保留状态时, 用户的存档邮箱 (如果已启用) 中的内容也会保留。</span><span class="sxs-lookup"><span data-stu-id="0da92-104">When you place a user mailbox on Litigation Hold, content in the user's archive mailbox (if it's enabled) is also retained.</span></span> <span data-ttu-id="0da92-105">创建保留时, 可以指定保留持续时间 (也称为*基于时间的保留*), 以便在指定时间段内保留已删除和已修改的项目, 然后从邮箱中永久删除。</span><span class="sxs-lookup"><span data-stu-id="0da92-105">When you create a hold, you can specify a hold duration (also called a *time-based hold*) so that deleted and modified items are retained for a specified period and then permanently deleted from the mailbox.</span></span> <span data-ttu-id="0da92-106">或者, 也可以无限期保留内容 (称为*无限保留*), 或者直到删除诉讼保留。</span><span class="sxs-lookup"><span data-stu-id="0da92-106">Or you can just retain content indefinitely (called an *infinite hold*) or until the Litigation Hold is removed.</span></span> <span data-ttu-id="0da92-107">如果您指定保留持续时间段, 则它将根据接收邮件的日期或创建邮箱项目计算得出。</span><span class="sxs-lookup"><span data-stu-id="0da92-107">If you do specify a hold duration period, it's calculated from the date a message is received or a mailbox item is created.</span></span> 
   
-<span data-ttu-id="6105c-108">以下是创建诉讼保留时发生的情况。</span><span class="sxs-lookup"><span data-stu-id="6105c-108">Here's what happens when you create a Litigation Hold.</span></span>
+<span data-ttu-id="0da92-108">以下是创建诉讼保留时发生的情况。</span><span class="sxs-lookup"><span data-stu-id="0da92-108">Here's what happens when you create a Litigation Hold.</span></span>
   
-- <span data-ttu-id="6105c-109">被用户永久删除的项目将保留在用户邮箱中的 "可恢复的项目" 文件夹中的保留期。</span><span class="sxs-lookup"><span data-stu-id="6105c-109">Items that are permanently deleted by the user are retained in the Recoverable Items folder in the user's mailbox for the duration of the hold.</span></span>
+- <span data-ttu-id="0da92-109">被用户永久删除的项目将保留在用户邮箱中的 "可恢复的项目" 文件夹中的保留期。</span><span class="sxs-lookup"><span data-stu-id="0da92-109">Items that are permanently deleted by the user are retained in the Recoverable Items folder in the user's mailbox for the duration of the hold.</span></span>
     
-- <span data-ttu-id="6105c-110">用户在 "可恢复的项目" 文件夹中清除的项目将在保留期间保留。</span><span class="sxs-lookup"><span data-stu-id="6105c-110">Items that are purged from the Recoverable Items folder by the user are retained for the duration of the hold.</span></span>
+- <span data-ttu-id="0da92-110">用户在 "可恢复的项目" 文件夹中清除的项目将在保留期间保留。</span><span class="sxs-lookup"><span data-stu-id="0da92-110">Items that are purged from the Recoverable Items folder by the user are retained for the duration of the hold.</span></span>
     
-- <span data-ttu-id="6105c-111">"可恢复的项目" 文件夹的存储配额从 30 gb 增加到 110 gb。</span><span class="sxs-lookup"><span data-stu-id="6105c-111">The storage quota for the Recoverable Items folder is increased from 30 GB to 110 GB.</span></span>
+- <span data-ttu-id="0da92-111">"可恢复的项目" 文件夹的存储配额从 30 gb 增加到 110 gb。</span><span class="sxs-lookup"><span data-stu-id="0da92-111">The storage quota for the Recoverable Items folder is increased from 30 GB to 110 GB.</span></span>
     
-- <span data-ttu-id="6105c-112">用户主和存档邮箱中的项目将保留</span><span class="sxs-lookup"><span data-stu-id="6105c-112">Items in the user's primary and the archive mailboxes are retained</span></span>
+- <span data-ttu-id="0da92-112">用户主和存档邮箱中的项目将保留</span><span class="sxs-lookup"><span data-stu-id="0da92-112">Items in the user's primary and the archive mailboxes are retained</span></span>
     
-## <a name="before-you-begin"></a><span data-ttu-id="6105c-113">准备工作</span><span class="sxs-lookup"><span data-stu-id="6105c-113">Before you begin</span></span>
+## <a name="before-you-begin"></a><span data-ttu-id="0da92-113">开始之前</span><span class="sxs-lookup"><span data-stu-id="0da92-113">Before you begin</span></span>
 
-- <span data-ttu-id="6105c-p102">若要在诉讼保留中放置 Exchange online 邮箱, 必须为其分配 exchange online 计划2许可证。如果向某个邮箱分配了 Exchange Online 计划1许可证, 则必须为其分配一个单独的 Exchange online 存档许可证以将其置于保留状态。</span><span class="sxs-lookup"><span data-stu-id="6105c-p102">To place an Exchange Online mailbox on Litigation Hold, it must be assigned an Exchange Online Plan 2 license. If a mailbox is assigned an Exchange Online Plan 1 license, you would have to assign it a separate Exchange Online Archiving license to place it on hold.</span></span>
+- <span data-ttu-id="0da92-114">若要在诉讼保留中放置 Exchange online 邮箱, 必须为其分配 exchange online 计划2许可证。</span><span class="sxs-lookup"><span data-stu-id="0da92-114">To place an Exchange Online mailbox on Litigation Hold, it must be assigned an Exchange Online Plan 2 license.</span></span> <span data-ttu-id="0da92-115">如果向某个邮箱分配了 Exchange Online 计划1许可证, 则必须为其分配一个单独的 Exchange online 存档许可证以将其置于保留状态。</span><span class="sxs-lookup"><span data-stu-id="0da92-115">If a mailbox is assigned an Exchange Online Plan 1 license, you would have to assign it a separate Exchange Online Archiving license to place it on hold.</span></span>
     
 
-## <a name="place-a-mailbox-on-litigation-hold-in-the-office-365-admin-center"></a><span data-ttu-id="6105c-116">在 Office 365 管理中心中将邮箱置于诉讼保留状态</span><span class="sxs-lookup"><span data-stu-id="6105c-116">Place a mailbox on Litigation Hold in the Office 365 admin center</span></span>
+## <a name="place-a-mailbox-on-litigation-hold"></a><span data-ttu-id="0da92-116">将邮箱置于诉讼保留</span><span class="sxs-lookup"><span data-stu-id="0da92-116">Place a mailbox on Litigation Hold</span></span>
 
-<span data-ttu-id="6105c-117">以下是使用 Office 365 管理中心将 maibox 置于诉讼保留状态的步骤。</span><span class="sxs-lookup"><span data-stu-id="6105c-117">Here are the steps to place a maibox on Litigation Hold using the Office 365 admin center.</span></span>
+<span data-ttu-id="0da92-117">以下是使用 Exchange 管理中心将邮箱置于诉讼保留状态的步骤。</span><span class="sxs-lookup"><span data-stu-id="0da92-117">Here are the steps to place a mailbox on Litigation Hold using the Exchange admin center.</span></span>
 
-1. <span data-ttu-id="6105c-118">转到https://portal.office.com/adminportal/home并使用全局管理员帐户登录。</span><span class="sxs-lookup"><span data-stu-id="6105c-118">Go to https://portal.office.com/adminportal/home and sign in using your global administrator account.</span></span>
-2. <span data-ttu-id="6105c-119">单击左侧导航窗格中的 "**用户** > **活动用户**"。</span><span class="sxs-lookup"><span data-stu-id="6105c-119">Click **Users** > **Active users** in the left navigation pane.</span></span>
-3. <span data-ttu-id="6105c-120">选择要将其邮箱置于诉讼保留状态的用户。</span><span class="sxs-lookup"><span data-stu-id="6105c-120">Select the user whose mailbox you want to place on Litigation Hold.</span></span>
-4. <span data-ttu-id="6105c-121">在 "飞出" 页面上, 单击 "**邮件设置**", 然后单击 "**诉讼保留**" 旁边的 "**编辑**"。</span><span class="sxs-lookup"><span data-stu-id="6105c-121">On the fly-out page, click **Mail settings**, and then click **Edit** next to **Litigation hold**.</span></span>
-5. <span data-ttu-id="6105c-122">在 "**诉讼保留**" 页上, 单击 "切换" 以启用诉讼保留并完成显示的以下可选设置:</span><span class="sxs-lookup"><span data-stu-id="6105c-122">On the **Litigation hold** page, click the toggle to turn on Litigation Hold and complete the following optional settings that are displayed:</span></span>
- 
-    ![O365_LitigationHold1](media/O365-LitigationHold1.png)
+1. <span data-ttu-id="0da92-118">转到[https://outlook.office.com/ecp](https://outlook.office.com/ecp)并使用全局管理员帐户登录。</span><span class="sxs-lookup"><span data-stu-id="0da92-118">Go to [https://outlook.office.com/ecp](https://outlook.office.com/ecp) and sign in using your global administrator account.</span></span>
 
-    <span data-ttu-id="6105c-p103">一.**保留持续时间 (天)** -使用此框可以创建基于时间的保留, 并指定在将邮箱置于诉讼保留状态时邮箱项目的保留时间。持续时间从接收或创建邮箱项目的日期开始计算。如果将此框保留为空, 则项目将无限期保留或在删除保留之前进行。使用 "天" 指定持续时间。</span><span class="sxs-lookup"><span data-stu-id="6105c-p103">a. **Hold duration (days)** - Use this box to create a time-based hold and specify how long mailbox items are held when the mailbox is placed on Litigation Hold. The duration is calculated from the date a mailbox item is received or created. If you leave this box blank, items are held indefinitely or until the hold is removed. Use days to specify the duration.</span></span>
+2. <span data-ttu-id="0da92-119">单击左侧导航窗格中的 "**收件人 > 邮箱**"。</span><span class="sxs-lookup"><span data-stu-id="0da92-119">Click **Recipients > Mailboxes** in the left navigation pane.</span></span>
+
+3. <span data-ttu-id="0da92-120">选择要置于诉讼保留状态的邮箱, 然后单击 "**编辑**"。</span><span class="sxs-lookup"><span data-stu-id="0da92-120">Select the mailbox that you want to place on Litigation Hold, and then click **Edit**.</span></span>
+
+4. <span data-ttu-id="0da92-121">在邮箱属性页上, 单击 "**邮箱功能**"。</span><span class="sxs-lookup"><span data-stu-id="0da92-121">On the mailbox properties page, click **Mailbox features**.</span></span>
     
-    <span data-ttu-id="6105c-p104">b.**注意**-使用此框通知用户其邮箱处于诉讼保留状态。如果用户使用的是 Outlook 2010 或更高版本, 注释将显示在用户邮箱中的 "帐户信息" 页面上。若要访问此页面, 用户可以在 Outlook 中单击 "**文件**"。</span><span class="sxs-lookup"><span data-stu-id="6105c-p104">b. **Note** - Use this box to inform the user their mailbox is on Litigation Hold. The note will appear on the Account Information page in the user's mailbox if they're using Outlook 2010 or later. To access this page, users can click **File** in Outlook.</span></span>
-     
-    <span data-ttu-id="6105c-p105">c. 网页\*\*\*\* -使用此框将用户定向到网站, 以获取有关诉讼保留的详细信息。如果用户使用的是 Outlook 2010 或更高版本, 则此 URL 将显示在用户邮箱中的 "帐户信息" 页面上。若要访问此页面, 用户可以在 Outlook 中单击 "**文件**"。</span><span class="sxs-lookup"><span data-stu-id="6105c-p105">c. **Web page** - Use this box to direct the user to a website for more information about Litigation Hold. This URL appears on the Account Information page in the user's mailbox if they are using Outlook 2010 or later. To access this page, users can click **File** in Outlook.</span></span>
- 
-6. <span data-ttu-id="6105c-137">单击 "**保存**" 以创建诉讼保留。</span><span class="sxs-lookup"><span data-stu-id="6105c-137">Click **Save** to create the Litigation Hold.</span></span>
+5. <span data-ttu-id="0da92-122">在 "**诉讼保留: 已禁用**" 下, 单击 "**启用**" 以将邮箱置于诉讼保留状态。</span><span class="sxs-lookup"><span data-stu-id="0da92-122">Under **Litigation hold: Disabled**, click **Enable** to place the mailbox on Litigation Hold.</span></span>
+    
+6. <span data-ttu-id="0da92-123">在 "**诉讼保留**" 页上, 输入以下可选信息:</span><span class="sxs-lookup"><span data-stu-id="0da92-123">On the **Litigation hold** page, enter the following optional information:</span></span> 
+    
+    - <span data-ttu-id="0da92-124">**诉讼保留持续时间 (天)** -使用此框可以创建基于时间的保留, 并指定在将邮箱置于诉讼保留状态时邮箱项目的保留时间。</span><span class="sxs-lookup"><span data-stu-id="0da92-124">**Litigation hold duration (days)** - Use this box to create a time-based hold and specify how long mailbox items are held when the mailbox is placed on Litigation Hold.</span></span> <span data-ttu-id="0da92-125">持续时间从接收或创建邮箱项目的日期开始计算。</span><span class="sxs-lookup"><span data-stu-id="0da92-125">The duration is calculated from the date a mailbox item is received or created.</span></span> <span data-ttu-id="0da92-126">当特定项目的保留持续时间过期时, 将不再保留该项目。</span><span class="sxs-lookup"><span data-stu-id="0da92-126">When the hold duration expires for a specific item, that item will no longer be preserved.</span></span> <span data-ttu-id="0da92-127">如果将此框保留为空, 则会无限期保留项目或删除保留。</span><span class="sxs-lookup"><span data-stu-id="0da92-127">If you leave this box blank, items are preserved indefinitely or until the hold is removed.</span></span> <span data-ttu-id="0da92-128">使用天指定持续时间。</span><span class="sxs-lookup"><span data-stu-id="0da92-128">Use days to specify the duration.</span></span>
+    
+    - <span data-ttu-id="0da92-129">**注意**-使用此框可通知用户其邮箱处于诉讼保留状态。</span><span class="sxs-lookup"><span data-stu-id="0da92-129">**Note** - Use this box to inform the user their mailbox is on Litigation Hold.</span></span> <span data-ttu-id="0da92-130">如果用户使用的是 Outlook 2010 或更高版本, 注释将显示在用户邮箱中的 "帐户信息" 页面上。</span><span class="sxs-lookup"><span data-stu-id="0da92-130">The note will appear on the Account Information page in the user's mailbox if they're using Outlook 2010 or later.</span></span> <span data-ttu-id="0da92-131">若要访问此页面, 用户可以在 Outlook 中单击 "**文件**"。</span><span class="sxs-lookup"><span data-stu-id="0da92-131">To access this page, users can click **File** in Outlook.</span></span>
+    
+    - <span data-ttu-id="0da92-132">**URL** -使用此框可将用户定向到网站, 以获取有关诉讼保留的详细信息。</span><span class="sxs-lookup"><span data-stu-id="0da92-132">**URL** - Use this box to direct the user to a website for more information about Litigation Hold.</span></span> <span data-ttu-id="0da92-133">如果用户使用的是 Outlook 2010 或更高版本, 则此 URL 将显示在用户邮箱中的 "帐户信息" 页面上。</span><span class="sxs-lookup"><span data-stu-id="0da92-133">This URL appears on the Account Information page in the user's mailbox if they are using Outlook 2010 or later.</span></span> <span data-ttu-id="0da92-134">若要访问此页面, 用户可以在 Outlook 中单击 "**文件**"。</span><span class="sxs-lookup"><span data-stu-id="0da92-134">To access this page, users can click **File** in Outlook..</span></span>
 
-<span data-ttu-id="6105c-138">创建保留后, 飞出页面上的邮件设置将显示所选用户的诉讼保留处于打开状态。</span><span class="sxs-lookup"><span data-stu-id="6105c-138">After you create the hold, the mail settings on the fly-out page shows that Litigation Hold is turned on for the selected user.</span></span>
+7. <span data-ttu-id="0da92-135">单击 "**诉讼保留**" 页上的 "**保存**", 然后单击 "邮箱属性" 页上的 "**保存**"。</span><span class="sxs-lookup"><span data-stu-id="0da92-135">Click **Save** on the **Litigation hold** page, and then click **Save** on the mailbox properties page.</span></span>
 
-![O365_LitigationHold2](media/O365-LitigationHold2.png)
+### <a name="create-a-litigation-hold-using-powershell"></a><span data-ttu-id="0da92-136">使用 PowerShell 创建诉讼保留</span><span class="sxs-lookup"><span data-stu-id="0da92-136">Create a Litigation Hold using PowerShell</span></span>
 
-<span data-ttu-id="6105c-140">有关创建和管理诉讼保留和使用 Exchange Online PowerShell 批量创建诉讼保留的详细信息, 请参阅[将邮箱置于诉讼保留状态](https://docs.microsoft.com/office365/SecurityCompliance/place-a-mailbox-on-litigation-hold)。</span><span class="sxs-lookup"><span data-stu-id="6105c-140">For more information about creating and managing Litigation Holds and using Exchange Online PowerShell to bulk-create Litigation Holds, see [Place a mailbox on Litigation Hold](https://docs.microsoft.com/office365/SecurityCompliance/place-a-mailbox-on-litigation-hold).</span></span>
+<span data-ttu-id="0da92-137">您还可以通过在[Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell)中运行以下命令来创建诉讼保留:</span><span class="sxs-lookup"><span data-stu-id="0da92-137">You can also create a Litigation Hold by running the following command in [Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell):</span></span>
+
+```
+Set-Mailbox <username> -LitigationHoldEnabled $true
+```
+
+<span data-ttu-id="0da92-138">由于未指定保留持续时间, 上一个命令将无限期保留项目。</span><span class="sxs-lookup"><span data-stu-id="0da92-138">The previous command preserves items indefinitely because the hold duration isn't specified.</span></span> <span data-ttu-id="0da92-139">若要创建基于时间的保留, 请使用以下命令:</span><span class="sxs-lookup"><span data-stu-id="0da92-139">To created a time-based hold, using the following command:</span></span>
+
+```
+Set-Mailbox <username> -LitigationHoldEnabled $true -LitigationHoldDuration <number of days>
+```
+
+<span data-ttu-id="0da92-140">有关详细信息, 请参阅[设置邮箱](https://docs.microsoft.com/en-us/powershell/module/exchange/mailboxes/set-mailbox)。</span><span class="sxs-lookup"><span data-stu-id="0da92-140">For more information, see [Set-Mailbox](https://docs.microsoft.com/en-us/powershell/module/exchange/mailboxes/set-mailbox).</span></span>
+
+## <a name="how-does-litigation-hold-work"></a><span data-ttu-id="0da92-141">诉讼保留的工作原理是什么？</span><span class="sxs-lookup"><span data-stu-id="0da92-141">How does Litigation Hold work?</span></span>
+
+<span data-ttu-id="0da92-142">在正常的已删除邮件工作流中，当用户永久删除 (Shift + Delete) 或从已删除邮件文件夹中删除某个邮箱项目时，会将该项目移动到"可恢复的项目"文件夹中的"删除"子文件夹。</span><span class="sxs-lookup"><span data-stu-id="0da92-142">In the normal deleted item workflow, a mailbox item is moved to the Deletions subfolder in the Recoverable Items folder when a user permanently deletes it (Shift + Delete) or deletes it from the Deleted Items folder.</span></span> <span data-ttu-id="0da92-143">当保留期到期时，删除策略（这是使用删除保留操作配置的保留标记）也将项目移动到"删除"子文件夹。</span><span class="sxs-lookup"><span data-stu-id="0da92-143">A deletion policy (which is a retention tag configured with a Delete retention action) also moves items to the Deletions subfolder when the retention period expires.</span></span> <span data-ttu-id="0da92-144">当用户清除"可恢复的项目"文件夹中的某个项目时或者当某个项目的已删除邮件保留期到期时，该项目将被移动到"可恢复的项目"文件夹中的"清除"子文件夹并标记为永久删除。</span><span class="sxs-lookup"><span data-stu-id="0da92-144">When a user purges an item in the Recoverable Items folder or when the deleted item retention period expires for an item, it's moved to the Purges subfolder in the Recoverable Items folder and marked for permanent deletion.</span></span> <span data-ttu-id="0da92-145">下一次通过托管文件夹助理 (MFA) 处理邮箱时，将从 Exchange 中清除该邮箱。</span><span class="sxs-lookup"><span data-stu-id="0da92-145">It will be purged from Exchange the next time the mailbox is processed by the Managed Folder Assistant (MFA).</span></span>
+
+<span data-ttu-id="0da92-p108">如果邮箱置于诉讼保留状态，在由诉讼保留指定的保留期限内会保留"清除"子文件中的项目。保留期限自接收或创建项目的原始日期算起，并且定义了保留"清除"子文件中的项目的时长。"清除"子文件中的某个项目的保留期限到期时，将该项目标记为永久删除，并且下一次通过 MFA 处理邮箱时该项目将从 Exchange 中清除。如果邮箱中设置了无限期保留，则永远不会将项目从"清除"子文件中清除。</span><span class="sxs-lookup"><span data-stu-id="0da92-p108">When a mailbox is placed on Litigation Hold, items in the Purges subfolder are preserved for the hold duration specified by the Litigation Hold. The hold duration is calculated from the original date an item was received or created, and defines how long items in the Purges subfolder are held. When the hold duration expires for an item in the Purges subfolder, the item is marked for permanent deletion and will be purged from Exchange the next time the mailbox is processed by the MFA. If an indefinite hold is placed on a mailbox, items will never be purged from the Purges subfolder.</span></span>
+
+<span data-ttu-id="0da92-150">下图显示了"可恢复的项目"文件夹中的子文件夹和保留工作流程。</span><span class="sxs-lookup"><span data-stu-id="0da92-150">The following illustration shows the subfolders in the Recoverable Items folders and the hold workflow process.</span></span>
+
+![诉讼保留生命周期](media/LitigationHoldLifeCycle.png)
+
+> [!NOTE]
+> <span data-ttu-id="0da92-152">如果将与电子数据展示事例关联的保留放在邮箱中, 清除的项目将从 "删除" 子文件夹移动到 "DiscoveryHolds" 子文件夹, 并在邮箱从电子数据展示保留中释放之前保留。</span><span class="sxs-lookup"><span data-stu-id="0da92-152">If a hold associated with an eDiscovery case is placed on a mailbox, purged items are moved from the Deletions subfolder to the DiscoveryHolds subfolder and are preserved until the mailbox is released from the eDiscovery hold.</span></span>
+  
