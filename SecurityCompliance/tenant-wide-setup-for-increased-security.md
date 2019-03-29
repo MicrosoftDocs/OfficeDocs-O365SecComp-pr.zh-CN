@@ -15,12 +15,12 @@ ms.collection:
 search.appverid: MET150
 ms.assetid: 8d274fe3-db51-4107-ba64-865e7155b355
 description: 引导您完成影响 Office 365 环境安全性的租户范围设置的建议配置。 您的安全需求可能需要更高或更低的安全性。 使用这些建议作为起点。
-ms.openlocfilehash: fadaea97a3e79130f33250e39ea642a040a40a69
-ms.sourcegitcommit: 0f93b37c39d807dec91f118aa671a3430c47a9ac
+ms.openlocfilehash: 26f7bebd1eab1f43da356786bdef5f3fff860053
+ms.sourcegitcommit: 54d58da1777eb83adb82826d1bb1adb94903c8e1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/20/2019
-ms.locfileid: "30693321"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30955265"
 ---
 # <a name="configure-your-office-365-tenant-for-increased-security"></a>配置 Office 365 租户以提高安全性
 
@@ -30,9 +30,9 @@ ms.locfileid: "30693321"
 
 office 365 安全分数根据您的常规活动和安全设置来分析 office 365 组织的安全性, 并给出分数。 首先记录你的当前分数。 调整某些租户范围的设置将增加你的成绩。 目标不能达到最大分数, 但请注意保护您的环境不会对用户的工作效率造成负面影响的机会。 请参阅[简介 Office 365 安全分数](office-365-secure-score.md)。
   
-## <a name="tune-threat-management-policies-in-the-office-365-security-amp-compliance-center"></a>优化 Office 365 安全&amp;合规中心中的威胁管理策略
+## <a name="tune-threat-management-policies-in-the-microsoft-365-security-center"></a>在 Microsoft 365 安全中心调整威胁管理策略
 
-Office 365 安全&amp;合规中心包括保护环境的功能。 它还包括可用于监视和执行操作的报告和仪表板。 某些区域附带了默认策略配置。 某些区域不包含默认策略或规则。 请访问 "威胁管理" 下的这些策略, 以调整更安全的环境的威胁管理设置。 
+Microsoft 365 安全中心包含可保护您的环境的功能。 它还包括可用于监视和执行操作的报告和仪表板。 某些区域附带了默认策略配置。 某些区域不包含默认策略或规则。 请访问 "威胁管理" 下的这些策略, 以调整更安全的环境的威胁管理设置。 
   
 |区域 * * * *|包含默认策略 * * * *|建议 * * * *|
 |:-----|:-----|:-----|
@@ -41,27 +41,27 @@ Office 365 安全&amp;合规中心包括保护环境的功能。 它还包括可
 |**ATP 安全附件** <br/> |否  <br/> | 在安全附件的主页上, 通过选中此框来保护 SharePoint、OneDrive 和 Microsoft 团队中的文件:  <br/>  &ensp;&ensp;•打开适用于 SharePoint、OneDrive 和 Microsoft 团队的 ATP  <br/> <br> 使用以下设置添加新的安全附件策略:  <br/>  &ensp;&ensp;•阻止—使用检测到的恶意软件阻止当前和将来的电子邮件和附件 (选择此选项)  <br/>  &ensp;&ensp;•启用重定向-(选中此框并输入电子邮件地址, 如管理员或隔离帐户)  <br/>  &ensp;&ensp;•如果恶意软件扫描附件超时或发生错误, 则应用上述选择 (选中此框)  <br/>  &ensp;&ensp;•适用于—收件人域为 (选择您的域)  <br/>  <br>详细信息:[设置 Office 365 ATP 安全附件策略](set-up-atp-safe-attachments-policies.md) <br/> |
 |**ATP 安全链接** <br/> |是  <br/> | 将此设置添加到整个组织的默认策略:  <br/> &ensp;&ensp;•使用中的安全链接: office 365 专业增强版中的 office for iOS 和 Android (选择此选项)。  <br/> <br>针对特定收件人的推荐策略:  <br/>  &ensp;&ensp;•当用户单击链接 (选择此选项) 时, 将对 url 进行重写并对已知恶意链接列表进行检查。  <br/>  &ensp;&ensp;•使用安全附件扫描可下载的内容 (选中此框)。  <br/>  &ensp;&ensp;•适用于—收件人域为 (选择您的域)。  <br/> <br> 有关详细信息, 请: [Office 365 ATP 安全链接](atp-safe-links.md)。  <br/> |
 |**反垃圾邮件 (邮件筛选)** <br/> |是  <br/> | 要监视的内容:  <br/>  &ensp;&ensp;•垃圾邮件过多—选择 "自定义设置" 并编辑 "默认垃圾邮件筛选器" 策略。  <br/>  &ensp;&ensp;•欺骗性智能—查看欺骗您的域的发件人。 阻止或允许这些发件人。  <br/>  <br>有关详细信息, 请执行以下操作: [Office 365 电子邮件反垃圾邮件保护](anti-spam-protection.md)。  <br/> |
-|***电子邮件身份验证*** <br/> |是  <br/> |电子邮件身份验证使用域名系统 (DNS) 将可验证的信息添加到有关电子邮件发件人的电子邮件中。 office 365 为其默认域 (onmicrosoft.com) 设置电子邮件身份验证, 但 Office 365 管理员还可以对自定义域使用电子邮件身份验证。 使用三种身份验证方法: <br/> <br> &ensp;&ensp;•发件人策略框架 (或 SPF)。<br/>&ensp;&ensp;&ensp;&ensp;-有关设置, 请参阅[在 Office 365 中设置 SPF 以帮助防止欺骗](set-up-spf-in-office-365-to-help-prevent-spoofing.md)。 <br/> &ensp;&ensp;•域密钥识别邮件 (DKIM)。 <br/> &ensp;&ensp;&ensp;&ensp;-请参阅[在 Office 365 中使用自定义域中的电子邮件 DKIM](https://docs.microsoft.com/office365/SecurityCompliance/use-dkim-to-validate-outbound-email)。 <br>&ensp;&ensp;&ensp;&ensp;-配置 DKIM 后, 在安全&amp;合规中心中启用它。<br/> &ensp;&ensp;•基于域的邮件身份验证、报告和一致性 (DMARC)。 <br/> &ensp;&ensp;&ensp;&ensp;-适用于 DMARC 安装程序[使用 DMARC 验证 Office 365 中的电子邮件](use-dmarc-to-validate-email.md)。<br/>  <br/>
+|***电子邮件身份验证*** <br/> |是  <br/> |电子邮件身份验证使用域名系统 (DNS) 将可验证的信息添加到有关电子邮件发件人的电子邮件中。 office 365 为其默认域 (onmicrosoft.com) 设置电子邮件身份验证, 但 Office 365 管理员还可以对自定义域使用电子邮件身份验证。 使用三种身份验证方法: <br/> <br> &ensp;&ensp;•发件人策略框架 (或 SPF)。<br/>&ensp;&ensp;&ensp;&ensp;-有关设置, 请参阅[在 Office 365 中设置 SPF 以帮助防止欺骗](set-up-spf-in-office-365-to-help-prevent-spoofing.md)。 <br/> &ensp;&ensp;•域密钥识别邮件 (DKIM)。 <br/> &ensp;&ensp;&ensp;&ensp;-请参阅[在 Office 365 中使用自定义域中的电子邮件 DKIM](https://docs.microsoft.com/office365/SecurityCompliance/use-dkim-to-validate-outbound-email)。 <br>&ensp;&ensp;&ensp;&ensp;-配置 DKIM 后, 在安全中心启用它。<br/> &ensp;&ensp;•基于域的邮件身份验证、报告和一致性 (DMARC)。 <br/> &ensp;&ensp;&ensp;&ensp;-适用于 DMARC 安装程序[使用 DMARC 验证 Office 365 中的电子邮件](use-dmarc-to-validate-email.md)。<br/>  <br/>
 |
 
 > [!NOTE]
 > 对于 SPF、混合部署和故障排除的非标准部署: [Office 365 如何使用发件人策略框架 (SPF) 来防止欺骗](how-office-365-uses-spf-to-prevent-spoofing.md)。
 
-## <a name="view-dashboards-and-reports-in-the-security-amp-compliance-center"></a>查看安全&amp;合规性中心中的仪表板和报表
+## <a name="view-dashboards-and-reports-in-the-security-and-compliance-centers"></a>查看安全与合规中心中的仪表板和报告
 
-请访问这些报告和仪表板, 以了解有关你的环境运行状况的详细信息。 当您的组织使用 Office 365 服务时, 这些报告中的数据将变得更加丰富。 现在, 先熟悉你可以监视的内容并对其执行操作。 有关详细信息, 请参阅: [Office 365 安全&amp;合规中心中的报告](reports-in-security-and-compliance.md)。
+请访问这些报告和仪表板, 以了解有关你的环境运行状况的详细信息。 当您的组织使用 Office 365 服务时, 这些报告中的数据将变得更加丰富。 现在, 先熟悉你可以监视的内容并对其执行操作。 有关详细信息, 请参阅: [Microsoft 365 安全与合规中心中的报告](reports-in-security-and-compliance.md)。
   
 |仪表板 * * * *|****说明****|
 |:-----|:-----|
-|威胁管理仪表板  <br/> |在安全&amp;合规性中心的 "威胁管理" 部分中, 使用此仪表板查看已处理的威胁, 并作为一种方便的工具, 用于向业务决策制定者报告威胁调查和响应功能已经完成了保护业务的工作。  <br/> |
-|威胁资源管理器  <br/> |这也是安全&amp;合规性中心的 "威胁管理" 部分。 如果要调查或遇到针对 Office 365 租户的攻击, 请使用威胁资源管理器分析威胁。 威胁资源管理器显示一段时间内的攻击量, 并且您可以通过威胁系列、攻击者基础结构等对此数据进行分析。 您还可以标记事件列表的任何可疑电子邮件。  <br/> |
-|报告-仪表板  <br/> |在安全&amp;合规性中心的 "报告" 部分, 查看您的 SharePoint online 和 Exchange Online 组织的审核报告。 您还可以从 "查看报告" 页访问 azure Active Directory (AD) 用户登录报告、用户活动报告和 azure AD 审核日志。  <br/> |
+|威胁管理仪表板  <br/> |在安全中心的 "威胁管理" 部分, 使用此仪表板查看已处理的威胁, 并作为一种方便的工具, 用于向业务决策制定者报告已完成的威胁调查和响应功能保护您的企业。  <br/> |
+|威胁资源管理器  <br/> |这也是安全中心的 "威胁管理" 部分。 如果要调查或遇到针对 Office 365 租户的攻击, 请使用威胁资源管理器分析威胁。 威胁资源管理器显示一段时间内的攻击量, 并且您可以通过威胁系列、攻击者基础结构等对此数据进行分析。 您还可以标记事件列表的任何可疑电子邮件。  <br/> |
+|报告-仪表板  <br/> |在安全中心的 "报告" 部分, 查看您的 SharePoint online 和 Exchange Online 组织的审核报告。 您还可以从 "查看报告" 页访问 azure Active Directory (azure ad) 用户登录报告、用户活动报告和 azure AD 审核日志。  <br/> |
    
-![安全&amp;合规中心仪表板](media/870ab776-36d2-49c7-b615-93b2bc42fce5.png)
+![安全中心仪表板](media/870ab776-36d2-49c7-b615-93b2bc42fce5.png)
   
 ## <a name="configure-additional-exchange-online-tenant-wide-settings"></a>配置其他 Exchange Online 租户范围设置
 
-许多用于 Exchange 管理中心中的安全性和保护的控件也包含在安全与合规中心中。 您无需在这两个位置进行配置。 以下是建议的两个附加设置。 
+在 Exchange 管理中心中, 许多用于安全性和保护的控件也包含在安全中心中。 您无需在这两个位置进行配置。 以下是建议的两个附加设置。 
   
 |区域 * * * *|包含默认策略 * * * *|建议 * * * *|
 |:-----|:-----|:-----|
