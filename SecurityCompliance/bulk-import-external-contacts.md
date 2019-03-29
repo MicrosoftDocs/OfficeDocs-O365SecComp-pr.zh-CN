@@ -13,18 +13,18 @@ search.appverid:
 - MOP150
 ms.assetid: bed936bc-0969-4a6d-a7a5-66305c14e958
 description: 了解管理员如何使用 Exchange Online PowerShell 和 CSV 文件将外部联系人批量导入到全局地址列表。
-ms.openlocfilehash: a38565d5cbff61a954914bf156fb1bac0814c815
-ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
+ms.openlocfilehash: f95adcd54ebf2194536a199bca6fecf417064882
+ms.sourcegitcommit: 1658be51e2c21ed23bc4467a98af74300a45b975
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30215912"
+ms.lasthandoff: 03/26/2019
+ms.locfileid: "30862494"
 ---
 # <a name="bulk-import-external-contacts-to-exchange-online"></a>将外部联系人批量导入到 Exchange Online
 
 **本文适用于管理员。您是否正在尝试将联系人导入您自己的邮箱？请参阅[将联系人导入到 Outlook](https://support.office.com/article/bb796340-b58a-46c1-90c7-b549b8f3c5f8)**
    
-您的公司是否有许多您想要在 Exchange Online 中的共享通讯簿 (也称为 "全局地址列表") 中包含的现有业务联系人？您是否要将外部联系人添加为通讯组的成员, 就像您可以与公司内部的用户进行操作一样？如果是这样, 您可以使用 exchange online PowerShell 和 CSV (逗号分隔值) 文件将外部联系人批量导入 Exchange Online。这是一个包含三个步骤的过程:
+您的公司是否有许多您想要在 Exchange Online 中的共享通讯簿 (也称为 "全局地址列表") 中包含的现有业务联系人？ 您是否要将外部联系人添加为通讯组的成员, 就像您可以与公司内部的用户进行操作一样？ 如果是这样, 您可以使用 exchange online PowerShell 和 CSV (逗号分隔值) 文件将外部联系人批量导入 Exchange Online。 这是一个包含三个步骤的过程:
   
 [步骤 1: 创建包含有关外部联系人的信息的 CSV 文件](#step-1-create-a-csv-file-that-contains-information-about-the-external-contacts)
 
@@ -34,9 +34,9 @@ ms.locfileid: "30215912"
 
 完成这些步骤以导入联系人后, 可以执行以下其他任务:
   
-- [添加更多外部联系人](bulk-import-external-contacts.md#AddMore)
+- [添加更多外部联系人](#add-more-external-contacts)
   
-- [隐藏共享通讯簿中的外部联系人](bulk-import-external-contacts.md#Hide)
+- [隐藏共享通讯簿中的外部联系人](#hide-external-contacts-from-the-shared-address-book)
   
 ## <a name="step-1-create-a-csv-file-that-contains-information-about-the-external-contacts"></a>步骤 1: 创建包含有关外部联系人的信息的 CSV 文件
 
@@ -53,23 +53,23 @@ ms.locfileid: "30215912"
     pilar@contoso.com,Pilar Pinilla,Pilar,Pinilla,1234 Main St.,Seattle,WA,98017,206-555-0100,206-555-0101,206-555-0102,206-555-1234,Contoso,HR Manager,206-555-0104,Executive,US,206-555-0105,P.,Technical decision maker,31/1000,Dan Park 
     ```
 
-    CSV 文件的第一行 (即标题行) 列出了在将联系人导入 Exchange Online 时可使用的联系人的属性。每个属性名称都用逗号分隔。标题行下的每一行表示用于导入单个外部联系人的属性值。 
+    CSV 文件的第一行 (即标题行) 列出了在将联系人导入 Exchange Online 时可使用的联系人的属性。 每个属性名称都用逗号分隔。 标题行下的每一行表示用于导入单个外部联系人的属性值。 
     
     > [!NOTE]
-    > 此文本包含可删除的示例数据。但不要删除或更改第一个 (标头) 行。它包含外部联系人的所有属性。 
+    > 此文本包含可删除的示例数据。 但不要删除或更改第一个 (标头) 行。 它包含外部联系人的所有属性。 
   
 2. 在 Microsoft Excel 中打开 csv 文件以编辑 csv 文件, 因为使用 Excel 编辑 csv 文件要容易得多。
     
-3. 为要导入到 Exchange Online 中的每个联系人创建一行。填充尽可能多的单元格。此信息将显示在每个联系人的共享通讯簿中。 
+3. 为要导入到 Exchange Online 中的每个联系人创建一行。 填充尽可能多的单元格。 此信息将显示在每个联系人的共享通讯簿中。 
     
     > [!IMPORTANT]
-    >  以下属性 (标题行中的前四项) 是创建外部联系人所必需的, 并且必须在 CSV 文件中进行填充: **ExternalEmailAddress**、 **Name**、 **FirstName**和**LastName**。您在步骤2中运行的 PowerShell 命令将使用这些属性的值来创建联系人。 
+    >  以下属性 (标题行中的前四项) 是创建外部联系人所必需的, 并且必须在 CSV 文件中进行填充: **ExternalEmailAddress**、 **Name**、 **FirstName**和**LastName**。 您在步骤2中运行的 PowerShell 命令将使用这些属性的值来创建联系人。 
 
 ## <a name="step-2-create-the-external-contacts-with-powershell"></a>步骤 2: 使用 PowerShell 创建外部联系人
 
 下一步是使用您在步骤1和 PowerShell 中创建的 csv 文件以批量将 csv 文件中列出的外部联系人导入到 Exchange Online。 
   
-1.  将 PowerShell 连接到您的 Exchange Online 组织。有关分步说明, 请参阅[连接到 Exchange Online PowerShell](https://go.microsoft.com/fwlink/p/?LinkId=396554)。在连接到 Exchange Online PowerShell 时, 请务必使用 Office 365 全局管理员帐户的用户名和密码。 
+1.  将 PowerShell 连接到您的 Exchange Online 组织。 有关分步说明, 请参阅[连接到 Exchange Online PowerShell](https://go.microsoft.com/fwlink/p/?LinkId=396554)。 在连接到 Exchange Online PowerShell 时, 请务必使用 Office 365 全局管理员帐户的用户名和密码。 
     
 2. 将 PowerShell 连接到 Exchange Online 后, 请转到在步骤1中保存 CSV 文件的桌面文件夹;例如`C:\Users\Administrator\desktop`。
     
@@ -79,7 +79,7 @@ ms.locfileid: "30215912"
     Import-Csv .\ExternalContacts.csv|%{New-MailContact -Name $_.Name -DisplayName $_.Name -ExternalEmailAddress $_.ExternalEmailAddress -FirstName $_.FirstName -LastName $_.LastName}
     ```
 
-    创建新联系人可能需要一段时间, 具体取决于您导入的数量。命令运行完毕后, PowerShell 将显示已创建的新联系人的列表。 
+    创建新联系人可能需要一段时间, 具体取决于您导入的数量。 命令运行完毕后, PowerShell 将显示已创建的新联系人的列表。 
     
 4. 若要查看新的外部联系人, 请转到 Exchange 管理中心 (EAC), 然后单击 "**收件人** \> **联系人**"。 
     
@@ -95,9 +95,9 @@ ms.locfileid: "30215912"
 
 ## <a name="step-3-add-information-to-the-properties-of-the-external-contacts"></a>步骤 3: 将信息添加到外部联系人的属性中
 
-在步骤2中运行该命令后, 将创建外部联系人, 但不包含任何联系人或组织信息, 这是来自 CSV 文件中的大多数单元格的信息。这是因为在创建新的外部联系人时, 仅填充了所需的属性。如果没有在 CSV 文件中填写所有信息, 请不要担心。如果没有, 则不会添加。
+在步骤2中运行该命令后, 将创建外部联系人, 但不包含任何联系人或组织信息, 这是来自 CSV 文件中的大多数单元格的信息。 这是因为在创建新的外部联系人时, 仅填充了所需的属性。 如果没有在 CSV 文件中填写所有信息, 请不要担心。 如果没有, 则不会添加。
   
-1.  将 PowerShell 连接到您的 Exchange Online 组织。有关分步说明, 请参阅[连接到 Exchange Online PowerShell](https://go.microsoft.com/fwlink/p/?LinkId=396554)。
+1.  将 PowerShell 连接到您的 Exchange Online 组织。 有关分步说明, 请参阅[连接到 Exchange Online PowerShell](https://go.microsoft.com/fwlink/p/?LinkId=396554)。
     
 2. 转到在步骤1中保存 CSV 文件的 "桌面" 文件夹;例如`C:\Users\Administrator\desktop`。
     
@@ -113,7 +113,7 @@ ms.locfileid: "30215912"
     ```
 
     > [!NOTE]
-    > _Manager_参数可能有问题。如果该单元格在 CSV 文件中为空, 则将收到错误, 并且不会向联系人添加任何属性信息。如果不需要指定管理器, 则只需从以前` -Manager $_.Manager `的 PowerShell 命令中删除即可。 
+    > _Manager_参数可能有问题。 如果该单元格在 CSV 文件中为空, 则将收到错误, 并且不会向联系人添加任何属性信息。 如果不需要指定管理器, 则只需从以前` -Manager $_.Manager `的 PowerShell 命令中删除即可。 
   
     同样, 更新联系人可能需要一段时间, 具体取决于您在步骤1中导入的数量。 
     
@@ -123,20 +123,20 @@ ms.locfileid: "30215912"
     
 2. 单击联系人, 然后单击 "**编辑** ![编辑图标](media/ebd260e4-3556-4fb0-b0bb-cc489773042c.gif) " 以显示联系人的属性。 
     
-就是这样！用户可以在通讯簿 Outlook 和 outlook 网页中查看联系人和其他信息。
+就是这么简单。 用户可以在通讯簿 Outlook 和 outlook 网页中查看联系人和其他信息。
   
 ## <a name="add-more-external-contacts"></a>添加更多外部联系人
 
-您可以重复步骤1到步骤 3, 在 Exchange Online 中添加新的外部联系人。您或您的公司中的用户只需在 CSV 文件中为新联系人添加新行即可。然后, 可以从步骤2和步骤3中运行 PowerShell 命令, 以创建新联系人并向其添加信息。
+您可以重复步骤1到步骤 3, 在 Exchange Online 中添加新的外部联系人。 您或您的公司中的用户只需在 CSV 文件中为新联系人添加新行即可。 然后, 可以从步骤2和步骤3中运行 PowerShell 命令, 以创建新联系人并向其添加信息。
   
 > [!NOTE]
-> 运行命令以创建新联系人时, 您可能会收到一条错误消息, 指出之前创建的联系人已存在。但会创建新的添加到 CSV 文件中的联系人。 
+> 运行命令以创建新联系人时, 您可能会收到一条错误消息, 指出之前创建的联系人已存在。 但会创建新的添加到 CSV 文件中的联系人。 
   
 ## <a name="hide-external-contacts-from-the-shared-address-book"></a>隐藏共享地址 book> 中的外部联系人。
 
-某些公司可能仅使用外部联系人, 以便可以将其添加为通讯组的成员。在这种情况下, 他们可能想要隐藏共享通讯簿中的外部联系人。操作步骤如下:
+某些公司可能仅使用外部联系人, 以便可以将其添加为通讯组的成员。 在这种情况下, 他们可能想要隐藏共享通讯簿中的外部联系人。 方法如下：
   
-1.  将 PowerShell 连接到您的 Exchange Online 组织。有关分步说明, 请参阅[连接到 Exchange Online PowerShell](https://go.microsoft.com/fwlink/p/?LinkId=396554)。
+1.  将 PowerShell 连接到您的 Exchange Online 组织。 有关分步说明, 请参阅[连接到 Exchange Online PowerShell](https://go.microsoft.com/fwlink/p/?LinkId=396554)。
     
 2. 若要隐藏单个外部联系人, 请运行以下命令。
     

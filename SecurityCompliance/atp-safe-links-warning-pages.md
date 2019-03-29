@@ -14,39 +14,39 @@ ms.assetid: fc4e6ebb-5acc-4bc5-bad8-4f3407d1d3f4
 ms.collection:
 - M365-security-compliance
 description: 获取在 Office 365 高级威胁防护工作时可能看到的警告页面的概述。
-ms.openlocfilehash: 5bf6d436e319127fdd5aecd5c58e168a59333d25
-ms.sourcegitcommit: 7adfd8eda038cf25449bdf3df78b5e2fcc1999e7
+ms.openlocfilehash: e90951a010ff5de4d3b292259e9c4596b6cc8e89
+ms.sourcegitcommit: 1658be51e2c21ed23bc4467a98af74300a45b975
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "30357443"
+ms.lasthandoff: 03/26/2019
+ms.locfileid: "30862574"
 ---
 # <a name="office-365-atp-safe-links-warning-pages"></a>Office 365 ATP 安全链接警告页
 
 > [!IMPORTANT]
-> 本文适用于 Office 365 企业客户。如果您使用的是 Outlook.com、office 365 家庭版或 office 365 个人版, 并且您正在查找有关 Outlook 中的安全链接的信息, 请参阅[Advanced Outlook.com security](https://support.office.com/article/advanced-outlook-com-security-for-office-365-subscribers-882d2243-eab9-4545-a58a-b36fee4a46e2)。
+> 本文适用于 Office 365 企业客户。 如果您使用的是 Outlook.com、office 365 家庭版或 office 365 个人版, 并且您正在查找有关 Outlook 中的安全链接的信息, 请参阅[Advanced Outlook.com security](https://support.office.com/article/advanced-outlook-com-security-for-office-365-subscribers-882d2243-eab9-4545-a58a-b36fee4a46e2)。
 
-[Office 365 高级威胁防护](office-365-atp.md)(atp) 通过功能 (如[atp 安全链接](atp-safe-links.md)、 [atp 安全附件](atp-safe-attachments.md)和[反网络钓鱼防护](anti-phishing-protection.md)) 帮助保护您的组织免受网络钓鱼企图和恶意软件的攻击。保护准备就绪后, 将检查电子邮件和 Office 文档中的链接 (url)。如果 url 被标识为可疑或恶意, 则在单击时可能会阻止您打开该 url。您可能会看到一个警告页面, 而不是直接转到该网站。 
+[Office 365 高级威胁防护](office-365-atp.md)(atp) 通过功能 (如[atp 安全链接](atp-safe-links.md)、 [atp 安全附件](atp-safe-attachments.md)和[反网络钓鱼防护](anti-phishing-protection.md)) 帮助保护您的组织免受网络钓鱼企图和恶意软件的攻击。 保护准备就绪后, 将检查电子邮件和 Office 文档中的链接 (url)。 如果 url 被标识为可疑或恶意, 则在单击时可能会阻止您打开该 url。 您可能会看到一个警告页面, 而不是直接转到该网站。 
   
-阅读本文, 以查看可能显示的[警告页的示例](atp-safe-links-warning-pages.md#examples), 以及[最近对警告页的更新](atp-safe-links-warning-pages.md#updates)。
+阅读本文, 以查看可能显示的警告页的示例, 以及最近对警告页的更新。
   
 ## <a name="examples-of-warning-pages"></a>警告页面示例
 
 ### <a name="atp-is-scanning-the-link"></a>ATP 正在扫描链接
 
-通过 ATP 安全链接扫描 URL。您可能需要等待几分钟才能再次尝试链接。
+通过 ATP 安全链接扫描 URL。 您可能需要等待几分钟才能再次尝试链接。
 
 ![ATP 正在扫描链接](media/ee8dd5ed-6b91-4248-b054-12b719e8d0ed.png)
 
 ### <a name="a-url-is-in-a-suspicious-email-message"></a>可疑电子邮件中的 URL
 
-该 URL 在类似于其他电子邮件的电子邮件中, 类似于其他被视为可疑的电子邮件。建议您先仔细检查电子邮件, 然后再继续转到网站。
+该 URL 在类似于其他电子邮件的电子邮件中, 类似于其他被视为可疑的电子邮件。 建议您先仔细检查电子邮件, 然后再继续转到网站。
 
 ![此 URL 位于可疑的电子邮件中](media/33f57923-23e3-4b0f-838b-6ad589ba897b.png)
 
 ### <a name="a-url-is-in-a-message-identified-as-a-phishing-attempt"></a>URL 位于标识为网络钓鱼尝试的邮件中
 
-该 URL 位于已标识为 "网络钓鱼" 攻击的电子邮件中。因此, 电子邮件中的所有 url 都将被阻止。我们建议您不要继续转到网站。
+该 URL 位于已标识为 "网络钓鱼" 攻击的电子邮件中。 因此, 电子邮件中的所有 url 都将被阻止。 我们建议您不要继续转到网站。
 
 ![此 URL 位于标识为网络钓鱼尝试的邮件中](media/6e544a28-0604-4821-aba6-d5a57bb917e5.png)
 
@@ -58,7 +58,7 @@ ms.locfileid: "30357443"
 
 ### <a name="a-site-is-blocked"></a>网站被阻止
 
-为您的组织阻止该 URL。可能会阻止 URL 的原因有多种。我们建议您与组织的 Office 365 管理员联系。
+为您的组织阻止该 URL。 可能会阻止 URL 的原因有多种。 我们建议您与组织的 Office 365 管理员联系。
 
 ![阻止此网站](media/6b4bda2d-a1e6-419e-8b10-588e83c3af3f.png)
 
@@ -70,7 +70,7 @@ ms.locfileid: "30357443"
 
 ## <a name="recent-updates-to-warning-pages"></a>最近对警告页的更新
 
-最近针对 Office 365 ATP 更新了几个警告页面。如果您还没有看到更新的页面, 很快就会了。这些更新包括新的配色方案、更多详细信息以及在给定警告和建议的情况下能够继续使用网站的功能。
+最近针对 Office 365 ATP 更新了几个警告页面。 如果您还没有看到更新的页面, 很快就会了。 这些更新包括新的配色方案、更多详细信息以及在给定警告和建议的情况下能够继续使用网站的功能。
 
 ### <a name="url-scan-in-progress"></a>正在扫描 URL
 

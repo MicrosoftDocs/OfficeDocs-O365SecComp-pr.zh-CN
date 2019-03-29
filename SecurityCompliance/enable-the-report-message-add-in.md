@@ -3,7 +3,7 @@ title: 启用报告消息加载项
 ms.author: deniseb
 author: denisebmsft
 manager: laurawi
-ms.date: 03/05/2019
+ms.date: 03/26/2019
 ms.audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
@@ -15,12 +15,12 @@ ms.assetid: 4250c4bc-6102-420b-9e0a-a95064837676
 ms.collection:
 - M365-security-compliance
 description: 了解如何为单个用户或您的整个组织启用 outlook 和 web 上的 outlook 和 outlook 网页版报告消息外接程序。
-ms.openlocfilehash: f2bb79c4c613fdb804d19226fb359124387a678f
-ms.sourcegitcommit: 0f93b37c39d807dec91f118aa671a3430c47a9ac
+ms.openlocfilehash: 3c476a6e097307b1aabc3580b598bb91a4407731
+ms.sourcegitcommit: a79eb9907759d4cd849c3f948695a9ff890b19bf
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/20/2019
-ms.locfileid: "30693381"
+ms.lasthandoff: 03/26/2019
+ms.locfileid: "30866338"
 ---
 # <a name="enable-the-report-message-add-in"></a>启用报告消息加载项
 
@@ -67,7 +67,7 @@ outlook 和 web 上的 outlook 的报告消息外接程序使用户能够轻松�
 ## <a name="get-and-enable-the-report-message-add-in-for-your-organization"></a>为您的组织获取并启用报告邮件外接程序
 
 > [!IMPORTANT]
-> 若要完成此任务, 您必须是 Office 365 全局管理员或 Exchange Online 管理员。 此外, 必须将 Exchange 配置为使用 OAuth 身份验证以了解详细信息, 请参阅[exchange 要求 (加载项的集中部署)](https://docs.microsoft.com/office365/admin/manage/centralized-deployment-of-add-ins&view=o365-worldwide#exchange-requirements)。 
+> 若要完成此任务, 您必须是 Office 365 全局管理员或 Exchange Online 管理员。 此外, 必须将 Exchange 配置为使用 OAuth 身份验证以了解详细信息, 请参阅[exchange 要求 (加载项的集中部署)](https://docs.microsoft.com/office365/admin/manage/centralized-deployment-of-add-ins)。 
 
 1. 转到 Microsoft 365 管理中心中的 "[服务 & 外接程序" 页](https://admin.microsoft.com/AdminPortal/Home#/Settings/ServicesAndAddIns)。<br/>![新 Microsoft 365 管理中心中的 "服务和外接程序" 页](media/ServicesAddInsPageNewM365AdminCenter.png)<br/> 
     

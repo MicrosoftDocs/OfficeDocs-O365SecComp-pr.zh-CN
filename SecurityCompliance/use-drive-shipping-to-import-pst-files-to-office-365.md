@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: 40829b57-793c-4d41-b171-e9270129173d
 description: '对于管理员: 了解如何通过将 pst 文件复制到硬盘并将其发送到 Microsoft, 来批量将组织的 pst 文件导入到 Office 365 邮箱。 '
-ms.openlocfilehash: 9c1cbe17fd1c6e20b0df3bc295da527fa6af6c42
-ms.sourcegitcommit: 03054baf50c1dd5cd9ca6a9bd5d056f3db98f964
+ms.openlocfilehash: e6623e4b5a66b9c2e8eeb2cfe6c978115b6fdc9f
+ms.sourcegitcommit: fb50bf2f2c9d780c911f245a2f78c6bb5e357f67
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "30354744"
+ms.lasthandoff: 03/28/2019
+ms.locfileid: "30950469"
 ---
 # <a name="use-drive-shipping-to-import-your-organization-pst-files-to-office-365"></a>使用驱动器传送将组织的 PST 文件导入到 Office 365
 
@@ -48,7 +48,7 @@ ms.locfileid: "30354744"
   
 有关使用驱动器发货将 PST 文件导入到 Office 365 的常见问题, 请参阅[使用 drive 航运导入 pst 文件的常见问题解答](faqimporting-pst-files-to-office-365.md#using-drive-shipping-to-import-pst-files)。 
   
-## <a name="before-you-begin"></a>准备工作
+## <a name="before-you-begin"></a>开始之前
 
 - 您必须在 Exchange Online 中分配 "邮箱导入导出" 角色, 才能将 PST 文件导入到 Office 365 邮箱。 默认情况下, 此角色不会分配给 Exchange Online 中的任何角色组。 You can add the Mailbox Import Export role to the Organization Management role group. Or you can create a new role group, assign the Mailbox Import Export role, and then add yourself as a member. 有关详细信息, 请参阅[管理角色组](https://go.microsoft.com/fwlink/p/?LinkId=730688)中的 "向角色组添加角色" 或 "创建角色组" 部分。
     
@@ -86,16 +86,16 @@ ms.locfileid: "30354744"
     
 - 您寄送到 Microsoft 的硬盘驱动器可能需要跨国际边界。如果出现这种情况，您要负责确保根据适用的法律导入和/或导出该硬盘驱动器及其所包含的数据。寄送硬盘驱动器之前，请联系您的顾问以验证您的驱动器和数据是否可以合法地寄送到确定的 Microsoft 数据中心。这将有助于确保该硬盘及时到达 Microsoft。
     
-- 此过程涉及复制并保存安全存储密钥和 BitLocker 加密密钥。 一定要采取预防措施来保护这些密钥，就像保护密码或其他与安全相关的信息一样。 例如，您可能将它们保存到受密码保护的 Microsoft Word 文档，或者将它们保存到已加密的 USB 驱动器。 有关这些项的示例, 请参阅[详细信息](use-drive-shipping-to-import-pst-files-to-office-365.md#moreinfo)部分。 
+- 此过程涉及复制并保存安全存储密钥和 BitLocker 加密密钥。 一定要采取预防措施来保护这些密钥，就像保护密码或其他与安全相关的信息一样。 例如，您可能将它们保存到受密码保护的 Microsoft Word 文档，或者将它们保存到已加密的 USB 驱动器。 有关这些项的示例, 请参阅[详细信息](#more-information)部分。 
     
-- 将 PST 文件导入到 Office 365 邮箱后, 邮箱的保留挂起设置将处于无限期的期限内打开。 这意味着将不会处理分配给邮箱的保留策略, 除非您关闭保留挂起或设置关闭保留的日期。 我们为什么要这么做呢？ 如果导入到邮箱的邮件是旧邮件, 则可能会永久删除 (清除), 因为他们的保留期已过, 因为其保留期已根据邮箱配置的保留设置而过期。 将邮箱置于保留挂起状态将使邮箱所有者时间管理这些新导入的邮件, 或为您提供更改邮箱保留设置的时间。 有关管理保留挂起的建议, 请参阅[详细信息](use-drive-shipping-to-import-pst-files-to-office-365.md#moreinfo)部分。 
+- 将 PST 文件导入到 Office 365 邮箱后, 邮箱的保留挂起设置将处于无限期的期限内打开。 这意味着将不会处理分配给邮箱的保留策略, 除非您关闭保留挂起或设置关闭保留的日期。 我们为什么要这么做呢？ 如果导入到邮箱的邮件是旧邮件, 则可能会永久删除 (清除), 因为他们的保留期已过, 因为其保留期已根据邮箱配置的保留设置而过期。 将邮箱置于保留挂起状态将使邮箱所有者时间管理这些新导入的邮件, 或为您提供更改邮箱保留设置的时间。 有关管理保留挂起的建议, 请参阅[详细信息](#more-information)部分。 
     
 - 默认情况下, Office 365 邮箱可以接收的最大邮件大小为 35 MB。 这是因为邮箱的*MaxReceiveSize*属性的默认值设置为 35 MB。 但是, Office 365 中最大邮件接收大小的限制是 150 MB。 因此, 如果您导入的 PST 文件中包含大于 35 MB 的项目, 则 Office 365 导入服务会将目标邮箱上的*MaxReceiveSize*属性值自动更改为 150 MB。 这将允许将最大为 150 MB 的邮件导入到用户邮箱。 
     
     > [!TIP]
     > 若要标识邮箱的邮件接收大小, 可以在 Exchange Online PowerShell 中运行以下命令: `Get-Mailbox <user mailbox> | FL MaxReceiveSize`。 
   
-- 您可以将 PST 文件导入到 Office 365 中的非活动邮箱。 为此, 请在 PST 导入映射文件的`Mailbox`参数中指定非活动邮箱的 GUID。 有关详细信息, 请参阅[步骤 3: 创建 PST 导入映射文件](use-drive-shipping-to-import-pst-files-to-office-365.md#step3)。 
+- 您可以将 PST 文件导入到 Office 365 中的非活动邮箱。 为此, 请在 PST 导入映射文件的`Mailbox`参数中指定非活动邮箱的 GUID。 有关详细信息, 请参阅[步骤 3: 创建 PST 导入映射文件](#step-3-create-the-pst-import-mapping-file)。 
     
 - 在 Exchange 混合部署中, 可以将 PST 文件导入到主邮箱位于本地的用户的基于云的存档邮箱。 为此, 请在 PST 导入映射文件中执行以下操作:
     
@@ -103,7 +103,7 @@ ms.locfileid: "30354744"
     
   - 在`IsArchive`参数中指定**TRUE**值。 
     
-    有关详细信息, 请参阅[步骤 3: 创建 PST 导入映射文件](use-drive-shipping-to-import-pst-files-to-office-365.md#step3)。 
+    有关详细信息, 请参阅[步骤 3: 创建 PST 导入映射文件](#step-3-create-the-pst-import-mapping-file)。 
 
 ## <a name="step-1-download-the-secure-storage-key-and-pst-import-tool"></a>步骤 1: 下载安全存储密钥和 PST 导入工具
 
@@ -308,7 +308,7 @@ ms.locfileid: "30354744"
 下一步是将硬盘驱动器运送到 Microsoft, 然后提供发货的跟踪号码, 并返回驱动器运输作业的发货信息。 在 Microsoft 收到该驱动器后, 数据中心人员需要7到10个工作日内将 PST 文件上传到您的组织的 Azure 存储区。
   
 > [!NOTE]
-> 如果您在创建导入作业的14天内未提供跟踪号码并返回发货信息, 导入作业将会过期。 如果发生这种情况, 您必须创建一个新的驱动器运输导入作业 (请参阅[步骤 4: 在 Office 365 中创建 PST 导入作业](use-drive-shipping-to-import-pst-files-to-office-365.md#step4)), 然后重新提交驱动器文件和 PST 导入映射文件。 
+> 如果您在创建导入作业的14天内未提供跟踪号码并返回发货信息, 导入作业将会过期。 如果发生这种情况, 您必须创建一个新的驱动器运输导入作业 (请参阅[步骤 4: 在 Office 365 中创建 PST 导入作业](#step-4-create-a-pst-import-job-in-office-365)), 然后重新提交驱动器文件和 PST 导入映射文件。 
   
 ### <a name="ship-the-hard-drive"></a>寄送硬盘驱动器
 
@@ -502,7 +502,7 @@ Microsoft Azure 存储资源管理器处于预览阶段。
     
   - 在特定时间段后, 可以通过运行`Set-Mailbox -RetentionHoldEnabled $false`命令关闭保留挂起。 有关说明, 请参阅[将邮箱放在保留挂起](https://go.microsoft.com/fwlink/p/?LinkId=544749)中。
     
-  - 您可以配置保留挂起, 使其在将来某个日期处于关闭状态。 可以通过运行`Set-Mailbox -EndDateForRetentionHold <date>`命令来执行此操作。 例如, 假定今天的日期为2016年7月1日, 并且您希望在30天内关闭保留挂起功能, 请运行以下命令: `Set-Mailbox -EndDateForRetentionHold 8/1/2016`。 在这种情况下, 您可以将*RentionHoldEnabled*属性设置为*True* 。 有关详细信息, 请参阅[设置邮箱](https://go.microsoft.com/fwlink/p/?LinkId=150317)。
+  - 您可以配置保留挂起, 使其在将来某个日期处于关闭状态。 可以通过运行`Set-Mailbox -EndDateForRetentionHold <date>`命令来执行此操作。 例如, 假定今天的日期为2016年6月1日, 并且您希望在30天内关闭保留挂起功能, 请运行以下命令: `Set-Mailbox -EndDateForRetentionHold 7/1/2016`。 在这种情况下, 您可以将*RentionHoldEnabled*属性设置为*True*。 有关详细信息, 请参阅[设置邮箱](https://go.microsoft.com/fwlink/p/?LinkId=150317)。
     
   - 您可以更改已分配给邮箱的保留策略的设置, 以便不会立即删除导入的旧项目, 也不会将其移动到用户的存档邮箱。 例如, 您可以延长分配给邮箱的删除或存档策略的保留期限。 在这种情况下, 您可以在更改保留策略的设置后关闭邮箱的保留挂起。 有关详细信息, 请参阅为[Office 365 组织中的邮箱设置存档和删除策略](set-up-an-archive-and-deletion-policy-for-mailboxes.md)。
     

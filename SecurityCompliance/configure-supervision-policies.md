@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 ms.assetid: d14ae7c3-fcb0-4a03-967b-cbed861bb086
 description: 设置监管审核策略以捕获员工通信以供审阅。
-ms.openlocfilehash: 76a5e7152b609944eeb2fe1390e204e1463a673b
-ms.sourcegitcommit: 9a69ea604b415af4fef4964a19a09f3cead5a2ce
+ms.openlocfilehash: ce032a96131fdfb6f226dd25dfbb8e2de41c9931
+ms.sourcegitcommit: a79eb9907759d4cd849c3f948695a9ff890b19bf
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/20/2019
-ms.locfileid: "30701287"
+ms.lasthandoff: 03/26/2019
+ms.locfileid: "30866388"
 ---
 # <a name="configure-supervision-policies-for-your-organization"></a>配置组织的监督策略
 
@@ -71,6 +71,34 @@ ms.locfileid: "30701287"
 |受监督用户 | 通讯组 <br> Office 365 组 | 动态通讯组 |
 | Reviewers | 启用邮件功能的安全组  | 通讯组 <br> 动态通讯组 |
   
+若要在大型企业组织中管理受监督的用户, 您可能需要跨一个非常大的组监视所有用户。 您可以使用 PowerShell 为分配的组配置全局监督策略的通讯组。 这可以帮助您使用单个策略监视数千个用户, 并在新员工加入您的组织时保持监督策略的更新。
+
+1. 为具有以下属性的全局监督策略创建专用[通讯组](https://docs.microsoft.com/powershell/module/exchange/users-and-groups/new-distributiongroup?view=exchange-ps)。 请确保此通讯组不用于其他用途或其他 Office 365 服务。
+
+    - **MemberDepartRestriction = 已关闭**。 这可确保用户无法将自己从通讯组中删除。
+    - **MemberJoinRestriction = 已关闭**。 这可确保用户无法将自己添加到通讯组。
+    - **ModerationEnabled = True**。 这将确保发送到此组的所有邮件都需要经过审批, 并且该组未用于在监督策略配置外部进行通信。
+
+    ```
+    New-DistributionGroup -Name <your group name> -Alias <your group alias> -MemberDepartRestriction 'Closed' -MemberJoinRestriction 'Closed' -ModerationEnabled $true
+    ```
+2. 选择一个未使用的[Exchange 自定义属性](https://docs.microsoft.com/Exchange/recipients/mailbox-custom-attributes?view=exchserver-2019&viewFallbackFrom=exchonline-ww), 用于跟踪哪些用户已添加到组织中的监督策略中。
+
+3. 定期对计划运行以下 PowerShell 脚本, 以将用户添加到监督策略:
+
+    ```
+    $Mbx = (Get-Mailbox -RecipientTypeDetails UserMailbox -ResultSize Unlimited -Filter {CustomAttribute9 -eq $Null})
+    $i = 0
+    ForEach ($M in $Mbx) 
+    {
+      Write-Host "Adding" $M.DisplayName
+      Add-DistributionGroupMember -Identity <your group name> -Member $M.DistinguishedName -ErrorAction SilentlyContinue
+      Set-Mailbox -Identity $M.Alias -<your custom attribute name> SRAdded 
+      $i++
+    }
+    Write-Host $i "Mailboxes added to supervisory review distribution group."
+    ```
+
 有关设置组的详细信息, 请参阅:
 - [创建和管理通讯组](https://docs.microsoft.com/Exchange/recipients-in-exchange-online/manage-distribution-groups/manage-distribution-groups)
 - [管理启用邮件的安全组](https://docs.microsoft.com/Exchange/recipients-in-exchange-online/manage-mail-enabled-security-groups)

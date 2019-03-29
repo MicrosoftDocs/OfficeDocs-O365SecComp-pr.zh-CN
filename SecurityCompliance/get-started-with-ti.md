@@ -15,12 +15,12 @@ ms.assetid: 38e9b67f-d188-490f-bc91-a1ae4b270441
 ms.collection:
 - M365-security-compliance
 description: 了解 Office 365 威胁调查和响应, 以及如何开始。
-ms.openlocfilehash: f30a3c8007d2643a67f59d9421496e9ae0bc6e8c
-ms.sourcegitcommit: 0f93b37c39d807dec91f118aa671a3430c47a9ac
+ms.openlocfilehash: a04b39ecb11c33baa647bb9716af9ff12aed755e
+ms.sourcegitcommit: 1658be51e2c21ed23bc4467a98af74300a45b975
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/20/2019
-ms.locfileid: "30693131"
+ms.lasthandoff: 03/26/2019
+ms.locfileid: "30862516"
 ---
 # <a name="get-started-with-threat-investigation-and-response-office-365-advanced-threat-protection-plan-2"></a>开始使用威胁调查和响应 (Office 365 高级威胁防护计划 2)
 
@@ -37,7 +37,7 @@ ms.locfileid: "30693131"
   
 ## <a name="get-acquainted-with-the-threat-dashboard-explorer-and-incidents"></a>了解威胁仪表板、资源管理器和事件
 
-安全&amp;合规中心中的这些威胁调查和响应功能, 作为一组工具和响应工作流, 包括[威胁仪表板](get-started-with-ti.md#dashboard)、[威胁资源管理器](get-started-with-ti.md#explorer)、[事件](get-started-with-ti.md#incidents)、[攻击模拟器](attack-simulator.md)和自动调查 & 响应。
+安全&amp;合规中心中的这些威胁调查和响应功能, 作为一组工具和响应工作流, 包括[威胁仪表板](#threat-dashboard)、[威胁资源管理器](#threat-explorer)、[事件](get-started-with-ti.md#incidents)、[攻击模拟器](attack-simulator.md)和自动调查 & 响应。
   
 ### <a name="threat-dashboard"></a>威胁仪表板
 

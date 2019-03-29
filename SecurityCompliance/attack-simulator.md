@@ -15,12 +15,12 @@ ms.assetid: da5845db-c578-4a41-b2cb-5a09689a551b
 ms.collection:
 - M365-security-compliance
 description: 作为 Office 365 全局管理员, 你可以使用攻击模拟器在你的组织中运行实际的攻击方案。 这可帮助你在真正的攻击击中你的业务之前识别和查找易受攻击的用户。
-ms.openlocfilehash: e372fe3c4cc10c4f96836db394fbccd2f180145a
-ms.sourcegitcommit: 0f93b37c39d807dec91f118aa671a3430c47a9ac
+ms.openlocfilehash: 88e71fe2db0ed9149ab84bb99e8b04910afdc265
+ms.sourcegitcommit: 1658be51e2c21ed23bc4467a98af74300a45b975
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/20/2019
-ms.locfileid: "30693661"
+ms.lasthandoff: 03/26/2019
+ms.locfileid: "30862454"
 ---
 # <a name="attack-simulator-in-office-365"></a>Office 365 中的攻击模拟器
 
@@ -33,11 +33,9 @@ ms.locfileid: "30693661"
 
 目前提供三种攻击模拟:
   
-- [显示名称 spear 网络钓鱼攻击](attack-simulator.md#spearphish)
-    
-- [密码喷涂攻击](attack-simulator.md#passwordspray)
-    
-- [强力密码攻击](attack-simulator.md#bruteforce)
+- [显示名称 spear 网络钓鱼攻击](#display-name-spear-phishing-attack)
+- [密码喷涂攻击](#password-spray-attack)
+- [强力密码攻击](#brute-force-password-attack)
     
 若要成功启动攻击, 请对要使用的帐户使用多重身份验证, 以运行模拟攻击。 此外, 您必须是 Office 365 全局管理员。
   

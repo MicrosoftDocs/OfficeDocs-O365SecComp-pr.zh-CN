@@ -1,74 +1,53 @@
 ---
-title: EOP 入门视频
+title: 什么是 EOP
 ms.author: tracyp
-author: MSFTTracyP
+author: msfttracyp
+ms.reviewer: andypunt
 manager: laurawi
-ms.date: 3/13/2015
+ms.date: 2/25/2019
 ms.audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
+ms.custom: TN2DMC
 localization_priority: Normal
-ms.assetid: c9c39ada-6100-4034-a479-8bd39d428498
-ms.collection:
-- M365-security-compliance
-description: 通过下面的一系列视频，您可以了解如何设置和使用 Exchange Online Protection (EOP) 托管的电子邮件筛选服务。
-ms.openlocfilehash: 1e8aadd173f4e30c528679347171230e83752af0
-ms.sourcegitcommit: c0d4fe3e43e22353f30034567ade28330266bcf7
+search.appverid:
+- MET150
+ms.assetid: 393b0050-7c7e-49e6-a03d-b1e09fe4de9e
+description: 本简介文档将帮助您了解 Exchange Online Protection (EOP) 和一些重要的术语。 这适用于保护 exchange Online 云托管邮箱的 Office 365 客户和保护本地邮箱 (如 Exchange Server 2016) 的 EOP 独立客户。
+ms.openlocfilehash: f23f28b5c15c7057d1fd8ec77cce67bf1746410c
+ms.sourcegitcommit: fb50bf2f2c9d780c911f245a2f78c6bb5e357f67
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/27/2019
-ms.locfileid: "30926715"
+ms.lasthandoff: 03/28/2019
+ms.locfileid: "30950429"
 ---
-# <a name="videos-for-getting-started-with-eop"></a>EOP 入门视频
+## <a name="what-is-exchange-online-protection-eop"></a>什么是 Exchange Online Protection (EOP)
 
-通过下面的一系列视频，您可以了解如何设置和使用 Exchange Online Protection (EOP) 托管的电子邮件筛选服务。
-  
-> [!NOTE]
-> 在开始执行视频中介绍的任务之前，我们建议您先设置邮件流。有关详细信息，请参阅[Configure mail flow using connectors in Office 365](http://technet.microsoft.com/library/854b5a50-4462-4836-a092-37e208d29624.aspx)主题。 
-  
-这些视频旨在介绍如何通过定制您的反垃圾邮件设置来满足您组织的需求。 对于通过服务传递到组织的入站邮件，这包括如何根据 IP 地址创建白名单和黑名单列表，以及如何配置内容筛选设置。 此外, 还显示了管理员如何查找和释放与发送到隔离的邮件流规则 (也称为传输规则) 相匹配的内容筛选的垃圾邮件或邮件, 以及如何报告垃圾邮件以帮助我们改进服务。
-  
-- 在 EOP 中配置 IP 允许和 IP 阻止列表
-    > [!VIDEO https://www.microsoft.com/videoplayer/embed/b2f5bea3-e1a7-44b3-b7e2-07fac0d0ca40?autoplay=false]
-  
-    有关更多详细信息，请参阅[配置连接筛选器策略](../configure-the-connection-filter-policy.md)主题。 
-    
-- 在 EOP 中配置垃圾邮件内容筛选
-    > [!VIDEO https://www.microsoft.com/videoplayer/embed/608be94c-d763-4c47-af94-99e7cb277713?autoplay=false]
-  
-    有关更多详细信息，请参阅[配置垃圾邮件筛选器策略](../configure-your-spam-filter-policies.md)主题。 
-    
-- 从隔离区中查找和释放邮件
-    > [!VIDEO https://www.microsoft.com/videoplayer/embed/2a78346d-a3ab-4d70-a88e-0c9d562f7545?autoplay=false]
-  
-    有关更多详细信息，请参阅[以管理员身份查找并释放隔离邮件](../find-and-release-quarantined-messages-as-an-administrator.md)主题。 
-    
-您可能还想要配置出站垃圾邮件策略，因为您想要监视垃圾邮件是否从组织发出。请查看出站垃圾邮件视频进行了解。
-  
-- 配置出站垃圾邮件策略
-    > [!VIDEO https://www.microsoft.com/videoplayer/embed/1f20d655-0d3d-4141-9cae-e57f5a6cffe8?autoplay=false]
-  
-    有关更多详细信息，请参阅[配置出站垃圾邮件策略](../configure-the-outbound-spam-policy.md)。
-    
-EOP 的设置还针对如何处理服务检测到的恶意软件，反恶意软件筛选视频对此进行了说明。
-  
-- 配置反恶意软件策略
-    > [!VIDEO https://www.microsoft.com/videoplayer/embed/12517702-ab48-4df8-a7ff-8eb02aa31724?autoplay=false]
-  
-    有关更多详细信息, 请参阅[配置反恶意软件策略](../configure-anti-malware-policies.md)主题。 
-    
-若要根据公司策略或管理法规根据您设置的特定条件筛选和路由邮件, 您需要观看有关如何创建邮件流规则的视频。
-  
-- 在 EOP 中配置 Exchange 邮件流规则
-    > [!VIDEO https://www.microsoft.com/videoplayer/embed/7cdcd2cb-9382-4065-98e1-81257b32a189?autoplay=false]
-  
-    有关更多详细信息, 请参阅[exchange online Protection 主题中的邮件流规则 (传输规则)](mail-flow-rules-transport-rules-0.md)如果您使用 EOP 独立, 或者查看[exchange online 主题中的邮件流规则 (传输规则) (](http://technet.microsoft.com/library/743bd525-0ca2-426d-b76c-b4a052bc8886.aspx)如果使用的是 exchange online)。
-    
-如果您想要通过从命令行运行脚本来配置服务，远程 PowerShell 视频将帮助您入门。
-  
-- 在 EOP 中使用远程 PowerShell
-    > [!VIDEO https://www.microsoft.com/videoplayer/embed/9cb28006-c2cb-45b6-b72e-eeed8767dee7?autoplay=false]
-  
-    有关更多详细信息，请参阅[Exchange Online Protection 中的 PowerShell](http://technet.microsoft.com/library/f7918a88-774a-405e-945b-bc2f5ee9f748.aspx)主题（如果您使用 EOP 独立版）或者[Exchange Online PowerShell](http://technet.microsoft.com/library/1cb603b0-2961-4afe-b879-b048fe0f64a2.aspx)主题（如果您使用 Exchange Online）。 
-    
+Exchange Online Protection (EOP) 是一种基于云的电子邮件筛选服务, 可帮助组织抵御垃圾邮件和恶意软件。 如果您的邮箱在 Office 365 中, 它们将自动受 EOP 保护, 因为它是服务的一部分。 这包括在 Office 365 和内部部署中具有邮箱的组织, 这些邮箱通常称为混合方案。 此外, EOP 还可用于在云中没有邮箱但要保护其内部部署邮箱的客户。 
 
+EOP 尝试筛选出垃圾邮件, 使您的收件箱不清楚用户不希望看到的内容。 通常情况下, 垃圾邮件会传递到 "垃圾邮件" 文件夹。 一些用户希望进行检查以确保筛选正在执行所需的操作, 因此 "垃圾邮件" 文件夹是用户自己进行签的简单方法。  
+
+> [!TIP]
+> 如果垃圾邮件自动进入垃圾邮件文件夹, 这是一件好事。 该服务将根据默认或自定义管理员设置的状态, 执行所需的操作。 换句话说, 用户不应担心在 "垃圾邮件" 文件夹中看到大量垃圾邮件。 如果管理员更喜欢移动所有垃圾邮件, 则应配置隔离。 有关更多详细信息, 请参阅[在 Office 365 文章中隔离电子](../quarantine-email-messages.md)邮件。
+
+## <a name="important-terms"></a>重要术语
+
+**入站:** 将进入 Office 365 的邮件。
+
+**出站:** 来自 Office 365 的邮件。
+
+**Internal:** 来自组织内部的某个人的邮件到组织内的某个人。 这包括在混合方案中的客户和一个邮箱可以在本地, 另一个邮箱位于云中。
+
+**假负 (FN):** 垃圾邮件和其他不正确发送到收件箱的垃圾邮件。
+
+**误报 (FP):** 错误地被标记为垃圾邮件并放入垃圾电子邮件文件夹或隔离的合法邮件。
+
+**垃圾邮件, 也称为主动电子邮件:** 这是商业广告、连锁信函、政治邮件等的形式。这是一封电子邮件, 用户不会在试图提出产品或试图提交欺诈行为的垃圾邮件发件人注册和发件人。
+
+**网络钓鱼:**"网络钓鱼" 是一种特殊类型的垃圾邮件, 旨在欺骗您出于提交身份盗窃或欺诈行为的目的而提供个人信息。 这种类型的邮件通常包含恶意链接或附件, 但并不总是。
+
+**哄骗:** 哄骗是指当垃圾邮件制造者伪造发件人邮件头, 以便邮件看起来来自于实际来源以外的其他人或其他地方。 这可以是垃圾邮件, 但最常用于网络钓鱼用户。
+
+**模拟:** 这种类型的垃圾邮件也是伪造发件人地址的一种方法, 但通过修改名称或域的一部分使其看起来像真实的来源一样实现。 例如, Bi11@micr0s0ft.com, 即 Bill 中的 "l" 实际上是数字十一, 而 Microsoft 中的 "o" 替换为数字零。
+
+**批量:** 通常情况下, 用户会请求批量邮件, 尽管有时会在公司向其他公司销售信息时间接使用。 用户有意注册批量邮件 (如 newletters), 但稍后又忘记了垃圾邮件, 这很常见。 当批量邮件发送超过用户的注册和投诉级别变得过高时, 批量邮件将成为垃圾邮件。

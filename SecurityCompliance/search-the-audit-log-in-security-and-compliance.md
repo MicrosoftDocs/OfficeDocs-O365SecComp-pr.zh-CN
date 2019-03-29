@@ -15,14 +15,16 @@ search.appverid:
 - MET150
 ms.assetid: 0d4d0f35-390b-4518-800e-0c7ec95e946c
 description: '使用 office 365 安全 & 合规中心搜索统一审核日志, 以查看 Office 365 组织中的用户和管理员活动。 '
-ms.openlocfilehash: d9a0b009a47a00b3d7242b54b14286609ece6886
-ms.sourcegitcommit: ed822a776d3419853453583e882f3c61ca26d4b2
+ms.openlocfilehash: 8cb8650315c19714960aba7551902780e38a554b
+ms.sourcegitcommit: 54a2cbe5d13f448e0c28655bdf88deb9e5434cac
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2019
-ms.locfileid: "30411017"
+ms.lasthandoff: 03/27/2019
+ms.locfileid: "30935347"
 ---
 # <a name="search-the-audit-log-in-the-office-365-security--compliance-center"></a>在 Office 365 安全 & 合规中心中搜索审核日志
+
+## <a name="introduction"></a>简介
 
 需要查找用户是否查看了特定文档或清除了其邮箱中的项目？ 如果是这样, 您可以使用 office 365 安全&amp;合规中心搜索统一审核日志, 以查看 Office 365 组织中的用户和管理员活动。 为什么要使用统一审核日志？ 由于您可以在 Office 365 中搜索以下类型的用户和管理员活动:
   
@@ -57,7 +59,7 @@ ms.locfileid: "30411017"
 
 - Microsoft 工作区分析中的分析师和管理员活动
 
-- PowerApps 中的用户和管理员活动
+- Microsoft PowerApps 中的用户和管理员活动
     
    
 ## <a name="before-you-begin"></a>开始之前
@@ -296,12 +298,11 @@ ms.locfileid: "30411017"
 |:-----|:-----|:-----|
 |[文件和页面活动](#file-and-page-activities)<br/> |[文件夹活动](#folder-activities)<br/> |[共享和访问请求活动](#sharing-and-access-request-activities)<br/> |
 |[同步活动](#synchronization-activities)<br/> |[网站管理活动](#site-administration-activities)<br/> |[Exchange 邮箱活动](#exchange-mailbox-activities)<br/> |
-|[保留策略和标签活动](#retention-policy-and-label-activities) <br/>|[Sway 活动](#sway-activities) <br/> |[用户管理活动](#user-administration-activities) <br/> 
-|[Azure AD 组管理活动](#azure-ad-group-administration-activities) <br/> |[应用程序管理活动](#application-administration-activities) <br/> |[角色管理活动](#role-administration-activities) <br/> |
-|[目录管理活动](#directory-administration-activities) <br/> |[电子数据展示活动](#ediscovery-activities) <br/> |[Power BI 活动](#power-bi-activities) <br/> |
-|[Microsoft 工作区分析](#microsoft-workplace-analytics-activities)<br/>|[Microsoft 团队活动](#microsoft-teams-activities) <br/> |[Yammer 活动](#yammer-activities) <br/> |
-[Microsoft Flow](#microsoft-flow) <br/> |[Microsoft PowerApps](#microsoft-powerapps)<br/>|[Microsoft Stream](#microsoft-stream) <br/>|
-|[Exchange 管理活动](#exchange-admin-audit-log)<br/>
+|[Sway 活动](#sway-activities) <br/> |[用户管理活动](#user-administration-activities) <br/> |[Azure AD 组管理活动](#azure-ad-group-administration-activities) <br/> 
+|[应用程序管理活动](#application-administration-activities) <br/> |[角色管理活动](#role-administration-activities) <br/> |[目录管理活动](#directory-administration-activities) <br/>| 
+|[电子数据展示活动](#ediscovery-activities) <br/> |[Power BI 活动](#power-bi-activities) <br/> |[Microsoft 工作区分析](#microsoft-workplace-analytics-activities)<br/>|
+|[Microsoft 团队活动](#microsoft-teams-activities) <br/> |[Yammer 活动](#yammer-activities) <br/> |[Microsoft 流活动](#microsoft-flow-activities) <br/>|
+|[Microsoft PowerApps 活动](#microsoft-powerapps)<br/>|[Microsoft Stream 活动](#microsoft-stream-activities) <br/>|[Exchange 管理活动](#exchange-admin-audit-log)<br/>|
 ||||
    
   
@@ -320,7 +321,7 @@ ms.locfileid: "30411017"
 |从回收站删除的文件  <br/> |FileDeletedFirstStageRecycleBin  <br/> |用户从网站的回收站中删除文件。  <br/> |
 |从第二阶段回收站删除的文件  <br/> |FileDeletedSecondStageRecycleBin  <br/> |用户从网站的第二阶段回收站中删除文件。  <br/> |
 |在文件中检测到恶意软件  <br/> |FileMalwareDetected  <br/> |SharePoint 防病毒引擎可检测文件中的恶意软件。  <br/> |
-|放弃文件签出  <br/> |FileCheckOutDiscarded  <br/> |用户放弃（或撤消） 签出的文件。这意味着将放弃签出文件时对其所做的所有更改，并且不会保存到文档库中的文档版本。  <br/> |
+|放弃文件签出  <br/> |FileCheckOutDiscarded  <br/> |用户放弃（或撤消）签出的文件。这意味着将放弃签出文件时对其所做的更改，而不将其保存到文档库中的文档版本。  <br/> |
 |下载文件  <br/> |FileDownloaded  <br/> |用户从网站下载文档。  <br/> |
 |修改的文件  <br/> |FileModified  <br/> |用户或系统帐户修改位于网站上的文档的内容或属性。  <br/> |
 |（无）  <br/> |FileModifiedExtended  <br/> |这与 "修改的文件" (FileModified) 活动相关。 当同一人持续修改一个文件长时间 (最长为3小时) 时, 将记录 FileModifiedExtended 事件。 记录 FileModifiedExtended 事件的目的是减少文件被连续修改时记录的 FileModified 事件的数量。 这有助于减少多个 FileModified 记录在本质上是相同的用户活动的噪音, 并让您重点关注最初的 (更重要的) FileModified 事件。  <br/> |
@@ -420,7 +421,7 @@ ms.locfileid: "30411017"
 |允许用户创建组  <br/> |AllowGroupCreationSet  <br/> |网站管理员或所有者向网站添加权限级别, 允许分配该权限的用户为该网站创建组。  <br/> |
 |取消的网站地理位置移动  <br/> |SiteGeoMoveCancelled  <br/> |sharepoint 或全局管理员成功取消 sharepoint 或 OneDrive 站点地理位置移动。 多地理位置功能可让 Office 365 组织跨多个 office 365 数据中心地理位置, 这些地理位置称为信息。 有关详细信息, 请参阅[Office 365 中的 OneDrive 和 SharePoint Online 中的多地理位置功能](https://go.microsoft.com/fwlink/?linkid=860840)。  <br/> |
 |更改了共享策略  <br/> |SharingPolicyChanged  <br/> |sharepoint 或全局管理员使用 Office 365 管理门户、sharepoint 管理门户或 sharepoint Online 命令行管理程序更改了 SharePoint 共享策略。 将记录对组织中共享策略中的设置所做的任何更改。 已更改的策略在事件记录的详细属性中的 " **ModifiedProperties** " 字段中进行标识。  <br/> |
-|已更改设备访问策略  <br/> |DeviceAccessPolicyChanged  <br/> |SharePoint 或全局管理员更改了贵组织的非托管设备策略。 此策略可控制不加入您的组织的设备对 SharePoint、OneDrive 和 Office 365 的访问权限。 配置此策略需要企业移动性 + 安全性订阅。 有关详细信息, 请参阅[控制非托管设备的访问](https://support.office.com/article/5ae550c4-bd20-4257-847b-5c20fb053622)。  <br/> |
+|已更改设备访问策略  <br/> |DeviceAccessPolicyChanged  <br/> |SharePoint 或全局管理员更改了贵组织的非托管设备策略。 此策略可控制不加入您的组织的设备对 SharePoint、OneDrive 和 Office 365 的访问权限。 配置此策略需要企业移动性 + 安全性订阅。 有关详细信息，请参阅[控制非托管设备的访问](https://support.office.com/article/5ae550c4-bd20-4257-847b-5c20fb053622)。  <br/> |
 |已更改的豁免用户代理  <br/> |CustomizeExemptUsers  <br/> |sharepoint 或全局管理员自定义了 sharepoint 管理中心内的豁免用户代理列表。 您可以指定哪些用户代理免于接收整个网页进行索引编制。 这意味着当您指定为豁免的用户代理遇到 InfoPath 表单时, 该表单将作为 XML 文件而不是整个网页返回。 这可以加速对 InfoPath 表单编制索引。  <br/> |
 |更改了网络访问策略  <br/> |NetworkAccessPolicyChanged  <br/> |sharepoint 或全局管理员在 sharepoint 管理中心或通过使用 SharePoint Online PowerShell 更改了基于位置的访问策略 (也称为 "受信任的网络边界")。 此类型的策略控制谁可以根据您指定的授权 IP 地址范围访问组织中的 SharePoint 和 OneDrive 资源。 有关详细信息, 请参阅[基于网络位置控制对 SharePoint Online 和 OneDrive 数据的访问](https://support.office.com/article/b5a5f1f1-1174-4c6b-91d0-9273a6b6971f)。  <br/> |
 |完成的网站地理位置移动  <br/> |SiteGeoMoveCompleted  <br/> |组织中的全局管理员安排的网站地理位置移动已成功完成。 多地理位置功能可让 Office 365 组织跨多个 office 365 数据中心地理位置, 这些地理位置称为信息。 有关详细信息, 请参阅[Office 365 中的 OneDrive 和 SharePoint Online 中的多地理位置功能](https://go.microsoft.com/fwlink/?linkid=860840)。  <br/> |
@@ -468,28 +469,6 @@ ms.locfileid: "30411017"
 |更新的邮件  <br/> |更新  <br/> |更改了邮件或其属性。  <br/> |
 |登录到邮箱的用户  <br/> |mailboxlogin 该值  <br/> |用户登录其邮箱。  <br/> |
 |（无）  <br/> |UpdateInboxRules  <br/> |已添加、删除或更改收件箱规则。 "收件箱" 规则用于根据指定的条件处理用户收件箱中的邮件, 并在满足规则条件时采取操作, 例如将邮件移动到指定文件夹或删除邮件。  <br/> 若要返回收件箱规则活动的条目, 您必须在 "**活动**" 列表中选择 "**显示所有活动的结果**"。 使用 "日期范围" 框和 "**用户**" 列表缩小搜索结果的范围。  <br/> |
-||||
-  
-### <a name="retention-policy-and-label-activities"></a>保留策略和标签活动
-
-下表介绍了与 Security & 合规中心中的保留策略和保留标签相关的活动。 有关详细信息，请参阅：
-
-- [保留策略概述](retention-policies.md)
-- [保留标签概述](labels.md)
-<br/>
-
-|**活动**|**操作**|**说明**|
-|:-----|:-----|:-----|
-| 为保留策略创建保留配置<br/> |NewRetentionComplianceRule<br/> |管理员为新的保留策略配置保留设置。 保留设置包括项目保留的时间, 以及保留期过期时的项目发生的情况 (例如, 删除项目、保留项目或保留, 然后将其删除)。 此活动还对应于运行[new-retentioncompliancerule](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-retention/new-retentioncompliancerule) cmdlet。<br/>|
-| 创建的保留标签 <br/> |NewComplianceTag<br/>  |管理员创建一个新的保留标签。<br/> |
-| 创建的保留策略<br/> |NewRetentionCompliancePolicy<br/> |管理员创建新的保留策略。<br/>  |
-| 保留策略的已删除保留配置<br/> | RemoveRetentionComplianceRule<br/>| 管理员删除保留策略的配置设置。 当管理员删除保留策略或运行**new-retentioncompliancerule** cmdlet 时, 最可能会记录此活动。<br/> |
-| 已删除保留标签 <br/> |RemoveComplianceTag<br/>  | 管理员删除保留标签。<br/>|
-| 已删除保留策略<br/> |RemoveRetentionCompliancePolicy<br/> |管理员删除保留策略。 <br/>  |
-| 启用法规遵从性功能<br/> |SetRestrictiveRetentionUI<br/> |管理员通过运行**RegulatoryComplianceUI** cmdlet 来启用法规遵从性功能。 在运行此 cmdlet 之后, 管理员可以使用安全 & 合规中心 UI 锁定保留策略, 并将保留标签指定为规章记录。 在组织使用**RegulatoryComplianceUI** cmdlet 启用这些功能之前, 锁定保留策略和创建规章保留标签只能通过使用 PowerShell 来完成。 <br/>|
-| 更新了保留策略的保留配置<br/> | SetRetentionComplianceRule<br/>| 管理员更改现有保留策略的保留设置。 保留设置包括项目保留的时间, 以及保留期过期时的项目发生的情况 (例如, 删除项目、保留项目或保留, 然后将其删除)。 此活动还对应于运行[new-retentioncompliancerule](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-retention/set-retentioncompliancerule) cmdlet。 <br/>|
-| 更新的保留标签 <br/> |SetComplianceTag<br/>  | 管理员更新现有保留标签。<br/>|
-| 更新的保留策略<br/> |SetRetentionCompliancePolicy <br/>|管理员更新现有的保留策略。 触发此事件的更新包括添加或排除应用保留策略的内容位置。<br/>|
 ||||
 
 ### <a name="sway-activities"></a>Sway 活动
@@ -725,7 +704,7 @@ exchange 管理员审核日志记录 (默认情况下在 office 365 中启用) �
 
 **目前已审核的 Office 365 服务有什么不同？**
 
-审核最常用的 Office 365 服务, 如 Exchange Online、SharePoint、OneDrive、Azure Active Directory、Microsoft 团队、CRM、高级威胁防护和数据丢失防护。 有关完整列表, 请参阅本文中的 "[简介](#search-the-audit-log-in-the-office-365-security-amp-compliance-center)" 部分。
+审核最常用的 Office 365 服务, 如 Exchange online、SharePoint online、OneDrive for business、Azure Active Directory、Microsoft 团队、Dynamics 365、高级威胁防护和 Power BI。 若要审核的服务列表, 请参阅[本文的开头部分](search-the-audit-log-in-security-and-compliance.md)。
 
 **哪些活动由 Office 365 中的审核服务进行审核？**
 
@@ -754,7 +733,7 @@ exchange 管理员审核日志记录 (默认情况下在 office 365 中启用) �
 
 **是否有其他方法可以获取除使用 office 365 安全 & 合规中心或 office 365 管理活动 API 之外的审核日志？**
 
-不是。 下面是从 Office 365 审核服务中获取数据的两种方法。 
+不可以。 下面是从 Office 365 审核服务中获取数据的两种方法。 
 
 **我是否需要在每个要为其捕获审核日志的服务中单独启用审核？**
 
@@ -762,24 +741,12 @@ exchange 管理员审核日志记录 (默认情况下在 office 365 中启用) �
 
 **Office 365 审核服务是否支持对记录进行重复数据消除？**
 
-不是。 审核服务管道接近实时, 因此无法支持重复数据消除。
+不可以。 审核服务管道接近实时, 因此无法支持重复数据消除。
  
 **Office 365 是否跨地理位置审核数据流？**
 
-不是。 我们目前在 NA (北美)、EMEA (欧洲、中东和非洲) 和 APAC (亚太地区) 区域中审核管道部署。 但是, 我们可能会在这些区域之间传输数据以进行负载平衡, 并且仅在实时站点问题中流动。 当我们执行这些活动时, 将对传输中的数据进行加密。   
+不可以。 我们目前在 NA (北美)、EMEA (欧洲、中东和非洲) 和 APAC (亚太地区) 区域中审核管道部署。 但是, 我们可能会在这些区域之间传输数据以进行负载平衡, 并且仅在实时站点问题中流动。 当我们执行这些活动时, 将对传输中的数据进行加密。   
  
 **审核数据是否已加密？**
 
 审核数据存储在部署审核管道的同一区域中的 Exchange 邮箱 (静态数据) 中。 此数据不加密。 但是, 传输中的数据总是加密的。 
-
-
-
-
-
-
-
-
-
-
-
-

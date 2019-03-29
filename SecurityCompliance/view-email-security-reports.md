@@ -15,12 +15,12 @@ ms.assetid: 3a137e28-1174-42d5-99af-f18868b43e86
 ms.collection:
 - M365-security-compliance
 description: 了解如何使用 Office 365 企业版查找和使用组织的电子邮件安全报告。 安全&amp;合规性中心中提供了电子邮件安全报告。
-ms.openlocfilehash: bfd84948624beaa8ea9d2a37da2ecd186b5bd717
-ms.sourcegitcommit: 15202bba32313534da2478b0cd215f32a10c9ef4
+ms.openlocfilehash: 1a885661f5bf020c325ee2d9f084473ecb27c53a
+ms.sourcegitcommit: 1658be51e2c21ed23bc4467a98af74300a45b975
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "30684361"
+ms.lasthandoff: 03/26/2019
+ms.locfileid: "30862504"
 ---
 # <a name="view-email-security-reports-in-the-security-amp-compliance-center"></a>查看安全&amp;合规性中心中的电子邮件安全报告
 
@@ -29,24 +29,15 @@ ms.locfileid: "30684361"
 ![可在其中查看高级威胁防护的工作方式的仪表板](media/6b213d34-adbb-44af-8549-be9a7e2db087.png)
   
 您的电子邮件安全报告包括以下内容:
-
 - [加密报告](#encryption-report)(新!)
-  
-- [威胁防护状态报告](view-email-security-reports.md#tps) 
-    
-- [恶意软件检测报告](view-email-security-reports.md#maldet)
-    
+- [威胁防护状态报告](#threat-protection-status-report) 
+- [恶意软件检测报告](#malware-detections-report)    
 - [主要恶意软件报告](#top-malware-report)
-    
-- [主要发件人和收件人报告](view-email-security-reports.md#topsenders)
-    
-- [欺骗邮件报告](#spoof-mail-report)
-    
+- [主要发件人和收件人报告](#top-senders-and-recipients-report)
+- [欺骗检测报告](#spoof-detections-report)
 - [垃圾邮件检测报告](#spam-detections-report)
-    
-- [发送和接收的电子邮件报告](view-email-security-reports.md#sentreceivedemail)
-
-- [用户报告的邮件报告](view-email-security-reports.md#userreported)
+- [发送和接收的电子邮件报告](#sent-and-received-email-report)
+- [用户报告的邮件报告](#user-reported-messages-report)
     
 ## <a name="encryption-report"></a>加密报告
 

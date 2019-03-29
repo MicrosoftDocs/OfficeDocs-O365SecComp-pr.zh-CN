@@ -14,12 +14,12 @@ ms.assetid: a097f5ca-eac0-44a4-bbce-365f35b79ed1
 ms.collection:
 - M365-security-compliance
 description: 了解有关威胁跟踪程序的信息, 包括新的重要跟踪程序, 以帮助您的组织保持安全方面的顾虑。
-ms.openlocfilehash: 6870e8d613dbd5d72f20e96be9615712bac711a9
-ms.sourcegitcommit: 0f93b37c39d807dec91f118aa671a3430c47a9ac
+ms.openlocfilehash: 4a12a1cfe68f8ebcfae640a65d0eca68e36fb04c
+ms.sourcegitcommit: 1658be51e2c21ed23bc4467a98af74300a45b975
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/20/2019
-ms.locfileid: "30693071"
+ms.lasthandoff: 03/26/2019
+ms.locfileid: "30862514"
 ---
 # <a name="threat-trackers---new-and-noteworthy"></a>威胁跟踪器 - 新增的和值得注意的威胁
 
@@ -38,7 +38,7 @@ ms.locfileid: "30693071"
   
 ![资源管理器中的市场活动信息示例](media/e426f220-fdcb-4dd9-99a2-db97dbcf71d5.png)
   
-跟踪跟踪只是您在[Office 365 高级威胁防护计划 2](office-365-ti.md)中获得的众多强大功能中的少数几个。 威胁跟踪包括[注意跟踪跟踪](threat-trackers.md#notey)、[趋势跟踪跟踪](threat-trackers.md#trending)、[跟踪的查询](threat-trackers.md#trackedq)和[已保存的查询](threat-trackers.md#savedq)。
+跟踪跟踪只是您在[Office 365 高级威胁防护计划 2](office-365-ti.md)中获得的众多强大功能中的少数几个。 威胁跟踪包括[Noteworth 跟踪](#noteworthy-trackers)跟踪、[趋势跟踪跟踪](#trending-trackers)、[跟踪的查询](#tracked-queries)和[已保存的查询](#saved-queries)。
   
 若要查看并使用您的组织的威胁跟踪器, 请转&amp;到安全合规[https://protection.office.com](https://protection.office.com)中心 (), 然后选择 "**威胁管理** \> **威胁跟踪**程序"。
   

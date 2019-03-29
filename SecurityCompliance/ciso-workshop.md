@@ -9,14 +9,14 @@ ms.service: o365-seccomp
 localization_priority: Normal
 ms.collection: Strat_O365_IP
 description: 了解有关安全原则、已制定的最佳实践和新式化贵组织的最佳实践的最佳实践的详细信息。
-ms.openlocfilehash: cdf194e6d04a8085ada6d9d7571a95b77a79a1ee
-ms.sourcegitcommit: 54a2cbe5d13f448e0c28655bdf88deb9e5434cac
+ms.openlocfilehash: c98944b746fb564f946440408f0be87425237232
+ms.sourcegitcommit: e89c21d569b96f34e5d4d4074ae25d8eec9aeacf
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/27/2019
-ms.locfileid: "30935187"
+ms.lasthandoff: 03/28/2019
+ms.locfileid: "30948513"
 ---
-# <a name="chief-information-security-officer-ciso-workshop"></a>首席信息安全监察官 (CISO) 研讨会
+# <a name="chief-information-security-officer-ciso-workshop-training"></a>首席信息安全监察官 (CISO) 研讨会培训
 
 本首席信息安全办公室 (CISO) 研讨会包含安全学习、原则、已建立的最佳实践以及在云年龄的组织中新式化安全性的新兴最佳实践的集合。 此研讨会建立在来自 Microsoft 安全团队和学习客户的经验组合的基础上。
 
@@ -25,13 +25,14 @@ CISO 研讨会可帮助您的组织解决以下方面的双重安全难题:
 - 日益复杂的攻击
 - 保护混合企业中现包含云平台的资产
 
-CISO 研讨会视频和 PowerPoint 内容设计为模块化, 以便您可以跳转到任何感兴趣的部分, 也可以简单地从开始, 一直到。 幻灯片在此处提供了创造性的 commons (使用特性) 许可证, 以便它们可以重复用于帮助您的组织构建有效的安全策略。
+CISO 研讨会视频和 PDF/PowerPoint 的下载内容旨在作为模块化, 以便您可以跳转到任何感兴趣的部分, 也可以简单地从开始, 一直到。 幻灯片在此处提供了创造性的 commons (使用特性) 许可证, 以便它们可以重复用于帮助您的组织构建有效的安全策略。
 
 ## <a name="module-1--microsoft-cybersecurity-briefing"></a>模块1– Microsoft Cybersecurity 简介
 
 本模块概述了有关关键安全卫生、Microsoft cybersecurity 参考体系结构、cybersecurity 恢复能力、Internet 内容 (IoT) 和运营技术人员的概述。
 
-下载模块 PDF:[模块1– Microsoft Cybersecurity 简介](media/ciso-workshop-1-cybersecurity-briefing.pdf)
+- 下载 PDF 摘要:[模块1– Microsoft Cybersecurity 简介](media/ciso-workshop-1-cybersecurity-briefing.pdf)
+- 下载 PowerPoint 摘要:[模块1– Microsoft Cybersecurity 简介](https://docs.microsoft.com/office365/securitycompliance/media/ciso-workshop-1-cybersecurity-briefing.pptx)
 
 ### <a name="part-1--course-introduction-and-overview"></a>第1部分–课程简介和概述
 
@@ -89,7 +90,8 @@ CISO 研讨会视频和 PowerPoint 内容设计为模块化, 以便您可以跳�
 
 了解如何通过集成指南、自动化策略实施和在这七个部件系列中进行监控, 提高对混合企业环境的可视性和控制能力。
 
-下载模块 PDF:[模块 2-安全管理](media/ciso-workshop-2-security-management.pdf)
+- 下载 PDF 摘要:[模块 2-安全管理](media/ciso-workshop-2-security-management.pdf)
+- 下载 PowerPoint 摘要:[模块 2-安全管理](https://docs.microsoft.com/office365/securitycompliance/media/ciso-workshop-2-security-management.pptx)
 
 ### <a name="introduction---security-management"></a>简介-安全管理
 
@@ -127,7 +129,8 @@ CISO 研讨会视频和 PowerPoint 内容设计为模块化, 以便您可以跳�
 
 由于大多数新式攻击涉及危及用户身份, 因此了解如何构建新的标识安全外围设备来保护公司网络外部的资产。
 
-下载模块 PDF:[模块3–标识和访问管理](media/ciso-workshop-3-identity-protection.pdf)
+- 下载 PDF 摘要:[模块3–身份和访问管理](media/ciso-workshop-3-identity-protection.pdf)
+- 下载 PowerPoint 摘要:[模块3–身份和访问管理](https://docs.microsoft.com/office365/securitycompliance/media/ciso-workshop-3-identity-protection.pptx)
 
 ### <a name="introduction--identity-and-access-management"></a>简介–标识和访问管理
 
@@ -157,7 +160,8 @@ CISO 研讨会视频和 PowerPoint 内容设计为模块化, 以便您可以跳�
 
 了解我们关于威胁防护、安全演变、战略和安全路线图的关键学习。
 
-下载模块 PDF:[模块4a –威胁防护策略](media/ciso-workshop-4a-threat-protection.pdf)
+- 下载 PDF 摘要:[模块4a –威胁防护策略](media/ciso-workshop-4a-threat-protection.pdf)
+- 下载 PowerPoint 摘要:[模块4a –威胁防护策略](https://docs.microsoft.com/office365/securitycompliance/media/ciso-workshop-4a-threat-protection.pptx)
 
 ### <a name="introduction--threat-protection-strategy-identify-protect"></a>简介–威胁防护策略 (识别-保护)
 
@@ -215,7 +219,8 @@ CISO 研讨会视频和 PowerPoint 内容设计为模块化, 以便您可以跳�
 
 本模块将检查我们的安全操作中心 (SOC) 的演变和轨迹, 并在智能安全图形中 trillions 信号。
 
-下载模块 PDF:[模块4b –威胁防护策略](media/ciso-workshop-4b-threat-protection-strategy.pdf)
+- 下载 PDF 摘要:[模块4b –威胁防护策略](media/ciso-workshop-4b-threat-protection-strategy.pdf)
+- 下载 PowerPoint 摘要:[模块4b –威胁防护策略](https://docs.microsoft.com/office365/securitycompliance/media/ciso-workshop-4b-threat-protection-strategy.pptx)
 
 ### <a name="introduction--threat-protection-strategy-detect-respond-recover"></a>简介–威胁防护策略 (检测-响应-恢复)
 
@@ -265,7 +270,8 @@ CISO 研讨会视频和 PowerPoint 内容设计为模块化, 以便您可以跳�
 
 了解如何通过自动分类、跨设备的持续加密以及跨移动设备、云服务和其他公司资产连续监视数据, 来保护敏感信息。
 
-下载模块 PDF:[模块5–信息保护](media/ciso-workshop-5-information-protection-strategy.pdf)
+- 下载 PDF 摘要:[模块5–信息保护](media/ciso-workshop-5-information-protection-strategy.pdf)
+- 下载 PowerPoint 摘要:[模块5–信息保护](https://docs.microsoft.com/office365/securitycompliance/media/ciso-workshop-5-information-protection-strategy.pptx)
 
 ### <a name="introduction--information-protection"></a>简介–信息保护
 
