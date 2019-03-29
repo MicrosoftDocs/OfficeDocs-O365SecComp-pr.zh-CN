@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 借助保留策略，可主动决定是保留内容还是删除内容，亦或是先保留再删除内容；可将一个策略应用于整个组织，或只应用于特定位置或用户；并能将策略应用于所有内容，或只应用于满足特定条件的内容
-ms.openlocfilehash: 82125d13adfb42706a44feeaca3dfb85e06163f6
-ms.sourcegitcommit: 6aa82374eef09d2c1921f93bda3eabeeb28aadeb
+ms.openlocfilehash: b07adf61f63e683de4f5868c227741dc957ffd68
+ms.sourcegitcommit: 54a2cbe5d13f448e0c28655bdf88deb9e5434cac
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/06/2019
-ms.locfileid: "30455444"
+ms.lasthandoff: 03/27/2019
+ms.locfileid: "30935297"
 ---
 # <a name="overview-of-retention-policies"></a>保留策略概述
 
@@ -244,7 +244,7 @@ Office 365 中的保留策略可有助于实现所有这些目标。管理内容
     
 - **组织范围策略不包含 Teams 位置**：若要创建组织范围策略，其中不会包含 Teams 位置，因为 Teams 必须有单独的保留策略。 
     
-- **Teams 不支持高级保留**：如果在创建保留策略时选择[将策略只应用于满足特定条件的内容的高级设置](retention-policies.md#advanced)，就无法使用 Teams 位置。目前，应用于 Teams 的保留策略适用于所有聊天和信道消息内容。
+- **Teams 不支持高级保留**：如果在创建保留策略时选择[将策略只应用于满足特定条件的内容的高级设置](#advanced-settings-that-apply-a-policy-only-to-content-that-meets-certain-conditions)，就无法使用 Teams 位置。目前，应用于 Teams 的保留策略适用于所有聊天和信道消息内容。
     
 - **只能删除年限不短于 30 天的 Teams 内容**：暂不支持创建删除年限不足 30 天的 Teams 内容的策略。若要将此策略应用于 Teams 内容，请指定不短于 30 天的保留期。 
     
@@ -252,7 +252,7 @@ Office 365 中的保留策略可有助于实现所有这些目标。管理内容
     
 在团队中，聊天中共享的文件存储在共享文件的用户的 OneDrive 帐户中。上传到信道的文件存储在团队的 SharePoint 网站中。因此，若要保留或删除团队中的文件，必须创建应用于 SharePoint 和 OneDrive 位置的保留策略。若要将保留策略只应用于特定团队的文件，可以选择团队的 SharePoint 网站和团队用户的 OneDrive 帐户。
   
-应用于 Teams 的保留策略可使用[保留锁定](retention-policies.md#locking)。
+应用于 Teams 的保留策略可使用[保留锁定](#locking-a-retention-policy)。
   
 ![聊天和信道消息的 Teams 位置](media/127345da-e802-4b3a-afc7-6e354dc3f409.png)
   

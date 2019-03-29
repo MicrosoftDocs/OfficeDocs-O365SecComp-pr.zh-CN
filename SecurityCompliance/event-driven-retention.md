@@ -3,7 +3,7 @@ title: 事件驱动保留概述
 ms.author: stephow
 author: stephow-MSFT
 manager: laurawi
-ms.date: 5/22/2018
+ms.date: ''
 ms.audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 使用 Office 365 中的标签，能让保留期以特定类型事件何时发生为依据。也就是说，事件触发开始计算保留期，并对包含与相应事件类型关联的标签的所有内容强制执行标签的保留操作。事件驱动保留通常用于记录管理流程。
-ms.openlocfilehash: 129f957585e9df5a959e34187a0edc384c68c448
-ms.sourcegitcommit: 6aa82374eef09d2c1921f93bda3eabeeb28aadeb
+ms.openlocfilehash: ceb4b2fde10e43235d8d310243fe56cce1a2b240
+ms.sourcegitcommit: a79eb9907759d4cd849c3f948695a9ff890b19bf
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/06/2019
-ms.locfileid: "30455104"
+ms.lasthandoff: 03/26/2019
+ms.locfileid: "30866358"
 ---
 # <a name="overview-of-event-driven-retention"></a>事件驱动保留概述
 
