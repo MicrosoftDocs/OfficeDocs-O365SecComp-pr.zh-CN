@@ -1,0 +1,62 @@
+---
+title: 当邮件为红色标记时, 如何组合策略和保护
+description: 当电子邮件标记为恶意软件、垃圾邮件、高可信度垃圾邮件、网络钓鱼, 以及 EOP 和/或 ATP 时, 将应用哪些策略以及要采取的操作。
+keywords: security、恶意软件、Microsoft 365、M365、security center、ATP、Windows Defender ATP、Office 365 atp、Azure atp
+ms.author: tracyp
+author: MSFTTracyp
+manager: laurawi
+ms.date: 03/26/2019
+ms.audience: ITPro
+ms.topic: article
+ms.service: O365-seccomp
+localization_priority: Normal
+ms.collection:
+- M365-security-compliance
+ms.openlocfilehash: 73f44e747581664f075608d972ee80c8381ca7fd
+ms.sourcegitcommit: 54d58da1777eb83adb82826d1bb1adb94903c8e1
+ms.translationtype: MT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30994822"
+---
+# <a name="what-policy-applies-when-multiple-protection-methods-and-detection-scans-run-on-your-email"></a><span data-ttu-id="6068c-104">在您的电子邮件上运行多个保护方法和检测扫描时应用什么策略</span><span class="sxs-lookup"><span data-stu-id="6068c-104">What policy applies when multiple protection methods and detection scans run on your email</span></span>
+
+<span data-ttu-id="6068c-105">您的传入邮件可能会被多个保护形式 (例如 *, EOP 和*ATP) 标记, 以及多个检测扫描 (例如垃圾邮件*和*网络钓鱼)。</span><span class="sxs-lookup"><span data-stu-id="6068c-105">Potentially, your incoming mail may be flagged by multiple forms of protection (for example both EOP *and* ATP), and multiple detection scans (such as spam *and* phishing).</span></span> <span data-ttu-id="6068c-106">这是因为 atp 客户有 atp 反网络钓鱼策略, 并为 EOP 客户提供了 EOP 反网络钓鱼策略。</span><span class="sxs-lookup"><span data-stu-id="6068c-106">This is possible because there are ATP Anti-phishing policies for ATP customers, and EOP Anti-phishing policies for EOP customers.</span></span> <span data-ttu-id="6068c-107">这也意味着邮件可能会针对恶意软件、网络钓鱼和用户模拟浏览多个检测扫描。</span><span class="sxs-lookup"><span data-stu-id="6068c-107">This also means the message may navigate multiple detection scans for malware, phishing, and user-impersonation, for example.</span></span> <span data-ttu-id="6068c-108">对于所有此活动, 可能会对应用的策略产生一些困惑。</span><span class="sxs-lookup"><span data-stu-id="6068c-108">Given all this activity, there may be some confusion as to which policy applies.</span></span>
+
+<span data-ttu-id="6068c-109">通常情况下, 应用于邮件的策略在**CAT (Category)** 属性的**X-Forefront-反垃圾邮件报告**标头中进行标识。</span><span class="sxs-lookup"><span data-stu-id="6068c-109">In general, a policy applied to a message is identified in the **X-Forefront-Antispam-Report** header in the **CAT (Category)** property.</span></span> <span data-ttu-id="6068c-110">如果您有多个反网络钓鱼策略, 则会应用最高优先级的策略。</span><span class="sxs-lookup"><span data-stu-id="6068c-110">If you have multiple Anti-phishing policies, the one at the highest priority will apply.</span></span>
+
+<span data-ttu-id="6068c-111">以下策略适用于_所有组织_。</span><span class="sxs-lookup"><span data-stu-id="6068c-111">The Policies below apply to _all organizations_.</span></span>
+
+|<span data-ttu-id="6068c-112">优先级</span><span class="sxs-lookup"><span data-stu-id="6068c-112">Priority</span></span> |<span data-ttu-id="6068c-113">策略</span><span class="sxs-lookup"><span data-stu-id="6068c-113">Policy</span></span>  |<span data-ttu-id="6068c-114">类别</span><span class="sxs-lookup"><span data-stu-id="6068c-114">Category</span></span>  |<span data-ttu-id="6068c-115">托管</span><span class="sxs-lookup"><span data-stu-id="6068c-115">Where Managed</span></span> |
+|---------|---------|---------|---------|
+|<span data-ttu-id="6068c-116">1</span><span class="sxs-lookup"><span data-stu-id="6068c-116">1</span></span>     | <span data-ttu-id="6068c-117">恶意软件</span><span class="sxs-lookup"><span data-stu-id="6068c-117">Malware</span></span>      | <span data-ttu-id="6068c-118">MALW</span><span class="sxs-lookup"><span data-stu-id="6068c-118">MALW</span></span>      | <span data-ttu-id="6068c-119">恶意软件策略</span><span class="sxs-lookup"><span data-stu-id="6068c-119">Malware policy</span></span>   |
+|<span data-ttu-id="6068c-120">双面</span><span class="sxs-lookup"><span data-stu-id="6068c-120">2</span></span>     | <span data-ttu-id="6068c-121">网络钓鱼</span><span class="sxs-lookup"><span data-stu-id="6068c-121">Phishing</span></span>     | <span data-ttu-id="6068c-122">PHSH</span><span class="sxs-lookup"><span data-stu-id="6068c-122">PHSH</span></span>     | <span data-ttu-id="6068c-123">配置垃圾邮件筛选器策略</span><span class="sxs-lookup"><span data-stu-id="6068c-123">Configure your spam filter policies</span></span>     |
+|<span data-ttu-id="6068c-124">第三章</span><span class="sxs-lookup"><span data-stu-id="6068c-124">3</span></span>     | <span data-ttu-id="6068c-125">高可信度垃圾邮件</span><span class="sxs-lookup"><span data-stu-id="6068c-125">High confidence spam</span></span>      | <span data-ttu-id="6068c-126">HSPM</span><span class="sxs-lookup"><span data-stu-id="6068c-126">HSPM</span></span>        | <span data-ttu-id="6068c-127">配置垃圾邮件筛选器策略</span><span class="sxs-lookup"><span data-stu-id="6068c-127">Configure your spam filter policies</span></span>        |
+|<span data-ttu-id="6068c-128">4</span><span class="sxs-lookup"><span data-stu-id="6068c-128">4</span></span>     | <span data-ttu-id="6068c-129">网络钓鱼</span><span class="sxs-lookup"><span data-stu-id="6068c-129">Spoofing</span></span>        | <span data-ttu-id="6068c-130">SPOOF</span><span class="sxs-lookup"><span data-stu-id="6068c-130">SPOOF</span></span>        | <span data-ttu-id="6068c-131">反网络钓鱼策略、欺骗性智能</span><span class="sxs-lookup"><span data-stu-id="6068c-131">Anti-phishing policy, spoof intelligence</span></span>        |
+|<span data-ttu-id="6068c-132">5</span><span class="sxs-lookup"><span data-stu-id="6068c-132">5</span></span>     | <span data-ttu-id="6068c-133">垃圾邮件</span><span class="sxs-lookup"><span data-stu-id="6068c-133">Spam</span></span>         | <span data-ttu-id="6068c-134">SPM</span><span class="sxs-lookup"><span data-stu-id="6068c-134">SPM</span></span>         | <span data-ttu-id="6068c-135">配置垃圾邮件筛选器策略</span><span class="sxs-lookup"><span data-stu-id="6068c-135">Configure your spam filter policies</span></span>         |
+|<span data-ttu-id="6068c-136">型</span><span class="sxs-lookup"><span data-stu-id="6068c-136">6</span></span>     | <span data-ttu-id="6068c-137">批量邮件</span><span class="sxs-lookup"><span data-stu-id="6068c-137">Bulk</span></span>         | <span data-ttu-id="6068c-138">BULK</span><span class="sxs-lookup"><span data-stu-id="6068c-138">BULK</span></span>        | <span data-ttu-id="6068c-139">配置垃圾邮件筛选器策略</span><span class="sxs-lookup"><span data-stu-id="6068c-139">Configure your spam filter policies</span></span>         |
+
+<span data-ttu-id="6068c-140">此外, 这些策略适用于_具有 ATP 的组织_。</span><span class="sxs-lookup"><span data-stu-id="6068c-140">In addition, these policies apply to _organizations with ATP_.</span></span>
+
+|<span data-ttu-id="6068c-141">优先级</span><span class="sxs-lookup"><span data-stu-id="6068c-141">Priority</span></span> |<span data-ttu-id="6068c-142">策略</span><span class="sxs-lookup"><span data-stu-id="6068c-142">Policy</span></span>  |<span data-ttu-id="6068c-143">类别</span><span class="sxs-lookup"><span data-stu-id="6068c-143">Category</span></span>  |<span data-ttu-id="6068c-144">托管</span><span class="sxs-lookup"><span data-stu-id="6068c-144">Where Managed</span></span> |
+|---------|---------|---------|---------|
+|<span data-ttu-id="6068c-145">步</span><span class="sxs-lookup"><span data-stu-id="6068c-145">7</span></span>     | <span data-ttu-id="6068c-146">域模拟</span><span class="sxs-lookup"><span data-stu-id="6068c-146">Domain Impersonation</span></span>         | <span data-ttu-id="6068c-147">DIMP</span><span class="sxs-lookup"><span data-stu-id="6068c-147">DIMP</span></span>         | <span data-ttu-id="6068c-148">设置 Office 365 ATP 反网络钓鱼和反网络钓鱼策略</span><span class="sxs-lookup"><span data-stu-id="6068c-148">Set up Office 365 ATP anti-phishing and anti-phishing policies</span></span>        |
+|<span data-ttu-id="6068c-149">utf-8</span><span class="sxs-lookup"><span data-stu-id="6068c-149">8</span></span>     | <span data-ttu-id="6068c-150">用户模拟</span><span class="sxs-lookup"><span data-stu-id="6068c-150">User Impersonation</span></span>        | <span data-ttu-id="6068c-151">UIMP</span><span class="sxs-lookup"><span data-stu-id="6068c-151">UIMP</span></span>         | <span data-ttu-id="6068c-152">设置 Office 365 ATP 反网络钓鱼和反网络钓鱼策略</span><span class="sxs-lookup"><span data-stu-id="6068c-152">Set up Office 365 ATP anti-phishing and anti-phishing policies</span></span>         |
+
+<span data-ttu-id="6068c-153">例如, 如果您有两个策略及其各自的优先级:</span><span class="sxs-lookup"><span data-stu-id="6068c-153">As an example, if you have two policies with their respective priorities:</span></span>
+
+|<span data-ttu-id="6068c-154">策略</span><span class="sxs-lookup"><span data-stu-id="6068c-154">Policy</span></span>  |<span data-ttu-id="6068c-155">优先级</span><span class="sxs-lookup"><span data-stu-id="6068c-155">Priority</span></span>  |<span data-ttu-id="6068c-156">用户/域模拟</span><span class="sxs-lookup"><span data-stu-id="6068c-156">User/Domain Impersonation</span></span>  |<span data-ttu-id="6068c-157">反欺骗</span><span class="sxs-lookup"><span data-stu-id="6068c-157">Anti-spoofing</span></span>  |
+|---------|---------|---------|---------|
+|<span data-ttu-id="6068c-158">A</span><span class="sxs-lookup"><span data-stu-id="6068c-158">A</span></span>     | <span data-ttu-id="6068c-159">1</span><span class="sxs-lookup"><span data-stu-id="6068c-159">1</span></span>        | <span data-ttu-id="6068c-160">开</span><span class="sxs-lookup"><span data-stu-id="6068c-160">On</span></span>        |<span data-ttu-id="6068c-161">关</span><span class="sxs-lookup"><span data-stu-id="6068c-161">Off</span></span>         |
+|<span data-ttu-id="6068c-162">B</span><span class="sxs-lookup"><span data-stu-id="6068c-162">B</span></span>     | <span data-ttu-id="6068c-163">双面</span><span class="sxs-lookup"><span data-stu-id="6068c-163">2</span></span>        | <span data-ttu-id="6068c-164">关</span><span class="sxs-lookup"><span data-stu-id="6068c-164">Off</span></span>        | <span data-ttu-id="6068c-165">开</span><span class="sxs-lookup"><span data-stu-id="6068c-165">On</span></span>        |
+
+<span data-ttu-id="6068c-166">如果一封邮件被标识为_用户模拟_和_欺骗_(请参阅上表中的反欺骗), 并且范围限定为策略 a 的同一组用户的范围为策略 B, 则邮件会被标记并被视为_欺骗_邮件。</span><span class="sxs-lookup"><span data-stu-id="6068c-166">If a message comes in identified as both _user impersonation_ and _spoofing_ (see anti-spoofing in the table above), and the same set of users scoped to policy A is scoped to policy B, then the message is flagged and treated as a _spoof_.</span></span> <span data-ttu-id="6068c-167">但是, 不会应用任何操作, 因为尽管欺骗以更高的优先级 (4) 而不是用户模拟 (8) 运行, 但反欺骗已关闭。</span><span class="sxs-lookup"><span data-stu-id="6068c-167">However, no action is applied because though spoof runs at a higher priority (4) than User Impersonation (8), Anti-spoofing is turned off.</span></span>
+
+<span data-ttu-id="6068c-168">请记住, 管理员可以创建策略的优先级列表 (请参阅上面的 "优先级" 字段), 但只有一个策略将运行并应用其操作。</span><span class="sxs-lookup"><span data-stu-id="6068c-168">Keep in mind, administrators can create a prioritized list of policies (see the priority field above), but only one policy will run and apply its actions.</span></span> <span data-ttu-id="6068c-169">这意味着, 策略 a 和 B 中的用户将具有更高优先级的策略 (a 是 #1), 并且邮件不会通过任何进一步的策略进行筛选。</span><span class="sxs-lookup"><span data-stu-id="6068c-169">That means a user in both policy A and B will have the higher priority policy (A is #1) run, and the message will not filter through any further policies.</span></span> <span data-ttu-id="6068c-170">如果反 spoofiing 处于关闭状态, 则不会运行任何操作。</span><span class="sxs-lookup"><span data-stu-id="6068c-170">If the anti-spoofiing is off, no actions will be run.</span></span>
+
+<span data-ttu-id="6068c-171">由于许多策略中可能有许多用户组, 因此它可能 behoove 管理员考虑使用更少的策略和更多的功能。</span><span class="sxs-lookup"><span data-stu-id="6068c-171">Because there is a potential to have many groups of users in many policies, it may behoove administrators to consider using fewer policies with more capabilities.</span></span> <span data-ttu-id="6068c-172">一定要确保所有用户都受全面策略的覆盖。</span><span class="sxs-lookup"><span data-stu-id="6068c-172">It is also important to be certain that all users are covered by a comprehensive policy.</span></span>
+
+<span data-ttu-id="6068c-173">若要应用其他类型的网络钓鱼策略, 您将需要调整应用不同策略的用户的设置。</span><span class="sxs-lookup"><span data-stu-id="6068c-173">To make other types of phishing policy apply, you will need to adjust the settings of who the various policies apply to.</span></span>
+
+
+
