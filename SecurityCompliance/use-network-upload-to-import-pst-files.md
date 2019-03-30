@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: 103f940c-0468-4e1a-b527-cc8ad13a5ea6
 description: '对于管理员: 了解如何使用网络上传将多个 PST 文件批量导入 Office 365 中的用户邮箱。'
-ms.openlocfilehash: d7ef9d5f9f1d9fcf9ebdf31ffe42979482abc5e7
-ms.sourcegitcommit: fb50bf2f2c9d780c911f245a2f78c6bb5e357f67
+ms.openlocfilehash: d51fb39d994702099b53afa3058cdf8fafffd5a6
+ms.sourcegitcommit: e7a776a04ef6ed5e287a33cfdc36aa2d72862b55
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/28/2019
-ms.locfileid: "30950449"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "31000155"
 ---
 # <a name="use-network-upload-to-import-your-organization-pst-files-to-office-365"></a>使用网络上传将组织 PST 文件导入到 Office 365
 
@@ -48,7 +48,7 @@ ms.locfileid: "30950449"
   
 - 您必须在 Exchange Online 中分配 "邮箱导入导出" 角色, 才能将 PST 文件导入到 Office 365 邮箱。 默认情况下, 此角色不会分配给 Exchange Online 中的任何角色组。 You can add the Mailbox Import Export role to the Organization Management role group. Or you can create a new role group, assign the Mailbox Import Export role, and then add yourself as a member. 有关详细信息, 请参阅[管理角色组](https://go.microsoft.com/fwlink/p/?LinkId=730688)中的 "向角色组添加角色" 或 "创建角色组" 部分。
     
-    此外, 若要在 Office 365 安全&amp;合规中心中创建导入作业, 必须满足以下条件之一:
+    此外, 若要在 Security & 合规性中心中创建导入作业, 必须满足以下条件之一:
     
   - 您必须在 Exchange Online 中向您分配 "邮件收件人" 角色。 By default, this role is assigned to the Organization Management and Recipient Management roles groups.
     
@@ -89,12 +89,12 @@ ms.locfileid: "30950449"
 > [!IMPORTANT]
 > 若要使用网络上传方法导入 PST 文件, 我们建议您在以下过程中使用可在步骤6b 中下载的 Azure AzCopy 版本。
   
-1. 转到[https://protection.office.com](https://protection.office.com)并使用 Office 365 组织中的管理员帐户凭据登录。 
+1. 转到[https://compliance.microsoft.com](https://compliance.microsoft.com)并使用 Office 365 组织中的管理员帐户凭据登录。 
     
-2. 在安全&amp;合规性中心的左侧窗格中, 单击 "**数据调控** \> **导入**"。
+2. 在安全 & 合规性中心的左侧窗格中, 单击 "**数据调控** \> **导入**"。
     
     > [!NOTE]
-    > 必须为您分配适当的权限, 才能访问安全&amp;合规中心中的 "**导入**" 页。 有关详细信息, 请参阅 "**开始之前**" 部分。 
+    > 必须为您分配适当的权限, 才能访问 Security & 合规中心中的 "**导入**" 页。 有关详细信息, 请参阅 "**开始之前**" 部分。 
     
 3. 在 "**导入**" 页![上,](media/ITPro-EAC-AddIcon.gif)单击 "添加图标" "**新建导入作业**"。
     
@@ -235,13 +235,13 @@ Microsoft Azure 存储资源管理器处于预览阶段。
 
 下一步是在 Office 365 中的 "导入服务" 中创建 PST 导入作业。 如前面所述, 您将提交在步骤4中创建的 PST 导入映射文件。 在创建新作业之后, Office 365 将分析 pst 文件中的数据, 然后让您有机会筛选实际导入到在 PST 导入映射文件中指定的邮箱的数据 (请参阅[步骤 6](#step-6-filter-data-and-start-the-pst-import-job))。
   
-1. 转到[https://protection.office.com](https://protection.office.com)并使用 Office 365 组织中的管理员帐户凭据登录。 
+1. 转到[https://compliance.microsoft.com](https://compliance.microsoft.com)并使用 Office 365 组织中的管理员帐户凭据登录。 
     
-2. 在安全&amp;合规性中心的左侧窗格中, 单击 "**数据管理**", 然后单击 "**导入**"。
+2. 在安全 & 合规性中心的左侧窗格中, 单击 "**数据管理**", 然后单击 "**导入**"。
     
 3. 在 "**导入**" 页![上,](media/ITPro-EAC-AddIcon.gif)单击 "添加图标" "**新建导入作业**"。
     
-    **注意:** 您必须分配有适当的权限才能访问安全&amp;合规中心中的 "**导入**" 页, 以创建新的导入作业。 有关详细信息, 请参阅 "**开始之前**" 部分。 
+    **注意:** 您必须分配有适当的权限才能访问 Security & 合规中心中的 "**导入**" 页, 以创建新的导入作业。 有关详细信息, 请参阅 "**开始之前**" 部分。 
     
 4. 键入 PST 导入作业的名称, 然后单击 "**下一步**"。 使用小写字母、数字、连字符和下划线。 不能在名称中使用大写字母或包含空格。
     
@@ -277,7 +277,7 @@ Microsoft Azure 存储资源管理器处于预览阶段。
 
 在步骤5中创建导入作业后, Office 365 将通过标识项目的期限和 pst 文件中包含的不同邮件类型来分析 pst 文件中的数据 (以安全和安全的方式)。 分析完成并准备导入数据后, 可以选择导入 PST 文件中包含的所有数据, 也可以通过设置用于控制导入数据的筛选器来裁切导入的数据。
   
-1. 在安全&amp;合规性中心的 "**导入**" 页上, 单击 "已**准备好为**您在步骤5中创建的导入作业导入 Office 365"。 
+1. 在 Security & 合规性中心的 "**导入**" 页上, 单击 "已准备好为您在步骤5中创建的导入作业**导入 Office 365** "。 
     
     ![单击您创建的导入作业旁边的 "已准备好导入到 Office 365"](media/5760aac3-300b-4e31-b894-253c42a4b82b.png)
   
@@ -311,7 +311,7 @@ Microsoft Azure 存储资源管理器处于预览阶段。
   
 ![将 PST 文件导入到 Office 365 的网络上载过程的工作流](media/9e05a19e-1e7a-4f1f-82df-9118f51588c4.png)
   
-1. 将**pst 导入工具和密钥下载到专用 Azure 存储位置**-第一步是下载 azure AzCopy 命令行工具和用于将 PST 文件上载到 Microsoft 云中的 Azure 存储位置的访问密钥。 您可以从 Office 365 安全&amp;合规中心的 "**导入**" 页中获取它们。 密钥 (称为安全访问签名 (SAS) 密钥) 为你提供将 PST 文件上载到专用和安全 Azure 存储位置所需的权限。 此访问密钥对于您的组织是唯一的, 并且有助于防止在将 PST 文件上传到 Microsoft 云后对其进行未经授权的访问。 请注意, 将 PST 文件导入到 Office 365 不需要您的组织拥有单独的 Azure 订阅。 
+1. 将**pst 导入工具和密钥下载到专用 Azure 存储位置**-第一步是下载 azure AzCopy 命令行工具和用于将 PST 文件上载到 Microsoft 云中的 Azure 存储位置的访问密钥。 您可以从 Security & 合规性中心的 "**导入**" 页面中获取这些。 密钥 (称为安全访问签名 (SAS) 密钥) 为你提供将 PST 文件上载到专用和安全 Azure 存储位置所需的权限。 此访问密钥对于您的组织是唯一的, 并且有助于防止在将 PST 文件上传到 Microsoft 云后对其进行未经授权的访问。 请注意, 将 PST 文件导入到 Office 365 不需要您的组织拥有单独的 Azure 订阅。 
     
 2. 将**pst 文件上载到 Azure 存储位置**-下一步是使用 AzCopy 工具 (在第1步中下载) 将 PST 文件上载并存储在位于与 Office 365 相同的区域 Microsoft 数据中心的 Azure 存储位置中。组织位于。 若要上传它们, 您要导入到 Office 365 的 PST 文件必须位于组织中的文件共享或文件服务器中。
     
@@ -319,11 +319,11 @@ Microsoft Azure 存储资源管理器处于预览阶段。
     
 3. **创建 pst 导入映射文件**-将 pst 文件上载到 Azure 存储位置之后, 下一步是创建逗号分隔值 (CSV) 文件, 该文件指定要将 pst 文件导入到的用户邮箱, 请注意, pst 文件可以 导入到用户的主邮箱或其存档邮箱。 Office 365 导入服务将使用 CSV 文件中的信息导入 PST 文件。
     
-4. **创建 pst 导入作业**-下一步是在安全&amp;合规性中心的 "**导入**" 页上创建一个 pst 导入作业, 并提交在上一步中创建的 pst 导入映射文件。 在创建导入作业之后, Office 365 将分析 PST 文件中的数据, 并为您提供一个设置筛选器的机会, 该筛选器控制实际导入到 PST 导入映射文件中指定的邮箱的数据。 
+4. **创建 pst 导入作业**-下一步是在 Security & 合规性中心的 "**导入**" 页上创建 pst 导入作业, 并提交在上一步中创建的 pst 导入映射文件。 在创建导入作业之后, Office 365 将分析 PST 文件中的数据, 并为您提供一个设置筛选器的机会, 该筛选器控制实际导入到 PST 导入映射文件中指定的邮箱的数据。 
     
 5. **筛选将导入到邮箱的 PST 数据**-在创建和启动导入作业之后, Office 365 将通过标识项目的期限和 pst 文件中包含的不同邮件类型来分析 pst 文件中的数据 (安全和安全). 分析完成并准备导入数据后, 可以选择导入 PST 文件中包含的所有数据, 也可以通过设置用于控制导入数据的筛选器来裁切导入的数据。
     
-6. **启动 pst 导入作业**-在开始导入作业后, Office 365 将使用 pst 导入映射文件中的信息将 pst 文件从其 Azure 存储位置导入到用户邮箱。 有关导入作业的状态信息 (包括有关导入的每个 PST 文件的信息) 显示在安全&amp;合规性中心的 "**导入**" 页上。 导入作业完成后, 会将作业的状态设置为 "**完成**"。
+6. **启动 pst 导入作业**-在开始导入作业后, Office 365 将使用 pst 导入映射文件中的信息将 pst 文件从其 Azure 存储位置导入到用户邮箱。 有关导入作业的状态信息 (包括有关要导入的每个 PST 文件的信息) 将显示在安全 & 合规性中心的 "**导入**" 页上。 导入作业完成后, 会将作业的状态设置为 "**完成**"。
   
 ## <a name="more-information"></a>更多信息
 

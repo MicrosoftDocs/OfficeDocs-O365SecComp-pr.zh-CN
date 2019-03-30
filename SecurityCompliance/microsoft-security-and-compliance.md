@@ -11,12 +11,12 @@ ms.collection:
 - M365-security-compliance
 localization_priority: Normal
 description: 为全新的 Microsoft 365 安全中心和合规性中心做好准备
-ms.openlocfilehash: e67c3f61898187d87aa638cf2dab871a7b694c18
-ms.sourcegitcommit: 54a2cbe5d13f448e0c28655bdf88deb9e5434cac
+ms.openlocfilehash: 15e67b5bdd6aca8c5447abe2e4cd12fb15e36760
+ms.sourcegitcommit: e7a776a04ef6ed5e287a33cfdc36aa2d72862b55
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/27/2019
-ms.locfileid: "30935197"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "31000685"
 ---
 # <a name="the-new-microsoft-365-security-center-and-microsoft-365-compliance-center-are-now-generally-available"></a>现已推出全新的 microsoft 365 安全中心和 Microsoft 365 合规性中心
 
@@ -35,13 +35,13 @@ ms.locfileid: "30935197"
 > [!NOTE]
 > 必须为你分配有效的 Azure Active Directory 角色, 才能访问 Microsoft 365 安全中心。 若要了解详细信息, 请参阅 "[必需的许可证和权限](#required-licenses-and-permissions)" 部分 (本文中的)。
 
-## <a name="microsoft-365-compliance-center"></a>Microsoft 365 合规性中心
+## <a name="microsoft-365-compliance-center"></a>Microsoft 365 合规中心
 
 你的新[Microsoft 365 合规性中心](microsoft-365-compliance-center.md)可向你提供 microsoft 合规性管理器的可见性, 以反映你的总体合规性情况并为你提供建议的操作, 以帮助你配置设置以满足复杂合规性承担. 
 
 您将能够轻松访问灵敏度和保留标签和策略、数据丢失防护 (DLP)、数据管理、电子数据展示、数据主体请求 (dsr)、案例管理和云应用安全性。 此外, 您还可以获得可操作的见解并利用智能自动化功能, 以降低您的合规性风险并保护您的数码房地产。 
 
-[![Microsoft 365 合规性中心](media/m365-compliance-center.png)](microsoft-365-compliance-center.md)
+[![Microsoft 365 合规中心](media/m365-compliance-center.png)](microsoft-365-compliance-center.md)
 
 当您首次使用 Microsoft 365 合规性中心时, 您将看到屏幕顶部的信息, 以帮助您入门。 你将了解如何轻松导航到你最关注浏览的合规性功能。 若要了解详细信息, 请参阅[欢迎使用全新 Microsoft 365 合规性中心](microsoft-365-compliance-center.md)。
 
@@ -70,7 +70,7 @@ ms.locfileid: "30935197"
 - 转到 microsoft 365 管理中心, 然后导航到新的 Microsoft 365 安全中心和 Microsoft 365 合规性中心 (链接位于左侧导航窗格中的 "管理中心" 下)。
 
 > [!TIP]
-> 如果使用的是 office 365 Security & 合规中心 ([https://protection.office.com](http://protection.office.com)), 您仍可以在现有的 office 365 security & 合规性中心中配置和管理 Office 365 设置。 在现有的 Office 365 security & 合规中心以及新的 Microsoft 365 安全中心和 Microsoft 365 合规性中心中, 将保留配置。  
+> 如果使用的是 office 365 Security & 合规中心 ([https://protection.office.com](http://protection.office.com)), 您仍可以在现有安全 & 合规中心中配置和管理 Office 365 设置。 配置将保留在现有的安全 & 合规性中心以及新的 Microsoft 365 安全中心和 Microsoft 365 合规性中心中。  
 
 ## <a name="required-licenses-and-permissions"></a>必需的许可证和权限
 
@@ -92,9 +92,9 @@ ms.locfileid: "30935197"
 
 |门户 |全局管理员 |安全管理员、安全操作员或安全读者|合规性管理员或合规性数据管理员 |
 |---------|---------|---------|---------|
-|[Office 365 安全与合规中心](https://protection.office.com) |是 |是  |是 |
+|[Security & 合规性中心](https://protection.office.com) |是 |是  |是 |
 |[Microsoft 365 安全中心](https://security.microsoft.com) |是  | 是  | 否        |
-|[Microsoft 365 合规性中心](https://compliance.microsoft.com) | 是 | 否 | 是 |
+|[Microsoft 365 合规中心](https://compliance.microsoft.com) | 是 | 否 | 是 |
 |[合规性管理器](https://aka.ms/compliancemanager) |是 | 是 |是  |
 |[Azure Information Protection](https://docs.microsoft.com/azure/information-protection)（Azure 信息保护） |是 |是 |否 |
 |[Azure 安全中心](https://docs.microsoft.com/azure/security-center/)  |是 |是 |否 |
@@ -103,7 +103,7 @@ ms.locfileid: "30935197"
 |[标识保护](https://docs.microsoft.com/azure/active-directory/identity-protection)     |是 |是 |否 |
 |[Privileged Identity Management](https://docs.microsoft.com/azure/active-directory/privileged-identity-management)     |是 |是 |否 |
 |[Intune](https://docs.microsoft.com/intune)     |是 |是 |是 |
-|[Cloud App Security](https://docs.microsoft.com/cloud-app-security/)     |是 |是 |是 |
+|[云应用安全](https://docs.microsoft.com/cloud-app-security/)     |是 |是 |是 |
 |[安全功能分数](https://docs.microsoft.com/office365/securitycompliance/office-365-secure-score)     |是 |是 |否 |
 |[Exchange](https://docs.microsoft.com/exchange/)     |是 |是 |是 |
 

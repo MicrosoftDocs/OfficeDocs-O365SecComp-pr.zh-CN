@@ -8,14 +8,14 @@ ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: ''
-description: 管理员可以了解 Office 365 Security & 合规中心的邮件流仪表板中的 SMTP 身份验证客户端报告。
+description: 管理员可以了解安全 & 合规性中心的邮件流仪表板中的 SMTP 身份验证客户端报告。
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 0444ef85df8e7e26619f1af59cc90b6ab2a06460
-ms.sourcegitcommit: fec1010e405f14e792d650aee0312b78fced3343
+ms.openlocfilehash: b6698345a89edf52e4ee14cea144cb88ff080583
+ms.sourcegitcommit: e7a776a04ef6ed5e287a33cfdc36aa2d72862b55
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/21/2019
-ms.locfileid: "30722778"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30998705"
 ---
 # <a name="smtp-auth-clients-report"></a>SMTP 身份验证客户端报告
 
@@ -26,7 +26,7 @@ ms.locfileid: "30722778"
 
 "邮件流" 仪表板中显示的小部件指示最近7天内已使用 SMTP 身份验证协议的用户或服务帐户的数量。
 
-![SMTP Auth 客户端在 Office 365 安全 & 合规中心中的邮件流仪表板中报告](media/smtp-auth-clients-report-selected.png)
+![SMTP 身份验证客户端在安全 & 合规性中心中的邮件流仪表板中报告](media/smtp-auth-clients-report-selected.png)
 
 单击小组件将打开一个浮出控件, 该浮出控件可提供上一周的 TLS 使用情况和卷的聚合视图。
 

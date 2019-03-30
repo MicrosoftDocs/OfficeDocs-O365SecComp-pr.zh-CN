@@ -11,16 +11,15 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.openlocfilehash: f11abff72ef144b44ce99ca83aadbf5d65bdb273
-ms.sourcegitcommit: ef27da3ea5340d6e7a2eaa1288e2e005ef8e4788
+ms.openlocfilehash: a1a6970e81f3c6ce3f768958333f3a692b05346c
+ms.sourcegitcommit: e7a776a04ef6ed5e287a33cfdc36aa2d72862b55
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/23/2019
-ms.locfileid: "30791593"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30999995"
 ---
 # <a name="hunt-for-malware-and-other-threats-in-microsoft-365"></a>在 Microsoft 365 中寻找恶意软件和其他威胁
 
-[!include[Prerelease�information](prerelease.md)]
 
 搜寻为安全小组提供了跨电子邮件和数据、设备和标识对组织中可能存在的威胁的了解。 在 Windows Defender atp、Office 365 atp 和 Azure ATP 门户中, 可以查找已损坏的帐户、文件较少的恶意软件、可疑的电子邮件等。
 

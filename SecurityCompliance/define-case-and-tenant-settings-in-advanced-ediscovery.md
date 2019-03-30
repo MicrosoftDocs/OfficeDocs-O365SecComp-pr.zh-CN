@@ -1,9 +1,8 @@
 ---
-title: 在 Office 365 高级电子数据展示中定义事例和租户设置
+title: 在 Office 365 高级电子数据展示中定义大小写和租户设置
 ms.author: chrfox
 author: chrfox
 manager: laurawi
-ms.date: 9/14/2017
 ms.audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
@@ -13,14 +12,14 @@ search.appverid:
 - MET150
 ms.assetid: 383809de-7f5e-4a1d-9098-c525f67b7a9a
 description: '了解您可以在 Office 365 高级电子数据展示中的事例级别定义的标签、跨模块和租户设置。  '
-ms.openlocfilehash: e27f33f15d133d502e01a780d6f05ca85cce41a5
-ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
+ms.openlocfilehash: 2e95984651bf4da86bd64cfc3730fae75391410d
+ms.sourcegitcommit: e7a776a04ef6ed5e287a33cfdc36aa2d72862b55
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30219362"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "31000835"
 ---
-# <a name="define-case-and-tenant-settings-in-office-365-advanced-ediscovery"></a>在 Office 365 高级电子数据展示中定义事例和租户设置
+# <a name="define-case-and-tenant-settings-in-office-365-advanced-ediscovery"></a>在 Office 365 高级电子数据展示中定义大小写和租户设置
 
 > [!NOTE]
 > 若要使用高级电子数据展示，组织必须订阅随附高级合规性加载项的 Office 365 E3，或订阅 E5。如果没有此计划，但又要试用高级电子数据展示，可以[注册 Office 365 企业版 E5 试用版](https://go.microsoft.com/fwlink/p/?LinkID=698279)。 
@@ -42,7 +41,7 @@ ms.locfileid: "30219362"
     
 - 文件显示名称: 将在整个高级电子数据展示中显示文件的文件标识符, 以标识文件标题/路径或电子邮件主题的高级电子数据展示显示名称的替代方法。
     
-1. 通过单击 " **Cogwheel** " 图标打开 "**设置和实用工具**"。打开 "**设置和\>实用程序机箱设置**" 选项卡\> **跨模块**。 
+1. 通过单击 " **Cogwheel** " 图标打开 "**设置和实用工具**"。 打开 "**设置和\>实用程序机箱设置**" 选项卡\> **跨模块**。 
     
 2. 从 "**登录后的默认页面**" 选项中进行选择: 
     
@@ -50,7 +49,7 @@ ms.locfileid: "30219362"
     
   - **事例页**
     
-3. 单击“**保存**”。
+3. 单击“保存”****。
     
 ## <a name="tenant-settings"></a>租户设置
 
@@ -62,11 +61,11 @@ ms.locfileid: "30219362"
   
 ### <a name="event-log"></a>事件日志
 
-在高级电子数据展示操作过程中, 事件日志提供了有关高级电子数据展示处理的元数据。例如, 它包括主要高级电子数据展示过程 (导入、分析、相关性和导出) 的开始时间以及结束时间和状态。此日志可用于跟踪和解决数据处理活动, 并用于解决错误和警告。
+在高级电子数据展示操作过程中, 事件日志提供了有关高级电子数据展示处理的元数据。 例如, 它包括主要高级电子数据展示过程 (导入、分析、相关性和导出) 的开始时间以及结束时间和状态。 此日志可用于跟踪和解决数据处理活动, 并用于解决错误和警告。
   
 1. 通过单击 " **Cogwheel** " 图标打开 "**设置和实用工具**"。 
     
-2. 在 "**设置和实用工具\>租户设置**" 选项卡中, 选择 "**事件日志**"。显示事件日志数据。
+2. 在 "**设置和实用工具\>租户设置**" 选项卡中, 选择 "**事件日志**"。 显示事件日志数据。
     
   - 若要按事例筛选日志输出, 请从 "**事例**" 列表中选择事例。 
     
@@ -82,7 +81,7 @@ ms.locfileid: "30219362"
   
 1. 通过单击 " **Cogwheel** " 图标打开 "**设置和实用工具**"。 
     
-2. 在 "**设置和实用工具\>租户设置**" 选项卡中, 选择 "**系统信息**"。将显示版本信息。
+2. 在 "**设置和实用工具\>租户设置**" 选项卡中, 选择 "**系统信息**"。 将显示版本信息。
     
 可以通过单击租户信息下方的 "**刷新**" 图标来更新显示。 
   

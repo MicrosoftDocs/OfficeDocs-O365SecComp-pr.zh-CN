@@ -14,14 +14,14 @@ search.appverid:
 ms.collection:
 - M365-security-compliance
 description: 您可以使用下面的快速入门指南来确保为您的组织设置和配置 Office 365 高级威胁防护 (ATP)。
-ms.openlocfilehash: 5aecbdb63f30a620812de44907b29dcae838ba36
-ms.sourcegitcommit: 0f93b37c39d807dec91f118aa671a3430c47a9ac
+ms.openlocfilehash: a071c626327aa7d0055df522e8fec5ebe41d6a83
+ms.sourcegitcommit: e7a776a04ef6ed5e287a33cfdc36aa2d72862b55
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/20/2019
-ms.locfileid: "30693292"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30999395"
 ---
-# <a name="quick-start-guide-set-up-office-365-advanced-threat-protection"></a>快速入门指南: 设置 Office 365 高级威胁防护
+# <a name="quick-start-guide-set-up-office-365-advanced-threat-protection"></a>快速入门指南：设置 Office 365 高级威胁防护
 
 下面是可用作检查表以确保为您的组织设置了 Office 365 高级威胁防护 (ATP) 的快速入门指南。 如果你是 Office 365 中的威胁防护新手, 或者你不确定从何处入手, 请使用以下指南作为起点。 
 
@@ -44,7 +44,7 @@ ms.locfileid: "30693292"
 
 ## <a name="part-1---anti-malware"></a>第1部分-反恶意软件
 
-1. 在 " [Office 365 安全 & 合规中心](https://protection.office.com)" 中, 选择 "**威胁管理** > **策略** > **反恶意软件**"。
+1. 在 "[安全 & 合规性中心](https://protection.office.com)" 中, 选择 "**威胁管理** > **策略** > **反恶意软件**"。
 2. 双击**默认**策略, 然后选择 "**设置**"。
 3. 指定以下设置:
     - 在 "**恶意软件检测响应**" 部分, 保留默认设置 "**否**"。
@@ -59,7 +59,7 @@ ms.locfileid: "30693292"
 
 ### <a name="atp-safe-attachments-policies"></a>ATP 安全附件策略
 
-1. 在 " [Office 365 安全 & 合规中心](https://protection.office.com)" 中, 选择 "**威胁管理** > **策略** > **ATP 安全附件**"。
+1. 在 "[安全 & 合规性中心](https://protection.office.com)" 中, 选择 "**威胁管理** > **策略** > **ATP 安全附件**"。
 2. 选择 "**打开适用于 SharePoint、OneDrive 和 Microsoft 团队的 ATP**" 选项。
 3. 在 "**保护电子邮件附件**" 部分, 单击加号 (**+**)。
 4. 指定以下设置:
@@ -76,7 +76,7 @@ ms.locfileid: "30693292"
 
 若要设置 ATP 安全链接, 请查看您的默认策略并添加策略。
 
-1. 在 " [Office 365 安全 & 合规中心](https://protection.office.com)" 中, 选择 "**威胁管理** > **策略** > **ATP 安全链接**"。
+1. 在 "[安全 & 合规性中心](https://protection.office.com)" 中, 选择 "**威胁管理** > **策略** > **ATP 安全链接**"。
 2. 双击**默认**策略。
 3. 在 "**使用安全链接**" 部分, 选择 " **office 365 专业增强版"、"office for iOS" 和 "Android**" 选项, 然后单击 "**保存**"。
 4. 在 "**适用于特定收件人的策略**" 部分, 单击加号 (**+**)。
@@ -94,7 +94,7 @@ ms.locfileid: "30693292"
 
 ## <a name="part-3---anti-phishing"></a>第3部分-反网络钓鱼 
 
-1. 在 " [Office 365 安全 & 合规中心](https://protection.office.com)" 中, 选择 "**威胁管理** > **策略** > **ATP 反网络钓鱼**"。
+1. 在 "[安全 & 合规性中心](https://protection.office.com)" 中, 选择 "**威胁管理** > **策略** > **ATP 反网络钓鱼**"。
 2. 单击 "**默认策略**"。
 3. 在 "**模拟**" 部分, 单击 "**编辑**", 然后指定以下设置:
     -  在 "**添加要保护的用户**" 选项卡上打开 "保护"。 然后添加用户, 如贵组织的董事会成员、CEO、CFO 和其他高级领导者。 (可以键入单个电子邮件地址, 或单击以显示列表。)
@@ -112,7 +112,7 @@ ms.locfileid: "30693292"
 
 ## <a name="part-4---anti-spam"></a>第4部分-反垃圾邮件
 
-1. 在 " [Office 365 安全 & 合规中心](https://protection.office.com)" 中, 选择 "**威胁管理** > **策略** > **反垃圾邮件**"。
+1. 在 "[安全 & 合规性中心](https://protection.office.com)" 中, 选择 "**威胁管理** > **策略** > **反垃圾邮件**"。
 2. 在 "**自定义**" 选项卡上, 打开**自定义设置**。
 3. 展开 "**默认垃圾邮件筛选器策略**", 单击 "**编辑策略**", 然后指定以下设置:
     - 在 "**垃圾邮件和批量操作**" 部分, 将阈值设置为值5或6。

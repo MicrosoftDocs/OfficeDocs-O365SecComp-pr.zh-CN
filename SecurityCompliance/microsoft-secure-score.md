@@ -11,16 +11,14 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.openlocfilehash: 369d3edf02b26be466a6dc8eea3d872030bbbcd2
-ms.sourcegitcommit: ef27da3ea5340d6e7a2eaa1288e2e005ef8e4788
+ms.openlocfilehash: 981cb2e6820cb349ff1e2d101bf21d592c2191c6
+ms.sourcegitcommit: e7a776a04ef6ed5e287a33cfdc36aa2d72862b55
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/23/2019
-ms.locfileid: "30789407"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "31001155"
 ---
 # <a name="microsoft-secure-score"></a>Microsoft 安全功能分数
-
-[!include[Prerelease�information](prerelease.md)]
 
 通过 microsoft 365 安全中心中的 microsoft 安全评分, 可以更好地查看和控制组织的安全状况。 通过集中式仪表板, 可以监视和提高 Microsoft 365 标识、数据、应用程序、设备和基础结构的安全性。
 

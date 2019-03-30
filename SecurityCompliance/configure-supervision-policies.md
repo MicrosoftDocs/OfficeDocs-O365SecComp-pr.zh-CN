@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 ms.assetid: d14ae7c3-fcb0-4a03-967b-cbed861bb086
 description: 设置监管审核策略以捕获员工通信以供审阅。
-ms.openlocfilehash: ce032a96131fdfb6f226dd25dfbb8e2de41c9931
-ms.sourcegitcommit: a79eb9907759d4cd849c3f948695a9ff890b19bf
+ms.openlocfilehash: 1e381f5f435c7edb9f59afb07c22905f12d35513
+ms.sourcegitcommit: e7a776a04ef6ed5e287a33cfdc36aa2d72862b55
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/26/2019
-ms.locfileid: "30866388"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "31001025"
 ---
 # <a name="configure-supervision-policies-for-your-organization"></a>配置组织的监督策略
 
@@ -34,31 +34,29 @@ ms.locfileid: "30866388"
   
 按照以下步骤在 Office 365 组织中设置和使用监督:
   
-- **步骤 1 (可选)** - [为监督设置组](configure-supervision-policies.md#exampledist)
+- **步骤 1 (可选)** - [为监督设置组 (可选)](#step-1---set-up-groups-for-supervision-optional)
 
     在开始使用监督之前, 请先确定谁将查看其通信, 以及谁将执行这些审阅。 如果您只想开始几个用户来了解监督工作的工作方式, 则可以跳过 "立即" 设置组。
 
-- **步骤 2 (必需)** - [使监督在您的组织中可用](configure-supervision-policies.md#MakeAvailable)
+- **步骤 2 (必需)** - [使监督在您的组织中可用 (必需)](#step-2---make-supervision-available-in-your-organization-required)
 
-    将自己添加到监管审核角色组, 以便您可以设置策略。 分配此角色的任何人都可以访问 Security & 合规中心内的**数据管理**下的**监督**页面。 如果要审阅的电子邮件托管在 Exchange online 中, 则每个审阅者还必须具有[对 exchange online 的远程 PowerShell 访问权限](https://docs.microsoft.com/powershell/exchange/exchange-online/disable-access-to-exchange-online-powershell)。
+    将自己添加到监管审核角色组, 以便您可以设置策略。 分配此角色的任何人都可以访问合规中心中的**监督**页面。 如果要审阅的电子邮件托管在 Exchange online 中, 则每个审阅者还必须具有[对 exchange online 的远程 PowerShell 访问权限](https://docs.microsoft.com/powershell/exchange/exchange-online/disable-access-to-exchange-online-powershell)。
 
-- **步骤 3 (可选)** - [配置自定义敏感信息类型或自定义关键字词典/词典](configure-supervision-policies.md#sensitiveinfo)
+- **步骤 3 (可选)** - [创建自定义敏感信息类型和自定义关键字词典](#step-3---create-custom-sensitive-information-types-and-custom-keyword-dictionaries-optional)
 
     如果需要对监督策略使用自定义敏感信息类型或自定义关键字词典, 则需要在启动监督向导之前创建它。
 
-- **步骤 4 (必需)** - [设置监督策略](configure-supervision-policies.md#setupsuper)
+- **步骤 4 (必需)** - [设置监督策略](#step-4---set-up-a-supervision-policy-required)
 
-    你将在安全 & 合规中心中创建监督策略。 这些策略定义哪些通信将在组织中进行审核, 并指定应执行审阅的用户。 通信包括电子邮件和 Microsoft 团队通信, 以及第三方平台通信 (如 Facebook、Twitter 等)
+    您将在合规性中心创建监督策略。 这些策略定义哪些通信将在组织中进行审核, 并指定应执行审阅的用户。 通信包括电子邮件和 Microsoft 团队通信, 以及第三方平台通信 (如 Facebook、Twitter 等)
 
-- **第5步-(可选)**[测试新的监督策略](configure-supervision-policies.md#TestPolicy)
+- **第5步-(可选)**[测试监督策略](#step-5---test-your-supervision-policy-optional)
 
     测试您的监督策略以确保其正常运行是确保合规性策略满足您的标准所需的重要部分。
 
-- **步骤 6-(可选)**[为不希望使用 Office 365 监督仪表板或 web 上的 outlook (以前称为 Outlook web App) 的审阅者配置 Outlook 以查看受监督的通信](configure-supervision-policies.md#UseOutlook)
+- **步骤 6-(可选)**[为不希望使用 Office 365 监督仪表板或 web 上的 outlook (以前称为 Outlook web App) 的审阅者配置 Outlook 以查看受监督的通信](#step-6---configure-outlook-for-reviewers-optional)
 
     outlook 可以配置为使审阅者能够访问 Outlook 客户端中的监督功能, 以便他们能够评估和分类每个项目。
-
-<a name="exampledist"> </a>
 
 ## <a name="step-1---set-up-groups-for-supervision-optional"></a>步骤 1-设置监控组 (可选)
 
@@ -104,11 +102,9 @@ ms.locfileid: "30866388"
 - [管理启用邮件的安全组](https://docs.microsoft.com/Exchange/recipients-in-exchange-online/manage-mail-enabled-security-groups)
 - [Office 365 组概述](https://docs.microsoft.com/office365/admin/create-groups/office-365-groups?view=o365-worldwide)
 
-<a name="MakeAvailable"> </a>
-
 ## <a name="step-2---make-supervision-available-in-your-organization-required"></a>第2步-使监督在你的组织可用 (必需)
 
-若要在安全 & 合规中心中将**监察**功能作为菜单选项提供, 您必须分配有监管审核管理员角色。
+若要使**监督**成为合规中心中的菜单选项, 您必须分配有监管审核管理员角色。
   
 若要执行此操作, 您可以将自己添加为监管审核角色组的成员, 也可以创建新的角色组。
   
@@ -116,7 +112,7 @@ ms.locfileid: "30866388"
 
 1. 在 Office [https://protection.office.com](https://protection.office.com) 365 组织中使用管理员帐户的凭据进行登录。
 
-2. 在 "安全 & 合规性中心" 中, 转到 "**权限**"。
+2. 在 "合规性中心" 中, 转到 "**权限**"。
 
 3. 选择 "**监管审核**" 角色组, 然后单击 "编辑" 图标。
 
@@ -126,20 +122,18 @@ ms.locfileid: "30866388"
 
 1. 在 Office [https://protection.office.com](https://protection.office.com) 365 组织中使用管理员帐户的凭据进行登录。
 
-2. 在 "安全 & 合规性中心" 中, 转到 "**权限**"**+**, 然后单击 "添加" ()。
+2. 在 "合规性中心" 中, 转到 "**权限**"**+**, 然后单击 "添加" ()。
 
 3. 在 "**角色**" 部分中, 单击**+**"添加" (), 然后向下滚动到 "**监察审核管理员**"。 将此角色添加到角色组。
 
 4. 在 "**成员**" 部分, 添加要为组织管理监督的人员。
 
-有关角色组和权限的详细信息, 请参阅[Office 365 安全&amp;合规中心中的权限](permissions-in-the-security-and-compliance-center.md)。
+有关角色组和权限的详细信息, 请参阅[合规性中心中的权限](permissions-in-the-security-and-compliance-center.md)。
 
 ### <a name="enable-remote-powershell-access-for-reviewers-if-email-is-hosted-on-exchange-online"></a>为审阅者启用远程 PowerShell 访问 (如果 Exchange Online 上托管电子邮件)
 
 1. 按照[启用或禁用对 Exchange Online PowerShell 的访问](https://docs.microsoft.com/powershell/exchange/exchange-online/disable-access-to-exchange-online-powershell)中的指导进行操作。
 
-<a name="sensitiveinfo"> </a>
-  
 ## <a name="step-3---create-custom-sensitive-information-types-and-custom-keyword-dictionaries-optional"></a>步骤 3-创建自定义敏感信息类型和自定义关键字词典 (可选)
 
 若要从监督策略向导中的现有自定义敏感信息类型或自定义关键字词典中进行选择, 需要先创建这些项目。
@@ -161,13 +155,11 @@ ms.locfileid: "30866388"
 
     创建自定义词典/词典之后, 可以使用[DlpKeywordDictionary](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-dlp/get-dlpkeyworddictionary) cmdlet 查看配置的关键字, 也可以使用[DlpKeywordDictionary](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-dlp/set-dlpkeyworddictionary) cmdlet 添加和删除术语。
 
-<a name="setupsuper"> </a>
-
 ## <a name="step-4---set-up-a-supervision-policy-required"></a>步骤 4-设置监督策略 (必需)
   
 1. 在 Office [https://protection.office.com](https://protection.office.com) 365 组织中使用管理员帐户的凭据进行登录。
 
-2. 在 "安全 & 合规中心" 中, 选择 "**监督**"。
+2. 在 "合规性中心" 中, 选择 "**监督**"。
   
 3. 选择 "**创建**", 然后按照向导设置此策略的以下页面。 使用该向导, 您将:
 
@@ -178,8 +170,6 @@ ms.locfileid: "30866388"
     - 定义要查看的通信百分比。
     - 选择策略的审阅者。 审阅者可以是单个用户, 也可以是[启用邮件的安全组](https://docs.microsoft.com/Exchange/recipients-in-exchange-online/manage-mail-enabled-security-groups#create-a-mail-enabled-security-group)。
     - 查看策略选择并创建策略。
-
-<a name="TestPolicy"> </a>
 
 ## <a name="step-5---test-your-supervision-policy-optional"></a>第5步-测试监察策略 (可选)
 
@@ -192,8 +182,6 @@ ms.locfileid: "30866388"
     > 已定义策略的电子邮件将在接近实时的情况中进行处理, 并且可以在配置策略后立即进行测试。 Microsoft 团队中的聊天可能需要长达24小时才能在策略中完全处理。 
 
 3. 以监督策略中指定的审阅者的形式登录到 Office 365 租户。 导航到 "**监控** > "*您的自定义策略* > **打开**以查看该策略的报告。
-
-<a name="UseOutlook"> </a>
 
 ## <a name="step-6---configure-outlook-for-reviewers-optional"></a>步骤 6-配置 Outlook for 审阅者 (可选)
 
@@ -208,7 +196,7 @@ ms.locfileid: "30866388"
 
  **查找监督邮箱地址**
   
-1. 使用 Office 365 组织中的管理员帐户的凭据登录到[ &amp;安全合规中心](https://protection.office.com)。
+1. 使用组织中的管理员帐户的凭据登录[合规性中心](https://compliance.microsoft.com)。
 
 2. 转到 "**监督**"。
 

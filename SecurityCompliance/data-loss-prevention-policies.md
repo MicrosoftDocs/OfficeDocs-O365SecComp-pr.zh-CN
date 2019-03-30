@@ -3,8 +3,8 @@ title: 数据丢失防护策略概述
 ms.author: deniseb
 author: denisebmsft
 manager: laurawi
-ms.date: 6/29/2018
-ms.audience: Admin
+ms.date: 3/29/2019
+ms.audience: ITPro
 ms.topic: conceptual
 f1_keywords:
 - ms.o365.cc.DLPLandingPage
@@ -15,12 +15,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: 使用 office 365 安全&amp;合规中心中的数据丢失防护 (DLP) 策略, 可以在 office 365 中识别、监视和自动保护敏感信息。
-ms.openlocfilehash: 7c776b3fd703ddb24d9d8195609384771858c7f5
-ms.sourcegitcommit: 1658be51e2c21ed23bc4467a98af74300a45b975
+ms.openlocfilehash: 4117a99afc804fd397deb45087c5058077f9ff60
+ms.sourcegitcommit: e7a776a04ef6ed5e287a33cfdc36aa2d72862b55
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/26/2019
-ms.locfileid: "30862534"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "31000015"
 ---
 # <a name="overview-of-data-loss-prevention-policies"></a>数据丢失防护策略概述
 
@@ -28,7 +28,7 @@ ms.locfileid: "30862534"
   
 您可以使用 DLP 策略实现以下功能：
   
-- **在许多位置 (如 Exchange online、SharePoint online 和 OneDrive for business) 标识敏感信息。**
+- **在许多位置 (如 Exchange online、SharePoint online、OneDrive for business 和 Microsoft 团队) 标识敏感信息。**
     
     例如, 您可以标识任何包含存储在任何 OneDrive for business 网站中的信用卡号的文档, 也可以仅监视特定人员的 onedrive 站点。
     
@@ -36,13 +36,13 @@ ms.locfileid: "30862534"
     
     例如, 您可以标识任何包含与组织外部人员共享的运行状况记录的文档或电子邮件, 然后自动阻止对该文档的访问或阻止发送该电子邮件。
     
-- **监视和保护桌面版本的 Excel 2016、PowerPoint 2016 和 Word 2016 中的敏感信息。**
+- **监视和保护桌面版本的 Excel、PowerPoint 和 Word 中的敏感信息。**
     
-    就像在 Exchange online、SharePoint online 和 OneDrive for business 中一样, 这些 Office 2016 桌面程序包含的功能可以识别敏感信息并应用 DLP 策略。 当用户在这些 Office 2016 程序中共享内容时，DLP 进行持续监视。
+    就像在 Exchange online、SharePoint online 和 OneDrive for business 中一样, 这些 Office 桌面程序都包含用于识别敏感信息和应用 DLP 策略的相同功能。 当用户共享这些 Office 程序中的内容时, DLP 提供连续监控。
     
 - **帮助用户了解如何保持兼容性，同时不会中断工作流。**
     
-    您可以向用户介绍 DLP 策略，并帮助他们保持兼容性，同时不会中断工作。 例如，如果用户尝试共享包含敏感信息的文档，DLP 策略可以向他们发送电子邮件通知，同时在文档库的上下文中向其显示一个策略提示，以允许他们在具有业务理由的情况下替代策略。 同样的策略提示也会显示在 web 上的 outlook、outlook 2013 及更高版本、Excel 2016、PowerPoint 2016 和 Word 2016 中。
+    您可以向用户介绍 DLP 策略，并帮助他们保持兼容性，同时不会中断工作。 例如，如果用户尝试共享包含敏感信息的文档，DLP 策略可以向他们发送电子邮件通知，同时在文档库的上下文中向其显示一个策略提示，以允许他们在具有业务理由的情况下替代策略。 outlook 网页、outlook、Excel、PowerPoint 和 Word 中也会显示相同的策略提示。
     
 - **查看显示与组织的 DLP 策略匹配的内容的 DLP 报告。**
     
@@ -56,7 +56,7 @@ ms.locfileid: "30862534"
 
 DLP 策略包含以下基本内容：
   
-- 在何处保护内容**位置**, 如 Exchange online、SharePoint online 和 OneDrive for business 网站。 
+- 在何处保护内容**位置**, 如 Exchange online、SharePoint online 和 OneDrive for business 网站, 以及 Microsoft 团队聊天和频道。 
     
 - 何时以及如何通过强制执行由以下部分组成的**规则**来保护此内容： 
     
@@ -72,7 +72,7 @@ DLP 策略包含以下基本内容：
   
 ### <a name="locations"></a>位置
 
-DLP 策略可以跨 Office 365 查找和保护敏感信息, 无论这些信息是位于 Exchange online、SharePoint online 还是 OneDrive for business 中。 您可以轻松选择保护所有 SharePoint 网站或 OneDrive 帐户、仅特定网站或帐户或所有邮箱。 请注意, 尚不能仅选择特定用户的邮箱。
+DLP 策略可以跨 Office 365 查找和保护敏感信息, 无论这些信息位于 Exchange online、SharePoint online、OneDrive for business 中还是 Microsoft 团队中。 您可以选择保护 Exchange 电子邮件、Microsoft 团队聊天和频道、所有 SharePoint 或 OneDrive 库中的内容, 或选择策略的特定位置。
   
 ![DLP 策略可以在其中应用的位置选项](media/ee50a61a-e867-4571-a150-3eec8d83650f.png)
   
@@ -148,11 +148,11 @@ DLP 策略可帮助保护定义为**敏感信息类型**的敏感信息。 Offic
   
 除了发送电子邮件通知之外, 用户通知还会显示策略提示:
   
-- 在 outlook 2013 及更高版本和 web 上的 outlook 中。
+- 在 outlook 和 web 上的 outlook 中。
     
 - 对于 SharePoint Online 或 OneDrive for business 网站上的文档。
     
-- 在 Excel 2016、PowerPoint 2016 和 Word 2016 中, 当文档存储在 DLP 策略中所包含的网站上时。
+- 在 Excel、PowerPoint 和 Word 中, 当文档存储在包含在 DLP 策略中的网站上时。
     
 电子邮件通知和策略提示说明了内容与 DLP 策略冲突的原因。 如果您选择，电子邮件通知和策略提示可以允许用户通过报告误报或提供业务理由来替代规则。 这可以帮助您让用户了解您的 DLP 策略和强制执行它们，而不会阻止用户完成其工作。 有关替代和误报的信息还记录报告（请参阅下文提供的 DLP 报告）并且包含在事件报告（下一节）中，以便合规部主管可以定期查看此信息。
   
@@ -428,13 +428,15 @@ DLP 使用深入内容分析（而不仅仅是简单的文本扫描）来检测�
 
 在安全&amp;合规中心中创建 DLP 策略后, 它将存储在一个中央策略存储中, 然后同步到各种内容源, 其中包括:
   
-- Exchange Online, 并从 web 上的 outlook 和 outlook 2013 及更高版本中的 outlook
+- Exchange Online, 并从 web 上的 outlook 和 outlook 打开
     
 - OneDrive for Business 站点
     
 - SharePoint Online 站点
     
-- Office 2016 桌面程序（Excel 2016、PowerPoint 2016 和 Word 2016）
+- Office 桌面程序 (Excel、PowerPoint 和 Word)
+
+- Microsoft Teams 频道和聊天
     
 在将该策略同步到正确的位置之后, 它将开始评估内容并强制执行操作。
   
@@ -444,26 +446,36 @@ DLP 使用深入内容分析（而不仅仅是简单的文本扫描）来检测�
   
 为此，DLP 策略经常检查后台中是否包含与策略相符的文档。 您可以将这视为异步策略评估。
   
-下面介绍了它的工作原理。 当用户在其网站中添加或更改文档时, 搜索引擎会对内容进行扫描, 以便以后可以对其进行搜索。 在这种情况下, 还会对内容进行扫描以查找敏感信息, 并检查是否已共享。 找到的任何敏感信息都将安全存储在搜索索引中, 以便只有合规性团队可以访问它, 而不是典型用户。 您已启用的每个 DLP 策略都将在后台运行 (异步), 检查与策略匹配的任何内容的搜索频率, 并应用操作以防止意外泄漏。
+#### <a name="how-it-works"></a>工作原理
+ 
+当用户在其网站中添加或更改文档时, 搜索引擎会对内容进行扫描, 以便以后可以对其进行搜索。 在这种情况下, 还会对内容进行扫描以查找敏感信息, 并检查是否已共享。 找到的任何敏感信息都将安全存储在搜索索引中, 以便只有合规性团队可以访问它, 而不是典型用户。 您已启用的每个 DLP 策略都将在后台运行 (异步), 检查与策略匹配的任何内容的搜索频率, 并应用操作以防止意外泄漏。
   
 ![显示 DLP 策略异步评估内容方式的关系图](media/bdf73099-039a-4909-ae89-ac12c41992ba.png)
   
 最后，文档可能与 DLP 策略相冲突，但也可能符合 DLP 策略。例如，如果用户将信用卡号添加到文档，可能会导致 DLP 策略自动阻止对该文档的访问。但是，如果该用户稍后删除此敏感信息，则下一次根据此策略对此文档进行评估时，该操作（在这种情况下，阻止操作）将自动撤消。
   
-DLP 评估可编制索引的任何内容。 有关默认情况下爬网的文件类型的详细信息, 请参阅[SharePoint Server 2013 中的默认已爬网文件扩展名和分析文件类型](https://go.microsoft.com/fwlink/p/?LinkID=627430)。
+DLP 评估可编制索引的任何内容。 有关默认情况下进行爬网的文件类型的详细信息, 请参阅[SharePoint Server 中的默认已爬网文件扩展名和分析文件类型](https://docs.microsoft.com/SharePoint/technical-reference/default-crawled-file-name-extensions-and-parsed-file-types)。
   
-### <a name="policy-evaluation-in-exchange-online-outlook-2013-and-later-and-outlook-on-the-web"></a>Exchange Online 中的策略评估、Outlook 2013 及更高版本和 web 上的 outlook
+### <a name="policy-evaluation-in-exchange-online-outlook-and-outlook-on-the-web"></a>Exchange Online、outlook 和 outlook 网页版中的策略评估
 
-在创建包含 Exchange online 作为位置的 DLP 策略时, 该策略将从 Office 365 安全&amp;合规中心同步到 exchange online, 然后从 exchange online 同步到 web 上的 outlook 和 outlook 2013 及更高版本。
+在创建包含 Exchange online 作为位置的 DLP 策略时, 该策略将从 Office 365 安全&amp;合规中心同步到 Exchange online, 然后从 exchange online 同步到 web 上的 outlook 和 outlook。
   
-在 Outlook 中撰写邮件时, 如果要创建的内容是根据 DLP 策略进行评估, 则用户可以查看策略提示。 在发送邮件之后, 它会针对 DLP 策略进行评估, 作为邮件流的正常部分, 以及 exchange 邮件流规则 (也称为传输规则) 和在 exchange 管理中心中创建的 DLP 策略 (有关详细信息, 请参阅下一节)。 DLP 策略同时扫描邮件和所有附件。
+在 Outlook 中撰写邮件时, 如果要创建的内容是根据 DLP 策略进行评估, 则用户可以查看策略提示。 在邮件发送之后, 它将根据 DLP 策略进行评估, 作为邮件流的正常部分, 以及 exchange 邮件流规则 (也称为传输规则) 和在 exchange 管理中心中创建的 DLP 策略。 DLP 策略同时扫描邮件和所有附件。
   
-### <a name="policy-evaluation-in-the-office-2016-desktop-programs"></a>Office 2016 桌面程序中的策略评估
+### <a name="policy-evaluation-in-the-office-desktop-programs"></a>Office 桌面程序中的策略评估
 
-Excel 2016、PowerPoint 2016 和 Word 2016 包括相同的功能，可像 SharePoint Online 和 OneDrive for Business 一样识别敏感信息和应用 DLP 策略。 这些 Office 2016 程序直接从中央策略存储同步自己的 DLP 策略, 然后在用户处理从包含在 DLP 策略中的网站中打开的文档时, 根据 dlp 策略连续评估内容。
+Excel、PowerPoint 和 Word 包含标识敏感信息的相同功能, 并将 DLP 策略应用为 SharePoint Online 和 OneDrive for business。 这些 Office 程序直接从中央策略存储同步其 DLP 策略, 然后在用户处理从包含在 DLP 策略中的网站中打开的文档时, 将继续评估 dlp 策略的内容。
   
-Office 2016 中的 DLP 策略评估旨在不对程序的性能或处理内容的用户的工作效率产生任何影响。 如果他们正在处理大型文档, 或者用户的计算机忙, 可能需要几秒钟的时间才能显示策略提示。
-  
+Office 中的 DLP 策略评估设计不会影响程序的性能或对内容进行处理的人员的工作效率。 如果他们正在处理大型文档, 或者用户的计算机忙, 可能需要几秒钟的时间才能显示策略提示。
+
+### <a name="policy-evaluation-in-microsoft-teams"></a>Microsoft 团队中的策略评估
+ 
+在创建包含 Microsoft 团队作为位置的 DLP 策略时, 该策略将从 Office 365 安全&amp;合规中心同步到用户帐户以及 Microsoft 团队频道和聊天。 当有人尝试在 Microsoft 团队聊天或频道中共享敏感信息时, 可能会阻止或取消邮件, 具体取决于配置 DLP 策略的方式。 而且, 包含敏感信息且与来宾共享的文档 (外部用户) 将不会为这些用户打开。
+
+例如, 假设有人试图在团队聊天或频道中与外部用户共享敏感信息。 假定已定义一个 DLP 策略来阻止这种情况。 就地保护时, 将删除包含发送给外部用户的敏感信息的邮件。 这将在几秒内发生, 并根据 DLP 策略的配置方式自动发生。
+
+策略提示通知发件人其邮件被阻止或吊销的原因。 例如, 可能会告知发件人其邮件包含不允许与任何人共享的个人身份信息 (PII), 或者包含 PII 的文档不能与组织外部的人员共享。 然后, 发件人可以编辑其邮件, 使其符合 DLP 策略。
+ 
 ## <a name="permissions"></a>权限
 
 要创建 DLP 策略的合规性团队的成员需要安全&amp;合规中心的权限。 默认情况下, 你的租户管理员将有权访问此位置, 并且可以向合规专员和其他人授予&amp;对安全合规中心的访问权限, 而无需为其授予租户管理员的所有权限。为此, 我们建议您执行以下操作:
@@ -482,19 +494,19 @@ Office 2016 中的 DLP 策略评估旨在不对程序的性能或处理内容的
 
 若要将大多数 cmdlet 用于安全&amp;合规性中心, 您需要执行以下操作:
   
-1. [使用远程 PowerShell 连接到 Office 365 安全与合规中心](http://go.microsoft.com/fwlink/?LinkID=799771&amp;clcid=0x409)
+1. [使用远程 PowerShell 连接到 Office 365 安全与合规中心](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell?view=exchange-ps)
     
-2. 使用这些[Office 365 安全&amp;合规中心 cmdlet](http://go.microsoft.com/fwlink/?LinkID=799772&amp;clcid=0x409)中的任何一个
+2. 使用任何[符合策略和合规性的 dlp cmdlet](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-dlp/export-dlppolicycollection?view=exchange-ps)
     
-但是, DLP 报告需要跨 Office 365 请求获取数据, 包括 Exchange Online。 出于此原因, 在 Exchange Online powershell 中提供了 DLP 报告的 cmdlet--不在安全&amp;合规中心 powershell 中。 因此, 若要使用 DLP 报告的 cmdlet, 需要执行以下操作:
+但是, DLP 报告需要跨 Office 365 请求获取数据, 包括 Exchange Online。 出于此原因, 在**Exchange Online powershell 中提供了 DLP 报告的 cmdlet--不在安全&amp;合规中心 powershell**中。 因此, 若要使用 DLP 报告的 cmdlet, 需要执行以下操作:
   
-1. [Connect to Exchange Online using remote PowerShell](http://go.microsoft.com/fwlink/?LinkID=799773&amp;clcid=0x409)
+1. [Connect to Exchange Online using remote PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell?view=exchange-ps)
     
 2. 为 DLP 报告使用以下任一 cmdlet:
     
-  - [get-dlpdetectionsreport](http://go.microsoft.com/fwlink/?LinkID=799774&amp;clcid=0x409)
+  - [get-dlpdetectionsreport](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-dlp/Get-DlpDetectionsReport?view=exchange-ps)
     
-  - [get-dlpdetailreport](http://go.microsoft.com/fwlink/?LinkID=799775&amp;clcid=0x409)
+  - [get-dlpdetailreport](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-dlp/Get-DlpDetailReport?view=exchange-ps)
     
 ## <a name="more-information"></a>更多信息
 

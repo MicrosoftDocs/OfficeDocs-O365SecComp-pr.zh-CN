@@ -10,12 +10,12 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: f40253f2-50a1-426e-9979-be74ba74cb61
 description: Microsoft Exchange Online Protection (EOP) 提供许多不同的报告，可帮助您确定组织的总体状态和运行状况。此外，还提供可帮助您解决特定事件（例如邮件没有到达目标收件人）的工具，以及协助满足合规性要求的审核报告。下表描述了 EOP 管理员可用的报告和故障排除工具。
-ms.openlocfilehash: c26f3e88edb378f2eb9ae5967e96fadbce69110e
-ms.sourcegitcommit: 0f93b37c39d807dec91f118aa671a3430c47a9ac
+ms.openlocfilehash: fcefa14991d074f1f4459007c16dd7f4df1cedd1
+ms.sourcegitcommit: e7a776a04ef6ed5e287a33cfdc36aa2d72862b55
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/20/2019
-ms.locfileid: "30693161"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "31000945"
 ---
 # <a name="reporting-and-message-trace-in-exchange-online-protection"></a>Exchange Online Protection 中的报告和邮件跟踪
 
@@ -38,7 +38,7 @@ Microsoft Exchange Online Protection (EOP) 提供许多不同的报告，可帮�
 - [管理中心中的 Office 365 报表-电子邮件应用程序使用情况](https://go.microsoft.com/fwlink/p/?linkid=859707)
 - [管理中心中的 Office 365 报表-邮箱使用情况](https://go.microsoft.com/fwlink/p/?linkid=859708)
 
-## <a name="security-amp-compliance-reports-in-the-office-365-admin-center"></a>Office &amp; 365 管理中心中的安全合规性报告
+## <a name="security-amp-compliance-reports-in-the-microsoft-365-admin-center"></a>Microsoft &amp; 365 管理中心中的安全合规性报告
 
 这些增强的报告为 EOP 管理员提供了交互式报告体验, 其中包括摘要信息, 以及深入了解更多详细信息的功能。  
 
@@ -50,7 +50,7 @@ Microsoft Exchange Online Protection (EOP) 提供许多不同的报告，可帮�
 
 ##<a name="custom-reports-using-microsoft-graph"></a>使用 Microsoft Graph 的自定义报告
 
-使用 microsoft graph 以编程方式创建 office 365 管理中心提供的报告。有关[在 Microsoft graph 中使用 Office 365 使用率报告](https://go.microsoft.com/fwlink/p/?linkid=865135)的主题 
+使用 microsoft graph 以编程方式创建 microsoft 365 管理中心提供的报告。有关[在 microsoft graph 中使用 Office 365 使用率报告](https://go.microsoft.com/fwlink/p/?linkid=865135)的主题 
 
 ##<a name="custom-reports-using-reporting-web-services"></a>使用报告 Web 服务的自定义报告
 
@@ -83,6 +83,6 @@ Microsoft Exchange Online Protection (EOP) 提供许多不同的报告，可帮�
 |邮件跟踪数据  <br/> |90 天  <br/> |对未超过 7 天的邮件运行邮件跟踪时，邮件应该会在 5-30 分钟内显示。  <br/> 对超过 7 天的邮件运行邮件跟踪时，获取结果可能需要几个小时。  <br/> |
    
 > [!NOTE]
-> 无论是通过 Office 365 管理中心还是远程 PowerShell 请求, 数据可用性和延迟都是相同的。 
+> 无论是通过 Microsoft 365 管理中心还是远程 PowerShell 请求, 数据可用性和延迟都是相同的。 
   
 

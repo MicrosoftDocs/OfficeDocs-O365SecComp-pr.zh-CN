@@ -1,5 +1,5 @@
 ---
-title: 在 Office 365 安全&amp;合规中心中导出内容搜索结果时禁用报告
+title: 导出内容搜索结果时禁用报告
 ms.author: markjjo
 author: markjjo
 manager: laurawi
@@ -10,17 +10,17 @@ ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid: MOE150
 ms.assetid: c9b0ff0c-282b-4a44-b43f-cfc5b96557f9
-description: 在您的本地计算机上编辑 Windows 注册表, 以在从 Office 365 Security &amp; Comliance Center 导出内容搜索结果时禁用报告。 禁用这些报告可加快下载时间并节省磁盘空间。
-ms.openlocfilehash: f08f5e7143022591d38bda787301e71ae80fb3d3
-ms.sourcegitcommit: 8a65a29aa3bfe5dcad0ff152a7cd795e02877dd9
+description: 在您的本地计算机上编辑 Windows 注册表, 以便在从 Office 365 的 Security & 合规性中心导出内容搜索结果时禁用报告。 禁用这些报告可加快下载时间并节省磁盘空间。
+ms.openlocfilehash: 19d97bbc95be5db6540e6822721752ca62adebfc
+ms.sourcegitcommit: e7a776a04ef6ed5e287a33cfdc36aa2d72862b55
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/28/2019
-ms.locfileid: "30936712"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30998762"
 ---
-# <a name="disable-reports-when-you-export-content-search-results-in-the-office-365-security-amp-compliance-center"></a>在 Office 365 安全&amp;合规中心中导出内容搜索结果时禁用报告
+# <a name="disable-reports-when-you-export-content-search-results"></a>导出内容搜索结果时禁用报告
 
-当您使用 Office 365 电子数据展示导出工具导出安全&amp;合规中心中的内容搜索结果时, 该工具会自动创建和导出包含有关导出内容的其他信息的两个报告。 这些报告是结果 .csv 文件和 Manifest .xml 文件 (有关这些报告的详细说明, 请参阅本主题中[有关禁用导出报告](#frequently-asked-questions-about-disabling-export-reports)部分的常见问题)。 由于这些文件可能非常大, 因此可以通过防止导出这些文件, 加快下载时间并节省磁盘空间。 您可以通过更改用于导出搜索结果的计算机上的 Windows 注册表来执行此操作。 如果您想要在以后包含这些报告, 可以编辑注册表设置。 
+当您使用 Office 365 电子数据展示导出工具导出 Security & 合规中心中的内容搜索结果时, 该工具会自动创建和导出包含有关导出内容的其他信息的两个报告。 这些报告是结果 .csv 文件和 Manifest .xml 文件 (有关这些报告的详细说明, 请参阅本主题中[有关禁用导出报告](#frequently-asked-questions-about-disabling-export-reports)部分的常见问题)。 由于这些文件可能非常大, 因此可以通过防止导出这些文件, 加快下载时间并节省磁盘空间。 您可以通过更改用于导出搜索结果的计算机上的 Windows 注册表来执行此操作。 如果您想要在以后包含这些报告, 可以编辑注册表设置。 
   
 ## <a name="create-registry-settings-to-disable-the-export-reports"></a>创建注册表设置以禁用导出报告
 

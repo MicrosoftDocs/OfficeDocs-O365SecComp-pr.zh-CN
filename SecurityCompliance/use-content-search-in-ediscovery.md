@@ -9,19 +9,19 @@ ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: 55f31488-288a-473a-9b9e-831a11e3711a
-description: '使用 PowerShell 脚本基于在 Office 365 安全&amp;合规中心中创建的搜索, 在 Exchange Online 中创建就地电子数据展示搜索。 '
-ms.openlocfilehash: 03df28094f29ced5a299aeb4f2140c3c3b0eba8c
-ms.sourcegitcommit: 54a2cbe5d13f448e0c28655bdf88deb9e5434cac
+description: '使用 PowerShell 脚本在 Exchange Online 中创建基于 Security & 合规性中心中创建的搜索的就地电子数据展示搜索。 '
+ms.openlocfilehash: 2e4f1b3570ce2400472a0b2a9ddee886ffc4bab3
+ms.sourcegitcommit: e7a776a04ef6ed5e287a33cfdc36aa2d72862b55
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/27/2019
-ms.locfileid: "30935247"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "31000025"
 ---
 # <a name="use-content-search-in-your-ediscovery-workflow"></a>在电子数据展示工作流中使用内容搜索
 
-通过 Office 365 安全&amp;合规中心中的内容搜索功能, 可以搜索组织中的所有邮箱。 与 Exchange Online 中的就地电子数据展示不同 (最多可以搜索10000个邮箱), 对单个搜索中的目标邮箱数没有限制。 对于需要您执行组织范围内搜索的方案，可以使用内容搜索来搜索所有邮箱。 然后, 您可以使用就地电子数据展示的工作流功能执行其他与电子数据展示相关的任务, 如将邮箱置于保留状态并导出搜索结果。 例如，假设您需要搜索所有邮箱以确定可以响应某法律案件的特定监护人。 您可以使用安全&amp;合规中心中的内容搜索来搜索组织中的所有邮箱, 以确定那些对案例有响应的邮箱。 然后, 可以将该保管人邮箱列表用作 Exchange Online 中的就地电子数据展示搜索的源邮箱。 使用就地电子数据展示还允许您对这些源邮箱进行保留, 将搜索结果复制到发现邮箱, 并导出搜索结果。
+通过 Security & 合规性中心中的内容搜索功能, 可以搜索组织中的所有邮箱。 与 Exchange Online 中的就地电子数据展示不同 (最多可以搜索10000个邮箱), 对单个搜索中的目标邮箱数没有限制。 对于需要您执行组织范围内搜索的方案，可以使用内容搜索来搜索所有邮箱。 然后, 您可以使用就地电子数据展示的工作流功能执行其他与电子数据展示相关的任务, 如将邮箱置于保留状态并导出搜索结果。 例如，假设您需要搜索所有邮箱以确定可以响应某法律案件的特定监护人。 您可以使用 Security & 合规中心中的内容搜索来搜索组织中的所有邮箱, 以确定那些对案例有响应的邮箱。 然后, 可以将该保管人邮箱列表用作 Exchange Online 中的就地电子数据展示搜索的源邮箱。 使用就地电子数据展示还允许您对这些源邮箱进行保留, 将搜索结果复制到发现邮箱, 并导出搜索结果。
   
-本主题包含可运行的脚本, 以便在 Exchange Online 中创建就地电子数据展示搜索, 具体方法是使用安全&amp;合规性中心中创建的搜索中的源邮箱和搜索查询的列表。 以下是过程概述：
+本主题包含一个脚本, 可运行此脚本在 Exchange Online 中创建就地电子数据展示搜索, 具体方法是使用安全 & 合规性中心中创建的搜索中的源邮箱和搜索查询的列表。 以下是过程概述：
   
 [步骤 1：创建内容搜索来搜索组织中的所有邮箱](#step-1-create-a-content-search-to-search-all-mailboxes-in-your-organization)
 
@@ -33,16 +33,16 @@ ms.locfileid: "30935247"
 
 ## <a name="step-1-create-a-content-search-to-search-all-mailboxes-in-your-organization"></a>步骤 1：创建内容搜索来搜索组织中的所有邮箱
 
-第一步是使用安全&amp;合规性中心 (或 security & 合规性中心 PowerShell) 来创建搜索组织中所有邮箱的内容搜索。 对于单个内容搜索的邮箱数没有限制。 指定适当的关键字查询（或针对敏感信息类型的查询），以便搜索仅返回与您的调查相关的源邮箱。 如有必要，优化搜索查询来缩小返回的搜索结果以及源邮箱的范围。
+第一步是使用安全 & 合规性中心 (或 security & 合规性中心 PowerShell) 来创建搜索组织中所有邮箱的内容搜索。 对于单个内容搜索的邮箱数没有限制。 指定适当的关键字查询（或针对敏感信息类型的查询），以便搜索仅返回与您的调查相关的源邮箱。 如有必要，优化搜索查询来缩小返回的搜索结果以及源邮箱的范围。
   
 > [!NOTE]
 > 如果源内容搜索未返回任何结果，则当您在步骤 3 中运行该脚本时不会创建就地电子数据展示。您可能必须修改搜索查询然后重新运行内容搜索来返回搜索结果。 
   
-### <a name="use-the-security-amp-compliance-center-to-search-all-mailboxes"></a>使用安全&amp;合规中心搜索所有邮箱
+### <a name="use-the-security--compliance-center-to-search-all-mailboxes"></a>使用安全与合规中心来搜索所有邮箱
 
-1. [转到 "Office 365 安全&amp;合规中心"](go-to-the-securitycompliance-center.md)。 
+1. [转到安全 & 合规中心](go-to-the-securitycompliance-center.md)。 
     
-2. 单击 **" &amp;搜索调查**", 单击 "**内容搜索**", 然后单击](media/O365-MDM-CreatePolicy-AddIcon.gif)"**新建** ![添加图标"。
+2. 单击 "**搜索** > **内容搜索**", 然后单击 "**新建搜索** ![添加图标](media/O365-MDM-CreatePolicy-AddIcon.gif)"。
     
 3. 在“新建搜索”**** 页上，键入内容搜索的名称。 
     
@@ -58,7 +58,7 @@ ms.locfileid: "30935247"
     
 ### <a name="use-security--compliance-center-powershell-to-search-all-mailboxes"></a>使用 Security & 合规性中心 PowerShell 搜索所有邮箱
 
-您还可以使用 **New-ComplianceSearch** cmdlet 搜索组织中的所有邮箱。 第一步是[连接到 Office 365 安全&amp;合规中心 PowerShell](https://go.microsoft.com/fwlink/p/?LinkID=627084)。
+您还可以使用 **New-ComplianceSearch** cmdlet 搜索组织中的所有邮箱。 第一步是[连接到安全 & 合规中心 PowerShell](https://go.microsoft.com/fwlink/p/?LinkID=627084)。
   
 下面的示例展示了如何使用 PowerShell 搜索组织中的所有邮箱。 搜索查询将返回 2015 年 1 月 1 日和 2015 年 6 月 30 日之间发送的以及主题行中包含短语“财务报告”的所有邮件。 第一个命令创建搜索，第二个命令运行搜索。 
   
@@ -124,7 +124,7 @@ Start-ComplianceSearch -Identity "Search All-Financial Report"
   
 ## <a name="step-2-connect-to-the-security--compliance-center-and-exchange-online-in-a-single-remote-powershell-session"></a>步骤 2: 在单个远程 PowerShell \&会话中连接到安全合规性中心和 Exchange Online
 
-下一步是将 Windows PowerShell 连接到安全&amp;合规中心和 Exchange Online 组织。 这是必要的, 因为您在步骤3中运行的脚本需要访问安全&amp;合规性中心中的内容搜索 cmdlet 和 Exchange Online 中的就地电子数据展示 cmdlet。
+下一步是将 Windows PowerShell 连接到安全 & 合规中心和 Exchange Online 组织。 这是必要的, 因为您在步骤3中运行的脚本需要访问安全 & 合规性中心中的内容搜索 cmdlet 和 Exchange Online 中的就地电子数据展示 cmdlet。
   
 1. 使用 .ps1 文件名后缀将以下文本保存到 Windows PowerShell 脚本文件。 例如, 可以将其保存到名为`ConnectEXO-CC.ps1`的文件中。
     
@@ -143,7 +143,7 @@ Start-ComplianceSearch -Identity "Search All-Financial Report"
     .\ConnectEXO-CC.ps1
     ```
 
-您如何知道这是否有效？ 运行该脚本后, 安全&amp;合规性中心和 Exchange Online 中的 cmdlet 将导入到本地 PowerShell 会话中。 如果未收到任何错误，说明连接成功。 快速测试是运行安全&amp;合规性中心 cmdlet (例如, **UnifiedCompliancePrerequisite** ) 和 Exchange Online cmdlet (如**Get 邮箱**)。 
+您如何知道这是否有效？ 运行该脚本后, 安全 & 合规中心和 Exchange Online 中的 cmdlet 将导入到您的本地 PowerShell 会话中。 如果未收到任何错误，说明连接成功。 快速测试是运行安全 & 合规性中心 cmdlet (例如, **UnifiedCompliancePrerequisite** ) 和 Exchange Online cmdlet (如**Get 邮箱**)。 
   
 ## <a name="step-3-run-the-script-to-create-an-in-place-ediscovery-search-from-the-content-search"></a>步骤 3：运行脚本以通过内容搜索创建就地电子数据展示搜索
 

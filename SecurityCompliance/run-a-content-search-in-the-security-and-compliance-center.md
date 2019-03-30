@@ -1,5 +1,5 @@
 ---
-title: 在 Office 365 安全&amp;合规中心中运行内容搜索
+title: 在安全与合规中心运行内容搜索
 ms.author: markjjo
 author: markjjo
 manager: laurawi
@@ -11,17 +11,17 @@ f1_keywords:
 ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: 61852fd9-fe8a-4880-a339-cb19ed3bff4a
-description: '在 Office 365 安全&amp;合规中心中使用内容搜索来搜索邮箱、SharePoint Online 网站和 OneDrive for business 位置。 '
-ms.openlocfilehash: 255d53240d360557dc6ff1370c8112ceea676622
-ms.sourcegitcommit: 54a2cbe5d13f448e0c28655bdf88deb9e5434cac
+description: '使用安全 & 合规中心中的内容搜索来搜索邮箱、SharePoint Online 网站和 OneDrive for business 位置。 '
+ms.openlocfilehash: 780a9eacc94985cf1f59993a1d5c2816474b8cb5
+ms.sourcegitcommit: e7a776a04ef6ed5e287a33cfdc36aa2d72862b55
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/27/2019
-ms.locfileid: "30935317"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "31000275"
 ---
-# <a name="run-a-content-search-in-the-office-365-security-amp-compliance-center"></a>在 Office 365 安全&amp;合规中心中运行内容搜索
+# <a name="run-a-content-search-in-the-security--compliance-center"></a>在安全与合规中心运行内容搜索
 
-您可以使用 office 365 安全&amp;合规中心中的内容搜索电子数据展示工具在 office 365 组织中搜索诸如电子邮件、文档和即时消息对话等项目。 使用此工具搜索这些 Office 365 服务中的项目:
+您可以使用安全 & 合规中心中的内容搜索电子数据展示工具搜索 Office 365 组织中的项目, 如电子邮件、文档和即时消息对话。 使用此工具搜索这些 Office 365 服务中的项目:
   
 - Exchange Online 邮箱和公用文件夹
     
@@ -55,9 +55,9 @@ ms.locfileid: "30935317"
 
 - 有关生成搜索查询和使用布尔搜索运算符的信息和指南, 请参阅[用于内容搜索的关键字查询和搜索条件](keyword-queries-and-search-conditions.md)。 本文还包含有关搜索敏感信息类型和搜索与组织内部和外部的人员共享的内容的信息。
     
-- 若要访问**内容搜索**页以执行搜索和预览和导出搜索结果, 管理员、合规专员或电子数据展示管理器必须是安全&amp;合规性中的电子数据展示管理器角色组的成员置. 您无需在 Exchange online、SharePoint online 或 OneDrive for business 网站中分配其他搜索权限。 有关详细信息, 请参阅[在 Office 365 安全&amp;合规中心中分配电子数据展示权限](assign-ediscovery-permissions.md)。
+- 若要访问**内容搜索**页以执行搜索和预览和导出搜索结果, 管理员、合规专员或电子数据展示管理器必须是 Security & 合规性中心中的电子数据展示管理器角色组的成员。 您无需在 Exchange online、SharePoint online 或 OneDrive for business 网站中分配其他搜索权限。 有关详细信息, 请参阅[在 Office 365 安全 & 合规中心中分配电子数据展示权限](assign-ediscovery-permissions.md)。
     
-- 对内容搜索应用了限制, 以维护向 Office 365 组织提供的服务的运行状况和质量。 在大多数情况下, 不能修改这些限制, 但应了解这些限制, 以便在规划、运行和故障排除搜索时可以考虑这些限制。 有关详细信息, 请参阅[Office 365 安全&amp;合规中心中的搜索限制](limits-for-content-search.md)。
+- 对内容搜索应用了限制, 以维护向 Office 365 组织提供的服务的运行状况和质量。 在大多数情况下, 不能修改这些限制, 但应了解这些限制, 以便在规划、运行和故障排除搜索时可以考虑这些限制。 有关详细信息, 请参阅[Security & 合规性中心中的搜索限制](limits-for-content-search.md)。
     
 - 根据在单个内容搜索中搜索的邮箱数, 查看估计的搜索时间部分。 
     
@@ -74,11 +74,11 @@ ms.locfileid: "30935317"
 ## <a name="create-a-search"></a>Create a search
 <a name="create"> </a>
 
-1. 转到 [https://protection.office.com](https://protection.office.com)。
+1. 转到 [https://compliance.microsoft.com](https://compliance.microsoft.com)。
     
 2. 使用工作或学校帐户登录到 Office 365。
     
-3. 在安全与合规中心的左侧窗格中，单击“搜索和调查”****\>****“内容搜索”。
+3. 在安全 & 合规性中心的左侧窗格中, 单击 "**搜索** \> **内容搜索**"。
     
 4. 单击 "**新建**![添加](media/O365-MDM-CreatePolicy-AddIcon.gif)图标"。
     
@@ -102,7 +102,7 @@ ms.locfileid: "30935317"
     
   - 您可以将非活动邮箱和通讯组添加到要搜索的邮箱列表中。 对于通讯组, 将搜索组成员的邮箱。 请注意, 不支持动态通讯组。
     
-  - 若要获取组织中非活动邮箱的列表, 请在 Exchange Online `Get-Mailbox -InactiveMailboxOnly` PowerShell 中运行命令。 或者, 您可以转到](media/9723029d-e5cd-4740-b5b1-2806e4f28208.gif) \>安全&amp;合规性中心中的 "**数据管理** \> "**保留**, 然后单击 "**更多**![导航栏椭圆**非活动邮箱**"。
+  - 若要获取组织中非活动邮箱的列表, 请在 Exchange Online `Get-Mailbox -InactiveMailboxOnly` PowerShell 中运行命令。 或者, 您可以转到 Security & 合规性中心中的 "**数据管理** \> "**保留**, 然后单击 "**更多**![导航栏椭圆](media/9723029d-e5cd-4740-b5b1-2806e4f28208.gif) \> **非活动邮箱**"。
     
   - 您还可以添加与 Office 365 组或 Microsoft 团队相关联的邮箱。 在这种情况下, 仅搜索组或工作组邮箱;不搜索组或工作组成员的邮箱。 若要搜索这些文件, 您必须将其专门添加到搜索中。
     
@@ -167,12 +167,12 @@ ms.locfileid: "30935317"
 ## <a name="export-search-results"></a>导出搜索结果
 <a name="export"> </a>
 
-成功运行搜索后, 可以将搜索结果导出到本地计算机。 导出电子邮件结果时, 会将其作为 PST 文件下载到您的计算机上。 当您从 SharePoint 和 OneDrive for business 网站导出内容时, 会导出本机 Office 文档的副本。 导出的搜索结果中还包含其他文档和报告。 有关详细信息, 请参阅[从 Office 365 安全&amp;合规中心导出搜索结果](export-search-results.md)。
+成功运行搜索后, 可以将搜索结果导出到本地计算机。 导出电子邮件结果时, 会将其作为 PST 文件下载到您的计算机上。 当您从 SharePoint 和 OneDrive for business 网站导出内容时, 会导出本机 Office 文档的副本。 导出的搜索结果中还包含其他文档和报告。 有关详细信息, 请参阅[从 Security & 合规中心导出搜索结果](export-search-results.md)。
   
 ## <a name="preview-search-results"></a>预览搜索结果
 <a name="preview"> </a>
 
-成功完成搜索后，可以预览搜索结果。 与预览内容搜索结果相关的限制有很多。 有关详细信息, 请参阅[Office 365 安全&amp;合规中心中的搜索限制](limits-for-content-search.md)。 请注意, 未编制索引的项目不能进行预览。
+成功完成搜索后，可以预览搜索结果。 与预览内容搜索结果相关的限制有很多。 有关详细信息, 请参阅[Security & 合规性中心中的搜索限制](limits-for-content-search.md)。 请注意, 未编制索引的项目不能进行预览。
   
 1. 在 "**内容搜索**" 页上, 选择 "搜索"。 
     
@@ -277,7 +277,7 @@ ms.locfileid: "30935317"
   
 ### <a name="limits-and-performance"></a>限制和性能
   
-- 有关应用于内容搜索功能的限制的说明, 请参阅[Office 365 安全&amp;合规中心中的搜索限制](limits-for-content-search.md)。
+- 有关应用于内容搜索功能的限制的说明, 请参阅[Security & 合规性中心中的搜索限制](limits-for-content-search.md)。
     
 - Microsoft 收集由所有 Office 365 组织运行的内容搜索的性能信息。 虽然搜索查询的复杂性可能会影响搜索时间, 但影响搜索所用时间的最大因素是搜索的邮箱数。 尽管 Microsoft 不提供搜索时间的服务级别协议, 但下表根据搜索中包括的邮箱数量列出了内容搜索的平均搜索时间。
     
@@ -319,7 +319,7 @@ ms.locfileid: "30935317"
   
   - 在搜索用户的邮箱时, 不会搜索用户是其成员的任何 Microsoft 团队或 Office 365 组。 同样, 当您搜索 Microsoft 团队或 Office 365 组时, 仅搜索您指定的组邮箱和组网站;除非将组成员的邮箱和 OneDrive for business 帐户显式添加到搜索中, 否则不会搜索这些帐户。
     
-  - 若要获取 Microsoft 团队或 office 365 组成员的列表, 您可以在 Office 365 管理中心的 "**家庭\>分组**" 页上查看属性。 或者, 您可以在 Exchange Online PowerShell 中运行以下命令: 
+  - 若要获取 microsoft 团队或 Office 365 组成员的列表, 您可以在 Microsoft 365 管理中心的 "**家庭\>组**" 页上查看属性。 或者, 您可以在 Exchange Online PowerShell 中运行以下命令: 
     
   ```
   Get-UnifiedGroupLinks <group or team name> -LinkType Members | FL DisplayName,PrimarySmtpAddress 
@@ -367,11 +367,11 @@ ms.locfileid: "30935317"
     
     ![使用关键字列表和条件时创建的查询示例](media/b463750c-57fa-4602-9fed-0d5a420db3ad.png)
   
-  - 如果您有包含非英语字符关键字的搜索查询 (如中文字符), 则您可能必须使用**new-compliancesearch** cmdlet 配置内容搜索的语言属性。 在安全&amp;合规中心中使用 GUI 创建内容搜索时, 默认语言为中性。 
+  - 如果您有包含非英语字符关键字的搜索查询 (如中文字符), 则您可能必须使用**new-compliancesearch** cmdlet 配置内容搜索的语言属性。 当您使用安全 & 合规中心中的 GUI 创建内容搜索时, 默认语言是非特定语言。 
     
     如何判断是否需要更改内容搜索的语言设置？ 如果您是某些内容位置包含您要搜索的非英语字符, 但搜索不返回任何结果, 则可能是语言设置可能导致的原因。
     
-    若要更改现有内容搜索的语言设置, 请在安全&amp;合规中心 PowerShell 中运行以下命令:
+    若要更改现有内容搜索的语言设置, 请在 Security & 合规性中心 PowerShell 中运行以下命令:
     
   ```
   Set-ComplianceSearch <name of content search> -Language <culture code value>
@@ -398,9 +398,9 @@ ms.locfileid: "30935317"
     
 ### <a name="miscellaneous"></a>其他
   
-- 在安全&amp;合规中心中的 "**内容搜索**" 页上创建的内容搜索不会显示在 Exchange 管理中心中的 "**就地电子&amp;数据展示保留**" 页上。 这是因为在安全&amp;合规中心中创建的内容搜索体系结构和搜索对象与 Exchange Online 中的就地电子数据展示功能完全不同。 
+- 在安全 & 合规中心中的 "**内容搜索**" 页上创建的内容搜索不会显示在 Exchange 管理中心中的 "**就地电子数据展示&amp;保留**" 页上。 这是因为在 Security & 合规性中心中创建的内容搜索体系结构和搜索对象与 Exchange Online 中的就地电子数据展示功能完全不同。 
     
-    出于相同的原因, 在安全&amp;合规中心中的电子数据展示事例的 "**搜索**" 页上不会显示在 "**内容搜索**" 页上创建的搜索。 
+    出于相同的原因, 在 "安全 & 合规中心" 的电子数据展示事例的 "**搜索**" 页上不会显示在 "**内容搜索**" 页上创建的搜索。 
     
 - 重新启动和重试搜索之间的区别是什么？ 重新启动搜索时, 将会在新的预览搜索中再次搜索在搜索中指定的所有内容位置。 但是, 当您重试搜索时, 将再次搜索上次运行搜索时失败的内容位置。
    

@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.assetid: d104fb44-1c42-4541-89a6-1f67be22e4ad
 description: 了解如何访问组织已购买 Office 365 付费订阅中包含的 Azure Active Directory。
-ms.openlocfilehash: 0a8ed74a0e135ae216f33401016a7321ad1a1adf
-ms.sourcegitcommit: baf23be44f1ed5abbf84f140b5ffa64fce605478
-ms.translationtype: HT
+ms.openlocfilehash: c49f6ca6aba109346ceea4558fe050b0cc561600
+ms.sourcegitcommit: e7a776a04ef6ed5e287a33cfdc36aa2d72862b55
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "30295595"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "31001075"
 ---
 # <a name="use-your-free-azure-active-directory-subscription-in-office-365"></a>使用 Office 365 中的免费 Azure Active Directory 订阅
 
@@ -41,6 +41,6 @@ ms.locfileid: "30295595"
     
 ## <a name="more-information"></a>更多信息
 
-- 也可以从 Office 365 管理中心访问 **Azure Active Directory** 管理中心。在 Office 365 管理中心内的左侧导航窗格中，依次单击“管理中心”****\>“Azure Active Directory”****。
+- 您还可以从 Microsoft 365 管理中心访问**Azure Active Directory**管理中心。 在 Microsoft 365 管理中心的左侧导航窗格中, 单击 "**管理中心** \> **Azure Active Directory**"。
     
 - 若要了解如何管理用户和组，并执行其他目录管理任务，请参阅[管理 Azure AD 目录](https://docs.microsoft.com/azure/active-directory/active-directory-administer)。

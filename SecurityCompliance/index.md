@@ -1,6 +1,6 @@
 ---
 title: Office 365 安全性和合规性
-description: '如果你的组织需要保护你的数据或遵守法律或法规标准, 你就是正确的地方。您可以在此处了解 Office 365 中的安全性和合规性'
+description: '如果你的组织需要保护你的数据或遵守法律或法规标准, 你就是正确的地方。 您可以在此处了解 Office 365 中的安全性和合规性'
 services: office-365-security-compliance
 author: robmazz
 manager: laurawi
@@ -14,7 +14,7 @@ ms.author: robmazz
 ---
 # <a name="office-365-security-and-compliance"></a>Office 365 安全性和合规性
 
-如果你的组织需要保护你的数据或遵守法律或法规标准, 你就是正确的地方。以下区域是有关 Office 365 中的安全性和合规性学习的第一位。
+如果你的组织需要保护你的数据或遵守法律或法规标准, 你就是正确的地方。 以下区域是有关 Office 365 中的安全性和合规性学习的第一位。
 
 <ul class="cardsF panelContent">
     <li>
@@ -90,8 +90,8 @@ ms.author: robmazz
                     <div class="cardText">
                         <h3>保持安全</h3>
                         <p><a href="security-roadmap.md">Office 365 安全路线图</a></p>
-                        <p><a href="office-365-secure-score.md" target="_blank">Microsoft 安全分数</a></p>
-                        <p><a href="https://protection.office.com" target="_blank">Office 365 安全与合规中心</a></p>
+                        <p><a href="office-365-secure-score.md" target="_blank">Microsoft 安全功能分数</a></p>
+                        <p><a href="https://protection.office.com" target="_blank">Security & 合规性中心</a></p>
                     </div>
                 </div>
             </div>

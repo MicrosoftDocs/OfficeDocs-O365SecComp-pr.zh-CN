@@ -11,16 +11,14 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.openlocfilehash: bff73d5ecb7e71ae2cd8557d16879bb197e4ca66
-ms.sourcegitcommit: ef27da3ea5340d6e7a2eaa1288e2e005ef8e4788
+ms.openlocfilehash: e722a8fbe89a960466ff7995622cedc938075780
+ms.sourcegitcommit: e7a776a04ef6ed5e287a33cfdc36aa2d72862b55
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/23/2019
-ms.locfileid: "30791561"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30998715"
 ---
 # <a name="monitor-and-report-data-in-microsoft-365-security"></a>在 Microsoft 365 安全中监视和报告数据
-
-[!include[Prerelease�information](prerelease.md)]
 
 **数据**类别可帮助跟踪用户活动, 从而导致未经授权的数据泄露。 这些是现有 Office 365 dlp 策略报告和第三方 dlp 策略匹配报告的返工。
 

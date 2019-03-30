@@ -16,12 +16,12 @@ ms.assetid: 712cfcc1-31e8-4e51-8561-b64258a8f1e5
 ms.collection:
 - M365-security-compliance
 description: 如果用户不断发送来自受分类为垃圾邮件的 Office 365 的电子邮件, 则会受到限制, 无法发送更多的邮件。
-ms.openlocfilehash: 9370df691bfe30498e32115d7c77dd5cf02556f1
-ms.sourcegitcommit: 0f93b37c39d807dec91f118aa671a3430c47a9ac
+ms.openlocfilehash: a4f22b4d5192df202c1caa19714e8b5476dd8205
+ms.sourcegitcommit: e7a776a04ef6ed5e287a33cfdc36aa2d72862b55
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/20/2019
-ms.locfileid: "30692011"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30998495"
 ---
 # <a name="removing-a-user-from-the-restricted-users-portal-after-sending-spam-email"></a>发送垃圾电子邮件后，从受限用户门户删除用户
 
@@ -29,7 +29,7 @@ ms.locfileid: "30692011"
 
 - 无法传递你的邮件, 因为你未被识别为有效发件人。 导致此问题的最常见原因是, 您的电子邮件地址怀疑发送垃圾邮件, 并且不再允许它在您的组织外部发送邮件。 请联系你的电子邮件管理员以获取帮助。 远程服务器返回 "550 5.1.8 访问被拒绝, 错误的出站发件人"
 
-## <a name="what-do-you-need-to-know-before-you-begin"></a>开始前，有必要了解什么？
+## <a name="what-do-you-need-to-know-before-you-begin"></a>在开始之前，您需要知道什么？
 <a name="sectionSection0"> </a>
 
 估计完成时间：5 分钟
@@ -40,7 +40,7 @@ ms.locfileid: "30692011"
 
 ## <a name="remove-restrictions-for-a-blocked-office-365-email-account"></a>删除对被阻止的 Office 365 电子邮件帐户的限制
 
-您可以在 Office 365 Security & 合规中心 (SCC) 中完成此任务。 有关 SCC 的更多详细信息,[请转到 Office 365 安全 & 合规中心](go-to-the-securitycompliance-center.md)。 必须在 "**组织管理**" 或 "**安全管理员**" 角色组中, 才能执行这些功能。 有关 SCC 角色组的详细信息,[请转到 Office 365 安全 & 合规中心中的 "权限"](permissions-in-the-security-and-compliance-center.md) 。
+您可以在安全 & 合规中心 (SCC) 中完成此任务。 有关 SCC 的更多详细信息,[请转到 Security & 合规性中心](go-to-the-securitycompliance-center.md)。 必须在 "**组织管理**" 或 "**安全管理员**" 角色组中, 才能执行这些功能。 [转到 Security & 合规性中心中的 "权限"](permissions-in-the-security-and-compliance-center.md) , 了解有关 SCC 角色组的更多详细信息。
 
 1. 使用具有 office 365 全局管理员权限的工作或学校帐户登录到 office 365 安全性和合规性中心, 并在左侧的列表中展开 "**威胁管理**", 选择 "**查看**", 然后选择 "**受限"用户**。
     
@@ -60,7 +60,7 @@ ms.locfileid: "30692011"
 
 ## <a name="making-sure-admins-are-alerted-when-this-happens"></a>确保在发生此情况时提醒管理员
 
-租户管理员还会收到一条警报, 指示用户已受到限制, 无法发送任何更多的出站邮件。 它是为所有租户提供的默认警报, 并在 "SCC 警告策略" 页 (标题为 "用户限制发送电子邮件") 中列出。 有关警报的详细信息, 请转到[Office 365 安全 & 合规中心中的 "通知策略](https://docs.microsoft.com/en-us/office365/securitycompliance/alert-policies)"。
+租户管理员还会收到一条警报, 指示用户已受到限制, 无法发送任何更多的出站邮件。 它是为所有租户提供的默认警报, 并在 "SCC 警告策略" 页 (标题为 "用户限制发送电子邮件") 中列出。 有关警报的详细信息, 请转到[Security & 合规性中心中的 "通知策略](https://docs.microsoft.com/en-us/office365/securitycompliance/alert-policies)"。
 
 ## <a name="for-more-information"></a>有关详细信息
 
@@ -70,4 +70,4 @@ ms.locfileid: "30692011"
 
 [出站邮件的高风险传递池](high-risk-delivery-pool-for-outbound-messages.md)
 
-[Office 365 安全 & 合规中心中的权限](permissions-in-the-security-and-compliance-center.md)
+[安全与合规中心内的权限](permissions-in-the-security-and-compliance-center.md)

@@ -1,5 +1,5 @@
 ---
-title: 在 Office 365 安全&amp;合规中心中使用 DSR 机箱工具管理 GDPR 数据主体请求
+title: 在 Security & 合规性中心中使用 DSR 机箱工具管理 GDPR 数据主体请求
 ms.author: markjjo
 author: markjjo
 manager: laurawi
@@ -14,19 +14,19 @@ ms.collection:
 - Strat_O365_IP
 - M365-security-compliance
 ms.assetid: ce9eb942-3589-42cb-88fd-1576ecb09c5c
-description: GDPR 向欧盟公民 (称为 "数据主体") 授予对其个人数据的特定权限;这些权限包括获取副本、请求对其进行更改、限制处理、删除或以电子格式接收。 通过数据主体对其个人数据执行操作的正式请求称为 "数据" 主题请求或 "DSR"。 您可以使用 Office 365 安全&amp;合规中心中的 DSR 案例来管理您的组织的 DSR 调查。
-ms.openlocfilehash: ae41daba4d11645848f8b2923eb3cbbaac2e65a4
-ms.sourcegitcommit: c0d4fe3e43e22353f30034567ade28330266bcf7
+description: GDPR 向欧盟公民 (称为 "数据主体") 授予对其个人数据的特定权限;这些权限包括获取副本、请求对其进行更改、限制处理、删除或以电子格式接收。 通过数据主体对其个人数据执行操作的正式请求称为 "数据" 主题请求或 "DSR"。 您可以使用 Office 365 和 Microsoft 365 中的合规性中心中的 dsr 案例来管理您的组织的 DSR 调查。
+ms.openlocfilehash: d491a0098bfa27818d8a03ded3b2f86da54c0453
+ms.sourcegitcommit: e7a776a04ef6ed5e287a33cfdc36aa2d72862b55
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/27/2019
-ms.locfileid: "30900141"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "31000105"
 ---
-# <a name="manage-gdpr-data-subject-requests-with-the-dsr-case-tool-in-the-office-365-security-amp-compliance-center"></a>在 Office 365 安全&amp;合规中心中使用 DSR 机箱工具管理 GDPR 数据主体请求
+# <a name="manage-gdpr-data-subject-requests-with-the-dsr-case-tool-in-the-security--compliance-center"></a>在 Security & 合规性中心中使用 DSR 机箱工具管理 GDPR 数据主体请求
 
 EU 常规数据保护条例 (GDPR) 是关于保护和启用欧盟 (EU) 内部的个人隐私权利的信息。 GDPR 为欧盟 (称为数据主题) 中的个人提供访问、检索、更正、擦除和限制其个人数据处理的权限。 在 "GDPR" 下, "个人数据" 是指与标识或标识的自然个人相关的任何信息。 某人向其组织对其个人数据执行操作的正式请求称为 "数据" 主题请求或 "DSR"。 有关对 Office 365 中的数据响应 dsr 的详细信息, 请参阅[office 365 data Subject 请求指南](https://go.microsoft.com/fwlink/?linkid=871169 )。
   
-若要管理对由组织中的人员提交的 DSR 的调查, 可以使用 Office 365 安全&amp;合规中心中的 DSR 案例工具查找存储在中的内容:
+若要管理对由组织中的人员提交的 DSR 的调查, 可以使用安全 & 合规中心中的 "DSR 事例" 工具查找存储在中的内容:
   
 - 组织中的任何用户邮箱。 这包括 Microsoft 团队中的 Skype for business 对话和一对一聊天
     
@@ -42,7 +42,7 @@ EU 常规数据保护条例 (GDPR) 是关于保护和启用欧盟 (EU) 内部的
   
 - 为每个 DSR 调查创建单独的事例。
     
-- 通过将人员添加为案例成员来控制谁有权访问 DSR 事例;仅成员可以访问事例, 并且只能在安全&amp;合规中心的 " **DSR 事例**" 页上的事例列表中查看其事例。 此外, 还可以为同一事例的不同成员分配不同的权限。 例如, 您可以允许某些成员只查看事例和搜索结果, 并允许其他成员创建搜索和导出搜索结果。 
+- 通过将人员添加为案例成员来控制谁有权访问 DSR 事例;仅成员可以访问该事例, 并且只能在 Security & 合规性中心的 " **DSR 事例**" 页上的事例列表中查看其事例。 此外, 还可以为同一事例的不同成员分配不同的权限。 例如, 您可以允许某些成员只查看事例和搜索结果, 并允许其他成员创建搜索和导出搜索结果。 
     
 - 使用内置搜索来搜索由特定数据主体创建或上载的所有内容。
     
@@ -73,20 +73,20 @@ EU 常规数据保护条例 (GDPR) 是关于保护和启用欧盟 (EU) 内部的
   
 ## <a name="step-1-assign-ediscovery-permissions-to-potential-case-members"></a>步骤 1：向潜在事例成员分配电子数据展示权限
 
-默认情况下, Office 365 全局管理员可以访问安全&amp;合规性中心中的 DSR 机箱工具。 按照设计, 其他用户 (如数据隐私官、人力资源经理或其他参与 dsr 调查的人员) 无法访问 dsr 机箱工具, 必须为其分配适当的权限才能访问该工具。 执行此操作最简单的方法是转到安全**** &amp;合规性中心中的 "权限" 页, 并将用户添加到 "电子数据展示管理器" 角色组。 请注意, 您还必须分配这些权限, 以便将其添加为您在步骤2中创建的 DSR 事例的成员。 
+默认情况下, Office 365 全局管理员可以在安全 & 合规性中心中访问 DSR 机箱工具。 按照设计, 其他用户 (如数据隐私官、人力资源经理或其他参与 dsr 调查的人员) 无法访问 dsr 机箱工具, 必须为其分配适当的权限才能访问该工具。 执行此操作最简单的方法是转到 Security & 合规性中心中的 "**权限**" 页, 并将用户添加到 "电子数据展示管理器" 角色组。 请注意, 您还必须分配这些权限, 以便将其添加为您在步骤2中创建的 DSR 事例的成员。 
   
-有关分步说明, 请参阅[在 Office 365 安全&amp;合规中心中分配电子数据展示权限](assign-ediscovery-permissions.md)。
+有关分步说明, 请参阅[在 Office 365 安全 & 合规中心中分配电子数据展示权限](assign-ediscovery-permissions.md)。
   
 > [!NOTE]
-> 默认情况下, Office 365 全局管理员 (或安全&amp;合规中心中的组织管理角色组的其他成员不具有导出内容搜索结果所需的权限 (请参阅本文中的步骤 4)。 若要解决此情况, 管理员可以将自己添加为电子数据展示管理器角色组的成员。 
+> 默认情况下, Office 365 全局管理员 (或安全 & 合规中心中的组织管理角色组的其他成员不具有导出内容搜索结果所需的权限 (请参阅本文中的步骤 4)。 若要解决此情况, 管理员可以将自己添加为电子数据展示管理器角色组的成员。 
   
 ## <a name="step-2-create-a-dsr-case-and-add-members"></a>步骤 2: 创建 DSR 事例并添加成员
 
 下一步是创建 DSR 事例。 创建事例时, 可以选择启动内置搜索, 也可以在不启动搜索的情况下创建事例。 下面的过程将指导您在不启动搜索的情况下创建事例, 并向您介绍如何向事例添加成员。
   
-1. 请转[https://protection.office.com](https://protection.office.com)到使用你的工作或学校帐户登录 Office 365。 
+1. 请转[https://compliance.microsoft.com](https://compliance.microsoft.com)到使用你的工作或学校帐户登录 Office 365。 
     
-2. 在安全&amp;合规性中心中, 单击 "**数据隐私** \> **数据主体请求**", ![然后单击](media/ITPro-EAC-AddIcon.gif) "添加图标" "**新建 DSR 事例**"。
+2. 在 "安全 & 合规性中心" 中, 单击 "**数据隐私** \> **数据主体请求**",](media/ITPro-EAC-AddIcon.gif)然后单击 "添加图标" !["**新建 DSR 事例**"。
     
 3. 在 "**新建 DSR 事例**" 弹出页面上, 为事例指定名称, 键入可选说明, 然后单击 "**下一步**"。 请注意, 此案例的名称在您的组织中必须是唯一的。
     
@@ -145,7 +145,7 @@ participants:"ina@contoso.com" OR author:"Ina Leonte" OR createdby:"Ina Leonte"
 
  **运行 DSR 机箱的内置搜索的步骤:**
   
-1. 在 "安全&amp;合规性中心" 中, 单击 "**数据隐私** \> **数据主体请求**", 然后单击您在步骤2中创建的 DSR 事例旁边的 "**打开**"。 
+1. 在 "安全 & 合规性中心" 中, 单击 "**数据隐私** \> **数据主体请求**", 然后单击您在步骤2中创建的 DSR 事例旁边的 "**打开**"。 
     
     单击页面顶部的 "**搜索**" 选项卡, 然后单击创建新的 DSR 事例时创建的内置搜索旁边的复选框。 注释搜索与 DSR 事例具有相同的名称。 
     
@@ -164,10 +164,10 @@ participants:"ina@contoso.com" OR author:"Ina Leonte" OR createdby:"Ina Leonte"
 
 在运行内置搜索后, 您可以导出搜索结果。 此外, 在导出数据之前, 您可能需要修改查询以减少搜索结果的数量。 有关缩小搜索结果范围的详细信息, 请参阅第5步。
   
-当您导出搜索结果时, 可以在 PST 文件中或单个邮件中下载邮箱项目。 当您导出 SharePoint 和 OneDrive 帐户中的内容时, 将导出本机 Office 文档和其他文档的副本。 包含有关导出的每个项目的信息的结果文件也包含在搜索结果中。 有关导出的更多详细信息, 请参阅[Export Content Search results from the Office &amp; 365 Security 合规中心](export-search-results.md)。
+当您导出搜索结果时, 可以在 PST 文件中或单个邮件中下载邮箱项目。 当您导出 SharePoint 和 OneDrive 帐户中的内容时, 将导出本机 Office 文档和其他文档的副本。 包含有关导出的每个项目的信息的结果文件也包含在搜索结果中。 有关导出的更多详细信息, 请参阅[导出内容搜索结果](export-search-results.md)。
   
 > [!NOTE]
-> 默认情况下, Office 365 全局管理员 (或安全&amp;合规中心中的组织管理角色组的其他成员) 没有导出内容搜索结果所需的权限。 若要解决此情况, 管理员可以将自己添加为电子数据展示管理器角色组的成员。 
+> 默认情况下, Office 365 全局管理员 (或安全 & 合规中心中的组织管理角色组的其他成员) 没有导出内容搜索结果所需的权限。 若要解决此情况, 管理员可以将自己添加为电子数据展示管理器角色组的成员。 
   
 用于导出数据的计算机必须满足以下系统要求:
   
@@ -188,7 +188,7 @@ participants:"ina@contoso.com" OR author:"Ina Leonte" OR createdby:"Ina Leonte"
   
  **若要在 DSR 机箱中从内置搜索导出数据, 请执行以下操作:**
   
-1. 在 "安全&amp;合规性中心" 中, 单击 "**数据隐私** \> **数据主体请求**", 然后单击要从中导出数据的 DSR 事例旁边的 "**打开**"。 
+1. 在 "安全 & 合规性中心" 中, 单击 "**数据隐私** \> **数据主体请求**", 然后单击要从中导出数据的 DSR 事例旁边的 "**打开**"。 
     
 2. 单击页面顶部的 "**搜索**" 选项卡, 然后单击创建 DSR 事例时创建的内置搜索旁边的复选框。 或单击其他搜索以从该搜索中导出数据。 
     
@@ -229,7 +229,7 @@ participants:"ina@contoso.com" OR author:"Ina Leonte" OR createdby:"Ina Leonte"
   
 13. 单击****“启动”将搜索结果下载到计算机。 
     
-    **电子数据展示工具**显示有关导出过程的状态信息，包括要下载的剩余项的估计数量（和大小）。 导出过程完成后, 可以在文件的下载位置访问这些文件。 有关下载内容搜索结果时包括的报告的详细信息, 请参阅 "从 Office 365 安全&amp;合规中心导出内容搜索结果" 中的 "[详细信息](export-search-results.md#more-information)" 部分。 
+    **电子数据展示工具**显示有关导出过程的状态信息，包括要下载的剩余项的估计数量（和大小）。 导出过程完成后, 可以在文件的下载位置访问这些文件。 有关下载内容搜索结果时包括的报告的详细信息, 请参阅 "导出内容搜索结果" 中的 "[详细信息](export-search-results.md#more-information)" 部分。 
     
 导出数据后, 搜索结果和导出报告位于与 DSR 事例同名的文件夹中。 包含邮箱项目的 PST 文件位于名为**Exchange**的子文件夹中。 网站中的文档和其他项目位于名为**SharePoint**的子文件夹中。 
   
@@ -304,7 +304,7 @@ participants:"ina@contoso.com" OR author:"Ina Leonte" OR createdby:"Ina Leonte"
    
  **若要搜索和导出 MyAnalytics 和 Office 漫游服务数据, 请执行以下操作:**
   
-1. 在 "安全&amp;合规性中心" 中, 单击 "**数据隐私** \> **数据主体请求**", 然后单击要为其导出使用率数据的数据主体在 DSR 事例旁边的 "**打开**"。 
+1. 在 "安全 & 合规性中心" 中, 单击 "**数据隐私** \> **数据主体请求**", 然后单击要为其导出使用率数据的数据主体在 DSR 事例旁边的 "**打开**"。 
     
 2. 单击页面顶部的 "**搜索**" 选项卡, 然后单击!["添加图标](media/ITPro-EAC-AddIcon.gif) " "**导向搜索**"。
     

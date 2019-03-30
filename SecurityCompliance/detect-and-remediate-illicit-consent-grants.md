@@ -14,12 +14,12 @@ localization_priority: Normal
 search.appverid:
 - MET150
 description: 了解如何识别和修正在 Office 365 中的非法许可授予攻击。
-ms.openlocfilehash: 454b1b0dcf7a6182895dcc97889286f3000c9626
-ms.sourcegitcommit: 8657e003ab1ff49113f222d1ee8400eff174cb54
+ms.openlocfilehash: 32fa8fedd0cac0ba1a6193b7b107492efb136838
+ms.sourcegitcommit: e7a776a04ef6ed5e287a33cfdc36aa2d72862b55
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/16/2019
-ms.locfileid: "30656068"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30999935"
 ---
 # <a name="detect-and-remediate-illicit-consent-grants-in-office-365"></a>检测和修正 Office 365 中的非法授权
 
@@ -86,7 +86,7 @@ ms.locfileid: "30656068"
 4.  在 "ClientDisplayName" 列 (列 C) 中, 查找看起来可疑的应用程序。 应仔细查看具有拼写错误名称、超级 bland 名称或以黑客为名字的名称的应用程序。
 
 ## <a name="determine-the-scope-of-the-attack"></a>确定攻击的范围
-完成对应用程序访问的清点之后, 请查看 Office 365**审核日志**以确定泄露的全部范围。  搜索受影响的用户、违法应用程序有权访问您组织的时间段以及应用程序的权限。 您可以在[Office 365 安全与合规中心](https://support.office.com/article/Search-the-audit-log-in-the-Office-365-Security-Compliance-Center-0d4d0f35-390b-4518-800e-0c7ec95e946c)中搜索**审核日志**。 
+完成对应用程序访问的清点之后, 请查看 Office 365**审核日志**以确定泄露的全部范围。  搜索受影响的用户、违法应用程序有权访问您组织的时间段以及应用程序的权限。 你可以在[Microsoft 365 安全与合规中心](https://support.office.com/article/Search-the-audit-log-in-the-Office-365-Security-Compliance-Center-0d4d0f35-390b-4518-800e-0c7ec95e946c)中搜索**审核日志**。 
 
 > [!IMPORTANT]
 > 必须先启用[管理员和用户](https://support.office.com/article/turn-office-365-audit-log-search-on-or-off-e893b19a-660c-41f2-9074-d3631c95a014)的[邮箱审核](https://support.office.com/article/Enable-mailbox-auditing-in-Office-365-aaca8987-5b62-458b-9882-c28476a66918)和活动审核, 然后才能获取此类信息。

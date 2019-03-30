@@ -14,17 +14,17 @@ search.appverid:
 - MST160
 - MET150
 ms.assetid: 3f7dde1a-a8ea-4366-86da-8ee6777f357c
-description: 使用 Office 365 安全&amp;合规中心中的内容搜索工具在 Exchange 混合部署中搜索和导出本地用户的 MicrosoftTeams 聊天数据 (称为 "1xN 聊天")。
-ms.openlocfilehash: b277557285df6944217b493bf0c5a11759f9d76b
-ms.sourcegitcommit: 54a2cbe5d13f448e0c28655bdf88deb9e5434cac
+description: 使用安全 & 合规中心中的内容搜索工具在 Exchange 混合部署中搜索和导出本地用户的 MicrosoftTeams 聊天数据 (称为1xN 聊天)。
+ms.openlocfilehash: 0c68023fdd4e1c9e06596937247270861cdbd2b3
+ms.sourcegitcommit: e7a776a04ef6ed5e287a33cfdc36aa2d72862b55
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/27/2019
-ms.locfileid: "30935227"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "31000005"
 ---
 # <a name="searching-cloud-based-mailboxes-for-on-premises-users-in-office-365"></a>在 Office 365 中搜索本地用户的基于云的邮箱
 
-如果你的组织具有 Exchange 混合部署, 并且已启用 Microsoft 团队, 则用户可以使用团队聊天应用程序进行即时消息传递。 对于基于云的用户, 团队聊天数据 (也称为1xN 聊天) 保存到其主要的基于云的邮箱中。 当本地用户使用团队聊天应用程序时, 其主邮箱位于本地。 为了避免此限制, Microsoft 已发布了一个新功能, 其中创建了基于云的存储区域 (称为本地用户的基于云的邮箱), 以存储本地用户的团队聊天数据。 这使您可以使用 Office 365 安全&amp;合规中心中的内容搜索工具搜索和导出本地用户的团队聊天数据。 
+如果你的组织具有 Exchange 混合部署, 并且已启用 Microsoft 团队, 则用户可以使用团队聊天应用程序进行即时消息传递。 对于基于云的用户, 团队聊天数据 (也称为1xN 聊天) 保存到其主要的基于云的邮箱中。 当本地用户使用团队聊天应用程序时, 其主邮箱位于本地。 为了避免此限制, Microsoft 已发布了一个新功能, 其中创建了基于云的存储区域 (称为本地用户的基于云的邮箱), 以存储本地用户的团队聊天数据。 这样, 您就可以使用安全 & 合规中心中的内容搜索工具搜索和导出本地用户的团队聊天数据。 
   
 以下是为本地用户设置和搜索基于云的邮箱的要求和限制:
   
@@ -38,7 +38,7 @@ ms.locfileid: "30935227"
   
 ## <a name="how-it-works"></a>工作原理
 
-如果启用了 microsoft 团队的用户具有本地邮箱, 并且其用户帐户/标识已同步到云, Microsoft 将创建一个基于云的邮箱来存储1xN 团队聊天数据。 在将团队聊天数据存储在基于云的邮箱中之后, 将为搜索编制索引。 这样, 您就可以使用内容搜索 (和与电子数据展示事例关联的搜索) 来搜索、预览和导出本地用户的团队聊天数据。 您还可以使用** \*** Office 365 安全&amp;合规中心 PowerShell 中的 new-compliancesearch cmdlet 来搜索本地用户的团队聊天数据。 
+如果启用了 microsoft 团队的用户具有本地邮箱, 并且其用户帐户/标识已同步到云, Microsoft 将创建一个基于云的邮箱来存储1xN 团队聊天数据。 在将团队聊天数据存储在基于云的邮箱中之后, 将为搜索编制索引。 这样, 您就可以使用内容搜索 (和与电子数据展示事例关联的搜索) 来搜索、预览和导出本地用户的团队聊天数据。 您还可以使用** \*** Security & 合规性中心 PowerShell 中的 new-compliancesearch cmdlet 搜索本地用户的团队聊天数据。 
   
 下图显示了团队如何聊天本地用户数据的工作流, 以供搜索、预览和导出。
   
@@ -48,7 +48,7 @@ ms.locfileid: "30935227"
 
 ## <a name="filing-a-request-with-microsoft-support-to-enable-this-feature"></a>将请求与 Microsoft 支持一起存档以启用此功能
 
-您必须将请求与 Microsoft 支持文件一起使用, 以使组织能够在安全&amp;合规中心中使用图形用户界面在基于云的邮箱中搜索团队对话数据, 以供本地用户使用。 请注意, 此功能在 Office 365 安全&amp;合规中心 PowerShell 中可用。 您无需提交支持请求即可使用 PowerShell 搜索本地用户的团队聊天数据。 
+您必须将请求与 Microsoft 支持文件一起使用, 以使组织能够在安全 & 合规性中心中使用图形用户界面搜索本地用户的基于云的邮箱中的团队聊天数据。 请注意, 安全 & 合规中心 PowerShell 中提供了此功能。 您无需提交支持请求即可使用 PowerShell 搜索本地用户的团队聊天数据。 
   
 向 Microsoft 支持部门提交请求时, 请包含以下信息:
   
@@ -62,7 +62,7 @@ ms.locfileid: "30935227"
   
 ### <a name="what-happens-after-this-feature-is-enabled"></a>启用此功能后, 会发生什么？
 
-在 Office 365 组织中部署此功能之后, 在内容搜索以及与安全&amp;合规性中心中与电子数据展示事例相关联的搜索中将进行以下更改:
+在 Office 365 组织中部署此功能后, 将在内容搜索和与 Security & 合规中心中的电子数据展示事例相关的搜索中进行以下更改:
   
 - "为**本地用户添加 Office 应用内容**" 复选框将添加到内容搜索中的**位置**下。 
     
@@ -74,9 +74,9 @@ ms.locfileid: "30935227"
   
 ## <a name="searching-for-teams-chat-content-in-cloud-based-mailboxes-for-on-premises-users"></a>搜索团队在基于云的邮箱中为本地用户聊天内容
 
-启用此功能后, 您可以使用安全&amp;合规中心中的内容搜索, 在基于云的邮箱中搜索团队对话数据, 以供本地用户使用。 
+启用此功能后, 您可以使用安全 & 合规中心中的内容搜索来搜索团队对话中的用户的基于云的邮箱中的数据。 
   
-1. 在安全&amp;合规性中心中, 转**到&amp;搜索调查** \> **内容搜索**
+1. 在安全 & 合规性中心中, 转到 "**搜索** \> **内容搜索**"
     
 2. 在 "**搜索**" 页上![, 单击](media/8ee52980-254b-440b-99a2-18d068de62d3.gif) "添加图标" "**新建搜索**"。
     
@@ -100,13 +100,13 @@ ms.locfileid: "30935227"
     
     - [预览搜索结果](content-search.md#preview-search-results)
     
-    - [从 Office 365 安全&amp;合规中心导出内容搜索结果](export-search-results.md)
+    - [导出内容搜索结果](export-search-results.md)
     
 ## <a name="using-powershell-to-search-for-teams-chat-data-in-cloud-based-mailboxes-for-on-premises-users"></a>使用 PowerShell 搜索团队对话数据在基于云的邮箱中用于本地用户
 
-您可以使用 Office 365 安全&amp;合规中心 PowerShell 中的**new-compliancesearch**和**new-compliancesearch** cmdlet 在基于云的邮箱中搜索本地用户。 如前所述, 您无需提交支持请求即可使用 PowerShell 搜索本地用户的团队聊天数据。 
+您可以使用 Security & 合规性中心 PowerShell 中的**new-compliancesearch**和**new-compliancesearch** cmdlet 在基于云的邮箱中搜索本地用户。 如前所述, 您无需提交支持请求即可使用 PowerShell 搜索本地用户的团队聊天数据。 
   
-1. [连接到 Office 365 安全&amp;合规中心 PowerShell](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell)。
+1. [连接到安全 & 合规中心 PowerShell](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell)。
     
 2. 运行以下 PowerShell 命令创建新的内容搜索内部部署用户的基于云的邮箱。
     

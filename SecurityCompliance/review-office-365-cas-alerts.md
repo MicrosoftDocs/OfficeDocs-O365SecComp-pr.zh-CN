@@ -12,12 +12,12 @@ search.appverid:
 - MOE150
 ms.assetid: 97e9c3d9-df89-458e-924b-369becee5532
 description: 使用 Office 365 Cloud App Security 中的 "通知" 页面查看潜在问题并采取措施。 您可以取消或解决通知, 如有必要, 请挂起用户帐户。
-ms.openlocfilehash: 701d80c3f890115c6c403fff21d2d0444d71c95a
-ms.sourcegitcommit: 1658be51e2c21ed23bc4467a98af74300a45b975
+ms.openlocfilehash: ddef10293fca7b722a13babdca5c05bbe2398cb3
+ms.sourcegitcommit: e7a776a04ef6ed5e287a33cfdc36aa2d72862b55
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/26/2019
-ms.locfileid: "30862464"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "31000035"
 ---
 # <a name="review-and-take-action-on-alerts-in-office-365-cloud-app-security"></a>查看 Office 365 云应用安全中的警报并执行相应操作
   
@@ -37,7 +37,7 @@ ms.locfileid: "30862464"
 2. 在屏幕顶部的导航栏中, 选择 "**通知**"。<br/>![在 "通知" 页面上, 您可以查看触发的警报以及执行的任何操作。](media/3b53d4c9-4b13-435d-8547-8c0f9ae6b914.png)
  
 > [!NOTE]
-> 云应用安全警报在 Office 365 Security & 合规中心 (转到**警报** > **查看警报**) 中也可见。 但是, 目前您必须在云应用安全门户和 Office 365 Security & 合规性中心中解决这些警报。 若要了解详细信息, 请参阅[查看云应用安全警报](alert-policies.md#viewing-cloud-app-security-alerts)。) 
+> 云应用安全警报在安全 & 合规性中心 (转到**警报** > **查看警报**) 中也可见。 但是, 目前您必须在云应用安全门户和 Security & 合规性中心中解决这些警报。 若要了解详细信息, 请参阅[查看云应用安全警报](alert-policies.md#viewing-cloud-app-security-alerts)。) 
  
 ## <a name="review-and-handle-alerts"></a>查看和处理警报
 

@@ -14,13 +14,13 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: 3526fd06-b45f-445b-aed4-5ebd37b3762a
-description: 使用 Office 365 安全&amp;合规中心中的 "搜索和清除" 功能搜索和删除组织中所有邮箱的电子邮件。
-ms.openlocfilehash: 4c98e73f74867b933560f163e80e74fd7bbd2bc5
-ms.sourcegitcommit: 54a2cbe5d13f448e0c28655bdf88deb9e5434cac
+description: 使用 Office 365 的 Security & 合规性中心中的 "搜索和清除" 功能搜索和删除组织中所有邮箱的电子邮件。
+ms.openlocfilehash: c6fa0d09852016b918375dbff5a19468886d86b3
+ms.sourcegitcommit: e7a776a04ef6ed5e287a33cfdc36aa2d72862b55
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/27/2019
-ms.locfileid: "30935157"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "31000265"
 ---
 # <a name="search-for-and-delete-email-messages-in-your-office-365-organization---admin-help"></a>在 Office 365 组织中搜索和删除电子邮件-管理员帮助
 
@@ -39,7 +39,7 @@ ms.locfileid: "30935157"
   
 ## <a name="before-you-begin"></a>开始之前
 
-- 若要创建和运行内容搜索, 您必须是**电子数据展示管理器**角色组的成员, 或分配有**合规性搜索**管理角色。 若要删除邮件, 您必须是 "**组织管理**" 角色组的成员, 或者分配有 "**搜索和清除**" 管理角色。 有关向角色组添加用户的信息, 请参阅[为用户提供对 Office 365 Security & 合规中心的访问权限](grant-access-to-the-security-and-compliance-center.md)。
+- 若要创建和运行内容搜索, 您必须是**电子数据展示管理器**角色组的成员, 或分配有**合规性搜索**管理角色。 若要删除邮件, 您必须是 "**组织管理**" 角色组的成员, 或者分配有 "**搜索和清除**" 管理角色。 有关向角色组添加用户的信息, 请参阅[向用户授予对安全与合规中心的访问权限](grant-access-to-the-security-and-compliance-center.md)。
     
 - 您必须使用 Security & 合规性中心 PowerShell 删除邮件。 有关如何连接的说明, 请参阅[步骤 2](#step-2-connect-to-security--compliance-center-powershell) 。
     
@@ -51,7 +51,7 @@ ms.locfileid: "30935157"
     
 ## <a name="step-1-create-a-content-search-to-find-the-message-to-delete"></a>步骤 1：创建内容搜索来查找要删除的邮件
 
-第一步是创建并运行内容搜索以查找您想要从组织的邮箱中删除的邮件。 您可以使用安全&amp;合规性中心或通过运行**new-compliancesearch**和**new-compliancesearch** cmdlet 来创建搜索。 通过在[步骤 3](#step-3-delete-the-message)中运行**new-compliancesearchaction-清除**命令, 与此搜索的查询相匹配的邮件将被删除。 有关创建内容搜索和配置搜索查询的信息，请参阅下列主题： 
+第一步是创建并运行内容搜索以查找您想要从组织的邮箱中删除的邮件。 您可以使用 Security & 合规性中心或通过运行**new-compliancesearch**和**new-compliancesearch** cmdlet 来创建搜索。 通过在[步骤 3](#step-3-delete-the-message)中运行**new-compliancesearchaction-清除**命令, 与此搜索的查询相匹配的邮件将被删除。 有关创建内容搜索和配置搜索查询的信息，请参阅下列主题： 
   
 - [Office 365 中的内容搜索](content-search.md)
     
@@ -76,7 +76,7 @@ ms.locfileid: "30935157"
     
 - 预览搜索结果以验证搜索是否仅返回您想要删除的一个或一封邮件。
     
-- 使用搜索估计统计信息 (在安全&amp;合规性中心中的搜索的细节窗格中显示, 或使用[new-compliancesearch](https://go.microsoft.com/fwlink/p/?LinkId=517934) cmdlet) 获取总结果数的计数。 
+- 使用搜索估计统计信息 (显示在 Security & 合规性中心中的搜索的细节窗格中或通过使用[new-compliancesearch](https://go.microsoft.com/fwlink/p/?LinkId=517934) cmdlet) 来获取总结果数。 
     
 以下是查找可疑电子邮件的两个查询示例。
   
@@ -94,13 +94,13 @@ ms.locfileid: "30935157"
 
 ## <a name="step-2-connect-to-security--compliance-center-powershell"></a>步骤 2: 连接到安全 & 合规中心 PowerShell
 
-下一步是连接到组织的安全 & 合规中心 PowerShell。 有关分步说明, 请参阅[连接到 Office 365 安全&amp;合规中心 PowerShell](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell)。
+下一步是连接到组织的安全 & 合规中心 PowerShell。 有关分步说明, 请参阅[连接到 Security & 合规中心 PowerShell](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell)。
   
-如果您的 Office 365 帐户使用多重身份验证 (MFA) 或联合身份验证, 则不能使用上一主题中有关连接到安全 & 合规中心 PowerShell 的说明。 有关使用多重身份验证的主题中的说明, 请参阅[连接到 Office 365 Security & 合规中心 PowerShell](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/mfa-connect-to-scc-powershell)中的说明。
+如果您的 Office 365 帐户使用多重身份验证 (MFA) 或联合身份验证, 则不能使用上一主题中有关连接到安全 & 合规中心 PowerShell 的说明。 请参阅主题[使用多重身份验证连接到安全 & 合规中心 PowerShell](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/mfa-connect-to-scc-powershell)中的说明。
   
 ## <a name="step-3-delete-the-message"></a>步骤 3: 删除邮件
 
-创建并优化内容搜索后, 若要返回要删除并连接到安全&amp;合规中心 PowerShell 的邮件, 最后一步是运行**new-compliancesearchaction** cmdlet 以删除该邮件。 您可以软或硬删除邮件。 软删除的邮件将移至用户的 "可恢复的项目" 文件夹并保留, 直到已删除项目的保留期过期。 硬删除的邮件被标记为从邮箱永久删除, 并且在下次邮箱由托管文件夹助理处理时将被永久删除。 如果为邮箱启用了单个项目恢复, 则删除的项目保留期过期后, 将永久删除硬删除的项目。 如果将邮箱置于保留状态, 则会保留已删除邮件, 直到项目的保留期过期或从邮箱中删除保留期间为止。
+创建并优化内容搜索后, 若要返回要删除并连接到安全 & 合规中心 PowerShell 的邮件, 最后一步是运行**new-compliancesearchaction** cmdlet 以删除该邮件。 您可以软或硬删除邮件。 软删除的邮件将移至用户的 "可恢复的项目" 文件夹并保留, 直到已删除项目的保留期过期。 硬删除的邮件被标记为从邮箱永久删除, 并且在下次邮箱由托管文件夹助理处理时将被永久删除。 如果为邮箱启用了单个项目恢复, 则删除的项目保留期过期后, 将永久删除硬删除的项目。 如果将邮箱置于保留状态, 则会保留已删除邮件, 直到项目的保留期过期或从邮箱中删除保留期间为止。
   
 在下面的示例中, 该命令将软删除名为 "删除仿冒邮件" 的内容搜索返回的搜索结果。 
 
@@ -118,7 +118,7 @@ New-ComplianceSearchAction -SearchName "Remove Phishing Message" -Purge -PurgeTy
   
 有关详细信息, 请参阅[new-compliancesearchaction](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-content-search/New-ComplianceSearchAction)。
 
-## <a name="more-information"></a>详细信息
+## <a name="more-information"></a>更多信息
 
 - **如何获取搜索和删除操作的状态？**
 
@@ -142,6 +142,6 @@ New-ComplianceSearchAction -SearchName "Remove Phishing Message" -Purge -PurgeTy
 
     清除邮件并将其移动到 "清除" 文件夹后, 邮件将一直保留到保留持续时间过期。 如果为无限期的保留期，则这些项目会一直保留到您删除保留设置或更改保留期。
     
-- **为什么在不同的安全 & 合规中心角色组之间划分搜索和删除工作流？**
+- **为什么在不同的安全与合规中心角色组之间划分搜索和删除工作流？**
 
     如前所述，必须是电子数据展示管理员角色组的成员或者分配有合规性搜索管理角色的用户才能搜索邮箱。 若要删除邮件，必须是组织管理角色组的成员，或分配有“搜索并清除”管理角色。 这就使得可以控制哪些人可以搜索组织中的邮箱以及哪些人可以删除邮件。 

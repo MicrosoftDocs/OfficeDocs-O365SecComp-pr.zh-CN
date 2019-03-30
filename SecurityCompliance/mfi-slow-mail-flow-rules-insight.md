@@ -9,13 +9,13 @@ ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: 37125cdb-715d-42d0-b669-1a8efa140813
-description: 管理员可以了解 Office 365 Security & 合规中心的邮件流仪表板中的邮件流规则的慢速见解。
-ms.openlocfilehash: e1ce23c94cd5260d8a7a7ebd99521a4a6f5c7b0a
-ms.sourcegitcommit: fec1010e405f14e792d650aee0312b78fced3343
+description: 管理员可以了解安全 & 合规性中心的邮件流仪表板中的邮件流规则的慢速见解。
+ms.openlocfilehash: ede12e14f287599cab0e5f39aaf71c38ed519276
+ms.sourcegitcommit: e7a776a04ef6ed5e287a33cfdc36aa2d72862b55
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/21/2019
-ms.locfileid: "30720252"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30999775"
 ---
 # <a name="slow-mail-flow-rules-insight"></a>慢邮件流规则见解
 
@@ -29,7 +29,7 @@ ms.locfileid: "30720252"
 
 这些洞察力将帮助您识别和微调邮件流规则, 以帮助减少邮件流延迟。
 
-![Office 365 Security & 合规中心的邮件流仪表板中的邮件流规则速度较慢](media/1dd90faa-f065-4b10-8b47-d35dc127fc26.png)
+![Security & 合规性中心的邮件流仪表板中的邮件流规则速度较慢](media/1dd90faa-f065-4b10-8b47-d35dc127fc26.png)
 
 单击 "**查看详细信息**" 时, 将显示一个弹出窗格, 可在其中查看规则。 在浮出控件窗格中, 也可以单击 "**查看示例消息**" 来查看规则所影响的邮件类型。
 

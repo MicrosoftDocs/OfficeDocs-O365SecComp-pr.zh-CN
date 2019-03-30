@@ -14,12 +14,12 @@ ms.collection:
 search.appverid: MOE150
 ms.assetid: 5af334b6-a15d-4f73-97f8-1423457d9f6b
 description: 您可以选择执行已导出的电子数据展示搜索结果, 以便即使在不同邮箱中找到同一邮件的多个实例, 也只导出电子邮件的一个副本。
-ms.openlocfilehash: 7a4f156a68cafbffbb416c625e1e3ba432e6b069
-ms.sourcegitcommit: 8a65a29aa3bfe5dcad0ff152a7cd795e02877dd9
+ms.openlocfilehash: b3810e3568bd2c7aa1628bcfcebbad5a87468ff8
+ms.sourcegitcommit: e7a776a04ef6ed5e287a33cfdc36aa2d72862b55
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/28/2019
-ms.locfileid: "30936722"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30999295"
 ---
 # <a name="de-duplication-in-ediscovery-search-results"></a>电子数据展示搜索结果中的重复数据删除
 
@@ -62,11 +62,11 @@ Office 365 电子数据展示工具使用以下电子邮件属性的组合来确
 > [!IMPORTANT]
 > 如果重复数据消除算法的限制可能会影响您的搜索结果的质量, 则在导出项目时不应启用重复数据删除。 如果此部分中所述的情况不可能是搜索结果中的因素, 并且您想要减少最有可能重复的项目数, 则应考虑启用重复数据删除。 
   
-## <a name="more-information"></a>详细信息
+## <a name="more-information"></a>更多信息
 
 - 本文中的信息适用于使用以下电子数据展示工具之一导出搜索结果:
     
-  - Office 365 安全&amp;合规中心中的内容搜索
+  - Office 365 中的合规性中心内的内容搜索
     
   - Exchange Online 中的就地电子数据展示
     
@@ -74,9 +74,9 @@ Office 365 电子数据展示工具使用以下电子邮件属性的组合来确
     
 - 有关导出搜索结果的详细信息, 请参阅:
     
-  - [从 Office 365 安全&amp;合规中心导出搜索结果](export-search-results.md)
+  - [导出内容搜索](export-search-results.md)
     
-  - [从 Office 365 安全&amp;合规中心导出内容搜索报告](export-a-content-search-report.md)
+  - [导出内容搜索报告](export-a-content-search-report.md)
     
   - [将就地电子数据展示搜索结果导出到 PST 文件](https://go.microsoft.com/fwlink/p/?linkid=832671)
     

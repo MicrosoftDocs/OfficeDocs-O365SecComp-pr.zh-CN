@@ -15,12 +15,12 @@ search.appverid:
 - MET150
 ms.assetid: 59414438-99f5-488b-975c-5023f2254369
 description: '开始使用 DLP 策略的最简单、最常见方法是，使用包含在 Office 365 中的模板之一。 '
-ms.openlocfilehash: a025b006810c7f03b44fa9d307e263ba20af0903
-ms.sourcegitcommit: 8657e003ab1ff49113f222d1ee8400eff174cb54
+ms.openlocfilehash: 0c6b3bce7b336b08595a432c29601ecb63155589
+ms.sourcegitcommit: e7a776a04ef6ed5e287a33cfdc36aa2d72862b55
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/16/2019
-ms.locfileid: "30639089"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "31000855"
 ---
 # <a name="create-test-and-tune-a-dlp-policy"></a>创建、测试和优化 DLP 策略
 
@@ -203,7 +203,7 @@ DLP 策略模板不能完全直接从盒中得到。 您可能会发现环境中
 
 ![启用策略的选项](media/DLP-create-test-tune-turn-on-policy.png)
  
-如果你正在等待查看策略将生效的时间, 请[连接到 Office 365 Security & 合规性中心 PowerShell](https://docs.microsoft.com/en-us/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell?view=exchange-ps) , 并运行[DlpCompliancePolicy cmdlet](https://docs.microsoft.com/en-us/powershell/module/exchange/policy-and-compliance-dlp/get-dlpcompliancepolicy?view=exchange-ps)以查看 DistributionStatus。
+如果你正在等待查看策略将生效的时间, 请[连接到 Security & 合规性中心 PowerShell](https://docs.microsoft.com/en-us/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell?view=exchange-ps) , 并运行[DlpCompliancePolicy cmdlet](https://docs.microsoft.com/en-us/powershell/module/exchange/policy-and-compliance-dlp/get-dlpcompliancepolicy?view=exchange-ps)以查看 DistributionStatus。
 
 ![在 PowerShell 中运行 cmdlet](media/DLP-create-test-tune-PowerShell.png)
 
@@ -217,6 +217,6 @@ DLP 策略模板不能完全直接从盒中得到。 您可能会发现环境中
 
 ![内容受限制的策略提示](media/DLP-create-test-tune-restrict-warning.png)
 
-## <a name="summary"></a>摘要
+## <a name="summary"></a>Summary
 
 数据丢失防护策略对于所有类型的组织都很有用。 由于您对策略提示、最终用户覆盖和事件报告等的控制, 测试某些 DLP 策略是一个低风险的实践。 您可以安静地测试一些 DLP 策略, 以查看组织中已发生的冲突类型, 然后使用较低的误报率手工创建策略, 向用户介绍允许和不允许的情况, 然后将 DLP 策略回滚到组织.

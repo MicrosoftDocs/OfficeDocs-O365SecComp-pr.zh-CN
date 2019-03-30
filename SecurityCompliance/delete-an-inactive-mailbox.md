@@ -14,16 +14,16 @@ search.appverid:
 - MET150
 ms.assetid: f5caf497-5e8d-4b7a-bfff-d02942f38150
 description: 当不再需要保留 Office 365 非活动邮箱的内容时, 可以通过删除保留永久删除非活动邮箱。 删除保留后, 非活动邮箱将标记为删除, 并在处理后被永久删除。
-ms.openlocfilehash: 51f3181e77db2f36976f01f349f1c628f1e67bcf
-ms.sourcegitcommit: c0d4fe3e43e22353f30034567ade28330266bcf7
+ms.openlocfilehash: f1aa29b0e40d02e4b6450202c0b2a34ae3075677
+ms.sourcegitcommit: e7a776a04ef6ed5e287a33cfdc36aa2d72862b55
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/27/2019
-ms.locfileid: "30899981"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "31001065"
 ---
 # <a name="delete-an-inactive-mailbox-in-office-365"></a>删除 Office 365 中的非活动邮箱
 
-非活动邮箱用于在之前的员工离开公司之后保留其电子邮件。 如果您不再需要保留非活动邮箱的内容，可以通过删除保留永久性地删除非活动邮箱。 此外，还可以对非活动邮箱设置多个保留。 例如，非活动邮箱上可以设置诉讼保留以及一个或多个就地保留。 此外, office 365 保留策略 (在 office 365 安全&amp;合规中心中创建) 可能会应用于非活动邮箱。 您必须从非活动邮箱中删除所有保留和 Office 365 保留策略, 才能将其删除。 删除保留和保留策略后, 非活动邮箱将标记为删除, 并在处理之后永久删除。
+非活动邮箱用于在之前的员工离开公司之后保留其电子邮件。 如果您不再需要保留非活动邮箱的内容，可以通过删除保留永久性地删除非活动邮箱。 此外，还可以对非活动邮箱设置多个保留。 例如，非活动邮箱上可以设置诉讼保留以及一个或多个就地保留。 此外, office 365 保留策略 (在 office 365 或 Microsoft 365 的安全性和合规性中心中创建) 可能会应用于非活动邮箱。 您必须从非活动邮箱中删除所有保留和 Office 365 保留策略, 才能将其删除。 删除保留和保留策略后, 非活动邮箱将标记为删除, 并在处理之后永久删除。
   
 > [!IMPORTANT]
 > 我们推迟了最后期限，在 2017 年 7 月 1 后，仍可通过新建就地保留创建非活动邮箱。 But later this year or early next year, you won't be able to create new In-Place Holds in Exchange Online. 在这段时间, 仅可使用诉讼保留和 Office 365 保留策略来创建非活动邮箱。 不过，处于就地保留的现有非活动邮箱仍受支持，可以继续管理这些非活动邮箱的就地保留。 这包括更改就地保留的持续时间，以及通过删除就地保留来永久删除非活动邮箱。 
@@ -201,7 +201,7 @@ Set-Mailbox -InactiveMailbox -Identity <identity of inactive mailbox> -Litigatio
   Get-MailboxSearch $InPlaceHold.Name | FL Sources
 ```
 
-## <a name="more-information"></a>详细信息
+## <a name="more-information"></a>更多信息
 
 - **非活动邮箱是一种软删除邮箱。** 在 Exchange Online 中，软删除邮箱是指已删除但可以在特定保留期内恢复的邮箱。 Exchange Online 中的软删除邮箱保留期为 30 天。 这意味着该邮箱可以在软删除后 30 天内进行恢复。 30 天后，软删除邮箱将标记为永久删除并且无法恢复。 
     

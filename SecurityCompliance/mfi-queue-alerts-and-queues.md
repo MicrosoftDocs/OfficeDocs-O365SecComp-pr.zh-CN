@@ -8,13 +8,13 @@ ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: 37640c80-ce6f-47e2-afd1-bc1d3c50e637
-description: 管理员可以在 Office 365 Security & 合规中心的邮件流仪表板中了解队列通知和队列。
-ms.openlocfilehash: 642aa672cda124873eb0b2ca8e9294e64325f55d
-ms.sourcegitcommit: fec1010e405f14e792d650aee0312b78fced3343
+description: 管理员可以了解安全 & 合规性中心的邮件流仪表板中的队列通知和队列。
+ms.openlocfilehash: 490665bb6b062c5a0b93c988adea9eeb9827cb86
+ms.sourcegitcommit: e7a776a04ef6ed5e287a33cfdc36aa2d72862b55
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/21/2019
-ms.locfileid: "30720302"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30998605"
 ---
 # <a name="queue-alerts-and-queues"></a>队列警报和队列
 
@@ -30,7 +30,7 @@ Office 365 将继续重试传递48小时。 在48小时后, 邮件将会过期, 
 
 如果已排队的电子邮件数量超过了预定义的阈值 (默认值为2000邮件), 则在**最近通知**的邮件流仪表板中将提供这些通知, 并且管理员将收到电子邮件通知 (为其备用电子邮件地址). 若要配置警报阈值、每日通知限制和/或通知收件人, 请参阅下面的 "**自定义队列通知**" 部分。
 
-![在 Office 365 安全 & 合规中心的邮件流仪表板的 "最近的通知" 区域中对警报进行排队](media/5fc4a51c-6118-4270-960b-c6b176ef94ae.png)
+![在安全 & 合规中心的邮件流仪表板的 "最近的通知" 区域中对警报进行排队](media/5fc4a51c-6118-4270-960b-c6b176ef94ae.png)
 
 ## <a name="customize-queue-alerts"></a>自定义队列通知
 
@@ -50,13 +50,13 @@ Office 365 将继续重试传递48小时。 在48小时后, 邮件将会过期, 
 
 单击警报时, 警报详细信息将显示在浮出控件窗格中。
 
-![在 Office 365 安全 & 合规中心的邮件流仪表板的 "最近的通知" 区域中选择队列通知](media/1f6b0e96-5b2c-41ef-9684-9d813b3fabe6.png)
+![在安全 & 合规中心的邮件流仪表板的 "最近的通知" 区域中选择队列通知](media/1f6b0e96-5b2c-41ef-9684-9d813b3fabe6.png)
 
-![Office 365 Security & 合规中心中的队列警报详细信息浮出控件](media/105c8fff-912f-4763-8806-2740ebdecd4b.png)
+![Security & 合规中心中的队列警报详细信息浮出控件](media/105c8fff-912f-4763-8806-2740ebdecd4b.png)
 
 您可以单击警报详细信息中的 "**查看队列**", 在新的飞出窗格中查看队列详细信息、问题和指向可用修复程序的链接。
 
-![Office 365 Security & 合规中心中的队列警报详细信息浮出控件](media/8ff60955-55ef-4f32-a966-85e02cb608d1.png)
+![Security & 合规中心中的队列警报详细信息浮出控件](media/8ff60955-55ef-4f32-a966-85e02cb608d1.png)
 
 ![查看警报详细信息中的队列](media/4eb088fe-5dd9-4bf4-b959-c1bb2545c515.png)
 
@@ -64,7 +64,7 @@ Office 365 将继续重试传递48小时。 在48小时后, 邮件将会过期, 
 
 即使排队邮件量未超过阈值, 仍可以使用邮件流仪表板的 "**队列**" 区域查看已排入超过1小时的邮件。 您可以使用 "**队列**" 区域来监视已排队的邮件数 (值为0表示邮件流正常), 并在队列中的邮件数变得过大之前执行操作。
 
-![Office 365 Security & 合规中心中的邮件流仪表板中的队列](media/0ef6e2ef-dd22-4363-9d4a-b20a00babc9f.png)
+![Security & 合规性中心的邮件流仪表板中的队列](media/0ef6e2ef-dd22-4363-9d4a-b20a00babc9f.png)
 
 单击**队列**中已排队的邮件数时, 将在弹出窗口中显示有关如何修复问题的队列详细信息和指南 (在队列警报的详细信息中单击 "**查看队列**" 后出现的同一浮出控件)。
 

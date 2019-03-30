@@ -8,14 +8,14 @@ ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: ''
-description: 管理员可以在 "Office 365 安全 & 合规中心" 的 "邮件流" 仪表板中了解未送达报告。
+description: 管理员可以在安全 & 合规性中心的邮件流仪表板中了解未送达报告。
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 7786e2667f268566d189d4f09acd937eacb2c225
-ms.sourcegitcommit: fec1010e405f14e792d650aee0312b78fced3343
+ms.openlocfilehash: 21d9b08330ddb5832600431f0d60179c7a157177
+ms.sourcegitcommit: e7a776a04ef6ed5e287a33cfdc36aa2d72862b55
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/21/2019
-ms.locfileid: "30722770"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "31000055"
 ---
 # <a name="non-delivery-report"></a>未送达报告
 
@@ -24,7 +24,7 @@ ms.locfileid: "30722770"
 
 **未送达报告**将在未送达报告 (也称为 "ndr" 或 "退回邮件") 中显示最遇到的错误代码, 以供组织中的用户查看。 此报告旨在显示 ndr 的详细信息, 因此您可以解决问题。
 
-![Office 365 Security & 合规中心的邮件流仪表板中的未送达报告](media/non-delivery-report-selected.png)
+![Security & 合规性中心的邮件流仪表板中的未送达报告](media/non-delivery-report-selected.png)
 
 可以通过单击 "**显示数据**" 来显示所有 NDR 代码或特定代码的信息。 您还可以单击 "**查看详细信息表**" 以查看更详细的视图, 如下图所示:
 

@@ -15,12 +15,12 @@ ms.assetid: e100fe7c-f2a1-4b7d-9e08-622330b83653
 ms.collection:
 - M365-security-compliance
 description: Office 365 高级威胁防护包括安全附件、安全链接、高级反钓鱼工具、报告工具和威胁智能功能。
-ms.openlocfilehash: 442c827f9844184fc6f03f6e253a0f492d12dd62
-ms.sourcegitcommit: 787a0fef671e5dc6f5e805b580321b2edbfad8e9
+ms.openlocfilehash: 402110fa7b835cd86ffbcf14439304d364cf03dd
+ms.sourcegitcommit: e7a776a04ef6ed5e287a33cfdc36aa2d72862b55
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 03/29/2019
-ms.locfileid: "30989617"
+ms.locfileid: "31001175"
 ---
 # <a name="office-365-advanced-threat-protection"></a>Office 365 高级威胁防护
 
@@ -89,9 +89,9 @@ AIR 包括一组可自动启动的安全行动手册, 例如触发警报的时�
 
 有关详细信息，请参阅：
 
-- [Office 365 安全 & 合规中心中的权限](permissions-in-the-security-and-compliance-center.md) 
+- [安全与合规中心内的权限](permissions-in-the-security-and-compliance-center.md) 
 
-- [授予用户对 Office 365 Security & 合规中心的访问权限](grant-access-to-the-security-and-compliance-center.md)
+- [向用户授予对安全与合规中心的访问权限](grant-access-to-the-security-and-compliance-center.md)
 
 ## <a name="get-office-365-atp"></a>获取 Office 365 ATP
 

@@ -15,12 +15,12 @@ ms.collection:
 ms.custom: Ent_Solutions
 ms.assetid: ''
 description: 使用本主题可了解有关在 Office 365 中配置特权访问管理的详细信息
-ms.openlocfilehash: 3d186998006dd3cc59877b1571f50314af5bbce8
-ms.sourcegitcommit: 5eb664b6ecef94aef4018a75684ee4ae66c486bb
+ms.openlocfilehash: 9d0f5955eb2fd67d245bad3e7a9b1b89769bd947
+ms.sourcegitcommit: e7a776a04ef6ed5e287a33cfdc36aa2d72862b55
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/08/2019
-ms.locfileid: "30492821"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "31001145"
 ---
 # <a name="configuring-privileged-access-management-in-office-365"></a>在 Office 365 中配置特权访问管理
 
@@ -58,13 +58,13 @@ ms.locfileid: "30492821"
 
 ## <a name="step-1---create-an-approvers-group"></a>步骤 1-创建审批者的组
 
-1. 使用组织中的管理员帐户的凭据登录[Microsoft 365 管理中心](https://portal.office.com)。
+1. 使用组织中的管理员帐户的凭据登录[Microsoft 365 管理中心](https://admin.microsoft.com)。
 
 2. 在管理中心中, 转到 "**组** > " "**添加组**"。
 
 3. 选择 "**已启用邮件的安全组**" 组类型, 然后填写新组的**名称**、**组电子邮件地址**和**说明**字段。
 
-4. 保存组。 可能需要几分钟的时间才能完全配置组并将其显示在 Office 365 管理中心中。
+4. 保存组。 可能需要几分钟的时间才能完全配置组并将其显示在 Microsoft 365 管理中心中。
 
 5. 选择新的审批者组, 然后选择 "**编辑**" 将用户添加到组中。
 
@@ -76,7 +76,7 @@ ms.locfileid: "30492821"
 
 ### <a name="using-the-microsoft-365-admin-center"></a>使用 Microsoft 365 管理中心
 
-1. 使用组织中的管理员帐户的凭据登录[Microsoft 365 管理中心](https://portal.office.com)。
+1. 使用组织中的管理员帐户的凭据登录[Microsoft 365 管理中心](https://admin.microsoft.com)。
 
 2. 在管理中心中, 转到 "**设置" > Security & 隐私** > 权限**访问**。
 
@@ -108,7 +108,7 @@ Enable-ElevatedAccessControl -AdminGroup 'pamapprovers@fabrikam.onmicrosoft.com'
 
 ### <a name="using-the-microsoft-365-admin-center"></a>使用 Microsoft 365 管理中心
 
-1. 使用组织中的管理员帐户的凭据登录[Microsoft 365 管理中心](https://portal.office.com)。
+1. 使用组织中的管理员帐户的凭据登录[Microsoft 365 管理中心](https://admin.microsoft.com)。
 
 2. 在管理中心中, 转到 "**设置** > **安全 & 隐私** > 权限**访问**"。
 
@@ -152,7 +152,7 @@ New-ElevatedAccessApprovalPolicy -Task 'Exchange\New-MoveRequest' -ApprovalType 
 
 #### <a name="using-the-microsoft-365-admin-center"></a>使用 Microsoft 365 管理中心
 
-1. 使用您的凭据登录到[Microsoft 365 管理中心](https://portal.office.com)。
+1. 使用您的凭据登录到[Microsoft 365 管理中心](https://admin.microsoft.com)。
 
 2. 在管理中心中, 转到 "**设置** > **安全 & 隐私** > 权限**访问**"。
 
@@ -187,7 +187,7 @@ New-ElevatedAccessRequest -Task 'Exchange\New-MoveRequest' -Reason 'Attempting t
 
 #### <a name="using-the-microsoft-365-admin-center"></a>使用 Microsoft 365 管理中心
 
-1. 使用您的凭据登录到[Microsoft 365 管理中心](https://portal.office.com)。
+1. 使用您的凭据登录到[Microsoft 365 管理中心](https://admin.microsoft.com)。
 
 2. 在管理中心中, 转到 "**设置** > **安全 & 隐私** > 权限**访问**"。
 
@@ -211,7 +211,7 @@ Get-ElevatedAccessRequest -Identity 28560ed0-419d-4cc3-8f5b-603911cbd450 | selec
 
 #### <a name="using-the-microsoft-365-admin-center"></a>使用 Microsoft 365 管理中心
 
-1. 使用您的凭据登录到[Microsoft 365 管理中心](https://portal.office.com)。
+1. 使用您的凭据登录到[Microsoft 365 管理中心](https://admin.microsoft.com)。
 
 2. 在管理中心中, 转到 "**设置** > **安全 & 隐私** > 权限**访问**"。
 
@@ -248,7 +248,7 @@ Deny-ElevatedAccessRequest -RequestId a4bc1bdf-00a1-42b4-be65-b6c63d6be279 -Comm
 
 ### <a name="using-the-microsoft-365-admin-center"></a>使用 Microsoft 365 管理中心
 
-1. 使用组织中的管理员帐户的凭据登录[Microsoft 365 管理中心](https://portal.office.com)。
+1. 使用组织中的管理员帐户的凭据登录[Microsoft 365 管理中心](https://admin.microsoft.com)。
 
 2. 在管理中心中, 转到 "**设置** > **安全 & 隐私** > 权限**访问**"。
 
@@ -274,7 +274,7 @@ Remove-ElevatedAccessApprovalPolicy -Identity <identity GUID of the policy you w
 
 ### <a name="using-the-microsoft-365-admin-center"></a>使用 Microsoft 365 管理中心
 
-1. 使用组织中的管理员帐户的凭据登录[Microsoft 365 管理中心](https://portal.office.com)。
+1. 使用组织中的管理员帐户的凭据登录[Microsoft 365 管理中心](https://admin.microsoft.com)。
 
 2. 在管理中心中, 转到 "**设置** > **安全 & 隐私** > 权限**访问**"。
 

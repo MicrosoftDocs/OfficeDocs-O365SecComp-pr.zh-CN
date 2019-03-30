@@ -16,35 +16,35 @@ search.appverid:
 - MET150
 ms.assetid: e2a789f2-9962-4960-9fd4-a00aa063559e
 description: '对于管理员: 了解如何在 Office 365 中启用自动扩展存档, 从而为用户提供对其 Exchange Online 邮箱的无限制存储。 您可以为整个组织或仅为特定用户启用自动扩展存档。'
-ms.openlocfilehash: 634807a687a8ccbb764a54300f338263f876b604
-ms.sourcegitcommit: b688d67935edb036658bb5aa1671328498d5ddd3
+ms.openlocfilehash: e41ebc0605b7e6ce2178791de27421a82e2b6cf6
+ms.sourcegitcommit: e7a776a04ef6ed5e287a33cfdc36aa2d72862b55
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "30670617"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "31000845"
 ---
 # <a name="enable-unlimited-archiving-in-office-365---admin-help"></a>在 Office 365 中启用无限制存档-管理员帮助
 
 您可以使用 Office 365 中的 Exchange Online 自动扩展存档功能为存档邮箱启用无限存储空间。 启用自动扩展存档后, 会在用户的存档邮箱接近存储限制时自动向其添加额外的存储空间。 结果是邮箱存储容量无限制。 您可以为组织中的所有人或仅为特定用户启用自动扩展存档。 有关自动扩展存档的详细信息, 请参阅[Office 365 中的无限制存档概述](unlimited-archiving.md)。
 
-## <a name="before-you-begin"></a>准备工作
+## <a name="before-you-begin"></a>开始之前
 
 - 您必须是 Office 365 组织中的全局管理员或 Exchange Online 组织中 "组织管理" 角色组的成员, 才能为您的整个组织或特定用户启用自动扩展存档。 或者, 您必须是分配有 "邮件收件人" 角色的角色组的成员, 才能为特定用户启用自动扩展存档。
     
-- 必须先启用用户的存档邮箱, 然后才能启用自动扩展存档。 必须为用户分配 Exchange Online 计划2许可证, 才能启用存档邮箱。 如果向某个用户分配了 exchange Online 计划1许可证, 则必须为他们分配一个单独的 Exchange online 存档许可证, 以启用其存档邮箱。 请参阅[在 Office 365 安全&amp;合规中心中启用存档邮箱](enable-archive-mailboxes.md)。
+- 必须先启用用户的存档邮箱, 然后才能启用自动扩展存档。 必须为用户分配 Exchange Online 计划2许可证, 才能启用存档邮箱。 如果向某个用户分配了 exchange Online 计划1许可证, 则必须为他们分配一个单独的 Exchange online 存档许可证, 以启用其存档邮箱。 请参阅[在 Security & 合规性中心中启用存档邮箱](enable-archive-mailboxes.md)。
     
 - 您还可以使用 PowerShell 启用存档邮箱。 有关可用于为组织中的所有用户启用存档邮箱的 PowerShell 命令示例, 请参阅[详细信息](#more-information)部分。 
     
 - 自动扩展存档还支持共享邮箱。 若要为共享邮箱启用存档, 需要具有 exchange online 存档许可证的 exchange online 计划2许可证或 exchange online 计划1许可证。
     
-- 您不能使用 Exchange 管理中心或安全&amp;合规中心来启用自动扩展存档。 您必须使用 Exchange Online PowerShell。 若要使用远程 PowerShell 连接到您的 Exchange online 组织, 请参阅[连接到 exchange online PowerShell](https://go.microsoft.com/fwlink/p/?linkid=396554)。
+- 您不能使用 Exchange 管理中心或 Security & 合规中心来启用自动扩展存档。 您必须使用 Exchange Online PowerShell。 若要使用远程 PowerShell 连接到您的 Exchange online 组织, 请参阅[连接到 exchange online PowerShell](https://go.microsoft.com/fwlink/p/?linkid=396554)。
     
   
 ## <a name="enable-auto-expanding-archiving-for-your-entire-organization"></a>为您的整个组织启用自动扩展存档
 
 您可以为您的整个组织启用自动扩展存档。 打开该功能后, 将为现有用户邮箱和创建的新用户邮箱启用自动扩展存档。 创建新的用户邮箱时, 请务必启用用户的主存档邮箱, 以便自动扩展的存档功能将适用于新用户邮箱。
   
-1. [使用远程 PowerShell 连接到 Exchange Online](https://go.microsoft.com/fwlink/p/?linkid=396554)
+1. [连接到 Exchange Online PowerShell](https://go.microsoft.com/fwlink/p/?linkid=396554)
     
 2. 在 Exchange Online PowerShell 中运行以下命令, 为整个组织启用自动扩展存档。
 
@@ -64,7 +64,7 @@ ms.locfileid: "30670617"
     
 添加此额外空间是为了防止在设置自动扩展存档之前可能发生的任何存储问题。 请注意, 为整个组织启用自动扩展存档时*不会*添加额外的存储空间, 如上一节中所述。 
   
-1. [使用远程 PowerShell 连接到 Exchange Online](https://go.microsoft.com/fwlink/p/?linkid=396554)
+1. [连接到 Exchange Online PowerShell](https://go.microsoft.com/fwlink/p/?linkid=396554)
     
 2. 在 Exchange Online PowerShell 中运行以下命令, 为特定用户启用自动扩展存档。 如前所述, 必须先启用用户的存档邮箱 (主存档), 然后才能为该用户启用自动扩展存档。
     

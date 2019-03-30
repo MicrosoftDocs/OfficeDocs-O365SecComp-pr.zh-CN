@@ -9,12 +9,12 @@ ms.topic: article
 ms.service: o365-seccomp
 localization_priority: Normal
 description: 了解新的 Microsoft 365 合规性中心, 包括它包含的内容、如何获取它以及后续步骤。
-ms.openlocfilehash: 00c9325b35c2dca5b474964e47683e94a77c97fe
-ms.sourcegitcommit: fb50bf2f2c9d780c911f245a2f78c6bb5e357f67
+ms.openlocfilehash: 76ddc27ad616f2cbf4ec3a97892e3baea92469ec
+ms.sourcegitcommit: e7a776a04ef6ed5e287a33cfdc36aa2d72862b55
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/28/2019
-ms.locfileid: "30950439"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "31001035"
 ---
 # <a name="welcome-to-your-all-new-microsoft-365-compliance-center"></a>欢迎使用全新的 Microsoft 365 合规性中心
 
@@ -83,7 +83,7 @@ ms.locfileid: "30950439"
 
 ### <a name="why-am-i-taken-to-the-office-365-security--compliance-center-to-perform-some-tasks-such-as-defining-certain-policies"></a>为什么我转到 Office 365 安全 & 合规中心来执行某些任务, 如定义某些策略？
 
-我们仍在开发 Microsoft 365 合规性中心, 我们将在将来的几个月中添加更多功能和解决方案。 同时, 还必须在 Office 365 Security & 合规中心中执行一些任务。 在这些情况下, 你将自动转到你可以在其中执行任务的位置, 例如创建或编辑监督策略。
+我们仍在开发 Microsoft 365 合规性中心, 我们将在将来的几个月中添加更多功能和解决方案。 同时, 还必须在安全 & 合规中心中执行一些任务。 在这些情况下, 你将自动转到你可以在其中执行任务的位置, 例如创建或编辑监督策略。
 
 ### <a name="why-dont-i-see-the-new-microsoft-365-compliance-center-yet"></a>为什么我还看不到新的 Microsoft 365 合规中心？
 

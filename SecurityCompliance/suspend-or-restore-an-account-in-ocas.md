@@ -13,12 +13,12 @@ search.appverid:
 - MOE150
 ms.assetid: 5f02d20f-b9aa-4b2f-ad2d-506a4a3c4540
 description: '使用 Office 365 云应用安全, 可以执行的调控操作是挂起或取消暂停用户帐户。 '
-ms.openlocfilehash: 10da1385f850fadf077b4e3f9e3a00e9e4629fdd
-ms.sourcegitcommit: 1658be51e2c21ed23bc4467a98af74300a45b975
+ms.openlocfilehash: d162be9d4e5382c6c03c63ae1b30043edbf0295b
+ms.sourcegitcommit: e7a776a04ef6ed5e287a33cfdc36aa2d72862b55
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/26/2019
-ms.locfileid: "30862444"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30998865"
 ---
 # <a name="suspend-or-restore-a-user-account-in-office-365-cloud-app-security"></a>暂停或还原 Office 365 云应用安全中的用户帐户
 
@@ -29,7 +29,7 @@ ms.locfileid: "30862444"
 假设您收到一条警报, 指出您的组织的 Office 365 的用户帐户中有一个已损坏。 或者, 假设您已收到指示用户帐户出错的警报。 使用 Office 365 云应用安全, 你可以在调查你收到的通知后挂起用户帐户, 并在以后还原该帐户。
   
 > [!NOTE]
-> office 365 企业版 E5 中提供了 office 365 云应用安全性。 如果您的组织使用的是其他 office 365 企业版订阅, 则可以将 Office 365 云应用安全作为附加项购买。 (作为全局管理员, 在 Office 365 管理中心中, 选择 "**付费** \> **添加订阅**"。)有关详细信息, 请参阅[office 365 Platform 服务说明: office 365 &amp;安全合规性中心](https://technet.microsoft.com/en-us/library/dn933793.aspx)和[购买或编辑 Office 365 for business 的加载](https://support.office.com/article/4e7b57d6-b93b-457d-aecd-0ea58bff07a6)项。 
+> office 365 企业版 E5 中提供了 office 365 云应用安全性。 如果您的组织使用的是其他 office 365 企业版订阅, 则可以将 Office 365 云应用安全作为附加项购买。 (作为全局管理员, 在 Microsoft 365 管理中心中, 选择 "**付费** \> **添加订阅**"。)有关详细信息, 请参阅[office 365 Platform 服务说明: office 365 &amp;安全合规性中心](https://technet.microsoft.com/en-us/library/dn933793.aspx)和[购买或编辑 Office 365 for business 的加载](https://support.office.com/article/4e7b57d6-b93b-457d-aecd-0ea58bff07a6)项。 
   
 ## <a name="to-suspend-a-user-account-in-office-365-cloud-app-security"></a>挂起 Office 365 Cloud App Security 中的用户帐户
 

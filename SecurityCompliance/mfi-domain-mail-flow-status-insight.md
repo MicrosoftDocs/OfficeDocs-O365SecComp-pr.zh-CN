@@ -8,14 +8,14 @@ ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: ''
-description: 管理员可以了解 Office 365 Security & 合规性中心的邮件流仪表板中的顶层域邮件流状态洞察力。
+description: 管理员可以了解安全 & 合规性中心的邮件流仪表板中的顶层域邮件流状态洞察力。
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 04aa986982465a4c66fbf99f517fb34622d65e19
-ms.sourcegitcommit: fec1010e405f14e792d650aee0312b78fced3343
+ms.openlocfilehash: baa69c3373623d4742d6d957a5022012fb60f7e7
+ms.sourcegitcommit: e7a776a04ef6ed5e287a33cfdc36aa2d72862b55
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/21/2019
-ms.locfileid: "30722774"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "31000665"
 ---
 # <a name="top-domain-mail-flow-status-insight"></a>顶级域邮件流状态洞察力
 
@@ -24,7 +24,7 @@ ms.locfileid: "30722774"
 
 **顶级域邮件流状态**洞察力为您的组织的域提供了邮件流的当前状态。 此洞察力可帮助您识别和解决遇到***邮件流影响***问题的域 (例如, 无法接收外部电子邮件), 尤其是域过期或包含不正确的 MX 记录的域。
 
-![Office 365 Security & 合规中心的邮件流仪表板中的顶级域流状态洞察力](media/domain-mail-flow-status-selected.png)
+![Security & 合规性中心的邮件流仪表板中的顶级域流状态洞察力](media/domain-mail-flow-status-selected.png)
 
 当您单击真知灼见中的 "**查看详细信息**" 时, 将显示一个弹出项, 显示每个域的状态的详细信息。
 

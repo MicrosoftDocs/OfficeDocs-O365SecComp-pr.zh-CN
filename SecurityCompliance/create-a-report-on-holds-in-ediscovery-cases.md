@@ -11,31 +11,31 @@ localization_priority: Normal
 ms.collection: M365-security-compliance
 search.appverid: MOE150
 ms.assetid: cca08d26-6fbf-4b2c-b102-b226e4cd7381
-description: 使用本文中的脚本生成一个报告, 该报告包含有关与 Office 365 安全&amp;合规中心中的电子数据展示事例相关联的所有保留的信息。
-ms.openlocfilehash: 95a960e8f76c672185e10d5b6be2a7ff2538a34b
-ms.sourcegitcommit: baf23be44f1ed5abbf84f140b5ffa64fce605478
+description: 使用本文中的脚本生成一个报告, 该报告包含有关与 Office 365 或 Microsoft 365 中的符合性中心中的电子数据展示事例相关联的所有保留的信息。
+ms.openlocfilehash: db5a462087dd20ed71f87efe2fd83b821654f1b9
+ms.sourcegitcommit: e7a776a04ef6ed5e287a33cfdc36aa2d72862b55
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "30296995"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "31000875"
 ---
 # <a name="create-a-report-on-holds-in-ediscovery-cases-in-office-365"></a>在 Office 365 中的电子数据展示事例中创建保留报告
   
-本文中的脚本允许电子数据展示管理员和电子数据展示管理器生成一个报告, 其中包含有关与 Office 365 安全&amp;合规中心中的电子数据展示事例相关联的所有保留的信息。报告包含与保留相关联的事例的名称、放置在保留中的内容位置以及保留是否基于查询的信息。如果存在不包含任何保留的案例, 该脚本将创建另一个报告, 其中包含不含 "保留" 的案例列表。
+本文中的脚本允许电子数据展示管理员和电子数据展示管理器生成一个报告, 其中包含有关与 Office 365 或 Microsoft 365 中的合规性中心中的电子数据展示事例相关联的所有保留项的信息。 报告包含与保留相关联的事例的名称、放置在保留中的内容位置以及保留是否基于查询的信息。 如果存在不包含任何保留的案例, 该脚本将创建另一个报告, 其中包含不含 "保留" 的案例列表。
 
 有关报告中包含的信息的详细说明, 请参阅[详细信息](#more-information)部分。 
   
-## <a name="before-you-begin"></a>准备工作
+## <a name="before-you-begin"></a>开始之前
 
-- 若要生成组织中所有电子数据展示事例的报告, 您必须是组织中的电子数据展示管理员。如果您是电子数据展示管理器, 则报告将仅包含有关您可以访问的事例的信息。有关电子数据展示权限的详细信息, 请参阅[在 Office 365 安全&amp;合规中心中分配电子数据展示权限](assign-ediscovery-permissions.md)。
+- 若要生成组织中所有电子数据展示事例的报告, 您必须是组织中的电子数据展示管理员。 如果您是电子数据展示管理器, 则报告将仅包含有关您可以访问的事例的信息。 有关电子数据展示权限的详细信息, 请参阅[分配电子数据展示权限](assign-ediscovery-permissions.md)。
     
-- 本文中的脚本具有最少的错误处理。主要目的是快速创建有关与组织中的电子数据展示事例相关联的保留报告。
+- 本文中的脚本具有最少的错误处理。 主要目的是快速创建有关与组织中的电子数据展示事例相关联的保留报告。
     
 - 本主题中的示例脚本不受任何 Microsoft 标准支持计划或服务支持。示例脚本按原样提供，不提供任何种类的担保。Microsoft 进一步声明，不提供任何默示担保，包括但不限于适销性或特定用途适用性的默示担保。使用或运行示例脚本和文档所产生的任何风险均由你自己承担。对于因使用或无法使用示例脚本或文档而产生的任何损失（包括但不限于商业利润损失、业务中断、业务信息丢失或其他金钱损失），Microsoft、脚本作者或参与创建、生成或交付脚本的任何人都不承担任何责任，即使 Microsoft 已被告知存在这种损失的可能性，也不例外。
     
-## <a name="step-1-connect-to-the-security-amp-compliance-center-using-remote-powershell"></a>步骤 1: 使用远程 PowerShell 连接&amp;到安全合规中心
+## <a name="step-1-connect-to-the-security--compliance-center-powershell"></a>步骤 1: 连接到安全 & 合规中心 PowerShell
 
-第一步是将 Windows PowerShell 连接到组织的&amp;安全合规中心。
+第一步是连接到您的组织的安全 & 合规中心。
   
 1. 使用文件名后缀. ps1; 将以下文本保存到 Windows PowerShell 脚本文件中。例如, `ConnectSCC.ps1`。 
     
@@ -44,7 +44,7 @@ ms.locfileid: "30296995"
       $UserCredential = Get-Credential 
       $Session = New-PSSession -ConfigurationName Microsoft.Exchange -ConnectionUri https://ps.compliance.protection.outlook.com/powershell-liveid -Credential $UserCredential -Authentication Basic -AllowRedirection 
       Import-PSSession $Session -AllowClobber -DisableNameChecking 
-      $Host.UI.RawUI.WindowTitle = $UserCredential.UserName + " (Office 365 Security &amp; Compliance Center)" 
+      $Host.UI.RawUI.WindowTitle = $UserCredential.UserName + " (Security & Compliance Center)" 
     ```
 
 2. 在本地计算机上, 打开 Windows PowerShell 并转到保存该脚本的文件夹。 
@@ -59,7 +59,7 @@ ms.locfileid: "30296995"
   
 ## <a name="step-2-run-the-script-to-report-on-holds-associated-with-ediscovery-cases"></a>步骤 2: 运行脚本以报告与电子数据展示事例相关联的保留
 
-在使用远程 PowerShell 连接到安全&amp;合规中心之后, 下一步是创建并运行脚本, 该脚本收集组织中的电子数据展示事例的相关信息。 
+在连接到安全 & 合规中心 PowerShell 之后, 下一步是创建并运行脚本, 以收集有关您组织中的电子数据展示事例的信息。 
   
 1. 使用文件名后缀. ps1; 将以下文本保存到 Windows PowerShell 脚本文件中。例如, CaseHoldsReport。 
     
@@ -67,7 +67,7 @@ ms.locfileid: "30296995"
 #script begin
 " " 
 write-host "***********************************************"
-write-host "   Office 365 Security & Compliance Center   " -foregroundColor yellow -backgroundcolor darkgreen
+write-host "   Security & Compliance Center   " -foregroundColor yellow -backgroundcolor darkgreen
 write-host "        eDiscovery cases - Holds report         " -foregroundColor yellow -backgroundcolor darkgreen 
 write-host "***********************************************"
 " " 
@@ -164,11 +164,11 @@ Write-host "Script complete! Report files saved to this folder: '$Path'"
 4. 键入要将报告保存到的文件夹的完整路径名称, 然后按**enter**。
     
     > [!TIP]
-    > 若要将报告保存在脚本所在的同一文件夹中, 请在系统提示输入目标文件夹时键入句点 (".")。若要将报告保存在脚本所在的文件夹的子文件夹中, 只需键入子文件夹的名称即可。 
+    > 若要将报告保存在脚本所在的同一文件夹中, 请在系统提示输入目标文件夹时键入句点 (".")。 若要将报告保存在脚本所在的文件夹的子文件夹中, 只需键入子文件夹的名称即可。 
   
-    脚本开始收集组织中所有电子数据展示事例的相关信息。在运行脚本时不访问报告文件。脚本完成后, 将在 Windows PowerShell 会话中显示一条确认消息。显示此消息后, 您可以访问您在步骤4中指定的文件夹中的报告。报告的文件名为`CaseHoldsReport<DateTimeStamp>.csv`。
+    脚本开始收集组织中所有电子数据展示事例的相关信息。 在运行脚本时不访问报告文件。 脚本完成后, 将在 Windows PowerShell 会话中显示一条确认消息。 显示此消息后, 您可以访问您在步骤4中指定的文件夹中的报告。 报告的文件名为`CaseHoldsReport<DateTimeStamp>.csv`。
 
-    此外, 该脚本还将创建一个报告, 其中包含不包含任何保留的案例列表。此报告的文件名为`CaseswithNoHolds<DateTimeStamp>.csv`。
+    此外, 该脚本还将创建一个报告, 其中包含不包含任何保留的案例列表。 此报告的文件名为`CaseswithNoHolds<DateTimeStamp>.csv`。
     
     下面的示例展示了如何运行 CaseHoldsReport 脚本。 
     
@@ -176,7 +176,7 @@ Write-host "Script complete! Report files saved to this folder: '$Path'"
   
 ## <a name="more-information"></a>更多信息
 
-事例包含运行本文中的脚本时创建的报告, 其中包含有关每个保留的以下信息。如前面所述, 您必须是电子数据展示管理员才能返回组织中所有保留的信息。有关案例保留的详细信息, 请参阅[Office 365 安全&amp;合规中心中的电子数据展示事例](ediscovery-cases.md)。
+事例包含运行本文中的脚本时创建的报告, 其中包含有关每个保留的以下信息。 如前面所述, 您必须是电子数据展示管理员才能返回组织中所有保留的信息。 有关案例保留的详细信息, 请参阅[电子数据展示事例](ediscovery-cases.md)。
   
   - 保留的名称和与该保留相关联的电子数据展示事例的名称。
     
@@ -184,7 +184,7 @@ Write-host "Script complete! Report files saved to this folder: '$Path'"
     
   - 保留是否已启用或已禁用。
     
-  - 与保留相关联的电子数据展示事例的成员。事例成员可以查看或管理事例, 具体取决于他们已分配的电子数据展示权限。
+  - 与保留相关联的电子数据展示事例的成员。 事例成员可以查看或管理事例, 具体取决于他们已分配的电子数据展示权限。
     
   - 案例的创建时间和日期。
     

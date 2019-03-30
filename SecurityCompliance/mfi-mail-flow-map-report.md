@@ -8,14 +8,14 @@ ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: ''
-description: 管理员可以了解 Office 365 Security & 合规中心的邮件流仪表板中的邮件流映射报告。
+description: 管理员可以了解安全 & 合规性中心的邮件流仪表板中的邮件流映射报告。
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 14a98b57c277238d4f603b56386bf51ac310f7ef
-ms.sourcegitcommit: fec1010e405f14e792d650aee0312b78fced3343
+ms.openlocfilehash: bd05ff5cb78adb9dd89dbe3f69c2c3a78d2b1df9
+ms.sourcegitcommit: e7a776a04ef6ed5e287a33cfdc36aa2d72862b55
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/21/2019
-ms.locfileid: "30722768"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "31001135"
 ---
 # <a name="mail-flow-map-report"></a>邮件流映射报告
 
@@ -24,7 +24,7 @@ ms.locfileid: "30722768"
 
 此报告提供有关邮件通过 Office 365 组织的流的见解。 您可以使用此信息来了解模式、确定异常, 并在出现问题时解决问题。
 
-!["Office 365 Security & 合规中心" 的 "邮件流" 仪表板中的邮件流映射报告](media/mail-flow-map-selected.png)
+![Security & 合规性中心的邮件流仪表板中的邮件流映射报告](media/mail-flow-map-selected.png)
 
 ## <a name="mail-flow-map-widget"></a>邮件流映射小部件
 

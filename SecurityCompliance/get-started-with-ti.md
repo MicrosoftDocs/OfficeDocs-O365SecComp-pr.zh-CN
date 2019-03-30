@@ -15,12 +15,12 @@ ms.assetid: 38e9b67f-d188-490f-bc91-a1ae4b270441
 ms.collection:
 - M365-security-compliance
 description: 了解 Office 365 威胁调查和响应, 以及如何开始。
-ms.openlocfilehash: a04b39ecb11c33baa647bb9716af9ff12aed755e
-ms.sourcegitcommit: 1658be51e2c21ed23bc4467a98af74300a45b975
+ms.openlocfilehash: fd038f706ccb3df68b98f02593e43091484ec0c6
+ms.sourcegitcommit: e7a776a04ef6ed5e287a33cfdc36aa2d72862b55
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/26/2019
-ms.locfileid: "30862516"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30998875"
 ---
 # <a name="get-started-with-threat-investigation-and-response-office-365-advanced-threat-protection-plan-2"></a>开始使用威胁调查和响应 (Office 365 高级威胁防护计划 2)
 
@@ -78,13 +78,13 @@ office 365 高级威胁防护计划2和企业版 E5 中包含 office 威胁 Inve
 > [!TIP]
 > 如果你的组织具有不包含这些威胁调查和响应功能的 Office 365 订阅, 你可以将其作为加载项购买, 并附带 Office 365 高级威胁防护。 有关计划选项的详细信息, 请参阅[office 365 Platform 服务说明: office 365 &amp;安全合规性中心](https://docs.microsoft.com/office365/servicedescriptions/office-365-platform-service-description/office-365-securitycompliance-center)和[购买或编辑 Office 365 for business 的加载](https://docs.microsoft.com/office365/admin/subscriptions-and-billing/buy-or-edit-an-add-on)项。
   
-1. 作为 office 365 全局管理员, 请转到[https://portal.office.com](https://portal.office.com)并使用 Office 365 的工作或学校帐户登录并登录。 
+1. 作为 office 365 全局管理员, 请转到[https://admin.microsoft.com](https://admin.microsoft.com)并使用 Office 365 的工作或学校帐户登录并登录。 
     
 2. 选择 "**管理员** \> **帐单**" 以查看您的当前订阅包括的内容。 
     - 如果您看到**office 365 企业版 E5**, 则您的组织具有 Office 365 高级威胁防护计划 2 (其中包括威胁调查和响应功能)。 
     - 如果你看到不同的订阅 (如**Office 365 企业版 E3**或**office 365 企业版 E1**), 请考虑添加 office 365 高级威胁防护计划2。 (为此, 请选择 " **+ 添加订阅**"。)
     
-3. 在 Office 365 管理中心中, 选择 "**用户** \> **活动用户**"。
+3. 在 Microsoft 365 管理中心, 选择 "**用户** \> **活动用户**"。
     
 5. 向所有活动用户分配 Office 365 高级威胁防护计划2许可证。 (只有拥有此项许可证的用户才会显示在报告中, 如 Explorer。)
     

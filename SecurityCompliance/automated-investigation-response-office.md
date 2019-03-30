@@ -13,12 +13,12 @@ search.appverid:
 - MOE150
 ms.collection: M365-security-compliance
 description: 了解 Office 365 高级威胁防护中的自动化调查和响应功能。
-ms.openlocfilehash: 9c01121ed6389f4a9014fe1ee1298b0e840f06ab
-ms.sourcegitcommit: 1706b618c9ec63ed05aebb5f84a77b5bfb50734a
+ms.openlocfilehash: 223a28a7f63f101dd5644e433d72a3ddf6e5dc23
+ms.sourcegitcommit: e7a776a04ef6ed5e287a33cfdc36aa2d72862b55
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/25/2019
-ms.locfileid: "30792506"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "31000435"
 ---
 # <a name="automated-investigation-and-response-air-with-office-365"></a>使用 Office 365 的自动化调查和响应 (空中)
 
@@ -39,9 +39,9 @@ ms.locfileid: "30792506"
 
 ***注意**: 已在安全 & 合规性中心内为这些警报分配了 "信息性" 严重性, 并关闭了电子邮件通知。 可以通过警报策略配置启用这些策略。
 
-若要查看警报, 请在 "Office 365 Security & 合规中心" 中, 选择 "**通知** > " "**查看警报**"。 选择一个警报以查看其详细信息, 然后在那里使用 "**查看调查**" 链接转到相应的[调查](#investigation-graph)。 请注意, 默认情况下通知视图中隐藏了信息警报。 若要查看它们, 您需要更改警报筛选以包含信息警报。
+若要查看警报, 请在 Security & 合规性中心中, 选择 "**通知** > " "**查看警报**"。 选择一个警报以查看其详细信息, 然后在那里使用 "**查看调查**" 链接转到相应的[调查](#investigation-graph)。 请注意, 默认情况下通知视图中隐藏了信息警报。 若要查看它们, 您需要更改警报筛选以包含信息警报。
 
-如果您的组织通过警报管理系统、服务管理系统或安全信息和事件管理 (SIEM) 系统管理安全警报, 则可以通过电子邮件通知或通过[电子邮件通知将 Office 365 警报发送到该系统。Office 365 管理活动 API](https://docs.microsoft.com/office/office-365-management-api/office-365-management-activity-api-reference)。 通过电子邮件或 API 的调查通知通知将包含访问 Office 365 Security & 合规中心中的警报的链接, 从而使分配的安全管理员能够快速导航到调查。
+如果您的组织通过警报管理系统、服务管理系统或安全信息和事件管理 (SIEM) 系统管理安全警报, 则可以通过电子邮件通知或通过[电子邮件通知将 Office 365 警报发送到该系统。Office 365 管理活动 API](https://docs.microsoft.com/office/office-365-management-api/office-365-management-activity-api-reference)。 通过电子邮件或 API 的调查通知通知将包含访问 security & 合规性中心中的警报的链接, 从而使分配的安全管理员能够快速导航到调查。
 
 ![链接到调查的警报](media/air-alerts-page-details.png) 
 
@@ -121,7 +121,7 @@ ms.locfileid: "30792506"
 
 ## <a name="get-started"></a>入门
 
-若要访问您的调查, 作为 Office 365 全局管理员、安全管理员或安全读者, 请转到 office 365 安全 & 合规中心 ([https://protection.office.com](https://protection.office.com)) 并登录。 然后执行下列操作之一：
+若要访问您的调查, 作为 Office 365 全局管理员、安全管理员或安全读者, 请转到安全 & 合规中心 ([https://protection.office.com](https://protection.office.com)) 并登录。 然后执行下列操作之一：
 
 - 在左侧导航中, 转到 "**通知** > " "**查看通知**", 打开与调查相关的警报之一, 然后单击 "通知" 弹出窗口底部的 "**查看调查**" 链接。 
 

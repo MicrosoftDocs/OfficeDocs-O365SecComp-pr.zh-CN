@@ -1,9 +1,9 @@
 ---
-title: 转到 Office 365 安全&amp;合规中心
+title: Go to the Office 365 Security &amp; Compliance Center
 ms.author: stephow
 author: stephow-MSFT
 manager: laurawi
-ms.date: 8/18/2017
+ms.date: ''
 ms.audience: Admin
 ms.topic: article
 f1_keywords:
@@ -13,21 +13,17 @@ localization_priority: Normal
 search.appverid:
 - MET150
 ms.assetid: 7e696a40-b86b-4a20-afcc-559218b7b1b8
-description: office 365 安全&amp;合规中心是用于保护 Office 365 中的数据的一站式门户。使用 office 365 安全&amp;合规中心来管理 office 365 中所有组织数据的合规性。
-ms.openlocfilehash: 31cb275b8a961d597db06a6597660c3a07b7e8d7
-ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
+description: Before you can use the Security &amp; Compliance Center, you need the right permissions. 必须为你的工作或学校帐户分配 Office 365 全局管理员角色, 或将其分配给全局管理员的一个&amp;或多个安全合规中心角色组。
+ms.openlocfilehash: a4d6c1a62047728517316199b5ad555d1996a497
+ms.sourcegitcommit: 799a958fcac643f62dfac6fa04020f2f4758635c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30219292"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30997218"
 ---
-# <a name="go-to-the-office-365-security-amp-compliance-center"></a>转到 Office 365 安全&amp;合规中心
+# <a name="go-to-the-office-365-security-amp-compliance-center"></a>Go to the Office 365 Security &amp; Compliance Center
 
-office 365 安全&amp;合规中心是用于保护 Office 365 中的数据的一站式门户。使用 office 365 安全&amp;合规中心来管理 office 365 中所有组织数据的合规性。
-  
-## <a name="go-to-the-office-365-security-amp-compliance-center"></a>转到 Office 365 安全&amp;合规中心
-
-在可以使用安全&amp;合规性中心之前, 你需要正确的权限。必须为你的工作或学校帐户分配 Office 365 全局管理员角色, 或将其分配给全局管理员的一个&amp;或多个安全合规中心角色组:
+Before you can use the Security &amp; Compliance Center, you need the right permissions. 必须为你的工作或学校帐户分配 Office 365 全局管理员角色, 或将其分配给全局管理员的一个&amp;或多个安全合规中心角色组:
   
 - 有关 office 365 全局管理员角色的详细信息, 请参阅[关于 office 365 管理员角色](https://support.office.com/article/da585eea-f576-4f55-a1e0-87090b6aaa9d)。 
     

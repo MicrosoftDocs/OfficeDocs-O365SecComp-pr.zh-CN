@@ -8,14 +8,14 @@ ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: ''
-description: 管理员可以了解 Office 365 Security & 合规中心的邮件流仪表板中的修复发件人域洞察力。
+description: 管理员可以了解安全 & 合规性中心的邮件流仪表板中的修复发件人域洞察力。
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 6d98d2a2660c24a77db58215faa0de1a4a18ea1a
-ms.sourcegitcommit: fec1010e405f14e792d650aee0312b78fced3343
+ms.openlocfilehash: bd62d6d0b42edfd1eedf543d7d8bb68903c7c608
+ms.sourcegitcommit: e7a776a04ef6ed5e287a33cfdc36aa2d72862b55
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/21/2019
-ms.locfileid: "30722771"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "31000305"
 ---
 # <a name="fix-sender-domain-insight"></a>修复发件人域洞察力
 
@@ -38,7 +38,7 @@ office 365 需要从内部本地电子邮件环境发送到 Office 365 的邮件
 
 **Fix sender domain**真知灼见显示从本地环境中不符合条件的电子邮件, 可帮助您识别本地电子邮件环境中可能受到危害的计算机和用户帐户, 并帮助您采取修正操作。
 
-![Office 365 安全 & 合规中心的邮件流仪表板中的修复发件人域洞察力](media/sender-domain-insight-selected.png)
+![Security & 合规性中心的邮件流仪表板中的修复发件人域洞察力](media/sender-domain-insight-selected.png)
 
 当您单击 "**查看详细信息**" 时, 会转到另一个小部件, 其中包含更多详细信息, 如下图中所示:
 

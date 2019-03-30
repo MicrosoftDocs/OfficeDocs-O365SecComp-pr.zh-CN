@@ -8,14 +8,14 @@ ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: ''
-description: 管理员可以在 "Office 365 安全 & 合规中心" 的 "邮件流" 仪表板中了解不接受的域报告。
+description: 管理员可以在安全 & 合规性中心的邮件流仪表板中了解不接受的域报告。
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: f7fc54a4b1d31d724a95c5d8540b95034effbab4
-ms.sourcegitcommit: fec1010e405f14e792d650aee0312b78fced3343
+ms.openlocfilehash: a69a1e59241ea7b6680afe8608534dbf9460c269
+ms.sourcegitcommit: e7a776a04ef6ed5e287a33cfdc36aa2d72862b55
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/21/2019
-ms.locfileid: "30722777"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30998985"
 ---
 # <a name="non-accepted-domain-report"></a>不接受的域报告
 
@@ -26,7 +26,7 @@ ms.locfileid: "30722777"
 
 如果我们有数据来证明这些邮件的目的是恶意的, 则 Office 365 可能会限制这些邮件。 因此, 重要的是要了解所发生的情况并解决问题。
 
-!["Office 365 Security & 合规中心" 的 "邮件流" 仪表板中的 "不接受的域" 报告](media/non-accepted-domain-report-selected.png)
+![Security & 合规性中心的邮件流仪表板中的不可接受的域报告](media/non-accepted-domain-report-selected.png)
 
 当您单击小组件时, 将转到完整报告。 在完整报告中, 您可以单击 "**查看详细信息**" 以查看表中的信息, 如下图所示:
 
