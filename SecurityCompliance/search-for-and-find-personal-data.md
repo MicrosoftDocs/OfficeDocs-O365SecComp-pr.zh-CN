@@ -16,12 +16,12 @@ localization_priority: Priority
 search.appverid:
 - MET150
 description: 了解如何在 Office 365 中搜索和查找个人数据。
-ms.openlocfilehash: 3fa35b168d9a7e89ead437cba33637b478bb34c7
-ms.sourcegitcommit: 15983a08a4ae9c2050344172c7e957830ce3867e
+ms.openlocfilehash: 3c2981116e2abb3518a132084a697618ef3261cc
+ms.sourcegitcommit: 54d58da1777eb83adb82826d1bb1adb94903c8e1
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "30373873"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30955175"
 ---
 # <a name="search-for-and-find-personal-data"></a>搜索和查找个人数据
 
@@ -72,13 +72,12 @@ Microsoft 建议分三个阶段在 Office 365 中查找个人数据。本主题�
 </tbody>
 </table>
 
-即将提供的功能 — 将可在安全与合规中心的新用户界面中创建和修改敏感信息类型。可以动态查看匹配结果，并根据自己的需求微调敏感信息类型。
 
 ## <a name="search-for-sensitive-information-types-using-content-search"></a>使用内容搜索功能搜索敏感信息类型
 
-首先使用 Office 365 所包含的敏感信息类型搜索个人数据。这些类型已列在安全与合规中心的“分类”下。
+通过使用 Office 365 附带的敏感信息类型开始搜索个人数据。 安全中心和合规中心中的“分类”下列出了这些类型。
 
-本主题附带适用于欧盟公民的最新敏感信息类型列表。可以从这些类型入手。时常查看安全与合规中心是否有新的添加项，从而帮助实现 GDPR 符合性。
+本主题列出了适用于欧盟公民的某些敏感信息类型。 请检查安全中心或合规中心，了解是否有可帮助实现 GDPR 合规性的新增内容。
 
 另请参阅下文：[敏感信息类型列表及每种类型可查找的内容](https://support.office.com/zh-CN/article/What-the-sensitive-information-types-look-for-fd505979-76be-4d9f-b459-abef3fc9e86b)。
 

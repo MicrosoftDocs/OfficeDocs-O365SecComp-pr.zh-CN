@@ -16,16 +16,16 @@ localization_priority: Priority
 search.appverid:
 - MET150
 description: 了解如何使用 DLP 策略保护 Office 365 中的个人数据。
-ms.openlocfilehash: c0b78611a81452ecd8cb8993842c26f6012bb736
-ms.sourcegitcommit: 15983a08a4ae9c2050344172c7e957830ce3867e
+ms.openlocfilehash: af4af4fd8a80b1f1ad34919ed1380f4fed7d9461
+ms.sourcegitcommit: 54d58da1777eb83adb82826d1bb1adb94903c8e1
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "30373943"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30955245"
 ---
 # <a name="apply-protection-to-personal-data-in-office-365"></a>向 Office 365 中的个人数据应用保护
 
-对 Office 365 中的个人信息的保护包括使用数据丢失防护功能。借助 Office 365 安全与合规中心中的数据丢失防护 (DLP) 策略，可以识别、监视和自动保护 Office 365 内的敏感信息。
+保护 Office 365 中的个人信息，包括使用数据丢失防护功能。 通过合规中心的数据丢失防护 (DLP) 策略，可在 Office 365 内识别、监视和自动保护敏感信息。
 
 本主题介绍了如何使用 DLP 保护个人数据。本主题还列出了可用于实现 GDPR 符合性的其他保护功能，其中包括在 SharePoint 库中设置权限及使用设备访问策略。
 

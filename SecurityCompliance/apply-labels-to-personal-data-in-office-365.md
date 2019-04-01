@@ -16,12 +16,12 @@ localization_priority: Priority
 search.appverid:
 - MET150
 description: 了解如何使用 Office 标签作为 GDPR 保护计划的一部分。
-ms.openlocfilehash: 4167ace41c5d7534b7e90130c189e3c04e5c5100
-ms.sourcegitcommit: ae7ebae8801a69a825a363443e2676379197de19
+ms.openlocfilehash: 32f94e02dac81abaef46ef5495701e5037ff8c6b
+ms.sourcegitcommit: 54d58da1777eb83adb82826d1bb1adb94903c8e1
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/26/2019
-ms.locfileid: "30800284"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30955195"
 ---
 # <a name="apply-labels-to-personal-data-in-office-365"></a>向 Office 365 中的个人数据应用标签
 
@@ -167,7 +167,7 @@ Cloud App Security 当前不支持保留标签，但你可以通过 Cloud App Se
 
 ## <a name="create-labels-and-auto-apply-label-policies"></a>创建标签和自动应用标签策略
 
-在安全与合规中心中创建标签和策略。
+在安全中心或合规中心中创建标签和策略。
 
 <table>
 <thead>
@@ -179,16 +179,16 @@ Cloud App Security 当前不支持保留标签，但你可以通过 Cloud App Se
 <tbody>
 <tr class="odd">
 <td align="left"><p>向合规性团队成员提供权限。</p></td>
-<td align="left"><p>创建标签的合规性团队成员需要使用安全与合规中心的权限。请转到安全与合规中心中的“权限”，然后修改符合性管理员组的成员。</p>
-<p>请参阅<a href="https://support.office.com/en-ie/article/Give-users-access-to-the-Office-365-Security-Compliance-Center-2cfce2c8-20c5-47f9-afc4-24b059c1bd76">向用户授予对 Office 365 安全与合规中心的访问权限</a>。</p></td>
+<td align="left"><p>将创建标签的合规性团队成员需要使用安全中心和/或合规中心的权限。请转到安全中心或合规中心中的“权限”，然后修改合规性管理员组的成员。</p>
+<p>请参阅<a href="https://support.office.com/en-ie/article/Give-users-access-to-the-Office-365-Security-Compliance-Center-2cfce2c8-20c5-47f9-afc4-24b059c1bd76">为用户授予访问安全中心和/或合规中心的权限</a>。</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>创建保留标签。</p></td>
-<td align="left">转到安全与合规中心的“分类”，选择“保留标签”，然后为你的环境创建标签。</td>
+<td align="left">转到安全中心或合规中心中的“分类”，选择“保留标签”，然后为你的环境创建标签。</td>
 </tr>
 <tr class="odd">
 <td align="left"><p>为标签创建自动应用策略。</p></td>
-<td align="left">转到安全与合规中心中的“分类”，选择“标签策略”，然后为自动应用标签创建策略。请务必按优先级顺序创建这些策略。</td>
+<td align="left">转到安全中心或合规中心中的“分类”，选择“标签策略”，然后为自动应用标签创建策略。请务必按优先级顺序创建这些策略。</td>
 </tr>
 </tbody>
 </table>

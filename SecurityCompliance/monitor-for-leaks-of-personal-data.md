@@ -16,12 +16,12 @@ localization_priority: Priority
 search.appverid:
 - MET150
 description: 了解可用于监视个人数据泄露的三种工具。
-ms.openlocfilehash: 1923aa00f4ababb66ff8c915a8c3d7a99ff1cd04
-ms.sourcegitcommit: 15983a08a4ae9c2050344172c7e957830ce3867e
+ms.openlocfilehash: d9b48589ace06186d5f177d1b90f02f8657637bd
+ms.sourcegitcommit: 54d58da1777eb83adb82826d1bb1adb94903c8e1
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "30373883"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30955205"
 ---
 # <a name="monitor-for-leaks-of-personal-data"></a>监视个人数据泄露
 
@@ -57,7 +57,7 @@ ms.locfileid: "30373883"
 
 此外，当你在测试模式下运行 DLP 策略时，可以使用 DLP 报告对其进行微调。
 
-DLP 报告位于安全与合规中心内。导航至“报告”\>“查看报告”，在“数据丢失防护 (DLP)”下，转到“DLP 策略和规则匹配项”或“DLP 误报和重写”。
+DLP 报告位于安全中心和合规中心中。 导航到“报告”\>“查看报告”。 在“数据丢失防护 (DLP)”下，转到“DLP 策略和规则匹配项”或“DLP 误报和重写”。
 
 有关详细信息，请参阅[查看数据丢失防护报告](https://support.office.com/zh-CN/article/View-the-reports-for-data-loss-prevention-41eb4324-c513-4fa5-91c8-8fbd8aaba83b)。
 
@@ -67,9 +67,9 @@ DLP 报告位于安全与合规中心内。导航至“报告”\>“查看报�
 
 Office 365 审核日志包含来自 Exchange Online、SharePoint Online、OneDrive for Business、Azure Active Directory、Microsoft Teams、Power BI、Sway 和其他 Office 365 服务的事件。
 
-Office 365 安全与合规中心提供两种方法针对 Office 365 审核日志进行监视和报告：
+安全中心和合规中心提供两种方法针对 Office 365 审核日志进行监视和报告：
 
--   设置警报策略、查看警报和监视趋势：使用 Office 365 安全与合规中心中的新警报策略和警报仪表板工具。
+-   设置警报策略、查看警报和监视趋势：使用安全中心或合规中心中的警报策略和警报仪表板工具。
 
 -   直接搜索审核日志：搜索指定日期范围内的所有事件。也可以根据特定条件（如执行操作的用户、操作或目标对象）筛选结果。
 
@@ -81,14 +81,14 @@ Office 365 安全与合规中心提供两种方法针对 Office 365 审核日志
 
 有关警报策略和搜索审核日志的更多信息：
 
--   [Office 365 安全与合规中心的警报策略](https://support.office.com/zh-CN/article/Alert-policies-in-the-Office-365-Security-Compliance-Center-8927B8B9-C5BC-45A8-A9F9-96C732E58264)
+-   [Microsoft 365 安全与合规中心中的警报策略](https://support.office.com/zh-CN/article/Alert-policies-in-the-Office-365-Security-Compliance-Center-8927B8B9-C5BC-45A8-A9F9-96C732E58264)
 
 -   [在 Office 365 中搜索用户和管理员活动的审核日志](https://support.office.com/zh-CN/article/Search-the-audit-log-for-user-and-admin-activity-in-Office-365-57CA5138-0AE0-4D34-BD40-240441EF2FB6)（介绍）
 
 -   [启用或禁用 Office 365 审核日志搜索](https://support.office.com/zh-CN/article/Turn-Office-365-audit-log-search-on-or-off-e893b19a-660c-41f2-9074-d3631c95a014)
 
 -   
-  [在 Office 365 安全与合规中心搜索审核日志](https://support.office.com/en-us/article/Search-the-audit-log-in-the-Office-365-Security-Compliance-Center-0d4d0f35-390b-4518-800e-0c7ec95e946c?ui=en-US&rs=en-US&ad=US)
+  [搜索审核日志](https://support.office.com/en-us/article/Search-the-audit-log-in-the-Office-365-Security-Compliance-Center-0d4d0f35-390b-4518-800e-0c7ec95e946c?ui=en-US&rs=en-US&ad=US)
 
 -   
   [Search-UnifiedAuditLog](https://technet.microsoft.com/en-us/library/mt238501(v=exchg.160).aspx) (cmdlet) 

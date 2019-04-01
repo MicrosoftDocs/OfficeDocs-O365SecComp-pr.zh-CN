@@ -15,12 +15,12 @@ search.appverid:
 - MET150
 ms.assetid: c2112ce8-1c4b-424f-b200-59e161db2d21
 description: 演示 Office 365 中的 GDPR 功能。
-ms.openlocfilehash: c0d46eb8839fe594e00ae40fae3b2eb69dc2adcc
-ms.sourcegitcommit: 15983a08a4ae9c2050344172c7e957830ce3867e
+ms.openlocfilehash: d4d4113f6d78069a150e13c32ab192571671d986
+ms.sourcegitcommit: 54d58da1777eb83adb82826d1bb1adb94903c8e1
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "30373903"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30955275"
 ---
 # <a name="gdpr-discovery-protection-and-reporting-in-the-office-365-devtest-environment"></a>Office 365 开发/测试环境中的 GDPR 发现、保护和报告
 
@@ -175,7 +175,7 @@ ms.locfileid: "30373903"
 
 ## <a name="phase-5-demonstrate-data-protection"></a>第 5 阶段：演示数据保护
 
-对 Office 365 中的个人信息的保护包括使用数据丢失防护 (DLP) 功能。借助 Office 365 安全与合规中心中的 DLP 策略，可以自动保护 Office 365 内的敏感信息。
+保护 Office 365 中的个人信息，包括使用数据丢失防护 (DLP) 功能。  利用 DLP 策略，你可以自动保护 Office 365 中的敏感信息。
 
 有多种方式可以应用保护。引导和提高在你的环境中存储欧盟常驻数据的位置的意识以及允许员工处理该数据的方式，这表示使用 Office 365 DLP 进行信息保护的一个级别。
 
