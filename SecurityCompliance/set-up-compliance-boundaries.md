@@ -15,12 +15,12 @@ search.appverid:
 - MET150
 ms.assetid: 1b45c82f-26c8-44fb-9f3b-b45436fe2271
 description: 使用合规性边界在 Office 365 组织中创建用于控制电子数据展示管理器可搜索的用户内容位置的逻辑边界。 合规性边界使用搜索权限筛选 (也称为合规性安全筛选器) 控制特定用户可以搜索哪些邮箱、SharePoint 网站和 OneDrive 帐户。
-ms.openlocfilehash: dc1cf770ab015ece5212d5257f1807596e0e36c7
-ms.sourcegitcommit: e7a776a04ef6ed5e287a33cfdc36aa2d72862b55
+ms.openlocfilehash: b23c6d0c96874fb7e6205de6bf8a7f4eb00e4254
+ms.sourcegitcommit: 691370682825a7601bd4b77d0a8c4b51ed15682f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "31001085"
+ms.lasthandoff: 03/31/2019
+ms.locfileid: "31014021"
 ---
 # <a name="set-up-compliance-boundaries-for-ediscovery-investigations-in-office-365"></a>在 Office 365 中为电子数据展示调查设置合规性边界
 
@@ -63,6 +63,8 @@ ms.locfileid: "31001085"
 - 部门
     
 - 办公室
+
+- C (两个字母的国家/地区代码)
     
 虽然更多的用户属性 (尤其是对于 Exchange 邮箱), 但上面列出的属性是 OneDrive 当前支持的那些属性。
   
