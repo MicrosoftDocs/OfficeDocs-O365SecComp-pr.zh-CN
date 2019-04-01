@@ -3,7 +3,7 @@ title: 文件计划管理器概述
 ms.author: stephow
 author: stephow-MSFT
 manager: laurawi
-ms.date: 9/25/2018
+ms.date: ''
 ms.audience: Admin
 ms.topic: conceptual
 ms.service: O365-seccomp
@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.assetid: af398293-c69d-465e-a249-d74561552d30
 description: 文件计划管理器提供了对保留标签和保留策略的高级管理功能，并提供了便于遍历整个内容生存期（从创建、协作、记录声明、保留到最终处置）中的标签活动和标签到内容活动的集成方式。
-ms.openlocfilehash: d972a7ea6507e51c4efaaef30c98d55a87912417
-ms.sourcegitcommit: 6aa82374eef09d2c1921f93bda3eabeeb28aadeb
+ms.openlocfilehash: a6086ce73f898d261af46a1f1493b624db10931d
+ms.sourcegitcommit: 799a958fcac643f62dfac6fa04020f2f4758635c
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/06/2019
-ms.locfileid: "30454824"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30997268"
 ---
 # <a name="overview-of-file-plan-manager"></a>文件计划管理器概述
 
