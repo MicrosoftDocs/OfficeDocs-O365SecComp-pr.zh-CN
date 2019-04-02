@@ -429,7 +429,7 @@
 ### [在政治宣传活动开发/测试环境中创建团队网站](create-team-sites-in-a-political-campaign-dev-test-environment.md)
 ## [保护 SharePoint Online 网站和文件](secure-sharepoint-online-sites-and-files.md)
 ### [部署 SharePoint Online 网站以实现三重保护](deploy-sharepoint-online-sites-for-three-tiers-of-protection.md)
-### [使用 Office 365 标签和 DLP 保护 SharePoint Online 文件](protect-sharepoint-online-files-with-office-365-labels-and-dlp.md)
+### [使用保留标签和 DLP 保护 SharePoint Online 文件](protect-sharepoint-online-files-with-office-365-labels-and-dlp.md)
 ### [使用 Azure 信息保护来保护 SharePoint Online 文件](protect-sharepoint-online-files-with-azure-information-protection.md)
 ## [独立 SharePoint Online 团队网站](isolated-sharepoint-online-team-sites.md)
 ### [设计独立 SharePoint Online 团队网站](design-an-isolated-sharepoint-online-team-site.md)
