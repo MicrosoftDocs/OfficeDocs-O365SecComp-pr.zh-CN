@@ -1,5 +1,5 @@
 ---
-title: 在 Office 365 安全与合规中心 PowerShell 中创建自定义敏感信息类型
+title: 使用安全与合规中心 PowerShell 创建自定义敏感信息类型
 ms.author: deniseb
 author: denisebmsft
 manager: laurawi
@@ -12,15 +12,15 @@ ms.collection:
 search.appverid:
 - MOE150
 - MET150
-description: 了解如何在 Office 365 安全与合规中心创建并导入 DLP 的自定义敏感信息类型。
-ms.openlocfilehash: bf917ac40f98ec19332aac90f2d954d44b9a834d
-ms.sourcegitcommit: 8657e003ab1ff49113f222d1ee8400eff174cb54
+description: 了解如何在安全与合规中心创建并导入 DLP 的自定义敏感信息类型。
+ms.openlocfilehash: 7a21b62ddaf4d24793d4479d0d6270a18cc50532
+ms.sourcegitcommit: e7a776a04ef6ed5e287a33cfdc36aa2d72862b55
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/16/2019
-ms.locfileid: "30639119"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30999835"
 ---
-# <a name="create-a-custom-sensitive-information-type-in-office-365-security--compliance-center-powershell"></a>在 Office 365 安全与合规中心 PowerShell 中创建自定义敏感信息类型
+# <a name="create-a-custom-sensitive-information-type-in-security--compliance-center-powershell"></a>使用安全与合规中心 PowerShell 创建自定义敏感信息类型
 
 Office 365 中的数据丢失防护 (DLP) 包含许多内置[敏感信息类型](what-the-sensitive-information-types-look-for.md)，可供用于 DLP 策略。这些内置类型可有助于标识和保护信用卡号、银行帐号、护照号等。 
   
@@ -329,7 +329,7 @@ Version 元素也很重要。当你首次上传规则包时，Office 365 会记�
   
 1. 将文件另存为采用 Unicode 编码的 .xml 文件。
     
-2. [连接到 Office 365 安全与合规中心 PowerShell](http://go.microsoft.com/fwlink/p/?LinkID=799771)
+2. [连接到安全与合规中心 PowerShell](http://go.microsoft.com/fwlink/p/?LinkID=799771)
     
 3. 使用以下语法：
 
@@ -419,7 +419,7 @@ DLP 使用搜索爬网程序，对网站内容中的敏感信息进行标识和�
 
 - **** 删除自定义规则包及其包含的所有自定义敏感信息类型：本部分介绍了此方法。
 
-1. [连接到 Office 365 安全与合规中心 PowerShell](http://go.microsoft.com/fwlink/p/?LinkID=799771)
+1. [连接到安全与合规中心 PowerShell](http://go.microsoft.com/fwlink/p/?LinkID=799771)
 
 2. 若要删除自定义规则包，请使用以下语法：
 
@@ -469,7 +469,7 @@ DLP 使用搜索爬网程序，对网站内容中的敏感信息进行标识和�
 
 3. 将更新的 XML 文件导回现有规则包。
 
-若要连接到安全与合规中心 PowerShell，请参阅[连接到 Office 365 安全与合规中心 PowerShell](http://go.microsoft.com/fwlink/p/?LinkID=799771)。
+若要连接到安全与合规中心 PowerShell，请参阅[连接到安全与合规中心 PowerShell](http://go.microsoft.com/fwlink/p/?LinkID=799771)。
 
 #### <a name="step-1-export-the-existing-rule-package-to-an-xml-file"></a>步骤 1：将现有的规则包导出到 XML 文件
 

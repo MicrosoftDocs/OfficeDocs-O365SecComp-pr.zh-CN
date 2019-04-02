@@ -3,7 +3,7 @@ title: 部署具有三层保护的 SharePoint Online 网站
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 12/14/2018
+ms.date: 03/29/2019
 ms.audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
@@ -17,12 +17,12 @@ ms.custom:
 - Ent_Solutions
 ms.assetid: 1e8e3cfd-b878-4088-b941-9940363a5fae
 description: 摘要：为各种级别的信息保护创建和配置 SharePoint Online 团队网站。
-ms.openlocfilehash: c39b1d85241c2d21c196e0c2c7f0d5c70149de5c
-ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
+ms.openlocfilehash: 69da99c29d3527285547ed824e45fb7aa31e1910
+ms.sourcegitcommit: e7a776a04ef6ed5e287a33cfdc36aa2d72862b55
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30220302"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30999255"
 ---
 # <a name="deploy-sharepoint-online-sites-for-three-tiers-of-protection"></a>部署具有三层保护的 SharePoint Online 网站
 
@@ -38,7 +38,7 @@ ms.locfileid: "30220302"
 
 若要创建具有公共访问和权限的基线 SharePoint Online 团队网站，请执行以下操作：
   
-1. 请通过还可用于管理 SharePoint Online 团队网站的帐户（即 SharePoint Online 管理员帐户）登录 Office 365 门户。如需帮助，请参阅[在何处登录到 Office 365](https://support.office.com/Article/Where-to-sign-in-to-Office-365-e9eb7d51-5430-4929-91ab-6157c5a050b4)。
+1. 使用将同时用于管理 SharePoint Online 团队网站的帐户（即 SharePoint Online 管理员帐户）登录管理中心。 如需帮助，请参阅[如何登录到 Office 365](https://support.office.com/Article/Where-to-sign-in-to-Office-365-e9eb7d51-5430-4929-91ab-6157c5a050b4)。
     
 2. 在磁贴列表中，单击“SharePoint”****。
     
@@ -62,7 +62,7 @@ ms.locfileid: "30220302"
 
 若要创建具有私有访问和权限的基线 SharePoint Online 团队网站，请执行以下操作：
   
-1. 请通过还可用于管理 SharePoint Online 团队网站的帐户（即 SharePoint Online 管理员帐户）登录 Office 365 门户。如需帮助，请参阅[在何处登录到 Office 365](https://support.office.com/Article/Where-to-sign-in-to-Office-365-e9eb7d51-5430-4929-91ab-6157c5a050b4)。
+1. 使用将同时用于管理 SharePoint Online 团队网站的帐户（即 SharePoint Online 管理员帐户）登录管理中心。 如需帮助，请参阅[如何登录到 Office 365](https://support.office.com/Article/Where-to-sign-in-to-Office-365-e9eb7d51-5430-4929-91ab-6157c5a050b4)。
     
 2. 在磁贴列表中，单击“SharePoint”****。
     
@@ -126,7 +126,7 @@ ms.locfileid: "30220302"
   
 接下来，使用以下步骤创建 SharePoint Online 团队网站。
   
-1. 请通过还可用于管理 SharePoint Online 团队网站的帐户（即 SharePoint Online 管理员帐户）登录 Office 365 门户。如需帮助，请参阅[在何处登录到 Office 365](https://support.office.com/Article/Where-to-sign-in-to-Office-365-e9eb7d51-5430-4929-91ab-6157c5a050b4)。
+1. 使用将同时用于管理 SharePoint Online 团队网站的帐户（即 SharePoint Online 管理员帐户）登录管理中心。 如需帮助，请参阅[如何登录到 Office 365](https://support.office.com/Article/Where-to-sign-in-to-Office-365-e9eb7d51-5430-4929-91ab-6157c5a050b4)。
     
 2. 在磁贴列表中，单击“SharePoint”****。
     
@@ -144,7 +144,7 @@ ms.locfileid: "30220302"
     
 接下来，在新的 SharePoint Online 团队网站中，按照以下步骤操作来配置权限。
   
-1. 确定 IT 管理员或将负责响应和处理网站访问请求的其他人员的用户主体名称 (UPN)（例如，belindan@contoso.com）。记下此 UPN：![](./media/Common-Images/TableLine.png)。
+1. 确定 IT 管理员或将负责响应和针对网站访问请求进行寻址的其他人员的用户主体名称 (UPN)（例如 belindan@contoso.com）。 
     
 2. 在工具栏中，依次单击设置图标和“网站权限”****。
     
@@ -264,8 +264,7 @@ ms.locfileid: "30220302"
   
 ## <a name="next-step"></a>后续步骤
 
-[使用 Azure 信息保护来保护 SharePoint Online 文件](protect-sharepoint-online-files-with-azure-information-protection.md)
-
+[使用 Office 365 标签和 DLP 保护 SharePoint Online 文件](protect-sharepoint-online-files-with-office-365-labels-and-dlp.md)
 
 ## <a name="see-also"></a>另请参阅
 
@@ -274,7 +273,3 @@ ms.locfileid: "30220302"
 [Microsoft 针对政治宣传活动、非营利组织和其他敏捷性组织的安全指南](microsoft-security-guidance-for-political-campaigns-nonprofits-and-other-agile-o.md)
   
 [云应用和混合解决方案](https://docs.microsoft.com/office365/enterprise/cloud-adoption-and-hybrid-solutions)
-
-
-
-

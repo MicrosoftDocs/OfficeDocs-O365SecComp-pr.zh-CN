@@ -3,7 +3,7 @@ title: Office 365 中的反欺骗保护
 ms.author: tracyp
 author: MSFTtracyp
 manager: laurawi
-ms.date: 3/6/2019
+ms.date: 03/29/2019
 ms.audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
@@ -16,12 +16,12 @@ ms.collection:
 ms.custom: TopSMBIssues
 localization_priority: Priority
 description: 本文介绍 Office 365 如何缓解使用伪造发件人域（即欺骗性域）的网络钓鱼攻击。 通过分析邮件并阻止无法使用标准电子邮件身份验证方法或其他发件人信誉技术进行身份验证的邮件，它可以实现这一目标。 实施此更改是为了减少 Office 365 中的组织所面临的网络钓鱼攻击的数量。
-ms.openlocfilehash: 00cf4d6ba0fe7bc9bc081466d7b23a8a9b75631e
-ms.sourcegitcommit: 8a65a29aa3bfe5dcad0ff152a7cd795e02877dd9
+ms.openlocfilehash: 533444d323728d2f238da409256f6547a5c8d209
+ms.sourcegitcommit: 1261a37c414111f869df5791548a768d853fda60
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/28/2019
-ms.locfileid: "30936792"
+ms.lasthandoff: 03/30/2019
+ms.locfileid: "31004259"
 ---
 # <a name="anti-spoofing-protection-in-office-365"></a>Office 365 中的反欺骗保护
 
@@ -410,34 +410,6 @@ Set-PhishFilterPolicy -Identity Default -SpoofAllowBlockList $UpdateSpoofedSende
   
 ![允许冒充发件人的可能 UX](media/53f9f73e-fb01-47f3-9a6d-850c1aef5efe.jpg)
   
-### <a name="understanding-how-spam-phishing-and-advanced-phishing-detections-are-combined"></a>了解如何组合垃圾邮件、网络钓鱼和高级网络钓鱼检测
-
-使用 Exchange Online（具有或没有 ATP）的组织可以指定当服务部门将邮件识别为恶意软件、垃圾邮件、高可信度垃圾邮件、网络钓鱼和批量邮件时要采取的操作。 鉴于存在适用于 ATP 客户的 ATP 反网络钓鱼策略、适用于 EOP 客户的反网络钓鱼策略以及邮件可能涉及多种检测类型（例如恶意软件、网络钓鱼和用户模拟）的事实，用户可能会混淆所应用的策略。
-  
-通常，应用于邮件的策略在 CAT（类别）属性的 X-Forefront-Antispam-Report 标头中标识。
-  
-|**优先级**|**策略**|**类别**|**在哪里管理？**|**适用于**|
-|:-----|:-----|:-----|:-----|:-----|
-|1  <br/> |恶意软件  <br/> |MALW  <br/> |[恶意软件策略](configure-anti-malware-policies.md) <br/> |所有组织  <br/> |
-|2  <br/> |网络钓鱼  <br/> |PHSH  <br/> |[配置垃圾邮件筛选器策略](configure-your-spam-filter-policies.md) <br/> |所有组织  <br/> |
-|3  <br/> |高可信度垃圾邮件  <br/> |HSPM  <br/> |[配置垃圾邮件筛选器策略](configure-your-spam-filter-policies.md) <br/> |所有组织  <br/> |
-|4  <br/> |网络钓鱼  <br/> |SPOOF  <br/> |[反网络钓鱼策略](https://go.microsoft.com/fwlink/?linkid=864553)、[反欺骗智能保护](learn-about-spoof-intelligence.md) <br/> |所有组织  <br/> |
-|5  <br/> |垃圾邮件  <br/> |SPM  <br/> |[配置垃圾邮件筛选器策略](configure-your-spam-filter-policies.md) <br/> |所有组织  <br/> |
-|6  <br/> |批量邮件  <br/> |BULK  <br/> |[配置垃圾邮件筛选器策略](configure-your-spam-filter-policies.md) <br/> |所有组织  <br/> |
-|7  <br/> |域模拟  <br/> |DIMP  <br/> |[设置 Office 365 ATP 反网络钓鱼和反网络钓鱼策略](set-up-anti-phishing-policies.md) <br/> |仅限具有 ATP 的组织  <br/> |
-|8  <br/> |用户模拟  <br/> |UIMP  <br/> |[设置 Office 365 ATP 反网络钓鱼和反网络钓鱼策略](set-up-anti-phishing-policies.md) <br/> |仅限具有 ATP 的组织 <br/> |
-
-如果你有多个不同的反网络钓鱼策略，则会应用优先级最高的策略。 例如，假设你有以下两种策略：
-
-|**策略**|**优先级**|**用户/域模拟**|**反欺骗**|
-|:-----|:-----|:-----|:-----|
-|A  <br/> |1  <br/> |开  <br/> |关  <br/> |
-|B  <br/> |2  <br/> |关  <br/> |开  <br/> |
-
-如果邮件已进入并且识别为欺骗和用户模拟邮件，并将同一组用户限定为使用策略 A 和策略 B，则该邮件将被视为欺骗邮件，但由于反欺骗已关闭，因此不会应用任何操作，并且 SPOOF 将以比用户模拟 (8) 更高的优先级 (4) 运行。
-  
-若要应用其他类型的网络钓鱼策略，你需要调整要为其应用各种策略的用户设置。
-  
 ### <a name="legitimate-scenarios-to-disable-anti-spoofing"></a>禁用反欺骗的合法情景
 
 反欺骗可以更好地保护客户免受网络钓鱼攻击，因此强烈建议不要禁用反欺骗保护。 通过禁用它，你可以解决一些短期误报问题，但从长远来看，你将面临更大的风险。 在发件人端设置身份验证或对网络钓鱼策略进行调整的成本通常是一次性的，或者只需最少的定期维护。 但是，从数据泄露或资产受损的网络钓鱼攻击中恢复的成本要高得多。
@@ -546,18 +518,8 @@ Set-AntiphishPolicy -Identity $name -EnableAntispoofEnforcement $false
 ### <a name="information-for-individual-users"></a>面向单个用户的信息
 
 个人用户在如何与反欺骗安全提示进行交互方面受到了限制。 但是，你可以通过以下几种方法来解决常见情景问题。
-  
-### <a name="common-scenario-1---mailbox-forwarding"></a>常见情景 #1 - 邮箱转发
-
-如果你使用其他电子邮件服务并将电子邮件转发到 Office 365 或 Outlook.com，则你的电子邮件可能会标记为欺骗邮件并收到红色安全提示。 如果转发器是 Outlook.com、Office 365、Gmail 或使用 [ARC 协议](https://arc-spec.org)的任何其他服务之一，则 Office 365 和 Outlook.com 会计划自动解决此问题。 但是，在部署该修补程序之前，用户应使用“已连接帐户”功能直接导入其邮件，而不是使用转发选项。
-  
-若要在 Office 365 中设置已连接帐户，请选择 Office 365 Web 界面右上角的齿轮图标，然后依次选择\>“邮件”\>“邮件”\>“帐户”\>“已连接帐户”。
-  
-![Office 365 -“已连接帐户”选项](media/e8e841ca-8861-4d83-8506-2a0858c51010.jpg)
-  
-在 Outlook.com 中，依次选择“齿轮”图标\>“选项”\>“邮件”\>“帐户”\>“已连接帐户”。
-  
-### <a name="common-scenario-2---discussion-lists"></a>常见情景 #2 - 讨论列表
+ 
+### <a name="common-scenario-1---discussion-lists"></a>常见情景 #1 - 讨论列表
 
 由于转发邮件并修改其内容但保留原始“发件人:”地址的方式，已知讨论列表存在反欺骗问题。
   
@@ -659,7 +621,7 @@ example.com IN TXT "v=spf1 include:spf.example.com ?all"
   
 ### <a name="what-if-you-are-the-owner-of-a-mailing-list"></a>如果你是邮件列表的所有者，该怎么办？
 
-请参阅[常见情景 #2 - 讨论列表](#common-scenario-2---discussion-lists)。
+请参阅[常见情景 #1 - 讨论列表](#common-scenario-1---discussion-lists)部分。
   
 ### <a name="what-if-you-are-an-infrastructure-provider-such-as-an-internet-service-provider-isp-email-service-provider-esp-or-cloud-hosting-service"></a>如果你是基础结构提供商（如 Internet 服务提供商 (ISP)、电子邮件服务提供商 (ESP) 或云托管服务），该怎么办？
 

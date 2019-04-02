@@ -13,16 +13,16 @@ search.appverid:
 - MET150
 ms.assetid: d7ccd944-9698-41c7-a21b-677dc62973c4
 description: '了解如何从 Office 365 安全与合规中心访问 Office 365 高级电子数据展示，并查看使用高级电子数据展示的典型工作流。  '
-ms.openlocfilehash: 69c3b7d281576462ed49bb5bf6306002eab63ba5
-ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
+ms.openlocfilehash: 18ba3de9bd8b314eddef90252be532256f0b85a5
+ms.sourcegitcommit: e7a776a04ef6ed5e287a33cfdc36aa2d72862b55
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30218742"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30999765"
 ---
 # <a name="quick-setup-for-office-365-advanced-ediscovery"></a>Office 365 高级电子数据展示快速设置
 
-阅读本设置部分，Office 365 安全与合规中心电子数据展示管理员可了解如何开始使用高级电子数据展示。若要更好地理解本部分，需要对这两种工具都有一定的了解。
+阅读本设置部分，Microsoft 365 安全与合规中心电子数据展示管理员可了解如何开始使用高级电子数据展示。 若要更好地理解本部分，需要对这两种工具都有一定的了解。
   
 > [!NOTE]
 > 若要使用高级电子数据展示，组织必须订阅随附高级合规性加载项的 Office 365 E3，或订阅 E5。如果没有此计划，但又要试用高级电子数据展示，可以[注册 Office 365 企业版 E5 试用版](https://go.microsoft.com/fwlink/p/?LinkID=698279)。 

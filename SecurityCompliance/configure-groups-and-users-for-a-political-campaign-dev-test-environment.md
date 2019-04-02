@@ -15,12 +15,12 @@ search.appverid:
 - MET150
 ms.assetid: 0e22bcf3-bad3-42a4-b44f-276e0cf4790f
 description: 摘要：通过用户和组创建适用于政治宣传活动开发/测试环境的 Office 365 和 Microsoft 企业移动性 + 安全性 (EMS) 试用订阅。
-ms.openlocfilehash: 098ae2c3005e0c6ba7939c52260b1a2c49dc557e
-ms.sourcegitcommit: a80bd8626720fabdf592b84e4424cd3a83d08280
+ms.openlocfilehash: 0b2bf64a408eeee457dfc6c2ac8565e91c927f72
+ms.sourcegitcommit: e7a776a04ef6ed5e287a33cfdc36aa2d72862b55
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30223701"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "31000135"
 ---
 # <a name="configure-groups-and-users-for-a-political-campaign-devtest-environment"></a>为政治宣传活动开发/测试环境配置组和用户
 
@@ -36,9 +36,9 @@ ms.locfileid: "30223701"
   
 下一步，注册 EMS E5 试用订阅，并将其作为 Office 365 试用订阅添加到同一组织。
   
-1. 如有需要，请使用试用订阅的全局管理员帐户的凭据登录 Office 365 门户。如需帮助，请参阅[在哪里登录 Office 365](https://support.office.com/Article/Where-to-sign-in-to-Office-365-e9eb7d51-5430-4929-91ab-6157c5a050b4)。
+1. 如有需要，请使用试用订阅的全局管理员帐户的凭据登录管理中心。 如需帮助，请参阅[如何登录到 Office 365](https://support.office.com/Article/Where-to-sign-in-to-Office-365-e9eb7d51-5430-4929-91ab-6157c5a050b4)。
     
-2. 单击“管理员”磁贴****。
+2. 单击“管理”磁贴****。
     
 3. 在浏览器的“Office 管理中心”标签页的左侧导航中，单击“帐单”>“购买服务”********。
     
@@ -50,7 +50,7 @@ ms.locfileid: "30223701"
     
 接下来，为全局管理员帐户启用 EMS E5 许可证。
   
-1. 在浏览器的“Office 365 管理中心”**** 标签页的左侧导航中，单击“用户”>“活动用户”****。
+1. 在浏览器的“Microsoft 365 管理中心”标签页的左侧导航中，单击“用户”>“活动用户”********。
     
 2. 单击全局管理员帐户，然后针对“产品许可证”单击“编辑”********。
     

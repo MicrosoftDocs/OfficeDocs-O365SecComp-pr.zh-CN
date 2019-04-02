@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 在内容中查找敏感信息时，需要在规则中描述相应信息。数据丢失防护 (DLP) 包含最常见敏感信息类型对应的规则，可供立即使用。若要使用这些规则，必须将它们添加到策略中。你可能会发现，需要调整这些内置规则，才能满足组织的特定需求。为此，请创建自定义敏感信息类型。本主题介绍了如何将包含现有规则集合的 XML 文件自定义为，检测更广泛的潜在信用卡信息。
-ms.openlocfilehash: c0a3fcb86acf1eaa5df72e385b21e8dba9b0d668
-ms.sourcegitcommit: 8657e003ab1ff49113f222d1ee8400eff174cb54
+ms.openlocfilehash: 0acf10e52707c164c93fe442de287b08b3cf6804
+ms.sourcegitcommit: e7a776a04ef6ed5e287a33cfdc36aa2d72862b55
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/16/2019
-ms.locfileid: "30639069"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30999605"
 ---
 # <a name="customize-a-built-in-sensitive-information-type"></a>自定义内置敏感信息类型
 
@@ -74,7 +74,7 @@ ms.locfileid: "30639069"
   
 ## <a name="modify-the-xml-and-create-a-new-sensitive-information-type"></a>修改 XML 并新建敏感信息类型
 
-首先，需要新建敏感信息类型，因为无法直接修改默认规则。如[使用 Office 365 安全与合规中心 PowerShell 创建自定义敏感信息类型](create-a-custom-sensitive-information-type-in-scc-powershell.md)中所述，可对自定义敏感信息类型执行各种操作。为简单起见，此示例仅删除确证性证据，并向“信用卡号”规则添加关键字。
+首先，需要新建敏感信息类型，因为无法直接修改默认规则。如[使用安全与合规中心 PowerShell 创建自定义敏感信息类型](create-a-custom-sensitive-information-type-in-scc-powershell.md)中所述，可对自定义敏感信息类型执行各种操作。为简单起见，此示例仅删除确证性证据，并向“信用卡号”规则添加关键字。
   
 所有 XML 规则定义基于以下通用模板构建。您需要在模板中复制和粘贴信用卡号定义，修改某些值（请注意以下示例中的".. ." 占位符），然后将修改后的 XML 作为可用于策略的新规则进行上载。
   

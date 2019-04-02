@@ -3,7 +3,7 @@ title: 敏感度标签概述
 ms.author: stephow
 author: stephow-MSFT
 manager: laurawi
-ms.date: 10/22/2018
+ms.date: ''
 ms.audience: Admin
 ms.topic: conceptual
 ms.service: O365-seccomp
@@ -12,19 +12,19 @@ ms.collection: M365-security-compliance
 search.appverid:
 - MOE150
 - MET150
-description: 使用 Office 365 中的敏感度标签，可以对敏感内容进行分类和保护，同时确保组织内人员的工作效率和协作能力不受阻碍。敏感度标签可用于强制执行保护设置，如对已标记内容设置加密或水印。
-ms.openlocfilehash: ceb3373f6de24d52f8e65c322a9e7eca4fe92618
-ms.sourcegitcommit: cf9d9b545a7c153d314aa9c08c7fb16fcd785b3e
+description: 使用敏感度标签，可以对敏感内容进行分类和保护，同时确保组织内人员的工作效率和协作能力不受阻碍。敏感度标签可用于强制执行保护设置，如对已标记内容设置加密或水印。
+ms.openlocfilehash: f8442bc9fbeb32cb71fb46c4e5a54c9e1f0dce4b
+ms.sourcegitcommit: e7a776a04ef6ed5e287a33cfdc36aa2d72862b55
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/21/2019
-ms.locfileid: "30737682"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30999735"
 ---
 # <a name="overview-of-sensitivity-labels"></a>敏感度标签概述
 
 组织内人员需要与组织内外的其他人员协作，才能完成工作。也就是说，内容不再一直停留在防火墙后面，而是跨设备、应用和服务到处漫游。你希望内容的漫游方式不仅安全、受保护，还符合组织的业务和合规性策略。
 
-使用 Office 365 中的敏感度标签，可以对敏感内容进行分类和保护，同时确保组织内人员的工作效率和协作能力不受阻碍。
+使用敏感度标签，可以对敏感内容进行分类和保护，同时确保组织内人员的工作效率和协作能力不受阻碍。
 
 ![Excel 功能区和状态栏上的敏感度标签](media/Sensitivity_label_in_Excel.png)
 
@@ -44,11 +44,9 @@ ms.locfileid: "30737682"
     
 无论是上述哪种用途，Office 365 中的敏感度标签都可有助于对正确的内容执行适当的操作。借助敏感度标签，可对整个组织中的数据进行分类，并根据此分类强制执行保护设置。
   
-敏感度标签是在 Office 365 安全与合规中心内创建。目前，安全与合规中心是跨 Azure 信息保护和 Office 365 配置敏感度标签和策略的唯一位置。这些敏感度标签可供 Azure 信息保护、Office 应用和 Office 365 服务使用。
+在 Microsoft 365 合规中心、Microsoft 365 安全中心或 Office 365 安全与合规中心创建敏感度标签。这些敏感度标签可供 Azure 信息保护、Office 应用和 Office 365 服务使用。
 
-Azure 信息保护客户可以在安全与合规中心内使用 Azure 信息保护标签。如果信息保护客户选择执行其他配置或高级配置，这些信息保护标签便会与 Azure 门户同步。Azure 信息保护标签和 Office 365 敏感度标签彼此完全相互兼容。**** 也就是说，例如，如果内容已有 Azure 信息保护标签，无需重新对此内容进行分类或标记。
-
-![安全与合规中心内“标签”页上的“敏感度”选项卡](media/Sensitivity_label_tab_on_Labels_page.png)
+对于 Azure 信息保护客户，可以在其他管理中心内使用 Azure 信息保护标签。如果你选择执行其他配置或高级配置，这些标签便会与 Azure 门户同步。 **Azure 信息保护标签和 Office 365 敏感度标签彼此完全相互兼容。** 也就是说，例如，如果内容已有 Azure 信息保护标签，无需重新对此内容进行分类或标记。
 
 ## <a name="what-a-sensitivity-label-is"></a>什么是敏感度标签
 
@@ -84,13 +82,13 @@ Azure 信息保护客户可以在安全与合规中心内使用 Azure 信息保�
     ![提示分配所需的标签](media/Sensitivity_label_Prompt_for_required_label.png)
 
 
-在安全与合规中心内创建标签时，可使用以上所有选项。
+创建敏感度标签时即会提供以下所有选项。
 
 ![创建敏感度标签时可使用的选项](media/Sensitivity_label_create_options.png)
 
 ### <a name="label-priority-order-matters"></a>标签优先级（顺序非常重要）
 
-如果在安全与合规中心内创建敏感度标签，标签显示在“标签”**** 页上“敏感度”**** 选项卡中的列表内。此列表中的标签顺序非常重要，因为它反映了标签优先级。建议让限制最多的敏感度标签（如“高度机密”）显示在列表最下面****，并让限制最少的敏感度标签（如“公开”）显示在列表最上面****。
+创建敏感度标签时，这些标签会显示在“标签”页的“敏感度”选项卡的列表中********。 此列表中的标签顺序至关重要，因为它反映了标签的优先级。 限制性最高的敏感度标签（如“高度机密”）需显示在此列表的**底部**，限制性最低的敏感度标签（如“公开”）需显示在**顶部**。
 
 一个文档或电子邮件只能应用有一个敏感度标签。若有要求用户必须提供将标签更改为较低分类的理由，理由可以是此列表的排序，因为它决定了较低分类是什么。
 
@@ -108,9 +106,9 @@ Azure 信息保护客户可以在安全与合规中心内使用 Azure 信息保�
 
 ### <a name="editing-or-deleting-a-sensitivity-label"></a>编辑或删除敏感度标签
 
-如果在安全与合规中心内删除敏感度标签，请注意标签并未从内容中删除，且对内容继续执行所有保护设置。
+如果删除敏感度标签，请注意标签并未从内容中删除，且对内容继续强制执行所有保护设置。
 
-如果在安全与合规中心内编辑敏感度标签，应用于内容的标签版本就是对相应内容强制执行的标签。
+如果编辑敏感度标签，应用于内容的标签版本就是对相应内容强制执行的标签。
 
 ## <a name="what-label-policies-can-do"></a>标签策略有何用途
 
@@ -120,7 +118,7 @@ Azure 信息保护客户可以在安全与合规中心内使用 Azure 信息保�
 
 - **选择向哪些用户和组显示标签。** 可以将标签发布到任意启用电子邮件的安全组、通讯组、Office 365 组或动态通讯组。
 
-- **将默认标签**应用于标签策略中包含的用户和组创建的所有新文档和电子邮件。 此默认标签可以设置要应用于所有内容的基本级别的保护设置。 （请注意，）
+- **将默认标签应用于**标签策略包含的用户和组新建的所有文档和电子邮件。此默认标签可设置要对所有内容应用的保护设置的基本级别。
 
 - **要求提供更改标签的理由。** 如果内容应用有“机密”标签，但用户要删除此标签或将它替换为较低分类（如“公开”标签），你可以要求用户必须在执行此操作时提供理由。这些理由可供管理员查看。目前，我们正在努力推出可供管理员查看用户理由的报告。
 
@@ -197,7 +195,7 @@ Azure 信息保护客户可以在安全与合规中心内使用 Azure 信息保�
 - 保留文档和电子邮件中的现有 Azure 信息保护标签。
 - 保留现有 Azure 信息保护标签配置。
 
-若要使用 Azure 信息保护标签，目前的建议是，除非完成迁移，否则不要在安全与合规中心内新建标签。[Azure 信息保护迁移主题](https://docs.microsoft.com/zh-CN/azure/information-protection/configure-policy-migrate-labels)介绍了重要信息和一些具体注意事项。如果尚未准备好将生产租户迁移为使用敏感度标签，也无需担心，因为目前用户可继续使用 Azure 信息保护客户端，管理员也能继续使用 Azure 门户进行管理。
+如果目前使用的是 Azure 信息保护标签，在你完成迁移前，建议避免在其他管理中心创建新标签。 [Azure 信息保护迁移主题](https://docs.microsoft.com/zh-CN/azure/information-protection/configure-policy-migrate-labels)包含重要信息以及一些特定的注意事项。 如果尚未准备好将生产租户迁移到敏感度标签，也无需担心：目前用户可以继续使用 Azure 信息保护客户端，管理员可以继续使用 Azure 门户进行管理。
 
 ## <a name="protect-content-on-windows-devices-by-using-endpoint-protection-in-microsoft-intune"></a>使用 Microsoft Intune 终结点保护来保护 Windows 设备上的内容
 
@@ -252,6 +250,6 @@ Azure 信息保护客户可以在安全与合规中心内使用 Azure 信息保�
 
 若为创建敏感度标签的合规性团队成员，必须有权访问安全与合规中心。默认情况下，租户管理员有权访问此位置，并可向合规部主管及其他人员授予对安全与合规中心的访问权限，而不授予租户管理员的所有权限。为此，建议转到安全与合规中心内的“权限”**** 页，编辑“合规性管理员”**** 角色组，再向此角色组添加成员。
 
-有关详细信息，请参阅“向用户授予对 Office 365 安全与合规中心的访问权限”。
+有关详细信息，请参阅[授予用户访问 Office 365 安全与合规中心的权限](grant-access-to-the-security-and-compliance-center.md)。
 
 只有在创建和应用标签和标签策略时，才必须拥有这些权限。强制执行策略并不需要访问内容。

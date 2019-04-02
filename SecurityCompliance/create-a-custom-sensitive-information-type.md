@@ -12,13 +12,13 @@ ms.collection:
 search.appverid:
 - MOE150
 - MET150
-description: 了解如何在 Office 365 安全与合规中心的图形用户界面中为 DLP 创建、修改、删除和测试自定义敏感信息类型。
-ms.openlocfilehash: afc5479f08909020d04768c9ca9c20438472b92d
-ms.sourcegitcommit: 8657e003ab1ff49113f222d1ee8400eff174cb54
+description: 了解如何在安全与合规中心的图形用户界面中为 DLP 创建、修改、删除和测试自定义敏感信息类型。
+ms.openlocfilehash: de7bbc8ee624fe9468dc64a9811db31d529984bf
+ms.sourcegitcommit: e7a776a04ef6ed5e287a33cfdc36aa2d72862b55
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/16/2019
-ms.locfileid: "30639059"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30999085"
 ---
 # <a name="create-a-custom-sensitive-information-type"></a>创建自定义敏感信息类型
 
@@ -42,11 +42,11 @@ Office 365 中的数据丢失防护 (DLP) 包含许多内置[敏感信息类型]
 
     ![“实例计数”和“匹配准确度”选项](media/11d0b51e-7c3f-4cc6-96d8-b29bcdae1aeb.png)
 
-若要在 Office 365 安全与合规中心内创建自定义敏感信息类型，可使用以下两种方法：
+若要在安全与合规中心内创建自定义敏感信息类型，可使用以下两种方法：
 
 - **使用 UI**：此方法更便捷，但配置选项比 PowerShell 少。本主题的其余部分将介绍这些过程。
 
-- **使用 PowerShell**：此方法要求，必须先创建包含一个或多个敏感信息类型的 XML 文件（称为_规则包_），再使用 PowerShell 导入规则包（与创建规则包相比，导入规则包无关紧要）。虽然此方法比 UI 复杂得多，但配置选项更多。有关说明，请参阅[使用 Office 365 安全与合规中心 PowerShell 创建自定义敏感信息类型](create-a-custom-sensitive-information-type-in-scc-powershell.md)。
+- **使用 PowerShell**：此方法要求，必须先创建包含一个或多个敏感信息类型的 XML 文件（称为_规则包_），再使用 PowerShell 导入规则包（与创建规则包相比，导入规则包无关紧要）。虽然此方法比 UI 复杂得多，但配置选项更多。有关说明，请参阅[使用安全与合规中心 PowerShell 创建自定义敏感信息类型](create-a-custom-sensitive-information-type-in-scc-powershell.md)。
 
 下表列出了关键区别：
 
@@ -58,9 +58,9 @@ Office 365 中的数据丢失防护 (DLP) 包含许多内置[敏感信息类型]
 |将自定义敏感信息类型添加到名为 Microsoft.SCCManaged.CustomRulePack 的规则包中|最多可创建 10 个包含自定义敏感信息类型的规则包。|
 |模式匹配需要检测主模式和所有支持性证据（使用隐式 AND 运算符）。|模式匹配需要检测主要模式和一组数量可配置的支持性证据（可使用隐式 AND 和 OR 运算符）。|
 
-## <a name="what-do-you-need-to-know-before-you-begin"></a>开始前，有必要了解什么？
+## <a name="what-do-you-need-to-know-before-you-begin"></a>在开始之前，您需要知道什么？
 
-- 若要打开安全与合规中心，请参阅[转到 Office 365 安全与合规中心](go-to-the-securitycompliance-center.md)。
+- 若要打开安全与合规中心，请参阅[转到安全与合规中心](go-to-the-securitycompliance-center.md)。
 
 - 自定义敏感信息类型需要熟悉正则表达式 (RegEx)。有关用于处理文本的 Boost.RegEx（以前称为 RegEx++）引擎的详细信息，请参阅 [Boost.Regex 5.1.3](https://www.boost.org/doc/libs/1_68_0/libs/regex/doc/html/)。
 
