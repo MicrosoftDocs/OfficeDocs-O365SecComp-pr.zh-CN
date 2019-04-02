@@ -13,12 +13,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 使用 Office 365 安全与合规中心内的标签活动资源管理器，可快速搜索和查看过去 30 天内 SharePoint 和 OneDrive for Business 中所有内容的标签活动。此为实时数据，可便于你明确了解租户中发生了什么。
-ms.openlocfilehash: 8401e612a117700c0c8338860555c4d52dc4346c
-ms.sourcegitcommit: ed822a776d3419853453583e882f3c61ca26d4b2
+ms.openlocfilehash: 55888ff2ef8118389a88955a8f4e047170606524
+ms.sourcegitcommit: 799a958fcac643f62dfac6fa04020f2f4758635c
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2019
-ms.locfileid: "30410467"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30997108"
 ---
 # <a name="view-label-activity-for-documents"></a>查看文档的标签活动
 
@@ -36,7 +36,7 @@ ms.locfileid: "30410467"
     
 - 查看文件夹或各个文档的标签活动。即将可以查看文件夹中有多少个文件继承文件夹的标签。
     
-若要转到标签活动资源管理器，请在安全与合规中心内依次单击“数据管理”****\>“标签活动资源管理器”****。
+要查找标签活动资源管理器，可访问安全与合规中心 >“**数据管理**” >  **标签活动资源管理器**。
   
 请注意，必须有 Office 365 企业版 E5 订阅，才能使用标签活动资源管理器。
   

@@ -3,7 +3,7 @@ title: 使用敏感度标签中的加密限制对内容的访问
 ms.author: stephow
 author: stephow-MSFT
 manager: laurawi
-ms.date: 10/22/2018
+ms.date: ''
 ms.audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 创建敏感度标签时，可以限制对将要应用标签的内容的访问。敏感度标签可以使用加密来保护内容。
-ms.openlocfilehash: 6f8100ea0196cd1637bbad69757c9cc6e98f5bac
-ms.sourcegitcommit: cf9d9b545a7c153d314aa9c08c7fb16fcd785b3e
+ms.openlocfilehash: 69deeed69a5b2970d387c30b01a062c6c068c567
+ms.sourcegitcommit: 799a958fcac643f62dfac6fa04020f2f4758635c
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/21/2019
-ms.locfileid: "30737692"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30997038"
 ---
 # <a name="restrict-access-to-content-by-using-encryption-in-sensitivity-labels"></a>使用敏感度标签中的加密限制对内容的访问
 
@@ -36,7 +36,7 @@ ms.locfileid: "30737692"
 - 无论其所在位置（组织内部或外部）如何，仍保持加密状态，即使该文件被重命名也是如此。
 - 静态加密（例如，在 OneDrive 帐户中）和传输加密（例如，发送的电子邮件）。
 
-可以在 Office 365 安全与合规中心 >“标签”**** 页面 >“敏感度”**** 选项卡 >“创建标签”**** 中找到加密设置。
+在 Microsoft 365 合规中心、Microsoft 365 安全中心或 Office 365 安全与合规中心创建敏感度标签时，可使用加密设置。
 
 ## <a name="how-encryption-works"></a>加密工作原理
 

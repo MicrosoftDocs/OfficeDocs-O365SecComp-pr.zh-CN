@@ -18,12 +18,12 @@ ms.custom:
 - Ent_Architecture
 ms.assetid: 1d51bd87-17bf-457c-b698-61821de3afa0
 description: 摘要：用于保护 SharePoint Online 和 Office 365 中文件的配置建议。
-ms.openlocfilehash: 3e41a46d244f88110b87426fe975b3f72e376984
-ms.sourcegitcommit: 54d58da1777eb83adb82826d1bb1adb94903c8e1
+ms.openlocfilehash: cc31d6633b41fe8bcec57794247718c44c0fc555
+ms.sourcegitcommit: e7a776a04ef6ed5e287a33cfdc36aa2d72862b55
 ms.translationtype: HT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 03/29/2019
-ms.locfileid: "30955225"
+ms.locfileid: "30999375"
 ---
 # <a name="secure-sharepoint-online-sites-and-files"></a>保护 SharePoint Online 网站和文件
 
@@ -125,7 +125,7 @@ SharePoint Online 和 OneDrive for Business 的设备访问设置可确定是否
 |DLP 策略  <br/> |||在用户向组织外发送标记为“敏感”的文件时进行警告。  <br/> 要阻止外部共享敏感数据类型，如信用卡号或其他个人数据，可以针对这些数据类型（包括所配置的自定义数据类型）配置其他 DLP 策略。  <br/> |阻止用户向组织外发送标记为“高度机密”的文件。允许用户通过提供他们与之共享的对象等理由来替代此行为。  <br/> |
 |敏感度标签  <br/> ||||使用敏感度标签自动加密和授予文件权限。 敏感度标签使用 Azure 信息保护来加密文件。 此保护将始终伴随文件，以防其泄露。  <br/> Office 365 无法读取使用 Azure 信息保护加密的文件。此外，DLP 策略只能与元数据（包括标签）一起使用，但并不能处理这些文件的内容（如文件内的信用卡号）。  <br/> |
    
-有关在此解决方案中部署四种不同类型的 SharePoint Online 团队网站的步骤，请参阅[部署 SharePoint Online 网站以获得三层保护](deploy-sharepoint-online-sites-for-three-tiers-of-protection.md)。有关创建开发/测试环境的步骤，请参阅[在开发/测试环境中保护 SharePoint Online 网站](secure-sharepoint-online-sites-in-a-dev-test-environment.md)。 
+有关如何部署此解决方案中四种不同类型的 SharePoint Online 团队网站的步骤，请参阅[部署具有三层保护的 SharePoint Online 网站](deploy-sharepoint-online-sites-for-three-tiers-of-protection.md)。 
   
 ## <a name="office-365-retention-labels"></a>Office 365 保留标签
 
@@ -186,7 +186,3 @@ SharePoint Online 和 OneDrive for Business 的设备访问设置可确定是否
   
 [云应用和混合解决方案](https://docs.microsoft.com/office365/enterprise/cloud-adoption-and-hybrid-solutions)
   
-[在开发/测试环境中保护 SharePoint Online 网站](secure-sharepoint-online-sites-in-a-dev-test-environment.md)
-
-
-

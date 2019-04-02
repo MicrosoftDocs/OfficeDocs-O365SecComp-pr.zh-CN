@@ -3,7 +3,7 @@ title: 保留标签概述
 ms.author: stephow
 author: stephow-MSFT
 manager: laurawi
-ms.date: 6/22/2018
+ms.date: ''
 ms.audience: Admin
 ms.topic: conceptual
 ms.service: O365-seccomp
@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Office 365 中的保留标签可有助于对正确的内容执行适当的操作。借助保留标签，可对整个组织中的数据进行分类来管理数据，并根据此分类强制执行保留规则。另外，保留标签还可用于在 Office 365 中实现记录管理。
-ms.openlocfilehash: 50b002236bb57094f170d4b796ee20c0268fbdd1
-ms.sourcegitcommit: 54d58da1777eb83adb82826d1bb1adb94903c8e1
+ms.openlocfilehash: e13c73e95a2b8bc25df0031a9bd94da4feb54b23
+ms.sourcegitcommit: e7a776a04ef6ed5e287a33cfdc36aa2d72862b55
 ms.translationtype: HT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 03/29/2019
-ms.locfileid: "30955235"
+ms.locfileid: "31000815"
 ---
 # <a name="overview-of-retention-labels"></a>保留标签概述
 
@@ -60,10 +60,9 @@ ms.locfileid: "30955235"
     
 - **在 Office 365 中实现记录管理**，包括电子邮件和文档。可使用保留标签将内容分类为记录。如果这样做，既无法更改或删除保留标签，也无法编辑或删除内容。 
     
-保留策略是在 Office 365 安全与合规中心内“标签”**** 页上的“保留”**** 选项卡中进行创建和管理。 
+在 Microsoft 365 合规中心、Microsoft 365 安全中心或 Office 365 安全与合规中心，依次单击“**标签**”页面和“**保留**”选项卡来创建和管理保留标签。 
   
-![“标签”页上的“保留”选项卡](media/Retention_tab_on_Labels_page.png)
- 
+
 ## <a name="how-retention-labels-work-with-label-policies"></a>如何结合使用保留标签和标签策略
 
 为组织内人员提供可用于对内容进行分类的保留标签分为两步：第一步是创建标签，第二步是将标签发布到选定位置。当保留标签发布后，标签策略也会随之创建。
@@ -98,7 +97,7 @@ ms.locfileid: "30955235"
 
 保留标签在发布或自动应用后不会立即生效：
   
-1. 首先，需要将标签策略从安全与合规中心同步到策略中的位置。
+1. 首先，需要将标签策略从管理中心同步到策略中的位置。
     
 2. 然后，可能需要等待一段时间，相应位置才支持最终用户分配手动标签，或将标签自动应用于内容。此过程所需的具体时间视标签的位置和类型而定。
     
@@ -110,7 +109,7 @@ ms.locfileid: "30955235"
   
 ### <a name="auto-apply-retention-labels"></a>自动应用保留标签
 
-如果将保留标签自动应用于符合特定条件的内容，可能需要等待 7 天，才能将保留标签应用于与条件匹配的所有内容。
+如果将保留标签自动应用于符合特定条件的内容，可能需要等待 7 天，才能将保留标签应用于与条件匹配的所有现有内容。 但请注意，在部署保留标签后，它们将很快应用到新的内容，通常不超过 15 分钟。
   
 ![自动应用标签生效时间关系图](media/b8c00657-477a-4ade-b914-e643ef97a10d.png)
   
@@ -398,9 +397,7 @@ ms.locfileid: "30955235"
   
 ## <a name="using-content-search-to-find-all-content-with-a-specific-retention-label-applied-to-it"></a>使用内容搜索来查找所有已应用有特定保留标签的内容
 
-在保留标签分配到内容后（无论是用户分配还是自动应用），可使用安全与合规中心内的内容搜索，查找所有已使用特定保留标签进行分类的内容。
-  
-![“内容搜索”页](media/564d5dfe-285a-4a7e-800e-907b12a1b273.png)
+在保留标签分配到内容后（无论是用户分配还是自动应用），你都可通过内容搜索来查找所有已使用特定保留标签进行分类的内容。
   
 创建内容搜索时，请选择“合规性标记”**** 条件，再输入完整或部分标签名称，并使用通配符。有关详细信息，请参阅[适用于内容搜索的关键字查询和搜索条件](keyword-queries-and-search-conditions.md)。
   
@@ -434,7 +431,7 @@ ms.locfileid: "30955235"
 
 可将保留标签轻松应用于整个组织，及其在 Office 365（包括 Exchange、SharePoint、OneDrive 和 Office 365 组）中的内容。建议使用保留标签在 Office 365 中的任意位置上对内容进行分类或管理记录。
   
-之前还有其他几项功能用于在 Office 365 中对内容进行分类或管理记录。下面列出了这些功能。这些功能可继续与在安全与合规中心内创建的保留标签配合使用。请注意，尽管有时实现保留标签不同于过去的功能，但保留标签的演变会推动未来 Office 365 中的记录管理。因此，建议今后使用保留标签（而不是任何这些功能）来管理数据。
+还有其他几项先前用于在 Office 365 中进行内容分类或记录管理的功能。 其如下所示。 这些功能将继续与保留标签配合使用。 请注意，尽管存在保留标签的执行不同于先前功能的情况，但是保留标签的发展会驱动未来跨 Office 365 进行记录管理。 因此往前看来，对于数据管理，建议使用保留标签，而不是这些功能。
   
 ### <a name="exchange-online"></a>Exchange Online
 
