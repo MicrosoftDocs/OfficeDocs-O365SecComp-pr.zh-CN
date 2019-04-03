@@ -387,6 +387,47 @@
 #### [使用高级电子数据展示实用工具](use-advanced-ediscovery-utilities.md)
 #### [运行报告](run-reports-in-advanced-ediscovery.md)
 
+# [管理数据调查](datainvestigations/overview-data-investigations.md)
+## [发行说明](datainvestigations/data-investigations-release-notes.md)
+## [管理数据泄漏事件](datainvestigations/manage-data-spillage-incidents.md)
+## [创建新调查](datainvestigations/create-new-investigation.md)
+ 
+## [在调查中搜索数据](datainvestigations/search-for-data.md)
+### [生成搜索查询](datainvestigations/build-search-queries.md)
+### [搜索统计信息](datainvestigations/search-statistics.md)
+
+## [查看证据中的数据](datainvestigations/review-data-in-evidence.md)
+### [查询数据](datainvestigations/evidence-query.md)
+### [标记文档](datainvestigations/tag-documents.md)
+### [注释和编辑文档](datainvestigations/annotate-and-redact-documents.md)
+### [加载非 Office 365 数据](datainvestigations/load-non-office365-data.md)
+### [修正处理数据时出现的错误](datainvestigations/error-remediation.md)
+
+## [运行分析功能，加快调查](datainvestigations/run-analytics-to-investigate-faster.md)
+### [电子邮件会话](datainvestigations/email-threading.md)
+### [近似重复检测](datainvestigations/near-duplicates.md)
+### [主题](datainvestigations/themes.md)
+### [使用相关性模块](datainvestigations/use-relevance-module.md)
+
+## [管理调查中感兴趣的人员](datainvestigations/manage-people-of-interest.md)
+### [为调查中的人员数据编制索引](datainvestigations/index-data-people-of-interest.md)
+### [查看调查中人员的审核活动](datainvestigations/view-people-of-interest-activity.md)
+
+## [从调查导出数据](datainvestigations/export-data.md)
+### [从证据导出文档](datainvestigations/export-documents-from-incident.md)
+### [下载导出作业](datainvestigations/download-export-jobs.md)
+
+## [配置数据调查的设置](datainvestigations/configure-settings-datainvestigations.md)
+### [从调查添加或删除成员](datainvestigations/add-remove-members.md)
+### [配置搜索和分析设置](datainvestigations/configure-search-analytics-settings.md)
+### [关闭或删除调查](datainvestigations/close-or-delete-investigation.md)
+
+## 数据调查参考
+### [数据调查限制](datainvestigations/limits-datainvestigations.md)
+### [支持的文件类型](datainvestigations/supported-filetypes-datainvestigations.md)
+### [文档元数据字段](datainvestigations/document-metadata-fields.md)
+### [管理作业](datainvestigations/manage-jobs.md)
+
 # [搜索审核日志](search-the-audit-log-in-security-and-compliance.md)
 ## [启用或禁用审核日志搜索](turn-audit-log-search-on-or-off.md)
 ## [管理邮箱审核](enable-mailbox-auditing.md)
