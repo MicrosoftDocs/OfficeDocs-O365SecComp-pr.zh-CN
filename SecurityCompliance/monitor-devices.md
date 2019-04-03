@@ -11,12 +11,13 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.openlocfilehash: fea3f35e0fca3ccc8148d93b7a535c98dd2d32b9
-ms.sourcegitcommit: e7a776a04ef6ed5e287a33cfdc36aa2d72862b55
+search.appverid: met150
+ms.openlocfilehash: 31d89b8bbcad98814ff33764bad24bffbbba4968
+ms.sourcegitcommit: 8213c353954b92f5c3979bee4aa049da0fd28a18
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "31000525"
+ms.lasthandoff: 04/03/2019
+ms.locfileid: "31043253"
 ---
 # <a name="monitor-devices-in-microsoft-365-security"></a>监视 Microsoft 365 安全中的设备
 
