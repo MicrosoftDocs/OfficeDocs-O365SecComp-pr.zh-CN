@@ -3,7 +3,7 @@ title: 启用或禁用 Office 365 审核日志搜索
 ms.author: markjjo
 author: markjjo
 manager: laurawi
-ms.date: 10/18/2017
+ms.date: ''
 ms.audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 ms.assetid: e893b19a-660c-41f2-9074-d3631c95a014
 description: 您可以在安全 & 合规中心启用审核日志搜索功能。 如果你更改了想法, 你可以随时关闭。 当 "审核日志搜索" 关闭时, 管理员无法在组织中搜索用户和管理员活动的 Office 365 审核日志。
-ms.openlocfilehash: a77114ac9b5de18d4718a543983f7a1f94ebc41f
-ms.sourcegitcommit: e7a776a04ef6ed5e287a33cfdc36aa2d72862b55
+ms.openlocfilehash: 0619b19f9dc6e8bdc21e26275f02a81948b40bf4
+ms.sourcegitcommit: 69d0c739a2f3b4a335b42182a2c7267ef554eb76
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "31000925"
+ms.lasthandoff: 04/03/2019
+ms.locfileid: "31389706"
 ---
 # <a name="turn-office-365-audit-log-search-on-or-off"></a>启用或禁用 Office 365 审核日志搜索
 
@@ -35,7 +35,7 @@ ms.locfileid: "31000925"
     > [!IMPORTANT]
     > 必须在 Exchange Online 中向用户分配权限, 才能打开或关闭审核日志搜索。 如果在 Security & 合规性中心中向用户分配 "**权限**" 页面上的 "审核日志" 角色, 他们将无法打开或关闭审核日志搜索。 这是因为基础 cmdlet 是 Exchange Online cmdlet。 
   
-- 如果关闭了 office 365 中的审核日志搜索, 您仍可以使用 Office 365 管理活动 API 访问您的组织的审核数据。 按照本文中的步骤关闭审核日志搜索意味着, 在使用 Security & 合规性中心搜索审核日志时, 或者在 Exchange Online 中运行**UnifiedAuditLog** cmdlet 时, 不会返回任何结果。PowerShell. 但是, 如果你已通过 Office 365 管理活动 API 授权任何应用程序访问组织的审核数据, 则这些应用程序将继续工作。 
+- 如果关闭了 office 365 中的审核日志搜索, 将无法使用 office 365 管理活动 API 来访问您的组织的审核数据。 按照本文中的步骤关闭审核日志搜索意味着, 在使用 Security & 合规性中心搜索审核日志时, 或者在 Exchange Online 中运行**UnifiedAuditLog** cmdlet 时, 不会返回任何结果。PowerShell. 这也意味着你的审核日志将无法通过 Office 365 管理活动 API 提供。  
     
 - 有关搜索 Office 365 审核日志的分步说明, 请参阅[在 Security & 合规性中心搜索审核日志](search-the-audit-log-in-security-and-compliance.md)。
     
@@ -59,7 +59,7 @@ ms.locfileid: "31000925"
     
 ### <a name="use-powershell-to-turn-on-audit-log-search"></a>使用 PowerShell 打开审核日志搜索
 
-1. [连接到 Exchange Online PowerShell](https://go.microsoft.com/fwlink/p/?LinkID=396554)
+1. [连接 Exchange Online PowerShell](https://go.microsoft.com/fwlink/p/?LinkID=396554)
     
 2. 运行以下 PowerShell 命令以在 Office 365 中启用审核日志搜索。
     
@@ -73,7 +73,7 @@ ms.locfileid: "31000925"
 
 您必须使用连接到 Exchange Online 组织的远程 PowerShell, 才能关闭审核日志搜索。 与启用审核日志搜索类似, 您必须在 Exchange Online 中将 "审核日志" 角色分配给 "关闭审核日志搜索"。
   
-1. [连接到 Exchange Online PowerShell](https://go.microsoft.com/fwlink/p/?LinkID=396554)
+1. [连接 Exchange Online PowerShell](https://go.microsoft.com/fwlink/p/?LinkID=396554)
     
 2. 运行以下 PowerShell 命令以关闭 Office 365 中的审核日志搜索。
     
