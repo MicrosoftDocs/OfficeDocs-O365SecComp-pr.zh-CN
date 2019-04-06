@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 - MOE150
 description: 您可以使用 Office 365 审核日志搜索工具来帮助您解决常见问题, 例如调查受损帐户或找出为邮箱设置电子邮件转发的用户。
-ms.openlocfilehash: 506a7c05c8fb88be00e52421341148699d2a74b0
-ms.sourcegitcommit: e7a776a04ef6ed5e287a33cfdc36aa2d72862b55
+ms.openlocfilehash: bd0483f2b2e209dc0cbd2b03eda928fd8d44d7b0
+ms.sourcegitcommit: e24f70699021c4f4ba56508ad0afb6f65010c357
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30999625"
+ms.lasthandoff: 04/05/2019
+ms.locfileid: "31479658"
 ---
 # <a name="search-the-office-365-audit-log-to-troubleshoot-common-scenarios"></a>搜索 Office 365 审核日志以解决常见方案
 
@@ -36,17 +36,13 @@ ms.locfileid: "30999625"
 
 ### <a name="permissions-required-to-use-the-audit-log-search-tool"></a>使用审核日志搜索工具所需的权限
 
-您必须在 Exchange Online 中向您分配 "仅查看审核日志" 或 "审核日志" 角色, 才能搜索 Office 365 审核日志。 默认情况下, 将这些角色分配给 Exchange 管理中心中 "**权限**" 页上的 "合规性管理" 和 "组织管理" 角色组。 有关详细信息, 请参阅[在 Exchange Online 中管理角色组](https://go.microsoft.com/fwlink/p/?LinkID=730688)。
+您必须在 Exchange Online 中向您分配 "仅查看审核日志" 或 "审核日志" 角色, 才能搜索 Office 365 审核日志。 默认情况下, 将这些角色分配给 Exchange 管理中心中 "**权限**" 页上的 "合规性管理" 和 "组织管理" 角色组。 请注意, Office 365 和 Microsoft 365 中的全局管理员将自动添加为 Exchange Online 中的 "组织管理" 角色组的成员。 有关详细信息, 请参阅[在 Exchange Online 中管理角色组](https://go.microsoft.com/fwlink/p/?LinkID=730688)。
 
 ### <a name="running-audit-log-searches"></a>运行审核日志搜索
 
 本部分介绍创建和运行审核日志搜索的基本操作。 请按照本文中的每个疑难解答方案的起始点, 使用这些说明。 有关详细的分步说明, 请参阅[搜索审核日志](search-the-audit-log-in-security-and-compliance.md#step-1-run-an-audit-log-search)。
 
-1. 转到 [https://compliance.microsoft.com](https://compliance.microsoft.com)。
-  
-2. 使用工作或学校帐户登录到 Office 365。
-
-3. 在安全与合规中心的左窗格中, 单击 "**搜索** > **审核日志搜索**"。
+1. 转到[https://protection.office.com/unifiedauditlog](https://protection.office.com/unifiedauditlog)并使用你的工作或学校帐户登录。
     
     将显示 "**审核日志搜索**" 页。 
     
@@ -115,9 +111,9 @@ ms.locfileid: "30999625"
 
 a. 在 " **ObjectId** " 字段中, 将显示设置了电子邮件转发的邮箱的别名。 此邮箱也会显示在搜索结果页中的**项目**列上。
 
-b. 在 "**参数**" 字段中, 值*ForwardingSmtpAddress*表示已经在邮箱上设置了电子邮件转发。 在此示例中, 将邮件转发到 alpinehouse.onmicrosoft.com 组织外部的电子邮件地址 mike@contoso.com。
+b. 在 "**参数**" 字段中, 值*ForwardingSmtpAddress*表示已经在邮箱上设置了电子邮件转发。 在此示例中, 邮件将被转发到 alpinehouse.onmicrosoft.com 组织mike@contoso.com外部的电子邮件地址。
 
-c. *DeliverToMailboxAndForward*参数的*True*值指示传递给 sarad@alpinehouse.onmicrosoft.com 的邮件的副本 *, 并*转发到 ForwardingSmtpAddress 指定的电子邮件地址。 ** 参数, 在此示例中为 mike@contoso.com。 如果将*DeliverToMailboxAndForward*参数的值设置为*False*, 则仅将电子邮件转发到*ForwardingSmtpAddress*参数指定的地址。 它不会传递到**ObjectId**字段中指定的邮箱。
+c. *DeliverToMailboxAndForward* sarad@alpinehouse.onmicrosoft.com参数的*True*值指示传递给的邮件副本*以及*转发到*ForwardingSmtpAddress*参数指定的电子邮件地址的电子邮件地址, 这在此示例为mike@contoso.com。 如果将*DeliverToMailboxAndForward*参数的值设置为*False*, 则仅将电子邮件转发到*ForwardingSmtpAddress*参数指定的地址。 它不会传递到**ObjectId**字段中指定的邮箱。
 
 d. **UserId**字段指示在**ObjectId**字段字段中指定的邮箱上设置电子邮件转发的用户。 此用户也显示在搜索结果页上的**用户**列中。 在这种情况下, 似乎邮箱的所有者在其邮箱上设置了电子邮件转发。
 
@@ -191,8 +187,8 @@ Set-Mailbox <mailbox alias> -ForwardingSmtpAddress $null
 
 a. 在 " **ObjectId** " 字段中, 将显示收件箱规则的完整名称。 此名称包括用户邮箱的别名 (例如, SaraD) 和收件箱规则的名称 (例如, "移动来自管理员的邮件")。
 
-b. 在 "**参数**" 字段中, 显示收件箱规则的条件。 在此示例中, 条件由*From*参数指定。 为*From*参数定义的值表示收件箱规则作用于由 admin@alpinehouse.onmicrosoft.com 发送的电子邮件。 有关可用于定义收件箱规则条件的参数的完整列表, 请参阅[new-inboxrule](https://docs.microsoft.com/powershell/module/exchange/mailboxes/new-inboxrule)文章。
+b. 在 "**参数**" 字段中, 显示收件箱规则的条件。 在此示例中, 条件由*From*参数指定。 为*From*参数定义的值表示收件箱规则对发送的admin@alpinehouse.onmicrosoft.com电子邮件起作用。 有关可用于定义收件箱规则条件的参数的完整列表, 请参阅[new-inboxrule](https://docs.microsoft.com/powershell/module/exchange/mailboxes/new-inboxrule)文章。
 
-c. *MoveToFolder*参数指定收件箱规则的操作;在此示例中, 从 admin@alpinehouse.onmicrosoft.com 接收的邮件将移至名为*AdminSearch*的文件夹中。 另请参阅[new-inboxrule](https://docs.microsoft.com/powershell/module/exchange/mailboxes/new-inboxrule)文章, 获取可用于定义收件箱规则操作的参数的完整列表。
+c. *MoveToFolder*参数指定收件箱规则的操作;在此示例中, 收到的admin@alpinehouse.onmicrosoft.com邮件被移动到名为*AdminSearch*的文件夹。 另请参阅[new-inboxrule](https://docs.microsoft.com/powershell/module/exchange/mailboxes/new-inboxrule)文章, 获取可用于定义收件箱规则操作的参数的完整列表。
 
 d. **UserId**字段指示创建了 " **ObjectId** " 字段中指定的收件箱规则的用户。 此用户也显示在搜索结果页上的**用户**列中。

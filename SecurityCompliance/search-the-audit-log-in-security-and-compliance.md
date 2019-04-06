@@ -1,5 +1,5 @@
 ---
-title: 在 Office 365 安全&amp;合规中心搜索审核日志
+title: 在 Security & 合规性中心中搜索审核日志
 ms.author: markjjo
 author: markjjo
 manager: laurawi
@@ -14,15 +14,15 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: 0d4d0f35-390b-4518-800e-0c7ec95e946c
-description: '使用 office 365 安全 & 合规中心搜索统一审核日志, 以查看 Office 365 组织中的用户和管理员活动。 '
-ms.openlocfilehash: 8cb8650315c19714960aba7551902780e38a554b
-ms.sourcegitcommit: 54a2cbe5d13f448e0c28655bdf88deb9e5434cac
+description: '使用安全 & 合规性中心搜索统一审核日志, 以查看 Office 365 组织中的用户和管理员活动。 '
+ms.openlocfilehash: d593c7d5403f658175850a66a55603dab2b60d42
+ms.sourcegitcommit: e24f70699021c4f4ba56508ad0afb6f65010c357
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/27/2019
-ms.locfileid: "30935347"
+ms.lasthandoff: 04/05/2019
+ms.locfileid: "31479678"
 ---
-# <a name="search-the-audit-log-in-the-office-365-security--compliance-center"></a>在 Office 365 安全 & 合规中心中搜索审核日志
+# <a name="search-the-audit-log-in-the-security--compliance-center"></a>在 Security & 合规性中心中搜索审核日志
 
 ## <a name="introduction"></a>简介
 
@@ -43,7 +43,7 @@ ms.locfileid: "30935347"
     
 - Sway 中的用户和管理员活动
     
-- Office 365 Security & 合规中心中的电子数据展示活动
+- 安全与合规中心中的电子数据展示活动
     
 - Power BI 中的用户和管理员活动
     
@@ -66,15 +66,15 @@ ms.locfileid: "30935347"
 
 在开始搜索 Office 365 审核日志之前, 请务必阅读以下各项。
   
-- 您 (或另一个管理员) 必须先启用审核日志记录, 然后才能开始搜索 Office 365 审核日志。 若要打开它, 只需单击安全&amp;合规中心中的 "**审核日志搜索**" 页上的 "**开始记录用户和管理员活动**"。 (如果看不到此链接, 表明已为您的组织启用了审核。)打开后, 会显示一条消息, 指出正在准备审核日志, 并且您可以在准备完成后的几小时内运行搜索。 您只需执行一次此操作。 
+- 您 (或另一个管理员) 必须先启用审核日志记录, 然后才能开始搜索 Office 365 审核日志。 若要打开它, 只需单击安全 & 合规性中心中的 "**审核日志搜索**" 页上的 "**开始记录用户和管理员活动**"。 (如果看不到此链接, 表明已为您的组织启用了审核。)打开后, 会显示一条消息, 指出正在准备审核日志, 并且您可以在准备完成后的几小时内运行搜索。 您只需执行一次此操作。 
     
     > [!NOTE]
     > 默认情况下, 我们正在启用审核。 在此之前, 你可以按照前面所述将其打开。 
   
-- 您必须在 Exchange Online 中向您分配 "仅查看审核日志" 或 "审核日志" 角色, 才能搜索 Office 365 审核日志。 默认情况下, 将这些角色分配给 Exchange 管理中心中 "**权限**" 页上的 "合规性管理" 和 "组织管理" 角色组。 若要使用户能够使用最低级别的权限搜索 Office 365 审核日志, 您可以在 Exchange Online 中创建自定义角色组, 添加仅查看审核日志或审核日志角色, 然后将该用户添加为新角色组的成员。 有关详细信息, 请参阅[在 Exchange Online 中管理角色组](https://go.microsoft.com/fwlink/p/?LinkID=730688)。
+- 您必须在 Exchange Online 中向您分配 "仅查看审核日志" 或 "审核日志" 角色, 才能搜索 Office 365 审核日志。 默认情况下, 将这些角色分配给 Exchange 管理中心中 "**权限**" 页上的 "合规性管理" 和 "组织管理" 角色组。 请注意, Office 365 和 Microsoft 365 中的全局管理员将自动添加为 Exchange Online 中的 "组织管理" 角色组的成员。 若要使用户能够使用最低级别的权限搜索 Office 365 审核日志, 您可以在 Exchange Online 中创建自定义角色组, 添加仅查看审核日志或审核日志角色, 然后将该用户添加为新角色组的成员。 有关详细信息, 请参阅[在 Exchange Online 中管理角色组](https://go.microsoft.com/fwlink/p/?LinkID=730688)。
     
     > [!IMPORTANT]
-    > 如果在安全&amp;合规中心中向用户分配 "**权限**" 页上的 "仅查看审核日志" 或 "审核日志" 角色, 他们将无法搜索 Office 365 审核日志。 您必须在 Exchange Online 中分配权限。 这是因为用于搜索审核日志的基础 cmdlet 是 Exchange Online cmdlet。 
+    > 如果在 Security & 合规性中心的 "**权限**" 页上为用户分配 "仅查看审核日志" 或 "审核日志" 角色, 则他们将无法搜索 Office 365 审核日志。 您必须在 Exchange Online 中分配权限。 这是因为用于搜索审核日志的基础 cmdlet 是 Exchange Online cmdlet。 
   
 - 当用户或管理员执行了审核的活动时, 将生成审核记录并将其存储在组织的 Office 365 审核日志中。 审核记录保留的时间长度 (并可在审核日志中搜索) 取决于您的 Office 365 订阅, 以及分配给特定用户的许可证类型。
 
@@ -99,7 +99,7 @@ ms.locfileid: "30935347"
 
     有关详细信息, 请参阅[在 Office 365 中关闭审核日志搜索](turn-audit-log-search-on-or-off.md)。
     
-- 如前面所述, 用于搜索审核日志的基础 cmdlet 是**UnifiedAuditLog**的 Exchange Online cmdlet。 这意味着您可以使用此 cmdlet 搜索 Office 365 审核日志, 而不是使用安全&amp;合规中心中的 "**审核日志搜索**" 页。 您必须在连接到 Exchange Online 组织的远程 PowerShell 中运行此 cmdlet。 有关详细信息, 请参阅[UnifiedAuditLog](https://go.microsoft.com/fwlink/p/?linkid=834776)。
+- 如前面所述, 用于搜索审核日志的基础 cmdlet 是**UnifiedAuditLog**的 Exchange Online cmdlet。 这意味着您可以使用此 cmdlet 搜索 Office 365 审核日志, 而不是使用安全 & 合规性中心中的 "**审核日志搜索**" 页。 您必须在连接到 Exchange Online 组织的远程 PowerShell 中运行此 cmdlet。 有关详细信息, 请参阅[UnifiedAuditLog](https://go.microsoft.com/fwlink/p/?linkid=834776)。
     
 - 如果要以编程方式从 Office 365 审核日志中下载数据, 我们建议使用 office 365 管理活动 API, 而不是使用 PowerShell 脚本。 Office 365 管理活动 API 是 REST web 服务, 可用于为组织开发操作、安全性和合规性监视解决方案。 有关详细信息, 请参阅[Office 365 管理活动 API 参考](https://go.microsoft.com/fwlink/?linkid=852309)。
     
@@ -120,13 +120,13 @@ ms.locfileid: "30935347"
     |Microsoft Stream  <br/> |![复选标记](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/>| |
     |Microsoft Teams  <br/> |![复选标记](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/> ||
     |Power BI  <br/> |![复选标记](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/>| |
-    |Security &amp; Compliance Center  <br/> |![复选标记](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/> ||
+    |安全与合规中心  <br/> |![复选标记](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/> ||
     |SharePoint Online 和 OneDrive for Business  <br/> |![复选标记](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/> ||
     |Sway  <br/> ||![复选标记](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/> |
     |工作区分析<br/> |![复选标记](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/> || 
     |Yammer  <br/> ||![复选标记](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/> |
    
-- azure Active Directory (azure AD) 是 Office 365 的目录服务。 统一审核日志包含在 Office 365 管理中心或在 Azure 管理门户中执行的用户、组、应用程序、域和目录活动。 有关 azure AD 事件的完整列表, 请参阅[azure Active Directory 审核报告事件](https://go.microsoft.com/fwlink/p/?LinkID=616549)。
+- azure Active Directory (azure AD) 是 Office 365 的目录服务。 统一审核日志包含在 Microsoft 365 管理中心或在 Azure 管理门户中执行的用户、组、应用程序、域和目录活动。 有关 azure AD 事件的完整列表, 请参阅[azure Active Directory 审核报告事件](https://go.microsoft.com/fwlink/p/?LinkID=616549)。
     
 - exchange Online 审核日志包含两种类型的事件: Exchange 管理员事件 (由管理员执行的操作) 和邮箱事件 (由用户对邮箱执行的操作)。 请注意, 默认情况下不启用邮箱审核。 必须为每个用户邮箱启用邮箱事件, 然后才能在 Office 365 审核日志中搜索邮箱事件。 有关邮箱审核和所记录的邮箱审核操作的详细信息, 请参阅[在 Office 365 中启用邮箱审核](enable-mailbox-auditing.md)。
     
@@ -147,14 +147,14 @@ ms.locfileid: "30935347"
   
 ### <a name="step-1-run-an-audit-log-search"></a>步骤 1: 运行审核日志搜索
 
-1. 转到 [https://protection.office.com](https://protection.office.com)。
+1. 转到 [https://compliance.microsoft.com](https://compliance.microsoft.com)。
     
     > [!TIP]
-    > 使用专用浏览会话 (而非常规会话) 访问 Office 365 安全&amp;合规中心, 因为这将阻止当前登录的凭据正在使用。 若要在 Internet Explorer 或 Microsoft Edge 中打开 InPrivate 浏览会话, 只需按 CTRL + SHIFT + P。 若要在 Google Chrome 中打开一个专用浏览会话 (称为 incognito 窗口), 请按 CTRL + SHIFT + N。 
+    > 使用专用浏览会话 (而非常规会话) 访问安全 & 合规性中心, 因为这将阻止当前登录的凭据正在使用。 若要在 Internet Explorer 或 Microsoft Edge 中打开 InPrivate 浏览会话, 只需按 CTRL + SHIFT + P。 若要在 Google Chrome 中打开一个专用浏览会话 (称为 incognito 窗口), 请按 CTRL + SHIFT + N。 
   
 2. 使用工作或学校帐户登录到 Office 365。
     
-3. 在安全&amp;合规性中心的左侧窗格中, 单击 **" &amp;搜索调查**", 然后单击 "**审核日志搜索**"。
+3. 在安全 & 合规性中心的左侧窗格中, 单击 "**搜索**", 然后单击 "**审核日志搜索**"。
     
     将显示 "**审核日志搜索**" 页。 
     
@@ -288,7 +288,7 @@ ms.locfileid: "30935347"
 
 ## <a name="audited-activities"></a>审核的活动
 
-本节中的表介绍了在 Office 365 中审核的活动。 您可以通过搜索 Security & 合规性中心中的审核日志来搜索这些事件。
+本节中的表介绍了在 Office 365 中审核的活动。 您可以通过在安全与合规中心中搜索审核日志来搜索这些事件。
   
 这些表对相关活动或特定 Office 365 服务中的活动进行分组。 这些表包括在 "**活动**" 下拉列表中显示的友好名称, 以及在导出搜索结果时, 在审核记录的详细信息和 CSV 文件中显示的相应操作的名称。 有关详细信息的说明, 请参阅[Office 365 审核日志中的详细属性](detailed-properties-in-the-office-365-audit-log.md)。
   
@@ -310,7 +310,7 @@ ms.locfileid: "30935347"
   
 下表介绍了 SharePoint Online 和 OneDrive for business 中的文件和页面活动。
   
-|**易记名称**|**操作**|**说明**|
+|**友好名称**|**Operation**|**说明**|
 |:-----|:-----|:-----|
 |访问的文件  <br/> |FileAccessed  <br/> |用户或系统帐户访问文件。  <br/> |
 |（无）  <br/> |FileAccessedExtended  <br/> |这与 "访问的文件" (FileAccessed) 活动相关。 当同一人持续访问一个文件长时间 (最长为3小时) 时, 将记录 FileAccessedExtended 事件。 记录 FileAccessedExtended 事件的目的是减少在连续访问文件时记录的 FileAccessed 事件数。 这有助于减少多个 FileAccessed 记录在本质上是相同的用户活动的噪音, 并让您重点关注最初的 (更重要的) FileAccessed 事件。  <br/> |
@@ -340,7 +340,7 @@ ms.locfileid: "30935347"
   
 下表介绍了 SharePoint Online 和 OneDrive for business 中的文件夹活动。
   
-|**易记名称**|**操作**|**说明**|
+|**友好名称**|**Operation**|**说明**|
 |:-----|:-----|:-----|
 |复制的文件夹  <br/> |FolderCopied  <br/> |用户将文件夹从网站复制到 SharePoint 或 OneDrive for business 中的其他位置。  <br/> |
 |创建的文件夹  <br/> |FolderCreated  <br/> |用户在网站上创建一个文件夹。  <br/> |
@@ -360,13 +360,13 @@ ms.locfileid: "30935347"
 > [!NOTE]
 > 根据 user 对象的 UserType 属性, 用户可以是*成员*或*来宾*。 成员通常是员工, 而来宾通常是组织外部的合作者。 当用户接受共享邀请 (而不是组织的一部分) 时, 将在组织的目录中为其创建来宾帐户。 一旦来宾用户在目录中拥有帐户, 资源就可以直接与他们共享 (无需邀请)。 
   
-|**易记名称**|**操作**|**说明**|
+|**友好名称**|**Operation**|**说明**|
 |:-----|:-----|:-----|
 |接受的访问请求  <br/> |AccessRequestAccepted  <br/> |接受对网站、文件夹或文档的访问请求, 并向请求用户授予访问权限。  <br/> |
 |接受的共享邀请  <br/> |SharingInvitationAccepted  <br/> |用户 (成员或来宾) 接受了共享邀请, 并且已被授予对资源的访问权限。 此事件包括受邀的用户的相关信息, 以及用于接受邀请的电子邮件地址 (可以是不同的)。 此活动通常附带第二个事件, 该事件描述了如何向用户授予对资源的访问权限, 例如, 将用户添加到有权访问该资源的组。  <br/> |
 |向网站集添加了权限级别  <br/> |PermissionLevelAdded  <br/> |向网站集添加了权限级别。  <br/> |
 |用户已添加到安全链接  <br/> |AddedToSecureLink  <br/> |已将用户添加到可使用此安全共享链接的实体列表中。  <br/> |
-|阻止的共享邀请  <br/> |SharingInvitationBlocked  <br/> | 由于外部共享策略允许或拒绝基于目标用户的域的外部共享, 因此组织中的用户发送的共享邀请被阻止。 在这种情况下, 共享邀请被阻止, 因为:  <br/>  目标用户的域不包含在允许的域的列表中。  <br/>  或者  <br/>  目标用户的域包含在阻止域的列表中。  <br/>  有关允许或阻止基于域的外部共享的详细信息, 请参阅[SharePoint Online 和 OneDrive for business 中的受限制域共享](https://support.office.com/article/5d7589cd-0997-4a00-a2ba-2320ec49c4e9)。  <br/> |
+|阻止的共享邀请  <br/> |SharingInvitationBlocked  <br/> | 由于外部共享策略允许或拒绝基于目标用户的域的外部共享, 因此组织中的用户发送的共享邀请被阻止。 在这种情况下, 共享邀请被阻止, 因为:  <br/>  目标用户的域不包含在允许的域的列表中。  <br/>  或  <br/>  目标用户的域包含在阻止域的列表中。  <br/>  有关允许或阻止基于域的外部共享的详细信息, 请参阅[SharePoint Online 和 OneDrive for business 中的受限制域共享](https://support.office.com/article/5d7589cd-0997-4a00-a2ba-2320ec49c4e9)。  <br/> |
 |中断权限级别继承  <br/> |PermissionLevelsInheritanceBroken  <br/> |更改了某个项目, 因此它不再继承其父项的权限级别。  <br/> |
 |中断共享继承  <br/> |SharingInheritanceBroken  <br/> |更改了某个项目, 因此它不再继承其父项的共享权限。  <br/> |
 |创建公司可共享的链接  <br/> |CompanyLinkCreated  <br/> |用户创建了指向资源的公司范围的链接。 公司范围内的链接仅可由组织中的成员使用。 来宾无法使用它们。  <br/> |
@@ -398,7 +398,7 @@ ms.locfileid: "30935347"
   
 下表列出了 SharePoint Online 和 OneDrive for business 中的文件同步活动。
   
-|**易记名称**|**操作**|**说明**|
+|**友好名称**|**Operation**|**说明**|
 |:-----|:-----|:-----|
 |允许的计算机同步文件  <br/> |ManagedSyncClientAllowed  <br/> |用户与网站成功建立同步关系。 同步关系成功, 因为用户的计算机是已添加到可以访问组织中的文档库的域列表 (称为 "*安全收件人列表*") 的域的成员。  <br/> 有关此功能的详细信息，请参阅[使用 Windows PowerShell cmdlet 为安全收件人列表中的域启用 OneDrive 同步](https://go.microsoft.com/fwlink/p/?LinkID=534609)。  <br/> |
 |阻止的计算机同步文件  <br/> |UnmanagedSyncClientBlocked  <br/> |用户尝试与不是组织域成员的计算机或域的成员建立同步关系, 而该计算机尚未添加到可以访问文档的域列表 (称为*安全收件人列表)* 。组织中的库。 不允许同步关系，并阻止用户计算机在文档库上同步、下载或上传文件。  <br/> 有关此功能的信息，请参阅[使用 Windows PowerShell cmdlet 为安全收件人列表中的域启用 OneDrive 同步](https://go.microsoft.com/fwlink/p/?LinkID=534609)。  <br/> |
@@ -412,10 +412,10 @@ ms.locfileid: "30935347"
   
 下表列出了 SharePoint Online 中的网站管理任务所产生的事件。
   
-|**易记名称**|**操作**|**说明**|
+|**友好名称**|**Operation**|**说明**|
 |:-----|:-----|:-----|
 |添加了豁免用户代理  <br/> |ExemptUserAgentSet  <br/> |sharepoint 或全局管理员向 sharepoint 管理中心内的豁免用户代理列表添加用户代理。  <br/> |
-|添加了网站集管理员  <br/> |SiteCollectionAdminAdded  <br/> |网站集管理员或所有者向网站的网站集管理员添加人员。 网站集管理员具有网站集和所有子网站的完全控制权限。 当管理员为自己提供了对用户的 OneDrive 帐户的访问权限 (通过在 SharePoint 管理中心中编辑用户配置文件或[使用 Office 365 管理中心](https://docs.microsoft.com/office365/admin/add-users/get-access-to-and-back-up-a-former-user-s-data#part-1---get-access-to-the-former-employees-onedrive-for-business-documents)) 时, 也会记录此活动。 <br/> |
+|添加了网站集管理员  <br/> |SiteCollectionAdminAdded  <br/> |网站集管理员或所有者向网站的网站集管理员添加人员。 网站集管理员具有网站集和所有子网站的完全控制权限。 当管理员为自己提供了对用户的 OneDrive 帐户的访问权限 (通过在 SharePoint 管理中心中编辑用户配置文件或[使用 Microsoft 365 管理中心](https://docs.microsoft.com/office365/admin/add-users/get-access-to-and-back-up-a-former-user-s-data#part-1---get-access-to-the-former-employees-onedrive-for-business-documents)) 时, 也会记录此活动。 <br/> |
 |（无）  <br/> |SiteCollectionAdminRemoved <br/> |网站集管理员或所有者将用户作为网站的网站集管理员删除。 当管理员从用户的 OneDrive 帐户的网站集管理员列表中删除自己 (通过在 SharePoint 管理中心中编辑用户配置文件) 时, 也会记录此活动。  请注意, 若要在审核日志搜索结果中返回此活动, 您必须搜索所有活动。 <br/> |
 |向 SharePoint 组添加用户或组  <br/> |AddedToGroup  <br/> |用户向 SharePoint 组添加了成员或来宾。 这可能是一个有意的操作, 也可能是另一个活动 (如共享事件) 的结果。  <br/> |
 |允许用户创建组  <br/> |AllowGroupCreationSet  <br/> |网站管理员或所有者向网站添加权限级别, 允许分配该权限的用户为该网站创建组。  <br/> |
@@ -450,7 +450,7 @@ ms.locfileid: "30935347"
   
 下表列出了邮箱审核日志记录可以记录的活动。 记录邮箱所有者、委派用户或管理员执行的邮箱活动。 默认情况下, 未打开 Office 365 中的邮箱审核。 必须为每个邮箱启用邮箱审核日志记录, 然后才会记录邮箱活动。 有关详细信息, 请参阅[在 Office 365 中启用邮箱审核](https://go.microsoft.com/fwlink/p/?LinkID=626109)。
   
-|**易记名称**|**操作**|**说明**|
+|**友好名称**|**Operation**|**说明**|
 |:-----|:-----|:-----|
 |添加了委派邮箱权限  <br/> |外接 add-mailboxpermission  <br/> |管理员向其他人的邮箱分配了对用户 (称为代理) 的 FullAccess 邮箱权限。 FullAccess 权限允许代理打开其他人的邮箱, 并读取和管理邮箱的内容。  <br/> |
 |将邮件分类为记录  <br/> |ApplyRecordLabel<br/> |邮件被分类为记录。 当手动或自动应用将内容分类为记录时, 将发生这种情况。<br/> |
@@ -475,7 +475,7 @@ ms.locfileid: "30935347"
   
 下表列出了 Sway 中的用户和管理员活动。 Sway 是 Office 365 应用程序, 可帮助用户在基于 web 的交互式画布上收集、格式化和共享想法、情景和演示文稿。 有关详细信息, 请参阅[有关 Sway 的常见问题-管理员帮助](https://support.office.com/article/446380fa-25bf-47b2-996c-e12cb2f9d075)。
   
-|**易记名称**|**操作**|**说明**|
+|**友好名称**|**Operation**|**说明**|
 |:-----|:-----|:-----|
 |更改了 Sway 共享级别  <br/> |SwayChangeShareLevel  <br/> |用户更改 Sway 的共享级别。 此事件将捕获用户更改与 Sway 关联的共享范围;例如, 公共与组织内部。  <br/> |
 |已创建 Sway  <br/> |SwayCreate  <br/> |用户创建 Sway。  <br/> |
@@ -486,19 +486,19 @@ ms.locfileid: "30935347"
 |启用 Sway 复制  <br/> |EnableDuplication  <br/> |用户启用 Sway 的复制;默认情况下启用用户启用 Sway 复制的功能。  <br/> |
 |吊销的 Sway 共享  <br/> |SwayRevokeShare  <br/> |用户通过撤销对 Sway 的访问来停止共享该 Sway。 撤销访问更改与 Sway 关联的链接。  <br/> |
 |共享 Sway  <br/> |SwayShare  <br/> |用户打算共享 Sway。 此事件将捕获在 Sway 共享菜单中单击特定共享目标的用户操作。 该事件并不指示用户是否已完成共享操作。  <br/> |
-|关闭 Sway 的外部共享  <br/> |SwayExternalSharingOff  <br/> |管理员使用 Office 365 管理中心为整个组织禁用外部 Sway 共享。  <br/> |
-|已启用 Sway 的外部共享  <br/> |SwayExternalSharingOn  <br/> |管理员使用 Office 365 管理中心为整个组织启用外部 Sway 共享。  <br/> |
-|已关闭 Sway 服务  <br/> |SwayServiceOff  <br/> |管理员通过使用 Office 365 管理中心为整个组织禁用 Sway。  <br/> |
-|已启用 Sway 服务  <br/> |SwayServiceOn  <br/> |管理员使用 Office 365 管理中心为整个组织启用 sway (默认情况下, Sway 服务处于启用状态)。  <br/> |
+|关闭 Sway 的外部共享  <br/> |SwayExternalSharingOff  <br/> |管理员使用 Microsoft 365 管理中心为整个组织禁用外部 Sway 共享。  <br/> |
+|已启用 Sway 的外部共享  <br/> |SwayExternalSharingOn  <br/> |管理员使用 Microsoft 365 管理中心为整个组织启用外部 Sway 共享。  <br/> |
+|已关闭 Sway 服务  <br/> |SwayServiceOff  <br/> |管理员通过使用 Microsoft 365 管理中心为整个组织禁用 Sway。  <br/> |
+|已启用 Sway 服务  <br/> |SwayServiceOn  <br/> |管理员使用 Microsoft 365 管理中心为整个组织启用 sway (默认情况下, Sway 服务处于启用状态)。  <br/> |
 |查看 Sway  <br/> |SwayView  <br/> |用户查看 Sway。  <br/> |
 ||||
 
   
 ### <a name="user-administration-activities"></a>用户管理活动
   
-下表列出了在管理员使用 Office 365 管理中心或 Azure 管理门户添加或更改用户帐户时记录的用户管理活动。
+下表列出了在管理员使用 Microsoft 365 管理中心或 Azure 管理门户添加或更改用户帐户时记录的用户管理活动。
   
-|**活动**|**操作**|**说明**|
+|**活动**|**Operation**|**说明**|
 |:-----|:-----|:-----|
 |添加了用户  <br/> |添加用户  <br/> |已创建 Office 365 用户帐户。  <br/> |
 |更改的用户许可证  <br/> |更改用户许可证  <br/> |分配给用户的许可证已更改。 若要查看更改了哪些许可证, 请参阅相应**更新的用户**活动。  <br/> |
@@ -512,9 +512,9 @@ ms.locfileid: "30935347"
   
 ### <a name="azure-ad-group-administration-activities"></a>Azure AD 组管理活动
   
-下表列出了在管理员或用户创建或更改 office 365 组时或者当管理员使用 Office 365 管理中心或 Azure 管理门户创建安全组时记录的组管理活动。 有关 office 365 中的组的详细信息, 请参阅在[office 365 管理中心中查看、创建和删除组](https://support.office.com/article/a6360120-2fc4-46af-b105-6a04dc5461c7)。
+下表列出了在管理员或用户创建或更改 Office 365 组时或者当管理员使用 Microsoft 365 管理中心或 Azure 管理门户创建安全组时记录的组管理活动。 有关 Office 365 中的组的详细信息, 请参阅在[Microsoft 365 管理中心中查看、创建和删除组](https://support.office.com/article/a6360120-2fc4-46af-b105-6a04dc5461c7)。
   
-|**易记名称**|**操作**|**说明**|
+|**友好名称**|**Operation**|**说明**|
 |:-----|:-----|:-----|
 |添加了组  <br/> |添加组  <br/> |已创建组。  <br/> |
 |向组添加了成员  <br/> |将成员添加到组  <br/> |向组添加成员。  <br/> |
@@ -527,7 +527,7 @@ ms.locfileid: "30935347"
   
 下表列出了在管理员添加或更改在 Azure AD 中注册的应用程序时记录的应用程序管理活动。 必须在目录中注册依赖 Azure AD 进行身份验证的任何应用程序。
   
-|**易记名称**|**操作**|**说明**|
+|**友好名称**|**Operation**|**说明**|
 |:-----|:-----|:-----|
 |添加了委派条目  <br/> |添加委派条目  <br/> |已创建/授予 Azure AD 中的应用程序的身份验证权限。  <br/> |
 |添加了服务主体  <br/> |添加服务主体  <br/> |在 Azure AD 中注册应用程序。 应用程序由目录中的服务主体表示。  <br/> |
@@ -540,9 +540,9 @@ ms.locfileid: "30935347"
 
 ### <a name="role-administration-activities"></a>角色管理活动
   
-下表列出了在管理员管理 Office 365 管理中心或 Azure 管理门户中的管理员角色时记录的 Azure AD 角色管理活动。
+下表列出了在管理员管理 Microsoft 365 管理中心或 Azure 管理门户中的管理员角色时记录的 Azure AD 角色管理活动。
   
-|**易记名称**|**操作**|**说明**|
+|**友好名称**|**Operation**|**说明**|
 |:-----|:-----|:-----|
 |将成员添加到角色  <br/> |向角色添加角色成员  <br/> |向 Office 365 中的管理员角色添加了用户。  <br/> |
 |从目录角色中删除了用户  <br/> |从角色中删除角色成员  <br/> |从 Office 365 中的管理员角色中删除了用户。  <br/> |
@@ -551,9 +551,9 @@ ms.locfileid: "30935347"
    
 ### <a name="directory-administration-activities"></a>目录管理活动
   
-下表列出了在管理员在 office 365 管理中心或 Azure 管理门户中管理其 office 365 组织时记录的 Azure AD 目录和与域相关的活动。
+下表列出了管理员在 Microsoft 365 管理中心或 Azure 管理门户中管理其 Office 365 组织时记录的 Azure AD 目录和与域相关的活动。
   
-|**易记名称**|**操作**|**说明**|
+|**友好名称**|**Operation**|**说明**|
 |:-----|:-----|:-----|
 |向公司添加了域  <br/> |向公司添加域  <br/> |向 Office 365 组织添加了域。  <br/> |
 |向目录添加了合作伙伴  <br/> |向公司添加合作伙伴  <br/> |向 Office 365 组织添加了合作伙伴 (委派管理员)。  <br/> |
@@ -571,7 +571,7 @@ ms.locfileid: "30935347"
    
 ### <a name="ediscovery-activities"></a>电子数据展示活动
   
-在 office 365 安全 & 合规中心中或通过运行相应的 Windows PowerShell cmdlet 在 office 365 审核日志中记录的内容搜索和与电子数据展示相关的活动。 这包括以下活动:
+在安全与合规中心中或通过运行相应的 PowerShell cmdlet 在审核日志中执行的内容搜索和电子数据展示相关的活动将记录在审核日志中。 这包括以下活动:
   
 - 创建和管理电子数据展示事例
     
@@ -598,7 +598,7 @@ ms.locfileid: "30935347"
 
 工作区分析可深入了解如何在您的 Office 365 组织中进行组协作。 下表列出了在工作区分析中分配了管理员角色或分析师角色的用户所执行的活动。 分配了分析员角色的用户具有对所有服务功能的完全访问权限, 并使用产品进行分析。 分配了管理员角色的用户可以配置隐私设置和系统默认设置, 并可以准备、上传和验证工作区分析中的组织数据。 有关详细信息, 请参阅[Workplace Analytics](https://docs.microsoft.com/en-us/workplace-analytics/index-orig)。
 
-|**易记名称**|**操作**|**说明**|
+|**友好名称**|**Operation**|**说明**|
 |:-----|:-----|:-----|
 |访问过的 OData 链接 <br/> |AccessedOdataLink <br/> |分析师访问了查询的 OData 链接。|
 |已取消查询 <br/> |CanceledQuery <br/> |分析师取消了一个正在运行的查询。|
@@ -620,7 +620,7 @@ ms.locfileid: "30935347"
     
 - [Microsoft 团队帮助](https://support.office.com/article/23156c0c-2c6e-49dd-8b7b-7c564b76508c)
     
-|**易记名称**|**操作**|**说明**|
+|**友好名称**|**Operation**|**说明**|
 |:-----|:-----|:-----|
 |向团队添加了机器人  <br/> |BotAddedToTeam  <br/> |用户向团队中添加机器人。  <br/> |
 |添加了频道  <br/> |ChannelAdded  <br/> |用户向团队添加频道。  <br/> |
@@ -628,7 +628,7 @@ ms.locfileid: "30935347"
 |向团队添加了成员  <br/> |MemberAdded  <br/> |团队所有者向团队添加成员。  <br/> |
 |添加了选项卡  <br/> |TabAdded  <br/> |用户将选项卡添加到频道。  <br/> |
 |更改了频道设置  <br/> |ChannelSettingChanged  <br/> | 当团队成员执行以下活动时, 将记录 ChannelSettingChanged 操作。 对于这些活动中的每个活动, 在审核日志搜索结果的 "**项目**" 列中显示了已更改的设置 (如下面的括号中所示) 的说明。  <br/> <br/>-更改团队频道的名称 (**通道名称**)。  <br/>  <br/>-更改团队频道的说明 (**通道说明**)。  <br/> |
-|已更改的组织设置  <br/> |TeamsTenantSettingChanged  <br/> | 全局管理员执行以下活动时, 将记录 TeamsTenantSettingChanged 操作 (使用 Office 365 管理中心);请注意, 这些活动会影响组织范围的 Microsoft 团队设置。 有关详细信息, 请参阅[Microsoft 团队的管理员设置](https://support.office.com/article/3966a3f5-7e0f-4ea9-a402-41888f455ba2)。  <br/>  对于这些活动中的每个活动, 在审核日志搜索结果的 "**项目**" 列中显示了已更改的设置 (如下面的括号中所示) 的说明。  <br/><br/>-为组织 ( **microsoft 团队**) 启用或禁用 Microsoft 团队。  <br/><br/>-为组织启用或禁用 Microsoft 团队和 skype for business 之间的互操作性 ( **Skype for business 互操作性**)。<br/><br/>-启用或禁用 Microsoft 团队客户端 (**组织图表视图**) 中的组织结构图视图。  <br/><br/>-启用或禁用工作组成员安排私人会议的能力 (**私人会议计划**)。  <br/><br/>-启用或禁用工作组成员安排频道会议的能力 (**渠道会议计划**)。  <br/><br/>-启用或禁用团队会议中的视频呼叫 ( **Skype 会议的视频**)。  <br/><br/>-在 Microsoft 团队 meetups for the 组织启用或禁用屏幕共享 ( **Skype 会议的屏幕共享**)。  <br/><br/>-启用或禁用将动画图像 (称为 giphy) 添加到团队对话 (**动画图像**) 的功能。  <br/><br/>-更改组织的内容评级设置 (**内容评级**)。 内容分级限制可在对话中显示的动画图像的类型。  <br/><br/>-启用或禁用团队成员从 internet 向团队对话中添加可自定义的图像 (称为自定义 meme) 的功能 (**来自 internet 的可自定义图像**)。  <br/><br/>-启用或禁用工作组成员向团队对话 (**可编辑的图像**) 中添加可编辑图像 (称为不干胶标签) 的功能。<br/><br/>-启用或禁用团队成员在 Microsoft 团队聊天和频道 (**组织范围内的 bot**) 中使用 bot 的功能。<br/><br/>-为 Microsoft 团队启用特定的 bot;这不包括 t-机器人, 这是在为组织 (**单个 bot**) 启用 bot 时可使用的团队的帮助机器人。  <br/><br/>-启用或禁用工作组成员添加分机或选项卡 (**分机或选项卡**) 的功能。  <br/><br/>-启用或禁用 Microsoft 团队的专用 bot 的侧面加载 ( **bot 的侧面加载**)。  <br/><br/>-启用或禁用用户向 Microsoft 团队频道 (**通道电子邮件**) 发送电子邮件的功能。  <br/> |
+|已更改的组织设置  <br/> |TeamsTenantSettingChanged  <br/> | 当全局管理员 (使用 Microsoft 365 管理中心) 执行以下活动时, 将记录 TeamsTenantSettingChanged 操作。请注意, 这些活动会影响组织范围的 Microsoft 团队设置。 有关详细信息, 请参阅[Microsoft 团队的管理员设置](https://support.office.com/article/3966a3f5-7e0f-4ea9-a402-41888f455ba2)。  <br/>  对于这些活动中的每个活动, 在审核日志搜索结果的 "**项目**" 列中显示了已更改的设置 (如下面的括号中所示) 的说明。  <br/><br/>-为组织 ( **microsoft 团队**) 启用或禁用 Microsoft 团队。  <br/><br/>-为组织启用或禁用 Microsoft 团队和 skype for business 之间的互操作性 ( **Skype for business 互操作性**)。<br/><br/>-启用或禁用 Microsoft 团队客户端 (**组织图表视图**) 中的组织结构图视图。  <br/><br/>-启用或禁用工作组成员安排私人会议的能力 (**私人会议计划**)。  <br/><br/>-启用或禁用工作组成员安排频道会议的能力 (**渠道会议计划**)。  <br/><br/>-启用或禁用团队会议中的视频呼叫 ( **Skype 会议的视频**)。  <br/><br/>-在 Microsoft 团队 meetups for the 组织启用或禁用屏幕共享 ( **Skype 会议的屏幕共享**)。  <br/><br/>-启用或禁用将动画图像 (称为 giphy) 添加到团队对话 (**动画图像**) 的功能。  <br/><br/>-更改组织的内容评级设置 (**内容评级**)。 内容分级限制可在对话中显示的动画图像的类型。  <br/><br/>-启用或禁用团队成员从 internet 向团队对话中添加可自定义的图像 (称为自定义 meme) 的功能 (**来自 internet 的可自定义图像**)。  <br/><br/>-启用或禁用工作组成员向团队对话 (**可编辑的图像**) 中添加可编辑图像 (称为不干胶标签) 的功能。<br/><br/>-启用或禁用团队成员在 Microsoft 团队聊天和频道 (**组织范围内的 bot**) 中使用 bot 的功能。<br/><br/>-为 Microsoft 团队启用特定的 bot;这不包括 t-机器人, 这是在为组织 (**单个 bot**) 启用 bot 时可使用的团队的帮助机器人。  <br/><br/>-启用或禁用工作组成员添加分机或选项卡 (**分机或选项卡**) 的功能。  <br/><br/>-启用或禁用 Microsoft 团队的专用 bot 的侧面加载 ( **bot 的侧面加载**)。  <br/><br/>-启用或禁用用户向 Microsoft 团队频道 (**通道电子邮件**) 发送电子邮件的功能。  <br/> |
 |更改了团队中成员的角色  <br/> |MemberRoleChanged  <br/> |团队所有者在团队中更改成员的角色。 以下值表示分配给用户的角色类型。  <br/><br/><br/> **1** -指示所有者角色。<br/>**2** -指示成员角色。 <br/>**3** -指示来宾角色。 <br/>Members 属性还包括您的组织的名称和成员的电子邮件地址。  <br/> |
 |更改了团队设置  <br/> |TeamSettingChanged  <br/> | 当团队所有者执行以下活动时, 将记录 TeamSettingChanged 操作。 对于这些活动中的每个活动, 在审核日志搜索结果的 "**项目**" 列中显示了已更改的设置 (如下面的括号中所示) 的说明。  <br/><br/>-更改团队的访问类型。 可以将团队设置为私有或公共 (**团队访问类型**)。 当团队为私有时 (默认设置), 用户只能通过邀请访问团队。 如果团队是公共的, 则任何人都能发现。  <br/><br/>-更改团队的信息分类 (**团队分类**)。  <br/>  例如, 可以将团队数据分类为业务影响高、业务影响或业务影响较低。<br/><br/>-更改团队的名称 (**团队名称**)。  <br/><br/>-更改团队说明 (**工作组说明**)。 <br/><br/>-对任何团队设置所做的更改。 团队所有者可以通过右键单击团队, 单击 "**管理团队**", 然后单击 "**设置**" 选项卡来访问团队客户端中的这些设置。对于这些活动, 已更改的设置的名称将显示在审核日志搜索结果中的**项目**列中。  <br/> |
 |创建的团队  <br/> |TeamCreated  <br/> |用户创建一个新团队。  <br/> |
@@ -647,7 +647,7 @@ ms.locfileid: "30935347"
   
 下表列出了 Yammer 中记录的 Office 365 审核日志中的用户和管理员活动。 若要从 Office 365 审核日志中返回 Yammer 相关的活动, 必须在 "**活动**" 列表中选择 "**显示所有活动的结果**"。 使用 "日期范围" 框和 "**用户**" 列表缩小搜索结果的范围。 
   
-|**易记名称**|**操作**|**说明**|
+|**友好名称**|**Operation**|**说明**|
 |:-----|:-----|:-----|
 |已更改的数据保留策略  <br/> |SoftDeleteSettingsUpdated  <br/> |已验证管理员将网络数据保留策略的设置更新为 "硬删除" 或 "软删除"。 只有经过验证的管理员才能执行此操作。  <br/> |
 |更改了网络配置  <br/> |NetworkConfigurationUpdated  <br/> |网络或经验证的管理员更改 Yammer 网络的配置。 这包括设置导出数据和启用聊天的时间间隔。  <br/> |
@@ -670,7 +670,7 @@ ms.locfileid: "30935347"
    
 ### <a name="microsoft-flow-activities"></a>Microsoft 流活动
 
-可以在审核日志中搜索 Microsoft Flow 中的活动。 这些活动包括创建、编辑和删除流以及更改流权限。 有关流活动审核的信息, 请参阅现已[在 Office 365 Security & 合规中心中提供的博客 Microsoft 流审核事件](https://flow.microsoft.com/blog/security-and-compliance-center)。
+可以在审核日志中搜索 Microsoft Flow 中的活动。 这些活动包括创建、编辑和删除流以及更改流权限。 有关流活动审核的信息, 请参阅现已[在安全 & 合规中心中提供的博客 Microsoft 流审核事件](https://flow.microsoft.com/blog/security-and-compliance-center)。
 
 ### <a name="microsoft-powerapps"></a>Microsoft PowerApps
 
@@ -731,7 +731,7 @@ exchange 管理员审核日志记录 (默认情况下在 office 365 中启用) �
 
 是。 Office 365 管理活动 API 用于以编程方式提取审核日志。  若要开始, 请参阅[Office 365 管理 api](https://docs.microsoft.com/office/office-365-management-api/get-started-with-office-365-management-apis)入门。
 
-**是否有其他方法可以获取除使用 office 365 安全 & 合规中心或 office 365 管理活动 API 之外的审核日志？**
+**是否有其他方法可以获取除使用安全和合规中心或 Office 365 管理活动 API 之外的审核日志？**
 
 不可以。 下面是从 Office 365 审核服务中获取数据的两种方法。 
 
