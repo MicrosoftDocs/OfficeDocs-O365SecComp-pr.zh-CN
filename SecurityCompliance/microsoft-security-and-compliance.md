@@ -3,7 +3,7 @@ title: 现已推出全新的 microsoft 365 安全中心和 Microsoft 365 合规�
 ms.author: deniseb
 author: denisebmsft
 manager: laurawi
-ms.date: 03/27/2019
+ms.date: 04/09/2019
 ms.audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
@@ -11,12 +11,12 @@ ms.collection:
 - M365-security-compliance
 localization_priority: Normal
 description: 为全新的 Microsoft 365 安全中心和合规性中心做好准备
-ms.openlocfilehash: 15e67b5bdd6aca8c5447abe2e4cd12fb15e36760
-ms.sourcegitcommit: e7a776a04ef6ed5e287a33cfdc36aa2d72862b55
+ms.openlocfilehash: 36159872bb42230523fac0a2d006fbb35eac18c6
+ms.sourcegitcommit: 48b77ec6fb499175507fc08f11dc9f5efe6c4858
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "31000685"
+ms.lasthandoff: 04/08/2019
+ms.locfileid: "31518372"
 ---
 # <a name="the-new-microsoft-365-security-center-and-microsoft-365-compliance-center-are-now-generally-available"></a>现已推出全新的 microsoft 365 安全中心和 Microsoft 365 合规性中心
 
@@ -26,7 +26,7 @@ ms.locfileid: "31000685"
 
 新的[Microsoft 365 安全中心](overview-security-center.md)包含一个仪表板, 可帮助您管理各个标识、数据、设备、应用程序和基础结构中的安全性, 并对其进行监视。 此外, 你还可以轻松访问全新的[Microsoft 安全分数](microsoft-secure-score.md)、新的设备威胁报告、新的标识威胁报告以及你的云应用安全报告。 
 
-[![新的 Microsoft 365 安全中心](media/m365-security-center.png)](overview-security-center.md)
+[![N新建 Microsoft 365 安全中心](media/m365-security-center.png)](overview-security-center.md)
 
 当您首次使用 Microsoft 365 安全中心时, 您将看到屏幕顶部的信息, 以帮助您入门。 你还将了解如何轻松导航到你最感兴趣的安全功能。 若要了解详细信息, 请参阅[Microsoft 365 安全中心概述](overview-security-center.md)。
 
@@ -52,25 +52,24 @@ ms.locfileid: "31000685"
 
 ## <a name="what-to-expect"></a>预期内容
 
-### <a name="general-availability"></a>公开可用性!
+### <a name="available-now"></a>现已推出!
 
-现在, 新的 microsoft 365 安全中心和新的 microsoft 365 合规性中心在三月份年3月结束时现已正式推出。 如果你还没有这样做, 你应该很快就可以访问新的 Microsoft 365 安全中心和 Microsoft 365 合规性中心。
+microsoft 365 客户现已推出新的 microsoft 365 安全中心和新的 microsoft 365 合规性中心, 在三月份2019年年底。 
+
+如果你有其他订阅 (如包含 Office 365 security & 合规中心的独立计划), 你将很快能够访问新的 Microsoft 365 安全中心和 Microsoft 365 合规中心。 若要了解详细信息, 请参阅[Microsoft 365 路线图](https://www.microsoft.com/microsoft-365/roadmap)。
 
 ### <a name="easy-access"></a>轻松访问!
 
-通过改进的导航、集成的解决方案和简化的体验, 你将能够查看和访问你最感兴趣的信息, 并利用 Microsoft 365 中功能强大的安全和合规性解决方案。
+通过改进的导航、集成的解决方案和简化的体验, 你将能够查看和访问你最感兴趣的信息, 并利用 Microsoft 365 中功能强大的安全和合规性解决方案。 而在接下来的几个月中添加更多的功能和解决方案, 则仍可使用 Office 365[https://protection.microsoft.com](https://protection.microsoft.com)安全 & 合规中心 ()。
 
 ### <a name="smooth-transition"></a>平滑转换!
 
-您可以预见到新中心的平滑过渡。 在完全推出此更改后, 我们计划淘汰以前的 Microsoft 365 Security & 合规性中心 ([https://protection.microsoft.com](https://protection.microsoft.com))。 管理员体验将发生更改, 但这不会影响你当前的安全和合规性配置。
-
-在推出此更新之后, 如果您的组织拥有 Microsoft 365 企业版 E3 或 E5, 则您的安全和合规性管理员可以执行以下操作:
+您可以预见到新中心的平滑过渡。 最终, 以前的 Microsoft 365 Security & 合规中心 ([https://protection.microsoft.com](https://protection.microsoft.com)) 将停用。 尽管管理员体验会发生更改, 但这不会影响当前的安全和合规性配置。 如果您的组织拥有 Microsoft 365 企业版 E3 或 E5, 则您的安全和合规性管理员可以:
 
 - 直接导航到[https://security.microsoft.com](https://security.microsoft.com)和[https://compliance.microsoft.com](https://compliance.microsoft.com); <br>或  
-- 转到 microsoft 365 管理中心, 然后导航到新的 Microsoft 365 安全中心和 Microsoft 365 合规性中心 (链接位于左侧导航窗格中的 "管理中心" 下)。
+- 转到 Microsoft 365[https://admin.microsoft.com](https://admin.microsoft.com)管理中心 (), 并在导航窗格中进行导航, 单击 "**全部显示**", 然后选择 "**安全性**" 或 "**合规性**"。
 
-> [!TIP]
-> 如果使用的是 office 365 Security & 合规中心 ([https://protection.office.com](http://protection.office.com)), 您仍可以在现有安全 & 合规中心中配置和管理 Office 365 设置。 配置将保留在现有的安全 & 合规性中心以及新的 Microsoft 365 安全中心和 Microsoft 365 合规性中心中。  
+此外, 您仍可以在现有的 Office 365 Security & 合规中心 ([https://protection.office.com](http://protection.office.com)) 中配置和管理设置。 您的配置将保留在现有的 Office 365 安全 & 合规中心和新的 Microsoft 365 安全中心和 microsoft 365 合规性中心中。  
 
 ## <a name="required-licenses-and-permissions"></a>必需的许可证和权限
 
@@ -92,11 +91,11 @@ ms.locfileid: "31000685"
 
 |门户 |全局管理员 |安全管理员、安全操作员或安全读者|合规性管理员或合规性数据管理员 |
 |---------|---------|---------|---------|
-|[Security & 合规性中心](https://protection.office.com) |是 |是  |是 |
+|[安全与合规中心](https://protection.office.com) |是 |是  |是 |
 |[Microsoft 365 安全中心](https://security.microsoft.com) |是  | 是  | 否        |
 |[Microsoft 365 合规中心](https://compliance.microsoft.com) | 是 | 否 | 是 |
 |[合规性管理器](https://aka.ms/compliancemanager) |是 | 是 |是  |
-|[Azure Information Protection](https://docs.microsoft.com/azure/information-protection)（Azure 信息保护） |是 |是 |否 |
+|[Azure 信息保护](https://docs.microsoft.com/azure/information-protection) |是 |是 |否 |
 |[Azure 安全中心](https://docs.microsoft.com/azure/security-center/)  |是 |是 |否 |
 |[Azure 高级威胁防护](https://docs.microsoft.com/azure-advanced-threat-protection/what-is-atp)  |是 |是 |否 |
 |[Windows Defender ATP](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/windows-defender-advanced-threat-protection?ocid=tia-260153000#windows-defender-atp) |是 |是 |否 |
@@ -109,5 +108,10 @@ ms.locfileid: "31000685"
 
 ## <a name="additional-resources"></a>其他资源
 
+[Microsoft 365 安全中心](overview-security-center.md)
+
+[Microsoft 365 合规中心](microsoft-365-compliance-center.md)
+
 [Microsoft 365 路线图](https://www.microsoft.com/microsoft-365/roadmap)
 
+[Office 365 Security & 合规中心服务说明](https://docs.microsoft.com/office365/servicedescriptions/office-365-platform-service-description/office-365-securitycompliance-center)

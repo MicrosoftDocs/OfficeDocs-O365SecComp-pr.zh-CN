@@ -1,22 +1,22 @@
 ---
-title: 欢迎使用全新的 Microsoft 365 合规性中心
+title: 新的 Microsoft 365 合规性中心概述
 ms.author: deniseb
 author: denisebmsft
 manager: laurawi
-ms.date: 03/28/2019
+ms.date: 04/09/2019
 ms.audience: ITPro
 ms.topic: article
 ms.service: o365-seccomp
 localization_priority: Normal
 description: 了解新的 Microsoft 365 合规性中心, 包括它包含的内容、如何获取它以及后续步骤。
-ms.openlocfilehash: d627174fce26be9f200f9fdc4f48f0946a8caf69
-ms.sourcegitcommit: 2c5834235c32b2616e1813ce24eeb3419a09629f
+ms.openlocfilehash: ae608d1aafb803fabe6ed1eba3804b9921bac7b2
+ms.sourcegitcommit: 48b77ec6fb499175507fc08f11dc9f5efe6c4858
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/02/2019
-ms.locfileid: "31026313"
+ms.lasthandoff: 04/08/2019
+ms.locfileid: "31518382"
 ---
-# <a name="welcome-to-your-all-new-microsoft-365-compliance-center"></a>欢迎使用全新的 Microsoft 365 合规性中心
+# <a name="overview-of-the-all-new-microsoft-365-compliance-center"></a>全新 Microsoft 365 合规性中心概述
 
 ## <a name="overview"></a>概述
 
@@ -83,11 +83,15 @@ ms.locfileid: "31026313"
 
 ### <a name="why-am-i-taken-to-the-office-365-security--compliance-center-to-perform-some-tasks-such-as-defining-certain-policies"></a>为什么我转到 Office 365 安全 & 合规中心来执行某些任务, 如定义某些策略？
 
-我们仍在开发 Microsoft 365 合规性中心, 我们将在将来的几个月中添加更多功能和解决方案。 同时, 还必须在安全 & 合规中心中执行一些任务。 在这些情况下, 你将自动转到你可以在其中执行任务的位置, 例如创建或编辑监督策略。
+我们仍在开发 Microsoft 365 合规性中心, 我们将在将来的几个月中添加更多功能和解决方案。 同时, 还必须在 Office 365 Security & 合规中心 ([https://protection.office.com](https://protection.office.com)) 中执行一些任务。 在这些情况下, 你将自动转到你可以在其中执行任务的位置, 例如创建或编辑监督策略。
 
 ### <a name="why-dont-i-see-the-new-microsoft-365-compliance-center-yet"></a>为什么我还看不到新的 Microsoft 365 合规中心？
 
-首先, 请确保您具有适当的[许可证和权限](microsoft-security-and-compliance.md#required-licenses-and-permissions)。 然后, 在处[https://compliance.microsoft.com](https://compliance.microsoft.com)登录。 如果你还没有看到新的合规性中心, 你将很快就会遇到这个问题。
+首先, 请确保您具有适当的[许可证和权限](microsoft-security-and-compliance.md#required-licenses-and-permissions)。 然后, 在处[https://compliance.microsoft.com](https://compliance.microsoft.com)登录。 如果你还没有看到新的合规性中心, 你将很快拥有。
+
+### <a name="i-cant-find-some-of-my-compliance-settings-what-do-i-do"></a>我找不到某些合规性设置。 What do I do?
+
+我们仍在向 Microsoft 365 合规性中心添加功能。 如果找不到任何内容 (如审核日志搜索), 请尝试导航到 Office 365 Security & 合规中心[https://protection.office.com](https://protection.office.com)()。 您的配置将在现有的 Office 365 安全 & 合规中心和新的 Microsoft 365 合规性中心中自动保存。
 
 ## <a name="next-steps"></a>后续步骤
 
