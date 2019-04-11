@@ -17,12 +17,12 @@ ms.custom:
 - Ent_Solutions
 ms.assetid: c9f837af-8d71-4df1-a285-dedb1c5618b3
 description: 摘要：为具有各种信息保护级别的 SharePoint Online 团队网站应用保留标签和数据丢失防护 (DLP) 策略。
-ms.openlocfilehash: be9fe776353af4c420a93e38a0906eeb674ef8a7
-ms.sourcegitcommit: e7a776a04ef6ed5e287a33cfdc36aa2d72862b55
+ms.openlocfilehash: 81173e96ce6e67ee3b513abce4424686abe79e02
+ms.sourcegitcommit: 19d27ff836ee7fa1f8a4e761e04d928f13f4bfd8
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30999155"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "31745254"
 ---
 # <a name="protect-sharepoint-online-files-with-retention-labels-and-dlp"></a>使用保留标签和 DLP 保护 SharePoint Online 文件
 
@@ -56,9 +56,9 @@ ms.locfileid: "30999155"
 
 在此阶段中，针对不同的信息保护级别创建并发布确定的标签。
   
-1. 使用具有安全管理员或公司管理员角色的帐户登录 [Microsoft 365 安全门户](https://security.microsoft.com)。
+1. 使用具有安全管理员或公司管理员角色的帐户登录 [Microsoft 365 合规门户](https://compliance.microsoft.com)。
     
-2. 在浏览器的“**主页 - Microsoft 365 安全**”选项卡中，单击“**分类 > 标签**”。
+2. 在浏览器的“**主页 - Microsoft 365 合规性**”选项卡中，单击“**分类 > 标签**”。
     
 3. 单击“**保留标签 > 创建标签**”。
     
@@ -70,7 +70,7 @@ ms.locfileid: "30999155"
     
 7. 在“**查看设置**”窗格中，单击“**创建标签**”。
     
-8. 对于其他标签，请单击“**创建标签**”，然后重复步骤 4-7。
+8. 对于其他标签，请单击“**创建标签**”，然后根据需要重复步骤 3-7。
     
 
 ### <a name="publish-your-new-labels"></a>发布新标签
@@ -223,7 +223,7 @@ ms.locfileid: "30999155"
 
 [保护 SharePoint Online 网站和文件](secure-sharepoint-online-sites-and-files.md)
   
-[Microsoft 针对政治宣传活动、非营利组织和其他敏捷性组织的安全指南](microsoft-security-guidance-for-political-campaigns-nonprofits-and-other-agile-o.md)
+[Microsoft 针对政治宣传活动、非营利组织和其他敏捷型组织的安全指南](microsoft-security-guidance-for-political-campaigns-nonprofits-and-other-agile-o.md)
   
 [云应用和混合解决方案](https://docs.microsoft.com/office365/enterprise/cloud-adoption-and-hybrid-solutions)
 
