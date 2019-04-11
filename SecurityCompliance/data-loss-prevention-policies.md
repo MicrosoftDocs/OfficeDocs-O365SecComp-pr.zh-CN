@@ -3,7 +3,7 @@ title: 数据丢失防护策略概述
 ms.author: deniseb
 author: denisebmsft
 manager: laurawi
-ms.date: 3/29/2019
+ms.date: 04/11/2019
 ms.audience: ITPro
 ms.topic: conceptual
 f1_keywords:
@@ -15,12 +15,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: 使用 office 365 安全&amp;合规中心中的数据丢失防护 (DLP) 策略, 可以在 office 365 中识别、监视和自动保护敏感信息。
-ms.openlocfilehash: 4117a99afc804fd397deb45087c5058077f9ff60
-ms.sourcegitcommit: e7a776a04ef6ed5e287a33cfdc36aa2d72862b55
+ms.openlocfilehash: da8acd8904ac6a9b1945c8f794bad84a0adc64fb
+ms.sourcegitcommit: 94e9eeab8134a9c4d9004cc16de7da227a0e5cc0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "31000015"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31784103"
 ---
 # <a name="overview-of-data-loss-prevention-policies"></a>数据丢失防护策略概述
 
@@ -56,13 +56,13 @@ ms.locfileid: "31000015"
 
 DLP 策略包含以下基本内容：
   
-- 在何处保护内容**位置**, 如 Exchange online、SharePoint online 和 OneDrive for business 网站, 以及 Microsoft 团队聊天和频道。 
+- 在何处保护内容:**位置**(如 Exchange Online、SharePoint online 和 OneDrive for business 网站), 以及 Microsoft 团队聊天和频道。 
     
 - 何时以及如何通过强制执行由以下部分组成的**规则**来保护此内容： 
     
-  - 在强制执行规则之前内容必须匹配的**条件**。例如, 只查找包含与组织外部人员共享的社会安全号码的内容。 
+  - 在强制执行规则之前内容必须匹配的**条件**。 例如, 规则可能配置为仅查找包含与您的组织外部人员共享的社会安全号码的内容。 
     
-  - 找到满足条件的内容时您希望规则自动执行的**操作**。例如，阻止访问文档，以及向用户和合规部主管发送电子邮件通知。 
+  - 当找到与条件匹配的内容时, 您希望规则自动执行的**操作**。 例如, 可以将规则配置为阻止对文档的访问, 并同时向用户和合规性监察官发送电子邮件通知。 
     
 您可以使用规则来满足特定的保护要求，然后使用 DLP 策略将常见保护要求组合在一起，例如要符合特定法规所需的所有规则。
   
@@ -212,10 +212,14 @@ DLP 策略可帮助保护定义为**敏感信息类型**的敏感信息。 Offic
   
 ## <a name="the-priority-by-which-rules-are-processed"></a>处理规则的优先级
 
-当您在策略中创建规则时, 每个规则都会按其创建顺序分配一个优先级, 即最初创建的规则具有第一个优先级, 创建的规则第二个优先级为第二个, 依此类推。 创建规则后, 不能更改其优先级, 除非将其删除并重新创建。
+当您在策略中创建规则时, 每个规则都会按其创建顺序分配一个优先级, 即最初创建的规则具有第一个优先级, 创建的规则第二个优先级为第二个, 依此类推。 
   
 ![优先级顺序中的规则](media/f7dc06bf-bc6f-485c-bcdb-606edbcf6565.png)
   
+设置多个 DLP 策略后, 可以更改一个或多个策略的优先级。 若要执行此操作, 请选择策略, 选择 "**编辑策略**", 并使用 "**优先级**" 列表来指定其优先级。
+
+![设置策略的优先级](media/dlp-set-policy-priority.png)
+
 按照规则对内容进行评估时, 将按优先级顺序处理规则。 如果内容与多个规则匹配, 将按优先级顺序处理规则, 并强制执行限制性最强的操作。 例如, 如果内容与以下所有规则相匹配, 则强制执行规则 3, 因为它的优先级最高, 最受限制的规则如下:
   
 - 规则 1: 仅通知用户
@@ -244,7 +248,7 @@ DLP 策略可帮助保护定义为**敏感信息类型**的敏感信息。 Offic
   
 - 太多**不**敏感的内容信息与规则相匹配, 也就是说, 误报过多。 
     
-- 敏感信息太少与规则相匹配的内容-换句话说, 保护性操作不**会**对敏感信息强制实施。 
+- 与规则匹配的**** 内容太少, 敏感信息太少。 换句话说, 保护性操作不会对敏感信息强制实施。 
     
 若要解决这些问题, 您可以调整实例数和匹配精度以使内容更难或更轻松地与规则相匹配, 从而调整规则。 规则中使用的每种敏感信息类型都具有实例计数和匹配精度。
   
@@ -403,6 +407,10 @@ DLP 策略可帮助保护定义为**敏感信息类型**的敏感信息。 Offic
 您可以随时禁用 DLP 策略，这会影响策略中的所有规则。 但是, 也可以通过在规则编辑器中切换每条规则的状态来单独关闭这些规则。
   
 ![关闭策略中的规则的选项](media/f7b258ff-1b8b-4127-b580-83c6492f2bef.png)
+
+您还可以更改策略中的多个规则的优先级。 若要执行此操作, 请打开策略以进行编辑。 在某个规则的行中, 选择省略号 (**...**), 然后选择一个选项, 如 "下移" 或 " **** **置于最后**"。
+
+![设置规则优先级](media/dlp-set-rule-priority.png)
   
 ## <a name="dlp-reports"></a>DLP 报告
 
@@ -500,7 +508,7 @@ Office 中的 DLP 策略评估设计不会影响程序的性能或对内容进�
     
 但是, DLP 报告需要跨 Office 365 请求获取数据, 包括 Exchange Online。 出于此原因, 在**Exchange Online powershell 中提供了 DLP 报告的 cmdlet--不在安全&amp;合规中心 powershell**中。 因此, 若要使用 DLP 报告的 cmdlet, 需要执行以下操作:
   
-1. [Connect to Exchange Online using remote PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell?view=exchange-ps)
+1. [使用远程 PowerShell 连接到 Exchange Online](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell?view=exchange-ps)
     
 2. 为 DLP 报告使用以下任一 cmdlet:
     
@@ -510,7 +518,7 @@ Office 中的 DLP 策略评估设计不会影响程序的性能或对内容进�
     
 ## <a name="more-information"></a>更多信息
 
-- [从模板创建 DLP 策略](create-a-dlp-policy-from-a-template.md)
+- [通过模板创建 DLP 策略](create-a-dlp-policy-from-a-template.md)
     
 - [发送通知并显示 DLP 策略的策略提示](use-notifications-and-policy-tips.md)
     
