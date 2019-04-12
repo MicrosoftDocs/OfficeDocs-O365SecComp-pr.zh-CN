@@ -15,12 +15,12 @@ search.appverid:
 - MET150
 ms.assetid: 72bbad69-035b-4d33-b8f4-549a2743e97d
 description: 在安全与合规中心中添加和管理活动警报, 以便 Office 365 会在用户在 Office 365 中执行特定活动时向您发送电子邮件通知。
-ms.openlocfilehash: 2bbd5b02ec9497b798c948ac58e5e6ac1501bbc4
-ms.sourcegitcommit: e7a776a04ef6ed5e287a33cfdc36aa2d72862b55
+ms.openlocfilehash: d71763d4633c3396afdf58400e9cb7b8b8a468e8
+ms.sourcegitcommit: 6c9340e4eb221bf81472ff3f1ae25ae21aaf5297
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30999655"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31813983"
 ---
 # <a name="create-activity-alerts-in-the-office-365"></a>在 Office 365 中创建活动通知
 
@@ -31,7 +31,7 @@ ms.locfileid: "30999655"
 > [!NOTE]
 > 我们建议您开始使用安全与合规中心中的通知策略, 而不是创建新的活动通知。 警报策略提供了一些附加功能, 如创建在任何用户执行指定活动时触发警报的通知策略, 以及在安全与合规中心的 "**查看通知**" 页上显示警报的功能。 有关详细信息, 请参阅[警报策略](alert-policies.md)。
   
-## <a name="before-you-begin"></a>开始之前
+## <a name="before-you-begin"></a>准备工作
 
 - 您必须在安全 & 合规中心中向您分配 "组织配置" 角色, 以管理活动通知。 默认情况下, 此角色分配给合规性管理员和组织管理角色组。 有关向角色组添加成员的详细信息, 请参阅[为用户提供对安全 & 合规性中心的访问权限](grant-access-to-the-security-and-compliance-center.md)。
     
@@ -43,7 +43,7 @@ ms.locfileid: "30999655"
     
 ## <a name="create-an-activity-alert"></a>创建活动通知
 
-1. 转到 [https://compliance.microsoft.com/#/managealerts](https://compliance.microsoft.com/#/managealerts)。
+1. 转到 [https://protection.office.com/managealerts](https://protection.office.com/managealerts)。
     
 2. 使用工作或学校帐户登录到 Office 365。
     
@@ -82,7 +82,7 @@ ms.locfileid: "30999655"
 
 您可以关闭活动通知, 以便不发送电子邮件通知。 关闭活动通知后, 它仍显示在您的组织的活动通知列表中, 您仍可以查看其属性。
   
-1. 转到 [https://compliance.microsoft.com/#/managealerts](https://compliance.microsoft.com/#/managealerts)。
+1. 转到 "转[https://protection.office.com/managealerts](https://protection.office.com/managealerts)到"。
     
 2. 使用工作或学校帐户登录到 Office 365。
     
@@ -111,7 +111,7 @@ ms.locfileid: "30999655"
     |:-----|:-----|:-----|
     |查看网站上的文档。  <br/> |访问的文件  <br/> |文件和文件夹活动  <br/> |
     |编辑或更改文档。  <br/> |修改的文件  <br/> |文件和文件夹活动  <br/> |
-    |与组织外部的用户共享文档。  <br/> |共享文件、文件夹或网站  <br/> 和  <br/> 已创建共享邀请  <br/> 有关详细信息, 请参阅[在 Office 365 审核日志中使用共享审核](use-sharing-auditing.md)。  <br/> |共享和访问请求活动  <br/> |
+    |与组织外部的用户共享文档。  <br/> |共享文件、文件夹或网站  <br/> And  <br/> 已创建共享邀请  <br/> 有关详细信息, 请参阅[在 Office 365 审核日志中使用共享审核](use-sharing-auditing.md)。  <br/> |共享和访问请求活动  <br/> |
     |上载或下载文档。  <br/> |上载的文件  <br/> 和/或  <br/> 下载文件  <br/> |文件和文件夹活动  <br/> |
     |更改对网站的访问权限。  <br/> |修改的网站权限  <br/> |网站管理活动  <br/> |
 
@@ -120,7 +120,7 @@ ms.locfileid: "30999655"
     |**当用户执行此 .。。**|**为此活动创建通知**|**活动组**|
     |:-----|:-----|:-----|
     |从邮箱中永久删除 (清除) 电子邮件。  <br/> |已清除邮箱中的邮件  <br/> | Exchange 邮箱活动  <br/> |
-    |从共享邮箱发送电子邮件。  <br/> |使用 "代理发送" 权限发送邮件  <br/> 和  <br/> 使用 "代表发送" 权限发送的邮件  <br/> | Exchange 邮箱活动  <br/> |
+    |从共享邮箱发送电子邮件。  <br/> |使用 "代理发送" 权限发送邮件  <br/> And  <br/> 使用 "代表发送" 权限发送的邮件  <br/> | Exchange 邮箱活动  <br/> |
    
 - 您还可以使用 Security & 合规性中心 PowerShell 中的**set-activityalert**和**set-activityalert** cmdlet 来创建和编辑活动通知。 如果您使用这些 cmdlet 创建或编辑活动通知, 请记住以下几点: 
     

@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: 53390468-eec6-45cb-b6cd-7511f9c909e4
 description: 使用 Office 365 或 Microsoft 365 中的合规性中心中的内容搜索工具搜索邮箱、SharePoint Online 网站、OneDrive 帐户、Microsoft 团队、Office 365 组和 Skype for business 对话中的内容。 您可以使用关键字搜索查询和搜索条件来缩小搜索结果的范围。 然后, 您可以预览和导出搜索结果。 内容搜索也是一个有效的工具, 可用于搜索可能与 GDPR 数据主体请求相关的内容。
-ms.openlocfilehash: c9cbf135ce44f26322ca3a6972e0d8a7b749fc8c
-ms.sourcegitcommit: e7a776a04ef6ed5e287a33cfdc36aa2d72862b55
+ms.openlocfilehash: 67b32dcc6efcc096b9952be41380a8dc3700a668
+ms.sourcegitcommit: 6c9340e4eb221bf81472ff3f1ae25ae21aaf5297
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "31001015"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31814063"
 ---
 # <a name="content-search-in-office-365"></a>Office 365 中的内容搜索
 
@@ -44,7 +44,7 @@ ms.locfileid: "31001015"
 
 若要访问**内容搜索**页以运行搜索和预览和导出搜索结果, 管理员、合规专员或电子数据展示管理器必须是 Security & 合规性中心中的电子数据展示管理器角色组的成员。 有关详细信息, 请参阅[分配电子数据展示权限](assign-ediscovery-permissions.md)。
   
-1. 转到[https://compliance.microsoft.com](https://compliance.microsoft.com)并使用 Office 365 电子邮件地址和密码登录。
+1. 转到[https://protection.office.com](https://protection.office.com)并使用 Office 365 电子邮件地址和密码登录。
     
 2. 单击 "**搜索** \> **内容搜索**"。
     

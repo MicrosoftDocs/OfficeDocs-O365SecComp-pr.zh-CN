@@ -15,22 +15,22 @@ search.appverid:
 - MET150
 ms.assetid: 84a595b8-cd77-4f66-ac52-57a33ddd4773
 description: 了解如何使用网络上传将 RMS 加密的 PST 文件导入 Office 365 中的用户邮箱。
-ms.openlocfilehash: 69bbd0082f02bd60101f59c2870bc8adfdc95fda
-ms.sourcegitcommit: fb50bf2f2c9d780c911f245a2f78c6bb5e357f67
+ms.openlocfilehash: 46f77f3fe173da23e08284884bb85c69ab53f710
+ms.sourcegitcommit: 6c9340e4eb221bf81472ff3f1ae25ae21aaf5297
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/28/2019
-ms.locfileid: "30950459"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31814153"
 ---
 # <a name="use-network-upload-to-import-rms-encrypted-pst-files-to-office-365"></a>使用网络上载将 RMS 加密的 PST 文件导入到 Office 365
 
-**本文适用于管理员。您是否尝试将 PST 文件导入到自己的邮箱？请参阅[从 Outlook .pst 文件导入电子邮件、联系人和日历](https://go.microsoft.com/fwlink/p/?LinkID=785075)**
+**这篇文章面向对象为管理员。 您正在尝试将 PST 文件导入到您自己的邮箱吗？ 请参阅[从 Outlook .pst 文件导入电子邮件、联系人和日历](https://go.microsoft.com/fwlink/p/?LinkID=785075)**
    
 使用 "网络上载" 选项和 Office 365 导入服务将 PST 文件导入到用户邮箱。 网络上载是指将 PST 文件上载到 Microsoft 云中的临时存储区域。 然后, Office 365 导入服务将 PST 文件从存储区域复制到目标用户邮箱。 导入服务的新功能允许您在将 PST 文件上传和存储到 Microsoft 云之前对其进行加密。 在将这些文件导入到用户邮箱中时，不会对这些文件进行加密。 
   
 以下是将 PST 文件加密和导入到 Office 365 邮箱所需的步骤:
   
-[步骤 1: 为 PST 导入设置 Azure 权限管理](#step-1-set-up-azure-rights-management-for-pst-import)
+[步骤 1：对 PST 导入设置 Azure 权限管理](#step-1-set-up-azure-rights-management-for-pst-import)
 
 [步骤 2：生成 PST 导入的加密密钥](#step-2-generate-an-encryption-key-for-pst-import)
 
@@ -51,15 +51,15 @@ ms.locfileid: "30950459"
   
 有关将数据导入到 office 365 的详细信息, 请参阅将[组织 PST 文件导入到 office 365 概述](importing-pst-files-to-office-365.md)。
   
-## <a name="before-you-begin"></a>开始之前
+## <a name="before-you-begin"></a>准备工作
 
 - 您必须在 Exchange Online 中分配 "邮箱导入导出" 角色, 才能将 PST 文件导入到 Office 365 邮箱。 默认情况下, 此角色不会分配给 Exchange Online 中的任何角色组。 You can add the Mailbox Import Export role to the Organization Management role group. Or you can create a new role group, assign the Mailbox Import Export role, and then add yourself as a member. 有关详细信息, 请参阅[管理角色组](https://go.microsoft.com/fwlink/p/?LinkId=730688)中的 "向角色组添加角色" 或 "创建角色组" 部分。
     
-    此外, 若要在 Office 365 安全&amp;合规中心中创建导入作业, 必须满足以下条件之一:
+    此外, 若要在 Security & 合规性中心中创建导入作业, 必须满足以下条件之一:
     
   - 您必须在 Exchange Online 中向您分配 "邮件收件人" 角色。 By default, this role is assigned to the Organization Management and Recipient Management roles groups.
     
-    或者
+    或
     
   - 您必须是 Office 365 组织中的全局管理员。
     
@@ -116,7 +116,7 @@ Azure RMS 默认情况下处于禁用状态, 但你或组织中的其他管理�
 
     使用下表确定正确的 RMS 密钥共享您组织所处位置。
     
-    |**Location**|**RMS 关键共享位置**|
+    |**位置**|**RMS 关键共享位置**|
     |:-----|:-----|
     |北美  <br/> | `https://sp-rms.na.aadrm.com/TenantManagement/ServicePartner.svc` <br/> |
     |欧盟  <br/> | `https://sp-rms.eu.aadrm.com/TenantManagement/ServicePartner.svc` <br/> |
@@ -273,7 +273,7 @@ Azure RMS 默认情况下处于禁用状态, 但你或组织中的其他管理�
     | `/protect-tenantid:` <br/> |指定你的 Azure RMS 组织的标识。 使用您在步骤 3 `BPOSId`中获取的属性的值。  <br/> | `/protect-tenantid:42745b33-2a5c-4726-8a2a-ca43caa0f74b` <br/> |
     | `/protect-key:` <br/> |指定您在步骤 2 中获得的对称密钥。 请务必用双引号 (" ") 引住此参数的值。  <br/> | `/protect-key:"l+R+Umc5RGmSBh1oW+DoyMxm/h5h2JJXFcNOFiNp867="` <br/> |
     | `/transfer:` <br/> |指定您通过网络上载 PST 文件还是将它们传送到硬盘上。 该值`upload`指示你正在通过网络上传文件。 该值`drive`指示你要在硬盘驱动器上传送 pst。  <br/> | `/transfer:upload` <br/> |
-    | `/upload-dest:` <br/> |指定要将 PST 文件上载到的 Office 365 中的目标;这是你的组织的 Azure 存储位置。 此参数的值由您在步骤4中复制的 SAS URL 中的网络上载 URL 组成。 请务必用双引号 (" ") 引住此参数的值。  <br/><br/> **提示:** Optional您可以在 Azure 存储位置指定一个子文件夹, 将加密的 PST 文件上载到。 为此, 可在网络上载 URL 中添加子文件夹位置 (在 "ingestiondata" 之后)。 第一个示例未指定子文件夹;这意味着 pst 将被上载到 Azure 存储位置的根 (名为*ingestiondata* )。 第二个示例将 PST 文件上载到 Azure 存储位置中的一个子文件夹 (名为*EncryptedPSTs* )。           | `/upload-dest:"https://3c3e5952a2764023ad14984.blob.core.windows.net/ingestiondata"` <br/> 或者  <br/>  `/upload-dest:"https://3c3e5952a2764023ad14984.blob.core.windows.net/ingestiondata/EncryptedPSTs"` <br/> |
+    | `/upload-dest:` <br/> |指定要将 PST 文件上载到的 Office 365 中的目标;这是你的组织的 Azure 存储位置。 此参数的值由您在步骤4中复制的 SAS URL 中的网络上载 URL 组成。 请务必用双引号 (" ") 引住此参数的值。  <br/><br/> **提示:** Optional您可以在 Azure 存储位置指定一个子文件夹, 将加密的 PST 文件上载到。 为此, 可在网络上载 URL 中添加子文件夹位置 (在 "ingestiondata" 之后)。 第一个示例未指定子文件夹;这意味着 pst 将被上载到 Azure 存储位置的根 (名为*ingestiondata* )。 第二个示例将 PST 文件上载到 Azure 存储位置中的一个子文件夹 (名为*EncryptedPSTs* )。           | `/upload-dest:"https://3c3e5952a2764023ad14984.blob.core.windows.net/ingestiondata"` <br/> 或  <br/>  `/upload-dest:"https://3c3e5952a2764023ad14984.blob.core.windows.net/ingestiondata/EncryptedPSTs"` <br/> |
     | `/upload-destSAS:` <br/> |为你的组织指定 SAS 密钥。 此参数的值由您在步骤4中复制的 sas URL 中的 sas 密钥组成。 请注意, sa 密钥中的第一个字符是问号 ("？")。 请务必用双引号 (" ") 引住此参数的值。  <br/> | `/upload-destSAS:"?sv=2012-02-12&amp;se=9999-12-31T23%3A59%3A59Z&amp;sr=c&amp;si=IngestionSasForAzCopy201601121920498117&amp;sig=Vt5S4hVzlzMcBkuH8bH711atBffdrOS72TlV1mNdORg%3D"` <br/> |
     | `/recurse` <br/> |此可选开关指定递归模式, 以便 o365importtool.zip 工具将复制位于由`/srcdir:`参数指定的源目录中的子文件夹中的 pst 文件。  <br/><br/> **注意:** 如果包含此开关, 则在上载后, 在 Azure 存储位置中, 子文件夹中的 PST 文件将具有不同的文件路径。 您必须在您在步骤 7 中创建的 CSV 文件中指定确切的文件路径名。           | `/recurse` <br/> |
    
@@ -363,12 +363,12 @@ Microsoft Azure 存储资源管理器处于预览阶段。
     |**参数**|**说明**|**示例**|
     |:-----|:-----|:-----|
     | `Workload` <br/> |指定要将数据导入到的 Office 365 服务。 若要将 PST 文件导入到用户`Exchange`邮箱, 请使用。  <br/> | `Exchange` <br/> |
-    | `FilePath` <br/> |指定在第5步中将 PST 文件上载到的 Azure 存储位置中的文件夹位置。  <br/>  如果在第5步中的`/upload-dest:`参数中未将可选子文件夹名称包含在网络 URL 中, 则在 CSV 文件中将此参数留空。 如果包含子文件夹名称, 请在此参数中指定它。 此参数的值区分大小写。 无论采用哪种方式, 都*不要*在`FilePath`参数的值中包含 "ingestiondata"。  <br/> <br/>**重要说明:** 如果在步骤5的`/upload-dest:`参数中的 SAS URL 中包含可选子文件夹名称, 则文件路径名称的大小写必须与您使用的大小写相同。 例如, 如果您在步骤`EncryptedPSTs` 5 中用于子文件夹名称, 然后在 CSV `encryptedpsts`文件中`FilePath`的参数中使用, 则 PST 文件的导入将失败。 请务必在两个实例中使用相同的大小写。           |（保留为空白）  <br/> 或者  <br/>  `EncryptedPSTs` <br/> |
+    | `FilePath` <br/> |指定在第5步中将 PST 文件上载到的 Azure 存储位置中的文件夹位置。  <br/>  如果在第5步中的`/upload-dest:`参数中未将可选子文件夹名称包含在网络 URL 中, 则在 CSV 文件中将此参数留空。 如果包含子文件夹名称, 请在此参数中指定它。 此参数的值区分大小写。 无论采用哪种方式, 都*不要*在`FilePath`参数的值中包含 "ingestiondata"。  <br/> <br/>**重要说明:** 如果在步骤5的`/upload-dest:`参数中的 SAS URL 中包含可选子文件夹名称, 则文件路径名称的大小写必须与您使用的大小写相同。 例如, 如果您在步骤`EncryptedPSTs` 5 中用于子文件夹名称, 然后在 CSV `encryptedpsts`文件中`FilePath`的参数中使用, 则 PST 文件的导入将失败。 请务必在两个实例中使用相同的大小写。           |（保留为空白）  <br/> 或  <br/>  `EncryptedPSTs` <br/> |
     | `Name` <br/> |指定要导入到用户邮箱的 PST 文件的名称。  此参数的值区分大小写。 由于已对上载到 Azure 存储位置的 PST 文件进行加密, 因此会`.pfile`将扩展名添加到 PST 文件名中。 您必须将`.pfile`扩展名添加到 CSV 文件中的 PST 文件的名称。  <br/><br/> **重要说明:** CSV 文件中的 pst 文件名的大小写必须与上传到第5步中的 Azure 存储位置的 pst 文件相同。 例如, 如果在 CSV 文件`annb.pst.pfile`的`Name`参数中使用, 但实际的 pst 文件的名称是`AnnB.pst`, 则该 pst 文件的导入将失败。 请确保 CSV 文件中的 PST 名称使用与实际 pst 文件相同的大小写。           | `annb.pst.pfile` <br/> |
-    | `Mailbox` <br/> |指定要将 PST 文件导入到其中的邮箱的电子邮件地址。   <br/> 若要将 PST 文件导入到非活动邮箱, 您必须为此参数指定邮箱 GUID。 若要获取此 GUID, 请在 Exchange Online 中运行以下 PowerShell 命令:`Get-Mailbox -InactiveMailboxOnly <identity of inactive mailbox> | FL Guid` <br/><br/> **注意:** 在某些情况下, 您可能有多个邮箱具有相同的电子邮件地址, 其中一个邮箱是活动邮箱, 另一个邮箱处于软删除 (或非活动) 状态。 在这些情况下, 您可以指定邮箱 GUID, 以唯一标识要将 PST 文件导入到的邮箱。 若要获取活动邮箱的此 GUID, 请运行以下 PowerShell 命令`Get-Mailbox - <identity of active mailbox> | FL Guid`:。 若要获取软删除 (或非活动) 邮箱的 GUID, 请运行以下命令`Get-Mailbox - <identity of soft-deleted or inactive mailbox> -SoftDeletedMailbox | FL Guid`           | `annb@contoso.onmicrosoft.com` <br/> 或者  <br/>  `2d7a87fe-d6a2-40cc-8aff-1ebea80d4ae7` <br/> |
-    | `IsArchive` <br/> | 指定是否要将 PST 文件导入到用户的存档邮箱。 有两个选项：  <br/> **FALSE**将 PST 文件导入到用户的主邮箱。  <br/> **TRUE**将 PST 文件导入到用户的存档邮箱。  <br/>  If you leave this parameter blank, the PST file is imported to the user's primary mailbox.  <br/><br/> **注意:** 若要将 PST 文件导入到其主邮箱是本地邮箱的用户的基于云的存档邮箱, 只需为此参数指定**TRUE** , 并为该`Mailbox`参数指定用户的内部部署邮箱的电子邮件地址。           | `FALSE` <br/> 或者  <br/>  `TRUE` <br/> |
-    | `TargetRootFolder` <br/> | 指定将 PST 文件导入到的邮箱文件夹。  <br/>  如果将此参数留空, 则会将 PST 导入到位于邮箱根级别 (与 "收件箱" 文件夹和其他默认邮箱文件夹相同的级别) 的名为 "**导入**" 的新文件夹中。  <br/>  如果指定`/`, 则 PST 文件中的项目将直接导入到用户的 "收件箱" 文件夹中。  <br/>  如果指定`/<foldername>`, 则 PST 文件中的项目将被导入到名为* \<"\> *文件夹名称" 的子文件夹中。 例如, 如果使用`/ImportedPst`, 则会将项目导入到名为**ImportedPst**的子文件夹中。 此子文件夹将位于用户的 "收件箱" 文件夹中。  <br/><br/> **提示:** 请考虑运行几个测试批处理, 以试用此参数, 以便您可以确定将 pst 文件导入到的最佳文件夹位置。           |（保留为空白）  <br/> 或者  <br/>  `/` <br/> 或者  <br/>  `/ImportedPst` <br/> |
-    | `ContentCodePage` <br/> |此可选参数指定用于以 ANSI 文件格式导入 PST 文件的代码页的数值。 此参数用于从中文、日语和朝鲜语 (CJK) 组织导入 PST 文件, 这是因为这些语言通常使用双字节字符集 (DBCS) 进行字符编码。 如果未使用此参数导入使用 DBCS 作为邮箱文件夹名称的语言的 PST 文件, 则在导入这些文件夹名称时通常会出现乱码。 有关要用于此参数的受支持值的列表, 请参阅[代码页标识符](https://go.microsoft.com/fwlink/p/?LinkId=328514)。  <br/><br/> **注意:** 如前所述, 这是一个可选参数, 无需将其包含在 CSV 文件中。 或者, 可以将其包含在一个或多个行中, 并为其保留值为空。           |（保留为空白）  <br/> 或者  <br/>  `932`(ANSI/OEM 日语的代码页标识符)  <br/> |
+    | `Mailbox` <br/> |指定要将 PST 文件导入到其中的邮箱的电子邮件地址。   <br/> 若要将 PST 文件导入到非活动邮箱, 您必须为此参数指定邮箱 GUID。 若要获取此 GUID, 请在 Exchange Online 中运行以下 PowerShell 命令:  `Get-Mailbox -InactiveMailboxOnly <identity of inactive mailbox> | FL Guid` <br/><br/> **注意:** 在某些情况下, 您可能有多个邮箱具有相同的电子邮件地址, 其中一个邮箱是活动邮箱, 另一个邮箱处于软删除 (或非活动) 状态。 在这些情况下, 您可以指定邮箱 GUID, 以唯一标识要将 PST 文件导入到的邮箱。 若要获取活动邮箱的此 GUID, 请运行以下 PowerShell 命令`Get-Mailbox - <identity of active mailbox> | FL Guid`:。 若要获取软删除 (或非活动) 邮箱的 GUID, 请运行以下命令  `Get-Mailbox - <identity of soft-deleted or inactive mailbox> -SoftDeletedMailbox | FL Guid`           | `annb@contoso.onmicrosoft.com` <br/> 或  <br/>  `2d7a87fe-d6a2-40cc-8aff-1ebea80d4ae7` <br/> |
+    | `IsArchive` <br/> | 指定是否要将 PST 文件导入到用户的存档邮箱。 有两个选项：  <br/> **FALSE**将 PST 文件导入到用户的主邮箱。  <br/> **TRUE**将 PST 文件导入到用户的存档邮箱。  <br/>  If you leave this parameter blank, the PST file is imported to the user's primary mailbox.  <br/><br/> **注意:** 若要将 PST 文件导入到其主邮箱是本地邮箱的用户的基于云的存档邮箱, 只需为此参数指定**TRUE** , 并为该`Mailbox`参数指定用户的内部部署邮箱的电子邮件地址。           | `FALSE` <br/> 或  <br/>  `TRUE` <br/> |
+    | `TargetRootFolder` <br/> | 指定将 PST 文件导入到的邮箱文件夹。  <br/>  如果将此参数留空, 则会将 PST 导入到位于邮箱根级别 (与 "收件箱" 文件夹和其他默认邮箱文件夹相同的级别) 的名为 "**导入**" 的新文件夹中。  <br/>  如果指定`/`, 则 PST 文件中的项目将直接导入到用户的 "收件箱" 文件夹中。  <br/>  如果指定`/<foldername>`, 则 PST 文件中的项目将被导入到名为* \<"\> *文件夹名称" 的子文件夹中。 例如, 如果使用`/ImportedPst`, 则会将项目导入到名为**ImportedPst**的子文件夹中。 此子文件夹将位于用户的 "收件箱" 文件夹中。  <br/><br/> **提示:** 请考虑运行几个测试批处理, 以试用此参数, 以便您可以确定将 pst 文件导入到的最佳文件夹位置。           |（保留为空白）  <br/> 或  <br/>  `/` <br/> 或  <br/>  `/ImportedPst` <br/> |
+    | `ContentCodePage` <br/> |此可选参数指定用于以 ANSI 文件格式导入 PST 文件的代码页的数值。 此参数用于从中文、日语和朝鲜语 (CJK) 组织导入 PST 文件, 这是因为这些语言通常使用双字节字符集 (DBCS) 进行字符编码。 如果未使用此参数导入使用 DBCS 作为邮箱文件夹名称的语言的 PST 文件, 则在导入这些文件夹名称时通常会出现乱码。 有关要用于此参数的受支持值的列表, 请参阅[代码页标识符](https://go.microsoft.com/fwlink/p/?LinkId=328514)。  <br/><br/> **注意:** 如前所述, 这是一个可选参数, 无需将其包含在 CSV 文件中。 或者, 可以将其包含在一个或多个行中, 并为其保留值为空。           |（保留为空白）  <br/> 或  <br/>  `932` (ANSI/OEM 日语的代码页标识符)  <br/> |
     | `SPFileContainer` <br/> |对于 PST 导入，将该参数留空。   <br/> |不适用  <br/> |
     | `SPManifestContainer` <br/> |对于 PST 导入，将该参数留空。   <br/> |不适用  <br/> |
     | `SPSiteUrl` <br/> |对于 PST 导入，将该参数留空。   <br/> |不适用  <br/> |

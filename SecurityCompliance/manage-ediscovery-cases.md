@@ -10,12 +10,12 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: 9a00b9ea-33fd-4772-8ea6-9d3c65e829e6
 description: 使用安全 & 合规性中心创建电子数据展示保留, 以及访问和管理组织中的电子数据展示案例。
-ms.openlocfilehash: 84cb7eeab55e157f42146f6a0586d32542584680
-ms.sourcegitcommit: e7a776a04ef6ed5e287a33cfdc36aa2d72862b55
+ms.openlocfilehash: 209f31187ad01ffa3e06cf8a5825c4538715fc7d
+ms.sourcegitcommit: 6c9340e4eb221bf81472ff3f1ae25ae21aaf5297
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "31000445"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31814133"
 ---
 # <a name="manage-ediscovery-cases-in-the-security--compliance-center"></a>在安全与合规中心管理电子数据展示事例
 
@@ -25,7 +25,7 @@ ms.locfileid: "31000445"
   
 使用以下工作流在安全 & 合规性中心和高级电子数据展示中设置和使用电子数据展示事例。
   
-[Step 1: Assign eDiscovery permissions to potential case members](manage-ediscovery-cases.md#step1_1)
+[步骤 1：向潜在事例成员分配电子数据展示权限](manage-ediscovery-cases.md#step1_1)
   
 [步骤 2: 创建新事例](manage-ediscovery-cases.md#step2_1)
   
@@ -45,7 +45,7 @@ ms.locfileid: "31000445"
   
 [Optional步骤 10: 重新打开已关闭的案例](manage-ediscovery-cases.md#reopencase_1)
   
-[详细信息](manage-ediscovery-cases.md#moreinfo_1)
+[更多信息](manage-ediscovery-cases.md#moreinfo_1)
   
 ## <a name="step-1-assign-ediscovery-permissions-to-potential-case-members"></a>步骤 1：向潜在事例成员分配电子数据展示权限
 <a name="step1_1"> </a>
@@ -73,7 +73,7 @@ ms.locfileid: "31000445"
   
  **分配电子数据展示权限：**
   
-1. 转到 [https://compliance.microsoft.com](https://compliance.microsoft.com)。
+1. 转到 [https://protection.office.com](https://protection.office.com)。
     
 2. 使用工作或学校帐户登录到 Office 365。
     
@@ -94,7 +94,7 @@ ms.locfileid: "31000445"
 
 下一步是创建新的电子数据展示事例。 你必须是电子数据展示管理员角色组的成员才能创建电子数据展示事例。 如前所述, 在安全 & 合规中心中创建新事例之后, 如果您的组织有 Office 365 E5 订阅, 则您 (和其他事例成员) 将能够在高级电子数据展示中访问这种同一种情况。
   
-1. 转到 [https://compliance.microsoft.com](https://compliance.microsoft.com)。
+1. 转到 [https://protection.office.com](https://protection.office.com)。
     
 2. 使用工作或学校帐户登录到 Office 365。
     

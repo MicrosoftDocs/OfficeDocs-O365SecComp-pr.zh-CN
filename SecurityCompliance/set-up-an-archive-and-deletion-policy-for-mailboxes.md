@@ -17,12 +17,12 @@ search.appverid:
 - BCS160
 ms.assetid: ec3587e4-7b4a-40fb-8fb8-8aa05aeae2ce
 description: 在 Office 365 中创建可自动将项目移动到用户的存档邮箱的存档和删除策略。
-ms.openlocfilehash: 87e155869c6740dd839c09e3e31e0cb819dc5d37
-ms.sourcegitcommit: 54a2cbe5d13f448e0c28655bdf88deb9e5434cac
+ms.openlocfilehash: d1dafb145564e6db7e0df7505cff09d10a72e3af
+ms.sourcegitcommit: 6c9340e4eb221bf81472ff3f1ae25ae21aaf5297
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/27/2019
-ms.locfileid: "30935267"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31814013"
 ---
 # <a name="set-up-an-archive-and-deletion-policy-for-mailboxes-in-your-office-365-organization"></a>为 Office 365 组织中的邮箱设置存档和删除策略
 
@@ -44,7 +44,7 @@ ms.locfileid: "30935267"
     
 您可以按照本文中的部分或全部步骤操作, 为自己组织中的邮箱设置存档和删除策略。 我们建议您先对几个邮箱测试此过程, 然后再在组织中的所有邮箱上实施此过程。
   
-## <a name="before-you-begin"></a>开始之前
+## <a name="before-you-begin"></a>准备工作
 
 - 您必须是 Office 365 组织中的全局管理员才能执行本主题中的步骤。 
     
@@ -64,7 +64,7 @@ ms.locfileid: "30935267"
 2. Sign in to Office 365 using your global administrator account.
     
     
-3. 在安全&amp;合规性中心中, 转到 "**数据调控** \> **存档**"。
+3. 在安全 & 合规性中心中, 转到 "**数据调控** \> **存档**"。
     
     将显示组织中的邮箱列表以及相应的存档邮箱是否已启用或已禁用。 
     
@@ -85,7 +85,7 @@ ms.locfileid: "30935267"
     
     ![已启用存档邮箱的邮箱的列表](media/61a7cb97-1bed-4808-aa5f-b6b761cfa8de.png)
   
-8. 保持 "安全&amp;合规性" 中心处于打开状态。 你将在下一步中使用它。
+8. 保持安全 & 合规性中心处于打开状态。 你将在下一步中使用它。
     
 ## <a name="step-2-create-new-retention-tags-for-the-archive-and-deletion-policies"></a>步骤 2: 为存档和删除策略创建新的保留标记
 
@@ -99,11 +99,11 @@ ms.locfileid: "30935267"
     
 若要创建新的保留标记, 您将在 exchange Online 组织中使用 exchange 管理中心 (EAC)。
   
-1. 在 "安全&amp;合规性中心" 中, 单击左上角的应用启动器, 然后单击 "**管理**" 磁贴。 
+1. 在 "安全 & 合规性中心" 中, 单击左上角的应用启动器, 然后单击 "**管理**" 磁贴。 
     
-2. 在 Office 365 管理中心的左侧导航窗格中, 单击 "**管理中心**", 然后单击 " **Exchange**"。
+2. 在 Microsoft 365 管理中心的左侧导航窗格中, 单击 "**管理中心**", 然后单击 " **Exchange**"。
     
-    ![Screenshot shows the Office 365 admin center with the Admin centers option expanded and Exchange selected.](media/47399df2-0bc4-42e2-b183-07750a46bc68.png)
+    ![屏幕截图显示了使用 "管理中心" 选项展开并选择 "Exchange" 的 Microsoft 365 管理中心。](media/47399df2-0bc4-42e2-b183-07750a46bc68.png)
   
 3. 在 EAC 中, 转到 "**合规性管理** \> " "**保留标记**"
     
@@ -301,13 +301,13 @@ ms.locfileid: "30935267"
     ```
 4. 您可以在步骤2中重新运行该命令, 以验证分配给默认邮箱计划的保留策略是否已更改。
 
-## <a name="more-information"></a>详细信息
+## <a name="more-information"></a>更多信息
 
 - 保留期限是如何计算的？ 邮箱项目的保留期限是根据传递日期或邮件的创建日期计算的, 例如未发送但由用户创建的草稿邮件。 When the Managed Folder Assistant processes items in a mailbox, it stamps a start date and an expiration date for all items that have retention tags with the Delete and Allow Recovery or Permanently Delete retention action. 具有存档标记的项目标记有移动日期。 
     
 - 下表提供了有关添加到自定义保留策略的每个保留标记的详细信息, 该保留策略是按照本主题中的步骤创建的。
     
-    |**保留标记**|**此标记执行的操作**|**内置的还是自定义的？**|**类型**|
+    |**保留标记**|**此标记执行的操作**|**内置的还是自定义的？**|**Type**|
     |:-----|:-----|:-----|:-----|
     |Alpine 住宅3年后移动到存档  <br/> |将1095天 (3 年) 的项目移至存档邮箱。  <br/> |自定义 (请参阅[第2步: 为存档和删除策略创建新的保留标记](#step-2-create-new-retention-tags-for-the-archive-and-deletion-policies))  <br/> |默认策略标记 (存档);此标记将自动应用于整个邮箱。  <br/> |
     |Alpine 住宅7年永久删除  <br/> |将主邮箱或存档邮箱中的项目永久删除 (如果有7年)。  <br/> |自定义 (请参阅[第2步: 为存档和删除策略创建新的保留标记](#step-2-create-new-retention-tags-for-the-archive-and-deletion-policies))  <br/> |默认策略标记 (删除);此标记将自动应用于整个邮箱。  <br/> |

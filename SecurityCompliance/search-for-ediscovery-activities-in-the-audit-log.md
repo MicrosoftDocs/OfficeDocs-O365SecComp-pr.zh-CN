@@ -12,12 +12,12 @@ localization_priority: Normal
 search.appverid: MOE150
 ms.assetid: 67cc7f42-a53d-4751-b929-6005c80798f7
 description: 了解在合规性管理员在安全 & 合规中心中执行内容搜索和电子数据展示案例任务时, 如何在 Office 365 审核日志中搜索所记录的事件。
-ms.openlocfilehash: 4d16fd162cb8d00d940df90dcab3c5856e9e59ee
-ms.sourcegitcommit: e7a776a04ef6ed5e287a33cfdc36aa2d72862b55
+ms.openlocfilehash: 62c58d123367fd5ee6778034716bc1deb5afc1e2
+ms.sourcegitcommit: 6c9340e4eb221bf81472ff3f1ae25ae21aaf5297
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "31000705"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31814093"
 ---
 # <a name="search-for-ediscovery-activities-in-the-office-365-audit-log"></a>在 Office 365 审核日志中搜索电子数据展示活动
 
@@ -42,7 +42,7 @@ ms.locfileid: "31000705"
 
 目前, 您必须执行几个特定的操作才能在 Office 365 审核日志中查看电子数据展示活动。 方法如下：
   
-1. 转到 [https://compliance.microsoft.com](https://compliance.microsoft.com)。
+1. 转到 [https://protection.office.com](https://protection.office.com)。
     
 2. 使用工作或学校帐户登录到 Office 365。
     
@@ -73,7 +73,7 @@ ms.locfileid: "31000705"
 > [!NOTE]
 > 本节中介绍的电子数据展示活动提供了与下一节中所述的电子数据展示 cmdlet 活动类似的信息。 我们建议您使用本节中介绍的电子数据展示活动, 因为这些活动将在30分钟内显示在审核日志搜索结果中。 在审核日志搜索结果中显示电子数据展示 cmdlet 活动需要长达24小时。 
   
-|**易记名称**|**Operation**|**相应的 cmdlet**|**说明**|
+|**友好名称**|**Operation**|**相应的 cmdlet**|**说明**|
 |:-----|:-----|:-----|:-----|
 |向电子数据展示事例添加了成员  <br/> |CaseMemberAdded  <br/> |外接 ComplianceCaseMember  <br/> |将用户添加为电子数据展示事例的成员。 作为案例的成员, 用户可以执行各种与事例相关的任务, 具体取决于是否已为其分配了必要的权限。  <br/> |
 |更改内容搜索  <br/> |SearchUpdated  <br/> |Set-ComplianceSearch  <br/> |已更改现有内容搜索。 更改可以包括添加或删除内容位置或编辑搜索查询。  <br/> |
@@ -119,7 +119,7 @@ ms.locfileid: "31000705"
 > [!TIP]
 > 下表的 "**操作**" 列中的 cmdlet 链接到 TechNet 上相应的 cmdlet 帮助主题。 有关每个 cmdlet 的可用参数的说明, 请参阅 cmdlet 帮助主题。 与 cmdlet 一起使用的参数和参数值包含在已记录的每个电子数据展示 cmdlet 活动的审核日志条目中。 
   
-|**易记名称**|**Operation (cmdlet)**|**说明**|
+|**友好名称**|**Operation (cmdlet)**|**说明**|
 |:-----|:-----|:-----|
 |在电子数据展示事例中创建保留  <br/> |[新 CaseHoldPolicy](https://go.microsoft.com/fwlink/p/?LinkId=823813) <br/> |为电子数据展示事例创建了保留。 可以使用或不指定内容源来创建保留。 如果指定了内容源, 则会在审核日志条目中对其进行标识。  <br/> |
 |从电子数据展示案例中删除了保留  <br/> |[CaseHoldPolicy](https://go.microsoft.com/fwlink/p/?LinkId=823814) <br/> |删除了与电子数据展示事例相关联的保留。 删除保留将释放保留中的所有内容位置。 删除保留也会导致删除与保留相关的事例保留规则 (请参阅下面的**new-caseholdrule** )。  <br/> |

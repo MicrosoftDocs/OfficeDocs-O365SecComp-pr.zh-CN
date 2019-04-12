@@ -15,12 +15,12 @@ search.appverid:
 - MET150
 ms.assetid: 0d4d0f35-390b-4518-800e-0c7ec95e946c
 description: '使用安全 & 合规性中心搜索统一审核日志, 以查看 Office 365 组织中的用户和管理员活动。 '
-ms.openlocfilehash: d593c7d5403f658175850a66a55603dab2b60d42
-ms.sourcegitcommit: e24f70699021c4f4ba56508ad0afb6f65010c357
+ms.openlocfilehash: d7dc3849a0a12c52979c46b9ac16cfb0a7cd1f3d
+ms.sourcegitcommit: 6c9340e4eb221bf81472ff3f1ae25ae21aaf5297
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/05/2019
-ms.locfileid: "31479678"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31814173"
 ---
 # <a name="search-the-audit-log-in-the-security--compliance-center"></a>在 Security & 合规性中心中搜索审核日志
 
@@ -62,7 +62,7 @@ ms.locfileid: "31479678"
 - Microsoft PowerApps 中的用户和管理员活动
     
    
-## <a name="before-you-begin"></a>开始之前
+## <a name="before-you-begin"></a>准备工作
 
 在开始搜索 Office 365 审核日志之前, 请务必阅读以下各项。
   
@@ -147,7 +147,7 @@ ms.locfileid: "31479678"
   
 ### <a name="step-1-run-an-audit-log-search"></a>步骤 1: 运行审核日志搜索
 
-1. 转到 [https://compliance.microsoft.com](https://compliance.microsoft.com)。
+1. 转到 [https://protection.office.com](https://protection.office.com)。
     
     > [!TIP]
     > 使用专用浏览会话 (而非常规会话) 访问安全 & 合规性中心, 因为这将阻止当前登录的凭据正在使用。 若要在 Internet Explorer 或 Microsoft Edge 中打开 InPrivate 浏览会话, 只需按 CTRL + SHIFT + P。 若要在 Google Chrome 中打开一个专用浏览会话 (称为 incognito 窗口), 请按 CTRL + SHIFT + N。 
@@ -458,7 +458,7 @@ ms.locfileid: "31479678"
 |创建的邮箱项目  <br/> |Create  <br/> |在邮箱的日历、联系人、备注或任务文件夹中创建项目；例如，创建新的会议请求。 请注意, 不会审核创建、发送或接收邮件。 此外, 还不会审核创建邮箱文件夹的情况。  <br/> |
 |在 Outlook web app 中创建了新的收件箱规则  <br/> |NewInboxRule<br/> |<br/> |
 |从 "已删除邮件" 文件夹中删除邮件  <br/> |SoftDelete  <br/> |邮件已从 "已删除邮件" 文件夹中永久删除或删除。 这些项目将移动到 "可恢复的项目" 文件夹中。 当用户选择邮件并按**Shift + Delete**时, 邮件也会移动到 "可恢复的项目" 文件夹中。  <br/> |
-|将邮件移动到另一个文件夹  <br/> |移动  <br/> |已将某个邮件移至另一个文件夹。  <br/> |
+|将邮件移动到另一个文件夹  <br/> |Move  <br/> |已将某个邮件移至另一个文件夹。  <br/> |
 |将邮件移动到 "已删除邮件" 文件夹  <br/> |MoveToDeletedItems  <br/> |邮件已被删除并移动到 "已删除邮件" 文件夹。  <br/> |
 |修改的文件夹权限  <br/> |UpdateFolderPermissions  <br/> |更改了文件夹权限。 文件夹权限控制组织中的哪些用户可以访问邮箱文件夹和文件夹中的邮件。  <br/> |
 |已清除邮箱中的邮件  <br/> |HardDelete  <br/> |从 "可恢复的项目" 文件夹中清除邮件 (从邮箱中永久删除)。  <br/> |

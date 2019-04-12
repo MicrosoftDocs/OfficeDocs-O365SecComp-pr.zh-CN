@@ -3,7 +3,7 @@ title: 零时差自动清除 - 防范垃圾邮件和恶意软件
 ms.author: tracyp
 author: MSFTTracyP
 manager: laurawi
-ms.date: 12/05/2018
+ms.date: 04/11/2019
 ms.audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
@@ -17,12 +17,12 @@ ms.assetid: 96deb75f-64e8-4c10-b570-84c99c674e15
 ms.collection:
 - M365-security-compliance
 description: 零小时自动清除 (ZAP) 是一种电子邮件保护功能, 可检测到已发送到用户收件箱的垃圾邮件或恶意软件的邮件, 然后将恶意内容无害。 ZAP 的工作方式取决于检测到的恶意内容的类型。
-ms.openlocfilehash: 7a357b50a75012408d6958ce528fddf8c203540a
-ms.sourcegitcommit: e24f70699021c4f4ba56508ad0afb6f65010c357
+ms.openlocfilehash: 507cd6af5320a3b925841786136d518c996e4d29
+ms.sourcegitcommit: 86ff2eba1d57b9d5288840788529e69ad9d836b6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/05/2019
-ms.locfileid: "31479628"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31818599"
 ---
 # <a name="zero-hour-auto-purge---protection-against-spam-and-malware"></a>零时差自动清除 - 防范垃圾邮件和恶意软件
 
@@ -48,7 +48,7 @@ Office 365 每天实时更新反垃圾邮件引擎和恶意软件签名。 但�
 
 - 对于新检测到的恶意软件, ZAP 将从电子邮件中删除附件, 而不管是否已阅读电子邮件。
   
-对于邮箱用户, ZAP 操作是无缝的;如果移动电子邮件, 则不会收到通知。
+对于邮箱用户, ZAP 操作是无缝的;如果移动电子邮件, 则不会收到通知。 消息不得早于2天。
   
 允许列表、[邮件流规则](https://go.microsoft.com/fwlink/p/?LinkId=722755)和最终用户规则或其他筛选器优先于 ZAP。
   
@@ -89,7 +89,10 @@ Office 365 每天实时更新反垃圾邮件引擎和恶意软件签名。 但�
 ### <a name="what-if-i-have-a-custom-mail-flow-rule-block-allow-rule"></a>如果我有自定义邮件流规则 (阻止/允许规则), 该怎么办？
   
 由管理员 (邮件流规则) 或阻止和允许规则创建的规则优先。 将从功能条件中排除此类邮件, 以便邮件流遵循规则操作 (阻止/允许规则)。
-  
+
+### <a name="what-if-a-message-is-moved-to-another-folder-eg-inbox-rule"></a>如果邮件被移到另一个文件夹 (例如收件箱规则), 该怎么办？
+在这种情况下, ZAP 仍适用, 除非邮件已被删除或在垃圾邮件中。
+
 ## <a name="related-topics"></a>相关主题
 
 [Office 365 电子邮件反垃圾邮件保护](anti-spam-protection.md)

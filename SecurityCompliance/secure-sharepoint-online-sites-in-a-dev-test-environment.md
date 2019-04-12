@@ -3,7 +3,7 @@ title: 在开发/测试环境中保护 SharePoint Online 网站
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 12/12/2018
+ms.date: 04/09/2019
 ms.audience: ITPro
 ms.topic: article
 ms.collection:
@@ -15,12 +15,12 @@ search.appverid:
 - MET150
 ms.assetid: 06af70f3-e7dc-4ee2-a385-fb4d61a5e93b
 description: 摘要：在开发/测试环境中创建公共、专用、敏感和高度机密的 SharePoint Online 团队网站。
-ms.openlocfilehash: 902582e198cb24ed4cce9b8b1e73dfbf3ae9dd52
-ms.sourcegitcommit: e7a776a04ef6ed5e287a33cfdc36aa2d72862b55
+ms.openlocfilehash: e1d5e6f98679e2efb4d5048009971d88f90181e8
+ms.sourcegitcommit: 19d27ff836ee7fa1f8a4e761e04d928f13f4bfd8
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30999975"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "31745304"
 ---
 # <a name="secure-sharepoint-online-sites-in-a-devtest-environment"></a>在开发/测试环境中保护 SharePoint Online 网站
 
@@ -34,23 +34,21 @@ ms.locfileid: "30999975"
   
 ## <a name="phase-1-create-your-devtest-environment"></a>阶段 1：创建开发/测试环境
 
-在此阶段，将获取用于虚拟组织的 Office 365 和企业移动性 + 安全性的试用订阅。
+在此阶段，将获取用于虚拟组织的 Office 365 和企业移动性 + 安全性 (EMS) 的试用订阅。
   
 首先，按照 [Office 365 开发/测试环境](https://docs.microsoft.com/office365/enterprise/office-365-dev-test-environment)的**阶段 2** 中的说明进行操作。
   
 下一步，注册 EMS 试用订阅，并将其作为 Office 365 试用订阅添加到同一组织。
   
-1. 如有需要，请使用试用订阅的全局管理员帐户的凭据登录管理中心。 如需帮助，请参阅[如何登录到 Office 365](https://support.office.com/Article/Where-to-sign-in-to-Office-365-e9eb7d51-5430-4929-91ab-6157c5a050b4)。
+1. 如有需要，请使用试用订阅的全局管理员帐户的凭据登录 [Microsoft 365 管理中心](https://admin.microsoft.com)。
     
-2. 单击“管理”磁贴****。
+2. 在左侧导航栏中，依次单击 **“计费”>“购买服务”**。
     
-3. 在浏览器的“Office 管理中心”标签页的左侧导航中，单击“帐单”>“购买服务”********。
+3. 在“购买服务”页上，找到“企业移动性 + 安全性 E5”项。将鼠标指针悬停在此项之上，然后单击“开始免费试用”************。
     
-4. 在“购买服务”页上，找到“企业移动性 + 安全性 E5”项。将鼠标指针悬停在此项之上，然后单击“开始免费试用”************。
+4. 在“确认订单”页上，单击“立即试用”********。
     
-5. 在“确认订单”页上，单击“立即试用”********。
-    
-6. 在“订单签收”页中，单击“继续”********。
+5. 在“订单签收”页中，单击“继续”********。
     
 接下来，为全局管理员帐户启用企业移动性 + 安全性 E5 许可证。
   
@@ -122,7 +120,7 @@ ms.locfileid: "30999975"
     
 6. 关闭浏览器中的 Azure 门户选项卡。
     
-接下来，[连接到 Azure Active Directory V2 PowerShell 模块](https://go.microsoft.com/fwlink/?linkid=842218)。
+接下来，[连接到 Azure Active Directory PowerShell Graph 模块](https://docs.microsoft.com/office365/enterprise/powershell/connect-to-office-365-powershell#connect-with-the-azure-active-directory-powershell-for-graph-module)。
   
 填写组织名称、位置和公用密码并从 PowerShell 命令提示符或集成脚本环境 (ISE) 中运行以下命令，创建用户帐户并将其添加到相应的组：
   
@@ -179,7 +177,7 @@ Add-AzureADGroupMember -RefObjectId (Get-AzureADUser | Where { $_.DisplayName -e
 ```
 
 > [!NOTE]
-> 此处使用公用密码旨在自动配置开发/测试环境，简化配置过程。 但不建议生产订阅这样做。 
+> 此处使用公用密码旨在自动配置开发/测试环境，简化配置过程。 显然，对于生产订阅，这是非常不鼓励的。 
   
 请按照以下步骤验证基于组的许可是否正常工作。
   
@@ -191,34 +189,35 @@ Add-AzureADGroupMember -RefObjectId (Get-AzureADUser | Where { $_.DisplayName -e
     
 4. 在列出 CEO 用户帐户属性的窗格中，验证已向其分配“企业移动性 + 安全性 E5”和“Office 365 企业版 E5”许可证（位于“产品许可证”中）****************。 
     
-## <a name="phase-3-create-office-365-labels"></a>阶段 3：创建 Office 365 标签
+## <a name="phase-3-create-office-365-retention-labels"></a>阶段 3：创建 Office 365 保留标签
 
-此阶段将针对 SharePoint Online 团队网站文档文件夹的不同安全级别创建标签。
-  
-1. 如有必要，请使用 Internet 浏览器的私有实例并使用 Office 365 E5 试用订阅的全局管理员帐户登录管理中心。 如需帮助，请参阅[如何登录到 Office 365](https://support.office.com/Article/Where-to-sign-in-to-Office-365-e9eb7d51-5430-4929-91ab-6157c5a050b4)。
+此阶段将针对 SharePoint Online 团队网站文档文件夹的不同安全级别创建保留标签。
+
+
+1. 使用全局管理员帐户登录 [Microsoft 365 合规性门户](https://compliance.microsoft.com)。
     
-2. 在“Microsoft Office 主页”标签页中，单击“管理员”磁贴********。
+2. 在浏览器的“**主页 - Microsoft 365 合规性**”选项卡中，单击“**分类 > 标签**”。
     
-3. 在浏览器的新“Office 管理中心”**** 标签页中，单击“管理中心”>“安全&amp;合规性”****。
+3. 单击“**保留标签 > 创建标签**”。
     
-4. 在浏览器的新“主页 -安全&amp;合规性”**** 标签页中，单击“分类”>“标签”****。
+4. 在“**命名标签**”窗格上的“**命名标签**”中键入“**内部公用**”，然后单击“**下一步**”。
+
+5. 在“**文件计划描述符**”窗格中，单击“**下一步**”。
     
-5. 从“**主页”>“标签**”窗格中，单击“**保留**”选项卡，然后再单击“**创建标签**”。
+6. 在“**标签设置**”窗格中，根据需要将“**保留**”设置为“**开**”，然后单击“**下一步**”。
     
-6. 在“**命名标签**”窗格中，键入“**内部公用**”，然后单击“**下一步**”。
+7. 在“**查看设置**”窗格中，单击“**创建标签**”。
     
-7. 在“**标签设置**”窗格中，单击“**下一步**”。
-    
-8. 在“查看设置”**** 窗格中，单击“创建此标签”****，然后单击“关闭”****。
-    
-9. 对以下标签重复步骤 5-8：
+8. 对于其他标签，单击“**创建标签**”，然后重复步骤 3-7。
+
+9. 对具有以下名称的其他标签重复步骤 3-8：
     
   - Private
     
   - 敏感
     
   - 高度机密
-    
+  
 10. 在“开始”>“标签”窗格中，单击“发布标签”********。
     
 11. 在“选择要发布的标签”窗格中，单击“选择要发布的标签”********。
@@ -243,7 +242,7 @@ Add-AzureADGroupMember -RefObjectId (Get-AzureADUser | Where { $_.DisplayName -e
 
 要创建基线公共 SharePoint Online 团队网站，请执行以下操作：
   
-1. 如果需要，请使用本地计算机上的浏览器，并使用全局管理员帐户登录管理中心。 如需帮助，请参阅[如何登录到 Office 365](https://support.office.com/Article/Where-to-sign-in-to-Office-365-e9eb7d51-5430-4929-91ab-6157c5a050b4)。
+1. 如有需要，请使用试用订阅的全局管理员帐户的凭据登录 [Office 365 门户](https://portal.office.com)。
     
 2. 在磁贴列表中，单击“SharePoint”****。
     
@@ -269,15 +268,11 @@ Add-AzureADGroupMember -RefObjectId (Get-AzureADUser | Where { $_.DisplayName -e
     
 4. 在“**设置 - 应用标签**”中，选择“**内部公用**”，然后单击“**保存**”。
     
-下面是生成的配置。
-  
-![适用于全组织公共 SharePoint Online 团队网站的基线级保护。](media/25c86847-a38d-49ad-bb5f-c7c04206b6dc.png)
-  
 ### <a name="project-1-team-site"></a>项目 1 团队网站
 
 要为组织内的项目创建基线专用 SharePoint Online 团队网站，请执行以下操作：
   
-1. 如果需要，请使用本地计算机上的浏览器，并使用全局管理员帐户登录管理中心。 如需帮助，请参阅[如何登录到 Office 365](https://support.office.com/Article/Where-to-sign-in-to-Office-365-e9eb7d51-5430-4929-91ab-6157c5a050b4)。
+1. 如有需要，请使用试用订阅的全局管理员帐户的凭据登录 [Office 365 门户](https://portal.office.com)。
     
 2. 在磁贴列表中，单击“SharePoint”****。
     
@@ -303,15 +298,12 @@ Add-AzureADGroupMember -RefObjectId (Get-AzureADUser | Where { $_.DisplayName -e
     
 4. 在“**设置 - 应用标签**”中，选择“**专用**”，然后单击“**保存**”。
     
-下面是生成的配置。
-  
-![适用于 Project1 专用 SharePoint Online 团队网站的基线级保护。](media/ecd96376-b5dc-4042-9cbd-b3765507ace7.png)
-  
 ### <a name="marketing-campaigns-team-site"></a>市场营销活动团队网站
 
 要为市场营销活动资源创建敏感级别的独立 SharePoint Online 团队网站，请执行以下操作：
-  
-1. 请使用本地计算机上的浏览器，并使用全局管理员帐户登录管理中心。 如需帮助，请参阅[如何登录到 Office 365](https://support.office.com/Article/Where-to-sign-in-to-Office-365-e9eb7d51-5430-4929-91ab-6157c5a050b4)。
+
+ 
+1. 如有需要，请使用试用订阅的全局管理员帐户的凭据登录 [Office 365 门户](https://portal.office.com)。
     
 2. 在磁贴列表中，单击“SharePoint”****。
     
@@ -378,12 +370,12 @@ Add-AzureADGroupMember -RefObjectId (Get-AzureADUser | Where { $_.DisplayName -e
 4. 在“**设置 - 应用标签**”中，选择“**敏感**”，然后单击“**保存**”。
     
 接下来，配置数据丢失防护 (DLP) 策略，以便在用户共享关于含敏感标签的 SharePoint Online 团队网站（包括组织外的营销活动网站）的文档时进行通知。
-  
-1. 在浏览器的“**Microsoft Office 主页**”标签页中，单击“**安全与合规**”磁贴。
+
+1. 使用全局管理员帐户登录 [Microsoft 365 合规性门户](https://compliance.microsoft.com/)。
     
-2. 在浏览器的新“安全&amp;合规性”**** 标签页中，单击“数据丢失防护”>“策略”****。
+2. 在浏览器的新“**Microsoft 365 合规**”标签页中，单击“**策略 > 数据丢失防护**”。
     
-3. 在“数据丢失防护”窗格中，单击“+ 创建策略”********。
+3. 在“**主页 > 数据丢失防护**”窗格中，单击“**创建策略**”。
     
 4. 在“从模板开始或创建自定义策略”**** 窗格中，单击“自定义”****，然后单击“下一步”****。
     
@@ -391,43 +383,39 @@ Add-AzureADGroupMember -RefObjectId (Get-AzureADUser | Where { $_.DisplayName -e
     
 6. 在“选择位置”窗格中，单击“允许选择特定位置”，然后单击“下一步”************。
     
-7. 在位置列表中，禁用“Exchange 电子邮件”**** 和“OneDrive 帐户位置”****，然后单击“下一步”****。
+7. 在位置列表中，禁用“**Exchange 电子邮件**”、“**OneDrive 帐户**”和“**Teams 聊天和频道消息**”，然后单击“**下一步**”。
     
-8. 在“自定义要保护的敏感信息类型”窗格中，单击“编辑”********。
+8. 在“**自定义要保护的内容类型**”窗格中，单击“**编辑**”。
     
-9. 在“选择要保护的内容类型”**** 窗格中，单击下拉框中的“添加”****，然后单击“标签”****。
+9. 在“**选择要保护的内容类型**”窗格中，单击下拉框中的“**添加**”，然后单击“**保留标签**”。
     
-10. 在“标签”**** 窗格中，单击“+ 添加”****，选择“敏感”**** 标签，然后依次单击“添加”**** 和“完成”****。
+10. 在“**保留标签**”窗格中，单击“**添加**”，选择“**敏感**”标签，然后依次单击“**添加**”和“**完成**”。
     
 11. 在“选择要保护的内容类型”窗格中，单击“保存”********。
     
-12. 在“自定义要保护的敏感信息类型”窗格中，单击“下一步”********。
-    
+12. 在“**自定义要保护的敏感信息类型**”窗格中，单击“**下一步**”。
+
 13. 在“如果检测到敏感信息，希望采取什么操作?”窗格中，单击“自定义提示和电子邮件”********。
     
-14. 在“自定义策略提示和电子邮件通知”窗格中，单击“自定义策略提示文本”********。
+14. 在“自定义策略提示和电子邮件通知”**** 窗格中，单击“自定义策略提示文本”****。
     
-15. 在文本框中，键入或粘贴以下内容：
+15. 在文本框中，键入或粘贴以下提示之一，具体取决于是否已实现 Azure 信息保护来保护高度机密文件：
     
   - 要与组织外部的用户共享，请下载并打开文件。 依次单击“文件”、“保护文档”、“使用密码加密”，然后指定强密码。 通过单独的电子邮件或其他通信方式发送密码。
     
-16. 单击“确定”****。
+16. 单击“确定”。
     
-17. 在“如果检测到敏感信息，希望采取什么操作?”**** 窗格中，取消勾选“阻止共享并将访问限于共享内容”**** 复选框，然后单击“下一步”****。
+17. 在“如果检测到敏感信息，希望采取什么操作?”**** 窗格中，单击“下一步”****。
     
 18. 在“是否希望立即启用策略或先进行测试?”**** 窗格中，单击“是，立即启用”****，然后单击“下一步”****。
     
 19. 在“**查看设置**”窗格中，单击“**创建**”，然后单击“**关闭**”。
-    
-下面是生成的配置。
-  
-![适用于市场营销活动专用独立 SharePoint Online 团队网站的敏感级保护。](media/33992bd5-96ee-4bfb-9ecf-c8a6736dd100.png)
   
 ### <a name="company-strategy-team-site"></a>公司战略团队网站
 
 若要针对组织首席执行官的公司战略资源创建高度机密级别的独立 SharePoint Online 团队网站，请执行以下操作：
   
-1. 如果需要，请使用本地计算机上的浏览器，并使用全局管理员帐户登录管理中心。 如需帮助，请参阅[如何登录到 Office 365](https://support.office.com/Article/Where-to-sign-in-to-Office-365-e9eb7d51-5430-4929-91ab-6157c5a050b4)。
+1. 如有需要，请使用试用订阅的全局管理员帐户的凭据登录 [Office 365 门户](https://portal.office.com)。
     
 2. 在磁贴列表中，单击“SharePoint”****。
     
@@ -491,53 +479,52 @@ Add-AzureADGroupMember -RefObjectId (Get-AzureADUser | Where { $_.DisplayName -e
     
 接下来，配置 DLP 策略，当用户在具有“高度机密”标签的 SharePoint Online 团队网站（包括组织外的公司战略网站）上共享文档时，该策略会阻止用户。
   
-1. 如果需要，请使用本地计算机上的浏览器，以及使用具有安全管理员或公司管理员角色的帐户登录管理中心。 如需帮助，请参阅[如何登录到 Office 365](https://support.office.com/Article/Where-to-sign-in-to-Office-365-e9eb7d51-5430-4929-91ab-6157c5a050b4)。
+1. 使用全局管理员登录 [Microsoft 365 合规性门户](https://compliance.microsoft.com/)。
     
-2. 在浏览器的“Microsoft Office 主页”**** 标签页中，单击“安全&amp;合规性”**** 磁贴。
+2. 在浏览器的新“**Microsoft 365 合规**”标签页中，单击“**策略 > 数据丢失防护**”。
     
-3. 在浏览器的新“安全&amp;合规性”**** 标签页中，单击“数据丢失防护”>“策略”****。
+3. 在“**主页 > 数据丢失防护**”窗格中，单击“**创建策略**”。
     
-4. 在“数据丢失防护”窗格中，单击“+ 创建策略”********。
+4. 在“从模板开始或创建自定义策略”**** 窗格中，单击“自定义”****，然后单击“下一步”****。
     
-5. 在“从模板开始或创建自定义策略”**** 窗格中，单击“自定义”****，然后单击“下一步”****。
+5. 在“命名策略”**** 窗格中，在“名称”中键入 **Highly Confidential label SharePoint Online team sites******，然后单击“下一步”****。
     
-6. 在“命名策略”**** 窗格中，在“名称”中键入 **Highly Confidential label SharePoint Online team sites******，然后单击“下一步”****。
+6. 在“选择位置”窗格中，单击“允许选择特定位置”，然后单击“下一步”************。
     
-7. 在“选择位置”窗格中，单击“允许选择特定位置”，然后单击“下一步”************。
+7. 在位置列表中，禁用“**Exchange 电子邮件**”、“**OneDrive 帐户**”和“**Teams 聊天和频道消息**”，然后单击“**下一步**”。
     
-8. 在位置列表中，禁用“Exchange 电子邮件”**** 和“OneDrive 帐户位置”****，然后单击“下一步”****。
+8. 在“**自定义要保护的内容类型**”窗格中，单击“**编辑**”。
     
-9. 在“自定义要保护的敏感信息类型”窗格中，单击“编辑”********。
+9. 在“**选择要保护的内容类型**”窗格中，单击下拉框中的“**添加**”，然后单击“**保留标签**”。
     
-10. 在“选择要保护的内容类型”**** 窗格中，单击下拉框中的“添加”****，然后单击“标签”****。
+10. 在“**保留标签**”窗格中，单击“**添加**”，选择“**高度机密**”标签，然后依次单击“**添加**”和“**完成**”。
     
-11. 在“标签”**** 窗格中，单击“+ 添加”****，选择“高度机密”标签****，然后依次单击“添加”**** 和“完成”****。
+11. 在“选择要保护的内容类型”窗格中，单击“保存”********。
     
-12. 在“选择要保护的内容类型”窗格中，单击“保存”********。
+12. 在“**自定义要保护的敏感信息类型**”窗格中，单击“**下一步**”。
+
+13. 在“如果检测到敏感信息，希望采取什么操作?”窗格中，单击“自定义提示和电子邮件”********。
     
-13. 在“自定义要保护的敏感信息类型”窗格中，单击“下一步”********。
+14. 在“自定义策略提示和电子邮件通知”**** 窗格中，单击“自定义策略提示文本”****。
     
-14. 在“如果检测到敏感信息，希望采取什么操作?”窗格中，单击“自定义提示和电子邮件”********。
-    
-15. 在“自定义策略提示和电子邮件通知”窗格中，单击“自定义策略提示文本”********。
-    
-16. 在文本框中，键入或粘贴以下内容：
+15. 在文本框中，键入或粘贴以下提示之一，具体取决于是否已实现 Azure 信息保护来保护高度机密文件：
     
   - 要与组织外部的用户共享，请下载并打开文件。 依次单击“文件”、“保护文档”、“使用密码加密”，然后指定强密码。 通过单独的电子邮件或其他通信方式发送密码。
     
-17. 单击“确定”。
+16. 单击“确定”。
     
-18. 在“如果检测到敏感信息，希望采取什么操作?”**** 窗格中，单击“下一步”****。
+17. 在“如果检测到敏感信息，希望采取什么操作?”**** 窗格中，单击“下一步”****。
     
-19. 在“是否希望立即启用策略或先进行测试?”**** 窗格中，单击“是，立即启用”****，然后单击“下一步”****。
+18. 在“是否希望立即启用策略或先进行测试?”**** 窗格中，单击“是，立即启用”****，然后单击“下一步”****。
     
-20. 在“查看设置”**** 窗格中，单击“创建”****，然后单击“关闭”****。
+19. 在“查看设置”**** 窗格中，单击“创建”****，然后单击“关闭”****。
+   
     
 接下来，按照[使用 Microsoft 365 管理中心激活 Azure RMS](https://docs.microsoft.com/information-protection/deploy-use/activate-office365) 中的说明执行操作。
   
 接下来，通过执行以下步骤，使用新策略以及保护和权限的高层管理人员组的子标签作用域来配置 Azure 信息保护：
   
-1. 使用具有安全管理员或公司管理员角色的帐户登录到管理中心。 如需帮助，请参阅[如何登录到 Office 365](https://support.office.com/Article/Where-to-sign-in-to-Office-365-e9eb7d51-5430-4929-91ab-6157c5a050b4)。
+1. 如果需要，使用全局管理员帐户登录 [Microsoft 365 管理中心](https://admin.microsoft.com)。
     
 2. 在浏览器的单独标签页中，转到 Azure 门户 ([https://portal.azure.com](https://portal.azure.com))。
     
@@ -581,10 +568,6 @@ Add-AzureADGroupMember -RefObjectId (Get-AzureADUser | Where { $_.DisplayName -e
     
 若要使用 Azure 信息保护和此新标签保护文档，必须在测试计算机上[安装 Azure 信息保护客户端](https://docs.microsoft.com/information-protection/rms-client/install-client-app)，从管理中心安装 Office，然后使用试用订阅的“高层管理人员****”组中的帐户从 Microsoft Word 登录。
   
-下面是生成的配置。
-  
-![适用于公司战略专用独立 SharePoint Online 团队网站的高度机密级保护。](media/c22695f9-50a1-4abf-a0dd-344b0c92cf94.png)
-  
 现在，可以在这四个网站中创建文档，并使用试用订阅中的各种用户帐户进行访问测试。
   
 下面是针对全部四个 SharePoint Online 团队网站的整体配置。
@@ -601,7 +584,7 @@ Add-AzureADGroupMember -RefObjectId (Get-AzureADUser | Where { $_.DisplayName -e
   
 [云应用和混合解决方案](https://docs.microsoft.com/office365/enterprise/cloud-adoption-and-hybrid-solutions)
   
-[Microsoft 针对政治宣传活动、非营利组织和其他敏捷性组织的安全指南](microsoft-security-guidance-for-political-campaigns-nonprofits-and-other-agile-o.md)
+[Microsoft 针对政治宣传活动、非营利组织和其他敏捷型组织的安全指南](microsoft-security-guidance-for-political-campaigns-nonprofits-and-other-agile-o.md)
 
 
 

@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 ms.assetid: 268a109e-7843-405b-bb3d-b9393b2342ce
 description: 使用 Office 365 中的安全 & 合规性中心启用存档邮箱, 以支持组织的邮件保留、电子数据展示和保留要求。
-ms.openlocfilehash: 334af008f6eb8baedff1239ed1692a0ad73acdb6
-ms.sourcegitcommit: e7a776a04ef6ed5e287a33cfdc36aa2d72862b55
+ms.openlocfilehash: d363943910d970576976d8386196b450dd5694f3
+ms.sourcegitcommit: 6c9340e4eb221bf81472ff3f1ae25ae21aaf5297
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "31000255"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31813963"
 ---
 # <a name="enable-archive-mailboxes-in-the-security--compliance-center"></a>在安全 & 合规中心中启用存档邮箱
   
@@ -31,13 +31,13 @@ Office 365 中的存档 (也称为就地存档) 为用户提供额外的邮箱�
 > [!TIP]
 > Office 365 提供了无限制的存档存储量和自动扩展的存档功能。 如果启用了自动扩展存档, 然后达到用户存档邮箱中的初始存储配额, Office 365 将自动添加额外的存储空间。 这意味着用户不会用尽邮箱存储空间, 并且在最初启用存档邮箱并为您的组织启用自动扩展存档后, 无需管理任何内容。 有关详细信息，请参阅 [在 Office 365 中不受限制地存档概述](unlimited-archiving.md)。 
   
-## <a name="before-you-begin"></a>开始之前
+## <a name="before-you-begin"></a>准备工作
 
 您必须分配有 Exchange Online 中的 "邮件收件人" 角色, 才能启用或禁用存档邮箱。 默认情况下, 此角色分配给 Exchange 管理中心中的 "**权限**" 页上的 "收件人管理" 和 "组织管理" 角色组。 如果在 Security & 合规性中心中看不到 "**存档**" 页, 请让管理员为您分配必要的权限。 
   
 ## <a name="enable-an-archive-mailbox"></a>启用存档邮箱
   
-1. 转到 [https://compliance.microsoft.com](https://compliance.microsoft.com)。
+1. 转到 [https://protection.office.com](https://protection.office.com)。
     
 2. 使用工作或学校帐户登录到 Office 365。
     
@@ -68,7 +68,7 @@ Office 365 中的存档 (也称为就地存档) 为用户提供额外的邮箱�
   
 要禁用存档邮箱, 请执行以下操作:
   
-1. 转到 [https://compliance.microsoft.com](https://compliance.microsoft.com)。
+1. 转到 [https://protection.office.com](https://protection.office.com)。
     
 2. 使用工作或学校帐户登录到 Office 365。
     
@@ -141,6 +141,6 @@ Office 365 中的存档 (也称为就地存档) 为用户提供额外的邮箱�
     
   - [保留标记和保留策略](https://go.microsoft.com/fwlink/?LinkId=404424)
     
-  - [Exchange Online 中的默认保留策略](https://go.microsoft.com/fwlink/?linkid=839418)
+  - [Exchange Online 中的默认保留策略 ](https://go.microsoft.com/fwlink/?linkid=839418)
     
   - [为 Office 365 组织中的邮箱设置存档和删除策略](set-up-an-archive-and-deletion-policy-for-mailboxes.md)

@@ -12,12 +12,12 @@ localization_priority: Normal
 search.appverid: MOE150
 ms.assetid: e3cbc79c-5e97-43d3-8371-9fbc398cd92e
 description: 在安全 & 合规中心中使用内容搜索来执行目标集合。 目标集合意味着您确信项目响应的是事例或特权项目位于特定的邮箱或站点文件夹中。 使用本文中的脚本获取要搜索的特定邮箱或网站文件夹的文件夹 ID 或路径。
-ms.openlocfilehash: 06d1d4d213f0efd5a05badd9a0edef568ae15d75
-ms.sourcegitcommit: e7a776a04ef6ed5e287a33cfdc36aa2d72862b55
+ms.openlocfilehash: 3d9a82926a08b3f7f1f245146e70d79617e7a413
+ms.sourcegitcommit: 6c9340e4eb221bf81472ff3f1ae25ae21aaf5297
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "31001235"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31813993"
 ---
 # <a name="use-content-search-in-office-365-for-targeted-collections"></a>将 Office 365 中的内容搜索用于目标集合
 
@@ -26,7 +26,7 @@ Office 365 安全&amp;合规中心中的内容搜索功能不会在 UI 中直接
 > [!NOTE]
 > 若要返回位于 SharePoint 或 OneDrive for business 网站中的文件夹中的内容, 本主题中的脚本使用 DocumentLink 托管属性而不是 Path 属性。 DocumentLink 属性比 Path 属性更可靠, 因为它将返回文件夹中的所有内容, 而 Path 属性将不会返回某些媒体文件。
 
-## <a name="before-you-begin"></a>开始之前
+## <a name="before-you-begin"></a>准备工作
 
 - 您必须是安全&amp;合规中心中的电子数据展示管理器角色组的成员, 才能在第1步中运行该脚本。 有关详细信息, 请参阅[分配电子数据展示权限](assign-ediscovery-permissions.md)。
     
@@ -213,7 +213,7 @@ Office 365 安全&amp;合规中心中的内容搜索功能不会在 UI 中直接
 
 在运行脚本以收集特定用户的文件夹 id 或 documentlinks 的列表后, 下一步是转到 Security & 合规中心, 并创建新的内容搜索以搜索特定文件夹。 您将在 " `folderid:<folderid>`内容`documentlink:<path>`搜索关键字" 框中配置的搜索查询中使用或 "属性: 值" 对 (如果使用**new-compliancesearch** cmdlet, 则为*ContentMatchQuery*参数的值)。 您可以将`folderid`或`documentlink`属性与其他搜索参数或搜索条件结合使用。 如果只在查询中`folderid`包括`documentlink`或属性, 则搜索将返回位于指定文件夹中的所有项目。 
   
-1. 转到 [https://compliance.microsoft.com](https://compliance.microsoft.com)。
+1. 转到 [https://protection.office.com](https://protection.office.com)。
     
 2. 使用在步骤1中运行脚本时使用的帐户和凭据登录 Office 365。
     
@@ -225,11 +225,11 @@ Office 365 安全&amp;合规中心中的内容搜索功能不会在 UI 中直接
     
     - 单击 "**选择要搜索的特定邮箱**", 然后添加您在步骤1中运行脚本时指定的相同邮箱。 
     
-      或者
+      或
     
     - 单击 "**选择要搜索的特定网站**" 搜索, 然后添加在步骤1中运行脚本时指定的相同网站 URL。 
     
-6. 单击“下一步”。****
+6. 单击“**下一步**”。
     
 7. 在 "**您希望我们在什么情况下查找**" 页上的 "关键字" 框`folderid:<folderid>`中`documentlink:<path>` , 粘贴步骤1中的脚本返回的 or 值。 
     

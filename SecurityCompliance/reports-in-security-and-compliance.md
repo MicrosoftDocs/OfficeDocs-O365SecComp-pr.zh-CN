@@ -11,12 +11,12 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: 7acd33ce-1ec8-49fb-b625-43bac7b58c5a
 description: '使用安全 & 合规性中心获取 SharePoint online 和 Exchange online 组织的各种报告, 以及 Azure Active Directory 报告。  '
-ms.openlocfilehash: e336ddb500ced25fc17ebf4edfb680e410bae172
-ms.sourcegitcommit: e7a776a04ef6ed5e287a33cfdc36aa2d72862b55
+ms.openlocfilehash: b902ce8e44e20fdb9e5fc22189ca07b6168be329
+ms.sourcegitcommit: 6c9340e4eb221bf81472ff3f1ae25ae21aaf5297
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30999055"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31813913"
 ---
 # <a name="reports-in-the-security--compliance-center"></a>安全与合规中心中的报告
 
@@ -25,7 +25,7 @@ ms.locfileid: "30999055"
 > [!TIP]
 > 若要查看有关 Office 365 组织中的活动的其他报告, 请参阅[Microsoft 365 管理中心中的活动报告](https://support.office.com/article/0d6dfb17-8582-4172-a9a9-aed798150263)。 
   
- **开始之前**
+ **准备工作**
   
 您需要以下权限以查看安全 & 合规性中心中的报告。
   
@@ -37,7 +37,7 @@ ms.locfileid: "30999055"
   
  **若要打开 Security & 合规中心中的 "查看报告" 页, 请执行以下操作:**
   
-1. 转到 [https://compliance.microsoft.com/#/viewreports](https://compliance.microsoft.com/#/viewreports)。
+1. 转到 [https://protection.office.com/#/viewreports](https://protection.office.com/#/viewreports)。
     
 2. 使用 office 365 组织中的用户帐户的凭据登录 Office 365。
     

@@ -18,12 +18,12 @@ search.appverid:
 - MET150
 ms.assetid: ed48d448-3714-4c42-85f5-10f75f6a4278
 description: '将搜索结果从 Security & 合规性中心中的内容搜索导出到本地计算机。 电子邮件结果将导出为 PST 文件。 SharePoint 和 OneDrive for business 网站中的内容将导出为本机 Office 文档。 '
-ms.openlocfilehash: f20ad17ba4573485199d72a260598e77bd224ece
-ms.sourcegitcommit: e7a776a04ef6ed5e287a33cfdc36aa2d72862b55
+ms.openlocfilehash: 5d1baa57f466a5ef7657d92b517660e35b0036e8
+ms.sourcegitcommit: 6c9340e4eb221bf81472ff3f1ae25ae21aaf5297
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "31000465"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31814053"
 ---
 # <a name="export-content-search-results"></a>导出内容搜索结果
 
@@ -33,7 +33,7 @@ ms.locfileid: "31000465"
   
 导出内容搜索结果包括准备结果, 然后将其下载到本地计算机。
   
-## <a name="before-you-begin"></a>开始之前
+## <a name="before-you-begin"></a>准备工作
 
 - 若要导出搜索结果, 您必须在安全 & 合规性中心中分配有 "导出管理" 角色。 此角色分配给内置电子数据展示管理员角色组。 它没有默认分配至组织管理角色组。 有关详细信息, 请参阅[分配电子数据展示权限](assign-ediscovery-permissions.md)。
     
@@ -80,7 +80,7 @@ ms.locfileid: "31000465"
 
 第一步是要准备用于导出的搜索结果。 当你准备结果时, 会将其上载到 Microsoft 云中的 Azure 存储位置。 请注意, 邮箱和网站中的内容将以每小时 2 GB 的最大速率进行上载。
   
-1. 转到 [https://compliance.microsoft.com](https://compliance.microsoft.com)。
+1. 转到 [https://protection.office.com](https://protection.office.com)。
     
 2. 使用工作或学校帐户登录到 Office 365。
     

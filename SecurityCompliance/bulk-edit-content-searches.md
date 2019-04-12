@@ -11,12 +11,12 @@ localization_priority: Normal
 search.appverid: MOE150
 ms.assetid: 39e4654a-9588-41f6-892b-c33ab57bfbe2
 description: 使用 Office 365 或 Microsoft 365 中的安全与合规中心中的批量搜索编辑器快速更改一个或多个内容搜索的查询和内容位置。
-ms.openlocfilehash: d372b6b1969e5b321cdea84981449241f3cec1c6
-ms.sourcegitcommit: e7a776a04ef6ed5e287a33cfdc36aa2d72862b55
+ms.openlocfilehash: 3a484ad689b1c638e0e14ed1643edea0f2f56c09
+ms.sourcegitcommit: 6c9340e4eb221bf81472ff3f1ae25ae21aaf5297
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "31001095"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31813933"
 ---
 # <a name="bulk-edit-content-searches"></a>批量编辑内容搜索
 
@@ -26,7 +26,7 @@ ms.locfileid: "31001095"
   
 ## <a name="use-the-bulk-search-editor-to-change-queries"></a>使用批量搜索编辑器更改查询
 
-1. 转到[https://compliance.microsoft.com](https://compliance.microsoft.com), 然后单击 "**搜索** \> **内容搜索**"。
+1. 转到[https://protection.office.com](https://protection.office.com), 然后单击 "**搜索** \> **内容搜索**"。
     
 2. 在搜索列表中, 选择一个或多个搜索, 然后单击 "**批量搜索编辑器** ![批量搜索编辑器"](media/1ddb3d18-2f00-4a7b-98a6-817ca5ec7014.png)按钮。
     
@@ -44,7 +44,7 @@ ms.locfileid: "31001095"
     
    - 在单元格中键入新的查询。 请注意, 不能编辑查询的一部分。 您必须键入整个查询。
     
-      或者
+      或
     
     - 将新查询粘贴到单元格中。 这假设您已从文件 (如文本文件或 Excel 文件) 复制查询文本。
     

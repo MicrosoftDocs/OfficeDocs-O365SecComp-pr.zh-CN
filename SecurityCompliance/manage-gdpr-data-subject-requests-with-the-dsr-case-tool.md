@@ -15,12 +15,12 @@ ms.collection:
 - M365-security-compliance
 ms.assetid: ce9eb942-3589-42cb-88fd-1576ecb09c5c
 description: GDPR 向欧盟公民 (称为 "数据主体") 授予对其个人数据的特定权限;这些权限包括获取副本、请求对其进行更改、限制处理、删除或以电子格式接收。 通过数据主体对其个人数据执行操作的正式请求称为 "数据" 主题请求或 "DSR"。 您可以使用 Office 365 和 Microsoft 365 中的合规性中心中的 dsr 案例来管理您的组织的 DSR 调查。
-ms.openlocfilehash: d491a0098bfa27818d8a03ded3b2f86da54c0453
-ms.sourcegitcommit: e7a776a04ef6ed5e287a33cfdc36aa2d72862b55
+ms.openlocfilehash: a131da86350fc288c1c9af371d28464230b742d6
+ms.sourcegitcommit: 6c9340e4eb221bf81472ff3f1ae25ae21aaf5297
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "31000105"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31814023"
 ---
 # <a name="manage-gdpr-data-subject-requests-with-the-dsr-case-tool-in-the-security--compliance-center"></a>在 Security & 合规性中心中使用 DSR 机箱工具管理 GDPR 数据主体请求
 
@@ -56,7 +56,7 @@ EU 常规数据保护条例 (GDPR) 是关于保护和启用欧盟 (EU) 内部的
     
 以下是使用 dsr 机箱工具管理 dsr 调查的高级别过程:
   
-[Step 1: Assign eDiscovery permissions to potential case members](#step-1-assign-ediscovery-permissions-to-potential-case-members)
+[步骤 1：向潜在事例成员分配电子数据展示权限](#step-1-assign-ediscovery-permissions-to-potential-case-members)
 
 [步骤 2: 创建 DSR 事例并添加成员](#step-2-create-a-dsr-case-and-add-members)
 
@@ -84,7 +84,7 @@ EU 常规数据保护条例 (GDPR) 是关于保护和启用欧盟 (EU) 内部的
 
 下一步是创建 DSR 事例。 创建事例时, 可以选择启动内置搜索, 也可以在不启动搜索的情况下创建事例。 下面的过程将指导您在不启动搜索的情况下创建事例, 并向您介绍如何向事例添加成员。
   
-1. 请转[https://compliance.microsoft.com](https://compliance.microsoft.com)到使用你的工作或学校帐户登录 Office 365。 
+1. 请转[https://protection.office.com](https://protection.office.com)到使用你的工作或学校帐户登录 Office 365。 
     
 2. 在 "安全 & 合规性中心" 中, 单击 "**数据隐私** \> **数据主体请求**",](media/ITPro-EAC-AddIcon.gif)然后单击 "添加图标" !["**新建 DSR 事例**"。
     
@@ -179,7 +179,7 @@ participants:"ina@contoso.com" OR author:"Ina Leonte" OR createdby:"Ina Leonte"
     
   - Microsoft Edge
     
-    或者
+    或
     
   - Microsoft Internet Explorer 10 及更高版本
     
@@ -297,7 +297,7 @@ participants:"ina@contoso.com" OR author:"Ina Leonte" OR createdby:"Ina Leonte"
   
 从 MyAnalytics 和 Office 漫游服务导出数据时, 会将数据保存到位于**ApplicationDataRoot**文件夹中的每个应用程序的单独文件夹中, 该文件夹位于名称中包含数据主题电子邮件地址的文件夹下。 此数据导出为 JSON 文件, 这些文件是与 XML 或 TXT 文件类似的可读文本文件, 这些文件附加到电子邮件。 目前, 这些文件夹使用分配给 MyAnalytics 和 Office 漫游服务的全局唯一标识符 (GUID) 进行命名, 下表中列出了这些文件夹。 在未来版本的 DSR 机箱工具中, GUID 将替换为实际应用程序的名称。 
   
-|**Application**|**GUID/文件夹名称**|
+|**应用程序**|**GUID/文件夹名称**|
 |:-----|:-----|
 |MyAnalytics  <br/> |3c896ded-22c5-450f-91f6-3d1ef0848f6e  <br/> |
 |Office 漫游服务  <br/> |1caee58f-eb14-4a6b-9339-1fe2ddf6692b  <br/> |

@@ -15,12 +15,12 @@ search.appverid:
 - MOE150
 ms.assetid: 8927b8b9-c5bc-45a8-a9f9-96c732e58264
 description: 在 Office 365 和 Microsoft 365 中的安全与合规中心内创建通知策略, 以监视潜在威胁、数据丢失和权限问题。 然后, 您可以查看和管理用户执行符合通知策略条件的活动时生成的警报。
-ms.openlocfilehash: 137f90668f4f8c78d30a01af8f50278d973bf1cb
-ms.sourcegitcommit: e7a776a04ef6ed5e287a33cfdc36aa2d72862b55
+ms.openlocfilehash: 4770738dd94aaec3fcc776ff7601d99d8d806ace
+ms.sourcegitcommit: 6c9340e4eb221bf81472ff3f1ae25ae21aaf5297
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "31000715"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31814123"
 ---
 # <a name="alert-policies-in-the-security-and-compliance-center"></a>安全与合规中心中的警报策略
 
@@ -47,7 +47,7 @@ ms.locfileid: "31000715"
 
 警报策略由一组规则和条件组成, 这些规则和条件定义将生成警报的用户或管理员活动, 如果用户执行该活动, 则将触发该警报的用户列表, 以及定义活动在发生之前必须发生的次数的阈值。n 警报被触发。 您还可以对策略进行分类并为其分配一个严重性级别。 这两个设置可帮助您管理通知策略 (以及在策略条件匹配时触发的警报), 因为在管理策略和查看安全与合规中心中的警报时, 可以对这些设置进行筛选。 例如, 您可以查看与相同类别中的条件匹配的警报或查看具有相同严重性级别的警报。
   
-若要查看和创建通知策略, 请[https://compliance.microsoft.com](https://compliance.microsoft.com)转到, 然后单击 "**警报** \> **警报策略**"。 
+若要查看和创建通知策略, 请[https://protection.office.com](https://protection.office.com)转到, 然后单击 "**警报** \> **警报策略**"。 
   
 ![在 "安全性和合规性中心" 中, 单击 "通知", 然后单击 "通知策略" 查看和创建警报策略](media/09ebd451-8e84-44e1-aefc-63e70bba4d97.png)
   
@@ -100,7 +100,7 @@ Office 365 提供了内置的通知策略, 可帮助确定 Exchange 管理员权
 
 该表还指明了每个 office 365 企业版和 office 365 的美国政府计划。 请注意, 如果您的组织除了 E1/G1 或 E3/G3 订阅之外还有相应的附加订阅, 则可以使用某些默认的通知策略。 
   
-|**默认通知策略**|**说明**|**Category**|**Office 365 企业版订阅**|
+|**默认通知策略**|**说明**|**类别**|**Office 365 企业版订阅**|
 |:-----|:-----|:-----|:-----|
 |**检测到潜在的恶意 URL 单击** <br/> |当组织中的用户受[Office 365 ATP 安全链接](https://docs.microsoft.com/office365/securitycompliance/atp-safe-links)的保护时, 将生成警报。单击恶意链接。 当通过 office 365 atp 标识 URL 判定更改时, 或者用户替代 office 365 atp 安全链接页面 (基于组织的 office 365 atp 安全链接策略) 时, 将触发此事件。 此通知策略具有**高**严重性设置。 对于 office 365 ATP P2, E5, G5 客户, 此警报会自动触发[Office 365 自动调查和响应](https://go.microsoft.com/fwlink/?linkid=2084737)。  有关触发此警报的事件的详细信息, 请参阅[设置 Office 365 ATP 安全链接策略](https://docs.microsoft.com/office365/securitycompliance/set-up-atp-safe-links-policies)。  <br/> |威胁管理 <br/> |E5/G5 或 Office 365 ATP P2 附加订阅  <br/> |
 |**创建转发/重定向规则** <br/> |当组织中的某个人为其邮箱创建了将邮件转发或重定向到其他电子邮件帐户的收件箱规则时, 将生成警报。 此策略仅跟踪使用 web 上的 Outlook (以前称为 Outlook web App) 或 Exchange Online PowerShell 创建的收件箱规则。 此策略的严重性设置**较低**。 有关在 outlook 网页版中使用收件箱规则转发和重定向电子邮件的详细信息, 请参阅在[web 上使用 outlook 中的规则将邮件自动转发到其他帐户](https://support.office.com/article/1433e3a0-7fb0-4999-b536-50e05cb67fed)。  <br/> |威胁管理 <br/> |E1/G1、E3/G3 或 E5/G5  <br/> |
@@ -126,7 +126,7 @@ Office 365 提供了内置的通知策略, 可帮助确定 Exchange 管理员权
 
 当组织中的用户执行的活动与通知策略的设置相匹配时, 将生成警报并显示在安全与合规中心的 "**查看通知**" 页面上, 具体取决于通知策略的设置、电子邮件通知也会在触发警报时发送给指定用户的列表。 对于每个警报,**查看警报**页面上的仪表板显示相应的通知策略的名称、警报的严重性和类别 (在警报策略中定义) 以及导致通知的活动发生次数生成此值基于警报策略的阈值设置。 仪表板还显示每个警报的状态。 有关使用 status 属性管理通知的详细信息, 请参阅 "[管理通知](#managing-alerts)" 部分。 
   
-若要查看警报, 请[https://compliance.microsoft.com](https://compliance.microsoft.com)转到, 然后单击 "**警报** \> **查看警报**"。 
+若要查看警报, 请[https://protection.office.com](https://protection.office.com)转到, 然后单击 "**警报** \> **查看警报**"。 
   
 ![在 "安全性和合规性" 中, 单击 "警报", 然后单击 "查看通知" 查看警报](media/ec5ea59b-bf61-459f-8b65-970ab4bb8bcc.png)
   

@@ -15,12 +15,12 @@ search.appverid:
 - MET150
 ms.assetid: 5b9a067b-9d2e-4aa5-bb33-99d8c0d0b5d7
 description: 使用安全 & 合规性中心分配执行与电子数据展示相关的任务所需的权限。
-ms.openlocfilehash: d936638173c9f458b6f0bd678a1b80f1d6e9e63f
-ms.sourcegitcommit: e7a776a04ef6ed5e287a33cfdc36aa2d72862b55
+ms.openlocfilehash: 958dd3f41bb9e578c80608d738fc735f5063148d
+ms.sourcegitcommit: 6c9340e4eb221bf81472ff3f1ae25ae21aaf5297
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "31001105"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31814043"
 ---
 # <a name="assign-ediscovery-permissions-in-the-security--compliance-center"></a>在安全 & 合规中心中分配电子数据展示权限
 
@@ -43,7 +43,7 @@ ms.locfileid: "31001105"
 > [!NOTE]
 > 若要使用高级电子数据展示分析用户的数据, 必须为用户 (数据管理员) 分配 Office 365 E5 许可证。 或者, 可以为具有 Office 365 E1 或 E3 许可证的用户分配高级电子数据展示独立许可证。 分配给案例并使用高级电子数据展示分析数据的管理员和合规性监察官不需要 E5 许可证。  
   
-## <a name="before-you-begin"></a>开始之前
+## <a name="before-you-begin"></a>准备工作
 
 - 您必须是组织管理角色组 (或分配有角色管理角色) 的成员, 才能在安全 & 合规性中心中分配电子数据展示权限。
     
@@ -51,7 +51,7 @@ ms.locfileid: "31001105"
     
 ## <a name="assign-ediscovery-permissions-in-the-security--compliance-center"></a>在安全 & 合规中心中分配电子数据展示权限
 
-1. 转到 [https://compliance.microsoft.com](https://compliance.microsoft.com)。
+1. 转到 [https://protection.office.com](https://protection.office.com)。
     
 2. 使用工作或学校帐户登录到 Office 365。
     
@@ -72,7 +72,7 @@ ms.locfileid: "31001105"
 
 下表列出了 Security & 合规性中心中与电子数据展示相关的 RBAC 角色, 并指明了默认情况下每个角色分配给的内置角色组。 
     
-|**角色**|**合规性管理员**|**电子数据展示管理器 & 管理员**|**组织管理**|**Reviewer**|
+|**Role**|**合规性管理员**|**电子数据展示管理器 & 管理员**|**组织管理**|**Reviewer**|
 |:-----|:-----:|:-----:|:-----:|:-----:|
 |案例管理 <br/> |![复选标记](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png) <br/> |![复选标记](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png) <br/> |![复选标记](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png) <br/> | <br/> |
 |合规性搜索 <br/> |![复选标记](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png) <br/> |![复选标记](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png) <br/> |![复选标记](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png) <br/> | <br/> |
@@ -132,7 +132,7 @@ ms.locfileid: "31001105"
 此角色允许用户批量删除与内容搜索条件匹配的数据。 有关详细信息, 请参阅[在 Office 365 组织中搜索和删除电子邮件](search-for-and-delete-messages-in-your-organization.md)。 
 
 
-## <a name="more-information"></a>详细信息
+## <a name="more-information"></a>更多信息
 
 - **为什么要创建电子数据展示管理员？** 如前所述，电子数据展示管理员是电子数据展示管理员角色组的成员，可以查看和访问您组织中的所有电子数据展示事例。 访问所有电子数据展示事例这一功能有两个重要用途： 
     
