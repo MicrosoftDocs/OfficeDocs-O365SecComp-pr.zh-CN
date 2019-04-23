@@ -13,11 +13,11 @@ search.appverid: MOE150
 ms.assetid: 67cc7f42-a53d-4751-b929-6005c80798f7
 description: 了解在合规性管理员在安全 & 合规中心中执行内容搜索和电子数据展示案例任务时, 如何在 Office 365 审核日志中搜索所记录的事件。
 ms.openlocfilehash: 62c58d123367fd5ee6778034716bc1deb5afc1e2
-ms.sourcegitcommit: 6c9340e4eb221bf81472ff3f1ae25ae21aaf5297
+ms.sourcegitcommit: f0e3c9de0b545081a4d264f74559b941f6c71410
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "31814093"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "31958713"
 ---
 # <a name="search-for-ediscovery-activities-in-the-office-365-audit-log"></a>在 Office 365 审核日志中搜索电子数据展示活动
 
@@ -73,7 +73,7 @@ ms.locfileid: "31814093"
 > [!NOTE]
 > 本节中介绍的电子数据展示活动提供了与下一节中所述的电子数据展示 cmdlet 活动类似的信息。 我们建议您使用本节中介绍的电子数据展示活动, 因为这些活动将在30分钟内显示在审核日志搜索结果中。 在审核日志搜索结果中显示电子数据展示 cmdlet 活动需要长达24小时。 
   
-|**友好名称**|**Operation**|**相应的 cmdlet**|**说明**|
+|**易记名称**|**Operation**|**相应的 cmdlet**|**Description**|
 |:-----|:-----|:-----|:-----|
 |向电子数据展示事例添加了成员  <br/> |CaseMemberAdded  <br/> |外接 ComplianceCaseMember  <br/> |将用户添加为电子数据展示事例的成员。 作为案例的成员, 用户可以执行各种与事例相关的任务, 具体取决于是否已为其分配了必要的权限。  <br/> |
 |更改内容搜索  <br/> |SearchUpdated  <br/> |Set-ComplianceSearch  <br/> |已更改现有内容搜索。 更改可以包括添加或删除内容位置或编辑搜索查询。  <br/> |
@@ -119,7 +119,7 @@ ms.locfileid: "31814093"
 > [!TIP]
 > 下表的 "**操作**" 列中的 cmdlet 链接到 TechNet 上相应的 cmdlet 帮助主题。 有关每个 cmdlet 的可用参数的说明, 请参阅 cmdlet 帮助主题。 与 cmdlet 一起使用的参数和参数值包含在已记录的每个电子数据展示 cmdlet 活动的审核日志条目中。 
   
-|**友好名称**|**Operation (cmdlet)**|**说明**|
+|**易记名称**|**Operation (cmdlet)**|**Description**|
 |:-----|:-----|:-----|
 |在电子数据展示事例中创建保留  <br/> |[新 CaseHoldPolicy](https://go.microsoft.com/fwlink/p/?LinkId=823813) <br/> |为电子数据展示事例创建了保留。 可以使用或不指定内容源来创建保留。 如果指定了内容源, 则会在审核日志条目中对其进行标识。  <br/> |
 |从电子数据展示案例中删除了保留  <br/> |[CaseHoldPolicy](https://go.microsoft.com/fwlink/p/?LinkId=823814) <br/> |删除了与电子数据展示事例相关联的保留。 删除保留将释放保留中的所有内容位置。 删除保留也会导致删除与保留相关的事例保留规则 (请参阅下面的**new-caseholdrule** )。  <br/> |
@@ -184,5 +184,5 @@ ms.locfileid: "31814093"
 |UserKey  <br/> |UserID 属性中标识的用户的备选 ID。 对于电子数据展示活动, 此属性的值通常与 UserId 属性相同。  <br/> |
 |UserServicePlan  <br/> |您的组织使用的 Office 365 订阅。 对于电子数据展示活动, 此属性通常为空。  <br/> |
 |UserType  <br/> |执行操作的用户类型。 以下值指示用户类型。  <br/> 0一个常规用户。 2 Office 365 组织中的管理员。 3 A Microsoft 数据中心管理员或数据中心系统帐户。 4系统帐户。 5应用程序。 6 A 服务主体。 |
-|版本  <br/> |指示已记录的活动的版本号 (由操作属性标识)。  <br/> |
+|Version  <br/> |指示已记录的活动的版本号 (由操作属性标识)。  <br/> |
 |Workload  <br/> |发生活动的 Office 365 服务。 对于电子数据展示活动, 值为**SecurityComplianceCenter**。  <br/> |

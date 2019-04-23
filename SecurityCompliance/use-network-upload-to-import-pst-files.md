@@ -17,11 +17,11 @@ search.appverid:
 ms.assetid: 103f940c-0468-4e1a-b527-cc8ad13a5ea6
 description: '对于管理员: 了解如何使用网络上传将多个 PST 文件批量导入 Office 365 中的用户邮箱。'
 ms.openlocfilehash: 73123d5f36a01b31cfc38e6404bd400bb722fb36
-ms.sourcegitcommit: 6c9340e4eb221bf81472ff3f1ae25ae21aaf5297
+ms.sourcegitcommit: f0e3c9de0b545081a4d264f74559b941f6c71410
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "31814083"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "31958573"
 ---
 # <a name="use-network-upload-to-import-your-organization-pst-files-to-office-365"></a>使用网络上传将组织 PST 文件导入到 Office 365
 
@@ -226,10 +226,10 @@ Microsoft Azure 存储资源管理器处于预览阶段。
     | `Workload` <br/> |指定要将数据导入到的 Office 365 服务。 若要将 PST 文件导入到用户`Exchange`邮箱, 请使用。  <br/> | `Exchange` <br/> |
     | `FilePath` <br/> |指定您在步骤2中将 PST 文件上载到的 Azure 存储位置中的文件夹位置。  <br/> 如果在步骤2中的`/Dest:`参数中未将可选子文件夹名称包括在 SAS URL 中, 则在 CSV 文件中将此参数留空。 如果包含子文件夹名称, 请在此参数中指定它 (请参阅第二个示例)。 此参数的值区分大小写。  <br/> 无论采用哪种方式, 都*不要*在`FilePath`参数的值中包含 "ingestiondata"。  <br/><br/> **重要说明:** 如果在步骤2的`/Dest:`参数中的 SAS URL 中包含可选子文件夹名称, 则文件路径名称的大小写必须与您使用的大小写相同。 例如, 如果您在步骤`PSTFiles` 2 中用于子文件夹名称, 然后在 CSV `pstfiles`文件中`FilePath`的参数中使用, 则 PST 文件的导入将失败。 请务必在两个实例中使用相同的大小写。  <br/> |（保留为空白）  <br/> 或  <br/>  `PSTFiles` <br/> |
     | `Name` <br/> |指定要导入到用户邮箱的 PST 文件的名称。  此参数的值区分大小写。  <br/> <br/>**重要说明:** CSV 文件中的 pst 文件名的大小写必须与上载到步骤2中的 Azure 存储位置的 pst 文件相同。 例如, 如果在 CSV 文件`annb.pst`的`Name`参数中使用, 但实际的 pst 文件的名称是`AnnB.pst`, 则该 pst 文件的导入将失败。 请确保 CSV 文件中的 PST 名称使用与实际 pst 文件相同的大小写。  <br/> | `annb.pst` <br/> |
-    | `Mailbox` <br/> |指定要将 PST 文件导入到其中的邮箱的电子邮件地址。  请注意，不能指定公用文件夹，因为 PST 导入服务不支持将 PST 文件导入公用文件夹。  <br/> 若要将 PST 文件导入到非活动邮箱, 您必须为此参数指定邮箱 GUID。 若要获取此 GUID, 请在 Exchange Online 中运行以下 PowerShell 命令:  `Get-Mailbox <identity of inactive mailbox> -InactiveMailboxOnly | FL Guid` <br/> <br/>**注意:** 在某些情况下, 您可能有多个邮箱具有相同的电子邮件地址, 其中一个邮箱是活动邮箱, 另一个邮箱处于软删除 (或非活动) 状态。 在这些情况下, 您必须指定邮箱 GUID, 以唯一标识要将 PST 文件导入到的邮箱。 若要获取活动邮箱的此 GUID, 请运行以下 PowerShell 命令`Get-Mailbox <identity of active mailbox> | FL Guid`:。 若要获取软删除 (或非活动) 邮箱的 GUID, 请运行此`Get-Mailbox <identity of soft-deleted or inactive mailbox> -SoftDeletedMailbox | FL Guid`命令。  <br/> | `annb@contoso.onmicrosoft.com` <br/> 或  <br/>  `2d7a87fe-d6a2-40cc-8aff-1ebea80d4ae7` <br/> |
+    | `Mailbox` <br/> |指定要将 PST 文件导入到其中的邮箱的电子邮件地址。  请注意，不能指定公用文件夹，因为 PST 导入服务不支持将 PST 文件导入公用文件夹。  <br/> 若要将 PST 文件导入到非活动邮箱, 您必须为此参数指定邮箱 GUID。 若要获取此 GUID, 请在 Exchange Online 中运行以下 PowerShell 命令:`Get-Mailbox <identity of inactive mailbox> -InactiveMailboxOnly | FL Guid` <br/> <br/>**注意:** 在某些情况下, 您可能有多个邮箱具有相同的电子邮件地址, 其中一个邮箱是活动邮箱, 另一个邮箱处于软删除 (或非活动) 状态。 在这些情况下, 您必须指定邮箱 GUID, 以唯一标识要将 PST 文件导入到的邮箱。 若要获取活动邮箱的此 GUID, 请运行以下 PowerShell 命令`Get-Mailbox <identity of active mailbox> | FL Guid`:。 若要获取软删除 (或非活动) 邮箱的 GUID, 请运行此`Get-Mailbox <identity of soft-deleted or inactive mailbox> -SoftDeletedMailbox | FL Guid`命令。  <br/> | `annb@contoso.onmicrosoft.com` <br/> 或  <br/>  `2d7a87fe-d6a2-40cc-8aff-1ebea80d4ae7` <br/> |
     | `IsArchive` <br/> | 指定是否要将 PST 文件导入到用户的存档邮箱。 有两个选项：  <br/><br/>**FALSE** -将 PST 文件导入到用户的主邮箱。  <br/> **TRUE** -将 PST 文件导入到用户的存档邮箱。 This assumes that the [user's archive mailbox is enabled](enable-archive-mailboxes.md). <br/><br/>如果将此参数设置为`TRUE`且用户的存档邮箱未启用, 则该用户的导入将失败。 请注意, 如果一个用户的导入失败 (因为未启用其存档, 并且此属性设置`TRUE`为), 则导入作业中的其他用户将不会受到影响。  <br/>  If you leave this parameter blank, the PST file is imported to the user's primary mailbox.  <br/> <br/>**注意:** 若要将 PST 文件导入到其主邮箱是本地邮箱的用户的基于云的存档邮箱, 只需`TRUE`为此参数指定, 并为该`Mailbox`参数指定用户的内部部署邮箱的电子邮件地址。  <br/> | `FALSE` <br/> 或  <br/>  `TRUE` <br/> |
     | `TargetRootFolder` <br/> | 指定将 PST 文件导入到的邮箱文件夹。  <br/>  如果将此参数留空, 则会将 PST 导入到位于邮箱根级别 (与 "收件箱" 文件夹和其他默认邮箱文件夹相同的级别) 的名为 "**导入**" 的新文件夹中。  <br/>  如果指定`/`, 则 PST 文件中的项目将直接导入到用户的 "收件箱" 文件夹中。  <br/><br/>  如果指定`/<foldername>`, 则 PST 文件中的项目将被导入到名为* \<"\> *文件夹名称" 的文件夹中。 例如, 如果使用`/ImportedPst`, 则会将项目导入到名为**ImportedPst**的文件夹中。 此文件夹将位于与 "收件箱" 文件夹相同级别的用户邮箱中。  <br/><br/> **提示:** 请考虑运行几个测试批处理, 以试用此参数, 以便您可以确定将 pst 文件导入到的最佳文件夹位置。  <br/> |（保留为空白）  <br/> 或  <br/>  `/` <br/> 或  <br/>  `/ImportedPst` <br/> |
-    | `ContentCodePage` <br/> |此可选参数指定用于以 ANSI 文件格式导入 PST 文件的代码页的数值。 此参数用于从中文、日语和朝鲜语 (CJK) 组织导入 PST 文件, 这是因为这些语言通常使用双字节字符集 (DBCS) 进行字符编码。 如果未使用此参数导入使用 DBCS 作为邮箱文件夹名称的语言的 PST 文件, 则在导入这些文件夹名称时通常会出现乱码。  <br/><br/> 有关要用于此参数的受支持值的列表, 请参阅[代码页标识符](https://go.microsoft.com/fwlink/p/?LinkId=328514)。  <br/> <br/>**注意:** 如前所述, 这是一个可选参数, 无需将其包含在 CSV 文件中。 或者, 可以将其包含在一个或多个行中, 并为其保留值为空。  <br/> |（保留为空白）  <br/> 或  <br/>  `932` (ANSI/OEM 日语的代码页标识符)  <br/> |
+    | `ContentCodePage` <br/> |此可选参数指定用于以 ANSI 文件格式导入 PST 文件的代码页的数值。 此参数用于从中文、日语和朝鲜语 (CJK) 组织导入 PST 文件, 这是因为这些语言通常使用双字节字符集 (DBCS) 进行字符编码。 如果未使用此参数导入使用 DBCS 作为邮箱文件夹名称的语言的 PST 文件, 则在导入这些文件夹名称时通常会出现乱码。  <br/><br/> 有关要用于此参数的受支持值的列表, 请参阅[代码页标识符](https://go.microsoft.com/fwlink/p/?LinkId=328514)。  <br/> <br/>**注意:** 如前所述, 这是一个可选参数, 无需将其包含在 CSV 文件中。 或者, 可以将其包含在一个或多个行中, 并为其保留值为空。  <br/> |（保留为空白）  <br/> 或  <br/>  `932`(ANSI/OEM 日语的代码页标识符)  <br/> |
     | `SPFileContainer` <br/> |对于 PST 导入，将该参数留空。   <br/> |不适用  <br/> |
     | `SPManifestContainer` <br/> |对于 PST 导入，将该参数留空。   <br/> |不适用  <br/> |
     | `SPSiteUrl` <br/> |对于 PST 导入，将该参数留空。   <br/> |不适用  <br/> |
@@ -328,7 +328,7 @@ Microsoft Azure 存储资源管理器处于预览阶段。
     
 6. **启动 pst 导入作业**-在开始导入作业后, Office 365 将使用 pst 导入映射文件中的信息将 pst 文件从其 Azure 存储位置导入到用户邮箱。 有关导入作业的状态信息 (包括有关要导入的每个 PST 文件的信息) 将显示在安全 & 合规性中心的 "**导入**" 页上。 导入作业完成后, 会将作业的状态设置为 "**完成**"。
   
-## <a name="more-information"></a>更多信息
+## <a name="more-information"></a>详细信息
 
 - 为什么要将 PST 文件导入 Office 365？
     

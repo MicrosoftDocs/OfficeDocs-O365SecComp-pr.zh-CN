@@ -11,11 +11,11 @@ localization_priority: Normal
 ms.assetid: 9a00b9ea-33fd-4772-8ea6-9d3c65e829e6
 description: 使用安全 & 合规性中心创建电子数据展示保留, 以及访问和管理组织中的电子数据展示案例。
 ms.openlocfilehash: 209f31187ad01ffa3e06cf8a5825c4538715fc7d
-ms.sourcegitcommit: 6c9340e4eb221bf81472ff3f1ae25ae21aaf5297
+ms.sourcegitcommit: f0e3c9de0b545081a4d264f74559b941f6c71410
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "31814133"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "31958543"
 ---
 # <a name="manage-ediscovery-cases-in-the-security--compliance-center"></a>在安全与合规中心管理电子数据展示事例
 
@@ -25,7 +25,7 @@ ms.locfileid: "31814133"
   
 使用以下工作流在安全 & 合规性中心和高级电子数据展示中设置和使用电子数据展示事例。
   
-[步骤 1：向潜在事例成员分配电子数据展示权限](manage-ediscovery-cases.md#step1_1)
+[Step 1: Assign eDiscovery permissions to potential case members](manage-ediscovery-cases.md#step1_1)
   
 [步骤 2: 创建新事例](manage-ediscovery-cases.md#step2_1)
   
@@ -45,7 +45,7 @@ ms.locfileid: "31814133"
   
 [Optional步骤 10: 重新打开已关闭的案例](manage-ediscovery-cases.md#reopencase_1)
   
-[更多信息](manage-ediscovery-cases.md#moreinfo_1)
+[详细信息](manage-ediscovery-cases.md#moreinfo_1)
   
 ## <a name="step-1-assign-ediscovery-permissions-to-potential-case-members"></a>步骤 1：向潜在事例成员分配电子数据展示权限
 <a name="step1_1"> </a>
@@ -491,7 +491,7 @@ ms.locfileid: "31814133"
     
     在此过程完成后, 将在**电子数据展示**页面上将该案例的状态更改为 "**活动**"。 
   
-## <a name="more-information"></a>更多信息
+## <a name="more-information"></a>详细信息
 <a name="moreinfo_1"> </a>
 
 - **对于与电子数据展示事例相关联的电子数据展示案例或保留是否有任何限制？** 下表列出了电子数据展示事例和事例保留的限制。

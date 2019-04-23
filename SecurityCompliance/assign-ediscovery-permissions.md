@@ -16,11 +16,11 @@ search.appverid:
 ms.assetid: 5b9a067b-9d2e-4aa5-bb33-99d8c0d0b5d7
 description: 使用安全 & 合规性中心分配执行与电子数据展示相关的任务所需的权限。
 ms.openlocfilehash: 958dd3f41bb9e578c80608d738fc735f5063148d
-ms.sourcegitcommit: 6c9340e4eb221bf81472ff3f1ae25ae21aaf5297
+ms.sourcegitcommit: f0e3c9de0b545081a4d264f74559b941f6c71410
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "31814043"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "31958593"
 ---
 # <a name="assign-ediscovery-permissions-in-the-security--compliance-center"></a>在安全 & 合规中心中分配电子数据展示权限
 
@@ -72,7 +72,7 @@ ms.locfileid: "31814043"
 
 下表列出了 Security & 合规性中心中与电子数据展示相关的 RBAC 角色, 并指明了默认情况下每个角色分配给的内置角色组。 
     
-|**Role**|**合规性管理员**|**电子数据展示管理器 & 管理员**|**组织管理**|**Reviewer**|
+|**角色**|**合规性管理员**|**电子数据展示管理器 & 管理员**|**组织管理**|**Reviewer**|
 |:-----|:-----:|:-----:|:-----:|:-----:|
 |案例管理 <br/> |![复选标记](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png) <br/> |![复选标记](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png) <br/> |![复选标记](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png) <br/> | <br/> |
 |合规性搜索 <br/> |![复选标记](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png) <br/> |![复选标记](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png) <br/> |![复选标记](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png) <br/> | <br/> |
@@ -132,7 +132,7 @@ ms.locfileid: "31814043"
 此角色允许用户批量删除与内容搜索条件匹配的数据。 有关详细信息, 请参阅[在 Office 365 组织中搜索和删除电子邮件](search-for-and-delete-messages-in-your-organization.md)。 
 
 
-## <a name="more-information"></a>更多信息
+## <a name="more-information"></a>详细信息
 
 - **为什么要创建电子数据展示管理员？** 如前所述，电子数据展示管理员是电子数据展示管理员角色组的成员，可以查看和访问您组织中的所有电子数据展示事例。 访问所有电子数据展示事例这一功能有两个重要用途： 
     

@@ -15,12 +15,12 @@ search.appverid:
 - MET150
 ms.assetid: 8dd335ab-29d0-41c3-8dd8-9f7c7481e60c
 description: 使用安全 & 合规性中心在您的组织中创建和管理电子数据展示事例。 您可以向事例分配成员、将内容位置置于保留状态、运行与事例关联的内容搜索以及导出搜索结果。 您还可以准备事例数据, 以便在高级电子数据展示中进行进一步分析。
-ms.openlocfilehash: cd7e7f9dba947ef28b27faf9df7b9e927ca73bd5
-ms.sourcegitcommit: 6c9340e4eb221bf81472ff3f1ae25ae21aaf5297
+ms.openlocfilehash: 5f31153e70495dc28ee276c36e9edfc67638956e
+ms.sourcegitcommit: f0e3c9de0b545081a4d264f74559b941f6c71410
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "31814103"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "31958523"
 ---
 # <a name="ediscovery-cases-in-the-security--compliance-center"></a>安全 & 合规中心中的电子数据展示案例
 
@@ -30,7 +30,7 @@ ms.locfileid: "31814103"
   
 使用以下工作流在安全 & 合规性中心和高级电子数据展示中设置和使用电子数据展示事例。
 
-[步骤 1：向潜在事例成员分配电子数据展示权限](#step-1-assign-ediscovery-permissions-to-potential-case-members)
+[Step 1: Assign eDiscovery permissions to potential case members](#step-1-assign-ediscovery-permissions-to-potential-case-members)
 
 [步骤 2: 创建新事例](#step-2-create-a-new-case)
 
@@ -50,7 +50,7 @@ ms.locfileid: "31814103"
 
 [Optional步骤 10: 重新打开已关闭的案例](#optional-step-10-re-open-a-closed-case)
 
-[更多信息](#more-information)
+[详细信息](#more-information)
   
 ## <a name="step-1-assign-ediscovery-permissions-to-potential-case-members"></a>步骤 1：向潜在事例成员分配电子数据展示权限
 
@@ -95,7 +95,7 @@ ms.locfileid: "31814103"
 
 ## <a name="step-2-create-a-new-case"></a>步骤 2: 创建新事例
 
-下一步是创建新的电子数据展示事例。 你必须是电子数据展示管理员角色组的成员才能创建电子数据展示事例。 如前所述, 在安全 & 合规中心中创建新事例之后, 如果您的组织有 Office 365 E5 订阅, 则您 (和其他事例成员) 将能够在高级电子数据展示中访问这种同一种情况。
+下一步是创建新的电子数据展示事例。 你必须是电子数据展示管理员角色组的成员才能创建电子数据展示事例。 如前所述, 在安全 & 合规中心中创建新事例之后, 如果您的组织具有 Office 365 E5 订阅, 则您 (和其他事例成员) 将能够在高级电子数据展示中访问这种同一种情况。
   
 1. 转到 [https://protection.office.com](https://protection.office.com)。
     
@@ -176,7 +176,7 @@ ms.locfileid: "31814103"
   
 6. Optional在 "**说明**" 框中, 添加保留的说明。 
     
-7. 单击“**下一步**”。
+7. 单击“下一步”。****
     
 8. 选择要置于保留状态的内容位置。 您可以将邮箱、网站和公用文件夹置于保留状态。
     
@@ -515,7 +515,7 @@ ms.locfileid: "31814103"
     
     在此过程完成后, 将在**电子数据展示**页面上将该案例的状态更改为 "**活动**"。 
   
-## <a name="more-information"></a>更多信息
+## <a name="more-information"></a>详细信息
 
 - **对于与电子数据展示事例相关联的电子数据展示案例或保留是否有任何限制？** 下表列出了电子数据展示事例和事例保留的限制。
     

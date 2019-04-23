@@ -3,7 +3,7 @@ title: 将垃圾邮件、非垃圾邮件和网络欺诈邮件提交给 Microsoft
 ms.author: tracyp
 author: MSFTTracyP
 manager: laurawi
-ms.date: 6/11/2018
+ms.date: 04/19/2019
 ms.audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
@@ -14,12 +14,12 @@ ms.assetid: dad30e2f-93fe-4d21-9a36-21c87ced85c1
 ms.collection:
 - M365-security-compliance
 description: '你和你的用户可以将虚假的负垃圾邮件和假肯定垃圾邮件提交给 Microsoft 进行分析。 '
-ms.openlocfilehash: 471d497a952345da673ce6b3a6f7e9e78bf9b94d
-ms.sourcegitcommit: 0f93b37c39d807dec91f118aa671a3430c47a9ac
+ms.openlocfilehash: 75943a923195b522113690d5e176777e47d026d4
+ms.sourcegitcommit: f0e3c9de0b545081a4d264f74559b941f6c71410
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/20/2019
-ms.locfileid: "30693621"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "31958673"
 ---
 # <a name="submit-spam-non-spam-and-phishing-scam-messages-to-microsoft-for-analysis"></a>将垃圾邮件、非垃圾邮件和网络欺诈邮件提交给 Microsoft 进行分析
 
@@ -33,11 +33,11 @@ ms.locfileid: "30693621"
 
 如果您收到一封通过垃圾邮件筛选器传递且应归类为垃圾邮件或钓鱼诈骗的邮件, 则可以根据需要将 "假负" 邮件提交到 microsoft 垃圾邮件分析和 microsoft 仿冒分析团队。 分析师将检查邮件并将其添加到服务范围的筛选器中 (如果它满足分类条件)。 
   
-有关适用于整个组织的详细垃圾邮件设置，请参阅[使用 Office 365 垃圾邮件筛选器阻止垃圾电子邮件，以防止出现漏报问题](https://go.microsoft.com/fwlink/p/?LinkId=534225)。 本文包含有助于防止漏报的提示。
+有关适用于整个组织的详细垃圾邮件设置，请参阅[使用 Office 365 垃圾邮件筛选器阻止垃圾电子邮件，以防止出现漏报问题](reduce-spam-email.md)。 本文包含有助于防止漏报的提示。
   
 您可以通过下列方式提交垃圾邮件：
   
-- 对于 outlook 和 web 用户上的 outlook, 请使用 Microsoft Outlook 的报告消息外接程序。 有关如何安装和使用此工具的信息, 请参阅[Enable the Report Message 外接程序](https://support.office.com/article/4250c4bc-6102-420b-9e0a-a95064837676)。 
+- 对于 outlook 和 web 用户上的 outlook, 请使用 Microsoft Outlook 的报告消息外接程序。 有关如何安装和使用此工具的信息, 请参阅[Enable the Report Message 外接程序](enable-the-report-message-add-in.md)。 
         
 - 您还可以使用电子邮件将邮件提交到 Microsoft, 并将其分类为垃圾邮件或网络钓鱼诈骗, 如以下过程所述。
     
@@ -66,7 +66,7 @@ ms.locfileid: "30693621"
 
 如果邮件被错误地标识为垃圾邮件, 您可以将 "误报" 邮件提交给 Microsoft 垃圾邮件分析团队。 分析师将评估并分析邮件。 根据分析结果的不同，可能会调整服务范围内的垃圾邮件内容筛选规则，以允许发送该邮件。
   
-管理员可以查看更多垃圾邮件设置信息, 这些信息适用于整个组织。 请参阅[如何帮助确保邮件不会被标记为垃圾邮件](https://go.microsoft.com/fwlink/p/?LinkId=534224)。 如果你拥有管理员级别控制，并且你想要阻止误报，此信息会很有帮助。
+管理员可以查看更多垃圾邮件设置信息, 这些信息适用于整个组织。 请参阅[如何帮助确保邮件不会被标记为垃圾邮件](prevent-email-from-being-marked-as-spam.md)。 如果你拥有管理员级别控制，并且你想要阻止误报，此信息会很有帮助。
   
 您可以通过下列方式提交非垃圾邮件：
   
@@ -82,7 +82,7 @@ ms.locfileid: "30693621"
     
   - 用户可以释放自己的垃圾邮件隔离邮件, 并通过以下频道将其报告为误报: 
     
-  - Exchange 管理中心 (EAC) 用户界面。 有关详细信息，请参阅[Find and Release Quarantined Messages (End Users)](http://technet.microsoft.com/library/e439b560-827a-4807-abd3-6b861c1ff786.aspx)。
+  - Exchange 管理中心 (EAC) 用户界面。 有关详细信息，请参阅[Find and Release Quarantined Messages (End Users)](find-and-release-quarantined-messages-as-a-user.md)。
     
   - 最终用户垃圾邮件通知邮件（如果已由管理员启用）。 
     
@@ -118,10 +118,10 @@ ms.locfileid: "30693621"
 ## <a name="for-more-information"></a>详细信息
 <a name="sectionSection4"> </a>
 
-[反垃圾邮件和反恶意软件保护](http://technet.microsoft.com/library/93c6c227-7442-4293-b64d-ec8f15c928db.aspx)
+[反垃圾邮件和反恶意软件保护](anti-spam-and-anti-malware-protection.md)
   
-[如何帮助确保邮件不会标记为垃圾邮件](https://go.microsoft.com/fwlink/p/?LinkId=534224)
+[如何帮助确保邮件不会标记为垃圾邮件](prevent-email-from-being-marked-as-spam.md)
   
-[使用 Office 365 垃圾邮件筛选器阻止垃圾电子邮件，以防止出现漏报问题](https://go.microsoft.com/fwlink/p/?LinkId=534225)
+[使用 Office 365 垃圾邮件筛选器阻止垃圾电子邮件，以防止出现漏报问题](reduce-spam-email.md)
   
 

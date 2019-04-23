@@ -14,11 +14,11 @@ search.appverid:
 ms.assetid: 47e8b964-4b09-44f7-a2d7-b8a06e8e389c
 description: 下载第三方审核, 了解 Microsoft 如何使客户数据安全, 并了解在使用 Office 365 时如何遵守 ISO、HIPAA、FINRA 和 FedRAMP。
 ms.openlocfilehash: d0cb03a7f5cbc34bdce238155372c9e031a95033
-ms.sourcegitcommit: 6c9340e4eb221bf81472ff3f1ae25ae21aaf5297
+ms.sourcegitcommit: f0e3c9de0b545081a4d264f74559b941f6c71410
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "31813953"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "31958223"
 ---
 # <a name="service-assurance-in-the-security--compliance-center"></a>安全 & 合规中心中的服务保证
 
@@ -99,7 +99,7 @@ ms.locfileid: "31813953"
 > [!NOTE]
 > 服务保证报告和文档可在发布后的12个月内下载, 或者在新版本的文档可用之前进行下载。 
   
-|**服务保证页**|**内容可用**|**说明**|
+|**服务保证页**|**内容可用**|**Description**|
 |:-----|:-----|:-----|
 |合规性报告  <br/> | FedRamp  <br/>  GRC 评估  <br/>  ISO  <br/>  SOC/SSAE  <br/> |使用服务合规性报告可查看由 Office 365 服务交付操作的第三方独立审核员执行的审核评估。  <br/> |
 |信任文档  <br/> | 常见问题解答和白皮书  <br/>  风险管理报告  <br/> |使用在您的审查/风险评估的非公开协议下为您提供的白皮书、faq、年末报告和其他 Microsoft 机密资源。  <br/> |

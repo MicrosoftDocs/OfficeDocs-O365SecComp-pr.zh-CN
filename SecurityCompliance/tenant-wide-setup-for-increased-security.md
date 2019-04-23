@@ -15,12 +15,12 @@ ms.collection:
 search.appverid: MET150
 ms.assetid: 8d274fe3-db51-4107-ba64-865e7155b355
 description: 引导您完成影响 Office 365 环境安全性的租户范围设置的建议配置。 您的安全需求可能需要更高或更低的安全性。 使用这些建议作为起点。
-ms.openlocfilehash: 26f7bebd1eab1f43da356786bdef5f3fff860053
-ms.sourcegitcommit: 54d58da1777eb83adb82826d1bb1adb94903c8e1
+ms.openlocfilehash: 91471f5e4b16f6950b1f74d747ebce3f802e4890
+ms.sourcegitcommit: f0e3c9de0b545081a4d264f74559b941f6c71410
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30955265"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "31958533"
 ---
 # <a name="configure-your-office-365-tenant-for-increased-security"></a>配置 Office 365 租户以提高安全性
 
@@ -65,7 +65,7 @@ Microsoft 365 安全中心包含可保护您的环境的功能。 它还包括�
   
 |区域 * * * *|包含默认策略 * * * *|建议 * * * *|
 |:-----|:-----|:-----|
-|**邮件流**(邮件流规则, 也称为传输规则)|否|添加邮件流规则, 以帮助抵御勒索软件的侵害。 请参阅本文中的 "如何使用 Exchange 传输规则跟踪或阻止由勒索软件使用的文件扩展名的电子邮件"。在此博客文章中:[如何处理勒索软件](https://blogs.technet.microsoft.com/office365security/how-to-deal-with-ransomware/)。  <br><br/> 创建邮件流规则, 以阻止将电子邮件自动转发到外部域。 有关详细信息, 请参阅[通过安全分数缓解客户端外部转发规则](https://blogs.technet.microsoft.com/office365security/mitigating-client-external-forwarding-rules-with-secure-score/)。 <br/><br/> 详细信息: [Exchange Online 中的邮件流规则 (传输规则)](https://technet.microsoft.com/en-us/library/jj919238%28v=exchg.150%29.aspx)|
+|**邮件流**(邮件流规则, 也称为传输规则)|否|添加邮件流规则, 以帮助抵御勒索软件的侵害。 请参阅本文中的 "如何使用 Exchange 传输规则跟踪或阻止由勒索软件使用的文件扩展名的电子邮件"。在此博客文章中:[如何处理勒索软件](https://blogs.technet.microsoft.com/office365security/how-to-deal-with-ransomware/)。 <br><br/> 请参阅以下主题: <br/>•抵御[勒索软件](https://docs.microsoft.com/office365/admin/security-and-compliance/secure-your-business-data?view=o365-worldwide#ransomware)<br/>•[Office 365 中的恶意软件和勒索软件防护](office-365-malware-and-ransomware-protection.md)<br/><br/>  创建邮件流规则, 以阻止将电子邮件自动转发到外部域。 有关详细信息, 请参阅[通过安全分数缓解客户端外部转发规则](https://blogs.technet.microsoft.com/office365security/mitigating-client-external-forwarding-rules-with-secure-score/)。 <br/><br/> 详细信息: [Exchange Online 中的邮件流规则 (传输规则)](https://technet.microsoft.com/en-us/library/jj919238%28v=exchg.150%29.aspx)|
 |**启用新式验证**|否|Office 365 中的新式验证是使用多重身份验证 (MFA) 的先决条件。 建议使用 MFA 来保护对云资源 (包括电子邮件) 的访问。 <br/><br/> 请参阅以下主题:  <br/>•[在 Exchange Online 中启用或禁用新式验证](https://support.office.com/article/58018196-f918-49cd-8238-56f57f38d662) <br/>• [Skype for business Online: 为你的租户启用新式验证](https://social.technet.microsoft.com/wiki/contents/articles/34339.skype-for-business-online-enable-your-tenant-for-modern-authentication.aspx) <br/><br/> 默认情况下, 将为 Office 2016 客户端、SharePoint Online 和 OneDrive for business 启用新式验证。 <br/><br/> 详细信息:[使用 office 365 新式身份验证与 office 客户端](https://support.office.com/article/776c0036-66fd-41cb-8928-5495c0f9168a)|
    
 ## <a name="configure-tenant-wide-sharing-policies-in-sharepoint-admin-center"></a>在 SharePoint 管理中心中配置租户范围内的共享策略

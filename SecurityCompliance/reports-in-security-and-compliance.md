@@ -12,11 +12,11 @@ localization_priority: Normal
 ms.assetid: 7acd33ce-1ec8-49fb-b625-43bac7b58c5a
 description: '使用安全 & 合规性中心获取 SharePoint online 和 Exchange online 组织的各种报告, 以及 Azure Active Directory 报告。  '
 ms.openlocfilehash: b902ce8e44e20fdb9e5fc22189ca07b6168be329
-ms.sourcegitcommit: 6c9340e4eb221bf81472ff3f1ae25ae21aaf5297
+ms.sourcegitcommit: f0e3c9de0b545081a4d264f74559b941f6c71410
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "31813913"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "31958263"
 ---
 # <a name="reports-in-the-security--compliance-center"></a>安全与合规中心中的报告
 
@@ -25,7 +25,7 @@ ms.locfileid: "31813913"
 > [!TIP]
 > 若要查看有关 Office 365 组织中的活动的其他报告, 请参阅[Microsoft 365 管理中心中的活动报告](https://support.office.com/article/0d6dfb17-8582-4172-a9a9-aed798150263)。 
   
- **准备工作**
+ **开始之前**
   
 您需要以下权限以查看安全 & 合规性中心中的报告。
   

@@ -3,7 +3,7 @@ title: 使用 Office 365 ATP 安全附件进行动态传递和预览
 ms.author: deniseb
 author: denisebmsft
 manager: laurawi
-ms.date: 03/12/2019
+ms.date: 04/19/2019
 ms.audience: Admin
 ms.topic: overview
 ms.service: O365-seccomp
@@ -15,12 +15,12 @@ ms.assetid: f16c9928-8e3d-4219-b994-271dc9a16272
 ms.collection:
 - M365-security-compliance
 description: 设置 ATP 安全附件策略时, 请选择 "动态传递" 以避免邮件延迟, 并使用户能够预览正在扫描的附件。
-ms.openlocfilehash: d27fa16f8d1d117aa56a2080eb020ab3638ca6fe
-ms.sourcegitcommit: f86383dcb9c52352661d51b22617f1809445beaa
+ms.openlocfilehash: 567b5f0c5bc75123169073bf5dc33de191187846
+ms.sourcegitcommit: f0e3c9de0b545081a4d264f74559b941f6c71410
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "30573506"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "31958563"
 ---
 # <a name="dynamic-delivery-and-previewing-with-office-365-atp-safe-attachments"></a>使用 Office 365 ATP 安全附件进行动态传递和预览
 
@@ -81,4 +81,4 @@ ATP 安全附件扫描发生在 Office 365 数据所在的同一个区域中。 
 
 - 使用[安全/多用途 Internet 邮件扩展 (S/MIME)](s-mime-for-message-signing-and-encryption.md)加密的邮件
 
-在不支持动态传递的情况下, ATP 安全附件不会扫描电子邮件。 但是, 根据您的[ATP 安全链接策略](set-up-atp-safe-links-policies.md)的配置方式, 将检查电子邮件 (和 Office 文件) 中的 url。
+- 在不支持动态传递的情况下, ATP 安全附件不会扫描电子邮件。 但是, 将检查包含 url 的附件的电子邮件, 具体取决于您的[ATP 安全链接策略](set-up-atp-safe-links-policies.md)的配置方式。 在这些情况下, 将检查电子邮件和 Office 文件中的 url。

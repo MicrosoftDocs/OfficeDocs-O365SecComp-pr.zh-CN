@@ -12,18 +12,18 @@ ms.collection: M365-security-compliance
 search.appverid: MOE150
 ms.assetid: c4c8f689-9d52-4e80-ae4b-1411ee9efc43
 description: 了解如何配置 Windows 注册表, 以便在从 Security & 合规性中心和 Office 365 中的高级电子数据展示中下载搜索结果和搜索数据时增加数据吞吐量。
-ms.openlocfilehash: 36a4f1766f3ac0108d1829c93cfca63bc5cf09f5
-ms.sourcegitcommit: e7a776a04ef6ed5e287a33cfdc36aa2d72862b55
+ms.openlocfilehash: 10eff929d6b668d5e2bc22d8ee7f223da4943326
+ms.sourcegitcommit: f0e3c9de0b545081a4d264f74559b941f6c71410
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "31000915"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "31958618"
 ---
 # <a name="increase-the-download-speed-when-exporting-ediscovery-search-results-from-office-365"></a>提高导出 Office 365 中的电子数据展示搜索结果时的下载速度
 
 当您使用 office 365 电子数据展示导出工具在安全 & 合规性中心中下载内容搜索的结果或从 Office 365 高级电子数据展示下载数据时, 该工具将启动一定数量的并发导出操作以供下载数据到本地计算机。 默认情况下, 并发操作数设置为要用于下载数据的计算机中的核心数的8倍。 例如, 如果您有一台双核计算机 (即一个芯片上有两个中央处理单元), 则并发导出操作的默认数量为16个。 若要增加数据传输吞吐量并加快下载过程, 可以通过在用于下载搜索结果的计算机上配置 Windows 注册表设置来增加并发操作的数量。 若要加快下载过程, 建议您首先设置24个并发操作。
   
-如果通过低带宽网络下载搜索结果, 则增加此设置可能会产生负面影响。 或者, 可以将设置增加到高带宽网络 (最大并发操作数为 512) 中的24个并发操作。 配置此注册表设置后, 您可能需要将其更改为为您的环境找到最佳的并发操作数。
+如果通过低带宽网络下载搜索结果, 则增加此设置可能会产生负面影响。 或者, 可以将设置增加到高带宽网络 (最大并发操作数为 48) 中的24个并发操作。 配置此注册表设置后, 您可能需要将其更改为为您的环境找到最佳的并发操作数。
   
 ## <a name="create-a-registry-setting-to-change-the-number-of-concurrent-operations-when-exporting-data"></a>创建注册表设置以更改导出数据时的并发操作的数量
 
@@ -54,7 +54,7 @@ ms.locfileid: "31000915"
     > [!IMPORTANT]
     > 在创建或更改`DownloadConcurrency`注册表设置后, 请确保为要下载的搜索结果或数据重新创建一个新的导出作业或重新启动现有的导出作业。 有关更多详细信息, 请参阅[详细信息](#more-information)部分。 
   
-## <a name="more-information"></a>更多信息
+## <a name="more-information"></a>详细信息
 
 - 首次运行您在此过程中创建的 .reg 文件时, 会创建一个新的注册表项。 然后, `DownloadConcurrency`每次更改并重新运行 .reg 编辑文件时, 都会编辑注册表设置。 
     

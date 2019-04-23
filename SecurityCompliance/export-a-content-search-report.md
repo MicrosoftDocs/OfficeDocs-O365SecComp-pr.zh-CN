@@ -20,11 +20,11 @@ search.appverid:
 ms.assetid: 5c8c1db6-d8ac-4dbb-8a7a-f65d452169b9
 description: 除了在 Office 365 的 Security & 合规性中心中导出内容搜索的实际结果, 您只需导出搜索结果报告即可。 报告包含搜索结果摘要和文档, 其中包含有关要导出的每个项目的详细信息。
 ms.openlocfilehash: 57c8a9be5c53998570f6ff15a49df69e27745e26
-ms.sourcegitcommit: 6c9340e4eb221bf81472ff3f1ae25ae21aaf5297
+ms.sourcegitcommit: f0e3c9de0b545081a4d264f74559b941f6c71410
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "31813923"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "31958723"
 ---
 # <a name="export-a-content-search-report"></a>导出内容搜索报告
 

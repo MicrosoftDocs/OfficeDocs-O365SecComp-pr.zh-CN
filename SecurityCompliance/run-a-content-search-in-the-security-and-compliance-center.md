@@ -13,11 +13,11 @@ localization_priority: Normal
 ms.assetid: 61852fd9-fe8a-4880-a339-cb19ed3bff4a
 description: '使用安全 & 合规中心中的内容搜索来搜索邮箱、SharePoint Online 网站和 OneDrive for business 位置。 '
 ms.openlocfilehash: 4c3d9cc024a495ff8464e1117d5f46c13c1b9a08
-ms.sourcegitcommit: 6c9340e4eb221bf81472ff3f1ae25ae21aaf5297
+ms.sourcegitcommit: f0e3c9de0b545081a4d264f74559b941f6c71410
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "31814073"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "31958273"
 ---
 # <a name="run-a-content-search-in-the-security--compliance-center"></a>在安全与合规中心运行内容搜索
 
@@ -35,7 +35,7 @@ ms.locfileid: "31814073"
     
 内容搜索是一个新的电子数据展示搜索工具，具有新增及改进的缩放和性能功能。 使用内容搜索运行非常大的电子数据展示搜索。 您可以在单个内容搜索中搜索所有邮箱、所有 Exchange 公用文件夹以及所有 SharePoint Online 网站和 OneDrive for business 帐户。 您可以搜索的内容位置的数量没有限制。 此外，对可以同时运行的搜索数也没有限制。 运行内容搜索之后, 内容**搜索**页的详细信息窗格中将显示内容位置数和估计的搜索结果数。 运行搜索后, 可以预览结果, 获取一个或多个搜索的关键字统计信息, 批量编辑内容搜索, 并将结果导出到本地计算机。 
   
- **目录**
+ **内容**
   
 [Create a search](run-a-content-search-in-the-security-and-compliance-center.md#create)
   
@@ -69,7 +69,7 @@ ms.locfileid: "31814073"
     
     有关在 Office 365 组和 Microsoft 团队中搜索内容的提示, 请参阅一节。 
     
-[返回顶部](run-a-content-search-in-the-security-and-compliance-center.md#top)
+[Return to top](run-a-content-search-in-the-security-and-compliance-center.md#top)
   
 ## <a name="create-a-search"></a>Create a search
 <a name="create"> </a>
@@ -120,7 +120,7 @@ ms.locfileid: "31814073"
     
     对于公用文件夹, 您可以选择搜索 Exchange Online 组织中的所有公用文件夹, 或者不搜索任何公用文件夹。
     
-7. 单击“**下一步**”。
+7. 单击“下一步”。****
     
 8. 在 "**新建搜索**" 页上, 您可以添加关键字和条件来创建搜索查询。 
     
@@ -162,7 +162,7 @@ ms.locfileid: "31814073"
     
     如有必要, ****![请单击 "](media/O365-MDM-Policy-RefreshIcon.gif)刷新刷新" 图标以更新所选搜索的详细信息窗格中的信息。 
     
-[返回顶部](run-a-content-search-in-the-security-and-compliance-center.md#top)
+[Return to top](run-a-content-search-in-the-security-and-compliance-center.md#top)
   
 ## <a name="export-search-results"></a>导出搜索结果
 <a name="export"> </a>
@@ -209,7 +209,7 @@ ms.locfileid: "31814073"
     
 - gzip
     
-[返回顶部](run-a-content-search-in-the-security-and-compliance-center.md#top)
+[Return to top](run-a-content-search-in-the-security-and-compliance-center.md#top)
   
 ## <a name="update-search-results"></a>更新搜索结果
 <a name="restart"> </a>
@@ -252,7 +252,7 @@ ms.locfileid: "31814073"
     
     将显示状态消息，指出正在检索结果。 完成搜索后，更新的信息将显示在详细信息窗格中的“**结果**”下。 请注意，详细信息窗格中的“**搜索时间**”字段中的日期将更新为当前日期和时间。 若要刷新搜索列表中的信息, 请单击 "**刷新**![刷新](media/O365-MDM-Policy-RefreshIcon.gif)" 图标。
     
-[返回页首](run-a-content-search-in-the-security-and-compliance-center.md#top)
+[返回顶部](run-a-content-search-in-the-security-and-compliance-center.md#top)
   
 ## <a name="more-information"></a>详细信息
 <a name="moreinfo"> </a>
@@ -265,7 +265,8 @@ ms.locfileid: "31814073"
  
 [Microsoft 团队和 Office 365 组](#microsoft-teams-and-office-365-groups)
   
-[OneDrive for Business](#onedrive-for-business)
+
+  [OneDrive for Business](#onedrive-for-business)
   
 [搜索查询](#search-queries)
   
@@ -273,7 +274,7 @@ ms.locfileid: "31814073"
   
 [其他](#miscellaneous)
   
-[返回顶部](#before-you-begin)
+[Return to top](#before-you-begin)
   
 ### <a name="limits-and-performance"></a>限制和性能
   
@@ -353,11 +354,11 @@ ms.locfileid: "31814073"
     
   - 您必须选择 "**显示关键字列表**" 复选框, 然后在单独的行中键入每个关键字, 以创建搜索查询, 在该查询中, 每行中的关键字 (或关键字短语) 通过**or**运算符连接。 如果只是将关键字列表粘贴到关键字框中或在键入关键字后按**enter**键, 则不会通过**or**运算符连接。 下面是添加关键字列表的错误和正确示例。 
     
-    **不正确**
+    **不**
     
     ![设置关键字列表格式的错误方法 (通过将列表粘贴到关键字框中)](media/fb54e3df-232a-439a-b3d7-27a60ec76a4c.png)
   
-    **正确**
+    **错误**
     
     ![设置关键字列表格式的正确方法 (通过选中 "checkbox" 和 "粘贴" 列表)](media/5d511a7b-c1f9-499c-bffe-e075bfc9adec.png)
   

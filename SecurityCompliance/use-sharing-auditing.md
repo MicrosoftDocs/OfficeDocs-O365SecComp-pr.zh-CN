@@ -16,11 +16,11 @@ search.appverid:
 ms.assetid: 50bbf89f-7870-4c2a-ae14-42635e0cfc01
 description: '共享是 SharePoint Online 和 OneDrive for business 中的关键活动。 管理员现在可以在 Office 365 审核日志中使用共享审核来确定如何在组织中使用共享。 '
 ms.openlocfilehash: 08b511acdf74edac5b2d595d1b60bdd84d630918
-ms.sourcegitcommit: 6c9340e4eb221bf81472ff3f1ae25ae21aaf5297
+ms.sourcegitcommit: f0e3c9de0b545081a4d264f74559b941f6c71410
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "31813943"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "31958243"
 ---
 # <a name="use-sharing-auditing-in-the-office-365-audit-log"></a>审核共享以查找与外部用户共享的资源
 
@@ -125,7 +125,7 @@ ms.locfileid: "31813943"
     
       - 在 "**拆分**" 下, 在**分隔符的每次出现时**选择。
     
-7. 单击“确定”****。
+7. 单击“**确定**”。
     
     **详细信息**列拆分为多个列。 每个新列的名称分别为**详细信息. 1**、**详细信息. 2**、**详细信息. 3**等。 您会注意到详细信息中每个单元格中的值 **。 n**个列以属性名称作为前缀;例如,**操作: SharingSet**、 **operation: SharingInvitationAccepted**和**Operation: SharingInvitationCreated**。
     

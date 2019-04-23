@@ -19,11 +19,11 @@ search.appverid:
 ms.assetid: ed48d448-3714-4c42-85f5-10f75f6a4278
 description: '将搜索结果从 Security & 合规性中心中的内容搜索导出到本地计算机。 电子邮件结果将导出为 PST 文件。 SharePoint 和 OneDrive for business 网站中的内容将导出为本机 Office 文档。 '
 ms.openlocfilehash: 5d1baa57f466a5ef7657d92b517660e35b0036e8
-ms.sourcegitcommit: 6c9340e4eb221bf81472ff3f1ae25ae21aaf5297
+ms.sourcegitcommit: f0e3c9de0b545081a4d264f74559b941f6c71410
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "31814053"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "31958642"
 ---
 # <a name="export-content-search-results"></a>导出内容搜索结果
 
@@ -170,7 +170,7 @@ ms.locfileid: "31814053"
     
 
   
-## <a name="more-information"></a>更多信息
+## <a name="more-information"></a>详细信息
 
 以下是有关导出搜索结果的详细信息。
   

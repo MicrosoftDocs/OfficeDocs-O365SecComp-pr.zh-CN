@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 ms.assetid: 268a109e-7843-405b-bb3d-b9393b2342ce
 description: 使用 Office 365 中的安全 & 合规性中心启用存档邮箱, 以支持组织的邮件保留、电子数据展示和保留要求。
-ms.openlocfilehash: 334af008f6eb8baedff1239ed1692a0ad73acdb6
-ms.sourcegitcommit: d3e3ce391130f209f4d63c2528e1da8342cd732f
+ms.openlocfilehash: d363943910d970576976d8386196b450dd5694f3
+ms.sourcegitcommit: f0e3c9de0b545081a4d264f74559b941f6c71410
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "31901940"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "31958303"
 ---
 # <a name="enable-archive-mailboxes-in-the-security--compliance-center"></a>在安全 & 合规中心中启用存档邮箱
   
@@ -37,7 +37,7 @@ Office 365 中的存档 (也称为就地存档) 为用户提供额外的邮箱�
   
 ## <a name="enable-an-archive-mailbox"></a>启用存档邮箱
   
-1. 转到 [https://compliance.microsoft.com](https://compliance.microsoft.com)。
+1. 转到 [https://protection.office.com](https://protection.office.com)。
     
 2. 使用工作或学校帐户登录到 Office 365。
     
@@ -68,7 +68,7 @@ Office 365 中的存档 (也称为就地存档) 为用户提供额外的邮箱�
   
 要禁用存档邮箱, 请执行以下操作:
   
-1. 转到 [https://compliance.microsoft.com](https://compliance.microsoft.com)。
+1. 转到 [https://protection.office.com](https://protection.office.com)。
     
 2. 使用工作或学校帐户登录到 Office 365。
     
@@ -125,7 +125,7 @@ Office 365 中的存档 (也称为就地存档) 为用户提供额外的邮箱�
   Get-Mailbox -Filter {ArchiveStatus -Eq "Active" -AND RecipientTypeDetails -eq "UserMailbox"} | Disable-Mailbox -Archive
   ```
 
-## <a name="more-information"></a>更多信息
+## <a name="more-information"></a>详细信息
   
 - 存档邮箱可帮助您和您的用户满足组织的保留、电子数据展示和保留要求。 例如, 您可以使用组织的 Exchange 保留策略将邮箱内容移动到用户的存档邮箱。 当您使用安全 & 合规中心中的内容搜索工具搜索用户的邮箱以查找特定内容时, 还会搜索用户的存档邮箱。 在你将诉讼保留或应用 Office 365 保留策略到用户的邮箱时, 存档邮箱中的项目也会保留。
   

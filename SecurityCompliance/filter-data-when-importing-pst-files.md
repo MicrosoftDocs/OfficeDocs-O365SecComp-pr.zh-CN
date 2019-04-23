@@ -14,12 +14,12 @@ ms.collection:
 search.appverid: MOE150
 ms.assetid: 26af16df-34cd-4f4a-b893-bc1d2e74039e
 description: '使用 Office 365 导入服务中的新智能导入功能可筛选实际导入到目标邮箱的项目。 智能导入使您可以主动决定要导入的数据和留下的内容。 智能导入还提供了有关要导入到 Office 365 中的数据的见解。 '
-ms.openlocfilehash: 33a29c74e3d57a90ae552f6dee72047943698cab
-ms.sourcegitcommit: e7a776a04ef6ed5e287a33cfdc36aa2d72862b55
+ms.openlocfilehash: 41910fe02b2ffaf95252ca41b0120f76c7619dc0
+ms.sourcegitcommit: f0e3c9de0b545081a4d264f74559b941f6c71410
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30999475"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "31958583"
 ---
 # <a name="filter-data-when-importing-pst-files-to-office-365"></a>将 PST 文件导入到 Office 365 时筛选数据
 
@@ -43,7 +43,7 @@ ms.locfileid: "30999475"
   
 ![Office 365 中的智能导入过程](media/f2ec309b-11f5-48f2-939c-a6ff72152d14.png)
   
-## <a name="before-you-begin"></a>开始之前
+## <a name="before-you-begin"></a>准备工作
 
 - 本主题中的步骤假定您已使用网络上传或驱动器传送在 Office 365 导入服务中创建了 PST 导入作业。 有关分步说明, 请参阅下列主题之一:
     
@@ -59,7 +59,7 @@ ms.locfileid: "30999475"
 
 创建 PST 导入作业后, 请按照以下步骤在将数据导入到 Office 365 之前对其进行筛选。
   
-1. 转到[https://compliance.microsoft.com/](https://compliance.microsoft.com/)并使用 Office 365 组织中的管理员帐户凭据登录。 
+1. 转到[https://protection.office.com/](https://protection.office.com/)并使用 Office 365 组织中的管理员帐户凭据登录。 
     
 2. 单击 "**数据调控** \> **导入**"。
     
@@ -114,7 +114,7 @@ ms.locfileid: "30999475"
     
     e. 单击 "**导入数据**" 以启动导入。 请注意, 将显示将导入的总数据量。 
     
-    或者
+    或
     
     a. 单击 "**否, 我想要导**入所有文件以将 PST 文件中的所有数据导入 Office 365", 然后单击 "**下一步**"。
     
@@ -125,7 +125,7 @@ ms.locfileid: "30999475"
 7. 单击 "导入作业" 以显示更多详细信息, 如每个 PST 文件的状态和您配置的筛选器设置。
 
   
-## <a name="more-information"></a>更多信息
+## <a name="more-information"></a>详细信息
 
 - Office 365 如何确定年龄筛选器的增量？ 当 Office 365 分析 PST 文件时, 它会查看每个项目的已发送或接收时间戳 (如果某个项目同时具有已发送和已接收的时间戳, 则选择了最早的日期)。 然后, Office 365 将查看该时间戳的年份值, 并将其与当前日期进行比较以确定项目的年龄。 然后, 将这些年龄用作**年龄**筛选器的下拉列表中的值。 例如, 如果 PST 文件包含来自2016、2015和2014的邮件, 则**年龄**筛选器中的值将为**1 年**、 **2 年**和**3 年**。
     

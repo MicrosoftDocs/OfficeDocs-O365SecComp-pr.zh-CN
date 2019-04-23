@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: 7a27da4b8932d9bef268de897d9a992d8b87bdef
-ms.sourcegitcommit: cf9d9b545a7c153d314aa9c08c7fb16fcd785b3e
+ms.openlocfilehash: 2ac12cf8c447e3341724d9e853da0f32b7c232fb
+ms.sourcegitcommit: f0e3c9de0b545081a4d264f74559b941f6c71410
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/21/2019
-ms.locfileid: "30737662"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "31958693"
 ---
 # <a name="load-non-office-365-data-into-a-working-set"></a>将非 Office 365 数据加载到工作集
 
@@ -47,19 +47,21 @@ ms.locfileid: "30737662"
 
    其中, abraham.mcmahon@contoso.com、jewell.gordon@contoso.com 和 staci.gonzalez@contoso.com 在这种情况下是保管人的 SMTP 地址。
 
+![非 Office 365 数据上传文件夹结构](../media/3f2dde84-294e-48ea-b44b-7437bd25284c.png)
+
 - 一种帐户, 既可以是电子数据展示管理器, 也可以是安装在可访问非 Office 365 内容文件夹结构的计算机上的电子数据展示管理员 Microsoft Azure 存储工具。
 
 - 安装 AzCopy, 您可以从以下位置执行此操作:https://docs.microsoft.com/en-us/azure/storage/common/storage-use-azcopy
 
 ## <a name="upload-non-office-365-content-into-advanced-ediscovery"></a>将非 Office 365 内容上载到高级电子数据展示
 
-1. 作为电子数据展示管理器或电子数据展示管理员, 打开高级电子数据展示, 然后将非 Office 365 数据上载到的情况。  单击 "**工作集**" 选项卡, 然后选择要将非 Office 365 数据加载到的工作集。  如果尚未创建工作集, 现在可以执行此操作。  最后, 单击 "**管理工作原理集**", 然后查看 "非 Office 365 数据" 部分中的 "**上载**"
+1. 作为电子数据展示管理器或电子数据展示管理员, 打开高级电子数据展示, 然后将非 Office 365 数据上载到的情况。  单击 "**工作集**" 选项卡, 然后选择要将非 Office 365 数据加载到的工作集。  如果尚未创建工作集, 现在可以执行此操作。  最后, 单击 "**管理工作原理集**", 然后查看 "非 Office 365 数据" 部分中的 "**上载**"。
 
 2. 单击 "**上载文件**" 按钮以启动 "非 Office 365 数据导入向导"。
 
 ![上传文件](../media/574f4059-4146-4058-9df3-ec97cf28d7c7.png)
 
-3. 向导中的第一步是为要上载的文件准备一个安全的 Azure blob。  准备好后 compelted 后, 单击 "**下一步: 上传文件**" 按钮。
+3. 向导中的第一步是为要上载的文件准备一个安全的 Azure blob。  准备完成后, 单击 "**下一步: 上传文件**" 按钮。
 
 ![非 Office 365 导入-准备](../media/0670a347-a578-454a-9b3d-e70ef47aec57.png)
  

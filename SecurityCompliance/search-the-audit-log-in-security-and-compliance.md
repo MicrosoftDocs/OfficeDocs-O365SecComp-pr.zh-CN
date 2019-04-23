@@ -16,15 +16,15 @@ search.appverid:
 ms.assetid: 0d4d0f35-390b-4518-800e-0c7ec95e946c
 description: '使用安全 & 合规性中心搜索统一审核日志, 以查看 Office 365 组织中的用户和管理员活动。 '
 ms.openlocfilehash: d7dc3849a0a12c52979c46b9ac16cfb0a7cd1f3d
-ms.sourcegitcommit: 6c9340e4eb221bf81472ff3f1ae25ae21aaf5297
+ms.sourcegitcommit: f0e3c9de0b545081a4d264f74559b941f6c71410
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "31814173"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "31958634"
 ---
 # <a name="search-the-audit-log-in-the-security--compliance-center"></a>在 Security & 合规性中心中搜索审核日志
 
-## <a name="introduction"></a>简介
+## <a name="introduction"></a>介绍
 
 需要查找用户是否查看了特定文档或清除了其邮箱中的项目？ 如果是这样, 您可以使用 office 365 安全&amp;合规中心搜索统一审核日志, 以查看 Office 365 组织中的用户和管理员活动。 为什么要使用统一审核日志？ 由于您可以在 Office 365 中搜索以下类型的用户和管理员活动:
   
@@ -310,7 +310,7 @@ ms.locfileid: "31814173"
   
 下表介绍了 SharePoint Online 和 OneDrive for business 中的文件和页面活动。
   
-|**友好名称**|**Operation**|**说明**|
+|**易记名称**|**操作**|**说明**|
 |:-----|:-----|:-----|
 |访问的文件  <br/> |FileAccessed  <br/> |用户或系统帐户访问文件。  <br/> |
 |（无）  <br/> |FileAccessedExtended  <br/> |这与 "访问的文件" (FileAccessed) 活动相关。 当同一人持续访问一个文件长时间 (最长为3小时) 时, 将记录 FileAccessedExtended 事件。 记录 FileAccessedExtended 事件的目的是减少在连续访问文件时记录的 FileAccessed 事件数。 这有助于减少多个 FileAccessed 记录在本质上是相同的用户活动的噪音, 并让您重点关注最初的 (更重要的) FileAccessed 事件。  <br/> |
@@ -340,7 +340,7 @@ ms.locfileid: "31814173"
   
 下表介绍了 SharePoint Online 和 OneDrive for business 中的文件夹活动。
   
-|**友好名称**|**Operation**|**说明**|
+|**易记名称**|**操作**|**说明**|
 |:-----|:-----|:-----|
 |复制的文件夹  <br/> |FolderCopied  <br/> |用户将文件夹从网站复制到 SharePoint 或 OneDrive for business 中的其他位置。  <br/> |
 |创建的文件夹  <br/> |FolderCreated  <br/> |用户在网站上创建一个文件夹。  <br/> |
@@ -360,7 +360,7 @@ ms.locfileid: "31814173"
 > [!NOTE]
 > 根据 user 对象的 UserType 属性, 用户可以是*成员*或*来宾*。 成员通常是员工, 而来宾通常是组织外部的合作者。 当用户接受共享邀请 (而不是组织的一部分) 时, 将在组织的目录中为其创建来宾帐户。 一旦来宾用户在目录中拥有帐户, 资源就可以直接与他们共享 (无需邀请)。 
   
-|**友好名称**|**Operation**|**说明**|
+|**易记名称**|**操作**|**说明**|
 |:-----|:-----|:-----|
 |接受的访问请求  <br/> |AccessRequestAccepted  <br/> |接受对网站、文件夹或文档的访问请求, 并向请求用户授予访问权限。  <br/> |
 |接受的共享邀请  <br/> |SharingInvitationAccepted  <br/> |用户 (成员或来宾) 接受了共享邀请, 并且已被授予对资源的访问权限。 此事件包括受邀的用户的相关信息, 以及用于接受邀请的电子邮件地址 (可以是不同的)。 此活动通常附带第二个事件, 该事件描述了如何向用户授予对资源的访问权限, 例如, 将用户添加到有权访问该资源的组。  <br/> |
@@ -398,7 +398,7 @@ ms.locfileid: "31814173"
   
 下表列出了 SharePoint Online 和 OneDrive for business 中的文件同步活动。
   
-|**友好名称**|**Operation**|**说明**|
+|**易记名称**|**操作**|**说明**|
 |:-----|:-----|:-----|
 |允许的计算机同步文件  <br/> |ManagedSyncClientAllowed  <br/> |用户与网站成功建立同步关系。 同步关系成功, 因为用户的计算机是已添加到可以访问组织中的文档库的域列表 (称为 "*安全收件人列表*") 的域的成员。  <br/> 有关此功能的详细信息，请参阅[使用 Windows PowerShell cmdlet 为安全收件人列表中的域启用 OneDrive 同步](https://go.microsoft.com/fwlink/p/?LinkID=534609)。  <br/> |
 |阻止的计算机同步文件  <br/> |UnmanagedSyncClientBlocked  <br/> |用户尝试与不是组织域成员的计算机或域的成员建立同步关系, 而该计算机尚未添加到可以访问文档的域列表 (称为*安全收件人列表)* 。组织中的库。 不允许同步关系，并阻止用户计算机在文档库上同步、下载或上传文件。  <br/> 有关此功能的信息，请参阅[使用 Windows PowerShell cmdlet 为安全收件人列表中的域启用 OneDrive 同步](https://go.microsoft.com/fwlink/p/?LinkID=534609)。  <br/> |
@@ -412,7 +412,7 @@ ms.locfileid: "31814173"
   
 下表列出了 SharePoint Online 中的网站管理任务所产生的事件。
   
-|**友好名称**|**Operation**|**说明**|
+|**易记名称**|**操作**|**说明**|
 |:-----|:-----|:-----|
 |添加了豁免用户代理  <br/> |ExemptUserAgentSet  <br/> |sharepoint 或全局管理员向 sharepoint 管理中心内的豁免用户代理列表添加用户代理。  <br/> |
 |添加了网站集管理员  <br/> |SiteCollectionAdminAdded  <br/> |网站集管理员或所有者向网站的网站集管理员添加人员。 网站集管理员具有网站集和所有子网站的完全控制权限。 当管理员为自己提供了对用户的 OneDrive 帐户的访问权限 (通过在 SharePoint 管理中心中编辑用户配置文件或[使用 Microsoft 365 管理中心](https://docs.microsoft.com/office365/admin/add-users/get-access-to-and-back-up-a-former-user-s-data#part-1---get-access-to-the-former-employees-onedrive-for-business-documents)) 时, 也会记录此活动。 <br/> |
@@ -450,7 +450,7 @@ ms.locfileid: "31814173"
   
 下表列出了邮箱审核日志记录可以记录的活动。 记录邮箱所有者、委派用户或管理员执行的邮箱活动。 默认情况下, 未打开 Office 365 中的邮箱审核。 必须为每个邮箱启用邮箱审核日志记录, 然后才会记录邮箱活动。 有关详细信息, 请参阅[在 Office 365 中启用邮箱审核](https://go.microsoft.com/fwlink/p/?LinkID=626109)。
   
-|**友好名称**|**Operation**|**说明**|
+|**易记名称**|**操作**|**说明**|
 |:-----|:-----|:-----|
 |添加了委派邮箱权限  <br/> |外接 add-mailboxpermission  <br/> |管理员向其他人的邮箱分配了对用户 (称为代理) 的 FullAccess 邮箱权限。 FullAccess 权限允许代理打开其他人的邮箱, 并读取和管理邮箱的内容。  <br/> |
 |将邮件分类为记录  <br/> |ApplyRecordLabel<br/> |邮件被分类为记录。 当手动或自动应用将内容分类为记录时, 将发生这种情况。<br/> |
@@ -466,7 +466,7 @@ ms.locfileid: "31814173"
 |使用 "代理发送" 权限发送邮件  <br/> |SendAs  <br/> |邮件是使用 SendAs 权限发送的。 这表示另一个用户发送了邮件，而该邮件就好像来自于邮箱所有者。  <br/> |
 |使用 "代表发送" 权限发送的邮件  <br/> |SendOnBehalf  <br/> |邮件是使用 SendOnBehalf 权限发送的。 这表示另一个用户代表邮箱所有者发送了邮件。 该邮件指示收件人代表发送邮件的收件人和实际发送邮件的收件人。  <br/> |
 |更新了对 "日历" 文件夹的代理访问  <br/> |UpdateCalendarDelegation  <br/> |向邮箱分配了日历委派。 日历委派向同一组织中的其他人授予对邮箱所有者日历的管理权限。  <br/> |
-|更新的邮件  <br/> |更新  <br/> |更改了邮件或其属性。  <br/> |
+|更新的邮件  <br/> |Update  <br/> |更改了邮件或其属性。  <br/> |
 |登录到邮箱的用户  <br/> |mailboxlogin 该值  <br/> |用户登录其邮箱。  <br/> |
 |（无）  <br/> |UpdateInboxRules  <br/> |已添加、删除或更改收件箱规则。 "收件箱" 规则用于根据指定的条件处理用户收件箱中的邮件, 并在满足规则条件时采取操作, 例如将邮件移动到指定文件夹或删除邮件。  <br/> 若要返回收件箱规则活动的条目, 您必须在 "**活动**" 列表中选择 "**显示所有活动的结果**"。 使用 "日期范围" 框和 "**用户**" 列表缩小搜索结果的范围。  <br/> |
 ||||
@@ -475,7 +475,7 @@ ms.locfileid: "31814173"
   
 下表列出了 Sway 中的用户和管理员活动。 Sway 是 Office 365 应用程序, 可帮助用户在基于 web 的交互式画布上收集、格式化和共享想法、情景和演示文稿。 有关详细信息, 请参阅[有关 Sway 的常见问题-管理员帮助](https://support.office.com/article/446380fa-25bf-47b2-996c-e12cb2f9d075)。
   
-|**友好名称**|**Operation**|**说明**|
+|**易记名称**|**操作**|**说明**|
 |:-----|:-----|:-----|
 |更改了 Sway 共享级别  <br/> |SwayChangeShareLevel  <br/> |用户更改 Sway 的共享级别。 此事件将捕获用户更改与 Sway 关联的共享范围;例如, 公共与组织内部。  <br/> |
 |已创建 Sway  <br/> |SwayCreate  <br/> |用户创建 Sway。  <br/> |
@@ -498,7 +498,7 @@ ms.locfileid: "31814173"
   
 下表列出了在管理员使用 Microsoft 365 管理中心或 Azure 管理门户添加或更改用户帐户时记录的用户管理活动。
   
-|**活动**|**Operation**|**说明**|
+|**活动**|**操作**|**说明**|
 |:-----|:-----|:-----|
 |添加了用户  <br/> |添加用户  <br/> |已创建 Office 365 用户帐户。  <br/> |
 |更改的用户许可证  <br/> |更改用户许可证  <br/> |分配给用户的许可证已更改。 若要查看更改了哪些许可证, 请参阅相应**更新的用户**活动。  <br/> |
@@ -514,7 +514,7 @@ ms.locfileid: "31814173"
   
 下表列出了在管理员或用户创建或更改 Office 365 组时或者当管理员使用 Microsoft 365 管理中心或 Azure 管理门户创建安全组时记录的组管理活动。 有关 Office 365 中的组的详细信息, 请参阅在[Microsoft 365 管理中心中查看、创建和删除组](https://support.office.com/article/a6360120-2fc4-46af-b105-6a04dc5461c7)。
   
-|**友好名称**|**Operation**|**说明**|
+|**易记名称**|**操作**|**说明**|
 |:-----|:-----|:-----|
 |添加了组  <br/> |添加组  <br/> |已创建组。  <br/> |
 |向组添加了成员  <br/> |将成员添加到组  <br/> |向组添加成员。  <br/> |
@@ -527,7 +527,7 @@ ms.locfileid: "31814173"
   
 下表列出了在管理员添加或更改在 Azure AD 中注册的应用程序时记录的应用程序管理活动。 必须在目录中注册依赖 Azure AD 进行身份验证的任何应用程序。
   
-|**友好名称**|**Operation**|**说明**|
+|**易记名称**|**操作**|**说明**|
 |:-----|:-----|:-----|
 |添加了委派条目  <br/> |添加委派条目  <br/> |已创建/授予 Azure AD 中的应用程序的身份验证权限。  <br/> |
 |添加了服务主体  <br/> |添加服务主体  <br/> |在 Azure AD 中注册应用程序。 应用程序由目录中的服务主体表示。  <br/> |
@@ -542,7 +542,7 @@ ms.locfileid: "31814173"
   
 下表列出了在管理员管理 Microsoft 365 管理中心或 Azure 管理门户中的管理员角色时记录的 Azure AD 角色管理活动。
   
-|**友好名称**|**Operation**|**说明**|
+|**易记名称**|**操作**|**说明**|
 |:-----|:-----|:-----|
 |将成员添加到角色  <br/> |向角色添加角色成员  <br/> |向 Office 365 中的管理员角色添加了用户。  <br/> |
 |从目录角色中删除了用户  <br/> |从角色中删除角色成员  <br/> |从 Office 365 中的管理员角色中删除了用户。  <br/> |
@@ -553,7 +553,7 @@ ms.locfileid: "31814173"
   
 下表列出了管理员在 Microsoft 365 管理中心或 Azure 管理门户中管理其 Office 365 组织时记录的 Azure AD 目录和与域相关的活动。
   
-|**友好名称**|**Operation**|**说明**|
+|**易记名称**|**操作**|**说明**|
 |:-----|:-----|:-----|
 |向公司添加了域  <br/> |向公司添加域  <br/> |向 Office 365 组织添加了域。  <br/> |
 |向目录添加了合作伙伴  <br/> |向公司添加合作伙伴  <br/> |向 Office 365 组织添加了合作伙伴 (委派管理员)。  <br/> |
@@ -598,7 +598,7 @@ ms.locfileid: "31814173"
 
 工作区分析可深入了解如何在您的 Office 365 组织中进行组协作。 下表列出了在工作区分析中分配了管理员角色或分析师角色的用户所执行的活动。 分配了分析员角色的用户具有对所有服务功能的完全访问权限, 并使用产品进行分析。 分配了管理员角色的用户可以配置隐私设置和系统默认设置, 并可以准备、上传和验证工作区分析中的组织数据。 有关详细信息, 请参阅[Workplace Analytics](https://docs.microsoft.com/en-us/workplace-analytics/index-orig)。
 
-|**友好名称**|**Operation**|**说明**|
+|**易记名称**|**操作**|**说明**|
 |:-----|:-----|:-----|
 |访问过的 OData 链接 <br/> |AccessedOdataLink <br/> |分析师访问了查询的 OData 链接。|
 |已取消查询 <br/> |CanceledQuery <br/> |分析师取消了一个正在运行的查询。|
@@ -620,7 +620,7 @@ ms.locfileid: "31814173"
     
 - [Microsoft 团队帮助](https://support.office.com/article/23156c0c-2c6e-49dd-8b7b-7c564b76508c)
     
-|**友好名称**|**Operation**|**说明**|
+|**易记名称**|**操作**|**说明**|
 |:-----|:-----|:-----|
 |向团队添加了机器人  <br/> |BotAddedToTeam  <br/> |用户向团队中添加机器人。  <br/> |
 |添加了频道  <br/> |ChannelAdded  <br/> |用户向团队添加频道。  <br/> |
@@ -647,7 +647,7 @@ ms.locfileid: "31814173"
   
 下表列出了 Yammer 中记录的 Office 365 审核日志中的用户和管理员活动。 若要从 Office 365 审核日志中返回 Yammer 相关的活动, 必须在 "**活动**" 列表中选择 "**显示所有活动的结果**"。 使用 "日期范围" 框和 "**用户**" 列表缩小搜索结果的范围。 
   
-|**友好名称**|**Operation**|**说明**|
+|**易记名称**|**操作**|**说明**|
 |:-----|:-----|:-----|
 |已更改的数据保留策略  <br/> |SoftDeleteSettingsUpdated  <br/> |已验证管理员将网络数据保留策略的设置更新为 "硬删除" 或 "软删除"。 只有经过验证的管理员才能执行此操作。  <br/> |
 |更改了网络配置  <br/> |NetworkConfigurationUpdated  <br/> |网络或经验证的管理员更改 Yammer 网络的配置。 这包括设置导出数据和启用聊天的时间间隔。  <br/> |
