@@ -14,38 +14,46 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: 2e76203fa8f57f9e228919ec6abb1144f3cb48c5
-ms.sourcegitcommit: 2c5834235c32b2616e1813ce24eeb3419a09629f
+ms.openlocfilehash: a6240692916d1b38ccbdae272fcd7a9b4292b376
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/02/2019
-ms.locfileid: "31029916"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32258730"
 ---
-# <a name="data-investigations-limits"></a><span data-ttu-id="208e4-102">数据调查限制</span><span class="sxs-lookup"><span data-stu-id="208e4-102">Data Investigations limits</span></span>
+# <a name="data-investigations-preview-limits"></a><span data-ttu-id="cf0e6-102">数据调查 (预览) 限制</span><span class="sxs-lookup"><span data-stu-id="cf0e6-102">Data Investigations (Preview) limits</span></span>
 
-<span data-ttu-id="208e4-103">本文介绍数据调查中的限制。</span><span class="sxs-lookup"><span data-stu-id="208e4-103">This article describes the limits in Data Investigations.</span></span>
+<span data-ttu-id="cf0e6-103">本文介绍数据调查 (预览) 中的限制。</span><span class="sxs-lookup"><span data-stu-id="cf0e6-103">This article describes the limits in Data Investigations (Preview).</span></span>
 
-## <a name="investigatino-limits"></a><span data-ttu-id="208e4-104">Investigatino 限制</span><span class="sxs-lookup"><span data-stu-id="208e4-104">Investigatino limits</span></span>
+## <a name="investigation-limits"></a><span data-ttu-id="cf0e6-104">调查限制</span><span class="sxs-lookup"><span data-stu-id="cf0e6-104">Investigation limits</span></span>
 
-## <a name="indexing-limits"></a><span data-ttu-id="208e4-105">索引限制</span><span class="sxs-lookup"><span data-stu-id="208e4-105">Indexing limits</span></span>
-
-## <a name="search-limits"></a><span data-ttu-id="208e4-106">搜索限制</span><span class="sxs-lookup"><span data-stu-id="208e4-106">Search limits</span></span>
-
-## <a name="incident-limits"></a><span data-ttu-id="208e4-107">事件限制</span><span class="sxs-lookup"><span data-stu-id="208e4-107">Incident limits</span></span>
-
-<span data-ttu-id="208e4-108">下表列出了对数据调查中的事件的限制。</span><span class="sxs-lookup"><span data-stu-id="208e4-108">The following table lists the limits for incidents in Data Investigations.</span></span>  <span data-ttu-id="208e4-109">任何超过单个文件最大的项目将显示为处理错误。</span><span class="sxs-lookup"><span data-stu-id="208e4-109">Any items that exceed the single file maximums will show up as processing errors.</span></span>
+<span data-ttu-id="cf0e6-105">下表列出了在数据调查 (预览) 中调查的限制。</span><span class="sxs-lookup"><span data-stu-id="cf0e6-105">The following table lists the limits for investigations in Data Investigations (Preview).</span></span> 
     
-  |<span data-ttu-id="208e4-110">**限制说明**</span><span class="sxs-lookup"><span data-stu-id="208e4-110">**Description of limit**</span></span>|<span data-ttu-id="208e4-111">**限制**</span><span class="sxs-lookup"><span data-stu-id="208e4-111">**Limit**</span></span>|
+  |<span data-ttu-id="cf0e6-106">**限制说明**</span><span class="sxs-lookup"><span data-stu-id="cf0e6-106">**Description of limit**</span></span>|<span data-ttu-id="cf0e6-107">**限制**</span><span class="sxs-lookup"><span data-stu-id="cf0e6-107">**Limit**</span></span>|
   |:-----|:-----|
-  |<span data-ttu-id="208e4-112">最大事件数</span><span class="sxs-lookup"><span data-stu-id="208e4-112">Maximum number of incidents</span></span>  <br/> |<span data-ttu-id="208e4-113">50</span><span class="sxs-lookup"><span data-stu-id="208e4-113">50</span></span>  <br/> |
-  |<span data-ttu-id="208e4-114">可引入到事件中的文档总数 (针对调查中的所有事件)</span><span class="sxs-lookup"><span data-stu-id="208e4-114">Total number of documents that can be ingested into an incident (for all incidents in the investigation)</span></span>  <br/> |<span data-ttu-id="208e4-115">1 百万</span><span class="sxs-lookup"><span data-stu-id="208e4-115">1 million</span></span>  <br/> |
-  |<span data-ttu-id="208e4-116">每次加载的总文件大小</span><span class="sxs-lookup"><span data-stu-id="208e4-116">Total file size per load</span></span>  <br/> |<span data-ttu-id="208e4-117">100 GB</span><span class="sxs-lookup"><span data-stu-id="208e4-117">100 GB</span></span>  <br/> |
-  |<span data-ttu-id="208e4-118">单个文件的最大大小</span><span class="sxs-lookup"><span data-stu-id="208e4-118">Maximum size of single file</span></span>   <br/> |<span data-ttu-id="208e4-119">100 MB</span><span class="sxs-lookup"><span data-stu-id="208e4-119">100 MB</span></span>  <br/> |
-  |<span data-ttu-id="208e4-120">从单个文件提取的最大字符数</span><span class="sxs-lookup"><span data-stu-id="208e4-120">Maximum number of characters extracted from a single file</span></span>  <br/> |<span data-ttu-id="208e4-121">一千万</span><span class="sxs-lookup"><span data-stu-id="208e4-121">10 million</span></span>  <br/> |
-  |<span data-ttu-id="208e4-122">文档中嵌入项目的深度</span><span class="sxs-lookup"><span data-stu-id="208e4-122">Depth of embedded items in a document</span></span>  <br/> |<span data-ttu-id="208e4-123">word</span><span class="sxs-lookup"><span data-stu-id="208e4-123">25</span></span>  <br/> |
-  
+  |<span data-ttu-id="cf0e6-108">最大调查数。</span><span class="sxs-lookup"><span data-stu-id="cf0e6-108">Maximum number of investigations.</span></span>  <br/> |<span data-ttu-id="cf0e6-109">50</span><span class="sxs-lookup"><span data-stu-id="cf0e6-109">50</span></span>  <br/> |
+  |<span data-ttu-id="cf0e6-110">可添加到调查中的文档总数 (针对调查中的所有证据集)。</span><span class="sxs-lookup"><span data-stu-id="cf0e6-110">Total number of documents that can be added to an investigation (for all evidence sets in the investigation).</span></span>  <br/> |<span data-ttu-id="cf0e6-111">1 百万</span><span class="sxs-lookup"><span data-stu-id="cf0e6-111">1 million</span></span>  <br/> |
+  |<span data-ttu-id="cf0e6-112">每次加载的总文件大小。</span><span class="sxs-lookup"><span data-stu-id="cf0e6-112">Total file size per load.</span></span>  <br/> |<span data-ttu-id="cf0e6-113">100 GB</span><span class="sxs-lookup"><span data-stu-id="cf0e6-113">100 GB</span></span>  <br/> |
+  |<span data-ttu-id="cf0e6-114">单个文件的最大大小。</span><span class="sxs-lookup"><span data-stu-id="cf0e6-114">Maximum size of a single file.</span></span>   <br/> |<span data-ttu-id="cf0e6-115">100 MB <sup>1</sup></span><span class="sxs-lookup"><span data-stu-id="cf0e6-115">100 MB <sup>1</sup></span></span> <br/> |
+  |<span data-ttu-id="cf0e6-116">从单个文件提取的最大字符数。</span><span class="sxs-lookup"><span data-stu-id="cf0e6-116">Maximum number of characters extracted from a single file.</span></span>  <br/> |<span data-ttu-id="cf0e6-117">10000000 <sup>1</sup></span><span class="sxs-lookup"><span data-stu-id="cf0e6-117">10 million <sup>1</sup></span></span> <br/> |
+  |<span data-ttu-id="cf0e6-118">单个文件中的嵌入项的深度。</span><span class="sxs-lookup"><span data-stu-id="cf0e6-118">Depth of embedded items in a single file.</span></span>  <br/> |<span data-ttu-id="cf0e6-119">25 <sup>1</sup></span><span class="sxs-lookup"><span data-stu-id="cf0e6-119">25 <sup>1</sup></span></span> <br/> |
+|||
+> [!NOTE]
+><span data-ttu-id="cf0e6-120"><sup>1</sup>任何超过单个文件限制的项目将显示为 "处理错误"。</span><span class="sxs-lookup"><span data-stu-id="cf0e6-120"><sup>1</sup>  Any items that exceed a single file limit will show up as processing errors.</span></span>
 
-## <a name="export-limits"></a><span data-ttu-id="208e4-124">导出限制</span><span class="sxs-lookup"><span data-stu-id="208e4-124">Export limits</span></span>
+## <a name="indexing-limits"></a><span data-ttu-id="cf0e6-121">索引限制</span><span class="sxs-lookup"><span data-stu-id="cf0e6-121">Indexing limits</span></span>
 
-## <a name="download-limits"></a><span data-ttu-id="208e4-125">下载限制</span><span class="sxs-lookup"><span data-stu-id="208e4-125">Download limits</span></span>
+<span data-ttu-id="cf0e6-122">内容即将推出。</span><span class="sxs-lookup"><span data-stu-id="cf0e6-122">Content coming soon.</span></span>
+
+## <a name="search-limits"></a><span data-ttu-id="cf0e6-123">搜索限制</span><span class="sxs-lookup"><span data-stu-id="cf0e6-123">Search limits</span></span>
+
+<span data-ttu-id="cf0e6-124">内容即将推出。</span><span class="sxs-lookup"><span data-stu-id="cf0e6-124">Content coming soon.</span></span>
+
+## <a name="export-limits"></a><span data-ttu-id="cf0e6-125">导出限制</span><span class="sxs-lookup"><span data-stu-id="cf0e6-125">Export limits</span></span>
+
+<span data-ttu-id="cf0e6-126">内容即将推出。</span><span class="sxs-lookup"><span data-stu-id="cf0e6-126">Content coming soon.</span></span>
+
+## <a name="download-limits"></a><span data-ttu-id="cf0e6-127">下载限制</span><span class="sxs-lookup"><span data-stu-id="cf0e6-127">Download limits</span></span>
+
+<span data-ttu-id="cf0e6-128">内容即将推出。</span><span class="sxs-lookup"><span data-stu-id="cf0e6-128">Content coming soon.</span></span>
 
