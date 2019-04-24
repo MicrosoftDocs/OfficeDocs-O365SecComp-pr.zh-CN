@@ -1,5 +1,5 @@
 ---
-title: 监视 Microsoft 365 安全中的设备
+title: 在 Microsoft 365 安全中监视设备
 description: 介绍如何确保你的设备安全、最新和发现组织中的潜在威胁
 keywords: security、恶意软件、Microsoft 365、M365、security center、monitor、report、devices
 ms.prod: w10
@@ -13,13 +13,13 @@ ms.collection: M365-security-compliance
 ms.topic: article
 search.appverid: met150
 ms.openlocfilehash: 31d89b8bbcad98814ff33764bad24bffbbba4968
-ms.sourcegitcommit: 8213c353954b92f5c3979bee4aa049da0fd28a18
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/03/2019
-ms.locfileid: "31043253"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32263498"
 ---
-# <a name="monitor-devices-in-microsoft-365-security"></a>监视 Microsoft 365 安全中的设备
+# <a name="monitor-devices-in-microsoft-365-security"></a>在 Microsoft 365 安全中监视设备
 
 确保你的设备在 Microsoft 365 安全中心中安全、保持最新并找出潜在威胁。
 

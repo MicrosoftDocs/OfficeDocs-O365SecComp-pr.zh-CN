@@ -1,5 +1,5 @@
 ---
-title: 管理独立 SharePoint Online 团队网站
+title: 管理独立的 SharePoint Online 团队网站
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -12,14 +12,14 @@ ms.collection: Ent_O365
 ms.custom: Ent_Solutions
 ms.assetid: 79a61003-4905-4ba8-9e8a-16def7add37c
 description: '摘要: 使用这些过程管理独立的 SharePoint Online 团队网站。'
-ms.openlocfilehash: 81a6fcd80bb3e4950eb7b783d1ad964b9bc67cc5
-ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
+ms.openlocfilehash: f8531c4922f6ee6a86e32e646692825e71fafec2
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30214482"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32251982"
 ---
-# <a name="manage-an-isolated-sharepoint-online-team-site"></a>管理独立 SharePoint Online 团队网站
+# <a name="manage-an-isolated-sharepoint-online-team-site"></a>管理独立的 SharePoint Online 团队网站
 
  **摘要:** 使用这些过程管理独立的 SharePoint Online 团队网站。
   
@@ -41,7 +41,7 @@ ms.locfileid: "30214482"
   
 - 对于 Office 管理中心, 使用已分配有用户帐户管理员或公司管理员角色的用户帐户登录, 并使用组将相应的用户添加到相应的访问组。
     
-- 对于 PowerShell, 首先[使用 Azure Active Directory V2 PowerShell 模块进行连接](https://go.microsoft.com/fwlink/?linkid=842218)。若要将用户帐户添加到具有其用户主体名称 (UPN) 的访问组, 请使用以下 PowerShell 命令块:
+- 对于 PowerShell, 首先[与 Azure Active Directory PowerShell for Graph 模块进行连接](https://docs.microsoft.com/office365/enterprise/powershell/connect-to-office-365-powershell#connect-with-the-azure-active-directory-powershell-for-graph-module)。 若要将用户帐户添加到具有其用户主体名称 (UPN) 的访问组, 请使用以下 PowerShell 命令块:
     
 ```
 $userUPN="<UPN of the user account>"
@@ -76,7 +76,8 @@ Add-AzureADGroupMember -RefObjectId (Get-AzureADUser | Where { $_.DisplayName -e
   
 - 对于 Office 管理中心, 使用已分配有用户帐户管理员或公司管理员角色的用户帐户登录, 并使用组将适当的组添加到相应的访问组。
     
-- 对于 PowerShell, 首先[使用 Azure Active Directory V2 PowerShell 模块进行连接](https://go.microsoft.com/fwlink/?linkid=842218)。然后, 使用以下 PowerShell 命令:
+- 对于 PowerShell, 首先[与 Azure Active Directory PowerShell for Graph 模块进行连接](https://docs.microsoft.com/office365/enterprise/powershell/connect-to-office-365-powershell#connect-with-the-azure-active-directory-powershell-for-graph-module)。
+ 然后, 使用以下 PowerShell 命令:
  
 ```
 $newGroupName="<display name of the new group to add>"
@@ -100,7 +101,8 @@ Add-AzureADGroupMember -RefObjectId (Get-AzureADGroup | Where { $_.DisplayName -
   
 - 对于 Office 管理中心, 使用已分配有用户帐户管理员或公司管理员角色的用户帐户登录, 并使用组从相应的访问组中删除相应的用户。
     
-- 对于 PowerShell, 首先[使用 Azure Active Directory V2 PowerShell 模块进行连接](https://go.microsoft.com/fwlink/?linkid=842218)。若要从具有 UPN 的访问组中删除用户帐户, 请使用以下 PowerShell 命令块:
+- 对于 PowerShell, 首先[与 Azure Active Directory PowerShell for Graph 模块进行连接](https://docs.microsoft.com/office365/enterprise/powershell/connect-to-office-365-powershell#connect-with-the-azure-active-directory-powershell-for-graph-module)。
+若要从具有 UPN 的访问组中删除用户帐户, 请使用以下 PowerShell 命令块:
     
 ```
 $userUPN="<UPN of the user account>"
@@ -132,7 +134,7 @@ Remove-AzureADGroupMember -MemberId (Get-AzureADUser | Where { $_.DisplayName -e
   
 - 对于 Office 管理中心, 使用已分配有用户帐户管理员或公司管理员角色的用户帐户登录, 并使用组从相应的访问组中删除相应的组。
     
-- 对于 PowerShell, 首先[使用 Azure Active Directory V2 PowerShell 模块进行连接](https://go.microsoft.com/fwlink/?linkid=842218)。    
+- 对于 PowerShell, 首先[与 Azure Active Directory PowerShell for Graph 模块进行连接](https://docs.microsoft.com/office365/enterprise/powershell/connect-to-office-365-powershell#connect-with-the-azure-active-directory-powershell-for-graph-module)。    
 若要使用用户的显示名称从访问组中删除组, 请使用以下 PowerShell 命令块:
     
 ```
@@ -143,11 +145,11 @@ Remove-AzureADGroupMember -MemberId (Get-AzureADGroup | Where { $_.DisplayName -
 
 ## <a name="create-a-documents-subfolder-with-custom-permissions"></a>使用自定义权限创建 documents 子文件夹
 
-在某些情况下, 在独立网站中工作的人员的子集需要更多的专用空间进行协作。对于 SharePoint Online 网站, 可以在网站的 "文档" 文件夹中创建一个子文件夹, 并分配自定义权限。没有权限的人员将看不到子文件夹。
+在某些情况下, 在独立网站中工作的人员的子集需要更多的专用空间进行协作。 对于 SharePoint Online 网站, 可以在网站的 "文档" 文件夹中创建一个子文件夹, 并分配自定义权限。 没有权限的人员将看不到子文件夹。
   
 若要创建具有自定义权限的 documents 子文件夹, 请执行以下操作:
   
-1. 使用作为网站的管理员访问组成员的帐户登录到 Office 365。若要获取帮助, 请参阅[登录到 Office 365 的位置](https://support.office.com/Article/Where-to-sign-in-to-Office-365-e9eb7d51-5430-4929-91ab-6157c5a050b4)。
+1. 使用作为网站的管理员访问组成员的帐户登录到 Office 365。 如需帮助，请参阅[如何登录到 Office 365](https://support.office.com/Article/Where-to-sign-in-to-Office-365-e9eb7d51-5430-4929-91ab-6157c5a050b4)。
     
 2. 转到独立的团队网站, 然后单击 "**文档**"。
     

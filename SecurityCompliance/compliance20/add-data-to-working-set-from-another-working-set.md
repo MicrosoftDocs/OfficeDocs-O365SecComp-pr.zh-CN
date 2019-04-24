@@ -15,11 +15,11 @@ search.appverid:
 ms.assetid: ''
 description: ''
 ms.openlocfilehash: e9e34d112cb84c27fec35e752eb2bfcbfe3136a3
-ms.sourcegitcommit: f0e3c9de0b545081a4d264f74559b941f6c71410
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "31958233"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32243424"
 ---
 # <a name="add-data-to-a-working-set-from-another-working-set"></a>从另一个工作集向工作集添加数据
 在某些情况下, 可能需要从一个工作集 carve 出文档的一部分, 并在另一个工作集中单独处理这些文档的一部分。  如果您已在工作集中 culled 内容并希望对数据子集运行分析, 这将非常有用。

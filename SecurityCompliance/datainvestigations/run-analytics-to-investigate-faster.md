@@ -1,5 +1,5 @@
 ---
-title: 运行分析以加快检查速度
+title: 运行分析功能以加快调查
 ms.author: markjjo
 author: markjjo
 manager: laurawi
@@ -15,13 +15,13 @@ search.appverid:
 ms.assetid: ''
 description: ''
 ms.openlocfilehash: 9516035fb6c758fdff1852249fff2815f19af559
-ms.sourcegitcommit: 2c5834235c32b2616e1813ce24eeb3419a09629f
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/02/2019
-ms.locfileid: "31029891"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32257610"
 ---
-# <a name="run-analytics-to-investigate-faster"></a>运行分析以加快检查速度
+# <a name="run-analytics-to-investigate-faster"></a>运行分析功能以加快调查
 
 当证据集合很大时, 很难完全查看它们。 一组证据通常包含相同或相似的电子邮件或文档的多个副本。 数据调查 (预览版) 提供了大量分析工具, 可帮助您减少需要查看的文档量, 而不会丢失任何信息。 若要了解有关这些功能的详细信息, 请参阅:
 

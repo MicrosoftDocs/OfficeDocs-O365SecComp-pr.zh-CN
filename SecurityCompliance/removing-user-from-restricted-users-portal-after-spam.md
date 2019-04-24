@@ -17,11 +17,11 @@ ms.collection:
 - M365-security-compliance
 description: 如果用户不断发送来自受分类为垃圾邮件的 Office 365 的电子邮件, 则会受到限制, 无法发送更多的邮件。
 ms.openlocfilehash: a4f22b4d5192df202c1caa19714e8b5476dd8205
-ms.sourcegitcommit: e7a776a04ef6ed5e287a33cfdc36aa2d72862b55
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30998495"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32264934"
 ---
 # <a name="removing-a-user-from-the-restricted-users-portal-after-sending-spam-email"></a>发送垃圾电子邮件后，从受限用户门户删除用户
 
@@ -29,7 +29,7 @@ ms.locfileid: "30998495"
 
 - 无法传递你的邮件, 因为你未被识别为有效发件人。 导致此问题的最常见原因是, 您的电子邮件地址怀疑发送垃圾邮件, 并且不再允许它在您的组织外部发送邮件。 请联系你的电子邮件管理员以获取帮助。 远程服务器返回 "550 5.1.8 访问被拒绝, 错误的出站发件人"
 
-## <a name="what-do-you-need-to-know-before-you-begin"></a>在开始之前，您需要知道什么？
+## <a name="what-do-you-need-to-know-before-you-begin"></a>开始前，有必要了解什么？
 <a name="sectionSection0"> </a>
 
 估计完成时间：5 分钟

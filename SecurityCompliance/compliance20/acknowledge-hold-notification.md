@@ -15,11 +15,11 @@ search.appverid:
 ms.assetid: ''
 description: ''
 ms.openlocfilehash: 048c85c7b8d77b9c7d3b9527640648b9ebe463d0
-ms.sourcegitcommit: 5d6be2b208dbe28d5d5da057c60cf97729799c1b
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/07/2019
-ms.locfileid: "30465449"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32243629"
 ---
 # <a name="acknowledge-a-hold-notification"></a>确认保留通知 
 在响应法规请求或调查时, 可能需要通知保管人, 让其义务保留电子存储的信息 (ESI) 以及可能与活跃或即将发生的法律事务相关的任何材料。 一旦发送, 法律团队必须知道每位管理员已收到、阅读和理解, 并同意遵守给定的说明。

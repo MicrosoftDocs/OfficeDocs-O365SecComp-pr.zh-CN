@@ -11,11 +11,11 @@ ms.assetid: ''
 description: 管理员可以了解安全 & 合规性中心的邮件流仪表板中的修复发件人域洞察力。
 ROBOTS: NOINDEX, NOFOLLOW
 ms.openlocfilehash: bd62d6d0b42edfd1eedf543d7d8bb68903c7c608
-ms.sourcegitcommit: e7a776a04ef6ed5e287a33cfdc36aa2d72862b55
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "31000305"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32252166"
 ---
 # <a name="fix-sender-domain-insight"></a>修复发件人域洞察力
 

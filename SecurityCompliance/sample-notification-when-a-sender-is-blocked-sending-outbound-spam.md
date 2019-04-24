@@ -15,11 +15,11 @@ ms.collection:
 - M365-security-compliance
 description: 当发件人由于发送出站垃圾邮件而被服务阻止时，您配置出站垃圾邮件策略时指定的域管理员将收到如下所示的通知电子邮件：
 ms.openlocfilehash: 04d8bde8e9cadd3525191a5bee7d368229e85056
-ms.sourcegitcommit: 0f93b37c39d807dec91f118aa671a3430c47a9ac
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/20/2019
-ms.locfileid: "30691803"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32260970"
 ---
 # <a name="sample-notification-when-a-sender-is-blocked-sending-outbound-spam"></a>发件人被阻止发送出站垃圾邮件时的示例通知
 

@@ -1,5 +1,5 @@
 ---
-title: 安全 & 合规中心中的邮件流见解
+title: 安全与合规中心内的邮件流见解
 ms.author: chrisda
 author: chrisda
 manager: serdars
@@ -11,13 +11,13 @@ ms.assetid: beb6acaa-6016-4d54-ba7e-3d6d035e2b46
 description: 管理员可以了解安全 & 合规性中心中的邮件流仪表板。
 ROBOTS: NOINDEX, NOFOLLOW
 ms.openlocfilehash: 4af35fea640c1f4c43464d1adf2e4a9f3b4f780d
-ms.sourcegitcommit: fec1010e405f14e792d650aee0312b78fced3343
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/21/2019
-ms.locfileid: "30722779"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32252102"
 ---
-# <a name="mail-flow-insights-in-the-security--compliance-center"></a>安全 & 合规中心中的邮件流见解
+# <a name="mail-flow-insights-in-the-security--compliance-center"></a>安全与合规中心内的邮件流见解
 
 > [!NOTE]
 > 本主题中所述的功能尚未部署到所有 Office 365 组织中, 可能会发生更改。

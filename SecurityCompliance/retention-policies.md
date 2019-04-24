@@ -15,11 +15,11 @@ search.appverid:
 - MET150
 description: 借助保留策略，可主动决定是保留内容还是删除内容，亦或是先保留再删除内容；可将一个策略应用于整个组织，或只应用于特定位置或用户；并能将策略应用于所有内容，或只应用于满足特定条件的内容。
 ms.openlocfilehash: 55680f16e92d33c2cbf612b6aabae1f51778f93a
-ms.sourcegitcommit: 799a958fcac643f62dfac6fa04020f2f4758635c
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30997138"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32265086"
 ---
 # <a name="overview-of-retention-policies"></a>保留策略概述
 

@@ -15,11 +15,11 @@ search.appverid:
 ms.assetid: 9701a024-c52e-43f0-b545-9a53478aec04
 description: 使用 "搜索统计信息" 功能来显示和比较 Security & 合规性中心中的多个内容搜索的统计信息。 您还可以在创建或编辑搜索查询时配置关键字列表, 以获取增强的统计信息, 以显示与每个关键字或关键字短语匹配的项目数。
 ms.openlocfilehash: 5e4cca18f6a50f2647265f02dab7ab3f20f513fc
-ms.sourcegitcommit: e7a776a04ef6ed5e287a33cfdc36aa2d72862b55
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "31001125"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32267376"
 ---
 # <a name="view-keyword-statistics-for-content-search-results"></a>查看内容搜索结果的关键字统计信息
 

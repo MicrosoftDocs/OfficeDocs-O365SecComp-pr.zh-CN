@@ -14,22 +14,22 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: 1183264f64a74e50f750ee13618f7532ffe04eb7
-ms.sourcegitcommit: 6aa82374eef09d2c1921f93bda3eabeeb28aadeb
+ms.openlocfilehash: 510a10386ea51c0397408450f9fc700e9ce6db9c
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/06/2019
-ms.locfileid: "30455154"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32241098"
 ---
 # <a name="tag-documents-in-a-working-set"></a>标记工作集中的文档
 
 在工作集中组织内容对于在电子数据展示过程中完成各种工作流非常重要。 具体包括：
 
--  剔除不必要的内容。
+-  剔除不必要的内容
 
-- 标识相关内容。
+- 标识相关内容
  
--  确定必须由专家或律师审阅的内容。
+-  确定必须由专家或律师审阅的内容
 
 当专家、律师或其他用户查看工作集中的内容时, 可以使用标记来捕获与内容相关的观点。 例如, 如果意图挑选不必要的内容, 则用户可以使用标记 (如 "无响应") 标记文档。 在查看并标记内容之后, 可以创建工作集搜索以排除任何标记为 "无响应" 的内容, 这将消除电子数据展示工作流中的后续步骤中的内容。 可以为每种情况自定义标签面板, 以便标记可以支持预期的审阅工作流。
 

@@ -1,5 +1,5 @@
 ---
-title: Security & 合规性中心中的邮件跟踪
+title: 安全与合规中心内的消息跟踪
 ms.author: chrisda
 author: chrisda
 manager: serdars
@@ -10,13 +10,13 @@ localization_priority: Normal
 ms.assetid: 3e64f99d-ac33-4aba-91c5-9cb4ca476803
 description: 管理员可以使用安全 & 合规中心中的邮件跟踪来查明邮件发生了什么情况。
 ms.openlocfilehash: ebfc8d5e19bbc45c32ad65451f3f850662f358b4
-ms.sourcegitcommit: f86383dcb9c52352661d51b22617f1809445beaa
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "30573546"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32265606"
 ---
-# <a name="message-trace-in-the-security--compliance-center"></a>Security & 合规性中心中的邮件跟踪
+# <a name="message-trace-in-the-security--compliance-center"></a>安全与合规中心内的消息跟踪
 
 ## <a name="overview"></a>概述
 
@@ -325,7 +325,7 @@ Security & 合规性中心中的邮件跟踪改进了在 Exchange 管理中心 (
 
 以**custom_data**开头`S:SFA`的值来自垃圾邮件筛选器代理。 下表介绍了关键详细信息:
 
-|**值**|**说明**|
+|**Value**|**说明**|
 |:-----|:-----|
 |`SFV=NSPM`|邮件被标记为非垃圾邮件并发送给预期发件人。|
 |`SFV=SPM`|邮件由内容筛选器标记为垃圾邮件。|
@@ -352,7 +352,7 @@ Security & 合规性中心中的邮件跟踪改进了在 Exchange 管理中心 (
 
 以**** 的开头`S:AMA`的 custom_data 值来自恶意软件筛选器代理。 下表介绍了关键详细信息:
 
-|**值**|**说明**|
+|**Value**|**说明**|
 |:-----|:-----|
 |`AMA=SUM|v=1|` 或 `AMA=EV|v=1`|已确定此邮件包含恶意软件。 `SUM`指示任意数量的引擎可能检测到恶意软件。 `EV`指示特定引擎检测到恶意软件。 引擎检测到恶意软件后，将触发后续操作。|
 |`Action=r`|邮件已被替换。|
@@ -375,7 +375,7 @@ Security & 合规性中心中的邮件跟踪改进了在 Exchange 管理中心 (
 
 以**custom_data**开头`S:TRA`的值来自邮件流规则的传输规则代理 (也称为传输规则)。 下表介绍了关键详细信息:
 
-|**值**|**说明**|
+|**Value**|**说明**|
 |:-----|:-----|
 |`ETR|ruleId=<guid>`|匹配的规则 ID。|
 |`St=<datetime>`|发生规则匹配时的日期和时间 (以 UTC 为单位)。|

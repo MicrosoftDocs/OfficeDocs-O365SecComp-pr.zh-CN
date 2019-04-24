@@ -17,11 +17,11 @@ search.appverid:
 ms.assetid: 53390468-eec6-45cb-b6cd-7511f9c909e4
 description: 使用 Office 365 或 Microsoft 365 中的合规性中心中的内容搜索工具搜索邮箱、SharePoint Online 网站、OneDrive 帐户、Microsoft 团队、Office 365 组和 Skype for business 对话中的内容。 您可以使用关键字搜索查询和搜索条件来缩小搜索结果的范围。 然后, 您可以预览和导出搜索结果。 内容搜索也是一个有效的工具, 可用于搜索可能与 GDPR 数据主体请求相关的内容。
 ms.openlocfilehash: 67b32dcc6efcc096b9952be41380a8dc3700a668
-ms.sourcegitcommit: 6c9340e4eb221bf81472ff3f1ae25ae21aaf5297
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "31814063"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32264050"
 ---
 # <a name="content-search-in-office-365"></a>Office 365 中的内容搜索
 
@@ -207,11 +207,11 @@ ms.locfileid: "31814063"
   
 - 您必须选择 "**显示关键字列表**" 复选框, 然后在单独的行中键入每个关键字, 以创建搜索查询, 在该查询中, 每行中的关键字 (或关键字短语) 通过**or**运算符连接。 如果只是将关键字列表粘贴到关键字框中或在键入关键字后按**enter**键, 则不会通过**or**运算符连接。 下面是添加关键字列表的错误和正确示例。 
     
-    **不正确**
+    **不**
     
     ![设置关键字列表格式的错误方法 (通过将列表粘贴到关键字框中)](media/fb54e3df-232a-439a-b3d7-27a60ec76a4c.png)
   
-    **正确**
+    **错误**
     
     ![设置关键字列表格式的正确方法 (通过选中 "checkbox" 和 "粘贴" 列表)](media/5d511a7b-c1f9-499c-bffe-e075bfc9adec.png)
   

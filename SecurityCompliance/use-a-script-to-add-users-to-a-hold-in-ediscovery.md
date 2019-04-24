@@ -15,11 +15,11 @@ search.appverid:
 ms.assetid: bad352ff-d5d2-45d8-ac2a-6cb832f10e73
 description: 运行脚本以将邮箱和 OneDrive for business 网站快速添加到与安全 & 合规中心中的电子数据展示事例关联的新保留中。
 ms.openlocfilehash: 992fddad3bfbc9f08855bd85d87b0edf92b3cdbe
-ms.sourcegitcommit: e7a776a04ef6ed5e287a33cfdc36aa2d72862b55
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "31001185"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32263974"
 ---
 # <a name="use-a-script-to-add-users-to-a-hold-in-an-ediscovery-case-in-the-security--compliance-center"></a>使用脚本将用户添加到安全 & 合规性中心的电子数据展示事例中的保留项
 
@@ -35,7 +35,7 @@ Security & 合规性中心提供了大量 Windows PowerShell cmdlet, 可让您�
   
 [步骤 3: 运行脚本以创建保留项并添加用户](use-a-script-to-add-users-to-a-hold-in-ediscovery.md#step3)
   
-## <a name="before-you-begin"></a>开始之前
+## <a name="before-you-begin"></a>准备工作
 
 - 您必须是 Security & 合规性中心中的电子数据展示管理器角色组的成员, SharePoint Online 全局管理员才能在步骤3中运行该脚本。 有关详细信息, 请参阅[在 Office 365 安全 & 合规中心中分配电子数据展示权限](assign-ediscovery-permissions.md)。
     

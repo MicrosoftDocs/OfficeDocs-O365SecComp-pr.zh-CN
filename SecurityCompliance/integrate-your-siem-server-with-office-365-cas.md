@@ -13,11 +13,11 @@ search.appverid:
 ms.assetid: dd6d2417-49c4-4de6-9294-67fdabbf8532
 description: 你可以将 SIEM 服务器与 Office 365 云应用安全集成。 阅读本文, 了解其工作方式以及如何进行设置的概述。
 ms.openlocfilehash: 82b5e0e6467bd42acba3c40d67e4e0363a7e0f72
-ms.sourcegitcommit: 4abcc03497478abf1ae7fc84792f44360d8e59c1
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/12/2019
-ms.locfileid: "30548582"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32254698"
 ---
 # <a name="integrate-your-siem-server-with-office-365-cloud-app-security"></a>将 SIEM 服务器与 Office 365 云应用安全集成
   

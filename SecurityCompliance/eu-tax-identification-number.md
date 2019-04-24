@@ -11,11 +11,11 @@ ms.collection: M365-security-compliance
 localization_priority: Normal
 description: 本主题介绍当数据丢失防护 (DLP) 策略检测到欧盟税务识别号敏感信息类型时, 应查找什么。 此敏感信息类型为每个国家/地区定义不同的模式、关键字和其他证据。
 ms.openlocfilehash: 4914ff078695519c2a298190d82c86a6abebceb9
-ms.sourcegitcommit: ed822a776d3419853453583e882f3c61ca26d4b2
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2019
-ms.locfileid: "30410907"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32255520"
 ---
 # <a name="eu-tax-identification-number"></a>EU 税标识号
 
@@ -23,7 +23,7 @@ ms.locfileid: "30410907"
   
 ## <a name="austria"></a>奥地利
 
-### <a name="format"></a>格式
+### <a name="format"></a>Format
 
 9个数字, 带可选连字符和正斜线
   
@@ -88,7 +88,7 @@ steuernummer
   
 ## <a name="belgium"></a>比利时
 
-### <a name="format"></a>格式
+### <a name="format"></a>Format
 
 11个数字, 无空格和分隔符
   
@@ -150,7 +150,7 @@ numéro d'identification fiscale
   
 ## <a name="bulgaria"></a>保加利亚语
 
-### <a name="format"></a>格式
+### <a name="format"></a>Format
 
 10个数字, 无空格和分隔符
   
@@ -221,7 +221,7 @@ egn #
   
 ## <a name="croatia"></a>克罗地亚
 
-### <a name="format"></a>格式
+### <a name="format"></a>Format
 
 11个不带空格或分隔符的数字
   
@@ -280,7 +280,7 @@ porezni broj
   
 ## <a name="cyprus"></a>塞浦路斯
 
-### <a name="format"></a>格式
+### <a name="format"></a>Format
 
 指定模式中的八个数字和一个字母
   
@@ -347,7 +347,7 @@ tax id
   
 ## <a name="czech-republic"></a>捷克共和国
 
-### <a name="format"></a>格式
+### <a name="format"></a>Format
 
 9个或10个数字, 带可选反斜杠
   
@@ -401,7 +401,7 @@ osobníčíslo
   
 ## <a name="denmark"></a>丹麦
 
-### <a name="format"></a>格式
+### <a name="format"></a>Format
 
 10个数字, 包含连字符
   
@@ -464,7 +464,7 @@ skat id
   
 ## <a name="estonia"></a>爱沙尼亚
 
-### <a name="format"></a>格式
+### <a name="format"></a>Format
 
 11个不带空格或分隔符的数字
   
@@ -529,7 +529,7 @@ isikukood
   
 ## <a name="finland"></a>芬兰
 
-### <a name="format"></a>格式
+### <a name="format"></a>Format
 
 一个11字符组合的数字、字母、加号和减号
   
@@ -620,7 +620,7 @@ kansallinen tunnus numero
   
 ## <a name="france"></a>法国
 
-### <a name="format"></a>格式
+### <a name="format"></a>Format
 
 13位数的个人和九个数字的实体
   
@@ -677,7 +677,7 @@ numéro d'identification fiscale
   
 ## <a name="germany"></a>德国
 
-### <a name="format"></a>格式
+### <a name="format"></a>Format
 
 11个数字, 无空格和分隔符
   
@@ -748,7 +748,7 @@ steueridentifikationsnummer
   
 ## <a name="greece"></a>希腊
 
-### <a name="format"></a>格式
+### <a name="format"></a>Format
 
 9个数字, 不带空格和分隔符
   
@@ -816,7 +816,7 @@ aφμαριθμός
   
 ## <a name="hungary"></a>匈牙利
 
-### <a name="format"></a>格式
+### <a name="format"></a>Format
 
 10个数字, 不含空格或分隔符
   
@@ -893,9 +893,9 @@ adószám
   
 adóhatóság szám
   
-## <a name="ireland"></a>Ireland
+## <a name="ireland"></a>爱尔兰
 
-### <a name="format"></a>格式
+### <a name="format"></a>Format
 
 七位数字后跟一个不带空格或分隔符的字母
   
@@ -966,7 +966,7 @@ uimhir aitheantais phearsanta
   
 ## <a name="italy"></a>意大利
 
-### <a name="format"></a>格式
+### <a name="format"></a>Format
 
 指定模式中的16个字母和数字
   
@@ -1041,7 +1041,7 @@ codice fiscale
   
 ## <a name="latvia"></a>拉脱维亚
 
-### <a name="format"></a>格式
+### <a name="format"></a>Format
 
 11个不带空格或分隔符的数字
   
@@ -1114,7 +1114,7 @@ nodokļu identifikācija numurs
   
 ## <a name="lithuania"></a>立陶宛
 
-### <a name="format"></a>格式
+### <a name="format"></a>Format
 
 11位数, 不含空格或分隔符
   
@@ -1181,7 +1181,7 @@ mokesčių identifikavimas numeris
   
 ## <a name="luxemburg"></a>Luxemburg
 
-### <a name="format"></a>格式
+### <a name="format"></a>Format
 
 13个不带空格或分隔符的数字
   
@@ -1250,9 +1250,9 @@ steuer id
   
 steueridentifikationsnummer
   
-## <a name="malta"></a>Malta（马耳他）
+## <a name="malta"></a>马耳他
 
-### <a name="format"></a>格式
+### <a name="format"></a>Format
 
 对于马耳他 nationals: 7 位数和指定模式中的一个字母
   
@@ -1329,7 +1329,7 @@ numru ta "identifikazzjoni tat-taxxa
   
 ## <a name="netherlands"></a>荷兰
 
-### <a name="format"></a>格式
+### <a name="format"></a>Format
 
 9个数字, 不带空格或分隔符
   
@@ -1420,7 +1420,7 @@ nederlandse belasting identificatie
   
 ## <a name="poland"></a>波兰
 
-### <a name="format"></a>格式
+### <a name="format"></a>Format
 
 不带空格或分隔符的11个数字
   
@@ -1505,7 +1505,7 @@ numeridentyfikacjipodatkowej #
   
 ## <a name="portugal"></a>葡萄牙
 
-### <a name="format"></a>格式
+### <a name="format"></a>Format
 
 9个不带空格或分隔符的数字
   
@@ -1566,7 +1566,7 @@ número de identificação 会计
   
 ## <a name="romania"></a>罗马尼亚
 
-### <a name="format"></a>格式
+### <a name="format"></a>Format
 
 13个不带空格或分隔符的数字
   
@@ -1622,7 +1622,7 @@ numărul de identificare fiscală
   
 ## <a name="slovakia"></a>斯洛伐克
 
-### <a name="format"></a>格式
+### <a name="format"></a>Format
 
 10个数字, 不含空格或分隔符
   
@@ -1688,7 +1688,7 @@ daňovéčíslo súboru
   
 ## <a name="slovenia"></a>斯洛文尼亚
 
-### <a name="format"></a>格式
+### <a name="format"></a>Format
 
 8位数, 不含空格或分隔符
   
@@ -1761,7 +1761,7 @@ davčna številka
   
 ## <a name="spain"></a>西班牙
 
-### <a name="format"></a>格式
+### <a name="format"></a>Format
 
 七个或8个数字以及指定模式中的一个或两个字母
   
@@ -1884,7 +1884,7 @@ cifnúmero #
   
 ## <a name="sweden"></a>瑞典
 
-### <a name="format"></a>格式
+### <a name="format"></a>Format
 
 10个数字和指定模式中的符号
   
@@ -1967,7 +1967,7 @@ personnummer
   
 ## <a name="uk"></a>英国
 
-### <a name="format"></a>格式
+### <a name="format"></a>Format
 
 唯一的纳税人参考 (UTR):10 个数字, 无空格和分隔符
   

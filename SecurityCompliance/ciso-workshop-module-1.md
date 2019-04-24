@@ -11,11 +11,11 @@ ms.collection:
 - M365-security-compliance
 description: 了解有关贵组织中的新式化安全性的安全原则和建议的详细信息。
 ms.openlocfilehash: 08a0a3fc93745ec32459746fce737ac9e9e164ef
-ms.sourcegitcommit: d3e3ce391130f209f4d63c2528e1da8342cd732f
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "31908216"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32243993"
 ---
 # <a name="ciso-workshop-module-1-microsoft-cybersecurity-briefing"></a>CISO 研讨会模块 1: Microsoft Cybersecurity 简报
 

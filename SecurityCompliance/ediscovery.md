@@ -14,11 +14,11 @@ search.appverid:
 ms.assetid: 143b3ab8-8cb0-4036-a5fc-6536d837bfce
 description: Office 365 提供了许多不同的电子数据展示工具, 可用于搜索和保存在不同位置 (如 Exchange 邮箱、SharePoint 和 OneDrive for business 网站、Office 365 组和 Skype for business 会话) 中找到的内容。
 ms.openlocfilehash: 51ef4e744f2347fe3cdaff757131baf0c5fe83bf
-ms.sourcegitcommit: e7a776a04ef6ed5e287a33cfdc36aa2d72862b55
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30999755"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32256800"
 ---
 # <a name="ediscovery-in-office-365"></a>Office 365 中的电子数据展示
 

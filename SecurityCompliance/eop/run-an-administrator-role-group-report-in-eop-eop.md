@@ -11,11 +11,11 @@ localization_priority: Normal
 ms.assetid: 23b47b57-0eec-46a3-a03b-366ea014ab31
 description: 每当管理员在管理员角色组中添加或删除成员时，Microsoft Exchange Online Protection (EOP) 都会进行记录。
 ms.openlocfilehash: 752def771d95fcfbb3f7cbe0bc86a33b3967716d
-ms.sourcegitcommit: 0f93b37c39d807dec91f118aa671a3430c47a9ac
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/20/2019
-ms.locfileid: "30692711"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32256180"
 ---
 # <a name="run-an-administrator-role-group-report-in-eop"></a>在 EOP 中运行管理员角色组报告 
 
@@ -46,7 +46,7 @@ ms.locfileid: "30692711"
     
 如果使用指定的条件找到了所有更改，则这些更改会显示在结果窗格中。单击搜索结果中的角色组可在详细信息窗格中查看更改。
   
-## <a name="how-do-you-know-this-worked"></a>如何判断是否生效？
+## <a name="how-do-you-know-this-worked"></a>如何知道操作成功？
 
 如果您已成功运行管理员角色组报告，那么在此日期范围内更改的角色组将显示在搜索结果窗格中。如果没有显示任何结果，那么在指定日期范围内没有发生对角色组的任何更改。如果您认为应该显示结果，请更改日期范围，然后再次运行报告。
   

@@ -13,11 +13,11 @@ ms.collection: M365-security-compliance
 ms.topic: article
 search.appverid: met150
 ms.openlocfilehash: 37a5c6805579ecb9b03e6bd8f95562fe4c3e9521
-ms.sourcegitcommit: 8213c353954b92f5c3979bee4aa049da0fd28a18
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/03/2019
-ms.locfileid: "31043223"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32261272"
 ---
 # <a name="overview-of-the-microsoft-365-security-center"></a>Microsoft 365 安全中心概述
 
@@ -50,7 +50,7 @@ Microsoft 365 安全中心包括:
 * **策略**-设置管理设备、防止威胁以及接收有关你的组织中的各种活动的警报的策略。
 * **权限**-管理组织中的哪些用户有权访问 Microsoft 365 安全中心以查看内容和执行任务。 您还可以在 Azure AD 门户中分配 Microsoft 365 权限。
 
-## <a name="learn-more"></a>了解更多
+## <a name="learn-more"></a>了解更多信息
 
 浏览以下有关监视、查看和响应安全需求的主题:
 

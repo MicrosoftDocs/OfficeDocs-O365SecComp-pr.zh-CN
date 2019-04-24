@@ -15,11 +15,11 @@ search.appverid:
 ms.assetid: af398293-c69d-465e-a249-d74561552d30
 description: 文件计划管理器提供了对保留标签和保留策略的高级管理功能，并提供了便于遍历整个内容生存期（从创建、协作、记录声明、保留到最终处置）中的标签活动和标签到内容活动的集成方式。
 ms.openlocfilehash: f104e5ea0046af1e8cdee39b1e7dc5f47524e707
-ms.sourcegitcommit: d9f695650e26e4125b00b6281717b4d5b63fc401
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/12/2019
-ms.locfileid: "31824431"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32256034"
 ---
 # <a name="overview-of-file-plan-manager"></a>文件计划管理器概述
 

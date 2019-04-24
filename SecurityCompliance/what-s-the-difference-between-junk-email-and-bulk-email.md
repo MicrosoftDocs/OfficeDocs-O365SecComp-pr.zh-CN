@@ -15,11 +15,11 @@ ms.collection:
 - M365-security-compliance
 description: 客户有时 askwhat 是垃圾邮件和批量电子邮件之间的区别？本主题旨在说明不同之处, 并提供有关 exchange online 和 exchange online Protection (EOP) 中可用的不同选项的信息。
 ms.openlocfilehash: 146cc5654e39441be3544f7ac24bd1300811936f
-ms.sourcegitcommit: 0f93b37c39d807dec91f118aa671a3430c47a9ac
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/20/2019
-ms.locfileid: "30693211"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32266924"
 ---
 # <a name="whats-the-difference-between-junk-email-and-bulk-email"></a>垃圾邮件和批量邮件之间有什么差异？
 

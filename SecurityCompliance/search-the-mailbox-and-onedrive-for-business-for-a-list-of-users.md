@@ -13,17 +13,17 @@ search.appverid: MOE150
 ms.assetid: 5f4f8206-2d6a-4cb2-bbc6-7a0698703cc0
 description: 使用内容搜索和本文中的脚本在邮箱和 OneDrive for business 网站中搜索一组用户。
 ms.openlocfilehash: 2f0954bf7822ca6c82165ad20b2c732ab0594257
-ms.sourcegitcommit: e7a776a04ef6ed5e287a33cfdc36aa2d72862b55
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "31001275"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32260930"
 ---
 # <a name="use-content-search-to-search-the-mailbox-and-onedrive-for-business-site-for-a-list-of-users"></a>使用内容搜索在邮箱和 OneDrive for Business 站点中搜索用户列表
 
 Security & 合规性中心提供了许多 Windows PowerShell cmdlet, 可让您自动执行耗时和电子数据展示相关的任务。 目前, 在安全 & 合规中心中创建内容搜索, 以搜索大量的保管人内容位置并准备时间。 在创建搜索之前, 您必须收集每个 OneDrive for business 网站的 URL, 然后将每个邮箱和 O neDrive for business 网站添加到搜索中。 在将来的版本中, 这在安全 & 合规中心中的工作更简单。 在此之前, 可以使用本文中的脚本自动执行此过程。 此脚本会提示您组织的 "我的用户" 域的名称 (例如**** , URL https://contoso-my.sharepoint.com)中的 contoso、用户电子邮件地址的列表、新内容搜索的名称以及要使用的搜索查询)。 该脚本将获取列表中每个用户的 OneDrive for business URL, 然后使用您提供的搜索查询, 创建并启动搜索该列表中每个用户的邮箱和 OneDrive for business 网站的内容搜索。 
   
-## <a name="before-you-begin"></a>开始之前
+## <a name="before-you-begin"></a>准备工作
 
 - 您必须是 Security & 合规性中心中的电子数据展示管理器角色组的成员, SharePoint Online 全局管理员才能在步骤3中运行该脚本。
     

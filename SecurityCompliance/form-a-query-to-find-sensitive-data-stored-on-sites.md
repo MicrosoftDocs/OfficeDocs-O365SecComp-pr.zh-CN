@@ -15,11 +15,11 @@ search.appverid:
 - MET150
 description: 使用 SharePoint Online 中的数据丢失防护 (DLP), 您可以发现在整个租户中包含敏感数据的文档。 在发现文档之后, 可以使用文档所有者来保护数据。 本主题可帮助您形成查询以搜索敏感数据。
 ms.openlocfilehash: 8ecce920810d52fadb311c6c4925c9fa4b6fb2b1
-ms.sourcegitcommit: c0d4fe3e43e22353f30034567ade28330266bcf7
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/27/2019
-ms.locfileid: "30900051"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32255532"
 ---
 # <a name="form-a-query-to-find-sensitive-data-stored-on-sites"></a>创建查询以查找存储在站点上的敏感数据
 

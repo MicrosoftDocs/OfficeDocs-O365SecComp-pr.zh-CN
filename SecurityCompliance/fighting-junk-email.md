@@ -15,11 +15,11 @@ ms.collection:
 - M365-security-compliance
 description: Microsoft 的电子邮件安全路线图包括不匹配的跨产品方法。跨 Microsoft 电子邮件平台应用 Exchange Online Protection (EOP) 反垃圾邮件和反网络钓鱼筛选技术，以便为用户提供整个网络的最新反垃圾和反网络钓鱼工具及创新。 EOP 的目标是提供全面且可用的电子邮件服务，以帮助用户检测垃圾邮件、诈骗电子邮件威胁（网络钓鱼）和恶意软件，并免受其侵扰。
 ms.openlocfilehash: 510b04d3f111c269d5f8579abcc809ddc283636b
-ms.sourcegitcommit: 0f93b37c39d807dec91f118aa671a3430c47a9ac
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/20/2019
-ms.locfileid: "30692851"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32255440"
 ---
 # <a name="fighting-junk-email-sent-to-office-365"></a>抵制发送到 Office 365 的垃圾邮件
 

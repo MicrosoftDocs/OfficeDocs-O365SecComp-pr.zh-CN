@@ -17,11 +17,11 @@ search.appverid:
 - MET150
 description: 确定组织是否使用标签作为 GDPR 计划的一部分。
 ms.openlocfilehash: 6886adaa09599b32eb2f3084efdea06fd5794af0
-ms.sourcegitcommit: ae7ebae8801a69a825a363443e2676379197de19
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/26/2019
-ms.locfileid: "30800294"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32243470"
 ---
 # <a name="architect-a-classification-schema-for-personal-data"></a>为个人数据构建分类架构
 

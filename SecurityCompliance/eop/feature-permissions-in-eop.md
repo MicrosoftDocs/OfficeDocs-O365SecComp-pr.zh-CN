@@ -11,11 +11,11 @@ localization_priority: Normal
 ms.assetid: 34674847-a6b7-4a7e-9eaa-b64f22bc150d
 description: 执行管理 Microsoft Exchange Online Protection (EOP) 的任务所需的权限根据正在管理的功能的不同而不同。
 ms.openlocfilehash: 08753d537982e49e735a1f81796f4709882c2be9
-ms.sourcegitcommit: 0f93b37c39d807dec91f118aa671a3430c47a9ac
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/20/2019
-ms.locfileid: "30692071"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32256250"
 ---
 # <a name="feature-permissions-in-eop"></a>EOP 中的功能权限
 

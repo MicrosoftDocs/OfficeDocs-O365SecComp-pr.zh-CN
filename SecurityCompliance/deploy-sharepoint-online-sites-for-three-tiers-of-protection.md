@@ -18,11 +18,11 @@ ms.custom:
 ms.assetid: 1e8e3cfd-b878-4088-b941-9940363a5fae
 description: 摘要：为各种级别的信息保护创建和配置 SharePoint Online 团队网站。
 ms.openlocfilehash: 69da99c29d3527285547ed824e45fb7aa31e1910
-ms.sourcegitcommit: e7a776a04ef6ed5e287a33cfdc36aa2d72862b55
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30999255"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32257129"
 ---
 # <a name="deploy-sharepoint-online-sites-for-three-tiers-of-protection"></a>部署具有三层保护的 SharePoint Online 网站
 

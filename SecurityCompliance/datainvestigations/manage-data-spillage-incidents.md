@@ -15,11 +15,11 @@ search.appverid:
 ms.assetid: ''
 description: 本文介绍了如何使用安全 & 合规中心中的新数据调查 (预览版) 工具管理数据外泄事件。
 ms.openlocfilehash: 93a98a4e01df011b789ba2453734f093ad8c19d6
-ms.sourcegitcommit: 2c5834235c32b2616e1813ce24eeb3419a09629f
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/02/2019
-ms.locfileid: "31029931"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32258820"
 ---
 # <a name="manage-a-data-spillage-incident-in-microsoft-365"></a>在 Microsoft 365 中管理数据外泄事件
 
@@ -51,7 +51,7 @@ ms.locfileid: "31029931"
 5.  关闭或删除调查。
 
 
-## <a name="before-you-begin"></a>开始之前
+## <a name="before-you-begin"></a>准备工作
 
 - 您将使用安全 & 合规性中心中的 "数据调查 (预览)" 工具创建调查, 搜索溢出的数据, 并对其进行审阅和分析。 然后, 使用安全 & 合规性中心 PowerShell 从 Office 365 中永久删除溢出的数据。 
 
@@ -111,7 +111,7 @@ ms.locfileid: "31029931"
 
 若要对文档进行分组并获取更多的审阅帮助, 请单击 "**管理证据**"。 在**分析**磁贴中, 单击 "**分析**"。 这将运行高级分析, 例如重复检测、电子邮件线程和主题分析。 有关详细信息，请参阅：
 
-- [运行分析以加快检查速度](run-analytics-to-investigate-faster.md)
+- [运行分析功能，加快调查](run-analytics-to-investigate-faster.md)
 - [近似重复检测](near-duplicates.md)
 - [电子邮件会话](email-threading.md)
 - [主题](themes.md)

@@ -15,11 +15,11 @@ ms.collection:
 - M365-security-compliance
 description: 本主题提供了有关反垃圾邮件保护的常见问题和解答。 解答适用于 Microsoft Exchange Online 和 Exchange Online Protection (EOP) 客户。
 ms.openlocfilehash: fa2709c995ff9ef83213b86e079a778c61bef3a2
-ms.sourcegitcommit: e7a776a04ef6ed5e287a33cfdc36aa2d72862b55
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "31000985"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32242490"
 ---
 # <a name="anti-spam-protection-faq"></a>反垃圾邮件保护常见问题解答
 

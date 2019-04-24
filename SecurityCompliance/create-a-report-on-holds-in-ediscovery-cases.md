@@ -13,11 +13,11 @@ search.appverid: MOE150
 ms.assetid: cca08d26-6fbf-4b2c-b102-b226e4cd7381
 description: 使用本文中的脚本生成一个报告, 该报告包含有关与 Office 365 或 Microsoft 365 中的符合性中心中的电子数据展示事例相关联的所有保留的信息。
 ms.openlocfilehash: db5a462087dd20ed71f87efe2fd83b821654f1b9
-ms.sourcegitcommit: e7a776a04ef6ed5e287a33cfdc36aa2d72862b55
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "31000875"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32258762"
 ---
 # <a name="create-a-report-on-holds-in-ediscovery-cases-in-office-365"></a>在 Office 365 中的电子数据展示事例中创建保留报告
   
@@ -25,7 +25,7 @@ ms.locfileid: "31000875"
 
 有关报告中包含的信息的详细说明, 请参阅[详细信息](#more-information)部分。 
   
-## <a name="before-you-begin"></a>开始之前
+## <a name="before-you-begin"></a>准备工作
 
 - 若要生成组织中所有电子数据展示事例的报告, 您必须是组织中的电子数据展示管理员。 如果您是电子数据展示管理器, 则报告将仅包含有关您可以访问的事例的信息。 有关电子数据展示权限的详细信息, 请参阅[分配电子数据展示权限](assign-ediscovery-permissions.md)。
     
@@ -174,7 +174,7 @@ Write-host "Script complete! Report files saved to this folder: '$Path'"
     
     ![运行 CaseHoldsReport 脚本后的输出](media/7d312ed5-505e-4ec5-8f06-3571e3524a1a.png)
   
-## <a name="more-information"></a>更多信息
+## <a name="more-information"></a>详细信息
 
 事例包含运行本文中的脚本时创建的报告, 其中包含有关每个保留的以下信息。 如前面所述, 您必须是电子数据展示管理员才能返回组织中所有保留的信息。 有关案例保留的详细信息, 请参阅[电子数据展示事例](ediscovery-cases.md)。
   

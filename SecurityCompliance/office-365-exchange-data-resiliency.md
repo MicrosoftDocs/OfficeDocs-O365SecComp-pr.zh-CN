@@ -14,15 +14,15 @@ ms.collection:
 - M365-security-compliance
 description: Exchange Online 和 Office 365 中数据弹性的各个方面的说明。
 ms.openlocfilehash: 9e61efaf95d466fcb268e12317c7feab0701c062
-ms.sourcegitcommit: 1261a37c414111f869df5791548a768d853fda60
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/30/2019
-ms.locfileid: "31004229"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32262754"
 ---
 # <a name="exchange-online-data-resiliency-in-office-365"></a>Office 365 中的 Exchange Online 数据恢复能力
 
-## <a name="introduction"></a>简介
+## <a name="introduction"></a>介绍
 有两种类型的损坏可能会影响 Exchange 数据库: 物理损坏通常是由硬件 (尤其是存储硬件) 问题引起的, 以及因其他因素而发生的逻辑损坏。 通常情况下, Exchange 数据库中可能发生两种类型的逻辑损坏: 
 - **数据库逻辑损坏**-数据库页的校验和匹配, 但页面上的数据在逻辑上是错误的。 如果数据库引擎 (可扩展存储引擎 (ESE)) 尝试写入数据库页面, 即使操作系统返回成功消息, 但数据永远不会写入磁盘或写入错误的位置, 则可能会发生这种情况。 这称为 "*丢失的刷新*"。 ESE 包含的许多功能和保护措施旨在防止数据库的物理损坏和其他数据丢失场景。 为了防止丢失刷新丢失的数据, ESE 在数据库中包含丢失的刷新机制以及一个功能 (单页还原) 以更正它。 
 - **存储逻辑损坏**-以用户不期望的方式添加、删除或操作数据。 这些情况通常都是由第三方应用程序引起的。 通常在用户将其看作损坏时才认为是损坏的。 Exchange 存储会考虑产生一系列有效 MAPI 操作的逻辑损坏的事务。 Exchange Online 中的[就地保留](https://docs.microsoft.com/exchange/security-and-compliance/create-or-remove-in-place-holds)功能提供了对存储逻辑损坏的保护 (因为它会阻止用户或应用程序永久删除内容)。 

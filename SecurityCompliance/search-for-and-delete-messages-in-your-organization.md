@@ -16,11 +16,11 @@ search.appverid:
 ms.assetid: 3526fd06-b45f-445b-aed4-5ebd37b3762a
 description: 使用 Office 365 的 Security & 合规性中心中的 "搜索和清除" 功能搜索和删除组织中所有邮箱的电子邮件。
 ms.openlocfilehash: c6fa0d09852016b918375dbff5a19468886d86b3
-ms.sourcegitcommit: e7a776a04ef6ed5e287a33cfdc36aa2d72862b55
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "31000265"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32265344"
 ---
 # <a name="search-for-and-delete-email-messages-in-your-office-365-organization---admin-help"></a>在 Office 365 组织中搜索和删除电子邮件-管理员帮助
 
@@ -37,7 +37,7 @@ ms.locfileid: "31000265"
 > [!CAUTION]
 > 搜索和清除是一项强大的功能, 允许分配有必要权限的任何人从组织中的邮箱中删除电子邮件。 
   
-## <a name="before-you-begin"></a>开始之前
+## <a name="before-you-begin"></a>准备工作
 
 - 若要创建和运行内容搜索, 您必须是**电子数据展示管理器**角色组的成员, 或分配有**合规性搜索**管理角色。 若要删除邮件, 您必须是 "**组织管理**" 角色组的成员, 或者分配有 "**搜索和清除**" 管理角色。 有关向角色组添加用户的信息, 请参阅[向用户授予对安全与合规中心的访问权限](grant-access-to-the-security-and-compliance-center.md)。
     
@@ -118,7 +118,7 @@ New-ComplianceSearchAction -SearchName "Remove Phishing Message" -Purge -PurgeTy
   
 有关详细信息, 请参阅[new-compliancesearchaction](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-content-search/New-ComplianceSearchAction)。
 
-## <a name="more-information"></a>更多信息
+## <a name="more-information"></a>详细信息
 
 - **如何获取搜索和删除操作的状态？**
 

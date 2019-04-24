@@ -3,29 +3,28 @@ title: Office 365 Skype for business 数据删除
 ms.author: robmazz
 author: robmazz
 manager: laurawi
-ms.date: 8/21/2018
 audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
-localization_priority: None
+localization_priority: Normal
 search.appverid:
 - MET150
 ms.collection:
 - Strat_O365_IP
 - M365-security-compliance
 description: Skype for business 中的数据删除说明。
-ms.openlocfilehash: 77ead8b8c2251ce21f9a0c0db9e29d5d48829760
-ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
+ms.openlocfilehash: ca48a4bc57cdba7301a51cc6404a7d402166ffb0
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30221142"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32261300"
 ---
 # <a name="skype-for-business-data-deletion-in-office-365"></a>Office 365 中的 Skype for business 数据删除
 
-Skype for business 在会议中提供对等即时消息、多方即时消息和内容上载活动的存档。存档功能需要 Exchange 并由用户的 Exchange 邮箱就地保留属性控制, 这将对电子邮件和 Skype for business 内容进行存档。
+Skype for business 在会议中提供对等即时消息、多方即时消息和内容上载活动的存档。 存档功能需要 Exchange 并由用户的 Exchange 邮箱就地保留属性控制, 这将对电子邮件和 Skype for business 内容进行存档。
 
-Skype for business 中的所有存档均被视为 "用户级存档", 因为您可以为一个或多个特定用户或用户组创建、配置和应用针对这些用户的用户级存档策略, 为其中一个或多个特定用户启用或禁用该存档。在 Skype for business 管理中心内, 不能直接控制存档设置。
+Skype for business 中的所有存档均被视为 "用户级存档", 因为您可以为一个或多个特定用户或用户组创建、配置和应用针对这些用户的用户级存档策略, 为其中一个或多个特定用户启用或禁用该存档。 在 Skype for business 管理中心内, 不能直接控制存档设置。
 
 在 Skype for business 中不存档以下类型的内容: 
 - 对等文件传输
@@ -34,9 +33,9 @@ Skype for business 中的所有存档均被视为 "用户级存档", 因为您�
 - 会议注释 
 
 ## <a name="meeting-content-retention"></a>会议内容保留期
-使用 Skype for business 的客户可以将内容作为附件 (如 PowerPoint 演示文稿、OneNote 文件和其他文件) 上传到 Skype for business 会议。已上载到会议的内容的保留期如下所示:
+使用 Skype for business 的客户可以将内容作为附件 (如 PowerPoint 演示文稿、OneNote 文件和其他文件) 上传到 Skype for business 会议。 上载到会议的内容的保留期如下所示：
 - **一次性会议**内容将保留一段时间, 从最后一人离开会议的15天开始。
-- **定期会议**-在最后一人离开会议的最后一个会话后的15天内保留内容。如果有人在15天内加入同一会议会话, 保留计时器将重置。例如, 假设某个 Skype for business 会议安排在一年的每周进行一次, 并在第一个实例中将文件上传到会议。如果每周至少有一个人加入会议会话, 该文件将保留在整个年的 Skype for business Online 服务器中, 此外, 在最后一个用户离开该系列的最后一次会议后15天。
+- **定期会议**-在最后一人离开会议的最后一个会话后的15天内保留内容。 如果某人在 15 天内加入同一会议会话，则重置保留计时器。 例如, 假设某个 Skype for business 会议安排在一年的每周进行一次, 并在第一个实例中将文件上传到会议。 如果每周至少有一个人加入会议会话, 该文件将保留在整个年的 Skype for business Online 服务器中, 此外, 在最后一个用户离开该系列的最后一次会议后15天。
 - 会议结束时间后,**立即开会会议**-内容将保留8小时。
 
 > [!NOTE]
@@ -49,13 +48,13 @@ Skype for business 中的所有存档均被视为 "用户级存档", 因为您�
 - "**立即开会" 会议**-会议在8小时后过期。
 
 ## <a name="whiteboard-collaboration"></a>白板协作
-在白板上进行的批注将被所有参与者看到。保存白板时, 白板和所有批注将存储在 Skype for business 服务器上, 并且将根据管理员设置的会议内容过期策略保留在服务器上。
+所有参与者都将看到在白板上所做的注释。 保存白板时, 白板和所有批注将存储在 Skype for business 服务器上, 并且将根据管理员设置的会议内容过期策略保留在服务器上。
 
 ## <a name="audio-test-service"></a>音频测试服务
-在音频测试服务呼叫过程中, 会记录你的语音的短 (约5秒) 示例。根据录制的质量, 你可以使用语音示例检查和/或验证 Skype for business 呼叫的声音质量。当音频测试服务呼叫结束时, 语音示例将被删除。
+在音频测试服务呼叫过程中, 会记录你的语音的短 (约5秒) 示例。 根据录制的质量, 你可以使用语音示例检查和/或验证 Skype for business 呼叫的声音质量。 当音频测试服务呼叫结束时, 语音示例将被删除。
 
 ## <a name="persistent-group-chat"></a>持久组聊天
-持续组聊天存储组聊天对话的内容。如果启用, 管理员可以控制保留期、存储此信息的服务器、组内聊天历史记录是否出于合规性或其他目的进行存档, 以及如何管理/修改聊天室上的任何属性。具有不同角色的用户具有对持久化数据的不同访问权限, 如下所示:
-- 管理员可以从任何聊天室删除较旧的内容 (例如, 在特定日期之前发布的内容), 以使数据库大小不会显著增长。或者, 他们可以删除或替换视为不适合给定聊天室的邮件 (或认为不适合)。
+持续组聊天存储组聊天对话的内容。 如果启用, 管理员可以控制保留期、存储此信息的服务器、组内聊天历史记录是否出于合规性或其他目的进行存档, 以及如何管理/修改聊天室上的任何属性。 具有不同角色的用户具有对持久化数据的不同访问权限, 如下所示:
+- 管理员可以从任何聊天室删除较旧的内容 (例如, 在特定日期之前发布的内容), 以使数据库大小不会显著增长。 或者, 他们可以删除或替换视为不适合给定聊天室的邮件 (或认为不适合)。
 - 最终用户 (包括邮件作者) 无法删除任何聊天室中的内容。
-- 聊天室管理员可以禁用聊天室, 但不能删除聊天室。只有管理员才能在创建聊天室后删除该聊天室。
+- 聊天室管理员可以禁用聊天室, 但不能删除聊天室。 只有管理员才能在创建聊天室后删除该聊天室。

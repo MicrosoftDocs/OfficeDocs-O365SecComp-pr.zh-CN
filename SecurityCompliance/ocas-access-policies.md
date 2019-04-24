@@ -11,11 +11,11 @@ ms.service: O365-seccomp
 localization_priority: Normal
 description: Office 365 云应用安全访问策略支持实时监视和控制基于用户、位置、设备和应用程序对云应用的访问。 您可以为任何设备 (包括未加入域的设备) 创建访问策略, 而不是通过将客户端证书滚动到托管设备或使用现有证书 (如第三方 MDM 证书) 来管理 Windows Intune。 例如, 可以将客户端证书部署到托管设备, 然后阻止不使用证书的设备的访问。
 ms.openlocfilehash: 5e8b8fa293420bc9ff3616daf288b8e02a2eb768
-ms.sourcegitcommit: 866d8cab6bcfdd124516a8369e47ec797bc7cf8a
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/27/2019
-ms.locfileid: "30312079"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32262998"
 ---
 # <a name="access-policies-in-office-365-cloud-app-security"></a>Office 365 云应用安全中的访问策略
 

@@ -15,11 +15,11 @@ search.appverid:
 ms.assetid: 393b0050-7c7e-49e6-a03d-b1e09fe4de9e
 description: 本简介文档将帮助您了解 Exchange Online Protection (EOP) 和一些重要的术语。 这适用于保护 exchange Online 云托管邮箱的 Office 365 客户和保护本地邮箱 (如 Exchange Server 2016) 的 EOP 独立客户。
 ms.openlocfilehash: f23f28b5c15c7057d1fd8ec77cce67bf1746410c
-ms.sourcegitcommit: fb50bf2f2c9d780c911f245a2f78c6bb5e357f67
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/28/2019
-ms.locfileid: "30950429"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32256470"
 ---
 ## <a name="what-is-exchange-online-protection-eop"></a>什么是 Exchange Online Protection (EOP)
 

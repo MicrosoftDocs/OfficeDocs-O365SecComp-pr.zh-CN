@@ -1,6 +1,6 @@
 ---
 title: Office 365 安全性和合规性
-description: '如果你的组织需要保护你的数据或遵守法律或法规标准, 你就是正确的地方。 您可以在此处了解 Office 365 中的安全性和合规性'
+description: 如果你的组织需要保护你的数据或遵守法律或法规标准, 你就是正确的地方。 您可以在此处了解 Office 365 中的安全性和合规性
 services: office-365-security-compliance
 author: robmazz
 manager: laurawi
@@ -11,6 +11,12 @@ ms.devlang: na
 ms.topic: landing-page
 ms.date: 12/27/2018
 ms.author: robmazz
+ms.openlocfilehash: 737d3a1b979b420e7f9bd24f056a4d5abf7a9906
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.translationtype: MT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32256500"
 ---
 # <a name="office-365-security-and-compliance"></a>Office 365 安全性和合规性
 

@@ -15,11 +15,11 @@ ms.collection:
 - M365-security-compliance
 description: 本主题介绍了针对最终用户和管理员的疑难解答步骤，并提供了有关如何联系技术支持以寻求帮助的信息。
 ms.openlocfilehash: bea2ad502f24d63874bfa954e6d67c73dc44d98d
-ms.sourcegitcommit: 0f93b37c39d807dec91f118aa671a3430c47a9ac
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/20/2019
-ms.locfileid: "30693651"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32259840"
 ---
 # <a name="troubleshooting-and-support-information"></a>疑难解答信息和支持信息
 

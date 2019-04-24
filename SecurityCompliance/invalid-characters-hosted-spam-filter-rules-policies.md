@@ -14,15 +14,15 @@ ms.collection:
 - M365-security-compliance
 description: 为在反垃圾邮件配置中具有无效字符的管理员提供帮助, 并在尝试使用安全&amp;合规性中心时遇到问题。
 ms.openlocfilehash: 797389da26823b6528c2aee0baaa118fbfcf7942
-ms.sourcegitcommit: 48fa456981b5c52ab8aeace173c8366b9f36723b
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/28/2019
-ms.locfileid: "30341463"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32253950"
 ---
 # <a name="avoid-invalid-characters-in-your-spam-filter-rules-and-spam-filter-policy"></a>避免垃圾邮件筛选器规则和垃圾邮件筛选器策略中的无效字符 
 
-以前, Office 365 管理员使用 Exchange 管理中心 (EAC) 设置和配置了垃圾邮件筛选器规则和垃圾邮件筛选器策略。现在, 您可以使用安全&amp;合规性中心管理您的反垃圾邮件配置。以下字符在 EAC 中受支持, 但不支持在安全&amp;合规性中心中使用。  
+以前, Office 365 管理员使用 Exchange 管理中心 (EAC) 设置和配置了垃圾邮件筛选器规则和垃圾邮件筛选器策略。 现在, 您可以使用安全&amp;合规性中心管理您的反垃圾邮件配置。 以下字符在 EAC 中受支持, 但不支持在安全&amp;合规性中心中使用。  
 
 **无效字符:**
   
@@ -52,7 +52,7 @@ ms.locfileid: "30341463"
     ```  
 
   
- ## <a name="for-more-information"></a>更多信息
+ ## <a name="for-more-information"></a>有关详细信息
 
 [安全&amp;合规性中心中的威胁管理](threat-management.md)
   

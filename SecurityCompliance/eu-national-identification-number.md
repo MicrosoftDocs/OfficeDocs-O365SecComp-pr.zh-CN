@@ -11,11 +11,11 @@ ms.collection: M365-security-compliance
 localization_priority: Normal
 description: 本主题介绍当数据丢失防护 (DLP) 策略检测到欧盟国家身份证的敏感信息类型时, 会对其进行查找。 此敏感信息类型为每个国家/地区定义不同的模式、关键字和其他证据。
 ms.openlocfilehash: afae2c3fa54fe5fcd93990cdf5797f5517c46202
-ms.sourcegitcommit: ed822a776d3419853453583e882f3c61ca26d4b2
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2019
-ms.locfileid: "30410967"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32255640"
 ---
 # <a name="eu-national-identification-number"></a>欧盟国家身份证号
 
@@ -23,7 +23,7 @@ ms.locfileid: "30410967"
   
 ## <a name="austria"></a>奥地利
 
-### <a name="format"></a>格式
+### <a name="format"></a>Format
 
 字母、数字和特殊字符的24个字符的组合
   
@@ -77,7 +77,7 @@ personalausweis republik österreich
   
 ## <a name="bulgaria"></a>保加利亚语
 
-### <a name="format"></a>格式
+### <a name="format"></a>Format
 
 10个数字, 无空格和分隔符
   
@@ -165,7 +165,7 @@ edinen grazhdanski nomer
   
 ## <a name="cyprus"></a>塞浦路斯
 
-### <a name="format"></a>格式
+### <a name="format"></a>Format
 
 10个数字, 无空格和分隔符
   
@@ -219,7 +219,7 @@ national identification number
   
 ## <a name="estonia"></a>爱沙尼亚
 
-### <a name="format"></a>格式
+### <a name="format"></a>Format
 
 11个数字, 无空格和分隔符
   
@@ -304,7 +304,7 @@ id-kaart
   
 ## <a name="hungary"></a>匈牙利
 
-### <a name="format"></a>格式
+### <a name="format"></a>Format
 
 11 个数字
   
@@ -360,9 +360,9 @@ identification number
   
 személyazonosító igazolvány
   
-## <a name="ireland"></a>Ireland
+## <a name="ireland"></a>爱尔兰
 
-### <a name="format"></a>格式
+### <a name="format"></a>Format
 
 指定模式中的字母、数字和空格的九个字符的组合
   
@@ -439,7 +439,7 @@ uimh。 psp
   
 ## <a name="italy"></a>意大利
 
-### <a name="format"></a>格式
+### <a name="format"></a>Format
 
 在指定模式中, 由16个字符组成的字母和数字的组合
   
@@ -521,7 +521,7 @@ codice fiscale
   
 ## <a name="italy"></a>意大利
 
-### <a name="format"></a>格式
+### <a name="format"></a>Format
 
 11位数字和指定格式的连字符
   
@@ -585,7 +585,7 @@ personalcodeno #
   
 ## <a name="lithuania"></a>立陶宛
 
-### <a name="format"></a>格式
+### <a name="format"></a>Format
 
 11个数字, 无空格和分隔符
   
@@ -658,7 +658,7 @@ asmens kodas。
   
 ## <a name="luxemburg"></a>Luxemburg
 
-### <a name="format"></a>格式
+### <a name="format"></a>Format
 
 11个数字, 无空格和分隔符
   
@@ -733,9 +733,9 @@ persönliche identifikationsnummer
   
 eindeutigeid #
   
-## <a name="malta"></a>Malta（马耳他）
+## <a name="malta"></a>马耳他
 
-### <a name="format"></a>格式
+### <a name="format"></a>Format
 
 七位数字后跟一个字母
   
@@ -800,7 +800,7 @@ numru ta "identità uniku
   
 ## <a name="netherlands"></a>荷兰
 
-### <a name="format"></a>格式
+### <a name="format"></a>Format
 
 9个数字, 不带空格或分隔符
   
@@ -873,7 +873,7 @@ uniek identiteitsnummer
   
 ## <a name="romania"></a>罗马尼亚
 
-### <a name="format"></a>格式
+### <a name="format"></a>Format
 
 13位数, 不含空格和分隔符
   
@@ -954,7 +954,7 @@ numărpersonalunic #
   
 ## <a name="slovakia"></a>斯洛伐克
 
-### <a name="format"></a>格式
+### <a name="format"></a>Format
 
 10个数字, 包含一个反斜杠
   
@@ -1023,7 +1023,7 @@ rodne cislo
   
 ## <a name="slovenia"></a>斯洛文尼亚
 
-### <a name="format"></a>格式
+### <a name="format"></a>Format
 
 13位数, 不含空格或分隔符
   
@@ -1094,7 +1094,7 @@ emšo
   
 ## <a name="spain"></a>西班牙
 
-### <a name="format"></a>格式
+### <a name="format"></a>Format
 
 七位数字后跟一个字符
   

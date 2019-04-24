@@ -15,11 +15,11 @@ search.appverid: MOE150
 ms.assetid: bdee24ed-b8cf-4dd0-92ae-b86ec4661e6b
 description: 在 Office 365 邮箱变为非活动状态后, 可以更改分配给非活动邮箱的保留或 Office 365 保留策略的持续时间。 保留期定义了"可恢复的项目"文件夹中的项目的保留持续时间。
 ms.openlocfilehash: 57b4bda5bda49785b752646174620101f8441135
-ms.sourcegitcommit: e7a776a04ef6ed5e287a33cfdc36aa2d72862b55
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30999595"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32243681"
 ---
 # <a name="change-the-hold-duration-for-an-inactive-mailbox-in-office-365"></a>在 Office 365 中更改非活动邮箱的保留期
 
@@ -28,7 +28,7 @@ ms.locfileid: "30999595"
 > [!IMPORTANT]
 > 我们推迟了最后期限，在 2017 年 7 月 1 后，仍可通过新建就地保留创建非活动邮箱。 But later this year or early next year, you won't be able to create new In-Place Holds in Exchange Online. 在这段时间, 仅可使用诉讼保留和 Office 365 保留策略来创建非活动邮箱。 不过，处于就地保留的现有非活动邮箱仍受支持，可以继续管理这些非活动邮箱的就地保留。 这包括更改就地保留的持续时间，以及通过删除就地保留来永久删除非活动邮箱。 
   
-## <a name="before-you-begin"></a>开始之前
+## <a name="before-you-begin"></a>准备工作
 
 - 您必须使用 Exchange Online PowerShell 更改非活动邮箱上的诉讼保留的保留期。 不能使用 Exchange 管理中心 (EAC)。 但您可以使用 Exchange Online PowerShell 或 EAC 更改就地保留的保留期。 您可以使用安全与合规中心或 security & 合规性中心 PowerShell 更改 Office 365 保留策略的保留期。
     

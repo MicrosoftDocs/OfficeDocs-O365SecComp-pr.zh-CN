@@ -17,11 +17,11 @@ search.appverid:
 - MET150
 description: 了解如何在 Office 365 中搜索和查找个人数据。
 ms.openlocfilehash: 3c2981116e2abb3518a132084a697618ef3261cc
-ms.sourcegitcommit: 54d58da1777eb83adb82826d1bb1adb94903c8e1
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30955175"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32265334"
 ---
 # <a name="search-for-and-find-personal-data"></a>搜索和查找个人数据
 

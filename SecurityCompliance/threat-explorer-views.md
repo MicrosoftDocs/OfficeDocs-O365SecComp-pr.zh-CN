@@ -13,11 +13,11 @@ ms.collection:
 - M365-security-compliance
 description: 了解在 Office 365 高级威胁防护计划2中的资源管理器 (也称为威胁浏览器) 中可用的各种类型的视图。
 ms.openlocfilehash: bcfa044db6844d9459b3dd62d9ced1cd37a999ec
-ms.sourcegitcommit: a56128c7be5d59e976851c27301031e19fa1997d
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/21/2019
-ms.locfileid: "30736231"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32260496"
 ---
 # <a name="threat-explorer-views"></a>威胁资源管理器视图
 

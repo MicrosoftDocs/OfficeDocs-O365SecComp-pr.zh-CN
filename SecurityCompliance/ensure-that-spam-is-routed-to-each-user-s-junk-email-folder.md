@@ -15,11 +15,11 @@ ms.collection:
 - M365-security-compliance
 description: 管理员可以了解如何将垃圾邮件路由到 Exchange Online Protection 中的用户垃圾邮件文件夹。
 ms.openlocfilehash: 30b115b5d7f8f02767e3e380b672341765052a9c
-ms.sourcegitcommit: 0f93b37c39d807dec91f118aa671a3430c47a9ac
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/20/2019
-ms.locfileid: "30692811"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32256660"
 ---
 # <a name="ensure-that-spam-is-routed-to-each-users-junk-email-folder"></a>确保垃圾邮件已路由到每个用户的“垃圾邮件”文件夹
 

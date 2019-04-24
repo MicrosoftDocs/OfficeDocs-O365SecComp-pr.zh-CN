@@ -15,11 +15,11 @@ ms.collection:
 - M365-security-compliance
 description: 高级垃圾邮件筛选选项为管理员提供检查邮件的各种内容属性的功能。 邮件中存在的这些属性或者增加邮件的垃圾邮件得分（从而增加被标识为垃圾邮件的可能性），或者导致邮件被标记为垃圾邮件。 ASF 选项的目标是特定邮件属性，如垃圾邮件中常见的 HTML 标签和 URL 重定向。
 ms.openlocfilehash: 0fad573c29c440d69e27b1e70810bf2fc67be164
-ms.sourcegitcommit: 0f93b37c39d807dec91f118aa671a3430c47a9ac
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/20/2019
-ms.locfileid: "30692881"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32242480"
 ---
 # <a name="advanced-spam-filtering-options"></a>高级垃圾邮件筛选选项
 

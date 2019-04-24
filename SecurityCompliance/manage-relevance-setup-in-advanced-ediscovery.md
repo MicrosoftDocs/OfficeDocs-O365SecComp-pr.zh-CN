@@ -13,11 +13,11 @@ search.appverid:
 ms.assetid: fd6be6d3-2e8d-449d-9851-03ab7546e6aa
 description: 获取有关在 Office 365 高级电子数据展示中设置相关性定型的建议，以计算文件相关性分数并生成分析结果。
 ms.openlocfilehash: 7e06be032cc653681c19ee2d17547ca22421e0ae
-ms.sourcegitcommit: e7a776a04ef6ed5e287a33cfdc36aa2d72862b55
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "31001115"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32259660"
 ---
 # <a name="manage-relevance-setup-in-office-365-advanced-ediscovery"></a>管理 Office 365 高级电子数据展示中的相关性设置
 

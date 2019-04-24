@@ -17,11 +17,11 @@ search.appverid:
 - MET150
 description: 了解可用于监视个人数据泄露的三种工具。
 ms.openlocfilehash: d9b48589ace06186d5f177d1b90f02f8657637bd
-ms.sourcegitcommit: 54d58da1777eb83adb82826d1bb1adb94903c8e1
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30955205"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32263252"
 ---
 # <a name="monitor-for-leaks-of-personal-data"></a>监视个人数据泄露
 

@@ -14,11 +14,11 @@ ms.collection:
 - M365-security-compliance
 description: Office 365 中的数据损坏的说明, 以及 Microsoft 预防和恢复的努力。
 ms.openlocfilehash: 9bf55243399ecd9f01f736e2da70d7c07231fa63
-ms.sourcegitcommit: 1261a37c414111f869df5791548a768d853fda60
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/30/2019
-ms.locfileid: "31004089"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32262824"
 ---
 # <a name="dealing-with-data-corruption-in-office-365"></a>处理 Office 365 中的数据损坏
 

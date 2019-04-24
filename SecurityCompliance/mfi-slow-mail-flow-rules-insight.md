@@ -11,11 +11,11 @@ localization_priority: Normal
 ms.assetid: 37125cdb-715d-42d0-b669-1a8efa140813
 description: 管理员可以了解安全 & 合规性中心的邮件流仪表板中的邮件流规则的慢速见解。
 ms.openlocfilehash: ede12e14f287599cab0e5f39aaf71c38ed519276
-ms.sourcegitcommit: e7a776a04ef6ed5e287a33cfdc36aa2d72862b55
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30999775"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32267212"
 ---
 # <a name="slow-mail-flow-rules-insight"></a>慢邮件流规则见解
 

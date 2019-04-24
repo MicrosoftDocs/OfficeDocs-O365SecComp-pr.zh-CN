@@ -15,11 +15,11 @@ search.appverid:
 ms.assetid: ''
 description: ''
 ms.openlocfilehash: fb4b36841394576c44667f9677507c5655179e45
-ms.sourcegitcommit: 6aa82374eef09d2c1921f93bda3eabeeb28aadeb
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/06/2019
-ms.locfileid: "30455414"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32242550"
 ---
 # <a name="collect-data-for-a-case-in-advanced-ediscovery-preview"></a>在高级电子数据展示中收集数据事例 (预览)
 

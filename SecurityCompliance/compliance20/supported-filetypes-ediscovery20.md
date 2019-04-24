@@ -15,11 +15,11 @@ search.appverid:
 ms.assetid: ''
 description: ''
 ms.openlocfilehash: 7955debee750019d60b8016d736ba50f1ff70bce
-ms.sourcegitcommit: cf9d9b545a7c153d314aa9c08c7fb16fcd785b3e
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/21/2019
-ms.locfileid: "30737702"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32240887"
 ---
 # <a name="supported-file-types-in-advanced-ediscovery-preview"></a>高级电子数据展示中支持的文件类型 (预览)
 

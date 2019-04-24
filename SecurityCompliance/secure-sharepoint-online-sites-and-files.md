@@ -19,11 +19,11 @@ ms.custom:
 ms.assetid: 1d51bd87-17bf-457c-b698-61821de3afa0
 description: 摘要：用于保护 SharePoint Online 和 Office 365 中文件的配置建议。
 ms.openlocfilehash: 5dd9866096f4fea4fbb578e39f6b017f5cc898a2
-ms.sourcegitcommit: 19d27ff836ee7fa1f8a4e761e04d928f13f4bfd8
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/09/2019
-ms.locfileid: "31745274"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32265408"
 ---
 # <a name="secure-sharepoint-online-sites-and-files"></a>保护 SharePoint Online 网站和文件
 
@@ -116,7 +116,7 @@ SharePoint Online 和 OneDrive for Business 的设备访问设置可确定是否
 ||||||
 |:-----|:-----|:-----|:-----|:-----|
 ||**基线保护 #1** <br/> |**基线保护 #2** <br/> |**敏感保护** <br/> |**高度机密** <br/> |
-|说明  <br/> |组织内的开放式发现和协作。  <br/> |允许在组外部共享的专用网站和组。  <br/> |独立网站，该网站中的访问级别由特定组中的成员身份进行定义。仅允许网站成员进行共享。DLP 在用户试图向组织外发送文件时警告用户。  <br/> |启用 Azure 信息保护的独立网站和文件及权限。DLP 阻止用户向组织外发送文件。  <br/> |
+|描述  <br/> |组织内的开放式发现和协作。  <br/> |允许在组外部共享的专用网站和组。  <br/> |独立网站，该网站中的访问级别由特定组中的成员身份进行定义。仅允许网站成员进行共享。DLP 在用户试图向组织外发送文件时警告用户。  <br/> |启用 Azure 信息保护的独立网站和文件及权限。DLP 阻止用户向组织外发送文件。  <br/> |
 |专用或公用团队网站  <br/> |公用  <br/> |Private  <br/> |Private  <br/> |Private  <br/> |
 |谁可以访问？  <br/> |组织中的任何人，包括 B2B 用户和来宾用户。  <br/> |仅限网站成员。其他人可以请求访问。  <br/> |仅限网站成员。其他人可以请求访问。  <br/> |仅限成员。其他人无法请求访问。  <br/> |
 |网站级共享控制  <br/> |允许与任何人共享。默认设置。  <br/> |允许与任何人共享。默认设置。  <br/> |成员无法共享对网站的访问权限。  <br/> 非成员可以请求访问该网站，但需要由网站管理员对这些请求进行寻址。  <br/> |成员无法共享对网站的访问权限。  <br/> 非成员无法请求访问网站或内容。  <br/> |
@@ -187,7 +187,7 @@ SharePoint Online 和 OneDrive for Business 的设备访问设置可确定是否
 
 ## <a name="see-also"></a>另请参阅
 
-[Microsoft 针对政治宣传活动、非营利组织和其他敏捷型组织的安全指南](microsoft-security-guidance-for-political-campaigns-nonprofits-and-other-agile-o.md)
+[Microsoft 针对政治宣传活动、非营利组织和其他敏捷性组织的安全指南](microsoft-security-guidance-for-political-campaigns-nonprofits-and-other-agile-o.md)
   
 [云应用和混合解决方案](https://docs.microsoft.com/office365/enterprise/cloud-adoption-and-hybrid-solutions)
   

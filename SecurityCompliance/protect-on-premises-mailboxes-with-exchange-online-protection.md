@@ -18,11 +18,11 @@ ms.collection:
 - M365-security-compliance
 description: 即使您计划在本地承载部分或全部邮箱, 仍可以使用 Exchange Online Protection (EOP) 保护邮箱。 要配置连接器，你的帐户必须是 Office 365 全局管理员或 Exchange 公司管理员（组织管理角色组）。 有关 Office 365 权限与 Exchange 权限的关系的信息, 请参阅在由世纪互联运营的 office 365 中分配管理员角色。 如果所有 Exchange 邮箱都是本地的, 请按照以下步骤设置您的 EOP 服务。
 ms.openlocfilehash: 4331bf5574122efb50bb9dda9c7c0386df5683f7
-ms.sourcegitcommit: b688d67935edb036658bb5aa1671328498d5ddd3
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "30670497"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32261550"
 ---
 # <a name="protect-on-premises-mailboxes-with-exchange-online-protection"></a>使用 Exchange Online Protection 保护本地邮箱
 

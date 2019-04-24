@@ -13,41 +13,39 @@ search.appverid:
 - MET150
 description: ''
 ms.openlocfilehash: 1502308fab4f27ed9e93e1dff204bdddf6ae726e
-ms.sourcegitcommit: 7adfd8eda038cf25449bdf3df78b5e2fcc1999e7
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "30357453"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32241555"
 ---
 # <a name="view-documents-in-a-working-set"></a>查看工作集中的文档
 
-高级电子数据展示 (预览) 通过几个具有不同用途的查看器显示内容。通过单击工作集中的任何文档, 可以使用各种查看器。当前提供的查看者为:
+高级电子数据展示 (预览) 通过几个具有不同用途的查看器显示内容。 通过单击工作集中的任何文档, 可以使用各种查看器。 当前提供的查看者为:
 
-- 文件元数据  
-
+- 文件元数据
 - 本机视图
 - 文本视图
 - 批注视图
 - 转换后的视图
 
-## <a name="file-metadata"></a>文件元数据  
+## <a name="file-metadata"></a>文件元数据
 
-
-此面板可打开/关闭以显示与文档关联的各种元数据。尽管可以自定义搜索结果网格以显示特定元数据, 但在查看数据时, 水平滚动的情况也很难。"文件元数据" 面板允许用户在查看器中切换视图。
+此面板可打开/关闭以显示与文档关联的各种元数据。 尽管可以自定义搜索结果网格以显示特定元数据, 但在查看数据时, 水平滚动的情况也很难。 "文件元数据" 面板允许用户在查看器中切换视图。
 
 ![文件元数据面板
 ](../media/Reviewimage2.png)
 
 ## <a name="native-view"></a>本机视图
 
-本机查看器显示文档的最丰富视图。它支持数百种文件类型, 旨在将 truest 显示为可能的本机体验。例如, 对于 Microsoft Office 文件, 查看器利用 Office Online 来显示文档注释、Excel 公式、隐藏的行/列、PowerPoint 备注等内容。有关 Office Online 查看器的详细信息, 请访问\[此处需要链接\]
+本机查看器显示文档的最丰富视图。 它支持数百种文件类型, 旨在将 truest 显示为可能的本机体验。 例如, 对于 Microsoft Office 文件, 查看器利用 Office Online 来显示文档注释、Excel 公式、隐藏的行/列、PowerPoint 备注等内容。有关 Office Online 查看器的详细信息, 请访问\[此处需要链接\]
 
 ![本机视图
 ](../media/Reviewimage3.png)
 
 ## <a name="text-view"></a>文本视图
 
-文本查看器提供了文件中提取的文本的视图。它将忽略任何嵌入的图像和格式, 但如果用户尝试快速了解内容, 将是一种非常强大的视图。文本视图还包括其他功能:
+文本查看器提供了文件中提取的文本的视图。 它将忽略任何嵌入的图像和格式, 但如果用户尝试快速了解内容, 将是一种非常强大的视图。 文本视图还包括其他功能:
 
   - 行计数器可更轻松地引用文档的特定部分
 

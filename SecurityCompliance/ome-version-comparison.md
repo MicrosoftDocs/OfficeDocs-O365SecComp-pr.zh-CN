@@ -11,11 +11,11 @@ search.appverid:
 - MET150
 description: 帮助解释随不同版本的 Office 365 邮件加密提供的功能之间的差异, 以及这两个如何继续协同工作。
 ms.openlocfilehash: bb13208e2b630c8a6217b78b48a4cd3bb4b0de79
-ms.sourcegitcommit: 895f67531f2b4afe46c7487ca5b44555ca791bae
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/12/2019
-ms.locfileid: "31836836"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32262324"
 ---
 # <a name="compare-versions-of-ome"></a>比较 OME 的版本
 

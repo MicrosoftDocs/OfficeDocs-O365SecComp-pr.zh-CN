@@ -19,11 +19,11 @@ ms.custom: ''
 ms.assetid: ''
 description: 了解如何修改或新建针对 GDPR 的 Office 365 敏感信息类型。
 ms.openlocfilehash: 6810a6b6d9b0ea34ab11cc778c32a76d556d7a17
-ms.sourcegitcommit: 54d58da1777eb83adb82826d1bb1adb94903c8e1
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30955215"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32258780"
 ---
 # <a name="customize-or-create-a-new-sensitive-information-type"></a>自定义或新建敏感信息类型
 

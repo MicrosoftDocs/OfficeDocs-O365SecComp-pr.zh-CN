@@ -11,11 +11,11 @@ ms.collection: M365-security-compliance
 localization_priority: Normal
 description: 本主题介绍当数据丢失防护 (DLP) 策略检测到欧盟社会保险号码或等效 ID 敏感信息类型时, 将会查找什么。 此敏感信息类型为每个国家/地区定义不同的模式、关键字和其他证据。
 ms.openlocfilehash: c0c808eafa52209c79f3b4e8a2113f587fd8a771
-ms.sourcegitcommit: ed822a776d3419853453583e882f3c61ca26d4b2
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2019
-ms.locfileid: "30410797"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32255550"
 ---
 # <a name="eu-social-security-number-or-equivalent-id"></a>欧盟社会安全号码或等效 ID
 
@@ -23,7 +23,7 @@ ms.locfileid: "30410797"
   
 ## <a name="austria"></a>奥地利
 
-### <a name="format"></a>格式
+### <a name="format"></a>Format
 
 以指定格式表示的10个数字
   
@@ -98,7 +98,7 @@ versicherungsnummer
   
 ## <a name="belgium"></a>比利时
 
-### <a name="format"></a>格式
+### <a name="format"></a>Format
 
 11位数, 不含空格或分隔符
   
@@ -175,7 +175,7 @@ numéronational #
   
 ## <a name="croatia"></a>克罗地亚
 
-### <a name="format"></a>格式
+### <a name="format"></a>Format
 
 11个数字, 无空格和分隔符
   
@@ -250,7 +250,7 @@ osobni identifikacijski broj
   
 ## <a name="czech-republic"></a>捷克共和国
 
-### <a name="format"></a>格式
+### <a name="format"></a>Format
 
 指定模式中的10个数字和一个反斜杠
   
@@ -327,7 +327,7 @@ rodne cislo
   
 ## <a name="denmark"></a>丹麦
 
-### <a name="format"></a>格式
+### <a name="format"></a>Format
 
 指定模式中的10个数字和一个连字符
   
@@ -398,7 +398,7 @@ personnummer
   
 ## <a name="finland"></a>芬兰
 
-### <a name="format"></a>格式
+### <a name="format"></a>Format
 
 指定格式的11个字符的组合
   
@@ -509,7 +509,7 @@ hetu
   
 ## <a name="hungary"></a>匈牙利
 
-### <a name="format"></a>格式
+### <a name="format"></a>Format
 
 9个数字, 不带空格和分隔符
   
@@ -594,7 +594,7 @@ magyar áfa szám
   
 ## <a name="sweden"></a>瑞典
 
-### <a name="format"></a>格式
+### <a name="format"></a>Format
 
 12个数字, 不含空格和分隔符
   

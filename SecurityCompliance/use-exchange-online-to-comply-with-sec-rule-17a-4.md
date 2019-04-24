@@ -14,11 +14,11 @@ search.appverid:
 - MET150
 description: Cohasset Associates 已验证，当 Exchange Online 和安全与合规中心按建议配置时，它们满足 CFTC 规则 1.31(c)-(d)、FINRA 规则 4511 和 SEC 规则 17a-4 的相关存储要求。可以下载评估报告。
 ms.openlocfilehash: 7558770f5a777667bd0e986a3156b39a91f0336e
-ms.sourcegitcommit: 799a958fcac643f62dfac6fa04020f2f4758635c
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30997068"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32263756"
 ---
 # <a name="use-exchange-online-and-the-security--compliance-center-to-comply-with-sec-rule-17a-4"></a>使用 Exchange Online 和安全与合规中心来遵守 SEC 规则 17a-4
 

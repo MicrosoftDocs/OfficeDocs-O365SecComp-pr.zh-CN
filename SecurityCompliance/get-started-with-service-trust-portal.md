@@ -13,11 +13,11 @@ ms.custom: Adm_O365
 ms.assetid: f30e2353-0bd6-41ed-8347-eea1fb8d2662
 description: 对于 Office 365、Azure 和 Dynamics 365 Online 规章合规性报告, 若要查看第三方审核, 请了解 Microsoft 如何使客户数据安全, 以及如何在使用这些在线服务时遵守 ISO、HIPAA、NIST、FINRA、GDPR 和 FedRAMP 的合规性。
 ms.openlocfilehash: ff14f1b88dbde06dbfd17a87bb94c3f32ddff81b
-ms.sourcegitcommit: b688d67935edb036658bb5aa1671328498d5ddd3
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "30647332"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32254282"
 ---
 # <a name="get-started-with-the-microsoft-service-trust-portal"></a>Microsoft 服务信任门户入门
 
@@ -33,7 +33,7 @@ microsoft 服务信任门户提供了有关 Microsoft 安全、隐私和合规�
 
 - Dynamics 365
 
-- 蔚蓝色
+- Azure
     
  > [!NOTE]
  > 与组织相关联的 Azure Active Directory 帐户可以访问各种文档和功能, 如合规性管理器。 为个人使用创建的 Microsoft 帐户具有对服务信任门户内容的有限访问权限。 

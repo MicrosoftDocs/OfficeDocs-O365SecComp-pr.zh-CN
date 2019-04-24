@@ -18,11 +18,11 @@ ms.collection:
 - M365-security-compliance
 description: 利用信息管理策略, 组织可以控制保留内容的时间, 审核用户对内容的处理, 并向文档添加条码或标签。 策略可帮助强制遵守法律和政府法规或内部业务流程。 作为管理员, 您可以设置一个策略来控制如何跟踪文档以及保留文档的时间。
 ms.openlocfilehash: 1d17dd8cadb721478831ab8fe77413c08f959f29
-ms.sourcegitcommit: 1658be51e2c21ed23bc4467a98af74300a45b975
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/26/2019
-ms.locfileid: "30862564"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32258834"
 ---
 # <a name="create-and-apply-information-management-policies"></a>创建和应用信息管理策略
 

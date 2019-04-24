@@ -15,11 +15,11 @@ search.appverid:
 ms.assetid: f5caf497-5e8d-4b7a-bfff-d02942f38150
 description: 当不再需要保留 Office 365 非活动邮箱的内容时, 可以通过删除保留永久删除非活动邮箱。 删除保留后, 非活动邮箱将标记为删除, 并在处理后被永久删除。
 ms.openlocfilehash: f1aa29b0e40d02e4b6450202c0b2a34ae3075677
-ms.sourcegitcommit: e7a776a04ef6ed5e287a33cfdc36aa2d72862b55
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "31001065"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32257102"
 ---
 # <a name="delete-an-inactive-mailbox-in-office-365"></a>删除 Office 365 中的非活动邮箱
 
@@ -201,7 +201,7 @@ Set-Mailbox -InactiveMailbox -Identity <identity of inactive mailbox> -Litigatio
   Get-MailboxSearch $InPlaceHold.Name | FL Sources
 ```
 
-## <a name="more-information"></a>更多信息
+## <a name="more-information"></a>详细信息
 
 - **非活动邮箱是一种软删除邮箱。** 在 Exchange Online 中，软删除邮箱是指已删除但可以在特定保留期内恢复的邮箱。 Exchange Online 中的软删除邮箱保留期为 30 天。 这意味着该邮箱可以在软删除后 30 天内进行恢复。 30 天后，软删除邮箱将标记为永久删除并且无法恢复。 
     

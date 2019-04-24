@@ -14,11 +14,11 @@ ms.collection:
 - M365-security-compliance
 description: 有关对 Office 365 数据中心磁盘驱动器和服务器进行回收、处置或销毁的 Microsoft 策略的概述。
 ms.openlocfilehash: fec6065434fa9fa555a057c68eca60082225652c
-ms.sourcegitcommit: 1261a37c414111f869df5791548a768d853fda60
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/30/2019
-ms.locfileid: "31004139"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32262904"
 ---
 # <a name="office-365-data-destruction"></a>Office 365 数据销毁
 

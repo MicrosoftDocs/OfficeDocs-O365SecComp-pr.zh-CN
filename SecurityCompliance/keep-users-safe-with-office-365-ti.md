@@ -16,11 +16,11 @@ ms.collection:
 - M365-security-compliance
 description: 了解 Office 365 威胁调查和响应功能如何帮助您的组织检测入侵和威胁, 并快速缓解和恢复威胁。
 ms.openlocfilehash: 9ed20713cac07631e63b969efea402e8dbeb8f6d
-ms.sourcegitcommit: 0f93b37c39d807dec91f118aa671a3430c47a9ac
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/20/2019
-ms.locfileid: "30692281"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32254044"
 ---
 # <a name="keep-your-office-365-users-safe-with-office-365-threat-investigation-and-response-capabilities"></a>使用 office 365 威胁调查和响应功能保持 office 365 用户安全
 

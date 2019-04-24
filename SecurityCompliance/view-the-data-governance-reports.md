@@ -14,11 +14,11 @@ search.appverid:
 - MET150
 description: 使用 Office 365 安全与合规中心内的数据管理报告，可快速查看标签是否按预期应用于内容。
 ms.openlocfilehash: 5374b54c87aaf79f70be733d626171b196639725
-ms.sourcegitcommit: ed822a776d3419853453583e882f3c61ca26d4b2
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2019
-ms.locfileid: "30410877"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32266975"
 ---
 # <a name="view-the-data-governance-reports"></a>查看数据管理报告
 

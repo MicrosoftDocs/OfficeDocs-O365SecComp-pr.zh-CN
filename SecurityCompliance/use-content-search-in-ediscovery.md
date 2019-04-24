@@ -11,11 +11,11 @@ localization_priority: Normal
 ms.assetid: 55f31488-288a-473a-9b9e-831a11e3711a
 description: '使用 PowerShell 脚本在 Exchange Online 中创建基于 Security & 合规性中心中创建的搜索的就地电子数据展示搜索。 '
 ms.openlocfilehash: 2e4f1b3570ce2400472a0b2a9ddee886ffc4bab3
-ms.sourcegitcommit: e7a776a04ef6ed5e287a33cfdc36aa2d72862b55
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "31000025"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32263794"
 ---
 # <a name="use-content-search-in-your-ediscovery-workflow"></a>在电子数据展示工作流中使用内容搜索
 

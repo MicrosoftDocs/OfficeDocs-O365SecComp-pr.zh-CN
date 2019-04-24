@@ -16,11 +16,11 @@ search.appverid:
 ms.assetid: a85e1c87-a48e-4715-bfa9-d5275cde67b0
 description: '对于管理员: 删除 Exchange Online 邮箱的用户的 "可恢复的项目" 文件夹中的项目, 即使该邮箱位于 "合法保留" 中也是如此。 这是一种删除意外溅入 Office 365 中的数据的有效方法。'
 ms.openlocfilehash: 7badd45f582e4d5fef4cb5708c504573da0aba50
-ms.sourcegitcommit: e7a776a04ef6ed5e287a33cfdc36aa2d72862b55
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "31000075"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32256870"
 ---
 # <a name="delete-items-in-the-recoverable-items-folder-of-cloud-based-mailboxes-on-hold---admin-help"></a>删除保留的基于云的邮箱的 "可恢复的项目" 文件夹中的项目-管理员帮助
 
@@ -43,7 +43,7 @@ Exchange Online 邮箱的 "可恢复的项目" 文件夹存在, 以防止意外�
 > [!CAUTION]
 > 本文中所述的过程将导致从 Exchange Online 邮箱永久删除 (清除) 的数据。 这意味着无法恢复从 "可恢复的项目" 文件夹中删除的邮件, 也不会提供用于法律查询或其他合规性的邮件。 如果要从作为诉讼保留的一部分的邮箱中删除邮件, 请在 "安全与合规中心" 中创建的 "就地保留"、"电子数据展示保留" 或 "Office 365 保留策略" 中, 与您的记录管理或法律部门进行核实在删除保留之前。 您的组织可能有定义邮箱处于保留状态或 data 外泄事件是否优先的策略。 
   
-## <a name="before-you-begin"></a>开始之前
+## <a name="before-you-begin"></a>准备工作
 
 - 您必须在 Exchange Online 中为以下两个管理角色分配搜索和删除步骤5中的 "可恢复的项目" 文件夹中的邮件。
     
@@ -423,7 +423,7 @@ Get-MailboxFolderStatistics <username> -FolderScope RecoverableItems -Archive | 
     Get-CASMailbox <username> | FL EwsEnabled,ActiveSyncEnabled,MAPIEnabled,OWAEnabled,ImapEnabled,PopEnabled
     ```
   
-## <a name="more-information"></a>更多信息
+## <a name="more-information"></a>详细信息
 
 下面的表格介绍了在运行 set-organizationconfig cmdlet 或**** cmdlet 时, 如何根据*InPlaceHolds*属性中的值标识不同类型的**** 保留。 有关更多详细信息, 请参阅[如何识别 Exchange Online 邮箱上放置的保留类型](identify-a-hold-on-an-exchange-online-mailbox.md)。
 

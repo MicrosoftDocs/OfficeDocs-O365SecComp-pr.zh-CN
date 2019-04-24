@@ -15,11 +15,11 @@ search.appverid:
 - MET150
 description: 了解如何避免在 Office 365 中发生误报和将真实电子邮件标记为“垃圾邮件”。
 ms.openlocfilehash: ecce497269030945457344122a9a218105369be2
-ms.sourcegitcommit: 8a65a29aa3bfe5dcad0ff152a7cd795e02877dd9
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/28/2019
-ms.locfileid: "30936702"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32261224"
 ---
 # <a name="how-to-prevent-real-email-from-being-marked-as-spam-in-office-365"></a>如何避免在 Office 365 中将真实电子邮件标记为“垃圾邮件”
 

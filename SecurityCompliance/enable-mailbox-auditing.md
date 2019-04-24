@@ -16,11 +16,11 @@ search.appverid:
 ms.assetid: aaca8987-5b62-458b-9882-c28476a66918
 description: 默认情况下, 邮箱审核日志记录在 Microsoft 365 (也称为默认邮箱审核或邮箱审核) 中处于打开状态。 这意味着邮箱所有者、代理人和管理员执行的某些操作将自动记录在邮箱审核日志中, 在此日志中可以搜索在邮箱上执行的活动。
 ms.openlocfilehash: 38632798aedfa34ee7568a7038d5ff906888619c
-ms.sourcegitcommit: 19d27ff836ee7fa1f8a4e761e04d928f13f4bfd8
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/09/2019
-ms.locfileid: "31745314"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32256980"
 ---
 # <a name="manage-mailbox-auditing"></a>管理邮箱审核
   
@@ -93,10 +93,10 @@ Get-OrganizationConfig | FL AuditDisabled
 |创建    |创建       | HardDelete        |
 |HardDelete    |HardDelete        |MoveToDeletedItems       |
 |MoveToDeletedItems    |MoveToDeletedItems         |SoftDelete         |
-|SendAs    |SendAs      |    更新     |
+|SendAs    |SendAs      |    Update     |
 |SendOnBehalf    |SendOnBehalf       |UpdateCalendarDelegation        |
 |SoftDelete     |SoftDelete      | UpdateFolderPermissions        |
-|更新    |更新       |UpdateInboxRules         |
+|Update    |Update       |UpdateInboxRules         |
 |UpdateCalendarDelegation    | UpdateFolderPermissions        |         |
 |UpdateFolderPermissions     | UpdateInboxRules        |         |
 |UpdateInboxRules     |         |         |
@@ -104,15 +104,15 @@ Get-OrganizationConfig | FL AuditDisabled
 
 以下是这些邮箱操作的说明。 
 
-|邮箱操作|描述|
+|邮箱操作|说明|
 |:---------|:---------|
-|**创建** <br/> |项目是在邮箱中的 "日历"、"联系人"、"便笺" 或 "任务" 文件夹中创建的;例如, 创建一个新的会议请求。 请注意, 不会审核创建、发送或接收邮件。 此外, 还不会审核创建邮箱文件夹的情况。  <br/> |
+|**Create** <br/> |项目是在邮箱中的 "日历"、"联系人"、"便笺" 或 "任务" 文件夹中创建的;例如, 创建一个新的会议请求。 请注意, 不会审核创建、发送或接收邮件。 此外, 还不会审核创建邮箱文件夹的情况。  <br/> |
 |**HardDelete** <br/> |已将某个邮件从"已恢复邮件"文件夹中清除。  <br/> |
 |**MoveToDeletedItems** <br/> |邮件已被删除并移动到 "已删除邮件" 文件夹。  <br/> |
 |**SendAs** <br/> |邮件是使用 SendAs 权限发送的。 这表示另一个用户发送了邮件，而该邮件就好像来自于邮箱所有者。  <br/> |
 |**SendOnBehalf** <br/> |邮件是使用 SendOnBehalf 权限发送的。 这表示另一个用户代表邮箱所有者发送了邮件。 该邮件指示收件人代表发送邮件的收件人和实际发送邮件的收件人。  <br/> |
 |**SoftDelete** <br/> |邮件已从 "已删除邮件" 文件夹中永久删除或删除。 软删除的项目将移动到 "可恢复的项目" 文件夹中。  <br/> |
-|**更新** <br/> |更改了邮件或其属性。  <br/> |
+|**Update** <br/> |更改了邮件或其属性。  <br/> |
 |**UpdateCalendarDelegation** <br/> |向邮箱分配了日历委派。 日历委派向同一组织中的其他人授予对邮箱所有者日历的管理权限。  <br/> |
 |**UpdateFolderPermissions** <br/> |更改了文件夹权限。 文件夹权限控制组织中的哪些用户可以访问邮箱中的文件夹和位于这些文件夹中的邮件。  <br/> |
 |**UpdateInboxRules** <br/> |添加、删除或更改了收件箱规则。 "收件箱" 规则用于根据指定的条件处理用户收件箱中的邮件, 并在满足规则条件时采取操作, 例如将邮件移动到指定文件夹或删除邮件。  <br/> |
@@ -266,12 +266,12 @@ Get-MailboxAuditBypassAssociation -Identity <username> | FL AuditByPassEnabled
 
 ## <a name="mailbox-auditing-actions"></a>邮箱审核操作
   
-下表汇总了针对每个用户登录类型进行审核的操作。 在表中, 星号 ( **\*** ) 表示默认情况下记录操作。 "**否**" 表示无法为该登录类型记录操作。 请注意，分配有对用户邮箱的“完全访问”权限的管理员被视为委派用户。 
+下表汇总了针对每个用户登录类型进行审核的操作。 在表中, 星号 ( **\*** ) 表示默认情况下记录操作。 "**否**" 表示无法为该登录类型记录操作。 请注意，分配有对用户邮箱的"完全访问"权限的管理员被视为委派用户。 
   
-|**操作**|**说明**|**Admin**|**委派用户**|**Owner**|
+|**操作**|**说明**|**管理员**|**委派用户**|**所有者**|
 |:-----|:-----|:-----|:-----|:-----|
-|**Copy** <br/> |已将某个邮件复制到另一个文件夹。  <br/> |是  <br/> |否  <br/> |否  <br/> |
-|**Create** <br/> |在邮箱的日历、联系人、备注或任务文件夹中创建项目；例如，创建新的会议请求。 请注意, 不会审核创建、发送或接收邮件。 此外, 还不会审核创建邮箱文件夹的情况。  <br/> |是\*  <br/> |是\*  <br/> |是  <br/> |
+|**复制** <br/> |已将某个邮件复制到另一个文件夹。  <br/> |是  <br/> |否  <br/> |否  <br/> |
+|**创建** <br/> |在邮箱的日历、联系人、备注或任务文件夹中创建项目；例如，创建新的会议请求。 请注意, 不会审核创建、发送或接收邮件。 此外, 还不会审核创建邮箱文件夹的情况。  <br/> |是\*  <br/> |是\*  <br/> |是  <br/> |
 |**FolderBind**\** <br/> |已访问某个邮箱文件夹。 当管理员或委派打开邮箱时, 也会记录此操作。  <br/> |是  <br/> |是  <br/> |否  <br/> |
 |**HardDelete** <br/> |已将某个邮件从"已恢复邮件"文件夹中清除。  <br/> |是\*  <br/> |是\*  <br/> |是\*  <br/> |
 |**mailboxlogin 该值** <br/> |用户已登录到其邮箱。  <br/> |否  <br/> |否  <br/> |是  <br/> |
@@ -289,7 +289,7 @@ Get-MailboxAuditBypassAssociation -Identity <username> | FL AuditByPassEnabled
 > [!NOTE]
 > <sup>\*</sup>默认情况下, 在为登录类型启用默认邮箱审核时进行审核。 <br/><br/>  <sup>\*\*</sup>合并由代理人执行的文件夹绑定操作的审核记录。 在24小时的时间范围内为单个文件夹访问生成一个审核记录。 <br/><br/> Exchange Online 中已弃用 MessageBind 操作, 并且不再可将其添加到管理登录类型的邮箱操作列表中。 <sup> \* \* \* </sup> 
 
-## <a name="more-information"></a>更多信息
+## <a name="more-information"></a>详细信息
 
 - 默认情况下, 邮箱审核日志记录将保留90天, 然后被删除。 您可以使用 Exchange Online PowerShell 中的 "**设置邮箱-AuditLogAgeLimit** " 命令更改审核日志记录的期限。 请注意, 为邮箱审核记录增加默认期限限制不会影响 Microsoft 365 审核日志中邮箱审核日志记录的90天期限限制。 例如, 如果将邮箱审核日志记录的期限增加到365天, 则在相应事件发生后的 Microsoft 365 审核日志中将仅在90天内搜索邮箱审核记录。 在这种情况下, 您必须在用户的邮箱审核日志中搜索超过90天的记录。 有关搜索邮箱审核日志的详细信息, 请参阅[search-mailboxauditlog](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-audit/search-mailboxauditlog)。
 

@@ -18,11 +18,11 @@ ms.custom:
 ms.assetid: c9f837af-8d71-4df1-a285-dedb1c5618b3
 description: 摘要：为具有各种信息保护级别的 SharePoint Online 团队网站应用保留标签和数据丢失防护 (DLP) 策略。
 ms.openlocfilehash: 81173e96ce6e67ee3b513abce4424686abe79e02
-ms.sourcegitcommit: 19d27ff836ee7fa1f8a4e761e04d928f13f4bfd8
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/09/2019
-ms.locfileid: "31745254"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32261646"
 ---
 # <a name="protect-sharepoint-online-files-with-retention-labels-and-dlp"></a>使用保留标签和 DLP 保护 SharePoint Online 文件
 
@@ -223,7 +223,7 @@ ms.locfileid: "31745254"
 
 [保护 SharePoint Online 网站和文件](secure-sharepoint-online-sites-and-files.md)
   
-[Microsoft 针对政治宣传活动、非营利组织和其他敏捷型组织的安全指南](microsoft-security-guidance-for-political-campaigns-nonprofits-and-other-agile-o.md)
+[Microsoft 针对政治宣传活动、非营利组织和其他敏捷性组织的安全指南](microsoft-security-guidance-for-political-campaigns-nonprofits-and-other-agile-o.md)
   
 [云应用和混合解决方案](https://docs.microsoft.com/office365/enterprise/cloud-adoption-and-hybrid-solutions)
 

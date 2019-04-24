@@ -11,11 +11,11 @@ ms.collection: M365-security-compliance
 localization_priority: Normal
 description: 本主题介绍当数据丢失防护 (DLP) 策略检测到欧盟护照号敏感信息类型时, 应查找什么内容。 此敏感信息类型为每个国家/地区定义不同的模式、关键字和其他证据。
 ms.openlocfilehash: 3ab92e87607f41cffa8c15f1179a4eef5369cb29
-ms.sourcegitcommit: ed822a776d3419853453583e882f3c61ca26d4b2
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2019
-ms.locfileid: "30410927"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32256820"
 ---
 # <a name="eu-passport-number"></a>EU 护照号码
 
@@ -23,7 +23,7 @@ ms.locfileid: "30410927"
   
 ## <a name="austria"></a>奥地利
 
-### <a name="format"></a>格式
+### <a name="format"></a>Format
 
 一个字母后跟一个可选空格和七个数字
   
@@ -68,7 +68,7 @@ ms.locfileid: "30410927"
    
 ## <a name="belgium"></a>比利时
 
-### <a name="format"></a>格式
+### <a name="format"></a>Format
 
 两个字母后跟六个数字, 不含空格或分隔符
   
@@ -107,7 +107,7 @@ ms.locfileid: "30410927"
    
 ## <a name="bulgaria"></a>保加利亚语
 
-### <a name="format"></a>格式
+### <a name="format"></a>Format
 
 9个数字, 不带空格和分隔符
   
@@ -146,7 +146,7 @@ ms.locfileid: "30410927"
    
 ## <a name="croatia"></a>克罗地亚
 
-### <a name="format"></a>格式
+### <a name="format"></a>Format
 
 9个数字, 不带空格和分隔符
   
@@ -185,7 +185,7 @@ ms.locfileid: "30410927"
    
 ## <a name="cyprus"></a>塞浦路斯
 
-### <a name="format"></a>格式
+### <a name="format"></a>Format
 
 一个字母后跟6-8 个数字, 不含空格或分隔符
   
@@ -224,7 +224,7 @@ ms.locfileid: "30410927"
    
 ## <a name="czech-republic"></a>捷克共和国
 
-### <a name="format"></a>格式
+### <a name="format"></a>Format
 
 8位数, 不含空格或分隔符
   
@@ -263,7 +263,7 @@ ms.locfileid: "30410927"
    
 ## <a name="denmark"></a>丹麦
 
-### <a name="format"></a>格式
+### <a name="format"></a>Format
 
 9个数字, 不带空格和分隔符
   
@@ -302,7 +302,7 @@ ms.locfileid: "30410927"
    
 ## <a name="estonia"></a>爱沙尼亚
 
-### <a name="format"></a>格式
+### <a name="format"></a>Format
 
 一个字母后跟七个数字, 不含空格或分隔符
   
@@ -353,7 +353,7 @@ ms.locfileid: "30410927"
   
 ## <a name="greece"></a>希腊
 
-### <a name="format"></a>格式
+### <a name="format"></a>Format
 
 两个字母后跟七个数字, 不含空格或分隔符
   
@@ -392,7 +392,7 @@ ms.locfileid: "30410927"
    
 ## <a name="hungary"></a>匈牙利
 
-### <a name="format"></a>格式
+### <a name="format"></a>Format
 
 两个字母后跟6个或7个数字, 不含空格或分隔符
   
@@ -429,9 +429,9 @@ ms.locfileid: "30410927"
 |:-----|
 |passport number  <br/> 匈牙利语护照号码  <br/> 护照号  <br/> útlevél száma  <br/> |
    
-## <a name="ireland"></a>Ireland
+## <a name="ireland"></a>爱尔兰
 
-### <a name="format"></a>格式
+### <a name="format"></a>Format
 
 两个字母或数字后跟七个数字, 不含空格或分隔符
   
@@ -474,7 +474,7 @@ ms.locfileid: "30410927"
    
 ## <a name="italy"></a>意大利
 
-### <a name="format"></a>格式
+### <a name="format"></a>Format
 
 两个字母或数字后跟七个数字, 不含空格或分隔符
   
@@ -517,7 +517,7 @@ ms.locfileid: "30410927"
    
 ## <a name="latvia"></a>拉脱维亚
 
-### <a name="format"></a>格式
+### <a name="format"></a>Format
 
 两个字母或数字后跟七个数字, 不含空格或分隔符
   
@@ -560,7 +560,7 @@ ms.locfileid: "30410927"
    
 ## <a name="lithuania"></a>立陶宛
 
-### <a name="format"></a>格式
+### <a name="format"></a>Format
 
 八个数字或字母不带空格或分隔符
   
@@ -599,7 +599,7 @@ ms.locfileid: "30410927"
    
 ## <a name="luxemburg"></a>Luxemburg
 
-### <a name="format"></a>格式
+### <a name="format"></a>Format
 
 八个数字或字母不带空格或分隔符
   
@@ -636,9 +636,9 @@ ms.locfileid: "30410927"
 |:-----|
 |passport number  <br/> 拉脱维亚语护照号码  <br/> 护照号  <br/> passnummer  <br/> |
    
-## <a name="malta"></a>Malta（马耳他）
+## <a name="malta"></a>马耳他
 
-### <a name="format"></a>格式
+### <a name="format"></a>Format
 
 七位数字, 不含空格或分隔符
   
@@ -677,7 +677,7 @@ ms.locfileid: "30410927"
    
 ## <a name="netherlands"></a>荷兰
 
-### <a name="format"></a>格式
+### <a name="format"></a>Format
 
 九个字母或数字, 不带空格或分隔符
   
@@ -720,7 +720,7 @@ ms.locfileid: "30410927"
   
 ## <a name="portugal"></a>葡萄牙
 
-### <a name="format"></a>格式
+### <a name="format"></a>Format
 
 一个字母后跟六个数字, 不含空格或分隔符
   
@@ -763,7 +763,7 @@ ms.locfileid: "30410927"
    
 ## <a name="romania"></a>罗马尼亚
 
-### <a name="format"></a>格式
+### <a name="format"></a>Format
 
 八个或9个数字, 不含空格和分隔符
   
@@ -802,7 +802,7 @@ ms.locfileid: "30410927"
    
 ## <a name="slovakia"></a>斯洛伐克
 
-### <a name="format"></a>格式
+### <a name="format"></a>Format
 
 一个数字或字母后跟七个数字, 不含空格或分隔符
   
@@ -841,7 +841,7 @@ ms.locfileid: "30410927"
    
 ## <a name="slovenia"></a>斯洛文尼亚
 
-### <a name="format"></a>格式
+### <a name="format"></a>Format
 
 两个字母后跟七个数字, 不含空格或分隔符
   
@@ -886,7 +886,7 @@ ms.locfileid: "30410927"
    
 ## <a name="spain"></a>西班牙
 
-### <a name="format"></a>格式
+### <a name="format"></a>Format
 
 八个或九个字符的字母和数字的组合, 不带空格或分隔符
   

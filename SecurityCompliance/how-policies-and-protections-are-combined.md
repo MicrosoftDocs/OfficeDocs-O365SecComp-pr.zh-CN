@@ -13,11 +13,11 @@ localization_priority: Normal
 ms.collection:
 - M365-security-compliance
 ms.openlocfilehash: 73f44e747581664f075608d972ee80c8381ca7fd
-ms.sourcegitcommit: 54d58da1777eb83adb82826d1bb1adb94903c8e1
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30994822"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32256310"
 ---
 # <a name="what-policy-applies-when-multiple-protection-methods-and-detection-scans-run-on-your-email"></a>在您的电子邮件上运行多个保护方法和检测扫描时应用什么策略
 

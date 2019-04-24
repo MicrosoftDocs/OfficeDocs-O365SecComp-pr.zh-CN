@@ -14,11 +14,11 @@ search.appverid:
 ms.assetid: 50580099-3dc0-44a1-a9b6-5ca6d396316b
 description: 了解如何运行 Office 365 高级电子数据展示的快速分析模式
 ms.openlocfilehash: d8457587c9c1a1237ddc076ce803a46382a04ed8
-ms.sourcegitcommit: e7a776a04ef6ed5e287a33cfdc36aa2d72862b55
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "31000955"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32264478"
 ---
 # <a name="use-express-analysis-in-office-365-advanced-ediscovery"></a>在 Office 365 高级电子数据展示中使用快速分析
 
