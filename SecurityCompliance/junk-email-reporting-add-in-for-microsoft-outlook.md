@@ -13,11 +13,11 @@ ms.collection:
 - M365-security-compliance
 description: 通过 Microsoft Outlook 的垃圾邮件报告外接程序，Exchange Online 和 Exchange Online Protection 用户可轻松将垃圾邮件报告给 Microsoft 进行分析，以帮助减少服务以后筛选的垃圾邮件数量和影响。该报告外接程序与 Microsoft Outlook 2013、Outlook 2010 或适用于 Windows 7、Windows 8 或 Windows 10 的 Outlook 2007 兼容，具有下列优点：
 ms.openlocfilehash: fd8db743daff164d18b4067004fcb23b48393d66
-ms.sourcegitcommit: 0f93b37c39d807dec91f118aa671a3430c47a9ac
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/20/2019
-ms.locfileid: "30693341"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32253900"
 ---
 # <a name="junk-email-reporting-add-in-for-microsoft-outlook"></a>Microsoft Outlook 垃圾电子邮件举报外接程序
 

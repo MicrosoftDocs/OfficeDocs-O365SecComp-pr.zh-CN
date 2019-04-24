@@ -13,11 +13,11 @@ ms.collection:
 - M365-security-compliance
 description: 通过 Office 365 邮件加密，电子邮件用户可将加密邮件发送给其组织以内或以外的人。 作为管理员, 您可以通过创建邮件流规则 (也称为传输规则) 来设置用于加密的条件的邮件流规则, 从而启用 Office 365 邮件加密。
 ms.openlocfilehash: e15a433f7f9dacdec870faff11a43e4699bef822
-ms.sourcegitcommit: 0f93b37c39d807dec91f118aa671a3430c47a9ac
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/20/2019
-ms.locfileid: "30693151"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32256680"
 ---
 # <a name="enable-message-encryption-and-decryption-in-office-365"></a>在 Office 365 中启用邮件加密和解密
 

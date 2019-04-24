@@ -11,11 +11,11 @@ ms.assetid: ''
 description: 管理员可以了解安全 & 合规性中心的邮件流仪表板中的顶层域邮件流状态洞察力。
 ROBOTS: NOINDEX, NOFOLLOW
 ms.openlocfilehash: baa69c3373623d4742d6d957a5022012fb60f7e7
-ms.sourcegitcommit: e7a776a04ef6ed5e287a33cfdc36aa2d72862b55
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "31000665"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32267025"
 ---
 # <a name="top-domain-mail-flow-status-insight"></a>顶级域邮件流状态洞察力
 

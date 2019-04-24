@@ -20,11 +20,11 @@ ms.collection:
 - Strat_O365_IP
 description: 通过遵循这些建议的最佳实践, 最大程度地降低数据泄露或泄露帐户的潜能。
 ms.openlocfilehash: bd4b911cd5972b7d6dc9b55c17e375d326b1d571
-ms.sourcegitcommit: 2c5834235c32b2616e1813ce24eeb3419a09629f
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/02/2019
-ms.locfileid: "31026333"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32264634"
 ---
 # <a name="security-best-practices-for-office-365"></a>Office 365 的安全最佳做法
 

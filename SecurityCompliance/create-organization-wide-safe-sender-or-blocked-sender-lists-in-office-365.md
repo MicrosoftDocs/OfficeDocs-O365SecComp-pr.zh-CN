@@ -13,11 +13,11 @@ search.appverid:
 ms.assetid: 9721b46d-cbea-4121-be51-542395e6fd21
 description: 如果您想要确保收到来自特定发件人的邮件, 因为您信任这些邮件及其邮件, 您可以在 Exchange 管理中心的垃圾邮件筛选器策略中调整您的允许列表。
 ms.openlocfilehash: 765660ba8c0c9ab384368a0f0c4cd194e4ff2bc6
-ms.sourcegitcommit: 0f93b37c39d807dec91f118aa671a3430c47a9ac
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/20/2019
-ms.locfileid: "30693271"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32258170"
 ---
 # <a name="create-organization-wide-safe-sender-or-blocked-sender-lists-in-office-365"></a>在 Office 365 中创建整个组织的安全发件人或阻止发件人名单
   
@@ -67,7 +67,7 @@ ms.locfileid: "30693271"
 - 若要了解本主题中的过程可能适用的键盘快捷键，请参阅 **Exchange 管理中心内的键盘快捷键**。
     
 > [!TIP]
-> 遇到问题了吗？ 请在 Exchange 论坛中寻求帮助。 请访问[exchange Server](https://go.microsoft.com/fwlink/p/?linkId=60612)、 [exchange online](https://go.microsoft.com/fwlink/p/?linkId=267542)或[exchange online Protection](https://go.microsoft.com/fwlink/p/?linkId=285351)中的论坛。 
+> 是否有任何疑问？ 在 Exchange 论坛中寻求帮助。 请访问[exchange Server](https://go.microsoft.com/fwlink/p/?linkId=60612)、 [exchange online](https://go.microsoft.com/fwlink/p/?linkId=267542)或[exchange online Protection](https://go.microsoft.com/fwlink/p/?linkId=285351)中的论坛。 
   
 ## <a name="use-the-eac-to-create-a-mail-flow-rule-to-bypass-spam-filtering-for-a-domain-or-user"></a>使用 EAC 创建邮件流规则以绕过域或用户的垃圾邮件筛选
 

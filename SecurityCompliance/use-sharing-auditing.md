@@ -16,11 +16,11 @@ search.appverid:
 ms.assetid: 50bbf89f-7870-4c2a-ae14-42635e0cfc01
 description: '共享是 SharePoint Online 和 OneDrive for business 中的关键活动。 管理员现在可以在 Office 365 审核日志中使用共享审核来确定如何在组织中使用共享。 '
 ms.openlocfilehash: 08b511acdf74edac5b2d595d1b60bdd84d630918
-ms.sourcegitcommit: f0e3c9de0b545081a4d264f74559b941f6c71410
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "31958243"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32263376"
 ---
 # <a name="use-sharing-auditing-in-the-office-365-audit-log"></a>审核共享以查找与外部用户共享的资源
 

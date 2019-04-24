@@ -13,11 +13,11 @@ ms.collection: M365-security-compliance
 ms.topic: article
 search.appverid: met150
 ms.openlocfilehash: fa76e2edd3f66595a47fb511881f15c07b441c77
-ms.sourcegitcommit: 8213c353954b92f5c3979bee4aa049da0fd28a18
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/03/2019
-ms.locfileid: "31043243"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32252296"
 ---
 # <a name="microsoft-secure-score"></a>Microsoft 安全功能分数
 
@@ -25,11 +25,11 @@ ms.locfileid: "31043243"
 
 Microsoft 安全分数为您提供了强健的可视化效果、与其他 Microsoft 产品的集成、与其他公司的分数比较、按类别筛选, 以及更多。 使用此工具, 您可以在组织内完成安全改进操作并跟踪分数的历史记录。 分数还可以反映第三方解决方案解决建议的改进操作的时间。  
 
-## <a name="how-it-works"></a>工作原理
+## <a name="how-it-works"></a>运作方式
 
 为您提供配置推荐安全功能、执行与安全相关的任务 (如查看报告) 或使用第三方应用程序或软件解决改进操作的相关积分。 某些操作在部分完成时被评分, 例如为您的用户启用多重身份验证 (MFA)。 安全应始终平衡可用性, 而不是每个建议都适用于您的环境。
 
-## <a name="required-permissions"></a>必需的权限
+## <a name="required-permissions"></a>所需权限
 
 目前, 若要查看 Microsoft 安全分数, 您必须在 Azure Active Directory 中分配以下角色之一:
 

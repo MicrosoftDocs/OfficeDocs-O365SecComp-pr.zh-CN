@@ -13,11 +13,11 @@ search.appverid:
 ms.assetid: a9951a07-10b3-48cb-b37a-0ffaa24931ad
 description: '了解如何定义用于从 Office 365 高级电子数据展示中导出结果的选项, 包括为导出批处理指定参数的过程。 '
 ms.openlocfilehash: a2528c3eab0bc9c06a592b972a3bc602174458d3
-ms.sourcegitcommit: e7a776a04ef6ed5e287a33cfdc36aa2d72862b55
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "31000905"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32255806"
 ---
 # <a name="export-results-in-office-365-advanced-ediscovery"></a>Office 365 高级电子数据展示中的导出结果
 
@@ -179,7 +179,7 @@ ms.locfileid: "31000905"
 
 下表列出了运行导出批处理时生成的输出文件。
   
-|**文件名**|**文件类型**|**说明**|
+|**文件名**|**文件类型**|**Description**|
 |:-----|:-----|:-----|
 |导出摘要  <br/> |csv  <br/> |由电子数据展示导出工具生成的日志文件。  <br/> |
 |跟踪  <br/> |readme.txt  <br/> |由电子数据展示导出工具生成的日志文件。  <br/> |

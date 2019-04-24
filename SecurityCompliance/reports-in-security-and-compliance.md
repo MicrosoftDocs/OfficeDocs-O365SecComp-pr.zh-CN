@@ -12,11 +12,11 @@ localization_priority: Normal
 ms.assetid: 7acd33ce-1ec8-49fb-b625-43bac7b58c5a
 description: '使用安全 & 合规性中心获取 SharePoint online 和 Exchange online 组织的各种报告, 以及 Azure Active Directory 报告。  '
 ms.openlocfilehash: b902ce8e44e20fdb9e5fc22189ca07b6168be329
-ms.sourcegitcommit: f0e3c9de0b545081a4d264f74559b941f6c71410
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "31958263"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32264894"
 ---
 # <a name="reports-in-the-security--compliance-center"></a>安全与合规中心中的报告
 

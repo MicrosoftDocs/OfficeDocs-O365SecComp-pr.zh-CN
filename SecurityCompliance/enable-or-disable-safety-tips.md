@@ -15,11 +15,11 @@ ms.collection:
 - M365-security-compliance
 description: 通知 Office 365 和 EOP 管理员如何在电子邮件中启用和禁用安全提示。
 ms.openlocfilehash: 9be9c4cd7fc8e94208aac2ad8812c93a3465f58b
-ms.sourcegitcommit: 0f93b37c39d807dec91f118aa671a3430c47a9ac
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/20/2019
-ms.locfileid: "30693431"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32256936"
 ---
 # <a name="enable-or-disable-safety-tips-in-office-365"></a>启用或禁用 Office 365 中的安全提示
 
@@ -40,7 +40,7 @@ Office 365 默认为您的组织启用安全提示, 我们建议您将其保持�
 
 1. 转到 [https://protection.office.com](https://protection.office.com)。
     
-2. 使用您的工作或学校帐户登录 Office 365。
+2. 使用工作或学校帐户登录 Office 365。
     
 3. 选择 "**威胁管理** \> **策略**"。 
     
@@ -62,7 +62,7 @@ Office 365 默认为您的组织启用安全提示, 我们建议您将其保持�
     
 9. 若要启用安全提示, 请在 "**安全提示**" 下选中 "**打开**" 复选框。 若要禁用安全提示, 请清除 "**打开**" 复选框。 
     
-10. 选择“保存”****。
+10. 选择“**保存**”。
     
 ## <a name="to-enable-or-disable-safety-tips-by-using-powershell"></a>使用 PowerShell 启用或禁用安全提示的具体方法
 <a name="pshellsafetytip"> </a>

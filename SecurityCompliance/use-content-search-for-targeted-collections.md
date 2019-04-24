@@ -13,11 +13,11 @@ search.appverid: MOE150
 ms.assetid: e3cbc79c-5e97-43d3-8371-9fbc398cd92e
 description: 在安全 & 合规中心中使用内容搜索来执行目标集合。 目标集合意味着您确信项目响应的是事例或特权项目位于特定的邮箱或站点文件夹中。 使用本文中的脚本获取要搜索的特定邮箱或网站文件夹的文件夹 ID 或路径。
 ms.openlocfilehash: 3d9a82926a08b3f7f1f245146e70d79617e7a413
-ms.sourcegitcommit: 6c9340e4eb221bf81472ff3f1ae25ae21aaf5297
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "31813993"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32264000"
 ---
 # <a name="use-content-search-in-office-365-for-targeted-collections"></a>将 Office 365 中的内容搜索用于目标集合
 
@@ -229,7 +229,7 @@ Office 365 安全&amp;合规中心中的内容搜索功能不会在 UI 中直接
     
     - 单击 "**选择要搜索的特定网站**" 搜索, 然后添加在步骤1中运行脚本时指定的相同网站 URL。 
     
-6. 单击“**下一步**”。
+6. 单击“下一步”。****
     
 7. 在 "**您希望我们在什么情况下查找**" 页上的 "关键字" 框`folderid:<folderid>`中`documentlink:<path>` , 粘贴步骤1中的脚本返回的 or 值。 
     
@@ -267,7 +267,7 @@ Office 365 安全&amp;合规中心中的内容搜索功能不会在 UI 中直接
   documentlink:<path> AND (lastmodifiedtime>=01/01/2017 AND lastmodifiedtime<=01/21/2017)
   ```
   
-## <a name="more-information"></a>更多信息
+## <a name="more-information"></a>详细信息
 
 在使用本文中的脚本执行目标集合时, 请记住以下事项。
   

@@ -14,11 +14,11 @@ ms.collection:
 - M365-security-compliance
 description: 了解如何配置基于域的邮件身份验证、报告和一致性 (DMARC), 以验证从 Office 365 组织发送的邮件。
 ms.openlocfilehash: de92825726225549fda1b0dc57d737763f273043
-ms.sourcegitcommit: 0f93b37c39d807dec91f118aa671a3430c47a9ac
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/20/2019
-ms.locfileid: "30693401"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32263724"
 ---
 # <a name="use-dmarc-to-validate-email-in-office-365"></a>使用 DMARC 验证 Office 365 中的电子邮件
 

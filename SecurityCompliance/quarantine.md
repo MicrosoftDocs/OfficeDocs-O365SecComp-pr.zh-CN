@@ -15,11 +15,11 @@ ms.collection:
 - M365-security-compliance
 description: 了解 exchange online 和 exchange online Protection 的托管隔离。
 ms.openlocfilehash: 7a92704c7a3cf978ed028b094cac9f6c9ed4b47b
-ms.sourcegitcommit: 0f93b37c39d807dec91f118aa671a3430c47a9ac
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/20/2019
-ms.locfileid: "30692951"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32265664"
 ---
 # <a name="quarantine"></a>隔离
 

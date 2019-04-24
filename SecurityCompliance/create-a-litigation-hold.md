@@ -11,11 +11,11 @@ localization_priority: Normal
 search.appverid: MET150
 ms.assetid: 39db1659-0b12-4243-a21c-2614512dcb44
 ms.openlocfilehash: e4cb614167f89cb6e99d96aa94027ba90d86543e
-ms.sourcegitcommit: 1658be51e2c21ed23bc4467a98af74300a45b975
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/26/2019
-ms.locfileid: "30862404"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32258362"
 ---
 # <a name="create-a-litigation-hold"></a>创建诉讼保留
 
@@ -31,7 +31,7 @@ ms.locfileid: "30862404"
     
 - 用户主和存档邮箱中的项目将保留
     
-## <a name="before-you-begin"></a>开始之前
+## <a name="before-you-begin"></a>准备工作
 
 - 若要在诉讼保留中放置 Exchange online 邮箱, 必须为其分配 exchange online 计划2许可证。 如果向某个邮箱分配了 Exchange Online 计划1许可证, 则必须为其分配一个单独的 Exchange online 存档许可证以将其置于保留状态。
     

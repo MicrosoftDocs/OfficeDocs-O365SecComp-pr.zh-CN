@@ -15,11 +15,11 @@ ms.collection:
 - M365-security-compliance
 description: Microsoft 制定了各种策略和过程, 并采用了几个行业最佳实践来帮助我们的用户避免滥用、不受欢迎或恶意的电子邮件。
 ms.openlocfilehash: a074bb1fbe6fedb9054b98d3723511607fed7304
-ms.sourcegitcommit: 0f93b37c39d807dec91f118aa671a3430c47a9ac
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/20/2019
-ms.locfileid: "30692171"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32261530"
 ---
 # <a name="reference-policies-practices-and-guidelines"></a>参考：策略、实践和指南
   

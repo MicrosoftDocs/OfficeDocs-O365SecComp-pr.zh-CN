@@ -15,13 +15,13 @@ ms.collection:
 - M365-security-compliance
 description: Office 365 安全&amp;合规中心中的数据丢失防护 (DLP) 包括可供您在 DLP 策略中使用的80敏感信息类型。 本主题列出了所有这些敏感信息类型，并显示 DLP 策略在检测到每种类型时查找的内容。
 ms.openlocfilehash: d161435c75149183289cfbfd6abe79d55e371e31
-ms.sourcegitcommit: b688d67935edb036658bb5aa1671328498d5ddd3
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "30639189"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32266868"
 ---
-# <a name="what-the-sensitive-information-types-look-for"></a>使用敏感信息类型查找什么
+# <a name="what-the-sensitive-information-types-look-for"></a>敏感信息类型查找的内容
 
 Office 365 安全&amp;合规中心中的数据丢失防护 (DLP) 包括许多可供您在 DLP 策略中使用的敏感信息类型。 本主题列出了所有这些敏感信息类型，并显示 DLP 策略在检测到每种类型时查找的内容。 敏感信息类型通过正则表达式或函数可以识别的模式定义。 此外，关键字和校验和等确凿的证据可用于识别敏感信息类型。 可信度和相似度也会在评估过程中使用。
   
@@ -1220,7 +1220,7 @@ OR
 - Legal entities 
 - Registration Status 
 - 商业版 
-- Company
+- 公司
 - CNPJ 
 - Cadastro Nacional da Pessoa Jurídica 
 - Cadastro Geral de Contribuintes 

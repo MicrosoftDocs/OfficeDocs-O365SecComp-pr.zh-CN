@@ -17,11 +17,11 @@ search.appverid:
 ms.assetid: 28c86a1c-e4dd-4aad-a2a6-c768a21cb352
 description: 'Microsoft cybersecurity 团队提供的用于实施安全功能以保护您的 Office 365 环境的主要建议。 '
 ms.openlocfilehash: ba74827c34a869ee11553f02d9085b6f015b2d9d
-ms.sourcegitcommit: 54d58da1777eb83adb82826d1bb1adb94903c8e1
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30955165"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32260920"
 ---
 # <a name="office-365-security-roadmap---top-priorities-for-the-first-30-days-90-days-and-beyond"></a>Office 365 安全路线图-前30天、90天及以上的首要优先级
 

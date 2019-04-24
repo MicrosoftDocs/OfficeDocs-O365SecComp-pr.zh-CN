@@ -1,5 +1,5 @@
 ---
-title: DLP 在安全 & 合规中心和 Exchange 管理中心之间如何工作
+title: DLP 在安全与合规中心和 Exchange 管理中心中之间的工作原理
 ms.author: deniseb
 author: denisebmsft
 manager: laurawi
@@ -16,13 +16,13 @@ search.appverid:
 ms.assetid: a7e4342a-a0a1-4b43-b166-3d7eecf5d2fd
 description: 了解 Security & 合规性中心中的 dlp 如何在 Exchange 管理中心中与 dlp 和邮件流规则 (传输规则) 结合使用。
 ms.openlocfilehash: 66dceb447e02eb01810997c23644c76f68795844
-ms.sourcegitcommit: 8657e003ab1ff49113f222d1ee8400eff174cb54
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/16/2019
-ms.locfileid: "30638999"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32254922"
 ---
-# <a name="how-dlp-works-between-the-security--compliance-center-and-exchange-admin-center"></a>DLP 在安全 & 合规中心和 Exchange 管理中心之间如何工作
+# <a name="how-dlp-works-between-the-security--compliance-center-and-exchange-admin-center"></a>DLP 在安全与合规中心和 Exchange 管理中心中之间的工作原理
 
 在 Office 365 中, 可以在两个不同的管理中心中创建数据丢失防护 (DLP) 策略:
   

@@ -16,11 +16,11 @@ search.appverid:
 - MET150
 description: '开始使用 DLP 策略的最简单、最常见方法是，使用包含在 Office 365 中的模板之一。 '
 ms.openlocfilehash: 7ebb2a77e8f1f9fa47882fcbb758b34cd40daee9
-ms.sourcegitcommit: 8657e003ab1ff49113f222d1ee8400eff174cb54
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/16/2019
-ms.locfileid: "30639099"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32258494"
 ---
 # <a name="create-a-dlp-policy-from-a-template"></a>通过模板创建 DLP 策略
 

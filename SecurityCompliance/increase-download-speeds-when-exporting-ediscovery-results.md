@@ -13,11 +13,11 @@ search.appverid: MOE150
 ms.assetid: c4c8f689-9d52-4e80-ae4b-1411ee9efc43
 description: 了解如何配置 Windows 注册表, 以便在从 Security & 合规性中心和 Office 365 中的高级电子数据展示中下载搜索结果和搜索数据时增加数据吞吐量。
 ms.openlocfilehash: 10eff929d6b668d5e2bc22d8ee7f223da4943326
-ms.sourcegitcommit: f0e3c9de0b545081a4d264f74559b941f6c71410
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "31958618"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32256510"
 ---
 # <a name="increase-the-download-speed-when-exporting-ediscovery-search-results-from-office-365"></a>提高导出 Office 365 中的电子数据展示搜索结果时的下载速度
 

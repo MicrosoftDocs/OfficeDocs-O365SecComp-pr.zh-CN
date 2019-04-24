@@ -15,15 +15,15 @@ ms.collection:
 - M365-security-compliance
 description: 了解在何处可以查看有关在 SharePoint、OneDrive 或团队中检测到的恶意文件的信息, 以及如何对这些文件执行操作。
 ms.openlocfilehash: f5304f78ddec884748dd7d1090e2a7895044d045
-ms.sourcegitcommit: 1c73c2f83703af0a30a5b0633db00d8e0e6b39b5
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/25/2019
-ms.locfileid: "30241894"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32259830"
 ---
 # <a name="view-information-about-malicious-files-detected-in-sharepoint-onedrive-or-microsoft-teams"></a>查看有关在 SharePoint、OneDrive 或 Microsoft 团队中检测到的恶意文件的信息
 
-[适用于 SharePoint、OneDrive 和 Microsoft 团队的 Office 365 ATP](atp-for-spo-odb-and-teams.md)可保护您的组织免受文档库和工作组网站中的恶意文件的攻击。检测到恶意文件时, 将阻止该文件, 以便在组织的安全团队执行进一步操作之前, 任何人都无法打开、复制、移动或共享该文件。阅读本文, 了解如何查看有关检测到的文件以及要执行的操作的信息。 
+[适用于 SharePoint、OneDrive 和 Microsoft 团队的 Office 365 ATP](atp-for-spo-odb-and-teams.md)可保护您的组织免受文档库和工作组网站中的恶意文件的攻击。 检测到恶意文件时, 将阻止该文件, 以便在组织的安全团队执行进一步操作之前, 任何人都无法打开、复制、移动或共享该文件。 阅读本文, 了解如何查看有关检测到的文件以及要执行的操作的信息。 
 
 若要执行本文中所述的任务, 您必须具有[针对 Office 365 安全&amp;合规中心](permissions-in-the-security-and-compliance-center.md)的必要权限。 
   
@@ -57,7 +57,7 @@ ms.locfileid: "30241894"
     
   - 选择 "**下载文件**" 以进一步调查文件。 
     
-  - 选择 "**删除**" 以从隔离项目列表中删除该文件。如果选择此选项, 则还必须在 SharePoint Online、OneDrive for business 或 Microsoft 团队中从其各自的库中删除文件。此选项不会取消阻止打开或共享文件。 
+  - 选择 "**删除**" 以从隔离项目列表中删除该文件。 如果选择此选项, 则还必须在 SharePoint Online、OneDrive for business 或 Microsoft 团队中从其各自的库中删除文件。 此选项不会取消阻止打开或共享文件。 
     
 5. 选择 "**关闭**" 以关闭所选项目的详细信息。 
   

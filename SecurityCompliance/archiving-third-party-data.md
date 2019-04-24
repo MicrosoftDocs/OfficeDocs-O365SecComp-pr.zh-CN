@@ -3,7 +3,7 @@ title: 在 Office 365 中存档第三方数据
 ms.author: markjjo
 author: markjjo
 manager: laurawi
-ms.date: 9/5/2017
+ms.date: ''
 ms.audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
@@ -14,12 +14,12 @@ ms.collection:
 search.appverid: MOE150
 ms.assetid: 0ce338d5-3666-4a18-86ab-c6910ff408cc
 description: 管理员可以将来自社交媒体平台、即时消息平台和文档协作平台的第三方数据导入 Office 365 组织中的邮箱。 这使您可以在 Office 365 中存档 Facebook、Twitter 和数据源中的数据。 然后, 您可以将 Office 365 合规性功能 (如合法保留、内容搜索和保留策略) 应用到第三方数据。
-ms.openlocfilehash: 06ac436b1583187e89cb7f1beb26411ba02becec
-ms.sourcegitcommit: 86ff2eba1d57b9d5288840788529e69ad9d836b6
+ms.openlocfilehash: 6e5f40328c54a6f2c97cb6cfe14a1bc5727ae087
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "31818609"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32249596"
 ---
 # <a name="archiving-third-party-data-in-office-365"></a>在 Office 365 中存档第三方数据
 
@@ -505,7 +505,7 @@ office 365 使管理员能够从社交媒体平台、即时消息平台和文档
     
     - 将第三方数据邮箱置于诉讼保留的位置。 您还可以在安全与合规中心中应用 Office 365 保留策略。 将此邮箱置于保留状态时, 将保留第三方数据项 (无限期或指定的持续时间), 并防止从邮箱中清除这些项目。 请参阅下列主题之一:
     
-      - [将邮箱置于诉讼保留](https://go.microsoft.com/fwlink/p/?LinkId=404420)
+      - [创建诉讼保留](create-a-litigation-hold.md)
     
       - [Office 365 中的保留策略概述](retention-policies.md)
     
@@ -521,7 +521,7 @@ office 365 使管理员能够从社交媒体平台、即时消息平台和文档
     
 2. 将用户邮箱置于诉讼保留或应用 Office 365 保留策略;请参阅下列主题之一: 
     
-    - [将邮箱置于诉讼保留](https://go.microsoft.com/fwlink/p/?LinkId=404420)
+    - [创建诉讼保留](create-a-litigation-hold.md)
     
     - [Office 365 中的保留策略概述](retention-policies.md)
     
@@ -561,19 +561,19 @@ office 365 使管理员能够从社交媒体平台、即时消息平台和文档
 
 若要撤销第三方数据连接器的同意, 可以使用 azure 门户中的 "**企业应用程序**" 边栏从 azure Active Directory 中删除应用程序 (通过删除相应的服务主体), 或使用[new-msolserviceprincipal](https://docs.microsoft.com/en-us/powershell/module/msonline/remove-msolserviceprincipal)在 Office 365 PowerShell 中删除。 您还可以在 Azure Active Directory PowerShell 中使用[AzureADServicePrincipal](https://docs.microsoft.com/en-us/powershell/module/azuread/remove-azureadserviceprincipal) cmdlet。
   
-## <a name="more-information"></a>更多信息
+## <a name="more-information"></a>详细信息
 
 - 如前所述，第三方数据源中的项目将作为电子邮件导入到 Exchange 邮箱。 合作伙伴连接器使用 Office 365 API 所需的架构导入项目。 下表介绍了第三方数据源中的项目作为电子邮件导入到 Exchange 邮箱之后的邮件属性。 该表还指出该邮件属性是否是强制属性。 必须填充强制属性。 如果某项缺少强制属性, 则不会将其导入 Office 365。 导入过程将返回一条错误消息，解释未导入项目的原因以及缺少了哪些属性。
     
     |**邮件属性**|**强制？**|**说明**|**示例值**|
     |:-----|:-----|:-----|:-----|
-    |**FROM** <br/> |可访问  <br/> |最初创建或发送第三方数据源中的项目的用户。 合作伙伴连接器将尝试将源项目 (例如 Twitter 句柄) 中的用户 ID 映射到所有参与者 ("from" 和 "to" 字段中的用户) 的 Office 365 用户帐户。 邮件的副本将导入到每个参与者的邮箱中。 如果无法将项目中的任何参与者映射到 office 365 用户帐户, 则会将该项目导入 office 365 中的第三方存档邮箱。  <br/> <br/> 标识为项目的发件人的参与者必须在要向其导入项目的 Office 365 组织中具有活动邮箱。 如果发件人没有活动邮箱，则会返回以下错误：<br/><br/>  `One or more messages in the Request failed to be delivered to either From or Sender email address. You will need to resend your entire Request. Error: The request failed. The remote server returned an error: (401) Unauthorized.`  | `bob@contoso.com` <br/> |
-    |**TO** <br/> |可访问  <br/> |接收项目的用户（如果适用于数据源中的项目）。  <br/> | `bob@contoso.com` <br/> |
+    |**FROM** <br/> |是  <br/> |最初创建或发送第三方数据源中的项目的用户。 合作伙伴连接器将尝试将源项目 (例如 Twitter 句柄) 中的用户 ID 映射到所有参与者 ("from" 和 "to" 字段中的用户) 的 Office 365 用户帐户。 邮件的副本将导入到每个参与者的邮箱中。 如果无法将项目中的任何参与者映射到 office 365 用户帐户, 则会将该项目导入 office 365 中的第三方存档邮箱。  <br/> <br/> 标识为项目的发件人的参与者必须在要向其导入项目的 Office 365 组织中具有活动邮箱。 如果发件人没有活动邮箱，则会返回以下错误：<br/><br/>  `One or more messages in the Request failed to be delivered to either From or Sender email address. You will need to resend your entire Request. Error: The request failed. The remote server returned an error: (401) Unauthorized.`  | `bob@contoso.com` <br/> |
+    |**TO** <br/> |是  <br/> |接收项目的用户（如果适用于数据源中的项目）。  <br/> | `bob@contoso.com` <br/> |
     |**主题** <br/> |否  <br/> |源项目中的主题。  <br/> | `"Mega deals with Contoso coming your way! #ContosoHolidayDeals"` <br/> |
-    |**结束** <br/> |可访问  <br/> |最初在客户数据源中创建或发布项目的日期；例如，发布 Twitter 消息的日期。  <br/> | `01 NOV 2015` <br/> |
+    |**结束** <br/> |是  <br/> |最初在客户数据源中创建或发布项目的日期；例如，发布 Twitter 消息的日期。  <br/> | `01 NOV 2015` <br/> |
     |**大量** <br/> |否  <br/> |消息或帖子的内容。 对于某些数据源，此属性的内容可能与****“主题”属性的内容相同。 在导入过程中，合作伙伴连接器将尝试尽可能维护内容源的完全保真度。 如果可能，源项目正文中的文件、图形或其他内容会包含在此属性中。 否则，源项目中的内容会包含在****“附件”属性中。 此属性的内容将取决于合作伙伴连接器和源平台的功能。  <br/> | `Author: bob@contoso.com` <br/>  `Date: 10 DEC 2014` <br/>  `Tweet: "Mega deals with Contoso coming your way! #ContosoHolidayDeals"` <br/>  `Date: 01 NOV 2015` <br/> |
     |**附着** <br/> |否  <br/> |如果数据源中的项 (如 Twitter 或即时消息对话中的 twitter) 具有附加的文件或包含图像, 则合作伙伴连接将首先尝试在**BODY**属性中包含附件。 如果无法这样做, 则会将其添加到 * * 附件 * * 属性中。 其他附件示例包括 Facebook 中的点赞，内容源中的元数据，以及对消息或帖子的回复。  <br/> | `image.gif` <br/> |
-    |**MESSAGECLASS** <br/> |可访问  <br/> | 这是一个多值属性，由合作伙伴连接器创建和填充。 此属性的格式为`IPM.NOTE.Source.Event`。 (此属性必须以开头`IPM.NOTE`; 这种格式类似于`IPM.NOTE.X`消息类的格式。)此属性包含以下信息:  <br/><br/>`Source` -指示第三方数据源;例如, Twitter、Facebook 或 BlackBerry。  <br/> <br/>  `Event` -指示在生成项目的第三方数据源中执行的活动类型。例如, 在 Twitter 中的 twitter 或 Facebook 中的帖子。 事件是特定于数据源的。  <br/> <br/>  此属性的一个目的是基于项目源自的数据源或基于事件类型筛选特定项目。 例如，在电子数据展示搜索中，您可以创建一个搜索查询来查找特定用户发布的所有微博。  <br/> | `IPM.NOTE.Twitter.Tweet` <br/> |
+    |**MESSAGECLASS** <br/> |是  <br/> | 这是一个多值属性，由合作伙伴连接器创建和填充。 此属性的格式为`IPM.NOTE.Source.Event`。 (此属性必须以开头`IPM.NOTE`; 这种格式类似于`IPM.NOTE.X`消息类的格式。)此属性包含以下信息:  <br/><br/>`Source`-指示第三方数据源;例如, Twitter、Facebook 或 BlackBerry。  <br/> <br/>  `Event`-指示在生成项目的第三方数据源中执行的活动类型。例如, 在 Twitter 中的 twitter 或 Facebook 中的帖子。 事件是特定于数据源的。  <br/> <br/>  此属性的一个目的是基于项目源自的数据源或基于事件类型筛选特定项目。 例如，在电子数据展示搜索中，您可以创建一个搜索查询来查找特定用户发布的所有微博。  <br/> | `IPM.NOTE.Twitter.Tweet` <br/> |
    
 - 将项目成功导入 Office 365 中的邮箱时, 会将唯一标识符作为 HTTP 响应的一部分返回给调用方。 此标识符 (称为`x-IngestionCorrelationID`) 可用于合作伙伴对项目进行端到端跟踪的后续故障排除目的。 建议合作伙伴捕获此信息，并在他们的所在端相应地记录此信息。 下面是显示此标识符的 HTTP 响应的示例：
 

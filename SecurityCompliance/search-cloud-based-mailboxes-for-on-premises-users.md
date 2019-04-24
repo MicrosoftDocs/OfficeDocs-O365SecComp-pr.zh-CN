@@ -16,11 +16,11 @@ search.appverid:
 ms.assetid: 3f7dde1a-a8ea-4366-86da-8ee6777f357c
 description: 使用安全 & 合规中心中的内容搜索工具在 Exchange 混合部署中搜索和导出本地用户的 MicrosoftTeams 聊天数据 (称为1xN 聊天)。
 ms.openlocfilehash: 0c68023fdd4e1c9e06596937247270861cdbd2b3
-ms.sourcegitcommit: e7a776a04ef6ed5e287a33cfdc36aa2d72862b55
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "31000005"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32260994"
 ---
 # <a name="searching-cloud-based-mailboxes-for-on-premises-users-in-office-365"></a>在 Office 365 中搜索本地用户的基于云的邮箱
 
@@ -36,7 +36,7 @@ ms.locfileid: "31000005"
     
  **注意:** 团队频道对话始终存储在与团队相关联的基于云的邮箱中。 这意味着您可以使用内容搜索来搜索频道对话, 而无需将其作为支持请求的文件。 有关搜索团队频道对话的详细信息, 请参阅[搜索 Microsoft 团队和 Office 365 组](content-search.md#searching-microsoft-teams-and-office-365-groups)。
   
-## <a name="how-it-works"></a>工作原理
+## <a name="how-it-works"></a>运作方式
 
 如果启用了 microsoft 团队的用户具有本地邮箱, 并且其用户帐户/标识已同步到云, Microsoft 将创建一个基于云的邮箱来存储1xN 团队聊天数据。 在将团队聊天数据存储在基于云的邮箱中之后, 将为搜索编制索引。 这样, 您就可以使用内容搜索 (和与电子数据展示事例关联的搜索) 来搜索、预览和导出本地用户的团队聊天数据。 您还可以使用** \*** Security & 合规性中心 PowerShell 中的 new-compliancesearch cmdlet 搜索本地用户的团队聊天数据。 
   

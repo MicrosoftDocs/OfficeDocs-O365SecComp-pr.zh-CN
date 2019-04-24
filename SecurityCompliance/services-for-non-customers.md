@@ -15,11 +15,11 @@ ms.collection:
 - M365-security-compliance
 description: 为了维护用户对使用电子邮件的信任，Microsoft 已出台多项帮助保护我们的用户的策略和技术。
 ms.openlocfilehash: 540610fc3d1b53692688c729b714c839bf436e24
-ms.sourcegitcommit: 0f93b37c39d807dec91f118aa671a3430c47a9ac
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/20/2019
-ms.locfileid: "30692391"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32260870"
 ---
 # <a name="services-for-non-customers-sending-mail-to-office-365"></a>非客户向 Office 365 发送邮件的服务
   

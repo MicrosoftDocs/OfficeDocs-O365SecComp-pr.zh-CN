@@ -16,11 +16,11 @@ ms.collection:
 - M365-security-compliance
 description: 定义安全附件策略以保护您的组织免受电子邮件中的恶意文件的攻击。
 ms.openlocfilehash: 47587d9e189a6fcda2cac964130d0b257b4f4166
-ms.sourcegitcommit: 1658be51e2c21ed23bc4467a98af74300a45b975
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/26/2019
-ms.locfileid: "30862414"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32266857"
 ---
 # <a name="set-up-office-365-atp-safe-attachments-policies"></a>设置 Office 365 ATP 安全附件策略
 
@@ -74,7 +74,7 @@ ms.locfileid: "30862414"
     
       - 在 "**应用**于" 部分中, 选择 **"收件人域**", 然后选择您的域。 选择 "**添加**", 然后选择 **"确定"**。
     
-6. 选择“保存”****。
+6. 选择“**保存**”。
     
 考虑为您的组织设置多个 ATP 安全附件策略。 这些策略将按其在**ATP 安全附件**页面上列出的顺序应用。 在定义或编辑策略之后, 至少需要30分钟才能使策略在整个 Microsoft 数据中心中生效。 
   

@@ -14,15 +14,15 @@ ms.collection:
 - M365-security-compliance
 description: '摘要: Office 365 的管理访问控制和数据分类概述。'
 ms.openlocfilehash: 90dd00049e7e3a9b9548530c42b1c21534cfd7fd
-ms.sourcegitcommit: 1261a37c414111f869df5791548a768d853fda60
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/30/2019
-ms.locfileid: "31004129"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32262974"
 ---
 # <a name="administrative-access-controls-in-office-365"></a>Office 365 中的管理访问控制 
 
-## <a name="introduction"></a>简介
+## <a name="introduction"></a>介绍
 microsoft 已在系统和控件中进行了大量投资, 以自动化大多数 Office 365 操作, 同时有意限制 Microsoft 对客户内容的访问。 人类控制服务, 软件运行服务。 这使 Microsoft 能够以扩展方式管理 Office 365, 并管理对客户内容 (如恶意参与者、Microsoft 工程师的 spear 和网络钓鱼等) 的内部威胁的风险。
 
 By default, Microsoft engineers have zero standing administrative privileges and zero standing access to customer content in Office 365. microsoft 工程师在有限的时间段中, 可以对客户的内容进行有限、经过审核和安全的访问, 但仅当服务操作必要时, 并且仅当由 Microsoft 高级管理人员批准时 (对于那些授权为客户密码箱功能 (客户)。

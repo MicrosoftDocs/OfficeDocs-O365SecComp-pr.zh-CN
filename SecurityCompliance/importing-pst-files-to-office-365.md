@@ -16,12 +16,12 @@ ms.collection:
 search.appverid: MET150
 ms.assetid: ba688e0a-0fcb-4bd7-8e57-2b669564ea84
 description: '对于管理员: 了解如何使用安全 & 合规中心中的导入服务将电子邮件数据 (PST 文件) 批量导入 Exchange Online 中的用户邮箱。 本主题提供 faq 并说明 PST 导入过程的工作原理。'
-ms.openlocfilehash: 3a7dba3db608eb45347609acef396faf73da483f
-ms.sourcegitcommit: e7a776a04ef6ed5e287a33cfdc36aa2d72862b55
+ms.openlocfilehash: afe19076f2b0cd8dd5dfe3a596d80a7b65e8a891
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "31000235"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32254886"
 ---
 # <a name="overview-of-importing-your-organization-pst-files-to-office-365"></a>Overview of importing your organization PST files to Office 365
 
@@ -95,6 +95,8 @@ ms.locfileid: "31000235"
   - 使用[电子数据展示事例](ediscovery-cases.md)管理您的组织的法律调查 
     
   - 使用 Security & 合规中心中的[保留策略](retention-policies.md)来控制邮箱内容保留的时间长度, 然后在保留期过期后删除内容。 
+
+  - 使用[监督策略](supervision-policies.md)来检查邮件, 以确保它们符合邮件标准并添加分类类型。
     
 - 将数据导入到 Office 365 有助于防止数据丢失。 导入到 Office 365 的电子邮件数据继承了 Exchange Online 的高可用性功能。
     
@@ -131,7 +133,7 @@ ms.locfileid: "31000235"
   
 - 您必须在 Exchange Online 中向您分配 "邮件收件人" 角色。 By default, this role is assigned to the Organization Management and Recipient Management roles groups.
     
-    或者
+    或
     
 - 您必须是 Office 365 组织中的全局管理员。
     
@@ -200,7 +202,7 @@ Yes, this capability is now available.
   
 - 您必须在 Exchange Online 中向您分配 "邮件收件人" 角色。 By default, this role is assigned to the Organization Management and Recipient Management roles groups.
     
-    或者
+    或
     
 - 您必须是 Office 365 组织中的全局管理员。
     

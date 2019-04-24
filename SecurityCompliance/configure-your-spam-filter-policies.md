@@ -14,16 +14,16 @@ ms.assetid: 316544cb-db1d-4c25-a5b9-c73bbcf53047
 ms.collection:
 - M365-security-compliance
 description: 基本垃圾邮件筛选器设置包括选择要对被标识为垃圾邮件的邮件执行的操作, 并选择是筛选以特定语言编写的邮件还是从特定的国家或地区发送的邮件。
-ms.openlocfilehash: 9cfccc3602758de2426940cea1c6abd91871d7c2
-ms.sourcegitcommit: 0f93b37c39d807dec91f118aa671a3430c47a9ac
+ms.openlocfilehash: 5773256e18e1910405bcc04a1869f631734447a4
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/20/2019
-ms.locfileid: "30693471"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32258810"
 ---
 # <a name="configure-your-spam-filter-policies"></a>配置垃圾邮件筛选器策略
   
-基本垃圾邮件筛选器设置包括选择要对被标识为垃圾邮件的邮件执行的操作。 垃圾邮件筛选器策略设置仅适用于入站邮件。 您可以编辑默认垃圾邮件筛选器策略, 以配置公司范围的垃圾邮件筛选器设置并创建自定义垃圾邮件筛选器策略, 然后将其应用到组织中的特定用户、组或域。 自定义策略的优先级始终高于默认策略。 您可以通过更改每个自定义策略的优先级来更改自定义策略的运行顺序;但是, 如果有多个策略满足条件集, 将仅应用最高优先级策略。 
+基本垃圾邮件筛选器设置包括选择要对被标识为垃圾邮件的邮件执行的操作。 垃圾邮件筛选器策略设置仅适用于入站邮件。 您可以编辑默认垃圾邮件筛选器策略, 以配置公司范围的垃圾邮件筛选器设置并创建自定义垃圾邮件筛选器策略, 然后将其应用到组织中的特定用户、组或域。 自定义策略的优先级始终高于默认策略。 您可以通过更改每个自定义策略的优先级来更改自定义策略的运行顺序;但是, 如果有多个策略满足条件集, 将仅应用最高优先级策略。
   
 > [!IMPORTANT]
 > 对于 Exchange Online Protection (EOP) 独立客户: 默认情况下, EOP 垃圾邮件筛选器将检测到的垃圾邮件发送到每个收件人的 "垃圾邮件" 文件夹。 但是, 为了确保 "**将邮件移动到垃圾邮件文件夹**" 操作适用于本地邮箱, 您必须在您的本地服务器上配置 Exchange 邮件流规则 (也称为传输规则), 以检测通过添加的垃圾邮件头。EOP. 有关详细信息，请参阅[确保垃圾邮件已路由到每个用户的"垃圾邮件"文件夹](ensure-that-spam-is-routed-to-each-user-s-junk-email-folder.md)。 

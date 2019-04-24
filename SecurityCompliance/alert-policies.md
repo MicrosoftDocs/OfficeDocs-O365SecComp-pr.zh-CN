@@ -15,12 +15,12 @@ search.appverid:
 - MOE150
 ms.assetid: 8927b8b9-c5bc-45a8-a9f9-96c732e58264
 description: 在 Office 365 和 Microsoft 365 中的安全与合规中心内创建通知策略, 以监视潜在威胁、数据丢失和权限问题。 然后, 您可以查看和管理用户执行符合通知策略条件的活动时生成的警报。
-ms.openlocfilehash: 4770738dd94aaec3fcc776ff7601d99d8d806ace
-ms.sourcegitcommit: 6c9340e4eb221bf81472ff3f1ae25ae21aaf5297
+ms.openlocfilehash: e88c3657a03b3cb0ca27b9ae7489e37e986e8199
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "31814123"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32243047"
 ---
 # <a name="alert-policies-in-the-security-and-compliance-center"></a>安全与合规中心中的警报策略
 
@@ -100,7 +100,7 @@ Office 365 提供了内置的通知策略, 可帮助确定 Exchange 管理员权
 
 该表还指明了每个 office 365 企业版和 office 365 的美国政府计划。 请注意, 如果您的组织除了 E1/G1 或 E3/G3 订阅之外还有相应的附加订阅, 则可以使用某些默认的通知策略。 
   
-|**默认通知策略**|**说明**|**类别**|**Office 365 企业版订阅**|
+|**默认通知策略**|**说明**|**Category**|**Office 365 企业版订阅**|
 |:-----|:-----|:-----|:-----|
 |**检测到潜在的恶意 URL 单击** <br/> |当组织中的用户受[Office 365 ATP 安全链接](https://docs.microsoft.com/office365/securitycompliance/atp-safe-links)的保护时, 将生成警报。单击恶意链接。 当通过 office 365 atp 标识 URL 判定更改时, 或者用户替代 office 365 atp 安全链接页面 (基于组织的 office 365 atp 安全链接策略) 时, 将触发此事件。 此通知策略具有**高**严重性设置。 对于 office 365 ATP P2, E5, G5 客户, 此警报会自动触发[Office 365 自动调查和响应](https://go.microsoft.com/fwlink/?linkid=2084737)。  有关触发此警报的事件的详细信息, 请参阅[设置 Office 365 ATP 安全链接策略](https://docs.microsoft.com/office365/securitycompliance/set-up-atp-safe-links-policies)。  <br/> |威胁管理 <br/> |E5/G5 或 Office 365 ATP P2 附加订阅  <br/> |
 |**创建转发/重定向规则** <br/> |当组织中的某个人为其邮箱创建了将邮件转发或重定向到其他电子邮件帐户的收件箱规则时, 将生成警报。 此策略仅跟踪使用 web 上的 Outlook (以前称为 Outlook web App) 或 Exchange Online PowerShell 创建的收件箱规则。 此策略的严重性设置**较低**。 有关在 outlook 网页版中使用收件箱规则转发和重定向电子邮件的详细信息, 请参阅在[web 上使用 outlook 中的规则将邮件自动转发到其他帐户](https://support.office.com/article/1433e3a0-7fb0-4999-b536-50e05cb67fed)。  <br/> |威胁管理 <br/> |E1/G1、E3/G3 或 E5/G5  <br/> |
@@ -113,7 +113,7 @@ Office 365 提供了内置的通知策略, 可帮助确定 Exchange 管理员权
 |**传递后检测到恶意软件市场** <br/> |当包含恶意软件的大量邮件传递到组织中的邮箱时, 将生成警报。 如果发生此事件, Office 365 将从 Exchange Online 邮箱中删除受感染的邮件。 此策略具有**高**严重性设置。  <br/> |威胁管理<br/> |E5/G5 或 Office 365 ATP P2 附加订阅  <br/> |
 |**检测到恶意软件市场活动并阻止** <br/> |当有人试图向组织中的用户发送包含特定类型的恶意软件的大量电子邮件时生成警报。 如果发生此事件, 则受感染的邮件将被 Office 365 阻止, 且不会传递到邮箱。 此策略的严重性设置**较低**。  <br/> |威胁管理<br/> |E5/G5 或 Office 365 ATP P2 附加订阅  <br/> |
 |**SharePoint 和 OneDrive 中检测到的恶意软件市场** <br/> |当组织中的 SharePoint 网站或 OneDrive 帐户中的文件中检测到异常数量的恶意软件或病毒时, 将生成警报。 此策略具有**高**严重性设置。  <br/> |威胁管理<br/> |E5/G5 或 Office 365 ATP P2 附加订阅  <br/> |
-|**异常外部用户文件活动** <br/> |当您的组织外部的用户对 SharePoint 或 OneDrive 中的文件执行通常大量的活动时, 将生成警报。 这包括访问文件、下载文件和删除文件等活动。 此策略具有**高**严重性设置。  <br/> |数据治理<br/> |E5/G5、Office 365 ATP P2 或高级合规性附加订阅  <br/> |
+|**异常外部用户文件活动** <br/> |当您的组织外部的用户对 SharePoint 或 OneDrive 中的文件执行异常数量的活动时, 将生成警报。 这包括访问文件、下载文件和删除文件等活动。 此策略具有**高**严重性设置。  <br/> |数据治理<br/> |E5/G5、Office 365 ATP P2 或高级合规性附加订阅  <br/> |
 |**外部文件共享的数量不寻常** <br/> |当与组织外部的用户共享 SharePoint 或 OneDrive 中的大量文件时生成警报。 此策略的严重性设置为**中等**。  <br/> |数据治理<br/> |E5/G5、Office 365 ATP P2 或高级合规性附加订阅  <br/> |
 |**文件删除的异常量** <br/> |当在短时间内在 SharePoint 或 OneDrive 中删除大量文件时生成警报。 此策略的严重性设置为**中等**。  <br/> |数据治理 <br/> |E5/G5、Office 365 ATP P2 或高级合规性附加订阅  <br/> |
 |**被报告为网络钓鱼的电子邮件增加了异常** <br/> |当组织中的人员数量显著增加时, 使用 Outlook 中的报告邮件外接程序将邮件报告为网络钓鱼邮件时, 将生成警报。 此策略具有**高**严重性设置。 有关此加载项的详细信息, 请参阅[使用报告消息外接程序](https://support.office.com/article/b5caa9f1-cdf3-4443-af8c-ff724ea719d2)。  <br/> |威胁管理<br/> |E5/G5 或 Office 365 ATP P2 附加订阅  <br/> |

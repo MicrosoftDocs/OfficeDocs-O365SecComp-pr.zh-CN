@@ -15,13 +15,13 @@ ms.collection:
 - M365-security-compliance
 description: 如果您想使用白名单，您应当了解 Exchange Online Protection (EOP) 和 Outlook 处理进程的方式是不同的。通过检查 RFC 5321.MailFrom 地址和 RFC 5322.From 地址，服务遵守白名单和安全域，而 Outlook 将 RFC 5322.From 地址添加到用户的白名单中。（注意：服务对黑名单和阻止域检查 5321.MailFrom 地址和 5322.From 地址。）
 ms.openlocfilehash: 006c2b9520f1e1f71f5ec745baaf84f906f31eb4
-ms.sourcegitcommit: 0f93b37c39d807dec91f118aa671a3430c47a9ac
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/20/2019
-ms.locfileid: "30692871"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32259650"
 ---
-# <a name="manage-safe-sender-lists-for-bulk-mailers"></a>管理邮件群发程序的白名单
+# <a name="manage-safe-sender-lists-for-bulk-mailers"></a>管理邮件群发程序的安全发件人列表
 
 如果要使用安全发件人列表, 则应知道 Exchange Online Protection (EOP) 和 Outlook 处理的处理方式不同。 Office 365 服务通过检查 rfc 5321 和5321.mailfrom 地址以及 rfc 5322.from (发件人地址) 来尊重安全发件人和域, 而 Outlook 将 rfc 5322.from 从地址添加到用户的安全发件人列表中。 (注意: 该服务将检查阻止的发件人和域的5321和5322.from 地址。)
   

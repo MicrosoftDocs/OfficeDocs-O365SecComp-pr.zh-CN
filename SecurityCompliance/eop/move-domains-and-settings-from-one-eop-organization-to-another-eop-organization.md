@@ -11,11 +11,11 @@ localization_priority: Normal
 ms.assetid: 9d64867b-ebdb-4323-8e30-4560d76b4c97
 description: 更改业务需求有时可能需要将一个 Microsoft Exchange Online Protection (EOP) 组织（租户）分成两个单独的组织，将两个组织合并为一个组织，或将您的域和 EOP 设置从一个组织移动到另一个组织。
 ms.openlocfilehash: 976594a3f28f2d120270dfabbf708ecb5815ad5c
-ms.sourcegitcommit: 0f93b37c39d807dec91f118aa671a3430c47a9ac
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/20/2019
-ms.locfileid: "30693631"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32256292"
 ---
 # <a name="move-domains-and-settings-from-one-eop-organization-to-another-eop-organization"></a>将域和设置从一个 EOP 组织移动到另一个 EOP 组织
 

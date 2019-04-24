@@ -13,11 +13,11 @@ search.appverid:
 ms.assetid: 887c710b-0ec6-4ff0-8065-5f05f74afef3
 description: 管理员可以了解如何在 Exchange Online 中使用 S/MIME。
 ms.openlocfilehash: 7c7225efce247928e19946e695c19931f198ae32
-ms.sourcegitcommit: 0f93b37c39d807dec91f118aa671a3430c47a9ac
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/20/2019
-ms.locfileid: "30693391"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32261380"
 ---
 # <a name="smime-for-message-signing-and-encryption-in-exchange-online"></a>Exchange Online 中的邮件签名和加密的 S/MIME
 

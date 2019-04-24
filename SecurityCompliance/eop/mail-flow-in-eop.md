@@ -11,11 +11,11 @@ localization_priority: Normal
 ms.assetid: e109077e-cc85-4c19-ae40-d218ac7d0548
 description: 作为 Exchange Online Protection (EOP) 客户，发送到您的组织的所有邮件都将先通过 EOP，然后工作人员才能看到这些邮件。不论您是在云中托管所有 Exchange Online 邮箱，还是在本地托管邮箱（称为独立方案），为了继续利用现有基础结构，您可以选择如何路由邮件，这些邮件将首先通过 EOP 处理，然后才能路由到工作人员收件箱。
 ms.openlocfilehash: b223efc62ff875ed345ce27a17263b3876829999
-ms.sourcegitcommit: 0f93b37c39d807dec91f118aa671a3430c47a9ac
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/20/2019
-ms.locfileid: "30691711"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32255890"
 ---
 # <a name="mail-flow-in-eop"></a>EOP 中的邮件流
 

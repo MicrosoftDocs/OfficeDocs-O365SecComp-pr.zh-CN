@@ -13,11 +13,11 @@ search.appverid:
 ms.assetid: 0ee60763-a30b-495b-8543-971c3384a801
 description: '操作方法: 将未存储在 O365 中的内容导入到 Azure blob, 以便可以使用 AeD 对其进行分析'
 ms.openlocfilehash: 7b7694754b26951aa02930fd101631ba9060bc17
-ms.sourcegitcommit: e7a776a04ef6ed5e287a33cfdc36aa2d72862b55
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "31001165"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32256570"
 ---
 # <a name="import-non-office-365-content-for-advanced-ediscovery-analysis"></a>导入非 Office 365 内容以实现高级电子数据展示分析
 
@@ -29,7 +29,7 @@ ms.locfileid: "31001165"
 > [!NOTE]
 > 您可以购买适用于非 Office 365 内容的 Office 365 高级电子数据展示数据存储附加订阅。 这仅适用于要使用高级电子数据展示进行分析的内容。 按照 "为[商业版购买或编辑和添加 office 365](https://support.office.com/article/Buy-or-edit-an-add-on-for-Office-365-for-business-4e7b57d6-b93b-457d-aecd-0ea58bff07a6) " 中的步骤操作, 购买 office 365 高级电子数据展示存储加载项。 
   
-## <a name="before-you-begin"></a>开始之前
+## <a name="before-you-begin"></a>准备工作
 
 如以下过程所述, 使用 "上载非 Office 365" 功能需要具备以下条件:
   

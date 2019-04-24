@@ -17,11 +17,11 @@ ms.collection:
 - Strat_O365_IP
 description: 使用 Office 365, 你的内容将在静态和传输过程中使用最强的加密、协议和技术进行加密。 获取 Office 365 中的加密概述。
 ms.openlocfilehash: 7a73d3d3b24e28f8795ec93ac05dbc383b525906
-ms.sourcegitcommit: 2c5834235c32b2616e1813ce24eeb3419a09629f
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/02/2019
-ms.locfileid: "31026323"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32256670"
 ---
 # <a name="encryption-in-office-365"></a>Office 365 中的加密
 

@@ -14,11 +14,11 @@ search.appverid:
 ms.assetid: 2062c312-b1e4-4ce7-8cb2-ea39bc0dfdad
 description: office 365 中的 OAuth 应用程序安全性帮助您管理用户下载的用于 Office 365 数据的应用程序
 ms.openlocfilehash: 0d9916414d55abb73fd99eaf30c3b6df0648b191
-ms.sourcegitcommit: 1658be51e2c21ed23bc4467a98af74300a45b975
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/26/2019
-ms.locfileid: "30862584"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32260102"
 ---
 # <a name="manage-oauth-apps-using-office-365-cloud-app-security"></a>使用 Office 365 云应用安全管理 OAuth 应用
 

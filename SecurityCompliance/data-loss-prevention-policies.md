@@ -16,11 +16,11 @@ search.appverid:
 - MET150
 description: 使用 office 365 安全&amp;合规中心中的数据丢失防护 (DLP) 策略, 可以在 office 365 中识别、监视和自动保护敏感信息。
 ms.openlocfilehash: da8acd8904ac6a9b1945c8f794bad84a0adc64fb
-ms.sourcegitcommit: 94e9eeab8134a9c4d9004cc16de7da227a0e5cc0
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "31784103"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32262070"
 ---
 # <a name="overview-of-data-loss-prevention-policies"></a>数据丢失防护策略概述
 
@@ -454,7 +454,7 @@ DLP 使用深入内容分析（而不仅仅是简单的文本扫描）来检测�
   
 为此，DLP 策略经常检查后台中是否包含与策略相符的文档。 您可以将这视为异步策略评估。
   
-#### <a name="how-it-works"></a>工作原理
+#### <a name="how-it-works"></a>运作方式
  
 当用户在其网站中添加或更改文档时, 搜索引擎会对内容进行扫描, 以便以后可以对其进行搜索。 在这种情况下, 还会对内容进行扫描以查找敏感信息, 并检查是否已共享。 找到的任何敏感信息都将安全存储在搜索索引中, 以便只有合规性团队可以访问它, 而不是典型用户。 您已启用的每个 DLP 策略都将在后台运行 (异步), 检查与策略匹配的任何内容的搜索频率, 并应用操作以防止意外泄漏。
   
@@ -508,7 +508,7 @@ Office 中的 DLP 策略评估设计不会影响程序的性能或对内容进�
     
 但是, DLP 报告需要跨 Office 365 请求获取数据, 包括 Exchange Online。 出于此原因, 在**Exchange Online powershell 中提供了 DLP 报告的 cmdlet--不在安全&amp;合规中心 powershell**中。 因此, 若要使用 DLP 报告的 cmdlet, 需要执行以下操作:
   
-1. [使用远程 PowerShell 连接到 Exchange Online](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell?view=exchange-ps)
+1. [Connect to Exchange Online using remote PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell?view=exchange-ps)
     
 2. 为 DLP 报告使用以下任一 cmdlet:
     
@@ -516,9 +516,9 @@ Office 中的 DLP 策略评估设计不会影响程序的性能或对内容进�
     
   - [get-dlpdetailreport](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-dlp/Get-DlpDetailReport?view=exchange-ps)
     
-## <a name="more-information"></a>更多信息
+## <a name="more-information"></a>详细信息
 
-- [通过模板创建 DLP 策略](create-a-dlp-policy-from-a-template.md)
+- [从模板创建 DLP 策略](create-a-dlp-policy-from-a-template.md)
     
 - [发送通知并显示 DLP 策略的策略提示](use-notifications-and-policy-tips.md)
     

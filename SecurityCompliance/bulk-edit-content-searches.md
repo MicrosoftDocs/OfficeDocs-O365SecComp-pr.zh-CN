@@ -12,11 +12,11 @@ search.appverid: MOE150
 ms.assetid: 39e4654a-9588-41f6-892b-c33ab57bfbe2
 description: 使用 Office 365 或 Microsoft 365 中的安全与合规中心中的批量搜索编辑器快速更改一个或多个内容搜索的查询和内容位置。
 ms.openlocfilehash: 3a484ad689b1c638e0e14ed1643edea0f2f56c09
-ms.sourcegitcommit: 6c9340e4eb221bf81472ff3f1ae25ae21aaf5297
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "31813933"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32243831"
 ---
 # <a name="bulk-edit-content-searches"></a>批量编辑内容搜索
 

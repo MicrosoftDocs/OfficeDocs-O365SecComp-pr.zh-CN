@@ -18,11 +18,11 @@ ms.collection:
 - M365-security-compliance
 description: 零小时自动清除 (ZAP) 是一种电子邮件保护功能, 可检测到已发送到用户收件箱的垃圾邮件或恶意软件的邮件, 然后将恶意内容无害。 ZAP 的工作方式取决于检测到的恶意内容的类型。
 ms.openlocfilehash: 507cd6af5320a3b925841786136d518c996e4d29
-ms.sourcegitcommit: 86ff2eba1d57b9d5288840788529e69ad9d836b6
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "31818599"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32266904"
 ---
 # <a name="zero-hour-auto-purge---protection-against-spam-and-malware"></a>零时差自动清除 - 防范垃圾邮件和恶意软件
 
@@ -97,4 +97,4 @@ Office 365 每天实时更新反垃圾邮件引擎和恶意软件签名。 但�
 
 [Office 365 电子邮件反垃圾邮件保护](anti-spam-protection.md)
   
-[使用 Office 365 垃圾邮件筛选器阻止垃圾邮件以避免出现漏报问题](reduce-spam-email.md)
+[使用 Office 365 垃圾邮件筛选器阻止垃圾电子邮件，以防止出现漏报问题](reduce-spam-email.md)

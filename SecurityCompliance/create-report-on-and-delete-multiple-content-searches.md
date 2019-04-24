@@ -12,21 +12,21 @@ search.appverid:
 - SPO160
 - MOE150
 ms.assetid: 1d463dda-a3b5-4675-95d4-83db19c9c4a3
-description: 了解如何通过 Office 365 安全&amp;合规中心中的 PowerShell 脚本来自动执行内容搜索任务, 如创建搜索和运行报告。
-ms.openlocfilehash: 740f3384e5d4f26e09512cc846ad8779bcbc31ef
-ms.sourcegitcommit: b688d67935edb036658bb5aa1671328498d5ddd3
+description: 了解如何在 Office 365 的安全 & 合规中心中通过 PowerShell 脚本自动执行内容搜索任务, 如创建搜索和运行报告。
+ms.openlocfilehash: 96d10e274cd83a4785170239302d55e74d40ca84
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "30670657"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32258426"
 ---
 # <a name="create-report-on-and-delete-multiple-content-searches"></a>创建、报告和删除多个内容搜索
 
- 当你尝试了解基础数据以及搜索的丰富程度和质量时, 快速创建和报告发现搜索通常是电子数据展示和调查中的重要步骤。 为帮助你执行此操作, 安全&amp;合规性中心提供了一组 Windows PowerShell cmdlet, 以自动执行耗时的内容搜索任务。 这些脚本提供了创建大量搜索的快速、简便的方法, 然后运行估计的搜索结果报告, 这些报告可帮助您确定所讨论的数据量。 您还可以使用脚本来创建不同版本的搜索, 以比较每个搜索结果所产生的结果。 这些脚本可帮助您快速高效地识别和挑选数据。 
+ 当你尝试了解基础数据以及搜索的丰富程度和质量时, 快速创建和报告发现搜索通常是电子数据展示和调查中的重要步骤。 为帮助你执行此操作, 安全 & 合规性中心 PowerShell 提供了一组用于自动执行耗时的内容搜索任务的 cmdlet。 这些脚本提供了创建大量搜索的快速、简便的方法, 然后运行估计的搜索结果报告, 这些报告可帮助您确定所讨论的数据量。 您还可以使用脚本来创建不同版本的搜索, 以比较每个搜索结果所产生的结果。 这些脚本可帮助您快速高效地识别和挑选数据。 
   
 ## <a name="before-you-begin"></a>准备工作
 
-- 您必须是安全&amp;合规中心中的电子数据展示管理器角色组的成员, 才能运行本主题中所述的脚本。 
+- 您必须是 Security & 合规中心中的电子数据展示管理器角色组的成员, 才能运行本主题中所述的脚本。 
     
 - 若要收集组织中可添加到 CSV 文件的 onedrive for business 网站的 url 列表, 请参阅在[组织中创建所有 OneDrive 位置的列表](https://support.office.com/article/Create-a-list-of-all-OneDrive-locations-in-your-organization-8e200cb2-c768-49cb-88ec-53493e8ad80a)。 
     
@@ -68,7 +68,7 @@ ms.locfileid: "30670657"
   
 ## <a name="step-2-connect-to-security--compliance-center-powershell"></a>步骤 2: 连接到安全 & 合规中心 PowerShell
 
-下一步是将 Windows PowerShell 连接到组织的&amp;安全合规中心。
+下一步是连接到组织的安全 & 合规中心 PowerShell。
   
 1. 使用文件名后缀. ps1; 将以下文本保存到 Windows PowerShell 脚本文件中。例如, `ConnectSCC.ps1`。 将文件保存到在步骤1中保存 CSV 文件的文件夹。
     
@@ -77,7 +77,7 @@ ms.locfileid: "30670657"
     $UserCredential = Get-Credential 
     $Session = New-PSSession -ConfigurationName Microsoft.Exchange -ConnectionUri https://ps.compliance.protection.outlook.com/powershell-liveid -Credential $UserCredential -Authentication Basic -AllowRedirection 
     Import-PSSession $Session -AllowClobber -DisableNameChecking 
-    $Host.UI.RawUI.WindowTitle = $UserCredential.UserName + " (Office 365 Security &amp; Compliance Center)" 
+    $Host.UI.RawUI.WindowTitle = $UserCredential.UserName + " (Security & Compliance Center)" 
     ```
 
 2. 在本地计算机上, 打开 Windows PowerShell, 转到上一步中创建的脚本所在的文件夹, 然后运行该脚本;例如:

@@ -15,11 +15,11 @@ search.appverid:
 ms.assetid: ''
 description: ''
 ms.openlocfilehash: f5478d89d71db22e710b5d5fcab397ae8d6aee56
-ms.sourcegitcommit: 2c5834235c32b2616e1813ce24eeb3419a09629f
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/02/2019
-ms.locfileid: "31029947"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32259560"
 ---
 # <a name="load-non-office-365-data-into-evidence"></a>将非 Office 365 数据加载到证据中
 
@@ -28,7 +28,7 @@ ms.locfileid: "31029947"
 >[!Note]
 >高级电子数据展示需要 Office 365 E3 和您的组织的高级合规性加载项或 E5 订阅。 如果你没有该计划, 并且想要尝试高级电子数据展示, 可以注册 Office 365 企业版 E5 的试用版。
 
-## <a name="before-you-begin"></a>开始之前
+## <a name="before-you-begin"></a>准备工作
 如以下过程所述, 使用 "上载非 Office 365" 功能需要具备以下条件:
 
 - 具有高级合规性外接程序或 E5 订阅的 Office 365 E3。

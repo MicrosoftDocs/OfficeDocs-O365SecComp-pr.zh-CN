@@ -14,11 +14,11 @@ ms.collection:
 - M365-security-compliance
 description: 如何在 Exchange Online 中处理软数据和硬数据删除。
 ms.openlocfilehash: 977beb41469e0015e22aea6750cfd657d9ee3b39
-ms.sourcegitcommit: 1261a37c414111f869df5791548a768d853fda60
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/30/2019
-ms.locfileid: "31004189"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32262684"
 ---
 # <a name="exchange-online-data-deletion-in-office-365"></a>Office 365 中的 Exchange Online 数据删除
 在 Exchange Online 中, 有两种删除: 软删除和硬删除。 这适用于邮箱和邮箱中的项目。

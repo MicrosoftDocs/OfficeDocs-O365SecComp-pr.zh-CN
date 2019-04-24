@@ -15,11 +15,11 @@ search.appverid:
 ms.assetid: ''
 description: 本文包含适用于高级电子数据展示的发行说明 (预览)。
 ms.openlocfilehash: 32a02c16fd30e740fcc6e1c99b46775b97590a28
-ms.sourcegitcommit: 15202bba32313534da2478b0cd215f32a10c9ef4
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "30684351"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32240937"
 ---
 # <a name="release-notes-for-advanced-ediscovery-preview"></a>高级电子数据展示的发行说明 (预览)
 

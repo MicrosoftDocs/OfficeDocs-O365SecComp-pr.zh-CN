@@ -15,11 +15,11 @@ search.appverid:
 ms.assetid: ''
 description: ''
 ms.openlocfilehash: 7c9d1a52acef48d96816fefbb1c836032d262b93
-ms.sourcegitcommit: 6aa82374eef09d2c1921f93bda3eabeeb28aadeb
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/06/2019
-ms.locfileid: "30454674"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32240974"
 ---
 # <a name="themes"></a>主题
 用户如何编写文档？ 它们通常从要在文档中传达的一个或多个想法开始, 并使用与想法一致的单词进行撰写。 概念越普遍, 与该想法相关的词越常见。 这将通知用户如何同时使用文档;从阅读文档中获取的重要内容是文档试图传达的想法, 以及在何处显示的想法, 以及这些想法之间的关系。

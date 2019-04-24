@@ -15,11 +15,11 @@ search.appverid:
 ms.assetid: ''
 description: ''
 ms.openlocfilehash: b46a8fe7e1b3406e3e039380ec8a3e814ac1ee62
-ms.sourcegitcommit: baf23be44f1ed5abbf84f140b5ffa64fce605478
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "30295315"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32240927"
 ---
 # <a name="search-limits-in-advanced-ediscovery-preview"></a>高级电子数据展示中的搜索限制 (预览)
 

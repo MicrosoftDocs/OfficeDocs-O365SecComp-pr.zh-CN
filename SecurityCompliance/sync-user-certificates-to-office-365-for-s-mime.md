@@ -13,11 +13,11 @@ search.appverid:
 ms.assetid: 351c932e-99c1-4512-a6e8-788e90b7838f
 description: 必须先设置适当的证书，然后才能够发送受 S/MIME 保护的邮件。发件人的电子邮件程序使用收件人的公用证书对邮件进行加密，以通过 Exchange Online 发送加密邮件。此公用 X.509 证书必须向 Office 365 发布。
 ms.openlocfilehash: 927f6b4c7a166ee35e11a8712cc99054b0e67dee
-ms.sourcegitcommit: 0f93b37c39d807dec91f118aa671a3430c47a9ac
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/20/2019
-ms.locfileid: "30692561"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32265244"
 ---
 # <a name="sync-user-certificates-to-office-365-for-smime"></a>出于 S/MIME 目的将用户证书同步到 Office 365
 

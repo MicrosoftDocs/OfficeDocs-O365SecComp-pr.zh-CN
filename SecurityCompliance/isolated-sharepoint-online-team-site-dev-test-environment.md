@@ -1,5 +1,5 @@
 ---
-title: 独立 SharePoint Online 团队网站开发/测试环境
+title: 独立的 SharePoint Online 团队网站开发/测试环境
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -15,13 +15,13 @@ ms.custom:
 ms.assetid: d1795031-beef-49ea-a6fc-5da5450d320d
 description: '摘要: 配置独立于 Office 365 开发/测试环境中的其余组织的 SharePoint Online 团队网站。'
 ms.openlocfilehash: 56c10b1a3871014f26a4d2fd98d9b4139d19ac47
-ms.sourcegitcommit: e7a776a04ef6ed5e287a33cfdc36aa2d72862b55
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "31000225"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32254354"
 ---
-# <a name="isolated-sharepoint-online-team-site-devtest-environment"></a>独立 SharePoint Online 团队网站开发/测试环境
+# <a name="isolated-sharepoint-online-team-site-devtest-environment"></a>独立的 SharePoint Online 团队网站开发/测试环境
 
  **摘要:** 配置独立于 Office 365 开发/测试环境中的其余组织的 SharePoint Online 团队网站。
   
@@ -141,7 +141,7 @@ Add-MsolGroupMember -GroupObjectId (Get-MsolGroup | Where { $_.DisplayName -eq $
     
 图1显示了访问组及其成员资格。
   
-**图 1**
+**图1**
 
 ![适用于独立 SharePoint Online 组网站的 Office 365 组及其成员资格](media/5b7373b9-2a80-4880-afe5-63ffb17237e6.png)
   
@@ -171,7 +171,7 @@ Add-MsolGroupMember -GroupObjectId (Get-MsolGroup | Where { $_.DisplayName -eq $
     
 11. 单击列表中的“ProjectX 成员”****。
     
-12. 在“人员和组”页中，单击“新建”********。
+12. 在“**人员和组**”页中，单击“**新建**”。
     
 13. 在“共享”**** 对话框中，键入并选择“ProjectX-Members”****，然后单击“共享”****。
     
@@ -207,7 +207,7 @@ Add-MsolGroupMember -GroupObjectId (Get-MsolGroup | Where { $_.DisplayName -eq $
     
 图 2 展示了 SharePoint 组及其成员身份。
   
-**图 2**
+**图2**
 
 ![sharepoint online 组及其针对独立 SharePoint online 组网站的成员身份](media/595abff4-64f9-49de-a37a-c70c6856936b.png)
   

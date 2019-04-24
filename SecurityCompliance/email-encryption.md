@@ -16,11 +16,11 @@ ms.collection:
 - M365-security-compliance
 description: 比较 office 365 中的加密选项, 包括 office 邮件加密 (OME)、S/MIME、信息权限管理 (IRM), 并了解传输层安全性 (TLS)。
 ms.openlocfilehash: 18f3d5098557f65a0738254b57882689c013d677
-ms.sourcegitcommit: 0f93b37c39d807dec91f118aa671a3430c47a9ac
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/20/2019
-ms.locfileid: "30692461"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32256766"
 ---
 # <a name="email-encryption-in-office-365"></a>Office 365 中的电子邮件加密
 

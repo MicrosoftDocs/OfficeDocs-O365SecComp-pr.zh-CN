@@ -14,11 +14,11 @@ ms.collection:
 - M365-security-compliance
 description: 您可以创建 Exchange 邮件流规则, 以防止用户将电子邮件发送给 Microsoft 进行分析并在自己的安全过程中使用它们。
 ms.openlocfilehash: 3552899c2fb471624234625331492edcd8421da6
-ms.sourcegitcommit: 0f93b37c39d807dec91f118aa671a3430c47a9ac
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/20/2019
-ms.locfileid: "30692641"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32264274"
 ---
 # <a name="use-mail-flow-rules-to-see-what-your-users-are-reporting-to-microsoft"></a>使用邮件流规则来查看用户向 Microsoft 报告的内容
 

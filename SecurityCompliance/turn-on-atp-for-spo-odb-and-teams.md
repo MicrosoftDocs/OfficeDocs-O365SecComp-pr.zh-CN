@@ -16,11 +16,11 @@ ms.collection:
 - M365-security-compliance
 description: 了解如何为 SharePoint、OneDrive 和团队打开 ATP, 包括如何为检测到的文件设置通知。
 ms.openlocfilehash: 30eb28bfc5156664656ca1c200f9e999661b3b0c
-ms.sourcegitcommit: 1c73c2f83703af0a30a5b0633db00d8e0e6b39b5
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/25/2019
-ms.locfileid: "30242144"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32264288"
 ---
 # <a name="turn-on-office-365-atp-for-sharepoint-onedrive-and-microsoft-teams"></a>打开适用于 SharePoint、OneDrive 和 Microsoft 团队的 Office 365 ATP
 
@@ -28,11 +28,11 @@ ms.locfileid: "30242144"
   
 若要定义 (或编辑) ATP 策略, 必须为您分配适当的角色。 下表介绍了一些示例:
 
-|角色  |分配的位置/方式  |
+|Role  |分配的位置/方式  |
 |---------|---------|
 |Office 365 全局管理员 |默认情况下, 注册购买 Office 365 的人是全局管理员。 (请参阅[关于 Office 365 管理员角色](https://docs.microsoft.com/office365/admin/add-users/about-admin-roles)以了解详细信息。)         |
 |Security Administrator |Azure Active Directory 管理中心 ([https://aad.portal.azure.com](https://aad.portal.azure.com))|
-|Exchange Online 组织管理 |Exchange 管理中心 ([https://outlook.office365.com/ecp](https://outlook.office365.com/ecp)) <br>或者 <br>  PowerShell cmdlet (请参阅[Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/exchange-online-powershell?view=exchange-ps)) |
+|Exchange Online 组织管理 |Exchange 管理中心 ([https://outlook.office365.com/ecp](https://outlook.office365.com/ecp)) <br>或 <br>  PowerShell cmdlet (请参阅[Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/exchange-online-powershell?view=exchange-ps)) |
   
 ## <a name="turn-on-atp-for-sharepoint-onedrive-and-microsoft-teams"></a>启用适用于 SharePoint、OneDrive 和 Microsoft Teams 的 ATP
 

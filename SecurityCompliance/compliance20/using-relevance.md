@@ -15,11 +15,11 @@ search.appverid:
 ms.assetid: ''
 description: ''
 ms.openlocfilehash: 6e94adc6e6b7fb7d8757b161ffdf01066cadac7a
-ms.sourcegitcommit: 6aa82374eef09d2c1921f93bda3eabeeb28aadeb
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/06/2019
-ms.locfileid: "30454944"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32242114"
 ---
 # <a name="use-the-relevance-module-to-analyze-data-in-advanced-ediscovery-preview"></a>使用相关性模块分析高级电子数据展示中的数据 (预览)
 
@@ -130,7 +130,7 @@ ms.locfileid: "30454944"
 > [!NOTE]
 > 在解锁后, 某些选项可能仍处于禁用状态, 因为在此过程中不支持使用这些选项。 
   
-## <a name="more-information"></a>更多信息
+## <a name="more-information"></a>详细信息
 
 [了解相关性方面的评估](../assessment-in-relevance-in-advanced-ediscovery.md)
   

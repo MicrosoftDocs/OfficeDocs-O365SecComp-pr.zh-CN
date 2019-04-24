@@ -11,11 +11,11 @@ localization_priority: Normal
 ms.assetid: eb8ddf15-0080-457e-9d83-e73e193da334
 description: 就地保留、诉讼保留和 Office 365 保留策略使您能够保留邮箱内容, 以满足法规遵从性和电子数据展示要求。
 ms.openlocfilehash: fcf5567bc50f25ce51d8d569d772559a376703d0
-ms.sourcegitcommit: e7a776a04ef6ed5e287a33cfdc36aa2d72862b55
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30999515"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32261680"
 ---
 # <a name="preserve-bcc-and-expanded-distribution-group-recipients-for-ediscovery"></a>为电子数据展示保存密件抄送和展开的通讯组收件人
   

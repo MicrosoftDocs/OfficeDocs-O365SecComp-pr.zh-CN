@@ -15,15 +15,15 @@ search.appverid:
 ms.assetid: ''
 description: ''
 ms.openlocfilehash: e3f3e863423fe4312a944eb6f04a58182e11665c
-ms.sourcegitcommit: baf23be44f1ed5abbf84f140b5ffa64fce605478
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "30295475"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32243233"
 ---
 # <a name="analyze-data-in-a-working-set-in-advanced-ediscovery-preview"></a>在高级电子数据展示中分析工作集中的数据 (预览)
 
-收集的文档数较大时, 可能很难查看所有文档。高级电子数据展示 (预览版) 提供多种工具来分析文档, 以减少要查看的文档量而不丢失任何信息, 并帮助您以一致的方式组织文档。若要了解有关这些功能的详细信息, 请参阅:
+收集的文档数较大时, 可能很难查看所有文档。 高级电子数据展示 (预览版) 提供多种工具来分析文档, 以减少要查看的文档量而不丢失任何信息, 并帮助您以一致的方式组织文档。 若要了解有关这些功能的详细信息, 请参阅:
 
 - [近似重复检测](near-duplicates.md)
 - [电子邮件会话](email-threading.md)
@@ -31,7 +31,7 @@ ms.locfileid: "30295475"
 
 若要分析工作集中的数据, 请执行以下操作:
 
-1. 为你的事例配置分析设置。有关详细信息, 请参阅[配置搜索和分析设置](configure-search-analytics-settings.md)。
+1. 为你的事例配置分析设置。 有关详细信息, 请参阅[配置搜索和分析设置](configure-search-analytics-settings.md)。
 2. 打开您想要分析的工作集。
 3. 转到 "管理工作集"。
 4. 单击 "分析"。

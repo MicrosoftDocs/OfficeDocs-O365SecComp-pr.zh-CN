@@ -15,11 +15,11 @@ search.appverid:
 ms.assetid: ''
 description: ''
 ms.openlocfilehash: 3000a066bf69f71327801035e7c270cc602565ac
-ms.sourcegitcommit: 8657e003ab1ff49113f222d1ee8400eff174cb54
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/16/2019
-ms.locfileid: "30639009"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32263804"
 ---
 # <a name="query-the-data-in-a-working-set"></a>查询工作集中的数据
 

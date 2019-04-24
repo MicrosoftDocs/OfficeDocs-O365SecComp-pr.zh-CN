@@ -14,15 +14,15 @@ search.appverid:
 ms.assetid: 239ce6eb-4e81-42db-bf86-a01362fed65c
 description: 了解如何通过 Microsoft Azure Active Directory 权限管理服务 (RMS) 使用 sharepoint Online IRM 来保护 SharePoint 列表和文档库。
 ms.openlocfilehash: 6b68135720846a0e74f5b0272dc5f25272381284
-ms.sourcegitcommit: 54a2cbe5d13f448e0c28655bdf88deb9e5434cac
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/27/2019
-ms.locfileid: "30935127"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32260762"
 ---
 # <a name="set-up-information-rights-management-irm-in-sharepoint-admin-center"></a>Set up Information Rights Management (IRM) in SharePoint admin center
 
-## <a name="introduction"></a>简介
+## <a name="introduction"></a>介绍
 
 在 SharePoint Online 中, IRM 保护应用于列表和库级别的文件。 您的组织可以使用 IRM 保护之前, 必须先设置权限管理。 IRM 依赖 azure 权限管理服务 (来自 azure 信息保护) 来加密和分配使用限制。 一些 Office 365 计划包括 Azure 权限管理, 但并非全部。 若要了解详细信息, 请参阅[Office 应用程序和服务如何支持 Azure 权限管理](https://docs.microsoft.com/azure/information-protection/understand-explore/office-apps-services-support)。
   

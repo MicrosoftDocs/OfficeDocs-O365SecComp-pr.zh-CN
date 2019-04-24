@@ -14,11 +14,11 @@ search.appverid:
 ms.assetid: 86f414ad-81de-4703-b40a-c6615bbe9108
 description: 在设置和推出 Office 365 云应用程序安全性之后, 您需要执行某些任务以确保您的配置正确, 并且您已准备好进行定期检查。
 ms.openlocfilehash: 232de4df1d1eb4debdddcee2c1d8672d1aeb4b21
-ms.sourcegitcommit: e7a776a04ef6ed5e287a33cfdc36aa2d72862b55
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30999945"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32242540"
 ---
 # <a name="utilization-activities-after-rolling-out-office-365-cloud-app-security"></a>推出 Office 365 云应用安全后的利用率活动
   

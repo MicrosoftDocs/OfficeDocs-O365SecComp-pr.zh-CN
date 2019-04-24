@@ -15,11 +15,11 @@ search.appverid:
 ms.assetid: 2fe71b05-f5a2-4182-ade7-4dc5cabdfd51
 description: '有关使用 office 365 导入服务将 organizaiton 的 PST 文件导入到 office 365 邮箱的管理员的常见问题。 '
 ms.openlocfilehash: 69767353a574336351b01fdc42a9c6117c5c31ed
-ms.sourcegitcommit: e7a776a04ef6ed5e287a33cfdc36aa2d72862b55
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30999585"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32255430"
 ---
 # <a name="faq-about-importing-pst-files-to-office-365"></a>将 PST 文件导入到 Office 365 的常见问题解答
 
@@ -39,7 +39,7 @@ ms.locfileid: "30999585"
   
 - 您必须在 Exchange Online 中向您分配 "邮件收件人" 角色。 By default, this role is assigned to the Organization Management and Recipient Management roles groups.
     
-    或者
+    或
     
 - 您必须是 Office 365 组织中的全局管理员。
     
@@ -110,7 +110,7 @@ Yes, this capability is now available.
   
 - 您必须在 Exchange Online 中向您分配 "邮件收件人" 角色。 By default, this role is assigned to the Organization Management and Recipient Management roles groups.
     
-    或者
+    或
     
 - 您必须是 Office 365 组织中的全局管理员。
     

@@ -1,9 +1,8 @@
 ---
-title: 导出 Office 365 高级电子数据展示中的事例数据
+title: 在 Office 365 高级电子数据展示中导出事例数据
 ms.author: chrfox
 author: chrfox
 manager: laurawi
-ms.date: 9/14/2017
 ms.audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
@@ -13,14 +12,14 @@ search.appverid:
 - MET150
 ms.assetid: c3198d1c-51b4-4280-87c5-269b47246d33
 description: '了解如何使用 Office 365 高级电子数据展示中的导出过程导出电子数据展示事例数据和要查看的结果的指南。  '
-ms.openlocfilehash: 01997d3c799eeabc9686e3d747652d54fc963d26
-ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
+ms.openlocfilehash: 8c9f4c31d5c48ab0d9884e14321471d45c927ecd
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30215572"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32255470"
 ---
-# <a name="export-case-data-in-office-365-advanced-ediscovery"></a>导出 Office 365 高级电子数据展示中的事例数据
+# <a name="export-case-data-in-office-365-advanced-ediscovery"></a>在 Office 365 高级电子数据展示中导出事例数据
 
 > [!NOTE]
 > 若要使用高级电子数据展示，组织必须订阅随附高级合规性加载项的 Office 365 E3，或订阅 E5。如果没有此计划，但又要试用高级电子数据展示，可以[注册 Office 365 企业版 E5 试用版](https://go.microsoft.com/fwlink/p/?LinkID=698279)。 
@@ -31,7 +30,7 @@ ms.locfileid: "30215572"
 
 - 您可以查看通过高级电子数据展示生成的导出数据, 例如, 将相关元素分发给文档审阅团队或导出到外部文档审阅工具。
     
-- 您可以在执行高级电子数据展示过程中的任何时间和之后生成和处理导出输出。在标准方案中, 在相关性培训和批计算成功完成之后, 将获得显著的结果。例如, 您可以生成1000最相关文件的示例, 并在继续操作之前评估高级电子数据展示性能。
+- 您可以在执行高级电子数据展示过程中的任何时间和之后生成和处理导出输出。 在标准方案中, 在相关性培训和批计算成功完成之后, 将获得显著的结果。 例如, 您可以生成1000最相关文件的示例, 并在继续操作之前评估高级电子数据展示性能。
     
 - 将大量数据导出到数据库可能会对所需的数据库大小和高级电子数据展示数据库所需的配置产生重大影响。
     

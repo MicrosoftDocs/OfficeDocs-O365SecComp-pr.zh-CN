@@ -1,5 +1,5 @@
 ---
-title: 安全 & 合规中心中的智能报告和见解
+title: 安全与合规中心内的智能报表和见解
 ms.author: deniseb
 author: denisebmsft
 manager: laurawi
@@ -16,11 +16,11 @@ ms.collection:
 - M365-security-compliance
 description: 获取安全&amp;合规性中心中的报告和真知灼见 avialable 的概述。
 ms.openlocfilehash: fff1fac7d35a4e12e66f27ac0069d34eb86f3fe0
-ms.sourcegitcommit: e7a776a04ef6ed5e287a33cfdc36aa2d72862b55
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30999315"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32261510"
 ---
 # <a name="smart-reports-and-insights-in-the-office-365-security-amp-compliance-center"></a>Office 365 安全&amp;合规中心中的智能报告和见解
 

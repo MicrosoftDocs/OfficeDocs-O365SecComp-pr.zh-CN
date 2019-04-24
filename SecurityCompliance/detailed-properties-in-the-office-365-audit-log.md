@@ -17,11 +17,11 @@ search.appverid:
 ms.assetid: ce004100-9e7f-443e-942b-9b04098fcfc3
 description: Office 365 审核日志记录中包含的其他属性的说明。
 ms.openlocfilehash: f64b514b777c08048e0f904c17e21c235f8a6f23
-ms.sourcegitcommit: e7a776a04ef6ed5e287a33cfdc36aa2d72862b55
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "31000325"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32257642"
 ---
 # <a name="detailed-properties-in-the-office-365-audit-log"></a>Office 365 审核日志中的属性详细信息
 
@@ -60,7 +60,7 @@ ms.locfileid: "31000325"
 |LogonType|邮箱访问的类型。 以下值指示访问邮箱的用户的类型。  <br/><br/> **0** -指示邮箱所有者。<br/> **1** -指示管理员。<br/> **2** -指示一个代理。 <br/>**3** -指示 Microsoft 数据中心中的传输服务。<br/> **4** -表示 Microsoft 数据中心中的服务帐户。 <br/>**6** -表示委派管理员。|Exchange (邮箱活动)|
 |MailboxGuid|访问邮箱的 Exchange GUID。|Exchange (邮箱活动)|
 |MailboxOwnerUPN|拥有已访问邮箱的人员的电子邮件地址。|Exchange (邮箱活动)|
-|成员|列出已在团队中添加或删除的用户。 以下值表示分配给用户的角色类型。  <br/><br/> **1** -指示所有者角色。<br/> **2** -指示成员角色。<br/> **3** -指示来宾角色。 <br/><br/>Members 属性还包括您的组织的名称和成员的电子邮件地址。|Microsoft Teams|
+|Members|列出已在团队中添加或删除的用户。 以下值表示分配给用户的角色类型。  <br/><br/> **1** -指示所有者角色。<br/> **2** -指示成员角色。<br/> **3** -指示来宾角色。 <br/><br/>Members 属性还包括您的组织的名称和成员的电子邮件地址。|Microsoft Teams|
 |ModifiedProperties (Name、NewValue、OldValue)|属性包含在管理员事件中，例如将用户添加为网站或网站集管理组的成员。 该属性包括已修改的属性的名称 (例如, 网站管理员组) 已修改属性的新值 (如添加为网站管理员的用户, 以及已修改对象的以前的值)。|全部 (管理活动)|
 |ObjectID|对于 Exchange 管理员审核日志，通过 cmdlet 修改的对象的名称。  <br/> 对于 SharePoint 活动, 是由用户访问的文件或文件夹的完整 URL 路径名称。  <br/> 对于 Azure AD 活动, 为已修改的用户帐户的名称。|全部|
 |Operation|用户或管理员活动的名称。 此属性的值对应于在 "**活动**" 下拉列表中选择的值。 如果选择了 "**显示所有活动的结果**", 则报告将包含所有服务的所有用户和管理员活动的条目。 有关在 office 365 审核日志中记录的操作/活动的说明, 请参阅在[office 365 中搜索审核日志](search-the-audit-log-in-security-and-compliance.md)中的**审核的活动**选项卡。  <br/> 对于 Exchange 管理员活动，此属性标识已运行的 cmdlet 名称。|全部|
@@ -71,7 +71,7 @@ ms.locfileid: "31000325"
 |ResultStatus|指示操作 (在**Operation**属性中指定) 是否成功。  <br/> 对于 Exchange 管理员活动, 值可以为**True** (成功) 或**False** (失败)。|全部  <br/>|
 |SecurityComplianceCenterEventType|指示活动是安全 & 合规中心事件。 所有 Security & 合规性中心活动的值都为此属性的值为**0** 。|安全与合规中心|
 |SharingType|分配给用户的共享权限类型, 该用户是与资源共享的。 此用户在**UserSharedWith**属性中进行标识。|SharePoint|
-|站点|用户访问的文件或文件夹所在网站的 GUID。|SharePoint|
+|Site|用户访问的文件或文件夹所在网站的 GUID。|SharePoint|
 |SiteUrl|用户访问的文件或文件夹所在网站的 URL。|SharePoint|
 |SourceFileExtension|用户访问的文件的文件扩展名。 如果访问对象是一个文件夹，则此属性为空。|SharePoint|
 |SourceFileName|用户访问的文件或文件夹名称。|SharePoint|
@@ -87,7 +87,7 @@ ms.locfileid: "31000325"
 |UserKey|在**UserID**属性中标识的用户的替代 ID。 例如, 此属性填充 SharePoint 中用户执行的事件的 passport 唯一 ID (PUID)。 此属性还可能指定与其他服务和系统帐户执行的事件中发生的事件的**UserID**属性相同的值。|全部|
 |UserSharedWith|与之共享资源的用户。 如果**Operation**属性的值为**SharingSet**, 则包含此属性。 此用户也在报告中的 "**共享与**" 列中列出。|SharePoint|
 |UserType|执行操作的用户类型。 以下值指示用户类型。 <br/> <br/> **0** -常规用户。 <br/>**2** -Office 365 组织中的管理员。 <br/>**3** -Microsoft 数据中心管理员或数据中心系统帐户。 <br/>**4** -系统帐户。 <br/>**5** -应用程序。 <br/>**6** -服务主体。<br/>**7** -自定义策略。<br/>**8** -系统策略。|全部|
-|版本|指示已记录的活动的版本号 (由**操作**属性标识)。|全部|
+|Version|指示已记录的活动的版本号 (由**操作**属性标识)。|全部|
 |Workload|发生活动的 Office 365 服务。 此属性的可能值为：  <br/> <br/>**SharePoint<br/>OneDrive<br/>Exchange<br/>AzureActiveDirectory<br/>DataCenterSecurity<br/>合规<br/>性<br/>Sway Skype for<br/>business<br/>SecurityComplianceCenter<br/>PowerBI CRM<br/>Yammer<br/>MicrosoftTeams<br/>ThreatIntelligence<br/>MicrosoftFlow<br/>MicrosoftStream<br/>DlpSharePointClassificationData<br/>项目<br/>PowerApps<br/>工作区分析**|全部|
 ||||
    

@@ -16,11 +16,11 @@ ms.collection:
 - M365-security-compliance
 description: "\"安全附件\" 功能可提供电子邮件附件的单击时间验证。 使用安全附件保护组织免受用户在电子邮件中发送或接收的恶意文件的攻击。"
 ms.openlocfilehash: 933a533a6deb52a41d1412e319c6fb6840046390
-ms.sourcegitcommit: 77e45ce4c9b992ec64420f90946bec6077fc73ad
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/04/2019
-ms.locfileid: "31476820"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32250962"
 ---
 # <a name="office-365-atp-safe-attachments"></a>Office 365 ATP 安全附件
 
@@ -30,7 +30,7 @@ atp 安全附件 (和[ATP 安全链接](atp-safe-links.md)) 是[Office 365 高�
   
 还可以将 ATP 保护扩展到 SharePoint Online、OneDrive for business 和 Microsoft 团队中的文件。 若要了解详细信息, 请参阅[适用于 SharePoint、OneDrive 和 Microsoft 团队的 Office 365 高级威胁防护](atp-for-spo-odb-and-teams.md)。
 
-## <a name="how-it-works"></a>工作原理
+## <a name="how-it-works"></a>运作方式
 
 ATP 安全附件功能检查组织中人员的电子邮件附件。 如果 atp 安全附件策略已就绪, 并且该策略涵盖的人在 Office 365 中查看其电子邮件, 则会检查其电子邮件附件, 并根据 ATP 安全附件策略采取相应的操作。 根据您的策略定义方式, 用户可以继续工作, 而无需知道他们是否发送了恶意文件。
   
@@ -70,7 +70,7 @@ ATP 安全附件策略可应用于组织中的特定用户或组, 或应用于�
   
 下表介绍了一些示例方案。 在所有这些情况下, 我们假定组织拥有包含高级威胁防护的 Office 365 订阅。
   
-|**示例应用场景**|**在这种情况下 ATP 安全附件保护是否适用？**|
+|**示例方案**|**在这种情况下 ATP 安全附件保护是否适用？**|
 |:-----|:-----|
 |Pat 的组织拥有 Office 365 企业版 E5, 但尚未为 ATP 安全附件定义任何策略。  <br/> |不可以。 虽然功能可用, 但必须至少定义一个 atp 安全附件策略, 才能将 ATP 安全附件保护到位。  <br/> |
 |先生为在 Contoso 的销售部门的员工。 先生/她的组织有一个仅适用于财务员工的 ATP 安全附件策略。  <br/> |不可以。 在这种情况下, 财务员工将具有 ATP 安全附件保护, 但在定义包含这些组的策略之前, 其他员工 (包括销售部门) 将不会。  <br/> |

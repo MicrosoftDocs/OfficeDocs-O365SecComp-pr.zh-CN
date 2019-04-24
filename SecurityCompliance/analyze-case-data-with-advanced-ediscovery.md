@@ -13,11 +13,11 @@ search.appverid:
 ms.assetid: dce7a700-3b6e-435f-88ba-e4b82c0f2b26
 description: '概述了 "Office 365 高级电子数据展示" 中的分析过程, 该过程允许您设置参数、运行选项和查看结果。 '
 ms.openlocfilehash: 11ef6f9bd052134625012742e64c466ae1e54f91
-ms.sourcegitcommit: e7a776a04ef6ed5e287a33cfdc36aa2d72862b55
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30998925"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32243023"
 ---
 # <a name="analyze-case-data-with-office-365-advanced-ediscovery"></a>使用 Office 365 高级电子数据展示分析事例数据
 

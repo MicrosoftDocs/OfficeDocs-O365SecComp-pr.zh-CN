@@ -17,11 +17,11 @@ search.appverid:
 - MET150
 description: '策略提示是当有人使用与 DLP 策略冲突的内容时显示的通知或警告。 您可以使用电子邮件通知和策略提示来提高知名度并帮助人们了解组织的策略。 您还可以为用户提供替代策略的选项, 以便它们不会被阻止, 如果他们具有有效的业务需求, 或者如果策略检测到误报也是如此。 '
 ms.openlocfilehash: b598b665de3d45846e221ea4c1b5c2f49a659c6b
-ms.sourcegitcommit: 8657e003ab1ff49113f222d1ee8400eff174cb54
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/16/2019
-ms.locfileid: "30639149"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32263844"
 ---
 # <a name="send-email-notifications-and-show-policy-tips-for-dlp-policies"></a>发送电子邮件通知并显示 DLP 策略的策略提示
 
@@ -291,6 +291,6 @@ ms.locfileid: "30639149"
     
 - [DLP 策略模板包含的内容](what-the-dlp-policy-templates-include.md)
     
-- [敏感信息类型查找什么](what-the-sensitive-information-types-look-for.md)
+- [敏感信息类型查找的内容](what-the-sensitive-information-types-look-for.md)
     
 

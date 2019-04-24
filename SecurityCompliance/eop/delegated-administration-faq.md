@@ -11,11 +11,11 @@ localization_priority: Normal
 ms.assetid: d6a87ce8-2c22-433a-b430-5eab14f6afdc
 description: 本主题为希望执行委派 Office 365 管理任务（包括能够为其他租户（公司）管理 Exchange Online Protection (EOP)）的 Microsoft 合作伙伴和经销商提供常见问题解答。
 ms.openlocfilehash: 41f2e8f0ed48273ff1934ca4f2306f29f92b1ff1
-ms.sourcegitcommit: 0f93b37c39d807dec91f118aa671a3430c47a9ac
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/20/2019
-ms.locfileid: "30691731"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32256190"
 ---
 # <a name="delegated-administration-faq"></a>委派管理常见问题解答
 

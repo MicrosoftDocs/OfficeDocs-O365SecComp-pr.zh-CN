@@ -18,11 +18,11 @@ search.appverid:
 ms.assetid: ec3587e4-7b4a-40fb-8fb8-8aa05aeae2ce
 description: 在 Office 365 中创建可自动将项目移动到用户的存档邮箱的存档和删除策略。
 ms.openlocfilehash: d1dafb145564e6db7e0df7505cff09d10a72e3af
-ms.sourcegitcommit: f0e3c9de0b545081a4d264f74559b941f6c71410
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "31958683"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32264550"
 ---
 # <a name="set-up-an-archive-and-deletion-policy-for-mailboxes-in-your-office-365-organization"></a>为 Office 365 组织中的邮箱设置存档和删除策略
 

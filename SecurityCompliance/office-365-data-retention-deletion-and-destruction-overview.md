@@ -14,11 +14,11 @@ ms.collection:
 - M365-security-compliance
 description: 有关 Microsoft 针对 Office 365 的策略的概述, 涉及数据保留、删除和销毁。
 ms.openlocfilehash: fcae11f10278f1357a68ea3f9a1178da97322775
-ms.sourcegitcommit: 1261a37c414111f869df5791548a768d853fda60
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/30/2019
-ms.locfileid: "31004119"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32262834"
 ---
 # <a name="data-retention-deletion-and-destruction-in-office-365"></a>Office 365 中的数据保留、删除和销毁
 

@@ -13,11 +13,11 @@ search.appverid:
 ms.assetid: aed65bcd-0a4f-43e9-b5e5-b98cc376bdf8
 description: '了解 Office 365 高级电子数据展示中的 "确定" 选项卡如何提供可帮助您确定检查事例文件集的正确大小的数据。 '
 ms.openlocfilehash: a9250a45129320517f96b9a335db95d164d2dae7
-ms.sourcegitcommit: e7a776a04ef6ed5e287a33cfdc36aa2d72862b55
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30999905"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32257812"
 ---
 # <a name="decision-based-on-the-results-in-office-365-advanced-ediscovery"></a>基于 Office 365 高级电子数据展示中的结果的决策
 

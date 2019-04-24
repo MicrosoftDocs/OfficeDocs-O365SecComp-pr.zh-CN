@@ -11,11 +11,11 @@ ms.service: O365-seccomp
 localization_priority: Normal
 description: 使用 Office 365 云应用安全条件访问应用程序控制实时停止泄露和泄露。
 ms.openlocfilehash: d8370b1e02866db8f92ab7f6a46b06ddc3ed1055
-ms.sourcegitcommit: 866d8cab6bcfdd124516a8369e47ec797bc7cf8a
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/27/2019
-ms.locfileid: "30312099"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32262984"
 ---
 # <a name="protect-apps-with-office-365-cloud-app-security-conditional-access-app-control"></a>使用 Office 365 云应用安全条件访问应用控制保护应用
 
@@ -28,7 +28,7 @@ ms.locfileid: "30312099"
 > [!IMPORTANT]
 > 若要使用云应用安全条件访问应用程序控制, 您需要一个 [Azure Active Directory P1 许可证](https://azure.microsoft.com/pricing/details/active-directory/) 和一个活动的[Office 365 云应用安全](office-365-cas-overview.md)订阅。
 
-## <a name="how-it-works"></a>工作原理
+## <a name="how-it-works"></a>运作方式
 
 条件访问应用程序控件使用反向代理体系结构, 并与 Azure AD 条件访问唯一集成。 Azure AD 条件访问允许您根据某些条件强制实施对组织的应用程序的访问控制。 这些条件定义 ** 了条件访问策略应用于哪些用户 (用户或用户组) 以及 *什么* (哪些云应用) 和 *where* (哪些位置和网络)。 确定了条件之后, 您可以将用户路由到 Office 365 云应用安全性, 在此可以通过应用访问和会话控制来使用条件访问应用程序控制来保护数据。
 

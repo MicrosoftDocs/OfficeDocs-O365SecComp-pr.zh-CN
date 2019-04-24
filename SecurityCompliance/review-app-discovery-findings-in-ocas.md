@@ -11,13 +11,13 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: aac65513-e75e-4c82-a668-9a6604dd9f9d
-description: 查看 Office 365 中的应用程序发现报告云应用安全可帮助您了解有关组织中的人员如何使用云应用的详细信息。在使用防火墙和代理中的日志文件创建应用程序发现报告之后, 请在应用发现仪表板中查看结果。
+description: 查看 Office 365 中的应用程序发现报告云应用安全可帮助您了解有关组织中的人员如何使用云应用的详细信息。 在使用防火墙和代理中的日志文件创建应用程序发现报告之后, 请在应用发现仪表板中查看结果。
 ms.openlocfilehash: f50ad372450b2a1404829eeb6f6964c1d954dccd
-ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30216252"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32264952"
 ---
 # <a name="review-app-discovery-findings-in-office-365-cloud-app-security"></a>查看 Office 365 云应用安全中的应用发现结果
   
@@ -25,7 +25,7 @@ ms.locfileid: "30216252"
 |:-----|:-----|:-----|:-----|
 |[开始评估](office-365-cas-overview.md) <br/> |[开始规划](get-ready-for-office-365-cas.md) <br/> |[开始部署](turn-on-office-365-cas.md) <br/> |你在这里!  <br/> [后续步骤](#next-steps) <br/> |
    
-云发现仪表板可与组织的 web 流量日志配合使用, 以提供有关云应用使用情况的详细信息。如果您是全局管理员、安全管理员或安全读者, 并且您的组织已[在 Office 365 Cloud app security 中创建了应用程序发现报告](create-app-discovery-reports-in-ocas.md), 则可以使用云发现仪表板深入了解您的人员如何组织使用的是 Office 365 和其他云应用。(云发现仪表板也称为 "生产应用程序发现"。)
+云发现仪表板可与组织的 web 流量日志配合使用, 以提供有关云应用使用情况的详细信息。 如果您是全局管理员、安全管理员或安全读者, 并且您的组织已[在 Office 365 Cloud app security 中创建了应用程序发现报告](create-app-discovery-reports-in-ocas.md), 则可以使用云发现仪表板深入了解您的人员如何组织使用的是 Office 365 和其他云应用。 (云发现仪表板也称为 "生产应用程序发现"。)
   
  通过云发现仪表板, 可以查看有关组织中的人员如何使用 Office 365 和其他应用程序的详细信息。 
   
@@ -53,7 +53,7 @@ ms.locfileid: "30216252"
     
 5. 使用**应用总部位置**映射查看用户使用的应用程序的位置。 
     
-6. 在 "地图" 区域上方, 查看发现的应用在**风险级别**概述中的风险分数。您可以通过在**发现的应用程序**区域中使用的相同组和类别查看风险。例如, 您可以查看每个分组中的流量来自高、中或低风险的应用程序。 
+6. 在 "地图" 区域上方, 查看发现的应用在**风险级别**概述中的风险分数。 您可以通过在**发现的应用程序**区域中使用的相同组和类别查看风险。 例如, 您可以查看每个分组中的流量来自高、中或低风险的应用程序。 
     
 ## <a name="dive-deeper-into-the-information"></a>深入了解信息
 
@@ -81,7 +81,7 @@ ms.locfileid: "30216252"
     
 4. 指定用户或 ip 地址, 并在 "**注释**" 框中键入有关排除这些用户或 ip 地址的原因的信息。 
     
-5. 选择" **添加**"。
+5. 选择**添加**。
     
 ## <a name="next-steps"></a>后续步骤
 

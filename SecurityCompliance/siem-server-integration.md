@@ -15,11 +15,11 @@ ms.custom:
 - SIEM
 description: '摘要: 阅读本文, 了解 SIEM server 与 Microsoft 365 集成的概述。'
 ms.openlocfilehash: 905f6fc9b6fd62748e25c27d6e5cdbedacc0f806
-ms.sourcegitcommit: 0f93b37c39d807dec91f118aa671a3430c47a9ac
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/20/2019
-ms.locfileid: "30693641"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32260660"
 ---
 # <a name="siem-server-integration-with-microsoft-365-services-and-applications"></a>SIEM server 与 Microsoft 365 服务和应用程序的集成
 
@@ -33,7 +33,7 @@ SIEM 服务器可以接收来自各种 Microsoft 365 服务和应用程序的数
 
 | Microsoft 365 服务或应用程序 | SIEM 服务器输入 | 要了解详细信息的资源 |
 | --- | --- | --- |
-| [Office 365 高级威胁防护](office-365-atp.md) <br/>   或者   <br/>[Office 365 威胁智能](office-365-ti.md) | 审核日志 | [SIEM 与 Office 365 高级威胁防护的集成](siem-integration-with-office-365-ti.md) |
+| [Office 365 高级威胁防护](office-365-atp.md) <br/>   或   <br/>[Office 365 威胁智能](office-365-ti.md) | 审核日志 | [SIEM 与 Office 365 高级威胁防护的集成](siem-integration-with-office-365-ti.md) |
 | [Microsoft Cloud App Security](https://docs.microsoft.com/cloud-app-security/what-is-cloud-app-security) | 日志集成 | [SIEM 与 Microsoft Cloud App Security 的集成](https://docs.microsoft.com/cloud-app-security/siem) |
 | [Office 365 云应用安全](office-365-cas-overview.md) | 日志集成 | [将 SIEM 服务器与 Office 365 云应用安全集成](integrate-your-siem-server-with-office-365-cas.md) |
 | [Windows Defender 高级威胁防护](https://docs.microsoft.com/windows/security/threat-protection/) | 日志集成 | [将警报拉入 SIEM 工具](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/configure-siem-windows-defender-advanced-threat-protection) |

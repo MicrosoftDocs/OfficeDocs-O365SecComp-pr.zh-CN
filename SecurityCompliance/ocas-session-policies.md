@@ -11,11 +11,11 @@ ms.service: O365-seccomp
 localization_priority: Normal
 description: office 365 云应用安全会话策略启用实时会话级别监控, affording 您可以精细查看 Office 365 应用程序, 以及根据您为用户会话设置的策略执行不同操作的能力。 通过会话控制, 您可以在监视会话和/或限制特定会话活动时使用条件访问应用程序控件的反向代理功能, 而无需完全允许或阻止访问。
 ms.openlocfilehash: e0e4b04ee8cc0f7a14adbc26b074a5f2947e44c2
-ms.sourcegitcommit: 866d8cab6bcfdd124516a8369e47ec797bc7cf8a
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/27/2019
-ms.locfileid: "30312089"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32263018"
 ---
 # <a name="session-policies-in-office-365-cloud-app-security"></a>Office 365 云应用安全中的会话策略
 

@@ -15,11 +15,11 @@ ms.collection:
 - M365-security-compliance
 description: 在发布 Office 365 邮件加密 (OME) 的新功能后, 您不再需要单独设置 IRM。 Microsoft 不建议使用旧版 OME 和具有 Azure 权限管理的 IRM 设置新的部署。 有关新的 OME 功能的详细信息, 请参阅 Office 365 邮件加密 FAQ。 如果你已准备好开始使用组织中的新 OME 功能, 请参阅设置基于 Azure 信息保护基础构建的新 Office 365 邮件加密功能。
 ms.openlocfilehash: 7902eafd45e90a9aa5ac4c34fbeec066425473b4
-ms.sourcegitcommit: 0f93b37c39d807dec91f118aa671a3430c47a9ac
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/20/2019
-ms.locfileid: "30692371"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32259490"
 ---
 # <a name="configure-irm-to-use-azure-rights-management"></a>将 IRM 配置为使用 Azure 权限管理
 

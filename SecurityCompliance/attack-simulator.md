@@ -16,11 +16,11 @@ ms.collection:
 - M365-security-compliance
 description: 作为 Office 365 全局管理员, 你可以使用攻击模拟器在你的组织中运行实际的攻击方案。 这可帮助你在真正的攻击击中你的业务之前识别和查找易受攻击的用户。
 ms.openlocfilehash: 88e71fe2db0ed9149ab84bb99e8b04910afdc265
-ms.sourcegitcommit: 1658be51e2c21ed23bc4467a98af74300a45b975
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/26/2019
-ms.locfileid: "30862454"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32249686"
 ---
 # <a name="attack-simulator-in-office-365"></a>Office 365 中的攻击模拟器
 

@@ -15,15 +15,15 @@ ms.collection:
 - M365-analytics
 description: Office 365、Microsoft 365 和服务保证中的审核和报告功能的概述。
 ms.openlocfilehash: a5df0dcb6f762723c6ec0102b2c39f1bc157720c
-ms.sourcegitcommit: 1261a37c414111f869df5791548a768d853fda60
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/30/2019
-ms.locfileid: "31004109"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32262964"
 ---
 # <a name="auditing-and-reporting-in-microsoft-cloud-services"></a>Microsoft 云服务中的审核和报告
 
-## <a name="introduction"></a>简介
+## <a name="introduction"></a>介绍
 Microsoft 云服务包括几个审核和报告功能, 客户可以使用这些功能来跟踪其租户内的用户和管理活动, 如对 Exchange online 和 SharePoint online 租户配置设置所做的更改。以及用户对文档和其他项目所做的更改。 客户可以使用云服务中提供的审核信息和报告更有效地管理用户体验、缓解风险并满足合规性义务。
 
 ## <a name="security--compliance-centers"></a>Security & 合规中心

@@ -15,11 +15,11 @@ search.appverid:
 ms.assetid: a8bdcbdd-9298-462f-b889-df26037a990c
 description: '启用存档邮箱并打开自动扩展存档, 以增加 Office 365 中的 "可恢复的项目" 文件夹的大小。 '
 ms.openlocfilehash: f419da5b1b42d52433e9fc288aa5b401a2123c1c
-ms.sourcegitcommit: e7a776a04ef6ed5e287a33cfdc36aa2d72862b55
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30998965"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32254384"
 ---
 # <a name="increase-the-recoverable-items-quota-for-mailboxes-on-hold"></a>为置于保留状态的邮箱增加可恢复项目的配额
 
@@ -221,7 +221,7 @@ $MailboxesOnHold = Get-Mailbox -ResultSize unlimited | Where-Object {($_.InPlace
 $MailboxesOnHold.DistinguishedName | Start-ManagedFolderAssistant
 ```
 
-## <a name="more-information"></a>更多信息
+## <a name="more-information"></a>详细信息
 
 - 启用用户的存档邮箱后, 请考虑告诉用户其邮箱中的其他项目 (不仅仅是 "可恢复的项目" 文件夹中的项目) 可能会被移至存档邮箱。 这是因为分配给 Exchange Online 邮箱的默认 MRM 策略包含一个保留标记 (名为 "默认2年移动到存档"), 该保留标记将项目移至存档邮箱, 然后在邮件传递到邮箱或由 "创建时间"user. 有关详细信息, 请参阅[Exchange Online 中的默认保留策略](https://go.microsoft.com/fwlink/p/?LinkId=746954)
     

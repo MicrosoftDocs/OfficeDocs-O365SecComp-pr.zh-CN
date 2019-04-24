@@ -14,11 +14,11 @@ ms.collection:
 - M365-security-compliance
 description: 有关电子数据展示功能的概述, 以及 Office 365 中用于审核使用和透明度的其他搜索功能。
 ms.openlocfilehash: a7a4412e116fe0cbb28ae1ac193178ac7e3097a3
-ms.sourcegitcommit: 1261a37c414111f869df5791548a768d853fda60
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/30/2019
-ms.locfileid: "31004159"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32262804"
 ---
 # <a name="ediscovery-and-search-features"></a>电子数据展示和搜索功能 
 
@@ -39,7 +39,7 @@ SharePoint Online 和 OneDrive for business 中的事件在日志中出现的30�
 | 属性 | 说明 |
 |----------------|----------------------------------------------------------------------------------------------------------------------|
 | 日期 | 事件的日期和时间 |
-| 用户 | 执行操作的用户 |
+| User | 执行操作的用户 |
 | ClientIP | 记录活动时使用的设备的 IPv4 或 IPv6 地址。 |
 | CreationTime | 用户执行活动时的日期和时间 (采用协调通用时间 (UTC))。 |
 | EventSource | 标识发生的事件。 可能的值为 SharePoint 和 ObjectModel。 |

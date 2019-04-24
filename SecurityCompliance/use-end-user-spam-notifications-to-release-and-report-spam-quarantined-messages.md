@@ -13,11 +13,11 @@ ms.collection:
 - M365-security-compliance
 description: '查看有关隔离电子邮件的管理员的最终用户垃圾邮件通知消息的用户可以对邮件执行以下操作。 '
 ms.openlocfilehash: f9a8cdf21dfae631b311651aa2259af2f76d73b8
-ms.sourcegitcommit: 0f93b37c39d807dec91f118aa671a3430c47a9ac
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/20/2019
-ms.locfileid: "30691971"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32264326"
 ---
 # <a name="use-end-user-spam-notifications-to-release-and-report-spam-quarantined-messages"></a>使用最终用户垃圾邮件通知释放和报告垃圾邮件隔离邮件
 

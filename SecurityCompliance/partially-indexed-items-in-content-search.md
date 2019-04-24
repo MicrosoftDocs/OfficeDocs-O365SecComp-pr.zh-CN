@@ -20,11 +20,11 @@ search.appverid:
 ms.assetid: d1691de4-ca0d-446f-a0d0-373a4fc8487b
 description: '了解 Exchange 和 SharePoint 中的未编制索引的项目, 您可以通过 Security & 合规性中心在内容搜索运行中加入未编制索引的项目。 '
 ms.openlocfilehash: da51788b3f017811756c3c07294bf6e2712e2e2c
-ms.sourcegitcommit: e7a776a04ef6ed5e287a33cfdc36aa2d72862b55
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30999215"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32262314"
 ---
 # <a name="partially-indexed-items-in-content-search-in-office-365"></a>处理 Office 365 内容搜索中的部分索引项
 
@@ -106,7 +106,7 @@ ms.locfileid: "30999215"
   
 有关 sharepoint 文档的索引限制列表, 请参阅[sharepoint Online 的搜索限制](https://support.office.com/article/7c06e9ed-98b6-4304-a900-14773a8fa32f)。
   
-|**索引限制**|**注释**|**说明**|
+|**索引限制**|**注释**|**Description**|
 |:-----|:-----|:-----|
 |最大附件大小 (不包括 Excel 文件)  <br/> |150 MB  <br/> |将解析索引的电子邮件附件的最大大小。 将不会分析大于此限制的任何附件以编制索引, 同时会将包含附件的邮件标记为部分索引。  <br/><br/> **注意:** 分析是索引服务从附件中提取文本的过程, 删除标点符号和空格等不必要的字符, 然后将文本划分为单词 (在称为 "标记化的过程" 中), 然后将这些文本存储在索引中。           |
 |Excel 文件的最大大小  <br/> |4 MB  <br/> |一个或多个 Excel 文件的最大大小, 该文件位于网站上或附加到将针对索引进行分析的电子邮件。 将不会分析大于此限制的任何 Excel 文件, 并且文件或电子邮件中包含文件附件的邮件将被标记为未索引。  <br/> |

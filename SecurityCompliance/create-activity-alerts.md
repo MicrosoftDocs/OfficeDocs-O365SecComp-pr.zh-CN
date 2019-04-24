@@ -16,11 +16,11 @@ search.appverid:
 ms.assetid: 72bbad69-035b-4d33-b8f4-549a2743e97d
 description: 在安全与合规中心中添加和管理活动警报, 以便 Office 365 会在用户在 Office 365 中执行特定活动时向您发送电子邮件通知。
 ms.openlocfilehash: d71763d4633c3396afdf58400e9cb7b8b8a468e8
-ms.sourcegitcommit: 6c9340e4eb221bf81472ff3f1ae25ae21aaf5297
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "31813983"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32258658"
 ---
 # <a name="create-activity-alerts-in-the-office-365"></a>在 Office 365 中创建活动通知
 
@@ -94,7 +94,7 @@ ms.locfileid: "31813983"
     
 若要重新打开活动通知, 只需重复这些步骤, 然后单击 "**关闭**" 切换开关, 将状态更改为 **"开启**"。
   
-## <a name="more-information"></a>更多信息
+## <a name="more-information"></a>详细信息
 
 - 下面的示例展示了如何向 Security & 合规中心中的 "在发送此通知的位置" 字段 (并在 "**活动通知**" 页面上的 "**收件人**" 下列出) 中指定的用户发送电子邮件通知。 
     

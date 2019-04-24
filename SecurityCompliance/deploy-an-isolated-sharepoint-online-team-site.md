@@ -1,5 +1,5 @@
 ---
-title: 部署独立 SharePoint Online 团队网站
+title: 部署独立的 SharePoint Online 团队网站
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -12,14 +12,14 @@ ms.collection: Ent_O365
 ms.custom: Ent_Solutions
 ms.assetid: 3033614b-e23b-4f68-9701-f62525eafaab
 description: '摘要: 使用这些分步说明部署一个新的独立 SharePoint Online 团队网站。'
-ms.openlocfilehash: e59c92ff488f82f4ea042364d742f7418da50167
-ms.sourcegitcommit: e7a776a04ef6ed5e287a33cfdc36aa2d72862b55
+ms.openlocfilehash: 4cb60cd55f526592cb469d80a061375a4f556afe
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "31000184"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32256996"
 ---
-# <a name="deploy-an-isolated-sharepoint-online-team-site"></a>部署独立 SharePoint Online 团队网站
+# <a name="deploy-an-isolated-sharepoint-online-team-site"></a>部署独立的 SharePoint Online 团队网站
 
  **摘要:** 按照这些分步说明部署一个新的独立 SharePoint Online 团队网站。
   
@@ -83,7 +83,7 @@ ms.locfileid: "31000184"
 6. 对其他组重复步骤3-5。
     
 > [!NOTE]
-> 您需要使用 Azure 门户来创建组, 以便他们启用 Office 功能。 如果已将 SharePoint Online 独立网站配置为具有 Azure 信息保护 (AIP) 标签的高度机密网站来加密文件和分配对特定组的权限, 则必须使用 Office 功能创建允许的组了. Azure AD 组创建后, 无法更改其 Office 功能设置。 
+> 您需要使用 Azure 门户来创建组, 以便他们启用 Office 功能。 如果后来将 SharePoint Online 独立网站配置为具有 Azure 信息保护标签的高度机密网站来加密文件, 并为特定组分配权限, 则必须已在启用 Office 功能的情况下创建允许的组。 Azure AD 组创建后, 无法更改其 Office 功能设置。 
   
 下面是具有三个网站访问组的结果配置。
   
@@ -105,7 +105,7 @@ ms.locfileid: "31000184"
   
 对于 Office 管理中心, 使用已分配有用户帐户管理员或公司管理员角色的用户帐户登录, 并使用组将相应的用户帐户和组添加到相应的访问组。
   
-对于 PowerShell, 首先[使用 Azure Active Directory V2 PowerShell 模块进行连接](https://go.microsoft.com/fwlink/?linkid=842218)。
+对于 PowerShell, 首先[与 Azure Active Directory PowerShell for Graph 模块进行连接](https://docs.microsoft.com/office365/enterprise/powershell/connect-to-office-365-powershell#connect-with-the-azure-active-directory-powershell-for-graph-module)。
   
 接下来, 使用以下命令块将单个用户帐户添加到访问组中:
   
@@ -161,7 +161,7 @@ Get-AzureADGroupMember -ObjectId (Get-AzureADGroup | Where { $_.DisplayName -eq 
   
 首先, 使用这些步骤创建 SharePoint Online 团队网站。
   
-1. 使用也将用于管理 sharepoint online 团队网站 (SharePoint online 管理员) 的帐户登录到管理中心。 For help, see [Where to sign in to Office 365](https://support.office.com/Article/Where-to-sign-in-to-Office-365-e9eb7d51-5430-4929-91ab-6157c5a050b4).
+1. 使用将同时用于管理 SharePoint Online 团队网站的帐户（即 SharePoint Online 管理员帐户）登录管理中心。 如需帮助，请参阅[如何登录到 Office 365](https://support.office.com/Article/Where-to-sign-in-to-Office-365-e9eb7d51-5430-4929-91ab-6157c5a050b4)。
     
 2. 在磁贴列表中，单击“SharePoint”****。
     
@@ -173,9 +173,9 @@ Get-AzureADGroupMember -ObjectId (Get-AzureADGroup | Where { $_.DisplayName -eq 
     
 6. 在 "**团队网站说明" 中,** 键入网站用途的可选说明。
     
-7. 在“隐私设置”中，选择“专用 - 仅成员可以访问此网站”，然后单击“下一步”************。
+7. 在“**隐私设置**”中，选择“**专用 - 仅成员可以访问此网站**”，然后单击“**下一步**”。
     
-8. 在“希望添加哪些人员?”窗格中，单击“完成”********。
+8. 在“**希望添加哪些人员?**”窗格中，单击“**完成**”。
     
 接下来, 从新的 SharePoint Online 团队网站配置权限。
   

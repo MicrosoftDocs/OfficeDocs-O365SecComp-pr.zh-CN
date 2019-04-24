@@ -13,11 +13,11 @@ search.appverid:
 ms.assetid: 2c956776-0016-4be6-b4cd-133a237f4a9e
 description: 人们经常使用电子邮件来交换敏感信息，例如财务数据、法律合同、机密产品信息、销售报表和预测、患者健康信息或客户和员工信息。因此，邮箱可能会成为一个包含大量潜在敏感信息的存储库，信息泄露可能会成为您组织的严重威胁。
 ms.openlocfilehash: aef3acaba6b0efe4550958ce1d98add371069648
-ms.sourcegitcommit: 0f93b37c39d807dec91f118aa671a3430c47a9ac
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/20/2019
-ms.locfileid: "30692341"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32253980"
 ---
 # <a name="information-rights-management-in-exchange-online"></a>Exchange Online 中的信息权限管理
 

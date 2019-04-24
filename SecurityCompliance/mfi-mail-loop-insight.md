@@ -10,11 +10,11 @@ localization_priority: Normal
 ms.assetid: cb801985-3c89-4979-9c18-17829a4cb563
 description: 管理员可以了解安全 & 合规性中心的邮件流仪表板中的邮件循环见解。
 ms.openlocfilehash: 7229f8ebfc9ca1a46d91acc210199a3a6002c01e
-ms.sourcegitcommit: e7a776a04ef6ed5e287a33cfdc36aa2d72862b55
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "31000315"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32267065"
 ---
 # <a name="mail-loop-insight"></a>邮件循环见解
 

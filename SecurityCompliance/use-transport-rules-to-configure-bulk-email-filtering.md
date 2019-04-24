@@ -14,11 +14,11 @@ ms.collection:
 - M365-security-compliance
 description: 管理员可以了解如何使用 Exchange Online Protection 中的邮件流规则进行批量电子邮件筛选。
 ms.openlocfilehash: 43f0af6fe41bc7f8f4a62d0d87dbd825fb868f7b
-ms.sourcegitcommit: 0f93b37c39d807dec91f118aa671a3430c47a9ac
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/20/2019
-ms.locfileid: "30693281"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32267003"
 ---
 # <a name="use-mail-flow-rules-to-configure-bulk-email-filtering-in-exchange-online-protection"></a>使用邮件流规则在 Exchange Online Protection 中配置批量电子邮件筛选
 
@@ -31,7 +31,7 @@ ms.locfileid: "30693281"
   
 ## <a name="create-a-mail-flow-rule-to-filter-bulk-email-messages-based-on-text-patterns"></a>创建邮件流规则, 以根据文本模式筛选批量电子邮件
 
-1. 在 Exchange 管理中心 (EAC) 中, 转到 "**邮件流** \> **规则**"。
+1. 在 Exchange 管理中心 (EAC) 中，转到“邮件流”****\>“规则”****。
     
 2. 单击 "**添加** !["](media/ITPro-EAC-AddIcon.gif) "添加" 图标, 然后选择 "**创建新规则**"。
     

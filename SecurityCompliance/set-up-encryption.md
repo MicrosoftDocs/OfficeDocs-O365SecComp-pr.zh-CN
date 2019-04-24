@@ -14,11 +14,11 @@ search.appverid:
 ms.assetid: e86fc991-0161-4f01-9c1c-d25e87733d06
 description: 使用 Office 365 时, 某些加密功能在默认情况下处于打开状态。可以配置其他功能以满足某些合规性或法律要求。
 ms.openlocfilehash: 1bc4ceb7762c96f55c03f89e7c448f9e4073063e
-ms.sourcegitcommit: e24f70699021c4f4ba56508ad0afb6f65010c357
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/05/2019
-ms.locfileid: "31479638"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32260790"
 ---
 # <a name="set-up-encryption-in-office-365-enterprise"></a>设置 Office 365 企业版中的加密
 
@@ -29,7 +29,7 @@ ms.locfileid: "31479638"
   
 在 Office 365 中, 默认情况下提供几种加密功能。 可以配置其他加密功能, 以满足某些合规性或法律要求。 下表介绍了用于不同方案的几种加密方法。
   
-|**方案**|**加密方法**|
+|**应用场景**|**加密方法**|
 |:-----|:-----|
 |文件保存在 Windows 计算机上  <br/> |可以使用 Windows 设备上的 BitLocker 完成在计算机级别加密。 作为企业管理员或 IT 专业人员, 你可以使用 Microsoft 部署工具包 (MDT) 进行设置。 请参阅[设置适用于 BitLocker 的 MDT](https://go.microsoft.com/fwlink/?linkid=849282)。  <br/> |
 |文件保存在移动设备上  <br/> |某些类型的移动设备会对默认情况下保存到这些设备的文件进行加密。 通过[内置的 Office 365 移动设备管理功能](https://support.office.com/article/a1da44e5-7475-4992-be91-9ccec25905b0), 您可以设置策略, 以确定是否允许移动设备访问 Office 365 中的数据。 例如, 您可以设置一个只允许加密内容的设备访问 Office 365 数据的策略。 请参阅[创建和部署设备安全策略](https://support.office.com/article/d310f556-8bfb-497b-9bd7-fe3c36ea2fd6)。  <br/> 若要更好地控制移动设备与 Office 365 的交互方式, 可以考虑添加[Microsoft Intune](https://aka.ms/qzln04)。 请参阅[在 MDM for Office 365 和 Microsoft Intune 中选择](https://support.office.com/article/c93d9ab9-efb2-4349-9b93-30c30562ee22)。  <br/> |

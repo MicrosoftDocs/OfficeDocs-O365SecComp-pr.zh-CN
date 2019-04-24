@@ -16,11 +16,11 @@ search.appverid:
 ms.assetid: 84a595b8-cd77-4f66-ac52-57a33ddd4773
 description: 了解如何使用网络上传将 RMS 加密的 PST 文件导入 Office 365 中的用户邮箱。
 ms.openlocfilehash: 46f77f3fe173da23e08284884bb85c69ab53f710
-ms.sourcegitcommit: f0e3c9de0b545081a4d264f74559b941f6c71410
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "31958293"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32263666"
 ---
 # <a name="use-network-upload-to-import-rms-encrypted-pst-files-to-office-365"></a>使用网络上载将 RMS 加密的 PST 文件导入到 Office 365
 

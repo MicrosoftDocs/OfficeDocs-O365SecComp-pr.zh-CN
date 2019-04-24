@@ -14,15 +14,15 @@ ms.collection:
 - M365-security-compliance
 description: 拒绝服务 (DoS) 攻击概述。
 ms.openlocfilehash: a7e67fcc87867190f345c5dad14e38a473420eab
-ms.sourcegitcommit: 1261a37c414111f869df5791548a768d853fda60
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/30/2019
-ms.locfileid: "31004069"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32262814"
 ---
 # <a name="defending-against-denial-of-service-attacks-in-office-365"></a>防御 Office 365 中的拒绝服务攻击
 
-## <a name="introduction"></a>简介
+## <a name="introduction"></a>介绍
 microsoft 为超过200个云服务 (包括 microsoft Azure、microsoft Bing、microsoft Office 365、microsoft Dynamics 365、microsoft OneDrive、Skype 和 Xbox Live) 提供托管在我们的全球云中的可信赖基础结构超过100个数据中心的基础结构。
 
 作为具有大量 internet 状态以及提供云服务的显著 internet 属性的全球组织, Microsoft 是黑客和其他恶意用户的一个大型、常见的目标。 网络--客户端与 Microsoft 云之间的通信层--是恶意攻击的最大目标之一。 事实上, 在很多年中, Microsoft 一直在某种形式的基于网络的 cyberattack 持续和永久地进行。 大多数情况下, 至少有一个 Microsoft 的 Internet 属性遇到某种形式的攻击。 如果没有可抵御这些攻击的可靠且持久的缓解系统, Microsoft 的云服务将处于脱机状态, 并且对客户不可用。

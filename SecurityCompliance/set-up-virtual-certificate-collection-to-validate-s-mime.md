@@ -13,11 +13,11 @@ search.appverid:
 ms.assetid: 04a616e6-197c-490c-ae8c-c8d5f0f0b3dd
 description: 管理员可以了解如何创建将用于验证 Exchange Online 中的 S/MIME 证书的虚拟证书集合。
 ms.openlocfilehash: 15998bce1971952286d8dd4401a92f1e9e47c25d
-ms.sourcegitcommit: 0f93b37c39d807dec91f118aa671a3430c47a9ac
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/20/2019
-ms.locfileid: "30693551"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32260720"
 ---
 # <a name="set-up-virtual-certificate-collection-in-exchange-online-to-validate-smime"></a>在 Exchange Online 中设置虚拟证书集合以验证 S/MIME
 
@@ -27,7 +27,7 @@ ms.locfileid: "30693551"
 
 您可以通过在 Windows PowerShell 中使用**导出证书**cmdlet 导出证书, 并将_Type_值指定为 SST, 从而创建此 SST 证书存储文件。 有关说明, 请参阅[Export-Certificate](https://docs.microsoft.com/powershell/module/pkiclient/export-certificate)。
 
-拥有 SST 证书存储文件后, 在 exchange online PowerShell 中使用以下语法将 SST 文件内容保存在 exchange online 虚拟证书存储中。 若要连接到 exchange online powershell, 请参阅[连接到 exchange online powershell](https://go.microsoft.com/fwlink/p/?linkid=396554)。
+拥有 SST 证书存储文件后, 在 exchange online PowerShell 中使用以下语法将 SST 文件内容保存在 exchange online 虚拟证书存储中。 若要连接到 Exchange Online PowerShell，请参阅[连接到 Exchange Online PowerShell](https://go.microsoft.com/fwlink/p/?linkid=396554)。
 
 ```
 Set-SmimeConfig -SMIMECertificateIssuingCA (Get-Content <FileNameAndPath>.sst -Encoding Byte)

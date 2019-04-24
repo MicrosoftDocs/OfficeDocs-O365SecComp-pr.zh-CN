@@ -11,13 +11,13 @@ localization_priority: Normal
 ms.assetid: faf1efd1-3b0c-411a-804d-17f37292eac0
 description: 请遵循所建议的这些 Exchange Online Protection (EOP) 最佳做法，以成功达到目的，并避免常见的配置错误。
 ms.openlocfilehash: 3b8cf41be41e199017dcff7fd3762711402d8ca2
-ms.sourcegitcommit: c0d4fe3e43e22353f30034567ade28330266bcf7
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/27/2019
-ms.locfileid: "30900181"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32256640"
 ---
-# <a name="best-practices-for-configuring-eop"></a>配置 EOP 的最佳实践
+# <a name="best-practices-for-configuring-eop"></a>配置 EOP 的最佳做法
   
 请遵循所建议的这些 Exchange Online Protection (EOP) 最佳做法，以成功达到目的，并避免常见的配置错误。建议一般情况下使用默认的配置设置。参阅本主题的前提是，你已经完成安装过程。如果还没有完成 EOP 安装，请参阅[设置 EOP 服务](set-up-your-eop-service.md)。
   

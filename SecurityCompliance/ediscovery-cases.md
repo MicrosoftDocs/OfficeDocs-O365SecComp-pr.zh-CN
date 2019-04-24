@@ -16,11 +16,11 @@ search.appverid:
 ms.assetid: 8dd335ab-29d0-41c3-8dd8-9f7c7481e60c
 description: 使用安全 & 合规性中心在您的组织中创建和管理电子数据展示事例。 您可以向事例分配成员、将内容位置置于保留状态、运行与事例关联的内容搜索以及导出搜索结果。 您还可以准备事例数据, 以便在高级电子数据展示中进行进一步分析。
 ms.openlocfilehash: 5f31153e70495dc28ee276c36e9edfc67638956e
-ms.sourcegitcommit: f0e3c9de0b545081a4d264f74559b941f6c71410
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "31958523"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32257870"
 ---
 # <a name="ediscovery-cases-in-the-security--compliance-center"></a>安全 & 合规中心中的电子数据展示案例
 

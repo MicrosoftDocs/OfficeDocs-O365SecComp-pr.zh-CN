@@ -16,11 +16,11 @@ search.appverid: MET150
 ms.assetid: 8d274fe3-db51-4107-ba64-865e7155b355
 description: 引导您完成影响 Office 365 环境安全性的租户范围设置的建议配置。 您的安全需求可能需要更高或更低的安全性。 使用这些建议作为起点。
 ms.openlocfilehash: 91471f5e4b16f6950b1f74d747ebce3f802e4890
-ms.sourcegitcommit: f0e3c9de0b545081a4d264f74559b941f6c71410
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "31958533"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32260264"
 ---
 # <a name="configure-your-office-365-tenant-for-increased-security"></a>配置 Office 365 租户以提高安全性
 

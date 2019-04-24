@@ -15,11 +15,11 @@ search.appverid:
 ms.assetid: ''
 description: ''
 ms.openlocfilehash: ef56c881acd05855517f61f2e92ec42efb6e8578
-ms.sourcegitcommit: 2c5834235c32b2616e1813ce24eeb3419a09629f
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/02/2019
-ms.locfileid: "31029899"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32258404"
 ---
 # <a name="configure-settings-in-data-investigations"></a>在数据调查中配置设置
 

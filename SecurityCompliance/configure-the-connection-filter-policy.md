@@ -15,11 +15,11 @@ ms.collection:
 - M365-security-compliance
 description: 若要确保从不受信任的人发送的电子邮件被阻止, 可以使用连接筛选器策略创建您信任的 IP 地址的允许列表 (也称为 "安全发件人列表")。 您还可以创建阻止的发件人列表。
 ms.openlocfilehash: 5ca6ad6721ac03e5ae62b40dda219671bde3e1c1
-ms.sourcegitcommit: 0f93b37c39d807dec91f118aa671a3430c47a9ac
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/20/2019
-ms.locfileid: "30693541"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32259002"
 ---
 # <a name="configure-the-connection-filter-policy"></a>配置连接筛选器策略
  

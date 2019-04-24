@@ -17,11 +17,11 @@ search.appverid:
 ms.assetid: 8f20ca4f-a908-46ec-99e6-9890d269ecf2
 description: '了解在 Office 365 中使用电子数据展示工具的搜索运行中估计的估计和实际搜索结果可能有所不同。 '
 ms.openlocfilehash: d3a34a58f9bd8213922824e34a77742f5cd4c36b
-ms.sourcegitcommit: e7a776a04ef6ed5e287a33cfdc36aa2d72862b55
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "31001045"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32257768"
 ---
 # <a name="differences-between-estimated-and-actual-ediscovery-search-results-in-office-365"></a>Office 365 中的预计和实际电子数据展示搜索结果之间的差异
 

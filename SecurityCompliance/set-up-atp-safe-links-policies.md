@@ -16,11 +16,11 @@ ms.collection:
 - M365-security-compliance
 description: 设置安全链接策略以保护您的组织免受 Word、Excel、PowerPoint 和 Visio 文件以及电子邮件中的恶意链接。
 ms.openlocfilehash: d02866b7ab9a4da30a14aa0c55a42935926e99e3
-ms.sourcegitcommit: 1658be51e2c21ed23bc4467a98af74300a45b975
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/26/2019
-ms.locfileid: "30862474"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32267051"
 ---
 # <a name="set-up-office-365-atp-safe-links-policies"></a>设置 Office 365 ATP 安全链接策略
 
@@ -75,7 +75,7 @@ ms.locfileid: "30862474"
     
 5. 在 "**应用于除电子邮件以外的内容的设置**" 部分, 选择 (或清除) 要使用的选项。 (我们建议您选择所有选项。) 
     
-6. 选择“保存”****。
+6. 选择“**保存**”。
     
 ## <a name="step-3-add-or-edit-atp-safe-links-policies-that-apply-to-specific-email-recipients"></a>步骤 3: 添加 (或编辑) 适用于特定电子邮件收件人的 ATP 安全链接策略
 
@@ -107,7 +107,7 @@ ms.locfileid: "30862474"
     
   - 在 "**应用**于" 部分中, 选择 **"收件人是其成员**", 然后选择要包括在策略中的组。 选择 "**添加**", 然后选择 **"确定"**。
     
-6. 选择“保存”****。
+6. 选择“**保存**”。
     
 ## <a name="step-4-learn-about-atp-safe-links-policy-options"></a>步骤 4: 了解 ATP 安全链接策略选项
 

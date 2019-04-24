@@ -10,11 +10,11 @@ ms.service: o365-seccomp
 localization_priority: Normal
 description: 了解新的 Microsoft 365 合规性中心, 包括它包含的内容、如何获取它以及后续步骤。
 ms.openlocfilehash: ae608d1aafb803fabe6ed1eba3804b9921bac7b2
-ms.sourcegitcommit: 48b77ec6fb499175507fc08f11dc9f5efe6c4858
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/08/2019
-ms.locfileid: "31518382"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32265536"
 ---
 # <a name="overview-of-the-all-new-microsoft-365-compliance-center"></a>全新 Microsoft 365 合规性中心概述
 

@@ -16,11 +16,11 @@ ms.collection:
 - M365-security-compliance
 description: 将 Office 365 高级威胁防护扩展到 SharePoint Online、OneDrive for business 和 Microsoft 团队中的文件, 为您的组织启用更安全的协作。
 ms.openlocfilehash: 55bd613cd89819906773d663deb6278f804cb9de
-ms.sourcegitcommit: 0f93b37c39d807dec91f118aa671a3430c47a9ac
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/20/2019
-ms.locfileid: "30692441"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32249628"
 ---
 # <a name="office-365-atp-for-sharepoint-onedrive-and-microsoft-teams"></a>适用于 SharePoint、OneDrive 和 Microsoft 团队的 Office 365 ATP
 
@@ -28,7 +28,7 @@ ms.locfileid: "30692441"
 
 用户定期共享文件, 并使用 SharePoint、OneDrive 和 Microsoft 团队进行协作。 使用[Office 365 高级威胁防护](office-365-atp.md)(ATP), 您的组织可以更安全地进行协作。 ATP 可帮助检测和阻止在工作组网站和文档库中被标识为恶意的文件。  
   
-## <a name="how-it-works"></a>工作原理
+## <a name="how-it-works"></a>运作方式
 
 如果 SharePoint Online、OneDrive for business 和 Microsoft 团队中的文件被标识为恶意, ATP 将直接与文件存储集成以锁定该文件。 下图显示了在库中检测到的恶意文件的示例。
   

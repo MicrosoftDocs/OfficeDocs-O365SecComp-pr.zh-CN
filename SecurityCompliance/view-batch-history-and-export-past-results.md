@@ -1,5 +1,5 @@
 ---
-title: 在 Office 365 高级电子数据展示中查看批处理历史记录和导出过去的结果
+title: 在 Office 365 高级电子数据展示中查看批次历史记录和导出过去的结果
 ms.author: chrfox
 author: chrfox
 manager: laurawi
@@ -14,13 +14,13 @@ search.appverid:
 ms.assetid: 35d52b41-75ab-4144-9edf-31e11453bd5d
 description: '了解如何查看所选导出批处理会话的详细信息, 以及如何撤消 Office 365 高级电子数据展示中的上次导出会话。  '
 ms.openlocfilehash: a55f299669c2a404ee176153aa766210a3141199
-ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30214942"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32243488"
 ---
-# <a name="view-batch-history-and-export-past-results-in-office-365-advanced-ediscovery"></a>在 Office 365 高级电子数据展示中查看批处理历史记录和导出过去的结果
+# <a name="view-batch-history-and-export-past-results-in-office-365-advanced-ediscovery"></a>在 Office 365 高级电子数据展示中查看批次历史记录和导出过去的结果
 
 > [!NOTE]
 > 若要使用高级电子数据展示，组织必须订阅随附高级合规性加载项的 Office 365 E3，或订阅 E5。如果没有此计划，但又要试用高级电子数据展示，可以[注册 Office 365 企业版 E5 试用版](https://go.microsoft.com/fwlink/p/?LinkID=698279)。 
@@ -41,11 +41,11 @@ ms.locfileid: "30214942"
     
     ![导出批量历史记录](media/04c5b75c-348c-491d-b4fe-716659333890.png)
   
-3. 如果需要回滚之前的会话, 请单击 "**撤消上次会话**"。回滚可以执行多次, 这将取消最后一个会话。
+3. 如果需要回滚之前的会话, 请单击 "**撤消上次会话**"。 回滚可以执行多次, 这将取消最后一个会话。
     
 4. 如果要从以前执行的导出批处理会话随时下载数据, 请单击要导出的所**** 需导出![批处理旁边的 "下载](media/de69b920-a6ac-4ddb-b93e-e1cc5888e6c4.gif)图标导出批次历史记录下载" 图标。 
     
-5. 当显示 "**共享访问签名**" 对话框时, 单击 "**复制到剪贴板**" 以将导出会话数据复制到本地计算机, 然后单击 "**关闭**"。将显示 Office 365 &amp;安全合规中心**电子数据展示导出工具**对话框。 
+5. 当显示 "**共享访问签名**" 对话框时, 单击 "**复制到剪贴板**" 以将导出会话数据复制到本地计算机, 然后单击 "**关闭**"。 将显示 Office 365 &amp;安全合规中心**电子数据展示导出工具**对话框。 
     
     ![“导出电子数据展示”对话框](media/01f79d2d-6da0-45e6-9c6f-ab12347572cb.gif)
   
@@ -55,7 +55,7 @@ ms.locfileid: "30214942"
     
 2. 单击 "**浏览**" 以选择用于在本地计算机上存储下载的导出文件的目标位置。 
     
-3. 单击 "**启动**"。将导出文件下载到本地计算机。 
+3. 单击“开始”****。 将导出文件下载到本地计算机。 
     
 ## <a name="see-also"></a>另请参阅
 

@@ -15,11 +15,11 @@ search.appverid:
 - MET150
 description: 敏感信息类型查找特定模式, 并通过确保正确的格式设置、强制校验和来查找相关的关键字或其他信息来 corroborate。 其中一些功能是由内部函数执行的。 本主题说明这些函数查找的内容, 以帮助您了解预定义的敏感信息类型的工作原理。
 ms.openlocfilehash: d0aeb38001f42d9db2b124466b02746ee106b078
-ms.sourcegitcommit: 8657e003ab1ff49113f222d1ee8400eff174cb54
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/16/2019
-ms.locfileid: "30638929"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32266914"
 ---
 # <a name="what-the-dlp-functions-look-for"></a>DLP 函数查找的内容
 

@@ -14,11 +14,11 @@ search.appverid:
 ms.assetid: f6cd6588-f6b6-424a-a9ab-3782b842faee
 description: '查看为 Office 365 高级电子数据展示中的分析过程设置选项的步骤, 包括临近重复项、电子邮件线索和主题。  '
 ms.openlocfilehash: 4689638f5cebe2ef17fcea5a13ff06edc29e5930
-ms.sourcegitcommit: e7a776a04ef6ed5e287a33cfdc36aa2d72862b55
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30998525"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32260884"
 ---
 # <a name="set-analyze-options-in-office-365-advanced-ediscovery"></a>在 Office 365 高级电子数据展示中设置分析选项
 

@@ -16,11 +16,11 @@ ms.collection:
 - M365-security-compliance
 description: 使用新的安全仪表板查看 Office 365 的威胁防护状态, 查看安全警报并对其采取操作。
 ms.openlocfilehash: 83e75f1a38038f1c95697f4db3e7b1134d03779d
-ms.sourcegitcommit: 0f93b37c39d807dec91f118aa671a3430c47a9ac
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/20/2019
-ms.locfileid: "30692751"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32261054"
 ---
 # <a name="security-dashboard"></a>安全仪表板
 
@@ -85,7 +85,7 @@ ms.locfileid: "30692751"
 |由[ATP](office-365-atp.md)阻止 |由 ATP 阻止的电子邮件数乘以收件人数 |
 |传递后删除 |由[零小时自动清除](zero-hour-auto-purge.md)删除的邮件数乘以收件人数 |
 
-## <a name="malware"></a>受到
+## <a name="malware"></a>恶意软件
 
 恶意软件小组件显示过去七 (7) 天的恶意软件趋势和恶意软件系列类型的详细信息。
 

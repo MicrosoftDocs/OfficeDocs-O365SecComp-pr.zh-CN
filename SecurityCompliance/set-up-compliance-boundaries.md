@@ -16,11 +16,11 @@ search.appverid:
 ms.assetid: 1b45c82f-26c8-44fb-9f3b-b45436fe2271
 description: 使用合规性边界在 Office 365 组织中创建用于控制电子数据展示管理器可搜索的用户内容位置的逻辑边界。 合规性边界使用搜索权限筛选 (也称为合规性安全筛选器) 控制特定用户可以搜索哪些邮箱、SharePoint 网站和 OneDrive 帐户。
 ms.openlocfilehash: b23c6d0c96874fb7e6205de6bf8a7f4eb00e4254
-ms.sourcegitcommit: 691370682825a7601bd4b77d0a8c4b51ed15682f
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/31/2019
-ms.locfileid: "31014021"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32264648"
 ---
 # <a name="set-up-compliance-boundaries-for-ediscovery-investigations-in-office-365"></a>在 Office 365 中为电子数据展示调查设置合规性边界
 
@@ -56,7 +56,7 @@ ms.locfileid: "31014021"
   
 以下是可用于合规性边界的 Azure Active Directory 用户属性的列表:
   
-- Company
+- 公司
     
 - CustomAttribute1-CustomAttribute15
     

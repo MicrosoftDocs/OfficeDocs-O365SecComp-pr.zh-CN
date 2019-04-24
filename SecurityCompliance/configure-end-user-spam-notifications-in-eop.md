@@ -14,11 +14,11 @@ ms.collection:
 - M365-security-compliance
 description: 您可以针对默认的公司范围内内容筛选器策略或应用于域的自定义内容筛选器策略配置最终用户垃圾邮件通知。
 ms.openlocfilehash: 09ddd7fd2800e4038e354e53da53320184da3e77
-ms.sourcegitcommit: 0f93b37c39d807dec91f118aa671a3430c47a9ac
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/20/2019
-ms.locfileid: "30692571"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32259620"
 ---
 # <a name="configure-end-user-spam-notifications-in-eop"></a>在 EOP 中配置最终用户垃圾邮件通知
   

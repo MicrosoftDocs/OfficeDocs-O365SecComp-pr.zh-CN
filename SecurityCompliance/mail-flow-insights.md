@@ -1,5 +1,5 @@
 ---
-title: 安全 & 合规中心中的邮件流见解
+title: 安全与合规中心内的邮件流见解
 ms.author: chrisda
 author: chrisda
 manager: serdars
@@ -10,13 +10,13 @@ localization_priority: Normal
 ms.assetid: beb6acaa-6016-4d54-ba7e-3d6d035e2b46
 description: 管理员可以了解安全 & 合规性中心中的邮件流仪表板。
 ms.openlocfilehash: 1e18bcb381a6b557d3141c0c17b8433cfcd00049
-ms.sourcegitcommit: 6aa82374eef09d2c1921f93bda3eabeeb28aadeb
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/06/2019
-ms.locfileid: "30455144"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32252382"
 ---
-# <a name="mail-flow-insights-in-the-security--compliance-center"></a>安全 & 合规中心中的邮件流见解
+# <a name="mail-flow-insights-in-the-security--compliance-center"></a>安全与合规中心内的邮件流见解
 
 管理员可以使用安全 & 合规中心中的邮件流仪表板来发现趋势、见解并采取措施解决与 Office 365 组织中的邮件流相关的问题。
 

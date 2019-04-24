@@ -13,11 +13,11 @@ search.appverid:
 ms.assetid: 55e8d858-f278-482b-a198-2e62d6a2e6e5
 description: 由于合规性、法律或其他业务要求, 你的组织可能需要将文档保留一段时间。 但是, 如果您的组织保留的文档比所需时间长, 则会带来不必要的法律风险。 使用文档删除策略, 您可以通过在特定时间段后删除网站中的文档来主动降低风险, 例如, 在创建文档五年后, 可以在用户的 OneDrive for business 网站中删除文档。
 ms.openlocfilehash: 2a6b1c29986020ebd63f6ddb960f0d28ba348b3e
-ms.sourcegitcommit: e7a776a04ef6ed5e287a33cfdc36aa2d72862b55
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30998695"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32257560"
 ---
 # <a name="overview-of-document-deletion-policies"></a>文档删除策略概述
 

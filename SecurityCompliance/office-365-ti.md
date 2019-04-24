@@ -16,11 +16,11 @@ ms.collection:
 - M365-security-compliance
 description: 了解 office 365 中的威胁智能功能。高级威胁防护可帮助您研究组织的威胁、响应恶意软件、网络钓鱼和 Office 365 已代表您检测到的其他攻击, 并搜索威胁指示器.
 ms.openlocfilehash: 6f7e6e0a49bb4035458af2e9d7e45fd954a1f9fc
-ms.sourcegitcommit: a56128c7be5d59e976851c27301031e19fa1997d
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/21/2019
-ms.locfileid: "30732265"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32265394"
 ---
 # <a name="office-365-threat-investigation-and-response"></a>Office 365 威胁调查和响应
 

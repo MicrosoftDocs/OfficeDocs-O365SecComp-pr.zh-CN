@@ -16,11 +16,11 @@ ms.collection:
 - M365-security-compliance
 description: 在 "反垃圾邮件设置&amp; " 页上的 "安全合规性中心" 中使用欺骗智能, 以查看所有哄骗的发件人是组织中的域, 还是哄骗外部域。 欺骗智能作为 Office 365 企业版 E5 的一部分或作为高级威胁防护和 Exchange Online Protection 的一部分单独提供。
 ms.openlocfilehash: 0d18b5f011597266a3a975d49722e88b411c52d8
-ms.sourcegitcommit: 8a65a29aa3bfe5dcad0ff152a7cd795e02877dd9
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/28/2019
-ms.locfileid: "30936732"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32252240"
 ---
 # <a name="learn-more-about-spoof-intelligence"></a>详细了解防欺骗智能
 

@@ -12,11 +12,11 @@ search.appverid: MOE150
 ms.assetid: c9b0ff0c-282b-4a44-b43f-cfc5b96557f9
 description: 在您的本地计算机上编辑 Windows 注册表, 以便在从 Office 365 的 Security & 合规性中心导出内容搜索结果时禁用报告。 禁用这些报告可加快下载时间并节省磁盘空间。
 ms.openlocfilehash: 19d97bbc95be5db6540e6822721752ca62adebfc
-ms.sourcegitcommit: e7a776a04ef6ed5e287a33cfdc36aa2d72862b55
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30998762"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32256850"
 ---
 # <a name="disable-reports-when-you-export-content-search-results"></a>导出内容搜索结果时禁用报告
 

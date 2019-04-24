@@ -13,12 +13,12 @@ search.appverid:
 - MOP150
 ms.assetid: bed936bc-0969-4a6d-a7a5-66305c14e958
 description: 了解管理员如何使用 Exchange Online PowerShell 和 CSV 文件将外部联系人批量导入到全局地址列表。
-ms.openlocfilehash: f95adcd54ebf2194536a199bca6fecf417064882
-ms.sourcegitcommit: 1658be51e2c21ed23bc4467a98af74300a45b975
+ms.openlocfilehash: 2948332d7cdf2d1364b2b563f94efdb3e8d0672d
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/26/2019
-ms.locfileid: "30862494"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32244497"
 ---
 # <a name="bulk-import-external-contacts-to-exchange-online"></a>将外部联系人批量导入到 Exchange Online
 
@@ -91,7 +91,7 @@ ms.locfileid: "30862494"
     导入的联系人将显示在 Outlook 和 web 上的 outlook 中的共享通讯簿中。
     
     > [!NOTE]
-    > 您还可以通过转到 "**用户** \> **联系人**" 查看 Office 365 管理中心中的联系人。 
+    > 您还可以通过转到 "**用户** \> **联系人**" 查看 Microsoft 365 管理中心中的联系人。 
 
 ## <a name="step-3-add-information-to-the-properties-of-the-external-contacts"></a>步骤 3: 将信息添加到外部联系人的属性中
 
@@ -134,7 +134,7 @@ ms.locfileid: "30862494"
   
 ## <a name="hide-external-contacts-from-the-shared-address-book"></a>隐藏共享地址 book> 中的外部联系人。
 
-某些公司可能仅使用外部联系人, 以便可以将其添加为通讯组的成员。 在这种情况下, 他们可能想要隐藏共享通讯簿中的外部联系人。 方法如下：
+某些公司可能仅使用外部联系人, 以便可以将其添加为通讯组的成员。 在这种情况下, 他们可能想要隐藏共享通讯簿中的外部联系人。 操作步骤如下：
   
 1.  将 PowerShell 连接到您的 Exchange Online 组织。 有关分步说明, 请参阅[连接到 Exchange Online PowerShell](https://go.microsoft.com/fwlink/p/?LinkId=396554)。
     

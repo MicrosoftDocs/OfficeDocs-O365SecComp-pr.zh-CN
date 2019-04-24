@@ -1,5 +1,5 @@
 ---
-title: 启用报告消息加载项
+title: 启用报表消息加载项
 ms.author: deniseb
 author: denisebmsft
 manager: laurawi
@@ -16,13 +16,13 @@ ms.collection:
 - M365-security-compliance
 description: 了解如何为单个用户或您的整个组织启用 outlook 和 web 上的 outlook 和 outlook 网页版报告消息外接程序。
 ms.openlocfilehash: 3c476a6e097307b1aabc3580b598bb91a4407731
-ms.sourcegitcommit: a79eb9907759d4cd849c3f948695a9ff890b19bf
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/26/2019
-ms.locfileid: "30866338"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32257412"
 ---
-# <a name="enable-the-report-message-add-in"></a>启用报告消息加载项
+# <a name="enable-the-report-message-add-in"></a>启用报表消息加载项
 
 > [!NOTE]
 > outlook 和 web 上的 outlook 的报告邮件外接程序与[outlook 垃圾邮件筛选器](https://support.office.com/article/Overview-of-the-Junk-Email-Filter-5ae3ea8e-cf41-4fa0-b02a-3b96e21de089)并不完全相同, 但这两者都可用于将电子邮件标记为垃圾邮件、非垃圾邮件或网络钓鱼尝试。 不同之处在于, outlook 和 web 上的 outlook 的报告邮件外接程序会通知 Microsoft misclassified 电子邮件, 而 outlook 垃圾邮件筛选器用于组织用户邮箱中的电子邮件。 
@@ -121,7 +121,7 @@ outlook 和 web 上的 outlook 的报告消息外接程序使用户能够轻松�
     
 9. 在 "**为此规则选择模式**" 下, 选择 "**强制**"。<br/>![设置一个规则以获取每个报告的邮件的副本](media/f1cd95ce-e40d-4a8a-8f48-893469eba691.png)<br/>
   
-10. 选择“保存”****。 
+10. 选择“**保存**”。 
     
 在适当的情况下, 当组织中的某人使用报告邮件加载项报告电子邮件时, 全局管理员、安全管理员和/或安全读者将收到该邮件的副本。 此信息可以让你设置或调整策略, 如[Office 365 ATP 安全链接](atp-safe-links.md)策略或[反垃圾邮件](anti-spam-protection.md)设置。 
 

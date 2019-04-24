@@ -15,11 +15,11 @@ ms.collection:
 - M365-security-compliance
 description: 如果您发送大量未注册的域电子邮件, 则可能会导致电子邮件被阻止。 阅读本文以了解详细信息。
 ms.openlocfilehash: 21c403c8072902565f63048782b06c531cdbceb0
-ms.sourcegitcommit: b688d67935edb036658bb5aa1671328498d5ddd3
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "30670537"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32263984"
 ---
 # <a name="unregistered-domain-email-what-you-need-to-know"></a>未注册的域电子邮件: 需要了解的内容
 

@@ -17,11 +17,11 @@ search.appverid:
 ms.assetid: 2cfce2c8-20c5-47f9-afc4-24b059c1bd76
 description: 在管理任何安全或合规性功能之前, 需要&amp;在 Office 365 安全合规中心中为用户分配权限。
 ms.openlocfilehash: 08b3781ceb48b9a8d5933a075106d7bd3b9ab17d
-ms.sourcegitcommit: 799a958fcac643f62dfac6fa04020f2f4758635c
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30997230"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32253962"
 ---
 # <a name="give-users-access-to-the-office-365-security-amp-compliance-center"></a>向用户授予对 Office 365 安全&amp;合规中心的访问权限
 
@@ -29,7 +29,7 @@ ms.locfileid: "30997230"
   
 若要详细了解可以向安全&amp;合规中心中的用户授予的不同权限, 请参阅[Office 365 安全&amp;合规中心中的权限](permissions-in-the-security-and-compliance-center.md)。
   
-## <a name="what-do-you-need-to-know-before-you-begin"></a>在开始之前，您需要知道什么？
+## <a name="what-do-you-need-to-know-before-you-begin"></a>开始前，有必要了解什么？
 
 - 您必须是 Office 365 全局管理员或安全&amp;合规中心中的 OrganizationManagement 角色组的成员, 才能完成本文中的步骤。
     

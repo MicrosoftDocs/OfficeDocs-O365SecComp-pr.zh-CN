@@ -16,11 +16,11 @@ ms.collection:
 ms.assetid: ce9eb942-3589-42cb-88fd-1576ecb09c5c
 description: GDPR 向欧盟公民 (称为 "数据主体") 授予对其个人数据的特定权限;这些权限包括获取副本、请求对其进行更改、限制处理、删除或以电子格式接收。 通过数据主体对其个人数据执行操作的正式请求称为 "数据" 主题请求或 "DSR"。 您可以使用 Office 365 和 Microsoft 365 中的合规性中心中的 dsr 案例来管理您的组织的 DSR 调查。
 ms.openlocfilehash: a131da86350fc288c1c9af371d28464230b742d6
-ms.sourcegitcommit: f0e3c9de0b545081a4d264f74559b941f6c71410
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "31958703"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32259872"
 ---
 # <a name="manage-gdpr-data-subject-requests-with-the-dsr-case-tool-in-the-security--compliance-center"></a>在 Security & 合规性中心中使用 DSR 机箱工具管理 GDPR 数据主体请求
 

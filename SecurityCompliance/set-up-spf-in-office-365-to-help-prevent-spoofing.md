@@ -15,11 +15,11 @@ ms.collection:
 - M365-security-compliance
 description: 摘要： 本文介绍了如何更新域名服务 (DNS) 记录，以便可以在 Office 365 中结合使用发件人策略框架 (SPF) 和自定义域。 SPF 有助于验证从自定义域发送的出站电子邮件。
 ms.openlocfilehash: 039a09e7dac307ead156eac47699edbd2350b304
-ms.sourcegitcommit: 0f93b37c39d807dec91f118aa671a3430c47a9ac
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/20/2019
-ms.locfileid: "30692831"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32260710"
 ---
 # <a name="set-up-spf-in-office-365-to-help-prevent-spoofing"></a>在 Office 365 中设置 SPF 以防止欺骗
 

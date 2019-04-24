@@ -15,11 +15,11 @@ ms.collection:
 - M365-security-compliance
 description: '你和你的用户可以将虚假的负垃圾邮件和假肯定垃圾邮件提交给 Microsoft 进行分析。 '
 ms.openlocfilehash: 75943a923195b522113690d5e176777e47d026d4
-ms.sourcegitcommit: f0e3c9de0b545081a4d264f74559b941f6c71410
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "31958673"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32260650"
 ---
 # <a name="submit-spam-non-spam-and-phishing-scam-messages-to-microsoft-for-analysis"></a>将垃圾邮件、非垃圾邮件和网络欺诈邮件提交给 Microsoft 进行分析
 

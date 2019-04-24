@@ -17,11 +17,11 @@ search.appverid:
 ms.assetid: 296a02bd-ebde-4022-900e-547acf38ddd7
 description: 通过对邮箱应用保留或 Office 365 保留策略, 然后删除相应的 Office 365 用户帐户, 可以在 Office 365 中创建非活动邮箱。 非活动邮箱中的项目会在保留或应用到其非活动状态的保留策略的持续时间内保留。 若要永久删除非活动邮箱, 只需删除保留策略或保留策略即可。
 ms.openlocfilehash: ad874d2f21afaa86fa7fa5a18dc827dfa1b90574
-ms.sourcegitcommit: 6c9340e4eb221bf81472ff3f1ae25ae21aaf5297
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "31813973"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32258876"
 ---
 # <a name="create-and-manage-inactive-mailboxes-in-office-365"></a>在 Office 365 中创建和管理非活动邮箱
 
@@ -52,7 +52,7 @@ Office 365 使您可以保留已删除邮箱的内容。 此功能称为“非�
   
 有关将邮箱置于诉讼保留状态或应用 Office 365 保留策略的分步过程, 请参阅:
   
-- [将邮箱置于诉讼保留](https://go.microsoft.com/fwlink/?linkid=856286)
+- [将邮箱置于诉讼保留状态](https://go.microsoft.com/fwlink/?linkid=856286)
     
 - [Office 365 中的保留策略概述](retention-policies.md)
     

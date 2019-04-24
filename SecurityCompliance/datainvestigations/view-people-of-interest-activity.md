@@ -15,17 +15,17 @@ search.appverid:
 ms.assetid: ''
 description: ''
 ms.openlocfilehash: 82c6cb419ce00aca0d636083aa41a3384cb6bb01
-ms.sourcegitcommit: 2c5834235c32b2616e1813ce24eeb3419a09629f
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/02/2019
-ms.locfileid: "31029924"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32257030"
 ---
 # <a name="view-the-audit-activity-of-people-of-interest"></a>查看相关人员的审核活动
 
 需要查找用户是否查看了特定文档或清除了其邮箱中的项目？ 数据调查 (预览版) 现已与 Security & 合规中心中的现有审核日志搜索工具集成。 使用这种嵌入的体验, 您可以使用 "数据调查" (预览) 相关人员管理工具来帮助您进行调查, 从而轻松访问和搜索调查中感兴趣的人员的活动。
 
-## <a name="before-you-begin"></a>开始之前
+## <a name="before-you-begin"></a>准备工作
 
 您必须在 Exchange Online 中向您分配 "仅查看审核日志" 或 "审核日志" 角色, 才能搜索 Office 365 审核日志。 默认情况下, 将这些角色分配给 Exchange 管理中心中 "权限" 页上的 "合规性管理" 和 "组织管理" 角色组。 若要使用户能够使用最低级别的权限搜索数据调查 (预览) 审核日志, 您可以在 Exchange Online 中创建自定义角色组, 添加仅查看审核日志或审核日志角色, 然后将该用户添加为新角色 gr 的成员oup。 有关详细信息, 请参阅在 Exchange Online 中管理角色组。
 

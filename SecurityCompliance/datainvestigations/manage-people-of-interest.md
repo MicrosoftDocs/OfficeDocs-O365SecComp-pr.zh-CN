@@ -15,11 +15,11 @@ search.appverid:
 ms.assetid: ''
 description: ''
 ms.openlocfilehash: d06dde60ae75cfea1bf1d79f445b613d20a76363
-ms.sourcegitcommit: 2c5834235c32b2616e1813ce24eeb3419a09629f
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/02/2019
-ms.locfileid: "31029893"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32257670"
 ---
 # <a name="manage-people-of-interest-in-data-investigations-preview"></a>管理数据调查中感兴趣的人员 (预览)
 

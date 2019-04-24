@@ -12,11 +12,11 @@ ms.collection: Ent_O365_Hybrid
 ms.assetid: a7203ebd-ffac-4a8d-a2d0-6c8a61c8eeb8
 description: Microsoft 致力于帮助用户更轻松地使用其产品和服务。
 ms.openlocfilehash: 271383361ee99f6959e81a1f38dea4b200c54fb5
-ms.sourcegitcommit: 0f93b37c39d807dec91f118aa671a3430c47a9ac
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/20/2019
-ms.locfileid: "30693101"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32257040"
 ---
 # <a name="accessibility-for-people-with-disabilities"></a>面向残障人士的辅助功能
 

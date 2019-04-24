@@ -1,5 +1,5 @@
 ---
-title: 有关使用 Office 365 客户密钥执行服务加密的 FAQ
+title: 有关使用 Office 365 客户密钥执行服务加密的常见问题解答
 ms.author: krowley
 author: kccross
 manager: laurawi
@@ -12,14 +12,14 @@ search.appverid:
 - MET150
 ms.assetid: 41ae293a-bd5c-4083-acd8-e1a2b4329da6
 description: 除了通过 BitLocker 和分布式密钥管理器 (DKM) 启用的对卷级别加密之外, office 365 还在应用程序级别为 office 365 中的客户内容 (包括来自 Exchange 的数据) 提供了额外的加密层Online、Skype for business、SharePoint Online 和 OneDrive for business。 这称为 "服务加密"。
-ms.openlocfilehash: 5e1acca69ccdd8acb986acb4d7a302d4ca3fbe8a
-ms.sourcegitcommit: 8a65a29aa3bfe5dcad0ff152a7cd795e02877dd9
+ms.openlocfilehash: 8515354d716df22fa124c03e18c36914d27102f4
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/28/2019
-ms.locfileid: "30936762"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32266936"
 ---
-# <a name="service-encryption-with-customer-key-for-office-365-faq"></a>有关使用 Office 365 客户密钥执行服务加密的 FAQ
+# <a name="service-encryption-with-customer-key-for-office-365-faq"></a>有关使用 Office 365 客户密钥执行服务加密的常见问题解答
 
 除了通过 BitLocker 和分布式密钥管理器 (DKM) 启用的对卷级别加密之外, office 365 还在应用程序级别为 office 365 中的客户内容 (包括来自 Exchange 的数据) 提供了额外的加密层Online、Skype for business、SharePoint Online 和 OneDrive for business。 这称为 "服务加密"。
   
@@ -46,7 +46,7 @@ ms.locfileid: "30936762"
 ## <a name="does-office-365-message-encryption-and-bring-your-own-key-with-azure-information-protection-change-microsofts-approach-to-third-party-data-requests-such-as-subpoenas"></a>Office 365 邮件加密和使用您自己的密钥进行 Azure 信息保护更改 Microsoft 对第三方数据请求 (如 subpoenas) 的方法？
 <a name="DiffCustomerKeyandBYOKAzureIP"> </a>
 
-不能。 Office 365 邮件加密和用于提供和控制您自己的加密密钥的选项, 为 Azure 信息保护 (AIP) 引入你自己的密钥 (BYOK) 的目的不是为了响应执法部门的 subpoenas。 BYOK for AIP 的 Office 365 邮件加密专为需要满足其内部或外部合规性义务的合规性客户而设计。 Microsoft 会对客户数据进行非常严重的第三方请求。 作为云服务提供商, 我们始终提倡客户数据的隐私。 在我们获取传唤时, 我们总是会尝试将第三方重定向到客户来获取信息。 (请阅读 Brad Smith 的博客:[保护客户数据免受政府窥探](https://blogs.microsoft.com/blog/2013/12/04/protecting-customer-data-from-government-snooping/))。 我们会定期发布我们在[此处](https://www.microsoft.com/en-us/trustcenter/Privacy/govt-requests-for-data)收到的请求的详细信息。
+不能。 Office 365 邮件加密和用于提供和控制您自己的加密密钥的选项 (带有引入和控制您自己的加密密钥) 将您自己的密钥 (BYOK) 用于 Azure 信息保护, 而不是旨在响应执法部门 subpoenas。 BYOK for AIP 的 Office 365 邮件加密专为需要满足其内部或外部合规性义务的合规性客户而设计。 Microsoft 会对客户数据进行非常严重的第三方请求。 作为云服务提供商, 我们始终提倡客户数据的隐私。 在我们获取传唤时, 我们总是会尝试将第三方重定向到客户来获取信息。 (请阅读 Brad Smith 的博客:[保护客户数据免受政府窥探](https://blogs.microsoft.com/blog/2013/12/04/protecting-customer-data-from-government-snooping/))。 我们会定期发布我们在[此处](https://www.microsoft.com/en-us/trustcenter/Privacy/govt-requests-for-data)收到的请求的详细信息。
   
 有关详细信息, 请参阅[联机服务条款 (OST)](https://www.microsoft.com/en-us/Licensing/product-licensing/products.aspx)中有关第三方数据请求和 "客户数据泄露" 的[Microsoft 信任中心](https://www.microsoft.com/en-us/trustcenter/default.aspx)。
   

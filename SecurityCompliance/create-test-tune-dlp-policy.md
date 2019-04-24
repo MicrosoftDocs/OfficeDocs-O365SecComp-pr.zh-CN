@@ -16,11 +16,11 @@ search.appverid:
 ms.assetid: 59414438-99f5-488b-975c-5023f2254369
 description: '开始使用 DLP 策略的最简单、最常见方法是，使用包含在 Office 365 中的模板之一。 '
 ms.openlocfilehash: 0c6b3bce7b336b08595a432c29601ecb63155589
-ms.sourcegitcommit: e7a776a04ef6ed5e287a33cfdc36aa2d72862b55
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "31000855"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32259248"
 ---
 # <a name="create-test-and-tune-a-dlp-policy"></a>创建、测试和优化 DLP 策略
 

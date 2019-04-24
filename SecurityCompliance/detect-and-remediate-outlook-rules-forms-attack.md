@@ -15,11 +15,11 @@ search.appverid:
 - MET150
 description: 了解如何识别和修正 Office 365 中的 Outlook 规则和自定义窗体注入攻击
 ms.openlocfilehash: 59d45e50e15e3709c8a041ead59b8cc6e2a38306
-ms.sourcegitcommit: 8657e003ab1ff49113f222d1ee8400eff174cb54
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/16/2019
-ms.locfileid: "30656058"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32256860"
 ---
 # <a name="detect-and-remediate-outlook-rules-and-custom-forms-injections-attacks-in-office-365"></a>在 Office 365 中检测并修正 Outlook 规则和自定义窗体注入攻击
 
@@ -175,11 +175,11 @@ Exchange Online 中邮箱的步骤
 
 使用本地 Exchange 安装的客户应考虑阻止未提供修补程序的旧版本的 Outlook。 有关此过程的详细信息, 请参阅[配置 Outlook 客户端阻止](https://technet.microsoft.com/en-us/library/dd335207(v=exchg.150).aspx)一文。
 
-## <a name="secure-office-365-like-a-cybersecurity-pro"></a>安全的 Office 365, 如 cybersecurity pro
-您的 Office 365 订阅附带了一组功能强大的安全功能, 可用于保护您的数据和用户。  使用[Office 365 安全路线图: 前30天、90天和更高版本的首要优先级](https://support.office.com/article/Office-365-security-roadmap-Top-priorities-for-the-first-30-days-90-days-and-beyond-28c86a1c-e4dd-4aad-a2a6-c768a21cb352), 以实现 Microsoft 建议的保护 Office 365 租户的最佳做法。
-- 在前30天内要完成的任务。  这些值会立即生效, 并对用户造成影响较小。
-- 要在90天内完成的任务。 它们需要花一点时间来规划和实施, 但大大提高了您的安全状况。
-- 超过90天。 这些增强功能将在您的前90天工作中构建。
+## <a name="secure-office-365-like-a-cybersecurity-pro"></a>像网络安全专家那样保护 Office 365
+你的 Office 365 订阅附带了一组强大的安全功能，可用于保护你的数据和用户。  使用“[Office 365 安全路线图：前 30 天、90 天内以及之后的首要行动](https://support.office.com/article/Office-365-security-roadmap-Top-priorities-for-the-first-30-days-90-days-and-beyond-28c86a1c-e4dd-4aad-a2a6-c768a21cb352)”，通过实施 Microsoft 建议的最佳做法来保护你的 Office 365 租户。
+- 需要在前 30 天完成的任务。  这些任务会对你的用户产生直接影响并且影响很小。
+- 需要在 90 天内完成的任务。 这些任务需要花费更多时间来规划和实施，但会显著改善你的安全状况。
+- 90 天后。 这些增强功能基于前 90 天的工作构建。
 
 ## <a name="see-also"></a>另请参阅：
 - [恶意 outlook 规则](https://silentbreaksecurity.com/malicious-outlook-rules/)SilentBreak 安全公告关于规则矢量提供有关 Outlook 规则的详细审阅。 
