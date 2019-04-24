@@ -254,7 +254,7 @@
 ### [使用内容搜索来搜索第三方数据](use-content-search-to-search-third-party-data-that-was-imported.md)
 ### [在电子数据展示工作流中使用内容搜索](use-content-search-in-ediscovery.md)
 ### [检查内容搜索查询中是否有错误](check-your-content-search-query-for-errors.md)
-### [为内容搜索保留密件抄送收件人](https://docs.microsoft.com/exchange/policy-and-compliance/holds/preserve-bcc-recipients-and-group-members)
+### [为内容搜索保留密件抄送收件人](preserve-bcc-and-expanded-distribution-group-recipients-for-ediscovery.md)
 ## 了解内容搜索
 ### [内容搜索限制](limits-for-content-search.md)
 ### [内容搜索中的部分索引项](partially-indexed-items-in-content-search.md)
@@ -286,6 +286,7 @@
 ### [删除保留状态云邮箱的“可恢复的项目”文件夹中的项目](delete-items-in-the-recoverable-items-folder-of-mailboxes-on-hold.md)
 ### [为置于保留状态的邮箱增加可恢复项目的配额](increase-the-recoverable-quota-for-mailboxes-on-hold.md)
 ### [如何识别为 Exchange Online 邮箱设置的保留类型](identify-a-hold-on-an-exchange-online-mailbox.md)
+### [保存密件抄送和展开的通讯组收件人](preserve-bcc-and-expanded-distribution-group-recipients-for-ediscovery.md)
 
 ## [Microsoft 365 中的高级电子数据展示（预览版）](compliance20/overview-ediscovery-20.md)
 ### [发行说明](compliance20/release-notes-ediscovery20.md)
@@ -314,13 +315,14 @@
 #### [搜索统计信息](compliance20/search-statistics.md)
 #### [将搜索结果添加到工作集](compliance20/add-data-to-working-set.md)
 
+### [管理工作集](compliance20/managing-working-sets.md)
+#### [将非 Office 365 数据加载到工作集](compliance20/load-non-office365-data.md)
+#### [将数据添加到另一工作集](compliance20/add-data-to-working-set-from-another-working-set.md)
+#### [管理负载集](compliance20/manage-load-sets.md)
+
 ### [审阅事例数据](compliance20/reviewing-data-in-working-set.md)
 #### [查看工作集中的文档](compliance20/view-documents-in-working-set.md)
 #### [查询工作集中的数据](compliance20/working-set-search.md)
-#### [管理工作集](compliance20/managing-working-sets.md)
-#### [将数据添加到另一工作集](compliance20/add-data-to-working-set-from-another-working-set.md)
-#### [管理负载集](compliance20/manage-load-sets.md)
-#### [将非 Office 365 数据加载到工作集](compliance20/load-non-office365-data.md)
 #### [标记工作集中的文档](compliance20/tagging-documents.md)
 
 ### [分析事例数据](compliance20/analyzing-data-in-working-set.md)
@@ -579,7 +581,6 @@
 ### [Office 365 中的邮件流智能](mail-flow-intelligence-in-office-365.md)
 ## 邮箱保留
 ### [创建诉讼保留](create-a-litigation-hold.md)
-### [为电子数据展示保存密件抄送和展开的通讯组收件人](preserve-bcc-and-expanded-distribution-group-recipients-for-ediscovery.md)
 ### [将软删除邮箱置于就地保留状态](put-an-in-place-hold-on-a-soft-deleted-mailbox.md)
 ## [隔离](quarantine.md)
 ### [以管理员身份查找并释放隔离邮件](find-and-release-quarantined-messages-as-an-administrator.md)
