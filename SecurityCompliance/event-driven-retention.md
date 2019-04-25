@@ -13,17 +13,17 @@ ms.collection:
 search.appverid:
 - MOE150
 - MET150
-description: 使用 Office 365 中的标签，能让保留期以特定类型事件何时发生为依据。也就是说，事件触发开始计算保留期，并对包含与相应事件类型关联的标签的所有内容强制执行标签的保留操作。事件驱动保留通常用于记录管理流程。
-ms.openlocfilehash: ceb4b2fde10e43235d8d310243fe56cce1a2b240
-ms.sourcegitcommit: a79eb9907759d4cd849c3f948695a9ff890b19bf
+description: 使用 Office 365 中的保留标签，能让保留期以特定类型事件何时发生为依据。也就是说，事件触发开始计算保留期，并对包含与相应事件类型关联的保留标签的所有内容强制执行标签的保留操作。事件驱动保留通常用于记录管理流程。
+ms.openlocfilehash: d03abdc43a62d703fdebdb4cf9571dfbab9d744b
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/26/2019
-ms.locfileid: "30866358"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32256360"
 ---
 # <a name="overview-of-event-driven-retention"></a>事件驱动保留概述
 
-如果你保留内容，保留期通常是以内容年限为依据。例如，可以先将文档自创建起保留 7 年，再删除它们。不过，使用 Office 365 中的标签，还能让保留期以特定类型事件何时发生为依据。也就是说，事件触发开始计算保留期，并对包含与相应事件类型关联的标签的所有内容强制执行标签的保留操作。
+如果你保留内容，保留期通常是以内容年限为依据。例如，可以先将文档自创建起保留 7 年，再删除它们。不过，使用 Office 365 中的保留标签，还能让保留期以特定类型事件何时发生为依据。也就是说，事件触发开始计算保留期，并对包含与相应事件类型关联的保留标签的所有内容强制执行标签的保留操作。
   
 例如，可对以下事件结合使用标签和事件驱动保留：
   
@@ -77,7 +77,7 @@ ms.locfileid: "30866358"
   
 ### <a name="step-1-create-a-label-whose-retention-period-is-based-on-an-event"></a>第 1 步：创建保留期以事件为依据的标签
 
-在安全与合规中心内的左侧导航栏中，依次选择“分类”**** 下的“标签”****\>“创建标签”****。
+在 Microsoft 365 合规中心、Microsoft 365 安全中心或 Office 365 安全与合规中心，从左侧导航栏中选择“**分类**” > “**标签**” > “**保留标签**”选项卡 >“**创建标签**”。
   
 创建标签后，启用“保留”，再按如下所示选择选项，以根据事件保留或删除内容。也就是说，在第 5 步中在“事件”**** 页上创建事件前，保留设置不会生效。 
   
@@ -103,7 +103,7 @@ ms.locfileid: "30866358"
   
 ### <a name="step-3-publish-or-auto-apply-the-label"></a>第 3 步：发布或自动应用标签
 
-就像任何标签一样，必须发布或自动应用基于事件的标签，才能将标签手动或自动应用于内容。请在“标签”**** 页上执行此操作。请注意，将内容分类为记录的标签只能在发布后手动应用于内容，而不能自动应用于内容。 
+就像任何标签一样，必须发布或自动应用基于事件的标签，才能将标签手动或自动应用于内容。可在“**标签**”或“**标签策略**”页面上执行此操作。请注意，将内容分类为记录的标签只能在发布后手动应用于内容。 
   
 ![用于发布或自动应用标签的选项](media/c9232c54-bbc0-40d2-abc2-122d5d1e70af.png)
   
@@ -149,7 +149,7 @@ ms.locfileid: "30866358"
   
 ## <a name="use-content-search-to-find-all-content-with-a-specific-label-or-asset-id"></a>使用内容搜索来查找所有包含特定标签或资产 ID 的内容
 
-在标签分配到内容后，可使用安全与合规中心内的内容搜索，查找所有已使用特定标签进行分类或包含特定资产 ID 的内容。
+在标签分配到内容后，可通过内容搜索，查找所有已使用特定标签进行分类或包含特定资产 ID 的内容。
   
 创建内容搜索后：
   
@@ -167,11 +167,9 @@ ms.locfileid: "30866358"
   
 ## <a name="automate-events-by-using-powershell"></a>使用 PowerShell 自动触发事件
 
-在 Office 365 安全与合规中心内，只能手动创建事件；事件无法在发生时自动触发。不过，可使用 PowerShell 脚本在业务应用程序中自动触发基于事件的保留。
-  
-目前，我们正在努力开发 API，以便用户能关联业务应用程序（如 HR、CRM 或财务应用程序）和事件驱动保留。例如，你将能关联 HR 系统和事件驱动保留，这样当某位员工离开组织时，就会自动触发相应事件类型的事件。
-  
-在此之前，可对事件驱动保留使用下面的 PowerShell cmdlet：
+只能在管理中心手动创建事件；事件无法在发生时自动触发。不过，可使用 Rest API 来自动触发事件；有关详细信息，请参阅[自动处理基于事件的保留](automate-event-driven-retention.md)。
+
+此外，还可使用 PowerShell 脚本从业务应用程序中自动执行基于事件的保留。 可对事件驱动保留使用下列 PowerShell cmdlet：
   
 - [Get-ComplianceRetentionEventType](https://go.microsoft.com/fwlink/?linkid=873002)
     

@@ -16,12 +16,12 @@ localization_priority: Priority
 search.appverid:
 - MET150
 description: 了解如何使用 Office 标签作为 GDPR 保护计划的一部分。
-ms.openlocfilehash: 32f94e02dac81abaef46ef5495701e5037ff8c6b
-ms.sourcegitcommit: 54d58da1777eb83adb82826d1bb1adb94903c8e1
+ms.openlocfilehash: a5ffcca94ea98a3d6426dc60fae0f6cb98d0029d
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30955195"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32244149"
 ---
 # <a name="apply-labels-to-personal-data-in-office-365"></a>向 Office 365 中的个人数据应用标签
 
@@ -34,7 +34,7 @@ ms.locfileid: "30955195"
 
 Cloud App Security 当前不支持保留标签，但你可以通过 Cloud App Security 使用 Office 365 敏感信息，以监控驻留在其他 SaaS 应用上的个人数据。
 
-目前建议使用[敏感度标签](sensitivity-labels.md)为本地和其他云服务及提供程序中的文件应用标签。 对于在 Office 365 中需要通过 Azure 信息保护 (AIP) 加密来保护数据的文件（如商业机密文件），也建议使用这些标签。
+目前建议使用[敏感度标签](sensitivity-labels.md)为本地和其他云服务及提供程序中的文件应用标签。 同时建议将这些标签用于 Office 365 中需要 Azure 信息保护加密来保护数据的文件，例如贸易机密文件。
 
 目前，对于 Office 365 中包含受 GDPR 约束的数据的文件，建议不要使用 Azure 信息保护来应用加密。 Office 365 服务目前无法读入 AIP 加密的文件。 因此，该服务无法在这些文件中找到敏感数据。
 

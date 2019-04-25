@@ -15,12 +15,12 @@ search.appverid:
 - MET150
 ms.assetid: 06af70f3-e7dc-4ee2-a385-fb4d61a5e93b
 description: 摘要：在开发/测试环境中创建公共、专用、敏感和高度机密的 SharePoint Online 团队网站。
-ms.openlocfilehash: e1d5e6f98679e2efb4d5048009971d88f90181e8
-ms.sourcegitcommit: 19d27ff836ee7fa1f8a4e761e04d928f13f4bfd8
+ms.openlocfilehash: 8598c73c07c5e6bca1c429c30cd88772d8ca6697
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/09/2019
-ms.locfileid: "31745304"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32260942"
 ---
 # <a name="secure-sharepoint-online-sites-in-a-devtest-environment"></a>在开发/测试环境中保护 SharePoint Online 网站
 
@@ -208,9 +208,7 @@ Add-AzureADGroupMember -RefObjectId (Get-AzureADUser | Where { $_.DisplayName -e
     
 7. 在“**查看设置**”窗格中，单击“**创建标签**”。
     
-8. 对于其他标签，单击“**创建标签**”，然后重复步骤 3-7。
-
-9. 对具有以下名称的其他标签重复步骤 3-8：
+8. 对具有以下名称的其他标签重复步骤 3-7：
     
   - Private
     
@@ -218,21 +216,21 @@ Add-AzureADGroupMember -RefObjectId (Get-AzureADUser | Where { $_.DisplayName -e
     
   - 高度机密
   
-10. 在“开始”>“标签”窗格中，单击“发布标签”********。
+9. 在“开始”>“标签”窗格中，单击“发布标签”********。
     
-11. 在“选择要发布的标签”窗格中，单击“选择要发布的标签”********。
+10. 在“选择要发布的标签”窗格中，单击“选择要发布的标签”********。
     
-12. 在“选择标签”窗格中，单击“添加”并选择全部四个标签********。
+11. 在“选择标签”窗格中，单击“添加”并选择全部四个标签********。
     
-13. 单击“完成”****。
+12. 单击“完成”****。
     
-14. 在“选择要发布的标签”窗格中，单击“下一步”********。
+13. 在“选择要发布的标签”窗格中，单击“下一步”********。
     
-15. 在“**选择位置**”窗格中，单击“**下一步**”。
+14. 在“**选择位置**”窗格中，单击“**下一步**”。
     
-16. 在“**命名策略**”窗格中，在“**名称**”中键入“**示例组织**”，然后单击“**下一步**”。
+15. 在“**命名策略**”窗格中，在“**名称**”中键入“**示例组织**”，然后单击“**下一步**”。
     
-17. 在“**查看设置**”窗格中，单击“**发布标签**”，然后单击“**关闭**”。
+16. 在“**查看设置**”窗格中，单击“**发布标签**”，然后单击“**关闭**”。
     
 ## <a name="phase-4-create-your-sharepoint-online-team-sites"></a>阶段 4：创建 SharePoint Online 团队网站
 
@@ -584,7 +582,7 @@ Add-AzureADGroupMember -RefObjectId (Get-AzureADUser | Where { $_.DisplayName -e
   
 [云应用和混合解决方案](https://docs.microsoft.com/office365/enterprise/cloud-adoption-and-hybrid-solutions)
   
-[Microsoft 针对政治宣传活动、非营利组织和其他敏捷型组织的安全指南](microsoft-security-guidance-for-political-campaigns-nonprofits-and-other-agile-o.md)
+[Microsoft 针对政治宣传活动、非营利组织和其他敏捷性组织的安全指南](microsoft-security-guidance-for-political-campaigns-nonprofits-and-other-agile-o.md)
 
 
 

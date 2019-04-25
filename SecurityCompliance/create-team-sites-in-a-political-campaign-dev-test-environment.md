@@ -16,12 +16,12 @@ search.appverid:
 ms.custom: ''
 ms.assetid: c2112ce8-1c4b-424f-b200-59e161db2d21
 description: 摘要：在政治宣传活动开发/测试环境中创建公共、专用、敏感和高度机密的 SharePoint Online 团队网站。
-ms.openlocfilehash: 7e28034955a54fe7c2013dcaaf606c24c4089e75
-ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
+ms.openlocfilehash: 29220c83eb207d58586b39d101e7139dc6ddf94a
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30216262"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32259180"
 ---
 # <a name="create-team-sites-in-a-political-campaign-devtest-environment"></a>在政治宣传活动开发/测试环境中创建团队网站
 
@@ -37,7 +37,7 @@ ms.locfileid: "30216262"
 
 此阶段将针对 SharePoint Online 团队网站文档文件夹的不同安全级别创建标签。
   
-1. 如有需要，请使用试用订阅的全局管理员帐户的凭据登录 Office 365 门户。如需帮助，请参阅[在哪里登录 Office 365](https://support.office.com/Article/Where-to-sign-in-to-Office-365-e9eb7d51-5430-4929-91ab-6157c5a050b4)。
+1. 如有需要，请使用试用订阅的全局管理员帐户的凭据登录管理中心。 如需帮助，请参阅[如何登录到 Office 365](https://support.office.com/Article/Where-to-sign-in-to-Office-365-e9eb7d51-5430-4929-91ab-6157c5a050b4)。
     
 2. 在“Microsoft Office 主页”标签页中，单击“管理员”磁贴********。
     
@@ -85,7 +85,7 @@ ms.locfileid: "30216262"
 
 要创建基线公共 SharePoint Online 团队网站，请执行以下操作：
   
-1. 如果需要，请使用本地计算机上的浏览器，并使用全局管理员帐户登录 Office 365 门户 ([https://portal.office.com](https://portal.office.com))。
+1. 如果需要，请使用本地计算机上的浏览器，并使用全局管理员帐户登录管理中心 ([https://admin.microsoft.com](https://admin.microsoft.com))。
     
 2. 在磁贴列表中，单击“SharePoint”****。
     
@@ -115,7 +115,7 @@ ms.locfileid: "30216262"
 
 要为宣传活动内的项目创建基线专用 SharePoint Online 团队网站，请执行以下操作：
   
-1. 如果需要，请使用本地计算机上的浏览器，并使用全局管理员帐户登录 Office 365 门户 ([https://portal.office.com](https://portal.office.com))。
+1. 如果需要，请使用本地计算机上的浏览器，并使用全局管理员帐户登录管理中心 ([https://admin.microsoft.com](https://admin.microsoft.com))。
     
 2. 在磁贴列表中，单击“SharePoint”****。
     
@@ -145,7 +145,7 @@ ms.locfileid: "30216262"
 
 要为宣传活动营销资源创建敏感级别的独立 SharePoint Online 团队网站，请执行以下操作：
   
-1. 请使用本地计算机上的浏览器，并使用全局管理员帐户登录 Office 365 门户 ([https://portal.office.com](https://portal.office.com))。
+1. 请使用本地计算机上的浏览器，并使用全局管理员帐户登录管理中心 ([https://admin.microsoft.com](https://admin.microsoft.com))。
     
 2. 在磁贴列表中，单击“SharePoint”****。
     
@@ -257,7 +257,7 @@ ms.locfileid: "30216262"
 
 若要针对宣传活动策略资源创建高度机密级别的独立 SharePoint Online 团队网站，请执行以下操作：
   
-1. 如果需要，请使用本地计算机上的浏览器，并使用全局管理员帐户登录 Office 365 门户 ([https://portal.office.com](https://portal.office.com))。
+1. 如果需要，请使用本地计算机上的浏览器，并使用全局管理员帐户登录管理中心 ([https://admin.microsoft.com](https://admin.microsoft.com))。
     
 2. 在磁贴列表中，单击“SharePoint”****。
     
@@ -321,9 +321,9 @@ ms.locfileid: "30216262"
     
 接下来，配置 DLP 策略，以便阻止用户在组织外共享关于含高度机密标签的 SharePoint Online 团队网站的文档。此 DLP 策略将应用于宣传活动策略网站中的资源。
   
-1. 如果需要，请使用本地计算机上的浏览器，以及具有安全管理员或公司管理员角色的帐户登录 Office 365 门户 ([https://portal.office.com](https://portal.office.com))。
+1. 如果需要，请使用本地计算机上的浏览器，以及使用具有安全管理员或公司管理员角色的帐户登录管理中心 ([https://admin.microsoft.com](https://admin.microsoft.com))。
     
-2. 在浏览器的“Microsoft Office 主页”**** 标签页中，单击“安全&amp;合规性”**** 磁贴。
+2. 在浏览器的“**Microsoft Office 主页**”标签页中，单击“**安全与合规**”磁贴。
     
 3. 在浏览器的新“安全&amp;合规性”**** 标签页中，单击“数据丢失防护”>“策略”****。
     
@@ -361,13 +361,13 @@ ms.locfileid: "30216262"
     
 19. 在“是否希望立即启用策略或先进行测试?”**** 窗格中，单击“是，立即启用”****，然后单击“下一步”****。
     
-20. 在“查看设置”**** 窗格中，单击“创建”****，然后单击“关闭”****。
+20. 在“**查看设置**”窗格中，单击“**创建**”，然后单击“**关闭**”。
     
-按照[使用 Office 365 管理中心激活 Azure RMS](https://docs.microsoft.com/information-protection/deploy-use/activate-office365) 中的说明进行操作。
+请按照[使用 Microsoft 365 管理中心激活 Azure RMS](https://docs.microsoft.com/information-protection/deploy-use/activate-office365) 中的说明执行操作。
   
 接下来，通过执行以下步骤，使用新作用域内策略以及保护和权限的子标签来配置 Azure 信息保护：
   
-1. 使用具有安全管理员或公司管理员角色的帐户登录到 Office 365 门户。有关帮助信息，请参阅[在何处登录到 Office 365](https://support.office.com/Article/Where-to-sign-in-to-Office-365-e9eb7d51-5430-4929-91ab-6157c5a050b4)。
+1. 使用具有安全管理员或公司管理员角色的帐户登录到管理中心。 如需帮助，请参阅[如何登录到 Office 365](https://support.office.com/Article/Where-to-sign-in-to-Office-365-e9eb7d51-5430-4929-91ab-6157c5a050b4)。
     
 2. 在浏览器的单独标签页中，转到 Azure 门户 ([https://portal.azure.com](https://portal.azure.com))。
     
@@ -411,7 +411,7 @@ ms.locfileid: "30216262"
   
 现在，可以在这四个网站中创建文档，并使用各种用户帐户进行访问测试。 
   
-若要使用 Azure 信息保护和新标签保护文档，必须在测试计算机上[安装 Azure 信息保护客户端](https://docs.microsoft.com/information-protection/rms-client/install-client-app)，从 Office 365 门户安装 Office，然后使用试用订阅的“高级和策略人员”**** 组中的帐户从 Microsoft Word 登录。
+若要使用 Azure 信息保护和新标签保护文档，必须在测试计算机上[安装 Azure 信息保护客户端](https://docs.microsoft.com/information-protection/rms-client/install-client-app)，从管理中心安装 Office，然后使用试用订阅的“**高级和策略人员**”组中的帐户从 Microsoft Word 登录。
   
 ## <a name="see-also"></a>另请参阅
 

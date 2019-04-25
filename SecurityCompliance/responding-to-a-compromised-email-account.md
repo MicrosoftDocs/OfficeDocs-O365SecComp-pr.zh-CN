@@ -14,12 +14,12 @@ localization_priority: Priority
 search.appverid:
 - MET150
 description: 了解如何识别并响应 Office 365 中遭到入侵的电子邮件帐户
-ms.openlocfilehash: f974719e5609645314bf1e8d7b15ae30cda6282e
-ms.sourcegitcommit: e7a776a04ef6ed5e287a33cfdc36aa2d72862b55
+ms.openlocfilehash: abb9cbae0d1df41f5513e7958aaf1dc04ce66154
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "31001265"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32264834"
 ---
 # <a name="responding-to-a-compromised-email-account-in-office-365"></a>响应 Office 365 中遭到入侵的电子邮件帐户
 
@@ -132,3 +132,4 @@ ms.locfileid: "31001265"
 - [在 Office 365 中检测并修正 Outlook 规则和自定义窗体注入攻击](detect-and-remediate-outlook-rules-forms-attack.md)
 - [Internet 犯罪投诉中心](http://www.ic3.gov/preventiontips.aspx)
 - [证券交易委员会 -“网络钓鱼”诈骗](http://www.sec.gov/investor/pubs/phishing.htm)
+- [使用报告消息加载项](https://support.office.com/zh-CN/article/Use-the-Report-Message-add-in-b5caa9f1-cdf3-4443-af8c-ff724ea719d2)直接向 Microsoft 和你的管理员报告垃圾邮件
