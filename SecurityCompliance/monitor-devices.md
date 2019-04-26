@@ -12,12 +12,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 search.appverid: met150
-ms.openlocfilehash: 31d89b8bbcad98814ff33764bad24bffbbba4968
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: 2984231caba574b8fa47b725ab77227f6ab5ae56
+ms.sourcegitcommit: 468a7c72df3206333d7d633dd7ce1f210dc1ef3a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32263498"
+ms.lasthandoff: 04/25/2019
+ms.locfileid: "33302736"
 ---
 # <a name="monitor-devices-in-microsoft-365-security"></a>在 Microsoft 365 安全中监视设备
 
@@ -25,7 +25,7 @@ ms.locfileid: "32263498"
 
 ## <a name="view-device-alerts"></a>查看设备警报
 
-从 Windows Defender ATP 获取有关你的设备上的入侵活动和其他威胁的最新警报 (适用于 E5 许可证)。 Microsoft 365 安全中心有几张卡, 可让您根据首选工作流在高级别有效地监视这些警报。
+从 Windows Defender ATP 获取有关你的设备上的入侵活动和其他威胁的最新警报 (适用于 E5 许可证)。 Microsoft 365 安全中心使用你首选的工作流在较高的层次上有效地监视这些警报。
 
 ### <a name="monitor-high-impact-alerts"></a>监视高影响警报
 
@@ -183,19 +183,44 @@ Microsoft Intune 为你的 ASR 规则提供管理功能。 如果要更新设置
 
 ### <a name="exclude-files-from-asr-rules"></a>从 ASR 规则中排除文件
 
-通过从检测中排除文件, 可以防止不需要的误报检测, 并更自信地在阻止模式下部署攻击面降低规则。
+Microsoft 365 security center 根据攻击面减少规则收集[您可能要](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-exploit-guard/troubleshoot-asr#add-exclusions-for-a-false-positive)从检测中排除的文件的名称。 通过排除文件, 可以减少误报检测, 并更自信地在阻止模式下部署攻击面降低规则。
 
-虽然在 microsoft Intune 上对攻击面降低规则的文件排除项进行了管理, 但 microsoft 365 安全中心提供了一个分析工具, 可帮助您了解触发检测项的文件。 它还有助于收集您可能想要排除的文件的名称。
+排除在 microsoft Intune 上进行管理, 但 microsoft 365 安全中心提供了分析工具, 可帮助您了解这些文件。 若要开始收集要排除的文件, 请转到**攻击面减少规则**报告页中的 "**添加排除**" 选项卡。
 
-若要开始分析检测项并收集文件以进行排除, 请转到**攻击面减少规则**报告页中的 "**添加排除**项" 选项卡。
+>[!NOTE]  
+>该工具将分析所有攻击面减少规则的检测项, 但[只有某些规则支持排除](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-exploit-guard/attack-surface-reduction-exploit-guard#attack-surface-reduction-rules)项。
 
 ![添加排除选项卡](./media/security-docs/add-exclusions-tab.png)
 
-该表列出了受攻击面减少规则检测到的所有文件名。 选择一个文件或多个文件后, 可以查看将这些文件添加到例外中的影响:
+该表列出了受攻击面减少规则检测到的所有文件名。 您可以选择文件以查看排除它们的影响:
 
-* 减少检测项总次数
-* 减少检测项影响的设备总数
+* 检测项的少多少
+* 多少较少的设备报告检测
 
 若要获取所选文件的完整路径的列表以供排除, 请选择 "**获取排除路径**"。
 
-若要详细了解如何添加排除项和有关如何添加它们的详细说明, 请阅读[解决攻击面减少规则](https://docs.microsoft.com/en-us/windows/security/threat-protection/windows-defender-exploit-guard/troubleshoot-asr)。
+用于 ASR 规则**块凭据的日志从 Windows 本地安全颁发机构子系统 (lsass.exe)** 捕获源应用**lsass**(如检测到的文件)。 因此, 生成的排除路径列表将包含此文件。 若要排除触发此规则而不是**lsass.exe**的文件, 请使用源应用的路径, 而不是检测到的文件。
+
+若要查找源应用程序, 请对此特定规则运行以下[高级搜寻查询](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/advanced-hunting-windows-defender-advanced-threat-protection)(由规则 ID 9e6c4e1f-7d60-472f-ba1a-a39ef669e4b2): 
+
+```MiscEvents
+| where EventTime > ago(7d)
+| where ActionType startswith "Asr"
+| where AdditionalFields contains "9e6c4e1f-7d60-472f-ba1a-a39ef669e4b2"
+| project InitiatingProcessFolderPath, InitiatingProcessFileName
+```
+
+#### <a name="check-files-for-exclusion"></a>检查要排除的文件
+在从 ASR 中排除文件之前, 我们建议您检查该文件以确定它是否确实不是恶意的。
+
+若要查看文件, 请使用 Windows Defender 安全中心上的[文件信息页面](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/investigate-files-windows-defender-advanced-threat-protection)。 页面提供了传播信息以及 VirusTotal 防病毒检测比率。 您还可以使用页面提交文件进行深入分析。
+
+若要在 Windows Defender 安全中心中查找检测到的文件, 请使用以下高级搜寻查询搜索所有 ASR 检测:
+
+```MiscEvents
+| where EventTime > ago(7d)
+| where ActionType startswith "Asr"
+| project FolderPath, FileName, SHA1, InitiatingProcessFolderPath, InitiatingProcessFileName, InitiatingProcessSHA1
+```
+
+在结果中使用**SHA1**或**InitiatingProcessSHA1**在 Windows Defender 安全中心中使用通用搜索栏搜索文件。

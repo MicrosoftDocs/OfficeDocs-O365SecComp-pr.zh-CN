@@ -10,12 +10,12 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: 1270a65f-ddc3-4430-b500-4d3a481efb1e
 description: Microsoft Exchange Online Protection (EOP) 是基于云的电子邮件筛选服务，可帮助您的组织防御垃圾邮件和恶意邮件，并包括用于保护您的组织避免违反邮件策略的功能。
-ms.openlocfilehash: c8450d5204635788a044538d701e23f4f77d1e0f
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: a0b736eb9773ace87f32f1272b3f4326532206d2
+ms.sourcegitcommit: eca85431f4e57878a8c160b7620adf5c44ef40e6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32256152"
+ms.lasthandoff: 04/25/2019
+ms.locfileid: "33306576"
 ---
 # <a name="exchange-online-protection-overview"></a>Exchange Online Protection 概述
 
@@ -25,9 +25,11 @@ Microsoft Exchange Online Protection (EOP) 是基于云的电子邮件筛选服�
   
 - **在独立方案中**EOP 为您的本地 Microsoft Exchange server 2013 环境、旧版 Exchange server 版本或任何其他本地 SMTP 电子邮件解决方案提供基于云的电子邮件保护。 
     
-- **作为 Microsoft Exchange Online 的一部分** 默认情况下，EOP 保护 Microsoft Exchange Online 云托管的邮箱。 
+- **作为 Microsoft Exchange Online 的一部分** 默认情况下，EOP 保护 Microsoft Exchange Online 云托管的邮箱。 有关配置这些 Exchange Online 功能的帮助, 请参阅防止[威胁](../protect-against-threats.md)。 
     
-- **在混合部署中** 当您的邮箱为内部部署和云邮箱的混合时，可以对 EOP 进行配置以保护您的邮件环境并控制邮件路由。 
+- **在混合部署中** 如果您既有本地邮箱，也有云邮箱，则可以将 EOP 配置为保护您的邮件环境并控制邮件路由。 
+
+这些 Exchange Online Protection 文章适用于混合和本地环境。 
     
 ## <a name="how-eop-works"></a>EOP 如何工作
 
@@ -74,7 +76,7 @@ EOP 在数据中心之间执行负载平衡，但仅限在一个区域内。如�
   
 如果您已购买 EOP，请参阅 [设置 EOP 服务](set-up-your-eop-service.md)，确保完成配置 EOP 所需的所有步骤，以保护您的邮件环境。 
   
-## <a name="for-more-information"></a>有关详细信息
+## <a name="for-more-information"></a>详细信息
 
 [EOP 功能](eop-features.md)
   
