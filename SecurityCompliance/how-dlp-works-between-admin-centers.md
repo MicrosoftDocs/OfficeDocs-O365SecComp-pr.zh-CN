@@ -3,7 +3,7 @@ title: DLP 在安全与合规中心和 Exchange 管理中心中之间的工作�
 ms.author: deniseb
 author: denisebmsft
 manager: laurawi
-ms.date: 8/4/2017
+ms.date: 04/19/2019
 ms.audience: Admin
 ms.topic: conceptual
 ms.service: O365-seccomp
@@ -15,18 +15,18 @@ search.appverid:
 - MET150
 ms.assetid: a7e4342a-a0a1-4b43-b166-3d7eecf5d2fd
 description: 了解 Security & 合规性中心中的 dlp 如何在 Exchange 管理中心中与 dlp 和邮件流规则 (传输规则) 结合使用。
-ms.openlocfilehash: 66dceb447e02eb01810997c23644c76f68795844
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: efe8fb733417275a259a472db3444b8f6cad1f92
+ms.sourcegitcommit: e23b84ef4eee9cccec7205826b71ddfe9aaac2f8
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32254922"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33362030"
 ---
 # <a name="how-dlp-works-between-the-security--compliance-center-and-exchange-admin-center"></a>DLP 在安全与合规中心和 Exchange 管理中心中之间的工作原理
 
 在 Office 365 中, 可以在两个不同的管理中心中创建数据丢失防护 (DLP) 策略:
   
-- 在**安全 & 合规性中心**中, 您可以创建一个 DLP 策略来帮助保护 SharePoint、OneDrive 和 Exchange 中的内容。 如果可能, 我们建议您在此处创建 DLP 策略。 有关详细信息, 请参阅[Security & 合规性中心中的 DLP](data-loss-prevention-policies.md)。
+- 在**安全 & 合规性中心**中, 您可以创建一个 DLP 策略来帮助保护 SharePoint、OneDrive、Exchange 和 Microsoft 团队中的内容。 如果可能, 我们建议您在此处创建 DLP 策略。 有关详细信息, 请参阅[Security & 合规性中心中的 DLP](data-loss-prevention-policies.md)。
     
 - 在**exchange 管理中心**中, 可以创建 DLP 策略来帮助保护仅在 Exchange 中的内容。 此策略可以使用 Exchange 邮件流规则 (也称为传输规则), 因此它具有特定于处理电子邮件的更多选项。 有关详细信息, 请参阅[Exchange 管理中心中的 DLP](https://go.microsoft.com/fwlink/?linkid=852311)。
     

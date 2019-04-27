@@ -15,12 +15,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: 使用 office 365 安全&amp;合规中心中的数据丢失防护 (DLP) 策略, 可以在 office 365 中识别、监视和自动保护敏感信息。
-ms.openlocfilehash: da8acd8904ac6a9b1945c8f794bad84a0adc64fb
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: fedb48c20720a7eaa66cd0ea7d2184dd3dc4df55
+ms.sourcegitcommit: e23b84ef4eee9cccec7205826b71ddfe9aaac2f8
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32262070"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33362050"
 ---
 # <a name="overview-of-data-loss-prevention-policies"></a>数据丢失防护策略概述
 
@@ -78,7 +78,7 @@ DLP 策略可以跨 Office 365 查找和保护敏感信息, 无论这些信息�
   
 请注意, 如果选择包含或排除特定的 SharePoint 网站或 OneDrive 帐户, DLP 策略不能包含100以上的包含和排除项。 尽管此限制存在, 但请通过应用组织范围的策略或适用于整个位置的策略, 了解您可以超过此限制。
   
-### <a name="rules"></a>规则
+### <a name="rules"></a>Rules
 
 规则是在组织内容中实施业务需求的。 策略包含一条或多条规则，每条规则由多个条件和操作组成。 对于每条规则，只要满足了条件，就会自动执行操作。 规则是按顺序执行的, 从每个策略中的最高优先级规则开始。
   
@@ -122,7 +122,7 @@ DLP 策略可帮助保护定义为**敏感信息类型**的敏感信息。 Offic
     
 这有助于 DLP 检测实现高度准确性, 同时减少可能中断工作的误报数。
   
-#### <a name="actions"></a>操作
+#### <a name="actions"></a>Actions
 
 当内容与规则中的条件相匹配时, 您可以将操作应用于自动保护内容。
   
@@ -478,11 +478,7 @@ Office 中的 DLP 策略评估设计不会影响程序的性能或对内容进�
 
 ### <a name="policy-evaluation-in-microsoft-teams"></a>Microsoft 团队中的策略评估
  
-在创建包含 Microsoft 团队作为位置的 DLP 策略时, 该策略将从 Office 365 安全&amp;合规中心同步到用户帐户以及 Microsoft 团队频道和聊天。 当有人尝试在 Microsoft 团队聊天或频道中共享敏感信息时, 可能会阻止或取消邮件, 具体取决于配置 DLP 策略的方式。 而且, 包含敏感信息且与来宾共享的文档 (外部用户) 将不会为这些用户打开。
-
-例如, 假设有人试图在团队聊天或频道中与外部用户共享敏感信息。 假定已定义一个 DLP 策略来阻止这种情况。 就地保护时, 将删除包含发送给外部用户的敏感信息的邮件。 这将在几秒内发生, 并根据 DLP 策略的配置方式自动发生。
-
-策略提示通知发件人其邮件被阻止或吊销的原因。 例如, 可能会告知发件人其邮件包含不允许与任何人共享的个人身份信息 (PII), 或者包含 PII 的文档不能与组织外部的人员共享。 然后, 发件人可以编辑其邮件, 使其符合 DLP 策略。
+在创建包含 Microsoft 团队作为位置的 DLP 策略时, 该策略将从 Office 365 安全&amp;合规中心同步到用户帐户以及 Microsoft 团队频道和聊天。 当有人尝试在 Microsoft 团队聊天或频道中共享敏感信息时, 可能会阻止或取消邮件, 具体取决于配置 DLP 策略的方式。 而且, 包含敏感信息且与来宾共享的文档 (外部用户) 将不会为这些用户打开。 若要了解详细信息, 请参阅[数据丢失防护和 Microsoft 团队](dlp-microsoft-teams.md)。
  
 ## <a name="permissions"></a>权限
 
@@ -516,7 +512,7 @@ Office 中的 DLP 策略评估设计不会影响程序的性能或对内容进�
     
   - [get-dlpdetailreport](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-dlp/Get-DlpDetailReport?view=exchange-ps)
     
-## <a name="more-information"></a>详细信息
+## <a name="more-information"></a>更多信息
 
 - [从模板创建 DLP 策略](create-a-dlp-policy-from-a-template.md)
     
