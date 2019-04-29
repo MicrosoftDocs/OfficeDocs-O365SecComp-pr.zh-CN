@@ -12,11 +12,11 @@ ms.collection:
 localization_priority: Normal
 description: 为全新的 Microsoft 365 安全中心和合规性中心做好准备
 ms.openlocfilehash: a64c64756f0c4588efcc6e467316b90aa1aabc3f
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.sourcegitcommit: e23b84ef4eee9cccec7205826b71ddfe9aaac2f8
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32265478"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33402990"
 ---
 # <a name="the-new-microsoft-365-security-center-and-microsoft-365-compliance-center-are-now-generally-available"></a>现已推出全新的 microsoft 365 安全中心和 Microsoft 365 合规性中心
 
@@ -95,16 +95,16 @@ microsoft 365 客户现已推出新的 microsoft 365 安全中心和新的 micro
 |---------|---------|---------|---------|
 |[Security & 合规性中心](https://protection.office.com) |是 |是  |是 |
 |[Microsoft 365 安全中心](https://security.microsoft.com) |是  | 是  | 否        |
-|[Microsoft 365 合规中心](https://compliance.microsoft.com) | 是 | 否 | 是 |
+|[Microsoft 365 合规中心](https://compliance.microsoft.com) | 是 | 否 | 可访问 |
 |[合规性管理器](https://aka.ms/compliancemanager) |是 | 是 |是  |
 |[Azure Information Protection](https://docs.microsoft.com/azure/information-protection)（Azure 信息保护） |是 |是 |否 |
 |[Azure 安全中心](https://docs.microsoft.com/azure/security-center/)  |是 |是 |否 |
 |[Azure 高级威胁防护](https://docs.microsoft.com/azure-advanced-threat-protection/what-is-atp)  |是 |是 |否 |
 |[Windows Defender ATP](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/windows-defender-advanced-threat-protection?ocid=tia-260153000#windows-defender-atp) |是 |是 |否 |
 |[标识保护](https://docs.microsoft.com/azure/active-directory/identity-protection)     |是 |是 |否 |
-|[Privileged Identity Management](https://docs.microsoft.com/azure/active-directory/privileged-identity-management)     |是 |是 |否 |
+|[特权身份管理](https://docs.microsoft.com/azure/active-directory/privileged-identity-management)     |是 |是 |否 |
 |[Intune](https://docs.microsoft.com/intune)     |是 |是 |是 |
-|[云应用安全](https://docs.microsoft.com/cloud-app-security/)     |是 |是 |是 |
+|[Cloud App Security](https://docs.microsoft.com/cloud-app-security/)     |是 |是 |是 |
 |[安全功能分数](https://docs.microsoft.com/office365/securitycompliance/office-365-secure-score)     |是 |是 |否 |
 |[Exchange](https://docs.microsoft.com/exchange/)     |是 |是 |是 |
 

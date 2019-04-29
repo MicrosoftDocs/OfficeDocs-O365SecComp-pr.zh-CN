@@ -12,18 +12,18 @@ localization_priority: Normal
 search.appverid: MOE150
 ms.assetid: ec2677ff-c4d7-4363-a9e7-22c80e015688
 description: 使用内容搜索电子数据展示工具搜索从第三方数据源导入到 Office 365 中的邮箱的项目。 您可以创建查询以搜索所有导入的项, 或创建查询以搜索特定的第三方数据类型。 本文列出了可以在关键字查询中使用的值, 以搜索可导入到 Office 365 的第三方数据类型。
-ms.openlocfilehash: 361ead435d397464452c5b58ecf251a7322ced05
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: c71472b5e6d9b992196780aba55e3775823447ab
+ms.sourcegitcommit: e23b84ef4eee9cccec7205826b71ddfe9aaac2f8
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32263774"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33402900"
 ---
 # <a name="use-content-search-to-search-third-party-data-that-was-imported-to-office-365"></a>使用内容搜索来搜索导入到 Office 365 的第三方数据
 
 您可以使用安全 & 合规中心中的[内容搜索电子数据展示工具](content-search.md)搜索从第三方数据源导入到 Office 365 中的邮箱的项目。 您可以创建查询来搜索所有导入的第三方数据项, 也可以创建查询仅搜索特定的第三方数据项。 此外, 还可以创建基于查询的保留策略或基于查询的电子数据展示保留, 以在 Office 365 中保留第三方数据。 
   
-有关导入第三方数据和可以导入到 office 365 的第三方数据类型列表的详细信息, 请参阅[在 office 365 中存档第三方数据](archiving-third-party-data.md)。 
+有关导入第三方数据和可以导入到 office 365 的第三方数据类型列表的详细信息, 请参阅[在 office 365 中使用合作伙伴存档第三方数据](work-with-partner-to-archive-third-party-data.md)。 
   
 ## <a name="creating-a-query-to-search-all-third-party-data"></a>创建查询以搜索所有第三方数据
 
@@ -33,7 +33,7 @@ ms.locfileid: "32263774"
 kind:externaldata AND subject:contoso
 ```
 
-上一个关键字查询示例包括 subject 属性。 有关可包含在关键字查询中的第三方数据项的其他属性列表, 请参阅在[Office 365 中存档第三方数据](archiving-third-party-data.md#more-information)中的 "详细信息" 部分。
+上一个关键字查询示例包括 subject 属性。 有关可包含在关键字查询中的第三方数据项的其他属性的列表, 请参阅在[Office 365 中存档第三方数据](work-with-partner-to-archive-third-party-data.md#more-information)一节中的 "详细信息" 部分。
   
 创建查询以搜索并保存第三方数据时, 您还可以使用条件来缩小搜索结果的范围。 有关创建内容搜索查询的详细信息, 请参阅[用于内容搜索的关键字查询和搜索条件](keyword-queries-and-search-conditions.md)。
   
@@ -103,7 +103,7 @@ itemclass:ipm.externaldata.Facebook* AND subject:contoso
 |Jive  <br/> | `ipm.externaldata.Jive*` <br/> |
 |JiveApiRetention  <br/> | `ipm.externaldata.JiveApiRetention*` <br/> |
 |JXTA  <br/> | `ipm.externaldata.JXTA*` <br/> |
-|LinkedIn  <br/> | `ipm.externaldata.LinkedIn*` <br/> |
+|领英  <br/> | `ipm.externaldata.LinkedIn*` <br/> |
 |MFTP  <br/> | `ipm.externaldata.MFTP*` <br/> |
 |Microsoft UC  <br/> | `ipm.externaldata.MicrosoftUC*` <br/> |
 |构思对齐  <br/> | `ipm.externaldata.MindAlign*` <br/> |

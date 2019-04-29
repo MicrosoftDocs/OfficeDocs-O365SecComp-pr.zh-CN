@@ -8,7 +8,7 @@ ms.topic: article
 f1_keywords:
 - ms.o365.cc.ArchivingHelp
 ms.service: O365-seccomp
-localization_priority: Normal
+localization_priority: Priority
 ms.collection:
 - Strat_O365_IP
 - M365-security-compliance
@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 ms.assetid: 268a109e-7843-405b-bb3d-b9393b2342ce
 description: 使用 Office 365 中的安全 & 合规性中心启用存档邮箱, 以支持组织的邮件保留、电子数据展示和保留要求。
-ms.openlocfilehash: d363943910d970576976d8386196b450dd5694f3
-ms.sourcegitcommit: f0e3c9de0b545081a4d264f74559b941f6c71410
+ms.openlocfilehash: f4f02e5107526f2f45b0a46579e0676b791f0dd1
+ms.sourcegitcommit: e23b84ef4eee9cccec7205826b71ddfe9aaac2f8
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "31958303"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33402920"
 ---
 # <a name="enable-archive-mailboxes-in-the-security--compliance-center"></a>在安全 & 合规中心中启用存档邮箱
   
@@ -125,11 +125,13 @@ Office 365 中的存档 (也称为就地存档) 为用户提供额外的邮箱�
   Get-Mailbox -Filter {ArchiveStatus -Eq "Active" -AND RecipientTypeDetails -eq "UserMailbox"} | Disable-Mailbox -Archive
   ```
 
-## <a name="more-information"></a>详细信息
+## <a name="more-information"></a>更多信息
   
+- 启用存档邮箱后, 用户可以将邮件存储在其存档邮箱中。 用户可以使用 Microsoft Outlook 和 web 上的 outlook 访问其存档邮箱。 通过使用其中任意一个客户端应用程序，用户可以查看存档邮箱中的邮件，并在其主邮箱和存档邮箱之间移动或复制邮件。 用户还可以使用“恢复已删除邮件”工具恢复存档邮箱中“可恢复的项目”文件夹下的已删除邮件。
+
+   有关支持就地存档的 outlook 许可证的列表, 请参阅[Exchange 功能的 outlook 许可证要求](https://support.office.com/article/outlook-license-requirements-for-exchange-features-46b6b7c5-c3ca-43e5-8424-1e2807917c99)。
+
 - 存档邮箱可帮助您和您的用户满足组织的保留、电子数据展示和保留要求。 例如, 您可以使用组织的 Exchange 保留策略将邮箱内容移动到用户的存档邮箱。 当您使用安全 & 合规中心中的内容搜索工具搜索用户的邮箱以查找特定内容时, 还会搜索用户的存档邮箱。 在你将诉讼保留或应用 Office 365 保留策略到用户的邮箱时, 存档邮箱中的项目也会保留。
-  
-- 启用存档邮箱后, 用户可以将邮件存储在其存档邮箱中。 用户可以使用 Microsoft Outlook 和 web 上的 outlook 访问其存档邮箱。 通过使用其中任意一个客户端应用程序，用户可以查看存档邮箱中的邮件，并在其主邮箱和存档邮箱之间移动或复制邮件。 用户还可以使用“恢复已删除邮件”工具恢复存档邮箱中“可恢复的项目”文件夹下的已删除邮件。 
   
 - 启用存档邮箱后, 您的组织可以利用自动分配给每个邮箱的默认 Exchange 保留策略 (也称为 "邮件记录管理" 或 "MRM 策略")。 启用存档邮箱后, 默认的 Exchange 保留策略将自动执行以下操作: 
   

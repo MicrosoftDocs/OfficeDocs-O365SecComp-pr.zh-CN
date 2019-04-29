@@ -1,5 +1,5 @@
 ---
-title: 保护用户和设备访问
+title: 保护用户和设备的访问权限
 ms.author: bcarter
 author: brendacarter
 manager: laurawi
@@ -14,13 +14,13 @@ search.appverid:
 ms.assetid: a6ef28a4-2447-4b43-aae2-f5af6d53c68e
 description: 用于保护对 O365 数据和服务的访问权限的登录页
 ms.openlocfilehash: e1b529a641d25f82521c40d0df9d091e0ebb5d90
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.sourcegitcommit: e23b84ef4eee9cccec7205826b71ddfe9aaac2f8
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32265224"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33403000"
 ---
-# <a name="protect-user-and-device-access"></a>保护用户和设备访问
+# <a name="protect-user-and-device-access"></a>保护用户和设备的访问权限
 
 保护对 Office 365 数据和服务的访问对于防御网络攻击和防止数据丢失至关重要。 可以将相同的保护应用于环境中的其他 SaaS 应用程序, 甚至应用于使用 Azure Active Directory 应用程序代理发布的本地应用程序。
   

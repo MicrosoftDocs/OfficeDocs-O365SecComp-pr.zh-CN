@@ -10,12 +10,12 @@ ms.date: 02/27/2019
 ms.service: O365-seccomp
 localization_priority: Normal
 description: 按照以下步骤操作, 将 Azure AD Office 365 应用程序配置为由 Office 365 云应用安全条件访问应用程序控制。
-ms.openlocfilehash: 72be95b3213b90cfe60d851d0852d465cdbe6ef9
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: 74cc415220282491694bf417a6761fd43a6d3521
+ms.sourcegitcommit: e23b84ef4eee9cccec7205826b71ddfe9aaac2f8
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32263098"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33402940"
 ---
 # <a name="deploy-conditional-access-app-control-for-office-365-apps"></a>为 Office 365 应用部署条件访问应用控制
 
@@ -50,7 +50,7 @@ ms.locfileid: "32263098"
 
 6. 添加任何适用的 **条件分配** 或 **授予控件** (可选)。
 
-> ![Azure AD 条件访问](media/image1.png)
+> ![Azure AD 条件访问](media/OCASimage1.png)
 
 ## <a name="step-2-sign-in-with-a-user-scoped-to-the-policy-in-the-apps"></a>步骤 2: 使用范围限定为应用程序中的策略的用户登录 
 
@@ -72,7 +72,7 @@ ms.locfileid: "32263098"
 
 3. 上载证书后, 可以基于 **设备标记**和 **有效的客户端证书**创建访问策略和会话策略。
 
-![条件访问应用程序控制设备 ID](media/image2.png)
+![条件访问应用程序控制设备 ID](media/OCASimage2.png)
 
 > [!NOTE]
 > 仅当会话与使用有效客户端证书筛选器的策略相匹配时, 才会从用户请求证书。

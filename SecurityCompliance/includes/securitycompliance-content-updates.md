@@ -41,7 +41,7 @@
 | 3/19/2019 | [高级电子数据展示的发行说明 (预览)](/Office365/SecurityCompliance/compliance20/release-notes-ediscovery20) | 修改内容 |
 | 3/19/2019 | [配置组织的监督策略](/Office365/SecurityCompliance/configure-supervision-policies) | 修改内容 |
 | 3/19/2019 | [查看安全&amp;合规性中心中的电子邮件安全报告](/Office365/SecurityCompliance/view-email-security-reports) | 修改内容 |
-| 3/19/2019 | [快速入门: 设置 Office 365 高级威胁防护](/Office365/SecurityCompliance/checklist-atp-setup) | 相加 |
+| 3/19/2019 | [快速入门: 设置 Office 365 高级威胁防护](/Office365/SecurityCompliance/checklist-atp-setup) | 添加内容 |
 | 3/19/2019 | [Office 365 中的防欺骗保护](/Office365/SecurityCompliance/anti-spoofing-protection) | 修改内容 |
 | 3/19/2019 | [适用于 SharePoint、OneDrive 和 Microsoft 团队的 Office 365 ATP](/Office365/SecurityCompliance/atp-for-spo-odb-and-teams) | 修改内容 |
 | 3/19/2019 | [Office 365 中的攻击模拟器](/Office365/SecurityCompliance/attack-simulator) | 修改内容 |
@@ -161,22 +161,22 @@
 | 3/20/2019 | [配置组织的监督策略](/Office365/SecurityCompliance/configure-supervision-policies) | 修改内容 |
 | 3/20/2019 | [创建关键字字典](/Office365/SecurityCompliance/create-a-keyword-dictionary) | 修改内容 |
 | 3/20/2019 | [Office 365 中的监督策略](/Office365/SecurityCompliance/supervision-policies) | 修改内容 |
-| 3/20/2019 | [安全与合规中心内的邮件流见解](/Office365/SecurityCompliance/mail-flow-insights-v2) | 相加 |
+| 3/20/2019 | [安全与合规中心内的邮件流见解](/Office365/SecurityCompliance/mail-flow-insights-v2) | 添加内容 |
 | 3/20/2019 | [自动转发的消息报告](/Office365/SecurityCompliance/mfi-auto-forwarded-messages-report) | 修改内容 |
-| 3/20/2019 | [顶级域邮件流状态洞察力](/Office365/SecurityCompliance/mfi-domain-mail-flow-status-insight) | 相加 |
-| 3/20/2019 | [邮件流映射报告](/Office365/SecurityCompliance/mfi-mail-flow-map-report) | 相加 |
+| 3/20/2019 | [顶级域邮件流状态洞察力](/Office365/SecurityCompliance/mfi-domain-mail-flow-status-insight) | 添加内容 |
+| 3/20/2019 | [邮件流映射报告](/Office365/SecurityCompliance/mfi-mail-flow-map-report) | 添加内容 |
 | 3/20/2019 | [邮件循环见解](/Office365/SecurityCompliance/mfi-mail-loop-insight) | 修改内容 |
-| 3/20/2019 | [不接受的域报告](/Office365/SecurityCompliance/mfi-non-accepted-domain-report) | 相加 |
-| 3/20/2019 | [未送达报告](/Office365/SecurityCompliance/mfi-non-delivery-report) | 相加 |
+| 3/20/2019 | [不接受的域报告](/Office365/SecurityCompliance/mfi-non-accepted-domain-report) | 添加内容 |
+| 3/20/2019 | [未送达报告](/Office365/SecurityCompliance/mfi-non-delivery-report) | 添加内容 |
 | 3/20/2019 | [入站和出站邮件流](/Office365/SecurityCompliance/mfi-outbound-and-inbound-mail-flow) | 修改内容 |
 | 3/20/2019 | [队列警报和队列](/Office365/SecurityCompliance/mfi-queue-alerts-and-queues) | 修改内容 |
-| 3/20/2019 | [修复发件人域洞察力](/Office365/SecurityCompliance/mfi-sender-domain-insight) | 相加 |
+| 3/20/2019 | [修复发件人域洞察力](/Office365/SecurityCompliance/mfi-sender-domain-insight) | 添加内容 |
 | 3/20/2019 | [慢邮件流规则见解](/Office365/SecurityCompliance/mfi-slow-mail-flow-rules-insight) | 修改内容 |
-| 3/20/2019 | [SMTP 身份验证客户端报告](/Office365/SecurityCompliance/mfi-smtp-auth-clients-report) | 相加 |
-| 3/21/2019 | [使用 Office 365 威胁智能进行自动调查和响应 (空中)](/Office365/SecurityCompliance/automated-investigation-response-office) | 相加 |
+| 3/20/2019 | [SMTP 身份验证客户端报告](/Office365/SecurityCompliance/mfi-smtp-auth-clients-report) | 添加内容 |
+| 3/21/2019 | [使用 Office 365 威胁智能进行自动调查和响应 (空中)](/Office365/SecurityCompliance/automated-investigation-response-office) | 添加内容 |
 | 3/21/2019 | [查找并调查已传递的恶意电子邮件 (Office 365 威胁调查和响应](/Office365/SecurityCompliance/investigate-malicious-email-that-was-delivered) | 修改内容 |
 | 3/21/2019 | [Office 365 威胁调查和响应](/Office365/SecurityCompliance/office-365-ti) | 修改内容 |
-| 3/21/2019 | [威胁资源管理器视图](/Office365/SecurityCompliance/threat-explorer-views) | 相加 |
+| 3/21/2019 | [威胁资源管理器视图](/Office365/SecurityCompliance/threat-explorer-views) | 添加内容 |
 | 3/21/2019 | [在安全&amp;合规中心中使用威胁资源管理器](/Office365/SecurityCompliance/use-explorer-in-security-and-compliance) | 修改内容 |
 | 3/21/2019 | [使用敏感度标签中的加密限制对内容的访问](/Office365/SecurityCompliance/encryption-sensitivity-labels) | 修改内容 |
 | 3/21/2019 | [敏感度标签概述](/Office365/SecurityCompliance/sensitivity-labels) | 修改内容 |
@@ -184,21 +184,21 @@
 | 3/21/2019 | [将非 Office 365 数据加载到工作集](/Office365/SecurityCompliance/compliance20/load-non-office365-data) | 修改内容 |
 | 3/21/2019 | [在高级电子数据展示中管理作业 (预览)](/Office365/SecurityCompliance/compliance20/managing-jobs-ediscovery20) | 修改内容 |
 | 3/21/2019 | [高级电子数据展示中支持的文件类型 (预览)](/Office365/SecurityCompliance/compliance20/supported-filetypes-ediscovery20) | 修改内容 |
-| 3/21/2019 | [AzCopy 中的疑难解答高级电子数据展示 (预览)](/Office365/SecurityCompliance/compliance20/troubleshooting-azcopy) | 相加 |
+| 3/21/2019 | [AzCopy 中的疑难解答高级电子数据展示 (预览)](/Office365/SecurityCompliance/compliance20/troubleshooting-azcopy) | 添加内容 |
 | 3/22/2019 | [Office 365 中的防钓鱼保护](/Office365/SecurityCompliance/anti-phishing-protection) | 修改内容 |
 | 3/22/2019 | [Office 365 中的防欺骗保护](/Office365/SecurityCompliance/anti-spoofing-protection) | 修改内容 |
 | 3/22/2019 | [使用 Office 365 的自动化调查和响应 (空中)](/Office365/SecurityCompliance/automated-investigation-response-office) | 修改内容 |
 | 3/22/2019 | [响应 Office 365 中遭到入侵的电子邮件帐户](/Office365/SecurityCompliance/responding-to-a-compromised-email-account) | 修改内容 |
 | 3/22/2019 | [Office 365 安全&amp;合规中心中的警报策略](/Office365/SecurityCompliance/alert-policies) | 修改内容 |
-| 3/22/2019 | [在 Microsoft 365 中寻找恶意软件和其他威胁](/Office365/SecurityCompliance/hunting) | 相加 |
-| 3/22/2019 | [通过威胁分析了解最新的攻击宣传活动和技术](/Office365/SecurityCompliance/latest-attack-campaigns) | 相加 |
+| 3/22/2019 | [在 Microsoft 365 中寻找恶意软件和其他威胁](/Office365/SecurityCompliance/hunting) | 添加内容 |
+| 3/22/2019 | [通过威胁分析了解最新的攻击宣传活动和技术](/Office365/SecurityCompliance/latest-attack-campaigns) | 添加内容 |
 | 3/22/2019 | [Microsoft 安全功能分数](/Office365/SecurityCompliance/microsoft-secure-score) | 修改内容 |
-| 3/22/2019 | [监视和报告 Microsoft 365 安全中的标识](/Office365/SecurityCompliance/monitor-and-report-identities) | 相加 |
-| 3/22/2019 | [在 Microsoft 365 安全中监视和报告应用状态](/Office365/SecurityCompliance/monitor-apps) | 相加 |
-| 3/22/2019 | [在 Microsoft 365 安全中监视和报告数据](/Office365/SecurityCompliance/monitor-data) | 相加 |
-| 3/22/2019 | [监视 Microsoft 365 安全中的设备](/Office365/SecurityCompliance/monitor-devices) | 相加 |
-| 3/22/2019 | [在 Microsoft 365 安全中心中监视和报告安全状态](/Office365/SecurityCompliance/monitoring-and-reporting) | 相加 |
-| 3/22/2019 | [Microsoft 365 安全中心概述](/Office365/SecurityCompliance/overview-security-center) | 相加 |
+| 3/22/2019 | [监视和报告 Microsoft 365 安全中的标识](/Office365/SecurityCompliance/monitor-and-report-identities) | 添加内容 |
+| 3/22/2019 | [在 Microsoft 365 安全中监视和报告应用状态](/Office365/SecurityCompliance/monitor-apps) | 添加内容 |
+| 3/22/2019 | [在 Microsoft 365 安全中监视和报告数据](/Office365/SecurityCompliance/monitor-data) | 添加内容 |
+| 3/22/2019 | [监视 Microsoft 365 安全中的设备](/Office365/SecurityCompliance/monitor-devices) | 添加内容 |
+| 3/22/2019 | [在 Microsoft 365 安全中心中监视和报告安全状态](/Office365/SecurityCompliance/monitoring-and-reporting) | 添加内容 |
+| 3/22/2019 | [Microsoft 365 安全中心概述](/Office365/SecurityCompliance/overview-security-center) | 添加内容 |
 | 3/22/2019 | [保护 SharePoint Online 网站和文件](/Office365/SecurityCompliance/secure-sharepoint-online-sites-and-files) | 修改内容 |
 | 3/22/2019 | [向 Office 365 中的个人数据应用标签](/Office365/SecurityCompliance/apply-labels-to-personal-data-in-office-365) | 修改内容 |
 | 3/22/2019 | [为个人数据构建分类架构](/Office365/SecurityCompliance/architect-a-classification-schema-for-personal-data) | 修改内容 |
@@ -213,7 +213,7 @@
 | 3/25/2019 | [Permissions in the Office 365 Security &amp; Compliance Center](/Office365/SecurityCompliance/permissions-in-the-security-and-compliance-center) | 修改内容 |
 | 3/25/2019 | [向 Office 365 中的个人数据应用标签](/Office365/SecurityCompliance/apply-labels-to-personal-data-in-office-365) | 修改内容 |
 | 3/25/2019 | [为个人数据构建分类架构](/Office365/SecurityCompliance/architect-a-classification-schema-for-personal-data) | 修改内容 |
-| 3/26/2019 | [欢迎使用全新的 Microsoft 365 合规性中心](/Office365/SecurityCompliance/microsoft-365-compliance-center) | 相加 |
+| 3/26/2019 | [欢迎使用全新的 Microsoft 365 合规性中心](/Office365/SecurityCompliance/microsoft-365-compliance-center) | 添加内容 |
 | 3/26/2019 | [在 Office 365 中为电子数据展示调查设置合规性边界](/Office365/SecurityCompliance/set-up-compliance-boundaries) | 修改内容 |
 | 3/26/2019 | [Office 365 ATP 安全链接警告页](/Office365/SecurityCompliance/atp-safe-links-warning-pages) | 修改内容 |
 | 3/26/2019 | [Office 365 ATP 安全链接](/Office365/SecurityCompliance/atp-safe-links) | 修改内容 |
@@ -238,10 +238,10 @@
 | 3/26/2019 | [文档指纹识别](/Office365/SecurityCompliance/document-fingerprinting) | 修改内容 |
 | 3/26/2019 | [事件驱动保留概述](/Office365/SecurityCompliance/event-driven-retention) | 修改内容 |
 | 3/26/2019 | [配置组织的监督策略](/Office365/SecurityCompliance/configure-supervision-policies) | 修改内容 |
-| 3/26/2019 | 当邮件为红色标记时, 如何组合策略和保护 | 相加 |
+| 3/26/2019 | 当邮件为红色标记时, 如何组合策略和保护 | 添加内容 |
 | 3/26/2019 | [Office 365 中的监督策略](/Office365/SecurityCompliance/supervision-policies) | 修改内容 |
 | 3/26/2019 | [将 Office 365 中的内容搜索用于目标集合](/Office365/SecurityCompliance/use-content-search-for-targeted-collections) | 修改内容 |
-| 3/26/2019 | [首席信息安全监察官 (CISO) 研讨会](/Office365/SecurityCompliance/ciso-workshop) | 相加 |
+| 3/26/2019 | [首席信息安全监察官 (CISO) 研讨会](/Office365/SecurityCompliance/ciso-workshop) | 添加内容 |
 | 3/26/2019 | [首席信息安全监察官 (CISO) 研讨会](/Office365/SecurityCompliance/ciso-workshop) | 修改内容 |
 | 3/26/2019 | [Office 365 中的内容搜索](/Office365/SecurityCompliance/content-search) | 修改内容 |
 | 3/26/2019 | [删除 Office 365 中的非活动邮箱](/Office365/SecurityCompliance/delete-an-inactive-mailbox) | 修改内容 |
@@ -287,7 +287,7 @@
 | 3/27/2019 | [Office 365 邮件加密常见问题解答](/Office365/SecurityCompliance/ome-faq) | 修改内容 |
 | 3/27/2019 | [如何避免在 Office 365 中发生误报](/Office365/SecurityCompliance/prevent-email-from-being-marked-as-spam) | 修改内容 |
 | 3/27/2019 | [有关使用 Office 365 客户密钥执行服务加密的 FAQ](/Office365/SecurityCompliance/service-encryption-with-customer-key-faq) | 修改内容 |
-| 3/27/2019 | [优化 Office 365 中的反网络钓鱼保护](/Office365/SecurityCompliance/tuning-anti-phishing) | 相加 |
+| 3/27/2019 | [优化 Office 365 中的反网络钓鱼保护](/Office365/SecurityCompliance/tuning-anti-phishing) | 添加内容 |
 | 3/28/2019 | [首席信息安全监察官 (CISO) 研讨会](/Office365/SecurityCompliance/ciso-workshop) | 修改内容 |
 | 3/28/2019 | [什么是 EOP](/Office365/SecurityCompliance/eop/what-is-eop) | 修改内容 |
 | 3/28/2019 | [使用驱动器传送将组织的 PST 文件导入到 Office 365](/Office365/SecurityCompliance/use-drive-shipping-to-import-pst-files-to-office-365) | 修改内容 |
@@ -299,7 +299,7 @@
 | 3/28/2019 | [在 Office 365 中向个人数据应用保护](/Office365/SecurityCompliance/apply-protection-to-personal-data-in-office-365) | 修改内容 |
 | 3/28/2019 | [自定义或新建敏感信息类型](/Office365/SecurityCompliance/customize-or-create-a-new-sensitive-information-type) | 修改内容 |
 | 3/28/2019 | [当邮件为红色标记时, 如何组合策略和保护](/Office365/SecurityCompliance/how-policies-and-protections-are-combined) | 更名 |
-| 3/28/2019 | [使用标签分析查看标签使用情况](/Office365/SecurityCompliance/label-analytics) | 相加 |
+| 3/28/2019 | [使用标签分析查看标签使用情况](/Office365/SecurityCompliance/label-analytics) | 添加内容 |
 | 3/28/2019 | [保留标签概述](/Office365/SecurityCompliance/labels) | 修改内容 |
 | 3/28/2019 | [监视是否有个人数据泄露](/Office365/SecurityCompliance/monitor-for-leaks-of-personal-data) | 修改内容 |
 | 3/28/2019 | [搜索和查找个人数据](/Office365/SecurityCompliance/search-for-and-find-personal-data) | 修改内容 |
@@ -531,41 +531,41 @@
 | 4/1/2019 | [使用网络上传将组织 PST 文件导入到 Office 365](/Office365/SecurityCompliance/use-network-upload-to-import-pst-files) | 修改内容 |
 | 4/1/2019 | [响应 Office 365 中遭到入侵的电子邮件帐户](/Office365/SecurityCompliance/responding-to-a-compromised-email-account) | 修改内容 |
 | 4/1/2019 | [查看 Office 365 高级威胁防护报告](/Office365/SecurityCompliance/view-reports-for-atp) | 修改内容 |
-| 4/1/2019 | [在数据调查中添加或删除成员](/Office365/SecurityCompliance/datainvestigations/add-remove-members) | 相加 |
-| 4/1/2019 | [在证据中对文档添加批注和密文](/Office365/SecurityCompliance/datainvestigations/annotate-and-redact-documents) | 相加 |
-| 4/1/2019 | [生成搜索查询](/Office365/SecurityCompliance/datainvestigations/build-search-queries) | 相加 |
-| 4/1/2019 | [关闭或删除数据调查](/Office365/SecurityCompliance/datainvestigations/close-or-delete-investigation) | 相加 |
-| 4/1/2019 | [配置搜索和分析设置](/Office365/SecurityCompliance/datainvestigations/configure-search-analytics-settings) | 相加 |
-| 4/1/2019 | [在数据调查中配置设置](/Office365/SecurityCompliance/datainvestigations/configure-settings-datainvestigations) | 相加 |
-| 4/1/2019 | [在数据调查中创建新调查 (预览)](/Office365/SecurityCompliance/datainvestigations/create-new-investigation) | 相加 |
+| 4/1/2019 | [在数据调查中添加或删除成员](/Office365/SecurityCompliance/datainvestigations/add-remove-members) | 添加内容 |
+| 4/1/2019 | [在证据中对文档添加批注和密文](/Office365/SecurityCompliance/datainvestigations/annotate-and-redact-documents) | 添加内容 |
+| 4/1/2019 | [生成搜索查询](/Office365/SecurityCompliance/datainvestigations/build-search-queries) | 添加内容 |
+| 4/1/2019 | [关闭或删除数据调查](/Office365/SecurityCompliance/datainvestigations/close-or-delete-investigation) | 添加内容 |
+| 4/1/2019 | [配置搜索和分析设置](/Office365/SecurityCompliance/datainvestigations/configure-search-analytics-settings) | 添加内容 |
+| 4/1/2019 | [在数据调查中配置设置](/Office365/SecurityCompliance/datainvestigations/configure-settings-datainvestigations) | 添加内容 |
+| 4/1/2019 | [在数据调查中创建新调查 (预览)](/Office365/SecurityCompliance/datainvestigations/create-new-investigation) | 添加内容 |
 | 4/1/2019 | [Microsoft 365 中的数据调查 (预览) 发布说明](/Office365/SecurityCompliance/datainvestigations/data-investigations-release-notes) | 更名 |
-| 4/1/2019 | [文档元数据字段](/Office365/SecurityCompliance/datainvestigations/document-metadata-fields) | 相加 |
-| 4/1/2019 | [从数据调查中下载导出作业](/Office365/SecurityCompliance/datainvestigations/download-export-jobs) | 相加 |
-| 4/1/2019 | [电子邮件会话](/Office365/SecurityCompliance/datainvestigations/email-threading) | 相加 |
-| 4/1/2019 | [处理调查数据时的错误修正](/Office365/SecurityCompliance/datainvestigations/error-remediation) | 相加 |
-| 4/1/2019 | [查询证据中的数据](/Office365/SecurityCompliance/datainvestigations/evidence-query) | 相加 |
-| 4/1/2019 | [从调查导出数据](/Office365/SecurityCompliance/datainvestigations/export-data) | 相加 |
-| 4/1/2019 | [从事件中导出文档](/Office365/SecurityCompliance/datainvestigations/export-documents-from-incident) | 相加 |
-| 4/1/2019 | [调查数据的高级索引](/Office365/SecurityCompliance/datainvestigations/index-data-people-of-interest) | 相加 |
-| 4/1/2019 | [数据调查限制](/Office365/SecurityCompliance/datainvestigations/limits-datainvestigations) | 相加 |
-| 4/1/2019 | [将非 Office 365 数据加载到证据中](/Office365/SecurityCompliance/datainvestigations/load-non-office365-data) | 相加 |
+| 4/1/2019 | [文档元数据字段](/Office365/SecurityCompliance/datainvestigations/document-metadata-fields) | 添加内容 |
+| 4/1/2019 | [从数据调查中下载导出作业](/Office365/SecurityCompliance/datainvestigations/download-export-jobs) | 添加内容 |
+| 4/1/2019 | [电子邮件会话](/Office365/SecurityCompliance/datainvestigations/email-threading) | 添加内容 |
+| 4/1/2019 | [处理调查数据时的错误修正](/Office365/SecurityCompliance/datainvestigations/error-remediation) | 添加内容 |
+| 4/1/2019 | [查询证据中的数据](/Office365/SecurityCompliance/datainvestigations/evidence-query) | 添加内容 |
+| 4/1/2019 | [从调查导出数据](/Office365/SecurityCompliance/datainvestigations/export-data) | 添加内容 |
+| 4/1/2019 | [从事件中导出文档](/Office365/SecurityCompliance/datainvestigations/export-documents-from-incident) | 添加内容 |
+| 4/1/2019 | [调查数据的高级索引](/Office365/SecurityCompliance/datainvestigations/index-data-people-of-interest) | 添加内容 |
+| 4/1/2019 | [数据调查限制](/Office365/SecurityCompliance/datainvestigations/limits-datainvestigations) | 添加内容 |
+| 4/1/2019 | [将非 Office 365 数据加载到证据中](/Office365/SecurityCompliance/datainvestigations/load-non-office365-data) | 添加内容 |
 | 4/1/2019 | [在 Microsoft 365 中管理数据外泄事件](/Office365/SecurityCompliance/datainvestigations/manage-data-spillage-incidents) | 更名 |
-| 4/1/2019 | [在高级电子数据展示中管理工作集 (预览)](/Office365/SecurityCompliance/datainvestigations/manage-incidents) | 相加 |
-| 4/1/2019 | [在数据调查中管理作业](/Office365/SecurityCompliance/datainvestigations/manage-jobs) | 相加 |
-| 4/1/2019 | [管理负载集](/Office365/SecurityCompliance/datainvestigations/manage-load-sets) | 相加 |
-| 4/1/2019 | [管理数据调查中感兴趣的人员 (预览)](/Office365/SecurityCompliance/datainvestigations/manage-people-of-interest) | 相加 |
-| 4/1/2019 | [近似重复检测](/Office365/SecurityCompliance/datainvestigations/near-duplicates) | 相加 |
-| 4/1/2019 | [Microsoft 365 中的数据调查 (预览) 概述](/Office365/SecurityCompliance/datainvestigations/overview-data-investigations) | 相加 |
-| 4/1/2019 | [流程数据以进行调查](/Office365/SecurityCompliance/datainvestigations/process-data-for-investigation) | 相加 |
-| 4/1/2019 | [查看证据中的数据](/Office365/SecurityCompliance/datainvestigations/review-data-in-evidence) | 相加 |
-| 4/1/2019 | [运行分析功能，加快调查](/Office365/SecurityCompliance/datainvestigations/run-analytics-to-investigate-faster) | 相加 |
-| 4/1/2019 | [在调查中搜索数据](/Office365/SecurityCompliance/datainvestigations/search-for-data) | 相加 |
-| 4/1/2019 | [搜索统计信息](/Office365/SecurityCompliance/datainvestigations/search-statistics) | 相加 |
-| 4/1/2019 | [数据调查中支持的文件类型](/Office365/SecurityCompliance/datainvestigations/supported-filetypes-datainvestigations) | 相加 |
-| 4/1/2019 | [证据中的标记文档](/Office365/SecurityCompliance/datainvestigations/tag-documents) | 相加 |
-| 4/1/2019 | [主题](/Office365/SecurityCompliance/datainvestigations/themes) | 相加 |
-| 4/1/2019 | [使用相关性模块分析证据中的数据](/Office365/SecurityCompliance/datainvestigations/use-relevance-module) | 相加 |
-| 4/1/2019 | [查看相关人员的审核活动](/Office365/SecurityCompliance/datainvestigations/view-people-of-interest-activity) | 相加 |
+| 4/1/2019 | [在高级电子数据展示中管理工作集 (预览)](/Office365/SecurityCompliance/datainvestigations/manage-incidents) | 添加内容 |
+| 4/1/2019 | [在数据调查中管理作业](/Office365/SecurityCompliance/datainvestigations/manage-jobs) | 添加内容 |
+| 4/1/2019 | [管理负载集](/Office365/SecurityCompliance/datainvestigations/manage-load-sets) | 添加内容 |
+| 4/1/2019 | [管理数据调查中感兴趣的人员 (预览)](/Office365/SecurityCompliance/datainvestigations/manage-people-of-interest) | 添加内容 |
+| 4/1/2019 | [近似重复检测](/Office365/SecurityCompliance/datainvestigations/near-duplicates) | 添加内容 |
+| 4/1/2019 | [Microsoft 365 中的数据调查 (预览) 概述](/Office365/SecurityCompliance/datainvestigations/overview-data-investigations) | 添加内容 |
+| 4/1/2019 | [流程数据以进行调查](/Office365/SecurityCompliance/datainvestigations/process-data-for-investigation) | 添加内容 |
+| 4/1/2019 | [查看证据中的数据](/Office365/SecurityCompliance/datainvestigations/review-data-in-evidence) | 添加内容 |
+| 4/1/2019 | [运行分析功能，加快调查](/Office365/SecurityCompliance/datainvestigations/run-analytics-to-investigate-faster) | 添加内容 |
+| 4/1/2019 | [在调查中搜索数据](/Office365/SecurityCompliance/datainvestigations/search-for-data) | 添加内容 |
+| 4/1/2019 | [搜索统计信息](/Office365/SecurityCompliance/datainvestigations/search-statistics) | 添加内容 |
+| 4/1/2019 | [数据调查中支持的文件类型](/Office365/SecurityCompliance/datainvestigations/supported-filetypes-datainvestigations) | 添加内容 |
+| 4/1/2019 | [证据中的标记文档](/Office365/SecurityCompliance/datainvestigations/tag-documents) | 添加内容 |
+| 4/1/2019 | [主题](/Office365/SecurityCompliance/datainvestigations/themes) | 添加内容 |
+| 4/1/2019 | [使用相关性模块分析证据中的数据](/Office365/SecurityCompliance/datainvestigations/use-relevance-module) | 添加内容 |
+| 4/1/2019 | [查看相关人员的审核活动](/Office365/SecurityCompliance/datainvestigations/view-people-of-interest-activity) | 添加内容 |
 | 4/1/2019 | [Office 365 中的加密](/Office365/SecurityCompliance/encryption) | 修改内容 |
 | 4/1/2019 | [欢迎使用全新的 Microsoft 365 合规性中心](/Office365/SecurityCompliance/microsoft-365-compliance-center) | 修改内容 |
 | 4/1/2019 | [Office 365 的安全最佳做法](/Office365/SecurityCompliance/security-best-practices) | 修改内容 |
@@ -588,7 +588,7 @@
 | 4/4/2019 | [设置全新的 Office 365 邮件加密功能](/Office365/SecurityCompliance/set-up-new-message-encryption-capabilities) | 修改内容 |
 | 4/4/2019 | [零时差自动清除 - 防范垃圾邮件和恶意软件](/Office365/SecurityCompliance/zero-hour-auto-purge) | 修改内容 |
 | 4/5/2019 | [退信消息和 EOP](/Office365/SecurityCompliance/backscatter-messages-and-eop) | 修改内容 |
-| 4/5/2019 | [存储在 Exchange Online 邮箱中的内容](/Office365/SecurityCompliance/what-is-stored-in-exo-mailbox) | 相加 |
+| 4/5/2019 | [存储在 Exchange Online 邮箱中的内容](/Office365/SecurityCompliance/what-is-stored-in-exo-mailbox) | 添加内容 |
 
 
 ## <a name="week-of-april-08-2019"></a>2019 年 4 月 8 日那周
@@ -605,7 +605,7 @@
 | 4/9/2019 | [使用保留标签和 DLP 保护 SharePoint Online 文件](/Office365/SecurityCompliance/protect-sharepoint-online-files-with-office-365-labels-and-dlp) | 修改内容 |
 | 4/9/2019 | [保护 SharePoint Online 网站和文件](/Office365/SecurityCompliance/secure-sharepoint-online-sites-and-files) | 修改内容 |
 | 4/9/2019 | [在开发/测试环境中保护 SharePoint Online 网站](/Office365/SecurityCompliance/secure-sharepoint-online-sites-in-a-dev-test-environment) | 修改内容 |
-| 2019 年 4 月 10 日 | [将数据从一个工作集添加到另一个工作集](/Office365/SecurityCompliance/compliance20/add-data-to-working-set-from-another-working-set) | 相加 |
+| 2019 年 4 月 10 日 | [将数据从一个工作集添加到另一个工作集](/Office365/SecurityCompliance/compliance20/add-data-to-working-set-from-another-working-set) | 添加内容 |
 | 2019 年 4 月 10 日 | [高级电子数据展示中的文档元数据字段 (预览)](/Office365/SecurityCompliance/compliance20/document-metadata-fields) | 修改内容 |
 | 2019 年 4 月 10 日 | [高级电子数据展示 (预览) 限制](/Office365/SecurityCompliance/compliance20/limits-ediscovery20) | 修改内容 |
 | 2019 年 4 月 10 日 | [在高级电子数据展示中管理作业 (预览)](/Office365/SecurityCompliance/compliance20/managing-jobs-ediscovery20) | 修改内容 |
@@ -656,7 +656,7 @@
 | 4/12/2019 | [Office 365 邮件加密](/Office365/SecurityCompliance/ome) | 修改内容 |
 
 
-## <a name="week-of-april-15-2019"></a>2019年4月15日一周
+## <a name="week-of-april-15-2019"></a>2019 年 4 月 15 日所在周
 
 
 | 发布日期 |主题标题 | 更改 |
@@ -696,12 +696,12 @@
 | 4/16/2019 | [使用网络上载将 RMS 加密的 PST 文件导入到 Office 365](/Office365/SecurityCompliance/use-network-upload-to-import-rms-encrypted-pst-files) | 修改内容 |
 | 4/16/2019 | [审核共享以查找与外部用户共享的资源](/Office365/SecurityCompliance/use-sharing-auditing) | 修改内容 |
 | 4/16/2019 | [安全与合规中心中的警报策略](/Office365/SecurityCompliance/alert-policies) | 修改内容 |
-| 4/16/2019 | [首席信息安全监察官 (CISO) 研讨会-模块1– Microsoft Cybersecurity 简报](/Office365/SecurityCompliance/ciso-workshop-module-1) | 相加 |
-| 4/16/2019 | [首席信息安全监察官 (CISO) 研讨会-模块 2-安全管理](/Office365/SecurityCompliance/ciso-workshop-module-2) | 相加 |
-| 4/16/2019 | [首席信息安全监察官 (CISO) 研讨会-模块3–身份和访问管理](/Office365/SecurityCompliance/ciso-workshop-module-3) | 相加 |
-| 4/16/2019 | [首席信息安全监察官 (CISO) 研讨会-模块4a –威胁防护策略](/Office365/SecurityCompliance/ciso-workshop-module-4a) | 相加 |
-| 4/16/2019 | [首席信息安全监察官 (CISO) 研讨会-模块4b –威胁防护策略](/Office365/SecurityCompliance/ciso-workshop-module-4b) | 相加 |
-| 4/16/2019 | [首席信息安全监察官 (CISO) 研讨会-模块5–信息保护](/Office365/SecurityCompliance/ciso-workshop-module-5) | 相加 |
+| 4/16/2019 | [首席信息安全监察官 (CISO) 研讨会-模块1– Microsoft Cybersecurity 简报](/Office365/SecurityCompliance/ciso-workshop-module-1) | 添加内容 |
+| 4/16/2019 | [首席信息安全监察官 (CISO) 研讨会-模块 2-安全管理](/Office365/SecurityCompliance/ciso-workshop-module-2) | 添加内容 |
+| 4/16/2019 | [首席信息安全监察官 (CISO) 研讨会-模块3–身份和访问管理](/Office365/SecurityCompliance/ciso-workshop-module-3) | 添加内容 |
+| 4/16/2019 | [首席信息安全监察官 (CISO) 研讨会-模块4a –威胁防护策略](/Office365/SecurityCompliance/ciso-workshop-module-4a) | 添加内容 |
+| 4/16/2019 | [首席信息安全监察官 (CISO) 研讨会-模块4b –威胁防护策略](/Office365/SecurityCompliance/ciso-workshop-module-4b) | 添加内容 |
+| 4/16/2019 | [首席信息安全监察官 (CISO) 研讨会-模块5–信息保护](/Office365/SecurityCompliance/ciso-workshop-module-5) | 添加内容 |
 | 4/16/2019 | [首席信息安全监察官 (CISO) 研讨会](/Office365/SecurityCompliance/ciso-workshop) | 修改内容 |
 | 4/16/2019 | [在高级电子数据展示中导出事例数据 (预览)](/Office365/SecurityCompliance/compliance20/exporting-data-ediscover20) | 修改内容 |
 | 4/16/2019 | [首席信息安全监察官 (CISO) 研讨会-模块1– Microsoft Cybersecurity 简报](/Office365/SecurityCompliance/ciso-workshop-module-1) | 修改内容 |
@@ -710,17 +710,17 @@
 | 4/16/2019 | [首席信息安全监察官 (CISO) 研讨会-模块4a –威胁防护策略](/Office365/SecurityCompliance/ciso-workshop-module-4a) | 修改内容 |
 | 4/16/2019 | [首席信息安全监察官 (CISO) 研讨会-模块4b –威胁防护策略](/Office365/SecurityCompliance/ciso-workshop-module-4b) | 修改内容 |
 | 4/16/2019 | [首席信息安全监察官 (CISO) 研讨会-模块5–信息保护](/Office365/SecurityCompliance/ciso-workshop-module-5) | 修改内容 |
-| 4/17/2019 | [配置组织的监督策略](/Office365/SecurityCompliance/configure-supervision-policies) | 修改内容 |
-| 4/17/2019 | [Office 365 中的监督策略](/Office365/SecurityCompliance/supervision-policies) | 修改内容 |
-| 4/17/2019 | [首席信息安全监察官 (CISO) 研讨会, 模块 1: Microsoft Cybersecurity 简报](/Office365/SecurityCompliance/ciso-workshop-module-1) | 修改内容 |
-| 4/17/2019 | [首席信息安全监察官 (CISO) 研讨会, 模块 2: 安全管理](/Office365/SecurityCompliance/ciso-workshop-module-2) | 修改内容 |
-| 4/17/2019 | [首席信息安全监察官 (CISO) 研讨会, 模块 3: 标识和访问管理](/Office365/SecurityCompliance/ciso-workshop-module-3) | 修改内容 |
-| 4/17/2019 | [首席信息安全监察官 (CISO) 研讨会, 模块 4a: 威胁防护策略](/Office365/SecurityCompliance/ciso-workshop-module-4a) | 修改内容 |
-| 4/17/2019 | [首席信息安全监察官 (CISO) 研讨会, 模块 4b: 威胁防护策略](/Office365/SecurityCompliance/ciso-workshop-module-4b) | 修改内容 |
-| 4/17/2019 | [首席信息安全监察官 (CISO) 研讨会, 模块 5: 信息保护](/Office365/SecurityCompliance/ciso-workshop-module-5) | 修改内容 |
-| 4/17/2019 | [首席信息安全监察官 (CISO) 研讨会](/Office365/SecurityCompliance/ciso-workshop) | 修改内容 |
-| 4/17/2019 | [在 Office 365 中配置特权访问管理](/Office365/SecurityCompliance/privileged-access-management-configuration) | 修改内容 |
-| 4/17/2019 | [Office 365 中的特权访问管理](/Office365/SecurityCompliance/privileged-access-management-overview) | 修改内容 |
+| 2019/4/17 | [配置组织的监督策略](/Office365/SecurityCompliance/configure-supervision-policies) | 修改内容 |
+| 2019/4/17 | [Office 365 中的监督策略](/Office365/SecurityCompliance/supervision-policies) | 修改内容 |
+| 2019/4/17 | [首席信息安全监察官 (CISO) 研讨会, 模块 1: Microsoft Cybersecurity 简报](/Office365/SecurityCompliance/ciso-workshop-module-1) | 修改内容 |
+| 2019/4/17 | [首席信息安全监察官 (CISO) 研讨会, 模块 2: 安全管理](/Office365/SecurityCompliance/ciso-workshop-module-2) | 修改内容 |
+| 2019/4/17 | [首席信息安全监察官 (CISO) 研讨会, 模块 3: 标识和访问管理](/Office365/SecurityCompliance/ciso-workshop-module-3) | 修改内容 |
+| 2019/4/17 | [首席信息安全监察官 (CISO) 研讨会, 模块 4a: 威胁防护策略](/Office365/SecurityCompliance/ciso-workshop-module-4a) | 修改内容 |
+| 2019/4/17 | [首席信息安全监察官 (CISO) 研讨会, 模块 4b: 威胁防护策略](/Office365/SecurityCompliance/ciso-workshop-module-4b) | 修改内容 |
+| 2019/4/17 | [首席信息安全监察官 (CISO) 研讨会, 模块 5: 信息保护](/Office365/SecurityCompliance/ciso-workshop-module-5) | 修改内容 |
+| 2019/4/17 | [首席信息安全监察官 (CISO) 研讨会](/Office365/SecurityCompliance/ciso-workshop) | 修改内容 |
+| 2019/4/17 | [在 Office 365 中配置特权访问管理](/Office365/SecurityCompliance/privileged-access-management-configuration) | 修改内容 |
+| 2019/4/17 | [Office 365 中的特权访问管理](/Office365/SecurityCompliance/privileged-access-management-overview) | 修改内容 |
 | 4/18/2019 | [配置 Office 365 租户以提高安全性](/Office365/SecurityCompliance/tenant-wide-setup-for-increased-security) | 修改内容 |
 | 4/18/2019 | [配置组织的监督策略](/Office365/SecurityCompliance/configure-supervision-policies) | 修改内容 |
 | 4/18/2019 | [Office 365 中的监督策略](/Office365/SecurityCompliance/supervision-policies) | 修改内容 |
@@ -748,4 +748,4 @@
 | 4/19/2019 | [使用网络上载将 RMS 加密的 PST 文件导入到 Office 365](/Office365/SecurityCompliance/use-network-upload-to-import-rms-encrypted-pst-files) | 修改内容 |
 | 4/19/2019 | [审核共享以查找与外部用户共享的资源](/Office365/SecurityCompliance/use-sharing-auditing) | 修改内容 |
 | 4/19/2019 | [将垃圾邮件、非垃圾邮件和网络欺诈邮件提交给 Microsoft 进行分析](/Office365/SecurityCompliance/submit-spam-non-spam-and-phishing-scam-messages-to-microsoft-for-analysis) | 修改内容 |
-| 4/19/2019 | [使用 Office 365 ATP 安全附件进行动态传递和预览](/Office365/SecurityCompliance/dynamic-delivery-and-previewing) | 修改时间 |
+| 4/19/2019 | [使用 Office 365 ATP 安全附件进行动态传递和预览](/Office365/SecurityCompliance/dynamic-delivery-and-previewing) | 修改内容 |

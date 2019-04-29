@@ -18,11 +18,11 @@ search.appverid:
 ms.assetid: d14ae7c3-fcb0-4a03-967b-cbed861bb086
 description: 了解 Office 365 中的监督策略
 ms.openlocfilehash: 091f5b1f31fcf59162df6ded6a6b07fb501834c7
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.sourcegitcommit: e23b84ef4eee9cccec7205826b71ddfe9aaac2f8
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32260320"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33403040"
 ---
 # <a name="supervision-policies-in-office-365"></a>Office 365 中的监督策略
 
@@ -111,7 +111,7 @@ Office 365 中的监督策略使您可以捕获指定审阅者进行检查的员
 
 下表对每个条件进行了详细说明。
   
-|**Condition**|**如何使用此条件**|
+|**条件**|**如何使用此条件**|
 |:-----|:-----|
 | 从这些域中的任何域接收邮件  <br><br> 不从这些域中的任何域接收邮件 | 若要在收到的邮件中包含或排除某些域时应用策略, 请输入每个域并使用逗号分隔多个域。 您输入的每个域都将单独应用 (这些域中只有一个适用于该邮件的策略)。 |
 | 将邮件发送到这些域中的任何域  <br><br> 邮件不会发送到这些域中的任何域 | 若要在已发送的邮件中包含或排除某些域时应用策略, 请输入每个域并使用逗号分隔多个域。 您输入的每个域都将单独应用 (这些域中只有一个适用于该策略的域必须应用于该邮件)。 |

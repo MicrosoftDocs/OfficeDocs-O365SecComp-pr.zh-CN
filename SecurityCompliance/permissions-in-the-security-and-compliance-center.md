@@ -16,11 +16,11 @@ search.appverid:
 - MET150
 description: 管理员可以了解 Office 365 安全 & 合规中心中提供的权限。
 ms.openlocfilehash: 4d5fb942ea613b7b732d1150de497b1992dbd717
-ms.sourcegitcommit: 81e86658c9c890a2fd0c36f73f1c94941cc74775
+ms.sourcegitcommit: e23b84ef4eee9cccec7205826b71ddfe9aaac2f8
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32439336"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33402970"
 ---
 # <a name="permissions-in-the-office-365-security--compliance-center"></a>Office 365 安全与合规中心的权限
 

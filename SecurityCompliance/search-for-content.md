@@ -12,11 +12,11 @@ ROBOTS: NOINDEX, NOFOLLOW
 ms.assetid: df2d1e0f-b476-42c9-aade-4a260b24f193
 description: 使用安全 & 合规中心中的内容搜索电子数据展示工具, 可以在 Exchange 邮箱、SharePoint 网站中的文档和 OneDrive 位置以及 Skype for business 中的即时消息对话中快速查找电子邮件。
 ms.openlocfilehash: 3e8e0594cac700fe37ee7a4a6c889dbf862cd0fb
-ms.sourcegitcommit: 3509e324952aee703f3ced5b950dd53cb5f974ac
+ms.sourcegitcommit: e23b84ef4eee9cccec7205826b71ddfe9aaac2f8
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/25/2019
-ms.locfileid: "33248297"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33403010"
 ---
 # <a name="search-for-content-in-office-365"></a>在 Office 365 中搜索内容
 

@@ -14,12 +14,12 @@ ms.assetid: b10023f6-f30f-45d3-b3ad-b71aa4aa0d58
 ms.collection:
 - M365-security-compliance
 description: 现在, 请使用本文作为指南来配置您的威胁防护功能。
-ms.openlocfilehash: 065071999130f209d63bcafc09ad72daceceac04
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: 646ec220bf4649472d4ab885824010bc32ea862c
+ms.sourcegitcommit: e23b84ef4eee9cccec7205826b71ddfe9aaac2f8
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32261630"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33402980"
 ---
 # <a name="protect-against-threats-in-office-365"></a>防御 Office 365 中的威胁
 
@@ -30,14 +30,19 @@ Office 365 包括各种威胁防护功能。 以下是可用作检查表的快�
 
 ## <a name="requirements"></a>Requirements
 
-### <a name="licenses"></a>许可证
+### <a name="subscriptions"></a>订阅
 
-威胁防护功能包含在所有 Office 365 订阅中;但是, 某些订阅包含更多高级功能, 例如 Office 365 高级威胁防护中的功能。 在本文中, 我们包括每个保护区域的订阅要求。
+威胁防护功能包含在所有 Office 365 订阅中;但是, 某些订阅包含更高级的功能。 下表列出了本文附带的保护功能以及最低订阅要求。<br/>
 
-若要了解有关威胁防护功能和 subsriptions 的详细信息, 请参阅以下资源:
-- [Office 365 高级威胁防护服务说明](https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description)
-- [Exchange Online Protection 服务说明](https://docs.microsoft.com/en-us/office365/servicedescriptions/exchange-online-protection-service-description/exchange-online-protection-service-description)
-- [Office 365 安全与合规中心](https://docs.microsoft.com/office365/servicedescriptions/office-365-platform-service-description/office-365-securitycompliance-center)
+|保护类型  |订阅要求  |
+|---------|---------|
+|反恶意软件保护    | [Exchange Online Protection](https://docs.microsoft.com/office365/servicedescriptions/exchange-online-protection-service-description)EOP        |
+|防止电子邮件和 Office 文档中的恶意 url 和文件    | [Office 365 ATP](https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description)        |
+|防钓鱼保护    | [EOP](https://docs.microsoft.com/office365/servicedescriptions/exchange-online-protection-service-description)      |
+|高级反网络钓鱼防护    | [Office 365 高级威胁防护](https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description)   |
+|反垃圾邮件保护     | [EOP](https://docs.microsoft.com/office365/servicedescriptions/exchange-online-protection-service-description)       |
+|零小时自动清除 (电子邮件)    | [EOP](https://docs.microsoft.com/office365/servicedescriptions/exchange-online-protection-service-description)EOP        |
+|审核日志记录 (用于报告目的)    | [Exchange Online](https://docs.microsoft.com/office365/servicedescriptions/exchange-online-service-description)        |
 
 ### <a name="roles-and-permissions"></a>角色和权限
 
@@ -51,9 +56,9 @@ Office 365 包括各种威胁防护功能。 以下是可用作检查表的快�
 
 若要了解详细信息, 请参阅[Office 365 安全&amp;合规中心中的权限](permissions-in-the-security-and-compliance-center.md)。
 
-## <a name="part-1---anti-malware"></a>第1部分-反恶意软件
+## <a name="part-1---anti-malware-protection"></a>第1部分-反恶意软件保护
 
-[反恶意软件保护](anti-malware-protection.md)在包含[Exchange Online protection](https://docs.microsoft.com/office365/servicedescriptions/exchange-online-protection-service-description) (EOP) 的订阅中可用。 
+[反恶意软件保护](anti-malware-protection.md)在包含[EOP](https://docs.microsoft.com/office365/servicedescriptions/exchange-online-protection-service-description) (EOP) 的订阅中可用。 
 
 1. 在 "[安全 & 合规性中心](https://protection.office.com)" 中, 选择 "**威胁管理** > **策略** > **反恶意软件**"。
 
@@ -65,13 +70,13 @@ Office 365 包括各种威胁防护功能。 以下是可用作检查表的快�
    
     - 在 "**常见附件类型筛选器**" 部分, 选择 **"启用"**。
 
-4. 单击“**保存**”。
+4. 单击“保存”****。
 
 若要了解有关反恶意软件策略选项的详细信息, 请参阅[配置反恶意软件策略](configure-anti-malware-policies.md)。
 
-## <a name="part-2---zero-day-protection"></a>第2部分-零天保护
+## <a name="part-2---protection-from-malicious-urls-and-files"></a>第2部分-抵御恶意 url 和文件的攻击
 
-0天保护在包含[Office 365 高级威胁防护](https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description)(ATP) 的订阅中可用, 并通过[atp 安全附件](atp-safe-attachments.md)和[atp 安全链接](atp-safe-links.md)策略进行设置。
+来自恶意 url 和文件的点击时间保护在包含[Office 365 ATP](https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description) (atp) 的订阅中可用, 并通过[atp 安全附件](atp-safe-attachments.md)和[atp 安全链接](atp-safe-links.md)策略进行设置。
 
 ### <a name="atp-safe-attachments-policies"></a>ATP 安全附件策略
 
@@ -93,13 +98,11 @@ Office 365 包括各种威胁防护功能。 以下是可用作检查表的快�
 
     - 在 "**应用**于" 部分中, 选择 **"收件人域"**。 然后, 选择您的域, 选择 "**添加**", 然后单击 **"确定"**。
 
-5. 单击“**保存**”。
+5. 单击“保存”****。
 
 6. (**建议的附加步骤**)作为全局管理员或 SharePoint Online 管理员, 运行**[set-spotenant](https://docs.microsoft.com/powershell/module/sharepoint-online/Set-SPOTenant?view=sharepoint-ps)** cmdlet, 并将 Office 365 环境的**DisallowInfectedFileDownload**参数设置为*true* 。 (这将阻止用户打开、移动、复制或共享被检测为恶意的文件。)  
 
-有关详细信息，请参阅： 
-- [设置 Office 365 ATP 安全附件策略](set-up-atp-safe-attachments-policies.md)
-- [打开适用于 SharePoint、OneDrive 和 Microsoft 团队的 Office 365 ATP](turn-on-atp-for-spo-odb-and-teams.md)
+若要了解详细信息, 请参阅[设置 office 365 atp 安全附件策略](set-up-atp-safe-attachments-policies.md)和[打开 SharePoint、OneDrive 和 Microsoft 团队的 Office 365 ATP](turn-on-atp-for-spo-odb-and-teams.md)。
 
 ### <a name="atp-safe-links-policies"></a>ATP 安全链接策略
 
@@ -129,11 +132,11 @@ Office 365 包括各种威胁防护功能。 以下是可用作检查表的快�
 
     - 在 "**应用**于" 部分中, 选择 **"收件人域"**。 然后, 选择您的域, 选择 "**添加**", 然后单击 **"确定"**。
 
-6. 单击“**保存**”。
+6. 单击“保存”****。
 
 若要了解详细信息, 请参阅[设置 Office 365 ATP 安全链接策略](set-up-atp-safe-links-policies.md)。 
 
-## <a name="part-3---anti-phishing"></a>第3部分-反网络钓鱼 
+## <a name="part-3---anti-phishing-protection"></a>第3部分-反网络钓鱼防护
 
 在包含[EOP](https://docs.microsoft.com/office365/servicedescriptions/exchange-online-protection-service-description)的订阅中提供了[反网络钓鱼保护](anti-phishing-protection.md)。 在[ATP](https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description)中提供高级反钓鱼保护。 以下过程介绍如何配置 ATP 反网络钓鱼策略。 配置反网络钓鱼策略 (不包括 ATP) 的步骤类似。
 
@@ -165,7 +168,7 @@ Office 365 包括各种威胁防护功能。 以下是可用作检查表的快�
 
 若要了解有关反网络钓鱼策略选项的详细信息, 请参阅[设置反网络钓鱼策略](set-up-anti-phishing-policies.md)。
 
-## <a name="part-4---anti-spam"></a>第4部分-反垃圾邮件
+## <a name="part-4---anti-spam-protection"></a>第4部分-反垃圾邮件保护
 
 [反垃圾邮件保护](anti-spam-protection.md)在包含[EOP](https://docs.microsoft.com/office365/servicedescriptions/exchange-online-protection-service-description)的订阅中可用。
 
@@ -179,13 +182,15 @@ Office 365 包括各种威胁防护功能。 以下是可用作检查表的快�
 
     - 在 "**允许列表**" 部分中, 查看 (必要时编辑) 您允许的发件人和域。
 
-4. 单击“**保存**”。
+4. 单击“保存”****。
 
 若要了解有关反垃圾邮件策略选项的详细信息, 请参阅[配置反垃圾邮件策略](configure-the-anti-spam-policies.md)。
 
-## <a name="part-5---service-wide-settings"></a>第5部分-服务范围设置
+## <a name="part-5---additional-settings-to-configure"></a>第5部分-要配置的其他设置
 
-### <a name="zero-hour-auto-purge"></a>零小时自动清除
+除了配置来自恶意软件、恶意 url 和文件、网络钓鱼和垃圾邮件的保护之外, 我们还建议您配置零小时自动清除和审核日志记录设置。
+
+### <a name="zero-hour-auto-purge-for-email"></a>电子邮件的零小时自动清除
 
 [零小时自动清除](zero-hour-auto-purge.md)(ZAP) 在包含[EOP](https://docs.microsoft.com/office365/servicedescriptions/exchange-online-protection-service-description)的订阅中可用。 此保护在默认情况下处于启用状态。但是, 若要使保护生效, 必须满足以下条件:
 
@@ -195,35 +200,18 @@ Office 365 包括各种威胁防护功能。 以下是可用作检查表的快�
 
 若要了解详细信息, 请参阅[针对垃圾邮件和恶意软件的零小时自动清除保护](zero-hour-auto-purge.md)。
 
-### <a name="audit-logging"></a>审核日志记录
+### <a name="audit-logging-for-reporting-and-investigation"></a>报告和调查的审核日志记录
 
 审核日志记录在包括[Exchange Online](https://docs.microsoft.com/office365/servicedescriptions/exchange-online-service-description)的订阅中可用。 为了查看威胁防护报告中的数据 (如[安全仪表板](security-dashboard.md)、[电子邮件安全报告](view-email-security-reports.md)和[浏览器](use-explorer-in-security-and-compliance.md)), 必须为您的组织打开审核日志记录。 若要了解详细信息, 请参阅[打开或关闭 Office 365 审核日志搜索](turn-audit-log-search-on-or-off.md)。
 
 ## <a name="post-setup-tasks"></a>安装后任务
 
-### <a name="watch-for-new-features-and-service-updates"></a>监视新功能和服务更新
+在配置威胁防护功能之后, 请确保监视这些功能的工作方式、查看和修订策略 (根据需要), 并查看新的功能和服务更新。
 
-- [设置标准或目标发布选项](https://docs.microsoft.com/office365/admin/manage/release-options-in-office-365?view=o365-worldwide)
+|需执行的操作  |要了解详细信息的资源  |
+|---------|---------|
+|查看报告的威胁防护功能是如何为你的组织工作的    |[安全仪表板](security-dashboard.md)<br/>[电子邮件安全报告](view-email-security-reports.md)<br/>[Office 365 ATP 报告](view-reports-for-atp.md)<br/>[威胁资源管理器](use-explorer-in-security-and-compliance.md)    |
+|根据需要定期查看和修改威胁防护策略    |[安全功能分数](microsoft-secure-score.md)<br/>[智能报告和见解](reports-and-insights-in-security-and-compliance.md)<br/>[Office 365 威胁调查和响应功能](keep-users-safe-with-office-365-ti.md)          |
+|监视新功能和服务更新     |[标准和目标发布选项](https://docs.microsoft.com/office365/admin/manage/release-options-in-office-365?view=o365-worldwide)<br/>[消息中心](https://docs.microsoft.com/office365/admin/manage/message-center?view=o365-worldwide)<br/>[Microsoft 365 路线图](https://www.microsoft.com/microsoft-365/roadmap?filters=&searchterms=advanced%2Cthreat%2Cprotection)<br/>[服务说明](https://docs.microsoft.com/office365/servicedescriptions/office-365-service-descriptions-technet-library)         |
 
-- [转到你的消息中心以查看功能通知](https://docs.microsoft.com/office365/admin/manage/message-center?view=o365-worldwide) 
 
-- [访问 Microsoft 365 路线图以查看新功能的状态](https://www.microsoft.com/microsoft-365/roadmap?filters=&searchterms=advanced%2Cthreat%2Cprotection)
-
-- [查看 Office 365 服务说明](https://docs.microsoft.com/office365/servicedescriptions/office-365-service-descriptions-technet-library)
-
-### <a name="see-how-threat-protection-features-are-working-for-your-organization"></a>查看组织的威胁防护功能的工作原理
-
-- [访问安全仪表板](security-dashboard.md)
-
-- [查看 Office 365 的报告 ATP](view-reports-for-atp.md), 包括[资源管理器](use-explorer-in-security-and-compliance.md)
-
-- [查看您的电子邮件安全报告](view-email-security-reports.md)
-
-### <a name="periodically-review-and-revise-your-threat-protection-policies"></a>定期查看和修改威胁防护策略
-
-- [查看安全分数](microsoft-secure-score.md)
-
-- [在安全&amp;合规中心中使用智能报告和见解](reports-and-insights-in-security-and-compliance.md) 
-
-- [使用 Office 365 威胁调查和响应功能保持用户安全](keep-users-safe-with-office-365-ti.md) 
- 

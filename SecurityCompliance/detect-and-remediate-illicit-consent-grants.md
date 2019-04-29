@@ -14,12 +14,12 @@ localization_priority: Normal
 search.appverid:
 - MET150
 description: 了解如何识别和修正在 Office 365 中的非法许可授予攻击。
-ms.openlocfilehash: 32fa8fedd0cac0ba1a6193b7b107492efb136838
-ms.sourcegitcommit: e7a776a04ef6ed5e287a33cfdc36aa2d72862b55
+ms.openlocfilehash: 658183b3e5a3089425312ee14c6663485e0543ce
+ms.sourcegitcommit: e23b84ef4eee9cccec7205826b71ddfe9aaac2f8
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30999935"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33402950"
 ---
 # <a name="detect-and-remediate-illicit-consent-grants-in-office-365"></a>检测和修正 Office 365 中的非法授权
 
@@ -36,7 +36,11 @@ ms.locfileid: "30999935"
 3. 创建搜索 (所有活动和所有用户) 并筛选结果以同意应用程序, 并添加 OAuth2PermissionGrant。
 4. 检查扩展属性, 并查看 IsAdminContent 是否设置为 True。
 
-
+> [!NOTE]
+>  
+   - 在事件发生后, 将在搜索结果中显示相应的审核日志条目, 最长可能需要30分钟或最长24小时。
+   - 审核记录在审核日志中保留和搜索的时间长度取决于您的 Office 365 订阅, 以及分配给特定用户的许可证类型。 有关详细信息, 请参阅[审核日志](search-the-audit-log-in-security-and-compliance.md)。
+      
 如果此值为 true, 则表示具有全局管理员访问权限的人员可能已授予对数据的广泛访问权限。 如果这是意外情况, 请执行相应的步骤来[确认攻击](detect-and-remediate-illicit-consent-grants.md#confirmattack)。
 
 <a name="confirmattack"> </a>
@@ -103,11 +107,11 @@ ms.locfileid: "30999935"
 - 您还可以完全禁用受影响帐户的登录, 这将禁用对该帐户中的数据的应用程序访问。 这并不是最终用户的工作效率的理想之处, 但如果您正在努力快速限制影响, 则它可能是一个可行的短期补救措施。
 - 您可以为租赁启用集成的应用程序。 这是一项重大步骤, 可禁用最终用户对租户范围授予许可的能力。 这样可以防止您的用户无意中授予对恶意应用程序的访问权限。 强烈建议不要这样做, 因为这会严重削弱用户在第三方应用程序中的工作效率。  为此, 可以按照[启用或禁用集成应用程序](https://support.office.com/article/Turning-Integrated-Apps-on-or-off-7e453a40-66df-44ab-92a1-96786cb7fb34)中的步骤操作。
 
-## <a name="secure-office-365-like-a-cybersecurity-pro"></a>安全的 Office 365, 如 cybersecurity pro
-您的 Office 365 订阅附带了一组功能强大的安全功能, 可用于保护您的数据和用户。  使用[Office 365 安全路线图: 前30天、90天和更高版本的首要优先级](https://support.office.com/article/office-365-security-roadmap-top-priorities-for-the-first-30-days-90-days-and-beyond-28c86a1c-e4dd-4aad-a2a6-c768a21cb352), 以实现 Microsoft 建议的保护 Office 365 租户的最佳做法。
-- 在前30天内要完成的任务。  这些值会立即生效, 并对用户造成影响较小。
-- 要在90天内完成的任务。 它们需要花一点时间来规划和实施, 但大大提高了您的安全状况。
-- 超过90天。 这些增强功能将在您的前90天工作中构建。
+## <a name="secure-office-365-like-a-cybersecurity-pro"></a>像网络安全专家那样保护 Office 365
+你的 Office 365 订阅附带了一组强大的安全功能，可用于保护你的数据和用户。  使用“[Office 365 安全路线图：前 30 天、90 天内以及之后的首要行动](https://support.office.com/article/office-365-security-roadmap-top-priorities-for-the-first-30-days-90-days-and-beyond-28c86a1c-e4dd-4aad-a2a6-c768a21cb352)”，通过实施 Microsoft 建议的最佳做法来保护你的 Office 365 租户。
+- 需要在前 30 天完成的任务。  这些任务会对你的用户产生直接影响并且影响很小。
+- 需要在 90 天内完成的任务。 这些任务需要花费更多时间来规划和实施，但会显著改善你的安全状况。
+- 90 天后。 这些增强功能基于前 90 天的工作构建。
 
 ## <a name="see-also"></a>另请参阅：
 - [我的应用程序列表中的意外应用程序](https://docs.microsoft.com/azure/active-directory/application-access-unexpected-application)通过在实现时可能需要执行的各种操作来指导管理员。在遇到意外应用程序时, 将对数据进行访问。
