@@ -15,14 +15,13 @@ ms.collection:
 search.appverid:
 - MET150
 - MOE150
-ms.assetid: d14ae7c3-fcb0-4a03-967b-cbed861bb086
 description: 设置监管审核策略以捕获员工通信以供审阅。
-ms.openlocfilehash: 92630b1405af6e297390751d9b00e24a82e03087
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: c99936a9a33446ce13e5d0a719ef7447be619bf4
+ms.sourcegitcommit: 696c1ed6b270be3f9da7395b49a7d8fec98e6db0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32259510"
+ms.lasthandoff: 04/29/2019
+ms.locfileid: "33470392"
 ---
 # <a name="configure-supervision-policies-for-your-organization"></a>配置组织的监督策略
 
@@ -34,31 +33,31 @@ ms.locfileid: "32259510"
   
 按照以下步骤在 Office 365 组织中设置和使用监督:
   
-- **步骤 1 (可选)** - [为监督设置组 (可选)](#step-1---set-up-groups-for-supervision-optional)
+- **第1步 (可选)**:[设置组以进行监控 (可选)](#step-1---set-up-groups-for-supervision-optional)
 
-    在开始使用监督之前, 请确定哪些用户需要查看通信以及谁将执行检查。 如果您只想开始几个用户来了解监督工作的工作方式, 则可以跳过 "立即" 设置组。
+    在开始使用监督之前, 请确定哪些用户需要查看通信以及谁执行了检查。 如果您只想开始几个用户来了解监督工作的工作方式, 则可以跳过 "立即" 设置组。
 
-- **步骤 2 (必需)** - [使监督在您的组织中可用 (必需)](#step-2---make-supervision-available-in-your-organization-required)
+- **步骤 2 (必需)**:[让监督在你的组织中可用 (必需)](#step-2---make-supervision-available-in-your-organization-required)
 
     将自己添加到监管审核角色组, 以便您可以设置策略。 分配此角色的任何人都可以访问合规中心中的**监督**页面。 如果 reviewable 电子邮件托管在 Exchange online 中, 则每个审阅者都必须具有[对 exchange online 的远程 PowerShell 访问权限](https://docs.microsoft.com/powershell/exchange/exchange-online/disable-access-to-exchange-online-powershell)。
 
-- **步骤 3 (可选)** - [创建自定义敏感信息类型和自定义关键字词典](#step-3---create-custom-sensitive-information-types-and-custom-keyword-dictionaries-optional)
+- **步骤 3 (可选)**:[创建自定义敏感信息类型和自定义关键字词典](#step-3---create-custom-sensitive-information-types-and-custom-keyword-dictionaries-optional)
 
     如果您需要针对监督策略的自定义敏感信息类型或自定义关键字词典, 则需要在启动监督向导之前创建它。
 
-- **步骤 4 (必需)** - [设置监督策略](#step-4---set-up-a-supervision-policy-required)
+- **步骤 4 (必需)**:[设置监督策略](#step-4---set-up-a-supervision-policy-required)
 
     在合规中心中创建监督策略。 这些策略定义哪些通信将在组织中进行审核, 并指定执行审阅的用户。 通信包括电子邮件和 Microsoft 团队通信, 以及第三方平台通信 (如 Facebook、Twitter 等)
 
-- **第5步-(可选)**[测试监督策略](#step-5---test-your-supervision-policy-optional)
+- **步骤 5 (可选)**:[测试监督策略](#step-5---test-your-supervision-policy-optional)
 
     测试您的监督策略以确保其按预期工作。 一定要确保符合性策略满足您的标准。
 
-- **步骤 6-(可选)**[为不希望使用 Office 365 监督仪表板或 web 上的 outlook (以前称为 Outlook web App) 的审阅者配置 Outlook 以查看受监督的通信](#step-6---configure-outlook-for-reviewers-optional)
+- **步骤 6 (可选)**:[为不希望使用 Office 365 监督仪表板或 web 上的 outlook (以前称为 Outlook web App) 的审阅者配置 Outlook 以查看受监督的通信](#step-6---configure-outlook-for-reviewers-optional)
 
     将 outlook 配置为向审阅者授予对 outlook 客户端中的监督功能的访问权限, 以便他们能够评估和分类每个项目。
 
-## <a name="step-1---set-up-groups-for-supervision-optional"></a>步骤 1-设置监控组 (可选)
+## <a name="step-1-set-up-groups-for-supervision-optional"></a>步骤 1: 设置组以进行监控 (可选)
 
  在创建监督策略时, 您需要定义哪些用户已查看其通信, 以及谁执行了评论。 在策略中, 您将使用电子邮件地址来标识个人或用户组。 为简化您的设置, 您可以为已查看其通信的用户创建组, 并为查看这些通信的用户分组。 如果使用的是组, 可能需要多个。 例如, 您想要监视两个不同的人员组之间的通信, 或者如果您想要指定一个不受监督的组。
 
@@ -102,7 +101,7 @@ ms.locfileid: "32259510"
 - [管理启用邮件的安全组](https://docs.microsoft.com/Exchange/recipients-in-exchange-online/manage-mail-enabled-security-groups)
 - [Office 365 组概述](https://docs.microsoft.com/office365/admin/create-groups/office-365-groups?view=o365-worldwide)
 
-## <a name="step-2---make-supervision-available-in-your-organization-required"></a>第2步-使监督在你的组织可用 (必需)
+## <a name="step-2-make-supervision-available-in-your-organization-required"></a>步骤 2: 让监督在你的组织中可用 (必需)
 
 若要使**监督**成为合规中心中的菜单选项, 您必须分配有监管审核管理员角色。
   
@@ -134,13 +133,13 @@ ms.locfileid: "32259510"
 
 1. 按照[启用或禁用对 Exchange Online PowerShell 的访问](https://docs.microsoft.com/powershell/exchange/exchange-online/disable-access-to-exchange-online-powershell)中的指导进行操作。
 
-## <a name="step-3---create-custom-sensitive-information-types-and-custom-keyword-dictionaries-optional"></a>步骤 3-创建自定义敏感信息类型和自定义关键字词典 (可选)
+## <a name="step-3-create-custom-sensitive-information-types-and-custom-keyword-dictionaries-optional"></a>步骤 3: 创建自定义敏感信息类型和自定义关键字词典 (可选)
 
 若要从监督策略向导中的现有自定义敏感信息类型或自定义关键字词典中进行选择, 需要先创建这些项目。
 
 ### <a name="create-custom-keyword-dictionarylexicon-optional"></a>创建自定义关键字词典/词典 (可选)
 
-使用文本编辑器 (如记事本) 创建一个新文件, 其中包含要在监督策略中监视的关键字术语。 确保每个术语都位于单独的行中, 并将文件保存为**Unicode/UTF-16 (小 Endian)** 格式。
+使用文本编辑器 (如记事本) 创建一个文件, 其中包含要在监督策略中监视的关键字术语。 确保每个术语都位于单独的行中, 并将文件保存为**Unicode/UTF-16 (小 Endian)** 格式。
 
 ### <a name="create-custom-sensitive-information-types"></a>创建自定义敏感信息类型
 
@@ -155,35 +154,36 @@ ms.locfileid: "32259510"
 
     创建自定义词典/词典之后, 可以使用[DlpKeywordDictionary](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-dlp/get-dlpkeyworddictionary) cmdlet 查看配置的关键字, 也可以使用[DlpKeywordDictionary](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-dlp/set-dlpkeyworddictionary) cmdlet 添加和删除术语。
 
-## <a name="step-4---set-up-a-supervision-policy-required"></a>步骤 4-设置监督策略 (必需)
+## <a name="step-4-set-up-a-supervision-policy-required"></a>步骤 4: 设置监督策略 (必需)
   
 1. 在 Office [https://protection.office.com](https://protection.office.com) 365 组织中使用管理员帐户的凭据进行登录。
 
 2. 在 "合规性中心" 中, 选择 "**监督**"。
   
-3. 选择 "**创建**", 然后按照向导设置此策略的以下页面。 使用该向导, 您将:
+3. 选择 "**创建**", 然后按照向导设置策略配置。 使用该向导, 您将:
 
     - 为策略指定名称和说明。
     - 选择要监督的用户或组, 包括选择要排除的用户或组。
     - 定义监督策略条件。
     - 选择是否要包含敏感信息类型。 你可以在此处选择默认和自定义敏感信息类型。
+    - 选择是否要启用冒犯性语言模型。 这将检测在电子邮件正文中发送或接收的不正确的语言。
     - 定义要查看的通信百分比。
     - 选择策略的审阅者。 审阅者可以是单个用户, 也可以是[启用邮件的安全组](https://docs.microsoft.com/Exchange/recipients-in-exchange-online/manage-mail-enabled-security-groups#create-a-mail-enabled-security-group)。 所有审阅者都必须在 Exchange Online 上托管邮箱。
     - 查看策略选择并创建策略。
 
-## <a name="step-5---test-your-supervision-policy-optional"></a>第5步-测试监察策略 (可选)
+## <a name="step-5-test-your-supervision-policy-optional"></a>步骤 5: 测试监督策略 (可选)
 
 创建监督策略后, 最好进行测试以确保策略正确地强制实施了您定义的条件。 如果监督策略中包含敏感信息类型, 您可能还需要[测试数据丢失防护 (DLP) 策略](create-test-tune-dlp-policy.md)。 按照以下步骤测试您的监督策略:
 
 1. 打开以您要测试的策略中定义的监督用户身份登录的电子邮件客户端或 Microsoft 团队。
-2. 发送符合您在监督策略中定义的条件的电子邮件或 Microsoft 团队聊天。 它可以是关键字、附件大小、域等。请确保您确定策略中配置的条件设置过于严格或太 lenient。
+2. 发送符合您在监督策略中定义的条件的电子邮件或 Microsoft 团队聊天。 它可以是关键字、附件大小、域等。确保您确定策略中配置的条件设置过于严格或太 lenient。
 
     > [!Note]
     > 已定义策略的电子邮件将在接近实时的情况中进行处理, 并且可以在配置策略后立即进行测试。 Microsoft 团队中的聊天可能需要长达24小时才能在策略中完全处理。 
 
 3. 以监督策略中指定的审阅者的形式登录到 Office 365 租户。 导航到 "**监控** > "*您的自定义策略* > **打开**以查看该策略的报告。
 
-## <a name="step-6---configure-outlook-for-reviewers-optional"></a>步骤 6-配置 Outlook for 审阅者 (可选)
+## <a name="step-6-configure-outlook-for-reviewers-optional"></a>步骤 6: 配置 Outlook for 审阅者 (可选)
 
 要使用 outlook 而不是 Office 365 中的监督仪表板检查通信的审阅者必须配置其 Outlook 客户端。
 
@@ -241,7 +241,7 @@ ms.locfileid: "32259510"
   
 8. 出现提示时, 请输入 Office 365 凭据。
 
-9. 如果成功, 你将看到 "**监督- \<策略名称\> ** " 文件夹列在 Outlook 中的文件夹列表视图中。
+9. 如果成功,**监督- \<策略名称\> **文件夹将列在 Outlook 中的文件夹列表视图中。
 
 ## <a name="powershell-reference"></a>PowerShell 参考
 

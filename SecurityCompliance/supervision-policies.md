@@ -15,20 +15,27 @@ ms.collection:
 search.appverid:
 - MET150
 - MOE150
-ms.assetid: d14ae7c3-fcb0-4a03-967b-cbed861bb086
 description: 了解 Office 365 中的监督策略
-ms.openlocfilehash: 091f5b1f31fcf59162df6ded6a6b07fb501834c7
-ms.sourcegitcommit: e23b84ef4eee9cccec7205826b71ddfe9aaac2f8
+ms.openlocfilehash: 4399ea298d467a9ab7f395a51d23b2f9f783231b
+ms.sourcegitcommit: 696c1ed6b270be3f9da7395b49a7d8fec98e6db0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33403040"
+ms.lasthandoff: 04/29/2019
+ms.locfileid: "33470422"
 ---
 # <a name="supervision-policies-in-office-365"></a>Office 365 中的监督策略
 
-Office 365 中的监督策略使您可以捕获指定审阅者进行检查的员工通信。 您可以定义用于捕获组织中的内部和外部电子邮件、Microsoft 团队或第三方通信的特定策略。 然后, 审阅者可以检查这些邮件, 以确保它们符合组织的邮件标准, 并使用分类类型解决这些问题。 这些策略还可以帮助您解决许多新式合规性难题, 包括监视不断增加的通信通道类型、不断增加的邮件数据量, 以及管理法规强制 & 受到罚款的风险。
+Office 365 中的监督策略使您可以捕获指定审阅者进行检查的员工通信。 您可以定义用于捕获组织中的内部和外部电子邮件、Microsoft 团队或第三方通信的特定策略。 然后, 审阅者可以检查这些邮件, 以确保它们符合组织的邮件标准, 并使用分类类型解决这些问题。 
 
-在某些组织中, IT 支持与合规性管理组之间可能存在的职责分离。 Office 365 支持在将租户配置为监督策略支持功能和配置策略以及对捕获的通信进行操作之间进行分隔。 例如, 组织的 IT 组可能负责设置角色权限和组, 以支持由组织的合规性团队配置和管理的监督策略。
+这些策略还可以帮助您解决诸多新式合规性挑战, 包括:
+
+- 监视日益增长的通信信道类型
+- 邮件数据量的增加
+- 法规实施 & 了罚款风险。
+
+在某些组织中, IT 支持与合规性管理组之间可能存在的职责分离。 Office 365 支持将监督策略功能配置与策略的配置与捕获的通信相分离。 例如, 组织的 IT 组可能负责设置角色权限和组, 以支持由组织的合规性团队配置和管理的监督策略。
+
+若要了解有关即将推出的监察功能改进和可用性的详细信息, 请参阅[Microsoft 365 路线图](https://www.microsoft.com/microsoft-365/roadmap)。
 
 ## <a name="scenarios-for-supervision-policies"></a>监督策略的应用场景
 
@@ -86,9 +93,9 @@ Office 365 中的监督策略使您可以捕获指定审阅者进行检查的员
 
 默认情况下, 显示**方向是**条件, 不能删除。 策略中的通信方向设置分别或一起选择:
 
-- **入站**—您可以选择 "**入站**" 以查看发送**到**您选择的人员的通信, 以便**通过**未包含在策略中的人员进行监督。
-- **出站**-如果想要查看**从**你选择的人员发送到未包含在策略中的**** 人员的通信, 可以选择 "**出站**"。
-- **内部**-您可以选择 "**内部**" 以查看在策略中标识的人员**之间**发送的通信。
+- **入站**: 可以选择 "**入站**" 以查看发送**到**您选择的人员的通信, 以便**通过**未包含在策略中的人员进行监督。
+- **出站**: 如果想要查看**从**你选择的人员发送到未包含在策略中的**** 人员的通信, 可以选择 "**出站**"。
+- **Internal**: 可以选择 "**内部**" 以查看在策略中标识的人员**之间**发送的通信。
 
 #### <a name="sensitive-information-types"></a>敏感信息类型
 
@@ -103,7 +110,28 @@ Office 365 中的监督策略使您可以捕获指定审阅者进行检查的员
 
 #### <a name="custom-keyword-dictionaries"></a>自定义关键字词典
 
-配置自定义关键字词典 (或词典) 可以提供对组织或行业特有的关键字的简单管理, 并且每个字典最长可支持100000个术语。 如果需要, 您可以将多个自定义关键字词典应用于单个策略或每个策略包含一个关键字词典。 这些词典在监督策略中分配, 可从文件 (如 .csv 或 .txt 列表) 或可以[在合规中心中导入](create-a-keyword-dictionary.md)的列表中获得。
+配置自定义关键字词典 (或词典), 以提供特定于您的组织或行业的关键字的简单管理。 关键字词典支持每个字典最高为100000个术语。 如果需要, 您可以将多个自定义关键字词典应用于单个策略或每个策略包含一个关键字词典。 这些词典在监督策略中分配, 可从文件 (如 .csv 或 .txt 列表) 或可以[在合规中心中导入](create-a-keyword-dictionary.md)的列表中获得。
+
+#### <a name="offensive-language"></a>冒犯性语言
+
+监视组织中发送或接收的电子邮件是否带有攻击性的语言。 模型使用机器学习、人工智能和关键字的组合来识别不适当的电子邮件, 作为反骚扰和网络威胁监视要求的一部分。 若要阻止或阻止组织通信中的冒犯性语言, 请创建一个使用攻击性术语的[自定义关键字词典](create-a-keyword-dictionary.md)的[数据丢失防护策略](create-test-tune-dlp-policy.md)。
+
+冒犯性语言模型目前支持英语关键字, 并监视电子邮件的正文。 冒犯性语言模型监视与以下语言类型相关的看法电子邮件:
+
+|**类型**|**说明**|
+|:-----|:-----|
+| **Profanities** | 不恰当和 embarrass 大多数人的表达式。 |
+| **Slurs** | 攻击区域性和 ethnicities 的表达式。 |
+| **Taunts** | taunt、condemn 和 ridicule 的表达式。 |
+| **对 handicaps 的引用** | 面向物理或精神 handicaps 的表达式。 |
+| **Squalid 语言** | 面向 cleanliness 的性行为和物理状态的表达式。 |
+| **Homophobia** | 面向性首选项的表达式。 |
+| **Racism** | 目标为种族和 ethnicity 的表达式。 |
+| **Extremism** | 瞄准宗教和政治 ideologies 的表达式。 |
+| **伪装** | 含义或发音与另一个更具冒犯性术语的表达式相同。 |
+| **挑衅性语言** | 可能导致 anger 或暴力的表达式。 |
+| **Taboo** | 通常不适合在礼貌的 societal 通信中的表达式。 |
+| **Unrefined 语言** | 缺少礼貌的 manners 且可能会导致恶劣和强制的表达式。 |
 
 #### <a name="conditional-settings"></a>条件设置
 
@@ -113,14 +141,14 @@ Office 365 中的监督策略使您可以捕获指定审阅者进行检查的员
   
 |**条件**|**如何使用此条件**|
 |:-----|:-----|
-| 从这些域中的任何域接收邮件  <br><br> 不从这些域中的任何域接收邮件 | 若要在收到的邮件中包含或排除某些域时应用策略, 请输入每个域并使用逗号分隔多个域。 您输入的每个域都将单独应用 (这些域中只有一个适用于该邮件的策略)。 |
-| 将邮件发送到这些域中的任何域  <br><br> 邮件不会发送到这些域中的任何域 | 若要在已发送的邮件中包含或排除某些域时应用策略, 请输入每个域并使用逗号分隔多个域。 您输入的每个域都将单独应用 (这些域中只有一个适用于该策略的域必须应用于该邮件)。 |
-| 邮件使用以下任何标签进行分类  <br><br> 不使用这些标签中的任何一个对邮件进行分类 | 在邮件中包含或排除某些保留标签时应用策略。 必须单独配置保留标签, 并在此条件中选择已配置的标签。 您选择的每个标签都将单独应用 (必须只有其中一个标签适用于该策略应用于邮件)。 有关配置保留标签的详细信息, 请参阅[保留标签概述](https://docs.microsoft.com/office365/securitycompliance/labels)。|
-| 邮件包含以下任何词语  <br><br> 邮件不包含以下任何词语 | 若要在邮件中包含或排除某些字词或短语时应用策略, 请在单独的行中输入每个单词或短语。 您输入的每一行都将单独应用 (必须只有其中一个行适用于策略应用于邮件)。 若要详细了解如何输入字词或短语，请参阅下一部分[Matching words and phrases to emails or attachments](supervision-policies.md#Matchwords)。|
-| 附件包含这些词语中的任何一个  <br><br> 附件中不包含任何词语 | 若要在邮件附件 (如 Word 文档) 中包含或排除某些字词或短语时应用策略, 请在单独的行中输入每个单词或短语。 您输入的每一行都将单独应用 (只有一条线路必须适用于该策略应用于附件)。 若要详细了解如何输入字词或短语，请参阅下一部分[Matching words and phrases to emails or attachments](supervision-policies.md#Matchwords)。|
-| 附件是这些文件类型中的任何一种  <br><br> 附件是这些文件类型中的任何一种 | 若要监督包含或排除特定类型附件的通信, 请输入文件扩展名 (如 .exe 或 .pdf)。 如果要包含或排除多个文件扩展名, 请在单独的行上输入这些扩展名。 只有一个附件扩展名需要匹配应用的策略。|
-| 邮件大小大于  <br><br> 邮件大小不大于 | 若要查看基于特定大小的邮件, 请使用这些条件来指定邮件在被审阅前可以达到的最大或最小大小。 例如, 如果您指定的**邮件大小大于** \> **1.0 mb**, 则所有 1.01 MB 和更大的邮件都将被审阅。 这种情况下，您可以选择字节、千字节、兆字节或千兆字节。|
-| 附件大于  <br><br> 附件不大于 | 若要根据附件的大小查看邮件, 请指定邮件之前的附件的最大或最小大小, 并且其附件可能会被审阅。 例如, 如果指定**附件大于** \> **2.0 mb**, 则所有附件为 2.01 mb 的邮件都将被审阅。 这种情况下，您可以选择字节、千字节、兆字节或千兆字节。|
+| **从这些域中的任何域接收邮件**  <br><br> **不从这些域中的任何域接收邮件** | 若要在收到的邮件中包含或排除某些域时应用策略, 请输入每个域并使用逗号分隔多个域。 您输入的每个域都将单独应用 (这些域中只有一个适用于该邮件的策略)。 |
+| **将邮件发送到这些域中的任何域**  <br><br> **邮件不会发送到这些域中的任何域** | 若要在已发送的邮件中包含或排除某些域时应用策略, 请输入每个域并使用逗号分隔多个域。 您输入的每个域都将单独应用 (这些域中只有一个适用于该策略的域必须应用于该邮件)。 |
+| **邮件使用以下任何标签进行分类**  <br><br> **不使用这些标签中的任何一个对邮件进行分类** | 在邮件中包含或排除某些保留标签时应用策略。 必须单独配置保留标签, 并在此条件中选择已配置的标签。 您选择的每个标签都将单独应用 (必须只有其中一个标签适用于该策略应用于邮件)。 有关配置保留标签的详细信息, 请参阅[保留标签概述](https://docs.microsoft.com/office365/securitycompliance/labels)。|
+| **邮件包含以下任何词语**  <br><br> **邮件不包含以下任何词语** | 若要在邮件中包含或排除某些字词或短语时应用策略, 请在单独的行中输入每个单词或短语。 您输入的每一行都将单独应用 (必须只有其中一个行适用于策略应用于邮件)。 若要详细了解如何输入字词或短语，请参阅下一部分[Matching words and phrases to emails or attachments](supervision-policies.md#Matchwords)。|
+| **附件包含这些词语中的任何一个**  <br><br> **附件中不包含任何词语** | 若要在邮件附件 (如 Word 文档) 中包含或排除某些字词或短语时应用策略, 请在单独的行中输入每个单词或短语。 您输入的每一行都将单独应用 (只有一条线路必须适用于该策略应用于附件)。 若要详细了解如何输入字词或短语，请参阅下一部分[Matching words and phrases to emails or attachments](supervision-policies.md#Matchwords)。|
+| **附件是这些文件类型中的任何一种**  <br><br> **附件是这些文件类型中的任何一种** | 若要监督包含或排除特定类型附件的通信, 请输入文件扩展名 (如 .exe 或 .pdf)。 如果要包含或排除多个文件扩展名, 请在单独的行上输入这些扩展名。 只有一个附件扩展名需要匹配应用的策略。|
+| **邮件大小大于**  <br><br> **邮件大小不大于** | 若要查看基于特定大小的邮件, 请使用这些条件来指定邮件在被审阅前可以达到的最大或最小大小。 例如, 如果您指定的**邮件大小大于** \> **1.0 mb**, 则所有 1.01 MB 和更大的邮件都将被审阅。 这种情况下，您可以选择字节、千字节、兆字节或千兆字节。|
+| **附件大于**  <br><br> **附件不大于** | 若要根据附件的大小查看邮件, 请指定邮件之前的附件的最大或最小大小, 并且其附件可能会被审阅。 例如, 如果指定**附件大于** \> **2.0 mb**, 则所有附件为 2.01 mb 的邮件都将被审阅。 这种情况下，您可以选择字节、千字节、兆字节或千兆字节。|
    
 ##### <a name="matching-words-and-phrases-to-emails-or-attachments"></a>将字词和短语与电子邮件或附件匹配
 <a name="Matchwords"></a>您输入的每一行都将单独应用 (只有一条线路必须适用策略条件, 才能应用于电子邮件或附件)。 例如, 我们使用条件,**邮件包含这些词语中的任何词语**, 关键字 "银行家" 和 "内幕交易" 在单独的行上。 该策略适用于任何包含 "银行家" 或短语 "内幕交易" 的邮件。 只有出现其中一个字词或短语，才能应用此策略条件。 邮件或附件中的单词必须与您输入的内容完全匹配。
@@ -231,14 +259,14 @@ Office 365 中的监督策略使您可以捕获指定审阅者进行检查的员
   
 |**标记类型**|**含义**|
 |:-----|:-----|
-| 未审阅 | 尚未审阅的电子邮件数。 这些电子邮件等待在 Office 365 监督仪表板中或在 outlook 或 web 上的 outlook 中的审阅者的监督文件夹中进行审阅。
-| Compliant | 已审阅并标记为合规的电子邮件数。 这些邮件仍需要解析。 |
-| Questionable | 审阅并标记为可疑的电子邮件数量。 这可用作其他审阅者的标志, 以帮助检查电子邮件是否需要调查合规性。 这些邮件仍需要解析。 |
-| 不符合 (活动) | 审阅者当前正在调查的不合规电子邮件数。 |
-| 不符合 (已解决) | 审阅者调查和解析的不合规电子邮件数。 |
-| 命中策略 | 来自 Exchange、团队和第三方数据源的邮件的总数 (每日) 与监督策略中定义的一个或多个条件相匹配 |
-| 在 Purview | 监督策略扫描的来自 Exchange、团队和第三方数据源的邮件的总数 (每日) |
-| 已解决 | 已分类为 "**已解决**" 的 Exchange、团队和第三方数据源中的邮件总数|
+| **未审阅** | 尚未审阅的电子邮件数。 这些电子邮件等待在 Office 365 监督仪表板中或在 outlook 或 web 上的 outlook 中的审阅者的监督文件夹中进行审阅。
+| **Compliant** | 已审阅并标记为合规的电子邮件数。 这些邮件仍需要解析。 |
+| **Questionable** | 审阅并标记为可疑的电子邮件数量。 这可用作其他审阅者的标志, 以帮助检查电子邮件是否需要调查合规性。 这些邮件仍需要解析。 |
+| **不符合 (活动)** | 审阅者当前正在调查的不合规电子邮件数。 |
+| **不符合 (已解决)** | 审阅者调查和解析的不合规电子邮件数。 |
+| **命中策略** | 来自 Exchange、团队和第三方数据源的邮件的总数 (每日) 与监督策略中定义的一个或多个条件相匹配 |
+| **在 Purview** | 监督策略扫描的来自 Exchange、团队和第三方数据源的邮件的总数 (每日) |
+| **解析** | 已分类为 "**已解决**" 的 Exchange、团队和第三方数据源中的邮件总数|
 
 > [!NOTE]
 > 必须先设置监督策略, 然后才能将其显示在此报告中。 此外, 如果删除策略, 仍会显示历史数据。 但是, 它们被指示为 "不存在的策略", 并且**导出**功能不可用。
@@ -251,10 +279,10 @@ Office 365 中的监督策略使您可以捕获指定审阅者进行检查的员
 
 |**活动**|**关联命令**|
 |:-----|:-----|
-| 创建策略 | [新 SupervisoryReviewPolicyV2](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance/new-supervisoryreviewpolicyv2) <br> [新 SupervisoryReviewRule](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance/new-supervisoryreviewrule) |
-| 编辑策略 | [SupervisoryReviewPolicyV2](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance/set-supervisoryreviewpolicyv2) <br> [SupervisoryReviewRule](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance/set-supervisoryreviewrule) |
-| 删除策略| [SupervisoryReviewPolicyV2](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance/remove-supervisoryreviewpolicyv2) |
-| 查看策略 | [SupervisoryReviewPolicyV2](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance/get-supervisoryreviewpolicyv2) |
+| **创建策略** | [新 SupervisoryReviewPolicyV2](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance/new-supervisoryreviewpolicyv2) <br> [新 SupervisoryReviewRule](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance/new-supervisoryreviewrule) |
+| **编辑策略** | [SupervisoryReviewPolicyV2](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance/set-supervisoryreviewpolicyv2) <br> [SupervisoryReviewRule](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance/set-supervisoryreviewrule) |
+| **删除策略** | [SupervisoryReviewPolicyV2](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance/remove-supervisoryreviewpolicyv2) |
+| **查看策略** | [SupervisoryReviewPolicyV2](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance/get-supervisoryreviewpolicyv2) |
 
 在统一审核日志中查看审核活动, 或使用[UnifiedAuditLog](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-audit/search-unifiedauditlog) PowerShell cmdlet 查看审核活动。
 

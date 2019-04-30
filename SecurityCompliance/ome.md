@@ -12,14 +12,16 @@ search.appverid:
 - MET150
 ms.assetid: f87cb016-7876-4317-ae3c-9169b311ff8a
 description: 使用 Office 365 邮件加密, 组织可以在组织内部和外部的人员之间发送和接收加密的电子邮件。 电子邮件加密有助于确保只有预期的收件人可以查看邮件内容。
-ms.openlocfilehash: 06c43bcb3364b83114e2d7b1a2ef0273858cffb0
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: 04a7cc23b7a9c4218a719c172544147b3daedd7a
+ms.sourcegitcommit: 696c1ed6b270be3f9da7395b49a7d8fec98e6db0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32261310"
+ms.lasthandoff: 04/29/2019
+ms.locfileid: "33470402"
 ---
 # <a name="office-365-message-encryption"></a>Office 365 邮件加密
+
+人们经常使用电子邮件来交换敏感信息，例如财务数据、法律合同、机密产品信息、销售报表和预测、患者健康信息或客户和员工信息。因此，邮箱可能会成为一个包含大量潜在敏感信息的存储库，信息泄露可能会成为您组织的严重威胁。
 
 使用 Office 365 邮件加密, 组织可以在组织内部和外部的人员之间发送和接收加密的电子邮件。 Office 365 邮件加密适用于 Outlook.com、yahoo!、Gmail 和其他电子邮件服务。 电子邮件加密有助于确保只有预期的收件人可以查看邮件内容。
   

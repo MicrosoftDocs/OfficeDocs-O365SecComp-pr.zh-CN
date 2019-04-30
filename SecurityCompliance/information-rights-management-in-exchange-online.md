@@ -1,5 +1,5 @@
 ---
-title: Exchange Online 中的信息权限管理
+title: 使用 AD RMS 的 Exchange Online 邮件加密
 ms.author: krowley
 author: kccross
 manager: laurawi
@@ -11,19 +11,19 @@ localization_priority: Normal
 search.appverid:
 - MET150
 ms.assetid: 2c956776-0016-4be6-b4cd-133a237f4a9e
-description: 人们经常使用电子邮件来交换敏感信息，例如财务数据、法律合同、机密产品信息、销售报表和预测、患者健康信息或客户和员工信息。因此，邮箱可能会成为一个包含大量潜在敏感信息的存储库，信息泄露可能会成为您组织的严重威胁。
-ms.openlocfilehash: aef3acaba6b0efe4550958ce1d98add371069648
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+description: 如果需要, 您可以将 Exchange Online IRM 配置为使用内部部署 Active Directory 权限管理服务 (AD RMS), 以满足您的组织的要求。 这并不常见。 如果您不需要使用 AD RMS, 请改用 Office 邮件加密。
+ms.openlocfilehash: 423c6008a55539123b76225458a39c4f98e7725d
+ms.sourcegitcommit: 696c1ed6b270be3f9da7395b49a7d8fec98e6db0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32253980"
+ms.lasthandoff: 04/29/2019
+ms.locfileid: "33470382"
 ---
-# <a name="information-rights-management-in-exchange-online"></a>Exchange Online 中的信息权限管理
+# <a name="exchange-online-mail-encryption-with-ad-rms"></a>使用 AD RMS 的 Exchange Online 邮件加密
 
-人们经常使用电子邮件来交换敏感信息，例如财务数据、法律合同、机密产品信息、销售报表和预测、患者健康信息或客户和员工信息。因此，邮箱可能会成为一个包含大量潜在敏感信息的存储库，信息泄露可能会成为您组织的严重威胁。
-  
-为了帮助防止信息泄露，Exchange Online 的信息权限管理 (IRM) 功能可为电子邮件和附件提供联机和脱机保护。 IRM 保护可以由 Microsoft Outlook 或 web 上的 outlook 中的用户应用, 并且可以由使用传输保护规则或 outlook 保护规则的管理员应用。 IRM 可帮助您和您的用户控制谁可以访问、转发、打印或复制电子邮件中的敏感数据。
+为了帮助防止信息泄露，Exchange Online 的信息权限管理 (IRM) 功能可为电子邮件和附件提供联机和脱机保护。 如果需要, 您可以将 Exchange Online IRM 配置为使用内部部署 Active Directory 权限管理服务 (AD RMS), 以满足您的组织的要求。 这并不常见。 如果您不需要使用 AD RMS, 请改用[Office 邮件加密](ome.md)。 
+
+IRM 保护可以由 Microsoft Outlook 或 web 上的 outlook 中的用户应用, 并且可以由使用传输保护规则或 outlook 保护规则的管理员应用。 IRM 可帮助您和您的用户控制谁可以访问、转发、打印或复制电子邮件中的敏感数据。
   
 ## <a name="changes-to-how-irm-works-with-office-365-message-encryption-ome-and-azure-active-directory"></a>对 Office 365 邮件加密 (OME) 和 Azure Active Directory 的 IRM 工作方式的更改
 
