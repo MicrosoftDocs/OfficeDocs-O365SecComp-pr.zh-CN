@@ -13,16 +13,16 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: 使用 "重试" 按钮解决包含内容位置错误的内容搜索。
-ms.openlocfilehash: 8334ec053e86e48f99955af2d56e511a2df5c25a
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: 0963bccfe88a74b82ec3155469ca6d892bf2f7d8
+ms.sourcegitcommit: 72e8a74b55fe7f56b50e30ff10a635734b5a3220
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32261492"
+ms.lasthandoff: 04/30/2019
+ms.locfileid: "33472377"
 ---
 # <a name="retry-a-content-search-to-resolve-a-content-location-error"></a>重试内容搜索以解决内容位置错误
 
-在安全与合规中心中使用内容搜索来搜索大量邮箱 (例如, 在单个内容搜索中搜索100000邮箱或更多) 时, 可能会收到类似于以下内容的搜索错误:
+当您在安全与合规中心中使用内容搜索来搜索大量邮箱时, 可能会收到类似于以下内容的搜索错误:
 
 ```
 Error
