@@ -24,7 +24,7 @@
 ## [特权访问管理](privileged-access-management-overview.md)
 ## [配置特权访问管理](privileged-access-management-configuration.md)
 
-# 保护信息
+# [保护信息](protect-information.md)
 ## [敏感度标签](sensitivity-labels.md)
 ### [使用敏感度标签中的加密限制对内容的访问](encryption-sensitivity-labels.md)
 ### [将敏感度标签自动应用于内容](apply_sensitivity_label_automatically.md)
@@ -33,18 +33,19 @@
 ## [数据丢失防护 (DLP)](data-loss-prevention-policies.md)
 ### [DLP 和 Microsoft Teams](dlp-microsoft-teams.md)
 ### [观看 DLP 的扩展概述](https://channel9.msdn.com/events/ignite/microsoft-ignite-orlando-2017/brk3111)
-## 设置 DLP
-### [开始使用 DLP 策略建议](get-started-with-dlp-policy-recommendations.md)
-### [开始使用默认 DLP 策略](get-started-with-the-default-dlp-policy.md)
-### [从模板创建 DLP 策略](create-a-dlp-policy-from-a-template.md)
-### [创建、测试和优化 DLP 策略](create-test-tune-dlp-policy.md)
-### [使用 DLP 策略中的通知和策略提示](use-notifications-and-policy-tips.md)
-### [DLP 策略模板包含的内容](what-the-dlp-policy-templates-include.md)
-### [创建 DLP 策略来保护具有 FCI 或其他属性的文档](protect-documents-that-have-fci-or-other-properties.md)
-### [查看 DLP 报告](view-the-dlp-reports.md)
-### [创建查询以查找存储在站点上的敏感数据](form-a-query-to-find-sensitive-data-stored-on-sites.md)
-### [DLP 在安全与合规中心和 Exchange 管理中心中之间的工作原理](how-dlp-works-between-admin-centers.md)
-## 使用敏感信息类型
+### 设置 DLP
+#### [开始使用 DLP 策略建议](get-started-with-dlp-policy-recommendations.md)
+#### [开始使用默认 DLP 策略](get-started-with-the-default-dlp-policy.md)
+#### [从模板创建 DLP 策略](create-a-dlp-policy-from-a-template.md)
+#### [创建、测试和优化 DLP 策略](create-test-tune-dlp-policy.md)
+#### [使用 DLP 策略中的通知和策略提示](use-notifications-and-policy-tips.md)
+#### [DLP 策略模板包含的内容](what-the-dlp-policy-templates-include.md)
+#### [创建 DLP 策略来保护具有 FCI 或其他属性的文档](protect-documents-that-have-fci-or-other-properties.md)
+#### [查看 DLP 报告](view-the-dlp-reports.md)
+#### [创建查询以查找存储在站点上的敏感数据](form-a-query-to-find-sensitive-data-stored-on-sites.md)
+#### [DLP 在安全与合规中心和 Exchange 管理中心中之间的工作原理](how-dlp-works-between-admin-centers.md)
+
+## 敏感信息类型
 ### [敏感信息类型查找的内容](what-the-sensitive-information-types-look-for.md)
 ### [DLP 函数查找的内容](what-the-dlp-functions-look-for.md)
 ### [观看自定义 DLP 的扩展概述](https://go.microsoft.com/fwlink/?linkid=852306)
@@ -54,6 +55,19 @@
 ### [创建关键字字典](create-a-keyword-dictionary.md)
 ### [文档指纹识别](document-fingerprinting.md)
 
+## [Office 365 邮件加密 (OME)](ome.md)
+### [Office 365 中的电子邮件加密](email-encryption.md)
+### [比较 OME 的版本](ome-version-comparison.md)
+### [设置全新的 Office 365 邮件加密功能](set-up-new-message-encryption-capabilities.md)
+### [定义用于加密 Office 365 中的电子邮件的邮件流规则](define-mail-flow-rules-to-encrypt-email.md)
+### [管理 Office 365 邮件加密](manage-office-365-message-encryption.md)
+### [Office 365 邮件加密常见问题解答](ome-faq.md)
+### [撤销使用 Office 365 邮件加密进行加密的电子邮件](revoke-ome-encrypted-mail.md)
+### [在加密的邮件中添加组织的品牌名称](add-your-organization-brand-to-encrypted-messages.md)
+### [Office 365 邮件加密的旧信息](legacy-information-for-message-encryption.md)
+### [为以前版本的 Office 365 邮件加密设置 Azure 权限管理](set-up-azure-rms-for-previous-version-message-encryption.md)
+#### [Office 365 受保护邮件查看器门户隐私声明](protected-message-viewer-portal-privacy-statement.md)
+
 # 记录管理
 ## [文件计划管理器](file-plan-manager.md)
 ## [保留标签](labels.md)
@@ -62,7 +76,6 @@
 ## [基于事件的保留](event-driven-retention.md)
 ### [自动执行基于事件的保留](automate-event-driven-retention.md)
 ## [处置评审](disposition-reviews.md)
-## [保留策略](retention-policies.md)
 ## 监视记录管理
 ### [查看数据治理报表](view-the-data-governance-reports.md)
 ### [查看文档的标签活动](view-label-activity-for-documents.md)
@@ -181,36 +194,6 @@
 ### [Office 365 中的防欺骗保护](anti-spoofing-protection.md)
 #### [详细了解防欺骗智能](learn-about-spoof-intelligence.md)
 #### [识别 Outlook.com 和 Outlook 网页版中的可疑邮件](unverified-sender-feature.md)
-
-## [Office 365 中的加密](encryption.md)
-### [设置 Office 365 企业版中的加密](set-up-encryption.md)
-### [Office 365 中的电子邮件加密](email-encryption.md)
-### [Office 365 邮件加密 (OME)](ome.md)
-#### [比较 OME 的版本](ome-version-comparison.md)
-#### [设置全新的 Office 365 邮件加密功能](set-up-new-message-encryption-capabilities.md)
-#### [定义用于加密 Office 365 中的电子邮件的邮件流规则](define-mail-flow-rules-to-encrypt-email.md)
-#### [管理 Office 365 邮件加密](manage-office-365-message-encryption.md)
-#### [Office 365 邮件加密常见问题解答](ome-faq.md)
-#### [撤销使用 Office 365 邮件加密进行加密的电子邮件](revoke-ome-encrypted-mail.md)
-#### [在加密的邮件中添加组织的品牌名称](add-your-organization-brand-to-encrypted-messages.md)
-#### [Office 365 邮件加密的旧信息](legacy-information-for-message-encryption.md)
-#### [为以前版本的 Office 365 邮件加密设置 Azure 权限管理](set-up-azure-rms-for-previous-version-message-encryption.md)
-#### [Office 365 受保护邮件查看器门户隐私声明](protected-message-viewer-portal-privacy-statement.md)
-### [信息权限管理](information-rights-management-in-exchange-online.md)
-#### [Exchange Online 中的信息权限管理](information-rights-management-in-exchange-online.md)
-#### [将 IRM 配置为使用本地 AD RMS 服务器](configure-irm-to-use-an-on-premises-ad-rms-server.md)
-### [S/MIME](s-mime-for-message-signing-and-encryption.md)
-#### [将 S/MIME 用于邮件签名和加密](s-mime-for-message-signing-and-encryption.md)
-#### [配置 Outlook 网页版的 S/MIME 设置](configure-s-mime-settings-for-outlook-web-app.md)
-#### [发送和接收 S/MIME 签名和加密的电子邮件](send-and-receive-s-mime-signed-and-encrypted-email.md)
-#### [出于 S/MIME 目的将用户证书同步到 Office 365](sync-user-certificates-to-office-365-for-s-mime.md)
-#### [设置虚拟证书集合以验证 S/MIME](set-up-virtual-certificate-collection-to-validate-s-mime.md)
-### [Exchange Online 如何进行电子邮件保密](exchange-online-secures-email-secrets.md)
-### [使用客户密钥控制 Office 365 中的数据](controlling-your-data-using-customer-key.md)
-### [有关使用 Office 365 客户密钥执行服务加密的 FAQ](service-encryption-with-customer-key-faq.md)
-### [有关 Office 365 加密的技术参考详情](technical-reference-details-about-encryption.md)
-### [Exchange Online 如何使用 TLS 保护 Office 365 中的电子邮件连接](exchange-online-uses-tls-to-secure-email-connections.md)
-
 
 ## [使用 Office 365 云应用安全监视和管理数据访问](office-365-cas-overview.md)
 ### [查看云应用安全的新增功能](new-in-office-365-cas.md)
@@ -491,7 +474,14 @@
 
 # 合规性解决方案
 ## [Microsoft 服务信任门户](get-started-with-service-trust-portal.md)
-## [合规性管理器](meet-data-protection-and-regulatory-reqs-using-microsoft-cloud.md)
+## [合规性管理器（经典）](meet-data-protection-and-regulatory-reqs-using-microsoft-cloud.md)
+## [合规性管理器（预览版）](compliance-manager-overview.md)
+### [合规性管理器（预览版）新增功能](compliance-manager-release-notes.md)
+### [使用合规性管理器（预览版）](working-with-compliance-manager.md)
+### [合规性分数计算方法（预览版）](compliance-score-methodology.md)
+## 客户密钥
+### [使用客户密钥控制 Office 365 中的数据](controlling-your-data-using-customer-key.md)
+### [有关使用 Office 365 客户密钥执行服务加密的 FAQ](service-encryption-with-customer-key-faq.md)
 ## [GDPR 数据主体请求工具](manage-gdpr-data-subject-requests-with-the-dsr-case-tool.md)
 ## [符合 GDPR 的 Office 365 信息保护](office-365-information-protection-for-gdpr.md)
 ### [概述：符合 GDPR 的 Office 365 保护](office-365-info-protection-for-gdpr-overview.md)
@@ -551,6 +541,9 @@
 ### [客户管理的加密功能](office-365-customer-managed-encryption-features.md)
 ### [加密风险和保护](office-365-encryption-risks-and-protections.md)
 ### [Skype for Business、OneDrive for Business、SharePoint Online 和 Exchange Online 的加密](office-365-encryption-for-skype-onedrive-sharepoint-and-exchange.md)
+### [Exchange Online 如何进行电子邮件保密](exchange-online-secures-email-secrets.md)
+### [Exchange Online 如何使用 TLS 保护 Office 365 中的电子邮件连接](exchange-online-uses-tls-to-secure-email-connections.md)
+### [有关 Office 365 加密的技术参考详情](technical-reference-details-about-encryption.md)
 ### [用于加密的 BitLocker 和 Distributed Key Manager (DKM)](office-365-bitlocker-and-distributed-key-manager-for-encryption.md)
 ### [Microsoft Dynamics 365 中的加密](office-365-encryption-in-microsoft-dynamics-365.md)
 ### [Azure 中的加密](office-365-azure-encryption.md)
@@ -564,6 +557,9 @@
 ### [Office Graph 和 Delve 中的租户隔离](office-365-isolation-in-graph-and-delve.md)
 
 # 混合安全功能
+## [带 AD RMS 的 Exchange Online 邮件加密](information-rights-management-in-exchange-online.md)
+### [将 IRM 配置为使用本地 AD RMS 服务器](configure-irm-to-use-an-on-premises-ad-rms-server.md)
+
 ## [Exchange Online Protection](eop/exchange-online-protection-overview.md)
 ### [EOP 功能](eop/eop-features.md)
 ### [EOP 中的功能权限](eop/feature-permissions-in-eop.md)
@@ -606,6 +602,15 @@
 #### [面向残障人士的辅助功能](eop/accessibility-for-people-with-disabilities.md)
 #### [向 Office 365 发送邮件](sending-mail-to-office-365.md)
 #### [非客户服务](services-for-non-customers.md)
+
+# 旧版安全性和合规性
+## [S/MIME](s-mime-for-message-signing-and-encryption.md)
+### [将 S/MIME 用于邮件签名和加密](s-mime-for-message-signing-and-encryption.md)
+### [配置 Outlook 网页版的 S/MIME 设置](configure-s-mime-settings-for-outlook-web-app.md)
+### [发送和接收 S/MIME 签名和加密的电子邮件](send-and-receive-s-mime-signed-and-encrypted-email.md)
+### [出于 S/MIME 目的将用户证书同步到 Office 365](sync-user-certificates-to-office-365-for-s-mime.md)
+### [设置虚拟证书集合以验证 S/MIME](set-up-virtual-certificate-collection-to-validate-s-mime.md)
+
 # [Office 365 企业版](https://docs.microsoft.com/Office365/Enterprise)
 # [Office 365 企业版](https://docs.microsoft.com/office365/admin/admin-home)
 # [Microsoft 365](https://docs.microsoft.com/microsoft-365/)
