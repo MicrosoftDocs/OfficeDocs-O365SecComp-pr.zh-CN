@@ -15,19 +15,19 @@ search.appverid:
 - MOE150
 ms.assetid: 8927b8b9-c5bc-45a8-a9f9-96c732e58264
 description: 在 Office 365 和 Microsoft 365 中的安全与合规中心内创建通知策略, 以监视潜在威胁、数据丢失和权限问题。 然后, 您可以查看和管理用户执行符合通知策略条件的活动时生成的警报。
-ms.openlocfilehash: e88c3657a03b3cb0ca27b9ae7489e37e986e8199
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: 7d7ef6f1f9737a0da3787b093d499a0833885eff
+ms.sourcegitcommit: 4ce350f8f3eb597587945a8ac9b33e9793440c64
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32243047"
+ms.lasthandoff: 05/01/2019
+ms.locfileid: "33516500"
 ---
 # <a name="alert-policies-in-the-security-and-compliance-center"></a>安全与合规中心中的警报策略
 
 您可以使用 Office 365 和 Microsoft 365 安全与合规中心中的新警报策略和警报仪表板工具创建通知策略, 然后查看在用户执行符合通知策略条件的活动时生成的警报. 通过让您对警报策略进行分类、将策略应用于组织中的所有用户、在触发警报时设置阈值级别, 以及决定是否接收电子邮件, 来生成警报策略并展开活动警报的功能。通知. 在安全与合规中心中还有一个 "**查看通知**" 页, 您可以在其中查看和筛选警报、设置通知状态以帮助您管理通知, 然后在解决或解决基础事件后取消通知。 我们还扩展了您可以为其创建通知的事件的类型。 例如, 您可以创建通知策略来跟踪恶意软件活动和数据丢失事件。 最后, 我们还提供了许多默认的通知策略, 可帮助您监视在 Exchange Online、恶意软件攻击以及文件删除和外部共享的异常级别中分配管理员权限。 
   
 > [!NOTE]
-> 通知策略适用于具有 Office 365 企业版或 office 365 美国政府版 E1/G1、E3/G3 或 E5/G5 订阅的组织。 但是, 某些高级功能仅适用于具有 E5/G5 订阅的组织, 或具有 E1/G1 或 E3/G3 订阅和 office 365 高级威胁防护 (ATP) P2 或 office 365 高级合规性附加的组织订购. 本主题中突出显示了需要 E5/G5 或附加订阅的功能。 另请注意, 在 Office 365 gcc、gcc High 和 DoD 美国政府环境中提供了警报策略。
+> 通知策略适用于具有 Office 365 企业版或 Office 365 美国政府版 E1/G1、E3/G3 或 E5/G5 订阅的组织。 但是, 某些高级功能仅适用于具有 E5/G5 订阅的组织, 或具有 E1/G1 或 E3/G3 订阅和 Office 365 高级威胁防护 (ATP) P2 或 Office 365 高级合规性附加的组织订购. 本主题中突出显示了需要 E5/G5 或附加订阅的功能。 另请注意, 在 Office 365 GCC、GCC High 和 DoD 美国政府环境中提供了警报策略。
   
 ## <a name="how-alert-policies-work"></a>警报策略的工作原理
 
@@ -35,7 +35,7 @@ ms.locfileid: "32243047"
   
 ![警报策略工作方式概述](media/e02a622d-b429-448b-8107-dd1a4770b4e0.png)
   
-1. 您的组织中的管理员使用 "安全与合规中心" 中的 "**警报策略**" 页创建、配置和打开一个警报策略。 您还可以在 PowerShell 中使用**remove-protectionalert** cmdlet 创建通知策略。 若要创建通知策略, 您必须在 Security & 合规性中心中为您分配 "组织配置" 角色或 "管理通知" 角色。
+1. 您的组织中的管理员使用 "安全与合规中心" 中的 "**警报策略**" 页创建、配置和打开一个警报策略。 您还可以使用 Security & 合规性中心 PowerShell 中的**remove-protectionalert** cmdlet 创建警报策略。 若要创建通知策略, 您必须在 "安全与合规中心" 中为 "管理警报" 角色或 "组织配置" 角色分配。  
     
 2. 用户执行符合通知策略条件的活动。 对于恶意软件攻击, 向组织中的用户发送的受感染电子邮件将触发警报。
     
@@ -56,7 +56,7 @@ ms.locfileid: "32243047"
 - **活动通知跟踪**-您可以创建一个策略来跟踪活动或在某些情况下有一些相关的活动, 例如, 通过共享的方式共享文件、分配访问权限或创建匿名链接。 当用户执行策略定义的活动时, 将根据警报阈值设置触发警报。
     
     > [!NOTE]
-    > 您可以跟踪的活动取决于组织的 Office 365 企业版或 office 365 美国政府版计划。 一般情况下, 与恶意软件市场和网络钓鱼攻击相关的活动需要 E5/G5 订阅或与威胁智能附加订阅的 E1/G1 或 E3/G3 订阅。 
+    > 您可以跟踪的活动取决于组织的 Office 365 企业版或 Office 365 美国政府版计划。 一般情况下, 与恶意软件市场和网络钓鱼攻击相关的活动需要 E5/G5 订阅或与威胁智能附加订阅的 E1/G1 或 E3/G3 订阅。 
   
 - **活动条件**-对于大多数活动, 您可以定义触发警报时必须满足的其他条件。 常见条件包括 IP 地址 (以便当用户在具有特定 IP 地址或 IP 地址范围内的计算机上执行活动时, 将触发警报)、特定用户或用户执行该活动时是否触发警报以及是否将对特定文件名或 URL 执行活动。 您还可以配置在组织中的任何用户执行活动时触发警报的条件。 请注意, 可用的条件取决于所选的活动。
     
@@ -98,17 +98,17 @@ Office 365 提供了内置的通知策略, 可帮助确定 Exchange 管理员权
   
 下表列出并描述了可用的默认通知策略以及分配给每个策略的类别。 请注意, 该类别用于确定用户可以在 "查看通知" 页面上查看的通知。 有关详细信息, 请参阅[查看通知所需的 RBAC 权限](#rbac-permissions-required-to-view-alerts)部分。  
 
-该表还指明了每个 office 365 企业版和 office 365 的美国政府计划。 请注意, 如果您的组织除了 E1/G1 或 E3/G3 订阅之外还有相应的附加订阅, 则可以使用某些默认的通知策略。 
+该表还指明了每个 Office 365 企业版和 Office 365 的美国政府计划。 请注意, 如果您的组织除了 E1/G1 或 E3/G3 订阅之外还有相应的附加订阅, 则可以使用某些默认的通知策略。 
   
 |**默认通知策略**|**说明**|**Category**|**Office 365 企业版订阅**|
 |:-----|:-----|:-----|:-----|
-|**检测到潜在的恶意 URL 单击** <br/> |当组织中的用户受[Office 365 ATP 安全链接](https://docs.microsoft.com/office365/securitycompliance/atp-safe-links)的保护时, 将生成警报。单击恶意链接。 当通过 office 365 atp 标识 URL 判定更改时, 或者用户替代 office 365 atp 安全链接页面 (基于组织的 office 365 atp 安全链接策略) 时, 将触发此事件。 此通知策略具有**高**严重性设置。 对于 office 365 ATP P2, E5, G5 客户, 此警报会自动触发[Office 365 自动调查和响应](https://go.microsoft.com/fwlink/?linkid=2084737)。  有关触发此警报的事件的详细信息, 请参阅[设置 Office 365 ATP 安全链接策略](https://docs.microsoft.com/office365/securitycompliance/set-up-atp-safe-links-policies)。  <br/> |威胁管理 <br/> |E5/G5 或 Office 365 ATP P2 附加订阅  <br/> |
-|**创建转发/重定向规则** <br/> |当组织中的某个人为其邮箱创建了将邮件转发或重定向到其他电子邮件帐户的收件箱规则时, 将生成警报。 此策略仅跟踪使用 web 上的 Outlook (以前称为 Outlook web App) 或 Exchange Online PowerShell 创建的收件箱规则。 此策略的严重性设置**较低**。 有关在 outlook 网页版中使用收件箱规则转发和重定向电子邮件的详细信息, 请参阅在[web 上使用 outlook 中的规则将邮件自动转发到其他帐户](https://support.office.com/article/1433e3a0-7fb0-4999-b536-50e05cb67fed)。  <br/> |威胁管理 <br/> |E1/G1、E3/G3 或 E5/G5  <br/> |
+|**检测到潜在的恶意 URL 单击** <br/> |当组织中的用户受[Office 365 ATP 安全链接](https://docs.microsoft.com/office365/securitycompliance/atp-safe-links)的保护时, 将生成警报。单击恶意链接。 当通过 Office 365 ATP 标识 URL 判定更改时, 或者用户替代 Office 365 ATP 安全链接页面 (基于组织的 Office 365 ATP 安全链接策略) 时, 将触发此事件。 此通知策略具有**高**严重性设置。 对于 Office 365 ATP P2, E5, G5 客户, 此警报会自动触发[Office 365 自动调查和响应](https://go.microsoft.com/fwlink/?linkid=2084737)。  有关触发此警报的事件的详细信息, 请参阅[设置 Office 365 ATP 安全链接策略](https://docs.microsoft.com/office365/securitycompliance/set-up-atp-safe-links-policies)。  <br/> |威胁管理 <br/> |E5/G5 或 Office 365 ATP P2 附加订阅  <br/> |
+|**创建转发/重定向规则** <br/> |当组织中的某个人为其邮箱创建了将邮件转发或重定向到其他电子邮件帐户的收件箱规则时, 将生成警报。 此策略仅跟踪使用 web 上的 Outlook (以前称为 Outlook Web App) 或 Exchange Online PowerShell 创建的收件箱规则。 此策略的严重性设置**较低**。 有关在 Outlook 网页版中使用收件箱规则转发和重定向电子邮件的详细信息, 请参阅在[web 上使用 outlook 中的规则将邮件自动转发到其他帐户](https://support.office.com/article/1433e3a0-7fb0-4999-b536-50e05cb67fed)。  <br/> |威胁管理 <br/> |E1/G1、E3/G3 或 E5/G5  <br/> |
 |**启动或导出的电子数据展示搜索** <br/> |当有人使用 Ssecurity 和合规中心中的内容搜索工具时, 将生成警报。 执行以下内容搜索活动时, 将触发警报: <br/><br/>•已启动内容搜索<br/>•将导出内容搜索的结果<br/>•导出内容搜索报告<br/><br/>当以前的内容搜索活动与电子数据展示事例进行关联时, 也会触发警报。 此策略的严重性设置为**中等**。 有关内容搜索活动的详细信息, 请参阅[在 Office 365 审核日志中搜索电子数据展示活动](search-for-ediscovery-activities-in-the-audit-log.md#ediscovery-activities)。 <br/> |威胁管理<br/> |E1/G1、E3/G3 或 E5/G5  <br/> |
 |**Exchange 管理员权限提升** <br/> |在 Exchange Online 组织中向某人分配管理权限时生成警报;例如, 如果向 Exchange Online 中的 "组织管理" 角色组添加了一个用户。 此策略的严重性设置**较低**。  <br/> |权限 <br/> |E1/G1、E3/G3 或 E5/G5  <br/> |
 |**包含在传递后删除的恶意软件的电子邮件** <br/> |在将包含恶意软件的任何邮件传递到组织中的邮箱时生成警报。 如果发生此事件, Office 365 将使用[零小时自动清除](https://docs.microsoft.com/en-us/office365/securitycompliance/zero-hour-auto-purge)从 Exchange Online 邮箱中删除受感染的邮件。 此策略具有**信息性**严重性设置, 并自动触发[Office 365 自动调查和响应](https://go.microsoft.com/fwlink/?linkid=2084737)。<br/> |威胁管理 <br/> |E5/G5 或 Office 365 ATP P2 附加订阅  <br/> |
-|**包含投递后删除的网络钓鱼 url 的电子邮件** <br/> |在将包含网络钓鱼的任何邮件传递到组织中的邮箱时生成警报。 如果发生此事件, Office 365 将使用[零小时自动清除](https://docs.microsoft.com/en-us/office365/securitycompliance/zero-hour-auto-purge)从 Exchange Online 邮箱中删除受感染的邮件。 此策略具有**信息性**严重性设置, 并自动触发[Office 365 自动调查和响应](https://go.microsoft.com/fwlink/?linkid=2084737)。<br/> |威胁管理 <br/> |E5/G5 或 Office 365 ATP P2 附加订阅  <br/> |
-|**用户报告为恶意软件或网络钓鱼的电子邮件** <br/> |当组织中的用户将邮件报告为使用报告邮件加载项的仿冒电子邮件时, 将生成警报。 此策略有一个**信息性**严重性设置。 有关此加载项的详细信息, 请参阅[使用报告消息外接程序](https://support.office.com/article/b5caa9f1-cdf3-4443-af8c-ff724ea719d2)。 对于 office 365 ATP P2, E5, G5 客户, 此警报会自动触发[Office 365 自动调查和响应](https://go.microsoft.com/fwlink/?linkid=2084737)。  <br/> |威胁管理 <br/> |E1/G1、E3/G3 或 E5/G5  <br/> |
+|**包含投递后删除的网络钓鱼 Url 的电子邮件** <br/> |在将包含网络钓鱼的任何邮件传递到组织中的邮箱时生成警报。 如果发生此事件, Office 365 将使用[零小时自动清除](https://docs.microsoft.com/en-us/office365/securitycompliance/zero-hour-auto-purge)从 Exchange Online 邮箱中删除受感染的邮件。 此策略具有**信息性**严重性设置, 并自动触发[Office 365 自动调查和响应](https://go.microsoft.com/fwlink/?linkid=2084737)。<br/> |威胁管理 <br/> |E5/G5 或 Office 365 ATP P2 附加订阅  <br/> |
+|**用户报告为恶意软件或网络钓鱼的电子邮件** <br/> |当组织中的用户将邮件报告为使用报告邮件加载项的仿冒电子邮件时, 将生成警报。 此策略有一个**信息性**严重性设置。 有关此加载项的详细信息, 请参阅[使用报告消息外接程序](https://support.office.com/article/b5caa9f1-cdf3-4443-af8c-ff724ea719d2)。 对于 Office 365 ATP P2, E5, G5 客户, 此警报会自动触发[Office 365 自动调查和响应](https://go.microsoft.com/fwlink/?linkid=2084737)。  <br/> |威胁管理 <br/> |E1/G1、E3/G3 或 E5/G5  <br/> |
 |**邮件已延迟** <br/> |当 Office 365 无法使用连接器将电子邮件发送到内部部署组织或合作伙伴服务器时生成警报。 在这种情况下, 邮件将在 Office 365 中排队。 当队列中有2000个或更多的邮件超过一小时时, 将触发此警报。 此策略具有**高**严重性设置。  <br/> |邮件流<br/> |E1/G1、E3/G3 或 E5/G5  <br/> |
 |**传递后检测到恶意软件市场** <br/> |当包含恶意软件的大量邮件传递到组织中的邮箱时, 将生成警报。 如果发生此事件, Office 365 将从 Exchange Online 邮箱中删除受感染的邮件。 此策略具有**高**严重性设置。  <br/> |威胁管理<br/> |E5/G5 或 Office 365 ATP P2 附加订阅  <br/> |
 |**检测到恶意软件市场活动并阻止** <br/> |当有人试图向组织中的用户发送包含特定类型的恶意软件的大量电子邮件时生成警报。 如果发生此事件, 则受感染的邮件将被 Office 365 阻止, 且不会传递到邮箱。 此策略的严重性设置**较低**。  <br/> |威胁管理<br/> |E5/G5 或 Office 365 ATP P2 附加订阅  <br/> |
@@ -117,7 +117,7 @@ Office 365 提供了内置的通知策略, 可帮助确定 Exchange 管理员权
 |**外部文件共享的数量不寻常** <br/> |当与组织外部的用户共享 SharePoint 或 OneDrive 中的大量文件时生成警报。 此策略的严重性设置为**中等**。  <br/> |数据治理<br/> |E5/G5、Office 365 ATP P2 或高级合规性附加订阅  <br/> |
 |**文件删除的异常量** <br/> |当在短时间内在 SharePoint 或 OneDrive 中删除大量文件时生成警报。 此策略的严重性设置为**中等**。  <br/> |数据治理 <br/> |E5/G5、Office 365 ATP P2 或高级合规性附加订阅  <br/> |
 |**被报告为网络钓鱼的电子邮件增加了异常** <br/> |当组织中的人员数量显著增加时, 使用 Outlook 中的报告邮件外接程序将邮件报告为网络钓鱼邮件时, 将生成警报。 此策略具有**高**严重性设置。 有关此加载项的详细信息, 请参阅[使用报告消息外接程序](https://support.office.com/article/b5caa9f1-cdf3-4443-af8c-ff724ea719d2)。  <br/> |威胁管理<br/> |E5/G5 或 Office 365 ATP P2 附加订阅  <br/> |
-|**限制用户发送电子邮件** <br/> |当组织中的某个人受到限制而无法发送出站邮件时, 将生成警报。 这通常会在帐户受到威胁时出现, 并且用户在安全 & 合规性中心的 "**受限用户**" 页上列出。 (若要访问此页面, 请转到**威胁管理 > 审查 > 受限用户**)。 此策略具有**高**严重性设置。 有关受限用户的详细信息, 请参阅[发送垃圾电子邮件后, 从阻止列表中删除用户、域或 IP 地址](https://docs.microsoft.com/office365/securitycompliance/removing-a-user-domain-or-ip-address-from-a-block-list-after-sending-spam-email)。  <br/> |威胁管理<br/> |E1/G1、E3/G3 或 E5/G5  <br/> |
+|**限制用户发送电子邮件** <br/> |当组织中的某个人受到限制而无法发送出站邮件时, 将生成警报。 这通常会在帐户受到威胁时出现, 并且用户在安全 & 合规性中心的 "**受限用户**" 页上列出。 (若要访问此页面, 请转到**威胁管理 _GT_ 审查 _GT_ 受限用户**)。 此策略具有**高**严重性设置。 有关受限用户的详细信息, 请参阅[发送垃圾电子邮件后, 从阻止列表中删除用户、域或 IP 地址](https://docs.microsoft.com/office365/securitycompliance/removing-a-user-domain-or-ip-address-from-a-block-list-after-sending-spam-email)。  <br/> |威胁管理<br/> |E1/G1、E3/G3 或 E5/G5  <br/> |
 |||||
    
 请注意, 某些内置策略监视的异常活动取决于与前面所述的警报阈值设置相同的过程。 Office 365 建立了一个比较基准值, 用于定义 "常规" 活动的正常频率。 如果内置通知策略跟踪的活动频率大大超过了基线值, 则会触发警报。
@@ -145,9 +145,6 @@ Office 365 提供了内置的通知策略, 可帮助确定 Exchange 管理员权
 - **Source** -使用此筛选器显示由 Office 365 云应用安全策略触发的安全与合规中心或警报触发的警报策略触发的警报。 有关 Office 365 云应用安全警报的详细信息, 请参阅 "[查看云应用安全警报](#viewing-cloud-app-security-alerts)" 部分。
 
 ## <a name="rbac-permissions-required-to-view-alerts"></a>查看警报所需的 RBAC 权限
-
-> [!NOTE]
-> 本节中介绍的功能将向从2019年2月20日开始在全球范围内完成的组织推出, 并将于2006年3月2019结束。
 
 为组织中的用户分配的角色基访问控制 (RBAC) 权限决定了用户可以在 "**查看通知**" 页面上看到的通知。 这是如何实现的？ 分配给用户的管理角色 (基于安全 & 合规中心的角色组中的成员身份) 确定用户可以在 "**查看通知**" 页面上看到的通知类别。 下面是一些示例：
 
@@ -232,7 +229,7 @@ $RoleGroups | foreach {Write-Output -InputObject `r`n,$_.Name,"-----------------
     
 ## <a name="viewing-cloud-app-security-alerts"></a>查看云应用安全警报
   
-Office 365 云应用安全策略触发的警报现在显示在安全与合规中心的 "**查看通知**" 页面上。 这包括由 Office 365 云应用安全中的异常检测策略触发的活动策略和警报触发的警报。 这意味着您可以查看安全与合规中心中的所有警报。 请注意, office 365 云应用安全仅适用于具有 office 365 企业版 E5 或 office 365 美国政府版订阅的组织。 有关详细信息, 请参阅[Office 365 云应用安全概述](office-365-cas-overview.md)。
+Office 365 云应用安全策略触发的警报现在显示在安全与合规中心的 "**查看通知**" 页面上。 这包括由 Office 365 云应用安全中的异常检测策略触发的活动策略和警报触发的警报。 这意味着您可以查看安全与合规中心中的所有警报。 请注意, Office 365 云应用安全仅适用于具有 Office 365 企业版 E5 或 Office 365 美国政府版订阅的组织。 有关详细信息, 请参阅[Office 365 云应用安全概述](office-365-cas-overview.md)。
 
 此外, 将 Microsoft 云应用安全作为企业移动性 + 安全 E5 订阅的一部分或作为独立服务的组织还可以查看与安全 & 中的 Office 365 应用程序和服务相关的云应用安全警报。合规性中心。
 

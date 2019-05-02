@@ -14,25 +14,25 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: f6db3c178e584c45cf282158c58fb5125dc41f3f
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: d54f5ffa5a2dd253a478a758ac0616025a79f118
+ms.sourcegitcommit: 4ce350f8f3eb597587945a8ac9b33e9793440c64
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32252612"
+ms.lasthandoff: 05/01/2019
+ms.locfileid: "33516490"
 ---
 # <a name="error-remediation-when-processing-data"></a>修正处理数据时出现的错误
 
-错误修正使电子数据展示管理员能够修正阻止高级电子数据展示 (预览) 的数据问题, 从而无法正确处理内容。 例如, 由于文件被锁定或加密, 因此无法处理受密码保护的文件。 使用错误修正, 电子数据展示管理员可以下载具有此类错误的文件, 删除密码保护并上载修正的文件。
+错误修正允许电子数据展示管理员修正数据问题, 以防高级电子数据展示能够正确处理内容。 例如, 由于文件被锁定或加密, 因此无法处理受密码保护的文件。 使用错误修正, 电子数据展示管理员可以下载具有此类错误的文件, 删除密码保护并上载修正的文件。
 
-使用以下工作流修正高级电子数据展示 (预览) 案例中有错误的文件。
+使用以下工作流修正高级电子数据展示事例中有错误的文件。
 
 ## <a name="creating-an-error-remediation-session-to-remediate-files-with-processing-errors"></a>创建错误修正会话以纠正带有处理错误的文件
 
 >[!NOTE]
 >如果在以下过程中随时关闭错误修正向导, 则可以通过在 "**视图**" 下拉菜单中选择 "**错误" remediations**返回到 "**处理**" 选项卡中的 "错误修正" 会话。
 
-1. 在高级电子数据展示 (预览版) 案例的 "**处理**" 选项卡上, 选择 "**视图**" 下拉菜单中的 "**错误**"。
+1. 在高级电子数据展示事例的 "**处理**" 选项卡上, 选择 "**视图**" 下拉菜单中的 "**错误**"。
 
 2. 通过单击 "错误类型" 或 "文件类型" 旁边的单选按钮, 选择要修正的错误。  在下面的示例中, 我们正在修正受密码保护的文件。
 
@@ -63,13 +63,13 @@ ms.locfileid: "32252612"
     ![准备错误修正](../media/f364ab4d-31c5-4375-b69f-650f694a2f69.png)
 
     > [!NOTE]
-    > 如果提供的 AzCopy 命令失败, 请参阅[在高级电子数据展示中排除 AzCopy 故障 (预览)](troubleshooting-azcopy.md)
+    > 如果提供的 AzCopy 命令失败, 请参阅[排查高级电子数据展示中的 AzCopy](troubleshooting-azcopy.md)
 
 7. 下载文件后, 可以使用适当的工具对它们进行修正。 对于受密码保护的文件, 可以使用许多密码破解工具。 如果您知道这些文件的密码, 则可以打开它们并删除密码保护。
     > [!NOTE]
     > 务必在 tact 中保留已修正文件的目录结构和文件名, 这一点非常重要。  在下载的文件和文件夹中使用的所有命名约定使 remdiated 文件可以重新关联到原始文件。
 
-8. 现在, 返回到高级电子数据展示 (预览) 并单击 "**下一步: 上传文件**"。  此操作将移至下一步, 你现在可以在其中上传文件。
+8. 现在, 返回到高级电子数据展示并单击 "**下一步: 上传文件**"。  此操作将移至下一步, 你现在可以在其中上传文件。
 
     ![上传文件](../media/af3d8617-1bab-4ecd-8de0-22e53acba240.png)
 
@@ -79,9 +79,9 @@ ms.locfileid: "32252612"
 
     ![ff2ff691-629f-4065-9b37-5333f937daf6](../media/ff2ff691-629f-4065-9b37-5333f937daf6.png)
 
-11. 最后, 返回到高级电子数据展示 (预览) 并单击 "**下一步: 处理文件**"。
+11. 最后, 返回到高级电子数据展示并单击 "**下一步: 处理文件**"。
 
-12. 处理完成时。  您可以返回到工作集并查看修正的文件。
+12. 处理完成时。  您可以返回到评审集并查看修正的文件。
 
 ## <a name="what-happens-when-files-are-remediated"></a>修正文件时会发生什么情况
 
@@ -96,8 +96,8 @@ ms.locfileid: "32252612"
 - LoadId
 - ProcessingErrorMessage
 - ProcessingStatus
-- 文本
+- Text
 - WordCount
 - WorkingsetId
 
-有关高级电子数据展示中所有文档元数据字段的定义 (预览), 请参阅[document metadata fields](document-metadata-fields.md)。
+有关高级电子数据展示中所有文档元数据字段的定义, 请参阅[document metadata fields](document-metadata-fields.md)。
