@@ -260,22 +260,8 @@
 ### [克隆内容搜索](clone-a-content-search.md)
 
 # [管理法律调查](manage-legal-investigations.md)
-## [创建和管理电子数据展示事例](ediscovery-cases.md)
-## [分配电子数据展示权限](assign-ediscovery-permissions.md)
-## [在 Office 365 中为电子数据展示调查设置合规性边界](set-up-compliance-boundaries.md)
-## [电子数据展示解决方案系列 - 数据泄漏方案 - 搜索和清除](data-spillage-scenariosearch-and-purge.md)
-## [为高级电子数据展示准备搜索结果](prepare-search-results-for-advanced-ediscovery.md)
-## [使用脚本将用户添加到电子数据展示事例的保留中](use-a-script-to-add-users-to-a-hold-in-ediscovery.md)
-## [创建电子数据展示事例中的保留的报告](create-a-report-on-holds-in-ediscovery-cases.md)
-## 管理保留
-### [创建电子数据展示保留](ediscovery-cases.md#step-4-place-content-locations-on-hold)
-### [创建诉讼保留](create-a-litigation-hold.md)
-### [删除保留状态云邮箱的“可恢复的项目”文件夹中的项目](delete-items-in-the-recoverable-items-folder-of-mailboxes-on-hold.md)
-### [为置于保留状态的邮箱增加可恢复项目的配额](increase-the-recoverable-quota-for-mailboxes-on-hold.md)
-### [如何识别为 Exchange Online 邮箱设置的保留类型](identify-a-hold-on-an-exchange-online-mailbox.md)
-### [保存密件抄送和展开的通讯组收件人](preserve-bcc-and-expanded-distribution-group-recipients-for-ediscovery.md)
 
-## [Microsoft 365 中的高级电子数据展示（预览版）](compliance20/overview-ediscovery-20.md)
+## [Microsoft 365 中的高级电子数据展示解决方案](compliance20/overview-ediscovery-20.md)
 ### [发行说明](compliance20/release-notes-ediscovery20.md)
 ### [新建事例](compliance20/create-new-ediscovery-case.md)
 
@@ -300,26 +286,26 @@
 #### [创建搜索项来收集数据](compliance20/create-search-to-collect-data.md)
 #### [生成搜索查询](compliance20/building-search-queries.md)
 #### [搜索统计信息](compliance20/search-statistics.md)
-#### [将搜索结果添加到工作集](compliance20/add-data-to-working-set.md)
+#### [将搜索结果添加到审阅集](compliance20/add-data-to-review-set.md)
 
-### [管理工作集](compliance20/managing-working-sets.md)
-#### [将非 Office 365 数据加载到工作集](compliance20/load-non-office365-data.md)
-#### [将数据添加到另一工作集](compliance20/add-data-to-working-set-from-another-working-set.md)
+### [管理审阅集](compliance20/managing-review-sets.md)
+#### [将非 Office 365 数据加载到审阅集](compliance20/load-non-office365-data.md)
+#### [将数据添加到另一审阅集](compliance20/add-data-to-review-set-from-another-review-set.md)
 #### [管理负载集](compliance20/manage-load-sets.md)
 
-### [审阅事例数据](compliance20/reviewing-data-in-working-set.md)
-#### [查看工作集中的文档](compliance20/view-documents-in-working-set.md)
-#### [查询工作集中的数据](compliance20/working-set-search.md)
-#### [标记工作集中的文档](compliance20/tagging-documents.md)
+### [审阅事例数据](compliance20/reviewing-data-in-review-set.md)
+#### [查看审阅集中的文档](compliance20/view-documents-in-review-set.md)
+#### [查询审阅集中的数据](compliance20/review-set-search.md)
+#### [标记审阅集中的文档](compliance20/tagging-documents.md)
 
-### [分析事例数据](compliance20/analyzing-data-in-working-set.md)
+### [分析事例数据](compliance20/analyzing-data-in-review-set.md)
 #### [近似重复检测](compliance20/near-duplicates.md)
 #### [电子邮件会话](compliance20/email-threading.md)
 #### [主题](compliance20/themes.md)
 #### [使用相关性模块来分析数据](compliance20/using-relevance.md)
 
 ### [导出事例数据](compliance20/exporting-data-ediscover20.md)
-#### [从工作集中导出文档](compliance20/export-documents-from-working-set.md)
+#### [从审阅集中导出文档](compliance20/export-documents-from-review-set.md)
 #### [下载导出作业](compliance20/download-export-jobs.md)
 
 ### [管理作业](compliance20/managing-jobs-ediscovery20.md)
@@ -329,58 +315,76 @@
 #### [向/从事例中添加或删除成员](compliance20/add-remove-members.md)
 #### [配置搜索和分析设置](compliance20/configure-search-analytics-settings.md)
 
-### 高级电子数据展示（预览版）参考
-#### [高级电子数据展示（预览版）限制](compliance20/limits-ediscovery20.md)
+### 高级电子数据展示参考
+#### [高级电子数据展示中的限制](compliance20/limits-ediscovery20.md)
 #### [支持的文件类型](compliance20/supported-filetypes-ediscovery20.md)
 #### [文档元数据字段](compliance20/document-metadata-fields.md)
 #### [疑难解答 AzCopy](compliance20/troubleshooting-azcopy.md)
 
-## [Office 365 高级电子数据展示](office-365-advanced-ediscovery.md)
-### [高级电子数据展示入门](quick-setup-for-advanced-ediscovery.md)
 
-### [设置事例](set-up-users-and-cases-in-advanced-ediscovery.md)
-#### [定义事例的问题](define-issues-and-assign-users.md)
+## [管理电子数据展示事例](ediscovery-cases.md)
+### [Office 365 高级电子数据展示](office-365-advanced-ediscovery.md)
+#### [高级电子数据展示入门](quick-setup-for-advanced-ediscovery.md)
 
-### 收集事例数据
-#### [准备高级电子数据展示的数据](prepare-data-for-advanced-ediscovery.md)
-#### [将非 Office 365 内容导入事例](import-non-office-365-data-into-advanced-ediscovery.md)
+#### [设置事例](set-up-users-and-cases-in-advanced-ediscovery.md)
+##### [定义事例的问题](define-issues-and-assign-users.md)
 
-### [处理事例数据](run-the-process-module-in-advanced-ediscovery.md)
-#### [运行处理模块和加载数据](run-the-process-module-and-load-data-in-advanced-ediscovery.md)
-#### [查看处理模块结果](view-process-module-results-in-advanced-ediscovery.md)
+#### 收集事例数据
+##### [为高级电子数据展示准备搜索结果](prepare-search-results-for-advanced-ediscovery.md)
+##### [将数据加载到高级电子数据展示](prepare-data-for-advanced-ediscovery.md)
+##### [将非 Office 365 内容导入事例](import-non-office-365-data-into-advanced-ediscovery.md)
 
-### 查看事例数据
-#### [搜索和标记事例数据](search-and-tagging.md)
-#### [做出有关审阅集的决策](decision-based-on-the-results-in-advanced-ediscovery.md)
+#### [处理事例数据](run-the-process-module-in-advanced-ediscovery.md)
+##### [运行处理模块和加载数据](run-the-process-module-and-load-data-in-advanced-ediscovery.md)
+##### [查看处理模块结果](view-process-module-results-in-advanced-ediscovery.md)
 
-### [分析事例数据](analyze-case-data-with-advanced-ediscovery.md)
-#### [运行快速分析](use-express-analysis-in-advanced-ediscovery.md)
-#### [文档相似性（近似重复）概述](understand-document-similarity-in-advanced-ediscovery.md)
-#### [查看分析结果](view-analyze-results-in-advanced-ediscovery.md)
+#### 查看事例数据
+##### [搜索和标记事例数据](search-and-tagging.md)
+##### [做出有关审阅集的决策](decision-based-on-the-results-in-advanced-ediscovery.md)
 
-### [使用相关性模块](use-relevance-in-advanced-ediscovery.md)
-#### [相关性评估概述](assessment-in-relevance-in-advanced-ediscovery.md)
-#### [执行相关性评估和标记](tagging-and-assessment-in-advanced-ediscovery.md)
-#### [设置相关性培训](manage-relevance-setup-in-advanced-ediscovery.md)
-#### [执行相关性培训和标记](tagging-and-relevance-training-in-advanced-ediscovery.md)
-#### [跟踪相关性培训过程](track-relevance-analysis-in-advanced-ediscovery.md)
-#### [测试相关性分析结果](test-relevance-analysis-in-advanced-ediscovery.md)
-#### [加载相关性培训的其他数据](set-up-loads-to-add-imported-files.md)
+#### [分析事例数据](analyze-case-data-with-advanced-ediscovery.md)
+##### [运行快速分析](use-express-analysis-in-advanced-ediscovery.md)
+##### [文档相似性（近似重复）概述](understand-document-similarity-in-advanced-ediscovery.md)
+##### [查看分析结果](view-analyze-results-in-advanced-ediscovery.md)
 
-### [导出事例数据](export-case-data-in-advanced-ediscovery.md)
-#### [导出数据](export-results-in-advanced-ediscovery.md)
-#### [导出报告字段](export-report-fields-in-advanced-ediscovery.md)
-#### [查看批处理历史记录和导出过去的结果](view-batch-history-and-export-past-results.md)
+#### [使用相关性模块](use-relevance-in-advanced-ediscovery.md)
+##### [相关性评估概述](assessment-in-relevance-in-advanced-ediscovery.md)
+##### [执行相关性评估和标记](tagging-and-assessment-in-advanced-ediscovery.md)
+##### [设置相关性培训](manage-relevance-setup-in-advanced-ediscovery.md)
+##### [执行相关性培训和标记](tagging-and-relevance-training-in-advanced-ediscovery.md)
+##### [跟踪相关性培训过程](track-relevance-analysis-in-advanced-ediscovery.md)
+##### [测试相关性分析结果](test-relevance-analysis-in-advanced-ediscovery.md)
+##### [加载相关性培训的其他数据](set-up-loads-to-add-imported-files.md)
 
-### 配置高级电子数据展示
-#### [配置事例和组织设置](define-case-and-tenant-settings-in-advanced-ediscovery.md)
-#### [配置分析设置](set-analyze-options-in-advanced-ediscovery.md)
-#### [配置忽略文本设置](set-ignore-text-in-advanced-ediscovery.md)
-#### [配置突出显示的关键字和其他相关性设置](define-highlighted-keywords-and-advanced-options.md)
+#### [导出事例数据](export-case-data-in-advanced-ediscovery.md)
+##### [导出数据](export-results-in-advanced-ediscovery.md)
+##### [导出报告字段](export-report-fields-in-advanced-ediscovery.md)
+##### [查看批处理历史记录和导出过去的结果](view-batch-history-and-export-past-results.md)
 
-### 高级电子数据展示参考
-#### [使用高级电子数据展示实用工具](use-advanced-ediscovery-utilities.md)
-#### [运行报告](run-reports-in-advanced-ediscovery.md)
+#### 配置高级电子数据展示
+##### [配置事例和组织设置](define-case-and-tenant-settings-in-advanced-ediscovery.md)
+##### [配置分析设置](set-analyze-options-in-advanced-ediscovery.md)
+##### [配置忽略文本设置](set-ignore-text-in-advanced-ediscovery.md)
+##### [配置突出显示的关键字和其他相关性设置](define-highlighted-keywords-and-advanced-options.md)
+
+#### 高级电子数据展示参考
+##### [使用高级电子数据展示实用工具](use-advanced-ediscovery-utilities.md)
+##### [运行报告](run-reports-in-advanced-ediscovery.md)
+
+### [使用脚本将用户添加到电子数据展示事例的保留中](use-a-script-to-add-users-to-a-hold-in-ediscovery.md)
+### [创建电子数据展示事例中的保留的报告](create-a-report-on-holds-in-ediscovery-cases.md)
+
+## [分配电子数据展示权限](assign-ediscovery-permissions.md)
+## [在 Office 365 中为电子数据展示调查设置合规性边界](set-up-compliance-boundaries.md)
+## [电子数据展示解决方案系列 - 数据泄漏方案 - 搜索和清除](data-spillage-scenariosearch-and-purge.md)
+
+## 管理保留
+### [创建电子数据展示保留](ediscovery-cases.md#step-4-place-content-locations-on-hold)
+### [创建诉讼保留](create-a-litigation-hold.md)
+### [删除保留状态云邮箱的“可恢复的项目”文件夹中的项目](delete-items-in-the-recoverable-items-folder-of-mailboxes-on-hold.md)
+### [为置于保留状态的邮箱增加可恢复项目的配额](increase-the-recoverable-quota-for-mailboxes-on-hold.md)
+### [如何识别为 Exchange Online 邮箱设置的保留类型](identify-a-hold-on-an-exchange-online-mailbox.md)
+### [保存密件抄送和展开的通讯组收件人](preserve-bcc-and-expanded-distribution-group-recipients-for-ediscovery.md)
 
 # [管理数据调查](datainvestigations/overview-data-investigations.md)
 ## [发行说明](datainvestigations/data-investigations-release-notes.md)
