@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: c521ca4485b00963c7d144b3013134fcaa30f298
-ms.sourcegitcommit: 4ce350f8f3eb597587945a8ac9b33e9793440c64
+ms.openlocfilehash: e3d1a33d14231fb0f383436c0bee7cb63c21d8af
+ms.sourcegitcommit: 25595bc8fae96bc23b7b6d7102a22f37878987c0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/01/2019
-ms.locfileid: "33527107"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "33641574"
 ---
 # <a name="manage-review-sets-in-advanced-ediscovery"></a>在高级电子数据展示中管理审阅集
 
@@ -27,11 +27,11 @@ ms.locfileid: "33527107"
 
 - [分析评审集中的数据](analyzing-data-in-review-set.md)
 
-- [查询评审集中的数据](review-set-search.md)
+- [查询审阅集中的数据](review-set-search.md)
 
 - [查看审阅集中的文档](view-documents-in-review-set.md)
 
-- [在审阅集中标记文档](tagging-documents.md)
+- [标记审阅集中的文档](tagging-documents.md)
 
 - [导出事例数据](exporting-data-ediscover20.md)
 
@@ -41,16 +41,16 @@ ms.locfileid: "33527107"
 
 ![添加审阅集](../media/f45c51d9-585d-47d1-b7fb-0288715e0b6a.png)
 
-将显示一个浮出控件。  只需对评审集进行命名即可单击 "**保存**"。  新的审阅集将显示在 "**审阅集**" 选项卡上。
+在 "**添加审阅集**" 弹出页面上, 键入评审集的名称, 然后单击 "**保存**"。  新的审阅集将显示在 "**查看设置**" 选项卡上的列表中。
 
-![添加审阅集浮出控件](../media/5e5c99f8-42ca-4c2f-960f-f1a5709569d1.png)
+![查看 "设置" 选项卡上列出的新审阅集](../media/AeDnewreviewset.png)
 
-有三种方法可将内容添加到审阅集:
+在高级电子数据展示事例中, 有三种不同的方法可以将数据添加到评审集。
+
+![添加到评审集的三种方法](../media/1f1f4efd-c03b-4255-bc3d-df358e56549c.png)
 
 1. [将搜索结果添加到审阅集](add-data-to-review-set.md)
 
-2. [将非 Office 365 数据加载到评审集中](load-non-office365-data.md)
+2. [将非 Office 365 数据加载到审阅集](load-non-office365-data.md)
 
-3. [从另一个评审集向评审集添加数据](add-data-to-review-set-from-another-review-set.md)。
-
-![评审集](../media/1f1f4efd-c03b-4255-bc3d-df358e56549c.png)
+3. [从另一个评审集向评审集添加数据](add-data-to-review-set-from-another-review-set.md)
