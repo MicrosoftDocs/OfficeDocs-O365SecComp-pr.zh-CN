@@ -9,18 +9,18 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: b5543faa-44fa-44c5-8180-fb835e7e452d
 description: 管理员可以在 "Office 365 安全 & 合规中心" 的 "邮件流" 仪表板中了解自动转发的邮件报告。
-ms.openlocfilehash: 3f3d32eee9c3d706a10731ba7983d3ce8d1f7a75
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: a7556dd98e1381fe59a2a911dbfa27132f1aa44d
+ms.sourcegitcommit: e05e83212e7ca4e84f2ddb0de0297895b995338d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32252329"
+ms.lasthandoff: 05/10/2019
+ms.locfileid: "33868610"
 ---
 # <a name="auto-forwarded-messages-report"></a>自动转发的消息报表
 
 邮件流仪表板中的**自动转发的邮件**报告显示有关自动从 Office 365 组织转发给外部域中的收件人的邮件的信息。
 
-![x](media/8bc2600b-71c3-4b37-b4d0-9435fe0cfc8d.png)
+![自动转发的邮件在 Office 365 安全 & 合规中心中的洞察力](media/8bc2600b-71c3-4b37-b4d0-9435fe0cfc8d.png)
 
 !["Office 365 Security & 合规中心" 的 "邮件流" 仪表板中的自动转发的邮件报告](media/8bc2600b-71c3-4b37-b4d0-9435fe0cfc8d.png)
 
@@ -36,4 +36,4 @@ ms.locfileid: "32252329"
 
 ## <a name="see-also"></a>另请参阅
 
-有关邮件流仪表板中的其他邮件流见解的详细信息, 请参阅[Security & 合规性中心中的邮件流见解](mail-flow-insights.md)。
+有关邮件流仪表板中的其他邮件流见解的详细信息, 请参阅[Security _AMP_ 合规性中心中的邮件流见解](mail-flow-insights.md)。

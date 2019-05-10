@@ -1,5 +1,5 @@
 ---
-title: 识别 Outlook.com 中的可疑邮件和 web 上的 Outlook
+title: 未验证发件人
 ms.author: tracyp
 author: MSFTTracyP
 manager: laurawi
@@ -13,14 +13,14 @@ search.appverid:
 ms.collection:
 - M365-security-compliance
 description: 若要防止仿冒邮件到达邮箱, Outlook.com 和 web 上的 Outlook 验证发件人是否是他们所说的人, 并将可疑邮件标记为垃圾邮件。
-ms.openlocfilehash: edba30bb2ac0f9dc6ebc12db957a518de0c1b543
-ms.sourcegitcommit: 9907bebc5f225032f681c4952de0b0be2df278ac
+ms.openlocfilehash: 5d4315afb33964e7c466384366b7315287cf6298
+ms.sourcegitcommit: d24f50347c671cf5d2d8afec2f80d37d18af8b5d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33345882"
+ms.lasthandoff: 05/10/2019
+ms.locfileid: "33867837"
 ---
-# <a name="identify-suspicious-messages-in-outlookcom-and-outlook-on-the-web"></a>识别 Outlook.com 中的可疑邮件和 web 上的 Outlook
+# <a name="unverified-sender"></a>未验证发件人
 
 若要防止仿冒邮件到达邮箱, Outlook.com 和 web 上的 Outlook 验证发件人是否是他们所说的人, 并将可疑邮件标记为垃圾邮件。
 
@@ -31,9 +31,25 @@ ms.locfileid: "33345882"
 
 当邮件的发件人无法识别或其身份与 "发件人" 地址中所示的不同时, web 上的 Outlook.com 和 Outlook 显示指示器。
 
+## <a name="how-to-manage-which-messages-receive-the-unverified-sender-treatment"></a>如何管理哪些邮件会收到未验证的发件人处理 
+
+如果你是 Office 365 客户, 可以通过 Security & 合规性中心管理此功能。 
+
+- 在 "Office 365 安全 & 合规中心" 中, 租户管理员可以通过反网络钓鱼策略下的反欺骗保护来打开或关闭该功能。 此外, 还可以通过 "AntiPhishPolicy" cmdlet 对其进行管理。 有关更多详细信息, 请参阅 Office 365 中的反钓鱼防护和 AntiPhishPolicy。
+
+    ![在图形界面中编辑未经身份验证的发件人。](media/unverified-sender-article-editing-unauthenticated-senders.jpg)
+
+- 如果管理员已识别误报, 并且发件人不应接收未验证的发件人治疗, 则可以执行下列操作之一将发件人添加到欺骗智能欺骗允许列表:
+        
+    - 通过欺骗性智能洞察力添加域对。 有关更多详细信息, 请参阅演练: 欺骗性智能洞察力
+                
+    - 通过将 get-phishfilterpolicy cmdlet 添加域对。 有关更多详细信息, 请参阅 Office 365 中的将 get-phishfilterpolicy 和反欺骗保护
+
+此外, 如果通过管理员允许列表 (包括电子邮件传输规则 (Etr)、安全域列表 (反垃圾邮件策略)、安全发件人列表或用户已将此用户设置为 "安全发件人", 则不会应用未验证的发件人治疗收件箱.
+
 ### <a name="you-see-a--in-the-sender-image"></a>您将在发件人图像中看到 "？"
 
-当 Outlook.com 和 Outlook 网页上的 Outlook 无法使用电子邮件身份验证技术验证发件人的身份时, 它们将在发件人照片中显示 "？"。
+当 Outlook.com 和 Outlook 网页上的 Outlook 无法使用电子邮件身份验证技术验证发件人的身份时, 它们将在发件人照片中显示 "？"。 
 
 ![邮件未通过验证](media/message-did-not-pass-verification.jpg)
 

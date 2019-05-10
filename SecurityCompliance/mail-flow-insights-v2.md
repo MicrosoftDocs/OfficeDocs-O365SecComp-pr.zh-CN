@@ -9,34 +9,30 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: beb6acaa-6016-4d54-ba7e-3d6d035e2b46
 description: 管理员可以了解安全 & 合规性中心中的邮件流仪表板。
-ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 4af35fea640c1f4c43464d1adf2e4a9f3b4f780d
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: 80aa6b773d63b6c98293fa2787d38ad393e67b37
+ms.sourcegitcommit: e05e83212e7ca4e84f2ddb0de0297895b995338d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32252102"
+ms.lasthandoff: 05/10/2019
+ms.locfileid: "33868620"
 ---
 # <a name="mail-flow-insights-in-the-security--compliance-center"></a>安全与合规中心内的邮件流见解
-
-> [!NOTE]
-> 本主题中所述的功能尚未部署到所有 Office 365 组织中, 可能会发生更改。
 
 管理员可以使用安全 & 合规中心中的邮件流仪表板来发现趋势、见解并采取措施解决与 Office 365 组织中的邮件流相关的问题。
 
 邮件流仪表板中提供的见解、报告和小部件为:
 
-- [邮件流映射报告](mfi-mail-flow-map-report.md)(此报告是新报告, 目前正在部署到 Office 365 中。)
+- [邮件流映射报告](mfi-mail-flow-map-report.md)
 
-- [域邮件流状态洞察力](mfi-domain-mail-flow-status-insight.md)(此洞察力是新增的, 目前正在部署到 Office 365 中。)
+- [域邮件流状态洞察力](mfi-domain-mail-flow-status-insight.md)
 
-- [SMTP 身份验证客户端报告](mfi-smtp-auth-clients-report.md)(此报告是新报告, 目前正在部署到 Office 365 中。)
+- [SMTP 身份验证客户端报告](mfi-smtp-auth-clients-report.md)
 
-- [发件人域洞察力](mfi-sender-domain-insight.md)(此洞察力是新增的, 目前正在部署到 Office 365 中。)
+- [发件人域洞察力](mfi-sender-domain-insight.md)
 
-- [未送达报告](mfi-non-delivery-report.md)(此报告是新报告, 目前正在部署到 Office 365 中。)
+- [未送达报告](mfi-non-delivery-report.md)
 
-- [不接受的域报告](mfi-non-accepted-domain-report.md)(此报告是新报告, 目前正在部署到 Office 365 中。)
+- [不接受的域报告](mfi-non-accepted-domain-report.md)
 
 - [入站和出站邮件流](mfi-outbound-and-inbound-mail-flow.md)
 
@@ -64,9 +60,9 @@ ms.locfileid: "32252102"
 
   - 用户将无法访问 Office 365 管理门户。
 
-有关 office 365 全局管理员角色的详细信息, 请参阅[关于 office 365 管理员角色](https://docs.microsoft.com/office365/admin/add-users/about-admin-roles)。
+有关 Office 365 全局管理员角色的详细信息, 请参阅[关于 office 365 管理员角色](https://docs.microsoft.com/office365/admin/add-users/about-admin-roles)。
 
-有关为用户分配安全 & 合规中心角色的信息, 请参阅[为用户提供对 Security & 合规性中心的访问权限](https://docs.microsoft.com/office365/securitycompliance/grant-access-to-the-security-and-compliance-center)。
+有关为用户分配安全 & 合规中心角色的信息, 请参阅[为用户提供对 Security _AMP_ 合规性中心的访问权限](https://docs.microsoft.com/office365/securitycompliance/grant-access-to-the-security-and-compliance-center)。
 
 ## <a name="where-to-find-the-mail-flow-dashboard"></a>在何处查找邮件流仪表板
 

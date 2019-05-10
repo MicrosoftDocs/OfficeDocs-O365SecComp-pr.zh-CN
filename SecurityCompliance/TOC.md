@@ -5,7 +5,6 @@
 ### [Microsoft 365 合规中心](microsoft-365-compliance-center.md)
 ### [Microsoft 365 安全中心](overview-security-center.md)
 ### [Microsoft 安全功能分数](microsoft-secure-score.md)
-### [Office 365 安全功能分数](office-365-secure-score.md)
 ## [转到安全与合规中心](go-to-the-securitycompliance-center.md)
 ### [安全与合规中心内的权限](permissions-in-the-security-and-compliance-center.md)
 ### [向用户授予对安全与合规中心的访问权限](grant-access-to-the-security-and-compliance-center.md)
@@ -71,68 +70,13 @@
 #### [Office 365 邮件加密的旧信息](legacy-information-for-message-encryption.md)
 #### [为以前版本的 Office 365 邮件加密设置 Azure 权限管理](set-up-azure-rms-for-previous-version-message-encryption.md)
 
-# 记录管理
-## [文件计划管理器](file-plan-manager.md)
-## [保留标签](labels.md)
-### [符合 SEC Rule 17a-4](use-exchange-online-to-comply-with-sec-rule-17a-4.md)
-### [使用 PowerShell 创建和发布保留标签](https://docs.microsoft.com/zh-CN/office365/securitycompliance/bulk-create-publish-labels-using-powershell)
-## [基于事件的保留](event-driven-retention.md)
-### [自动执行基于事件的保留](automate-event-driven-retention.md)
-## [处置评审](disposition-reviews.md)
-## 监视记录管理
-### [查看数据治理报表](view-the-data-governance-reports.md)
-### [查看文档的标签活动](view-label-activity-for-documents.md)
-### [使用标签分析查看标签使用情况](label-analytics.md)
-## 有关记录管理的详细信息
-### [观看 Microsoft 数据管理团队的视频](https://go.microsoft.com/fwlink/?linkid=867039)
-
-# 管理数据管理
-## [导入数据](importing-pst-files-to-office-365.md)
-### [使用网络上传导入 PST 文件](use-network-upload-to-import-pst-files.md)
-### [使用驱动器传送导入 PST 文件](use-drive-shipping-to-import-pst-files-to-office-365.md)
-### [使用 PST 收集工具查找、复制和删除 PST 文件](find-copy-and-delete-pst-files-in-your-organization.md)
-### [导入 PST 文件时筛选数据](filter-data-when-importing-pst-files.md)
-### [使用网络上传导入 RMS 加密的 PST 文件](use-network-upload-to-import-rms-encrypted-pst-files.md)
-### [有关导入 PST 文件的常见问题解答](faqimporting-pst-files-to-office-365.md)
-### [在 Office 365 中存档第三方数据](archiving-third-party-data.md)
-#### [使用示例连接器存档第三方数据](archive-third-party-data-with-sample-connector.md)
-#### [与合作伙伴联系以存档第三方数据](work-with-partner-to-archive-third-party-data.md)
-## 存储数据
-### [启用存档邮箱](enable-archive-mailboxes.md)
-### [无限制存档概述](unlimited-archiving.md)
-### [启用无限制存档](enable-unlimited-archiving.md)
-### [设置邮箱的存档和删除策略](set-up-an-archive-and-deletion-policy-for-mailboxes.md)
-## 保留数据
-### [保留策略](retention-policies.md)
-### [文件计划管理器](file-plan-manager.md)
-### [保留标签](labels.md)
-### [符合 SEC Rule 17a-4](use-exchange-online-to-comply-with-sec-rule-17a-4.md)
-### [使用 PowerShell 创建和发布保留标签](https://docs.microsoft.com/zh-CN/office365/securitycompliance/bulk-create-publish-labels-using-powershell)
-### [基于事件的保留](event-driven-retention.md)
-### [自动执行基于事件的保留](automate-event-driven-retention.md)
-## [释放数据](disposition-reviews.md)
-## [监督通信](supervision-policies.md)
-### [配置组织的监督策略](configure-supervision-policies.md)
-## [管理非活动邮箱](inactive-mailboxes-in-office-365.md)
-### [创建和管理非活动邮箱](create-and-manage-inactive-mailboxes.md)
-### [更改非活动邮箱的保留期](change-the-hold-duration-for-an-inactive-mailbox.md)
-### [恢复非活动邮箱](recover-an-inactive-mailbox.md)
-### [还原非活动邮箱](restore-an-inactive-mailbox.md)
-### [删除非活动邮箱](delete-an-inactive-mailbox.md)
-## 监视数据治理
-### [查看文档的标签活动](view-label-activity-for-documents.md)
-### [使用标签分析查看标签使用情况](label-analytics.md)
-### [查看数据治理报表](view-the-data-governance-reports.md)
-## 数据治理详情
-### [观看 Microsoft 数据治理团队的视频](https://go.microsoft.com/fwlink/?linkid=867039)
-
 # [威胁防护](protect-against-threats.md)
 
 ## [在Microsoft 365 中寻找](hunting.md)
 
 ## [通过威胁分析了解最新的攻击活动](latest-attack-campaigns.md)
 
-## [高级威胁防护](office-365-atp.md)
+## [Office 365 高级威胁防护](office-365-atp.md)
 ### [ATP 安全链接](atp-safe-links.md)
 #### [设置 ATP 安全链接策略](set-up-atp-safe-links-policies.md)
 #### [设置自定义“不重写”URL 列表](set-up-a-custom-do-not-rewrite-urls-list-with-atp.md)
@@ -226,6 +170,66 @@
 ### [Office 365 的隔离常见问题解答](quarantine-faq.md)
 ### [在 Office 365 中使用用户垃圾邮件通知来发布和报告已隔离邮件](use-spam-notifications-to-release-and-report-quarantined-messages.md)
 
+# 安全事件管理
+## [Office 365 安全事件响应](office365-security-incident-response-overview.md)
+## [检测和修正 Office 365 中的非法授权](detect-and-remediate-illicit-consent-grants.md)
+## [在 Office 365 中检测并修正 Outlook 规则和自定义窗体注入攻击](detect-and-remediate-outlook-rules-forms-attack.md)
+## [响应 Office 365 中遭到入侵的电子邮件帐户](responding-to-a-compromised-email-account.md)
+
+# 记录管理
+## [文件计划管理器](file-plan-manager.md)
+## [保留标签](labels.md)
+### [符合 SEC Rule 17a-4](use-exchange-online-to-comply-with-sec-rule-17a-4.md)
+### [使用 PowerShell 创建和发布保留标签](https://docs.microsoft.com/zh-CN/office365/securitycompliance/bulk-create-publish-labels-using-powershell)
+## [基于事件的保留](event-driven-retention.md)
+### [自动执行基于事件的保留](automate-event-driven-retention.md)
+## [处置评审](disposition-reviews.md)
+## 监视记录管理
+### [查看数据治理报表](view-the-data-governance-reports.md)
+### [查看文档的标签活动](view-label-activity-for-documents.md)
+### [使用标签分析查看标签使用情况](label-analytics.md)
+## 有关记录管理的详细信息
+### [观看 Microsoft 数据管理团队的视频](https://go.microsoft.com/fwlink/?linkid=867039)
+
+# 管理数据管理
+## [导入数据](importing-pst-files-to-office-365.md)
+### [使用网络上传导入 PST 文件](use-network-upload-to-import-pst-files.md)
+### [使用驱动器传送导入 PST 文件](use-drive-shipping-to-import-pst-files-to-office-365.md)
+### [使用 PST 收集工具查找、复制和删除 PST 文件](find-copy-and-delete-pst-files-in-your-organization.md)
+### [导入 PST 文件时筛选数据](filter-data-when-importing-pst-files.md)
+### [使用网络上传导入 RMS 加密的 PST 文件](use-network-upload-to-import-rms-encrypted-pst-files.md)
+### [有关导入 PST 文件的常见问题解答](faqimporting-pst-files-to-office-365.md)
+### [在 Office 365 中存档第三方数据](archiving-third-party-data.md)
+#### [使用示例连接器存档第三方数据](archive-third-party-data-with-sample-connector.md)
+#### [与合作伙伴联系以存档第三方数据](work-with-partner-to-archive-third-party-data.md)
+## 存储数据
+### [启用存档邮箱](enable-archive-mailboxes.md)
+### [无限制存档概述](unlimited-archiving.md)
+### [启用无限制存档](enable-unlimited-archiving.md)
+### [设置邮箱的存档和删除策略](set-up-an-archive-and-deletion-policy-for-mailboxes.md)
+## 保留数据
+### [保留策略](retention-policies.md)
+### [文件计划管理器](file-plan-manager.md)
+### [保留标签](labels.md)
+### [符合 SEC Rule 17a-4](use-exchange-online-to-comply-with-sec-rule-17a-4.md)
+### [使用 PowerShell 创建和发布保留标签](https://docs.microsoft.com/zh-CN/office365/securitycompliance/bulk-create-publish-labels-using-powershell)
+### [基于事件的保留](event-driven-retention.md)
+### [自动执行基于事件的保留](automate-event-driven-retention.md)
+## [释放数据](disposition-reviews.md)
+## [监督通信](supervision-policies.md)
+### [配置组织的监督策略](configure-supervision-policies.md)
+## [管理非活动邮箱](inactive-mailboxes-in-office-365.md)
+### [创建和管理非活动邮箱](create-and-manage-inactive-mailboxes.md)
+### [更改非活动邮箱的保留期](change-the-hold-duration-for-an-inactive-mailbox.md)
+### [恢复非活动邮箱](recover-an-inactive-mailbox.md)
+### [还原非活动邮箱](restore-an-inactive-mailbox.md)
+### [删除非活动邮箱](delete-an-inactive-mailbox.md)
+## 监视数据治理
+### [查看文档的标签活动](view-label-activity-for-documents.md)
+### [使用标签分析查看标签使用情况](label-analytics.md)
+### [查看数据治理报表](view-the-data-governance-reports.md)
+## 数据治理详情
+### [观看 Microsoft 数据治理团队的视频](https://go.microsoft.com/fwlink/?linkid=867039)
 
 # [搜索内容](search-for-content.md)
 ## [使用内容搜索](content-search.md)
@@ -479,7 +483,7 @@
 ### [独立 SharePoint Online 团队网站开发/测试环境](isolated-sharepoint-online-team-site-dev-test-environment.md)
 ## [SIEM 服务器集成](siem-server-integration.md)
 
-# 合规性解决方案
+# 法规合规性解决方案
 ## [Microsoft 服务信任门户](get-started-with-service-trust-portal.md)
 ## [合规性管理器（经典）](meet-data-protection-and-regulatory-reqs-using-microsoft-cloud.md)
 ## [合规性管理器（预览版）](compliance-manager-overview.md)
@@ -506,12 +510,6 @@
 ### [用于 Project Server 的 GDPR](gdpr-for-project-server.md)
 ### [用于 Office Web Apps Server 和 Office Online Server 的 GDPR](gdpr-for-office-online-server.md)
 ### [GDPR 对本地 Windows Server 文件共享的要求](gdpr-for-on-premises-file-shares.md)
-
-# 安全事件管理
-## [Office 365 安全事件响应](office365-security-incident-response-overview.md)
-## [检测和修正 Office 365 中的非法授权](detect-and-remediate-illicit-consent-grants.md)
-## [在 Office 365 中检测并修正 Outlook 规则和自定义窗体注入攻击](detect-and-remediate-outlook-rules-forms-attack.md)
-## [响应 Office 365 中遭到入侵的电子邮件帐户](responding-to-a-compromised-email-account.md)
 
 # 服务保证
 ## [Office 365 安全与合规中心内的服务保证](service-assurance.md)

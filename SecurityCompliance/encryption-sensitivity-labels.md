@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 创建敏感度标签时，可以限制对将要应用标签的内容的访问。敏感度标签可以使用加密来保护内容。
-ms.openlocfilehash: 69deeed69a5b2970d387c30b01a062c6c068c567
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: 41e1a9f1c789d555b1b5db3204b13f3279a6b56a
+ms.sourcegitcommit: d17ef25bf2a638c867cd399fff6c961ffeccaba4
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32257238"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "33628327"
 ---
 # <a name="restrict-access-to-content-by-using-encryption-in-sensitivity-labels"></a>使用敏感度标签中的加密限制对内容的访问
 
@@ -113,6 +113,26 @@ Rights Management 颁发者将始终被授予对文档或电子邮件的完全�
 - 在文档被撤销后，Rights Management 颁发者仍然可以打开该文档。
 
 有关详细信息，请参阅 [Rights Management 颁发者和 Rights Management 所有者](https://docs.microsoft.com/zh-CN/azure/information-protection/configure-usage-rights#rights-management-issuer-and-rights-management-owner)。
+
+## <a name="what-happens-to-existing-encryption-when-a-labels-applied"></a>应用标签后，现有加密会发生什么情况
+
+在向内容应用敏感度标签之前，用户可能已通过应用一些其他保护设置进行了内容加密。 例如，用户可能已应用：
+
+- “**请勿转发**”选项。
+- 通过 Azure 信息保护统一标记客户端实现的自定义保护。
+- 会加密内容但不与标签关联的 Azure 权限管理服务 (RMS) 模板。
+
+下表说明了应用标签后现有加密会发生的情况。
+<br/>
+<br/>
+
+| |**用户在加密关闭的情况下应用敏感度标签**|**用户在加密开启的情况下应用敏感度标签**|**用户应用具有“去除保护”的标签**<sup>1</sup>|
+|:-----|:-----|:-----|:-----|
+|**请勿转发**|电子邮件 - 已去除保护<br/>文档 - 已保留保护|已应用标签保护|已删除“**请勿转发**”|
+|**自定义保护**<sup>1</sup>|已保留保护|已应用标签保护|已去除自定义保护|
+|**Azure RMS 模板**|已保留保护|已应用标签保护|已去除自定义保护|
+
+<sup>1</sup>此功能仅在 Azure 信息保护标记客户端中受支持。
 
 ## <a name="storing-encrypted-content-in-onedrive-and-sharepoint"></a>存储 OneDrive 和 SharePoint 中加密的内容
 

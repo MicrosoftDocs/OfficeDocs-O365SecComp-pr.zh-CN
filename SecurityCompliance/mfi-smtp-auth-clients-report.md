@@ -9,20 +9,16 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: ''
 description: 管理员可以了解安全 & 合规性中心的邮件流仪表板中的 SMTP 身份验证客户端报告。
-ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: b6698345a89edf52e4ee14cea144cb88ff080583
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: df0ef74a3ffd7ae8d36e5d1092b3e23304e1df78
+ms.sourcegitcommit: e05e83212e7ca4e84f2ddb0de0297895b995338d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32252532"
+ms.lasthandoff: 05/10/2019
+ms.locfileid: "33868550"
 ---
 # <a name="smtp-auth-clients-report"></a>SMTP 身份验证客户端报告
 
-> [!NOTE]
-> 本主题中所述的功能尚未部署到所有 Office 365 组织中, 可能会发生更改。
-
-**smtp auth 客户端**报告突出显示了组织中的用户或系统帐户对 SMTP 身份验证客户端提交协议的使用。 此旧协议 (使用终结点 smtp.office365.com) 仅提供基本身份验证, 并且容易被受攻击帐户用来发送电子邮件。  此报告允许您检查异常活动。 它还显示了使用 SMTP 身份验证的客户端或设备的 TLS 使用数据。
+**Smtp auth 客户端**报告突出显示了组织中的用户或系统帐户对 SMTP 身份验证客户端提交协议的使用。 此旧协议 (使用终结点 smtp.office365.com) 仅提供基本身份验证, 并且容易被受攻击帐户用来发送电子邮件。  此报告允许您检查异常活动。 它还显示了使用 SMTP 身份验证的客户端或设备的 TLS 使用数据。
 
 "邮件流" 仪表板中显示的小部件指示最近7天内已使用 SMTP 身份验证协议的用户或服务帐户的数量。
 
@@ -42,7 +38,7 @@ ms.locfileid: "32252532"
 
 ![SMTP Auth 客户端报告中用于发送卷的详细信息表](media/smtp-auth-clients-report-details-sending-volume.png)
 
-由于即将弃用的 tls 1.0 和 tls 1.1 在 Office 365 中, **tls 使用**透视非常重要。 如果您的旧设备和应用程序仅能够将 tls 1.0 与 SMTP Auth 一起使用, 则这些设备和应用程序将无法发送电子邮件。此数据透视允许你识别仍在使用旧版 TLS 的用户和系统帐户并对其执行操作。
+由于即将弃用的 TLS 1。0和 TLS 1。1在 Office 365 中, **Tls 使用**透视非常重要。 如果您的旧设备和应用程序仅能够将 TLS 1。0与 SMTP Auth 一起使用, 则这些设备和应用程序将无法发送电子邮件。此数据透视允许你识别仍在使用旧版 TLS 的用户和系统帐户并对其执行操作。
 
 ![SMTP Auth 客户端报告中的 TLS 用法](media/smtp-auth-clients-report-tls-usage.png)
 
@@ -54,4 +50,4 @@ ms.locfileid: "32252532"
 
 ## <a name="see-also"></a>另请参阅
 
-有关邮件流仪表板中的其他邮件流见解的详细信息, 请参阅[Security & 合规性中心中的邮件流见解](mail-flow-insights-v2.md)。
+有关邮件流仪表板中的其他邮件流见解的详细信息, 请参阅[Security _AMP_ 合规性中心中的邮件流见解](mail-flow-insights-v2.md)。

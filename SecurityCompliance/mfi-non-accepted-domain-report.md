@@ -9,18 +9,14 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: ''
 description: 管理员可以在安全 & 合规性中心的邮件流仪表板中了解不接受的域报告。
-ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: a69a1e59241ea7b6680afe8608534dbf9460c269
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: 11bddc79f81c30726ba653eb432238765a8cee74
+ms.sourcegitcommit: e05e83212e7ca4e84f2ddb0de0297895b995338d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32252126"
+ms.lasthandoff: 05/10/2019
+ms.locfileid: "33868570"
 ---
 # <a name="non-accepted-domain-report"></a>不接受的域报告
-
-> [!NOTE]
-> 本主题中所述的功能尚未部署到所有 Office 365 组织中, 可能会发生更改。
 
 与**发件人域**洞察力类似,**不接受的域**洞察力可识别来自内部部署电子邮件组织的邮件, 但发件人的域不会配置为 Office 365 组织中的接受域。
 
@@ -38,4 +34,4 @@ ms.locfileid: "32252126"
 
 ## <a name="see-also"></a>另请参阅
 
-有关邮件流仪表板中的其他邮件流见解的详细信息, 请参阅[Security & 合规性中心中的邮件流见解](mail-flow-insights-v2.md)。
+有关邮件流仪表板中的其他邮件流见解的详细信息, 请参阅[Security _AMP_ 合规性中心中的邮件流见解](mail-flow-insights-v2.md)。
