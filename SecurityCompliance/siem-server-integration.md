@@ -14,12 +14,12 @@ ms.custom:
 - Ent_Solutions
 - SIEM
 description: '摘要: 阅读本文, 了解 SIEM server 与 Microsoft 365 集成的概述。'
-ms.openlocfilehash: 905f6fc9b6fd62748e25c27d6e5cdbedacc0f806
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: 75fbfa45288d30363d36ad5046cd46127b0af777
+ms.sourcegitcommit: c7989a8ead235aaebb2503abbde598f2c26c0056
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32260660"
+ms.lasthandoff: 05/14/2019
+ms.locfileid: "33979438"
 ---
 # <a name="siem-server-integration-with-microsoft-365-services-and-applications"></a>SIEM server 与 Microsoft 365 服务和应用程序的集成
 
@@ -35,7 +35,7 @@ SIEM 服务器可以接收来自各种 Microsoft 365 服务和应用程序的数
 | --- | --- | --- |
 | [Office 365 高级威胁防护](office-365-atp.md) <br/>   或   <br/>[Office 365 威胁智能](office-365-ti.md) | 审核日志 | [SIEM 与 Office 365 高级威胁防护的集成](siem-integration-with-office-365-ti.md) |
 | [Microsoft Cloud App Security](https://docs.microsoft.com/cloud-app-security/what-is-cloud-app-security) | 日志集成 | [SIEM 与 Microsoft Cloud App Security 的集成](https://docs.microsoft.com/cloud-app-security/siem) |
-| [Office 365 云应用安全](office-365-cas-overview.md) | 日志集成 | [将 SIEM 服务器与 Office 365 云应用安全集成](integrate-your-siem-server-with-office-365-cas.md) |
+| [Office 365 云应用安全](https://docs.microsoft.com/cloud-app-security/what-is-cloud-app-security) | 日志集成 | [将 SIEM 服务器与云应用安全集成](https://docs.microsoft.com/cloud-app-security/siem) |
 | [Windows Defender 高级威胁防护](https://docs.microsoft.com/windows/security/threat-protection/) | 日志集成 | [将警报拉入 SIEM 工具](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/configure-siem-windows-defender-advanced-threat-protection) |
 | [Azure 安全中心](https://docs.microsoft.com/azure/security-center/security-center-intro)(威胁防护和威胁检测) | 警报 | [Azure 安全数据导出到 SIEM 配置-预览](https://docs.microsoft.com/azure/security-center/security-center-export-data-to-siem) |
 | [Azure Active Directory Identity Protection](https://docs.microsoft.com/azure/active-directory/identity-protection/overview) | 审核日志 | [集成 Azure Active Directory 审核日志](https://docs.microsoft.com/azure/security/security-azure-log-integration-ad) |
@@ -45,7 +45,7 @@ SIEM 服务器可以接收来自各种 Microsoft 365 服务和应用程序的数
 
 在配置 SIEM server 集成之前, 请确保审核日志记录已打开。 
 
-- 对于 SharePoint Online、OneDrive for business 和 Azure Active Directory,[审核日志记录在安全 & 合规性中心中打开](https://docs.microsoft.com/office365/securitycompliance/turn-audit-log-search-on-or-off)。
+- 对于 SharePoint Online、OneDrive for business 和 Azure Active Directory,[审核日志记录在安全 _AMP_ 合规性中心中打开](https://docs.microsoft.com/office365/securitycompliance/turn-audit-log-search-on-or-off)。
 
 - 对于 Exchange Online,[审核日志记录是使用 Windows PowerShell 打开](https://docs.microsoft.com/office365/securitycompliance/enable-mailbox-auditing)的。
  

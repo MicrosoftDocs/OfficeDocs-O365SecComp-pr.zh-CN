@@ -15,12 +15,12 @@ search.appverid:
 - MOE150
 ms.assetid: 8927b8b9-c5bc-45a8-a9f9-96c732e58264
 description: 在 Office 365 和 Microsoft 365 中的安全与合规中心内创建通知策略, 以监视潜在威胁、数据丢失和权限问题。 然后, 您可以查看和管理用户执行符合通知策略条件的活动时生成的警报。
-ms.openlocfilehash: 7d7ef6f1f9737a0da3787b093d499a0833885eff
-ms.sourcegitcommit: 4ce350f8f3eb597587945a8ac9b33e9793440c64
+ms.openlocfilehash: 57b30a3c7202940ebb5422d7ef392e93c5351bfb
+ms.sourcegitcommit: c7989a8ead235aaebb2503abbde598f2c26c0056
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/01/2019
-ms.locfileid: "33516500"
+ms.lasthandoff: 05/14/2019
+ms.locfileid: "33979498"
 ---
 # <a name="alert-policies-in-the-security-and-compliance-center"></a>安全与合规中心中的警报策略
 
@@ -229,7 +229,8 @@ $RoleGroups | foreach {Write-Output -InputObject `r`n,$_.Name,"-----------------
     
 ## <a name="viewing-cloud-app-security-alerts"></a>查看云应用安全警报
   
-Office 365 云应用安全策略触发的警报现在显示在安全与合规中心的 "**查看通知**" 页面上。 这包括由 Office 365 云应用安全中的异常检测策略触发的活动策略和警报触发的警报。 这意味着您可以查看安全与合规中心中的所有警报。 请注意, Office 365 云应用安全仅适用于具有 Office 365 企业版 E5 或 Office 365 美国政府版订阅的组织。 有关详细信息, 请参阅[Office 365 云应用安全概述](office-365-cas-overview.md)。
+Office 365 云应用安全策略触发的警报现在显示在安全与合规中心的 "**查看通知**" 页面上。 这包括由 Office 365 云应用安全中的异常检测策略触发的活动策略和警报触发的警报。 这意味着您可以查看安全与合规中心中的所有警报。 请注意, Office 365 云应用安全仅适用于具有 Office 365 企业版 E5 或 Office 365 美国政府版订阅的组织。 有关详细信息, 请参阅[Cloud App Security 概述](https://docs.microsoft.com/cloud-app-security/what-is-cloud-app-security
+)。
 
 此外, 将 Microsoft 云应用安全作为企业移动性 + 安全 E5 订阅的一部分或作为独立服务的组织还可以查看与安全 & 中的 Office 365 应用程序和服务相关的云应用安全警报。合规性中心。
 
@@ -237,7 +238,7 @@ Office 365 云应用安全策略触发的警报现在显示在安全与合规中
 
 ![使用源筛选器仅显示云应用安全警报](media/FilterCASAlerts.png)
 
-与安全与合规中心警报策略触发的警报类似, 您可以单击云应用安全警报以显示弹出页面, 其中包含有关警报的详细信息。 此警报包含一个链接, 可用于查看详细信息和在云应用安全门户中管理通知以及指向触发警报的相应云应用安全策略的链接。 请参阅[审阅并对 Office 365 云应用安全中的警报采取措施](review-office-365-cas-alerts.md)。
+与安全与合规中心警报策略触发的警报类似, 您可以单击云应用安全警报以显示弹出页面, 其中包含有关警报的详细信息。 此警报包含一个链接, 可用于查看详细信息和在云应用安全门户中管理通知以及指向触发警报的相应云应用安全策略的链接。 请参阅[在云应用安全中监视警报](https://docs.microsoft.com/cloud-app-security/monitor-alerts)。
 
 ![警报详细信息包含指向云应用安全门户的链接](media/CASAlertDetail.png)
 

@@ -14,26 +14,26 @@ localization_priority: Normal
 search.appverid:
 - MET150
 description: 了解如何识别和修正 Office 365 中的 Outlook 规则和自定义窗体注入攻击
-ms.openlocfilehash: 59d45e50e15e3709c8a041ead59b8cc6e2a38306
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: 2189ff7abd640d9c87b97df35ec2b9cd44c74061
+ms.sourcegitcommit: c7989a8ead235aaebb2503abbde598f2c26c0056
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32256860"
+ms.lasthandoff: 05/14/2019
+ms.locfileid: "33979488"
 ---
 # <a name="detect-and-remediate-outlook-rules-and-custom-forms-injections-attacks-in-office-365"></a>在 Office 365 中检测并修正 Outlook 规则和自定义窗体注入攻击
 
 **摘要**了解如何识别和修正 Office 365 中的 Outlook 规则和自定义窗体注入攻击。
 
 ## <a name="what-is-the-outlook-rules-and-custom-forms-injection-attack"></a>Outlook 规则和自定义窗体注入攻击是什么？
-在攻击者破坏了租赁中的帐户并在中进行了获取之后, 将尝试并建立一种在发现和删除这些帐户后将其保留或返回的方法。 这称为建立持久性机制。 可以通过以下两种方式来执行此操作: 利用 outlook 规则或将自定义窗体插入 outlook。
+在攻击者破坏了租赁中的帐户并在中进行了获取之后, 将尝试并建立一种在发现和删除这些帐户后将其保留或返回的方法。 这称为建立持久性机制。 可以通过以下两种方式来执行此操作: 利用 Outlook 规则或将自定义窗体插入 Outlook。
 在这两种情况下, 规则或表单都将从云服务同步到桌面客户端, 因此完整的格式和重新安装客户端软件不会消除注入机制。 这是因为当 Outlook 客户端软件重新连接到云中的邮箱时, 它将从云中重新下载规则和表单。 规则和表单准备就绪后, 攻击者将使用它们执行远程或自定义代码, 通常是在本地计算机上安装恶意软件。 恶意软件然后重新盗取凭据或执行其他违法活动。 好消息是, 如果你将客户端修补到最新版本, 则不会因当前 Outlook 客户端默认阻止这两种机制而受到威胁。 
 
 攻击通常遵循以下模式:
 
 规则利用
 1. 攻击者盗取某个用户的用户名和密码。
-2. 然后, 攻击者登录到该用户的 Exchange 邮箱。 邮箱可以位于 exchange online 中, 也可以位于本地 exchange 中。
+2. 然后, 攻击者登录到该用户的 Exchange 邮箱。 邮箱可以位于 Exchange online 中, 也可以位于本地 Exchange 中。
 3. 然后, 攻击者在邮箱收到符合规则条件的电子邮件时触发的邮箱中创建转发规则。 规则的条件和触发器电子邮件的内容为彼此进行了自适应。
 4. 攻击者将触发器电子邮件发送到正常使用其邮箱的用户。
 5. 收到电子邮件时, 将触发该规则。 通常情况下, 该规则的操作是在远程 (WebDAV) 服务器上启动应用程序。
@@ -42,7 +42,7 @@ ms.locfileid: "32256860"
 
 表单利用
 1. 攻击者盗取某个用户的用户名和密码。
-2. 然后, 攻击者登录到该用户的 Exchange 邮箱。 邮箱可以位于 exchange online 中, 也可以位于本地 exchange 中。
+2. 然后, 攻击者登录到该用户的 Exchange 邮箱。 邮箱可以位于 Exchange online 中, 也可以位于本地 Exchange 中。
 3. 然后, 攻击者创建一个自定义邮件表单模板, 并将其插入到用户的邮箱中。  当邮箱收到需要邮箱加载自定义表单的电子邮件时, 将触发自定义表单。 自定义窗体和电子邮件的格式是彼此进行量身定制的。
 4. 攻击者将触发器电子邮件发送给用户, 该用户将正常使用其邮箱。
 5. 收到电子邮件时, 将加载表单。 表单启动远程 (WebDAV) 服务器上的应用程序。
@@ -115,7 +115,7 @@ MailboxFormsExport-*dd*.csv –通常情况下, 使用自定义窗体非常罕�
 2. 按照 "删除每个设备的[规则](https://support.office.com/article/Delete-a-rule-2F0E7139-F696-4422-8498-44846DB9067F)" 中的步骤操作。
 3. 如果您不确定是否存在其他恶意软件, 可以在设备上格式化并重新安装所有软件。  对于移动设备, 您可以按照制造商的步骤操作, 将设备重置为出厂映像。
 4. 安装最新版本的 Outlook。  请注意, 默认情况下, 当前版本的 Outlook 阻止这两种攻击类型。
-5. 删除邮箱的所有脱机副本后, 重置用户的密码 (使用高质量的密码), 并按照[Setup 多重身份验证](https://support.office.com/article/Set-up-multi-factor-authentication-for-Office-365-users-8f0454b2-f51a-4d9c-bcde-2c48e41621c6)(如果尚未启用 MFA) 中的步骤操作。 这可确保用户的凭据不会通过其他方式 (如网络钓鱼或密码重用) 公开。
+5. 删除邮箱的所有脱机副本后, 重置用户的密码 (使用高质量的密码), 并按照 Setup 多重身份365验证 (如果尚未启用 MFA) 中的步骤操作。 这可确保用户的凭据不会通过其他方式 (如网络钓鱼或密码重用) 公开。
 
 ### <a name="using-powershell"></a>使用 PowerShell
 有两个可用于删除或禁用危险规则的远程 PowerShell cmdlet。 只需按照步骤操作即可。
@@ -141,7 +141,7 @@ Exchange Online 中邮箱的步骤
 
 保护用户帐户 (尤其是管理员帐户) 的最佳方法是为[Office 365 用户设置多重身份验证](https://support.office.com/article/set-up-multi-factor-authentication-for-office-365-users-8f0454b2-f51a-4d9c-bcde-2c48e41621c6)。  此外, 还应执行以下操作:
 <ol>
-    <li>监视如何<a href="https://docs.microsoft.com/azure/active-directory/active-directory-view-access-usage-reports">访问和使用</a>您的用户帐户。 您可能不会阻止最初的破坏, 但您将通过更快地进行检测来缩短危害的持续时间和影响。 您可以使用以下内容: <a href="https://support.office.com/article/overview-of-office-365-cloud-app-security-81f0ee9a-9645-45ab-ba56-de9cbccab475">Office 365 云应用安全策略</a>来监视您的帐户并通知异常活动。 
+    <li>监视如何<a href="https://docs.microsoft.com/azure/active-directory/active-directory-view-access-usage-reports">访问和使用</a>您的用户帐户。 您可能不会阻止最初的破坏, 但您将通过更快地进行检测来缩短危害的持续时间和影响。 您可以使用以下内容: <a href="https://docs.microsoft.com/cloud-app-security/what-is-cloud-app-security">Office 365 云应用安全策略</a>来监视您的帐户并通知异常活动。 
         <ol type="a">
             <li><b>多次失败的登录尝试</b>当用户在一个会话中执行多个失败的登录活动时, 此策略将配置为您的环境并触发警报, 这可能表示尝试受到破坏。</li>
             <li><b>无法旅行</b>-此策略配置您的环境, 并在从同一用户在两个位置之间的不同位置 (短于两个位置之间的预期旅行时间) 内检测到活动时触发警报。 这可能表示其他用户正在使用相同的凭据。 如果检测到此异常行为, 则可以在七天内学习新用户的活动模式的初始学习期。</li>
@@ -182,8 +182,8 @@ Exchange Online 中邮箱的步骤
 - 90 天后。 这些增强功能基于前 90 天的工作构建。
 
 ## <a name="see-also"></a>另请参阅：
-- [恶意 outlook 规则](https://silentbreaksecurity.com/malicious-outlook-rules/)SilentBreak 安全公告关于规则矢量提供有关 Outlook 规则的详细审阅。 
-- [MAPI over HTTP 和 Mailrule Pwnage](https://sensepost.com/blog/2016/mapi-over-http-and-mailrule-pwnage/) on the Sensepost 博客 for Mailrule Pwnage 讨论了一个称为标尺的工具, 可让您通过 Outlook 规则利用邮箱。
+- [恶意 Outlook 规则](https://silentbreaksecurity.com/malicious-outlook-rules/)SilentBreak 安全公告关于规则矢量提供有关 Outlook 规则的详细审阅。 
+- [MAPI OVER HTTP 和 Mailrule Pwnage](https://sensepost.com/blog/2016/mapi-over-http-and-mailrule-pwnage/) On the Sensepost 博客 For Mailrule Pwnage 讨论了一个称为标尺的工具, 可让您通过 Outlook 规则利用邮箱。
 - 有关表单威胁向量的 Sensepost 博客上的[Outlook 窗体和 shell](https://sensepost.com/blog/2017/outlook-forms-and-shells/) 。 
 - [标尺基本代码](https://github.com/sensepost/ruler)
 - [标尺指示器的危害](https://github.com/sensepost/notruler/blob/master/iocs.md)
