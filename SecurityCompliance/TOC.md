@@ -49,10 +49,14 @@
 ### [DLP 函数查找的内容](what-the-dlp-functions-look-for.md)
 ### [观看自定义 DLP 的扩展概述](https://go.microsoft.com/fwlink/?linkid=852306)
 ### [自定义内置敏感信息类型](customize-a-built-in-sensitive-information-type.md)
-### [创建自定义敏感信息类型](create-a-custom-sensitive-information-type.md)
-### [使用 Office 365 安全与合规中心 PowerShell 创建自定义敏感信息类型](create-a-custom-sensitive-information-type-in-scc-powershell.md)
+### [自定义敏感信息类型](custom-sensitive-info-types.md)
+### [使用精确数据匹配（预览版）创建自定义敏感信息类型](create-custom-sensitive-info-type-edm.md)
+### [在安全与合规中心内创建自定义敏感信息类型](create-a-custom-sensitive-information-type.md)
+### [使用 PowerShell 创建自定义敏感信息类型](create-a-custom-sensitive-information-type-in-scc-powershell.md)
 ### [创建关键字字典](create-a-keyword-dictionary.md)
 ### [文档指纹识别](document-fingerprinting.md)
+### [敏感信息的 DLP 函数](what-the-dlp-functions-look-for.md)
+### [观看自定义 DLP 的扩展概述](https://go.microsoft.com/fwlink/?linkid=852306)
 
 ## [Office 365 中的电子邮件加密](email-encryption.md)
 ### [Office 365 邮件加密 (OME)](ome.md)
@@ -107,6 +111,7 @@
 ### [什么是 EOP？](eop/what-is-eop.md)
 ### [Office 365 电子邮件反垃圾邮件保护](anti-spam-protection.md)
 ### [如何防止真实电子邮件在 Office 365 中标记为垃圾邮件](prevent-email-from-being-marked-as-spam.md)
+### [如何将策略和保护组合在一起](how-policies-and-protections-are-combined.md)
 ### [如何减少 Office 365 中的垃圾电子邮件](reduce-spam-email.md)
 ### [控制 Office 365 中的出站垃圾邮件](outbound-spam-controls.md)
 ### [使用 Office 365 垃圾邮件筛选器阻止垃圾电子邮件以免出现漏报问题](reduce-spam-email.md)
@@ -177,19 +182,19 @@
 ## [响应 Office 365 中遭到入侵的电子邮件帐户](responding-to-a-compromised-email-account.md)
 
 # 记录管理
-## [文件计划管理器](file-plan-manager.md)
-## [保留标签](labels.md)
-### [符合 SEC Rule 17a-4](use-exchange-online-to-comply-with-sec-rule-17a-4.md)
+## 文件计划
+### [文件计划管理器](file-plan-manager.md)
+### [保留标签](labels.md)
 ### [使用 PowerShell 创建和发布保留标签](https://docs.microsoft.com/zh-CN/office365/securitycompliance/bulk-create-publish-labels-using-powershell)
-## [基于事件的保留](event-driven-retention.md)
-### [自动执行基于事件的保留](automate-event-driven-retention.md)
-## [处置评审](disposition-reviews.md)
-## 监视记录管理
-### [查看数据治理报表](view-the-data-governance-reports.md)
-### [查看文档的标签活动](view-label-activity-for-documents.md)
 ### [使用标签分析查看标签使用情况](label-analytics.md)
+### [查看文档的标签活动](view-label-activity-for-documents.md)
+### [查看数据管理报告](view-the-data-governance-reports.md)
+## 事件
+### [基于事件的保留](event-driven-retention.md)
+### [自动执行基于事件的保留](automate-event-driven-retention.md)
+## [处置](disposition-reviews.md)
 ## 有关记录管理的详细信息
-### [观看 Microsoft 数据管理团队的视频](https://go.microsoft.com/fwlink/?linkid=867039)
+### [观看有关记录管理的视频](https://go.microsoft.com/fwlink/?linkid=867039)
 
 # 管理数据管理
 ## [导入数据](importing-pst-files-to-office-365.md)
@@ -460,11 +465,17 @@
 # 邮件流
 ## [启用报告消息加载项](enable-the-report-message-add-in.md)
 ## [安全与合规中心内的消息跟踪](message-trace-scc.md)
-## [安全与合规中心内的邮件流见解](mail-flow-insights.md)
-### [自动转发的消息报告](mfi-auto-forwarded-messages-report.md)
-### [邮件循环见解](mfi-mail-loop-insight.md)
+## [安全与合规中心内的邮件流见解](mail-flow-insights-v2.md)
+### [邮件流地图报表](mfi-mail-flow-map-report.md)
+### [顶级域邮件流状态见解](mfi-domain-mail-flow-status-insight.md)
+### [SMTP 身份验证客户端报表](mfi-smtp-auth-clients-report.md)
+### [修复发件人域见解](mfi-sender-domain-insight.md)
+### [未送达报告](mfi-non-delivery-report.md)
+### [非接受域报告](mfi-non-accepted-domain-report.md)
 ### [入站和出站邮件流](mfi-outbound-and-inbound-mail-flow.md)
 ### [队列警报和队列](mfi-queue-alerts-and-queues.md)
+### [自动转发的消息报告](mfi-auto-forwarded-messages-report.md)
+### [邮件循环见解](mfi-mail-loop-insight.md)
 ### [慢邮件流规则见解](mfi-slow-mail-flow-rules-insight.md)
 
 # 安全解决方案
@@ -494,6 +505,7 @@
 ### [使用客户密钥控制 Office 365 中的数据](controlling-your-data-using-customer-key.md)
 ### [有关使用 Office 365 客户密钥执行服务加密的 FAQ](service-encryption-with-customer-key-faq.md)
 ## [GDPR 数据主体请求工具](manage-gdpr-data-subject-requests-with-the-dsr-case-tool.md)
+## [客户密码箱](customer-lockbox-requests.md)
 ## [符合 GDPR 的 Office 365 信息保护](office-365-information-protection-for-gdpr.md)
 ### [概述：符合 GDPR 的 Office 365 保护](office-365-info-protection-for-gdpr-overview.md)
 ### [搜索和查找个人数据](search-for-and-find-personal-data.md)
