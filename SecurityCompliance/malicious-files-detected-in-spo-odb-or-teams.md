@@ -3,7 +3,7 @@ title: 查看有关在 SharePoint、OneDrive 或 Microsoft 团队中检测到的
 ms.author: deniseb
 author: denisebmsft
 manager: laurawi
-ms.audience: ITPro
+audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
@@ -14,12 +14,12 @@ ms.assetid: 5ed8abf1-c0e9-4e5b-a5b7-2059cea50b61
 ms.collection:
 - M365-security-compliance
 description: 了解在何处可以查看有关在 SharePoint、OneDrive 或团队中检测到的恶意文件的信息, 以及如何对这些文件执行操作。
-ms.openlocfilehash: f5304f78ddec884748dd7d1090e2a7895044d045
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: 070640d9aa1d28cc1a49a9d8b88e5bf5780d3622
+ms.sourcegitcommit: 0d5a863f48914eeaaf29f7d2a2022618de186247
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32259830"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "34077578"
 ---
 # <a name="view-information-about-malicious-files-detected-in-sharepoint-onedrive-or-microsoft-teams"></a>查看有关在 SharePoint、OneDrive 或 Microsoft 团队中检测到的恶意文件的信息
 
@@ -57,7 +57,7 @@ ms.locfileid: "32259830"
     
   - 选择 "**下载文件**" 以进一步调查文件。 
     
-  - 选择 "**删除**" 以从隔离项目列表中删除该文件。 如果选择此选项, 则还必须在 SharePoint Online、OneDrive for business 或 Microsoft 团队中从其各自的库中删除文件。 此选项不会取消阻止打开或共享文件。 
+  - 选择 "**删除**" 以从隔离项目列表中删除该文件。 如果选择此选项, 则还必须在 SharePoint Online、OneDrive for Business 或 Microsoft 团队中从其各自的库中删除文件。 此选项不会取消阻止打开或共享文件。 
     
 5. 选择 "**关闭**" 以关闭所选项目的详细信息。 
   

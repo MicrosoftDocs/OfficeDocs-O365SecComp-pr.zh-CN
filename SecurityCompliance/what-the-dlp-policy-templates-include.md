@@ -4,7 +4,7 @@ ms.author: deniseb
 author: denisebmsft
 manager: laurawi
 ms.date: 6/29/2018
-ms.audience: Admin
+audience: Admin
 ms.topic: reference
 f1_keywords:
 - ms.o365.cc.DLPNewPolicyFromTemplate
@@ -15,17 +15,17 @@ localization_priority: Normal
 search.appverid:
 - MOE150
 - MET150
-description: Office 365 安全&amp;合规中心中的数据丢失防护 (DLP) 包括可满足常见合规性要求的现成的策略模板, 例如, 帮助您保护受美国卫生保险业法案组织的敏感信息 (HIPAA)、美国格雷姆-里奇-比利雷法案 (GLBA) 或美国爱国 act。本主题列出了所有策略模板, 它们查找的敏感信息类型, 以及默认条件和操作的具体内容。
-ms.openlocfilehash: 0031b5415db2f1c4a9497bcfbc5226da250b01b6
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+description: Office 365 安全&amp;合规中心中的数据丢失防护 (DLP) 包括可满足常见合规性要求的现成的策略模板, 例如, 帮助您保护受美国卫生保险业法案组织的敏感信息 (HIPAA)、美国格雷姆-里奇-比利雷法案 (GLBA) 或美国爱国 Act。本主题列出了所有策略模板, 它们查找的敏感信息类型, 以及默认条件和操作的具体内容。
+ms.openlocfilehash: 505d544d68002bc82eafd85c51b4db4328ba9853
+ms.sourcegitcommit: 0d5a863f48914eeaaf29f7d2a2022618de186247
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32266837"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "34077148"
 ---
 # <a name="what-the-dlp-policy-templates-include"></a>DLP 策略模板包含的内容
 
-Office 365 安全&amp;合规中心中的数据丢失防护 (DLP) 包括可满足常见合规性要求的现成的策略模板, 例如, 帮助您保护受美国卫生保险业法案组织的敏感信息 (HIPAA)、美国格雷姆-里奇-比利雷法案 (GLBA) 或美国爱国 act。本主题列出了所有策略模板, 它们查找的敏感信息类型, 以及默认条件和操作的具体内容。 本主题不包括每个策略模板的配置方式的各项细节；此主题转为，为您提供了充足的信息来帮助您确定哪个模板是您开始实施方案的最佳模版。 请记住，您可以自定义这些策略模板以满足您的特定要求。
+Office 365 安全&amp;合规中心中的数据丢失防护 (DLP) 包括可满足常见合规性要求的现成的策略模板, 例如, 帮助您保护受美国卫生保险业法案组织的敏感信息 (HIPAA)、美国格雷姆-里奇-比利雷法案 (GLBA) 或美国爱国 Act。本主题列出了所有策略模板, 它们查找的敏感信息类型, 以及默认条件和操作的具体内容。 本主题不包括每个策略模板的配置方式的各项细节；此主题转为，为您提供了充足的信息来帮助您确定哪个模板是您开始实施方案的最佳模版。 请记住，您可以自定义这些策略模板以满足您的特定要求。
   
 ## <a name="australia-financial-data"></a>澳大利亚财务数据
 

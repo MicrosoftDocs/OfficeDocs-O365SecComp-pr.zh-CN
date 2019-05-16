@@ -4,7 +4,7 @@ ms.author: deniseb
 author: denisebmsft
 manager: laurawi
 ms.date: 01/22/2019
-ms.audience: ITPro
+audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
@@ -15,12 +15,12 @@ ms.assetid: 414fa693-d7b7-4a1d-a387-ebc3b6a52889
 ms.collection:
 - M365-security-compliance
 description: 将 Office 365 高级威胁防护与 Windows Defender 高级威胁防护集成, 以查看更详细的威胁管理信息。
-ms.openlocfilehash: 832b9c6bc600366e1ed6b7c6e60442bec8b5002c
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: f6ea4309d3eb7a4ccd4987d221398d0f15994388
+ms.sourcegitcommit: 0d5a863f48914eeaaf29f7d2a2022618de186247
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32254416"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "34077248"
 ---
 # <a name="integrate-office-365-advanced-threat-protection-with-windows-defender-advanced-threat-protection"></a>将 Office 365 高级威胁防护与 Windows Defender 高级威胁防护集成
 
@@ -32,7 +32,7 @@ ms.locfileid: "32254416"
   
 在此示例中, 您可以看到电子邮件的收件人有四台设备, 并且有一个警报。 单击设备的链接将在 Windows Defender 高级威胁防护门户中打开其页面。
   
-## <a name="requirements"></a>Requirements
+## <a name="requirements"></a>要求
 
 - 您的组织必须具有 Office 365 高级威胁防护计划 2 (或 Office 365 E5) 和 Windows Defender ATP。
     
@@ -42,9 +42,9 @@ ms.locfileid: "32254416"
     
 ## <a name="to-integrate-office-365-advanced-threat-protection-with-windows-defender-atp"></a>将 Office 365 高级威胁防护与 Windows Defender ATP 集成
 
-将 Office 365 高级威胁防护与 windows defender 高级威胁防护结合使用安全 & 合规性中心和 windows defender 高级威胁防护门户进行设置。
+将 Office 365 高级威胁防护与 Windows Defender 高级威胁防护结合使用安全 & 合规性中心和 Windows Defender 高级威胁防护门户进行设置。
   
-1. 作为 office 365 全局管理员或安全管理员, 请转到[https://protection.office.com](https://protection.office.com)并使用 Office 365 的工作或学校帐户登录。 
+1. 作为 Office 365 全局管理员或安全管理员, 请转到[https://protection.office.com](https://protection.office.com)并使用 Office 365 的工作或学校帐户登录。 
     
 2. 选择 "**威胁管理** \> **资源管理器**"。<br>![威胁管理菜单中的资源管理器](media/ThreatMgmt-Explorer-nav.png)<br>
     

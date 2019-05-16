@@ -3,7 +3,7 @@ title: 打开适用于 SharePoint、OneDrive 和 Microsoft 团队的 Office 365 
 ms.author: deniseb
 author: denisebmsft
 manager: laurawi
-ms.audience: ITPro
+audience: ITPro
 ms.topic: article
 ms.date: 02/06/2019
 ms.service: O365-seccomp
@@ -15,12 +15,12 @@ ms.assetid: 07e76024-0c80-40dc-8c48-1dd0d0f863cb
 ms.collection:
 - M365-security-compliance
 description: 了解如何为 SharePoint、OneDrive 和团队打开 ATP, 包括如何为检测到的文件设置通知。
-ms.openlocfilehash: 30eb28bfc5156664656ca1c200f9e999661b3b0c
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: 6b7403ceff810d96c677fc6af7673547424346b8
+ms.sourcegitcommit: 0d5a863f48914eeaaf29f7d2a2022618de186247
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32264288"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "34077238"
 ---
 # <a name="turn-on-office-365-atp-for-sharepoint-onedrive-and-microsoft-teams"></a>打开适用于 SharePoint、OneDrive 和 Microsoft 团队的 Office 365 ATP
 
@@ -42,9 +42,9 @@ ms.locfileid: "32264288"
     
 2. 在 "Office 365 安全&amp;合规中心" 的左侧导航窗格中的 "**威胁管理**" 下, 选择 "**策略** \> **安全附件**"。 <br/>![在 "安全&amp;合规性中心" 中, \>选择 "威胁管理策略"](media/08849c91-f043-4cd1-a55e-d440c86442f2.png)
   
-3. 选择 "**为 SharePoint、OneDrive 和 Microsoft 团队启用 ATP**"。<br/>![为 SharePoint Online、OneDrive for business 和 Microsoft 团队启用高级威胁防护](media/48cfaace-59cc-4e60-bf86-05ff6b99bdbf.png)
+3. 选择 "**为 SharePoint、OneDrive 和 Microsoft 团队启用 ATP**"。<br/>![为 SharePoint Online、OneDrive for Business 和 Microsoft 团队启用高级威胁防护](media/48cfaace-59cc-4e60-bf86-05ff6b99bdbf.png)
   
-4. 单击“**保存**”。
+4. 单击“保存”****。
     
 5. 查看 (并根据需要编辑) 您组织的[安全附件策略](set-up-atp-safe-attachments-policies.md)和[安全链接策略](set-up-atp-safe-links-policies.md)。
     
@@ -56,13 +56,13 @@ ms.locfileid: "32264288"
     
 8. 适合继续设置针对检测到的文件的通知。
     
-若要了解有关在 Office 365 中使用 PowerShell 的详细信息, 请参阅[使用 powershell 管理 Office 365](https://docs.microsoft.com/office365/enterprise/powershell/manage-office-365-with-office-365-powershell)。 
+若要了解有关在 Office 365 中使用 PowerShell 的详细信息, 请参阅[使用 Powershell 管理 Office 365](https://docs.microsoft.com/office365/enterprise/powershell/manage-office-365-with-office-365-powershell)。 
 
 若要详细了解在将文件检测为恶意时的用户体验, 请参阅在[SharePoint Online、OneDrive 或 Microsoft 团队中找到恶意文件时应执行的操作](https://support.office.com/article/01e902ad-a903-4e0f-b093-1e1ac0c37ad2)。 
   
 ## <a name="set-up-alerts-for-detected-files"></a>为检测到的文件设置通知
 
-若要在 SharePoint Online、OneDrive for business 或 Microsoft 团队中的文件被标识为恶意文件时收到通知, 可以设置警报。
+若要在 SharePoint Online、OneDrive for Business 或 Microsoft 团队中的文件被标识为恶意文件时收到通知, 可以设置警报。
   
 1. 在 " [Office 365 安全&amp;合规中心](https://protection.office.com)" 中, 选择 "**通知** \> " "**管理通知**"。
     
@@ -72,15 +72,15 @@ ms.locfileid: "32264288"
     
 4. 键入警报的说明。 例如, 可以键入在 SharePoint Online、OneDrive 或 Microsoft 团队中检测到恶意文件时通知管理员。
     
-5. 在 "**发送此通知**的条件 ..." 部分, 执行下列操作: 
+5. 在 "**发送此通知**的条件 .。。" 部分, 执行下列操作: 
     
     a. 在 "**活动**" 列表中, 选择 "**文件中检测到的恶意软件**"。
     
     b. 将 "**用户**" 字段留空。 
     
-6. 在 "**将此通知发送给 ...** " 部分, 选择一个或多个全局管理员、安全管理员或在检测到恶意文件时应收到通知的安全阅读者。 
+6. 在 "**将此通知发送给 .。。** " 部分, 选择一个或多个全局管理员、安全管理员或在检测到恶意文件时应收到通知的安全阅读者。 
     
-7. 单击“**保存**”。
+7. 单击“保存”****。
     
 若要了解有关通知的详细信息, 请参阅[在 Office 365 安全&amp;合规中心中创建活动通知](create-activity-alerts.md)。 
   

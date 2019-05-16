@@ -4,7 +4,7 @@ ms.author: deniseb
 author: denisebmsft
 manager: laurawi
 ms.date: 6/29/2018
-ms.audience: Admin
+audience: Admin
 ms.topic: article
 f1_keywords:
 - ms.o365.cc.UnifiedDLPRuleContentPropertyContainsWords
@@ -15,12 +15,12 @@ search.appverid:
 ms.collection:
 - M365-security-compliance
 description: 许多组织已拥有一个使用 Windows Server 文件分类基础结构 (FCI)、SharePoint 中的文档属性或由第三方系统应用的文档属性识别和分类敏感信息的流程。 如果您的组织就是这样，则可以在 Office 365 中创建一个 DLP 策略，来识别已由 Windows Server FCI 或其他系统应用到文档的属性，从而在带有特定 FCI 或其他属性值的 Office 文档上强制应用该 DLP 策略。
-ms.openlocfilehash: ad643c77d477f6b9aaecb122010584510ea9bf7e
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: 4db84ac4fd0c62dff0834c68827808f832a36d03
+ms.sourcegitcommit: 0d5a863f48914eeaaf29f7d2a2022618de186247
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32265284"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "34077278"
 ---
 # <a name="create-a-dlp-policy-to-protect-documents-with-fci-or-other-properties"></a>创建 DLP 策略来保护具有 FCI 或其他属性的文档
 
@@ -28,7 +28,7 @@ ms.locfileid: "32265284"
   
 ![显示 Office 365 和外部分类系统的图表](media/59ad0ac1-4146-4919-abd1-c74d8508d25e.png)
   
-例如，您的组织可能会使用 Windows Server FCI 来识别包含个人身份信息 (PII) 的文档（如社会保险号），然后通过基于文档中找到的 PII 的类型和出现次数将“个人身份信息”**** 属性设置为“高”****、“中等”****、“低”****、“公开”**** 或“非 PII”**** 来对文档进行分类。 在 Office 365 中，您可以创建 DLP 策略，来标识将该属性设置为特定值（如“高”**** 和“中等”****）的文档，然后对这些文件执行操作，如阻止访问。 如果将属性设置为“低”****，则同一个策略可以使用其他规则来执行不同的操作，如发送电子邮件通知。 通过这种方式, Office 365 中的 DLP 与 windows server FCI 集成, 并可帮助保护从基于 Windows server 的文件服务器上传或共享到 office 365 的 office 文档。
+例如，您的组织可能会使用 Windows Server FCI 来识别包含个人身份信息 (PII) 的文档（如社会保险号），然后通过基于文档中找到的 PII 的类型和出现次数将“个人身份信息”**** 属性设置为“高”****、“中等”****、“低”****、“公开”**** 或“非 PII”**** 来对文档进行分类。 在 Office 365 中，您可以创建 DLP 策略，来标识将该属性设置为特定值（如“高”**** 和“中等”****）的文档，然后对这些文件执行操作，如阻止访问。 如果将属性设置为“低”****，则同一个策略可以使用其他规则来执行不同的操作，如发送电子邮件通知。 通过这种方式, Office 365 中的 DLP 与 Windows Server FCI 集成, 并可帮助保护从基于 Windows Server 的文件服务器上传或共享到 Office 365 的 Office 文档。
   
 DLP 策略只需查找特定的属性名称/值对。可以使用任何文档属性，只要该属性具有 SharePoint 搜索的相应托管属性。例如，SharePoint 网站集可能使用名为“行程报告”**** 的内容类型，包含名为“客户”**** 的必填字段。只要有人创建行程报告，就必须输入客户名称。此属性名称/值对还可在 DLP 策略中使用 — 例如，当“客户”**** 字段包含“Contoso”**** 时，您希望有一个规则可以阻止外部用户访问此文档。
   
@@ -112,7 +112,7 @@ DLP 策略只需查找特定的属性名称/值对。可以使用任何文档属
       New-DlpComplianceRule -Name FCI_PII_content-High,Moderate -Policy FCI_PII_policy -AccessScope NotInOrganization -BlockAccess $true -ContentPropertyContainsWords "Personally Identifiable Information:High,Moderate" -Disabled $falseNew-DlpComplianceRule -Name FCI_PII_content-Low -Policy FCI_PII_policy -AccessScope NotInOrganization -BlockAccess $false -ContentPropertyContainsWords "Personally Identifiable Information:Low" -Disabled $false -NotifyUser Owner
       ```
 
-    请注意, Windows Server FCI 包含许多内置属性, 包括本示例中使用的**个人身份信息**。 每个组织的每个属性的可能值可能各不相同。 此处使用的 "**高**"、"**中等**" 和 "**低**" 值仅是一个示例。 对于您的组织, 您可以在基于 windows server 的文件服务器上的文件服务器资源管理器中查看 Windows Server FCI 分类属性及其可能的值。 有关详细信息, 请参阅[创建分类属性](http://go.microsoft.com/fwlink/p/?LinkID=627456)。
+    请注意, Windows Server FCI 包含许多内置属性, 包括本示例中使用的**个人身份信息**。 每个组织的每个属性的可能值可能各不相同。 此处使用的 "**高**"、"**中等**" 和 "**低**" 值仅是一个示例。 对于您的组织, 您可以在基于 Windows Server 的文件服务器上的文件服务器资源管理器中查看 Windows Server FCI 分类属性及其可能的值。 有关详细信息, 请参阅[创建分类属性](http://go.microsoft.com/fwlink/p/?LinkID=627456)。
     
 完成后, 策略应具有两个新规则, 它们都使用**文档属性包含这些值条件中的任何一个**。 请注意, 此条件不会显示在 UI 中, 但会显示其他条件、操作和设置。 
   

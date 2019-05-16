@@ -4,7 +4,7 @@ ms.author: deniseb
 author: denisebmsft
 manager: laurawi
 ms.date: 03/19/2019
-ms.audience: ITPro
+audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
@@ -15,19 +15,19 @@ ms.assetid: 8f54cd33-4af7-4d1b-b800-68f8818e5b2a
 ms.collection:
 - M365-security-compliance
 description: 了解如何使用威胁调查和响应功能查找和调查恶意电子邮件。
-ms.openlocfilehash: d19833a5d2acf69b79cca7e58c5796d967337c9f
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: 6eec99f5b2872a63efab619e9814ab0fa625ca49
+ms.sourcegitcommit: 0d5a863f48914eeaaf29f7d2a2022618de186247
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32254612"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "34077268"
 ---
 # <a name="find-and-investigate-malicious-email-that-was-delivered-office-365-advanced-threat-protection-plan-2"></a>查找并调查提供的恶意电子邮件 (Office 365 高级威胁防护计划 2)
 
 [Office 365 高级威胁防护计划 2](office-365-ti.md)使您能够调查让您的用户面临风险的活动, 并采取措施来保护您的组织。 例如, 如果您是组织的安全团队的一部分, 则可以查找并调查传递给用户的可疑电子邮件。 可以使用[威胁资源管理器](get-started-with-ti.md#threat-explorer)执行此操作。
   
 > [!IMPORTANT]
-> office 365 威胁智能现已成为 office 365 高级威胁防护计划 2, 以及其他威胁防护功能。 若要了解详细信息, 请参阅[office 365 高级威胁防护计划和定价](https://products.office.com/exchange/advance-threat-protection)以及[Office 365 高级威胁防护服务说明](https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description)。
+> Office 365 威胁智能现已成为 Office 365 高级威胁防护计划 2, 以及其他威胁防护功能。 若要了解详细信息, 请参阅[office 365 高级威胁防护计划和定价](https://products.office.com/exchange/advance-threat-protection)以及[Office 365 高级威胁防护服务说明](https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description)。
   
 ## <a name="before-you-begin"></a>开始之前 .。。
 
@@ -43,7 +43,7 @@ ms.locfileid: "32254612"
     
 ## <a name="dealing-with-suspicious-emails"></a>处理可疑电子邮件
 
-恶意攻击者可能会向你的用户发送邮件, 以尝试对其凭据进行网络钓鱼并获取对公司机密的访问权限! 为避免这种情况, 应使用 Office 365 提供的威胁防护服务, 包括 Exchange Online protection 和高级威胁防护。 但是, 有时攻击者可能会向包含 url 的用户发送邮件, 并在稍后使该 url 指向恶意内容 (恶意软件等)。 或者, 您可能会发现您的组织中的某个用户已受到威胁, 而该用户受到威胁时, 攻击者使用该帐户向公司中的其他用户发送电子邮件。 在清理这两个方案的过程中, 您可能需要从用户收件箱中删除电子邮件。 在这种情况下, 您可以利用威胁资源管理器查找和删除这些电子邮件!
+恶意攻击者可能会向你的用户发送邮件, 以尝试对其凭据进行网络钓鱼并获取对公司机密的访问权限! 为避免这种情况, 应使用 Office 365 提供的威胁防护服务, 包括 Exchange Online Protection 和高级威胁防护。 但是, 有时攻击者可能会向包含 URL 的用户发送邮件, 并在稍后使该 URL 指向恶意内容 (恶意软件等)。 或者, 您可能会发现您的组织中的某个用户已受到威胁, 而该用户受到威胁时, 攻击者使用该帐户向公司中的其他用户发送电子邮件。 在清理这两个方案的过程中, 您可能需要从用户收件箱中删除电子邮件。 在这种情况下, 您可以利用威胁资源管理器查找和删除这些电子邮件!
   
 ## <a name="find-and-delete-suspicious-email-that-was-delivered"></a>查找并删除已传递的可疑电子邮件
 

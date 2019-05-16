@@ -4,7 +4,7 @@ ms.author: deniseb
 author: denisebmsft
 manager: laurawi
 ms.date: 6/7/2018
-ms.audience: Admin
+audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 ms.collection:
@@ -13,13 +13,13 @@ localization_priority: Normal
 search.appverid:
 - MOE150
 - MET150
-description: 使用 Office 365 中的 dlp 报告, 您可以快速查看 dlp 策略匹配、覆盖或误报的数量;查看它们是按时间趋势上升还是下降;以不同的方式筛选报表;并在图表上的某一行上选择一个点, 以查看其他详细信息。
-ms.openlocfilehash: 447245f945bd777f56cca71320a72a9d9dd8720e
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+description: 使用 Office 365 中的 DLP 报告, 您可以快速查看 DLP 策略匹配、覆盖或误报的数量;查看它们是按时间趋势上升还是下降;以不同的方式筛选报表;并在图表上的某一行上选择一个点, 以查看其他详细信息。
+ms.openlocfilehash: edca8ad8ae970453e6baf9c1910e17cc62568af5
+ms.sourcegitcommit: 0d5a863f48914eeaaf29f7d2a2022618de186247
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32267281"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "34077298"
 ---
 # <a name="view-the-reports-for-data-loss-prevention"></a>查看数据丢失防护报告
 
@@ -89,14 +89,14 @@ ms.locfileid: "32267281"
     
 2. 使用这些[Office 365 安全&amp;合规中心 cmdlet](http://go.microsoft.com/fwlink/?LinkID=799772&amp;clcid=0x409)中的任何一个
     
-但是, DLP 报告需要跨 Office 365 请求获取数据, 包括 Exchange Online。 因此, DLP 报告的 cmdlet 在 Exchange Online powershell 中可用, 而不在安全&amp;合规中心 powershell 中。 因此, 若要使用 DLP 报告的 cmdlet, 需要执行以下操作:
+但是, DLP 报告需要跨 Office 365 请求获取数据, 包括 Exchange Online。 因此, DLP 报告的 cmdlet 在 Exchange Online Powershell 中可用, 而不在安全&amp;合规中心 powershell 中。 因此, 若要使用 DLP 报告的 cmdlet, 需要执行以下操作:
   
 1. [Connect to Exchange Online using remote PowerShell](http://go.microsoft.com/fwlink/?LinkID=799773&amp;clcid=0x409)
     
 2. 为 DLP 报告使用以下任一 cmdlet:
     
-      - [get-dlpdetectionsreport](http://go.microsoft.com/fwlink/?LinkID=799774&amp;clcid=0x409)
+      - [Get-dlpdetectionsreport](http://go.microsoft.com/fwlink/?LinkID=799774&amp;clcid=0x409)
     
-      - [get-dlpdetailreport](http://go.microsoft.com/fwlink/?LinkID=799775&amp;clcid=0x409)
+      - [Get-dlpdetailreport](http://go.microsoft.com/fwlink/?LinkID=799775&amp;clcid=0x409)
     
 

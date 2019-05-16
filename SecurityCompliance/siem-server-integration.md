@@ -3,7 +3,7 @@ title: SIEM server 与 Microsoft 365 的集成
 ms.author: deniseb
 author: denisebmsft
 manager: laurawi
-ms.audience: ITPro
+audience: ITPro
 ms.topic: article
 ms.date: 10/29/2018
 ms.service: O365-seccomp
@@ -14,12 +14,12 @@ ms.custom:
 - Ent_Solutions
 - SIEM
 description: '摘要: 阅读本文, 了解 SIEM server 与 Microsoft 365 集成的概述。'
-ms.openlocfilehash: 75fbfa45288d30363d36ad5046cd46127b0af777
-ms.sourcegitcommit: c7989a8ead235aaebb2503abbde598f2c26c0056
+ms.openlocfilehash: f1911aabaccb7a6c2a56bbd5ff37e396730db72a
+ms.sourcegitcommit: 0d5a863f48914eeaaf29f7d2a2022618de186247
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/14/2019
-ms.locfileid: "33979438"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "34077518"
 ---
 # <a name="siem-server-integration-with-microsoft-365-services-and-applications"></a>SIEM server 与 Microsoft 365 服务和应用程序的集成
 

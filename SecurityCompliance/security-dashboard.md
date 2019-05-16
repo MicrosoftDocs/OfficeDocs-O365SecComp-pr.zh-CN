@@ -4,7 +4,7 @@ ms.author: deniseb
 author: denisebmsft
 manager: laurawi
 ms.date: 03/19/2019
-ms.audience: ITPro
+audience: ITPro
 ms.topic: overview
 ms.service: O365-seccomp
 localization_priority: Normal
@@ -15,12 +15,12 @@ ms.assetid: fe0b9b8f-faa9-44ff-8095-4d1b2f507b74
 ms.collection:
 - M365-security-compliance
 description: 使用新的安全仪表板查看 Office 365 的威胁防护状态, 查看安全警报并对其采取操作。
-ms.openlocfilehash: 83e75f1a38038f1c95697f4db3e7b1134d03779d
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: 46f11a4e5693cf243ff72acd6d87406c34af247a
+ms.sourcegitcommit: 0d5a863f48914eeaaf29f7d2a2022618de186247
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32261054"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "34077218"
 ---
 # <a name="security-dashboard"></a>安全仪表板
 
@@ -45,12 +45,12 @@ ms.locfileid: "32261054"
 
 ![安全仪表板-威胁管理摘要小部件](media/SecDash-ThreatMgmtSummary.png)
 
-您在威胁管理摘要中看到的信息取决于订阅所包含的内容。 下表介绍了 Office 365 企业版 E3 和 office 365 企业版 E5 中包含的信息。
+您在威胁管理摘要中看到的信息取决于订阅所包含的内容。 下表介绍了 Office 365 企业版 E3 和 Office 365 企业版 E5 中包含的信息。
 
 
 |Office 365 企业版 E3  |Office 365 企业版 E5  |
 |---------|---------|
-|阻止的恶意软件邮件<br/>阻止的仿冒邮件<br>用户报告的邮件<br><br><br><br> |阻止的恶意软件邮件<br>阻止的仿冒邮件<br>用户报告的邮件<br>已阻止零天恶意软件<br>检测到高级网络钓鱼邮件<br>阻止的恶意 url |
+|阻止的恶意软件邮件<br/>阻止的仿冒邮件<br>用户报告的邮件<br><br><br><br> |阻止的恶意软件邮件<br>阻止的仿冒邮件<br>用户报告的邮件<br>已阻止零天恶意软件<br>检测到高级网络钓鱼邮件<br>阻止的恶意 Url |
 
 若要查看或访问 "威胁管理摘要" 小部件, 您必须具有查看高级威胁防护报告的权限。 若要了解详细信息, 请参阅[查看 ATP 报告所需的权限？](view-reports-for-atp.md#what-permissions-are-needed-to-view-the-atp-reports)。 
 
@@ -60,7 +60,7 @@ ms.locfileid: "32261054"
 
 ![威胁防护状态小部件](media/tpswidget.png)
 
-详细信息取决于 office 365 订阅是否包含具有或不包含[office 365 高级威胁防护](office-365-atp.md)(ATP) 的[Exchange Online Protection](eop/exchange-online-protection-eop.md) (EOP)。
+详细信息取决于 Office 365 订阅是否包含具有或不包含[office 365 高级威胁防护](office-365-atp.md)(ATP) 的[Exchange Online Protection](eop/exchange-online-protection-eop.md) (EOP)。
 
 
 |如果你的订阅包括 .。。 |你将看到这些详细信息 |
@@ -112,7 +112,7 @@ ms.locfileid: "32261054"
   
 ![趋势部分汇总了组织的电子邮件流趋势](media/trends.png)
   
-如果组织的 office 365 订阅包括[office 365 高级威胁防护计划 2](office-365-ti.md), 您还将在此部分中添加一个**最近的威胁管理警报**报告, 使安全团队能够查看并对其执行操作高优先级的安全警报。 
+如果组织的 Office 365 订阅包括[office 365 高级威胁防护计划 2](office-365-ti.md), 您还将在此部分中添加一个**最近的威胁管理警报**报告, 使安全团队能够查看并对其执行操作高优先级的安全警报。 
 
 若要查看或访问已发送和已接收的电子邮件小组件, 您必须具有查看高级威胁防护报告的权限。 若要了解详细信息, 请参阅[查看 ATP 报告所需的权限？](view-reports-for-atp.md#what-permissions-are-needed-to-view-the-atp-reports)。 
 

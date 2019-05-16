@@ -3,7 +3,7 @@ title: 设置 Office 365 ATP 反网络钓鱼策略
 ms.author: tracyp
 author: MSFTTracyP
 manager: laurawi
-ms.audience: ITPro
+audience: ITPro
 ms.topic: article
 ms.date: 02/06/2019
 ms.service: O365-seccomp
@@ -11,13 +11,13 @@ localization_priority: Normal
 ms.assetid: 5a6f2d7f-d998-4f31-b4f5-f7cbf6f38578
 ms.collection:
 - M365-security-compliance
-description: 在 office 365 Exchange Online protection 的 office 365 高级威胁防护和基本保护中具有全面保护的反网络钓鱼保护, 可帮助保护您的组织免受基于模拟的恶意网络钓鱼攻击和其他网络钓鱼攻击。
-ms.openlocfilehash: 4a647463dd37261cfa1f4c2fd2901ed8f12902b7
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+description: 在 office 365 Exchange Online Protection 的 Office 365 高级威胁防护和基本保护中具有全面保护的反网络钓鱼保护, 可帮助保护您的组织免受基于模拟的恶意网络钓鱼攻击和其他网络钓鱼攻击。
+ms.openlocfilehash: cabcc4ab6401f2ebfdbf0c849df4da6a7691b6b8
+ms.sourcegitcommit: 0d5a863f48914eeaaf29f7d2a2022618de186247
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32266961"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "34077208"
 ---
 # <a name="set-up-office-365-atp-anti-phishing-and-anti-phishing-policies"></a>设置 Office 365 ATP 反网络钓鱼和反网络钓鱼策略
 
@@ -26,55 +26,55 @@ ms.locfileid: "32266961"
 网络钓鱼攻击采用来自基于商品的攻击的各种形式, 以供目标 spear 网络钓鱼或 whaling。 随着复杂程度的增加, 甚至很难确定其中一些复杂的攻击。 幸运的是, Office 365 高级威胁防护可能会有所帮助。 您可以设置 ATP 反网络钓鱼策略, 以帮助确保您的组织受到此类攻击的保护。
   
 > [!NOTE]
-> ATP 反网络钓鱼仅在高级威胁防护 (ATP) 中可用。 在订阅中包含 ATP, 如[microsoft 365 企业版](https://www.microsoft.com/microsoft-365/enterprise/home)、 [microsoft 365 商业](https://www.microsoft.com/microsoft-365/business)版、office 365 企业版 E5、office 365 教育版 A5 等。如果您的组织有一个不包含 office 365 ATP 的 office 365 订阅, 则可能会将 ATP 作为加载项进行购买。 有关详细信息, 请参阅[office 365 高级威胁防护计划和定价](https://products.office.com/exchange/advance-threat-protection)和[Office 365 高级威胁防护服务说明](https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description)。 确保您的组织在 Windows 上使用最新版本的 Office 365 专业增强版, 以充分利用 ATP 反钓鱼保护。 
+> ATP 反网络钓鱼仅在高级威胁防护 (ATP) 中可用。 ATP 包含在订阅中, 例如[microsoft 365 企业版](https://www.microsoft.com/microsoft-365/enterprise/home)、 [Microsoft 365 商业](https://www.microsoft.com/microsoft-365/business)版、Office 365 企业版 E5、Office 365 教育版 A5 等。如果您的组织有一个不包含 Office 365 ATP 的 Office 365 订阅, 则可能会将 ATP 作为加载项进行购买。 有关详细信息, 请参阅[office 365 高级威胁防护计划和定价](https://products.office.com/exchange/advance-threat-protection)和[Office 365 高级威胁防护服务说明](https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description)。 确保您的组织在 Windows 上使用最新版本的 Office 365 专业增强版, 以充分利用 ATP 反钓鱼保护。 
 
-反网络钓鱼策略也可用于 Office 365 Exchange Online protection, 这是一组有限的反欺骗保护, 旨在防止基于身份验证的攻击和基于 deception 的攻击。
+反网络钓鱼策略也可用于 Office 365 Exchange Online Protection, 这是一组有限的反欺骗保护, 旨在防止基于身份验证的攻击和基于 deception 的攻击。
   
 要执行的操作:
   
 1. 查看先决条件。
-    
+
 2. 了解反网络钓鱼和 ATP 反网络钓鱼策略选项。
-    
+
 3. 设置反网络钓鱼策略或 ATP 反网络钓鱼策略。
-    
+
 ## <a name="review-the-prerequisites"></a>查看先决条件
 
-- 若要定义 (或编辑) ATP 策略, 必须为您分配适当的角色。 下表介绍了一些示例: <br>
+- 若要定义 (或编辑) ATP 策略, 必须为您分配适当的角色。 下表介绍了一些示例:
 
     |Role  |分配的位置/方式  |
     |---------|---------|
     |Office 365 全局管理员 |默认情况下, 注册购买 Office 365 的人是全局管理员。 (请参阅[关于 Office 365 管理员角色](https://docs.microsoft.com/office365/admin/add-users/about-admin-roles)以了解详细信息。)         |
     |Security Administrator |Azure Active Directory 管理中心 ([https://aad.portal.azure.com](https://aad.portal.azure.com))|
     |Exchange Online 组织管理 |Exchange 管理中心 ([https://outlook.office365.com/ecp](https://outlook.office365.com/ecp)) <br>或 <br>  PowerShell cmdlet (请参阅[Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/exchange-online-powershell?view=exchange-ps)) |
-    
+
     若要了解有关角色和权限的详细信息, 请参阅[Office 365 &amp;安全合规中心中的权限](permissions-in-the-security-and-compliance-center.md)。
 
 - 你可能会为你的组织设置多个反网络钓鱼策略。 Office 365 按照安全&amp;合规性中心中的 "**反仿冒页面**" 和 " **ATP 反网络钓鱼**" 页面上列出的顺序强制实施这些策略。 查看[策略选项](#learn-about-atp-anti-phishing-policy-options)之后, 请花些时间来确定所需的策略数以及每个策略的优先级。 
-    
+
 - 计划花大约5-15 分钟来设置第一次反网络钓鱼策略。
-    
+
 - 最长允许30分钟, 新的或更新的策略将传播到所有的 Office 365 数据中心。
-    
+
 ## <a name="set-up-an-anti-phishing-or-atp-anti-phishing-policy"></a>设置反网络钓鱼或 ATP 反网络钓鱼策略
 
 Office 365 中的每个组织都有一个适用于所有用户的默认反网络钓鱼策略。 您可以创建多个自定义反网络钓鱼策略, 您可以将其限定为组织中的特定用户、组或域。 您创建的自定义策略优先于默认策略。 您可以在 Office 365 安全&amp;合规中心中添加、编辑和删除反网络钓鱼策略。
   
 1. 转到[https://protection.office.com](https://protection.office.com)并使用你的工作或学校帐户登录。 
-    
+
 2. 在 "Office 365 安全&amp;合规中心" 的左侧导航窗格中的 "**威胁管理**" 下, 选择 "**策略**"。
-    
+
 3. 在 "**策略**" 页上, 选择 "**反网络钓鱼**" 或 " **ATP 反网络钓鱼**"。
-    
-4. 在 "**反钓鱼**或**ATP 反钓鱼诈骗**" 页面上, 执行下列操作之一: 
-    
+
+4. 在 "**反钓鱼**或**ATP 反钓鱼诈骗**" 页面上, 执行下列操作之一:
+
     - 若要添加新策略, 请选择 " **+ 创建**"。
     - 若要编辑现有策略, 请从 "**反网络钓鱼**" 页上显示的列表中选择策略名称。 (或者, 您可以或选择列表上方的 "**默认策略**"。)在出现的页面上, 选择 "**编辑策略**"。  
-    
+
 5. 指定策略的名称、说明和设置。 有关详细信息, 请参阅[了解 ATP 反网络钓鱼策略选项](#learn-about-atp-anti-phishing-policy-options)。 
-    
-6. 查看设置后, 选择 "**创建此策略**" (或 "**保存**")。 
-    
+
+6. 查看设置后, 选择 "**创建此策略**" (或 "**保存**")。
+
 ## <a name="learn-about-atp-anti-phishing-policy-options"></a>了解 ATP 反网络钓鱼策略选项
 
 当您设置或编辑 ATP 反网络钓鱼策略时, 您可以从提供最完善和全面保护的多个选项中进行选择, 如下表所述:
@@ -88,8 +88,8 @@ Office 365 中的每个组织都有一个适用于所有用户的默认反网络
 |**添加受信任的发件人和域** <br/> |定义将不被此策略视为 impersonations 的电子邮件地址和域。 来自作为受信任的发件人和域添加的发件人电子邮件地址和域中的邮件不会被分类为基于模拟的攻击。 因此, 此策略中的操作和设置不会应用于来自这些发件人和域的邮件。  <br/> |当用户与触发模拟但被视为安全的域或用户进行交互时。 例如, 如果合作伙伴与列表中定义的用户具有相同/类似的显示名称或域名。  <br/> |
 |**应用于** <br/> |定义其传入电子邮件将受策略规则制约的收件人。 您可以为与该策略相关联的收件人创建条件和例外。  <br/> 例如, 您可以通过将规则应用于域中的所有收件人来为您的组织创建全局策略。  <br/> 您还可以创建例外规则, 如不扫描特定收件人组的电子邮件的规则。  <br/> |每个策略都必须与一组用户 (例如, 特定组或域中的用户) 相关联。  <br/> |
 |**高级网络钓鱼阈值** <br/> |定义处理网络钓鱼邮件的方式的设置级别。  <br/> **Standard**怀疑为网络钓鱼的电子邮件是按照标准方式处理的。  <br/> **主动**如果怀疑电子邮件的网络钓鱼是高或极高的可信度, 系统将以相同的方式处理这些电子邮件。  <br/> **更主动**如果怀疑电子邮件是以中等、高或极高的置信度进行网络钓鱼, 则将以相同的方式处理系统。  <br/> **最积极**如果怀疑电子邮件的网络钓鱼是低、中、高或极高的可信度, 则由系统以相同的方式处理。  <br/> |当您希望更积极地处理 Office 365 中可能存在的网络钓鱼邮件时。 例如, 具有较高的网络钓鱼的邮件将会对其执行最严格的操作, 而概率较低的邮件则对其执行的操作较少。 此设置还会影响将信号组合在一起的筛选系统的其他部分。 随着设置级别的增加, 移动好邮件的可能性也会增加。  <br/>|
-   
-## <a name="learn-about-anti-phishing-policy-options"></a>了解反网络钓鱼策略选项 
+
+## <a name="learn-about-anti-phishing-policy-options"></a>了解反网络钓鱼策略选项
 
 在设置或编辑反网络钓鱼时, 可以从多个选项中进行选择, 如下表所述: 
 
@@ -105,11 +105,11 @@ Office 365 中的每个组织都有一个适用于所有用户的默认反网络
 本示例将设置名为 "Domain 和 CEO" 的策略, 该策略提供模拟的用户和域保护, 然后将该策略应用于域`contoso.com`中用户接收的所有电子邮件。 安全管理员已确定策略必须满足以下业务要求:
   
 - 策略需要为 CEO 的电子邮件帐户和整个域提供保护。
-    
+
 - 确定为对 CEO 的用户帐户进行模拟尝试的邮件需要重定向到安全管理员的电子邮件地址。
-    
+
 - 确定为对域进行模拟尝试的邮件不太紧急, 应进行隔离, 以便日后复查。
-    
+
 Contoso 的安全管理员可能会使用如下所示的值, 以便创建满足这些需求的反网络钓鱼策略。
   
 |||
@@ -123,27 +123,27 @@ Contoso 的安全管理员可能会使用如下所示的值, 以便创建满足�
 |邮箱智能  <br/> |默认情况下, 当您创建新的反网络钓鱼策略时, 将选择邮箱智能。 将此设置保留为 **"开"** 以获得最佳效果。  <br/> |
 |添加受信任的发件人和域  <br/> |对于此示例, 不要定义任何替代。  <br/> |
 |应用于  <br/> |选择 **"收件人域"**。 在**以下任一情况**下, 选择 "**选择**"。 选择 " **+ 添加**"。 选中域的名称旁边的复选框, 例如, `contoso.com`在列表中, 然后选择 "**添加**"。 选择 "**完成**"。  <br/> |
-   
+
 ## <a name="delete-an-anti-phishing-or-atp-anti-phishing-policy"></a>删除反网络钓鱼或 ATP 反网络钓鱼策略
 
 您可以使用安全&amp;合规性中心删除您创建的自定义策略。 您不能删除您的组织的默认策略。 我们建议使用安全&amp;合规性中心来查看或编辑任何 ATP 策略。
   
-1. 转到[https://protection.office.com](https://protection.office.com)并使用你的工作或学校帐户登录。 
-    
+1. 转到[https://protection.office.com](https://protection.office.com)并使用你的工作或学校帐户登录。
+
 2. 在左侧导航中的 "**威胁管理**" 下, 选择 "**策略**"。
-    
+
 3. 在 "**策略**" 页上, 选择 "**反网络钓鱼**" 或 " **ATP 反网络钓鱼**"。
-    
+
 4. 在 "**反钓鱼**或**ATP 反网络钓鱼**" 页面上, 从列表中选择策略名称。
 
 5. 在出现的页面上, 选择 "**删除策略**"。 允许最长30分钟的更改传播到所有的 Office 365 数据中心。
-    
 
 ## <a name="next-steps"></a>后续步骤
 
 反网络钓鱼策略准备就绪后, 可以查看报告, 了解您的威胁防护功能是如何为您的组织工作的。 若要了解详细信息, 请参阅以下资源:
+
 - [查看 Office 365 高级威胁防护报告](view-reports-for-atp.md)或[查看电子邮件安全报告](view-email-security-reports.md)
+
 - [使用资源管理器 (也称为威胁资源管理器)](use-explorer-in-security-and-compliance.md)
 
 继续在新功能的前面提供 ATP。 访问[Microsoft 365 路线图](https://www.microsoft.com/microsoft-365/roadmap?filters=O365)并了解要[添加到 ATP 的新功能](office-365-atp.md#new-features-in-office-365-atp)。
- 

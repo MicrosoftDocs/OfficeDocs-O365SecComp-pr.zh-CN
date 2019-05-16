@@ -4,7 +4,7 @@ ms.author: deniseb
 author: denisebmsft
 manager: laurawi
 ms.date: 03/05/2019
-ms.audience: ITPro
+audience: ITPro
 ms.topic: overview
 ms.service: O365-seccomp
 localization_priority: Normal
@@ -15,19 +15,19 @@ ms.assetid: da5845db-c578-4a41-b2cb-5a09689a551b
 ms.collection:
 - M365-security-compliance
 description: 作为 Office 365 全局管理员, 你可以使用攻击模拟器在你的组织中运行实际的攻击方案。 这可帮助你在真正的攻击击中你的业务之前识别和查找易受攻击的用户。
-ms.openlocfilehash: 88e71fe2db0ed9149ab84bb99e8b04910afdc265
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: a39259cdcc47e2c881b3977aa570b1f221f0b2bd
+ms.sourcegitcommit: 0d5a863f48914eeaaf29f7d2a2022618de186247
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32249686"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "34077618"
 ---
 # <a name="attack-simulator-in-office-365"></a>Office 365 中的攻击模拟器
 
-**摘要**如果您是 office 365 全局管理员, 并且您的组织具有[office 365 威胁调查和响应功能](office-365-ti.md), 则可以使用攻击模拟器在您的组织中运行实际的攻击方案。 这可以帮助您识别和查找易受攻击的用户, 在真正的攻击影响你的底线之前。 阅读本文以了解详细信息。
+**摘要**如果您是 Office 365 全局管理员, 并且您的组织具有[office 365 威胁调查和响应功能](office-365-ti.md), 则可以使用攻击模拟器在您的组织中运行实际的攻击方案。 这可以帮助您识别和查找易受攻击的用户, 在真正的攻击影响你的底线之前。 阅读本文以了解详细信息。
 
 > [!IMPORTANT]
-> office 365 高级威胁防护和威胁调查和响应 (以前称为威胁智能) 现在是 Office 365 高级威胁防护计划2的一部分, 其中包含额外的威胁防护功能。 若要了解详细信息, 请参阅[office 365 高级威胁防护计划和定价](https://products.office.com/exchange/advance-threat-protection)以及[Office 365 高级威胁防护服务说明](https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description)。
+> Office 365 高级威胁防护和威胁调查和响应 (以前称为威胁智能) 现在是 Office 365 高级威胁防护计划2的一部分, 其中包含额外的威胁防护功能。 若要了解详细信息, 请参阅[office 365 高级威胁防护计划和定价](https://products.office.com/exchange/advance-threat-protection)以及[Office 365 高级威胁防护服务说明](https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description)。
   
 ## <a name="the-attacks"></a>攻击
 
@@ -79,9 +79,9 @@ ms.locfileid: "32249686"
     
 5. 指定 "**发件人" (名称)** 域的文本。 这是在接收电子邮件客户端的**显示名称**中显示的字段。 
     
-6. 指定文本或 "**发件人**" 字段。 这是在接收电子邮件客户端中显示为发件人的电子邮件地址的字段。 <br/>您可以在组织中输入现有的电子邮件命名空间 (这样做将使电子邮件地址在接收客户端中实际解析, 从而便于实现非常高的信任模型), 也可以输入外部电子邮件地址。 您指定的电子邮件地址不一定确实存在, 但需要遵循有效 SMTP 地址的格式, 例如, 用户 @ domainname. 扩展名。 
+6. 指定文本或 "**发件人**" 字段。 这是在接收电子邮件客户端中显示为发件人的电子邮件地址的字段。 <br/>您可以在组织中输入现有的电子邮件命名空间 (这样做将使电子邮件地址在接收客户端中实际解析, 从而便于实现非常高的信任模型), 也可以输入外部电子邮件地址。 您指定的电子邮件地址不一定确实存在, 但需要遵循有效 SMTP 地址的格式, 例如, 用户 @ domainname。扩展名。 
   
-7. 使用下拉选择器, 选择一个网络钓鱼登录服务器 URL, 该 URL 反映你将在攻击中遇到的内容的类型。 提供了多个主题 url 供您选择, 例如文档交付、技术、工资等。实际上, 这是要求目标用户单击的 URL。
+7. 使用下拉选择器, 选择一个网络钓鱼登录服务器 URL, 该 URL 反映你将在攻击中遇到的内容的类型。 提供了多个主题 Url 供您选择, 例如文档交付、技术、工资等。实际上, 这是要求目标用户单击的 URL。
     
 8. 指定自定义登陆页面 URL。 使用此将会将用户重定向到成功攻击结束时指定的 URL。 例如, 如果您具有内部意识培训, 可以在此处指定。
     

@@ -3,7 +3,7 @@ title: 创建关键字词典
 ms.author: deniseb
 author: denisebmsft
 manager: laurawi
-ms.audience: Admin
+audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 ms.date: 04/11/2019
@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 标识敏感信息有时需要查找关键字，尤其是在标识通用内容（如与医疗保健相关的通信）或不当/露骨语言时。虽然可以在敏感信息类型中创建关键字列表，但关键字列表的大小受限，且必须修改 XML 才能创建或编辑它们。借助关键字词典，可以更大规模地轻松管理关键字（每个词典最多支持 100,000 个关键字）。
-ms.openlocfilehash: 142f471d80c7278cabd4c437f0ae0ee9af3ff219
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: 9fcd1504104f367d177d0cc835736d728f36c277
+ms.sourcegitcommit: 0d5a863f48914eeaaf29f7d2a2022618de186247
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32258160"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "34077568"
 ---
 # <a name="create-a-keyword-dictionary"></a>创建关键字词典
 

@@ -4,7 +4,7 @@ ms.author: deniseb
 author: denisebmsft
 manager: laurawi
 ms.date: 3/21/2018
-ms.audience: Admin
+audience: Admin
 ms.topic: article
 f1_keywords:
 - ms.o365.cc.UnifiedDLPRuleNotifyUser
@@ -16,12 +16,12 @@ search.appverid:
 - MOE150
 - MET150
 description: '策略提示是当有人使用与 DLP 策略冲突的内容时显示的通知或警告。 您可以使用电子邮件通知和策略提示来提高知名度并帮助人们了解组织的策略。 您还可以为用户提供替代策略的选项, 以便它们不会被阻止, 如果他们具有有效的业务需求, 或者如果策略检测到误报也是如此。 '
-ms.openlocfilehash: b598b665de3d45846e221ea4c1b5c2f49a659c6b
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: 487d3704b471b10ec876b0df3022d33d13583763
+ms.sourcegitcommit: 0d5a863f48914eeaaf29f7d2a2022618de186247
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32263844"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "34077358"
 ---
 # <a name="send-email-notifications-and-show-policy-tips-for-dlp-policies"></a>发送电子邮件通知并显示 DLP 策略的策略提示
 
@@ -29,7 +29,7 @@ ms.locfileid: "32263844"
   
 ![消息栏在 Excel 2016 中显示策略提示](media/7002ff54-1656-4a6c-993f-37427d6508c8.png)
   
-策略提示是当有人使用与 DLP 策略冲突的内容 (例如, 包含个人身份信息 (PII) 的 OneDrive for business 网站上的 Excel 工作簿等内容) 时显示的通知或警告。与外部用户共享。
+策略提示是当有人使用与 DLP 策略冲突的内容 (例如, 包含个人身份信息 (PII) 的 OneDrive for Business 网站上的 Excel 工作簿等内容) 时显示的通知或警告。与外部用户共享。
   
 您可以使用电子邮件通知和策略提示来提高知名度并帮助人们了解组织的策略。 您还可以为用户提供替代策略的选项, 以便它们不会被阻止, 如果他们具有有效的业务需求, 或者如果策略检测到误报也是如此。
   
@@ -39,7 +39,7 @@ ms.locfileid: "32263844"
     
 - 显示与 DLP 策略冲突的内容的策略提示:
     
-  - 对于 web 上的 outlook 和 outlook 2013 及更高版本中的电子邮件, 策略提示将显示在撰写邮件的收件人上方的邮件的顶部。
+  - 对于 web 上的 Outlook 和 Outlook 2013 及更高版本中的电子邮件, 策略提示将显示在撰写邮件的收件人上方的邮件的顶部。
     
   - 对于 OneDrive for business 帐户或 SharePoint Online 网站中的文档, 策略提示由显示在项目上的警告图标指示。 若要查看详细信息, 可以选择一个项目, 然后在****![页面的右上角](media/50b6d51b-92b4-4c5f-bb4b-4ca2d4aa3d04.png)选择 "信息信息窗格" 图标以打开 "详细信息" 窗格。 
     
@@ -116,9 +116,9 @@ ms.locfileid: "32263844"
 
 |**标记**|**说明**|
 |:-----|:-----|
-|%% AppliedActions%%  <br/> |应用于内容的操作。  <br/> |
+|%%AppliedActions%%  <br/> |应用于内容的操作。  <br/> |
 |%% ContentURL%%  <br/> |SharePoint Online 网站或 OneDrive for business 网站上的文档的 URL。  <br/> |
-|%% MatchedConditions%%  <br/> |内容所匹配的条件。 使用此令牌可告知用户可能存在的内容问题。  <br/> |
+|%%MatchedConditions%%  <br/> |内容所匹配的条件。 使用此令牌可告知用户可能存在的内容问题。  <br/> |
    
 ![显示令牌显示位置的通知消息](media/cd3f36b3-40db-4f30-99e4-190750bd1955.png)
   
@@ -136,7 +136,7 @@ ms.locfileid: "32263844"
     
 ![策略提示选项](media/0d2f2c68-028a-4900-afe6-1d9fce5303ef.png)
   
-例如, 您可以将 DLP 策略应用于检测个人身份信息 (PII) 的 OneDrive for business 网站, 并且此策略具有三个规则:
+例如, 您可以将 DLP 策略应用于检测个人身份信息 (PII) 的 OneDrive for Business 网站, 并且此策略具有三个规则:
   
 1. 第一个规则：如果在文档中检测到包含此敏感信息的实例少于五个，并且该文档与组织内部的人员共享，则“发送通知”**** 操作将显示策略提示。对于策略提示，无需提供任何替换选项，因为此规则只是通知相关人员，但不会阻止访问。 
     
@@ -186,9 +186,9 @@ ms.locfileid: "32263844"
 
 您可以独立于电子邮件通知自定义策略提示的文本。 与电子邮件通知的自定义文本不同 (请参阅上文) 时, 策略提示的自定义文本不接受 HTML 或标记。 相反, 策略提示的自定义文本是纯文本, 只有256个字符的限制。
   
-## <a name="policy-tips-in-outlook-on-the-web-and-outlook-2013-and-later"></a>outlook 网页和 outlook 2013 及更高版本中的策略提示
+## <a name="policy-tips-in-outlook-on-the-web-and-outlook-2013-and-later"></a>Outlook 网页和 Outlook 2013 及更高版本中的策略提示
 
-在 web 上的 outlook 和 outlook 2013 及更高版本中撰写新电子邮件时, 如果添加了与 DLP 策略中的规则匹配的内容, 并且该规则使用策略提示, 则会看到策略提示。 在撰写邮件时, 策略提示将显示在邮件顶部的收件人上方。
+在 web 上的 Outlook 和 Outlook 2013 及更高版本中撰写新电子邮件时, 如果添加了与 DLP 策略中的规则匹配的内容, 并且该规则使用策略提示, 则会看到策略提示。 在撰写邮件时, 策略提示将显示在邮件顶部的收件人上方。
   
 ![正在撰写的邮件顶部的策略提示](media/9b3b6b74-17c5-4562-82d5-d17ecaaa8d95.png)
   
@@ -225,7 +225,7 @@ ms.locfileid: "32263844"
   
 ### <a name="policy-tips-in-the-exchange-admin-center-vs-the-office-365-security-amp-compliance-center"></a>Exchange 管理中心中的策略提示与 Office 365 安全&amp;合规中心
 
-策略提示可使用在 Exchange 管理中心中创建的 dlp 策略和邮件流规则, 或使用在 Office 365 安全&amp;合规中心中创建的 dlp 策略, 但不能同时使用这两种策略。 这是因为这些策略存储在不同的位置, 但策略提示只能从一个位置进行绘制。
+策略提示可使用在 Exchange 管理中心中创建的 DLP 策略和邮件流规则, 或使用在 Office 365 安全&amp;合规中心中创建的 dlp 策略, 但不能同时使用这两种策略。 这是因为这些策略存储在不同的位置, 但策略提示只能从一个位置进行绘制。
   
 如果已在 Exchange 管理中心中配置了策略提示, 则在 Office 365 安全&amp;合规中心中配置的任何策略提示都不会显示在 outlook 网页和 outlook 2013 及更高版本的 outlook 中, 直到您关闭 Exchange 中的提示。管理中心。 这样可确保当前的 Exchange 邮件流规则 (也称为传输规则) 在您选择切换到 "Office 365 安全&amp;合规中心" 之前仍有效。
   

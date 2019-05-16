@@ -4,7 +4,7 @@ ms.author: deniseb
 author: denisebmsft
 manager: laurawi
 ms.date: 6/29/2018
-ms.audience: Admin
+audience: Admin
 search.appverid: MET150
 ms.topic: reference
 f1_keywords:
@@ -14,14 +14,14 @@ localization_priority: Normal
 ms.collection:
 - M365-security-compliance
 description: Office 365 安全&amp;合规中心中的数据丢失防护 (DLP) 包括可供您在 DLP 策略中使用的80敏感信息类型。 本主题列出了所有这些敏感信息类型，并显示 DLP 策略在检测到每种类型时查找的内容。
-ms.openlocfilehash: d161435c75149183289cfbfd6abe79d55e371e31
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: dc2958af5b64f9e9318faab5d55ed340404f1857
+ms.sourcegitcommit: 0d5a863f48914eeaaf29f7d2a2022618de186247
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32266868"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "34077548"
 ---
-# <a name="what-the-sensitive-information-types-look-for"></a>敏感信息类型查找的内容
+# <a name="what-the-sensitive-information-types-look-for"></a>使用敏感信息类型查找什么
 
 Office 365 安全&amp;合规中心中的数据丢失防护 (DLP) 包括许多可供您在 DLP 策略中使用的敏感信息类型。 本主题列出了所有这些敏感信息类型，并显示 DLP 策略在检测到每种类型时查找的内容。 敏感信息类型通过正则表达式或函数可以识别的模式定义。 此外，关键字和校验和等确凿的证据可用于识别敏感信息类型。 可信度和相似度也会在评估过程中使用。
   
@@ -72,15 +72,15 @@ Office 365 安全&amp;合规中心中的数据丢失防护 (DLP) 包括许多可
 - aba routing #
 - aba routing number
 - aba
-- abarouting #
+- abarouting#
 - aba number
 - abaroutingnumber
 - american bank association routing #
 - american bank association routing number
-- americanbankassociationrouting #
+- americanbankassociationrouting#
 - americanbankassociationroutingnumber
 - bank routing number
-- bankrouting #
+- bankrouting#
 - bankroutingnumber
 - routing transit number
 - RTN 
@@ -279,34 +279,34 @@ OR
 - Driver's Lics
 - Driver's Licence
 - Driver's Licences
-- DriverLic #
-- DriverLics #
-- DriverLicence #
-- DriverLicences #
+- DriverLic#
+- DriverLics#
+- DriverLicence#
+- DriverLicences#
 - Driver Lic#
 - Driver Lics#
 - Driver Licence#
 - Driver Licences#
-- DriversLic #
-- DriversLics #
-- DriversLicence #
-- DriversLicences #
+- DriversLic#
+- DriversLics#
+- DriversLicence#
+- DriversLicences#
 - Drivers Lic#
 - Drivers Lics#
 - Drivers Licence#
 - Drivers Licences#
-- Driver'Lic #
-- Driver'Lics #
-- Driver'Licence #
-- Driver'Licences #
+- Driver'Lic#
+- Driver'Lics#
+- Driver'Licence#
+- Driver'Licences#
 - Driver' Lic#
 - Driver' Lics#
 - Driver' Licence#
 - Driver' Licences#
-- Driver'sLic #
-- Driver'sLics #
-- Driver'sLicence #
-- Driver'sLicences #
+- Driver'sLic#
+- Driver'sLics#
+- Driver'sLicence#
+- Driver'sLicences#
 - Driver's Lic#
 - Driver's Lics#
 - Driver's Licence#
@@ -331,20 +331,20 @@ OR
 - Driver'sLicenses
 - Driver's License
 - Driver's Licenses
-- DriverLicense #
-- DriverLicenses #
+- DriverLicense#
+- DriverLicenses#
 - Driver License#
 - Driver Licenses#
-- DriversLicense #
-- DriversLicenses #
+- DriversLicense#
+- DriversLicenses#
 - Drivers License#
 - Drivers Licenses#
-- Driver'License #
-- Driver'Licenses #
+- Driver'License#
+- Driver'Licenses#
 - Driver' License#
 - Driver' Licenses#
-- Driver'sLicense #
-- Driver'sLicenses #
+- Driver'sLicense#
+- Driver'sLicenses#
 - Driver's License#
 - Driver's Licenses#
    
@@ -462,7 +462,7 @@ OR
 - Passeport n °
 - Passeport Non
 - Passeport #
-- Passeport #
+- Passeport#
 - PasseportNon
 - Passeportn °
 
@@ -616,25 +616,25 @@ OR
 - onebox
 - localhost
 - 127.0.0。1
-- testacs。<!--no-hyperlink-->com
+- testacs.<!--no-hyperlink-->com
 - s-int。<!--no-hyperlink-->netmeeting
 
-## <a name="azure-iaas-database-connection-string-and-azure-sql-connection-string"></a>azure IAAS 数据库连接字符串和 azure SQL 连接字符串
+## <a name="azure-iaas-database-connection-string-and-azure-sql-connection-string"></a>Azure IAAS 数据库连接字符串和 Azure SQL 连接字符串
 
 ### <a name="format"></a>Format
 
-字符串 "server"、"server" 或 "data source", 后跟下面模式中所述的字符和字符串, 包括字符串 "cloudapp"。<!--no-hyperlink-->com "或" cloudapp "。<!--no-hyperlink-->net "或" database。<!--no-hyperlink-->net "和字符串" password "或" password "或" pwd "。
+字符串 "Server"、"server" 或 "data source", 后跟下面模式中所述的字符和字符串, 包括字符串 "cloudapp"。<!--no-hyperlink-->com "或" cloudapp "。<!--no-hyperlink-->net "或" database。<!--no-hyperlink-->net "和字符串" Password "或" password "或" pwd "。
 
 ### <a name="pattern"></a>模式
 
-- 字符串 "server"、"server" 或 "data source"
+- 字符串 "Server"、"server" 或 "data source"
 - 0-2 空白字符
 - 等号 (=)
 - 0-2 空白字符
 - 介于1-200 个字母、数字、符号、特殊字符或空格之间的任意组合
 - 字符串 "cloudapp"。<!--no-hyperlink-->com "," cloudapp。<!--no-hyperlink-->net "或" database。<!--no-hyperlink-->netmeeting
 - 介于1-300 个字母、数字、符号、特殊字符或空格之间的任意组合
-- 字符串 "password"、"password" 或 "pwd"
+- 字符串 "Password"、"password" 或 "pwd"
 - 0-2 空白字符
 - 等号 (=)
 - 0-2 空白字符
@@ -676,7 +676,7 @@ OR
 - onebox
 - localhost
 - 127.0.0。1
-- testacs。<!--no-hyperlink-->com
+- testacs.<!--no-hyperlink-->com
 - s-int。<!--no-hyperlink-->netmeeting
 
 ## <a name="azure-iot-connection-string"></a>Azure IoT 连接字符串
@@ -736,7 +736,7 @@ OR
 - onebox
 - localhost
 - 127.0.0。1
-- testacs。<!--no-hyperlink-->com
+- testacs.<!--no-hyperlink-->com
 - s-int。<!--no-hyperlink-->netmeeting
 
 ## <a name="azure-publish-setting-password"></a>Azure 发布设置密码
@@ -787,7 +787,7 @@ OR
 - onebox
 - localhost
 - 127.0.0。1
-- testacs。<!--no-hyperlink-->com
+- testacs.<!--no-hyperlink-->com
 - s-int。<!--no-hyperlink-->netmeeting
 
 ## <a name="azure-redis-cache-connection-string"></a>Azure Redis 缓存连接字符串
@@ -842,10 +842,10 @@ OR
 - onebox
 - localhost
 - 127.0.0。1
-- testacs。<!--no-hyperlink-->com
+- testacs.<!--no-hyperlink-->com
 - s-int。<!--no-hyperlink-->netmeeting
 
-## <a name="azure-sas"></a>Azure sa
+## <a name="azure-sas"></a>Azure SA
 
 ### <a name="format"></a>Format
 
@@ -936,7 +936,7 @@ OR
 - onebox
 - localhost
 - 127.0.0。1
-- testacs。<!--no-hyperlink-->com
+- testacs.<!--no-hyperlink-->com
 - s-int。<!--no-hyperlink-->netmeeting
 
 ## <a name="azure-storage-account-key"></a>Azure 存储帐户密钥
@@ -1002,7 +1002,7 @@ OR
 - onebox
 - localhost
 - 127.0.0。1
-- testacs。<!--no-hyperlink-->com
+- testacs.<!--no-hyperlink-->com
 - s-int。<!--no-hyperlink-->netmeeting
 
 ## <a name="azure-storage-account-key-generic"></a>Azure 存储帐户密钥 (常规)
@@ -1078,7 +1078,7 @@ OR
 
 - 标识
 - 注册
-- id 
+- Id 
 - ID 
 - Identiteitskaart
 - Registratie nummer 
@@ -1152,7 +1152,7 @@ OR
 #### <a name="keywordbrazilcpf"></a>Keyword_brazil_cpf
 
 - CPF
-- id
+- Id
 - 注册
 - 营业
 - Cadastro de Pessoas Físicas 
@@ -1220,7 +1220,7 @@ OR
 - Legal entities 
 - Registration Status 
 - 商业版 
-- 公司
+- Company
 - CNPJ 
 - Cadastro Nacional da Pessoa Jurídica 
 - Cadastro Geral de Contribuintes 
@@ -1441,7 +1441,7 @@ Cédula de identidade identity 卡片国家 id número de rregistro registro de 
 
 ### <a name="keywords"></a>关键字
 
-#### <a name="keywordprovincenamedriverslicensename"></a>Keyword_ [province_name] _drivers_license_name
+#### <a name="keywordprovincenamedriverslicensename"></a>Keyword_[province_name]_drivers_license_name
 
 - 省/市/自治区的缩写，例如 AB
 - 省名称，例如 Alberta
@@ -1520,49 +1520,49 @@ Cédula de identidade identity 卡片国家 id número de rregistro registro de 
 - 通讯
 - DLS 
 - 采用 
-- CDLS # 
-- DriverLic # 
-- DriverLics # 
-- DriverLicense # 
-- DriverLicenses # 
-- DriverLicence # 
-- DriverLicences # 
+- CDLS# 
+- DriverLic# 
+- DriverLics# 
+- DriverLicense# 
+- DriverLicenses# 
+- DriverLicence# 
+- DriverLicences# 
 - Driver Lic#
 - Driver Lics# 
 - Driver License# 
 - Driver Licenses# 
 - Driver License# 
 - Driver Licences# 
-- DriversLic # 
-- DriversLics # 
-- DriversLicense # 
-- DriversLicenses # 
-- DriversLicence # 
-- DriversLicences # 
+- DriversLic# 
+- DriversLics# 
+- DriversLicense# 
+- DriversLicenses# 
+- DriversLicence# 
+- DriversLicences# 
 - Drivers Lic# 
 - Drivers Lics# 
 - Drivers License# 
 - Drivers Licenses# 
 - Drivers Licence# 
 - Drivers Licences# 
-- Driver'Lic # 
-- Driver'Lics # 
-- Driver'License # 
-- Driver'Licenses # 
-- Driver'Licence # 
-- Driver'Licences # 
+- Driver'Lic# 
+- Driver'Lics# 
+- Driver'License# 
+- Driver'Licenses# 
+- Driver'Licence# 
+- Driver'Licences# 
 - Driver' Lic# 
 - Driver' Lics# 
 - Driver' License# 
 - Driver' Licenses# 
 - Driver' Licence# 
 - Driver' Licences# 
-- Driver'sLic # 
-- Driver'sLics # 
-- Driver'sLicense # 
-- Driver'sLicenses # 
-- Driver'sLicence # 
-- Driver'sLicences # 
+- Driver'sLic# 
+- Driver'sLics# 
+- Driver'sLicense# 
+- Driver'sLicenses# 
+- Driver'sLicence# 
+- Driver'sLicences# 
 - Driver's Lic# 
 - Driver's Lics# 
 - Driver's License# 
@@ -1574,7 +1574,7 @@ Cédula de identidade identity 卡片国家 id número de rregistro registro de 
 - id 
 - idcard card# 
 - idcard cards# 
-- idcard # 
+- idcard# 
 - identification card# 
 - identification cards# 
 - id 
@@ -1683,12 +1683,12 @@ Cédula de identidade identity 卡片国家 id número de rregistro registro de 
 - パスポート
 - パスポート番号
 - パスポートのNum
-- パスポート #
+- パスポート＃
 - Numéro de passeport
 - Passeport n °
 - Passeport Non
 - Passeport #
-- Passeport #
+- Passeport#
 - PasseportNon
 - Passeportn °
    
@@ -1896,7 +1896,7 @@ DLP 策略 75% 确信在300个字符的邻近度内检测到此类型的敏感�
 - National Identification Number 
 - Identity card 
 - ID 
-- id 
+- Id 
 - Rol Único Nacional 
 - 以 
 - Rol Único Tributario 
@@ -2047,9 +2047,9 @@ DLP 策略 75% 确信在300个字符的邻近度内检测到此类型的敏感�
 - codigo de seguranca
 - codigo de segurança
 - código de seguranca
-- cód。 segurança
+- cód. segurança
 - 货. seguranca 货到付款。 segurança
-- cód。 seguranca
+- cód. seguranca
 - cód segurança
 - 货到付款 seguranca 货到付款 segurança
 - cód seguranca
@@ -2342,7 +2342,7 @@ DLP 策略 85% 确信在300个字符的邻近度内检测到此类型的敏感�
 ### <a name="keywords"></a>关键字
 
 - 捷克个人识别码
-- Rodnéčíslo
+- Rodné číslo
    
 ## <a name="denmark-personal-identification-number"></a>	丹麦个人身份号码
 
@@ -2686,8 +2686,8 @@ DLP 策略 75% 确信在300个字符的邻近度内检测到此类型的敏感�
 - cvv2 
 - cód seguranca 
 - cód segurança 
-- cód。 seguranca 
-- cód。 segurança 
+- cód. seguranca 
+- cód. segurança 
 - código 
 - código de seguranca 
 - código de segurança 
@@ -2842,7 +2842,7 @@ DLP 策略 75% 确信在300个字符的邻近度内检测到此类型的敏感�
 <!-- Finland Passport Number -->
 <Entity id="d1685ac3-1d3a-40f8-8198-32ef5669c7a5" recommendedConfidence="75" patternsProximity="300"> <Pattern confidenceLevel="75"> <IdMatch idRef="Regex_finland_passport_number"/> <Match idRef="Keyword_finland_passport_number"/> </Pattern>
 </Entity>
-关键字 Keyword_finland_passport_number passport Passi
+关键字 Keyword_finland_passport_number Passport Passi
    
 ## <a name="france-drivers-license-number"></a>法国驾驶证号码
 
@@ -2977,7 +2977,7 @@ DLP 策略 75% 确信在300个字符的邻近度内检测到此类型的敏感�
 - Passeport n °
 - Passeport Non
 - Passeport #
-- Passeport #
+- Passeport#
 - PasseportNon
 - Passeportn °
 
@@ -3104,13 +3104,13 @@ DLP 策略 75% 确信在300个字符的邻近度内检测到此类型的敏感�
 
 #### <a name="keywordgermandriverslicensenumber"></a>Keyword_german_drivers_license_number
 
-- führerschein-nr
+- Führerschein-nr
 - Fuhrerschein
 - Fuehrerschein
 - Führerscheinnummer
 - Fuhrerscheinnummer
 - Fuehrerscheinnummer
-- führerschein-nr 
+- Führerschein-nr 
 - Fuhrerschein- 
 - Fuehrerschein- 
 - FührerscheinnummerNr
@@ -3172,22 +3172,22 @@ DLP 策略 75% 确信在300个字符的邻近度内检测到此类型的敏感�
 
 #### <a name="keywordgermandriverslicensecollaborative"></a>Keyword_german_drivers_license_collaborative
 
-- Nr-führerschein-nr 
+- Nr-Führerschein-nr 
 - Nr-Fuhrerschein 
 - Nr-Fuehrerschein 
-- führerschein-nr 
+- Führerschein-nr 
 - Fuhrerschein 
 - Fuehrerschein 
-- N-führerschein-nr 
+- N-Führerschein-nr 
 - N-Fuhrerschein 
 - N-Fuehrerschein
-- Nr-führerschein-nr 
+- Nr-Führerschein-nr 
 - Nr-Fuhrerschein 
 - Nr-Fuehrerschein 
-- führerschein-nr 
+- Führerschein-nr 
 - Fuhrerschein 
 - Fuehrerschein 
-- N-führerschein-nr 
+- N-Führerschein-nr 
 - N-Fuhrerschein 
 - N-Fuehrerschein 
 
@@ -3326,7 +3326,7 @@ bnationalit
 
 - Identity Card
 - ID
-- id
+- Id
 - Personalausweis
 - Identifizierungsnummer
 - Ausweis
@@ -3641,7 +3641,7 @@ ad, ae, al, at, az, ba, be, bg, bh, ch, cr, cy, cz, de, dk, do, ee, es, fi, fo, 
 #### <a name="ipv4"></a>IPv4
 解释 IPv4 地址格式化（点）版本或非格式化（没有点）版本的复杂模式
 
-#### <a name="ipv6"></a>ipv4
+#### <a name="ipv6"></a>Ipv4
  解释格式化 IPv6 号码（包含冒号）的复杂模式
 
 ### <a name="pattern"></a>模式
@@ -3825,11 +3825,11 @@ Dictionary_icd_9_cm 关键字词典中的任何术语, 基于[Diseases 的国际
 - PPS Num 
 - PPS No. 
 - PPS # 
-- .pps 
+- .PPS 
 - PPSN 
 - Public Services Card 
 - Uimhir Phearsanta Seirbhíse Poiblí 
-- Uimh。 PSP 
+- Uimh. PSP 
 - PSP 
    
 ## <a name="israel-bank-account-number"></a>以色列银行帐号
@@ -4055,23 +4055,23 @@ Dictionary_icd_9_cm 关键字词典中的任何术语, 基于[Diseases 的国际
 - 口座番号の確認 
 - 銀行口座番号 
 - 銀行口座 
-- 銀行口座 # 
+- 銀行口座＃ 
 - 銀行の勘定番号 
-- 銀行のacct # 
+- 銀行のacct＃ 
 - 銀行の勘定いいえ 
 - 銀行口座番号
 - 普通預金口座番号 
 - 預金口座 
-- 貯蓄口座 # 
+- 貯蓄口座＃ 
 - 貯蓄勘定の数 
-- 貯蓄勘定 # 
+- 貯蓄勘定＃ 
 - 貯蓄勘定番号 
 - 普通預金口座番号 
 - 引き落とし口座番号 
 - 口座番号 
-- 口座番号 # 
+- 口座番号＃ 
 - デビットのacct番号 
-- デビット勘定 # 
+- デビット勘定＃ 
 - デビットACCTの番号 
 - デビット口座番号 
 
@@ -4125,12 +4125,12 @@ Otemachi
 - driver's licenses 
 - driving licence 
 - .lic 
-- .lic 
+- .LIC 
 - driver'lics 
 - state id 
 - state identification 
 - state identification number 
-- 低所得国 # 
+- 低所得国＃ 
 - 免許証 
 - 状態ID
 - 状態の識別 
@@ -4176,7 +4176,7 @@ Otemachi
 - パスポート 
 - パスポート番号 
 - パスポートのNum 
-- パスポート # 
+- パスポート＃ 
    
 ## <a name="japan-resident-registration-number"></a>日本居民登记号码
 
@@ -4524,7 +4524,7 @@ Keyword_nz_terms
 - Personal identification number
 - Norwegian ID Number
 - ID Number
-- id
+- Id
 - Personnummer
 - Fødselsnummer
 
@@ -4692,7 +4692,7 @@ DLP 策略 75% 确信在300个字符的邻近度内检测到此类型的敏感�
 #### <a name="keywordpolishnationalidpassportnumber"></a>Keyword_polish_national_id_passport_number
 
 - 器 paszportu
-- führerschein-nr. Paszportu
+- Führerschein-nr. Paszportu
 - Paszport
 
    
@@ -4874,7 +4874,7 @@ DLP 策略 75% 确信在300个字符的邻近度内检测到此类型的敏感�
 
 - Identity card
 - ID
-- id 
+- Id 
    
 ## <a name="south-korea-resident-registration-number"></a>韩国居民注册号码
 
@@ -4972,11 +4972,11 @@ DLP 策略 75% 确信在300个字符的邻近度内检测到此类型的敏感�
 
 ### <a name="format"></a>Format
 
-字符串 "user id"、"user id"、"uid" 或 "UserId", 后跟下面模式中所述的字符和字符串。
+字符串 "User Id"、"User ID"、"uid" 或 "UserId", 后跟下面模式中所述的字符和字符串。
 
 ### <a name="pattern"></a>模式
 
-- 字符串 "user id"、"user id"、"uid" 或 "UserId"
+- 字符串 "User Id"、"User ID"、"uid" 或 "UserId"
 - 介于1-200 个字母、数字、符号、特殊字符或空格之间的任意组合
 - 字符串 "Password" 或 "pwd", 其中 "pwd" 不以小写字母开头
 - 等号 (=)
@@ -5041,7 +5041,7 @@ DLP 策略 75% 确信在300个字符的邻近度内检测到此类型的敏感�
 - onebox
 - localhost
 - 127.0.0。1
-- testacs。<!--no-hyperlink-->com
+- testacs.<!--no-hyperlink-->com
 - s-int。<!--no-hyperlink-->netmeeting
 
 ## <a name="sweden-national-id"></a>瑞典国家 ID
@@ -5142,12 +5142,12 @@ DLP 策略 75% 确信在300个字符的邻近度内检测到此类型的敏感�
 - パスポート 
 - パスポート番号 
 - パスポートのNum 
-- パスポート # 
+- パスポート＃ 
 - Numéro de passeport 
 - Passeport n ° 
 - Passeport Non 
 - Passeport # 
-- Passeport # 
+- Passeport# 
 - PasseportNon 
 - Passeportn ° 
    
@@ -5205,7 +5205,7 @@ DLP 策略 75% 确信在300个字符的邻近度内检测到此类型的敏感�
 - numéro\# 
 - bank identifier code 
 - 標準化9362 
-- 迅速 # 
+- 迅速＃ 
 - SWIFTコード 
 - SWIFT番号 
 - 迅速なルーティング番号 
@@ -5218,7 +5218,7 @@ DLP 策略 75% 确信在300个字符的邻近度内检测到此类型的敏感�
 - le numéro de swift 
 - swift numéro d'acheminement 
 - le numéro BIC 
-- \#numéro 
+- \#NUMÉRO 
 - code identificateur de banque 
    
 ## <a name="taiwan-national-id"></a>台湾国家/地区 ID
@@ -5625,7 +5625,7 @@ DLP 策略 75% 确信在300个字符的邻近度内检测到此类型的敏感�
 
 - GP 
 - DOB 
-- D. B。 
+- D。 B。 
 - Date of Birth 
 - Birth Date 
    
@@ -5747,12 +5747,12 @@ OR
 - パスポート 
 - パスポート番号 
 - パスポートのNum 
-- パスポート # 
+- パスポート＃ 
 - Numéro de passeport 
 - Passeport n ° 
 - Passeport Non 
 - Passeport # 
-- Passeport # 
+- Passeport# 
 - PasseportNon 
 - Passeportn ° 
    
@@ -5872,17 +5872,17 @@ OR
 - 采用 
 - CDLS 
 - ID 
-- id 
+- Id 
 - 通讯 
 - DLS 
 - 采用 
-- CDLS # 
+- CDLS# 
 - 号
-- id 
+- Id 
 - ID number 
 - ID numbers 
-- .lic 
-- .lic 
+- .LIC 
+- .LIC 
 
 #### <a name="keywordusdriverslicense"></a>Keyword_us_drivers_license
 
@@ -5925,34 +5925,34 @@ OR
 - id cards 
 - identification card 
 - identification cards 
-- DriverLic # 
-- DriverLics # 
-- DriverLicense # 
-- DriverLicenses # 
+- DriverLic# 
+- DriverLics# 
+- DriverLicense# 
+- DriverLicenses# 
 - Driver Lic# 
 - Driver Lics# 
 - Driver License# 
 - Driver Licenses# 
-- DriversLic # 
-- DriversLics # 
-- DriversLicense # 
-- DriversLicenses # 
+- DriversLic# 
+- DriversLics# 
+- DriversLicense# 
+- DriversLicenses# 
 - Drivers Lic# 
 - Drivers Lics# 
 - Drivers License# 
 - Drivers Licenses# 
-- Driver'Lic # 
-- Driver'Lics # 
-- Driver'License # 
-- Driver'Licenses # 
+- Driver'Lic# 
+- Driver'Lics# 
+- Driver'License# 
+- Driver'Licenses# 
 - Driver' Lic# 
 - Driver' Lics# 
 - Driver' License# 
 - Driver' Licenses# 
-- Driver'sLic # 
-- Driver'sLics # 
-- Driver'sLicense # 
-- Driver'sLicenses # 
+- Driver'sLic# 
+- Driver'sLics# 
+- Driver'sLicense# 
+- Driver'sLicenses# 
 - Driver's Lic# 
 - Driver's Lics# 
 - Driver's License# 
@@ -5963,7 +5963,7 @@ OR
 - identification cards# 
 
 
-#### <a name="keywordstatenamedriverslicensename"></a>Keyword_ [state_name] _drivers_license_name
+#### <a name="keywordstatenamedriverslicensename"></a>Keyword_[state_name]_drivers_license_name
 
 - 州缩写（例如，“NY”） 
 - 州名称（例如，“New York”）    
@@ -6054,7 +6054,7 @@ OR
 
 #### <a name="keyworditincollaborative"></a>Keyword_itin_collaborative
 
-- License 
+- 许可证 
 - 通讯 
 - DOB 
 - 出生日期 
@@ -6139,7 +6139,7 @@ OR
 - Social Security# 
 - Soc Sec 
 - SSN 
-- ssn 
+- SSN 
 - SSN 
 - SS 
 - SSID 
