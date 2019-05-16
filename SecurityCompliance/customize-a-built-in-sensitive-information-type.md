@@ -4,7 +4,7 @@ ms.author: deniseb
 author: denisebmsft
 manager: laurawi
 ms.date: 04/03/2019
-ms.audience: Admin
+audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Priority
@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 在内容中查找敏感信息时，需要在规则中描述相应信息。数据丢失防护 (DLP) 包含最常见敏感信息类型对应的规则，可供立即使用。若要使用这些规则，必须将它们添加到策略中。你可能会发现，需要调整这些内置规则，才能满足组织的特定需求。为此，请创建自定义敏感信息类型。本主题介绍了如何将包含现有规则集合的 XML 文件自定义为，检测更广泛的潜在信用卡信息。
-ms.openlocfilehash: a4e9a6e981889bd2be19451127fc96b351b4b00f
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: ddfd8bd82164fde6d2121b37d867caaa69355b4b
+ms.sourcegitcommit: 0d5a863f48914eeaaf29f7d2a2022618de186247
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32258140"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "34077198"
 ---
 # <a name="customize-a-built-in-sensitive-information-type"></a>自定义内置敏感信息类型
 
