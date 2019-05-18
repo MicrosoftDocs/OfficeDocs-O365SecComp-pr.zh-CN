@@ -3,7 +3,7 @@ title: Office 365 中的邮件流智能
 ms.author: chrisda
 author: chrisda
 manager: serdars
-ms.audience: ITPro
+audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
@@ -11,16 +11,16 @@ search.appverid:
 - MET150
 ms.assetid: c29f75e5-c16e-409e-a123-430691e38276
 description: 管理员可以了解与使用 Office 365 中的连接器 (也称为 "邮件流智能") 关联的邮件传递的错误代码。
-ms.openlocfilehash: d9ddfdf7c54c8dc709c3d5ae03d9fbd76a153f7e
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: 224940b84480b694188bd3047829d4896cc2584e
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32252492"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34155864"
 ---
 # <a name="mail-flow-intelligence-in-office-365"></a>Office 365 中的邮件流智能
 
-通常情况下, 使用连接器将来自 Office 365 组织的电子邮件路由到本地电子邮件环境。 您还可以使用连接器将邮件从 Office 365 路由到合作伙伴组织。 当 office 365 无法通过连接器传递这些邮件时, 它们将在 Office 365 中排队。 Office 365 将继续为每封邮件重新尝试传递48个小时。 在48小时后, 排队的邮件将会过期, 并在未送达报告 (也称为 "NDR" 或 "退回邮件") 中将邮件返回给原始发件人。
+通常情况下, 使用连接器将来自 Office 365 组织的电子邮件路由到本地电子邮件环境。 您还可以使用连接器将邮件从 Office 365 路由到合作伙伴组织。 当 Office 365 无法通过连接器传递这些邮件时, 它们将在 Office 365 中排队。 Office 365 将继续为每封邮件重新尝试传递48个小时。 在48小时后, 排队的邮件将会过期, 并在未送达报告 (也称为 "NDR" 或 "退回邮件") 中将邮件返回给原始发件人。
 
 当无法使用连接器传递邮件时, Office 365 将生成错误。 本主题中介绍了最常见的错误及其解决方案。 通过连接器发送的未送达邮件的排队和通知错误称为 "_邮件流智能_"。
 
@@ -32,7 +32,7 @@ ms.locfileid: "32252492"
 
 - 你的域最近已过期, 因此无法检索 MX 记录。
 
-- 您的域的 MX 记录最近已更改, 并且 Office 365 dns 服务器仍有以前为您的域缓存的 dns 信息。
+- 您的域的 MX 记录最近已更改, 并且 Office 365 DNS 服务器仍有以前为您的域缓存的 DNS 信息。
 
 ### <a name="how-do-i-fix-error-code-450-44312"></a>如何修复错误代码 450 4.4.312？
 
@@ -60,11 +60,11 @@ ms.locfileid: "32252492"
 
 ### <a name="how-do-i-fix-error-code-450-44316"></a>如何修复错误代码 450 4.4.316？
 
-- 如果您的本地环境中有邮箱, 您需要修改防火墙设置, 以允许从 TCP 端口25上的 Office 365 IP 地址连接到您的本地电子邮件服务器。 有关 office 365 IP 地址的列表, 请参阅[office 365 url 和 IP 地址范围](https://support.office.com/article/8548a211-3fe7-47cb-abb1-355ea5aa88a2.aspx)。
+- 如果您的本地环境中有邮箱, 您需要修改防火墙设置, 以允许从 TCP 端口25上的 Office 365 IP 地址连接到您的本地电子邮件服务器。 有关 Office 365 IP 地址的列表, 请参阅[office 365 url 和 IP 地址范围](https://support.office.com/article/8548a211-3fe7-47cb-abb1-355ea5aa88a2.aspx)。
 
 - 如果不应将更多的邮件传递到您的本地环境, 请单击警报中的 "**立即修复**", 以便 Office 365 可以立即拒绝具有无效收件人的邮件。 这将降低组织的配额对无效收件人的配额造成的风险, 这可能会影响正常的邮件传递。 或者, 您可以使用以下说明手动修复问题:
 
-  - 在 office 365 的[Exchange 管理中心 (EAC)](https://docs.microsoft.com/Exchange/exchange-admin-center)中, 禁用或删除将电子邮件从 office 365 传递到本地电子邮件环境的连接器:
+  - 在 Office 365 的[Exchange 管理中心 (EAC)](https://docs.microsoft.com/Exchange/exchange-admin-center)中, 禁用或删除将电子邮件从 office 365 传递到本地电子邮件环境的连接器:
 
     1. 在 EAC 中, 转到 "**邮件流** \> **连接器**"。
 
@@ -86,11 +86,11 @@ ms.locfileid: "32252492"
 
 - 目标电子邮件服务器响应 "服务不可用" 错误, 指示服务器无法维护与 Office 365 的通信。
 
-- 连接器配置为需要 tls, 但目标电子邮件服务器不支持 tls。
+- 连接器配置为需要 TLS, 但目标电子邮件服务器不支持 TLS。
 
 ### <a name="how-do-i-fix-error-code-450-44317"></a>如何修复错误代码 450 4.4.317？
 
-- 验证本地电子邮件服务器上的 tls 设置和证书, 以及连接器上的 tls 设置。
+- 验证本地电子邮件服务器上的 TLS 设置和证书, 以及连接器上的 TLS 设置。
 
 - 如果错误来自你的合作伙伴组织 (例如, 第三方云服务提供商), 你需要联系合作伙伴以解决问题。
 

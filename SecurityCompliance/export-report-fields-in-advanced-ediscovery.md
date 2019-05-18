@@ -3,7 +3,7 @@ title: 在 Office 365 高级电子数据展示中导出报告字段
 ms.author: chrfox
 author: chrfox
 manager: laurawi
-ms.audience: Admin
+audience: Admin
 ms.topic: reference
 ms.service: O365-seccomp
 localization_priority: Normal
@@ -12,12 +12,12 @@ search.appverid:
 - MET150
 ms.assetid: 840a5aff-ecd0-4e56-ad22-fe99bc143687
 description: 介绍了用于高级电子数据展示的导出报告中包含的所有字段。
-ms.openlocfilehash: 36443f6aac70392603acfe6702bcc4fe7a4f4bf3
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: 3e73cc1c106dfa98bd35f84c352fc89d0e45b74d
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32255460"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34154462"
 ---
 # <a name="export-report-fields-in-office-365-advanced-ediscovery"></a>在 Office 365 高级电子数据展示中导出报告字段
 
@@ -32,24 +32,24 @@ ms.locfileid: "32255460"
   
 |**导出字段名称**|**Group**|**说明**|**在标准模板中可用**|**在所有模板中可用**|
 |:-----|:-----|:-----|:-----|:-----|
-|Row_number  <br/> |概要  <br/> |行号。  <br/> |是  <br/> |是  <br/> |
-|File_ID  <br/> |概要  <br/> |文件 ID。  <br/> |是  <br/> |是  <br/> |
+|Row_number  <br/> |常规  <br/> |行号。  <br/> |是  <br/> |是  <br/> |
+|File_ID  <br/> |常规  <br/> |文件 ID。  <br/> |是  <br/> |是  <br/> |
 |File_class  <br/> |正在处理  <br/> |File 类。  <br/> |是  <br/> |是  <br/> |
 |Family_ID  <br/> |正在处理  <br/> |用于对文件进行分组的数值标识符 (通常为电子邮件实例及其附件)。  <br/> |是  <br/> |是  <br/> |
 |For_review  <br/> |正在处理  <br/> |指示将包含在 "导出以供审阅" 中的字段的标志。  <br/> |是  <br/> |是  <br/> |
 |Native_file_name  <br/> |正在处理  <br/> |本机文件名, 不引用文件夹和扩展。  <br/> |是  <br/> |是  <br/> |
-|保管人  <br/> |概要  <br/> |文件的管理员。  <br/> |是  <br/> |是  <br/> |
+|保管人  <br/> |常规  <br/> |文件的管理员。  <br/> |是  <br/> |是  <br/> |
 |Set_ID  <br/> |分析  <br/> |"ND set" 或 "Email set" id。  <br/> |是  <br/> |是  <br/> |
 |Inclusive_type  <br/> |电子邮件  <br/> |根据以下值指示文件是否包含在内: 0-非包含、1个包含项、2个包含项的减号、3个包含副本。  <br/> |是  <br/> |是  <br/> |
 |Marked_as_pivot  <br/> |临近重复项  <br/> |指示文件是否为透视。  <br/> |是  <br/> |是  <br/> |
 |Similarity_percent  <br/> |临近重复项  <br/> |相对于数据透视的相似性百分比。  <br/> |是  <br/> |是  <br/> |
 |Duplicate_subset  <br/> |临近重复项  <br/> |重复子集的唯一标识符。 指示文件是否有精确的文本重复。  <br/> |是  <br/> |是  <br/> |
-|日期  <br/> |概要  <br/> |文件日期 (取决于文件类型-电子邮件: 发送日期; 文档: 修改日期)。  <br/> |是  <br/> |是  <br/> |
+|日期  <br/> |常规  <br/> |文件日期 (取决于文件类型-电子邮件: 发送日期; 文档: 修改日期)。  <br/> |是  <br/> |是  <br/> |
 |Dominant_theme  <br/> |分析  <br/> |文件的主要主题。  <br/> |是  <br/> |是  <br/> |
 |Themes_list  <br/> |主题  <br/> |主题名称的列表。  <br/> |是  <br/> |是  <br/> |
 |ND_set  <br/> |EquiSet  <br/> |Nearduplicate 集的唯一数字标识符。  <br/> |是  <br/> |是  <br/> |
 |Email_set  <br/> |电子邮件  <br/> |电子邮件集的唯一数字标识符。  <br/> |是  <br/> |是  <br/> |
-|Email_thread  <br/> |电子邮件  <br/> |描述电子邮件集中的电子邮件的位置由从根节点到当前电子邮件的所有节点 id 组成, 以句点分隔。  <br/> |是  <br/> |是  <br/> |
+|Email_thread  <br/> |电子邮件  <br/> |描述电子邮件集中的电子邮件的位置由从根节点到当前电子邮件的所有节点 Id 组成, 以句点分隔。  <br/> |是  <br/> |是  <br/> |
 |Email_subject  <br/> |电子邮件  <br/> |电子邮件的主题。  <br/> |是  <br/> |是  <br/> |
 |Email_date_sent  <br/> |电子邮件  <br/> |发送电子邮件的日期。  <br/> |是  <br/> |是  <br/> |
 |Email_participants  <br/> |电子邮件  <br/> |电子邮件线索中所有参与者的电子邮件地址, 包括缺少的链接。  <br/> |是  <br/> |是  <br/> |
@@ -72,7 +72,7 @@ ms.locfileid: "32255460"
 |Marked_as_seed  <br/> |相关性  <br/> |文件的标记, 如果它在每个问题/类别的相关性中设置为 "种子文件"。  <br/> |是  <br/> |是  <br/> |
 |Marked_as_pre-标记  <br/> |相关性  <br/> |文件的标记, 如果它在每个问题/类别的相关性设置为预先标记。  <br/> |是  <br/> |是  <br/> |
 |Relevance_status_description  <br/> |相关性  <br/> |相关性状态的说明。  <br/> |是  <br/> |是  <br/> |
-|Comment  <br/> |概要  <br/> |用户输入的注释。  <br/> |是  <br/> |是  <br/> |
+|Comment  <br/> |常规  <br/> |用户输入的注释。  <br/> |是  <br/> |是  <br/> |
 |Export_input_path  <br/> |正在处理  <br/> |导出输入路径。  <br/> |是  <br/> |是  <br/> |
 |Pivot_ID  <br/> |临近重复项  <br/> |文件的数据透视 ID。  <br/> |是  <br/> |是  <br/> |
 |Family_size  <br/> |正在处理  <br/> |系列中的文件数。  <br/> |是  <br/> |是  <br/> |
@@ -89,12 +89,12 @@ ms.locfileid: "32255460"
 |Compound_path  <br/> |正在处理  <br/> |包含其复合源的本地文件路径。  <br/> |是  <br/> |是  <br/> |
 |Input_path  <br/> |正在处理  <br/> |输入文件的路径。  <br/> |是  <br/> |是  <br/> |
 |Input_date_modified  <br/> |正在处理  <br/> |上次修改日期输入文件。  <br/> |是  <br/> |是  <br/> |
-|ND_ET_sort_excl_attach  <br/> |分析  <br/> |将电子邮件集和 ND 的串联设置为审阅。 ' d ' 作为 ND 集的前缀添加, 而 ' E ' 已添加到电子邮件 ssets 中。  <br/> |是  <br/> |是  <br/> |
-|ND_ET_sort_incl_attach  <br/> |分析  <br/> |将电子邮件集和设置为审阅的 ND 的串联添加为 nd 集的前缀, 并将 "E" 添加到电子邮件集。 此外, Email_set 中的每封电子邮件后面都有相应的附件。  <br/> |是  <br/> |是  <br/> |
-|Deduped_custodians  <br/> |概要  <br/> |duped 文件的保管人  <br/> |是  <br/> |是  <br/> |
-|Deduped_file_IDs  <br/> |概要  <br/> |duped 文件的 id  <br/> |是  <br/> |是  <br/> |
-|Deduped_paths  <br/> |概要  <br/> |duped 文件的路径  <br/> |是  <br/> |是  <br/> |
-|File_key  <br/> |概要  <br/> |内部标识符以供将来使用。  <br/> |是  <br/> |是  <br/> |
+|ND_ET_sort_excl_attach  <br/> |分析  <br/> |将电子邮件集和 ND 的串联设置为审阅。 ' D ' 作为 ND 集的前缀添加, 而 ' E ' 已添加到电子邮件 ssets 中。  <br/> |是  <br/> |是  <br/> |
+|ND_ET_sort_incl_attach  <br/> |分析  <br/> |将电子邮件集和设置为审阅的 ND 的串联添加为 ND 集的前缀, 并将 "E" 添加到电子邮件集。 此外, Email_set 中的每封电子邮件后面都有相应的附件。  <br/> |是  <br/> |是  <br/> |
+|Deduped_custodians  <br/> |常规  <br/> |Duped 文件的保管人  <br/> |是  <br/> |是  <br/> |
+|Deduped_file_IDs  <br/> |常规  <br/> |Duped 文件的 Id  <br/> |是  <br/> |是  <br/> |
+|Deduped_paths  <br/> |常规  <br/> |Duped 文件的路径  <br/> |是  <br/> |是  <br/> |
+|File_key  <br/> |常规  <br/> |内部标识符以供将来使用。  <br/> |是  <br/> |是  <br/> |
 |Export_native_path  <br/> |正在处理  <br/> |导出包中的本机文件的路径。  <br/> |是  <br/> |是  <br/> |
 |Extracted_text_path  <br/> |正在处理  <br/> |提取的文件的路径。  <br/> |是  <br/> |是  <br/> |
 |Process_batch  <br/> |正在处理  <br/> |导入批次的批处理标识符。  <br/> |是  <br/> |是  <br/> |
@@ -103,11 +103,11 @@ ms.locfileid: "32255460"
 |Export_status_ID  <br/> |正在处理  <br/> |导出状态的 ID。  <br/> |是  <br/> |是  <br/> |
 |Export_status_description  <br/> |正在处理  <br/> |导出状态的说明;成功或错误说明。  <br/> |是  <br/> |是  <br/> |
 |Read_percent  <br/> |相关性  <br/> |读% (0-100)。 每个问题。  <br/> |是  <br/> |是  <br/> |
-|Doc_author  <br/> |文档属性  <br/> |文档属性: 作者。  <br/> |否  <br/> |是  <br/> |
-|Doc_comments  <br/> |文档属性  <br/> |文档属性: 注释。  <br/> |否  <br/> |是  <br/> |
-|Doc_keywords  <br/> |文档属性  <br/> |文档属性: 关键字。  <br/> |否  <br/> |是  <br/> |
-|Doc_last_saved_by  <br/> |文档属性  <br/> |文档属性: 上次保存者。  <br/> |否  <br/> |是  <br/> |
-|Doc_revision  <br/> |文档属性  <br/> |文档属性: 修订号。  <br/> |否  <br/> |是  <br/> |
+|Doc_author  <br/> |文档属性  <br/> |文档属性: 作者。  <br/> |否  <br/> |可访问  <br/> |
+|Doc_comments  <br/> |文档属性  <br/> |文档属性: 注释。  <br/> |否  <br/> |可访问  <br/> |
+|Doc_keywords  <br/> |文档属性  <br/> |文档属性: 关键字。  <br/> |否  <br/> |可访问  <br/> |
+|Doc_last_saved_by  <br/> |文档属性  <br/> |文档属性: 上次保存者。  <br/> |否  <br/> |可访问  <br/> |
+|Doc_revision  <br/> |文档属性  <br/> |文档属性: 修订号。  <br/> |否  <br/> |可访问  <br/> |
 |Doc_subject  <br/> |文档属性  <br/> |文档属性: subject。  <br/> |否  <br/> |是  <br/> |
 |Doc_template  <br/> |文档属性  <br/> |文档属性: 模板。  <br/> |否  <br/> |是  <br/> |
 |Doc_title  <br/> |文档属性  <br/> |文档属性: title。  <br/> |否  <br/> |是  <br/> |

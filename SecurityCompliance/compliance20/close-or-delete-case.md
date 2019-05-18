@@ -4,7 +4,7 @@ ms.author: markjjo
 author: markjjo
 manager: laurawi
 ms.date: ''
-ms.audience: Admin
+audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: 016b87388a17bc5cb01eb1a90d88aedb6e2e133c
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: 30697bfafdd7db69444b97345733f3d8ec5be92a
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32243765"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34155164"
 ---
 # <a name="close-or-delete-a-case"></a>关闭或删除事例
 
@@ -35,7 +35,7 @@ ms.locfileid: "32243765"
 
 若要关闭事例:
 
-1. 在 "**高级电子数据展示 (预览)** " 页上, 转到您的案例。
+1. 在 "**高级电子数据展示**" 页上, 转到您的案例。
 
 2. 转到 "**设置**", 然后选择 "**事例信息**"。 
 
@@ -43,7 +43,7 @@ ms.locfileid: "32243765"
 
 删除案例:
 
-1. 在 "**高级电子数据展示 (预览)** " 页上, 转到您的案例。
+1. 在 "**高级电子数据展示**" 页上, 转到您的案例。
 
 2. 转到 "**设置**", 然后选择 "**事例信息**"。 
 

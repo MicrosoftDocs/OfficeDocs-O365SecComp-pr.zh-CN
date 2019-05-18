@@ -4,7 +4,7 @@ ms.author: tracyp
 author: MSFTTracyP
 manager: laurawi
 ms.date: 9/24/2018
-ms.audience: ITPro
+audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
@@ -13,12 +13,12 @@ search.appverid:
 ms.collection:
 - M365-security-compliance
 description: 为在反垃圾邮件配置中具有无效字符的管理员提供帮助, 并在尝试使用安全&amp;合规性中心时遇到问题。
-ms.openlocfilehash: 797389da26823b6528c2aee0baaa118fbfcf7942
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: 0e7dcb40d8e54045caa55083e2cbf0585a80869d
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32253950"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34154155"
 ---
 # <a name="avoid-invalid-characters-in-your-spam-filter-rules-and-spam-filter-policy"></a>避免垃圾邮件筛选器规则和垃圾邮件筛选器策略中的无效字符 
 
@@ -39,23 +39,23 @@ ms.locfileid: "32253950"
 
 1. [使用远程 PowerShell 连接到 Exchange Online](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell?view=exchange-ps)。
     
-2. 若要更改垃圾邮件筛选器策略的名称, 请运行 set-hostedcontentfilterpolicy cmdlet, 如下所示:
+2. 若要更改垃圾邮件筛选器策略的名称, 请运行 Set-hostedcontentfilterpolicy cmdlet, 如下所示:
     
     ```
     Set-HostedContentFilterPolicy -Identity "Old policy name" -Name "New policy name"
     ```  
 
-3. 若要更改垃圾邮件筛选器规则的名称, 请运行 disable-hostedcontentfilterrule cmdlet, 如下所示:
+3. 若要更改垃圾邮件筛选器规则的名称, 请运行 Disable-hostedcontentfilterrule cmdlet, 如下所示:
     
     ```
     Set-HostedContentFilterRule -Identity "Old rule name" -Name "New rule name"
     ```  
 
   
- ## <a name="for-more-information"></a>有关详细信息
+ ## <a name="for-more-information"></a>详细信息
 
 [安全&amp;合规性中心中的威胁管理](threat-management.md)
   
-[set-hostedcontentfilterpolicy](https://docs.microsoft.com/powershell/module/exchange/antispam-antimalware/set-hostedcontentfilterpolicy?view=exchange-ps)
+[Set-hostedcontentfilterpolicy](https://docs.microsoft.com/powershell/module/exchange/antispam-antimalware/set-hostedcontentfilterpolicy?view=exchange-ps)
 
-[disable-hostedcontentfilterrule](https://docs.microsoft.com/powershell/module/exchange/antispam-antimalware/set-hostedcontentfilterrule?view=exchange-ps)
+[Disable-hostedcontentfilterrule](https://docs.microsoft.com/powershell/module/exchange/antispam-antimalware/set-hostedcontentfilterrule?view=exchange-ps)

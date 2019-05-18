@@ -4,7 +4,7 @@ ms.author: tracyp
 author: MSFTTracyP
 manager: laurawi
 ms.date: 6/16/2017
-ms.audience: ITPro
+audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
@@ -14,12 +14,12 @@ ms.assetid: ab95bf17-bb09-4dd1-9990-ddd02ddecf05
 ms.collection:
 - M365-security-compliance
 description: 本主题介绍了 Exchange Online 和 Exchange Online Protection (EOP) 管理员如何在 Exchange 管理中心 (EAC) 中查找、释放和报告隔离邮件。
-ms.openlocfilehash: a973d3a3b1875ed1ba691f91c1c23373ac8d6694
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: 7ac65ae5b4225e56861dacacdd61bf5a237f7ca8
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32255254"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34154564"
 ---
 # <a name="find-and-release-quarantined-messages-as-an-administrator"></a>以管理员身份查找并释放隔离邮件
 
@@ -101,7 +101,7 @@ ms.locfileid: "32255254"
     
   - **接收**隔离人收到邮件的日期。 
     
-  - **尺寸**邮件的大小, 以千字节 (kb) 为单位, 如果邮件大小大于 999 kb, 则为兆字节 (mb)。 
+  - **尺寸**邮件的大小, 以千字节 (KB) 为单位, 如果邮件大小大于 999 Kb, 则为兆字节 (MB)。 
     
   - **查看邮件头**单击此链接可打开 "**邮件头**" 对话框, 您可以通过该对话框查看邮件头文本。 您还可以将邮件头文本复制到剪贴板，并粘贴到 [邮件头分析器](https://testconnectivity.microsoft.com/?tabid=mha)。 进入邮件头分析器工具后，单击" **分析标头**"以检索关于标头的信息。 
     
@@ -192,7 +192,7 @@ ms.locfileid: "32255254"
   
 如果单击 "**刷新**![刷新" 图标](media/ITPro-EAC-RefreshIcon.gif)图标刷新数据, 然后双击邮件, 您应该会看到它已发布给预期的收件人。 
   
-## <a name="for-more-information"></a>有关详细信息
+## <a name="for-more-information"></a>详细信息
 <a name="sectionSection4"> </a>
 
 [隔离常见问题解答](quarantine-faq.md)

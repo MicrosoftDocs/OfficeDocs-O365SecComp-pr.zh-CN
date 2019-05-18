@@ -4,7 +4,7 @@ ms.author: markjjo
 author: markjjo
 manager: laurawi
 ms.date: 10/24/2017
-ms.audience: Admin
+audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
@@ -14,20 +14,20 @@ ms.collection:
 search.appverid: MOE150
 ms.assetid: 26af16df-34cd-4f4a-b893-bc1d2e74039e
 description: '使用 Office 365 导入服务中的新智能导入功能可筛选实际导入到目标邮箱的项目。 智能导入使您可以主动决定要导入的数据和留下的内容。 智能导入还提供了有关要导入到 Office 365 中的数据的见解。 '
-ms.openlocfilehash: 41910fe02b2ffaf95252ca41b0120f76c7619dc0
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: 2e012159f7f278dc10db14b07531686b5d130fd9
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32255684"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34154594"
 ---
 # <a name="filter-data-when-importing-pst-files-to-office-365"></a>将 PST 文件导入到 Office 365 时筛选数据
 
 使用 Office 365 导入服务中的新智能导入功能可筛选实际导入到目标邮箱的 PST 文件中的项目。 以下是相应的工作方式：
   
-- 在创建并提交 pst 导入作业之后, pst 文件将上载到 Microsoft 云中的 Azure 存储区域。
+- 在创建并提交 PST 导入作业之后, PST 文件将上载到 Microsoft 云中的 Azure 存储区域。
     
-- Office 365 通过标识邮箱项目的期限和 pst 文件中包含的不同邮件类型, 以安全和安全的方式分析 pst 文件中的数据。
+- Office 365 通过标识邮箱项目的期限和 PST 文件中包含的不同邮件类型, 以安全和安全的方式分析 PST 文件中的数据。
     
 - 分析完成并准备导入数据后, 您可以选择按如下方式导入 PST 文件中的所有数据, 或通过设置筛选器来裁剪导入的数据, 以控制导入的数据。 例如, 您可以选择执行以下操作:
     
@@ -43,7 +43,7 @@ ms.locfileid: "32255684"
   
 ![Office 365 中的智能导入过程](media/f2ec309b-11f5-48f2-939c-a6ff72152d14.png)
   
-## <a name="before-you-begin"></a>准备工作
+## <a name="before-you-begin"></a>开始之前
 
 - 本主题中的步骤假定您已使用网络上传或驱动器传送在 Office 365 导入服务中创建了 PST 导入作业。 有关分步说明, 请参阅下列主题之一:
     
@@ -125,22 +125,22 @@ ms.locfileid: "32255684"
 7. 单击 "导入作业" 以显示更多详细信息, 如每个 PST 文件的状态和您配置的筛选器设置。
 
   
-## <a name="more-information"></a>详细信息
+## <a name="more-information"></a>更多信息
 
 - Office 365 如何确定年龄筛选器的增量？ 当 Office 365 分析 PST 文件时, 它会查看每个项目的已发送或接收时间戳 (如果某个项目同时具有已发送和已接收的时间戳, 则选择了最早的日期)。 然后, Office 365 将查看该时间戳的年份值, 并将其与当前日期进行比较以确定项目的年龄。 然后, 将这些年龄用作**年龄**筛选器的下拉列表中的值。 例如, 如果 PST 文件包含来自2016、2015和2014的邮件, 则**年龄**筛选器中的值将为**1 年**、 **2 年**和**3 年**。
     
-- 下表列出了 "**更多选项**" 飞出页面 (请参阅上**** 一过程中的步骤 5b) 的 "**其他**" 类别中包含的邮件类型。 当前, 在将 pst 导入到 Office 365 时, 不能排除 "其他" 类别中的项目。 
+- 下表列出了 "**更多选项**" 飞出页面 (请参阅上**** 一过程中的步骤 5B) 的 "**其他**" 类别中包含的邮件类型。 当前, 在将 Pst 导入到 Office 365 时, 不能排除 "其他" 类别中的项目。 
     
     |**邮件类标识符**|**使用此邮件类别的邮箱项目**|
     |:-----|:-----|
-    |ipm.note.活动  <br/> |“日记”条目  <br/> |
-    |ipm.note.证明  <br/> |文档和文件 (未附加到电子邮件)  <br/> |
-    |ipm.note.文本文件  <br/> |(与 IPM。证明  <br/> |
-    |ipm.note.注意: IMC. 通知  <br/> |由 internet 邮件连接发送的报告, 即 Exchange Server 到 internet 的网关  <br/> |
-    |ipm.note.注意: Microsoft. Fax  <br/> |传真邮件  <br/> |
-    |ipm.note.注意: "Rules。  <br/> |外出自动答复邮件  <br/> |
-    |ipm.note.注意: ReplyTemplate  <br/> |收件箱规则发送的答复  <br/> |
-    |ipm.note.OLE.静态类  <br/> |定期系列的例外  <br/> |
-    |ipm.note.撤回。报告  <br/> |邮件撤回报告  <br/> |
-    |ipm.note.远端  <br/> |远程邮件  <br/> |
-    |ipm.note.完工  <br/> |项目状态报告  <br/> |
+    |IPM.NOTE.活动  <br/> |“日记”条目  <br/> |
+    |IPM.NOTE.证明  <br/> |文档和文件 (未附加到电子邮件)  <br/> |
+    |IPM.NOTE.文本文件  <br/> |(与 IPM。证明  <br/> |
+    |IPM.NOTE.注意: IMC. 通知  <br/> |由 Internet 邮件连接发送的报告, 即 Exchange Server 到 Internet 的网关  <br/> |
+    |IPM.NOTE.注意: Microsoft. Fax  <br/> |传真邮件  <br/> |
+    |IPM.NOTE.注意: "Rules。  <br/> |外出自动答复邮件  <br/> |
+    |IPM.NOTE.注意: ReplyTemplate  <br/> |收件箱规则发送的答复  <br/> |
+    |IPM.NOTE.OLE.静态类  <br/> |定期系列的例外  <br/> |
+    |IPM.NOTE.撤回。报告  <br/> |邮件撤回报告  <br/> |
+    |IPM.NOTE.远端  <br/> |远程邮件  <br/> |
+    |IPM.NOTE.完工  <br/> |项目状态报告  <br/> |

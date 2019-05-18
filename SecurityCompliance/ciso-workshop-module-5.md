@@ -3,19 +3,19 @@ title: '首席信息安全监察官 (CISO) 研讨会, 模块 5: 信息保护'
 ms.author: robmazz
 author: robmazz
 manager: laurawi
-ms.audience: Admin
+audience: Admin
 ms.topic: tutorial
 ms.service: o365-seccomp
 localization_priority: Normal
 ms.collection:
 - M365-security-compliance
 description: 了解有关贵组织中的新式化安全性的安全原则和建议的详细信息。
-ms.openlocfilehash: f68345f4041d4fae9d35f38ea2b80af5dee7c762
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: dccd34a6bed27ec3dbbca6c2affdc56234b1a21a
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32243333"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34155500"
 ---
 # <a name="ciso-workshop-module-5-information-protection"></a>CISO 研讨会模块 5: 信息保护
 

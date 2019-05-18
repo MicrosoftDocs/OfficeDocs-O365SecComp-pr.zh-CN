@@ -4,7 +4,7 @@ ms.author: markjjo
 author: markjjo
 manager: laurawi
 ms.date: ''
-ms.audience: Admin
+audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
@@ -14,35 +14,39 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: defc89f1d54238e62f947fd197e7a866380ee601
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: f4bac6ae7a51b01ff6f9b303bb5c2f4911bdb53d
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32241020"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34153904"
 ---
 # <a name="view-custodian-audit-activity"></a>查看保管人审核活动
 
-需要查找用户是否查看了特定文档或清除了其邮箱中的项目？ 高级电子数据展示 (预览版) 现已与 Security & 合规中心中的现有审核日志搜索工具集成。 使用此嵌入的体验, 您可以使用高级电子数据展示 (预览) 保管人管理工具来促进您的调查, 并在您的案例中轻松访问和搜索保管人的活动。
+需要查找用户是否查看了特定文档或清除了其邮箱中的项目？ 高级电子数据展示现在与 Security & 合规中心中现有的审核日志搜索工具集成在一起。 使用此嵌入的体验, 您可以使用高级电子数据展示保管人管理工具来促进您的调查, 并在您的案例中轻松访问和搜索保管人的活动。
 
-## <a name="before-you-begin"></a>准备工作
+## <a name="before-you-begin"></a>开始之前
 
-您必须在 Exchange Online 中向您分配 "仅查看审核日志" 或 "审核日志" 角色, 才能搜索 Office 365 审核日志。 默认情况下, 将这些角色分配给 Exchange 管理中心中 "权限" 页上的 "合规性管理" 和 "组织管理" 角色组。 若要使用户能够使用最低级别的权限搜索高级电子数据展示 (预览) 审核日志, 您可以在 Exchange Online 中创建自定义角色组, 添加仅查看审核日志或审核日志角色, 然后将该用户添加为新角色 gr 的成员oup。 有关详细信息, 请参阅在 Exchange Online 中管理角色组。
+您必须在 Exchange Online 中向您分配 "仅查看审核日志" 或 "审核日志" 角色, 才能搜索 Office 365 审核日志。 默认情况下, 将这些角色分配给 Exchange 管理中心中 "权限" 页上的 "合规性管理" 和 "组织管理" 角色组。 若要使用户能够使用最低级别的权限搜索高级电子数据展示审核日志, 您可以在 Exchange Online 中创建自定义角色组, 添加仅查看审核日志或审核日志角色, 然后将该用户添加为新角色组的成员。 有关详细信息, 请参阅在 Exchange Online 中管理角色组。
 
 > [!IMPORTANT]
 > 如果在 Security & 合规性中心的 "权限" 页上为用户分配 "仅查看审核日志" 或 "审核日志" 角色, 则他们将无法搜索 Office 365 审核日志。 您必须在 Exchange Online 中分配权限。 这是因为用于搜索审核日志的基础 cmdlet 是 Exchange Online cmdlet。
 
-## <a name="step-1-create-an-advanced-ediscovery-preview-audit-log-search"></a>步骤 1: 创建高级电子数据展示 (预览) 审核日志搜索
+## <a name="step-1-search-the-audit-log-for-activities-performed-by-a-custodian"></a>步骤 1: 在审核日志中搜索由管理员执行的活动
 
-   1. 从**Security & 合规性中心 > 高级电子数据展示 (预览)** 中选择现有事例。
+1. 转到**电子数据展示 _GT_ 高级电子数据展示**并打开该事例。
+  
+2. 单击 "**保管人**" 选项卡。
+  
+3. 从列表中选择一个管理员, 然后单击弹出页面上的 "**查看保管人活动**"。
+
+    将显示 "保管人活动" 搜索页。 注释在上一步中选择的管理员将显示在 "**保管人**" 下拉框中。 您可以在下拉框中选择不同的保管人, 但一次只能搜索一个保管人的活动。
+
+    ![保管人活动搜索页](../media/AeDCustodianActivities1.png)
    
-   2. 导航到 "**保管人**" 选项卡, 然后选择管理员。
-   
-   3. 选择管理员后, 单击  ![查看保管人活动](../media/ViewCustodianActivity.PNG)  从 "详细信息" 面板中。
-   
-   4. 配置以下搜索条件:
+4. 配置以下搜索条件:
       
-      a. **活动**-单击下拉列表以显示可以搜索的活动。 运行搜索后, 仅显示所选活动的审核记录。 选择 "**显示所有活动的结果**" 将显示符合其他搜索条件的所有活动的结果。
+   a. **活动**-单击下拉列表以显示可以搜索的活动。 运行搜索后, 仅显示所选活动的审核记录。 选择 "**显示所有活动的结果**" 将显示与其他搜索条件相匹配的管理员执行的所有活动的结果。
 
       ![活动列表](../media/CustodianActivityAudit.PNG)
       
@@ -61,9 +65,9 @@ ms.locfileid: "32241020"
 
 - **IP 地址**: 记录活动时使用的设备的 ip 地址。 IP 地址显示为 IPv4 或 IPv6 地址格式。
 
-- **user**: 执行触发事件的操作的用户 (或服务帐户)。
+- **User**: 执行触发事件的操作的用户 (或服务帐户)。
 
-- **活动**: 用户执行的活动。 此值与您在 "活动" 下拉列表中选择的活动相对应。 对于来自 exchange 管理员审核日志的事件, 此列中的值为 exchange cmdlet。
+- **活动**: 用户执行的活动。 此值与您在 "活动" 下拉列表中选择的活动相对应。 对于来自 Exchange 管理员审核日志的事件, 此列中的值为 Exchange cmdlet。
 
 - **Item**: 作为相应活动的结果创建或修改的对象。 例如, 已查看或修改的文件或已更新的用户帐户。 此列中并非所有活动都具有值。
 
@@ -103,4 +107,4 @@ ms.locfileid: "32241020"
 
 3. 选择 "导出" 选项后, 将在窗口底部显示一条消息, 提示您打开 CSV 文件, 将其保存到 "下载" 文件夹中, 或将其保存到特定文件夹中
 
-有关查看、筛选或导出审核日志搜索结果的详细信息, 请参阅[在 Office 365 安全 & 合规中心中搜索审核日志](../search-the-audit-log-in-security-and-compliance.md)。
+有关查看、筛选或导出审核日志搜索结果的详细信息, 请参阅[在 Security _AMP_ 合规性中心中搜索审核日志](../search-the-audit-log-in-security-and-compliance.md)。

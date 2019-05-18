@@ -4,18 +4,18 @@ ms.author: markjjo
 author: markjjo
 manager: laurawi
 ms.date: ''
-ms.audience: Admin
+audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: M365-security-compliance
-description: 您的组织可以与 Microsoft 合作伙伴合作, 设置自定义连接器, 以便从数据源 (如 Salesforce Chatter、Yahoo Messenger 或 Yammer) 导入第三方数据。 这使您可以在 office 365 中存档第三方数据源中的数据, 以便您可以使用 office 365 合规性功能 (如合法保留、内容搜索和保留策略) 来管理组织的第三方数据的管理。
-ms.openlocfilehash: dce015438c9764f66e98936df9454cba73fd8472
-ms.sourcegitcommit: 63a10dc5ffa9d709fac437d3fc9e554b1bcd826f
+description: 您的组织可以与 Microsoft 合作伙伴合作, 设置自定义连接器, 以便从数据源 (如 Salesforce Chatter、Yahoo Messenger 或 Yammer) 导入第三方数据。 这使您可以在 Office 365 中存档第三方数据源中的数据, 以便您可以使用 Office 365 合规性功能 (如合法保留、内容搜索和保留策略) 来管理组织的第三方数据的管理。
+ms.openlocfilehash: 9bc8dddfed4b9721237f06ecf03c1ca41df091d6
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/25/2019
-ms.locfileid: "33307764"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34155994"
 ---
 # <a name="work-with-a-partner-to-archive-third-party-data-in-office-365"></a>与合作伙伴合作, 以在 Office 365 中存档第三方数据
 
@@ -53,7 +53,7 @@ ms.locfileid: "33307764"
  
 ## <a name="step-1-find-a-third-party-data-partner"></a>步骤 1：寻找第三方数据合作伙伴
 
-在 office 365 中存档第三方数据的关键组件是查找和使用 Microsoft 合作伙伴, 该合作伙伴专门负责捕获第三方数据源中的数据, 并将其导入 Office 365。 导入数据后, 可以对其进行存档和保留, 以及组织的其他 Microsoft 数据 (例如来自 SharePoint 和 OneDrive for business 的 Exchange 和文档的电子邮件)。 合作伙伴创建从组织的第三方数据源 (如 BlackBerry、Facebook、Google +、Thomson Reuters、Twitter 和 YouTube) 提取数据的连接器, 并将该数据传递给将项目导入 Exchange 邮箱的 Office 365 API电子邮件。 
+在 Office 365 中存档第三方数据的关键组件是查找和使用 Microsoft 合作伙伴, 该合作伙伴专门负责捕获第三方数据源中的数据, 并将其导入 Office 365。 导入数据后, 可以对其进行存档和保留, 以及组织的其他 Microsoft 数据 (例如来自 SharePoint 和 OneDrive for business 的 Exchange 和文档的电子邮件)。 合作伙伴创建从组织的第三方数据源 (如 BlackBerry、Facebook、Google +、Thomson Reuters、Twitter 和 YouTube) 提取数据的连接器, 并将该数据传递给将项目导入 Exchange 邮箱的 Office 365 API电子邮件。 
   
 以下各节列出了 Microsoft 合作伙伴 (以及他们支持的第三方数据源), 他们参与了在 Office 365 中存档第三方数据的计划。
 
@@ -537,13 +537,13 @@ ms.locfileid: "33307764"
 接受请求后, 将显示[Azure 门户](https://portal.azure.com)。 若要查看您的组织的应用程序列表, 请单击 " **Azure Active Directory** > **企业应用程序**"。 **企业应用程序**边栏上列出了 Office 365 第三方数据连接器。
 
 > [!IMPORTANT]
-> 在2018年9月30日之后, 如果未在 Azure Active Directory 中注册第三方数据连接器, 则将不再将第三方数据导入组织中的邮箱。 注释现有的第三方数据连接器 (在9月30日之前创建的数据连接器) 还必须在 Azure Active Directory 中进行注册, 具体步骤是执行步骤5中的过程。
+> 在2018年9月30日之后, 如果未在 Azure Active Directory 中注册第三方数据连接器, 则将不再将第三方数据导入组织中的邮箱。 注释现有的第三方数据连接器 (在9月30日之前创建的数据连接器) 还必须在 Azure Active Directory 中进行注册 2018, 具体步骤是执行步骤5中的过程。
 
 ### <a name="revoking-consent-for-a-third-party-data-connector"></a>撤销第三方数据连接器的同意
 
 在您的组织同意要在 Azure Active Directory 中注册第三方数据连接器的权限请求后, 您的组织可以随时撤销该许可。 但是, 如果吊销连接器的许可, 则将不再将第三方数据源中的数据导入到 Office 365 中。
 
-若要撤销第三方数据连接器的同意, 可以使用 azure 门户中的 "**企业应用程序**" 边栏从 azure Active Directory 中删除应用程序 (通过删除相应的服务主体), 或使用[new-msolserviceprincipal](https://docs.microsoft.com/en-us/powershell/module/msonline/remove-msolserviceprincipal)在 Office 365 PowerShell 中删除。 您还可以在 Azure Active Directory PowerShell 中使用[AzureADServicePrincipal](https://docs.microsoft.com/en-us/powershell/module/azuread/remove-azureadserviceprincipal) cmdlet。
+若要撤销第三方数据连接器的同意, 可以使用 Azure 门户中的 "**企业应用程序**" 边栏从 Azure Active Directory 中删除应用程序 (通过删除相应的服务主体), 或使用[New-msolserviceprincipal](https://docs.microsoft.com/en-us/powershell/module/msonline/remove-msolserviceprincipal)在 Office 365 PowerShell 中删除。 您还可以在 Azure Active Directory PowerShell 中使用[AzureADServicePrincipal](https://docs.microsoft.com/en-us/powershell/module/azuread/remove-azureadserviceprincipal) cmdlet。
   
 ## <a name="more-information"></a>更多信息
 
@@ -551,7 +551,7 @@ ms.locfileid: "33307764"
     
     |**邮件属性**|**强制？**|**说明**|**示例值**|
     |:-----|:-----|:-----|:-----|
-    |**FROM** <br/> |是  <br/> |最初创建或发送第三方数据源中的项目的用户。 合作伙伴连接器将尝试将源项目 (例如 Twitter 句柄) 中的用户 ID 映射到所有参与者 ("from" 和 "to" 字段中的用户) 的 Office 365 用户帐户。 邮件的副本将导入到每个参与者的邮箱中。 如果无法将项目中的任何参与者映射到 office 365 用户帐户, 则会将该项目导入 office 365 中的第三方存档邮箱。  <br/> <br/> 标识为项目的发件人的参与者必须在要向其导入项目的 Office 365 组织中具有活动邮箱。 如果发件人没有活动邮箱，则会返回以下错误：<br/><br/>  `One or more messages in the Request failed to be delivered to either From or Sender email address. You will need to resend your entire Request. Error: The request failed. The remote server returned an error: (401) Unauthorized.`  | `bob@contoso.com` <br/> |
+    |**FROM** <br/> |是  <br/> |最初创建或发送第三方数据源中的项目的用户。 合作伙伴连接器将尝试将源项目 (例如 Twitter 句柄) 中的用户 ID 映射到所有参与者 ("FROM" 和 "TO" 字段中的用户) 的 Office 365 用户帐户。 邮件的副本将导入到每个参与者的邮箱中。 如果无法将项目中的任何参与者映射到 Office 365 用户帐户, 则会将该项目导入 Office 365 中的第三方存档邮箱。  <br/> <br/> 标识为项目的发件人的参与者必须在要向其导入项目的 Office 365 组织中具有活动邮箱。 如果发件人没有活动邮箱，则会返回以下错误：<br/><br/>  `One or more messages in the Request failed to be delivered to either From or Sender email address. You will need to resend your entire Request. Error: The request failed. The remote server returned an error: (401) Unauthorized.`  | `bob@contoso.com` <br/> |
     |**TO** <br/> |是  <br/> |接收项目的用户（如果适用于数据源中的项目）。  <br/> | `bob@contoso.com` <br/> |
     |**主题** <br/> |否  <br/> |源项目中的主题。  <br/> | `"Mega deals with Contoso coming your way! #ContosoHolidayDeals"` <br/> |
     |**结束** <br/> |是  <br/> |最初在客户数据源中创建或发布项目的日期；例如，发布 Twitter 消息的日期。  <br/> | `01 NOV 2015` <br/> |

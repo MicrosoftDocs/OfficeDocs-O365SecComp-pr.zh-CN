@@ -4,7 +4,7 @@ ms.author: tracyp
 author: MSFTTracyP
 manager: laurawi
 ms.date: 5/2/2016
-ms.audience: ITPro
+audience: ITPro
 ms.topic: troubleshooting
 ms.service: O365-seccomp
 localization_priority: Normal
@@ -14,12 +14,12 @@ ms.assetid: f4caa4e1-e414-4b21-8822-31c08064c059
 ms.collection:
 - M365-security-compliance
 description: 本文提供了发件人尝试向 Office 365 中的收件箱发送邮件时遇到的问题的故障排除信息，以及向 Office 365 客户群发邮件的最佳做法。
-ms.openlocfilehash: ac465e7ef42b9cfeb2587481202fab1b5adb5f75
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: ecb5c407c793fa93bf6f64589531bb3cff3c3494
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32265904"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34158214"
 ---
 # <a name="troubleshooting-mail-sent-to-office-365"></a>向 Office 365 发送故障排除邮件
 
@@ -116,7 +116,7 @@ ms.locfileid: "32265904"
 ### <a name="i-cant-receive-email-from-senders-in-office-365"></a>我不能接收来自 Office 365 中的发件人的电子邮件
 <a name="AllowEOPIPs"> </a>
 
- 为了从我们的用户接收邮件，请确保您的网络允许来自 EOP 在我们的数据中心使用的 IP 地址的连接。 有关详细信息, 请参阅[Exchange Online Protection IP 地址](eop/exchange-online-protection-ip-addresses.md)。 
+ 为了从我们的用户接收邮件，请确保您的网络允许来自 EOP 在我们的数据中心使用的 IP 地址的连接。 有关详细信息, 请参阅[Exchange Online PROTECTION IP 地址](eop/exchange-online-protection-ip-addresses.md)。 
   
 ## <a name="best-practices-for-bulk-emailing-to-office-365-users"></a>向 Office 365 用户群发邮件的最佳做法
 <a name="BulkMailer"> </a>

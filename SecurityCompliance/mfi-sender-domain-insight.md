@@ -1,22 +1,22 @@
 ---
-title: 修复发件人域洞察力
+title: 修复发件人域见解
 ms.author: chrisda
 author: chrisda
 manager: serdars
-ms.audience: ITPro
+audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: ''
 description: 管理员可以了解安全 & 合规性中心的邮件流仪表板中的修复发件人域洞察力。
-ms.openlocfilehash: a285a1c744ca540cc58b9408b4ee31e768f89479
-ms.sourcegitcommit: e05e83212e7ca4e84f2ddb0de0297895b995338d
+ms.openlocfilehash: 181f224064b5f31fd17c348cc4547826fbcd29a9
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/10/2019
-ms.locfileid: "33868560"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34158704"
 ---
-# <a name="fix-sender-domain-insight"></a>修复发件人域洞察力
+# <a name="fix-sender-domain-insight"></a>修复发件人域见解
 
 Office 365 需要从内部本地电子邮件环境发送到 Office 365 的邮件, 以满足特定的安全条件:
 

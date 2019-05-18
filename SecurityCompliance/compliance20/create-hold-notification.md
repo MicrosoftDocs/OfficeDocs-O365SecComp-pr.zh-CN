@@ -4,7 +4,7 @@ ms.author: markjjo
 author: markjjo
 manager: laurawi
 ms.date: ''
-ms.audience: Admin
+audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
@@ -14,16 +14,16 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: acfa0c635b361426542e91a55c8d75c315bfb831
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: efd5dfdee48e892b5fa3fb018a9655c10d9a325e
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32242775"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34155154"
 ---
 # <a name="create-a-legal-hold-notice"></a>创建合法保留通知
 
-通过使用高级电子数据展示 (预览版) 保管人通信, 组织可以管理其与保管人通信的工作流。 通过通信工具, 法律团队可以系统地发送、收集和跟踪合法保留通知。 灵活的创建过程还允许团队自定义保留通知工作流以及发送给保管人的通知中的内容。 
+通过使用高级电子数据展示保管人通信, 组织可以在与保管人通信的周围管理其工作流。 通过通信工具, 法律团队可以系统地发送、收集和跟踪合法保留通知。 灵活的创建过程还允许团队自定义保留通知工作流以及发送给保管人的通知中的内容。 
 
 ![通信页面](../media/CommunicationPage.PNG)
 
@@ -35,7 +35,7 @@ ms.locfileid: "32242775"
 
 ![名称通信页](../media/NameCommunication.PNG)
 
-1. 在安全 & 合规性中心中, 转到**电子数据展示 > 高级电子数据展示 (预览)** 以显示您的组织中的案例列表。
+1. 在安全 & 合规性中心中, 转到**电子数据展示 _GT_ 高级电子数据展示**以显示您的组织中的案例列表。
    
 2. 单击 "**通信**" 选项卡, 然后单击 "**新建通信**"。
    
@@ -100,7 +100,7 @@ ms.locfileid: "32242775"
    
 4. 指定您希望为保管人提供的内容或其他说明 (必需)。 请注意, 在步骤2中定义的门户内容将添加到重新发布通知的末尾。
    
-5. 单击“**保存**”。
+5. 单击“保存”****。
 
 >[!Note]
 >如果修改了保留通知, 则将自动向分配给此通知的所有保管人发送重新发布通知。 发送通知后, 将要求保管人重新确认其保留通知。 如果您已设置任何提醒或升级工作流, 这些工作流也将重新启动。 

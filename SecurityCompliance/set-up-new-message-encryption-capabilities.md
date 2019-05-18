@@ -3,8 +3,8 @@ title: 设置全新的 Office 365 邮件加密功能
 ms.author: krowley
 author: kccross
 manager: laurawi
-ms.date: 4/12/2019
-ms.audience: ITPro
+ms.date: 4/30/2019
+audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
@@ -15,12 +15,12 @@ ms.collection:
 - Strat_O365_IP
 - M365-security-compliance
 description: 新的 Office 365 邮件加密功能基于 Azure 信息保护构建, 贵组织可以将受保护的电子邮件通信与组织内部和外部的人员结合使用。 新的 OME 功能适用于其他 Office 365 组织、Outlook.com、Gmail 和其他电子邮件服务。
-ms.openlocfilehash: ea8756d08b1c172c433d6cd8ad1752c4c7ad64e9
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: 415e598a28033271b115aff639fb1ddd7a6345af
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32260750"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34156504"
 ---
 # <a name="set-up-new-office-365-message-encryption-capabilities"></a>设置全新的 Office 365 邮件加密功能
 
@@ -35,7 +35,7 @@ ms.locfileid: "32260750"
 
 ## <a name="verify-that-azure-rights-management-is-active"></a>验证 Azure 权限管理是否处于活动状态
 
-新的 OME 功能利用[azure 权限管理服务 (Azure RMS)](https://docs.microsoft.com/en-us/azure/information-protection/what-is-information-protection)中的保护功能, 由[azure 信息保护](https://docs.microsoft.com/en-us/azure/information-protection/what-is-azure-rms)用来通过加密和访问控制来保护电子邮件和文档的技术。
+新的 OME 功能利用[Azure 权限管理服务 (AZURE RMS)](https://docs.microsoft.com/en-us/azure/information-protection/what-is-information-protection)中的保护功能, 由[azure 信息保护](https://docs.microsoft.com/en-us/azure/information-protection/what-is-azure-rms)用来通过加密和访问控制来保护电子邮件和文档的技术。
 
 使用新的 OME 功能的唯一先决条件是必须在组织的租户中激活[Azure 权限管理](https://docs.microsoft.com/en-us/azure/information-protection/what-is-azure-rms)。 如果是这样, Office 365 将自动激活新的 OME 功能, 无需执行任何操作。
 
@@ -46,7 +46,7 @@ ms.locfileid: "32260750"
 
 有关详细信息，请参阅：
 
-- [使用新的 OME 功能需要什么订阅？](ome-faq.md#what-subscriptions-do-i-need-to-use-the-new-ome-capabilities)检查订阅计划是否包含 azure 信息保护 (包括 azure RMS 功能)。
+- [使用新的 OME 功能需要什么订阅？](ome-faq.md#what-subscriptions-do-i-need-to-use-the-new-ome-capabilities)检查订阅计划是否包含 Azure 信息保护 (包括 Azure RMS 功能)。
 - 有关购买符合条件的订阅的信息, 请参阅[Azure 信息保护](https://azure.microsoft.com/en-us/services/information-protection/)。  
 
 ### <a name="manually-activating-azure-rights-management"></a>手动激活 Azure 权限管理
@@ -54,7 +54,7 @@ ms.locfileid: "32260750"
 如果禁用了 Azure RMS, 或者如果由于任何原因未自动激活, 则可以在中手动激活:
 
 - **Office 365 管理中心**: 有关说明, 请参阅[如何从 Office 365 管理中心激活 Azure 权限管理](https://docs.microsoft.com/en-us/azure/information-protection/activate-office365)。
-- **Azure 门户**: 了解[如何从 azure 门户激活 azure 权限管理](https://docs.microsoft.com/en-gb/azure/information-protection/activate-azure), 以获取相关说明。
+- **Azure 门户**: 了解[如何从 Azure 门户激活 azure 权限管理](https://docs.microsoft.com/en-gb/azure/information-protection/activate-azure), 以获取相关说明。
 
 ## <a name="configure-management-of-your-azure-information-protection-tenant-key"></a>配置 Azure 信息保护租户密钥的管理
 
@@ -68,11 +68,11 @@ ms.locfileid: "32260750"
   
 1. 使用 Office 365 租户中具有全局管理员权限的帐户[连接到 Exchange Online PowerShell](https://docs.microsoft.com/en-us/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell) 。
 
-2. 运行 get-irmconfiguration cmdlet。
+2. 运行 Get-irmconfiguration cmdlet。
 
-     您应该会看到 AzureRMSEnabled 参数的值为 $True, 这表示 OME 是在租户中配置的。 如果不是, 请使用 get-irmconfiguration 将 AzureRMSEnabled 的值设置为 $True 以启用 OME。
+     您应该会看到 AzureRMSLicensingEnabled 参数的值为 $True, 这表示 OME 是在租户中配置的。 如果不是, 请使用 Get-irmconfiguration 将 AzureRMSLicensingEnabled 的值设置为 $True 以启用 OME。
 
-3. 使用以下语法运行 get-irmconfiguration cmdlet:
+3. 使用以下语法运行 Get-irmconfiguration cmdlet:
 
      ```powershell
      Test-IRMConfiguration [-Sender <email address >]
@@ -125,8 +125,8 @@ ms.locfileid: "32260750"
 
 若要更新现有规则以使用新的 OME 功能, 请执行以下操作:
 
-1. 在 Office 365 管理中心, 转到**管理中心中心 > Exchange**。
-2. 在 Exchange 管理中心中, 转到 "**邮件流" > Rules**。
+1. 在 Office 365 管理中心, 转到**管理中心中心 _GT_ Exchange**。
+2. 在 Exchange 管理中心中, 转到 "**邮件流" _GT_ Rules**。
 3. 对于每个规则, 请**执行以下**操作:
     - 选择 **"修改邮件安全性"**。
     - 选择 "**应用 Office 365 邮件加密和权限保护**"。
