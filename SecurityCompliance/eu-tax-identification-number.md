@@ -4,18 +4,18 @@ ms.author: stephow
 author: stephow-MSFT
 manager: laurawi
 ms.date: 8/17/2018
-ms.audience: Admin
+audience: Admin
 ms.topic: reference
 ms.service: O365-seccomp
 ms.collection: M365-security-compliance
 localization_priority: Normal
 description: 本主题介绍当数据丢失防护 (DLP) 策略检测到欧盟税务识别号敏感信息类型时, 应查找什么。 此敏感信息类型为每个国家/地区定义不同的模式、关键字和其他证据。
-ms.openlocfilehash: 4914ff078695519c2a298190d82c86a6abebceb9
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: adcd9be9b5f8775ad39010d771ff2ac214df1e17
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32255520"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34152954"
 ---
 # <a name="eu-tax-identification-number"></a>EU 税标识号
 
@@ -195,9 +195,9 @@ bucn
   
 统一的民事号码
   
-bucn #
+bucn#
   
-uniformcivilnumber #
+uniformcivilnumber#
   
 统一的民事 id
   
@@ -207,17 +207,17 @@ egn
   
 保加利亚语统一民事号码
   
-uniformcivilno #
+uniformcivilno#
   
-egn #
+egn#
   
-униформгражданскиномер
+униформ граждански номер
   
 униформ id
   
 униформграждански id
   
-униформгражданскине
+униформ граждански не
   
 ## <a name="croatia"></a>克罗地亚
 
@@ -339,11 +339,11 @@ tax id
   
 和
   
-αριθμόςφορολογικούμητρώου
+αριθμός φορολογικού μητρώου
   
-φορολογικήταυτότητα
+φορολογική ταυτότητα
   
-κωδικόςφορολογικούμητρώου
+κωδικός φορολογικού μητρώου
   
 ## <a name="czech-republic"></a>捷克共和国
 
@@ -395,9 +395,9 @@ tax id
   
 个人号码
   
-daňovéčíslo
+daňové číslo
   
-osobníčíslo
+osobní číslo
   
 ## <a name="denmark"></a>丹麦
 
@@ -456,7 +456,7 @@ tax id
   
 cpr 编号
   
-cpr #
+cpr#
   
 skat nummer
   
@@ -539,7 +539,7 @@ isikukood
   
 - 六位数字
     
-- 以下之一: 加号、减号或字母 "a" (不区分大小写), 其中加号表示介于1800-1899 之间, 负号表示在1900-1999 之间, 而 "a" 表示出生2000和之后
+- 以下之一: 加号、减号或字母 "A" (不区分大小写), 其中加号表示介于1800-1899 之间, 负号表示在1900-1999 之间, 而 "A" 表示出生2000和之后
     
 - 三位数字
     
@@ -586,7 +586,7 @@ identification number
   
 芬兰国家/地区 id 号
   
-personalidnumber #
+personalidnumber#
   
 national identification number
   
@@ -610,7 +610,7 @@ identiteetti numero
   
 suomen kansallinen henkilötunnus
   
-henkilötunnusnumero #
+henkilötunnusnumero#
   
 kansallisen tunnistenumero
   
@@ -726,15 +726,15 @@ numéro d'identification fiscale
   
 纳税编号
   
-taxno #
+taxno#
   
-taxnumber #
+taxnumber#
   
 taxnumber
   
 tax id
   
-taxid #
+taxid#
   
 税标识号
   
@@ -800,19 +800,19 @@ afm
   
 锡
   
-taxidno #
+taxidno#
   
-taxregistryno #
+taxregistryno#
   
-αριθμόςφορολογικούμητρώου
+αριθμός φορολογικού μητρώου
   
 aφμ
   
-aφμαριθμός
+aφμ αριθμός
   
-φορολογικούμητρώουνο。
+φορολογικού μητρώου νο.
   
-τοναριθμόφορολογικούμητρώου
+τον αριθμό φορολογικού μητρώου
   
 ## <a name="hungary"></a>匈牙利
 
@@ -877,15 +877,15 @@ vat 号码
   
 税号纳税标识号
   
-taxidnumber #
+taxidnumber#
   
 锡
   
-hungatiantin #
+hungatiantin#
   
 税号标识编号
   
-taxidno #
+taxidno#
   
 adóazonosító szám
   
@@ -950,11 +950,11 @@ pps no
   
 pps 服务否
   
-ppsno #
+ppsno#
   
 爱尔兰 pps 否
   
-publicserviceno #
+publicserviceno#
   
 个人公开服务号码
   
@@ -980,7 +980,7 @@ uimhir aitheantais phearsanta
     
 - 与出生年份的最后一个数字对应的两个数字
     
-- 一个与出生月份相对应的数字 (字母按字母顺序使用), 但仅使用字母 A 到 E、H、L、M、P、R 和 T (因此, 一月为 a, 10 月为 r)
+- 一个与出生月份相对应的数字 (字母按字母顺序使用), 但仅使用字母 A 到 E、H、L、M、P、R 和 T (因此, 一月为 A, 10 月为 R)
     
 - 两个数字, 对应于出生月份中的某一天, 其中40将添加到偶数的出生日, 以区别于奇数
     
@@ -1025,15 +1025,15 @@ uimhir aitheantais phearsanta
   
 纳税编号
   
-taxno #
+taxno#
   
-taxnumber #
+taxnumber#
   
 taxnumber
   
 tax id
   
-taxid #
+taxid#
   
 会计代码
   
@@ -1092,15 +1092,15 @@ codice fiscale
   
 纳税编号
   
-taxno #
+taxno#
   
-taxnumber #
+taxnumber#
   
 taxnumber
   
 tax id
   
-taxid #
+taxid#
   
 税标识号
   
@@ -1161,13 +1161,13 @@ nodokļu identifikācija numurs
   
 税号 (无 #)
   
-taxnumber #
+taxnumber#
   
 taxnumber
   
 tax id
   
-taxid #
+taxid#
   
 税标识号
   
@@ -1230,15 +1230,15 @@ mokesčių identifikavimas numeris
   
 纳税编号
   
-taxno #
+taxno#
   
-taxnumber #
+taxnumber#
   
 taxnumber
   
 tax id
   
-taxid #
+taxid#
   
 税标识号
   
@@ -1307,15 +1307,15 @@ steueridentifikationsnummer
   
 纳税编号
   
-taxno #
+taxno#
   
-taxnumber #
+taxnumber#
   
 taxnumber
   
 tax id
   
-taxid #
+taxid#
   
 税标识号
   
@@ -1465,15 +1465,15 @@ nederlandse belasting identificatie
   
 纳税编号
   
-taxno #
+taxno#
   
-taxnumber #
+taxnumber#
   
 taxnumber
   
 nip
   
-nip #
+nip#
   
 tax id
   
@@ -1491,7 +1491,7 @@ vat 号码
   
 vat 编号
   
-vatno #
+vatno#
   
 vat id
   
@@ -1501,7 +1501,7 @@ vat id #
   
 polski 器 identyfikacji podatkowej
   
-numeridentyfikacjipodatkowej #
+numeridentyfikacjipodatkowej#
   
 ## <a name="portugal"></a>葡萄牙
 
@@ -1550,9 +1550,9 @@ numeridentyfikacjipodatkowej #
   
 纳税编号
   
-taxno #
+taxno#
   
-taxnumber #
+taxnumber#
   
 taxnumber
   
@@ -1612,9 +1612,9 @@ tax file number
   
 税号
   
-taxid #
+taxid#
   
-taxno #
+taxno#
   
 id-ul taxei
   
@@ -1676,15 +1676,15 @@ tax file number
   
 税号
   
-taxid #
+taxid#
   
-taxno #
+taxno#
   
-daňové identifikačnéčíslo
+daňové identifikačné číslo
   
-daňovéčíslo
+daňové číslo
   
-daňovéčíslo súboru
+daňové číslo súboru
   
 ## <a name="slovenia"></a>斯洛文尼亚
 
@@ -1749,9 +1749,9 @@ tax file number
   
 税号
   
-taxid #
+taxid#
   
-taxno #
+taxno#
   
 identifikacijska številka davka
   
@@ -1862,15 +1862,15 @@ tax file number
   
 税号
   
-taxid #
+taxid#
   
-taxno #
+taxno#
   
-cifid #
+cifid#
   
-spanishcifid #
+spanishcifid#
   
-spanishcifno #
+spanishcifno#
   
 número de contribuyente
   
@@ -1880,7 +1880,7 @@ número de identificación 会计
   
 cif número
   
-cifnúmero #
+cifnúmero#
   
 ## <a name="sweden"></a>瑞典
 
@@ -1951,7 +1951,7 @@ tax identification
   
 税种
   
-taxid #
+taxid#
   
 税文件
   
@@ -2019,7 +2019,7 @@ tax identification
   
 税种
   
-taxid #
+taxid#
   
 税文件
   

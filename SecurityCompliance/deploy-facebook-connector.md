@@ -4,28 +4,27 @@ ms.author: markjjo
 author: markjjo
 manager: laurawi
 ms.date: ''
-ms.audience: Admin
+audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: M365-security-compliance
 ROBOTS: NOINDEX, NOFOLLOW
 description: 管理员可以设置本机连接器以将 Facebook 商业页面导入和存档到 Office 365。 将此数据导入 Office 365 后, 您可以使用合规性功能 (如法律封存、内容搜索和保留策略) 来管理组织的 Facebook 数据的管理。
-ms.openlocfilehash: d90714072bdeb609fe4af14208476bfa2f60b6d7
-ms.sourcegitcommit: 63a10dc5ffa9d709fac437d3fc9e554b1bcd826f
+ms.openlocfilehash: b0ec46cea2dd5722633e7fc302cdd0d03cd5d56d
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/25/2019
-ms.locfileid: "33307823"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34150554"
 ---
 # <a name="deploy-a-connector-to-archive-facebook-data-in-office-365"></a>在 Office 365 中部署用于存档 Facebook 数据的连接器
 
-本文包含了部署使用 Office 365 导入服务将数据从 Facebook 商业页面导入 office 365 的连接器的分步过程。 有关此过程的高级概述以及部署 Facebook 连接器所需的先决条件列表, 请参阅[在 Office 365 中存档第三方数据](archive-third-party-data-with-sample-connector.md)。 
-
+本文包含了部署使用 Office 365 导入服务将数据从 Facebook 商业页面导入 Office 365 的连接器的分步过程。 有关此过程的简要概述以及部署 Facebook 连接器所需的先决条件列表, 请参阅[使用示例连接器存档 Office 365 中的 Facebook 数据 (预览)](archive-facebook-data-with-sample-connector.md)。 
 
 ## <a name="step-1-download-the-package"></a>步骤 1: 下载程序包
 
-从存储库的 "发布" 部分下载预<https://github.com/Microsoft/m365-sample-connector-csharp-aspnet/releases>构建的程序包。 在最新版本下, 下载名为**SampleConnector**的 zip 文件。 你将在步骤4中将此 zip 文件上传到 Azure。
+从位于 GitHub 存储库中的 "发布" 部分下载预建<https://github.com/Microsoft/m365-sample-connector-csharp-aspnet/releases>程序包。 在最新版本下, 下载名为**SampleConnector**的 zip 文件。 你将在步骤4中将此 zip 文件上传到 Azure。
 
 ## <a name="step-2-create-an-app-in-azure-active-directory"></a>步骤 2: 在 Azure Active Directory 中创建应用程序
 
@@ -45,7 +44,7 @@ ms.locfileid: "33307823"
 
    ![](media/FBCimage4.png)
 
-5. 复制**应用程序 (客户端) id**和**目录 (租户) id** , 并将其保存到文本文件或其他安全位置。 您将在后续步骤中使用这些 id。
+5. 复制**应用程序 (客户端) id**和**目录 (租户) id** , 并将其保存到文本文件或其他安全位置。 您将在后续步骤中使用这些 Id。
 
    ![](media/FBCimage5.png)
 
@@ -127,7 +126,7 @@ ms.locfileid: "33307823"
 
     ![](media/FBCimage22.png)
 
-4. 在 "**常规设置**" 下, 单击 "**始终打开**" 旁边的 **""** 。 单击页面顶部的 "**保存**" 以保存 applicaton 设置。
+4. 在 "**常规设置**" 下, 单击 "**始终打开**" 旁边的 **""** 。 单击页面顶部的 "**保存**" 以保存应用程序设置。
 
    ![](media/FBCimage23.png)
 
@@ -163,7 +162,7 @@ ms.locfileid: "33307823"
 
    ![](media/FBCimage30.png)
 
-7. 在 " **Facebook Login**" 下的左侧导航窗格中, 单击 "**设置**", 然后在 "**有效 OAuth 重定向 uri** " 框中添加 OAuth 重定向 uri。使用** \<connectorserviceuri>/Views/FacebookOAuth**的格式, 其中 connectorserviceuri 的值是您的组织的 Azure 应用服务 URL;例如https://fbconnector.azurewebsites.net。
+7. 在 " **Facebook Login**" 下的左侧导航窗格中, 单击 "**设置**", 然后在 "**有效 OAuth 重定向 Uri** " 框中添加 OAuth 重定向 uri。使用** \<connectorserviceuri>/Views/FacebookOAuth**的格式, 其中 connectorserviceuri 的值是您的组织的 Azure 应用服务 URL;例如https://fbconnector.azurewebsites.net。
 
    ![](media/FBCimage31.png)
 
@@ -171,7 +170,7 @@ ms.locfileid: "33307823"
 
    ![](media/FBCimage32.png)
 
-9. 添加 webhook 回调 URL 并添加验证令牌。 回调 URL 的格式, 使用格式** <connectorserviceuri>/api/FbPageWebhook**, 其中 connectorserviceuri 的值是您的组织的 Azure 应用服务 URL;例如https://fbconnector.azurewebsites.net。 
+9. 添加 Webhook 回调 URL 并添加验证令牌。 回调 URL 的格式, 使用格式** <connectorserviceuri>/api/FbPageWebhook**, 其中 connectorserviceuri 的值是您的组织的 Azure 应用服务 URL;例如https://fbconnector.azurewebsites.net。 
 
     验证令牌应类似于强密码。 将验证令牌复制到文本文件或其他存储位置。
 
@@ -210,23 +209,23 @@ ms.locfileid: "33307823"
 1. 转到 https://\<AzureAppResourceName> (其中 AzureAppResourceName 是您在步骤4中命名的 Azure 应用程序资源的名称) 例如, 如果名称为**fbconnector**, 请转到https://fbconnector.azurewebsites.net。 该应用程序的主页看起来将类似下面的屏幕截图。
 
 
-  ![](media/FBCimage41.png)
+   ![](media/FBCimage41.png)
 
 2. 单击 "**配置**" 以显示登录页。
  
    ![](media/FBCimage42.png)
 
-3. 在 "租户 id" 框中, 键入或粘贴您在步骤2中获取的租户 id。 在 "密码" 框中, 键入或粘贴 APISecretKey (您在步骤2中获取), 然后单击 "**设置配置设置**" 以显示 "**配置详细信息**" 页。
+3. 在 "租户 Id" 框中, 键入或粘贴您在步骤2中获取的租户 Id。 在 "密码" 框中, 键入或粘贴 APISecretKey (您在步骤2中获取), 然后单击 "**设置配置设置**" 以显示 "**配置详细信息**" 页。
 
     ![](media/FBCimage43.png)
 
 
 4. 在 "**配置详细信息**" 下, 输入以下配置设置 
 
-   - **facebook 应用程序 id** -您在步骤5中获取的 facebook 应用程序的应用程序 id。
-   - **facebook 应用程序密码**-您在步骤5中获取的 facebook 应用程序的应用程序密码。
+   - **Facebook 应用程序 id** -您在步骤5中获取的 facebook 应用程序的应用程序 id。
+   - **Facebook 应用程序密码**-您在步骤5中获取的 facebook 应用程序的应用程序密码。
    - **Facebook webhook verify token** -您在步骤5中创建的验证令牌。
-   - **AAD 应用程序 id** -您在步骤2中创建的 Azure Active Directory 应用程序的应用程序 id
+   - **AAD 应用程序 id** -您在步骤2中创建的 Azure Active Directory 应用程序的应用程序 id。
    - **AAD 应用程序密码**-您在步骤4中创建的 APISecretKey 密码的值。
    - **AAD 应用程序 uri** -在步骤2中获取的 aad 应用程序 uri;例如, https://microsoft.onmicrosoft.com/2688yu6n-12q3-23we-e3ee-121111123213。
    - **App insights 检测键**-将此框保留为空。
@@ -239,15 +238,17 @@ ms.locfileid: "33307823"
 
    ![](media/FBCimage44.png)
 
-2.  单击 "**添加连接器**", 然后单击 "**自定义**"。
+2.  单击 "**添加连接器**", 然后单击 " **Facebook 页面**"。
 
     ![](media/FBCimage46.png)
 
-3.  在 "**添加连接器应用程序**" 页上, 输入以下信息, 然后单击 "**下一步**"。
+3.  在 "**添加连接器应用程序**" 页上, 输入以下信息, 然后单击 "**验证连接器**"。
 
     - 在第一个框中, 键入连接器的名称, 例如**Facebook**。
     - 在第二个框中, 键入或粘贴您在步骤4中添加的 APISecretKey 的值。
-    - 在第三个框中, 粘贴的类型为 Azure 应用服务 URL;例如**https://fbconnector.azurewebsites.net**。
+    - 在第三个框中, 键入或粘贴 Azure 应用服务 URL;例如**https://fbconnector.azurewebsites.net**。
+ 
+    成功验证连接器后, 单击 "**下一步**"。
     
     ![](media/FBCimage47.png)
 
@@ -264,7 +265,7 @@ ms.locfileid: "33307823"
 
    ![](media/FBCimage49.png)
 
-7. 在 "**登录到 Facebook** " 页上, 使用组织的 Facebook 商业版页面的帐户登录凭据。 确保您登录到的 facebook 帐户已分配给您组织的 facebook 商业页面的管理员角色
+7. 在 "**登录到 Facebook** " 页上, 使用组织的 Facebook 商业版页面的帐户登录凭据。 确保您登录到的 Facebook 帐户已分配给您组织的 Facebook 商业页面的管理员角色
 
    ![](media/FBCimage50.png)
 
@@ -280,7 +281,7 @@ ms.locfileid: "33307823"
 
     ![](media/FBCimage53.png)
 
-11. 在 "**设置筛选器**" 页上, 可以应用筛选器以导入 (和存档) 特定时间的项目。 单击“下一步”。
+11. 在 "**设置筛选器**" 页上, 可以应用筛选器以导入 (和存档) 特定时间的项目。 单击“下一步”。****
 
     ![](media/FBCimage54.png)
 
@@ -288,7 +289,7 @@ ms.locfileid: "33307823"
 
     ![](media/FBCimage55.png)
 
-13. 查看您的设置, 然后单击 "**完成**" 以完成 Security & 合规性中心中的连接器设置。
+13. 查看您的设置, 然后单击 "**完成**" 以完成 Security _AMP_ 合规性中心中的连接器设置。
 
     ![](media/FBCimage56.png)
 

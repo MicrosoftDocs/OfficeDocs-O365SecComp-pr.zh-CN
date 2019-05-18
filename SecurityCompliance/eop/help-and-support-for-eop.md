@@ -4,18 +4,18 @@ ms.author: krowley
 author: kccross
 manager: laurawi
 ms.date: 12/9/2016
-ms.audience: ITPro
+audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: 64535a0a-1044-413f-8bc2-ed8e8a0bc54c
 description: Microsoft 在多处通过多种方法为 EOP 提供帮助，包括自助支持和协助支持。
-ms.openlocfilehash: 0df74ea3d517a08578099eb03119b23690de655a
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: 4343643d7c1c69d21b45d3a46ac8ac6dba42c3d1
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32256240"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34150324"
 ---
 # <a name="help-and-support-for-eop"></a>EOP 帮助与支持
 
@@ -37,7 +37,7 @@ ms.locfileid: "32256240"
   
 ## <a name="assisted-support-from-microsoft"></a>Microsoft 协助支持
 
-你可以通过在 microsoft 365 管理中心或通过电话呼叫来启动新的服务请求, 获取 microsoft 的帮助。 Premier Support 订阅者具有额外支持选项。
+你可以通过在 Microsoft 365 管理中心或通过电话呼叫来启动新的服务请求, 获取 Microsoft 的帮助。 Premier Support 订阅者具有额外支持选项。
   
 ### <a name="support-for-microsoft-premier-support-subscribers"></a>对 Microsoft Premier Support 订阅者的支持
 

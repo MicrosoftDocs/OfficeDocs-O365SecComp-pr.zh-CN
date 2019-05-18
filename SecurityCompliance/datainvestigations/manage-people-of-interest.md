@@ -4,7 +4,7 @@ ms.author: markjjo
 author: markjjo
 manager: laurawi
 ms.date: ''
-ms.audience: Admin
+audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: d06dde60ae75cfea1bf1d79f445b613d20a76363
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: e374509dccd235ef689609acc1c4f99db6594d4c
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32257670"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34150704"
 ---
 # <a name="manage-people-of-interest-in-data-investigations-preview"></a>管理数据调查中感兴趣的人员 (预览)
 
@@ -78,7 +78,7 @@ ms.locfileid: "32257670"
   - **City**: 人员所在的城市。
   - **状态**: 人员所在的省/市/自治区。
   - **国家/地区**: 人员所在的国家/地区;例如, "US" 或 "UK"。
-  - **office**: 人员的办公室位置。
+  - **Office**: 人员的办公室位置。
 
 - 处理状态
 

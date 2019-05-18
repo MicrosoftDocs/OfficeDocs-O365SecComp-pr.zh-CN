@@ -4,18 +4,18 @@ ms.author: krowley
 author: kccross
 manager: laurawi
 ms.date: 12/9/2016
-ms.audience: ITPro
+audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: faf1efd1-3b0c-411a-804d-17f37292eac0
 description: 请遵循所建议的这些 Exchange Online Protection (EOP) 最佳做法，以成功达到目的，并避免常见的配置错误。
-ms.openlocfilehash: 3b8cf41be41e199017dcff7fd3762711402d8ca2
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: c60e3d62cc758a75f85d6cb149c8e13492cad35c
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32256640"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34150282"
 ---
 # <a name="best-practices-for-configuring-eop"></a>配置 EOP 的最佳做法
   
@@ -31,11 +31,11 @@ ms.locfileid: "32256640"
   
 ## <a name="spf-record-customization-to-help-prevent-spoofing"></a>SPF 记录自定义帮助防止欺骗
 
-在设置 EOP 时，添加了 EOP 的一个 SPF（发件人策略框架）记录到 DNS 记录中。 SPF 记录可帮助防止欺骗。 有关 SPF 记录如何阻止欺骗以及如何将本地 IP 地址添加到 SPF 记录的详细信息, 请参阅[Set up SPF in Office 365 以帮助防止欺骗](../set-up-spf-in-office-365-to-help-prevent-spoofing.md)。 
+在设置 EOP 时，添加了 EOP 的一个 SPF（发件人策略框架）记录到 DNS 记录中。 SPF 记录可帮助防止欺骗。 有关 SPF 记录如何阻止欺骗以及如何将本地 IP 地址添加到 SPF 记录的详细信息, 请参阅[Set UP SPF In Office 365 以帮助防止欺骗](../set-up-spf-in-office-365-to-help-prevent-spoofing.md)。 
   
 ## <a name="set-anti-spam-options"></a>设置反垃圾邮件选项
 
-通过将 ip 地址添加到 ip 允许和 ip 阻止列表来管理连接筛选器设置, 并选择 "**启用安全列表**" 选项, 该选项应减少收到的误报数 (适用于分类为垃圾邮件的邮件)。 有关详细信息, 请参阅[配置连接筛选器策略](../configure-the-connection-filter-policy.md)。 有关适用于整个组织的详细垃圾邮件设置，请参阅[如何帮助确保邮件不会被标记为垃圾邮件](https://go.microsoft.com/fwlink/p/?LinkId=534224)或[使用 Office 365 垃圾邮件筛选器阻止垃圾电子邮件，以防止出现漏报问题](https://go.microsoft.com/fwlink/p/?LinkId=534225)。 如果您拥有管理员级别控制，并且您想要阻止误报或漏报问题，这些会很有帮助。
+通过将 IP 地址添加到 IP 允许和 IP 阻止列表来管理连接筛选器设置, 并选择 "**启用安全列表**" 选项, 该选项应减少收到的误报数 (适用于分类为垃圾邮件的邮件)。 有关详细信息, 请参阅[配置连接筛选器策略](../configure-the-connection-filter-policy.md)。 有关适用于整个组织的详细垃圾邮件设置，请参阅[如何帮助确保邮件不会被标记为垃圾邮件](https://go.microsoft.com/fwlink/p/?LinkId=534224)或[使用 Office 365 垃圾邮件筛选器阻止垃圾电子邮件，以防止出现漏报问题](https://go.microsoft.com/fwlink/p/?LinkId=534225)。 如果您拥有管理员级别控制，并且您想要阻止误报或漏报问题，这些会很有帮助。
   
 通过查看和 (可选) 更改默认设置来管理内容筛选器。 例如, 您可以更改对垃圾邮件检测到的邮件发生的操作。 如果要采用严格的垃圾邮件筛选方法, 可以配置高级垃圾邮件筛选选项。 我们建议您先测试这些选项, 然后再在生产环境中实施它们 (通过启用它们), 建议关注网络钓鱼的组织启用 " **SPF 记录: 硬失败**" 选项。 有关详细信息, 请参阅[配置垃圾邮件筛选器策略](../configure-your-spam-filter-policies.md)和[高级垃圾邮件筛选选项](../advanced-spam-filtering-asf-options.md)。
   
@@ -50,7 +50,7 @@ ms.locfileid: "32256640"
 
 在 Exchange 管理中心 (EAC) 中检查并微调恶意软件筛选器设置。 有关详细信息, 请参阅[配置反恶意软件策略](../configure-anti-malware-policies.md)。 我们还建议阅读有关反恶意软件[保护常见问题解答](../anti-malware-protection-faq-eop.md)中有关反恶意软件保护的其他常见问题和解答。
   
-如果你对包含恶意软件的可执行文件有点担心，则可以创建一个 Exchange 邮件流规则来拦截所有包含可执行内容的电子邮件附件。 按照[如何通过 Exchange online Protection 中的文件附件阻止功能降低恶意软件威胁](https://support.microsoft.com/kb/2959596)的步骤, 以阻止在[exchange online 中使用邮件流规则检查邮件附件](https://docs.microsoft.com/exchange/security-and-compliance/mail-flow-rules/inspect-message-attachments#supported-file-types-for-mail-flow-rule-content-inspection)中列出的文件类型。
+如果你对包含恶意软件的可执行文件有点担心，则可以创建一个 Exchange 邮件流规则来拦截所有包含可执行内容的电子邮件附件。 按照[如何通过 Exchange Online Protection 中的文件附件阻止功能降低恶意软件威胁](https://support.microsoft.com/kb/2959596)的步骤, 以阻止在[Exchange online 中使用邮件流规则检查邮件附件](https://docs.microsoft.com/exchange/security-and-compliance/mail-flow-rules/inspect-message-attachments#supported-file-types-for-mail-flow-rule-content-inspection)中列出的文件类型。
   
 可以在 EAC 中使用常见附件类型筛选器。 选择 "**保护** \> **恶意软件筛选器**"。 您可以创建阻止任何具有可执行内容的电子邮件附件的邮件流规则。 
   
@@ -97,7 +97,7 @@ ms.locfileid: "32256640"
 
 使用管理中心中的报告解决一般问题和趋势。 使用消息跟踪工具来查找有关邮件的单点数据。 有关报告的详细信息，请参阅 [Exchange Online Protection 中的报告和邮件跟踪](reporting-and-message-trace-in-exchange-online-protection.md)。 有关消息跟踪工具的详细信息，请参阅[Trace an Email Message](http://technet.microsoft.com/library/0c83cde6-5b09-4106-8587-c200cdc59094.aspx)。
   
-## <a name="for-more-information"></a>有关详细信息
+## <a name="for-more-information"></a>详细信息
 
 [EOP 一般常见问题解答](eop-general-faq.md)
   

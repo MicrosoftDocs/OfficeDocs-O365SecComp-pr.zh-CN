@@ -4,18 +4,18 @@ ms.author: markjjo
 author: markjjo
 manager: laurawi
 ms.date: 11/17/2014
-ms.audience: ITPro
+audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: 003d7a74-3e16-4453-ae0c-9dbae51f66d1
 description: Microsoft Exchange Online Protection (EOP) 中的审核报告可以帮助您满足组织的法规、合规性和诉讼要求。您可以随时获取审核报告以确定已对 EOP 配置所做的更改。这些报告可以帮助您解决配置问题或找到安全性或合规性相关问题的原因。
-ms.openlocfilehash: b2b62939d4330b62e3cb78d682f6ac62251bb5bb
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: 59b5bea248772caf1f72f2b03ae4f25c03187bab
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32256650"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34153205"
 ---
 # <a name="auditing-reports-in-eop"></a>EOP 中的审核报告
 

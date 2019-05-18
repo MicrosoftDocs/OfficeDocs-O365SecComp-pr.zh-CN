@@ -4,7 +4,7 @@ ms.author: krowley
 author: kccross
 manager: laurawi
 ms.date: 7/2/2018
-ms.audience: ITPro
+audience: ITPro
 ms.topic: overview
 ms.service: O365-seccomp
 localization_priority: Normal
@@ -15,12 +15,12 @@ ms.assetid: 6501b5ef-6bf7-43df-b60d-f65781847d6c
 ms.collection:
 - M365-security-compliance
 description: 了解 OneDrive for Business 和 SharePoint Online 中数据安全加密的基本元素。
-ms.openlocfilehash: 84d44ceec96545388d0e4f77f0a84e95ff07db59
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: c8ac6f0a4364117c475637e0288d7a1a790d57c2
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32258150"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34151094"
 ---
 # <a name="data-encryption-in-onedrive-for-business-and-sharepoint-online"></a>OneDrive for Business 和 SharePoint Online 中的数据加密
 
@@ -30,7 +30,7 @@ ms.locfileid: "32258150"
 
 Office 365 是高度安全的环境，提供多个层的广泛保护：物理数据中心安全、网络安全、访问安全、应用程序安全和数据安全。本文特别侧重于 OneDrive for Business 和 SharePoint Online 数据安全的中转和静态加密端。
   
-有关 office 365 安全整体的说明, 请参阅[office 365 白皮书中的安全性](https://go.microsoft.com/fwlink/p/?LinkId=270895)。
+有关 Office 365 安全整体的说明, 请参阅[office 365 白皮书中的安全性](https://go.microsoft.com/fwlink/p/?LinkId=270895)。
   
 观看以下视频，了解数据加密的工作方式。
   
@@ -48,11 +48,11 @@ Office 365 是高度安全的环境，提供多个层的广泛保护：物理数
 
 静态加密包括两个组件：BitLocker 磁盘级别加密和客户内容的每个文件加密。
   
-已为 OneDrive for Business 和 SharePoint Online 跨服务部署 BitLocker。 在 Office 365 多租户和 SharePoint Online 中, 每个文件加密也是基于多租户技术构建的 OneDrive for business 和 SharePoint Online。
+已为 OneDrive for Business 和 SharePoint Online 跨服务部署 BitLocker。 在 Office 365 多租户和 SharePoint Online 中, 每个文件加密也是基于多租户技术构建的 OneDrive for Business 和 SharePoint Online。
   
 虽然 BitLocker 加密磁盘上的所有数据，每个文件加密还是会通过包含唯一加密密钥来进一步加密每个文件。此外，对每个文件的每次更新都使用其自己的加密密钥进行加密。在存储之前，加密内容的密钥存储在与内容不同的单独物理位置中。此加密的每一个步骤都使用带有 256 位密钥的高级加密标准 (AES)，并且符合美国联邦信息处理标准 (FIPS) 140-2。加密的内容分布在整个数据中心的多个容器中，每个容器都有唯一的凭据。这些凭据存储在与内容和内容密钥存储位置不同的单独物理位置中。
   
-有关 fips 140-2 合规性的详细信息, 请参阅[FIPS 140-2 合规性](https://go.microsoft.com/fwlink/?LinkId=517625)。
+有关 FIPS 140-2 合规性的详细信息, 请参阅[FIPS 140-2 合规性](https://go.microsoft.com/fwlink/?LinkId=517625)。
   
 静态文件级加密利用 blob 存储提供几乎不受限制的存储增长，并启用前所未有的保护。OneDrive for Business 和 SharePoint Online 中的所有客户内容都将被迁移到 blob 存储。下面介绍了保护此数据的方法：
   

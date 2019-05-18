@@ -1,22 +1,22 @@
 ---
-title: 顶级域邮件流状态洞察力
+title: 顶级域邮件流状态见解
 ms.author: chrisda
 author: chrisda
 manager: serdars
-ms.audience: ITPro
+audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: ''
 description: 管理员可以了解安全 & 合规性中心的邮件流仪表板中的顶层域邮件流状态洞察力。
-ms.openlocfilehash: 851ef1438f111a36f69563670bbd0835a9956edc
-ms.sourcegitcommit: e05e83212e7ca4e84f2ddb0de0297895b995338d
+ms.openlocfilehash: c339769c65b2b1cec3d187873e71e5f1e283ccc7
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/10/2019
-ms.locfileid: "33868584"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34158644"
 ---
-# <a name="top-domain-mail-flow-status-insight"></a>顶级域邮件流状态洞察力
+# <a name="top-domain-mail-flow-status-insight"></a>顶级域邮件流状态见解
 
 **顶级域邮件流状态**洞察力为您的组织的域提供了邮件流的当前状态。 此洞察力可帮助您识别和解决遇到***邮件流影响***问题的域 (例如, 无法接收外部电子邮件), 尤其是域过期或包含不正确的 MX 记录的域。
 

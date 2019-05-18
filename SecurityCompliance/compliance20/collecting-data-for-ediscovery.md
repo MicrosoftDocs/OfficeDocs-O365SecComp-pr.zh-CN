@@ -1,10 +1,10 @@
 ---
-title: 在高级电子数据展示中收集数据事例 (预览)
+title: 在高级电子数据展示中收集事例数据
 ms.author: esclee
 author: markjjo
 manager: laurawi
 ms.date: ''
-ms.audience: Admin
+audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
@@ -14,18 +14,18 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: fb4b36841394576c44667f9677507c5655179e45
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: 8e67c3c8a693e627bade9e581f0f1e246bf6802a
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32242550"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34151884"
 ---
-# <a name="collect-data-for-a-case-in-advanced-ediscovery-preview"></a>在高级电子数据展示中收集数据事例 (预览)
+# <a name="collect-data-for-a-case-in-advanced-ediscovery"></a>在高级电子数据展示中收集事例数据
 
-确定了您的保管人和数据源对您的情况有意义之后, 就可以确定要深入研究的文档集。 您可以使用高级电子数据展示 (预览版) 中的搜索工具, 在 Office 365 中从 custodial 和非 custodial 位置进行识别。
+确定了您的保管人和数据源对您的情况有意义之后, 就可以确定要深入研究的文档集。 您可以使用高级电子数据展示中的搜索工具, 在 Office 365 中从 custodial 和非 custodial 位置进行识别。
 
-运行搜索后, 您将能够查看检索到的项目的统计信息, 例如与搜索查询匹配项目数最多的位置。 您还可以预览结果的子集。 在确定了要进一步检查的文档集后, 可以将搜索结果添加到工作集以供收集和处理。
+运行搜索后, 您将能够查看检索到的项目的统计信息, 例如与搜索查询匹配项目数最多的位置。 您还可以预览结果的子集。 在确定了要进一步检查的文档集后, 可以将搜索结果添加到审阅集以供收集和处理。
 
 ## <a name="create-a-search"></a>Create a search
 
@@ -46,6 +46,6 @@ ms.locfileid: "32242550"
 
 完成预览后,**预览**按钮将处于活动状态。 单击它可预览结果的样本子集。
 
-## <a name="adding-search-results-to-a-working-set"></a>将搜索结果添加到工作集
+## <a name="adding-search-results-to-a-review-set"></a>将搜索结果添加到审阅集
 
-当您准备收集和处理整个搜索结果时, 可以通过将其添加到工作集中来执行此操作。 有关详细信息, 请参阅[将数据添加到工作集](add-data-to-working-set.md)。 
+当您准备收集和处理整个搜索结果时, 可以通过将其添加到审阅集来执行此操作。 有关详细信息, 请参阅[将数据添加到审阅集](add-data-to-review-set.md)。 

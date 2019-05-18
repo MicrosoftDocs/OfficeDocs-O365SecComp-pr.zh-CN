@@ -4,7 +4,7 @@ ms.author: markjjo
 author: markjjo
 manager: laurawi
 ms.date: 6/29/2018
-ms.audience: Admin
+audience: Admin
 ms.topic: hub-page
 ms.service: O365-seccomp
 localization_priority: Normal
@@ -12,17 +12,17 @@ search.appverid:
 - SPO160
 - MOE150
 ms.assetid: 143b3ab8-8cb0-4036-a5fc-6536d837bfce
-description: Office 365 提供了许多不同的电子数据展示工具, 可用于搜索和保存在不同位置 (如 Exchange 邮箱、SharePoint 和 OneDrive for business 网站、Office 365 组和 Skype for business 会话) 中找到的内容。
-ms.openlocfilehash: 51ef4e744f2347fe3cdaff757131baf0c5fe83bf
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+description: Office 365 提供了许多不同的电子数据展示工具, 可用于搜索和保存在不同位置 (如 Exchange 邮箱、SharePoint 和 OneDrive for Business 网站、Office 365 组和 Skype for business 会话) 中找到的内容。
+ms.openlocfilehash: 300de1a767e9ab3f6be81974a704506d367d68b4
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32256800"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34153314"
 ---
 # <a name="ediscovery-in-office-365"></a>Office 365 中的电子数据展示
 
-电子发现（亦称为"电子数据展示"）是用于识别和传递可用作法律案件证据的电子信息的过程。 您可以使用 Office 365 中的电子数据展示来搜索 Exchange Online 邮箱、Office 365 组、Microsoft 团队、SharePoint Online 和 OneDrive for business 网站以及 Skype for business 会话中的内容。 您可以使用 Security & 合规性中心中的内容搜索工具在相同的电子数据展示搜索中搜索邮箱和网站。 此外, 您还可以使用安全 & 合规性中心中的电子数据展示案例来标识、保留和导出邮箱和网站中的内容。 如果您的组织拥有 office 365 E5 订阅, 您可以使用 office 365 高级电子数据展示进一步分析内容。
+电子发现（亦称为"电子数据展示"）是用于识别和传递可用作法律案件证据的电子信息的过程。 您可以使用 Office 365 中的电子数据展示来搜索 Exchange Online 邮箱、Office 365 组、Microsoft 团队、SharePoint Online 和 OneDrive for business 网站以及 Skype for business 会话中的内容。 您可以使用 Security & 合规性中心中的内容搜索工具在相同的电子数据展示搜索中搜索邮箱和网站。 此外, 您还可以使用安全 & 合规性中心中的电子数据展示案例来标识、保留和导出邮箱和网站中的内容。 如果您的组织拥有 Office 365 E5 订阅, 您可以使用 Office 365 高级电子数据展示进一步分析内容。
   
 Office 365 提供以下电子数据展示工具:
   
@@ -39,7 +39,7 @@ Office 365 提供以下电子数据展示工具:
   
 |**主题**|**说明**|
 |:-----|:-----|
-|[在安全 & 合规中心中运行内容搜索](run-a-content-search-in-the-security-and-compliance-center.md) <br/> |了解如何使用内容搜索工具在单个搜索的 Office 365 组织中搜索邮箱、公用文件夹、Office 365 组、Microsoft 团队、SharePoint Online 网站、一个驱动器用于商业位置和 Skype for business 对话。  <br/> |
+|[在安全 & 合规中心中运行内容搜索](run-a-content-search-in-the-security-and-compliance-center.md) <br/> |了解如何使用内容搜索工具在单个搜索的 Office 365 组织中搜索邮箱、公用文件夹、Office 365 组、Microsoft 团队、SharePoint Online 网站、一个驱动器用于商业位置和 Skype for Business 对话。  <br/> |
 |[内容搜索的关键字查询和搜索条件](keyword-queries-and-search-conditions.md) <br/> |了解可用于在 Office 365 组织中搜索邮箱和网站中的内容的电子邮件和文件属性和搜索条件。  <br/> |
 |[查看内容搜索结果的关键字统计信息](view-keyword-statistics-for-content-search.md) <br/> |了解如何使用搜索统计信息显示和比较一个或多个内容搜索的统计信息, 以及如何配置新的和现有的搜索以在搜索查询中返回每个关键字的统计信息。  <br/> |
 |[在安全 & 合规中心中批量编辑内容搜索](bulk-edit-content-searches.md) <br/> |了解如何批量编辑一个或多个内容搜索的搜索查询和内容位置。  <br/> |
@@ -71,7 +71,7 @@ Office 365 提供以下电子数据展示工具:
 |[在安全 & 合规中心中管理电子数据展示事例](manage-ediscovery-cases.md) <br/> |了解如何在安全 & 合规中心中创建和管理电子数据展示事例。  <br/> |
 |[在 Office?? 中分配电子数据展示权限？365安全 & 合规中心](assign-ediscovery-permissions.md) <br/> |了解如何在安全 & 合规中心中分配电子数据展示权限。 您可以分配权限以让用户创建电子数据展示事例、创建与电子数据展示事例关联的保留、运行内容搜索、预览搜索结果和导出搜索结果。  <br/> |
 |[在 Office 365 中的电子数据展示事例中创建保留报告](create-a-report-on-holds-in-ediscovery-cases.md) <br/> |了解如何使用本文中的 Windows PowerShell 脚本生成一个报告, 其中包含有关与 Security & 合规中心中的电子数据展示事例相关联的所有保留的信息。  <br/> |
-|[使用脚本将用户添加到安全 & 合规性中心的电子数据展示事例中的保留项](use-a-script-to-add-users-to-a-hold-in-ediscovery.md) <br/> |了解如何使用本文中的 Windows PowerShell 脚本快速将邮箱和 OneDrive for business 网站添加到与 Security & 合规中心中的电子数据展示事例相关联的新保留中的用户列表。  <br/> |
+|[使用脚本将用户添加到安全 & 合规性中心的电子数据展示事例中的保留项](use-a-script-to-add-users-to-a-hold-in-ediscovery.md) <br/> |了解如何使用本文中的 Windows PowerShell 脚本快速将邮箱和 OneDrive for Business 网站添加到与 Security & 合规中心中的电子数据展示事例相关联的新保留中的用户列表。  <br/> |
 |[在 Office 365 审核日志中搜索电子数据展示活动](search-for-ediscovery-activities-in-the-audit-log.md) <br/> |了解如何在 Office 365 审核日志中搜索与创建和管理电子数据展示事例和内容搜索相关的活动。  <br/> |
    
 [Return to top](ediscovery.md#top)

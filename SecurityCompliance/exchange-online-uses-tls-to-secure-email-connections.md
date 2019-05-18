@@ -4,7 +4,7 @@ ms.author: tracyp
 author: MSFTTracyP
 manager: laurawi
 ms.date: 8/2/2018
-ms.audience: ITPro
+audience: ITPro
 ms.topic: reference
 ms.service: O365-seccomp
 localization_priority: Normal
@@ -16,12 +16,12 @@ ms.collection:
 - M365-security-compliance
 - Strat_O365_IP
 description: 了解 Exchange Online 和 Office 365 如何使用传输层安全性 (TLS) 和转发保密 (FS) 来保护电子邮件通信。 此外, 还可获取 Microsoft 为 Exchange Online 颁发的证书的相关信息。
-ms.openlocfilehash: e80f477c807f3a7ad5f751e0987b191024c816d9
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: f23b71984302639835537beb757e9089f44ee0c9
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32255630"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34152874"
 ---
 # <a name="how-exchange-online-uses-tls-to-secure-email-connections-in-office-365"></a>Exchange Online 如何使用 TLS 保护 Office 365 中的电子邮件连接
 
@@ -29,7 +29,7 @@ ms.locfileid: "32255630"
   
 ## <a name="tls-basics-for-office-365-and-exchange-online"></a>Office 365 和 Exchange Online 的 TLS 基础
 
-传输层安全性 (TLS) 和 TLS 之前的 SSL 都是一种加密协议，通过使用安全证书加密计算机之间的连接来保护网络通信的安全。 TLS 取代了安全套接字层 (SSL)，并常被称为 SSL 3.1。 对于 exchange Online, 我们使用 TLS 来加密 exchange 服务器与 exchange 服务器和其他服务器 (如内部部署 Exchange 服务器或收件人的邮件服务器) 之间的连接。 加密连接后，所有通过该连接发送的数据都将通过加密通道进行发送。 然而，如果你要转发通过 TLS 加密的连接发送的邮件，则该邮件不一定是加密的。 这是因为, 在简单的术语中, TLS 不会对邮件进行加密, 而只是连接。
+传输层安全性 (TLS) 和 TLS 之前的 SSL 都是一种加密协议，通过使用安全证书加密计算机之间的连接来保护网络通信的安全。 TLS 取代了安全套接字层 (SSL)，并常被称为 SSL 3.1。 对于 Exchange Online, 我们使用 TLS 来加密 Exchange 服务器与 Exchange 服务器和其他服务器 (如内部部署 Exchange 服务器或收件人的邮件服务器) 之间的连接。 加密连接后，所有通过该连接发送的数据都将通过加密通道进行发送。 然而，如果你要转发通过 TLS 加密的连接发送的邮件，则该邮件不一定是加密的。 这是因为, 在简单的术语中, TLS 不会对邮件进行加密, 而只是连接。
   
 如果您想要加密邮件，您需要使用一种加密技术对邮件内容进行加密，例如 Office 邮件加密。 有关 Office 365 中邮件加密选项的信息，请参阅 [Email encryption in Office 365](email-encryption.md)和 [Office 365 Message Encryption (OME)](ome.md)。 
   
@@ -39,7 +39,7 @@ ms.locfileid: "32255630"
 
 Exchange Online 服务器始终通过 TLS 1.2 加密到我们数据中心其他 Exchange Online 服务器的连接。当你发送邮件至 Office 365 组织内的收件人时，该电子邮件将自动通过使用 TLS 加密的连接发送。此外，你发送至其他 Office 365 客户的所有电子邮件都将通过使用 TLS 加密的连接发送，并使用向前保密进行保护。
   
-## <a name="how-office-365-uses-tls-between-office-365-and-external-trusted-partners"></a>office 365 如何在 office 365 和外部的受信任合作伙伴之间使用 TLS
+## <a name="how-office-365-uses-tls-between-office-365-and-external-trusted-partners"></a>Office 365 如何在 Office 365 和外部的受信任合作伙伴之间使用 TLS
 
 默认情况下，Exchange Online 始终使用操作 TLS。 这意味着 Exchange Online 会始终尝试首先通过最安全的 TLS 版本加密连接，而后沿着 TLS 密码列表一直往下，直到找到一个双方都同意的版本进行加密。 除非您已配置 Exchange Online 以确保仅通过安全连接发送到该收件人的邮件, 否则, 如果收件人组织不支持 TLS 加密, 则邮件将以未加密的形式发送。 操作 TLS 对于多数企业已够用。 但是, 对于具有合规性要求 (如医疗、银行或政府组织) 的企业, 可以将 Exchange Online 配置为需要或强制 TLS。 有关说明, 请参阅[在 Office 365 中使用连接器配置邮件流](https://technet.microsoft.com/library/ms.exch.eac.connectorselection%28v=exchg.150%29.aspx)。
   

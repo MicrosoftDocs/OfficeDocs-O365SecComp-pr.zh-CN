@@ -4,7 +4,7 @@ ms.author: markjjo
 author: markjjo
 manager: laurawi
 ms.date: 4/13/2017
-ms.audience: Admin
+audience: Admin
 ms.topic: overview
 ms.service: O365-seccomp
 localization_priority: Normal
@@ -16,12 +16,12 @@ search.appverid:
 - MOE150
 ms.assetid: 8f20ca4f-a908-46ec-99e6-9890d269ecf2
 description: '了解在 Office 365 中使用电子数据展示工具的搜索运行中估计的估计和实际搜索结果可能有所不同。 '
-ms.openlocfilehash: d3a34a58f9bd8213922824e34a77742f5cd4c36b
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: dfa6895f464e1a10f30bd642ef6b11e0869a7e5d
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32257768"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34153354"
 ---
 # <a name="differences-between-estimated-and-actual-ediscovery-search-results-in-office-365"></a>Office 365 中的预计和实际电子数据展示搜索结果之间的差异
 
@@ -51,7 +51,7 @@ ms.locfileid: "32257768"
   
 以下是这些区别的一些原因:
   
-- **估计结果的方式**-搜索结果的估计值就是满足搜索查询条件的项目的估计 (而不是实际计数)。 若要编译 exchange 项目的估计, 请通过您正在使用的电子数据展示工具从 Exchange 数据库请求满足搜索条件的邮件 id 列表。 但是, 当您导出搜索结果时, 将重新运行搜索, 并从 Exchange 数据库检索实际邮件。 因此, 这些差异可能是由估计的项目数和实际项目数确定导致的。 
+- **估计结果的方式**-搜索结果的估计值就是满足搜索查询条件的项目的估计 (而不是实际计数)。 若要编译 Exchange 项目的估计, 请通过您正在使用的电子数据展示工具从 Exchange 数据库请求满足搜索条件的邮件 Id 列表。 但是, 当您导出搜索结果时, 将重新运行搜索, 并从 Exchange 数据库检索实际邮件。 因此, 这些差异可能是由估计的项目数和实际项目数确定导致的。 
     
 - 在**估计和导出搜索结果之间发生的更改**-当您导出搜索结果时, 将重新启动搜索以收集满足搜索条件的搜索索引中的最新项目。 在收集了估计的搜索结果与导出搜索结果之间的时间间隔内, 可能会创建、发送或接收与搜索条件相匹配的其他项目。 在估计搜索结果后, 搜索索引中的项也可能不再存在, 因为它们是在导出搜索结果之前从内容位置清除的。 缓解此问题的一种方法是为电子数据展示搜索指定日期范围。 另一种方法是对内容位置设置保留, 以便保留和不清除项目。 
     
@@ -65,7 +65,7 @@ ms.locfileid: "32257768"
     
     不从组织中的每个位置导出未编制索引的项目的原因是因为它可能会增加导出错误的可能性, 并增加导出和下载搜索结果所需的时间。
     
-- **Raw 文件格式与导出的文件格式**-对于 Exchange 项目, 将使用原始 Exchange 邮件大小计算搜索结果的估计大小。 但是, 电子邮件将导出为 PST 文件或单个邮件 (格式为 .eml 文件)。 这两个导出选项都使用原始 Exchange 邮件的不同文件格式, 这会导致导出的文件总大小与估计的文件大小不同。 
+- **Raw 文件格式与导出的文件格式**-对于 Exchange 项目, 将使用原始 Exchange 邮件大小计算搜索结果的估计大小。 但是, 电子邮件将导出为 PST 文件或单个邮件 (格式为 .EML 文件)。 这两个导出选项都使用原始 Exchange 邮件的不同文件格式, 这会导致导出的文件总大小与估计的文件大小不同。 
     
 - **文档版本**-对于 SharePoint 文档, 预计的搜索结果中不包含文档的多个版本。 但您可以选择在导出搜索结果时包括所有文档版本, 这将增加导出文档的实际数量 (以及总大小)。 
     
@@ -75,7 +75,7 @@ ms.locfileid: "32257768"
     
 ## <a name="exporting-unindexed-items-from-the-ediscovery-center-in-sharepoint-online"></a>从 SharePoint Online 中的电子数据展示中心导出未编制索引的项目
 
-在 SharePoint Online 中的电子数据展示中心中, 您可以选择在导出电子数据展示搜索结果时包括未编制索引的内容 (从 Exchange 和 SharePoint)。 为此, 请选择 "**包括已加密的项或具有无法识别的格式**" 选项。 未编制索引的项目 (也称为 sharepoint 中的 uncrawlable) 是 Exchange 和 SharePoint 中的项目, 由于某些原因没有为搜索编制索引。 在您导出搜索结果时包括的**exchange 索引错误**报告中列出了未编制索引的 exchange 项目。 同样, **sharepoint 索引错误**报告中列出了未编制索引的 sharepoint 项目。 导出未编制索引的项目时, 会将其下载到名为**Uncrawlable**的文件夹中。 PST 文件中包含未编制索引的 Exchange 项目;来自 SharePoint 的每个未编制索引的文档也会下载。 在每个索引错误报告中列出未编制索引的项目数 (如果有)。 报告中未编制索引的项目数应与下载的未编制索引的项目数相匹配。 
+在 SharePoint Online 中的电子数据展示中心中, 您可以选择在导出电子数据展示搜索结果时包括未编制索引的内容 (从 Exchange 和 SharePoint)。 为此, 请选择 "**包括已加密的项或具有无法识别的格式**" 选项。 未编制索引的项目 (也称为 SharePoint 中的 uncrawlable) 是 Exchange 和 SharePoint 中的项目, 由于某些原因没有为搜索编制索引。 在您导出搜索结果时包括的**Exchange 索引错误**报告中列出了未编制索引的 exchange 项目。 同样, **Sharepoint 索引错误**报告中列出了未编制索引的 sharepoint 项目。 导出未编制索引的项目时, 会将其下载到名为**Uncrawlable**的文件夹中。 PST 文件中包含未编制索引的 Exchange 项目;来自 SharePoint 的每个未编制索引的文档也会下载。 在每个索引错误报告中列出未编制索引的项目数 (如果有)。 报告中未编制索引的项目数应与下载的未编制索引的项目数相匹配。 
   
  **如果导出的未编制索引的项目数与索引错误报告中的项目数不匹配, 有哪些原因？** 如前所述, 在运行搜索估计和导出搜索结果之间, 可能已从 Office 365 中清除了项目。 对于未编制索引的项目, 可能会发生类似的差异。 例如, 当导出搜索结果时, 搜索索引可能是超时日期。 这意味着, 使用搜索结果导出的未编制索引的项目可能不会在索引错误报告中列出, 因为在导出搜索结果时未对项目编制索引。 这将导致要导出的索引项目数多于索引错误报告中列出的索引项目数。 同样, 索引错误报告中列出的未编制索引的项目在更新搜索索引之前, 可能已从 Office 365 中清除。 这会导致导出的未编制索引的项目少于索引错误报告中列出的项目。 
   

@@ -4,25 +4,25 @@ ms.author: krowley
 author: kccross
 manager: laurawi
 ms.date: 12/9/2016
-ms.audience: ITPro
+audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: 9d64867b-ebdb-4323-8e30-4560d76b4c97
 description: 更改业务需求有时可能需要将一个 Microsoft Exchange Online Protection (EOP) 组织（租户）分成两个单独的组织，将两个组织合并为一个组织，或将您的域和 EOP 设置从一个组织移动到另一个组织。
-ms.openlocfilehash: 976594a3f28f2d120270dfabbf708ecb5815ad5c
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: af773b1ecd3006f8751e353bb5233522f0dbad42
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32256292"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34150114"
 ---
 # <a name="move-domains-and-settings-from-one-eop-organization-to-another-eop-organization"></a>将域和设置从一个 EOP 组织移动到另一个 EOP 组织
 
 更改业务需求有时可能需要将一个 Microsoft Exchange Online Protection (EOP) 组织（租户）分成两个单独的组织，将两个组织合并为一个组织，或将您的域和 EOP 设置从一个组织移动到另一个组织。从一个 EOP 组织移动到另一个 EOP 组织极具挑战性，但通过一些基本的远程 Windows PowerShell 脚本和少量的准备工作，您便可以通过相对较小的维护窗口实现此目标。 
   
 > [!NOTE]
->  仅可将设置稳定可靠地从一个 EOP 独立 (Standard) 组织移动到另一个 EOP Standard 或 Exchange Enterprise CAL with Services (EOP Premium) 组织，或从一个 EOP Premium 组织移动到另一个 EOP Premium 组织。 由于某些高级功能在 EOP 标准组织中不受支持, 因此从 EOP premium 组织移动到 EOP 标准组织可能不会成功。 >  这些说明是针对 EOP 仅筛选组织。 从一个 Exchange Online 组织移动到另一个 Exchange Online 组织还有其他一些注意事项。 Exchange Online 组织不在这些说明的范畴内。 
+>  仅可将设置稳定可靠地从一个 EOP 独立 (Standard) 组织移动到另一个 EOP Standard 或 Exchange Enterprise CAL with Services (EOP Premium) 组织，或从一个 EOP Premium 组织移动到另一个 EOP Premium 组织。 由于某些高级功能在 EOP 标准组织中不受支持, 因此从 EOP Premium 组织移动到 EOP 标准组织可能不会成功。 >  这些说明是针对 EOP 仅筛选组织。 从一个 Exchange Online 组织移动到另一个 Exchange Online 组织还有其他一些注意事项。 Exchange Online 组织不在这些说明的范畴内。 
   
 在以下示例中，Contoso, Ltd. 已与 Contoso Suites 合并。下图显示了将域、邮件用户和组，以及设置从源 EOP 组织 (contoso.onmicrosoft.com) 移动到目标 EOP 组织 (contososuites.onmicrosoft.com) 的过程。
   

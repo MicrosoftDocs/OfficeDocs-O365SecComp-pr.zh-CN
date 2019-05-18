@@ -4,7 +4,7 @@ ms.author: tracyp
 author: MSFTTracyP
 manager: laurawi
 ms.date: 11/10/2016
-ms.audience: ITPro
+audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
@@ -14,12 +14,12 @@ ms.assetid: a44764e9-a5d2-4c67-8888-e7fb871c17c7
 ms.collection:
 - M365-security-compliance
 description: 如果您使用出站垃圾邮件筛选来发送出站电子邮件，那么将始终启用该服务，从而保护使用此服务的组织及其目标收件人。
-ms.openlocfilehash: af48962879dd4ee1e5bbbe832f221e88900faa75
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: 517a78338f9a9e1c3611f78daf6f57e37c67f165
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32258401"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34153824"
 ---
 # <a name="configure-the-outbound-spam-policy"></a>配置出站垃圾邮件策略
 
@@ -38,7 +38,7 @@ ms.locfileid: "32258401"
   
 若要了解本主题中的过程可能适用的键盘快捷键，请参阅 **Exchange 管理中心内的键盘快捷键**。
   
-还可以通过远程 PowerShell 执行以下过程。 使用[HostedOutboundSpamFilterPolicy](http://technet.microsoft.com/library/8f15c83c-c10a-4d9d-b135-35321430bdc2.aspx) cmdlet 可查看您的设置, 以及用于编辑出站垃圾邮件策略设置的[HostedOutboundSpamFilterPolicy](http://technet.microsoft.com/library/665d1b04-d4b5-4a0e-811a-4e37096ccbfd.aspx) 。 若要了解如何使用 Windows PowerShell 连接到 exchange online protection, 请参阅[连接到 exchange online protection PowerShell](https://go.microsoft.com/fwlink/p/?linkid=627290)。 若要了解如何使用 Windows PowerShell 连接到 Exchange Online，请参阅[连接到 Exchange Online PowerShell](https://go.microsoft.com/fwlink/p/?linkid=396554)。
+还可以通过远程 PowerShell 执行以下过程。 使用[HostedOutboundSpamFilterPolicy](http://technet.microsoft.com/library/8f15c83c-c10a-4d9d-b135-35321430bdc2.aspx) cmdlet 可查看您的设置, 以及用于编辑出站垃圾邮件策略设置的[HostedOutboundSpamFilterPolicy](http://technet.microsoft.com/library/665d1b04-d4b5-4a0e-811a-4e37096ccbfd.aspx) 。 若要了解如何使用 Windows PowerShell 连接到 Exchange Online Protection, 请参阅[连接到 Exchange Online Protection PowerShell](https://go.microsoft.com/fwlink/p/?linkid=627290)。 若要了解如何使用 Windows PowerShell 连接到 Exchange Online，请参阅[连接到 Exchange Online PowerShell](https://go.microsoft.com/fwlink/p/?linkid=396554)。
   
 ## <a name="use-the-eac-to-edit-the-default-outbound-spam-policy"></a>使用 EAC 编辑默认出站垃圾邮件策略
 <a name="sectionSection1"> </a>
@@ -61,7 +61,7 @@ ms.locfileid: "32258401"
     
 4. 单击“保存”****。 右侧窗格中将会显示默认策略设置的摘要。
     
-## <a name="for-more-information"></a>有关详细信息
+## <a name="for-more-information"></a>详细信息
 <a name="sectionSection2"> </a>
 
 [出站邮件的高风险传递池](high-risk-delivery-pool-for-outbound-messages.md)

@@ -4,7 +4,7 @@ ms.author: krowley
 author: kccross
 manager: laurawi
 ms.date: 12/9/2016
-ms.audience: ITPro
+audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
@@ -14,12 +14,12 @@ ms.assetid: c534a35d-b121-45da-9d0a-ce738ce51fce
 ms.collection:
 - M365-security-compliance
 description: 本主题提供了有关反垃圾邮件保护的常见问题和解答。 解答适用于 Microsoft Exchange Online 和 Exchange Online Protection (EOP) 客户。
-ms.openlocfilehash: fa2709c995ff9ef83213b86e079a778c61bef3a2
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: 9ea57d34e14697a0dec9005a7377f320ac53ed81
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32242490"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34152374"
 ---
 # <a name="anti-spam-protection-faq"></a>反垃圾邮件保护常见问题解答
 
@@ -73,9 +73,9 @@ A. 可以通过几种方式将垃圾邮件和非垃圾邮件提交给 Microsoft 
   
 A. 是的, 例如, 您可以在 Microsoft 365 管理中心中获取垃圾邮件检测报告。 此报告将垃圾邮件数量显示为唯一邮件的计数。 有关报告的详细信息, 请参阅以下链接:
   
-exchange online 客户: [exchange online 中的监视、报告和邮件跟踪](http://technet.microsoft.com/library/87bdeeae-bd80-4a3b-95c5-62fbaf97c2e8.aspx)
+Exchange Online 客户: [Exchange online 中的监视、报告和邮件跟踪](http://technet.microsoft.com/library/87bdeeae-bd80-4a3b-95c5-62fbaf97c2e8.aspx)
   
-exchange online protection 客户: [exchange online protection 中的报告和邮件跟踪](eop/reporting-and-message-trace-in-exchange-online-protection.md)
+Exchange Online Protection 客户: [Exchange Online protection 中的报告和邮件跟踪](eop/reporting-and-message-trace-in-exchange-online-protection.md)
   
  **问：有人发送一封邮件给我，但是我找不到它。 我怀疑此邮件可能被检测为垃圾邮件了。 有什么工具可以让我找到这封邮件吗？**
   

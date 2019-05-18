@@ -4,7 +4,7 @@ ms.author: stephow
 author: stephow-MSFT
 manager: laurawi
 ms.date: ''
-ms.audience: Admin
+audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Priority
@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 创建保留标签和敏感度标签后，你将希望了解它们如何在租户中使用。 借助 Microsoft 365 合规中心和 Microsoft 365 安全中心中的标签分析，你可以快速查看最常用的标签以及它们的应用位置。
-ms.openlocfilehash: d0289eb79dca04262ef61d58a8e622ae6d7cbe93
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: 297987d420b5ed05bf4fdeb86513bc7c4ddec609
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32254534"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34150224"
 ---
 # <a name="view-label-usage-with-label-analytics"></a>使用标签分析查看标签使用情况
 

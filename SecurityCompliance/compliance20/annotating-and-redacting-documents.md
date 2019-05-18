@@ -1,10 +1,10 @@
 ---
-title: 查看工作集中的文档
+title: 查看审阅集中的文档
 ms.author: markjjo
 author: markjjo
 manager: laurawi
 ms.date: ''
-ms.audience: Admin
+audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
@@ -14,13 +14,13 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: dd708554e9b89c8f1057cffb1bcbaddb302cb253
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: 4ee4c2eb92ee9ca5c155ecfccf3b391e86a03696
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32242530"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34151874"
 ---
-# <a name="view-documents-in-a-working-set"></a>查看工作集中的文档
+# <a name="view-documents-in-a-review-set"></a>查看审阅集中的文档
 
 内容即将推出。

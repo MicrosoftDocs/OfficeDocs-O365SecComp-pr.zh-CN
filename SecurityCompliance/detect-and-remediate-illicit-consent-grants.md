@@ -4,7 +4,7 @@ ms.author: chrfox
 author: chrfox
 manager: laurawi
 ms.date: 4/23/2018
-ms.audience: ITPro
+audience: ITPro
 ms.topic: article
 ms.collection:
 - o365_security_incident_response
@@ -14,12 +14,12 @@ localization_priority: Normal
 search.appverid:
 - MET150
 description: 了解如何识别和修正在 Office 365 中的非法许可授予攻击。
-ms.openlocfilehash: 658183b3e5a3089425312ee14c6663485e0543ce
-ms.sourcegitcommit: e23b84ef4eee9cccec7205826b71ddfe9aaac2f8
+ms.openlocfilehash: 5e89e6cb39c04b708ffe0a49a2cd41d6a775e4a4
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33402950"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34150274"
 ---
 # <a name="detect-and-remediate-illicit-consent-grants-in-office-365"></a>检测和修正 Office 365 中的非法授权
 
@@ -117,5 +117,5 @@ ms.locfileid: "33402950"
 - [我的应用程序列表中的意外应用程序](https://docs.microsoft.com/azure/active-directory/application-access-unexpected-application)通过在实现时可能需要执行的各种操作来指导管理员。在遇到意外应用程序时, 将对数据进行访问。
 - [将应用程序与 Azure Active Directory 集成] (https://docs.microsoft.com/azure/active-directory/active-directory-apps-permissions-consent)是对同意和权限的高级别概述。  请特别注意["同意框架](https://docs.microsoft.com/azure/active-directory/develop/active-directory-integrating-applications#overview-of-the-consent-framework)" 部分的概述。
 - [开发应用程序时遇到的问题](https://docs.microsoft.com/azure/active-directory/active-directory-application-dev-development-content-map)提供了指向各种同意相关文章的链接。
-- [azure Active Directory (azure AD) 中的应用程序和服务主体对象](https://docs.microsoft.com/azure/active-directory/develop/active-directory-application-objects)概述了应用程序和服务主体对象, 这些对象是应用程序模型的核心。
+- [Azure Active Directory (AZURE AD) 中的应用程序和服务主体对象](https://docs.microsoft.com/azure/active-directory/develop/active-directory-application-objects)概述了应用程序和服务主体对象, 这些对象是应用程序模型的核心。
 - "[管理对应用程序的访问](https://docs.microsoft.com/azure/active-directory/active-directory-managing-access-to-apps)" 是管理员管理用户对应用程序的访问权限所需的功能的概述。

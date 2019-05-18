@@ -4,7 +4,7 @@ ms.author: markjjo
 author: markjjo
 manager: laurawi
 ms.date: 6/29/2018
-ms.audience: End User
+audience: End User
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
@@ -13,18 +13,18 @@ search.appverid:
 - MOP150
 ms.assetid: bed936bc-0969-4a6d-a7a5-66305c14e958
 description: 了解管理员如何使用 Exchange Online PowerShell 和 CSV 文件将外部联系人批量导入到全局地址列表。
-ms.openlocfilehash: 2948332d7cdf2d1364b2b563f94efdb3e8d0672d
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: 08fe7666f03c7fe60555133292be9e27a9ffa413
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32244497"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34152204"
 ---
 # <a name="bulk-import-external-contacts-to-exchange-online"></a>将外部联系人批量导入到 Exchange Online
 
 **本文适用于管理员。您是否正在尝试将联系人导入您自己的邮箱？请参阅[将联系人导入到 Outlook](https://support.office.com/article/bb796340-b58a-46c1-90c7-b549b8f3c5f8)**
    
-您的公司是否有许多您想要在 Exchange Online 中的共享通讯簿 (也称为 "全局地址列表") 中包含的现有业务联系人？ 您是否要将外部联系人添加为通讯组的成员, 就像您可以与公司内部的用户进行操作一样？ 如果是这样, 您可以使用 exchange online PowerShell 和 CSV (逗号分隔值) 文件将外部联系人批量导入 Exchange Online。 这是一个包含三个步骤的过程:
+您的公司是否有许多您想要在 Exchange Online 中的共享通讯簿 (也称为 "全局地址列表") 中包含的现有业务联系人？ 您是否要将外部联系人添加为通讯组的成员, 就像您可以与公司内部的用户进行操作一样？ 如果是这样, 您可以使用 Exchange Online PowerShell 和 CSV (逗号分隔值) 文件将外部联系人批量导入 Exchange Online。 这是一个包含三个步骤的过程:
   
 [步骤 1: 创建包含有关外部联系人的信息的 CSV 文件](#step-1-create-a-csv-file-that-contains-information-about-the-external-contacts)
 
@@ -42,10 +42,10 @@ ms.locfileid: "32244497"
 
 第一步是创建一个 CSV 文件, 其中包含有关要导入到 Exchange Online 的每个外部联系人的信息。 
   
-1. 将以下文本复制到记事本中的文本文件, 并使用文件名后缀 .csv 将其以 csv 文件的形式保存到您的桌面。例如, ExternalContacts。
+1. 将以下文本复制到记事本中的文本文件, 并使用文件名后缀 .csv 将其以 CSV 文件的形式保存到您的桌面。例如, ExternalContacts。
     
     > [!TIP]
-    > 如果您的语言包含特殊字符 (例如, **å**、 **ä**和**ö** in 瑞典语), 则在记事本中保存文件时, 请使用 utf-8 或其他 Unicode 编码保存 CSV 文件。 
+    > 如果您的语言包含特殊字符 (例如, **å**、 **ä**和**ö** in 瑞典语), 则在记事本中保存文件时, 请使用 UTF-8 或其他 Unicode 编码保存 CSV 文件。 
   
     ```
     ExternalEmailAddress,Name,FirstName,LastName,StreetAddress,City,StateorProvince,PostalCode,Phone,MobilePhone,Pager,HomePhone,Company,Title,OtherTelephone,Department,CountryOrRegion,Fax,Initials,Notes,Office,Manager
@@ -58,7 +58,7 @@ ms.locfileid: "32244497"
     > [!NOTE]
     > 此文本包含可删除的示例数据。 但不要删除或更改第一个 (标头) 行。 它包含外部联系人的所有属性。 
   
-2. 在 Microsoft Excel 中打开 csv 文件以编辑 csv 文件, 因为使用 Excel 编辑 csv 文件要容易得多。
+2. 在 Microsoft Excel 中打开 CSV 文件以编辑 CSV 文件, 因为使用 Excel 编辑 CSV 文件要容易得多。
     
 3. 为要导入到 Exchange Online 中的每个联系人创建一行。 填充尽可能多的单元格。 此信息将显示在每个联系人的共享通讯簿中。 
     
@@ -67,7 +67,7 @@ ms.locfileid: "32244497"
 
 ## <a name="step-2-create-the-external-contacts-with-powershell"></a>步骤 2: 使用 PowerShell 创建外部联系人
 
-下一步是使用您在步骤1和 PowerShell 中创建的 csv 文件以批量将 csv 文件中列出的外部联系人导入到 Exchange Online。 
+下一步是使用您在步骤1和 PowerShell 中创建的 CSV 文件以批量将 CSV 文件中列出的外部联系人导入到 Exchange Online。 
   
 1.  将 PowerShell 连接到您的 Exchange Online 组织。 有关分步说明, 请参阅[连接到 Exchange Online PowerShell](https://go.microsoft.com/fwlink/p/?LinkId=396554)。 在连接到 Exchange Online PowerShell 时, 请务必使用 Office 365 全局管理员帐户的用户名和密码。 
     
@@ -88,7 +88,7 @@ ms.locfileid: "32244497"
   
 5. 如有必要, **** ![请单击 "](media/O365-MDM-Policy-RefreshIcon.gif)刷新刷新" 图标更新列表, 并查看导入的外部联系人。 
     
-    导入的联系人将显示在 Outlook 和 web 上的 outlook 中的共享通讯簿中。
+    导入的联系人将显示在 Outlook 和 web 上的 Outlook 中的共享通讯簿中。
     
     > [!NOTE]
     > 您还可以通过转到 "**用户** \> **联系人**" 查看 Microsoft 365 管理中心中的联系人。 
@@ -123,7 +123,7 @@ ms.locfileid: "32244497"
     
 2. 单击联系人, 然后单击 "**编辑** ![编辑图标](media/ebd260e4-3556-4fb0-b0bb-cc489773042c.gif) " 以显示联系人的属性。 
     
-就是这么简单。 用户可以在通讯簿 Outlook 和 outlook 网页中查看联系人和其他信息。
+就是这么简单。 用户可以在通讯簿 Outlook 和 Outlook 网页中查看联系人和其他信息。
   
 ## <a name="add-more-external-contacts"></a>添加更多外部联系人
 

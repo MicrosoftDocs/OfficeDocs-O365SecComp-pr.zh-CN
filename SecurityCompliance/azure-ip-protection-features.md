@@ -4,7 +4,7 @@ ms.author: krowley
 author: kccross
 manager: laurawi
 ms.date: 6/29/2018
-ms.audience: ITPro
+audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
@@ -13,29 +13,29 @@ search.appverid:
 ms.assetid: 7ad6f58e-65d7-4c82-8e65-0b773666634d
 ms.collection:
 - M365-security-compliance
-description: 为了帮助保护你的信息的初始步骤, 从2018年7月起, 所有 azure 信息保护符合条件的租户在默认情况下将启用 azure 信息保护中的保护功能。 azure 信息保护中的保护功能以前在 Office 365 中称为 "权限管理" 或 "Azure RMS"。 如果你的组织具有 Office E3 服务计划或更高的服务计划, 你现在将通过 Azure 信息保护在我们推出这些功能时获取一个头开始保护信息。
-ms.openlocfilehash: 2484f9b335a6698894046aaf429fdad68d82491e
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+description: 为了帮助保护你的信息的初始步骤, 从2018年7月起, 所有 Azure 信息保护符合条件的租户在默认情况下将启用 Azure 信息保护中的保护功能。 Azure 信息保护中的保护功能以前在 Office 365 中称为 "权限管理" 或 "Azure RMS"。 如果你的组织具有 Office E3 服务计划或更高的服务计划, 你现在将通过 Azure 信息保护在我们推出这些功能时获取一个头开始保护信息。
+ms.openlocfilehash: f7c5126ddf1a15dde147e724ceced34d95eef185
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32243967"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34152224"
 ---
 # <a name="protection-features-in-azure-information-protection-rolling-out-to-existing-office-365-tenants"></a>Azure 信息保护中的保护功能向现有 Office 365 租户推出
 
-为了帮助保护你的信息的初始步骤, 从2018年7月起, 所有 azure 信息保护符合条件的租户在默认情况下将启用 azure 信息保护中的保护功能。 azure 信息保护中的保护功能以前在 Office 365 中称为 "权限管理" 或 "Azure RMS"。 如果你的组织具有 Office E3 服务计划或更高的服务计划, 你现在将通过 Azure 信息保护在我们推出这些功能时获取一个头开始保护信息。
+为了帮助保护你的信息的初始步骤, 从2018年7月起, 所有 Azure 信息保护符合条件的租户在默认情况下将启用 Azure 信息保护中的保护功能。 Azure 信息保护中的保护功能以前在 Office 365 中称为 "权限管理" 或 "Azure RMS"。 如果你的组织具有 Office E3 服务计划或更高的服务计划, 你现在将通过 Azure 信息保护在我们推出这些功能时获取一个头开始保护信息。
   
 ## <a name="changes-beginning-july-1-2018"></a>2018年7月1日开始的更改
 
 从2018年6月1日起, Microsoft 将为具有以下订阅计划之一的所有 Office 365 租户启用 Azure 信息保护中的保护功能:
   
-- office 365 邮件加密作为 office 365 E3 和 e5、Microsoft E3 和 e5、office 365 A1、A3 和 A5 以及 office 365 G3 和 G5 的一部分提供。 您无需额外的许可证即可接收 Azure 信息保护支持的新保护功能。 
+- Office 365 邮件加密作为 Office 365 E3 和 E5、Microsoft E3 和 E5、Office 365 A1、A3 和 A5 以及 Office 365 G3 和 G5 的一部分提供。 您无需额外的许可证即可接收 Azure 信息保护支持的新保护功能。 
     
-- 您还可以将 Azure 信息保护计划1添加到以下计划, 以接收新的 Office 365 邮件加密功能: Exchange Online 计划1、exchange online 计划2、Office 365 F1、office 365 Business Essentials、office 365 商业高级版或Office 365 企业版 E1。
+- 您还可以将 Azure 信息保护计划1添加到以下计划, 以接收新的 Office 365 邮件加密功能: Exchange Online 计划1、Exchange Online 计划2、Office 365 F1、Office 365 Business Essentials、Office 365 商业高级版或Office 365 企业版 E1。
     
 - 每个用户从 Office 365 邮件加密中受益的人都需要获得功能的许可。
     
-- 有关完整列表, 请参阅[Exchange Online 服务说明](https://technet.microsoft.com/library/exchange-online-service-description.aspx)for the Office 365 邮件加密。 
+- 有关完整列表, 请参阅[Exchange Online 服务说明](https://technet.microsoft.com/library/exchange-online-service-description.aspx)For the Office 365 邮件加密。 
     
 租户管理员可以在 Office 365 管理员门户中检查保护状态。 
   
@@ -47,13 +47,13 @@ Office 365 邮件加密利用了 Azure 信息保护中的保护功能。 在对 
   
 ## <a name="does-this-impact-me"></a>这会对我造成影响吗？
 
-如果你的 office 365 组织已购买符合条件的 office 365 许可证, 则你的租户将受此更改影响。
+如果你的 Office 365 组织已购买符合条件的 Office 365 许可证, 则你的租户将受此更改影响。
   
  **重要!** 如果您使用的是本地环境中的 Active Directory 权限管理服务 (AD RMS), 则必须立即退出此更改或迁移到 Azure 信息保护, 然后才能在接下来的30天内推出此更改。 有关如何选择退出的信息, 请参阅 "我使用 AD RMS, 如何选择退出？" ”中所述的过程安装本地化文件。 如果你更喜欢迁移, 请参阅[从 AD RMS 迁移到 Azure 信息保护。](https://docs.microsoft.com/azure/information-protection/plan-design/migrate-from-ad-rms-to-azure-rms)
   
 ## <a name="can-i-use-azure-information-protection-with-active-directory-rights-management-services-ad-rms"></a>是否可以将 Azure 信息保护用于 Active Directory 权限管理服务 (AD RMS)？
 
-不可以。 这不是一种受支持的部署方案。 在不考虑其他自愿退出步骤的情况下, 某些计算机可能会自动开始使用 Azure 权限管理服务, 同时还会连接到 AD RMS 群集。 此方案不受支持且具有不可靠的结果, 因此, 在接下来的30天内, 在我们推出这些新功能之前, 请务必选择退出此更改。 有关如何选择退出的信息, 请参阅 "我使用 AD RMS, 如何选择退出？" ”中所述的过程安装本地化文件。 如果你更喜欢迁移, 请参阅[从 AD RMS 迁移到 Azure 信息保护。](https://docs.microsoft.com/azure/information-protection/plan-design/migrate-from-ad-rms-to-azure-rms)
+否。 这不是一种受支持的部署方案。 在不考虑其他自愿退出步骤的情况下, 某些计算机可能会自动开始使用 Azure 权限管理服务, 同时还会连接到 AD RMS 群集。 此方案不受支持且具有不可靠的结果, 因此, 在接下来的30天内, 在我们推出这些新功能之前, 请务必选择退出此更改。 有关如何选择退出的信息, 请参阅 "我使用 AD RMS, 如何选择退出？" ”中所述的过程安装本地化文件。 如果你更喜欢迁移, 请参阅[从 AD RMS 迁移到 Azure 信息保护。](https://docs.microsoft.com/azure/information-protection/plan-design/migrate-from-ad-rms-to-azure-rms)
   
 ## <a name="how-do-i-know-if-im-using-ad-rms"></a>如何知道我是否在使用 AD RMS？
 
@@ -61,9 +61,9 @@ Office 365 邮件加密利用了 Azure 信息保护中的保护功能。 在对 
   
 1. 虽然可选, 但大多数 AD RMS 部署都会将服务连接点 (SCP) 发布到 Active Directory, 以便域计算机能够发现 AD RMS 群集。 
   
-使用 ADSI Edit 查看是否已在 Active Directory 中发布 SCP: cn = Configuration [server name]、CN = Services、CN = RightsManagementServices、cn = SCP
+使用 ADSI Edit 查看是否已在 Active Directory 中发布 SCP: CN = Configuration [server name]、CN = Services、CN = RightsManagementServices、CN = SCP
     
-2. 如果未使用 SCP, 则必须使用 windows 注册表为客户端服务发现或授权重定向配置连接到 AD RMS 群集的 Windows 计算机: HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\MSIPC\ServiceLocation 或 HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\MSIPC\ServiceLocation 
+2. 如果未使用 SCP, 则必须使用 Windows 注册表为客户端服务发现或授权重定向配置连接到 AD RMS 群集的 Windows 计算机: HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\MSIPC\ServiceLocation 或 HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\MSIPC\ServiceLocation 
   
 有关这些注册表配置的详细信息, 请参阅使用 Windows 注册表和[重定向授权服务器流量](https://docs.microsoft.com/azure/information-protection/rms-client/client-deployment-notes#redirecting-licensing-server-traffic)[启用客户端服务发现](https://docs.microsoft.com/azure/information-protection/rms-client/client-deployment-notes#enabling-client-side-service-discovery-by-using-the-windows-registry)。
     
@@ -73,7 +73,7 @@ Office 365 邮件加密利用了 Azure 信息保护中的保护功能。 在对 
   
 1. 在 Office 365 组织中使用具有全局管理员权限的工作或学校帐户, 启动 Windows PowerShell 会话并连接到 Exchange Online。 有关说明, 请参阅[连接到 Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell?view=exchange-ps)。
     
-2. 使用以下语法运行 get-irmconfiguration cmdlet:
+2. 使用以下语法运行 Get-irmconfiguration cmdlet:
     
   ```
   Set-IRMConfiguration -AutomaticServiceUpdateEnabled $false 

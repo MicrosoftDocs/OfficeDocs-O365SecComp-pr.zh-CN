@@ -4,7 +4,7 @@ ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
 ms.date: 05/14/2018
-ms.audience: ITPro
+audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
@@ -12,12 +12,12 @@ ms.collection: Ent_O365
 ms.custom: Ent_Solutions
 ms.assetid: 3033614b-e23b-4f68-9701-f62525eafaab
 description: '摘要: 使用这些分步说明部署一个新的独立 SharePoint Online 团队网站。'
-ms.openlocfilehash: 4cb60cd55f526592cb469d80a061375a4f556afe
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: 488f834f568e65d35a7186b85cc393f5a66b2900
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32256996"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34153394"
 ---
 # <a name="deploy-an-isolated-sharepoint-online-team-site"></a>部署独立的 SharePoint Online 团队网站
 
@@ -42,13 +42,13 @@ ms.locfileid: "32256996"
 
 确定与独立团队网站的成员对应的用户帐户集, 这些用户帐户将对存储在网站中的资源进行协作。
   
-如果您通过 Office 365 管理用户帐户和组, 并且想要使用 PowerShell, 请创建其 upn 的列表。 如果有大量的网站成员, 则可以将 upn 列表存储在一个文本文件中, 并将它们全部添加到一个 PowerShell 命令中。
+如果您通过 Office 365 管理用户帐户和组, 并且想要使用 PowerShell, 请创建其 Upn 的列表。 如果有大量的网站成员, 则可以将 Upn 列表存储在一个文本文件中, 并将它们全部添加到一个 PowerShell 命令中。
   
 ### <a name="step-3-list-the-viewers-for-the-site"></a>步骤 3: 列出网站的查看者
 
 确定与独立团队网站的查看者相对应的用户帐户集, 这些用户可以查看存储在网站中的资源, 但不能对其内容进行修改, 也不能直接对其内容进行协作。
   
-如果您通过 Office 365 管理用户帐户和组, 并且想要使用 PowerShell, 请创建其 upn 的列表。 如果有大量的网站成员, 则可以将 upn 列表存储在一个文本文件中, 并将它们全部添加到一个 PowerShell 命令中。
+如果您通过 Office 365 管理用户帐户和组, 并且想要使用 PowerShell, 请创建其 Upn 的列表。 如果有大量的网站成员, 则可以将 Upn 列表存储在一个文本文件中, 并将它们全部添加到一个 PowerShell 命令中。
   
 网站的查看者可能包括行政管理、法律顾问或部门间利益干系人。
   
@@ -99,13 +99,13 @@ ms.locfileid: "32256996"
     
 3. 将步骤3中的用户列表添加到 "网站查看者访问" 组
     
-如果通过 Windows Server ad 管理用户帐户和组, 请使用正常的 Windows server ad 用户和组管理程序将用户添加到相应的访问组, 并等待与 Office 365 订阅同步。
+如果通过 Windows Server AD 管理用户帐户和组, 请使用正常的 Windows Server AD 用户和组管理程序将用户添加到相应的访问组, 并等待与 Office 365 订阅同步。
   
-如果您通过 office 365 管理用户帐户和组, 则可以使用 office 管理中心或 PowerShell。 如果有任何访问组的组名称重复, 则应使用 Office 管理中心。
+如果您通过 Office 365 管理用户帐户和组, 则可以使用 Office 管理中心或 PowerShell。 如果有任何访问组的组名称重复, 则应使用 Office 管理中心。
   
 对于 Office 管理中心, 使用已分配有用户帐户管理员或公司管理员角色的用户帐户登录, 并使用组将相应的用户帐户和组添加到相应的访问组。
   
-对于 PowerShell, 首先[与 Azure Active Directory PowerShell for Graph 模块进行连接](https://docs.microsoft.com/office365/enterprise/powershell/connect-to-office-365-powershell#connect-with-the-azure-active-directory-powershell-for-graph-module)。
+对于 PowerShell, 首先[与 Azure Active Directory PowerShell For Graph 模块进行连接](https://docs.microsoft.com/office365/enterprise/powershell/connect-to-office-365-powershell#connect-with-the-azure-active-directory-powershell-for-graph-module)。
   
 接下来, 使用以下命令块将单个用户帐户添加到访问组中:
   
@@ -116,9 +116,9 @@ Add-AzureADGroupMember -RefObjectId (Get-AzureADUser | Where { $_.UserPrincipalN
 ```
 
 > [!TIP]
-> 对于包含所有 powershell 命令的文本文件和基于您的组和用户帐户名称生成 PowerShell 命令的 Excel 配置工作表, 请下载[独立的 SharePoint Online 团队网站部署工具包](https://gallery.technet.microsoft.com/Isolated-SharePoint-Online-0b364907)。 
+> 对于包含所有 PowerShell 命令的文本文件和基于您的组和用户帐户名称生成 PowerShell 命令的 Excel 配置工作表, 请下载[独立的 SharePoint Online 团队网站部署工具包](https://gallery.technet.microsoft.com/Isolated-SharePoint-Online-0b364907)。 
   
-如果您为文本文件中的任何访问组存储了用户帐户的 upn, 则可以使用下面的 PowerShell 命令块一次添加所有这些组:
+如果您为文本文件中的任何访问组存储了用户帐户的 Upn, 则可以使用下面的 PowerShell 命令块一次添加所有这些组:
   
 ```
 $grpName="<display name of the access group>"
@@ -157,7 +157,7 @@ Get-AzureADGroupMember -ObjectId (Get-AzureADGroup | Where { $_.DisplayName -eq 
   
 ## <a name="phase-2-create-and-configure-the-isolated-team-site"></a>阶段 2: 创建和配置独立的团队网站
 
-在此阶段中, 您将创建独立的 sharepoint online 网站, 并将默认 SharePoint online 权限级别的权限配置为使用新的基于 Azure AD 的访问组。
+在此阶段中, 您将创建独立的 SharePoint Online 网站, 并将默认 SharePoint Online 权限级别的权限配置为使用新的基于 Azure AD 的访问组。
   
 首先, 使用这些步骤创建 SharePoint Online 团队网站。
   
@@ -173,9 +173,9 @@ Get-AzureADGroupMember -ObjectId (Get-AzureADGroup | Where { $_.DisplayName -eq 
     
 6. 在 "**团队网站说明" 中,** 键入网站用途的可选说明。
     
-7. 在“**隐私设置**”中，选择“**专用 - 仅成员可以访问此网站**”，然后单击“**下一步**”。
+7. 在“隐私设置”中，选择“专用 - 仅成员可以访问此网站”，然后单击“下一步”************。
     
-8. 在“**希望添加哪些人员?**”窗格中，单击“**完成**”。
+8. 在“希望添加哪些人员?”窗格中，单击“完成”********。
     
 接下来, 从新的 SharePoint Online 团队网站配置权限。
   
@@ -213,9 +213,9 @@ Get-AzureADGroupMember -ObjectId (Get-AzureADGroup | Where { $_.DisplayName -eq 
     
 以下是这些权限设置的结果：
   
-- site name> Owners SharePoint 组包含网站管理员访问组, 其中所有成员都具有 "**完全控制**" 权限级别。 ** \<**
+- Site name> Owners SharePoint 组包含网站管理员访问组, 其中所有成员都具有 "**完全控制**" 权限级别。 ** \<**
     
-- site name> members SharePoint 组包含网站成员访问组, 其中所有成员都具有 "**编辑**" 权限级别。 ** \<**
+- Site name> members SharePoint 组包含网站成员访问组, 其中所有成员都具有 "**编辑**" 权限级别。 ** \<**
     
 - " ** \<网站 name> 访问者**" SharePoint 组包含 "网站查看者" 访问组, 其中所有成员都具有 "**读取**" 权限级别。
     

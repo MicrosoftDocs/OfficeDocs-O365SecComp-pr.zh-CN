@@ -3,18 +3,18 @@ title: 自动转发的消息报表
 ms.author: chrisda
 author: chrisda
 manager: serdars
-ms.audience: ITPro
+audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: b5543faa-44fa-44c5-8180-fb835e7e452d
 description: 管理员可以在 "Office 365 安全 & 合规中心" 的 "邮件流" 仪表板中了解自动转发的邮件报告。
-ms.openlocfilehash: a7556dd98e1381fe59a2a911dbfa27132f1aa44d
-ms.sourcegitcommit: e05e83212e7ca4e84f2ddb0de0297895b995338d
+ms.openlocfilehash: 81d6235e549b6eed792d069e66c69da1d40103ff
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/10/2019
-ms.locfileid: "33868610"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34158654"
 ---
 # <a name="auto-forwarded-messages-report"></a>自动转发的消息报表
 

@@ -4,7 +4,7 @@ ms.author: tracyp
 author: MSFTTracyP
 manager: laurawi
 ms.date: 12/15/2016
-ms.audience: ITPro
+audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
@@ -14,12 +14,12 @@ ms.assetid: 3aff33c5-1416-4867-a23b-e0c0c5b4d2be
 ms.collection:
 - M365-security-compliance
 description: 摘要： 本文介绍了 Office 365 如何在 DNS 中使用发件人策略框架 (SPF) TXT 记录，以确保目标电子邮件系统信任从自定义域发送的邮件。 这适用于从 Office 365 发送的出站邮件。 从 Office 365 发送给 Office 365 收件人的邮件始终可通过 SPF。
-ms.openlocfilehash: 5abe892eae4840b44a606f4004eb3b66a94accdc
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: 9c52f5d0f83ce90b4c46e0d377afcd02eadf224b
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32256536"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34152784"
 ---
 # <a name="how-office-365-uses-sender-policy-framework-spf-to-prevent-spoofing"></a>Office 365 如何使用发件人策略框架 (SPF) 来防止欺骗
 
@@ -241,7 +241,7 @@ cust-spf.exacttarget.com
 
 可以使用 nslookup 查看 DNS 记录，包括 SPF TXT 记录。或者，如果需要，还可以使用许多免费的联机工具来查看 SPF TXT 记录的内容。通过查看 SPF TXT 记录并遵循 include 语句链和重定向，可以确定记录需要的 DNS 查找次数。一些联机工具甚至会计算并显示查找次数。跟踪查找次数将有助于防止从组织发送的邮件触发接收服务器生成永久性错误（称为 permerror）。
   
-## <a name="for-more-information"></a>有关详细信息
+## <a name="for-more-information"></a>详细信息
 <a name="SPFTroubleshoot"> </a>
 
 需要有关添加 SPF TXT 记录的？我们提供有关更新多种流行域注册机构的 SPF (TXT) 记录的[分步操作说明](https://office.microsoft.com/en-us/office365-suite-help/create-dns-records-for-office-365-HA102851099.aspx?CTT=5&amp;origin=HA102818404)。[反垃圾邮件邮件头](anti-spam-message-headers.md)包括 Office 365 进行 SPF 检查时使用的语法和标头字段。 

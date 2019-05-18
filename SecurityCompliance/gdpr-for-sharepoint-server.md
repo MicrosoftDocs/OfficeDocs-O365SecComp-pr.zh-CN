@@ -3,17 +3,17 @@ title: 适用于 SharePoint Server 的 GDPR
 ms.author: mikeplum
 author: MikePlumleyMSFT
 manager: pamgreen
-ms.audience: ITPro
+audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Priority
 description: 了解如何解决本地 SharePoint Server 中的 GDPR 要求。
-ms.openlocfilehash: 84692799222be595d69f7a33a31b0ec3fe767c3d
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: 6da9d635506eafc2b976cf6a87f68370f40e327a
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32253886"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34152734"
 ---
 # <a name="gdpr-for-sharepoint-server"></a>适用于 SharePoint Server 的 GDPR
 
@@ -35,7 +35,9 @@ ms.locfileid: "32253886"
 
 对于文件共享和 SharePoint 站点和库，推荐的方法包括下列步骤：
 
-1.  **[安装并配置 Azure 信息保护扫描程序。](https://docs.microsoft.com/zh-CN/azure/information-protection/rms-client/client-admin-guide-install#options-to-install-the-azure-information-protection-client-for-users)**
+1.  
+  **
+  [安装并配置 Azure 信息保护扫描程序。](https://docs.microsoft.com/zh-CN/azure/information-protection/rms-client/client-admin-guide-install#options-to-install-the-azure-information-protection-client-for-users)**
 
     -   决定要使用的敏感数据类型。
 

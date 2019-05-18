@@ -4,7 +4,7 @@ ms.author: tracyp
 author: MSFTTracyP
 manager: laurawi
 ms.date: 7/16/2016
-ms.audience: ITPro
+audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
@@ -14,19 +14,19 @@ ms.assetid: 0cbaccf8-4afc-47e3-a36d-a84598a55fb8
 ms.collection:
 - M365-security-compliance
 description: 管理员可以了解如何将垃圾邮件路由到 Exchange Online Protection 中的用户垃圾邮件文件夹。
-ms.openlocfilehash: 30b115b5d7f8f02767e3e380b672341765052a9c
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: 390ba26167521ccea7b69e7fac21924c0b9ec7de
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32256660"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34153206"
 ---
 # <a name="ensure-that-spam-is-routed-to-each-users-junk-email-folder"></a>确保垃圾邮件已路由到每个用户的“垃圾邮件”文件夹
 
 > [!IMPORTANT]
 > 本主题仅适用于在混合部署中承载本地邮箱的 Exchange Online Protection (EOP) 客户。 其邮箱在 Office 365 中完全托管的 Exchange Online 客户无需运行这些命令。 
   
-EOP 客户的默认反垃圾邮件操作是将垃圾邮件移到收件人的 "垃圾邮件" 文件夹。 为了使此操作能够与本地邮箱配合使用, 必须在本地边缘或中心服务器上配置 Exchange 邮件流规则 (也称为传输规则), 以检测由 EOP 添加的垃圾邮件头。 这些邮件流规则将 set-organizationconfig cmdlet 的 SclJunkThreshold 属性使用的垃圾邮件可信度 (SCL) 设置为将垃圾邮件移到每个邮箱的 "垃圾邮件" 文件夹中。 
+EOP 客户的默认反垃圾邮件操作是将垃圾邮件移到收件人的 "垃圾邮件" 文件夹。 为了使此操作能够与本地邮箱配合使用, 必须在本地边缘或中心服务器上配置 Exchange 邮件流规则 (也称为传输规则), 以检测由 EOP 添加的垃圾邮件头。 这些邮件流规则将 Set-organizationconfig cmdlet 的 SclJunkThreshold 属性使用的垃圾邮件可信度 (SCL) 设置为将垃圾邮件移到每个邮箱的 "垃圾邮件" 文件夹中。 
   
 ### <a name="to-add-mail-flow-rules-to-ensure-spam-is-moved-to-the-junk-email-folder-by-using-windows-powershell"></a>添加邮件流规则, 以确保使用 Windows PowerShell 将垃圾邮件移动到 "垃圾邮件" 文件夹
 
@@ -64,5 +64,5 @@ EOP 客户的默认反垃圾邮件操作是将垃圾邮件移到收件人的 "�
 > 
 ## <a name="see-also"></a>另请参阅
 
-[new-transportrule cmdlet](https://technet.microsoft.com/library/bb125138%28v=exchg.160%29.aspx)
+[New-transportrule cmdlet](https://technet.microsoft.com/library/bb125138%28v=exchg.160%29.aspx)
 

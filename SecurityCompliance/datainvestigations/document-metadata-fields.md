@@ -4,7 +4,7 @@ ms.author: markjjo
 author: markjjo
 manager: laurawi
 ms.date: ''
-ms.audience: Admin
+audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: c4a7c479d730d5256efabe9120960b1590094779
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: 41e551850b47bec88f6dd8353c6db02048255e74
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32258120"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34150904"
 ---
 # <a name="document-metadata-fields-in-data-investigations-preview"></a>数据调查中的文档元数据字段 (预览)
 
@@ -40,7 +40,7 @@ ms.locfileid: "32258120"
 |日期                       | 是 (date)                                      |   是 (UTC 日期)        | 是         |
 |Deduped 复合路径      |                                                 |                         | 是         |
 |Deduped 保管人         |                                                 |                         | 是         |
-|Deduped 文件 id           |                                                 |                         | 是         |
+|Deduped 文件 Id           |                                                 |                         | 是         |
 |文档作者                | 是 (作者) *                                   |    是 (作者)         | 是         |
 |文档注释               | 是 (注释)                                  |                         | 是         |
 |Doc 公司                |                                                 |                         | 是         |

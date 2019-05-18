@@ -4,7 +4,7 @@ ms.author: markjjo
 author: markjjo
 manager: laurawi
 ms.date: ''
-ms.audience: Admin
+audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
@@ -14,16 +14,16 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: fa83a90448250a91d6c2ccbf43588ee18e00619c
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: 0b1b20a8b41803a945bc9f5c39cd0618c420b0c0
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32241259"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34151734"
 ---
 # <a name="manage-hold-notifications"></a>管理保留通知
 
-启动法律保留通知工作流后, 可以利用高级电子数据展示 (预览) 跟踪通信的状态。 "通信" 选项卡展示了高级电子数据展示 (预览版) 案例中的所有保留通知。 你可以在此处查看详细信息, 如已分配的保管人数量或已确认通知。
+启动法律保留通知工作流后, 可以利用高级电子数据展示来跟踪您的通信的状态。 "通信" 选项卡展示了高级电子数据展示事例中的所有保留通知。 你可以在此处查看详细信息, 如已分配的保管人数量或已确认通知。
 
 ## <a name="view-communication-details"></a>查看通信详细信息
 
@@ -42,7 +42,7 @@ ms.locfileid: "32241259"
 有时, 保管人会在日常工作中失去对其电子邮件的跟踪。 或者, 对于长期运行的诉讼, 保管人可能会进入, 并要求您重新发送通知。 在围绕法律封存通知管理工作流时, 您可能需要重新发送通知, 以使其返回到 "用户邮箱的顶部"。
 
 你可以通过以下方式将保留通知重新发送给你的管理员:
-1. 导航到**Security and 合规性 > 中的事例。高级电子数据展示 (预览)**。
+1. 导航到**Security And 合规性 _GT_ 高级电子数据展示**中的事例。
 2. 选择了事例后, 导航到 "**通信**" 选项卡。
 3. 若要将合法保留通知重新发送给管理员, 请选择相应的通信, 然后单击 "**重新发送**" 选项。
 4. 如果管理员尚未确认其保留通知, 则会重新启动提醒和升级流。 如果管理员已确认保留通知, 则保管人将仅收到初始保留通知的副本。
@@ -58,11 +58,11 @@ ms.locfileid: "32241259"
 
 若要更新初始保留通知的内容, 请执行以下操作:
 
-1. 导航到**Security and 合规性 > 中的事例。高级电子数据展示 (预览)**。
+1. 导航到**Security And 合规性 _GT_ 高级电子数据展示**中的事例。
 2. 选择了事例后, 导航到 "**通信**" 选项卡。
 3. 选择您想要更新的保留通知, 然后单击 "**编辑**"。
 4. 在 "编辑工作流" 中, 选择 "**定义门户内容**" 并更新通知的内容。 
-5. 单击“**保存**”。 保存后, 系统会将重新发布通知发送给当前分配了法定保留通知的所有保管人。 此外, 如果启用了提醒/上报通知, 则这些工作流也将重新启动。 
+5. 单击“保存”****。 保存后, 系统会将重新发布通知发送给当前分配了法定保留通知的所有保管人。 此外, 如果启用了提醒/上报通知, 则这些工作流也将重新启动。 
 
 
 #### <a name="update-legal-hold-notifications-and-settings"></a>更新合法保留通知和设置

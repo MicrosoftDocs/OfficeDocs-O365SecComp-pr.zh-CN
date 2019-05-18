@@ -4,7 +4,7 @@ ms.author: krowley
 author: kccross
 manager: laurawi
 ms.date: 12/05/2018
-ms.audience: Admin
+audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
@@ -14,12 +14,12 @@ ms.assetid: f09668bd-fe1a-4c01-89e3-e88c370e66c7
 ms.collection:
 - M365-security-compliance
 description: 通知 Office 365 和 EOP 管理员如何在电子邮件中启用和禁用安全提示。
-ms.openlocfilehash: 9be9c4cd7fc8e94208aac2ad8812c93a3465f58b
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: a782c9a1eca874c2aa2128b6129257067c63219a
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32256936"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34154754"
 ---
 # <a name="enable-or-disable-safety-tips-in-office-365"></a>启用或禁用 Office 365 中的安全提示
 
@@ -62,16 +62,16 @@ Office 365 默认为您的组织启用安全提示, 我们建议您将其保持�
     
 9. 若要启用安全提示, 请在 "**安全提示**" 下选中 "**打开**" 复选框。 若要禁用安全提示, 请清除 "**打开**" 复选框。 
     
-10. 选择“**保存**”。
+10. 选择“保存”****。
     
 ## <a name="to-enable-or-disable-safety-tips-by-using-powershell"></a>使用 PowerShell 启用或禁用安全提示的具体方法
 <a name="pshellsafetytip"> </a>
 
-管理员可以使用 Exchange Online PowerShell 启用或禁用安全提示。 使用 set-hostedcontentfilterpolicy cmdlet 可以在垃圾邮件筛选器策略中启用或禁用安全提示。
+管理员可以使用 Exchange Online PowerShell 启用或禁用安全提示。 使用 Set-hostedcontentfilterpolicy cmdlet 可以在垃圾邮件筛选器策略中启用或禁用安全提示。
   
 1. 连接到 Exchange Online PowerShell。 有关信息, 请参阅[连接到 Exchange Online PowerShell](http://go.microsoft.com/fwlink/p/?LinkId=396554)。
     
-2. 运行 set-hostedcontentfilterpolicy cmdlet 以启用或禁用安全提示:
+2. 运行 Set-hostedcontentfilterpolicy cmdlet 以启用或禁用安全提示:
     
   ```
   Set-HostedContentFilterPolicy -Identity "policy name " -InlineSafetyTipsEnabled <$true|$false>

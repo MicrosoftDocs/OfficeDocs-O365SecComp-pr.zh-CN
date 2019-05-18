@@ -4,7 +4,7 @@ ms.author: markjjo
 author: markjjo
 manager: laurawi
 ms.date: ''
-ms.audience: Admin
+audience: Admin
 ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: a6240692916d1b38ccbdae272fcd7a9b4292b376
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: ff11d03adf8afb0ce76151ff67a238cce342f9df
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32258730"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34150734"
 ---
 # <a name="data-investigations-preview-limits"></a>数据调查 (预览) 限制
 
@@ -32,7 +32,7 @@ ms.locfileid: "32258730"
   |**限制说明**|**限制**|
   |:-----|:-----|
   |最大调查数。  <br/> |50  <br/> |
-  |可添加到调查中的文档总数 (针对调查中的所有证据集)。  <br/> |1 百万  <br/> |
+  |可添加到调查中的文档总数 (针对调查中的所有证据集)。  <br/> |100 万  <br/> |
   |每次加载的总文件大小。  <br/> |100 GB  <br/> |
   |单个文件的最大大小。   <br/> |100 MB <sup>1</sup> <br/> |
   |从单个文件提取的最大字符数。  <br/> |10000000 <sup>1</sup> <br/> |

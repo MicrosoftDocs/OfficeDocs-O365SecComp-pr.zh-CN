@@ -4,7 +4,7 @@ ms.author: stephow
 author: stephow-MSFT
 manager: laurawi
 ms.date: ''
-ms.audience: Admin
+audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 创建保留 Microsoft 365 中的内容的保留标签时, 可以选择在保留期结束时触发处置评审。
-ms.openlocfilehash: 1828f4055e9048260db7d16df8ad87db36438211
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: 6d4a8993efb3046e7f79f4e76a921921abf6d3e6
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32257304"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34153424"
 ---
 # <a name="overview-of-disposition-reviews"></a>处置评审概述
 
@@ -33,7 +33,7 @@ ms.locfileid: "32257304"
     
 - 将内容返回给客户端或将其转移到其他组织。
     
-在 microsoft 365 合规性中心、microsoft 365 安全中心或 Office 365 security & 合规中心中创建保留标签时, 可以选择在保留期结束时触发处置评审。 在处置评审中:
+在 Microsoft 365 合规性中心、Microsoft 365 安全中心或 Office 365 Security & 合规中心中创建保留标签时, 可以选择在保留期结束时触发处置评审。 在处置评审中:
   
 - 您选择的人会收到一封电子邮件通知, 告知他们有要审阅的内容。 这些审阅者可以是单独的用户、通讯组或安全组, 也可以是 Office 365 组。 请注意, 每周会发送通知。
     

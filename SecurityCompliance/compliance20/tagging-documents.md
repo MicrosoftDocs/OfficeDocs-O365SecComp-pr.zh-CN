@@ -1,10 +1,10 @@
 ---
-title: 标记工作集中的文档
+title: 标记审阅集中的文档
 ms.author: markjjo
 author: markjjo
 manager: laurawi
 ms.date: ''
-ms.audience: Admin
+audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
@@ -14,16 +14,16 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: 510a10386ea51c0397408450f9fc700e9ce6db9c
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: a3b588f4b8e24783cd0d7198ea995f0fd6c8ae3e
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32241098"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34154024"
 ---
-# <a name="tag-documents-in-a-working-set"></a>标记工作集中的文档
+# <a name="tag-documents-in-a-review-set"></a>标记审阅集中的文档
 
-在工作集中组织内容对于在电子数据展示过程中完成各种工作流非常重要。 具体包括：
+在查看集中组织内容对于在电子数据展示过程中完成各种工作流非常重要。 具体包括：
 
 -  剔除不必要的内容
 
@@ -31,11 +31,11 @@ ms.locfileid: "32241098"
  
 -  确定必须由专家或律师审阅的内容
 
-当专家、律师或其他用户查看工作集中的内容时, 可以使用标记来捕获与内容相关的观点。 例如, 如果意图挑选不必要的内容, 则用户可以使用标记 (如 "无响应") 标记文档。 在查看并标记内容之后, 可以创建工作集搜索以排除任何标记为 "无响应" 的内容, 这将消除电子数据展示工作流中的后续步骤中的内容。 可以为每种情况自定义标签面板, 以便标记可以支持预期的审阅工作流。
+当专家、律师或其他用户查看审阅集中的内容时, 可以使用标记来捕获与内容相关的观点。 例如, 如果意图挑选不必要的内容, 则用户可以使用标记 (如 "无响应") 标记文档。 在审阅并标记内容之后, 可以创建审阅集搜索, 以排除任何标记为 "无响应" 的内容, 这将消除电子数据展示工作流中的后续步骤中的内容。 可以为每种情况自定义标签面板, 以便标记可以支持预期的审阅工作流。
 
 ## <a name="tag-types"></a>标记类型
 
-高级电子数据展示 (预览) 提供了两种类型的标记:
+高级电子数据展示提供了两种类型的标记:
 
 - **单个选择标记**-限制用户在组中选择一个标记。 这有助于确保用户不选择相互冲突的标记, 如 "响应式" 和 "无响应"。 
 
@@ -43,7 +43,7 @@ ms.locfileid: "32241098"
 
 ## <a name="tag-structure"></a>标记结构
 
-除了标记类型之外, 标记面板中的标记组织方式的结构也可用于使标签文档更加直观。 标记按节分组。 工作集搜索支持按标记和按标记内容进行搜索的功能。 这意味着, 您可以创建工作集搜索, 以检索标记为某一节中的任何标记的文档。
+除了标记类型之外, 标记面板中的标记组织方式的结构也可用于使标签文档更加直观。 标记按节分组。 查看 "设置搜索支持按标记和按标记搜索" 部分的功能。 这意味着您可以创建审阅集搜索, 以检索标记为某一节中的任何标记的文档。
 
 ![标记面板中的标记部分](../media/Tagtypes.png)
 
@@ -57,7 +57,7 @@ ms.locfileid: "32241098"
 
 ### <a name="tagging-a-single-document"></a>为单个文档添加标签
 
-在工作集中查看文档时, 可以通过单击 "**编码" 面板**显示审阅可使用的标记。
+在审阅集中查看文档时, 可以通过单击 "**编码" 面板**显示审阅可使用的标记。
 
 ![单击 "标记面板" 以显示标记面板](../media/Singledoctag.png)
 

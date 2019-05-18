@@ -4,7 +4,7 @@ ms.author: tracyp
 author: MSFTTracyP
 manager: laurawi
 ms.date: 12/05/2018
-ms.audience: ITPro
+audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
@@ -14,12 +14,12 @@ ms.assetid: 316544cb-db1d-4c25-a5b9-c73bbcf53047
 ms.collection:
 - M365-security-compliance
 description: 基本垃圾邮件筛选器设置包括选择要对被标识为垃圾邮件的邮件执行的操作, 并选择是筛选以特定语言编写的邮件还是从特定的国家或地区发送的邮件。
-ms.openlocfilehash: 5773256e18e1910405bcc04a1869f631734447a4
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: 740da796d0e2215076bfe38120f98e349099a758
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32258810"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34151314"
 ---
 # <a name="configure-your-spam-filter-policies"></a>配置垃圾邮件筛选器策略
   
@@ -54,17 +54,17 @@ ms.locfileid: "32258810"
         
       - **隔离邮件:** 将邮件发送到隔离, 而不是发送给预期的收件人。 （它将在该时间结束后自动删除。 默认值为 15 天，也是最大值。 最小值为 1 天。 ）<br/><br/>提示: 有关管理员如何管理 EAC 中隔离的电子邮件的信息, 请参阅[隔离](quarantine.md)并[以管理员身份查找并释放隔离邮件](find-and-release-quarantined-messages-as-an-administrator.md)。 > 有关如何配置要发送给用户的垃圾邮件通知邮件的信息, 请参阅[在 EOP 中配置最终用户垃圾邮件通知](configure-end-user-spam-notifications-in-eop.md)或[在 Exchange Online 中配置最终用户垃圾邮件通知](configure-end-user-spam-notifications-in-exchange-online.md)。 
   
-      - **将邮件移动到垃圾邮件文件夹:** 将邮件发送到指定收件人的 "垃圾邮件" 文件夹。 这是对两个可信度阈值级别的默认操作。 <br/><br/>**重要说明**: 对于 Exchange Online Protection (EOP) 客户: 为了使此操作能够使用本地邮箱, 必须在您的本地服务器上配置两个 Exchange 邮件流规则, 以检测 EOP 添加的垃圾邮件头。 有关详细信息，请参阅[确保垃圾邮件已路由到每个用户的"垃圾邮件"文件夹](ensure-that-spam-is-routed-to-each-user-s-junk-email-folder.md)。
+      - **将邮件移动到垃圾邮件文件夹:** 将邮件发送到指定收件人的 "垃圾邮件" 文件夹。 这是对两个可信度阈值级别的默认操作。 <br/><br/>**重要说明**: 对于 Exchange Online PROTECTION (EOP) 客户: 为了使此操作能够使用本地邮箱, 必须在您的本地服务器上配置两个 Exchange 邮件流规则, 以检测 EOP 添加的垃圾邮件头。 有关详细信息，请参阅[确保垃圾邮件已路由到每个用户的"垃圾邮件"文件夹](ensure-that-spam-is-routed-to-each-user-s-junk-email-folder.md)。
   
       - **添加 X 标头:** 将邮件发送给指定的收件人, 但将 X 标头文本添加到邮件头, 以便将邮件标识为垃圾邮件。 使用此文本作为标识符, 您可以选择创建收件箱规则或使用下游设备对邮件进行操作。 默认的 X 标头文本是**此消息看起来是垃圾**邮件。<br/>您可以使用 "**添加此 x 标头文本**输入" 框自定义 X 标头文本。 如果自定义 X 标头文本, 请注意以下条件: 
     
       - 如果您仅在格式\< *头*\>中指定了标头, 而\<*页眉*\>中没有空格, 则会将冒号追加到自定义文本, 后跟默认文本。       例如, 如果指定 "my my custom-header", 则 X 标头文本将显示为 "我自定义标头: 此消息看起来是垃圾邮件"。 
         
-      - 如果在自定义页眉文本中包含空格, 或者您在自己添加冒号 (例如 "x 这是我的自定义标头" 或 "x-my custom-头:"), 则 X 标头文本将恢复为默认值 "x-垃圾邮件: 此邮件看起来是垃圾邮件"。
+      - 如果在自定义页眉文本中包含空格, 或者您在自己添加冒号 (例如 "X 这是我的自定义标头" 或 "X-my custom-头:"), 则 X 标头文本将恢复为默认值 "X-垃圾邮件: 此邮件看起来是垃圾邮件"。
     
-      - 您不能指定格式为 \< *header*  \>:\<  *value*  \> 的标头文本。 如果这样做, 冒号前后的值都将被忽略, 而默认的 X 标头文本将显示为: "x-this-垃圾邮件: 此邮件看起来是垃圾邮件"。 
+      - 您不能指定格式为 \< *header*  \>:\<  *value*  \> 的标头文本。 如果这样做, 冒号前后的值都将被忽略, 而默认的 X 标头文本将显示为: "X-This-垃圾邮件: 此邮件看起来是垃圾邮件"。 
       
-      - 请注意, 由于邮箱垃圾邮件配置, 具有此 X 标头的邮件可能仍被移动到邮箱垃圾邮件文件夹中。 您可以通过使用 set-mailboxjunkemailconfiguration 禁用此功能来更改此设置。
+      - 请注意, 由于邮箱垃圾邮件配置, 具有此 X 标头的邮件可能仍被移动到邮箱垃圾邮件文件夹中。 您可以通过使用 Set-mailboxjunkemailconfiguration 禁用此功能来更改此设置。
         
       - 将**主题行前置文字:** 将邮件发送给预期收件人, 但在 "主题" 行前面加上在 "**前缀主题行**" 中指定的文本, 并在此文本输入框中指定。 使用此文本作为标识符, 您可以根据需要创建规则以筛选或路由邮件。 
         
@@ -121,7 +121,7 @@ ms.locfileid: "32258810"
   
 ## <a name="use-remote-powershell-to-configure-spam-filter-policies"></a>使用远程 PowerShell 配置垃圾邮件筛选器策略
 
-您也可以在 PowerShell 中配置和应用垃圾邮件筛选器策略。 若要了解如何使用 Windows PowerShell 连接到 Exchange Online，请参阅[连接到 Exchange Online PowerShell](https://go.microsoft.com/fwlink/p/?linkid=396554)。 若要了解如何使用 Windows PowerShell 连接到 exchange online protection, 请参阅[连接到 exchange online protection PowerShell](https://go.microsoft.com/fwlink/p/?linkid=627290)。
+您也可以在 PowerShell 中配置和应用垃圾邮件筛选器策略。 若要了解如何使用 Windows PowerShell 连接到 Exchange Online，请参阅[连接到 Exchange Online PowerShell](https://go.microsoft.com/fwlink/p/?linkid=396554)。 若要了解如何使用 Windows PowerShell 连接到 Exchange Online Protection, 请参阅[连接到 Exchange Online Protection PowerShell](https://go.microsoft.com/fwlink/p/?linkid=627290)。
   
 - [Get-HostedContentFilterPolicy](http://technet.microsoft.com/library/d510471a-dda5-4df7-b3f8-2ee7a1948436.aspx) 查看垃圾邮件筛选器设置。 
     
@@ -147,7 +147,7 @@ XJS*C4JDBQADN1.NSBN3*2IDNEN*GTUBE-STANDARD-ANTI-UBE-TEST-EMAIL*C.34X
 
 如果想采取积极方法进行垃圾邮件筛选，可以启用高级垃圾邮件筛选选项。有关适用于整个组织的常规垃圾邮件设置，请参阅[使用安全列表或其他技术防止误报电子邮件被标记为垃圾邮件](https://go.microsoft.com/fwlink/p/?LinkId=534224)或[使用 Office 365 垃圾邮件筛选器阻止垃圾电子邮件，以防止出现漏报问题](https://go.microsoft.com/fwlink/p/?LinkId=534225)。如果你拥有管理员级别控制，并且你想要阻止误报或漏报问题，这些会很有帮助。
    
-## <a name="for-more-information"></a>有关详细信息
+## <a name="for-more-information"></a>详细信息
 <a name="sectionSection6"> </a>
 
 [配置连接筛选器策略](configure-the-connection-filter-policy.md)

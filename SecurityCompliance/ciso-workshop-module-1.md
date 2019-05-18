@@ -3,19 +3,19 @@ title: '首席信息安全监察官 (CISO) 研讨会, 模块 1: Microsoft Cybers
 ms.author: robmazz
 author: robmazz
 manager: laurawi
-ms.audience: Admin
+audience: Admin
 ms.topic: tutorial
 ms.service: o365-seccomp
 localization_priority: Normal
 ms.collection:
 - M365-security-compliance
 description: 了解有关贵组织中的新式化安全性的安全原则和建议的详细信息。
-ms.openlocfilehash: 08a0a3fc93745ec32459746fce737ac9e9e164ef
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: 35f3feca7597eb3e80076eccc36e00debd754d01
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32243993"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34152154"
 ---
 # <a name="ciso-workshop-module-1-microsoft-cybersecurity-briefing"></a>CISO 研讨会模块 1: Microsoft Cybersecurity 简报
 

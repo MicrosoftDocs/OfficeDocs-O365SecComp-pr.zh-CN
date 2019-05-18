@@ -4,7 +4,7 @@ ms.author: markjjo
 author: markjjo
 manager: laurawi
 ms.date: 2/13/2018
-ms.audience: Admin
+audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
@@ -15,12 +15,12 @@ search.appverid:
 - MET150
 ms.assetid: 50bbf89f-7870-4c2a-ae14-42635e0cfc01
 description: '共享是 SharePoint Online 和 OneDrive for business 中的关键活动。 管理员现在可以在 Office 365 审核日志中使用共享审核来确定如何在组织中使用共享。 '
-ms.openlocfilehash: 08b511acdf74edac5b2d595d1b60bdd84d630918
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: a363ebe2e8b1697521ab5f84df0b3fc221a2abcd
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32263376"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34157894"
 ---
 # <a name="use-sharing-auditing-in-the-office-365-audit-log"></a>审核共享以查找与外部用户共享的资源
 
@@ -46,7 +46,7 @@ ms.locfileid: "32263376"
   
 ![共享审核工作原理的流程图](media/d83dd40f-919b-484f-bfd6-5dc8de31bff6.png)
   
-当用户 (用户) 想要与其他用户 (目标用户) 共享资源时, SharePoint (或 OneDrive for business) 先检查目标用户的电子邮件地址是否已与组织目录中的用户帐户相关联。 如果目标用户在组织的目录中, 则 SharePoint 将执行以下操作:
+当用户 (用户) 想要与其他用户 (目标用户) 共享资源时, SharePoint (或 OneDrive for Business) 先检查目标用户的电子邮件地址是否已与组织目录中的用户帐户相关联。 如果目标用户在组织的目录中, 则 SharePoint 将执行以下操作:
   
 -  立即向目标用户分配访问资源的权限。 
     
@@ -73,7 +73,7 @@ ms.locfileid: "32263376"
   
 ### <a name="step-1-search-for-sharing-events-and-export-the-results-to-a-csv-file"></a>步骤 1: 搜索共享事件并将结果导出到 CSV 文件
 
-第一步是在 Office 365 审核日志中搜索共享事件。 有关搜索审核日志的更多详细信息 (包括所需的权限), 请参阅[在 Security & 合规性中心搜索审核日志](search-the-audit-log-in-security-and-compliance.md)。
+第一步是在 Office 365 审核日志中搜索共享事件。 有关搜索审核日志的更多详细信息 (包括所需的权限), 请参阅[在 Security _AMP_ 合规性中心搜索审核日志](search-the-audit-log-in-security-and-compliance.md)。
   
 1. 转到 [https://protection.office.com](https://protection.office.com)。
     
@@ -101,7 +101,7 @@ ms.locfileid: "32263376"
   
 ### <a name="step-2-filter-the-csv-file-for-resources-shared-with-external-users"></a>步骤 2: 筛选 CSV 文件, 以获取与外部用户共享的资源
 
-下一步是筛选**SharingSet**和**SharingInvitationCreated**事件的 CSV, 并显示**TargetUserOrGroupType**属性为 "**来宾**" 的那些事件。 您将使用 Excel 中的 Power Query 功能执行此操作。 以下过程在 Excel 2016 中执行。 
+下一步是筛选**SharingSet**和**SHARINGINVITATIONCREATED**事件的 CSV, 并显示**TargetUserOrGroupType**属性为 "**来宾**" 的那些事件。 您将使用 Excel 中的 Power Query 功能执行此操作。 以下过程在 Excel 2016 中执行。 
   
 1. 在 Excel 2016 中, 打开一个空白工作簿。
     
@@ -125,7 +125,7 @@ ms.locfileid: "32263376"
     
       - 在 "**拆分**" 下, 在**分隔符的每次出现时**选择。
     
-7. 单击“**确定**”。
+7. 单击“确定”****。
     
     **详细信息**列拆分为多个列。 每个新列的名称分别为**详细信息. 1**、**详细信息. 2**、**详细信息. 3**等。 您会注意到详细信息中每个单元格中的值 **。 n**个列以属性名称作为前缀;例如,**操作: SharingSet**、 **operation: SharingInvitationAccepted**和**Operation: SharingInvitationCreated**。
     

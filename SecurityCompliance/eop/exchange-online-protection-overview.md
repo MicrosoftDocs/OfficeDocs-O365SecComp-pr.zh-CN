@@ -4,18 +4,18 @@ ms.author: tracyp
 author: MSFTTracyp
 manager: laurawi
 ms.date: 01/31/2019
-ms.audience: ITPro
+audience: ITPro
 ms.topic: overview
 ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: 1270a65f-ddc3-4430-b500-4d3a481efb1e
 description: Microsoft Exchange Online Protection (EOP) 是基于云的电子邮件筛选服务，可帮助您的组织防御垃圾邮件和恶意邮件，并包括用于保护您的组织避免违反邮件策略的功能。
-ms.openlocfilehash: a0b736eb9773ace87f32f1272b3f4326532206d2
-ms.sourcegitcommit: e23b84ef4eee9cccec7205826b71ddfe9aaac2f8
+ms.openlocfilehash: b9fb5591834292fba4a58cfd024a667edce3c7ca
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33402880"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34150244"
 ---
 # <a name="exchange-online-protection-overview"></a>Exchange Online Protection 概述
 
@@ -23,7 +23,7 @@ Microsoft Exchange Online Protection (EOP) 是基于云的电子邮件筛选服�
   
 以下是您可以使用 EOP 进行邮件保护的主要方式：
   
-- **在独立方案中**EOP 为您的本地 Microsoft Exchange server 2013 环境、旧版 Exchange server 版本或任何其他本地 SMTP 电子邮件解决方案提供基于云的电子邮件保护。 
+- **在独立方案中**EOP 为您的本地 Microsoft Exchange Server 2013 环境、旧版 Exchange Server 版本或任何其他本地 SMTP 电子邮件解决方案提供基于云的电子邮件保护。 
     
 - **作为 Microsoft Exchange Online 的一部分** 默认情况下，EOP 保护 Microsoft Exchange Online 云托管的邮箱。 有关配置这些 Exchange Online 功能的帮助, 请参阅防止[威胁](../protect-against-threats.md)。 
     

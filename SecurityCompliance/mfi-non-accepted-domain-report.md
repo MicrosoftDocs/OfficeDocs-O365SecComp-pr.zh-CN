@@ -1,22 +1,22 @@
 ---
-title: 不接受的域报告
+title: 非接受域报告
 ms.author: chrisda
 author: chrisda
 manager: serdars
-ms.audience: ITPro
+audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: ''
 description: 管理员可以在安全 & 合规性中心的邮件流仪表板中了解不接受的域报告。
-ms.openlocfilehash: 11bddc79f81c30726ba653eb432238765a8cee74
-ms.sourcegitcommit: e05e83212e7ca4e84f2ddb0de0297895b995338d
+ms.openlocfilehash: ce9ffc28fddca6eb27d3d7394c0aea2ac4be9beb
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/10/2019
-ms.locfileid: "33868570"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34158574"
 ---
-# <a name="non-accepted-domain-report"></a>不接受的域报告
+# <a name="non-accepted-domain-report"></a>非接受域报告
 
 与**发件人域**洞察力类似,**不接受的域**洞察力可识别来自内部部署电子邮件组织的邮件, 但发件人的域不会配置为 Office 365 组织中的接受域。
 

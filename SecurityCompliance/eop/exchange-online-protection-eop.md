@@ -4,18 +4,18 @@ ms.author: krowley
 author: kccross
 manager: laurawi
 ms.date: 12/9/2016
-ms.audience: ITPro
+audience: ITPro
 ms.topic: hub-page
 ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: 70ab4af2-fec4-4886-8e12-27d348649204
 description: 在开始使用 EOP 之前, 应注意以下几点。
-ms.openlocfilehash: fdaeba4f38d2e7676b336519f6d04649ee9d8137
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: 3bf4874e3ab445813ee03de4def23ed12f66f537
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32256460"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34154664"
 ---
 # <a name="exchange-online-protection"></a>Exchange Online Protection 
 
@@ -53,7 +53,7 @@ ms.locfileid: "32256460"
     
 - [Exchange Online Protection 中的报告和邮件跟踪](reporting-and-message-trace-in-exchange-online-protection.md) 介绍了可用的报告和故障排除工具。 
     
-- exchange [Online Protection 中的 exchange 管理中心](../exchange-admin-center-in-exchange-online-protection-eop.md)介绍如何通过 Exchange 管理中心 (EAC) 管理界面访问和导航, 以管理您的 EOP 服务。 
+- Exchange [Online Protection 中的 exchange 管理中心](../exchange-admin-center-in-exchange-online-protection-eop.md)介绍如何通过 Exchange 管理中心 (EAC) 管理界面访问和导航, 以管理您的 EOP 服务。 
     
 - [Exchange Online Protection 中的 PowerShell](http://technet.microsoft.com/library/f7918a88-774a-405e-945b-bc2f5ee9f748.aspx) 提供有关可让您从命令行管理 EOP 服务的远程 PowerShell 的信息。 
     
@@ -66,11 +66,11 @@ ms.locfileid: "32256460"
   
 - [Find and Release Quarantined Messages as an End User](http://technet.microsoft.com/library/e439b560-827a-4807-abd3-6b861c1ff786.aspx) 介绍最终用户如何在自己的垃圾邮件隔离用户界面中查找和释放其自己的垃圾邮件隔离邮件，并且可以选择向 Microsoft 将其报告为非垃圾邮件。 
         
-- [将垃圾邮件、非垃圾邮件和网络钓鱼诈骗邮件提交给 Microsoft 进行分析](../submit-spam-non-spam-and-phishing-scam-messages-to-microsoft-for-analysis.md)介绍最终用户可以将垃圾邮件 (垃圾邮件) 和非垃圾邮件 (非垃圾邮件) 提交给 Microsoft 的不同方法。 本主题包括指向 Microsoft Outlook 和 web 上的 Outlook (以前称为 Outlook web App) 中提供的报告工具的链接。 
+- [将垃圾邮件、非垃圾邮件和网络钓鱼诈骗邮件提交给 Microsoft 进行分析](../submit-spam-non-spam-and-phishing-scam-messages-to-microsoft-for-analysis.md)介绍最终用户可以将垃圾邮件 (垃圾邮件) 和非垃圾邮件 (非垃圾邮件) 提交给 Microsoft 的不同方法。 本主题包括指向 Microsoft Outlook 和 web 上的 Outlook (以前称为 Outlook Web App) 中提供的报告工具的链接。 
     
 - [Submitting malware and non-malware to Microsoft for analysis](../submitting-malware-and-non-malware-to-microsoft-for-analysis.md) 介绍最终用户如何提交通过筛选器的恶意软件，或者如何提交被错误检测为恶意软件的文件。 
     
-- 最终用户可以通过在 outlook 或 web 上的 outlook 中配置其垃圾邮件设置, 将特定用户或域添加到安全发件人列表或阻止的发件人列表中。 请注意, 从阻止的发件人发送的邮件被标记为垃圾邮件, 而不是被拒绝, 这意味着可以从 "垃圾邮件" 文件夹或隔离区中检索邮件 (具体取决于管理员已将该服务配置为发送垃圾邮件的位置)。有关详细信息, 请参阅[使用报告邮件外接程序](https://support.office.com/article/addin-b5caa9f1-cdf3-4443-af8c-ff724ea719d2)。
+- 最终用户可以通过在 Outlook 或 web 上的 Outlook 中配置其垃圾邮件设置, 将特定用户或域添加到安全发件人列表或阻止的发件人列表中。 请注意, 从阻止的发件人发送的邮件被标记为垃圾邮件, 而不是被拒绝, 这意味着可以从 "垃圾邮件" 文件夹或隔离区中检索邮件 (具体取决于管理员已将该服务配置为发送垃圾邮件的位置)。有关详细信息, 请参阅[使用报告邮件外接程序](https://support.office.com/article/addin-b5caa9f1-cdf3-4443-af8c-ff724ea719d2)。
     
 - [EOP 帮助与支持](help-and-support-for-eop.md) 提供有关获取帮助和技术支持的信息。 
     

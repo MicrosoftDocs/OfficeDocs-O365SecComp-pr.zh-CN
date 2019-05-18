@@ -3,7 +3,7 @@ title: 导入非 Office 365 内容以实现高级电子数据展示分析
 ms.author: chrfox
 author: chrfox
 manager: laurawi
-ms.audience: ITPro
+audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
@@ -12,24 +12,24 @@ search.appverid:
 - MET150
 ms.assetid: 0ee60763-a30b-495b-8543-971c3384a801
 description: '操作方法: 将未存储在 O365 中的内容导入到 Azure blob, 以便可以使用 AeD 对其进行分析'
-ms.openlocfilehash: 7b7694754b26951aa02930fd101631ba9060bc17
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: 1c971c9f95d03d05db76f80344adeb93b0a72c06
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32256570"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34152684"
 ---
 # <a name="import-non-office-365-content-for-advanced-ediscovery-analysis"></a>导入非 Office 365 内容以实现高级电子数据展示分析
 
-并非所有可能需要使用 office 365 进行分析的文档都将在 office 365 中实时发布。 使用高级电子数据展示中的非 Office 365 内容导入功能, 可以将不在 Office 365 中的文档 (PST 文件除外) 上传到链接的大小写的 Azure 存储 blob, 并使用高级电子数据展示分析这些文档。 此过程向您演示如何将非 Office 365 文档转换为高级电子数据展示以进行分析。
+并非所有可能需要使用 Office 365 进行分析的文档都将在 Office 365 中实时发布。 使用高级电子数据展示中的非 Office 365 内容导入功能, 可以将不在 Office 365 中的文档 (PST 文件除外) 上传到链接的大小写的 Azure 存储 blob, 并使用高级电子数据展示分析这些文档。 此过程向您演示如何将非 Office 365 文档转换为高级电子数据展示以进行分析。
   
 > [!NOTE]
 > 若要使用高级电子数据展示，组织必须订阅随附高级合规性加载项的 Office 365 E3，或订阅 E5。如果没有此计划，但又要试用高级电子数据展示，可以[注册 Office 365 企业版 E5 试用版](https://go.microsoft.com/fwlink/p/?LinkID=698279)。 
   
 > [!NOTE]
-> 您可以购买适用于非 Office 365 内容的 Office 365 高级电子数据展示数据存储附加订阅。 这仅适用于要使用高级电子数据展示进行分析的内容。 按照 "为[商业版购买或编辑和添加 office 365](https://support.office.com/article/Buy-or-edit-an-add-on-for-Office-365-for-business-4e7b57d6-b93b-457d-aecd-0ea58bff07a6) " 中的步骤操作, 购买 office 365 高级电子数据展示存储加载项。 
+> 您可以购买适用于非 Office 365 内容的 Office 365 高级电子数据展示数据存储附加订阅。 这仅适用于要使用高级电子数据展示进行分析的内容。 按照 "为[商业版购买或编辑和添加 office 365](https://support.office.com/article/Buy-or-edit-an-add-on-for-Office-365-for-business-4e7b57d6-b93b-457d-aecd-0ea58bff07a6) " 中的步骤操作, 购买 Office 365 高级电子数据展示存储加载项。 
   
-## <a name="before-you-begin"></a>准备工作
+## <a name="before-you-begin"></a>开始之前
 
 如以下过程所述, 使用 "上载非 Office 365" 功能需要具备以下条件:
   
@@ -61,13 +61,13 @@ ms.locfileid: "32256570"
     
 7. 构造 AzCopy 命令行以上载如下所示的文件:
     
-    AzCopy/source: "*本地计算机上的根文件夹的完整路径*"/Dest: "上*的容器 URL, 但不包括？*  "/DestSAS:"*容器 url 的剩余部分 (来自？)到结尾*"/S。 
+    AzCopy/Source: "*本地计算机上的根文件夹的完整路径*"/Dest: "上*的容器 URL, 但不包括？*  "/DestSAS:"*容器 url 的剩余部分 (来自？)到结尾*"/S。 
     
     例如, 使用以下值: 
     
   - 根文件夹-C:\Collected 数据 
     
-  - 容器 url- https://zoomsabcprodeuss114.blob.core.windows.net/ingestion53d059efe5f74784afb308f66cdebf17?sv=2015-04-05&amp; sr = c&amp;si = NonOfficeData15% 7C0&amp;sig = Bk5INP8CUfv1y4CSJiJl3pJt3Ekvu8GS3P8NkOvoQxA% 3d
+  - 容器 url- https://zoomsabcprodeuss114.blob.core.windows.net/ingestion53d059efe5f74784afb308f66cdebf17?sv=2015-04-05&amp; sr = c&amp;Si = NonOfficeData15% 7C0&amp;sig = Bk5INP8CUfv1y4CSJiJl3pJt3Ekvu8GS3P8NkOvoQxA% 3d
     
     AzCopy 命令行语法为:
     

@@ -4,7 +4,7 @@ ms.author: markjjo
 author: markjjo
 manager: laurawi
 ms.date: ''
-ms.audience: Admin
+audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: d8e9689cb04929137787225579dcda17005c8bfe
-ms.sourcegitcommit: 7be8617ce75909f0fa1a2f6e72749e2ef4bb2d3e
+ms.openlocfilehash: 3dbebb20d179f78e97a8ae18fb810a8cb53c45ed
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/16/2019
-ms.locfileid: "34088805"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34151424"
 ---
 # <a name="supported-file-types-in-advanced-ediscovery"></a>高级电子数据展示中支持的文件类型
 
@@ -65,7 +65,7 @@ ms.locfileid: "34088805"
 | :- |  :- |  :- |  :- |  :- |  :- |  :- |
 | application/xhtml + xml | 是 | 是 | 是 | 是 | 是 | 的 xhtml |
 | application/xml | 是 | 是 | 是 | 是 | 是 | .xml |
-| 文本/html | 是 | 是 | 是 | 是 | 是 | .htm; .html;。 shtml |
+| 文本/html | 是 | 是 | 是 | 是 | 是 | .htm; .html;. shtml |
 ||||||||
 
 ## <a name="image"></a>图像
@@ -162,7 +162,7 @@ ms.locfileid: "34088805"
 | Mime 类型 | 文件标识 | 元数据提取 | 文本提取 | 本机查看器 | 批注查看器 | 可能的扩展 |
 | :- |  :- |  :- |  :- |  :- |  :- |  :- |
 | text/csv | 是 | 是 | 是 | 是 | 是 | .csv |
-| text/plain | 是 | 是 | 是 | 是 | 是 | con; .css; .csv; .dat;。 pl; .txt |
+| text/plain | 是 | 是 | 是 | 是 | 是 | con; .css; .csv; .dat;. pl; .txt |
 ||||||||
 
 ## <a name="portable-document-format"></a>Portable Document Format
@@ -178,7 +178,7 @@ ms.locfileid: "34088805"
 | :- |  :- |  :- |  :- |  :- |  :- |  :- |
 | application/vnd.ms-excel;版本 = 5。0 | 是 | 是 | 是 | 否 | 否 | .wpd |
 | application/vnd.ms-excel;版本 = 5。1 | 是 | 是 | 是 | 否 | 否 | .wpd |
-| application/vnd.ms-excel;版本 = 6。 x | 是 | 是 | 是 | 否 | 否 | .wpd |
+| application/vnd.ms-excel;版本 = 6. x | 是 | 是 | 是 | 否 | 否 | .wpd |
 ||||||||
 
 ## <a name="word-pro"></a>Word Pro

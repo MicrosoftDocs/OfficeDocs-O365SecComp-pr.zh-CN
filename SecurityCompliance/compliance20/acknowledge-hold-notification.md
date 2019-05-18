@@ -4,7 +4,7 @@ ms.author: markjjo
 author: markjjo
 manager: laurawi
 ms.date: ''
-ms.audience: Admin
+audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
@@ -14,17 +14,17 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: 048c85c7b8d77b9c7d3b9527640648b9ebe463d0
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: eb29ff34d663cf43af4a9a4b1e966a282d16eaf2
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32243629"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34151944"
 ---
 # <a name="acknowledge-a-hold-notification"></a>确认保留通知 
 在响应法规请求或调查时, 可能需要通知保管人, 让其义务保留电子存储的信息 (ESI) 以及可能与活跃或即将发生的法律事务相关的任何材料。 一旦发送, 法律团队必须知道每位管理员已收到、阅读和理解, 并同意遵守给定的说明。
 
-为了帮助减少与您的保管人的时间、成本和工作效率, 高级电子数据展示 (预览) 允许您通过电子邮件发送和跟进合法保留通知。 除了电子邮件通知之外, 每个管理员还将有权访问个人合规性门户, 使保管人能够及时了解其合同状态的更改。
+为了帮助减少与您的保管人的时间、成本和工作效率, 高级电子数据展示允许您通过电子邮件发送法律封存通知并跟进这些通知。 除了电子邮件通知之外, 每个管理员还将有权访问个人合规性门户, 使保管人能够及时了解其合同状态的更改。
 
 ## <a name="email-notifications"></a>电子邮件通知
 发出合法保留通知后, 每位管理员都将收到一个唯一且个性化的电子邮件, 其中包含定义的合法保留通知和添加的说明。 

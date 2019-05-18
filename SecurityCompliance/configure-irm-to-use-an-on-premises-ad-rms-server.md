@@ -4,7 +4,7 @@ ms.author: tracyp
 author: MSFTTracyP
 manager: laurawi
 ms.date: 12/13/2017
-ms.audience: End User
+audience: End User
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
@@ -14,18 +14,18 @@ ms.assetid: 3ecde857-4b7c-451d-b4aa-9eeffc8a8c61
 ms.collection:
 - M365-security-compliance
 description: 本主题显示了如何将 IRM 配置为使用 AD RMS 服务器。
-ms.openlocfilehash: 1da66c5afa37c96c061a4bf25c0858e4e71e2313
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: 44a313425a68a6de2e37e3fea34dbe53525723b1
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32259570"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34153864"
 ---
 # <a name="configure-irm-to-use-an-on-premises-ad-rms-server"></a>将 IRM 配置为使用本地 AD RMS 服务器
   
 对于本地部署, Exchange Online 中的信息权限管理 (IRM) 使用 Active Directory 权限管理服务 (AD RMS), 这是 Windows Server 2008 及更高版本中的一种信息保护技术。 通过将 AD RMS 权限策略模板应用于电子邮件，可将 IRM 保护应用于电子邮件。 权限附加到邮件本身, 以便在联机和脱机以及组织的防火墙内部和外部进行保护。
   
-本主题显示了如何将 IRM 配置为使用 AD RMS 服务器。 有关在 azure Active Directory 和 azure 权限管理中使用 office 365 邮件加密的新功能的信息, 请参阅[Office 365 邮件加密 FAQ](https://support.office.com/article/0432dce9-d9b6-4e73-8a13-4a932eb0081e)。
+本主题显示了如何将 IRM 配置为使用 AD RMS 服务器。 有关在 Azure Active Directory 和 Azure 权限管理中使用 Office 365 邮件加密的新功能的信息, 请参阅[Office 365 邮件加密 FAQ](https://support.office.com/article/0432dce9-d9b6-4e73-8a13-4a932eb0081e)。
   
 有关 Exchange Online 中 IRM 的详细信息，请参阅[Exchange Online 中的信息权限管理](information-rights-management-in-exchange-online.md)。
   
@@ -100,7 +100,7 @@ Import-RMSTrustedPublishingDomain -FileData $([byte[]](Get-Content -Encoding byt
   
 ### <a name="step-3-use-the-exchange-management-shell-to-distribute-an-ad-rms-rights-policy-template"></a>步骤 3：使用 Exchange 命令行管理程序 来分发 AD RMS 权限策略模板
 
-导入 TPD 之后，必须确保已分发 AD RMS 权限策略模板。 分布式模板对 web 上的 Outlook (以前称为 "outlook web App") 用户可见, 然后可以将模板应用于电子邮件。
+导入 TPD 之后，必须确保已分发 AD RMS 权限策略模板。 分布式模板对 web 上的 Outlook (以前称为 "Outlook Web App") 用户可见, 然后可以将模板应用于电子邮件。
   
 若要返回默认 TPD 中包含的所有模板的列表，请运行以下命令：
   
@@ -164,7 +164,7 @@ Set-IRMConfiguration -InternalLicensingEnabled $true
 
 若要验证是否已成功导入 TPD 并启用 IRM，执行以下操作：
   
-- 使用**get-irmconfiguration** cmdlet 测试 IRM 功能。 有关详细信息，请参阅 [Test-IRMConfiguration](http://technet.microsoft.com/library/a730e7ff-a67f-4360-b5ff-70d171bb5e1d.aspx) 中的"示例 1"。
+- 使用**get-irmconfiguration** CMDLET 测试 IRM 功能。 有关详细信息，请参阅 [Test-IRMConfiguration](http://technet.microsoft.com/library/a730e7ff-a67f-4360-b5ff-70d171bb5e1d.aspx) 中的"示例 1"。
     
 - 在 Outlook 网页网站中撰写新邮件并通过从扩展菜单 ( !["更多选项" 图标](media/ITPro-EAC-MoreOptionsIcon.gif)) 中选择 "**设置权限**" 选项来对其进行 IRM 保护。
     

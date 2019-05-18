@@ -4,7 +4,7 @@ ms.author: markjjo
 author: markjjo
 manager: laurawi
 ms.date: ''
-ms.audience: Admin
+audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
@@ -14,21 +14,21 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: f5478d89d71db22e710b5d5fcab397ae8d6aee56
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: 3258ff4d5bf079a73837038135c3a1c69eb2fe26
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32259560"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34150804"
 ---
 # <a name="load-non-office-365-data-into-evidence"></a>将非 Office 365 数据加载到证据中
 
-并非所有可能需要使用 office 365 进行分析的文档都将在 office 365 中实时发布。 通过高级电子数据展示中的非 Office 365 内容导入功能, 可以将不在 Office 365 中的文档上传到工作集, 以便使用高级电子数据展示对其进行分析。 此过程向您演示如何将非 Office 365 文档转换为高级电子数据展示以进行分析。
+并非所有可能需要使用 Office 365 进行分析的文档都将在 Office 365 中实时发布。 通过高级电子数据展示中的非 Office 365 内容导入功能, 可以将不在 Office 365 中的文档上传到工作集, 以便使用高级电子数据展示对其进行分析。 此过程向您演示如何将非 Office 365 文档转换为高级电子数据展示以进行分析。
 
 >[!Note]
 >高级电子数据展示需要 Office 365 E3 和您的组织的高级合规性加载项或 E5 订阅。 如果你没有该计划, 并且想要尝试高级电子数据展示, 可以注册 Office 365 企业版 E5 的试用版。
 
-## <a name="before-you-begin"></a>准备工作
+## <a name="before-you-begin"></a>开始之前
 如以下过程所述, 使用 "上载非 Office 365" 功能需要具备以下条件:
 
 - 具有高级合规性外接程序或 E5 订阅的 Office 365 E3。

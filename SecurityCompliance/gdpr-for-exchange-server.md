@@ -3,17 +3,17 @@ title: 用于 Exchange Server 的 GDPR
 ms.author: mikeplum
 author: MikePlumleyMSFT
 manager: pamgreen
-ms.audience: ITPro
+audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Priority
 description: 了解如何解决本地 Exchange Server 中的 GDPR 要求。
-ms.openlocfilehash: 8c66787c7da8eef9a580361848499f9f336b49b9
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: 6f353f6902458671f0bd21d44035753299023e30
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32255620"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34152744"
 ---
 # <a name="gdpr-for-exchange-server"></a>用于 Exchange Server 的 GDPR
 

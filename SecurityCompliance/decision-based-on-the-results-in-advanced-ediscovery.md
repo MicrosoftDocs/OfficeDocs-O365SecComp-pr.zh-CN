@@ -3,7 +3,7 @@ title: 基于 Office 365 高级电子数据展示中的结果的决策
 ms.author: chrfox
 author: chrfox
 manager: laurawi
-ms.audience: Admin
+audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
@@ -12,12 +12,12 @@ search.appverid:
 - MET150
 ms.assetid: aed65bcd-0a4f-43e9-b5e5-b98cc376bdf8
 description: '了解 Office 365 高级电子数据展示中的 "确定" 选项卡如何提供可帮助您确定检查事例文件集的正确大小的数据。 '
-ms.openlocfilehash: a9250a45129320517f96b9a335db95d164d2dae7
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: 3f8ce0343b5a09cf3ab4c4bd94a53d8d0cbe0cce
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32257812"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34153514"
 ---
 # <a name="decision-based-on-the-results-in-office-365-advanced-ediscovery"></a>基于 Office 365 高级电子数据展示中的结果的决策
 

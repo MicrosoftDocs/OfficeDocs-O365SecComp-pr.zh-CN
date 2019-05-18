@@ -3,7 +3,7 @@ title: 反垃圾邮件邮件头
 ms.author: krowley
 author: kccross
 manager: laurawi
-ms.audience: ITPro
+audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
@@ -13,12 +13,12 @@ ms.assetid: 2e3fcfc5-5604-4b88-ac0a-c5c45c03f1db
 ms.collection:
 - M365-security-compliance
 description: Exchange Online Protection 扫描到入站电子邮件时，它会在每封邮件中插入" **X-Forefront-Antispam-Report**"标头。
-ms.openlocfilehash: 70322d49defe49517a75658b1e2084d520fd7ae8
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: b09b5fef883ef720223e6bfaf36437b1bdf6c393
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32242993"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34152364"
 ---
 # <a name="anti-spam-message-headers"></a>反垃圾邮件邮件头
 
@@ -136,4 +136,4 @@ dmarc=fail action=oreject header.from=contoso.com
 |action|指示垃圾邮件筛选器基于 DMARC 检查结果执行的操作。例如：  <br/>• **permerror**: 在 DMARC 评估期间发生永久错误, 例如, 在 DNS 中遇到格式不正确的 DMARC TXT 记录。 尝试重新发送此邮件不太可能产生不同的结果。 你反而可能需要联系域的所有者，以解决该问题。 <br/>• **temperror 出现**: DMARC 评估期间发生临时错误。 你可以请求发件人稍后重新发送邮件，以正确处理电子邮件。 <br/>• **oreject**或**o. 拒绝**: 代表替代拒绝。 在这种情况下，Office 365 在从 DMARC TXT 记录的策略为 p=reject 的域中接收未通过 DMARC 检查的邮件时使用此操作。 Office 365 将该邮件标记为垃圾邮件，而不是删除或拒绝该邮件。 有关这样配置 Office 365 的原因的详细信息，请参阅 [Office 365 如何处理未通过 DMARC 的入站电子邮件](use-dmarc-to-validate-email.md#inbounddmarcfail)。 <br/>• **pct**: 指明不传递 DMARC 的邮件百分比小于 100% 的邮件仍将传递。 这表示邮件未通过 DMARC 且已将策略设置为隔离，但 pct 字段未设置为 100% 且系统根据每个特定域的策略随机决定不执行 DMARC 操作。 <br/>•**百分比拒绝**: 指示仍将传递小于 100% 且未传递 DMARC 的邮件的百分比。 这表示邮件未通过 DMARC 且已将策略设置为拒绝，但 pct 字段未设置为 100% 且系统根据每个特定域的策略随机决定不执行 DMARC 操作。|
 |标头。从|电子邮件标头中发件人地址的域。 这有时称为 " _5322.from_地址"。|
 |compauth|复合身份验证结果。 由 Office 365 用于将多种类型的身份验证 (如 SPF、DKIM、DMARC 或邮件的任何其他部分) 结合使用, 以确定是否对邮件进行身份验证。 使用 From: 域作为评估基础。|
-|在于|复合身份验证通过或失败的原因。 reason 的值由三个数字组成: <br/>• **000**: 邮件显式失败的身份验证。 例如, 邮件收到 DMARC 失败, 并出现 "隔离" 或 "拒绝" 操作。 <br/>• **001**: 邮件隐式身份验证失败, 且发送域未发布身份验证策略。 例如, DMARC 的策略为 p = none。 <br/>• **1xx**: 邮件已通过身份验证。 第二个两位数是 Office 365 使用的内部代码。 <br/>• **2xx**: 邮件软传递身份验证。 第二个两位数是 Office 365 使用的内部代码。 <br/>• **3xx**: 不检查邮件的复合身份验证。 <br/>• **4xx**: 邮件绕过复合身份验证。 第二个两位数是 Office 365 使用的内部代码。|
+|在于|复合身份验证通过或失败的原因。 Reason 的值由三个数字组成: <br/>• **000**: 邮件显式失败的身份验证。 例如, 邮件收到 DMARC 失败, 并出现 "隔离" 或 "拒绝" 操作。 <br/>• **001**: 邮件隐式身份验证失败, 且发送域未发布身份验证策略。 例如, DMARC 的策略为 p = none。 <br/>• **1xx**: 邮件已通过身份验证。 第二个两位数是 Office 365 使用的内部代码。 <br/>• **2xx**: 邮件软传递身份验证。 第二个两位数是 Office 365 使用的内部代码。 <br/>• **3xx**: 不检查邮件的复合身份验证。 <br/>• **4xx**: 邮件绕过复合身份验证。 第二个两位数是 Office 365 使用的内部代码。|

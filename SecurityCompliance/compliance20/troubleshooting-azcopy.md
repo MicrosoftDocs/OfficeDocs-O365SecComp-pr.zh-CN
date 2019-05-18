@@ -1,10 +1,10 @@
 ---
-title: AzCopy 中的疑难解答高级电子数据展示 (预览)
+title: 解决高级电子数据展示中的 AzCopy
 ms.author: markjjo
 author: markjjo
 manager: laurawi
 ms.date: ''
-ms.audience: Admin
+audience: Admin
 ms.topic: article
 ms.service: o365-seccomp
 localization_priority: Normal
@@ -14,16 +14,16 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: 9711bee4ec9a61510b47568df37dfd3135e1e00c
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: 2c8378cf7b9bd21f901b1babbebdcb0b69a8ed73
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32241070"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34151514"
 ---
-# <a name="troubleshoot-azcopy-in-advanced-ediscovery-preview"></a>AzCopy 中的疑难解答高级电子数据展示 (预览)
+# <a name="troubleshoot-azcopy-in-advanced-ediscovery"></a>解决高级电子数据展示中的 AzCopy
 
-在高级电子数据展示 (预览版) 中加载非 Office 365 数据或文档以进行错误修正时, 用户界面提供了一个 Azure AzCopy 命令, 其中包含一些参数, 其中存储了要上载的文件的位置和 Azure文件将上载到的存储位置。 若要上传文档, 请复制此命令, 然后在本地计算机上的命令提示符处运行它。  下面的屏幕截图显示了 AzCopy 命令的示例:
+加载非 Office 365 数据或文档以在高级电子数据展示中进行错误修正时, 用户界面提供了一个 Azure AzCopy 命令, 其中包含参数以及要上载的文件的位置和 Azure 存储文件将上载到的位置。 若要上传文档, 请复制此命令, 然后在本地计算机上的命令提示符处运行它。  下面的屏幕截图显示了 AzCopy 命令的示例:
 
 ![上传非 Office 365 文件](../media/46ba68f6-af11-4e70-bb91-5fc7973516e3.png)
 

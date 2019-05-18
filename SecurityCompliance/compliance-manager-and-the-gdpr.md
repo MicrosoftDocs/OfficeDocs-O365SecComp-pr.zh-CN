@@ -3,7 +3,7 @@ title: Microsoft 合规性管理器和 GDPR
 ms.author: robmazz
 author: robmazz
 manager: laurawi
-ms.audience: Admin
+audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: None
@@ -12,13 +12,13 @@ ms.collection: M365-security-compliance
 search.appverid:
 - MOE150
 - MET150
-description: microsoft 合规性管理器是 microsoft 服务信任门户中基于工作流的免费风险评估工具。 合规性管理器使你能够跟踪、分配和验证与 Microsoft 云服务相关的法规遵从性活动。
-ms.openlocfilehash: 10579edea5a36686b8b19cafd9d3d6e148cfdcd3
-ms.sourcegitcommit: 696c1ed6b270be3f9da7395b49a7d8fec98e6db0
+description: Microsoft 合规性管理器是 Microsoft 服务信任门户中基于工作流的免费风险评估工具。 合规性管理器使你能够跟踪、分配和验证与 Microsoft 云服务相关的法规遵从性活动。
+ms.openlocfilehash: a082d069aced13aa9260a1a856d942c4feb7dd4b
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/29/2019
-ms.locfileid: "33473014"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34152083"
 ---
 # <a name="microsoft-compliance-manager-and-the-gdpr"></a>Microsoft 合规性管理器和 GDPR
 

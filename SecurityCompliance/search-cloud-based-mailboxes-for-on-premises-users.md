@@ -4,7 +4,7 @@ ms.author: markjjo
 author: markjjo
 manager: laurawi
 ms.date: 6/4/2018
-ms.audience: Admin
+audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 ms.collection: M365-security-compliance
@@ -15,12 +15,12 @@ search.appverid:
 - MET150
 ms.assetid: 3f7dde1a-a8ea-4366-86da-8ee6777f357c
 description: 使用安全 & 合规中心中的内容搜索工具在 Exchange 混合部署中搜索和导出本地用户的 MicrosoftTeams 聊天数据 (称为1xN 聊天)。
-ms.openlocfilehash: 0c68023fdd4e1c9e06596937247270861cdbd2b3
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: eb53daa381b89d8ded4f2400ed7781e2306eb263
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32260994"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34158734"
 ---
 # <a name="searching-cloud-based-mailboxes-for-on-premises-users-in-office-365"></a>在 Office 365 中搜索本地用户的基于云的邮箱
 
@@ -28,7 +28,7 @@ ms.locfileid: "32260994"
   
 以下是为本地用户设置和搜索基于云的邮箱的要求和限制:
   
-- 您的本地目录服务 (如 Active directory) 中的用户帐户必须与 Azure Active directory (Office 365 中的目录服务) 同步。 这意味着将在 Office 365 中创建一个邮件用户帐户, 并将其主邮箱位于内部部署组织中的用户关联。
+- 您的本地目录服务 (如 Active Directory) 中的用户帐户必须与 Azure Active Directory (Office 365 中的目录服务) 同步。 这意味着将在 Office 365 中创建一个邮件用户帐户, 并将其主邮箱位于内部部署组织中的用户关联。
     
 - 本地用户的基于云的邮箱仅用于存储团队聊天数据。 本地用户无法以任何方式登录到基于云的邮箱或访问。 它不能用于发送或接收电子邮件。 
     
@@ -38,13 +38,13 @@ ms.locfileid: "32260994"
   
 ## <a name="how-it-works"></a>运作方式
 
-如果启用了 microsoft 团队的用户具有本地邮箱, 并且其用户帐户/标识已同步到云, Microsoft 将创建一个基于云的邮箱来存储1xN 团队聊天数据。 在将团队聊天数据存储在基于云的邮箱中之后, 将为搜索编制索引。 这样, 您就可以使用内容搜索 (和与电子数据展示事例关联的搜索) 来搜索、预览和导出本地用户的团队聊天数据。 您还可以使用** \*** Security & 合规性中心 PowerShell 中的 new-compliancesearch cmdlet 搜索本地用户的团队聊天数据。 
+如果启用了 Microsoft 团队的用户具有本地邮箱, 并且其用户帐户/标识已同步到云, Microsoft 将创建一个基于云的邮箱来存储1xN 团队聊天数据。 在将团队聊天数据存储在基于云的邮箱中之后, 将为搜索编制索引。 这样, 您就可以使用内容搜索 (和与电子数据展示事例关联的搜索) 来搜索、预览和导出本地用户的团队聊天数据。 您还可以使用** \*** Security & 合规性中心 PowerShell 中的 new-compliancesearch cmdlet 搜索本地用户的团队聊天数据。 
   
 下图显示了团队如何聊天本地用户数据的工作流, 以供搜索、预览和导出。
   
 ![Microsoft 团队中的本地用户的基于云的存储](media/895845f8-2ceb-47ed-96c9-5ab7f1aea916.png)
   
-除了这一新功能之外, 您仍可以使用内容搜索在基于云的 SharePoint 网站和与每个 Microsoft 团队关联的 exchange 邮箱中的 exchange 邮箱中搜索、预览和导出团队内容, 以及1xN 团队与 exchange Online 邮箱中的数据进行聊天。基于云的用户。
+除了这一新功能之外, 您仍可以使用内容搜索在基于云的 SharePoint 网站和与每个 Microsoft 团队关联的 Exchange 邮箱中的 Exchange 邮箱中搜索、预览和导出团队内容, 以及1xN 团队与 Exchange Online 邮箱中的数据进行聊天。基于云的用户。
 
 ## <a name="filing-a-request-with-microsoft-support-to-enable-this-feature"></a>将请求与 Microsoft 支持一起存档以启用此功能
 
@@ -106,7 +106,7 @@ ms.locfileid: "32260994"
 
 您可以使用 Security & 合规性中心 PowerShell 中的**new-compliancesearch**和**new-compliancesearch** cmdlet 在基于云的邮箱中搜索本地用户。 如前所述, 您无需提交支持请求即可使用 PowerShell 搜索本地用户的团队聊天数据。 
   
-1. [连接到安全 & 合规中心 PowerShell](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell)。
+1. [连接到安全 _AMP_ 合规中心 PowerShell](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell)。
     
 2. 运行以下 PowerShell 命令创建新的内容搜索内部部署用户的基于云的邮箱。
     
@@ -147,16 +147,16 @@ ms.locfileid: "32260994"
   
  **除了提交支持请求之外, 是否还有其他任何要求？**
   
- 如前所述, 具有本地邮箱的用户的标识必须同步到您的基于云的组织, 以便为 Office 365 中的每个本地用户帐户创建相应的邮件用户帐户。 此外, 您的组织必须具有 office 365 企业版订阅, 例如 office 365 企业版 E1、E3 或 E5 订阅。 
+ 如前所述, 具有本地邮箱的用户的标识必须同步到您的基于云的组织, 以便为 Office 365 中的每个本地用户帐户创建相应的邮件用户帐户。 此外, 您的组织必须具有 Office 365 企业版订阅, 例如 Office 365 企业版 E1、E3 或 E5 订阅。 
   
  **如果将用户的内部部署邮箱迁移到云, 是否有丢失团队聊天数据的风险？**
   
-不可以。 当您将本地用户的主邮箱迁移到云时, 该用户的团队聊天数据将迁移到其新的基于云的主邮箱。
+否。 当您将本地用户的主邮箱迁移到云时, 该用户的团队聊天数据将迁移到其新的基于云的主邮箱。
   
  **我可以将电子数据展示保留或 Office 365 保留策略应用于本地用户吗？**
   
-不可以。
+否。
   
  **在我的组织提交请求以启用此功能之前, 内容搜索是否可以查找本地用户的较早的团队聊天？**
   
-Microsoft 开始在2018年1月31日存储本地用户的团队聊天数据。 因此, 如果在此日期之后, 本地团队用户的标识在 active directory 和 Azure active directory 之间进行了同步, 则其团队聊天数据将存储在基于云的邮箱中, 并将使用内容搜索进行搜索。 Microsoft 还在为本地用户的基于云的邮箱中存储团队聊天数据 (从2018年1月31日到1月31日)。 有关此功能的详细信息即将推出。
+Microsoft 开始在2018年1月31日存储本地用户的团队聊天数据。 因此, 如果在此日期之后, 本地团队用户的标识在 Active Directory 和 Azure Active Directory 之间进行了同步, 则其团队聊天数据将存储在基于云的邮箱中, 并将使用内容搜索进行搜索。 Microsoft 还在为本地用户的基于云的邮箱中存储团队聊天数据 (从2018年1月31日到1月31日)。 有关此功能的详细信息即将推出。

@@ -3,7 +3,7 @@ title: 在 Exchange Online 中为 web 上的 Outlook 配置 S/MIME 设置
 ms.author: chrisda
 author: chrisda
 manager: serdars
-ms.audience: ITPro
+audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
@@ -13,12 +13,12 @@ ms.assetid: c7dee22c-9b5b-425c-91a9-d093204ff84e
 ms.collection:
 - M365-security-compliance
 description: Exchange online 管理员在 Exchange Online 中查看和配置 Outlook 网页中的 S/MIME 设置时需要执行的操作的简短说明。
-ms.openlocfilehash: 41ec5b675284b2040a11f9e076ccef4afcda561a
-ms.sourcegitcommit: d24f50347c671cf5d2d8afec2f80d37d18af8b5d
+ms.openlocfilehash: 2be1d7599d65601671504b7d6caf03e915f10fff
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/10/2019
-ms.locfileid: "33867825"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34153854"
 ---
 # <a name="configure-smime-settings-in-exchange-online-for-outlook-on-the-web"></a>在 Exchange Online 中为 web 上的 Outlook 配置 S/MIME 设置
 

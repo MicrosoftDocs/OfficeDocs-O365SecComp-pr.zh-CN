@@ -4,7 +4,7 @@ ms.author: tracyp
 author: MSFTTracyP
 manager: laurawi
 ms.date: 5/16/2014
-ms.audience: Admin
+audience: Admin
 ms.topic: overview
 ms.service: O365-seccomp
 localization_priority: Normal
@@ -17,12 +17,12 @@ ms.assetid: 63a0b501-ba59-44b7-a35c-999f3be057b2
 ms.collection:
 - M365-security-compliance
 description: 信息管理策略是适用于特定类型内容的一组规则。 信息管理策略使组织能够控制和跟踪多类信息，例如将内容保留多长时间，或者用户可以对该内容执行哪些操作。 信息管理策略可帮助组织遵守法律或政府法规，或者可以仅强制执行内部业务流程。
-ms.openlocfilehash: 23662c555dfc19b2fc83b0364d93724e922c7c97
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: a19b773a8944fa29c06b29e1928cb88e96cf5a7f
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32254220"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34152604"
 ---
 # <a name="introduction-to-information-management-policies"></a>信息管理策略简介
 
@@ -68,7 +68,7 @@ ms.locfileid: "32254220"
   
 ![文档库的 "设置" 页上的信息管理策略链接](media/9fa6d366-6aab-49e1-a05c-898ac6f536e6.png)
   
-备注 
+注释 
   
 仅当列表或库不支持多个内容类型时, 才能为该列表或库创建信息管理策略。 如果列表或库支持多种内容类型, 则需要为与该列表或库关联的每个单独的列表内容类型定义一个信息管理策略。 (与特定列表或库关联的网站内容类型的实例称为 "列表内容类型"。)
   

@@ -3,18 +3,18 @@ title: 安全与合规中心内的消息跟踪
 ms.author: chrisda
 author: chrisda
 manager: serdars
-ms.audience: ITPro
+audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: 3e64f99d-ac33-4aba-91c5-9cb4ca476803
 description: 管理员可以使用安全 & 合规中心中的邮件跟踪来查明邮件发生了什么情况。
-ms.openlocfilehash: ebfc8d5e19bbc45c32ad65451f3f850662f358b4
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: 0db1780057172fe1a6a6c1f7a334fbbd2220df30
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32265606"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34158674"
 ---
 # <a name="message-trace-in-the-security--compliance-center"></a>安全与合规中心内的消息跟踪
 
@@ -32,7 +32,7 @@ Security & 合规性中心中的邮件跟踪改进了在 Exchange 管理中心 (
 
 3. 在左下角导航中, 展开 "**管理中心**", 然后选择 "**安全 & 合规性**"。
 
-4. 在打开的**安全 & 合规性**页面中, 展开 "**邮件流**", 然后选择 "**邮件跟踪**"。
+4. 在打开的**安全 _AMP_ 合规性**页面中, 展开 "**邮件流**", 然后选择 "**邮件跟踪**"。
 
 ## <a name="message-trace-page"></a>邮件跟踪页
 
@@ -103,7 +103,7 @@ Security & 合规性中心中的邮件跟踪改进了在 Exchange 管理中心 (
 
 #### <a name="message-id"></a>邮件 ID
 
-这是在邮件头的**邮件 id:** 头字段中找到的 internet 邮件 id (也称为客户端 ID)。 用户可为您提供此值来调查特定邮件。
+这是在邮件头的**邮件 id:** 头字段中找到的 INTERNET 邮件 id (也称为客户端 ID)。 用户可为您提供此值来调查特定邮件。
 
 该值在邮件生存期内是常量。 对于在 Office 365 或 Exchange 中创建的邮件, 值的格式`<GUID@ServerFQDN>`为, 包括尖括号 (\< \>)。 例如，`<d9683b4c-127b-413a-ae2e-fa7dfb32c69d@DM3NAM06BG401.Eop-nam06.prod.protection.outlook.com>`。 其他邮件系统可能使用不同的语法或值。 此值应是唯一的, 但并不是所有的电子邮件系统都严格遵守此要求。 如果**邮件 ID:** 标头字段不存在或对于来自外部源的传入邮件为空, 则分配一个任意值。
 
@@ -173,7 +173,7 @@ Security & 合规性中心中的邮件跟踪改进了在 Exchange 管理中心 (
 
 选中行的复选框后, 可以通过单击显示的 "**查找相关**" 按钮, 或选择 "**更多选项** ![](media/1ea52bbf-9d00-48ce-9362-307f7f6fb7fe.png) \> " 来查找**此邮件的相关记录**, 从而查找邮件的相关记录。
 
-有关邮件 id 的详细信息, 请参阅本主题前面的邮件 id 一节。
+有关邮件 ID 的详细信息, 请参阅本主题前面的邮件 ID 一节。
 
 #### <a name="message-trace-details"></a>邮件跟踪详细信息
 
@@ -289,7 +289,7 @@ Security & 合规性中心中的邮件跟踪改进了在 Exchange 管理中心 (
 
 - **参考**: 此字段包含特定事件类型的其他信息。 例如：
 
-   - **DSN**: 包含报告链接, 如果此事件后面生成 dsn, 则该链接是关联的传递状态通知 (也称为 DSN、未送达报告、NDR 或退回邮件) 的**message_id**值。 如果这是 dsn 邮件, 则此字段包含为其生成 DSN 的原始邮件的**message_id**值。
+   - **DSN**: 包含报告链接, 如果此事件后面生成 dsn, 则该链接是关联的传递状态通知 (也称为 DSN、未送达报告、NDR 或退回邮件) 的**message_id**值。 如果这是 DSN 邮件, 则此字段包含为其生成 DSN 的原始邮件的**message_id**值。
 
    - **展开**: 包含相关邮件的**related_recipient_address**值。
 
@@ -325,7 +325,7 @@ Security & 合规性中心中的邮件跟踪改进了在 Exchange 管理中心 (
 
 以**custom_data**开头`S:SFA`的值来自垃圾邮件筛选器代理。 下表介绍了关键详细信息:
 
-|**Value**|**说明**|
+|**值**|**说明**|
 |:-----|:-----|
 |`SFV=NSPM`|邮件被标记为非垃圾邮件并发送给预期发件人。|
 |`SFV=SPM`|邮件由内容筛选器标记为垃圾邮件。|
@@ -352,7 +352,7 @@ Security & 合规性中心中的邮件跟踪改进了在 Exchange 管理中心 (
 
 以**** 的开头`S:AMA`的 custom_data 值来自恶意软件筛选器代理。 下表介绍了关键详细信息:
 
-|**Value**|**说明**|
+|**值**|**说明**|
 |:-----|:-----|
 |`AMA=SUM|v=1|` 或 `AMA=EV|v=1`|已确定此邮件包含恶意软件。 `SUM`指示任意数量的引擎可能检测到恶意软件。 `EV`指示特定引擎检测到恶意软件。 引擎检测到恶意软件后，将触发后续操作。|
 |`Action=r`|邮件已被替换。|
@@ -375,7 +375,7 @@ Security & 合规性中心中的邮件跟踪改进了在 Exchange 管理中心 (
 
 以**custom_data**开头`S:TRA`的值来自邮件流规则的传输规则代理 (也称为传输规则)。 下表介绍了关键详细信息:
 
-|**Value**|**说明**|
+|**值**|**说明**|
 |:-----|:-----|
 |`ETR|ruleId=<guid>`|匹配的规则 ID。|
 |`St=<datetime>`|发生规则匹配时的日期和时间 (以 UTC 为单位)。|

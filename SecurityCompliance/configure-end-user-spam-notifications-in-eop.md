@@ -3,7 +3,7 @@ title: 在 EOP 中配置最终用户垃圾邮件通知
 ms.author: krowley
 author: kccross
 manager: laurawi
-ms.audience: ITPro
+audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
@@ -13,12 +13,12 @@ ms.assetid: e9947db5-1dd1-4493-872d-7362b24c7ba0
 ms.collection:
 - M365-security-compliance
 description: 您可以针对默认的公司范围内内容筛选器策略或应用于域的自定义内容筛选器策略配置最终用户垃圾邮件通知。
-ms.openlocfilehash: 09ddd7fd2800e4038e354e53da53320184da3e77
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: 07bca81f06a347bbce5e997e570553f85deb5c1d
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32259620"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34151454"
 ---
 # <a name="configure-end-user-spam-notifications-in-eop"></a>在 EOP 中配置最终用户垃圾邮件通知
   
@@ -39,7 +39,7 @@ ms.locfileid: "32259620"
 
 **发布 &** 如果邮件不是垃圾邮件, 并且您希望 Office 365 将发件人添加到安全发件人和收件人列表中, 以供将来的电子邮件。 请注意, 您的管理员可能有其他组织范围的允许/阻止配置替代安全发件人列表。
 
-**发布 & 报告**, 如果邮件不是垃圾邮件, 并且您想要将邮件发送到您的邮箱并将其报告给 Microsoft 进行分析。
+**发布 _AMP_ 报告**, 如果邮件不是垃圾邮件, 并且您想要将邮件发送到您的邮箱并将其报告给 Microsoft 进行分析。
 
 如果您希望 Office 365 将发件人添加到阻止发件人列表, 则**阻止**。
   
@@ -77,7 +77,7 @@ ms.locfileid: "32259620"
   
 ![测试最终用户垃圾邮件通知的传输规则](media/EOP-ESN-testspecificusers.jpg)
   
-## <a name="for-more-information"></a>有关详细信息
+## <a name="for-more-information"></a>详细信息
 
 [配置垃圾邮件筛选器策略](configure-your-spam-filter-policies.md)
   

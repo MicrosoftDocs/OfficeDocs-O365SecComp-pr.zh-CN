@@ -4,7 +4,7 @@ ms.author: markjjo
 author: markjjo
 manager: laurawi
 ms.date: ''
-ms.audience: Admin
+audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: e84f05fa1a7356952b62f2f4adc3b7d0f1ddc94e
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: 781b0b749390b36ecdf391bff1089d6180e7c3d2
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32258040"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34150664"
 ---
 # <a name="review-the-data-in-evidence"></a>查看证据中的数据
 
@@ -102,4 +102,4 @@ ms.locfileid: "32258040"
 ![批注视图](../media/Reviewimage1.png)
 
 > [!NOTE]
-> 批注应用于已添加到证据集的文档副本。 live service 中的原始文档未进行批注。
+> 批注应用于已添加到证据集的文档副本。 Live service 中的原始文档未进行批注。

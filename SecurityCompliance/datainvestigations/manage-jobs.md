@@ -4,7 +4,7 @@ ms.author: markjjo
 author: markjjo
 manager: laurawi
 ms.date: ''
-ms.audience: Admin
+audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: 3b144fbf5f00f3dbb017ac176c75677970f2f7f2
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: 12b86f3e63d69fbd64304f1ed46cff25daffa8ff
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32258180"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34150764"
 ---
 # <a name="manage-jobs-in-data-investigations-preview"></a>在数据调查中管理作业 (预览)
 
@@ -33,7 +33,7 @@ ms.locfileid: "32258180"
 |将修正的数据添加到证据集 | 将修正带有处理错误的数据, 并将其重新加载回证据集。 有关详细信息, 请参阅[处理调查数据时的错误修正](error-remediation.md)。 | 
 |比较负载集 | 用户查看证据集内不同加载集之间的差异。 加载集是将数据添加到证据集的实例。 例如, 如果将两个不同搜索的结果添加到相同的证据集, 每个搜索将代表一个负载集。 有关详细信息, 请参阅[管理加载集](manage-load-sets.md)。 |
 |将编辑文档转换为 PDF|在用户 annotates 证据集内的文档并修订其中的一部分后, 他们可以选择将编辑文档转换为 PDF 文件。 这样可确保在导出文档以进行演示时不会显示编辑部分。 有关详细信息, 请参阅[在证据中查看数据](review-data-in-evidence.md)。 |
-|估计搜索结果 | 在用户创建并运行新的搜索 (或重新运行现有搜索) 后, 搜索工具会在索引中搜索与搜索查询匹配的项目, 并准备一个估计, 其中包括搜索的所有项目的数量和总大小, 以及数据源海洋的数量。rched。  有关详细信息, 请参阅[在调查中搜索数据](search-for-data.md)。 | 
+|估计搜索结果 | 在用户创建并运行新的搜索 (或重新运行现有搜索) 后, 搜索工具会在索引中搜索与搜索查询匹配的项目, 并准备一个估计, 其中包括搜索的所有项目的数量和总大小, 以及数据源海洋的数量。rched.  有关详细信息, 请参阅[在调查中搜索数据](search-for-data.md)。 | 
 |准备数据以供导出 | 用户从证据集导出文档。 导出过程完成后, 可以将导出的数据下载到本地计算机。 有关详细信息, 请参阅[从调查中导出数据](export-data.md)。 | 
 |为错误解决做准备 |当用户在调查的 "**处理**" 选项卡上的 "错误" 视图中选择文件并创建新的错误修正时, 该过程中的第一步是将具有处理错误的文件上传到 Microsoft 云中的 Azure 存储位置。 此作业跟踪上载过程的进度。 有关错误修正工作流的详细信息, 请参阅[在处理调查数据时出现错误修正](error-remediation.md)。| 
 |准备搜索预览 | 在用户创建并运行新的搜索 (或重新运行现有搜索) 后, 搜索工具准备可预览的项的示例子集 (与搜索查询匹配)。 预览搜索结果可帮助您确定搜索的有效性。  有关详细信息, 请参阅[在调查中搜索数据](search-for-data.md)。 | 

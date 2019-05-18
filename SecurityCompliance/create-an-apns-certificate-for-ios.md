@@ -4,7 +4,7 @@ ms.author: brendonb
 author: brendonb
 manager: laurawi
 ms.date: 8/5/2016
-ms.audience: Admin
+audience: Admin
 ms.topic: article
 f1_keywords:
 - O365M_APNCertMDM
@@ -17,17 +17,17 @@ search.appverid:
 - MBS150
 - MET150
 ms.assetid: 522b43f4-a2ff-46f6-962a-dd4f47e546a7
-description: 若要在移动设备管理中管理 Office 365 的 iOS 设备 (如 iPad 和 iphone), 请按照以下步骤操作, 以首次创建 APNs 证书。
-ms.openlocfilehash: 5f82690f0add5f1aae95a089d9cdfc0b320ae596
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+description: 若要在移动设备管理中管理 Office 365 的 iOS 设备 (如 iPad 和 Iphone), 请按照以下步骤操作, 以首次创建 APNs 证书。
+ms.openlocfilehash: 17dae3e02520cdac2b1381039844d1657b12c4eb
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32258608"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34153754"
 ---
 # <a name="create-an-apns-certificate-for-ios-devices"></a>为 iOS 设备创建 APNs 证书
 
- 若要在移动设备管理 for Office 365 中管理 iPad 设备 (如 iPad 和 iphone), 必须创建 APNs 证书。 
+ 若要在移动设备管理 for Office 365 中管理 iPad 设备 (如 iPad 和 Iphone), 必须创建 APNs 证书。 
   
 若要执行此操作, 请按照 "门户" 页面上的 "**设置**" 链接中的步骤操作。 (转到**安全&amp;合规中心** \> **安全策略** \> **设备管理** \> **管理设置**。)
   
@@ -67,7 +67,7 @@ ms.locfileid: "32258608"
     
     ![单击 "浏览" 按钮以选择从 Apple 下载的 APNS 证书](media/afe2849d-af23-4c55-9009-d8f25edaf6c0.png)
   
-7. Select **Finish**.
+7. 选择“完成”****。
     
 返回到**安全&amp;合规中心** \> **安全策略** \> **设备管理** \> **管理设置**以完成安装。 
   

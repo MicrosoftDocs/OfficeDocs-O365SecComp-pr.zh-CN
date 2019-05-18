@@ -4,7 +4,7 @@ ms.author: chrfox
 author: chrfox
 manager: laurawi
 ms.date: 9/14/2017
-ms.audience: Admin
+audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
@@ -13,12 +13,12 @@ search.appverid:
 - MET150
 ms.assetid: 0e0a9d04-294f-4f54-8bf1-b32d81345126
 description: '查看在 Office 365 高级电子数据展示中执行关联性培训之前, 将导入的文件添加到文件的最后一个已定义负载或批处理的步骤。  '
-ms.openlocfilehash: 8c5101628b468719f8aa4f81a4c73cbbb226105f
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: 65e022680cc0bd39bbca3e05a4e3b6d24da1b2ad
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32260732"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34158604"
 ---
 # <a name="set-up-loads-to-add-imported-files-in-office-365-advanced-ediscovery"></a>设置加载以在 Office 365 高级电子数据展示中添加导入的文件
 
@@ -50,7 +50,7 @@ ms.locfileid: "32260732"
     
 4. 单击 "**添加文件**"。 将文件添加到加载中, 并显示一条确认消息。 
     
-5. 单击“**确定**”。
+5. 单击“确定”****。
     
 现在, 可以在高级电子数据展示的相关性中处理文件以用于培训文件。
   

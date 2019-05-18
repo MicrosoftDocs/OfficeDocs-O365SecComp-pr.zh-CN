@@ -4,18 +4,18 @@ ms.author: krowley
 author: kccross
 manager: laurawi
 ms.date: 4/29/2017
-ms.audience: ITPro
+audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: 9c2cf227-eff7-48ef-87fb-487186e47363
 description: 可以使用邮件流规则 (传输规则) 识别通过 Office 365 组织传递的邮件并对其执行操作。
-ms.openlocfilehash: 379886788a4fa411d70830c702dd8850e8118b32
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: 73f5668be76a20af7474f6de06d50e278057fd06
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32256622"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34153144"
 ---
 # <a name="mail-flow-rules-transport-rules-in-exchange-online-protection"></a>Exchange Online Protection 中的邮件流规则 (传输规则)
 
@@ -23,7 +23,7 @@ ms.locfileid: "32256622"
   
 本文介绍了邮件流规则的组件及其工作方式。
   
-有关创建、复制和管理邮件流规则的步骤, 请参阅**管理邮件流规则**。 可以选择强制实施每个规则、只是测试规则，或测试每个规则并通知发件人。 若要了解有关测试选项的详细信息, 请参阅**Test a mail flow rule** and **Policy 诀窍**。
+有关创建、复制和管理邮件流规则的步骤, 请参阅**管理邮件流规则**。 可以选择强制实施每个规则、只是测试规则，或测试每个规则并通知发件人。 若要了解有关测试选项的详细信息, 请参阅**Test a mail flow rule** And **Policy 诀窍**。
   
 有关与邮件流规则匹配的邮件的摘要和详细信息报告，请参阅**使用 Office 365 中的邮件保护报告查看关于恶意软件、垃圾邮件和规则检测的数据**。
   
@@ -53,13 +53,13 @@ ms.locfileid: "32256622"
   
 - **条件** 用于标识要将操作应用到的邮件。一些条件检查邮件头字段（例如"收件人"、"发件人"或"抄送"字段）。其他条件检查邮件属性（例如邮件主题、正文、附件、邮件大小或邮件分类）。大多数条件要求你指定比较运算符（例如等于、不等于或包含）以及要匹配的值。如果没有条件或例外，规则将应用到所有邮件。 
     
-    有关 exchange online Protection 中的邮件流规则条件的详细信息, 请参阅[mail flow rule 条件 and 例外 (谓词) 在 exchange online 中。](https://docs.microsoft.com/en-us/exchange/security-and-compliance/mail-flow-rules/conditions-and-exceptions)。
+    有关 Exchange Online Protection 中的邮件流规则条件的详细信息, 请参阅[mail flow rule 条件 and 例外 (谓词) 在 Exchange online 中。](https://docs.microsoft.com/en-us/exchange/security-and-compliance/mail-flow-rules/conditions-and-exceptions)。
     
 - **例外** 选择性地识别操作不应应用到的邮件。条件中可用的相同邮件标识符同样在例外中可用。例外会覆盖条件并阻止规则操作应用于邮件，即使邮件匹配所有配置的条件也是如此。 
     
 - **操作** 指定对匹配规则中的条件而不匹配任何例外的邮件执行哪些操作。有许多可用操作，例如拒绝、删除或重定向邮件、添加其他收件人、在邮件主题中添加前缀或在邮件正文中插入免责声明。 
     
-    有关 exchange online protection 中可用的邮件流规则操作的详细信息, 请参阅[exchange online protection 中的邮件流规则操作](http://technet.microsoft.com/library/f8621ecb-a177-4025-9011-a6569999746a.aspx)。
+    有关 Exchange Online Protection 中可用的邮件流规则操作的详细信息, 请参阅[Exchange Online protection 中的邮件流规则操作](http://technet.microsoft.com/library/f8621ecb-a177-4025-9011-a6569999746a.aspx)。
     
 - **属性** 指定条件、例外和操作之外的其他规则设置。例如，应何时应用规则、是否强制实施或测试规则，以及规则可用的时间段。 
     
@@ -121,7 +121,7 @@ All messages that flow through your organization are evaluated against the enabl
     
 - 在创建或修改邮件流规则后, 最长可能需要30分钟才能将新的或更新的规则应用于邮件。
     
-## <a name="for-more-information"></a>有关详细信息
+## <a name="for-more-information"></a>详细信息
   
 [使用邮件流规则在 Exchange Online 中检查邮件附件](http://technet.microsoft.com/library/874d1c78-a8ec-4938-b388-d3208c2fa971.aspx)
   

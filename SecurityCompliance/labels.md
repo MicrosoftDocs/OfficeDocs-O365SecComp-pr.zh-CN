@@ -4,7 +4,7 @@ ms.author: stephow
 author: stephow-MSFT
 manager: laurawi
 ms.date: ''
-ms.audience: Admin
+audience: Admin
 ms.topic: conceptual
 ms.service: O365-seccomp
 localization_priority: Priority
@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Office 365 中的保留标签可有助于对正确的内容执行适当的操作。借助保留标签，可对整个组织中的数据进行分类来管理数据，并根据此分类强制执行保留规则。另外，保留标签还可用于在 Office 365 中实现记录管理。
-ms.openlocfilehash: e13c73e95a2b8bc25df0031a9bd94da4feb54b23
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: b6e0263b02c6395d7f8d9ccb68d04b82aa84fe29
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32254990"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34154344"
 ---
 # <a name="overview-of-retention-labels"></a>保留标签概述
 
@@ -279,12 +279,14 @@ ms.locfileid: "32254990"
 
 有关查询语法的详细信息，请参阅：
 
-- [关键字查询语言 (KQL) 语法参考](https://docs.microsoft.com/zh-CN/sharepoint/dev/general-development/keyword-query-language-kql-syntax-reference)
+- 
+  [关键字查询语言 (KQL) 语法参考](https://docs.microsoft.com/zh-CN/sharepoint/dev/general-development/keyword-query-language-kql-syntax-reference)
 
 基于查询的标签使用搜索索引来标识内容。有关有效可搜索属性的详细信息，请参阅：
 
 - [内容搜索的关键字查询和搜索条件](keyword-queries-and-search-conditions.md)
-- [已爬网和托管属性在 SharePoint Server 中的概述](https://docs.microsoft.com/zh-CN/SharePoint/technical-reference/crawled-and-managed-properties-overview)
+- 
+  [已爬网和托管属性在 SharePoint Server 中的概述](https://docs.microsoft.com/zh-CN/SharePoint/technical-reference/crawled-and-managed-properties-overview)
 
 示例查询：
 

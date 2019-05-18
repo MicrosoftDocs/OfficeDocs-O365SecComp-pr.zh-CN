@@ -4,18 +4,18 @@ ms.author: stephow
 author: stephow-MSFT
 manager: laurawi
 ms.date: 8/17/2018
-ms.audience: Admin
+audience: Admin
 ms.topic: reference
 ms.service: O365-seccomp
 ms.collection: M365-security-compliance
 localization_priority: Normal
 description: 本主题介绍当数据丢失防护 (DLP) 策略检测到欧盟社会保险号码或等效 ID 敏感信息类型时, 将会查找什么。 此敏感信息类型为每个国家/地区定义不同的模式、关键字和其他证据。
-ms.openlocfilehash: c0c808eafa52209c79f3b4e8a2113f587fd8a771
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: b42a8d927e18f813eb6ef6d1d55b2de15ea9dcd5
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32255550"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34154484"
 ---
 # <a name="eu-social-security-number-or-equivalent-id"></a>欧盟社会安全号码或等效 ID
 
@@ -88,7 +88,7 @@ ssn
   
 保险代码 #
   
-socialsecurityno #
+socialsecurityno#
   
 sozialversicherungsnummer
   
@@ -145,7 +145,7 @@ versicherungsnummer
   
 social security number
   
-nationalnumber #
+nationalnumber#
   
 ssn
   
@@ -153,13 +153,13 @@ ssn
   
 nationalnumber
   
-bnn #
+bnn#
   
 bnn
   
 个人 id 号
   
-personalidnumber #
+personalidnumber#
   
 numéro 国家
   
@@ -169,9 +169,9 @@ numéro d'assuré
   
 identifiant 国家
   
-identifiantnational #
+identifiantnational#
   
-numéronational #
+numéronational#
   
 ## <a name="croatia"></a>克罗地亚
 
@@ -228,7 +228,7 @@ national identification number
   
 social security number
   
-nationalnumber #
+nationalnumber#
   
 ssn
   
@@ -236,13 +236,13 @@ ssn
   
 nationalnumber
   
-bnn #
+bnn#
   
 bnn
   
 个人 id 号
   
-personalidnumber #
+personalidnumber#
   
 oib
   
@@ -307,7 +307,7 @@ national identification number
   
 social security number
   
-nationalnumber #
+nationalnumber#
   
 ssn
   
@@ -317,11 +317,11 @@ ssn
   
 个人 id 号
   
-personalidnumber #
+personalidnumber#
   
 rč
   
-rodnéčíslo
+rodné číslo
   
 rodne cislo
   
@@ -380,7 +380,7 @@ national identification number
   
 social security number
   
-nationalnumber #
+nationalnumber#
   
 ssn
   
@@ -390,7 +390,7 @@ ssn
   
 个人 id 号
   
-personalidnumber #
+personalidnumber#
   
 cpr-nummer
   
@@ -461,7 +461,7 @@ identification number
   
 芬兰国家/地区 id 号
   
-personalidnumber #
+personalidnumber#
   
 national identification number
   
@@ -485,7 +485,7 @@ identiteetti numero
   
 suomen kansallinen henkilötunnus
   
-henkilötunnusnumero #
+henkilötunnusnumero#
   
 kansallisen tunnistenumero
   
@@ -554,9 +554,9 @@ hetu
   
 social security number
   
-socialsecuritynumber #
+socialsecuritynumber#
   
-hssn #
+hssn#
   
 socialsecuritynno
   
@@ -564,7 +564,7 @@ hssn
   
 taj
   
-taj #
+taj#
   
 ssn
   
@@ -608,7 +608,7 @@ magyar áfa szám
     
   - 序列号中的最后一个数字指示在为 "男" 分配一个奇数号码时的性别, 以及一个 "女" 的偶数号码。
     
-  - 最多 1990, 将序列号 corresponded 分配给在其中, 号码持有者出生或 (如果在1947之前出生) 的县 (根据纳税记录, 在年1月1日, 使用特殊代码 (通常为第七个数字) 的特殊代码 (通常为9号)immigrants 
+  - 最多 1990, 将序列号 corresponded 分配给在其中, 号码持有者出生或 (如果在1947之前出生) 的县 (根据纳税记录, 在年1月 1947 1 日, 使用特殊代码 (通常为第七个数字) 的特殊代码 (通常为9号)immigrants 
     
 - 一个校验位
     
@@ -667,9 +667,9 @@ personnummer
   
 identifikationsnumret
   
-personnummer #
+personnummer#
   
-identifikationsnumret #
+identifikationsnumret#
   
 ## <a name="see-also"></a>另请参阅
 

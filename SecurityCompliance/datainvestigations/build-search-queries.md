@@ -4,7 +4,7 @@ ms.author: markjjo
 author: markjjo
 manager: laurawi
 ms.date: ''
-ms.audience: Admin
+audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: 使用 Microsoft 365 中的数据调查时, 使用关键字和条件缩小搜索范围的范围。
-ms.openlocfilehash: eeca1bf7ff89d1b7f79ceeed3334668e354f035a
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: 6d6c7e99257d071595365ec9a9557892fe3fe8db
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32262878"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34151054"
 ---
 # <a name="build-search-queries"></a>生成搜索查询
 

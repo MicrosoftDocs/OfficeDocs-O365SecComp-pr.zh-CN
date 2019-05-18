@@ -4,18 +4,18 @@ ms.author: krowley
 author: kccross
 manager: laurawi
 ms.date: 12/9/2016
-ms.audience: ITPro
+audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: 4bfaf2ab-e633-4227-8bde-effefb41a3db
 description: 定义邮件用户是管理 Exchange Online Protection (EOP) 服务的重要部分。
-ms.openlocfilehash: 2e266d4dd31c3bd614c1b4f8afa17ca747890385
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: 769ab13f99d7faae42bbdbed5b2b95bd37cfd55e
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32256450"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34150234"
 ---
 # <a name="manage-mail-users-in-eop"></a>在 EOP 中管理邮件用户
 
@@ -30,7 +30,7 @@ ms.locfileid: "32256450"
 > [!NOTE]
 > 你可以在 Microsoft 365 管理中心添加用户, 但这些用户不能用作邮件收件人。 
   
-## <a name="before-you-begin"></a>准备工作
+## <a name="before-you-begin"></a>开始之前
 
 - 本主题中的过程需要特定权限。请参阅每个过程，以了解其权限信息。
     
@@ -44,7 +44,7 @@ ms.locfileid: "32256450"
 本节提供了有关使用目录同步管理电子邮件用户的信息。
   
 > [!IMPORTANT]
-> 如果使用目录同步来管理收件人, 您仍可以在 Microsoft 365 管理中心中添加和管理用户, 但不会将其与本地 Active directory 同步。 这是因为目录同步只能将来自本地 Active Directory 的收件人同步到云。 
+> 如果使用目录同步来管理收件人, 您仍可以在 Microsoft 365 管理中心中添加和管理用户, 但不会将其与本地 Active Directory 同步。 这是因为目录同步只能将来自本地 Active Directory 的收件人同步到云。 
   
 > [!TIP]
 >  建议使用目录同步, 以便与以下功能配合使用: > **Outlook 安全发件人列表和阻止发件人列表**-当同步到服务时, 这些列表将优先于服务中的垃圾邮件筛选。 这允许用户在每个用户或每个域的基础上管理他们自己的白名单和黑名单。 > **基于目录的边缘阻止 (DBEB)** -有关 DBEB 的详细信息, 请参阅[使用基于目录的边缘阻止拒绝发送给无效收件人的邮件](http://technet.microsoft.com/library/ca7b7416-92ed-40ad-abdb-695be46ea2e4.aspx)。 > **最终用户垃圾邮件隔离**-为了访问最终用户的垃圾邮件隔离, 最终用户必须具有有效的 Office 365 用户 ID 和密码。 负责保护本地邮箱的 EOP 客户必须是有效的电子邮件用户。 > **邮件流规则**-使用目录同步时, 会自动将现有的 Active directory 用户和组上载到云, 然后您可以创建针对特定用户和/或的邮件流规则 (也称为传输规则)。组, 而无需通过 EAC 或 Exchange Online Protection PowerShell 手动添加它们。 请注意， [动态通讯组](https://go.microsoft.com/fwlink/?LinkId=507569)无法通过目录同步进行同步。 
@@ -62,7 +62,7 @@ ms.locfileid: "32256450"
 3. 按[使用配置向导同步目录](http://go.microsoft.com/fwlink/?LinkId=308912)中所述，同步目录。
     
     > [!IMPORTANT]
-    > 当您完成 Azure Active directory 同步工具配置向导时, 将在 Active Directory 林中创建**MSOL_AD_SYNC**帐户。 此帐户用于读取和同步您的本地 Active Directory 信息。 为了使目录同步正常工作，请确保本地目录同步服务器上的 TCP 443 处于打开状态。 
+    > 当您完成 Azure Active Directory 同步工具配置向导时, 将在 Active Directory 林中创建**MSOL_AD_SYNC**帐户。 此帐户用于读取和同步您的本地 Active Directory 信息。 为了使目录同步正常工作，请确保本地目录同步服务器上的 TCP 443 处于打开状态。 
   
 4. 按[激活同步用户](http://go.microsoft.com/fwlink/p/?LinkId=308913)中所述，激活同步用户。
     
@@ -86,7 +86,7 @@ ms.locfileid: "32256450"
     
    ****
 
-|**邮件用户属性**|**Description**|
+|**邮件用户属性**|**说明**|
 |:-----|:-----|
 |**“名字” **、“姓名缩写”**** 和“姓氏”**** <br/> |在相应的框中键入用户的全名。  <br/> |
 |**显示名称** <br/> |键入名称，最多 64 个字符。默认情况下，此框将在“名字”****、“姓名缩写”**** 和“姓氏”**** 框中显示名称（如果有）。显示名称是必填项。<br/> |

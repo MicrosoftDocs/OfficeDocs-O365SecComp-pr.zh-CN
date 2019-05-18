@@ -3,7 +3,7 @@ title: 配置组织的监督策略
 ms.author: robmazz
 author: robmazz
 manager: laurawi
-ms.audience: Admin
+audience: Admin
 ms.topic: article
 f1_keywords:
 - ms.o365.cc.SupervisoryReview
@@ -16,46 +16,46 @@ search.appverid:
 - MET150
 - MOE150
 description: 设置监管审核策略以捕获员工通信以供审阅。
-ms.openlocfilehash: c99936a9a33446ce13e5d0a719ef7447be619bf4
-ms.sourcegitcommit: 696c1ed6b270be3f9da7395b49a7d8fec98e6db0
+ms.openlocfilehash: 4cf8c47f761f13165898cbc719f94e9bf9fd66f2
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/29/2019
-ms.locfileid: "33470392"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34151534"
 ---
 # <a name="configure-supervision-policies-for-your-organization"></a>配置组织的监督策略
 
 使用监督策略来捕获由内部或外部审阅者进行检查的员工通信。 有关监察策略如何帮助您监视组织中的通信的详细信息, 请参阅[Office 365 中的监察策略](supervision-policies.md)。
 
 > [!NOTE]
-> 监督策略监视的用户必须拥有 Microsoft 365 E5 合规性许可证、具有高级合规性加载项的 Office 365 企业版 E3 许可证, 或包含在 office 365 企业版 E5 订阅中。
+> 监督策略监视的用户必须拥有 Microsoft 365 E5 合规性许可证、具有高级合规性加载项的 Office 365 企业版 E3 许可证, 或包含在 Office 365 企业版 E5 订阅中。
 如果你没有现有的企业版 E5 计划, 并且想要尝试监督, 则可以[注册 Office 365 企业版 e5 的试用版](https://go.microsoft.com/fwlink/p/?LinkID=698279)。
   
 按照以下步骤在 Office 365 组织中设置和使用监督:
   
-- **第1步 (可选)**:[设置组以进行监控 (可选)](#step-1---set-up-groups-for-supervision-optional)
+- **步骤 1 (可选)**:[为监督设置组](#step-1-set-up-groups-for-supervision-optional) 
 
     在开始使用监督之前, 请确定哪些用户需要查看通信以及谁执行了检查。 如果您只想开始几个用户来了解监督工作的工作方式, 则可以跳过 "立即" 设置组。
 
-- **步骤 2 (必需)**:[让监督在你的组织中可用 (必需)](#step-2---make-supervision-available-in-your-organization-required)
+- **步骤 2 (必需)**:[让监督在你的组织中可用](#step-2-make-supervision-available-in-your-organization-required)
 
-    将自己添加到监管审核角色组, 以便您可以设置策略。 分配此角色的任何人都可以访问合规中心中的**监督**页面。 如果 reviewable 电子邮件托管在 Exchange online 中, 则每个审阅者都必须具有[对 exchange online 的远程 PowerShell 访问权限](https://docs.microsoft.com/powershell/exchange/exchange-online/disable-access-to-exchange-online-powershell)。
+    将自己添加到监管审核角色组, 以便您可以设置策略。 分配此角色的任何人都可以访问合规中心中的**监督**页面。 如果 reviewable 电子邮件托管在 Exchange Online 中, 则每个审阅者都必须具有[对 Exchange online 的远程 PowerShell 访问权限](https://docs.microsoft.com/powershell/exchange/exchange-online/disable-access-to-exchange-online-powershell)。
 
-- **步骤 3 (可选)**:[创建自定义敏感信息类型和自定义关键字词典](#step-3---create-custom-sensitive-information-types-and-custom-keyword-dictionaries-optional)
+- **步骤 3 (可选)**:[创建自定义敏感信息类型和自定义关键字词典](#step-3-create-custom-sensitive-information-types-and-custom-keyword-dictionaries-optional)
 
     如果您需要针对监督策略的自定义敏感信息类型或自定义关键字词典, 则需要在启动监督向导之前创建它。
 
-- **步骤 4 (必需)**:[设置监督策略](#step-4---set-up-a-supervision-policy-required)
+- **步骤 4 (必需)**:[设置监督策略](#step-4-set-up-a-supervision-policy-required)
 
     在合规中心中创建监督策略。 这些策略定义哪些通信将在组织中进行审核, 并指定执行审阅的用户。 通信包括电子邮件和 Microsoft 团队通信, 以及第三方平台通信 (如 Facebook、Twitter 等)
 
-- **步骤 5 (可选)**:[测试监督策略](#step-5---test-your-supervision-policy-optional)
+- **步骤 5 (可选)**:[测试监督策略](#step-5-test-your-supervision-policy-optional)
 
     测试您的监督策略以确保其按预期工作。 一定要确保符合性策略满足您的标准。
 
-- **步骤 6 (可选)**:[为不希望使用 Office 365 监督仪表板或 web 上的 outlook (以前称为 Outlook web App) 的审阅者配置 Outlook 以查看受监督的通信](#step-6---configure-outlook-for-reviewers-optional)
+- **步骤 6 (可选)**:[为不希望使用 Office 365 监督仪表板或 Web 上的 outlook (以前称为 Outlook web App) 的审阅者配置 Outlook 以查看受监督的通信](#step-6-configure-outlook-for-reviewers-optional)
 
-    将 outlook 配置为向审阅者授予对 outlook 客户端中的监督功能的访问权限, 以便他们能够评估和分类每个项目。
+    将 Outlook 配置为向审阅者授予对 Outlook 客户端中的监督功能的访问权限, 以便他们能够评估和分类每个项目。
 
 ## <a name="step-1-set-up-groups-for-supervision-optional"></a>步骤 1: 设置组以进行监控 (可选)
 
@@ -65,7 +65,7 @@ ms.locfileid: "33470392"
 
 | **Policy 成员** | **支持的组** | **不受支持的组** |
 |:-----|:-----|:-----|
-|受监督用户 | 通讯组 <br> Office 365 组 | 动态通讯组 |
+|受监督用户 <br> 非监督用户 | 通讯组 <br> Office 365 组 | 动态通讯组 |
 | Reviewers | 启用邮件功能的安全组  | 通讯组 <br> 动态通讯组 |
   
 若要在大型企业组织中管理受监督的用户, 您可能需要监视跨大型组的所有用户。 您可以使用 PowerShell 为分配的组配置全局监督策略的通讯组。 这使您可以使用单个策略监视数千个用户, 并在新员工加入您的组织时保持监督策略的更新。
@@ -185,11 +185,11 @@ ms.locfileid: "33470392"
 
 ## <a name="step-6-configure-outlook-for-reviewers-optional"></a>步骤 6: 配置 Outlook for 审阅者 (可选)
 
-要使用 outlook 而不是 Office 365 中的监督仪表板检查通信的审阅者必须配置其 Outlook 客户端。
+要使用 Outlook 而不是 Office 365 中的监督仪表板检查通信的审阅者必须配置其 Outlook 客户端。
 
 ### <a name="step-1-copy-the-address-for-the-supervision-mailbox"></a>步骤 1: 复制监督邮箱的地址
 
-若要为 outlook 桌面或 outlook for web 配置审阅, 您需要作为监督策略安装程序的一部分创建的监督邮箱的地址。
+若要为 Outlook 桌面或 Outlook for web 配置审阅, 您需要作为监督策略安装程序的一部分创建的监督邮箱的地址。
   
 > [!NOTE]
 > 如果其他人创建了该策略, 则需要从这些地址获取此地址以安装加载项。
@@ -210,7 +210,7 @@ ms.locfileid: "33470392"
   
 1. 连接到 Exchange Online PowerShell。 [我该如何做？](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell)
 
-2. 运行以下命令, 其中*SupervisoryReview {GUID}* 是您在上面的步骤1中复制的地址,*用户*是将在步骤3中连接到监督邮箱的审阅者的姓名。
+2. 运行以下命令, 其中 SupervisoryReview {GUID @domain} 是您在上面的步骤1中复制的地址, 用户是将在步骤3中连接到监督邮箱的审阅者的姓名。
 
     ```Add-MailboxPermission "SupervisoryReview{GUID}@domain.onmicrosoft.com" -User <alias or email address of the account that has reviewer permissions to the supervision mailbox> -AccessRights FullAccess```
 
@@ -223,7 +223,7 @@ ms.locfileid: "33470392"
 在最后一步中, 审阅者需要创建 Outlook 配置文件以连接到监督邮箱。
 
 > [!NOTE]
-> 若要创建新的 Outlook 配置文件, 请使用 Windows 控制面板中的 "邮件" 设置。 获取这些设置所需的路径可能取决于所使用的 windows 操作系统 (windows 7、windows 8 或 windows 10) 以及安装了哪个版本的 Outlook。
+> 若要创建新的 Outlook 配置文件, 请使用 Windows 控制面板中的 "邮件" 设置。 获取这些设置所需的路径可能取决于所使用的 Windows 操作系统 (Windows 7、windows 8 或 Windows 10) 以及安装了哪个版本的 Outlook。
   
 1. 打开 "控制面板"。 在窗口顶部的**搜索**框中, 键入**Mail**。<br/>(不确定如何访问控制面板？ 请参阅[控制面板在什么位置？](https://support.microsoft.com/help/13764/windows-where-is-control-panel)
   

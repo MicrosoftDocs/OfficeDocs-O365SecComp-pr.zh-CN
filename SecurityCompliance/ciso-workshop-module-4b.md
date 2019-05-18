@@ -3,23 +3,23 @@ title: '首席信息安全监察官 (CISO) 研讨会, 模块 4b: 威胁防护策
 ms.author: robmazz
 author: robmazz
 manager: laurawi
-ms.audience: Admin
+audience: Admin
 ms.topic: tutorial
 ms.service: o365-seccomp
 localization_priority: Normal
 ms.collection:
 - M365-security-compliance
 description: 了解有关贵组织中的新式化安全性的安全原则和建议的详细信息。
-ms.openlocfilehash: bbe28d89280826202c9d338827ac2b1469c8a632
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: f5b296351ed0fe076f22c148487ed1044da3ae4f
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32243363"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34152133"
 ---
 # <a name="ciso-workshop-module-4b-threat-protection-strategy"></a>CISO 研讨会模块 4b: 威胁防护策略 
 
-本模块回顾 microsoft 智能安全操作中心 (SOC) 的演变和轨迹, 并在 microsoft 智能安全图形中 trillions 信号。
+本模块回顾 microsoft 智能安全操作中心 (SOC) 的演变和轨迹, 并在 Microsoft 智能安全图形中 trillions 信号。
 
 - 下载 PDF 摘要:[模块 4b: 威胁防护策略](media/ciso-workshop-4b-threat-protection-strategy.pdf)
 - 下载 PowerPoint 摘要:[模块 4b: 威胁防护策略](https://docs.microsoft.com/office365/securitycompliance/media/ciso-workshop-4b-threat-protection-strategy.pptx)

@@ -4,7 +4,7 @@ ms.author: tracyp
 author: MSFTTracyP
 manager: laurawi
 ms.date: 5/16/2017
-ms.audience: Admin
+audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
@@ -17,12 +17,12 @@ ms.assetid: 8ccac9e4-3a50-49fa-a95b-d186032a6ee3
 ms.collection:
 - M365-security-compliance
 description: 利用信息管理策略, 组织可以控制保留内容的时间, 审核用户对内容的处理, 并向文档添加条码或标签。 策略可帮助强制遵守法律和政府法规或内部业务流程。 作为管理员, 您可以设置一个策略来控制如何跟踪文档以及保留文档的时间。
-ms.openlocfilehash: 1d17dd8cadb721478831ab8fe77413c08f959f29
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: 43a39b316f5c1e77ef9576324518dfe228ff35a6
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32258834"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34151234"
 ---
 # <a name="create-and-apply-information-management-policies"></a>创建和应用信息管理策略
 
@@ -57,7 +57,7 @@ ms.locfileid: "32258834"
     
 5. 若要了解如何设置要与策略关联的功能, 请参阅下一节 "为网站内容类型创建策略"。 
     
-6. 选择“**确定**”。
+6. 选择"确定"。
     
 ## <a name="create-a-policy-for-a-site-content-type"></a>为网站内容类型创建策略
 <a name="__create_a_policy"> </a>
@@ -131,7 +131,7 @@ ms.locfileid: "32258834"
 ||||||6.  <br/> |输入标签的高度和宽度。 标签高度介于 0.25 英寸到 20 英寸之间，标签宽度介于 0.25 英寸到 20 英寸之间。 标签文本始终在标签图像内垂直居中。  <br/> |
 ||||||7.  <br/> |选择 "**刷新**" 以预览标签内容。  <br/> |
    
-1. 选择“**确定**”。
+1. 选择"确定"。
     
 ## <a name="create-a-policy-for-a-list-library-or-folder-location-based-retention-policy"></a>为列表、库或文件夹创建策略（基于位置的保留策略）
 <a name="__create_a_policy"> </a>
@@ -162,7 +162,7 @@ ms.locfileid: "32258834"
   
 4. 在 "信息管理策略设置" 页上, 确保将列表或库的保留源设置为 "库和文件夹"。 
   
-如果**内容类型**显示为源, 请单击 "**更改源**", 然后单击 "**库和文件夹**"。 您将收到警告, 内容类型保留策略将被忽略。 选择“**确定**”。 
+如果**内容类型**显示为源, 请单击 "**更改源**", 然后单击 "**库和文件夹**"。 您将收到警告, 内容类型保留策略将被忽略。 选择"确定"。 
     
 5. 在 "编辑策略" 页上的 "**基于库的保留计划**" 下, 输入要创建的策略的简短说明。 
     
@@ -188,7 +188,7 @@ ms.locfileid: "32258834"
     > [!NOTE]
     >  仅当您选择的操作可以重复时, 此选项才可用。 例如, 不能为 "**永久删除**" 操作设置重复项。 
   
-10. 选择“**确定**”。
+10. 选择"确定"。
     
 ## <a name="apply-a-site-collection-policy-to-a-content-type"></a>将网站集策略应用于内容类型
 <a name="__apply_a_site"> </a>
@@ -214,7 +214,7 @@ ms.locfileid: "32258834"
     > [!NOTE]
     >  如果 "**使用网站集策略**" 选项不可用, 则表示尚未为网站集定义任何网站集策略。 
   
-6. 选择“**确定**”。
+6. 选择"确定"。
     
      如果要使用的列表或库支持对多个内容类型的管理, 则可以在 "**内容类型**" 下选择要为其指定信息管理策略的内容类型。 这将直接转到上面的步骤5。 
     

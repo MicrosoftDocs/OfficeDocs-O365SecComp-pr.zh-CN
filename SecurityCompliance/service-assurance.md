@@ -4,7 +4,7 @@ ms.author: markjjo
 author: markjjo
 manager: laurawi
 ms.date: 6/29/2018
-ms.audience: Admin
+audience: Admin
 ms.topic: overview
 ms.service: O365-seccomp
 localization_priority: Normal
@@ -13,12 +13,12 @@ search.appverid:
 - BCS160
 ms.assetid: 47e8b964-4b09-44f7-a2d7-b8a06e8e389c
 description: 下载第三方审核, 了解 Microsoft 如何使客户数据安全, 并了解在使用 Office 365 时如何遵守 ISO、HIPAA、FINRA 和 FedRAMP。
-ms.openlocfilehash: d0cb03a7f5cbc34bdce238155372c9e031a95033
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: e346b84d17c2ca95b6a51ff870b18d5ff408b87c
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32261134"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34158824"
 ---
 # <a name="service-assurance-in-the-security--compliance-center"></a>安全 & 合规中心中的服务保证
 
@@ -99,10 +99,10 @@ ms.locfileid: "32261134"
 > [!NOTE]
 > 服务保证报告和文档可在发布后的12个月内下载, 或者在新版本的文档可用之前进行下载。 
   
-|**服务保证页**|**内容可用**|**Description**|
+|**服务保证页**|**内容可用**|**说明**|
 |:-----|:-----|:-----|
 |合规性报告  <br/> | FedRamp  <br/>  GRC 评估  <br/>  ISO  <br/>  SOC/SSAE  <br/> |使用服务合规性报告可查看由 Office 365 服务交付操作的第三方独立审核员执行的审核评估。  <br/> |
-|信任文档  <br/> | 常见问题解答和白皮书  <br/>  风险管理报告  <br/> |使用在您的审查/风险评估的非公开协议下为您提供的白皮书、faq、年末报告和其他 Microsoft 机密资源。  <br/> |
+|信任文档  <br/> | 常见问题解答和白皮书  <br/>  风险管理报告  <br/> |使用在您的审查/风险评估的非公开协议下为您提供的白皮书、Faq、年末报告和其他 Microsoft 机密资源。  <br/> |
 |已审核控件  <br/> |Office 365 实施的全球标准和法规。  <br/> | 评估、载入或使用 Office 365 服务时, 可帮助进行风险评估。 找出：  <br/> <br/>-Office 365 控制措施如何满足安全性、合规性和隐私要求。  <br/>-关于 Office 365 中的控件的测试、这些测试的结果以及它们何时完成。  <br/> |
    
 根据您的特定设置, 您的视图中包含的选项可能有一些差异。

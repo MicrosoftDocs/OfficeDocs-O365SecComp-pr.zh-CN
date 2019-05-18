@@ -3,7 +3,7 @@ title: 导出内容搜索结果
 ms.author: markjjo
 author: markjjo
 manager: laurawi
-ms.audience: Admin
+audience: Admin
 ms.topic: article
 f1_keywords:
 - ms.o365.cc.CustomizeExport
@@ -18,12 +18,12 @@ search.appverid:
 - MET150
 ms.assetid: ed48d448-3714-4c42-85f5-10f75f6a4278
 description: '将搜索结果从 Security & 合规性中心中的内容搜索导出到本地计算机。 电子邮件结果将导出为 PST 文件。 SharePoint 和 OneDrive for business 网站中的内容将导出为本机 Office 文档。 '
-ms.openlocfilehash: 5d1baa57f466a5ef7657d92b517660e35b0036e8
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: deb777125f75f30a3d98d090c4427de8c5388800
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32255494"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34154544"
 ---
 # <a name="export-content-search-results"></a>导出内容搜索结果
 
@@ -33,7 +33,7 @@ ms.locfileid: "32255494"
   
 导出内容搜索结果包括准备结果, 然后将其下载到本地计算机。
   
-## <a name="before-you-begin"></a>准备工作
+## <a name="before-you-begin"></a>开始之前
 
 - 若要导出搜索结果, 您必须在安全 & 合规性中心中分配有 "导出管理" 角色。 此角色分配给内置电子数据展示管理员角色组。 它没有默认分配至组织管理角色组。 有关详细信息, 请参阅[分配电子数据展示权限](assign-ediscovery-permissions.md)。
     
@@ -41,7 +41,7 @@ ms.locfileid: "32255494"
     
   - 32 位或 64 位版本的 Windows 7 和更高版本
     
-  - Microsoft .net Framework 4。7
+  - Microsoft .NET Framework 4。7
     
   - 支持的浏览器：
     
@@ -55,7 +55,7 @@ ms.locfileid: "32255494"
     
 - 下载搜索结果时 (如步骤2中所述), 您可以通过在用于导出搜索结果的计算机上配置 Windows 注册表设置来提高下载速度。 有关详细信息, 请参阅[在从 Office 365 导出电子数据展示搜索结果时提高下载速度](increase-download-speeds-when-exporting-ediscovery-results.md)。
     
-- 当您导出搜索结果时, 数据将临时存储在 microsoft 云中的唯一 microsoft Azure 存储位置, 然后再将其下载到本地计算机。 确保您的组织可以连接到 Azure 中的终结点, ** \*即 blob.core.windows.net** (通配符代表导出的唯一标识符)。 搜索结果数据在创建后的两周内从 Azure 存储位置中删除。 
+- 当您导出搜索结果时, 数据将临时存储在 Microsoft 云中的唯一 Microsoft Azure 存储位置, 然后再将其下载到本地计算机。 确保您的组织可以连接到 Azure 中的终结点, ** \*即 blob.core.windows.net** (通配符代表导出的唯一标识符)。 搜索结果数据在创建后的两周内从 Azure 存储位置中删除。 
     
 - 如果您的组织使用代理服务器与 Internet 通信, 则需要在用于导出搜索结果的计算机上定义代理服务器设置 (以便您的代理服务器可以对导出工具进行身份验证)。 为此, 请在与** 你的 Windows 版本匹配的位置打开 machine.config 文件。 
     
@@ -120,7 +120,7 @@ ms.locfileid: "32255494"
     
     如果选择此选项, 则即使在搜索的邮箱中找到同一邮件的多个副本, 也只导出邮件的一个副本。 导出结果报告 (结果 .csv) 将对重复邮件的每个副本包含一行, 以便您可以识别包含重复邮件副本的邮箱 (或公用文件夹)。 有关重复数据删除和标识重复项目的详细信息, 请参阅[电子数据展示搜索结果中的重复数据](de-duplication-in-ediscovery-search-results.md)消除。
     
-9. 单击 "**包括 sharepoint 文档的版本**" 复选框以导出 sharepoint 文档的所有版本。 仅当搜索的内容源包括 SharePoint 或 OneDrive for business 网站时, 才会显示此选项。 
+9. 单击 "**包括 sharepoint 文档的版本**" 复选框以导出 sharepoint 文档的所有版本。 仅当搜索的内容源包括 SharePoint 或 OneDrive for Business 网站时, 才会显示此选项。 
     
 10. 单击 "**在压缩 (zipped) 文件夹中导出文件**" 复选框, 将搜索结果导出到压缩文件夹。 仅当选择将 Exchange 项目导出为单个邮件以及搜索结果包括 SharePoint 或 OneDrive 文档时, 此选项才可用。 此选项主要用于在导出项目时, 在 Windows 文件路径名中解决260字符的限制。 请参阅 "[详细信息](#more-information)" 部分中的 "导出项目的文件名"。 
     
@@ -170,7 +170,7 @@ ms.locfileid: "32255494"
     
 
   
-## <a name="more-information"></a>详细信息
+## <a name="more-information"></a>更多信息
 
 以下是有关导出搜索结果的详细信息。
   
@@ -205,9 +205,9 @@ ms.locfileid: "32255494"
     
 - 如前所述, 将邮箱和网站中的搜索结果上传到 Azure 存储位置 (如[步骤 1: 以导出方式准备搜索结果](#step-1-prepare-search-results-for-export)中所述), 最大速率为每小时 2 GB。
     
-- 默认情况下, 可以导出的 PST 文件的最大大小为 10 GB。 这意味着, 如果用户邮箱中的搜索结果大于 10 GB, 则邮箱的搜索结果将导出到两个 (或更多) 单独的 PST 文件中。 此外, 如果选择在单个 PST 文件中导出所有搜索结果, 则在搜索结果的总大小大于 10 GB 时, pst 文件将 spilt 到其他 pst 文件中。 如果要更改此默认大小, 可以在用于导出搜索结果的计算机上编辑 Windows 注册表。 请参阅[在导出电子数据展示搜索结果时更改 PST 文件的大小](change-the-size-of-pst-files-when-exporting-results.md)。
+- 默认情况下, 可以导出的 PST 文件的最大大小为 10 GB。 这意味着, 如果用户邮箱中的搜索结果大于 10 GB, 则邮箱的搜索结果将导出到两个 (或更多) 单独的 PST 文件中。 此外, 如果选择在单个 PST 文件中导出所有搜索结果, 则在搜索结果的总大小大于 10 GB 时, PST 文件将 spilt 到其他 PST 文件中。 如果要更改此默认大小, 可以在用于导出搜索结果的计算机上编辑 Windows 注册表。 请参阅[在导出电子数据展示搜索结果时更改 PST 文件的大小](change-the-size-of-pst-files-when-exporting-results.md)。
     
-    此外, 特定邮箱中的搜索结果不会在多个 PST 文件中划分, 除非单个邮箱中的内容大于 10 GB。 如果您选择将搜索结果导出到一个包含单个文件夹中的所有邮件的一个 PST 文件中, 并且搜索结果大于 10 GB, 则这些项目仍按时间顺序进行组织, 因此这些项目将根据已发送的 d 文件 spilt 到其他 PST 文件中。ate。
+    此外, 特定邮箱中的搜索结果不会在多个 PST 文件中划分, 除非单个邮箱中的内容大于 10 GB。 如果您选择将搜索结果导出到一个包含单个文件夹中的所有邮件的一个 PST 文件中, 并且搜索结果大于 10 GB, 则这些项目仍按时间顺序进行组织, 因此这些项目将根据已发送的 d 文件 spilt 到其他 PST 文件中。ate.
      
  ### <a name="export-reports"></a>导出报告
   
@@ -264,7 +264,7 @@ ms.locfileid: "32255494"
     
     ![使用 thrid 导出选项仅导出未编制索引的项目](media/5d7be338-a0e5-425f-8ba5-92769c24bf75.png)
   
-- 从 SharePoint 或 OneDrive for business 网站导出搜索结果时, 导出未编制索引的项目的功能还取决于您选择的导出选项以及所搜索的网站是否包含与搜索条件匹配的索引项。 例如, 如果您搜索特定的 SharePoint 或 OneDrive for business 网站, 并且未找到任何搜索结果, 则如果选择 "第二个导出" 选项以导出已编制索引和未编制索引的项目, 则不会导出这些网站中未索引的项目。 如果网站中的某个索引项与搜索条件匹配, 则在导出索引项目和未编制索引的项目时, 将导出该网站中的所有未编制索引的项目。 下图介绍了基于网站包含的索引项是否与搜索条件相匹配的导出选项。
+- 从 SharePoint 或 OneDrive for Business 网站导出搜索结果时, 导出未编制索引的项目的功能还取决于您选择的导出选项以及所搜索的网站是否包含与搜索条件匹配的索引项。 例如, 如果您搜索特定的 SharePoint 或 OneDrive for Business 网站, 并且未找到任何搜索结果, 则如果选择 "第二个导出" 选项以导出已编制索引和未编制索引的项目, 则不会导出这些网站中未索引的项目。 如果网站中的某个索引项与搜索条件匹配, 则在导出索引项目和未编制索引的项目时, 将导出该网站中的所有未编制索引的项目。 下图介绍了基于网站包含的索引项是否与搜索条件相匹配的导出选项。
     
     ![根据网站是否包含与搜索条件匹配的索引项, 选择 "导出" 选项](media/94f78786-c6bb-42fb-96b3-7ea3998bcd39.png)
 
@@ -285,7 +285,7 @@ ms.locfileid: "32255494"
     
 - 如前所述, 电子邮件搜索结果导出到文件系统中的文件夹。 每个邮件的文件夹路径将复制用户邮箱中的文件夹路径。 例如, 在用户收件箱中名为 "ContosoCase101" 的搜索邮件位于文件夹路径`~ContosoCase101\\<date of export\Exchange\user@contoso.com (Primary)\Top of Information Store\Inbox`中。 
     
-- 如果选择在一个 pst 文件中导出电子邮件, 其中包含单个文件夹中的所有邮件, 则 "**已删除邮件**" 文件夹和 "**搜索文件夹**" 文件夹将包含在 pst 文件夹的顶层。 这些文件夹将为空。 
+- 如果选择在一个 PST 文件中导出电子邮件, 其中包含单个文件夹中的所有邮件, 则 "**已删除邮件**" 文件夹和 "**搜索文件夹**" 文件夹将包含在 pst 文件夹的顶层。 这些文件夹将为空。 
   
  ### <a name="decrypting-rms-encrypted-messages"></a>解密 RMS 加密的邮件
   
@@ -327,6 +327,6 @@ ms.locfileid: "32255494"
   
 - 所有搜索结果和导出报告包含在一个与内容搜索同名的文件夹中。 已导出的电子邮件位于名为 **Exchange** 的文件夹中。 文档位于名为 **SharePoint** 的文件夹中。 
     
-- 将文档导出到本地计算机时, SharePoint 和 OneDrive for business 网站上的文档的文件系统元数据将保留。 这意味着当文档被导出时，其文档属性，如创建日期和上次修改日期不会被更改。
+- 将文档导出到本地计算机时, SharePoint 和 OneDrive for Business 网站上的文档的文件系统元数据将保留。 这意味着当文档被导出时，其文档属性，如创建日期和上次修改日期不会被更改。
 
 - 如果搜索结果包含与搜索查询匹配的 SharePoint 中的列表项, 则除了与搜索查询匹配的项之外, 还将导出列表中的所有行。 这包括列表中的所有附件。 这样做的原因是为搜索结果中返回的列表项提供上下文。 另请注意, 其他列表项和附件可能会导致导出项目的计数与搜索结果的原始估计值不同。

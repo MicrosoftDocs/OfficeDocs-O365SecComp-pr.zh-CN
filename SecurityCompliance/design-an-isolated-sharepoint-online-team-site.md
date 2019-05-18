@@ -4,7 +4,7 @@ ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
 ms.date: 12/15/2017
-ms.audience: ITPro
+audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
@@ -14,12 +14,12 @@ ms.collection: Ent_O365
 ms.custom: Ent_Solutions
 ms.assetid: 775a4e9e-3135-4a48-b32f-bbdd9f2bd0aa
 description: '摘要: 逐步完成独立的 SharePoint Online 团队网站的设计过程。'
-ms.openlocfilehash: 09748fcc22a4a48efc4346ff75a225db612a0ef4
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: 04634052354de47a09aa3b13e2c82d97be22f4d2
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32257147"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34150314"
 ---
 # <a name="design-an-isolated-sharepoint-online-team-site"></a>设计独立的 SharePoint Online 团队网站
 
@@ -29,7 +29,7 @@ ms.locfileid: "32257147"
   
 ## <a name="phase-1-determine-your-sharepoint-groups-and-permission-levels"></a>第1阶段: 确定您的 SharePoint 组和权限级别
 
-默认情况下, 每个 sharepoint Online 团队网站都使用以下 SharePoint 组创建:
+默认情况下, 每个 SharePoint Online 团队网站都使用以下 SharePoint 组创建:
   
 - \<网站 name> 成员
     
@@ -43,19 +43,19 @@ ms.locfileid: "32257147"
   
 |**SharePoint 组**|**权限级别**|
 |:-----|:-----|
-|\<网站 name> 成员  <br/> |编辑  <br/> |
+|\<网站 name> 成员  <br/> |Edit  <br/> |
 |\<网站 name> 访问者  <br/> |读取  <br/> |
 |\<网站 name> 所有者  <br/> |完全控制  <br/> |
    
- **最佳实践:** 您可以创建其他 SharePoint 组和权限级别。 但是, 我们建议使用独立 sharepoint Online 网站的默认 SharePoint 组和权限级别。
+ **最佳实践:** 您可以创建其他 SharePoint 组和权限级别。 但是, 我们建议使用独立 SharePoint Online 网站的默认 SharePoint 组和权限级别。
   
 下面是默认的 SharePoint 组和权限级别。
   
-![sharepoint Online 网站的默认 sharepoint 组和权限级别。](media/3f892ab4-6479-42f0-a505-1ba0ef94b9c6.png)
+![SharePoint Online 网站的默认 SharePoint 组和权限级别。](media/3f892ab4-6479-42f0-a505-1ba0ef94b9c6.png)
   
 ## <a name="phase-2-assign-permissions-to-users-with-access-groups"></a>第2阶段: 将权限分配给具有访问组的用户
 
-您可以通过将用户帐户或用户帐户所属的 Office 365 或 Azure AD 组添加到 SharePoint 组, 向用户分配权限。 添加后, 通过 office 365 或 Azure AD 组中的成员身份直接或间接分配的 office 365 用户帐户将被分配与 SharePoint 组相关联的权限级别。
+您可以通过将用户帐户或用户帐户所属的 Office 365 或 Azure AD 组添加到 SharePoint 组, 向用户分配权限。 添加后, 通过 Office 365 或 Azure AD 组中的成员身份直接或间接分配的 Office 365 用户帐户将被分配与 SharePoint 组相关联的权限级别。
   
 使用默认 SharePoint 组作为示例:
   
@@ -67,7 +67,7 @@ ms.locfileid: "32257147"
     
  **最佳实践:** 虽然您可以通过单个用户帐户管理权限, 但我们建议您改用一个 Azure AD 组 (称为 "访问组")。 这简化了通过访问组中的成员资格管理权限, 而不是管理每个 SharePoint 组的用户帐户列表。
   
-office 365 的 Azure AD 组与 office 365 组不同。 Azure AD 组显示在 Office 管理中心中, 其**类型**设置为 "**安全性**", 并且没有电子邮件地址。 可以在以下范围内管理 Azure AD 组:
+Office 365 的 Azure AD 组与 Office 365 组不同。 Azure AD 组显示在 Office 管理中心中, 其**类型**设置为 "**安全性**", 并且没有电子邮件地址。 可以在以下范围内管理 Azure AD 组:
   
 - Windows Server Active Directory (AD)
     
@@ -77,17 +77,17 @@ office 365 的 Azure AD 组与 office 365 组不同。 Azure AD 组显示在 Off
     
     这些组是使用 Office 管理中心、Azure 门户或 Microsoft PowerShell 创建的组。 在 Office 管理中心中, 这些组的**状态**为**云**。
     
- **最佳实践:** 如果使用的是本地 Windows server AD 并与 Office 365 订阅同步, 请使用 Windows Server ad 执行用户和组管理。
+ **最佳实践:** 如果使用的是本地 Windows Server AD 并与 Office 365 订阅同步, 请使用 Windows Server AD 执行用户和组管理。
   
 对于独立的 SharePoint Online 团队网站, 建议的组结构如下所示:
   
 |**SharePoint 组**|**基于 Azure AD 的访问组**|**权限级别**|
 |:-----|:-----|:-----|
-|\<网站 name> 成员  <br/> |\<网站 name> 成员  <br/> |编辑  <br/> |
+|\<网站 name> 成员  <br/> |\<网站 name> 成员  <br/> |Edit  <br/> |
 |\<网站 name> 访问者  <br/> |\<网站 name> 查看者  <br/> |读取  <br/> |
 |\<网站 name> 所有者  <br/> |\<网站 name> 管理员  <br/> |完全控制  <br/> |
    
- **最佳实践:** 虽然您可以使用 Office 365 或 Azure AD 组作为 SharePoint 组的成员, 但我们建议使用 Azure ad 组。 Azure AD 组通过 Windows Server AD 或 Office 365 进行管理, 使您可以更灵活地使用嵌套组来分配权限。
+ **最佳实践:** 虽然您可以使用 Office 365 或 Azure AD 组作为 SharePoint 组的成员, 但我们建议使用 Azure AD 组。 Azure AD 组通过 Windows Server AD 或 Office 365 进行管理, 使您可以更灵活地使用嵌套组来分配权限。
   
 下面是配置为使用基于 Azure AD 的访问组的默认 SharePoint 组。
   
@@ -95,7 +95,7 @@ office 365 的 Azure AD 组与 office 365 组不同。 Azure AD 组显示在 Off
   
 在设计三个访问组时, 请记住以下几点:
   
-- site name> Admins access 组中应该只有少数成员, 这些成员对应于管理团队网站的少数 SharePoint Online 管理员。 ** \<**
+- Site name> Admins access 组中应该只有少数成员, 这些成员对应于管理团队网站的少数 SharePoint Online 管理员。 ** \<**
     
 - 大多数网站成员都位于** \<网站 name> 成员**或** \<网站 name> 查看**器访问组中。 由于** \<site name> members** access 组中的网站成员能够删除或修改网站中的资源, 因此请仔细考虑其成员资格。 如果不确定, 请将网站成员添加到** \<网站 name> 查看者**访问组。
     
@@ -115,7 +115,7 @@ office 365 的 Azure AD 组与 office 365 组不同。 Azure AD 组显示在 Off
   
 1. 标识或创建将包含用户帐户的 Azure AD 组, 并将相应的用户帐户添加为成员。
     
-2. 创建将包含其他 azure ad 组的基于 Azure ad 的容器访问组, 并将这些组添加为成员。
+2. 创建将包含其他 Azure AD 组的基于 Azure AD 的容器访问组, 并将这些组添加为成员。
     
 3.  若要获取容器访问组的适当级别的访问权限, 请标识 SharePoint 组和相应的权限级别。
     

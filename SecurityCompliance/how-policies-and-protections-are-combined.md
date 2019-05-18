@@ -1,27 +1,27 @@
 ---
 title: 当邮件为红色标记时, 如何组合策略和保护
 description: 当电子邮件标记为恶意软件、垃圾邮件、高可信度垃圾邮件、网络钓鱼, 以及 EOP 和/或 ATP 时, 将应用哪些策略以及要采取的操作。
-keywords: security、恶意软件、Microsoft 365、M365、security center、ATP、Windows Defender ATP、Office 365 atp、Azure atp
+keywords: security、恶意软件、Microsoft 365、M365、security center、ATP、Windows Defender ATP、Office 365 ATP、Azure ATP
 ms.author: tracyp
 author: MSFTTracyp
 manager: laurawi
 ms.date: 03/26/2019
-ms.audience: ITPro
+audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection:
 - M365-security-compliance
-ms.openlocfilehash: 73f44e747581664f075608d972ee80c8381ca7fd
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: 1c2e575a57e1c1118154a912199d9e74cb4ceb4a
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32256310"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34152704"
 ---
 # <a name="what-policy-applies-when-multiple-protection-methods-and-detection-scans-run-on-your-email"></a>在您的电子邮件上运行多个保护方法和检测扫描时应用什么策略
 
-您的传入邮件可能会被多个保护形式 (例如 *, EOP 和*ATP) 标记, 以及多个检测扫描 (例如垃圾邮件*和*网络钓鱼)。 这是因为 atp 客户有 atp 反网络钓鱼策略, 并为 EOP 客户提供了 EOP 反网络钓鱼策略。 这也意味着邮件可能会针对恶意软件、网络钓鱼和用户模拟浏览多个检测扫描。 对于所有此活动, 可能会对应用的策略产生一些困惑。
+您的传入邮件可能会被多个保护形式 (例如 *, EOP 和*ATP) 标记, 以及多个检测扫描 (例如垃圾邮件*和*网络钓鱼)。 这是因为 ATP 客户有 ATP 反网络钓鱼策略, 并为 EOP 客户提供了 EOP 反网络钓鱼策略。 这也意味着邮件可能会针对恶意软件、网络钓鱼和用户模拟浏览多个检测扫描。 对于所有此活动, 可能会对应用的策略产生一些困惑。
 
 通常情况下, 应用于邮件的策略在**CAT (Category)** 属性的**X-Forefront-反垃圾邮件报告**标头中进行标识。 如果您有多个反网络钓鱼策略, 则会应用最高优先级的策略。
 
@@ -52,7 +52,7 @@ ms.locfileid: "32256310"
 
 如果一封邮件被标识为_用户模拟_和_欺骗_(请参阅上表中的反欺骗), 并且范围限定为策略 a 的同一组用户的范围为策略 B, 则邮件会被标记并被视为_欺骗_邮件。 但是, 不会应用任何操作, 因为尽管欺骗以更高的优先级 (4) 而不是用户模拟 (8) 运行, 但反欺骗已关闭。
 
-请记住, 管理员可以创建策略的优先级列表 (请参阅上面的 "优先级" 字段), 但只有一个策略将运行并应用其操作。 这意味着, 策略 a 和 B 中的用户将具有更高优先级的策略 (a 是 #1), 并且邮件不会通过任何进一步的策略进行筛选。 如果反 spoofiing 处于关闭状态, 则不会运行任何操作。
+请记住, 管理员可以创建策略的优先级列表 (请参阅上面的 "优先级" 字段), 但只有一个策略将运行并应用其操作。 这意味着, 策略 A 和 B 中的用户将具有更高优先级的策略 (A 是 #1), 并且邮件不会通过任何进一步的策略进行筛选。 如果反 spoofiing 处于关闭状态, 则不会运行任何操作。
 
 由于许多策略中可能有许多用户组, 因此它可能 behoove 管理员考虑使用更少的策略和更多的功能。 一定要确保所有用户都受全面策略的覆盖。
 

@@ -4,7 +4,7 @@ ms.author: markjjo
 author: markjjo
 manager: laurawi
 ms.date: 5/18/2018
-ms.audience: Admin
+audience: Admin
 ms.topic: hub-page
 ms.service: O365-seccomp
 localization_priority: Normal
@@ -12,12 +12,12 @@ ROBOTS: NOINDEX, NOFOLLOW
 search.appverid: MOE150
 ms.assetid: 57ca5138-0ae0-4d34-bd40-240441ef2fb6
 description: 'Office 365 审核日志是一个统一的审核日志。 为什么要使用统一审核日志？ 由于您组织的大多数 Office 365 服务中的事件将记录在可以搜索的单个审核日志中。 这意味着您可以在这些服务中搜索用户和管理员活动:'
-ms.openlocfilehash: d964a1404dd022ba9b56e5d86766c5fc6eabf10a
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: 1d3f45d24a8d1a83c20f5d36b12ced761e00f936
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32265854"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34158774"
 ---
 # <a name="search-the-audit-log-for-user-and-admin-activity-in-office-365"></a>在 "审核日志中查找 Office 365 中的用户和管理员活动"
 

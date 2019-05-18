@@ -4,7 +4,7 @@ ms.author: stephow
 author: stephow-MSFT
 manager: laurawi
 ms.date: ''
-ms.audience: Admin
+audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Priority
@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 创建敏感度标签时，可以限制对将要应用标签的内容的访问。敏感度标签可以使用加密来保护内容。
-ms.openlocfilehash: 41e1a9f1c789d555b1b5db3204b13f3279a6b56a
-ms.sourcegitcommit: d17ef25bf2a638c867cd399fff6c961ffeccaba4
+ms.openlocfilehash: 20d547a66309382c3ae3229540a23cd47e18460c
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/06/2019
-ms.locfileid: "33628327"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34153264"
 ---
 # <a name="restrict-access-to-content-by-using-encryption-in-sensitivity-labels"></a>使用敏感度标签中的加密限制对内容的访问
 

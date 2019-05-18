@@ -4,27 +4,27 @@ ms.author: stephow
 author: stephow-MSFT
 manager: laurawi
 ms.date: ''
-ms.audience: Admin
+audience: Admin
 ms.topic: overview
 ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid:
 - SPO160
 ms.assetid: 55e8d858-f278-482b-a198-2e62d6a2e6e5
-description: 由于合规性、法律或其他业务要求, 你的组织可能需要将文档保留一段时间。 但是, 如果您的组织保留的文档比所需时间长, 则会带来不必要的法律风险。 使用文档删除策略, 您可以通过在特定时间段后删除网站中的文档来主动降低风险, 例如, 在创建文档五年后, 可以在用户的 OneDrive for business 网站中删除文档。
-ms.openlocfilehash: 2a6b1c29986020ebd63f6ddb960f0d28ba348b3e
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+description: 由于合规性、法律或其他业务要求, 你的组织可能需要将文档保留一段时间。 但是, 如果您的组织保留的文档比所需时间长, 则会带来不必要的法律风险。 使用文档删除策略, 您可以通过在特定时间段后删除网站中的文档来主动降低风险, 例如, 在创建文档五年后, 可以在用户的 OneDrive for Business 网站中删除文档。
+ms.openlocfilehash: 59bc100a19f3597aa1bf16506bf6c7049a35af3b
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32257560"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34154854"
 ---
 # <a name="overview-of-document-deletion-policies"></a>文档删除策略概述
 
 > [!IMPORTANT]
-> 向前移动时, 建议使用保留策略或在 microsoft 365 合规性中心、microsoft 365 安全中心或 Office 365 安全&amp;合规中心 (而不是文档删除策略) 中创建的标签。 文档删除策略将继续与保留策略一起工作, 但如果您需要保留或删除 Office 365 中任何位置的内容, 我们建议使用保留策略。 有关详细信息, 请参阅[使用保留策略而不是这些功能](retention-policies.md#use-a-retention-policy-instead-of-these-features)。
+> 向前移动时, 建议使用保留策略或在 Microsoft 365 合规性中心、Microsoft 365 安全中心或 Office 365 安全&amp;合规中心 (而不是文档删除策略) 中创建的标签。 文档删除策略将继续与保留策略一起工作, 但如果您需要保留或删除 Office 365 中任何位置的内容, 我们建议使用保留策略。 有关详细信息, 请参阅[使用保留策略而不是这些功能](retention-policies.md#use-a-retention-policy-instead-of-these-features)。
   
-由于合规性、法律或其他业务要求, 你的组织可能需要将文档保留一段时间。 但是, 如果您的组织保留的文档比所需时间长, 则会带来不必要的法律风险。 使用文档删除策略, 您可以通过在特定时间段后删除网站中的文档来主动降低风险, 例如, 在创建文档五年后, 可以在用户的 OneDrive for business 网站中删除文档。
+由于合规性、法律或其他业务要求, 你的组织可能需要将文档保留一段时间。 但是, 如果您的组织保留的文档比所需时间长, 则会带来不必要的法律风险。 使用文档删除策略, 您可以通过在特定时间段后删除网站中的文档来主动降低风险, 例如, 在创建文档五年后, 可以在用户的 OneDrive for Business 网站中删除文档。
   
 文档删除策略功能强大且灵活, 例如, 您可以:
   
@@ -76,7 +76,7 @@ ms.locfileid: "32257560"
   
 ## <a name="policies-and-assignments"></a>策略和分配
 
-创建文档删除策略后, 可以将其分配到网站集模板, 例如, 可以将策略分配到 OneDrive for business 模板, 以便它包含每个用户的 onedrive 网站。 将策略分配到网站集模板时, 这会应用于已使用该模板创建的所有网站集, 以及以后使用该模板创建的任何网站集。
+创建文档删除策略后, 可以将其分配到网站集模板, 例如, 可以将策略分配到 OneDrive for business 模板, 以便它包含每个用户的 OneDrive 网站。 将策略分配到网站集模板时, 这会应用于已使用该模板创建的所有网站集, 以及以后使用该模板创建的任何网站集。
   
 ![显示 OneDrive 选项的“选择模板”页面](media/IP-Choose-a-template.png)
   

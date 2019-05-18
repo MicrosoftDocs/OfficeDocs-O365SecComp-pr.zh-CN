@@ -4,7 +4,7 @@ ms.author: markjjo
 author: markjjo
 manager: laurawi
 ms.date: ''
-ms.audience: Admin
+audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
@@ -15,12 +15,12 @@ search.appverid:
 ms.assetid: ''
 ROBOTS: NOINDEX, NOFOLLOW
 description: ''
-ms.openlocfilehash: 6838203a500a4fe600d8186a4b848beed0730665
-ms.sourcegitcommit: 865b3dc071150b20bf3967e1263fc54e75898284
+ms.openlocfilehash: ee5f2257e73467c50a0ecc296d8d3b70b7c3d0f8
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/09/2019
-ms.locfileid: "33835062"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34155184"
 ---
 # <a name="set-up-attorney-client-privilege-detection-preview-in-advanced-ediscovery"></a>在高级电子数据展示中设置律师-客户端特权检测 (预览)
 
@@ -65,7 +65,7 @@ ms.locfileid: "33835062"
 
 ### <a name="step-2-create-a-smart-tag-group-with-attorney-client-privilege-detection-model"></a>步骤 2: 创建具有律师-客户端权限检测模型的智能标记组
 
-您可以通过使用智能标记组, 在审查过程中使用律师-客户端权限检测的结果之一主要方法之一。 智能标记组采用 ML 模型的结果, 并在标记旁显示模型的结果, 以便您可以轻松地使用模型的结果 (如果相关), 并在您的审阅过程中使用标记, 就像您在 "标记" 面板中进行任何其他标记一样。
+您可以通过使用智能标记组, 在审查过程中使用律师-客户端权限检测的结果之一主要方法之一。 智能标记组采用 ML 模型的结果, 并在标记旁显示模型的结果, 以便您可以轻松地使用模型的结果 (如果相关), 并在您的审阅过程中使用标记, 就像您在 "标记" 面板中进行任何其他标记一样。 有关详细信息, 请参阅[在高级电子数据展示中设置用于 ML 辅助查看的智能标记](smart-tags.md)。
 
 - 在 "管理标记" 中, 单击 "添加智能标记部分"。
 

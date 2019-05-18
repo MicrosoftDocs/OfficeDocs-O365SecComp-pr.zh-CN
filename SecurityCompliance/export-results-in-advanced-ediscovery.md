@@ -3,7 +3,7 @@ title: Office 365 高级电子数据展示中的导出结果
 ms.author: chrfox
 author: chrfox
 manager: laurawi
-ms.audience: Admin
+audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
@@ -12,12 +12,12 @@ search.appverid:
 - MET150
 ms.assetid: a9951a07-10b3-48cb-b37a-0ffaa24931ad
 description: '了解如何定义用于从 Office 365 高级电子数据展示中导出结果的选项, 包括为导出批处理指定参数的过程。 '
-ms.openlocfilehash: a2528c3eab0bc9c06a592b972a3bc602174458d3
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: ad11ac742f3157811523164c7e4d063e1d101343
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32255806"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34152924"
 ---
 # <a name="export-results-in-office-365-advanced-ediscovery"></a>Office 365 高级电子数据展示中的导出结果
 
@@ -65,7 +65,7 @@ ms.locfileid: "32255806"
     
     - 若要导出添加到现有事例中的新文件的结果, 请继续使用当前批处理。 若要在批处理中创建会话, 请选择同一批次号码并单击 "**创建导出会话**" 可以使用此选项以增量方式导出与上一批次相同的参数。 
     
-    - 若要导出到新批次, **** ![请单击 "](media/c2dd8b3a-5a22-412c-a7fa-143f5b2b5612.png)添加添加图标", 并在 "批**次名称**" 中输入新名称 (或接受默认值) 和 "**批处理说明**" 中的说明。 单击“**确定**”。
+    - 若要导出到新批次, **** ![请单击 "](media/c2dd8b3a-5a22-412c-a7fa-143f5b2b5612.png)添加添加图标", 并在 "批**次名称**" 中输入新名称 (或接受默认值) 和 "**批处理说明**" 中的说明。 单击“确定”****。
     
     - 若要编辑批次名称或说明, 请在 "**导出批次**" **** ![中选择名称](media/3d613660-7602-4df2-bdb9-14e9ca2f9cf2.png), 单击 "编辑编辑图标", 然后修改字段。
     
@@ -166,11 +166,11 @@ ms.locfileid: "32255806"
   
 11. 在**电子数据展示导出工具**中:
     
-    -  在 **"粘贴将用于连接到源的共享访问签名**" 中, 将 youcopied 的导出密钥粘贴到步骤7中的 "剪贴板" 中。
+    -  在 **"粘贴将用于连接到源的共享访问签名**" 中, 将 Youcopied 的导出密钥粘贴到步骤7中的 "剪贴板" 中。
     
     - 单击 "**浏览**" 以选择用于将下载的导出文件存储在本地计算机上的目标位置。 
     
-    - 单击 "**启动**"。将导出文件下载到本地计算机。 如果在步骤4中选择 "**导出到用户定义的 Azure blob** ", 则会将会话导出到所选的 blob 存储 URL 目标。
+    - 单击 "**启动**"。将导出文件下载到本地计算机。 如果在步骤4中选择 "**导出到用户定义的 Azure blob** ", 则会将会话导出到所选的 BLOB 存储 URL 目标。
     
 有关导出报告中的字段的完整说明, 请参阅[导出报告字段](export-report-fields-in-advanced-ediscovery.md)。
   
@@ -179,7 +179,7 @@ ms.locfileid: "32255806"
 
 下表列出了运行导出批处理时生成的输出文件。
   
-|**文件名**|**文件类型**|**Description**|
+|**文件名**|**文件类型**|**说明**|
 |:-----|:-----|:-----|
 |导出摘要  <br/> |csv  <br/> |由电子数据展示导出工具生成的日志文件。  <br/> |
 |跟踪  <br/> |readme.txt  <br/> |由电子数据展示导出工具生成的日志文件。  <br/> |

@@ -4,18 +4,18 @@ ms.author: markjjo
 author: markjjo
 manager: laurawi
 ms.date: ''
-ms.audience: Admin
+audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: M365-security-compliance
 description: 管理员可以设置本机连接器, 以便从数据源 (如 Facebook 商业页面、LinkedIn 公司网页和即时 Bloomberg) 导入第三方数据。 这使您可以在 Office 365 中存档第三方数据源中的数据, 以便您可以使用合规性功能 (如法律封存、内容搜索和保留策略) 来管理组织的第三方数据的管理。
-ms.openlocfilehash: e38194265fe8a511fe71b252b7d2c02904c09e89
-ms.sourcegitcommit: 5bd7a97aeab1c89e0a3660ba7bdb3200224107a1
+ms.openlocfilehash: 7a71eac07d3d3260809f90cd2e470c32c44e9dda
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/16/2019
-ms.locfileid: "34103796"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34152184"
 ---
 # <a name="use-a-sample-connector-to-archive-facebook-data-in-office-365-preview"></a>使用示例连接器在 Office 365 中存档 Facebook 数据 (预览)
 

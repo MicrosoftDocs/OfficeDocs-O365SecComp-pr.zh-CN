@@ -4,7 +4,7 @@ ms.author: krowley
 author: kccross
 manager: laurawi
 ms.date: 3/5/2015
-ms.audience: ITPro
+audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
@@ -14,12 +14,12 @@ ms.assetid: a5b03b3c-37dd-429e-8e9b-2c1b25031794
 ms.collection:
 - M365-security-compliance
 description: 批量邮件群发程序因其发送模式、内容创建以及列表获取做法的不同而不同。 一些是合理的批量邮件群发程序，可以将所需的邮件和相关内容发送到它们的订阅者。 这些邮件使收件人产生少量抱怨。 其他批量邮件群发程序发送与垃圾邮件极其相似的未经请求的邮件，并且使收件人产生许多抱怨。 为了区分这些类型的批量邮件群发程序，会为批量邮件群发程序中的邮件分配批量投诉级别 (BCL) 评级。 BCL 评级范围介于 1 到 9 之间，这取决于批量邮件群发程序产生抱怨的可能性大小。 BCL 评级为 9 的发件人可能使收件人产生许多抱怨，而 BCL 评级为 3 的发件人产生许多抱怨的可能性较小。 Microsoft 使用内部和第三方源识别批量邮件，并确定适当的 BCL。 此评级显示在每封邮件的"X-Microsoft-Antispam"标头中。 有关此邮件头的详细信息，请参阅反垃圾邮件邮件头。
-ms.openlocfilehash: e6d639098adc8c29b09b186ff72e38c5f5ac4e81
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: 490823f045e2e3fcf6b537d9717ab12abc323da6
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32243813"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34152124"
 ---
 # <a name="bulk-complaint-level-values"></a>批量投诉级别值
 

@@ -3,7 +3,7 @@ title: Office 365 中的内容搜索
 ms.author: markjjo
 author: markjjo
 manager: laurawi
-ms.audience: Admin
+audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
@@ -15,23 +15,23 @@ search.appverid:
 - MED150
 - MET150
 ms.assetid: 53390468-eec6-45cb-b6cd-7511f9c909e4
-description: 使用 Office 365 或 Microsoft 365 中的合规性中心中的内容搜索工具搜索邮箱、SharePoint Online 网站、OneDrive 帐户、Microsoft 团队、Office 365 组和 Skype for business 对话中的内容。 您可以使用关键字搜索查询和搜索条件来缩小搜索结果的范围。 然后, 您可以预览和导出搜索结果。 内容搜索也是一个有效的工具, 可用于搜索可能与 GDPR 数据主体请求相关的内容。
-ms.openlocfilehash: 67b32dcc6efcc096b9952be41380a8dc3700a668
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+description: 使用 Office 365 或 Microsoft 365 中的合规性中心中的内容搜索工具搜索邮箱、SharePoint Online 网站、OneDrive 帐户、Microsoft 团队、Office 365 组和 Skype for Business 对话中的内容。 您可以使用关键字搜索查询和搜索条件来缩小搜索结果的范围。 然后, 您可以预览和导出搜索结果。 内容搜索也是一个有效的工具, 可用于搜索可能与 GDPR 数据主体请求相关的内容。
+ms.openlocfilehash: 4661f724a646eaaf522485726b2cb0475483e56b
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32264050"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34153924"
 ---
 # <a name="content-search-in-office-365"></a>Office 365 中的内容搜索
 
-您可以使用 office 365 或 Microsoft 365 中的合规性中心中的内容搜索电子数据展示工具在 office 365 组织中搜索就地项目, 如电子邮件、文档和即时消息对话。 使用此工具搜索这些 Office 365 服务中的项目:
+您可以使用 Office 365 或 Microsoft 365 中的合规性中心中的内容搜索电子数据展示工具在 Office 365 组织中搜索就地项目, 如电子邮件、文档和即时消息对话。 使用此工具搜索这些 Office 365 服务中的项目:
   
 - Exchange Online 邮箱和公用文件夹
     
-- SharePoint Online 网站和 OneDrive for business 帐户
+- SharePoint Online 网站和 OneDrive for Business 帐户
     
-- Skype for business 对话
+- Skype for Business 对话
     
 - Microsoft Teams 
     
@@ -42,7 +42,7 @@ ms.locfileid: "32264050"
 
 ## <a name="create-a-new-search"></a>创建新的搜索
 
-若要访问**内容搜索**页以运行搜索和预览和导出搜索结果, 管理员、合规专员或电子数据展示管理器必须是 Security & 合规性中心中的电子数据展示管理器角色组的成员。 有关详细信息, 请参阅[分配电子数据展示权限](assign-ediscovery-permissions.md)。
+若要访问**内容搜索**页以运行搜索和预览和导出搜索结果, 管理员、合规专员或电子数据展示管理器必须是 Security _AMP_ 合规性中心中的电子数据展示管理器角色组的成员。 有关详细信息, 请参阅[分配电子数据展示权限](assign-ediscovery-permissions.md)。
   
 1. 转到[https://protection.office.com](https://protection.office.com)并使用 Office 365 电子邮件地址和密码登录。
     
@@ -227,7 +227,7 @@ ms.locfileid: "32264050"
   
 ### <a name="searching-onedrive-accounts"></a>搜索 OneDrive 帐户
 
-- 若要收集组织中的 onedrive 网站的 url 列表, 请参阅[创建组织中所有 onedrive 位置的列表](https://support.office.com/article/8e200cb2-c768-49cb-88ec-53493e8ad80a)。 本文中的此脚本创建一个文本文件, 其中包含所有 OneDrive 网站的列表。 若要运行此脚本, 您必须安装并使用 SharePoint Online 命令行管理程序。 请务必将组织的 "我的网站" 域的 URL 追加到要搜索的每个 OneDrive 站点。 这是包含所有 OneDrive 的域;例如, `https://contoso-my.sharepoint.com`。 下面的示例展示了用户的 OneDrive 网站的 URL: `https://contoso-my.sharepoint.com/personal/sarad_contoso_onmicrosoft.com`。
+- 若要收集组织中的 OneDrive 网站的 Url 列表, 请参阅[创建组织中所有 onedrive 位置的列表](https://support.office.com/article/8e200cb2-c768-49cb-88ec-53493e8ad80a)。 本文中的此脚本创建一个文本文件, 其中包含所有 OneDrive 网站的列表。 若要运行此脚本, 您必须安装并使用 SharePoint Online 命令行管理程序。 请务必将组织的 "我的网站" 域的 URL 追加到要搜索的每个 OneDrive 站点。 这是包含所有 OneDrive 的域;例如, `https://contoso-my.sharepoint.com`。 下面的示例展示了用户的 OneDrive 网站的 URL: `https://contoso-my.sharepoint.com/personal/sarad_contoso_onmicrosoft.com`。
     
     在极少数情况下, 某人的用户主体名称 (UPN) 发生更改时, 其 OneDrive 位置的 URL 也将更改以包含新的 UPN。 如果发生这种情况, 您必须通过添加用户的新 OneDrive URL 并删除旧 URL 来修改内容搜索。
   
@@ -253,9 +253,9 @@ ms.locfileid: "32264050"
     > [!NOTE]
     > 若要运行**remove-unifiedgroup** cmdlet, 您必须在 Exchange Online 中分配 "仅查看收件人" 角色, 或者是分配了 "仅查看收件人" 角色的角色组的成员。 
   
-- 在搜索用户的邮箱时, 不会搜索用户是其成员的任何 Microsoft 团队或 Office 365 组。 同样, 当您搜索 Microsoft 团队或 Office 365 组时, 仅搜索您指定的组邮箱和组网站;除非将组成员的邮箱和 OneDrive for business 帐户显式添加到搜索中, 否则不会搜索这些帐户。
+- 在搜索用户的邮箱时, 不会搜索用户是其成员的任何 Microsoft 团队或 Office 365 组。 同样, 当您搜索 Microsoft 团队或 Office 365 组时, 仅搜索您指定的组邮箱和组网站;除非将组成员的邮箱和 OneDrive for Business 帐户显式添加到搜索中, 否则不会搜索这些帐户。
     
-- 若要获取 microsoft 团队或 Office 365 组成员的列表, 您可以在 Microsoft 365 管理中心的 "**家庭\>组**" 页上查看属性。 或者, 您可以在 Exchange Online PowerShell 中运行以下命令: 
+- 若要获取 Microsoft 团队或 Office 365 组成员的列表, 您可以在 Microsoft 365 管理中心的 "**家庭\>组**" 页上查看属性。 或者, 您可以在 Exchange Online PowerShell 中运行以下命令: 
     
   ```
   Get-UnifiedGroupLinks <group or team name> -LinkType Members | FL DisplayName,PrimarySmtpAddress 
@@ -264,9 +264,9 @@ ms.locfileid: "32264050"
     > [!NOTE]
     > 若要运行**UnifiedGroupLinks** cmdlet, 您必须在 Exchange Online 中分配 "仅查看收件人" 角色, 或者是分配了 "仅查看收件人" 角色的角色组的成员。 
   
-- 属于 microsoft 团队渠道的对话存储在与 microsoft 团队相关联的邮箱中。 同样, 在频道中共享的工作组成员的文件存储在团队的 SharePoint 网站上。 因此, 您必须将 Microsoft 团队邮箱和 SharePoint 网站添加为内容位置, 以便在频道中搜索对话和文件。
+- 属于 Microsoft 团队渠道的对话存储在与 Microsoft 团队相关联的邮箱中。 同样, 在频道中共享的工作组成员的文件存储在团队的 SharePoint 网站上。 因此, 您必须将 Microsoft 团队邮箱和 SharePoint 网站添加为内容位置, 以便在频道中搜索对话和文件。
     
-- 或者, 在 Microsoft 团队中作为聊天列表一部分的对话存储在参与聊天的用户的 Exchange Online 邮箱中。 以及用户在聊天对话中共享的文件存储在共享该文件的用户的 OneDrive for business 帐户中。 因此, 您必须将单个用户邮箱和 OneDrive for business 帐户添加为在聊天列表中搜索对话和文件的内容位置。
+- 或者, 在 Microsoft 团队中作为聊天列表一部分的对话存储在参与聊天的用户的 Exchange Online 邮箱中。 以及用户在聊天对话中共享的文件存储在共享该文件的用户的 OneDrive for Business 帐户中。 因此, 您必须将单个用户邮箱和 OneDrive for Business 帐户添加为在聊天列表中搜索对话和文件的内容位置。
     
     > [!NOTE]
     > 在 Exchange 混合部署中, 具有本地邮箱的用户可能会参与属于 Microsoft 团队中的聊天列表的对话。 在这种情况下, 这些对话中的内容也是可搜索的, 因为它保存到基于云的存储区域 (称为*本地用户的基于云的邮箱*), 以供拥有本地邮箱的用户使用。 有关详细信息, 请参阅在[Office 365 中搜索本地用户的基于云的邮箱](search-cloud-based-mailboxes-for-on-premises-users.md)。
@@ -354,5 +354,5 @@ ms.locfileid: "32264050"
 
 - 来自 MyAnalytics 的数据 (例如, 用户如何根据邮箱中的邮件和日历数据使用其时间的见解) 和来自其他 Office 365 应用程序的数据都保存在用户的基于云的邮箱的隐藏位置 (在非 IPM 子树中)。 在运行内容搜索后, 这些数据不会包括在估计的搜索结果、查询统计信息中, 也不能用于预览。 但是, 当您导出搜索结果时, 将导出此数据。
     
-- MyAnalytics 数据和其他 office 365 应用程序中的数据将被导出到名为 "其他 office 365 data" 的文件夹中。 此文件夹包括每个用户的子文件夹。
+- MyAnalytics 数据和其他 Office 365 应用程序中的数据将被导出到名为 "其他 Office 365 data" 的文件夹中。 此文件夹包括每个用户的子文件夹。
   

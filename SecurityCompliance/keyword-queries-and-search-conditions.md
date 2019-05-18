@@ -3,7 +3,7 @@ title: 内容搜索的关键字查询和搜索条件
 ms.author: markjjo
 author: markjjo
 manager: laurawi
-ms.audience: Admin
+audience: Admin
 ms.topic: reference
 f1_keywords:
 - ms.o365.cc.SearchQueryLearnMore
@@ -16,13 +16,13 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: c4639c2e-7223-4302-8e0d-b6e10f1c3be3
-description: '了解可以使用安全 & 合规中心中的内容搜索工具在 Exchange Online 邮箱和 SharePoint 或 OneDrive for business 网站中搜索的电子邮件和文件属性。  '
-ms.openlocfilehash: bb8c8090f8439bbd08b9c153b332c30d78ced8c8
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+description: '了解可以使用安全 & 合规中心中的内容搜索工具在 Exchange Online 邮箱和 SharePoint 或 OneDrive for Business 网站中搜索的电子邮件和文件属性。  '
+ms.openlocfilehash: 01cc40f983ddae6db090f531bc33fc5cc7a638ed
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32254462"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34152494"
 ---
 # <a name="keyword-queries-and-search-conditions-for-content-search"></a>内容搜索的关键字查询和搜索条件
 
@@ -30,7 +30,7 @@ ms.locfileid: "32254462"
   
 - 使用布尔搜索运算符、搜索条件和其他搜索查询技术来优化搜索结果。
     
-- 在 SharePoint 和 OneDrive for business 中搜索敏感数据类型和自定义敏感数据类型。
+- 在 SharePoint 和 OneDrive for Business 中搜索敏感数据类型和自定义敏感数据类型。
     
 - 搜索与组织外部用户共享的网站内容
     
@@ -38,7 +38,7 @@ ms.locfileid: "32254462"
 
   
 > [!NOTE]
-> security & 合规性中心中的内容搜索和安全 & 合规性中心 PowerShell 中的相应** \*new-compliancesearch** cmdlet 使用关键字查询语言 (KQL)。 有关更多详细信息, 请参阅[关键字查询语言语法参考](https://go.microsoft.com/fwlink/?LinkId=269603)。 
+> Security & 合规性中心中的内容搜索和安全 & 合规性中心 PowerShell 中的相应** \*new-compliancesearch** cmdlet 使用关键字查询语言 (KQL)。 有关更多详细信息, 请参阅[关键字查询语言语法参考](https://go.microsoft.com/fwlink/?LinkId=269603)。 
   
 ## <a name="searchable-email-properties"></a>可搜索的电子邮件属性
 
@@ -48,15 +48,15 @@ ms.locfileid: "32254462"
 |:-----|:-----|:-----|:-----|
 |AttachmentNames|电子邮件附件的文件名。|`attachmentnames:annualreport.ppt`  <br/> `attachmentnames:annual*`|含有名为 annualreport.ppt 的附加文件的邮件。在第二个示例中，使用通配符返回附件名中带有单词“annual”的邮件。|
 |Bcc|电子邮件的"密件抄送"字段。<sup>1</sup>|`bcc:pilarp@contoso.com`  <br/> `bcc:pilarp`  <br/> `bcc:"Pilar Pinilla"`|所有示例都返回"密件抄送"字段中包含"Pilar Pinilla"的邮件。|
-|Category| 搜索类别。 用户可以使用 outlook 或 web 上的 outlook (以前称为 Outlook web App) 定义类别。 可能的值是：  <br/><br/>  蓝色  <br/>  绿色  <br/>  橙色  <br/>  紫色  <br/>  红色  <br/>  黄色|`category:"Red Category"`|在源邮箱中已指定红色类别的邮件。|
+|Category| 搜索类别。 用户可以使用 Outlook 或 web 上的 Outlook (以前称为 Outlook Web App) 定义类别。 可能的值是：  <br/><br/>  蓝色  <br/>  绿色  <br/>  橙色  <br/>  紫色  <br/>  红色  <br/>  黄色|`category:"Red Category"`|在源邮箱中已指定红色类别的邮件。|
 |抄送|电子邮件的"抄送"字段。<sup>1</sup>|`cc:pilarp@contoso.com`  <br/> `cc:"Pilar Pinilla"`|在以上两个示例中，在"抄送"字段中指定了含有"Pilar Pinilla"的邮件。|
-|Folderid|特定邮箱文件夹的文件夹 ID (GUID)。 如果使用此属性, 请务必搜索指定文件夹所在的邮箱。 请注意, 将仅搜索指定的文件夹。 不会搜索文件夹中的所有子文件夹。 若要搜索子文件夹, 您需要使用要搜索的子文件夹的 Folderid 属性。  <br/> 有关搜索 Folderid 属性和使用脚本获取特定邮箱的文件夹 id 的详细信息, 请参阅[在 Office 365 中使用内容搜索查找目标集合](use-content-search-for-targeted-collections.md)。|`folderid:4D6DD7F943C29041A65787E30F02AD1F00000000013A0000`  <br/> `folderid:2370FB455F82FC44BE31397F47B632A70000000001160000 AND participants:garthf@contoso.com`|第一个示例返回指定邮箱文件夹中的所有项目。 第二个示例返回指定邮箱文件夹中由 garthf@contoso.com 发送或接收的所有项目。|
+|Folderid|特定邮箱文件夹的文件夹 ID (GUID)。 如果使用此属性, 请务必搜索指定文件夹所在的邮箱。 请注意, 将仅搜索指定的文件夹。 不会搜索文件夹中的所有子文件夹。 若要搜索子文件夹, 您需要使用要搜索的子文件夹的 Folderid 属性。  <br/> 有关搜索 Folderid 属性和使用脚本获取特定邮箱的文件夹 Id 的详细信息, 请参阅[在 Office 365 中使用内容搜索查找目标集合](use-content-search-for-targeted-collections.md)。|`folderid:4D6DD7F943C29041A65787E30F02AD1F00000000013A0000`  <br/> `folderid:2370FB455F82FC44BE31397F47B632A70000000001160000 AND participants:garthf@contoso.com`|第一个示例返回指定邮箱文件夹中的所有项目。 第二个示例返回指定邮箱文件夹中由 garthf@contoso.com 发送或接收的所有项目。|
 |发件人|电子邮件的发件人。<sup>1</sup>|`from:pilarp@contoso.com`  <br/> `from:contoso.com`|由指定用户或指定域发送的邮件。|
 |HasAttachment|指示邮件是否包含附件。 使用值**true**或**false**。|`from:pilar@contoso.com AND hasattachment:true`|由指定用户发送的包含附件的邮件。|
 |Importance|The importance of an email message, which a sender can specify when sending a message. By default, messages are sent with normal importance, unless the sender sets the importance as **high** or **low**.  |`importance:high`  <br/> `importance:medium`  <br/> `importance:low`|将重要性标记为高、中等或低的邮件。|
 |IsRead|指示是否已读取邮件。 使用值**true**或**false**。|`isread:true`  <br/> `isread:false`|第一个示例返回 IsRead 属性设置为**True**的邮件。 第二个示例返回 IsRead 属性设置为**False**的邮件。|
 |ItemClass|使用此属性可搜索组织导入到 Office 365 中的特定第三方数据类型。 对此属性使用以下语法:`itemclass:ipm.externaldata.<third-party data type>*`|`itemclass:ipm.externaldata.Facebook* AND subject:contoso`  <br/> `itemclass:ipm.externaldata.Twitter* AND from:"Ann Beebe" AND "Northwind Traders"`|第一个示例返回在 Subject 属性中包含 "contoso" 一词的 Facebook 项目。 第二个示例返回由王小姐 Beebe 发布且包含关键字短语 "罗斯文商贸" 的 Twitter 项目。  <br/> 有关 ItemClass 属性的第三方数据类型要使用的值的完整列表, 请参阅[使用内容搜索来搜索导入到 Office 365 的第三方数据](use-content-search-to-search-third-party-data-that-was-imported.md)。|
-|Kind| 要搜索的电子邮件的类型。 可能的值：  <br/>  联系人  <br/>  文档  <br/>  电子邮件  <br/>  externaldata  <br/>  传真  <br/>  即时消息  <br/>  日志  <br/>  会议  <br/>  microsoftteams (返回 Microsoft 团队中的聊天、会议和呼叫中的项目)  <br/>  注释  <br/>  公告  <br/>  RSS 源  <br/>  任务  <br/>  语音邮件|`kind:email`  <br/> `kind:email OR kind:im OR kind:voicemail`  <br/> `kind:externaldata`|第一个示例返回满足搜索条件的电子邮件。 第二个示例返回电子邮件、即时消息对话 (包括 Microsoft 团队中的 Skype for business 对话和聊天) 以及符合搜索条件的语音邮件。 第三个示例返回从第三方数据源 (如 Twitter、Facebook 和 Cisco Jabber) 导入到 Office 365 中的邮箱的项目, 这些项目符合搜索条件。 有关详细信息, 请参阅[在 Office 365 中存档第三方数据](https://go.microsoft.com/fwlink/p/?linkid=716918)。|
+|Kind| 要搜索的电子邮件的类型。 可能的值：  <br/>  联系人  <br/>  文档  <br/>  电子邮件  <br/>  externaldata  <br/>  传真  <br/>  即时消息  <br/>  日志  <br/>  会议  <br/>  microsoftteams (返回 Microsoft 团队中的聊天、会议和呼叫中的项目)  <br/>  注释  <br/>  公告  <br/>  RSS 源  <br/>  任务  <br/>  语音邮件|`kind:email`  <br/> `kind:email OR kind:im OR kind:voicemail`  <br/> `kind:externaldata`|第一个示例返回满足搜索条件的电子邮件。 第二个示例返回电子邮件、即时消息对话 (包括 Microsoft 团队中的 Skype for Business 对话和聊天) 以及符合搜索条件的语音邮件。 第三个示例返回从第三方数据源 (如 Twitter、Facebook 和 Cisco Jabber) 导入到 Office 365 中的邮箱的项目, 这些项目符合搜索条件。 有关详细信息, 请参阅[在 Office 365 中存档第三方数据](https://go.microsoft.com/fwlink/p/?linkid=716918)。|
 |参与者|电子邮件中的所有人员字段；这些字段分别为：发件人、收件人、抄送和密件抄送。<sup>1</sup>|`participants:garthf@contoso.com`  <br/> `participants:contoso.com`|发送自/到 garthf@contoso.com 的邮件。第二个示例返回 contoso.com 域中的用户发送的所有邮件或发送至 contoso.com 域中的用户的所有邮件。|
 |Received|收件人接收电子邮件的日期。|`received:04/15/2016`  <br/> `received>=01/01/2016 AND received<=03/31/2016`|2016年4月15日收到的邮件。 第二个示例返回在2016年1月1日到2016年3月31日之间收到的所有邮件。|
 |收件人|电子邮件中的所有收件人字段；这些字段分别为：收件人、抄送和密件抄送。<sup>1</sup>|`recipients:garthf@contoso.com`  <br/> `recipients:contoso.com`|发送到 garthf@contoso.com 的邮件。第二个示例返回发送至 contoso.com 域中任何收件人的邮件。|
@@ -81,14 +81,14 @@ ms.locfileid: "32254462"
 |Created|创建项目的日期。|`created\>=06/01/2016`|在2016年6月1日或之后创建的所有项目。|
 |CreatedBy|创建或上载项目的人员。 请务必对此属性使用用户的显示名称。|`createdby:"Garth Fort"`|所有项目均由 Garth Fort 创建或上载。|
 |DetectedLanguage|项目的语言。|`detectedlanguage:english`|所有项目均为英语。|
-|DocumentLink|SharePoint 或 OneDrive for business 网站上特定文件夹的路径 (URL)。 如果使用此属性, 请务必搜索指定文件夹所在的网站。  <br/> 若要返回在为 documentlink 属性指定的文件夹的子文件夹中的项目, 您必须添加/\*到指定文件夹的 URL;例如,`documentlink: "https://contoso.sharepoint.com/Shared Documents/*"`  <br/> <br/>有关搜索 documentlink 属性和使用脚本获取特定网站上的文件夹的 documentlink url 的详细信息, 请参阅[在 Office 365 for 目标集合中使用内容搜索](use-content-search-for-targeted-collections.md)。|`documentlink:"https://contoso-my.sharepoint.com/personal/garthf_contoso_com/Documents/Private"`  <br/> `documentlink:"https://contoso-my.sharepoint.com/personal/garthf_contoso_com/Documents/Shared with Everyone/*" AND filename:confidential`|第一个示例返回指定的 OneDrive for business 文件夹中的所有项目。 第二个示例在指定的网站文件夹 (和所有子文件夹) 中返回文件名中包含单词 "保密信息" 的文档。|
-|文件扩展名|文件的扩展名;例如, .docx、one、.pptx 或 .xlsx。|`fileextension:xlsx`|所有 excel 文件 (excel 2007 及更高版本)|
+|DocumentLink|SharePoint 或 OneDrive for business 网站上特定文件夹的路径 (URL)。 如果使用此属性, 请务必搜索指定文件夹所在的网站。  <br/> 若要返回在为 documentlink 属性指定的文件夹的子文件夹中的项目, 您必须添加/\*到指定文件夹的 URL;例如,`documentlink: "https://contoso.sharepoint.com/Shared Documents/*"`  <br/> <br/>有关搜索 documentlink 属性和使用脚本获取特定网站上的文件夹的 documentlink Url 的详细信息, 请参阅[在 Office 365 for 目标集合中使用内容搜索](use-content-search-for-targeted-collections.md)。|`documentlink:"https://contoso-my.sharepoint.com/personal/garthf_contoso_com/Documents/Private"`  <br/> `documentlink:"https://contoso-my.sharepoint.com/personal/garthf_contoso_com/Documents/Shared with Everyone/*" AND filename:confidential`|第一个示例返回指定的 OneDrive for Business 文件夹中的所有项目。 第二个示例在指定的网站文件夹 (和所有子文件夹) 中返回文件名中包含单词 "保密信息" 的文档。|
+|文件扩展名|文件的扩展名;例如, .docx、one、.pptx 或 .xlsx。|`fileextension:xlsx`|所有 Excel 文件 (Excel 2007 及更高版本)|
 |FileName|文件的名称。|`filename:"marketing plan"`  <br/> `filename:estimate`|第一个示例返回标题中具有完全匹配短语“marketing plan”的文件。第二个示例返回文件名中具有单词“estimate”的文件。|
 |LastModifiedTime|项目的上次更改日期。|`lastmodifiedtime>=05/01/2016`  <br/> `lastmodifiedtime>=05/10/2016 AND lastmodifiedtime<=06/1/2016`|第一个示例返回在2016年5月1日或之后更改的项。 第二个示例返回在5月1日、2016和6月1日之间更改的项目2016。|
 |ModifiedBy|上次更改项目的人员。 请务必对此属性使用用户的显示名称。|`modifiedby:"Garth Fort"`|由 Garth Fort 最后更改的所有项目。|
-|Path|SharePoint 或 OneDrive for business 网站中特定网站的路径 (URL)。  <br/> 若要返回在为 path 属性指定的网站中的文件夹中的项目, 您必须添加/\*到指定网站的 URL;例如,`path: "https://contoso.sharepoint.com/Shared Documents/*"`  <br/> <br/> **注意:** 使用该`Path`属性搜索 OneDrive 位置不会在搜索结果中返回媒体文件, 如 .png、tiff 或 .wav 文件。 在搜索查询中使用不同的 site 属性搜索 OneDrive 文件夹中的媒体文件。 <br/>|`path:"https://contoso-my.sharepoint.com/personal/garthf_contoso_com/"`  <br/> `path:"https://contoso-my.sharepoint.com/personal/garthf_contoso_com/*" AND filename:confidential`|第一个示例返回指定的 OneDrive for business 网站中的所有项目。 第二个示例返回指定网站 (和网站中的文件夹) 中的文档, 其中包含文件名中的 "保密" 一词。|
+|Path|SharePoint 或 OneDrive for Business 网站中特定网站的路径 (URL)。  <br/> 若要返回在为 path 属性指定的网站中的文件夹中的项目, 您必须添加/\*到指定网站的 URL;例如,`path: "https://contoso.sharepoint.com/Shared Documents/*"`  <br/> <br/> **注意:** 使用该`Path`属性搜索 OneDrive 位置不会在搜索结果中返回媒体文件, 如 .png、tiff 或 .wav 文件。 在搜索查询中使用不同的 site 属性搜索 OneDrive 文件夹中的媒体文件。 <br/>|`path:"https://contoso-my.sharepoint.com/personal/garthf_contoso_com/"`  <br/> `path:"https://contoso-my.sharepoint.com/personal/garthf_contoso_com/*" AND filename:confidential`|第一个示例返回指定的 OneDrive for business 网站中的所有项目。 第二个示例返回指定网站 (和网站中的文件夹) 中的文档, 其中包含文件名中的 "保密" 一词。|
 |SharedWithUsersOWSUser|与指定用户共享并显示在用户的 OneDrive for business 网站中的 "**与我共享**" 页上的文档。 这些文档已与组织中的其他人员明确与指定的用户共享。 当您导出与使用 SharedWithUsersOWSUser 属性的搜索查询匹配的文档时, 文档将从与指定用户共享文档的人员的原始内容位置导出。 有关更多详细信息, 请参阅[搜索组织中共享的网站内容](#searching-for-site-content-shared-within-your-organization)。|`sharedwithusersowsuser:garthf`  <br/> `sharedwithusersowsuser:"garthf@contoso.com"`|这两个示例都将返回所有已与 Garth Fort 显式共享且显示在 Garth Fort 的 OneDrive for business 帐户中的 "**与我共享**" 页上的内部文档。|
-|Site|组织中站点或站点组的 URL。|`site:"https://contoso-my.sharepoint.com"`  <br/> `site:"https://contoso.sharepoint.com/sites/teams"`|第一个示例返回组织中所有用户的 OneDrive for business 网站中的项目。 第二个示例返回所有团队网站中的项目。|
+|Site|组织中站点或站点组的 URL。|`site:"https://contoso-my.sharepoint.com"`  <br/> `site:"https://contoso.sharepoint.com/sites/teams"`|第一个示例返回组织中所有用户的 OneDrive for Business 网站中的项目。 第二个示例返回所有团队网站中的项目。|
 |Size|邮件的大小（以字节为单位）。|`size>=1`  <br/> `size:1..10000`|第一个示例返回大于 1 字节的项目。第二个示例返回大小介于 1 到 10,000 字节之间的项目。|
 |标题|文档的标题。 Title 属性是在 Microsoft Office 文档中指定的元数据。 它不同于文档的文件名。|`title:"communication plan"`|Office 文档的 Title 元数据属性中包含短语“communication plan”的任何文档。|
    
@@ -115,7 +115,7 @@ ms.locfileid: "32254462"
 |MiddleName|**中间**名属性中的名称。|
 |MobilePhone|"**移动**电话号码" 属性中的电话号码。|
 |Nickname|**昵称**属性中的名称。|
-|OfficeLocation|**office**或**office location**属性中的值。|
+|OfficeLocation|**Office**或**office location**属性中的值。|
 |OtherAddress|**其他**地址属性的值。|
 |姓氏|" **Last** name" 属性中的名称。|
 |标题|"职务" 属性**** 中的标题。|
@@ -141,10 +141,10 @@ ms.locfileid: "32254462"
 |AND|keyword1 AND keyword2|返回包含所有指定关键字或`property:value`表达式的项。 例如, `from:"Ann Beebe" AND subject:northwind`将返回王小姐 Beebe 发送的所有邮件, 其中包含 "主题" 行中的 "罗斯文" 一词。 <sup>双面</sup>|
 |+|keyword1 + keyword2 + keyword3|Returns items that contain  *either*  `keyword2` or  `keyword3` *and*  that also contain  `keyword1`. Therefore, this example is equivalent to the query  `(keyword2 OR keyword3) AND keyword1`.  <br/> Note that the query  `keyword1 + keyword2` (with a space after the **+** symbol) isn't the same as using the ** AND ** operator. This query would be equivalent to  `"keyword1 + keyword2"` and return items with the exact phase  `"keyword1 + keyword2"`.  |
 |OR|keyword1 OR keyword2|返回包含一个或多个指定关键字或`property:value`表达式的项。 <sup>双面</sup>|
-|NOT|keyword1 NOT keyword2  <br/> NOT from:"Ann Beebe"  <br/> 不是种类: im|排除由关键字或`property:value`表达式指定的项目。 在第二个示例中, 排除王小姐 Beebe 发送的邮件。 第三个示例排除了所有即时消息对话, 例如保存到对话历史记录邮箱文件夹中的 Skype for business 对话。 <sup>双面</sup>|
+|NOT|keyword1 NOT keyword2  <br/> NOT from:"Ann Beebe"  <br/> 不是种类: im|排除由关键字或`property:value`表达式指定的项目。 在第二个示例中, 排除王小姐 Beebe 发送的邮件。 第三个示例排除了所有即时消息对话, 例如保存到对话历史记录邮箱文件夹中的 Skype for Business 对话。 <sup>双面</sup>|
 |-|keyword1 -keyword2|与 **NOT** 运算符作用相同。 因此, 此查询将返回包含`keyword1`和将排除包含`keyword2`的项的项。|
 |NEAR|keyword1 NEAR(n) keyword2|返回包含邻近字词的项目，其中 n 表示间隔的字词数量。 例如, `best NEAR(5) worst`返回任何一个 "最差" 为 "最佳" 的五个字中的项。 如果您没有指定数目，则默认距离是 8 个字词。 <sup>双面</sup>|
-|ONEAR|keyword1 ONEAR(n) keyword2|类似于**near**, 但以指定的顺序返回彼此相邻的单词的项。 例如, `best ONEAR(5) worst`返回在单词 "最差" 之前出现 "最佳" 的任何项目, 并且两个单词在彼此之间的五个单词之间。 如果您没有指定数目，则默认距离是 8 个字词。 <sup>双面</sup> <br/> > [!NOTE]> 搜索邮箱时不支持**ONEAR**运算符;它仅在搜索 SharePoint 和 OneDrive for business 网站时有效。 如果要在同一搜索中搜索邮箱和网站, 并且查询包含**ONEAR**运算符, 则搜索将返回邮箱项目, 就像您使用的是**NEAR**运算符一样。 换言之, 搜索返回的项目, 其中指定的单词彼此接近, 而不考虑单词出现的顺序。|
+|ONEAR|keyword1 ONEAR(n) keyword2|类似于**near**, 但以指定的顺序返回彼此相邻的单词的项。 例如, `best ONEAR(5) worst`返回在单词 "最差" 之前出现 "最佳" 的任何项目, 并且两个单词在彼此之间的五个单词之间。 如果您没有指定数目，则默认距离是 8 个字词。 <sup>双面</sup> <br/> > [!NOTE]> 搜索邮箱时不支持**ONEAR**运算符;它仅在搜索 SharePoint 和 OneDrive for Business 网站时有效。 如果要在同一搜索中搜索邮箱和网站, 并且查询包含**ONEAR**运算符, 则搜索将返回邮箱项目, 就像您使用的是**NEAR**运算符一样。 换言之, 搜索返回的项目, 其中指定的单词彼此接近, 而不考虑单词出现的顺序。|
 |:|property:value|冒号 (:)在语法`property:value`中, 指定要搜索的属性的值包含指定的值。 例如，  `recipients:garthf@contoso.com` 返回发送至 garthf@contoso.com 的所有邮件。|
 |=|属性 = 值|与 **:** 运算符相同。|
 |\<|property\<value|表示正在搜索的属性小于指定的值。<sup>1</sup>|
@@ -219,7 +219,7 @@ ms.locfileid: "32254462"
 
 当您添加一个条件时，您可以选择与该条件的属性类型相关的运算符。下表描述了与条件一起使用的运算符，并列出了在搜索查询中使用的等效项。
   
-|**Operator**|**查询等效项**|**Description**|
+|**运算符**|**查询等效项**|**说明**|
 |:-----|:-----|:-----|
 |段后|`property>date`|使用日期条件。返回在指定日期后发送、接收或修改的项。 |
 |Before|`property<date`|使用日期条件。返回在指定日期前发送、接收或修改的项。|
@@ -349,7 +349,7 @@ ms.locfileid: "32254462"
   
 - 对共享策略的更改, 例如关闭网站或组织的外部共享。 该属性仍会将以前的共享文档显示为外部可访问, 即使外部访问可能已被吊销也是如此。
     
-- 对组成员身份的更改, 如向 Office 365 组或 office 365 安全组添加或删除外部用户。 对于组有权访问的项目, 该属性不会自动更新。
+- 对组成员身份的更改, 如向 Office 365 组或 Office 365 安全组添加或删除外部用户。 对于组有权访问的项目, 该属性不会自动更新。
     
 - 向外部用户发送共享邀请, 其中收件人尚未接受邀请, 因此尚未访问内容。
     
@@ -357,7 +357,7 @@ ms.locfileid: "32254462"
 
 ## <a name="searching-for-site-content-shared-within-your-organization"></a>搜索组织中共享的网站内容
 
-如前所述, 您可以使用`SharedWithUsersOWSUser`属性, 以便搜索组织中的人员之间共享的文档。 当某人与组织内的其他用户共享文件 (或文件夹) 时, 共享文件的链接将出现在共享文件的人员的 OneDrive for business 帐户中的 "**与我共享**" 页上。 例如, 若要搜索已与 Sara Davis 共享的文档, 可以使用查询`SharedWithUsersOWSUser:"sarad@contoso.com"`。 如果导出此搜索的结果, 则会下载原始文档 (位于使用 Sara 共享文档的人员的内容位置)。
+如前所述, 您可以使用`SharedWithUsersOWSUser`属性, 以便搜索组织中的人员之间共享的文档。 当某人与组织内的其他用户共享文件 (或文件夹) 时, 共享文件的链接将出现在共享文件的人员的 OneDrive for Business 帐户中的 "**与我共享**" 页上。 例如, 若要搜索已与 Sara Davis 共享的文档, 可以使用查询`SharedWithUsersOWSUser:"sarad@contoso.com"`。 如果导出此搜索的结果, 则会下载原始文档 (位于使用 Sara 共享文档的人员的内容位置)。
   
 请注意, 在使用`SharedWithUsersOWSUser`属性时, 必须与特定用户显式共享文档以在搜索结果中返回。 例如, 当某个人在其 OneDrive 帐户中共享文档时, 可以选择与任何人 (在组织内部或外部) 共享它, 也可以与组织内的用户共享它, 或与特定人员共享该文档。 以下是 OneDrive 中的 "**共享**" 窗口的屏幕截图, 其中显示了三个共享选项。 
   
@@ -365,23 +365,23 @@ ms.locfileid: "32254462"
   
 使用`SharedWithUsersOWSUser`属性的搜索查询将仅返回使用第三个选项共享的文档 (与**特定人员**共享)。 
 
-## <a name="searching-for-skype-for-business-conversations"></a>正在搜索 Skype for business 对话
+## <a name="searching-for-skype-for-business-conversations"></a>正在搜索 Skype for Business 对话
 
-您可以使用以下关键字查询专门搜索 Skype for business 对话中的内容:
+您可以使用以下关键字查询专门搜索 Skype for Business 对话中的内容:
 
 ```
 kind:im
 ```
 
-注释以前的搜索查询还将从 Microsoft 团队中返回聊天。 若要防止出现这种情况, 您可以通过使用以下关键字查询缩小搜索结果, 以仅包括 Skype for business 对话:
+注释以前的搜索查询还将从 Microsoft 团队中返回聊天。 若要防止出现这种情况, 您可以通过使用以下关键字查询缩小搜索结果, 以仅包括 Skype for Business 对话:
 
 ```
 kind:im AND subject:conversation
 ```
 
-以前的关键字查询在 Microsoft 团队中排除了聊天, 因为 Skype for business 对话以电子邮件的形式保存, 主题行以单词 "对话" 开头。
+以前的关键字查询在 Microsoft 团队中排除了聊天, 因为 Skype for Business 对话以电子邮件的形式保存, 主题行以单词 "对话" 开头。
 
-若要搜索在特定日期范围内发生的 Skype for business 对话, 请使用以下关键字查询:
+若要搜索在特定日期范围内发生的 Skype for Business 对话, 请使用以下关键字查询:
 
 ```
 kind:im AND subject:conversation AND (received=startdate..enddate)

@@ -4,23 +4,23 @@ ms.author: markjjo
 author: markjjo
 manager: laurawi
 ms.date: ''
-ms.audience: Admin
+audience: Admin
 ms.topic: hub-page
 ms.service: O365-seccomp
 localization_priority: Normal
 ROBOTS: NOINDEX, NOFOLLOW
 ms.assetid: df2d1e0f-b476-42c9-aade-4a260b24f193
-description: 使用安全 & 合规中心中的内容搜索电子数据展示工具, 可以在 Exchange 邮箱、SharePoint 网站中的文档和 OneDrive 位置以及 Skype for business 中的即时消息对话中快速查找电子邮件。
-ms.openlocfilehash: 3e8e0594cac700fe37ee7a4a6c889dbf862cd0fb
-ms.sourcegitcommit: e23b84ef4eee9cccec7205826b71ddfe9aaac2f8
+description: 使用安全 & 合规中心中的内容搜索电子数据展示工具, 可以在 Exchange 邮箱、SharePoint 网站中的文档和 OneDrive 位置以及 Skype for Business 中的即时消息对话中快速查找电子邮件。
+ms.openlocfilehash: 9978262223de059511a011358764069ef23d4340
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33403010"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34158744"
 ---
 # <a name="search-for-content-in-office-365"></a>在 Office 365 中搜索内容
 
-使用安全 & 合规中心中的内容搜索工具在 Exchange 邮箱、SharePoint 网站中的文档和 OneDrive 位置以及 Skype for business 中的即时消息对话中快速查找电子邮件。 您可以使用内容搜索工具在 Office 365 协作工具 (如 Microsoft 团队和 Office 365 组) 中搜索电子邮件、文档和即时消息对话。
+使用安全 & 合规中心中的内容搜索工具在 Exchange 邮箱、SharePoint 网站中的文档和 OneDrive 位置以及 Skype for Business 中的即时消息对话中快速查找电子邮件。 您可以使用内容搜索工具在 Office 365 协作工具 (如 Microsoft 团队和 Office 365 组) 中搜索电子邮件、文档和即时消息对话。
   
 ## <a name="search-for-content"></a>搜索内容
 

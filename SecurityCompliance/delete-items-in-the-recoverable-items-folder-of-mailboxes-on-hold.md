@@ -3,7 +3,7 @@ title: 删除保留的基于云的邮箱的 "可恢复的项目" 文件夹中的
 ms.author: markjjo
 author: markjjo
 manager: laurawi
-ms.audience: Admin
+audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
@@ -15,16 +15,16 @@ search.appverid:
 - MET150
 ms.assetid: a85e1c87-a48e-4715-bfa9-d5275cde67b0
 description: '对于管理员: 删除 Exchange Online 邮箱的用户的 "可恢复的项目" 文件夹中的项目, 即使该邮箱位于 "合法保留" 中也是如此。 这是一种删除意外溅入 Office 365 中的数据的有效方法。'
-ms.openlocfilehash: 7badd45f582e4d5fef4cb5708c504573da0aba50
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: 9da469af900c2610762338029aa80d31c7f10363
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32256870"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34150404"
 ---
 # <a name="delete-items-in-the-recoverable-items-folder-of-cloud-based-mailboxes-on-hold---admin-help"></a>删除保留的基于云的邮箱的 "可恢复的项目" 文件夹中的项目-管理员帮助
 
-Exchange Online 邮箱的 "可恢复的项目" 文件夹存在, 以防止意外或恶意删除。 它还用于存储由 Office 365 合规性功能 (如保留和电子数据展示搜索) 保留和访问的项目。 但是, 在某些情况下, 组织可能会在必须删除的 "可恢复的项目" 文件夹中包含意外保留的数据。 例如, 用户可能在不知情的情况下发送或转发包含敏感信息的电子邮件或可能有严重业务后果的信息。 即使邮件永久删除, 它仍可能会无限期保留, 因为邮箱中已设置了合法保留。 此方案称为数据外泄, 因为数据被意外地溅入 Office 365 中。 在这些情况下, 您可以删除 Exchange Online 邮箱的用户的 "可恢复的项目" 文件夹中的项目, 即使该邮箱是使用 Office 365 中的一种不同的保留功能来保留的。 这些保留类型包括诉讼保留、就地保留、电子数据展示保留和 office 365 保留策略 (在 office 365 或 Microsoft 365 的安全与合规中心中创建)。
+Exchange Online 邮箱的 "可恢复的项目" 文件夹存在, 以防止意外或恶意删除。 它还用于存储由 Office 365 合规性功能 (如保留和电子数据展示搜索) 保留和访问的项目。 但是, 在某些情况下, 组织可能会在必须删除的 "可恢复的项目" 文件夹中包含意外保留的数据。 例如, 用户可能在不知情的情况下发送或转发包含敏感信息的电子邮件或可能有严重业务后果的信息。 即使邮件永久删除, 它仍可能会无限期保留, 因为邮箱中已设置了合法保留。 此方案称为数据外泄, 因为数据被意外地溅入 Office 365 中。 在这些情况下, 您可以删除 Exchange Online 邮箱的用户的 "可恢复的项目" 文件夹中的项目, 即使该邮箱是使用 Office 365 中的一种不同的保留功能来保留的。 这些保留类型包括诉讼保留、就地保留、电子数据展示保留和 Office 365 保留策略 (在 Office 365 或 Microsoft 365 的安全与合规中心中创建)。
   
  本文介绍如何从处于保留状态的基于云的邮箱的 "可恢复的项目" 文件夹中删除项目。 此过程涉及到禁用对邮箱的访问和禁用单个项目恢复, 禁用托管文件夹助理处理邮箱, 暂时删除保留, 从 "可恢复的项目" 文件夹中删除项目, 然后还原邮箱设置为其以前的配置。 过程如下: 
   
@@ -43,7 +43,7 @@ Exchange Online 邮箱的 "可恢复的项目" 文件夹存在, 以防止意外�
 > [!CAUTION]
 > 本文中所述的过程将导致从 Exchange Online 邮箱永久删除 (清除) 的数据。 这意味着无法恢复从 "可恢复的项目" 文件夹中删除的邮件, 也不会提供用于法律查询或其他合规性的邮件。 如果要从作为诉讼保留的一部分的邮箱中删除邮件, 请在 "安全与合规中心" 中创建的 "就地保留"、"电子数据展示保留" 或 "Office 365 保留策略" 中, 与您的记录管理或法律部门进行核实在删除保留之前。 您的组织可能有定义邮箱处于保留状态或 data 外泄事件是否优先的策略。 
   
-## <a name="before-you-begin"></a>准备工作
+## <a name="before-you-begin"></a>开始之前
 
 - 您必须在 Exchange Online 中为以下两个管理角色分配搜索和删除步骤5中的 "可恢复的项目" 文件夹中的邮件。
     
@@ -190,11 +190,11 @@ Set-Mailbox <username> -LitigationHoldEnabled $false
 Get-MailboxSearch -InPlaceHoldIdentity <hold GUID> | FL Name
 ```
    
-在确定就地保留之后, 可以使用 exchange 管理中心 (EAC) 或 exchange Online PowerShell 将邮箱从保留中删除。 有关详细信息, 请参阅[创建或删除就地保留](https://go.microsoft.com/fwlink/?linkid=852668)。
+在确定就地保留之后, 可以使用 Exchange 管理中心 (EAC) 或 Exchange Online PowerShell 将邮箱从保留中删除。 有关详细信息, 请参阅[创建或删除就地保留](https://go.microsoft.com/fwlink/?linkid=852668)。
   
  ### <a name="office-365-retention-policies-applied-to-specific-mailboxes"></a>应用于特定邮箱的 Office 365 保留策略
   
-在[Security & 合规中心 PowerShell](https://go.microsoft.com/fwlink/?linkid=627084)中运行以下命令, 以确定应用于邮箱的 Office 365 保留策略。 对您在步骤1中标识`mbx`的`skp`保留策略使用 GUID (不包括或前缀)。 
+在[Security _AMP_ 合规中心 PowerShell](https://go.microsoft.com/fwlink/?linkid=627084)中运行以下命令, 以确定应用于邮箱的 Office 365 保留策略。 对您在步骤1中标识`mbx`的`skp`保留策略使用 GUID (不包括或前缀)。 
 
 ```
 Get-RetentionCompliancePolicy <retention policy GUID without prefix> | FL Name
@@ -204,7 +204,7 @@ Get-RetentionCompliancePolicy <retention policy GUID without prefix> | FL Name
   
  ### <a name="organization-wide-office-365-retention-policies"></a>组织范围内的 Office 365 保留策略
   
-组织范围和 Exchange 范围的 Office 365 保留策略应用于组织中的每个邮箱。 它们在组织级别 (而不是邮箱级别) 应用, 并在您在步骤1中运行**set-organizationconfig** cmdlet 时返回。 在[Security & 合规中心 PowerShell](https://go.microsoft.com/fwlink/?linkid=627084)中运行以下命令, 以确定组织范围内的 Office 365 保留策略。 对您在步骤1中确定`mbx`的组织范围的保留策略使用 GUID (不包括前缀)。 
+组织范围和 Exchange 范围的 Office 365 保留策略应用于组织中的每个邮箱。 它们在组织级别 (而不是邮箱级别) 应用, 并在您在步骤1中运行**set-organizationconfig** cmdlet 时返回。 在[Security _AMP_ 合规中心 PowerShell](https://go.microsoft.com/fwlink/?linkid=627084)中运行以下命令, 以确定组织范围内的 Office 365 保留策略。 对您在步骤1中确定`mbx`的组织范围的保留策略使用 GUID (不包括前缀)。 
 
 ```
 Get-RetentionCompliancePolicy <retention policy GUID without prefix> | FL Name
@@ -222,13 +222,13 @@ Get-RetentionCompliancePolicy <retention policy GUID without prefix> | FL Name
 Get-Mailbox <username> |FL ComplianceTagHoldApplied
 ```
 
-确定邮箱处于保留状态, 因为保留标签应用于文件夹或项目, 您可以使用 "安全和合规中心" 中的 "内容搜索" 工具来搜索带标签的项目, 方法是使用 new-compliancetag 搜索条件。 有关详细信息, 请参阅关键字查询中的 "搜索条件" 部分[和内容搜索的搜索条件](keyword-queries-and-search-conditions.md#conditions-for-common-properties)。
+确定邮箱处于保留状态, 因为保留标签应用于文件夹或项目, 您可以使用 "安全和合规中心" 中的 "内容搜索" 工具来搜索带标签的项目, 方法是使用 New-compliancetag 搜索条件。 有关详细信息, 请参阅关键字查询中的 "搜索条件" 部分[和内容搜索的搜索条件](keyword-queries-and-search-conditions.md#conditions-for-common-properties)。
 
 有关标签的详细信息, 请参阅[Office 365 概述标签](labels.md)。
 
  ### <a name="ediscovery-case-holds"></a>电子数据展示事例保留
   
-在[Security & 合规中心 PowerShell](https://go.microsoft.com/fwlink/?linkid=627084)中运行以下命令, 以确定与应用于邮箱的电子数据展示事例关联的保留。 使用您在步骤1中确定`UniH`的电子数据展示保留的 GUID (不包括前缀)。 请注意, 第二个命令显示与保留相关联的电子数据展示事例的名称;第三个命令显示保留的名称。 
+在[Security _AMP_ 合规中心 PowerShell](https://go.microsoft.com/fwlink/?linkid=627084)中运行以下命令, 以确定与应用于邮箱的电子数据展示事例关联的保留。 使用您在步骤1中确定`UniH`的电子数据展示保留的 GUID (不包括前缀)。 请注意, 第二个命令显示与保留相关联的电子数据展示事例的名称;第三个命令显示保留的名称。 
   
 ```
 $CaseHold = Get-CaseHoldPolicy <hold GUID without prefix>
@@ -359,7 +359,7 @@ Get-MailboxFolderStatistics <username> -FolderScope RecoverableItems -Archive | 
 - 重新启用托管文件夹助理以处理邮箱。
     
 > [!IMPORTANT]
-> 建议您在重新启用托管文件夹助理以处理邮箱之前, 等待24小时后再应用保留策略 (并验证是否已就绪)。 
+> 建议您在重新启用托管文件夹助理以处理邮箱之前, 等待24小时后再365应用保留策略 (并验证是否已就绪)。 
   
 在 Exchange Online PowerShell 中执行以下步骤 (按指定的顺序)。
   
@@ -407,7 +407,7 @@ Get-MailboxFolderStatistics <username> -FolderScope RecoverableItems -Archive | 
     
     使用安全 & 合规性中心将邮箱回退到与电子数据展示事例相关联的保留。 转到 "**电子数据展示** \> **电子数据**展示" 页, 打开事例, 并将邮箱重新添加到保留。 
     
-5. 运行以下命令, 以允许托管文件夹助理再次处理邮箱。 如前所述, 我们建议您在重新启用托管文件夹助理之前, 请等待24小时后再重新应用保留策略 (并验证是否已就绪)。 
+5. 运行以下命令, 以允许托管文件夹助理再次处理邮箱。 如前所述, 我们建议您在重新启用托管文件夹助理之前, 请等待24小时后再重新应用365保留策略 (并验证是否已就绪)。 
 
     ```
     Set-Mailbox <username> -ElcProcessingDisabled $false
@@ -423,9 +423,9 @@ Get-MailboxFolderStatistics <username> -FolderScope RecoverableItems -Archive | 
     Get-CASMailbox <username> | FL EwsEnabled,ActiveSyncEnabled,MAPIEnabled,OWAEnabled,ImapEnabled,PopEnabled
     ```
   
-## <a name="more-information"></a>详细信息
+## <a name="more-information"></a>更多信息
 
-下面的表格介绍了在运行 set-organizationconfig cmdlet 或**** cmdlet 时, 如何根据*InPlaceHolds*属性中的值标识不同类型的**** 保留。 有关更多详细信息, 请参阅[如何识别 Exchange Online 邮箱上放置的保留类型](identify-a-hold-on-an-exchange-online-mailbox.md)。
+下面的表格介绍了在运行 Set-organizationconfig cmdlet 或**** cmdlet 时, 如何根据*InPlaceHolds*属性中的值标识不同类型的**** 保留。 有关更多详细信息, 请参阅[如何识别 Exchange Online 邮箱上放置的保留类型](identify-a-hold-on-an-exchange-online-mailbox.md)。
 
 如前所述, 在成功删除 "可恢复的项目" 文件夹中的项目之前, 必须从邮箱中删除所有保留和 Office 365 保留策略。 
   
@@ -435,6 +435,6 @@ Get-MailboxFolderStatistics <username> -FolderScope RecoverableItems -Archive | 
 |就地保留  <br/> | `c0ba3ce811b6432a8751430937152491` <br/> |*InPlaceHolds*属性包含邮箱中放置的就地保留的 GUID。 您可以指示这是就地保留, 因为 GUID 不以前缀开头。  <br/> 您可以使用 Exchange `Get-MailboxSearch -InPlaceHoldIdentity <hold GUID> | FL` Online PowerShell 中的命令来获取有关邮箱的就地保留的信息。  <br/> |
 | 在应用于特定邮箱的 Security & 合规性中心中的 Office 365 保留策略  <br/> | `mbxcdbbb86ce60342489bff371876e7f224` <br/> 或  <br/>  `skp127d7cf1076947929bf136b7a2a8c36f` <br/> |当您运行**邮箱获取**cmdlet 时, *InPlaceHolds*属性还包含应用于邮箱的 Office 365 保留策略的 guid。 您可以确定保留策略, 因为 GUID 以`mbx`前缀开头。 请注意, 如果保留策略的 GUID 以`skp`前缀开头, 则表示该保留策略应用于 Skype for business 会话。  <br/> 若要标识应用于邮箱的 Office 365 保留策略, 请在 Security & 合规性中心 PowerShell 中运行以下命令: <br/> <br/>`Get-RetentionCompliancePolicy <retention policy GUID without prefix> | FL Name`<br/><br/>运行此命令时, `mbx`请`skp`务必删除或前缀。  <br/> |
 |安全 & 合规中心中的组织范围内的 Office 365 保留策略  <br/> |无值  <br/> 或  <br/>  `-mbxe9b52bf7ab3b46a286308ecb29624696`(指示邮箱已从组织范围的策略中排除)  <br/> |即使在运行**邮箱**cmdlet 时, *InPlaceHolds*属性为空, 仍可能会将一个或多个组织范围内的 Office 365 保留策略应用于邮箱。  <br/> 若要验证这一点, 可以在`Get-OrganizationConfig | FL InPlaceHolds` Exchange Online PowerShell 中运行命令, 以获取组织范围内的 Office 365 保留策略的 guid 列表。 应用于 Exchange 邮箱的组织范围的保留策略的 GUID 以`mbx`前缀开头;例如`mbxa3056bb15562480fadb46ce523ff7b02`。  <br/> 若要标识应用于邮箱的组织范围内的 Office 365 保留策略, 请在 Security & 合规性中心 PowerShell 中运行以下命令: <br/><br/> `Get-RetentionCompliancePolicy <retention policy GUID without prefix> | FL Name`<br/><br/>请注意, 如果从组织范围内的 Office 365 保留策略中排除了某个邮箱, 则在运行 "**获取邮箱**" cmdlet 时, 该保留策略的 GUID 将显示在用户邮箱的*InPlaceHolds*属性中。它是由前缀`-mbx`标识的;例如,`-mbxe9b52bf7ab3b46a286308ecb29624696` <br/> |
-|安全 & 合规中心中的电子数据展示案例保留  <br/> | `UniH7d895d48-7e23-4a8d-8346-533c3beac15d` <br/> |*InPlaceHolds*属性还包含与可能位于邮箱上的安全 & 合规中心中的电子数据展示事例关联的任何保留的 GUID。 你可以告诉这是电子数据展示事例保留, 因为 GUID 以`UniH`前缀开头。  <br/> 您可以使用 Security `Get-CaseHoldPolicy` & 合规性中心 PowerShell 中的 cmdlet 来获取有关邮箱上的保留的电子数据展示事例的相关信息。 例如, 您可以运行命令`Get-CaseHoldPolicy <hold GUID without prefix> | FL Name`以显示邮箱上的事例保留的名称。 运行此命令时, `UniH`请务必删除前缀。  <br/><br/> 若要标识与邮箱的保留内容相关联的电子数据展示事例, 请运行以下命令:<br/><br/>`$CaseHold = Get-CaseHoldPolicy <hold GUID without prefix>`<br/><br/>`Get-ComplianceCase $CaseHold.CaseId | FL Name`
+|安全 & 合规中心中的电子数据展示案例保留  <br/> | `UniH7d895d48-7e23-4a8d-8346-533c3beac15d` <br/> |*InPlaceHolds*属性还包含与可能位于邮箱上的安全 _AMP_ 合规中心中的电子数据展示事例关联的任何保留的 GUID。 你可以告诉这是电子数据展示事例保留, 因为 GUID 以`UniH`前缀开头。  <br/> 您可以使用 Security `Get-CaseHoldPolicy` _AMP_ 合规性中心 PowerShell 中的 cmdlet 来获取有关邮箱上的保留的电子数据展示事例的相关信息。 例如, 您可以运行命令`Get-CaseHoldPolicy <hold GUID without prefix> | FL Name`以显示邮箱上的事例保留的名称。 运行此命令时, `UniH`请务必删除前缀。  <br/><br/> 若要标识与邮箱的保留内容相关联的电子数据展示事例, 请运行以下命令:<br/><br/>`$CaseHold = Get-CaseHoldPolicy <hold GUID without prefix>`<br/><br/>`Get-ComplianceCase $CaseHold.CaseId | FL Name`
 
 

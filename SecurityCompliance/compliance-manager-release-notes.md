@@ -3,7 +3,7 @@ title: Microsoft 合规性管理器发行说明
 ms.author: robmazz
 author: robmazz
 manager: laurawi
-ms.audience: Admin
+audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
@@ -11,13 +11,13 @@ ms.collection: M365-security-compliance
 search.appverid:
 - MOE150
 - MET150
-description: microsoft 合规性管理器是 microsoft 服务信任门户中基于工作流的免费风险评估工具。 合规性管理器使你能够跟踪、分配和验证与 Microsoft 云服务相关的法规遵从性活动。
-ms.openlocfilehash: 5e18445e3f9ad2848f18174788ec6dd40bc4a178
-ms.sourcegitcommit: 696c1ed6b270be3f9da7395b49a7d8fec98e6db0
+description: Microsoft 合规性管理器是 Microsoft 服务信任门户中基于工作流的免费风险评估工具。 合规性管理器使你能够跟踪、分配和验证与 Microsoft 云服务相关的法规遵从性活动。
+ms.openlocfilehash: f01e70b7852e6421c7c77dbe5ed4b6ca2aa395b2
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/29/2019
-ms.locfileid: "33473012"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34152064"
 ---
 # <a name="release-notes-for-compliance-manager-preview"></a>合规性管理器的发行说明 (预览)
 
@@ -29,14 +29,14 @@ ms.locfileid: "33473012"
 
 - **与 Microsoft 安全分数的集成:** 合规性管理器通过将客户管理的操作映射到50以上的安全分数操作, 支持与[Microsoft 安全分数](microsoft-secure-score.md)的集成。 在安全分数中完成映射的操作后, 相应的合规性管理器操作将自动更新。
 
-- **导入自定义评估:** 除了内置评估, 合规性管理器现在还支持导入自定义模板, 从而使您能够为任何产品或服务以及任何标准或法规创建自定义评估。
+- **导入自定义评估:** 除了内置评估, 合规性管理器现在还支持导入自定义模板。 您可以为任何产品或服务以及任何标准或法规创建自定义评估。
 
 - **Actions 项:** 操作项现在是单个项目, 并且许多包含来自 Microsoft 安全分数图形 API 的遥测集合。 在可能的情况下, 技术操作建议现在有指向 Office 365 服务中适用配置页面的链接。
 
 - **租户管理:** 用于管理合规性管理器中的新数据元素的新界面 (预览):
     - **维:** 查看、添加和自定义模板、评估和操作项的元数据, 以允许您为筛选器创建自定义透视。
     - **所有者:** 为每个即席项目指定一个所有者。
-    - **客户操作:** 管理合规性管理器 (预览版) 中包含的操作项的完整列表, 并为与安全得分集成的操作项启用/禁用安全分数监视。
+    - **客户操作:** 管理合规性管理器 (预览版) 中包含的操作项的完整列表, 并启用/禁用与安全得分集成的操作项的安全分数监视。
 
 - **更新了合规性分数**: 该方法已更改为支持与 Microsoft 安全分数同步。 评分系统删除了 Microsoft 托管的控制积分, 并仅侧重于客户托管的控制措施的完成。
 
@@ -46,7 +46,12 @@ ms.locfileid: "33473012"
 
 ### <a name="compliance-score"></a>合规性分数
 
-- 将措施项标记为**不在范围中**时, 分配给措施项的分数不会从合规性分数计算中排除。 标记为**不在作用域中的**操作项不应增加合规性分数。
+- 对于标记为**不在范围**内的交办事项, 分配给措施项的分数不会从合规性分数计算中排除。 标记为**不在范围内的**操作项不会增加合规性分数。
+
+### <a name="secure-score"></a>安全功能分数
+
+- 安全分数结果不适用于某些 Microsoft 365 和 Office 365 订阅中的某些操作项。 在这些情况下, 安全得分结果为 "无法检测到"。
+- 有时, 不完成相应策略和操作项目的安全分数结果。
 
 ### <a name="microsoft-managed-controls"></a>Microsoft 托管控件
 
@@ -60,7 +65,7 @@ ms.locfileid: "33473012"
 
 ### <a name="control-families-not-shown-in-assessments"></a>控制系列未在评估中显示
 
-- 导入模板时, 基于该模板的所有评估将反映属于该模板的所有控制系列。 但是, 如果向模板中添加新的控制系列, 则任何现有评估都不会反映所做的更改。 仅根据更新后的模板创建的新评估将反映所做的更改。
+- 导入模板时, 基于该模板的所有评估都会反映属于该模板的所有控制系列。 但是, 如果向模板中添加新的控制系列, 则任何现有评估都不会反映所做的更改。 仅由更新后的模板创建的新评估将反映所做的更改。
 
 ### <a name="filters"></a>筛选器
 
@@ -85,3 +90,7 @@ ms.locfileid: "33473012"
 ### <a name="session-timeout"></a>会话超时
 
 - 会话超时时, 可能会出现 "发生错误" 错误。 若要解决此问题, 请转到[合规性管理器](https://servicetrust.microsoft.com/ComplianceManager), 然后重新登录。
+ 
+### <a name="language-support"></a>语言支持
+
+- 所有网页都不支持所有语言。 如果本地语言不受支持, 请在美国英语中查看。

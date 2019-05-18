@@ -4,7 +4,7 @@ ms.author: markjjo
 author: markjjo
 manager: laurawi
 ms.date: 11/7/2017
-ms.audience: Admin
+audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
@@ -15,12 +15,12 @@ search.appverid:
 - MET150
 ms.assetid: 72bbad69-035b-4d33-b8f4-549a2743e97d
 description: 在安全与合规中心中添加和管理活动警报, 以便 Office 365 会在用户在 Office 365 中执行特定活动时向您发送电子邮件通知。
-ms.openlocfilehash: d71763d4633c3396afdf58400e9cb7b8b8a468e8
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: 1b09b191f82d8dd589fe2e5f650f42f67a846da2
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32258658"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34151304"
 ---
 # <a name="create-activity-alerts-in-the-office-365"></a>在 Office 365 中创建活动通知
 
@@ -31,9 +31,9 @@ ms.locfileid: "32258658"
 > [!NOTE]
 > 我们建议您开始使用安全与合规中心中的通知策略, 而不是创建新的活动通知。 警报策略提供了一些附加功能, 如创建在任何用户执行指定活动时触发警报的通知策略, 以及在安全与合规中心的 "**查看通知**" 页上显示警报的功能。 有关详细信息, 请参阅[警报策略](alert-policies.md)。
   
-## <a name="before-you-begin"></a>准备工作
+## <a name="before-you-begin"></a>开始之前
 
-- 您必须在安全 & 合规中心中向您分配 "组织配置" 角色, 以管理活动通知。 默认情况下, 此角色分配给合规性管理员和组织管理角色组。 有关向角色组添加成员的详细信息, 请参阅[为用户提供对安全 & 合规性中心的访问权限](grant-access-to-the-security-and-compliance-center.md)。
+- 您必须在安全 & 合规中心中向您分配 "组织配置" 角色, 以管理活动通知。 默认情况下, 此角色分配给合规性管理员和组织管理角色组。 有关向角色组添加成员的详细信息, 请参阅[为用户提供对安全 _AMP_ 合规性中心的访问权限](grant-access-to-the-security-and-compliance-center.md)。
     
 - 您 (或另一个管理员) 必须先为您的组织启用审核日志记录, 然后才能开始使用活动通知。 若要执行此操作, 只需单击 "**活动通知**" 页面上的 "**开始记录用户和管理员活动**"。 (如果看不到此链接, 表明已为您的组织启用了审核。)您还可以在安全 & 合规性中心的 "**审核日志搜索**" 页上启用审核 (转到 "**搜索** \> **审核日志搜索**")。 您只需为组织执行一次此操作。
   
@@ -94,7 +94,7 @@ ms.locfileid: "32258658"
     
 若要重新打开活动通知, 只需重复这些步骤, 然后单击 "**关闭**" 切换开关, 将状态更改为 **"开启**"。
   
-## <a name="more-information"></a>详细信息
+## <a name="more-information"></a>更多信息
 
 - 下面的示例展示了如何向 Security & 合规中心中的 "在发送此通知的位置" 字段 (并在 "**活动通知**" 页面上的 "**收件人**" 下列出) 中指定的用户发送电子邮件通知。 
     
@@ -105,7 +105,7 @@ ms.locfileid: "32258658"
     > [!TIP]
     > 您可能想要为任何用户执行的一个活动仅创建一个活动通知。 或者, 您可能想要创建一个活动通知来跟踪由一个或 mores 用户执行的多个活动。 
   
-    下表列出了 SharePoint 或 OneDrive for business 中的一些常见的与文档相关的活动。
+    下表列出了 SharePoint 或 OneDrive for Business 中的一些常见的与文档相关的活动。
     
     |**当用户执行此 .。。**|**为此活动创建通知**|**活动组**|
     |:-----|:-----|:-----|

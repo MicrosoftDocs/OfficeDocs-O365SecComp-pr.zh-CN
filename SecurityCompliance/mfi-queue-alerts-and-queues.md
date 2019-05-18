@@ -3,18 +3,18 @@ title: 队列警报和队列
 ms.author: chrisda
 author: chrisda
 manager: serdars
-ms.audience: ITPro
+audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: 37640c80-ce6f-47e2-afd1-bc1d3c50e637
 description: 管理员可以了解安全 & 合规性中心的邮件流仪表板中的队列通知和队列。
-ms.openlocfilehash: 490665bb6b062c5a0b93c988adea9eeb9827cb86
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: 149a1d82b3627037db2ab5c6e1427c79a49535bd
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32267644"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34158754"
 ---
 # <a name="queue-alerts-and-queues"></a>队列警报和队列
 
@@ -26,7 +26,7 @@ ms.locfileid: "32267644"
 
 - 本地环境中的网络或防火墙发生变化。
 
-Office 365 将继续重试传递48小时。 在48小时后, 邮件将会过期, 并将返回到未送达报告 (也称为 "ndr" 或 "退回邮件") 中的发件人。
+Office 365 将继续重试传递48小时。 在48小时后, 邮件将会过期, 并将返回到未送达报告 (也称为 "Ndr" 或 "退回邮件") 中的发件人。
 
 如果已排队的电子邮件数量超过了预定义的阈值 (默认值为2000邮件), 则在**最近通知**的邮件流仪表板中将提供这些通知, 并且管理员将收到电子邮件通知 (为其备用电子邮件地址). 若要配置警报阈值、每日通知限制和/或通知收件人, 请参阅下面的 "**自定义队列通知**" 部分。
 
@@ -72,4 +72,4 @@ Office 365 将继续重试传递48小时。 在48小时后, 邮件将会过期, 
 
 ## <a name="see-also"></a>另请参阅
 
-有关邮件流仪表板中的其他邮件流见解的详细信息, 请参阅[Security & 合规性中心中的邮件流见解](mail-flow-insights.md)。
+有关邮件流仪表板中的其他邮件流见解的详细信息, 请参阅[Security _AMP_ 合规性中心中的邮件流见解](mail-flow-insights.md)。
