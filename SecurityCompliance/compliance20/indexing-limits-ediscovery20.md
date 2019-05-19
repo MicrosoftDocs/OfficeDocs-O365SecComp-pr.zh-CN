@@ -1,10 +1,10 @@
 ---
-title: 高级电子数据展示中的索引限制 (预览)
+title: 高级电子数据展示中的索引限制
 ms.author: markjjo
 author: markjjo
 manager: laurawi
 ms.date: ''
-ms.audience: Admin
+audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
@@ -14,13 +14,13 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: ccafedc476e495d075ece878023a4a297b9d5061
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: f1474f72314505a80a53546c1ab377787d3650e6
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32256280"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34154974"
 ---
-# <a name="indexing-limits-in-advanced-ediscovery-preview"></a><span data-ttu-id="71fa7-102">高级电子数据展示中的索引限制 (预览)</span><span class="sxs-lookup"><span data-stu-id="71fa7-102">Indexing limits in Advanced eDiscovery (Preview)</span></span>
+# <a name="indexing-limits-in-advanced-ediscovery"></a><span data-ttu-id="f0b0a-102">高级电子数据展示中的索引限制</span><span class="sxs-lookup"><span data-stu-id="f0b0a-102">Indexing limits in Advanced eDiscovery</span></span>
 
-<span data-ttu-id="71fa7-103">内容即将推出。</span><span class="sxs-lookup"><span data-stu-id="71fa7-103">Content coming soon.</span></span>
+<span data-ttu-id="f0b0a-103">内容即将推出。</span><span class="sxs-lookup"><span data-stu-id="f0b0a-103">Content coming soon.</span></span>
