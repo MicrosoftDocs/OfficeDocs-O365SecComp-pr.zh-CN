@@ -4,7 +4,7 @@ ms.author: chrfox
 author: chrfox
 manager: laurawi
 ms.date: 9/14/2017
-ms.audience: Admin
+audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
@@ -13,12 +13,12 @@ search.appverid:
 - MET150
 ms.assetid: c6f016cb-409f-4ae9-911c-1395cf0c86ea
 description: '了解如何查找在 Office 365 高级电子数据展示中运行的进程模块的结果, 包括任务状态和过程摘要。  '
-ms.openlocfilehash: 0393cde78e559036d92b9ac48245afafc974a8b2
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: 4bbdbf68f71e3459ff2ddcd8ba3fb33e52f16825
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32267161"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34157794"
 ---
 # <a name="view-process-module-results-in-office-365-advanced-ediscovery"></a>在 Office 365 高级电子数据展示中查看流程模块结果
 
@@ -93,7 +93,7 @@ ms.locfileid: "32267161"
     
   - **现有**: 以前加载过且现在再次加载的文件 (包括重复项)。
     
-  - **text**: 包含文本的唯一文件。
+  - **Text**: 包含文本的唯一文件。
     
   - **非文本**: 空文本文件、空的本机文本文件、本机非文本文件。 
     

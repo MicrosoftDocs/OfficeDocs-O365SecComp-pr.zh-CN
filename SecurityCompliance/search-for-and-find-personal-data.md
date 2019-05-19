@@ -4,7 +4,7 @@ ms.author: bcarter
 author: brendacarter
 manager: laurawi
 ms.date: 2/7/2018
-ms.audience: ITPro
+audience: ITPro
 ms.topic: overview
 ms.collection:
 - Ent_O365
@@ -16,12 +16,12 @@ localization_priority: Priority
 search.appverid:
 - MET150
 description: 了解如何在 Office 365 中搜索和查找个人数据。
-ms.openlocfilehash: 3c2981116e2abb3518a132084a697618ef3261cc
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: b63cf930a38feab6df815b5350d60184a6339927
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32265334"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34158514"
 ---
 # <a name="search-for-and-find-personal-data"></a>搜索和查找个人数据
 
@@ -97,7 +97,7 @@ Microsoft 建议分三个阶段在 Office 365 中查找个人数据。本主题�
 <tbody>
 <tr class="odd"><td align="left"><p>转到安全与合规中心的“内容搜索”</p></td>
 <td align="left"><p>在安全与合规中心的左侧窗格中，单击“搜索和调查”****&gt;****“内容搜索”。</p>
-<p>请参阅<a href="https://support.office.com/en-us/article/Run-a-Content-Search-in-the-Office-365-Security-Compliance-Center-61852fd9-fe8a-4880-a339-cb19ed3bff4a">在 Office 365 安全与合规中心运行内容搜索</a>。</p></td>
+<p>请参阅<a href="https://support.office.com/zh-CN/article/Run-a-Content-Search-in-the-Office-365-Security-Compliance-Center-61852fd9-fe8a-4880-a339-cb19ed3bff4a">在 Office 365 安全与合规中心运行内容搜索</a>。</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>为每种敏感信息类型创建新的搜索项</p></td>
@@ -117,7 +117,7 @@ Microsoft 建议分三个阶段在 Office 365 中查找个人数据。本主题�
 <td align="left"><p>查看是否存在以下类型的问题，确定查询准确性是否符合目标：</p>
 <p><li>许多误报</li></p>
 <p><li>缺少已知的数据实例</li></p>
-<p>请参阅<a href="https://support.office.com/en-us/article/Export-Content-Search-results-from-the-Office-365-Security-Compliance-Center-ed48d448-3714-4c42-85f5-10f75f6a4278">从 Office 365 安全与合规中心导出内容搜索结果</a>。</p>
+<p>请参阅<a href="https://support.office.com/zh-CN/article/Export-Content-Search-results-from-the-Office-365-Security-Compliance-Center-ed48d448-3714-4c42-85f5-10f75f6a4278">从 Office 365 安全与合规中心导出内容搜索结果</a>。</p>
 <p>注意：如果使用的是 Mozilla Firefox 或 Chrome，可能需要先使用 Internet Explorer 或 Edge 下载报告，才能安装所需的加载项。</p></td>
 </tr>
 </tbody>

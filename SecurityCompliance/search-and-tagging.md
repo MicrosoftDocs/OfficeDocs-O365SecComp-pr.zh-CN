@@ -3,7 +3,7 @@ title: 搜索和标记
 ms.author: chrfox
 author: chrfox
 manager: laurawi
-ms.audience: ITPro
+audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
@@ -11,12 +11,12 @@ search.appverid:
 - MET150
 ms.assetid: 22f5adad-1bc0-460d-94a9-8732929f5b99
 description: 在高级电子数据展示中, 搜索和标记模块使您能够在您的案例中搜索、预览和组织文档。 目前, 此模块在 beta 版中。
-ms.openlocfilehash: 58913a01f30b4169470592f5fc271e3ce785ac5d
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: b3e660e6dca014323cfd06f10c14747751aeb386
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32261362"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34158534"
 ---
 # <a name="search-and-tagging"></a>搜索和标记
 
@@ -55,8 +55,8 @@ ms.locfileid: "32261362"
 |**title** <br/> | 网站文档的标题。 <br/> |
 |**dominanttheme**\* <br/> | 项目的主要主题。 <br/> |
 |**themeslist**\* <br/> | 与项目相关联的主题。 <br/> |
-|**readpercentile_ [issuenum]**\*\* <br/> | 项目的已读百分点值, 针对 [issuenum] 定义的问题。 <br/> |
-|**relevancescore_ [issuenum]**\*\* <br/> | 项目的相关性分数, 针对 [issuenum] 定义的问题。 <br/> |
+|**readpercentile_[issuenum]**\*\* <br/> | 项目的已读百分点值, 针对 [issuenum] 定义的问题。 <br/> |
+|**relevancescore_[issuenum]**\*\* <br/> | 项目的相关性分数, 针对 [issuenum] 定义的问题。 <br/> |
 |**relevancetag_ [tagname]**\*\* <br/> | 如果已手动为项目标记相关性, 则由 [tagname] 定义的标记。 <br/> |
 |||
 

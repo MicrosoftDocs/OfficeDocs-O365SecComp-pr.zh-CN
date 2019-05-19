@@ -4,7 +4,7 @@ ms.author: tracyp
 author: MSFTTracyp
 manager: laurawi
 ms.date: 09/05/2018
-ms.audience: Admin
+audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
@@ -16,16 +16,16 @@ ms.assetid: 065cc2cf-2f3a-47fd-a434-2a20b8f51d0c
 ms.collection:
 - M365-security-compliance
 description: '作为管理员, 您可以在 Office 365 中查看、释放和报告误报的已隔离邮件。 您可以设置策略, 以便 Office 365 筛选邮件并将其发送到隔离区, 原因如下: 因为它们被标识为垃圾邮件、批量、网络钓鱼和恶意软件, 或者它们与邮件流规则匹配。 '
-ms.openlocfilehash: c2a6fff9f6b4d93900174426e2230284695ff3bf
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: aa469a1f0efa2265014593134d2b7865a59dd89f
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32251981"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34155694"
 ---
 # <a name="manage-quarantined-messages-and-files-as-an-administrator-in-office-365"></a>以 Office 365 中的管理员身份管理隔离的邮件和文件
 
-作为管理员, 您可以查看、释放和删除隔离邮件, 并在 Office 365 中报告假正隔离邮件。 您还可以查看、下载和删除由 SharePoint Online、OneDrive for business 和 Microsoft 团队的高级威胁防护 (ATP) 捕获的隔离文件。 您可以设置策略, 以便 Office 365 筛选邮件并将其发送到隔离区, 原因如下: 因为它们被标识为垃圾邮件、批量邮件、网络钓鱼邮件、包含恶意软件, 或者它们与邮件流规则匹配。
+作为管理员, 您可以查看、释放和删除隔离邮件, 并在 Office 365 中报告假正隔离邮件。 您还可以查看、下载和删除由 SharePoint Online、OneDrive for Business 和 Microsoft 团队的高级威胁防护 (ATP) 捕获的隔离文件。 您可以设置策略, 以便 Office 365 筛选邮件并将其发送到隔离区, 原因如下: 因为它们被标识为垃圾邮件、批量邮件、网络钓鱼邮件、包含恶意软件, 或者它们与邮件流规则匹配。
   
 默认情况下, Office 365 将包含恶意软件的网络钓鱼邮件和邮件直接发送到隔离。 其他筛选出的邮件将发送给用户的 "垃圾邮件" 文件夹, 除非您将策略设置为将其发送到隔离区。
   
@@ -36,7 +36,7 @@ ms.locfileid: "32251981"
   
 ## <a name="view-your-organizations-quarantined-messages"></a>查看组织的隔离邮件
 
-1. 在 office 365 组织中使用具有全局管理员权限的工作或学校帐户, 登录 office 365 并[转到 "安全与合规中心"](go-to-the-securitycompliance-center.md)。
+1. 在 Office 365 组织中使用具有全局管理员权限的工作或学校帐户, 登录 Office 365 并[转到 "安全与合规中心"](go-to-the-securitycompliance-center.md)。
     
 2. 在左侧的列表中, 展开 "**威胁管理**", 选择 "**查看**", 然后选择 "**隔离**"。
     
@@ -65,7 +65,7 @@ ms.locfileid: "32251981"
   
 ## <a name="view-your-organizations-quarantined-files"></a>查看组织的隔离文件
 
-1. 在 office 365 组织中使用具有全局管理员权限的工作或学校帐户, 登录 office 365 并[转到 "安全与合规中心"](go-to-the-securitycompliance-center.md)。
+1. 在 Office 365 组织中使用具有全局管理员权限的工作或学校帐户, 登录 Office 365 并[转到 "安全与合规中心"](go-to-the-securitycompliance-center.md)。
     
 2. 在左侧, 展开 "**威胁管理**", 选择 "**查看**", 然后选择 "**隔离**"。 <br/>
     > [!TIP]
@@ -189,7 +189,7 @@ ms.locfileid: "32251981"
   
 ### <a name="to-modify-the-quarantine-retention-period-for-the-default-spam-filter-policy-in-the-security-and-compliance-center"></a>在安全与合规中心中修改默认垃圾邮件筛选器策略的隔离保留期
 
-1. 在 office 365 组织中使用具有全局管理员权限的工作或学校帐户, 登录 office 365 并[转到 "安全与合规中心"](go-to-the-securitycompliance-center.md)。
+1. 在 Office 365 组织中使用具有全局管理员权限的工作或学校帐户, 登录 Office 365 并[转到 "安全与合规中心"](go-to-the-securitycompliance-center.md)。
     
 2. 在左侧, 展开 "**威胁管理**", 选择 "**策略**", 然后选择 "**反垃圾邮件**"。 <br/>
     > [!TIP]
@@ -205,6 +205,6 @@ ms.locfileid: "32251981"
     
 7. 在 "**隔离**" 下的 "**保留垃圾邮件 (天)** " 文本框中, 输入您希望 Office 365 在隔离中保留邮件和文件的时间量。 默认值为30天。 这也是最大值。 
     
-8. 选择“**保存**”。
+8. 选择“保存”****。
     
 

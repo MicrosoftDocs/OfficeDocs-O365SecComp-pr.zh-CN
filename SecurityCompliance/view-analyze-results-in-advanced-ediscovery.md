@@ -4,7 +4,7 @@ ms.author: chrfox
 author: chrfox
 manager: laurawi
 ms.date: 9/14/2017
-ms.audience: Admin
+audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
@@ -13,12 +13,12 @@ search.appverid:
 - MET150
 ms.assetid: 5974f3c2-89fe-4c5f-ac7b-57f214437f7e
 description: '了解在 Office 365 高级电子数据展示中查看分析过程结果的位置, 包括所显示的任务选项的定义。  '
-ms.openlocfilehash: 990bcbb3c6626521d40f7ce057c764200d5047b5
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: 092daa506316b5eb1ef1f5c466055b29e350dc18
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32267096"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34157854"
 ---
 # <a name="view-analyze-results-in-office-365-advanced-ediscovery"></a>查看 Office 365 高级电子数据展示中的分析结果
 
@@ -37,7 +37,7 @@ ms.locfileid: "32267096"
   
 - **ND/ET: setup**: 为运行做准备, 例如, 设置运行和用例参数。
     
-- **nd/ET: nd 计算**: 处理文件的近乎重复的分析。
+- **Nd/ET: nd 计算**: 处理文件的近乎重复的分析。
     
 - **ND/ET: ET 计算**: 对整个电子邮件集执行电子邮件线程分析。
     
@@ -66,7 +66,7 @@ ms.locfileid: "32267096"
     
 - **包含副本**: 如果是被标记为包含或包含减号的另一封邮件的副本, 则将包含的电子邮件指定为包含副本。 换句话说, 此邮件与另一个包含邮件具有相同的主题和正文, 因此共同驻留在同一节点中。 由于包含副本邮件包含相同的内容, 因此通常可以在审阅过程中跳过它们。 
     
-- **rest**: 这表示电子邮件不包含任何唯一的内容, 因此不属于上述三个类别中的任何一个。 不需要查看这些电子邮件。 如果邮件包含不在后续包含的电子邮件中的附件, 则可能需要审阅附件。 这由线程中的包含负电子邮件的存在指示。
+- **Rest**: 这表示电子邮件不包含任何唯一的内容, 因此不属于上述三个类别中的任何一个。 不需要查看这些电子邮件。 如果邮件包含不在后续包含的电子邮件中的附件, 则可能需要审阅附件。 这由线程中的包含负电子邮件的存在指示。
     
 **附件**结果将根据此类类型 (唯一和重复) 显示附件数。 
   

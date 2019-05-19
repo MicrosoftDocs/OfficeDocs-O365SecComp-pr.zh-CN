@@ -4,7 +4,7 @@ ms.author: chrfox
 author: chrfox
 manager: laurawi
 ms.date: 9/14/2017
-ms.audience: Admin
+audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
@@ -13,12 +13,12 @@ search.appverid:
 - MET150
 ms.assetid: 66ca9993-75f4-4724-aea2-5a0719b660c1
 description: '了解 Office 365 高级电子数据展示中的实用程序, 包括案例日志、清除数据、处理错误、修改相关性和透明度分析。  '
-ms.openlocfilehash: bd100883804b300e77abcc8a2224cf1a59b53475
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: df769ddddd37284da50bc715444f2bf928307706
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32265354"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34157954"
 ---
 # <a name="use-office-365-advanced-ediscovery-utilities"></a>使用 Office 365 高级电子数据展示实用程序
 
@@ -98,7 +98,7 @@ ms.locfileid: "32265354"
     
 2. 在 "**设置和实用工具\>实用程序**" 选项卡中, 选择 "**透明度\>分析安装程序**"。
     
-3. 在 * * 文件 id * * 中, 输入要处理的文件的文件 id。
+3. 在 * * 文件 ID * * 中, 输入要处理的文件的文件 ID。
     
 4. 在 "**问题**" 列表中, 选择相关问题。 
     

@@ -4,7 +4,7 @@ ms.author: markjjo
 author: markjjo
 manager: laurawi
 ms.date: ''
-ms.audience: Admin
+audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
@@ -14,14 +14,15 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: 0f5a98a7ba7a62e3b77794b38e444006a340cb49
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: 5aa83f4f736c239b1cdfe940f27cfaa4b981ff64
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32243185"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34155114"
 ---
 # <a name="configure-search-and-analytics-settings"></a>配置搜索和分析设置
+
 
 ## <a name="near-duplicates-and-email-threading"></a>临近重复项和电子邮件线程
 
@@ -31,7 +32,7 @@ ms.locfileid: "32243185"
 
 - 阈值: 如果两个文档的相似性级别高于阈值, 则它们将放在相同的临近重复集内。
 
-- 默认情况下隐藏重复项: 如果启用此设置, 则默认情况下将在工作集中应用用于隐藏重复文档的筛选器。 如果需要, 可以在工作集中手动删除筛选器。
+- 默认情况下隐藏重复项: 如果启用此设置, 则默认情况下将在审阅集中应用用于隐藏重复文档的筛选器。 如果需要, 可以在检查集中手动删除筛选器。
 
 - 最小/最大单词数: 临近重复项和电子邮件线程处理将仅在至少包含最少单词数和最大单词数的文档中运行。
 有关详细信息, 请参阅[接近重复检测](near-duplicates.md)和[电子邮件线程](email-threading.md)。
@@ -47,7 +48,7 @@ ms.locfileid: "32243185"
 
 ## <a name="optical-character-recognition-ocr"></a>光学字符识别 (OCR)
 
-启用此设置后, OCR 将在引入工作集的图像上运行, 以便可以对其进行搜索。
+启用此设置后, OCR 将在引入的图像上运行, 以便可以对其进行搜索。
 
 ## <a name="ignore-text"></a>忽略文本
 

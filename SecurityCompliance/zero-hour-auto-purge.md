@@ -4,7 +4,7 @@ ms.author: tracyp
 author: MSFTTracyP
 manager: laurawi
 ms.date: 04/11/2019
-ms.audience: Admin
+audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
@@ -17,20 +17,20 @@ ms.assetid: 96deb75f-64e8-4c10-b570-84c99c674e15
 ms.collection:
 - M365-security-compliance
 description: 零小时自动清除 (ZAP) 是一种电子邮件保护功能, 可检测到已发送到用户收件箱的垃圾邮件或恶意软件的邮件, 然后将恶意内容无害。 ZAP 的工作方式取决于检测到的恶意内容的类型。
-ms.openlocfilehash: 507cd6af5320a3b925841786136d518c996e4d29
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: 80a6631079a68fd2a7fa3ac6d256e1e36556e642
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32266904"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34155954"
 ---
 # <a name="zero-hour-auto-purge---protection-against-spam-and-malware"></a>零时差自动清除 - 防范垃圾邮件和恶意软件
 
 ## <a name="overview"></a>概述
 
-零小时自动清除 (ZAP) 是一种电子邮件保护功能, 可检测到已传递给用户的收件箱的包含网络钓鱼、垃圾邮件或恶意软件的邮件, 然后将恶意内容无害。 ZAP 的工作方式取决于检测到的恶意内容的类型;由于邮件内容、url 或附件, 邮件可能会 zapped。
+零小时自动清除 (ZAP) 是一种电子邮件保护功能, 可检测到已传递给用户的收件箱的包含网络钓鱼、垃圾邮件或恶意软件的邮件, 然后将恶意内容无害。 ZAP 的工作方式取决于检测到的恶意内容的类型;由于邮件内容、Url 或附件, 邮件可能会 zapped。
   
-ZAP 可与包含 exchange online 邮箱的任何 Office 365 订阅附带的默认 Exchange Online 保护一起使用。
+ZAP 可与包含 Exchange Online 邮箱的任何 Office 365 订阅附带的默认 Exchange Online 保护一起使用。
 
 默认情况下, ZAP 处于打开状态, 但必须满足以下条件:
   
@@ -68,7 +68,7 @@ Office 365 每天实时更新反垃圾邮件引擎和恶意软件签名。 但�
 
 ## <a name="to-disable-zap"></a>禁用 ZAP
   
-如果要对 Office 365 租户或一组用户禁用 ZAP, 请使用[set-hostedcontentfilterpolicy](https://go.microsoft.com/fwlink/p/?LinkId=722758)的**ZapEnabled**参数 (EOP cmdlet)。
+如果要对 Office 365 租户或一组用户禁用 ZAP, 请使用[set-hostedcontentfilterpolicy](https://go.microsoft.com/fwlink/p/?LinkId=722758)的**ZAPENABLED**参数 (EOP cmdlet)。
 
 在下面的示例中, 对名为 "Test" 的内容筛选器策略禁用了 ZAP。
 

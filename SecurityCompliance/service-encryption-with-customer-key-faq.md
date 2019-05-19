@@ -4,24 +4,24 @@ ms.author: krowley
 author: kccross
 manager: laurawi
 ms.date: 7/31/2018
-ms.audience: ITPro
+audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid:
 - MET150
 ms.assetid: 41ae293a-bd5c-4083-acd8-e1a2b4329da6
-description: 除了通过 BitLocker 和分布式密钥管理器 (DKM) 启用的对卷级别加密之外, office 365 还在应用程序级别为 office 365 中的客户内容 (包括来自 Exchange 的数据) 提供了额外的加密层Online、Skype for business、SharePoint Online 和 OneDrive for business。 这称为 "服务加密"。
-ms.openlocfilehash: 8515354d716df22fa124c03e18c36914d27102f4
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+description: 除了通过 BitLocker 和分布式密钥管理器 (DKM) 启用的对卷级别加密之外, Office 365 还在应用程序级别为 Office 365 中的客户内容 (包括来自 Exchange 的数据) 提供了额外的加密层Online、Skype for Business、SharePoint Online 和 OneDrive for Business。 这称为 "服务加密"。
+ms.openlocfilehash: 8b15369571e3a6c021ae0c7337782a0d64436297
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32266936"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34156644"
 ---
 # <a name="service-encryption-with-customer-key-for-office-365-faq"></a>有关使用 Office 365 客户密钥执行服务加密的常见问题解答
 
-除了通过 BitLocker 和分布式密钥管理器 (DKM) 启用的对卷级别加密之外, office 365 还在应用程序级别为 office 365 中的客户内容 (包括来自 Exchange 的数据) 提供了额外的加密层Online、Skype for business、SharePoint Online 和 OneDrive for business。 这称为 "服务加密"。
+除了通过 BitLocker 和分布式密钥管理器 (DKM) 启用的对卷级别加密之外, Office 365 还在应用程序级别为 Office 365 中的客户内容 (包括来自 Exchange 的数据) 提供了额外的加密层Online、Skype for Business、SharePoint Online 和 OneDrive for Business。 这称为 "服务加密"。
   
 客户密钥是基于服务加密构建的, 使您能够提供和控制用于在 Office 365 中对静态数据进行加密的密钥, 如[联机服务条款 (OST)](https://www.microsoft.com/en-us/Licensing/product-licensing/products.aspx)中所述。 客户密钥可帮助您满足合规性义务, 因为您控制 Office 365 用于解密数据的加密密钥。
   
@@ -34,7 +34,7 @@ ms.locfileid: "32266936"
 ## <a name="what-office-365-data-at-rest-is-covered-by-customer-key"></a>客户密钥涵盖什么是 rest 的 Office 365 数据？
 <a name="WhatDataIsCoveredbyCustomerKey"> </a>
 
-其中介绍了 SharePoint Online 网站内容以及存储在该网站上的文件以及上传到 OneDrive for business 的文件。 包含 Exchange Online 邮箱内容 (电子邮件正文、日历条目和电子邮件附件的内容)。 已覆盖 skype for business 中的文本对话, 但不包括 skype 会议广播录制和 skype 会议内容上载。 skype 会议直播和 skype 会议内容上载与 Office 365 中的其他所有内容一起进行加密, 但我们目前不提供对加密密钥的客户控制。
+其中介绍了 SharePoint Online 网站内容以及存储在该网站上的文件以及上传到 OneDrive for Business 的文件。 包含 Exchange Online 邮箱内容 (电子邮件正文、日历条目和电子邮件附件的内容)。 已覆盖 Skype for Business 中的文本对话, 但不包括 Skype 会议广播录制和 Skype 会议内容上载。 Skype 会议直播和 Skype 会议内容上载与 Office 365 中的其他所有内容一起进行加密, 但我们目前不提供对加密密钥的客户控制。
   
 ## <a name="what-is-the-difference-between-customer-key-and-bring-your-own-key-byok-with-azure-information-protection-for-exchange-online"></a>客户密钥与使用 Exchange Online 的 Azure 信息保护为你自己的密钥 (BYOK) 的区别是什么？
 <a name="DiffCustomerKeyandBYOKAzureIP"> </a>
@@ -62,24 +62,24 @@ ms.locfileid: "32266936"
 
 不能。 FastTrack 仅用于收集注册客户密钥所需的租户和服务配置信息。 客户密钥提供通过 FastTrack 发布, 以便客户和合作伙伴可以使用相同的方法提交所需的信息, 并轻松存档客户提供的数据。
   
-如果你需要文档之外的其他支持, 请联系 microsoft 咨询服务 (MCS)、首要现场工程 (PFE) 或 Microsoft 合作伙伴以获取帮助。
+如果你需要文档之外的其他支持, 请联系 Microsoft 咨询服务 (MCS)、首要现场工程 (PFE) 或 Microsoft 合作伙伴以获取帮助。
   
 ## <a name="if-my-keys-are-destroyed-how-can-i-recover"></a>如果我的密钥已损坏, 如何进行恢复？
 <a name="DiffCustomerKeyandBYOKAzureIP"> </a>
 
-可用性密钥使您能够从所管理的根密钥的意外丢失中恢复。 如果丢失了根密钥, 请与 microsoft 支持部门联系, microsoft 将协助你完成启用可用性密钥的过程。 你将使用可用性密钥迁移到新的数据加密策略, 并使用你预配的新密钥。 
+可用性密钥使您能够从所管理的根密钥的意外丢失中恢复。 如果丢失了根密钥, 请与 Microsoft 支持部门联系, Microsoft 将协助你完成启用可用性密钥的过程。 你将使用可用性密钥迁移到新的数据加密策略, 并使用你预配的新密钥。 
   
 ## <a name="what-is-the-availability-key"></a>可用性密钥是什么？
 <a name="DiffCustomerKeyandBYOKAzureIP"> </a>
 
-可用性密钥是在创建数据加密策略时设置的根键。 可用性密钥在 Office 365 中进行存储和保护, 并且功能类似于您提供的用于与客户密钥一起使用的服务加密的两个根键。 与在 Azure Key Vault 中提供和管理的密钥不同, 您不能直接访问可用性密钥。 由于以下三个原因, 可用性密钥的存储和控制特意不同于 Azure 密钥存储库密钥: 首先, 可用性密钥提供了高可用性功能, 在 Office 365 服务无法访问 Azure key 中托管的密钥的情况下。保险柜其次, 可用性密钥在两个 Azure 密钥保管库密钥丢失的情况下提供 "中断玻璃" 功能;第三, 逻辑控件的分离可提供深入防护, 防止丢失单个攻击或故障点的所有密钥。 共享责任来保护密钥, 同时使用各种保护和流程进行密钥管理, 最终降低了所有密钥 (因而您的数据) 将丢失或损坏的风险。 Microsoft 为你提供了对可用性密钥销毁的唯一权限。 根据设计, Microsoft 没有任何人可以访问可用性密钥-它只能通过 Office 365 服务代码访问。
+可用性密钥是在创建数据加密策略时设置的根键。 可用性密钥在 Office 365 中进行存储和保护, 并且功能类似于您提供的用于与客户密钥一起使用的服务加密的两个根键。 与在 Azure Key Vault 中提供和管理的密钥不同, 您不能直接访问可用性密钥。 由于以下三个原因, 可用性密钥的存储和控制特意不同于 Azure 密钥存储库密钥: 首先, 可用性密钥提供了高可用性功能, 在 Office 365 服务无法访问 Azure Key 中托管的密钥的情况下。保险柜其次, 可用性密钥在两个 Azure 密钥保管库密钥丢失的情况下提供 "中断玻璃" 功能;第三, 逻辑控件的分离可提供深入防护, 防止丢失单个攻击或故障点的所有密钥。 共享责任来保护密钥, 同时使用各种保护和流程进行密钥管理, 最终降低了所有密钥 (因而您的数据) 将丢失或损坏的风险。 Microsoft 为你提供了对可用性密钥销毁的唯一权限。 根据设计, Microsoft 没有任何人可以访问可用性密钥-它只能通过 Office 365 服务代码访问。
   
 ## <a name="how-many-data-encryption-policies-deps-can-i-create"></a>可以创建多少个数据加密策略 (DEPs)？
 <a name="DiffCustomerKeyandBYOKAzureIP"> </a>
 
- **Exchange Online 和 Skype for business:** 最高可创建 50 DEPs。 
+ **Exchange Online 和 Skype For business:** 最高可创建 50 DEPs。 
   
- **SharePoint Online 和 OneDrive for business:** DEP 适用于一个地理位置 (也称为地理位置) 中的数据。 如果使用 Office 365 的多地理位置功能, 则可以为每个地理位置创建一个 DEP。 如果您不使用多地理位置, 则可以创建一个 DEP。
+ **SharePoint Online 和 OneDrive For business:** DEP 适用于一个地理位置 (也称为地理位置) 中的数据。 如果使用 Office 365 的多地理位置功能, 则可以为每个地理位置创建一个 DEP。 如果您不使用多地理位置, 则可以创建一个 DEP。
   
 ## <a name="can-i-assign-a-data-encryption-policy-before-migrating-a-mailbox-to-the-cloud"></a>是否可以在将邮箱迁移到云中之前分配数据加密策略？
 <a name="DiffCustomerKeyandBYOKAzureIP"> </a>
@@ -89,7 +89,7 @@ ms.locfileid: "32266936"
 ## <a name="how-do-i-verify-that-encryption-with-customer-key-is-activated-and-office-365-has-finished-encrypting-with-customer-key"></a>如何验证是否已激活客户密钥的加密功能, 以及 Office 365 是否已完成客户密钥加密？
 <a name="DiffCustomerKeyandBYOKAzureIP"> </a>
 
- **Exchange Online 和 Skype for business:** 您可以[使用远程 PowerShell 连接到 Exchange Online](https://technet.microsoft.com/en-us/library/jj984289%28v=exchg.160%29.aspx) , 然后对要检查的每个邮箱使用 **[get-mailboxstatistics]** cmdlet。 在 get-mailboxstatistics cmdlet 的输出中, 如果邮箱已加密, 则_IsEncrypted_属性返回**true** , 如果不是, 则返回值**false** 。 如果邮箱已加密, 则为_DataEncryptionPolicyID_属性返回的值是邮箱加密的 DEP 的 GUID。 有关运行此 cmdlet 的详细信息, 请参阅[get-mailboxstatistics](https://technet.microsoft.com/en-us/library/bb124612%28v=exchg.160%29.aspx)和使用 PowerShell with Exchange Online。 
+ **Exchange Online 和 Skype For business:** 您可以[使用远程 PowerShell 连接到 Exchange Online](https://technet.microsoft.com/en-us/library/jj984289%28v=exchg.160%29.aspx) , 然后对要检查的每个邮箱使用 **[get-mailboxstatistics]** cmdlet。 在 Get-mailboxstatistics cmdlet 的输出中, 如果邮箱已加密, 则_IsEncrypted_属性返回**true** , 如果不是, 则返回值**false** 。 如果邮箱已加密, 则为_DataEncryptionPolicyID_属性返回的值是邮箱加密的 DEP 的 GUID。 有关运行此 cmdlet 的详细信息, 请参阅[get-mailboxstatistics](https://technet.microsoft.com/en-us/library/bb124612%28v=exchg.160%29.aspx)和使用 PowerShell With Exchange Online。 
   
 如果邮箱在您分配 DEP 之后的等待时间为72小时之后未加密, 请启动邮箱移动。 为此, 请[使用远程 PowerShell 连接到 Exchange Online](https://technet.microsoft.com/en-us/library/jj984289%28v=exchg.160%29.aspx) , 然后使用 new-moverequest cmdlet, 并提供邮箱的别名, 如下所示: 
   
@@ -97,14 +97,14 @@ ms.locfileid: "32266936"
 New-MoveRequest <alias>
 ```
 
- **SharePoint Online 和 OneDrive for business:** 您可以[连接到 SharePoint Online PowerShell](https://technet.microsoft.com/en-us/library/fp161372.aspx), 然后使用 **[SPODataEncryptionPolicy]** cmdlet 检查租户的状态。 如果启用了客户密钥加密且所有站点中的所有文件均已加密, * * _State_* * 属性将返回一个**注册**值。 如果仍在进行加密, 则此 cmdlet 提供有关已完成的网站百分比的信息。 
+ **SharePoint Online 和 OneDrive For business:** 您可以[连接到 SharePoint Online PowerShell](https://technet.microsoft.com/en-us/library/fp161372.aspx), 然后使用 **[SPODataEncryptionPolicy]** cmdlet 检查租户的状态。 如果启用了客户密钥加密且所有站点中的所有文件均已加密, * * _State_* * 属性将返回一个**注册**值。 如果仍在进行加密, 则此 cmdlet 提供有关已完成的网站百分比的信息。 
   
 ## <a name="if-i-want-to-switch-to-a-different-set-of-keys-how-long-does-it-take-for-the-new-set-of-keys-to-protect-my-data"></a>如果我要切换到一组不同的键, 则需要多长时间才能保护我的数据的新密钥集？
 <a name="DiffCustomerKeyandBYOKAzureIP"> </a>
 
- **Exchange Online 和 Skype for business:** 在将新的 DEP 分配到邮箱时, 最长可能需要72小时才能根据新的数据加密策略 (DEP) 保护邮箱。 
+ **Exchange Online 和 Skype For business:** 在将新的 DEP 分配到邮箱时, 最长可能需要72小时才能根据新的数据加密策略 (DEP) 保护邮箱。 
   
- **SharePoint Online 和 OneDrive for business:** 一旦分配了新密钥, 它最长可能需要四个小时才能重新加密整个租户。 
+ **SharePoint Online 和 OneDrive For business:** 一旦分配了新密钥, 它最长可能需要四个小时才能重新加密整个租户。 
   
 ## <a name="is-my-existing-data-stored-without-encryption-at-any-time-while-it-is-decrypted-or-encrypted-with-customer-key"></a>在使用客户密钥对其进行解密或加密时, 是否已在不加密的情况下存储现有数据？
 <a name="DiffCustomerKeyandBYOKAzureIP"> </a>
@@ -114,16 +114,16 @@ New-MoveRequest <alias>
 ## <a name="if-i-no-longer-want-to-use-customer-managed-encryption-keys-can-i-switch-to-microsoft-managed-keys"></a>如果我不想再使用客户管理的加密密钥, 是否可以切换到 Microsoft 管理的密钥？
 <a name="DiffCustomerKeyandBYOKAzureIP"> </a>
 
- **Exchange Online 和 Skype for business:** 还没有。 在 Office 365 中通过 Microsoft 托管密钥进行的服务加密将被广泛汇总。 我们预计在使用客户密钥发布服务加密后, 将在服务中进行汇总。 
+ **Exchange Online 和 Skype For business:** 还没有。 在 Office 365 中通过 Microsoft 托管密钥进行的服务加密将被广泛汇总。 我们预计在使用客户密钥发布服务加密后, 将在服务中进行汇总。 
   
- **SharePoint Online 和 OneDrive for business:** 是的。 您可以选择恢复为在每个地理位置 (如果使用多地理位置功能) 或所有数据 (如果您使用的是单个地理位置) 中单独使用 Microsoft 托管键。 
+ **SharePoint Online 和 OneDrive For business:** 是的。 您可以选择恢复为在每个地理位置 (如果使用多地理位置功能) 或所有数据 (如果您使用的是单个地理位置) 中单独使用 Microsoft 托管键。 
   
 ## <a name="if-i-lose-my-keys-how-long-does-it-take-to-recover-service-availability-using-the-recovery-key"></a>如果我的密钥丢失, 使用恢复密钥恢复服务可用性需要多长时间？
 <a name="DiffCustomerKeyandBYOKAzureIP"> </a>
 
- **Exchange Online 和 Skype for business:** 在调用以使用可用性密钥之后, 邮箱将在几分钟内可供访问。 
+ **Exchange Online 和 Skype For business:** 在调用以使用可用性密钥之后, 邮箱将在几分钟内可供访问。 
   
- **SharePoint Online 和 OneDrive for business:** 此操作与您拥有的网站数成比例。 一旦您调用 Microsoft 使用可用性密钥, 你将在大约4小时内完全在线。 
+ **SharePoint Online 和 OneDrive For business:** 此操作与您拥有的网站数成比例。 一旦您调用 Microsoft 使用可用性密钥, 你将在大约4小时内完全在线。 
   
 ## <a name="how-is-the-availability-key-used-with-exchange-online"></a>如何将可用性密钥用于 Exchange Online？
 <a name="DiffCustomerKeyandBYOKAzureIP"> </a>
@@ -134,9 +134,9 @@ New-MoveRequest <alias>
     
 - 由 Office 365 服务代码启动的操作-如搜索索引创建或邮箱移动。
     
-- 从密钥丢失恢复-例如, 丢失与单个 DEP 相关联的 Azure key Vault 密钥。
+- 从密钥丢失恢复-例如, 丢失与单个 DEP 相关联的 Azure Key Vault 密钥。
     
- **在 Azure key Vault 密钥中使用服务可用性的可用性密钥是不可访问的。**
+ **在 Azure Key Vault 密钥中使用服务可用性的可用性密钥是不可访问的。**
   
 Office 365 使用可用性密钥来实现服务可用性, 并从 Exchange Online 的不正常客户密钥状态恢复。 有一个由客户密钥使用的密钥的层次结构。 此层次结构如下图所示。
   
@@ -148,9 +148,9 @@ Office 365 按照此过程响应用户启动的操作, 以确定是否对用户�
   
 1. Office 365 读取邮箱分配到的 DEP, 以便确定两个客户密钥在 Azure Key Vault 中的位置。
     
-2. Office 365 从 DEP 中随机选择两个客户密钥中的一个, 并向 Azure key Vault 发送一个请求, 以使用客户密钥解包 DEP 密钥。
+2. Office 365 从 DEP 中随机选择两个客户密钥中的一个, 并向 Azure Key Vault 发送一个请求, 以使用客户密钥解包 DEP 密钥。
     
-3. 如果使用客户密钥对对 DEP 密钥进行解包的请求失败并返回错误, 则 Office 365 会向 Azure key Vault 发送第二个请求, 这次指示它使用备用 (第二) 客户密钥。
+3. 如果使用客户密钥对对 DEP 密钥进行解包的请求失败并返回错误, 则 Office 365 会向 Azure Key Vault 发送第二个请求, 这次指示它使用备用 (第二) 客户密钥。
     
 4. 如果第二个请求使用客户密钥解包 DEP 密钥失败并返回错误, 则 Office 365 会检查两个请求的结果:
     
@@ -168,14 +168,14 @@ Office 365 服务代码始终具有有效的登录令牌, 不能被阻止。 因
   
  **使用可用性密钥从密钥丢失中恢复。**
   
-您可以使用可用性密钥恢复与同一个 DEP 相关联的 Azure key Vault 密钥的丢失, 如 FAQ 条目的答案中所述, "如果我的密钥已损坏, 如何恢复？"。
+您可以使用可用性密钥恢复与同一个 DEP 相关联的 Azure Key Vault 密钥的丢失, 如 FAQ 条目的答案中所述, "如果我的密钥已损坏, 如何恢复？"。
   
 ## <a name="how-is-the-availability-key-used-with-sharepoint-online-and-onedrive-for-business"></a>SharePoint Online 和 OneDrive for business 使用的可用性密钥有何功能？
 <a name="DiffCustomerKeyandBYOKAzureIP"> </a>
 
-SharePoint online 和 OneDrive for business 体系结构以及客户密钥和可用性密钥实现不同于 Exchange Online 和 Skype for business。
+SharePoint Online 和 OneDrive for business 体系结构以及客户密钥和可用性密钥实现不同于 Exchange Online 和 Skype for business。
   
-当客户移动到客户管理的密钥时, Office 365 将创建特定于租户的中间密钥 (TIK)。 Office 365 将 TIK 加密两次, 每个客户密钥一次, 并存储 TIK 的两个加密版本。 仅存储 TIK 的加密版本, 并且 TIK 只能使用客户密钥进行解密。 然后, 使用 TIK 对网站密钥进行加密, 然后使用这些密钥对 blob 密钥进行加密。 blob 本身被加密并存储在 Microsoft Azure Blob 存储服务中。
+当客户移动到客户管理的密钥时, Office 365 将创建特定于租户的中间密钥 (TIK)。 Office 365 将 TIK 加密两次, 每个客户密钥一次, 并存储 TIK 的两个加密版本。 仅存储 TIK 的加密版本, 并且 TIK 只能使用客户密钥进行解密。 然后, 使用 TIK 对网站密钥进行加密, 然后使用这些密钥对 blob 密钥进行加密。 Blob 本身被加密并存储在 Microsoft Azure Blob 存储服务中。
   
 Office 365 遵循此过程来访问包含客户文件数据的 blob:
   
@@ -191,9 +191,9 @@ Office 365 遵循此过程来访问包含客户文件数据的 blob:
   
 如果客户失去对其客户密钥的访问权限, Office 365 还会使用可用性密钥对 TIK 进行加密, 并将其与使用每个客户密钥加密的 TIKs 存储在一起。 使用 availability 密钥加密的 TIK 仅当客户在失去对其密钥的访问权限 (恶意或意外) 时, 才将 Microsoft 用于登记恢复路径。
   
-出于可用性和扩展原因, 解密的 TIKs 缓存在一个时间有限的内存缓存中。 在 TIK 缓存设置为过期之前的两个小时, Office 365 将尝试对每个 TIK 进行解密。 对 TIKs 进行解密会延长缓存的生存期。 如果 TIK 解密在很长一段时间后失败, Office 365 将生成一个警报, 以在缓存过期之前通知工程。 仅当客户呼叫 microsoft 时, Office 365 才会启动恢复操作, 这涉及使用存储在 Microsoft 机密存储中的可用性密钥对 TIK 进行解密, 并使用解密的 TIK 再次载入租户, 并使用一组新的客户提供的 Azure Key Vault 密钥。
+出于可用性和扩展原因, 解密的 TIKs 缓存在一个时间有限的内存缓存中。 在 TIK 缓存设置为过期之前的两个小时, Office 365 将尝试对每个 TIK 进行解密。 对 TIKs 进行解密会延长缓存的生存期。 如果 TIK 解密在很长一段时间后失败, Office 365 将生成一个警报, 以在缓存过期之前通知工程。 仅当客户呼叫 Microsoft 时, Office 365 才会启动恢复操作, 这涉及使用存储在 Microsoft 机密存储中的可用性密钥对 TIK 进行解密, 并使用解密的 TIK 再次载入租户, 并使用一组新的客户提供的 Azure Key Vault 密钥。
   
-到目前为止, 客户密钥包含在 Azure blob 存储中存储的 sharepoint online 文件数据的加密和解密链中, 但不包含在 SQL 数据库中存储的 sharepoint online 列表项或元数据中。 除了客户启动的情况之外, Office 365 不使用 SharePoint Online 或 OneDrive for business 的可用性密钥 (而不是上面介绍的事例)。 对客户数据的人对客户数据的访问受客户密码箱保护。
+到目前为止, 客户密钥包含在 Azure blob 存储中存储的 SharePoint Online 文件数据的加密和解密链中, 但不包含在 SQL 数据库中存储的 SharePoint online 列表项或元数据中。 除了客户启动的情况之外, Office 365 不使用 SharePoint Online 或 OneDrive for Business 的可用性密钥 (而不是上面介绍的事例)。 对客户数据的人对客户数据的访问受客户密码箱保护。
   
 ## <a name="how-is-customer-key-licensed"></a>如何许可客户密钥？
 <a name="DiffCustomerKeyandBYOKAzureIP"> </a>
@@ -220,9 +220,9 @@ Office 365 遵循此过程来访问包含客户文件数据的 blob:
 ## <a name="how-much-will-using-customer-key-cost"></a>使用客户密钥的成本有多大？
 <a name="DiffCustomerKeyandBYOKAzureIP"> </a>
 
-除了客户密钥所需的许可, 客户将对密钥存储使用承担成本。 [Azure Key Vault 定价详细信息](https://azure.microsoft.com/en-us/pricing/details/key-vault/)介绍了成本模型, 并将协助估计。 由于使用模式不同, 因此无法预测任何客户将产生的确切成本。 经验表明, 成本非常低, 并且通常在每个用户每月 $0.002 到 $0.005 的范围内, 再加上受 HSM 支持的密钥的成本。 根据客户选择的日志记录配置和用于 azure Key Vault 日志的 azure 存储量, 该成本也会有所不同。 
+除了客户密钥所需的许可, 客户将对密钥存储使用承担成本。 [Azure Key Vault 定价详细信息](https://azure.microsoft.com/en-us/pricing/details/key-vault/)介绍了成本模型, 并将协助估计。 由于使用模式不同, 因此无法预测任何客户将产生的确切成本。 经验表明, 成本非常低, 并且通常在每个用户每月 $0.002 到 $0.005 的范围内, 再加上受 HSM 支持的密钥的成本。 根据客户选择的日志记录配置和用于 Azure Key Vault 日志的 Azure 存储量, 该成本也会有所不同。 
   
-## <a name="for-more-information"></a>有关详细信息
+## <a name="for-more-information"></a>详细信息
 <a name="DiffCustomerKeyandBYOKAzureIP"> </a>
 
 若要开始使用客户密钥, 请参阅[使用客户密钥控制 Office 365 中的数据](controlling-your-data-using-customer-key.md)。

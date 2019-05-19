@@ -3,7 +3,7 @@ title: 关闭 web 上的 Outlook 中的垃圾邮件报告
 ms.author: tracyp
 author: MSFTTracyP
 manager: laurawi
-ms.audience: ITPro
+audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
@@ -11,16 +11,16 @@ ms.assetid: 8d57fe9e-57b8-4884-9317-80b380804b4a
 ms.collection:
 - M365-security-compliance
 description: 作为 Office 365 管理员, 您可以关闭用户将电子邮件报告为垃圾邮件的功能。
-ms.openlocfilehash: f3e8a8cf837e7923d3c7241852ab2acd375492b8
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: a33e43444225cd3c23bc5d40cbf8581d19df2489
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32264164"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34156284"
 ---
 # <a name="turn-off-junk-email-reporting-in-outlook-on-the-web"></a>关闭 web 上的 Outlook 中的垃圾邮件报告
 
-您可以使用 web 上的 outlook (以前称为 "outlook web App") 垃圾邮件报告选项, 将垃圾邮件、网络钓鱼邮件和非垃圾邮件发送给 Microsoft 进行分析, 如在[outlook 网页版中报告垃圾电子邮件和网络钓鱼诈骗](report-junk-email-and-phishing-scams-in-outlook-on-the-web-eop.md)中所述。 如果不想使用这些选项, 管理员可以通过[set-owamailboxpolicy](http://technet.microsoft.com/library/530166f7-ab42-4609-ba73-9b5a39b567be.aspx) cmdlet 将其关闭。 
+您可以使用 web 上的 Outlook (以前称为 "Outlook Web App") 垃圾邮件报告选项, 将垃圾邮件、网络钓鱼邮件和非垃圾邮件发送给 Microsoft 进行分析, 如在[outlook 网页版中报告垃圾电子邮件和网络钓鱼诈骗](report-junk-email-and-phishing-scams-in-outlook-on-the-web-eop.md)中所述。 如果不想使用这些选项, 管理员可以通过[set-owamailboxpolicy](http://technet.microsoft.com/library/530166f7-ab42-4609-ba73-9b5a39b567be.aspx) cmdlet 将其关闭。 
   
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>开始前，有必要了解什么？
 <a name="sectionSection0"> </a>

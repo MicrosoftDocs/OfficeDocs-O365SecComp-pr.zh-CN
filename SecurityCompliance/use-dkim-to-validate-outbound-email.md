@@ -3,7 +3,7 @@ title: 在 Office 365 中使用自定义域中的电子邮件 DKIM
 ms.author: tracyp
 author: MSFTTracyP
 manager: laurawi
-ms.audience: ITPro
+audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
@@ -13,12 +13,12 @@ ms.assetid: 56fee1c7-dc37-470e-9b09-33fff6d94617
 ms.collection:
 - M365-security-compliance
 description: 摘要： 本文介绍了如何结合使用域密钥识别邮件 (DKIM) 和 Office 365，从而确保目标电子邮件系统信任从自定义域发送的邮件。
-ms.openlocfilehash: fc2a509aacdaac0aeef22696d85512f91957502f
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: 35df7cdd1a95311dac612aa486670e03f6f23d07
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32263736"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34158004"
 ---
 # <a name="use-dkim-to-validate-outbound-email-sent-from-your-custom-domain-in-office-365"></a>使用 DKIM 在 Office 365 中验证从自定义域发送的出站电子邮件
 
@@ -81,7 +81,7 @@ Office 365 自动为初始域设置 DKIM。 初始域是指 Office 365 在你注
 ### <a name="publish-two-cname-records-for-your-custom-domain-in-dns"></a>在 DNS 中发布自定义域的两条 CNAME 记录
 <a name="Publish2CNAME"> </a>
 
-对于您要为其在 DNS 中添加 DKIM 签名的每个域，您需要发布两条 CNAME 记录。 DNS 使用 CNAME 记录指定域的 规范名称是否是其他域名的别名。 应在公开提供的 DNS 服务器上为自定义的域创建 CNAME 记录。 dns 中的 CNAME 记录将指向已在 Microsoft dns 服务器上的 Office 365 的 dns 中创建的记录。
+对于您要为其在 DNS 中添加 DKIM 签名的每个域，您需要发布两条 CNAME 记录。 DNS 使用 CNAME 记录指定域的 规范名称是否是其他域名的别名。 应在公开提供的 DNS 服务器上为自定义的域创建 CNAME 记录。 DNS 中的 CNAME 记录将指向已在 Microsoft DNS 服务器上的 Office 365 的 DNS 中创建的记录。
   
  Office 365 使用你创建的两条记录执行自动密钥轮替。如果在 Office 365 中除了初始域外你还预配了自定义域，必须为额外配置的每个域发布两条 CNAME 记录。因此，如果有两个域，就必须发布两条额外的 CNAME 记录，依此类推。
   

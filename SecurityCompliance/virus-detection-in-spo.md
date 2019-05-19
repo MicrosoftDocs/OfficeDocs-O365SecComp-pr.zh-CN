@@ -4,7 +4,7 @@ ms.author: tracyp
 author: MSFTTracyP
 manager: laurawi
 ms.date: 01/14/2019
-ms.audience: Admin
+audience: Admin
 ms.topic: reference
 ms.service: O365-seccomp
 localization_priority: Normal
@@ -16,12 +16,12 @@ ms.assetid: e3c6df61-8513-499d-ad8e-8a91770bff63
 ms.collection:
 - M365-security-compliance
 description: 通过检测用户上传到 SharePoint Online 的文件中的病毒, Office 365 可帮助保护您的环境免受恶意软件的攻击。 上载文件后, 将对其进行病毒扫描。 如果发现文件感染了病毒, 则会设置一个属性, 以便用户无法下载或同步该文件。
-ms.openlocfilehash: d4f18c84935d9c6e1d3f135bbda6c40737956ae7
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: 463c2d21c92e5b71602cfe5158dbf6c82e8e7385
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32266818"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34157784"
 ---
 # <a name="virus-detection-in-sharepoint-online"></a>SharePoint Online 中的病毒检测
 
@@ -53,10 +53,10 @@ Office 365 使用通用的病毒检测引擎。 引擎在 SharePoint Online 中�
 2. 向用户提供一条警告, 指示已检测到病毒。 向用户提供下载文件的选项, 并尝试使用自己的病毒软件对其进行清理。
 
 > [!NOTE]
-> 您可以将 set-spotenant cmdlet 与**DisallowInfectedFileDownload**参数一起使用, 以禁止用户下载检测到的文件, 即使在 "反病毒警告" 窗口中也是如此。 请参阅 [DisallowInfectedFileDownload]https://docs.microsoft.com/powershell/module/sharepoint-online/Set-SPOTenant)(。
+> 您可以将 Set-spotenant cmdlet 与**DisallowInfectedFileDownload**参数一起使用, 以禁止用户下载检测到的文件, 即使在 "反病毒警告" 窗口中也是如此。 请参阅 [DisallowInfectedFileDownload]https://docs.microsoft.com/powershell/module/sharepoint-online/Set-SPOTenant)(。
     
 ## <a name="what-happens-when-the-onedrive-sync-client-tries-to-sync-an-infected-file"></a>OneDrive 同步客户端尝试同步受感染的文件时, 会发生什么情况？
 
-无论用户是使用新 OneDrive 同步客户端 (OneDrive .exe) 还是以前的 onedrive for business 同步客户端 (Groove) 同步文件, 同步客户端也不会下载该病毒。 同步客户端将显示一条通知, 指出文件无法同步。
+无论用户是使用新 OneDrive 同步客户端 (OneDrive .exe) 还是以前的 OneDrive for Business 同步客户端 (Groove) 同步文件, 同步客户端也不会下载该病毒。 同步客户端将显示一条通知, 指出文件无法同步。
   
 

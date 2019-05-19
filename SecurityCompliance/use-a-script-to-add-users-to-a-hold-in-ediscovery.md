@@ -4,7 +4,7 @@ ms.author: markjjo
 author: markjjo
 manager: laurawi
 ms.date: 1/23/2017
-ms.audience: Admin
+audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
@@ -14,18 +14,18 @@ search.appverid:
 - MBS150
 ms.assetid: bad352ff-d5d2-45d8-ac2a-6cb832f10e73
 description: 运行脚本以将邮箱和 OneDrive for business 网站快速添加到与安全 & 合规中心中的电子数据展示事例关联的新保留中。
-ms.openlocfilehash: 992fddad3bfbc9f08855bd85d87b0edf92b3cdbe
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: c680e584a6f729b3d6d0d74b84ddd0e03da6dc9a
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32263974"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34156224"
 ---
 # <a name="use-a-script-to-add-users-to-a-hold-in-an-ediscovery-case-in-the-security--compliance-center"></a>使用脚本将用户添加到安全 & 合规性中心的电子数据展示事例中的保留项
 
-Security & 合规性中心提供了大量 Windows PowerShell cmdlet, 可让您自动执行与创建和管理电子数据展示事例相关的耗时任务。 目前, 使用安全 & 合规中心中的电子数据展示区分大小写工具将大量的保管人内容位置置于保留状态需要花费时间和准备。 例如, 在创建保留之前, 您必须收集要置于保留状态的每个 OneDrive for business 网站的 URL。 然后, 对于要置于保留状态的每个用户, 都必须将其邮箱及其 OneDrive for business 网站添加到保留中。 在未来版本的 Security & 合规性中心中, 这将变得更加容易。 在此之前, 可以使用本文中的脚本自动执行此过程。
+Security & 合规性中心提供了大量 Windows PowerShell cmdlet, 可让您自动执行与创建和管理电子数据展示事例相关的耗时任务。 目前, 使用安全 & 合规中心中的电子数据展示区分大小写工具将大量的保管人内容位置置于保留状态需要花费时间和准备。 例如, 在创建保留之前, 您必须收集要置于保留状态的每个 OneDrive for business 网站的 URL。 然后, 对于要置于保留状态的每个用户, 都必须将其邮箱及其 OneDrive for Business 网站添加到保留中。 在未来版本的 Security & 合规性中心中, 这将变得更加容易。 在此之前, 可以使用本文中的脚本自动执行此过程。
   
-该脚本会提示您组织的 "我的用户" 域的名称 (例如**** , URL https://contoso-my.sharepoint.com)中的 contoso、现有电子数据展示事例的名称、与该事例关联的新保留的名称、所需用户的电子邮件地址的列表)将置于保留状态, 如果要创建基于查询的保留, 则使用搜索查询。 然后, 该脚本获取列表中每个用户的 OneDrive for business 网站的 URL, 创建新保留, 然后将列表中每个用户的邮箱和 OneDrive for business 网站添加到保留。 该脚本还会生成包含有关新保留的信息的日志文件。 
+该脚本会提示您组织的 "我的用户" 域的名称 (例如**** , URL https://contoso-my.sharepoint.com)中的 Contoso、现有电子数据展示事例的名称、与该事例关联的新保留的名称、所需用户的电子邮件地址的列表)将置于保留状态, 如果要创建基于查询的保留, 则使用搜索查询。 然后, 该脚本获取列表中每个用户的 OneDrive for business 网站的 URL, 创建新保留, 然后将列表中每个用户的邮箱和 OneDrive for Business 网站添加到保留。 该脚本还会生成包含有关新保留的信息的日志文件。 
   
 下面介绍了实现这一点的步骤:
   
@@ -35,9 +35,9 @@ Security & 合规性中心提供了大量 Windows PowerShell cmdlet, 可让您�
   
 [步骤 3: 运行脚本以创建保留项并添加用户](use-a-script-to-add-users-to-a-hold-in-ediscovery.md#step3)
   
-## <a name="before-you-begin"></a>准备工作
+## <a name="before-you-begin"></a>开始之前
 
-- 您必须是 Security & 合规性中心中的电子数据展示管理器角色组的成员, SharePoint Online 全局管理员才能在步骤3中运行该脚本。 有关详细信息, 请参阅[在 Office 365 安全 & 合规中心中分配电子数据展示权限](assign-ediscovery-permissions.md)。
+- 您必须是 Security & 合规性中心中的电子数据展示管理器角色组的成员, SharePoint Online 全局管理员才能在步骤3中运行该脚本。 有关详细信息, 请参阅[在 Office 365 安全 _AMP_ 合规中心中分配电子数据展示权限](assign-ediscovery-permissions.md)。
     
 - 最多可以将1000个邮箱和100网站添加到与 Security & 合规性中心中的电子数据展示事例相关联的保留中。 假定您要置于保留状态的每个用户都有 OneDrive for business 网站, 则可以使用本文中的脚本将最多100个用户添加到保留中。 
     
@@ -45,20 +45,20 @@ Security & 合规性中心提供了大量 Windows PowerShell cmdlet, 可让您�
     
 - 该脚本将用户列表添加到与现有事例相关联的新保留中。 在运行脚本之前, 请确保已创建要与保留关联的事例。
     
-- 该脚本包括最少的错误处理。 其主要目的是快速轻松地将每个用户的邮箱和 OneDrive for business 网站置于保留状态。
+- 该脚本包括最少的错误处理。 其主要目的是快速轻松地将每个用户的邮箱和 OneDrive for Business 网站置于保留状态。
     
 - 本主题中的示例脚本不受任何 Microsoft 标准支持计划或服务支持。示例脚本按原样提供，不提供任何种类的担保。Microsoft 进一步声明，不提供任何默示担保，包括但不限于适销性或特定用途适用性的默示担保。使用或运行示例脚本和文档所产生的任何风险均由你自己承担。对于因使用或无法使用示例脚本或文档而产生的任何损失（包括但不限于商业利润损失、业务中断、业务信息丢失或其他金钱损失），Microsoft、脚本作者或参与创建、生成或交付脚本的任何人都不承担任何责任，即使 Microsoft 已被告知存在这种损失的可能性，也不例外。
 
 ## <a name="step-1-install-the-sharepoint-online-management-shell"></a>步骤 1：安装 SharePoint Online 命令行管理程序
 
-第一步是安装 SharePoint Online 命令行管理程序 (如果它尚未安装在本地计算机上)。 您不必在此过程中使用命令行管理程序, 但必须安装它, 因为它包含您在步骤3中运行的脚本所需的必备组件。 这些先决条件允许脚本与 SharePoint Online 通信, 以获取 OneDrive for business 网站的 url。
+第一步是安装 SharePoint Online 命令行管理程序 (如果它尚未安装在本地计算机上)。 您不必在此过程中使用命令行管理程序, 但必须安装它, 因为它包含您在步骤3中运行的脚本所需的必备组件。 这些先决条件允许脚本与 SharePoint Online 通信, 以获取 OneDrive for business 网站的 Url。
   
-转到[设置 sharepoint online 命令行管理程序 Windows PowerShell 环境](https://go.microsoft.com/fwlink/p/?LinkID=286318), 并执行步骤1和步骤 2, 在本地计算机上安装 sharepoint online 命令行管理程序。 
+转到[设置 Sharepoint Online 命令行管理程序 Windows PowerShell 环境](https://go.microsoft.com/fwlink/p/?LinkID=286318), 并执行步骤1和步骤 2, 在本地计算机上安装 Sharepoint Online 命令行管理程序。 
 
 ## <a name="step-2-generate-a-list-of-users"></a>步骤 2: 生成用户列表
 <a name="step2"> </a>
 
-步骤3中的脚本将创建与电子数据展示事例相关联的保留, 并将用户列表中的邮箱和 OneDrive for business 网站添加到保留。 您可以只在文本文件中键入电子邮件地址, 也可以在 Windows PowerShell 中运行命令, 以获取电子邮件地址列表, 并将其保存到文件中 (位于步骤3中将脚本保存到的同一文件夹中)。
+步骤3中的脚本将创建与电子数据展示事例相关联的保留, 并将用户列表中的邮箱和 OneDrive for Business 网站添加到保留。 您可以只在文本文件中键入电子邮件地址, 也可以在 Windows PowerShell 中运行命令, 以获取电子邮件地址列表, 并将其保存到文件中 (位于步骤3中将脚本保存到的同一文件夹中)。
   
 下面是一个 PowerShell 命令 (通过使用连接到 Exchange Online 组织的远程 PowerShell 运行) 来获取组织中所有用户的电子邮件地址列表, 并将其保存到名为 HoldUsers 的文本文件中。
   
@@ -75,7 +75,7 @@ Get-Mailbox -ResultSize unlimited -Filter { RecipientTypeDetails -eq 'UserMailbo
 
 在此步骤中运行脚本时, 它将提示您提供以下信息。 在运行脚本之前, 请务必准备好此信息。
   
-- **你的用户凭据**-脚本将使用你的凭据通过远程 PowerShell 连接到安全 & 合规性中心。 此外, 它还将使用这些凭据访问 SharePoint Online, 以获取用户列表的 OneDrive for business url。
+- **你的用户凭据**-脚本将使用你的凭据通过远程 PowerShell 连接到安全 _AMP_ 合规性中心。 此外, 它还将使用这些凭据访问 SharePoint Online, 以获取用户列表的 OneDrive for business Url。
     
 - **您的 "我的网站" 域的名称**-"我的网站" 域是包含组织中所有 OneDrive for business 网站的域。 例如, 如果您的 "我的用户" 域**https://contoso-my.sharepoint.com**的 URL 为, 那么`contoso`当脚本提示您输入您的 "我的用户" 域的名称时, 您就会输入该 URL。 
     
@@ -284,14 +284,14 @@ Get-Mailbox -ResultSize unlimited -Filter { RecipientTypeDetails -eq 'UserMailbo
 
 4. 输入脚本提示您输入的信息。
     
-    该脚本将连接到安全 & 合规中心 PowerShell, 然后在电子数据展示事例中创建新的保留, 并为列表中的用户添加邮箱和 OneDrive for business。 您可以转到 Security & 合规性中心中的**电子数据展示**页面上的事例, 以查看新的保留。 
+    该脚本将连接到安全 & 合规中心 PowerShell, 然后在电子数据展示事例中创建新的保留, 并为列表中的用户添加邮箱和 OneDrive for Business。 您可以转到 Security & 合规性中心中的**电子数据展示**页面上的事例, 以查看新的保留。 
     
 脚本运行完毕后, 它会创建以下日志文件, 并将其保存到脚本所在的文件夹中。
   
 - **LocationsOnHold** -包含脚本成功置于保留状态的邮箱和 OneDrive for business 网站的列表。
     
-- **LocationsNotOnHold** -包含该脚本未置于保留状态的邮箱和 OneDrive for business 网站的列表。 如果用户具有邮箱, 而不是 onedrive for business 网站, 则该用户将包含在未置于保留状态的 OneDrive for business 网站列表中。
+- **LocationsNotOnHold** -包含该脚本未置于保留状态的邮箱和 OneDrive for business 网站的列表。 如果用户具有邮箱, 而不是 OneDrive for business 网站, 则该用户将包含在未置于保留状态的 OneDrive for business 网站列表中。
     
-- **GetCaseHoldPolicy** -包含新保留的**CaseHoldPolicy** cmdlet 的输出, 在创建新保留后, 脚本将运行该 cmdlet。 此 cmdlet 返回的信息包括其邮箱和 OneDrive for business 网站置于保留状态以及是否启用或禁用保留的用户列表。 
+- **GetCaseHoldPolicy** -包含新保留的**CaseHoldPolicy** cmdlet 的输出, 在创建新保留后, 脚本将运行该 cmdlet。 此 cmdlet 返回的信息包括其邮箱和 OneDrive for Business 网站置于保留状态以及是否启用或禁用保留的用户列表。 
     
 - **GetCaseHoldRule** -包含新保留的**new-caseholdrule** cmdlet 的输出, 在创建新保留后, 脚本将运行该 cmdlet。 如果您使用脚本创建基于查询的保留, 则此 cmdlet 返回的信息包括搜索查询。 

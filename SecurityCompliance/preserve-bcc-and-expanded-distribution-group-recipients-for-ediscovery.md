@@ -4,35 +4,35 @@ ms.author: markjjo
 author: markjjo
 manager: laurawi
 ms.date: 6/19/2017
-ms.audience: ITPro
+audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: eb8ddf15-0080-457e-9d83-e73e193da334
 description: 就地保留、诉讼保留和 Office 365 保留策略使您能够保留邮箱内容, 以满足法规遵从性和电子数据展示要求。
-ms.openlocfilehash: fcf5567bc50f25ce51d8d569d772559a376703d0
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: 85e291b5fb4e12ad077c98d805ac232b17e6e647
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32261680"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34157404"
 ---
 # <a name="preserve-bcc-and-expanded-distribution-group-recipients-for-ediscovery"></a>为电子数据展示保存密件抄送和展开的通讯组收件人
   
-就地保留、诉讼保留和[Office 365 保留策略](http://go.microsoft.com/fwlink/?LinkID=827811)(在安全 & 合规中心中创建) 使您能够保留邮箱内容, 以满足法规遵从性和电子数据展示要求。 默认情况下，所有邮件中均包含直接在邮件"收件人"和"抄送"字段中输入的收件人信息，但您的组织可能需要能够搜索和重现邮件收件人的详细信息。 具体包括： 
+就地保留、诉讼保留和[Office 365 保留策略](http://go.microsoft.com/fwlink/?LinkID=827811)(在安全 _AMP_ 合规中心中创建) 使您能够保留邮箱内容, 以满足法规遵从性和电子数据展示要求。 默认情况下，所有邮件中均包含直接在邮件"收件人"和"抄送"字段中输入的收件人信息，但您的组织可能需要能够搜索和重现邮件收件人的详细信息。 具体包括： 
   
 - **使用邮件密件抄送字段输入地址的收件人：** 密件抄送收件人存储在发件人邮箱的邮件中，但不包含于发送给收件人的邮件标头中。 
     
 - **展开的通讯组收件人：** 接收此邮件的收件人，因为他们是以"收件人"、"抄送"或"密件抄送"字段在邮件中输入地址的通讯组成员。 
     
-exchange Online 和 exchange Server 2013 (累积更新7及更高版本) 保留密件抄送和展开的通讯组收件人的信息。 您可以使用 Exchange 管理中心 (EAC) 中的就地电子数据展示搜索或安全 & 合规性中心中的内容搜索来搜索此信息。 
+Exchange Online 和 Exchange Server 2013 (累积更新7及更高版本) 保留密件抄送和展开的通讯组收件人的信息。 您可以使用 Exchange 管理中心 (EAC) 中的就地电子数据展示搜索或安全 & 合规性中心中的内容搜索来搜索此信息。 
   
 ## <a name="how-bcc-recipients-and-expanded-distribution-group-recipients-are-preserved"></a>如何保留密件抄送收件人和展开的通讯组收件人
 <a name="sectionSection0"> </a>
 
 如前所述，密件收件人的信息与邮件存储在发件人邮箱中。 此信息已编制索引, 并可用于电子数据展示搜索和保留。 
   
-将邮箱放置在就地保留或诉讼保留后，保存展开的通讯组收件人相关信息和邮件。 在 office 365 中, 当将 Office 365 保留策略应用于邮箱时, 也会存储此信息。 在发送消息时，确定通讯组成员身份。 发送邮件后，更改组成员不影响与邮件一起存储的展开的收件人列表。 
+将邮箱放置在就地保留或诉讼保留后，保存展开的通讯组收件人相关信息和邮件。 在 Office 365 中, 当将 Office 365 保留策略应用于邮箱时, 也会存储此信息。 在发送消息时，确定通讯组成员身份。 发送邮件后，更改组成员不影响与邮件一起存储的展开的收件人列表。 
   
 |**有关信息…**|**存储在...**|**默认情况下存储？**|**可访问…**|
 |:-----|:-----|:-----|:-----|

@@ -3,7 +3,7 @@ title: 安全 & 合规中心中的电子数据展示案例
 ms.author: markjjo
 author: markjjo
 manager: laurawi
-ms.audience: Admin
+audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
@@ -15,16 +15,16 @@ search.appverid:
 - MET150
 ms.assetid: 8dd335ab-29d0-41c3-8dd8-9f7c7481e60c
 description: 使用安全 & 合规性中心在您的组织中创建和管理电子数据展示事例。 您可以向事例分配成员、将内容位置置于保留状态、运行与事例关联的内容搜索以及导出搜索结果。 您还可以准备事例数据, 以便在高级电子数据展示中进行进一步分析。
-ms.openlocfilehash: 5f31153e70495dc28ee276c36e9edfc67638956e
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: f0487a7657b1d6cc4374bfc7308092285aebc979
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32257870"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34155014"
 ---
 # <a name="ediscovery-cases-in-the-security--compliance-center"></a>安全 & 合规中心中的电子数据展示案例
 
-您可以使用 Office 365 和 Microsoft 365 中的合规性中心中的电子数据展示案例来控制哪些用户可以在组织中创建、访问和管理电子数据展示事例。 如果您的组织具有 office 365 E5 订阅, 您还可以使用电子数据展示事例来分析搜索结果, 方法是使用 Office 365 高级电子数据展示。
+您可以使用 Office 365 和 Microsoft 365 中的合规性中心中的电子数据展示案例来控制哪些用户可以在组织中创建、访问和管理电子数据展示事例。 如果您的组织具有 Office 365 E5 订阅, 您还可以使用电子数据展示事例来分析搜索结果, 方法是使用 Office 365 高级电子数据展示。
   
 电子数据展示事例允许向事例中添加成员、控制特定事例成员可以执行的操作类型，将与案件相关的内容位置置于保留状态，以及将多个内容搜索与一个事例关联。 您还可以导出与事例关联的任何内容搜索的结果, 或在高级电子数据展示中准备搜索结果以进行分析。 电子数据展示事例是一种可用来限制哪些人有权访问内容搜索和你组织中特定法律案件搜索结果的好方法。
   
@@ -268,7 +268,7 @@ ms.locfileid: "32257870"
     
     ![位置、保留位置](media/d56398aa-0b20-4500-8e26-494eab92a99f.png)
   
-    - **所有位置**-选择此选项可搜索组织中的所有内容位置。 选择此选项时, 可以选择搜索所有 Exchange 邮箱 (包括所有 office 365 组和 Microsoft 团队的邮箱)、所有 SharePoint 和 OneDrive for business 网站 (包括所有 office 365 组和 microsoft 的网站)团队) 和所有公用文件夹。
+    - **所有位置**-选择此选项可搜索组织中的所有内容位置。 选择此选项时, 可以选择搜索所有 Exchange 邮箱 (包括所有 Office 365 组和 Microsoft 团队的邮箱)、所有 SharePoint 和 OneDrive for Business 网站 (包括所有 Office 365 组和 Microsoft 的网站)团队) 和所有公用文件夹。
     
     - **保留所有位置**-选择此选项可搜索事例中已放置的所有内容位置。 如果事例包含多个保留, 则选择此选项时, 将搜索所有保留中的内容位置。 此外, 如果内容位置放置在基于查询的保留中, 则在此步骤中运行所创建的内容搜索时, 将仅搜索保留项。 例如, 如果用户在基于查询的案例保留中进行设置, 以保留在特定日期之前已发送或创建的项目, 则只会使用内容搜索的搜索条件搜索这些项目。 这是通过使用**and**运算符连接事例保留查询和内容搜索查询来实现的。 有关搜索事例内容的更多详细信息, 请参阅本文末尾的 "[详细信息](#more-information)" 部分。 
     
@@ -383,7 +383,7 @@ ms.locfileid: "32257870"
     
 - 要导出的所有搜索的搜索查询中的最大关键字数为500。 (这与单个内容搜索的限制相同)。 这是因为导出作业通过使用**OR**运算符组合了所有搜索查询。 如果超过此限制, 将返回错误。 在这种情况下, 您必须从较少的搜索中导出结果或简化要导出的搜索的搜索查询。 
     
-- 导出的搜索结果按在中找到该项目的内容源进行组织。 这意味着导出结果中的内容源可能会有不同的搜索返回的项目。 例如, 如果您选择在一个 pst 文件中为每个邮箱导出电子邮件, 则 PST 文件可能会有来自多个搜索的结果。
+- 导出的搜索结果按在中找到该项目的内容源进行组织。 这意味着导出结果中的内容源可能会有不同的搜索返回的项目。 例如, 如果您选择在一个 PST 文件中为每个邮箱导出电子邮件, 则 PST 文件可能会有来自多个搜索的结果。
     
 - 如果您导出的多个搜索返回相同内容位置中的同一电子邮件项目或文档, 将只导出该项目的一个副本。
     
@@ -455,7 +455,7 @@ ms.locfileid: "32257870"
     有关如何处理容器的信息, 请参阅[在 Office 365 高级电子数据展示中运行 process module 和 load data](run-the-process-module-and-load-data-in-advanced-ediscovery.md)。
     
 > [!TIP]
-> 单击 "**切换到电子数据展示**", 返回到安全 & 合规性中心中的同一事例。 
+> 单击 "**切换到电子数据展示**", 返回到安全 _AMP_ 合规性中心中的同一事例。 
   
 ## <a name="optional-step-9-close-a-case"></a>Optional步骤 9: 关闭事例
 
@@ -515,7 +515,7 @@ ms.locfileid: "32257870"
     
     在此过程完成后, 将在**电子数据展示**页面上将该案例的状态更改为 "**活动**"。 
   
-## <a name="more-information"></a>详细信息
+## <a name="more-information"></a>更多信息
 
 - **对于与电子数据展示事例相关联的电子数据展示案例或保留是否有任何限制？** 下表列出了电子数据展示事例和事例保留的限制。
     
@@ -572,9 +572,9 @@ ms.locfileid: "32257870"
     > [!NOTE]
     > 若要运行**remove-unifiedgroup** cmdlet, 您必须在 Exchange Online 中分配 "仅查看收件人" 角色, 或者是分配了 "仅查看收件人" 角色的角色组的成员。 
   
-  - 在搜索用户的邮箱时, 不会搜索用户是其成员的任何 Office 365 组或 Microsoft 团队。 同样, 当您放置 Office 365 组或 Microsoft 团队保留时, 只有组邮箱和组网站处于保留状态。除非将组成员的邮箱和 OneDrive for business 网站显式添加到保留, 否则不会将其置于保留状态。 因此, 如果出于法律原因需要将 Office 365 组或 Microsoft 团队置于保留状态, 请考虑在同一保留中添加组成员和工作组成员的邮箱和 OneDrive for business 网站。
+  - 在搜索用户的邮箱时, 不会搜索用户是其成员的任何 Office 365 组或 Microsoft 团队。 同样, 当您放置 Office 365 组或 Microsoft 团队保留时, 只有组邮箱和组网站处于保留状态。除非将组成员的邮箱和 OneDrive for Business 网站显式添加到保留, 否则不会将其置于保留状态。 因此, 如果出于法律原因需要将 Office 365 组或 Microsoft 团队置于保留状态, 请考虑在同一保留中添加组成员和工作组成员的邮箱和 OneDrive for business 网站。
     
-  - 若要获取 Office 365 组或 microsoft 团队的成员列表, 可以在 Microsoft 365 管理中心的 "**家庭\>工作组**" 页上查看属性。 或者, 您可以在 Exchange Online PowerShell 中运行以下命令: 
+  - 若要获取 Office 365 组或 Microsoft 团队的成员列表, 可以在 Microsoft 365 管理中心的 "**家庭\>工作组**" 页上查看属性。 或者, 您可以在 Exchange Online PowerShell 中运行以下命令: 
     
       ```
       Get-UnifiedGroupLinks <group or team name> -LinkType Members | FL DisplayName,PrimarySmtpAddress 
@@ -583,9 +583,9 @@ ms.locfileid: "32257870"
     > [!NOTE]
     > 若要运行**UnifiedGroupLinks** cmdlet, 您必须在 Exchange Online 中分配 "仅查看收件人" 角色, 或者是分配了 "仅查看收件人" 角色的角色组的成员。 
   
-  - 属于 microsoft 团队渠道的对话存储在与 microsoft 团队相关联的邮箱中。 同样, 在频道中共享的工作组成员的文件存储在团队的 SharePoint 网站上。 因此, 您必须将 Microsoft 团队邮箱和 SharePoint 网站置于保留状态, 以在频道中保留对话和文件。
+  - 属于 Microsoft 团队渠道的对话存储在与 Microsoft 团队相关联的邮箱中。 同样, 在频道中共享的工作组成员的文件存储在团队的 SharePoint 网站上。 因此, 您必须将 Microsoft 团队邮箱和 SharePoint 网站置于保留状态, 以在频道中保留对话和文件。
     
-    或者, 在 Microsoft 团队中作为聊天列表一部分的对话存储在用户参与聊天的用户的邮箱中。 以及用户在聊天对话中共享的文件存储在共享该文件的用户的 OneDrive for business 网站中。 因此, 您必须将单独的用户邮箱和 OneDrive for business 网站置于保留状态, 以便在聊天列表中保留对话和文件。 这就是为什么除了将工作组邮箱 (和网站) 置于保留状态的情况下, 最好将保留在 Microsoft 团队成员的邮箱上保留。
+    或者, 在 Microsoft 团队中作为聊天列表一部分的对话存储在用户参与聊天的用户的邮箱中。 以及用户在聊天对话中共享的文件存储在共享该文件的用户的 OneDrive for Business 网站中。 因此, 您必须将单独的用户邮箱和 OneDrive for Business 网站置于保留状态, 以便在聊天列表中保留对话和文件。 这就是为什么除了将工作组邮箱 (和网站) 置于保留状态的情况下, 最好将保留在 Microsoft 团队成员的邮箱上保留。
     
     > [!IMPORTANT]
     > 在 Microsoft 团队中加入聊天列表的用户必须具有 Exchange Online (基于云的) 邮箱, 以便在将邮箱放在电子数据展示保留时保持聊天对话。 这是因为聊天列表中的对话存储在聊天参与者的基于云的邮箱中。 如果聊天参与者没有 Exchange Online 邮箱, 将无法保留聊天对话。 例如, 在 Exchange 混合部署中, 具有本地邮箱的用户可能能够参与属于 Microsoft 团队中的聊天列表的对话。 但是在这种情况下, 无法保留这些对话中的内容, 因为用户不具有基于云的邮箱。 
@@ -593,6 +593,6 @@ ms.locfileid: "32257870"
   - 每个 Microsoft 团队或团队频道都包含用于笔记记录和协作的 Wiki。 Wiki 内容将自动保存到格式为 .mht 的文件中。 此文件存储在团队的 SharePoint 网站上的 "团队 Wiki 数据" 文档库中。 您可以通过将团队的 SharePoint 网站置于保留状态, 使 Wiki 中的内容处于保留状态。
     
     > [!NOTE]
-    > 为 Microsoft 团队或团队频道保留 Wiki 内容的功能 (在将团队的 SharePoint 网站置于保留状态时) 发布在2017年6月22日。 如果工作组网站处于保留状态, 则会在该日期开始保留 Wiki 内容。 但是, 如果工作组网站处于保留状态, 并且在6月22日之前删除了 wiki 内容, 则不会保留 wiki 内容。 
+    > 为 Microsoft 团队或团队频道保留 Wiki 内容的功能 (在将团队的 SharePoint 网站置于保留状态时) 发布在2017年6月22日。 如果工作组网站处于保留状态, 则会在该日期开始保留 Wiki 内容。 但是, 如果工作组网站处于保留状态, 并且在6月 22 2017 日之前删除了 wiki 内容, 则不会保留 wiki 内容。 
   
-- **如何查找 OneDrive for business 网站的 URL？** 若要收集组织中的 OneDrive for business 网站的 url 列表, 以便可以将其添加到与电子数据展示事例关联的保留或搜索, 请参阅[创建组织中所有 OneDrive 位置的列表](https://support.office.com/article/8e200cb2-c768-49cb-88ec-53493e8ad80a)。 本文中的此脚本创建一个文本文件, 其中包含所有 OneDrive 网站的列表。 若要运行此脚本, 您必须安装并使用 SharePoint Online 命令行管理程序。 请务必将组织的 "我的网站" 域的 URL 追加到要搜索的每个 OneDrive 站点。 这是包含所有 OneDrive 的域;例如, `https://contoso-my.sharepoint.com`。 下面的示例展示了用户的 OneDrive 网站的 URL: `https://contoso-my.sharepoint.com/personal/sarad_contoso_onmicrosoft.com`。
+- **如何查找 OneDrive for business 网站的 URL？** 若要收集组织中的 OneDrive for business 网站的 Url 列表, 以便可以将其添加到与电子数据展示事例关联的保留或搜索, 请参阅[创建组织中所有 OneDrive 位置的列表](https://support.office.com/article/8e200cb2-c768-49cb-88ec-53493e8ad80a)。 本文中的此脚本创建一个文本文件, 其中包含所有 OneDrive 网站的列表。 若要运行此脚本, 您必须安装并使用 SharePoint Online 命令行管理程序。 请务必将组织的 "我的网站" 域的 URL 追加到要搜索的每个 OneDrive 站点。 这是包含所有 OneDrive 的域;例如, `https://contoso-my.sharepoint.com`。 下面的示例展示了用户的 OneDrive 网站的 URL: `https://contoso-my.sharepoint.com/personal/sarad_contoso_onmicrosoft.com`。

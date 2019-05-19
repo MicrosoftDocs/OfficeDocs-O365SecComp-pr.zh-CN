@@ -4,7 +4,7 @@ ms.author: tracyp
 author: MSFTTracyP
 manager: laurawi
 ms.date: 10/17/2018
-ms.audience: Admin
+audience: Admin
 ms.topic: overview
 ms.service: O365-seccomp
 localization_priority: Normal
@@ -14,12 +14,12 @@ search.appverid:
 ms.collection:
 - M365-security-compliance
 description: 如果您发送大量未注册的域电子邮件, 则可能会导致电子邮件被阻止。 阅读本文以了解详细信息。
-ms.openlocfilehash: 21c403c8072902565f63048782b06c531cdbceb0
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: 207b71ab7e144af9709e7485d61c936e07271a11
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32263984"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34156294"
 ---
 # <a name="unregistered-domain-email-what-you-need-to-know"></a>未注册的域电子邮件: 需要了解的内容
 
@@ -48,7 +48,7 @@ Office 365 允许租户通过 Exchange Online Protection (EOP) 中继某些邮�
 
 4. 完成后, 你将需要致电 Microsoft 支持部门, 让你的租户不再被阻止, 以从未注册的域中再次发送。  提供错误代码很有帮助, 但您需要证明您的环境是安全的, 并且不会再次发送垃圾邮件。 可在[此处](https://support.office.com/en-us/article/Contact-support-for-business-products-Admin-Help-32a17ca7-6fa0-4870-8a8d-e25ba4ccfd4b#ID0EAADAAA=online)找到有关打开支持案例的详细信息。
   
-## <a name="for-more-information"></a>有关详细信息
+## <a name="for-more-information"></a>详细信息
 
 [Office 365 电子邮件反垃圾邮件保护](anti-spam-protection.md)
 

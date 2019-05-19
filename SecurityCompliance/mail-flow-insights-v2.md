@@ -3,18 +3,18 @@ title: 安全与合规中心内的邮件流见解
 ms.author: chrisda
 author: chrisda
 manager: serdars
-ms.audience: ITPro
+audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: beb6acaa-6016-4d54-ba7e-3d6d035e2b46
 description: 管理员可以了解安全 & 合规性中心中的邮件流仪表板。
-ms.openlocfilehash: 80aa6b773d63b6c98293fa2787d38ad393e67b37
-ms.sourcegitcommit: e05e83212e7ca4e84f2ddb0de0297895b995338d
+ms.openlocfilehash: c7c1a6a16c908f42098500c1015b3c3994175818
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/10/2019
-ms.locfileid: "33868620"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34155874"
 ---
 # <a name="mail-flow-insights-in-the-security--compliance-center"></a>安全与合规中心内的邮件流见解
 
@@ -22,17 +22,17 @@ ms.locfileid: "33868620"
 
 邮件流仪表板中提供的见解、报告和小部件为:
 
-- [邮件流映射报告](mfi-mail-flow-map-report.md)
+- [邮件流地图报表](mfi-mail-flow-map-report.md)
 
 - [域邮件流状态洞察力](mfi-domain-mail-flow-status-insight.md)
 
-- [SMTP 身份验证客户端报告](mfi-smtp-auth-clients-report.md)
+- [SMTP 身份验证客户端报表](mfi-smtp-auth-clients-report.md)
 
 - [发件人域洞察力](mfi-sender-domain-insight.md)
 
 - [未送达报告](mfi-non-delivery-report.md)
 
-- [不接受的域报告](mfi-non-accepted-domain-report.md)
+- [非接受域报告](mfi-non-accepted-domain-report.md)
 
 - [入站和出站邮件流](mfi-outbound-and-inbound-mail-flow.md)
 

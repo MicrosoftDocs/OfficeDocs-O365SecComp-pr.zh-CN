@@ -4,18 +4,18 @@ ms.author: markjjo
 author: markjjo
 manager: laurawi
 ms.date: 12/30/2016
-ms.audience: Admin
+audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: 55f31488-288a-473a-9b9e-831a11e3711a
 description: '使用 PowerShell 脚本在 Exchange Online 中创建基于 Security & 合规性中心中创建的搜索的就地电子数据展示搜索。 '
-ms.openlocfilehash: 2e4f1b3570ce2400472a0b2a9ddee886ffc4bab3
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: d021836a735d5c5dd12124e16e348729d88e6022
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32263794"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34157974"
 ---
 # <a name="use-content-search-in-your-ediscovery-workflow"></a>在电子数据展示工作流中使用内容搜索
 
@@ -33,14 +33,14 @@ ms.locfileid: "32263794"
 
 ## <a name="step-1-create-a-content-search-to-search-all-mailboxes-in-your-organization"></a>步骤 1：创建内容搜索来搜索组织中的所有邮箱
 
-第一步是使用安全 & 合规性中心 (或 security & 合规性中心 PowerShell) 来创建搜索组织中所有邮箱的内容搜索。 对于单个内容搜索的邮箱数没有限制。 指定适当的关键字查询（或针对敏感信息类型的查询），以便搜索仅返回与您的调查相关的源邮箱。 如有必要，优化搜索查询来缩小返回的搜索结果以及源邮箱的范围。
+第一步是使用安全 & 合规性中心 (或 Security & 合规性中心 PowerShell) 来创建搜索组织中所有邮箱的内容搜索。 对于单个内容搜索的邮箱数没有限制。 指定适当的关键字查询（或针对敏感信息类型的查询），以便搜索仅返回与您的调查相关的源邮箱。 如有必要，优化搜索查询来缩小返回的搜索结果以及源邮箱的范围。
   
 > [!NOTE]
 > 如果源内容搜索未返回任何结果，则当您在步骤 3 中运行该脚本时不会创建就地电子数据展示。您可能必须修改搜索查询然后重新运行内容搜索来返回搜索结果。 
   
 ### <a name="use-the-security--compliance-center-to-search-all-mailboxes"></a>使用安全与合规中心来搜索所有邮箱
 
-1. [转到安全 & 合规中心](go-to-the-securitycompliance-center.md)。 
+1. [转到安全 _AMP_ 合规中心](go-to-the-securitycompliance-center.md)。 
     
 2. 单击 "**搜索** > **内容搜索**", 然后单击 "**新建搜索** ![添加图标](media/O365-MDM-CreatePolicy-AddIcon.gif)"。
     
@@ -58,7 +58,7 @@ ms.locfileid: "32263794"
     
 ### <a name="use-security--compliance-center-powershell-to-search-all-mailboxes"></a>使用 Security & 合规性中心 PowerShell 搜索所有邮箱
 
-您还可以使用 **New-ComplianceSearch** cmdlet 搜索组织中的所有邮箱。 第一步是[连接到安全 & 合规中心 PowerShell](https://go.microsoft.com/fwlink/p/?LinkID=627084)。
+您还可以使用 **New-ComplianceSearch** cmdlet 搜索组织中的所有邮箱。 第一步是[连接到安全 _AMP_ 合规中心 PowerShell](https://go.microsoft.com/fwlink/p/?LinkID=627084)。
   
 下面的示例展示了如何使用 PowerShell 搜索组织中的所有邮箱。 搜索查询将返回 2015 年 1 月 1 日和 2015 年 6 月 30 日之间发送的以及主题行中包含短语“财务报告”的所有邮件。 第一个命令创建搜索，第二个命令运行搜索。 
   

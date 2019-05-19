@@ -4,7 +4,7 @@ ms.author: markjjo
 author: markjjo
 manager: laurawi
 ms.date: 5/25/2018
-ms.audience: Admin
+audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
@@ -14,21 +14,21 @@ ms.collection:
 - Strat_O365_IP
 - M365-security-compliance
 ms.assetid: ce9eb942-3589-42cb-88fd-1576ecb09c5c
-description: GDPR 向欧盟公民 (称为 "数据主体") 授予对其个人数据的特定权限;这些权限包括获取副本、请求对其进行更改、限制处理、删除或以电子格式接收。 通过数据主体对其个人数据执行操作的正式请求称为 "数据" 主题请求或 "DSR"。 您可以使用 Office 365 和 Microsoft 365 中的合规性中心中的 dsr 案例来管理您的组织的 DSR 调查。
-ms.openlocfilehash: a131da86350fc288c1c9af371d28464230b742d6
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+description: GDPR 向欧盟公民 (称为 "数据主体") 授予对其个人数据的特定权限;这些权限包括获取副本、请求对其进行更改、限制处理、删除或以电子格式接收。 通过数据主体对其个人数据执行操作的正式请求称为 "数据" 主题请求或 "DSR"。 您可以使用 Office 365 和 Microsoft 365 中的合规性中心中的 DSR 案例来管理您的组织的 DSR 调查。
+ms.openlocfilehash: 644a604959d4063e5e7bd994bc9dfb57f8642081
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32259872"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34155804"
 ---
 # <a name="manage-gdpr-data-subject-requests-with-the-dsr-case-tool-in-the-security--compliance-center"></a>在 Security & 合规性中心中使用 DSR 机箱工具管理 GDPR 数据主体请求
 
-EU 常规数据保护条例 (GDPR) 是关于保护和启用欧盟 (EU) 内部的个人隐私权利的信息。 GDPR 为欧盟 (称为数据主题) 中的个人提供访问、检索、更正、擦除和限制其个人数据处理的权限。 在 "GDPR" 下, "个人数据" 是指与标识或标识的自然个人相关的任何信息。 某人向其组织对其个人数据执行操作的正式请求称为 "数据" 主题请求或 "DSR"。 有关对 Office 365 中的数据响应 dsr 的详细信息, 请参阅[office 365 data Subject 请求指南](https://go.microsoft.com/fwlink/?linkid=871169 )。
+EU 常规数据保护条例 (GDPR) 是关于保护和启用欧盟 (EU) 内部的个人隐私权利的信息。 GDPR 为欧盟 (称为数据主题) 中的个人提供访问、检索、更正、擦除和限制其个人数据处理的权限。 在 "GDPR" 下, "个人数据" 是指与标识或标识的自然个人相关的任何信息。 某人向其组织对其个人数据执行操作的正式请求称为 "数据" 主题请求或 "DSR"。 有关对 Office 365 中的数据响应 Dsr 的详细信息, 请参阅[office 365 Data Subject 请求指南](https://go.microsoft.com/fwlink/?linkid=871169 )。
   
 若要管理对由组织中的人员提交的 DSR 的调查, 可以使用安全 & 合规中心中的 "DSR 事例" 工具查找存储在中的内容:
   
-- 组织中的任何用户邮箱。 这包括 Microsoft 团队中的 Skype for business 对话和一对一聊天
+- 组织中的任何用户邮箱。 这包括 Microsoft 团队中的 Skype for Business 对话和一对一聊天
     
 - 与 Microsoft 团队中的 Office 365 组和所有团队邮箱关联的所有邮箱
     
@@ -54,7 +54,7 @@ EU 常规数据保护条例 (GDPR) 是关于保护和启用欧盟 (EU) 内部的
     
 - 在 DSR 调查过程完成时删除事例;这将删除与该事例关联的所有搜索和导出作业。
     
-以下是使用 dsr 机箱工具管理 dsr 调查的高级别过程:
+以下是使用 DSR 机箱工具管理 DSR 调查的高级别过程:
   
 [Step 1: Assign eDiscovery permissions to potential case members](#step-1-assign-ediscovery-permissions-to-potential-case-members)
 
@@ -69,13 +69,13 @@ EU 常规数据保护条例 (GDPR) 是关于保护和启用欧盟 (EU) 内部的
 [有关使用 DSR 机箱工具的详细信息](#more-information-about-using-the-dsr-case-tool)
   
 > [!IMPORTANT]
-> 通过使管理员能够利用在 dsr 机箱工具中找到的内置搜索和导出功能, 我们的工具可以帮助管理员执行 DSR access 或出口请求。 该工具有助于促进最佳的工作方式, 以导出与数据主体提交的 DSR 请求相关的数据。 但是, 请务必注意, 搜索结果可能因可能会影响某个项目是否被视为 "个人数据" 进行导出而发生变化的数据主体或管理员操作而异。 例如, 如果数据主体是上次修改未创建的文件的人, 则该文件可能不会在搜索结果中返回。 同样, 管理员可以在不包含部分索引项目或 SharePoint 文档的所有版本的情况下导出数据。 因此, 提供的工具有助于简化数据请求的访问和导出。但是, 这些结果取决于特定的管理员和数据使用者使用方案。 
+> 通过使管理员能够利用在 DSR 机箱工具中找到的内置搜索和导出功能, 我们的工具可以帮助管理员执行 DSR access 或出口请求。 该工具有助于促进最佳的工作方式, 以导出与数据主体提交的 DSR 请求相关的数据。 但是, 请务必注意, 搜索结果可能因可能会影响某个项目是否被视为 "个人数据" 进行导出而发生变化的数据主体或管理员操作而异。 例如, 如果数据主体是上次修改未创建的文件的人, 则该文件可能不会在搜索结果中返回。 同样, 管理员可以在不包含部分索引项目或 SharePoint 文档的所有版本的情况下导出数据。 因此, 提供的工具有助于简化数据请求的访问和导出。但是, 这些结果取决于特定的管理员和数据使用者使用方案。 
   
 ## <a name="step-1-assign-ediscovery-permissions-to-potential-case-members"></a>步骤 1：向潜在事例成员分配电子数据展示权限
 
-默认情况下, Office 365 全局管理员可以在安全 & 合规性中心中访问 DSR 机箱工具。 按照设计, 其他用户 (如数据隐私官、人力资源经理或其他参与 dsr 调查的人员) 无法访问 dsr 机箱工具, 必须为其分配适当的权限才能访问该工具。 执行此操作最简单的方法是转到 Security & 合规性中心中的 "**权限**" 页, 并将用户添加到 "电子数据展示管理器" 角色组。 请注意, 您还必须分配这些权限, 以便将其添加为您在步骤2中创建的 DSR 事例的成员。 
+默认情况下, Office 365 全局管理员可以在安全 & 合规性中心中访问 DSR 机箱工具。 按照设计, 其他用户 (如数据隐私官、人力资源经理或其他参与 DSR 调查的人员) 无法访问 DSR 机箱工具, 必须为其分配适当的权限才能访问该工具。 执行此操作最简单的方法是转到 Security & 合规性中心中的 "**权限**" 页, 并将用户添加到 "电子数据展示管理器" 角色组。 请注意, 您还必须分配这些权限, 以便将其添加为您在步骤2中创建的 DSR 事例的成员。 
   
-有关分步说明, 请参阅[在 Office 365 安全 & 合规中心中分配电子数据展示权限](assign-ediscovery-permissions.md)。
+有关分步说明, 请参阅[在 Office 365 安全 _AMP_ 合规中心中分配电子数据展示权限](assign-ediscovery-permissions.md)。
   
 > [!NOTE]
 > 默认情况下, Office 365 全局管理员 (或安全 & 合规中心中的组织管理角色组的其他成员不具有导出内容搜索结果所需的权限 (请参阅本文中的步骤 4)。 若要解决此情况, 管理员可以将自己添加为电子数据展示管理器角色组的成员。 
@@ -127,7 +127,7 @@ EU 常规数据保护条例 (GDPR) 是关于保护和启用欧盟 (EU) 内部的
     
 - 搜索组织中的所有网站, 以查找由数据主体创建或上载的文档和项目。 这是通过使用以下网站属性来实现的:
     
-  - *author*属性返回 "Office 文档" 的 "作者" 字段中列出了数据主题的项。 此值将持续存在, 即使文档被其他人复制和上载也是如此。 
+  - *Author*属性返回 "Office 文档" 的 "作者" 字段中列出了数据主题的项。 此值将持续存在, 即使文档被其他人复制和上载也是如此。 
     
   - *CreatedBy*属性返回由数据主体创建或上载的项。 
     
@@ -173,7 +173,7 @@ participants:"ina@contoso.com" OR author:"Ina Leonte" OR createdby:"Ina Leonte"
   
 - 32 位或 64 位版本的 Windows 7 和更高版本
     
-- Microsoft .net Framework 4。7
+- Microsoft .NET Framework 4。7
     
 - 支持的浏览器：
     
@@ -204,7 +204,7 @@ participants:"ina@contoso.com" OR author:"Ina Leonte" OR createdby:"Ina Leonte"
     
     c. 选择 "**启用重复数据**删除选项" 以排除重复的电子邮件。 我们建议您选择此选项, 因为内置搜索将搜索组织中的所有邮箱。 因此, 如果在搜索的邮箱中找到同一邮件的多个副本, 则此选项表示将只导出邮件的一个副本。 此选项一起将在单个文件夹中的一个 PST 文件中导出邮件将导致 DSR 导出请求的用户体验最佳。 请注意, 结果 .csv 导出报告将列出找到重复邮件的所有位置。
     
-    (可选) 您可以选择 "**包括 sharepoint 文档的版本**" 选项以导出 sharepoint 和 OneDrive 文档的所有版本。 这要求已为文档库启用版本控制。 此选项有助于确保导出所有相关数据。
+    (可选) 您可以选择 "**包括 sharepoint 文档的版本**" 选项以导出 Sharepoint 和 OneDrive 文档的所有版本。 这要求已为文档库启用版本控制。 此选项有助于确保导出所有相关数据。
     
 5. 选择导出设置后, 单击 "**导出**"。
     
@@ -235,7 +235,7 @@ participants:"ina@contoso.com" OR author:"Ina Leonte" OR createdby:"Ina Leonte"
   
 ## <a name="optional-step-5-revise-the-built-in-search-query"></a>Optional步骤 5: 修订内置搜索查询
 
-在运行内置搜索后, 可以对其进行修改以缩小范围以返回较少的搜索结果。 您可以通过将条件添加到查询中来执行此操作。 **and**运算符在逻辑上将一个条件连接到关键字查询。 这意味着在搜索结果中返回, 项目必须同时满足关键字查询和添加的任何条件。 这就是条件如何帮助缩小结果范围的方法。 如果向搜索查询添加两个或更多个唯一条件 (指定不同属性的条件), 则这些条件通过**AND**运算符逻辑连接。 这意味着只返回满足所有条件 (除了关键字查询) 的项目。 如果将多个值 (用逗号或分号分隔) 添加到单个条件中, 则这些值由**or**运算符连接。 这意味着如果这些项包含条件中指定的任何属性值，则返回这些项。 
+在运行内置搜索后, 可以对其进行修改以缩小范围以返回较少的搜索结果。 您可以通过将条件添加到查询中来执行此操作。 **And**运算符在逻辑上将一个条件连接到关键字查询。 这意味着在搜索结果中返回, 项目必须同时满足关键字查询和添加的任何条件。 这就是条件如何帮助缩小结果范围的方法。 如果向搜索查询添加两个或更多个唯一条件 (指定不同属性的条件), 则这些条件通过**AND**运算符逻辑连接。 这意味着只返回满足所有条件 (除了关键字查询) 的项目。 如果将多个值 (用逗号或分号分隔) 添加到单个条件中, 则这些值由**or**运算符连接。 这意味着如果这些项包含条件中指定的任何属性值，则返回这些项。 
   
 下面是可以添加到 DSR 机箱的内置搜索查询的一些条件示例。 在搜索查询中使用的实际属性的名称显示在括号中。
   
@@ -267,13 +267,13 @@ participants:"ina@contoso.com" OR author:"Ina Leonte" OR createdby:"Ina Leonte"
     
     b. 在弹出页面中间的 "**选择所有**位置" 部分下的切换将被选中, 这表明已搜索所有网站。 若要将搜索范围缩小到选定网站, 请取消选择该开关, 然后单击 "**选择网站**"。 您必须添加要搜索的每个特定网站, 包括数据主体的 OneDrive 帐户。
     
-    c. "exchange 公用文件夹" 部分中的 "切换" 处于选中状态, 这意味着将搜索所有 Exchange 公用文件夹。 请注意, 您只能搜索所有 Exchange 公用文件夹, 也可以不搜索任何。 您不能选择要搜索的特定文件。
+    c. "Exchange 公用文件夹" 部分中的 "切换" 处于选中状态, 这意味着将搜索所有 Exchange 公用文件夹。 请注意, 您只能搜索所有 Exchange 公用文件夹, 也可以不搜索任何。 您不能选择要搜索的特定文件。
     
 3. 如果要修改内置搜索中的内容位置, 请单击 "**保存&amp;运行**" 以重新启动搜索。 
   
 ## <a name="more-information-about-using-the-dsr-case-tool"></a>有关使用 DSR 机箱工具的详细信息
 
-以下各节包含有关使用 dsr 机箱工具响应 DSR 导出请求的详细信息。
+以下各节包含有关使用 DSR 机箱工具响应 DSR 导出请求的详细信息。
   
 [从 MyAnalytics 和 Office 漫游服务导出数据](#exporting-data-from-myanalytics-and-the-office-roaming-service)
 

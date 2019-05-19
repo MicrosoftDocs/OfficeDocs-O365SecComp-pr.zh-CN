@@ -1,9 +1,9 @@
 ---
-title: 与 Microsoft 合规性管理器配合使用
+title: 使用 Microsoft 合规性管理器 (预览)
 ms.author: robmazz
 author: robmazz
 manager: laurawi
-ms.audience: Admin
+audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
@@ -11,15 +11,15 @@ ms.collection: M365-security-compliance
 search.appverid:
 - MOE150
 - MET150
-description: microsoft 合规性管理器是 microsoft 服务信任门户中基于工作流的免费风险评估工具。 合规性管理器使你能够跟踪、分配和验证与 Microsoft 云服务相关的法规遵从性活动。
-ms.openlocfilehash: ec01bc8cbf1a1b59353d2f0840baa539e1331ef4
-ms.sourcegitcommit: 696c1ed6b270be3f9da7395b49a7d8fec98e6db0
+description: Microsoft 合规性管理器是 Microsoft 服务信任门户中基于工作流的免费风险评估工具。 合规性管理器使你能够跟踪、分配和验证与 Microsoft 云服务相关的法规遵从性活动。
+ms.openlocfilehash: 6a6cc7cc51b911feddf21cfc107bc5c85bb959ba
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/29/2019
-ms.locfileid: "33473036"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34157864"
 ---
-# <a name="work-with-microsoft-compliance-manager"></a>与 Microsoft 合规性管理器配合使用
+# <a name="work-with-microsoft-compliance-manager-preview"></a>使用 Microsoft 合规性管理器 (预览)
 
 > [!IMPORTANT]
 > Microsoft 合规性管理器是一个仪表板和管理工具, 提供了有关数据保护和合规性的摘要 stature 以及改进数据保护和合规性的建议。 合规性管理器中提供的客户操作是建议;在实现之前, 你的组织可以评估这些建议在其各自的法规环境中的有效性。 在合规性管理器中找到的建议不应解释为合规性保证。
@@ -30,7 +30,7 @@ ms.locfileid: "33473036"
   
 1. 转到 [https://servicetrust.microsoft.com](https://servicetrust.microsoft.com/)。
 
-2. 使用 Microsoft 服务帐户登录。 这是你的 Office 365、Microsoft 365 或 azure Active Directory (azure AD) 用户帐户。
+2. 使用 Microsoft 服务帐户登录。 这是你的 Office 365、Microsoft 365 或 Azure Active Directory (Azure AD) 用户帐户。
 
 3. 在服务信任门户中, 选择 "**合规性管理器**"。 这是合规性管理器的预览版本。 **合规性管理器 (经典)** 是指向早期版本的合规性管理器的链接。
 
@@ -143,7 +143,7 @@ ms.locfileid: "33473036"
 
 #### <a name="edit-an-owner"></a>编辑所有者
 
-您不能编辑所有者名称, 但可以修改 "owner" 列中显示的说明。
+您不能编辑所有者名称, 但可以修改 "Owner" 列中显示的说明。
 
 1. 打开 "**租户管理**" 并选择 "**所有者**"。
 2. 找到要编辑的所有者, 选择其旁边的省略号 (...), 然后选择 "**编辑**"。
@@ -224,7 +224,7 @@ ms.locfileid: "33473036"
 
 - 实现详细信息
 - 测试计划 & 其他信息
-- 文档
+- Documents
 
 #### <a name="copy-information-from-an-existing-assessment-to-a-new-assessment"></a>将信息从现有评估复制到新评估
   
@@ -268,7 +268,7 @@ ms.locfileid: "33473036"
 在合规性管理器 (预览) 中, 工作流过程已从控制级别移至操作级别。 检查操作时, 可使用以下字段来管理操作工作流:
 
 - **为用户分配:** 选择此字段以选择或输入应为其分配此操作的用户。 您可以在列表中滚动, 或键入名称以查找它, 然后选择它。
-- **管理文档:** 您可以在 Office 文档、图像文件和屏幕截图、CSV 或 TXT 中的 PowerShell 输出以及 pdf 中上载实现证据。
+- **管理文档:** 您可以在 Office 文档、图像文件和屏幕截图、CSV 或 TXT 中的 PowerShell 输出以及 Pdf 中上载实现证据。
 - **实现状态:** 用于指示操作的当前实现状态。 可能的值尚未实现、实现、替代实施、规划且不在范围内。
 - **实施日期:** 执行操作的日期。
 - **测试结果:** 用于指示实现验证的结果。 可能的值未评估、传递、失败-低风险、失败-中等风险、失败-高风险以及不在范围内。
@@ -293,7 +293,7 @@ ms.locfileid: "33473036"
 - 用于评估的**范围内的服务**的列表。
 - 控件的详细信息, 按控件系列分组, 并提供指向客户操作和 Microsoft 实现详细信息的链接:
     - **您的操作**将显示您可以执行以满足部分或全部控件要求的客户操作。 许多控件具有与之关联的多个操作, 并且与控件关联的所有操作都显示在此处。 此处的操作与操作仪表板中列出的 UI 相同。
-    - **microsoft 操作**显示 microsoft 内部框架中应用于所选证书控制的控件列表。 对于每个内部控件, 选择 "已**实施**" 以查看 Microsoft 的实施和测试详细信息, 以及测试结果和测试日期, 如下所示。
+    - **Microsoft 操作**显示 microsoft 内部框架中应用于所选证书控制的控件列表。 对于每个内部控件, 选择 "已**实施**" 以查看 Microsoft 的实施和测试详细信息, 以及测试结果和测试日期, 如下所示。
 
 ![合规性管理器 Microsoft 操作视图](media/compliance-manager-microsoft-action.png)
 
@@ -356,7 +356,7 @@ ms.locfileid: "33473036"
 
 有三种类型的控件。 两个由 Microsoft 在内置模板中提供, 第三个由自定义模板中的客户创建和管理。 这三种类型为:
 
-1. **microsoft 托管控件 (MM):** 这些控件只是 Microsoft 有责任的控件。 它们显示在 "现成" 模板中, 并已添加到 Microsoft 的合规性管理器中。
+1. **Microsoft 托管控件 (MM):** 这些控件只是 Microsoft 有责任的控件。 它们显示在 "现成" 模板中, 并已添加到 Microsoft 的合规性管理器中。
 2. **客户管理的控件 (CM):** 这些控件只是客户有责任的控件。 它们显示在 "现成" 模板中, 由 Microsoft 或客户添加到合规性管理器中。 客户还可以编辑或禁用 Microsoft 提供的客户托管的控件。
 3. **共享控件 (SM):** 这些是在 Microsoft 和客户之间共享责任的控制措施。 这些模板显示在 "现成" 模板中, 由 Microsoft 添加到合规性管理器中。
 
@@ -401,7 +401,7 @@ ms.locfileid: "33473036"
 
 1. 模板-评估
 2. ControlFamily
-3. Actions
+3. 操作
 4. Ownership
 5. Dimensions
 
@@ -435,7 +435,7 @@ ms.locfileid: "33473036"
 - **actionRelatedODVs:** 以分号分隔的 actionTitles 列表, 它们是 actionTitle 列中列出的子元素的父项。 在父/子关系中, 父项代表高水位线。 因此, 如果完成父操作, 还将完成所有子操作。 例如, 如果您具有类似的要求, 但具有不同的标准定义值 (如密码长度), 其中一个标准/法规至少需要15个字符, 而另一个标准/要求至少需要12个或10个。 15是此示例中的父级, 如果至少配置15个字符, 则还应满足在其他评估中建议的12个或10个字符的操作。
 
     > [!NOTE]
-    > actionRelatedODVs 列是架构的必需列;但是, 功能 (相关操作) 在合规性管理器 (预览) 中不可用。  计划在更高版本中添加它。
+    > ActionRelatedODVs 列是架构的必需列;但是, 功能 (相关操作) 在合规性管理器 (预览) 中不可用。  计划在更高版本中添加它。
 
 - **actionDimensionValues:** 使用以下格式的 "维" 选项卡中的适用维度的两个以分号分隔的列表:
 
@@ -502,7 +502,7 @@ ms.locfileid: "33473036"
 Click [here](https://www.microsoft.com) to go to Microsoft’s home page.
 ```
 此文本呈现如下: 单击[此处](https://www.microsoft.com)转到 Microsoft 主页。
-如上面的示例中所示, 合规性管理器不呈现带下划线的 url。
+如上面的示例中所示, 合规性管理器不呈现带下划线的 Url。
 
 粗体文本只是文本的每一侧都加粗的两个星号。  例如：
 

@@ -4,19 +4,19 @@ ms.author: chrisda
 author: chrisda
 manager: serdars
 ms.date: ''
-ms.audience: ITPro
+audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid:
 - MET150
 description: 管理员可以了解如何确定仿冒邮件的原因以及在将来阻止更多的网络钓鱼邮件的原因。
-ms.openlocfilehash: c3025267ad8e01c18de618c85127dfe1077a16aa
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: b17cdc6ec6cfc07642a6a40657009b46b83f1559
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32264314"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34156344"
 ---
 # <a name="tune-anti-phishing-protection-in-office-365"></a>优化 Office 365 中的反网络钓鱼保护
 
@@ -40,7 +40,7 @@ ms.locfileid: "32264314"
 
 在调整用于保护 Office 365 中所有客户的筛选器时, 报告网络钓鱼邮件非常有帮助。
 
-将仿冒邮件作为新的 (否则为空邮件) 的_附件_发送到**phish@office365.microsoft.com**。 不要直接转发原始邮件;否则, 我们无法检查原始邮件头。 或者, 您可以在 outlook 或 web 上的 outlook (以前称为 Outlook web App) 中使用[报告邮件](https://docs.microsoft.com/office365/securitycompliance/enable-the-report-message-add-in)加载项。
+将仿冒邮件作为新的 (否则为空邮件) 的_附件_发送到**phish@office365.microsoft.com**。 不要直接转发原始邮件;否则, 我们无法检查原始邮件头。 或者, 您可以在 Outlook 或 web 上的 Outlook (以前称为 Outlook Web App) 中使用[报告邮件](https://docs.microsoft.com/office365/securitycompliance/enable-the-report-message-add-in)加载项。
 
 有关详细信息, 请参阅[将垃圾邮件、非垃圾邮件和网络钓鱼诈骗邮件提交给 Microsoft 进行分析](submit-spam-non-spam-and-phishing-scam-messages-to-microsoft-for-analysis.md)。
 
@@ -52,7 +52,7 @@ ms.locfileid: "32264314"
 
 ## <a name="best-practices-to-stay-protected"></a>保持受保护状态的最佳做法
 
-- 在每月的基础上, 运行[office 365 安全分数](office-365-secure-score.md)以评估 office 365 组织的安全设置。
+- 在每月的基础上, 运行[安全得分](microsoft-secure-score.md)来评估 Office 365 组织的安全设置。
 
 - 定期查看[欺骗智能报告](learn-about-spoof-intelligence.md)并[在反网络钓鱼策略中启用反欺骗保护](learn-about-spoof-intelligence.md#configuring-the-anti-spoofing-policy)以**隔离**可疑邮件, 而不是将其传递到用户的 "垃圾邮件" 文件夹。
 
@@ -60,7 +60,7 @@ ms.locfileid: "32264314"
 
 - 某些客户通过将自己的域放在反垃圾邮件策略中的 "允许发件人" 或 "允许域" 列表中, 在无意中允许网络钓鱼邮件。 如果选择执行此操作, 则必须小心使用。 虽然此配置将允许某些合法邮件通过, 但它还会允许由 Office 365 垃圾邮件和/或网络钓鱼筛选器通常阻止的恶意邮件。
 
-  若要处理受 office 365 (误报) 阻止的合法邮件 (涉及域中的发件人), 最佳方法是在 DNS 中为 office 365 中的_所有_电子邮件域完全和完全配置 SPF、DKIM 和 DMARC 记录:
+  若要处理受 Office 365 (误报) 阻止的合法邮件 (涉及域中的发件人), 最佳方法是在 DNS 中为 Office 365 中的_所有_电子邮件域完全和完全配置 SPF、DKIM 和 DMARC 记录:
 
   - 验证您的 SPF 记录是否标识了您的域中的发件人的_所有_电子邮件源 (不要忘记第三方服务!)。
 
@@ -74,8 +74,8 @@ ms.locfileid: "32264314"
 
   - [使用 DMARC 验证 Office 365 中的电子邮件](use-dmarc-to-validate-email.md)
 
-- 如果可能, 我们建议您将您的域的电子邮件直接传递到 Office 365。 换言之, 将您的 office 365 域的 MX 记录指向 office 365。 Exchange Online Protection (EOP) 能够在将其邮件直接传递到 Office 365 时为你的云用户提供最佳保护。 如果您必须在 EOP 前使用第三方电子邮件清洁系统, 请确保已按照[此处](https://docs.microsoft.com/exchange/mail-flow-best-practices/manage-mail-flow-using-third-party-cloud)的指导进行。
+- 如果可能, 我们建议您将您的域的电子邮件直接传递到 Office 365。 换言之, 将您的 Office 365 域的 MX 记录指向 Office 365。 Exchange Online Protection (EOP) 能够在将其邮件直接传递到 Office 365 时为你的云用户提供最佳保护。 如果您必须在 EOP 前使用第三方电子邮件清洁系统, 请确保已按照[此处](https://docs.microsoft.com/exchange/mail-flow-best-practices/manage-mail-flow-using-third-party-cloud)的指导进行。
 
-- 多重因素身份验证 (MFA) 是防止受损帐户的一种非常好的方法。 强烈考虑为所有用户启用 MFA。 对于分阶段的方法, 先在为每个人启用 mfa 之前为最敏感的用户 (管理员、高级管理人员等) 启用 mfa。 有关说明, 请参阅[设置多因素身份验证](https://docs.microsoft.com/office365/admin/security-and-compliance/set-up-multi-factor-authentication)。
+- 多重因素身份验证 (MFA) 是防止受损帐户的一种非常好的方法。 强烈考虑为所有用户启用 MFA。 对于分阶段的方法, 先在为每个人启用 MFA 之前为最敏感的用户 (管理员、高级管理人员等) 启用 MFA。 有关说明, 请参阅[设置多因素身份验证](https://docs.microsoft.com/office365/admin/security-and-compliance/set-up-multi-factor-authentication)。
 
-- 将规则转发给外部收件人通常由攻击者用来提取数据。 使用 "查看[Office 365 安全分数](office-365-secure-score.md)中的**邮箱转发规则**" 信息查找甚至阻止外部收件人的转发规则。 有关详细信息, 请参阅[通过安全分数缓解客户端外部转发规则](https://blogs.technet.microsoft.com/office365security/mitigating-client-external-forwarding-rules-with-secure-score/)。
+- 将规则转发给外部收件人通常由攻击者用来提取数据。 使用 "审阅[Microsoft 安全分数](microsoft-secure-score.md)中的**邮箱转发规则**" 信息查找甚至阻止外部收件人的转发规则。 有关详细信息, 请参阅[通过安全分数缓解客户端外部转发规则](https://blogs.technet.microsoft.com/office365security/mitigating-client-external-forwarding-rules-with-secure-score/)。

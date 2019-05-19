@@ -4,18 +4,18 @@ ms.author: krowley
 author: kccross
 manager: laurawi
 ms.date: 12/9/2016
-ms.audience: ITPro
+audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: d6a87ce8-2c22-433a-b430-5eab14f6afdc
 description: 本主题为希望执行委派 Office 365 管理任务（包括能够为其他租户（公司）管理 Exchange Online Protection (EOP)）的 Microsoft 合作伙伴和经销商提供常见问题解答。
-ms.openlocfilehash: 41f2e8f0ed48273ff1934ca4f2306f29f92b1ff1
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: 15433a9ac0bb8b165dd8ee97767fca4a3e29f01a
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32256190"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34153224"
 ---
 # <a name="delegated-administration-faq"></a>委派管理常见问题解答
 
@@ -23,7 +23,7 @@ ms.locfileid: "32256190"
   
  **问：我是经销商，需要管理客户的租户。具体工作原理是什么？**
   
-A. 如果你是 microsoft 合作伙伴或经销商, 并且已注册为 microsoft advisor, 则可以请求在管理中心内管理其租户的权限。 这称为 "委派管理", 它允许您管理其 Office 365 租户 (包括 EOP 设置), 就像您是组织内的管理员一样。 执行委派管理的步骤如下所示:
+A. 如果你是 Microsoft 合作伙伴或经销商, 并且已注册为 Microsoft advisor, 则可以请求在管理中心内管理其租户的权限。 这称为 "委派管理", 它允许您管理其 Office 365 租户 (包括 EOP 设置), 就像您是组织内的管理员一样。 执行委派管理的步骤如下所示:
   
 1. 注册成为 [Microsoft Office 365 顾问](https://aka.ms/cloudbenefits)。
     

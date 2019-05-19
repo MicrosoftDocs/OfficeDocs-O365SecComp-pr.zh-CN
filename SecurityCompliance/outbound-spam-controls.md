@@ -3,7 +3,7 @@ title: 控制 Office 365 中的出站垃圾邮件
 ms.author: tracyp
 author: MSFTTracyP
 manager: laurawi
-ms.audience: Admin
+audience: Admin
 ms.topic: overview
 ms.service: O365-seccomp
 localization_priority: Normal
@@ -14,12 +14,12 @@ ms.assetid: 6a601501-a6a8-4559-b2e7-56b59c96a586
 ms.collection:
 - M365-security-compliance
 description: 如果您的组织发送大量垃圾邮件, 并将其标记为垃圾邮件, 则可能会阻止您使用 Office 365 发送电子邮件。 阅读本文, 了解有关此操作的原因以及您可以执行的操作的详细信息。
-ms.openlocfilehash: 0fcbe0c7b9d1bd340e2ab2feb5edec8283ecaf9a
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: 742006374b76156ffc2ffe6b158ef5e0ac890ebe
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32262304"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34157594"
 ---
 # <a name="controlling-outbound-spam-in-office-365"></a>控制 Office 365 中的出站垃圾邮件
 
@@ -38,9 +38,9 @@ ms.locfileid: "32262304"
 
 1. 将**出站流量分为不同 ip 池中的隔离流量**。 将扫描客户通过服务发送出站的每封邮件, 以查找垃圾邮件。 如果邮件是垃圾邮件, 它将通过高风险传递池进行路由。 此 IP 池包含未送达状态通知和垃圾邮件。 不能保证传递给预期收件人, 因为由于它发出电子邮件的质量原因, 许多第三方不会接受电子邮件。
 
-以这种方式拆分流量可确保较低质量的电子邮件 (垃圾邮件、退信 ndr) 不会向下拖动常规出站电子邮件池的信誉。 在 Internet 周围的多个接收器上, 高风险池通常具有较低的声誉, 尽管这不是通用的。 
+以这种方式拆分流量可确保较低质量的电子邮件 (垃圾邮件、退信 Ndr) 不会向下拖动常规出站电子邮件池的信誉。 在 Internet 周围的多个接收器上, 高风险池通常具有较低的声誉, 尽管这不是通用的。 
 
-2. **监视 IP 信誉**。 Office 365 查询各种第三方 IP blocklists, 如果其中列出了任何出站 ip, 将生成警报。 这使我们能够在垃圾邮件导致名誉下降时快速做出反应。 生成警报时, 我们有内部文档外外部要采取什么步骤来获取 delisted。 
+2. **监视 IP 信誉**。 Office 365 查询各种第三方 IP blocklists, 如果其中列出了任何出站 IP, 将生成警报。 这使我们能够在垃圾邮件导致名誉下降时快速做出反应。 生成警报时, 我们有内部文档外外部要采取什么步骤来获取 delisted。 
 
 3. 在**发送过多电子邮件标记为垃圾邮件时禁用违犯的帐户**。 即使我们将垃圾邮件和非垃圾邮件隔离成两个单独的出站 IP 池, 电子邮件帐户也无法无限期发送垃圾邮件。 我们会监视哪些帐户将发送垃圾邮件, 如果超过 undisclosed 限制, 将阻止该帐户发送垃圾邮件。
 
@@ -61,7 +61,7 @@ b. **使用第三方批量 emailer 发送大量通信**。 有几个第三方批
 
 消息传递、移动、恶意软件反滥用工作组 (MAAWG) 将[在此处](http://www.maawg.org/about/roster)发布其成员名单。 列表中有多个批量电子邮件提供商, 并且已知它们负责 Internet 公民。 
   
-## <a name="for-more-information"></a>有关详细信息
+## <a name="for-more-information"></a>详细信息
 
 [当发件人被阻止发送出站垃圾邮件时的示例通知](sample-notification-when-a-sender-is-blocked-sending-outbound-spam.md)
 

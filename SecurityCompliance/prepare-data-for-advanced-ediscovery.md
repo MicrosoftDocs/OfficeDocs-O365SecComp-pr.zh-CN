@@ -4,7 +4,7 @@ ms.author: chrfox
 author: chrfox
 manager: laurawi
 ms.date: 9/14/2017
-ms.audience: Admin
+audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
@@ -12,13 +12,13 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: 2fb94c23-1846-4a0e-994d-da6d02445f15
-description: '了解如何使用 Microsoft 365 安全&amp;合规中心来准备 office 365 数据, 以便使用 office 365 高级电子数据展示进行分析。 '
-ms.openlocfilehash: d9d81c145a86075affd76761eb6dcff0f84a1eac
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+description: '了解如何使用 Microsoft 365 安全&amp;合规中心来准备 office 365 数据, 以便使用 Office 365 高级电子数据展示进行分析。 '
+ms.openlocfilehash: be778acb3356071e9575ed708623a0b94e2b3c7a
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32265504"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34157454"
 ---
 # <a name="prepare-data-for-office-365-advanced-ediscovery"></a>准备用于 Office 365 高级电子数据展示的数据
 
@@ -29,12 +29,12 @@ ms.locfileid: "32265504"
   
 ## <a name="step-1-prepare-office-365-data-for-advanced-ediscovery"></a>步骤 1: 为高级电子数据展示准备 Office 365 数据
 
-若要使用高级电子数据展示分析数据, 可以使用在 microsoft 365 安全&amp;合规性中心 (在 microsoft 365 安全&amp;合规中心的**内容搜索**页中列出) 中运行的内容搜索的结果或与电子数据展示事例相关联的搜索 (在安全&amp;合规中心中的**电子数据展示**页面上列出)。 
+若要使用高级电子数据展示分析数据, 可以使用在 Microsoft 365 安全&amp;合规性中心 (在 Microsoft 365 安全&amp;合规中心的**内容搜索**页中列出) 中运行的内容搜索的结果或与电子数据展示事例相关联的搜索 (在安全&amp;合规中心中的**电子数据展示**页面上列出)。 
   
-有关在高级电子数据展示中准备搜索结果以供分析的详细步骤, 请参阅[Prepare search results for Office 365 Advanced ediscovery](prepare-search-results-for-advanced-ediscovery.md)。
+有关在高级电子数据展示中准备搜索结果以供分析的详细步骤, 请参阅[Prepare search results For Office 365 Advanced ediscovery](prepare-search-results-for-advanced-ediscovery.md)。
   
 > [!NOTE]
-> 如果您的数据在 office 365 外部, 并且想要将其导入到 office 365 以便在高级电子数据展示中准备和分析它, 请参阅在 office 365 中将[PST 文件导入到 office 365](https://support.office.com/article/ba688e0a-0fcb-4bd7-8e57-2b669564ea84)和[存档第三方数据](https://go.microsoft.com/fwlink/p/?linkid=716918)的概述。 
+> 如果您的数据在 Office 365 外部, 并且想要将其导入到 Office 365 以便在高级电子数据展示中准备和分析它, 请参阅在 Office 365 中将[PST 文件导入到 office 365](https://support.office.com/article/ba688e0a-0fcb-4bd7-8e57-2b669564ea84)和[存档第三方数据](https://go.microsoft.com/fwlink/p/?linkid=716918)的概述。 
   
 ## <a name="step-2-load-search-result-data-in-to-a-case-in-advanced-ediscovery"></a>步骤 2: 将搜索结果数据加载到高级电子数据展示中的案例
 

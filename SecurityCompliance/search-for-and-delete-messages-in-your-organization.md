@@ -3,7 +3,7 @@ title: 在 Office 365 组织中搜索和删除电子邮件-管理员帮助
 ms.author: markjjo
 author: markjjo
 manager: laurawi
-ms.audience: Admin
+audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
@@ -15,12 +15,12 @@ search.appverid:
 - MET150
 ms.assetid: 3526fd06-b45f-445b-aed4-5ebd37b3762a
 description: 使用 Office 365 的 Security & 合规性中心中的 "搜索和清除" 功能搜索和删除组织中所有邮箱的电子邮件。
-ms.openlocfilehash: c6fa0d09852016b918375dbff5a19468886d86b3
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: f654b643a5f1e4feac6e32a67843b2a6a9563bd0
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32265344"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34158474"
 ---
 # <a name="search-for-and-delete-email-messages-in-your-office-365-organization---admin-help"></a>在 Office 365 组织中搜索和删除电子邮件-管理员帮助
 
@@ -37,7 +37,7 @@ ms.locfileid: "32265344"
 > [!CAUTION]
 > 搜索和清除是一项强大的功能, 允许分配有必要权限的任何人从组织中的邮箱中删除电子邮件。 
   
-## <a name="before-you-begin"></a>准备工作
+## <a name="before-you-begin"></a>开始之前
 
 - 若要创建和运行内容搜索, 您必须是**电子数据展示管理器**角色组的成员, 或分配有**合规性搜索**管理角色。 若要删除邮件, 您必须是 "**组织管理**" 角色组的成员, 或者分配有 "**搜索和清除**" 管理角色。 有关向角色组添加用户的信息, 请参阅[向用户授予对安全与合规中心的访问权限](grant-access-to-the-security-and-compliance-center.md)。
     
@@ -47,7 +47,7 @@ ms.locfileid: "32265344"
     
 - 通过执行搜索和清除操作, 可以在内容搜索中删除项目的最大邮箱数为50000。 如果在[第1步](#step-1-create-a-content-search-to-find-the-message-to-delete)中创建的内容搜索的源邮箱多于50000个, 则清除操作 (在步骤3中创建) 将会失败。 有关在50000以上邮箱上执行搜索和清除操作的提示, 请参阅[详细信息](#more-information)部分。 
     
-- 本文中的过程仅可用于删除 Exchange Online 邮箱和公用文件夹中的项目。 您不能使用它从 SharePoint 或 OneDrive for business 网站中删除内容。
+- 本文中的过程仅可用于删除 Exchange Online 邮箱和公用文件夹中的项目。 您不能使用它从 SharePoint 或 OneDrive for Business 网站中删除内容。
     
 ## <a name="step-1-create-a-content-search-to-find-the-message-to-delete"></a>步骤 1：创建内容搜索来查找要删除的邮件
 
@@ -62,7 +62,7 @@ ms.locfileid: "32265344"
 - [Start-ComplianceSearch](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-content-search/Start-ComplianceSearch)
     
 > [!NOTE]
-> 在此步骤中创建的内容搜索中搜索的内容位置不能包含 SharePoint 或 OneDrive for business 网站。 只能在将用于电子邮件的内容搜索中包含邮箱和公用文件夹。 如果内容搜索包括网站, 则在运行**new-compliancesearchaction** cmdlet 时, 您将在步骤3中收到错误。 
+> 在此步骤中创建的内容搜索中搜索的内容位置不能包含 SharePoint 或 OneDrive for Business 网站。 只能在将用于电子邮件的内容搜索中包含邮箱和公用文件夹。 如果内容搜索包括网站, 则在运行**new-compliancesearchaction** cmdlet 时, 您将在步骤3中收到错误。 
   
 ### <a name="tips-for-finding-messages-to-remove"></a>查找要删除的邮件的提示
 
@@ -94,9 +94,9 @@ ms.locfileid: "32265344"
 
 ## <a name="step-2-connect-to-security--compliance-center-powershell"></a>步骤 2: 连接到安全 & 合规中心 PowerShell
 
-下一步是连接到组织的安全 & 合规中心 PowerShell。 有关分步说明, 请参阅[连接到 Security & 合规中心 PowerShell](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell)。
+下一步是连接到组织的安全 & 合规中心 PowerShell。 有关分步说明, 请参阅[连接到 Security _AMP_ 合规中心 PowerShell](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell)。
   
-如果您的 Office 365 帐户使用多重身份验证 (MFA) 或联合身份验证, 则不能使用上一主题中有关连接到安全 & 合规中心 PowerShell 的说明。 请参阅主题[使用多重身份验证连接到安全 & 合规中心 PowerShell](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/mfa-connect-to-scc-powershell)中的说明。
+如果您的 Office 365 帐户使用多重身份验证 (MFA) 或联合身份验证, 则不能使用上一主题中有关连接到安全 & 合规中心 PowerShell 的说明。 请参阅主题[使用多重身份验证连接到安全 _AMP_ 合规中心 PowerShell](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/mfa-connect-to-scc-powershell)中的说明。
   
 ## <a name="step-3-delete-the-message"></a>步骤 3: 删除邮件
 
@@ -118,7 +118,7 @@ New-ComplianceSearchAction -SearchName "Remove Phishing Message" -Purge -PurgeTy
   
 有关详细信息, 请参阅[new-compliancesearchaction](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-content-search/New-ComplianceSearchAction)。
 
-## <a name="more-information"></a>详细信息
+## <a name="more-information"></a>更多信息
 
 - **如何获取搜索和删除操作的状态？**
 
@@ -136,7 +136,7 @@ New-ComplianceSearchAction -SearchName "Remove Phishing Message" -Purge -PurgeTy
     
 - **是否将删除搜索结果中包含的未编制索引的项目？**
 
-    否, "new-compliancesearchaction-清除" 命令不会删除未编制索引的项目。 
+    否, "New-compliancesearchaction-清除" 命令不会删除未编制索引的项目。 
     
 - **如果从已置于就地保留或诉讼保留中的邮箱中删除邮件或将其分配给 Office 365 保留策略, 将会发生什么情况？**
 

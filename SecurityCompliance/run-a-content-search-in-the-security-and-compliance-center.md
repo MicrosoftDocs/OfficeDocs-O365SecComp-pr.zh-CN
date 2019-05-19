@@ -4,7 +4,7 @@ ms.author: markjjo
 author: markjjo
 manager: laurawi
 ms.date: 6/26/2018
-ms.audience: Admin
+audience: Admin
 ms.topic: article
 f1_keywords:
 - ms.o365.cc.ComplianceSearch
@@ -12,12 +12,12 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: 61852fd9-fe8a-4880-a339-cb19ed3bff4a
 description: '使用安全 & 合规中心中的内容搜索来搜索邮箱、SharePoint Online 网站和 OneDrive for business 位置。 '
-ms.openlocfilehash: 4c3d9cc024a495ff8464e1117d5f46c13c1b9a08
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: cebdbf7808534b82085affa16c06ac1929b3fd8d
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32261708"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34157094"
 ---
 # <a name="run-a-content-search-in-the-security--compliance-center"></a>在安全与合规中心运行内容搜索
 
@@ -25,9 +25,9 @@ ms.locfileid: "32261708"
   
 - Exchange Online 邮箱和公用文件夹
     
-- SharePoint Online 和 OneDrive for business 网站
+- SharePoint Online 和 OneDrive for Business 网站
     
-- Skype for business 对话
+- Skype for Business 对话
     
 - Microsoft Teams 
     
@@ -51,13 +51,13 @@ ms.locfileid: "32261708"
   
 
   
-## <a name="before-you-begin"></a>准备工作
+## <a name="before-you-begin"></a>开始之前
 
 - 有关生成搜索查询和使用布尔搜索运算符的信息和指南, 请参阅[用于内容搜索的关键字查询和搜索条件](keyword-queries-and-search-conditions.md)。 本文还包含有关搜索敏感信息类型和搜索与组织内部和外部的人员共享的内容的信息。
     
-- 若要访问**内容搜索**页以执行搜索和预览和导出搜索结果, 管理员、合规专员或电子数据展示管理器必须是 Security & 合规性中心中的电子数据展示管理器角色组的成员。 您无需在 Exchange online、SharePoint online 或 OneDrive for business 网站中分配其他搜索权限。 有关详细信息, 请参阅[在 Office 365 安全 & 合规中心中分配电子数据展示权限](assign-ediscovery-permissions.md)。
+- 若要访问**内容搜索**页以执行搜索和预览和导出搜索结果, 管理员、合规专员或电子数据展示管理器必须是 Security _AMP_ 合规性中心中的电子数据展示管理器角色组的成员。 您无需在 Exchange Online、SharePoint Online 或 OneDrive for Business 网站中分配其他搜索权限。 有关详细信息, 请参阅[在 Office 365 安全 _AMP_ 合规中心中分配电子数据展示权限](assign-ediscovery-permissions.md)。
     
-- 对内容搜索应用了限制, 以维护向 Office 365 组织提供的服务的运行状况和质量。 在大多数情况下, 不能修改这些限制, 但应了解这些限制, 以便在规划、运行和故障排除搜索时可以考虑这些限制。 有关详细信息, 请参阅[Security & 合规性中心中的搜索限制](limits-for-content-search.md)。
+- 对内容搜索应用了限制, 以维护向 Office 365 组织提供的服务的运行状况和质量。 在大多数情况下, 不能修改这些限制, 但应了解这些限制, 以便在规划、运行和故障排除搜索时可以考虑这些限制。 有关详细信息, 请参阅[Security _AMP_ 合规性中心中的搜索限制](limits-for-content-search.md)。
     
 - 根据在单个内容搜索中搜索的邮箱数, 查看估计的搜索时间部分。 
     
@@ -88,7 +88,7 @@ ms.locfileid: "32261708"
     
     ![选择要搜索的内容位置](media/da32e3f9-6cd6-4a26-8217-e97a5a7071e4.png)
   
-1. **搜索所有位置**选择此选项可搜索组织中的所有内容位置。 选择此选项时, 可以选择搜索所有邮箱 (包括非活动邮箱和所有 office 365 组和 Microsoft 团队的邮箱)、所有 SharePoint 和 OneDrive for business 网站 (包括所有 office 365 组的网站以及Microsoft 团队) 和所有公用文件夹。
+1. **搜索所有位置**选择此选项可搜索组织中的所有内容位置。 选择此选项时, 可以选择搜索所有邮箱 (包括非活动邮箱和所有 Office 365 组和 Microsoft 团队的邮箱)、所有 SharePoint 和 OneDrive for Business 网站 (包括所有 Office 365 组的网站以及Microsoft 团队) 和所有公用文件夹。
     
     ![单击 "搜索所有位置" 选项以搜索所有内容位置](media/86f132f1-0a2a-4048-900c-9f219d909ef2.png)
   
@@ -167,12 +167,12 @@ ms.locfileid: "32261708"
 ## <a name="export-search-results"></a>导出搜索结果
 <a name="export"> </a>
 
-成功运行搜索后, 可以将搜索结果导出到本地计算机。 导出电子邮件结果时, 会将其作为 PST 文件下载到您的计算机上。 当您从 SharePoint 和 OneDrive for business 网站导出内容时, 会导出本机 Office 文档的副本。 导出的搜索结果中还包含其他文档和报告。 有关详细信息, 请参阅[从 Security & 合规中心导出搜索结果](export-search-results.md)。
+成功运行搜索后, 可以将搜索结果导出到本地计算机。 导出电子邮件结果时, 会将其作为 PST 文件下载到您的计算机上。 当您从 SharePoint 和 OneDrive for business 网站导出内容时, 会导出本机 Office 文档的副本。 导出的搜索结果中还包含其他文档和报告。 有关详细信息, 请参阅[从 Security _AMP_ 合规中心导出搜索结果](export-search-results.md)。
   
 ## <a name="preview-search-results"></a>预览搜索结果
 <a name="preview"> </a>
 
-成功完成搜索后，可以预览搜索结果。 与预览内容搜索结果相关的限制有很多。 有关详细信息, 请参阅[Security & 合规性中心中的搜索限制](limits-for-content-search.md)。 请注意, 未编制索引的项目不能进行预览。
+成功完成搜索后，可以预览搜索结果。 与预览内容搜索结果相关的限制有很多。 有关详细信息, 请参阅[Security _AMP_ 合规性中心中的搜索限制](limits-for-content-search.md)。 请注意, 未编制索引的项目不能进行预览。
   
 1. 在 "**内容搜索**" 页上, 选择 "搜索"。 
     
@@ -265,8 +265,7 @@ ms.locfileid: "32261708"
  
 [Microsoft 团队和 Office 365 组](#microsoft-teams-and-office-365-groups)
   
-
-  [OneDrive for Business](#onedrive-for-business)
+[OneDrive for Business](#onedrive-for-business)
   
 [搜索查询](#search-queries)
   
@@ -278,7 +277,7 @@ ms.locfileid: "32261708"
   
 ### <a name="limits-and-performance"></a>限制和性能
   
-- 有关应用于内容搜索功能的限制的说明, 请参阅[Security & 合规性中心中的搜索限制](limits-for-content-search.md)。
+- 有关应用于内容搜索功能的限制的说明, 请参阅[Security _AMP_ 合规性中心中的搜索限制](limits-for-content-search.md)。
     
 - Microsoft 收集由所有 Office 365 组织运行的内容搜索的性能信息。 虽然搜索查询的复杂性可能会影响搜索时间, 但影响搜索所用时间的最大因素是搜索的邮箱数。 尽管 Microsoft 不提供搜索时间的服务级别协议, 但下表根据搜索中包括的邮箱数量列出了内容搜索的平均搜索时间。
     
@@ -318,9 +317,9 @@ ms.locfileid: "32261708"
     > [!NOTE]
     > 若要运行**remove-unifiedgroup** cmdlet, 您必须在 Exchange Online 中分配 "仅查看收件人" 角色, 或者是分配了 "仅查看收件人" 角色的角色组的成员。 
   
-  - 在搜索用户的邮箱时, 不会搜索用户是其成员的任何 Microsoft 团队或 Office 365 组。 同样, 当您搜索 Microsoft 团队或 Office 365 组时, 仅搜索您指定的组邮箱和组网站;除非将组成员的邮箱和 OneDrive for business 帐户显式添加到搜索中, 否则不会搜索这些帐户。
+  - 在搜索用户的邮箱时, 不会搜索用户是其成员的任何 Microsoft 团队或 Office 365 组。 同样, 当您搜索 Microsoft 团队或 Office 365 组时, 仅搜索您指定的组邮箱和组网站;除非将组成员的邮箱和 OneDrive for Business 帐户显式添加到搜索中, 否则不会搜索这些帐户。
     
-  - 若要获取 microsoft 团队或 Office 365 组成员的列表, 您可以在 Microsoft 365 管理中心的 "**家庭\>组**" 页上查看属性。 或者, 您可以在 Exchange Online PowerShell 中运行以下命令: 
+  - 若要获取 Microsoft 团队或 Office 365 组成员的列表, 您可以在 Microsoft 365 管理中心的 "**家庭\>组**" 页上查看属性。 或者, 您可以在 Exchange Online PowerShell 中运行以下命令: 
     
   ```
   Get-UnifiedGroupLinks <group or team name> -LinkType Members | FL DisplayName,PrimarySmtpAddress 
@@ -329,11 +328,11 @@ ms.locfileid: "32261708"
     > [!NOTE]
     > 若要运行**UnifiedGroupLinks** cmdlet, 您必须在 Exchange Online 中分配 "仅查看收件人" 角色, 或者是分配了 "仅查看收件人" 角色的角色组的成员。 
   
-  - 属于 microsoft 团队渠道的对话存储在与 microsoft 团队相关联的邮箱中。 同样, 在频道中共享的工作组成员的文件存储在团队的 SharePoint 网站上。 因此, 您必须将 Microsoft 团队邮箱和 SharePoint 网站添加为内容位置, 以便在频道中搜索对话和文件。
+  - 属于 Microsoft 团队渠道的对话存储在与 Microsoft 团队相关联的邮箱中。 同样, 在频道中共享的工作组成员的文件存储在团队的 SharePoint 网站上。 因此, 您必须将 Microsoft 团队邮箱和 SharePoint 网站添加为内容位置, 以便在频道中搜索对话和文件。
     
   - 
     
-    或者, 在 Microsoft 团队中作为聊天列表一部分的对话存储在参与聊天的用户的 Exchange Online 邮箱中。 以及用户在聊天对话中共享的文件存储在共享该文件的用户的 OneDrive for business 帐户中。 因此, 您必须将单个用户邮箱和 OneDrive for business 帐户添加为在聊天列表中搜索对话和文件的内容位置。
+    或者, 在 Microsoft 团队中作为聊天列表一部分的对话存储在参与聊天的用户的 Exchange Online 邮箱中。 以及用户在聊天对话中共享的文件存储在共享该文件的用户的 OneDrive for Business 帐户中。 因此, 您必须将单个用户邮箱和 OneDrive for Business 帐户添加为在聊天列表中搜索对话和文件的内容位置。
     
     > [!NOTE]
     > 参与在 Microsoft 团队中作为聊天列表一部分的对话的用户必须具有 Exchange Online (基于云的) 邮箱, 您才能搜索对话对话。 这是因为聊天列表中的对话存储在聊天参与者的基于云的邮箱中。 如果聊天参与者没有 Exchange Online 邮箱, 将无法搜索对话对话。 例如, 在 Exchange 混合部署中, 具有本地邮箱的用户可能能够参与属于 Microsoft 团队中的聊天列表的对话。 但是在这种情况下, 无法搜索这些对话中的内容, 因为用户不具有基于云的邮箱。 
@@ -345,7 +344,7 @@ ms.locfileid: "32261708"
   
 ### <a name="onedrive-for-business"></a>OneDrive for Business
   
-- 若要收集组织中的 onedrive for business 网站的 url 列表, 请参阅[创建组织中所有 onedrive 位置的列表](https://support.office.com/article/8e200cb2-c768-49cb-88ec-53493e8ad80a)。 本文中的脚本创建一个文本文件, 其中包含所有 OneDrive for business 网站的列表。 若要运行此脚本, 您必须安装并使用 SharePoint Online 命令行管理程序。 请务必将组织的 "我的网站" 域的 URL 追加到要搜索的每个 OneDrive for business 网站。 这是包含所有 OneDrive for business 的域;例如, `https://contoso-my.sharepoint.com`。 下面的示例展示了用户的 OneDrive for business 网站的 URL: `https://contoso-my.sharepoint.com/personal/sarad_contoso_onmicrosoft.com`。
+- 若要收集组织中的 OneDrive for business 网站的 Url 列表, 请参阅[创建组织中所有 onedrive 位置的列表](https://support.office.com/article/8e200cb2-c768-49cb-88ec-53493e8ad80a)。 本文中的脚本创建一个文本文件, 其中包含所有 OneDrive for Business 网站的列表。 若要运行此脚本, 您必须安装并使用 SharePoint Online 命令行管理程序。 请务必将组织的 "我的网站" 域的 URL 追加到要搜索的每个 OneDrive for business 网站。 这是包含所有 OneDrive for Business 的域;例如, `https://contoso-my.sharepoint.com`。 下面的示例展示了用户的 OneDrive for Business 网站的 URL: `https://contoso-my.sharepoint.com/personal/sarad_contoso_onmicrosoft.com`。
     
 
 ### <a name="search-queries"></a>搜索查询

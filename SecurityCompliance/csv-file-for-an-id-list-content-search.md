@@ -4,7 +4,7 @@ ms.author: markjjo
 author: markjjo
 manager: laurawi
 ms.date: 3/21/2018
-ms.audience: Admin
+audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
@@ -12,16 +12,16 @@ ms.collection: M365-security-compliance
 search.appverid: MOE150
 ms.assetid: 82c97bb4-2b64-4edc-804d-cedbda525d22
 description: 使用来自现有内容搜索的结果 .csv 或未编制索引的项目 .csv 文件来创建一个可返回特定电子邮件的 ID 列表搜索。 ID 列表搜索通常用于返回部分索引的邮箱项目。
-ms.openlocfilehash: fc26f8dab11f1121deb11dd93b2cd0c70a1d629c
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: 4b28032761961dcac03a15de216e29253f4ab430
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32265440"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34151144"
 ---
 # <a name="prepare-a-csv-file-for-an-id-list-content-search-in-office-365"></a>为 Office 365 中的 ID 列表内容搜索准备 CSV 文件
 
-您可以使用 Exchange id 列表搜索特定邮箱电子邮件和其他邮箱项目。 若要创建 ID 列表搜索 (正式称为目标搜索), 请提交一个逗号分隔值 (CSV) 文件, 该文件标识要搜索的特定邮箱项目。 对于此 CSV 文件, 您可以使用导出内容搜索结果或从现有内容搜索中导出内容搜索报告时包含的**结果 .csv**文件或未**编制索引的项目 .csv**文件。 然后, 编辑其中一个文件以指示要搜索的特定项目, 然后创建一个新的 ID 列表搜索并提交 CSV 文件。 
+您可以使用 Exchange Id 列表搜索特定邮箱电子邮件和其他邮箱项目。 若要创建 ID 列表搜索 (正式称为目标搜索), 请提交一个逗号分隔值 (CSV) 文件, 该文件标识要搜索的特定邮箱项目。 对于此 CSV 文件, 您可以使用导出内容搜索结果或从现有内容搜索中导出内容搜索报告时包含的**结果 .csv**文件或未**编制索引的项目 .csv**文件。 然后, 编辑其中一个文件以指示要搜索的特定项目, 然后创建一个新的 ID 列表搜索并提交 CSV 文件。 
   
 以下是创建 ID 列表搜索的过程的快速概述。
   
@@ -55,7 +55,7 @@ ms.locfileid: "32265440"
 3. 在 "**所选**" 列中, 在与要搜索的项目相对应的单元格中键入 **"是"** 。 对要搜索的每个项目重复此步骤。 
     
     > [!IMPORTANT]
-    > 当您在 Excel 中打开 CSV 文件时, "**文档 ID** " 列的数据格式将更改为 "**常规**"。 这将导致显示科学记数法中项的文档 ID。 例如, 文档 id "481037338205" 显示为 "4.81037 e + 11"。必须执行后续步骤将**文档 id**列的数据格式更改为 "**数字**", 以还原文档 id 的正确格式。 如果不执行此操作, 则使用 CSV 文件的 ID 列表搜索将失败。 
+    > 当您在 Excel 中打开 CSV 文件时, "**文档 ID** " 列的数据格式将更改为 "**常规**"。 这将导致显示科学记数法中项的文档 ID。 例如, 文档 ID "481037338205" 显示为 "4.81037 E + 11"。必须执行后续步骤将**文档 id**列的数据格式更改为 "**数字**", 以还原文档 id 的正确格式。 如果不执行此操作, 则使用 CSV 文件的 ID 列表搜索将失败。 
   
 4. 右键单击整个 "**文档 ID** " 列, 然后选择 "**设置单元格格式**"。
     

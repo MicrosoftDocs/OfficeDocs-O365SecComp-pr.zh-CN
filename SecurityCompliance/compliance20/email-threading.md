@@ -4,7 +4,7 @@ ms.author: markjjo
 author: markjjo
 manager: laurawi
 ms.date: ''
-ms.audience: Admin
+audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: ca4823ecfc06ddc0ef6f6840ad55fec492ac472c
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: 7bfae202886d4c1af5914f4b49d0e4d528b8975d
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32243803"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34155044"
 ---
 # <a name="email-threading"></a>电子邮件会话
 
@@ -27,7 +27,7 @@ ms.locfileid: "32243803"
 
 ## <a name="what-does-email-threading-do"></a>电子邮件线程处理的功能是什么？
 
-电子邮件线程分析每封电子邮件并将其 desconstructs 给各个邮件;每封电子邮件是单个邮件的链。 然后, 它会分析工作集中的所有电子邮件, 以确定电子邮件是否具有唯一内容, 或者如果该链完全包含在不同的电子邮件中。 在最终电子邮件中分为四个类别:
+电子邮件线程分析每封电子邮件并将其 desconstructs 给各个邮件;每封电子邮件是单个邮件的链。 然后, 它将分析评审集中的所有电子邮件, 以确定电子邮件是否具有唯一内容, 或者如果该链完全包含在不同的电子邮件中。 在最终电子邮件中分为四个类别:
 
 - **包含**: 电子邮件中的最后一封邮件具有唯一内容, 并且电子邮件包含其他电子邮件中包含的所有附件, 这些附件中的内容完全包含在此电子邮件中。
 

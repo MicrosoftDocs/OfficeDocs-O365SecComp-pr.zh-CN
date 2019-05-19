@@ -3,7 +3,7 @@ title: 在 Office 365 中管理法律调查
 ms.author: markjjo
 author: markjjo
 manager: laurawi
-ms.audience: Admin
+audience: Admin
 ms.topic: conceptual
 ms.service: O365-seccomp
 localization_priority: Normal
@@ -13,12 +13,12 @@ search.appverid:
 - MET150
 ms.assetid: 2e5fbe9f-ee4d-4178-8ff8-4356bc1b168e
 description: 使用 Office 365 中安全 & 合规中心中的电子数据展示案例来管理您的组织的法律调查。 如果你拥有 E5 订阅, 则可以使用高级电子数据展示的文本分析、机器学习和预测编码功能进一步分析事例数据。
-ms.openlocfilehash: 5bfa4719f2bb065a7064e7dc9d02778a4d032da8
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: 6f5b7bc7b1c8d672efe60629b1ccf1315c8b74dd
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32252090"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34155724"
 ---
 # <a name="manage-legal-investigations-in-office-365"></a>在 Office 365 中管理法律调查
 
@@ -65,7 +65,7 @@ Office 365 高级电子数据展示构建在上一节中介绍的内容搜索和
   
 - 获取高级电子数据展示工作流的[快速概述](quick-setup-for-advanced-ediscovery.md) 
     
-- 通过创建案例、分配电子数据展示权限和添加事例成员来设置高级电子数据展示的[用户和案例](set-up-users-and-cases-in-advanced-ediscovery.md), 所有方法都使用安全 & 合规性中心 
+- 通过创建案例、分配电子数据展示权限和添加事例成员来设置高级电子数据展示的[用户和案例](set-up-users-and-cases-in-advanced-ediscovery.md), 所有方法都使用安全 _AMP_ 合规性中心 
     
 - 在高级电子数据展示中为事例[准备和加载搜索数据](prepare-data-for-advanced-ediscovery.md) 
     

@@ -4,18 +4,18 @@ ms.author: chrisda
 author: chrisda
 manager: serdars
 ms.date: 12/18/2017
-ms.audience: ITPro
+audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: f40253f2-50a1-426e-9979-be74ba74cb61
 description: Microsoft Exchange Online Protection (EOP) 提供许多不同的报告，可帮助您确定组织的总体状态和运行状况。此外，还提供可帮助您解决特定事件（例如邮件没有到达目标收件人）的工具，以及协助满足合规性要求的审核报告。下表描述了 EOP 管理员可用的报告和故障排除工具。
-ms.openlocfilehash: fcefa14991d074f1f4459007c16dd7f4df1cedd1
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: 0dcacec586408bf98ad4c67c11ae3bde3a8e9315
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32256270"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34154614"
 ---
 # <a name="reporting-and-message-trace-in-exchange-online-protection"></a>Exchange Online Protection 中的报告和邮件跟踪
 
@@ -33,7 +33,7 @@ Microsoft Exchange Online Protection (EOP) 提供许多不同的报告，可帮�
 
 有关详细信息，请参阅以下资源：
 
-- [admin center 中的 office 365 报告-Office 365 组](https://go.microsoft.com/fwlink/p/?linkid=861610) 
+- [Admin center 中的 office 365 报告-Office 365 组](https://go.microsoft.com/fwlink/p/?linkid=861610) 
 - [管理中心内的 Office 365 报告-电子邮件活动](https://go.microsoft.com/fwlink/p/?linkid=859706) 
 - [管理中心中的 Office 365 报表-电子邮件应用程序使用情况](https://go.microsoft.com/fwlink/p/?linkid=859707)
 - [管理中心中的 Office 365 报表-邮箱使用情况](https://go.microsoft.com/fwlink/p/?linkid=859708)
@@ -50,7 +50,7 @@ Microsoft Exchange Online Protection (EOP) 提供许多不同的报告，可帮�
 
 ##<a name="custom-reports-using-microsoft-graph"></a>使用 Microsoft Graph 的自定义报告
 
-使用 microsoft graph 以编程方式创建 microsoft 365 管理中心提供的报告。有关[在 microsoft graph 中使用 Office 365 使用率报告](https://go.microsoft.com/fwlink/p/?linkid=865135)的主题 
+使用 Microsoft Graph 以编程方式创建 Microsoft 365 管理中心提供的报告。有关[在 Microsoft graph 中使用 Office 365 使用率报告](https://go.microsoft.com/fwlink/p/?linkid=865135)的主题 
 
 ##<a name="custom-reports-using-reporting-web-services"></a>使用报告 Web 服务的自定义报告
 

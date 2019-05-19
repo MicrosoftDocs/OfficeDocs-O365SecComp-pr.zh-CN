@@ -4,7 +4,7 @@ ms.author: markjjo
 author: markjjo
 manager: laurawi
 ms.date: ''
-ms.audience: Admin
+audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
@@ -14,27 +14,27 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: 82c6cb419ce00aca0d636083aa41a3384cb6bb01
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: 9efb9d92681eb8eac30aa9335e8d521c3350a36e
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32257030"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34153614"
 ---
 # <a name="view-the-audit-activity-of-people-of-interest"></a>查看相关人员的审核活动
 
 需要查找用户是否查看了特定文档或清除了其邮箱中的项目？ 数据调查 (预览版) 现已与 Security & 合规中心中的现有审核日志搜索工具集成。 使用这种嵌入的体验, 您可以使用 "数据调查" (预览) 相关人员管理工具来帮助您进行调查, 从而轻松访问和搜索调查中感兴趣的人员的活动。
 
-## <a name="before-you-begin"></a>准备工作
+## <a name="before-you-begin"></a>开始之前
 
-您必须在 Exchange Online 中向您分配 "仅查看审核日志" 或 "审核日志" 角色, 才能搜索 Office 365 审核日志。 默认情况下, 将这些角色分配给 Exchange 管理中心中 "权限" 页上的 "合规性管理" 和 "组织管理" 角色组。 若要使用户能够使用最低级别的权限搜索数据调查 (预览) 审核日志, 您可以在 Exchange Online 中创建自定义角色组, 添加仅查看审核日志或审核日志角色, 然后将该用户添加为新角色 gr 的成员oup。 有关详细信息, 请参阅在 Exchange Online 中管理角色组。
+您必须在 Exchange Online 中向您分配 "仅查看审核日志" 或 "审核日志" 角色, 才能搜索 Office 365 审核日志。 默认情况下, 将这些角色分配给 Exchange 管理中心中 "权限" 页上的 "合规性管理" 和 "组织管理" 角色组。 若要使用户能够使用最低级别的权限搜索数据调查 (预览) 审核日志, 您可以在 Exchange Online 中创建自定义角色组, 添加仅查看审核日志或审核日志角色, 然后将该用户添加为新角色 gr 的成员oup. 有关详细信息, 请参阅在 Exchange Online 中管理角色组。
 
 > [!IMPORTANT]
 > 如果在 Security & 合规性中心的 "权限" 页上为用户分配 "仅查看审核日志" 或 "审核日志" 角色, 则他们将无法搜索 Office 365 审核日志。 您必须在 Exchange Online 中分配权限。 这是因为用于搜索审核日志的基础 cmdlet 是 Exchange Online cmdlet。
 
 ## <a name="step-1-create-an-data-investigations-preview-audit-log-search"></a>步骤 1: 创建数据调查 (预览) 审核日志搜索
 
-   1. 从**Security & 合规性中心 > 数据调查 (预览)** 中选择现有调查。
+   1. 从**Security _AMP_ 合规性中心 _GT_ 数据调查 (预览)** 中选择现有调查。
    
    2. 导航到 "**感兴趣的人员**" 选项卡, 然后选择一个人员。
    
@@ -59,9 +59,9 @@ ms.locfileid: "32257030"
 
 - **IP 地址**: 记录活动时使用的设备的 ip 地址。 IP 地址显示为 IPv4 或 IPv6 地址格式。
 
-- **user**: 执行触发事件的操作的用户 (或服务帐户)。
+- **User**: 执行触发事件的操作的用户 (或服务帐户)。
 
-- **活动**: 用户执行的活动。 此值与您在 "活动" 下拉列表中选择的活动相对应。 对于来自 exchange 管理员审核日志的事件, 此列中的值为 exchange cmdlet。
+- **活动**: 用户执行的活动。 此值与您在 "活动" 下拉列表中选择的活动相对应。 对于来自 Exchange 管理员审核日志的事件, 此列中的值为 Exchange cmdlet。
 
 - **Item**: 作为相应活动的结果创建或修改的对象。 例如, 已查看或修改的文件或已更新的用户帐户。 此列中并非所有活动都具有值。
 

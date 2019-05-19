@@ -3,7 +3,7 @@ title: 为 Office 365 高级电子数据展示准备搜索结果
 ms.author: markjjo
 author: markjjo
 manager: laurawi
-ms.audience: Admin
+audience: Admin
 ms.topic: article
 f1_keywords:
 - ms.o365.cc.CustomizeExportWithZoom
@@ -15,12 +15,12 @@ ms.collection:
 search.appverid: MOE150
 ms.assetid: 0b6fac2d-8627-4b05-9df0-03609db6248b
 description: 了解如何在 Office 365 的 Security & 合规性中心中准备内容搜索结果, 以使用高级电子数据展示工具进行进一步分析。
-ms.openlocfilehash: 772ef8e24613a0fb872f0c397d7ea80bdad16e4b
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: 244fae317964261ad1eeadbdca2d4dffeda0a23a
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32261974"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34157464"
 ---
 # <a name="prepare-search-results-for-office-365-advanced-ediscovery"></a>为 Office 365 高级电子数据展示准备搜索结果
 
@@ -30,7 +30,7 @@ ms.locfileid: "32261974"
 
     - GIF
     - JPEG
-    - .jpg
+    - .JPG
     - PNG
     - TIFF
     
@@ -44,7 +44,7 @@ ms.locfileid: "32261974"
     
 - **导出数据以供审阅应用程序**-在完成分析并减小数据集后, 您可以从高级电子数据展示和 Office 365 导出数据。 导出包包含一个 CSV 文件, 其中包含导出的内容和分析元数据中的属性。 然后, 可以将此导出包导入到电子数据展示审阅应用程序中。 
     
-## <a name="before-you-begin"></a>准备工作
+## <a name="before-you-begin"></a>开始之前
 
 - 若要使用高级电子数据展示分析用户的数据, 必须为用户 (数据管理员) 分配 Office 365 E5 许可证。 或者, 可以为具有 Office 365 E1 或 E3 许可证的用户分配高级电子数据展示独立许可证。 分配给案例并使用高级电子数据展示分析数据的管理员和合规性监察官不需要 E5 许可证。 
     
@@ -107,7 +107,7 @@ ms.locfileid: "32261974"
 
 将电子数据展示搜索的结果添加到事例之后, 下一步是使用高级电子数据展示工具来分析数据, 并确定对特定法律案例做出响应的内容。 有关使用高级电子数据展示的信息, 请参阅[Office 365 高级电子数据展示](office-365-advanced-ediscovery.md)。
   
-## <a name="more-information"></a>详细信息
+## <a name="more-information"></a>更多信息
 
 在准备高级电子数据展示中的分析时, 搜索结果中包含的任何 RMS 加密的电子邮件都将被解密。 默认情况下, 将为电子数据展示管理器角色组的成员启用此解密功能。 这是因为将 RMS 解密管理角色分配给此角色组。 请记住以下有关解密电子邮件的事项:
   

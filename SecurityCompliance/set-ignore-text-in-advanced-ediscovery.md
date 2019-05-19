@@ -4,7 +4,7 @@ ms.author: chrfox
 author: chrfox
 manager: laurawi
 ms.date: 9/14/2017
-ms.audience: Admin
+audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
@@ -13,12 +13,12 @@ search.appverid:
 - MET150
 ms.assetid: 44055727-56e8-42d7-9dc3-fb942f3901cc
 description: '了解在使用 Office 365 高级电子数据展示中的分析和处理模块时, 如何定义要忽略特定文本的规则。  '
-ms.openlocfilehash: 3a4c1d17a9a56d3018509a8dcfd6b49abb951676
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: 70d9879f1cb6b3def06ff978fc2f7fa8f20a92f0
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32260814"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34156674"
 ---
 # <a name="set-ignore-text-option-for-analyze-in-office-365-advanced-ediscovery"></a>设置用于在 Office 365 高级电子数据展示中进行分析的 "忽略文本" 选项
 
@@ -27,7 +27,7 @@ ms.locfileid: "32260814"
   
 "忽略文本" 功能可应用于以下所有高级电子数据展示模块或以下任一高级电子数据展示模块: 分析 (接近重复项、电子邮件线程、主题) 和相关性。 已忽略的文本不会出现在相关性中显示的文件中, 并且分析/计算将丢弃忽略的文本。
   
-如果之前已为已运行的模块定义了 ignore text 功能, 则 "忽略文本" 设置现在将受到保护, 无法进行修改。 但是, 相关性模块的 Ignore Text 功能仍可在任何时候更改。
+如果之前已为已运行的模块定义了 Ignore Text 功能, 则 "忽略文本" 设置现在将受到保护, 无法进行修改。 但是, 相关性模块的 Ignore Text 功能仍可在任何时候更改。
   
 ## <a name="how-ignore-text-filters-are-applied"></a>如何应用 "忽略文本" 筛选器
 
@@ -69,7 +69,7 @@ ms.locfileid: "32260814"
     
      `Begin(.|\s)*End`
     
-    其中, "Begin" 和 "end" 是换行文本段落的开头和结尾的唯一字符串。 
+    其中, "Begin" 和 "End" 是换行文本段落的开头和结尾的唯一字符串。 
     
     例如, 以下正则表达式将删除在开始和结束字符串之间的电子邮件线程中的免责声明和法律声明:
     

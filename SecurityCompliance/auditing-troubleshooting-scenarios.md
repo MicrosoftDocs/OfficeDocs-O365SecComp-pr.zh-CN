@@ -3,7 +3,7 @@ title: 搜索 Office 365 审核日志以解决常见方案
 ms.author: markjjo
 author: markjjo
 manager: laurawi
-ms.audience: Admin
+audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 - MOE150
 description: 您可以使用 Office 365 审核日志搜索工具来帮助您解决常见问题, 例如调查受损帐户或找出为邮箱设置电子邮件转发的用户。
-ms.openlocfilehash: bd0483f2b2e209dc0cbd2b03eda928fd8d44d7b0
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: e5c043668d73bdff30dfce962962a015a6748949
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32250236"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34155674"
 ---
 # <a name="search-the-office-365-audit-log-to-troubleshoot-common-scenarios"></a>搜索 Office 365 审核日志以解决常见方案
 
@@ -56,7 +56,7 @@ ms.locfileid: "32250236"
 
     c. **用户**-在此框中单击, 然后选择一个或多个用户来显示的搜索结果。 您在此框中选择的用户执行的选定活动的审核记录将显示在结果列表中。 将此框保留为空将返回组织中所有用户 (和服务帐户) 的条目。
     
-    d. **文件、文件夹或站点**类型部分或全部文件或文件夹名称, 以搜索与包含指定关键字的文件夹文件相关的活动。 您还可以指定文件或文件夹的 URL。 如果使用 URL, 请确保键入完整的 url 路径, 或者如果只键入 url 的一部分, 则不要包含任何特殊字符或空格。 将此框保留为空将返回组织中的所有文件和文件夹的条目。 请注意, 在本文中的所有故障排除方案中, 此字段将留空。
+    d. **文件、文件夹或站点**类型部分或全部文件或文件夹名称, 以搜索与包含指定关键字的文件夹文件相关的活动。 您还可以指定文件或文件夹的 URL。 如果使用 URL, 请确保键入完整的 URL 路径, 或者如果只键入 URL 的一部分, 则不要包含任何特殊字符或空格。 将此框保留为空将返回组织中的所有文件和文件夹的条目。 请注意, 在本文中的所有故障排除方案中, 此字段将留空。
     
 5. 单击 "**搜索**" 以使用搜索条件运行搜索。 
     
@@ -85,7 +85,7 @@ ms.locfileid: "32250236"
 
 **文件、文件夹或网站**-将此字段留空。
 
-运行搜索后, 每个活动的 ip 地址将显示在搜索结果的 " **ip 地址**" 列中。 单击搜索结果中的记录, 以查看有关弹出页面的更多详细信息。
+运行搜索后, 每个活动的 IP 地址将显示在搜索结果的 " **ip 地址**" 列中。 单击搜索结果中的记录, 以查看有关弹出页面的更多详细信息。
 
 ## <a name="determining-who-set-up-email-forwarding-for-a-mailbox"></a>确定为邮箱设置电子邮件转发的身份
 
@@ -127,7 +127,7 @@ Set-Mailbox <mailbox alias> -ForwardingSmtpAddress $null
 
 ## <a name="determining-if-a-user-deleted-email-items"></a>确定用户是否已删除电子邮件项目
 
-从2019年1月起, microsoft 将默认针对所有 Office 365 和 Microsoft 组织启用邮箱审核日志记录。 这意味着邮箱所有者执行的某些操作将会自动记录, 当您在邮箱审核日志中搜索相应的邮箱审核记录时, 这些记录将可用。 默认情况下, 邮箱审核启用前, 您必须为组织中的每个用户邮箱手动启用它。 
+从2019年1月起, Microsoft 将默认针对所有 Office 365 和 Microsoft 组织启用邮箱审核日志记录。 这意味着邮箱所有者执行的某些操作将会自动记录, 当您在邮箱审核日志中搜索相应的邮箱审核记录时, 这些记录将可用。 默认情况下, 邮箱审核启用前, 您必须为组织中的每个用户邮箱手动启用它。 
 
 默认情况下记录的邮箱操作包括邮箱所有者执行的 SoftDelete 和 HardDelete 邮箱操作。 这意味着您可以使用以下步骤在审核日志中搜索与已删除电子邮件项目相关的事件。 有关默认情况下邮箱审核的详细信息, 请参阅[管理邮箱审核](enable-mailbox-auditing.md)。
 

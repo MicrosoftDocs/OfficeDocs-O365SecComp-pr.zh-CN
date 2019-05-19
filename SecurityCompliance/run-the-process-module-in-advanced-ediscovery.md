@@ -4,7 +4,7 @@ ms.author: chrfox
 author: chrfox
 manager: laurawi
 ms.date: 9/14/2017
-ms.audience: Admin
+audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
@@ -12,13 +12,13 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: dbc1e251-0596-443b-ac9b-f398ba955b73
-description: '了解使用 office 365 高级电子数据展示为分析准备 office 365 数据的大小写文件的指南。  '
-ms.openlocfilehash: 19d50bda21f752ec7c22fe52b6fa7272592de128
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+description: '了解使用 office 365 高级电子数据展示为分析准备 Office 365 数据的大小写文件的指南。  '
+ms.openlocfilehash: 75b6b23a913a6aa8b732501b1c52afb55b47e51e
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32261030"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34156734"
 ---
 # <a name="run-the-process-module-in-office-365-advanced-ediscovery"></a>在 Office 365 高级电子数据展示中运行流程模块
 
@@ -47,7 +47,7 @@ ms.locfileid: "32261030"
     
 - **文件路径**: 高级电子数据展示可以加载最长为400个字符的路径长度的文件。
     
-- **文本提取**: 从本机文件中提取文本时, 除了常规文本之外, 还会提取以下内容: 隐藏文本 (excel 和 .doc)、隐藏列 (Excel)、跟踪更改 (.doc)、演讲者备注 (.ppt)、嵌入对象 (例如,.ppt 中的 Excel 对象)。 可以在文本编辑器中查看这些内容。
+- **文本提取**: 从本机文件中提取文本时, 除了常规文本之外, 还会提取以下内容: 隐藏文本 (excel 和 .doc)、隐藏列 (Excel)、跟踪更改 (.doc)、演讲者备注 (.ppt)、嵌入对象 (例如,.Ppt 中的 Excel 对象)。 可以在文本编辑器中查看这些内容。
     
 - **Ignore Text**: 此可选功能是在运行进程之后和分析前定义的。 应谨慎使用 "忽略" 文本, 因为它的使用可能会降低文件分析的性能。
     
@@ -57,7 +57,7 @@ ms.locfileid: "32261030"
     
   - 如果文件最初是按路径加载, 则在随后导入元数据时映射 "路径" 列。 可以按 ID 引用文件并映射不同的路径。 当文件路径发生更改时, 这是一种非常有用的方案。
     
-  - 如果文件最初是按文件 ID 加载, 则在加载元数据时映射 ID 列。 通过路径 (而不是 ID) 引用文件将导致使用不同的 id 重新加载文件。 高级电子数据展示将创建文件副本, 而不是加载现有文件的元数据。
+  - 如果文件最初是按文件 ID 加载, 则在加载元数据时映射 ID 列。 通过路径 (而不是 ID) 引用文件将导致使用不同的 ID 重新加载文件。 高级电子数据展示将创建文件副本, 而不是加载现有文件的元数据。
     
 - **系列**: 无法加载没有其父 (系列头部) 的家庭。 
     

@@ -4,18 +4,18 @@ ms.author: krowley
 author: kccross
 manager: laurawi
 ms.date: 12/9/2016
-ms.audience: ITPro
+audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: 81b75194-3b04-48da-8b81-951afbabedde
 description: 本主题的目的是帮助您了解从内部部署电子邮件卫生设备或基于云的保护服务切换到 Exchange Online Protection (EOP) 的过程，然后为您提供开始操作的帮助资源。
-ms.openlocfilehash: 0c33d89be5cb4ebf7719e6742532ebfc7a2e5c20
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: 7e91c8b4d93d6d7aee55283e52bef92748fc49e1
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32256200"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34154574"
 ---
 # <a name="switch-to-eop-from-google-postini-the-barracuda-spam-and-virus-firewall-or-cisco-ironport"></a>从 Google Postini、Barracuda 垃圾邮件和病毒防火墙或 Cisco IronPort 切换到 EOP
 
@@ -56,7 +56,7 @@ ms.locfileid: "32256200"
   
 - **自定义筛选规则** 如果您有自定义筛选或业务策略规则来捕获特定垃圾邮件，则建议您迁移规则之前，尝试一段时间带有默认设置的 EOP。 EOP 提供了具有默认设置的企业级垃圾邮件保护，这可能表示您不需要将某些规则迁移到 EOP。 当然，如果您有现成的强制特定自定义业务策略的规则，则可以创建这些规则。 [Exchange Online Protection 中的邮件流规则 (传输规则)](mail-flow-rules-transport-rules-0.md)提供了有关在 EOP 中创建邮件流规则的详细说明。 
     
-- **IP 允许列表和 IP 阻止列表** 如果您有每个用户的允许列表和阻止列表，请在设置过程中，花费一些时间将这些列表复制到 EOP。 有关 ip 允许列表和 ip 阻止列表的详细信息, 请参阅[Configure the connection filter policy](../configure-the-connection-filter-policy.md)。
+- **IP 允许列表和 IP 阻止列表** 如果您有每个用户的允许列表和阻止列表，请在设置过程中，花费一些时间将这些列表复制到 EOP。 有关 IP 允许列表和 IP 阻止列表的详细信息, 请参阅[Configure the connection filter policy](../configure-the-connection-filter-policy.md)。
     
 - **安全通信** 如果您的合作伙伴需要加密邮件传递，我们建议在 Exchange 管理中心中进行该设置。若要配置此方案，请参阅 [Create connectors for a secure mail channel using transport layer security (TLS)](http://technet.microsoft.com/library/1ce4d6a4-41ba-4d1e-9ca9-e826252c1041.aspx)。
     

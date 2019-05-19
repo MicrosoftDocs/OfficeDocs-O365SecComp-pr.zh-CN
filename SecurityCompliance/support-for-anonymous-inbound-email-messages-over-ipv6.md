@@ -4,7 +4,7 @@ ms.author: tracyp
 author: MSFTTracyP
 manager: laurawi
 ms.date: ''
-ms.audience: ITPro
+audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
@@ -13,13 +13,13 @@ search.appverid:
 ms.assetid: b68df621-0a5f-4824-8abc-41e0c4fd1398
 ms.collection:
 - M365-security-compliance
-description: 了解如何为 exchange online Protection 和 exchange online 配置来自 IPv6 源的匿名邮件支持。
-ms.openlocfilehash: 5d87dc929d2d67681b21eb46a4aaa52ca32caff9
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+description: 了解如何为 Exchange Online Protection 和 Exchange Online 配置来自 IPv6 源的匿名邮件支持。
+ms.openlocfilehash: 87317188a4564fccd968b00c9a93dc1b963c142b
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32260250"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34158184"
 ---
 # <a name="support-for-anonymous-inbound-email-messages-over-ipv6"></a>支持通过 IPv6 发送的匿名入站电子邮件
 
@@ -41,7 +41,7 @@ Exchange Online Protection (EOP) 和 Exchange Online 支持通过 IPv6 通信，
   
  `550 5.2.1 Service unavailable, [contoso.com] does not accept email over IPv6.`
   
-## <a name="for-more-information"></a>有关详细信息
+## <a name="for-more-information"></a>详细信息
 
 [支持 DKIM 签名邮件验证](support-for-validation-of-dkim-signed-messages.md)
   

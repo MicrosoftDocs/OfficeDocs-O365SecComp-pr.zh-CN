@@ -4,7 +4,7 @@ ms.author: bcarter
 author: brendacarter
 manager: laurawi
 ms.date: 4/17/2018
-ms.audience: Admin
+audience: Admin
 ms.topic: hub-page
 ms.service: O365-seccomp
 localization_priority: Normal
@@ -13,12 +13,12 @@ search.appverid:
 - MET150
 ms.assetid: a6ef28a4-2447-4b43-aae2-f5af6d53c68e
 description: 用于保护对 O365 数据和服务的访问权限的登录页
-ms.openlocfilehash: e1b529a641d25f82521c40d0df9d091e0ebb5d90
-ms.sourcegitcommit: e23b84ef4eee9cccec7205826b71ddfe9aaac2f8
+ms.openlocfilehash: 0b693d9b259a671f0e2a3e45747f81e1020d7487
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33403000"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34156864"
 ---
 # <a name="protect-user-and-device-access"></a>保护用户和设备的访问权限
 
@@ -44,7 +44,7 @@ ms.locfileid: "33403000"
 
 另一个主要建议是使用专为管理工作配置的工作站。 这些是仅用于管理任务的专用设备。 请参阅[保护特权访问](https://docs.microsoft.com/en-us/windows-server/identity/securing-privileged-access/securing-privileged-access)。
 
-最后, 您可以通过在租户中创建两个或多个紧急访问帐户来缓解无意中缺少管理访问权限造成的影响。 请参阅[管理 Azure AD 中的紧急访问帐户](https://docs.microsoft.com/en-us/azure/active-directory/users-groups-roles/directory-emergency-access)。 
+最后, 您可以通过在租户中创建两个或多个紧急访问帐户来缓解无意中缺少管理访问权限造成的影响。 请参阅[管理 AZURE AD 中的紧急访问帐户](https://docs.microsoft.com/en-us/azure/active-directory/users-groups-roles/directory-emergency-access)。 
 
 ## <a name="step-3-configure-recommended-identity-and-device-access-policies"></a>步骤 3: 配置推荐的标识和设备访问策略
 多重身份验证 (MFA) 和条件访问策略是功能强大的工具, 可缓解受到损坏的帐户和未经授权的访问。 我们建议实现一组已经过测试的策略。 有关详细信息 (包括部署步骤), 请参阅[Identity and device access 配置](https://docs.microsoft.com/en-us/microsoft-365/enterprise/microsoft-365-policies-configurations)。

@@ -4,19 +4,19 @@ ms.author: markjjo
 author: markjjo
 manager: laurawi
 ms.date: 12/29/2016
-ms.audience: Admin
+audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid: MOE150
 ms.assetid: 39e4654a-9588-41f6-892b-c33ab57bfbe2
 description: 使用 Office 365 或 Microsoft 365 中的安全与合规中心中的批量搜索编辑器快速更改一个或多个内容搜索的查询和内容位置。
-ms.openlocfilehash: 3a484ad689b1c638e0e14ed1643edea0f2f56c09
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: d4f79cc323b752d020606e22ff72a47bc03e9ae9
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32243831"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34152214"
 ---
 # <a name="bulk-edit-content-searches"></a>批量编辑内容搜索
 
@@ -60,7 +60,7 @@ ms.locfileid: "32243831"
   
 - 将现有查询 (通过使用**Ctrl C** ) 复制到文本文件中。 在文本文件中编辑查询, 然后复制修订后的查询并将其粘贴 (使用**Ctrl + V** ) 回到 "**查询**" 页上的单元格。 
     
-- 您还可以从其他应用程序 (如 microsoft Word 或 microsoft Excel) 复制查询。 但是, 请注意, 您可能无意中使用批量搜索编辑器将不受支持的字符添加到查询中。 阻止不受支持的字符的最佳方式是只在 "**查询**" 页上的单元格中键入查询。 或者，也可以从 Word 或 Excel 复制查询，然后将其粘贴到纯文本编辑器（如 Microsoft 记事本）文件中。 接下来，保存文本文件，并在" **编码**"下拉列表中选择" **ANSI**"。 这会删除所有格式和不受支持的字符。 然后, 可以将文本文件中的查询复制并粘贴到**查询**页面。 
+- 您还可以从其他应用程序 (如 Microsoft Word 或 Microsoft Excel) 复制查询。 但是, 请注意, 您可能无意中使用批量搜索编辑器将不受支持的字符添加到查询中。 阻止不受支持的字符的最佳方式是只在 "**查询**" 页上的单元格中键入查询。 或者，也可以从 Word 或 Excel 复制查询，然后将其粘贴到纯文本编辑器（如 Microsoft 记事本）文件中。 接下来，保存文本文件，并在" **编码**"下拉列表中选择" **ANSI**"。 这会删除所有格式和不受支持的字符。 然后, 可以将文本文件中的查询复制并粘贴到**查询**页面。 
     
   
 ## <a name="use-the-bulk-search-editor-to-change-content-locations"></a>使用批量搜索编辑器更改内容位置
@@ -92,8 +92,8 @@ ms.locfileid: "32243831"
 - 可以通过从文本文件或 Excel 文件中复制多个行并将它们粘贴到 "**位置**" 页上的节中, 将多个内容位置添加到一个或多个搜索中。 在添加新位置之后, 请务必选中要向其添加位置的每个搜索的复选框。 
     
     > [!TIP]
-    > 若要为组织中的所有用户生成电子邮件地址列表, 请在 "使用内容搜索" 中的步骤2中运行 PowerShell 命令, 以在[邮箱和 OneDrive for business 网站中搜索用户列表](search-the-mailbox-and-onedrive-for-business-for-a-list-of-users.md#step2)。 或使用中的脚本[创建组织中所有 onedrive 位置的列表](https://support.office.com/article/8e200cb2-c768-49cb-88ec-53493e8ad80a), 以生成组织中所有 onedrive for business 网站的列表。 请注意, 您必须将的 organization's "我的网站" 域的 URL (例如, https://contoso-my.sharepoint.com)由脚本创建的 OneDrive for business 网站) 追加。 在拥有电子邮件地址或 OneDrive for business 网站的列表后, 可以将其复制并粘贴到批量搜索编辑器中的 "**位置**" 页。 
+    > 若要为组织中的所有用户生成电子邮件地址列表, 请在 "使用内容搜索" 中的步骤2中运行 PowerShell 命令, 以在[邮箱和 OneDrive for business 网站中搜索用户列表](search-the-mailbox-and-onedrive-for-business-for-a-list-of-users.md#step2)。 或使用中的脚本[创建组织中所有 onedrive 位置的列表](https://support.office.com/article/8e200cb2-c768-49cb-88ec-53493e8ad80a), 以生成组织中所有 onedrive for business 网站的列表。 请注意, 您必须将的 organization's "我的网站" 域的 URL (例如, https://contoso-my.sharepoint.com)由脚本创建的 OneDrive for business 网站) 追加。 在拥有电子邮件地址或 OneDrive for Business 网站的列表后, 可以将其复制并粘贴到批量搜索编辑器中的 "**位置**" 页。 
   
-- 单击 "**保存**" 以在批量搜索编辑器中保存更改后, 您添加到搜索中的邮箱的电子邮件地址将会得到验证。 如果电子邮件地址不存在, 则会显示一条错误消息, 指出邮箱无法定位。 请注意, 网站 url 不会进行验证。 
+- 单击 "**保存**" 以在批量搜索编辑器中保存更改后, 您添加到搜索中的邮箱的电子邮件地址将会得到验证。 如果电子邮件地址不存在, 则会显示一条错误消息, 指出邮箱无法定位。 请注意, 网站 Url 不会进行验证。 
   
 

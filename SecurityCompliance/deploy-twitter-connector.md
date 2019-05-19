@@ -4,19 +4,19 @@ ms.author: markjjo
 author: markjjo
 manager: laurawi
 ms.date: ''
-ms.audience: Admin
+audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: M365-security-compliance
 ROBOTS: NOINDEX, NOFOLLOW
 description: 管理员可以设置本机连接器以将 Twitter 数据导入和存档到 Office 365。 将此数据导入 Office 365 后, 您可以使用合规性功能 (如法律封存、内容搜索和保留策略) 来管理组织的 Twitter 数据的管理。
-ms.openlocfilehash: 2f9d4842a834858b40e1d788f34f4fb8b2d5b9fd
-ms.sourcegitcommit: 5bd7a97aeab1c89e0a3660ba7bdb3200224107a1
+ms.openlocfilehash: 01c77436fc346a30a3d2cafeac731bf091296632
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/16/2019
-ms.locfileid: "34103763"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34150534"
 ---
 # <a name="deploy-a-connector-to-archive-twitter-data-in-office-365"></a>部署连接器以在 Office 365 中存档 Twitter 数据
 
@@ -130,7 +130,7 @@ ms.locfileid: "34103763"
 
    ![](media/TCimage24.png)
 
-5. 最后一步是将连接器应用源代码上载到您在步骤1中下载的 Azure。 在 web 浏览器中, 转到<AzureAppResourceName>https://。 scm.azurewebsites.net/ZipDeployUi。 例如, 如果您的 Azure 应用资源的名称 (在此部分中的步骤2中命名) 为**twitterconnector**, 则您将转到https://twitterconnector.scm.azurewebsites.net/ZipDeployUi。
+5. 最后一步是将连接器应用源代码上载到您在步骤1中下载的 Azure。 在 web 浏览器中, 转到<AzureAppResourceName>https://. scm.azurewebsites.net/ZipDeployUi。 例如, 如果您的 Azure 应用资源的名称 (在此部分中的步骤2中命名) 为**twitterconnector**, 则您将转到https://twitterconnector.scm.azurewebsites.net/ZipDeployUi。
 
 6. 将 SampleConnector (您在步骤1中下载的) 拖放到此页面。 上载文件并成功部署后, 页面外观将类似于以下屏幕截图。
 

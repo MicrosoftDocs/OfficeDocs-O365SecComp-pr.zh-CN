@@ -4,7 +4,7 @@ ms.author: stephow
 author: stephow-MSFT
 manager: laurawi
 ms.date: ''
-ms.audience: Admin
+audience: Admin
 ms.topic: article
 f1_keywords:
 - ms.o365.cc.PermissionsHelp
@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: 2cfce2c8-20c5-47f9-afc4-24b059c1bd76
 description: 在管理任何安全或合规性功能之前, 需要&amp;在 Office 365 安全合规中心中为用户分配权限。
-ms.openlocfilehash: 08b3781ceb48b9a8d5933a075106d7bd3b9ab17d
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: aa0d1e9af6eb547bbb145d06cabfc431028ec4f0
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32253962"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34154294"
 ---
 # <a name="give-users-access-to-the-office-365-security-amp-compliance-center"></a>向用户授予对 Office 365 安全&amp;合规中心的访问权限
 
@@ -63,7 +63,7 @@ ms.locfileid: "32253962"
     
 ## <a name="use-powershell-to-give-another-user-access-to-the-security-amp-compliance-center"></a>使用 PowerShell 向另一个用户授予对安全&amp;合规中心的访问权限
 
-1. [连接到 Office 365 Security & 合规中心 PowerShell](https://docs.microsoft.com/en-us/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell?view=exchange-ps)。
+1. [连接到 Office 365 Security _AMP_ 合规中心 PowerShell](https://docs.microsoft.com/en-us/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell?view=exchange-ps)。
     
 2. 使用 **Add-rolegroupmember** 命令将用户添加到组织管理角色，如以下示例中所示。 
     
@@ -82,7 +82,7 @@ ms.locfileid: "32253962"
   
 ### <a name="how-do-you-know-this-worked"></a>如何知道操作成功？
 
-若要验证您是否已授予用户对安全&amp;合规中心的访问权限, 请使用**add-rolegroupmember** cmdlet 查看组织管理角色组中的成员, 如以下示例所示。 
+若要验证您是否已授予用户对安全&amp;合规中心的访问权限, 请使用**Add-rolegroupmember** cmdlet 查看组织管理角色组中的成员, 如以下示例所示。 
   
 ```
 Get-RoleGroupMember -Identity "OrganizationManagement"

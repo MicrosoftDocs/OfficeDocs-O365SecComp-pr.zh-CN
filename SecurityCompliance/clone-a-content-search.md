@@ -4,7 +4,7 @@ ms.author: markjjo
 author: markjjo
 manager: laurawi
 ms.date: 4/26/2017
-ms.audience: Admin
+audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
@@ -13,12 +13,12 @@ search.appverid:
 - MED150
 ms.assetid: 7b40eeaa-544c-4534-b89b-9f79998e374c
 description: 使用本文中的 Windows PowerShell 脚本, 可以在 Office 365 或 Microsoft 365 中的合规性中心快速克隆现有的内容搜索。 当您克隆搜索时, 将创建一个新的搜索 (具有新的名称), 其中包含与原始搜索相同的属性。 然后, 您可以编辑新的搜索 (通过更改关键字查询或日期范围), 然后运行它。
-ms.openlocfilehash: b08ccb6fbaf2dc9d92e0814fe9f92ea77c731147
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: 2622b77045d3b4a92ad2e8a1852e1ddbaaca3368
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32243343"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34155314"
 ---
 # <a name="clone-a-content-search"></a>克隆内容搜索
 
@@ -32,7 +32,7 @@ ms.locfileid: "32243343"
     
 - 减小搜索结果的大小;例如, 如果您的搜索返回过多要导出的结果, 则可以克隆搜索, 然后根据日期范围添加搜索条件, 以减少搜索结果的数量。
   
-## <a name="before-you-begin"></a>准备工作
+## <a name="before-you-begin"></a>开始之前
 
 - 您必须是 Security & 合规中心中的电子数据展示管理器角色组的成员, 才能运行本主题中所述的脚本。
     
@@ -48,7 +48,7 @@ ms.locfileid: "32243343"
 
 此步骤中的脚本将通过克隆现有内容搜索来创建新的内容搜索。 运行此脚本时, 系统将提示您输入以下信息:
   
-- **你的用户凭据**-脚本将使用你的凭据连接到使用 Windows PowerShell 的 Office 365 组织的安全 & 合规性中心。 如前所述, 您必须是 Security & compCompliance Center 中的 "电子数据展示管理器" 角色组的成员才能运行该脚本。 
+- **你的用户凭据**-脚本将使用你的凭据连接到使用 Windows PowerShell 的 Office 365 组织的安全 _AMP_ 合规性中心。 如前所述, 您必须是 Security & compCompliance Center 中的 "电子数据展示管理器" 角色组的成员才能运行该脚本。 
     
 - **现有搜索的名称**-这是要克隆的内容搜索。 
     

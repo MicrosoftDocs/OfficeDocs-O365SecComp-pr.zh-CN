@@ -4,7 +4,7 @@ ms.author: markjjo
 author: markjjo
 manager: laurawi
 ms.date: ''
-ms.audience: Admin
+audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: 3aa37a6778947934759eb652a9367559b9ef838b
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: 2d7c3ae16b573af7351abda19edebde7ad7491b8
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32257280"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34150584"
 ---
 # <a name="use-the-relevance-module-to-analyze-data-in-evidence"></a>使用相关性模块分析证据中的数据
 
@@ -73,7 +73,7 @@ ms.locfileid: "32257280"
     
   - 您可以返回到任何示例并更改评估和培训集文件的标记。 将在创建下一个示例时应用这些更改。
     
-  - 在标记文件时, PDF 格式的 excel 文件的处理方式应与本机 excel 文件相同。
+  - 在标记文件时, PDF 格式的 Excel 文件的处理方式应与本机 Excel 文件相同。
     
   - 如果不确定文件的相关性标记, 请咨询专家。 在相关性培训期间, 标记错误可能会导致在进程中的时间丢失, 并可能对总体结果的质量产生负面影响。
     
@@ -126,7 +126,7 @@ ms.locfileid: "32257280"
 > [!NOTE]
 > 在解锁后, 某些选项可能仍处于禁用状态, 因为在此过程中不支持使用这些选项。 
   
-## <a name="more-information"></a>详细信息
+## <a name="more-information"></a>更多信息
 
 [了解相关性方面的评估](../assessment-in-relevance-in-advanced-ediscovery.md)
   

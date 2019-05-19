@@ -4,7 +4,7 @@ ms.author: tracyp
 author: MSFTTracyP
 manager: scotv
 ms.date: 10/6/2016
-ms.audience: Admin
+audience: Admin
 ms.topic: overview
 ms.service: O365-seccomp
 localization_priority: Normal
@@ -15,16 +15,16 @@ ms.assetid: fb4f8e49-0468-4be2-8fa6-99501f1ad9d5
 ms.collection:
 - M365-security-compliance
 description: 介绍 EOP 和 Office 365 垃圾邮件筛选器筛选出的电子邮件的安全提示。
-ms.openlocfilehash: d85eb0bde24220fbbfc12e7b5f01acec69571dee
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: b5501459a56dcff322dfdfa05d019d7fb626f369
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32261428"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34156984"
 ---
 # <a name="safety-tips-in-email-messages-in-office-365"></a>Office 365 电子邮件中的安全提示
 
-Exchange Online Protection (EOP) 和 Office 365 针对垃圾邮件、网络钓鱼和恶意软件阻止提供保护。 如今, 其中一些攻击非常精心编制, 使其看起来是合法的。 将邮件发送到 "垃圾邮件" 文件夹并不总是足够。 现在, 当您在 outlook 或 web 上的 outlook 中检查您的电子邮件时, EOP 会自动检查发件人, 并将安全提示添加到电子邮件的顶部。 
+Exchange Online Protection (EOP) 和 Office 365 针对垃圾邮件、网络钓鱼和恶意软件阻止提供保护。 如今, 其中一些攻击非常精心编制, 使其看起来是合法的。 将邮件发送到 "垃圾邮件" 文件夹并不总是足够。 现在, 当您在 Outlook 或 web 上的 Outlook 中检查您的电子邮件时, EOP 会自动检查发件人, 并将安全提示添加到电子邮件的顶部。 
   
 安全提示 (一种由颜色编码的邮件) 将警告您可能有害的邮件。 您的收件箱中的大多数邮件不会有安全提示。 只有在 EOP 和 Office 365 包含可帮助阻止垃圾邮件、网络钓鱼和恶意软件攻击的信息时, 才会看到它们。 如果安全提示确实显示在收件箱中, 则可以使用以下示例来了解有关每种安全提示的详细信息。
   

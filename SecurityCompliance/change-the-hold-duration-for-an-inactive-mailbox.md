@@ -4,7 +4,7 @@ ms.author: markjjo
 author: markjjo
 manager: laurawi
 ms.date: 8/29/2017
-ms.audience: Admin
+audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
@@ -14,12 +14,12 @@ ms.collection:
 search.appverid: MOE150
 ms.assetid: bdee24ed-b8cf-4dd0-92ae-b86ec4661e6b
 description: 在 Office 365 邮箱变为非活动状态后, 可以更改分配给非活动邮箱的保留或 Office 365 保留策略的持续时间。 保留期定义了"可恢复的项目"文件夹中的项目的保留持续时间。
-ms.openlocfilehash: 57b4bda5bda49785b752646174620101f8441135
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: 7840131af3df32b8b8e5a0faa1b101f9ec8ef541
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32243681"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34155564"
 ---
 # <a name="change-the-hold-duration-for-an-inactive-mailbox-in-office-365"></a>在 Office 365 中更改非活动邮箱的保留期
 
@@ -28,11 +28,11 @@ ms.locfileid: "32243681"
 > [!IMPORTANT]
 > 我们推迟了最后期限，在 2017 年 7 月 1 后，仍可通过新建就地保留创建非活动邮箱。 But later this year or early next year, you won't be able to create new In-Place Holds in Exchange Online. 在这段时间, 仅可使用诉讼保留和 Office 365 保留策略来创建非活动邮箱。 不过，处于就地保留的现有非活动邮箱仍受支持，可以继续管理这些非活动邮箱的就地保留。 这包括更改就地保留的持续时间，以及通过删除就地保留来永久删除非活动邮箱。 
   
-## <a name="before-you-begin"></a>准备工作
+## <a name="before-you-begin"></a>开始之前
 
-- 您必须使用 Exchange Online PowerShell 更改非活动邮箱上的诉讼保留的保留期。 不能使用 Exchange 管理中心 (EAC)。 但您可以使用 Exchange Online PowerShell 或 EAC 更改就地保留的保留期。 您可以使用安全与合规中心或 security & 合规性中心 PowerShell 更改 Office 365 保留策略的保留期。
+- 您必须使用 Exchange Online PowerShell 更改非活动邮箱上的诉讼保留的保留期。 不能使用 Exchange 管理中心 (EAC)。 但您可以使用 Exchange Online PowerShell 或 EAC 更改就地保留的保留期。 您可以使用安全与合规中心或 Security & 合规性中心 PowerShell 更改 Office 365 保留策略的保留期。
     
-- 若要连接到 Exchange Online PowerShell 或 Security & 合规中心 powershell, 请参阅下列主题之一:
+- 若要连接到 Exchange Online PowerShell 或 Security & 合规中心 PowerShell, 请参阅下列主题之一:
     
   - [连接到 Exchange Online PowerShell](https://go.microsoft.com/fwlink/p/?linkid=396554)
     
@@ -102,7 +102,7 @@ InPlaceHolds          : {UniH7d895d48-7e23-4a8d-8346-533c3beac15d}
 |Pilar Pinilla  <br/> |就地保留  <br/> |*InPlaceHolds*属性包含非活动邮箱上设置的就地保留的 GUID。 您可以指示这是就地保留, 因为 ID 不以前缀开头。  <br/> 您可以使用 Exchange `Get-MailboxSearch -InPlaceHoldIdentity <hold GUID> | FL` Online PowerShell 中的命令来获取非活动邮箱的就地保留的相关信息。  <br/> |
 |Mario Necaise  <br/> |Security & 合规中心中的组织范围内的 Office 365 保留策略  <br/> |*InPlaceHolds*属性为空。 这表示一个或多个组织范围或 (Exchange wide) Office 365 保留策略应用于非活动邮箱。 在这种情况下, 您可以`Get-OrganizationConfig | Select-Object -ExpandProperty InPlaceHolds`在 Exchange Online PowerShell 中运行命令, 以获取组织范围内的 Office 365 保留策略的 guid 列表。 应用于 Exchange 邮箱的组织范围的保留策略的 GUID 以`mbx`前缀开头;例如`mbxa3056bb15562480fadb46ce523ff7b02`。  <br/> <br/>若要标识应用于非活动邮箱的 Office 365 保留策略, 请在 Security & 合规性中心 PowerShell 中运行以下命令。  <br/><br/> `Get-RetentionCompliancePolicy <retention policy GUID without prefix> | FL Name`<br/><br/>
 |Carol Olson  <br/> |在应用于特定邮箱的 Security & 合规性中心中的 Office 365 保留策略  <br/> |*InPlaceHolds*属性包含应用于非活动邮箱的 Office 365 保留策略的 GUID。 您可以告诉这是应用于特定邮箱的保留策略, 因为 GUID 以`mbx`前缀开头。 请注意, 如果应用于非活动邮箱的保留策略的 GUID 是使用`skp`前缀启动的, 则表示该保留策略应用于 Skype for business 会话。  <br/><br/> 若要标识应用于非活动邮箱的 Office 365 保留策略, 请在 Security & 合规性中心 PowerShell 中运行以下命令。<br/><br/> `Get-RetentionCompliancePolicy <retention policy GUID without prefix> | FL Name` <br/><br/>运行此命令时, `mbx`请`skp`务必删除或前缀。  <br/> |
-|Abraham McMahon  <br/> |安全 & 合规中心中的电子数据展示案例保留  <br/> |*InPlaceHolds*属性包含非活动邮箱上所放置的电子数据展示事例保留的 GUID。 你可以告诉这是电子数据展示事例保留, 因为 GUID 以`UniH`前缀开头。  <br/> 您可以使用 Security `Get-CaseHoldPolicy` & 合规性中心 PowerShell 中的 cmdlet 来获取有关非活动邮箱上保留的电子数据展示事例的相关信息。 例如, 您可以运行命令`Get-CaseHoldPolicy <hold GUID without prefix> | FL Name`以显示非活动邮箱上的事例保留的名称。 运行此命令时, `UniH`请务必删除前缀。  <br/><br/> 若要标识非活动邮箱上的保留的电子数据展示事例与关联, 请运行以下命令。  <br/><br/> `$CaseHold = Get-CaseHoldPolicy <hold GUID without prefix>`<br/><br/> `Get-ComplianceCase $CaseHold.CaseId | FL Name`<br/><br/><br/> **注意:** 建议不要对非活动邮箱使用电子数据展示保留。 这是因为电子数据展示事例适用于与法律问题相关的特定的与时间绑定的情况。 有时, 法律案例可能会结束, 与事例关联的保留将被删除, 并且电子数据展示事例将关闭 (或删除)。 实际上, 如果在非活动邮箱上设置的保留与电子数据展示事例相关联, 并且已释放保留或电子数据展示事例关闭或删除, 则非活动邮箱将被永久删除。 
+|Abraham McMahon  <br/> |安全 & 合规中心中的电子数据展示案例保留  <br/> |*InPlaceHolds*属性包含非活动邮箱上所放置的电子数据展示事例保留的 GUID。 你可以告诉这是电子数据展示事例保留, 因为 GUID 以`UniH`前缀开头。  <br/> 您可以使用 Security `Get-CaseHoldPolicy` _AMP_ 合规性中心 PowerShell 中的 cmdlet 来获取有关非活动邮箱上保留的电子数据展示事例的相关信息。 例如, 您可以运行命令`Get-CaseHoldPolicy <hold GUID without prefix> | FL Name`以显示非活动邮箱上的事例保留的名称。 运行此命令时, `UniH`请务必删除前缀。  <br/><br/> 若要标识非活动邮箱上的保留的电子数据展示事例与关联, 请运行以下命令。  <br/><br/> `$CaseHold = Get-CaseHoldPolicy <hold GUID without prefix>`<br/><br/> `Get-ComplianceCase $CaseHold.CaseId | FL Name`<br/><br/><br/> **注意:** 建议不要对非活动邮箱使用电子数据展示保留。 这是因为电子数据展示事例适用于与法律问题相关的特定的与时间绑定的情况。 有时, 法律案例可能会结束, 与事例关联的保留将被删除, 并且电子数据展示事例将关闭 (或删除)。 实际上, 如果在非活动邮箱上设置的保留与电子数据展示事例相关联, 并且已释放保留或电子数据展示事例关闭或删除, 则非活动邮箱将被永久删除。 
 
 有关 Office 365 保留策略的详细信息, 请参阅[保留策略概述](retention-policies.md)。
   
@@ -173,7 +173,7 @@ Set-Mailbox -InactiveMailbox -Identity <identity of inactive mailbox> -Litigatio
     
 - 保留期从邮箱项目的接收或创建原始日期开始计算。 当保留期过期时，会怎么样？当"可恢复的项目"文件夹中邮箱项目的保留期过期时，系统会将此项目从非活动邮箱中永久删除（清除）。如果非活动邮箱上设置的保留没有指定的保留期，则"可恢复的项目"文件夹中的项目永远都不会清除（除非您更改非活动邮箱的保留期）。 当保留期过期时，会怎么样？ 
     
-- **是否仍在非活动邮箱上处理 Exchange 保留策略？** 如果将 exchange 保留策略 (exchange Online 中的邮件记录管理或 MRM) 应用于邮箱 (如果某个邮箱处于非活动状态), 则删除策略 (是使用**删除**保留操作配置的保留标记) 将继续在非活动邮箱上进行处理。 也就是说，在保留期过期时，标记有删除策略的项目会移到“可恢复的项目”文件夹中。 当项目的保留期过期时，这些项目会从非活动邮箱中清除。 
+- **是否仍在非活动邮箱上处理 Exchange 保留策略？** 如果将 Exchange 保留策略 (Exchange Online 中的邮件记录管理或 MRM) 应用于邮箱 (如果某个邮箱处于非活动状态), 则删除策略 (是使用**删除**保留操作配置的保留标记) 将继续在非活动邮箱上进行处理。 也就是说，在保留期过期时，标记有删除策略的项目会移到“可恢复的项目”文件夹中。 当项目的保留期过期时，这些项目会从非活动邮箱中清除。 
     
     当项目的保留期过期时，这些项目会从非活动邮箱中清除。 相反，分配给非活动邮箱的保留策略中包含的所有存档策略（配置了 MoveToArchive 保留操作的保留标记）会遭到忽略。也就是说，在保留期过期时，非活动邮箱中标记有存档策略的项目会保留在主邮箱中。这些项目不会移到存档邮箱或其中的"可恢复的项目"文件夹内。由于用户无法登录非活动邮箱，因此没有理由消耗数据中心资源来处理存档策略。 相反，分配给非活动邮箱的保留策略中包含的所有存档策略（配置了 MoveToArchive 保留操作的保留标记）会遭到忽略。 也就是说，在保留期过期时，非活动邮箱中标记有存档策略的项目会保留在主邮箱中。 
     
@@ -193,7 +193,7 @@ Set-Mailbox -InactiveMailbox -Identity <identity of inactive mailbox> -Litigatio
     Start-ManagedFolderAssistant -InactiveMailbox <identity of inactive mailbox>
     ```
    
-- **如果非活动邮箱上放置了很多保留项, 则不会显示所有保留 guid。** 您可以运行以下命令来显示非活动邮箱上的所有保留项 (诉讼保留除外) 的 guid。 
+- **如果非活动邮箱上放置了很多保留项, 则不会显示所有保留 Guid。** 您可以运行以下命令来显示非活动邮箱上的所有保留项 (诉讼保留除外) 的 Guid。 
     
     ```
     Get-Mailbox -InactiveMailboxOnly -Identity <identity of inactive mailbox> | Select-Object -ExpandProperty InPlaceHolds

@@ -4,7 +4,7 @@ ms.author: tracyp
 author: MSFTTracyP
 manager: laurawi
 ms.date: 04/19/2019
-ms.audience: ITPro
+audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
@@ -14,12 +14,12 @@ ms.assetid: dad30e2f-93fe-4d21-9a36-21c87ced85c1
 ms.collection:
 - M365-security-compliance
 description: '你和你的用户可以将虚假的负垃圾邮件和假肯定垃圾邮件提交给 Microsoft 进行分析。 '
-ms.openlocfilehash: 75943a923195b522113690d5e176777e47d026d4
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: 8949e3422b62a5bca0b72be8168054d8c1b96a70
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32260650"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34156454"
 ---
 # <a name="submit-spam-non-spam-and-phishing-scam-messages-to-microsoft-for-analysis"></a>将垃圾邮件、非垃圾邮件和网络欺诈邮件提交给 Microsoft 进行分析
 
@@ -31,13 +31,13 @@ ms.locfileid: "32260650"
 ## <a name="submit-junk-or-phishing-messages-that-passed-through-the-spam-filters"></a>提交通过垃圾邮件筛选器的垃圾邮件或网络钓鱼邮件
 <a name="sectionSection0"> </a>
 
-如果您收到一封通过垃圾邮件筛选器传递且应归类为垃圾邮件或钓鱼诈骗的邮件, 则可以根据需要将 "假负" 邮件提交到 microsoft 垃圾邮件分析和 microsoft 仿冒分析团队。 分析师将检查邮件并将其添加到服务范围的筛选器中 (如果它满足分类条件)。 
+如果您收到一封通过垃圾邮件筛选器传递且应归类为垃圾邮件或钓鱼诈骗的邮件, 则可以根据需要将 "假负" 邮件提交到 Microsoft 垃圾邮件分析和 Microsoft 仿冒分析团队。 分析师将检查邮件并将其添加到服务范围的筛选器中 (如果它满足分类条件)。 
   
 有关适用于整个组织的详细垃圾邮件设置，请参阅[使用 Office 365 垃圾邮件筛选器阻止垃圾电子邮件，以防止出现漏报问题](reduce-spam-email.md)。 本文包含有助于防止漏报的提示。
   
 您可以通过下列方式提交垃圾邮件：
   
-- 对于 outlook 和 web 用户上的 outlook, 请使用 Microsoft Outlook 的报告消息外接程序。 有关如何安装和使用此工具的信息, 请参阅[Enable the Report Message 外接程序](enable-the-report-message-add-in.md)。 
+- 对于 Outlook 和 web 用户上的 Outlook, 请使用 Microsoft Outlook 的报告消息外接程序。 有关如何安装和使用此工具的信息, 请参阅[Enable The Report Message 外接程序](enable-the-report-message-add-in.md)。 
         
 - 您还可以使用电子邮件将邮件提交到 Microsoft, 并将其分类为垃圾邮件或网络钓鱼诈骗, 如以下过程所述。
     
@@ -70,11 +70,11 @@ ms.locfileid: "32260650"
   
 您可以通过下列方式提交非垃圾邮件：
   
-- 如果您在配置内容筛选器时使用 "**将邮件移动到垃圾邮件文件夹**" 操作 (这是默认操作), 用户可以在其 outlook 或 web 上的 outlook (以前称为 "outlook web App") "垃圾邮件" 文件夹中释放假正邮件. 
+- 如果您在配置内容筛选器时使用 "**将邮件移动到垃圾邮件文件夹**" 操作 (这是默认操作), 用户可以在其 outlook 或 web 上的 outlook (以前称为 "Outlook web App") "垃圾邮件" 文件夹中释放假正邮件. 
     
   - Outlook 用户可以通过使用**非垃圾**邮件的右键单击菜单选项来释放误报邮件。 但是, 他们必须通过电子邮件将邮件提交给 Microsoft, 如本文中的过程所示。 
     
-  - web 上的 Outlook 用户可以发布误报邮件, 并将其提交给 Microsoft 进行分析, 以使用 "**标记为非垃圾**邮件" 操作。 有关如何执行此操作的详细信息, 请参阅[在 Outlook 网页版中报告垃圾电子邮件和网络钓鱼诈骗](report-junk-email-and-phishing-scams-in-outlook-on-the-web-eop.md)。
+  - Web 上的 Outlook 用户可以发布误报邮件, 并将其提交给 Microsoft 进行分析, 以使用 "**标记为非垃圾**邮件" 操作。 有关如何执行此操作的详细信息, 请参阅[在 Outlook 网页版中报告垃圾电子邮件和网络钓鱼诈骗](report-junk-email-and-phishing-scams-in-outlook-on-the-web-eop.md)。
     
 - 如果您在配置内容筛选器时使用 "**隔离邮件**" 操作而不是 "**将邮件移动到垃圾邮件文件夹**" 操作, 请执行以下操作: 
     

@@ -4,7 +4,7 @@ ms.author: tracyp
 author: MSFTTracyP
 manager: laurawi
 ms.date: 6/1/2017
-ms.audience: ITPro
+audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
@@ -16,13 +16,13 @@ search.appverid:
 ms.assetid: c5e95951-da67-4ec7-92c5-982abd477e69
 ms.collection:
 - M365-security-compliance
-description: 即使您计划在本地承载部分或全部邮箱, 仍可以使用 Exchange Online Protection (EOP) 保护邮箱。 要配置连接器，你的帐户必须是 Office 365 全局管理员或 Exchange 公司管理员（组织管理角色组）。 有关 Office 365 权限与 Exchange 权限的关系的信息, 请参阅在由世纪互联运营的 office 365 中分配管理员角色。 如果所有 Exchange 邮箱都是本地的, 请按照以下步骤设置您的 EOP 服务。
-ms.openlocfilehash: 4331bf5574122efb50bb9dda9c7c0386df5683f7
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+description: 即使您计划在本地承载部分或全部邮箱, 仍可以使用 Exchange Online Protection (EOP) 保护邮箱。 要配置连接器，你的帐户必须是 Office 365 全局管理员或 Exchange 公司管理员（组织管理角色组）。 有关 Office 365 权限与 Exchange 权限的关系的信息, 请参阅在由世纪互联运营的 Office 365 中分配管理员角色。 如果所有 Exchange 邮箱都是本地的, 请按照以下步骤设置您的 EOP 服务。
+ms.openlocfilehash: 20fa94a356823e624fcb42dc493d555cec3fe523
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32261550"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34156934"
 ---
 # <a name="protect-on-premises-mailboxes-with-exchange-online-protection"></a>使用 Exchange Online Protection 保护本地邮箱
 
@@ -35,7 +35,7 @@ ms.locfileid: "32261550"
 
 1. 在 Microsoft 365 管理中心, 导航到 "安装程序" 以将您的域添加到服务中。
     
-2.  按照门户中的步骤将适用的 dns 记录添加到您的 DNS 托管提供商, 以验证域所有权。 
+2.  按照门户中的步骤将适用的 DNS 记录添加到您的 DNS 托管提供商, 以验证域所有权。 
     
 > [!TIP]
 > [将您的域和用户添加到由世纪互联运营的 office 365](https://support.office.com/article/1cd4839b-d051-46b8-ab9b-bc7752024e78)中, 并为[office 365 创建 dns 记录。当您](https://support.office.com/article/0669bf14-414d-4f51-8231-6b710ce7980b)将您的域添加到服务并配置 dns 时, 可以参考这些资源, 从而为 office 创建 DNS 记录。 
@@ -50,7 +50,7 @@ ms.locfileid: "32261550"
   
  如何判断此任务生效？ 
   
- 使用远程连接分析器来运行测试，该测试将检查服务与您的环境之间的邮件流。 有关详细信息, 请参阅[test mail flow with the remote connectivity analyzer](https://go.microsoft.com/fwlink/?LinkId=506784)中的 "使用远程连接分析器测试电子邮件传递" 一节。
+ 使用远程连接分析器来运行测试，该测试将检查服务与您的环境之间的邮件流。 有关详细信息, 请参阅[test mail flow with The Remote Connectivity analyzer](https://go.microsoft.com/fwlink/?LinkId=506784)中的 "使用远程连接分析器测试电子邮件传递" 一节。
   
 ## <a name="step-4-allow-inbound-port-25-smtp-access"></a>步骤 4：允许入站端口 25 SMTP 访问
 
@@ -69,7 +69,7 @@ ms.locfileid: "32261550"
   
 您如何知道此任务有效？
   
- 使用远程连接分析器运行测试，该测试验证您的 MX 记录。 有关详细信息, 请参阅[test mail flow with the remote connectivity analyzer](https://go.microsoft.com/fwlink/?LinkId=506784)中的 "使用远程连接分析器测试 MX 记录和出站连接器" 一节。 
+ 使用远程连接分析器运行测试，该测试验证您的 MX 记录。 有关详细信息, 请参阅[test mail flow with The Remote Connectivity analyzer](https://go.microsoft.com/fwlink/?LinkId=506784)中的 "使用远程连接分析器测试 MX 记录和出站连接器" 一节。 
   
 此时，您已验证经过适当配置的出站内部部署连接器的服务传递，而且已验证 MX 记录是否指向 EOP。现在，您可以选择运行以下其他测试来验证该服务是否会将电子邮件成功传递到内部部署环境：
   
@@ -81,10 +81,10 @@ ms.locfileid: "32261550"
     
 ## <a name="less-common-a-hybrid-setup-with-mailboxes-on-premises-and-in-the-cloud"></a>不太常见: 包含本地邮箱和云中的混合安装
 
-如果 exchange Online 中有本地 exchange 邮箱以及 exchange Online 中的云中的一个或多个邮箱, 则可以使用*混合*设置。 在混合安装中, 诸如忙/闲日历共享和邮件路由等功能在本地和云环境中协同工作。 您可能在将邮箱转换为 Exchange Online 时设置了混合设置。 混合环境的设置与 EOP 独立保护的方式不同。 
+如果 exchange Online 中有本地 Exchange 邮箱以及 Exchange Online 中的云中的一个或多个邮箱, 则可以使用*混合*设置。 在混合安装中, 诸如忙/闲日历共享和邮件路由等功能在本地和云环境中协同工作。 您可能在将邮箱转换为 Exchange Online 时设置了混合设置。 混合环境的设置与 EOP 独立保护的方式不同。 
   
 您可以选择一种混合方案, 以充分利用基于云的电子邮件为大多数员工。 您可以执行此操作, 同时在本地承载一些邮箱; 请参阅。例如, 适用于法律部门。 
   
-混合设置可能非常复杂, 但具有许多好处。 若要了解有关使用 exchange 设置混合方案的详细信息, 请参阅[使用由世纪互联运营的 Office 365 配置 Exchange 混合部署功能](https://support.office.com/article/26e7cc26-c980-4cc5-a082-c333de544b6d)。
+混合设置可能非常复杂, 但具有许多好处。 若要了解有关使用 Exchange 设置混合方案的详细信息, 请参阅[使用由世纪互联运营的 Office 365 配置 Exchange 混合部署功能](https://support.office.com/article/26e7cc26-c980-4cc5-a082-c333de544b6d)。
   
 

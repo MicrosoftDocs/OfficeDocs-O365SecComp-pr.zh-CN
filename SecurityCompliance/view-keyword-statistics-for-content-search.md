@@ -4,7 +4,7 @@ ms.author: markjjo
 author: markjjo
 manager: laurawi
 ms.date: 1/30/2017
-ms.audience: Admin
+audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 ms.collection: M365-security-compliance
@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.assetid: 9701a024-c52e-43f0-b545-9a53478aec04
 description: 使用 "搜索统计信息" 功能来显示和比较 Security & 合规性中心中的多个内容搜索的统计信息。 您还可以在创建或编辑搜索查询时配置关键字列表, 以获取增强的统计信息, 以显示与每个关键字或关键字短语匹配的项目数。
-ms.openlocfilehash: 5e4cca18f6a50f2647265f02dab7ab3f20f513fc
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: 558d8bd269d1c1d8bfcf3f15452a83de74f3e38d
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32267376"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34157904"
 ---
 # <a name="view-keyword-statistics-for-content-search-results"></a>查看内容搜索结果的关键字统计信息
 
@@ -73,7 +73,7 @@ ms.locfileid: "32267376"
 
     - 当您搜索邮箱中的所有内容 (而不指定任何关键字) 时, 实际的键字查询`size>=0`就是返回所有项目。 
     
-     - 当您搜索 SharePoint Online 和 OneDrive for business 网站时, 将添加以下两个组件:
+     - 当您搜索 SharePoint Online 和 OneDrive for Business 网站时, 将添加以下两个组件:
     
           **NOT IsExternalContent: 1** -排除本地 SharePoint 组织中的任何内容。 
     

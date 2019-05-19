@@ -3,19 +3,19 @@ title: 首席信息安全监察官 (CISO) 研讨会
 ms.author: robmazz
 author: robmazz
 manager: laurawi
-ms.audience: Admin
+audience: Admin
 ms.topic: tutorial
 ms.service: o365-seccomp
 localization_priority: Normal
 ms.collection:
 - M365-security-compliance
 description: 了解有关贵组织中的新式化安全性的安全原则和建议的详细信息。
-ms.openlocfilehash: 62f1150b0f72550de11ebfbf5562d92d585d52d2
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: 95bfc90211b90e129e6b208ab09b6123c61ccaae
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32242678"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34155304"
 ---
 # <a name="chief-information-security-officer-ciso-workshop-training"></a>首席信息安全监察官 (CISO) 研讨会培训
 
@@ -28,7 +28,7 @@ CISO 研讨会可帮助您的组织解决以下方面的双重安全难题:
 
 CISO 研讨会视频和 PDF/PowerPoint 下载内容是模块化的, 因此您可以跳转到任何感兴趣的部分或从头开始。 每个模块的幻灯片都与一个创造性的 commons (使用特性) 许可证共享, 以帮助贵组织构建有效的安全策略。
 
-- [模块 1: microsoft Cybersecurity 简报](ciso-workshop-module-1.md): 本模块概述了严重安全卫生、Microsoft Cybersecurity 参考体系结构、Cybersecurity 恢复能力、Internet 内容 (IoT) 和运营技术。
+- [模块 1: Microsoft Cybersecurity 简报](ciso-workshop-module-1.md): 本模块概述了严重安全卫生、Microsoft Cybersecurity 参考体系结构、Cybersecurity 恢复能力、Internet 内容 (IoT) 和运营技术。
 
 - [模块 2: 安全管理](ciso-workshop-module-2.md): 了解如何通过集成的指导、自动化的策略实施和监控来提高对混合企业版的可视性和控制能力。
 

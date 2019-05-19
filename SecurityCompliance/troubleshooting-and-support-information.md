@@ -4,7 +4,7 @@ ms.author: tracyp
 author: MSFTTracyP
 manager: laurawi
 ms.date: 11/17/2014
-ms.audience: ITPro
+audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
@@ -14,12 +14,12 @@ ms.assetid: 5d9f75f5-bb7f-458c-ad30-5c8eae0b0e4e
 ms.collection:
 - M365-security-compliance
 description: 本主题介绍了针对最终用户和管理员的疑难解答步骤，并提供了有关如何联系技术支持以寻求帮助的信息。
-ms.openlocfilehash: bea2ad502f24d63874bfa954e6d67c73dc44d98d
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: baf8761ca4ce55695c2def74a39d3ca9a6de79ff
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32259840"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34156334"
 ---
 # <a name="troubleshooting-and-support-information"></a>疑难解答信息和支持信息
 
@@ -86,9 +86,9 @@ ms.locfileid: "32259840"
     
 ## <a name="support-information"></a>支持信息
 
-如果你需要有关加载项的安装、配置或卸载的帮助, 请使用 Microsoft 365 管理中心中的 "支持" 页面上的 "新建服务请求" 链接联系技术支持。 有关其他选项, 包括通过电话提交服务请求和自助支持选项, 请参阅[Help and support for EOP](eop/help-and-support-for-eop.md)。
+如果你需要有关加载项的安装、配置或卸载的帮助, 请使用 Microsoft 365 管理中心中的 "支持" 页面上的 "新建服务请求" 链接联系技术支持。 有关其他选项, 包括通过电话提交服务请求和自助支持选项, 请参阅[Help and support FOR EOP](eop/help-and-support-for-eop.md)。
   
-## <a name="for-more-information"></a>有关详细信息
+## <a name="for-more-information"></a>详细信息
 
 [启用报告消息加载项](https://support.office.com/article/4250c4bc-6102-420b-9e0a-a95064837676)
   

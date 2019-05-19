@@ -4,7 +4,7 @@ ms.author: markjjo
 author: markjjo
 manager: laurawi
 ms.date: 8/28/2017
-ms.audience: Admin
+audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 ms.collection: M365-security-compliance
@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.assetid: 97e06a7a-ef9a-4ce8-baea-18b9e20449a3
 description: 如果新员工或其他用户需要访问 Office 365 中非活动邮箱的内容, 则可以将非活动邮箱的内容还原 (或合并) 到现有邮箱。
-ms.openlocfilehash: 1b80cf5bf9361959f1622b7b42f5c7598609539c
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: 6bd147296e4324c5f75ff808768f8899cf9b59fd
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32264908"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34157304"
 ---
 # <a name="restore-an-inactive-mailbox-in-office-365"></a>在 Office 365 中还原非活动邮箱
 
@@ -31,7 +31,7 @@ ms.locfileid: "32264908"
     
 有关还原和恢复非活动邮箱之间的差异的更多详细信息, 请参阅本文中的**详细信息**一节。 
   
-## <a name="before-you-begin"></a>准备工作
+## <a name="before-you-begin"></a>开始之前
 
 - 您必须使用 Exchange Online PowerShell 来还原非活动邮箱。 不能使用 Exchange 管理中心 (EAC)。 有关分步说明, 请参阅[连接到 Exchange Online PowerShell](https://go.microsoft.com/fwlink/?linkid=396554)。
     

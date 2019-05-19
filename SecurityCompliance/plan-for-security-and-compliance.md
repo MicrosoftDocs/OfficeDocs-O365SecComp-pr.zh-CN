@@ -4,7 +4,7 @@ ms.author: chrfox
 author: chrfox
 manager: laurawi
 ms.date: 3/15/2018
-ms.audience: Admin
+audience: Admin
 ms.topic: hub-page
 ms.service: O365-seccomp
 localization_priority: Normal
@@ -14,12 +14,12 @@ search.appverid:
 ms.assetid: dc4f704c-6fcc-4cab-9a02-95a824e4fb57
 description: 用于规划安全性和合规性的登录页
 ms.collection: M365-security-compliance
-ms.openlocfilehash: b0c7af13a78499f3ee8af5b902bc4c8db85aca32
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: c125bd36494e26d9603b565dc5154b975604f2b3
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32265864"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34157504"
 ---
 # <a name="plan-for-security-amp-compliance-in-office-365"></a>在 Office 365 &amp;中规划安全合规性
 
@@ -35,7 +35,7 @@ ms.locfileid: "32265864"
 
 设置 Office 365 订阅后, 请记下你的起始分数。 安全分数提供了 Office 365 配置建议, 您可以采用这些建议来增加成绩。 目标是了解为保护您的环境而不会对用户工作效率产生负面影响的机会。
   
-- [引入 Office 365 安全分数](office-365-secure-score.md)
+- [引入 Office 365 安全分数](microsoft-secure-score.md)
     
 ## <a name="step-3-plan-access-protection-for-identity-and-devices"></a>步骤 3: 规划身份和设备的访问保护
 
@@ -75,9 +75,9 @@ ms.locfileid: "32265864"
 
 在这些管理中心和仪表板中配置安全和合规性设置, 以保护 Office 365 环境
   
-|**订阅**|**管理 URL**|**仪表板和管理中心**|
+|**订购**|**管理 URL**|**仪表板和管理中心**|
 |:-----|:-----|:-----|
-|Office 365  <br/> |`https://admin.microsoft.com`  <br/> | Microsoft 365 管理中心  <br/>  Security &amp; Compliance Center  <br/>  Exchange 管理中心  <br/>  SharePoint 管理员中心和 OneDrive for business 管理中心  <br/> |
+|Office 365  <br/> |`https://admin.microsoft.com`  <br/> | Microsoft 365 管理中心  <br/>  Security &amp; Compliance Center  <br/>  Exchange 管理中心  <br/>  SharePoint 管理员中心和 OneDrive for Business 管理中心  <br/> |
 |企业移动性 + 安全性  <br/> |`https://portal.azure.com`  <br/> | Azure Active Directory  <br/>  Microsoft 移动应用程序管理  <br/>  Microsoft Intune  <br/> |
 |企业移动性 + 安全性  <br/> |`https://portal.cloudappsecurity.com`  <br/> | 云应用安全  <br/> |
    

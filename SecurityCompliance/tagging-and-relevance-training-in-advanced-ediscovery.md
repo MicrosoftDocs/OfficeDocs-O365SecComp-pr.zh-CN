@@ -4,7 +4,7 @@ ms.author: chrfox
 author: chrfox
 manager: laurawi
 ms.date: 9/14/2017
-ms.audience: Admin
+audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
@@ -13,12 +13,12 @@ search.appverid:
 - MET150
 ms.assetid: 8576cc86-d51b-4285-b54b-67184714cc62
 description: '了解在 Office 365 高级电子数据展示的相关培训阶段, 要标记并使用40文件的培训示例的步骤。  '
-ms.openlocfilehash: e8c9c02d72a756565f6fe59011a6788f592463eb
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: 82380acc2ea90a600a3dd14f58c6d9bf0a06a1a6
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32260396"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34158344"
 ---
 # <a name="tagging-and-relevance-training-in-office-365-advanced-ediscovery"></a>Office 365 高级电子数据展示中的标记和相关性培训
 
@@ -44,10 +44,10 @@ ms.locfileid: "32260396"
 2. 为事例问题确定文件的相关性, 并使用 "标记" 选项图标按钮或键盘快捷方式标记文件, 如下表所示:
     
 | |
-|**标记选项**|**Description**|**键盘快捷方式**|**对于多个问题-批量标记键盘快捷方式**|
+|**标记选项**|**说明**|**键盘快捷方式**|**对于多个问题-批量标记键盘快捷方式**|
 |:-----|:-----|:-----|:-----|
 |R  <br/> |符合  <br/> |Z  <br/> |Shift + Z  <br/> |
-|führerschein-nr  <br/> |无关  <br/> |X  <br/> |Shift + X  <br/> |
+|FÜHRERSCHEIN-NR  <br/> |无关  <br/> |X  <br/> |Shift + X  <br/> |
 |Skip  <br/> |Skip  <br/> |C  <br/> |Shift + A  <br/> |
    
   - 如果一个文件存在多个问题, 则在标记一个问题后, 所选内容将移至下一个问题 (如果有)。 

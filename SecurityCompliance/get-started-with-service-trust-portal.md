@@ -3,7 +3,7 @@ title: Microsoft 服务信任门户入门
 ms.author: markjjo
 author: markjjo
 manager: laurawi
-ms.audience: Admin
+audience: Admin
 ms.topic: overview
 ms.service: O365-seccomp
 localization_priority: Normal
@@ -12,20 +12,20 @@ mscollection: M365-security-compliance
 ms.custom: Adm_O365
 ms.assetid: f30e2353-0bd6-41ed-8347-eea1fb8d2662
 description: 对于 Office 365、Azure 和 Dynamics 365 Online 规章合规性报告, 若要查看第三方审核, 请了解 Microsoft 如何使客户数据安全, 以及如何在使用这些在线服务时遵守 ISO、HIPAA、NIST、FINRA、GDPR 和 FedRAMP 的合规性。
-ms.openlocfilehash: ff14f1b88dbde06dbfd17a87bb94c3f32ddff81b
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: 80dd054787957941353cbb76489fc7063d17a416
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32254282"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34154434"
 ---
 # <a name="get-started-with-the-microsoft-service-trust-portal"></a>Microsoft 服务信任门户入门
 
-microsoft 服务信任门户提供了有关 Microsoft 安全、隐私和合规性做法的各种内容、工具和其他资源。
+Microsoft 服务信任门户提供了有关 Microsoft 安全、隐私和合规性做法的各种内容、工具和其他资源。
   
 ## <a name="accessing-the-service-trust-portal"></a>访问服务信任门户
 
-服务信任门户包含有关 Microsoft 实施的控制和过程的详细信息, 可保护我们的云服务和其中的客户数据。 若要访问服务信任门户上的一些资源, 必须使用 Microsoft 云服务帐户 (Azure Active Directory 组织帐户或 Microsoft 帐户) 以已通过身份验证的用户身份登录, 并查看并接受 microsoft合规性材料的非公开协议。
+服务信任门户包含有关 Microsoft 实施的控制和过程的详细信息, 可保护我们的云服务和其中的客户数据。 若要访问服务信任门户上的一些资源, 必须使用 Microsoft 云服务帐户 (Azure Active Directory 组织帐户或 Microsoft 帐户) 以已通过身份验证的用户身份登录, 并查看并接受 Microsoft合规性材料的非公开协议。
   
 **现有客户可以** [https://aka.ms/STP](https://aka.ms/STP)使用以下联机订阅之一 (试用版或付费版) 访问服务信任门户: 
   
@@ -84,18 +84,18 @@ microsoft 服务信任门户提供了有关 Microsoft 安全、隐私和合规�
 
 - **行业**-提供特定于行业的登陆页面, 以及 Microsoft 云服务如何帮助您的组织符合这些行业的标准和法规:
 
-    - 教育
+    - 教育版
     - 金融服务
     - 政府
     - 运行状况
-    - 制造
+    - 制造业
     - 零售商
 
 - **区域**-提供有关各国家/地区各定律的 Microsoft 云服务合规性的法律意见。 特定国家/地区包括澳大利亚、捷克共和国、德国、波兰、罗马尼亚、西班牙和英国。
   
 ### <a name="documents--resources"></a>文档 & 资源
 
-提供了大量安全实施和设计信息, 目的是通过了解 Microsoft 云服务如何保护数据, 从而更轻松地满足法规遵从性目标。 若要查看内容, 请选择 "**文档 & 资源**" 页上的选项之一。
+提供了大量安全实施和设计信息, 目的是通过了解 Microsoft 云服务如何保护数据, 从而更轻松地满足法规遵从性目标。 若要查看内容, 请选择 "**文档 _AMP_ 资源**" 页上的选项之一。
 
 - 白皮书、常见问题解答和帮助文章
 - 合规性指南
@@ -106,7 +106,7 @@ microsoft 服务信任门户提供了有关 Microsoft 安全、隐私和合规�
   
 ### <a name="trust-center"></a>信任中心
 
-指向[microsoft 信任中心](https://www.microsoft.com/trustcenter)的链接, 该链接提供有关 microsoft 云中的安全性、合规性和隐私的详细信息。 这包括有关 Microsoft 云服务中的功能的信息, 可用于满足 GDPR 的特定要求、文档对您的 GDPR 责任有帮助以及您对技术和组织措施的理解Microsoft 已采用支持 GDPR。
+指向[Microsoft 信任中心](https://www.microsoft.com/trustcenter)的链接, 该链接提供有关 microsoft 云中的安全性、合规性和隐私的详细信息。 这包括有关 Microsoft 云服务中的功能的信息, 可用于满足 GDPR 的特定要求、文档对您的 GDPR 责任有帮助以及您对技术和组织措施的理解Microsoft 已采用支持 GDPR。
   
 ### <a name="my-library"></a>我的库
 
@@ -130,7 +130,7 @@ microsoft 服务信任门户提供了有关 Microsoft 安全、隐私和合规�
 
 默认情况下, 搜索将返回文档结果。 您可以通过使用下拉列表来优化所显示的文档列表来搜索结果。 您可以使用多个筛选器缩小文档列表。 筛选器包括特定云服务、合规性类别或安全措施、地区和行业。 单击文档名称链接以下载该文档。
   
-若要在与搜索词相关的合规性管理器中列出评估, 请单击 "**合规性管理器**"。 搜索结果显示了评估的创建日期、评估分组的名称、适用的 microsoft 云服务, 以及该控件是 Microsoft 还是客户托管。 单击控件的名称以查看合规性管理器中的评估中的控件。
+若要在与搜索词相关的合规性管理器中列出评估, 请单击 "**合规性管理器**"。 搜索结果显示了评估的创建日期、评估分组的名称、适用的 Microsoft 云服务, 以及该控件是 Microsoft 还是客户托管。 单击控件的名称以查看合规性管理器中的评估中的控件。
   
 ![服务信任门户 - 搜索合规性管理器控制措施](media/bafb811a-68ce-40b5-ad16-058498fe5439.png)
   
@@ -141,21 +141,21 @@ microsoft 服务信任门户提供了有关 Microsoft 安全、隐私和合规�
 
 使用 "我的库" 功能将服务信任门户上的文档和资源添加到 "我的库" 页面。 这样, 您就可以在一个位置访问与您相关的文档。  若要将文档添加到我的库中, **** 请单击文档右侧的 "..." 菜单, 然后选择 "**保存到库**"。 通过单击一个或多个文档旁边的复选框, 然后单击页面顶部的 "**保存到库**", 可以向 "我的库" 中添加多个文档。
 
-此外, 通知功能还允许您配置 My library, 以便在 Microsoft 更新已添加到 "我的媒体库" 中的文档时向您发送一封电子邮件。 若要设置通知, 请转到 "我的媒体库", 然后单击 "**通知设置**"。 您可以选择通知的频率, 并在组织中指定要向其发送通知的电子邮件地址。 电子邮件通知包括已更新的文档的链接和更新的简短说明。
+此外, 通知功能还允许您配置 My Library, 以便在 Microsoft 更新已添加到 "我的媒体库" 中的文档时向您发送一封电子邮件。 若要设置通知, 请转到 "我的媒体库", 然后单击 "**通知设置**"。 您可以选择通知的频率, 并在组织中指定要向其发送通知的电子邮件地址。 电子邮件通知包括已更新的文档的链接和更新的简短说明。
 
 另请注意, 无论您是否打开通知, 我都会在我的库中识别所有在最近30天内更新过的文档。 在工具提示中也会显示更新的简短说明。 
 
 ## <a name="starter-packs"></a>初学者包
 
-初学者包是 microsoft curated 的一组有关特定行业的 microsoft 云服务的文档。 目前, 服务信任门户为金融服务组织提供了以下三个初学者包。 这些初学者 pack 可帮助组织评估和评估 Microsoft 云中的安全性、合规性和隐私, 并提供指导以帮助实现高度管控金融服务行业中的 Microsoft 云服务。
+初学者包是 Microsoft curated 的一组有关特定行业的 Microsoft 云服务的文档。 目前, 服务信任门户为金融服务组织提供了以下三个初学者包。 这些初学者 pack 可帮助组织评估和评估 Microsoft 云中的安全性、合规性和隐私, 并提供指导以帮助实现高度管控金融服务行业中的 Microsoft 云服务。
 
 - **评估初学者 Pack** -用于针对金融服务组织的 Microsoft 云的前期评估。
 
 - **评估初学者工具包**-评估后, 请使用此初学者工具包中的清单和其他指导, 以帮助组织评估与安全性、合规性和隐私相关的风险。
 
-- **Audit starter pack** -User 此初学者工具包, 以获取有关使用审核控件和其他工具的指南, 以帮助您实施 Microsoft 云服务, 以帮助减少组织对风险的暴露程度。
+- **Audit Starter pack** -User 此初学者工具包, 以获取有关使用审核控件和其他工具的指南, 以帮助您实施 Microsoft 云服务, 以帮助减少组织对风险的暴露程度。
 
-若要访问这些初学者包, 请转到**Service Trust Portal > 工业 & 区域 > 工业解决方案 > 金融服务业**。 您可以从初学者包中打开或下载文档, 也可以将其保存到 "我的媒体库" 中。
+若要访问这些初学者包, 请转到**Service Trust Portal _GT_ 工业 _AMP_ 区域 _GT_ 工业解决方案 _GT_ 金融服务业**。 您可以从初学者包中打开或下载文档, 也可以将其保存到 "我的媒体库" 中。
 
 ## <a name="localization-support"></a>本地化支持
 

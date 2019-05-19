@@ -3,7 +3,7 @@ title: Microsoft 合规性管理器概述
 ms.author: robmazz
 author: robmazz
 manager: laurawi
-ms.audience: Admin
+audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
@@ -11,20 +11,20 @@ ms.collection: M365-security-compliance
 search.appverid:
 - MOE150
 - MET150
-description: microsoft 合规性管理器是 microsoft 服务信任门户中基于工作流的免费风险评估工具。 合规性管理器使你能够跟踪、分配和验证与 Microsoft 云服务相关的法规遵从性活动。
-ms.openlocfilehash: a2f59eac63f8bbef98da09c2149e49ec32e56b77
-ms.sourcegitcommit: 696c1ed6b270be3f9da7395b49a7d8fec98e6db0
+description: Microsoft 合规性管理器是 Microsoft 服务信任门户中基于工作流的免费风险评估工具。 合规性管理器使你能够跟踪、分配和验证与 Microsoft 云服务相关的法规遵从性活动。
+ms.openlocfilehash: e7c8afd3a9b2e0514e0df7df0f10871b0a7ca329
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/29/2019
-ms.locfileid: "33473024"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34155284"
 ---
 # <a name="microsoft-compliance-manager-preview"></a>Microsoft 合规性管理器 (预览)
 
 > [!IMPORTANT]
 > 由世纪互联运营的 Office 365、Office 365 Germany、Office 365 U.S. Government Community High (GCC High) 或 Office 365 Department of Defense 不提供合规性管理器。
 
-[Microsoft 合规性管理器 (预览版)](https://servicetrust.microsoft.com/ComplianceManager)是一个基于工作流的免费风险评估工具, 可让您跟踪、分配和验证与 Microsoft 云服务相关的法规遵从性活动。 您的 microsoft 365、Office 365 或 Azure Active Directory 订阅的一部分, 合规性管理器可帮助您管理 microsoft 云服务的共享职责模型中的法规遵从性。 合规性管理器提供了一个集中的仪表板, 用于查看 Microsoft service 评估的标准、法规和控制实施详细信息和测试结果。 它还包括允许您管理特定于您的组织的自定义控件实现和合规性跟踪的工具。
+[Microsoft 合规性管理器 (预览版)](https://servicetrust.microsoft.com/ComplianceManager)是一个基于工作流的免费风险评估工具, 可让您跟踪、分配和验证与 Microsoft 云服务相关的法规遵从性活动。 您的 Microsoft 365、Office 365 或 Azure Active Directory 订阅的一部分, 合规性管理器可帮助您管理 Microsoft 云服务的共享职责模型中的法规遵从性。 合规性管理器提供了一个集中的仪表板, 用于查看 Microsoft service 评估的标准、法规和控制实施详细信息和测试结果。 它还包括允许您管理特定于您的组织的自定义控件实现和合规性跟踪的工具。
 
 使用合规性管理器, 您的组织可以:
   
@@ -32,7 +32,7 @@ ms.locfileid: "33473024"
 - 使您能够分配、跟踪和记录符合性和与评估相关的活动, 这些活动可帮助您的组织跨团队障碍实现合规性目标。
 - 提供符合性分数以帮助您跟踪进度并设置审核控件的优先级, 以帮助减少组织对风险的暴露程度。
 - 为您提供一个安全存储库, 以便上载和管理与合规性活动相关的证据和其他项目。
-- 生成详尽的 microsoft Excel 报告, 这些报告记录由 Microsoft 和您的组织为审计员、管理机构和其他合规性审阅者执行的合规性活动。
+- 生成详尽的 Microsoft Excel 报告, 这些报告记录由 Microsoft 和您的组织为审计员、管理机构和其他合规性审阅者执行的合规性活动。
 
 > [!NOTE]
 > 合规性管理器中提供的客户操作是建议;在实现之前, 你的组织可以评估这些建议在其各自的法规环境中的有效性。 在合规性管理器中找到的建议不应解释为合规性保证。
@@ -62,7 +62,7 @@ ms.locfileid: "33473024"
 评估包括以下几个组件:
   
 - **范围内的服务**: 每个评估适用于一组特定的 Microsoft 服务。
-- **microsoft 托管控件**: 对于每个云服务, microsoft 实施并管理一组适用标准和管理法规的合规性控制。
+- **Microsoft 托管控件**: 对于每个云服务, microsoft 实施并管理一组适用标准和管理法规的合规性控制。
 - **客户管理的控件**: 这是您对每个控件执行操作时由您的组织实现的控件的集合。
 - **评估分数**: 评估中客户管理的控件的总可能分数的百分比。 这可帮助您跟踪分配给每个控件的操作的实现。
 
@@ -81,7 +81,7 @@ ms.locfileid: "33473024"
 
 ### <a name="microsoft-managed-controls"></a>Microsoft 托管控件
 
-对于每个云服务, microsoft 实施并管理一组控件作为 Microsoft 符合各种标准和法规的一部分。 每个控件都提供了有关 microsoft 如何实现控件的详细信息, 以及 microsoft 和/或独立第三方审计员对该实施进行测试和验证的方式和时间的详细信息。
+对于每个云服务, Microsoft 实施并管理一组控件作为 Microsoft 符合各种标准和法规的一部分。 每个控件都提供了有关 Microsoft 如何实现控件的详细信息, 以及 Microsoft 和/或独立第三方审计员对该实施进行测试和验证的方式和时间的详细信息。
 
 ### <a name="customer-managed-controls"></a>客户管理的控件
 
@@ -111,7 +111,7 @@ ms.locfileid: "33473024"
 
 ## <a name="permissions"></a>权限
 
-合规性管理器使用基于角色的访问控制[权限模型](https://docs.microsoft.com/office365/securitycompliance/working-with-compliance-manager#permissions)。 默认情况下, 使用 azure Active Directory (Azure AD) 帐户的组织中的所有人都具有完全访问权限, 并且可以在合规性管理器中执行任何操作。 在组织实施了基于角色的访问控制后, 任何未分配到已定义合规性管理器角色的用户都将被分配来宾访问权限。 Microsoft 服务人员不具有对您输入或上载的任何数据的访问权限。
+合规性管理器使用基于角色的访问控制[权限模型](https://docs.microsoft.com/office365/securitycompliance/working-with-compliance-manager#permissions)。 默认情况下, 使用 Azure Active Directory (Azure AD) 帐户的组织中的所有人都具有完全访问权限, 并且可以在合规性管理器中执行任何操作。 在组织实施了基于角色的访问控制后, 任何未分配到已定义合规性管理器角色的用户都将被分配来宾访问权限。 Microsoft 服务人员不具有对您输入或上载的任何数据的访问权限。
 
 若要更改默认权限并实现完全基于角色的访问控制模型, 必须至少将一个用户添加到每个合规性管理器角色。 将用户添加到角色后, 执行分配给该角色的操作的权限将从对所有用户可用的默认权限集删除。 只有使用该角色设置的用户才能访问合规性管理器并执行该角色允许的操作。
 

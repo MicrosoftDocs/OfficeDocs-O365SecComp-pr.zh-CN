@@ -4,7 +4,7 @@ ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
 ms.date: 12/15/2017
-ms.audience: ITPro
+audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
@@ -14,12 +14,12 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: d1795031-beef-49ea-a6fc-5da5450d320d
 description: '摘要: 配置独立于 Office 365 开发/测试环境中的其余组织的 SharePoint Online 团队网站。'
-ms.openlocfilehash: 56c10b1a3871014f26a4d2fd98d9b4139d19ac47
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: 23b734e55e8c68cdc42f41b4e61bdfe152fb01e0
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32254354"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34152584"
 ---
 # <a name="isolated-sharepoint-online-team-site-devtest-environment"></a>独立的 SharePoint Online 团队网站开发/测试环境
 
@@ -27,7 +27,7 @@ ms.locfileid: "32254354"
   
 Office 365 中的 SharePoint Online 团队网站是使用通用文档库、OneNote 笔记本和其他服务进行协作的位置。 在大多数情况下，需要跨部门或组织实现广泛访问和协作。 但是, 在某些情况下, 您希望在一小部分人员之间严格控制协作的访问权限和权限。
   
-对 sharepoint Online 团队网站的访问权限以及用户可以执行的操作由 sharepoint 组和权限级别控制。 默认情况下，SharePoint Online 网站有三种访问级别：
+对 SharePoint Online 团队网站的访问权限以及用户可以执行的操作由 SharePoint 组和权限级别控制。 默认情况下，SharePoint Online 网站有三种访问级别：
   
 - **成员**：可以在网站上查看、创建和修改资源。
     
@@ -69,7 +69,7 @@ Office 365 中的 SharePoint Online 团队网站是使用通用文档库、OneNo
     
 - CLIENT1 虚拟机（对于模拟的企业 Office 365 开发/测试环境）。
     
-若要为 ProjectX SharePoint Online 团队网站创建新的访问组, 请从 windows PowerShell 提示符的 windows Azure Active Directory 模块运行以下命令:
+若要为 ProjectX SharePoint Online 团队网站创建新的访问组, 请从 Windows PowerShell 提示符的 Windows Azure Active Directory 模块运行以下命令:
   
 ```
 $groupName="ProjectX-Members"
@@ -116,7 +116,7 @@ New-MsolUser -DisplayName "Development VP" -FirstName Development -LastName VP -
 
 在安全的位置上，记下显示的 **New-MsolUser** 命令中为 Development VP 帐户生成的密码。
   
-接下来, 若要将新帐户添加到新的访问组, 请从 windows powershell 提示符的 windows Azure Active Directory 模块中运行这些 PowerShell 命令:
+接下来, 若要将新帐户添加到新的访问组, 请从 Windows PowerShell 提示符的 Windows Azure Active Directory 模块中运行这些 PowerShell 命令:
   
 ```
 $grpName="ProjectX-Members"
@@ -171,7 +171,7 @@ Add-MsolGroupMember -GroupObjectId (Get-MsolGroup | Where { $_.DisplayName -eq $
     
 11. 单击列表中的“ProjectX 成员”****。
     
-12. 在“**人员和组**”页中，单击“**新建**”。
+12. 在“人员和组”页中，单击“新建”********。
     
 13. 在“共享”**** 对话框中，键入并选择“ProjectX-Members”****，然后单击“共享”****。
     
@@ -209,7 +209,7 @@ Add-MsolGroupMember -GroupObjectId (Get-MsolGroup | Where { $_.DisplayName -eq $
   
 **图2**
 
-![sharepoint online 组及其针对独立 SharePoint online 组网站的成员身份](media/595abff4-64f9-49de-a37a-c70c6856936b.png)
+![SharePoint Online 组及其针对独立 SharePoint Online 组网站的成员身份](media/595abff4-64f9-49de-a37a-c70c6856936b.png)
   
 现在, 让我们来演示如何使用主导 Designer 用户帐户进行访问:
   

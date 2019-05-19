@@ -3,7 +3,7 @@ title: Office 365 中的无限制存档概述
 ms.author: markjjo
 author: markjjo
 manager: laurawi
-ms.audience: Admin
+audience: Admin
 ms.topic: overview
 ms.service: O365-seccomp
 localization_priority: Normal
@@ -15,12 +15,12 @@ search.appverid:
 - MET150
 ms.assetid: 37cdbb02-a24a-4093-8bdb-2a7f0b3a19ee
 description: 了解 Office 365 中的自动扩展存档, 该存档为 Exchange Online 邮箱提供无限制的存档存储。
-ms.openlocfilehash: 38fab68ee8e5c2bdd38bc60b08929bd6f6025e1b
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: 9b63bcd7cbf8c1cef8df336553debdbf7af2ba12
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32265920"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34158064"
 ---
 # <a name="overview-of-unlimited-archiving-in-office-365"></a>Office 365 中的无限制存档概述
 
@@ -29,7 +29,7 @@ ms.locfileid: "32265920"
 有关启用自动扩展存档的分步说明, 请参阅[在 Office 365 中启用无限制存档](enable-unlimited-archiving.md)。
   
 > [!NOTE]
-> 自动扩展存档还支持共享邮箱。 若要为共享邮箱启用存档, 需要具有 exchange online 存档许可证的 exchange online 计划2许可证或 exchange online 计划1许可证。 
+> 自动扩展存档还支持共享邮箱。 若要为共享邮箱启用存档, 需要具有 Exchange Online 存档许可证的 Exchange Online 计划2许可证或 Exchange Online 计划1许可证。 
   
 ## <a name="how-auto-expanding-archiving-works"></a>自动扩展存档的工作方式
 
@@ -70,22 +70,22 @@ ms.locfileid: "32265920"
 
 若要访问存储在自动扩展的存档中的邮件, 用户必须使用以下 Outlook 客户端之一:
   
-- outlook 2016 或 outlook 2019 for Windows
+- Outlook 2016 或 Outlook 2019 for Windows
     
 - Outlook 网页版 
     
-- outlook 2016 或 outlook 2019 for Mac 
+- Outlook 2016 或 Outlook 2019 for Mac 
     
 > [!NOTE]
 > Outlook 2013 用户只能访问最初存储在其存档邮箱中的项目。 他们将无法访问移动到其他存档存储的项目。 
   
-以下是在使用 outlook 或 web 上的 outlook 访问存储在自动扩展的存档中的邮件时需要考虑的一些事项。
+以下是在使用 Outlook 或 web 上的 Outlook 访问存储在自动扩展的存档中的邮件时需要考虑的一些事项。
   
 - 您可以访问存档邮箱中的任何文件夹, 包括已移动到自动扩展存储区域的文件夹。
     
 - 您可以仅通过搜索文件夹本身来搜索已移动到其他存储区域的项目。 这意味着您必须在文件夹列表中选择 "存档" 文件夹, 以选择**当前文件夹**选项作为搜索范围。 同样, 如果自动扩展存储区域中的文件夹包含子文件夹, 则必须单独搜索每个子文件夹。 
     
-- outlook 中的项目计数和可读/未读的计数 (在 outlook 和 web 上的 outlook 中) 在自动展开的存档中可能不准确。
+- Outlook 中的项目计数和可读/未读的计数 (在 Outlook 和 web 上的 outlook 中) 在自动展开的存档中可能不准确。
     
 - 您可以删除子文件夹中指向自动扩展存储区域的项目, 但不能删除该文件夹本身。
     
@@ -103,6 +103,6 @@ ms.locfileid: "32265920"
     
 - **导入服务**-您可以使用 Office 365 导入服务将 PST 文件导入到用户的自动扩展存档中。 你可以将 PST 文件中的最大为 100 GB 的数据导入用户的存档邮箱。 
 
-## <a name="more-information"></a>详细信息
+## <a name="more-information"></a>更多信息
 
 有关自动扩展存档的更多技术详细信息, 请参阅[Office 365: 自动扩展存档常见问题解答](https://blogs.technet.microsoft.com/exchange/2018/04/09/office-365-auto-expanding-archives-faq/)。

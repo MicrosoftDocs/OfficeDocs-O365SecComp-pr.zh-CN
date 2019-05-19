@@ -4,19 +4,19 @@ ms.author: markjjo
 author: markjjo
 manager: laurawi
 ms.date: 12/30/2016
-ms.audience: Admin
+audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid: MOE150
 ms.assetid: c9b0ff0c-282b-4a44-b43f-cfc5b96557f9
 description: 在您的本地计算机上编辑 Windows 注册表, 以便在从 Office 365 的 Security & 合规性中心导出内容搜索结果时禁用报告。 禁用这些报告可加快下载时间并节省磁盘空间。
-ms.openlocfilehash: 19d97bbc95be5db6540e6822721752ca62adebfc
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: f6abcf8afe70bc6ce04f0f9343e28879f7fed885
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32256850"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34154824"
 ---
 # <a name="disable-reports-when-you-export-content-search-results"></a>导出内容搜索结果时禁用报告
 
@@ -58,7 +58,7 @@ ms.locfileid: "32256850"
   
 ## <a name="edit-registry-settings-to-re-enable-the-export-reports"></a>编辑注册表设置以重新启用导出报告
 
-如果通过在上一过程中创建 .reg 文件禁用了结果. .csv 和 .manifest 报告, 则可以编辑这些文件以重新启用报告, 以便将其导出到搜索结果中。 再次在将用于将结果导出到内容搜索的计算机上执行以下过程。
+如果通过在上一过程中创建 .reg 文件禁用了结果. .csv 和 .Manifest 报告, 则可以编辑这些文件以重新启用报告, 以便将其导出到搜索结果中。 再次在将用于将结果导出到内容搜索的计算机上执行以下过程。
   
 1. 如果 Office 365 电子数据展示导出工具处于打开状态, 则将其关闭。
     
@@ -119,7 +119,7 @@ ms.locfileid: "32256850"
     
   - 文档的名称（位于结果日志中的主题列）。
     
-- **.manifest**一个清单文件 (xml 格式), 包含搜索结果中包含的每个项目的相关信息。 此报告中的信息与 "结果 .csv" 报告相同, 但其格式为 "电子发现参考模型 (EDRM)" 指定的格式。 有关 EDRM 的详细信息, 请转[https://www.edrm.net](https://www.edrm.net)到。
+- **.Manifest**一个清单文件 (xml 格式), 包含搜索结果中包含的每个项目的相关信息。 此报告中的信息与 "结果 .csv" 报告相同, 但其格式为 "电子发现参考模型 (EDRM)" 指定的格式。 有关 EDRM 的详细信息, 请转[https://www.edrm.net](https://www.edrm.net)到。
     
  **何时应禁止导出这些报告？**
   

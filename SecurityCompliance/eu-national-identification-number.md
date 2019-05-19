@@ -4,18 +4,18 @@ ms.author: stephow
 author: stephow-MSFT
 manager: laurawi
 ms.date: 8/17/2018
-ms.audience: Admin
+audience: Admin
 ms.topic: reference
 ms.service: O365-seccomp
 ms.collection: M365-security-compliance
 localization_priority: Normal
 description: 本主题介绍当数据丢失防护 (DLP) 策略检测到欧盟国家身份证的敏感信息类型时, 会对其进行查找。 此敏感信息类型为每个国家/地区定义不同的模式、关键字和其他证据。
-ms.openlocfilehash: afae2c3fa54fe5fcd93990cdf5797f5517c46202
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: 205019d040648f0600f3dbf4403063edf9f31c41
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32255640"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34154454"
 ---
 # <a name="eu-national-identification-number"></a>欧盟国家身份证号
 
@@ -127,7 +127,7 @@ personalausweis republik österreich
 
 egn
   
-egn #
+egn#
   
 保加利亚语国家/地区号码
   
@@ -135,7 +135,7 @@ egn #
   
 social security number
   
-nationalnumber #
+nationalnumber#
   
 ssn
   
@@ -143,21 +143,21 @@ ssn
   
 nationalnumber
   
-bnn #
+bnn#
   
 bnn
   
 个人 id 号
   
-personalidnumber #
+personalidnumber#
   
-единенгражданскиномер
+единен граждански номер
   
 edinen grazhdanski nomer
   
 егн
   
-егн #
+егн#
   
 ## <a name="croatia"></a>克罗地亚
 
@@ -278,7 +278,7 @@ national identification number
   
 个人 id 号
   
-personalidnumber #
+personalidnumber#
   
 ik
   
@@ -435,7 +435,7 @@ identification number
   
 uimhir phearsanta seirbhíse poiblí
   
-uimh。 psp
+uimh. psp
   
 ## <a name="italy"></a>意大利
 
@@ -453,7 +453,7 @@ uimh。 psp
     
 - 与出生年份的最后一个数字对应的两个数字
     
-- 一个与出生月份的字母对应的字母–字母按字母顺序使用, 但仅使用字母 A 到 E、H、L、M、P、R 和 T (因此, 一月为 a, 10 月为 r)
+- 一个与出生月份的字母对应的字母–字母按字母顺序使用, 但仅使用字母 A 到 E、H、L、M、P、R 和 T (因此, 一月为 A, 10 月为 R)
     
 - 与出生月份的某一天对应的两个数字, 为了区分 genders, 40 已添加到女性的出生日。
     
@@ -501,7 +501,7 @@ uimh。 psp
   
 会计代码
   
-personalcodeno #
+personalcodeno#
   
 个人 id 号
   
@@ -575,7 +575,7 @@ codice fiscale
   
 个人证书号码
   
-personalcodeno #
+personalcodeno#
   
 个人 id 号
   
@@ -642,7 +642,7 @@ personalcodeno #
   
 唯一标识号
   
-uniqueidentityno #
+uniqueidentityno#
   
 个人代码。
   
@@ -654,7 +654,7 @@ piliečio paslaugos numeris
   
 unikalus identifikavimo kodas
   
-asmens kodas。
+asmens kodas.
   
 ## <a name="luxemburg"></a>Luxemburg
 
@@ -703,17 +703,17 @@ asmens kodas。
   
 个人 id 号
   
-personalidno #
+personalidno#
   
 唯一 id 号
   
-personalidnumber #
+personalidnumber#
   
 唯一 id 键
   
 个人 id 代码
   
-uniqueidkey #
+uniqueidkey#
   
 单个代码
   
@@ -727,11 +727,11 @@ id personnelle
   
 numéro d'identification 人员
   
-idpersonnelle #
+idpersonnelle#
   
 persönliche identifikationsnummer
   
-eindeutigeid #
+eindeutigeid#
   
 ## <a name="malta"></a>马耳他
 
@@ -788,7 +788,7 @@ eindeutigeid #
   
 唯一标识号
   
-uniqueidentityno #
+uniqueidentityno#
   
 kodiċi numerali personali
   
@@ -849,7 +849,7 @@ numru ta "identità uniku
   
 唯一标识号
   
-uniqueidentityno #
+uniqueidentityno#
   
 bsn
   
@@ -920,7 +920,7 @@ uniek identiteitsnummer
   
 cnp
   
-cnp #
+cnp#
   
 针
   
@@ -928,11 +928,11 @@ cnp #
   
 保险号
   
-insurancenumber #
+insurancenumber#
   
 唯一标识号
   
-uniqueidentityno #
+uniqueidentityno#
   
 付款的个人数字
   
@@ -946,11 +946,11 @@ număr identitate
   
 număr identificare 个人
   
-număridentitate #
+număridentitate#
   
-codnumericpersonal #
+codnumericpersonal#
   
-numărpersonalunic #
+numărpersonalunic#
   
 ## <a name="slovakia"></a>斯洛伐克
 
@@ -1003,7 +1003,7 @@ national identification number
   
 social security number
   
-nationalnumber #
+nationalnumber#
   
 ssn
   
@@ -1013,11 +1013,11 @@ ssn
   
 个人 id 号
   
-personalidnumber #
+personalidnumber#
   
 rč
   
-rodnéčíslo
+rodné číslo
   
 rodne cislo
   
@@ -1080,7 +1080,7 @@ rodne cislo
   
 唯一标识号
   
-uniqueidentityno #
+uniqueidentityno#
   
 唯一的主公民号码
   
@@ -1148,19 +1148,19 @@ national identification number
   
 唯一标识号
   
-nationalidno #
+nationalidno#
   
 uniqueid
   
 dni
   
-nationalid #
+nationalid#
   
-nie #
+nie#
   
 nie
   
-nienúmero #
+nienúmero#
   
 nie número
   
@@ -1172,9 +1172,9 @@ número nacional identidad
   
 dni número
   
-dninúmero #
+dninúmero#
   
-identidadúnico #
+identidadúnico#
   
 ## <a name="sweden"></a>瑞典
 

@@ -3,7 +3,7 @@ title: 在 Office 365 高级电子数据展示中定义突出显示的关键字�
 ms.author: chrfox
 author: chrfox
 manager: laurawi
-ms.audience: Admin
+audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
@@ -12,12 +12,12 @@ search.appverid:
 - MET150
 ms.assetid: 03cc4387-2c7d-4058-8a44-0deefb58f011
 description: '了解如何将用户定义的关键字添加到相关性, 以帮助在 Office 365 高级电子数据展示中标记时识别相关文件, 并指定成本参数。  '
-ms.openlocfilehash: aec9efac91cc3fb48068fca9b6b7313f829f4fe2
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: 4542e80e5324a35df2e7dc8e7e0cf09f37ae1ef4
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32257066"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34153384"
 ---
 # <a name="define-highlighted-keywords-and-advanced-options-in-office-365-advanced-ediscovery"></a>在 Office 365 高级电子数据展示中定义突出显示的关键字和高级选项
 
@@ -67,7 +67,7 @@ ms.locfileid: "32257066"
     
     ![成本参数的相关性设置](media/bab7b5b7-6297-4e7c-b0a6-ba5aa8b21787.png)
   
-3. 单击“**保存**”。 将保存所选设置。
+3. 单击“保存”****。 将保存所选设置。
     
 ## <a name="see-also"></a>另请参阅
 

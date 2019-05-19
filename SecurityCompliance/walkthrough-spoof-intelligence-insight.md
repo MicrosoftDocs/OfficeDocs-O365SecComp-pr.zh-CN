@@ -3,7 +3,7 @@ title: 演练欺骗性的智能洞察力
 ms.author: tracyp
 author: MSFTTracyP
 ms.date: 7/30/2018
-ms.audience: ITPro
+audience: ITPro
 ms.topic: overview
 ms.service: O365-seccomp
 localization_priority: Normal
@@ -14,12 +14,12 @@ ms.assetid: 59a3ecaf-15ed-483b-b824-d98961d88bdd
 ms.collection:
 - M365-security-compliance
 description: 了解新的欺骗智能洞察力的工作原理。
-ms.openlocfilehash: 4303b8f2524e6722e7febbbd06ab9daa853ed802
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: cdfdf90779137455e0b74cea5fe41aee7b1b26e5
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32267242"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34156064"
 ---
 # <a name="walkthrough-spoof-intelligence-insight"></a>演练: 欺骗性的智能洞察力
 
@@ -53,7 +53,7 @@ ms.locfileid: "32267242"
   
  **真知灼见模式**。 如果你启用了任何欺骗策略, 则真知灼见将显示在过去30天内受到欺骗智能功能影响的邮件数。 
   
- **if 模式**。 如果未启用任何欺骗策略, 则真知灼见将显示在过去30天内, 我们的欺骗智能功能*会*影响的邮件数。 
+ **If 模式**。 如果未启用任何欺骗策略, 则真知灼见将显示在过去30天内, 我们的欺骗智能功能*会*影响的邮件数。 
   
 无论哪种方式, 真知灼见中显示的欺骗性域都分为两类;可疑的域对和非可疑域对。 这些类别进一步细分为三个不同的存储桶供您查看。 
   
@@ -61,7 +61,7 @@ ms.locfileid: "32267242"
   
 - "发件人" 地址是邮件应用程序显示为 "发件人" 地址的地址。 此地址标识电子邮件的作者。 即，负责撰写邮件的个人或系统的邮箱。 有时称其为" 5322.From 地址"。
     
-- 发送方结构或发件人是发送 IP 地址的 PTR 记录的组织域。 如果发送 ip 地址没有 PTR 记录, 则发件人由使用 CIDR 表示法 (/24) 中的255.255.255.0 子网掩码的发送 IP 进行标识。 例如, 如果 IP 地址为 192.168.100.100, 则发件人的完整 IP 地址为 192.168.100.100/24。
+- 发送方结构或发件人是发送 IP 地址的 PTR 记录的组织域。 如果发送 IP 地址没有 PTR 记录, 则发件人由使用 CIDR 表示法 (/24) 中的255.255.255.0 子网掩码的发送 IP 进行标识。 例如, 如果 IP 地址为 192.168.100.100, 则发件人的完整 IP 地址为 192.168.100.100/24。
     
  **可疑域对**包括: 
   

@@ -4,7 +4,7 @@ ms.author: tracyp
 author: MSFTTracyp
 manager: laurawi
 ms.date: 10/11/2017
-ms.audience: ITPro
+audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
@@ -15,19 +15,19 @@ ms.assetid: eef8408b-54d3-4d7d-9cf7-ad2af10b2e0e
 ms.collection:
 - M365-security-compliance
 description: '为了帮助防止网络钓鱼, Office 365 和 Outlook.com 现在要求来自: 地址的 RFC 合规性。'
-ms.openlocfilehash: e540e56a7a40d13a92719865fccefefa61de47c2
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: 2721b66b18016269c8e4cc3684814faa402cec58
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32253930"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34154284"
 ---
 # <a name="how-office-365-validates-the-from-address-to-prevent-phishing"></a>Office 365 如何验证发件人地址以防止仿冒
 
 Office 365 和 Outlook.com 电子邮件帐户会收到越来越多的网络钓鱼攻击。 一种可仿冒者使用的技术是发送其发件人: 地址值不符合[RFC 5322](https://tools.ietf.org/html/rfc5322)的邮件。 "发件人:" 地址也称为 "5322.from 地址"。 为了帮助阻止此类型的网络钓鱼, Office 365 和 Outlook.com 要求服务收到的邮件包括符合 RFC 的 From: address, 如本文中所述。
   
 > [!NOTE]
-> 本文中的信息要求您对电子邮件地址的常规格式有一个基本的了解。 有关详细信息, 请参阅[rfc 5322](https://tools.ietf.org/html/rfc5322) (尤其是3.2.3、3.4 和 3.4.1)、 [rfc 5321](https://tools.ietf.org/html/rfc5321)以及[rfc 3696](https://tools.ietf.org/html/rfc3696)。 本文介绍了5322.from 地址的策略实施。 本文不介绍5321的5321.mailfrom 地址。 
+> 本文中的信息要求您对电子邮件地址的常规格式有一个基本的了解。 有关详细信息, 请参阅[rfc 5322](https://tools.ietf.org/html/rfc5322) (尤其是3.2.3、3.4 和 3.4.1)、 [Rfc 5321](https://tools.ietf.org/html/rfc5321)以及[rfc 3696](https://tools.ietf.org/html/rfc3696)。 本文介绍了5322.from 地址的策略实施。 本文不介绍5321的5321.Mailfrom 地址。 
   
 遗憾的是, 在 Internet 上仍有一些旧的电子邮件服务器会继续发送 "合法" 电子邮件, 这些邮件缺少或格式不正确的发件人: 地址。 如果您定期收到使用这些旧系统的组织发来的电子邮件, 则鼓励这些组织更新其邮件服务器以遵守新式安全标准。
   
@@ -62,12 +62,12 @@ Office 365 正在改变它在收到的邮件中强制使用 From: address 的方
 From: <>
 ```
 
-从2017年11月9日开始, office 365 将对其数据中心和邮件服务器进行更改, 这将强制实施一个新规则, 在该规则中, Office 365 或 Outlook.com 不再接受邮件地址 (如果邮件没有发件人: 地址)。 相反, Office 365 接收到的所有邮件都必须已经包含有效的 From: address。 否则, 邮件将被发送到 Outlook.com 和 Office 365 中的 "垃圾邮件" 或 "已删除邮件" 文件夹。 
+从2017年11月9日开始, Office 365 将对其数据中心和邮件服务器进行更改, 这将强制实施一个新规则, 在该规则中, Office 365 或 Outlook.com 不再接受邮件地址 (如果邮件没有发件人: 地址)。 相反, Office 365 接收到的所有邮件都必须已经包含有效的 From: address。 否则, 邮件将被发送到 Outlook.com 和 Office 365 中的 "垃圾邮件" 或 "已删除邮件" 文件夹。 
   
 ### <a name="syntax-overview-valid-format-for-the-from-address-for-office-365"></a>语法概述: From: address for Office 365 的有效格式
 <a name="SyntaxOverviewFromAddress"> </a>
 
-"发件人: 地址" 的值的格式是在几个 rfc 中详细定义的。 寻址方面有很多变化, 可视为有效或无效。 为了使其简单, Microsoft 建议使用以下格式和定义:
+"发件人: 地址" 的值的格式是在几个 Rfc 中详细定义的。 寻址方面有很多变化, 可视为有效或无效。 为了使其简单, Microsoft 建议使用以下格式和定义:
   
 ```
 From: "displayname " <emailaddress >

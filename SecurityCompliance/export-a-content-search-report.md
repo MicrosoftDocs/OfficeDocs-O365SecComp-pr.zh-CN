@@ -3,7 +3,7 @@ title: 导出内容搜索报告
 ms.author: markjjo
 author: markjjo
 manager: laurawi
-ms.audience: Admin
+audience: Admin
 ms.topic: article
 f1_keywords:
 - ms.o365.cc.CustomizeExportReport
@@ -19,12 +19,12 @@ search.appverid:
 - MET150
 ms.assetid: 5c8c1db6-d8ac-4dbb-8a7a-f65d452169b9
 description: 除了在 Office 365 的 Security & 合规性中心中导出内容搜索的实际结果, 您只需导出搜索结果报告即可。 报告包含搜索结果摘要和文档, 其中包含有关要导出的每个项目的详细信息。
-ms.openlocfilehash: 57c8a9be5c53998570f6ff15a49df69e27745e26
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: 8e33a7ba236e0890fc5985aa9a00cba904a40793
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32255650"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34154604"
 ---
 # <a name="export-a-content-search-report"></a>导出内容搜索报告
 
@@ -32,7 +32,7 @@ ms.locfileid: "32255650"
   
 导出报表时, 它会下载到与内容搜索同名的文件夹中, 但附加在 *_ReportsOnly*中。 例如, 如果内容搜索名为*ContosoCase0815* , 则会将报告下载到名为*ContosoCase0815_ReportsOnly*的文件夹中。 有关报告中包含的文档的列表, 请参阅[报告中包含的内容](#whats-included-in-the-report)。
 
-## <a name="before-you-begin"></a>准备工作
+## <a name="before-you-begin"></a>开始之前
 
 - 若要导出内容搜索报告, 您必须在安全 & 合规性中心中分配合规性搜索管理角色。 此角色分配给内置电子数据展示管理器和组织管理角色组。 它没有默认分配至组织管理角色组。 有关详细信息, 请参阅[分配电子数据展示权限](assign-ediscovery-permissions.md)。
     
@@ -42,7 +42,7 @@ ms.locfileid: "32255650"
     
   - 32 位或 64 位版本的 Windows 7 和更高版本
     
-  - Microsoft .net Framework 4。7
+  - Microsoft .NET Framework 4。7
     
   - 支持的浏览器：
     
@@ -89,7 +89,7 @@ ms.locfileid: "32255650"
     
     有关未编制索引的项目的详细信息, 请参阅[内容搜索中的部分索引项目](partially-indexed-items-in-content-search.md)。
     
-7. 选择包括所有版本的 SharePoint 文档的搜索统计信息。 仅当搜索的内容源包括 SharePoint 或 OneDrive for business 网站时, 才会显示此选项。
+7. 选择包括所有版本的 SharePoint 文档的搜索统计信息。 仅当搜索的内容源包括 SharePoint 或 OneDrive for Business 网站时, 才会显示此选项。
     
 8. 单击 "**生成报告**"。
     

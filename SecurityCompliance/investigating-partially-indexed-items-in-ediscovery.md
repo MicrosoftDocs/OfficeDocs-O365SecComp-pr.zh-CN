@@ -4,7 +4,7 @@ ms.author: markjjo
 author: markjjo
 manager: laurawi
 ms.date: 1/26/2018
-ms.audience: Admin
+audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
@@ -12,12 +12,12 @@ ms.collection: M365-security-compliance
 search.appverid: MOE150
 ms.assetid: 4e8ff113-6361-41e2-915a-6338a7e2a1ed
 description: 部分索引项目 (也称为未编制索引项) 是 SharePoint 和 OneDrive 网站上的 Exchange 邮箱项目和文档, 由于某些原因未完全为内容搜索编制索引。 在本文中, 您可以了解为什么无法将项目编入搜索, 并作为部分索引项目返回, 确定部分索引项目的搜索错误, 以及使用 PowerShell 脚本确定组织的部分索引电子邮件的公开程度。items.
-ms.openlocfilehash: d6b1326498780a5d40e49ff22aa1ac7d16bee8e4
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: 78ce6fc9816707e4d8bb18da71ca2ee89386b9b8
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32254116"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34154216"
 ---
 # <a name="investigating-partially-indexed-items-in-office-365-ediscovery"></a>使用 Office 365 电子数据展示调查部分索引项
 
@@ -93,7 +93,7 @@ ms.locfileid: "32254116"
   
 下面列出了索引错误和可能的错误原因的说明。
   
-|**错误标记**|**Description**|
+|**错误标记**|**说明**|
 |:-----|:-----|
 | `attachmentcount` <br/> |电子邮件的附件过多, 其中一些附件未处理。  <br/> |
 | `attachmentdepth` <br/> |内容检索器和文档分析程序发现嵌套在其他附件中的附件级别过多。 其中一些附件未处理。  <br/> |
@@ -164,7 +164,7 @@ ms.locfileid: "32254116"
   
 ```
    
-2. [连接到安全 & 合规中心 PowerShell](https://go.microsoft.com/fwlink/p/?linkid=627084)。
+2. [连接到安全 _AMP_ 合规中心 PowerShell](https://go.microsoft.com/fwlink/p/?linkid=627084)。
     
 3. 在 Security & 合规性中心 PowerShell 中, 转到在步骤1中保存脚本的文件夹, 然后运行该脚本;例如:
 
@@ -176,7 +176,7 @@ ms.locfileid: "32254116"
   
 ![生成来自组织公开的报告的脚本的输出示例, 以部分索引的电子邮件项目](media/aeab5943-c15d-431a-bdb2-82f135abc2f3.png)
   
-请注意以下几点：
+请注意以下事项：
   
 1. 电子邮件项目的总数和大小, 以及组织的部分索引的电子邮件项目的比率 (按计数和按大小)
     

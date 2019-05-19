@@ -4,7 +4,7 @@ ms.author: tracyp
 author: MSFTTracyP
 manager: laurawi
 ms.date: 03/12/2019
-ms.audience: ITPro
+audience: ITPro
 ms.topic: article
 f1_keywords:
 - ms.exch.eac.ActionCenter.Restricted.Users.RestrictedUsers
@@ -16,12 +16,12 @@ ms.assetid: 712cfcc1-31e8-4e51-8561-b64258a8f1e5
 ms.collection:
 - M365-security-compliance
 description: 如果用户不断发送来自受分类为垃圾邮件的 Office 365 的电子邮件, 则会受到限制, 无法发送更多的邮件。
-ms.openlocfilehash: a4f22b4d5192df202c1caa19714e8b5476dd8205
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: 7a44ff7f2bcf88f2132ee4c372cc11b9657dd16a
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32264934"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34157244"
 ---
 # <a name="removing-a-user-from-the-restricted-users-portal-after-sending-spam-email"></a>发送垃圾电子邮件后，从受限用户门户删除用户
 
@@ -40,9 +40,9 @@ ms.locfileid: "32264934"
 
 ## <a name="remove-restrictions-for-a-blocked-office-365-email-account"></a>删除对被阻止的 Office 365 电子邮件帐户的限制
 
-您可以在安全 & 合规中心 (SCC) 中完成此任务。 有关 SCC 的更多详细信息,[请转到 Security & 合规性中心](go-to-the-securitycompliance-center.md)。 必须在 "**组织管理**" 或 "**安全管理员**" 角色组中, 才能执行这些功能。 [转到 Security & 合规性中心中的 "权限"](permissions-in-the-security-and-compliance-center.md) , 了解有关 SCC 角色组的更多详细信息。
+您可以在安全 & 合规中心 (SCC) 中完成此任务。 有关 SCC 的更多详细信息,[请转到 Security _AMP_ 合规性中心](go-to-the-securitycompliance-center.md)。 必须在 "**组织管理**" 或 "**安全管理员**" 角色组中, 才能执行这些功能。 [转到 Security _AMP_ 合规性中心中的 "权限"](permissions-in-the-security-and-compliance-center.md) , 了解有关 SCC 角色组的更多详细信息。
 
-1. 使用具有 office 365 全局管理员权限的工作或学校帐户登录到 office 365 安全性和合规性中心, 并在左侧的列表中展开 "**威胁管理**", 选择 "**查看**", 然后选择 "**受限"用户**。
+1. 使用具有 Office 365 全局管理员权限的工作或学校帐户登录到 Office 365 安全性和合规性中心, 并在左侧的列表中展开 "**威胁管理**", 选择 "**查看**", 然后选择 "**受限"用户**。
     
     > [!TIP]
     > 若要直接转到安全&amp;合规性中心中的 "**受限用户**" 页 (以前称为 "操作中心"), 请使用以下 URL: >[https://protection.office.com/#/restrictedusers](https://protection.office.com/?hash=/restrictedusers)
@@ -60,9 +60,9 @@ ms.locfileid: "32264934"
 
 ## <a name="making-sure-admins-are-alerted-when-this-happens"></a>确保在发生此情况时提醒管理员
 
-租户管理员还会收到一条警报, 指示用户已受到限制, 无法发送任何更多的出站邮件。 它是为所有租户提供的默认警报, 并在 "SCC 警告策略" 页 (标题为 "用户限制发送电子邮件") 中列出。 有关警报的详细信息, 请转到[Security & 合规性中心中的 "通知策略](https://docs.microsoft.com/en-us/office365/securitycompliance/alert-policies)"。
+租户管理员还会收到一条警报, 指示用户已受到限制, 无法发送任何更多的出站邮件。 它是为所有租户提供的默认警报, 并在 "SCC 警告策略" 页 (标题为 "用户限制发送电子邮件") 中列出。 有关警报的详细信息, 请转到[Security _AMP_ 合规性中心中的 "通知策略](https://docs.microsoft.com/en-us/office365/securitycompliance/alert-policies)"。
 
-## <a name="for-more-information"></a>有关详细信息
+## <a name="for-more-information"></a>详细信息
 
 [响应已泄露的电子邮件帐户](responding-to-a-compromised-email-account.md)
 

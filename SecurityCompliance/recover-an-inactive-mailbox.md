@@ -4,7 +4,7 @@ ms.author: markjjo
 author: markjjo
 manager: laurawi
 ms.date: 6/21/2018
-ms.audience: Admin
+audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 ms.collection: M365-security-compliance
@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.assetid: 35d0ecdb-7cb0-44be-ad5c-69df2f8f8b25
 description: '如果以前的员工返回到您的组织, 或者如果雇用新员工来承担 departed 员工的工作职责, 则可以在 Office 365 中恢复非活动邮箱的内容。 恢复非活动邮箱时, 会将其转换为新邮箱, 其中包含非活动邮箱的内容。 '
-ms.openlocfilehash: c7f942c518dcc74a4bdb37d67e27e8a63879ab46
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: be7935472363e406a978c09f926776e69c3024fe
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32261540"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34156914"
 ---
 # <a name="recover-an-inactive-mailbox-in-office-365"></a>在 Office 365 中恢复非活动邮箱
 
@@ -34,7 +34,7 @@ ms.locfileid: "32261540"
 > [!NOTE]
 > 我们推迟了创建新的就地保留的截止时间, 以使邮箱处于非活动状态。 但在将来的某一时刻, 你将无法在 Exchange Online 中创建新的就地保留。 在这段时间, 仅可使用诉讼保留和 Office 365 保留策略来创建非活动邮箱。 不过，处于就地保留的现有非活动邮箱仍受支持，可以继续管理这些非活动邮箱的就地保留。 这包括更改就地保留的持续时间，以及通过删除就地保留来永久删除非活动邮箱。 
   
-## <a name="before-you-begin"></a>准备工作
+## <a name="before-you-begin"></a>开始之前
 
 - 您必须使用 Exchange Online PowerShell 来还原非活动邮箱。 不能使用 Exchange 管理中心 (EAC)。 有关分步说明, 请参阅[连接到 Exchange Online PowerShell](https://go.microsoft.com/fwlink/?linkid=396554)。
     
@@ -50,7 +50,7 @@ ms.locfileid: "32261540"
     
 ## <a name="recover-an-inactive-mailbox"></a>恢复非活动邮箱
 
-将**新邮箱**cmdlet 与*InactiveMailbox*参数一起使用可恢复非活动邮箱。 
+将**新邮箱**Cmdlet 与*InactiveMailbox*参数一起使用可恢复非活动邮箱。 
   
 1. 创建包含非活动邮箱的属性的变量。 
     
@@ -71,7 +71,7 @@ ms.locfileid: "32261540"
     
 恢复非活动邮箱后，还将创建新的 Office 365 用户帐户。 您必须通过分配许可证来激活此用户帐户。 若要在 Microsoft 365 管理中心分配许可证，请参阅[分配或取消分配 Office 365 商业版许可证](https://go.microsoft.com/fwlink/p/?LinkId=276798)。
   
-## <a name="more-information"></a>详细信息
+## <a name="more-information"></a>更多信息
 
 - **恢复和还原非活动邮箱的主要区别是什么？** 恢复非活动邮箱时，邮箱基本上会转换为一个新邮箱，将保留非活动邮箱的的内容和文件夹结构，并将邮箱链接到新的用户帐户。恢复后，非活动邮箱不再存在，并且对新邮箱中的内容所做的任何更改都会影响最初保留在非活动邮箱中内容。相反，还原非活动邮箱时，只是将内容复制到另一个邮箱。非活动邮箱将保留，并且仍保留非活动状态。对目标邮箱中的内容所做的任何更改都不会影响非活动邮箱中保留的原始内容。仍可以使用就地电子数据展示搜索非活动邮箱，可以将其内容还原到另一个邮箱，也可以在以后将其恢复或删除。 
     
@@ -85,7 +85,7 @@ ms.locfileid: "32261540"
     
   - 单个项目恢复期间（由 **RetainDeletedItemsFor** 邮箱属性定义）设置为 30 天。通常情况下，在 Exchange Online 中创建新邮箱时，此保留期设置为 14 天。将此值设置为最大值 30 天，可留出更多时间从非活动邮箱中恢复任何已永久删除（或清除）的数据。您也可以禁用单个项目恢复，或将单个项目恢复期设置为默认的 14 天。有关详细信息，请参阅 [Enable or disable single item recovery for a mailbox](https://go.microsoft.com/fwlink/?linkid=856769)。
     
-  - 保留挂起已启用，保留挂起持续时间设置为 30 天。 这意味着, 分配给新邮箱的默认 Exchange 保留策略和任何组织范围或 Exchange 范围的 Office 365 保留策略将不会被处理30天。 这使复职员工或恢复的非活动邮箱的新所有者有时间来管理旧邮件。 否则, exchange 或 office 365 保留策略可能会删除旧邮箱项目 (或根据为 Exchange 或 Office 365 保留策略配置的设置, 将项目移至存档邮箱 (如果已启用)。 30天后, 保留挂起会过期, **RetentionHoldEnabled**邮箱属性设置为**False**, 并且托管文件夹助理将开始处理分配给邮箱的策略。 如果您不需要此额外的时间，则可以删除保留挂起。 您也可以使用 **Set-Mailbox -EndDateForRetentionHold** 命令，增加保留挂起的持续时间。 有关详细信息，请参阅 [Place a mailbox on retention hold](https://go.microsoft.com/fwlink/?linkid=856300)。
+  - 保留挂起已启用，保留挂起持续时间设置为 30 天。 这意味着, 分配给新邮箱的默认 Exchange 保留策略和任何组织范围或 Exchange 范围的 Office 365 保留策略将不会被处理30天。 这使复职员工或恢复的非活动邮箱的新所有者有时间来管理旧邮件。 否则, Exchange 或 Office 365 保留策略可能会删除旧邮箱项目 (或根据为 Exchange 或 Office 365 保留策略配置的设置, 将项目移至存档邮箱 (如果已启用)。 30天后, 保留挂起会过期, **RetentionHoldEnabled**邮箱属性设置为**False**, 并且托管文件夹助理将开始处理分配给邮箱的策略。 如果您不需要此额外的时间，则可以删除保留挂起。 您也可以使用 **Set-Mailbox -EndDateForRetentionHold** 命令，增加保留挂起的持续时间。 有关详细信息，请参阅 [Place a mailbox on retention hold](https://go.microsoft.com/fwlink/?linkid=856300)。
     
 - **如果您需要保留非活动邮箱的原始状态，请将恢复的邮箱置于保留状态。** 若要防止新邮箱所有者或保留策略从已恢复的非活动邮箱中永久删除任何邮件, 可以将邮箱置于诉讼保留中。有关详细信息, 请参阅[将邮箱置于诉讼保留状态](https://go.microsoft.com/fwlink/?linkid=856286)。
     

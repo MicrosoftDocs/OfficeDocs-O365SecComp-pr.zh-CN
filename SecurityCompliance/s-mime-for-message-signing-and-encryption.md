@@ -4,7 +4,7 @@ ms.author: chrisda
 author: chrisda
 manager: serdars
 ms.date: ''
-ms.audience: ITPro
+audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
@@ -12,12 +12,12 @@ search.appverid:
 - MET150
 ms.assetid: 887c710b-0ec6-4ff0-8065-5f05f74afef3
 description: 管理员可以了解如何在 Exchange Online 中使用 S/MIME。
-ms.openlocfilehash: 7c7225efce247928e19946e695c19931f198ae32
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: 570e306ea1c781344bed120f1dd467d31a4a4fe6
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32261380"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34156994"
 ---
 # <a name="smime-for-message-signing-and-encryption-in-exchange-online"></a>Exchange Online 中的邮件签名和加密的 S/MIME
 
@@ -41,7 +41,7 @@ S/MIME (安全/多用途 Internet 邮件扩展) 是发送经过数字签名和�
 
 - 在**UserSMIMECertificate**和/或**UserCertificate**属性中的本地 AD DS 帐户中发布用户证书。
 
-- 对于 Exchange Online 组织, 使用相应版本的 DirSync 将用户证书从 AD DS 同步到 Azure Active Directory。 然后, 这些证书将从 Azure Active directory 同步到 Exchange Online 目录, 并将在将邮件加密给收件人时使用。
+- 对于 Exchange Online 组织, 使用相应版本的 DirSync 将用户证书从 AD DS 同步到 Azure Active Directory。 然后, 这些证书将从 Azure Active Directory 同步到 Exchange Online 目录, 并将在将邮件加密给收件人时使用。
 
 - 设置虚拟证书集合以验证 S/MIME。此信息供 Web 上的 Outlook 用于验证电子邮件的签名并确保它是由可信证书签名的。
 
@@ -59,7 +59,7 @@ S/MIME (安全/多用途 Internet 邮件扩展) 是发送经过数字签名和�
 
 ## <a name="related-message-encryption-technologies"></a>相关邮件加密技术
 
-随着邮件安全性变得更加重要, 管理员需要了解安全邮件的原则和概念。 此理解尤其重要, 因为存在各种可用的保护相关技术 (包括 S/MIME)。 若要详细了解 s/MIME 以及它在电子邮件上下文中的工作方式, 请参阅[了解 s/mime](https://go.microsoft.com/fwlink/?LinkID=393948)。 各种加密技术协同工作, 为静态和传输中的邮件提供保护。 S/MIME 可以同时与以下技术一起使用, 但不依赖于它们:
+随着邮件安全性变得更加重要, 管理员需要了解安全邮件的原则和概念。 此理解尤其重要, 因为存在各种可用的保护相关技术 (包括 S/MIME)。 若要详细了解 S/MIME 以及它在电子邮件上下文中的工作方式, 请参阅[了解 s/mime](https://go.microsoft.com/fwlink/?LinkID=393948)。 各种加密技术协同工作, 为静态和传输中的邮件提供保护。 S/MIME 可以同时与以下技术一起使用, 但不依赖于它们:
 
 - **传输层安全性 (TLS)** 对电子邮件服务器之间的隧道或路由进行加密, 以帮助阻止窥探和窃听。
 
@@ -69,9 +69,9 @@ S/MIME (安全/多用途 Internet 邮件扩展) 是发送经过数字签名和�
 
 ### <a name="smime-compared-with-office-365-message-encryption"></a>S/MIME 与 Office 365 邮件加密进行比较
 
-S/MIME 需要证书和发布基础结构，通常用于企业到企业和企业到消费者的情况。 用户控制 S/MIME 中的加密密钥，并且可以选择是否为他们发送的每封邮件使用密钥。 Outlook 等电子邮件程序搜索可信任根证书颁发机构位置，以执行数字签名和签名验证。 Office 365 邮件加密是一种基于策略的加密服务, 可由管理员而不是单个用户配置, 以加密发送给组织内部或外部的任何人的邮件。 它是基于 Azure 权限管理 (RMS) 构建的在线服务, 不依赖公钥基础结构。 Office 365 邮件加密还提供了其他功能, 例如, 使用组织品牌自定义邮件的功能。 有关 office 365 邮件加密的详细信息, 请参阅[office 365 邮件加密](https://go.microsoft.com/fwlink/?LinkID=392525)。
+S/MIME 需要证书和发布基础结构，通常用于企业到企业和企业到消费者的情况。 用户控制 S/MIME 中的加密密钥，并且可以选择是否为他们发送的每封邮件使用密钥。 Outlook 等电子邮件程序搜索可信任根证书颁发机构位置，以执行数字签名和签名验证。 Office 365 邮件加密是一种基于策略的加密服务, 可由管理员而不是单个用户配置, 以加密发送给组织内部或外部的任何人的邮件。 它是基于 Azure 权限管理 (RMS) 构建的在线服务, 不依赖公钥基础结构。 Office 365 邮件加密还提供了其他功能, 例如, 使用组织品牌自定义邮件的功能。 有关 Office 365 邮件加密的详细信息, 请参阅[office 365 邮件加密](https://go.microsoft.com/fwlink/?LinkID=392525)。
 
-## <a name="more-information"></a>详细信息
+## <a name="more-information"></a>更多信息
 
 [Outlook 网页版](http://technet.microsoft.com/library/3814b665-01e8-4881-9a44-163f14789ee4.aspx)
 

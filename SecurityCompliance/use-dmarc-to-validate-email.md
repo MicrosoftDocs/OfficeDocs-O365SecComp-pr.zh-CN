@@ -3,7 +3,7 @@ title: 使用 DMARC 验证 Office 365 中的电子邮件
 ms.author: tracyp
 author: MSFTTracyP
 manager: laurawi
-ms.audience: ITPro
+audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
@@ -13,12 +13,12 @@ ms.assetid: 4a05898c-b8e4-4eab-bd70-ee912e349737
 ms.collection:
 - M365-security-compliance
 description: 了解如何配置基于域的邮件身份验证、报告和一致性 (DMARC), 以验证从 Office 365 组织发送的邮件。
-ms.openlocfilehash: de92825726225549fda1b0dc57d737763f273043
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: 9e3c2cd21e411d775f621c8b353bee9e6b0e235e
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32263724"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34156184"
 ---
 # <a name="use-dmarc-to-validate-email-in-office-365"></a>使用 DMARC 验证 Office 365 中的电子邮件
 
@@ -58,7 +58,7 @@ S: .
 
 在此脚本中，发件人地址如下所示：
   
-- 邮件发件人地址 (5321) (5321.mailfrom): phish@phishing.contoso.com
+- 邮件发件人地址 (5321) (5321.Mailfrom): phish@phishing.contoso.com
     
 - 发件人地址 (5322.From)：security@woodgrovebank.com
     
@@ -224,7 +224,7 @@ contoso.com     3600   IN  MX  10 contoso-com.mail.protection.outlook.com
 
 由于它是主 MX，全部或大部分电子邮件将首先被路由到 mail.contoso.com，然后将邮件路由到 EOP。 在某些情况下，你甚至不可能将 EOP 列为 MX 记录，并直接挂接连接器来路由你的电子邮件。 EOP 不一定是要完成的 DMARC 验证的第一个条目。 它只是确保验证, 因为我们无法确保所有内部部署/非 O365 服务器将执行 DMARC 检查。  当您设置 DMARC TXT 记录时, DMARC 有资格强制实施客户的域 (而不是服务器), 但在接收服务器上实际执行强制。  如果将 EOP 设置为接收服务器, 则 EOP 执行 DMARC 强制。
   
-## <a name="for-more-information"></a>有关详细信息
+## <a name="for-more-information"></a>详细信息
 <a name="sectionSection8"> </a>
 
 想要了解有关 DMARC 的详细信息？以下资源可以派上用场。
