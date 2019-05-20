@@ -167,8 +167,7 @@
 ## 文件计划
 ### [文件计划管理器](file-plan-manager.md)
 ### [保留标签](labels.md)
-### 
-  [使用 PowerShell 创建和发布保留标签](https://docs.microsoft.com/zh-CN/office365/securitycompliance/bulk-create-publish-labels-using-powershell)
+### [使用 PowerShell 创建和发布保留标签](https://docs.microsoft.com/zh-CN/office365/securitycompliance/bulk-create-publish-labels-using-powershell)
 ### [使用标签分析查看标签使用情况](label-analytics.md)
 ### [查看文档的标签活动](view-label-activity-for-documents.md)
 ### [查看数据管理报告](view-the-data-governance-reports.md)
@@ -201,8 +200,7 @@
 ### [文件计划管理器](file-plan-manager.md)
 ### [保留标签](labels.md)
 ### [符合 SEC Rule 17a-4](use-exchange-online-to-comply-with-sec-rule-17a-4.md)
-### 
-  [使用 PowerShell 创建和发布保留标签](https://docs.microsoft.com/zh-CN/office365/securitycompliance/bulk-create-publish-labels-using-powershell)
+### [使用 PowerShell 创建和发布保留标签](https://docs.microsoft.com/zh-CN/office365/securitycompliance/bulk-create-publish-labels-using-powershell)
 ### [基于事件的保留](event-driven-retention.md)
 ### [自动执行基于事件的保留](automate-event-driven-retention.md)
 ## [释放数据](disposition-reviews.md)
