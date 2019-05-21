@@ -4,7 +4,7 @@ ms.author: deniseb
 author: denisebmsft
 manager: laurawi
 ms.date: 03/25/2019
-ms.audience: ITPro
+audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
@@ -13,16 +13,16 @@ search.appverid:
 - MOE150
 ms.collection: M365-security-compliance
 description: 了解 Office 365 高级威胁防护中的自动化调查和响应功能。
-ms.openlocfilehash: 223a28a7f63f101dd5644e433d72a3ddf6e5dc23
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: af567fc7bf532fde5854e3e2ee3785ca69c3c7ed
+ms.sourcegitcommit: b7c17e1079da4e60404d704864ccbc08f8e4dbb8
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32249818"
+ms.lasthandoff: 05/20/2019
+ms.locfileid: "34250315"
 ---
 # <a name="automated-investigation-and-response-air-with-office-365"></a>使用 Office 365 的自动化调查和响应 (空中)
 
-自动化调查和响应 (空中) (即将推出[Office 365 威胁调查和响应功能](office-365-ti.md)) 使您能够对目前存在的已知威胁运行自动调查和补救措施。 阅读本文以了解空气的概述, 以及它如何帮助您的组织和安全操作团队更有效地缓解威胁。 
+自动调查和响应 (空中) (当前处于公共预览版中作为许多[Office 365 威胁调查和响应功能](office-365-ti.md)之一) 使您能够对目前存在的已知威胁运行自动调查和补救措施。 阅读本文以了解空气的概述, 以及它如何帮助您的组织和安全操作团队更有效地缓解威胁。 
 
 若要了解有关何时可使用空中功能的详细信息, 请参阅[Microsoft 365 路线图](https://www.microsoft.com/microsoft-365/roadmap)。
 
@@ -35,13 +35,13 @@ ms.locfileid: "32249818"
 1. 检测到潜在的恶意 URL 单击
 2. 用户报告为网络钓鱼的电子邮件 *
 3. 包含在传递后删除的恶意软件的电子邮件 *
-4. 包含在传递后删除的网络钓鱼 url 的电子邮件 *
+4. 包含在传递后删除的网络钓鱼 Url 的电子邮件 *
 
-***注意**: 已在安全 & 合规性中心内为这些警报分配了 "信息性" 严重性, 并关闭了电子邮件通知。 可以通过警报策略配置启用这些策略。
+***注意**: 已在安全 _AMP_ 合规性中心内为这些警报分配了 "信息性" 严重性, 并关闭了电子邮件通知。 可以通过警报策略配置启用这些策略。
 
 若要查看警报, 请在 Security & 合规性中心中, 选择 "**通知** > " "**查看警报**"。 选择一个警报以查看其详细信息, 然后在那里使用 "**查看调查**" 链接转到相应的[调查](#investigation-graph)。 请注意, 默认情况下通知视图中隐藏了信息警报。 若要查看它们, 您需要更改警报筛选以包含信息警报。
 
-如果您的组织通过警报管理系统、服务管理系统或安全信息和事件管理 (SIEM) 系统管理安全警报, 则可以通过电子邮件通知或通过[电子邮件通知将 Office 365 警报发送到该系统。Office 365 管理活动 API](https://docs.microsoft.com/office/office-365-management-api/office-365-management-activity-api-reference)。 通过电子邮件或 API 的调查通知通知将包含访问 security & 合规性中心中的警报的链接, 从而使分配的安全管理员能够快速导航到调查。
+如果您的组织通过警报管理系统、服务管理系统或安全信息和事件管理 (SIEM) 系统管理安全警报, 则可以通过电子邮件通知或通过[电子邮件通知将 Office 365 警报发送到该系统。Office 365 管理活动 API](https://docs.microsoft.com/office/office-365-management-api/office-365-management-activity-api-reference)。 通过电子邮件或 API 的调查通知通知将包含访问 Security & 合规性中心中的警报的链接, 从而使分配的安全管理员能够快速导航到调查。
 
 ![链接到调查的警报](media/air-alerts-page-details.png) 
 
@@ -64,7 +64,7 @@ ms.locfileid: "32249818"
 - 用户报告的网络钓鱼邮件
 - URL 单击 "判定更改" 
 - 恶意软件检测到送达后 (恶意软件 ZAP)
-- 网络钓鱼检测到传递后的 zap (网络钓鱼 zap)
+- 网络钓鱼检测到传递后的 ZAP (网络钓鱼 ZAP)
 - 手动电子邮件调查 (使用威胁资源管理器)
 
 规划第2阶段的其他几项行动手册。
@@ -80,7 +80,7 @@ ms.locfileid: "32249818"
 
 ## <a name="example-a-user-reported-phish-message-launches-an-investigation-playbook"></a>示例: 用户报告的网络钓鱼邮件启动调查行动手册
 
-当组织中的用户提交电子邮件并使用[outlook 或 outlook Web Access 的报告邮件加载项](enable-the-report-message-add-in.md)将其报告给 Microsoft 时, 该报告也会发送到您的系统, 并在用户报告的视图中显示在资源管理器中。 此用户报告的消息现在会触发基于系统的信息警报, 这将自动启动调查行动手册。
+当组织中的用户提交电子邮件并使用[outlook 或 Outlook Web Access 的报告邮件加载项](enable-the-report-message-add-in.md)将其报告给 Microsoft 时, 该报告也会发送到您的系统, 并在用户报告的视图中显示在资源管理器中。 此用户报告的消息现在会触发基于系统的信息警报, 这将自动启动调查行动手册。
 
 在根调查阶段, 会评估电子邮件的各个方面。 具体包括：
 - 确定它可能属于哪种类型的威胁;
@@ -96,9 +96,9 @@ ms.locfileid: "32249818"
 接下来, 执行以下几个威胁调查和搜寻步骤:
 
 - 搜索其他电子邮件群集中的类似电子邮件。
-- 该信号与其他平台 (如[Windows Defender ATP](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/windows-defender-advanced-threat-protection)) 共享。
+- 该信号与其他平台 (如[Windows DEFENDER ATP](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/windows-defender-advanced-threat-protection)) 共享。
 - 确定是否有用户通过可疑电子邮件中的任何恶意链接单击过。
-- 跨 office 365 Exchange Online Protection ([EOP](eop/exchange-online-protection-eop.md)) 和 Office 365 高级威胁防护 ([ATP](office-365-atp.md)) 执行检查以查看用户是否报告了任何其他类似的消息。
+- 跨 Office 365 Exchange Online Protection ([EOP](eop/exchange-online-protection-eop.md)) 和 Office 365 高级威胁防护 ([ATP](office-365-atp.md)) 执行检查以查看用户是否报告了任何其他类似的消息。
 - 将执行检查以查看是否已泄露用户。 此检查在[Microsoft 云应用安全](https://docs.microsoft.com/cloud-app-security)和[Azure Active Directory](https://docs.microsoft.com/azure/active-directory)中利用信号, 关联任何相关的用户活动异常。 
 
 在搜寻阶段, 会为各种搜寻步骤分配风险和威胁。 
@@ -242,11 +242,11 @@ ms.locfileid: "32249818"
 
 ![空中调查计算机页面](media/air-investigationmachinepage.png)
 
-作为调查的一部分, 空中将电子邮件威胁与设备相关联。 例如, 调查会将恶意文件哈希传递到[Windows Defender ATP](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/windows-defender-advanced-threat-protection)以进行调查。 这样, 就可以为您的用户自动调查相关的计算机, 以帮助确保在云中和终结点上解决威胁。 
+作为调查的一部分, 空中将电子邮件威胁与设备相关联。 例如, 调查会将恶意文件哈希传递到[Windows DEFENDER ATP](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/windows-defender-advanced-threat-protection)以进行调查。 这样, 就可以为您的用户自动调查相关的计算机, 以帮助确保在云中和终结点上解决威胁。 
 
 可以执行下列操作：
 - 获取发现的当前计算机和威胁的直观概述。
-- 选择一台计算机以打开在 windows defender atp Security Center 中相关的[Windows defender atp 调查](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/automated-investigations-windows-defender-advanced-threat-protection)中的视图。
+- 选择一台计算机以打开在 Windows Defender ATP Security Center 中相关的[Windows DEFENDER atp 调查](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/automated-investigations-windows-defender-advanced-threat-protection)中的视图。
 
 ### <a name="entity-investigation"></a>实体调查
 
