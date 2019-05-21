@@ -13,12 +13,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 使用敏感度标签，可以对敏感内容进行分类和保护，同时确保组织内人员的工作效率和协作能力不受阻碍。敏感度标签可用于强制执行保护设置，如对已标记内容设置加密或水印。
-ms.openlocfilehash: 21b325454c659d72e27349ede9015a0f4bde6dcb
-ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
+ms.openlocfilehash: 63470a4375c1a3cc1420b64725d6741aa8e95af4
+ms.sourcegitcommit: 28d5972adef5bbe1377d89ff9962c531f5f08dbf
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "34155974"
+ms.lasthandoff: 05/19/2019
+ms.locfileid: "34166919"
 ---
 # <a name="overview-of-sensitivity-labels"></a>敏感度标签概述
 
@@ -94,6 +94,8 @@ ms.locfileid: "34155974"
 
 ![子标签创建选项](media/Sensitivity_label_sublabel_options.png)
 
+请注意，除了标签优先级之外，标签策略的顺序也很重要 - 请参阅[下面的此部分](#sensitivity-label-priority-order-matters)。
+
 ### <a name="sublabels-grouping-labels"></a>子标签（对标签进行分组）
 
 使用子标签，你可以将一个或多个标签分组到用户在 Office 应用程序中看到的父标签下方。 例如，在“机密”下，你的组织可能会为该分类的特定类型使用多个不同的标签。 在此示例中，父标签“机密”仅仅是没有保护设置的文本标签，并且因为它具有子标签，所以它不能应用于内容。 相反，用户必须选择“机密”才能查看子标签，然后他们可以选择要应用于内容的子标签。
@@ -136,6 +138,24 @@ ms.locfileid: "34155974"
     ![功能区上“敏感度”按钮中的“了解更多”链接](media/Sensitivity_label_learn_more.png)
 
 在你创建标签策略并将敏感度标签分配给用户和组后，这些人员会在不超过一小时的时间内在 Office 应用中看到这些标签。
+
+### <a name="label-policy-priority-order-matters"></a>标签策略优先级（顺序非常重要）
+
+你可以通过在敏感度标签策略中发布敏感度标签来向用户提供敏感度标签，该策略显示在“**标签策略**”页的“**敏感度策略**”选项卡的列表中。 正如敏感度标签（参见[上面的部分](#sensitivity-label-priority-order-matters)）一样，敏感度标签策略的顺序很重要，因为它反映了它们的优先级。 优先级最低的标签策略显示在**顶部**，优先级最高的标签策略显示在**底部**。
+
+标签策略包括：
+
+- 一组标签。
+- 标签策略的范围，表示策略中包含的用户和组。
+- 上述标签策略的设置（默认标签、对齐方式、强制标签和帮助链接）。
+
+可以在多个标签策略中包含某个用户，该用户将看到这些策略中的所有敏感度标签。 但是，用户将只看到具有最高优先级的标签策略中的策略设置。
+
+如果组织中的用户或组在标签策略中没有看到你想要的选项（例如默认标签或强制标签），请检查敏感度标签策略的顺序。 若要重新排序标签策略，请选择某个敏感度标签策略 > 选择右侧的省略号 >“**下移**”或“**上移**”。
+
+![敏感度标签策略页上的移动选项](media/sensitivity-label-policy-priority.png)
+
+请注意，虽然敏感度标签策略的优先级很重要，但保留标签策略的优先级并**不**重要。 如[保留原则或优先原则？](labels.md#the-principles-of-retention-or-what-takes-precedence)中所述，内容可能受多个保留策略的约束。
 
 ## <a name="how-to-get-started"></a>如何开始使用
 
