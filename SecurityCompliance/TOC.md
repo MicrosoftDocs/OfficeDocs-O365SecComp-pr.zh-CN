@@ -164,6 +164,7 @@
 ## [响应 Office 365 中遭到入侵的电子邮件帐户](responding-to-a-compromised-email-account.md)
 
 # 记录管理
+## [记录管理](records-management.md)
 ## 文件计划
 ### [文件计划管理器](file-plan-manager.md)
 ### [保留标签](labels.md)

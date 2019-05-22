@@ -13,12 +13,12 @@ search.appverid:
 ms.collection:
 - M365-security-compliance
 description: 若要防止仿冒邮件到达邮箱, Outlook.com 和 web 上的 Outlook 验证发件人是否是他们所说的人, 并将可疑邮件标记为垃圾邮件。
-ms.openlocfilehash: ad94a2953b6fd53612b2fc15038a7157e97f3b39
-ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
+ms.openlocfilehash: 92458a93a4da3e449061e4d2a4ba312d635c42cc
+ms.sourcegitcommit: 7f00f765e8fa674ce1c8c66f5b89b6bea45e13ac
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "34157984"
+ms.lasthandoff: 05/22/2019
+ms.locfileid: "34341620"
 ---
 # <a name="unverified-sender"></a>未验证发件人
 
@@ -55,26 +55,6 @@ ms.locfileid: "34157984"
 
 并不是每个验证失败的邮件都是恶意的。 但是, 如果您不识别发件人, 则应注意与不进行身份验证的邮件进行交互。 或者, 如果您识别的发件人在发件人图像中通常不包含 '？ ', 但突然开始看到它, 则可能是发件人哄骗的签名。
 
-### <a name="the-senders-address-is-different-than-what-appears-in-the-from-address"></a>发件人的地址与 "发件人" 地址中显示的地址不同
-
-通常, 您在邮件中看到的电子邮件地址与 "发件人" 地址中显示的内容不同。 有时, 仿冒者会尝试欺骗你, 让你认为发件人不是真正的人。
-
-当 Outlook.com 和 Outlook 网页检测到发件人的实际地址和 "发件人" 地址中的地址之间存在差异时, 它们将使用 via 标记显示实际发件人, 这将带下划线。
-
-![未验证发件人替换文本](media/unverified-sender-feature1.png)
-
-在此示例中, 发送域`suspicious.com`已通过身份验证, 但发`unknown@contoso.com`件人放在 "发件人" 地址中。
-
-并不是每个带 via 标记的邮件都是可疑的。 但是, 如果您不识别带 via 标记的邮件, 则在与之进行交互时应谨慎。
-
-在 Outlook.com 和 web 上的新 Outlook 中, 您可以将光标悬停在邮件列表中的发件人的姓名或地址上, 以查看其电子邮件地址, 而无需打开邮件。
-
-![OneDrive 入门](media/get-started-with-onedrive-message.png)
-
-如何知道您是否正在使用新的 Outlook 网页？ 请参阅以下示例:
-
-![Outlook vs Office 365](media/outlook-vs-outlook365.png)
-
 ## <a name="frequently-asked-questions"></a>常见问题
 
 ### <a name="what-criteria-does-outlookcom-and-outlook-on-the-web-use-to-add-the--and-the-via-properties"></a>Outlook.com 和 Outlook 在 web 上使用哪些条件来添加 '？ ' 和 ' via ' 属性？
@@ -83,11 +63,7 @@ ms.locfileid: "34157984"
 
 对于 via 标记: 如果 "发件人" 地址中的域不同于 DKIM 签名中的域, 或者 SMTP 邮件来自, 则 Outlook.com 将在这两个字段之一中显示域 (首选 DKIM 签名)。
 
-### <a name="can-i-override-these-properties-with-ip-allows-exchange-transport-rule-allows-or-safe-senders"></a>是否可以使用 IP 允许、Exchange 传输规则允许或安全发件人替代这些属性？
-
-您不能覆盖这些属性。
-
-### <a name="how-do-i-remove-these-properties"></a>如何删除这些属性？
+### <a name="how-do-i-remove-the-"></a>如何删除 "？"
 
 对于发件人图像中的 '？ ', 作为发件人, 应使用 SPF 或 DKIM 对邮件进行身份验证。
 
