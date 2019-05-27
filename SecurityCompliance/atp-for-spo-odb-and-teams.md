@@ -15,12 +15,12 @@ ms.assetid: 26261670-db33-4c53-b125-af0662c34607
 ms.collection:
 - M365-security-compliance
 description: 将 Office 365 高级威胁防护扩展到 SharePoint Online、OneDrive for Business 和 Microsoft 团队中的文件, 为您的组织启用更安全的协作。
-ms.openlocfilehash: 9a1c4d3f7eca335b1668f8fc0947387cc9d496f3
-ms.sourcegitcommit: 0d5a863f48914eeaaf29f7d2a2022618de186247
+ms.openlocfilehash: a73f978ca40571e33864061cfe9538033579b3c7
+ms.sourcegitcommit: 2b46fba650df8d252b1dd2b3c3f080a383183a06
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34077608"
+ms.lasthandoff: 05/23/2019
+ms.locfileid: "34408257"
 ---
 # <a name="office-365-atp-for-sharepoint-onedrive-and-microsoft-teams"></a>适用于 SharePoint、OneDrive 和 Microsoft 团队的 Office 365 ATP
 
@@ -50,7 +50,7 @@ ms.locfileid: "34077608"
 
 - 确保您的 SharePoint 网站已配置为使用[新式体验](https://docs.microsoft.com/sharepoint/guide-to-sharepoint-modern-experience)。 当文件被标识为恶意的且被阻止时, 人们可以看到这种情况发生在新式体验中, 而不是经典视图中。 ATP protection 适用于是否使用新式体验或经典视图;但是, 仅在新式体验中, 才会出现阻止文件的视觉指示器。
     
-- 在 SharePoint Online、OneDrive for Business 或 Microsoft 团队中被标识为恶意的文件将显示在[office 365 高级威胁防护](view-reports-for-atp.md)和威胁资源管理器的报告中 ( [Office 365 高级威胁防护计划 2](office-365-ti.md)的一部分)).
+- 在 SharePoint Online、OneDrive for Business 或 Microsoft 团队中被标识为恶意的文件将显示在[Office 365 高级威胁防护](view-reports-for-atp.md)和[资源管理器 (和实时检测)](threat-explorer.md)的报告中。
     
 - ATP 是组织整体威胁防护策略的一部分, 其中包括反垃圾邮件和反恶意软件保护, 以及安全链接和安全附件。 若要了解详细信息, 请参阅[在 Office 365 中防御威胁](protect-against-threats.md)。
     

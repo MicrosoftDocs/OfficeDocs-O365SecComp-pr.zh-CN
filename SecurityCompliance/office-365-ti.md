@@ -4,7 +4,7 @@ ms.author: deniseb
 author: denisebmsft
 manager: laurawi
 ms.date: 03/18/2019
-ms.audience: Admin
+audience: Admin
 ms.topic: overview
 ms.service: O365-seccomp
 localization_priority: Normal
@@ -14,13 +14,13 @@ search.appverid:
 ms.assetid: 32405da5-bee1-4a4b-82e5-8399df94c512
 ms.collection:
 - M365-security-compliance
-description: 了解 office 365 中的威胁智能功能。高级威胁防护可帮助您研究组织的威胁、响应恶意软件、网络钓鱼和 Office 365 已代表您检测到的其他攻击, 并搜索威胁指示器.
-ms.openlocfilehash: 6f7e6e0a49bb4035458af2e9d7e45fd954a1f9fc
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+description: 了解 Office 365 中的威胁智能功能。高级威胁防护可帮助您研究组织的威胁、响应恶意软件、网络钓鱼和 Office 365 已代表您检测到的其他攻击, 并搜索威胁指示器.
+ms.openlocfilehash: 3a1ccc3d3e37b9b1433e8e339709d09ba56970b0
+ms.sourcegitcommit: 2b46fba650df8d252b1dd2b3c3f080a383183a06
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32265394"
+ms.lasthandoff: 05/23/2019
+ms.locfileid: "34408357"
 ---
 # <a name="office-365-threat-investigation-and-response"></a>Office 365 威胁调查和响应
 
@@ -28,28 +28,28 @@ Office 365 中的威胁调查和响应功能[高级威胁防护](office-365-atp.
   
 1. 轻松识别、监视和理解攻击
     
-2. 帮助快速解决 Exchange online、SharePoint online、OneDrive for business 和 Microsoft 团队中的威胁
+2. 帮助快速解决 Exchange Online、SharePoint Online、OneDrive for Business 和 Microsoft 团队中的威胁
     
 3. 提供见解和知识, 以帮助防止针对其组织的攻击
 
 4. 对基于严重的电子邮件威胁进行自动调查和响应
     
 > [!IMPORTANT]
-> **office 365 高级威胁防护和威胁调查和响应 (以前称为 Office 365 威胁智能) 现在是 office 365 高级威胁防护计划 2**, 以及中附带的其他威胁防护功能某些订阅, 例如[microsoft 365 企业版](https://www.microsoft.com/microsoft-365/enterprise/home)、 [microsoft 365 商业](https://www.microsoft.com/microsoft-365/business)版、office 365 企业版 E5、office 365 教育版 A5 等。如果您的组织有一个不包含 Office 365 ATP 的订阅, 则可能会将 atp 作为加载项进行购买。 有关详细信息, 请参阅[office 365 高级威胁防护计划和定价](https://products.office.com/exchange/advance-threat-protection)和[Office 365 高级威胁防护服务说明](https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description#whats-new-in-office-365-advanced-threat-protection-atp)。 
+> **Office 365 高级威胁防护和威胁调查和响应 (以前称为 Office 365 威胁智能) 现在是 office 365 高级威胁防护计划 2**, 以及中附带的其他威胁防护功能某些订阅, 例如[microsoft 365 企业版](https://www.microsoft.com/microsoft-365/enterprise/home)、 [Microsoft 365 商业](https://www.microsoft.com/microsoft-365/business)版、Office 365 企业版 E5、Office 365 教育版 A5 等。如果您的组织有一个不包含 Office 365 ATP 的订阅, 则可能会将 ATP 作为加载项进行购买。 有关详细信息, 请参阅[office 365 高级威胁防护计划和定价](https://products.office.com/exchange/advance-threat-protection)和[Office 365 高级威胁防护服务说明](https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description#whats-new-in-office-365-advanced-threat-protection-atp)。 
   
 ## <a name="whats-changing"></a>有什么变化？
 
-以前, office 365 威胁智能包含在订阅中, 如 office 365 企业版 E5 中。 在这种情况下, 由于威胁调查和响应功能现已成为 office 365 高级威胁防护计划2的一部分 (在 office 365 企业版 E5 中包含), 因此仍是如此。 
+以前, Office 365 威胁智能包含在订阅中, 如 Office 365 企业版 E5 中。 在这种情况下, 由于威胁调查和响应功能现已成为 Office 365 高级威胁防护计划2的一部分 (在 Office 365 企业版 E5 中包含), 因此仍是如此。 
 
-此外, office 365 威胁智能以前可作为 office 365 for business 客户的附加产品购买。 现在, 这些功能包括在 office 365 高级威胁防护计划2中 (以及 office 365 高级威胁防护计划1中的所有功能)。 若要了解详细信息, 请参阅[Office 365 高级威胁防护计划和定价](https://products.office.com/exchange/advance-threat-protection)。
+此外, Office 365 威胁智能以前可作为 Office 365 for business 客户的附加产品购买。 现在, 这些功能包括在 Office 365 高级威胁防护计划2中 (以及 Office 365 高级威胁防护计划1中的所有功能)。 若要了解详细信息, 请参阅[Office 365 高级威胁防护计划和定价](https://products.office.com/exchange/advance-threat-protection)。
 
 下面是这一切的含义:
 
 - **如果您的组织已有 Office 365 企业版 E5**, 则您已具有高级威胁防护计划 2, 其中包括威胁调查和响应功能。
 
-- **如果您的组织以前的 office 365 威胁情报 (但不是 office 365 高级威胁防护) 作为**其他 Office 365 订阅的外接程序, 您现在将拥有 office 365 高级威胁防护计划 2, 其中包括威胁调查和响应功能。 
+- **如果您的组织以前的 office 365 威胁情报 (但不是 office 365 高级威胁防护) 作为**其他 Office 365 订阅的外接程序, 您现在将拥有 Office 365 高级威胁防护计划 2, 其中包括威胁调查和响应功能。 
 
-- **如果贵组织以前的 office 365 高级威胁防护 (而不是 office 365 威胁智能) 作为**其他 Office 365 订阅的附加项, 则现在将拥有 office 365 高级威胁防护计划1。 这包括 Office 365 高级威胁防护计划 1, 但不包括威胁调查和响应功能。
+- **如果贵组织以前的 office 365 高级威胁防护 (而不是 office 365 威胁智能) 作为**其他 Office 365 订阅的附加项, 则现在将拥有 Office 365 高级威胁防护计划1。 这包括 Office 365 高级威胁防护计划 1, 但不包括威胁调查和响应功能。
 
 有关详细信息, 请参阅[office 365 高级威胁防护计划和定价](https://products.office.com/exchange/advance-threat-protection)和[Office 365 高级威胁防护服务说明](https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description#whats-new-in-office-365-advanced-threat-protection-atp)
 
@@ -61,15 +61,15 @@ Office 365 中的威胁调查和响应功能[高级威胁防护](office-365-atp.
     
 - [了解威胁跟踪-新增和值得注意的事项](threat-trackers.md)
 
-- [使用 Office 365 威胁智能进行自动调查和响应 (空中)](automated-investigation-response-office.md)
+- [通过自动化调查和响应 (空气) 功能节省时间和精力](automated-investigation-response-office.md)
 
-- [在安全&amp;合规中心中使用威胁资源管理器](use-explorer-in-security-and-compliance.md)
+- [使用威胁浏览器 (或实时检测) 来识别和调查电子邮件和文件中的恶意内容](threat-explorer.md)
     
 - [查找和调查投递的恶意电子邮件](investigate-malicious-email-that-was-delivered.md)
     
-- [使用攻击模拟器](attack-simulator.md)
+- [使用攻击模拟器模拟攻击并提高用户意识](attack-simulator.md)
     
-- [将威胁调查和响应与 Windows Defender 高级威胁防护集成](integrate-office-365-ti-with-wdatp.md)
+- [将威胁调查和响应功能与 Windows Defender 高级威胁防护集成](integrate-office-365-ti-with-wdatp.md)
     
 ## <a name="related-topics"></a>相关主题
 

@@ -3,8 +3,8 @@ title: 查看安全&amp;合规性中心中的电子邮件安全报告
 ms.author: deniseb
 author: denisebmsft
 manager: laurawi
-ms.date: 05/13/2019
-ms.audience: ITPro
+ms.date: 05/21/2019
+audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
@@ -14,13 +14,13 @@ search.appverid:
 ms.assetid: 3a137e28-1174-42d5-99af-f18868b43e86
 ms.collection:
 - M365-security-compliance
-description: 了解如何使用 Office 365 企业版查找和使用组织的电子邮件安全报告。 安全&amp;合规性中心中提供了电子邮件安全报告。
-ms.openlocfilehash: 4271f26c0d8a0a9a5bd4085e38daaabcc375512c
-ms.sourcegitcommit: 7ad5618db6004757599d8b7c153fdb6ab3ba3f6e
+description: 了解如何查找和使用组织的电子邮件安全报告。 安全&amp;合规性中心中提供了电子邮件安全报告。
+ms.openlocfilehash: 1dc009260e80c2aca1c5107d1c5f116ec63dd94f
+ms.sourcegitcommit: 2b46fba650df8d252b1dd2b3c3f080a383183a06
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/14/2019
-ms.locfileid: "33970253"
+ms.lasthandoff: 05/23/2019
+ms.locfileid: "34408407"
 ---
 # <a name="view-email-security-reports-in-the-security-amp-compliance-center"></a>查看安全&amp;合规性中心中的电子邮件安全报告
 
@@ -65,7 +65,7 @@ ms.locfileid: "33970253"
 
 ## <a name="threat-protection-status-report"></a>威胁防护状态报告
 
-**威胁防护状态**报告是一个智能报告, 显示 Exchange Online Protection 检测到并阻止的恶意电子邮件。 此报告显示有关被标识为恶意软件或网络钓鱼尝试的电子邮件的信息。 
+**威胁防护状态**报告是一个智能报告, 显示 Exchange Online Protection 检测到并阻止的恶意电子邮件。 此报告可用于查看标识为恶意软件的电子邮件或一段时间内的网络钓鱼尝试 (最长为90天), 并使安全管理员能够确定趋势或确定策略是否需要调整。
 
 > [!NOTE]
 > 拥有[Office 365 ATP](office-365-atp.md)或[Exchange Online Protection](eop/exchange-online-protection-eop.md) (EOP) 的客户可以使用威胁防护状态报告;但是, 在 ATP 客户的威胁防护状态报告中显示的信息可能包含不同的 EOP 客户可能看到的数据。 例如, EOP 客户可以查看有关在电子邮件中检测到的恶意软件的信息, 但不是关于[在 SharePoint Online、OneDrive 或 Microsoft 团队中检测到的恶意文件](atp-for-spo-odb-and-teams.md)的信息, 这是与 ATP 相关的功能。 ([了解有关 ATP 报告的详细信息](view-reports-for-atp.md)。)
@@ -74,7 +74,9 @@ ms.locfileid: "33970253"
   
 ![威胁防护状态报告](media/0ff86e12-c2b2-4d89-92a5-cefb054dc070.png)
   
-当您首次打开 "威胁 Protection 状态报告" 时, 报告默认显示过去七天的数据;不过, 您可以单击 "**筛选器**" 并将日期范围更改为最多90天的详细信息。 此报告对查看组织的[Exchange Online Protection 功能](eop/eop-features.md)和长期趋势分析的有效性和影响非常有用。 
+当您首次打开 "威胁 Protection 状态报告" 时, 报告默认显示过去七天的数据;不过, 您可以单击 "**筛选器**" 并将日期范围更改为最多90天的详细信息。 (如果使用的是试用订阅, 则可能限制为30天的数据。)
+
+此报告对查看组织的[Exchange Online Protection 功能](eop/eop-features.md)和长期趋势分析的有效性和影响非常有用。 
   
 ![威胁防护状态报告筛选器](media/ab6b6b8d-e97a-4c3a-8fb1-c4940dcb7a07.png)
   

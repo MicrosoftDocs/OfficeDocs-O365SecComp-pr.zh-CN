@@ -4,7 +4,7 @@ ms.author: deniseb
 author: denisebmsft
 manager: laurawi
 ms.date: 7/19/2018
-ms.audience: ITPro
+audience: ITPro
 ms.topic: overview
 ms.service: O365-seccomp
 localization_priority: Normal
@@ -15,16 +15,16 @@ ms.assetid: e3e95f68-36e9-4256-bcca-78fe7fe5ea5d
 ms.collection:
 - M365-security-compliance
 description: 获取安全&amp;合规性中心中的报告和真知灼见 avialable 的概述。
-ms.openlocfilehash: fff1fac7d35a4e12e66f27ac0069d34eb86f3fe0
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: e84aebe117735e50e205e3f79124f50d9dc71d75
+ms.sourcegitcommit: 2b46fba650df8d252b1dd2b3c3f080a383183a06
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32261510"
+ms.lasthandoff: 05/23/2019
+ms.locfileid: "34408237"
 ---
 # <a name="smart-reports-and-insights-in-the-office-365-security-amp-compliance-center"></a>Office 365 安全&amp;合规中心中的智能报告和见解
 
-如果您是组织的 office 365 安全团队的一部分, 并且拥有[在 Office 365 安全&amp;合规中心中分配](permissions-in-the-security-and-compliance-center.md)的必要权限, 则可以访问各种报告, 包括智能报告和见解。 阅读本文, 了解有关这些报告和见解的概述, 以及在哪里可以了解有关特定报告的详细信息。
+如果您是组织的 Office 365 安全团队的一部分, 并且拥有[在 Office 365 安全&amp;合规中心中分配](permissions-in-the-security-and-compliance-center.md)的必要权限, 则可以访问各种报告, 包括智能报告和见解。 阅读本文, 了解有关这些报告和见解的概述, 以及在哪里可以了解有关特定报告的详细信息。
       
 ## <a name="smart-reports-and-insights-overview"></a>智能报告和见解概述
 
@@ -52,7 +52,7 @@ Office 365 安全&amp;合规中心中提供的监视功能包括智能报告和�
 |**数据丢失防护** <br/> 数据丢失防护策略匹配、误报和重写以及用于创建或编辑策略的链接  <br/> |在安全&amp;合规性中心中, 转到 "**数据丢失防护** \> "**策略** <br/> |[查看数据丢失防护报告](view-the-dlp-reports.md) <br/> |
 |**数据治理** <br/> 有关如何应用标签、作为记录分类的标签、标签趋势等的信息  <br/> |在安全&amp;合规性中心中, 转到 "**数据管理** \> "**仪表板** <br/> |[查看数据治理报表](view-the-data-governance-reports.md) <br/> |
 |**威胁管理仪表板**(这也称为 "安全" 仪表板和 "威胁智能" 仪表板)  <br/> 威胁检测、恶意软件趋势、主要目标用户、有关发送和接收的电子邮件的详细信息等  <br/> |在安全&amp;合规性中心中, 转到 "**威胁管理** \> "**仪表板** <br/> |[安全仪表板概述](security-dashboard.md) <br/> |
-|**威胁资源管理器**(也称为资源管理器)  <br/> 在 Office 365 中的电子邮件和文件中检测到可疑的恶意软件  <br/> |在安全&amp;合规性中心中, 转到 "**威胁管理** \> **资源管理器**" <br/> |[在安全&amp;合规中心中使用资源管理器](use-explorer-in-security-and-compliance.md) <br/> |
+|**威胁资源管理器**(也称为资源管理器) 或**实时检测** <br/> 在 Office 365 中的电子邮件和文件中检测到可疑的恶意软件  <br/> |在 "安全&amp;合规性中心" 中, 转到 "**威胁管理** \> **资源管理器**" 或 "**实时检测**"<br/> |[威胁浏览器 (或实时检测)](threat-explorer.md) <br/> |
 |**高级威胁防护和电子邮件安全报告** <br/> 电子邮件安全和威胁防护报告 (包括恶意软件、垃圾邮件、网络钓鱼和欺骗报告)  <br/> |在安全&amp;合规性中心中, 转到 "**报告** \> "**仪表板** <br/> |[查看 Office 365 高级威胁防护报告](view-reports-for-atp.md) <br/><br/> [查看安全&amp;合规性中心中的电子邮件安全报告](view-email-security-reports.md) <br/> |
 |**邮件流** <br/> 有关发送和接收的电子邮件、最近的通知、主要发件人和收件人、电子邮件转发报告等的信息  <br/> |在 "安全&amp;合规性中心" 中, 转到 "**邮件流** \> "**仪表板** <br/> |[Office 365 安全&amp;合规中心中的邮件流见解](https://support.office.com/article/beb6acaa-6016-4d54-ba7e-3d6d035e2b46.aspx) <br/> |
 |**GDPR 合规性** <br/> 有关 GDPR 合规性的信息, 包括指向数据主体的链接、标签趋势&amp;和活动关闭的案例  <br/> |在安全&amp;合规性中心中, 转到 "**数据隐私** \> " **GDPR 仪表板** <br/> |[符合 GDPR 的 Office 365 信息保护](https://docs.microsoft.com/office365/enterprise/office-365-information-protection-for-gdpr) <br/> |

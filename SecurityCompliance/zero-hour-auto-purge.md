@@ -17,12 +17,12 @@ ms.assetid: 96deb75f-64e8-4c10-b570-84c99c674e15
 ms.collection:
 - M365-security-compliance
 description: 零小时自动清除 (ZAP) 是一种电子邮件保护功能, 可检测到已发送到用户收件箱的垃圾邮件或恶意软件的邮件, 然后将恶意内容无害。 ZAP 的工作方式取决于检测到的恶意内容的类型。
-ms.openlocfilehash: 80a6631079a68fd2a7fa3ac6d256e1e36556e642
-ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
+ms.openlocfilehash: e6faef4c123ea2db38a27b49ff0ee49b237ec75c
+ms.sourcegitcommit: 2b46fba650df8d252b1dd2b3c3f080a383183a06
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "34155954"
+ms.lasthandoff: 05/23/2019
+ms.locfileid: "34408347"
 ---
 # <a name="zero-hour-auto-purge---protection-against-spam-and-malware"></a>零时差自动清除 - 防范垃圾邮件和恶意软件
 
@@ -64,7 +64,7 @@ Office 365 每天实时更新反垃圾邮件引擎和恶意软件签名。 但�
 
 ## <a name="to-see-if-zap-moved-your-message"></a>查看 ZAP 是否移动了邮件
 
-如果要查看 ZAP 是否移动了邮件, 可以使用 "[威胁防护状态报告](view-email-security-reports.md#threat-protection-status-report)" (或 "[威胁资源管理器](use-explorer-in-security-and-compliance.md)")。
+如果要查看 ZAP 是否移动了邮件, 可以使用[威胁防护状态报告](view-email-security-reports.md#threat-protection-status-report)或[威胁浏览器 (和实时检测)](threat-explorer.md)。
 
 ## <a name="to-disable-zap"></a>禁用 ZAP
   

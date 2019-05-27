@@ -15,12 +15,12 @@ ms.assetid: 3387bfc3-028a-42f4-8133-4cbecfaab812
 ms.collection:
 - M365-security-compliance
 description: 了解 Office 365 威胁调查和响应功能如何帮助您的组织检测入侵和威胁, 并快速缓解和恢复威胁。
-ms.openlocfilehash: 51d776fe2ed5957016028451c1f7dcd1812973c3
-ms.sourcegitcommit: 0d5a863f48914eeaaf29f7d2a2022618de186247
+ms.openlocfilehash: 6cd1a2add3300dad6d869de82d1a1616298fc635
+ms.sourcegitcommit: 2b46fba650df8d252b1dd2b3c3f080a383183a06
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34077258"
+ms.lasthandoff: 05/23/2019
+ms.locfileid: "34408277"
 ---
 # <a name="keep-your-office-365-users-safe-with-office-365-threat-investigation-and-response-capabilities"></a>使用 Office 365 威胁调查和响应功能保持 Office 365 用户安全
 
@@ -37,7 +37,7 @@ ms.locfileid: "34077258"
   
 ## <a name="detect-intrusions-and-threats"></a>检测入侵和威胁
 
-[浏览器](use-explorer-in-security-and-compliance.md)(也称为 "威胁浏览器") 可帮助安全管理员和分析师识别和理解企业中的活动威胁, 因为看似无害的用户配置 (如安全) 可能会规避最复杂的安全设置发件人白名单。 资源管理器可帮助 Office 365 全局或安全管理员快速确定用户是否已被威胁 (如恶意软件或网络钓鱼诈骗) 所危害。 这有助于确定哪些用户最面临威胁的风险以及必需的响应的优先级。 
+[威胁浏览器 (或实时检测)](threat-explorer.md)(也称为 "威胁浏览器") 可帮助安全管理员和分析师识别和理解企业中的活动威胁, 因为看似无害的用户配置 (如安全) 可能会规避最复杂的安全设置发件人白名单。 资源管理器可帮助 Office 365 全局或安全管理员快速确定用户是否已被威胁 (如恶意软件或网络钓鱼诈骗) 所危害。 这有助于确定哪些用户最面临威胁的风险以及必需的响应的优先级。 
   
 资源管理器还可帮助管理员导航用户和邮件之间的关系。 知道有误的特定邮件吗？ 搜索它以查看哪些用户收到了邮件, 然后按照一系列事件进行操作, 并查看这些用户接下来的操作。
 

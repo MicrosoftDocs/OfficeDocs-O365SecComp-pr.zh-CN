@@ -1,46 +1,44 @@
 ---
-title: 威胁资源管理器视图
+title: 威胁资源管理器中的视图和实时检测
 ms.author: deniseb
 author: denisebmsft
 manager: laurawi
 ms.date: 03/18/2019
-ms.audience: ITPro
+audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid: ''
 ms.collection:
 - M365-security-compliance
-description: 了解在 Office 365 高级威胁防护计划2中的资源管理器 (也称为威胁浏览器) 中可用的各种类型的视图。
-ms.openlocfilehash: bcfa044db6844d9459b3dd62d9ced1cd37a999ec
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+description: 了解在威胁资源管理器和实时检测中可用的各种视图类型。
+ms.openlocfilehash: 14cdbbd602e53615abec12bedbac2f16be40111f
+ms.sourcegitcommit: 2b46fba650df8d252b1dd2b3c3f080a383183a06
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32260496"
+ms.lasthandoff: 05/23/2019
+ms.locfileid: "34408317"
 ---
-# <a name="threat-explorer-views"></a>威胁资源管理器视图
-
-[威胁资源管理器](use-explorer-in-security-and-compliance.md)是一种强大的近实时工具, 可帮助安全操作团队在安全&amp;合规中心中调查和响应威胁。 资源管理器显示有关 Office 365 中的电子邮件和文件中可疑的恶意软件和网络钓鱼的信息, 以及组织中的其他安全威胁和风险。 
-
-首次打开资源管理器时, 默认视图将显示过去7天内的电子邮件恶意软件检测。 
+# <a name="views-in-threat-explorer-and-real-time-detections"></a>威胁资源管理器中的视图和实时检测
 
 ![威胁资源管理器](media/ThreatExplorerFirstOpened.png)
 
-资源管理器还可以显示 Office 365 中的安全保护功能, 包括[安全链接](atp-safe-links.md)和[安全附件](atp-safe-attachments.md), 并且可以修改以显示过去30天的数据。 
+[威胁资源管理器](use-explorer-in-security-and-compliance.md)(和实时检测报告) 是一种强大的近实时工具, 可帮助安全操作团队调查和响应安全&amp;合规性中心中的威胁。 资源管理器 (和实时检测报告) 显示有关 Office 365 中的电子邮件和文件中可疑的恶意软件和网络钓鱼的信息, 以及组织中的其他安全威胁和风险。 
 
-> [!NOTE]
-> 如果你拥有 Office 365 高级威胁防护计划2或 Office 365 E5 的试用订阅, 你将只能看到过去7天的检测和电子邮件数据。
-  
+- 如果您有[Office 365 高级威胁防护](office-365-atp.md)(ATP) 计划 2, 则您将拥有资源管理器。
+- 如果你有 Office 365 ATP 计划 1, 则会进行实时检测。
+
+首次打开浏览器 (或实时检测报告) 时, 默认视图将显示过去7天内的电子邮件恶意软件检测。 此报告还可以显示 ATP 检测, 如[安全链接](atp-safe-links.md)检测到的恶意 url, 以及[安全附件](atp-safe-attachments.md)检测到的恶意文件。 可以修改此报告以显示过去30天的数据 (除非您使用的是试用订阅)。 试用订阅将仅包含过去七天的数据。
+
 使用 "**视图**" 菜单更改要显示的信息。 工具提示可帮助您确定要使用的视图。
   
 ![威胁资源管理器视图菜单](media/ThreatExplorerViewMenu.png)
 
-选择视图后, 可以应用筛选器并设置查询以执行进一步分析。 以下各节提供了浏览器中提供的各种视图的简要概述。  
+选择视图后, 可以应用筛选器并设置查询以执行进一步分析。 以下各节提供了浏览器中提供的各种视图 (或实时检测) 的简要概述。  
 
 ## <a name="email--malware"></a>电子邮件 > 恶意软件
 
-若要查看此报告, 请在资源管理器中选择 "**查看** > **电子邮件** > **恶意软件**"。 此视图显示标识为包含恶意软件的电子邮件的相关信息。  
+若要查看此报告, 请在资源管理器 (或实时检测) 中, 选择 "**查看** > **电子邮件** > **恶意软件**"。 此视图显示标识为包含恶意软件的电子邮件的相关信息。  
 
 ![查看标识为恶意软件的电子邮件的相关数据](media/ExplorerEmailMalwareMenu.png) 
 
@@ -56,19 +54,19 @@ ms.locfileid: "32260496"
 
 ## <a name="email--phish"></a>电子邮件 > 网络钓鱼
 
-若要查看此报告, 请在资源管理器中选择 "**查看** > **电子邮件** > **网络钓鱼**"。 此视图显示被标识为 "仿冒尝试" 的电子邮件。  
+若要查看此报告, 请在资源管理器 (或实时检测) 中, 选择 "**查看** > **电子邮件** > **网络钓鱼**"。 此视图显示被标识为 "仿冒尝试" 的电子邮件。  
 
 ![查看标识为 "仿冒尝试" 的电子邮件的相关数据](media/ThreatExplorerEmailPhish.png) 
 
 单击 "**发件人**" 打开查看选项列表。 使用此列表可以按发件人、收件人、发件人域、发件人 IP、URL 域查看数据, 然后单击 "判定", 等等。 
 
-例如, 若要查看当用户单击被标识为仿冒的 url 时所采取的操作, 请在列表中选择 **"单击判定**项", 选择一个或多个选项, 然后单击 "刷新" 按钮。
+例如, 若要查看当用户单击被标识为仿冒的 Url 时所采取的操作, 请在列表中选择 **"单击判定**项", 选择一个或多个选项, 然后单击 "刷新" 按钮。
 
 ![单击网络钓鱼报告的 "判定选项"](media/ThreatExplorerEmailPhishClickVerdictOptions.png)
 
-在图表下方, 查看有关特定邮件、URL 单击、url 和电子邮件来源的更多详细信息。 
+在图表下方, 查看有关特定邮件、URL 单击、Url 和电子邮件来源的更多详细信息。 
 
-![在电子邮件中检测到作为网络钓鱼的 url](media/ThreatExplorerEmailPhishURLs.png)
+![在电子邮件中检测到作为网络钓鱼的 Url](media/ThreatExplorerEmailPhishURLs.png)
 
 当您选择列表中的某个项目 (如检测到的 URL) 时, 将打开一个弹出窗格, 可在其中了解有关所选项目的详细信息。 
 
@@ -76,7 +74,7 @@ ms.locfileid: "32260496"
 
 ## <a name="email--user-reported"></a>电子邮件 > 用户报告
 
-若要查看此报告, 请在资源管理器中选择 "**查看** > **电子邮件** > **用户报告**"。 此视图显示用户已报告为垃圾邮件、非垃圾邮件或仿冒电子邮件的电子邮件。 
+若要查看此报告, 请在资源管理器 (或实时检测) 中, 选择 "**查看** > 由**用户报告的****电子邮件** > "。 此视图显示用户已报告为垃圾邮件、非垃圾邮件或仿冒电子邮件的电子邮件。 
 
 ![用户报告的电子邮件](media/ThreatExplorerEmailUserReportedViewOptions.png) 
 
@@ -107,7 +105,7 @@ ms.locfileid: "32260496"
 
 ## <a name="content--malware"></a>内容 > 恶意软件
 
-若要查看此报告, 请在资源管理器中选择 "**查看** > **内容** > **恶意软件**"。 此视图显示了[Office 365 高级威胁防护在 SharePoint Online、OneDrive for business 和 Microsoft 团队中](atp-for-spo-odb-and-teams.md)被标识为恶意的文件。
+若要查看此报告, 请在资源管理器 (或实时检测) 中, 选择 "**查看** > **内容** > **恶意软件**"。 此视图显示了[Office 365 高级威胁防护在 SharePoint Online、OneDrive For business 和 Microsoft 团队中](atp-for-spo-odb-and-teams.md)被标识为恶意的文件。
 
 查看恶意软件系列的信息、检测技术 (检测恶意软件的方式) 以及工作负荷 (OneDrive、SharePoint 或团队)。 
 
@@ -117,7 +115,7 @@ ms.locfileid: "32260496"
   
 ## <a name="click-to-filter-capabilities"></a>单击-筛选功能
 
-使用资源管理器, 您可以在单击时应用筛选器。 单击图例中的项目, 该项目将成为报表的筛选器。 例如, 假设我们在资源管理器中查看恶意软件视图:
+使用浏览器 (和实时检测), 您可以在单击时应用筛选器。 单击图例中的项目, 该项目将成为报表的筛选器。 例如, 假设我们在资源管理器中查看恶意软件视图:
   
 ![转到 "威胁\>管理资源管理器"](media/cab32fa2-66f1-4ad5-bc1d-2bac4dbeb48c.png)
   
@@ -137,7 +135,7 @@ ms.locfileid: "32260496"
 
 ## <a name="queries-and-filters"></a>查询和筛选器
 
-资源管理器具有多种功能强大的筛选器和查询功能, 使您可以深入了解详细信息, 如主要目标用户、主要恶意软件系列、检测技术等。 每种报告都提供了查看和浏览数据的各种方式。
+浏览器 (和实时检测报告) 具有多种功能强大的筛选器和查询功能, 使您可以深入了解详细信息, 如主要目标用户、主要恶意软件系列、检测技术等。 每种报告都提供了查看和浏览数据的各种方式。
 
 > [!IMPORTANT]
-> 请勿在浏览器的查询栏中使用通配符, 如星号 (*) 或问号 (？)。 当您在 "主题" 字段中搜索电子邮件时, 资源管理器将执行部分匹配并生成类似于通配符搜索的结果。
+> 请勿在浏览器 (或实时检测) 的查询栏中使用通配符, 如星号 (*) 或问号 (？)。 当您在 "主题" 字段中搜索电子邮件时, 资源管理器 (或实时检测) 将执行与通配符搜索类似的部分匹配和生成结果。

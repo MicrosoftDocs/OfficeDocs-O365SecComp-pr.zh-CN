@@ -4,7 +4,7 @@ ms.author: deniseb
 author: denisebmsft
 manager: laurawi
 ms.date: 03/19/2019
-ms.audience: ITPro
+audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
@@ -15,16 +15,16 @@ ms.assetid: 38e9b67f-d188-490f-bc91-a1ae4b270441
 ms.collection:
 - M365-security-compliance
 description: 了解 Office 365 威胁调查和响应, 以及如何开始。
-ms.openlocfilehash: fd038f706ccb3df68b98f02593e43091484ec0c6
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: b003805b5732710df88d45662c2a71d6014640e0
+ms.sourcegitcommit: 2b46fba650df8d252b1dd2b3c3f080a383183a06
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32254160"
+ms.lasthandoff: 05/23/2019
+ms.locfileid: "34408337"
 ---
 # <a name="get-started-with-threat-investigation-and-response-office-365-advanced-threat-protection-plan-2"></a>开始使用威胁调查和响应 (Office 365 高级威胁防护计划 2)
 
-如果您是组织的安全团队的一部分, 则可以使用 Office 365 威胁调查和响应功能来保护您的用户免受攻击。 Office 365 高级威胁防护计划 2 (以前称为 "office 365 威胁智能") 可帮助安全分析员和管理员根据您的 Office 365 环境中发生的情况, 通过冒泡和识别操作使用户保持安全。 这些见解基于威胁智能数据和系统的综合存储库, 以提供与攻击行为和可疑活动对应的发现模式。
+如果您是组织的安全团队的一部分, 则可以使用 Office 365 威胁调查和响应功能来保护您的用户免受攻击。 Office 365 高级威胁防护计划 2 (以前称为 "Office 365 威胁智能") 可帮助安全分析员和管理员根据您的 Office 365 环境中发生的情况, 通过冒泡和识别操作使用户保持安全。 这些见解基于威胁智能数据和系统的综合存储库, 以提供与攻击行为和可疑活动对应的发现模式。
   
 阅读本文, 了解有关威胁调查和响应的详细信息, 以及如何开始。
   
@@ -33,11 +33,11 @@ ms.locfileid: "32254160"
 威胁调查和响应功能有助于推动对 Office 365 安全&amp;合规中心中提供的威胁和相关响应操作的深入了解。 这些见解可帮助组织的安全团队保护 Office 365 用户免受电子邮件或基于文件的攻击。 这些功能可帮助监视信号和收集来自多个源 (如用户活动、身份验证、电子邮件、受损电脑和安全事件) 的数据。 业务决策者和 Office 365 全局管理员、安全管理员和安全分析员都可以使用此信息来了解和响应针对 Office 365 用户的威胁, 并保护其知识产权。
 
 > [!IMPORTANT]
-> office 365 威胁智能现已成为 office 365 高级威胁防护计划 2, 以及其他威胁防护功能。 若要了解详细信息, 请参阅[office 365 高级威胁防护计划和定价](https://products.office.com/exchange/advance-threat-protection)以及[Office 365 高级威胁防护服务说明](https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description)。
+> Office 365 威胁智能现已成为 Office 365 高级威胁防护计划 2, 以及其他威胁防护功能。 若要了解详细信息, 请参阅[office 365 高级威胁防护计划和定价](https://products.office.com/exchange/advance-threat-protection)以及[Office 365 高级威胁防护服务说明](https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description)。
   
 ## <a name="get-acquainted-with-the-threat-dashboard-explorer-and-incidents"></a>了解威胁仪表板、资源管理器和事件
 
-安全&amp;合规中心中的这些威胁调查和响应功能, 作为一组工具和响应工作流, 包括[威胁仪表板](#threat-dashboard)、[威胁资源管理器](#threat-explorer)、[事件](get-started-with-ti.md#incidents)、[攻击模拟器](attack-simulator.md)和自动调查 & 响应。
+安全&amp;合规中心中的这些威胁调查和响应功能, 作为一组工具和响应工作流, 包括[威胁仪表板](#threat-dashboard)、[威胁资源管理器](#threat-explorer)、[事件](get-started-with-ti.md#incidents)、[攻击模拟器](attack-simulator.md)和自动调查 _AMP_ 响应。
   
 ### <a name="threat-dashboard"></a>威胁仪表板
 
@@ -49,7 +49,7 @@ ms.locfileid: "32254160"
   
 ### <a name="threat-explorer"></a>威胁资源管理器
 
-使用威胁资源管理器 (也称为 "资源管理器") 分析威胁、查看一段时间内的攻击量, 以及根据威胁系列、攻击者基础结构等对数据进行分析。 威胁资源管理器是任何安全分析员的调查工作流的起始位置。
+使用[威胁浏览器 (和实时检测)](threat-explorer.md)来分析威胁, 查看一段时间内的攻击量, 并根据威胁系列、攻击者基础结构等对数据进行分析。 威胁资源管理器 (也称为浏览器) 是任何安全分析员的调查工作流的起始位置。
   
 ![威胁资源管理器](media/7a7cecee-17f0-4134-bcb8-7cee3f3c3890.png)
   
@@ -73,16 +73,16 @@ ms.locfileid: "32254160"
   
 ## <a name="how-do-we-get-these-threat-investigation-and-response-capabilities"></a>我们如何获取这些威胁调查和响应功能？
 
-office 365 高级威胁防护计划2和企业版 E5 中包含 office 威胁 Invesigation 和响应功能。 
+Office 365 高级威胁防护计划2和企业版 E5 365 中包含 office 威胁 Invesigation 和响应功能。 
 
 > [!TIP]
 > 如果你的组织具有不包含这些威胁调查和响应功能的 Office 365 订阅, 你可以将其作为加载项购买, 并附带 Office 365 高级威胁防护。 有关计划选项的详细信息, 请参阅[office 365 Platform 服务说明: office 365 &amp;安全合规性中心](https://docs.microsoft.com/office365/servicedescriptions/office-365-platform-service-description/office-365-securitycompliance-center)和[购买或编辑 Office 365 for business 的加载](https://docs.microsoft.com/office365/admin/subscriptions-and-billing/buy-or-edit-an-add-on)项。
   
-1. 作为 office 365 全局管理员, 请转到[https://admin.microsoft.com](https://admin.microsoft.com)并使用 Office 365 的工作或学校帐户登录并登录。 
+1. 作为 Office 365 全局管理员, 请转到[https://admin.microsoft.com](https://admin.microsoft.com)并使用 Office 365 的工作或学校帐户登录并登录。 
     
 2. 选择 "**管理员** \> **帐单**" 以查看您的当前订阅包括的内容。 
     - 如果您看到**office 365 企业版 E5**, 则您的组织具有 Office 365 高级威胁防护计划 2 (其中包括威胁调查和响应功能)。 
-    - 如果你看到不同的订阅 (如**Office 365 企业版 E3**或**office 365 企业版 E1**), 请考虑添加 office 365 高级威胁防护计划2。 (为此, 请选择 " **+ 添加订阅**"。)
+    - 如果你看到不同的订阅 (如**Office 365 企业版 E3**或**Office 365 企业版 E1**), 请考虑添加 Office 365 高级威胁防护计划2。 (为此, 请选择 " **+ 添加订阅**"。)
     
 3. 在 Microsoft 365 管理中心, 选择 "**用户** \> **活动用户**"。
     
@@ -93,7 +93,7 @@ office 365 高级威胁防护计划2和企业版 E5 中包含 office 威胁 Inve
   |**若要执行此活动 .。。** <br/> |**您必须具有以下角色之一** <br/> |  
   |:-----|:-----|
   |使用威胁仪表板 (或新[安全仪表板](security-dashboard.md))<br/> 查看有关最近或当前威胁的信息  <br/> |Office 365 全局管理员  <br/> 安全管理员 (在安全&amp;合规中心中分配)  <br/> 安全读者 (在安全&amp;合规中心中分配)  <br/> |
-  |使用威胁资源管理器 (也称为资源管理器)  <br/> 分析威胁  <br/> |Office 365 全局管理员  <br/> 安全管理员 (在安全&amp;合规中心中分配)  <br/> 安全读者 (在安全&amp;合规中心中分配)  <br/> |
+  |使用[威胁浏览器 (和实时检测)](threat-explorer.md)分析威胁  <br/> |Office 365 全局管理员  <br/> 安全管理员 (在安全&amp;合规中心中分配)  <br/> 安全读者 (在安全&amp;合规中心中分配)  <br/> |
   |查看事件 (也称为调查) <br/> 将电子邮件添加到事件  <br/> |Office 365 全局管理员  <br/> 安全管理员 (在安全&amp;合规中心中分配)  <br/> 安全读者 (在安全&amp;合规中心中分配)  <br/> |
   |触发事件中的电子邮件操作  <br/> 查找和删除可疑电子邮件  <br/> |Office 365 全局管理员或安全管理员  <br/> 上述角色之一和搜索和清除 (在安全&amp;合规中心中分配)  <br/> |
   |将 Office 365 高级威胁防护计划2与 Windows Defender 高级威胁防护集成  <br/> 将 Office 365 高级威胁防护计划2与 SIEM 服务器集成  <br/> |Office 365 全局管理员  <br/> 安全管理员 (在安全&amp;合规中心中分配)  <br/> 在其他应用程序中分配的相应角色 (如 Windows Defender 高级威胁防护门户或 SIEM server)  <br/> |

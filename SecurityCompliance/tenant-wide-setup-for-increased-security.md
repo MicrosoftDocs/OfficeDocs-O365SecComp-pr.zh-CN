@@ -15,12 +15,12 @@ ms.collection:
 search.appverid: MET150
 ms.assetid: 8d274fe3-db51-4107-ba64-865e7155b355
 description: 引导您完成影响 Office 365 环境安全性的租户范围设置的建议配置。 您的安全需求可能需要更高或更低的安全性。 使用这些建议作为起点。
-ms.openlocfilehash: d5e84bfe5994d1f17ddc75bcb1141fb4f4beace3
-ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
+ms.openlocfilehash: bac2592fcfefaeb150497cddf134679f9429c656
+ms.sourcegitcommit: 2b46fba650df8d252b1dd2b3c3f080a383183a06
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "34158254"
+ms.lasthandoff: 05/23/2019
+ms.locfileid: "34408247"
 ---
 # <a name="configure-your-office-365-tenant-for-increased-security"></a>配置 Office 365 租户以提高安全性
 
@@ -53,9 +53,9 @@ Microsoft 365 安全中心包含可保护您的环境的功能。 它还包括�
   
 |仪表板 * * * *|****说明****|
 |:-----|:-----|
-|威胁管理仪表板  <br/> |在安全中心的 "威胁管理" 部分, 使用此仪表板查看已处理的威胁, 并作为一种方便的工具, 用于向业务决策制定者报告已完成的威胁调查和响应功能保护您的企业。  <br/> |
-|威胁资源管理器  <br/> |这也是安全中心的 "威胁管理" 部分。 如果要调查或遇到针对 Office 365 租户的攻击, 请使用威胁资源管理器分析威胁。 威胁资源管理器显示一段时间内的攻击量, 并且您可以通过威胁系列、攻击者基础结构等对此数据进行分析。 您还可以标记事件列表的任何可疑电子邮件。  <br/> |
-|报告-仪表板  <br/> |在安全中心的 "报告" 部分, 查看您的 SharePoint Online 和 Exchange Online 组织的审核报告。 您还可以从 "查看报告" 页访问 Azure Active Directory (Azure AD) 用户登录报告、用户活动报告和 Azure AD 审核日志。  <br/> |
+|[威胁管理仪表板](security-dashboard.md)  <br/> |在安全中心的 "**威胁管理**" 部分, 使用此仪表板查看已处理的威胁, 并作为一种方便的工具, 用于向业务决策制定者报告威胁调查和响应功能中已有的执行此操作以保护你的企业安全。  <br/> |
+|[威胁浏览器 (或实时检测)](threat-explorer.md)  <br/> |这也是安全中心的 "**威胁管理**" 部分。 如果要调查或遇到针对 Office 365 租户的攻击, 请使用资源管理器 (或实时检测) 分析威胁。 资源管理器 (和实时检测报告) 显示一段时间内的攻击量, 并且您可以通过威胁系列、攻击者基础结构等对这些数据进行分析。 您还可以标记事件列表的任何可疑电子邮件。  <br/> |
+|报告-仪表板  <br/> |在安全中心的 "**报告**" 部分, 查看您的 SharePoint Online 和 Exchange Online 组织的审核报告。 您还可以从 "**查看报告**" 页访问 Azure Active Directory (azure ad) 用户登录报告、用户活动报告和 azure AD 审核日志。  <br/> |
    
 ![安全中心仪表板](media/870ab776-36d2-49c7-b615-93b2bc42fce5.png)
   

@@ -12,12 +12,12 @@ ms.assetid: 5a6f2d7f-d998-4f31-b4f5-f7cbf6f38578
 ms.collection:
 - M365-security-compliance
 description: 在 office 365 Exchange Online Protection 的 Office 365 高级威胁防护和基本保护中具有全面保护的反网络钓鱼保护, 可帮助保护您的组织免受基于模拟的恶意网络钓鱼攻击和其他网络钓鱼攻击。
-ms.openlocfilehash: cabcc4ab6401f2ebfdbf0c849df4da6a7691b6b8
-ms.sourcegitcommit: 0d5a863f48914eeaaf29f7d2a2022618de186247
+ms.openlocfilehash: ebe1d4322151c1828f662ca0bf1bd495e808093d
+ms.sourcegitcommit: 2b46fba650df8d252b1dd2b3c3f080a383183a06
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34077208"
+ms.lasthandoff: 05/23/2019
+ms.locfileid: "34408367"
 ---
 # <a name="set-up-office-365-atp-anti-phishing-and-anti-phishing-policies"></a>设置 Office 365 ATP 反网络钓鱼和反网络钓鱼策略
 
@@ -142,8 +142,8 @@ Contoso 的安全管理员可能会使用如下所示的值, 以便创建满足�
 
 反网络钓鱼策略准备就绪后, 可以查看报告, 了解您的威胁防护功能是如何为您的组织工作的。 若要了解详细信息, 请参阅以下资源:
 
-- [查看 Office 365 高级威胁防护报告](view-reports-for-atp.md)或[查看电子邮件安全报告](view-email-security-reports.md)
+- [查看适用于 Office 365 的报告 ATP](view-reports-for-atp.md)或[查看电子邮件安全报告](view-email-security-reports.md)
 
-- [使用资源管理器 (也称为威胁资源管理器)](use-explorer-in-security-and-compliance.md)
+- [使用威胁浏览器 (或实时检测)](threat-explorer.md)
 
 继续在新功能的前面提供 ATP。 访问[Microsoft 365 路线图](https://www.microsoft.com/microsoft-365/roadmap?filters=O365)并了解要[添加到 ATP 的新功能](office-365-atp.md#new-features-in-office-365-atp)。
