@@ -100,7 +100,7 @@
 #### [利用威胁调查和响应保障用户安全](keep-users-safe-with-office-365-ti.md)
 #### [查找和调查投递的恶意电子邮件](investigate-malicious-email-that-was-delivered.md)
 ### [自动调查和响应](automated-investigation-response-office.md)
-### [威胁资源管理器](use-explorer-in-security-and-compliance.md)
+### [威胁资源管理器和实时检测](threat-explorer.md)
 #### [威胁资源管理器视图](threat-explorer-views.md)
 ### [威胁跟踪器](threat-trackers.md)
 ### [Office 365 中的攻击模拟器](attack-simulator.md)
