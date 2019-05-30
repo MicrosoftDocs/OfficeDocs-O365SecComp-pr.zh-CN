@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: bca6967fd99696ffb4b610105e448011b9837be4
-ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
+ms.openlocfilehash: f8e253a3d38f0f4846485e3b88ea09914d9978ce
+ms.sourcegitcommit: 6eb51931242d07abde2e37f1bd57d13bc724f0de
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "34150854"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "34547947"
 ---
 # <a name="error-remediation-when-processing-data-for-an-investigation"></a>处理调查数据时的错误修正
 
@@ -40,7 +40,7 @@ ms.locfileid: "34150854"
 
     ![错误修正](../media/8c2faf1a-834b-44fc-b418-6a18aed8b81a.png)
 
-    将开始错误修正会话, 从准备阶段 (将导致的文件移动到要下载的安全 Azure 位置) 开始。
+    将开始错误修正会话, 从准备阶段开始, 其中包含错误的文件复制到安全 Azure 位置, 以便可以下载。
 
     ![准备错误修正](../media/390572ec-7012-47c4-a6b6-4cbb5649e8a8.png)
 
@@ -63,17 +63,18 @@ ms.locfileid: "34150854"
     ![准备错误修正](../media/f364ab4d-31c5-4375-b69f-650f694a2f69.png)
 
      > [!NOTE]
-     > 如果您在运行此命令时遇到问题https://go.microsoft.com/fwlink/?linkid=2038117 , 请参阅了解故障排除提示。
+     > 如果您在运行此命令时遇到问题, 请参阅[解决 AzCopy In 高级电子数据展示](../compliance20/troubleshooting-azcopy.md)问题。
 
 7. 下载文件后, 可以使用适当的工具对它们进行修正。 对于受密码保护的文件, 可以使用许多密码破解工具。 如果您知道这些文件的密码, 则可以打开它们并删除密码保护。
-    > [!NOTE]
-    > 务必在 tact 中保留已修正文件的目录结构和文件名, 这一点非常重要。  在下载的文件和文件夹中使用的所有命名约定使 remdiated 文件可以重新关联到原始文件。
+    
+   > [!NOTE]
+    > 必须在 tact 中保留已修正文件的目录结构和文件名, 这一点非常重要。  在下载的文件和文件夹中使用的所有命名约定使 remdiated 文件可以重新关联到原始文件。
 
 8. 现在, 返回到 "数据调查 (预览)", 然后单击 "**下一步: 上传文件**"。  此操作将移至下一步, 你现在可以在其中上传文件。
 
     ![上传文件](../media/af3d8617-1bab-4ecd-8de0-22e53acba240.png)
 
-9. 在 "**文件的位置路径**" 文本框中指定修正的文件的位置, 然后单击 "**复制到 clibpboard**"。
+9. 在 "**文件的位置路径**" 文本框中指定修正的文件的位置, 然后单击 "**复制到剪贴板**"。
 
 10. 将命令粘贴到 Windows 命令提示符中, 然后按**enter**上传文件。
 
@@ -87,12 +88,9 @@ ms.locfileid: "34150854"
 
 当上载修正的文件时, 原始元数据将保留, 但以下字段除外: 
 
-- DocumentExtractedUrl
 - ExtractedTextSize
 - HasText
 - IsErrorRemediate
-- IsParentExtractedUrl
-- ItemExtractedUrl
 - LoadId
 - ProcessingErrorMessage
 - ProcessingStatus

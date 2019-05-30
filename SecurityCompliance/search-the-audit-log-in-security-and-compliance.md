@@ -15,12 +15,12 @@ search.appverid:
 - MET150
 ms.assetid: 0d4d0f35-390b-4518-800e-0c7ec95e946c
 description: '使用安全 & 合规性中心搜索统一审核日志, 以查看 Office 365 组织中的用户和管理员活动。 '
-ms.openlocfilehash: 4760d36a587dd1aad0463dcddc19400e8138135c
-ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
+ms.openlocfilehash: d8a674785c982b19b04b5bd14cd941dde7a86f61
+ms.sourcegitcommit: 6c0fcb82178a4ac26375545f328389a6852a81be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "34158784"
+ms.lasthandoff: 05/28/2019
+ms.locfileid: "34490488"
 ---
 # <a name="search-the-audit-log-in-the-security--compliance-center"></a>在 Security & 合规性中心中搜索审核日志
 
@@ -115,7 +115,6 @@ ms.locfileid: "34158784"
     |电子数据展示  <br/> |![复选标记](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/>| |
     |Exchange Online  <br/> |![复选标记](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/> ||
     |Microsoft Flow  <br/> |![复选标记](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/>| |
-    |Microsoft Forms  <br/> |![复选标记](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/>| |
     |Microsoft Project  <br/> |![复选标记](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/>| |
     |Microsoft Stream  <br/> |![复选标记](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/>| |
     |Microsoft Teams  <br/> |![复选标记](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/> ||
@@ -405,7 +404,7 @@ ms.locfileid: "34158784"
 |将文件下载到计算机  <br/> |FileSyncDownloadedFull  <br/> |用户建立同步关系, 并首次成功从文档库中将文件下载到其计算机。  <br/> |
 |已将文件更改下载到计算机  <br/> |FileSyncDownloadedPartial  <br/> |用户成功地从文档库中下载对文件所做的任何更改。 此活动指示对文档库中的文件所做的任何更改都将下载到用户的计算机上。 仅下载了所做的更改, 因为文档库先前已由用户下载 (由**下载的文件到计算机**活动中所示)。  <br/> |
 |将文件上载到文档库  <br/> |FileSyncUploadedFull  <br/> |用户建立同步关系, 并将第一次成功地将文件从计算机上载到文档库。  <br/> |
-|将文件更改上载到文档库  <br/> |FileSyncUploadedPartial  <br/> |用户成功地将更改上载到文档库上的文件。 此事件表明对文档库文件的本地版本所做的任何更改都已成功上传到文档库。 仅卸载更改, 因为用户之前已上传了这些文件 (由 * * 上载的文件到文档库 * * 活动)。  <br/> |
+|将文件更改上载到文档库  <br/> |FileSyncUploadedPartial  <br/> |用户成功地将更改上载到文档库上的文件。 此事件表明对文档库文件的本地版本所做的任何更改都已成功上传到文档库。 仅上载更改, 因为用户之前已上载这些文件 (由 "**上载的文件到文档库**" 活动中所示)。  <br/> |
 ||||
   
 ### <a name="site-administration-activities"></a>网站管理活动

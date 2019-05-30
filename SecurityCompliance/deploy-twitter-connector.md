@@ -11,12 +11,12 @@ localization_priority: Normal
 ms.collection: M365-security-compliance
 ROBOTS: NOINDEX, NOFOLLOW
 description: 管理员可以设置本机连接器以将 Twitter 数据导入和存档到 Office 365。 将此数据导入 Office 365 后, 您可以使用合规性功能 (如法律封存、内容搜索和保留策略) 来管理组织的 Twitter 数据的管理。
-ms.openlocfilehash: 01c77436fc346a30a3d2cafeac731bf091296632
-ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
+ms.openlocfilehash: 4d3bce8418ef2fa62c40d221549e6e089dee9647
+ms.sourcegitcommit: 6c0fcb82178a4ac26375545f328389a6852a81be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "34150534"
+ms.lasthandoff: 05/28/2019
+ms.locfileid: "34490539"
 ---
 # <a name="deploy-a-connector-to-archive-twitter-data-in-office-365"></a>部署连接器以在 Office 365 中存档 Twitter 数据
 
@@ -193,14 +193,14 @@ ms.locfileid: "34150534"
 
 4. 在 "**配置详细信息**" 下, 输入以下配置设置 
 
-   - **Twitter 应用程序 id** -您在步骤5中创建的 twitter 应用程序的应用程序 id。
-   - **Twitter 应用程序密码**-您在步骤5中创建的 Twitter 应用程序的 API 密钥。
-   - **Twitter 客户端令牌**-您在步骤5中创建的访问令牌。
-   - **Twitter 客户端令牌密码**-您在步骤5中创建的访问令牌密码。
+   - **Twitter Api Key** -您在步骤5中创建的 twitter 应用程序的应用程序 ID。
+   - **Twitter Api 机密密钥**-您在步骤5中创建的 Twitter 应用程序的 Api 密钥。
+   - **Twitter 访问令牌**-您在步骤5中创建的访问令牌。
+   - **Twitter 访问令牌密码**-您在步骤5中创建的访问令牌密码。
    - **AAD 应用程序 id** -您在步骤2中创建的 Azure Active Directory 应用程序的应用程序 id
    - **AAD 应用程序密码**-您在步骤4中创建的 APISecretKey 密码的值。
    - **AAD 应用程序 uri** -在步骤2中获取的 aad 应用程序 uri;例如, https://microsoft.onmicrosoft.com/2688yu6n-12q3-23we-e3ee-121111123213。
-   - **App insights 检测键**-将此框保留为空。
+   - **App Insights 检测键**-将此框保留为空。
 
 5. 单击 "**保存**" 以保存连接器设置。
 

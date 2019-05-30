@@ -15,16 +15,16 @@ ms.assetid: 82ac9922-939c-41be-9c8a-7c75b0a4e27d
 ms.collection:
 - M365-security-compliance
 description: 了解安全&amp;合规性中心中的资源管理器 (和实时检测)。
-ms.openlocfilehash: 62ba70cb62b0c92cf65d77dfaf3eb7306e93fa98
-ms.sourcegitcommit: 2b46fba650df8d252b1dd2b3c3f080a383183a06
+ms.openlocfilehash: 030f866c5e86daa3dc543bddae7152e19f377d3b
+ms.sourcegitcommit: 6c0fcb82178a4ac26375545f328389a6852a81be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "34415709"
+ms.lasthandoff: 05/28/2019
+ms.locfileid: "34490528"
 ---
 # <a name="threat-explorer-and-real-time-detections"></a>威胁浏览器 (和实时检测)
 
-如果您的组织具有[Office 365 高级威胁防护](office-365-atp.md)(OFFICE 365 ATP), 并且您拥有[必要的权限](#required-licenses-and-permissions), 则您可以使用**资源管理器**或**实时检测**(以前的实时报告)[查看新增功能](#new-features-in-real-time-detections)!). 在 "安全 & 合规性中心" 中, 转到 "**威胁管理**", 然后选择 "**浏览器**" 或 "**实时检测**"。 
+如果您的组织具有[Office 365 高级威胁防护](office-365-atp.md)(OFFICE 365 ATP), 并且您拥有[必要的权限](#required-licenses-and-permissions), 则您可以使用**资源管理器**或**实时检测**(以前的*实时报告*)。[请参阅新增功能](#new-features-in-real-time-detections)! 在 "安全 & 合规性中心" 中, 转到 "**威胁管理**", 然后选择 "**浏览器**" 或 "**实时检测**"。 
 
 |在 ATP 计划2中, 您将看到:  |在 ATP 计划1中, 您将看到:  |
 |---------|---------|

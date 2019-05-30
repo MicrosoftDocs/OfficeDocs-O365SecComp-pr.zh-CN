@@ -14,18 +14,22 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: 本文介绍了 Microsoft 365 中的新数据调查 (预览版) 工具。
-ms.openlocfilehash: 1e7621d577d8d08fd27dc7e20e6b8e7a3491236f
-ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
+ms.openlocfilehash: 2b125d8f1dc24337804ea0461039aba824c42b8a
+ms.sourcegitcommit: 6eb51931242d07abde2e37f1bd57d13bc724f0de
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "34150674"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "34547907"
 ---
 # <a name="overview-of-data-investigations-preview-in-microsoft-365"></a>Microsoft 365 中的数据调查 (预览) 概述
 
 当包含机密、敏感或恶意内容的文档发布到不受信任的环境中时, 将发生数据溢出。 检测到数据溢出时, 很重要的一点是, 快速包含环境、评估外泄的大小和位置、检查周围的用户活动, 然后从服务中删除溢出的数据。 使用新的数据调查 (预览版) 工具, 您可以在 Office 365 中搜索敏感、恶意或误放的数据, 调查所发生的情况, 并采取适当的措施修正外泄。  
 
 本文介绍了如何使用新的数据调查 (预览) 工具中的功能来解决 Data 外泄方案。
+
+## <a name="permissions"></a>权限
+
+若要访问和进行数据调查, 您需要是数据调查员角色组的成员。 有关详细信息, 请参阅[为数据调查分配权限](permissions.md)。
 
 ## <a name="data-investigations-preview-workflow"></a>数据调查 (预览) 工作流 
 

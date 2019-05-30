@@ -3,18 +3,18 @@ title: 新的 Microsoft 365 合规性中心概述
 ms.author: deniseb
 author: denisebmsft
 manager: laurawi
-ms.date: 04/09/2019
-ms.audience: ITPro
+ms.date: 05/29/2019
+audience: ITPro
 ms.topic: article
 ms.service: o365-seccomp
 localization_priority: Normal
 description: 了解新的 Microsoft 365 合规性中心, 包括它包含的内容、如何获取它以及后续步骤。
-ms.openlocfilehash: ae608d1aafb803fabe6ed1eba3804b9921bac7b2
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: 149058d6204b7ad9d33fe656a8176609cfda5991
+ms.sourcegitcommit: 6eb51931242d07abde2e37f1bd57d13bc724f0de
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32265536"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "34547918"
 ---
 # <a name="overview-of-the-all-new-microsoft-365-compliance-center"></a>全新 Microsoft 365 合规性中心概述
 
@@ -89,9 +89,14 @@ ms.locfileid: "32265536"
 
 首先, 请确保您具有适当的[许可证和权限](microsoft-security-and-compliance.md#required-licenses-and-permissions)。 然后, 在处[https://compliance.microsoft.com](https://compliance.microsoft.com)登录。 如果你还没有看到新的合规性中心, 你将很快拥有。
 
-### <a name="i-cant-find-some-of-my-compliance-settings-what-do-i-do"></a>我找不到某些合规性设置。 What do I do?
+### <a name="some-of-my-compliance-features-are-not-available-in-the-microsoft-365-compliance-center-what-do-i-do"></a>我的一些合规性功能在 Microsoft 365 合规性中心中不可用。 What do I do?
 
-我们仍在向 Microsoft 365 合规性中心添加功能。 如果找不到任何内容 (如审核日志搜索), 请尝试导航到 Office 365 Security & 合规中心[https://protection.office.com](https://protection.office.com)()。 您的配置将在现有的 Office 365 安全 & 合规中心和新的 Microsoft 365 合规性中心中自动保存。
+我们仍在向 Microsoft 365 合规性中心添加功能。 如果找不到任何内容 (如审核日志搜索), 请使用 Office 365 Security & 合规中心[https://protection.office.com](https://protection.office.com)()。 您的配置将在现有的 Office 365 安全 & 合规中心和新的 Microsoft 365 合规性中心中自动保存。
+
+若要转到这里, 在 Microsoft 365 合规性中心中, 在屏幕左侧的导航窗格中, 选择 "**更多资源**", 然后在 " **Office 365 安全 & 合规中心**" 下选择 "**打开**"。
+
+![更多资源](media/MoreResourcesShowAll.png)
+
 
 ## <a name="next-steps"></a>后续步骤
 

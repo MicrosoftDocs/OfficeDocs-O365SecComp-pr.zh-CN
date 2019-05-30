@@ -10,12 +10,12 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: M365-security-compliance
 description: 管理员可以设置本机连接器以将 Twitter 数据导入 Office 365。 这使您可以在 Office 365 中存档第三方数据源中的数据, 以便您可以使用合规性功能 (如法律封存、内容搜索和保留策略) 来管理组织的第三方数据的管理。
-ms.openlocfilehash: b53d882a66ba30a0c4c90389253689a9fe1fb457
-ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
+ms.openlocfilehash: ad64a982340013fbc5ef9acb612982ccc846ad3a
+ms.sourcegitcommit: 6c0fcb82178a4ac26375545f328389a6852a81be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "34155614"
+ms.lasthandoff: 05/28/2019
+ms.locfileid: "34490498"
 ---
 # <a name="use-a-sample-connector-to-archive-twitter-data-in-office-365-preview"></a>使用示例连接器在 Office 365 中存档 Twitter 数据 (预览)
 
@@ -101,10 +101,10 @@ ms.locfileid: "34155614"
 
 在完成此步骤 (按照分步说明操作) 后, 您将把以下信息保存到文本文件中。 这些值将用于在步骤6中配置 Twitter 连接器应用。
 
-- Twitter 应用程序 ID
-- Twitter 应用程序密码 (API 密钥)
-- Twitter 客户端令牌
-- Twitter 客户端令牌机密
+- Twitter API 密钥
+- Twitter API 密钥
+- Twitter 访问令牌
+- Twitter 访问令牌机密
 
 ## <a name="step-6-configure-the-twitter-connector-app"></a>步骤 6: 配置 Twitter 连接器应用
 
@@ -114,10 +114,10 @@ ms.locfileid: "34155614"
 
 在完成此步骤 (按照分步说明操作) 后, 您将提供以下信息 (在完成上述步骤后, 您已将其复制到文本文件中):
 
-- Twitter 应用程序 ID (在步骤5中获取)
-- Twitter 应用程序密码 (在步骤5中获取)
-- Twitter 客户端令牌 (在步骤5中获取)
-- Twitter 客户端令牌机密 (在步骤5中获取)
+- Twitter API 密钥 (在步骤5中获取)
+- Twitter API 密钥 (在步骤5中获取)
+- Twitter 访问令牌 (在步骤5中获取)
+- Twitter 访问令牌机密 (在步骤5中获取)
 - Azure Active Directory 应用程序 ID (在步骤2中获取的 AAD 应用程序 ID)
 - Azure Active Directory 应用程序密码 (在步骤2中获取的 AAD 应用程序密码)
 - Azure Active Directory 应用程序 Uri (在步骤2中获取的 AAD 应用程序 Uri; 例如,https://microsoft.onmicrosoft.com/2688yu6n-12q3-23we-e3ee-121111123213)

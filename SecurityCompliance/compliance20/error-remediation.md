@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: 5a6c545b15ee07fc0200104b8408e7adb7301c79
-ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
+ms.openlocfilehash: 8653ebd82e9c045c4fc49b00fcb82bf22ab3f906
+ms.sourcegitcommit: 6eb51931242d07abde2e37f1bd57d13bc724f0de
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "34151784"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "34547937"
 ---
 # <a name="error-remediation-when-processing-data"></a>修正处理数据时出现的错误
 
@@ -40,7 +40,7 @@ ms.locfileid: "34151784"
 
     ![错误修正](../media/8c2faf1a-834b-44fc-b418-6a18aed8b81a.png)
 
-    将开始错误修正会话, 从准备阶段 (将导致的文件移动到要下载的安全 Azure 位置) 开始。
+    将开始错误修正会话, 从准备阶段开始, 其中包含错误的文件复制到安全 Azure 位置, 以便可以下载。
 
     ![准备错误修正](../media/390572ec-7012-47c4-a6b6-4cbb5649e8a8.png)
 
@@ -63,7 +63,7 @@ ms.locfileid: "34151784"
     ![准备错误修正](../media/f364ab4d-31c5-4375-b69f-650f694a2f69.png)
 
     > [!NOTE]
-    > 如果提供的 AzCopy 命令失败, 请参阅[排查高级电子数据展示中的 AzCopy](troubleshooting-azcopy.md)
+    > 如果提供的 AzCopy 命令失败, 请参阅[排查高级电子数据展示中的 AzCopy](troubleshooting-azcopy.md)。
 
 7. 下载文件后, 可以使用适当的工具对它们进行修正。 对于受密码保护的文件, 可以使用许多密码破解工具。 如果您知道这些文件的密码, 则可以打开它们并删除密码保护。
     > [!NOTE]
@@ -73,7 +73,7 @@ ms.locfileid: "34151784"
 
     ![上传文件](../media/af3d8617-1bab-4ecd-8de0-22e53acba240.png)
 
-9. 在 "**文件的位置路径**" 文本框中指定修正的文件的位置, 然后单击 "**复制到 clibpboard**"。
+9. 在 "**文件的位置路径**" 文本框中指定修正的文件的位置, 然后单击 "**复制到剪贴板**"。
 
 10. 将命令粘贴到 Windows 命令提示符中, 然后按**enter**上传文件。
 
@@ -87,12 +87,9 @@ ms.locfileid: "34151784"
 
 当上载修正的文件时, 原始元数据将保留, 但以下字段除外: 
 
-- DocumentExtractedUrl
 - ExtractedTextSize
 - HasText
 - IsErrorRemediate
-- IsParentExtractedUrl
-- ItemExtractedUrl
 - LoadId
 - ProcessingErrorMessage
 - ProcessingStatus
