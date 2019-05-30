@@ -15,12 +15,12 @@ search.appverid:
 - MET150
 ms.assetid: 0d4d0f35-390b-4518-800e-0c7ec95e946c
 description: '使用安全 & 合规性中心搜索统一审核日志, 以查看 Office 365 组织中的用户和管理员活动。 '
-ms.openlocfilehash: d8a674785c982b19b04b5bd14cd941dde7a86f61
-ms.sourcegitcommit: 6c0fcb82178a4ac26375545f328389a6852a81be
+ms.openlocfilehash: cb44dd3d7c87928b325a72e783feea85e252dc49
+ms.sourcegitcommit: 6eb51931242d07abde2e37f1bd57d13bc724f0de
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/28/2019
-ms.locfileid: "34490488"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "34547987"
 ---
 # <a name="search-the-audit-log-in-the-security--compliance-center"></a>在 Security & 合规性中心中搜索审核日志
 
@@ -179,8 +179,13 @@ ms.locfileid: "34490488"
     
     将此框保留为空将返回组织中的所有文件和文件夹的条目。
     
-    > [!TIP]
-    > 如果要查找与**网站**相关的所有活动, 请在 URL 后面添加通配符 (\*) 以返回该网站的所有条目;例如, **https://contoso-my.sharepoint.com/personal/"*"**。
+   **几点**
+
+   - 如果要查找与**网站**相关的所有活动, 请在 URL 后面添加通配符 (\*) 以返回该网站的所有条目;例如, **https://contoso-my.sharepoint.com/personal/"*"**。
+
+   - 如果要查找与**文件**相关的所有活动, 请在文件名前面添加通配符 (\*) 以返回该文件的所有条目;例如, **"* Customer_Profitability_Sample"**。
+    
+
     
 5. 单击 "**搜索**" 以使用搜索条件运行搜索。 
     
@@ -295,15 +300,15 @@ ms.locfileid: "34490488"
   
 ||||
 |:-----|:-----|:-----|
-|[文件和页面活动](#file-and-page-activities)<br/> |[文件夹活动](#folder-activities)<br/> |[共享和访问请求活动](#sharing-and-access-request-activities)<br/> |
-|[同步活动](#synchronization-activities)<br/> |[网站管理活动](#site-administration-activities)<br/> |[Exchange 邮箱活动](#exchange-mailbox-activities)<br/> |
-|[Sway 活动](#sway-activities) <br/> |[用户管理活动](#user-administration-activities) <br/> |[Azure AD 组管理活动](#azure-ad-group-administration-activities) <br/> 
-|[应用程序管理活动](#application-administration-activities) <br/> |[角色管理活动](#role-administration-activities) <br/> |[目录管理活动](#directory-administration-activities) <br/>| 
-|[电子数据展示活动](#ediscovery-activities) <br/> |[Power BI 活动](#power-bi-activities) <br/> |[Microsoft 工作区分析](#microsoft-workplace-analytics-activities)<br/>|
-|[Microsoft 团队活动](#microsoft-teams-activities) <br/> |[Yammer 活动](#yammer-activities) <br/> |[Microsoft 流活动](#microsoft-flow-activities) <br/>|
-|[Microsoft PowerApps 活动](#microsoft-powerapps)<br/>|[Microsoft Stream 活动](#microsoft-stream-activities) <br/>|[Exchange 管理活动](#exchange-admin-audit-log)<br/>|
+|[文件和页面活动](#file-and-page-activities)<br/> |[文件夹活动](#folder-activities)<br/> |[SharePoint 列表活动](#sharepoint-list-activities)<br/>|
+|[共享和访问请求活动](#sharing-and-access-request-activities)<br/> |[同步活动](#synchronization-activities)<br/> |[网站管理活动](#site-administration-activities)<br/> |
+|[Exchange 邮箱活动](#exchange-mailbox-activities)<br/> |[Sway 活动](#sway-activities) <br/> |[用户管理活动](#user-administration-activities) <br/> |
+|[Azure AD 组管理活动](#azure-ad-group-administration-activities) <br/> |[应用程序管理活动](#application-administration-activities) <br/> |[角色管理活动](#role-administration-activities) <br/> |
+|[目录管理活动](#directory-administration-activities) <br/>|[电子数据展示活动](#ediscovery-activities) <br/> |[高级电子数据展示活动](#advanced-ediscovery-activities)<br/> |
+|[Power BI 活动](#power-bi-activities) <br/> |[Microsoft 工作区分析](#microsoft-workplace-analytics-activities)<br/>|[Microsoft 团队活动](#microsoft-teams-activities) <br/> |
+|[Yammer 活动](#yammer-activities) <br/> |[Microsoft 流活动](#microsoft-flow-activities) <br/>|[Microsoft PowerApps 活动](#microsoft-powerapps)<br/>|
+|[Microsoft Stream 活动](#microsoft-stream-activities) <br/>|[Exchange 管理活动](#exchange-admin-audit-log)<br/>|
 ||||
-   
   
 ### <a name="file-and-page-activities"></a>文件和页面活动
   
@@ -319,6 +324,7 @@ ms.locfileid: "34490488"
 |删除的文件  <br/> |FileDeleted  <br/> |用户从网站中删除文档。  <br/> |
 |从回收站删除的文件  <br/> |FileDeletedFirstStageRecycleBin  <br/> |用户从网站的回收站中删除文件。  <br/> |
 |从第二阶段回收站删除的文件  <br/> |FileDeletedSecondStageRecycleBin  <br/> |用户从网站的第二阶段回收站中删除文件。  <br/> |
+|检测到的文档敏感度不匹配 <br/>|DocumentSensitivityMismatchDetected<br/>|用户上载使用敏感度标签分级的文档, 该文档的优先级高于将文档上载到的网站所应用的敏感度标签。 注释如果应用于网站的敏感度标签的优先级高于应用于上载到网站的文档的敏感度标签, 则不会触发此事件。 有关敏感度标签优先级的详细信息, 请参阅[敏感度标签概述](sensitivity-labels.md#label-priority-order-matters)中的 "标签优先级" 一节。<br/>|
 |在文件中检测到恶意软件  <br/> |FileMalwareDetected  <br/> |SharePoint 防病毒引擎可检测文件中的恶意软件。  <br/> |
 |放弃文件签出  <br/> |FileCheckOutDiscarded  <br/> |用户放弃（或撤消）签出的文件。这意味着将放弃签出文件时对其所做的更改，而不将其保存到文档库中的文档版本。  <br/> |
 |下载文件  <br/> |FileDownloaded  <br/> |用户从网站下载文档。  <br/> |
@@ -333,6 +339,8 @@ ms.locfileid: "34490488"
 |上载的文件  <br/> |FileUploaded  <br/> |用户将文档上载到网站上的文件夹。  <br/> |
 |查看页面  <br/> |PageViewed  <br/> |用户查看网站上的页面。 这不包括使用 Web 浏览器查看位于文档库中的文件。  <br/> |
 |（无）  <br/> |PageViewedExtended  <br/> |这与 "查看过的页面" (PageViewed) 活动相关。 当同一人持续查看某个网页长时间 (最长为3小时) 时, 将记录 PageViewedExtended 事件。 记录 PageViewedExtended 事件的目的是减少在连续查看页面时记录的 PageViewed 事件数。 这有助于减少多个 PageViewed 记录在本质上是相同的用户活动的噪音, 并让您重点关注最初的 (更重要的) PageViewed 事件。  <br/> |
+|查看客户端的信号 <br/>|ClientViewSignaled<br/>|用户的客户端 (如网站或移动应用程序) 已通知用户已查看指定的页面。 此活动通常会在页面的 PagePrefetched 事件后记录下来。 <br/><br/>**注意**: 由于 ClientViewSignaled 事件由客户端 (而不是服务器) 发出通知, 因此该事件可能不会被服务器记录, 因此可能不会出现在审核日志中。 审核记录中的信息也可能不可信。 但是, 由于用户的标识由用于创建信号的令牌进行验证, 因此相应的审核记录中列出的用户标识是准确的。 |
+|（无） <br/>|PagePrefetched<br/>|用户的客户端 (如网站或移动应用程序) 已请求指示的页面, 以便在用户浏览到它时帮助提高性能。 记录此事件以指示页面内容已提供给用户的客户端;此事件不是用户实际导航到页面的明确指示。 当客户端呈现页面内容时 (根据用户的请求), 应生成一个 ClientViewSignaled 事件。 请注意, 并非所有客户端都支持指示预回迁, 因此某些预回迁的活动可能改为作为 PageViewed 事件进行记录。<br/>|
 ||||
   
 ### <a name="folder-activities"></a>文件夹活动
@@ -352,6 +360,35 @@ ms.locfileid: "34490488"
 |已还原文件夹  <br/> |FolderRestored  <br/> |用户从网站的回收站还原已删除文件夹。  <br/> |
 ||||
   
+### <a name="sharepoint-list-activities"></a>SharePoint 列表活动
+  
+下表介绍与用户与 SharePoint Online 中的列表和列表项进行交互时的相关活动。
+
+|**易记名称**|**操作**|**说明**|
+|:-----|:-----|:-----|
+| 创建的列表              | ListCreated              | 用户创建了一个新的 SharePoint 列表。|
+| 创建的列表列       | ListColumnCreated        | 用户创建了一个新的 SharePoint 列表列。 列表列是附加到一个或多个 SharePoint 列表的列。 |
+| 创建的列表内容类型 | ListContentTypeCreated   | 用户创建了新的列表内容类型。 列表内容类型是附加到一个或多个 SharePoint 列表的内容类型。|
+| 创建的列表项         | ListItemCreated          | 用户在现有 SharePoint 列表中创建了一个新项。|
+| 创建的网站栏       | SiteColumnCreated        | 用户创建了一个新的 SharePoint 网站栏。 网站栏是不附加到列表的列。 网站栏也是可由给定 web 中的任何列表使用的元数据结构。|
+| 创建的网站内容类型 | 已创建网站 ContentType | 用户创建了新的网站内容类型。 "网站内容类型" 是附加到父网站的内容类型。|
+| 删除的列表              | ListDeleted              | 用户已删除 SharePoint 列表。|
+| 已删除的列表列       | 列表栏已删除      | 用户删除了 SharePoint 列表列。|
+| 已删除的列表内容类型 | ListContentTypeDeleted   | 用户删除了列表内容类型。 |
+| 删除的列表项         | 列表项已删除        | 用户已删除 SharePoint 列表项。|
+| 已删除网站栏       | SiteColumnDeleted        | 用户删除了 SharePoint 网站栏。 |
+| 已删除网站内容类型 | SiteContentTypeDeleted   | 用户已删除网站内容类型。|
+| 回收列表项        | ListItemRecycled         | 用户将 SharePoint 列表项移动到回收站。|
+| 还原的列表             | ListRestored             | 用户从回收站还原了 SharePoint 列表。|
+| 还原的列表项        | ListItemRestored         | 用户从回收站还原了 SharePoint 列表项。|
+| 更新的列表              | ListUpdated              | 用户通过修改一个或多个属性更新 SharePoint 列表。|
+| 更新的列表列       | ListColumnUpdated        | 用户通过修改一个或多个属性更新了 SharePoint 列表列。|
+| 更新的列表内容类型 | ListContentTypeUpdated   | 用户通过修改一个或多个属性更新了列表内容类型。|
+| 更新的列表项         | ListItemUpdated          | 用户通过修改一个或多个属性更新了 SharePoint 列表项。|  
+| 更新的网站栏       | SiteColumnUpdated        | 用户通过修改一个或多个属性更新了 SharePoint 网站栏。|
+| 更新的网站内容类型 | SiteContentTypeUpdated   | 用户通过修改一个或多个属性更新网站内容类型。|
+||||
+
 ### <a name="sharing-and-access-request-activities"></a>共享和访问请求活动
   
 下表介绍了 SharePoint Online 和 OneDrive for Business 中的用户共享和访问请求活动。 对于共享事件, "**结果**" 下的 "**详细信息**" 列标识与该项目共享的用户或组的名称, 以及该用户或组是否为组织中的成员或来宾。 有关详细信息, 请参阅[在 Office 365 审核日志中使用共享审核](use-sharing-auditing.md)。
@@ -364,10 +401,7 @@ ms.locfileid: "34490488"
 |接受的访问请求  <br/> |AccessRequestAccepted  <br/> |接受对网站、文件夹或文档的访问请求, 并向请求用户授予访问权限。  <br/> |
 |接受的共享邀请  <br/> |SharingInvitationAccepted  <br/> |用户 (成员或来宾) 接受了共享邀请, 并且已被授予对资源的访问权限。 此事件包括受邀的用户的相关信息, 以及用于接受邀请的电子邮件地址 (可以是不同的)。 此活动通常附带第二个事件, 该事件描述了如何向用户授予对资源的访问权限, 例如, 将用户添加到有权访问该资源的组。  <br/> |
 |向网站集添加了权限级别  <br/> |PermissionLevelAdded  <br/> |向网站集添加了权限级别。  <br/> |
-|用户已添加到安全链接  <br/> |AddedToSecureLink  <br/> |已将用户添加到可使用此安全共享链接的实体列表中。  <br/> |
 |阻止的共享邀请  <br/> |SharingInvitationBlocked  <br/> | 由于外部共享策略允许或拒绝基于目标用户的域的外部共享, 因此组织中的用户发送的共享邀请被阻止。 在这种情况下, 共享邀请被阻止, 因为:  <br/>  目标用户的域不包含在允许的域的列表中。  <br/>  或  <br/>  目标用户的域包含在阻止域的列表中。  <br/>  有关允许或阻止基于域的外部共享的详细信息, 请参阅[SharePoint Online 和 OneDrive For business 中的受限制域共享](https://support.office.com/article/5d7589cd-0997-4a00-a2ba-2320ec49c4e9)。  <br/> |
-|中断权限级别继承  <br/> |PermissionLevelsInheritanceBroken  <br/> |更改了某个项目, 因此它不再继承其父项的权限级别。  <br/> |
-|中断共享继承  <br/> |SharingInheritanceBroken  <br/> |更改了某个项目, 因此它不再继承其父项的共享权限。  <br/> |
 |创建公司可共享的链接  <br/> |CompanyLinkCreated  <br/> |用户创建了指向资源的公司范围的链接。 公司范围内的链接仅可由组织中的成员使用。 来宾无法使用它们。  <br/> |
 |创建的访问请求  <br/> |AccessRequestCreated  <br/> |用户请求访问网站、文件夹或文档不具有访问权限的权限。  <br/> |
 |创建了匿名链接  <br/> |AnonymousLinkCreated  <br/> |用户创建了指向资源的匿名链接。 具有此链接的任何人都可以访问该资源, 而无需进行身份验证。  <br/> |
@@ -375,11 +409,8 @@ ms.locfileid: "34490488"
 |已创建共享邀请  <br/> |SharingInvitationCreated  <br/> |用户在 SharePoint Online 或 OneDrive for Business 中共享了与组织目录中不存在的用户的资源。  <br/> |
 |已删除安全链接  <br/> |SecureLinkDeleted  <br/> |已删除安全共享链接。  <br/> |
 |拒绝访问请求  <br/> |AccessRequestDenied  <br/> |对网站、文件夹或文档的访问请求被拒绝。  <br/> |
-|网站集上的修改的权限级别  <br/> |PermissionLevelModified  <br/> |在网站集上更改了权限级别。  <br/> |
 |删除了公司可共享的链接  <br/> |CompanyLinkRemoved  <br/> |用户已删除指向资源的公司范围的链接。 无法再使用该链接访问该资源。  <br/> |
 |删除了匿名链接  <br/> |AnonymousLinkRemoved  <br/> |用户删除了指向资源的匿名链接。 无法再使用该链接访问该资源。  <br/> |
-|从网站集删除权限级别  <br/> |PermissionLevelRemoved  <br/> |从网站集中删除了权限级别。  <br/> |
-|已还原的共享继承  <br/> |SharingInheritanceReset  <br/> |进行了更改, 以便项目继承其父级的共享权限。  <br/> |
 |共享文件、文件夹或网站  <br/> |SharingSet  <br/> |用户 (成员或来宾) 在 SharePoint 或 OneDrive for Business 中与组织目录中的用户共享文件、文件夹或网站。 此活动的**详细信息**列中的值标识了与之共享资源的用户的名称, 以及此用户是否为成员或来宾。 此活动通常附带第二个事件, 该事件描述了如何向用户授予对资源的访问权限;例如, 将用户添加到有权访问该资源的组中。  <br/> |
 |更新了访问请求  <br/> |AccessRequestUpdated  <br/> |更新了对项目的访问请求。  <br/> |
 |更新了匿名链接  <br/> |AnonymousLinkUpdated  <br/> |用户更新了指向资源的匿名链接。 当您导出搜索结果时, 更新的字段包含在 EventData 属性中。  <br/> |
@@ -406,6 +437,31 @@ ms.locfileid: "34490488"
 |将文件上载到文档库  <br/> |FileSyncUploadedFull  <br/> |用户建立同步关系, 并将第一次成功地将文件从计算机上载到文档库。  <br/> |
 |将文件更改上载到文档库  <br/> |FileSyncUploadedPartial  <br/> |用户成功地将更改上载到文档库上的文件。 此事件表明对文档库文件的本地版本所做的任何更改都已成功上传到文档库。 仅上载更改, 因为用户之前已上载这些文件 (由 "**上载的文件到文档库**" 活动中所示)。  <br/> |
 ||||
+
+### <a name="site-permissions-activities"></a>网站权限活动
+
+下表列出了与在 SharePoint 中分配权限以及使用组授予 (和废除) 对网站的访问权限的事件。
+
+|**易记名称**|**操作**|**说明**|
+|:-----|:-----|:-----|
+|添加了网站集管理员  <br/> |SiteCollectionAdminAdded  <br/> |网站集管理员或所有者向网站的网站集管理员添加人员。 网站集管理员具有网站集和所有子网站的完全控制权限。 当管理员为自己提供了对用户的 OneDrive 帐户的访问权限 (通过在 SharePoint 管理中心中编辑用户配置文件或[使用 Microsoft 365 管理中心](https://docs.microsoft.com/office365/admin/add-users/get-access-to-and-back-up-a-former-user-s-data#part-1---get-access-to-the-former-employees-onedrive-for-business-documents)) 时, 也会记录此活动。 <br/> |
+|向 SharePoint 组添加用户或组  <br/> |AddedToGroup  <br/> |用户向 SharePoint 组添加了成员或来宾。 这可能是一个有意的操作, 也可能是另一个活动 (如共享事件) 的结果。  <br/> |
+|中断权限级别继承  <br/> |PermissionLevelsInheritanceBroken  <br/> |更改了某个项目, 因此它不再继承其父项的权限级别。  <br/> |
+|中断共享继承  <br/> |SharingInheritanceBroken  <br/> |更改了某个项目, 因此它不再继承其父项的共享权限。  <br/> |
+|创建的组  <br/> |GroupAdded  <br/> |网站管理员或所有者为网站创建一个组, 或执行一项将导致组创建的任务。 例如，当用户首次创建共享文件的链接时，系统组会被添加到用户的 OneDrive for Business 网站中。 此事件也可以是用户使用编辑权限创建共享文件链接的结果。  <br/> |
+|删除的组  <br/> |GroupRemoved  <br/> |用户从网站中删除组。  <br/> |
+|修改的访问请求设置  <br/> |WebRequestAccessModified  <br/> |已在网站上修改访问请求设置。  <br/> |
+|修改的 "成员可以共享" 设置  <br/> |WebMembersCanShareModified  <br/> |**成员可以共享**设置已在网站上修改。  <br/> |
+|网站集上的修改的权限级别  <br/> |PermissionLevelModified  <br/> |在网站集上更改了权限级别。  <br/> |
+|修改的网站权限  <br/> |SitePermissionsModified  <br/> |网站管理员或所有者 (或系统帐户) 更改分配给网站上的组的权限级别。 如果从组中删除了所有权限, 也会记录此活动。  <br/><br/> **注意**: 此操作已在 SharePoint Online 中弃用。 若要查找相关事件, 可以搜索其他与权限相关的活动, 如**添加的网站集管理员**、向**SharePoint 组添加用户或组**、**允许用户创建组**、**创建组**和**删除组。**|
+|从网站集删除权限级别  <br/> |PermissionLevelRemoved  <br/> |从网站集中删除了权限级别。  <br/> |
+|已删除网站集管理员  <br/> |SiteCollectionAdminRemoved <br/> |网站集管理员或所有者将用户作为网站的网站集管理员删除。 当管理员从用户的 OneDrive 帐户的网站集管理员列表中删除自己 (通过在 SharePoint 管理中心中编辑用户配置文件) 时, 也会记录此活动。  请注意, 若要在审核日志搜索结果中返回此活动, 您必须搜索所有活动。 <br/> |
+|从 SharePoint 组中删除了用户或组  <br/> |RemovedFromGroup  <br/> |用户从 SharePoint 组中删除了成员或来宾。 这可能是一个有意的操作, 也可能是另一个活动的结果, 如 "取消共享" 事件。  <br/> |
+|请求的网站管理员权限  <br/> |SiteAdminChangeRequest  <br/> |要添加为网站集的网站集管理员的用户请求。 网站集管理员具有网站集和所有子网站的完全控制权限。  <br/> |
+|已还原的共享继承  <br/> |SharingInheritanceReset  <br/> |进行了更改, 以便项目继承其父级的共享权限。  <br/> |
+|更新的组  <br/> |GroupUpdated  <br/> |网站管理员或所有者更改网站组的设置。 这可能包括更改组名、可以查看或编辑组成员身份的人员，以及成员身份请求的处理方式。  <br/> |
+||||
+
   
 ### <a name="site-administration-activities"></a>网站管理活动
   
@@ -413,10 +469,9 @@ ms.locfileid: "34490488"
   
 |**易记名称**|**操作**|**说明**|
 |:-----|:-----|:-----|
-|添加了豁免用户代理  <br/> |ExemptUserAgentSet  <br/> |SharePoint 或全局管理员向 SharePoint 管理中心内的豁免用户代理列表添加用户代理。  <br/> |
-|添加了网站集管理员  <br/> |SiteCollectionAdminAdded  <br/> |网站集管理员或所有者向网站的网站集管理员添加人员。 网站集管理员具有网站集和所有子网站的完全控制权限。 当管理员为自己提供了对用户的 OneDrive 帐户的访问权限 (通过在 SharePoint 管理中心中编辑用户配置文件或[使用 Microsoft 365 管理中心](https://docs.microsoft.com/office365/admin/add-users/get-access-to-and-back-up-a-former-user-s-data#part-1---get-access-to-the-former-employees-onedrive-for-business-documents)) 时, 也会记录此活动。 <br/> |
-|（无）  <br/> |SiteCollectionAdminRemoved <br/> |网站集管理员或所有者将用户作为网站的网站集管理员删除。 当管理员从用户的 OneDrive 帐户的网站集管理员列表中删除自己 (通过在 SharePoint 管理中心中编辑用户配置文件) 时, 也会记录此活动。  请注意, 若要在审核日志搜索结果中返回此活动, 您必须搜索所有活动。 <br/> |
-|向 SharePoint 组添加用户或组  <br/> |AddedToGroup  <br/> |用户向 SharePoint 组添加了成员或来宾。 这可能是一个有意的操作, 也可能是另一个活动 (如共享事件) 的结果。  <br/> |
+|添加了允许的数据位置<br/>|AllowedDataLocationAdded|SharePoint 或全局管理员在多地理位置环境中添加了允许的数据位置。 <br/>|
+|添加了豁免用户代理  <br/> |ExemptUserAgentSet  <br/> |SharePoint 或全局管理员向 SharePoint 管理中心内的豁免用户代理列表中添加了一个用户代理。  <br/> |
+|添加了地理位置管理员<br/>|GeoAdminAdded<br/>|SharePoint 或全局管理员将用户添加为位置的地理位置管理员。 <br/>|
 |允许用户创建组  <br/> |AllowGroupCreationSet  <br/> |网站管理员或所有者向网站添加权限级别, 允许分配该权限的用户为该网站创建组。  <br/> |
 |取消的网站地理位置移动  <br/> |SiteGeoMoveCancelled  <br/> |SharePoint 或全局管理员成功取消 SharePoint 或 OneDrive 站点地理位置移动。 多地理位置功能可让 Office 365 组织跨多个 Office 365 数据中心地理位置, 这些地理位置称为信息。 有关详细信息, 请参阅[Office 365 中的 OneDrive 和 SharePoint Online 中的多地理位置功能](https://go.microsoft.com/fwlink/?linkid=860840)。  <br/> |
 |更改了共享策略  <br/> |SharingPolicyChanged  <br/> |SharePoint 或全局管理员使用 Office 365 管理门户、SharePoint 管理门户或 SharePoint Online 命令行管理程序更改了 SharePoint 共享策略。 将记录对组织中共享策略中的设置所做的任何更改。 已更改的策略在事件记录的详细属性中的 " **ModifiedProperties** " 字段中进行标识。  <br/> |
@@ -424,25 +479,26 @@ ms.locfileid: "34490488"
 |已更改的豁免用户代理  <br/> |CustomizeExemptUsers  <br/> |SharePoint 或全局管理员自定义了 SharePoint 管理中心内的豁免用户代理列表。 您可以指定哪些用户代理免于接收整个网页进行索引编制。 这意味着当您指定为豁免的用户代理遇到 InfoPath 表单时, 该表单将作为 XML 文件而不是整个网页返回。 这可以加速对 InfoPath 表单编制索引。  <br/> |
 |更改了网络访问策略  <br/> |NetworkAccessPolicyChanged  <br/> |SharePoint 或全局管理员在 SharePoint 管理中心或通过使用 SharePoint Online PowerShell 更改了基于位置的访问策略 (也称为 "受信任的网络边界")。 此类型的策略控制谁可以根据您指定的授权 IP 地址范围访问组织中的 SharePoint 和 OneDrive 资源。 有关详细信息, 请参阅[基于网络位置控制对 SharePoint Online 和 OneDrive 数据的访问](https://support.office.com/article/b5a5f1f1-1174-4c6b-91d0-9273a6b6971f)。  <br/> |
 |完成的网站地理位置移动  <br/> |SiteGeoMoveCompleted  <br/> |组织中的全局管理员安排的网站地理位置移动已成功完成。 多地理位置功能可让 Office 365 组织跨多个 Office 365 数据中心地理位置, 这些地理位置称为信息。 有关详细信息, 请参阅[Office 365 中的 OneDrive 和 SharePoint Online 中的多地理位置功能](https://go.microsoft.com/fwlink/?linkid=860840)。  <br/> |
-|创建的组  <br/> |GroupAdded  <br/> |网站管理员或所有者为网站创建一个组, 或执行一项将导致组创建的任务。 例如，当用户首次创建共享文件的链接时，系统组会被添加到用户的 OneDrive for Business 网站中。 此事件也可以是用户使用编辑权限创建共享文件链接的结果。  <br/> |
 |已创建发送到连接  <br/> |SendToConnectionAdded  <br/> |SharePoint 或全局管理员在 SharePoint 管理中心的 "记录管理" 页上创建新的 "发送至" 连接。 “发送至”连接指定文档存储库或记录中心设置。 创建“发送至”连接时，内容管理器可以将文档提交到指定位置。  <br/> |
 |创建的网站集  <br/> |SiteCollectionCreated  <br/> |SharePoint 或全局管理员在您的 SharePoint Online 组织中创建新的网站集, 或者用户预配其 OneDrive for business 网站。  <br/> |
-|删除的组  <br/> |GroupRemoved  <br/> |用户从网站中删除组。  <br/> |
+|已删除孤立中心网站<br/>|HubSiteOrphanHubDeleted<br/>|SharePoint 或全局管理员删除了一个孤立的中心网站, 该站点是一个不具有任何与之关联的站点的中心网站。 孤立的集线器可能是由于删除了原始中心网站造成的。 <br/>|
 |删除已发送到连接  <br/> |SendToConnectionRemoved  <br/> |SharePoint 或全局管理员在 SharePoint 管理中心的 "记录管理" 页上删除 "发送至" 连接。  <br/> |
 |删除的网站  <br/> |SiteDeleted  <br/> |网站管理员删除网站。  <br/> |
 |启用文档预览  <br/> |PreviewModeEnabledSet  <br/> |网站管理员启用网站的文档预览。  <br/> |
 |已启用旧版工作流  <br/> |LegacyWorkflowEnabledSet  <br/> |网站管理员或所有者将 SharePoint 2013 工作流任务内容类型添加到网站。 全局管理员还可以在 SharePoint 管理中心中启用整个组织的工作流。  <br/> |
 |启用 Office on Demand  <br/> |OfficeOnDemandSet  <br/> |网站管理员启用 Office on Demand，允许用户访问最新版本的 Office 桌面应用程序。 SharePoint 管理中心启用了 Office on Demand，并需要包括全套已安装的 Office 应用程序的 Office 365 订阅。  <br/> |
+|人员搜索的已启用结果源<br/>|PeopleResultsScopeSet<br/>|网站管理员为人员搜索网站的结果创建结果源。<br/>|
 |已启用 RSS 源  <br/> |NewsFeedEnabledSet  <br/> |网站管理员或所有者为网站启用 RSS 源。 全局管理员可以在 SharePoint 管理中心中对整个组织启用 RSS 源。  <br/> |
-|修改的访问请求设置  <br/> |WebRequestAccessModified  <br/> |已在网站上修改访问请求设置。  <br/> |
-|已修改成员可以共享设置  <br/> |WebMembersCanShareModified  <br/> |**成员可以共享**设置已在网站上修改。  <br/> |
-|修改的网站权限  <br/> |SitePermissionsModified  <br/> |网站管理员或所有者 (或系统帐户) 更改分配给网站上的组的权限级别。 如果从组中删除了所有权限, 也会记录此活动。  <br/> > [!NOTE]> 此操作已在 SharePoint Online 中弃用。 若要查找相关事件, 可以搜索其他与权限相关的活动, 如**添加的网站集管理员**、向**SharePoint 组添加用户或组**、**允许用户创建组**、**创建组**和**删除组。**         |
-|从 SharePoint 组中删除了用户或组  <br/> |RemovedFromGroup  <br/> |用户从 SharePoint 组中删除了成员或来宾。 这可能是一个有意的操作, 也可能是另一个活动的结果, 如 "取消共享" 事件。  <br/> |
+|将网站加入中心网站<br/>|HubSiteJoined<br/>|网站所有者将其网站与中心网站相关联。<br/>|
+|注册中心网站<br/>|HubSiteRegistered<br/>|SharePoint 或全局管理员创建中心网站。 结果是, 该网站被注册为中心网站。 <br/>|
+|删除了允许的数据位置<br/>|AllowedDataLocationDeleted<br/>|SharePoint 或全局管理员在多地理位置环境中删除了允许的数据位置。<br/>|
+|已删除地理位置管理员<br/>|GeoAdminDeleted<br/>|SharePoint 或全局管理员将用户删除为位置的地理位置管理员。<br/>|
 |重命名网站  <br/> |SiteRenamed  <br/> |网站管理员或所有者重命名网站  <br/> |
-|请求的网站管理员权限  <br/> |SiteAdminChangeRequest  <br/> |要添加为网站集的网站集管理员的用户请求。 网站集管理员具有网站集和所有子网站的完全控制权限。  <br/> |
 |计划的网站地理位置移动  <br/> |SiteGeoMoveScheduled  <br/> |SharePoint 或全局管理员成功安排 SharePoint 或 OneDrive 站点地理位置移动。 多地理位置功能可让 Office 365 组织跨多个 Office 365 数据中心地理位置, 这些地理位置称为信息。 有关详细信息, 请参阅[Office 365 中的 OneDrive 和 SharePoint Online 中的多地理位置功能](https://go.microsoft.com/fwlink/?linkid=860840)。  <br/> |
 |设置主机网站  <br/> |HostSiteSet  <br/> |SharePoint 或全局管理员将指定的网站更改为托管个人或 OneDrive for Business 网站。  <br/> |
-|更新的组  <br/> |GroupUpdated  <br/> |网站管理员或所有者更改网站组的设置。 这可能包括更改组名、可以查看或编辑组成员身份的人员，以及成员身份请求的处理方式。  <br/> |
+|设置地理位置的存储配额  <br/> |GeoQuotaAllocated<br/> |SharePoint 或全局管理员为多地理位置环境中的地理位置配置了存储配额。<br/> |
+|从中心网站中脱离网站<br/>|HubSiteUnjoined<br/>|网站所有者将其网站与中心网站解除相关。<br/>|
+|未注册的中心网站<br/>|HubSiteUnregistered<br/>|SharePoint 或全局管理员将网站注销为中心网站。 当取消注册中心网站时, 它将不再作为中心网站工作。 <br/>|
 ||||
   
 ### <a name="exchange-mailbox-activities"></a>Exchange 邮箱活动
@@ -455,7 +511,7 @@ ms.locfileid: "34490488"
 |将邮件分类为记录  <br/> |ApplyRecordLabel<br/> |邮件被分类为记录。 当手动或自动应用将内容分类为记录时, 将发生这种情况。<br/> |
 |将邮件复制到另一个文件夹  <br/> |Copy  <br/> |已将某个邮件复制到另一个文件夹。  <br/> |
 |创建的邮箱项目  <br/> |Create  <br/> |在邮箱的日历、联系人、备注或任务文件夹中创建项目；例如，创建新的会议请求。 请注意, 不会审核创建、发送或接收邮件。 此外, 还不会审核创建邮箱文件夹的情况。  <br/> |
-|在 Outlook web app 中创建了新的收件箱规则  <br/> |NewInboxRule<br/> |<br/> |
+|在 Outlook web app 中创建了新的收件箱规则  <br/> |NewInboxRule<br/> |用户在 Outlook web app (OWA) 中创建了新的收件箱规则。<br/> |
 |从 "已删除邮件" 文件夹中删除邮件  <br/> |SoftDelete  <br/> |邮件已从 "已删除邮件" 文件夹中永久删除或删除。 这些项目将移动到 "可恢复的项目" 文件夹中。 当用户选择邮件并按**Shift + Delete**时, 邮件也会移动到 "可恢复的项目" 文件夹中。  <br/> |
 |将邮件移动到另一个文件夹  <br/> |Move  <br/> |已将某个邮件移至另一个文件夹。  <br/> |
 |将邮件移动到 "已删除邮件" 文件夹  <br/> |MoveToDeletedItems  <br/> |邮件已被删除并移动到 "已删除邮件" 文件夹。  <br/> |
@@ -587,6 +643,37 @@ ms.locfileid: "34490488"
 > [!NOTE]
 > 在搜索结果中显示的 "**活动**" 下拉列表中的 "**电子数据展示活动**" 下列出的活动最长需要30分钟的时间。 相反, 电子数据展示 cmdlet 活动中的相应事件需要长达24小时才会显示在搜索结果中。 
   
+### <a name="advanced-ediscovery-activities"></a>高级电子数据展示活动
+
+下表列出了 IT 和法律专业人员在 Microsoft 365 中的高级电子数据展示中执行任务所产生的活动。 有关详细信息, 请参阅[Microsoft 365 中的高级电子数据展示解决方案概述](compliance20/overview-ediscovery-20.md)。
+
+|**易记名称**|**操作**|**说明**|
+|:-----|:-----|:-----|
+| 向另一个评审集添加了数据<br/>         | AddWorkingSetQueryToWorkingSet<br/>  |  用户将文档从一个审阅集添加到不同的审阅集。<br/>|
+| 向评审集添加了数据 <br/>                | AddQueryToWorkingSet<br/>            |  用户将搜索结果从与高级电子数据展示事例关联的内容搜索添加到评审集。<br/>|
+| 将非 Office 365 数据添加到评审集<br/>  | AddNonOffice365DataToWorkingSet<br/> |  用户将非 Office 365 数据添加到评审集。<br/>|
+| 向评审集添加了已修正的文档<br/> | AddRemediatedData<br/>               |  用户上载的文档包含已修复到审阅集的索引错误。<br/>|
+| 评审集合中的已分析数据 <br/>             | RunAlgo<br/>                         |  用户对审阅集中的文档运行分析。 <br/>|
+| 评审设置中的批注文档 <br/>        | AnnotateDocument<br/>                |  用户在审阅集中批注了文档。 批注在文档中包含 redacting 内容。 <br/>|
+| 比较的加载集 <br/>                      | LoadComparisonJob<br/>               |用户比较评审集中的两个不同的加载集。 加载集是指将与事例关联的内容搜索中的数据添加到审阅集。  <br/>|
+| 将编辑文档转换为 PDF<br/>      | BurnJob<br/>                         |用户将审阅集中的所有编辑文档都转换为 PDF 文件。<br/>|
+| 创建的审阅集<br/>                       | CreateWorkingSet<br/>                |用户创建了一个审阅集。<br/>|
+| 创建的审阅集搜索<br/>                | CreateWorkingSetSearch<br/>          |用户创建了搜索查询, 该查询在审阅集中搜索文档。 <br/>|
+| 创建的标记<br/>                              | CreateTag<br/>                       |用户在审阅集中创建了一个标记组。 一个标记组可以包含一个或多个子标记。 然后, 这些标记用于在审阅集中标记文档。<br/>|
+| 已删除的审阅集搜索 <br/>               | DeleteWorkingSetSearch<br/>          |用户在审阅集中删除了搜索查询。<br/>|
+| 删除的标记<br/>                              | DeleteTag<br/>                       |用户在审阅集中删除了标记或标记组。<br/>|
+| 下载的文档<br/>                      | DownloadDocument<br/>                |用户从审阅集下载了文档。<br/>|
+| 编辑过的标记 <br/>                              | DownloadDocument<br/>                |用户更改了审阅集中的标记。<br/>|
+| 从审阅集导出的文档 <br/>      | ExportJob<br/>                       |用户从审阅集中导出文档。<br/>|
+| 修改的大小写设置 <br/>                   | UpdateCaseSettings<br/>              | 用户修改了案例的设置。 事例设置包括用于控制搜索和分析行为的大小写信息、访问权限和设置。<br/>|
+| 修改的审阅集搜索<br/>               | UpdateWorkingSetSearch<br/>          |  用户在审阅集中编辑了搜索查询。<br/>|
+| 预览审阅集搜索 <br/>             | PreviewWorkingSetSearch<br/>         |  用户在审阅集中预览搜索查询的结果。<br/>|
+| 修正的错误文档 <br/>              | ErrorRemediationJob<br/>             |  用户修复了包含索引错误的文件。 <br/>|
+| 加标签的文档<br/>                          | TagFiles<br/>                        |  用户在审阅集中标记文档。<br/>|
+| 查询的标记结果<br/>                | TagJob<br/>                          |  用户标记与审阅集中的搜索查询条件匹配的所有文档。<br/>|
+| 查看评审设置中的文档<br/>            | ViewDocument<br/>                    |  用户在审阅集中查看文档。<br/>|
+|||
+
 ### <a name="power-bi-activities"></a>Power BI 活动
   
 可以在审核日志中搜索 Power BI 中的活动。 有关 Power BI 活动的信息, 请参阅在[组织中使用审核](https://docs.microsoft.com/power-bi/service-admin-auditing#activities-audited-by-power-bi)中的 "POWER power BI 审核的活动" 部分。
