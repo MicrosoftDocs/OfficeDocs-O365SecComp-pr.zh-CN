@@ -15,12 +15,12 @@ ms.assetid: b10023f6-f30f-45d3-b3ad-b71aa4aa0d58
 ms.collection:
 - M365-security-compliance
 description: 现在, 请使用本文作为指南来配置您的威胁防护功能。
-ms.openlocfilehash: a9a2baccb4709b3e8d77f620281458d51ed0583a
-ms.sourcegitcommit: 2b46fba650df8d252b1dd2b3c3f080a383183a06
+ms.openlocfilehash: 6700e2714ea607f675b487204404d53c1d51db93
+ms.sourcegitcommit: 424a614141c1f19a1c84a67ec2d71dd3d7ef6694
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "34408387"
+ms.lasthandoff: 05/30/2019
+ms.locfileid: "34590575"
 ---
 # <a name="protect-against-threats-in-office-365"></a>防御 Office 365 中的威胁
 
@@ -42,7 +42,7 @@ Office 365 包括各种威胁防护功能。 以下是可用作检查表的快�
 |防钓鱼保护    | [EOP](https://docs.microsoft.com/office365/servicedescriptions/exchange-online-protection-service-description)      |
 |高级反网络钓鱼防护    | [Office 365 ATP](https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description)   |
 |反垃圾邮件保护     | [EOP](https://docs.microsoft.com/office365/servicedescriptions/exchange-online-protection-service-description)       |
-|零小时自动清除 (电子邮件)    | [EOP](https://docs.microsoft.com/office365/servicedescriptions/exchange-online-protection-service-description)EOP        |
+|零小时自动清除 (电子邮件)    | [EOP](https://docs.microsoft.com/office365/servicedescriptions/exchange-online-protection-service-description)        |
 |审核日志记录 (用于报告目的)    | [Exchange Online](https://docs.microsoft.com/office365/servicedescriptions/exchange-online-service-description)        |
 
 ### <a name="roles-and-permissions"></a>角色和权限
