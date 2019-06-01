@@ -11,12 +11,12 @@ ms.collection:
 - M365-security-compliance
 localization_priority: Normal
 description: 为全新的 Microsoft 365 安全中心和合规性中心做好准备
-ms.openlocfilehash: 9af224f72fc55e6981cf75c6c5596bde6645f75a
-ms.sourcegitcommit: 6eb51931242d07abde2e37f1bd57d13bc724f0de
+ms.openlocfilehash: 0bb30ef3cd6f7d35e0f5a86842a8638e87e89773
+ms.sourcegitcommit: 4fedeb06a6e7796096fc6279cfb091c7b89d484d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "34547897"
+ms.lasthandoff: 05/31/2019
+ms.locfileid: "34652485"
 ---
 # <a name="the-new-microsoft-365-security-center-and-microsoft-365-compliance-center-are-now-generally-available"></a>现已推出全新的 Microsoft 365 安全中心和 Microsoft 365 合规性中心
 
@@ -56,28 +56,28 @@ ms.locfileid: "34547897"
 
 Microsoft 365 客户现已推出新的 Microsoft 365 安全中心和新的 Microsoft 365 合规性中心, 在三月份2019年年底。 
 
-如果你有其他订阅 (如包含 Office 365 Security & 合规中心的独立计划), 你将很快能够访问新的 Microsoft 365 安全中心和 Microsoft 365 合规中心。 若要了解详细信息, 请参阅[Microsoft 365 路线图](https://www.microsoft.com/microsoft-365/roadmap)。
+如果你有其他订阅 (如包含 Office 365 安全 & 合规性中心的独立计划), 你将很快能够访问新的 Microsoft 365 安全中心和 Microsoft 365 合规中心。 若要了解详细信息, 请参阅[Microsoft 365 路线图](https://www.microsoft.com/microsoft-365/roadmap)。
 
 ### <a name="easy-access"></a>轻松访问!
 
-通过改进的导航、集成的解决方案和简化的体验, 你将能够查看和访问你最感兴趣的信息, 并利用 Microsoft 365 中功能强大的安全和合规性解决方案。 而在接下来的几个月中添加更多的功能和解决方案, 则仍可使用 Office 365[https://protection.microsoft.com](https://protection.microsoft.com)安全 _AMP_ 合规中心 ()。
+通过改进的导航、集成的解决方案和简化的体验, 你将能够查看和访问你最感兴趣的信息, 并利用 Microsoft 365 中功能强大的安全和合规性解决方案。 而在接下来的几个月中添加更多的功能和解决方案, 则 Office 365 安全 & 合规[https://protection.microsoft.com](https://protection.microsoft.com)中心 () 仍然可用。
 
-若要访问 Office 365 Security & 合规中心, 请在屏幕左侧的导航窗格中, 选择 "**更多资源**"。 然后, 在 " **Office 365 Security & 合规中心**" 下, 选择 "**打开**"。
+若要访问 Office 365 安全 & 合规性中心, 请在屏幕左侧的导航窗格中, 选择 "**更多资源**"。 然后, 在 " **Office 365 安全 & 合规中心**" 下, 选择 "**打开**"。
 
 ### <a name="smooth-transition"></a>平滑转换!
 
-您可以预见到新中心的平滑过渡。 最终, 以前的 Microsoft 365 Security & 合规中心 ([https://protection.microsoft.com](https://protection.microsoft.com)) 将停用。 尽管管理员体验会发生更改, 但这不会影响当前的安全和合规性配置。 如果您的组织拥有 Microsoft 365 企业版 E3 或 E5, 则您的安全和合规性管理员可以:
+您可以预见到新中心的平滑过渡。 最终, 以前的 Microsoft 365 安全 & 合规性中心[https://protection.microsoft.com](https://protection.microsoft.com)() 将被停用。 尽管管理员体验会发生更改, 但这不会影响当前的安全和合规性配置。 如果您的组织拥有 Microsoft 365 企业版 E3 或 E5, 则您的安全和合规性管理员可以:
 
 - 直接导航到[https://security.microsoft.com](https://security.microsoft.com)和[https://compliance.microsoft.com](https://compliance.microsoft.com); <br>或  
 - 转到 Microsoft 365[https://admin.microsoft.com](https://admin.microsoft.com)管理中心 (), 并在导航窗格中进行导航, 单击 "**全部显示**", 然后选择 "**安全性**" 或 "**合规性**"。
 
-此外, 您仍可以在现有的 Office 365 Security & 合规中心 ([https://protection.office.com](http://protection.office.com)) 中配置和管理设置。 您的配置将保留在现有的 Office 365 安全 & 合规中心和新的 Microsoft 365 安全中心和 Microsoft 365 合规性中心中。  
+此外, 您仍可以配置和管理现有 Office 365 安全 & 合规性中心 ([https://protection.office.com](http://protection.office.com)) 中的设置。 您的配置将在现有的 Office 365 安全 & 合规性中心和新的 Microsoft 365 安全中心和 Microsoft 365 合规性中心中进行维护。  
 
 ## <a name="required-licenses-and-permissions"></a>必需的许可证和权限
 
 ### <a name="licenses"></a>许可证
 
-若要获取新的 Microsoft 365 安全中心和 Microsoft 365 合规性中心, 您的组织必须订阅 Microsoft 365 E3 或 E5 或批量许可等效项 (由 Office 365 企业版 E3 或 E5 组成, 企业移动性 + 安全性)E3 或 E5 以及 Windows 10 企业版 E3/E5)。 若要了解有关这些计划的详细信息, 请参阅[发现适合你的 Microsoft 365 企业解决方案](https://www.microsoft.com/microsoft-365/compare-all-microsoft-365-plans)。
+若要获取新的 Microsoft 365 安全中心和 Microsoft 365 合规性中心, 您的组织必须订阅 Microsoft 365 E3 或 E5 或批量许可等效项 (由 Office 365 E3 或 E5、企业移动性 + 安全 E3 或 E5 组成)。Windows 10 企业版 E3/E5)。 若要了解有关这些计划的详细信息, 请参阅[发现适合你的 Microsoft 365 解决方案](https://www.microsoft.com/microsoft-365/compare-all-microsoft-365-plans)。
 
 ### <a name="roles-and-permissions"></a>角色和权限
 
@@ -89,13 +89,13 @@ Microsoft 365 客户现已推出新的 Microsoft 365 安全中心和新的 Micro
 
 - 安全管理员、安全操作员和安全读者可以访问安全中心
 
- 若要了解有关这些角色的详细信息, 请参阅[Office 365 Security _AMP_ 合规中心中的权限](permissions-in-the-security-and-compliance-center.md)。
+ 若要了解有关这些角色的详细信息, 请参阅[Office 365 Security & 合规中心中的权限](permissions-in-the-security-and-compliance-center.md)。
  
 下表汇总了可以跨 Azure、Office 365 和 Windows 访问各个门户的成员:
 
 |门户 |全局管理员 |安全管理员、安全操作员或安全读者|合规性管理员或合规性数据管理员 |
 |---------|---------|---------|---------|
-|[Security & 合规性中心](https://protection.office.com) |是 |是  |是 |
+|[安全性 & 合规性中心](https://protection.office.com) |是 |是  |是 |
 |[Microsoft 365 安全中心](https://security.microsoft.com) |是  | 是  | 否        |
 |[Microsoft 365 合规中心](https://compliance.microsoft.com) | 是 | 否 | 可访问 |
 |[合规性管理器](https://aka.ms/compliancemanager) |是 | 是 |是  |
@@ -118,6 +118,6 @@ Microsoft 365 客户现已推出新的 Microsoft 365 安全中心和新的 Micro
 
 [Microsoft 365 路线图](https://www.microsoft.com/microsoft-365/roadmap)
 
-[Office 365 Security & 合规中心服务说明](https://docs.microsoft.com/office365/servicedescriptions/office-365-platform-service-description/office-365-securitycompliance-center)
+[Office 365 安全 & 合规性中心服务说明](https://docs.microsoft.com/office365/servicedescriptions/office-365-platform-service-description/office-365-securitycompliance-center)
 
 若要提供有关 Microsoft 365 安全中心和 Microsoft 365 合规性中心的反馈 (如有关新功能的建议), 请访问[Microsoft Office 365 的客户反馈](https://office365.uservoice.com)
