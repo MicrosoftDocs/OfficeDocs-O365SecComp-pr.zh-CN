@@ -13,17 +13,17 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: af398293-c69d-465e-a249-d74561552d30
-description: 文件计划管理器提供了对保留标签和保留策略的高级管理功能，并提供了便于遍历整个内容生存期（从创建、协作、记录声明、保留到最终处置）中的标签活动和标签到内容活动的集成方式。
-ms.openlocfilehash: 377589ab0a8fd2f4c5e73a21eac3988091fa3ed3
-ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
+description: 文件计划管理器提供了对保留标签和保留标签策略的高级管理功能，并提供了便于遍历整个内容生存期（从创建、协作、记录声明、保留到最终处置）中的标签活动和标签到内容活动的集成方式。
+ms.openlocfilehash: b7d80ff6a7f78e592462fe2723a87383e046015f
+ms.sourcegitcommit: 6eb51931242d07abde2e37f1bd57d13bc724f0de
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "34152894"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "34547967"
 ---
 # <a name="overview-of-file-plan-manager"></a>文件计划管理器概述
 
-文件计划管理器提供了对保留标签和保留策略的高级管理功能，并提供了便于遍历整个内容生存期（从创建、协作、记录声明、保留到最终处置）中的标签活动和标签到内容活动的集成方式。
+文件计划管理器提供了对保留标签和保留标签策略的高级管理功能，并提供了便于遍历整个内容生存期（从创建、协作、记录声明、保留到最终处置）中的标签活动和标签到内容活动的集成方式。
 
 ![文件计划页面](media/file-plan-page.png)
 
@@ -50,7 +50,7 @@ ms.locfileid: "34152894"
 可以通过查看保留策略的**创建的保留策略**和**创建的保留配置**活动的审核日志来判断谁打开了文件计划管理器并启动了首次运行体验。
 
 > [!NOTE]
-> 因客户反馈，我们已删除创建上述默认保留标签和标签政策的功能。 如果在 2019 年 4 月 11 日之前使用文件计划管理，则只会看到此政策和标签。
+> 因客户反馈，我们已删除创建上述默认保留标签和保留标签策略的功能。 如果你在 2019 年 4 月 11 日之前打开文件计划管理器，则将只能看到这些保留标签和保留标签策略。
 
 ## <a name="navigating-your-file-plan"></a>浏览文件计划
 
@@ -83,9 +83,9 @@ ms.locfileid: "34152894"
 
 ![文件计划中的“标签设置”](media/file-plan-label-columns.png)
 
-### <a name="label-file-plan-descriptors-columns"></a>标签文件计划描述符列
+### <a name="retention-label-file-plan-descriptors-columns"></a>保留标签文件计划描述符列
 
-现在可以在保留标签的配置中添加更多信息。将文件计划描述符插入标签，可提升文件计划的可管理性和条理性。
+现在可以在保留标签的配置中添加更多信息。将文件计划描述符插入保留标签，可提升文件计划的可管理性和条理性。
 
 为了便于用户上手，文件计划管理器提供了一些现成值：“功能/部门”、“类别”、“权限类型”和“预配/引文”。可以在创建或编辑保留标签时，添加新的文件计划描述符值。
 
@@ -97,7 +97,7 @@ ms.locfileid: "34152894"
 
 ![file-plan-descriptors-on-labels-tab.png](media/file-plan-descriptors-on-labels-tab.png)
 
-## <a name="export-labels-out-of-your-file-plan"></a>导出文件计划的标签
+## <a name="export-all-existing-retention-labels-to-analyze-andor-perform-offline-reviews"></a>导出所有现有保留标签以分析和/或执行离线评审
 
 在文件计划管理器中，可以将所有保留标签的详细信息都导出到 .csv 文件中，这样做有助于推动定期与组织中数据管理利益干系人一起执行合规性评审。
 
@@ -109,11 +109,11 @@ ms.locfileid: "34152894"
 
 ![包含所有保留标签的 CSV 文件](media/file-plan-csv-file.png)
 
-## <a name="import-labels-into-your-file-plan"></a>向文件计划导入标签
+## <a name="import-retention-labels-into-your-file-plan"></a>向文件计划导入保留标签
 
-在文件计划管理器中，可以批量导入新标签，并能修改现有保留标签。
+在文件计划管理器中，可以批量导入新保留标签，并能修改现有保留标签。
 
-若要导入新保留标签，并更新现有保留标签，请依次转到“文件计划管理器”****\>“文件计划操作”****\>“导入标签”****。
+若要导入新保留标签，并更新现有保留标签，请依次转到“**文件计划管理器**”\>“**文件计划操作**”\>“**导入标签**”。
 
 ![文件计划导入选项](media/file-plan-import-labels-option.png)
 
@@ -123,7 +123,7 @@ ms.locfileid: "34152894"
 
 ![在 Excel 中打开的空白文件计划模板](media/file-plan-blank-template.png)
 
-填写模板（即将发布有关条目有效值的参考信息）。
+填写模板（即将推出：有关单个保留标签的有效值组合的参考信息）。
 
 ![填写了信息的文件计划模板](media/file-plan-filled-out-template.png)
 
@@ -131,7 +131,9 @@ ms.locfileid: "34152894"
 
 ![文件计划导入统计信息](media/file-plan-import-statistics.png)
 
-导入完成后，返回到文件计划管理器，将新标签分配到新策略或现有策略。
+如果出现验证错误，文件计划导入将继续验证导入文件中的每个条目，并显示导入文件中引用行/行编号的所有错误，复制显示的错误结果，以便能够轻松返回导入文件并更正错误。 
+
+导入完成后，返回到文件计划管理器，以将新保留标签与新的或现有的保留标签策略相关联。
 
 ![“发布标签”选项](media/file-plan-publish-labels-option.png)
 

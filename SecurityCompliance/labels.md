@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Office 365 中的保留标签可有助于对正确的内容执行适当的操作。借助保留标签，可对整个组织中的数据进行分类来管理数据，并根据此分类强制执行保留规则。另外，保留标签还可用于在 Office 365 中实现记录管理。
-ms.openlocfilehash: b6e0263b02c6395d7f8d9ccb68d04b82aa84fe29
-ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
+ms.openlocfilehash: 9f9f1ead57d7082e227e229f2204e5af627a7b9c
+ms.sourcegitcommit: 6eb51931242d07abde2e37f1bd57d13bc724f0de
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "34154344"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "34547977"
 ---
 # <a name="overview-of-retention-labels"></a>保留标签概述
 
@@ -45,43 +45,46 @@ ms.locfileid: "34154344"
     
   - 与所创建的查询匹配的特定关键字。
     
-    能否将保留标签自动应用于内容非常重要，这是因为：
+  能否将保留标签自动应用于内容非常重要，这是因为：
     
-  - 无需为用户提供有关所有分类的培训。
+     - 无需为用户提供有关所有分类的培训。
     
-  - 无需依赖用户，即可对全部内容进行正确分类。
+     - 无需依赖用户，即可对全部内容进行正确分类。
     
-  - 用户不再需要了解数据管理策略，反而可以专注于自己的工作。
+   - 用户不再需要了解数据管理策略，反而可以专注于自己的工作。
 
   > [!NOTE]
   > 自动应用标签的功能需要为有权在网站或邮箱中编辑已自动标记的内容的每个用户提供一个 Office 365 企业版 E5 许可证。只有只读访问权限的用户不需要许可证。
       
-- **将默认保留标签应用于 SharePoint 和 Office 365 组网站中的文档库**，让库中的所有文档都有默认保留标签。 
-    
 - **在 Office 365 中实现记录管理**，包括电子邮件和文档。可使用保留标签将内容分类为记录。如果这样做，既无法更改或删除保留标签，也无法编辑或删除内容。 
+
+- **将默认保留标签应用于 SharePoint 中的文档库、文件夹或文档集**，以让到达该位置的所有文档都继承默认保留标签。  
     
-在 Microsoft 365 合规中心、Microsoft 365 安全中心或 Office 365 安全与合规中心，依次单击“**标签**”页面和“**保留**”选项卡来创建和管理保留标签。 
-  
+在 Microsoft 365 合规中心、Microsoft 365 安全中心或 Office 365 安全与合规中心，依次单击“**标签**”页面和“**保留**”选项卡来创建和管理保留标签。  
 
-## <a name="how-retention-labels-work-with-label-policies"></a>如何结合使用保留标签和标签策略
+## <a name="how-retention-labels-work-with-retention-label-policies"></a>如何结合使用保留标签和保留标签策略
 
-为组织内人员提供可用于对内容进行分类的保留标签分为两步：第一步是创建标签，第二步是将标签发布到选定位置。当保留标签发布后，标签策略也会随之创建。
+为组织内人员提供可用于对内容进行分类的保留标签分为两步：第一步是创建保留标签，第二步是将保留标签发布到选定位置。当保留标签发布后，保留标签策略也会随之创建。
   
 ![标签角色和任务的关系图](media/4082bc7d-c04c-4b9a-8a26-7f12565d3311.png)
   
-保留标签是标签策略中的可重用独立构建基块，发布到不同位置。可跨多个策略重用保留标签。标签策略的主要用途是对一系列保留标签进行分组，并指定所需的标签显示位置。
+保留标签是包含在一个或多个保留标签策略中的可重用独立构建基块。标签策略的主要用途是对一系列保留标签进行分组，并指定所需的标签显示位置。
   
 ![标签、标签策略和位置的关系图](media/eee42516-adf0-4664-b5ab-76727a9a3511.png)
   
-1. 发布的保留标签被纳入标签策略中。一个保留标签可被纳入多个策略中。
+1. 发布保留标签时，它们将包含在保留标签策略中。 
+
+2. 一个保留标签可以包含在多个保留标签策略中。
+
+3. 一个位置也可以包括在许多保留标签策略中。    
     
-2. 标签策略指定保留标签发布位置。
+3. 保留标签策略指定保留标签发布位置。
     
 ## <a name="only-one-retention-label-at-a-time"></a>一次只能分配一个保留标签
 
 请务必了解，电子邮件或文档等内容一次只能分配有一个保留标签：
   
-- 对于最终用户手动分配的标签，人员可删除或更改已分配的标签。
+- 对于最终用户手动分配的保留标签，用户可删除或更改所分配的保留标签。
     
 - 可将内容分配有的自动应用标签替换为，最终用户手动分配的保留标签。
     
@@ -99,9 +102,9 @@ ms.locfileid: "34154344"
   
 1. 首先，需要将标签策略从管理中心同步到策略中的位置。
     
-2. 然后，可能需要等待一段时间，相应位置才支持最终用户分配手动标签，或将标签自动应用于内容。此过程所需的具体时间视标签的位置和类型而定。
+2. 然后，该位置可能需要一段时间才能使已发布的保留标签对最终用户可用，或需要一段时间将标签自动应用到内容。 所需时间长短取决于保留标签的位置和类型。
     
-### <a name="manual-retention-labels"></a>手动保留标签
+### <a name="published-retention-labels"></a>已发布的保留标签
 
 如果将保留标签发布到 SharePoint 或 OneDrive，可能需要等待 1 天时间，这些保留标签才会向最终用户显示。此外，如果向 Exchange 发布保留标签，可能需要等待 7 天，这些保留标签才会向最终用户显示，并且邮箱至少必须包含 10MB 数据。
   
@@ -113,7 +116,7 @@ ms.locfileid: "34154344"
   
 ![自动应用标签生效时间关系图](media/b8c00657-477a-4ade-b914-e643ef97a10d.png)
   
-### <a name="how-to-check-on-the-status-of-exchange-labels"></a>如何检查 Exchange 标签的状态
+### <a name="how-to-check-on-the-status-of-retention-labels-published-to-exchange"></a>如何检查发布到 Exchange 的保留标签的状态
 
 在 Exchange Online 中，有一个流程每 7 天运行一次，用于向最终用户提供保留标签。使用 PowerShell，可查看此流程的上次运行时间，从而确定它何时再次运行。
   
@@ -133,11 +136,11 @@ ms.locfileid: "34154344"
   $xmlprops.Properties.MailboxTable.Property | ? {$_.Name -like "ELC*"}
   ```
 
-在结果中，`ELCLastSuccessTimeStamp` (UTC) 属性显示了系统上次处理邮箱的时间。如果自策略创建起邮箱一直未经处理，标签就不会显示。若要强制处理邮箱，请运行 `Start-ManagedFolderAssistant -Identity <user>`。
+在结果中，`ELCLastSuccessTimeStamp` (UTC) 属性显示系统上次处理你邮箱的时间。 如果自创建策略起未处理，则不会显示标签。 若要强制处理，请运行 `Start-ManagedFolderAssistant -Identity <user>`。
     
 如果标签没有显示在 Outlook 网页版中，但你认为标签应显示，请务必清除浏览器中的缓存 (Ctrl+F5)。
     
-## <a name="label-policies-and-locations"></a>标签策略和位置
+## <a name="retention-label-policies-and-locations"></a>保留标签策略和位置
 
 不同类型的保留标签可发布到不同位置，具体视保留标签用途而定。
   
@@ -205,13 +208,13 @@ ms.locfileid: "34154344"
   
 ![“分配策略”按钮](media/30684dea-dd73-4e4a-9185-8e29f403b6ca.png)
   
-在保留标签应用后，可在项顶部查看此保留标签及其执行的操作。如果电子邮件已分类且有关联的保留期，电子邮件的到期时间便一目了然。
+应用保留标签后，可查看此保留标签以及基于此项目执行的操作。 如果某电子邮件应用了具有相关保留期的保留标签，则可以一目了然地查看该电子邮件的过期时间。
   
 还可将保留标签应用于文件夹。这在 Outlook​​ 2010 及更高版本和 Outlook 网页版中的情况都一样。请参阅上一部分，了解详细信息。
   
 ### <a name="onedrive-and-sharepoint"></a>OneDrive 和 SharePoint
 
-若要在 OneDrive 或 SharePoint 中标记文档（包括 OneNote 文件），请依次选择项、右上角的“打开细节窗格”****、![“信息”窗格图标](media/50b6d51b-92b4-4c5f-bb4b-4ca2d4aa3d04.png)、“应用标签”**** 和保留标签。 
+若要在 OneDrive 或 SharePoint 中标记文档（包括 OneNote 文件），请选择项 \> 在右上角选择“**打开细节窗格**”![信息窗格图标](media/50b6d51b-92b4-4c5f-bb4b-4ca2d4aa3d04.png) \>“**应用保留标签**”\> 选择保留标签。 
   
 请注意，还可将保留标签应用于文件夹或文档集，并能为文档库设置默认保留标签。有关详细信息，请参阅下面的部分。
   
@@ -453,8 +456,7 @@ ms.locfileid: "34154344"
   
 有关详细信息，请参阅[向用户授予对 Office 365 安全与合规中心的访问权限](grant-access-to-the-security-and-compliance-center.md)。
   
-只有在创建和应用保留标签和标签策略时，才必须拥有这些权限。强制执行策略并不需要访问内容。
-  
+只有在创建和应用保留标签和标签策略时，才必须拥有这些权限。强制执行策略并不需要访问内容。  
 ## <a name="find-the-powershell-cmdlets-for-labels"></a>查找标签适用的 PowerShell cmdlet
 
 若要使用标签 cmdlet，你需要：
@@ -490,7 +492,3 @@ ms.locfileid: "34154344"
   - [Remove-RetentionComplianceRule](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-retention/remove-retentioncompliancerule)
 
   - [Set-RetentionComplianceRule](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-retention/set-retentioncompliancerule)
-
-## <a name="more-information"></a>更多信息
-
-[保留策略概述](retention-policies.md)
