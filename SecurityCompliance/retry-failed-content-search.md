@@ -13,12 +13,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: 使用 "重试" 按钮解决包含内容位置错误的内容搜索。
-ms.openlocfilehash: ab6f33e00a057ccd9ee7b80e0499b2838855ac83
-ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
+ms.openlocfilehash: 91c656a05111391ad93e03946cf367133f2c25a2
+ms.sourcegitcommit: ff1d18aaddde2048f1cf88338c916295cf8c354e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "34157064"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "34748565"
 ---
 # <a name="retry-a-content-search-to-resolve-a-content-location-error"></a>重试内容搜索以解决内容位置错误
 
@@ -34,7 +34,7 @@ User1@contoso.com: Problem in processing the request. Please try again later. If
 User2@contoso.com: Application error occurred. Please try again later. (CS012-002)
 ```
 
-这些错误 (包含 CS008-009 和 CS012-002 的错误代码) 表示内容搜索无法搜索特定的内容位置;在此示例中, 未搜索两个邮箱。 这些错误显示在内容搜索的 "状态详细信息" 飞出页面上。
+这些错误 (错误代码为 CS001-002、CS003-002、CS008-009、CS012-002 以及窗体 CS0XX-0XX) 的其他错误指示内容搜索无法搜索特定的内容位置;在此示例中, 未搜索两个邮箱。 这些错误显示在内容搜索的 "状态详细信息" 飞出页面上。
 
 ## <a name="cause-of-content-location-errors"></a>内容位置错误的原因
 
