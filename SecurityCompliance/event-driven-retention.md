@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 使用 Office 365 中的保留标签，能让保留期以特定类型事件何时发生为依据。也就是说，事件触发开始计算保留期，并对包含与相应事件类型关联的保留标签的所有内容强制执行标签的保留操作。事件驱动保留通常用于记录管理流程。
-ms.openlocfilehash: 6d4d9a1af20e16453343dd2b68b87b033c46e324
-ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
+ms.openlocfilehash: 0b8b82038ef00e135b759b4b818a1bb4bd559cf7
+ms.sourcegitcommit: 34b37d83944dce0a05aa1aacc0d4f7bec55e959f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "34154624"
+ms.lasthandoff: 06/05/2019
+ms.locfileid: "34728619"
 ---
 # <a name="overview-of-event-driven-retention"></a>事件驱动保留概述
 
@@ -103,7 +103,7 @@ ms.locfileid: "34154624"
   
 ### <a name="step-3-publish-or-auto-apply-the-label"></a>第 3 步：发布或自动应用标签
 
-就像任何标签一样，必须发布或自动应用基于事件的标签，才能将标签手动或自动应用于内容。可在“**标签**”或“**标签策略**”页面上执行此操作。请注意，将内容分类为记录的标签只能在发布后手动应用于内容。 
+与任何标签类似，需要发布或自动应用基于事件的标签，以便将其手动或自动应用到内容。可以在“**标签**”或“**标签策略**”页上完成此操作。 
   
 ![用于发布或自动应用标签的选项](media/c9232c54-bbc0-40d2-abc2-122d5d1e70af.png)
   

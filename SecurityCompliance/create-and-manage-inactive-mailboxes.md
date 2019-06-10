@@ -3,7 +3,7 @@ title: 在 Office 365 中创建和管理非活动邮箱
 ms.author: markjjo
 author: markjjo
 manager: laurawi
-ms.date: 6/29/2018
+ms.date: ''
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: 296a02bd-ebde-4022-900e-547acf38ddd7
 description: 通过对邮箱应用保留或 Office 365 保留策略, 然后删除相应的 Office 365 用户帐户, 可以在 Office 365 中创建非活动邮箱。 非活动邮箱中的项目会在保留或应用到其非活动状态的保留策略的持续时间内保留。 若要永久删除非活动邮箱, 只需删除保留策略或保留策略即可。
-ms.openlocfilehash: 1a2eb5a998de7f31bcf531aacf22dca51c71acb8
-ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
+ms.openlocfilehash: e07b062f6b77f18589334b141e38edddc5ea18c5
+ms.sourcegitcommit: f88f14999aeb70ecf265cd98eb09a3304b150be8
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "34151224"
+ms.lasthandoff: 06/07/2019
+ms.locfileid: "34768947"
 ---
 # <a name="create-and-manage-inactive-mailboxes-in-office-365"></a>在 Office 365 中创建和管理非活动邮箱
 
@@ -36,7 +36,7 @@ Office 365 使您可以保留已删除邮箱的内容。 此功能称为“非�
     
 - 删除相应的 Office 365 用户帐户后, 与已删除的 Exchange Online 邮箱相关联的许可证将可用。 然后, 您可以向其他用户[分配 Office 365 for business 中的用户许可证](https://support.office.com/article/997596b5-4173-4627-b915-36abac6786dc)。 
     
-- 如果在删除之前未对邮箱应用诉讼保留策略或 Office 365 保留策略, 则不会保留或发现邮箱的内容。 但是, 删除的邮箱可以在删除后的30天内恢复, 但是如果未恢复, 则30天后将永久删除该邮箱及其内容。
+- 如果诉讼保留或 Office 365 保留策略 (配置为保留或保留, 然后删除内容) 未在删除邮箱之前应用于该邮箱, 则不会保留或发现邮箱的内容。 但是, 删除的邮箱可以在删除后的30天内恢复, 但是如果未恢复, 则30天后将永久删除该邮箱及其内容。
     
 - 有关诉讼保留的详细信息, 请参阅[就地保留和诉讼保留](https://go.microsoft.com/fwlink/p/?LinkId=846124)。 有关 Office 365 保留策略的详细信息, 请参阅[office 365 中的保留策略概述](retention-policies.md)。
   
@@ -46,7 +46,7 @@ Office 365 使您可以保留已删除邮箱的内容。 此功能称为“非�
   
 ### <a name="step-1-place-a-mailbox-on-litigation-hold-or-apply-an-office-365-retention-policy"></a>步骤 1: 将邮箱置于诉讼保留状态或应用 Office 365 保留策略
 
-将邮箱置于诉讼保留状态或应用 Office 365 保留策略会在邮箱中删除之前保留邮箱中的内容。 这两种类型的保留都将保留所有邮箱内容, 包括已删除项目和已修改项目的原始版本。 已删除和修改的项目在指定时间段内保留在非活动邮箱中, 或者直到您通过删除应用于非活动邮箱的保留策略或保留策略永久删除非活动邮箱。
+将邮箱置于诉讼保留状态或应用 Office 365 保留策略 (配置为保留或保留并删除内容) 时, 将保留邮箱中的内容, 然后再将其删除。 这两种类型的保留都将保留所有邮箱内容, 包括已删除项目和已修改项目的原始版本。 已删除和修改的项目在指定时间段内保留在非活动邮箱中, 或者直到您通过删除应用于非活动邮箱的保留策略或保留策略永久删除非活动邮箱。
   
 如果已在邮箱中放置了保留, 或者已将 Office 365 保留策略应用于邮箱, 则您只需删除步骤2中所述的相应 Office 365 用户帐户。
   
@@ -102,7 +102,7 @@ Get-Mailbox -InactiveMailboxOnly | Select Displayname,PrimarySMTPAddress,Disting
   
 ## <a name="search-and-export-the-contents-of-an-inactive-mailbox"></a>搜索并导出非活动邮箱的内容
 
-您可以使用 Security & 合规性中心中的内容搜索工具访问非活动邮箱的内容。 搜索非活动邮箱时，可以创建关键字搜索查询搜索特定的项目或者返回整个非活动邮箱的内容。 您可以预览搜索结果, 也可以将搜索结果导出到 Outlook 数据 (PST) 文件或单独的电子邮件。 有关搜索邮箱和导出搜索结果的分步过程, 请参阅下列主题:
+您可以使用安全性 & 合规性中心中的内容搜索工具访问非活动邮箱的内容。 搜索非活动邮箱时，可以创建关键字搜索查询搜索特定的项目或者返回整个非活动邮箱的内容。 您可以预览搜索结果, 也可以将搜索结果导出到 Outlook 数据 (PST) 文件或单独的电子邮件。 有关搜索邮箱和导出搜索结果的分步过程, 请参阅下列主题:
   
 - [Office 365 中的内容搜索](content-search.md)
     
