@@ -10,7 +10,6 @@
 ## [转到安全与合规中心](go-to-the-securitycompliance-center.md)
 ### [安全与合规中心内的权限](permissions-in-the-security-and-compliance-center.md)
 ### [向用户授予对安全与合规中心的访问权限](grant-access-to-the-security-and-compliance-center.md)
-## [安全仪表板概述](security-dashboard.md)
 ## [使用免费的 Azure Active Directory 订阅](use-your-free-azure-ad-subscription-in-office-365.md)
 ## [Office 365 中的安全与合规计划](plan-for-security-and-compliance.md)
 ## [首席信息安全官 (CISO) 研讨会培训](ciso-workshop.md)
@@ -77,19 +76,20 @@
 #### [为以前版本的 Office 365 邮件加密设置 Azure 权限管理](set-up-azure-rms-for-previous-version-message-encryption.md)
 
 # 记录管理
-## [文件计划管理器](file-plan-manager.md)
-## [保留标签](labels.md)
-### [符合 SEC Rule 17a-4](use-exchange-online-to-comply-with-sec-rule-17a-4.md)
+## [记录管理](records-management.md)
+## 文件计划
+### [文件计划管理器](file-plan-manager.md)
+### [保留标签](labels.md)
 ### [使用 PowerShell 创建和发布保留标签](https://docs.microsoft.com/zh-CN/office365/securitycompliance/bulk-create-publish-labels-using-powershell)
-## [基于事件的保留](event-driven-retention.md)
-### [自动执行基于事件的保留](automate-event-driven-retention.md)
-## [处置评审](disposition-reviews.md)
-## 监视记录管理
-### [查看数据治理报表](view-the-data-governance-reports.md)
-### [查看文档的标签活动](view-label-activity-for-documents.md)
 ### [使用标签分析查看标签使用情况](label-analytics.md)
+### [查看文档的标签活动](view-label-activity-for-documents.md)
+### [查看数据管理报告](view-the-data-governance-reports.md)
+## 事件
+### [基于事件的保留](event-driven-retention.md)
+### [自动执行基于事件的保留](automate-event-driven-retention.md)
+## [处置](disposition-reviews.md)
 ## 有关记录管理的详细信息
-### [观看 Microsoft 数据管理团队的视频](https://go.microsoft.com/fwlink/?linkid=867039)
+### [观看有关记录管理的视频](https://go.microsoft.com/fwlink/?linkid=867039)
 
 # 管理数据管理
 ## [导入数据](importing-pst-files-to-office-365.md)
@@ -179,12 +179,19 @@
 ### [使用 DKIM 验证出站电子邮件](use-dkim-to-validate-outbound-email.md)
 ### [支持 DKIM 签名邮件验证](support-for-validation-of-dkim-signed-messages.md)
 ### [使用 DMARC 验证电子邮件](use-dmarc-to-validate-email.md)
-## [安全与合规中心内的智能报告和见解](reports-and-insights-in-security-and-compliance.md) 
+## [安全与合规中心内的智能报告和见解](reports-and-insights-in-security-and-compliance.md)
+### [安全仪表板概述](security-dashboard.md) 
+#### [演练 - 从详细报告到见解](from-a-detailed-report-to-an-insight.md)
+#### [演练 - 从见解到详细报告](from-an-insight-to-a-detailed-report.md)
+#### [演练 - 从仪表板到见解](from-a-dashboard-to-an-insight.md)
+#### [创建报告计划](create-a-schedule-for-a-report.md)
+#### [管理多个报告的计划](manage-schedules-for-multiple-reports.md)
+#### [设置并下载自定义报告](set-up-and-download-a-custom-report.md)
+#### [下载现有报告](download-existing-reports.md)
+### [启用或禁用 Office 365 中的安全提示](enable-or-disable-safety-tips.md)
 ### [查看恶意文件的相关信息](malicious-files-detected-in-spo-odb-or-teams.md)
 ### [查看安全与合规中心内的电子邮件安全报告](view-email-security-reports.md)
-### [演练 - 从详细报告到见解](from-a-detailed-report-to-an-insight.md)
-### [演练 - 从见解到详细报告](from-an-insight-to-a-detailed-report.md)
-### [演练 - 从仪表板到见解](from-a-dashboard-to-an-insight.md)
+
 # [高级威胁防护](office-365-atp.md)
 ## 管理员的 ATP 设置任务
 ### 全局管理员设置任务
@@ -211,10 +218,10 @@
 ### [SIEM 与 Office 365 ATP 集成](siem-integration-with-office-365-ti.md)
 ## ATP 的工作原理
 ### [ATP 安全链接的工作原理](how-atp-safe-links-works.md)
-### [动态传递和预览详细信息](dynamic-delivery-and-previewing.md)
-## [ATP 安全附件的工作原理](how-atp-safe-attachments-works.md)
-### [关于威胁调查和响应](office-365-ti.md)
+### [ATP 安全附件的工作原理](how-atp-safe-attachments-works.md)
+#### [动态传递和预览详细信息](dynamic-delivery-and-previewing.md)
 ### [威胁调查和响应的工作原理](get-started-with-ti.md)
+#### [关于威胁调查和响应](office-365-ti.md)
 ### [自动调查和响应的工作原理](automated-investigation-response-office.md)
 ### [识别 Outlook.com 和 Outlook 网页版中的可疑邮件](unverified-sender-feature.md)
 
@@ -223,21 +230,6 @@
 ## [检测和修正 Office 365 中的非法授权](detect-and-remediate-illicit-consent-grants.md)
 ## [在 Office 365 中检测并修正 Outlook 规则和自定义窗体注入攻击](detect-and-remediate-outlook-rules-forms-attack.md)
 ## [响应 Office 365 中遭到入侵的电子邮件帐户](responding-to-a-compromised-email-account.md)
-# 记录管理
-## [记录管理](records-management.md)
-## 文件计划
-### [文件计划管理器](file-plan-manager.md)
-### [保留标签](labels.md)
-### [使用 PowerShell 创建和发布保留标签](https://docs.microsoft.com/zh-CN/office365/securitycompliance/bulk-create-publish-labels-using-powershell)
-### [使用标签分析查看标签使用情况](label-analytics.md)
-### [查看文档的标签活动](view-label-activity-for-documents.md)
-### [查看数据管理报告](view-the-data-governance-reports.md)
-## 事件
-### [基于事件的保留](event-driven-retention.md)
-### [自动执行基于事件的保留](automate-event-driven-retention.md)
-## [处置](disposition-reviews.md)
-## 有关记录管理的详细信息
-### [观看有关记录管理的视频](https://go.microsoft.com/fwlink/?linkid=867039)
 
 # 管理数据管理
 ## [导入数据](importing-pst-files-to-office-365.md)
@@ -498,11 +490,6 @@
 ### [监视 Microsoft 365 安全中的设备](monitor-devices.md)
 ### [监视 Microsoft 365 安全中的应用](monitor-apps.md)
 ## [警报策略](alert-policies.md)
-### [创建报告计划](create-a-schedule-for-a-report.md)
-### [管理多个报告的计划](manage-schedules-for-multiple-reports.md)
-### [设置并下载自定义报告](set-up-and-download-a-custom-report.md)
-### [下载现有报告](download-existing-reports.md)
-## [启用或禁用 Office 365 中的安全提示](enable-or-disable-safety-tips.md)
 
 # 邮件流
 ## [启用报告消息加载项](enable-the-report-message-add-in.md)
