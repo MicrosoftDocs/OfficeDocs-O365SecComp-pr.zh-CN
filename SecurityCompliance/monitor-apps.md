@@ -1,5 +1,5 @@
 ---
-title: 在 Microsoft 365 安全中监视和报告应用状态
+title: Microsoft 365 安全中心中的应用程序监控和报告
 description: 介绍如何能够深入了解组织中的云应用程序使用情况
 keywords: security、恶意软件、Microsoft 365、M365、security center、monitor、report、apps
 ms.prod: w10
@@ -12,21 +12,20 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 search.appverid: met150
-ms.openlocfilehash: 33a10996ceaf3023d5aee58aaabf3fef54372c30
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: 2641b90fd6f055352c5305d63ad98a54eb1ee483
+ms.sourcegitcommit: b9d8a43cb3afcdc8820bc9470c5707eff8fc6616
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32263306"
+ms.lasthandoff: 06/11/2019
+ms.locfileid: "34852656"
 ---
-# <a name="monitor-and-report-app-status-in-microsoft-365-security"></a>在 Microsoft 365 安全中监视和报告应用状态
-
+# <a name="app-monitoring-and-reporting-in-microsoft-365-security-center"></a>Microsoft 365 安全中心中的应用程序监控和报告
 
 这些报告可更深入地了解如何在组织中使用云应用程序, 包括哪些类型的应用、风险级别和警报。
 
 ## <a name="monitor-email-accounts-at-risk"></a>监视电子邮件帐户的风险
 
-**电子邮件保护**显示有风险的电子邮件帐户。 您可以单击某个帐户以在 Windows Defender 安全中心中进行进一步调查。
+**电子邮件保护**显示有风险的电子邮件帐户。 您可以单击某个帐户以在 Microsoft Defender 安全中心中进行进一步调查。
 
 ![电子邮件保护卡](./media/security-docs/email-protection.png)
 

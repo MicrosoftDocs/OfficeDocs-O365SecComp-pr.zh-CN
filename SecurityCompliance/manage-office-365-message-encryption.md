@@ -15,16 +15,16 @@ ms.collection:
 - Strat_O365_IP
 - M365-security-compliance
 description: 完成设置 Office 365 邮件加密 (OME) 后, 您可以通过多种方式自定义部署的配置。 例如, 您可以配置是否启用一次性传递代码, 在 Outlook 网页版中显示 "保护" 按钮, 等等。 本文中的任务介绍了如何。
-ms.openlocfilehash: 5c498c648fb28e6538bfc2fde8bdf50e8e02cbfc
-ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
+ms.openlocfilehash: f19556f88783eed86bd33a7fdcbd1efae18c3ef3
+ms.sourcegitcommit: b9d8a43cb3afcdc8820bc9470c5707eff8fc6616
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "34155744"
+ms.lasthandoff: 06/11/2019
+ms.locfileid: "34852526"
 ---
 # <a name="manage-office-365-message-encryption"></a>管理 Office 365 邮件加密
 
-完成设置 Office 365 邮件加密 (OME) 后, 您可以通过多种方式自定义部署的配置。 例如, 您可以配置是否启用一次性传递代码, 在 Outlook 网页版中显示 "**保护**" 按钮, 等等。 本文中的任务介绍了如何。
+完成设置 Office 365 邮件加密 (OME) 后, 您可以通过多种方式自定义部署的配置。 例如, 您可以配置是否启用一次性传递代码, 在 Outlook 网页版中显示 "**加密**" 按钮, 等等。 本文中的任务介绍了如何。
 
 ## <a name="manage-whether-google-yahoo-and-microsoft-account-recipients-can-use-these-accounts-to-sign-in-to-the-office-365-message-encryption-portal"></a>管理 Google、Yahoo 和 Microsoft 帐户收件人是否可以使用这些帐户登录 Office 365 邮件加密门户
 
@@ -78,11 +78,11 @@ ms.locfileid: "34155744"
    Set-OMEConfiguration -Identity "OME Configuration" -OTPEnabled $true
    ```
 
-## <a name="manage-the-display-of-the-protect-button-in-outlook-on-the-web"></a>管理 web 上的 Outlook 中的 "保护" 按钮的显示
+## <a name="manage-the-display-of-the-encrypt-button-in-outlook-on-the-web"></a>管理 web 上的 Outlook 中的 "加密" 按钮的显示
 
-设置 OME 时, web 上的 Outlook 中的 "**保护**" 按钮处于禁用状态。 作为管理员, 您可以管理是否将此按钮显示给最终用户。
+作为管理员, 您可以管理是否将此按钮显示给最终用户。
   
-### <a name="to-manage-whether-the-protect-button-appears-in-outlook-on-the-web"></a>管理 "保护" 按钮在 web 上的 Outlook 中是否显示
+### <a name="to-manage-whether-the-encrypt-button-appears-in-outlook-on-the-web"></a>管理 "加密" 按钮是否出现在 web 上的 Outlook 中
   
 1. 在 Office 365 组织中使用具有全局管理员权限的工作或学校帐户, 并启动 Windows PowerShell 会话并连接到 Exchange Online。 有关说明, 请参阅[连接到 Exchange Online PowerShell](https://aka.ms/exopowershell)。
 
@@ -92,13 +92,13 @@ ms.locfileid: "34155744"
    Set-IRMConfiguration -SimplifiedClientAccessEnabled <$true|$false>
    ```
 
-   例如, 要禁用 "**保护**" 按钮, 请执行以下操作:
+   例如, 要禁用 "**加密**" 按钮, 请执行以下操作:
 
    ```powershell
    Set-IRMConfiguration -SimplifiedClientAccessEnabled $false
    ```
 
-   启用 "**保护**" 按钮的步骤:
+   启用 "**加密**" 按钮:
 
    ```powershell
    Set-IRMConfiguration -SimplifiedClientAccessEnabled $true
@@ -226,7 +226,7 @@ IOS 邮件应用程序无法解密受 Office 365 邮件加密保护的邮件。 
   
 1. 在 Office 365 组织中使用具有全局管理员权限的工作或学校帐户, 启动 Windows PowerShell 会话并连接到 Exchange Online。 有关说明, 请参阅[连接到 Exchange Online PowerShell](https://aka.ms/exopowershell)。
 
-2. 如果在 web 上的 Outlook 中启用了 "**保护**" 按钮, 请通过运行带有 SimplifiedClientAccessEnabled 参数的 get-irmconfiguration cmdlet 来禁用它。 否则, 请跳过此步骤。
+2. 如果您在 web 上的 Outlook 中启用了 "**加密**" 按钮, 请通过运行 get-irmconfiguration Cmdlet 和 SimplifiedClientAccessEnabled 参数来禁用它。 否则, 请跳过此步骤。
 
    ```powershell
    Set-IRMConfiguration -SimplifiedClientAccessEnabled $false

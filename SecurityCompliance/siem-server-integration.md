@@ -14,12 +14,12 @@ ms.custom:
 - Ent_Solutions
 - SIEM
 description: '摘要: 阅读本文, 了解 SIEM server 与 Microsoft 365 集成的概述。'
-ms.openlocfilehash: 05b6e980ae8c6a6b5d32fb3428748468dd861902
-ms.sourcegitcommit: 4fedeb06a6e7796096fc6279cfb091c7b89d484d
+ms.openlocfilehash: cfa9c6c3ae501515f61799fdd480fc569918935f
+ms.sourcegitcommit: b9d8a43cb3afcdc8820bc9470c5707eff8fc6616
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/31/2019
-ms.locfileid: "34652575"
+ms.lasthandoff: 06/11/2019
+ms.locfileid: "34852686"
 ---
 # <a name="siem-server-integration-with-microsoft-365-services-and-applications"></a>SIEM server 与 Microsoft 365 服务和应用程序的集成
 
@@ -36,7 +36,7 @@ SIEM 服务器可以接收来自各种 Microsoft 365 服务和应用程序的数
 | [Office 365 高级威胁防护](office-365-atp.md) <br/>   或   <br/>[Office 365 威胁智能](office-365-ti.md) | 审核日志 | [SIEM 与 Office 365 高级威胁防护的集成](siem-integration-with-office-365-ti.md) |
 | [Microsoft Cloud App Security](https://docs.microsoft.com/cloud-app-security/what-is-cloud-app-security) | 日志集成 | [SIEM 与 Microsoft Cloud App Security 的集成](https://docs.microsoft.com/cloud-app-security/siem) |
 | [Office 365 云应用安全](https://docs.microsoft.com/cloud-app-security/what-is-cloud-app-security) | 日志集成 | [将 SIEM 服务器与云应用安全集成](https://docs.microsoft.com/cloud-app-security/siem) |
-| [Windows Defender 高级威胁防护](https://docs.microsoft.com/windows/security/threat-protection/) | 日志集成 | [将警报拉入 SIEM 工具](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/configure-siem-windows-defender-advanced-threat-protection) |
+| [Microsoft 威胁防护](https://docs.microsoft.com/windows/security/threat-protection/) | 日志集成 | [将警报拉入 SIEM 工具](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/configure-siem) |
 | [Azure 安全中心](https://docs.microsoft.com/azure/security-center/security-center-intro)(威胁防护和威胁检测) | 警报 | [Azure 安全数据导出到 SIEM 配置-预览](https://docs.microsoft.com/azure/security-center/security-center-export-data-to-siem) |
 | [Azure Active Directory Identity Protection](https://docs.microsoft.com/azure/active-directory/identity-protection/overview) | 审核日志 | [集成 Azure Active Directory 审核日志](https://docs.microsoft.com/azure/security/security-azure-log-integration-ad) |
 | [Azure 高级威胁分析](https://docs.microsoft.com/azure/security/azure-threat-detection) | 日志集成 | [ATA SIEM 日志引用](https://docs.microsoft.com/advanced-threat-analytics/cef-format-sa) |

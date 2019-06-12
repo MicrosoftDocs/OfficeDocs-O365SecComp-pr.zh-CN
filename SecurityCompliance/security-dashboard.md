@@ -3,7 +3,6 @@ title: 安全仪表板概述
 ms.author: deniseb
 author: denisebmsft
 manager: laurawi
-ms.date: 03/19/2019
 audience: ITPro
 ms.topic: overview
 ms.service: O365-seccomp
@@ -15,12 +14,12 @@ ms.assetid: fe0b9b8f-faa9-44ff-8095-4d1b2f507b74
 ms.collection:
 - M365-security-compliance
 description: 使用新的安全仪表板查看 Office 365 的威胁防护状态, 查看安全警报并对其采取操作。
-ms.openlocfilehash: 46f11a4e5693cf243ff72acd6d87406c34af247a
-ms.sourcegitcommit: 0d5a863f48914eeaaf29f7d2a2022618de186247
+ms.openlocfilehash: 78e6a67ace757cca9d25086c601ab4b4437c7bf8
+ms.sourcegitcommit: 5a93c2f3df35d06a59a7fbaff5c91f7afde11781
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34077218"
+ms.lasthandoff: 06/11/2019
+ms.locfileid: "34857662"
 ---
 # <a name="security-dashboard"></a>安全仪表板
 
@@ -30,7 +29,7 @@ ms.locfileid: "34077218"
   
 观看视频以获取概述, 然后阅读本文以了解详细信息。
   
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/3540b1f8-62d2-47fa-a07d-d7ad76f55b0f?autoplay=false]
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE1VV3o]
   
 根据组织的 Office 365 订阅包括的内容, 安全仪表板包含多个小部件, 如威胁管理摘要、威胁保护状态、全局的每周威胁检测、恶意软件等, 如中所述。以下各节。
   
@@ -45,10 +44,10 @@ ms.locfileid: "34077218"
 
 ![安全仪表板-威胁管理摘要小部件](media/SecDash-ThreatMgmtSummary.png)
 
-您在威胁管理摘要中看到的信息取决于订阅所包含的内容。 下表介绍了 Office 365 企业版 E3 和 Office 365 企业版 E5 中包含的信息。
+您在威胁管理摘要中看到的信息取决于订阅所包含的内容。 下表介绍了 Office 365 E3 和 Office 365 E5 包含的信息。
 
 
-|Office 365 企业版 E3  |Office 365 企业版 E5  |
+|Office 365 E3  |Office 365 E5  |
 |---------|---------|
 |阻止的恶意软件邮件<br/>阻止的仿冒邮件<br>用户报告的邮件<br><br><br><br> |阻止的恶意软件邮件<br>阻止的仿冒邮件<br>用户报告的邮件<br>已阻止零天恶意软件<br>检测到高级网络钓鱼邮件<br>阻止的恶意 Url |
 

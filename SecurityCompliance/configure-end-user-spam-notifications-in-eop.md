@@ -13,12 +13,12 @@ ms.assetid: e9947db5-1dd1-4493-872d-7362b24c7ba0
 ms.collection:
 - M365-security-compliance
 description: 您可以针对默认的公司范围内内容筛选器策略或应用于域的自定义内容筛选器策略配置最终用户垃圾邮件通知。
-ms.openlocfilehash: 07bca81f06a347bbce5e997e570553f85deb5c1d
-ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
+ms.openlocfilehash: 66d5cd5fe9456c57c62a3c15710ce84d2e2d6631
+ms.sourcegitcommit: 5a93c2f3df35d06a59a7fbaff5c91f7afde11781
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "34151454"
+ms.lasthandoff: 06/11/2019
+ms.locfileid: "34857642"
 ---
 # <a name="configure-end-user-spam-notifications-in-eop"></a>在 EOP 中配置最终用户垃圾邮件通知
   
@@ -37,9 +37,9 @@ ms.locfileid: "34151454"
 
 如果邮件不是垃圾邮件, 并且您希望 Office 365 将邮件发送到您的邮箱, 则**释放**。
 
-**发布 &** 如果邮件不是垃圾邮件, 并且您希望 Office 365 将发件人添加到安全发件人和收件人列表中, 以供将来的电子邮件。 请注意, 您的管理员可能有其他组织范围的允许/阻止配置替代安全发件人列表。
+如果邮件不是垃圾邮件, 并且您希望 Office 365 将发件人添加到安全发件人和收件人列表中, 请**释放 & 允许发件人**列表中的其他电子邮件。 请注意, 您的管理员可能有其他组织范围的允许/阻止配置替代安全发件人列表。
 
-**发布 _AMP_ 报告**, 如果邮件不是垃圾邮件, 并且您想要将邮件发送到您的邮箱并将其报告给 Microsoft 进行分析。
+如果邮件不是垃圾邮件, 并且您想要将邮件发送到您的邮箱并将其报告给 Microsoft 进行分析, 请**释放 & 报告**。
 
 如果您希望 Office 365 将发件人添加到阻止发件人列表, 则**阻止**。
   
@@ -54,7 +54,7 @@ ms.locfileid: "34151454"
   
 ## <a name="use-the-eac-to-configure-end-user-spam-notifications"></a>使用 EAC 配置最终用户垃圾邮件通知
 
-1. 在 Exchange 管理中心 (EAC) 中, 导航到 "**保护** \> **内容筛选器**"。
+1. 在 Exchange 管理中心 (EAC) 中, 导航到 "**保护** > **垃圾邮件筛选器**"。
     
 2. 选择您想要启用最终用户垃圾邮件通知（默认禁用）的内容筛选器策略。
     

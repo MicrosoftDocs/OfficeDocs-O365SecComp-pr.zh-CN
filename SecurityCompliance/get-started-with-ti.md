@@ -15,12 +15,12 @@ ms.assetid: 38e9b67f-d188-490f-bc91-a1ae4b270441
 ms.collection:
 - M365-security-compliance
 description: 了解 Office 365 威胁调查和响应, 以及如何开始。
-ms.openlocfilehash: b003805b5732710df88d45662c2a71d6014640e0
-ms.sourcegitcommit: 2b46fba650df8d252b1dd2b3c3f080a383183a06
+ms.openlocfilehash: 9be8e33be6445dc960c12c308c56bf9afc7fdd12
+ms.sourcegitcommit: b9d8a43cb3afcdc8820bc9470c5707eff8fc6616
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "34408337"
+ms.lasthandoff: 06/11/2019
+ms.locfileid: "34852576"
 ---
 # <a name="get-started-with-threat-investigation-and-response-office-365-advanced-threat-protection-plan-2"></a>开始使用威胁调查和响应 (Office 365 高级威胁防护计划 2)
 
@@ -37,7 +37,7 @@ ms.locfileid: "34408337"
   
 ## <a name="get-acquainted-with-the-threat-dashboard-explorer-and-incidents"></a>了解威胁仪表板、资源管理器和事件
 
-安全&amp;合规中心中的这些威胁调查和响应功能, 作为一组工具和响应工作流, 包括[威胁仪表板](#threat-dashboard)、[威胁资源管理器](#threat-explorer)、[事件](get-started-with-ti.md#incidents)、[攻击模拟器](attack-simulator.md)和自动调查 _AMP_ 响应。
+安全&amp;合规中心中的这些威胁调查和响应功能, 作为一组工具和响应工作流, 包括[威胁仪表板](#threat-dashboard)、[威胁资源管理器](#threat-explorer)、[事件](get-started-with-ti.md#incidents)、[攻击模拟器](attack-simulator.md)和自动调查 & 响应。
   
 ### <a name="threat-dashboard"></a>威胁仪表板
 
@@ -96,7 +96,7 @@ Office 365 高级威胁防护计划2和企业版 E5 365 中包含 office 威胁 
   |使用[威胁浏览器 (和实时检测)](threat-explorer.md)分析威胁  <br/> |Office 365 全局管理员  <br/> 安全管理员 (在安全&amp;合规中心中分配)  <br/> 安全读者 (在安全&amp;合规中心中分配)  <br/> |
   |查看事件 (也称为调查) <br/> 将电子邮件添加到事件  <br/> |Office 365 全局管理员  <br/> 安全管理员 (在安全&amp;合规中心中分配)  <br/> 安全读者 (在安全&amp;合规中心中分配)  <br/> |
   |触发事件中的电子邮件操作  <br/> 查找和删除可疑电子邮件  <br/> |Office 365 全局管理员或安全管理员  <br/> 上述角色之一和搜索和清除 (在安全&amp;合规中心中分配)  <br/> |
-  |将 Office 365 高级威胁防护计划2与 Windows Defender 高级威胁防护集成  <br/> 将 Office 365 高级威胁防护计划2与 SIEM 服务器集成  <br/> |Office 365 全局管理员  <br/> 安全管理员 (在安全&amp;合规中心中分配)  <br/> 在其他应用程序中分配的相应角色 (如 Windows Defender 高级威胁防护门户或 SIEM server)  <br/> |
+  |将 Office 365 高级威胁防护计划2与 Microsoft Defender ATP 集成  <br/> 将 Office 365 高级威胁防护计划2与 SIEM 服务器集成  <br/> |Office 365 全局管理员  <br/> 安全管理员 (在安全&amp;合规中心中分配)  <br/> 在其他应用程序 (如 Microsoft Defender Security Center 或 SIEM server) 中分配的相应角色  <br/> |
    
 有关角色、角色组和权限的信息, 请参阅[Office 365 安全&amp;合规中心中的权限](permissions-in-the-security-and-compliance-center.md)。
     
@@ -106,7 +106,7 @@ Office 365 高级威胁防护计划2和企业版 E5 365 中包含 office 威胁 
     
 - [查找并调查已传递的恶意电子邮件 (Office 365 威胁调查和响应)](investigate-malicious-email-that-was-delivered.md)
     
-- [将 Office 365 威胁调查与响应集成到 Windows Defender 高级威胁防护](integrate-office-365-ti-with-wdatp.md)
+- [集成 Office 365 威胁调查和响应与 Microsoft Defender 高级威胁防护](integrate-office-365-ti-with-wdatp.md)
     
 - [了解攻击模拟器](attack-simulator.md)
   
