@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: 296a02bd-ebde-4022-900e-547acf38ddd7
 description: 通过对邮箱应用保留或 Office 365 保留策略, 然后删除相应的 Office 365 用户帐户, 可以在 Office 365 中创建非活动邮箱。 非活动邮箱中的项目会在保留或应用到其非活动状态的保留策略的持续时间内保留。 若要永久删除非活动邮箱, 只需删除保留策略或保留策略即可。
-ms.openlocfilehash: e07b062f6b77f18589334b141e38edddc5ea18c5
-ms.sourcegitcommit: f88f14999aeb70ecf265cd98eb09a3304b150be8
+ms.openlocfilehash: ca6fc5b579b6974ce89db14d318a6dc5a50f3f5c
+ms.sourcegitcommit: eed9fb363c939168e4bc49698bb34038a54433db
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/07/2019
-ms.locfileid: "34768947"
+ms.lasthandoff: 06/12/2019
+ms.locfileid: "34913073"
 ---
 # <a name="create-and-manage-inactive-mailboxes-in-office-365"></a>在 Office 365 中创建和管理非活动邮箱
 
@@ -32,9 +32,9 @@ Office 365 使您可以保留已删除邮箱的内容。 此功能称为“非�
   
 ## <a name="before-you-begin"></a>开始之前
 
-- 若要将邮箱设为非活动邮箱, 必须为其分配一个 Exchange Online 计划2许可证, 以便在删除邮箱之前可以将诉讼保留或 Office 365 保留策略应用于该邮箱。 Exchange Online 计划2许可证是 Office 365 企业版 E3 和 E5 订阅的一部分。 如果为邮箱分配了 Exchange Online 计划1许可证 (它是 Office 365 企业版 E1 订阅的一部分), 则必须将其分配给单独的 Exchange Online 存档许可证, 以便在删除邮箱之前可以对其应用保留。 有关详细信息，请参阅 [Exchange Online Archiving](https://go.microsoft.com/fwlink/p/?LinkId=286153)。
+- 若要将邮箱设为非活动邮箱, 必须为其分配一个 Exchange Online 计划2许可证, 以便在删除邮箱之前可以将诉讼保留或 Office 365 保留策略应用于该邮箱。 Exchange Online 计划2许可证是 Office 365 企业版 E3 和 E5 订阅的一部分。 如果为邮箱分配了 Exchange Online 计划1或 Exchange Online 展台许可证 (分别是 Office 365 E1 和 F1 订阅的一部分), 则必须为其分配一个单独的 Exchange Online 存档许可证, 以便可以将保留应用于邮箱 before 它已被删除。 有关详细信息，请参阅 [Exchange Online Archiving](https://go.microsoft.com/fwlink/p/?LinkId=286153)。
     
-- 删除相应的 Office 365 用户帐户后, 与已删除的 Exchange Online 邮箱相关联的许可证将可用。 然后, 您可以向其他用户[分配 Office 365 for business 中的用户许可证](https://support.office.com/article/997596b5-4173-4627-b915-36abac6786dc)。 
+- 删除相应的 Office 365 用户帐户后, 与已删除的 Exchange Online 邮箱相关联的许可证将可用。 然后, 您可以[将这些许可证分配给其他用户](https://support.office.com/article/997596b5-4173-4627-b915-36abac6786dc)。 
     
 - 如果诉讼保留或 Office 365 保留策略 (配置为保留或保留, 然后删除内容) 未在删除邮箱之前应用于该邮箱, 则不会保留或发现邮箱的内容。 但是, 删除的邮箱可以在删除后的30天内恢复, 但是如果未恢复, 则30天后将永久删除该邮箱及其内容。
     
