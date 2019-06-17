@@ -3,7 +3,7 @@ title: 信息障碍概述
 ms.author: deniseb
 author: denisebmsft
 manager: laurawi
-ms.date: 05/31/2019
+ms.date: 06/13/2019
 ms.audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
@@ -11,14 +11,16 @@ ms.collection:
 - M365-security-compliance
 localization_priority: None
 description: 使用信息障碍以确保在组织内使用 Microsoft 团队进行通信合规性。
-ms.openlocfilehash: e52a62ca0b80aed577be1978b81c8a01ac2371b9
-ms.sourcegitcommit: 4fedeb06a6e7796096fc6279cfb091c7b89d484d
+ms.openlocfilehash: a2c202d08f1de60f92f13b2ac4c2b9d3c7f900e8
+ms.sourcegitcommit: eeb51470d8996e93fac28d7f12c6117e2aeb0cf0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/31/2019
-ms.locfileid: "34668276"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34935934"
 ---
 # <a name="information-barriers-preview"></a>信息障碍 (预览)
+
+## <a name="overview"></a>概述
 
 Microsoft 云服务包括强大的通信和协作功能。 但假设您要限制两个组之间的通信, 以避免组织中发生利益冲突。 或者, 您可能希望限制组织内的某些人之间的通信, 以便保护内部信息。 Microsoft 365 支持跨组和组织进行通信和协作, 因此有一种方法可以在必要时限制特定用户组之间的通信吗？ 通过信息障碍, 你可以! 
 
@@ -29,24 +31,10 @@ Microsoft 云服务包括强大的通信和协作功能。 但假设您要限制
 - 具有贸易秘密材料的内部团队无法与组织内特定组中的人员进行在线呼叫或聊天
 - 研究团队只能与产品开发团队进行在线通话或聊天
 
-对于所有这些示例方案 (及更多), 可以将信息屏障策略定义为阻止或允许在 Microsoft 团队中进行通信。 此类策略可以阻止用户不应对其进行呼叫或聊天, 或使用户只能与 Microsoft 团队中的特定组进行通信。 在信息屏障策略生效时, 只要这些策略涵盖的用户尝试与 Microsoft 团队中的其他人通信, 就会执行检查以阻止 (或允许) 通信 (由信息屏障策略定义)。 
+对于所有这些示例方案 (及更多), 可以将信息屏障策略定义为阻止或允许在 Microsoft 团队中进行通信。 此类策略可以阻止用户不应对其进行呼叫或聊天, 或使用户只能与 Microsoft 团队中的特定组进行通信。 在信息屏障策略生效时, 只要这些策略涵盖的用户尝试与 Microsoft 团队中的其他人通信, 就会执行检查以阻止 (或允许) 通信 (由信息屏障策略定义)。 若要了解有关信息障碍的用户体验方面的详细信息, 请参阅[Microsoft 团队中的信息障碍](https://docs.microsoft.com/MicrosoftTeams/information-barriers-in-teams)。
 
 > [!NOTE]
 > 信息障碍将不适用于电子邮件通信或通过 SharePoint Online 或 OneDrive 进行文件共享。
-
-信息障碍策略适用于以下类型的通信活动:
-
-- 搜索用户
-- 向团队添加成员
-- 启动与某人的聊天会话
-- 启动群聊天 
-- 邀请某人加入会议
-- 共享屏幕 
-- 发出呼叫
-
-如果涉及的人员包含在阻止活动的信息屏障策略中, 则无法继续进行。 若要了解有关信息障碍的用户体验方面的详细信息, 请参阅[Microsoft 团队中的信息障碍](https://docs.microsoft.com/MicrosoftTeams/information-barriers-in-teams)。
-
-目前, 信息屏障策略是通过 PowerShell cmdlet 在 Office 365 中定义和管理的。 这通常由合规性管理员或全局管理员完成, 并需要熟悉 PowerShell cmdlet (和参数)。 若要了解详细信息, 请参阅[PowerShell (用于定义信息障碍)](information-barriers-policies.md#powershell)。
 
 ## <a name="required-licenses-and-permissions"></a>必需的许可证和权限
 

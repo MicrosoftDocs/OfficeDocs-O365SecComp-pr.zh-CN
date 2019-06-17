@@ -15,12 +15,12 @@ search.appverid:
 - MET150
 - MOE150
 description: 了解客户密码箱请求, 使您可以控制 Microsoft 支持工程师在遇到问题时如何访问数据。
-ms.openlocfilehash: 2f15201cb4c49a22d7789ffafcdd94b5266bcdd4
-ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
+ms.openlocfilehash: f3cfdec6521cd5fe0bcb7007b27ce128ae3b2a1d
+ms.sourcegitcommit: 62447503300376aa95dd05fb5276f93a9f6a20b6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "34153834"
+ms.lasthandoff: 06/13/2019
+ms.locfileid: "34927575"
 ---
 # <a name="customer-lockbox-in-office-365"></a>Office 365 中的客户密码箱
 
@@ -78,7 +78,7 @@ Office 365 管理员可以在 Microsoft 365 管理中心启用客户密码箱控
 
 1. 转到[https://admin.microsoft.com](https://admin.microsoft.com)并使用你的工作或学校帐户登录。
 
-2. 单击 "**设置 _GT_ 安全 & 隐私**"。
+2. 单击 "**设置" > 安全性 & 隐私**"。
 
     ![编辑管理中心中的客户密码箱设置](media/CustomerLockbox2.png)
 
@@ -93,7 +93,7 @@ Office 365 管理员可以在 Microsoft 365 管理中心启用客户密码箱控
 
 1. 转到[https://admin.microsoft.com](https://admin.microsoft.com)并使用你的工作或学校帐户登录。
 
-2. 单击 "**支持 _GT_ 客户密码箱请求**"。
+2. 单击 "**支持 > 客户密码箱请求**"。
 
     ![单击 "支持", 然后单击 "客户密码箱请求"](media/CustomerLockbox5.png)
 
@@ -111,7 +111,7 @@ Office 365 管理员可以在 Microsoft 365 管理中心启用客户密码箱控
 
 ## <a name="auditing-customer-lockbox-requests"></a>审核客户密码箱请求 
 
-与客户密码箱请求对应的审核记录将记录在 Office 365 审核日志中, 并且可以使用 Office 365 Security & 合规性中心中的 "[审核日志搜索" 工具](https://docs.microsoft.com/office365/securitycompliance/search-the-audit-log-in-security-and-compliance)进行访问。 与客户接受或拒绝客户密码箱请求和由 Microsoft 工程师执行的操作相关的操作 (当访问请求获得批准时) 将记录在 Office 365 审核日志中。 您可以搜索并查看这些审核记录。
+与客户密码箱请求对应的审核记录将记录在 Office 365 审核日志中, 并且可以使用 Office 365 安全 & 合规性中心中的 "[审核日志搜索" 工具](https://docs.microsoft.com/office365/securitycompliance/search-the-audit-log-in-security-and-compliance)进行访问。 与客户接受或拒绝客户密码箱请求和由 Microsoft 工程师执行的操作相关的操作 (当访问请求获得批准时) 将记录在 Office 365 审核日志中。 您可以搜索并查看这些审核记录。
 
 > [!NOTE]
 > 您必须在 Exchange Online 中向您分配 "仅查看审核日志" 或 "审核日志" 角色, 才能搜索 Office 365 审核日志。 有关详细信息，请参阅[在 Office 365 安全与合规中心内搜索审核日志](https://docs.microsoft.com/en-us/office365/securitycompliance/search-the-audit-log-in-security-and-compliance#before-you-begin)。
@@ -124,7 +124,7 @@ Office 365 管理员可以在 Microsoft 365 管理中心启用客户密码箱控
   
 2. 使用工作或学校帐户登录到 Office 365。
 
-3. 在安全 & 合规性中心的左侧窗格中, 单击 "**搜索 & 调查** > **审核日志搜索**"。
+3. 在安全性 & 合规性中心的左侧窗格中, 单击 "**搜索 & 调查** > **审核日志搜索**"。
 
     将显示 "**审核日志搜索**" 页。
 
@@ -232,7 +232,7 @@ Office 365 管理员可以在 Microsoft 365 管理中心启用客户密码箱控
 
 #### <a name="if-i-approve-a-customer-lockbox-request-what-can-the-engineer-do-and-how-will-i-know-what-the-microsoft-engineer-did"></a>如果我批准客户密码箱请求, 工程师可以执行哪些操作, 以及我如何知道 Microsoft 工程师所做的工作？
 
-批准客户密码箱请求后, Microsoft 工程师授予这些必需的权限, 以使用预先批准的 cmdlet 访问客户内容。 Microsoft 工程师在响应客户密码箱请求时所执行的操作会在 Office 365 Security & 合规中心的审核日志中记录和访问。
+批准客户密码箱请求后, Microsoft 工程师授予这些必需的权限, 以使用预先批准的 cmdlet 访问客户内容。 Microsoft 工程师在响应客户密码箱请求时所执行的操作将记录下来并可在 Office 365 安全 & 合规性中心的审核日志中访问。
 
 #### <a name="how-do-i-know-that-microsoft-follows-the-approval-process"></a>我如何知道 Microsoft 遵循审批过程？
 
@@ -264,7 +264,7 @@ Office 365 管理员可以在 Microsoft 365 管理中心启用客户密码箱控
 
 客户密码箱请求的默认持续时间为12小时。 如果在12小时内不响应请求, 则请求将过期。
 
-#### <a name="what-does-microsoft-when-a-customer-rejects-a-customer-lockbox-request"></a>当客户拒绝客户密码箱请求时, Microsoft 该怎么办？
+#### <a name="what-does-microsoft-do-when-a-customer-rejects-a-customer-lockbox-request"></a>当客户拒绝客户密码箱请求时, Microsoft 会做什么？
 
 如果客户拒绝客户密码箱请求, 则不会发生对客户内容的访问。 如果组织中的用户继续遇到要求 Microsoft 访问客户内容以解决问题的服务问题, 则服务问题可能会持续存在, Microsoft 将向用户通知此问题。
 

@@ -13,12 +13,12 @@ search.appverid:
 - MET150
 ms.assetid: 8c36bb03-e716-4fdd-9958-4aa7a2a1db42
 description: 管理员可以使用 Search-Mailbox cmdlet 来搜索用户邮箱，然后从邮箱中删除邮件。
-ms.openlocfilehash: a097b39aa179ed18c3d5426eeeacff204d48ee9b
-ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
+ms.openlocfilehash: 1288679c7abb643c020d5b1a2a08ae64b7cb403f
+ms.sourcegitcommit: d20defdcf2ac643f0c8c1f2761b0b7f4f4090e5c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "34158484"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34957414"
 ---
 # <a name="search-for-and-delete-messages---admin-help"></a>搜索和删除邮件 - 管理员帮助
   
@@ -48,7 +48,7 @@ ms.locfileid: "34158484"
     
 - 如果添加一个搜索查询（通过使用  *SearchQuery*  参数）， **Search-Mailbox** cmdlet 最多返回搜索结果中的 10,000 个项目。因此，如果添加一个搜索查询，则可能需要多次运行 **Search-Mailbox** 命令才能将 10,000 多个项目删除。 
     
-- 运行 **Search-Mailbox** cmdlet 时，也会搜索用户的存档邮箱。 同样，同时使用 **Search-Mailbox** cmdlet 和  _DeleteContent_ 开关时，主存档邮箱中的项目将被删除。 若要阻止这种情况发生，可以添加  *DoNotIncludeArchive*  开关。 此外, 建议您不要使用_DeleteContent_开关删除启用了自动扩展存档的 Exchange Online 邮箱中的邮件, 因为可能会发生意外的数据丢失。 
+- 运行 **Search-Mailbox** cmdlet 时，也会搜索用户的存档邮箱。 同样，同时使用 **Search-Mailbox** cmdlet 和  _DeleteContent_ 开关时，主存档邮箱中的项目将被删除。 若要阻止这种情况发生，可以添加  *DoNotIncludeArchive*  开关。
     
 ## <a name="search-messages-and-log-the-search-results"></a>搜索邮件并记录搜索结果
 

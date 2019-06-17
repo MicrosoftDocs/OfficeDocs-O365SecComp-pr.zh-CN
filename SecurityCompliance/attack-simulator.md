@@ -3,7 +3,7 @@ title: Office 365 中的攻击模拟器
 ms.author: deniseb
 author: denisebmsft
 manager: laurawi
-ms.date: 03/05/2019
+ms.date: 06/13/2019
 audience: ITPro
 ms.topic: overview
 ms.service: O365-seccomp
@@ -15,19 +15,19 @@ ms.assetid: da5845db-c578-4a41-b2cb-5a09689a551b
 ms.collection:
 - M365-security-compliance
 description: 作为 Office 365 全局管理员, 你可以使用攻击模拟器在你的组织中运行实际的攻击方案。 这可帮助你在真正的攻击击中你的业务之前识别和查找易受攻击的用户。
-ms.openlocfilehash: a39259cdcc47e2c881b3977aa570b1f221f0b2bd
-ms.sourcegitcommit: 0d5a863f48914eeaaf29f7d2a2022618de186247
+ms.openlocfilehash: 938a8f944fee22fb16b87923d7608b3bfcfee0fb
+ms.sourcegitcommit: 62447503300376aa95dd05fb5276f93a9f6a20b6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34077618"
+ms.lasthandoff: 06/13/2019
+ms.locfileid: "34927565"
 ---
 # <a name="attack-simulator-in-office-365"></a>Office 365 中的攻击模拟器
 
-**摘要**如果您是 Office 365 全局管理员, 并且您的组织具有[office 365 威胁调查和响应功能](office-365-ti.md), 则可以使用攻击模拟器在您的组织中运行实际的攻击方案。 这可以帮助您识别和查找易受攻击的用户, 在真正的攻击影响你的底线之前。 阅读本文以了解详细信息。
+**摘要**如果您是 Office 365 全局管理员或安全管理员, 并且您的组织具有[office 365 威胁调查和响应功能](office-365-ti.md), 则可以使用攻击模拟器在您的组织中运行实际的攻击方案。 这可以帮助您识别和查找易受攻击的用户, 在真正的攻击影响你的底线之前。 阅读本文以了解详细信息。
 
 > [!IMPORTANT]
-> Office 365 高级威胁防护和威胁调查和响应 (以前称为威胁智能) 现在是 Office 365 高级威胁防护计划2的一部分, 其中包含额外的威胁防护功能。 若要了解详细信息, 请参阅[office 365 高级威胁防护计划和定价](https://products.office.com/exchange/advance-threat-protection)以及[Office 365 高级威胁防护服务说明](https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description)。
+> Office 365 高级威胁防护和威胁调查和响应 (以前称为威胁智能) 是 Office 365 高级威胁防护计划2的一部分, 以及其他威胁防护功能。 若要了解详细信息, 请参阅[office 365 高级威胁防护计划和定价](https://products.office.com/exchange/advance-threat-protection)以及[Office 365 高级威胁防护服务说明](https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description)。
   
 ## <a name="the-attacks"></a>攻击
 
@@ -37,11 +37,8 @@ ms.locfileid: "34077618"
 - [密码喷涂攻击](#password-spray-attack)
 - [强力密码攻击](#brute-force-password-attack)
     
-若要成功启动攻击, 请对要使用的帐户使用多重身份验证, 以运行模拟攻击。 此外, 您必须是 Office 365 全局管理员。
-  
-> [!NOTE]
-> 即将推出对条件访问的支持。 
-  
+为成功启动攻击, 请确保用于运行模拟攻击的帐户使用多重身份验证。 此外, 您必须是 Office 365 全局管理员或安全管理员。 (若要了解有关角色和权限的详细信息, 请参阅[Office 365 Security & 合规中心中的权限](permissions-in-the-security-and-compliance-center.md)。)
+    
 若要访问攻击模拟器, 请在&amp; "安全合规性中心" 中, 选择 "**威胁管理** \> **攻击模拟器**"。
   
 ## <a name="before-you-begin"></a>开始之前 .。。
@@ -50,13 +47,12 @@ ms.locfileid: "34077618"
       
 - **您的组织的电子邮件托管在 Exchange Online 中**。 (攻击模拟器对本地电子邮件服务器不可用。)
     
-- **你是 Office 365 全局管理员**
+- **您是 Office 365 全局管理员或安全管理员**
     
-- **[多因素身份验证](https://docs.microsoft.com/office365/admin/security-and-compliance/set-up-multi-factor-authentication?view=o365-worldwide)(MFA) 已打开, 至少适用于 Office 365 全局管理员帐户**。 (理想情况下, 将为组织中的所有用户启用 MFA。)
+- **[多因素身份验证/条件访问](https://docs.microsoft.com/office365/admin/security-and-compliance/set-up-multi-factor-authentication?view=o365-worldwide)已启用, 至少适用于 Office 365 全局管理员帐户和安全管理员**。 (理想情况下, 为组织中的所有用户启用多重身份验证/条件访问。)
  
 - **您的组织具有[Office 365 高级威胁防护计划 2](office-365-ti.md)**, 在安全&amp;合规性中心中显示攻击模拟器 (转到**威胁管理** \> **攻击模拟器**)<br/>![威胁管理-攻击模拟器](media/ThreatMgmt-AttackSimulator.png)
 
-    
 ## <a name="display-name-spear-phishing-attack"></a>显示名称 spear 网络钓鱼攻击
 
 网络钓鱼是一种通用术语, 用于作为社会工程手段攻击的广泛攻击组 classed。 此攻击主要针对 spear 网络钓鱼, 这是一种更有针对性的攻击, 面向一组特定的个人或组织。 通常, 自定义攻击会执行某些侦测, 并使用将在收件人中生成信任的显示名称, 例如看起来像来自组织中的执行者的电子邮件。
@@ -79,7 +75,7 @@ ms.locfileid: "34077618"
     
 5. 指定 "**发件人" (名称)** 域的文本。 这是在接收电子邮件客户端的**显示名称**中显示的字段。 
     
-6. 指定文本或 "**发件人**" 字段。 这是在接收电子邮件客户端中显示为发件人的电子邮件地址的字段。 <br/>您可以在组织中输入现有的电子邮件命名空间 (这样做将使电子邮件地址在接收客户端中实际解析, 从而便于实现非常高的信任模型), 也可以输入外部电子邮件地址。 您指定的电子邮件地址不一定确实存在, 但需要遵循有效 SMTP 地址的格式, 例如, 用户 @ domainname。扩展名。 
+6. 指定文本或 "**发件人**" 字段。 这是在接收电子邮件客户端中显示为发件人的电子邮件地址的字段。 <br/>您可以在组织中输入现有的电子邮件命名空间 (这样做将使电子邮件地址在接收客户端中实际解析, 从而便于实现非常高的信任模型), 也可以输入外部电子邮件地址。 您指定的电子邮件地址不一定确实存在, 但需要遵循有效 SMTP 地址的格式, 例如, 用户 @ domainname. 扩展名。 
   
 7. 使用下拉选择器, 选择一个网络钓鱼登录服务器 URL, 该 URL 反映你将在攻击中遇到的内容的类型。 提供了多个主题 Url 供您选择, 例如文档交付、技术、工资等。实际上, 这是要求目标用户单击的 URL。
     
@@ -127,11 +123,17 @@ ms.locfileid: "34077618"
     
 ## <a name="new-features-in-attack-simulator"></a>攻击模拟器中的新功能
 
-向攻击模拟器添加了新功能。 具体包括：
+最近已将新功能添加到攻击模拟器中。 具体包括：
 
-- **高级报告功能**。 您将能够查看诸如速度最快 (或最慢) 的数据打开攻击模拟电子邮件、最快 (或最慢) 的时间单击邮件中的链接等。
+- **高级报告功能**。 能够查看最快 (或最慢) 时间打开攻击模拟电子邮件的数据, 以及单击邮件中的链接的速度最快 (或最慢) 的时间, 以及更多的可视化效果。
 
-- **电子邮件模板编辑器**。 您可以创建可用于将来的攻击模拟的自定义、可重用电子邮件模板。
+- **电子邮件模板编辑器**。 创建可重用的自定义电子邮件模板的功能, 可用于未来的攻击模拟。
+
+- **CSV 收件人导入**。 能够使用 CSV 文件导入目标收件人列表, 而不是使用通讯簿选取器。
+
+即将**推出更多新功能来攻击模拟器**。 具体包括：
+
+- **附件有效网络钓鱼模拟**。 可以使用附件作为网络钓鱼模拟的有效负载来代替 URL。
 
 请访问[Microsoft 365 路线图](https://www.microsoft.com/microsoft-365/roadmap)以查看正在开发的内容、正在滚动的内容以及已启动的内容。
 

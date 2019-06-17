@@ -100,7 +100,7 @@
 ### [使用网络上传导入 RMS 加密的 PST 文件](use-network-upload-to-import-rms-encrypted-pst-files.md)
 ### [有关导入 PST 文件的常见问题解答](faqimporting-pst-files-to-office-365.md)
 ### [在 Office 365 中存档第三方数据](archiving-third-party-data.md)
-#### [使用示例连接器在 Office 365 中存档 Facebook 数据（预览）](archive-facebook-data-with-sample-connector.md)
+#### [使用示例连接器存档 Facebook 数据](archive-facebook-data-with-sample-connector.md)
 #### [使用示例连接器存档 Twitter 数据](archive-twitter-data-with-sample-connector.md)
 #### [与合作伙伴联系以存档第三方数据](work-with-partner-to-archive-third-party-data.md)
 ## 存储数据
@@ -153,6 +153,7 @@
 ### [配置出站垃圾邮件策略](configure-the-outbound-spam-policy.md)
 ### [发送垃圾电子邮件后，从受限用户门户删除用户](removing-user-from-restricted-users-portal-after-spam.md)
 ### [垃圾邮件可信度](spam-confidence-levels.md)
+### [在 Exchange Online 中修复错误代码 5.7.7 xx](fix-error-code-5-7-7xx-in-exchange-online.md)
 #### [使用邮件流规则设置邮件中的垃圾邮件可信度 (SCL)](use-mail-flow-rules-to-set-the-spam-confidence-level-scl-in-messages.md)
 #### [将垃圾邮件、非垃圾邮件和网络欺诈邮件提交给 Microsoft 进行分析](submit-spam-non-spam-and-phishing-scam-messages-to-microsoft-for-analysis.md)
 #### [将恶意软件和非恶意软件提交给 Microsoft 进行分析](submitting-malware-and-non-malware-to-microsoft-for-analysis.md)
@@ -204,7 +205,7 @@
 #### [适用于 SharePoint、OneDrive 和 Microsoft Teams 的 ATP](atp-for-spo-odb-and-teams.md)
 ## 管理安全性 - ATP 安装后
 ## [通过威胁分析了解最新的攻击活动](latest-attack-campaigns.md)
-## [在 Microsoft 365 ATP 中搜寻](hunting.md)
+## [在 Microsoft 365 中搜寻](hunting.md)
 ## [查看和阅读 ATP 报告](view-reports-for-atp.md)
 ## [ATP 安全链接警告页是指什么](atp-safe-links-warning-pages.md)
 ## [使用威胁跟踪器](threat-trackers.md)
@@ -214,7 +215,7 @@
 ## [威胁资源管理器（和实时检测）](threat-explorer.md)
 ### [威胁资源管理器视图](threat-explorer-views.md)
 ## 进行集成来增强安全性
-### [将 Office 365 ATP 与 Windows Defender 高级威胁防护集成](integrate-office-365-ti-with-wdatp.md)
+### [将 Office 365 ATP 与 Microsoft Defender ATP 集成](integrate-office-365-ti-with-wdatp.md)
 ### [SIEM 与 Office 365 ATP 集成](siem-integration-with-office-365-ti.md)
 ## ATP 的工作原理
 ### [ATP 安全链接的工作原理](how-atp-safe-links-works.md)
@@ -484,11 +485,12 @@
 ## [在审核日志中搜索电子数据展示活动](search-for-ediscovery-activities-in-the-audit-log.md)
 
 # 监视安全性和合规性
-## [Microsoft 365 安全中心监视和报告功能](monitoring-and-reporting.md)
-### [监视和报告 Microsoft 365 安全中的标识](monitor-and-report-identities.md)
-### [监视 Microsoft 365 安全中的数据](monitor-data.md)
-### [监视 Microsoft 365 安全中的设备](monitor-devices.md)
-### [监视 Microsoft 365 安全中的应用](monitor-apps.md)
+## Microsoft 365 安全中心
+### [监视和查看报表](monitoring-and-reporting.md)
+### [身份监视和报告](monitor-and-report-identities.md)
+### [数据监视和报告](monitor-data.md)
+### [设备监视和报告](monitor-devices.md)
+### [应用监视和报告](monitor-apps.md)
 ## [警报策略](alert-policies.md)
 
 # 邮件流
