@@ -102,6 +102,7 @@
 ### [在 Office 365 中存档第三方数据](archiving-third-party-data.md)
 #### [使用示例连接器存档 Facebook 数据](archive-facebook-data-with-sample-connector.md)
 #### [使用示例连接器存档 Twitter 数据](archive-twitter-data-with-sample-connector.md)
+#### [设置连接器以存档 LinkedIn 数据](archive-linkedin-data.md)
 #### [与合作伙伴联系以存档第三方数据](work-with-partner-to-archive-third-party-data.md)
 ## 存储数据
 ### [启用存档邮箱](enable-archive-mailboxes.md)
@@ -243,6 +244,7 @@
 ### [在 Office 365 中存档第三方数据](archiving-third-party-data.md)
 #### [使用示例连接器存档 Facebook 数据](archive-facebook-data-with-sample-connector.md)
 #### [使用示例连接器存档 Twitter 数据](archive-twitter-data-with-sample-connector.md)
+#### [设置连接器以存档 LinkedIn 数据](archive-linkedin-data.md)
 #### [与合作伙伴联系以存档第三方数据](work-with-partner-to-archive-third-party-data.md)
 ## 存储数据
 ### [启用存档邮箱](enable-archive-mailboxes.md)
