@@ -3,20 +3,20 @@ title: 定义信息屏障策略
 ms.author: deniseb
 author: denisebmsft
 manager: laurawi
-ms.date: 06/13/2019
-ms.audience: ITPro
+ms.date: 06/18/2019
+audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
 ms.collection:
 - M365-security-compliance
 localization_priority: None
 description: 了解如何在 Microsoft 团队中定义信息障碍策略。
-ms.openlocfilehash: 8d575d0cde4bfec7109cc302f68beaf1040cd894
-ms.sourcegitcommit: eeb51470d8996e93fac28d7f12c6117e2aeb0cf0
+ms.openlocfilehash: 89faf404233f5862df6c95660b38f2886d84462a
+ms.sourcegitcommit: 3ffd188a7fd547ae343ccf14361c1e4300f88de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34935944"
+ms.lasthandoff: 06/18/2019
+ms.locfileid: "35059530"
 ---
 # <a name="define-policies-for-information-barriers-preview"></a>定义信息障碍策略 (预览)
 
@@ -48,7 +48,7 @@ ms.locfileid: "34935944"
 |阶段    |涉及的内容  |
 |---------|---------|
 |[确保满足先决条件](#prerequisites)     |-验证您是否具有[所需的许可证和权限](information-barriers.md#required-licenses-and-permissions)<br/>-确保您的组织的目录包含反映组织结构的数据<br/>-为 Microsoft 团队启用范围目录搜索<br/>-请确保审核日志记录已打开<br/>-Use PowerShell (提供示例)<br/>-为 Microsoft 团队提供管理员同意 (包括步骤)          |
-|[第1部分: 分段组织中的所有用户](#part-1-segment-users)     |-确定所需的策略<br/>-创建要定义的段的列表<br/>-确定要使用的属性<br/>-在策略筛选器方面定义段        |
+|[第1部分: 组织中的用户区段](#part-1-segment-users)     |-确定所需的策略<br/>-创建要定义的段的列表<br/>-确定要使用的属性<br/>-在策略筛选器方面定义段        |
 |[第2部分: 定义信息屏障策略](#part-2-define-information-barrier-policies)     |-定义你的策略 (尚不应用)<br/>-从两种类型 (阻止或允许) 中选择 |
 |[第3部分: 应用信息屏障策略](#part-3-apply-information-barrier-policies)     |-将策略设置为活动状态<br/>-运行策略应用程序<br/>-查看策略状态         |
 |(根据需要)[编辑段或策略](#edit-a-segment-or-a-policy)     |-编辑分段<br/>-编辑或删除策略<br/>-运行策略应用程序<br/>-查看策略状态         |
@@ -104,12 +104,12 @@ ms.locfileid: "34935944"
 
 ### <a name="identify-segments"></a>标识段
 
-除了您的初始策略列表之外, 请为您的组织创建一个段落列表。 组织中的每个用户都应属于某个分段, 并且任何用户都不应属于两个或多个分段。 每个段只能应用一个信息障碍策略。 
+除了您的初始策略列表之外, 请为您的组织创建一个段落列表。 将包含在信息屏障策略中的用户应属于某个网段, 并且任何用户都不应属于两个或多个网段。 每个段只能应用一个信息障碍策略。 
 
-确定您的组织的目录数据中将用来定义段落的属性。 您可以使用 "*部门*"、" *MemberOf*" 或任何受支持的属性。 请确保您为所有用户选择的属性中具有值。 [查看受支持的信息障碍属性的列表 (预览)](information-barriers-attributes.md)。
+确定您的组织的目录数据中将用来定义段落的属性。 您可以使用 "*部门*"、" *MemberOf*" 或任何受支持的属性。 请确保您为用户选择的属性中具有值。 [查看受支持的信息障碍属性的列表 (预览)](information-barriers-attributes.md)。
 
 > [!IMPORTANT]
-> 在**继续下一节之前, 请确保您的目录数据具有可用于定义段的属性的值**。 如果您的目录数据没有要使用的属性的值, 则必须更新所有用户帐户, 以便在继续进行信息障碍之前将该信息包括在内。 若要获取有关此方面的帮助, 请参阅以下资源:<br/>- [使用 Office 365 PowerShell 配置用户帐户属性](https://docs.microsoft.com/office365/enterprise/powershell/configure-user-account-properties-with-office-365-powershell)<br/>- [使用 Azure Active Directory 添加或更新用户的配置文件信息](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-users-profile-azure-portal)
+> 在**继续下一节之前, 请确保您的目录数据具有可用于定义段的属性的值**。 如果您的目录数据没有要使用的属性的值, 则必须更新用户帐户以包含该信息, 然后再继续进行信息屏障。 若要获取有关此方面的帮助, 请参阅以下资源:<br/>- [使用 Office 365 PowerShell 配置用户帐户属性](https://docs.microsoft.com/office365/enterprise/powershell/configure-user-account-properties-with-office-365-powershell)<br/>- [使用 Azure Active Directory 添加或更新用户的配置文件信息](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-users-profile-azure-portal)
 
 ### <a name="define-segments-using-powershell"></a>使用 PowerShell 定义段
 
@@ -128,7 +128,7 @@ ms.locfileid: "34935944"
     在运行每个 cmdlet 之后, 您应该会看到有关新段的详细信息列表。 详细信息包括段的类型、创建者或最后修改的人, 等等。 
 
 > [!IMPORTANT]
-> **请确保您的段不重叠**。 组织中的每个用户都应属于一个 (且只有一个) 分段。 任何用户都不应属于两个或多个段。 应为组织中的所有用户定义分段。 (请参阅本文中[的 Contoso 定义的部分](#contosos-defined-segments)。)
+> **请确保您的段不重叠**。 将受到信息障碍影响的每个用户应属于一个 (且仅有一个) 网段。 任何用户都不应属于两个或多个段。 (请参阅本文中[的 Contoso 定义的部分](#contosos-defined-segments)。)
 
 定义了分段后, 请继续定义信息屏障策略。
 
