@@ -3,7 +3,7 @@ title: 在开发/测试环境中保护 SharePoint Online 网站
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 04/09/2019
+ms.date: 06/18/2019
 audience: ITPro
 ms.topic: article
 ms.collection:
@@ -15,12 +15,12 @@ search.appverid:
 - MET150
 ms.assetid: 06af70f3-e7dc-4ee2-a385-fb4d61a5e93b
 description: 摘要：在开发/测试环境中创建公共、专用、敏感和高度机密的 SharePoint Online 团队网站。
-ms.openlocfilehash: 743a008a1d445d63054888499a0a805e546a1a4c
-ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
+ms.openlocfilehash: 148db19c8902735829a5849901723b5f2f200b74
+ms.sourcegitcommit: 3ffd188a7fd547ae343ccf14361c1e4300f88de0
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "34158814"
+ms.lasthandoff: 06/18/2019
+ms.locfileid: "35059540"
 ---
 # <a name="secure-sharepoint-online-sites-in-a-devtest-environment"></a>在开发/测试环境中保护 SharePoint Online 网站
 
@@ -511,8 +511,8 @@ Add-AzureADGroupMember -RefObjectId (Get-AzureADUser | Where { $_.DisplayName -e
     
 16. 单击“确定”。
     
-17. 在“如果检测到敏感信息，希望采取什么操作?”**** 窗格中，单击“下一步”****。
-    
+17. 在“是否希望立即启用策略或先进行测试?”**** 窗格中，单击“是，立即启用”****，然后单击“下一步”****。
+
 18. 在“是否希望立即启用策略或先进行测试?”**** 窗格中，单击“是，立即启用”****，然后单击“下一步”****。
     
 19. 在“查看设置”**** 窗格中，单击“创建”****，然后单击“关闭”****。
