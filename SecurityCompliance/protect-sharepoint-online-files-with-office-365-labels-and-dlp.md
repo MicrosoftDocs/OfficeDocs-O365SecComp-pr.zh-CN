@@ -3,7 +3,7 @@ title: 使用保留标签和 DLP 保护 SharePoint Online 文件
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 03/29/2019
+ms.date: 06/18/2019
 audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
@@ -17,12 +17,12 @@ ms.custom:
 - Ent_Solutions
 ms.assetid: c9f837af-8d71-4df1-a285-dedb1c5618b3
 description: 摘要：为具有各种信息保护级别的 SharePoint Online 团队网站应用保留标签和数据丢失防护 (DLP) 策略。
-ms.openlocfilehash: 118911f6430c9ae79dec1fa4a32cd0ba8fa536da
-ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
+ms.openlocfilehash: 72912cce6c6856b048df420a8d449d3d710ed40e
+ms.sourcegitcommit: 3ffd188a7fd547ae343ccf14361c1e4300f88de0
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "34156894"
+ms.lasthandoff: 06/18/2019
+ms.locfileid: "35059550"
 ---
 # <a name="protect-sharepoint-online-files-with-retention-labels-and-dlp"></a>使用保留标签和 DLP 保护 SharePoint Online 文件
 
@@ -167,7 +167,7 @@ ms.locfileid: "34156894"
     
 以下为敏感 SharePoint Online 团队网站的配置结果。
   
-![使用敏感保留标签的独立 SharePoint Online 团队网站的 DLP 策略。](media/2ff4cc53-87a8-43e3-b637-3068d88409f3.png)
+![使用敏感保留标签的独立 SharePoint Online 团队网站的 DLP 策略](media/2ff4cc53-87a8-43e3-b637-3068d88409f3.png)
   
 接下来，使用以下步骤配置 DLP 策略，该策略可在用户在组织外共享关于 SharePoint Online 高度机密团队网站的文档时阻止用户。
   
@@ -203,9 +203,9 @@ ms.locfileid: "34156894"
     
     或者，键入或粘贴自己的策略提示，指示用户如何在组织外共享文件。
     
-16. 单击“确定”****。
+16. 单击“确定”。
     
-17. 在“如果检测到敏感信息，希望采取什么操作?”**** 窗格中，单击“下一步”****。
+17. 在“**如果检测到敏感信息，希望采取什么操作?**”窗格中，在“**共享特定数量的敏感信息时进行检测**”下方单击“**限制访问或加密内容**”，然后单击“**下一步**”。
     
 18. 在“是否希望立即启用策略或先进行测试?”**** 窗格中，单击“是，立即启用”****，然后单击“下一步”****。
     
@@ -213,7 +213,7 @@ ms.locfileid: "34156894"
     
 以下为高度机密的 SharePoint Online 团队网站的配置结果。
   
-![使用高度机密保留标签的独立 SharePoint Online 团队网站的 DLP 策略。](media/f705d3d0-23c9-4333-8b70-ad3b91f835ea.png)
+![使用高度机密保留标签的独立 SharePoint Online 团队网站的 DLP 策略](media/f705d3d0-23c9-4333-8b70-ad3b91f835ea.png)
   
 ## <a name="next-step"></a>后续步骤
 
