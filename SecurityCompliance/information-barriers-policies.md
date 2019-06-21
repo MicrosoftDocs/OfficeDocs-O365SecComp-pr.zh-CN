@@ -11,12 +11,12 @@ ms.collection:
 - M365-security-compliance
 localization_priority: None
 description: 了解如何在 Microsoft 团队中定义信息障碍策略。
-ms.openlocfilehash: fb162e380fa467cf3e832bd7bbdafcde136b1db6
-ms.sourcegitcommit: 087cf1a022b13c46e207270d6837f09a9752c972
+ms.openlocfilehash: fd091ce213159363a11d9dce378e38f55e132c89
+ms.sourcegitcommit: b00c8fe1827d24f055a3076c10f284ff9ee3e04b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 06/20/2019
-ms.locfileid: "35083860"
+ms.locfileid: "35113246"
 ---
 # <a name="define-policies-for-information-barriers-preview"></a>定义信息障碍策略 (预览)
 
@@ -134,7 +134,7 @@ ms.locfileid: "35083860"
 
 ### <a name="using-equals-and-not-equals-in-segment-definitions"></a>在段定义中使用 "等于" 和 "不等于"
 
-在上面显示的第一个示例中, 我们定义了包含逻辑的片段, 即 "*部门" 等于 "HR*"。 您还可以使用 "not 等于" 参数定义段, 如以下示例所示:
+在上面显示的第一个示例中, 我们定义了 "部门等于 HR" 这一段。 该分段包含一个 "等于" 参数。 您还可以使用 "not 等于" 参数定义段, 如以下示例所示:
 
 语法`New-OrganizationSegment -Name "segmentname" -UserGroupFilter "attribute -ne 'attributevalue'"`
 

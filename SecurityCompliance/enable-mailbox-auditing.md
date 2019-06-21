@@ -15,12 +15,12 @@ search.appverid:
 - MET150
 ms.assetid: aaca8987-5b62-458b-9882-c28476a66918
 description: 默认情况下, 邮箱审核日志记录在 Microsoft 365 (也称为默认邮箱审核或邮箱审核) 中处于打开状态。 这意味着邮箱所有者、代理人和管理员执行的某些操作将自动记录在邮箱审核日志中, 在此日志中可以搜索在邮箱上执行的活动。
-ms.openlocfilehash: 8e5901586b6ee8e34d3e71b0b256f9aa7c86c7de
-ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
+ms.openlocfilehash: f100fa1eb8244aeaea463440025ee489ec019406
+ms.sourcegitcommit: ef2657e4221296be7032191f2d91e8ff727523c6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "34154774"
+ms.lasthandoff: 06/21/2019
+ms.locfileid: "35117687"
 ---
 # <a name="manage-mailbox-auditing"></a>管理邮箱审核
 
@@ -109,7 +109,7 @@ Get-OrganizationConfig | Format-List AuditDisabled
 |**FolderBind**|已访问某个邮箱文件夹。 当管理员或委派打开邮箱时, 也会记录此操作。 <br/><br/> **注意**: 代理执行的文件夹绑定操作的审核记录已合并。 在24小时内为单个文件夹访问生成一个审核记录。|![复选标记](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![复选标记](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)||
 |**HardDelete**|已将某个邮件从"已恢复邮件"文件夹中清除。|![复选标记](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)<sup>\*</sup>|![复选标记](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)<sup>\*</sup>|![复选标记](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)<sup>\*</sup>|
 |**Mailboxlogin 该值**|用户已登录到其邮箱。 |||![复选标记](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|
-|**MessageBind**|**注意**: 此操作已从 Exchange Online 中弃用, 不再可添加到管理员邮箱操作列表中。<br/><br/> 在预览窗格查看邮件或打开邮件。|![复选标记](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|||
+|**MessageBind**|在预览窗格查看邮件或打开邮件。|![复选标记](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|||
 |**ModifyFolderPermissions**|**注意**: 虽然此值被接受为邮箱操作, 但它已包含在**UpdateFolderPermissions**操作中, 并且不会单独审核。 换言之, 请勿使用此值。||||
 |**移动**|已将某个邮件移至另一个文件夹。|![复选标记](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![复选标记](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![复选标记](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|
 |**MoveToDeletedItems**|邮件已被删除并移动到 "已删除邮件" 文件夹。|![复选标记](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)<sup>\*</sup>|![复选标记](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)<sup>\*</sup>|![复选标记](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)<sup>\*</sup>|
