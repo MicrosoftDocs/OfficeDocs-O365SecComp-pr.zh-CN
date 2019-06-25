@@ -3,7 +3,7 @@ title: 定义信息屏障策略
 ms.author: deniseb
 author: denisebmsft
 manager: laurawi
-ms.date: 06/21/2019
+ms.date: 06/24/2019
 audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
@@ -11,12 +11,12 @@ ms.collection:
 - M365-security-compliance
 localization_priority: None
 description: 了解如何在 Microsoft 团队中定义信息障碍策略。
-ms.openlocfilehash: 4f63d79f59741f74d2ac8167a8cd86717c6f9ec4
-ms.sourcegitcommit: c603a07d24c4c764bdcf13f9354b3b4b7a76f656
+ms.openlocfilehash: f6a570675130410acc702ef9f8ca99bf87b7501b
+ms.sourcegitcommit: 7c48ce016fa9f45a3813467f7c5a2fd72f9b8f49
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/21/2019
-ms.locfileid: "35131376"
+ms.lasthandoff: 06/25/2019
+ms.locfileid: "35203731"
 ---
 # <a name="define-policies-for-information-barriers-preview"></a>定义信息障碍策略 (预览)
 
@@ -29,20 +29,6 @@ ms.locfileid: "35131376"
 > [!TIP]
 > 本文包含一个[示例方案](#example-contosos-departments-segments-and-policies)和一个[可下载的 Excel 工作簿](https://github.com/MicrosoftDocs/OfficeDocs-O365SecComp/raw/public/SecurityCompliance/media/InfoBarriers-PowerShellGenerator.xlsx), 可帮助您规划和定义信息障碍策略。
 
-## <a name="concepts-of-information-barrier-policies"></a>信息屏障策略的概念
-
-了解信息屏障策略的基本概念很有帮助:
-
-- **用户帐户属性**是在 Azure Active Directory (或 Exchange Online) 中定义的。 这些属性可以包括部门、职务、位置、团队名称和其他作业配置文件详细信息。 
-
-- **分段**是在 Office 365 安全 & 合规性中心中使用选定的**用户帐户属性**定义的用户集。 (请参阅[支持的属性列表](information-barriers-attributes.md)。) 
-
-- **信息屏障策略**决定了通信限制或限制。 在定义信息障碍策略时, 可以从以下两种策略中进行选择:
-    - "块" 策略防止一个分段与另一个网段通信。
-    - "允许" 策略允许一段仅与某些其他段进行通信。
-
-- **策略应用程序**在定义所有信息屏障策略之后完成, 并准备好在您的组织中应用它们。
-
 ## <a name="the-work-flow-at-a-glance"></a>工作流一览
 
 |阶段    |涉及的内容  |
@@ -51,7 +37,7 @@ ms.locfileid: "35131376"
 |[第1部分: 组织中的用户区段](#part-1-segment-users)     |-确定所需的策略<br/>-创建要定义的段的列表<br/>-确定要使用的属性<br/>-在策略筛选器方面定义段        |
 |[第2部分: 定义信息屏障策略](#part-2-define-information-barrier-policies)     |-定义你的策略 (尚不应用)<br/>-从两种类型 (阻止或允许) 中选择 |
 |[第3部分: 应用信息屏障策略](#part-3-apply-information-barrier-policies)     |-将策略设置为活动状态<br/>-运行策略应用程序<br/>-查看策略状态         |
-|(根据需要)[编辑段或策略](#edit-a-segment-or-a-policy)     |-编辑分段<br/>-编辑或删除策略<br/>-运行策略应用程序<br/>-查看策略状态         |
+|(根据需要)[编辑段或策略](information-barriers-edit-segments-policies.md.md)    |-编辑分段<br/>-编辑或删除策略<br/>-重新运行策略应用程序<br/>-查看策略状态         |
 |(根据需要)[故障排除](information-barriers-troubleshooting.md)|-当事情未按预期工作时执行操作|
 
 ## <a name="prerequisites"></a>先决条件
@@ -113,38 +99,44 @@ ms.locfileid: "35131376"
 
 ### <a name="define-segments-using-powershell"></a>使用 PowerShell 定义段
 
-定义段不会对用户产生影响;它只是设置要定义并应用的信息屏障策略的阶段。
-
-若要定义组织段, 请使用**OrganizationSegment** Cmdlet 和**UserGroupFilter**参数, 该参数对应于要使用的[属性](information-barriers-attributes.md)。
-
-语法`New-OrganizationSegment -Name "segmentname" -UserGroupFilter "attribute -eq 'attributevalue'"`
-
-示例：`New-OrganizationSegment -Name "HR" -UserGroupFilter "Department -eq 'HR'"`
-
-在此示例中, 使用*hr*("*部门*" 属性中的值) 定义名为*hr*的字段。 Cmdlet 的 "-eq" 部分指的是 "等于"。
-
-对要定义的每个段重复此过程。
-
-在运行每个 cmdlet 之后, 您应该会看到有关新段的详细信息列表。 详细信息包括段的类型、创建者或最后修改的人, 等等。 
-
 > [!IMPORTANT]
 > **请确保您的段不重叠**。 将受到信息障碍影响的每个用户应属于一个 (且仅有一个) 网段。 任何用户都不应属于两个或多个段。 (请参阅本文中[的 Contoso 定义的部分](#contosos-defined-segments)。)
 
-定义了分段后, 请继续定义信息屏障策略。
+定义段不会对用户产生影响;它只是设置要定义并应用的信息屏障策略的阶段。
+
+1. 使用**OrganizationSegment** Cmdlet 和**UserGroupFilter**参数, 该参数对应于要使用的[属性](information-barriers-attributes.md)。
+    
+    语法`New-OrganizationSegment -Name "segmentname" -UserGroupFilter "attribute -eq 'attributevalue'"`
+    
+    示例：`New-OrganizationSegment -Name "HR" -UserGroupFilter "Department -eq 'HR'"`
+    
+    在此示例中, 使用*hr*("*部门*" 属性中的值) 定义名为*hr*的字段。 Cmdlet 的 **-eq**部分引用了 "等于"。 (也可以使用 **-ne**表示 "不等于"。 请参阅[在分段定义中使用 "等于" 和 "不等于"](#using-equals-and-not-equals-in-segment-definitions)。)
+
+    在运行每个 cmdlet 之后, 您应该会看到有关新段的详细信息列表。 详细信息包括段的类型、创建者或最后修改的人, 等等。 
+
+2. 对要定义的每个段重复此过程。
+
+定义了分段后, 请继续[定义信息屏障策略](#part-2-define-information-barrier-policies)。
 
 ### <a name="using-equals-and-not-equals-in-segment-definitions"></a>在段定义中使用 "等于" 和 "不等于"
 
-在上面显示的第一个示例中, 我们定义了 "部门等于 HR" 这一段。 该分段包含一个 "等于" 参数。 您还可以使用 "not 等于" 参数定义段, 如以下示例所示:
+在下面的示例中, 我们定义了 "部门等于 HR" 的段。 
 
-语法`New-OrganizationSegment -Name "segmentname" -UserGroupFilter "attribute -ne 'attributevalue'"`
+**示例**：`New-OrganizationSegment -Name "HR" -UserGroupFilter "Department -eq 'HR'"`
 
-示例：`New-OrganizationSegment -Name "NotSales" -UserGroupFilter "Department -ne 'Sales'"`
+请注意, 段定义包含一个表示为 **-eq**的 "等于" 参数。 
 
-在此示例中, 我们定义了一个名为 NotSales 的字段, 其中包括不在销售中的所有人。 Cmdlet 的 "-ne" 部分引用 "不等于"。
+您还可以使用 "not 等于" 参数 (表示为 **-ne**) 定义线段, 如下面的示例所示:
 
-此外, 还可以使用 "等于" 和 "不等于" 参数定义一个段。
+**语法**:`New-OrganizationSegment -Name "segmentname" -UserGroupFilter "attribute -ne 'attributevalue'"`
 
-示例：`New-OrganizationSegment -Name "LocalFTE" -UserGroupFilter "Location -eq 'Local'" and "Position -ne 'Temporary'"`
+**示例**：`New-OrganizationSegment -Name "NotSales" -UserGroupFilter "Department -ne 'Sales'"`
+
+在此示例中, 我们定义了一个名为*NotSales*的字段, 其中包括不在*销售*中的所有人。 Cmdlet 的 **-ne**部分引用 "不等于"。
+
+除了使用 "等于" 或 "不等于" 定义段之外, 您还可以使用 "等于" 和 "不等于" 参数定义一个段。
+
+**示例**：`New-OrganizationSegment -Name "LocalFTE" -UserGroupFilter "Location -eq 'Local'" and "Position -ne 'Temporary'"`
 
 在此示例中, 我们定义了一个名为 " *LocalFTE* " 的字段, 其中包括本地定位且其位置未列为*临时*的用户。
 
@@ -250,117 +242,6 @@ ms.locfileid: "35131376"
 |最新的信息屏障策略应用程序     | 使用**InformationBarrierPoliciesApplicationStatus** cmdlet。 <p>语法`Get-InformationBarrierPoliciesApplicationStatus`<p>    这将显示有关策略应用程序是已完成、失败还是正在进行的信息。       |
 |所有信息屏障策略应用程序|改用`Get-InformationBarrierPoliciesApplicationStatus -All $true`<p>这将显示有关策略应用程序是已完成、失败还是正在进行的信息。|
 
-## <a name="stop-a-policy-application"></a>停止策略应用程序
-
-如果在您开始应用信息屏障策略后, 您想要停止应用这些策略, 请使用以下过程。 请注意, 此过程将需要大约30-35 分钟才能开始。
-
-1. 若要查看最新信息屏障策略应用程序的状态, 请使用**InformationBarrierPoliciesApplicationStatus** cmdlet。
-
-    语法`Get-InformationBarrierPoliciesApplicationStatus`
-
-    记下应用程序的 GUID。
-
-2. 将**InformationBarrierPoliciesApplication** Cmdlet 与 Identity 参数一起使用。
-
-    语法`Stop-InformationBarrierPoliciesApplication -Identity GUID`
-
-    示例：`Stop-InformationBarrierPoliciesApplication -Identity 46237888-12ca-42e3-a541-3fcb7b5231d1`
-
-    在此示例中, 我们将停止应用信息屏障策略。
-
-## <a name="edit-a-segment-or-a-policy"></a>编辑段或策略
-
-### <a name="edit-a-segment"></a>编辑段
-
-1. 若要查看所有现有段, 请使用**OrganizationSegment** cmdlet。
-    
-    语法`Get-OrganizationSegment`
-
-    你将看到每个段的列表和详细信息, 如段类型、其 UserGroupFilter 值、创建日期或上次修改时间、GUID 等。
-
-    > [!TIP]
-    > 打印或保存段列表以便日后参考。 例如, 如果您想要编辑某一段, 则需要知道它的名称或标识值 (这与 Identity 参数一起使用)。
-
-2. 若要编辑分段, 请使用**OrganizationSegment** Cmdlet 和**Identity**参数以及相关详细信息。 
-
-    语法`Set-OrganizationSegment -Identity GUID -UserGroupFilter "attribute -eq 'attributevalue'"`
-
-    示例：`Set-OrganizationSegment -Identity c96e0837-c232-4a8a-841e-ef45787d8fcd -UserGroupFilter "Department -eq 'HRDept'"`
-
-    在此示例中, 对于具有 GUID *c96e0837-c232-4a8a-841e-ef45787d8fcd*的段, 我们将部门名称更新为 "HRDept"。
-
-为组织编辑完段后, 可以继续[定义](#part-2-define-information-barrier-policies)或[编辑](#edit-a-policy)信息屏障策略。
-
-### <a name="edit-a-policy"></a>编辑策略
-
-1. 若要查看当前信息屏障策略的列表, 请使用**InformationBarrierPolicy** cmdlet。
-
-    语法`Get-InformationBarrierPolicy`
-
-    在结果列表中, 标识要更改的策略。 记下策略的 GUID 和名称。
-
-2. 将**InformationBarrierPolicy** Cmdlet 与**Identity**参数一起使用, 并指定要进行的更改。
-
-    示例: 假设定义了一个策略来阻止与*销售*和*市场营销*部门通信的*研究*分段。 该策略是使用以下 cmdlet 定义的:`New-InformationBarrierPolicy -Name "Research-SalesMarketing" -AssignedSegment "Research" -SegmentsBlocked "Sales","Marketing"`
-    
-    假设我们要对其进行更改, 以便*研究*部门中的人员只能与*HR*部门中的人员进行通信。 若要进行此更改, 我们使用以下 cmdlet:`Set-InformationBarrierPolicy -Identity 43c37853-ea10-4b90-a23d-ab8c93772471 -SegmentsAllowed "HR"`
-
-    在此示例中, 我们将 "SegmentsBlocked" 更改为 "SegmentsAllowed", 并指定*HR*段。
-
-3. 完成策略的编辑后, 请确保应用所做的更改。 (请参阅[Apply 信息屏障策略](#part-3-apply-information-barrier-policies)。)
-
-### <a name="remove-a-policy"></a>删除策略
-
-1. 若要查看当前信息屏障策略的列表, 请使用**InformationBarrierPolicy** cmdlet。
-
-    语法`Get-InformationBarrierPolicy`
-
-    在结果列表中, 标识要删除的策略。 记下策略的 GUID 和名称。 请确保将策略设置为非活动状态。
-
-2. 将**InformationBarrierPolicy** Cmdlet 与 Identity 参数一起使用。
-
-    语法`Remove-InformationBarrierPolicy -Identity GUID`
-
-    示例: 假设我们要删除 GUID 为*43c37853-ea10-4b90-a23d-ab8c93772471*的策略。 为此, 我们使用此 cmdlet:
-    
-    `Remove-InformationBarrierPolicy -Identity 43c37853-ea10-4b90-a23d-ab8c93772471`
-
-    出现提示时, 请确认更改。
-
-3. 对要删除的每个策略重复步骤1-2。
-
-4. 删除完策略后, 应用所做的更改。 为此, 请使用**InformationBarrierPoliciesApplication** cmdlet。
-
-    语法`Start-InformationBarrierPoliciesApplication`
-
-    为您的组织应用更改的用户。 如果您的组织规模较大, 则可能需要24小时 (或更多) 才能完成此过程。
-
-### <a name="set-a-policy-to-inactive-status"></a>将策略设置为非活动状态
-
-1. 若要查看当前信息屏障策略的列表, 请使用**InformationBarrierPolicy** cmdlet。
-
-    语法`Get-InformationBarrierPolicy`
-
-    在结果列表中, 标识要更改 (或删除) 的策略。 记下策略的 GUID 和名称。
-
-2. 若要将策略的状态设置为 "非活动", 请使用带有 Identity 参数的**InformationBarrierPolicy** cmdlet, 将 State 参数设置为 "非活动"。
-
-    语法`Set-InformationBarrierPolicy -Identity GUID -State Inactive`
-
-    `Set-InformationBarrierPolicy -Identity 43c37853-ea10-4b90-a23d-ab8c9377247 -State Inactive`
-
-    在此示例中, 我们将具有 GUID *43c37853-ea10-4b90-a23d-ab8c9377247*的信息屏障策略设置为非活动状态。
-
-3. 若要应用所做的更改, 请使用**InformationBarrierPoliciesApplication** cmdlet。
-
-    语法`Start-InformationBarrierPoliciesApplication`
-
-    为您的组织应用更改的用户。 如果您的组织规模较大, 则可能需要24小时 (或更多) 才能完成此过程。 (一般原则是, 处理5000用户帐户需要大约一小时的时间。)
-
-在这种情况下, 一个或多个信息障碍策略将设置为非活动状态。 在这里, 您可以执行以下任一操作:
-- 将其保留为 (策略设置为非活动状态对用户没有影响)
-- [编辑策略](#edit-a-policy) 
-- [删除策略](#remove-a-policy)
 
 ## <a name="example-contosos-departments-segments-and-policies"></a>示例: Contoso 的部门、分段和策略
 
@@ -414,6 +295,8 @@ Contoso 定义了三种策略, 如下表所述:
 完成后, Contoso 就符合法律和行业要求。
 
 ## <a name="related-articles"></a>相关文章
+
+[编辑或删除信息障碍策略 (预览)](information-barriers-edit-segments-policies.md.md)
 
 [获取信息障碍概述](information-barriers.md)
 
