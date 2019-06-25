@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 借助保留策略，可主动决定是保留内容还是删除内容，亦或是先保留再删除内容；可将一个策略应用于整个组织，或只应用于特定位置或用户；并能将策略应用于所有内容，或只应用于满足特定条件的内容。
-ms.openlocfilehash: 43948106c69f2a49ce36631acc9d14365d8a2eb9
-ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
+ms.openlocfilehash: 8abb14550df526d702854e43ae1e25496bf390d4
+ms.sourcegitcommit: c603a07d24c4c764bdcf13f9354b3b4b7a76f656
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "34156964"
+ms.lasthandoff: 06/21/2019
+ms.locfileid: "35131388"
 ---
 # <a name="overview-of-retention-policies"></a>保留策略概述
 
@@ -78,11 +78,14 @@ ms.locfileid: "34156964"
   
 请注意，如果用户尝试删除受到保留策略约束的库、列表、文件夹或网站，则会收到错误。如果用户先移动或删除受到该策略约束的文件夹的所有文件，则可删除该文件夹。另请注意，仅在需要将第一个项目复制到库时才创建保留库（而不是在创建保留策略时）。因此，要测试该策略，你首先需要编辑或删除受到该策略约束的网站中的文档，然后浏览到该保留库以查看所保留的副本。
   
-![SharePoint 和 OneDrive 中的保留流关系图](media/858702f8-5a09-4464-86d0-3b16fed800f3.png)
+![SharePoint 和 OneDrive 中的内容生命周期关系图](Retention_Diagram_of_retention_flow_in_sites.png)
   
 向 OneDrive 帐户或 SharePoint 网站分配保留策略后，内容有两条路可走：
   
-1. **如果用户在保留期内修改或删除内容**：在演示文稿保留库中创建在保留策略分配时存在的原始内容的副本。随后，计时器作业定期运行，并确定保留期到期的项，这些项在保留期到期后的 7 天内被永久删除。 
+1. **如果内容在保持期内遭修改或删除**：则会在保留库中创建在分配保留策略时存在的原始内容的副本。 此时，计时器作业会定期运行，并发现保持期已到期的项，并将这些项移到第二阶段回收站（其中的项在第 93 天结束时永久删除）。 请注意，第二阶段回收站对最终用户不可见（仅第一阶段回收站可见），但网站集管理员可以在其中查看和还原内容。
+
+    > [!NOTE]
+    > 我们最近更改了从保留库中删除内容的方式。 为了防止意外的数据丢失，不再从保留库中永久删除内容。 相反，只从回收站中永久删除内容，因此保留库中的所有内容现在都要移到第二阶段回收站。
     
 2. **如果用户在保留期内未修改或删除内容**：内容会在保留期到期时移至第一阶段回收站。如果用户从中删除内容或清空此回收站（亦称为“清除”），文档会移至第二阶段回收站。93 天保留期包含在第一阶段和第二阶段回收站中的保留时间。93 天过后，文档会从其驻留的任何位置（第一阶段或第二阶段回收站）被永久删除。请注意，由于未将回收站编入索引，因此无法搜索查找内容。也就是说，电子数据展示保留无法保留内容，因为在回收站中找不到任何内容。 
     
@@ -102,7 +105,7 @@ ms.locfileid: "34156964"
   
 向邮箱或公用文件夹分配保留策略后，内容有两条路可走：
   
-1. **如果用户在保留期内修改或永久删除项**（按 SHIFT+DELETE 或从“已删除项”文件夹中删除）：项移至（如果用户编辑项，则项复制到）“可恢复项”文件夹中。随后，有一个流程会定期运行，并确定保留期到期的项，这些项在保留期到期后的 14 天内被永久删除。请注意，默认设置为 14 天，但也可最多配置为 30 天。 
+1. **如果用户在保留期内修改或永久删除项**（按 SHIFT+DELETE 或从“已删除项”文件夹中删除）：项移至（如果用户编辑项，则项复制到）“可恢复项”文件夹中。随后，有一个流程会定期运行，并确定保留期到期的项，这些项在保留期到期后的 14 天内被永久删除。请注意，默认设置为 14 天，但也可最多配置为 30 天。
     
 2. **如果用户在保留期内未修改或删除项**：同一流程定期对邮箱中的所有文件夹运行，并确定保留期到期的项，这些项在保留期到期后的 14 天内被永久删除。请注意，默认设置为 14 天，但也可最多配置为 30 天。 
     
@@ -260,7 +263,8 @@ ms.locfileid: "34156964"
 使用 PowerShell，可以从保留策略中排除特定类型的 Exchange 项。例如，可以排除语音邮件、IM 对话和邮箱中的其他 Skype for Business Online 内容。此外，还可以排除日历、笔记和任务项。此功能只能通过 PowerShell 使用；无法在创建保留策略时的 UI 中使用它。
   
 为此，请使用 `New-RetentionComplianceRule` 和 `Set-RetentionComplianceRule` cmdlet 的 `ExcludedItemClasses` 参数。若要详细了解 PowerShell，请参阅下面的[查找保留策略的 PowerShell cmdlet](#find-the-powershell-cmdlets-for-retention-policies) 部分。
-  
+
+
 ## <a name="locking-a-retention-policy"></a>锁定保留策略
 一些组织可能需要遵守监管机构法规，如美国证券交易委员会 (SEC) 法规 17a-4，这条法规要求在启用保留策略后，不得禁用保留策略或削弱它的限制性。使用保留锁定，可以锁定保留策略，包括管理员在内的任何人都无法禁用保留策略或削弱它的限制性。
   
@@ -294,6 +298,24 @@ ms.locfileid: "34156964"
 
 ![已在 PowerShell 中显示所有参数的锁定策略](media/retention-policy-preservation-lock-locked-policy.PNG)
   
+## <a name="releasing-a-retention-policy"></a>解除保留策略
+
+可随时禁用或删除保留策略。 当你这样做时，任何被保留的 SharePoint 或 OneDrive 内容都不会立即遭永久删除。 相反，为了防止意外的数据丢失，我们设置了 30 天的宽限期。在此期间，相应策略的内容不会在保留库中到期，所以你可以根据需要从其中还原任何内容。 还可以在宽限期内重新启用保留策略，相应策略的任何内容都不会遭删除。 可以通过使用 PowerShell 来配置此宽限期。
+
+首先，[连接到 Office 365 安全与合规中心 PowerShell](http://go.microsoft.com/fwlink/p/?LinkID=799771)。
+
+然后，运行此 PowerShell 脚本。 可以将租户订阅设置中的 `ip_tenantGracePeriodInDays` 属性设置为介于 0-100 天之间的任意值。 如果将此属性设置为 0，则无宽限期，任何保留策略都会立即解除。 
+
+`
+$siteSubscription = Get-SPSiteSubscription -Identity 
+$siteSubScriptionId 
+$siteSubSettingsMgr = [Microsoft.SharePoint.SPSiteSubscriptionSettingsManager]::Local
+$properties = $siteSubSettingsMgr.GetProperties($siteSubscription)
+$properties.SetValue("ip_tenantGracePeriodInDays",  30)
+`
+
+SharePoint 和 OneDrive 中的此 30 天宽限期对应于 Exchange 中的 30 天延迟保留。 有关详细信息，请参阅[管理延迟保留的邮箱](https://docs.microsoft.com/zh-CN/office365/securitycompliance/identify-a-hold-on-an-exchange-online-mailbox#managing-mailboxes-on-delay-hold)。
+
 ## <a name="the-principles-of-retention-or-what-takes-precedence"></a>保留原则或优先级
 
 内容可能或甚至很有可能有多个应用的保留策略，每个策略的操作（保留、删除或先保留再删除）和保留期都不同。优先级是什么？最高优先级是，一个策略保留的内容一定不得被另一个策略永久删除。
