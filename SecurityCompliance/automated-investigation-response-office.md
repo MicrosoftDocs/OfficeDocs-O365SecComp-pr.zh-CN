@@ -3,7 +3,7 @@ title: 使用 Office 365 的自动化调查和响应 (空中)
 ms.author: deniseb
 author: denisebmsft
 manager: laurawi
-ms.date: 03/25/2019
+ms.date: 06/25/2019
 audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
@@ -13,12 +13,12 @@ search.appverid:
 - MOE150
 ms.collection: M365-security-compliance
 description: 了解 Office 365 高级威胁防护中的自动化调查和响应功能。
-ms.openlocfilehash: bb992a4ebd9bf10f2659929bab4357117ea1c254
-ms.sourcegitcommit: b9d8a43cb3afcdc8820bc9470c5707eff8fc6616
+ms.openlocfilehash: 4d611d9549ed3f5cda06274ea9209cdc6350ba7b
+ms.sourcegitcommit: bac1b5be5db381e6f8d8f652cff1f8ef4d7f6330
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/11/2019
-ms.locfileid: "34852616"
+ms.lasthandoff: 06/26/2019
+ms.locfileid: "35233329"
 ---
 # <a name="automated-investigation-and-response-air-with-office-365"></a>使用 Office 365 的自动化调查和响应 (空中)
 
@@ -37,7 +37,8 @@ ms.locfileid: "34852616"
 3. 包含在传递后删除的恶意软件的电子邮件 *
 4. 包含在传递后删除的网络钓鱼 Url 的电子邮件 *
 
-***注意**: 已将安全 & 合规性中心中的各个警报策略的 "信息性" 严重性分配到 "电子邮件通知" 关闭状态。 可以通过警报策略配置启用这些策略。
+> [!NOTE]
+> 已将这些警报分配给安全 & 合规性中心内的各个警报策略中的 "信息性" 严重性, 并关闭电子邮件通知。 可以通过警报策略配置启用这些策略。
 
 若要查看警报, 请在安全 & 合规性中心中, 选择 "**通知** > " "**查看警报**"。 选择一个警报以查看其详细信息, 然后在那里使用 "**查看调查**" 链接转到相应的[调查](#investigation-graph)。 请注意, 默认情况下通知视图中隐藏了信息警报。 若要查看它们, 您需要更改警报筛选以包含信息警报。
 
@@ -56,18 +57,14 @@ ms.locfileid: "34852616"
 
 作为空气的一部分, 安全行动手册在几个阶段推出
 
-- **第1阶段 (4 月 2019)**: 行动手册包含安全管理员查看和批准的操作建议。 
+- **第1阶段 (4 月 2019)**: 行动手册包含安全管理员查看和批准的操作建议。 阶段1将包括以下行动手册:
+    - 用户报告的网络钓鱼邮件
+    - URL 单击 "判定更改" 
+    - 恶意软件检测到送达后 (恶意软件 ZAP)
+    - 网络钓鱼检测到传递后的 ZAP (网络钓鱼 ZAP)
+    - 手动电子邮件调查 (使用威胁资源管理器)
 
-- **阶段 2 (6 月2019日)**: 行动手册改进和安全管理员可以选择将安全行动手册配置为在没有管理交互的情况下自动执行某些操作。
-
-阶段1将包括以下行动手册:
-- 用户报告的网络钓鱼邮件
-- URL 单击 "判定更改" 
-- 恶意软件检测到送达后 (恶意软件 ZAP)
-- 网络钓鱼检测到传递后的 ZAP (网络钓鱼 ZAP)
-- 手动电子邮件调查 (使用威胁资源管理器)
-
-规划第2阶段的其他几项行动手册。
+- **第2阶段 (2019 的下半年)**: 几项新行动手册和行动手册改进, 以及安全管理员配置安全行动手册以在不进行管理交互的情况下自动执行某些操作的选项。 
 
 ### <a name="playbooks-include-investigation-and-recommendations"></a>行动手册包括调查和建议
 
