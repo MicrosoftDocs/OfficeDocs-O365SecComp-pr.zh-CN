@@ -331,7 +331,7 @@
 #### [修正处理数据时出现的错误](compliance20/error-remediation.md)
 
 ### [收集事例数据](compliance20/collecting-data-for-ediscovery.md)
-#### [创建搜索项来收集数据](compliance20/create-search-to-collect-data.md)
+#### [创建搜索](compliance20/create-search-to-collect-data.md)
 #### [生成搜索查询](compliance20/building-search-queries.md)
 #### [搜索统计信息](compliance20/search-statistics.md)
 #### [将搜索结果添加到审阅集](compliance20/add-data-to-review-set.md)
@@ -538,7 +538,7 @@
 ### [定义信息屏障策略（预览）](information-barriers-policies.md)
 ### [信息屏障策略的属性（预览）](information-barriers-attributes.md)
 ### [信息屏障疑难解答（预览）](information-barriers-troubleshooting.md)
-### [编辑或删除信息屏障策略（预览）](information-barriers-edit-segments-policies.md.md)
+### [编辑信息屏障策略（预览）](information-barriers-edit-segments-policies.md.md)
 
 
 ## 客户密钥
