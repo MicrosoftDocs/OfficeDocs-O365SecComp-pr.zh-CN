@@ -3,7 +3,7 @@ title: 定义信息屏障策略
 ms.author: deniseb
 author: denisebmsft
 manager: laurawi
-ms.date: 06/24/2019
+ms.date: 06/26/2019
 audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
@@ -11,12 +11,12 @@ ms.collection:
 - M365-security-compliance
 localization_priority: None
 description: 了解如何在 Microsoft 团队中定义信息障碍策略。
-ms.openlocfilehash: f6a570675130410acc702ef9f8ca99bf87b7501b
-ms.sourcegitcommit: 7c48ce016fa9f45a3813467f7c5a2fd72f9b8f49
+ms.openlocfilehash: 0603b5339672be3b4ac6ad4a18c6032f563acf27
+ms.sourcegitcommit: 1c254108c522d0cb44023565268b5041d07748aa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/25/2019
-ms.locfileid: "35203731"
+ms.lasthandoff: 06/27/2019
+ms.locfileid: "35279460"
 ---
 # <a name="define-policies-for-information-barriers-preview"></a>定义信息障碍策略 (预览)
 
@@ -53,7 +53,9 @@ ms.locfileid: "35203731"
 
 - **审核日志记录**。 为了查找策略应用程序的状态, 审核日志记录必须处于打开状态。 我们建议您在开始定义段或策略之前执行此操作。 若要了解详细信息, 请参阅[打开或关闭 Office 365 审核日志搜索](turn-audit-log-search-on-or-off.md)。
 
-- **PowerShell**。 目前, 信息屏障策略在 Office 365 Security & 合规性中心 (使用 PowerShell cmdlet) 中进行定义和管理。 虽然本文中提供了几个示例, 但您需要熟悉 PowerShell cmdlet 和参数。 [连接到 Office 365 安全 & 合规性中心 PowerShell](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell?view=exchange-ps)。
+- **PowerShell**。 目前, 信息屏障策略在 Office 365 Security & 合规性中心 (使用 PowerShell cmdlet) 中进行定义和管理。 虽然本文中提供了几个示例, 但您需要熟悉 PowerShell cmdlet 和参数。 您还将需要 AzureRM 模块。
+    - [连接到 Office 365 安全与合规中心 PowerShell](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell?view=exchange-ps)
+    - [安装 Azure PowerShell 模块](https://docs.microsoft.com/powershell/azure/install-az-ps?view=azps-2.3.2)
 
 - **Microsoft 团队中的信息障碍的管理员同意**。 如果你的策略已准备就绪, 则信息障碍可以从聊天会话中删除那些不应处于其中的人。 这有助于确保您的组织遵守策略和管理法规。 使用以下过程可使信息障碍策略在 Microsoft 团队中按预期方式工作。 
 

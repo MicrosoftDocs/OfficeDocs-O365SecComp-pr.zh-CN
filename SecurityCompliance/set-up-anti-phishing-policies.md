@@ -12,12 +12,12 @@ ms.assetid: 5a6f2d7f-d998-4f31-b4f5-f7cbf6f38578
 ms.collection:
 - M365-security-compliance
 description: 在 office 365 Exchange Online Protection 的 Office 365 高级威胁防护和基本保护中具有全面保护的反网络钓鱼保护, 可帮助保护您的组织免受基于模拟的恶意网络钓鱼攻击和其他网络钓鱼攻击。
-ms.openlocfilehash: ebe1d4322151c1828f662ca0bf1bd495e808093d
-ms.sourcegitcommit: 2b46fba650df8d252b1dd2b3c3f080a383183a06
+ms.openlocfilehash: f73c4404c2ff2f347bc770176e5b6b25e03af88c
+ms.sourcegitcommit: 1c254108c522d0cb44023565268b5041d07748aa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "34408367"
+ms.lasthandoff: 06/27/2019
+ms.locfileid: "35279450"
 ---
 # <a name="set-up-office-365-atp-anti-phishing-and-anti-phishing-policies"></a>设置 Office 365 ATP 反网络钓鱼和反网络钓鱼策略
 
@@ -37,6 +37,9 @@ ms.locfileid: "34408367"
 2. 了解反网络钓鱼和 ATP 反网络钓鱼策略选项。
 
 3. 设置反网络钓鱼策略或 ATP 反网络钓鱼策略。
+
+>[!IMPORTANT]
+> 若要了解如何应用多种技术, 请访问[如何组合策略和保护](https://docs.microsoft.com/office365/securitycompliance/how-policies-and-protections-are-combined)。
 
 ## <a name="review-the-prerequisites"></a>查看先决条件
 
