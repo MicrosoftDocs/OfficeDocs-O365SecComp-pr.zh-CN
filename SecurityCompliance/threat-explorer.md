@@ -3,7 +3,7 @@ title: 威胁浏览器 (和实时检测)
 ms.author: deniseb
 author: denisebmsft
 manager: laurawi
-ms.date: 05/22/2019
+ms.date: 06/20/2019
 audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
@@ -15,16 +15,16 @@ ms.assetid: 82ac9922-939c-41be-9c8a-7c75b0a4e27d
 ms.collection:
 - M365-security-compliance
 description: 了解安全&amp;合规性中心中的资源管理器 (和实时检测)。
-ms.openlocfilehash: 030f866c5e86daa3dc543bddae7152e19f377d3b
-ms.sourcegitcommit: 6c0fcb82178a4ac26375545f328389a6852a81be
+ms.openlocfilehash: 3d2eab30b97655b692ed1bfe089b6a79834fd110
+ms.sourcegitcommit: 011bfa60cafdf47900aadf96a17eb275efa877c4
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/28/2019
-ms.locfileid: "34490528"
+ms.lasthandoff: 06/29/2019
+ms.locfileid: "35394347"
 ---
 # <a name="threat-explorer-and-real-time-detections"></a>威胁浏览器 (和实时检测)
 
-如果您的组织具有[Office 365 高级威胁防护](office-365-atp.md)(OFFICE 365 ATP), 并且您拥有[必要的权限](#required-licenses-and-permissions), 则您可以使用**资源管理器**或**实时检测**(以前的*实时报告*)。[请参阅新增功能](#new-features-in-real-time-detections)! 在 "安全 & 合规性中心" 中, 转到 "**威胁管理**", 然后选择 "**浏览器**" 或 "**实时检测**"。 
+如果您的组织具有[Office 365 高级威胁防护](office-365-atp.md)(OFFICE 365 ATP), 并且您拥有[必要的权限](#required-licenses-and-permissions), 则您可以使用**资源管理器**或**实时检测**(以前的*实时报告*)。[请参阅新增功能](#new-features-in-real-time-detections)! 在安全 & 合规性中心中, 转到 "**威胁管理**", 然后选择 "**浏览器**" 或 "**实时检测**"。 
 
 |在 ATP 计划2中, 您将看到:  |在 ATP 计划1中, 您将看到:  |
 |---------|---------|
@@ -42,26 +42,41 @@ ms.locfileid: "34490528"
 
 ## <a name="new-features-in-real-time-detections"></a>实时检测中的新功能
 
-对于 Office 365 ATP 计划1客户,*实时检测*报告以前称为 "*实时报告*"。 除了名称更改之外, 还有几个新的功能和增强功能可供推出:
+资源管理器/实时检测添加新的新字段, 旨在为您提供电子邮件领域的更完整的详细信息。 此更改的目标部分是使搜索更易于进行安全操作人员, 但最终结果是了解问题电子邮件的位置。
 
-- 在网络钓鱼视图中, 可以通过[ATP 安全链接](atp-safe-links.md)查看检测到的 url 的更多详细信息。 新的详细信息和功能包括:
-  - 电子邮件中的 Url
-  - 基于 URL 信息筛选
-  - 数据图形中显示的 URL 信息
-  - 单击时间有关在邮件中单击的数据
+这是如何完成的？ 传递状态现已分为两列:
 
-- 只要 URL 中的更改, 请单击 "判定", 您就会看到一个警告。 URL 单击 "verdicts" 可以在 URL 沙箱后更改, 或者由 ATP 安全链接保护的用户覆盖[Atp 安全链接警告](atp-safe-links-warning-pages.md)。  
- 
-通过这些增强功能, 贵组织的安全管理员可以查看比以前更多的详细信息。 安全管理员可以查看有关 URL 域、未接 Url、单击 "verdicts" 等信息, 然后相应地调整 Office 365 ATP 策略。
+- 传递操作-此电子邮件的状态是什么？
+- 送达位置-此电子邮件的路由结果
 
-> [!NOTE]
-> 当这些功能处于预览阶段时, URL 数据将在有限的天数内可用。 
+传递操作是由于现有策略或检测而导致对电子邮件执行的操作。 以下是电子邮件可能执行的操作:
+
+|附带  |Junked  |Blocked  |代替  |
+|---------|---------|---------|---------|
+|电子邮件已传递到用户的收件箱或文件夹, 用户可以直接访问它。    | 电子邮件发送到用户的 "垃圾邮件" 文件夹或 "已删除" 文件夹, 并且用户有权访问这些文件夹中的电子邮件。       | 隔离的、失败的或已丢弃的任何电子邮件。 用户完全无法访问它!     | 所有恶意附件都被替换为 .txt 文件的电子邮件, 以表明附件是恶意的。     |
+
+用户可以看到的内容及其不能执行的操作:
+
+|最终用户可以访问  |最终用户无法访问  |
+|---------|---------|
+|附带     | Blocked        |
+|Junked     | 代替        |
+
+"送达位置" 显示运行送达后的策略和检测结果。 它已链接到传递操作。 添加此字段是为了深入了解在发现问题邮件时所采取的操作。 以下是送达位置的 possilbe 值:
+
+1. 收件箱或文件夹–电子邮件位于收件箱或文件夹中 (根据您的电子邮件规则)。
+2. 本地或外部–邮箱在云上不存在, 但在本地。
+3. 垃圾邮件文件夹–在用户的 "垃圾邮件" 文件夹中的电子邮件。
+4. "已删除邮件" 文件夹–用户的 "已删除邮件" 文件夹中的电子邮件。
+5. 隔离–隔离中的电子邮件, 并且不在用户的邮箱中。
+6. 失败–电子邮件无法访问邮箱。
+7. 丢弃–电子邮件在邮件流中的某个位置丢失。
 
 ## <a name="see-malware-detected-in-email-by-technology"></a>查看电子邮件中的技术检测到恶意软件
 
-假设您想要查看 Office 365 技术在电子邮件中检测到的恶意软件。 为此, 请使用资源管理器 (或实时检测) 的[电子邮件 _GT_ 恶意软件](threat-explorer-views.md#email--malware)视图。
+假设您想要查看 Office 365 技术在电子邮件中检测到的恶意软件。 为此, 请使用[电子邮件 >](threat-explorer-views.md#email--malware)浏览器 (或实时检测) 的恶意软件视图。
 
-1. 在 "安全 & 合规中心 ([https://protection.office.com](https://protection.office.com))" 中, 选择 "**威胁管理** > **资源管理器**" (或 "**实时检测**")。 (此示例使用 Explorer。)
+1. 在 "安全性 & 合规性中心[https://protection.office.com](https://protection.office.com)() 中, 选择"**威胁管理** > **资源管理器**"(或"**实时检测**")。 (此示例使用 Explorer。)
 
 2. 在 "**视图**" 菜单中, 选择 "**电子邮件** > **恶意软件**"。<br/>![浏览器的视图菜单](media/ExplorerViewEmailMalwareMenu.png)<br/>
 
@@ -75,9 +90,9 @@ ms.locfileid: "34490528"
 
 假定您要查看通过电子邮件中的 Url 进行的网络钓鱼尝试, 包括允许、阻止和重写的 Url 的列表。 标识所单击的 Url 需要配置[ATP 安全链接](atp-safe-links.md)。 确保已为单击时的保护设置了[Atp 安全链接策略](set-up-atp-safe-links-policies.md), 然后通过 ATP 安全链接单击 "verdicts" 进行日志记录。 
 
-若要查看邮件中的网络钓鱼 Url 并单击网络钓鱼邮件中的 Url, 请使用[电子邮件 _GT_ 网络钓鱼](threat-explorer-views.md#email--phish)视图 (或实时检测)。
+若要查看邮件中的网络钓鱼 Url 并单击网络钓鱼邮件中的 Url, 请使用[电子邮件 >](threat-explorer-views.md#email--phish)浏览器 (或实时检测) 的网络钓鱼视图。
 
-1. 在 "安全 & 合规中心 ([https://protection.office.com](https://protection.office.com))" 中, 选择 "**威胁管理** > **资源管理器**" (或 "**实时检测**")。 (此示例使用 Explorer。)
+1. 在 "安全性 & 合规性中心[https://protection.office.com](https://protection.office.com)() 中, 选择"**威胁管理** > **资源管理器**"(或"**实时检测**")。 (此示例使用 Explorer。)
 
 2. 在 "**视图**" 菜单中, 选择 "**电子邮件** > **网络钓鱼**"。<br/>![浏览器的视图菜单](media/ExplorerViewEmailPhishMenu.png)<br/>
 
@@ -99,9 +114,9 @@ ms.locfileid: "34490528"
 
 ## <a name="review-email-messages-reported-by-users"></a>查看用户报告的电子邮件
 
-假设您想要查看您的组织中的用户使用[Outlook 和 web 上的 outlook 的报告邮件外接程序](enable-the-report-message-add-in.md)报告为垃圾邮件、非垃圾邮件或网络钓鱼的电子邮件。 为此, 请使用[电子邮件 _GT_ 用户报告](threat-explorer-views.md#email--user-reported)的浏览器 (或实时检测) 视图。
+假设您想要查看您的组织中的用户使用[Outlook 和 web 上的 outlook 的报告邮件外接程序](enable-the-report-message-add-in.md)报告为垃圾邮件、非垃圾邮件或网络钓鱼的电子邮件。 为此, 请使用[电子邮件 >](threat-explorer-views.md#email--user-reported)浏览器的用户报告视图 (或实时检测)。
 
-1. 在 "安全 & 合规中心 ([https://protection.office.com](https://protection.office.com))" 中, 选择 "**威胁管理** > **资源管理器**" (或 "**实时检测**")。 (此示例使用 Explorer。)
+1. 在 "安全性 & 合规性中心[https://protection.office.com](https://protection.office.com)() 中, 选择"**威胁管理** > **资源管理器**"(或"**实时检测**")。 (此示例使用 Explorer。)
 
 2. 在 "**视图**" 菜单中, 选择 "**电子邮件** > **用户报告**"。<br/>![浏览器的视图菜单](media/ExplorerViewMenuEmailUserReported.png)<br/>
 
@@ -132,6 +147,7 @@ ms.locfileid: "34490528"
 您必须具有[Office 365 ATP](office-365-atp.md)才能获取资源管理器或实时检测。
 - 资源管理器包含在 Office 365 ATP 计划2中。 
 - 实时检测报告包含在 Office 365 ATP 计划1中。
+- 计划为应由 ATP 保护的所有用户分配许可证。 (资源管理器或实时检测将显示许可用户的检测数据。)
 
 若要查看和使用资源管理器或实时检测, 您必须具有适当的权限, 例如, 授予安全管理员或安全阅读者的权限。 
 

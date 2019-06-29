@@ -1,9 +1,9 @@
 ---
-title: 编辑或删除信息障碍策略
+title: 编辑信息屏障策略
 ms.author: deniseb
 author: denisebmsft
 manager: laurawi
-ms.date: 06/24/2019
+ms.date: 06/28/2019
 audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
@@ -11,18 +11,29 @@ ms.collection:
 - M365-security-compliance
 localization_priority: None
 description: 了解如何编辑或删除信息障碍策略。
-ms.openlocfilehash: e6bed4df2329d426f86bd4cde07bdc7d1a2792cd
-ms.sourcegitcommit: 7c48ce016fa9f45a3813467f7c5a2fd72f9b8f49
+ms.openlocfilehash: c3dca18ad217b89d9f9ae78b590cfb07f4631f37
+ms.sourcegitcommit: 011bfa60cafdf47900aadf96a17eb275efa877c4
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/25/2019
-ms.locfileid: "35215645"
+ms.lasthandoff: 06/29/2019
+ms.locfileid: "35394327"
 ---
-# <a name="edit-or-remove-information-barrier-policies-preview"></a>编辑或删除信息障碍策略 (预览)
-
-## <a name="overview"></a>概述
+# <a name="edit-or-remove-information-barrier-policies-preview"></a>编辑 (或删除) 信息屏障策略 (预览)
 
 [定义信息障碍策略](information-barriers-policies.md)后, 您可能需要对这些策略或用户区段进行更改, 作为[故障排除](information-barriers-troubleshooting.md)或定期维护的一部分。 将本文用作指南。
+
+## <a name="what-do-you-want-to-do"></a>要执行什么操作？
+
+|操作  |说明 |
+|---------|---------|
+|[编辑用户帐户属性](#edit-user-account-attributes)     |填写可用于定义段的 Azure Active Directory 中的属性。<br/>当用户不包含在应使用的分段中时编辑用户帐户属性, 以更改用户所在的分段, 或使用不同的属性定义分段。         |
+|[编辑段](#edit-a-segment)     |当您想要更改分段定义的方式时编辑线段。 <br/>例如, 您可能已使用*部门*最初定义了分段, 现在想要使用另一个属性, 如*MemberOf*。         |
+|[编辑策略](#edit-a-policy)     |当您想要更改策略的工作方式时, 请编辑信息障碍策略。<br/>例如, 您可能会决定只允许在某些网段之间进行通信, 而无需阻止两个网段之间的通信。         |
+|[将策略设置为非活动状态](#set-a-policy-to-inactive-status)     |如果要对策略进行更改, 或不希望策略生效, 请将策略设置为非活动状态。         |
+|[删除策略](#remove-a-policy)     |当不再需要特定策略时, 请删除信息障碍策略。         |
+|[停止策略应用程序](#stop-a-policy-application)     |如果要停止应用信息屏障策略的过程, 请执行此操作。<br/>请注意, 停止策略应用程序不是即时的, 并且不会撤消已应用于用户的策略。         |
+|[定义信息障碍策略 (预览)](information-barriers-policies.md)     |如果不存在此类策略, 请定义信息屏障策略, 并且必须限制或限制特定用户组之间的通信。         |
+|[解决信息障碍 (预览)](information-barriers-troubleshooting.md)     |遇到信息障碍遇到意外问题时, 请参阅本文。         |
 
 > [!IMPORTANT]
 > 若要执行本文中所述的任务, 必须为您分配适当的角色, 如以下某项:<br/>-Microsoft 365 企业全局管理员<br/>-Office 365 全局管理员<br/>-合规性管理员<br/>-IB 合规性管理 (这是一个新角色!)<p>若要了解有关信息障碍的先决条件方面的详细信息, 请参阅[先决条件 (适用于信息屏障策略)](information-barriers-policies.md#prerequisites)。<p>请确保[连接到 Office 365 安全 & 合规性中心 PowerShell](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell?view=exchange-ps)。
@@ -37,16 +48,10 @@ ms.locfileid: "35215645"
 
 1. 若要查看特定用户帐户的详细信息 (如属性值和分配的段), 请使用带有 Identity 参数的**InformationBarrierRecipientStatus** cmdlet。 
 
-   语法`Get-InformationBarrierRecipientStatus -Identity <value> -Identity2 <value>` 
-    
-   您可以使用任何唯一标识每个用户的值, 如名称、别名、可分辨名称、规范域名、电子邮件地址或 GUID。 
-    
-   示例：`Get-InformationBarrierRecipientStatus -Identity meganb -Identity2 alexw` 
-    
-   在此示例中, 我们引用 Office 365 中的两个用户帐户: *meganb* for *Megan*和*alexw* for *Alex*。 
-    
-   (也可以将此 cmdlet 用于单个用户: `Get-InformationBarrierRecipientStatus -Identity <value>`) 
-    
+    |语法  |示例  |
+    |---------|---------|
+    |`Get-InformationBarrierRecipientStatus -Identity <value> -Identity2 <value>` <p>   您可以使用任何唯一标识每个用户的值, 如名称、别名、可分辨名称、规范域名、电子邮件地址或 GUID。 <p>   (也可以将此 cmdlet 用于单个用户: `Get-InformationBarrierRecipientStatus -Identity <value>`)      |`Get-InformationBarrierRecipientStatus -Identity meganb -Identity2 alexw`  <p>   在此示例中, 我们引用 Office 365 中的两个用户帐户: *meganb* for *Megan*和*alexw* for *Alex*。         |
+
 2. 为您的用户帐户配置文件确定要编辑的属性。 有关详细信息, 请参阅[信息屏障策略 (预览版) 的属性](information-barriers-attributes.md)。 
 
 3. 编辑一个或多个用户帐户, 以包含您在上一步中选择的属性的值。 为此, 请使用以下过程之一:
@@ -70,11 +75,9 @@ ms.locfileid: "35215645"
 
 2. 若要编辑分段, 请使用**OrganizationSegment** Cmdlet 和**Identity**参数以及相关详细信息。 
 
-    语法`Set-OrganizationSegment -Identity GUID -UserGroupFilter "attribute -eq 'attributevalue'"`
-
-    示例：`Set-OrganizationSegment -Identity c96e0837-c232-4a8a-841e-ef45787d8fcd -UserGroupFilter "Department -eq 'HRDept'"`
-
-    在此示例中, 对于具有 GUID *c96e0837-c232-4a8a-841e-ef45787d8fcd*的段, 我们将部门名称更新为 "HRDept"。
+    |语法  |示例  |
+    |---------|---------|
+    |`Set-OrganizationSegment -Identity GUID -UserGroupFilter "attribute -eq 'attributevalue'"`     |`Set-OrganizationSegment -Identity c96e0837-c232-4a8a-841e-ef45787d8fcd -UserGroupFilter "Department -eq 'HRDept'"` <p>在此示例中, 对于具有 GUID *c96e0837-c232-4a8a-841e-ef45787d8fcd*的段, 我们将部门名称更新为 "HRDept"。         |
 
 为组织编辑完段后, 可以[定义](information-barriers-policies.md#part-2-define-information-barrier-policies)或[编辑](#edit-a-policy)信息障碍策略。
 
@@ -106,11 +109,9 @@ ms.locfileid: "35215645"
 
 2. 若要将策略的状态设置为 "非活动", 请使用带有 Identity 参数的**InformationBarrierPolicy** cmdlet, 将 State 参数设置为 "非活动"。
 
-    语法`Set-InformationBarrierPolicy -Identity GUID -State Inactive`
-
-    `Set-InformationBarrierPolicy -Identity 43c37853-ea10-4b90-a23d-ab8c9377247 -State Inactive`
-
-    在此示例中, 我们将具有 GUID *43c37853-ea10-4b90-a23d-ab8c9377247*的信息屏障策略设置为非活动状态。
+    |语法  |示例  |
+    |---------|---------|
+    |`Set-InformationBarrierPolicy -Identity GUID -State Inactive`     |`Set-InformationBarrierPolicy -Identity 43c37853-ea10-4b90-a23d-ab8c9377247 -State Inactive` <p>在此示例中, 我们将具有 GUID *43c37853-ea10-4b90-a23d-ab8c9377247*的信息屏障策略设置为非活动状态。         |
 
 3. 若要应用所做的更改, 请使用**InformationBarrierPoliciesApplication** cmdlet。
 
@@ -133,11 +134,9 @@ ms.locfileid: "35215645"
 
 2. 将**InformationBarrierPolicy** Cmdlet 与 Identity 参数一起使用。
 
-    语法`Remove-InformationBarrierPolicy -Identity GUID`
-
-    示例: 假设我们要删除 GUID 为*43c37853-ea10-4b90-a23d-ab8c93772471*的策略。 为此, 我们使用此 cmdlet:
-    
-    `Remove-InformationBarrierPolicy -Identity 43c37853-ea10-4b90-a23d-ab8c93772471`
+    |语法  |示例  |
+    |---------|---------|
+    |`Remove-InformationBarrierPolicy -Identity GUID`     |`Remove-InformationBarrierPolicy -Identity 43c37853-ea10-4b90-a23d-ab8c93772471` <p>在此示例中, 我们将删除 GUID 为*43c37853-ea10-4b90-a23d-ab8c93772471*的策略。          |
 
     出现提示时, 请确认更改。
 
@@ -161,11 +160,9 @@ ms.locfileid: "35215645"
 
 2. 将**InformationBarrierPoliciesApplication** Cmdlet 与 Identity 参数一起使用。
 
-    语法`Stop-InformationBarrierPoliciesApplication -Identity GUID`
-
-    示例：`Stop-InformationBarrierPoliciesApplication -Identity 46237888-12ca-42e3-a541-3fcb7b5231d1`
-
-    在此示例中, 我们将停止应用信息屏障策略。
+    |语法  |示例  |
+    |---------|---------|
+    |`Stop-InformationBarrierPoliciesApplication -Identity GUID`     |`Stop-InformationBarrierPoliciesApplication -Identity 46237888-12ca-42e3-a541-3fcb7b5231d1` <p>在此示例中, 我们将停止应用信息屏障策略。         |
 
 ## <a name="related-articles"></a>相关文章
 

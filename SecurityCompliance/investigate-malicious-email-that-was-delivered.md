@@ -15,16 +15,16 @@ ms.assetid: 8f54cd33-4af7-4d1b-b800-68f8818e5b2a
 ms.collection:
 - M365-security-compliance
 description: 了解如何使用威胁调查和响应功能查找和调查恶意电子邮件。
-ms.openlocfilehash: 7e2cef742339e54c094cfb0c3b32fbf596896a3d
-ms.sourcegitcommit: 2b46fba650df8d252b1dd2b3c3f080a383183a06
+ms.openlocfilehash: 5f8c615bed07b75cd3c06ec48f5ba73586f0f6d5
+ms.sourcegitcommit: 011bfa60cafdf47900aadf96a17eb275efa877c4
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "34408297"
+ms.lasthandoff: 06/29/2019
+ms.locfileid: "35394287"
 ---
 # <a name="find-and-investigate-malicious-email-that-was-delivered-office-365-advanced-threat-protection-plan-2"></a>查找并调查提供的恶意电子邮件 (Office 365 高级威胁防护计划 2)
 
-[Office 365 高级威胁防护](office-365-atp.md)使您能够调查让用户面临风险的活动, 并采取措施来保护您的组织。 例如, 如果您是组织的安全团队的一部分, 则可以查找并调查传递给用户的可疑电子邮件。 可以使用[威胁资源管理器 (或实时检测)](threat-explorer.md)执行此操作。
+[Office 365 高级威胁防护功能](office-365-atp.md)使您能够调查让用户面临风险的活动, 并采取措施来保护您的组织。 例如, 如果您是组织的安全团队的一部分, 则可以查找并调查传递给用户的可疑电子邮件。 可以使用[威胁资源管理器 (或实时检测)](threat-explorer.md)执行此操作。
   
 ## <a name="before-you-begin"></a>开始之前 .。。
 
@@ -40,31 +40,64 @@ ms.locfileid: "34408297"
     
 ## <a name="dealing-with-suspicious-emails"></a>处理可疑电子邮件
 
-恶意攻击者可能会向你的用户发送邮件, 以尝试对其凭据进行网络钓鱼并获取对公司机密的访问权限! 为避免这种情况, 应使用 Office 365 提供的威胁防护服务, 包括[Exchange Online protection](eop/exchange-online-protection-overview.md)和[高级威胁防护](office-365-atp.md)。 但是, 有时攻击者可能会向包含 URL 的用户发送邮件, 并在稍后使该 URL 指向恶意内容 (恶意软件等)。 或者, 您可能会发现您的组织中的某个用户已受到威胁, 而该用户受到威胁时, 攻击者使用该帐户向公司中的其他用户发送电子邮件。 在清理这两个方案的过程中, 您可能需要从用户收件箱中删除电子邮件。 在这种情况下, 您可以利用[威胁浏览器 (或实时检测)](threat-explorer.md)来查找和删除这些电子邮件!
+恶意攻击者可能会向你的用户发送邮件, 以尝试对其凭据进行网络钓鱼并获取对公司机密的访问权限! 为避免这种情况, 应使用 Office 365 中的威胁防护服务, 包括[Exchange Online protection](eop/exchange-online-protection-overview.md)和[高级威胁防护](office-365-atp.md)。 但是, 有时攻击者可能会向包含 URL 的用户发送邮件, 并在稍后使该 URL 指向恶意内容 (恶意软件等)。 或者, 您可能会发现您的组织中的某个用户已受到威胁, 而该用户受到威胁时, 攻击者使用该帐户向公司中的其他用户发送电子邮件。 在清理这两个方案的过程中, 您可能需要从用户收件箱中删除电子邮件。 在这种情况下, 您可以利用[威胁浏览器 (或实时检测)](threat-explorer.md)来查找和删除这些电子邮件!
+
+## <a name="where-re-routed-emails-are-located-after-actions-are-taken"></a>在执行操作后, 重新路由的电子邮件位于何处
+
+威胁资源管理器实时检测已在 "传递" 状态下添加了 "传递操作" 和 "送达位置" 字段。 这将使您的电子邮件土地的更完整的了解。 此更改的目标部分是使搜索更易于进行安全操作人员, 但最终结果是了解问题电子邮件的位置。
+
+传递状态现已分为两列:
+
+- **传递操作**-此电子邮件的状态是什么？
+- **送达位置**-此电子邮件的路由结果
+
+传递操作是由于现有策略或检测而导致对电子邮件执行的操作。 以下是电子邮件可能执行的操作:
+
+1. **传递**–将电子邮件传递到用户的收件箱或文件夹, 用户可以直接访问它。
+2. **Junked** –将电子邮件发送到用户的 "垃圾邮件" 文件夹或 "已删除" 文件夹, 并且用户可以访问其 "垃圾邮件" 或 "已删除" 文件夹中的电子邮件。
+3. 已**阻止**–任何已隔离、失败或已丢弃的电子邮件。 用户完全无法访问它!
+4. **已替换**–所有恶意附件都被替换为 .txt 文件的电子邮件, 这些文件的状态为 "恶意附件"。
+ 
+"送达位置" 显示运行送达后的策略和检测结果。 它已链接到传递操作。 添加此字段是为了深入了解在发现问题邮件时所采取的操作。 以下是送达位置的可能值:
+
+1. **收件箱或文件夹**–电子邮件位于收件箱或文件夹中 (根据您的电子邮件规则)。
+2. **本地或外部**–邮箱在云上不存在, 但在本地。
+3. **垃圾邮件文件夹**–在用户的 "垃圾邮件" 文件夹中的电子邮件。
+4. "**已删除**邮件" 文件夹–用户的 "已删除邮件" 文件夹中的电子邮件。
+5. **隔离**–隔离中的电子邮件, 并且不在用户的邮箱中。
+6. **失败**–电子邮件无法访问邮箱。
+7. **丢弃**–电子邮件在邮件流中的某个位置丢失。
   
 ## <a name="find-and-delete-suspicious-email-that-was-delivered"></a>查找并删除已传递的可疑电子邮件
 
 > [!TIP]
-> 威胁资源管理器 (也称为资源管理器) 是一种功能强大的报告, 可用于多种用途, 如查找和删除邮件、标识恶意电子邮件发件人的 IP 地址或启动事件以进行进一步调查。 下面的过程重点介绍如何使用资源管理器查找和删除收件人邮箱中的恶意电子邮件。 
-  
+> 威胁资源管理器 (有时称为资源管理器) 是一种功能强大的报告, 可用于多种用途, 如查找和删除邮件、标识恶意电子邮件发件人的 IP 地址或启动事件以进行进一步调查。 下面的过程重点介绍如何使用资源管理器查找和删除收件人邮箱中的恶意电子邮件。
+
+若要查看对前一个传递状态字段的更改 (现在为传递操作和送达位置), 请执行以下操作: 
+
 1. 请转[https://protection.office.com](https://protection.office.com)到使用 Office 365 的工作或学校帐户登录并登录。 这会将您带到&amp;安全合规中心。 
     
 2. 在左侧导航中, 选择 "**威胁管理** \> **资源管理器**"。
+
+![威胁浏览器屏幕截图。](media/Threat Explorer Delivery Action and Delivery Location.PNG)
+
+<!--Comment>
     
-3. 在 "视图" 菜单中, 选择 "**所有电子邮件**"。<br/>![使用 "视图" 菜单在电子邮件和内容报告之间进行选择](media/d39013ff-93b6-42f6-bee5-628895c251c2.png)
+3. In the View menu, choose **All email**.<br/>![Use the View menu to choose between Email and Content reports](media/d39013ff-93b6-42f6-bee5-628895c251c2.png)
   
-4. 请注意报告中显示的标签, 如 "已**交货**"、"**未知**" 或 "已**传递到垃圾邮件**"。<br/>![显示所有电子邮件的数据的威胁资源管理器](media/208826ed-a85e-446f-b276-b5fdc312fbcb.png)<br/>(根据对组织的电子邮件执行的操作, 可能会看到其他标签, 如 "已**阻止**" 或 "**已替换**"。)
+4. Notice the labels that appear in the report, such as **Delivered**, **Unknown**, or **Delivered to junk**.<br/>![Threat Explorer showing data for all email](media/208826ed-a85e-446f-b276-b5fdc312fbcb.png)<br/>(Depending on the actions that were taken on email messages for your organization, you might see additional labels, such as **Blocked** or **Replaced**.)
     
-5. 在报告中, 选择 "已**传递**" 以仅查看在用户收件箱中结束的电子邮件。<br/>![单击 "传递给垃圾邮件" 将从视图中删除该数据](media/e6fb2e47-461e-4f6f-8c65-c331bd858758.png)
+5. In the report, choose **Delivered** to view only emails that ended up in users' inboxes.<br/>![Clicking "Delivered to junk" removes that data from view](media/e6fb2e47-461e-4f6f-8c65-c331bd858758.png)
   
-6. 在图表下方, 查看图表下方的**电子邮件**列表。<br/>![在图表下方, 查看检测到的电子邮件的列表](media/dfb60590-1236-499d-97da-86c68621e2bc.png)
+6. Below the chart, review the **Email** list below the chart.<br/>![Below the chart, view a list of email messages that were detected](media/dfb60590-1236-499d-97da-86c68621e2bc.png)
   
-7. 在列表中, 选择一个项目以查看有关该电子邮件的更多详细信息。 例如, 您可以单击 "主题" 行来查看有关发件人、收件人、附件和其他类似电子邮件的信息。<br/>![您可以查看有关项目的其他信息, 包括详细信息和任何附件](media/5a5707c3-d62a-4610-ae7b-900fff8708b2.png)
+7. In the list, choose an item to view more details about that email message. For example, you can click the subject line to view information about the sender, recipients, attachments, and other similar email messages.<br/>![You can view additional information about an item, including details and any attachments](media/5a5707c3-d62a-4610-ae7b-900fff8708b2.png)
   
-8. 查看有关电子邮件的信息后, 选择列表中的一个或多个项目以激活 **+ 操作**。
+8. After viewing information about email messages, select one or more items in the list to activate **+ Actions**.
     
-9. 使用 **+ 操作**列表应用操作, 例如**移到 "已删除**邮件"。 这将从收件人邮箱中删除所选邮件。<br/>![当您选择一个或多个电子邮件时, 可以从多个可用的操作中进行选择](media/ef12e10c-60a7-4f66-8f76-68d77ae26de1.png)
+9. Use the **+ Actions** list to apply an action, such as **Move to deleted** items. This will delete the selected messages from the recipients' mailboxes.<br/>![When you select one or more email messages, you can choose from several available actions](media/ef12e10c-60a7-4f66-8f76-68d77ae26de1.png)
   
+-->
 ## <a name="related-topics"></a>相关主题
 
 [Office 365 高级威胁防护计划2](office-365-ti.md)

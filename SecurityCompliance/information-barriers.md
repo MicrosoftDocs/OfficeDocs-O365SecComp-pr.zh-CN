@@ -3,7 +3,7 @@ title: 信息障碍概述
 ms.author: deniseb
 author: denisebmsft
 manager: laurawi
-ms.date: 06/26/2019
+ms.date: 06/28/2019
 audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
@@ -11,12 +11,12 @@ ms.collection:
 - M365-security-compliance
 localization_priority: None
 description: 使用信息障碍以确保在组织内使用 Microsoft 团队进行通信合规性。
-ms.openlocfilehash: 6565fc28d70ac6ff9a6f4df6edc75b89d19ae29a
-ms.sourcegitcommit: 1c254108c522d0cb44023565268b5041d07748aa
+ms.openlocfilehash: 9750eab3c91b40cc96e16a386dbf59ba767ae877
+ms.sourcegitcommit: 011bfa60cafdf47900aadf96a17eb275efa877c4
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2019
-ms.locfileid: "35279470"
+ms.lasthandoff: 06/29/2019
+ms.locfileid: "35394277"
 ---
 # <a name="information-barriers-preview"></a>信息障碍 (预览)
 
@@ -33,12 +33,29 @@ Microsoft 云服务包括强大的通信和协作功能。 但假设您要限制
 
 对于所有这些示例方案 (及更多), 可以将信息屏障策略定义为阻止或允许在 Microsoft 团队中进行通信。 此类策略可以阻止用户不应对其进行呼叫或聊天, 或使用户只能与 Microsoft 团队中的特定组进行通信。 在信息屏障策略生效时, 只要这些策略涵盖的用户尝试与 Microsoft 团队中的其他人通信, 就会执行检查以阻止 (或允许) 通信 (由信息屏障策略定义)。 若要了解有关信息障碍的用户体验方面的详细信息, 请参阅[Microsoft 团队中的信息障碍](https://docs.microsoft.com/MicrosoftTeams/information-barriers-in-teams)。
 
-> [!NOTE]
-> 信息障碍不适用于电子邮件通信或通过 SharePoint Online 或 OneDrive 进行文件共享。 此外, 信息障碍独立于[合规性边界](set-up-compliance-boundaries.md)。
+> [!IMPORTANT]
+> 目前, 信息障碍不适用于电子邮件通信或通过 SharePoint Online 或 OneDrive 进行文件共享。 此外, 信息障碍独立于[合规性边界](set-up-compliance-boundaries.md)。<p>在定义和应用信息屏障策略之前, 请确保您的组织没有有效的[Exchange 通讯簿策略](https://docs.microsoft.com/en-us/exchange/address-books/address-book-policies/address-book-policies)。  
+
+## <a name="what-happens-with-information-barriers"></a>信息障碍发生的情况
+
+在信息屏障策略就绪后, 不应与其他特定用户通信的人员将无法找到、选择、聊天或呼叫这些用户。 通过信息障碍, 检查措施可防止未经授权的通信。
+
+最初, 信息障碍仅适用于 Microsoft 团队聊天和频道。 在 Microsoft 团队中, 信息障碍策略决定并阻止以下类型的未经授权的通信:
+- 搜索用户
+- 向团队添加成员
+- 启动与某人的聊天会话
+- 启动群聊天
+- 邀请某人加入会议
+- 共享屏幕
+- 发出呼叫 
+
+如果涉及的人员包含在信息屏障策略中以阻止活动, 则无法继续。 此外, 在信息屏障策略中包括的每个人都可以阻止与 Microsoft 团队中的其他人通信。 当受信息障碍策略影响的人员是同一个团队或组聊天的一部分时, 他们可能会从这些聊天会话中删除, 并且可能不允许与组进行进一步通信。
+
+若要了解有关信息障碍的用户体验方面的详细信息, 请参阅[Microsoft 团队中的信息障碍](https://docs.microsoft.com/MicrosoftTeams/information-barriers-in-teams)。
 
 ## <a name="required-licenses-and-permissions"></a>必需的许可证和权限
 
-**目前, 信息屏障功能位于私人预览版中**。 当这些功能普遍可用时, 它们将包含在订阅中, 例如:
+**目前, 信息障碍处于预览阶段**。 当这些功能普遍可用时, 它们将包含在订阅中, 例如:
 
 - Microsoft 365 E5
 - Office 365 E5
@@ -52,27 +69,19 @@ Microsoft 云服务包括强大的通信和协作功能。 但假设您要限制
 - Microsoft 365 全局管理员
 - Office 365 全局管理员
 - 合规性管理员
-- 信息障碍管理员
+- IB 合规性管理 (这是一个新角色!)
 
-您必须熟悉 PowerShell cmdlet, 才能定义、验证或编辑信息屏障策略。 尽管我们在操作[方法信息](information-barriers-policies.md)中提供了几个 PowerShell cmdlet 示例, 但你需要了解组织的其他详细信息, 如参数。
+(若要了解有关角色和权限的详细信息, 请参阅[Office 365 Security & 合规中心中的权限](permissions-in-the-security-and-compliance-center.md)。)
 
-## <a name="concepts-of-information-barrier-policies"></a>信息屏障策略的概念
-
-了解信息屏障策略的基本概念很有帮助:
-
-- **用户帐户属性**是在 Azure Active Directory (或 Exchange Online) 中定义的。 这些属性可以包括部门、职务、位置、团队名称和其他作业配置文件详细信息。 
-
-- **分段**是在 Office 365 安全 & 合规性中心中使用选定的**用户帐户属性**定义的用户集。 (请参阅[支持的属性列表](information-barriers-attributes.md)。) 
-
-- **信息屏障策略**决定了通信限制或限制。 在定义信息障碍策略时, 可以从以下两种策略中进行选择:
-    - "块" 策略防止一个分段与另一个网段通信。
-    - "允许" 策略允许一段仅与某些其他段进行通信。
-
-- **策略应用程序**在定义所有信息屏障策略之后完成, 并准备好在您的组织中应用它们。
+您必须熟悉 PowerShell cmdlet, 才能定义、验证或编辑信息屏障策略。 尽管我们在操作[方法一文](information-barriers-policies.md)中提供了几个 PowerShell cmdlet 示例, 但你需要了解组织的其他详细信息, 如参数。
 
 ## <a name="next-steps"></a>后续步骤
 
 - [了解有关 Microsoft 团队中的信息障碍的详细信息](https://docs.microsoft.com/MicrosoftTeams/information-barriers-in-teams)
+
 - [请参阅可用于信息屏障策略的属性](information-barriers-attributes.md)
-- [定义信息障碍策略](information-barriers-policies.md) 
+
+- [定义信息障碍策略](information-barriers-policies.md)
+
+- [编辑 (或删除) 信息屏障策略 (预览)](information-barriers-edit-segments-policies.md.md) 
 

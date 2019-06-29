@@ -3,42 +3,52 @@ title: 信息屏障策略的属性
 ms.author: deniseb
 author: denisebmsft
 manager: laurawi
-ms.date: 05/31/2019
-ms.audience: ITPro
+ms.date: 06/28/2019
+audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
 ms.collection:
 - M365-security-compliance
 localization_priority: None
 description: 使用本文作为对可在信息屏障策略中使用的各种属性的参考。
-ms.openlocfilehash: e72e37950442974897de479c7c11f0053a578d1c
-ms.sourcegitcommit: 4fedeb06a6e7796096fc6279cfb091c7b89d484d
+ms.openlocfilehash: 896b87a3ccc696d3a8193e37237fe555d326ca52
+ms.sourcegitcommit: 011bfa60cafdf47900aadf96a17eb275efa877c4
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/31/2019
-ms.locfileid: "34668280"
+ms.lasthandoff: 06/29/2019
+ms.locfileid: "35394307"
 ---
 # <a name="attributes-for-information-barrier-policies-preview"></a>信息屏障策略的属性 (预览)
 
-Azure Active Directory 中的某些属性可用于分段用户。 然后, 将段用作信息屏障策略的筛选器。 例如, 您可以使用**部门**按组织中的部门定义用户的分段 (假设没有一个员工同时适用于两个部门)。 
+Azure Active Directory 中的某些属性可用于分段用户。 在定义段之后, 这些段可用作信息屏障策略的筛选器。 例如, 您可以使用**部门**按组织中的部门定义用户的分段 (假设没有一个员工同时适用于两个部门)。 
 
-本文提供可使用的属性的列表。 若要了解有关信息障碍的详细信息, 请参阅以下资源:
+本文介绍如何使用具有信息障碍的属性, 并提供可使用的属性列表。 若要了解有关信息障碍的详细信息, 请参阅以下资源:
 - [信息障碍 (预览)](information-barriers.md)
 - [为 Microsoft 团队中的信息障碍定义策略 (预览)](information-barriers-policies.md)
+- [编辑 (或删除) 信息屏障策略 (预览)](information-barriers-edit-segments-policies.md.md)
 
 ## <a name="how-to-use-attributes-in-information-barrier-policies"></a>如何在信息屏障策略中使用属性
 
-本文中列出的属性可用于定义 (或编辑) 用户的各个部分。 在信息屏障策略中, 段用作参数 (UserGroupFilter), 如以下示例所示:
+本文中列出的属性可用于定义或编辑用户的各个部分。 在[信息屏障策略](information-barriers-policies.md)中, 定义的段充当参数 (称为*UserGroupFilter*值)。
 
-|示例  |Cmdlet  |
-|---------|---------|
-|使用部门属性定义名为 Segment1 的段     | `New-OrganizationSegment -Name "Segment1" -UserGroupFilter "Department -eq 'Department1'"`        |
-|使用 MemberOf 属性定义名为 SegmentA 的段 (假定此属性包含组名称, 例如 "BlueGroup")     | `New-OrganizationSegment -Name "SegmentA" -UserGroupFilter "MemberOf -eq 'BlueGroup'"`        |
-|使用 ExtensionAttribute1 定义名为 DayTraders 的段 (假设此属性包含职务, 如 "DayTrader")|`New-OrganizationSegment -Name "DayTraders" -UserGroupFilter "ExtensionAttribute1 -eq 'DayTrader'"` |
+1. 确定要用于定义段的属性。 (请参阅本文中的[参考](#reference)部分。)
 
-在定义段时, 请对所有段使用相同的属性。 例如, 如果使用*部门*定义一些分段, 则使用*部门*定义所有分段。 请勿使用使用*MemberOf*的*部门*和其他部门定义某些分段。 请确保您的段不重叠;应将每个用户仅分配给一个分段。 
+2. 确保已为您在步骤1中选择的属性填写了用户帐户的值。 查看用户帐户详细信息, 如有必要, 请编辑用户帐户以包含属性值。 
 
-若要了解详细信息, 请参阅[使用 PowerShell 定义分段](information-barriers-policies.md#define-segments-using-powershell)。
+    若要使用 PowerShell 执行此操作, 请参阅[Configure user account properties With Office 365 PowerShell](https://docs.microsoft.com/office365/enterprise/powershell/configure-user-account-properties-with-office-365-powershell)。
+
+    若要在 Azure Active Directory 中执行此操作, 请参阅[使用 Azure Active Directory 添加或更新用户的配置文件信息](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-users-profile-azure-portal)。
+
+3. [使用 PowerShell 定义分段](information-barriers-policies.md#define-segments-using-powershell), 类似于以下示例:
+
+    |示例  |Cmdlet  |
+    |---------|---------|
+    |使用部门属性定义名为 Segment1 的段     | `New-OrganizationSegment -Name "Segment1" -UserGroupFilter "Department -eq 'Department1'"`        |
+    |使用 MemberOf 属性定义名为 SegmentA 的段 (假定此属性包含组名称, 例如 "BlueGroup")     | `New-OrganizationSegment -Name "SegmentA" -UserGroupFilter "MemberOf -eq 'BlueGroup'"`        |
+    |使用 ExtensionAttribute1 定义名为 DayTraders 的段 (假设此属性包含职务, 如 "DayTrader")|`New-OrganizationSegment -Name "DayTraders" -UserGroupFilter "ExtensionAttribute1 -eq 'DayTrader'"` |
+
+    > [!TIP]
+    > 在定义段时, 请对所有段使用相同的属性。 例如, 如果使用*部门*定义一些分段, 则使用*部门*定义所有分段。 请勿使用使用*MemberOf*的*部门*和其他部门定义某些分段。 请确保您的段不重叠;应将每个用户仅分配给一个分段。 
 
 ## <a name="reference"></a>参考
 

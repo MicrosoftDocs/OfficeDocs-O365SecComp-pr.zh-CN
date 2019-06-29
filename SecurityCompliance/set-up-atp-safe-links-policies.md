@@ -5,7 +5,7 @@ author: denisebmsft
 manager: laurawi
 audience: Admin
 ms.topic: article
-ms.date: 02/26/2019
+ms.date: 06/26/2019
 ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid:
@@ -15,12 +15,12 @@ ms.assetid: bdd5372d-775e-4442-9c1b-609627b94b5d
 ms.collection:
 - M365-security-compliance
 description: 设置安全链接策略以保护您的组织免受 Word、Excel、PowerPoint 和 Visio 文件以及电子邮件中的恶意链接。
-ms.openlocfilehash: 505508771ae1e630d7d34fde9ee1525d19bd5039
-ms.sourcegitcommit: b00c8fe1827d24f055a3076c10f284ff9ee3e04b
+ms.openlocfilehash: 8fd49eddc402400acafe0f9d702d19c7a3f63949
+ms.sourcegitcommit: 011bfa60cafdf47900aadf96a17eb275efa877c4
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/20/2019
-ms.locfileid: "35113256"
+ms.lasthandoff: 06/29/2019
+ms.locfileid: "35394337"
 ---
 # <a name="set-up-office-365-atp-safe-links-policies"></a>设置 Office 365 ATP 安全链接策略
 
@@ -132,7 +132,8 @@ ms.locfileid: "35113256"
 |---------|---------|
 |**关** <br/> |不扫描电子邮件中的 Url。  <br/> 使您能够定义例外规则, 如不扫描电子邮件中的 Url 的特定收件人组的 Url 的规则。  <br/> |
 |**On** <br/> |通过在用户单击电子邮件中的 Url 时, 通过 ATP 安全链接保护来重写 Url 以路由用户。  <br/> 对被阻止或恶意 Url 的列表单击时检查 URL。  <br/> |
-|**使用安全附件扫描可下载的内容** <br/> |如果选择此选项, 则会扫描指向可下载内容的 Url。  <br/> |
+|**对指向文件的可疑链接和链接应用实时 URL 扫描** <br/> |如果选择此选项, 则会扫描指向可下载内容的可疑 Url 和链接。  <br/> |
+|**等待 URL 扫描完成后再传递邮件** <br/> |如果选择此选项, 则将一直保留包含要扫描的 Url 的邮件, 直到 Url 完成扫描并在传递邮件之前将其确认为安全。  <br/> |
 |**将安全链接应用于在组织内发送的邮件** <br/> | 当此选项可用并选中时, 如果电子邮件帐户托管在 Office 365 中, 则会将 ATP 安全链接保护应用于在组织中的人员之间发送的电子邮件。  <br/> |
 |**不跟踪用户点击** <br/> |选择此选项后, 请单击 "来自外部发件人的电子邮件中的 Url 数据未存储"。 URL 单击 "跟踪" 以查找在组织内发送的电子邮件中的链接当前不受支持。  <br/> |
 |**不允许用户单击到原始 URL** <br/> |选择此选项后, 用户将无法继续处理被确定为恶意的 URL 之后的[警告页](atp-safe-links-warning-pages.md)。  <br/> |
@@ -146,4 +147,4 @@ ms.locfileid: "35113256"
 
 - [在安全&amp;合规中心中使用资源管理器](use-explorer-in-security-and-compliance.md)
 
-继续在新功能的前面提供 ATP。 访问[Microsoft 365 路线图](https://www.microsoft.com/microsoft-365/roadmap?filters=O365)并了解要[添加到 ATP 的新功能](office-365-atp.md#new-features-in-office-365-atp)。
+继续在新功能的前面提供 ATP。 请访问[Microsoft 365 路线图](https://www.microsoft.com/microsoft-365/roadmap?filters=O365)。
