@@ -11,12 +11,12 @@ ms.collection:
 - M365-security-compliance
 localization_priority: Normal
 description: 为全新的 Microsoft 365 安全中心和合规性中心做好准备
-ms.openlocfilehash: 0bb30ef3cd6f7d35e0f5a86842a8638e87e89773
-ms.sourcegitcommit: 4fedeb06a6e7796096fc6279cfb091c7b89d484d
+ms.openlocfilehash: 435030c9ab5d9b62c54483dd2ca072999d539712
+ms.sourcegitcommit: b9d8a43cb3afcdc8820bc9470c5707eff8fc6616
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/31/2019
-ms.locfileid: "34652485"
+ms.lasthandoff: 06/11/2019
+ms.locfileid: "34852766"
 ---
 # <a name="the-new-microsoft-365-security-center-and-microsoft-365-compliance-center-are-now-generally-available"></a>现已推出全新的 Microsoft 365 安全中心和 Microsoft 365 合规性中心
 
@@ -102,7 +102,7 @@ Microsoft 365 客户现已推出新的 Microsoft 365 安全中心和新的 Micro
 |[Azure Information Protection](https://docs.microsoft.com/azure/information-protection)（Azure 信息保护） |是 |是 |否 |
 |[Azure 安全中心](https://docs.microsoft.com/azure/security-center/)  |是 |是 |否 |
 |[Azure 高级威胁防护](https://docs.microsoft.com/azure-advanced-threat-protection/what-is-atp)  |是 |是 |否 |
-|[Windows Defender ATP](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/windows-defender-advanced-threat-protection?ocid=tia-260153000#windows-defender-atp) |是 |是 |否 |
+|[Microsoft Defender ATP](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-advanced-threat-protection) |是 |是 |否 |
 |[标识保护](https://docs.microsoft.com/azure/active-directory/identity-protection)     |是 |是 |否 |
 |[Privileged Identity Management](https://docs.microsoft.com/azure/active-directory/privileged-identity-management)     |是 |是 |否 |
 |[Intune](https://docs.microsoft.com/intune)     |是 |是 |是 |

@@ -1,5 +1,5 @@
 ---
-title: 在 Microsoft 365 安全中心中监视和报告安全状态
+title: 在 Microsoft 365 安全中心中监视和查看报告
 description: 介绍 Microsoft 365 安全中心如何一目了然地概述保护和安全状态。
 keywords: security、恶意软件、Microsoft 365、M365、security center、monitor、report、status
 ms.prod: w10
@@ -12,22 +12,22 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 search.appverid: met150
-ms.openlocfilehash: 0a0bcbde7daa79aabda30013fca2560384545feb
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: 80b7bf07790b7f5cb8cf0e07acd6abb921404d6f
+ms.sourcegitcommit: b9d8a43cb3afcdc8820bc9470c5707eff8fc6616
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32263124"
+ms.lasthandoff: 06/11/2019
+ms.locfileid: "34852796"
 ---
-# <a name="monitor-and-report-security-status-in-microsoft-365-security-center"></a>在 Microsoft 365 安全中心中监视和报告安全状态
+# <a name="monitor-and-view-reports-in-microsoft-365-security-center"></a>在 Microsoft 365 安全中心中监视和查看报告
 
-microsoft 365 安全中心提供了有关整个 microsoft 365 环境的保护和安全状态摘要。
+Microsoft 365 安全中心提供了有关整个 Microsoft 365 环境的保护和安全状态摘要。
 
-安全中心包含一个**监控 & reports**部分, 该部分提供了一系列由安全分析员和管理员在日常运营中进行跟踪的各种领域组成的卡片主机。 在向下钻取时, 卡片提供了详细报告, 在某些情况下, 还提供了管理选项。
+安全中心包含一个**报告**部分, 其中包含一系列由安全分析员和管理员在日常运营中进行跟踪的各种领域组成的卡片主机。 在向下钻取时, 卡片提供了详细报告, 在某些情况下, 还提供了管理选项。
 
 ## <a name="customize-views"></a>自定义视图
 
-默认情况下, 监控和报告卡分为以下几类:
+默认情况下, 卡片分为以下几类:
   
 * [标识](monitor-and-report-identities.md)–用户帐户和凭据
 * [Data](monitor-data.md) –电子邮件和文档内容

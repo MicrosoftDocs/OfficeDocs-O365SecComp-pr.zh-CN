@@ -1,5 +1,5 @@
 ---
-title: 监视和报告 Microsoft 365 安全中的标识
+title: Microsoft 365 安全中心中的身份监视和报告
 description: 介绍如何监视组织中的标识并跟踪可疑或风险的行为。
 keywords: security、恶意软件、Microsoft 365、M365、security center、monitor、report、identity
 ms.prod: w10
@@ -12,23 +12,23 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 search.appverid: met150
-ms.openlocfilehash: 69ac13fde6e83f5905b95a3eefdc2e1a44156e1d
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: dd7405c3b4e8c184047e52ccba1de3cbd1f8905a
+ms.sourcegitcommit: b9d8a43cb3afcdc8820bc9470c5707eff8fc6616
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32265886"
+ms.lasthandoff: 06/11/2019
+ms.locfileid: "34852826"
 ---
-# <a name="monitor-and-report-identities-in-microsoft-365-security"></a>监视和报告 Microsoft 365 安全中的标识
+# <a name="identity-monitoring-and-reporting-in-microsoft-365-security-center"></a>Microsoft 365 安全中心中的身份监视和报告
 
-您可以监视组织中的标识, 并跟踪可疑或风险的行为。 在**监控 & 报告**的 "**标识**" 类别中, 您可以跟踪:
+您可以监视组织中的标识, 并跟踪可疑或风险的行为。 在**报告**的 "**标识**" 类别中, 您可以跟踪:
 
 * 检测到的异常最多的用户
 * 通过条件访问策略在风险中报告的用户数
 * 您的组织中全局管理员的数量
 
-!["监视 & 报告" 页的 "标识" 类别](./media/security-docs/identities.png)
+!["报表的标识类别" 页](./media/security-docs/identities.png)
 
-对于具有特定检测的用户, 您可以在 Windows Defender 安全中心中浏览特定警报和调查。 检测项包括不熟悉位置的用户登录等异常。
+对于具有特定检测的用户, 您可以在 Microsoft Defender 安全中心中探索特定警报和调查。 检测项包括不熟悉位置的用户登录等异常。
 
 有关风险事件的完整集合, 请参阅[Azure Active Directory 风险事件](https://docs.microsoft.com/azure/active-directory/reports-monitoring/concept-risk-events)。

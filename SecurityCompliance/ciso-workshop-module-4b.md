@@ -10,12 +10,12 @@ localization_priority: Normal
 ms.collection:
 - M365-security-compliance
 description: 了解有关贵组织中的新式化安全性的安全原则和建议的详细信息。
-ms.openlocfilehash: f5b296351ed0fe076f22c148487ed1044da3ae4f
-ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
+ms.openlocfilehash: 640fb15a6e28ee00bc383f6502c06d80db287135
+ms.sourcegitcommit: 6bb40cf53374eaaae8da0a469f0248b1163184a4
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "34152133"
+ms.lasthandoff: 06/07/2019
+ms.locfileid: "34767293"
 ---
 # <a name="ciso-workshop-module-4b-threat-protection-strategy"></a>CISO 研讨会模块 4b: 威胁防护策略 
 
@@ -36,9 +36,9 @@ ms.locfileid: "34152133"
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RWtDxA]
 
-## <a name="part-3-learnings-from-microsofts-corporate-it-soc-806"></a>第3部分: 学习通过 Microsoft 公司 IT SOC (8:06)
+## <a name="part-3-learnings-from-microsofts-corporate-it-soc-2207"></a>第3部分: 学习通过 Microsoft 公司 IT SOC (22:07)
 
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RWtNO5]
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE368fZ]
 
 ## <a name="part-4-intelligence-604"></a>第4部分: 智能 (6:04)
 
@@ -56,14 +56,18 @@ ms.locfileid: "34152133"
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RWtYMz]
 
-## <a name="part-8-dark-markets-and-criminal-forums-919"></a>第8部分: 深色市场和刑事论坛 (9:19)
+## <a name="part-8-behavior-analytics"></a>第8部分: 行为分析
+
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE36iuc]
+
+## <a name="part-9-dark-markets-and-criminal-forums-919"></a>第9部分: 深色市场和刑事论坛 (9:19)
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RWtYMn]
 
-## <a name="part-9-graph-security-api-350"></a>第9部分: Graph 安全 API (3:50)
+## <a name="part-10-siem-integration-1422"></a>第10部分: SIEM 集成 (14:22)
 
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RWtYMj]
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE3685k]
 
-## <a name="part-10-summary-of-integrated-technology-and-automation-933"></a>第10部分: 集成技术和自动化的摘要 (9:33)
+## <a name="part-11-summary-of-integrated-technology-and-automation-933"></a>第11部分: 集成技术和自动化的摘要 (9:33)
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RWtLoU]

@@ -12,12 +12,12 @@ search.appverid:
 - MOE150
 - MET150
 description: ''
-ms.openlocfilehash: 0e986510ca49cfbfd77ab6f4d43220df1ebf35c5
-ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
+ms.openlocfilehash: d1a51e2496bd57d83e1baf78d82611c406a10e26
+ms.sourcegitcommit: 6bb40cf53374eaaae8da0a469f0248b1163184a4
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "34151544"
+ms.lasthandoff: 06/07/2019
+ms.locfileid: "34767363"
 ---
 # <a name="view-documents-in-a-review-set"></a>查看审阅集中的文档
 
@@ -38,14 +38,14 @@ ms.locfileid: "34151544"
 
 ## <a name="native-view"></a>本机视图
 
-本机查看器显示文档的最丰富视图。 它支持数百种文件类型, 旨在将 truest 显示为可能的本机体验。 例如, 对于 Microsoft Office 文件, 查看器利用 Office Online 来显示文档注释、Excel 公式、隐藏的行/列、PowerPoint 备注等内容。有关 Office Online 查看器的详细信息, 请访问\[此处需要链接\]
+本机查看器显示文档的最丰富视图。 它支持数百种文件类型, 旨在将 truest 显示为可能的本机体验。 对于 Microsoft Office 文件, 查看器使用 Office 应用程序的 web 版本显示内容, 如文档注释、Excel 公式、隐藏的行/列和 PowerPoint 备注。
 
 ![本机视图
 ](../media/Reviewimage3.png)
 
 ## <a name="text-view"></a>文本视图
 
-文本查看器提供了文件中提取的文本的视图。 它将忽略任何嵌入的图像和格式, 但如果用户尝试快速了解内容, 将是一种非常强大的视图。 文本视图还包括其他功能:
+文本查看器提供了文件中提取的文本的视图。 它将忽略任何嵌入的图像和格式, 但如果您尝试快速了解内容, 这将非常有效。 文本视图还包含以下功能:
 
   - 行计数器可更轻松地引用文档的特定部分
 

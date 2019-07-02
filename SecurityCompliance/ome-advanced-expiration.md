@@ -15,12 +15,12 @@ ms.collection:
 - M365-security-compliance
 ms.assetid: f87cb016-7876-4317-ae3c-9169b311ff8a
 description: 使用 office 365 高级邮件加密功能在 Office 365 邮件加密 (OME) 上, 您可以通过自定义品牌化模板来设置电子邮件的过期日期, 从而扩展电子邮件的安全性。
-ms.openlocfilehash: 260e6032d3b7a4c9b81fca73dfbcd57fa01168cb
-ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
+ms.openlocfilehash: 7c4ad1fb4a91bd62569edc5db9042dfbd2dbd9fe
+ms.sourcegitcommit: b9d8a43cb3afcdc8820bc9470c5707eff8fc6616
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "34157664"
+ms.lasthandoff: 06/11/2019
+ms.locfileid: "34852756"
 ---
 # <a name="set-an-expiration-date-for-email-encrypted-by-office-365-advanced-message-encryption"></a>为使用 Office 365 高级邮件加密进行加密的电子邮件设置到期日期
 
@@ -43,7 +43,7 @@ Office 365 高级邮件加密在特定订阅中的 Office 365 邮件加密的顶
 2. 运行 Set-omeconfiguration cmdlet。
 
      ```powershell
-     New-OMEConfiguration -Identity "Expire in 7 days" ExternalMailExpiryInDays 7
+     New-OMEConfiguration -Identity "Expire in 7 days" -ExternalMailExpiryInDays 7
      ```
 
 其中：

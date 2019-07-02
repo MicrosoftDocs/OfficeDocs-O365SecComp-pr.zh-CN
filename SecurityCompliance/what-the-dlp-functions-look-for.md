@@ -4,7 +4,7 @@ ms.author: deniseb
 author: denisebmsft
 manager: laurawi
 ms.date: 6/18/2016
-ms.audience: Admin
+audience: Admin
 ms.topic: reference
 ms.service: O365-seccomp
 localization_priority: Normal
@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 敏感信息类型查找特定模式, 并通过确保正确的格式设置、强制校验和来查找相关的关键字或其他信息来 corroborate。 其中一些功能是由内部函数执行的。 本主题说明这些函数查找的内容, 以帮助您了解预定义的敏感信息类型的工作原理。
-ms.openlocfilehash: d0aeb38001f42d9db2b124466b02746ee106b078
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: 044920a7ff28ffc1c4338a642bc130ee07ef7264
+ms.sourcegitcommit: 0d5a863f48914eeaaf29f7d2a2022618de186247
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32266914"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "34077998"
 ---
 # <a name="what-the-dlp-functions-look-for"></a>DLP 函数查找的内容
 
@@ -93,7 +93,7 @@ ms.locfileid: "32266914"
     
   - janvier、février、mars、avril、mai、juin juillet、août、septembre、octobre、novembre、décembre
     
-  - janv。 févr。 火星 avril mai juin juil。 août 9 月。 2008. 年11月. déc。
+  - janv. févr. 火星 avril mai juin juil。 août 9 月。 2008. 年11月. déc.
     
 - 德语
     
@@ -105,7 +105,7 @@ ms.locfileid: "32266914"
     
   - gennaio、febbraio、marzo、aprile、maggio、giugno、luglio、agosto、settembre、ottobre、novembre、dicembre
     
-  - genn。 febbr。 mar. 四月. magg。 giugno luglio ag。 设置. ott。 年11月. home.dic.
+  - genn. febbr. mar. 四月. magg. giugno luglio ag。 设置. ott. 年11月. home.dic.
     
 - 葡萄牙语
     
@@ -199,11 +199,11 @@ ms.locfileid: "32266914"
   
 - 年月日-例如,。Jan-2010 或一月-2010 或 Jan-10 或一月-10
     
-- 年月日-例如, "一月 2010" 或 "jan 2010" 或 "jan 10" 或 "jan 10"
+- 年月日-例如, "一月 2010" 或 "Jan 2010" 或 "Jan 10" 或 "Jan 10"
     
 - MonthYYYY-例如, "january2010" 或 "Jan2010" 或 "january10" 或 "Jan10"
     
-- Month/YYYY-例如, "一月/2010" 或 "jan/2010" 或 "一月/10" 或 "jan/10"
+- Month/YYYY-例如, "一月/2010" 或 "Jan/2010" 或 "一月/10" 或 "Jan/10"
     
 接受的月份名称:
   

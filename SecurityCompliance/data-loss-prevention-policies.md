@@ -1,10 +1,10 @@
 ---
-title: 数据丢失防护策略概述
+title: 数据丢失防护概述
 ms.author: deniseb
 author: denisebmsft
 manager: laurawi
-ms.date: 04/11/2019
-ms.audience: ITPro
+ms.date: 05/03/2019
+audience: ITPro
 ms.topic: conceptual
 f1_keywords:
 - ms.o365.cc.DLPLandingPage
@@ -14,37 +14,40 @@ ms.collection:
 - M365-security-compliance
 search.appverid:
 - MET150
-description: 使用 office 365 安全&amp;合规中心中的数据丢失防护 (DLP) 策略, 可以在 office 365 中识别、监视和自动保护敏感信息。
-ms.openlocfilehash: fedb48c20720a7eaa66cd0ea7d2184dd3dc4df55
-ms.sourcegitcommit: e23b84ef4eee9cccec7205826b71ddfe9aaac2f8
+description: 使用安全&amp;合规性中心中的数据丢失防护 (DLP) 策略, 可以识别、监视和自动保护 Office 365 之间的敏感信息。
+ms.openlocfilehash: 0199d43a7232b41dbbf1a5c67ab77ebe69d47a84
+ms.sourcegitcommit: 0d5a863f48914eeaaf29f7d2a2022618de186247
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33362050"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "34077848"
 ---
-# <a name="overview-of-data-loss-prevention-policies"></a>数据丢失防护策略概述
+# <a name="overview-of-data-loss-prevention"></a>数据丢失防护概述
 
-为了符合业务标准和行业法规，组织需要保护敏感信息，防止由于疏忽而泄露。 您可能想要防止泄漏到组织外部的敏感信息的示例包括财务数据或个人身份信息 (PII)，如信用卡号、社会保险号或健康记录。 使用 office 365 安全&amp;合规中心中的数据丢失防护 (DLP) 策略, 可以在 office 365 中识别、监视和自动保护敏感信息。
+> [!NOTE]
+> 最近在 Office 365 E5 和 Office 365 高级合规中向 Microsoft 团队添加了数据丢失防护功能。 若要了解有关功能可用性的详细信息, 请参阅[office 365 服务说明: office 365 安全性 & 合规性中心](https://docs.microsoft.com/office365/servicedescriptions/office-365-platform-service-description/office-365-securitycompliance-center)。
+
+若要遵守业务标准和行业管理法规, 组织必须保护敏感信息, 并防止无意中泄露。 敏感信息可以包括财务数据或个人身份信息 (PII), 如信用卡号、社会保险号码或运行状况记录。 使用 Office 365 安全&amp;合规中心中的数据丢失防护 (DLP) 策略, 可以在 office 365 中识别、监视和自动保护敏感信息。
   
 您可以使用 DLP 策略实现以下功能：
   
-- **在许多位置 (如 Exchange online、SharePoint online、OneDrive for business 和 Microsoft 团队) 标识敏感信息。**
+- **跨 Exchange Online、SharePoint Online、OneDrive for Business 和 Microsoft Teams 等多个位置标识敏感信息。**
     
-    例如, 您可以标识任何包含存储在任何 OneDrive for business 网站中的信用卡号的文档, 也可以仅监视特定人员的 onedrive 站点。
+    例如, 您可以标识任何包含存储在任何 OneDrive for Business 网站中的信用卡号的文档, 也可以仅监视特定人员的 OneDrive 站点。
     
 - **防止意外共享敏感信息**。 
     
     例如, 您可以标识任何包含与组织外部人员共享的运行状况记录的文档或电子邮件, 然后自动阻止对该文档的访问或阻止发送该电子邮件。
     
-- **监视和保护桌面版本的 Excel、PowerPoint 和 Word 中的敏感信息。**
+- **监视和保护 Excel、PowerPoint 和 Word 桌面版中的敏感信息。**
     
-    就像在 Exchange online、SharePoint online 和 OneDrive for business 中一样, 这些 Office 桌面程序都包含用于识别敏感信息和应用 DLP 策略的相同功能。 当用户共享这些 Office 程序中的内容时, DLP 提供连续监控。
+    就像在 Exchange Online、SharePoint Online 和 OneDrive for Business 中一样, 这些 Office 桌面程序都包含用于识别敏感信息和应用 DLP 策略的相同功能。 当用户共享这些 Office 程序中的内容时, DLP 提供连续监控。
     
 - **帮助用户了解如何保持兼容性，同时不会中断工作流。**
     
-    您可以向用户介绍 DLP 策略，并帮助他们保持兼容性，同时不会中断工作。 例如，如果用户尝试共享包含敏感信息的文档，DLP 策略可以向他们发送电子邮件通知，同时在文档库的上下文中向其显示一个策略提示，以允许他们在具有业务理由的情况下替代策略。 outlook 网页、outlook、Excel、PowerPoint 和 Word 中也会显示相同的策略提示。
+    您可以向用户介绍 DLP 策略，并帮助他们保持兼容性，同时不会中断工作。 例如，如果用户尝试共享包含敏感信息的文档，DLP 策略可以向他们发送电子邮件通知，同时在文档库的上下文中向其显示一个策略提示，以允许他们在具有业务理由的情况下替代策略。 Outlook 网页、Outlook、Excel、PowerPoint 和 Word 中也会显示相同的策略提示。
     
-- **查看显示与组织的 DLP 策略匹配的内容的 DLP 报告。**
+- **查看 DLP 报告，了解符合组织的 DLP 策略的内容。**
     
     要评估您的组织遵守 DLP 策略的情况，您可以查看随着时间推移符合每个策略和每条规则的次数。 如果 DLP 策略允许用户覆盖策略提示并报告误报, 则还可以查看用户报告的内容。
     
@@ -56,7 +59,7 @@ ms.locfileid: "33362050"
 
 DLP 策略包含以下基本内容：
   
-- 在何处保护内容:**位置**(如 Exchange Online、SharePoint online 和 OneDrive for business 网站), 以及 Microsoft 团队聊天和频道。 
+- 在何处保护内容:**位置**(如 Exchange Online、SharePoint Online 和 OneDrive for business 网站), 以及 Microsoft 团队聊天和频道。 
     
 - 何时以及如何通过强制执行由以下部分组成的**规则**来保护此内容： 
     
@@ -66,19 +69,19 @@ DLP 策略包含以下基本内容：
     
 您可以使用规则来满足特定的保护要求，然后使用 DLP 策略将常见保护要求组合在一起，例如要符合特定法规所需的所有规则。
   
-例如，DLP 策略可能会帮助您检测是否存在受 Health Insurance Portability and Accountability Act (HIPAA) 约束的信息。 此 DLP 策略可以通过查找包含与组织外部人员共享的这些敏感信息的任何文档来帮助保护所有 SharePoint Online 网站和所有 OneDrive for business 网站 (在 where) 上的 HIPAA 数据 (这些内容)。条件), 然后阻止对文档的访问和发送通知 (操作)。 这些要求存储为单个规则，并作为一项 DLP 策略组合在一起以简化管理和报告。
+例如，DLP 策略可能会帮助您检测是否存在受 Health Insurance Portability and Accountability Act (HIPAA) 约束的信息。 此 DLP 策略可以通过查找包含与组织外部人员共享的这些敏感信息的任何文档来帮助保护所有 SharePoint Online 网站和所有 OneDrive for Business 网站 (在 where) 上的 HIPAA 数据 (这些内容)。条件), 然后阻止对文档的访问和发送通知 (操作)。 这些要求存储为单个规则，并作为一项 DLP 策略组合在一起以简化管理和报告。
   
-![图表显示了 DLP 策略包含位置和规则](media/c006860c-2d00-42cb-aaa4-5b5638d139f7.png)
+![图中显示了 DLP 策略包含位置和规则](media/c006860c-2d00-42cb-aaa4-5b5638d139f7.png)
   
 ### <a name="locations"></a>位置
 
-DLP 策略可以跨 Office 365 查找和保护敏感信息, 无论这些信息位于 Exchange online、SharePoint online、OneDrive for business 中还是 Microsoft 团队中。 您可以选择保护 Exchange 电子邮件、Microsoft 团队聊天和频道、所有 SharePoint 或 OneDrive 库中的内容, 或选择策略的特定位置。
+DLP 策略可以跨 Office 365 查找和保护敏感信息, 无论这些信息位于 Exchange Online、SharePoint Online、OneDrive for Business 中还是 Microsoft 团队中。 您可以选择保护 Exchange 电子邮件、Microsoft 团队聊天和频道、所有 SharePoint 或 OneDrive 库中的内容, 或选择策略的特定位置。
   
 ![DLP 策略可以在其中应用的位置选项](media/ee50a61a-e867-4571-a150-3eec8d83650f.png)
   
-请注意, 如果选择包含或排除特定的 SharePoint 网站或 OneDrive 帐户, DLP 策略不能包含100以上的包含和排除项。 尽管此限制存在, 但请通过应用组织范围的策略或适用于整个位置的策略, 了解您可以超过此限制。
+如果选择包含或排除特定的 SharePoint 网站或 OneDrive 帐户, DLP 策略不能包含100以上的包含和排除项。 虽然这一限制存在, 但您可以通过应用组织范围策略或适用于整个位置的策略来超过此限制。
   
-### <a name="rules"></a>Rules
+### <a name="rules"></a>规则
 
 规则是在组织内容中实施业务需求的。 策略包含一条或多条规则，每条规则由多个条件和操作组成。 对于每条规则，只要满足了条件，就会自动执行操作。 规则是按顺序执行的, 从每个策略中的最高优先级规则开始。
   
@@ -92,7 +95,7 @@ DLP 策略可以跨 Office 365 查找和保护敏感信息, 无论这些信息�
 
 条件非常重要, 因为它们决定了要查找的信息类型以及何时执行操作。 例如, 您可以选择忽略包含护照号码的内容, 除非内容包含10个以上的号码, 并且与组织外部的人员共享。
   
-条件侧重于**内容**, 如要查找的敏感信息类型以及**上下文**(例如, 与谁共享文档的用户)。 您可以使用条件将不同的操作分配给不同的风险级别, 例如, 内部共享的敏感内容可能会降低风险, 并且需要的操作比与组织外部人员共享的敏感内容更少。 
+条件侧重于**内容**, 如要查找的敏感信息类型以及**上下文**(例如, 与谁共享文档的用户)。 您可以使用条件将不同的操作分配给不同的风险级别。 例如, 在内部共享的敏感内容可能会降低风险, 并且需要的操作比与组织外部人员共享的敏感内容更少。 
   
 ![显示可用的 DLP 条件的列表](media/0fa43f90-d007-4506-ae93-43e8424fe103.png)
   
@@ -122,7 +125,7 @@ DLP 策略可帮助保护定义为**敏感信息类型**的敏感信息。 Offic
     
 这有助于 DLP 检测实现高度准确性, 同时减少可能中断工作的误报数。
   
-#### <a name="actions"></a>Actions
+#### <a name="actions"></a>操作
 
 当内容与规则中的条件相匹配时, 您可以将操作应用于自动保护内容。
   
@@ -130,11 +133,11 @@ DLP 策略可帮助保护定义为**敏感信息类型**的敏感信息。 Offic
   
 现在可以使用操作, 可以执行以下操作:
   
-- **限制对内容的访问**对于 "网站内容", 这意味着对文档的权限仅限于主网站集管理员、文档所有者和上次修改文档的人员之外的所有用户。 这些用户可以从文档中删除敏感信息或执行其他补救操作。 如果文档符合规则，则会自动恢复原始权限。 当对文档的访问受到阻止时，文档将在网站的库中显示一个特殊的策略提示图标。 
+- **限制对内容的访问**对于 "网站内容", 这意味着对文档的权限仅限于主网站集管理员、文档所有者和上次修改文档的人员之外的所有用户。 这些用户可以从文档中删除敏感信息或执行其他补救操作。 当文档符合合规性时, 将自动还原原始权限。 当对文档的访问受到阻止时，文档将在网站的库中显示一个特殊的策略提示图标。 
     
     ![显示文档访问被拦截的策略提示](media/b6cefed3-d212-43d7-8534-4b92b26ebd50.png)
   
-    对于电子邮件内容, 此操作阻止发送邮件。 根据配置 DLP 规则的方式, 发件人将看到一个 NDR 或 (如果该规则使用通知) 策略提示和/或电子邮件通知。
+    对于电子邮件内容, 此操作阻止发送邮件。 根据配置 DLP 规则的方式, 发件人会看到一个 NDR 或 (如果该规则使用通知) 策略提示和/或电子邮件通知。
     
     ![警告: 必须从邮件中删除未经授权的收件人](media/302f9994-912d-41e7-861f-8a4539b3c285.png)
   
@@ -148,7 +151,7 @@ DLP 策略可帮助保护定义为**敏感信息类型**的敏感信息。 Offic
   
 除了发送电子邮件通知之外, 用户通知还会显示策略提示:
   
-- 在 outlook 和 web 上的 outlook 中。
+- 在 Outlook 和 web 上的 Outlook 中。
     
 - 对于 SharePoint Online 或 OneDrive for business 网站上的文档。
     
@@ -156,7 +159,7 @@ DLP 策略可帮助保护定义为**敏感信息类型**的敏感信息。 Offic
     
 电子邮件通知和策略提示说明了内容与 DLP 策略冲突的原因。 如果您选择，电子邮件通知和策略提示可以允许用户通过报告误报或提供业务理由来替代规则。 这可以帮助您让用户了解您的 DLP 策略和强制执行它们，而不会阻止用户完成其工作。 有关替代和误报的信息还记录报告（请参阅下文提供的 DLP 报告）并且包含在事件报告（下一节）中，以便合规部主管可以定期查看此信息。
   
-以下是策略提示在 OneDrive for business 帐户中的外观。
+以下是策略提示在 OneDrive for Business 帐户中的外观。
   
 ![OneDrive 帐户中文档的策略提示](media/f9834d35-94f0-4511-8555-0fe69855ce6d.png)
   
@@ -176,9 +179,9 @@ DLP 策略可帮助保护定义为**敏感信息类型**的敏感信息。 Offic
     
     AND
     
-- 较难识别的内容, 如有关患者护理的通信或提供的医疗服务说明。 标识此内容需要匹配非常大的关键字列表中的匹配关键字, 如 Diseases 的国际分类 (ICD-9-cm 或 icd-10 厘米)。
+- 较难识别的内容, 如有关患者护理的通信或提供的医疗服务说明。 标识此内容需要匹配非常大的关键字列表中的匹配关键字, 如 Diseases 的国际分类 (ICD-9-CM 或 ICD-10 厘米)。
     
-您可以通过使用分组和逻辑运算符 (and 和 OR) 轻松地识别这些松散定义的数据。 创建 DLP 策略时, 可以执行以下操作:
+您可以通过使用分组和逻辑运算符 (AND 和 OR) 轻松地识别这些松散定义的数据。 创建 DLP 策略时, 可以执行以下操作:
   
 - 对敏感信息类型进行分组。
     
@@ -206,13 +209,13 @@ DLP 策略可帮助保护定义为**敏感信息类型**的敏感信息。 Offic
     
     **AND**
     
-- 来自 group**医学条款**(至少有一个 ICD-9 cm 关键字**或**ICD-10 cm 关键字) 
+- 来自 group**医学条款**(至少有一个 ICD-9 Cm 关键字**或**ICD-10 cm 关键字) 
     
 ![显示组之间的运算符的组](media/354aa77f-569c-4847-9dfe-605ee2bb28d1.png)
   
 ## <a name="the-priority-by-which-rules-are-processed"></a>处理规则的优先级
 
-当您在策略中创建规则时, 每个规则都会按其创建顺序分配一个优先级, 即最初创建的规则具有第一个优先级, 创建的规则第二个优先级为第二个, 依此类推。 
+在策略中创建规则时, 将按创建顺序为每个规则分配一个优先级—也就是说, 首先创建的规则具有第一个优先级, 创建的规则第二个优先级为第二个优先级, 依此类推。 
   
 ![优先级顺序中的规则](media/f7dc06bf-bc6f-485c-bcdb-606edbcf6565.png)
   
@@ -236,7 +239,7 @@ DLP 策略可帮助保护定义为**敏感信息类型**的敏感信息。 Offic
     
 在此示例中, 请注意, 所有规则的匹配项都记录在审核日志中, 并显示在 DLP 报告中, 即使仅强制实施最严格的规则也是如此。
   
-对于策略提示, 请注意:
+有关策略提示, 请注意:
   
 - 仅来自最高优先级的策略提示将显示最受限制的规则。 例如，阻止访问内容的规则所提供的策略提示比起只是发送通知的规则所提供的策略提示，前者的显示优先级高于后者。 这会让用户看不到策略提示的级联方式。
     
@@ -246,7 +249,7 @@ DLP 策略可帮助保护定义为**敏感信息类型**的敏感信息。 Offic
 
 在用户创建并打开其 DLP 策略后, 它们有时会遇到以下问题:
   
-- 太多**不**敏感的内容信息与规则相匹配, 也就是说, 误报过多。 
+- 太多**不**敏感的内容信息与规则相匹配, 换句话说, 误报太多。 
     
 - 与规则匹配的**** 内容太少, 敏感信息太少。 换句话说, 保护性操作不会对敏感信息强制实施。 
     
@@ -254,7 +257,7 @@ DLP 策略可帮助保护定义为**敏感信息类型**的敏感信息。 Offic
   
 ### <a name="instance-count"></a>实例计数
 
-"实例计数" 表示内容必须有多少个特定类型的敏感信息, 才能匹配该规则。 例如, 如果在1和9唯一的美国或英国之间, 则内容将与下面显示的规则匹配 识别护照号码。
+"实例计数" 表示内容必须有多少个特定类型的敏感信息, 才能匹配该规则。 例如, 如果介于1和9唯一美国或英国, 则内容与下面显示的规则相匹配 识别护照号码。
   
 请注意, 实例计数只包含敏感信息类型和关键字的**唯一**匹配项。 例如, 如果电子邮件包含10个相同信用卡号码, 则这些10个事件将计为一个信用卡号码的单个实例。 
   
@@ -294,7 +297,7 @@ DLP 策略可帮助保护定义为**敏感信息类型**的敏感信息。 Offic
   
 - 如果所有匹配项都针对单个模式, 则返回该模式的置信度级别。
     
-- 如果有多个模式的匹配项 (即, 有两个不同的可信度级别的匹配项), 则将返回比单独任意单个模式更高的可信度级别。 这是一个棘手的部分。 例如, 对于信用卡, 如果 65% 和 85% 两个模式都匹配, 则为该敏感信息类型返回的置信度级别将大于 90%, 因为更多的证据意味着更自信。
+- 如果有多个模式的匹配项 (即, 有两个不同的可信度级别的匹配项), 则将返回高于任何单个模式的置信度。 这是一个棘手的部分。 例如, 对于信用卡, 如果 65% 和 85% 两个模式都匹配, 则为该敏感信息类型返回的置信度级别将大于 90%, 因为更多的证据意味着更自信。
     
 因此, 如果要为信用卡创建两个相互排斥的规则, 一个是 65% 匹配精度, 另一个为 85% 匹配精度, 则匹配精度的范围将如下所示。 第一条规则仅选取 65% 模式的匹配项。 第二个规则将选取与**至少一个**85% 匹配的匹配项, 并且**可能会有**其他较低可信度的匹配项。 
   
@@ -324,7 +327,7 @@ DLP 策略可帮助保护定义为**敏感信息类型**的敏感信息。 Offic
     
 - 您为该名称的项目创建了一个名为**Alpine 房子**的标签, 然后将该标签自动应用于包含关键字 "Alpine 房子" 的内容。 通过将此标签用作 DLP 策略中的条件, 可以在即将与组织外部的人员共享此内容时向最终用户显示策略提示。 
     
-- 您发布了一个名为 "**税收 record**" 的标签, 以便您的记录管理员可以手动将该标签应用于需要分类为记录的内容。 通过将此标签用作 DLP 策略中的条件, 可以使用此标签以及其他类型的敏感信息 (如 ITINs 或 ssn) 查找内容。将保护操作应用于标记为 "**税收记录**" 的内容;并从 dlp 报告和审核日志数据中获取有关 dlp 策略的详细活动报告。 
+- 您发布了一个名为 "**税收 record**" 的标签, 以便您的记录管理员可以手动将该标签应用于需要分类为记录的内容。 通过将此标签用作 DLP 策略中的条件, 可以使用此标签以及其他类型的敏感信息 (如 ITINs 或 Ssn) 查找内容;将保护操作应用于标记为 "**税收记录**" 的内容;并从 DLP 报告和审核日志数据中获取有关 DLP 策略的详细活动报告。 
     
 - 您发布了一个名为**Executive 领导团队**的标签-对一组主管的 Exchange 邮箱和 OneDrive 帐户敏感。 通过将此标签用作 DLP 策略中的条件, 可以同时对同一子集的内容和用户实施保留和保护操作。 
     
@@ -334,7 +337,7 @@ DLP 策略可帮助保护定义为**敏感信息类型**的敏感信息。 Offic
 
 ### <a name="support-for-sensitivity-labels-is-coming"></a>对敏感度标签的支持即将推出
 
-请注意, 当前可以仅将保留标签用作条件, 不能使用[敏感度标签](sensitivity-labels.md)。 目前, 我们正在为在此条件中使用灵敏度标签提供支持。
+当前可以仅将保留标签用作条件, 而不能使用[敏感度标签](sensitivity-labels.md)。 目前, 我们正在为在此条件中使用灵敏度标签提供支持。
   
 ### <a name="how-this-feature-relates-to-other-features"></a>此功能与其他功能的关联方式
 
@@ -346,7 +349,7 @@ DLP 策略可帮助保护定义为**敏感信息类型**的敏感信息。 Offic
     
 ![可应用于敏感信息的功能的关系图](media/dd410f97-a3a3-455c-a1e9-7ed8ae6893d6.png)
   
-请注意, DLP 策略具有更丰富的检测功能, 而不是应用于敏感信息的标签或保留策略。 DLP 策略可以对包含敏感信息的内容强制执行保护操作, 如果从内容中删除了敏感信息, 则下次扫描内容时将撤消这些保护操作。 但是, 如果保留策略或标签应用于包含敏感信息的内容, 则即使删除了敏感信息, 也不会撤消此一次性操作。
+请注意, DLP 策略具有更丰富的检测功能, 而不是应用于敏感信息的标签或保留策略。 DLP 策略可以对包含敏感信息的内容强制执行保护操作, 如果从内容中删除了敏感信息, 则下次扫描内容时将撤消这些保护操作。 但是, 如果保留策略或标签应用于包含敏感信息的内容, 则即使删除了敏感信息, 也不会撤消该一次性操作。
   
 通过将标签用作 DLP 策略中的条件, 可以使用该标签对内容强制执行保留和保护操作。 您可以考虑包含标签的内容与包含敏感信息的内容完全一样-标签和敏感信息类型都是用于对内容进行分类的属性, 以便您可以对该内容强制执行操作。
   
@@ -436,7 +439,7 @@ DLP 使用深入内容分析（而不仅仅是简单的文本扫描）来检测�
 
 在安全&amp;合规中心中创建 DLP 策略后, 它将存储在一个中央策略存储中, 然后同步到各种内容源, 其中包括:
   
-- Exchange Online, 并从 web 上的 outlook 和 outlook 打开
+- Exchange Online, 并从 web 上的 Outlook 和 Outlook 打开
     
 - OneDrive for Business 站点
     
@@ -464,15 +467,15 @@ DLP 使用深入内容分析（而不仅仅是简单的文本扫描）来检测�
   
 DLP 评估可编制索引的任何内容。 有关默认情况下进行爬网的文件类型的详细信息, 请参阅[SharePoint Server 中的默认已爬网文件扩展名和分析文件类型](https://docs.microsoft.com/SharePoint/technical-reference/default-crawled-file-name-extensions-and-parsed-file-types)。
   
-### <a name="policy-evaluation-in-exchange-online-outlook-and-outlook-on-the-web"></a>Exchange Online、outlook 和 outlook 网页版中的策略评估
+### <a name="policy-evaluation-in-exchange-online-outlook-and-outlook-on-the-web"></a>Exchange Online、Outlook 和 Outlook 网页版中的策略评估
 
-在创建包含 Exchange online 作为位置的 DLP 策略时, 该策略将从 Office 365 安全&amp;合规中心同步到 Exchange online, 然后从 exchange online 同步到 web 上的 outlook 和 outlook。
+在创建包含 Exchange Online 作为位置的 DLP 策略时, 该策略将从 Office 365 安全&amp;合规中心同步到 Exchange online, 然后从 exchange online 同步到 web 上的 Outlook 和 outlook。
   
-在 Outlook 中撰写邮件时, 如果要创建的内容是根据 DLP 策略进行评估, 则用户可以查看策略提示。 在邮件发送之后, 它将根据 DLP 策略进行评估, 作为邮件流的正常部分, 以及 exchange 邮件流规则 (也称为传输规则) 和在 exchange 管理中心中创建的 DLP 策略。 DLP 策略同时扫描邮件和所有附件。
+在 Outlook 中撰写邮件时, 如果要创建的内容是根据 DLP 策略进行评估, 则用户可以查看策略提示。 在邮件发送之后, 它将根据 DLP 策略进行评估, 作为邮件流的正常部分, 以及 Exchange 邮件流规则 (也称为传输规则) 和在 Exchange 管理中心中创建的 DLP 策略。 DLP 策略同时扫描邮件和所有附件。
   
 ### <a name="policy-evaluation-in-the-office-desktop-programs"></a>Office 桌面程序中的策略评估
 
-Excel、PowerPoint 和 Word 包含标识敏感信息的相同功能, 并将 DLP 策略应用为 SharePoint Online 和 OneDrive for business。 这些 Office 程序直接从中央策略存储同步其 DLP 策略, 然后在用户处理从包含在 DLP 策略中的网站中打开的文档时, 将继续评估 dlp 策略的内容。
+Excel、PowerPoint 和 Word 包含标识敏感信息的相同功能, 并将 DLP 策略应用为 SharePoint Online 和 OneDrive for business。 这些 Office 程序直接从中央策略存储同步其 DLP 策略, 然后在用户处理从包含在 DLP 策略中的网站中打开的文档时, 将继续评估 DLP 策略的内容。
   
 Office 中的 DLP 策略评估设计不会影响程序的性能或对内容进行处理的人员的工作效率。 如果他们正在处理大型文档, 或者用户的计算机忙, 可能需要几秒钟的时间才能显示策略提示。
 
@@ -508,9 +511,9 @@ Office 中的 DLP 策略评估设计不会影响程序的性能或对内容进�
     
 2. 为 DLP 报告使用以下任一 cmdlet:
     
-  - [get-dlpdetectionsreport](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-dlp/Get-DlpDetectionsReport?view=exchange-ps)
+  - [Get-dlpdetectionsreport](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-dlp/Get-DlpDetectionsReport?view=exchange-ps)
     
-  - [get-dlpdetailreport](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-dlp/Get-DlpDetailReport?view=exchange-ps)
+  - [Get-dlpdetailreport](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-dlp/Get-DlpDetailReport?view=exchange-ps)
     
 ## <a name="more-information"></a>更多信息
 

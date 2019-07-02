@@ -4,7 +4,7 @@ ms.author: deniseb
 author: denisebmsft
 manager: laurawi
 ms.date: 6/29/2018
-ms.audience: Admin
+audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 ms.collection:
@@ -14,16 +14,16 @@ search.appverid:
 - MOE150
 - MET150
 description: 使用 SharePoint Online 中的数据丢失防护 (DLP), 您可以发现在整个租户中包含敏感数据的文档。 在发现文档之后, 可以使用文档所有者来保护数据。 本主题可帮助您形成查询以搜索敏感数据。
-ms.openlocfilehash: 8ecce920810d52fadb311c6c4925c9fa4b6fb2b1
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: 2e76be22ce97a90b86a2ea089464f9b526ae4b70
+ms.sourcegitcommit: 0d5a863f48914eeaaf29f7d2a2022618de186247
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32255532"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "34078008"
 ---
 # <a name="form-a-query-to-find-sensitive-data-stored-on-sites"></a>创建查询以查找存储在站点上的敏感数据
 
-用户通常会将敏感数据 (如信用卡号、社会保险号码或个人) 存储在其网站上, 并且随着时间的推移, 这会使组织面临数据丢失的重大风险。 网站上存储的文档 (包括 OneDrive for business 网站) 可以与组织外部的人员共享, 而不能访问该信息。 使用 SharePoint Online 中的数据丢失防护 (DLP), 您可以发现在整个租户中包含敏感数据的文档。 在发现文档之后, 可以使用文档所有者来保护数据。 本主题可帮助您形成查询以搜索敏感数据。
+用户通常会将敏感数据 (如信用卡号、社会保险号码或个人) 存储在其网站上, 并且随着时间的推移, 这会使组织面临数据丢失的重大风险。 网站上存储的文档 (包括 OneDrive for Business 网站) 可以与组织外部的人员共享, 而不能访问该信息。 使用 SharePoint Online 中的数据丢失防护 (DLP), 您可以发现在整个租户中包含敏感数据的文档。 在发现文档之后, 可以使用文档所有者来保护数据。 本主题可帮助您形成查询以搜索敏感数据。
   
 > [!NOTE]
 > 电子发现、电子数据展示和 DLP 是需要[SharePoint Online 计划 2](https://go.microsoft.com/fwlink/?LinkId=510080)的高级功能。 
@@ -55,7 +55,7 @@ ms.locfileid: "32255532"
 
 SharePoint 中的 DLP 还引入了 LastSensitiveContentScan 属性, 此属性可帮助您搜索在特定时间范围内扫描的文件。 有关`LastSensitiveContentScan`属性的查询示例, 请参阅下一节中的[复杂查询示例](#examples-of-complex-queries)。 
   
-您不仅可以使用特定于 DLP 的属性来创建查询, 还可以使用标准的 SharePoint 电子数据展示搜索`Author`属性`FileExtension`(如或)。 您可以使用运算符来构建复杂的查询。 有关可用属性和运算符的列表, 请参阅[Using Search properties and operators with eDiscovery](https://go.microsoft.com/fwlink/?LinkId=510093)博客文章。 
+您不仅可以使用特定于 DLP 的属性来创建查询, 还可以使用标准的 SharePoint 电子数据展示搜索`Author`属性`FileExtension`(如或)。 您可以使用运算符来构建复杂的查询。 有关可用属性和运算符的列表, 请参阅[Using Search properties And operators With eDiscovery](https://go.microsoft.com/fwlink/?LinkId=510093)博客文章。 
   
 ## <a name="examples-of-complex-queries"></a>示例
 
@@ -65,8 +65,8 @@ SharePoint 中的 DLP 还引入了 LastSensitiveContentScan 属性, 此属性可
 |:-----|:-----|
 | `SensitiveType:"International Banking Account Number (IBAN)"` <br/> |该名称可能看起来很奇怪, 因为它很长, 但它是该敏感类型的正确名称。 请务必使用[敏感信息类型清单](https://go.microsoft.com/fwlink/?LinkID=509999)中的确切名称。 您还可以使用为您的组织创建的[自定义敏感信息类型](create-a-custom-sensitive-information-type.md)的名称。  <br/> |
 | `SensitiveType:"Credit Card Number|1..4294967295|1..100"` <br/> |这将返回至少有一个与敏感类型 "信用卡号码" 匹配的文档。 每个范围的值分别是最小值和最大值。 编写此查询的更简单的方法`SensitiveType:"Credit Card Number"`是, 但其中有什么有趣之处？  <br/> |
-| `SensitiveType:"Credit Card Number| 5..25" AND LastSensitiveContentScan:"8/11/2018..8/13/2018"` <br/> |这将返回5-25 年8月11日至8月13日 (2018) 从8月11日扫描的包含信用卡号的文档。  <br/> |
-| `SensitiveType:"Credit Card Number| 5..25" AND LastSensitiveContentScan:"8/11/2018..8/13/2018" NOT FileExtension:XLSX` <br/> |这将返回5-25 年8月11日至8月13日 (2018) 从8月11日扫描的包含信用卡号的文档。 具有 .xlsx 扩展名的文件不包含在查询结果中。  `FileExtension`是可以包含在查询中的多个属性之一。 有关详细信息, 请参阅将[搜索属性和运算符与电子数据展示结合使用](https://go.microsoft.com/fwlink/?LinkId=510093)。  <br/> |
+| `SensitiveType:"Credit Card Number| 5..25" AND LastSensitiveContentScan:"8/11/2018..8/13/2018"` <br/> |这将返回5-25 年8月11日至8月13日 (2018) 从8月 11 2018 日扫描的包含信用卡号的文档。  <br/> |
+| `SensitiveType:"Credit Card Number| 5..25" AND LastSensitiveContentScan:"8/11/2018..8/13/2018" NOT FileExtension:XLSX` <br/> |这将返回5-25 年8月11日至8月13日 (2018) 从8月 11 2018 日扫描的包含信用卡号的文档。 具有 .XLSX 扩展名的文件不包含在查询结果中。  `FileExtension`是可以包含在查询中的多个属性之一。 有关详细信息, 请参阅将[搜索属性和运算符与电子数据展示结合使用](https://go.microsoft.com/fwlink/?LinkId=510093)。  <br/> |
 | `SensitiveType:"Credit Card Number" OR SensitiveType:"U.S. Social Security Number (SSN)"` <br/> |这将返回包含信用卡号或社会保障号的文档。  <br/> |
    
 ## <a name="examples-of-queries-to-avoid"></a>示例

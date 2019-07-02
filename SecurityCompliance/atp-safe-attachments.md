@@ -15,12 +15,12 @@ ms.assetid: 6e13311e-92ae-495e-a619-56d770199170
 ms.collection:
 - M365-security-compliance
 description: "\"安全附件\" 功能可提供电子邮件附件的单击时间验证。 使用安全附件保护组织免受用户在电子邮件中发送或接收的恶意文件的攻击。"
-ms.openlocfilehash: d2e83b602df6195d2b0e5a2762b8076d0b2bef75
-ms.sourcegitcommit: 424a614141c1f19a1c84a67ec2d71dd3d7ef6694
+ms.openlocfilehash: 2980349eaec22f1e67206f96b8ed22df539cdba7
+ms.sourcegitcommit: 4fedeb06a6e7796096fc6279cfb091c7b89d484d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/30/2019
-ms.locfileid: "34590565"
+ms.lasthandoff: 05/31/2019
+ms.locfileid: "34652615"
 ---
 # <a name="office-365-atp-safe-attachments"></a>Office 365 ATP 安全附件
 
@@ -32,7 +32,7 @@ ATP 安全附件 (和[ATP 安全链接](atp-safe-links.md)) 是[Office 365 高�
   
 ## <a name="how-to-get-atp-safe-attachments"></a>如何获取 ATP 安全附件
 
-首先, 请确保你的订阅包括[高级威胁防护](office-365-atp.md)。 在订阅中包含 ATP, 如[microsoft 365 企业版](https://www.microsoft.com/microsoft-365/enterprise/home)、 [Microsoft 365 商业](https://www.microsoft.com/microsoft-365/business)版、Office 365 企业版 E5、Office 365 教育版 A5 等。如果您的组织有一个不包含 Office 365 ATP 的 Office 365 订阅, 则可能会将 ATP 作为加载项进行购买。 有关详细信息, 请参阅[office 365 高级威胁防护计划和定价](https://products.office.com/exchange/advance-threat-protection)和[Office 365 高级威胁防护服务说明](https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description)。 
+首先, 请确保你的订阅包括[高级威胁防护](office-365-atp.md)。 在订阅中包含 ATP, 如[microsoft 365 E5](https://www.microsoft.com/microsoft-365/enterprise/home)、 [microsoft 365 商业](https://www.microsoft.com/microsoft-365/business)版、Office 365 E5、Office 365 A5 等。如果您的组织有一个不包含 Office 365 ATP 的 Office 365 订阅, 则可能会将 ATP 作为加载项进行购买。 有关详细信息, 请参阅[office 365 高级威胁防护计划和定价](https://products.office.com/exchange/advance-threat-protection)和[Office 365 高级威胁防护服务说明](https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description)。 
 
 接下来, 请确保定义了 ATP 安全附件策略。 (请参阅[设置 Office 365 ATP 安全附件策略](set-up-atp-safe-attachments-policies.md))ATP 安全附件功能在以下情况中处于活动状态:
   
@@ -56,10 +56,10 @@ ATP 安全附件 (和[ATP 安全链接](atp-safe-links.md)) 是[Office 365 高�
   
 |**示例方案**|**在这种情况下 ATP 安全附件保护是否适用？**|
 |:-----|:-----|
-|Pat 的组织拥有 Office 365 企业版 E5, 但尚未为 ATP 安全附件定义任何策略。  <br/> |否。 虽然功能可用, 但必须至少定义一个 ATP 安全附件策略, 才能将 ATP 安全附件保护到位。  <br/> |
+|Pat 的组织具有 Office 365 E5, 但尚未为 ATP 安全附件定义任何策略。  <br/> |否。 虽然功能可用, 但必须至少定义一个 ATP 安全附件策略, 才能将 ATP 安全附件保护到位。  <br/> |
 |先生为在 Contoso 的销售部门的员工。 先生/她的组织有一个仅适用于财务员工的 ATP 安全附件策略。  <br/> |否。 在这种情况下, 财务员工将具有 ATP 安全附件保护, 但在定义包含这些组的策略之前, 其他员工 (包括销售部门) 将不会。  <br/> |
 |昨天, Jean 的组织中的 Office 365 管理员设置适用于所有员工的 ATP 安全附件策略。 在今天的早期, Jean 收到包含附件的电子邮件。  <br/> |是。 在此示例中, Jean 具有高级威胁防护的许可证, 并且已定义了包含 Jean 的 ATP 安全附件策略。 新策略通常需要30分钟的时间才能在数据中心内生效;由于在这种情况下已过一天, 因此该策略应有效。  <br/> |
-|丽丽的组织拥有 Office 365 企业版 E5, 其中包含组织中每个人的 ATP 安全附件策略。 Chris 收到包含附件的电子邮件, 并将邮件转发给组织外部的其他人。  <br/> |对于 Chris 收到的邮件, ATP 安全附件保护已就绪。 如果收件人的组织还设置了 ATP 安全附件策略, 则 Chris 转发的邮件将在转发的邮件到达时服从这些策略。  <br/> |
+|丽丽的组织有 Office 365 E5, 其中的 ATP 安全附件策略适用于组织中的所有人。 Chris 收到包含附件的电子邮件, 并将邮件转发给组织外部的其他人。  <br/> |对于 Chris 收到的邮件, ATP 安全附件保护已就绪。 如果收件人的组织还设置了 ATP 安全附件策略, 则 Chris 转发的邮件将在转发的邮件到达时服从这些策略。  <br/> |
 |晓明的组织已准备好 ATP 安全附件策略, 并且已打开[SharePoint、OneDrive 和 Microsoft 团队的 atp](atp-for-spo-odb-and-teams.md) 。 晓明假定已扫描 SharePoint Online 中的每个文件, 并且可以安全地打开或下载。  <br/> |根据定义的策略, ATP 安全附件保护已就绪;但是, 这并不意味着会扫描 SharePoint Online、OneDrive for Business 或 Microsoft 团队中的每个文件。 (若要了解详细信息, 请参阅[适用于 SharePoint、OneDrive 和 Microsoft 团队的 ATP](atp-for-spo-odb-and-teams.md)。)  <br/> |
 
 ## <a name="submitting-files-for-malware-analysis"></a>提交文件以进行恶意软件分析

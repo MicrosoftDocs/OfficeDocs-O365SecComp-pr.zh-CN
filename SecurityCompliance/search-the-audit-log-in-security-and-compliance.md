@@ -1,5 +1,5 @@
 ---
-title: 在 Security & 合规性中心中搜索审核日志
+title: 在安全 & 合规性中心中搜索审核日志
 ms.author: markjjo
 author: markjjo
 manager: laurawi
@@ -14,15 +14,15 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: 0d4d0f35-390b-4518-800e-0c7ec95e946c
-description: '使用安全 & 合规性中心搜索统一审核日志, 以查看 Office 365 组织中的用户和管理员活动。 '
-ms.openlocfilehash: cb44dd3d7c87928b325a72e783feea85e252dc49
-ms.sourcegitcommit: 6eb51931242d07abde2e37f1bd57d13bc724f0de
+description: '使用安全 & 合规中心搜索统一审核日志, 以查看 Office 365 组织中的用户和管理员活动。 '
+ms.openlocfilehash: 6f27929da0a802e99c2b6373ba7ae9791776c67e
+ms.sourcegitcommit: b00c8fe1827d24f055a3076c10f284ff9ee3e04b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "34547987"
+ms.lasthandoff: 06/20/2019
+ms.locfileid: "35113286"
 ---
-# <a name="search-the-audit-log-in-the-security--compliance-center"></a>在 Security & 合规性中心中搜索审核日志
+# <a name="search-the-audit-log-in-the-security--compliance-center"></a>在安全 & 合规性中心中搜索审核日志
 
 ## <a name="introduction"></a>简介
 
@@ -31,9 +31,6 @@ ms.locfileid: "34547987"
 - SharePoint Online 和 OneDrive for business 中的用户活动
     
 - Exchange Online 中的用户活动 (Exchange 邮箱审核日志记录)
-    
-    > [!IMPORTANT]
-    > 必须为每个用户邮箱启用邮箱审核日志记录, 然后才会记录 Exchange Online 中的用户活动。 有关详细信息, 请参阅[在 Office 365 中启用邮箱审核](enable-mailbox-auditing.md)。
   
 - SharePoint Online 中的管理员活动
     
@@ -66,7 +63,7 @@ ms.locfileid: "34547987"
 
 在开始搜索 Office 365 审核日志之前, 请务必阅读以下各项。
   
-- 您 (或另一个管理员) 必须先启用审核日志记录, 然后才能开始搜索 Office 365 审核日志。 若要打开它, 只需单击安全 & 合规性中心中的 "**审核日志搜索**" 页上的 "**开始记录用户和管理员活动**"。 (如果看不到此链接, 表明已为您的组织启用了审核。)打开后, 会显示一条消息, 指出正在准备审核日志, 并且您可以在准备完成后的几小时内运行搜索。 您只需执行一次此操作。 
+- 您 (或另一个管理员) 必须先启用审核日志记录, 然后才能开始搜索 Office 365 审核日志。 若要打开它, 只需单击安全性 & 合规性中心中的 "**审核日志搜索**" 页上的 "**开始记录用户和管理员活动**"。 (如果看不到此链接, 表明已为您的组织启用了审核。)打开后, 会显示一条消息, 指出正在准备审核日志, 并且您可以在准备完成后的几小时内运行搜索。 您只需执行一次此操作。 
     
     > [!NOTE]
     > 默认情况下, 我们正在启用审核。 在此之前, 你可以按照前面所述将其打开。 
@@ -74,7 +71,7 @@ ms.locfileid: "34547987"
 - 您必须在 Exchange Online 中向您分配 "仅查看审核日志" 或 "审核日志" 角色, 才能搜索 Office 365 审核日志。 默认情况下, 将这些角色分配给 Exchange 管理中心中 "**权限**" 页上的 "合规性管理" 和 "组织管理" 角色组。 请注意, Office 365 和 Microsoft 365 中的全局管理员将自动添加为 Exchange Online 中的 "组织管理" 角色组的成员。 若要使用户能够使用最低级别的权限搜索 Office 365 审核日志, 您可以在 Exchange Online 中创建自定义角色组, 添加仅查看审核日志或审核日志角色, 然后将该用户添加为新角色组的成员。 有关详细信息, 请参阅[在 Exchange Online 中管理角色组](https://go.microsoft.com/fwlink/p/?LinkID=730688)。
     
     > [!IMPORTANT]
-    > 如果在 Security & 合规性中心的 "**权限**" 页上为用户分配 "仅查看审核日志" 或 "审核日志" 角色, 则他们将无法搜索 Office 365 审核日志。 您必须在 Exchange Online 中分配权限。 这是因为用于搜索审核日志的基础 cmdlet 是 Exchange Online cmdlet。 
+    > 如果在 Security & 合规性中心中向用户分配 "**权限**" 页上的 "仅查看" "审核日志" 或 "审核日志" 角色, 则他们将无法搜索 Office 365 审核日志。 您必须在 Exchange Online 中分配权限。 这是因为用于搜索审核日志的基础 cmdlet 是 Exchange Online cmdlet。 
   
 - 当用户或管理员执行了审核的活动时, 将生成审核记录并将其存储在组织的 Office 365 审核日志中。 审核记录保留的时间长度 (并可在审核日志中搜索) 取决于您的 Office 365 订阅, 以及分配给特定用户的许可证类型。
 
@@ -101,7 +98,7 @@ ms.locfileid: "34547987"
     
 - 如前面所述, 用于搜索审核日志的基础 cmdlet 是**UnifiedAuditLog**的 Exchange Online cmdlet。 这意味着您可以使用此 cmdlet 搜索 Office 365 审核日志, 而不是使用安全 & 合规性中心中的 "**审核日志搜索**" 页。 您必须在连接到 Exchange Online 组织的远程 PowerShell 中运行此 cmdlet。 有关详细信息, 请参阅[UnifiedAuditLog](https://go.microsoft.com/fwlink/p/?linkid=834776)。
     
-- 如果要以编程方式从 Office 365 审核日志中下载数据, 我们建议使用 Office 365 管理活动 API, 而不是使用 PowerShell 脚本。 Office 365 管理活动 API 是 REST web 服务, 可用于为组织开发操作、安全性和合规性监视解决方案。 有关详细信息, 请参阅[Office 365 管理活动 API 参考](https://go.microsoft.com/fwlink/?linkid=852309)。
+- 如果要以编程方式从 Office 365 审核日志中下载数据, 我们建议使用 Office 365 管理活动 API, 而不是使用 PowerShell 脚本。 Office 365 管理活动 API 是 REST web 服务, 可用于为组织开发操作、安全性和合规性监视解决方案。 有关详细信息, 请参阅[Office 365 管理活动 API 参考](https://docs.microsoft.com/office/office-365-management-api/office-365-management-activity-api-reference)。
     
 - 在事件发生后, 将在搜索结果中显示相应的审核日志条目, 最长可能需要30分钟或最长24小时。 下表显示了 Office 365 中的不同服务所需的时间。
     
@@ -153,7 +150,7 @@ ms.locfileid: "34547987"
   
 2. 使用工作或学校帐户登录到 Office 365。
     
-3. 在安全 & 合规性中心的左侧窗格中, 单击 "**搜索**", 然后单击 "**审核日志搜索**"。
+3. 在安全性 & 合规性中心的左侧窗格中, 单击 "**搜索**", 然后单击 "**审核日志搜索**"。
     
     将显示 "**审核日志搜索**" 页。 
     
@@ -266,12 +263,12 @@ ms.locfileid: "34547987"
     
 2. 单击 "**导出结果**", 然后选择下列选项之一: 
     
-  - **保存加载的结果**如果选择此选项, 则仅导出在 * * 审核日志搜索 * * 页面的**结果**下显示的条目。 下载的 CSV 文件包含页面上显示的相同列 (和数据) (日期、用户、活动、项和详细信息)。 包含来自审核日志条目的详细信息的 CSV 文件中包含其他列 (称为 "**更多**")。 因为您要导出的结果与在**审核日志搜索**页面上加载 (和查看) 的结果相同, 所以最多可以导出5000个条目。 
+     - **保存加载的结果**–选择此选项可仅导出在 "**审核日志搜索**" 页上的 "**结果**" 下显示的条目。 下载的 CSV 文件包含页面上显示的相同列 (和数据) (日期、用户、活动、项和详细信息)。 包含来自审核日志条目的详细信息的 CSV 文件中包含其他列 (称为 "**更多**")。 因为您要导出的结果与在**审核日志搜索**页面上加载 (和查看) 的结果相同, 所以最多可以导出5000个条目。 
     
-  - **下载所有结果**选择此选项可导出符合搜索条件的 Office 365 审核日志中的所有条目。 对于较大的搜索结果集, 请选择此选项从审核日志中下载所有条目, 除了可在 "**审核日志搜索**" 页上显示的5000结果。 此选项将从审核日志中将原始数据下载到 CSV 文件, 并包含来自名为**AuditData**的列中的审核日志条目的其他信息。 如果选择此导出选项, 可能需要较长时间下载文件, 因为如果选择其他选项, 文件可能会比下载的文件大得多。
+     - **下载所有结果**–选择此选项可导出符合搜索条件的 Office 365 审核日志中的所有条目。 对于较大的搜索结果集, 请选择此选项从审核日志中下载所有条目, 除了可在 "**审核日志搜索**" 页上显示的5000结果。 此选项将从审核日志中将原始数据下载到 CSV 文件, 并包含来自名为**AuditData**的列中的审核日志条目的其他信息。 如果选择此导出选项, 可能需要较长时间下载文件, 因为如果选择其他选项, 文件可能会比下载的文件大得多。
     
-    > [!IMPORTANT]
-    > 您可以从单个审核日志搜索中最多将50000个条目下载到 CSV 文件中。 如果将50000条目下载到 CSV 文件中, 您可能会假定有超过50000个事件满足搜索条件。 若要导出超过此限制, 请尝试使用日期范围来减少审核日志条目的数量。 您可能需要运行包含较小日期范围的多个搜索以导出50000个以上的条目。 
+       > [!IMPORTANT]
+       > 您可以从单个审核日志搜索中最多将50000个条目下载到 CSV 文件中。 如果将50000条目下载到 CSV 文件中, 您可能会假定有超过50000个事件满足搜索条件。 若要导出超过此限制, 请尝试使用日期范围来减少审核日志条目的数量。 您可能需要运行包含较小日期范围的多个搜索以导出50000个以上的条目。 
   
 3. 选择 "导出" 选项后, 将在窗口底部显示一条消息, 提示您打开 CSV 文件, 将其保存到 "下载" 文件夹中, 或将其保存到特定文件夹中。
 
@@ -301,13 +298,13 @@ ms.locfileid: "34547987"
 ||||
 |:-----|:-----|:-----|
 |[文件和页面活动](#file-and-page-activities)<br/> |[文件夹活动](#folder-activities)<br/> |[SharePoint 列表活动](#sharepoint-list-activities)<br/>|
-|[共享和访问请求活动](#sharing-and-access-request-activities)<br/> |[同步活动](#synchronization-activities)<br/> |[网站管理活动](#site-administration-activities)<br/> |
-|[Exchange 邮箱活动](#exchange-mailbox-activities)<br/> |[Sway 活动](#sway-activities) <br/> |[用户管理活动](#user-administration-activities) <br/> |
-|[Azure AD 组管理活动](#azure-ad-group-administration-activities) <br/> |[应用程序管理活动](#application-administration-activities) <br/> |[角色管理活动](#role-administration-activities) <br/> |
-|[目录管理活动](#directory-administration-activities) <br/>|[电子数据展示活动](#ediscovery-activities) <br/> |[高级电子数据展示活动](#advanced-ediscovery-activities)<br/> |
-|[Power BI 活动](#power-bi-activities) <br/> |[Microsoft 工作区分析](#microsoft-workplace-analytics-activities)<br/>|[Microsoft 团队活动](#microsoft-teams-activities) <br/> |
-|[Yammer 活动](#yammer-activities) <br/> |[Microsoft 流活动](#microsoft-flow-activities) <br/>|[Microsoft PowerApps 活动](#microsoft-powerapps)<br/>|
-|[Microsoft Stream 活动](#microsoft-stream-activities) <br/>|[Exchange 管理活动](#exchange-admin-audit-log)<br/>|
+|[共享和访问请求活动](#sharing-and-access-request-activities)<br/> |[同步活动](#synchronization-activities)<br/> |[网站权限活动](#site-permissions-activities)<br/> |
+|[网站管理活动](#site-administration-activities)<br/> |[Exchange 邮箱活动](#exchange-mailbox-activities)<br/> |[Sway 活动](#sway-activities) <br/> |
+|[用户管理活动](#user-administration-activities) <br/> |[Azure AD 组管理活动](#azure-ad-group-administration-activities) <br/> |[应用程序管理活动](#application-administration-activities) <br/> |
+|[角色管理活动](#role-administration-activities) <br/> |[目录管理活动](#directory-administration-activities) <br/>|[电子数据展示活动](#ediscovery-activities) <br/> |
+|[高级电子数据展示活动](#advanced-ediscovery-activities)<br/> |[Power BI 活动](#power-bi-activities) <br/> |[Microsoft 工作区分析](#microsoft-workplace-analytics-activities)<br/>|
+|[Microsoft 团队活动](#microsoft-teams-activities) <br/> |[Yammer 活动](#yammer-activities) <br/> |[Microsoft 流活动](#microsoft-flow-activities) <br/>|
+|[Microsoft PowerApps 活动](#microsoft-powerapps)<br/>|[Microsoft Stream 活动](#microsoft-stream-activities) <br/>|[Exchange 管理活动](#exchange-admin-audit-log)<br/>|
 ||||
   
 ### <a name="file-and-page-activities"></a>文件和页面活动
@@ -318,12 +315,16 @@ ms.locfileid: "34547987"
 |:-----|:-----|:-----|
 |访问的文件  <br/> |FileAccessed  <br/> |用户或系统帐户访问文件。  <br/> |
 |（无）  <br/> |FileAccessedExtended  <br/> |这与 "访问的文件" (FileAccessed) 活动相关。 当同一人持续访问一个文件长时间 (最长为3小时) 时, 将记录 FileAccessedExtended 事件。 记录 FileAccessedExtended 事件的目的是减少在连续访问文件时记录的 FileAccessed 事件数。 这有助于减少多个 FileAccessed 记录在本质上是相同的用户活动的噪音, 并让您重点关注最初的 (更重要的) FileAccessed 事件。  <br/> |
+|更改了合规性策略标签<br/> |ComplianceSettingChanged<br/> |保留标签应用于文档或从文档中删除。 手动或自动将保留标签应用于邮件时, 将触发此事件。<br/> |
+|将记录状态更改为 "已锁定"<br/> |LockRecord<br/> |将文档分类为记录的保留标签的记录状态被锁定。 这意味着无法修改或删除该文档。 只有为网站至少分配了 "参与者" 权限的用户才能更改文档的记录状态。<br/> |
+|将记录状态更改为 "已解锁"<br/> |UnlockRecord<br/> |将文档分类为记录的保留标签的记录状态被解除锁定。 这意味着可以修改或删除文档。 只有为网站至少分配了 "参与者" 权限的用户才能更改文档的记录状态。<br/><br/> |
 |签入文件  <br/> |FileCheckedIn  <br/> |用户签入文档库中签出的文档。  <br/> |
 |签出文件  <br/> |FileCheckedOut  <br/> |用户签出位于文档库中的文档。 用户可以对与其共享的文档执行签出和更改操作。  <br/> |
 |复制的文件  <br/> |FileCopied  <br/> |用户从网站复制文档。 可以将复制的文件保存到网站上的另一个文件夹。  <br/> |
 |删除的文件  <br/> |FileDeleted  <br/> |用户从网站中删除文档。  <br/> |
 |从回收站删除的文件  <br/> |FileDeletedFirstStageRecycleBin  <br/> |用户从网站的回收站中删除文件。  <br/> |
 |从第二阶段回收站删除的文件  <br/> |FileDeletedSecondStageRecycleBin  <br/> |用户从网站的第二阶段回收站中删除文件。  <br/> |
+|已删除记录合规性策略标签<br/> |ComplianceRecordDelete<br/> |已删除作为记录分类的文档。 在将内容分类为记录的保留标签应用于文档时, 该文档被视为一条记录。 <br/> |
 |检测到的文档敏感度不匹配 <br/>|DocumentSensitivityMismatchDetected<br/>|用户上载使用敏感度标签分级的文档, 该文档的优先级高于将文档上载到的网站所应用的敏感度标签。 注释如果应用于网站的敏感度标签的优先级高于应用于上载到网站的文档的敏感度标签, 则不会触发此事件。 有关敏感度标签优先级的详细信息, 请参阅[敏感度标签概述](sensitivity-labels.md#label-priority-order-matters)中的 "标签优先级" 一节。<br/>|
 |在文件中检测到恶意软件  <br/> |FileMalwareDetected  <br/> |SharePoint 防病毒引擎可检测文件中的恶意软件。  <br/> |
 |放弃文件签出  <br/> |FileCheckOutDiscarded  <br/> |用户放弃（或撤消）签出的文件。这意味着将放弃签出文件时对其所做的更改，而不将其保存到文档库中的文档版本。  <br/> |
@@ -398,12 +399,12 @@ ms.locfileid: "34547987"
   
 |**易记名称**|**操作**|**说明**|
 |:-----|:-----|:-----|
+|向网站集添加了权限级别  <br/> |PermissionLevelAdded  <br/> |向网站集添加了权限级别。  <br/> |
 |接受的访问请求  <br/> |AccessRequestAccepted  <br/> |接受对网站、文件夹或文档的访问请求, 并向请求用户授予访问权限。  <br/> |
 |接受的共享邀请  <br/> |SharingInvitationAccepted  <br/> |用户 (成员或来宾) 接受了共享邀请, 并且已被授予对资源的访问权限。 此事件包括受邀的用户的相关信息, 以及用于接受邀请的电子邮件地址 (可以是不同的)。 此活动通常附带第二个事件, 该事件描述了如何向用户授予对资源的访问权限, 例如, 将用户添加到有权访问该资源的组。  <br/> |
-|向网站集添加了权限级别  <br/> |PermissionLevelAdded  <br/> |向网站集添加了权限级别。  <br/> |
 |阻止的共享邀请  <br/> |SharingInvitationBlocked  <br/> | 由于外部共享策略允许或拒绝基于目标用户的域的外部共享, 因此组织中的用户发送的共享邀请被阻止。 在这种情况下, 共享邀请被阻止, 因为:  <br/>  目标用户的域不包含在允许的域的列表中。  <br/>  或  <br/>  目标用户的域包含在阻止域的列表中。  <br/>  有关允许或阻止基于域的外部共享的详细信息, 请参阅[SharePoint Online 和 OneDrive For business 中的受限制域共享](https://support.office.com/article/5d7589cd-0997-4a00-a2ba-2320ec49c4e9)。  <br/> |
-|创建公司可共享的链接  <br/> |CompanyLinkCreated  <br/> |用户创建了指向资源的公司范围的链接。 公司范围内的链接仅可由组织中的成员使用。 来宾无法使用它们。  <br/> |
 |创建的访问请求  <br/> |AccessRequestCreated  <br/> |用户请求访问网站、文件夹或文档不具有访问权限的权限。  <br/> |
+|创建公司可共享的链接  <br/> |CompanyLinkCreated  <br/> |用户创建了指向资源的公司范围的链接。 公司范围内的链接仅可由组织中的成员使用。 来宾无法使用它们。  <br/> |
 |创建了匿名链接  <br/> |AnonymousLinkCreated  <br/> |用户创建了指向资源的匿名链接。 具有此链接的任何人都可以访问该资源, 而无需进行身份验证。  <br/> |
 |已创建安全链接  <br/> |SecureLinkCreated  <br/> |已创建对此项目的安全共享链接。  <br/> |
 |已创建共享邀请  <br/> |SharingInvitationCreated  <br/> |用户在 SharePoint Online 或 OneDrive for Business 中共享了与组织目录中不存在的用户的资源。  <br/> |
@@ -503,27 +504,32 @@ ms.locfileid: "34547987"
   
 ### <a name="exchange-mailbox-activities"></a>Exchange 邮箱活动
   
-下表列出了邮箱审核日志记录可以记录的活动。 记录邮箱所有者、委派用户或管理员执行的邮箱活动。 默认情况下, 未打开 Office 365 中的邮箱审核。 必须为每个邮箱启用邮箱审核日志记录, 然后才会记录邮箱活动。 有关详细信息, 请参阅[在 Office 365 中启用邮箱审核](https://go.microsoft.com/fwlink/p/?LinkID=626109)。
+下表列出了邮箱审核日志记录可以记录的活动。 邮箱所有者、委派用户或管理员执行的邮箱活动将自动记录在最长90天的 Office 365 审核日志中。 请注意, 管理员可以对 organizatin 中的所有用户关闭邮箱审核日志记录。 在这种情况下, 不会记录任何用户的邮箱操作。 有关详细信息, 请参阅[管理邮箱审核](enable-mailbox-auditing.md)。
+
+ 您还可以使用 Exchange Online PowerShell 中的[search-mailboxauditlog](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-audit/search-mailboxauditlog) cmdlet 搜索邮箱活动。 
   
 |**易记名称**|**操作**|**说明**|
 |:-----|:-----|:-----|
-|添加了委派邮箱权限  <br/> |外接 Add-mailboxpermission  <br/> |管理员向其他人的邮箱分配了对用户 (称为代理) 的 FullAccess 邮箱权限。 FullAccess 权限允许代理打开其他人的邮箱, 并读取和管理邮箱的内容。  <br/> |
-|将邮件分类为记录  <br/> |ApplyRecordLabel<br/> |邮件被分类为记录。 当手动或自动应用将内容分类为记录时, 将发生这种情况。<br/> |
+|添加了委派邮箱权限  <br/> |AddMailboxPermissions  <br/> |管理员向其他人的邮箱分配了对用户 (称为代理) 的 FullAccess 邮箱权限。 FullAccess 权限允许代理打开其他人的邮箱, 并读取和管理邮箱的内容。  <br/> |
+|添加或删除了具有 "代理访问日历" 文件夹的用户<br/> |UpdateCalendarDelegation<br/> |将用户添加或删除为对其他用户邮箱的日历的代理。 日历委派向同一组织中的其他人授予对邮箱所有者日历的管理权限。 <br/> |
+|向文件夹添加了权限<br/> |AddFolderPermissions<br/> |添加了一个文件夹权限。 文件夹权限控制组织中的哪些用户可以访问邮箱中的文件夹和位于这些文件夹中的邮件。<br/> |
 |将邮件复制到另一个文件夹  <br/> |Copy  <br/> |已将某个邮件复制到另一个文件夹。  <br/> |
 |创建的邮箱项目  <br/> |Create  <br/> |在邮箱的日历、联系人、备注或任务文件夹中创建项目；例如，创建新的会议请求。 请注意, 不会审核创建、发送或接收邮件。 此外, 还不会审核创建邮箱文件夹的情况。  <br/> |
-|在 Outlook web app 中创建了新的收件箱规则  <br/> |NewInboxRule<br/> |用户在 Outlook web app (OWA) 中创建了新的收件箱规则。<br/> |
+|在 Outlook web app 中创建了新的收件箱规则  <br/> |NewInboxRule<br/> |邮箱所有者或对邮箱具有访问权限的其他用户在 Outlook web app 中创建了新的收件箱规则。<br/> |
 |从 "已删除邮件" 文件夹中删除邮件  <br/> |SoftDelete  <br/> |邮件已从 "已删除邮件" 文件夹中永久删除或删除。 这些项目将移动到 "可恢复的项目" 文件夹中。 当用户选择邮件并按**Shift + Delete**时, 邮件也会移动到 "可恢复的项目" 文件夹中。  <br/> |
+|将邮件标记为记录  <br/> |ApplyRecordLabel<br/> |邮件被分类为记录。 当手动或自动应用将内容分类为记录时, 将发生这种情况。<br/> |
 |将邮件移动到另一个文件夹  <br/> |Move  <br/> |已将某个邮件移至另一个文件夹。  <br/> |
 |将邮件移动到 "已删除邮件" 文件夹  <br/> |MoveToDeletedItems  <br/> |邮件已被删除并移动到 "已删除邮件" 文件夹。  <br/> |
 |修改的文件夹权限  <br/> |UpdateFolderPermissions  <br/> |更改了文件夹权限。 文件夹权限控制组织中的哪些用户可以访问邮箱文件夹和文件夹中的邮件。  <br/> |
+|从 Outlook web app 修改的收件箱规则<br/> |SetInboxRule<br/> |邮箱所有者或对邮箱具有访问权限的其他用户使用 Outlook web app 修改了收件箱规则。<br/> |
 |已清除邮箱中的邮件  <br/> |HardDelete  <br/> |从 "可恢复的项目" 文件夹中清除邮件 (从邮箱中永久删除)。  <br/> |
 |已删除委派邮箱权限  <br/> |Add-mailboxpermission  <br/> |管理员从某人的邮箱中删除了 FullAccess 权限 (已分配给代理)。 删除 FullAccess 权限后, 代理将无法打开其他人的邮箱或访问其中的任何内容。  <br/> |
+|从文件夹删除权限<br/> |RemoveFolderPermissions<br/> |已删除文件夹权限。 文件夹权限控制组织中的哪些用户可以访问邮箱中的文件夹和位于这些文件夹中的邮件。<br/> |
 |使用 "代理发送" 权限发送邮件  <br/> |SendAs  <br/> |邮件是使用 SendAs 权限发送的。 这表示另一个用户发送了邮件，而该邮件就好像来自于邮箱所有者。  <br/> |
 |使用 "代表发送" 权限发送的邮件  <br/> |SendOnBehalf  <br/> |邮件是使用 SendOnBehalf 权限发送的。 这表示另一个用户代表邮箱所有者发送了邮件。 该邮件指示收件人代表发送邮件的收件人和实际发送邮件的收件人。  <br/> |
-|更新了对 "日历" 文件夹的代理访问  <br/> |UpdateCalendarDelegation  <br/> |向邮箱分配了日历委派。 日历委派向同一组织中的其他人授予对邮箱所有者日历的管理权限。  <br/> |
+|更新了 Outlook 客户端中的收件箱规则<br/> |UpdateInboxRules<br/> |邮箱所有者或对邮箱具有访问权限的其他用户修改了 Outlook 客户端中的收件箱规则。<br/> |
 |更新的邮件  <br/> |Update  <br/> |更改了邮件或其属性。  <br/> |
 |登录到邮箱的用户  <br/> |Mailboxlogin 该值  <br/> |用户登录其邮箱。  <br/> |
-|（无）  <br/> |UpdateInboxRules  <br/> |已添加、删除或更改收件箱规则。 "收件箱" 规则用于根据指定的条件处理用户收件箱中的邮件, 并在满足规则条件时采取操作, 例如将邮件移动到指定文件夹或删除邮件。  <br/> 若要返回收件箱规则活动的条目, 您必须在 "**活动**" 列表中选择 "**显示所有活动的结果**"。 使用 "日期范围" 框和 "**用户**" 列表缩小搜索结果的范围。  <br/> |
 ||||
 
 ### <a name="sway-activities"></a>Sway 活动
@@ -756,7 +762,7 @@ ms.locfileid: "34547987"
    
 ### <a name="microsoft-flow-activities"></a>Microsoft 流活动
 
-可以在审核日志中搜索 Microsoft Flow 中的活动。 这些活动包括创建、编辑和删除流以及更改流权限。 有关流活动审核的信息, 请参阅现已[在安全 _AMP_ 合规中心中提供的博客 Microsoft 流审核事件](https://flow.microsoft.com/blog/security-and-compliance-center)。
+可以在审核日志中搜索 Microsoft Flow 中的活动。 这些活动包括创建、编辑和删除流以及更改流权限。 有关流活动审核的信息, 请参阅现已[在安全 & 合规中心中提供的博客 Microsoft 流审核事件](https://flow.microsoft.com/blog/security-and-compliance-center)。
 
 ### <a name="microsoft-powerapps"></a>Microsoft PowerApps
 

@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 - MOE150
 description: 了解 Office 365 中的监督策略
-ms.openlocfilehash: 2948cc0440bf481e3f0e90e76a23392233d81cc8
-ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
+ms.openlocfilehash: d802fb0e17894a769fb330aa5f080fbd6151b44e
+ms.sourcegitcommit: 3699da2cad6e6a2002083e2884e32393dacab0ca
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "34156474"
+ms.lasthandoff: 06/04/2019
+ms.locfileid: "34694706"
 ---
 # <a name="supervision-policies-in-office-365"></a>Office 365 中的监督策略
 
@@ -31,7 +31,7 @@ Office 365 中的监督策略使您可以捕获指定审阅者进行检查的员
 
 - 监视日益增长的通信信道类型
 - 邮件数据量的增加
-- 法规实施 & 了罚款风险
+- 法规实施 & 受到罚款的风险
 
 在某些组织中, IT 支持与合规性管理组之间可能存在的职责分离。 Office 365 支持将监督策略功能配置与策略的配置与捕获的通信相分离。 例如, 组织的 IT 组可能负责设置角色权限和组, 以支持由组织的合规性团队配置和管理的监督策略。
 
@@ -82,10 +82,15 @@ Office 365 中的监督策略使您可以捕获指定审阅者进行检查的员
 使用监督策略, 您可以选择监视以下一个或多个通信平台中的邮件:
 
 - **Exchange 电子邮件:** 作为 Office 365 订阅的一部分托管在 Exchange Online 上的邮箱都有资格进行邮件监督。 与监察策略条件匹配的电子邮件和附件可立即用于监控和监控报告。 受支持的监督附件类型与[Exchange 邮件流规则内容检查支持的文件类型](https://docs.microsoft.com/exchange/security-and-compliance/mail-flow-rules/inspect-message-attachments#supported-file-types-for-mail-flow-rule-content-inspection)相同。
+
 - **Microsoft 团队:** 可以监督公共和私有 Microsoft 团队频道和个人聊天中的聊天通信和相关附件。 团队聊天匹配监督策略条件每24小时处理一次, 然后可在监督报告中进行监视。 使用以下组管理配置监督团队中的个人用户聊天和通道通信:
 
     - **对于团队聊天监督:** 为单个用户分配或向监督策略分配一个[通讯组](https://support.office.com/article/Distribution-groups-E8BA58A8-FAB2-4AAF-8AA1-2A304052D2DE)。 这适用于1对1或一对多用户/聊天的关系。
-    - **对于团队渠道通信:** 将您想要监视的每个 Microsoft 团队频道或 Office 365 组分配给监督策略, 其中包含特定用户。 如果将同一用户添加到其他 Microsoft 团队频道或 Office 365 组, 请确保同时将这些新的频道和组添加到监督策略中。
+    - **对于团队渠道通信:** 将您想要监视的每个 Microsoft 团队频道或 Office 365 组分配给监督策略, 其中包含特定用户。 如果将同一用户添加到其他 Microsoft 团队频道或 Office 365 组, 请确保将这些新的频道和组添加到监督策略中。
+
+- **Skype For Business Online:** 可以监督 Skype for Business Online 中的聊天通信和相关附件。 Skype for Business Online 聊天匹配监督策略条件每24小时处理一次, 然后可在监督报告中进行监视。 受监督聊天对话源于[以前在 Skype for Business Online 中保存的对话](https://support.office.com/article/Find-a-previous-Skype-for-Business-conversation-18892eba-5f18-4281-8c87-fd48bd72e6a2)。  使用以下组管理配置监督 Skype for Business Online 中的用户聊天通信:
+
+    - **对于 Skype For Business Online 研讨监察:** 为单个用户分配或向监督策略分配一个[通讯组](https://support.office.com/article/Distribution-groups-E8BA58A8-FAB2-4AAF-8AA1-2A304052D2DE)。 这适用于1对1或一对多用户/聊天的关系。
 
 - **第三方来源:** 您可以监督来自第三方源 (如 Facebook 或 DropBox) 的通信, 以了解导入到组织中的 Office 365 邮箱中的数据。 [了解如何将第三方数据导入 Office 365](https://docs.microsoft.com/office365/securitycompliance/archiving-third-party-data)。
 
@@ -134,7 +139,7 @@ Office 365 中的监督策略使您可以捕获指定审阅者进行检查的员
 | **Extremism** | 瞄准宗教和政治 ideologies 的表达式。 |
 | **伪装** | 含义或发音与另一个更具冒犯性术语的表达式相同。 |
 | **挑衅性语言** | 可能导致 anger 或暴力的表达式。 |
-| **Taboo** | 通常不适合在礼貌的 societal 通信中的表达式。 |
+| **Taboo** | 表达式在礼貌的 societal 通信中通常不适当。 |
 | **Unrefined 语言** | 缺少礼貌的 manners 且可能会导致恶劣和强制的表达式。 |
 
 #### <a name="conditional-settings"></a>条件设置
@@ -145,12 +150,12 @@ Office 365 中的监督策略使您可以捕获指定审阅者进行检查的员
   
 |**Condition**|**如何使用此条件**|
 |:-----|:-----|
-| **从这些域中的任何域接收邮件**  <br><br> **不从这些域中的任何域接收邮件** | 若要在收到的邮件中包含或排除某些域时应用策略, 请输入每个域并使用逗号分隔多个域。 您输入的每个域都将单独应用 (这些域中只有一个适用于该邮件的策略)。 |
-| **将邮件发送到这些域中的任何域**  <br><br> **邮件不会发送到这些域中的任何域** | 若要在已发送的邮件中包含或排除某些域时应用策略, 请输入每个域并使用逗号分隔多个域。 您输入的每个域都将单独应用 (这些域中只有一个适用于该策略的域必须应用于该邮件)。 |
+| **从这些域中的任何域接收邮件**  <br><br> **不从这些域中的任何域接收邮件** | 应用该策略以在接收的邮件中包含或排除特定域或电子邮件地址。 输入每个域或电子邮件地址, 并使用逗号分隔多个域或电子邮件地址。 输入的每个域或电子邮件地址将单独应用, 只有一个域或电子邮件地址必须应用于该邮件的策略。 <br><br> 如果要监视来自特定域的所有电子邮件, 但要排除不需要审阅的邮件 (新闻稿、通知等), 则必须配置两个条件: <br> -从定义域的任何域条件 ("contoso.com")**接收邮件**, 并 <br> -**不会从任何不**包括电子邮件地址 ("newsletter@contoso.com") 的域条件中收到邮件。 |
+| **将邮件发送到这些域中的任何域**  <br><br> **邮件不会发送到这些域中的任何域** | 应用该策略以在已发送邮件中包含或排除特定域或电子邮件地址。 输入每个域或电子邮件地址, 并使用逗号分隔多个域或电子邮件地址。 每个域或电子邮件地址单独应用, 只有一个域或电子邮件地址必须申请策略才能应用于邮件。 <br><br> 如果要监视发送到特定域的所有电子邮件, 但要排除不需要审阅的已发送邮件, 则必须配置两个条件: <br> -将**消息发送到**定义域的任何域条件 ("contoso.com"), 并 <br> -**邮件不会发送到任何**不包括电子邮件地址 ("subscriptions@contoso.com") 的域条件。 |
 | **邮件使用以下任何标签进行分类**  <br><br> **不使用这些标签中的任何一个对邮件进行分类** | 在邮件中包含或排除某些保留标签时应用策略。 必须单独配置保留标签, 并在此条件中选择已配置的标签。 您选择的每个标签都将单独应用 (必须只有其中一个标签适用于该策略应用于邮件)。 有关配置保留标签的详细信息, 请参阅[保留标签概述](https://docs.microsoft.com/office365/securitycompliance/labels)。|
 | **邮件包含以下任何词语**  <br><br> **邮件不包含以下任何词语** | 若要在邮件中包含或排除某些字词或短语时应用策略, 请在单独的行中输入每个单词或短语。 您输入的每一行都将单独应用 (必须只有其中一个行适用于策略应用于邮件)。 若要详细了解如何输入字词或短语，请参阅下一部分[Matching words and phrases to emails or attachments](supervision-policies.md#Matchwords)。|
 | **附件包含这些词语中的任何一个**  <br><br> **附件中不包含任何词语** | 若要在邮件附件 (如 Word 文档) 中包含或排除某些字词或短语时应用策略, 请在单独的行中输入每个单词或短语。 您输入的每一行都将单独应用 (只有一条线路必须适用于该策略应用于附件)。 若要详细了解如何输入字词或短语，请参阅下一部分[Matching words and phrases to emails or attachments](supervision-policies.md#Matchwords)。|
-| **附件是这些文件类型中的任何一种**  <br><br> **附件是这些文件类型中的任何一种** | 若要监督包含或排除特定类型附件的通信, 请输入文件扩展名 (如 .exe 或 .pdf)。 如果要包含或排除多个文件扩展名, 请在单独的行上输入这些扩展名。 只有一个附件扩展名需要匹配应用的策略。|
+| **附件是这些文件类型中的任何一种**  <br><br> **附件是这些文件类型中的任何一种** | 若要监督包含或排除特定类型附件的通信, 请输入文件扩展名 (如 .exe 或 .pdf)。 如果要包含或排除多个文件扩展名, 请在单独的行上输入这些扩展名。 要应用的策略仅有一个附件扩展名必须匹配。|
 | **邮件大小大于**  <br><br> **邮件大小不大于** | 若要查看基于特定大小的邮件, 请使用这些条件来指定邮件在被审阅前可以达到的最大或最小大小。 例如, 如果您指定的**邮件大小大于** \> **1.0 mb**, 则所有 1.01 MB 和更大的邮件都将被审阅。 这种情况下，您可以选择字节、千字节、兆字节或千兆字节。|
 | **附件大于**  <br><br> **附件不大于** | 若要根据附件的大小查看邮件, 请指定邮件之前的附件的最大或最小大小, 并且其附件可能会被审阅。 例如, 如果指定**附件大于** \> **2.0 mb**, 则所有附件为 2.01 mb 的邮件都将被审阅。 这种情况下，您可以选择字节、千字节、兆字节或千兆字节。|
    
@@ -159,7 +164,7 @@ Office 365 中的监督策略使您可以捕获指定审阅者进行检查的员
   
 ##### <a name="enter-multiple-conditions"></a>输入多个条件
 
-如果你输入了多个条件, Office 365 将使用所有条件共同确定何时将策略应用于通信项。 当您设置多个条件时，必须满足所有条件才能应用策略，除非您输入了例外情况。 例如, 如果邮件包含 "商贸" 一词, 并且大于 2 MB, 则需要创建适用的策略。 但是, 如果邮件还包含 "由 Contoso 财务财务批准" 这一词, 则该策略不应应用。 因此, 在这种情况下, 三个条件将如下所示:
+如果你输入了多个条件, Office 365 将使用所有条件共同确定何时将策略应用于通信项。 在设置多个条件时, 必须满足所有条件, 才能应用策略, 除非您输入了异常。 例如, 如果邮件包含 "商贸" 一词, 并且大于 2 MB, 则需要适用的策略。 但是, 如果邮件还包含 "由 Contoso 财务财务批准" 这一词, 则该策略不应应用。 因此, 在这种情况下, 三个条件将如下所示:
   
 - **邮件包含这些词语中的任何词语**, 关键字为 "商贸"
 
@@ -173,15 +178,19 @@ Office 365 中的监督策略使您可以捕获指定审阅者进行检查的员
 
 ## <a name="monitor--manage"></a>监视 & 管理
 
-可以轻松监视监督策略的结果并应用解决方案标记。 您可以快速查看已审阅项的状态、监督的用户和组以及指定为审阅者的用户和组。
+可以轻松监视监督策略的结果并应用解决方案标记。 您可以快速查看:
+
+- 已审阅项目的状态
+- 受监督的用户和组
+- 指定为审阅者的用户和组
 
 ### <a name="supervision-policy-dashboard"></a>监督策略仪表板
 
-使用监督策略仪表板管理监督策略结果和解决未完成项目。 此仪表板允许审阅者查看需要审阅的项目, 对项目执行操作, 并查看每个监督策略的以前查看的和已解决的项目的结果。 **** > 您可以访问合规性中心的监察策略仪表板, 即**打开***您的自定义策略* > 。
+使用监督策略仪表板管理监督策略结果和解决未完成项目。 此仪表板允许审阅者查看需要审阅的项目, 对项目执行操作, 并查看每个监督策略的以前查看和解决的项目的结果。 **** > 您可以访问合规性中心的监察策略仪表板, 即**打开***您的自定义策略* > 。
 
 #### <a name="dashboard-home"></a>仪表板主页
 
-仪表板**主页**包含多个部分, 可帮助您快速对监督策略采取措施。 您可以在此处执行以下操作:
+仪表板**主页**包含多个部分, 可帮助您快速对监管策略进行操作。 您可以在此处执行以下操作:
 
 - 快速查看本周的挂起和解决的突出显示内容
 - 查看所选策略的受监督用户和受监督组的列表
@@ -195,7 +204,7 @@ Office 365 中的监督策略使您可以捕获指定审阅者进行检查的员
 - 按挂起、合规、不兼容和可疑项目进行筛选。
 - 将单个项目标记为兼容、不符合或不必要。 您还可以记录项目注释以帮助阐明所执行的标记操作。
 - 将多个项目批量标记为合规性、不符合或不值得怀疑。 您还可以录制包含多个项目的注释, 以帮助阐明所执行的标记操作。
-- 查看单个项目的标记历史记录。 这包括解决项目的个人、操作的日期和时间、解析标记以及任何包含的注释。
+- 查看单个项目的标记历史记录。 包括解析项目的收件人、操作的日期和时间、解析标记以及任何包含的注释。
 - 将之前审阅过的项目重新分类为合规性、不合规或可疑。 您还可以录制包含单个或多个项目的注释, 以帮助阐明所执行的重新分类操作。
 
 #### <a name="resolved-items-tab"></a>"已解决项目" 选项卡
@@ -215,8 +224,8 @@ Office 365 中的监督策略使您可以捕获指定审阅者进行检查的员
 
 ### <a name="view-the-supervision-report"></a>查看监督报告
 
-1. 使用组织中具有查看监督报告的权限的管理员帐户凭据登录[合规性中心](https://compliance.microsoft.com)。
-2. 请转到 "**报告** \> "**仪表板**或 "**监督**" 以查看监督报告小组件, 其中包含当前监督策略活动的摘要。
+1. 使用具有查看监督报告的权限的管理员帐户的凭据登录[合规性中心](https://compliance.microsoft.com)。
+2. 请转到 "**报告** \> "**仪表板**或 "**监督**" 查看监督报告小组件, 了解当前监督策略活动的摘要。
 3. 选择**监督**小组件以打开 "详细报告" 页。
 
 > [!NOTE]
@@ -237,7 +246,7 @@ Office 365 中的监督策略使您可以捕获指定审阅者进行检查的员
 |:-----|:-----|
 | **未审阅** | 尚未审阅的电子邮件数。 这些电子邮件在 "Office 365 监督" 仪表板中等待审阅。
 | **Compliant** | 已审阅并标记为合规的电子邮件数。 这些邮件仍需要解析。 |
-| **Questionable** | 审阅并标记为可疑的电子邮件数量。 这可用作其他审阅者的标志, 以帮助检查电子邮件是否需要调查合规性。 这些邮件仍需要解析。 |
+| **Questionable** | 审阅并标记为可疑的电子邮件数量。 用作其他审阅者的标志, 以帮助检查电子邮件是否需要调查合规性。 这些邮件仍需要解析。 |
 | **不符合 (活动)** | 审阅者当前正在调查的不合规电子邮件数。 |
 | **不符合 (已解决)** | 审阅者调查和解析的不合规电子邮件数。 |
 | **命中策略** | 来自 Exchange、团队和第三方数据源的邮件的总数 (每日) 与监督策略中定义的一个或多个条件相匹配 |
@@ -245,7 +254,7 @@ Office 365 中的监督策略使您可以捕获指定审阅者进行检查的员
 | **解析** | 已分类为 "**已解决**" 的 Exchange、团队和第三方数据源中的邮件总数|
 
 > [!NOTE]
-> 必须先设置监督策略, 然后才能将其显示在此报告中。 此外, 如果删除策略, 仍会显示历史数据。 但是, 它们被指示为 "不存在的策略", 并且**导出**功能不可用。
+> 必须先设置监督策略, 然后才能将其显示在报告中。 如果删除策略, 则仍显示历史数据。 但是, 它们被指示为 "不存在的策略", 并且**导出**功能不可用。
 
 ## <a name="audit"></a>跟踪
 
@@ -258,7 +267,6 @@ Office 365 中的监督策略使您可以捕获指定审阅者进行检查的员
 | **创建策略** | [新 SupervisoryReviewPolicyV2](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance/new-supervisoryreviewpolicyv2) <br> [新 SupervisoryReviewRule](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance/new-supervisoryreviewrule) |
 | **编辑策略** | [SupervisoryReviewPolicyV2](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance/set-supervisoryreviewpolicyv2) <br> [SupervisoryReviewRule](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance/set-supervisoryreviewrule) |
 | **删除策略** | [SupervisoryReviewPolicyV2](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance/remove-supervisoryreviewpolicyv2) |
-| **查看策略** | [SupervisoryReviewPolicyV2](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance/get-supervisoryreviewpolicyv2) |
 
 在统一审核日志中查看审核活动, 或使用[UnifiedAuditLog](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-audit/search-unifiedauditlog) PowerShell cmdlet 查看审核活动。
 
@@ -272,4 +280,4 @@ Search-UnifiedAuditLog -StartDate 3/1/2019 -EndDate ([System.DateTime]::Now) -Re
 
 ## <a name="ready-to-get-started"></a>准备好开始了吗？
 
-若要开始为你的组织配置监督策略, 请参阅[配置监督策略](configure-supervision-policies.md)。
+若要为你的组织配置监督策略, 请参阅[配置监督策略](configure-supervision-policies.md)。

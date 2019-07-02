@@ -3,7 +3,7 @@ title: 威胁跟踪器 - 新增的和值得注意的威胁
 ms.author: deniseb
 author: denisebmsft
 manager: laurawi
-ms.audience: ITPro
+audience: ITPro
 ms.topic: overview
 ms.service: O365-seccomp
 localization_priority: Normal
@@ -14,19 +14,19 @@ ms.assetid: a097f5ca-eac0-44a4-bbce-365f35b79ed1
 ms.collection:
 - M365-security-compliance
 description: 了解有关威胁跟踪程序的信息, 包括新的重要跟踪程序, 以帮助您的组织保持安全方面的顾虑。
-ms.openlocfilehash: 4a12a1cfe68f8ebcfae640a65d0eca68e36fb04c
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: d86eb53c1dc407fc109b39fc0f9f1809b43b8d7a
+ms.sourcegitcommit: 0d5a863f48914eeaaf29f7d2a2022618de186247
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32260004"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "34077798"
 ---
 # <a name="threat-trackers---new-and-noteworthy"></a>威胁跟踪器 - 新增的和值得注意的威胁
 
 通过[Office 365 的威胁调查和响应](office-365-ti.md)功能, 贵组织的安全团队可以发现并针对 cybersecurity 威胁采取措施。 Office 365 威胁调查和响应功能包括威胁跟踪器功能, 包括值得注意的跟踪器。 阅读本文以获取这些新功能以及后续步骤的概述。 
 
 > [!IMPORTANT]
-> office 365 威胁智能现已成为 office 365 高级威胁防护计划 2, 以及其他威胁防护功能。 若要了解详细信息, 请参阅[office 365 高级威胁防护计划和定价](https://products.office.com/exchange/advance-threat-protection)以及[Office 365 高级威胁防护服务说明](https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description)。
+> Office 365 威胁智能现已成为 Office 365 高级威胁防护计划 2, 以及其他威胁防护功能。 若要了解详细信息, 请参阅[office 365 高级威胁防护计划和定价](https://products.office.com/exchange/advance-threat-protection)以及[Office 365 高级威胁防护服务说明](https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description)。
   
 ## <a name="what-are-threat-trackers"></a>什么是威胁跟踪跟踪？
 
@@ -83,7 +83,7 @@ ms.locfileid: "32260004"
   
 ## <a name="trackers-and-office-365-advanced-threat-protection"></a>跟踪跟踪和 Office 365 高级威胁防护
 
-通过我们的 inaugural 值得注意的威胁, 我们突出显示了[Office 365 ATP 安全附件](atp-safe-attachments.md)检测到的高级恶意软件威胁。 如果你是 office 365 企业版 E5 客户, 并且未使用[Office 365 高级威胁防护](office-365-atp.md)(ATP), 则应为-它包含在你的订阅中。 即使您有其他安全工具筛选与 Office 365 服务的电子邮件流, ATP 也能提供值。 但是, 当您的主要电子邮件安全解决方案是 Office 365 时, 反垃圾邮件和[Office 365 ATP 安全链接](atp-safe-links.md)功能将发挥最佳效果。 
+通过我们的 inaugural 值得注意的威胁, 我们突出显示了[Office 365 ATP 安全附件](atp-safe-attachments.md)检测到的高级恶意软件威胁。 如果你是 Office 365 企业版 E5 客户, 并且未使用[Office 365 高级威胁防护](office-365-atp.md)(ATP), 则应为-它包含在你的订阅中。 即使您有其他安全工具筛选与 Office 365 服务的电子邮件流, ATP 也能提供值。 但是, 当您的主要电子邮件安全解决方案是 Office 365 时, 反垃圾邮件和[Office 365 ATP 安全链接](atp-safe-links.md)功能将发挥最佳效果。 
   
 ![安全&amp;合规性中心中的 ATP](media/cee70d07-f0c1-459b-843c-2d10c253349f.png)
   

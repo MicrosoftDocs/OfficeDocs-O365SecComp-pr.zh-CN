@@ -4,7 +4,7 @@ ms.author: deniseb
 author: denisebmsft
 manager: laurawi
 ms.date: 04/19/2019
-ms.audience: Admin
+audience: Admin
 ms.topic: overview
 ms.service: O365-seccomp
 localization_priority: Normal
@@ -15,12 +15,12 @@ ms.assetid: f16c9928-8e3d-4219-b994-271dc9a16272
 ms.collection:
 - M365-security-compliance
 description: 设置 ATP 安全附件策略时, 请选择 "动态传递" 以避免邮件延迟, 并使用户能够预览正在扫描的附件。
-ms.openlocfilehash: 567b5f0c5bc75123169073bf5dc33de191187846
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: 5d04593dd0884b21deefc202485aee27f60d1a5f
+ms.sourcegitcommit: 0d5a863f48914eeaaf29f7d2a2022618de186247
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32257220"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "34077828"
 ---
 # <a name="dynamic-delivery-and-previewing-with-office-365-atp-safe-attachments"></a>使用 Office 365 ATP 安全附件进行动态传递和预览
 
@@ -38,10 +38,10 @@ ms.locfileid: "32257220"
 
 - 如果某个附件被确定为恶意附件, 则会将其发送到隔离区, 其中组织的安全团队 (如 Office 365 全局管理员或安全管理员) 的用户可以[在 Office 365 中管理隔离的邮件](manage-quarantined-messages-and-files.md)。
 
-大多数 pdf 和 Office 文档可在 ATP 扫描进行过程中在安全模式下进行预览。 如果附件与动态传递预览器不兼容, 则在完成 ATP 安全附件扫描之前, 电子邮件收件人会看到一个附件占位符。
+大多数 Pdf 和 Office 文档可在 ATP 扫描进行过程中在安全模式下进行预览。 如果附件与动态传递预览器不兼容, 则在完成 ATP 安全附件扫描之前, 电子邮件收件人会看到一个附件占位符。
 
 > [!TIP]
-> 如果您使用的是移动设备, 并且 pdf 在最初不在动态传递预览器中呈现, 请尝试使用移动浏览器登录 Office 365。
+> 如果您使用的是移动设备, 并且 Pdf 在最初不在动态传递预览器中呈现, 请尝试使用移动浏览器登录 Office 365。
 
 通过动态传递, 用户可以立即阅读并回复他们的电子邮件, 同时分析他们的附件。 
 
@@ -59,13 +59,13 @@ ATP 安全附件扫描发生在 Office 365 数据所在的同一个区域中。 
 
 - 您的组织必须具有[Office 365 高级威胁防护](office-365-atp.md)
     
-- 必须使用动态传递选项为 ATP 安全附件定义策略 (请参阅[在 Office 365 中设置 atp 安全附件策略](set-up-atp-safe-attachments-policies.md))
+- 必须使用动态传递选项为 ATP 安全附件定义策略 (请参阅[在 Office 365 中设置 Atp 安全附件策略](set-up-atp-safe-attachments-policies.md))
     
 - 您的组织的电子邮件必须托管在 Office 365 中。 尽管[office 365 高级威胁防护可用于任何 SMTP 邮件传输代理](https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description#requirements-for-office-365-advanced-threat-protection-atp)(如 Exchange Server), 但 ATP 安全附件的动态传递选项要求组织的电子邮件托管在 Office 365 中。 如果您的电子邮件不是托管在 Office 365 中, 请选择不同的[ATP 安全附件策略选项](set-up-atp-safe-attachments-policies.md#step-3-learn-about-atp-safe-attachments-policy-options), 如**Block**。
     
 ## <a name="additional-considerations"></a>其他注意事项
 
-在某些情况下, 不支持动态传递。 其中包括：
+在某些情况下, 不支持动态传递。 其中包括以下项：
   
 - 公用文件夹中的电子邮件
     
@@ -81,4 +81,4 @@ ATP 安全附件扫描发生在 Office 365 数据所在的同一个区域中。 
 
 - 使用[安全/多用途 Internet 邮件扩展 (S/MIME)](s-mime-for-message-signing-and-encryption.md)加密的邮件
 
-- 在不支持动态传递的情况下, ATP 安全附件不会扫描电子邮件。 但是, 将检查包含 url 的附件的电子邮件, 具体取决于您的[ATP 安全链接策略](set-up-atp-safe-links-policies.md)的配置方式。 在这些情况下, 将检查电子邮件和 Office 文件中的 url。
+- 在不支持动态传递的情况下, ATP 安全附件不会扫描电子邮件。 但是, 将检查包含 Url 的附件的电子邮件, 具体取决于您的[ATP 安全链接策略](set-up-atp-safe-links-policies.md)的配置方式。 在这些情况下, 将检查电子邮件和 Office 文件中的 Url。

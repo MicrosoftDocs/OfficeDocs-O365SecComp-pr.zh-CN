@@ -10,12 +10,12 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: M365-security-compliance
 description: 管理员可以设置本机连接器以将数据从 LinkedIn 公司页面导入到 Office 365。 这使您可以在 Office 365 中存档第三方数据源中的数据, 以便您可以使用合规性功能 (如法律封存、内容搜索和保留策略) 来管理组织的第三方数据的合规性。
-ms.openlocfilehash: 2b89f990f18ae13ad15015f240ea4c4b0ec434b0
-ms.sourcegitcommit: f2798d46acfbd56314e809cd3fe0350be807e420
+ms.openlocfilehash: 618cef7c0208378179d41a94f4a274a0bddadee9
+ms.sourcegitcommit: ecc823c2a4f1465114cf1d3a4630e31c47779ddc
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/17/2019
-ms.locfileid: "35017943"
+ms.lasthandoff: 06/19/2019
+ms.locfileid: "35079376"
 ---
 # <a name="set-up-a-connector-to-archive-linkedin-data-in-office-365-preview"></a>设置连接器以存档 Office 365 中的 LinkedIn 数据 (预览)
 
@@ -27,9 +27,11 @@ ms.locfileid: "35017943"
 
 ## <a name="before-you--begin"></a>开始之前
 
-- 您必须具有作为您要存档的 "LinkedIn 公司" 页面的管理员的 LinkedIn 用户帐户的登录凭据 (电子邮件地址或电话号码和密码)。 设置连接器时, 可以使用这些凭据登录到 LinkedIn。
+- 您的组织必须同意允许 Office 365 导入服务访问组织中的邮箱数据。 若要同意此请求, 请转到[此页](https://login.microsoftonline.com/common/oauth2/authorize?client_id=570d0bec-d001-4c4e-985e-3ab17fdc3073&response_type=code&redirect_uri=https://portal.azure.com/&nonce=1234&prompt=admin_consent), 使用 Office 365 全局管理员的凭据登录, 然后接受该请求。
 
 - 必须在 Exchange Online 中为创建 LinkedIn 公司页面连接器的用户分配邮箱导入导出角色。 这是访问安全 & 合规中心中的 "**存档第三方数据**" 页所必需的。 默认情况下, 此角色不会分配给 Exchange Online 中的任何角色组。 您可以将邮箱导入导出角色添加到 Exchange Online 中的 "组织管理" 角色组。 或者, 您可以创建角色组, 分配邮箱导入导出角色, 然后将相应的用户添加为成员。 有关详细信息, 请参阅文章 "管理 Exchange Online 中的角色组" 中的 "[创建角色组](https://docs.microsoft.com/Exchange/permissions-exo/role-groups#create-role-groups)" 或 "[修改角色组](https://docs.microsoft.com/Exchange/permissions-exo/role-groups#modify-role-groups)" 部分。
+
+- 您必须具有作为您要存档的 "LinkedIn 公司" 页面的管理员的 LinkedIn 用户帐户的登录凭据 (电子邮件地址或电话号码和密码)。 设置连接器时, 可以使用这些凭据登录到 LinkedIn。
 
 ## <a name="create-a-linkedin-connector"></a>创建 LinkedIn 连接器
 
@@ -50,7 +52,6 @@ ms.locfileid: "35017943"
    将显示一个向导页, 其中包含与您登录的帐户关联的所有 LinkedIn 公司页面的列表。 仅可为一个公司页面配置连接器。 如果您的组织具有多个 LinkedIn 公司页面, 则必须为每个公司创建一个连接器。
 
    ![将显示一个包含 "LinkedIn 公司" 页面列表的页面](media/LinkedInSelectCompanyPage.png)
-
 
 6. 选择要存档其项目的公司页面, 然后单击 "**下一步**"。
 
@@ -80,4 +81,4 @@ ms.locfileid: "35017943"
    subject:"Contoso Company Page"
    ```
 
-- 若要更轻松地查找或管理导入到 Office 365 的 LinkedIn 项目, 存储邮箱的所有者 (或任何被分配了 FullAccess 权限的人) 可以设置收件箱规则, 将项目从特定的 "LinkedIn 公司" 页面移至特定文件夹。 如果存储邮箱用于存档从不同第三方数据源导入的项目, 这将非常有用。 例如, 您可以创建收件箱规则, 将 "主题" 字段中包含特定 "LinkedIn 公司" 页面的所有项目移到特定文件夹中。
+- 若要更轻松地查找或管理导入到 Office 365 的 LinkedIn 项目, 存储邮箱的所有者 (或任何被分配了 FullAccess 权限的人) 可以设置收件箱规则, 将项目从 LinkedIn 公司页面移动到特定文件夹。 如果存储邮箱用于存档从不同第三方数据源导入的项目, 这将非常有用。 例如, 您可以创建收件箱规则, 将 "主题" 字段中包含特定 "LinkedIn 公司" 页面的所有项目移到特定文件夹中。

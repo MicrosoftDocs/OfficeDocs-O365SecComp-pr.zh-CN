@@ -10,23 +10,23 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: M365-security-compliance
 description: 管理员可以设置本机连接器, 以便从数据源 (如 Facebook 商业页面、Twitter、LinkedIn 公司页面和即时 Bloomberg) 导入第三方数据。 这使您可以在 Office 365 中存档第三方数据源中的数据, 以便您可以使用合规性功能 (如法律封存、内容搜索和保留策略) 来管理组织的第三方数据的管理。
-ms.openlocfilehash: 33972d6d3124841a4cd2636c3d7756ec55f5cfa9
-ms.sourcegitcommit: b9d8a43cb3afcdc8820bc9470c5707eff8fc6616
+ms.openlocfilehash: 2dde58e4d3ead0064e28c1ba1bfc04485c7a25df
+ms.sourcegitcommit: f2798d46acfbd56314e809cd3fe0350be807e420
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/11/2019
-ms.locfileid: "34852606"
+ms.lasthandoff: 06/17/2019
+ms.locfileid: "35014701"
 ---
 # <a name="use-a-sample-connector-to-archive-facebook-data-in-office-365-preview"></a>使用示例连接器在 Office 365 中存档 Facebook 数据 (预览)
 
 在 Office 365 中存档 Facebook 数据的示例连接器功能处于预览阶段。
 
-使用 Office 365 中的安全性 & 合规性中心中的示例连接器从第三方数据源 (如 Facebook 商业页面、LinkedIn、Twitter 和即时 Bloomberg) 导入和存档数据。 在设置和配置示例连接器之后, 它会连接到第三方数据源 (定期), 将项目的内容转换为电子邮件格式, 然后将这些项目导入到 Office 365 中的邮箱中。
+使用 Office 365 中的安全性 & 合规性中心中的示例连接器将来自 Facebook 商业页面的数据导入和存档到 Office 365。 在设置和配置示例连接器之后, 它会连接到 Facebook 商业页面 (根据计划), 将 Facebook 项目的内容转换为电子邮件格式, 然后将这些项目导入到 Office 365 中的邮箱中。
 
-导入第三方数据后, 可以将 Office 365 合规性功能 (如诉讼保留、内容搜索、就地存档、审核、监督和 Office 365 保留策略) 应用于第三方数据。 例如, 当将邮箱置于诉讼保留状态或分配到保留策略时, 将保留第三方数据。 您可以使用内容搜索来搜索第三方数据, 或将其与高级电子数据展示事例中的保管人程序相关联。 使用示例连接器在 Office 365 中导入和存档第三方数据可帮助您的组织遵守政府和法规策略。
+在导入 Facebook 数据之后, 您可以将 Office 365 合规性功能 (如诉讼保留、内容搜索、就地存档、审核、监督和 Office 365 保留策略) 应用于 Facebook 数据。 例如, 如果将邮箱置于诉讼保留或分配到保留策略, 则会保留 Facebook 数据。 您可以使用内容搜索来搜索第三方数据, 或关联在高级电子数据展示事例中与保管人存储 Facebook 数据的邮箱。 使用连接器在 Office 365 中导入和存档 Facebook 数据可帮助您的组织遵守政府和法规策略。
 
 > [!NOTE]
-> 目前, 只有 Facebook 商业页面和[Twitter](archive-twitter-data-with-sample-connector.md)的示例连接器可供预览。 即将推出更多示例连接器。
+> 目前, 仅可预览 Facebook 商业页面和[Twitter](archive-twitter-data-with-sample-connector.md)的示例连接器。 即将推出更多示例连接器。
 
 
 ## <a name="prerequisites-for-setting-up-a-connector-for-facebook-business-pages"></a>设置用于 Facebook 商业页面的连接器的先决条件
@@ -37,16 +37,16 @@ ms.locfileid: "34852606"
 
 - 您的组织必须具有有效的 Azure 订阅。 如果你没有现有的 Azure 订阅, 你可以注册以下选项之一:
 
-    –[注册免费的1年 Azure 订阅](https://azure.microsoft.com/free) 
+    - [注册免费的一年 Azure 订阅](https://azure.microsoft.com/free) 
 
-    –[注册以转至即用 Azure 订阅](https://azure.microsoft.com/pricing/purchase-options/pay-as-you-go/)
+    - [注册 "转到即点即用 Azure 订阅"](https://azure.microsoft.com/pricing/purchase-options/pay-as-you-go/)
 
     > [!NOTE]
     > Office 365 订阅附带的[免费 Azure Active Directory 订阅](use-your-free-azure-ad-subscription-in-office-365.md)不支持安全 & 合规中心中的示例连接器。
 
 - 您的组织必须同意允许 Office 365 导入服务访问组织中的邮箱数据。 若要同意此请求, 请转到[此页](https://login.microsoftonline.com/common/oauth2/authorize?client_id=570d0bec-d001-4c4e-985e-3ab17fdc3073&response_type=code&redirect_uri=https://portal.azure.com/&nonce=1234&prompt=admin_consent), 使用 Office 365 全局管理员的凭据登录, 然后接受该请求。
 
-- 在安全 & 合规性 (步骤 7) 中设置自定义连接器的用户必须在 Exchange Online 中分配邮箱导入导出角色。 默认情况下, 此角色不会分配给 Exchange Online 中的任何角色组。 您可以将邮箱导入导出角色添加到 Exchange Online 中的 "组织管理" 角色组。 或者, 您可以创建新的角色组, 分配邮箱导入导出角色, 然后将相应的用户添加为成员。 有关详细信息, 请参阅文章 "管理 Exchange Online 中的角色组" 中的 "[创建角色组](https://docs.microsoft.com/Exchange/permissions-exo/role-groups#create-role-groups)" 或 "[修改角色组](https://docs.microsoft.com/Exchange/permissions-exo/role-groups#modify-role-groups)" 部分。
+- 在安全 & 合规性 (步骤 7) 中设置自定义连接器的用户必须在 Exchange Online 中分配邮箱导入导出角色。 默认情况下, 此角色不会分配给 Exchange Online 中的任何角色组。 您可以将邮箱导入导出角色添加到 Exchange Online 中的 "组织管理" 角色组。 或者, 您可以创建角色组, 分配邮箱导入导出角色, 然后将相应的用户添加为成员。 有关详细信息, 请参阅文章 "管理 Exchange Online 中的角色组" 中的 "[创建角色组](https://docs.microsoft.com/Exchange/permissions-exo/role-groups#create-role-groups)" 或 "[修改角色组](https://docs.microsoft.com/Exchange/permissions-exo/role-groups#modify-role-groups)" 部分。
 
 ## <a name="step-1-download-the-pre-built-connector-app-package-from-github"></a>步骤 1: 从 Github 下载预建的连接器应用程序包
 
@@ -54,7 +54,7 @@ ms.locfileid: "34852606"
 
 1. 转到[此 GitHub 网站](https://github.com/Microsoft/m365-sample-connector-csharp-aspnet/releases)。 
 2. 在最新版本下, 单击 " **SampleConnector** " 文件。
-3. 将 ZIP 文件保存到本地计算机上的某个位置。 你将在步骤4中将此 zip 文件上传到 Azure。
+3. 将 ZIP 文件保存到本地计算机上的某个位置。 您在步骤4中将此 zip 文件上传到 Azure。
 
 ## <a name="step-2-create-an-app-in-azure-active-directory"></a>步骤 2: 在 Azure Active Directory 中创建应用程序
 
@@ -62,7 +62,7 @@ ms.locfileid: "34852606"
 
 有关分步说明, 请参阅[在 Azure Active Directory 中创建应用](deploy-facebook-connector.md#step-2-create-an-app-in-azure-active-directory)。
 
-在完成此步骤 (按照分步说明操作) 后, 您将把以下信息保存到文本文件中。 这些值将在部署过程的后续步骤中使用。
+在完成此步骤 (通过使用前面的分步说明) 时, 您将把以下信息保存到文本文件中。 这些值将在部署过程的后续步骤中使用。
 
 - AAD 应用程序 ID
 - AAD 应用程序密码
@@ -75,7 +75,7 @@ ms.locfileid: "34852606"
 
 有关分步说明, 请参阅[创建 Azure 存储帐户](deploy-facebook-connector.md#step-3-create-an-azure-storage-account)。
 
-在完成此步骤 (按照分步说明操作) 后, 将保存生成的连接字符串 Uri。 在第4步中的 Azure 中创建 web 应用资源时, 将使用此字符串。
+在完成此步骤 (按照分步说明操作) 后, 将保存生成的连接字符串 Uri。 在第4步中在 Azure 中创建 web 应用资源时, 可以使用此字符串。
 
 ## <a name="step-4-create-a-web-app-resource-in-azure"></a>步骤 4: 在 Azure 中创建 web 应用资源
 
@@ -107,7 +107,7 @@ ms.locfileid: "34852606"
 
 ## <a name="step-6-configure-the-facebook-connector-app"></a>步骤 6: 配置 Facebook 连接器应用程序
 
-下一步是将配置设置添加到在步骤4中创建 Azure web 应用资源时上载的 Facebook 连接器应用。 你将通过转到连接器应用的主页并对其进行配置来执行此操作。
+下一步是将配置设置添加到在步骤4中创建 Azure web 应用资源时上载的 Facebook 连接器应用。 为此, 请转到连接器应用的主页并配置该页面。
 
 有关分步说明, 请参阅 "[步骤 6: 配置连接器 web 应用程序"](deploy-facebook-connector.md#step-6-configure-the-connector-web-app)。
 

@@ -3,20 +3,19 @@ title: 文档指纹
 ms.author: deniseb
 author: denisebmsft
 manager: laurawi
-ms.date: ''
-ms.audience: ITPro
+audience: ITPro
 ms.topic: article
 search.appverid: MET150
 ms.service: exchange-online
 ms.collection: M365-security-compliance
 localization_priority: Normal
 description: 组织中的信息工作人员每天会处理大量的敏感信息。 "文档指纹"可识别贵组织中使用的标准表单，以便于您保护此信息。 本主题介绍文档指纹背后的概念, 以及如何使用 PowerShell 创建一个概念。
-ms.openlocfilehash: 2b8e4fd6b286f2c1a5c67863957f2b04fbef31b9
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: 56f67d1e3948ed66defa10a0815a4fdf87a13cb1
+ms.sourcegitcommit: 044003455eb36071806c9f008ac631d54c64dde6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32256892"
+ms.lasthandoff: 06/24/2019
+ms.locfileid: "35199540"
 ---
 # <a name="document-fingerprinting"></a>文档指纹
 
@@ -44,7 +43,7 @@ ms.locfileid: "32256892"
   
 **与父模板的文档指纹匹配的父文档示例**
 
-![Document_Fingerprinting_diagram](media/Document_Fingerprinting_diagram.png)
+![Document-Fingerprinting-diagram](media/Document-Fingerprinting-diagram.png)
   
 专利模板包含空字段 "专利权 title"、"Inventors" 和 "Description" 以及每个字段的说明, 即 word 模式。 上载原始专利模板时, 它采用受支持的文件类型之一和纯文本格式。 DLP 将此 word 模式转换为文档指纹, 这是一个包含代表原始文本的唯一哈希值的小型 Unicode XML 文件, 并且指纹在 Active Directory 中保存为数据分类。 (作为一种安全措施, 原始文档本身不存储在服务上; 仅存储哈希值, 并且无法从哈希值重新构造原始文档。)专利指纹将成为可与 DLP 策略关联的敏感信息类型。 将指纹与 DLP 策略相关联后, DLP 将检测任何包含符合专利指纹的文档的出站电子邮件, 并根据您的组织的策略对其进行处理。 
 
@@ -66,7 +65,7 @@ ms.locfileid: "32256892"
     
 ## <a name="use-powershell-to-create-a-classification-rule-package-based-on-document-fingerprinting"></a>使用 PowerShell 创建基于文档指纹的分类规则包
 
-请注意, 当前可以在安全&amp;合规中心中使用 PowerShell 创建文档指纹。 若要进行连接, 请参阅[connect to Security & 合规中心 PowerShell](https://docs.microsoft.com/en-us/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell)。
+请注意, 当前可以在安全&amp;合规中心中使用 PowerShell 创建文档指纹。 若要进行连接, 请参阅[connect To Security & 合规性中心 PowerShell](https://docs.microsoft.com/en-us/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell)。
 
 DLP 使用分类规则包来检测敏感内容。 若要创建基于文档指纹的分类规则包, 请使用**DlpFingerprint**和**DlpSensitiveInformationType** cmdlet。 由于**DlpFingerprint**的结果不会存储在数据分类规则的外部, 因此您始终在相同的**DlpFingerprint**和**DlpSensitiveInformationType**或**DlpSensitiveInformationType**中运行新的PowerShell 会话。 以下示例基于文件 C:\My Documents\Contoso Employee Template.docx 创建新的文档指纹。 将新的指纹存储为变量, 以便您可以在同一 PowerShell 会话中将其与**DlpSensitiveInformationType** cmdlet 一起使用。 
   

@@ -12,12 +12,12 @@ search.appverid:
 - MET150
 ms.assetid: 0432dce9-d9b6-4e73-8a13-4a932eb0081e
 description: 有关 Office 365 中的新邮件保护功能如何工作的问题？ 在此处查找答案。
-ms.openlocfilehash: fa23e92952ecb5cd5a2cfc2ace5234324d48a1cc
-ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
+ms.openlocfilehash: 1625ecd3f2c7991e2726539bcfa0c772d1ffea59
+ms.sourcegitcommit: 803baca9f99a6691fb41a3308e799752e4d8f20c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "34157564"
+ms.lasthandoff: 06/25/2019
+ms.locfileid: "35222256"
 ---
 # <a name="office-365-message-encryption-faq"></a>Office 365 邮件加密 FAQ
 
@@ -136,7 +136,7 @@ Not yet. OneDrive for business 附件不受支持, 最终用户无法对包含�
   
 ## <a name="are-there-any-reporting-capabilities-or-insights-for-encrypted-emails"></a>是否有任何报告功能或对加密电子邮件的见解？
 
-目前尚不在, 但即将推出。
+安全与合规中心中有一个加密报告。 请参阅[在安全 & 合规中心中查看电子邮件安全报告。](view-email-security-reports.md)
   
 ## <a name="can-i-use-message-encryption-with-compliance-features-such-as-ediscovery"></a>是否可以对合规性功能 (如电子数据展示) 使用邮件加密？
 

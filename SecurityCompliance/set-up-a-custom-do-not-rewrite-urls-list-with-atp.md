@@ -1,9 +1,9 @@
 ---
-title: 使用 Office 365 ATP 安全链接设置自定义不重写 url 列表
+title: 使用 Office 365 ATP 安全链接设置自定义不重写 Url 列表
 ms.author: deniseb
 author: denisebmsft
 manager: laurawi
-ms.audience: Admin
+audience: Admin
 ms.topic: article
 ms.date: 02/06/2019
 ms.service: O365-seccomp
@@ -14,26 +14,26 @@ search.appverid:
 ms.assetid: 35dbfd99-da5a-422b-9b0e-c6caf3b645fa
 ms.collection:
 - M365-security-compliance
-description: 设置 ATP 安全链接策略时, 可以包括 "不重写" 的 url 列表, 以使组织中的某些人能够访问包含在列表中的网站。
-ms.openlocfilehash: 006dab44054f9cb707bb13d158588ab6606fab5c
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+description: 设置 ATP 安全链接策略时, 可以包括 "不重写" 的 Url 列表, 以使组织中的某些人能够访问包含在列表中的网站。
+ms.openlocfilehash: a7f8f041832d7d5935ea959073d2b11cc6bdcf53
+ms.sourcegitcommit: 4fedeb06a6e7796096fc6279cfb091c7b89d484d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32264446"
+ms.lasthandoff: 05/31/2019
+ms.locfileid: "34652725"
 ---
-# <a name="set-up-a-custom-do-not-rewrite-urls-list-using-office-365-atp-safe-links"></a>使用 Office 365 ATP 安全链接设置自定义不重写 url 列表
+# <a name="set-up-a-custom-do-not-rewrite-urls-list-using-office-365-atp-safe-links"></a>使用 Office 365 ATP 安全链接设置自定义不重写 Url 列表
 
 > [!IMPORTANT]
-> 本文适用于商业客户。 如果您是在 Outlook 中查找有关安全链接的信息的家庭用户, 请参阅[Advanced Outlook.com security](https://support.office.com/article/advanced-outlook-com-security-for-office-365-subscribers-882d2243-eab9-4545-a58a-b36fee4a46e2)。
+> 本文适用于具有[Office 365 高级威胁防护](office-365-atp.md)的商业客户。 如果您是在 Outlook 中查找有关安全链接的信息的家庭用户, 请参阅[Advanced Outlook.com security](https://support.office.com/article/advanced-outlook-com-security-for-office-365-subscribers-882d2243-eab9-4545-a58a-b36fee4a46e2)。
 
-使用[Office 365 高级威胁防护](office-365-atp.md)(ATP), 您的组织可以有一个[自定义的阻止 url](set-up-a-custom-blocked-urls-list-wtih-atp.md), 这样, 当用户单击电子邮件中的 web 地址 (url) 或某些 Office 文档时, 将阻止这些 url 转到这些 url。 您的组织还可以为组织中的特定组提供自定义的 "不重写" 列表。 "不重写" 列表使某些用户能够访问由[Office 365 中的 ATP 安全链接](atp-safe-links.md)阻止的 url。 
+使用[Office 365 高级威胁防护](office-365-atp.md)(ATP), 您的组织可以有一个[自定义的阻止 url](set-up-a-custom-blocked-urls-list-wtih-atp.md), 这样, 当用户单击电子邮件中的 web 地址 (Url) 或某些 Office 文档时, 将阻止这些 Url 转到这些 url。 您的组织还可以为组织中的特定组提供自定义的 "不重写" 列表。 "不重写" 列表使某些用户能够访问由[Office 365 中的 ATP 安全链接](atp-safe-links.md)阻止的 url。 
   
-本文介绍如何指定从 ATP 安全链接扫描中排除的 url 的列表, 以及需要牢记的几个重要事项。
+本文介绍如何指定从 ATP 安全链接扫描中排除的 Url 的列表, 以及需要牢记的几个重要事项。
 
 ## <a name="set-up-a-do-not-rewrite-list"></a>设置 "不重写" 列表
 
-ATP 安全链接保护使用多个列表, 包括组织的阻止 url 列表和 "不重写" 列表中的例外。 如果您具有必要的权限, 则可以设置自定义的 "不重写" 列表。 在添加或编辑适用于组织中特定收件人的安全链接策略时, 可以执行此操作。 
+ATP 安全链接保护使用多个列表, 包括组织的阻止 Url 列表和 "不重写" 列表中的例外。 如果您具有必要的权限, 则可以设置自定义的 "不重写" 列表。 在添加或编辑适用于组织中特定收件人的安全链接策略时, 可以执行此操作。 
 
 若要编辑 (或定义) ATP 策略, 您必须分配下表中所述的角色之一:
 
@@ -46,7 +46,7 @@ ATP 安全链接保护使用多个列表, 包括组织的阻止 url 列表和 "�
 > [!TIP]
 > 若要了解有关角色和权限的详细信息, 请参阅[Office 365 &amp;安全合规中心中的权限](permissions-in-the-security-and-compliance-center.md)。
 
-### <a name="to-view-or-edit-a-custom-do-not-rewrite-urls-list"></a>查看或编辑自定义 "不重写" url 列表
+### <a name="to-view-or-edit-a-custom-do-not-rewrite-urls-list"></a>查看或编辑自定义 "不重写" Url 列表
   
 1. 转到[https://protection.office.com](https://protection.office.com)并使用你的工作或学校帐户登录。 
     
@@ -60,20 +60,20 @@ ATP 安全链接保护使用多个列表, 包括组织的阻止 url 列表和 "�
     
 6. 在 "**应用**于" 部分中, 选择 **"收件人是其成员**", 然后选择要包括在策略中的组。 选择 "**添加**", 然后选择 **"确定"**。
     
-7. 添加完 url 后, 在屏幕的右下角, 选择 "**保存**"。
+7. 添加完 Url 后, 在屏幕的右下角, 选择 "**保存**"。
     
 > [!NOTE]
-> 请务必查看您的组织的已阻止 url 的自定义列表。 请参阅[使用 ATP 安全链接设置自定义阻止的 url 列表](set-up-a-custom-blocked-urls-list-wtih-atp.md)。 
+> 请务必查看您的组织的已阻止 Url 的自定义列表。 请参阅[使用 ATP 安全链接设置自定义阻止的 url 列表](set-up-a-custom-blocked-urls-list-wtih-atp.md)。 
   
 ## <a name="important-points-to-keep-in-mind"></a>需要牢记的要点
 
-- 您在 "不重写" 列表中指定的任何 url 将从 ATP 安全链接扫描中排除, 用于您指定的收件人。
+- 您在 "不重写" 列表中指定的任何 Url 将从 ATP 安全链接扫描中排除, 用于您指定的收件人。
  
 - 当您为 ATP 安全链接策略指定 "不重写" 列表时, 可以包含最大为三个通配符星号 (\*)。 对于诸如\* `contoso.com` `http://`或`https://`之类的条目, 将假定为通配符 ()。 这表示条目, `contoso.com`例如类似于 "不重`*contoso.com*`写" 列表的条目。
 
-- 如果您在 "不重写" 列表中已经有 url 列表, 请务必查看该列表并根据需要添加通配符。 例如, 如果您的现有列表中有类似`http://contoso.com/a`的条目, 并且您希望在策略`http://contoso.com/a/b`中包含类似的子路径, 请将通配符添加到您的`http://contoso.com/a*`条目, 使其看起来像这样。
+- 如果您在 "不重写" 列表中已经有 Url 列表, 请务必查看该列表并根据需要添加通配符。 例如, 如果您的现有列表中有类似`http://contoso.com/a`的条目, 并且您希望在策略`http://contoso.com/a/b`中包含类似的子路径, 请将通配符添加到您的`http://contoso.com/a*`条目, 使其看起来像这样。
     
-- 请勿在 "不重写" 列表中指定的 url 中包含正斜杠 (/)。 例如, 而不是在`contoso.com/` "不重写" 列表中输入, 而`contoso.com`是输入。
+- 请勿在 "不重写" 列表中指定的 Url 中包含正斜杠 (/)。 例如, 而不是在`contoso.com/` "不重写" 列表中输入, 而`contoso.com`是输入。
     
 下表列出了可以输入的内容的示例以及这些项有何影响。
     

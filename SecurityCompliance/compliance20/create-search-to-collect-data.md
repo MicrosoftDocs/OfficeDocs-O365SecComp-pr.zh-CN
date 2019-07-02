@@ -1,5 +1,5 @@
 ---
-title: 创建搜索项来收集数据
+title: Create a search
 ms.author: markjjo
 author: markjjo
 manager: laurawi
@@ -14,24 +14,24 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: 360ba6a67d43a0b78b1104ae64885697009bb222
-ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
+ms.openlocfilehash: 1aa4ce6e406e4b3a3b72b9d93f651416b1fc65f9
+ms.sourcegitcommit: 803baca9f99a6691fb41a3308e799752e4d8f20c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "34155104"
+ms.lasthandoff: 06/25/2019
+ms.locfileid: "35222246"
 ---
-# <a name="create-a-search-to-collect-data"></a>创建搜索项来收集数据
+# <a name="create-a-search"></a>Create a search
 
 在您的案例的 "**搜索**" 选项卡上, 您可以通过单击 "**新建搜索**" 并按照向导创建新的搜索。
 
-## <a name="name-your-search-and-give-description"></a>命名您的搜索并提供说明
+## <a name="name-your-search-and-give-it-a-description"></a>命名搜索并为其提供说明
 
 每个具有事例的搜索应具有唯一的名称。 您可以选择为搜索提供说明。 
 
-## <a name="define-your-conditions"></a>定义条件
+## <a name="define-your-search-query-and-conditions"></a>定义您的搜索查询和条件
 
-您可以使用预建的条件卡或使用关键字查询语言 (KQL) 定义搜索条件。 有关详细信息, 请参阅[构建搜索查询](building-search-queries.md)。
+您可以使用预建的条件卡或使用关键字查询语言 (KQL) 定义搜索的关键字查询和任何条件。 有关详细信息, 请参阅[构建搜索查询](building-search-queries.md)。
 
 ## <a name="choose-the-custodians-to-search-from"></a>选择要从中搜索的保管人
 

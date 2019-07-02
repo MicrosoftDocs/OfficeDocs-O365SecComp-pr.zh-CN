@@ -15,14 +15,17 @@ ms.assetid: 07e76024-0c80-40dc-8c48-1dd0d0f863cb
 ms.collection:
 - M365-security-compliance
 description: 了解如何为 SharePoint、OneDrive 和团队打开 ATP, 包括如何为检测到的文件设置通知。
-ms.openlocfilehash: 6b7403ceff810d96c677fc6af7673547424346b8
-ms.sourcegitcommit: 0d5a863f48914eeaaf29f7d2a2022618de186247
+ms.openlocfilehash: f3be5b3cf73a04de10185428b84b5862906c3db7
+ms.sourcegitcommit: 4fedeb06a6e7796096fc6279cfb091c7b89d484d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34077238"
+ms.lasthandoff: 05/31/2019
+ms.locfileid: "34652665"
 ---
 # <a name="turn-on-office-365-atp-for-sharepoint-onedrive-and-microsoft-teams"></a>打开适用于 SharePoint、OneDrive 和 Microsoft 团队的 Office 365 ATP
+
+> [!IMPORTANT]
+> 本文适用于具有[Office 365 高级威胁防护](office-365-atp.md)的商业客户。 如果您是在 Outlook 中查找有关安全链接的信息的家庭用户, 请参阅[Advanced Outlook.com security](https://support.office.com/article/advanced-outlook-com-security-for-office-365-subscribers-882d2243-eab9-4545-a58a-b36fee4a46e2)。
 
 [适用于 SharePoint、OneDrive 和 Microsoft 团队的 Office 365 ATP](atp-for-spo-odb-and-teams.md)可防止您的组织无意中共享恶意文件。 检测到恶意文件时, 将阻止该文件, 以便在组织的安全团队执行进一步操作之前, 任何人都无法打开、复制、移动或共享该文件。 阅读本文以打开 SharePoint、OneDrive 和团队的 ATP, 设置通知以获得检测到的文件的通知, 并采取后续步骤。 
   
@@ -72,13 +75,13 @@ ms.locfileid: "34077238"
     
 4. 键入警报的说明。 例如, 可以键入在 SharePoint Online、OneDrive 或 Microsoft 团队中检测到恶意文件时通知管理员。
     
-5. 在 "**发送此通知**的条件 .。。" 部分, 执行下列操作: 
+5. 在 "**发送此通知**的条件 ..." 部分, 执行下列操作: 
     
     a. 在 "**活动**" 列表中, 选择 "**文件中检测到的恶意软件**"。
     
     b. 将 "**用户**" 字段留空。 
     
-6. 在 "**将此通知发送给 .。。** " 部分, 选择一个或多个全局管理员、安全管理员或在检测到恶意文件时应收到通知的安全阅读者。 
+6. 在 "**将此通知发送给 ...** " 部分, 选择一个或多个全局管理员、安全管理员或在检测到恶意文件时应收到通知的安全阅读者。 
     
 7. 单击“保存”****。
     

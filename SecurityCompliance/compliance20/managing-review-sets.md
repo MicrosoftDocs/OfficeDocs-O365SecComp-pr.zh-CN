@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: 4bf85fb8294ce7d95f31574112b9719b2b633c3e
-ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
+ms.openlocfilehash: 9e8e85d92543c4d49ad7841f8b2592a539a13977
+ms.sourcegitcommit: e323610df2df71c84f536e8a38650d33d8069e41
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "34154034"
+ms.lasthandoff: 06/04/2019
+ms.locfileid: "34703747"
 ---
 # <a name="manage-review-sets-in-advanced-ediscovery"></a>在高级电子数据展示中管理审阅集
 
@@ -41,7 +41,7 @@ ms.locfileid: "34154034"
 
 ![添加审阅集](../media/f45c51d9-585d-47d1-b7fb-0288715e0b6a.png)
 
-在 "**添加审阅集**" 弹出页面上, 键入评审集的名称, 然后单击 "**保存**"。  新的审阅集将显示在 "**查看设置**" 选项卡上的列表中。
+在 "**添加审阅集**" 弹出页面上, 键入评审集的名称, 然后单击 "**保存**"。 新的审阅集将显示在 "**查看设置**" 选项卡上的列表中。
 
 ![查看 "设置" 选项卡上列出的新审阅集](../media/AeDnewreviewset.png)
 

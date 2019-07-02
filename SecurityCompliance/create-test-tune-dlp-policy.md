@@ -3,7 +3,7 @@ title: 创建、测试和优化 DLP 策略
 ms.author: deniseb
 author: denisebmsft
 manager: laurawi
-ms.audience: Admin
+audience: Admin
 ms.topic: article
 f1_keywords:
 - ms.o365.cc.NewPolicyFromTemplate
@@ -15,12 +15,12 @@ search.appverid:
 - MET150
 ms.assetid: 59414438-99f5-488b-975c-5023f2254369
 description: '开始使用 DLP 策略的最简单、最常见方法是，使用包含在 Office 365 中的模板之一。 '
-ms.openlocfilehash: 0c6b3bce7b336b08595a432c29601ecb63155589
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: 32b0b4baa058fda031a58681e107b01bf207da55
+ms.sourcegitcommit: 0d5a863f48914eeaaf29f7d2a2022618de186247
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32259248"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "34077958"
 ---
 # <a name="create-test-and-tune-a-dlp-policy"></a>创建、测试和优化 DLP 策略
 
@@ -30,7 +30,7 @@ Paul Cunningham, Microsoft MVP <br/>
 [@Practical365](https://twitter.com/practical365)<br/>
 __________________________________________________
 
-数据丢失防护是 Office 365 的一项合规性功能, 旨在帮助您的组织防止对不需要的敏感信息进行有意或无意的暴露。 DLP 的根在 exchange Server 和 exchange online 中, 也适用于 SharePoint online 和 OneDrive for business。
+数据丢失防护是 Office 365 的一项合规性功能, 旨在帮助您的组织防止对不需要的敏感信息进行有意或无意的暴露。 DLP 的根在 Exchange Server 和 Exchange Online 中, 也适用于 SharePoint Online 和 OneDrive for Business。
 
 DLP 使用内容分析引擎检查电子邮件和文件的内容, 查找敏感信息, 如信用卡号和个人身份信息 (PII)。 敏感信息通常不应通过电子邮件发送, 也不应包含在文档中, 而无需执行其他步骤, 如加密电子邮件或文件。 使用 DLP 可以检测敏感信息, 并采取如下操作:
 
@@ -59,9 +59,9 @@ DLP 使用内容分析引擎检查电子邮件和文件的内容, 查找敏感�
 
 如果数据泄露风险不是完全显而易见的, 则很难确切地使用实现 DLP 时应开始的情况。 幸运的是, 可以在 "测试模式" 下运行 DLP 策略, 这样您就可以在将其转换为前评估其有效性和准确性。
 
-可以通过 exchange 管理中心管理 exchange Online 的 DLP 策略。 但您可以通过 Security & 合规性中心为所有工作负载配置 DLP 策略, 因此, 我将在本文中使用此功能。 在安全 & 合规性中心中, 你将在**数据丢失防护** > **策略**下找到 DLP 策略。 单击 "**创建要启动的策略**"。
+可以通过 Exchange 管理中心管理 Exchange Online 的 DLP 策略。 但您可以通过安全 & 合规性中心为所有工作负载配置 DLP 策略, 因此这正是我将在本文中用到的演示。 在安全 & 合规性中心中, 你将在**数据丢失防护** > **策略**下找到 DLP 策略。 单击 "**创建要启动的策略**"。
 
-Office 365 提供了一系列可用于创建 dlp 策略的[dlp 策略模板](what-the-dlp-policy-templates-include.md)。 假设你是澳大利亚的商业版。 您可以筛选策略模板以仅显示与澳大利亚相关的人员, 这些模板属于财务、医疗和运行状况的一般类别和隐私。
+Office 365 提供了一系列可用于创建 DLP 策略的[dlp 策略模板](what-the-dlp-policy-templates-include.md)。 假设你是澳大利亚的商业版。 您可以筛选策略模板以仅显示与澳大利亚相关的人员, 这些模板属于财务、医疗和运行状况的一般类别和隐私。
 
 ![选择国家或地区的选项](media/DLP-create-test-tune-choose-country.png)
 
@@ -73,7 +73,7 @@ Office 365 提供了一系列可用于创建 dlp 策略的[dlp 策略模板](wha
 
 ![用于命名策略的选项](media/DLP-create-test-tune-name-policy.png)
 
-选择策略将应用于的位置。 DLP 策略可应用于 Exchange online、SharePoint online 和 OneDrive for business。 我打算将此策略配置为应用于所有位置。
+选择策略将应用于的位置。 DLP 策略可应用于 Exchange Online、SharePoint Online 和 OneDrive for Business。 我打算将此策略配置为应用于所有位置。
 
 ![选择所有位置的选项](media/DLP-create-test-tune-choose-locations.png)
 
@@ -203,7 +203,7 @@ DLP 策略模板不能完全直接从盒中得到。 您可能会发现环境中
 
 ![启用策略的选项](media/DLP-create-test-tune-turn-on-policy.png)
  
-如果你正在等待查看策略将生效的时间, 请[连接到 Security & 合规性中心 PowerShell](https://docs.microsoft.com/en-us/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell?view=exchange-ps) , 并运行[DlpCompliancePolicy cmdlet](https://docs.microsoft.com/en-us/powershell/module/exchange/policy-and-compliance-dlp/get-dlpcompliancepolicy?view=exchange-ps)以查看 DistributionStatus。
+如果你正在等待查看策略将生效的时间, 请[连接到 Security & 合规性中心 PowerShell](https://docs.microsoft.com/en-us/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell?view=exchange-ps) , 然后运行[DlpCompliancePolicy cmdlet](https://docs.microsoft.com/en-us/powershell/module/exchange/policy-and-compliance-dlp/get-dlpcompliancepolicy?view=exchange-ps) , 以查看 DistributionStatus。
 
 ![在 PowerShell 中运行 cmdlet](media/DLP-create-test-tune-PowerShell.png)
 

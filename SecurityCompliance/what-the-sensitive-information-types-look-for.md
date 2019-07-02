@@ -3,7 +3,7 @@ title: 使用敏感信息类型查找什么
 ms.author: deniseb
 author: denisebmsft
 manager: laurawi
-ms.date: 6/29/2018
+ms.date: 05/20/2019
 audience: Admin
 search.appverid: MET150
 ms.topic: reference
@@ -14,12 +14,12 @@ localization_priority: Normal
 ms.collection:
 - M365-security-compliance
 description: Office 365 安全&amp;合规中心中的数据丢失防护 (DLP) 包括可供您在 DLP 策略中使用的80敏感信息类型。 本主题列出了所有这些敏感信息类型，并显示 DLP 策略在检测到每种类型时查找的内容。
-ms.openlocfilehash: dc2958af5b64f9e9318faab5d55ed340404f1857
-ms.sourcegitcommit: 0d5a863f48914eeaaf29f7d2a2022618de186247
+ms.openlocfilehash: 1e1aeea164c15bb64c6040f7821bf006ee8ff42f
+ms.sourcegitcommit: b8737e52724a343d99082961bc113bba819d5681
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34077548"
+ms.lasthandoff: 05/20/2019
+ms.locfileid: "34247295"
 ---
 # <a name="what-the-sensitive-information-types-look-for"></a>使用敏感信息类型查找什么
 
@@ -508,17 +508,16 @@ OR
 - 校验和通过。
 
 ```
-    <!-- Australia Tax File Number -->
-<Entity id="e29bc95f-ff70-4a37-aa01-04d17360a4c5" patternsProximity="300" recommendedConfidence="85">
-    
-  <Pattern confidenceLevel="85">
+   <!-- Australia Tax File Number -->
+    <Entity id="e29bc95f-ff70-4a37-aa01-04d17360a4c5" patternsProximity="300" recommendedConfidence="85">
+      <Pattern confidenceLevel="85">
         <IdMatch idRef="Func_australian_tax_file_number" />
+        <Match idRef="Keyword_Australia_Tax_File_Number" />
         <Any minMatches="0" maxMatches="0">
-          <Match idRef="Keyword_Australia_Tax_File_Number" />
           <Match idRef="Keyword_number_exclusions" />
         </Any>
-  </Pattern>
-</Entity>
+      </Pattern>
+    </Entity>
 ```
 
 ### <a name="keywords"></a>关键字
@@ -615,7 +614,7 @@ OR
 - 沙盒
 - onebox
 - localhost
-- 127.0.0。1
+- 127.0.0.1
 - testacs.<!--no-hyperlink-->com
 - s-int。<!--no-hyperlink-->netmeeting
 
@@ -675,7 +674,7 @@ OR
 - 沙盒
 - onebox
 - localhost
-- 127.0.0。1
+- 127.0.0.1
 - testacs.<!--no-hyperlink-->com
 - s-int。<!--no-hyperlink-->netmeeting
 
@@ -735,7 +734,7 @@ OR
 - 沙盒
 - onebox
 - localhost
-- 127.0.0。1
+- 127.0.0.1
 - testacs.<!--no-hyperlink-->com
 - s-int。<!--no-hyperlink-->netmeeting
 
@@ -786,7 +785,7 @@ OR
 - 沙盒
 - onebox
 - localhost
-- 127.0.0。1
+- 127.0.0.1
 - testacs.<!--no-hyperlink-->com
 - s-int。<!--no-hyperlink-->netmeeting
 
@@ -841,7 +840,7 @@ OR
 - 沙盒
 - onebox
 - localhost
-- 127.0.0。1
+- 127.0.0.1
 - testacs.<!--no-hyperlink-->com
 - s-int。<!--no-hyperlink-->netmeeting
 
@@ -935,7 +934,7 @@ OR
 - 沙盒
 - onebox
 - localhost
-- 127.0.0。1
+- 127.0.0.1
 - testacs.<!--no-hyperlink-->com
 - s-int。<!--no-hyperlink-->netmeeting
 
@@ -1001,7 +1000,7 @@ OR
 - 沙盒
 - onebox
 - localhost
-- 127.0.0。1
+- 127.0.0.1
 - testacs.<!--no-hyperlink-->com
 - s-int。<!--no-hyperlink-->netmeeting
 
@@ -4980,7 +4979,7 @@ DLP 策略 75% 确信在300个字符的邻近度内检测到此类型的敏感�
 - 介于1-200 个字母、数字、符号、特殊字符或空格之间的任意组合
 - 字符串 "Password" 或 "pwd", 其中 "pwd" 不以小写字母开头
 - 等号 (=)
-- 任何不是美元符号 ($)、百分号 (%)、大于号 (>)、符号 (@)、引号 (")、分号 (;)、左大括号 ([) 或左中括号 ({) 的任何字符
+- 任何不是美元符号 ($)、百分比符号 (%)、大于号 (>)、符号 (@)、引号 (")、分号 (;)、左大括号 ([) 或左中括号 ({) 的字符
 - 7-128 个字符的任意组合, 不是分号 (;)、正斜杠 (/) 或引号 (")
 - 一个分号 (;)或引号 (")
 
@@ -5040,7 +5039,7 @@ DLP 策略 75% 确信在300个字符的邻近度内检测到此类型的敏感�
 - 沙盒
 - onebox
 - localhost
-- 127.0.0。1
+- 127.0.0.1
 - testacs.<!--no-hyperlink-->com
 - s-int。<!--no-hyperlink-->netmeeting
 
@@ -5625,7 +5624,7 @@ DLP 策略 75% 确信在300个字符的邻近度内检测到此类型的敏感�
 
 - GP 
 - DOB 
-- D。 B。 
+- D. B。 
 - Date of Birth 
 - Birth Date 
    

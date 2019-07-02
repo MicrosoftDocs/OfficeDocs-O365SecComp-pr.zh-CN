@@ -4,19 +4,19 @@ ms.author: tracyp
 author: MSFTTracyP
 manager: laurawi
 ms.date: 5/6/2019
-ms.audience: ITPro
+audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid:
 - MET150s
 description: 阻止发件人列表选项包括 Outlook 阻止的发件人、反垃圾邮件发件人/域阻止列表、IP 阻止列表和 Exchange 传输规则 (Etr) 也称为邮件流规则。
-ms.openlocfilehash: dae5ffb7d4f2a8f8f3b675719e4f61f5c970dcaf
-ms.sourcegitcommit: e834d4168f584f2efb22479aec108497eea267f6
+ms.openlocfilehash: 9933cb79b7dce949384815a7b2ed8a9ac8a7824b
+ms.sourcegitcommit: f96029928a6cdd141783026d57bc2179d7963af6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/04/2019
-ms.locfileid: "34709120"
+ms.lasthandoff: 06/17/2019
+ms.locfileid: "35017684"
 ---
 # <a name="create-block-sender-lists-in-office-365"></a>在 Office 365 中创建阻止发件人列表
 

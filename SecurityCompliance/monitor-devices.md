@@ -1,5 +1,5 @@
 ---
-title: 在 Microsoft 365 安全中监视设备
+title: Microsoft 365 安全中心中的设备监控和报告
 description: 介绍如何确保你的设备安全、最新和发现组织中的潜在威胁
 keywords: security、恶意软件、Microsoft 365、M365、security center、monitor、report、devices
 ms.prod: w10
@@ -12,42 +12,42 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 search.appverid: met150
-ms.openlocfilehash: 2984231caba574b8fa47b725ab77227f6ab5ae56
-ms.sourcegitcommit: e23b84ef4eee9cccec7205826b71ddfe9aaac2f8
+ms.openlocfilehash: 44fd28a0ba2ec72d999c89d183d85ccb496903ec
+ms.sourcegitcommit: b9d8a43cb3afcdc8820bc9470c5707eff8fc6616
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33402930"
+ms.lasthandoff: 06/11/2019
+ms.locfileid: "34852866"
 ---
-# <a name="monitor-devices-in-microsoft-365-security"></a>在 Microsoft 365 安全中监视设备
+# <a name="device-monitoring-and-reporting-in-microsoft-365-security-center"></a>Microsoft 365 安全中心中的设备监控和报告
 
 确保你的设备在 Microsoft 365 安全中心中安全、保持最新并找出潜在威胁。
 
 ## <a name="view-device-alerts"></a>查看设备警报
 
-从 Windows Defender ATP 获取有关你的设备上的入侵活动和其他威胁的最新警报 (适用于 E5 许可证)。 Microsoft 365 安全中心使用你首选的工作流在较高的层次上有效地监视这些警报。
+从 Microsoft Defender ATP 获取有关你的设备上的入侵活动和其他威胁的最新警报 (适用于 E5 许可证)。 Microsoft 365 安全中心使用你首选的工作流在较高的层次上有效地监视这些警报。
 
 ### <a name="monitor-high-impact-alerts"></a>监视高影响警报
 
-每个 Windows Defender ATP 警报都具有相应的严重性 (高、中、低或信息), 指示其对你的网络的潜在影响 (如果不采用无人参与)。  
+每个 Microsoft Defender ATP 警报都具有相应的严重性 (高、中、低或信息), 指示其对网络的潜在影响 (如果无人值守)。  
 
-使用**设备警报严重级别**卡专门关注更严重且可能需要立即响应的警报。 在此卡片中, 可以查看有关 Windows Defender 安全中心门户的详细信息。
+使用**设备警报严重级别**卡专门关注更严重且可能需要立即响应的警报。 在此卡片中, 可以查看有关 Microsoft Defender 安全中心门户的详细信息。
 
 ![设备警报严重级别卡片](./media/security-docs/device-alerts-severity.png)
 
 ### <a name="understand-sources-of-alerts"></a>了解警报的来源
 
-Windows Defender ATP 利用各种安全传感器和智能源中的数据来生成警报。 例如, 它可以使用 Windows Defender 防病毒和第三方反恶意软件中的检测信息, 以及通过 web 服务 API 提供的自定义威胁智能。
+Microsoft Defender ATP 利用各种安全传感器和智能源中的数据来生成警报。 例如, 它可以使用 Windows Defender 防病毒和第三方反恶意软件中的检测信息, 以及通过 web 服务 API 提供的自定义威胁智能。
 
 **设备警报检测**源卡按来源显示警报的分布情况。 此卡片可帮助您跟踪与某些来源 (尤其是自定义源) 相关的活动。 您还可以使用此操作来重点关注来自未配置为自动阻止恶意活动或组件的传感器发出的警报。
 
 ![设备警报检测源卡](./media/security-docs/device-alert-detection-sources.png)
 
-在此卡片中, 可以查看有关 Windows Defender 安全中心门户的详细信息。
+在此卡片中, 可以查看有关 Microsoft Defender 安全中心门户的详细信息。
 
 ### <a name="understand-the-types-of-threats-that-trigger-alerts"></a>了解触发警报的威胁类型
 
-Windows Defender ATP 将每个警报分类到一个类别, 表示攻击链中的某个阶段或威胁组件的类型。 例如, 检测到的威胁活动可能会分类到 "横向移动", 以指示活动试图访问网络上的其他设备, 并且在攻击者获得初始 foothold 时可能会发生此事件。 检测到威胁组件时, 可能会将其广泛分类为 "恶意软件", 或者更具体地说为 "勒索软件"、"凭据窃取" 或其他类型的恶意软件或不需要的软件。
+Microsoft Defender ATP 将每个警报分类到一个类别, 表示攻击链中的某个阶段或威胁组件的类型。 例如, 检测到的威胁活动可能会分类到 "横向移动", 以指示活动试图访问网络上的其他设备, 并且在攻击者获得初始 foothold 时可能会发生此事件。 检测到威胁组件时, 可能会将其广泛分类为 "恶意软件", 或者更具体地说为 "勒索软件"、"凭据窃取" 或其他类型的恶意软件或不需要的软件。
 
 **设备威胁类别**卡片显示了将警报分布到这些类别中的情况。 您可以使用此信息来确定威胁活动, 如凭据窃取时的尝试, 与社会工程手段的尝试相比, 这可能会产生更大的影响。 您还可以使用它来监视与勒索软件类似的潜在破坏性威胁。
 
@@ -55,18 +55,18 @@ Windows Defender ATP 将每个警报分类到一个类别, 表示攻击链中的
 
 ### <a name="monitor-active-alerts"></a>监视活动警报
 
-**设备警报状态**卡指示尚未解决且可能需要注意的警报的数量。 在此卡片中, 可以查看有关 Windows Defender 安全中心门户的详细信息。
+**设备警报状态**卡指示尚未解决且可能需要注意的警报的数量。 在此卡片中, 可以查看有关 Microsoft Defender 安全中心门户的详细信息。
 
 ![设备警报状态卡片](./media/security-docs/device-alert-status.png)
 
 ### <a name="monitor-classification-of-resolved-alerts"></a>监视已解决警报的分类
 
-解析 Window Defender ATP 警报时, 安全人员可以指定是否已将警报验证为:
+在解决 Microsoft Defender ATP 警报时, 您的安全人员可以指定是否已将警报验证为:
 
 * 真正的警报, 用于标识实际的违规活动或威胁组件
 * 未正确检测到正常活动的假警报
 
-**设备警报分类**卡显示已解决的警报是否已分类为 "真" 或 "假" 通知。 在此卡片中, 可以查看有关 Windows Defender 安全中心门户的详细信息。
+**设备警报分类**卡显示已解决的警报是否已分类为 "真" 或 "假" 通知。 在此卡片中, 可以查看有关 Microsoft Defender 安全中心门户的详细信息。
 
 注意: 在某些情况下, 分类信息对某些通知不可用。
 
@@ -78,14 +78,14 @@ Windows Defender ATP 将每个警报分类到一个类别, 表示攻击链中的
 
 **设备警报确定**卡显示为每个警报提供的决定, 具体如下:
 
-* **apt.** –高级持久威胁, 表明检测到的活动或威胁组件是旨在获取受影响网络中的 foothold 的完善的安全漏洞的一部分  
+* **Apt.** –高级持久威胁, 表明检测到的活动或威胁组件是旨在获取受影响网络中的 foothold 的完善的安全漏洞的一部分  
 * **恶意软件**–恶意文件或代码
 * **安全人员**–安全人员执行的常规活动
 * **安全测试**–旨在模拟实际威胁并预期触发安全传感器和生成警报的活动或组件
 * 不**需要的软件**–不会被视为恶意的应用程序和其他软件, 但也违反了策略或可接受的使用标准
 * **其他**–不属于所提供类型的任何其他决定
 
-在此卡片中, 可以在 Windows Defender 安全中心中查看详细信息。
+在此卡片中, 可以查看 Microsoft Defender 安全中心中的详细信息。
 
 ![设备警报确定卡](./media/security-docs/device-alert-determination.png)
 
@@ -97,7 +97,7 @@ Windows Defender ATP 将每个警报分类到一个类别, 表示攻击链中的
 
 ## <a name="monitor-and-report-status-of-intune-managed-devices"></a>监视和报告 Intune 管理的设备的状态
 
-以下监视和报告包含在 Intune 中注册的设备的数据。 不包括来自 unenrolled 设备的数据。 只有全局管理员才能查看这些卡片。
+以下报告包含在 Intune 中注册的设备的数据。 不包括来自 unenrolled 设备的数据。 只有全局管理员才能查看这些卡片。
 
 Intune 注册的设备数据包括:
 
@@ -146,7 +146,7 @@ Intune 注册的设备数据包括:
 
 ## <a name="monitor-and-manage-asr-rule-deployment-and-detections"></a>监视和管理 ASR 规则部署和检测
 
-[攻击面减少 (ASR) 规则](https://docs.microsoft.com/en-us/windows/security/threat-protection/windows-defender-exploit-guard/attack-surface-reduction-exploit-guard)可帮助阻止使用者查找恶意软件时通常使用的操作和应用程序感染计算机。 这些规则控制何时以及如何运行可执行文件。 例如, 可以阻止 JavaScript 或 VBScript 启动下载的可执行文件、阻止来自 Office 宏的 Win32 API 调用或阻止从 USB 驱动器运行的进程。
+[攻击面减少 (ASR) 规则](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-exploit-guard/attack-surface-reduction-exploit-guard)可帮助阻止使用者查找恶意软件时通常使用的操作和应用程序感染计算机。 这些规则控制何时以及如何运行可执行文件。 例如, 可以阻止 JavaScript 或 VBScript 启动下载的可执行文件、阻止来自 Office 宏的 Win32 API 调用或阻止从 USB 驱动器运行的进程。
 
 ![攻击面缩减卡片](./media/security-docs/attack-surface-reduction-rules.png)
 
@@ -156,7 +156,7 @@ Intune 注册的设备数据包括:
 
 * **块状模式**–至少有一个配置为阻止检测活动的规则的设备
 * **审核模式**–没有设置任何规则的设备阻止检测到的活动, 但至少有一个规则集来审核检测到的活动  
-* **off** -所有 ASR 规则关闭的设备
+* **Off** -所有 ASR 规则关闭的设备
 
 此卡片的下半部分按规则显示设备上的设置。 每条栏指示设置为阻止或审核检测或完全关闭规则的设备的数量。
 
@@ -185,7 +185,7 @@ Microsoft Intune 为你的 ASR 规则提供管理功能。 如果要更新设置
 
 Microsoft 365 security center 根据攻击面减少规则收集[您可能要](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-exploit-guard/troubleshoot-asr#add-exclusions-for-a-false-positive)从检测中排除的文件的名称。 通过排除文件, 可以减少误报检测, 并更自信地在阻止模式下部署攻击面降低规则。
 
-排除在 microsoft Intune 上进行管理, 但 microsoft 365 安全中心提供了分析工具, 可帮助您了解这些文件。 若要开始收集要排除的文件, 请转到**攻击面减少规则**报告页中的 "**添加排除**" 选项卡。
+排除在 Microsoft Intune 上进行管理, 但 Microsoft 365 安全中心提供了分析工具, 可帮助您了解这些文件。 若要开始收集要排除的文件, 请转到**攻击面减少规则**报告页中的 "**添加排除**" 选项卡。
 
 >[!NOTE]  
 >该工具将分析所有攻击面减少规则的检测项, 但[只有某些规则支持排除](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-exploit-guard/attack-surface-reduction-exploit-guard#attack-surface-reduction-rules)项。
@@ -201,7 +201,7 @@ Microsoft 365 security center 根据攻击面减少规则收集[您可能要](ht
 
 用于 ASR 规则**块凭据的日志从 Windows 本地安全颁发机构子系统 (lsass.exe)** 捕获源应用**lsass**(如检测到的文件)。 因此, 生成的排除路径列表将包含此文件。 若要排除触发此规则而不是**lsass.exe**的文件, 请使用源应用的路径, 而不是检测到的文件。
 
-若要查找源应用程序, 请对此特定规则运行以下[高级搜寻查询](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/advanced-hunting-windows-defender-advanced-threat-protection)(由规则 ID 9e6c4e1f-7d60-472f-ba1a-a39ef669e4b2): 
+若要查找源应用程序, 请对此特定规则运行以下[高级搜寻查询](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/advanced-hunting)(由规则 ID 9e6c4e1f-7d60-472f-ba1a-a39ef669e4b2):
 
 ```MiscEvents
 | where EventTime > ago(7d)
@@ -213,9 +213,9 @@ Microsoft 365 security center 根据攻击面减少规则收集[您可能要](ht
 #### <a name="check-files-for-exclusion"></a>检查要排除的文件
 在从 ASR 中排除文件之前, 我们建议您检查该文件以确定它是否确实不是恶意的。
 
-若要查看文件, 请使用 Windows Defender 安全中心上的[文件信息页面](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/investigate-files-windows-defender-advanced-threat-protection)。 页面提供了传播信息以及 VirusTotal 防病毒检测比率。 您还可以使用页面提交文件进行深入分析。
+若要查看文件, 请使用 Microsoft Defender 安全中心上的[文件信息页面](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/investigate-files)。 页面提供了传播信息以及 VirusTotal 防病毒检测比率。 您还可以使用页面提交文件进行深入分析。
 
-若要在 Windows Defender 安全中心中查找检测到的文件, 请使用以下高级搜寻查询搜索所有 ASR 检测:
+若要在 Microsoft Defender 安全中心中查找检测到的文件, 请使用以下高级搜寻查询搜索所有 ASR 检测:
 
 ```MiscEvents
 | where EventTime > ago(7d)
@@ -223,4 +223,4 @@ Microsoft 365 security center 根据攻击面减少规则收集[您可能要](ht
 | project FolderPath, FileName, SHA1, InitiatingProcessFolderPath, InitiatingProcessFileName, InitiatingProcessSHA1
 ```
 
-在结果中使用**SHA1**或**InitiatingProcessSHA1**在 Windows Defender 安全中心中使用通用搜索栏搜索文件。
+在结果中使用**SHA1**或**InitiatingProcessSHA1**在 Microsoft Defender 安全中心中使用通用搜索栏搜索文件。

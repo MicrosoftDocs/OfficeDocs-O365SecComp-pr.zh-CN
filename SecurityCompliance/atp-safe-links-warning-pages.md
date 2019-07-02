@@ -3,7 +3,7 @@ title: Office 365 ATP 安全链接警告页
 ms.author: deniseb
 author: denisebmsft
 manager: laurawi
-ms.audience: IT Pro
+audience: ITPro
 ms.topic: overview
 ms.service: O365-seccomp
 localization_priority: Normal
@@ -14,19 +14,19 @@ ms.assetid: fc4e6ebb-5acc-4bc5-bad8-4f3407d1d3f4
 ms.collection:
 - M365-security-compliance
 description: 获取在 Office 365 高级威胁防护工作时可能看到的警告页面的概述。
-ms.openlocfilehash: e90951a010ff5de4d3b292259e9c4596b6cc8e89
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: 70bd93aead82a867936031f754d172fdeb22f421
+ms.sourcegitcommit: f96029928a6cdd141783026d57bc2179d7963af6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32251242"
+ms.lasthandoff: 06/17/2019
+ms.locfileid: "35017624"
 ---
 # <a name="office-365-atp-safe-links-warning-pages"></a>Office 365 ATP 安全链接警告页
 
 > [!IMPORTANT]
-> 本文适用于 Office 365 企业客户。 如果您使用的是 Outlook.com、office 365 家庭版或 office 365 个人版, 并且您正在查找有关 Outlook 中的安全链接的信息, 请参阅[Advanced Outlook.com security](https://support.office.com/article/advanced-outlook-com-security-for-office-365-subscribers-882d2243-eab9-4545-a58a-b36fee4a46e2)。
+> 本文适用于具有[Office 365 高级威胁防护](office-365-atp.md)的商业客户。 如果您使用的是 Outlook.com、Office 365 家庭版或 Office 365 个人版, 并且您正在查找有关 Outlook 中的安全链接的信息, 请参阅[Advanced Outlook.com security](https://support.office.com/article/advanced-outlook-com-security-for-office-365-subscribers-882d2243-eab9-4545-a58a-b36fee4a46e2)。
 
-[Office 365 高级威胁防护](office-365-atp.md)(atp) 通过功能 (如[atp 安全链接](atp-safe-links.md)、 [atp 安全附件](atp-safe-attachments.md)和[反网络钓鱼防护](anti-phishing-protection.md)) 帮助保护您的组织免受网络钓鱼企图和恶意软件的攻击。 保护准备就绪后, 将检查电子邮件和 Office 文档中的链接 (url)。 如果 url 被标识为可疑或恶意, 则在单击时可能会阻止您打开该 url。 您可能会看到一个警告页面, 而不是直接转到该网站。 
+[Office 365 高级威胁防护](office-365-atp.md)(ATP) 通过功能 (如[Atp 安全链接](atp-safe-links.md)、 [atp 安全附件](atp-safe-attachments.md)和[反网络钓鱼防护](anti-phishing-protection.md)) 帮助保护您的组织免受网络钓鱼企图和恶意软件的攻击。 保护准备就绪后, 将检查电子邮件和 Office 文档中的链接 (Url)。 如果 URL 被标识为可疑或恶意, 则在单击时可能会阻止您打开该 URL。 您可能会看到一个警告页面, 而不是直接转到该网站。 
   
 阅读本文, 以查看可能显示的警告页的示例, 以及最近对警告页的更新。
   
@@ -46,7 +46,7 @@ ms.locfileid: "32251242"
 
 ### <a name="a-url-is-in-a-message-identified-as-a-phishing-attempt"></a>URL 位于标识为网络钓鱼尝试的邮件中
 
-该 URL 位于已标识为 "网络钓鱼" 攻击的电子邮件中。 因此, 电子邮件中的所有 url 都将被阻止。 我们建议您不要继续转到网站。
+该 URL 位于已标识为 "网络钓鱼" 攻击的电子邮件中。 因此, 电子邮件中的所有 Url 都将被阻止。 我们建议您不要继续转到网站。
 
 ![此 URL 位于标识为网络钓鱼尝试的邮件中](media/6e544a28-0604-4821-aba6-d5a57bb917e5.png)
 

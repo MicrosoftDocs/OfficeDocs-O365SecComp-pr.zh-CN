@@ -4,25 +4,25 @@ ms.author: deniseb
 author: denisebmsft
 manager: laurawi
 ms.date: 8/7/2017
-ms.audience: Admin
+audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 ms.collection:
 - M365-security-compliance
 localization_priority: Normal
 description: 此深入了解驱动的建议可帮助你的组织在 Office 365 中存储和共享敏感内容时保持安全, 方法是在 DLP 策略覆盖范围中存在可能的差距时通知你。 如果您的文档包含任何最常用的五种类型&amp;的敏感信息, 但不受 DLP 策略保护, 您将在安全合规中心的主页上看到此建议。
-ms.openlocfilehash: 6edb6a28182cb72e66a649ac5eb0c1561c596091
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: 326efb7591ba75ada9eec6a5e61e39e2a1fc09f9
+ms.sourcegitcommit: 0d5a863f48914eeaaf29f7d2a2022618de186247
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32254076"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "34077968"
 ---
 # <a name="get-started-with-dlp-policy-recommendations"></a>开始使用 DLP 策略建议
 
 此深入了解驱动的建议可帮助你的组织在 Office 365 中存储和共享敏感内容时保持安全, 方法是在 DLP 策略覆盖范围中存在可能的差距时通知你。 如果您的文档包含任何最**** 常见类型的敏感信息&amp; , 但不受数据丢失防护 (DLP) 策略保护, 则您将在安全合规中心的主页上看到此建议。 
   
-您可以使用此小组件快速创建自定义的 dlp 策略, 只需单击一次或两次, 然后在创建此 DLP 策略后, 即可完全自定义。 请注意, 如果最初看不到建议, 请尝试在 "**建议为你**" 部分的底部单击 " **+ 更多**"。 
+您可以使用此小组件快速创建自定义的 DLP 策略, 只需单击一次或两次, 然后在创建此 DLP 策略后, 即可完全自定义。 请注意, 如果最初看不到建议, 请尝试在 "**建议为你**" 部分的底部单击 " **+ 更多**"。 
   
 ![名为不受保护的敏感信息的小部件](media/91bc04d2-6eff-4294-8b73-b2d56d26ffc4.png)
   
@@ -66,7 +66,7 @@ ms.locfileid: "32254076"
     
 - 该敏感信息尚未受到现有 DLP 策略的保护。
     
-与不断扫描数据的 dlp 策略不同, 此建议扫描 dlp 策略覆盖范围中大约每隔48小时的间隔, 因此, 在上载新内容后, 可能需要长达两天的时间才能显示建议。
+与不断扫描数据的 DLP 策略不同, 此建议扫描 DLP 策略覆盖范围中大约每隔48小时的间隔, 因此, 在上载新内容后, 可能需要长达两天的时间才能显示建议。
   
 最后, 在使用小部件创建建议的 DLP 策略后, 该小部件将从**主页**中消失。 
   

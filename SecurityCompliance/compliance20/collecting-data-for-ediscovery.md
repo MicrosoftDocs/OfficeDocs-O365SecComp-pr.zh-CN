@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: 8e67c3c8a693e627bade9e581f0f1e246bf6802a
-ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
+ms.openlocfilehash: 091d6f8835ae1aae2f075f0b510954255c3a6a5c
+ms.sourcegitcommit: e323610df2df71c84f536e8a38650d33d8069e41
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "34151884"
+ms.lasthandoff: 06/04/2019
+ms.locfileid: "34703835"
 ---
 # <a name="collect-data-for-a-case-in-advanced-ediscovery"></a>在高级电子数据展示中收集事例数据
 
@@ -34,6 +34,7 @@ ms.locfileid: "34151884"
 创建搜索后, 会显示包含详细信息的飞出页面。 请注意, "**统计**" 和 "**预览**" 按钮最初显示为灰色, 因为尚未完成搜索。 您可以在 "**搜索**" 选项卡上跟踪搜索进度。
 
 ## <a name="view-search-results-and-statistics"></a>查看搜索结果和统计信息
+
 内容搜索有两个组件: 统计信息 (估计) 和预览。 由于每个组件都已完成, 在**搜索**选项卡上的相应列中显示的状态将从 "已**提交**到**正在进行**" 更改为 "**已完成**"。
 
 完成搜索估计后, 单击搜索以显示弹出页面, 这将显示有关搜索结果的一些高级统计信息。 在这种情况下, "**统计**" 按钮将处于活动状态。 您可以单击它以查看搜索统计信息, 例如:

@@ -16,20 +16,20 @@ search.appverid:
 - MET150
 ms.assetid: ce004100-9e7f-443e-942b-9b04098fcfc3
 description: Office 365 审核日志记录中包含的其他属性的说明。
-ms.openlocfilehash: 69dfe34b0ace8061c3c41ae074582016fe61a55d
-ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
+ms.openlocfilehash: 8ce85ea452389b0d8239de88730acd6039cc02be
+ms.sourcegitcommit: a6968df6e47ab5733a995f1efdc6e3676c5b5d7b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "34150334"
+ms.lasthandoff: 06/26/2019
+ms.locfileid: "35253931"
 ---
 # <a name="detailed-properties-in-the-office-365-audit-log"></a>Office 365 审核日志中的属性详细信息
 
 从 Security & 合规中心导出审核日志搜索结果时, 您可以选择下载符合搜索条件的所有结果。 为此, 请选择 "**导出结果** \> "。在 "**审核日志搜索**" 页上**下载所有结果**。 有关详细信息, 请参阅[在 Office 365 中搜索审核日志](search-the-audit-log-in-security-and-compliance.md)。
   
- 当您导出审核日志搜索的所有结果时, 将把来自 Office 365 统一审核日志的原始数据复制到逗号分隔值 (CSV) 文件中, 该文件将下载到您的本地计算机上。 此文件包含来自名为**Detail**的列中的审核日志条目的其他信息。 此列包含来自审核日志记录的多个属性的多值属性。 此多值属性中的每个**属性: 值**对都用逗号分隔开。 
+ 当您导出审核日志搜索的所有结果时, 将把来自 Office 365 统一审核日志的原始数据复制到一个逗号分隔的值 (CSV) 文件, 该文件将下载到您的本地计算机上。 此文件包含来自名为**AuditData**的列中的每个审核记录的其他信息。 此列包含来自审核日志记录的多个属性的多值属性。 此多值属性中的每个**属性: 值**对都用逗号分隔开。 
   
-下表介绍了多属性**详细信息**列中的每个事件所包含的属性 (具体情况取决于发生某个事件的 Office 365 服务)。 **具有此属性列的 Office 365 服务**指示包含该属性的活动的服务和类型 (用户或管理员)。 有关这些属性的详细信息或有关本主题中可能未列出的属性的详细信息, 请参阅[Office 365 管理活动 API 架构](https://go.microsoft.com/fwlink/p/?LinkId=717993)。
+下表描述了包含多属性**AuditData**列中的事件发生时所包含的属性 (具体取决于所发生的 Office 365 服务)。 **具有此属性列的 Office 365 服务**指示包含该属性的活动的服务和类型 (用户或管理员)。 有关这些属性的详细信息或有关本主题中可能未列出的属性的详细信息, 请参阅[Office 365 管理活动 API 架构](https://go.microsoft.com/fwlink/p/?LinkId=717993)。
   
 > [!TIP]
 > 您可以使用 Excel 中的 Power Query 将此列拆分为多个列, 这样每个属性都将拥有自己的列。 这将允许您对其中一个或多个属性进行排序和筛选。 若要了解如何执行此操作, 请参阅[拆分一列文本 (Power Query)](https://support.office.com/article/5282d425-6dd0-46ca-95bf-8e0da9539662)中的 "按分隔符拆分列" 一节。 
@@ -67,9 +67,9 @@ ms.locfileid: "34150334"
 |OrganizationID|Office 365 组织的 GUID。|全部|
 |Path|访问的邮件所在的邮箱文件夹的名称。 此属性还标识在其中创建或复制/移动邮件的文件夹。|Exchange (邮箱活动)|
 |参数|对于 Exchange 管理员活动, 与在 Operation 属性中标识的 cmdlet 一起使用的所有参数的名称和值。|Exchange (管理员活动)|
-|RecordType|记录指示的操作类型。 以下值指示记录类型。  <br/><br/> **1** -指示 Exchange 管理员审核日志中的记录。 <br/>**2** -指示对 singled 邮箱项目执行的操作的 Exchange 邮箱审核日志中的记录。 <br/>**3** -还指示 Exchange 邮箱审核日志中的记录。 此记录类型指示对源邮箱中的多个项目执行的操作 (例如, 将多个项目移动到 "已删除邮件" 文件夹或永久删除多个项目)。 <br/>**4** -指示 SharePoint 中的网站管理员操作, 例如管理员或用户分配对网站的权限。 <br/>**6** -指示 SharePoint 中与文件或文件夹相关的操作, 例如用户查看或修改文件。 <br/>**8** -指示在 Azure Active Directory 中执行的管理员操作。 <br/>**9** -指示 Azure Active Directory 中的 OrgId 登录事件。 此记录类型已被弃用。 <br/>**10** -指示由 Microsoft 人员在数据中心执行的安全 cmdlet 事件。 <br/>**11** -指示 SharePoint 中的数据丢失保护 (DLP) 事件。<br/> **12** -指示 Sway 事件。 <br/>**13** -当使用统一的 DLP 策略进行配置时, 指示 Exchange 中的 DLP 事件。 不支持基于 Exchange 邮件流规则 (也称为传输规则) 的 DLP 事件。<br>**14** -指示 SharePoint 中的共享事件。<br/> **15** -指示 Azure Active Directory 中的安全令牌服务 (STS) 登录事件。 <br/>**18** -表示安全 _AMP_ 合规中心事件。 <br/>**20** -指示 Power BI 事件。 <br/>**21**-指示 Dynamics 365 事件。<br/>**22** -指示 Yammer 事件。 <br/>**23** -指示 Skype for business 事件。 <br/>**24** -指示电子数据展示事件。 此记录类型指示在安全与合规中心中运行内容搜索和管理电子数据展示事例所执行的活动。 有关详细信息, 请参阅[在 Office 365 审核日志中搜索电子数据展示活动](search-for-ediscovery-activities-in-the-audit-log.md)。<br/>**25、26或 27** -表示 Microsoft 团队活动。 <br/>**28** -指示来自 Exchange Online Protection 和 Office 365 高级威胁防护事件的网络钓鱼和恶意软件事件。<br/> **30** -指示 Microsoft Flow 事件。<br/> **32** -指示 Microsoft Stream 事件。<br/> **35** -指示 Microsoft 项目事件。 <br/> **36** -指示 SharePoint 列表事件。<br/> **38** -指示与安全与合规中心中的保留策略和保留标记相关的事件。  <br/>**40** -指示安全性和合规性警报信号中产生的事件。<br/> **41** -指示 Office 365 高级威胁防护中的安全链接时间段和阻止覆盖事件。<br/>**44** -指示 Workplace Analytics 事件。 <br/>**45** -指示 PowerApps 应用程序事件。 <br/> **47** -指示 SharePoint、OneDrive 和 Microsoft 团队中的文件的来自 Office 365 高级威胁防护的网络钓鱼和恶意软件事件。|全部|
+|RecordType|记录指示的操作类型。 以下值指示记录类型。  <br/><br/> **1** -指示 Exchange 管理员审核日志中的记录。 <br/>**2** -指示对 singled 邮箱项目执行的操作的 Exchange 邮箱审核日志中的记录。 <br/>**3** -还指示 Exchange 邮箱审核日志中的记录。 此记录类型指示对源邮箱中的多个项目执行的操作 (例如, 将多个项目移动到 "已删除邮件" 文件夹或永久删除多个项目)。 <br/>**4** -指示 SharePoint 中的网站管理员操作, 例如管理员或用户分配对网站的权限。 <br/>**6** -指示 SharePoint 中与文件或文件夹相关的操作, 例如用户查看或修改文件。 <br/>**8** -指示在 Azure Active Directory 中执行的管理员操作。 <br/>**9** -指示 Azure Active Directory 中的 OrgId 登录事件。 此记录类型已被弃用。 <br/>**10** -指示由 Microsoft 人员在数据中心执行的安全 cmdlet 事件。 <br/>**11** -指示 SharePoint 中的数据丢失保护 (DLP) 事件。<br/> **12** -指示 Sway 事件。 <br/>**13** -当使用统一的 DLP 策略进行配置时, 指示 Exchange 中的 DLP 事件。 不支持基于 Exchange 邮件流规则 (也称为传输规则) 的 DLP 事件。<br>**14** -指示 SharePoint 中的共享事件。<br/> **15** -指示 Azure Active Directory 中的安全令牌服务 (STS) 登录事件。 <br/>**18** -表示安全 & 合规中心事件。 <br/>**20** -指示 Power BI 事件。 <br/>**21**-指示 Dynamics 365 事件。<br/>**22** -指示 Yammer 事件。 <br/>**23** -指示 Skype for business 事件。 <br/>**24** -指示电子数据展示事件。 此记录类型指示在安全与合规中心中运行内容搜索和管理电子数据展示事例所执行的活动。 有关详细信息, 请参阅[在 Office 365 审核日志中搜索电子数据展示活动](search-for-ediscovery-activities-in-the-audit-log.md)。<br/>**25、26或 27** -表示 Microsoft 团队活动。 <br/>**28** -指示来自 Exchange Online Protection 和 Office 365 高级威胁防护事件的网络钓鱼和恶意软件事件。<br/> **30** -指示 Microsoft Flow 事件。<br/> **31** -指示高级电子数据展示事件。<br/> **32** -指示 Microsoft Stream 事件。<br/> **35** -指示 Microsoft 项目事件。 <br/> **36** -指示 SharePoint 列表事件。<br/> **38** -指示与安全与合规中心中的保留策略和保留标记相关的事件。  <br/>**40** -指示安全性和合规性警报信号中产生的事件。<br/> **41** -指示 Office 365 高级威胁防护中的安全链接时间段和阻止覆盖事件。<br/>**44** -指示 Workplace Analytics 事件。 <br/>**45** -指示 PowerApps 应用程序事件。 <br/> **47** -指示 SharePoint、OneDrive 和 Microsoft 团队中的文件的来自 Office 365 高级威胁防护的网络钓鱼和恶意软件事件。 <br/> **52** -指示与数据见解 REST API 相关的事件。<br/>**54** -指示 SharePoint 列表项事件。<br/>**55** -指示 SharePoint 内容类型事件。
 |ResultStatus|指示操作 (在**Operation**属性中指定) 是否成功。  <br/> 对于 Exchange 管理员活动, 值可以为**True** (成功) 或**False** (失败)。|全部  <br/>|
-|SecurityComplianceCenterEventType|指示活动是安全 & 合规中心事件。 所有 Security & 合规性中心活动的值都为此属性的值为**0** 。|安全与合规中心|
+|SecurityComplianceCenterEventType|指示活动是安全 & 合规中心事件。 所有安全 & 合规性中心活动的值都为此属性的值为**0** 。|安全与合规中心|
 |SharingType|分配给用户的共享权限类型, 该用户是与资源共享的。 此用户在**UserSharedWith**属性中进行标识。|SharePoint|
 |Site|用户访问的文件或文件夹所在网站的 GUID。|SharePoint|
 |SiteUrl|用户访问的文件或文件夹所在网站的 URL。|SharePoint|

@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: cfed07d473f2af367de4cb2e9fe924a29e4123cd
-ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
+ms.openlocfilehash: b331bba76f45a11a4d1c8c0552b27759cf49608a
+ms.sourcegitcommit: e323610df2df71c84f536e8a38650d33d8069e41
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "34155204"
+ms.lasthandoff: 06/04/2019
+ms.locfileid: "34703805"
 ---
 # <a name="analyze-data-in-a-review-set-in-advanced-ediscovery"></a>在高级电子数据展示中分析评审集中的数据
 
@@ -39,7 +39,7 @@ ms.locfileid: "34155204"
 
 3. 单击 "**管理审阅集**"。
 
-4. 单击 "**分析**"。
+4. 单击**评审集的 "运行分析"**。
 
 可以在案例的 "**作业**" 选项卡上检查分析进度。
 
@@ -53,7 +53,7 @@ ms.locfileid: "34155204"
 
 2. 单击 "**管理审阅集**"。
 
-3. 单击 "**报告**"。
+3. 单击 "**查看报告**"。
 
 此报告包含来自分析的四个组件:
 

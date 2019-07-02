@@ -5,7 +5,7 @@ author: denisebmsft
 manager: laurawi
 audience: ITPro
 ms.topic: article
-ms.date: 10/29/2018
+ms.date: 06/17/2019
 ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection:
@@ -14,12 +14,12 @@ ms.custom:
 - Ent_Solutions
 - SIEM
 description: '摘要: 阅读本文, 了解 SIEM server 与 Microsoft 365 集成的概述。'
-ms.openlocfilehash: cfa9c6c3ae501515f61799fdd480fc569918935f
-ms.sourcegitcommit: b9d8a43cb3afcdc8820bc9470c5707eff8fc6616
+ms.openlocfilehash: 9138cbc395b90f50fa60bf545066c17cf26d7edf
+ms.sourcegitcommit: f2798d46acfbd56314e809cd3fe0350be807e420
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/11/2019
-ms.locfileid: "34852686"
+ms.lasthandoff: 06/17/2019
+ms.locfileid: "35014761"
 ---
 # <a name="siem-server-integration-with-microsoft-365-services-and-applications"></a>SIEM server 与 Microsoft 365 服务和应用程序的集成
 
@@ -33,13 +33,13 @@ SIEM 服务器可以接收来自各种 Microsoft 365 服务和应用程序的数
 
 | Microsoft 365 服务或应用程序 | SIEM 服务器输入 | 要了解详细信息的资源 |
 | --- | --- | --- |
-| [Office 365 高级威胁防护](office-365-atp.md) <br/>   或   <br/>[Office 365 威胁智能](office-365-ti.md) | 审核日志 | [SIEM 与 Office 365 高级威胁防护的集成](siem-integration-with-office-365-ti.md) |
+| [Office 365 高级威胁防护](office-365-atp.md) <br/>或<br/>[Office 365 威胁智能](office-365-ti.md) | 审核日志 | [SIEM 与 Office 365 高级威胁防护的集成](siem-integration-with-office-365-ti.md) |
 | [Microsoft Cloud App Security](https://docs.microsoft.com/cloud-app-security/what-is-cloud-app-security) | 日志集成 | [SIEM 与 Microsoft Cloud App Security 的集成](https://docs.microsoft.com/cloud-app-security/siem) |
-| [Office 365 云应用安全](https://docs.microsoft.com/cloud-app-security/what-is-cloud-app-security) | 日志集成 | [将 SIEM 服务器与云应用安全集成](https://docs.microsoft.com/cloud-app-security/siem) |
 | [Microsoft 威胁防护](https://docs.microsoft.com/windows/security/threat-protection/) | 日志集成 | [将警报拉入 SIEM 工具](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/configure-siem) |
 | [Azure 安全中心](https://docs.microsoft.com/azure/security-center/security-center-intro)(威胁防护和威胁检测) | 警报 | [Azure 安全数据导出到 SIEM 配置-预览](https://docs.microsoft.com/azure/security-center/security-center-export-data-to-siem) |
-| [Azure Active Directory Identity Protection](https://docs.microsoft.com/azure/active-directory/identity-protection/overview) | 审核日志 | [集成 Azure Active Directory 审核日志](https://docs.microsoft.com/azure/security/security-azure-log-integration-ad) |
-| [Azure 高级威胁分析](https://docs.microsoft.com/azure/security/azure-threat-detection) | 日志集成 | [ATA SIEM 日志引用](https://docs.microsoft.com/advanced-threat-analytics/cef-format-sa) |
+|[Azure 高级威胁分析](https://docs.microsoft.com/azure/security/azure-threat-detection) | Azure 监视器 | [博客使用 Azure Monitor 与 SIEM 工具集成](https://azure.microsoft.com/blog/use-azure-monitor-to-integrate-with-siem-tools) |
+|[Azure Active Directory Identity Protection](https://docs.microsoft.com/azure/active-directory/identity-protection/overview) |日志集成 |[将 Microsoft Graph 安全性 API 警报与 SIEM 集成](https://docs.microsoft.com/graph/security-siemintegration) |
+
 
 ## <a name="audit-logging-must-be-turned-on"></a>必须打开审核日志记录
 

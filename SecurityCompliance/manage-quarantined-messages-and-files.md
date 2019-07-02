@@ -16,12 +16,12 @@ ms.assetid: 065cc2cf-2f3a-47fd-a434-2a20b8f51d0c
 ms.collection:
 - M365-security-compliance
 description: '作为管理员, 您可以在 Office 365 中查看、释放和报告误报的已隔离邮件。 您可以设置策略, 以便 Office 365 筛选邮件并将其发送到隔离区, 原因如下: 因为它们被标识为垃圾邮件、批量、网络钓鱼和恶意软件, 或者它们与邮件流规则匹配。 '
-ms.openlocfilehash: aa469a1f0efa2265014593134d2b7865a59dd89f
-ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
+ms.openlocfilehash: abe9aa1a8c7d78af4d82d9a06284e12745d24dee
+ms.sourcegitcommit: dde3dc1dd419b97daa1da9827787c27935a2c757
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "34155694"
+ms.lasthandoff: 06/20/2019
+ms.locfileid: "35115923"
 ---
 # <a name="manage-quarantined-messages-and-files-as-an-administrator-in-office-365"></a>以 Office 365 中的管理员身份管理隔离的邮件和文件
 
@@ -29,7 +29,7 @@ ms.locfileid: "34155694"
   
 默认情况下, Office 365 将包含恶意软件的网络钓鱼邮件和邮件直接发送到隔离。 其他筛选出的邮件将发送给用户的 "垃圾邮件" 文件夹, 除非您将策略设置为将其发送到隔离区。
   
-您必须在 Office 365 中具有全局管理员 (GA) 权限, 才能处理发送给其他用户并使用隔离文件的隔离邮件。
+您必须在 Office 365 中拥有全局管理员 (GA) 权限, 或在安全与合规中心中使用安全管理员来处理已发送给其他用户的隔离邮件, 并使用隔离的文件。
   
 > [!IMPORTANT]
 >默认情况下, 垃圾邮件、批量和网络钓鱼邮件在30天内保持隔离状态。 由于与邮件流规则匹配而被隔离的邮件将保留在7天内的隔离中。 恶意软件邮件在15天内保留在隔离中。 可以在安全&amp;合规性中心的 "反垃圾邮件" 设置中自定义垃圾邮件隔离时间。 当 Office 365 从隔离区中删除邮件时, 无法将其恢复。 如果你愿意, 可以在反垃圾邮件筛选器策略中更改隔离邮件的保留期。 有关详细信息, 请参阅本文中[的设置隔离保留期](manage-quarantined-messages-and-files.md#BKMK_ModQuarantineTime)。 

@@ -4,7 +4,7 @@ ms.author: deniseb
 author: denisebmsft
 manager: laurawi
 ms.date: 8/10/2017
-ms.audience: Admin
+audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
@@ -15,12 +15,12 @@ ms.assetid: e0ada764-6422-4b44-9472-513bed04837b
 ms.collection:
 - M365-security-compliance
 description: 在创建首个数据丢失防护 (DLP) 策略之前, DLP 将帮助使用默认策略保护您的敏感信息。 此默认策略及其建议 (如下所示) 有助于在组织外部的人员共享包含信用卡号的电子邮件或文档时通知你, 以确保敏感内容的安全。
-ms.openlocfilehash: fa48025a7b979ad69c600b21a10fbb62567234c3
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: a14e2c9c1f833552c11e55ec76f6f804e0311479
+ms.sourcegitcommit: 0d5a863f48914eeaaf29f7d2a2022618de186247
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32256706"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "34077918"
 ---
 # <a name="get-started-with-the-default-dlp-policy"></a>开始使用默认 DLP 策略
 
@@ -64,7 +64,7 @@ ms.locfileid: "32256706"
   
 此策略可完全自定义, 与你从头开始创建的任何 DLP 策略相同。 您还可以关闭或删除策略, 以便用户不再接收策略提示或电子邮件通知。
   
-![名为 "默认 Office 365 dlp 策略" 的 dlp 策略](media/260731e8-4d57-4c98-abec-07b052ec48d5.png)
+![名为 "默认 Office 365 DLP 策略" 的 DLP 策略](media/260731e8-4d57-4c98-abec-07b052ec48d5.png)
   
 ## <a name="when-the-widget-does-and-does-not-appear"></a>小组件何时出现且不显示
 
@@ -72,7 +72,7 @@ ms.locfileid: "32256706"
   
 仅在以下情况时显示此小组件:
   
-- 安全&amp;合规中心或 Exchange 管理中心中没有数据丢失防护策略。 此小组件旨在帮助你开始使用 dlp, 因此如果你已具有 dlp 策略, 则不会显示它。
+- 安全&amp;合规中心或 Exchange 管理中心中没有数据丢失防护策略。 此小组件旨在帮助你开始使用 DLP, 因此如果你已具有 DLP 策略, 则不会显示它。
     
 - 在过去30天内, 与组织外部的某个人共享的包含至少一张信用卡的内容已被共享。
     

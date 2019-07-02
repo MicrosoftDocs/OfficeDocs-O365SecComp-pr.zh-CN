@@ -12,16 +12,16 @@ localization_priority: Normal
 search.appverid: MOE150
 ms.assetid: ec2677ff-c4d7-4363-a9e7-22c80e015688
 description: 使用内容搜索电子数据展示工具搜索从第三方数据源导入到 Office 365 中的邮箱的项目。 您可以创建查询以搜索所有导入的项, 或创建查询以搜索特定的第三方数据类型。 本文列出了可以在关键字查询中使用的值, 以搜索可导入到 Office 365 的第三方数据类型。
-ms.openlocfilehash: 4a611ed04cc102aad4d978a379efbf46a0bd70e2
-ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
+ms.openlocfilehash: 0881456d377569fb55f0daf0d0a8a2a15bce62fc
+ms.sourcegitcommit: f2798d46acfbd56314e809cd3fe0350be807e420
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "34156204"
+ms.lasthandoff: 06/17/2019
+ms.locfileid: "35014742"
 ---
 # <a name="use-content-search-to-search-third-party-data-that-was-imported-to-office-365"></a>使用内容搜索来搜索导入到 Office 365 的第三方数据
 
-您可以使用安全 & 合规中心中的[内容搜索电子数据展示工具](content-search.md)搜索从第三方数据源导入到 Office 365 中的邮箱的项目。 您可以创建查询来搜索所有导入的第三方数据项, 也可以创建查询仅搜索特定的第三方数据项。 此外, 还可以创建基于查询的保留策略或基于查询的电子数据展示保留, 以在 Office 365 中保留第三方数据。 
+您可以使用安全性 & 合规性中心中的[内容搜索电子数据展示工具](content-search.md), 从第三方数据源搜索导入到 Office 365 中的邮箱的项目。 您可以创建查询来搜索所有导入的第三方数据项, 也可以创建查询仅搜索特定的第三方数据项。 此外, 还可以创建基于查询的 Office 365 保留策略或基于查询的电子数据展示保留, 以在 Office 365 中保留第三方数据。 
   
 有关导入第三方数据和可以导入到 Office 365 的第三方数据类型列表的详细信息, 请参阅[在 office 365 中使用合作伙伴存档第三方数据](work-with-partner-to-archive-third-party-data.md)。 
   

@@ -1,6 +1,6 @@
 ---
 title: Microsoft 安全功能分数
-description: 介绍 Microsoft 365 安全分数、如何计算详细信息以及安全管理员可以使用它的方式。
+description: 介绍 microsoft 365 安全中心中的 Microsoft 安全分数、如何计算详细信息以及安全管理员使用它的方式。
 keywords: 安全性、恶意软件、Microsoft 365、M365、安全分数、安全中心、改进操作
 ms.prod: w10
 ms.mktglfcycl: deploy
@@ -15,14 +15,17 @@ ms.topic: article
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: 1c47ec8e75fb712900fd1e459b7cfd73bb071ac4
-ms.sourcegitcommit: 1021ab534b3bc3c8684e42f67d11711f6765567e
+ms.openlocfilehash: 27a9d137bde0dd23be8824d94a25364f89706563
+ms.sourcegitcommit: b9d8a43cb3afcdc8820bc9470c5707eff8fc6616
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/21/2019
-ms.locfileid: "34334540"
+ms.lasthandoff: 06/11/2019
+ms.locfileid: "34852776"
 ---
 # <a name="microsoft-secure-score"></a>Microsoft 安全功能分数
+
+>[!IMPORTANT]
+>一些信息与 prereleased 产品相关, 在正式发布之前可能会对其进行重大修改。 Microsoft makes no warranties, express or implied, with respect to the information provided here.
 
 通过 microsoft 365 安全中心中的 Microsoft 安全评分, 可以更好地查看和控制组织的安全状况。 通过集中式仪表板, 可以监视和提高 Microsoft 365 标识、数据、应用程序、设备和基础结构的安全性。
 
@@ -40,15 +43,15 @@ Microsoft 安全分数为您提供了强健的可视化效果、与其他 Micros
 * Security Administrator
 * 安全读者
 
-## <a name="rich-experiences--additional-security-recommendations"></a>丰富的体验 & 其他安全建议
+## <a name="rich-experiences--additional-security-recommendations"></a>& 其他安全建议的丰富体验
 
-在 Microsoft 安全分数中, 我们已从 Azure AD、Intune 和云应用程序安全性中添加了建议, 其中包含来自 Azure 安全中心和 Windows Defender ATP 的建议。 我们还添加了更为多的 Office 365 安全建议。 通过其他见解并更好地了解更广泛的一组 Microsoft 产品和服务, 您可以放心地报告有关组织安全运行状况的管理。 您还可以使用[Microsoft GRAPH API](https://docs.microsoft.com/graph/api/resources/securescores?view=graph-rest-beta)获取成绩。
+在 Microsoft 安全分数中, 我们已从 Azure AD、Intune 和云应用程序安全性中添加了建议, 其中包含来自 Azure 安全中心的建议和 Microsoft Defender ATP 即将推出的建议。 我们还添加了更为多的 Office 365 安全建议。 通过其他见解并更好地了解更广泛的一组 Microsoft 产品和服务, 您可以放心地报告有关组织安全运行状况的管理。 您还可以使用[Microsoft GRAPH API](https://docs.microsoft.com/graph/api/resources/securescores?view=graph-rest-beta)获取成绩。
 
 为了帮助您更快地了解所需的信息, Microsoft 建议已分成组:
 
 * 标识 (Azure AD 帐户和角色的保护状态)
 * 数据 (Office 365 文档的保护状态)
-* 设备 (设备的保护状态;即将推出 Windows Defender ATP 改进操作)
+* 设备 (设备的保护状态;即将推出 Microsoft Defender ATP 的改进操作)
 * 应用 (电子邮件和云应用的保护状态)
 * 基础结构 (Azure 资源的保护状态; 即将推出)
 
@@ -81,11 +84,11 @@ Microsoft 安全分数不会跟踪标记为 [未评分] 的操作。 你仍可�
 
 您可以在 "**历史记录**" 选项卡中查看组织的分数在一段时间内的关系图。此视图包含全局平均值、行业平均和相似的座位计数, 以及在所选时间范围内执行的所有操作。 您还可以自定义日期范围并按类别进行筛选。
 
-分数每日计算一次 (大约 1:00 AM PST)。 如果对已衡量的操作进行了更改, 则分数将自动更新到下一天。 另外, 请务必注意, 其他一些门户会显示 Microsoft 安全分数的一部分 (如 Windows Defender 安全中心)。 如果你完成了改进操作, 这些门户中的得分增加了, 则在 Microsoft 365 安全中心中显示更新的分数可能需要长达24小时。  
+分数每日计算一次 (大约 1:00 AM PST)。 如果对已衡量的操作进行了更改, 则分数将自动更新到下一天。 另外, 请务必注意, 其他一些门户会显示 Microsoft 安全分数的一部分 (如 Microsoft Defender 安全中心)。 如果你完成了改进操作, 这些门户中的得分增加了, 则在 Microsoft 365 安全中心中显示更新的分数可能需要长达24小时。  
 
-## <a name="how-controls-are-scored"></a>如何对控件进行评分
+## <a name="how-improvement-actions-are-scored"></a>如何对改进行动进行评分
 
-可以通过两种方式对控件进行评分。 有些按二进制方式进行评分-如果您的功能或设置根据我们的建议进行了配置, 则获得 100% 的分数。 其他分数按总配置的百分比计算。 例如, 如果您使用 MFA 保护所有用户, 并且您只有 5% 以上的用户都受到保护, 则将获得30个点。您可以在 2 100 个点 (5 个受保护/100 总数 * 30 个最大值 = 2 pt 部分分数) 周围获得分数的部分分数。. 
+大多数都是以二进制方式进行评分-如果实施改进操作 (如创建新策略或打开特定设置), 您将获得 100% 的数据点。 对于其他改进操作, 点作为总配置的百分比提供。 例如, 如果您使用多重身份验证保护您的所有用户, 并且仅有 5% 以上的用户受到保护, 则 "改进" 操作将获得30个点。您可以获得2个点 (5 100 个受保护的/100 总数 * 30 max pt = 2) 的部分分数。 pt 部分分数)。
 
 ## <a name="risk-awareness"></a>风险感知
 
@@ -93,4 +96,4 @@ Microsoft 安全分数是基于系统配置、用户行为和其他安全相关�
 
 ## <a name="we-want-to-hear-from-you"></a>我们希望收到你的来信
 
-如果您有任何问题, 请通过在[Security、隐私权 _AMP_ 合规](https://techcommunity.microsoft.com/t5/Security-Privacy-Compliance/bd-p/security_privacy)社区中发布来告知我们。 我们正在监视社区, 并将提供帮助。
+如果你有任何问题, 请通过在[安全、隐私 & 合规](https://techcommunity.microsoft.com/t5/Security-Privacy-Compliance/bd-p/security_privacy)社区中发布来告知我们。 我们正在监视社区, 并将提供帮助。

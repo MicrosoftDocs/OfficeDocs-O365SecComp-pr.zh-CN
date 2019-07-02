@@ -9,12 +9,12 @@ ms.topic: article
 ms.service: o365-seccomp
 localization_priority: Normal
 description: 了解新的 Microsoft 365 合规性中心, 包括它包含的内容、如何获取它以及后续步骤。
-ms.openlocfilehash: 149058d6204b7ad9d33fe656a8176609cfda5991
-ms.sourcegitcommit: 6eb51931242d07abde2e37f1bd57d13bc724f0de
+ms.openlocfilehash: fc6ab6893e142b3beb5289c8430477727b3844ac
+ms.sourcegitcommit: b9d8a43cb3afcdc8820bc9470c5707eff8fc6616
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "34547918"
+ms.lasthandoff: 06/11/2019
+ms.locfileid: "34852786"
 ---
 # <a name="overview-of-the-all-new-microsoft-365-compliance-center"></a>全新 Microsoft 365 合规性中心概述
 
@@ -68,7 +68,7 @@ ms.locfileid: "34547918"
 
 |  |  |
 |---------|---------|
-|![Microsoft 365 合规性中心中的导航](media/m365-compliance-center-leftnav.png)  |<br/><br/> 转到 "**通知**" 以查看和解决[通知](alerts.md)<br/><br/>访问**监视 & 报告**可查看有关[标签使用和保留](sensitivity-labels.md)的数据[、DLP 策略匹配和替代](view-the-dlp-reports.md)、[共享文件](https://docs.microsoft.com/cloud-app-security/file-filters)、[使用中的第三方应用程序](https://docs.microsoft.com/cloud-app-security/discovered-apps)等。<br/><br/>展开 "**分类**" 部分以访问您的[标签](labels.md)、[标签策略](sensitivity-labels.md#what-label-policies-can-do)、[敏感信息类型](what-the-sensitive-information-types-look-for.md)和[标签分析](view-label-activity-for-documents.md)。<br/><br/>转到 "**策略**" 以查看[警报](alerts.md)并访问你的[DLP](data-loss-prevention-policies.md)和[保留](retention-policies.md)策略。<br/><br/> 使用 "**解决方案**" 部分中的链接可访问组织的合规性解决方案。 具体包括： <br/>[数据调控 > 处置](disposition-reviews.md)<br/>[电子数据展示 (预览)](compliance20/overview-ediscovery-20.md)<br/>[监控](supervision-policies.md)<br/>[数据调查](datainvestigations/overview-data-investigations.md)<br/>[数据主体请求](manage-gdpr-data-subject-requests-with-the-dsr-case-tool.md)        |
+|![Microsoft 365 合规性中心中的导航](media/m365-compliance-center-leftnav.png)  |<br/><br/> 转到 "**通知**" 以查看和解决[通知](alerts.md)<br/><br/>访问**报告**以查看有关[标签使用和保留](sensitivity-labels.md)的数据[、DLP 策略匹配和替代](view-the-dlp-reports.md)、[共享文件](https://docs.microsoft.com/cloud-app-security/file-filters)、[使用中的第三方应用程序](https://docs.microsoft.com/cloud-app-security/discovered-apps)等。<br/><br/>展开 "**分类**" 部分以访问您的[标签](labels.md)、[标签策略](sensitivity-labels.md#what-label-policies-can-do)、[敏感信息类型](what-the-sensitive-information-types-look-for.md)和[标签分析](view-label-activity-for-documents.md)。<br/><br/>转到 "**策略**" 以查看[警报](alerts.md)并访问你的[DLP](data-loss-prevention-policies.md)和[保留](retention-policies.md)策略。<br/><br/> 使用 "**解决方案**" 部分中的链接可访问组织的合规性解决方案。 具体包括： <br/>[数据治理 > 处置](disposition-reviews.md)<br/>[电子数据展示 (预览)](compliance20/overview-ediscovery-20.md)<br/>[监控](supervision-policies.md)<br/>[数据调查](datainvestigations/overview-data-investigations.md)<br/>[数据主体请求](manage-gdpr-data-subject-requests-with-the-dsr-case-tool.md)        |
 
 
 ## <a name="how-do-i-get-this"></a>如何获取此功能？
@@ -81,9 +81,9 @@ ms.locfileid: "34547918"
 
 ## <a name="frequently-asked-questions"></a>常见问题
 
-### <a name="why-am-i-taken-to-the-office-365-security--compliance-center-to-perform-some-tasks-such-as-defining-certain-policies"></a>为什么我转到 Office 365 安全 & 合规中心来执行某些任务, 如定义某些策略？
+### <a name="why-am-i-taken-to-the-office-365-security--compliance-center-to-perform-some-tasks-such-as-defining-certain-policies"></a>为什么我已进入 Office 365 安全 & 合规中心来执行某些任务, 如定义某些策略？
 
-我们仍在开发 Microsoft 365 合规性中心, 我们将在将来的几个月中添加更多功能和解决方案。 同时, 还必须在 Office 365 Security & 合规中心 ([https://protection.office.com](https://protection.office.com)) 中执行一些任务。 在这些情况下, 你将自动转到你可以在其中执行任务的位置, 例如创建或编辑监督策略。
+我们仍在开发 Microsoft 365 合规性中心, 我们将在将来的几个月中添加更多功能和解决方案。 同时, 还必须在 Office 365 安全 & 合规中心 ([https://protection.office.com](https://protection.office.com)) 中执行一些任务。 在这些情况下, 你将自动转到你可以在其中执行任务的位置, 例如创建或编辑监督策略。
 
 ### <a name="why-dont-i-see-the-new-microsoft-365-compliance-center-yet"></a>为什么我还看不到新的 Microsoft 365 合规中心？
 
@@ -91,9 +91,9 @@ ms.locfileid: "34547918"
 
 ### <a name="some-of-my-compliance-features-are-not-available-in-the-microsoft-365-compliance-center-what-do-i-do"></a>我的一些合规性功能在 Microsoft 365 合规性中心中不可用。 What do I do?
 
-我们仍在向 Microsoft 365 合规性中心添加功能。 如果找不到任何内容 (如审核日志搜索), 请使用 Office 365 Security & 合规中心[https://protection.office.com](https://protection.office.com)()。 您的配置将在现有的 Office 365 安全 & 合规中心和新的 Microsoft 365 合规性中心中自动保存。
+我们仍在向 Microsoft 365 合规性中心添加功能。 如果找不到任何内容 (如审核日志搜索), 请使用 Office 365 安全 & 合规性[https://protection.office.com](https://protection.office.com)中心 ()。 您的配置将以现有的 Office 365 安全 & 合规性中心和自动在新的 Microsoft 365 合规性中心中保存。
 
-若要转到这里, 在 Microsoft 365 合规性中心中, 在屏幕左侧的导航窗格中, 选择 "**更多资源**", 然后在 " **Office 365 安全 & 合规中心**" 下选择 "**打开**"。
+若要转到此处, 请在 Microsoft 365 合规性中心中, 在屏幕左侧的导航窗格中, 选择 "**更多资源**", 然后在 " **Office 365 安全性 & 合规性中心**" 下, 选择 "**打开**"。
 
 ![更多资源](media/MoreResourcesShowAll.png)
 

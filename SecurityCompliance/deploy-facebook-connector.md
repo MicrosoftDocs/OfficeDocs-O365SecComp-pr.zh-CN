@@ -11,12 +11,12 @@ localization_priority: Normal
 ms.collection: M365-security-compliance
 ROBOTS: NOINDEX, NOFOLLOW
 description: 管理员可以设置本机连接器以将 Facebook 商业页面导入和存档到 Office 365。 将此数据导入 Office 365 后, 您可以使用合规性功能 (如法律封存、内容搜索和保留策略) 来管理组织的 Facebook 数据的管理。
-ms.openlocfilehash: b0ec46cea2dd5722633e7fc302cdd0d03cd5d56d
-ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
+ms.openlocfilehash: 1f5b0f241616cc95e79e80d054a8782f97c5887b
+ms.sourcegitcommit: 3699da2cad6e6a2002083e2884e32393dacab0ca
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "34150554"
+ms.lasthandoff: 06/04/2019
+ms.locfileid: "34694734"
 ---
 # <a name="deploy-a-connector-to-archive-facebook-data-in-office-365"></a>在 Office 365 中部署用于存档 Facebook 数据的连接器
 
@@ -24,7 +24,7 @@ ms.locfileid: "34150554"
 
 ## <a name="step-1-download-the-package"></a>步骤 1: 下载程序包
 
-从位于 GitHub 存储库中的 "发布" 部分下载预建<https://github.com/Microsoft/m365-sample-connector-csharp-aspnet/releases>程序包。 在最新版本下, 下载名为**SampleConnector**的 zip 文件。 你将在步骤4中将此 zip 文件上传到 Azure。
+从位于 GitHub 存储库中的 "发布" 部分下载预<https://github.com/Microsoft/m365-sample-connector-csharp-aspnet/releases>建程序包 (网址为)。 在最新版本下, 下载名为**SampleConnector**的 zip 文件。 您在步骤4中将此 zip 文件上传到 Azure。
 
 ## <a name="step-2-create-an-app-in-azure-active-directory"></a>步骤 2: 在 Azure Active Directory 中创建应用程序
 
@@ -44,7 +44,7 @@ ms.locfileid: "34150554"
 
    ![](media/FBCimage4.png)
 
-5. 复制**应用程序 (客户端) id**和**目录 (租户) id** , 并将其保存到文本文件或其他安全位置。 您将在后续步骤中使用这些 Id。
+5. 复制**应用程序 (客户端) id**和**目录 (租户) id** , 并将其保存到文本文件或其他安全位置。 可在后续步骤中使用这些 Id。
 
    ![](media/FBCimage5.png)
 
@@ -60,11 +60,11 @@ ms.locfileid: "34150554"
 
     ![](media/FBCimage8.png)
 
-9. 复制密码的值, 并将其保存到文本文件或其他存储位置。 这是您将在后续步骤中使用的 AAD 应用程序密码。
+9. 复制密码的值, 并将其保存到文本文件或其他存储位置。 这是您在后续步骤中使用的 AAD 应用程序密码。
 
    ![](media/FBCimage9.png)
 
-10. 转到**清单**并复制 identifierUris (也称为 AAD 应用程序 Uri), 如以下屏幕截图中所示。 将 AAD 应用程序 Uri 复制到文本文件或其他存储位置。 您将在步骤6中使用它。
+10. 转到**清单**并复制 identifierUris (也称为 AAD 应用程序 Uri), 如以下屏幕截图中所示。 将 AAD 应用程序 Uri 复制到文本文件或其他存储位置。 您可以在步骤6中使用它。
 
    ![](media/FBCimage10.png)
 
@@ -102,7 +102,7 @@ ms.locfileid: "34150554"
 
     ![](media/FBCimage18.png)
 
-9. 复制**连接字符串**并将其保存到文本文件或其他存储位置。 您将在创建 web 应用资源时使用它。
+9. 复制**连接字符串**并将其保存到文本文件或其他存储位置。 可以在创建 web 应用资源时使用此。
 
     ![](media/FBCimage19.png)
 
@@ -112,17 +112,17 @@ ms.locfileid: "34150554"
 
    ![](media/FBCimage20.png)
 
-2. 填写详细信息 (如下所示), 然后创建 Web 应用程序。 请注意, 您在 "**应用程序名称**" 框中输入的名称将用于创建 Azure 应用服务 URL;例如 fbconnector.azurewebsites.net。
+2. 填写详细信息 (如下所示), 然后创建 Web 应用程序。 请注意, 您在 "**应用名称**" 框中输入的名称用于创建 Azure 应用服务 URL;例如, fbconnector.azurewebsites.net。
 
    ![](media/FBCimage21.png)
 
-3. 转到新创建的 web 应用资源, 在左侧导航窗格中单击 "**应用程序设置**"。 在 "应用程序设置" 下, 单击 "添加新设置", 然后添加以下三个设置。 使用从前面的步骤中复制到文本文件中的值: 
+3. 转到新创建的 web 应用资源, 在左侧导航窗格中单击 "**应用程序设置**"。 在 "应用程序设置" 下, 单击 "添加新设置", 然后添加以下三个设置: 使用从前面的步骤中复制到文本文件中的值: 
 
-    - **APISecretKey** –您可以键入任何值作为密码。 这将用于在步骤7中访问连接器 web 应用。
+    – **APISecretKey** –您可以键入任何值作为密码。 这用于在步骤7中访问连接器 web 应用。
 
-    - **StorageAccountConnectionString** –在步骤3中创建 Azure 存储帐户后复制的连接字符串 Uri。
+    – * * StorageAccountConnectionString —在步骤3中创建 Azure 存储帐户后复制的连接字符串 Uri。
 
-    - **tenantId** –在步骤2中创建 Azure Active Directory 中的 Facebook 连接器应用之后复制的 Office 365 组织的租户 ID。
+    – **tenantId** –在步骤2中创建 Azure Active Directory 中的 Facebook 连接器应用之后复制的 Office 365 组织的租户 ID。
 
     ![](media/FBCimage22.png)
 
@@ -132,13 +132,13 @@ ms.locfileid: "34150554"
 
 5. 最后一步是将连接器应用源代码上载到您在步骤1中下载的 Azure。 在 web 浏览器中, 转到<AzureAppResourceName>https://. scm.azurewebsites.net/ZipDeployUi。 例如, 如果您的 Azure 应用资源的名称 (在此部分中的步骤2中命名) 为**fbconnector**, 则您将转到https://fbconnector.scm.azurewebsites.net/ZipDeployUi。 
 
-6. 将 SampleConnector (您在步骤1中下载的) 拖放到此页面。 上载文件并成功部署后, 页面外观将类似于以下屏幕截图。
+6. 将 SampleConnector (您在步骤1中下载的) 拖放到此页面。 上载文件并成功部署后, 页面外观将类似于以下屏幕截图:
 
    ![](media/FBCimage24.png)
 
 ## <a name="step-5-register-the-facebook-app"></a>步骤 5: 注册 Facebook 应用程序
 
-1. 转到<https://developers.facebook.com> , 使用组织的 Facebook 商业版页面的帐户登录, 然后单击 "**添加新应用**"。
+1. 转到<https://developers.facebook.com>, 使用组织的 Facebook 商业版页面的帐户登录, 然后单击 "**添加新应用**"。
 
    ![](media/FBCimage25.png)
 
@@ -162,7 +162,7 @@ ms.locfileid: "34150554"
 
    ![](media/FBCimage30.png)
 
-7. 在 " **Facebook Login**" 下的左侧导航窗格中, 单击 "**设置**", 然后在 "**有效 OAuth 重定向 Uri** " 框中添加 OAuth 重定向 uri。使用** \<connectorserviceuri>/Views/FacebookOAuth**的格式, 其中 connectorserviceuri 的值是您的组织的 Azure 应用服务 URL;例如https://fbconnector.azurewebsites.net。
+7. 在 " **Facebook Login**" 下的左侧导航窗格中, 单击 "**设置**", 然后在 "**有效 OAuth 重定向 Uri** " 框中添加 OAuth 重定向 uri。 使用格式** \<connectorserviceuri>/views/facebookoauth**, 其中 connectorserviceuri 的值是您的组织的 Azure 应用服务 URL;例如, https://fbconnector.azurewebsites.net。
 
    ![](media/FBCimage31.png)
 
@@ -206,7 +206,7 @@ ms.locfileid: "34150554"
 
 ## <a name="step-6-configure-the-connector-web-app"></a>步骤 6: 配置连接器 web 应用程序
 
-1. 转到 https://\<AzureAppResourceName> (其中 AzureAppResourceName 是您在步骤4中命名的 Azure 应用程序资源的名称) 例如, 如果名称为**fbconnector**, 请转到https://fbconnector.azurewebsites.net。 该应用程序的主页看起来将类似下面的屏幕截图。
+1. 转到 https://\<AzureAppResourceName> azurewebsites.net (其中 AzureAppResourceName 是您在步骤4中命名的 Azure 应用程序资源的名称) 例如, 如果名称为**fbconnector**, 请转到https://fbconnector.azurewebsites.net。 该应用程序的主页看起来将类似于以下屏幕截图:
 
 
    ![](media/FBCimage41.png)
@@ -222,17 +222,17 @@ ms.locfileid: "34150554"
 
 4. 在 "**配置详细信息**" 下, 输入以下配置设置 
 
-   - **Facebook 应用程序 id** -您在步骤5中获取的 facebook 应用程序的应用程序 id。
-   - **Facebook 应用程序密码**-您在步骤5中获取的 facebook 应用程序的应用程序密码。
-   - **Facebook webhook verify token** -您在步骤5中创建的验证令牌。
-   - **AAD 应用程序 id** -您在步骤2中创建的 Azure Active Directory 应用程序的应用程序 id。
-   - **AAD 应用程序密码**-您在步骤4中创建的 APISecretKey 密码的值。
-   - **AAD 应用程序 uri** -在步骤2中获取的 aad 应用程序 uri;例如, https://microsoft.onmicrosoft.com/2688yu6n-12q3-23we-e3ee-121111123213。
-   - **App insights 检测键**-将此框保留为空。
+   – **Facebook 应用程序 id** –您在步骤5中获取的 facebook 应用程序的应用程序 id。
+   – **Facebook 应用程序机密**–您在步骤5中获取的 facebook 应用程序的应用程序密码。
+   – **Facebook webhook verify token** –您在步骤5中创建的验证令牌。
+   – **AAD 应用程序 id** –您在步骤2中创建的 Azure Active Directory 应用程序的应用程序 id。
+   – **AAD 应用程序机密**–您在步骤4中创建的 APISecretKey 密码的值。
+   – **Aad 应用程序 uri** –在步骤2中获取的 aad 应用程序 uri;例如, https://microsoft.onmicrosoft.com/2688yu6n-12q3-23we-e3ee-121111123213。
+   – **App insights 检测键**–将此框保留为空。
 
 5. 单击 "**保存**" 以保存连接器设置。
 
-## <a name="step-7-set-up-a-custom-connector-in-the-security--compliance-center"></a>步骤 7: 在安全 & 合规中心中设置自定义连接器
+## <a name="step-7-set-up-a-custom-connector-in-the-security--compliance-center"></a>步骤 7: 在安全 & 合规性中心中设置自定义连接器
 
 1. 转到<https://protection.office.com> , 然后单击 "**数据\>调控\>导入存档第三方数据**"。
 
@@ -244,9 +244,9 @@ ms.locfileid: "34150554"
 
 3.  在 "**添加连接器应用程序**" 页上, 输入以下信息, 然后单击 "**验证连接器**"。
 
-    - 在第一个框中, 键入连接器的名称, 例如**Facebook**。
-    - 在第二个框中, 键入或粘贴您在步骤4中添加的 APISecretKey 的值。
-    - 在第三个框中, 键入或粘贴 Azure 应用服务 URL;例如**https://fbconnector.azurewebsites.net**。
+    –在第一个框中, 键入连接器的名称, 例如**Facebook**。
+    –在第二个框中, 键入或粘贴您在步骤4中添加的 APISecretKey 的值。
+    –在第三个框中, 键入或粘贴 Azure 应用服务 URL;例如**https://fbconnector.azurewebsites.net**。
  
     成功验证连接器后, 单击 "**下一步**"。
     
@@ -277,7 +277,7 @@ ms.locfileid: "34150554"
 
     ![](media/FBCimage52.png)
 
-10. 单击 "**完成**" 退出连接器服务应用程序的安装。
+10. 单击 "**准备**" 以退出连接器服务应用程序的设置。
 
     ![](media/FBCimage53.png)
 
@@ -289,7 +289,7 @@ ms.locfileid: "34150554"
 
     ![](media/FBCimage55.png)
 
-13. 查看您的设置, 然后单击 "**完成**" 以完成 Security _AMP_ 合规性中心中的连接器设置。
+13. 查看您的设置, 然后单击 "**完成**" 以完成安全性 & 合规性中心中的连接器设置。
 
     ![](media/FBCimage56.png)
 

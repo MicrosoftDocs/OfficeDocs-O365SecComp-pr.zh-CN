@@ -17,16 +17,16 @@ search.appverid:
 - MET150
 ms.assetid: c4639c2e-7223-4302-8e0d-b6e10f1c3be3
 description: '了解可以使用安全 & 合规中心中的内容搜索工具在 Exchange Online 邮箱和 SharePoint 或 OneDrive for Business 网站中搜索的电子邮件和文件属性。  '
-ms.openlocfilehash: 01cc40f983ddae6db090f531bc33fc5cc7a638ed
-ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
+ms.openlocfilehash: 2d9cc41b4e0f8139db385a9614d3022230cda50d
+ms.sourcegitcommit: f96029928a6cdd141783026d57bc2179d7963af6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "34152494"
+ms.lasthandoff: 06/17/2019
+ms.locfileid: "35017644"
 ---
 # <a name="keyword-queries-and-search-conditions-for-content-search"></a>内容搜索的关键字查询和搜索条件
 
-本主题介绍了在 Exchange Online 中的电子邮件项目和存储在 SharePoint 和 OneDrive for business 网站上的电子邮件项目中, 可以使用安全 & 合规中心中的内容搜索功能搜索的电子邮件和文档属性。 您还可以在 Security & 合规中心 PowerShell 中使用** \*-new-compliancesearch** cmdlet 搜索这些属性。 本主题还介绍了以下内容:   
+本主题介绍了在 Exchange Online 中的电子邮件项目和存储在 SharePoint 和 OneDrive for business 网站上的电子邮件项目中, 可以使用安全 & 合规中心中的内容搜索功能搜索的电子邮件和文档属性。 您还可以在 Security & 合规性中心 PowerShell 中使用** \*-new-compliancesearch** cmdlet 搜索这些属性。 本主题还介绍了以下内容:   
   
 - 使用布尔搜索运算符、搜索条件和其他搜索查询技术来优化搜索结果。
     
@@ -38,11 +38,14 @@ ms.locfileid: "34152494"
 
   
 > [!NOTE]
-> Security & 合规性中心中的内容搜索和安全 & 合规性中心 PowerShell 中的相应** \*new-compliancesearch** cmdlet 使用关键字查询语言 (KQL)。 有关更多详细信息, 请参阅[关键字查询语言语法参考](https://go.microsoft.com/fwlink/?LinkId=269603)。 
+> Security & 合规性中心中的内容搜索和安全 & 合规中心 PowerShell 中的相应** \*new-compliancesearch** cmdlet 使用关键字查询语言 (KQL)。 有关更多详细信息, 请参阅[关键字查询语言语法参考](https://go.microsoft.com/fwlink/?LinkId=269603)。 
   
 ## <a name="searchable-email-properties"></a>可搜索的电子邮件属性
 
-下表列出了可以使用安全 & 合规性中心中的内容搜索功能或通过使用**new-compliancesearch**或**new-compliancesearch** cmdlet 搜索的电子邮件属性。 该表包括属性的一个示例: 每个属性的_值_语法和示例返回的搜索结果的说明。 您可以在 " `property:value`关键字" 框中为内容搜索键入这些对。 
+下表列出了可使用安全性 & 合规性中心中的内容搜索功能或通过使用**new-compliancesearch**或**new-compliancesearch** cmdlet 搜索的电子邮件属性。 该表包括属性的一个示例: 每个属性的_值_语法和示例返回的搜索结果的说明。 您可以在 " `property:value`关键字" 框中为内容搜索键入这些对。 
+
+> [!NOTE]
+> 搜索电子邮件属性时, 不能搜索指定属性为空或为空的项目。 例如, 使用 "*属性: 值*对的值对"**主题: ""** 搜索具有空主题行的电子邮件将返回零个结果。 这也适用于搜索网站和联系人属性。
   
 |**属性**|**属性描述**|**示例**|**示例返回的搜索结果**|
 |:-----|:-----|:-----|:-----|
@@ -62,15 +65,16 @@ ms.locfileid: "34152494"
 |收件人|电子邮件中的所有收件人字段；这些字段分别为：收件人、抄送和密件抄送。<sup>1</sup>|`recipients:garthf@contoso.com`  <br/> `recipients:contoso.com`|发送到 garthf@contoso.com 的邮件。第二个示例返回发送至 contoso.com 域中任何收件人的邮件。|
 |Sent|发件人发送电子邮件的日期。|`sent:07/01/2016`  <br/> `sent>=06/01/2016 AND sent<=07/01/2016`|在指定日期或指定日期范围内发送的邮件。|
 |Size|邮件的大小（以字节为单位）。|`size>26214400`  <br/> `size:1..1048567`|大于25的邮件？？10mb. 第二个示例返回大小介于 1 到 1,048,567 (1 MB) 字节之间的邮件。|
-|Subject|电子邮件主题行中的文本。  <br/> **注意:** 在查询中使用 Subject 属性时, ???the 搜索将返回 "主题" 行中包含您要搜索的文本的所有邮件。 换言之, 查询不会仅返回那些具有完全匹配的邮件。 例如, 如果您搜索`subject:"Quarterly Financials"`, 则结果将包含主题为 "季度财务 2018" 的邮件。|`subject:"Quarterly Financials"`  <br/> `subject:northwind`|在主题行文本中的任意位置包含短语 "季度财务" 的邮件。 第二个示例返回主题行中包含单词"northwind"的所有邮件。|
+|Subject|电子邮件主题行中的文本。  <br/> **注意:** 在查询中使用 Subject 属性时, 请???搜索将返回主题行中包含您要搜索的文本的所有邮件。 换言之, 查询不会仅返回那些具有完全匹配的邮件。 例如, 如果您搜索`subject:"Quarterly Financials"`, 则结果将包含主题为 "季度财务 2018" 的邮件。|`subject:"Quarterly Financials"`  <br/> `subject:northwind`|在主题行文本中的任意位置包含短语 "季度财务" 的邮件。 第二个示例返回主题行中包含单词"northwind"的所有邮件。|
 |收件人|电子邮件的"收件人"字段。<sup>1</sup>|`to:annb@contoso.com`  <br/> `to:annb ` <br/> `to:"Ann Beebe"`|所有示例返回在"收件人:"行中指定为 Ann Beebe 的邮件。|
+|||||
    
 > [!NOTE]
 > <sup>1</sup>对于收件人属性的值, 可以使用电子邮件地址 (也称为 "*用户主体名称*" 或 "UPN")、"显示名称" 或 "别名" 来指定用户。 例如，你可以使用 annb@contoso.com、annb 或"Ann Beebe"指定用户 Ann Beebe。<br/><br/>在搜索任何收件人属性 (发件人、收件人、抄送、密件抄送、参与者和收件人) 时, Office 365 将尝试通过在 Azure Active Directory 中进行查找来扩展每个用户的标识。  如果用户在 Azure Active Directory 中找到, 则查询将扩展, 以包含用户的电子邮件地址 (或 UPN)、别名、显示名称和 LegacyExchangeDN。<br/><br/>例如, `participants:ronnie@contoso.com`扩展到`participants:ronnie@contoso.com OR participants:ronnie OR participants:"Ronald Nelson" OR participants:"<LegacyExchangeDN>"`的查询。
 
 ## <a name="searchable-site-properties"></a>可搜索网站属性
 
-下表列出了一些 SharePoint 和 OneDrive for business 属性, 可以通过使用 Security & 合规性中心中的内容搜索功能或通过使用**new-compliancesearch**或 new-compliancesearch 来搜索这些属性。 **** cmdlet。 该表包括属性的一个示例: 每个属性的_值_语法和示例返回的搜索结果的说明。 
+下表列出了一些 SharePoint 和 OneDrive for business 属性, 可以使用安全性 & 合规性中心中的内容搜索功能或使用**new-compliancesearch**或 new-compliancesearch 来搜索这些属性。 **** cmdlet。 该表包括属性的一个示例: 每个属性的_值_语法和示例返回的搜索结果的说明。 
   
 有关可搜索的 SharePoint 属性的完整列表, 请参阅[sharepoint 中的已爬网和托管属性概述](https://go.microsoft.com/fwlink/p/?LinkId=331599)。 可以在可**查询**的列中搜索 **"是" 标记为 "是"** 的属性。 
   
@@ -91,6 +95,7 @@ ms.locfileid: "34152494"
 |Site|组织中站点或站点组的 URL。|`site:"https://contoso-my.sharepoint.com"`  <br/> `site:"https://contoso.sharepoint.com/sites/teams"`|第一个示例返回组织中所有用户的 OneDrive for Business 网站中的项目。 第二个示例返回所有团队网站中的项目。|
 |Size|邮件的大小（以字节为单位）。|`size>=1`  <br/> `size:1..10000`|第一个示例返回大于 1 字节的项目。第二个示例返回大小介于 1 到 10,000 字节之间的项目。|
 |标题|文档的标题。 Title 属性是在 Microsoft Office 文档中指定的元数据。 它不同于文档的文件名。|`title:"communication plan"`|Office 文档的 Title 元数据属性中包含短语“communication plan”的任何文档。|
+|||||
    
 ## <a name="searchable-contact-properties"></a>可搜索联系人属性
 
@@ -119,7 +124,7 @@ ms.locfileid: "34152494"
 |OtherAddress|**其他**地址属性的值。|
 |姓氏|" **Last** name" 属性中的名称。|
 |标题|"职务" 属性**** 中的标题。|
-   
+|||||
 
 ## <a name="searchable-sensitive-data-types"></a>可搜索敏感数据类型
 
@@ -144,9 +149,9 @@ ms.locfileid: "34152494"
 |NOT|keyword1 NOT keyword2  <br/> NOT from:"Ann Beebe"  <br/> 不是种类: im|排除由关键字或`property:value`表达式指定的项目。 在第二个示例中, 排除王小姐 Beebe 发送的邮件。 第三个示例排除了所有即时消息对话, 例如保存到对话历史记录邮箱文件夹中的 Skype for Business 对话。 <sup>双面</sup>|
 |-|keyword1 -keyword2|与 **NOT** 运算符作用相同。 因此, 此查询将返回包含`keyword1`和将排除包含`keyword2`的项的项。|
 |NEAR|keyword1 NEAR(n) keyword2|返回包含邻近字词的项目，其中 n 表示间隔的字词数量。 例如, `best NEAR(5) worst`返回任何一个 "最差" 为 "最佳" 的五个字中的项。 如果您没有指定数目，则默认距离是 8 个字词。 <sup>双面</sup>|
-|ONEAR|keyword1 ONEAR(n) keyword2|类似于**near**, 但以指定的顺序返回彼此相邻的单词的项。 例如, `best ONEAR(5) worst`返回在单词 "最差" 之前出现 "最佳" 的任何项目, 并且两个单词在彼此之间的五个单词之间。 如果您没有指定数目，则默认距离是 8 个字词。 <sup>双面</sup> <br/> > [!NOTE]> 搜索邮箱时不支持**ONEAR**运算符;它仅在搜索 SharePoint 和 OneDrive for Business 网站时有效。 如果要在同一搜索中搜索邮箱和网站, 并且查询包含**ONEAR**运算符, 则搜索将返回邮箱项目, 就像您使用的是**NEAR**运算符一样。 换言之, 搜索返回的项目, 其中指定的单词彼此接近, 而不考虑单词出现的顺序。|
+|ONEAR|keyword1 ONEAR(n) keyword2|类似于**near**, 但以指定的顺序返回彼此相邻的单词的项。 例如, `best ONEAR(5) worst`返回在单词 "最差" 之前出现 "最佳" 的任何项目, 并且两个单词在彼此之间的五个单词之间。 如果您没有指定数目，则默认距离是 8 个字词。 <sup>双面</sup> <br/> > [!NOTE]> 在搜索邮箱时不支持**ONEAR**运算符;它仅在搜索 SharePoint 和 OneDrive for Business 网站时有效。 如果要在同一搜索中搜索邮箱和网站, 并且查询包含**ONEAR**运算符, 则搜索将返回邮箱项目, 就像您使用的是**NEAR**运算符一样。 换言之, 搜索返回的项目, 其中指定的单词彼此接近, 而不考虑单词出现的顺序。|
 |:|property:value|冒号 (:)在语法`property:value`中, 指定要搜索的属性的值包含指定的值。 例如，  `recipients:garthf@contoso.com` 返回发送至 garthf@contoso.com 的所有邮件。|
-|=|属性 = 值|与 **:** 运算符相同。|
+|=|property=value|与 **:** 运算符相同。|
 |\<|property\<value|表示正在搜索的属性小于指定的值。<sup>1</sup>|
 |\>|property\>value|表示正在搜索的属性大于指定的值。<sup>1</sup>|
 |\<=|property\<=value|表示正在搜索的属性小于等于指定的值。<sup>1</sup>|
@@ -155,6 +160,7 @@ ms.locfileid: "34152494"
 |"  "|"fair value"  <br/> subject:"Quarterly Financials"|使用双引号 ("") 搜索关键字和`property:value`搜索查询中的确切短语或字词。|
 |\*|cat\*  <br/> subject:set\*|前缀通配符（其中星号放在单词的末尾）用于在关键字或  `property:value` 查询中搜索零个或多个匹配字符。 例如, `title:set*`返回文档标题中包含 word set、setup 和 setting (以及以 "set" 开头的其他单词) 的文档。  <br/><br/> **注意:** 只能使用前缀通配符搜索;例如, **cat\* **或**set\***。 后缀搜索 ( ** \*cat** )、中缀搜索 **(\*c t** ) 和子字符串搜索** \*(\* cat** ) 不受支持。|
 |(  )| (fair OR free) AND (from:contoso.com)  <br/> (IPO OR initial) AND (stock OR shares)  <br/> (quarterly financials)|括号将布尔短语、 `property:value` 项目和关键字结合到一起。例如，  `(quarterly financials)` 返回包含单词"quarterly"和"financials"的项目。  |
+|||||
    
 > [!NOTE]
 > <sup>1</sup> 为含有日期或数值的属性使用此运算符。<br/> <sup>2</sup> 布尔搜索运算符必须为大写形式；例如， **AND** 。 如果使用小写运算符 (例如**和**), 它将被视为搜索查询中的关键字。 
@@ -186,6 +192,7 @@ ms.locfileid: "34152494"
 |大小 (以字节为单位)|对于电子邮件和文档而言，是项目的大小（以字节为单位）。|
 |主题/职务|对电子邮件而言，是指邮件的主题行中的文本。 对于文档而言，是指文档的标题。 如上文所述, Title 属性是在 Microsoft Office 文档中指定的元数据。 您可以键入多个主题/标题的名称, 以逗号分隔。 通过 **OR** 运算符在逻辑上连接两个或多个值。|
 |合规性标记|对于电子邮件和文档, 已由用户手动分配的标签策略或标签自动分配给邮件和文档的标签。 标签用于根据标签定义的分类对电子邮件和文档进行分类, 并强制执行保留规则。 您可以键入部分标签名称并使用通配符或键入完整的标签名称。 有关详细信息, 请参阅[Office 365 中的标签概述](labels.md)。|
+|||
   
 ### <a name="conditions-for-mail-properties"></a>邮件属性的条件
 
@@ -202,6 +209,7 @@ ms.locfileid: "34152494"
 |Sent|发件人发送电子邮件的日期。 此属性与“Sent”电子邮件属性相同。|
 |Subject|电子邮件主题行中的文本。|
 |To|电子邮件的收件人。|
+|||
   
 ### <a name="conditions-for-document-properties"></a>文档属性的条件
 
@@ -214,6 +222,7 @@ ms.locfileid: "34152494"
 |Created|创建文档的日期。|
 |上次修改时间|上次修改文档的日期。|
 |文件类型|文件的扩展名;例如, .docx、one、.pptx 或 .xlsx。 此属性与 FileExtension 网站属性相同。|
+|||
   
 ### <a name="operators-used-with-conditions"></a>与条件一起使用的运算符
 
@@ -234,6 +243,7 @@ ms.locfileid: "34152494"
 |小于|`size<value`|返回大于或等于特定值的项。<sup>1</sup>|
 |小于或等于|`size<=value`|返回大于或等于特定值的项。<sup>1</sup>|
 |不等于|`size<>value`|返回不等于指定大小的项。<sup>1</sup>|
+|||
    
 > [!NOTE]
 > <sup>1</sup>此运算符仅适用于使用 Size 属性的条件。 
@@ -320,7 +330,7 @@ ms.locfileid: "34152494"
   
 ## <a name="searching-for-site-content-shared-with-external-users"></a>搜索与外部用户共享的网站内容
 
-您还可以使用安全 & 合规中心中的内容搜索功能来搜索存储在 SharePoint 和 OneDrive for business 网站上的文档, 这些文档已与组织外部的人员共享。 这可以帮助你识别与组织外部人员共享的敏感信息或专有信息。 可以通过在关键字查询中使用`ViewableByExternalUsers`属性来执行此操作。 此属性将返回使用以下共享方法之一与外部用户共享的文档或网站: 
+您还可以使用安全 & 合规中心中的内容搜索功能搜索存储在 SharePoint 和 OneDrive for business 网站上的文档, 这些文档已与组织外部的人员共享。 这可以帮助你识别与组织外部人员共享的敏感信息或专有信息。 可以通过在关键字查询中使用`ViewableByExternalUsers`属性来执行此操作。 此属性将返回使用以下共享方法之一与外部用户共享的文档或网站: 
   
 - 要求用户以经过身份验证的用户身份登录组织的共享邀请。
     

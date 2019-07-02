@@ -15,12 +15,12 @@ ms.collection:
 - M365-security-compliance
 ms.assetid: f87cb016-7876-4317-ae3c-9169b311ff8a
 description: 使用 Office 365 邮件加密, 组织可以在组织内部和外部的人员之间发送和接收加密的电子邮件。 电子邮件加密有助于确保只有预期的收件人可以查看邮件内容。
-ms.openlocfilehash: d9716d3021f4190f1679a5d387e9378b60586154
-ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
+ms.openlocfilehash: f6f6f59225d267d08ba20e1fdea219dc5d890ed5
+ms.sourcegitcommit: b9d8a43cb3afcdc8820bc9470c5707eff8fc6616
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "34157584"
+ms.lasthandoff: 06/11/2019
+ms.locfileid: "34852856"
 ---
 # <a name="office-365-message-encryption"></a>Office 365 邮件加密
 
@@ -58,7 +58,7 @@ Office 365 高级邮件加密功能使您可以创建多个品牌打造模板, �
 
 Office 365 中的高级邮件加密帮助您满足合规性义务, 这些要求需要更灵活地控制外部收件人对加密电子邮件的访问。 使用 Office 365 中的高级邮件加密作为管理员, 您可以控制在组织外共享的敏感电子邮件以及检测敏感信息类型 (如 PII、财务或运行状况 Id) 的自动策略, 或要增强的关键字通过将安全 web 门户访问加密电子邮件来实现保护。 此外, 作为管理员, 您可以通过 Office 365 web 门户来进一步控制在外部访问的加密电子邮件, 方法是随时撤销对电子邮件的访问权限。
 
-邮件吊销和过期仅适用于您的用户向您的 Office 365 组织之外的收件人发送的电子邮件。 此外, 收件人必须通过 web 门户访问电子邮件。 为了确保收件人使用门户接收电子邮件, 您设置了一个应用包装的自定义品牌模板。 然后, 在邮件流规则中应用品牌模板。 有关高级邮件加密的详细信息, 请参阅[Office 365 高级邮件加密](https://ome-advanced-message-encryption.md)。
+邮件吊销和过期仅适用于您的用户向您的 Office 365 组织之外的收件人发送的电子邮件。 此外, 收件人必须通过 web 门户访问电子邮件。 为了确保收件人使用门户接收电子邮件, 您设置了一个应用包装的自定义品牌模板。 然后, 在邮件流规则中应用品牌模板。 有关高级邮件加密的详细信息, 请参阅[Office 365 高级邮件加密](ome-advanced-message-encryption.md)。
 
 ## <a name="defining-rules-for-office-365-message-encryption"></a>定义 Office 365 邮件加密的规则
 
@@ -84,7 +84,7 @@ Office 365 组织中的加密邮件收件人将能够在任何版本的 Outlook 
 |:-----|:-----|
 |阅读本文 .。。  <br/> |如果您是 .。。  <br/> |
 |[了解 Office 365 中的受保护邮件](https://support.office.com/article/2baf3ac7-12db-40a4-8af7-1852204b4b67.aspx) <br/> |想要详细了解加密邮件的工作方式以及可供您使用的选项的最终用户。  <br/> |
-|[如何打开受保护的邮件？](https://support.office.com/article/1157a286-8ecc-4b1e-ac43-2a608fbf3098.aspx) <br/> |要读取已发送给您的受保护邮件的最终用户。 本文包含有关在 Outlook 的多个版本以及来自不同的电子邮件帐户 (包括与 gmail 和 yahoo! 等外部的电子邮件帐户) 中读取邮件365的信息。 账号.  <br/> |
+|[如何打开受保护的邮件？](https://support.office.com/article/1157a286-8ecc-4b1e-ac43-2a608fbf3098.aspx) <br/> |要读取已发送给您的受保护邮件的最终用户。 本文包含有关在 Outlook 的多个版本以及来自不同的电子邮件帐户 (包括与 gmail 和 Yahoo! 等外部的电子邮件帐户) 中读取邮件365的信息。 账号.  <br/> |
 |[在 Outlook 中发送、查看和回复加密邮件](https://support.office.com/article/eaa43495-9bbb-4fca-922a-df90dee51980.aspx) <br/> |要从 Outlook 发送、查看或回复加密邮件的最终用户。 即使您不是 Office 365 组织的成员, 仍会收到在 Outlook 中发送给您的加密邮件的通知。 使用此文章可获取有关如何查看和回复从 Office 365 发送的加密邮件的说明。  <br/> |
 |[发送经过数字签名或加密的邮件](https://support.office.com/article/a18ecf7f-a7ac-4edd-b02e-687b05eff547) <br/> |希望使用 Outlook for Mac 发送、查看或回复加密邮件的最终用户。 本文还介绍了如何使用 OME 以外的加密方法, 如 S/MIME。  <br/> |
 |[在 Android 设备上查看加密邮件](https://support.office.com/article/83d60f17-2305-407a-a762-7d518401fdeb) <br/> |已收到使用 Office 365 邮件加密在 Android 设备上加密的邮件的最终用户, 可以使用免费的 OME 查看器应用程序查看邮件并发送加密答复。 本文介绍如何操作。  <br/> |

@@ -3,7 +3,7 @@ title: 发送电子邮件通知并显示 DLP 策略的策略提示
 ms.author: deniseb
 author: denisebmsft
 manager: laurawi
-ms.date: 3/21/2018
+ms.date: 06/14/2019
 audience: Admin
 ms.topic: article
 f1_keywords:
@@ -16,12 +16,12 @@ search.appverid:
 - MOE150
 - MET150
 description: '策略提示是当有人使用与 DLP 策略冲突的内容时显示的通知或警告。 您可以使用电子邮件通知和策略提示来提高知名度并帮助人们了解组织的策略。 您还可以为用户提供替代策略的选项, 以便它们不会被阻止, 如果他们具有有效的业务需求, 或者如果策略检测到误报也是如此。 '
-ms.openlocfilehash: 487d3704b471b10ec876b0df3022d33d13583763
-ms.sourcegitcommit: 0d5a863f48914eeaaf29f7d2a2022618de186247
+ms.openlocfilehash: 4de22c8ad8a45cf1489e72516d30f078889774e3
+ms.sourcegitcommit: 9df5bf99c1860ace0c5cc90647733d075be412ad
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34077358"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34948900"
 ---
 # <a name="send-email-notifications-and-show-policy-tips-for-dlp-policies"></a>发送电子邮件通知并显示 DLP 策略的策略提示
 
@@ -41,9 +41,9 @@ ms.locfileid: "34077358"
     
   - 对于 web 上的 Outlook 和 Outlook 2013 及更高版本中的电子邮件, 策略提示将显示在撰写邮件的收件人上方的邮件的顶部。
     
-  - 对于 OneDrive for business 帐户或 SharePoint Online 网站中的文档, 策略提示由显示在项目上的警告图标指示。 若要查看详细信息, 可以选择一个项目, 然后在****![页面的右上角](media/50b6d51b-92b4-4c5f-bb4b-4ca2d4aa3d04.png)选择 "信息信息窗格" 图标以打开 "详细信息" 窗格。 
+  - 对于 OneDrive for business 帐户或 SharePoint Online 网站中的文档, 策略提示由显示在项目上的警告图标指示。 若要查看详细信息, 可以选择一个项目, 然后在**** ![页面的右上角](media/50b6d51b-92b4-4c5f-bb4b-4ca2d4aa3d04.png)选择 "信息信息窗格" 图标以打开 "详细信息" 窗格。 
     
-  - 对于存储在 DLP 策略中包含的 OneDrive for business 网站或 SharePoint Online 网站上的 Excel 2016、PowerPoint 2016 和 Word 2016 文档, 策略提示将显示在消息栏和 Backstage 视图 ("**文件**" 菜单\> **信息**)。
+  - 对于存储在 DLP 策略中包含的 OneDrive for business 网站或 SharePoint Online 网站上的 Excel、PowerPoint 和 Word 文档, 策略提示将显示在消息栏和 Backstage 视图 ("**文件**" 菜单\> **信息**) 上。
     
 ## <a name="add-user-notifications-to-a-dlp-policy"></a>向 DLP 策略添加用户通知
 
@@ -80,6 +80,9 @@ ms.locfileid: "34077358"
 9. 在规则编辑器中的 "**用户通知**" 下, 切换状态 "开启"。
     
     ![规则编辑器的用户通知部分](media/47705927-c60b-4054-a072-ab914f33d15d.png)
+
+> [!NOTE]
+> DLP 策略适用于与策略匹配的所有文档, 无论这些文档是新的还是现有的。 但是, 仅当新内容与现有 DLP 策略相匹配时, 才会生成电子邮件通知。 现有内容受到保护, 但不会通过电子邮件生成用户通知。
   
 ## <a name="options-for-configuring-email-notifications"></a>用于配置电子邮件通知的选项
 
@@ -90,7 +93,7 @@ ms.locfileid: "34077358"
 - 使用 HTML 或标记自定义通知中包含的文本。 有关详细信息, 请参阅下面的部分。
     
 > [!NOTE]
->  电子邮件通知只能发送给各个收件人, 而不是组或通讯组列表。 只有新内容才会触发电子邮件通知。 编辑现有内容将触发策略提示，但不会触发电子邮件通知。 
+>  电子邮件通知只能发送给各个收件人, 而不是组或通讯组列表。 只有新内容才会触发电子邮件通知。 编辑现有内容将触发策略提示, 但不会触发电子邮件通知。 
   
 ![电子邮件通知选项](media/4e7b9500-2a78-44e6-9067-09f4bfd50301.png)
   
@@ -162,7 +165,7 @@ ms.locfileid: "34077358"
     
 ![OneDrive 帐户中文档上的策略提示图标](media/d3e9f772-03f9-4d28-82f8-3064784332a2.png)
   
-若要对文档执行操作, 您可以选择一个项目\> 。在页面的右上](media/50b6d51b-92b4-4c5f-bb4b-4ca2d4aa3d04.png)角选择 "**信息**![信息" 窗格图标, 以打开 "详细信息\> " 窗格**视图策略提示**。
+若要对文档执行操作, 您可以选择一个项目\> 。在页面的右上](media/50b6d51b-92b4-4c5f-bb4b-4ca2d4aa3d04.png)角选择 "**信息** ![信息" 窗格图标, 以打开 "详细信息\> " 窗格**视图策略提示**。
   
 策略提示会列出问题及其内容，如果对策略提示配置了这些选项，则您可以选择“解决”****，然后选择“替换”**** 策略提示或“报告”**** 误报。 
   
@@ -241,15 +244,15 @@ ms.locfileid: "34077358"
 |阻止访问，发送通知，并允许重写  <br/> |您的电子邮件与组织中的策略相冲突。  <br/> |
 |阻止访问，并向发送通知  <br/> |您的电子邮件与组织中的策略相冲突。  <br/> |
    
-## <a name="policy-tips-in-excel-2016-powerpoint-2016-and-word-2016"></a>Excel 2016、PowerPoint 2016 和 Word 2016 中的策略提示
+## <a name="policy-tips-in-excel-powerpoint-and-word"></a>Excel、PowerPoint 和 Word 中的策略提示
 
-当用户在桌面版本的 Excel 2016、PowerPoint 2016 和 Word 2016 中使用敏感内容时，策略提示可以实时通知用户，告知内容与 DLP 策略之间发生冲突。这要求：
+当用户在 Excel、PowerPoint 和 Word 的桌面版本中处理敏感内容时, 策略提示可以实时通知这些内容与 DLP 策略冲突。 这要求：
   
 - Office 文档存储在 OneDrive for Business 网站或 SharePoint Online 网站上。
     
 - 该网站包含在配置为使用策略提示的 DLP 策略中。
     
-这些 Office 2016 桌面程序将自动从 Office 365 中直接同步 DLP 策略, 然后扫描您的文档以确保它们不会与您的 DLP 策略冲突并实时显示策略提示。
+Office 桌面程序将自动从 Office 365 中直接同步 DLP 策略, 然后扫描文档以确保它们不会与您的 DLP 策略冲突并实时显示策略提示。
   
 根据您在 DLP 策略中对策略提示的配置方式，用户可以选择忽略策略提示、使用或不使用业务理由替换策略或报告误报。
   
@@ -265,7 +268,7 @@ ms.locfileid: "34077358"
   
 ![Excel 2016 Backstage 中的策略提示选项](media/5b3857ba-907e-456e-ae43-888b594c049c.png)
   
-在每一个这些 Office 2016 桌面程序中，用户可以选择关闭策略提示。如果已关闭，则只是简单通知的策略提示将不会显示在消息栏或 Backstage 视图（“文件”**** 选项卡上）上。但是，仍会显示有关阻止和替换的策略提示，并且仍将收到电子邮件通知。此外，关闭策略提示并不会将文档从任何已对其应用的 DLP 策略中予以免除。 
+在每个 Office 桌面程序中, 用户都可以选择关闭策略提示。 如果已关闭，则只是简单通知的策略提示将不会显示在消息栏或 Backstage 视图（“文件”**** 选项卡上）上。 但是，仍会显示有关阻止和替换的策略提示，并且仍将收到电子邮件通知。 此外，关闭策略提示并不会将文档从任何已对其应用的 DLP 策略中予以免除。 
   
 ### <a name="default-text-for-policy-tips-in-excel-2016-powerpoint-2016-and-word-2016"></a>Excel 2016、PowerPoint 2016 和 Word 2016 中的策略提示的默认文本
 
@@ -277,7 +280,7 @@ ms.locfileid: "34077358"
 |阻止访问，发送通知，并允许重写  <br/> |此文件与您的组织中的策略相冲突。 如果不解决此冲突, 则可能会阻止对此文件的访问。 有关详细信息, 请转到 "**文件**" 菜单。  <br/> |
 |阻止访问，并向发送通知  <br/> |此文件与您的组织中的策略相冲突。 如果不解决此冲突, 则可能会阻止对此文件的访问。 有关详细信息, 请转到 "**文件**" 菜单。  <br/> |
    
-### <a name="custom-text-for-policy-tips-in-excel-2016-powerpoint-2016-and-word-2016"></a>Excel 2016、PowerPoint 2016 和 Word 2016 中的策略提示的自定义文本
+### <a name="custom-text-for-policy-tips-in-excel-powerpoint-and-word"></a>Excel、PowerPoint 和 Word 中的策略提示的自定义文本
 
 您可以独立于电子邮件通知自定义策略提示的文本。 与电子邮件通知的自定义文本不同 (请参阅上文) 时, 策略提示的自定义文本不接受 HTML 或标记。 相反, 策略提示的自定义文本是纯文本, 只有256个字符的限制。
   

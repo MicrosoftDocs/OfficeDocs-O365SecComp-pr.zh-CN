@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: 781b0b749390b36ecdf391bff1089d6180e7c3d2
-ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
+ms.openlocfilehash: a5c1c578f8d45cf7b95629e8053911d93b5b8583
+ms.sourcegitcommit: 6bb40cf53374eaaae8da0a469f0248b1163184a4
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "34150664"
+ms.lasthandoff: 06/07/2019
+ms.locfileid: "34767333"
 ---
 # <a name="review-the-data-in-evidence"></a>查看证据中的数据
 
@@ -50,7 +50,7 @@ ms.locfileid: "34150664"
 
 ## <a name="native-view"></a>本机视图
 
-本机查看器以文档的本机格式显示最准确的文档视图。 数以百计的文件类型支持本机视图, 这是为了在可能的 truest 本机体验中显示文档。 对于 Microsoft Office 文件, 本机查看器使用 Office Online。 这使您可以在 Excel 中查看不同的 Office 文档、公式和隐藏的行/列中的注释, 以及 PowerPoint 中的备注视图等内容。
+本机查看器以文档的本机格式显示最准确的文档视图。 数以百计的文件类型支持本机视图, 这是为了在可能的 truest 本机体验中显示文档。 对于 Microsoft Office 文件, 本机查看器使用 Office 应用程序的 web 版本。 这使您可以在 Excel 中查看不同的 Office 文档、公式和隐藏的行/列中的注释, 以及 PowerPoint 中的备注视图等内容。
 
 ![本机视图
 ](../media/Reviewimage3.png)

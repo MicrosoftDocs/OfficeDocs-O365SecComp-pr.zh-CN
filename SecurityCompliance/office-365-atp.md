@@ -15,17 +15,17 @@ ms.assetid: e100fe7c-f2a1-4b7d-9e08-622330b83653
 ms.collection:
 - M365-security-compliance
 description: Office 365 高级威胁防护包括安全附件、安全链接、高级反钓鱼工具、报告工具和威胁智能功能。
-ms.openlocfilehash: 903e089af172d8eac414aea69af75fcd696d5f20
-ms.sourcegitcommit: 2b46fba650df8d252b1dd2b3c3f080a383183a06
+ms.openlocfilehash: ca70aeadb8fdde76fa5d7041fe1f0cf624496c24
+ms.sourcegitcommit: 4fedeb06a6e7796096fc6279cfb091c7b89d484d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "34408377"
+ms.lasthandoff: 05/31/2019
+ms.locfileid: "34652655"
 ---
 # <a name="office-365-advanced-threat-protection"></a>Office 365 高级威胁防护
 
 > [!IMPORTANT]
-> 本文适用于 Office 365 企业版和 Microsoft 365 企业客户。 如果您使用的是 Outlook.com、Office 365 家庭版或 Office 365 个人版, 并且您正在查找有关 Outlook 中的安全链接的信息, 请参阅[Advanced Outlook.com security](https://support.office.com/article/advanced-outlook-com-security-for-office-365-subscribers-882d2243-eab9-4545-a58a-b36fee4a46e2)。
+> 本文适用于具有[Office 365 高级威胁防护](https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description)的商业客户。 如果您使用的是 Outlook.com、Office 365 家庭版或 Office 365 个人版, 并且您正在查找有关 Outlook 中的安全链接的信息, 请参阅[Advanced Outlook.com security](https://support.office.com/article/advanced-outlook-com-security-for-office-365-subscribers-882d2243-eab9-4545-a58a-b36fee4a46e2)。
 
 ## <a name="overview"></a>概述
 
@@ -47,7 +47,7 @@ ATP 包含在 Office 365 E5 中;但是, ATP 计划和 ATP 计划2可用作特定
 
 Office 365 ATP 提供了多种工具来为您的组织设置适当的保护级别。 
 
-您的组织的安全团队必须为 Office 365 Security & 合规中心中的每个 ATP 工具定义策略。 转到 "**威胁管理** > **策略**" 以访问策略选项。 (若要获取有关这方面的一些帮助, 请参阅[快速入门指南: 设置 Office 365 高级威胁防护](checklist-atp-setup.md)。)
+组织的安全团队必须为 Office 365 安全 & 合规中心中的每个 ATP 工具定义策略。 转到 "**威胁管理** > **策略**" 以访问策略选项。 (若要获取有关这方面的一些帮助, 请参阅[快速入门指南: 设置 Office 365 高级威胁防护](checklist-atp-setup.md)。)
 
 为你的组织定义的策略将确定预定义威胁的行为和保护级别。 策略选项非常灵活。 例如, 组织的安全团队可以在用户、组织、收件人和域级别设置细化的威胁保护。 定期检查策略是非常重要的, 因为每天都会出现新的威胁和挑战。  
 
@@ -61,7 +61,7 @@ Office 365 ATP 提供了多种工具来为您的组织设置适当的保护级�
 
 ## <a name="view-atp-reports"></a>查看 ATP 报表
 
-Office 365 ATP 包含一个高级[报告仪表板](view-reports-for-atp.md), 用于监控 ATP 性能。 您可以在 Security & 合规性中心的**Reports _GT_ 仪表板**中访问它。 
+Office 365 ATP 包含一个高级[报告仪表板](view-reports-for-atp.md), 用于监控 ATP 性能。 您可以在安全 & 合规性中心的**报表 > 仪表板**中访问它。 
 
 实时报告更新, 为你提供最新的见解。 这些报告还提供了建议, 并提醒您应对即将发生的威胁。 预定义的报告包括以下内容: 
 

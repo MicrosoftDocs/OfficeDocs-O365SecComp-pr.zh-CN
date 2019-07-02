@@ -10,12 +10,12 @@ localization_priority: Normal
 ms.collection:
 - M365-security-compliance
 description: 了解有关贵组织中的新式化安全性的安全原则和建议的详细信息。
-ms.openlocfilehash: c9d418254db4a11716b4d1e58ecd683b92fdfd18
-ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
+ms.openlocfilehash: 75cdd5ff4d65c7d7cbe90e8516f9027a496c4e36
+ms.sourcegitcommit: 6bb40cf53374eaaae8da0a469f0248b1163184a4
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "34155484"
+ms.lasthandoff: 06/07/2019
+ms.locfileid: "34767303"
 ---
 # <a name="ciso-workshop-module-4a-threat-protection-strategy"></a>CISO 研讨会模块 4a: 威胁防护策略
 
@@ -48,7 +48,7 @@ ms.locfileid: "34155484"
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RWtYMm]
 
-## <a name="part-6-roadmap-for-application-development--platform-as-a-service-607"></a>第6部分: 应用程序开发 & 平台作为一项服务的路线图 (6:07)
+## <a name="part-6-roadmap-for-application-development--platform-as-a-service-607"></a>第6部分: 应用程序开发 & 平台作为服务的指南 (6:07)
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RWtQLJ]
 
@@ -68,9 +68,9 @@ ms.locfileid: "34155484"
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RWtQLS]
 
-## <a name="part-11-roadmap-for-securing-privileged-access-1229"></a>第11部分: 保护特权访问的路线图 (12:29)
+## <a name="part-11-roadmap-for-securing-privileged-access-2226"></a>第11部分: 保护特权访问的路线图 (22:26)
 
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RWtLpa]
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE36aLB]
 
 ## <a name="part-12-roadmap-for-not-petya-and-critical-security-hygiene-1028"></a>第12部分: 适用于 (非) Petya 和紧急安全保护的路线图 (10:28)
 

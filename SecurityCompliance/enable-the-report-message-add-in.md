@@ -4,7 +4,7 @@ ms.author: deniseb
 author: denisebmsft
 manager: laurawi
 ms.date: 03/26/2019
-ms.audience: Admin
+audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
@@ -14,22 +14,22 @@ search.appverid:
 ms.assetid: 4250c4bc-6102-420b-9e0a-a95064837676
 ms.collection:
 - M365-security-compliance
-description: 了解如何为单个用户或您的整个组织启用 outlook 和 web 上的 outlook 和 outlook 网页版报告消息外接程序。
-ms.openlocfilehash: 3c476a6e097307b1aabc3580b598bb91a4407731
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+description: 了解如何为单个用户或您的整个组织启用 Outlook 和 web 上的 outlook 和 Outlook 网页版报告消息外接程序。
+ms.openlocfilehash: d74772502f5ffd7e274574075604c2fc0c235f30
+ms.sourcegitcommit: 0d5a863f48914eeaaf29f7d2a2022618de186247
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32257412"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "34077948"
 ---
 # <a name="enable-the-report-message-add-in"></a>启用报表消息加载项
 
 > [!NOTE]
-> outlook 和 web 上的 outlook 的报告邮件外接程序与[outlook 垃圾邮件筛选器](https://support.office.com/article/Overview-of-the-Junk-Email-Filter-5ae3ea8e-cf41-4fa0-b02a-3b96e21de089)并不完全相同, 但这两者都可用于将电子邮件标记为垃圾邮件、非垃圾邮件或网络钓鱼尝试。 不同之处在于, outlook 和 web 上的 outlook 的报告邮件外接程序会通知 Microsoft misclassified 电子邮件, 而 outlook 垃圾邮件筛选器用于组织用户邮箱中的电子邮件。 
+> Outlook 和 web 上的 Outlook 的报告邮件外接程序与[Outlook 垃圾邮件筛选器](https://support.office.com/article/Overview-of-the-Junk-Email-Filter-5ae3ea8e-cf41-4fa0-b02a-3b96e21de089)并不完全相同, 但这两者都可用于将电子邮件标记为垃圾邮件、非垃圾邮件或网络钓鱼尝试。 不同之处在于, Outlook 和 web 上的 Outlook 的报告邮件外接程序会通知 Microsoft misclassified 电子邮件, 而 Outlook 垃圾邮件筛选器用于组织用户邮箱中的电子邮件。 
 
 ## <a name="overview"></a>概述
 
-outlook 和 web 上的 outlook 的报告消息外接程序使用户能够轻松地向 Microsoft 及其子公司报告 misclassified 电子邮件 (无论是安全还是恶意)。 Microsoft 使用这些提交改进电子邮件保护技术的有效性。 此外, 如果您的组织使用的是[Office 365 高级威胁防护计划 1](office-365-atp.md)或[计划 2](office-365-ti.md), 则报告消息外接程序会为您组织的安全团队提供可用于查看和更新安全策略的有用信息。 
+Outlook 和 web 上的 Outlook 的报告消息外接程序使用户能够轻松地向 Microsoft 及其子公司报告 misclassified 电子邮件 (无论是安全还是恶意)。 Microsoft 使用这些提交改进电子邮件保护技术的有效性。 此外, 如果您的组织使用的是[Office 365 高级威胁防护计划 1](office-365-atp.md)或[计划 2](office-365-ti.md), 则报告消息外接程序会为您组织的安全团队提供可用于查看和更新安全策略的有用信息。 
 
 例如, 假设有人将大量邮件报告为网络钓鱼。 [安全仪表板](security-dashboard.md)和其他报告中的此信息图面。 组织的安全团队可以使用此信息指示可能需要更新的反网络钓鱼策略。 或者, 如果用户使用报告邮件外接程序报告大量被标记为垃圾邮件的邮件, 则组织的安全团队可能需要调整[反垃圾邮件策略](configure-the-anti-spam-policies.md)。 
 
@@ -44,7 +44,7 @@ outlook 和 web 上的 outlook 的报告消息外接程序使用户能够轻松�
   
 如果您是单个用户, 则可以[为自己启用报告邮件加载项](#get-the-report-message-add-in-for-yourself)。 
   
-如果您是 Office 365 全局管理员或 exchange Online 管理员, 并且将 exchange 配置为使用 OAuth 身份验证, 则可以[为您的组织启用报告消息外接程序](#get-and-enable-the-report-message-add-in-for-your-organization)。 现在, 可以通过[集中部署](https://docs.microsoft.com/office365/admin/manage/centralized-deployment-of-add-ins)使用报告消息加载项。
+如果您是 Office 365 全局管理员或 Exchange Online 管理员, 并且将 Exchange 配置为使用 OAuth 身份验证, 则可以[为您的组织启用报告消息外接程序](#get-and-enable-the-report-message-add-in-for-your-organization)。 现在, 可以通过[集中部署](https://docs.microsoft.com/office365/admin/manage/centralized-deployment-of-add-ins)使用报告消息加载项。
     
 ## <a name="get-the-report-message-add-in-for-yourself"></a>获取自己的报告邮件外接程序
 
@@ -59,7 +59,7 @@ outlook 和 web 上的 outlook 的报告消息外接程序使用户能够轻松�
 安装并启用加载项后, 您将看到以下图标: 
 
 - 在 Outlook 中, 图标如下所示: <br/> ![报告邮件外接程序图标 (适用于 Outlook)](media/OutlookReportMessageIcon.png)<br/>
-- 在 web 上的 Outlook (以前称为 Outlook web App) 中, 图标如下所示:<br/>![Outlook 网页报告邮件加载项图标](media/d9326d0b-1769-4bc2-ae58-51f0ebc69a17.png)<br/>
+- 在 web 上的 Outlook (以前称为 Outlook Web App) 中, 图标如下所示:<br/>![Outlook 网页报告邮件加载项图标](media/d9326d0b-1769-4bc2-ae58-51f0ebc69a17.png)<br/>
 
 > [!TIP]
 > 作为下一步, 了解如何[使用报告邮件加载项](https://support.office.com/article/b5caa9f1-cdf3-4443-af8c-ff724ea719d2)。
@@ -69,7 +69,7 @@ outlook 和 web 上的 outlook 的报告消息外接程序使用户能够轻松�
 > [!IMPORTANT]
 > 若要完成此任务, 您必须是 Office 365 全局管理员或 Exchange Online 管理员。 此外, 必须将 Exchange 配置为使用 OAuth 身份验证以了解详细信息, 请参阅[exchange 要求 (加载项的集中部署)](https://docs.microsoft.com/office365/admin/manage/centralized-deployment-of-add-ins)。 
 
-1. 转到 Microsoft 365 管理中心中的 "[服务 & 外接程序" 页](https://admin.microsoft.com/AdminPortal/Home#/Settings/ServicesAndAddIns)。<br/>![新 Microsoft 365 管理中心中的 "服务和外接程序" 页](media/ServicesAddInsPageNewM365AdminCenter.png)<br/> 
+1. 转到 Microsoft 365 管理中心中的 "[服务 & 外接程序" 页面](https://admin.microsoft.com/AdminPortal/Home#/Settings/ServicesAndAddIns)。<br/>![新 Microsoft 365 管理中心中的 "服务和外接程序" 页](media/ServicesAddInsPageNewM365AdminCenter.png)<br/> 
     
 2. 选择 " **+ 部署外接端"**。<br/>![选择 "部署加载项"](media/ServicesAddIns-ChooseDeployAddIn.png)<br/> 
     
@@ -121,7 +121,7 @@ outlook 和 web 上的 outlook 的报告消息外接程序使用户能够轻松�
     
 9. 在 "**为此规则选择模式**" 下, 选择 "**强制**"。<br/>![设置一个规则以获取每个报告的邮件的副本](media/f1cd95ce-e40d-4a8a-8f48-893469eba691.png)<br/>
   
-10. 选择“**保存**”。 
+10. 选择“保存”****。 
     
 在适当的情况下, 当组织中的某人使用报告邮件加载项报告电子邮件时, 全局管理员、安全管理员和/或安全读者将收到该邮件的副本。 此信息可以让你设置或调整策略, 如[Office 365 ATP 安全链接](atp-safe-links.md)策略或[反垃圾邮件](anti-spam-protection.md)设置。 
 
@@ -131,12 +131,12 @@ outlook 和 web 上的 outlook 的报告消息外接程序使用户能够轻松�
 
 ## <a name="review-or-edit-settings-for-the-report-message-add-in"></a>查看或编辑报告邮件外接程序的设置
 
-您可以查看和编辑 "[服务 & 外接程序" 页](https://admin.microsoft.com/AdminPortal/Home#/Settings/ServicesAndAddIns)上的 "报告邮件" 外接程序的默认设置。 
+您可以在 "[服务" & "外接程序" 页](https://admin.microsoft.com/AdminPortal/Home#/Settings/ServicesAndAddIns)上查看和编辑报告邮件外接程序的默认设置。 
 
 > [!IMPORTANT]
 > 若要完成此任务, 您必须是 Office 365 全局管理员或 Exchange Online 管理员。
     
-1. 转到 Microsoft 365 管理中心中的 "[服务 & 外接程序" 页](https://admin.microsoft.com/AdminPortal/Home#/Settings/ServicesAndAddIns)。<br/>![新 Microsoft 365 管理中心中的 "服务和外接程序" 页](media/ServicesAddInsPageNewM365AdminCenter.png)<br/>
+1. 转到 Microsoft 365 管理中心中的 "[服务 & 外接程序" 页面](https://admin.microsoft.com/AdminPortal/Home#/Settings/ServicesAndAddIns)。<br/>![新 Microsoft 365 管理中心中的 "服务和外接程序" 页](media/ServicesAddInsPageNewM365AdminCenter.png)<br/>
 
 2. 查找并选择报告邮件加载项。<br/>![查找并选择报告邮件加载项](media/FindReportMessageAddIn.png)<br/> 
     

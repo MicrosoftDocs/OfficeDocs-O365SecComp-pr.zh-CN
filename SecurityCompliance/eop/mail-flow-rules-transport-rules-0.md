@@ -10,12 +10,12 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: 9c2cf227-eff7-48ef-87fb-487186e47363
 description: 可以使用邮件流规则 (传输规则) 识别通过 Office 365 组织传递的邮件并对其执行操作。
-ms.openlocfilehash: 73f5668be76a20af7474f6de06d50e278057fd06
-ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
+ms.openlocfilehash: a08d3ff0d976def1d104c99a9532fe5c826f0523
+ms.sourcegitcommit: 90e514177a1ee6b7485334b15c588b0ac906aa26
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "34153144"
+ms.lasthandoff: 06/05/2019
+ms.locfileid: "34726053"
 ---
 # <a name="mail-flow-rules-transport-rules-in-exchange-online-protection"></a>Exchange Online Protection 中的邮件流规则 (传输规则)
 
@@ -37,7 +37,7 @@ ms.locfileid: "34153144"
     
 - [使用邮件流规则设置邮件中的垃圾邮件可信度 (SCL)](../use-mail-flow-rules-to-set-the-spam-confidence-level-scl-in-messages.md)
     
-- [在 Office 365 中创建整个组织的安全发件人或阻止发件人名单](../create-organization-wide-safe-sender-or-blocked-sender-lists-in-office-365.md)
+- [在 Office 365 中创建阻止发件人列表](../create-block-sender-lists-in-office-365.md)
     
 - [通过 Exchange Online Protection 中的文件附件阻止功能降低恶意软件的威胁](reducing-malware-threats-through-file-attachment-blocking-in-exchange-online-pro.md)
     

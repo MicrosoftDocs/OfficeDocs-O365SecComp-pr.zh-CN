@@ -3,7 +3,6 @@ title: 使用敏感度标签中的加密限制对内容的访问
 ms.author: stephow
 author: stephow-MSFT
 manager: laurawi
-ms.date: ''
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
@@ -14,12 +13,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 创建敏感度标签时，可以限制对将要应用标签的内容的访问。敏感度标签可以使用加密来保护内容。
-ms.openlocfilehash: 20d547a66309382c3ae3229540a23cd47e18460c
-ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
+ms.openlocfilehash: c550b9d0a3ffb9e41f36b4630a80e1a1584a257f
+ms.sourcegitcommit: 044003455eb36071806c9f008ac631d54c64dde6
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "34153264"
+ms.lasthandoff: 06/24/2019
+ms.locfileid: "35199757"
 ---
 # <a name="restrict-access-to-content-by-using-encryption-in-sensitivity-labels"></a>使用敏感度标签中的加密限制对内容的访问
 
@@ -50,7 +49,7 @@ ms.locfileid: "34153264"
 2. **允许对标记的内容的访问权限过期**（在某个特定日期或在应用标签后的特定天数后）。在此时间后，用户将无法打开标记的项。如果指定某个日期，则它将于该日期午夜（在你的当前时区）生效。请注意，某些电子邮件客户端由于其缓存机制，可能不强制过期，也不显示超过其过期日期的电子邮件。
 3. **允许脱机访问**（从不、始终或在应用标签后的特定天后）。如果将脱机访问限制为从不或一定天数，则当达到该阈值时，必须对用户重新进行身份验证并记录其访问。有关详细信息，请参阅下一部分有关 Rights Management 使用许可证的内容。
 
-![敏感度标签的加密设置](media/Sensitivity_Encryption_settings_for_sensitivity_label.png)
+![敏感度标签的加密设置](media/Sensitivity-Encryption-settings-for-sensitivity-label.png)
 
 ### <a name="rights-management-use-license-for-offline-access"></a>针对脱机访问的 Rights Management 使用许可证
 
@@ -71,7 +70,7 @@ ms.locfileid: "34153264"
 1. 首先，添加将向其分配对标记的内容具有访问权限的用户或组。
 2. 然后，选择这些用户对标记的内容所具有的权限。
 
-![向用户分配权限的选项](media/Sensitivity_Assign_permissions_settings.png)
+![向用户分配权限的选项](media/Sensitivity-Assign-permissions-settings.png)
 
 ### <a name="add-users-or-groups"></a>添加用户或组
 
@@ -94,13 +93,13 @@ ms.locfileid: "34153264"
 
 有关每个特定权限的详细信息，请参阅[使用权限和说明](https://docs.microsoft.com/zh-CN/azure/information-protection/configure-usage-rights#usage-rights-and-descriptions)。  
 
-![选择预设权限或自定义权限的选项。](media/Sensitivity_Choose_permissions_settings.png)
+![选择预设权限或自定义权限的选项。](media/Sensitivity-Choose-permissions-settings.png)
 
 请注意，同一标签可向不同用户授予不同的权限。例如，一个标签可将某些用户分配为审阅者，并可将其他用户分配为共同创作，如下所示。
 
 为此，添加用户或组、向其分配权限并保存这些设置。然后重复这些步骤，添加用户并向其分配权限、每次保存设置。可以根据需要经常执行此操作，以便为不同用户定义不同权限。
 
-![具有不同权限的不同用户](media/Sensitivity_Multiple_users_permissions.png)
+![具有不同权限的不同用户](media/Sensitivity-Multiple-users-permissions.png)
 
 ### <a name="rights-management-issuer-user-applying-the-sensitivity-label-always-has-full-control"></a>Rights Management 颁发者（应用敏感度标签的用户）始终具有完全控制
 
