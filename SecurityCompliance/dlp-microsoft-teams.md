@@ -3,8 +3,8 @@ title: 数据丢失防护和 Microsoft 团队
 ms.author: deniseb
 author: denisebmsft
 manager: laurawi
-ms.date: 04/26/2019
-ms.audience: ITPro
+ms.date: 07/01/2019
+audience: ITPro
 ms.topic: conceptual
 ms.service: O365-seccomp
 localization_priority: Normal
@@ -13,14 +13,17 @@ ms.collection:
 search.appverid:
 - MET150
 description: 现在, 你可以将 DLP 策略应用于 Microsoft 团队聊天和频道。 阅读本文, 了解详细了解它的工作原理。
-ms.openlocfilehash: 712729972942d98afb5b3898ad357114ce1a6bae
-ms.sourcegitcommit: e23b84ef4eee9cccec7205826b71ddfe9aaac2f8
+ms.openlocfilehash: 3792fd6919749510ea20d4ff84b0249b16165a9f
+ms.sourcegitcommit: cc1b0281fa594cbb7c09f3e419df21aec9557831
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33367205"
+ms.lasthandoff: 07/02/2019
+ms.locfileid: "35417394"
 ---
 # <a name="data-loss-prevention-and-microsoft-teams"></a>数据丢失防护和 Microsoft 团队
+
+> [!NOTE]
+> 最近在 Office 365 E5 和 Office 365 高级合规中向 Microsoft 团队添加了数据丢失防护功能。 若要了解有关功能可用性的详细信息, 请参阅[office 365 服务说明: office 365 安全性 & 合规性中心](https://docs.microsoft.com/office365/servicedescriptions/office-365-platform-service-description/office-365-securitycompliance-center)。
 
 ## <a name="overview-of-dlp-for-microsoft-teams"></a>适用于 Microsoft 团队的 DLP 概述
 
@@ -28,11 +31,14 @@ ms.locfileid: "33367205"
 
 - **示例 1: 保护邮件中的敏感信息**。 假定有人尝试在团队聊天或频道中与来宾 (外部用户) 共享敏感信息。 如果您定义了一个 DLP 策略来防止出现这种情况, 则会删除包含发送给外部用户的敏感信息的邮件。 这将根据您的 DLP 策略的配置方式在几秒内自动发生。
 
-- **示例 2: 保护文档中的敏感信息**。 假定有人尝试与 Microsoft 团队频道或聊天中的来宾共享文档, 并且文档包含敏感信息。 如果您定义了一个 DLP 策略来阻止这种情况, 则不会为这些用户打开该文档。 请注意, 在这种情况下, 您的 DLP 策略必须包括 SharePoint 和 OneDrive, 以便保护就绪。
+    > [!NOTE]
+    > 当与在团队和频道中具有[来宾访问权限](https://docs.microsoft.com/MicrosoftTeams/guest-access)的用户共享, 以及在会议和聊天会话中具有[外部访问权限](https://docs.microsoft.com/MicrosoftTeams/manage-external-access)的用户共享时, Microsoft 团队的 DLP 将阻止敏感内容。 如果要将[Microsoft 团队与 Skype For business 结合](https://docs.microsoft.com/microsoftteams/migration-interop-guidance-for-teams-with-skype)使用, 请记住, 在互操作或联合聊天会话中, 团队的 DLP 不会阻止邮件。
+
+- **示例 2: 保护文档中的敏感信息**。 假定有人尝试与 Microsoft 团队频道或聊天中的来宾共享文档, 并且文档包含敏感信息。 如果您定义了一个 DLP 策略来阻止这种情况, 则不会为这些用户打开该文档。 请注意, 在这种情况下, 您的 DLP 策略必须包括 SharePoint 和 OneDrive, 以便保护就绪。 (这是在 Microsoft 团队中显示的适用于 SharePoint 的 DLP 的一个示例。)
 
 ## <a name="policy-tips-help-educate-users"></a>策略提示有助于教育用户
 
-与 dlp 在[Exchange、outlook 和 outlook 网页](data-loss-prevention-policies.md#policy-evaluation-in-exchange-online-outlook-and-outlook-on-the-web)版、 [SharePoint 和 OneDrive for business 网站](data-loss-prevention-policies.md#policy-evaluation-in-onedrive-for-business-and-sharepoint-online-sites)以及[Office 桌面客户端](data-loss-prevention-policies.md#policy-evaluation-in-the-office-desktop-programs)中的工作方式类似, 当操作与 DLP 策略冲突时, 将显示策略提示。 下面是策略提示的一个示例:
+与 DLP 在[Exchange、outlook 和 outlook 网页](data-loss-prevention-policies.md#policy-evaluation-in-exchange-online-outlook-and-outlook-on-the-web)版、 [SharePoint 和 OneDrive for Business 网站](data-loss-prevention-policies.md#policy-evaluation-in-onedrive-for-business-and-sharepoint-online-sites)以及[Office 桌面客户端](data-loss-prevention-policies.md#policy-evaluation-in-the-office-desktop-programs)中的工作方式类似, 当操作与 DLP 策略冲突时, 将显示策略提示。 下面是策略提示的一个示例:
 
 ![团队中阻止的邮件通知](media/dlp-teams-blockedmessage-notification.png)
 
@@ -82,7 +88,7 @@ ms.locfileid: "33367205"
 
 5. 保留所有帐户的默认设置, 或指定要包含或排除的帐户。
 
-6. 单击“**保存**”。
+6. 单击“保存”****。
 
 允许大约一小时的更改通过数据中心工作并同步到用户帐户。
 
