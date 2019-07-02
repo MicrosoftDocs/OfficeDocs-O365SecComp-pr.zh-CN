@@ -11,12 +11,12 @@ ms.devlang: na
 ms.topic: landing-page
 ms.date: 12/27/2018
 ms.author: robmazz
-ms.openlocfilehash: 737d3a1b979b420e7f9bd24f056a4d5abf7a9906
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: 1d5f3ef4c21a8771479f232f7347889b31b5fce2
+ms.sourcegitcommit: aa60a6cdf83c67576e858668d1182cd4fffeb5e0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32256500"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "33622222"
 ---
 # <a name="office-365-security-and-compliance"></a>Office 365 安全性和合规性
 
@@ -34,7 +34,7 @@ ms.locfileid: "32256500"
                     </div>
                     <div class="cardText">
                         <h3>入门-前30天</h3>
-                <p>这些基本的安全和合规性任务可以快速完成, 对用户的影响较小: <br> - <a href="office-365-secure-score.md" target="_blank">检查安全得分</a> <br> - <a href="search-the-audit-log-in-security-and-compliance.md">启用审核日志记录</a> <br> - <a href="tenant-wide-setup-for-increased-security.md">配置租户安全性</a> <br> - <a href="https://docs.microsoft.com/cloud-app-security/connect-office-365-to-microsoft-cloud-app-security">连接云应用安全性</a> <br> - <a href="https://docs.microsoft.com/azure/active-directory/active-directory-identityprotection-enable">启用 Azure AD Identity Protection</a> <br> - <a href="https://docs.microsoft.com/office365/enterprise/secure-sharepoint-online-sites-and-files">保护 SharePoint 网站和文件</a> <br> - <a href="configure-supervision-policies.md">启用数据调控策略</a> </p>
+                <p>这些基本的安全和合规性任务可以快速完成, 对用户的影响较小: <br> - <a href="microsoft-secure-score.md" target="_blank">检查安全得分</a> <br> - <a href="search-the-audit-log-in-security-and-compliance.md">启用审核日志记录</a> <br> - <a href="tenant-wide-setup-for-increased-security.md">配置租户安全性</a> <br> - <a href="https://docs.microsoft.com/cloud-app-security/connect-office-365-to-microsoft-cloud-app-security">连接云应用安全性</a> <br> - <a href="https://docs.microsoft.com/azure/active-directory/active-directory-identityprotection-enable">启用 Azure AD Identity Protection</a> <br> - <a href="https://docs.microsoft.com/office365/enterprise/secure-sharepoint-online-sites-and-files">保护 SharePoint 网站和文件</a> <br> - <a href="configure-supervision-policies.md">启用数据调控策略</a> </p>
                     </div>
                 </div>
             </div>
@@ -69,7 +69,7 @@ ms.locfileid: "32256500"
                     <div class="cardText">
                         <h3>90 天后</h3>
                         <p>这些是基于以前的工作建立的重要安全措施:<br>
-                        - <a href="office-365-secure-score.md" target="_blank">查看安全分数</a><br>
+                        - <a href="microsoft-secure-score.md" target="_blank">查看安全分数</a><br>
                         - <a href="https://docs.microsoft.com/windows-server/identity/securing-privileged-access/securing-privileged-access">实施安全的权限访问</a><br>
                         - <a href="https://docs.microsoft.com/azure/active-directory/active-directory-identityprotection">使用 Azure AD Identity Protection</a><br>
                         - <a href="protect-against-threats.md">优化保护策略</a><br></p>
@@ -96,8 +96,8 @@ ms.locfileid: "32256500"
                     <div class="cardText">
                         <h3>保持安全</h3>
                         <p><a href="security-roadmap.md">Office 365 安全路线图</a></p>
-                        <p><a href="office-365-secure-score.md" target="_blank">Microsoft 安全功能分数</a></p>
-                        <p><a href="https://protection.office.com" target="_blank">Security & 合规性中心</a></p>
+                        <p><a href="microsoft-secure-score.md" target="_blank">Microsoft 安全功能分数</a></p>
+                        <p><a href="https://protection.office.com" target="_blank">安全性 & 合规性中心</a></p>
                     </div>
                 </div>
             </div>
