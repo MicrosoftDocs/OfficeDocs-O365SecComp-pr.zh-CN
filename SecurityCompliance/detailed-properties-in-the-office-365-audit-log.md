@@ -16,20 +16,20 @@ search.appverid:
 - MET150
 ms.assetid: ce004100-9e7f-443e-942b-9b04098fcfc3
 description: Office 365 审核日志记录中包含的其他属性的说明。
-ms.openlocfilehash: 8ce85ea452389b0d8239de88730acd6039cc02be
-ms.sourcegitcommit: a6968df6e47ab5733a995f1efdc6e3676c5b5d7b
+ms.openlocfilehash: 00f2eb2a9259247085973642b317ffbca8ba064a
+ms.sourcegitcommit: b262d40f6daf06be26e7586f37b736e09f8a4511
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/26/2019
-ms.locfileid: "35253931"
+ms.lasthandoff: 07/02/2019
+ms.locfileid: "35435152"
 ---
 # <a name="detailed-properties-in-the-office-365-audit-log"></a>Office 365 审核日志中的属性详细信息
 
 从 Security & 合规中心导出审核日志搜索结果时, 您可以选择下载符合搜索条件的所有结果。 为此, 请选择 "**导出结果** \> "。在 "**审核日志搜索**" 页上**下载所有结果**。 有关详细信息, 请参阅[在 Office 365 中搜索审核日志](search-the-audit-log-in-security-and-compliance.md)。
   
- 当您导出审核日志搜索的所有结果时, 将把来自 Office 365 统一审核日志的原始数据复制到一个逗号分隔的值 (CSV) 文件, 该文件将下载到您的本地计算机上。 此文件包含来自名为**AuditData**的列中的每个审核记录的其他信息。 此列包含来自审核日志记录的多个属性的多值属性。 此多值属性中的每个**属性: 值**对都用逗号分隔开。 
+ 当您导出审核日志搜索的所有结果时, 将把来自 Office 365 统一审核日志的原始数据复制到一个逗号分隔值 (CSV) 文件, 该文件将下载到您的本地计算机上。 此文件包含来自名为**AuditData**的列中的每个审核记录的其他信息。 此列包含来自审核日志记录的多个属性的多值属性。 此多值属性中的每个**属性: 值**对都用逗号分隔开。 
   
-下表描述了包含多属性**AuditData**列中的事件发生时所包含的属性 (具体取决于所发生的 Office 365 服务)。 **具有此属性列的 Office 365 服务**指示包含该属性的活动的服务和类型 (用户或管理员)。 有关这些属性的详细信息或有关本主题中可能未列出的属性的详细信息, 请参阅[Office 365 管理活动 API 架构](https://go.microsoft.com/fwlink/p/?LinkId=717993)。
+下表描述了多属性**AuditData**列中包括的属性 (具体情况取决于发生某个事件的 Office 365 服务)。 **具有此属性列的 Office 365 服务**指示包含该属性的活动的服务和类型 (用户或管理员)。 有关这些属性的详细信息或有关本主题中可能未列出的属性的详细信息, 请参阅[Office 365 管理活动 API 架构](https://go.microsoft.com/fwlink/p/?LinkId=717993)。
   
 > [!TIP]
 > 您可以使用 Excel 中的 Power Query 将此列拆分为多个列, 这样每个属性都将拥有自己的列。 这将允许您对其中一个或多个属性进行排序和筛选。 若要了解如何执行此操作, 请参阅[拆分一列文本 (Power Query)](https://support.office.com/article/5282d425-6dd0-46ca-95bf-8e0da9539662)中的 "按分隔符拆分列" 一节。 
@@ -49,7 +49,7 @@ ms.locfileid: "35253931"
 |CreationTime|用户执行活动时的协调世界时 (UTC) 日期和时间。|全部|
 |DestinationFileExtension|复制或移动的文件的文件扩展名。 仅对 FileCopied 和 FileMoved 用户活动显示此属性。|SharePoint|
 |DestinationFileName|复制或移动文件的名称。 仅对 FileCopied 和 FileMoved 操作显示此属性。|SharePoint|
-|DestinationRelativeUrl|在其中复制或移动文件的目标文件夹的 URL。 **SiteURL**、 **DestinationRelativeURL**和**destinationfilename 所**属性的值的组合与**ObjectID**属性的值相同, 后者是复制的文件的完整路径的名称。 仅对 FileCopied 和 FileMoved 用户活动显示此属性。|SharePoint|
+|DestinationRelativeUrl|在其中复制或移动文件的目标文件夹的 URL。 **SiteURL**、 **DestinationRelativeURL**和**destinationfilename 所**属性的值的组合与**ObjectID**属性的值相同, 后者是复制的文件的完整路径名称)。 仅对 FileCopied 和 FileMoved 用户活动显示此属性。|SharePoint|
 |EventSource|识别在 SharePoint 中发生的事件。 可能的值为**SharePoint**和**ObjectModel**。|SharePoint|
 |ExternalAccess|对于 Exchange 管理员活动, 指定是由组织中的用户、Microsoft 数据中心人员或数据中心服务帐户还是由委派的管理员运行 cmdlet。 值 **False** 表示 cmdlet 由组织中的某人运行。 值 **True** 表示 cmdlet 由数据中心人员、数据中心服务帐户或委托的管理员运行。  <br/> 对于 "Exchange 邮箱活动", 指定是否由组织外部的用户访问邮箱。|Exchange|
 |ExtendedProperties|Azure Active Directory 事件的扩展属性。|Azure Active Directory|
@@ -77,7 +77,7 @@ ms.locfileid: "35253931"
 |SourceFileName|用户访问的文件或文件夹名称。|SharePoint|
 |SourceRelativeUrl|包含用户访问文件的文件夹的 URL。 **SiteURL**、 **SourceRelativeURL**和**SourceFileName**属性的值的组合与**ObjectID**属性的值相同, 后者是用户访问的文件的完整路径名称)。|SharePoint|
 |Subject|访问的邮件的主题行。|Exchange (邮箱活动)|
-|TabType| 在团队中添加、删除或更新的选项卡的类型。 此属性的可能值为：  <br/><br/> **Excelpin** -Excel 选项卡。  <br/> **扩展**-所有第一方和第三方应用;如 Planner、VSTS 和表单。  <br/> **备注**-OneNote 选项卡。  <br/> **Pdfpin** -PDF 选项卡。  <br/> **Powerbi** -一个 Powerbi 选项卡。  <br/> **Powerpointpin** -一个 PowerPoint 选项卡。  <br/> **Sharepointfiles** -A SharePoint 选项卡。  <br/> **网页**-"固定的网站" 选项卡。  <br/> **Wiki-选项卡**-wiki 选项卡。  <br/> **Wordpin** -一个 Word 选项卡。|Microsoft Teams|
+|TabType| 在团队中添加、删除或更新的选项卡的类型。 此属性的可能值为：  <br/><br/> **Excel pin** -excel 选项卡。  <br/> **扩展**-所有第一方和第三方应用;如类计划、VSTS 和窗体。  <br/> **备注**-OneNote 选项卡。  <br/> **Pdfpin** -PDF 选项卡。  <br/> **Powerbi** -一个 Powerbi 选项卡。  <br/> **Powerpointpin** -一个 PowerPoint 选项卡。  <br/> **Sharepointfiles** -A SharePoint 选项卡。  <br/> **网页**-"固定的网站" 选项卡。  <br/> **Wiki-选项卡**-wiki 选项卡。  <br/> **Wordpin** -一个 Word 选项卡。|Microsoft Teams|
 |Target|对其执行操作 (在**操作**属性中标识) 的用户。 例如, 如果将来宾用户添加到 SharePoint 或 Microsoft 团队, 则该用户将在此属性中列出。|Azure Active Directory|
 |TeamGuid|Microsoft 团队中的团队的 ID。|Microsoft Teams|
 |TeamName|Microsoft 团队中的团队的名称。|Microsoft Teams|

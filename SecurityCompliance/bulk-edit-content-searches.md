@@ -11,12 +11,12 @@ localization_priority: Normal
 search.appverid: MOE150
 ms.assetid: 39e4654a-9588-41f6-892b-c33ab57bfbe2
 description: 使用 Office 365 或 Microsoft 365 中的安全与合规中心中的批量搜索编辑器快速更改一个或多个内容搜索的查询和内容位置。
-ms.openlocfilehash: d4f79cc323b752d020606e22ff72a47bc03e9ae9
-ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
+ms.openlocfilehash: 69d2a40a28fd435873eae9b19ad2c8ad1e25d27c
+ms.sourcegitcommit: b262d40f6daf06be26e7586f37b736e09f8a4511
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "34152214"
+ms.lasthandoff: 07/02/2019
+ms.locfileid: "35435112"
 ---
 # <a name="bulk-edit-content-searches"></a>批量编辑内容搜索
 
@@ -92,7 +92,7 @@ ms.locfileid: "34152214"
 - 可以通过从文本文件或 Excel 文件中复制多个行并将它们粘贴到 "**位置**" 页上的节中, 将多个内容位置添加到一个或多个搜索中。 在添加新位置之后, 请务必选中要向其添加位置的每个搜索的复选框。 
     
     > [!TIP]
-    > 若要为组织中的所有用户生成电子邮件地址列表, 请在 "使用内容搜索" 中的步骤2中运行 PowerShell 命令, 以在[邮箱和 OneDrive for business 网站中搜索用户列表](search-the-mailbox-and-onedrive-for-business-for-a-list-of-users.md#step2)。 或使用中的脚本[创建组织中所有 onedrive 位置的列表](https://support.office.com/article/8e200cb2-c768-49cb-88ec-53493e8ad80a), 以生成组织中所有 onedrive for business 网站的列表。 请注意, 您必须将的 organization's "我的网站" 域的 URL (例如, https://contoso-my.sharepoint.com)由脚本创建的 OneDrive for business 网站) 追加。 在拥有电子邮件地址或 OneDrive for Business 网站的列表后, 可以将其复制并粘贴到批量搜索编辑器中的 "**位置**" 页。 
+    > 若要为组织中的所有用户生成电子邮件地址列表, 请在 "[步骤 2: 生成用户列表](search-the-mailbox-and-onedrive-for-business-for-a-list-of-users.md#step-2-generate-a-list-of-users)" 中的步骤2中运行 PowerShell 命令。 或者按照[获取组织中所有用户 Onedrive url 的列表](https://docs.microsoft.com/onedrive/list-onedrive-urls)中的步骤生成组织中所有 onedrive for business 网站的列表。 请注意, 您必须将组织的 "我的网站" 域的 URL (例如, https://contoso-my.sharepoint.com)添加到由脚本创建的 OneDrive for business 网站)。 在拥有电子邮件地址或 OneDrive for Business 网站的列表后, 可以将其复制并粘贴到批量搜索编辑器中的 "**位置**" 页。 
   
 - 单击 "**保存**" 以在批量搜索编辑器中保存更改后, 您添加到搜索中的邮箱的电子邮件地址将会得到验证。 如果电子邮件地址不存在, 则会显示一条错误消息, 指出邮箱无法定位。 请注意, 网站 Url 不会进行验证。 
   

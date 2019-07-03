@@ -12,12 +12,12 @@ localization_priority: Normal
 search.appverid: MOE150
 ms.assetid: 5f4f8206-2d6a-4cb2-bbc6-7a0698703cc0
 description: 使用内容搜索和本文中的脚本在邮箱和 OneDrive for business 网站中搜索一组用户。
-ms.openlocfilehash: a9ee2db0bc0fc7a4b53c58f02bcb9d16f96fc403
-ms.sourcegitcommit: a6968df6e47ab5733a995f1efdc6e3676c5b5d7b
+ms.openlocfilehash: 9c8de90f8d2faee73ba269466f90478bc72b708e
+ms.sourcegitcommit: b262d40f6daf06be26e7586f37b736e09f8a4511
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/26/2019
-ms.locfileid: "35253921"
+ms.lasthandoff: 07/02/2019
+ms.locfileid: "35435142"
 ---
 # <a name="use-content-search-to-search-the-mailbox-and-onedrive-for-business-site-for-a-list-of-users"></a>使用内容搜索在邮箱和 OneDrive for Business 站点中搜索用户列表
 
@@ -34,14 +34,12 @@ Security & 合规性中心提供了许多 Windows PowerShell cmdlet, 可让您�
 - 在任何 Microsoft standard 支持计划或服务下, 不支持本主题中提供的示例脚本。 示例脚本按原样提供，不提供任何类型的担保。 Microsoft 进一步拒绝所有我[https://go.microsoft.com/fwlink/p/?LinkId=517283](https://go.microsoft.com/fwlink/p/?LinkId=517283)的 mplied 担保, 包括但不限于对适销性或特定用途适用性的任何暗示担保。 因使用或执行示例脚本和文档的风险均由您自己承担。 对于因使用或无法使用示例脚本或文档产生的任何损害（包括但不仅限于商业利润损失、业务中断、业务信息丢失或其他金钱损失），Microsoft、脚本作者以及参与脚本创建、生成或交付的任何人均不承担任何责任，即使 Microsoft 已被告知此类损害的可能性也是如此。
     
 ## <a name="step-1-install-the-sharepoint-online-management-shell"></a>步骤 1：安装 SharePoint Online 命令行管理程序
-<a name="step1"> </a>
 
 第一步是安装 SharePoint Online 命令行管理程序。 您不必在此过程中使用命令行管理程序, 但必须安装它, 因为它包含您在步骤3中运行的脚本所需的必备组件。 这些先决条件允许脚本与 SharePoint Online 通信, 以获取 OneDrive for business 网站的 Url。
   
 转到[设置 Sharepoint Online 命令行管理程序 Windows PowerShell 环境](https://go.microsoft.com/fwlink/p/?LinkID=286318)并执行步骤1和步骤 2, 安装 Sharepoint Online 命令行管理程序。
   
 ## <a name="step-2-generate-a-list-of-users"></a>步骤 2: 生成用户列表
-<a name="step2"> </a>
 
 步骤3中的脚本将创建内容搜索, 以便在邮箱和 OneDrive 帐户中搜索用户列表。 您可以只在文本文件中键入电子邮件地址, 也可以在 Windows PowerShell 中运行命令, 以获取电子邮件地址列表, 并将其保存到文件中 (位于步骤3中将脚本保存到的同一文件夹中)。
   
