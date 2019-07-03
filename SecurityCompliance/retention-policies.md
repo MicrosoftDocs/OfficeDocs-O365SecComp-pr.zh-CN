@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 借助保留策略，可主动决定是保留内容还是删除内容，亦或是先保留再删除内容；可将一个策略应用于整个组织，或只应用于特定位置或用户；并能将策略应用于所有内容，或只应用于满足特定条件的内容。
-ms.openlocfilehash: 8abb14550df526d702854e43ae1e25496bf390d4
-ms.sourcegitcommit: c603a07d24c4c764bdcf13f9354b3b4b7a76f656
+ms.openlocfilehash: 84470098cdbe1893a0e85dd52857bee428e58cbb
+ms.sourcegitcommit: b262d40f6daf06be26e7586f37b736e09f8a4511
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/21/2019
-ms.locfileid: "35131388"
+ms.lasthandoff: 07/02/2019
+ms.locfileid: "35435252"
 ---
 # <a name="overview-of-retention-policies"></a>保留策略概述
 
@@ -99,7 +99,7 @@ ms.locfileid: "35131388"
   
 如果用户尝试更改邮箱邮件的特定属性（如主题、正文、附件、发件人和收件人或邮件发送日期/接收日期），原始邮件的副本会在更改提交前保存到“可恢复项”文件夹中。之后每次更改都会这样保留。在保留期到期时，“可恢复项”文件夹中的副本会被永久删除。
   
-如果离开组织的用户的邮箱已纳入保留策略中，邮箱在用户的 Office 365 帐户被删除时成为非活动邮箱。非活动邮箱中的内容仍受在邮箱处于非活动状态前对邮箱应用的所有保留策略约束，并且可通过电子数据展示搜索找到这些内容。有关详细信息，请参阅 [Exchange Online 中的非活动邮箱](https://go.microsoft.com/fwlink/?linkid=846909)。
+如果离开组织的用户的邮箱已纳入保留策略中，邮箱在用户的 Office 365 帐户被删除时成为非活动邮箱。非活动邮箱中的内容仍受在邮箱处于非活动状态前对邮箱应用的所有保留策略约束，并且可通过电子数据展示搜索找到这些内容。有关详细信息，请参阅 [Exchange Online 中的非活动邮箱](inactive-mailboxes-in-office-365.md)。
   
 ![电子邮件和公用文件夹中的保留流关系图](media/88f174cc-bbf4-4305-93d7-0515f496c8f9.png)
   
