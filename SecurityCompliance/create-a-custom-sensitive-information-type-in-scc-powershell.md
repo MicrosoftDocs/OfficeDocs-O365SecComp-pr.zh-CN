@@ -3,7 +3,7 @@ title: 使用安全与合规中心 PowerShell 创建自定义敏感信息类型
 ms.author: deniseb
 author: denisebmsft
 manager: laurawi
-ms.audience: Admin
+audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Priority
@@ -13,18 +13,18 @@ search.appverid:
 - MOE150
 - MET150
 description: 了解如何在安全与合规中心创建并导入 DLP 的自定义敏感信息类型。
-ms.openlocfilehash: 7a21b62ddaf4d24793d4479d0d6270a18cc50532
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: b036d308a55dbd557c6b3dd5e0d5315d0d26bc83
+ms.sourcegitcommit: cc1b0281fa594cbb7c09f3e419df21aec9557831
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32259050"
+ms.lasthandoff: 07/02/2019
+ms.locfileid: "35417404"
 ---
 # <a name="create-a-custom-sensitive-information-type-in-security--compliance-center-powershell"></a>使用安全与合规中心 PowerShell 创建自定义敏感信息类型
 
 Office 365 中的数据丢失防护 (DLP) 包含许多内置[敏感信息类型](what-the-sensitive-information-types-look-for.md)，可供用于 DLP 策略。这些内置类型可有助于标识和保护信用卡号、银行帐号、护照号等。 
   
-不过，如果需要标识和保护其他类型的敏感信息（例如，使用组织专用格式的员工 ID），可创建自定义敏感信息类型。敏感信息类型在称为__“规则包”的 XML 文件中进行定义。
+但是，如果需要标识和保护不同敏感信息类型（如使用组织特定格式的员工 ID 或项目号），那该怎么办？为此，你可以创建在被称为*规则包*的 XML 文件中定义的敏感信息类型。
   
 本主题介绍了如何创建定义你自己的自定义敏感信息类型的 XML 文件。你需要知道如何创建正则表达式。例如，本主题创建标识员工 ID 的自定义敏感信息类型。你可从此示例 XML 入手，创建自己的 XML 文件。
   
@@ -228,14 +228,26 @@ Any 元素有可选的 minMatches 和 maxMatches 特性，可用于定义必须�
 ### <a name="match-at-least-one-child-match-element"></a>至少匹配一个 Match 子元素
 
 若要规定至少必须符合多少个 Match 元素，可使用 minMatches 特性。实际上，这些 Match 元素是通过隐式 OR 运算符进行联接。如果从任一列表中找到美国格式日期或关键字，就符合以下 Any 元素。
-  
-![显示包含 minMatches 特性的 Any 元素的 XML 标记](media/385db1b1-571b-4a05-81b3-db28f5099c17.png)
-  
+
+```
+<Any minMatches="1" >
+     <Match idRef="Func_us_date" />
+     <Match idRef="Keyword_employee" />
+     <Match idRef="Keyword_badge" />
+</Any>
+```
+    
 ### <a name="match-an-exact-subset-of-any-children-match-elements"></a>匹配确切的一部分 Match 子元素
 
 若要规定必须符合确切数量的 Match 元素，可以将 minMatches 和 maxMatches 设置为相同值。仅当找到确切的一个日期或关键字时，才符合以下 Any 元素。如果找到多个，便与模式不匹配。
-  
-![显示包含 minMatches 和 maxMatches 特性的 Any 元素的 XML 标记](media/97b10002-7781-42e8-ac5a-20ad8c5a887e.png)
+
+```
+<Any minMatches="1" maxMatches="1" >
+     <Match idRef="Func_us_date" />
+     <Match idRef="Keyword_employee" />
+     <Match idRef="Keyword_badge" />
+</Any>
+```
   
 ### <a name="match-none-of-children-match-elements"></a>与任何 Match 子元素都不匹配
 
@@ -243,7 +255,25 @@ Any 元素有可选的 minMatches 和 maxMatches 特性，可用于定义必须�
   
 例如，“员工 ID”实体查找关键字“卡”，因为这可能会指代“ID 卡”。不过，如果“卡”仅出现在短语“信用卡”中，此内容中的“卡”就不太可能表示“ID 卡”。因此，可以将“信用卡”作为关键字，添加到匹配模式时要排除的术语列表。
   
-![显示值为 0 的 maxMatches 特性的 XML 标记](media/f81d44e5-3db8-48a8-8919-f483a386afdf.png)
+```
+<Any minMatches="0" maxMatches="0" >
+    <Match idRef="Keyword_false_positives_local" />
+    <Match idRef="Keyword_false_positives_intl" />
+</Any>
+```
+
+### <a name="match-a-number-of-unique-terms"></a>匹配多个唯一术语
+
+如果要匹配多个唯一术语，请使用 *uniqueResults* 参数，将其设置为 *true*，如下例所示：
+
+```
+<Pattern confidenceLevel="75">
+    <IdMatch idRef="Salary_Revision_terms" />
+    <Match idRef=" Salary_Revision_ID " minCount="3" uniqueResults="true" />
+</Pattern>
+```
+
+在此示例中，使用至少三个唯一匹配为薪资修订定义模式。 
   
 ## <a name="how-close-to-the-entity-must-the-other-evidence-be-patternsproximity-attribute"></a>另一证据必须与实体有多接近？[patternsProximity 特性]
 
@@ -321,7 +351,7 @@ Version 元素也很重要。当你首次上传规则包时，Office 365 会记�
 
 之前，你可能使用 Exchange Online PowerShell 来导入 DLP 的自定义敏感信息类型。而现在，自定义敏感信息类型可同时在 Exchange 管理中心和安全与合规中心使用。作为该项改进的一部分，你应使用安全与合规中心 PowerShell 来导入自定义敏感信息类型 - 不可再从 Exchange PowerShell 中导入它们。自定义敏感信息类型将继续像之前一样发挥作用，但是可能 1 小时（最长时间）后，在安全与合规中心对自定义敏感信息所作的更改才会在 Exchange 管理中心显示。
   
-请注意，在安全与合规中心，请使用 `DlpSensitiveInformationTypeRulePackage` cmdlet 上传规则包。以前在 Exchange 管理中心使用的是 `ClassificationRuleCollection` cmdlet。 
+请注意，在安全与合规中心，要使用 **[New-DlpSensitiveInformationTypeRulePackage](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-dlp/new-dlpsensitiveinformationtyperulepackage?view=exchange-ps)** cmdlet 上传规则包。（以前，在 Exchange 管理中心，使用的是 **ClassificationRuleCollection**` cmdlet。） 
   
 ## <a name="upload-your-rule-package"></a>上传规则包
 
@@ -347,13 +377,13 @@ Version 元素也很重要。当你首次上传规则包时，Office 365 会记�
 
 5. 若要验证是否已成功创建新的敏感信息类型，请执行以下任意步骤：
 
-  - 运行以下命令并验证新规则包是否已列出：
+  - 运行 [Get-DlpSensitiveInformationTypeRulePackage](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-dlp/get-dlpsensitiveinformationtyperulepackage?view=exchange-ps) cmdlet，验证新规则包是否已列出：
 
     ```
     Get-DlpSensitiveInformationTypeRulePackage
     ``` 
 
-  - 运行以下命令并验证敏感信息类型是否已列出：
+  - Run the [Get-DlpSensitiveInformationType](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-dlp/get-dlpsensitiveinformationtype?view=exchange-ps)，验证敏感信息类型是否已列出：
 
     ```
     Get-DlpSensitiveInformationType
@@ -361,7 +391,7 @@ Version 元素也很重要。当你首次上传规则包时，Office 365 会记�
 
     对于自定义敏感信息类型，Publisher 属性值将不是 Microsoft Corporation。
 
-  - 将 \<Name\> 替换为敏感信息类型的 Name 值（例如，员工 ID），然后运行以下命令：
+  - 将 \<Name\> 替换为敏感信息类型的 Name 值（例如，员工 ID），然后运行 [Get-DlpSensitiveInformationType](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-dlp/get-dlpsensitiveinformationtype?view=exchange-ps) cmdlet：
 
     ```
     Get-DlpSensitiveInformationType -Identity "<Name>"
@@ -407,11 +437,12 @@ Version 元素也很重要。当你首次上传规则包时，Office 365 会记�
 
 DLP 使用搜索爬网程序，对网站内容中的敏感信息进行标识和分类。SharePoint Online 和 OneDrive for Business 中的内容会在更新后自动重新爬网。但若要标识所有现有内容中的新自定义敏感信息类型，必须对相应内容重新爬网。
   
-在 Office 365 中，无法手动请求对整个租户进行重新爬网，但可以对网站集、列表或库这样做。请参阅[手动请求对网站、库或列表进行爬网和重新编制索引](https://support.office.com/article/9afa977d-39de-4321-b4ca-8c7c7e6d264e)。
+在 Office 365 中，无法手动请求对整个租户进行重新爬网，但可以对网站集、列表或库这样做。请参阅[手动请求对网站、库或列表进行爬网和重新编制索引](https://docs.microsoft.com/sharepoint/crawl-site-content)。
   
 ## <a name="remove-a-custom-sensitive-information-type"></a>删除自定义敏感信息类型
 
-**** 注意：在删除自定义敏感信息类型之前，请确定没有 DLP 策略或 Exchange 邮件流规则（也称为“传输规则”）仍在引用敏感信息类型。
+> [!NOTE]
+> 删除自定义敏感信息类型前，请先验证没有 DLP 策略或 Exchange 邮件流规则（亦称为“传输规则”）仍在引用此敏感信息类型。
 
 在安全与合规中心 PowerShell 中，有两种方法可以删除自定义敏感信息类型：
 
@@ -421,7 +452,7 @@ DLP 使用搜索爬网程序，对网站内容中的敏感信息进行标识和�
 
 1. [连接到安全与合规中心 PowerShell](http://go.microsoft.com/fwlink/p/?LinkID=799771)
 
-2. 若要删除自定义规则包，请使用以下语法：
+2. 若要删除自定义规则包，请使用 [Remove-DlpSensitiveInformationTypeRulePackage](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-dlp/remove-dlpsensitiveinformationtyperulepackage?view=exchange-ps) cmdlet：
 
     ```
     Remove-DlpSensitiveInformationTypeRulePackage -Identity "RulePackageIdentity"
@@ -439,13 +470,13 @@ DLP 使用搜索爬网程序，对网站内容中的敏感信息进行标识和�
 
 3. 若要验证是否已成功删除自定义敏感信息类型，请执行以下任意步骤：
 
-  - 运行以下命令并验证新规则包是否不再列出：
+  - 运行 [Get-DlpSensitiveInformationTypeRulePackage](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-dlp/get-dlpsensitiveinformationtyperulepackage?view=exchange-ps) cmdlet，验证规则包不再列出：
 
     ```
     Get-DlpSensitiveInformationTypeRulePackage
     ``` 
 
-  - 运行以下命令并验证已删除的规则包中的敏感信息类型是否不再列出：
+  - 运行 [Get-DlpSensitiveInformationType](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-dlp/get-dlpsensitiveinformationtype?view=exchange-ps) cmdlet，验证已删除的规则包中的敏感信息类型不再列出：
 
     ```
     Get-DlpSensitiveInformationType
@@ -453,7 +484,7 @@ DLP 使用搜索爬网程序，对网站内容中的敏感信息进行标识和�
 
     对于自定义敏感信息类型，Publisher 属性值将不是 Microsoft Corporation。
 
-  - 将 \<Name\> 替换为敏感信息类型的 Name 值（例如，员工 ID），然后运行以下命令，验证敏感信息类型是否不再列出：
+  - 将 \<Name\> 替换为敏感信息类型的 Name 值（例如，员工 ID），然后运行 [Get-DlpSensitiveInformationType](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-dlp/get-dlpsensitiveinformationtype?view=exchange-ps) cmdlet ，验证敏感信息类型是否不再列出：
 
     ```
     Get-DlpSensitiveInformationType -Identity "<Name>"
@@ -473,9 +504,10 @@ DLP 使用搜索爬网程序，对网站内容中的敏感信息进行标识和�
 
 #### <a name="step-1-export-the-existing-rule-package-to-an-xml-file"></a>步骤 1：将现有的规则包导出到 XML 文件
 
-**** 注意：如果有 XML 文件的副本 （例如，只需创建并导入它），可跳到下一步来修改 XML 文件。
+> [!NOTE]
+> 如果有 XML 文件的副本 （例如，只需创建并导入它），可跳到下一步来修改 XML 文件。
 
-1. 如果你还不确定，请运行以下命令，查找自定义规则包的名称：
+1. 如果你还不确定，请运行 [Get-DlpSensitiveInformationTypeRulePackage](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-dlp/get-dlpsensitiveinformationtype?view=exchange-ps) cmdlet，查找自定义规则包的名称：
 
     ```
     Get-DlpSensitiveInformationTypeRulePackage
@@ -483,19 +515,19 @@ DLP 使用搜索爬网程序，对网站内容中的敏感信息进行标识和�
 
     **** 注意：包含内置敏感信息类型的内置规则包名为 Microsoft Rule Package。包含你在安全与合规中心 UI 中创建的自定义敏感信息类型的规则包名为 Microsoft.SCCManaged.CustomRulePack。
 
-2. 使用以下语法将自定义规则包存储到变量：
+2. 使用 [Get-DlpSensitiveInformationTypeRulePackage](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-dlp/get-dlpsensitiveinformationtyperulepackage?view=exchange-ps) cmdlet，将自定义规则包存储到变量：
 
     ```
     $rulepak = Get-DlpSensitiveInformationTypeRulePackage -Identity "RulePackageName"
     ```
 
-   例如，如果规则包的名称是“Employee ID Custom Rule Pack”，请运行以下命令：
+   例如，如果规则包的名称是“Employee ID Custom Rule Pack”，请运行以下 cmdlet：
 
     ```
     $rulepak = Get-DlpSensitiveInformationTypeRulePackage -Identity "Employee ID Custom Rule Pack"
     ```
 
-3. 使用以下语法将自定义规则包导出到 XML 文件：
+3. 使用 [Set-Content](https://docs.microsoft.com/powershell/module/microsoft.powershell.management/set-content?view=powershell-6) cmdlet 将自定义规则包导出到 XML 文件：
 
     ```
     Set-Content -Path "XMLFileAndPath" -Encoding Byte -Value $rulepak.SerializedClassificationRuleCollection
@@ -513,18 +545,10 @@ DLP 使用搜索爬网程序，对网站内容中的敏感信息进行标识和�
 
 #### <a name="step-3-import-the-updated-xml-file-back-into-the-existing-rule-package"></a>步骤 3：将更新的 XML 文件导回现有规则包。
 
-若要将更新的 XML 导回现有规则包，请使用以下语法：
+若要将更新的 XML 导回现有规则包，请使用 [Set-DlpSensitiveInformationTypeRulePackage](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-dlp/set-dlpsensitiveinformationtyperulepackage?view=exchange-ps) cmdlet：
 
 ```
-Set-DlpSensitiveInformationTypeRulePackage -Identity "RulePackageIdentity" -FileData (Get-Content -Path "PathToUnicodeXMLFile" -Encoding Byte)
-```
-
-可使用 Name 值或 `RulePack id` (GUID) 值来标识规则包。
-
-本示例将名为 MyUpdatedRulePack.xml 的已更新 Unicode XML 文件从 C:\My Documents 上传到名为“Employee ID Custom Rule Pack”的现有规则包中。
-
-```
-Set-DlpSensitiveInformationTypeRulePackage -Identity "Employee ID Custom Rule Pack" -FileData (Get-Content -Path "C:\My Documents\MyUpdatedRulePack.xml" -Encoding Byte)
+Set-DlpSensitiveInformationTypeRulePackage -FileData ([Byte[]]$(Get-Content -Path "C:\My Documents\External Sensitive Info Type Rule Collection.xml" -Encoding Byte -ReadCount 0))
 ```
 
 有关语法和参数的详细信息，请参阅 [Set-DlpSensitiveInformationTypeRulePackage](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-dlp/set-dlpsensitiveinformationtyperulepackage)。
