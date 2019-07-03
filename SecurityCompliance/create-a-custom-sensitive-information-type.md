@@ -1,11 +1,12 @@
 ---
-title: 创建自定义敏感信息类型
+title: 在安全与合规中心内创建自定义敏感信息类型
 ms.author: deniseb
 author: denisebmsft
 manager: laurawi
-ms.audience: Admin
+audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
+ms.date: 04/17/2019
 localization_priority: Priority
 ms.collection:
 - M365-security-compliance
@@ -13,54 +14,26 @@ search.appverid:
 - MOE150
 - MET150
 description: 了解如何在安全与合规中心的图形用户界面中为 DLP 创建、修改、删除和测试自定义敏感信息类型。
-ms.openlocfilehash: de7bbc8ee624fe9468dc64a9811db31d529984bf
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: 55e54bf8b49ec21bb5ed4f161efc4e5924ee52fb
+ms.sourcegitcommit: 0d5a863f48914eeaaf29f7d2a2022618de186247
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32258244"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "34077738"
 ---
-# <a name="create-a-custom-sensitive-information-type"></a>创建自定义敏感信息类型
+# <a name="create-a-custom-sensitive-information-type-in-the-security--compliance-center"></a>在安全与合规中心内创建自定义敏感信息类型
 
-Office 365 中的数据丢失防护 (DLP) 包含许多内置[敏感信息类型](what-the-sensitive-information-types-look-for.md)，可供用于 DLP 策略。这些内置类型可有助于标识和保护信用卡号、银行帐号、护照号等。 
+## <a name="summary"></a>摘要
 
-不过，如果需要标识和保护其他类型的敏感信息（例如，使用组织专用格式的员工 ID 或项目编号），可创建自定义敏感信息类型。
+阅读本文，以在安全与合规中心 ([https://protection.office.com](https://protection.office.com)) 内创建[自定义敏感信息类型](custom-sensitive-info-types.md)。 使用此方法创建的自定义敏感信息类型将添加到名为 `Microsoft.SCCManaged.CustomRulePack` 的规则包中。
 
-自定义敏感信息类型的基本组成部分是：
+此外，还可以使用 PowerShell 和精确的数据匹配功能创建自定义敏感信息类型。 若要了解有关这些方法的详细信息，请参阅：
+- [使用安全与合规中心 PowerShell 创建自定义敏感信息类型](create-a-custom-sensitive-information-type-in-scc-powershell.md)
+- [使用精确数据匹配 (EDM) 为 DLP 创建自定义敏感信息类型](create-custom-sensitive-info-type-edm.md)
 
-- **主要模式**：员工 ID 号、项目编号等。这通常是由正则表达式 (RegEx) 标识，但也可以是关键字列表。
+## <a name="before-you-begin"></a>开始之前...
 
-- **额外证据**：假设要查找 9 位数员工 ID 号。由于并非所有 9 位数都是员工 ID 号，因此可查找其他文本：“员工”、“徽章”、“ID”等关键字或其他基于额外正则表达式的文本模式。此支持性证据（亦称为_支持性_或_确证性_证据）提高了在内容中找到的 9 位数确实是员工 ID 号的可能性。
-
-- **字符临近度**：主要模式和支持性证据越临近，检测到的内容就越有可能是要查找的内容。可指定主要模式和支持性证据之间的字符距离（亦称为_临近度窗口_），如下图所示：
-
-    ![确证性证据和临近度窗口的关系图](media/dc68e38e-dfa1-45b8-b204-89c8ba121f96.png)
-
-- **可信度**：支持性证据越多，匹配结果就越有可能包含要查找的敏感信息。可以为使用更多证据检测到的匹配结果指定更高可信度。
-
-  如果符合，模式会返回可用于 DLP 策略条件的计数和可信度。向 DLP 策略添加用于检测敏感信息类型的条件时，可编辑计数和可信度，如下图所示：
-
-    ![“实例计数”和“匹配准确度”选项](media/11d0b51e-7c3f-4cc6-96d8-b29bcdae1aeb.png)
-
-若要在安全与合规中心内创建自定义敏感信息类型，可使用以下两种方法：
-
-- **使用 UI**：此方法更便捷，但配置选项比 PowerShell 少。本主题的其余部分将介绍这些过程。
-
-- **使用 PowerShell**：此方法要求，必须先创建包含一个或多个敏感信息类型的 XML 文件（称为_规则包_），再使用 PowerShell 导入规则包（与创建规则包相比，导入规则包无关紧要）。虽然此方法比 UI 复杂得多，但配置选项更多。有关说明，请参阅[使用安全与合规中心 PowerShell 创建自定义敏感信息类型](create-a-custom-sensitive-information-type-in-scc-powershell.md)。
-
-下表列出了关键区别：
-
-|**UI 中的自定义敏感信息类型**|**PowerShell 中的自定义敏感信息类型**|
-|:-----|:-----|
-|名称和说明采用一种语言。|支持名称和说明的多种语言。|
-|支持一个模式。|支持多个模式。|
-|支持性证据可以是： <br/>• 正则表达式 <br/>• 关键字 <br/>• 关键字字典|支持性证据可以是： <br/>• 正则表达式 <br/>• 关键字 <br/>• 关键字字典 <br/>• [内置 DLP 函数](what-the-dlp-functions-look-for.md)|
-|将自定义敏感信息类型添加到名为 Microsoft.SCCManaged.CustomRulePack 的规则包中|最多可创建 10 个包含自定义敏感信息类型的规则包。|
-|模式匹配需要检测主模式和所有支持性证据（使用隐式 AND 运算符）。|模式匹配需要检测主要模式和一组数量可配置的支持性证据（可使用隐式 AND 和 OR 运算符）。|
-
-## <a name="what-do-you-need-to-know-before-you-begin"></a>在开始之前，您需要知道什么？
-
-- 若要打开安全与合规中心，请参阅[转到安全与合规中心](go-to-the-securitycompliance-center.md)。
+- 组织必须具有包含数据丢失防护 (DLP) 的订阅（如 Office 365 企业版）。 请参阅[邮件策略和合规性服务说明](https://docs.microsoft.com/office365/servicedescriptions/exchange-online-protection-service-description/messaging-policy-and-compliance-servicedesc)。 
 
 - 自定义敏感信息类型需要熟悉正则表达式 (RegEx)。有关用于处理文本的 Boost.RegEx（以前称为 RegEx++）引擎的详细信息，请参阅 [Boost.Regex 5.1.3](https://www.boost.org/doc/libs/1_68_0/libs/regex/doc/html/)。
 
