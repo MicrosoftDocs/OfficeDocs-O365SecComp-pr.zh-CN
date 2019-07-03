@@ -11,12 +11,12 @@ ms.collection:
 - M365-security-compliance
 localization_priority: None
 description: 使用本文作为对可在信息屏障策略中使用的各种属性的参考。
-ms.openlocfilehash: 896b87a3ccc696d3a8193e37237fe555d326ca52
-ms.sourcegitcommit: 011bfa60cafdf47900aadf96a17eb275efa877c4
+ms.openlocfilehash: 1537dae2c99555a9257bbe5c3f9754a1f975fbbe
+ms.sourcegitcommit: 8f399f260687d17a497a15bcc644187c277ea8fe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/29/2019
-ms.locfileid: "35394307"
+ms.lasthandoff: 07/03/2019
+ms.locfileid: "35462403"
 ---
 # <a name="attributes-for-information-barrier-policies-preview"></a>信息屏障策略的属性 (预览)
 
@@ -35,9 +35,9 @@ Azure Active Directory 中的某些属性可用于分段用户。 在定义段�
 
 2. 确保已为您在步骤1中选择的属性填写了用户帐户的值。 查看用户帐户详细信息, 如有必要, 请编辑用户帐户以包含属性值。 
 
-    若要使用 PowerShell 执行此操作, 请参阅[Configure user account properties With Office 365 PowerShell](https://docs.microsoft.com/office365/enterprise/powershell/configure-user-account-properties-with-office-365-powershell)。
+    - 若要编辑多个帐户 (或使用 PowerShell 编辑单个帐户), 请参阅[Configure user account properties With Office 365 PowerShell](https://docs.microsoft.com/office365/enterprise/powershell/configure-user-account-properties-with-office-365-powershell)。
 
-    若要在 Azure Active Directory 中执行此操作, 请参阅[使用 Azure Active Directory 添加或更新用户的配置文件信息](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-users-profile-azure-portal)。
+    - 若要编辑单个帐户, 请参阅[使用 Azure Active Directory 添加或更新用户的配置文件信息](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-users-profile-azure-portal)。
 
 3. [使用 PowerShell 定义分段](information-barriers-policies.md#define-segments-using-powershell), 类似于以下示例:
 
@@ -54,7 +54,7 @@ Azure Active Directory 中的某些属性可用于分段用户。 在定义段�
 
 下表列出了可用于信息障碍的属性。
 
-|Azure Active Directory 属性名称 (LDAP 显示名称)  |Exchange 属性名称  |
+|Azure Active Directory 属性名称<br/>(LDAP 显示名称)  |Exchange 属性名称  |
 |---------|---------|
 |合著       | 合著        |
 |Company     |公司         |
