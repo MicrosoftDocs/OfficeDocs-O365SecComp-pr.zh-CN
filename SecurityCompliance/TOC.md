@@ -30,7 +30,7 @@
 ### [将敏感度标签自动应用于内容](apply-sensitivity-label-automatically.md)
 ### [使用标签分析查看标签使用情况](label-analytics.md)
 
-## [数据丢失防护 (DLP)](data-loss-prevention-policies.md)
+## [Data loss prevention (DLP)](data-loss-prevention-policies.md)
 ### [DLP 和 Microsoft Teams](dlp-microsoft-teams.md)
 ### [观看 DLP 的扩展概述](https://channel9.msdn.com/events/ignite/microsoft-ignite-orlando-2017/brk3111)
 ### 设置 DLP
@@ -103,6 +103,7 @@
 #### [使用示例连接器存档 Facebook 数据](archive-facebook-data-with-sample-connector.md)
 #### [使用示例连接器存档 Twitter 数据](archive-twitter-data-with-sample-connector.md)
 #### [设置连接器以存档 LinkedIn 数据](archive-linkedin-data.md)
+#### [设置连接器以存档 Instant Bloomberg 数据](archive-instant-bloomberg-data.md)
 #### [与合作伙伴联系以存档第三方数据](work-with-partner-to-archive-third-party-data.md)
 ## 存储数据
 ### [启用存档邮箱](enable-archive-mailboxes.md)
@@ -245,6 +246,7 @@
 #### [使用示例连接器存档 Facebook 数据](archive-facebook-data-with-sample-connector.md)
 #### [使用示例连接器存档 Twitter 数据](archive-twitter-data-with-sample-connector.md)
 #### [设置连接器以存档 LinkedIn 数据](archive-linkedin-data.md)
+#### [设置连接器以存档 Instant Bloomberg 数据](archive-instant-bloomberg-data.md)
 #### [与合作伙伴联系以存档第三方数据](work-with-partner-to-archive-third-party-data.md)
 ## 存储数据
 ### [启用存档邮箱](enable-archive-mailboxes.md)
@@ -482,6 +484,7 @@
 ## [启用或禁用审核日志搜索](turn-audit-log-search-on-or-off.md)
 ## [管理邮箱审核](enable-mailbox-auditing.md)
 ## [审核日志中的详细属性](detailed-properties-in-the-office-365-audit-log.md)
+## [导出、配置和查看审核日志记录](export-view-audit-log-records.md)
 ## [使用审核日志对常见方案进行故障排除](auditing-troubleshooting-scenarios.md)
 ## [在审核日志中使用共享审核](use-sharing-auditing.md)
 ## [在审核日志中搜索电子数据展示活动](search-for-ediscovery-activities-in-the-audit-log.md)
