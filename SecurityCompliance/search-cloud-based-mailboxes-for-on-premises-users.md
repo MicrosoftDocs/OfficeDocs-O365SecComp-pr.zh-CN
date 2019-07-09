@@ -15,16 +15,16 @@ search.appverid:
 - MET150
 ms.assetid: 3f7dde1a-a8ea-4366-86da-8ee6777f357c
 description: 使用安全 & 合规中心中的内容搜索工具在 Exchange 混合部署中搜索和导出本地用户的 MicrosoftTeams 聊天数据 (称为1xN 聊天)。
-ms.openlocfilehash: eb53daa381b89d8ded4f2400ed7781e2306eb263
-ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
+ms.openlocfilehash: b08e1ea9ea9fb9fe834bb10948be532cbc4337b4
+ms.sourcegitcommit: 6b2ca6bd153d24a717d6c537efd2d41d35c20a0b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "34158734"
+ms.lasthandoff: 07/09/2019
+ms.locfileid: "35587799"
 ---
 # <a name="searching-cloud-based-mailboxes-for-on-premises-users-in-office-365"></a>在 Office 365 中搜索本地用户的基于云的邮箱
 
-如果你的组织具有 Exchange 混合部署, 并且已启用 Microsoft 团队, 则用户可以使用团队聊天应用程序进行即时消息传递。 对于基于云的用户, 团队聊天数据 (也称为1xN 聊天) 保存到其主要的基于云的邮箱中。 当本地用户使用团队聊天应用程序时, 其主邮箱位于本地。 为了避免此限制, Microsoft 已发布了一个新功能, 其中创建了基于云的存储区域 (称为本地用户的基于云的邮箱), 以存储本地用户的团队聊天数据。 这样, 您就可以使用安全 & 合规中心中的内容搜索工具搜索和导出本地用户的团队聊天数据。 
+如果你的组织具有 Exchange 混合部署, 并且已启用 Microsoft 团队, 则用户可以使用团队聊天应用程序进行即时消息传递。 对于基于云的用户, 团队聊天数据 (也称为1xN 聊天) 保存到其主要的基于云的邮箱中。 当本地用户使用团队聊天应用程序时, 其主邮箱位于本地。 为了避免此限制, Microsoft 已发布了一个新功能, 其中创建了基于云的存储区域 (称为本地用户的基于云的邮箱), 以存储本地用户的团队聊天数据。 这使您可以使用安全 & 合规中心中的内容搜索工具搜索和导出本地用户的团队聊天数据。 
   
 以下是为本地用户设置和搜索基于云的邮箱的要求和限制:
   
@@ -48,7 +48,7 @@ ms.locfileid: "34158734"
 
 ## <a name="filing-a-request-with-microsoft-support-to-enable-this-feature"></a>将请求与 Microsoft 支持一起存档以启用此功能
 
-您必须将请求与 Microsoft 支持文件一起使用, 以使组织能够在安全 & 合规性中心中使用图形用户界面搜索本地用户的基于云的邮箱中的团队聊天数据。 请注意, 安全 & 合规中心 PowerShell 中提供了此功能。 您无需提交支持请求即可使用 PowerShell 搜索本地用户的团队聊天数据。 
+您必须将请求与 Microsoft 支持文件一起使用, 以使组织能够在安全 & 合规性中心中使用图形用户界面在基于云的邮箱中搜索团队对话数据, 以供本地用户使用。 此功能在安全 & 合规性中心 PowerShell 中可用。 您无需提交支持请求即可使用 PowerShell 搜索本地用户的团队聊天数据。 
   
 向 Microsoft 支持部门提交请求时, 请包含以下信息:
   
@@ -56,13 +56,13 @@ ms.locfileid: "34158734"
     
 - Office 365 组织的租户名称和租户 ID。 您可以在 Azure Active Directory 门户中找到这些文件 (在 "**管理** \> **属性**" 下)。 请参阅[查找 Office 365 租户 ID](https://support.office.com/article/6891b561-a52d-4ade-9f39-b492285e2c9b)。
     
-- 支持请求的用途的以下标题或说明: "启用本地用户的应用程序内容搜索"。 这将有助于将请求路由到将实现请求的 Office 365 电子数据展示工程团队。 
+- 支持请求的用途的以下标题或说明: "启用本地用户的应用程序内容搜索"。 这有助于将请求路由到将实现请求的 Office 365 电子数据展示工程团队。 
     
-在进行工程更改之后, Microsoft 支持将向您发送估计的部署日期。 请注意, 在提交支持请求后, 部署过程通常需要2-3 周。 
+在进行工程更改之后, Microsoft 支持将向您发送估计的部署日期。 在提交支持请求后, 部署过程通常需要2-3 周。 
   
 ### <a name="what-happens-after-this-feature-is-enabled"></a>启用此功能后, 会发生什么？
 
-在 Office 365 组织中部署此功能后, 将在内容搜索和与 Security & 合规中心中的电子数据展示事例相关的搜索中进行以下更改:
+在 Office 365 组织中部署此功能后, 将在内容搜索和与安全 & 合规性中心中的电子数据展示事例相关的搜索中进行以下更改:
   
 - "为**本地用户添加 Office 应用内容**" 复选框将添加到内容搜索中的**位置**下。 
     
@@ -74,13 +74,13 @@ ms.locfileid: "34158734"
   
 ## <a name="searching-for-teams-chat-content-in-cloud-based-mailboxes-for-on-premises-users"></a>搜索团队在基于云的邮箱中为本地用户聊天内容
 
-启用此功能后, 您可以使用安全 & 合规中心中的内容搜索来搜索团队对话中的用户的基于云的邮箱中的数据。 
+启用此功能后, 您可以使用安全性 & 合规性中心中的内容搜索, 在基于云的邮箱中搜索团队对话数据以供本地用户使用。 
   
-1. 在安全 & 合规性中心中, 转到 "**搜索** \> **内容搜索**"
+1. 在安全 & 合规性中心中, 转到**搜索** \> **内容搜索**
     
 2. 在 "**搜索**" 页上![, 单击](media/8ee52980-254b-440b-99a2-18d068de62d3.gif) "添加图标" "**新建搜索**"。
     
-    如前所述, "为**本地用户添加 Office 应用内容**" 复选框将显示在 "**位置**" 下。 请注意, 默认情况下它处于选中状态。
+    如前所述, "为**本地用户添加 Office 应用内容**" 复选框将显示在 "**位置**" 下。 默认情况下已选中它。
     
 3. 创建关键字查询, 并在必要时向搜索查询添加条件。 若要仅搜索工作组聊天数据, 您可以在 "**关键字**" 框中添加以下查询: 
     
@@ -92,13 +92,13 @@ ms.locfileid: "34158734"
     
     - **所有位置**-选择此选项可搜索组织中所有用户的邮箱。 选中此复选框后, 还将搜索本地用户的所有基于云的邮箱。 
     
-    - **特定位置**-选择此选项, 然后单击 "**修改** \> ", 选择 "用户"、"组" 或 "团队" 以搜索特定邮箱。 如前所述, 位置选取器可让你搜索内部部署用户。 
+    - **特定位置**-选择此选项, 然后单击 "**修改** \> ", 选择 "用户"、"组" 或 "团队" 以搜索特定邮箱。 如前所述, 位置选取器允许您搜索内部部署用户。 
     
-5. 保存并运行搜索。 从基于云的邮箱对本地用户的任何搜索结果都可以像在任何其他搜索结果中一样进行预览。 此外, 还可以将搜索结果 (包括任何团队聊天数据) 导出到 PST 文件。 有关详细信息，请参阅： 
+5. 保存并运行搜索。 从基于云的邮箱对本地用户的任何搜索结果都可以像在任何其他搜索结果中一样进行预览。 您还可以将搜索结果 (包括任何团队聊天数据) 导出到 PST 文件。 有关详细信息，请参阅： 
     
-    - [创建新的搜索](content-search.md#create-a-new-search)
+    - [Create a search](content-search.md#create-a-search)
     
-    - [预览搜索结果](content-search.md#preview-search-results)
+    - [Preview search results](content-search.md#preview-search-results)
     
     - [导出内容搜索结果](export-search-results.md)
     
@@ -106,9 +106,9 @@ ms.locfileid: "34158734"
 
 您可以使用 Security & 合规性中心 PowerShell 中的**new-compliancesearch**和**new-compliancesearch** cmdlet 在基于云的邮箱中搜索本地用户。 如前所述, 您无需提交支持请求即可使用 PowerShell 搜索本地用户的团队聊天数据。 
   
-1. [连接到安全 _AMP_ 合规中心 PowerShell](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell)。
+1. [连接到安全 & 合规性中心 PowerShell](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell)。
     
-2. 运行以下 PowerShell 命令创建新的内容搜索内部部署用户的基于云的邮箱。
+2. 运行以下 PowerShell 命令, 以创建搜索本地用户的基于云的邮箱的内容搜索。
     
     ```
     New-ComplianceSearch <name of new search> -ContentMatchQuery <search query> -ExchangeLocation <on-premises user> -IncludeUserAppContent $true -AllowNotFoundExchangeLocationsEnabled $true  
@@ -122,7 +122,7 @@ ms.locfileid: "34158734"
     New-ComplianceSearch "Redstone_Search" -ContentMatchQuery "redstone AND kind:im" -ExchangeLocation sarad@contoso.com -IncludeUserAppContent $true -AllowNotFoundExchangeLocationsEnabled $true  
     ```
 
-   在创建新的搜索后, 请务必使用**new-compliancesearch** cmdlet 运行搜索。 
+   创建搜索后, 请务必使用**new-compliancesearch** cmdlet 运行搜索。 
   
 有关使用这些 cmdlet 的详细信息, 请参阅:
   
@@ -147,7 +147,7 @@ ms.locfileid: "34158734"
   
  **除了提交支持请求之外, 是否还有其他任何要求？**
   
- 如前所述, 具有本地邮箱的用户的标识必须同步到您的基于云的组织, 以便为 Office 365 中的每个本地用户帐户创建相应的邮件用户帐户。 此外, 您的组织必须具有 Office 365 企业版订阅, 例如 Office 365 企业版 E1、E3 或 E5 订阅。 
+ 如前所述, 具有本地邮箱的用户的标识必须同步到您的基于云的组织, 以便为 Office 365 中的每个本地用户帐户创建相应的邮件用户帐户。 您的组织还必须具有 Office 365 企业版订阅, 例如 Office 365 企业版 E1、E3 或 E5 订阅。 
   
  **如果将用户的内部部署邮箱迁移到云, 是否有丢失团队聊天数据的风险？**
   

@@ -3,7 +3,7 @@ title: 自定义内置敏感信息类型
 ms.author: deniseb
 author: denisebmsft
 manager: laurawi
-ms.date: 04/03/2019
+ms.date: 07/08/2019
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 在内容中查找敏感信息时，需要在规则中描述相应信息。数据丢失防护 (DLP) 包含最常见敏感信息类型对应的规则，可供立即使用。若要使用这些规则，必须将它们添加到策略中。你可能会发现，需要调整这些内置规则，才能满足组织的特定需求。为此，请创建自定义敏感信息类型。本主题介绍了如何将包含现有规则集合的 XML 文件自定义为，检测更广泛的潜在信用卡信息。
-ms.openlocfilehash: ddfd8bd82164fde6d2121b37d867caaa69355b4b
-ms.sourcegitcommit: 0d5a863f48914eeaaf29f7d2a2022618de186247
+ms.openlocfilehash: 8a621e3f1b24a8cea9cd263e44dc2def8a8b95b7
+ms.sourcegitcommit: a6f046f1529b0515f4f0e918a19ec83f4138b871
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34077198"
+ms.lasthandoff: 07/08/2019
+ms.locfileid: "35587101"
 ---
 # <a name="customize-a-built-in-sensitive-information-type"></a>自定义内置敏感信息类型
 
@@ -214,7 +214,7 @@ ms.locfileid: "34077198"
 |:-----|:-----|
 |实体|实体是我们称为敏感信息类型的项目，例如信用卡号。每个实体都有一个唯一的 GUID 作为其 ID。如果您复制 GUID 并在 XML 中搜索它，您将找到 XML 规则定义以及该 XML 规则的所有本地化翻译。您也可以通过查找翻译的 GUID 并搜索该 GUID 来查找此定义。|
 |函数|XML 文件引用 `Func_credit_card`，这是用代码编译而成的函数。函数用于运行复杂的正则表达式，并验证校验和是否符合内置规则。由于这是发生在代码中，因此一些变量不会显示在 XML 文件中。|
-|IdMatch|这是模式尝试要匹配的标识符（例如，信用卡号）。可参阅[实体规则](https://support.office.com/article/c4ab8707-0839-4855-9390-3dbcb43475a7.aspx#dlp-entity)，详细了解此标识符和 `Match` 标记。|
+|IdMatch|这是尝试匹配的模式的标识符，例如信用卡号。|
 |关键字列表|XML 文件还引用 `keyword_cc_verification` 和 `keyword_cc_name`，这是要在实体的 `patternsProximity` 范围内匹配的关键字列表。这些关键字暂不显示在 XML 中。|
 |模式|模式包含敏感类型所查找内容的列表。这包括关键字、regex 和内部函数（执行验证校验和之类的任务）。敏感信息类型可能具有多个模式，每个模式均具有唯一的可信度。这在创建敏感信息类型时非常有用：当它找到确定证据时，返回高可信度；当未找到确定证据时，则返回较低的可信度。|
 |模式可信度|这是指 DLP 引擎找到匹配的可信度。如果满足模式的要求，则可信度与模式匹配有关。这是当您使用 Exchange 邮件流规则（也称为传输规则）时应考虑的可信度衡量标准。|
