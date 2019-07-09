@@ -537,11 +537,11 @@
 ### [合规性管理器（预览版）新增功能](compliance-manager-release-notes.md)
 ### [使用合规性管理器（预览版）](working-with-compliance-manager.md)
 ### [合规性分数计算方法（预览版）](compliance-score-methodology.md)
-## [信息屏障（预览）](information-barriers.md)
-### [定义信息屏障策略（预览）](information-barriers-policies.md)
-### [信息屏障策略的属性（预览）](information-barriers-attributes.md)
-### [信息屏障疑难解答（预览）](information-barriers-troubleshooting.md)
-### [编辑信息屏障策略（预览）](information-barriers-edit-segments-policies.md.md)
+## [信息屏障](information-barriers.md)
+### [定义信息屏障策略](information-barriers-policies.md)
+### [信息屏障策略的属性](information-barriers-attributes.md)
+### [信息屏障疑难解答](information-barriers-troubleshooting.md)
+### [编辑信息屏障策略](information-barriers-edit-segments-policies.md.md)
 
 
 ## 客户密钥
