@@ -3,7 +3,7 @@ title: 信息障碍故障排除
 ms.author: deniseb
 author: denisebmsft
 manager: laurawi
-ms.date: 06/28/2019
+ms.date: 07/08/2019
 audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
@@ -11,16 +11,16 @@ ms.collection:
 - M365-security-compliance
 localization_priority: None
 description: 使用本文作为对信息障碍进行故障排除的指导。
-ms.openlocfilehash: 20937fa4ee050dfa1e3bb4fcfcd582b1c78ccead
-ms.sourcegitcommit: 011bfa60cafdf47900aadf96a17eb275efa877c4
+ms.openlocfilehash: 251fc1775318e2ed7cbda9a56e2c82db527082f6
+ms.sourcegitcommit: a6f046f1529b0515f4f0e918a19ec83f4138b871
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/29/2019
-ms.locfileid: "35394297"
+ms.lasthandoff: 07/08/2019
+ms.locfileid: "35587051"
 ---
-# <a name="troubleshooting-information-barriers-preview"></a>解决信息障碍 (预览)
+# <a name="troubleshooting-information-barriers"></a>信息障碍故障排除
 
-[信息障碍 (预览版)](information-barriers.md)可帮助您的组织遵守法律要求和行业法规。 例如, 通过信息障碍, 可以限制特定用户组之间的通信, 以避免利益冲突或其他问题。 (若要了解有关如何设置信息屏障的详细信息, 请参阅[定义信息障碍策略 (预览版)](information-barriers-policies.md)。)
+[信息障碍](information-barriers.md)可帮助您的组织遵守法律要求和行业法规。 例如, 通过信息障碍, 可以限制特定用户组之间的通信, 以避免利益冲突或其他问题。 (若要了解有关如何设置信息屏障的详细信息, 请参阅[定义信息障碍策略](information-barriers-policies.md)。)
 
 如果用户在发生信息障碍后遇到意外问题, 则可以采取一些步骤来解决这些问题。 将本文用作指南。
 
@@ -171,9 +171,9 @@ ms.locfileid: "35394297"
 
 ## <a name="related-topics"></a>相关主题
 
-[为 Microsoft 团队中的信息障碍定义策略 (预览)](information-barriers-policies.md)
+[在 Microsoft 团队中定义信息障碍策略](information-barriers-policies.md)
 
-[信息障碍 (预览)](information-barriers.md)
+[信息障碍](information-barriers.md)
 
 
 

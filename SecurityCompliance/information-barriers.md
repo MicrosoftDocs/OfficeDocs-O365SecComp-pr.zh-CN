@@ -3,7 +3,7 @@ title: 信息障碍概述
 ms.author: deniseb
 author: denisebmsft
 manager: laurawi
-ms.date: 06/28/2019
+ms.date: 07/08/2019
 audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
@@ -11,20 +11,20 @@ ms.collection:
 - M365-security-compliance
 localization_priority: None
 description: 使用信息障碍以确保在组织内使用 Microsoft 团队进行通信合规性。
-ms.openlocfilehash: 9750eab3c91b40cc96e16a386dbf59ba767ae877
-ms.sourcegitcommit: 011bfa60cafdf47900aadf96a17eb275efa877c4
+ms.openlocfilehash: e37c97ae8a5e3777e2a30432e8289abadae8f14c
+ms.sourcegitcommit: a6f046f1529b0515f4f0e918a19ec83f4138b871
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/29/2019
-ms.locfileid: "35394277"
+ms.lasthandoff: 07/08/2019
+ms.locfileid: "35587041"
 ---
-# <a name="information-barriers-preview"></a>信息障碍 (预览)
+# <a name="information-barriers"></a>信息障碍
 
 ## <a name="overview"></a>概述
 
 Microsoft 云服务包括强大的通信和协作功能。 但假设您要限制两个组之间的通信, 以避免组织中发生利益冲突。 或者, 您可能希望限制组织内的某些人之间的通信, 以便保护内部信息。 Microsoft 365 支持跨组和组织进行通信和协作, 因此有一种方法可以在必要时限制特定用户组之间的通信吗？ 通过信息障碍, 你可以! 
 
-信息障碍现在在预览中, 从 Microsoft 团队开始。 当您的组织可使用这些功能时, 合规性管理员或信息屏障管理员可以定义策略以允许或阻止 Microsoft 团队中的用户组之间的通信。 信息屏障策略可用于以下情况:
+现在, 信息障碍即将推出, 从 Microsoft 团队开始。 假定你的[订阅](#required-licenses-and-permissions)包括信息障碍, 合规性管理员或信息屏障管理员可以定义策略以允许或阻止 Microsoft 团队中的用户组之间的通信。 信息屏障策略可用于以下情况:
 
 - 一天 trader 无法对市场营销团队中的人员进行呼叫
 - 从事机密公司信息的财务人员无法从其组织内的某些组接收呼叫。
@@ -34,7 +34,7 @@ Microsoft 云服务包括强大的通信和协作功能。 但假设您要限制
 对于所有这些示例方案 (及更多), 可以将信息屏障策略定义为阻止或允许在 Microsoft 团队中进行通信。 此类策略可以阻止用户不应对其进行呼叫或聊天, 或使用户只能与 Microsoft 团队中的特定组进行通信。 在信息屏障策略生效时, 只要这些策略涵盖的用户尝试与 Microsoft 团队中的其他人通信, 就会执行检查以阻止 (或允许) 通信 (由信息屏障策略定义)。 若要了解有关信息障碍的用户体验方面的详细信息, 请参阅[Microsoft 团队中的信息障碍](https://docs.microsoft.com/MicrosoftTeams/information-barriers-in-teams)。
 
 > [!IMPORTANT]
-> 目前, 信息障碍不适用于电子邮件通信或通过 SharePoint Online 或 OneDrive 进行文件共享。 此外, 信息障碍独立于[合规性边界](set-up-compliance-boundaries.md)。<p>在定义和应用信息屏障策略之前, 请确保您的组织没有有效的[Exchange 通讯簿策略](https://docs.microsoft.com/en-us/exchange/address-books/address-book-policies/address-book-policies)。  
+> 目前, 信息障碍不适用于电子邮件通信或通过 SharePoint Online 或 OneDrive 进行文件共享。 此外, 信息障碍独立于[合规性边界](set-up-compliance-boundaries.md)。<p>在定义和应用信息屏障策略之前, 请确保您的组织没有有效的[Exchange 通讯簿策略](https://docs.microsoft.com/en-us/exchange/address-books/address-book-policies/address-book-policies)。 (信息障碍基于通讯簿策略。) 
 
 ## <a name="what-happens-with-information-barriers"></a>信息障碍发生的情况
 
@@ -55,7 +55,7 @@ Microsoft 云服务包括强大的通信和协作功能。 但假设您要限制
 
 ## <a name="required-licenses-and-permissions"></a>必需的许可证和权限
 
-**目前, 信息障碍处于预览阶段**。 当这些功能普遍可用时, 它们将包含在订阅中, 例如:
+信息屏障现在正在推出, 并包含在订阅中, 如:
 
 - Microsoft 365 E5
 - Office 365 E5
@@ -83,5 +83,5 @@ Microsoft 云服务包括强大的通信和协作功能。 但假设您要限制
 
 - [定义信息障碍策略](information-barriers-policies.md)
 
-- [编辑 (或删除) 信息屏障策略 (预览)](information-barriers-edit-segments-policies.md.md) 
+- [编辑 (或删除) 信息屏障策略](information-barriers-edit-segments-policies.md.md) 
 

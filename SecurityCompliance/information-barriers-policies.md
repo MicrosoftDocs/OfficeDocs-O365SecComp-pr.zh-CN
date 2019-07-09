@@ -3,7 +3,7 @@ title: 定义信息屏障策略
 ms.author: deniseb
 author: denisebmsft
 manager: laurawi
-ms.date: 06/28/2019
+ms.date: 07/08/2019
 audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
@@ -11,18 +11,18 @@ ms.collection:
 - M365-security-compliance
 localization_priority: None
 description: 了解如何在 Microsoft 团队中定义信息障碍策略。
-ms.openlocfilehash: 844e01fc1df96e9de62b1830c2825db15426f7f4
-ms.sourcegitcommit: 011bfa60cafdf47900aadf96a17eb275efa877c4
+ms.openlocfilehash: 527f059eb0bccb97429c649d055496c06710c2a9
+ms.sourcegitcommit: a6f046f1529b0515f4f0e918a19ec83f4138b871
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/29/2019
-ms.locfileid: "35394317"
+ms.lasthandoff: 07/08/2019
+ms.locfileid: "35587081"
 ---
-# <a name="define-policies-for-information-barriers-preview"></a>定义信息障碍策略 (预览)
+# <a name="define-policies-for-information-barriers"></a>定义信息障碍策略
 
 ## <a name="overview"></a>概述
 
-通过信息障碍, 您可以定义旨在防止某些用户段相互通信的策略, 或允许特定的分段仅与某些其他网段进行通信。 信息屏障策略可帮助您的组织保持遵守相关的行业标准和法规, 并避免潜在的利益冲突。 若要了解详细信息, 请参阅[信息障碍 (预览)](information-barriers.md)。 
+通过信息障碍, 您可以定义旨在防止某些用户段相互通信的策略, 或允许特定的分段仅与某些其他网段进行通信。 信息屏障策略可帮助您的组织保持遵守相关的行业标准和法规, 并避免潜在的利益冲突。 若要了解详细信息, 请参阅[信息障碍](information-barriers.md)。 
 
 本文介绍如何规划、定义、实现和管理信息屏障策略。 涉及几个步骤, 工作流划分为多个部分。 在开始定义 (或编辑) 信息屏障策略之前, 请务必阅读[先决条件](#prerequisites)和整个过程。
 
@@ -59,7 +59,7 @@ ms.locfileid: "35394317"
 除了[所需的许可证和权限](information-barriers.md#required-licenses-and-permissions)之外, 请确保满足以下要求: 
      
 - **目录数据**。 确保您的组织的结构已反映在目录数据中。 为此, 请确保在 Azure Active Directory (或 Exchange Online) 中正确填充了用户帐户属性, 如组成员身份、部门名称等。 若要了解详细信息, 请参阅以下资源:
-  - [信息屏障策略的属性 (预览)](information-barriers-attributes.md)
+  - [信息屏障策略的属性](information-barriers-attributes.md)
   - [使用 Azure Active Directory 添加或更新用户的配置文件信息](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-users-profile-azure-portal)
   - [使用 Office 365 PowerShell 配置用户帐户的属性](https://docs.microsoft.com/office365/enterprise/powershell/configure-user-account-properties-with-office-365-powershell)
 
@@ -67,7 +67,7 @@ ms.locfileid: "35394317"
 
 - **审核日志记录**。 为了查找策略应用程序的状态, 审核日志记录必须处于打开状态。 我们建议您在开始定义段或策略之前执行此操作。 若要了解详细信息, 请参阅[打开或关闭 Office 365 审核日志搜索](turn-audit-log-search-on-or-off.md)。
 
-- **无通讯簿策略**。 在定义和应用信息屏障策略之前, 请确保没有适当的 Exchange 通讯簿策略。 如果您具有此类策略, 请务必先[删除您的通讯簿策略](https://docs.microsoft.com/exchange/address-books/address-book-policies/remove-an-address-book-policy)。
+- **无通讯簿策略**。 在定义和应用信息屏障策略之前, 请确保没有适当的 Exchange 通讯簿策略。 (信息障碍基于通讯簿策略, 但两种类型的策略不可互换。)如果您具有此类策略, 请务必先[删除您的通讯簿策略](https://docs.microsoft.com/exchange/address-books/address-book-policies/remove-an-address-book-policy)。
 
 - **PowerShell**。 目前, 信息屏障策略在 Office 365 Security & 合规性中心 (使用 PowerShell cmdlet) 中进行定义和管理。 虽然本文中提供了几个示例, 但您需要熟悉 PowerShell cmdlet 和参数。 您还将需要 AzureRM 模块。
     - [连接到 Office 365 安全与合规中心 PowerShell](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell?view=exchange-ps)
@@ -110,7 +110,7 @@ ms.locfileid: "35394317"
 
 除了您的初始策略列表之外, 请为您的组织创建一个段落列表。 将包含在信息屏障策略中的用户应属于某个网段, 并且任何用户都不应属于两个或多个网段。 每个段只能应用一个信息障碍策略。 
 
-确定您的组织的目录数据中将用来定义段落的属性。 您可以使用 "*部门*"、" *MemberOf*" 或任何受支持的属性。 请确保您为用户选择的属性中具有值。 [查看受支持的信息障碍属性的列表 (预览)](information-barriers-attributes.md)。
+确定您的组织的目录数据中将用来定义段落的属性。 您可以使用 "*部门*"、" *MemberOf*" 或任何受支持的属性。 请确保您为用户选择的属性中具有值。 [请参阅信息障碍的受支持属性的列表](information-barriers-attributes.md)。
 
 > [!IMPORTANT]
 > 在**继续下一节之前, 请确保您的目录数据具有可用于定义段的属性的值**。 如果您的目录数据没有要使用的属性的值, 则必须更新用户帐户以包含该信息, 然后再继续进行信息屏障。 若要获取有关此方面的帮助, 请参阅以下资源:<br/>- [使用 Office 365 PowerShell 配置用户帐户属性](https://docs.microsoft.com/office365/enterprise/powershell/configure-user-account-properties-with-office-365-powershell)<br/>- [使用 Azure Active Directory 添加或更新用户的配置文件信息](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-users-profile-azure-portal)
@@ -255,13 +255,13 @@ ms.locfileid: "35394317"
 
 资源可用于帮助您管理信息障碍策略。
 
-- 如果信息障碍出现问题, 请参阅[故障排除信息障碍 (预览版)](information-barriers-troubleshooting.md)。
+- 如果信息障碍出现问题, 请参阅[故障排除信息障碍](information-barriers-troubleshooting.md)。
 
 - 若要停止应用策略, 请参阅[停止策略应用程序](information-barriers-edit-segments-policies.md.md#stop-a-policy-application)。
 
 - 若要删除信息屏障策略, 请参阅[删除策略](information-barriers-edit-segments-policies.md.md#remove-a-policy)。
 
-- 若要对段落或策略进行更改, 请参阅[编辑 (或删除) 信息屏障策略 (预览)](information-barriers-edit-segments-policies.md.md)。
+- 若要对段落或策略进行更改, 请参阅[编辑 (或删除) 信息屏障策略](information-barriers-edit-segments-policies.md.md)。
 
 ## <a name="example-contosos-departments-segments-and-policies"></a>示例: Contoso 的部门、分段和策略
 
@@ -316,6 +316,6 @@ Contoso 定义了三种策略, 如下表所述:
 
 ## <a name="related-articles"></a>相关文章
 
-- [获取信息障碍概述 (预览)](information-barriers.md)
+- [获取信息障碍概述](information-barriers.md)
 
-- [Microsoft 团队预览版中的信息障碍](https://docs.microsoft.com/MicrosoftTeams/information-barriers-in-teams)
+- [Microsoft 团队中的信息障碍](https://docs.microsoft.com/MicrosoftTeams/information-barriers-in-teams)

@@ -3,7 +3,7 @@ title: 编辑信息屏障策略
 ms.author: deniseb
 author: denisebmsft
 manager: laurawi
-ms.date: 06/28/2019
+ms.date: 07/08/2019
 audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
@@ -11,14 +11,14 @@ ms.collection:
 - M365-security-compliance
 localization_priority: None
 description: 了解如何编辑或删除信息障碍策略。
-ms.openlocfilehash: c3dca18ad217b89d9f9ae78b590cfb07f4631f37
-ms.sourcegitcommit: 011bfa60cafdf47900aadf96a17eb275efa877c4
+ms.openlocfilehash: c55ffac0984fe83fec1ef7b995d1589ea770bfef
+ms.sourcegitcommit: a6f046f1529b0515f4f0e918a19ec83f4138b871
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/29/2019
-ms.locfileid: "35394327"
+ms.lasthandoff: 07/08/2019
+ms.locfileid: "35587071"
 ---
-# <a name="edit-or-remove-information-barrier-policies-preview"></a>编辑 (或删除) 信息屏障策略 (预览)
+# <a name="edit-or-remove-information-barrier-policies"></a>编辑 (或删除) 信息屏障策略
 
 [定义信息障碍策略](information-barriers-policies.md)后, 您可能需要对这些策略或用户区段进行更改, 作为[故障排除](information-barriers-troubleshooting.md)或定期维护的一部分。 将本文用作指南。
 
@@ -32,8 +32,8 @@ ms.locfileid: "35394327"
 |[将策略设置为非活动状态](#set-a-policy-to-inactive-status)     |如果要对策略进行更改, 或不希望策略生效, 请将策略设置为非活动状态。         |
 |[删除策略](#remove-a-policy)     |当不再需要特定策略时, 请删除信息障碍策略。         |
 |[停止策略应用程序](#stop-a-policy-application)     |如果要停止应用信息屏障策略的过程, 请执行此操作。<br/>请注意, 停止策略应用程序不是即时的, 并且不会撤消已应用于用户的策略。         |
-|[定义信息障碍策略 (预览)](information-barriers-policies.md)     |如果不存在此类策略, 请定义信息屏障策略, 并且必须限制或限制特定用户组之间的通信。         |
-|[解决信息障碍 (预览)](information-barriers-troubleshooting.md)     |遇到信息障碍遇到意外问题时, 请参阅本文。         |
+|[定义信息障碍策略](information-barriers-policies.md)     |如果不存在此类策略, 请定义信息屏障策略, 并且必须限制或限制特定用户组之间的通信。         |
+|[信息障碍故障排除](information-barriers-troubleshooting.md)     |遇到信息障碍遇到意外问题时, 请参阅本文。         |
 
 > [!IMPORTANT]
 > 若要执行本文中所述的任务, 必须为您分配适当的角色, 如以下某项:<br/>-Microsoft 365 企业全局管理员<br/>-Office 365 全局管理员<br/>-合规性管理员<br/>-IB 合规性管理 (这是一个新角色!)<p>若要了解有关信息障碍的先决条件方面的详细信息, 请参阅[先决条件 (适用于信息屏障策略)](information-barriers-policies.md#prerequisites)。<p>请确保[连接到 Office 365 安全 & 合规性中心 PowerShell](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell?view=exchange-ps)。
@@ -52,7 +52,7 @@ ms.locfileid: "35394327"
     |---------|---------|
     |`Get-InformationBarrierRecipientStatus -Identity <value> -Identity2 <value>` <p>   您可以使用任何唯一标识每个用户的值, 如名称、别名、可分辨名称、规范域名、电子邮件地址或 GUID。 <p>   (也可以将此 cmdlet 用于单个用户: `Get-InformationBarrierRecipientStatus -Identity <value>`)      |`Get-InformationBarrierRecipientStatus -Identity meganb -Identity2 alexw`  <p>   在此示例中, 我们引用 Office 365 中的两个用户帐户: *meganb* for *Megan*和*alexw* for *Alex*。         |
 
-2. 为您的用户帐户配置文件确定要编辑的属性。 有关详细信息, 请参阅[信息屏障策略 (预览版) 的属性](information-barriers-attributes.md)。 
+2. 为您的用户帐户配置文件确定要编辑的属性。 有关详细信息, 请参阅[信息障碍策略的属性](information-barriers-attributes.md)。 
 
 3. 编辑一个或多个用户帐户, 以包含您在上一步中选择的属性的值。 为此, 请使用以下过程之一:
 
@@ -168,10 +168,10 @@ ms.locfileid: "35394327"
 
 [获取信息障碍概述](information-barriers.md)
 
-[定义信息障碍策略 (预览)](information-barriers-policies.md)
+[定义信息障碍策略](information-barriers-policies.md)
 
 [了解有关 Microsoft 团队中的信息障碍的详细信息](https://docs.microsoft.com/MicrosoftTeams/information-barriers-in-teams)
 
-[信息屏障策略的属性 (预览)](information-barriers-attributes.md)
+[信息屏障策略的属性](information-barriers-attributes.md)
 
-[解决信息障碍 (预览)](information-barriers-troubleshooting.md)
+[信息障碍故障排除](information-barriers-troubleshooting.md)
