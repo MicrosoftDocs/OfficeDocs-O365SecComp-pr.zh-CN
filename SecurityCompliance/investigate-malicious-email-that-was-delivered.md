@@ -2,7 +2,7 @@
 title: 查找并调查已传递的恶意电子邮件 (Office 365 威胁调查和响应
 ms.author: deniseb
 author: denisebmsft
-manager: laurawi
+manager: dansimp
 ms.date: 03/19/2019
 audience: ITPro
 ms.topic: article
@@ -15,12 +15,12 @@ ms.assetid: 8f54cd33-4af7-4d1b-b800-68f8818e5b2a
 ms.collection:
 - M365-security-compliance
 description: 了解如何使用威胁调查和响应功能查找和调查恶意电子邮件。
-ms.openlocfilehash: febcf6704b1ba9dc23bf4e698715fb4b929b998b
-ms.sourcegitcommit: d3b2bffa8af5f19d97fe9771068c80705b890e85
+ms.openlocfilehash: d96083f0f48136b1c789fa83f9e9069d0dfccf4d
+ms.sourcegitcommit: 5abe4c11bf3c0659180c7812dd26be9689ab01ca
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/01/2019
-ms.locfileid: "35414802"
+ms.lasthandoff: 07/09/2019
+ms.locfileid: "35605447"
 ---
 # <a name="find-and-investigate-malicious-email-that-was-delivered-office-365-advanced-threat-protection-plan-2"></a>查找并调查提供的恶意电子邮件 (Office 365 高级威胁防护计划 2)
 
@@ -78,10 +78,21 @@ ms.locfileid: "35414802"
 1. 请转[https://protection.office.com](https://protection.office.com)到使用 Office 365 的工作或学校帐户登录并登录。 这会将您带到&amp;安全合规中心。 
     
 2. 在左侧导航中, 选择 "**威胁管理** \> **资源管理器**"。
-<!--Comment>
-![Threat Explorer with Delivery Action and Delivery Location fields.](media/ThreatExFields.PNG)
 
-    
+
+![带有 "传递操作" 和 "送达位置" 字段的威胁资源管理器。](media/ThreatExFields.PNG)
+
+您可能会注意到此图形中的新 "特殊操作" 列。 此功能旨在告诉管理员处理电子邮件的结果。 在威胁浏览器的*电子邮件日程表*结束时, 可能会更新特殊操作, 这是旨在使求职体验更好地用于管理员的新功能。
+
+电子邮件日程表在随机时减少, 因为检查不同位置的时间较少, 以尝试了解自电子邮件到达后发生的事件。 当电子邮件上的多个事件发生时, 或在同一时间结束时, 这些事件将显示在 "日程表" 视图中。 将在 "特殊操作" 列中捕获到您的邮件的送达后发生的一些事件。 将该邮件的*电子邮件时间线*中的信息与邮件投递后所执行的*特殊操作*组合在一起, 管理员可以了解其策略的工作原理, 其中邮件最后是路由的, 在某些情况下, 在某些情况下, 最终评估为。 可以在与传递操作和传递位置相同的位置访问 "特殊操作" 列, 但若要查看电子邮件日程表, 请执行以下操作:
+
+1. 单击电子邮件的主题。
+2. 在出现的面板上, 单击 "*电子邮件日程表*"。 (它将显示在面板上的其他标题中, 如 "摘要" 或 "详细信息")。
+
+打开电子邮件日程表后, 您应该会看到一个表, 告诉您该邮件的送达事件, 或者, 如果没有针对该电子邮件的进一步事件, 则会看到原始传递的单个事件, 该事件将声明*阻止*的结果。带有类似*网络钓鱼*的结论。 该选项卡还具有导出整个电子邮件时间线的选项, 这将导出该选项卡上的所有详细信息, 以及有关电子邮件的详细信息 (如主题、发件人、收件人、网络和邮件 ID 等)。
+
+
+<!--Comment>    
 3. In the View menu, choose **All email**.<br/>![Use the View menu to choose between Email and Content reports](media/d39013ff-93b6-42f6-bee5-628895c251c2.png)
   
 4. Notice the labels that appear in the report, such as **Delivered**, **Unknown**, or **Delivered to junk**.<br/>![Threat Explorer showing data for all email](media/208826ed-a85e-446f-b276-b5fdc312fbcb.png)<br/>(Depending on the actions that were taken on email messages for your organization, you might see additional labels, such as **Blocked** or **Replaced**.)

@@ -1,8 +1,8 @@
 ---
 title: 在 Exchange Online 中配置最终用户垃圾邮件通知
 ms.author: tracyp
-author: MSFTTracyP
-manager: laurawi
+author: MSFTTracyp
+manager: dansimp
 audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
@@ -13,12 +13,12 @@ ms.assetid: bfc91c73-a955-40e1-a95f-ad466624339a
 ms.collection:
 - M365-security-compliance
 description: 您可以为适用于域的默认公司范围的垃圾邮件筛选器策略或自定义垃圾邮件筛选器策略配置最终用户垃圾邮件通知。
-ms.openlocfilehash: c56aa3d5bbc771641f9082095c930c66dc8cee96
-ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
+ms.openlocfilehash: ce63fae7749f716b7fdd00c72b207ba5b57a8d65
+ms.sourcegitcommit: 32ecff689ae32c59a39b7633ca0f36a304e7516e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "34153884"
+ms.lasthandoff: 07/09/2019
+ms.locfileid: "35600188"
 ---
 # <a name="configure-end-user-spam-notifications-in-exchange-online"></a>在 Exchange Online 中配置最终用户垃圾邮件通知
 
@@ -37,9 +37,9 @@ ms.locfileid: "34153884"
 
 如果邮件不是垃圾邮件, 并且您希望 Office 365 将邮件发送到您的邮箱, 则**释放**。
 
-**发布 &** 如果邮件不是垃圾邮件, 并且您希望 Office 365 将发件人添加到安全发件人和收件人列表中, 以供将来的电子邮件。 请注意, 您的管理员可能有其他组织范围的允许/阻止配置替代安全发件人列表。
+如果邮件不是垃圾邮件, 并且您希望 Office 365 将发件人添加到安全发件人和收件人列表中, 请**释放 & 允许发件人**列表中的其他电子邮件。 请注意, 您的管理员可能有其他组织范围的允许/阻止配置替代安全发件人列表。
 
-**发布 _AMP_ 报告**, 如果邮件不是垃圾邮件, 并且您想要将邮件发送到您的邮箱并将其报告给 Microsoft 进行分析。
+如果邮件不是垃圾邮件, 并且您想要将邮件发送到您的邮箱并将其报告给 Microsoft 进行分析, 请**释放 & 报告**。
 
 如果您希望 Office 365 将发件人添加到阻止发件人列表, 则**阻止**。
   

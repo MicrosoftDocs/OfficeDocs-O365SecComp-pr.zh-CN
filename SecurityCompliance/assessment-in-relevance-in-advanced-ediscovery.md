@@ -3,7 +3,7 @@ title: 了解 Office 365 高级电子数据展示中的相关性评估
 ms.author: chrfox
 author: chrfox
 manager: laurawi
-ms.date: 9/14/2017
+ms.date: 09/14/2017
 audience: Admin
 ms.topic: conceptual
 ms.service: O365-seccomp
@@ -13,12 +13,12 @@ search.appverid:
 - MET150
 ms.assetid: 1d33d4fb-91ed-41c0-b72e-5a26eca3a2a7
 description: 获取评估阶段及其在 Office 365 高级电子数据展示中的相关性培训期间确定问题丰富程度的角色的概述。
-ms.openlocfilehash: 229df3f51c6a71ddb644fcd45a6de0e30f9775b9
-ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
+ms.openlocfilehash: 77d9449ad15fd3a53709f2a28a96b06ab54556eb
+ms.sourcegitcommit: 32ecff689ae32c59a39b7633ca0f36a304e7516e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "34155534"
+ms.lasthandoff: 07/09/2019
+ms.locfileid: "35598658"
 ---
 # <a name="understand-assessment-in-relevance-in-office-365-advanced-ediscovery"></a>了解 Office 365 高级电子数据展示中的相关性评估
 

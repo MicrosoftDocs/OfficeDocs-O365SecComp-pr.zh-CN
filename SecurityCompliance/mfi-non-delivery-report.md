@@ -2,25 +2,25 @@
 title: 未送达报告
 ms.author: chrisda
 author: chrisda
-manager: serdars
+manager: dansimp
 audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: ''
 description: 管理员可以在安全 & 合规性中心的邮件流仪表板中了解未送达报告。
-ms.openlocfilehash: 9f9cc2865174344a2d411add4032ddf6ced8c740
-ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
+ms.openlocfilehash: 65d9dbcd9f861f7f1e2d7d33df974c8bac1ec201
+ms.sourcegitcommit: 32ecff689ae32c59a39b7633ca0f36a304e7516e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "34158624"
+ms.lasthandoff: 07/09/2019
+ms.locfileid: "35598088"
 ---
 # <a name="non-delivery-report"></a>未送达报告
 
 **未送达报告**将在未送达报告 (也称为 "ndr" 或 "退回邮件") 中显示最遇到的错误代码, 以供组织中的用户查看。 此报告旨在显示 Ndr 的详细信息, 因此您可以解决问题。
 
-![Security & 合规性中心的邮件流仪表板中的未送达报告](media/non-delivery-report-selected.png)
+![安全 & 合规性中心的邮件流仪表板中的未送达报告](media/non-delivery-report-selected.png)
 
 可以通过单击 "**显示数据**" 来显示所有 NDR 代码或特定代码的信息。 您还可以单击 "**查看详细信息表**" 以查看更详细的视图, 如下图所示:
 
@@ -32,4 +32,4 @@ ms.locfileid: "34158624"
 
 ## <a name="see-also"></a>另请参阅
 
-有关邮件流仪表板中的其他邮件流见解的详细信息, 请参阅[Security _AMP_ 合规性中心中的邮件流见解](mail-flow-insights-v2.md)。
+有关邮件流仪表板中的其他邮件流见解的详细信息, 请参阅[Security & 合规性中心中的邮件流见解](mail-flow-insights-v2.md)。

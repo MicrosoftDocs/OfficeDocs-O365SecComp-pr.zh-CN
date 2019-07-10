@@ -2,8 +2,8 @@
 title: 以 Office 365 中的用户的形式查找和释放隔离邮件
 ms.author: tracyp
 author: MSFTTracyP
-manager: laurawi
-ms.date: 5/19/2018
+manager: dansimp
+ms.date: 05/19/2018
 audience: Consumer/IW
 ms.topic: article
 ms.service: O365-seccomp
@@ -15,12 +15,12 @@ ms.assetid: efff08ec-68ff-4099-89b7-266e3c4817be
 ms.collection:
 - M365-security-compliance
 description: '作为 Office 365 用户, 您可以通过以下两种方式之一来管理您自己的垃圾邮件隔离邮件: 响应直接发送给您的垃圾邮件通知 (如果管理员已设置此功能), 或使用安全&amp;合规性中的垃圾邮件隔离功能。置.'
-ms.openlocfilehash: ec4ebff4de0d1de44d7838bbf5baee46227ffe4d
-ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
+ms.openlocfilehash: 47c17e59f6f54d973eeaf761ecee6a1ac5a3dbba
+ms.sourcegitcommit: 32ecff689ae32c59a39b7633ca0f36a304e7516e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "34152814"
+ms.lasthandoff: 07/09/2019
+ms.locfileid: "35599348"
 ---
 # <a name="find-and-release-quarantined-messages-as-a-user-in-office-365"></a>以 Office 365 中的用户的形式查找和释放隔离邮件
 

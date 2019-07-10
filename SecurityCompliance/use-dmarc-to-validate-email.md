@@ -2,7 +2,7 @@
 title: 使用 DMARC 验证 Office 365 中的电子邮件
 ms.author: tracyp
 author: MSFTTracyP
-manager: laurawi
+manager: dansimp
 audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
@@ -13,12 +13,12 @@ ms.assetid: 4a05898c-b8e4-4eab-bd70-ee912e349737
 ms.collection:
 - M365-security-compliance
 description: 了解如何配置基于域的邮件身份验证、报告和一致性 (DMARC), 以验证从 Office 365 组织发送的邮件。
-ms.openlocfilehash: 9e3c2cd21e411d775f621c8b353bee9e6b0e235e
-ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
+ms.openlocfilehash: 997e90c7620b4b3ca14903da843475f4d724222a
+ms.sourcegitcommit: 32ecff689ae32c59a39b7633ca0f36a304e7516e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "34156184"
+ms.lasthandoff: 07/09/2019
+ms.locfileid: "35600378"
 ---
 # <a name="use-dmarc-to-validate-email-in-office-365"></a>使用 DMARC 验证 Office 365 中的电子邮件
 

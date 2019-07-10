@@ -2,7 +2,7 @@
 title: 威胁浏览器 (和实时检测)
 ms.author: deniseb
 author: denisebmsft
-manager: laurawi
+manager: dansimp
 ms.date: 06/20/2019
 audience: ITPro
 ms.topic: article
@@ -15,12 +15,12 @@ ms.assetid: 82ac9922-939c-41be-9c8a-7c75b0a4e27d
 ms.collection:
 - M365-security-compliance
 description: 了解安全&amp;合规性中心中的资源管理器 (和实时检测)。
-ms.openlocfilehash: 3d2eab30b97655b692ed1bfe089b6a79834fd110
-ms.sourcegitcommit: 011bfa60cafdf47900aadf96a17eb275efa877c4
+ms.openlocfilehash: 127652ccb1c32ce84d8c80213d737b095913db40
+ms.sourcegitcommit: 5abe4c11bf3c0659180c7812dd26be9689ab01ca
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/29/2019
-ms.locfileid: "35394347"
+ms.lasthandoff: 07/09/2019
+ms.locfileid: "35605471"
 ---
 # <a name="threat-explorer-and-real-time-detections"></a>威胁浏览器 (和实时检测)
 
@@ -71,6 +71,9 @@ ms.locfileid: "35394347"
 5. 隔离–隔离中的电子邮件, 并且不在用户的邮箱中。
 6. 失败–电子邮件无法访问邮箱。
 7. 丢弃–电子邮件在邮件流中的某个位置丢失。
+
+电子邮件日程表是另一个新的浏览器功能, 旨在提高管理员的求职体验。 它会在随机时减少, 因为检查不同位置以尝试了解事件的时间较少。 当电子邮件上的多个事件发生时, 或在同一时间结束时, 这些事件将显示在 "日程表" 视图中。 事实上, 在传递给邮件的某些事件将在 "特殊操作" 列中捕获。 将该邮件的时间线中的信息与邮件投递后执行的特殊操作组合在一起, 管理员可以了解其策略的工作方式, 即最后路由邮件的位置, 在某些情况下, 最终评估是什么。
+
 
 ## <a name="see-malware-detected-in-email-by-technology"></a>查看电子邮件中的技术检测到恶意软件
 

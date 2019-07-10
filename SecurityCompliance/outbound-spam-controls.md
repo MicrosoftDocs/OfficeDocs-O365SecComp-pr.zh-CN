@@ -2,7 +2,7 @@
 title: 控制 Office 365 中的出站垃圾邮件
 ms.author: tracyp
 author: MSFTTracyP
-manager: laurawi
+manager: dansimp
 audience: Admin
 ms.topic: overview
 ms.service: O365-seccomp
@@ -14,19 +14,19 @@ ms.assetid: 6a601501-a6a8-4559-b2e7-56b59c96a586
 ms.collection:
 - M365-security-compliance
 description: 如果您的组织发送大量垃圾邮件, 并将其标记为垃圾邮件, 则可能会阻止您使用 Office 365 发送电子邮件。 阅读本文, 了解有关此操作的原因以及您可以执行的操作的详细信息。
-ms.openlocfilehash: 742006374b76156ffc2ffe6b158ef5e0ac890ebe
-ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
+ms.openlocfilehash: 09aa71cd8b273a3235bc2673d3d17c3decf71da5
+ms.sourcegitcommit: 32ecff689ae32c59a39b7633ca0f36a304e7516e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "34157594"
+ms.lasthandoff: 07/09/2019
+ms.locfileid: "35601129"
 ---
 # <a name="controlling-outbound-spam-in-office-365"></a>控制 Office 365 中的出站垃圾邮件
 
 我们会认真管理出站垃圾邮件, 因为我们是共享服务。  共享资源池背后有许多客户, 如果一个客户发送出站垃圾邮件, 它可能会降低服务的出站 IP 信誉, 并影响其他客户的电子邮件的成功 deliverability。
 
 > [!IMPORTANT]
-> 在发件人受到限制时的通知现在是安全 & 合规性中心 (SCC) 警报平台的一部分。 如果不使用下面概述的方法来发送通知, 则可以在 "用户限制发送电子邮件" 警报中找到要通知的用户列表。 请开始使用安全 & 合规中心中的 "[通知策略" 页](https://sip.protection.office.com/alertpolicies)来配置警报, 因为将来的方法将被删除。 阅读有关新的[受限用户体验](https://docs.microsoft.com/en-us/Office365/SecurityCompliance/removing-user-from-restricted-users-portal-after-spam)的信息。
+> 当发件人受到限制时, 通知现在是 Security & 合规性中心 (SCC) 警报平台的一部分。 如果不使用下面概述的方法来发送通知, 则可以在 "用户限制发送电子邮件" 警报中找到要通知的用户列表。 请开始使用安全 & 合规性中心中的 "[通知策略" 页](https://sip.protection.office.com/alertpolicies)来配置警报, 因为将来的方法将被删除。 阅读有关新的[受限用户体验](https://docs.microsoft.com/en-us/Office365/SecurityCompliance/removing-user-from-restricted-users-portal-after-spam)的信息。
 
 ## <a name="what-admins-can-do-to-control-outbound-spam"></a>管理员可控制出站垃圾邮件的操作
 

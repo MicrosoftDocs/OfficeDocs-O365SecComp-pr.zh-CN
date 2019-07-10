@@ -1,8 +1,8 @@
 ---
 title: 反垃圾邮件邮件头
-ms.author: krowley
-author: kccross
-manager: laurawi
+ms.author: tracyp
+author: MSFTTracyP
+manager: dansimp
 audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
@@ -13,12 +13,12 @@ ms.assetid: 2e3fcfc5-5604-4b88-ac0a-c5c45c03f1db
 ms.collection:
 - M365-security-compliance
 description: Exchange Online Protection 扫描到入站电子邮件时，它会在每封邮件中插入" **X-Forefront-Antispam-Report**"标头。
-ms.openlocfilehash: b09b5fef883ef720223e6bfaf36437b1bdf6c393
-ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
+ms.openlocfilehash: c6b6282e3c5bb1c6ae1e3be54c0d8fa6a6ce3fe3
+ms.sourcegitcommit: 32ecff689ae32c59a39b7633ca0f36a304e7516e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "34152364"
+ms.lasthandoff: 07/09/2019
+ms.locfileid: "35598192"
 ---
 # <a name="anti-spam-message-headers"></a>反垃圾邮件邮件头
 

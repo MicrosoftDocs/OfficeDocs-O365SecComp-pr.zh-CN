@@ -2,7 +2,7 @@
 title: Office 365 中的防钓鱼保护
 ms.author: tracyp
 author: MSFTTracyP
-manager: laurawi
+manager: dansimp
 ms.date: 10/11/2018
 audience: ITPro
 ms.topic: article
@@ -15,12 +15,12 @@ ms.custom: TopSMBIssues
 ms.collection:
 - M365-security-compliance
 description: 默认情况下, Office 365 提供各种针对网络钓鱼攻击的防护, 也可以通过其他服务 (如 ATP 反网络钓鱼) 进行保护。 本主题介绍可用于了解和实现 Office 365 中的反钓鱼选项和策略的联机资源。
-ms.openlocfilehash: a002002967e3e529cada587f9b0bd29fa867e06e
-ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
+ms.openlocfilehash: 56db0d4dd47947ffb8d16c96b7588ed4c59ef613
+ms.sourcegitcommit: 32ecff689ae32c59a39b7633ca0f36a304e7516e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "34155664"
+ms.lasthandoff: 07/09/2019
+ms.locfileid: "35598278"
 ---
 # <a name="anti-phishing-protection-in-office-365"></a>Office 365 中的防钓鱼保护
 

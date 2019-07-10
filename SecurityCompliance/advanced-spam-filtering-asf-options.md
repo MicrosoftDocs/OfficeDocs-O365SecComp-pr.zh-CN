@@ -2,8 +2,8 @@
 title: 高级垃圾邮件筛选选项
 ms.author: tracyp
 author: MSFTTracyP
-manager: laurawi
-ms.date: 6/26/2015
+manager: dansimp
+ms.date: 07/09/2019
 audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
@@ -14,12 +14,12 @@ ms.assetid: b286f853-b484-4af0-b01f-281fffd85e7a
 ms.collection:
 - M365-security-compliance
 description: 高级垃圾邮件筛选选项为管理员提供检查邮件的各种内容属性的功能。 邮件中存在的这些属性或者增加邮件的垃圾邮件得分（从而增加被标识为垃圾邮件的可能性），或者导致邮件被标记为垃圾邮件。 ASF 选项的目标是特定邮件属性，如垃圾邮件中常见的 HTML 标签和 URL 重定向。
-ms.openlocfilehash: 84807b102967dc5d4a3812e97681a1c8fc7fa318
-ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
+ms.openlocfilehash: 0f1fb22a0500df5e9ff261bd60b0430dd4fad4d0
+ms.sourcegitcommit: 32ecff689ae32c59a39b7633ca0f36a304e7516e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "34152444"
+ms.lasthandoff: 07/09/2019
+ms.locfileid: "35598668"
 ---
 # <a name="advanced-spam-filtering-options"></a>高级垃圾邮件筛选选项
 
@@ -54,5 +54,5 @@ ms.locfileid: "34152444"
 |SPF 记录：硬失败|启用此设置时，未通过 SPF 检查的邮件（即从未在 SPF 记录中指定的 IP 地址发送的邮件）将被标记为垃圾邮件。建议为关注收到网络钓鱼邮件的组织启用该设置。  <br/> <br/> 测试模式对此选项不可用。  <br/> |X-CustomSpam：SPF 记录失败  <br/> |
 |有条件发件人 ID 筛选：硬失败  <br/> |启用此设置后，任何未通过有条件发件人 ID 检查的邮件将被标记为垃圾邮件。该选项组合了 SPF 检查与发件人 ID 检查，以提供保护，防止包含伪造发件人的邮件标题。  <br/> <br/> 测试模式对此选项不可用。  <br/> |X-CustomSpam：SPF 发件人记录失败  <br/> |
 |NDR 退信  <br/> |如果正在使用 EOP 保护本地邮箱，则启用本设置后，所有合法的未送达报告 (NDR) 邮件将传递到原始发件人，所有退信（不合法 NDR）邮件将被标记为垃圾邮件。如果不启用此设置，所有 NDR 仍将进行垃圾邮件筛选。在这种情况下，大部分合法邮件将传递到原始发件人，部分（不是全部）退信将被标记为垃圾邮件。然而，由于退信将传递到具有欺骗性质的发件人，因此未标记为垃圾邮件的退信将不会传递到原始发件人。  <br/> <br/> 如果您使用此服务来保护 Exchange Online 云托管邮箱，则不需要配置此设置。  <br/><br/> 对于这两种方案 (内部部署和云托管邮箱), 也无需为通过该服务发送的出站邮件启用此设置, 因为会自动检测到合法退回邮件并将其传递给原始发件人的 Ndr。. >  测试模式对此选项不可用。           <br/><br/>提示: 有关退信消息和 EOP 的详细信息, 请参阅[退信 messages AND EOP](backscatter-messages-and-eop.md)。           |X-CustomSpam：退信消息 NDR  <br/> |
-|批量邮件|批量电子邮件的高级垃圾邮件筛选功能已停用，并替换为批量和电子邮件阈值设置。查看[垃圾邮件和批量邮件之间有什么差异？](what-s-the-difference-between-junk-email-and-bulk-email.md)和[配置垃圾邮件筛选器策略](configure-your-spam-filter-policies.md)，了解详细信息以及如何配置这些设置。  ||
+|批量邮件|批量电子邮件的高级垃圾邮件筛选功能已停用，并替换为批量和电子邮件阈值设置。查看[垃圾邮件和批量邮件之间有什么差异？](what-s-the-difference-between-junk-email-and-bulk-email.md)和[配置垃圾邮件筛选器策略](configure-your-spam-filter-policies.md)，了解详细信息以及如何配置这些设置。  |X-X-customspam: 批量邮件 | 批量邮件  <br/> |
 |

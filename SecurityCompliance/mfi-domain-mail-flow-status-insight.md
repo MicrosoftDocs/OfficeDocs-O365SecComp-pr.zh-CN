@@ -2,25 +2,25 @@
 title: 顶级域邮件流状态见解
 ms.author: chrisda
 author: chrisda
-manager: serdars
+manager: dansimp
 audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: ''
 description: 管理员可以了解安全 & 合规性中心的邮件流仪表板中的顶层域邮件流状态洞察力。
-ms.openlocfilehash: c339769c65b2b1cec3d187873e71e5f1e283ccc7
-ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
+ms.openlocfilehash: d6a3345a614bcde42193eb9c78d93c56637ccac7
+ms.sourcegitcommit: 32ecff689ae32c59a39b7633ca0f36a304e7516e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "34158644"
+ms.lasthandoff: 07/09/2019
+ms.locfileid: "35600835"
 ---
 # <a name="top-domain-mail-flow-status-insight"></a>顶级域邮件流状态见解
 
 **顶级域邮件流状态**洞察力为您的组织的域提供了邮件流的当前状态。 此洞察力可帮助您识别和解决遇到***邮件流影响***问题的域 (例如, 无法接收外部电子邮件), 尤其是域过期或包含不正确的 MX 记录的域。
 
-![Security & 合规性中心的邮件流仪表板中的顶级域流状态洞察力](media/domain-mail-flow-status-selected.png)
+![安全 & 合规性中心的邮件流仪表板中的顶级域流状态洞察力](media/domain-mail-flow-status-selected.png)
 
 当您单击真知灼见中的 "**查看详细信息**" 时, 将显示一个弹出项, 显示每个域的状态的详细信息。
 
@@ -32,4 +32,4 @@ ms.locfileid: "34158644"
 
 ## <a name="see-also"></a>另请参阅
 
-有关邮件流仪表板中的其他邮件流见解的详细信息, 请参阅[Security _AMP_ 合规性中心中的邮件流见解](mail-flow-insights-v2.md)。
+有关邮件流仪表板中的其他邮件流见解的详细信息, 请参阅[Security & 合规性中心中的邮件流见解](mail-flow-insights-v2.md)。

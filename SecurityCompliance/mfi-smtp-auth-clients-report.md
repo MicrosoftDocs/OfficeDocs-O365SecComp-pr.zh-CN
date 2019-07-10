@@ -2,19 +2,19 @@
 title: SMTP 身份验证客户端报表
 ms.author: chrisda
 author: chrisda
-manager: serdars
+manager: dansimp
 audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: ''
 description: 管理员可以了解安全 & 合规性中心的邮件流仪表板中的 SMTP 身份验证客户端报告。
-ms.openlocfilehash: fde5be59e2b8a86b2bac6fc793293d8887670746
-ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
+ms.openlocfilehash: 21d2446bd7441f17c2371186d098118c6403de0c
+ms.sourcegitcommit: 32ecff689ae32c59a39b7633ca0f36a304e7516e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "34158594"
+ms.lasthandoff: 07/09/2019
+ms.locfileid: "35598128"
 ---
 # <a name="smtp-auth-clients-report"></a>SMTP 身份验证客户端报表
 
@@ -50,4 +50,4 @@ ms.locfileid: "34158594"
 
 ## <a name="see-also"></a>另请参阅
 
-有关邮件流仪表板中的其他邮件流见解的详细信息, 请参阅[Security _AMP_ 合规性中心中的邮件流见解](mail-flow-insights-v2.md)。
+有关邮件流仪表板中的其他邮件流见解的详细信息, 请参阅[Security & 合规性中心中的邮件流见解](mail-flow-insights-v2.md)。

@@ -2,25 +2,25 @@
 title: 安全与合规中心内的消息跟踪
 ms.author: chrisda
 author: chrisda
-manager: serdars
+manager: dansimp
 audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: 3e64f99d-ac33-4aba-91c5-9cb4ca476803
-description: 管理员可以使用安全 & 合规中心中的邮件跟踪来查明邮件发生了什么情况。
-ms.openlocfilehash: 0db1780057172fe1a6a6c1f7a334fbbd2220df30
-ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
+description: 管理员可以使用安全 & 合规性中心中的邮件跟踪来查明邮件发生了什么情况。
+ms.openlocfilehash: fb173dd09adf02c1b2eb7d0dbf9d5736483f231b
+ms.sourcegitcommit: 32ecff689ae32c59a39b7633ca0f36a304e7516e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "34158674"
+ms.lasthandoff: 07/09/2019
+ms.locfileid: "35601009"
 ---
 # <a name="message-trace-in-the-security--compliance-center"></a>安全与合规中心内的消息跟踪
 
 ## <a name="overview"></a>概述
 
-Security & 合规性中心中的邮件跟踪在电子邮件通过 Exchange Online 组织时遵循这些电子邮件。 您可以确定服务是否已接收、拒绝、推迟或发送邮件。 它还显示邮件在到达其最终状态之前对邮件执行的操作。
+Security & 合规中心中的邮件跟踪在通过 Exchange Online 组织传递的电子邮件中遵循这些电子邮件。 您可以确定服务是否已接收、拒绝、推迟或发送邮件。 它还显示邮件在到达其最终状态之前对邮件执行的操作。
 
 Security & 合规性中心中的邮件跟踪改进了在 Exchange 管理中心 (EAC) 中可用的邮件跟踪。 您可以使用邮件跟踪中的信息来有效地回答用户对其邮件发生的问题、解决邮件流问题以及验证策略更改的问题。
 
@@ -32,7 +32,7 @@ Security & 合规性中心中的邮件跟踪改进了在 Exchange 管理中心 (
 
 3. 在左下角导航中, 展开 "**管理中心**", 然后选择 "**安全 & 合规性**"。
 
-4. 在打开的**安全 _AMP_ 合规性**页面中, 展开 "**邮件流**", 然后选择 "**邮件跟踪**"。
+4. 在打开的 "**安全性 & 合规性**" 页中, 展开 "**邮件流**", 然后选择 "**邮件跟踪**"。
 
 ## <a name="message-trace-page"></a>邮件跟踪页
 
@@ -65,11 +65,11 @@ Security & 合规性中心中的邮件跟踪改进了在 Exchange 管理中心 (
 
 - 默认情况下, 使用时间行在**滑块**视图中选择时间范围。 您只能选择显示的日期或时间设置。 如果尝试选择 "介于" 值, 则会将 "开始/结束" 气泡对齐到最接近的显示设置。
 
-   ![Security & 合规性中心内的新邮件跟踪中的滑块时间范围](media/55a9e9c1-f7d5-4047-b217-824e8b976bcb.png)
+   ![安全 & 合规性中心内的新邮件跟踪中的滑块时间范围](media/55a9e9c1-f7d5-4047-b217-824e8b976bcb.png)
 
    不过, 您还可以切换到**自定义**视图, 在其中可以指定**开始日期**和**结束日期**值 (包括时间), 还可以为日期/时间范围选择**时区**。 请注意,**时区**设置适用于您的查询输入和查询结果。
 
-   ![Security & 合规性中心的新邮件跟踪中的自定义时间范围](media/ed4c8d50-9ea5-4694-93f9-ee3ab6660b4f.png)
+   ![安全 & 合规性中心的新邮件跟踪中的自定义时间范围](media/ed4c8d50-9ea5-4694-93f9-ee3ab6660b4f.png)
 
    对于10天或更少, 结果将立即作为**摘要**报告提供。 如果指定的时间范围稍微大于10天, 则结果将延迟, 因为它们仅可用作可下载的 CSV 文件 (**增强的摘要**或**扩展**报告)。
 
@@ -145,7 +145,7 @@ Security & 合规性中心中的邮件跟踪改进了在 Exchange 管理中心 (
 
 运行邮件跟踪后, 将列出结果, 并按降序的日期/时间 (最新的优先) 进行排序。
 
-![Security & 合规中心中的邮件跟踪摘要报告结果](media/0664bafe-0b03-477b-b571-0b046ac8c977.png)
+![安全 & 合规中心中的邮件跟踪摘要报告结果](media/0664bafe-0b03-477b-b571-0b046ac8c977.png)
 
 摘要报告包含以下信息:
 

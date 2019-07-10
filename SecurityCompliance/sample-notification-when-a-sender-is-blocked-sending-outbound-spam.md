@@ -2,8 +2,8 @@
 title: 发件人被阻止发送出站垃圾邮件时的示例通知
 ms.author: tracyp
 author: MSFTTracyP
-manager: laurawi
-ms.date: 11/2/2017
+manager: dansimp
+ms.date: 11/02/2017
 audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
@@ -14,12 +14,12 @@ ms.assetid: c33fd406-a4c8-4ac8-ad85-123996c5cded
 ms.collection:
 - M365-security-compliance
 description: 当发件人由于发送出站垃圾邮件而被服务阻止时，您配置出站垃圾邮件策略时指定的域管理员将收到如下所示的通知电子邮件：
-ms.openlocfilehash: e30717332358693df3c4e56e58d0679ce3acf2d7
-ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
+ms.openlocfilehash: 1733b291a57dc006d52883ba72160dbc4135d8db
+ms.sourcegitcommit: 32ecff689ae32c59a39b7633ca0f36a304e7516e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "34158504"
+ms.lasthandoff: 07/09/2019
+ms.locfileid: "35601049"
 ---
 # <a name="sample-notification-when-a-sender-is-blocked-sending-outbound-spam"></a>发件人被阻止发送出站垃圾邮件时的示例通知
 

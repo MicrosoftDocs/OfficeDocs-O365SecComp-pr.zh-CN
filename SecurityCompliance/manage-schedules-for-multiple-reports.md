@@ -2,8 +2,7 @@
 title: 在安全&amp;合规中心中管理多个报告的计划
 ms.author: deniseb
 author: denisebmsft
-manager: laurawi
-ms.date: 6/1/2018
+manager: dansimp
 audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
@@ -13,12 +12,12 @@ search.appverid:
 - MOE150
 ms.assetid: 3384c6f1-ffc0-4120-a211-1991aca51663
 description: 了解如何在安全&amp;合规中心中查看、编辑和管理报告的日程安排。
-ms.openlocfilehash: a8f230ddf9442ba0a29d5fdaeba40bc8524405b5
-ms.sourcegitcommit: 0d5a863f48914eeaaf29f7d2a2022618de186247
+ms.openlocfilehash: 7ea5815d058e4e8d9b0cecb5d06888e695bb526d
+ms.sourcegitcommit: 32ecff689ae32c59a39b7633ca0f36a304e7516e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34077588"
+ms.lasthandoff: 07/09/2019
+ms.locfileid: "35598808"
 ---
 # <a name="manage-schedules-for-multiple-reports-in-the-security-amp-compliance-center"></a>在安全&amp;合规中心中管理多个报告的计划
 
@@ -31,7 +30,7 @@ ms.locfileid: "34077588"
   
 ![在 "安全&amp;合规性中心" 中\> , 选择 "报告管理计划"](media/efa5e2f9-bf73-4f85-acea-f1ca7e2bca5e.png)
 
-1. 转到[https://protection.office.com](https://protection.office.com)并登录。 这会将您带到安全 & 合规性中心。
+1. 转到[https://protection.office.com](https://protection.office.com)并登录。 这将转到安全 & 合规中心。
 
 2. 在 "安全&amp;合规性中心" 中, 转到 "**报告** \> **管理计划**"。
     

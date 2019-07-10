@@ -2,7 +2,7 @@
 title: 在 Office 365 中创建安全发件人列表
 ms.author: tracyp
 author: MSFTTracyP
-manager: laurawi
+manager: dansimp
 ms.date: 4/29/2019
 audience: ITPro
 ms.topic: article
@@ -12,12 +12,12 @@ search.appverid:
 - MET150s
 ms.assetid: 9721b46d-cbea-4121-be51-542395e6fd21
 description: 如果您想要确保收到来自特定发件人的邮件, 因为您信任这些邮件及其邮件, 您可以在 Exchange 管理中心的垃圾邮件筛选器策略中调整您的允许列表。
-ms.openlocfilehash: 4526441c68d187e644a06228c5b1be820968524a
-ms.sourcegitcommit: 044003455eb36071806c9f008ac631d54c64dde6
+ms.openlocfilehash: f0397ce3d26f6c539b3d7d663298c468e1155161
+ms.sourcegitcommit: 32ecff689ae32c59a39b7633ca0f36a304e7516e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/24/2019
-ms.locfileid: "35199561"
+ms.lasthandoff: 07/09/2019
+ms.locfileid: "35599978"
 ---
 # <a name="create-safe-sender-lists-in-office-365"></a>在 Office 365 中创建安全发件人列表
 
@@ -86,6 +86,8 @@ ms.locfileid: "35199561"
 ## <a name="use-anti-spam-policy-senderdomain-allow-lists"></a>使用反垃圾邮件策略发件人/域允许列表
 
 最不理想的选择是通过发件人/域进行授权。 应*尽可能*避免此选项, 因为它会完全绕过垃圾邮件/欺骗/网络钓鱼保护, 并且不会评估发件人身份验证。 此方法可提高从错误的参与者接收邮件的风险, 并且仅在测试时暂时和仅进行建议。 可在[配置垃圾邮件筛选器策略](https://docs.microsoft.com/en-us/office365/securitycompliance/configure-your-spam-filter-policies)文档中找到详细步骤。
+
+这些列表的最大限制约为1000个条目。
 
 > [!CAUTION]
 > 将反垃圾邮件策略配置为*允许发件人/允许域*会导致邮件跳过来自允许列表中的发件人或 b 的来自允许域的发件人发来的邮件的垃圾邮件筛选。 此方法会显著增加垃圾邮件制造者可以欺骗发送域 (或模拟完整电子邮件地址) 的邮件, 该邮件会跳过所有垃圾邮件筛选、发件人身份验证检查, 并将邮件直接发送到用户的收件箱。

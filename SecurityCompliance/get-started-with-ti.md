@@ -2,8 +2,8 @@
 title: 开始使用 Office 365 威胁调查和响应
 ms.author: deniseb
 author: denisebmsft
-manager: laurawi
-ms.date: 03/19/2019
+manager: dansimp
+ms.date: 07/09/2019
 audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
@@ -15,16 +15,16 @@ ms.assetid: 38e9b67f-d188-490f-bc91-a1ae4b270441
 ms.collection:
 - M365-security-compliance
 description: 了解 Office 365 威胁调查和响应, 以及如何开始。
-ms.openlocfilehash: 9be8e33be6445dc960c12c308c56bf9afc7fdd12
-ms.sourcegitcommit: b9d8a43cb3afcdc8820bc9470c5707eff8fc6616
+ms.openlocfilehash: 8bd5e68abfa036d1257fb08fb1dd2b730f7de821
+ms.sourcegitcommit: 32ecff689ae32c59a39b7633ca0f36a304e7516e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/11/2019
-ms.locfileid: "34852576"
+ms.lasthandoff: 07/09/2019
+ms.locfileid: "35599248"
 ---
-# <a name="get-started-with-threat-investigation-and-response-office-365-advanced-threat-protection-plan-2"></a>开始使用威胁调查和响应 (Office 365 高级威胁防护计划 2)
+# <a name="get-started-with-threat-investigation-and-response-in-office-365-advanced-threat-protection"></a>在 Office 365 高级威胁防护中开始使用威胁调查和响应
 
-如果您是组织的安全团队的一部分, 则可以使用 Office 365 威胁调查和响应功能来保护您的用户免受攻击。 Office 365 高级威胁防护计划 2 (以前称为 "Office 365 威胁智能") 可帮助安全分析员和管理员根据您的 Office 365 环境中发生的情况, 通过冒泡和识别操作使用户保持安全。 这些见解基于威胁智能数据和系统的综合存储库, 以提供与攻击行为和可疑活动对应的发现模式。
+如果您是组织的安全团队的一部分, 则可以使用 Office 365 威胁调查和响应功能来保护您的用户免受攻击。 Office 365 高级威胁防护计划 2 (以前称为 Office 365 威胁智能) 可帮助安全分析员和管理员根据 Office 365 中发生的情况, 通过冒泡方式和标识操作来确保用户安全环境. 这些见解基于威胁智能数据和系统的综合存储库, 以提供与攻击行为和可疑活动对应的发现模式。
   
 阅读本文, 了解有关威胁调查和响应的详细信息, 以及如何开始。
   
@@ -32,9 +32,6 @@ ms.locfileid: "34852576"
 
 威胁调查和响应功能有助于推动对 Office 365 安全&amp;合规中心中提供的威胁和相关响应操作的深入了解。 这些见解可帮助组织的安全团队保护 Office 365 用户免受电子邮件或基于文件的攻击。 这些功能可帮助监视信号和收集来自多个源 (如用户活动、身份验证、电子邮件、受损电脑和安全事件) 的数据。 业务决策者和 Office 365 全局管理员、安全管理员和安全分析员都可以使用此信息来了解和响应针对 Office 365 用户的威胁, 并保护其知识产权。
 
-> [!IMPORTANT]
-> Office 365 威胁智能现已成为 Office 365 高级威胁防护计划 2, 以及其他威胁防护功能。 若要了解详细信息, 请参阅[office 365 高级威胁防护计划和定价](https://products.office.com/exchange/advance-threat-protection)以及[Office 365 高级威胁防护服务说明](https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description)。
-  
 ## <a name="get-acquainted-with-the-threat-dashboard-explorer-and-incidents"></a>了解威胁仪表板、资源管理器和事件
 
 安全&amp;合规中心中的这些威胁调查和响应功能, 作为一组工具和响应工作流, 包括[威胁仪表板](#threat-dashboard)、[威胁资源管理器](#threat-explorer)、[事件](get-started-with-ti.md#incidents)、[攻击模拟器](attack-simulator.md)和自动调查 & 响应。
@@ -110,4 +107,8 @@ Office 365 高级威胁防护计划2和企业版 E5 365 中包含 office 威胁 
     
 - [了解攻击模拟器](attack-simulator.md)
   
+## <a name="additional-information"></a>其他信息
 
+- [Office 365 高级威胁防护计划和定价](https://products.office.com/exchange/advance-threat-protection) 
+
+- [Office 365 高级威胁防护服务说明](https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description)

@@ -2,20 +2,20 @@
 title: 慢邮件流规则见解
 ms.author: chrisda
 author: chrisda
-manager: serdars
+manager: dansimp
 ms.date: 5/3/2018
 audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: 37125cdb-715d-42d0-b669-1a8efa140813
-description: 管理员可以了解安全 & 合规性中心的邮件流仪表板中的邮件流规则的慢速见解。
-ms.openlocfilehash: 1adbae56bfcf022250b66bac2f3bfd01a7f13234
-ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
+description: 管理员可以了解安全 & 合规性中心的邮件流仪表板中的邮件流规则速度缓慢。
+ms.openlocfilehash: 4477b388df321ee774ec7916a695cbfc69fc8e87
+ms.sourcegitcommit: 32ecff689ae32c59a39b7633ca0f36a304e7516e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "34158584"
+ms.lasthandoff: 07/09/2019
+ms.locfileid: "35598068"
 ---
 # <a name="slow-mail-flow-rules-insight"></a>慢邮件流规则见解
 
@@ -29,7 +29,7 @@ ms.locfileid: "34158584"
 
 这些洞察力将帮助您识别和微调邮件流规则, 以帮助减少邮件流延迟。
 
-![Security & 合规性中心的邮件流仪表板中的邮件流规则速度较慢](media/1dd90faa-f065-4b10-8b47-d35dc127fc26.png)
+![安全 & 合规中心中的邮件流仪表板中的邮件流规则速度较慢](media/1dd90faa-f065-4b10-8b47-d35dc127fc26.png)
 
 单击 "**查看详细信息**" 时, 将显示一个弹出窗格, 可在其中查看规则。 在浮出控件窗格中, 也可以单击 "**查看示例消息**" 来查看规则所影响的邮件类型。
 
@@ -37,4 +37,4 @@ ms.locfileid: "34158584"
 
 ## <a name="see-also"></a>另请参阅
 
-有关邮件流仪表板中的其他邮件流见解的详细信息, 请参阅[Security _AMP_ 合规性中心中的邮件流见解](mail-flow-insights.md)。
+有关邮件流仪表板中的其他邮件流见解的详细信息, 请参阅[Security & 合规性中心中的邮件流见解](mail-flow-insights.md)。

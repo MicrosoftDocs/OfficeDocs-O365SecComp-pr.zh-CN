@@ -2,7 +2,7 @@
 title: 防御 Office 365 中的威胁
 ms.author: tracyp
 author: msfttracyp
-manager: laurawi
+manager: dansimp
 audience: Admin
 ms.topic: hub-page
 ms.service: O365-seccomp
@@ -15,12 +15,12 @@ ms.assetid: b10023f6-f30f-45d3-b3ad-b71aa4aa0d58
 ms.collection:
 - M365-security-compliance
 description: 现在, 请使用本文作为指南来配置您的威胁防护功能。
-ms.openlocfilehash: 6700e2714ea607f675b487204404d53c1d51db93
-ms.sourcegitcommit: 424a614141c1f19a1c84a67ec2d71dd3d7ef6694
+ms.openlocfilehash: 950259bb11446c3b7f27606b69a44f07ad478e79
+ms.sourcegitcommit: 32ecff689ae32c59a39b7633ca0f36a304e7516e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/30/2019
-ms.locfileid: "34590575"
+ms.lasthandoff: 07/09/2019
+ms.locfileid: "35600518"
 ---
 # <a name="protect-against-threats-in-office-365"></a>防御 Office 365 中的威胁
 
@@ -47,7 +47,7 @@ Office 365 包括各种威胁防护功能。 以下是可用作检查表的快�
 
 ### <a name="roles-and-permissions"></a>角色和权限
 
-必须为您分配适当的角色, 以便在[安全 _AMP_ 合规性中心](https://docs.microsoft.com/office365/servicedescriptions/office-365-platform-service-description/office-365-securitycompliance-center)中配置策略。 下表包括一些示例: 
+必须为您分配适当的角色, 才能配置[安全 & 合规性中心](https://docs.microsoft.com/office365/servicedescriptions/office-365-platform-service-description/office-365-securitycompliance-center)中的策略。 下表包括一些示例: 
 
 |角色或角色组  |了解详细信息  |
 |---------|---------|
@@ -61,7 +61,7 @@ Office 365 包括各种威胁防护功能。 以下是可用作检查表的快�
 
 [反恶意软件保护](anti-malware-protection.md)在包含[EOP](https://docs.microsoft.com/office365/servicedescriptions/exchange-online-protection-service-description)的订阅中可用。 
 
-1. 在 "[安全 & 合规性中心](https://protection.office.com)" 中, 选择 "**威胁管理** > **策略** > **反恶意软件**"。
+1. 在[安全 & 合规性中心](https://protection.office.com)中, 选择 "**威胁管理** > **策略** > **反恶意软件**"。
 
 2. 双击**默认**策略, 然后选择 "**设置**"。
 
@@ -83,7 +83,7 @@ Office 365 包括各种威胁防护功能。 以下是可用作检查表的快�
 
 若要设置[Atp 安全附件](atp-safe-attachments.md), 必须至少定义一个 ATP 安全附件策略。 
 
-1. 在 "[安全 & 合规性中心](https://protection.office.com)" 中, 选择 "**威胁管理** > **策略** > **ATP 安全附件**"。
+1. 在 "[安全性 & 合规性中心](https://protection.office.com)中, 选择"**威胁管理** > **策略** > **ATP 安全附件**"。
 
 2. 选择 "**打开适用于 SharePoint、OneDrive 和 Microsoft 团队的 ATP**" 选项。
 
@@ -109,7 +109,7 @@ Office 365 包括各种威胁防护功能。 以下是可用作检查表的快�
 
 若要设置[ATP 安全链接](atp-safe-links.md), 请查看并编辑默认策略, 并为特定用户添加策略。
 
-1. 在 "[安全 & 合规性中心](https://protection.office.com)" 中, 选择 "**威胁管理** > **策略** > **ATP 安全链接**"。
+1. 在 "[安全性 & 合规性中心](https://protection.office.com)中, 选择"**威胁管理** > **策略** > **ATP 安全链接**"。
 
 2. 双击**默认**策略。
 
@@ -141,7 +141,7 @@ Office 365 包括各种威胁防护功能。 以下是可用作检查表的快�
 
 在包含[EOP](https://docs.microsoft.com/office365/servicedescriptions/exchange-online-protection-service-description)的订阅中提供了[反网络钓鱼保护](anti-phishing-protection.md)。 在[ATP](https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description)中提供高级反钓鱼保护。 以下过程介绍如何配置 ATP 反网络钓鱼策略。 配置反网络钓鱼策略 (不包括 ATP) 的步骤类似。
 
-1. 在 "[安全 & 合规性中心](https://protection.office.com)" 中, 选择 "**威胁管理** > **策略** > **ATP 反网络钓鱼**"。
+1. 在[安全 & 合规性中心](https://protection.office.com)中, 选择**威胁管理** > **策略** > **ATP 反网络钓鱼**。
 
 2. 单击 "**默认策略**"。
 
@@ -173,7 +173,7 @@ Office 365 包括各种威胁防护功能。 以下是可用作检查表的快�
 
 [反垃圾邮件保护](anti-spam-protection.md)在包含[EOP](https://docs.microsoft.com/office365/servicedescriptions/exchange-online-protection-service-description)的订阅中可用。
 
-1. 在 "[安全 & 合规性中心](https://protection.office.com)" 中, 选择 "**威胁管理** > **策略** > **反垃圾邮件**"。
+1. 在[安全 & 合规性中心](https://protection.office.com)中, 选择 "**威胁管理** > **策略** > **反垃圾邮件**"。
 
 2. 在 "**自定义**" 选项卡上, 打开**自定义设置**。
 

@@ -3,8 +3,8 @@ title: 什么是 EOP
 ms.author: tracyp
 author: msfttracyp
 ms.reviewer: andypunt
-manager: laurawi
-ms.date: 2/25/2019
+manager: dansimp
+ms.date: 02/25/2019
 audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.assetid: 393b0050-7c7e-49e6-a03d-b1e09fe4de9e
 description: 本简介文档将帮助您了解 Exchange Online Protection (EOP) 和一些重要的术语。 这适用于保护 Exchange Online 云托管邮箱的 Office 365 客户和保护本地邮箱 (如 Exchange Server 2016) 的 EOP 独立客户。
-ms.openlocfilehash: cbd286321301cecc8084040dc7538fce12d84466
-ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
+ms.openlocfilehash: b0d3aac6e2c7e70ce298309d2053a7d6bb5920c1
+ms.sourcegitcommit: 32ecff689ae32c59a39b7633ca0f36a304e7516e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "34154464"
+ms.lasthandoff: 07/09/2019
+ms.locfileid: "35599458"
 ---
 ## <a name="what-is-exchange-online-protection-eop"></a>什么是 Exchange Online Protection (EOP)
 

@@ -2,7 +2,7 @@
 title: Office 365 安全与合规中心的权限
 ms.author: chrisda
 author: chrisda
-manager: chrisda
+manager: dansimp
 ms.date: 07/01/2019
 audience: Admin
 ms.topic: conceptual
@@ -15,12 +15,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 管理员可以了解 Office 365 安全 & 合规性中心中提供的权限。
-ms.openlocfilehash: 8d6835ea82be8f00d998ce7a6c11b3450a530bc4
-ms.sourcegitcommit: d3b2bffa8af5f19d97fe9771068c80705b890e85
+ms.openlocfilehash: 285fb17a33326126ead3640790f44f4dd6ff5756
+ms.sourcegitcommit: 32ecff689ae32c59a39b7633ca0f36a304e7516e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/01/2019
-ms.locfileid: "35414812"
+ms.lasthandoff: 07/09/2019
+ms.locfileid: "35600558"
 ---
 # <a name="permissions-in-the-office-365-security--compliance-center"></a>Office 365 安全与合规中心的权限
 

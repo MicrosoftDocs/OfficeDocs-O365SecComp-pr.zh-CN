@@ -1,8 +1,8 @@
 ---
 title: 配置 EOP 的最佳实践
-ms.author: krowley
-author: kccross
-manager: laurawi
+ms.author: tracyp
+author: MSFTTracyP
+manager: dansimp
 ms.date: 12/9/2016
 audience: ITPro
 ms.topic: article
@@ -10,12 +10,12 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: faf1efd1-3b0c-411a-804d-17f37292eac0
 description: 请遵循所建议的这些 Exchange Online Protection (EOP) 最佳做法，以成功达到目的，并避免常见的配置错误。
-ms.openlocfilehash: c60e3d62cc758a75f85d6cb149c8e13492cad35c
-ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
+ms.openlocfilehash: 991059b6823059b0e5eae784e21bfc0128cbd2d1
+ms.sourcegitcommit: 32ecff689ae32c59a39b7633ca0f36a304e7516e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "34150282"
+ms.lasthandoff: 07/09/2019
+ms.locfileid: "35599808"
 ---
 # <a name="best-practices-for-configuring-eop"></a>配置 EOP 的最佳做法
   

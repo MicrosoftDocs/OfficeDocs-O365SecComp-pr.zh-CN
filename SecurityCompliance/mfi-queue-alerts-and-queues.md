@@ -2,19 +2,19 @@
 title: 队列警报和队列
 ms.author: chrisda
 author: chrisda
-manager: serdars
+manager: dansimp
 audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: 37640c80-ce6f-47e2-afd1-bc1d3c50e637
 description: 管理员可以了解安全 & 合规性中心的邮件流仪表板中的队列通知和队列。
-ms.openlocfilehash: 149a1d82b3627037db2ab5c6e1427c79a49535bd
-ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
+ms.openlocfilehash: 9ab84c3c1840b3212e67f3a276784284c64e8d2e
+ms.sourcegitcommit: 32ecff689ae32c59a39b7633ca0f36a304e7516e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "34158754"
+ms.lasthandoff: 07/09/2019
+ms.locfileid: "35598138"
 ---
 # <a name="queue-alerts-and-queues"></a>队列警报和队列
 
@@ -30,7 +30,7 @@ Office 365 将继续重试传递48小时。 在48小时后, 邮件将会过期, 
 
 如果已排队的电子邮件数量超过了预定义的阈值 (默认值为2000邮件), 则在**最近通知**的邮件流仪表板中将提供这些通知, 并且管理员将收到电子邮件通知 (为其备用电子邮件地址). 若要配置警报阈值、每日通知限制和/或通知收件人, 请参阅下面的 "**自定义队列通知**" 部分。
 
-![在安全 & 合规中心的邮件流仪表板的 "最近的通知" 区域中对警报进行排队](media/5fc4a51c-6118-4270-960b-c6b176ef94ae.png)
+![在安全 & 合规中心中的邮件流仪表板的 "最近的通知" 区域中对警报进行排队](media/5fc4a51c-6118-4270-960b-c6b176ef94ae.png)
 
 ## <a name="customize-queue-alerts"></a>自定义队列通知
 
@@ -52,11 +52,11 @@ Office 365 将继续重试传递48小时。 在48小时后, 邮件将会过期, 
 
 ![在安全 & 合规中心的邮件流仪表板的 "最近的通知" 区域中选择队列通知](media/1f6b0e96-5b2c-41ef-9684-9d813b3fabe6.png)
 
-![Security & 合规中心中的队列警报详细信息浮出控件](media/105c8fff-912f-4763-8806-2740ebdecd4b.png)
+![安全 & 合规中心中的队列警报详细信息浮出控件](media/105c8fff-912f-4763-8806-2740ebdecd4b.png)
 
 您可以单击警报详细信息中的 "**查看队列**", 在新的飞出窗格中查看队列详细信息、问题和指向可用修复程序的链接。
 
-![Security & 合规中心中的队列警报详细信息浮出控件](media/8ff60955-55ef-4f32-a966-85e02cb608d1.png)
+![安全 & 合规中心中的队列警报详细信息浮出控件](media/8ff60955-55ef-4f32-a966-85e02cb608d1.png)
 
 ![查看警报详细信息中的队列](media/4eb088fe-5dd9-4bf4-b959-c1bb2545c515.png)
 
@@ -64,7 +64,7 @@ Office 365 将继续重试传递48小时。 在48小时后, 邮件将会过期, 
 
 即使排队邮件量未超过阈值, 仍可以使用邮件流仪表板的 "**队列**" 区域查看已排入超过1小时的邮件。 您可以使用 "**队列**" 区域来监视已排队的邮件数 (值为0表示邮件流正常), 并在队列中的邮件数变得过大之前执行操作。
 
-![Security & 合规性中心的邮件流仪表板中的队列](media/0ef6e2ef-dd22-4363-9d4a-b20a00babc9f.png)
+![安全 & 合规中心中的邮件流仪表板中的队列](media/0ef6e2ef-dd22-4363-9d4a-b20a00babc9f.png)
 
 单击**队列**中已排队的邮件数时, 将在弹出窗口中显示有关如何修复问题的队列详细信息和指南 (在队列警报的详细信息中单击 "**查看队列**" 后出现的同一浮出控件)。
 
@@ -72,4 +72,4 @@ Office 365 将继续重试传递48小时。 在48小时后, 邮件将会过期, 
 
 ## <a name="see-also"></a>另请参阅
 
-有关邮件流仪表板中的其他邮件流见解的详细信息, 请参阅[Security _AMP_ 合规性中心中的邮件流见解](mail-flow-insights.md)。
+有关邮件流仪表板中的其他邮件流见解的详细信息, 请参阅[Security & 合规性中心中的邮件流见解](mail-flow-insights.md)。

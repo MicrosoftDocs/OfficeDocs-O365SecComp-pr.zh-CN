@@ -2,7 +2,7 @@
 title: 详细了解防欺骗智能
 ms.author: tracyp
 author: MSFTTracyP
-manager: laurawi
+manager: dansimp
 ms.date: 10/22/2018
 audience: Admin
 ms.topic: article
@@ -15,12 +15,12 @@ ms.assetid: 978c3173-3578-4286-aaf4-8a10951978bf
 ms.collection:
 - M365-security-compliance
 description: 在 "反垃圾邮件设置&amp; " 页上的 "安全合规性中心" 中使用欺骗智能, 以查看所有哄骗的发件人是组织中的域, 还是哄骗外部域。 欺骗智能作为 Office 365 企业版 E5 的一部分或作为高级威胁防护和 Exchange Online Protection 的一部分单独提供。
-ms.openlocfilehash: d75c2efc2314b3227c65ec31ef1e0a0d6f931c13
-ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
+ms.openlocfilehash: 878e67cdee72d5d1f6596827be3da1dece67b947
+ms.sourcegitcommit: 32ecff689ae32c59a39b7633ca0f36a304e7516e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "34155934"
+ms.lasthandoff: 07/09/2019
+ms.locfileid: "35598948"
 ---
 # <a name="learn-more-about-spoof-intelligence"></a>详细了解防欺骗智能
 

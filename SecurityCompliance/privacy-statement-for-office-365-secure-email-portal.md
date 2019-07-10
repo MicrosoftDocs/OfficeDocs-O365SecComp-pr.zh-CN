@@ -2,7 +2,7 @@
 title: 适用于 Office 365 安全电子邮件门户的隐私声明
 ms.author: tracyp
 author: MSFTTracyP
-manager: laurawi
+manager: dansimp
 ms.date: 10/12/2018
 audience: End User
 ms.topic: reference
@@ -14,12 +14,12 @@ ms.assetid: 278917cd-a930-46cc-9580-6b9d2361a5f9
 ms.collection:
 - M365-security-compliance
 description: '上次更新时间: 5 月2017'
-ms.openlocfilehash: 869d4a7bbc809d72e048b6e1d0af24fa603b0a9d
-ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
+ms.openlocfilehash: 06414b4400ed980968fb95e2e9c4ec06beec8a42
+ms.sourcegitcommit: 32ecff689ae32c59a39b7633ca0f36a304e7516e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "34157424"
+ms.lasthandoff: 07/09/2019
+ms.locfileid: "35600528"
 ---
 # <a name="privacy-statement-for-office-365-secure-email-portal"></a>适用于 Office 365 安全电子邮件门户的隐私声明
 

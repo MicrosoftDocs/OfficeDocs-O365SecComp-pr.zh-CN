@@ -2,7 +2,7 @@
 title: 在 Office 365 中使用用户垃圾邮件通知来发布和报告已隔离邮件
 ms.author: tracyp
 author: MSFTTracyP
-manager: laurawi
+manager: dansimp
 ms.date: 03/14/2019
 audience: Admin
 ms.topic: article
@@ -16,12 +16,12 @@ ms.assetid: 56de4ed5-b0aa-4195-9f46-033d7cc086bc
 ms.collection:
 - M365-security-compliance
 description: 如果管理员为用户启用通知, 则会收到一条通知消息, 其中列出了发送到邮箱的邮件, 并被标识为垃圾邮件、批量邮件或网络钓鱼邮件。 您可以在收到通知后释放或报告邮件。
-ms.openlocfilehash: eb16e6a24bb4a2f30b7bcb33051b62afdeb9e250
-ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
+ms.openlocfilehash: 887dab0df489e6f71266a6fdabfdd04f26a14ded
+ms.sourcegitcommit: 32ecff689ae32c59a39b7633ca0f36a304e7516e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "34156034"
+ms.lasthandoff: 07/09/2019
+ms.locfileid: "35598438"
 ---
 # <a name="use-user-spam-notifications-to-release-and-report-quarantined-messages-in-office-365"></a>在 Office 365 中使用用户垃圾邮件通知来发布和报告已隔离邮件
 
@@ -48,9 +48,9 @@ ms.locfileid: "34156034"
 
 - 如果邮件不是垃圾邮件, 并且您希望 Office 365 将邮件发送到您的邮箱, 则**释放**。
 
-- **发布 &** 如果邮件不是垃圾邮件, 并且您希望 Office 365 将发件人添加到安全发件人和收件人列表中, 以供将来的电子邮件。 请注意, 您的管理员可能有其他组织范围的允许/阻止配置替代安全发件人列表。
+- 如果邮件不是垃圾邮件, 并且您希望 Office 365 将发件人添加到安全发件人和收件人列表中, 请**释放 & 允许发件人**列表中的其他电子邮件。 请注意, 您的管理员可能有其他组织范围的允许/阻止配置替代安全发件人列表。
 
-- **发布 _AMP_ 报告**, 如果邮件不是垃圾邮件, 并且您想要将邮件发送到您的邮箱并将其报告给 Microsoft 进行分析。
+- 如果邮件不是垃圾邮件, 并且您想要将邮件发送到您的邮箱并将其报告给 Microsoft 进行分析, 请**释放 & 报告**。
 
 - 如果您希望 Office 365 将发件人添加到阻止发件人列表, 则**阻止**。
 

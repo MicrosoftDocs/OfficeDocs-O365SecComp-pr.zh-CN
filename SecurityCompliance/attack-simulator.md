@@ -2,7 +2,7 @@
 title: Office 365 中的攻击模拟器
 ms.author: deniseb
 author: denisebmsft
-manager: laurawi
+manager: dansimp
 ms.date: 06/13/2019
 audience: ITPro
 ms.topic: overview
@@ -15,12 +15,12 @@ ms.assetid: da5845db-c578-4a41-b2cb-5a09689a551b
 ms.collection:
 - M365-security-compliance
 description: 作为 Office 365 全局管理员, 你可以使用攻击模拟器在你的组织中运行实际的攻击方案。 这可帮助你在真正的攻击击中你的业务之前识别和查找易受攻击的用户。
-ms.openlocfilehash: 938a8f944fee22fb16b87923d7608b3bfcfee0fb
-ms.sourcegitcommit: 62447503300376aa95dd05fb5276f93a9f6a20b6
+ms.openlocfilehash: bb8088a1e05c191d686634dd4ce7c44cdc61275e
+ms.sourcegitcommit: 32ecff689ae32c59a39b7633ca0f36a304e7516e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/13/2019
-ms.locfileid: "34927565"
+ms.lasthandoff: 07/09/2019
+ms.locfileid: "35598528"
 ---
 # <a name="attack-simulator-in-office-365"></a>Office 365 中的攻击模拟器
 

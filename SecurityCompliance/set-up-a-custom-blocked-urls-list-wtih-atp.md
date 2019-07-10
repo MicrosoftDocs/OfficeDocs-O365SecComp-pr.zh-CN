@@ -2,7 +2,7 @@
 title: 使用 Office 365 ATP 安全链接设置自定义已阻止 Url 列表
 ms.author: deniseb
 author: denisebmsft
-manager: laurawi
+manager: dansimp
 audience: Admin
 ms.topic: article
 ms.date: 02/06/2019
@@ -15,12 +15,12 @@ ms.assetid: 896a7efb-1683-465e-a394-261349e5d866
 ms.collection:
 - M365-security-compliance
 description: 了解如何使用 Office 365 高级威胁防护为您的组织设置阻止的 Url 的列表。 阻止的 Url 将根据 ATP 安全链接策略应用于电子邮件和 Office 文档。
-ms.openlocfilehash: 4856d0ae76318c99a9c9c2404ef8a4cd700e4953
-ms.sourcegitcommit: 4fedeb06a6e7796096fc6279cfb091c7b89d484d
+ms.openlocfilehash: e032d19c519b797936b90a94729534c73606a1a8
+ms.sourcegitcommit: 32ecff689ae32c59a39b7633ca0f36a304e7516e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/31/2019
-ms.locfileid: "34652715"
+ms.lasthandoff: 07/09/2019
+ms.locfileid: "35598758"
 ---
 # <a name="set-up-a-custom-blocked-urls-list-using-office-365-atp-safe-links"></a>使用 Office 365 ATP 安全链接设置自定义已阻止 Url 列表
 

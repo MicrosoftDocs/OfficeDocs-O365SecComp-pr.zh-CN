@@ -2,7 +2,7 @@
 title: 威胁资源管理器中的视图和实时检测
 ms.author: deniseb
 author: denisebmsft
-manager: laurawi
+manager: dansimp
 ms.date: 03/18/2019
 audience: ITPro
 ms.topic: article
@@ -12,12 +12,12 @@ search.appverid: ''
 ms.collection:
 - M365-security-compliance
 description: 了解在威胁资源管理器和实时检测中可用的各种视图类型。
-ms.openlocfilehash: 14cdbbd602e53615abec12bedbac2f16be40111f
-ms.sourcegitcommit: 2b46fba650df8d252b1dd2b3c3f080a383183a06
+ms.openlocfilehash: 71ec20daae45bee8385f24091850ea6223399eae
+ms.sourcegitcommit: 32ecff689ae32c59a39b7633ca0f36a304e7516e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "34408317"
+ms.lasthandoff: 07/09/2019
+ms.locfileid: "35600815"
 ---
 # <a name="views-in-threat-explorer-and-real-time-detections"></a>威胁资源管理器中的视图和实时检测
 
@@ -72,7 +72,7 @@ ms.locfileid: "34408317"
 
 ![有关检测到的 URL 的详细信息](media/ThreatExplorerEmailPhishURLDetails.png)
 
-## <a name="email--user-reported"></a>电子邮件 > 用户报告
+## <a name="email--user-reported"></a>> 用户报告的电子邮件
 
 若要查看此报告, 请在资源管理器 (或实时检测) 中, 选择 "**查看** > 由**用户报告的****电子邮件** > "。 此视图显示用户已报告为垃圾邮件、非垃圾邮件或仿冒电子邮件的电子邮件。 
 

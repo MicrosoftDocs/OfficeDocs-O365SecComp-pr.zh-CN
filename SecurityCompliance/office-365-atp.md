@@ -2,7 +2,7 @@
 title: Office 365 高级威胁防护
 ms.author: deniseb
 author: denisebmsft
-manager: laurawi
+manager: dansimp
 ms.date: 03/28/2019
 audience: Admin
 ms.topic: hub-page
@@ -15,12 +15,12 @@ ms.assetid: e100fe7c-f2a1-4b7d-9e08-622330b83653
 ms.collection:
 - M365-security-compliance
 description: Office 365 高级威胁防护包括安全附件、安全链接、高级反钓鱼工具、报告工具和威胁智能功能。
-ms.openlocfilehash: ca70aeadb8fdde76fa5d7041fe1f0cf624496c24
-ms.sourcegitcommit: 4fedeb06a6e7796096fc6279cfb091c7b89d484d
+ms.openlocfilehash: 0793036f10444064f5f049a6a6ea7254de179967
+ms.sourcegitcommit: 32ecff689ae32c59a39b7633ca0f36a304e7516e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/31/2019
-ms.locfileid: "34652655"
+ms.lasthandoff: 07/09/2019
+ms.locfileid: "35600959"
 ---
 # <a name="office-365-advanced-threat-protection"></a>Office 365 高级威胁防护
 

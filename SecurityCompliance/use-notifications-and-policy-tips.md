@@ -2,7 +2,7 @@
 title: 发送电子邮件通知并显示 DLP 策略的策略提示
 ms.author: deniseb
 author: denisebmsft
-manager: laurawi
+manager: dansimp
 ms.date: 06/14/2019
 audience: Admin
 ms.topic: article
@@ -16,12 +16,12 @@ search.appverid:
 - MOE150
 - MET150
 description: '策略提示是当有人使用与 DLP 策略冲突的内容时显示的通知或警告。 您可以使用电子邮件通知和策略提示来提高知名度并帮助人们了解组织的策略。 您还可以为用户提供替代策略的选项, 以便它们不会被阻止, 如果他们具有有效的业务需求, 或者如果策略检测到误报也是如此。 '
-ms.openlocfilehash: 4de22c8ad8a45cf1489e72516d30f078889774e3
-ms.sourcegitcommit: 9df5bf99c1860ace0c5cc90647733d075be412ad
+ms.openlocfilehash: 524499c7d530115ad5938d0ec60616afe1d174ff
+ms.sourcegitcommit: 32ecff689ae32c59a39b7633ca0f36a304e7516e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34948900"
+ms.lasthandoff: 07/09/2019
+ms.locfileid: "35600598"
 ---
 # <a name="send-email-notifications-and-show-policy-tips-for-dlp-policies"></a>发送电子邮件通知并显示 DLP 策略的策略提示
 

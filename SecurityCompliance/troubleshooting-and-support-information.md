@@ -2,7 +2,7 @@
 title: 疑难解答信息和支持信息
 ms.author: tracyp
 author: MSFTTracyP
-manager: laurawi
+manager: dansimp
 ms.date: 11/17/2014
 audience: ITPro
 ms.topic: article
@@ -14,12 +14,12 @@ ms.assetid: 5d9f75f5-bb7f-458c-ad30-5c8eae0b0e4e
 ms.collection:
 - M365-security-compliance
 description: 本主题介绍了针对最终用户和管理员的疑难解答步骤，并提供了有关如何联系技术支持以寻求帮助的信息。
-ms.openlocfilehash: baf8761ca4ce55695c2def74a39d3ca9a6de79ff
-ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
+ms.openlocfilehash: 4136b22cd4bf7fa9586ced1a7bc92a5fe563ec9c
+ms.sourcegitcommit: 32ecff689ae32c59a39b7633ca0f36a304e7516e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "34156334"
+ms.lasthandoff: 07/09/2019
+ms.locfileid: "35600628"
 ---
 # <a name="troubleshooting-and-support-information"></a>疑难解答信息和支持信息
 

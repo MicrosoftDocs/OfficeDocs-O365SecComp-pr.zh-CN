@@ -2,7 +2,7 @@
 title: Exchange Online 中的邮件签名和加密的 S/MIME
 ms.author: chrisda
 author: chrisda
-manager: serdars
+manager: dansimp
 ms.date: ''
 audience: ITPro
 ms.topic: article
@@ -12,12 +12,12 @@ search.appverid:
 - MET150
 ms.assetid: 887c710b-0ec6-4ff0-8065-5f05f74afef3
 description: 管理员可以了解如何在 Exchange Online 中使用 S/MIME。
-ms.openlocfilehash: 570e306ea1c781344bed120f1dd467d31a4a4fe6
-ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
+ms.openlocfilehash: ddb244e9e0cb189dbeb78af49e34ed90f64e77cc
+ms.sourcegitcommit: 32ecff689ae32c59a39b7633ca0f36a304e7516e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "34156994"
+ms.lasthandoff: 07/09/2019
+ms.locfileid: "35601089"
 ---
 # <a name="smime-for-message-signing-and-encryption-in-exchange-online"></a>Exchange Online 中的邮件签名和加密的 S/MIME
 

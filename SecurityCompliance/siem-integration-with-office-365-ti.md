@@ -2,7 +2,7 @@
 title: SIEM 与 Office 365 高级威胁防护的集成
 ms.author: deniseb
 author: denisebmsft
-manager: laurawi
+manager: dansimp
 audience: ITPro
 ms.topic: overview
 ms.service: O365-seccomp
@@ -15,12 +15,12 @@ ms.date: 03/11/2019
 ms.collection:
 - M365-security-compliance
 description: 将组织的 SIEM 服务器与 office 365 高级威胁防护以及 Office 365 活动管理 API 中相关的威胁事件集成。
-ms.openlocfilehash: da34073669d50cadcc01b5dd885d209a329c645f
-ms.sourcegitcommit: 0d5a863f48914eeaaf29f7d2a2022618de186247
+ms.openlocfilehash: 4bfc82be273bb4581aa49bbbbdab613bd87b1b89
+ms.sourcegitcommit: 32ecff689ae32c59a39b7633ca0f36a304e7516e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34077188"
+ms.lasthandoff: 07/09/2019
+ms.locfileid: "35600899"
 ---
 # <a name="siem-integration-with-office-365-advanced-threat-protection"></a>SIEM 与 Office 365 高级威胁防护的集成
 
@@ -41,7 +41,7 @@ SIEM 服务器或其他类似系统应轮询**审核。常规**工作负荷以�
 |47|ThreatIntelligenceAtpContent|Office 365 高级威胁防护中的 SharePoint Online、OneDrive for Business 和 Microsoft 团队中的文件的网络钓鱼和恶意软件事件。|
 
 > [!IMPORTANT]
-> 您必须是 Office 365 全局管理员, 或者已为安全 & 合规中心分配安全管理员角色, 以便设置 SIEM 与 Office 365 高级威胁防护的集成。<br/>必须为你的 Office 365 环境启用审核日志记录。 若要获取有关此功能的帮助, 请参阅[打开或关闭 Office 365 审核日志搜索](turn-audit-log-search-on-or-off.md)。
+> 您必须是 Office 365 全局管理员或将安全管理员角色分配给安全 & 合规性中心, 以设置与 Office 365 高级威胁防护的 SIEM 集成。<br/>必须为你的 Office 365 环境启用审核日志记录。 若要获取有关此功能的帮助, 请参阅[打开或关闭 Office 365 审核日志搜索](turn-audit-log-search-on-or-off.md)。
 
 ## <a name="related-topics"></a>相关主题
 

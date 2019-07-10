@@ -2,7 +2,7 @@
 title: 配置反垃圾邮件策略
 ms.author: tracyp
 author: MSFTTracyP
-manager: laurawi
+manager: dansimp
 ms.date: 6/9/2015
 audience: ITPro
 ms.topic: article
@@ -14,12 +14,12 @@ ms.assetid: 31279431-828d-48bd-b979-20b6de15fa4a
 ms.collection:
 - M365-security-compliance
 description: 反垃圾邮件筛选通过默认反垃圾邮件策略（连接筛选器、垃圾邮件筛选器和出站垃圾邮件）在全公司自动启用。作为管理员，您可以查看和编辑，但不能删除默认反垃圾邮件策略，以最适合贵组织的需求。更精确地讲，您也可以创建自定义策略，并将其应用到特定的用户、组或者组织中的域。默认情况下，自定义策略优先于默认策略，但您可以更改策略的优先顺序。
-ms.openlocfilehash: 73154ae18d6aff3d983ed8a9f175469056fb9487
-ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
+ms.openlocfilehash: f6690ddf0f50762aaa7b9ff61385c279f66716c8
+ms.sourcegitcommit: 32ecff689ae32c59a39b7633ca0f36a304e7516e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "34153844"
+ms.lasthandoff: 07/09/2019
+ms.locfileid: "35600108"
 ---
 # <a name="configure-the-anti-spam-policies"></a>配置反垃圾邮件策略
 

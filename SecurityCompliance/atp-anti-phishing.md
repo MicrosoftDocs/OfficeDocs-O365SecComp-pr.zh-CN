@@ -2,7 +2,7 @@
 title: Office 365 中的 ATP 防钓鱼功能
 ms.author: tracyp
 author: MSFTTracyp
-manager: laurawi
+manager: dansimp
 audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
@@ -13,12 +13,12 @@ ms.assetid: 5076d0f6-7a59-4d6c-bd07-ba95033f0682
 ms.collection:
 - M365-security-compliance
 description: ATP 反网络钓鱼是 Office 365 高级威胁防护的一部分。 ATP 反网络钓鱼对传入的邮件应用一组计算机学习模式以及模拟检测算法, 以提供对商品和 spear 网络钓鱼攻击的保护。 所有邮件都服从一组专门培训的计算机学习模式, 以检测网络钓鱼邮件, 以及一组用于防止各种用户和域模拟攻击的高级算法。
-ms.openlocfilehash: 0c17273d935dbdaec6d78a62a4edfa015b6b8efa
-ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
+ms.openlocfilehash: b2ce20d64952ecf489c2ccdbd5b4cafd16b8f64f
+ms.sourcegitcommit: 32ecff689ae32c59a39b7633ca0f36a304e7516e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "34155544"
+ms.lasthandoff: 07/09/2019
+ms.locfileid: "35598618"
 ---
 # <a name="atp-anti-phishing-capabilities-in-office-365"></a>Office 365 中的 ATP 防钓鱼功能
 

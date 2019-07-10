@@ -2,7 +2,7 @@
 title: 使用 Office 365 的自动化调查和响应 (空中)
 ms.author: deniseb
 author: denisebmsft
-manager: laurawi
+manager: dansimp
 ms.date: 06/25/2019
 audience: ITPro
 ms.topic: article
@@ -13,12 +13,12 @@ search.appverid:
 - MOE150
 ms.collection: M365-security-compliance
 description: 了解 Office 365 高级威胁防护中的自动化调查和响应功能。
-ms.openlocfilehash: 4d611d9549ed3f5cda06274ea9209cdc6350ba7b
-ms.sourcegitcommit: bac1b5be5db381e6f8d8f652cff1f8ef4d7f6330
+ms.openlocfilehash: 3e74fd7a12727880164797f076d254416325713a
+ms.sourcegitcommit: 32ecff689ae32c59a39b7633ca0f36a304e7516e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/26/2019
-ms.locfileid: "35233329"
+ms.lasthandoff: 07/09/2019
+ms.locfileid: "35598518"
 ---
 # <a name="automated-investigation-and-response-air-with-office-365"></a>使用 Office 365 的自动化调查和响应 (空中)
 

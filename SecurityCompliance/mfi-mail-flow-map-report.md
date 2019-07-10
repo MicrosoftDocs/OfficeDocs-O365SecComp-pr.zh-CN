@@ -2,25 +2,25 @@
 title: 邮件流地图报表
 ms.author: chrisda
 author: chrisda
-manager: serdars
+manager: dansimp
 audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: ''
 description: 管理员可以了解安全 & 合规性中心的邮件流仪表板中的邮件流映射报告。
-ms.openlocfilehash: 6b8c63f25e143c7b27202141362a4dada82b7a4d
-ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
+ms.openlocfilehash: 04ffbdc339a084f3ae2bf9947469966f1a868d02
+ms.sourcegitcommit: 32ecff689ae32c59a39b7633ca0f36a304e7516e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "34158684"
+ms.lasthandoff: 07/09/2019
+ms.locfileid: "35601019"
 ---
 # <a name="mail-flow-map-report"></a>邮件流地图报表
 
 此报告提供有关邮件通过 Office 365 组织的流的见解。 您可以使用此信息来了解模式、确定异常, 并在出现问题时解决问题。
 
-![Security & 合规性中心的邮件流仪表板中的邮件流映射报告](media/mail-flow-map-selected.png)
+![安全 & 合规性中心的邮件流仪表板中的邮件流映射报告](media/mail-flow-map-selected.png)
 
 ## <a name="mail-flow-map-widget"></a>邮件流映射小部件
 
@@ -50,4 +50,4 @@ ms.locfileid: "34158684"
 
 ## <a name="see-also"></a>另请参阅
 
-有关邮件流仪表板中的其他邮件流见解的详细信息, 请参阅[Security _AMP_ 合规性中心中的邮件流见解](mail-flow-insights-v2.md)。
+有关邮件流仪表板中的其他邮件流见解的详细信息, 请参阅[Security & 合规性中心中的邮件流见解](mail-flow-insights-v2.md)。

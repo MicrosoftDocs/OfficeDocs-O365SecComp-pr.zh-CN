@@ -1,8 +1,8 @@
 ---
 title: Exchange Online Protection 概述
 ms.author: tracyp
-author: MSFTTracyp
-manager: laurawi
+author: MSFTTracyP
+manager: dansimp
 ms.date: 01/31/2019
 audience: ITPro
 ms.topic: overview
@@ -10,12 +10,12 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: 1270a65f-ddc3-4430-b500-4d3a481efb1e
 description: Microsoft Exchange Online Protection (EOP) 是基于云的电子邮件筛选服务，可帮助您的组织防御垃圾邮件和恶意邮件，并包括用于保护您的组织避免违反邮件策略的功能。
-ms.openlocfilehash: b9fb5591834292fba4a58cfd024a667edce3c7ca
-ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
+ms.openlocfilehash: 652932403a4a63b280437a609e4bec46da39387e
+ms.sourcegitcommit: 32ecff689ae32c59a39b7633ca0f36a304e7516e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "34150244"
+ms.lasthandoff: 07/09/2019
+ms.locfileid: "35599698"
 ---
 # <a name="exchange-online-protection-overview"></a>Exchange Online Protection 概述
 
@@ -48,13 +48,9 @@ EOP 在数据中心之间执行负载平衡，但仅限在一个区域内。如�
     
 - 在欧洲、中东和非洲 (EMEA)，所有 Exchange Online 邮箱均位于 EMEA 数据中心，所有邮件均通过 EMEA 数据中心路由以进行 EOP 筛选。
     
-- 在亚太地区 (APAC) 中, 所有 Exchange Online 邮箱均位于 APAC 数据中心, 但邮件当前通过 APAC 数据中心路由以进行 EOP 筛选。
+- 在亚太地区 (APAC) 中, 所有 Exchange Online 邮箱均位于 APAC 数据中心中, 并且邮件当前通过 APAC 数据中心路由以进行 EOP 筛选。
 
 - 在美洲, 所有 Exchange Online 邮箱均位于美国数据中心, 但使用巴西和智利中的数据中心和加拿大中使用数据中心 (在加拿大的位置) 的情况除外。 所有电子邮件 (包括在南美洲和加拿大的客户的邮件) 通过本地数据中心进行路由, 以进行 EOP 筛选;quaratined 电子邮件存储在租户所在的数据中心中。
-    
-- 在欧洲、中东和非洲 (EMEA)，所有 Exchange Online 邮箱均位于 EMEA 数据中心，所有邮件均通过 EMEA 数据中心路由以进行 EOP 筛选。
-    
-- 在亚太地区 (APAC) 中, 所有 Exchange Online 邮箱均位于 APAC 数据中心中, 并且邮件当前通过 APAC 数据中心路由以进行 EOP 筛选。
     
 - 对于政府社区云 (GCC)，所有 Exchange Online 邮箱均位于美国数据中心，所有邮件均通过美国数据中心路由以进行 EOP 筛选。
     

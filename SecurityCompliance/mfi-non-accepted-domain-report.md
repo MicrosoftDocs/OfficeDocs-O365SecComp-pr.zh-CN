@@ -2,19 +2,19 @@
 title: 非接受域报告
 ms.author: chrisda
 author: chrisda
-manager: serdars
+manager: dansimp
 audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: ''
 description: 管理员可以在安全 & 合规性中心的邮件流仪表板中了解不接受的域报告。
-ms.openlocfilehash: ce9ffc28fddca6eb27d3d7394c0aea2ac4be9beb
-ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
+ms.openlocfilehash: 764329cdc7f595590c846a7e21cbe457378180ac
+ms.sourcegitcommit: 32ecff689ae32c59a39b7633ca0f36a304e7516e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "34158574"
+ms.lasthandoff: 07/09/2019
+ms.locfileid: "35598098"
 ---
 # <a name="non-accepted-domain-report"></a>非接受域报告
 
@@ -22,7 +22,7 @@ ms.locfileid: "34158574"
 
 如果我们有数据来证明这些邮件的目的是恶意的, 则 Office 365 可能会限制这些邮件。 因此, 重要的是要了解所发生的情况并解决问题。
 
-![Security & 合规性中心的邮件流仪表板中的不可接受的域报告](media/non-accepted-domain-report-selected.png)
+![安全 & 合规性中心的邮件流仪表板中的不可接受的域报告](media/non-accepted-domain-report-selected.png)
 
 当您单击小组件时, 将转到完整报告。 在完整报告中, 您可以单击 "**查看详细信息**" 以查看表中的信息, 如下图所示:
 
@@ -34,4 +34,4 @@ ms.locfileid: "34158574"
 
 ## <a name="see-also"></a>另请参阅
 
-有关邮件流仪表板中的其他邮件流见解的详细信息, 请参阅[Security _AMP_ 合规性中心中的邮件流见解](mail-flow-insights-v2.md)。
+有关邮件流仪表板中的其他邮件流见解的详细信息, 请参阅[Security & 合规性中心中的邮件流见解](mail-flow-insights-v2.md)。

@@ -1,8 +1,8 @@
 ---
 title: 在 EOP 中管理收件人和管理角色组
-ms.author: krowley
-author: kccross
-manager: laurawi
+ms.author: tracyp
+author: MSFTTracyP
+manager: dansimp
 ms.date: 3/9/2015
 audience: ITPro
 ms.topic: article
@@ -10,12 +10,12 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: 2041a048-8d78-4b76-a91f-43ea43a858bd
 description: Microsoft Exchange Online Protection (EOP) 提供了几种用于管理邮件收件人的方法。下列主题及其相关的子主题提供了管理收件人和分配管理员角色组权限的信息与配置过程。
-ms.openlocfilehash: 3abc23190a4ad8fdacf0ce8a67afd6dba2c2b197
-ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
+ms.openlocfilehash: 3b16f35b88e6ab46022f52877e591dcf6580db77
+ms.sourcegitcommit: 32ecff689ae32c59a39b7633ca0f36a304e7516e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "34153094"
+ms.lasthandoff: 07/09/2019
+ms.locfileid: "35599568"
 ---
 # <a name="manage-recipients-and-admin-role-groups-in-eop"></a>在 EOP 中管理收件人和管理角色组
 

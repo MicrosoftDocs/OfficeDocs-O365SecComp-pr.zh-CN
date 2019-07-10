@@ -2,8 +2,7 @@
 title: 优化 Office 365 中的反网络钓鱼保护
 ms.author: chrisda
 author: chrisda
-manager: serdars
-ms.date: ''
+manager: dansimp
 audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
@@ -11,12 +10,12 @@ localization_priority: Normal
 search.appverid:
 - MET150
 description: 管理员可以了解如何确定仿冒邮件的原因以及在将来阻止更多的网络钓鱼邮件的原因。
-ms.openlocfilehash: b17cdc6ec6cfc07642a6a40657009b46b83f1559
-ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
+ms.openlocfilehash: 2f58cea6dee7681322ecfe392801d4ad2d9af2eb
+ms.sourcegitcommit: 32ecff689ae32c59a39b7633ca0f36a304e7516e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "34156344"
+ms.lasthandoff: 07/09/2019
+ms.locfileid: "35600338"
 ---
 # <a name="tune-anti-phishing-protection-in-office-365"></a>优化 Office 365 中的反网络钓鱼保护
 

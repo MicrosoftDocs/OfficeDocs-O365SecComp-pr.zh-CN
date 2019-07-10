@@ -2,7 +2,7 @@
 title: Office 365 中的邮件流智能
 ms.author: chrisda
 author: chrisda
-manager: serdars
+manager: dansimp
 audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
@@ -11,12 +11,12 @@ search.appverid:
 - MET150
 ms.assetid: c29f75e5-c16e-409e-a123-430691e38276
 description: 管理员可以了解与使用 Office 365 中的连接器 (也称为 "邮件流智能") 关联的邮件传递的错误代码。
-ms.openlocfilehash: 224940b84480b694188bd3047829d4896cc2584e
-ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
+ms.openlocfilehash: 0d7d008699242334f2f77dce28e2f1b7e39cf9bb
+ms.sourcegitcommit: 32ecff689ae32c59a39b7633ca0f36a304e7516e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "34155864"
+ms.lasthandoff: 07/09/2019
+ms.locfileid: "35598878"
 ---
 # <a name="mail-flow-intelligence-in-office-365"></a>Office 365 中的邮件流智能
 

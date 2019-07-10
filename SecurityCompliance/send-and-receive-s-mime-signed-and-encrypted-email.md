@@ -2,7 +2,7 @@
 title: 在 Exchange Online 中发送和接收 S/MIME 签名和加密的电子邮件
 ms.author: chrisda
 author: chrisda
-manager: serdars
+manager: dansimp
 ms.date: ''
 audience: ITPro
 ms.topic: article
@@ -12,12 +12,12 @@ search.appverid:
 - MET150
 ms.assetid: 1ce37ada-0a80-4b47-8611-d008979589ff
 description: 在 Microsoft Outlook 中发送或回复 S/MIME 加密邮件与发送或回复未加密邮件类似。
-ms.openlocfilehash: d5343be22fc7efedbde38c0cbad999efb8230d65
-ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
+ms.openlocfilehash: 9b7ba86039fe774570c38d58a15591b7f1521302
+ms.sourcegitcommit: 32ecff689ae32c59a39b7633ca0f36a304e7516e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "34156624"
+ms.lasthandoff: 07/09/2019
+ms.locfileid: "35600578"
 ---
 # <a name="send-and-receive-smime-signed-and-encrypted-email-in-exchange-online"></a>在 Exchange Online 中发送和接收 S/MIME 签名和加密的电子邮件
 

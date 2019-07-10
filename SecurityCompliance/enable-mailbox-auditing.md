@@ -2,7 +2,7 @@
 title: 管理邮箱审核
 ms.author: chrisda
 author: chrisda
-manager: serdars
+manager: dansimp
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
@@ -15,12 +15,12 @@ search.appverid:
 - MET150
 ms.assetid: aaca8987-5b62-458b-9882-c28476a66918
 description: 默认情况下, 邮箱审核日志记录在 Microsoft 365 (也称为默认邮箱审核或邮箱审核) 中处于打开状态。 这意味着邮箱所有者、代理人和管理员执行的某些操作将自动记录在邮箱审核日志中, 在此日志中可以搜索在邮箱上执行的活动。
-ms.openlocfilehash: f100fa1eb8244aeaea463440025ee489ec019406
-ms.sourcegitcommit: ef2657e4221296be7032191f2d91e8ff727523c6
+ms.openlocfilehash: 7b50885379b7843ea1c602f08dc2976d5007d8ca
+ms.sourcegitcommit: 32ecff689ae32c59a39b7633ca0f36a304e7516e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/21/2019
-ms.locfileid: "35117687"
+ms.lasthandoff: 07/09/2019
+ms.locfileid: "35599918"
 ---
 # <a name="manage-mailbox-auditing"></a>管理邮箱审核
 

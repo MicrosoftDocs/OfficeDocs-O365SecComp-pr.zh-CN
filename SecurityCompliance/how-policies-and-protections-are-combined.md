@@ -4,7 +4,7 @@ description: 当电子邮件标记为恶意软件、垃圾邮件、高可信度�
 keywords: security、恶意软件、Microsoft 365、M365、security center、ATP、Microsoft Defender ATP、Office 365 ATP、Azure ATP
 ms.author: tracyp
 author: MSFTTracyp
-manager: laurawi
+manager: dansimp
 ms.date: 03/26/2019
 audience: ITPro
 ms.topic: article
@@ -12,12 +12,12 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection:
 - M365-security-compliance
-ms.openlocfilehash: e467910e577df46788763dd15f821c09a741e037
-ms.sourcegitcommit: b9d8a43cb3afcdc8820bc9470c5707eff8fc6616
+ms.openlocfilehash: 1f1885730d1063a0c36d172f1f9d0e4ac4fb59c7
+ms.sourcegitcommit: 32ecff689ae32c59a39b7633ca0f36a304e7516e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/11/2019
-ms.locfileid: "34852496"
+ms.lasthandoff: 07/09/2019
+ms.locfileid: "35599108"
 ---
 # <a name="what-policy-applies-when-multiple-protection-methods-and-detection-scans-run-on-your-email"></a>在您的电子邮件上运行多个保护方法和检测扫描时应用什么策略
 

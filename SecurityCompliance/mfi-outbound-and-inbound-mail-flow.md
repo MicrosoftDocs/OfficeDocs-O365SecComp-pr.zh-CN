@@ -2,7 +2,7 @@
 title: 入站和出站邮件流
 ms.author: chrisda
 author: chrisda
-manager: serdars
+manager: dansimp
 ms.date: 8/7/2018
 audience: ITPro
 ms.topic: article
@@ -10,18 +10,18 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: f2738dec-41b0-43c4-b814-84c0a4e45c6d
 description: 管理员可以了解安全 & 合规性中心的邮件流仪表板中的出站和入站邮件流小组件。
-ms.openlocfilehash: 629599f6a71c1b871abb819ae4cdd339ffa5e56b
-ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
+ms.openlocfilehash: 349fdcba3bd8dc2e8be55cf94f9c1e526a78c37c
+ms.sourcegitcommit: 32ecff689ae32c59a39b7633ca0f36a304e7516e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "34158724"
+ms.lasthandoff: 07/09/2019
+ms.locfileid: "35598038"
 ---
 # <a name="outbound-and-inbound-mail-flow"></a>入站和出站邮件流
 
 **出站和入站邮件流**小组件将**连接器报告**和以前的**TLS 概述报告**中的信息合并到一个位置。
 
-![Security & 合规性中心的邮件流仪表板中的出站和入站邮件流报告](media/2c591d1c-bad6-4b72-890e-f8fdfd4f447a.png)
+![安全 & 合规性中心的邮件流仪表板中的出站和入站邮件流报告](media/2c591d1c-bad6-4b72-890e-f8fdfd4f447a.png)
 
 小组件中的信息与 Office 365 中的连接器和 TLS 邮件保护有关。 有关详细信息, 请参阅以下主题:
 
@@ -33,7 +33,7 @@ ms.locfileid: "34158724"
 
 "**出站和入站邮件流**" 小组件显示当邮件传递到您的 Office 365 组织或从您的 Office 组织中传递时用于该连接的 TLS 加密。 当双方提供 TLS 时, 使用其他电子邮件服务建立的连接将由 TLS 进行加密。 小组件提供邮件流的最后一周的快照。 单击 "**查看详细信息**" 时,**在传输过程中保护的邮件 (通过 TLS)** 浮出控件将向您显示进入和离开组织的邮件的 TLS 保护。
 
-![安全 & 合规中心中的传输中受保护的邮件 (通过 TLS) 浮出控件](media/825aa74c-413d-4141-8e3c-dfe68ae78eed.png)
+![安全 & 合规中心在传输过程中受到保护的邮件 (通过 TLS) 浮出控件](media/825aa74c-413d-4141-8e3c-dfe68ae78eed.png)
 
 目前, TLS 1.2 是 Office 365 提供的最安全的 TLS 版本。 通常, 您需要知道正在用于合规性审核的 TLS 加密。 您可能没有与源和目标电子邮件服务器的直接关系 (您不拥有它们, 也没有 Microsoft), 因此, 不需要使用很多选项来改进这些服务器所使用的 TLS 加密。
 
@@ -51,4 +51,4 @@ Insights 指向连接器, 有助于吸引你关注连接器的潜在 TLS 加密�
 
 ## <a name="see-also"></a>另请参阅
 
-有关邮件流仪表板中的其他邮件流见解的详细信息, 请参阅[Security _AMP_ 合规性中心中的邮件流见解](mail-flow-insights.md)。
+有关邮件流仪表板中的其他邮件流见解的详细信息, 请参阅[Security & 合规性中心中的邮件流见解](mail-flow-insights.md)。

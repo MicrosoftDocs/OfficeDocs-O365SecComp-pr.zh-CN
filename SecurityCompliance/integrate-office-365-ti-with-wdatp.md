@@ -2,7 +2,7 @@
 title: 将 Office 365 高级威胁防护与 Microsoft Defender 高级威胁防护集成
 ms.author: deniseb
 author: denisebmsft
-manager: laurawi
+manager: dansimp
 ms.date: 01/22/2019
 audience: ITPro
 ms.topic: article
@@ -15,12 +15,12 @@ ms.assetid: 414fa693-d7b7-4a1d-a387-ebc3b6a52889
 ms.collection:
 - M365-security-compliance
 description: 将 Office 365 高级威胁防护与 Microsoft Defender 高级威胁防护集成, 以查看更详细的威胁管理信息。
-ms.openlocfilehash: 2d1c88f9911a9940589cdafcc7b12980f2e61a7e
-ms.sourcegitcommit: b9d8a43cb3afcdc8820bc9470c5707eff8fc6616
+ms.openlocfilehash: 640c073e9ef5b32ffaa8d38a426d86b60d80d2aa
+ms.sourcegitcommit: 32ecff689ae32c59a39b7633ca0f36a304e7516e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/11/2019
-ms.locfileid: "34852556"
+ms.lasthandoff: 07/09/2019
+ms.locfileid: "35599048"
 ---
 # <a name="integrate-office-365-advanced-threat-protection-with-microsoft-defender-advanced-threat-protection"></a>将 Office 365 高级威胁防护与 Microsoft Defender 高级威胁防护集成
 

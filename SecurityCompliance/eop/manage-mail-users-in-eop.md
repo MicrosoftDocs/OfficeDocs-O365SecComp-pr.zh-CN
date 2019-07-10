@@ -1,8 +1,8 @@
 ---
 title: 在 EOP 中管理邮件用户
-ms.author: krowley
-author: kccross
-manager: laurawi
+ms.author: tracyp
+author: MSFTTracyP
+manager: dansimp
 ms.date: 12/9/2016
 audience: ITPro
 ms.topic: article
@@ -10,12 +10,12 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: 4bfaf2ab-e633-4227-8bde-effefb41a3db
 description: 定义邮件用户是管理 Exchange Online Protection (EOP) 服务的重要部分。
-ms.openlocfilehash: 769ab13f99d7faae42bbdbed5b2b95bd37cfd55e
-ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
+ms.openlocfilehash: 520ca0fb48a131026d9a46138605892203bf6e93
+ms.sourcegitcommit: 32ecff689ae32c59a39b7633ca0f36a304e7516e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "34150234"
+ms.lasthandoff: 07/09/2019
+ms.locfileid: "35599598"
 ---
 # <a name="manage-mail-users-in-eop"></a>在 EOP 中管理邮件用户
 
@@ -47,7 +47,7 @@ ms.locfileid: "34150234"
 > 如果使用目录同步来管理收件人, 您仍可以在 Microsoft 365 管理中心中添加和管理用户, 但不会将其与本地 Active Directory 同步。 这是因为目录同步只能将来自本地 Active Directory 的收件人同步到云。 
   
 > [!TIP]
->  建议使用目录同步, 以便与以下功能配合使用: > **Outlook 安全发件人列表和阻止发件人列表**-当同步到服务时, 这些列表将优先于服务中的垃圾邮件筛选。 这允许用户在每个用户或每个域的基础上管理他们自己的白名单和黑名单。 > **基于目录的边缘阻止 (DBEB)** -有关 DBEB 的详细信息, 请参阅[使用基于目录的边缘阻止拒绝发送给无效收件人的邮件](http://technet.microsoft.com/library/ca7b7416-92ed-40ad-abdb-695be46ea2e4.aspx)。 > **最终用户垃圾邮件隔离**-为了访问最终用户的垃圾邮件隔离, 最终用户必须具有有效的 Office 365 用户 ID 和密码。 负责保护本地邮箱的 EOP 客户必须是有效的电子邮件用户。 > **邮件流规则**-使用目录同步时, 会自动将现有的 Active directory 用户和组上载到云, 然后您可以创建针对特定用户和/或的邮件流规则 (也称为传输规则)。组, 而无需通过 EAC 或 Exchange Online Protection PowerShell 手动添加它们。 请注意， [动态通讯组](https://go.microsoft.com/fwlink/?LinkId=507569)无法通过目录同步进行同步。 
+>  建议使用目录同步来使用以下功能: > **Outlook 安全发件人列表和阻止发件人列表**-同步到服务时, 这些列表将优先于服务中的垃圾邮件筛选。 这允许用户在每个用户或每个域的基础上管理他们自己的白名单和黑名单。 > **基于目录的边缘阻止 (DBEB)** -有关 DBEB 的详细信息, 请参阅[使用基于目录的边缘阻止拒绝发送给无效收件人的邮件](http://technet.microsoft.com/library/ca7b7416-92ed-40ad-abdb-695be46ea2e4.aspx)。 > **最终用户垃圾邮件隔离**-为了访问最终用户的垃圾邮件隔离, 最终用户必须具有有效的 Office 365 用户 ID 和密码。 负责保护本地邮箱的 EOP 客户必须是有效的电子邮件用户。 > **邮件流规则**-使用目录同步时, 会自动将现有的 Active directory 用户和组上载到云, 然后您可以创建针对特定用户和/或的邮件流规则 (也称为传输规则)。组, 而无需通过 EAC 或 Exchange Online Protection PowerShell 手动添加它们。 请注意， [动态通讯组](https://go.microsoft.com/fwlink/?LinkId=507569)无法通过目录同步进行同步。 
   
  **开始之前**
   

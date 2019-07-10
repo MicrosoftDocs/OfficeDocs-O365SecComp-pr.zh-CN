@@ -1,21 +1,21 @@
 ---
 title: Exchange Online Protection 中的邮件流规则 (传输规则)
-ms.author: krowley
-author: kccross
-manager: laurawi
-ms.date: 4/29/2017
+ms.author: tracyp
+author: MSFTTracyP
+manager: dansimp
+ms.date: 04/29/2017
 audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: 9c2cf227-eff7-48ef-87fb-487186e47363
 description: 可以使用邮件流规则 (传输规则) 识别通过 Office 365 组织传递的邮件并对其执行操作。
-ms.openlocfilehash: a08d3ff0d976def1d104c99a9532fe5c826f0523
-ms.sourcegitcommit: 90e514177a1ee6b7485334b15c588b0ac906aa26
+ms.openlocfilehash: b64e31490c557a1a13728d5ece67294c68856cdd
+ms.sourcegitcommit: 32ecff689ae32c59a39b7633ca0f36a304e7516e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/05/2019
-ms.locfileid: "34726053"
+ms.lasthandoff: 07/09/2019
+ms.locfileid: "35599608"
 ---
 # <a name="mail-flow-rules-transport-rules-in-exchange-online-protection"></a>Exchange Online Protection 中的邮件流规则 (传输规则)
 
