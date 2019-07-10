@@ -3,7 +3,7 @@ title: 在独立 EOP 中阻止垃圾邮件
 ms.author: tracyp
 author: msfttracyp
 ms.reviewer: andypunt
-manager: laurawi
+manager: dansimp
 ms.date: 2/25/2019
 audience: Admin
 ms.topic: article
@@ -16,12 +16,12 @@ ms.assetid: da21c0b6-e8f0-4cc8-af2e-5029a9433d59
 ms.collection:
 - M365-security-compliance
 description: 用于帮助阻止垃圾邮件误报的独立 EOP 管理员文档
-ms.openlocfilehash: a79fb94a233cd101caac96312b05a4c0d24ea645
-ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
+ms.openlocfilehash: 20533f12ccc71fc97d82590efdaf551ab036b17d
+ms.sourcegitcommit: 32ecff689ae32c59a39b7633ca0f36a304e7516e
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "34152194"
+ms.lasthandoff: 07/09/2019
+ms.locfileid: "35598488"
 ---
 ## <a name="customize-the-office-365-anti-spam-filter-with-these-settings"></a>为 Office 365 反垃圾邮件筛选器自定义这些设置
 
@@ -35,7 +35,7 @@ ms.locfileid: "34152194"
     
 2. 在 X-Forefront-Antispam-Report 头中，使用[邮件头分析器](https://testconnectivity.microsoft.com/?tabid=mha)或手动搜索 CIP 标记后面的 IP 地址。 
     
-3. 按照[配置连接筛选器策略](https://technet.microsoft.com/zh-CN/library/jj200718%28v=exchg.150%29.aspx)中的“使用 EAC 编辑默认连接筛选器策略”步骤操作，将此 IP 地址添加到 IP 阻止列表。
+3. 按照[配置连接筛选器策略](https://technet.microsoft.com/en-us/library/jj200718%28v=exchg.150%29.aspx)中的“使用 EAC 编辑默认连接筛选器策略”步骤操作，将此 IP 地址添加到 IP 阻止列表。
     
 ### <a name="block-bulk-mail-with-mail-flow-rules-transport-rules-or-the-spam-filter"></a>使用邮件流规则（也称为传输规则）或垃圾邮件筛选器阻止大量邮件
 
@@ -45,8 +45,7 @@ ms.locfileid: "34152194"
   
 ### <a name="block-email-spam-using-spam-filter-block-lists"></a>使用垃圾邮件筛选器阻止列表阻止垃圾邮件
 
-
-  [配置垃圾邮件筛选器策略](https://technet.microsoft.com/zh-CN/library/jj200684%28v=exchg.150%29.aspx)，以将发件人地址或域分别添加到垃圾邮件筛选器中的发件人阻止列表或域阻止列表。发送自垃圾邮件筛选器阻止列表中发件人或域的电子邮件会被标记为“垃圾邮件”。 
+[配置垃圾邮件筛选器策略](https://technet.microsoft.com/en-us/library/jj200684%28v=exchg.150%29.aspx)，以将发件人地址或域分别添加到垃圾邮件筛选器中的发件人阻止列表或域阻止列表。发送自垃圾邮件筛选器阻止列表中发件人或域的电子邮件会被标记为“垃圾邮件”。 
   
 ## <a name="email-users-can-also-help-ensure-that-false-negative-and-email-spam-is-blocked-with-office-365-spam-filter"></a>电子邮件用户还可有助于确保通过 Office 365 垃圾邮件筛选器避免漏报和阻止垃圾邮件
 
@@ -55,7 +54,7 @@ ms.locfileid: "34152194"
 ![在 Outlook 网页版中阻止发件人](media/fdf51381-2527-4819-ac2a-5dff84d2a36d.png)
   
 > [!NOTE]
-> 若要详细了解允许列表，请参阅[允许列表和阻止的发件人名单 FAQ](https://technet.microsoft.com/zh-CN/library/dn133608%28v=exchg.150%29.aspx)。 
+> 若要详细了解允许列表，请参阅[允许列表和阻止的发件人名单 FAQ](https://technet.microsoft.com/en-us/library/dn133608%28v=exchg.150%29.aspx)。 
   
 ## <a name="eop-only-customers-set-up-directory-synchronization"></a>仅限 EOP 客户：设置目录同步
 
