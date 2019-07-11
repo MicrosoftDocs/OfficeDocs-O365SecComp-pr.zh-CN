@@ -13,12 +13,12 @@ ms.assetid: 56fee1c7-dc37-470e-9b09-33fff6d94617
 ms.collection:
 - M365-security-compliance
 description: 摘要： 本文介绍了如何结合使用域密钥识别邮件 (DKIM) 和 Office 365，从而确保目标电子邮件系统信任从自定义域发送的邮件。
-ms.openlocfilehash: e29a6e5d92c169c29e7562d9fb563e9ddc6c5d03
-ms.sourcegitcommit: 32ecff689ae32c59a39b7633ca0f36a304e7516e
+ms.openlocfilehash: 25427060140caee242944d56b24eaab362c2f36a
+ms.sourcegitcommit: 986f40a00ab454093b21e724d58594b8b8b4a9ba
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/09/2019
-ms.locfileid: "35600418"
+ms.lasthandoff: 07/10/2019
+ms.locfileid: "35613680"
 ---
 # <a name="use-dkim-to-validate-outbound-email-sent-from-your-custom-domain-in-office-365"></a>使用 DKIM 在 Office 365 中验证从自定义域发送的出站电子邮件
 
@@ -234,7 +234,7 @@ TTL:                3600
 ## <a name="default-behavior-for-dkim-and-office-365"></a>DKIM 和 Office 365 的默认行为
 <a name="DefaultDKIMbehavior"> </a>
 
-如果不启用 DKIM，Office 365 将自动为自定义域创建 1024 位 DKIM 公钥，以及我们在数据中心内部存储的关联私钥。默认情况下，Office 365 对没有合适策略的域使用默认签名配置。也就是说，如果你未自行设置 DKIM，Office 365 将使用其默认策略，以及其为域启用 DKIM 所创建的密钥。
+如果不启用 DKIM, Office 365 将自动为您的默认域创建1024位 DKIM 公钥, 以及在我们的数据中心内部存储的关联私钥。 默认情况下，Office 365 对没有合适策略的域使用默认签名配置。 也就是说，如果你未自行设置 DKIM，Office 365 将使用其默认策略，以及其为域启用 DKIM 所创建的密钥。
   
 此外，如果在启用 DKIM 签名之后禁用它，一段时间后，Office 365 将自动为域应用 Office 365 默认策略。
   

@@ -2,7 +2,7 @@
 title: 零时差自动清除 - 防范垃圾邮件和恶意软件
 ms.author: tracyp
 author: MSFTTracyP
-manager: laurawi
+manager: dansimp
 ms.date: 04/11/2019
 audience: Admin
 ms.topic: article
@@ -17,12 +17,12 @@ ms.assetid: 96deb75f-64e8-4c10-b570-84c99c674e15
 ms.collection:
 - M365-security-compliance
 description: 零小时自动清除 (ZAP) 是一种电子邮件保护功能, 可检测到已发送到用户收件箱的垃圾邮件或恶意软件的邮件, 然后将恶意内容无害。 ZAP 的工作方式取决于检测到的恶意内容的类型。
-ms.openlocfilehash: e6faef4c123ea2db38a27b49ff0ee49b237ec75c
-ms.sourcegitcommit: 2b46fba650df8d252b1dd2b3c3f080a383183a06
+ms.openlocfilehash: ceb5a973a65406527de3361a354247908b4cab63
+ms.sourcegitcommit: 986f40a00ab454093b21e724d58594b8b8b4a9ba
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "34408347"
+ms.lasthandoff: 07/10/2019
+ms.locfileid: "35613660"
 ---
 # <a name="zero-hour-auto-purge---protection-against-spam-and-malware"></a>零时差自动清除 - 防范垃圾邮件和恶意软件
 
@@ -42,33 +42,37 @@ ZAP 可与包含 Exchange Online 邮箱的任何 Office 365 订阅附带的默�
 
 Office 365 每天实时更新反垃圾邮件引擎和恶意软件签名。 但是, 用户仍可能会因各种原因而将恶意邮件传递到其收件箱, 其中包括在将内容传递给用户后 weaponized 内容。 ZAP 通过持续监控对 Office 365 垃圾邮件和恶意软件签名的更新来解决此情况。 ZAP 可查找并删除已在用户收件箱中的以前传递的邮件。
 
-- 对于被标识为垃圾邮件的邮件, ZAP 将未读邮件移动到用户的 "垃圾邮件" 文件夹。
-
-- 对于标识为网络钓鱼的邮件, ZAP 将邮件移动到用户的 "垃圾邮件" 文件夹, 而不管是否已阅读该电子邮件。
-
-- 对于新检测到的恶意软件, ZAP 将从电子邮件中删除附件, 而不管是否已阅读电子邮件。
-  
 对于邮箱用户, ZAP 操作是无缝的;如果移动电子邮件, 则不会收到通知。 消息不得早于2天。
   
 允许列表、[邮件流规则](https://go.microsoft.com/fwlink/p/?LinkId=722755)和最终用户规则或其他筛选器优先于 ZAP。
-  
-## <a name="to-review-or-set-up-a-spam-filter-policy"></a>查看或设置垃圾邮件筛选器策略
-  
-1. 请转[https://protection.office.com](https://protection.office.com)到使用 Office 365 的工作或学校帐户登录并登录。
 
-2. 在 "**威胁管理**" 下, 选择 "**反垃圾邮件**"。
+**恶意软件 ZAP**对于新检测到的恶意软件, ZAP 将从电子邮件中删除附件, 并将邮件正文保留在用户邮箱中。 无论邮件的阅读状态如何, 都会删除附件。
 
-3. 查看标准设置。
+在恶意软件策略中, 默认情况下会启用恶意软件 ZAP。 可以使用[get-malwarefilterpolicy](https://docs.microsoft.com/en-us/powershell/module/exchange/antispam-antimalware/set-malwarefilterpolicy?view=exchange-ps)的**ZAPENABLED**参数 (EOP cmdlet) 禁用恶意软件 ZAP。
 
-4. 如果要自定义设置, 请选择 "**自定义**" 选项卡, 然后打开 "**自定义设置**"。 编辑设置, 如果需要, 请选择 " **+ 创建策略**" 以添加新策略。
+**网络钓鱼 ZAP**对于在传递后被标识为网络钓鱼的邮件, ZAP 将根据用户所涵盖的垃圾邮件策略采取措施。 如果将策略网络钓鱼操作设置为对邮件执行操作 (重定向、删除、隔离、移动到垃圾), 则 ZAP 会将邮件移动到用户收件箱的 "垃圾邮件" 文件夹, 而不管邮件的阅读状态如何。 如果策略网络钓鱼操作未设置为 "采取操作" (添加 X 标头、"修改主题"、"无操作"), 则 ZAP 不会对邮件执行操作。 了解有关如何在此处[配置垃圾邮件筛选器策略](https://docs.microsoft.com/en-us/office365/securitycompliance/configure-your-spam-filter-policies)的详细信息。
+
+默认情况下, 会在垃圾邮件策略中启用网络钓鱼 ZAP。 可以使用[set-hostedcontentfilterpolicy](https://go.microsoft.com/fwlink/p/?LinkId=722758)的**ZAPENABLED**参数 (EOP cmdlet) 禁用网络钓鱼 ZAP。
+注意: 禁用-ZapEnabled 将禁用网络钓鱼 ZAP 和垃圾邮件 ZAP
+
+**垃圾邮件 ZAP**对于在传递后被标识为垃圾邮件的邮件, ZAP 将根据用户所涵盖的垃圾邮件策略采取措施。 如果 "策略垃圾邮件" 操作设置为 "对邮件执行操作 (重定向、删除、隔离、移动到垃圾)", 则 ZAP 会将邮件移到用户收件箱的 "垃圾邮件" 文件夹中 (如果该邮件未读)。 如果策略垃圾操作未设置为 "采取操作" (添加 X 标头、"修改主题"、"无操作"), 则 ZAP 不会对邮件执行操作。 了解有关如何在此处[配置垃圾邮件筛选器策略](https://docs.microsoft.com/en-us/office365/securitycompliance/configure-your-spam-filter-policies)的详细信息。
+
+垃圾邮件策略中默认启用垃圾邮件 ZAP。 可以使用[set-hostedcontentfilterpolicy](https://go.microsoft.com/fwlink/p/?LinkId=722758)的**ZAPENABLED**参数 (EOP cmdlet) 禁用垃圾邮件 ZAP。
+注意: 禁用-ZapEnabled 将禁用网络钓鱼 ZAP 和垃圾邮件 ZAP
 
 ## <a name="to-see-if-zap-moved-your-message"></a>查看 ZAP 是否移动了邮件
 
 如果要查看 ZAP 是否移动了邮件, 可以使用[威胁防护状态报告](view-email-security-reports.md#threat-protection-status-report)或[威胁浏览器 (和实时检测)](threat-explorer.md)。
 
 ## <a name="to-disable-zap"></a>禁用 ZAP
-  
-如果要对 Office 365 租户或一组用户禁用 ZAP, 请使用[set-hostedcontentfilterpolicy](https://go.microsoft.com/fwlink/p/?LinkId=722758)的**ZAPENABLED**参数 (EOP cmdlet)。
+**禁用恶意软件 ZAP**若要禁用 O365 租户或一组用户的恶意软件 ZAP, 请使用[get-malwarefilterpolicy](https://docs.microsoft.com/en-us/powershell/module/exchange/antispam-antimalware/set-malwarefilterpolicy?view=exchange-ps)的**ZAPENABLED**参数 (EOP cmdlet)。
+
+在下面的示例中, 对名为 "Test" 的内容筛选器策略禁用了 ZAP。
+
+```Powershell
+  Set-HostedContentFilterPolicy -Identity Test -ZapEnabled $false
+```
+**禁用网络钓鱼和垃圾邮件 ZAP**若要对 O365 租户或一组用户禁用网络钓鱼和垃圾邮件 ZAP, 请使用[set-hostedcontentfilterpolicy](https://go.microsoft.com/fwlink/p/?LinkId=722758)的**ZAPENABLED**参数 (EOP cmdlet)。
 
 在下面的示例中, 对名为 "Test" 的内容筛选器策略禁用了 ZAP。
 

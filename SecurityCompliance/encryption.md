@@ -16,12 +16,12 @@ ms.collection:
 - M365-security-compliance
 - Strat_O365_IP
 description: 使用 Office 365, 你的内容将在静态和传输过程中使用最强的加密、协议和技术进行加密。 获取 Office 365 中的加密概述。
-ms.openlocfilehash: 3cd72b3caf26c18ca6836490bc3cd48c2977863b
-ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
+ms.openlocfilehash: 4e41528aed3461cc15fef1bc2ab970d1823129fb
+ms.sourcegitcommit: 986f40a00ab454093b21e724d58594b8b8b4a9ba
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "34154714"
+ms.lasthandoff: 07/10/2019
+ms.locfileid: "35613640"
 ---
 # <a name="encryption-in-office-365"></a>Office 365 中的加密
 
@@ -77,6 +77,6 @@ ms.locfileid: "34154714"
 
 ## <a name="related-topics"></a>相关主题
 
-[规划 Office 365 安全和信息保护功能](https://support.office.com/article/3d4ac4a1-3920-4ff9-918f-011f3ce60408)
+[规划 Office 365 安全和信息保护功能](plan-for-security-and-compliance.md)
   
-[Office 365 for business 中的安全性和合规性-管理员帮助](https://support.office.com/article/7fe448f7-49bd-4d3e-919d-0a6d1cf675bb)
+[确保小型企业的安全](https://docs.microsoft.com/en-us/Office365/Admin/security-and-compliance/secure-your-business-data)
