@@ -3,7 +3,7 @@ title: 数据丢失防护概述
 ms.author: deniseb
 author: denisebmsft
 manager: laurawi
-ms.date: 05/03/2019
+ms.date: 07/12/2019
 audience: ITPro
 ms.topic: conceptual
 f1_keywords:
@@ -15,17 +15,17 @@ ms.collection:
 search.appverid:
 - MET150
 description: 使用安全&amp;合规性中心中的数据丢失防护 (DLP) 策略, 可以识别、监视和自动保护 Office 365 之间的敏感信息。
-ms.openlocfilehash: 0199d43a7232b41dbbf1a5c67ab77ebe69d47a84
-ms.sourcegitcommit: 0d5a863f48914eeaaf29f7d2a2022618de186247
+ms.openlocfilehash: 2f20b3e3ec7ec3178156ca76c82ec323022f1979
+ms.sourcegitcommit: ea630cf1cbaa98ede5ee320c71a0fad7d7def6fb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34077848"
+ms.lasthandoff: 07/13/2019
+ms.locfileid: "35672921"
 ---
 # <a name="overview-of-data-loss-prevention"></a>数据丢失防护概述
 
 > [!NOTE]
-> 最近在 Office 365 E5 和 Office 365 高级合规中向 Microsoft 团队添加了数据丢失防护功能。 若要了解有关功能可用性的详细信息, 请参阅[office 365 服务说明: office 365 安全性 & 合规性中心](https://docs.microsoft.com/office365/servicedescriptions/office-365-platform-service-description/office-365-securitycompliance-center)。
+> 最近将数据丢失防护功能添加到 Microsoft 团队聊天和面向用户许可的 Office 365 高级合规性的频道消息 (可用作独立选项), 并包含在 Office 365 E5 和 Microsoft 365 E5 合规性中。 若要了解有关许可要求的详细信息, 请参阅[Microsoft 365 租户级服务许可指南](https://docs.microsoft.com/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance)。
 
 若要遵守业务标准和行业管理法规, 组织必须保护敏感信息, 并防止无意中泄露。 敏感信息可以包括财务数据或个人身份信息 (PII), 如信用卡号、社会保险号码或运行状况记录。 使用 Office 365 安全&amp;合规中心中的数据丢失防护 (DLP) 策略, 可以在 office 365 中识别、监视和自动保护敏感信息。
   
@@ -59,7 +59,7 @@ ms.locfileid: "34077848"
 
 DLP 策略包含以下基本内容：
   
-- 在何处保护内容:**位置**(如 Exchange Online、SharePoint Online 和 OneDrive for business 网站), 以及 Microsoft 团队聊天和频道。 
+- 在何处保护内容:**位置**(如 Exchange Online、SharePoint Online 和 OneDrive for business 网站), 以及 Microsoft 团队聊天和频道消息。 
     
 - 何时以及如何通过强制执行由以下部分组成的**规则**来保护此内容： 
     
@@ -75,7 +75,7 @@ DLP 策略包含以下基本内容：
   
 ### <a name="locations"></a>位置
 
-DLP 策略可以跨 Office 365 查找和保护敏感信息, 无论这些信息位于 Exchange Online、SharePoint Online、OneDrive for Business 中还是 Microsoft 团队中。 您可以选择保护 Exchange 电子邮件、Microsoft 团队聊天和频道、所有 SharePoint 或 OneDrive 库中的内容, 或选择策略的特定位置。
+DLP 策略可以跨 Office 365 查找和保护敏感信息, 无论这些信息位于 Exchange Online、SharePoint Online、OneDrive for Business 中还是 Microsoft 团队中。 您可以选择保护 Exchange 电子邮件、Microsoft 团队聊天和频道消息中的内容, 以及所有 SharePoint 或 OneDrive 库, 或选择策略的特定位置。
   
 ![DLP 策略可以在其中应用的位置选项](media/ee50a61a-e867-4571-a150-3eec8d83650f.png)
   
@@ -447,7 +447,7 @@ DLP 使用深入内容分析（而不仅仅是简单的文本扫描）来检测�
     
 - Office 桌面程序 (Excel、PowerPoint 和 Word)
 
-- Microsoft Teams 频道和聊天
+- Microsoft 团队频道和聊天消息
     
 在将该策略同步到正确的位置之后, 它将开始评估内容并强制执行操作。
   
@@ -481,7 +481,7 @@ Office 中的 DLP 策略评估设计不会影响程序的性能或对内容进�
 
 ### <a name="policy-evaluation-in-microsoft-teams"></a>Microsoft 团队中的策略评估
  
-在创建包含 Microsoft 团队作为位置的 DLP 策略时, 该策略将从 Office 365 安全&amp;合规中心同步到用户帐户以及 Microsoft 团队频道和聊天。 当有人尝试在 Microsoft 团队聊天或频道中共享敏感信息时, 可能会阻止或取消邮件, 具体取决于配置 DLP 策略的方式。 而且, 包含敏感信息且与来宾共享的文档 (外部用户) 将不会为这些用户打开。 若要了解详细信息, 请参阅[数据丢失防护和 Microsoft 团队](dlp-microsoft-teams.md)。
+在创建将 Microsoft 团队作为位置包含的 DLP 策略时, 该策略将从 Office 365 安全&amp;合规中心同步到用户帐户以及 Microsoft 团队频道和聊天消息。 当有人尝试在 Microsoft 团队聊天或频道消息中共享敏感信息时, 可能会阻止或取消邮件, 具体取决于配置 DLP 策略的方式。 而且, 包含敏感信息且与来宾共享的文档 (外部用户) 将不会为这些用户打开。 若要了解详细信息, 请参阅[数据丢失防护和 Microsoft 团队](dlp-microsoft-teams.md)。
  
 ## <a name="permissions"></a>权限
 

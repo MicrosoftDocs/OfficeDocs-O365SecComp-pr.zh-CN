@@ -3,7 +3,7 @@ title: 数据丢失防护和 Microsoft 团队
 ms.author: deniseb
 author: denisebmsft
 manager: laurawi
-ms.date: 07/01/2019
+ms.date: 07/12/2019
 audience: ITPro
 ms.topic: conceptual
 ms.service: O365-seccomp
@@ -13,28 +13,28 @@ ms.collection:
 search.appverid:
 - MET150
 description: 现在, 你可以将 DLP 策略应用于 Microsoft 团队聊天和频道。 阅读本文, 了解详细了解它的工作原理。
-ms.openlocfilehash: 3792fd6919749510ea20d4ff84b0249b16165a9f
-ms.sourcegitcommit: cc1b0281fa594cbb7c09f3e419df21aec9557831
+ms.openlocfilehash: 96ba26a4e155a976c2123cc44c3a8632092740ac
+ms.sourcegitcommit: ea630cf1cbaa98ede5ee320c71a0fad7d7def6fb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "35417394"
+ms.lasthandoff: 07/13/2019
+ms.locfileid: "35672911"
 ---
 # <a name="data-loss-prevention-and-microsoft-teams"></a>数据丢失防护和 Microsoft 团队
 
 > [!NOTE]
-> 最近在 Office 365 E5 和 Office 365 高级合规中向 Microsoft 团队添加了数据丢失防护功能。 若要了解有关功能可用性的详细信息, 请参阅[office 365 服务说明: office 365 安全性 & 合规性中心](https://docs.microsoft.com/office365/servicedescriptions/office-365-platform-service-description/office-365-securitycompliance-center)。
+> 最近将数据丢失防护功能添加到 Microsoft 团队聊天和面向用户许可的 Office 365 高级合规性的频道消息 (可用作独立选项), 并包含在 Office 365 E5 和 Microsoft 365 E5 合规性中。 若要了解有关许可要求的详细信息, 请参阅[Microsoft 365 租户级服务许可指南](https://docs.microsoft.com/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance)。
 
 ## <a name="overview-of-dlp-for-microsoft-teams"></a>适用于 Microsoft 团队的 DLP 概述
 
-最近,[数据丢失防护](data-loss-prevention-policies.md)(DLP) 功能进行了扩展, 以包括 Microsoft 团队。 如果你的组织拥有 DLP, 你现在可以定义策略, 以防止用户在 Microsoft 团队频道或聊天会话中共享敏感信息。 下面是有关此保护工作方式的一些示例:
+最近,[数据丢失防护](data-loss-prevention-policies.md)(DLP) 功能进行了扩展, 以包括 Microsoft 团队聊天和频道消息。 如果你的组织拥有 DLP, 你现在可以定义策略, 以防止用户在 Microsoft 团队频道或聊天会话中共享敏感信息。 下面是有关此保护工作方式的一些示例:
 
 - **示例 1: 保护邮件中的敏感信息**。 假定有人尝试在团队聊天或频道中与来宾 (外部用户) 共享敏感信息。 如果您定义了一个 DLP 策略来防止出现这种情况, 则会删除包含发送给外部用户的敏感信息的邮件。 这将根据您的 DLP 策略的配置方式在几秒内自动发生。
 
     > [!NOTE]
-    > 当与在团队和频道中具有[来宾访问权限](https://docs.microsoft.com/MicrosoftTeams/guest-access)的用户共享, 以及在会议和聊天会话中具有[外部访问权限](https://docs.microsoft.com/MicrosoftTeams/manage-external-access)的用户共享时, Microsoft 团队的 DLP 将阻止敏感内容。 如果要将[Microsoft 团队与 Skype For business 结合](https://docs.microsoft.com/microsoftteams/migration-interop-guidance-for-teams-with-skype)使用, 请记住, 在互操作或联合聊天会话中, 团队的 DLP 不会阻止邮件。
+    > 当与 Microsoft 工作组用户共享时, Microsoft 团队的 DLP 将阻止敏感内容:<br/>- 团队和频道中的[来宾访问](https://docs.microsoft.com/MicrosoftTeams/guest-access);和<br/>- 会议和聊天会话中的[外部访问](https://docs.microsoft.com/MicrosoftTeams/manage-external-access)。 <p>仅当发件人和收件人均处于 "仅团队" 模式并使用[Microsoft 团队本机联合身份验证](https://docs.microsoft.com/microsoftteams/manage-external-access)时, 才能使用 DLP 作为外部聊天会话。 对于 Skype for Business 或非本机联合聊天会话, 工作组的 DLP 不会阻止[互操作](https://docs.microsoft.com/microsoftteams/teams-and-skypeforbusiness-coexistence-and-interoperability#interoperability-of-teams-and-skype-for-business)性邮件。
 
-- **示例 2: 保护文档中的敏感信息**。 假定有人尝试与 Microsoft 团队频道或聊天中的来宾共享文档, 并且文档包含敏感信息。 如果您定义了一个 DLP 策略来阻止这种情况, 则不会为这些用户打开该文档。 请注意, 在这种情况下, 您的 DLP 策略必须包括 SharePoint 和 OneDrive, 以便保护就绪。 (这是在 Microsoft 团队中显示的适用于 SharePoint 的 DLP 的一个示例。)
+- **示例 2: 保护文档中的敏感信息**。 假定有人尝试与 Microsoft 团队频道或聊天中的来宾共享文档, 并且文档包含敏感信息。 如果您定义了一个 DLP 策略来阻止这种情况, 则不会为这些用户打开该文档。 请注意, 在这种情况下, 您的 DLP 策略必须包括 SharePoint 和 OneDrive, 以便保护就绪。 (这是在 Microsoft 团队中显示的适用于 SharePoint 的 DLP for SharePoint, 因此要求用户授予 Office 365 DLP (包含在 Office 365 E3 中) 的许可, 但不要求用户授予 Office 365 高级合规性许可。)
 
 ## <a name="policy-tips-help-educate-users"></a>策略提示有助于教育用户
 
