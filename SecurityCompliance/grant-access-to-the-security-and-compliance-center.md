@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: 2cfce2c8-20c5-47f9-afc4-24b059c1bd76
 description: 用户需要在 Office 365 安全 & 合规性中心中分配权限, 然后才能管理其任何安全或合规性功能。
-ms.openlocfilehash: f11114ede37269f9b89c4d2b34c69f2d6db8a3f7
-ms.sourcegitcommit: 044003455eb36071806c9f008ac631d54c64dde6
+ms.openlocfilehash: 7963a8c3db64e83566960abe9298b9a2d636ae53
+ms.sourcegitcommit: 6302a43d947a908dd10a8e40550b806f491692fc
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/24/2019
-ms.locfileid: "35199731"
+ms.lasthandoff: 07/13/2019
+ms.locfileid: "35645117"
 ---
 # <a name="give-users-access-to-the-office-365-security--compliance-center"></a>向用户授予对 Office 365 安全与合规中心的访问权限
 
@@ -70,7 +70,7 @@ ms.locfileid: "35199731"
 2. 使用 **Add-rolegroupmember** 命令将用户添加到组织管理角色，如以下示例中所示。
 
    ```
-   Add-RoleGroupMember -Identity "OrganizationManagement" -Member MatildaS
+   Add-RoleGroupMember -Identity "Organization Management" -Member MatildaS
    ```
 
    **参数**:
@@ -86,7 +86,7 @@ ms.locfileid: "35199731"
 若要验证您是否已授予用户对安全 & 合规中心的访问权限, 请使用**add-rolegroupmember** Cmdlet 查看组织管理角色组中的成员, 如以下示例所示。
   
 ```
-Get-RoleGroupMember -Identity "OrganizationManagement"
+Get-RoleGroupMember -Identity "Organization Management"
 ```
 
 有关语法和参数的详细信息, 请参阅[add-rolegroupmember](https://go.microsoft.com/fwlink/p/?LinkId=510860)。
