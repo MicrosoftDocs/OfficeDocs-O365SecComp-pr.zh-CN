@@ -13,12 +13,12 @@ search.appverid:
 - MET150
 ms.assetid: 239ce6eb-4e81-42db-bf86-a01362fed65c
 description: 了解如何通过 Microsoft Azure Active Directory 权限管理服务 (RMS) 使用 SharePoint Online IRM 来保护 SharePoint 列表和文档库。
-ms.openlocfilehash: 0df2639a12472ab6452afb7d9b66bc48beb9ba1f
-ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
+ms.openlocfilehash: 16a76ecda37bd5480285dd70670843a88198bdb7
+ms.sourcegitcommit: a97e7da9a1f870540f0bdcba7be5fb6f8bd12f74
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "34156554"
+ms.lasthandoff: 07/16/2019
+ms.locfileid: "35756844"
 ---
 # <a name="set-up-information-rights-management-irm-in-sharepoint-admin-center"></a>Set up Information Rights Management (IRM) in SharePoint admin center
 
@@ -38,7 +38,7 @@ ms.locfileid: "34156554"
     
 3. 在左窗格中, 选择 "**管理中心** \> " " **SharePoint**"。
     
-4. 在左窗格中, 选择 "**设置**"。
+4. 在左窗格中, 选择 "**设置**", 然后选择 "**经典设置" 页**。
     
 5. 在 "**信息权限管理 (IRM)** " 部分中, 选择 "**使用您的配置中指定的 IRM 服务**", 然后选择 "**刷新 IRM 设置**"。 刷新 IRM 设置后, 组织中的用户可以开始在其 SharePoint 列表和文档库中使用 IRM。 但是, 执行此操作的选项可能需要一个小时才能显示在 "库设置" 和 "列表设置" 中。
     

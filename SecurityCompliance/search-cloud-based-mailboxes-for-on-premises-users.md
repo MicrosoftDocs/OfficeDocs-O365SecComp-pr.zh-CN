@@ -3,7 +3,7 @@ title: 在 Office 365 中搜索本地用户的基于云的邮箱
 ms.author: markjjo
 author: markjjo
 manager: laurawi
-ms.date: 6/4/2018
+ms.date: ''
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
@@ -15,20 +15,22 @@ search.appverid:
 - MET150
 ms.assetid: 3f7dde1a-a8ea-4366-86da-8ee6777f357c
 description: 使用安全 & 合规中心中的内容搜索工具在 Exchange 混合部署中搜索和导出本地用户的 MicrosoftTeams 聊天数据 (称为1xN 聊天)。
-ms.openlocfilehash: b08e1ea9ea9fb9fe834bb10948be532cbc4337b4
-ms.sourcegitcommit: 6b2ca6bd153d24a717d6c537efd2d41d35c20a0b
+ms.openlocfilehash: 4bc63c4a908aba61b0f289d347d1434222ec2ed8
+ms.sourcegitcommit: a97e7da9a1f870540f0bdcba7be5fb6f8bd12f74
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/09/2019
-ms.locfileid: "35587799"
+ms.lasthandoff: 07/16/2019
+ms.locfileid: "35756854"
 ---
 # <a name="searching-cloud-based-mailboxes-for-on-premises-users-in-office-365"></a>在 Office 365 中搜索本地用户的基于云的邮箱
 
 如果你的组织具有 Exchange 混合部署, 并且已启用 Microsoft 团队, 则用户可以使用团队聊天应用程序进行即时消息传递。 对于基于云的用户, 团队聊天数据 (也称为1xN 聊天) 保存到其主要的基于云的邮箱中。 当本地用户使用团队聊天应用程序时, 其主邮箱位于本地。 为了避免此限制, Microsoft 已发布了一个新功能, 其中创建了基于云的存储区域 (称为本地用户的基于云的邮箱), 以存储本地用户的团队聊天数据。 这使您可以使用安全 & 合规中心中的内容搜索工具搜索和导出本地用户的团队聊天数据。 
   
-以下是为本地用户设置和搜索基于云的邮箱的要求和限制:
+以下是为本地用户设置基于云的邮箱的要求和限制:
   
 - 您的本地目录服务 (如 Active Directory) 中的用户帐户必须与 Azure Active Directory (Office 365 中的目录服务) 同步。 这意味着将在 Office 365 中创建一个邮件用户帐户, 并将其主邮箱位于内部部署组织中的用户关联。
+
+- 主邮箱位于内部部署组织中的用户必须分配有 Microsoft 团队许可证和 Exchange Online 计划1许可证。
     
 - 本地用户的基于云的邮箱仅用于存储团队聊天数据。 本地用户无法以任何方式登录到基于云的邮箱或访问。 它不能用于发送或接收电子邮件。 
     
@@ -58,7 +60,7 @@ ms.locfileid: "35587799"
     
 - 支持请求的用途的以下标题或说明: "启用本地用户的应用程序内容搜索"。 这有助于将请求路由到将实现请求的 Office 365 电子数据展示工程团队。 
     
-在进行工程更改之后, Microsoft 支持将向您发送估计的部署日期。 在提交支持请求后, 部署过程通常需要2-3 周。 
+在进行工程更改之后, Microsoft 支持将向您发送估计的部署日期。 在提交支持请求后, 部署过程通常需要2–3周。 
   
 ### <a name="what-happens-after-this-feature-is-enabled"></a>启用此功能后, 会发生什么？
 
@@ -90,9 +92,9 @@ ms.locfileid: "35587799"
 
 4. 此时, 您可以在 "**位置**" 下选择以下选项之一:
     
-    - **所有位置**-选择此选项可搜索组织中所有用户的邮箱。 选中此复选框后, 还将搜索本地用户的所有基于云的邮箱。 
+    - **所有位置:** 选择此选项可搜索组织中所有用户的邮箱。 选中此复选框后, 还将搜索本地用户的所有基于云的邮箱。 
     
-    - **特定位置**-选择此选项, 然后单击 "**修改** \> ", 选择 "用户"、"组" 或 "团队" 以搜索特定邮箱。 如前所述, 位置选取器允许您搜索内部部署用户。 
+    - **特定位置:** 选择此选项, 然后单击 "**修改** \> ", 选择 "用户"、"组" 或 "团队" 以搜索特定邮箱。 如前所述, 位置选取器允许您搜索内部部署用户。 
     
 5. 保存并运行搜索。 从基于云的邮箱对本地用户的任何搜索结果都可以像在任何其他搜索结果中一样进行预览。 您还可以将搜索结果 (包括任何团队聊天数据) 导出到 PST 文件。 有关详细信息，请参阅： 
     
@@ -159,4 +161,8 @@ ms.locfileid: "35587799"
   
  **在我的组织提交请求以启用此功能之前, 内容搜索是否可以查找本地用户的较早的团队聊天？**
   
-Microsoft 开始在2018年1月31日存储本地用户的团队聊天数据。 因此, 如果在此日期之后, 本地团队用户的标识在 Active Directory 和 Azure Active Directory 之间进行了同步, 则其团队聊天数据将存储在基于云的邮箱中, 并将使用内容搜索进行搜索。 Microsoft 还在为本地用户的基于云的邮箱中存储团队聊天数据 (从2018年1月31日到1月31日)。 有关此功能的详细信息即将推出。
+Microsoft 开始在2018年1月31日存储本地用户的团队聊天数据。 因此, 如果本地团队用户的标识在 Active Directory 和 Azure Active Directory 之间已在此日期后进行了同步, 则其团队聊天数据存储在基于云的邮箱中, 可使用内容搜索进行搜索。 Microsoft 还在为本地用户的基于云的邮箱中存储团队聊天数据 (从2018年1月31日到1月31日)。 有关此功能的详细信息即将推出。
+
+ * * 本地用户是否需要许可证才能在基于云的邮箱中存储团队聊天数据？ 
+  
+是。 若要将本地用户的团队对话数据存储在基于云的邮箱中, 必须在 Office 365 (或 Microsoft 365) 中为该用户分配 Microsoft 团队许可证和 Exchange Online 计划许可证。
