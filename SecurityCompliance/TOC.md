@@ -587,7 +587,6 @@
 ### [Exchange Online 数据复原能力](office-365-exchange-data-resiliency.md)
 ### [恶意软件和勒索软件防护](office-365-malware-and-ransomware-protection.md)
 ### [监视和自愈](office-365-monitoring-and-self-healing.md)
-### [SharePoint Online 数据复原能力](office-365-sharepoint-data-resiliency.md)
 ## [Office 365 中的数据保留、删除和销毁](office-365-data-retention-deletion-and-destruction-overview.md)
 ### [数据销毁](office-365-data-destruction.md)
 ### [Office 365 中的永久性](office-365-data-immutability.md)
