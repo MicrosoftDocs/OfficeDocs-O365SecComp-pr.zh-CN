@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 借助保留策略，可主动决定是保留内容还是删除内容，亦或是先保留再删除内容；可将一个策略应用于整个组织，或只应用于特定位置或用户；并能将策略应用于所有内容，或只应用于满足特定条件的内容。
-ms.openlocfilehash: 87abb5bde49204a465e820afd522d6757a10e97c
-ms.sourcegitcommit: a6f046f1529b0515f4f0e918a19ec83f4138b871
+ms.openlocfilehash: e4690c9c68bd2ead17daa2f717dd751e14338131
+ms.sourcegitcommit: 007af78a01461023bd434768154b5d96503f7e4b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/08/2019
-ms.locfileid: "35587111"
+ms.lasthandoff: 07/17/2019
+ms.locfileid: "35772169"
 ---
 # <a name="overview-of-retention-policies"></a>保留策略概述
 
@@ -62,7 +62,7 @@ ms.locfileid: "35587111"
   
 注意：
   
-- Skype 内容存储在 Exchange 中，其中策略根据消息类型（电子邮件或对话）进行应用。
+- Teams（聊天）内容存储在 Exchange 中，其中策略根据消息类型（电子邮件或对话）进行应用。
     
 - 应用于 Office 365 组的保留策略包含组的邮箱和网站。
     
