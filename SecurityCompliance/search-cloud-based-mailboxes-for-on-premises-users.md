@@ -15,12 +15,12 @@ search.appverid:
 - MET150
 ms.assetid: 3f7dde1a-a8ea-4366-86da-8ee6777f357c
 description: 使用安全 & 合规中心中的内容搜索工具在 Exchange 混合部署中搜索和导出本地用户的 MicrosoftTeams 聊天数据 (称为1xN 聊天)。
-ms.openlocfilehash: 4bc63c4a908aba61b0f289d347d1434222ec2ed8
-ms.sourcegitcommit: a97e7da9a1f870540f0bdcba7be5fb6f8bd12f74
+ms.openlocfilehash: 38aff6116bd3cd8e4ba9f0f46d6fd81f790803f3
+ms.sourcegitcommit: eda5fdbefdd1d9188375f83868c07bc075841c41
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/16/2019
-ms.locfileid: "35756854"
+ms.lasthandoff: 07/23/2019
+ms.locfileid: "35820485"
 ---
 # <a name="searching-cloud-based-mailboxes-for-on-premises-users-in-office-365"></a>在 Office 365 中搜索本地用户的基于云的邮箱
 
@@ -163,6 +163,6 @@ ms.locfileid: "35756854"
   
 Microsoft 开始在2018年1月31日存储本地用户的团队聊天数据。 因此, 如果本地团队用户的标识在 Active Directory 和 Azure Active Directory 之间已在此日期后进行了同步, 则其团队聊天数据存储在基于云的邮箱中, 可使用内容搜索进行搜索。 Microsoft 还在为本地用户的基于云的邮箱中存储团队聊天数据 (从2018年1月31日到1月31日)。 有关此功能的详细信息即将推出。
 
- * * 本地用户是否需要许可证才能在基于云的邮箱中存储团队聊天数据？ 
+ **本地用户是否需要许可证才能在基于云的邮箱中存储团队聊天数据？**
   
 是。 若要将本地用户的团队对话数据存储在基于云的邮箱中, 必须在 Office 365 (或 Microsoft 365) 中为该用户分配 Microsoft 团队许可证和 Exchange Online 计划许可证。

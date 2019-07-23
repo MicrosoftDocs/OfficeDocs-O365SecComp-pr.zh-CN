@@ -15,12 +15,12 @@ search.appverid:
 - MET150
 ms.assetid: 0d4d0f35-390b-4518-800e-0c7ec95e946c
 description: '使用安全 & 合规中心搜索统一审核日志, 以查看 Office 365 组织中的用户和管理员活动。 '
-ms.openlocfilehash: 62fdd26ec4da38610324347e189878f2fb4ad584
-ms.sourcegitcommit: a97e7da9a1f870540f0bdcba7be5fb6f8bd12f74
+ms.openlocfilehash: f2ac7e39f4bb94b516ff64323179e8107a179906
+ms.sourcegitcommit: eda5fdbefdd1d9188375f83868c07bc075841c41
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/16/2019
-ms.locfileid: "35756874"
+ms.lasthandoff: 07/23/2019
+ms.locfileid: "35820495"
 ---
 # <a name="search-the-audit-log-in-the-security--compliance-center"></a>在安全 & 合规性中心中搜索审核日志
 
@@ -329,6 +329,7 @@ ms.locfileid: "35756874"
 |修改的文件  <br/> |FileModified  <br/> |用户或系统帐户修改网站上文档的内容或属性。  <br/> |
 |（无）  <br/> |FileModifiedExtended  <br/> |这与 "修改的文件" (FileModified) 活动相关。 当同一人持续修改某个文件的时间延长 (最长为3小时) 时, 将记录 FileModifiedExtended 事件。 记录 FileModifiedExtended 事件的目的是减少文件被连续修改时记录的 FileModified 事件的数量。 这有助于减少多个 FileModified 记录在本质上是相同的用户活动的噪音, 并让您重点关注最初的 (更重要的) FileModified 事件。  <br/> |
 |移动的文件  <br/> |FileMoved  <br/> |用户将文档从其在网站上的当前位置移动到新位置。  <br/> |
+|（无）  <br/> |FilePreviewed  <br/> |用户在 SharePoint 或 OneDrive for business 网站上预览文件。 这些事件通常发生在基于单个活动 (如查看图像库) 的高卷中。  <br/> |
 |已回收文件的所有次要版本  <br/> |FileVersionsAllMinorsRecycled  <br/> |用户从文件的版本历史记录中删除所有次要版本。 已删除的版本将移至网站的回收站。  <br/> |
 |文件的所有版本都已回收  <br/> |FileVersionsAllRecycled  <br/> |用户从文件的版本历史记录中删除所有版本。 已删除的版本将移至网站的回收站。  <br/> |
 |文件的已回收版本  <br/> |FileVersionRecycled  <br/> |用户从文件的版本历史记录中删除版本。 删除的版本将移至网站的回收站。  <br/> |
