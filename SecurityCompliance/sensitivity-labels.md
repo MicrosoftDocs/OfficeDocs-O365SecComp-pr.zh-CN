@@ -13,12 +13,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 使用敏感度标签，可以对敏感内容进行分类和保护，同时确保组织内人员的工作效率和协作能力不受阻碍。敏感度标签可用于强制执行保护设置，如对已标记内容设置加密或水印。
-ms.openlocfilehash: df8caa3708a07859f0bfd058a1bd09ee38dc65ea
-ms.sourcegitcommit: 044003455eb36071806c9f008ac631d54c64dde6
+ms.openlocfilehash: 5e6ece4358362a3b32ad3b8b0b30f923e6d872cb
+ms.sourcegitcommit: 82ee560bf3ac84079764cbb4a2d858c321f65145
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/24/2019
-ms.locfileid: "35199856"
+ms.lasthandoff: 07/24/2019
+ms.locfileid: "35840884"
 ---
 # <a name="overview-of-sensitivity-labels"></a>敏感度标签概述
 
@@ -267,8 +267,8 @@ ms.locfileid: "35199856"
 
 ## <a name="permissions"></a>权限
 
-若为创建敏感度标签的合规性团队成员，必须有权访问安全与合规中心。默认情况下，租户管理员有权访问此位置，并可向合规部主管及其他人员授予对安全与合规中心的访问权限，而不授予租户管理员的所有权限。为此，建议转到安全与合规中心内的“权限”**** 页，编辑“合规性管理员”**** 角色组，再向此角色组添加成员。
+将要创建敏感度标签的合规团队成员需要 Microsoft 365 合规中心、Microsoft 365 安全中心或 Office 365 安全与合规中心的访问权限。 默认情况下，你的租户管理员将有权访问这些管理中心，并且可以向合规专员和其他人提供访问权限，而不为其提供租户管理员的所有权限。若要执行此操作。我们建议你转到其中一个管理中心的“**权限**”页面，然后将成员添加到**合规性管理员**或**安全管理员**角色组。
 
-有关详细信息，请参阅[授予用户访问 Office 365 安全与合规中心的权限](grant-access-to-the-security-and-compliance-center.md)。
+有关详细信息，请参阅[向用户授予对 Office 365 安全与合规中心的访问权限](grant-access-to-the-security-and-compliance-center.md)。
 
 只有在创建和应用标签和标签策略时，才必须拥有这些权限。强制执行策略并不需要访问内容。
