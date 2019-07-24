@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 借助保留策略，可主动决定是保留内容还是删除内容，亦或是先保留再删除内容；可将一个策略应用于整个组织，或只应用于特定位置或用户；并能将策略应用于所有内容，或只应用于满足特定条件的内容。
-ms.openlocfilehash: e4690c9c68bd2ead17daa2f717dd751e14338131
-ms.sourcegitcommit: 007af78a01461023bd434768154b5d96503f7e4b
+ms.openlocfilehash: ca68d2ecb7757435b8af6b63505b5acb2688daf6
+ms.sourcegitcommit: 82ee560bf3ac84079764cbb4a2d858c321f65145
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/17/2019
-ms.locfileid: "35772169"
+ms.lasthandoff: 07/24/2019
+ms.locfileid: "35840896"
 ---
 # <a name="overview-of-retention-policies"></a>保留策略概述
 
@@ -78,7 +78,7 @@ ms.locfileid: "35772169"
   
 请注意，如果用户尝试删除受到保留策略约束的库、列表、文件夹或网站，则会收到错误。如果用户先移动或删除受到该策略约束的文件夹的所有文件，则可删除该文件夹。另请注意，仅在需要将第一个项目复制到库时才创建保留库（而不是在创建保留策略时）。因此，要测试该策略，你首先需要编辑或删除受到该策略约束的网站中的文档，然后浏览到该保留库以查看所保留的副本。
   
-![SharePoint 和 OneDrive 中的内容生命周期关系图](Retention_Diagram_of_retention_flow_in_sites.png)
+![SharePoint 和 OneDrive 中的内容生命周期关系图](media/Retention_Diagram_of_retention_flow_in_sites.png)
   
 向 OneDrive 帐户或 SharePoint 网站分配保留策略后，内容有两条路可走：
   
