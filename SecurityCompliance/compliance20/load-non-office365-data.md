@@ -13,36 +13,36 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: ''
-description: ''
-ms.openlocfilehash: 86d858994f95176ea4d415405c4043f7e7c5308e
-ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
+description: 将非 Office 365 数据导入到高级电子数据展示事例中的审阅集。
+ms.openlocfilehash: 37f8c2a5c97452845152e2a12578b9d243ab6711
+ms.sourcegitcommit: 82ee560bf3ac84079764cbb4a2d858c321f65145
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "34155004"
+ms.lasthandoff: 07/24/2019
+ms.locfileid: "35840834"
 ---
 # <a name="load-non-office-365-data-into-a-review-set"></a>将非 Office 365 数据加载到审阅集
 
-并非所有可能需要使用 Office 365 进行分析的文档都将在 Office 365 中实时发布。 通过高级电子数据展示中的非 Office 365 内容导入功能, 可以将不在 Office 365 中的文档上传到审阅集, 以便使用高级电子数据展示对其进行分析。 此过程向您演示如何将非 Office 365 文档转换为高级电子数据展示以进行分析。
+并非所有需要在高级电子数据展示中进行分析的文档都位于 Office 365 中。 使用高级电子数据展示中的非 Office 365 数据导入功能, 可以将不在 Office 365 中的文档上传到审阅集。 本文介绍如何将非 Office 365 文档转换为高级电子数据展示以进行分析。
 
 >[!Note]
->高级电子数据展示需要 Office 365 E3 和您的组织的高级合规性加载项或 E5 订阅。 如果你没有该计划, 并且想要尝试高级电子数据展示, 可以注册 Office 365 企业版 E5 的试用版。
+>高级电子数据展示需要针对你的组织的 Microsoft 365 或 Office 365 E5 订阅或具有高级合规性附加订阅的 E3 订阅。 如果你没有该计划, 并且想要尝试高级电子数据展示, 可以注册 Office 365 企业版 E5 的试用版。
 
 ## <a name="before-you-begin"></a>开始之前
 
-如本文中所述, 使用 "上载非 Office 365" 功能要求您具备以下各项:
+若要使用本文中介绍的 "上载非 Office 365" 功能, 您需要具备以下条件:
 
-- Office 365 或 Microsoft 365 E5 订阅或具有高级合规性附加订阅的 E3 订阅。
-
-- 将上载其非 Office 365 内容的所有保管人必须具有具有高级合规性附加许可证的 E3 许可证或拥有 E5 许可证。
+- 要将非 Office 365 内容与之关联的所有保管人都必须分配有一个 E5 许可证, 或具有高级合规性附加许可证的 E3 许可证。
 
 - 现有的高级电子数据展示事例。
 
-- 必须先将保管人添加到事例, 然后才能上载与它们相关联的非 Office 365 数据。
+- 必须先将保管人添加到事例, 然后才能将非 Office 365 数据上载到其中并将其与之关联。
 
-- 将上载的所有文件都必须位于文件夹中, 其中每个文件夹都与特定的保管人相关联。 这些文件夹的名称必须使用以下命名格式: *alias @ domainname*。 *别名 @ domainname*必须是用户的 Office 365 别名和域。 您可以将所有*别名 @ domainname*文件夹收集到一个根文件夹中。 根文件夹仅可包含*别名 @ domainname*文件夹;根文件夹中不允许出现松散文件。
+- 非 Office 365 数据必须是高级电子数据展示支持的文件类型。 有关详细信息, 请参阅[高级电子数据展示中支持的文件类型](supported-filetypes-ediscovery20.md)。
 
-   例如, 要上载的非 Office 365 数据的文件夹结构将类似于以下内容:
+- 上载到审阅集的所有文件都必须位于文件夹中, 其中每个文件夹都与特定的保管人相关联。 这些文件夹的名称必须使用以下命名格式: *alias @ domainname*。 *别名 @ domainname*必须是用户的 Office 365 别名和域。 您可以收集根文件夹中的所有*别名 @ domainname*文件夹。 根文件夹仅可包含*别名 @ domainname*文件夹。 不支持根文件夹中的松散文件。
+
+   您要上载的非 Office 365 数据的文件夹结构与以下示例类似:
 
    - c:\nonO365\abraham.mcmahon@contoso.com
    - c:\nonO365\jewell.gordon@contoso.com
@@ -52,39 +52,48 @@ ms.locfileid: "34155004"
 
    ![非 Office 365 数据上传文件夹结构](../media/3f2dde84-294e-48ea-b44b-7437bd25284c.png)
 
-- 既可以是电子数据展示管理器, 也可以是电子数据展示管理员的帐户
+- 分配给电子数据展示管理器角色组 (并作为电子数据展示管理员添加) 的帐户。
 
-- 在有权访问非 Office 365 内容文件夹结构的计算机上安装了 Microsoft Azure 存储工具。
+- 在有权访问非 Office 365 内容文件夹结构的计算机上安装了 Microsoft Azure 存储工具。 若要安装 AzCopy, 请参阅[AzCopy 的入门知识](https://docs.microsoft.com/azure/storage/common/storage-use-azcopy)。 请务必将 AzCopy 安装在默认位置, 即 **% ProgramFiles (x86)% \ Microsoft SDKs\Azure\AzCopy**。
 
-- 安装 AzCopy, 您可以从以下位置执行此操作:https://docs.microsoft.com/en-us/azure/storage/common/storage-use-azcopy
 
 ## <a name="upload-non-office-365-content-into-advanced-ediscovery"></a>将非 Office 365 内容上载到高级电子数据展示
 
-1. 作为电子数据展示管理器或电子数据展示管理员, 打开高级电子数据展示, 然后将非 Office 365 数据上载到的情况。  单击 "**查看集**" 选项卡, 然后选择要将非 Office 365 数据加载到的审阅集。  如果尚未创建审阅集, 现在可以执行此操作。  最后, 单击 "**管理审阅集**", 然后在 "* * 非 Office 365 数据" 磁贴中单击 "**查看上载**"。
+1. 作为电子数据展示管理器或电子数据展示管理员, 打开高级电子数据展示, 然后将非 Office 365 数据上载到的情况。  
 
-2. 单击 "**上载文件**" 按钮以启动 "非 Office 365 数据导入向导"。
+2. 单击 "**查看集**", 然后选择要将非 Office 365 数据上传到的审阅集。  如果你没有评审集, 可以创建一个。 
+ 
+3. 在审阅集中, 单击 "**管理审阅集**", 然后单击 "在**非 Office 365 数据**磁贴上**查看上载**"。
+
+4. 单击 "**上载文件**" 以启动 "非 Office 365 数据导入向导"。
 
    ![上传文件](../media/574f4059-4146-4058-9df3-ec97cf28d7c7.png)
 
-3. 向导中的第一步是为要上载的文件准备一个安全的 Azure blob。  准备完成后, 单击 "**下一步: 上传文件**" 按钮。
+   向导中的第一步是准备 Microsoft 提供的安全的 Azure 存储位置, 以将文件上传到。  准备完成后, "**下一步: 上传文件**" 按钮将变为活动状态。
 
-   ![非 Office 365 导入-准备](../media/0670a347-a578-454a-9b3d-e70ef47aec57.png)
+   ![非 Office 365 导入: 准备](../media/0670a347-a578-454a-9b3d-e70ef47aec57.png)
  
-4. 在 "**上载文件**" 步骤中, 指定**文件位置的路径**, 这是您计划导入的非 Office 365 数据所在的位置。  设置正确的位置可确保正确更新 AzCopy 命令。
+5. 单击 "**下一步: 上传文件**"。
 
-   > [!NOTE]
-   > 如果尚未安装 AzCopy, 可以从以下位置执行此操作:https://docs.microsoft.com/en-us/azure/storage/common/storage-use-azcopy
+6. 在 "**上载文件**" 页上, 执行以下操作:
 
-5. 通过单击 "**复制到剪贴板**" 链接复制预定义命令。 启动 windows 命令提示符, 粘贴命令并按 enter。  将在下一步中将文件上载到安全 Azure blob 存储。
+   ![非 Office 365 导入: 上传文件](../media/3ea53b5d-7f9b-4dfc-ba63-90a38c14d41a.png)
 
-   ![非 Office 365 导入-上传文件](../media/3ea53b5d-7f9b-4dfc-ba63-90a38c14d41a.png)
+   a. 在 "**文件的位置路径**" 框中, 验证或键入您要上载的非 Office 365 数据所在的根文件夹的位置。 例如, 对于 "**开始之前" 部分**中显示的示例文件的位置, 应键入 **%USERPROFILE\Downloads\nonO365**。 提供正确的位置可确保正确更新路径中 "AzCopy" 命令中显示的框。
 
-   ![非 Office 365 导入 AzCopy](../media/504e2dbe-f36f-4f36-9b08-04aea85d8250.png)
+   b. 单击 "**复制到剪贴板**" 以复制框中显示的命令。 启动 windows 命令提示符, 粘贴命令并按 enter。  将在下一步中将文件上载到安全 Azure blob 存储。
+
+7. 启动 Windows 命令提示符, 粘贴您在上一步中复制的命令, 然后按**enter**以启动 AzCopy 命令。  启动该命令后, 非 Office 365 文件将被上载到在步骤4中准备的 Azure 存储位置。
+
+   ![非 Office 365 导入: AzCopy](../media/504e2dbe-f36f-4f36-9b08-04aea85d8250.png)
 
    > [!NOTE]
    > 如果提供的 AzCopy 命令失败, 请参阅[高级电子数据展示中的故障排除 AzCopy](troubleshooting-azcopy.md)
 
-6. 最后, 返回到安全 & 合规性, 然后单击 "**下一步: 处理文件**" 按钮。  这将启动已上载文件的处理、文本提取和索引。  您可以在此处或在 "**作业**" 选项卡中跟踪处理进度。 完成后, 新文件将在审阅集中可用。  完成处理后, 可以关闭向导。
+8. 返回到安全 & 合规性中心, 然后单击 "**下一步: 处理**向导中的文件"。  这将启动对上载到 Azure 存储位置的非 Office 365 文件的处理、文本提取和索引。  
 
-   ![非 Office 365 导入-处理文件](../media/218b1545-416a-4a9f-9b25-3b70e8508f67.png)
+9. 通过查看名为 "向**审阅集添加非 office 365 数据**" 的作业来跟踪处理 "**进程文件**" 页或 "**作业**" 选项卡上的非 office 365 文件的进度。  作业完成后, 新文件将在审阅集中可用。
 
+   ![非 Office 365 导入: 处理文件](../media/218b1545-416a-4a9f-9b25-3b70e8508f67.png)
+
+10. 处理完成后, 可以关闭向导。
