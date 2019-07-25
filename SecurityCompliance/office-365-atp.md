@@ -7,7 +7,7 @@ ms.date: 03/28/2019
 audience: Admin
 ms.topic: hub-page
 ms.service: O365-seccomp
-localization_priority: Normal
+localization_priority: Priority
 search.appverid:
 - MET150
 - MOE150
@@ -15,12 +15,12 @@ ms.assetid: e100fe7c-f2a1-4b7d-9e08-622330b83653
 ms.collection:
 - M365-security-compliance
 description: Office 365 高级威胁防护包括安全附件、安全链接、高级反钓鱼工具、报告工具和威胁智能功能。
-ms.openlocfilehash: 0793036f10444064f5f049a6a6ea7254de179967
-ms.sourcegitcommit: 32ecff689ae32c59a39b7633ca0f36a304e7516e
+ms.openlocfilehash: 96e79a8aabe0788388473da9fcd514b9285e1c00
+ms.sourcegitcommit: 33c8e9c16143650ca443d73e91631f9180a9268e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/09/2019
-ms.locfileid: "35600959"
+ms.lasthandoff: 07/25/2019
+ms.locfileid: "35854776"
 ---
 # <a name="office-365-advanced-threat-protection"></a>Office 365 高级威胁防护
 
@@ -53,7 +53,7 @@ Office 365 ATP 提供了多种工具来为您的组织设置适当的保护级�
 
 - [ATP 安全附件](atp-safe-attachments.md): 通过检查电子邮件附件中的恶意内容, 提供为期零天的保护, 以保护您的邮件系统。 它将不包含病毒/恶意软件签名的所有邮件和附件路由到特殊环境, 然后使用机器学习和分析技术来检测恶意意图。 如果未找到可疑活动, 则邮件将转发到邮箱。 若要了解详细信息, 请参阅[设置 Office 365 ATP 安全附件策略](set-up-atp-safe-attachments-policies.md)。
 
-- [ATP 安全链接](atp-safe-links.md): 提供有关电子邮件和 Office 文件中的 url 的单击时验证的时间。 保护正在进行中, 并适用于您的邮件和 Office 环境。 每次单击都会扫描链接: 安全链接仍可访问, 并且会动态阻止恶意链接。 若要了解详细信息, 请参阅[设置 Office 365 ATP 安全链接策略](https://docs.microsoft.com/en-us/office365/securitycompliance/set-up-atp-safe-links-policies)。 
+- [ATP 安全链接](atp-safe-links.md): 提供对 url 的单击时验证 (例如, 在电子邮件和 Office 文件中)。 保护正在进行中, 并适用于您的邮件和 Office 环境。 每次单击都会扫描链接: 安全链接仍可访问, 并且会动态阻止恶意链接。 若要了解详细信息, 请参阅[设置 Office 365 ATP 安全链接策略](https://docs.microsoft.com/en-us/office365/securitycompliance/set-up-atp-safe-links-policies)。 
 
 - [SharePoint、OneDrive 和 Microsoft 团队的 ATP](atp-for-spo-odb-and-teams.md): 在用户协作和共享文件时, 通过识别和阻止工作组网站和文档库中的恶意文件来保护组织。 若要了解详细信息, 请参阅[打开 SharePoint、OneDrive 和 Microsoft 团队的 Office 365 ATP](turn-on-atp-for-spo-odb-and-teams.md)。 
 

@@ -7,7 +7,7 @@ ms.date: 4/30/2019
 audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
-localization_priority: Normal
+localization_priority: Priority
 search.appverid:
 - MET150
 ms.assetid: 7ff0c040-b25c-4378-9904-b1b50210d00e
@@ -15,12 +15,12 @@ ms.collection:
 - Strat_O365_IP
 - M365-security-compliance
 description: 新的 Office 365 邮件加密功能基于 Azure 信息保护构建, 贵组织可以将受保护的电子邮件通信与组织内部和外部的人员结合使用。 新的 OME 功能适用于其他 Office 365 组织、Outlook.com、Gmail 和其他电子邮件服务。
-ms.openlocfilehash: 415e598a28033271b115aff639fb1ddd7a6345af
-ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
+ms.openlocfilehash: 835b1d6f40868684536dbea8f75dab0665950210
+ms.sourcegitcommit: 33c8e9c16143650ca443d73e91631f9180a9268e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "34156504"
+ms.lasthandoff: 07/25/2019
+ms.locfileid: "35854796"
 ---
 # <a name="set-up-new-office-365-message-encryption-capabilities"></a>设置全新的 Office 365 邮件加密功能
 
@@ -53,7 +53,7 @@ ms.locfileid: "34156504"
 
 如果禁用了 Azure RMS, 或者如果由于任何原因未自动激活, 则可以在中手动激活:
 
-- **Office 365 管理中心**: 有关说明, 请参阅[如何从 Office 365 管理中心激活 Azure 权限管理](https://docs.microsoft.com/en-us/azure/information-protection/activate-office365)。
+- **Microsoft 365 管理中心**: 有关说明, 请参阅[如何从管理中心激活 Azure 权限管理](https://docs.microsoft.com/en-us/azure/information-protection/activate-office365)。
 - **Azure 门户**: 了解[如何从 Azure 门户激活 azure 权限管理](https://docs.microsoft.com/en-gb/azure/information-protection/activate-azure), 以获取相关说明。
 
 ## <a name="configure-management-of-your-azure-information-protection-tenant-key"></a>配置 Azure 信息保护租户密钥的管理
@@ -125,8 +125,8 @@ ms.locfileid: "34156504"
 
 若要更新现有规则以使用新的 OME 功能, 请执行以下操作:
 
-1. 在 Office 365 管理中心, 转到**管理中心中心 _GT_ Exchange**。
-2. 在 Exchange 管理中心中, 转到 "**邮件流" _GT_ Rules**。
+1. 在 Microsoft 365 管理中心, 转到 "**管理中心" > Exchange**。
+2. 在 Exchange 管理中心中, 转到 "**邮件流" > 规则**。
 3. 对于每个规则, 请**执行以下**操作:
     - 选择 **"修改邮件安全性"**。
     - 选择 "**应用 Office 365 邮件加密和权限保护**"。

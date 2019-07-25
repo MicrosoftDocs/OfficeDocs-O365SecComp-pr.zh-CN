@@ -13,13 +13,13 @@ search.appverid:
 ms.assetid: 9b7daf19-d5f2-415b-bc43-a0f5f4a585e8
 ms.collection:
 - M365-security-compliance
-description: 管理员可以学习使用 Office 365 邮件加密来创建邮件流规则 (传输规则), 以对邮件进行加密和解密。
-ms.openlocfilehash: 624219c3d974c0a9ab8004bb7b606264c5d0f8ee
-ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
+description: 管理员可以了解如何创建邮件流规则 (传输规则), 以使用 Office 365 邮件加密对邮件进行加密和解密。
+ms.openlocfilehash: 75b8e3c977a2708eb1edb8e2b94f555aa54045ca
+ms.sourcegitcommit: 33c8e9c16143650ca443d73e91631f9180a9268e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "34150644"
+ms.lasthandoff: 07/25/2019
+ms.locfileid: "35854686"
 ---
 # <a name="define-mail-flow-rules-to-encrypt-email-messages-in-office-365"></a>定义用于加密 Office 365 中的电子邮件的邮件流规则
 
@@ -47,7 +47,7 @@ ms.locfileid: "34150644"
 
 2. 选择 "**管理**" 磁贴。
 
-3. 在 Office 365 管理中心 中，选择" **管理中心**" \> " **Exchange**"。
+3. 在 Microsoft 365 管理中心, 选择 "**管理中心** \> " " **Exchange**"。
 
 4. 在 EAC 中, 转到 "**邮件流** \> **规则**", 然后选择 "**新建** ![" 图标](media/457cd93f-22c2-4571-9f83-1b129bcfb58e.gif) \> **创建新规则**。 有关使用 EAC 的详细信息, 请参阅 exchange [Online 中的 exchange 管理中心](https://docs.microsoft.com/exchange/exchange-admin-center)。
 
@@ -79,7 +79,7 @@ ms.locfileid: "34150644"
 
 2. 选择 "**管理**" 磁贴。
 
-3. 在 Office 365 管理中心 中，选择" **管理中心**" \> " **Exchange**"。
+3. 在 Microsoft 365 管理中心, 选择 "**管理中心** \> " " **Exchange**"。
 
 4. In the EAC, go to **Mail flow** \> **Rules**.
 
@@ -105,7 +105,7 @@ ms.locfileid: "34150644"
 
 2. 选择 "**管理**" 磁贴。
 
-3. 在 Office 365 管理中心 中，选择" **管理中心**" \> " **Exchange**"。
+3. 在 Microsoft 365 管理中心, 选择 "**管理中心** \> " " **Exchange**"。
 
 4. 在 EAC 中, 转到 "**邮件流** \> **规则**", 然后选择 "**新建** ![" 图标](media/457cd93f-22c2-4571-9f83-1b129bcfb58e.gif) \> **创建新规则**。 有关使用 EAC 的详细信息, 请参阅 exchange [Online 中的 exchange 管理中心](https://docs.microsoft.com/exchange/exchange-admin-center)。
 
@@ -163,7 +163,7 @@ ms.locfileid: "34150644"
 
 2. 选择 "**管理**" 磁贴。
 
-3. 在 Office 365 管理中心 中，选择" **管理中心**" \> " **Exchange**"。
+3. 在 Microsoft 365 管理中心, 选择 "**管理中心** \> " " **Exchange**"。
 
 4. 在 EAC 中, 转到 "**邮件流** \> **规则**", 然后选择 "**新建** ![" 图标](media/457cd93f-22c2-4571-9f83-1b129bcfb58e.gif) \> **创建新规则**。 有关使用 EAC 的详细信息, 请参阅 exchange [Online 中的 exchange 管理中心](https://docs.microsoft.com/exchange/exchange-admin-center)。
 
