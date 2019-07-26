@@ -16,12 +16,12 @@ ms.collection:
 - M365-security-compliance
 - Strat_O365_IP
 description: 使用 Office 365, 你的内容将在静态和传输过程中使用最强的加密、协议和技术进行加密。 获取 Office 365 中的加密概述。
-ms.openlocfilehash: 4e41528aed3461cc15fef1bc2ab970d1823129fb
-ms.sourcegitcommit: 986f40a00ab454093b21e724d58594b8b8b4a9ba
+ms.openlocfilehash: 66b428abd67d86ba257e4f4336c6b12ee1c3d97b
+ms.sourcegitcommit: a550519ca8f2a54712bf0a43be7f954e55675dac
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/10/2019
-ms.locfileid: "35613640"
+ms.lasthandoff: 07/25/2019
+ms.locfileid: "35902474"
 ---
 # <a name="encryption-in-office-365"></a>Office 365 中的加密
 
@@ -61,7 +61,7 @@ ms.locfileid: "35613640"
   
 - [什么是 Azure 权限管理？](https://docs.microsoft.com/information-protection/understand-explore/what-is-azure-rms)
 
-- [激活 Office 365 管理中心的权限管理](https://support.office.com/article/5b6d3ac7-b1ac-428e-b03e-50e882f85a6e)
+- [在管理中心激活权限管理](https://support.office.com/article/5b6d3ac7-b1ac-428e-b03e-50e882f85a6e)
 
 - [Set up Information Rights Management (IRM) in SharePoint admin center](set-up-irm-in-sp-admin-center.md)
 
@@ -72,7 +72,7 @@ ms.locfileid: "35613640"
 |为我的组织设置加密  <br/> |[设置 Office 365 企业版中的加密](set-up-encryption.md) <br/> |
 |查看有关 Office 365 中的证书、技术和 TLS 密码套件的详细信息  <br/> |[有关 Office 365 中的加密技术的详细信息](technical-reference-details-about-encryption.md) <br/> |
 |在移动设备上处理加密邮件  <br/> |[在 Android 设备上查看加密邮件](https://support.office.com/article/83d60f17-2305-407a-a762-7d518401fdeb) <br/> [查看 iPhone 或 iPad 上的加密邮件](https://support.office.com/article/4d631321-0d26-4bcc-a483-d294dd0b1caf) <br/> |
-|使用密码保护对文档进行加密  <br/><br/>  目前, Office Online 不支持密码保护。 使用适用于密码保护的 Word、Excel 和 PowerPoint 的桌面版本。           |[在文档、工作簿或演示文稿中添加或删除保护](https://support.office.com/article/05084cc3-300d-4c1a-8416-38d3e37d6826)(选择 "**添加保护**" 部分, 然后查看 "**使用密码进行加密**")  <br/> |
+|使用密码保护对文档进行加密  <br/><br/>  目前, 在浏览器中不支持在 Office 中使用密码保护。 使用适用于密码保护的 Word、Excel 和 PowerPoint 的桌面版本。           |[在文档、工作簿或演示文稿中添加或删除保护](https://support.office.com/article/05084cc3-300d-4c1a-8416-38d3e37d6826)(选择 "**添加保护**" 部分, 然后查看 "**使用密码进行加密**")  <br/> |
 |从文档中删除加密  <br/> |[在文档、工作簿或演示文稿中添加或删除保护](https://support.office.com/article/05084cc3-300d-4c1a-8416-38d3e37d6826)(选择 "**删除保护**" 部分, 然后参阅 "**删除密码加密**")  <br/> |
 
 ## <a name="related-topics"></a>相关主题
