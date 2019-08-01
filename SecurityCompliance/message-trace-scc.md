@@ -9,12 +9,12 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: 3e64f99d-ac33-4aba-91c5-9cb4ca476803
 description: 管理员可以使用安全 & 合规性中心中的邮件跟踪来查明邮件发生了什么情况。
-ms.openlocfilehash: fb173dd09adf02c1b2eb7d0dbf9d5736483f231b
-ms.sourcegitcommit: 32ecff689ae32c59a39b7633ca0f36a304e7516e
+ms.openlocfilehash: af3739174203d7c8d81086a5bf7d036bc2bdd76f
+ms.sourcegitcommit: 73dcdafb15b462223d1a670c781db260eb73c2f5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/09/2019
-ms.locfileid: "35601009"
+ms.lasthandoff: 08/01/2019
+ms.locfileid: "36048214"
 ---
 # <a name="message-trace-in-the-security--compliance-center"></a>安全与合规中心内的消息跟踪
 
@@ -23,6 +23,9 @@ ms.locfileid: "35601009"
 Security & 合规中心中的邮件跟踪在通过 Exchange Online 组织传递的电子邮件中遵循这些电子邮件。 您可以确定服务是否已接收、拒绝、推迟或发送邮件。 它还显示邮件在到达其最终状态之前对邮件执行的操作。
 
 Security & 合规性中心中的邮件跟踪改进了在 Exchange 管理中心 (EAC) 中可用的邮件跟踪。 您可以使用邮件跟踪中的信息来有效地回答用户对其邮件发生的问题、解决邮件流问题以及验证策略更改的问题。
+
+> [!NOTE]
+> 返回的邮件数量限制为50000。 在控制台中, 当运行非常大的查询时, Start-historicalsearch cmdlet 报告邮件数超过240000。
 
 ## <a name="open-message-trace"></a>打开邮件跟踪
 

@@ -3,49 +3,6 @@
 
 
 
-## <a name="week-of-june-17-2019"></a>2019年6月17日一周
-
-
-| 发布日期 |主题标题 | 更改 |
-|------|------------|--------|
-| 6/17/2019 | [转到 Office 365 安全与合规中心](/Office365/SecurityCompliance/go-to-the-securitycompliance-center) | 修改内容 |
-| 6/17/2019 | [向用户授予对 Office 365 安全 & 合规中心的访问权限](/Office365/SecurityCompliance/grant-access-to-the-security-and-compliance-center) | 修改内容 |
-| 6/17/2019 | [搜索和删除邮件 - 管理员帮助](/Office365/SecurityCompliance/search-for-and-delete-messagesadmin-help) | 修改内容 |
-| 6/17/2019 | [SIEM server 与 Microsoft 365 的集成](/Office365/SecurityCompliance/siem-server-integration) | 修改内容 |
-| 6/17/2019 | [使用示例连接器在 Office 365 中存档 Facebook 数据 (预览)](/Office365/SecurityCompliance/archive-facebook-data-with-sample-connector) | 修改内容 |
-| 6/17/2019 | [使用示例连接器在 Office 365 中存档 Twitter 数据 (预览)](/Office365/SecurityCompliance/archive-twitter-data-with-sample-connector) | 修改内容 |
-| 6/17/2019 | [在 Office 365 中存档第三方数据](/Office365/SecurityCompliance/archiving-third-party-data) | 修改内容 |
-| 6/17/2019 | [部署连接器以在 Office 365 中存档 Twitter 数据](/Office365/SecurityCompliance/deploy-twitter-connector) | 修改内容 |
-| 6/17/2019 | [内容搜索的关键字查询和搜索条件](/Office365/SecurityCompliance/keyword-queries-and-search-conditions) | 修改内容 |
-| 6/17/2019 | [使用内容搜索来搜索导入到 Office 365 的第三方数据](/Office365/SecurityCompliance/use-content-search-to-search-third-party-data-that-was-imported) | 修改内容 |
-| 6/17/2019 | [Office 365 ATP 安全链接警告页](/Office365/SecurityCompliance/atp-safe-links-warning-pages) | 修改内容 |
-| 6/17/2019 | [在 Office 365 中创建阻止发件人列表](/Office365/SecurityCompliance/create-block-sender-lists-in-office-365) | 修改内容 |
-| 6/17/2019 | [在 Office 365 中创建安全发件人列表](/Office365/SecurityCompliance/create-safe-sender-lists-in-office-365) | 修改内容 |
-| 6/17/2019 | [为数据调查分配权限 (预览)](/Office365/SecurityCompliance/datainvestigations/permissions) | 修改内容 |
-| 6/17/2019 | [信息屏障策略的属性](/Office365/SecurityCompliance/information-barriers-attributes) | 修改内容 |
-| 6/17/2019 | [定义信息屏障策略](/Office365/SecurityCompliance/information-barriers-policies) | 修改内容 |
-| 6/17/2019 | [信息障碍故障排除](/Office365/SecurityCompliance/information-barriers-troubleshooting) | 修改内容 |
-| 6/17/2019 | [信息障碍概述](/Office365/SecurityCompliance/information-barriers) | 修改内容 |
-| 6/18/2019 | [Office 365 中的电子数据展示](/Office365/SecurityCompliance/ediscovery) | 修改内容 |
-| 6/18/2019 | [定义信息屏障策略](/Office365/SecurityCompliance/information-barriers-policies) | 修改内容 |
-| 6/18/2019 | [使用保留标签和 DLP 保护 SharePoint Online 文件](/Office365/SecurityCompliance/protect-sharepoint-online-files-with-office-365-labels-and-dlp) | 修改内容 |
-| 6/18/2019 | [在开发/测试环境中保护 SharePoint Online 网站](/Office365/SecurityCompliance/secure-sharepoint-online-sites-in-a-dev-test-environment) | 修改内容 |
-| 6/19/2019 | [设置连接器以存档 Office 365 中的 LinkedIn 数据 (预览)](/Office365/SecurityCompliance/archive-linkedin-data) | 修改内容 |
-| 6/19/2019 | [Microsoft 365 中的高级电子数据展示解决方案概述](/Office365/SecurityCompliance/compliance20/overview-ediscovery-20) | 修改内容 |
-| 6/19/2019 | [定义信息屏障策略](/Office365/SecurityCompliance/information-barriers-policies) | 修改内容 |
-| 6/19/2019 | [存储在 Exchange Online 邮箱中的内容](/Office365/SecurityCompliance/what-is-stored-in-exo-mailbox) | 修改内容 |
-| 6/20/2019 | [在安全 & 合规性中心中搜索审核日志](/Office365/SecurityCompliance/search-the-audit-log-in-security-and-compliance) | 修改内容 |
-| 6/20/2019 | [威胁浏览器 (和实时检测)](/Office365/SecurityCompliance/threat-explorer) | 修改内容 |
-| 6/20/2019 | [定义信息屏障策略](/Office365/SecurityCompliance/information-barriers-policies) | 修改内容 |
-| 6/20/2019 | [设置 Office 365 ATP 安全链接策略](/Office365/SecurityCompliance/set-up-atp-safe-links-policies) | 修改内容 |
-| 6/20/2019 | [安全与合规中心中的警报策略](/Office365/SecurityCompliance/alert-policies) | 修改内容 |
-| 6/20/2019 | [以 Office 365 中的管理员身份管理隔离的邮件和文件](/Office365/SecurityCompliance/manage-quarantined-messages-and-files) | 修改内容 |
-| 6/20/2019 | [管理邮箱审核](/Office365/SecurityCompliance/enable-mailbox-auditing) | 修改内容 |
-| 6/21/2019 | [定义信息屏障策略](/Office365/SecurityCompliance/information-barriers-policies) | 修改内容 |
-| 6/21/2019 | [信息障碍故障排除](/Office365/SecurityCompliance/information-barriers-troubleshooting) | 修改内容 |
-| 6/21/2019 | [保留策略概述](/Office365/SecurityCompliance/retention-policies) | 修改内容 |
-
-
 ## <a name="week-of-june-24-2019"></a>2019年6月24日一周
 
 
@@ -360,3 +317,38 @@
 | 7/18/2019 | [Set up Information Rights Management (IRM) in SharePoint admin center](/Office365/SecurityCompliance/set-up-irm-in-sp-admin-center) | 修改内容 |
 | 7/18/2019 | [设置全新的 Office 365 邮件加密功能](/Office365/SecurityCompliance/set-up-new-message-encryption-capabilities) | 修改内容 |
 | 7/18/2019 | [查看高级电子数据展示中的对话](/Office365/SecurityCompliance/compliance20/conversation-review-sets) | 修改内容 |
+
+
+## <a name="week-of-july-22-2019"></a>2019年7月22日一周
+
+
+| 发布日期 |主题标题 | 更改 |
+|------|------------|--------|
+| 7/22/2019 | [在 Office 365 中搜索本地用户的基于云的邮箱](/Office365/SecurityCompliance/search-cloud-based-mailboxes-for-on-premises-users) | 修改内容 |
+| 7/22/2019 | [在安全 & 合规性中心中搜索审核日志](/Office365/SecurityCompliance/search-the-audit-log-in-security-and-compliance) | 修改内容 |
+| 7/23/2019 | [将非 Office 365 数据加载到审阅集](/Office365/SecurityCompliance/compliance20/load-non-office365-data) | 修改内容 |
+| 7/23/2019 | [保留策略概述](/Office365/SecurityCompliance/retention-policies) | 修改内容 |
+| 7/23/2019 | [敏感度标签概述](/Office365/SecurityCompliance/sensitivity-labels) | 修改内容 |
+| 7/24/2019 | [反垃圾邮件邮件头](/Office365/SecurityCompliance/anti-spam-message-headers) | 修改内容 |
+| 7/24/2019 | [配置垃圾邮件筛选器策略](/Office365/SecurityCompliance/configure-your-spam-filter-policies) | 修改内容 |
+| 7/24/2019 | [Office 365 中的内容搜索](/Office365/SecurityCompliance/content-search) | 修改内容 |
+| 7/24/2019 | [数据丢失防护概述](/Office365/SecurityCompliance/data-loss-prevention-policies) | 修改内容 |
+| 7/24/2019 | [定义用于加密 Office 365 中的电子邮件的邮件流规则](/Office365/SecurityCompliance/define-mail-flow-rules-to-encrypt-email) | 修改内容 |
+| 7/24/2019 | [Office 365 中的电子邮件加密](/Office365/SecurityCompliance/email-encryption) | 修改内容 |
+| 7/24/2019 | [导出内容搜索结果](/Office365/SecurityCompliance/export-search-results) | 修改内容 |
+| 7/24/2019 | [以 Office 365 中的用户的形式查找和释放隔离邮件](/Office365/SecurityCompliance/find-and-release-quarantined-messages-as-a-user) | 修改内容 |
+| 7/24/2019 | [Overview of importing your organization PST files to Office 365](/Office365/SecurityCompliance/importing-pst-files-to-office-365) | 修改内容 |
+| 7/24/2019 | [Office 365 高级威胁防护](/Office365/SecurityCompliance/office-365-atp) | 修改内容 |
+| 7/24/2019 | [发送垃圾电子邮件后，从受限用户门户删除用户](/Office365/SecurityCompliance/removing-user-from-restricted-users-portal-after-spam) | 修改内容 |
+| 7/24/2019 | [在 Office 365 组织中搜索和删除电子邮件-管理员帮助](/Office365/SecurityCompliance/search-for-and-delete-messages-in-your-organization) | 修改内容 |
+| 7/24/2019 | [在安全 & 合规性中心中搜索审核日志](/Office365/SecurityCompliance/search-the-audit-log-in-security-and-compliance) | 修改内容 |
+| 7/24/2019 | [设置全新的 Office 365 邮件加密功能](/Office365/SecurityCompliance/set-up-new-message-encryption-capabilities) | 修改内容 |
+| 7/24/2019 | [在 Office 365 中设置 SPF 以防止欺骗](/Office365/SecurityCompliance/set-up-spf-in-office-365-to-help-prevent-spoofing) | 修改内容 |
+| 7/24/2019 | [在 Office 365 中使用自定义域中的电子邮件 DKIM](/Office365/SecurityCompliance/use-dkim-to-validate-outbound-email) | 修改内容 |
+| 7/24/2019 | [使用 DMARC 验证 Office 365 中的电子邮件](/Office365/SecurityCompliance/use-dmarc-to-validate-email) | 修改内容 |
+| 7/24/2019 | [使用网络上传将组织 PST 文件导入到 Office 365](/Office365/SecurityCompliance/use-network-upload-to-import-pst-files) | 修改内容 |
+| 7/25/2019 | [设置连接器以存档 Office 365 中的即时 Bloomberg 数据](/Office365/SecurityCompliance/archive-instant-bloomberg-data) | 修改内容 |
+| 7/25/2019 | [在 Office 365 中存档第三方数据](/Office365/SecurityCompliance/archiving-third-party-data) | 修改内容 |
+| 7/25/2019 | [Office 365 中的加密](/Office365/SecurityCompliance/encryption) | 修改内容 |
+| 7/26/2019 | [Office 365 中的监督策略](/Office365/SecurityCompliance/supervision-policies) | 修改内容 |
+| 7/26/2019 | [审核共享以查找与外部用户共享的资源](/Office365/SecurityCompliance/use-sharing-auditing) | 修改内容 |

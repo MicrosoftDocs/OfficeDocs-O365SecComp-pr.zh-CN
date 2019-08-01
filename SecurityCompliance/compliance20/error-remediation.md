@@ -14,20 +14,20 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: 8653ebd82e9c045c4fc49b00fcb82bf22ab3f906
-ms.sourcegitcommit: 6eb51931242d07abde2e37f1bd57d13bc724f0de
+ms.openlocfilehash: 5168196dcac8a2cb3809f43fabb470c0f64cd0f7
+ms.sourcegitcommit: 73dcdafb15b462223d1a670c781db260eb73c2f5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "34547937"
+ms.lasthandoff: 08/01/2019
+ms.locfileid: "36048125"
 ---
 # <a name="error-remediation-when-processing-data"></a>修正处理数据时出现的错误
 
-错误修正允许电子数据展示管理员修正数据问题, 以防高级电子数据展示能够正确处理内容。 例如, 由于文件被锁定或加密, 因此无法处理受密码保护的文件。 使用错误修正, 电子数据展示管理员可以下载具有此类错误的文件, 删除密码保护并上载修正的文件。
+错误修正使电子数据展示管理员能够修正阻止高级电子数据展示的数据问题, 从而无法正确处理内容。 例如, 由于文件被锁定或加密, 因此无法处理受密码保护的文件。 使用错误修正, 电子数据展示管理员可以下载具有此类错误的文件, 删除密码保护, 然后上传修正的文件。
 
 使用以下工作流修正高级电子数据展示事例中有错误的文件。
 
-## <a name="creating-an-error-remediation-session-to-remediate-files-with-processing-errors"></a>创建错误修正会话以纠正带有处理错误的文件
+## <a name="create-an-error-remediation-session-to-remediate-files-with-processing-errors"></a>创建错误修正会话以修正带有处理错误的文件
 
 >[!NOTE]
 >如果在以下过程中随时关闭错误修正向导, 则可以通过在 "**视图**" 下拉菜单中选择 "**错误" remediations**返回到 "**处理**" 选项卡中的 "错误修正" 会话。
@@ -36,11 +36,11 @@ ms.locfileid: "34547937"
 
 2. 通过单击 "错误类型" 或 "文件类型" 旁边的单选按钮, 选择要修正的错误。  在下面的示例中, 我们正在修正受密码保护的文件。
 
-3. 单击 " **+ 新错误修正**"。
+3. 单击 "**新建错误修正**"。
 
     ![错误修正](../media/8c2faf1a-834b-44fc-b418-6a18aed8b81a.png)
 
-    将开始错误修正会话, 从准备阶段开始, 其中包含错误的文件复制到安全 Azure 位置, 以便可以下载。
+    错误修正会话从准备阶段开始, 其中包含错误的文件复制到 Microsoft 提供的 Azure 存储位置, 以便将其下载到本地计算机以进行修正。
 
     ![准备错误修正](../media/390572ec-7012-47c4-a6b6-4cbb5649e8a8.png)
 
@@ -48,24 +48,18 @@ ms.locfileid: "34547937"
 
     ![下载文件](../media/6ac04b09-8e13-414a-9e24-7c75ba586363.png)
 
-5. 若要下载文件, 请指定**下载的目标路径**;这是您的本地计算机上应下载文件的路径。  默认路径 "%USERPROFILE%\Downloads\errors" 指向已登录用户的 "下载" 文件夹;可以根据需要对此进行更改。
-
-    >[!NOTE]
-    >建议使用本地文件路径, 而不是远程网络路径, 以实现最佳性能。
-
-    > [!NOTE]
-    > 如果尚未安装 AzCopy, 则可以从此处进行安装:https://docs.microsoft.com/en-us/azure/storage/common/storage-use-azcopy
+5. 若要下载文件, 请指定**下载的目标路径**。 这是将在本地计算机上下载文件的路径。  默认路径 "%USERPROFILE%\Downloads\errors" 指向已登录用户的 "下载" 文件夹。 如有必要, 可以更改此路径。 如果您确实要更改它, 建议使用本地文件路径, 而不是远程网络路径, 以实现最佳性能。
 
 6. 通过单击 "**复制到剪贴板**" 复制预定义命令。 启动 windows 命令提示符, 粘贴命令, 然后按**enter**。  
 
-    将下载这些文件。
+    下载文件。
 
     ![准备错误修正](../media/f364ab4d-31c5-4375-b69f-650f694a2f69.png)
 
     > [!NOTE]
-    > 如果提供的 AzCopy 命令失败, 请参阅[排查高级电子数据展示中的 AzCopy](troubleshooting-azcopy.md)。
+    > 必须使用 AzCopy app-v 8.1 才能成功使用 "**下载文件**" 页上提供的命令。 在下面的步骤10中, 还必须使用 AzCopy 中的文件上传文件。 若要安装此版本的 AzCopy, 请参阅[在 Windows 上使用 AzCopy ue-v 8.1 传输数据](https://docs.microsoft.com/previous-versions/azure/storage/storage-use-azcopy)。 如果提供的 AzCopy 命令失败, 请参阅[高级电子数据展示中的疑难解答 AzCopy](troubleshooting-azcopy.md)。
 
-7. 下载文件后, 可以使用适当的工具对它们进行修正。 对于受密码保护的文件, 可以使用许多密码破解工具。 如果您知道这些文件的密码, 则可以打开它们并删除密码保护。
+7. 下载文件后, 可以使用适当的工具对它们进行修正。 对于受密码保护的文件, 可以使用几种密码破解工具。 如果您知道这些文件的密码, 则可以打开它们并删除密码保护。
     > [!NOTE]
     > 务必在 tact 中保留已修正文件的目录结构和文件名, 这一点非常重要。  在下载的文件和文件夹中使用的所有命名约定使 remdiated 文件可以重新关联到原始文件。
 
@@ -79,7 +73,7 @@ ms.locfileid: "34547937"
 
     ![ff2ff691-629f-4065-9b37-5333f937daf6](../media/ff2ff691-629f-4065-9b37-5333f937daf6.png)
 
-11. 最后, 返回到高级电子数据展示并单击 "**下一步: 处理文件**"。
+11. 返回到高级电子数据展示并单击 "**下一步: 处理文件**"。
 
 12. 处理完成时。  您可以返回到评审集并查看修正的文件。
 

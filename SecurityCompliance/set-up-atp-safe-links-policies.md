@@ -2,7 +2,7 @@
 title: 设置 Office 365 ATP 安全链接策略
 ms.author: deniseb
 author: denisebmsft
-manager: laurawi
+manager: dansimp
 audience: Admin
 ms.topic: article
 ms.date: 06/26/2019
@@ -15,12 +15,12 @@ ms.assetid: bdd5372d-775e-4442-9c1b-609627b94b5d
 ms.collection:
 - M365-security-compliance
 description: 设置安全链接策略以保护您的组织免受 Word、Excel、PowerPoint 和 Visio 文件以及电子邮件中的恶意链接。
-ms.openlocfilehash: 8fd49eddc402400acafe0f9d702d19c7a3f63949
-ms.sourcegitcommit: 011bfa60cafdf47900aadf96a17eb275efa877c4
+ms.openlocfilehash: 0acee8ee333c8a8f81ed624c52287c412a25ccbb
+ms.sourcegitcommit: 73dcdafb15b462223d1a670c781db260eb73c2f5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/29/2019
-ms.locfileid: "35394337"
+ms.lasthandoff: 08/01/2019
+ms.locfileid: "36048074"
 ---
 # <a name="set-up-office-365-atp-safe-links-policies"></a>设置 Office 365 ATP 安全链接策略
 
@@ -97,9 +97,9 @@ ms.locfileid: "35394337"
     
   - 在 "**选择操作**" 部分, 选择 **"启用"**。
     
-  - 选择 "**使用安全附件扫描可下载的内容**"。
+  - 如果要启用 URL 沙箱以查找可疑和文件指向的 Url (推荐), 请选择 "**应用实时 url 扫描以查找可疑链接和指向文件的链接**"。 如果您希望仅在完全扫描 Url 后用户收到邮件, 则**在传递邮件之前, 请选择 "等待 URL 扫描完成"** 。
     
-  - 如果此选项可用, 请选择 "**将安全链接应用于在组织内发送的邮件"**。
+  - 如果要为组织中的用户发送的邮件启用安全链接 (推荐), 请选择 "**将安全链接应用于在组织内发送的邮件"** 。
     
   - 选择 **"不允许用户单击到原始 URL"**。
     

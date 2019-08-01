@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: 将非 Office 365 数据导入到高级电子数据展示事例中的审阅集。
-ms.openlocfilehash: 37f8c2a5c97452845152e2a12578b9d243ab6711
-ms.sourcegitcommit: 82ee560bf3ac84079764cbb4a2d858c321f65145
+ms.openlocfilehash: d7609c774e7c8a42e24b22a87fbed271a12a97f5
+ms.sourcegitcommit: 73dcdafb15b462223d1a670c781db260eb73c2f5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/24/2019
-ms.locfileid: "35840834"
+ms.lasthandoff: 08/01/2019
+ms.locfileid: "36048104"
 ---
 # <a name="load-non-office-365-data-into-a-review-set"></a>将非 Office 365 数据加载到审阅集
 
@@ -40,7 +40,7 @@ ms.locfileid: "35840834"
 
 - 非 Office 365 数据必须是高级电子数据展示支持的文件类型。 有关详细信息, 请参阅[高级电子数据展示中支持的文件类型](supported-filetypes-ediscovery20.md)。
 
-- 上载到审阅集的所有文件都必须位于文件夹中, 其中每个文件夹都与特定的保管人相关联。 这些文件夹的名称必须使用以下命名格式: *alias @ domainname*。 *别名 @ domainname*必须是用户的 Office 365 别名和域。 您可以收集根文件夹中的所有*别名 @ domainname*文件夹。 根文件夹仅可包含*别名 @ domainname*文件夹。 不支持根文件夹中的松散文件。
+- 上载到审阅集的所有文件都必须位于文件夹中, 其中每个文件夹都与特定的保管人相关联。 这些文件夹的名称必须使用以下命名格式: *alias @ domainname*。 别名 @ domainname 必须是用户的 Office 365 别名和域。 您可以收集根文件夹中的所有别名 @ domainname 文件夹。 根文件夹仅可包含别名 @ domainname 文件夹。 不支持根文件夹中的松散文件。
 
    您要上载的非 Office 365 数据的文件夹结构与以下示例类似:
 
@@ -54,7 +54,7 @@ ms.locfileid: "35840834"
 
 - 分配给电子数据展示管理器角色组 (并作为电子数据展示管理员添加) 的帐户。
 
-- 在有权访问非 Office 365 内容文件夹结构的计算机上安装了 Microsoft Azure 存储工具。 若要安装 AzCopy, 请参阅[AzCopy 的入门知识](https://docs.microsoft.com/azure/storage/common/storage-use-azcopy)。 请务必将 AzCopy 安装在默认位置, 即 **% ProgramFiles (x86)% \ Microsoft SDKs\Azure\AzCopy**。
+- 在具有对非 Office 365 内容文件夹结构的访问权限的计算机上安装了 AzCopy (v 8.1) 工具。 若要安装 AzCopy, 请参阅[在 Windows 上使用 AzCopy 中的传输数据](https://docs.microsoft.com/previous-versions/azure/storage/storage-use-azcopy)。 请务必将 AzCopy 安装在默认位置, 即 **% ProgramFiles (x86)% \ Microsoft SDKs\Azure\AzCopy**。 必须使用 AzCopy 中的 "8.1"。 其他版本的 AzCopy 在高级电子数据展示中加载非 Office 365 数据时可能不起作用。
 
 
 ## <a name="upload-non-office-365-content-into-advanced-ediscovery"></a>将非 Office 365 内容上载到高级电子数据展示
@@ -81,14 +81,14 @@ ms.locfileid: "35840834"
 
    a. 在 "**文件的位置路径**" 框中, 验证或键入您要上载的非 Office 365 数据所在的根文件夹的位置。 例如, 对于 "**开始之前" 部分**中显示的示例文件的位置, 应键入 **%USERPROFILE\Downloads\nonO365**。 提供正确的位置可确保正确更新路径中 "AzCopy" 命令中显示的框。
 
-   b. 单击 "**复制到剪贴板**" 以复制框中显示的命令。 启动 windows 命令提示符, 粘贴命令并按 enter。  将在下一步中将文件上载到安全 Azure blob 存储。
+   b. 单击 "**复制到剪贴板**" 以复制框中显示的命令。
 
 7. 启动 Windows 命令提示符, 粘贴您在上一步中复制的命令, 然后按**enter**以启动 AzCopy 命令。  启动该命令后, 非 Office 365 文件将被上载到在步骤4中准备的 Azure 存储位置。
 
    ![非 Office 365 导入: AzCopy](../media/504e2dbe-f36f-4f36-9b08-04aea85d8250.png)
 
    > [!NOTE]
-   > 如果提供的 AzCopy 命令失败, 请参阅[高级电子数据展示中的故障排除 AzCopy](troubleshooting-azcopy.md)
+   > 如前所述, 必须使用 AzCopy 中的 "**上载文件**" 页上提供的命令, 才能成功使用。 如果提供的 AzCopy 命令失败, 请参阅[高级电子数据展示中的疑难解答 AzCopy](troubleshooting-azcopy.md)。
 
 8. 返回到安全 & 合规性中心, 然后单击 "**下一步: 处理**向导中的文件"。  这将启动对上载到 Azure 存储位置的非 Office 365 文件的处理、文本提取和索引。  
 

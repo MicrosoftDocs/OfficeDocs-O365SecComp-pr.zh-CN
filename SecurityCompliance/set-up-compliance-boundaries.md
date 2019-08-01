@@ -15,12 +15,12 @@ search.appverid:
 - MET150
 ms.assetid: 1b45c82f-26c8-44fb-9f3b-b45436fe2271
 description: 使用合规性边界在 Office 365 组织中创建用于控制电子数据展示管理器可搜索的用户内容位置的逻辑边界。 合规性边界使用搜索权限筛选 (也称为合规性安全筛选器) 控制特定用户可以搜索哪些邮箱、SharePoint 网站和 OneDrive 帐户。
-ms.openlocfilehash: ab9fae4dcae04bc79c94f5a5138dfd56cc551414
-ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
+ms.openlocfilehash: 902006039ec949d84c020d8e85f998bde41ad97d
+ms.sourcegitcommit: 73dcdafb15b462223d1a670c781db260eb73c2f5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "34156574"
+ms.lasthandoff: 08/01/2019
+ms.locfileid: "36048064"
 ---
 # <a name="set-up-compliance-boundaries-for-ediscovery-investigations-in-office-365"></a>在 Office 365 中为电子数据展示调查设置合规性边界
 
@@ -34,7 +34,7 @@ ms.locfileid: "34156574"
   
 - 内容搜索中的搜索权限筛选功能控制电子数据展示管理者和调查人员可以搜索的内容位置。 这意味着第四个咖啡店中的电子数据展示管理者和调查人员只能在第四个咖啡子公司中搜索内容位置。 此限制适用于 Coho Winery 子公司。
     
-    角色组控制哪些用户可以查看 Security & 合规中心中的电子数据展示事例。 这意味着电子数据展示管理者和调查人员只能查看其代理中的电子数据展示事例。
+    角色组控制哪些用户可以查看安全 & 合规中心中的电子数据展示事例。 这意味着电子数据展示管理者和调查人员只能查看其代理中的电子数据展示事例。
     
 - 角色组还控制谁可以向电子数据展示事例分配成员。 这意味着电子数据展示管理者和调查人员只能将成员分配给他们自己所属的案例。
     
@@ -86,7 +86,7 @@ ms.locfileid: "34156574"
   
 ## <a name="step-3-create-a-role-group-for-each-agency"></a>步骤 3: 为每个代理创建角色组
 
-下一步是在安全 & 合规性中心中创建将与您的机构相一致的角色组。 我们建议您创建新的角色组, 方法是复制内置的电子数据展示管理器组, 添加适当的成员, 并删除可能不适用于您的需求的角色。 有关电子数据展示相关角色的详细信息, 请参阅[在 Office 365 Security _AMP_ 合规中心中分配电子数据展示权限](assign-ediscovery-permissions.md)。
+下一步是在安全 & 合规性中心中创建将与您的机构相一致的角色组。 我们建议您创建新的角色组, 方法是复制内置的电子数据展示管理器组, 添加适当的成员, 并删除可能不适用于您的需求的角色。 有关电子数据展示相关角色的详细信息, 请参阅[在 Office 365 安全 & 合规中心中分配电子数据展示权限](assign-ediscovery-permissions.md)。
   
 若要创建角色组, 请转到 Security & 合规性中心中的 "**权限**" 页, 并为每个要使用合规性边界和电子数据展示事例来管理调查的代理中的每个团队创建一个角色组。 
   
@@ -146,16 +146,16 @@ New-ComplianceSecurityFilter -FilterName "Coho Winery Security Filter" -Users "C
 
 ## <a name="step-5-create-an-ediscovery-case-for-an-intra-agency-investigations"></a>步骤 5: 为机构内调查创建电子数据展示事例
 
-最后一步是在 Security & 合规中心中创建一个新的电子数据展示事例, 然后将在步骤3中创建的角色组添加为该事例的成员。 这将导致使用合规性边界的两个重要特征:
+最后一步是在安全 & 合规中心中创建一个新的电子数据展示事例, 然后将在步骤3中创建的角色组添加为该事例的成员。 这将导致使用合规性边界的两个重要特征:
   
-- 只有添加到此案例中的角色组的成员才能查看和访问 Security & 合规性中心中的案例。 例如, 如果第四个 "咖啡调查员" 角色组是事例的唯一成员, 则第四个 "电子数据展示管理者" 角色组的成员 (或任何其他角色组的成员) 将无法查看或访问该案例。
+- 只有添加到此案例中的角色组的成员才能查看和访问安全 & 合规性中心中的案例。 例如, 如果第四个 "咖啡调查员" 角色组是事例的唯一成员, 则第四个 "电子数据展示管理者" 角色组的成员 (或任何其他角色组的成员) 将无法查看或访问该案例。
     
 - 当分配给某个案例的角色组成员运行与该事例相关联的搜索时, 他们将只能搜索其代理 (由您在步骤4中创建的搜索权限筛选器定义) 中的内容位置。
 
 
 若要创建新事例并分配成员, 请执行以下操作:
     
-1. 转到 Security & 合规性中心中的**电子数据展示**页面, 并创建一个新事例。 
+1. 转到 Security & 合规中心中的**电子数据展示**页面, 并创建一个新事例。 
     
 2. 在电子数据展示事例的列表中, 单击刚刚创建的事例的名称。
     
@@ -189,7 +189,7 @@ New-ComplianceSecurityFilter -FilterName "Coho Winery Security Filter" -Users "C
   
     |**参数值**|**数据中心位置**|
     |:-----|:-----|
-    |NAM  <br/> |北美 (实际数据中心在美国)  <br/> |
+    |NAM  <br/> |北美 (数据中心在美国)  <br/> |
     |EUR  <br/> |欧洲  <br/> |
     |APC  <br/> |亚太地区  <br/> |
     |CAN <br/> |加拿大
@@ -244,7 +244,7 @@ New-ComplianceSecurityFilter -FilterName "Coho Winery Security Filter" -Users "C
 
  **谁可以创建和管理搜索权限筛选器 (使用 New-compliancesecurityfilter 和 New-compliancesecurityfilter cmdlet)？**
   
-若要创建、查看和修改搜索权限筛选器, 您必须是 Security & 合规性中心中 "组织管理" 角色组的成员。
+若要创建、查看和修改搜索权限筛选器, 您必须是 Security & 合规性中心中的 "组织管理" 角色组的成员。
   
  **如果将电子数据展示管理器分配给跨多个代理的多个角色组, 如何在一个或多个代理中搜索内容？**
   
