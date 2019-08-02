@@ -15,12 +15,12 @@ ms.assetid: 82ac9922-939c-41be-9c8a-7c75b0a4e27d
 ms.collection:
 - M365-security-compliance
 description: 了解安全&amp;合规性中心中的资源管理器 (和实时检测)。
-ms.openlocfilehash: 127652ccb1c32ce84d8c80213d737b095913db40
-ms.sourcegitcommit: 5abe4c11bf3c0659180c7812dd26be9689ab01ca
+ms.openlocfilehash: dff1fae01aa525135226d88b305de7c7c3aefb7c
+ms.sourcegitcommit: bc25ea19c0b6d318751eadc4f27902b0054d5e2b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/09/2019
-ms.locfileid: "35605471"
+ms.lasthandoff: 08/01/2019
+ms.locfileid: "36054754"
 ---
 # <a name="threat-explorer-and-real-time-detections"></a>威胁浏览器 (和实时检测)
 
@@ -170,3 +170,8 @@ ms.locfileid: "35605471"
 - [Permissions in the Office 365 Security &amp; Compliance Center](permissions-in-the-security-and-compliance-center.md)
 - [Exchange Online 中的功能权限](https://docs.microsoft.com/exchange/permissions-exo/feature-permissions)
   
+## <a name="some-differences-between-real-time-detection-and-threat-exporter"></a>实时检测和威胁导出程序之间存在一些差异。
+
+ - **实时检测报告**随 atp P1 订阅一起提供, 而**威胁资源管理器**附带 atp P2。
+ - **实时检测**报告允许您实时显示检测, 而威胁资源管理器报告可让您在给定攻击中查看更多详细信息。
+ - **威胁资源管理器**报告提供了不同的报告集, 可增强您对**实时检测**程序报告的体验。

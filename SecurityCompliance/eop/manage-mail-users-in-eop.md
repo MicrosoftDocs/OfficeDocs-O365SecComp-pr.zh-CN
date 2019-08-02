@@ -10,12 +10,12 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: 4bfaf2ab-e633-4227-8bde-effefb41a3db
 description: 定义邮件用户是管理 Exchange Online Protection (EOP) 服务的重要部分。
-ms.openlocfilehash: 520ca0fb48a131026d9a46138605892203bf6e93
-ms.sourcegitcommit: 32ecff689ae32c59a39b7633ca0f36a304e7516e
+ms.openlocfilehash: 6d982b635513050d931397bbc517ae3d76ee3752
+ms.sourcegitcommit: bc25ea19c0b6d318751eadc4f27902b0054d5e2b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/09/2019
-ms.locfileid: "35599598"
+ms.lasthandoff: 08/01/2019
+ms.locfileid: "36054724"
 ---
 # <a name="manage-mail-users-in-eop"></a>在 EOP 中管理邮件用户
 
@@ -64,11 +64,9 @@ ms.locfileid: "35599598"
     > [!IMPORTANT]
     > 当您完成 Azure Active Directory 同步工具配置向导时, 将在 Active Directory 林中创建**MSOL_AD_SYNC**帐户。 此帐户用于读取和同步您的本地 Active Directory 信息。 为了使目录同步正常工作，请确保本地目录同步服务器上的 TCP 443 处于打开状态。 
   
-4. 按[激活同步用户](http://go.microsoft.com/fwlink/p/?LinkId=308913)中所述，激活同步用户。
+  4. 按[管理目录同步](http://go.microsoft.com/fwlink/p/?LinkId=308915)中所述，管理目录同步。
     
-5. 按[管理目录同步](http://go.microsoft.com/fwlink/p/?LinkId=308915)中所述，管理目录同步。
-    
-6. 验证 EOP 是否正确同步。 在 EAC 中, 转到 "**收件人** \> " "**联系人**", 并查看从您的本地环境中正确同步的用户列表。 
+  5. 验证 EOP 是否正确同步。 在 EAC 中, 转到 "**收件人** \> " "**联系人**", 并查看从您的本地环境中正确同步的用户列表。 
     
 ## <a name="use-the-eac-to-manage-mail-users"></a>使用 EAC 管理邮件用户
 

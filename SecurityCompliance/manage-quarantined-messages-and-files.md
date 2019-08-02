@@ -16,12 +16,12 @@ ms.assetid: 065cc2cf-2f3a-47fd-a434-2a20b8f51d0c
 ms.collection:
 - M365-security-compliance
 description: '作为管理员, 您可以在 Office 365 中查看、释放和报告误报的已隔离邮件。 您可以设置策略, 以便 Office 365 筛选邮件并将其发送到隔离区, 原因如下: 因为它们被标识为垃圾邮件、批量、网络钓鱼和恶意软件, 或者它们与邮件流规则匹配。 '
-ms.openlocfilehash: 245068b7d3ec51cbca887883f791b19ea116731a
-ms.sourcegitcommit: 32ecff689ae32c59a39b7633ca0f36a304e7516e
+ms.openlocfilehash: dda6766ec5fa7858abef0037f0a67ec8869abd59
+ms.sourcegitcommit: bc25ea19c0b6d318751eadc4f27902b0054d5e2b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/09/2019
-ms.locfileid: "35598798"
+ms.lasthandoff: 08/01/2019
+ms.locfileid: "36054714"
 ---
 # <a name="manage-quarantined-messages-and-files-as-an-administrator-in-office-365"></a>以 Office 365 中的管理员身份管理隔离的邮件和文件
 
@@ -29,14 +29,14 @@ ms.locfileid: "35598798"
   
 默认情况下, Office 365 将包含恶意软件的网络钓鱼邮件和邮件直接发送到隔离。 其他筛选出的邮件将发送给用户的 "垃圾邮件" 文件夹, 除非您将策略设置为将其发送到隔离区。
   
-您必须在 Office 365 中拥有全局管理员 (GA) 权限, 或在安全与合规中心中使用安全管理员来处理已发送给其他用户的隔离邮件, 并使用隔离的文件。
+您必须在 Office 365 中具有全局管理员 (GA) 权限, 或者是一个或多个安全 & 合规性中心角色组的成员, 才能处理隔离的邮件或隔离的文件。 有关详细信息, 请参阅[Office 365 安全 & 合规性中心中的权限](https://docs.microsoft.com/office365/securitycompliance/permissions-in-the-security-and-compliance-center)。
   
 > [!IMPORTANT]
 >默认情况下, 垃圾邮件、批量和网络钓鱼邮件在30天内保持隔离状态。 由于与邮件流规则匹配而被隔离的邮件将保留在7天内的隔离中。 恶意软件邮件在15天内保留在隔离中。 可以在安全&amp;合规性中心的 "反垃圾邮件" 设置中自定义垃圾邮件隔离时间。 当 Office 365 从隔离区中删除邮件时, 无法将其恢复。 如果你愿意, 可以在反垃圾邮件筛选器策略中更改隔离邮件的保留期。 有关详细信息, 请参阅本文中[的设置隔离保留期](manage-quarantined-messages-and-files.md#BKMK_ModQuarantineTime)。 
   
 ## <a name="view-your-organizations-quarantined-messages"></a>查看组织的隔离邮件
 
-1. 在 Office 365 组织中使用具有全局管理员权限的工作或学校帐户, 登录 Office 365 并[转到 "安全与合规中心"](go-to-the-securitycompliance-center.md)。
+1. 在 Office 365 组织中使用具有全局管理员权限的工作或学校帐户 (或适当的安全 & 合规性中心角色), 登录 Office 365 并[转到 "安全与合规中心"](go-to-the-securitycompliance-center.md)。
     
 2. 在左侧的列表中, 展开 "**威胁管理**", 选择 "**查看**", 然后选择 "**隔离**"。
     
@@ -189,7 +189,7 @@ ms.locfileid: "35598798"
   
 ### <a name="to-modify-the-quarantine-retention-period-for-the-default-spam-filter-policy-in-the-security-and-compliance-center"></a>在安全与合规中心中修改默认垃圾邮件筛选器策略的隔离保留期
 
-1. 在 Office 365 组织中使用具有全局管理员权限的工作或学校帐户, 登录 Office 365 并[转到 "安全与合规中心"](go-to-the-securitycompliance-center.md)。
+1. 在 Office 365 组织中使用具有全局管理员权限的工作或学校帐户 (或适当的安全 & 合规性中心角色), 登录 Office 365 并[转到 "安全和合规中心"](go-to-the-securitycompliance-center.md)。
     
 2. 在左侧, 展开 "**威胁管理**", 选择 "**策略**", 然后选择 "**反垃圾邮件**"。 <br/>
     > [!TIP]

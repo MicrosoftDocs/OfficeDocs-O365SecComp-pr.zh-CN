@@ -15,12 +15,12 @@ ms.collection:
 - Strat_O365_IP
 - M365-security-compliance
 description: 完成设置 Office 365 邮件加密 (OME) 后, 您可以通过多种方式自定义部署的配置。 例如, 您可以配置是否启用一次性传递代码, 在 Outlook 网页版中显示 "保护" 按钮, 等等。 本文中的任务介绍了如何。
-ms.openlocfilehash: f19556f88783eed86bd33a7fdcbd1efae18c3ef3
-ms.sourcegitcommit: b9d8a43cb3afcdc8820bc9470c5707eff8fc6616
+ms.openlocfilehash: 9b59e352131121978ae6a523cc07ea40196e8038
+ms.sourcegitcommit: bc25ea19c0b6d318751eadc4f27902b0054d5e2b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/11/2019
-ms.locfileid: "34852526"
+ms.lasthandoff: 08/01/2019
+ms.locfileid: "36054694"
 ---
 # <a name="manage-office-365-message-encryption"></a>管理 Office 365 邮件加密
 
@@ -133,6 +133,9 @@ IOS 邮件应用程序无法解密受 Office 365 邮件加密保护的邮件。 
    ```powershell
    Set-ActiveSyncOrganizationSettings -AllowRMSSupportForUnenlightenedApps $false
    ```
+> [!NOTE]
+
+> 单个邮箱策略 (OWA/ActiveSync) 替代这些设置 (即, 如果在各自的 OWA 邮箱策略或 ActiveSync 邮箱策略中将 IRMEnabled 设置为 False), 则不会应用这些配置。
 
 ## <a name="enable-service-side-decryption-of-email-attachments-for-web-browser-mail-clients"></a>启用 web 浏览器邮件客户端的电子邮件附件的服务端解密
 
