@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 ms.assetid: c4639c2e-7223-4302-8e0d-b6e10f1c3be3
 description: '了解可以使用安全 & 合规中心中的内容搜索工具在 Exchange Online 邮箱和 SharePoint 或 OneDrive for Business 网站中搜索的电子邮件和文件属性。  '
-ms.openlocfilehash: 2d9cc41b4e0f8139db385a9614d3022230cda50d
-ms.sourcegitcommit: f96029928a6cdd141783026d57bc2179d7963af6
+ms.openlocfilehash: 70f005d6875735dfe95e10bf4487c8e1373431ea
+ms.sourcegitcommit: 97b9f88b9beee23de13ecf6d0759ac0fad5cf08d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/17/2019
-ms.locfileid: "35017644"
+ms.lasthandoff: 08/02/2019
+ms.locfileid: "36168180"
 ---
 # <a name="keyword-queries-and-search-conditions-for-content-search"></a>内容搜索的关键字查询和搜索条件
 
@@ -70,7 +70,7 @@ ms.locfileid: "35017644"
 |||||
    
 > [!NOTE]
-> <sup>1</sup>对于收件人属性的值, 可以使用电子邮件地址 (也称为 "*用户主体名称*" 或 "UPN")、"显示名称" 或 "别名" 来指定用户。 例如，你可以使用 annb@contoso.com、annb 或"Ann Beebe"指定用户 Ann Beebe。<br/><br/>在搜索任何收件人属性 (发件人、收件人、抄送、密件抄送、参与者和收件人) 时, Office 365 将尝试通过在 Azure Active Directory 中进行查找来扩展每个用户的标识。  如果用户在 Azure Active Directory 中找到, 则查询将扩展, 以包含用户的电子邮件地址 (或 UPN)、别名、显示名称和 LegacyExchangeDN。<br/><br/>例如, `participants:ronnie@contoso.com`扩展到`participants:ronnie@contoso.com OR participants:ronnie OR participants:"Ronald Nelson" OR participants:"<LegacyExchangeDN>"`的查询。
+> <sup>1</sup>对于收件人属性的值, 可以使用电子邮件地址 (也称为 "*用户主体名称*" 或 "UPN")、"显示名称" 或 "别名" 来指定用户。 例如，你可以使用 annb@contoso.com、annb 或"Ann Beebe"指定用户 Ann Beebe。<br/><br/>在搜索任何收件人属性 (发件人、收件人、抄送、密件抄送、参与者和收件人) 时, Office 365 将尝试通过在 Azure Active Directory 中进行查找来扩展每个用户的标识。  如果用户在 Azure Active Directory 中找到, 则查询将扩展, 以包含用户的电子邮件地址 (或 UPN)、别名、显示名称和 LegacyExchangeDN。<br/><br/>例如, `participants:ronnie@contoso.com`扩展到`participants:ronnie@contoso.com OR participants:ronnie OR participants:"Ronald Nelson" OR participants:"<LegacyExchangeDN>"`的查询。<br/><br/>若要防止收件人展开, 可以在搜索查询中将通配符 (星号) 添加到电子邮件地址的末尾;例如, `participants:ronnie@contoso.com*`。
 
 ## <a name="searchable-site-properties"></a>可搜索网站属性
 

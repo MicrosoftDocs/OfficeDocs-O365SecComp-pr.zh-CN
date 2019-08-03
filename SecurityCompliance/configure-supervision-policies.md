@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 - MOE150
 description: 设置监管审核策略以捕获员工通信以供审阅。
-ms.openlocfilehash: 4cf8c47f761f13165898cbc719f94e9bf9fd66f2
-ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
+ms.openlocfilehash: 9cc13cb953d8166ceac04856fa8b54d0a4629bd6
+ms.sourcegitcommit: 97b9f88b9beee23de13ecf6d0759ac0fad5cf08d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "34151534"
+ms.lasthandoff: 08/02/2019
+ms.locfileid: "36168170"
 ---
 # <a name="configure-supervision-policies-for-your-organization"></a>配置组织的监督策略
 
@@ -53,7 +53,7 @@ ms.locfileid: "34151534"
 
     测试您的监督策略以确保其按预期工作。 一定要确保符合性策略满足您的标准。
 
-- **步骤 6 (可选)**:[为不希望使用 Office 365 监督仪表板或 Web 上的 outlook (以前称为 Outlook web App) 的审阅者配置 Outlook 以查看受监督的通信](#step-6-configure-outlook-for-reviewers-optional)
+- **步骤 6 (可选)**:[为不希望使用 Office 365 监督仪表板的审阅者配置 Outlook 以查看受监督的通信](#step-6-configure-outlook-for-reviewers-optional)
 
     将 Outlook 配置为向审阅者授予对 Outlook 客户端中的监督功能的访问权限, 以便他们能够评估和分类每个项目。
 
@@ -68,6 +68,8 @@ ms.locfileid: "34151534"
 |受监督用户 <br> 非监督用户 | 通讯组 <br> Office 365 组 | 动态通讯组 |
 | Reviewers | 启用邮件功能的安全组  | 通讯组 <br> 动态通讯组 |
   
+当您为受监督的用户选择 Office 365 组时, 该策略将监视共享 Office 365 邮箱的内容以及与该组关联的 Microsoft 团队频道。 当您选择通讯组列表时, 该策略将监视单个用户邮箱。
+
 若要在大型企业组织中管理受监督的用户, 您可能需要监视跨大型组的所有用户。 您可以使用 PowerShell 为分配的组配置全局监督策略的通讯组。 这使您可以使用单个策略监视数千个用户, 并在新员工加入您的组织时保持监督策略的更新。
 
 1. 为具有以下属性的全局监督策略创建专用[通讯组](https://docs.microsoft.com/powershell/module/exchange/users-and-groups/new-distributiongroup?view=exchange-ps): 确保此通讯组不用于其他目的或其他 Office 365 服务。
@@ -143,7 +145,7 @@ ms.locfileid: "34151534"
 
 ### <a name="create-custom-sensitive-information-types"></a>创建自定义敏感信息类型
 
-1. 创建新的敏感信息类型, 并将您的自定义词典添加到 Office 365 Security & 合规中心。 导航到 "**分类** \> " "**敏感信息**类型", 然后按照新的 "**敏感信息类型" 向导**中的步骤操作。 你将在此处执行以下操作:
+1. 创建新的敏感信息类型, 并将您的自定义词典添加到 Office 365 安全 & 合规性中心中。 导航到 "**分类** \> " "**敏感信息**类型", 然后按照新的 "**敏感信息类型" 向导**中的步骤操作。 你将在此处执行以下操作:
 
     - 定义敏感信息类型的名称和说明
     - 定义邻近度、置信度和主要模式元素
@@ -189,7 +191,7 @@ ms.locfileid: "34151534"
 
 ### <a name="step-1-copy-the-address-for-the-supervision-mailbox"></a>步骤 1: 复制监督邮箱的地址
 
-若要为 Outlook 桌面或 Outlook for web 配置审阅, 您需要作为监督策略安装程序的一部分创建的监督邮箱的地址。
+若要配置对 Outlook 桌面的审阅, 您需要作为监督策略安装程序的一部分创建的监督邮箱的地址。
   
 > [!NOTE]
 > 如果其他人创建了该策略, 则需要从这些地址获取此地址以安装加载项。
@@ -210,7 +212,7 @@ ms.locfileid: "34151534"
   
 1. 连接到 Exchange Online PowerShell。 [我该如何做？](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell)
 
-2. 运行以下命令, 其中 SupervisoryReview {GUID @domain} 是您在上面的步骤1中复制的地址, 用户是将在步骤3中连接到监督邮箱的审阅者的姓名。
+2. 运行以下命令, 其中*SupervisoryReview {GUID @domain}* 是您在上面的步骤1中复制的地址,*用户*是将在步骤3中连接到监督邮箱的审阅者的姓名。
 
     ```Add-MailboxPermission "SupervisoryReview{GUID}@domain.onmicrosoft.com" -User <alias or email address of the account that has reviewer permissions to the supervision mailbox> -AccessRights FullAccess```
 
