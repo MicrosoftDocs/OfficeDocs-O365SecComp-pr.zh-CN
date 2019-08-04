@@ -16,12 +16,12 @@ ms.collection:
 - Strat_O365_IP
 - M365-security-compliance
 description: 作为 Office 365 全局管理员, 你可以将组织的品牌化应用于组织的加密电子邮件和加密门户的内容。
-ms.openlocfilehash: 19f227971c522f9d92aec343f1865ab7f23c13aa
-ms.sourcegitcommit: b0ea2d66bc4c7f2fc0a8abab28d2ae652b1c4b73
+ms.openlocfilehash: dd08ffad4a50cafd90f2306645e93e623b8076cd
+ms.sourcegitcommit: 7c1cb9e8adb1c3e9c667f4cf02ca3cec3ec1e171
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/05/2019
-ms.locfileid: "34721369"
+ms.lasthandoff: 07/18/2019
+ms.locfileid: "35792058"
 ---
 # <a name="add-your-organizations-brand-to-your-encrypted-messages"></a>在加密的邮件中添加组织的品牌
 
@@ -122,7 +122,7 @@ ms.locfileid: "34721369"
 
 2. 选择 "**管理**" 磁贴。
 
-3. 在 Office 365 管理中心 中，选择" **管理中心**" \> " **Exchange**"。
+3. 在 Microsoft 365 管理中心, 选择 "**管理中心** \> " " **Exchange**"。
 
 4. 在 EAC 中, 转到 "**邮件流** \> **规则**", 然后选择 "**新建** ![" 图标](media/457cd93f-22c2-4571-9f83-1b129bcfb58e.gif) \> **创建新规则**。 有关使用 EAC 的详细信息, 请参阅 exchange [Online 中的 exchange 管理中心](https://docs.microsoft.com/exchange/exchange-admin-center)。
 

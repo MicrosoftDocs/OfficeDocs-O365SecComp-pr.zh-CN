@@ -13,16 +13,16 @@ search.appverid:
 - MOE150
 - MET150
 description: Microsoft 合规性管理器是 Microsoft 服务信任门户中基于工作流的免费风险评估工具。 合规性管理器使你能够跟踪、分配和验证与 Microsoft 云服务相关的法规遵从性活动。
-ms.openlocfilehash: a082d069aced13aa9260a1a856d942c4feb7dd4b
-ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
+ms.openlocfilehash: af0efa2711215946930c091fc7c38cc1b9f575fd
+ms.sourcegitcommit: f0d23e57b00f07cef5b1b2d366eaeeeacda37e3e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "34152083"
+ms.lasthandoff: 07/18/2019
+ms.locfileid: "35786647"
 ---
 # <a name="microsoft-compliance-manager-and-the-gdpr"></a>Microsoft 合规性管理器和 GDPR
 
-欧盟制定的一般数据保护条例 (GDPR) 可能会影响您的合规性策略, 并强制执行管理合规性管理器中使用的用户和客户信息所需的操作。
+欧盟制定的一般数据保护条例 (GDPR) 可能会影响您的合规性策略, 并强制执行特定操作, 以管理合规性管理器中使用的用户和客户信息。
 
 ## <a name="user-privacy-settings"></a>用户隐私设置
 
@@ -59,7 +59,7 @@ ms.locfileid: "34152083"
 3. 打开文档即可查看报告数据。
 
 > [!IMPORTANT]
-> 这不是一个保留并显示对措施项分配历史记录的状态更改的历史报告。 生成的报告是运行报告时分配的控制措施项目 (写入报告中的日期和时间戳) 的快照。 例如, 如果对同一用户再次生成此报告, 则操作项目的任何后续重新分配将导致不同的快照报告数据。
+> 报告数据不是一个历史记录列表, 可保留并显示对措施项分配历史记录的状态更改。 生成的报告是运行报告时分配的控制措施项目 (写入报告中的日期和时间戳) 的快照。 例如, 如果为同一用户再次生成报表, 则任何后续的操作项重新分配都将导致不同的快照报告数据。
   
 ## <a name="delete-user-data-history"></a>删除用户数据历史记录
 

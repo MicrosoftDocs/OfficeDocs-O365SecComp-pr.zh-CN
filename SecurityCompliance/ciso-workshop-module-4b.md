@@ -10,16 +10,16 @@ localization_priority: Normal
 ms.collection:
 - M365-security-compliance
 description: 了解有关贵组织中的新式化安全性的安全原则和建议的详细信息。
-ms.openlocfilehash: 640fb15a6e28ee00bc383f6502c06d80db287135
-ms.sourcegitcommit: 6bb40cf53374eaaae8da0a469f0248b1163184a4
+ms.openlocfilehash: f4f2eb8c98575a03635ec69274396cdf8769e498
+ms.sourcegitcommit: f0d23e57b00f07cef5b1b2d366eaeeeacda37e3e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/07/2019
-ms.locfileid: "34767293"
+ms.lasthandoff: 07/18/2019
+ms.locfileid: "35786587"
 ---
 # <a name="ciso-workshop-module-4b-threat-protection-strategy"></a>CISO 研讨会模块 4b: 威胁防护策略 
 
-本模块回顾 microsoft 智能安全操作中心 (SOC) 的演变和轨迹, 并在 Microsoft 智能安全图形中 trillions 信号。
+本模块检查 microsoft 智能安全中心 (SOC) 在 Microsoft 智能安全图形中的 trillions 信号的演变和轨迹。
 
 - 下载 PDF 摘要:[模块 4b: 威胁防护策略](media/ciso-workshop-4b-threat-protection-strategy.pdf)
 - 下载 PowerPoint 摘要:[模块 4b: 威胁防护策略](https://docs.microsoft.com/office365/securitycompliance/media/ciso-workshop-4b-threat-protection-strategy.pptx)
@@ -36,7 +36,7 @@ ms.locfileid: "34767293"
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RWtDxA]
 
-## <a name="part-3-learnings-from-microsofts-corporate-it-soc-2207"></a>第3部分: 学习通过 Microsoft 公司 IT SOC (22:07)
+## <a name="part-3-learnings-from-microsoft-corporate-it-soc-2207"></a>第3部分: Microsoft 公司 IT SOC 中的学习 (22:07)
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE368fZ]
 

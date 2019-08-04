@@ -13,23 +13,23 @@ ms.collection:
 - Strat_O365_IP
 - M365-security-compliance
 description: Exchange Online 和 Office 365 中数据弹性的各个方面的说明。
-ms.openlocfilehash: 9e61efaf95d466fcb268e12317c7feab0701c062
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: 96611c2db166e34a47b845b5683a367dd29ec25f
+ms.sourcegitcommit: f0d23e57b00f07cef5b1b2d366eaeeeacda37e3e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32262754"
+ms.lasthandoff: 07/18/2019
+ms.locfileid: "35786667"
 ---
 # <a name="exchange-online-data-resiliency-in-office-365"></a>Office 365 中的 Exchange Online 数据恢复能力
 
-## <a name="introduction"></a>介绍
+## <a name="introduction"></a>简介
 有两种类型的损坏可能会影响 Exchange 数据库: 物理损坏通常是由硬件 (尤其是存储硬件) 问题引起的, 以及因其他因素而发生的逻辑损坏。 通常情况下, Exchange 数据库中可能发生两种类型的逻辑损坏: 
 - **数据库逻辑损坏**-数据库页的校验和匹配, 但页面上的数据在逻辑上是错误的。 如果数据库引擎 (可扩展存储引擎 (ESE)) 尝试写入数据库页面, 即使操作系统返回成功消息, 但数据永远不会写入磁盘或写入错误的位置, 则可能会发生这种情况。 这称为 "*丢失的刷新*"。 ESE 包含的许多功能和保护措施旨在防止数据库的物理损坏和其他数据丢失场景。 为了防止丢失刷新丢失的数据, ESE 在数据库中包含丢失的刷新机制以及一个功能 (单页还原) 以更正它。 
 - **存储逻辑损坏**-以用户不期望的方式添加、删除或操作数据。 这些情况通常都是由第三方应用程序引起的。 通常在用户将其看作损坏时才认为是损坏的。 Exchange 存储会考虑产生一系列有效 MAPI 操作的逻辑损坏的事务。 Exchange Online 中的[就地保留](https://docs.microsoft.com/exchange/security-and-compliance/create-or-remove-in-place-holds)功能提供了对存储逻辑损坏的保护 (因为它会阻止用户或应用程序永久删除内容)。 
 
 Exchange Online 在日志检查和日志重播期间对复制的日志文件执行几项一致性检查。 这些一致性检查防止系统复制物理损坏。 例如, 在日志检查过程中, 有一个物理完整性检查, 它会验证日志文件, 并验证日志文件中记录的校验和是否与内存中生成的校验和相匹配。 此外, 还会检查日志文件头, 以确保日志文件头中记录的日志文件签名与日志文件的签名相匹配。 在日志重播过程中, 日志文件会经历进一步的审查。 例如, 数据库标头还包含与日志文件的签名进行比较的日志签名, 以确保它们相匹配。 
 
-对 exchange Online 中邮箱数据的损坏进行保护是通过使用 exchange 本机数据保护实现的, 这是一种可跨多个服务器和多个数据中心以及其他数据中心使用应用程序级别复制的复原策略帮助防止数据因损坏或其他原因而丢失的功能。 这些功能包括由 Microsoft 或 Exchange Online 应用程序本身管理的本机功能, 如:
+对 Exchange Online 中邮箱数据的损坏进行保护是通过使用 Exchange 本机数据保护实现的, 这是一种可跨多个服务器和多个数据中心以及其他数据中心使用应用程序级别复制的复原策略帮助防止数据因损坏或其他原因而丢失的功能。 这些功能包括由 Microsoft 或 Exchange Online 应用程序本身管理的本机功能, 如:
 
 - [数据可用性组](https://docs.microsoft.com/exchange/back-up-email)
 - 单一位更正 
@@ -55,11 +55,11 @@ Exchange Online 中的滞后数据库副本配置了为期七天的日志文件�
 ## <a name="transport-resilience"></a>传输弹性 
 Exchange Online 包括两种主要传输复原功能: 卷影冗余和安全网络。 "卷影冗余" 在传输过程中保留邮件的冗余副本。 安全网络在邮件成功传递后保留邮件的冗余副本。 
 
-使用卷影冗余时, 每个 Exchange Online 传输服务器都会在确认成功接收发送到发送服务器的邮件之前, 为其接收的每封邮件创建一个副本。 这将使传输管道中的所有邮件在传输过程中冗余。 如果 Exchange Online 确定原始邮件在传输过程中丢失, 将重新发送邮件的冗余副本。 
+使用卷影冗余, 每个 Exchange Online 传输服务器在确认成功接收发送到发送服务器的邮件之前, 会为每个收到的邮件创建一个副本。 这将使传输管道中的所有邮件在传输过程中冗余。 如果 Exchange Online 确定原始邮件在传输过程中丢失, 将重新发送邮件的冗余副本。 
 
 安全网络是与邮箱服务器上的传输服务相关联的传输队列。 此队列存储服务器成功处理的邮件的副本。 当邮箱数据库或服务器故障需要激活邮箱数据库的过期副本时, 安全网络队列中的邮件将自动重新提交到邮箱数据库的新活动副本。 安全网络也是冗余的, 因此消除了作为单一故障点的传输。 它使用主安全网络的概念和阴影安全网络 (如果主安全网络不可用超过12个小时), 重新提交请求将变为 "卷影重新提交请求", 并从 "卷影安全网络" 重新传递邮件。
 
-来自安全网络的邮件重新提交由管理 dag 和邮箱数据库副本的 Microsoft Exchange 复制服务的活动管理器组件自动启动。 重新提交安全网络中的邮件不需要手动操作。 
+来自安全网络的邮件重新提交由管理 Dag 和邮箱数据库副本的 Microsoft Exchange 复制服务的活动管理器组件自动启动。 重新提交安全网络中的邮件不需要手动操作。 
 
 ## <a name="single-bit-correction"></a>单一位更正 
 ESE 包括一种机制, 用于检测和解决因硬件错误而导致的单一位 CRC 错误 (亦称为 "一位翻转") (如此, 它们代表物理损坏)。 发生这些错误时, ESE 会自动更正这些错误, 并在事件日志中记录事件。 

@@ -3,7 +3,7 @@ title: 未验证发件人
 ms.author: tracyp
 author: MSFTTracyP
 manager: dansimp
-ms.date: 04/25/2019
+ms.date: 07/11/2019
 audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
@@ -13,14 +13,17 @@ search.appverid:
 ms.collection:
 - M365-security-compliance
 description: 若要防止仿冒邮件到达邮箱, Outlook.com 和 web 上的 Outlook 验证发件人是否是他们所说的人, 并将可疑邮件标记为垃圾邮件。
-ms.openlocfilehash: a69af1efb634e1805f055d49ec5515f4b4252c3b
-ms.sourcegitcommit: 32ecff689ae32c59a39b7633ca0f36a304e7516e
+ms.openlocfilehash: 233474dbfff430be8dd95d513adeb257bb26c5c7
+ms.sourcegitcommit: 9e2df36b05a2c93ce2629a7a5eda8f44159d114d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/09/2019
-ms.locfileid: "35600258"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "35628505"
 ---
 # <a name="unverified-sender"></a>未验证发件人
+
+> [!NOTE] 
+> 这些更新现在即将推出, 可能对所有用户不可用。
 
 若要防止仿冒邮件到达邮箱, Outlook.com 和 web 上的 Outlook 验证发件人是否是他们所说的人, 并将可疑邮件标记为垃圾邮件。
 
@@ -35,7 +38,7 @@ ms.locfileid: "35600258"
 
 如果你是 Office 365 客户, 则可以通过安全 & 合规中心管理此功能。 
 
-- 在 Office 365 安全 & 合规性中心中, 租户管理员可以通过反网络钓鱼策略下的反欺骗保护来打开或关闭该功能。 此外, 还可以通过 "AntiPhishPolicy" cmdlet 对其进行管理。 有关更多详细信息, 请参阅 Office 365 中的反钓鱼防护和 AntiPhishPolicy。
+- 在 Office 365 安全 & 合规性中心中, 全局或安全管理员可以通过反网络钓鱼策略下的反欺骗保护来打开或关闭该功能。 此外, 还可以通过 "AntiPhishPolicy" cmdlet 对其进行管理。 有关更多详细信息, 请参阅[Office 365 中的反钓鱼防护](anti-phishing-protection.md)和 [AntiPhishPolicy](https://docs.microsoft.com/powershell/module/exchange/advanced-threat-protection/set-antiphishpolicy?view=exchange-ps)。
 
     ![在图形界面中编辑未经身份验证的发件人。](media/unverified-sender-article-editing-unauthenticated-senders.jpg)
 

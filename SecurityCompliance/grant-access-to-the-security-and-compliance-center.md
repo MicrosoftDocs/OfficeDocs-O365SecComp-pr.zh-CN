@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: 2cfce2c8-20c5-47f9-afc4-24b059c1bd76
 description: 用户需要在 Office 365 安全 & 合规性中心中分配权限, 然后才能管理其任何安全或合规性功能。
-ms.openlocfilehash: 7963a8c3db64e83566960abe9298b9a2d636ae53
-ms.sourcegitcommit: 6302a43d947a908dd10a8e40550b806f491692fc
+ms.openlocfilehash: ea774648efcfe80461eae937f80856acaf1db224
+ms.sourcegitcommit: 7c1cb9e8adb1c3e9c667f4cf02ca3cec3ec1e171
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/13/2019
-ms.locfileid: "35645117"
+ms.lasthandoff: 07/18/2019
+ms.locfileid: "35792008"
 ---
 # <a name="give-users-access-to-the-office-365-security--compliance-center"></a>向用户授予对 Office 365 安全与合规中心的访问权限
 
@@ -39,11 +39,11 @@ ms.locfileid: "35645117"
 
 - 委派访问权限 (分配) 具有代表 (AOBO) 权限的管理的合作伙伴无法访问安全 & 合规中心。
 
-## <a name="use-the-office-365-admin-center-to-give-another-user-access-to-the-security--compliance-center"></a>使用 Office 365 管理中心向另一个用户授予对安全 & 合规中心的访问权限
+## <a name="use-the-admin-center-to-give-another-user-access-to-the-security--compliance-center"></a>使用管理中心向另一个用户授予对安全 & 合规中心的访问权限
 
 1. [登录到 Office 365 并转到管理中心](https://go.microsoft.com/fwlink/p/?LinkId=525275)。
 
-2. 在 "Office 365 管理中心" 中, 打开 "**管理中心**", 然后单击 "**安全 & 合规性**"。
+2. 在 Microsoft 365 管理中心, 打开 "**管理中心**", 然后单击 "**安全 & 合规性**"。
 
 3. 在安全 & 合规性中心中, 转到 "**权限**"。
 

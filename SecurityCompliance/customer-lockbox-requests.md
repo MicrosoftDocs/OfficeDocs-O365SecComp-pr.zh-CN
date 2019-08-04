@@ -15,12 +15,12 @@ search.appverid:
 - MET150
 - MOE150
 description: 了解客户密码箱请求, 使您可以控制 Microsoft 支持工程师在遇到问题时如何访问数据。
-ms.openlocfilehash: f3cfdec6521cd5fe0bcb7007b27ce128ae3b2a1d
-ms.sourcegitcommit: 62447503300376aa95dd05fb5276f93a9f6a20b6
+ms.openlocfilehash: 2cbf19ad3c648373704c379794e24590fcb6d290
+ms.sourcegitcommit: f0d23e57b00f07cef5b1b2d366eaeeeacda37e3e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/13/2019
-ms.locfileid: "34927575"
+ms.lasthandoff: 07/18/2019
+ms.locfileid: "35786617"
 ---
 # <a name="customer-lockbox-in-office-365"></a>Office 365 中的客户密码箱
 
@@ -226,7 +226,7 @@ Office 365 管理员可以在 Microsoft 365 管理中心启用客户密码箱控
 
 全局管理员和分配了客户密码箱访问审批者管理员角色的任何人都可以批准客户密码箱请求。 客户在其组织中控制这些角色分配。
 
-#### <a name="how-do-i-opt-in-to-customer-lockbox"></a>如何选择加入客户密码箱？
+#### <a name="how-do-i-opt-in-to-customer-lockbox"></a>如何选择客户密码箱？
 
 全局管理员可以在 Microsoft 365 或 Microsoft 365 管理中心中启用和配置客户密码箱。
 

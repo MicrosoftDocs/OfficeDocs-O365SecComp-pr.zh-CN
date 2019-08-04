@@ -13,12 +13,12 @@ search.appverid:
 - MET150
 ms.assetid: 239ce6eb-4e81-42db-bf86-a01362fed65c
 description: 了解如何通过 Microsoft Azure Active Directory 权限管理服务 (RMS) 使用 SharePoint Online IRM 来保护 SharePoint 列表和文档库。
-ms.openlocfilehash: 16a76ecda37bd5480285dd70670843a88198bdb7
-ms.sourcegitcommit: a97e7da9a1f870540f0bdcba7be5fb6f8bd12f74
+ms.openlocfilehash: 6fc51eaaf7f5d5d22167d10ab70d45dbf03cc6d2
+ms.sourcegitcommit: 7c1cb9e8adb1c3e9c667f4cf02ca3cec3ec1e171
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/16/2019
-ms.locfileid: "35756844"
+ms.lasthandoff: 07/18/2019
+ms.locfileid: "35792068"
 ---
 # <a name="set-up-information-rights-management-irm-in-sharepoint-admin-center"></a>Set up Information Rights Management (IRM) in SharePoint admin center
 
@@ -34,7 +34,7 @@ ms.locfileid: "35756844"
   
 1. 以全局管理员或 SharePoint 管理员身份登录 Office 365。
     
-2. 在左上角的 Office ![365](media/e5aee650-c566-4100-aaad-4cc2355d909f.png)中选择应用启动器图标, 然后选择 "**管理**" 以打开 Office 365 管理中心。 (If you don't see the Admin tile, you don't have Office 365 administrator permissions in your organization.) 
+2. 依次选择左上角的应用启动器图标 ![Office 365 中的应用启动器图标](media/e5aee650-c566-4100-aaad-4cc2355d909f.png) 和“管理员”****，以打开 Microsoft 365 管理中心。 （如果看不到“管理员”磁贴，表明你在组织中没有 Office 365 管理员权限。） 
     
 3. 在左窗格中, 选择 "**管理中心** \> " " **SharePoint**"。
     
@@ -51,7 +51,7 @@ ms.locfileid: "35756844"
   
 当用户下载启用 IRM 的列表或库中的文件时, 将对这些文件进行加密, 以便仅获得授权的用户可以查看这些文件。 每个权限管理文件还包含一个发布许可证, 该许可证对查看文件的人员施加限制。 典型限制包括将文件设为只读、禁用文本复制、阻止用户保存本地副本以及阻止用户打印文件。 可以读取受 IRM 支持的文件类型的客户端程序使用权限管理文件中的发布许可证来强制实施这些限制。 这是权限管理文件在下载后仍保留其保护的方式。 若要对列表或库启用 IRM, 请参阅[将信息权限管理应用于列表或库](apply-irm-to-a-list-or-library.md)。
   
-无法使用 Office Online 在启用 IRM 的库中创建或编辑文档。 相反, 一次只能有一个人下载和编辑 IRM 加密文件。 使用签入和签出管理*共同创作*, 或跨多个用户进行创作。 
+无法在浏览器中使用 Office 在启用 IRM 的库中创建或编辑文档。 相反, 一次只能有一个人下载和编辑 IRM 加密文件。 使用签入和签出管理*共同创作*, 或跨多个用户进行创作。 
   
 当您从受 IRM 保护的库下载 PDF 文件时, Office 365 将创建一个受保护的 PDF 文件。 文件的分机号码不会改变, 但文件是受保护的。 若要查看此文件, 你将需要 Azure 信息保护查看器、完整的 Azure 信息保护客户端或其他支持查看受保护的 PDF 文件的应用程序。 
   

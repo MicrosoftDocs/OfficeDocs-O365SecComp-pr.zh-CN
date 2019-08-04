@@ -1,5 +1,5 @@
 ---
-title: 使用内容搜索来搜索导入到 Office 365 的第三方数据
+title: 使用内容搜索来搜索第三方数据导入到 Office 365
 ms.author: markjjo
 author: markjjo
 manager: laurawi
@@ -11,47 +11,47 @@ ms.collection: M365-security-compliance
 localization_priority: Normal
 search.appverid: MOE150
 ms.assetid: ec2677ff-c4d7-4363-a9e7-22c80e015688
-description: 使用内容搜索电子数据展示工具搜索从第三方数据源导入到 Office 365 中的邮箱的项目。 您可以创建查询以搜索所有导入的项, 或创建查询以搜索特定的第三方数据类型。 本文列出了可以在关键字查询中使用的值, 以搜索可导入到 Office 365 的第三方数据类型。
-ms.openlocfilehash: 0881456d377569fb55f0daf0d0a8a2a15bce62fc
-ms.sourcegitcommit: f2798d46acfbd56314e809cd3fe0350be807e420
+description: 使用内容搜索电子数据展示工具搜索从第三方数据源导入到 Office 365 中的邮箱的项目。 您可以创建查询以搜索所有导入的项, 或创建查询以搜索特定的第三方数据类型。 本文列出了可在关键字查询中用于搜索可导入到 Office 365 的第三方数据类型的值。
+ms.openlocfilehash: 2d531557054398be4ca963a9b09943f1bf583d10
+ms.sourcegitcommit: ab16ddf4c050a995471a058150767a0778be0b88
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/17/2019
-ms.locfileid: "35014742"
+ms.lasthandoff: 07/02/2019
+ms.locfileid: "35425540"
 ---
-# <a name="use-content-search-to-search-third-party-data-that-was-imported-to-office-365"></a>使用内容搜索来搜索导入到 Office 365 的第三方数据
+# <a name="use-content-search-to-search-third-party-data-imported-to-office-365"></a>使用内容搜索来搜索第三方数据导入到 Office 365
 
-您可以使用安全性 & 合规性中心中的[内容搜索电子数据展示工具](content-search.md), 从第三方数据源搜索导入到 Office 365 中的邮箱的项目。 您可以创建查询来搜索所有导入的第三方数据项, 也可以创建查询仅搜索特定的第三方数据项。 此外, 还可以创建基于查询的 Office 365 保留策略或基于查询的电子数据展示保留, 以在 Office 365 中保留第三方数据。 
+您可以使用安全性 & 合规性中心中的[内容搜索电子数据展示工具](content-search.md), 从第三方数据源搜索导入到 Office 365 中邮箱的项目。 您可以创建查询以搜索所有导入的第三方数据项, 也可以创建查询以搜索特定的第三方数据项。 此外, 还可以创建基于查询的 Office 365 保留策略或基于查询的电子数据展示保留, 以在 Office 365 中保留第三方数据。 
   
 有关导入第三方数据和可以导入到 Office 365 的第三方数据类型列表的详细信息, 请参阅[在 office 365 中使用合作伙伴存档第三方数据](work-with-partner-to-archive-third-party-data.md)。 
   
 ## <a name="creating-a-query-to-search-all-third-party-data"></a>创建查询以搜索所有第三方数据
 
-若要搜索 (或置于保留状态) 您导入到 Office 365 的任何第三方数据类型, 您可以在内容搜索的`kind:externaldata`关键字框中使用邮件属性-值对, 也可以在创建基于查询的保留时使用。 例如, 若要搜索从任何第三方数据源导入的项目, 并在导入项目的 Subject 属性中包含 "contoso" 一词, 应使用以下查询: 
+若要搜索 (或置于保留状态) 您导入到 Office 365 的任何类型的第三方数据, 可以在内容`kind:externaldata`搜索的关键字框中使用邮件属性-值对, 也可以在创建基于查询的保留时使用。 例如, 若要搜索从任何第三方数据源导入的项目, 并在导入项目的 Subject 属性中包含 "contoso" 一词, 请使用以下查询: 
   
 ```
 kind:externaldata AND subject:contoso
 ```
 
-上一个关键字查询示例包括 subject 属性。 有关可包含在关键字查询中的第三方数据项的其他属性的列表, 请参阅在[Office 365 中存档第三方数据](work-with-partner-to-archive-third-party-data.md#more-information)一节中的 "详细信息" 部分。
+上一个关键字查询示例包括 subject 属性。 有关可包括在关键字查询中的第三方数据项的其他属性列表, 请参阅在[Office 365 中存档第三方数据](work-with-partner-to-archive-third-party-data.md#more-information)一节中的 "详细信息" 部分。
   
 创建查询以搜索并保存第三方数据时, 您还可以使用条件来缩小搜索结果的范围。 有关创建内容搜索查询的详细信息, 请参阅[用于内容搜索的关键字查询和搜索条件](keyword-queries-and-search-conditions.md)。
   
 ## <a name="creating-a-query-to-search-specific-types-of-third-party-data"></a>创建查询以搜索特定类型的第三方数据
 
-您可以通过在内容搜索关键字框中使用以下消息属性值对来创建仅搜索指定类型的第三方数据的查询, 而不是搜索所有类型的第三方数据:
+除了搜索所有类型的第三方数据之外, 您可以使用以下消息*属性: 值*对在内容搜索的关键字框中创建仅搜索指定类型的第三方数据的查询:
   
 ```
 itemclass:ipm.externaldata.<third-party data type>* 
 ```
 
-例如, 若要在 Subject 属性中仅搜索包含 "contoso" 一词的 Facebook 数据, 应使用以下查询:
+例如, 若要在 Subject 属性中搜索包含 "contoso" 一词的 Facebook 数据, 应使用以下查询:
   
 ```
 itemclass:ipm.externaldata.Facebook* AND subject:contoso
 ```
 
-下表列出了可以搜索的第三方数据类型, 以及要用于`itemclass:`邮件属性以专门搜索那种类型的第三方数据的值。 请注意, 查询语法不区分大小写。 
+下表列出了可以搜索的第三方数据类型, 以及要用于`itemclass:`邮件属性以专门搜索那种类型的第三方数据的值。 查询语法不区分大小写。 
   
 |**第三方数据类型**|**属性的`itemclass:`值**|
 |:-----|:-----|

@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: e8ec5114983d64e7d717d4b7ab866bfee9d8d488
-ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
+ms.openlocfilehash: 4e46eba010cd51ab0722fb43196230ba44f4e9a4
+ms.sourcegitcommit: 7c1cb9e8adb1c3e9c667f4cf02ca3cec3ec1e171
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "34154894"
+ms.lasthandoff: 07/18/2019
+ms.locfileid: "35791988"
 ---
 # <a name="manage-holds-in-advanced-ediscovery"></a>在高级电子数据展示中管理保留
 
@@ -31,7 +31,7 @@ ms.locfileid: "34154894"
 
 若要查看保管人保留策略, 请执行以下操作:
 
-1. 在 "**安全 _AMP_ 合规性中心**" 中, 单击 "**电子数据展示 _GT_ 高级电子数据展示**" 以显示组织中的案例列表。
+1. 在 "**安全性 & 合规性中心**" 中, 单击 "**电子数据展示 > 高级电子数据展示**以显示您的组织中的案例列表。
    
 2. 转到 "**保管人**" 选项卡, 在你的事例中添加保管人。 若要了解如何在高级电子数据展示事例中添加和将保管人置于保留状态, 请参阅[将保管人添加到高级电子数据展示事例](add-custodians-to-case.md)。 如果你已添加了保管人并将其置于保留状态, 请转到步骤3。
    
@@ -48,7 +48,7 @@ ms.locfileid: "34154894"
 
 若要为高级电子数据展示事例创建保留:
 
-1. 在 "**安全 _AMP_ 合规性中心**" 中, 单击 "**电子数据展示 _GT_ 高级电子数据展示**" 以显示组织中的案例列表。
+1. 在 "**安全性 & 合规性中心**" 中, 单击 "**电子数据展示 > 高级电子数据展示**以显示您的组织中的案例列表。
   
 2. 单击要在其中创建保留的事例旁边的 "**打开**"。
   
@@ -132,7 +132,7 @@ ms.locfileid: "34154894"
 
  - 在搜索用户的邮箱时, 不会搜索用户是其成员的任何 Office 365 组或 Microsoft 团队。 同样, 当您放置 Office 365 组或 Microsoft 团队保留时, 只有组邮箱和组网站处于保留状态。除非将组成员的邮箱和 OneDrive for Business 网站明确添加为保管人或将其数据源放置, 否则它们不会置于保留状态。 因此, 如果需要将 Office 365 组或 Microsoft 团队置于保留状态以供特定保管人使用, 请考虑将组网站和组邮箱映射到保管人 (请参阅在高级电子数据展示中管理保管人)。 如果 Office 365 组或 Microsoft 团队不属于单个管理员, 请考虑将该源添加到非 custodial 保留中。 
  
- - 若要获取 Office 365 组或 Microsoft 团队成员的列表, 您可以在 Office 365 管理中心的 "家庭 > 组" 页上查看属性。 或者, 您可以在 Exchange Online PowerShell 中运行以下命令:
+ - 若要获取 Office 365 组或 Microsoft 团队成员的列表, 您可以在 Microsoft 365 管理中心的 "家庭 > 组" 页上查看属性。 或者, 您可以在 Exchange Online PowerShell 中运行以下命令:
 
    ``` 
    Get-UnifiedGroupLinks <group or team name> -LinkType Members | FL DisplayName,PrimarySmtpAddress
@@ -148,4 +148,4 @@ ms.locfileid: "34154894"
 - 每个 Microsoft 团队或团队频道都包含用于笔记记录和协作的 Wiki。 Wiki 内容将自动保存到格式为 .mht 的文件中。 此文件存储在团队的 SharePoint 网站上的 "团队 Wiki 数据" 文档库中。 您可以通过将团队的 SharePoint 网站置于保留状态, 使 Wiki 中的内容处于保留状态。
 
   > [!NOTE]
-  > 为 Microsoft 团队或团队频道保留 Wiki 内容的功能 (在将团队的 SharePoint 网站置于保留状态时) 发布在2017年6月22日。 如果工作组网站处于保留状态, 则会在该日期开始保留 Wiki 内容。 但是, 如果工作组网站处于保留状态, 并且在6月 22 2017 日之前删除了 wiki 内容, 则不会保留 wiki 内容。
+  > 为 Microsoft 团队或团队频道保留 Wiki 内容的功能 (在将团队的 SharePoint 网站置于保留状态时) 发布在2017年6月22日。 如果工作组网站处于保留状态, 则会在该日期开始保留 Wiki 内容。 但是, 如果工作组网站处于保留状态, 并且在6月 22 2017 日之前删除了 Wiki 内容, 则不会保留 Wiki 内容。
