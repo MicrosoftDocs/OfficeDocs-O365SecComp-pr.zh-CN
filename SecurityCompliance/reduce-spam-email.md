@@ -17,18 +17,18 @@ ms.collection:
 - M365-security-compliance
 - Strat_O365_IP
 description: 了解有助于减少 Office 365 中垃圾邮件的最常用方法。
-ms.openlocfilehash: 3dca1aeb404bd121cec3a363eb9413f3fe79b36b
-ms.sourcegitcommit: 32ecff689ae32c59a39b7633ca0f36a304e7516e
+ms.openlocfilehash: d99b5e1452c60be713f0f4cfbab965d30eeeb8ef
+ms.sourcegitcommit: bc25ea19c0b6d318751eadc4f27902b0054d5e2b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/09/2019
-ms.locfileid: "35601229"
+ms.lasthandoff: 08/01/2019
+ms.locfileid: "36054704"
 ---
 # <a name="how-to-reduce-spam-email-in-office-365"></a>如何减少 Office 365 中的垃圾邮件
 
  **你是否在 Office 365 中收到过多的垃圾邮件？请执行以下操作。**
   
-我们强烈建议你[使用报告消息加载项](https://support.office.com/article/b5caa9f1-cdf3-4443-af8c-ff724ea719d2)报告误报邮件，帮助我们改进筛选器。此外，你可以将邮件*作为附件*转发至 junk@office365.microsoft.com 或 phish@office365.microsoft.com（如果是钓鱼邮件）。
+强烈建议[使用报告邮件加载项](https://support.office.com/article/b5caa9f1-cdf3-4443-af8c-ff724ea719d2)来报告假负消息，以帮助我们改进筛选器。此外, 还可以使用[提交资源管理器](admin-submission.md)提交消息。
 
 > [!TIP]
 > 如果你认为邮件是垃圾邮件且它位于“垃圾邮件”文件夹中，则这没有问题。如果完全不想在邮箱中看到该邮件，则应更改反垃圾邮件策略以隔离该邮件。有关隔离邮件的更多信息，请参阅[在 Office 365 中隔离电子邮件](quarantine-email-messages.md)。
@@ -57,7 +57,10 @@ ms.locfileid: "35601229"
     
 - **立即阻止发件人**：如果需要立即阻止发件人，可按电子邮件地址、域或 IP 地址进行阻止。请参阅[在 Office 365 中创建阻止发件人名单](create-block-sender-lists-in-office-365.md)。最终用户允许列表中的项可替代管理员设置的阻止操作。
     
-- **为用户启用“举报邮件”加载项**：强烈建议[为用户启用“举报邮件”加载项](enable-the-report-message-add-in.md)。作为管理员，还可以查看用户发送的反馈，并使用任意模式来调整可能导致问题出现的任何设置。
+- **为用户开启报告邮件加载项** 我们强烈建议[为用户启用报告邮件加载项](enable-the-report-message-add-in.md)。
+
+- **使用[提交资源管理器](admin-submission.md)** 管理员现在可以使用文件或网络邮件 ID、URL 和 Microsoft 在 Office 365 中扫描的文件发送电子邮件。 作为管理员，你还可以查看用户发送的反馈，并使用任何模式对可能导致问题的任何设置进行调整。
+
 - **启用 [DKIM](use-dkim-to-validate-outbound-email.md)**，以对出站邮件进行签名，从而增强域和租户内的安全性。
  > [!TIP]
 > 启用 DKIM 后，必须启用 [DMARC](use-dkim-to-validate-outbound-email.md)，这是因为此记录将验证 DKIM 和 SPF 是否正常运行，而且欺骗电子邮件通常没有签名，因为对称私钥和公钥是由 O365 管理。
@@ -66,8 +69,6 @@ ms.locfileid: "35601229"
 
 - **启用垃圾邮件规则并检查允许列表**：检查垃圾邮件操作规则是否已启用，并检查发件人或发件人的域是否未在你个人的允许列表中被设为规避筛选。访问这些设置的最佳方法是，转到[“阻止或允许”（垃圾邮件设置）](https://support.office.com/article/48c9f6f7-2309-4f95-9a4d-de987e880e46)中。还可以在其中选择阻止发件人的电子邮件地址或域。
     
-- **向 Microsoft 举报垃圾邮件**：按照[使用“举报邮件”加载项](https://support.office.com/article/b5caa9f1-cdf3-4443-af8c-ff724ea719d2)中的说明操作，向 Microsoft 举报垃圾邮件。此外，还可以向 junk@office365.microsoft.com 发送邮件，并附加要举报的一个或多个邮件。
-    
-    **重要提示**：如果未以附件形式转发邮件，头就会丢失，导致我们无法改进在 Office 365 中的垃圾邮件筛选。 
-    
+- **向 Microsoft 报告垃圾邮件**通过使用[使用报告邮件加载项](https://support.office.com/article/b5caa9f1-cdf3-4443-af8c-ff724ea719d2)，向 Microsoft 报告垃圾邮件。
+       
 - **取消订阅大量电子邮件**：如果你申请的邮件（新闻稿、产品公告等）包含来自声誉良好的源的取消订阅链接，建议你直接取消订阅。Office 365 通常不会将这些邮件视为垃圾邮件。你也可以选择阻止发件人，或让管理员更改为将所有大量邮件视为垃圾邮件。
