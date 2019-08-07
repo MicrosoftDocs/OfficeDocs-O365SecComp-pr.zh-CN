@@ -15,12 +15,12 @@ ms.assetid: e100fe7c-f2a1-4b7d-9e08-622330b83653
 ms.collection:
 - M365-security-compliance
 description: Office 365 高级威胁防护包括安全附件、安全链接、高级反钓鱼工具、报告工具和威胁智能功能。
-ms.openlocfilehash: 96e79a8aabe0788388473da9fcd514b9285e1c00
-ms.sourcegitcommit: 33c8e9c16143650ca443d73e91631f9180a9268e
+ms.openlocfilehash: 7fe5abb65679a33b7895263137d43b0621fb04e6
+ms.sourcegitcommit: 6122eb026c558a5126c40845e656fbb0c40cb32a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35854776"
+ms.lasthandoff: 08/06/2019
+ms.locfileid: "36168150"
 ---
 # <a name="office-365-advanced-threat-protection"></a>Office 365 高级威胁防护
 
@@ -41,7 +41,7 @@ Office 365 高级威胁防护 (ATP) 针对电子邮件、链接 (Url) 和协作�
 
 ## <a name="office-365-atp-plan-1-and-plan-2"></a>Office 365 ATP 计划1和计划2
 
-ATP 包含在 Office 365 E5 中;但是, ATP 计划和 ATP 计划2可用作特定订阅的加载项。 若要了解详细信息, 请参阅[跨 ATP 计划的功能可用性](https://docs.microsoft.com/en-us/office365/servicedescriptions/office-365-advanced-threat-protection-service-description#feature-availability-across-advanced-threat-protection-atp-plans)。
+ATP 包含在 Office 365 E5 中;但是, ATP Plan 1 和 ATP 计划2每个都可作为特定订阅的加载项。 若要了解详细信息, 请参阅[跨 ATP 计划的功能可用性](https://docs.microsoft.com/en-us/office365/servicedescriptions/office-365-advanced-threat-protection-service-description#feature-availability-across-advanced-threat-protection-atp-plans)。
 
 ## <a name="configure-atp-policies"></a>配置 ATP 策略
 

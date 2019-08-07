@@ -14,12 +14,12 @@ ms.collection: Ent_O365
 ms.custom: Ent_Solutions
 ms.assetid: 775a4e9e-3135-4a48-b32f-bbdd9f2bd0aa
 description: '摘要: 逐步完成独立的 SharePoint Online 团队网站的设计过程。'
-ms.openlocfilehash: 04634052354de47a09aa3b13e2c82d97be22f4d2
-ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
+ms.openlocfilehash: 19f030f5210fb6742098543ae91117a90d583242
+ms.sourcegitcommit: 6122eb026c558a5126c40845e656fbb0c40cb32a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "34150314"
+ms.lasthandoff: 08/06/2019
+ms.locfileid: "36053119"
 ---
 # <a name="design-an-isolated-sharepoint-online-team-site"></a>设计独立的 SharePoint Online 团队网站
 
@@ -31,11 +31,11 @@ ms.locfileid: "34150314"
 
 默认情况下, 每个 SharePoint Online 团队网站都使用以下 SharePoint 组创建:
   
-- \<网站 name> 成员
+- \<网站名称> 成员
     
-- \<网站 name> 访问者
+- \<访问者> 的网站名称
     
-- \<网站 name> 所有者
+- \<网站名称> 所有者
     
 这些组与 Office 365 和 Azure Active Directory (AD) 组是分开的, 并且是为网站资源分配权限的基础。
   
@@ -43,9 +43,9 @@ ms.locfileid: "34150314"
   
 |**SharePoint 组**|**权限级别**|
 |:-----|:-----|
-|\<网站 name> 成员  <br/> |Edit  <br/> |
-|\<网站 name> 访问者  <br/> |读取  <br/> |
-|\<网站 name> 所有者  <br/> |完全控制  <br/> |
+|\<网站名称> 成员  <br/> |Edit  <br/> |
+|\<访问者> 的网站名称  <br/> |读取  <br/> |
+|\<网站名称> 所有者  <br/> |完全控制  <br/> |
    
  **最佳实践:** 您可以创建其他 SharePoint 组和权限级别。 但是, 我们建议使用独立 SharePoint Online 网站的默认 SharePoint 组和权限级别。
   
@@ -59,35 +59,35 @@ ms.locfileid: "34150314"
   
 使用默认 SharePoint 组作为示例:
   
-- " ** \<网站 name> 成员**" SharePoint 组 (可包含用户帐户和组) 的成员被分配到 "**编辑**" 权限级别
+- 网站名称> 成员 SharePoint 组的成员 (可包含用户帐户和组) 被分配有**编辑**权限级别** \<**
     
-- " ** \<网站 name> 访问者**" SharePoint 组的成员 (可包含用户帐户和组) 被分配有 "**读取**" 权限级别
+- **网站名称> 访问者 SharePoint 组的成员 (可包含用户帐户和组) 被分配有读取权限级别\<** ****
     
-- 网站 name> 所有者的成员 SharePoint 组 (可包含用户帐户和组) 被分配了 "**完全控制**" 权限级别** \<**
+- " ** \<网站名称> 所有者**" SharePoint 组的成员 (可包含用户帐户和组) 被分配了 "**完全控制**" 权限级别
     
  **最佳实践:** 虽然您可以通过单个用户帐户管理权限, 但我们建议您改用一个 Azure AD 组 (称为 "访问组")。 这简化了通过访问组中的成员资格管理权限, 而不是管理每个 SharePoint 组的用户帐户列表。
   
-Office 365 的 Azure AD 组与 Office 365 组不同。 Azure AD 组显示在 Office 管理中心中, 其**类型**设置为 "**安全性**", 并且没有电子邮件地址。 可以在以下范围内管理 Azure AD 组:
+Office 365 的 Azure AD 组与 Office 365 组不同。 Azure AD 组显示在 Microsoft 365 管理中心中, 其**类型**设置为 "**安全性**", 并且没有电子邮件地址。 可以在以下范围内管理 Azure AD 组:
   
-- Windows Server Active Directory (AD)
+- Active Directory 域服务 (AD DS)
     
-    这些组是在本地 Windows Server AD 基础结构中创建并同步到 Office 365 订阅的组。 在 Office 管理中心中, 这些组的**状态**为 "已**与 active directory 同步**"。
+    这些组是在本地 AD DS 基础结构中创建并同步到 Office 365 订阅的组。 在 Microsoft 365 管理中心, 这些组的**状态**为 "已**与 active directory 同步**"。
     
 - Office 365
     
-    这些组是使用 Office 管理中心、Azure 门户或 Microsoft PowerShell 创建的组。 在 Office 管理中心中, 这些组的**状态**为**云**。
+    这些组是使用 Microsoft 365 管理中心、Azure 门户或 Microsoft PowerShell 创建的组。 在 Microsoft 365 管理中心, 这些组的**状态**为**云**。
     
- **最佳实践:** 如果使用的是本地 Windows Server AD 并与 Office 365 订阅同步, 请使用 Windows Server AD 执行用户和组管理。
+ **最佳实践:** 如果使用的是本地 AD DS 并与 Office 365 订阅同步, 请使用 AD DS 执行用户和组管理。
   
 对于独立的 SharePoint Online 团队网站, 建议的组结构如下所示:
   
 |**SharePoint 组**|**基于 Azure AD 的访问组**|**权限级别**|
 |:-----|:-----|:-----|
-|\<网站 name> 成员  <br/> |\<网站 name> 成员  <br/> |Edit  <br/> |
-|\<网站 name> 访问者  <br/> |\<网站 name> 查看者  <br/> |读取  <br/> |
-|\<网站 name> 所有者  <br/> |\<网站 name> 管理员  <br/> |完全控制  <br/> |
+|\<网站名称> 成员  <br/> |\<网站名称> 成员  <br/> |Edit  <br/> |
+|\<访问者> 的网站名称  <br/> |\<网站名称> 查看者  <br/> |读取  <br/> |
+|\<网站名称> 所有者  <br/> |\<网站名称> 管理员  <br/> |完全控制  <br/> |
    
- **最佳实践:** 虽然您可以使用 Office 365 或 Azure AD 组作为 SharePoint 组的成员, 但我们建议使用 Azure AD 组。 Azure AD 组通过 Windows Server AD 或 Office 365 进行管理, 使您可以更灵活地使用嵌套组来分配权限。
+ **最佳实践:** 虽然您可以使用 Office 365 或 Azure AD 组作为 SharePoint 组的成员, 但我们建议使用 Azure AD 组。 Azure AD 组通过 AD DS 或 Office 365 进行管理, 使您可以更灵活地使用嵌套组来分配权限。
   
 下面是配置为使用基于 Azure AD 的访问组的默认 SharePoint 组。
   
@@ -95,9 +95,9 @@ Office 365 的 Azure AD 组与 Office 365 组不同。 Azure AD 组显示在 Off
   
 在设计三个访问组时, 请记住以下几点:
   
-- Site name> Admins access 组中应该只有少数成员, 这些成员对应于管理团队网站的少数 SharePoint Online 管理员。 ** \<**
+- 与管理团队网站的少数 SharePoint Online 管理员相对应的** \<站点名称> 管理员**访问组中应该只有少数成员。
     
-- 大多数网站成员都位于** \<网站 name> 成员**或** \<网站 name> 查看**器访问组中。 由于** \<site name> members** access 组中的网站成员能够删除或修改网站中的资源, 因此请仔细考虑其成员资格。 如果不确定, 请将网站成员添加到** \<网站 name> 查看者**访问组。
+- 大多数网站成员都在** \<网站名称> 成员**或** \<网站名称> 查看者**访问组中。 由于** \<网站名称> 成员**访问组中的网站成员具有删除或修改网站中的资源的能力, 因此请仔细考虑其成员资格。 如果不确定, 请将网站成员添加到** \<网站名称> 查看者**访问组中。
     
 下面的示例展示了名为 ProjectX 的独立网站的 SharePoint 组和访问组。
   

@@ -10,12 +10,12 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: d6a87ce8-2c22-433a-b430-5eab14f6afdc
 description: 本主题为希望执行委派 Office 365 管理任务（包括能够为其他租户（公司）管理 Exchange Online Protection (EOP)）的 Microsoft 合作伙伴和经销商提供常见问题解答。
-ms.openlocfilehash: 8d28c8b6e0e85e9cfbe71e5b4b787159cc88ce08
-ms.sourcegitcommit: 32ecff689ae32c59a39b7633ca0f36a304e7516e
+ms.openlocfilehash: 0121c0a50e7f3ef7e5ab918a69efbd9ed609413e
+ms.sourcegitcommit: 6122eb026c558a5126c40845e656fbb0c40cb32a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/09/2019
-ms.locfileid: "35599798"
+ms.lasthandoff: 08/06/2019
+ms.locfileid: "36165638"
 ---
 # <a name="delegated-administration-faq"></a>委派管理常见问题解答
 
@@ -29,7 +29,7 @@ A. 如果你是 Microsoft 合作伙伴或经销商, 并且已注册为 Microsoft
     
 2. 注册以执行 Office 365 委派管理。在您开始管理客户帐户之前，客户必须将您授权为委派管理员。要获取此批准，您需首先向其[发送委派管理提议](https://go.microsoft.com/fwlink/?LinkId=396829)。（您也可以稍后向客户提供委派管理。） 
     
-3. 使用[添加或删除委派管理员](https://go.microsoft.com/fwlink/?LinkId=396831)中记录的步骤创建委派管理员帐户。
+3. 创建委派的管理员帐户。
     
 访问[合作伙伴：建立您的业务和管理您的 Office 365 合作伙伴帐户](https://go.microsoft.com/fwlink/?LinkId=301485)，了解有关如何设置 Office 365 委派管理的详细信息。 
   

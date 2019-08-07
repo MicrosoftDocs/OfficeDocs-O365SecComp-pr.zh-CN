@@ -15,12 +15,12 @@ search.appverid:
 - MET150
 ms.assetid: 0e22bcf3-bad3-42a4-b44f-276e0cf4790f
 description: 摘要：通过用户和组创建适用于政治宣传活动开发/测试环境的 Office 365 和 Microsoft 企业移动性 + 安全性 (EMS) 试用订阅。
-ms.openlocfilehash: b81674723f1da5b4282a331207caad2fc6d3d0a0
-ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
+ms.openlocfilehash: 53d6bc8a4cdba6dab33b963344a3bfabdb1e6a26
+ms.sourcegitcommit: 6122eb026c558a5126c40845e656fbb0c40cb32a
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "34151478"
+ms.lasthandoff: 08/06/2019
+ms.locfileid: "36053139"
 ---
 # <a name="configure-groups-and-users-for-a-political-campaign-devtest-environment"></a>为政治宣传活动开发/测试环境配置组和用户
 
@@ -38,9 +38,9 @@ ms.locfileid: "34151478"
   
 1. 如有需要，请使用试用订阅的全局管理员帐户的凭据登录管理中心。 如需帮助，请参阅[如何登录到 Office 365](https://support.office.com/Article/Where-to-sign-in-to-Office-365-e9eb7d51-5430-4929-91ab-6157c5a050b4)。
     
-2. 单击“管理”磁贴****。
+2. 单击“管理员”磁贴****。
     
-3. 在浏览器的“Office 管理中心”标签页的左侧导航中，单击“帐单”>“购买服务”********。
+3. 在浏览器的“Microsoft 365 管理中心”标签页的左侧导航中，单击“帐单”>“购买服务”********。
     
 4. 在“购买服务”页上，找到“企业移动性 + 安全性 E5”项。将鼠标指针悬停在此项之上，然后单击“开始免费试用”************。
     
@@ -168,9 +168,9 @@ foreach ($element in $userNames){ New-AzureADUser -DisplayName $element -Passwor
   
 使用这些步骤验证动态组成员资格和基于组的许可是否工作正常。
   
-1. 在浏览器的“Microsoft Office 主页”标签页中，单击“管理员”磁贴********。
+1. 在浏览器的“**Microsoft Office 主页**”标签页中，单击“**管理**”磁贴。
     
-2. 在浏览器的新“Office 管理中心”标签页中，单击“用户”********。
+2. 在浏览器的新“**Microsoft 365 管理中心**”标签页中，单击“**用户**”。
     
 3. 在用户列表中，单击“候选人”****。
     

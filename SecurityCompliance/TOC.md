@@ -6,6 +6,7 @@
 ## [新的 Microsoft 365 安全中心和 Microsoft 365 合规中心](microsoft-security-and-compliance.md)
 ### [Microsoft 365 合规中心](microsoft-365-compliance-center.md)
 ### [Microsoft 365 安全中心](overview-security-center.md)
+### [Microsoft 365 合规中心和 Microsoft 365 安全中心中的权限](permissions-microsoft-365-compliance-security.md)
 ### [Microsoft 安全功能分数](microsoft-secure-score.md)
 ## [转到安全与合规中心](go-to-the-securitycompliance-center.md)
 ### [安全与合规中心内的权限](permissions-in-the-security-and-compliance-center.md)

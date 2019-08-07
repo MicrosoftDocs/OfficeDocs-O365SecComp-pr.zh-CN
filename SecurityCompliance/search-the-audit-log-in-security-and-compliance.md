@@ -15,12 +15,12 @@ search.appverid:
 - MET150
 ms.assetid: 0d4d0f35-390b-4518-800e-0c7ec95e946c
 description: '使用安全 & 合规中心搜索统一审核日志, 以查看 Office 365 组织中的用户和管理员活动。 '
-ms.openlocfilehash: d2e099343581c8842551491eb885534cbcbc961b
-ms.sourcegitcommit: bc25ea19c0b6d318751eadc4f27902b0054d5e2b
+ms.openlocfilehash: 79309a2145db53f38d5d3c3c29777571d56910ae
+ms.sourcegitcommit: 6122eb026c558a5126c40845e656fbb0c40cb32a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/01/2019
-ms.locfileid: "36054774"
+ms.lasthandoff: 08/06/2019
+ms.locfileid: "36165688"
 ---
 # <a name="search-the-audit-log-in-the-security--compliance-center"></a>在安全 & 合规性中心中搜索审核日志
 
@@ -789,18 +789,12 @@ Exchange 管理员审核日志记录 (默认情况下在 Office 365 中启用) �
     ![在 "活动" 框中键入一个短划线以筛选 Exchange 管理员事件](media/7628e7aa-6263-474a-a28b-2dcf5694bb27.png)
   
 - 若要获取有关运行什么 cmdlet、使用的参数和参数值以及受影响的对象的信息, 您可以通过选择 "**下载所有结果**" 选项导出搜索结果。 有关详细信息, 请参阅[导出、配置和查看审核日志记录](export-view-audit-log-records.md)。 
-    
-
-- 您还可以使用 Exchange 管理中心查看 Exchange 管理员审核日志中的事件。 有关说明, 请参阅[查看管理员审核日志](https://technet.microsoft.com/library/dn342832%28v=exchg.150%29.aspx)。
-
-> [!IMPORTANT]
->  若要搜索和跟踪使用 exchange online 管理员 privilegies, 请使用 Cmdlet *search-adminauditlog* over *search-UnifiedAuditLog*。
-
 
 - 您还可以使用 Exchange `Search-UnifiedAuditLog -RecordType ExchangeAdmin` Online PowerShell 中的命令仅返回 Exchange 管理员审核日志中的审核记录。 在运行 Exchange cmdlet 后, 可能需要长达30分钟, 才能在搜索结果中返回相应的审核日志条目。 有关详细信息, 请参阅[UnifiedAuditLog](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-audit/search-unifiedauditlog)。 有关将**UnifiedAuditLog** cmdlet 返回的搜索结果导出到 CSV 文件中的信息, 请参阅[导出、配置和查看审核日志记录](export-view-audit-log-records.md#tips-for-exporting-and-viewing-the-audit-log)中的 "导出和查看审核日志的提示" 一节。
 
-- 您还可以使用 Exchange 管理中心或在 Exchange Online PowerShell 中运行**搜索 search-adminauditlog** , 以查看 exchange 管理员审核日志中的事件。 有关说明，请参阅：
-   - [查看管理员审核日志](https://technet.microsoft.com/library/dn342832%28v=exchg.150%29.aspx)。 
+- 您还可以使用 Exchange 管理中心或在 Exchange Online PowerShell 中运行**搜索 search-adminauditlog** , 以查看 exchange 管理员审核日志中的事件。 这是专门搜索 Exchange Online 管理员执行的活动的一种很有用的方法。 有关说明，请参阅：
+   
+   - [查看管理员审核日志](https://technet.microsoft.com/library/dn342832%28v=exchg.150%29.aspx) 
    
    -  [搜索-Search-adminauditlog](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-audit/search-adminauditlog)
    

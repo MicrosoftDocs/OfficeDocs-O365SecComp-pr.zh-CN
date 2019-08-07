@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: 5168196dcac8a2cb3809f43fabb470c0f64cd0f7
-ms.sourcegitcommit: 73dcdafb15b462223d1a670c781db260eb73c2f5
+ms.openlocfilehash: efcee812b6082a7f7ee36e6aea0ecb7ed0243077
+ms.sourcegitcommit: 6122eb026c558a5126c40845e656fbb0c40cb32a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/01/2019
-ms.locfileid: "36048125"
+ms.lasthandoff: 08/06/2019
+ms.locfileid: "36168122"
 ---
 # <a name="error-remediation-when-processing-data"></a>修正处理数据时出现的错误
 
@@ -48,13 +48,13 @@ ms.locfileid: "36048125"
 
     ![下载文件](../media/6ac04b09-8e13-414a-9e24-7c75ba586363.png)
 
-5. 若要下载文件, 请指定**下载的目标路径**。 这是将在本地计算机上下载文件的路径。  默认路径 "%USERPROFILE%\Downloads\errors" 指向已登录用户的 "下载" 文件夹。 如有必要, 可以更改此路径。 如果您确实要更改它, 建议使用本地文件路径, 而不是远程网络路径, 以实现最佳性能。
+5. 若要下载文件, 请指定**下载的目标路径**。 这是您的本地计算机上下载文件的路径。  默认路径 "%USERPROFILE%\Downloads\errors" 指向已登录用户的 "下载" 文件夹。 如有必要, 可以更改此路径。 如果您确实要更改它, 建议使用本地文件路径以获得最佳性能。 请勿使用远程网络路径。
 
 6. 通过单击 "**复制到剪贴板**" 复制预定义命令。 启动 windows 命令提示符, 粘贴命令, 然后按**enter**。  
 
     下载文件。
 
-    ![准备错误修正](../media/f364ab4d-31c5-4375-b69f-650f694a2f69.png)
+    ![准备进行错误修正](../media/f364ab4d-31c5-4375-b69f-650f694a2f69.png)
 
     > [!NOTE]
     > 必须使用 AzCopy app-v 8.1 才能成功使用 "**下载文件**" 页上提供的命令。 在下面的步骤10中, 还必须使用 AzCopy 中的文件上传文件。 若要安装此版本的 AzCopy, 请参阅[在 Windows 上使用 AzCopy ue-v 8.1 传输数据](https://docs.microsoft.com/previous-versions/azure/storage/storage-use-azcopy)。 如果提供的 AzCopy 命令失败, 请参阅[高级电子数据展示中的疑难解答 AzCopy](troubleshooting-azcopy.md)。
@@ -75,7 +75,7 @@ ms.locfileid: "36048125"
 
 11. 返回到高级电子数据展示并单击 "**下一步: 处理文件**"。
 
-12. 处理完成时。  您可以返回到评审集并查看修正的文件。
+12. 处理完成时。 您可以返回到评审集并查看修正的文件。
 
 ## <a name="what-happens-when-files-are-remediated"></a>修正文件时会发生什么情况
 
@@ -91,4 +91,4 @@ ms.locfileid: "36048125"
 - WordCount
 - WorkingsetId
 
-有关高级电子数据展示中所有文档元数据字段的定义, 请参阅[document metadata fields](document-metadata-fields.md)。
+有关高级电子数据展示中所有元数据字段的定义, 请参阅[Document metadata fields](document-metadata-fields.md)。

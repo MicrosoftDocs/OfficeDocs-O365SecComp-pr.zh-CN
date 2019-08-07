@@ -16,12 +16,12 @@ localization_priority: Priority
 search.appverid:
 - MET150
 description: 概述针对 GDPR 的 Office 365 信息保护。了解如何发现、分类、保护和监视个人数据。
-ms.openlocfilehash: 0231951aa4fde3075dc525707fc7cac98e8f7a45
-ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
+ms.openlocfilehash: 0c1c43bdbe16b82a1fe85222b2faf9c76dfc6fe0
+ms.sourcegitcommit: 6122eb026c558a5126c40845e656fbb0c40cb32a
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "34152484"
+ms.lasthandoff: 08/06/2019
+ms.locfileid: "36165658"
 ---
 # <a name="overview-of-office-365-information-protection-for-gdpr"></a>针对 GDPR 的 Office 365 信息保护概述
 
@@ -35,7 +35,7 @@ GDPR 对个人数据的收集、存储、处理和共享进行了规范化。个
 
 该解决方案旨在帮助组织发现和保护 Office 365 中可能受 GDPR 制约的个人数据。它并不用作 GDPR 符合性证明。组织负责确保其自己的 GDPR 符合性，并且经建议咨询其法律和合规团队，或向专门致力于符合性的第三方寻求指导和建议。
 
-[GDPR 评估](https://assessment.microsoft.com/gdpr-compliance)是可免费使用的快速在线自评工具，它可帮助组织检查其为符合 GDPR 要求而达到的整体就绪程度 (<http://aka.ms/gdprassessment>)。
+[GDPR 评估](https://www.microsoft.com/cyberassessment/en/gdpr/uso365?ls=Email&mkt_tok=eyJpIjoiTTJFeE5USXlOR1EwTWpJMiIsInQiOiJQTmdCYWR5NTlOd3JLWHZlb2NzNldKclQ4ZVBzVmhGeUhoUlFcL1pvSDIyXC9Ka05iTUR1aGpxT0YxQ0FUeGNDOUlkbWZLM1U4SUZWZmEyaGF6XC9ueUxkTHJzZnB3VDRMZlhPdkR4MzRLWkF5ckRNdWwxUkgzXC9yRU8yNkttSHhTb3VpZjNyVlJrNm9TTVZRYU5HR240a0FRPT0ifQ%3D%3D)是可免费使用的快速在线自评工具，它可帮助组织检查其为符合 GDPR 要求而达到的整体就绪程度。
 
 ## <a name="assess-and-manage-your-compliance-risk"></a>评估和管理符合性风险
 
@@ -47,7 +47,7 @@ GDPR 对个人数据的收集、存储、处理和共享进行了规范化。个
 
 ![使用合规性管理器查看要求并跟踪进度](Media/Overview-image1.png)
 
-有关详细信息，请参阅[使用服务信任门户中的合规性管理器](https://support.office.com/zh-CN/article/Use-Compliance-Manager-in-the-Service-Trust-Portal-Preview-5756d342-5af9-4496-82e8-4dd50fa39942)。 
+有关详细信息，请参阅[使用服务信任门户中的合规性管理器](https://servicetrust.microsoft.com/ComplianceManager)。 
 
 ### <a name="step-2--use-content-search-and-sensitive-information-types-to-find-personal-data"></a>步骤 2 — 使用内容搜索和敏感信息类型查找个人数据 
 

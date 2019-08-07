@@ -14,12 +14,12 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: d1795031-beef-49ea-a6fc-5da5450d320d
 description: '摘要: 配置独立于 Office 365 开发/测试环境中的其余组织的 SharePoint Online 团队网站。'
-ms.openlocfilehash: 23b734e55e8c68cdc42f41b4e61bdfe152fb01e0
-ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
+ms.openlocfilehash: e4d4d4462efa91247954501c51a71120a7d341e0
+ms.sourcegitcommit: 6122eb026c558a5126c40845e656fbb0c40cb32a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "34152584"
+ms.lasthandoff: 08/06/2019
+ms.locfileid: "36053087"
 ---
 # <a name="isolated-sharepoint-online-team-site-devtest-environment"></a>独立的 SharePoint Online 团队网站开发/测试环境
 
@@ -59,7 +59,7 @@ Office 365 中的 SharePoint Online 团队网站是使用通用文档库、OneNo
 如果要在模拟的企业配置中创建独立的 SharePoint Online 团队网站, 请按照[您的 Office 365 开发/测试环境的 DirSync](https://docs.microsoft.com/office365/enterprise/dirsync-for-your-office-365-dev-test-environment)中的说明进行操作。
   
 > [!NOTE]
-> 创建独立 SharePoint Online 网站不需要模拟的企业开发/测试环境（包括连接 Internet 的模拟 Intranet 和 Windows Server AD 林的目录同步）。可以根据需要选择此选项，以便能够测试独立 SharePoint Online 网站，并在代表典型组织的环境中对其进行试验。 
+> 创建独立的 SharePoint Online 网站不需要模拟企业开发/测试环境, 其中包括连接到 Internet 的模拟 intranet 和 Active Directory 域服务 (AD DS) 林的目录同步。 可以根据需要选择此选项，以便能够测试独立 SharePoint Online 网站，并在代表典型组织的环境中对其进行试验。 
   
 ## <a name="phase-2-create-user-accounts-and-access-groups"></a>第2阶段: 创建用户帐户和访问组
 
@@ -235,7 +235,7 @@ Add-MsolGroupMember -GroupObjectId (Get-MsolGroup | Where { $_.DisplayName -eq $
     
 11. 在浏览器上的新“ProjectX-文档”**** 选项卡中，依次单击“新建”>“Word 文档”****。
     
-12. 在“Word Online”**** 页中键入一些文本，等待状态指示“已保存”****，单击浏览器上的后退按钮，然后刷新网页。应该会看到“文档”**** 文件夹中有新的“Document.docx”****。
+12. 在页面上键入一些文本, 等待状态显示为 "**已保存**", 单击浏览器上的 "后退" 按钮, 然后刷新页面。 应该会看到“文档”**** 文件夹中有新的“Document.docx”****。
     
 13. 依次单击“Document.docx”**** 文档对应的省略号和“获取链接”****。
     
