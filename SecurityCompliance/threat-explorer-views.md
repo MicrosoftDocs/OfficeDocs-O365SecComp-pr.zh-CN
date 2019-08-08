@@ -3,7 +3,7 @@ title: 威胁资源管理器中的视图和实时检测
 ms.author: deniseb
 author: denisebmsft
 manager: dansimp
-ms.date: 03/18/2019
+ms.date: 08/07/2019
 audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
@@ -12,12 +12,12 @@ search.appverid: ''
 ms.collection:
 - M365-security-compliance
 description: 了解在威胁资源管理器和实时检测中可用的各种视图类型。
-ms.openlocfilehash: 71ec20daae45bee8385f24091850ea6223399eae
-ms.sourcegitcommit: 32ecff689ae32c59a39b7633ca0f36a304e7516e
+ms.openlocfilehash: 82476f9af3b703904fff40c8347f2848cf919dfc
+ms.sourcegitcommit: 7a0cb7e1da39fc485fc29e7325b843d16b9808af
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/09/2019
-ms.locfileid: "35600815"
+ms.lasthandoff: 08/07/2019
+ms.locfileid: "36230386"
 ---
 # <a name="views-in-threat-explorer-and-real-time-detections"></a>威胁资源管理器中的视图和实时检测
 
@@ -72,9 +72,9 @@ ms.locfileid: "35600815"
 
 ![有关检测到的 URL 的详细信息](media/ThreatExplorerEmailPhishURLDetails.png)
 
-## <a name="email--user-reported"></a>> 用户报告的电子邮件
+## <a name="email--submissions"></a>电子邮件 > 提交
 
-若要查看此报告, 请在资源管理器 (或实时检测) 中, 选择 "**查看** > 由**用户报告的****电子邮件** > "。 此视图显示用户已报告为垃圾邮件、非垃圾邮件或仿冒电子邮件的电子邮件。 
+若要查看此报告, 请在资源管理器 (或实时检测) 中, 选择 "**查看** > **电子邮件** > **提交**"。 此视图显示用户已报告为垃圾邮件、非垃圾邮件或仿冒电子邮件的电子邮件。 
 
 ![用户报告的电子邮件](media/ThreatExplorerEmailUserReportedViewOptions.png) 
 
@@ -135,7 +135,7 @@ ms.locfileid: "35600815"
 
 ## <a name="queries-and-filters"></a>查询和筛选器
 
-浏览器 (和实时检测报告) 具有多种功能强大的筛选器和查询功能, 使您可以深入了解详细信息, 如主要目标用户、主要恶意软件系列、检测技术等。 每种报告都提供了查看和浏览数据的各种方式。
+资源管理器 (以及实时检测报告) 具有多种功能强大的筛选器和查询功能, 使您可以深入了解详细信息, 如主要目标用户、主要恶意软件系列、检测技术等。 每种报告都提供了查看和浏览数据的各种方式。
 
 > [!IMPORTANT]
-> 请勿在浏览器 (或实时检测) 的查询栏中使用通配符, 如星号 (*) 或问号 (？)。 当您在 "主题" 字段中搜索电子邮件时, 资源管理器 (或实时检测) 将执行与通配符搜索类似的部分匹配和生成结果。
+> 请勿在浏览器 (或实时检测) 的查询栏中使用通配符 (如星号或问号)。 当您在 "**主题" 字段**中搜索电子邮件时, 资源管理器 (或实时检测) 将执行与通配符搜索类似的部分匹配和生成结果。

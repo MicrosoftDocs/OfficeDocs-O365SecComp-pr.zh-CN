@@ -1,7 +1,7 @@
 ---
 title: 使用 Office 365 ATP 安全链接设置自定义不重写 Url 列表
-ms.author: deniseb
-author: denisebmsft
+ms.author: tracyp
+author: msfttracyp
 manager: dansimp
 audience: Admin
 ms.topic: article
@@ -15,12 +15,12 @@ ms.assetid: 35dbfd99-da5a-422b-9b0e-c6caf3b645fa
 ms.collection:
 - M365-security-compliance
 description: 设置 ATP 安全链接策略时, 可以包括 "不重写" 的 Url 列表, 以使组织中的某些人能够访问包含在列表中的网站。
-ms.openlocfilehash: 88a3f816c9156abc2d910d8710296e471e2fc540
-ms.sourcegitcommit: 32ecff689ae32c59a39b7633ca0f36a304e7516e
+ms.openlocfilehash: b64fb39754ccfb6f627fc79809e3b6dc93480ce4
+ms.sourcegitcommit: 7a0cb7e1da39fc485fc29e7325b843d16b9808af
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/09/2019
-ms.locfileid: "35601359"
+ms.lasthandoff: 08/07/2019
+ms.locfileid: "36230356"
 ---
 # <a name="set-up-a-custom-do-not-rewrite-urls-list-using-office-365-atp-safe-links"></a>使用 Office 365 ATP 安全链接设置自定义不重写 Url 列表
 

@@ -15,16 +15,18 @@ search.appverid:
 - MET150
 ms.assetid: 37cdbb02-a24a-4093-8bdb-2a7f0b3a19ee
 description: 了解 Office 365 中的自动扩展存档, 该存档为 Exchange Online 邮箱提供无限制的存档存储。
-ms.openlocfilehash: 9b63bcd7cbf8c1cef8df336553debdbf7af2ba12
-ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
+ms.openlocfilehash: 21489683bbb9f3e2addb5e95a38d8f8a418639de
+ms.sourcegitcommit: 7a0cb7e1da39fc485fc29e7325b843d16b9808af
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "34158064"
+ms.lasthandoff: 08/07/2019
+ms.locfileid: "36231076"
 ---
 # <a name="overview-of-unlimited-archiving-in-office-365"></a>Office 365 中的无限制存档概述
 
-在 Office 365 中, 存档邮箱为用户提供额外的邮箱存储空间。 启用用户的存档邮箱后, 最多可有 100 GB 的附加存储空间。 达到 100 GB 的存储配额时, 组织必须与 Microsoft 联系以请求存档邮箱的额外存储空间。 这就不再是这样。 Office 365 中新增的无限制存档功能 (称为*自动扩展存档*) 在存档邮箱中提供了不受限制的存储量。 现在, 当达到存档邮箱中的存储配额时, Office 365 会自动增加存档大小, 这意味着用户将不会用尽邮箱存储空间, 并且管理员无需为存档邮箱请求额外的存储空间.
+在 Office 365 中, 存档邮箱为用户提供额外的邮箱存储空间。 启用用户的存档邮箱后, 最多可有 100 GB 的附加存储空间。 过去, 当达到 100 GB 的存储配额时, 组织必须与 Microsoft 联系以请求存档邮箱的额外存储空间。 这就不再是这样。
+
+Office 365 中的无限制存档功能 (称为*自动扩展存档*) 在存档邮箱中提供了不受限制的存储量。 现在, 当达到存档邮箱中的存储配额时, Office 365 会自动增加存档大小, 这意味着用户将不会用尽邮箱存储空间, 并且管理员无需为存档邮箱请求额外的存储空间.
   
 有关启用自动扩展存档的分步说明, 请参阅[在 Office 365 中启用无限制存档](enable-unlimited-archiving.md)。
   

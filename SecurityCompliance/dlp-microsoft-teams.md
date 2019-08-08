@@ -1,7 +1,7 @@
 ---
 title: 数据丢失防护和 Microsoft 团队
-ms.author: deniseb
-author: denisebmsft
+ms.author: chrfox
+author: chrfox
 manager: laurawi
 ms.date: 07/12/2019
 audience: ITPro
@@ -13,12 +13,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: 现在, 你可以将 DLP 策略应用于 Microsoft 团队聊天和频道。 阅读本文, 了解详细了解它的工作原理。
-ms.openlocfilehash: 96ba26a4e155a976c2123cc44c3a8632092740ac
-ms.sourcegitcommit: ea630cf1cbaa98ede5ee320c71a0fad7d7def6fb
+ms.openlocfilehash: 8ac8f4e2a4189ca83772775a96067d0b5fc3a24b
+ms.sourcegitcommit: 7a0cb7e1da39fc485fc29e7325b843d16b9808af
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/13/2019
-ms.locfileid: "35672911"
+ms.lasthandoff: 08/07/2019
+ms.locfileid: "36230736"
 ---
 # <a name="data-loss-prevention-and-microsoft-teams"></a>数据丢失防护和 Microsoft 团队
 

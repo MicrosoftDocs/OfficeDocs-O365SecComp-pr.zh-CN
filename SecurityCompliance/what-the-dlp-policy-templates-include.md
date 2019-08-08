@@ -1,7 +1,7 @@
 ---
 title: DLP 策略模板包含的内容
-ms.author: deniseb
-author: denisebmsft
+ms.author: chrfox
+author: chrfox
 manager: laurawi
 ms.date: 6/29/2018
 audience: Admin
@@ -16,12 +16,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Office 365 安全&amp;合规中心中的数据丢失防护 (DLP) 包括可满足常见合规性要求的现成的策略模板, 例如, 帮助您保护受美国卫生保险业法案组织的敏感信息 (HIPAA)、美国格雷姆-里奇-比利雷法案 (GLBA) 或美国爱国 Act。本主题列出了所有策略模板, 它们查找的敏感信息类型, 以及默认条件和操作的具体内容。
-ms.openlocfilehash: 505d544d68002bc82eafd85c51b4db4328ba9853
-ms.sourcegitcommit: 0d5a863f48914eeaaf29f7d2a2022618de186247
+ms.openlocfilehash: aff9f5179d9bad3d8c1c97d17473a14995137c32
+ms.sourcegitcommit: 7a0cb7e1da39fc485fc29e7325b843d16b9808af
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34077148"
+ms.lasthandoff: 08/07/2019
+ms.locfileid: "36231056"
 ---
 # <a name="what-the-dlp-policy-templates-include"></a>DLP 策略模板包含的内容
 
@@ -220,8 +220,8 @@ Office 365 安全&amp;合规中心中的数据丢失防护 (DLP) 包括可满足
 
 |**规则名称**|**条件<br/> (包括敏感信息类型)**|**Actions**|
 |:-----|:-----|:-----|
-|英国 AMRA：扫描与外部共享的内容 - 较低的计数  <br/> | 内容包含敏感信息：  <br/>  U.K。 国家/地区运行状况服务号码—最小值计数 1, 最大值计数9  <br/>  U.K。 国家保险业号码 (NINO) —最小值计数 1, 最大值计数9  <br/>  该内容与以下人员共享：  <br/>  我的组织外部的用户  <br/> |发送通知  <br/> |
-|英国 AMRA：扫描与外部共享的内容 - 较高的计数  <br/> | 内容包含敏感信息：  <br/>  U.K。 国家/地区运行状况服务号码—最小值计数 10, 最大值计数任意  <br/>  U.K。 国家保险业号码 (NINO) —最小值计数 10, 最大值计数任意  <br/>  该内容与以下人员共享：  <br/>  我的组织外部的用户  <br/> | 阻止对内容的权限  <br/>  发送通知  <br/>  允许替换  <br/>  需要业务理由  <br/>  发送事件报告  <br/> |
+|英国 AMRA：扫描与外部共享的内容 - 较低的计数  <br/> | 内容包含敏感信息：  <br/>  U.K. 国家/地区运行状况服务号码—最小值计数 1, 最大值计数9  <br/>  U.K. 国家保险业号码 (NINO) —最小值计数 1, 最大值计数9  <br/>  该内容与以下人员共享：  <br/>  我的组织外部的用户  <br/> |发送通知  <br/> |
+|英国 AMRA：扫描与外部共享的内容 - 较高的计数  <br/> | 内容包含敏感信息：  <br/>  U.K. 国家/地区运行状况服务号码—最小值计数 10, 最大值计数任意  <br/>  U.K. 国家保险业号码 (NINO) —最小值计数 10, 最大值计数任意  <br/>  该内容与以下人员共享：  <br/>  我的组织外部的用户  <br/> | 阻止对内容的权限  <br/>  发送通知  <br/>  允许替换  <br/>  需要业务理由  <br/>  发送事件报告  <br/> |
    
 ## <a name="uk-data-protection-act"></a>英国数据保护法案
 

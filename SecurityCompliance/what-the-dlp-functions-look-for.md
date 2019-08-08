@@ -1,7 +1,7 @@
 ---
 title: DLP 函数查找的内容
-ms.author: deniseb
-author: denisebmsft
+ms.author: chrfox
+author: chrfox
 manager: laurawi
 ms.date: 6/18/2016
 audience: Admin
@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 敏感信息类型查找特定模式, 并通过确保正确的格式设置、强制校验和来查找相关的关键字或其他信息来 corroborate。 其中一些功能是由内部函数执行的。 本主题说明这些函数查找的内容, 以帮助您了解预定义的敏感信息类型的工作原理。
-ms.openlocfilehash: 044920a7ff28ffc1c4338a642bc130ee07ef7264
-ms.sourcegitcommit: 0d5a863f48914eeaaf29f7d2a2022618de186247
+ms.openlocfilehash: c192a17c488e5a7252a3599204d2bdeda4d0637c
+ms.sourcegitcommit: 7a0cb7e1da39fc485fc29e7325b843d16b9808af
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34077998"
+ms.lasthandoff: 08/07/2019
+ms.locfileid: "36230316"
 ---
 # <a name="what-the-dlp-functions-look-for"></a>DLP 函数查找的内容
 
@@ -27,7 +27,7 @@ ms.locfileid: "34077998"
   
 本主题说明这些函数查找的内容, 以帮助您了解预定义的敏感信息类型的工作原理。 有关详细信息, 请参阅[敏感信息类型查找的内容](what-the-sensitive-information-types-look-for.md)。
   
-## <a name="funcusdate"></a>Func_us_date
+## <a name="func_us_date"></a>Func_us_date
 
 此函数以美国常用格式查找日期这包括格式 "月/日/年"、"月-日-年" 和 "年月日"。 月份的名称或缩写不区分大小写。 
   
@@ -55,7 +55,7 @@ ms.locfileid: "34077998"
     
   - 2003年4月4日. 5 月4月6月11月11月11月4日。
     
-## <a name="funceudate"></a>Func_eu_date
+## <a name="func_eu_date"></a>Func_eu_date
 
 此函数查找欧盟常用格式的日期 (以及美国以外的大多数位置)。 这包括格式 "日/月/年"、"日-月-年" 和 "年月日"。 月份的名称或缩写不区分大小写。
   
@@ -119,7 +119,7 @@ ms.locfileid: "34077998"
     
   - enero 2003 年2月。 marzo abr。 mayo 06。 年7月. agosto/set。 2008. 年11月. home.dic.
     
-## <a name="funceudate1-deprecated"></a>Func_eu_date1 (已弃用)
+## <a name="func_eu_date1-deprecated"></a>Func_eu_date1 (已弃用)
 
 > [!NOTE]
 > 此函数已被弃用, 因为它仅支持包含在上述`Func_eu_date`函数中的葡萄牙月名称。 
@@ -150,7 +150,7 @@ ms.locfileid: "34077998"
     
   - jan fev mar abr mai 06 年6月前设置11月 dez
     
-## <a name="funceudate2-deprecated"></a>Func_eu_date2 (已弃用)
+## <a name="func_eu_date2-deprecated"></a>Func_eu_date2 (已弃用)
 
 > [!NOTE]
 > 此函数已被弃用, 因为它仅支持荷兰月份名称, 这些名称现在包含`Func_eu_date`在上述函数中。 
@@ -181,7 +181,7 @@ ms.locfileid: "34077998"
     
   - 2004年1月1月 maart 日 mei 年9月8日9月9日 okt 年11月
     
-## <a name="funcexpirationdate"></a>Func_expiration_date
+## <a name="func_expiration_date"></a>Func_expiration_date
 
 此函数查找信用卡和借记卡常用格式的日期, 其中不包括月份的天数。 此函数将以 "月/年"、"月-年"、"[月 name] year" 和 "[月缩写] 年" 的格式匹配日期。 月份的名称或缩写不区分大小写。
   
@@ -213,7 +213,7 @@ ms.locfileid: "34077998"
     
   - 2004年2月3月4月5月8日12月8月8日
     
-## <a name="funcusaddress"></a>Func_us_address
+## <a name="func_us_address"></a>Func_us_address
 
 此函数查找美国的状态名称或邮政缩写, 后跟有效的邮政编码, 就像在邮政地址中使用一样。 邮政编码必须是与美国省/市/自治区名称或缩写相关联的正确邮政编码之一。 美国省/市/自治区名称和邮政编码不能由标点符号或字母分隔。
   

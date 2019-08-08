@@ -1,7 +1,7 @@
 ---
 title: 新的 Microsoft 365 合规性中心概述
-ms.author: deniseb
-author: denisebmsft
+ms.author: robmazz
+author: robmazz
 manager: laurawi
 ms.date: 05/29/2019
 audience: ITPro
@@ -9,12 +9,12 @@ ms.topic: article
 ms.service: o365-seccomp
 localization_priority: Normal
 description: 了解新的 Microsoft 365 合规性中心, 包括它包含的内容、如何获取它以及后续步骤。
-ms.openlocfilehash: fc6ab6893e142b3beb5289c8430477727b3844ac
-ms.sourcegitcommit: b9d8a43cb3afcdc8820bc9470c5707eff8fc6616
+ms.openlocfilehash: 13caad70328322505557ea2e8deac902ae1fc9a6
+ms.sourcegitcommit: 7a0cb7e1da39fc485fc29e7325b843d16b9808af
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/11/2019
-ms.locfileid: "34852786"
+ms.lasthandoff: 08/07/2019
+ms.locfileid: "36231126"
 ---
 # <a name="overview-of-the-all-new-microsoft-365-compliance-center"></a>全新 Microsoft 365 合规性中心概述
 
@@ -68,7 +68,7 @@ ms.locfileid: "34852786"
 
 |  |  |
 |---------|---------|
-|![Microsoft 365 合规性中心中的导航](media/m365-compliance-center-leftnav.png)  |<br/><br/> 转到 "**通知**" 以查看和解决[通知](alerts.md)<br/><br/>访问**报告**以查看有关[标签使用和保留](sensitivity-labels.md)的数据[、DLP 策略匹配和替代](view-the-dlp-reports.md)、[共享文件](https://docs.microsoft.com/cloud-app-security/file-filters)、[使用中的第三方应用程序](https://docs.microsoft.com/cloud-app-security/discovered-apps)等。<br/><br/>展开 "**分类**" 部分以访问您的[标签](labels.md)、[标签策略](sensitivity-labels.md#what-label-policies-can-do)、[敏感信息类型](what-the-sensitive-information-types-look-for.md)和[标签分析](view-label-activity-for-documents.md)。<br/><br/>转到 "**策略**" 以查看[警报](alerts.md)并访问你的[DLP](data-loss-prevention-policies.md)和[保留](retention-policies.md)策略。<br/><br/> 使用 "**解决方案**" 部分中的链接可访问组织的合规性解决方案。 具体包括： <br/>[数据治理 > 处置](disposition-reviews.md)<br/>[电子数据展示 (预览)](compliance20/overview-ediscovery-20.md)<br/>[监控](supervision-policies.md)<br/>[数据调查](datainvestigations/overview-data-investigations.md)<br/>[数据主体请求](manage-gdpr-data-subject-requests-with-the-dsr-case-tool.md)        |
+|![Microsoft 365 合规性中心中的导航](media/m365-compliance-center-leftnav.png)  |<br/><br/> 转到 "**通知**" 以查看和解决[通知](alerts.md)<br/><br/>访问**报告**以查看有关[标签使用和保留](sensitivity-labels.md)的数据[、DLP 策略匹配和替代](view-the-dlp-reports.md)、[共享文件](https://docs.microsoft.com/cloud-app-security/file-filters)、[使用中的第三方应用程序](https://docs.microsoft.com/cloud-app-security/discovered-apps)等。<br/><br/>展开 "**分类**" 部分以访问您的[标签](labels.md)、[标签策略](sensitivity-labels.md#what-label-policies-can-do)、[敏感信息类型](what-the-sensitive-information-types-look-for.md)和[标签分析](view-label-activity-for-documents.md)。<br/><br/>转到 "**策略**" 以查看[警报](alerts.md)并访问你的[DLP](data-loss-prevention-policies.md)和[保留](retention-policies.md)策略。<br/><br/> 使用 "**解决方案**" 部分中的链接可访问组织的合规性解决方案。 具体包括： <br/>[数据治理 > 处置](disposition-reviews.md)<br/>[电子数据展示](compliance20/overview-ediscovery-20.md)<br/>[监控](supervision-policies.md)<br/>[数据调查](datainvestigations/overview-data-investigations.md)<br/>[数据主体请求](manage-gdpr-data-subject-requests-with-the-dsr-case-tool.md)        |
 
 
 ## <a name="how-do-i-get-this"></a>如何获取此功能？

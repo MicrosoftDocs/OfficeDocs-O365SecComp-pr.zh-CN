@@ -1,9 +1,9 @@
 ---
-title: 查找并调查已传递的恶意电子邮件 (Office 365 威胁调查和响应
+title: 查找并调查 Office 365 中提供的恶意电子邮件
 ms.author: deniseb
 author: denisebmsft
 manager: dansimp
-ms.date: 08/02/2019
+ms.date: 08/07/2019
 audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
@@ -15,22 +15,22 @@ ms.assetid: 8f54cd33-4af7-4d1b-b800-68f8818e5b2a
 ms.collection:
 - M365-security-compliance
 description: 了解如何使用威胁调查和响应功能查找和调查恶意电子邮件。
-ms.openlocfilehash: 9a1e5e1bb571b3b5c517ae628c29c10b44987adb
-ms.sourcegitcommit: 6122eb026c558a5126c40845e656fbb0c40cb32a
+ms.openlocfilehash: 1f558614d77577408a824b3c6181aae22753ab0f
+ms.sourcegitcommit: 7a0cb7e1da39fc485fc29e7325b843d16b9808af
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/06/2019
-ms.locfileid: "36165668"
+ms.lasthandoff: 08/07/2019
+ms.locfileid: "36230556"
 ---
-# <a name="find-and-investigate-malicious-email-that-was-delivered-office-365-advanced-threat-protection-plan-2"></a>查找并调查提供的恶意电子邮件 (Office 365 高级威胁防护计划 2)
+# <a name="find-and-investigate-malicious-email-that-was-delivered-in-office-365"></a>查找并调查 Office 365 中提供的恶意电子邮件
 
-[Office 365 高级威胁防护功能](office-365-atp.md)使您能够调查让用户面临风险的活动, 并采取措施来保护您的组织。 例如, 如果您是组织的安全团队的一部分, 则可以查找并调查传递给用户的可疑电子邮件。 可以使用[威胁资源管理器 (或实时检测)](threat-explorer.md)执行此操作。
+[Office 365 高级威胁防护](office-365-atp.md)使您能够调查让用户面临风险的活动, 并采取措施来保护您的组织。 例如, 如果您是组织的安全团队的一部分, 则可以查找并调查传递给用户的可疑电子邮件。 可以使用[威胁资源管理器 (或实时检测)](threat-explorer.md)执行此操作。
   
 ## <a name="before-you-begin"></a>开始之前 .。。
 
 请确保满足以下要求：
   
-- 您的组织具有[Office 365 高级威胁防护](office-365-atp.md)(计划 2), 并将[许可证分配给用户](https://docs.microsoft.com/en-us/office365/admin/subscriptions-and-billing/assign-licenses-to-users)。
+- 您的组织具有[Office 365 高级威胁防护](office-365-atp.md), 并将[许可证分配给用户](https://docs.microsoft.com/en-us/office365/admin/subscriptions-and-billing/assign-licenses-to-users)。
     
 - 为你的组织启用了[Office 365 审核日志记录](turn-audit-log-search-on-or-off.md)。 
     

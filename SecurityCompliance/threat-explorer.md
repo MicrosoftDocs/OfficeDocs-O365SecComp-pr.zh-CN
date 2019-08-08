@@ -1,9 +1,9 @@
 ---
-title: 威胁浏览器 (和实时检测)
+title: 威胁资源管理器和实时检测
 ms.author: deniseb
 author: denisebmsft
 manager: dansimp
-ms.date: 06/20/2019
+ms.date: 08/07/2019
 audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
@@ -14,15 +14,15 @@ search.appverid:
 ms.assetid: 82ac9922-939c-41be-9c8a-7c75b0a4e27d
 ms.collection:
 - M365-security-compliance
-description: 了解安全&amp;合规性中心中的资源管理器 (和实时检测)。
-ms.openlocfilehash: dff1fae01aa525135226d88b305de7c7c3aefb7c
-ms.sourcegitcommit: bc25ea19c0b6d318751eadc4f27902b0054d5e2b
+description: 了解有关安全&amp;合规中心中的资源管理器和实时检测。
+ms.openlocfilehash: 2e3e60c2b197c30f01efcfcba5e118091b29a22b
+ms.sourcegitcommit: 7a0cb7e1da39fc485fc29e7325b843d16b9808af
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/01/2019
-ms.locfileid: "36054754"
+ms.lasthandoff: 08/07/2019
+ms.locfileid: "36230406"
 ---
-# <a name="threat-explorer-and-real-time-detections"></a>威胁浏览器 (和实时检测)
+# <a name="threat-explorer-and-real-time-detections"></a>威胁资源管理器和实时检测
 
 如果您的组织具有[Office 365 高级威胁防护](office-365-atp.md)(OFFICE 365 ATP), 并且您拥有[必要的权限](#required-licenses-and-permissions), 则您可以使用**资源管理器**或**实时检测**(以前的*实时报告*)。[请参阅新增功能](#new-features-in-real-time-detections)! 在安全 & 合规性中心中, 转到 "**威胁管理**", 然后选择 "**浏览器**" 或 "**实时检测**"。 
 
@@ -42,7 +42,7 @@ ms.locfileid: "36054754"
 
 ## <a name="new-features-in-real-time-detections"></a>实时检测中的新功能
 
-资源管理器/实时检测添加新的新字段, 旨在为您提供电子邮件领域的更完整的详细信息。 此更改的目标部分是使搜索更易于进行安全操作人员, 但最终结果是了解问题电子邮件的位置。
+浏览器 (和实时检测) 添加了新的新字段, 旨在为您提供电子邮件领域的更完整的信息。 此更改的目标部分是使搜索更易于进行安全操作人员, 但最终结果是了解问题电子邮件的位置。
 
 这是如何完成的？ 传递状态现已分为两列:
 
@@ -105,9 +105,9 @@ ms.locfileid: "36054754"
 
     报告将刷新, 以在报告下的 "URL" 选项卡上显示两个不同的 URL 表:
 
-   1. **上面的 url**是您已筛选出的邮件中包含的 url, 并且每个 URL 的电子邮件传递操作都会计数。 在网络钓鱼电子邮件视图中, 此列表通常包含合法的 Url。 攻击者在其邮件中加入了好和坏的 Url, 以尝试传递它们, 但它们会使用户更有趣地单击恶意链接。 Url 表按总电子邮件计数进行排序 (注意: 此列不显示为简化视图)。
+   - **上面的 url**是您已筛选出的邮件中包含的 url, 并且每个 URL 的电子邮件传递操作都会计数。 在网络钓鱼电子邮件视图中, 此列表通常包含合法的 Url。 攻击者在其邮件中加入了好和坏的 Url, 以尝试传递它们, 但它们会使用户更有趣地单击恶意链接。 Url 表按总电子邮件计数进行排序 (注意: 此列不显示为简化视图)。
 
-   2. 单击 "**上**一条" 可将已单击的安全链接包装的 url 按总点击次数排序 (此列也不显示为简化视图)。 "总计计数依据" 列指示安全链接单击每个单击的 URL 的 "已判定计数"。 在网络钓鱼电子邮件视图中, 这通常是可疑或恶意的 Url, 但可能包含网络钓鱼邮件中的干净 Url。 URL 单击未打开的链接将不会显示在此处。
+   - 单击 "**上**一条" 可将已单击的安全链接包装的 url 按总点击次数排序 (此列也不显示为简化视图)。 "总计计数依据" 列指示安全链接单击每个单击的 URL 的 "已判定计数"。 在网络钓鱼电子邮件视图中, 这通常是可疑或恶意的 Url, 但可能包含网络钓鱼邮件中的干净 Url。 URL 单击未打开的链接将不会显示在此处。
    
    这两个 Url 表通过传递操作和位置显示网络钓鱼电子邮件中的前几个 Url, 并显示已阻止 (或在出现警告的情况下访问) 的 URL 单击, 以便您可以了解用户收到的潜在错误链接以及用户的交互情况。 在这里, 你可以进行进一步分析。 例如, 在图表下方, 您可以看到在组织的环境中被阻止的电子邮件中的最高 Url。
    
@@ -117,11 +117,11 @@ ms.locfileid: "36054754"
 
 ## <a name="review-email-messages-reported-by-users"></a>查看用户报告的电子邮件
 
-假设您想要查看您的组织中的用户使用[Outlook 和 web 上的 outlook 的报告邮件外接程序](enable-the-report-message-add-in.md)报告为垃圾邮件、非垃圾邮件或网络钓鱼的电子邮件。 为此, 请使用[电子邮件 >](threat-explorer-views.md#email--user-reported)浏览器的用户报告视图 (或实时检测)。
+假设您想要查看您的组织中的用户使用[Outlook 和 web 上的 outlook 的报告邮件外接程序](enable-the-report-message-add-in.md)报告为垃圾邮件、非垃圾邮件或网络钓鱼的电子邮件。 若要执行此操作, 请使用 "[电子邮件 > 提交](threat-explorer-views.md#email--submissions)" 浏览器 (或实时检测)。
 
 1. 在 "安全性 & 合规性中心[https://protection.office.com](https://protection.office.com)() 中, 选择"**威胁管理** > **资源管理器**"(或"**实时检测**")。 (此示例使用 Explorer。)
 
-2. 在 "**视图**" 菜单中, 选择 "**电子邮件** > **用户报告**"。<br/>![浏览器的视图菜单](media/ExplorerViewMenuEmailUserReported.png)<br/>
+2. 在 "**视图**" 菜单中, 选择 "**电子邮件** > **提交**"。<br/>![浏览器的视图菜单](media/ExplorerViewMenuEmailUserReported.png)<br/>
 
 3. 单击 "**发件人**", 然后选择 "**基本** > **报告类型**"。
 
@@ -170,8 +170,7 @@ ms.locfileid: "36054754"
 - [Permissions in the Office 365 Security &amp; Compliance Center](permissions-in-the-security-and-compliance-center.md)
 - [Exchange Online 中的功能权限](https://docs.microsoft.com/exchange/permissions-exo/feature-permissions)
   
-## <a name="some-differences-between-real-time-detection-and-threat-exporter"></a>实时检测和威胁导出程序之间存在一些差异。
+## <a name="some-differences-between-threat-exporter-and-real-time-detections"></a>威胁导出程序和实时检测的区别
 
- - **实时检测报告**随 atp P1 订阅一起提供, 而**威胁资源管理器**附带 atp P2。
- - **实时检测**报告允许您实时显示检测, 而威胁资源管理器报告可让您在给定攻击中查看更多详细信息。
- - **威胁资源管理器**报告提供了不同的报告集, 可增强您对**实时检测**程序报告的体验。
+ - Office 365 ATP 计划1中提供了**实时检测**报告, 而**威胁浏览器**在 office 365 atp 计划2中可用。
+ - **实时检测**报告允许你实时查看检测。 **威胁资源管理器**也会执行此功能, 但也允许您查看给定攻击的其他详细信息。

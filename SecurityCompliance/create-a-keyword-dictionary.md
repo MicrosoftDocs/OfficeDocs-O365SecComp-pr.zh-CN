@@ -1,7 +1,7 @@
 ---
 title: 创建关键字词典
-ms.author: deniseb
-author: denisebmsft
+ms.author: chrfox
+author: chrfox
 manager: laurawi
 audience: Admin
 ms.topic: article
@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 标识敏感信息有时需要查找关键字，尤其是在标识通用内容（如与医疗保健相关的通信）或不当/露骨语言时。虽然可以在敏感信息类型中创建关键字列表，但关键字列表的大小受限，且必须修改 XML 才能创建或编辑它们。借助关键字词典，可以更大规模地轻松管理关键字（每个词典最多支持 100,000 个关键字）。
-ms.openlocfilehash: 9fcd1504104f367d177d0cc835736d728f36c277
-ms.sourcegitcommit: 0d5a863f48914eeaaf29f7d2a2022618de186247
+ms.openlocfilehash: 5e99cad328115ad6b49982ea4c5749cdea6e43ed
+ms.sourcegitcommit: 7a0cb7e1da39fc485fc29e7325b843d16b9808af
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34077568"
+ms.lasthandoff: 08/07/2019
+ms.locfileid: "36230786"
 ---
 # <a name="create-a-keyword-dictionary"></a>创建关键字词典
 
@@ -39,7 +39,7 @@ Office 365 中的数据丢失防护 (DLP) 可以识别、监视和保护您的�
 
 使用以下步骤创建和导入自定义词典关键字：
 
-1. 连接到安全 & 合规性中心 ([https://protection.office.com](https://protection.office.com))。
+1. 连接到安全 & 合规中心 ([https://protection.office.com](https://protection.office.com))。
 
 2. 导航到 **“分类”>“敏感信息类型”**。
 

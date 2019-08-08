@@ -1,7 +1,7 @@
 ---
 title: 启用报表消息加载项
-ms.author: deniseb
-author: denisebmsft
+ms.author: tracyp
+author: msfttracyp
 manager: dansimp
 ms.date: 03/26/2019
 audience: Admin
@@ -15,12 +15,12 @@ ms.assetid: 4250c4bc-6102-420b-9e0a-a95064837676
 ms.collection:
 - M365-security-compliance
 description: 了解如何为单个用户或您的整个组织启用 Outlook 和 web 上的 outlook 和 Outlook 网页版报告消息外接程序。
-ms.openlocfilehash: 2c1fe3afd52afed17327a4ad2a5a493721b541fd
-ms.sourcegitcommit: 32ecff689ae32c59a39b7633ca0f36a304e7516e
+ms.openlocfilehash: 62fcb909dfcc8c7f613c57d0e1368c44856a1d99
+ms.sourcegitcommit: 7a0cb7e1da39fc485fc29e7325b843d16b9808af
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/09/2019
-ms.locfileid: "35599968"
+ms.lasthandoff: 08/07/2019
+ms.locfileid: "36230716"
 ---
 # <a name="enable-the-report-message-add-in"></a>启用报表消息加载项
 

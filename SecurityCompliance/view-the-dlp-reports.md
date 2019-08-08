@@ -1,7 +1,7 @@
 ---
 title: 查看数据丢失防护报告
-ms.author: deniseb
-author: denisebmsft
+ms.author: chrfox
+author: chrfox
 manager: laurawi
 ms.date: 6/7/2018
 audience: Admin
@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 使用 Office 365 中的 DLP 报告, 您可以快速查看 DLP 策略匹配、覆盖或误报的数量;查看它们是按时间趋势上升还是下降;以不同的方式筛选报表;并在图表上的某一行上选择一个点, 以查看其他详细信息。
-ms.openlocfilehash: edca8ad8ae970453e6baf9c1910e17cc62568af5
-ms.sourcegitcommit: 0d5a863f48914eeaaf29f7d2a2022618de186247
+ms.openlocfilehash: f3161854a19f9f9a04390eec508ae43e92119f96
+ms.sourcegitcommit: 7a0cb7e1da39fc485fc29e7325b843d16b9808af
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34077298"
+ms.lasthandoff: 08/07/2019
+ms.locfileid: "36230366"
 ---
 # <a name="view-the-reports-for-data-loss-prevention"></a>查看数据丢失防护报告
 
@@ -73,11 +73,11 @@ ms.locfileid: "34077298"
   
 ## <a name="permissions-for-dlp-reports"></a>DLP 报告的权限
 
-若要在 Security & 合规性中心中查看 DLP 报告, 您必须分配:
+若要在安全 & 合规性中心中查看 DLP 报告, 您必须分配:
 
 - Exchange 管理中心中的**安全读者**角色。 默认情况下, 将此角色分配给 Exchange 管理中心中的 "组织管理" 和 "安全读者" 角色组。
 
-- Security & 合规性中心中**仅查看 DLP 合规性管理**角色。 默认情况下, 将此角色分配给安全 & 合规中心中的合规性管理员、组织管理、安全管理员和安全读者角色组。
+- Security & 合规性中心中**仅查看 DLP 合规性管理**角色。 默认情况下, 将此角色分配给安全性 & 合规性中心中的合规性管理员、组织管理、安全管理员和安全读者角色组。
 
 - Exchange 管理中心中的 "**仅查看收件人**" 角色。 默认情况下, 将此角色分配给 Exchange 管理中心中的合规性管理、组织管理和仅查看组织管理角色组。
 

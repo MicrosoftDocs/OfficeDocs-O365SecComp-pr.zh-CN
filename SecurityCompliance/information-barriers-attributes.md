@@ -1,7 +1,7 @@
 ---
 title: 信息屏障策略的属性
-ms.author: deniseb
-author: denisebmsft
+ms.author: chrfox
+author: chrfox
 manager: laurawi
 ms.date: 07/08/2019
 audience: ITPro
@@ -11,12 +11,12 @@ ms.collection:
 - M365-security-compliance
 localization_priority: None
 description: 使用本文作为对可在信息屏障策略中使用的各种属性的参考。
-ms.openlocfilehash: 1e2e183da350308a57fa5d627b4867b9b3d30cee
-ms.sourcegitcommit: a6f046f1529b0515f4f0e918a19ec83f4138b871
+ms.openlocfilehash: 4198728d412062edced6238604b2b891da22aeac
+ms.sourcegitcommit: 7a0cb7e1da39fc485fc29e7325b843d16b9808af
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/08/2019
-ms.locfileid: "35587061"
+ms.lasthandoff: 08/07/2019
+ms.locfileid: "36230436"
 ---
 # <a name="attributes-for-information-barrier-policies"></a>信息屏障策略的属性
 
