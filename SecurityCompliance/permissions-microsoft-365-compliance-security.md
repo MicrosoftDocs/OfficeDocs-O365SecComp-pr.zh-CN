@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 使用 Microsoft 365 安全中心或 Microsoft 365 合规中心，可以集中管理与安全或合规性相关的所有任务的权限。
-ms.openlocfilehash: e08c082513a0ed382ca6b208082d38f1813636ce
-ms.sourcegitcommit: 97b9f88b9beee23de13ecf6d0759ac0fad5cf08d
+ms.openlocfilehash: 99a50d625fb503fd12514dde39e0ffe01ea97a5e
+ms.sourcegitcommit: 6122eb026c558a5126c40845e656fbb0c40cb32a
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/02/2019
-ms.locfileid: "36168287"
+ms.lasthandoff: 08/06/2019
+ms.locfileid: "36222772"
 ---
 # <a name="permissions-in-the-microsoft-365-compliance-center-and-microsoft-365-security-center"></a>Microsoft 365 合规中心和 Microsoft 365 安全中心中的权限
 
@@ -66,7 +66,7 @@ Microsoft 365 合规中心和 Microsoft 365 安全中心中显示的角色均为
 
 具有此角色的用户有权保护和跟踪 Microsoft 365 合规中心、Microsoft 365 管理中心和 Azure 中的数据。 这些用户还可以管理 Exchange 管理中心、Compliance Manager、Teams 和 Skype for Business 管理中心内的所有功能，并可创建适用于 Azure 和 Microsoft 365 的支持票证。
 
-|**在此服务中...**|**合规性管理员可以...**|
+|**在此服务中...**|**合规性数据管理员可以...**|
 |:-----|:-----|
 |[**Microsoft 365 合规性中心**](https://compliance.microsoft.com/)|跨 Microsoft 365 服务保护和管理组织数据。 <br/><br/> 管理合规性警报。 <br/><br/> 管理敏感度标签|
 |[**合规性管理器**](https://docs.microsoft.com/office365/securitycompliance/meet-data-protection-and-regulatory-reqs-using-microsoft-cloud)|跟踪、分配并验证组织的法规合规性活动。|
@@ -78,7 +78,7 @@ Microsoft 365 合规中心和 Microsoft 365 安全中心中显示的角色均为
 
 具有此角色的用户有权管理 Microsoft 365 安全中心、Azure Active Directory Identity Protection、Azure 信息保护和 Office 365 安全与合规中心中与安全相关的功能。
 
-|**在此服务中...**|**合规性管理员可以...**|
+|**在此服务中...**|**安全管理员...**|
 |:-----|:-----|
 |[**Microsoft 365 安全中心**](https://security.microsoft.com/)|跨 Microsoft 365 服务监视与安全相关的策略。 <br/><br/>  管理安全威胁和警报。 <br/><br/> 查看报告。 <br/><br/> 管理敏感度标签。|
 |**Identity Protection 中心**|执行“安全读者”角色可以执行的所有操作，此外，还执行所有 Identity Protection 中心操作，但不可重置密码。|
@@ -95,7 +95,7 @@ Microsoft 365 合规中心和 Microsoft 365 安全中心中显示的角色均为
 
 具有此角色的用户可以管理警报，对安全相关的功能具有全局只读访问权限，包括 Microsoft 365 安全中心、Azure Active Directory、Identity Protection、Privileged Identity Management 中的所有信息，并且能够阅读 Azure Active Directory 登录报告和审核日志，还授予了对 Office 365 安全与合规中心的只读权限。
 
-|**在此服务中...**|**合规性管理员可以...**|
+|**在此服务中...**|**安全操作员可以...**|
 |:-----|:-----|
 |[**Microsoft 365 安全中心**](https://security.microsoft.com/)|执行“安全读者”角色可执行的所有操作。 <br/><br/> 查看、调查和响应安全警报。|
 |**Identity Protection 中心**（即将支持）|执行“安全读者”角色可执行的所有操作。|
@@ -110,7 +110,7 @@ Microsoft 365 合规中心和 Microsoft 365 安全中心中显示的角色均为
 
 具有此角色的用户对安全相关的功能具有全局只读访问权限，包括 Microsoft 365 安全中心、Azure Active Directory、Identity Protection、Privileged Identity Management 中的所有信息，并且能够阅读 Azure Active Directory 登录报告和审核日志，还授予了对 Office 365 安全与合规中心的只读权限。
 
-|**在此服务中...**|**合规性管理员可以...**|
+|**在此服务中...**|**安全读者可以...**|
 |:-----|:-----|
 |[**Microsoft 365 安全中心**](https://security.microsoft.com/)|跨 Microsoft 365 服务查看与安全相关的策略。 <br/><br/> 查看安全威胁和警报。 <br/><br/> 查看报告。|
 |**Identity Protection 中心**|阅读有关安全功能的所有安全报告和设置信息：反垃圾邮件、加密、数据丢失防护 (DLP)、反恶意软件、高级威胁防护 (ATP)、反网络钓鱼和邮件流规则（也称为传输规则）。|
