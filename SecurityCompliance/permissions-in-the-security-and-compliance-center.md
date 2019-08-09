@@ -15,12 +15,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 管理员可以了解 Office 365 安全 & 合规性中心中提供的权限。
-ms.openlocfilehash: 285fb17a33326126ead3640790f44f4dd6ff5756
-ms.sourcegitcommit: 32ecff689ae32c59a39b7633ca0f36a304e7516e
+ms.openlocfilehash: 7b99e0d4234144ce7806d276f9debfe12a28136a
+ms.sourcegitcommit: c8ea7c0900e69e69bd5c735960df70aae27690a5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/09/2019
-ms.locfileid: "35600558"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "36258575"
 ---
 # <a name="permissions-in-the-office-365-security--compliance-center"></a>Office 365 安全与合规中心的权限
 
@@ -56,7 +56,6 @@ Security & 合规性中心包含为您向其分配人员所需的最常见任务
 |**合规性数据管理员**|成员可以管理设备管理、数据保护、数据丢失防护、报告和保留的设置。|合规性管理员 <br/><br/> 合规性搜索 <br/><br/> DLP 合规性管理 <br/><br/> 设备管理 <br/><br/> 处置管理 <br/><br/> IB 合规性管理 <br/><br/> 管理通知 <br/><br/> 组织配置 <br/><br/> RecordManagement <br/><br/> 保留管理 <br/><br/> 敏感度标签管理员 <br/><br/> 仅查看审核日志 <br/><br/> 仅查看 DLP 合规性管理 <br/><br/> 仅查看设备管理 <br/><br/> 仅查看 IB 合规性管理 <br/><br/> 仅查看管理通知 <br/><br/> 仅查看收件人 <br/><br/> 仅查看记录管理 <br/><br/> 仅查看保留管理|
 |**数据调查人员**|成员可以对邮箱、SharePoint 网站和 OneDrive 帐户执行搜索。|通 <br/><br/> 合规性搜索 <br/><br/> Custodian <br/><br/> 数据调查管理 <br/><br/> 导出<br/><br/> 预览 <br/><br/> RMS 解密 <br/><br/> 审阅|
 |**电子数据展示管理员**|成员可以执行搜索并将邮箱、SharePoint Online 网站和 OneDrive for Business 位置置于保留状态。 成员还可以创建和管理电子数据展示事例, 在案例中添加和删除成员, 创建和编辑与事例关联的内容搜索, 以及 Office 365 高级电子数据展示中的访问大小写数据。 <br/><br/> 电子数据展示管理员是电子数据展示管理员角色组的成员，该成员已分配有其他权限。 除了电子数据展示管理器可以执行的任务外, 电子数据展示管理员还可以执行以下操作: <br/>•查看组织中的所有电子数据展示案例。 <br/>•在将自己添加为事例的成员之后管理任何电子数据展示事例。 <br/><br/> 电子数据展示管理器和电子数据展示管理员的主要区别在于, 电子数据展示管理员可以访问安全 & 合规中心中的 "**电子数据展示事例**" 页面上列出的所有事例。 电子数据展示管理器只能访问他们创建的案例或其成员的情况。 有关使用户成为电子数据展示管理员的详细信息, 请参阅[在 Office 365 安全 & 合规中心中分配电子数据展示权限](assign-ediscovery-permissions.md)。|案例管理 <br/><br/> 通 <br/><br/> 合规性搜索 <br/><br/> Custodian <br/><br/> 导出 <br/><br/> 同时 <br/><br/> 预览 <br/><br/> RMS 解密 <br/><br/> 审阅|
-|**全局读者**|成员具有对报表、警报的只读访问权限, 并且可以查看所有配置和设置。<br/><br/> 全局读取器和安全读取器的主要区别在于, 全局读取器可以访问**配置和设置**。|仅查看保留管理 <br/><br/> 仅查看管理通知 <br/><br/> 仅查看设备管理 <br/><br/> 仅查看 IB 合规性管理 <br/><br/> 仅查看 DLP 合规性管理 <br/><br/> 安全读者 <br/><br/> 服务保证视图 <br/><br/> 仅查看审核日志 <br/><br/> 仅查看记录管理 <br/><br/> 仅查看收件人|
 |**邮件流管理员**|成员可以监视和查看安全 & 合规性中心中的邮件流见解和报告。 全局管理员可以向此组添加普通用户, 但是, 如果该用户不是 Exchange 管理员组的成员, 则该用户将无法访问 Exchange 管理员相关的任务。|仅查看收件人|
 |**组织管理**<sup>1</sup>|成员可以控制访问安全 & 合规性中心中的功能的权限, 还可以管理设备管理、数据丢失防护、报告和保留的设置。 <br/><br/> 请注意, 若要使非全局管理员的用户能够查看由 MDM for Office 365 管理的设备的列表, 并对这些设备执行操作 (例如, 从 MDM for Office 365 中注销设备), 则该用户必须是 Exchange 管理员。 <br/><br/> Office 365 全局管理员将自动添加为此角色组的成员。|审核日志 <br/><br/> 案例管理 <br/><br/> 合规性管理员 <br/><br/> 合规性搜索 <br/><br/> DLP 合规性管理 <br/><br/> 设备管理 <br/><br/> 处置管理 <br/><br/> 同时 <br/><br/> IB 合规性管理 <br/><br/> 管理通知 <br/><br/> 组织配置 <br/><br/> RecordManagement <br/><br/> 保留管理 <br/><br/> 角色管理 <br/><br/> 搜索和清除 <br/><br/> Security Administrator <br/><br/> 安全读者 <br/><br/> 敏感度标签管理员 <br/><br/> 服务保证视图 <br/><br/> 仅查看审核日志 <br/><br/> 仅查看 DLP 合规性管理 <br/><br/> 仅查看设备管理 <br/><br/> 仅查看 IB 合规性管理 <br/><br/> 仅查看管理通知 <br/><br/> 仅查看收件人 <br/><br/> 仅查看记录管理 <br/><br/> 仅查看保留管理|
 |**记录管理**|成员可以管理和处置记录内容。|审核日志 <br/><br/> RecordManagement <br/><br/> 保留管理|

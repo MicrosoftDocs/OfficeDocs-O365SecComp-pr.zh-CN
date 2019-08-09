@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: 本文介绍了 Microsoft 365 中的高级电子数据展示的新版本。
-ms.openlocfilehash: 45c7a35a27fea3891270ee72b1fd528a357ad825
-ms.sourcegitcommit: 32ecff689ae32c59a39b7633ca0f36a304e7516e
+ms.openlocfilehash: d3abd49d3ba336f5896887732ea0c37b59265bc9
+ms.sourcegitcommit: c8ea7c0900e69e69bd5c735960df70aae27690a5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/09/2019
-ms.locfileid: "35598728"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "36258555"
 ---
 # <a name="overview-of-the-advanced-ediscovery-solution-in-microsoft-365"></a>Microsoft 365 中的高级电子数据展示解决方案概述
 
@@ -94,4 +94,4 @@ Microsoft 365 中的高级电子数据展示解决方案构建在 Office 365 中
 
 ## <a name="configuring-case-settings"></a>配置事例设置
 
-使用 "**设置**" 选项卡配置大小写设置。 这包括向事例添加成员、关闭或删除事例以及配置搜索和分析设置。 有关详细信息, 请参阅[在高级电子数据展示中配置事例设置](configuring-case-settings-ediscovery20.md)。
+使用 "**设置**" 选项卡配置大小写设置。 这包括向事例添加成员、关闭或删除事例以及配置搜索和分析设置。
