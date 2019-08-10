@@ -16,12 +16,12 @@ search.appverid:
 ms.custom: ''
 ms.assetid: c2112ce8-1c4b-424f-b200-59e161db2d21
 description: 摘要：在政治宣传活动开发/测试环境中创建公共、专用、敏感和高度机密的 SharePoint Online 团队网站。
-ms.openlocfilehash: 3e0a79a0e521ab193685511cef59bcfa3fa68896
-ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
+ms.openlocfilehash: bade24bbe0ebcf56007a7b5650ee5a55fc3697b6
+ms.sourcegitcommit: 6122eb026c558a5126c40845e656fbb0c40cb32a
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "34151154"
+ms.lasthandoff: 08/06/2019
+ms.locfileid: "36053109"
 ---
 # <a name="create-team-sites-in-a-political-campaign-devtest-environment"></a>在政治宣传活动开发/测试环境中创建团队网站
 
@@ -41,7 +41,7 @@ ms.locfileid: "34151154"
     
 2. 在“Microsoft Office 主页”标签页中，单击“管理员”磁贴********。
     
-3. 在浏览器的新“Office 管理中心”**** 标签页中，单击“管理中心”>“安全&amp;合规性”****。
+3. 在浏览器的新“**Microsoft 365 管理中心**”标签页中，单击 **“管理中心”>“安全&amp;合规性”**。
     
 4. 在浏览器的新“主页 -安全&amp;合规性”**** 标签页中，单击“分类”>“标签”****。
     
