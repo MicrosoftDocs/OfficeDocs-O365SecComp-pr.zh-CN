@@ -345,7 +345,7 @@
 #### [将数据添加到另一审阅集](compliance20/add-data-to-review-set-from-another-review-set.md)
 #### [管理负载集](compliance20/manage-load-sets.md)
 
-### [审阅事例数据](compliance20/reviewing-data-in-review-set.md)
+### 审阅事例数据
 #### [查看审阅集中的文档](compliance20/view-documents-in-review-set.md)
 #### [查询审阅集中的数据](compliance20/review-set-search.md)
 #### [标记审阅集中的文档](compliance20/tagging-documents.md)
@@ -363,7 +363,7 @@
 
 ### [管理作业](compliance20/managing-jobs-ediscovery20.md)
 
-### [配置事例设置](compliance20/configuring-case-settings-ediscovery20.md)
+### 配置事例设置
 #### [关闭或删除事例](compliance20/close-or-delete-case.md)
 #### [向/从事例中添加或删除成员](compliance20/add-remove-members.md)
 #### [配置搜索和分析设置](compliance20/configure-search-analytics-settings.md)
