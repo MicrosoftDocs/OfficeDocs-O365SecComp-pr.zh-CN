@@ -16,12 +16,12 @@ ms.assetid: e3c6df61-8513-499d-ad8e-8a91770bff63
 ms.collection:
 - M365-security-compliance
 description: 我们不断将新功能添加到 Microsoft 365 合规性中心, 修复我们了解的问题, 并根据你的反馈进行更改。 了解我们在本月所做的操作。
-ms.openlocfilehash: 1c51edbe5c6ac29d174fe0277c3f17628cdaf229
-ms.sourcegitcommit: ea86a64cf19f07952be4c16c89e0389b4ba3768e
+ms.openlocfilehash: 22c3253f3c529ff361fc1984f6bc82de8d72b094
+ms.sourcegitcommit: 28c104fb6a72d624fab5ac6178b5b0df9fa81484
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/10/2019
-ms.locfileid: "36286263"
+ms.lasthandoff: 08/12/2019
+ms.locfileid: "36297802"
 ---
 # <a name="whats-new-in-the-microsoft-365-compliance-center"></a>Microsoft 365 合规性中心的新增功能
 
@@ -46,10 +46,6 @@ ms.locfileid: "36286263"
 不会再滚动浏览报告的海洋, 以查找您需要的报告。 您现在可以搜索报告 (基于其标题), 并筛选类别 (如 "标签" 和 "合规性") 以及 "Office 365" 和 "Microsoft 云应用安全" 等源。
 
 ![包含已应用筛选器的报表的搜索和筛选按钮的屏幕捕获](media/mcc_report_filtering.png)
-
-### <a name="partners-admin-on-behalf-of-aobo-permissions"></a>合作伙伴: 代表 (AOBO) 权限的管理员
-
-适用于 Microsoft 认证合作伙伴的好消息。 具有代表 (AOBO) 权限的合作伙伴现在可以通过将客户的域添加到 URL 来访问 Microsoft 365 安全与合规中心。 例如：`https://security.microsoft.com/contoso.com`。
 
 ### <a name="help-content"></a>帮助内容
 
