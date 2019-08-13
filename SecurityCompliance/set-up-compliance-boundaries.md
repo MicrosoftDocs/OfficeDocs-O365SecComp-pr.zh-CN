@@ -15,12 +15,12 @@ search.appverid:
 - MET150
 ms.assetid: 1b45c82f-26c8-44fb-9f3b-b45436fe2271
 description: 使用合规性边界在 Office 365 组织中创建用于控制电子数据展示管理器可搜索的用户内容位置的逻辑边界。 合规性边界使用搜索权限筛选 (也称为合规性安全筛选器) 控制特定用户可以搜索哪些邮箱、SharePoint 网站和 OneDrive 帐户。
-ms.openlocfilehash: d94835c457884b98e84f68db6536e8f3774af669
-ms.sourcegitcommit: c8ea7c0900e69e69bd5c735960df70aae27690a5
+ms.openlocfilehash: 44c157b8f155755c6a48830231074643a830f498
+ms.sourcegitcommit: 226adb6d05015da16138b315dd2f5b937bf4354d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "36258595"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36302421"
 ---
 # <a name="set-up-compliance-boundaries-for-ediscovery-investigations-in-office-365"></a>在 Office 365 中为电子数据展示调查设置合规性边界
 
@@ -107,7 +107,7 @@ ms.locfileid: "36258595"
 下面是用于创建用于合规性边界的搜索权限筛选器的语法。
 
 ```
-New-ComplianceSecurityFilter -FilterName <name of filter> -Users <role groups> -Filters "Mailbox_<Compliance attribute from Step 1>  -eq '<AttributeVale> '", "Site_ComplianceAttribute  -eq '<AttributeValue>' -or Site_Path -like '<SharePointURL> *'" -Action <Action >
+New-ComplianceSecurityFilter -FilterName <name of filter> -Users <role groups> -Filters "Mailbox_<ComplianceAttribute>  -eq '<AttributeVale> '", "Site_<ComplianceAttribute>  -eq '<AttributeValue>' -or Site_Path -like '<SharePointURL>*'" -Action <Action >
 ```
   
 以下是对命令中的每个参数的说明:
@@ -116,19 +116,22 @@ New-ComplianceSecurityFilter -FilterName <name of filter> -Users <role groups> -
     
 -  `Users`: 指定将此筛选器应用于其执行的内容搜索操作的用户或组。 对于合规性边界, 此参数指定要在其上创建筛选器的代理中创建的角色组 (您在步骤3中创建的角色组)。 注意这是一个多值参数, 因此您可以包含一个或多个角色组, 以逗号分隔。 
     
--  `Filters`: 指定筛选器的搜索条件。 对于合规性边界, 请定义以下筛选器: 每个筛选器适用于内容位置。 
+-  `Filters`: 指定筛选器的搜索条件。 对于合规性边界, 请定义以下筛选器。 每个应用于一个内容位置。 
     
-  -  `Mailbox`: 指定`Users`参数中定义的角色组可以搜索的邮箱。 对于合规性边界, *ComplianceAttribute*是您在步骤1和*AttributeValue*中标识的与指定机构相同的属性。 此筛选器允许角色组的成员仅搜索特定代理中的邮箱;例如, `"Mailbox_Department -eq 'FourthCoffee'"`。 
+    -  `Mailbox`: 指定`Users`参数中定义的角色组可以搜索的邮箱。 对于合规性边界, *ComplianceAttribute*是您在步骤1和*AttributeValue*中标识的与指定机构相同的属性。 此筛选器允许角色组的成员仅搜索特定代理中的邮箱;例如, `"Mailbox_Department -eq 'FourthCoffee'"`。 
     
-  -  `Site`: 指定`Users`参数中定义的角色组可以搜索的 OneDrive 帐户。 对于 OneDrive 筛选器, 请使用实际字符串`ComplianceAttribute`。 这将映射到您在步骤1中标识的相同属性, 并且由于您在步骤2中提交的支持请求而将其同步到 OneDrive 帐户。 *AttributeValue*指定代理。 此筛选器允许角色组的成员仅搜索特定代理中的 OneDrive 帐户;例如, `"Site_ComplianceAttribute -eq 'FourthCoffee'"`。
+    -  `Site`: 指定`Users`参数中定义的角色组可以搜索的 OneDrive 帐户。 对于 OneDrive 筛选器, 请使用实际字符串`ComplianceAttribute`。 这将映射到您在步骤1中标识的相同属性, 并且由于您在步骤2中提交的支持请求而将其同步到 OneDrive 帐户。 *AttributeValue*指定代理。 此筛选器允许角色组的成员仅搜索特定代理中的 OneDrive 帐户;例如, `"Site_ComplianceAttribute -eq 'FourthCoffee'"`。
     
-  -  `Site_Path`: 指定`Users`参数中定义的角色组可以搜索的 SharePoint 网站。 *SharePointURL*指定角色组成员可以搜索的代理中的站点;例如,`"Site_Path -like 'https://contoso.sharepoint.com/sites/FourthCoffee*'"`
+    -  `Site_Path`: 指定`Users`参数中定义的角色组可以搜索的 SharePoint 网站。 *SharePointURL*指定角色组成员可以搜索的代理中的站点;例如, `"Site_Path -like 'https://contoso.sharepoint.com/sites/FourthCoffee*'"`请注意`Site` , `Site_Path`筛选器由 **-或**运算符连接。
     
+     > [!NOTE]
+     > `Filters`参数的语法包含*筛选器列表*。 筛选器列表是包含邮箱筛选器和使用逗号分隔的网站筛选器的筛选器列表。 在上面的示例中, 请注意, 逗号分隔**Mailbox_ComplianceAttribute**和**Site_ComplianceAttribute**: `-Filters "Mailbox_<ComplianceAttribute>  -eq '<AttributeVale> '", "Site_ComplianceAttribute  -eq '<AttributeValue>' -or Site_Path -like '<SharePointURL>*'"`。 在运行内容搜索期间处理此筛选器时, 将从 "筛选器" 列表中创建两个搜索权限筛选器: 一个邮箱筛选器和一个网站筛选器。 使用筛选器列表的另一种方法是为每个代理创建两个单独的搜索权限筛选器: 针对邮箱属性的一个搜索权限筛选器和一个网站属性筛选器。 在这两种情况下, 结果都是相同的。 使用筛选器列表或创建单独的搜索权限筛选器是一个优先考虑事项。
+
 -  `Action`: 指定应用筛选器的合规性搜索操作的类型。 例如, 仅`-Action Search`当`Users`参数中定义的角色组的成员运行内容搜索时, 才会应用筛选器。 在这种情况下, 导出搜索结果时不会应用筛选器。 对于合规性边界, `-Action All`请使用, 以便将筛选器应用于所有搜索操作。 
     
     有关内容搜索操作的列表, 请参阅[Configure 权限筛选 For Content search](permissions-filtering-for-content-search.md#new-compliancesecurityfilter)中的 "new-compliancesecurityfilter" 一节。
-    
-以下是两个搜索权限筛选器的示例, 将创建这些筛选器以支持 Contoso 合规性边界方案。
+
+以下是两个搜索权限筛选器的示例, 将创建这些筛选器以支持 Contoso 合规性边界方案。 这两个示例都包含一个逗号分隔的筛选器列表, 其中邮箱和网站筛选器包含在相同的搜索权限筛选器中, 并用逗号分隔。
   
  **第四个咖啡**
 
