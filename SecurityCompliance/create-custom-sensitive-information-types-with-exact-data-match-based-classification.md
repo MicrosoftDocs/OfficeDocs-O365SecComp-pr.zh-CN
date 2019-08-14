@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 使用基于精确数据匹配的分类创建自定义敏感信息类型。
-ms.openlocfilehash: 2e353eb078df335d80f669a8cef64a19bd7d9584
-ms.sourcegitcommit: 0a0d9c1325b4b0581018c31037dcc707d3d679b4
+ms.openlocfilehash: 77a30f7db24e903e7d6859d10edb0cc186441494
+ms.sourcegitcommit: 28c104fb6a72d624fab5ac6178b5b0df9fa81484
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "36279225"
+ms.lasthandoff: 08/12/2019
+ms.locfileid: "36297760"
 ---
 # <a name="create-custom-sensitive-information-types-with-exact-data-match-based-classification"></a>使用基于精确数据匹配的分类创建自定义敏感信息类型
 
@@ -123,13 +123,13 @@ New-DlpEdmSchema -FileData $edmSchemaXml -Confirm:$true
 > [!NOTE]
 > 为 EDMSchema 更新新增内容可能需要10-60 分钟。 更新必须完成，然后才能执行使用这些新增操作的步骤。
 
-敏感信息数据库的架构现已定义，接下来是设置规则包。 继续到 [设置规则包](https://review.docs.microsoft.com/zh-CN/office365/securitycompliance/create-custom-sensitive-info-type-edm?branch=chrfox-o365seccomp-pr-working#set-up-a-rule-package)部分。
+敏感信息数据库的架构现已定义，接下来是设置规则包。 继续到 [设置规则包](#set-up-a-rule-package)部分。
 
 #### <a name="editing-the-schema-for-edm-based-classification"></a>编辑基于 EDM 的分类的架构
 
 如果想要更改 edm.xml 文件，例如更改要对基于 EDM 的分类使用的字段，请按照以下步骤操作：
 
-1. 编辑 edm.xml 文件（即本文的 [定义架构](https://review.docs.microsoft.com/zh-CN/office365/securitycompliance/create-custom-sensitive-info-type-edm?branch=chrfox-o365seccomp-pr-working#define-the-schema-for-your-database-of-sensitive-information)部分中讨论的文件）。 
+1. 编辑 edm.xml 文件（即本文的 [定义架构](#define-the-schema-for-your-database-of-sensitive-information)部分中讨论的文件）。 
 
 2. [连接到 Office 365 安全与合规中心 PowerShell](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell?view=exchange-ps)。
 
@@ -300,7 +300,7 @@ New-DlpSensitiveInformationTypeRulePackage -FileData $rulepack
 >[!NOTE]
 > 在开始此过程之前，请确保你是  *EDM\_DataUploaders* 安全组的成员和计算机上的本地管理员。
 
-1. 从 [https://go.microsoft.com/fwlink/?linkid=2088639](https://go.microsoft.com/fwlink/?linkid=2088639) 下载并安装 EDM 上载代理。 默认情况下，安装位置应为 C:\\Program Files\\Microsoft\\EdmUploadAgent。
+1. 下载并安装[EDM 上载代理](https://go.microsoft.com/fwlink/?linkid=2088639)。 默认情况下，安装位置应为 C:\\Program Files\\Microsoft\\EdmUploadAgent。
 
 2. 若要授权 EDM 上载代理，请打开 Windows 命令提示符（以管理员身份），然后运行以下命令：
 
@@ -340,9 +340,9 @@ New-DlpSensitiveInformationTypeRulePackage -FileData $rulepack
 
 你将看到数据存储区列表以及上次更新时间，类似于以下内容：
 
-继续设置 [刷新敏感信息数据库](https://review.docs.microsoft.com/zh-CN/office365/securitycompliance/create-custom-sensitive-info-type-edm?branch=chrfox-o365seccomp-pr-working#refreshing-your-sensitive-information-database)的流程和计划。
+继续设置 [刷新敏感信息数据库](#refreshing-your-sensitive-information-database)的流程和计划。
 
-此时，你已准备好将基于 EDM 的分类与 Microsoft 云服务一起使用。 例如，你可以 [使用基于 EDM 的分类设置 DLP 策略](https://review.docs.microsoft.com/zh-CN/office365/securitycompliance/create-custom-sensitive-info-type-edm?branch=chrfox-o365seccomp-pr-working#to-create-a-dlp-policy-with-edm)。
+此时，你已准备好将基于 EDM 的分类与 Microsoft 云服务一起使用。 例如，你可以 [使用基于 EDM 的分类设置 DLP 策略](#to-create-a-dlp-policy-with-edm)。
 
 #### <a name="refreshing-your-sensitive-information-database"></a>刷新敏感信息数据库
 
@@ -350,16 +350,16 @@ New-DlpSensitiveInformationTypeRulePackage -FileData $rulepack
 
 1. 确定刷新敏感信息数据库的流程和频率（每天或每周）。
 
-2. 将敏感数据重新导出到应用（如 Microsoft Excel），并以 .csv 格式保存文件。 在按照 [创建索引并上传敏感数据](https://review.docs.microsoft.com/zh-CN/office365/securitycompliance/create-custom-sensitive-info-type-edm?branch=chrfox-o365seccomp-pr-working#index-and-upload-the-sensitive-data)中所述的步骤执行操作时，让所使用的文件名和位置保持不变。
+2. 将敏感数据重新导出到应用（如 Microsoft Excel），并以 .csv 格式保存文件。 在按照 [创建索引并上传敏感数据](#index-and-upload-the-sensitive-data)中所述的步骤执行操作时，让所使用的文件名和位置保持不变。
 
 > [!NOTE]
 > 如果 .csv 文件的结构（字段名称）未发生更改，则刷新数据时无需对数据库架构文件进行任何更改。 但是，如果必须进行更改，请确保相应地编辑数据库架和规则包。
 
-3. 使用 [任务计划程序](https://docs.microsoft.com/windows/desktop/TaskSchd/task-scheduler-start-page)自动执行 [创建索引并上载敏感数据](https://review.docs.microsoft.com/zh-CN/office365/securitycompliance/create-custom-sensitive-info-type-edm?branch=chrfox-o365seccomp-pr-working#index-and-upload-the-sensitive-data)流程中的步骤 2 和 3。   你可以使用多种方法来计划任务：
+3. 使用 [任务计划程序](https://docs.microsoft.com/windows/desktop/TaskSchd/task-scheduler-start-page)自动执行 [创建索引并上载敏感数据](#index-and-upload-the-sensitive-data)流程中的步骤 2 和 3。   你可以使用多种方法来计划任务：
 
 | **方法**             | **需执行的操作**                                                                                                                                                                                                                                                                                                                                                                                                                     |
 | ---------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Windows PowerShell     | 请参阅本文中的 [ScheduledTasks](https://docs.microsoft.com/powershell/module/scheduledtasks/?view=win10-ps) 文档和 [示例 PowerShell 脚本](https://review.docs.microsoft.com/zh-CN/office365/securitycompliance/create-custom-sensitive-info-type-edm?branch=chrfox-o365seccomp-pr-working#example-powershell-script-for-task-scheduler)  |
+| Windows PowerShell     | 请参阅本文中的 [ScheduledTasks](https://docs.microsoft.com/powershell/module/scheduledtasks/?view=win10-ps) 文档和 [示例 PowerShell 脚本](#example-powershell-script-for-task-scheduler)  |
 | 任务计划程序 API     | 请参阅 [任务计划程序](https://docs.microsoft.com/windows/desktop/TaskSchd/using-the-task-scheduler)文档                                                                                                                                                                                                                                                                                 |
 | Windows 用户界面 | 在 Windows 中单击“开始”，然后键入 Task Scheduler。 **** 然后，在结果列表中，右键单击“任务计划程序”，然后选择“以管理员身份运行”。 **** ****                                                                                                                                                                                                                                                                           |
 
@@ -494,7 +494,7 @@ Office 365 DLP for Exchange Online（电子邮件）、OneDrive for Business（�
 [Microsoft Cloud App Security](https://docs.microsoft.com/cloud-app-security)
 
 
-  [New-DlpEdmSchema](https://docs.microsoft.com/zh-CN/powershell/module/exchange/policy-and-compliance-dlp/new-dlpedmsschema?view=exchange-ps)
+  [New-DlpEdmSchema](https://docs.microsoft.com/zh-CN/powershell/module/exchange/policy-and-compliance-dlp/new-dlpedmschema?view=exchange-ps)
 
 ## <a name="feedback"></a>反馈
 已启用 GitHub 反馈，但是添加问题仅适用于公共网站。
