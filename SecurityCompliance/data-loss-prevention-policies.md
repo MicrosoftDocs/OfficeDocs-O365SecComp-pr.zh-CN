@@ -15,17 +15,17 @@ ms.collection:
 search.appverid:
 - MET150
 description: 通过安全 &amp; 合规中心的数据丢失防护 (DLP) 策略，可在 Office 365 内识别、监视和自动保护敏感数据。
-ms.openlocfilehash: 1f82af2c61138fd33f849a5cb13fcee1259cafd7
-ms.sourcegitcommit: 7a0cb7e1da39fc485fc29e7325b843d16b9808af
+ms.openlocfilehash: 9209adfa913b753ccbb665959cd165d3f2362d0a
+ms.sourcegitcommit: 19939bc577937ff5e423500e9bedc0c29f729e20
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/07/2019
-ms.locfileid: "36230766"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36393912"
 ---
 # <a name="overview-of-data-loss-prevention"></a>数据丢失防护概述
 
 > [!NOTE]
-> 对于具有 Office 365 高级合规版许可证的用户，最近为 Microsoft Teams 聊天和频道消息添加了数据丢失防护功能。它是一种独立选项，包含在 Office 365 E5 和 Microsoft 365 E5 合规版中。 若要了解有关许可要求的详细信息，请参阅 [Microsoft 365 租户级服务许可指南](https://docs.microsoft.com/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance)。
+> 对于具有 Office 365 高级合规版许可证的用户，最近为 Microsoft Teams 聊天和频道消息添加了数据丢失防护功能。它是一种独立选项，包含在 Office 365 E5 和 Microsoft 365 E5 合规版中。 要详细了解许可要求，请参阅 [Microsoft 365 租户级服务许可指南](https://docs.microsoft.com/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance)。
 
 为了符合业务标准和行业法规，组织必须保护敏感信息，防止由于疏忽而泄露。 敏感信息包括财务数据或个人身份信息 (PII)，如信用卡号、社会保险号或健康记录。 通过 Office 365 安全 &amp; 合规中心的数据丢失防护 (DLP) 策略，可在 Office 365 内识别、监视和自动保护敏感数据。
   
