@@ -13,12 +13,12 @@ ms.assetid: 56fee1c7-dc37-470e-9b09-33fff6d94617
 ms.collection:
 - M365-security-compliance
 description: 摘要： 本文介绍了如何结合使用域密钥识别邮件 (DKIM) 和 Office 365，从而确保目标电子邮件系统信任从自定义域发送的邮件。
-ms.openlocfilehash: 40b7505b18db697ffb47932fba0f10c6a53b340c
-ms.sourcegitcommit: 6122eb026c558a5126c40845e656fbb0c40cb32a
+ms.openlocfilehash: d47a1e629952d65acdd9ecf05e4e521684775ae9
+ms.sourcegitcommit: d4acce11a26536b9d6ca71ba4933fc95136198a4
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/06/2019
-ms.locfileid: "36222742"
+ms.lasthandoff: 08/15/2019
+ms.locfileid: "36407921"
 ---
 # <a name="use-dkim-to-validate-outbound-email-sent-from-your-custom-domain-in-office-365"></a>使用 DKIM 在 Office 365 中验证从自定义域发送的出站电子邮件
 
@@ -169,7 +169,7 @@ TTL:                3600
 2. 运行以下命令：
     
     ```
-    New-DkimSigningConfig -DomainName <domain> -Enabled $true
+    Set-DkimSigningConfig -DomainName <domain> -Enabled $true
     ```
 
    其中，_domain_ 是要对其启用 DKIM 签名的自定义域名。 
@@ -177,7 +177,7 @@ TTL:                3600
    例如，对于域 contoso.com：
     
     ```
-    New-DkimSigningConfig -DomainName contoso.com -Enabled $true
+    Set-DkimSigningConfig -DomainName contoso.com -Enabled $true
     ```
 
 #### <a name="to-confirm-dkim-signing-is-configured-properly-for-office-365"></a>确认已为 Office 365 正确配置 DKIM 签名
