@@ -14,19 +14,19 @@ search.appverid:
 - MOE150
 - MET150
 description: 使用基于精确数据匹配的分类创建自定义敏感信息类型。
-ms.openlocfilehash: 77a30f7db24e903e7d6859d10edb0cc186441494
-ms.sourcegitcommit: 28c104fb6a72d624fab5ac6178b5b0df9fa81484
+ms.openlocfilehash: a937d5ccc947ee9322c5796cf49e9a8ff3eead16
+ms.sourcegitcommit: d4acce11a26536b9d6ca71ba4933fc95136198a4
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/12/2019
-ms.locfileid: "36297760"
+ms.lasthandoff: 08/15/2019
+ms.locfileid: "36407904"
 ---
 # <a name="create-custom-sensitive-information-types-with-exact-data-match-based-classification"></a>使用基于精确数据匹配的分类创建自定义敏感信息类型
 
 ## <a name="overview"></a>概述
 
 
-  [自定义敏感信息类型](https://review.docs.microsoft.com/zh-CN/office365/securitycompliance/custom-sensitive-info-types) 用于帮助防止无意或不适当的敏感信息共享。 作为管理员，你可以使用 [安全与合规中心](https://review.docs.microsoft.com/zh-CN/office365/securitycompliance/create-a-custom-sensitive-information-type)或 [PowerShell](https://review.docs.microsoft.com/zh-CN/office365/securitycompliance/create-a-custom-sensitive-information-type-in-scc-powershell)，根据模式、证据（“员工”、“徽章”、“ID”等关键字）、字符邻近度（特定模式下证据与字符的邻近度）以及可信度来定义自定义敏感信息类型。   ** ** ** 此类自定义敏感信息类型可满足许多组织的业务需求。
+  [自定义敏感信息类型](https://docs.microsoft.com/zh-CN/office365/securitycompliance/custom-sensitive-info-types) 用于帮助防止无意或不适当的敏感信息共享。 作为管理员，你可以使用 [安全与合规中心](https://docs.microsoft.com/zh-CN/office365/securitycompliance/create-a-custom-sensitive-information-type)或 [PowerShell](https://docs.microsoft.com/zh-CN/office365/securitycompliance/create-a-custom-sensitive-information-type-in-scc-powershell)，根据模式、证据（“员工”、“徽章”、“ID”等关键字）、字符邻近度（特定模式下证据与字符的邻近度）以及可信度来定义自定义敏感信息类型。   ** ** ** 此类自定义敏感信息类型可满足许多组织的业务需求。
 
 但是，如果你需要自定义敏感信息类型（它使用精确数据值而不是仅与泛型模式匹配），该怎么办？ 通过基于精确数据匹配 (EDM) 的分类，你可以创建专门设计的自定义敏感信息类型：
 
@@ -39,11 +39,11 @@ ms.locfileid: "36297760"
 
 ![基于 EDM 的分类](media/EDMClassification.png)
 
-基于 EDM 的分类允许你创建自定义敏感信息类型，它们将引用敏感信息数据库中的精确值。 数据库可以每天或每周刷新一次，最多可包含 1000 万行数据。 因此，当员工、患者或客户往来并且记录发生更改时，你的自定义敏感信息类型仍将保持最新并且适用。 你还可以将基于 EDM 的分类与策略一起使用，例如 [数据丢失防护策略](https://review.docs.microsoft.com/zh-CN/office365/securitycompliance/data-loss-prevention-policies) (DLP) 或 [Microsoft Cloud App Security 文件策略](https://docs.microsoft.com/cloud-app-security/data-protection-policies)。
+基于 EDM 的分类允许你创建自定义敏感信息类型，它们将引用敏感信息数据库中的精确值。 数据库可以每天或每周刷新一次，最多可包含 1000 万行数据。 因此，当员工、患者或客户往来并且记录发生更改时，你的自定义敏感信息类型仍将保持最新并且适用。 你还可以将基于 EDM 的分类与策略一起使用，例如 [数据丢失防护策略](https://docs.microsoft.com/zh-CN/office365/securitycompliance/data-loss-prevention-policies) (DLP) 或 [Microsoft Cloud App Security 文件策略](https://docs.microsoft.com/cloud-app-security/data-protection-policies)。
 
 ## <a name="required-licenses-and-permissions"></a>所需的许可证和权限
 
-你必须是全局管理员、合规性管理员或 Exchange Online 管理员才能执行本文中描述的任务。 若要了解有关 DLP 权限的详细信息，请参阅 [权限](https://review.docs.microsoft.com/zh-CN/office365/securitycompliance/data-loss-prevention-policies#permissions)。
+你必须是全局管理员、合规性管理员或 Exchange Online 管理员才能执行本文中描述的任务。 若要了解有关 DLP 权限的详细信息，请参阅 [权限](https://docs.microsoft.com/zh-CN/office365/securitycompliance/data-loss-prevention-policies#permissions)。
 
 当正式发布时，基于 EDM 的分类将包含在这些订阅中
 
@@ -58,7 +58,7 @@ ms.locfileid: "36297760"
 |---------|---------|
 |[第 1 部分：设置基于 EDM 的分类](#part-1-set-up-edm-based-classification)<br/><br/>（根据需要）<br/>- [编辑数据库架构](#editing-the-schema-for-edm-based-classification) <br/>- [删除架构](#removing-the-schema-for-edm-based-classification) |- 敏感数据的读取权限<br/>- .xml 格式的数据库架构（提供了示例）<br/>- .xml 格式的规则包（提供了示例）<br/>- 安全与合规中心的管理员权限（使用 PowerShell） |
 |[第 2 部分：创建索引并上载敏感数据](#part-2-index-and-upload-the-sensitive-data)<br/><br/>（根据需要）<br/>[刷新数据](#refreshing-your-sensitive-information-database) |- 自定义安全组和用户帐户<br/>- 使用 EDM 上载代理对计算机进行本地管理员访问<br/>- 敏感数据的读取权限<br/>- 刷新数据的流程和计划|
-|[第 3 部分：将基于 EDM 的分类与 Microsoft 云服务一起使用](#part-3-use-edm-based-classification-with-your-microsoft-cloud-services) |- 包含 DLP 的 Office 365 订阅<br/>- 启用基于 EDM 的分类功能（在预览版中） |
+|[第 3 部分：将基于 EDM 的分类与 Microsoft 云服务一起使用](#part-3-use-edm-based-classification-with-your-microsoft-cloud-services) |- 包含 DLP 的 Office 365 订阅<br/>- 已启用基于 EDM 的分类功能 |
 
 ### <a name="part-1-set-up-edm-based-classification"></a>第 1 部分：设置基于 EDM 的分类
 
@@ -483,13 +483,13 @@ Office 365 DLP for Exchange Online（电子邮件）、OneDrive for Business（�
 ## <a name="related-articles"></a>相关文章
 
 
-  [内置敏感信息类型以及它们查找的内容](https://review.docs.microsoft.com/zh-CN/office365/securitycompliance/what-the-sensitive-information-types-look-for)
+  [内置敏感信息类型以及它们查找的内容](https://docs.microsoft.com/zh-CN/office365/securitycompliance/what-the-sensitive-information-types-look-for)
 
 
-  [自定义敏感信息类型](https://review.docs.microsoft.com/zh-CN/office365/securitycompliance/custom-sensitive-info-types)
+  [自定义敏感信息类型](https://docs.microsoft.com/zh-CN/office365/securitycompliance/custom-sensitive-info-types)
 
 
-  [DLP 策略概述](https://review.docs.microsoft.com/zh-CN/office365/securitycompliance/data-loss-prevention-policies)
+  [DLP 策略概述](https://docs.microsoft.com/zh-CN/office365/securitycompliance/data-loss-prevention-policies)
 
 [Microsoft Cloud App Security](https://docs.microsoft.com/cloud-app-security)
 
