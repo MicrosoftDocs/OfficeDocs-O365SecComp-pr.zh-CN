@@ -1,5 +1,5 @@
 ---
-title: 查找并调查 Office 365 中提供的恶意电子邮件
+title: 查找并调查在 Office 365 中提供的恶意电子邮件、TIMailData、安全事件、事件、ATP Powershell、电子邮件恶意软件、已泄露的用户、电子邮件网络钓鱼诈骗、电子邮件恶意软件
 ms.author: deniseb
 author: denisebmsft
 manager: dansimp
@@ -15,12 +15,12 @@ ms.assetid: 8f54cd33-4af7-4d1b-b800-68f8818e5b2a
 ms.collection:
 - M365-security-compliance
 description: 了解如何使用威胁调查和响应功能查找和调查恶意电子邮件。
-ms.openlocfilehash: 1f558614d77577408a824b3c6181aae22753ab0f
-ms.sourcegitcommit: 7a0cb7e1da39fc485fc29e7325b843d16b9808af
+ms.openlocfilehash: aefadeba265ddc4fc6188f857f94c78fae4aa8e9
+ms.sourcegitcommit: d4acce11a26536b9d6ca71ba4933fc95136198a4
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/07/2019
-ms.locfileid: "36230556"
+ms.lasthandoff: 08/15/2019
+ms.locfileid: "36407941"
 ---
 # <a name="find-and-investigate-malicious-email-that-was-delivered-in-office-365"></a>查找并调查 Office 365 中提供的恶意电子邮件
 
