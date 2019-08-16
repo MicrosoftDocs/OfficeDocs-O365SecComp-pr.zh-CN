@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.assetid: af398293-c69d-465e-a249-d74561552d30
 description: 文件计划管理器提供了对保留标签和保留标签策略的高级管理功能，并提供了便于遍历整个内容生存期（从创建、协作、记录声明、保留到最终处置）中的标签活动和标签到内容活动的集成方式。
-ms.openlocfilehash: b7d80ff6a7f78e592462fe2723a87383e046015f
-ms.sourcegitcommit: 6eb51931242d07abde2e37f1bd57d13bc724f0de
+ms.openlocfilehash: 38bfb1e6a6cde931804e518660ddf6c2b45205b0
+ms.sourcegitcommit: f443de08971da2fe200a159b8efbed40effba125
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "34547967"
+ms.lasthandoff: 08/15/2019
+ms.locfileid: "36430009"
 ---
 # <a name="overview-of-file-plan-manager"></a>文件计划管理器概述
 
@@ -123,7 +123,28 @@ ms.locfileid: "34547967"
 
 ![在 Excel 中打开的空白文件计划模板](media/file-plan-blank-template.png)
 
-填写模板（即将推出：有关单个保留标签的有效值组合的参考信息）。
+填写模板。 此表提供了有效值。
+
+|**属性**|**类型**|**有效值**|
+|:-----|:-----|:-----|
+|LabelName|String|如果值包含空格，请使用双引号 (") 将此值括起来。|
+|评论|String|如果值包含空格，请使用双引号 (") 将此值括起来。 |
+|Notes|String|自定义|
+|IsRecordLabel|String|$true：标签是记录标签。</br>$false：标签不是记录标签。 此值为默认值。|
+|RetentionAction|String|Delete</br>Keep</br>KeepAndDelete |
+|RetentionDuration|String|此属性指定内容保留的天数。 有效值是：</br>正整数。</br>值不受限制。|
+|RetentionType|String|此属性指定保留期限是从内容创建日期、标记的日期还是从上次修改日期开始计算。 有效值是：</br>CreationAgeInDays</br>EventAgeInDays</br>ModificationAgeInDays</br>TaggedAgeInDays |
+|ReviewerEmail|SmtpAddress[]|此属性指定 Delete 和 KeepAndDelete 保留操作的审阅者的电子邮件地址。 可以指定多个电子邮件地址，中间用逗号分隔。|
+|ReferenceId|String|自定义|
+|Departmentname|String|自定义|
+|类别|String|自定义|
+|SubCategory|String|自定义|
+|AuthorityType|String|自定义|
+|CitationName|String|自定义|
+|CitationUrl|String|自定义|
+|CitationJurisdiction|String|自定义|
+|Regulatory|String|自定义|
+|EventType|String|此属性指定与标签关联的保留规则。 可以使用唯一标识该规则的任何值。 例如：</br>名称</br>可分辨名称 (DN)</br>GUID </br>可使用 [Get-RetentionComplianceRule](https://docs.microsoft.com/zh-CN/powershell/module/exchange/policy-and-compliance-retention/get-retentioncompliancerule?view=exchange-ps) cmdlet 来查看可用的保留规则。|
 
 ![填写了信息的文件计划模板](media/file-plan-filled-out-template.png)
 
