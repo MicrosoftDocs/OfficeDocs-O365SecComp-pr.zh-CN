@@ -28,7 +28,7 @@ ms.locfileid: "36054704"
 
  **你是否在 Office 365 中收到过多的垃圾邮件？请执行以下操作。**
   
-强烈建议[使用报告邮件加载项](https://support.office.com/article/b5caa9f1-cdf3-4443-af8c-ff724ea719d2)来报告假负消息，以帮助我们改进筛选器。此外, 还可以使用[提交资源管理器](admin-submission.md)提交消息。
+强烈建议[使用报告邮件加载项](https://support.office.com/article/b5caa9f1-cdf3-4443-af8c-ff724ea719d2)来报告误报邮件，以帮助我们改进筛选器。此外, 还可以使用[提交资源管理器](admin-submission.md)提交邮件。
 
 > [!TIP]
 > 如果你认为邮件是垃圾邮件且它位于“垃圾邮件”文件夹中，则这没有问题。如果完全不想在邮箱中看到该邮件，则应更改反垃圾邮件策略以隔离该邮件。有关隔离邮件的更多信息，请参阅[在 Office 365 中隔离电子邮件](quarantine-email-messages.md)。

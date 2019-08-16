@@ -25,7 +25,7 @@ ms.locfileid: "36054670"
 
  **真实电子邮件是否在 Office 365 中被标记为“垃圾邮件”？试试本文中介绍的方法吧。**
   
-如果发生误报，则应使用[使用报告邮件加载项](https://support.office.com/article/b5caa9f1-cdf3-4443-af8c-ff724ea719d2)将此邮件报告给 Microsoft。此外，还可以使用[提交资源管理器](admin-submission.md)提交信息。
+如果发生误报，则应使用[使用报告邮件加载项](https://support.office.com/article/b5caa9f1-cdf3-4443-af8c-ff724ea719d2)将此邮件报告给 Microsoft。此外，还可以使用[提交资源管理器](admin-submission.md)提交邮件。
     
 ## <a name="determine-the-reason-why-the-message-was-marked-as-spam"></a>确定邮件被标记为“垃圾邮件”的原因
 
