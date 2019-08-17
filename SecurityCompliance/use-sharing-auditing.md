@@ -16,12 +16,12 @@ search.appverid:
 ms.collection: M365-security-compliance
 ms.assetid: 50bbf89f-7870-4c2a-ae14-42635e0cfc01
 description: '共享是 SharePoint Online 和 OneDrive for business 中的关键活动。 管理员现在可以在 Office 365 审核日志中使用共享审核, 以确定与组织外部的用户共享的资源。 '
-ms.openlocfilehash: 54fa32ec9ed16a65354eb845421c56f6d58559e4
-ms.sourcegitcommit: c8ea7c0900e69e69bd5c735960df70aae27690a5
+ms.openlocfilehash: 48fc1a67f501c807e76ba2333170df83a1248428
+ms.sourcegitcommit: 60c701e9808d505cf96990d0643be10b8fbc0180
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "36258565"
+ms.lasthandoff: 08/16/2019
+ms.locfileid: "36447359"
 ---
 # <a name="use-sharing-auditing-in-the-office-365-audit-log"></a>审核共享以查找与外部用户共享的资源
 
@@ -53,9 +53,9 @@ ms.locfileid: "36258565"
 
 - **AnonymousLinkUsed:** 顾名思义, 当使用匿名链接访问资源时, 将记录此事件。 
 
-- **SecureLinkCreated:** 用户已创建 "特定人员链接" 以与特定人员共享资源。 此目标用户可能是你的组织外部的人员。
+- **SecureLinkCreated:** 用户已创建 "特定人员链接" 以与特定人员共享资源。 此目标用户可能是你的组织外部的人员。 共享资源的人员在**AddedToSecureLink**事件的审核记录中标识。 这两个事件的时间戳几乎完全相同。
 
-- **AddedToSecureLink:** 向特定人员链接添加了用户。 此目标用户可能是你的组织外部的人员。
+- **AddedToSecureLink:** 向特定人员链接添加了用户。 使用此事件中的 " **TargetUserOrGroupName** " 字段可标识添加到相应的特定人员链接的用户。 此目标用户可能是你的组织外部的人员。
 
 ## <a name="sharing-auditing-work-flow"></a>共享审核工作流
   
@@ -81,7 +81,7 @@ ms.locfileid: "36258565"
     
    - 当目标用户接受发送给他们的共享邀请 (通过单击邀请中的链接) 时, SharePoint 会记录一个**SharingInvitationAccepted**事件并为目标用户分配访问资源的权限。 如果向目标用户发送匿名链接, 则在目标用户使用该链接访问资源后记录**AnonymousLinkUsed**事件。 对于安全链接, 当外部用户使用链接访问资源时, 将记录**FileAccessed**事件。
 
-还会记录有关目标用户的其他信息, 如邀请的用户的标识和实际接受邀请的用户。 在某些情况下, 这些用户 (或电子邮件地址) 可以不同。 
+还会记录有关目标用户的其他信息, 如邀请的用户的标识和接受邀请的用户。 在某些情况下, 这些用户 (或电子邮件地址) 可以不同。 
 
 ## <a name="how-to-identify-resources-shared-with-external-users"></a>如何识别与外部用户共享的资源
 
@@ -109,7 +109,7 @@ ms.locfileid: "36258565"
     
 7. 当搜索运行完成并显示结果后, 单击 "**导出结果** \> " "**下载所有结果**"。
     
-    选择 "导出" 选项后, 会在窗口底部显示一条消息, 提示您打开或保存 CSV 文件。
+    选择 "导出" 选项后, 窗口底部的一条消息将提示您打开或保存 CSV 文件。
     
 8. 单击 "**另** \>存**为**", 然后将 CSV 文件保存到本地计算机上的文件夹中。 
 

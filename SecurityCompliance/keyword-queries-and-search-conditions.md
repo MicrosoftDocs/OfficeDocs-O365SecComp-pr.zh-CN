@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 ms.assetid: c4639c2e-7223-4302-8e0d-b6e10f1c3be3
 description: '了解可以使用安全 & 合规中心中的内容搜索工具在 Exchange Online 邮箱和 SharePoint 或 OneDrive for Business 网站中搜索的电子邮件和文件属性。  '
-ms.openlocfilehash: 70f005d6875735dfe95e10bf4487c8e1373431ea
-ms.sourcegitcommit: 97b9f88b9beee23de13ecf6d0759ac0fad5cf08d
+ms.openlocfilehash: 3836e5e23c23d7f771264dea8610116f30087c57
+ms.sourcegitcommit: 60c701e9808d505cf96990d0643be10b8fbc0180
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/02/2019
-ms.locfileid: "36168180"
+ms.lasthandoff: 08/16/2019
+ms.locfileid: "36447369"
 ---
 # <a name="keyword-queries-and-search-conditions-for-content-search"></a>内容搜索的关键字查询和搜索条件
 
@@ -50,9 +50,9 @@ ms.locfileid: "36168180"
 |**属性**|**属性描述**|**示例**|**示例返回的搜索结果**|
 |:-----|:-----|:-----|:-----|
 |AttachmentNames|电子邮件附件的文件名。|`attachmentnames:annualreport.ppt`  <br/> `attachmentnames:annual*`|含有名为 annualreport.ppt 的附加文件的邮件。在第二个示例中，使用通配符返回附件名中带有单词“annual”的邮件。|
-|Bcc|电子邮件的"密件抄送"字段。<sup>1</sup>|`bcc:pilarp@contoso.com`  <br/> `bcc:pilarp`  <br/> `bcc:"Pilar Pinilla"`|所有示例都返回"密件抄送"字段中包含"Pilar Pinilla"的邮件。|
+|Bcc|电子邮件的 "密件抄送" 字段。<sup>1</sup>|`bcc:pilarp@contoso.com`  <br/> `bcc:pilarp`  <br/> `bcc:"Pilar Pinilla"`|所有示例都返回"密件抄送"字段中包含"Pilar Pinilla"的邮件。|
 |Category| 搜索类别。 用户可以使用 Outlook 或 web 上的 Outlook (以前称为 Outlook Web App) 定义类别。 可能的值是：  <br/><br/>  蓝色  <br/>  绿色  <br/>  橙色  <br/>  紫色  <br/>  红色  <br/>  黄色|`category:"Red Category"`|在源邮箱中已指定红色类别的邮件。|
-|抄送|电子邮件的"抄送"字段。<sup>1</sup>|`cc:pilarp@contoso.com`  <br/> `cc:"Pilar Pinilla"`|在以上两个示例中，在"抄送"字段中指定了含有"Pilar Pinilla"的邮件。|
+|抄送|电子邮件的 "抄送" 字段。<sup>1</sup>|`cc:pilarp@contoso.com`  <br/> `cc:"Pilar Pinilla"`|在这两个示例中, 在 "抄送" 字段中指定了包含 Pilar Pinilla 的邮件。|
 |Folderid|特定邮箱文件夹的文件夹 ID (GUID)。 如果使用此属性, 请务必搜索指定文件夹所在的邮箱。 请注意, 将仅搜索指定的文件夹。 不会搜索文件夹中的所有子文件夹。 若要搜索子文件夹, 您需要使用要搜索的子文件夹的 Folderid 属性。  <br/> 有关搜索 Folderid 属性和使用脚本获取特定邮箱的文件夹 Id 的详细信息, 请参阅[在 Office 365 中使用内容搜索查找目标集合](use-content-search-for-targeted-collections.md)。|`folderid:4D6DD7F943C29041A65787E30F02AD1F00000000013A0000`  <br/> `folderid:2370FB455F82FC44BE31397F47B632A70000000001160000 AND participants:garthf@contoso.com`|第一个示例返回指定邮箱文件夹中的所有项目。 第二个示例返回指定邮箱文件夹中由 garthf@contoso.com 发送或接收的所有项目。|
 |发件人|电子邮件的发件人。<sup>1</sup>|`from:pilarp@contoso.com`  <br/> `from:contoso.com`|由指定用户或指定域发送的邮件。|
 |HasAttachment|指示邮件是否包含附件。 使用值**true**或**false**。|`from:pilar@contoso.com AND hasattachment:true`|由指定用户发送的包含附件的邮件。|
@@ -60,9 +60,9 @@ ms.locfileid: "36168180"
 |IsRead|指示是否已读取邮件。 使用值**true**或**false**。|`isread:true`  <br/> `isread:false`|第一个示例返回 IsRead 属性设置为**True**的邮件。 第二个示例返回 IsRead 属性设置为**False**的邮件。|
 |ItemClass|使用此属性可搜索组织导入到 Office 365 中的特定第三方数据类型。 对此属性使用以下语法:`itemclass:ipm.externaldata.<third-party data type>*`|`itemclass:ipm.externaldata.Facebook* AND subject:contoso`  <br/> `itemclass:ipm.externaldata.Twitter* AND from:"Ann Beebe" AND "Northwind Traders"`|第一个示例返回在 Subject 属性中包含 "contoso" 一词的 Facebook 项目。 第二个示例返回由王小姐 Beebe 发布且包含关键字短语 "罗斯文商贸" 的 Twitter 项目。  <br/> 有关 ItemClass 属性的第三方数据类型要使用的值的完整列表, 请参阅[使用内容搜索来搜索导入到 Office 365 的第三方数据](use-content-search-to-search-third-party-data-that-was-imported.md)。|
 |Kind| 要搜索的电子邮件的类型。 可能的值：  <br/>  联系人  <br/>  文档  <br/>  电子邮件  <br/>  externaldata  <br/>  传真  <br/>  即时消息  <br/>  日志  <br/>  会议  <br/>  microsoftteams (返回 Microsoft 团队中的聊天、会议和呼叫中的项目)  <br/>  注释  <br/>  公告  <br/>  RSS 源  <br/>  任务  <br/>  语音邮件|`kind:email`  <br/> `kind:email OR kind:im OR kind:voicemail`  <br/> `kind:externaldata`|第一个示例返回满足搜索条件的电子邮件。 第二个示例返回电子邮件、即时消息对话 (包括 Microsoft 团队中的 Skype for Business 对话和聊天) 以及符合搜索条件的语音邮件。 第三个示例返回从第三方数据源 (如 Twitter、Facebook 和 Cisco Jabber) 导入到 Office 365 中的邮箱的项目, 这些项目符合搜索条件。 有关详细信息, 请参阅[在 Office 365 中存档第三方数据](https://go.microsoft.com/fwlink/p/?linkid=716918)。|
-|参与者|电子邮件中的所有人员字段；这些字段分别为：发件人、收件人、抄送和密件抄送。<sup>1</sup>|`participants:garthf@contoso.com`  <br/> `participants:contoso.com`|发送自/到 garthf@contoso.com 的邮件。第二个示例返回 contoso.com 域中的用户发送的所有邮件或发送至 contoso.com 域中的用户的所有邮件。|
+|Participants|电子邮件中的所有人员字段。 这些字段分别为 "发件人"、"收件人" 和 "密件抄送"。<sup>1</sup>|`participants:garthf@contoso.com`  <br/> `participants:contoso.com`|发送自/到 garthf@contoso.com 的邮件。第二个示例返回 contoso.com 域中的用户发送的所有邮件或发送至 contoso.com 域中的用户的所有邮件。|
 |Received|收件人接收电子邮件的日期。|`received:04/15/2016`  <br/> `received>=01/01/2016 AND received<=03/31/2016`|2016年4月15日收到的邮件。 第二个示例返回在2016年1月1日到2016年3月31日之间收到的所有邮件。|
-|收件人|电子邮件中的所有收件人字段；这些字段分别为：收件人、抄送和密件抄送。<sup>1</sup>|`recipients:garthf@contoso.com`  <br/> `recipients:contoso.com`|发送到 garthf@contoso.com 的邮件。第二个示例返回发送至 contoso.com 域中任何收件人的邮件。|
+|收件人|电子邮件中的所有收件人字段。 这些字段分别为 "收件人"、"抄送" 和 "密件抄送"。<sup>1</sup>|`recipients:garthf@contoso.com`  <br/> `recipients:contoso.com`|发送到 garthf@contoso.com 的邮件。第二个示例返回发送至 contoso.com 域中任何收件人的邮件。|
 |Sent|发件人发送电子邮件的日期。|`sent:07/01/2016`  <br/> `sent>=06/01/2016 AND sent<=07/01/2016`|在指定日期或指定日期范围内发送的邮件。|
 |Size|邮件的大小（以字节为单位）。|`size>26214400`  <br/> `size:1..1048567`|大于25的邮件？？10mb. 第二个示例返回大小介于 1 到 1,048,567 (1 MB) 字节之间的邮件。|
 |Subject|电子邮件主题行中的文本。  <br/> **注意:** 在查询中使用 Subject 属性时, 请???搜索将返回主题行中包含您要搜索的文本的所有邮件。 换言之, 查询不会仅返回那些具有完全匹配的邮件。 例如, 如果您搜索`subject:"Quarterly Financials"`, 则结果将包含主题为 "季度财务 2018" 的邮件。|`subject:"Quarterly Financials"`  <br/> `subject:northwind`|在主题行文本中的任意位置包含短语 "季度财务" 的邮件。 第二个示例返回主题行中包含单词"northwind"的所有邮件。|
@@ -201,14 +201,14 @@ ms.locfileid: "36168180"
 |**条件**|**说明**|
 |:-----|:-----|
 |邮件类型| 要搜索的邮件类型。 此属性与“Kind”电子邮件属性相同。 可能的值：  <br/><br/>  联系人  <br/>  文档  <br/>  电子邮件  <br/>  externaldata  <br/>  传真  <br/>  即时消息  <br/>  日志  <br/>  会议  <br/>  microsoftteams  <br/>  注释  <br/>  公告  <br/>  RSS 源  <br/>  任务  <br/>  语音邮件|
-|Participants|电子邮件中的所有人员字段；这些字段分别为：发件人、收件人、抄送和密件抄送。|
+|Participants|电子邮件中的所有人员字段。 这些字段分别为 "收件人"、"收件人" 和 "密件抄送"。|
 |类型|电子邮件项目的邮件类属性。 这是 ItemClass 电子邮件属性的相同属性。 它也是一个多值条件。 因此, 若要选择多个邮件类, 请按住**CTRL**键, 然后在下拉列表中单击要添加到条件的两个或多个邮件类。 在列表中选择的每个邮件类别将在相应的搜索查询中通过**OR**运算符逻辑连接。  <br/> 有关 Exchange 使用的邮件类别 (及其相应的邮件类 ID) 的列表, 可以在**邮件类**列表中选择, 请参阅[项目类型和邮件类](https://go.microsoft.com/fwlink/?linkid=848143)。|
 |Received|收件人接收电子邮件的日期。 此属性与“Received”电子邮件属性相同。|
-|收件人|向其发送电子邮件的人员。 此属性与“To”电子邮件属性相同。|
+|收件人|电子邮件中的所有 recepient 字段。 这些字段分别为 "收件人"、"抄送" 和 "密件抄送"。|
 |Sender|电子邮件的发件人。|
 |Sent|发件人发送电子邮件的日期。 此属性与“Sent”电子邮件属性相同。|
 |Subject|电子邮件主题行中的文本。|
-|To|电子邮件的收件人。|
+|To|"收件人" 字段中的电子邮件的收件人。|
 |||
   
 ### <a name="conditions-for-document-properties"></a>文档属性的条件
