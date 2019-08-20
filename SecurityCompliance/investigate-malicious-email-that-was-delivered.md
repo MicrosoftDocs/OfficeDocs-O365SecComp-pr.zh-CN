@@ -1,5 +1,5 @@
 ---
-title: 查找并调查在 Office 365 中提供的恶意电子邮件、TIMailData、安全事件、事件、ATP Powershell、电子邮件恶意软件、已泄露的用户、电子邮件网络钓鱼诈骗、电子邮件恶意软件
+title: 查找并调查在 Office 365 中传递的恶意电子邮件、TIMailData、安全事件、事件、ATP Powershell、电子邮件恶意软件、已泄露的用户、电子邮件网络钓鱼诈骗、电子邮件恶意软件、阅读电子邮件头、阅读邮件头、打开电子邮件头
 ms.author: deniseb
 author: denisebmsft
 manager: dansimp
@@ -15,12 +15,12 @@ ms.assetid: 8f54cd33-4af7-4d1b-b800-68f8818e5b2a
 ms.collection:
 - M365-security-compliance
 description: 了解如何使用威胁调查和响应功能查找和调查恶意电子邮件。
-ms.openlocfilehash: aefadeba265ddc4fc6188f857f94c78fae4aa8e9
-ms.sourcegitcommit: d4acce11a26536b9d6ca71ba4933fc95136198a4
+ms.openlocfilehash: 2049b3b8e0d7b9173639af3c48f75a072744fb7f
+ms.sourcegitcommit: dbcb3df3b313f7a9ea6669425e0a0498be844ae9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "36407941"
+ms.lasthandoff: 08/16/2019
+ms.locfileid: "36444863"
 ---
 # <a name="find-and-investigate-malicious-email-that-was-delivered-in-office-365"></a>查找并调查 Office 365 中提供的恶意电子邮件
 
@@ -40,9 +40,56 @@ ms.locfileid: "36407941"
     
 ## <a name="dealing-with-suspicious-emails"></a>处理可疑电子邮件
 
-恶意攻击者可能会向你的用户发送邮件, 以尝试对其凭据进行网络钓鱼并获取对公司机密的访问权限! 为避免这种情况, 应使用 Office 365 中的威胁防护服务, 包括[Exchange Online protection](eop/exchange-online-protection-overview.md)和[高级威胁防护](office-365-atp.md)。 但是, 有时攻击者可能会向包含 URL 的用户发送邮件, 并在稍后使该 URL 指向恶意内容 (恶意软件等)。 或者, 您可能会发现您的组织中的某个用户已受到威胁, 而该用户受到威胁时, 攻击者使用该帐户向公司中的其他用户发送电子邮件。 在清理这两个方案的过程中, 您可能需要从用户收件箱中删除电子邮件。 在这种情况下, 您可以利用[威胁浏览器 (或实时检测)](threat-explorer.md)来查找和删除这些电子邮件!
+恶意攻击者可能会向你的用户发送邮件, 以尝试对其凭据进行网络钓鱼并获取对公司机密的访问权限! 为避免这种情况, 应使用 Office 365 中的威胁防护服务, 包括[Exchange Online protection](eop/exchange-online-protection-overview.md)和[高级威胁防护](office-365-atp.md)。 但是, 有时攻击者可能会向包含 URL 的用户发送邮件, 并在稍后使该 URL 指向恶意内容 (恶意软件等)。 
+
+或者, 您可能会发现您的组织中的某个用户已受到威胁, 而该用户受到威胁时, 攻击者使用该帐户向公司中的其他用户发送电子邮件。 在清理这两个方案的过程中, 您可能需要从用户收件箱中删除电子邮件。 在这种情况下, 您可以利用[威胁浏览器 (或实时检测)](threat-explorer.md)来查找和删除这些电子邮件!
 
 ## <a name="where-re-routed-emails-are-located-after-actions-are-taken"></a>在执行操作后, 重新路由的电子邮件位于何处
+
+那么, 在哪里有问题的电子邮件, 以及哪些工具可帮助调查人员了解他们会怎么办？ 威胁资源管理器字段报告可帮助管理员解码问题电子邮件事件的信息。
+
+### <a name="view-the-email-headers-and-download-the-email-body"></a>查看电子邮件头并下载电子邮件正文
+
+电子邮件**头预览和下载电子邮件正文**是威胁资源管理器中可用的有用的电子邮件威胁管理功能。 管理员将能够分析和下载邮件头和电子邮件的威胁。 使用此功能的访问权限由基于角色的访问控制 (RBAC) 控制, 以降低用户电子邮件内容泄露的风险。
+
+必须将名为 "Preview" 的新*角色*添加到另一个 Office 365 角色组 (例如, 在 sec 操作 (或 sec 管理员) 中, 以授予在所有电子邮件视图中下载邮件和预览邮件头的功能。
+
+若要查看包含您的电子邮件下载和电子邮件头预览选项的浮出控件: 
+
+1. 请转[https://protection.office.com](https://protection.office.com)到使用 Office 365 的工作或学校帐户登录并登录。 这会将您带到&amp;安全合规中心。 
+    
+2. 在左侧导航中, 选择 "**威胁管理** \> **资源管理器**"。
+
+3. 单击 "威胁资源管理器" 表中的主题。
+
+这将打开浮出控件, 同时定位页眉预览和电子邮件下载链接。
+
+> [!IMPORTANT]
+> 同时使用后面的表。 一种方式告诉您必需的 RBAC, 另一个是应在其中授予权限的位置。
+<p>
+
+|活动  |具有访问权限的 RBAC new-rolegroup |需要 "预览" 角色？  |
+|---------|---------|---------|
+|使用威胁浏览器 (和实时检测) 分析威胁     |  Office 365 全局管理员,<br> 安全管理员、 <br> 安全读者      | 否   |
+|使用威胁浏览器 (和实时检测) 查看电子邮件的邮件头, 以及预览和下载隔离的电子邮件    |     Office 365 全局管理员, <br> 安全管理员、 <br>安全读者    |       否  |
+|使用威胁浏览器查看邮件头并下载传递给邮箱的电子邮件     |      Office 365 全局管理员, <br>安全管理员、<br> 安全读者、 <br> 预览    |   是      |
+
+<br>
+
+|RBAC new-rolegroup  |将用户分配到的位置  |
+|---------|---------|
+| 全局管理员   | Office 365 管理中心        |
+| 安全管理员      |    安全与合规中心     |
+| 安全读者   |    安全与合规中心     |
+|      |    安全与合规中心     |
+
+
+> [!CAUTION]
+> 请记住, "预览" 是一个角色, 而不是一个 new-rolegroup, 并且必须在随后将该角色添加到 New-rolegroup 中。
+
+![在页面上具有下载和预览链接的威胁资源管理器浮出控件。](media/ThreatExplorerDownloadandPreview.PNG)
+
+### <a name="check-the-delivery-action-and-location"></a>检查传递操作和位置
 
 威胁资源管理器实时检测已在 "传递" 状态下添加了 "传递操作" 和 "送达位置" 字段。 这将使您的电子邮件土地的更完整的了解。 此更改的目标部分是使搜索更易于进行安全操作人员, 但最终结果是了解问题电子邮件的位置。
 
@@ -67,7 +114,11 @@ ms.locfileid: "36407941"
 - **隔离**–隔离中的电子邮件, 并且不在用户的邮箱中。
 - **失败**–电子邮件无法访问邮箱。
 - **丢弃**–电子邮件在邮件流中的某个位置丢失。
+
+### <a name="view-the-timeline-of-your-email"></a>查看你的电子邮件的日程表
   
+ **电子邮件日程表**威胁资源管理器中的另一个字段也会 ake 对管理员更易于搜寻。 在电子邮件中同时发生多个事件时, 在电子邮件上发生多个事件时, 或在电子邮件上的同一时间段内发生多个事件时, 不需要花费宝贵的时间检查电子邮件可能已丢失的时间, 而是在调查事件时使用。 将在 "*特殊操作*" 列中捕获对您的邮件执行传递后发生的一些事件。 将邮件的时间线中的信息与对邮件传递后执行的特殊操作组合在一起, 管理员可以深入了解策略和威胁处理 (例如邮件路由的位置, 在某些情况下, 在某些情况下, 最终评估是什么)。
+
 ## <a name="find-and-delete-suspicious-email-that-was-delivered"></a>查找并删除已传递的可疑电子邮件
 
 > [!TIP]
