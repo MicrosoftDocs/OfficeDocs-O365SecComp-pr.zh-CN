@@ -10,16 +10,16 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: M365-security-compliance
 description: 您的组织可以与 Microsoft 合作伙伴合作, 设置自定义连接器, 以便从数据源 (如 Salesforce Chatter、Yahoo Messenger 或 Yammer) 导入第三方数据。 这使您可以在 Office 365 中存档第三方数据源中的数据, 以便您可以使用 Office 365 合规性功能 (如合法保留、内容搜索和保留策略) 来管理组织的第三方数据的管理。
-ms.openlocfilehash: 94714154477ebcc82e0bd3545c0c9d6a74767c4a
-ms.sourcegitcommit: 044003455eb36071806c9f008ac631d54c64dde6
+ms.openlocfilehash: 99596953ce0f18c0cd7220f0955d251dbccb0e37
+ms.sourcegitcommit: 372691a3a886e5cc299961032ee334aef26fb904
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/24/2019
-ms.locfileid: "35199801"
+ms.lasthandoff: 08/19/2019
+ms.locfileid: "36464695"
 ---
 # <a name="work-with-a-partner-to-archive-third-party-data-in-office-365"></a>与合作伙伴合作, 以在 Office 365 中存档第三方数据
 
-您可以与 Microsoft 合作伙伴合作, 将第三方数据源中的数据导入和存档到 Office 365。 合作伙伴可以为您提供一个自定义连接器, 该连接器被配置为从第三方数据源提取项目 (定期), 然后将这些项目导入到 Office 365。 合作伙伴连接器将项目的内容从数据源转换为电子邮件格式, 然后将这些项目存储在 Office 365 中的邮箱中。 导入第三方数据后, 可以将 Office 365 合规性功能 (如诉讼保留、内容搜索、就地存档、审核和 Office 365 保留策略) 应用于此类数据。
+您可以与 Microsoft 合作伙伴合作, 将第三方数据源中的数据导入和存档到 Office 365。 合作伙伴可以为您提供一个自定义连接器, 该连接器被配置为从第三方数据源提取项目 (定期), 然后将这些项目导入到 Office 365。 合作伙伴连接器将项目的内容从数据源转换为电子邮件格式, 然后将这些项目存储在 Office 365 中的邮箱中。 导入第三方数据后, 可以在此数据中应用 Office 365 合规性功能, 如诉讼保留、内容搜索、就地存档、审核和 Office 365 保留策略。
   
 下面概述了使用 Microsoft 合作伙伴将第三方数据导入 Office 365 时所需的过程和步骤。
 
@@ -41,25 +41,23 @@ ms.locfileid: "35199801"
   
 1. 客户可以通过其选择的合作伙伴来配置将从第三方数据源提取项目的连接器, 然后将这些项目导入到 Office 365。
     
-2. 合作伙伴连接器通过第三方 API (根据计划或已配置的原则) 连接到第三方数据源, 并从数据源中提取项目。 合作伙伴连接器将项目内容转换为电子邮件格式。 请参阅[More information](#more-information)部分，了解有关邮件格式架构的说明。 
+2. 合作伙伴连接器通过第三方 API (根据计划或已配置的原则) 连接到第三方数据源, 并从数据源中提取项目。 合作伙伴连接器将项目内容转换为电子邮件格式。 有关消息格式架构的说明, 请参阅 "[详细信息](#more-information)" 部分。 
     
 3. 合作伙伴连接器通过已知终结点使用 Exchange Web 服务 (EWS) 连接到 Office 365 中的 Azure 服务。
     
 4. 项目便导入到特定用户的邮箱或“catch-all”第三方数据邮箱。无论项目是导入到特定用户邮箱还是第三方数据邮箱，都要基于以下条件：
     
-    a. **具有与 office 365 用户帐户对应的用户 id 的项目**-如果合作伙伴连接器可以将第三方数据源中项目的用户 id 映射到 office 365 中的特定用户 id, 则会将该项目复制到用户的 Rec 中的 "**清除**" 文件夹中。overable "项目" 文件夹。 用户无法访问“清除”文件夹中的项目。 不过, 您可以使用 Office 365 电子数据展示工具搜索 "清除" 文件夹中的项目。
+    a. **具有与 Office 365 用户帐户对应的用户 ID 的项:** 如果合作伙伴连接器可以将第三方数据源中项目的用户 ID 映射到 Office 365 中的特定用户 ID, 则会将该项目复制到用户的 "可恢复的项目" 文件夹中的 "**清除**" 文件夹中。 用户无法访问“清除”文件夹中的项目。 不过, 您可以使用 Office 365 电子数据展示工具搜索 "清除" 文件夹中的项目。
     
-    b. **没有与 office 365 用户帐户对应的用户 id 的项目**-如果合作伙伴连接器无法将项目的用户 id 映射到 office 365 中的特定用户 id, 则会将该项目复制到第三方数据邮箱的 **"收件箱**" 文件夹中。 将项目导入到收件箱允许您或组织中的其他人登录到第三方邮箱来查看和管理这些项目，并查看是否需要在合作伙伴连接器配置中进行任何调整。
+    b. **没有与 Office 365 用户帐户对应的用户 ID 的项:** 如果合作伙伴连接器无法将项目的用户 ID 映射到 Office 365 中的特定用户 ID, 则会将该项目复制到第三方数据邮箱的 **"收件箱**" 文件夹中。 将项目导入到收件箱允许您或组织中的其他人登录到第三方邮箱来查看和管理这些项目，并查看是否需要在合作伙伴连接器配置中进行任何调整。
  
 ## <a name="step-1-find-a-third-party-data-partner"></a>步骤 1：寻找第三方数据合作伙伴
 
 在 Office 365 中存档第三方数据的关键组件是查找和使用 Microsoft 合作伙伴, 该合作伙伴专门负责捕获第三方数据源中的数据, 并将其导入 Office 365。 导入数据后, 可以对其进行存档和保留, 以及组织的其他 Microsoft 数据 (例如来自 SharePoint 和 OneDrive for business 的 Exchange 和文档的电子邮件)。 合作伙伴创建从组织的第三方数据源 (如 BlackBerry、Facebook、Google +、Thomson Reuters、Twitter 和 YouTube) 提取数据的连接器, 并将该数据传递给将项目导入 Exchange 邮箱的 Office 365 API电子邮件。 
   
-以下各节列出了 Microsoft 合作伙伴 (以及他们支持的第三方数据源), 他们参与了在 Office 365 中存档第三方数据的计划。
+以下各节列出了参与在 Office 365 中存档第三方数据的程序的 Microsoft 合作伙伴 (以及他们所支持的第三方数据源)。
 
 [17a-4 LLC](#17a-4-llc)
-  
-[Actiance](#actiance)
   
 [ArchiveSocial](#archivesocial)
   
@@ -67,6 +65,8 @@ ms.locfileid: "35199801"
   
 [OpenText](#opentext)
   
+[Smarsh](#smarsh)
+
 [Verba](#verba)
   
 ### <a name="17a-4-llc"></a>17a-4 LLC
@@ -111,9 +111,129 @@ ms.locfileid: "35199801"
     
 - Thomson Reuters Eikon Messenger
   
-### <a name="actiance"></a>Actiance
 
-[Actiance](https://www.actiance.com)支持以下第三方数据源: 
+  
+### <a name="archivesocial"></a>ArchiveSocial
+
+[ArchiveSocial](https://www.archivesocial.com)支持以下第三方数据源: 
+  
+- Facebook
+    
+- Flickr
+    
+- Instagram
+    
+- 领英
+    
+- Pinterest
+    
+- Twitter
+    
+- YouTube
+    
+- Vimeo
+  
+### <a name="globanet"></a>Globanet
+
+[Globanet](https://www.globanet.com)支持以下第三方数据源: 
+  
+- 使用 Pivot 客户端的 AOL 
+    
+- BlackBerry 呼叫日志（v5、v10、v12）
+    
+- BlackBerry Messenger（v5、v10、v12）
+    
+- BlackBerry PIN（v5、v10、v12）
+    
+- BlackBerry 短信（v5、v10、v12）
+    
+- Bloomberg 聊天
+    
+- Bloomberg 邮件
+    
+- Box
+    
+- 适用于 Salesforce Chatter 的 CipherCloud
+    
+- Cisco IM &amp;状态服务器 (v10, v v10.5.1 SU1, app-v 11.0, v 11.5 SU2)
+
+- Cisco Webex 团队
+
+- Citrix 工作&amp;区 ShareFile
+
+- CrowdCompass
+
+- 自定义分隔的文本文件
+    
+- 自定义 XML 文件
+    
+- Facebook (页面)
+    
+- Factset
+    
+- FXConnect
+    
+- ICE Chat/YellowJacket
+    
+- Jive
+    
+- Macgregor XIP
+
+- Microsoft Exchange Server
+    
+- Microsoft OneDrive for Business
+
+- Microsoft Teams
+       
+- Microsoft Yammer
+    
+- Mobile Guard
+    
+- 透视
+    
+- Salesforce Chatter
+
+- Skype for Business Online
+    
+- Skype for Business，版本 2007 R2 - 2016（本地）
+    
+- Slack Enterprise Grid
+    
+- Symphony
+    
+- Thomson Reuters Eikon
+    
+- Thomson Reuters Messenger
+    
+- Thomson Reuters Dealings 3000 / FX Trading
+    
+- Twitter
+    
+- UBS 聊天
+    
+- YouTube
+  
+### <a name="opentext"></a>OpenText
+
+[OpenText](https://www.opentext.com/what-we-do/products/opentext-product-offerings-catalog/rebranded-products/daegis)支持以下第三方数据源: 
+  
+- Axs Encrypted
+    
+- Axs Exchange
+    
+- Axs 本地存档
+    
+- Axs PlaceHolder
+    
+- Axs Signed
+    
+- Bloomberg
+    
+- Thomson Reuters
+  
+### <a name="smarsh"></a>Smarsh
+
+[Smarsh](https://www.smarsh.com)支持以下第三方数据源: 
   
 - 对准
     
@@ -273,125 +393,7 @@ ms.locfileid: "35199801"
     
 - YouTube
     
-  
-### <a name="archivesocial"></a>ArchiveSocial
 
-[ArchiveSocial](https://www.archivesocial.com)支持以下第三方数据源: 
-  
-- Facebook
-    
-- Flickr
-    
-- Instagram
-    
-- 领英
-    
-- Pinterest
-    
-- Twitter
-    
-- YouTube
-    
-- Vimeo
-  
-### <a name="globanet"></a>Globanet
-
-[Globanet](https://www.globanet.com)支持以下第三方数据源: 
-  
-- 使用 Pivot 客户端的 AOL 
-    
-- BlackBerry 呼叫日志（v5、v10、v12）
-    
-- BlackBerry Messenger（v5、v10、v12）
-    
-- BlackBerry PIN（v5、v10、v12）
-    
-- BlackBerry 短信（v5、v10、v12）
-    
-- Bloomberg 聊天
-    
-- Bloomberg 邮件
-    
-- Box
-    
-- 适用于 Salesforce Chatter 的 CipherCloud
-    
-- Cisco IM &amp;状态服务器 (v10, v v10.5.1 SU1, app-v 11.0, v 11.5 SU2)
-
-- Cisco Webex 团队
-
-- Citrix 工作&amp;区 ShareFile
-
-- CrowdCompass
-
-- 自定义带分隔符的文本文件
-    
-- 自定义 XML 文件
-    
-- Facebook (页面)
-    
-- Factset
-    
-- FXConnect
-    
-- ICE Chat/YellowJacket
-    
-- Jive
-    
-- Macgregor XIP
-
-- Microsoft Exchange Server
-    
-- Microsoft OneDrive for Business
-
-- Microsoft Teams
-       
-- Microsoft Yammer
-    
-- Mobile Guard
-    
-- 透视
-    
-- Salesforce Chatter
-
-- Skype for Business Online
-    
-- Skype for Business，版本 2007 R2 - 2016（本地）
-    
-- Slack Enterprise Grid
-    
-- Symphony
-    
-- Thomson Reuters Eikon
-    
-- Thomson Reuters Messenger
-    
-- Thomson Reuters Dealings 3000 / FX Trading
-    
-- Twitter
-    
-- UBS 聊天
-    
-- YouTube
-  
-### <a name="opentext"></a>OpenText
-
-[OpenText](https://www.opentext.com/what-we-do/products/opentext-product-offerings-catalog/rebranded-products/daegis)支持以下第三方数据源: 
-  
-- Axs Encrypted
-    
-- Axs Exchange
-    
-- Axs 本地存档
-    
-- Axs PlaceHolder
-    
-- Axs Signed
-    
-- Bloomberg
-    
-- Thomson Reuters
-  
 ### <a name="verba"></a>Verba
 
 [Verba](https://www.verba.com)支持以下第三方数据源: 
@@ -466,7 +468,7 @@ ms.locfileid: "35199801"
   
  **在 Microsoft 365 管理中心完成这些任务**
   
-1. 在 Office 365 中创建一个新的用户帐户, 并为其分配 Exchange Online 计划2许可证;请参阅[向 Office 365 添加用户](https://go.microsoft.com/fwlink/p/?LinkId=692098)。 需要 Plan 2 许可证将邮箱置于诉讼保留状态, 或启用具有无限存储配额的存档邮箱。
+1. 在 Office 365 中创建用户帐户, 并为其分配 Exchange Online 计划2许可证;请参阅[向 Office 365 添加用户](https://go.microsoft.com/fwlink/p/?LinkId=692098)。 需要 Plan 2 许可证将邮箱置于诉讼保留状态, 或启用具有无限存储配额的存档邮箱。
     
 2. 将第三方数据邮箱的用户帐户添加到 Office 365 中的**Exchange 管理员**管理员角色中;请参阅[在 Office 365 中分配管理员角色](https://go.microsoft.com/fwlink/p/?LinkId=532393)。
     
@@ -485,9 +487,9 @@ ms.locfileid: "35199801"
     
 3. 为第三方数据邮箱启用以下与合规性相关的 Office 365 功能:
     
-    - 启用存档邮箱;请参阅[启用存档邮箱](enable-archive-mailboxes.md)和[启用无限制存档](enable-unlimited-archiving.md)。 这将允许您通过设置将第三方数据项移动到存档邮箱的存档策略来释放主邮箱中的存储空间。 这将为第三方数据提供无限存储空间。
+    - 启用存档邮箱;请参阅[启用存档邮箱](enable-archive-mailboxes.md)和[启用无限制存档](enable-unlimited-archiving.md)。 这样, 你就可以通过设置将第三方数据项移动到存档邮箱的存档策略来释放主邮箱中的存储空间。 这为您提供了第三方数据的无限制存储。
     
-    - 将第三方数据邮箱置于诉讼保留的位置。 您还可以在安全与合规中心中应用 Office 365 保留策略。 将此邮箱置于保留状态时, 将保留第三方数据项 (无限期或指定的持续时间), 并防止从邮箱中清除这些项目。 请参阅下列主题之一:
+    - 将第三方数据邮箱置于诉讼保留的位置。 您还可以在安全与合规中心中应用 Office 365 保留策略。 将此邮箱置于保留状态时, 将保留第三方数据项 (无限期或指定的持续时间), 并防止清除邮箱中的项目。 请参阅下列主题之一:
     
       - [将邮箱置于诉讼保留状态](https://go.microsoft.com/fwlink/p/?LinkId=404420)
     
@@ -495,7 +497,7 @@ ms.locfileid: "35199801"
     
        
     
-    - 对访问第三方数据邮箱的所有者、委派用户和管理员启用邮箱审核日志记录；请参阅[Enable mailbox auditing in Office 365](enable-mailbox-auditing.md)。 这将允许您审核有权访问第三方数据邮箱的任何用户执行的所有活动。
+    - 对访问第三方数据邮箱的所有者、委派用户和管理员启用邮箱审核日志记录；请参阅[Enable mailbox auditing in Office 365](enable-mailbox-auditing.md)。 这使您可以审核任何有权访问第三方数据邮箱的用户执行的所有活动。
 
 ## <a name="step-3-configure-user-mailboxes-for-third-party-data"></a>步骤 3：为第三方数据配置用户邮箱
 
@@ -541,25 +543,25 @@ ms.locfileid: "35199801"
 
 ### <a name="revoking-consent-for-a-third-party-data-connector"></a>撤销第三方数据连接器的同意
 
-在您的组织同意要在 Azure Active Directory 中注册第三方数据连接器的权限请求后, 您的组织可以随时撤销该许可。 但是, 如果吊销连接器的许可, 则将不再将第三方数据源中的数据导入到 Office 365 中。
+在您的组织同意要在 Azure Active Directory 中注册第三方数据连接器的权限请求后, 您的组织可以随时撤销该许可。 但是, 废除连接器的同意意味着将不再将第三方数据源中的数据导入到 Office 365 中。
 
 若要撤销第三方数据连接器的同意, 可以使用 Azure 门户中的 "**企业应用程序**" 边栏从 Azure Active Directory 中删除应用程序 (通过删除相应的服务主体), 或使用[New-msolserviceprincipal](https://docs.microsoft.com/en-us/powershell/module/msonline/remove-msolserviceprincipal)在 Office 365 PowerShell 中删除。 您还可以在 Azure Active Directory PowerShell 中使用[AzureADServicePrincipal](https://docs.microsoft.com/en-us/powershell/module/azuread/remove-azureadserviceprincipal) cmdlet。
   
 ## <a name="more-information"></a>更多信息
 
-- 如前所述，第三方数据源中的项目将作为电子邮件导入到 Exchange 邮箱。 合作伙伴连接器使用 Office 365 API 所需的架构导入项目。 下表介绍了第三方数据源中的项目作为电子邮件导入到 Exchange 邮箱之后的邮件属性。 该表还指出该邮件属性是否是强制属性。 必须填充强制属性。 如果某项缺少强制属性, 则不会将其导入 Office 365。 导入过程将返回一条错误消息，解释未导入项目的原因以及缺少了哪些属性。
+- 如前所述，第三方数据源中的项目将作为电子邮件导入到 Exchange 邮箱。 合作伙伴连接器使用 Office 365 API 所需的架构导入项目。 下表介绍了第三方数据源中的项目作为电子邮件导入到 Exchange 邮箱之后的邮件属性。 该表还指出该邮件属性是否是强制属性。 必须填充强制属性。 如果某项缺少强制属性, 则不会将其导入 Office 365。 导入过程将返回一条错误消息, 说明无法导入项目的原因和缺少的属性。
     
     |**邮件属性**|**强制？**|**说明**|**示例值**|
     |:-----|:-----|:-----|:-----|
-    |**FROM** <br/> |是  <br/> |最初创建或发送第三方数据源中的项目的用户。 合作伙伴连接器将尝试将源项目 (例如 Twitter 句柄) 中的用户 ID 映射到所有参与者 ("FROM" 和 "TO" 字段中的用户) 的 Office 365 用户帐户。 邮件的副本将导入到每个参与者的邮箱中。 如果无法将项目中的任何参与者映射到 Office 365 用户帐户, 则会将该项目导入 Office 365 中的第三方存档邮箱。  <br/> <br/> 标识为项目的发件人的参与者必须在要向其导入项目的 Office 365 组织中具有活动邮箱。 如果发件人没有活动邮箱，则会返回以下错误：<br/><br/>  `One or more messages in the Request failed to be delivered to either From or Sender email address. You will need to resend your entire Request. Error: The request failed. The remote server returned an error: (401) Unauthorized.`  | `bob@contoso.com` <br/> |
+    |**FROM** <br/> |是  <br/> |最初创建或发送第三方数据源中的项目的用户。 合作伙伴连接器尝试将源项目中的用户 ID (例如 Twitter 句柄) 映射到所有参与者 ("FROM" 和 "TO" 字段中的用户) 的 Office 365 用户帐户。 邮件的副本将导入到每个参与者的邮箱中。 如果无法将项目中的任何参与者映射到 Office 365 用户帐户, 则会将该项目导入 Office 365 中的第三方存档邮箱。  <br/> <br/> 标识为项目的发件人的参与者必须在要向其导入项目的 Office 365 组织中具有活动邮箱。 如果发件人没有活动邮箱，则会返回以下错误：<br/><br/>  `One or more messages in the Request failed to be delivered to either From or Sender email address. You will need to resend your entire Request. Error: The request failed. The remote server returned an error: (401) Unauthorized.`  | `bob@contoso.com` <br/> |
     |**TO** <br/> |是  <br/> |接收项目的用户（如果适用于数据源中的项目）。  <br/> | `bob@contoso.com` <br/> |
     |**主题** <br/> |否  <br/> |源项目中的主题。  <br/> | `"Mega deals with Contoso coming your way! #ContosoHolidayDeals"` <br/> |
-    |**结束** <br/> |是  <br/> |最初在客户数据源中创建或发布项目的日期；例如，发布 Twitter 消息的日期。  <br/> | `01 NOV 2015` <br/> |
-    |**大量** <br/> |否  <br/> |消息或帖子的内容。 对于某些数据源，此属性的内容可能与****“主题”属性的内容相同。 在导入过程中，合作伙伴连接器将尝试尽可能维护内容源的完全保真度。 如果可能，源项目正文中的文件、图形或其他内容会包含在此属性中。 否则，源项目中的内容会包含在****“附件”属性中。 此属性的内容将取决于合作伙伴连接器和源平台的功能。  <br/> | `Author: bob@contoso.com` <br/>  `Date: 10 DEC 2014` <br/>  `Tweet: "Mega deals with Contoso coming your way! #ContosoHolidayDeals"` <br/>  `Date: 01 NOV 2015` <br/> |
+    |**结束** <br/> |是  <br/> |在客户数据源中最初创建或发布项目的日期。 例如, tweeted Twitter 邮件时的日期。  <br/> | `01 NOV 2015` <br/> |
+    |**大量** <br/> |否  <br/> |消息或帖子的内容。 对于某些数据源，此属性的内容可能与****“主题”属性的内容相同。 在导入过程中, 合作伙伴连接器会尽可能保持内容源完全保真。 如果可能，源项目正文中的文件、图形或其他内容会包含在此属性中。 否则，源项目中的内容会包含在****“附件”属性中。 此属性的内容取决于合作伙伴连接器和源平台的功能。  <br/> | `Author: bob@contoso.com` <br/>  `Date: 10 DEC 2014` <br/>  `Tweet: "Mega deals with Contoso coming your way! #ContosoHolidayDeals"` <br/>  `Date: 01 NOV 2015` <br/> |
     |**附着** <br/> |否  <br/> |如果数据源中的项 (如 Twitter 或即时消息对话中的 twitter) 具有附加的文件或包含图像, 则合作伙伴连接将首先尝试在**BODY**属性中包含附件。 如果无法这样做, 则会将其添加到 * * 附件 * * 属性中。 其他附件示例包括 Facebook 中的点赞，内容源中的元数据，以及对消息或帖子的回复。  <br/> | `image.gif` <br/> |
-    |**MESSAGECLASS** <br/> |是  <br/> | 这是一个多值属性，由合作伙伴连接器创建和填充。 此属性的格式为`IPM.NOTE.Source.Event`。 (此属性必须以开头`IPM.NOTE`; 这种格式类似于`IPM.NOTE.X`消息类的格式。)此属性包含以下信息:  <br/><br/>`Source`-指示第三方数据源;例如, Twitter、Facebook 或 BlackBerry。  <br/> <br/>  `Event`-指示在生成项目的第三方数据源中执行的活动类型。例如, 在 Twitter 中的 twitter 或 Facebook 中的帖子。 事件是特定于数据源的。  <br/> <br/>  此属性的一个目的是基于项目源自的数据源或基于事件类型筛选特定项目。 例如，在电子数据展示搜索中，您可以创建一个搜索查询来查找特定用户发布的所有微博。  <br/> | `IPM.NOTE.Twitter.Tweet` <br/> |
+    |**MESSAGECLASS** <br/> |是  <br/> | 这是一个多值属性，由合作伙伴连接器创建和填充。 此属性的格式为`IPM.NOTE.Source.Event`。 (此属性必须以开头`IPM.NOTE`。 此格式类似于`IPM.NOTE.X`邮件类的格式。此属性包含以下信息:  <br/><br/>`Source`: 指示第三方数据源;例如, Twitter、Facebook 或 BlackBerry。  <br/> <br/>  `Event`: 指示在生成项目的第三方数据源中执行的活动类型。例如, 在 Twitter 中的 twitter 或 Facebook 中的帖子。 事件是特定于数据源的。  <br/> <br/>  此属性的一个目的是基于项目源自的数据源或基于事件类型筛选特定项目。 例如，在电子数据展示搜索中，您可以创建一个搜索查询来查找特定用户发布的所有微博。  <br/> | `IPM.NOTE.Twitter.Tweet` <br/> |
    
-- 将项目成功导入 Office 365 中的邮箱时, 会将唯一标识符作为 HTTP 响应的一部分返回给调用方。 此标识符 (称为`x-IngestionCorrelationID`) 可用于合作伙伴对项目进行端到端跟踪的后续故障排除目的。 建议合作伙伴捕获此信息，并在他们的所在端相应地记录此信息。 下面是显示此标识符的 HTTP 响应的示例：
+- 将项目成功导入 Office 365 中的邮箱时, 会将唯一标识符作为 HTTP 响应的一部分返回给调用方。 此标识符 (称为`x-IngestionCorrelationID`) 可用于合作伙伴进行项的端到端跟踪的后续故障排除目的。 建议合作伙伴捕获此信息，并在他们的所在端相应地记录此信息。 下面是显示此标识符的 HTTP 响应的示例：
 
     ```
     HTTP/1.1 200 OK
@@ -573,9 +575,9 @@ ms.locfileid: "35199801"
  
 - 您可以使用安全与合规中心中的内容搜索工具来搜索从第三方数据源导入到 Office 365 中的邮箱的项目。 若要专门搜索这些导入项, 可以在内容搜索的关键字框中使用以下消息属性-值对。
     
-  - **`kind:externaldata`**-使用此属性-值对可搜索所有第三方数据类型。 例如, 若要搜索从第三方数据源导入, 并在导入项目的 Subject 属性中包含 "contoso" 一词的项目, 请使用关键字查询`kind:externaldata AND subject:contoso`。
+  - **`kind:externaldata`**: 使用此属性-值对可搜索所有第三方数据类型。 例如, 若要搜索从第三方数据源导入, 并在导入项目的 Subject 属性中包含 "contoso" 一词的项目, 请使用关键字查询`kind:externaldata AND subject:contoso`。
     
-  - **`itemclass:ipm.externaldata.<third-party data type>`**-使用此属性-值对仅搜索第三方数据的指定类型。 例如, 若要在 Subject 属性中仅搜索包含 "contoso" 一词的 Facebook 数据, 则应使用关键字查询`itemclass:ipm.externaldata.Facebook* AND subject:contoso`。 
+  - **`itemclass:ipm.externaldata.<third-party data type>`**: 使用此属性-值对仅搜索第三方数据的指定类型。 例如, 若要在 Subject 属性中仅搜索包含 "contoso" 一词的 Facebook 数据, 则应使用关键字查询`itemclass:ipm.externaldata.Facebook* AND subject:contoso`。 
 
   有关用于`itemclass`属性的第三方数据类型的值的完整列表, 请参阅[使用内容搜索来搜索导入到 Office 365 的第三方数据](use-content-search-to-search-third-party-data-that-was-imported.md)
     
