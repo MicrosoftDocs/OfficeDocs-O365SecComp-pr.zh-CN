@@ -10,12 +10,12 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: M365-security-compliance
 description: 您的组织可以与 Microsoft 合作伙伴合作, 设置自定义连接器, 以便从数据源 (如 Salesforce Chatter、Yahoo Messenger 或 Yammer) 导入第三方数据。 这使您可以在 Office 365 中存档第三方数据源中的数据, 以便您可以使用 Office 365 合规性功能 (如合法保留、内容搜索和保留策略) 来管理组织的第三方数据的管理。
-ms.openlocfilehash: 99596953ce0f18c0cd7220f0955d251dbccb0e37
-ms.sourcegitcommit: 372691a3a886e5cc299961032ee334aef26fb904
+ms.openlocfilehash: a22b4226efb582969072bbd92149080cca9b749c
+ms.sourcegitcommit: 59039d3bf479c4b2c1d2e2556a0adc755f431a1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/19/2019
-ms.locfileid: "36464695"
+ms.lasthandoff: 08/20/2019
+ms.locfileid: "36473422"
 ---
 # <a name="work-with-a-partner-to-archive-third-party-data-in-office-365"></a>与合作伙伴合作, 以在 Office 365 中存档第三方数据
 
@@ -71,7 +71,7 @@ ms.locfileid: "36464695"
   
 ### <a name="17a-4-llc"></a>17a-4 LLC
 
-17a-4 LLC 支持以下第三方数据源：
+[17A-4 LLC](https://www.17a-4.com)支持以下第三方数据源:
   
 - BlackBerry
     
