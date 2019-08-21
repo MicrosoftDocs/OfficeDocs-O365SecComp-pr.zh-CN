@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 使用基于精确数据匹配的分类创建自定义敏感信息类型。
-ms.openlocfilehash: a937d5ccc947ee9322c5796cf49e9a8ff3eead16
-ms.sourcegitcommit: d4acce11a26536b9d6ca71ba4933fc95136198a4
+ms.openlocfilehash: 3c2b7cbabc77328f7d907927008e93606d40eded
+ms.sourcegitcommit: a5a7e43822336ed18d8f5879167766686cf6b2a3
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "36407904"
+ms.lasthandoff: 08/20/2019
+ms.locfileid: "36478191"
 ---
 # <a name="create-custom-sensitive-information-types-with-exact-data-match-based-classification"></a>使用基于精确数据匹配的分类创建自定义敏感信息类型
 
@@ -338,7 +338,7 @@ New-DlpSensitiveInformationTypeRulePackage -FileData $rulepack
 
 `EdmUploadAgent.exe /GetDataStore`
 
-你将看到数据存储区列表以及上次更新时间，类似于以下内容：
+你将看到数据存储区列表以及上次更新时间。
 
 继续设置 [刷新敏感信息数据库](#refreshing-your-sensitive-information-database)的流程和计划。
 

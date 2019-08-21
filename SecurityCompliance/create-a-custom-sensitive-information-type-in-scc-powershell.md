@@ -13,12 +13,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 了解如何在安全与合规中心创建并导入 DLP 的自定义敏感信息类型。
-ms.openlocfilehash: f038a37d2f049b49710c7f50e030bfe189be82b6
-ms.sourcegitcommit: 7a0cb7e1da39fc485fc29e7325b843d16b9808af
+ms.openlocfilehash: baf715b6bb3a09495d6b5efa47eee6ea0ec3160a
+ms.sourcegitcommit: a5a7e43822336ed18d8f5879167766686cf6b2a3
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/07/2019
-ms.locfileid: "36230926"
+ms.lasthandoff: 08/20/2019
+ms.locfileid: "36478231"
 ---
 # <a name="create-a-custom-sensitive-information-type-in-security--compliance-center-powershell"></a>使用安全与合规中心 PowerShell 创建自定义敏感信息类型
 
@@ -34,8 +34,7 @@ Office 365 中的数据丢失防护 (DLP) 包含许多内置[敏感信息类型]
 > 此外，还可以在安全与合规中心 UI 中创建不太复杂的自定义敏感信息类型。有关详细信息，请参阅[创建自定义敏感信息类型](create-a-custom-sensitive-information-type.md)。
 
 ## <a name="important-disclaimer"></a>重要免责声明
-
-由于客户环境和内容匹配要求的多样性，Microsoft 支持部门无法帮助提供自定义内容匹配定义（例如，定义自定义分类或正则表达式（也称为“RegEx”）模式）。对于自定义内容匹配的开发、测试和调试，Office 365 客户将需要依赖于内部 IT 资源，或使用 Microsoft 咨询服务 (MCS) 等外部咨询资源。支持工程师可提供针对该功能的有限支持，但无法保证任何自定义内容匹配开发都能满足客户的要求或义务。作为可提供的支持类型的示例，可以提供示例正则表达式模式以供测试使用。或者，支持人员可以帮助对现有 RegEx 模式（单个特定内容示例未按预期触发）进行故障排除。
+<!-- this is worded much better than the previous one is --> 由于客户环境和内容匹配要求的多样性，Microsoft 支持部门无法帮助提供自定义内容匹配定义（例如，定义自定义分类或正则表达式（也称为“RegEx”）模式）。对于自定义内容匹配的开发、测试和调试，Office 365 客户将需要依赖于内部 IT 资源，或使用 Microsoft 咨询服务 (MCS) 等外部咨询资源。支持工程师可提供针对该功能的有限支持，但无法保证任何自定义内容匹配开发都能满足客户的要求或义务。作为可提供的支持类型的示例，可以提供示例正则表达式模式以供测试使用。或者，支持人员可以帮助对现有 RegEx 模式（单个特定内容示例未按预期触发）进行故障排除。
 
  有关用于处理文本的 Boost.RegEx（以前称为 RegEx++）引擎的详细信息，请参阅 [Boost.Regex 5.1.3](https://www.boost.org/doc/libs/1_68_0/libs/regex/doc/html/)。
     
@@ -43,7 +42,7 @@ Office 365 中的数据丢失防护 (DLP) 包含许多内置[敏感信息类型]
 
 下面就是本主题将创建的规则包 XML 示例。下面各部分介绍了元素和特性。
   
-```
+```xml
 <?xml version="1.0" encoding="UTF-16"?>
 <RulePackage xmlns="http://schemas.microsoft.com/office/2011/mce">
 <RulePack id="DAD86A92-AB18-43BB-AB35-96F7C594ADAA">
@@ -129,9 +128,7 @@ Office 365 中的数据丢失防护 (DLP) 包含许多内置[敏感信息类型]
 
 开始前，有必要了解规则 XML 架构的基本结构，以及如何使用这种结构来定义用于标识适当内容的自定义敏感信息类型。
   
-一个规则定义一个或多个实体（即敏感信息类型），每个实体定义一个或多个模式。模式是 DLP 在评估电子邮件和文档等内容时查找的内容。
-  
-（术语简要说明：如果熟悉 DLP 策略，便会知道一个策略包含一个或多个规则，而规则又由条件和操作组成。不过，在本主题中，XML 标记使用规则来表示定义实体（亦称为“敏感信息类型”）的模式。所以，在本主题中，若看到规则，请联想到实体或敏感信息类型，而不是条件和操作。）
+一个规则定义一个或多个实体（即敏感信息类型），每个实体定义一个或多个模式。模式是 DLP 在评估电子邮件和文档等内容时查找的内容。  <!-- ok then this is going to be really confusing since the terminology changes.... --> （术语简要说明：如果熟悉 DLP 策略，便会知道一个策略包含一个或多个规则，而规则又由条件和操作组成。不过，在本主题中，XML 标记使用规则来表示定义实体（亦称为“敏感信息类型”）的模式。所以，在本主题中，若看到规则，请联想到实体或敏感信息类型，而不是条件和操作。）
   
 ### <a name="simplest-scenario-entity-with-one-pattern"></a>最简单方案：包含一个模式的实体
 
@@ -160,8 +157,7 @@ Office 365 中的数据丢失防护 (DLP) 包含许多内置[敏感信息类型]
 实体是包含明确定义的模式的敏感信息类型，如信用卡号。每个实体都有一个唯一 GUID 作为自己的 ID。
   
 ### <a name="name-the-entity-and-generate-its-guid"></a>命名实体并生成 GUID
-
-添加 Rule 和 Entity 元素。然后，添加注释以说明自定义实体的名称（在本示例中，为“员工 ID”）。稍后，将把实体名称添加到本地化字符串部分，此名称就是在创建 DLP 策略时在 UI 中看到的名称。
+<!-- why isn't the following in procedure format? --> 添加 Rule 和 Entity 元素。然后，添加注释以说明自定义实体的名称（在本示例中，为“员工 ID”）。稍后，将把实体名称添加到本地化字符串部分，此名称就是在创建 DLP 策略时在 UI 中看到的名称。
   
 接下来，生成实体 GUID。虽然生成 GUID 的方法有很多，但可通过在 PowerShell 中键入 [guid]::NewGuid() 轻松完成。稍后，也将把实体 GUID 添加到本地化字符串部分。
   
@@ -321,7 +317,7 @@ Rule 元素必须包含 LocalizedStrings 元素，因为其中包含引用自定
   
 Version 元素也很重要。当你首次上传规则包时，Office 365 会记录版本号。稍后，如果更新规则包并上传新版本，请务必更新版本号，否则 Office 365 便不会部署规则包。
   
-```
+```xml
 <?xml version="1.0" encoding="utf-16"?>
 <RulePackage xmlns="http://schemas.microsoft.com/office/2011/mce">
   <RulePack id=". . .">
@@ -363,13 +359,13 @@ Version 元素也很重要。当你首次上传规则包时，Office 365 会记�
     
 3. 使用以下语法：
 
-    ```
+    ```powershell
     New-DlpSensitiveInformationTypeRulePackage -FileData (Get-Content -Path "PathToUnicodeXMLFile" -Encoding Byte)
     ```
 
     本示例从 C:\My Documents 上传名为 MyNewRulePack.xml 的 Unicode XML 文件。
 
-    ```
+    ```powershell
     New-DlpSensitiveInformationTypeRulePackage -FileData (Get-Content -Path "C:\My Documents\MyNewRulePack.xml" -Encoding Byte)
     ```
 
@@ -393,7 +389,7 @@ Version 元素也很重要。当你首次上传规则包时，Office 365 会记�
 
   - 将 \<Name\> 替换为敏感信息类型的 Name 值（例如，员工 ID），然后运行 [Get-DlpSensitiveInformationType](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-dlp/get-dlpsensitiveinformationtype?view=exchange-ps) cmdlet：
 
-    ```
+    ```powershell
     Get-DlpSensitiveInformationType -Identity "<Name>"
     ```
     
@@ -557,7 +553,7 @@ Set-DlpSensitiveInformationTypeRulePackage -FileData ([Byte[]]$(Get-Content -Pat
 
 可复制此标记，并将它另存为 XSD 文件，以用来验证规则包 XML 文件。
   
-```
+```xml
 <?xml version="1.0" encoding="utf-8"?>
 <xs:schema xmlns:mce="http://schemas.microsoft.com/office/2011/mce"
            targetNamespace="http://schemas.microsoft.com/office/2011/mce" 

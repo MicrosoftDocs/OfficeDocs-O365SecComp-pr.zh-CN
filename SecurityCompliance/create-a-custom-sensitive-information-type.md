@@ -14,13 +14,14 @@ search.appverid:
 - MOE150
 - MET150
 description: 了解如何在安全与合规中心的图形用户界面中为 DLP 创建、修改、删除和测试自定义敏感信息类型。
-ms.openlocfilehash: e7b2d07c64d97eafee5b269bbc0e395855c2ab44
-ms.sourcegitcommit: 0a0d9c1325b4b0581018c31037dcc707d3d679b4
+ms.openlocfilehash: c291d7265df460113769b997aae49b5295d8727f
+ms.sourcegitcommit: a5a7e43822336ed18d8f5879167766686cf6b2a3
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "36279154"
+ms.lasthandoff: 08/20/2019
+ms.locfileid: "36478211"
 ---
+<!-- rename md file to match the display name -->
 # <a name="create-a-custom-sensitive-information-type-in-the-security--compliance-center"></a>在安全与合规中心内创建自定义敏感信息类型
 
 ## <a name="summary"></a>摘要
@@ -37,9 +38,9 @@ ms.locfileid: "36279154"
 
 - 自定义敏感信息类型需要熟悉正则表达式 (RegEx)。有关用于处理文本的 Boost.RegEx（以前称为 RegEx++）引擎的详细信息，请参阅 [Boost.Regex 5.1.3](https://www.boost.org/doc/libs/1_68_0/libs/regex/doc/html/)。
 
-  Microsoft 客户服务和支持人员无法协助提供自定义内容匹配定义（创建自定义分类或正则表达式模式）。支持工程师可提供有限的功能支持（例如，出于测试目的提供示例正则表达式模式，或协助排查未按预期触发的现有正则表达式模式），但无法保证任何自定义内容匹配开发能够满足你的需求或履行你的义务。
+  在创建自定义分类或正则表达式模式时，不可从 Microsoft 客户服务和支持获取帮助。 支持工程师可对功能提供有限的支持，例如提供用于测试目的的示例正则表达式，或者帮助排查未如期触发的现有正则表达式模式的问题，但无法保证所有自定义内容匹配开发都将满足你的要求或义务。
 
-- DLP 使用搜索爬网程序标识并分类 SharePoint Online 和 OneDrive for Business 网站中的敏感信息。若要在现有内容中标识新自定义敏感信息类型，必须对内容进行重新爬网。虽然内容重新爬网是按日程安排进行，但你也可以手动对网站集、列表或库的内容进行重新爬网。有关详细信息，请参阅[手动请求对网站、库或列表进行爬网和重新编制索引](https://docs.microsoft.com/sharepoint/crawl-site-content)。
+- DLP 使用搜索爬网程序来确定 SharePoint Online 和 OneDrive for Business 网站中的敏感信息并对其分类。 要确定现有内容中新的自定义敏感信息类型，必须对该内容重新爬网。 根据计划对内容进行爬网，但你可手动重新爬网内容来查找网站集、列表或库。 有关详细信息，请参阅[Manually request crawling and re-indexing of a site, a library or a list](https://docs.microsoft.com/sharepoint/crawl-site-content)（手动请求对网站、库或列表进行爬网和重新编制索引）。
 
 ## <a name="create-custom-sensitive-information-types-in-the-security--compliance-center"></a>在安全与合规中心内创建自定义敏感信息类型
 
@@ -118,7 +119,7 @@ ms.locfileid: "36279154"
 ## <a name="modify-custom-sensitive-information-types-in-the-security--compliance-center"></a>在安全与合规中心内修改自定义敏感信息类型
 
 **注意**：
-
+<!-- check to see if this note contradicts the guidance in "customize a built in sensitive information type https://docs.microsoft.com/en-us/office365/securitycompliance/customize-a-built-in-sensitive-information-type it sure seems like it does-->
 - 只能修改自定义敏感信息类型；不能修改内置敏感信息类型。不过，可使用 PowerShell 导出内置自定义敏感信息类型，然后自定义它们，并将它们作为自定义敏感信息类型导入。有关详细信息，请参阅[自定义内置敏感信息类型](customize-a-built-in-sensitive-information-type.md)。
 
 - 只能修改在 UI 中创建的自定义敏感信息类型。如果使用 [PowerShell 过程](create-a-custom-sensitive-information-type-in-scc-powershell.md)导入自定义敏感信息类型规则包，将收到一个错误。

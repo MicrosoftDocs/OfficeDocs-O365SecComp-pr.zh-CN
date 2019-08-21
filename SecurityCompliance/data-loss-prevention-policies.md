@@ -15,15 +15,15 @@ ms.collection:
 search.appverid:
 - MET150
 description: 通过安全 &amp; 合规中心的数据丢失防护 (DLP) 策略，可在 Office 365 内识别、监视和自动保护敏感数据。
-ms.openlocfilehash: 9209adfa913b753ccbb665959cd165d3f2362d0a
-ms.sourcegitcommit: 19939bc577937ff5e423500e9bedc0c29f729e20
+ms.openlocfilehash: 3b108e292e7c7942e471d345b11124beac52f369
+ms.sourcegitcommit: a5a7e43822336ed18d8f5879167766686cf6b2a3
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36393912"
+ms.lasthandoff: 08/20/2019
+ms.locfileid: "36478241"
 ---
 # <a name="overview-of-data-loss-prevention"></a>数据丢失防护概述
-
+<!-- this topic needs to be split into smaller, more coherent ones. It is confusing as it is. -->
 > [!NOTE]
 > 对于具有 Office 365 高级合规版许可证的用户，最近为 Microsoft Teams 聊天和频道消息添加了数据丢失防护功能。它是一种独立选项，包含在 Office 365 E5 和 Microsoft 365 E5 合规版中。 要详细了解许可要求，请参阅 [Microsoft 365 租户级服务许可指南](https://docs.microsoft.com/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance)。
 
@@ -314,6 +314,7 @@ DLP 策略的要求通常比较简单，例如标识包含美国社会安全号�
 ## <a name="using-a-label-as-a-condition-in-a-dlp-policy"></a>将标签用作 DLP 策略中的条件
 
 可创建一个标签，再执行以下操作：
+<!-- what kind of label? -->
   
 - **发布**标签，让最终用户可看到此标签并可在内容中手动应用它。 
     
@@ -450,12 +451,14 @@ DLP 使用深入内容分析（而不仅仅是简单的文本扫描）来检测�
 - Microsoft Teams 频道和聊天消息
     
 该策略同步到正确的位置后，它将开始评估内容并强制执行操作。
+<!-- what is the time delay for first deployment of a policy and what is the sync schedule? -->
   
 ### <a name="policy-evaluation-in-onedrive-for-business-and-sharepoint-online-sites"></a>OneDrive for Business 和 SharePoint Online 站点中的策略评估
 
 文档在你的所有 SharePoint Online 站点和 OneDrive for Business 站点中会不断更改，用户会持续对文档执行创建、编辑、共享等操作。 这意味着文档可能随时会与 DLP 策略发生冲突，或变为合规状态。 例如，一个用户上载的文档可能不包含与团队站点相关的敏感信息，但之后，另一个客户可能会编辑同一文档，并向文档添加了敏感信息。
   
 为此，DLP 策略经常检查后台中是否包含与策略相符的文档。 您可以将这视为异步策略评估。
+<!-- what is the frequency? looks like it is tied to the search crawl schedule -->
   
 #### <a name="how-it-works"></a>运作方式
  
@@ -463,7 +466,7 @@ DLP 使用深入内容分析（而不仅仅是简单的文本扫描）来检测�
   
 ![显示 DLP 策略如何异步计算内容的图表](media/bdf73099-039a-4909-ae89-ac12c41992ba.png)
   
-最后，文档可能与 DLP 策略相冲突，但也可能符合 DLP 策略。例如，如果用户将信用卡号添加到文档，可能会导致 DLP 策略自动阻止对该文档的访问。但是，如果该用户稍后删除此敏感信息，则下一次根据此策略对此文档进行评估时，该操作（在这种情况下，阻止操作）将自动撤消。
+<!-- conflict with a DLP policy is bad wording --> 最后，文档可能与 DLP 策略相冲突，但也可能符合 DLP 策略。例如，如果用户将信用卡号添加到文档，可能会导致 DLP 策略自动阻止对该文档的访问。但是，如果该用户稍后删除此敏感信息，则下一次根据此策略对此文档进行评估时，该操作（在这种情况下，阻止操作）将自动撤消。
   
 DLP 评估可编制索引的任何内容。 有关默认的爬网文件类型的详细信息，请参阅 [SharePoint Server 中的默认爬网文件扩展名和分析文件类型](https://docs.microsoft.com/SharePoint/technical-reference/default-crawled-file-name-extensions-and-parsed-file-types)。
   
@@ -475,12 +478,14 @@ DLP 评估可编制索引的任何内容。 有关默认的爬网文件类型的
   
 ### <a name="policy-evaluation-in-the-office-desktop-programs"></a>Office 桌面程序中的策略评估
 
+<!-- same capability to identify sensitive information line conflates sensitive information types and such -->
 Excel、PowerPoint 和 Word 包含相同的功能，可像 SharePoint Online 和 OneDrive for Business 一样识别敏感信息和应用 DLP 策略。 这些 Office 程序直接从中心策略存储同步其 DLP 策略，然后在用户处理从包含在 DLP 策略中的网站打开的文档时，不断根据 DLP 策略对内容进行评估。
   
 Office 中的 DLP 策略评估旨在不对程序的性能或处理内容的用户的工作效率产生任何影响。 如果他们正在处理大型文档，或用户的计算机正忙，可能需要几秒钟才能显示策略提示。
 
 ### <a name="policy-evaluation-in-microsoft-teams"></a>Microsoft Teams 中的策略评估
- 
+ <!--what do you mean that it's synched to user accounts?  I thought DLP policies were applied to locations not users like sensitivity labels are  -->
+
 当创建一个将 Microsoft Teams 包含为位置的 DLP 策略时，系统会将策略从 Office 365 安全 &amp; 合规中心同步到用户帐户和 Microsoft Teams 频道和聊天消息。 根据 DLP 策略的配置方式，当某人尝试在 Microsoft Teams 聊天或频道消息中共享敏感信息时，可以阻止或撤消该消息。 并且，这些用户将无法打开包含敏感信息以及与来宾（外部用户）共享的文档。 若要了解详细信息，请参阅[数据丢失防护和 Microsoft Teams](dlp-microsoft-teams.md)。
  
 ## <a name="permissions"></a>权限
