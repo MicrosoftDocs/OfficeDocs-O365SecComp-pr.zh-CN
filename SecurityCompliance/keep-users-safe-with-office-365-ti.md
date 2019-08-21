@@ -3,7 +3,7 @@ title: 使用 Office 365 威胁调查和响应功能保持 Office 365 用户安�
 ms.author: deniseb
 author: denisebmsft
 manager: dansimp
-ms.date: 07/09/2019
+ms.date: 08/20/2019
 audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
@@ -15,12 +15,12 @@ ms.assetid: 3387bfc3-028a-42f4-8133-4cbecfaab812
 ms.collection:
 - M365-security-compliance
 description: 了解 Office 365 威胁调查和响应功能如何帮助您的组织检测入侵和威胁, 并快速缓解和恢复威胁。
-ms.openlocfilehash: 28fbf0a66370e2e1d407454017943e57f5f368b1
-ms.sourcegitcommit: 32ecff689ae32c59a39b7633ca0f36a304e7516e
+ms.openlocfilehash: 2170bf53247412ecf0ae1b9ca13286a6df8a6336
+ms.sourcegitcommit: a5a7e43822336ed18d8f5879167766686cf6b2a3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/09/2019
-ms.locfileid: "35598978"
+ms.lasthandoff: 08/20/2019
+ms.locfileid: "36478171"
 ---
 # <a name="keep-your-office-365-users-safe-with-office-365-threat-investigation-and-response-capabilities"></a>使用 Office 365 威胁调查和响应功能保持 Office 365 用户安全
 
@@ -28,13 +28,13 @@ ms.locfileid: "35598978"
 
 您是否知道您的 Office 365 用户受攻击或更糟的威胁？ 知道如何缓解和恢复面向用户的攻击？ 您是否知道您可以使用 Office 365 中已有的安全功能完全完成此操作？ 
   
-Office 365 中的[威胁调查和响应](office-365-ti.md)功能包含在 Office 365 E5 订阅中 (作为 Office 365 高级威胁防护计划2的一部分)。 这些功能已帮助 Microsoft IT 缩短了 80% 的社会工程活动的平均解决时间, 以及与前两个季度相比每月 37% 的增长率。 
+Office 365 中的[威胁调查和响应](office-365-ti.md)功能包含在 Office 365 E5 订阅中 (作为[Office 365 高级威胁防护](office-365-atp.md)计划2的一部分)。 这些功能已帮助 Microsoft IT 缩短了 80% 的社会工程活动的平均解决时间, 以及与前两个季度相比每月 37% 的增长率。 
 
 我们最近添加了新功能, 可帮助改进检测和恢复威胁的方式! 下面简单介绍了更新后的威胁调查和响应功能如何提高效率。
   
 ## <a name="detect-intrusions-and-threats"></a>检测入侵和威胁
 
-[威胁浏览器 (或实时检测)](threat-explorer.md)(也称为 "威胁浏览器") 可帮助安全管理员和分析师识别和理解企业中的活动威胁, 因为看似无害的用户配置 (如安全) 可能会规避最复杂的安全设置发件人白名单。 资源管理器可帮助 Office 365 全局或安全管理员快速确定用户是否已被威胁 (如恶意软件或网络钓鱼诈骗) 所危害。 这有助于确定哪些用户最面临威胁的风险以及必需的响应的优先级。 
+[威胁浏览器 (或实时检测)](threat-explorer.md)(也称为浏览器) 可帮助安全管理员和分析师识别和理解企业中的活动威胁, 因为看似无害的用户配置 (如安全发件人) 可能会规避最复杂的安全设置名单. 资源管理器可帮助 Office 365 全局或安全管理员快速确定用户是否已被威胁 (如恶意软件或网络钓鱼诈骗) 所危害。 这有助于确定哪些用户最面临威胁的风险以及必需的响应的优先级。 
   
 资源管理器还可帮助管理员导航用户和邮件之间的关系。 知道有误的特定邮件吗？ 搜索它以查看哪些用户收到了邮件, 然后按照一系列事件进行操作, 并查看这些用户接下来的操作。
 
@@ -56,7 +56,6 @@ Office 365 中的[威胁调查和响应](office-365-ti.md)功能包含在 Office
 
 Office 365 威胁调查和响应功能使用 Microsoft 智能安全图形中的数据提供支持。 Graph 从 1000000000 Windows 设备、450000000000每月 Azure 登录和 400000000000 Office 365 中的每月电子邮件获取最新的威胁信号。 这一无与伦比的威胁信号是为管理员和安全分析员提供了对影响其组织的威胁的完整视图的客户租户的广泛可见性。 
   
-   
 ## <a name="why-use-office-365-threat-investigation-and-response-capabilities"></a>为什么要使用 Office 365 威胁调查和响应功能？
 
 Gartner 估计在2017中仅限 $ 90B 用在 cybersecurity 上。 Sid Deshpande (Gartner 的主要研究分析师) 的报价如下所示: "业界转向检测和响应的方式 .。。 发送清除阻止的 futile, 除非将其绑定到检测和响应功能。 威胁调查和响应是每个企业的一系列服务的关键组成部分, 可作为独立服务或作为 Office 365 E5 的一部分使用。
