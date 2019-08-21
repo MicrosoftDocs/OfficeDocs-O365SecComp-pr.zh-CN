@@ -1,5 +1,5 @@
 ---
-title: 使用 Office 365 威胁调查和响应功能保持 Office 365 用户安全
+title: 使用 Office 365 威胁调查和响应功能保持组织安全
 ms.author: deniseb
 author: denisebmsft
 manager: dansimp
@@ -15,14 +15,14 @@ ms.assetid: 3387bfc3-028a-42f4-8133-4cbecfaab812
 ms.collection:
 - M365-security-compliance
 description: 了解 Office 365 威胁调查和响应功能如何帮助您的组织检测入侵和威胁, 并快速缓解和恢复威胁。
-ms.openlocfilehash: 2170bf53247412ecf0ae1b9ca13286a6df8a6336
-ms.sourcegitcommit: a5a7e43822336ed18d8f5879167766686cf6b2a3
+ms.openlocfilehash: baedfb1ff74117bd2ed36cdf4551f898d377a971
+ms.sourcegitcommit: 4fd64e1811ae96633035cbc9cab1dbef3cbba34d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/20/2019
-ms.locfileid: "36478171"
+ms.lasthandoff: 08/21/2019
+ms.locfileid: "36484395"
 ---
-# <a name="keep-your-office-365-users-safe-with-office-365-threat-investigation-and-response-capabilities"></a>使用 Office 365 威胁调查和响应功能保持 Office 365 用户安全
+# <a name="keep-your-organization-safe-with-office-365-threat-investigation-and-response-capabilities"></a>使用 Office 365 威胁调查和响应功能保持组织安全
 
 ## <a name="overview"></a>概述
 
