@@ -3,19 +3,19 @@ title: 欧盟国家身份证号
 ms.author: stephow
 author: stephow-MSFT
 manager: laurawi
-ms.date: 8/17/2018
+ms.date: ''
 audience: Admin
 ms.topic: reference
 ms.service: O365-seccomp
 ms.collection: M365-security-compliance
 localization_priority: Normal
 description: 本主题介绍当数据丢失防护 (DLP) 策略检测到欧盟国家身份证的敏感信息类型时, 会对其进行查找。 此敏感信息类型为每个国家/地区定义不同的模式、关键字和其他证据。
-ms.openlocfilehash: 205019d040648f0600f3dbf4403063edf9f31c41
-ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
+ms.openlocfilehash: cbcacb3f85877f5a84238468fb52d612d90f5f0b
+ms.sourcegitcommit: 3f3f3ecb28ef65d023f3573f9a4e09a0586d8f53
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "34154454"
+ms.lasthandoff: 08/21/2019
+ms.locfileid: "36490769"
 ---
 # <a name="eu-national-identification-number"></a>欧盟国家身份证号
 
@@ -59,7 +59,7 @@ ms.locfileid: "34154454"
 
 ### <a name="keywords"></a>关键字
 
-#### <a name="keywordsaustriaeunationalidcard"></a>Keywords_austria_eu_national_id_card
+#### <a name="keywords_austria_eu_national_id_card"></a>Keywords_austria_eu_national_id_card
 
 奥地利身份证号码
   
@@ -123,7 +123,7 @@ personalausweis republik österreich
 
 ### <a name="keywords"></a>关键字
 
-#### <a name="keywordsbulgarianationalnumber"></a>Keywords_bulgaria_national_number
+#### <a name="keywords_bulgaria_national_number"></a>Keywords_bulgaria_national_number
 
 egn
   
@@ -137,7 +137,7 @@ social security number
   
 nationalnumber#
   
-ssn
+ssn#
   
 ssn
   
@@ -197,7 +197,7 @@ edinen grazhdanski nomer
 
 ### <a name="keywords"></a>关键字
 
-#### <a name="keywordscypruseunationalidcard"></a>Keywords_cyprus_eu_national_id_card
+#### <a name="keywords_cyprus_eu_national_id_card"></a>Keywords_cyprus_eu_national_id_card
 
 id 卡号
   
@@ -266,7 +266,7 @@ national identification number
 
 ### <a name="keywords"></a>关键字
 
-#### <a name="keywordsestoniaeunationalidcard"></a>Keywords_estonia_eu_national_id_card
+#### <a name="keywords_estonia_eu_national_id_card"></a>Keywords_estonia_eu_national_id_card
 
 个人标识代码
   
@@ -350,7 +350,7 @@ id-kaart
 
 ### <a name="keywords"></a>关键字
 
-#### <a name="keywordshungaryeunationalidcard"></a>Keywords_hungary_eu_national_id_card
+#### <a name="keywords_hungary_eu_national_id_card"></a>Keywords_hungary_eu_national_id_card
 
 个人标识号
   
@@ -417,7 +417,7 @@ személyazonosító igazolvány
 
 ### <a name="keywords"></a>关键字
 
-#### <a name="keywordsirelandeunationalidcard"></a>Keywords_ireland_eu_national_id_card
+#### <a name="keywords_ireland_eu_national_id_card"></a>Keywords_ireland_eu_national_id_card
 
 个人公开服务号码
   
@@ -491,7 +491,7 @@ uimh. psp
 
 ### <a name="keywords"></a>关键字
 
-#### <a name="keywordsitalyeunationalidcard"></a>Keywords_italy_eu_national_id_card
+#### <a name="keywords_italy_eu_national_id_card"></a>Keywords_italy_eu_national_id_card
 
 个人代码
   
@@ -519,7 +519,7 @@ codice id personale
   
 codice fiscale
   
-## <a name="italy"></a>意大利
+## <a name="latvia"></a>拉脱维亚
 
 ### <a name="format"></a>Format
 
@@ -567,7 +567,7 @@ codice fiscale
 
 ### <a name="keywords"></a>关键字
 
-#### <a name="keywordslatviaeunationalidcard"></a>Keywords_latvia_eu_national_id_card
+#### <a name="keywords_latvia_eu_national_id_card"></a>Keywords_latvia_eu_national_id_card
 
 个人代码
   
@@ -632,7 +632,7 @@ personalcodeno#
 
 ### <a name="keywords"></a>关键字
 
-#### <a name="keywordslithuaniaeunationalidcard"></a>Keywords_lithuania_eu_national_id_card
+#### <a name="keywords_lithuania_eu_national_id_card"></a>Keywords_lithuania_eu_national_id_card
 
 个人数字代码
   
@@ -697,7 +697,7 @@ asmens kodas.
 
 ### <a name="keywords"></a>关键字
 
-#### <a name="keywordsluxemburgeunationalidcard"></a>Keywords_luxemburg_eu_national_id_card
+#### <a name="keywords_luxemburg_eu_national_id_card"></a>Keywords_luxemburg_eu_national_id_card
 
 个人 id
   
@@ -778,7 +778,7 @@ eindeutigeid#
 
 ### <a name="keywords"></a>关键字
 
-#### <a name="keywordsmaltaeunationalidcard"></a>Keywords_malta_eu_national_id_card
+#### <a name="keywords_malta_eu_national_id_card"></a>Keywords_malta_eu_national_id_card
 
 个人数字代码
   
@@ -839,7 +839,7 @@ numru ta "identità uniku
 
 ### <a name="keywords"></a>关键字
 
-#### <a name="keywordsnetherlandseunationalidcard"></a>Keywords_netherlands_eu_national_id_card
+#### <a name="keywords_netherlands_eu_national_id_card"></a>Keywords_netherlands_eu_national_id_card
 
 个人数字代码
   
@@ -853,7 +853,7 @@ uniqueidentityno#
   
 bsn
   
-bsn
+bsn#
   
 persoonlijke numerieke 代码
   
@@ -912,7 +912,7 @@ uniek identiteitsnummer
 
 ### <a name="keywords"></a>关键字
 
-#### <a name="keywordsromaniaeunationalidcard"></a>Keywords_romania_eu_national_id_card
+#### <a name="keywords_romania_eu_national_id_card"></a>Keywords_romania_eu_national_id_card
 
 个人数字代码
   
@@ -924,7 +924,7 @@ cnp#
   
 针
   
-针
+针#
   
 保险号
   
@@ -993,7 +993,7 @@ numărpersonalunic#
 
 ### <a name="keywords"></a>关键字
 
-#### <a name="keywordsslovakiaeunationalidcard"></a>Keywords_slovakia_eu_national_id_card
+#### <a name="keywords_slovakia_eu_national_id_card"></a>Keywords_slovakia_eu_national_id_card
 
 出生号码
   
@@ -1005,7 +1005,7 @@ social security number
   
 nationalnumber#
   
-ssn
+ssn#
   
 ssn
   
@@ -1070,7 +1070,7 @@ rodne cislo
 
 ### <a name="keywords"></a>关键字
 
-#### <a name="keywordssloveniaeunationalidcard"></a>Keywords_slovenia_eu_national_id_card
+#### <a name="keywords_slovenia_eu_national_id_card"></a>Keywords_slovenia_eu_national_id_card
 
 个人数字代码
   
@@ -1086,7 +1086,7 @@ uniqueidentityno#
   
 edinstvena identifikacijska številka
   
-uniqueidentityno #
+uniqueidentityno#
   
 edinstvena številka glavnega državljana
   
@@ -1130,7 +1130,7 @@ emšo
 
 ### <a name="keywords"></a>关键字
 
-#### <a name="keywordsspaineunationalidcard"></a>Keywords_spain_eu_national_id_card
+#### <a name="keywords_spain_eu_national_id_card"></a>Keywords_spain_eu_national_id_card
 
 dni
   
@@ -1150,9 +1150,9 @@ national identification number
   
 nationalidno#
   
-uniqueid
+uniqueid#
   
-dni
+dni#
   
 nationalid#
   

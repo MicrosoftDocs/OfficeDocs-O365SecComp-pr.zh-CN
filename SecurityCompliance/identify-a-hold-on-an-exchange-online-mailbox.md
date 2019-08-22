@@ -13,12 +13,12 @@ search.appverid:
 - MET150
 ms.assetid: 6057daa8-6372-4e77-a636-7ea599a76128
 description: 了解如何识别可在 Office 365 邮箱中放置的不同类型的保留。 这些保留类型包括诉讼保留、电子数据展示保留和 Office 365 保留策略。 您还可以确定是否已从组织范围的保留策略中排除了用户
-ms.openlocfilehash: c1eacf1a15a3d1e8f0e5f9e0673556de218cd1e1
-ms.sourcegitcommit: f88f14999aeb70ecf265cd98eb09a3304b150be8
+ms.openlocfilehash: 47e7ffff1703c0de94f014dc18e249cc9775e3e2
+ms.sourcegitcommit: 873c5bc0e6cd1ca3dfdb3a99a5371353b419311f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/07/2019
-ms.locfileid: "34768937"
+ms.lasthandoff: 08/22/2019
+ms.locfileid: "36493153"
 ---
 # <a name="how-to-identify-the-type-of-hold-placed-on-an-exchange-online-mailbox"></a>如何识别为 Exchange Online 邮箱设置的保留类型
 
@@ -26,32 +26,32 @@ ms.locfileid: "34768937"
 
 Office 365 提供了多种方法, 使您的组织可以阻止邮箱内容被永久删除。 这使您的组织可以保留内容以满足合规性管理法规或在法律和其他类型的调查过程中。 下面列出了 Office 365 中的保留功能 (也称为 "*保留*"):
 
-- **诉讼保留**–适用于 Exchange Online 中的用户邮箱的诉讼保留。
+- **[诉讼保留](create-a-litigation-hold.md):** 应用于 Exchange Online 中的用户邮箱的保留。
 
-- 与安全与合规中心中的电子数据展示案例相关联的**电子数据展示保留**–保留。 电子数据展示保留可应用于用户邮箱以及 Office 365 组和 Microsoft 团队对应的邮箱。
+- **[电子数据展示保留](ediscovery-cases.md#step-4-place-content-locations-on-hold):** 与安全与合规中心中的电子数据展示事例相关联的保留项。 电子数据展示保留可应用于用户邮箱以及 Office 365 组和 Microsoft 团队对应的邮箱。
 
-- 在 Exchange Online 中使用 Exchange 管理中心内的 "就地电子数据展示 & 保留" 工具将应用于用户邮箱的**就地保留**–保留。
+- **[就地保留](https://docs.microsoft.com/Exchange/security-and-compliance/create-or-remove-in-place-holds):** 使用 exchange Online 中 Exchange 管理中心的就地电子数据展示 & 保留工具对用户邮箱应用的保留。
 
-- **Office 365 保留策略**-可以配置为保留 (或保留并删除) Exchange Online 中的用户邮箱中的内容, 以及 Office 365 组和 Microsoft 团队对应的邮箱中的内容。 您还可以创建保留策略以保留 Skype for Business 对话, 这些会话存储在用户邮箱中。
+- ** [Office 365 保留策略](retention-policies.md):** 可以配置为保留 (或保留并删除) Exchange Online 中的用户邮箱中的内容, 以及 Office 365 组和 Microsoft 团队对应的邮箱中的内容。 您还可以创建保留策略以保留 Skype for Business 对话, 这些会话存储在用户邮箱中。
 
   有两种类型的 Office 365 保留策略可分配给邮箱。
 
-    - **特定位置保留策略**-这些是分配给特定用户的内容位置的策略。 您可以使用 Exchange Online PowerShell 中的**邮箱获取**cmdlet 获取有关分配给特定邮箱的保留策略的信息。
+    - **特定位置保留策略:** 这些是分配给特定用户的内容位置的策略。 您可以使用 Exchange Online PowerShell 中的**邮箱获取**cmdlet 获取有关分配给特定邮箱的保留策略的信息。
 
-    - **组织范围内的保留策略**-这些策略是分配给组织中的所有内容位置的策略。 您可以使用 Exchange Online PowerShell 中的**set-organizationconfig** cmdlet 来获取有关组织范围的保留策略的信息。
+    - **组织范围内的保留策略:** 这些是分配给组织中的所有内容位置的策略。 您可以使用 Exchange Online PowerShell 中的**set-organizationconfig** cmdlet 来获取有关组织范围的保留策略的信息。
   有关详细信息, 请参阅[Office 365 保留策略概述](retention-policies.md#applying-a-retention-policy-to-an-entire-organization-or-specific-locations)中的 "将保留策略应用于整个组织或特定位置" 部分。
 
-- **Office 365 保留标签**–如果用户应用 Office 365 保留标签 (配置为保留内容或保留内容, 然后将内容删除) 到其邮箱中的*任何*文件夹或项目中, 则邮箱上的保留将与邮箱被放在邮箱之外, 就像邮箱是置于诉讼保留或分配到 Office 365 保留策略。 有关详细信息, 请参阅[保留邮箱处于保留状态, 因为已将保留标签应用于本文中的文件夹或项目](#identifying-mailboxes-on-hold-because-a-retention-label-has-been-applied-to-a-folder-or-item)部分。
+- **[Office 365 保留标签](labels.md):** 如果用户应用 Office 365 保留标签 (配置为保留内容或保留内容, 然后将内容删除) 到其邮箱中的*任何*文件夹或项目中, 则邮箱上的保留将放置在邮箱中, 就像邮箱是置于诉讼保留或分配到 Office 365 保留策略。 有关详细信息, 请参阅[保留邮箱处于保留状态, 因为已将保留标签应用于本文中的文件夹或项目](#identifying-mailboxes-on-hold-because-a-retention-label-has-been-applied-to-a-folder-or-item)部分。
 
 若要管理处于保留状态的邮箱, 您可能需要确定邮箱中放置的保留类型, 以便可以执行诸如更改保留持续时间、临时或永久删除保留或从 Office 365 保留策略中排除邮箱等任务。 在这些情况下, 第一步是确定邮箱上放置的保留类型。 由于多个保留 (和不同类型的保留) 可以放置在单个邮箱上, 因此, 如果您想要删除或更改保留, 则必须标识邮箱中的所有保留项。
 
 ## <a name="step-1-obtain-the-guid-for-holds-placed-on-a-mailbox"></a>步骤 1: 获取邮箱上放置的保留的 GUID
 
-您可以在 Exchange Online PowerShell 中运行以下两个 cmdlet, 以获取邮箱中放置的保留的 GUID。 获取 GUID 后, 可以使用它来标识步骤2中的特定保留。 请注意, 不会通过 GUID 来标识诉讼保留。 为邮箱启用或禁用诉讼保留。
+您可以在 Exchange Online PowerShell 中运行以下两个 cmdlet, 以获取邮箱中放置的保留的 GUID。 获取 GUID 后, 可以使用它来标识步骤2中的特定保留。 GUID 未标识诉讼保留。 为邮箱启用或禁用诉讼保留。
 
-- **获取邮箱**–使用此 cmdlet 可确定是否为邮箱启用了诉讼保留, 并获取专门分配给邮箱的电子数据展示保留、就地保留和 Office 365 保留策略的 guid。 此 cmdlet 的输出还将指示是否已从组织范围的保留策略中显式排除了邮箱。
+- **获取邮箱:** 此 cmdlet 可用于确定是否对邮箱启用了诉讼保留, 并获取专门分配给邮箱的电子数据展示保留、就地保留和 Office 365 保留策略的 Guid。 此 cmdlet 的输出还将指示是否已从组织范围的保留策略中显式排除了邮箱。
 
-- **Set-organizationconfig** –使用此 cmdlet 可获取组织范围的保留策略的 guid。
+- **Set-organizationconfig:** 此 cmdlet 可用于获取组织范围的保留策略的 Guid。
 
 若要连接到 Exchange Online PowerShell，请参阅[连接到 Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell?view=exchange-ps)。
 
@@ -111,7 +111,7 @@ Get-OrganizationConfig | FL InPlaceHolds
 
 |值  |说明  |
 |---------|---------|
-|**1**     | 指示保留策略配置为删除项目。 策略不会保留项目。        |
+|**1**     | 指示保留策略已配置为删除项目。 策略不会保留项目。        |
 |**双面**    |    指示保留策略配置为保留项目。 在保留期过期后, 策略不会删除项目。     |
 |**第三章**     |   指示保留策略配置为保留项目, 然后在保留期过期后将其删除。      |
 
@@ -146,7 +146,7 @@ $CaseHold | FL Name,ExchangeLocation
 ```
 Get-MailboxSearch -InPlaceHoldIdentity <hold GUID> | FL Name,SourceMailboxes
 ```
-请注意, 如果就地保留的 GUID 以`cld`前缀开头, 请确保在运行前一个命令时包含前缀。
+如果就地保留的 GUID 以`cld`前缀开头, 请确保在运行前一个命令时包含前缀。
 
 ### <a name="office-365-retention-policies"></a>Office 365 保留策略
 
@@ -174,7 +174,7 @@ Get-Mailbox <username> |FL ComplianceTagHoldApplied
 
 ## <a name="managing-mailboxes-on-delay-hold"></a>在延迟保留时管理邮箱
 
-从邮箱中删除了任何类型的保留后, *DelayHoldApplied*邮箱属性的值将设置为**True**。 下次托管文件夹助理处理邮箱并检测已删除保留时, 会发生此情况。 这称为*延迟保留*, 表示实际删除保留的延迟为30天, 以防止永久删除 (清除) 邮箱中的数据。 这使管理员有机会搜索或恢复在实际删除保留后将清除的邮箱项目。 将延迟保留放在邮箱上时, 该邮箱仍被视为无限持续时间处于保留状态, 就像该邮箱处于诉讼保留状态一样。 30天后, 延迟保留过期, Office 365 将自动尝试删除延迟保留 (通过将*DelayHoldApplied*属性设置为**False**), 以便删除保留。 在*DelayHoldApplied*属性设置为**False**之后, 在下一次托管文件夹助理处理邮箱时, 将清除标记为要删除的项目。
+从邮箱中删除了任何类型的保留后, *DelayHoldApplied*邮箱属性的值将设置为**True**。 下次托管文件夹助理处理邮箱并检测已删除保留时, 会发生此情况。 这称为*延迟保留*, 表示实际删除保留的延迟为30天, 以防止永久删除 (清除) 邮箱中的数据。 这使管理员有机会搜索或恢复在删除保留后将清除的邮箱项目。 将延迟保留放在邮箱上时, 该邮箱仍被视为无限持续时间处于保留状态, 就像该邮箱处于诉讼保留状态一样。 30天后, 延迟保留过期, Office 365 将自动尝试删除延迟保留 (通过将*DelayHoldApplied*属性设置为**False**), 以便删除保留。 在*DelayHoldApplied*属性设置为**False**后, 在下一次托管文件夹助理处理邮箱时, 将清除标记为要删除的项目。
 
 若要查看邮箱的*DelayHoldApplied*属性的值, 请在 Exchange Online PowerShell 中运行以下命令。
 
@@ -187,7 +187,7 @@ Get-Mailbox <username> | FL DelayHoldApplied
 ```
 Set-Mailbox <username> -RemoveDelayHoldApplied
 ```
-请注意, 您必须在 Exchange Online 中向您分配 "合法保留" 角色, 才能使用*RemoveDelayHoldApplied*参数 
+您必须在 Exchange Online 中向您分配 "合法保留" 角色, 才能使用*RemoveDelayHoldApplied*参数 
 
 若要删除非活动邮箱的延迟保留, 请在 Exchange Online PowerShell 中运行以下命令:
 
@@ -202,7 +202,7 @@ Set-Mailbox <DN or Exchange GUID> -InactiveMailbox -RemoveDelayHoldApplied
 
 在确定了应用于邮箱的保留后, 可以执行一些任务, 如更改保留的持续时间、临时或永久删除保留或从 Office 365 保留策略中排除非活动邮箱。 有关执行与保留相关的任务的详细信息, 请参阅下列主题之一:
 
-- 在 Security & 合规中心 PowerShell 中运行[new-retentioncompliancepolicy-AddExchangeLocationException \<user 邮箱>](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-retention/Set-RetentionCompliancePolicy?view=exchange-ps)命令, 以从组织范围内的 Office 365 保留策略中排除邮箱。 请注意, 此命令仅可用于*ExchangeLocation*属性值等于`All`的保留策略。
+- 在 Security & 合规中心 PowerShell 中运行[new-retentioncompliancepolicy-AddExchangeLocationException \<user 邮箱>](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-retention/Set-RetentionCompliancePolicy?view=exchange-ps)命令, 以从组织范围内的 Office 365 保留策略中排除邮箱。 此命令仅可用于*ExchangeLocation*属性值等于`All`的保留策略。
 
 - 在 Exchange Online PowerShell 中运行[ExcludeFromOrgHolds \<不带前缀或后缀>命令中的设置邮箱-保留 GUID](https://docs.microsoft.com/powershell/module/exchange/mailboxes/set-mailbox?view=exchange-ps) , 以从组织范围内的 Office 365 保留策略中排除非活动邮箱。
 

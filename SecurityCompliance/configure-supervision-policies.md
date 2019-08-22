@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 - MOE150
 description: 设置监管审核策略以捕获员工通信以供审阅。
-ms.openlocfilehash: 9cc13cb953d8166ceac04856fa8b54d0a4629bd6
-ms.sourcegitcommit: 97b9f88b9beee23de13ecf6d0759ac0fad5cf08d
+ms.openlocfilehash: c4735226235d557dc138d6eebaf9c7a84c39020c
+ms.sourcegitcommit: 3f3f3ecb28ef65d023f3573f9a4e09a0586d8f53
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/02/2019
-ms.locfileid: "36168170"
+ms.lasthandoff: 08/21/2019
+ms.locfileid: "36490779"
 ---
 # <a name="configure-supervision-policies-for-your-organization"></a>配置组织的监督策略
 
@@ -29,7 +29,7 @@ ms.locfileid: "36168170"
 
 > [!NOTE]
 > 监督策略监视的用户必须拥有 Microsoft 365 E5 合规性许可证、具有高级合规性加载项的 Office 365 企业版 E3 许可证, 或包含在 Office 365 企业版 E5 订阅中。
-如果你没有现有的企业版 E5 计划, 并且想要尝试监督, 则可以[注册 Office 365 企业版 e5 的试用版](https://go.microsoft.com/fwlink/p/?LinkID=698279)。
+> 如果你没有现有的企业版 E5 计划, 并且想要尝试监督, 则可以[注册 Office 365 企业版 e5 的试用版](https://go.microsoft.com/fwlink/p/?LinkID=698279)。
   
 按照以下步骤在 Office 365 组织中设置和使用监督:
   
@@ -99,6 +99,7 @@ ms.locfileid: "36168170"
     ```
 
 有关设置组的详细信息, 请参阅:
+
 - [创建和管理通讯组](https://docs.microsoft.com/Exchange/recipients-in-exchange-online/manage-distribution-groups/manage-distribution-groups)
 - [管理启用邮件的安全组](https://docs.microsoft.com/Exchange/recipients-in-exchange-online/manage-mail-enabled-security-groups)
 - [Office 365 组概述](https://docs.microsoft.com/office365/admin/create-groups/office-365-groups?view=o365-worldwide)
@@ -166,7 +167,7 @@ ms.locfileid: "36168170"
 
     - 为策略指定名称和说明。
     - 选择要监督的用户或组, 包括选择要排除的用户或组。
-    - 定义监督策略条件。
+    - 定义监督策略[条件](supervision-policies.md#ConditionalSettings)。 您可以从 "消息地址"、"关键字"、"文件类型" 和 "大小匹配条件" 中进行选择。
     - 选择是否要包含敏感信息类型。 你可以在此处选择默认和自定义敏感信息类型。
     - 选择是否要启用冒犯性语言模型。 这将检测在电子邮件正文中发送或接收的不正确的语言。
     - 定义要查看的通信百分比。
@@ -196,7 +197,7 @@ ms.locfileid: "36168170"
 > [!NOTE]
 > 如果其他人创建了该策略, 则需要从这些地址获取此地址以安装加载项。
 
- **查找监督邮箱地址**
+**查找监督邮箱地址**
   
 1. 使用组织中的管理员帐户的凭据登录[合规性中心](https://compliance.microsoft.com)。
 

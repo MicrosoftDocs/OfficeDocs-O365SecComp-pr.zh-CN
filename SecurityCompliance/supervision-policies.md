@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 - MOE150
 description: 了解 Office 365 中的监督策略
-ms.openlocfilehash: 6480c3ccb069e5e16618739303d71df115074baf
-ms.sourcegitcommit: 6122eb026c558a5126c40845e656fbb0c40cb32a
+ms.openlocfilehash: 3259620e16b626c81c9c0f71f7be1f627e9c6bc9
+ms.sourcegitcommit: 3f3f3ecb28ef65d023f3573f9a4e09a0586d8f53
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/06/2019
-ms.locfileid: "36165648"
+ms.lasthandoff: 08/21/2019
+ms.locfileid: "36490759"
 ---
 # <a name="supervision-policies-in-office-365"></a>Office 365 中的监督策略
 
@@ -144,6 +144,7 @@ Office 365 中的监督策略使您可以捕获指定审阅者进行检查的员
 | **伪装的表达式** | 含义或发音与另一个更具冒犯性术语的表达式相同。 |
 
 #### <a name="conditional-settings"></a>条件设置
+<a name="ConditionalSettings"> </a>
 
 您为策略选择的条件适用于来自组织中的电子邮件和第三方源的通信 (如 Facebook 或 DropBox)。
 

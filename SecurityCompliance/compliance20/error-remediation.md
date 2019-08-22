@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: efcee812b6082a7f7ee36e6aea0ecb7ed0243077
-ms.sourcegitcommit: 6122eb026c558a5126c40845e656fbb0c40cb32a
+ms.openlocfilehash: c9c2660929037430535c9b612218563c51b1f056
+ms.sourcegitcommit: 3f3f3ecb28ef65d023f3573f9a4e09a0586d8f53
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/06/2019
-ms.locfileid: "36168122"
+ms.lasthandoff: 08/21/2019
+ms.locfileid: "36490789"
 ---
 # <a name="error-remediation-when-processing-data"></a>修正处理数据时出现的错误
 
@@ -61,7 +61,7 @@ ms.locfileid: "36168122"
 
 7. 下载文件后, 可以使用适当的工具对它们进行修正。 对于受密码保护的文件, 可以使用几种密码破解工具。 如果您知道这些文件的密码, 则可以打开它们并删除密码保护。
     > [!NOTE]
-    > 务必在 tact 中保留已修正文件的目录结构和文件名, 这一点非常重要。  在下载的文件和文件夹中使用的所有命名约定使 remdiated 文件可以重新关联到原始文件。
+    > 必须保留已修正文件的目录结构和文件名, 这一点非常重要。 通过下载的文件和文件夹的路径名称, 可以将修正的文件与原始文件进行关联。  如果更改了目录结构或文件的名称, 您将收到以下错误: `Cannot apply Error Remediation to the current Workingset`。
 
 8. 现在, 返回到高级电子数据展示并单击 "**下一步: 上传文件**"。  此操作将移至下一步, 你现在可以在其中上传文件。
 
