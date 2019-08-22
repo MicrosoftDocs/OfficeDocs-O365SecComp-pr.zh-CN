@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 获取 DLP 自定义敏感信息类型概述。
-ms.openlocfilehash: 3c3acceb23fe74d22b9e952bf5dc76d9ed6eefd9
-ms.sourcegitcommit: 7a0cb7e1da39fc485fc29e7325b843d16b9808af
+ms.openlocfilehash: b73f0d51e57106cbcc6f0986261faabb26cc5b4a
+ms.sourcegitcommit: 0a0d9c1325b4b0581018c31037dcc707d3d679b4
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/07/2019
-ms.locfileid: "36230776"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "36279144"
 ---
 # <a name="custom-sensitive-information-types"></a>自定义敏感信息类型
 
@@ -49,7 +49,7 @@ Office 365 包括许多你可直接在组织中使用的内置敏感信息类型
 
 若要在安全与合规中心内创建自定义敏感信息类型，可使用以下几种方法：
 
-- **使用 EDM**（新方法！）可以使用基于精确数据匹配 (EDM) 的分类创建自定义敏感信息类型。 通过此方法，你可以使用可定期刷新的安全数据库创建动态敏感信息类型。 请参阅[使用基于精确数据匹配分类创建自定义敏感信息类型（预览版）](create-custom-sensitive-info-type-edm.md)。
+- **使用 EDM**（新方法！）可以使用基于精确数据匹配 (EDM) 的分类创建自定义敏感信息类型。 通过此方法，你可以使用可定期刷新的安全数据库创建动态敏感信息类型。 请参阅[使用基于精确数据匹配的分类创建自定义敏感信息类型](create-custom-sensitive-information-types-with-exact-data-match-based-classification.md)。
 
 - **使用 PowerShell** 可以使用 PowerShell 创建自定义敏感信息类型。 尽管此方法比使用 UI 更复杂，但你可以拥有更多的配置选项。 请参阅[使用安全与合规中心 PowerShell 创建自定义敏感信息类型](create-a-custom-sensitive-information-type-in-scc-powershell.md)。
 
