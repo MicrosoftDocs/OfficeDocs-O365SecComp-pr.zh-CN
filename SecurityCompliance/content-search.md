@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: 53390468-eec6-45cb-b6cd-7511f9c909e4
 description: 使用 Office 365 或 Microsoft 365 合规中心中的内容搜索工具搜索邮箱、SharePoint Online 网站、OneDrive 帐户、Microsoft Teams、Office 365 组 和 Skype for Business 对话中的内容。 可以使用关键字搜索查询和搜索条件来缩小搜索结果。 然后预览并导出搜索结果。 内容搜索也是一款有效的工具，可用于搜索与 GDPR 数据主题请求相关的内容。
-ms.openlocfilehash: cf1935b8ab4df80182739497f60adf5a2bc6a6d7
-ms.sourcegitcommit: 59039d3bf479c4b2c1d2e2556a0adc755f431a1f
+ms.openlocfilehash: 2fff94899dabca85338ba1ca924ec37afa1dccf3
+ms.sourcegitcommit: 873c5bc0e6cd1ca3dfdb3a99a5371353b419311f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/20/2019
-ms.locfileid: "36473412"
+ms.lasthandoff: 08/22/2019
+ms.locfileid: "36493163"
 ---
 # <a name="content-search-in-office-365"></a>Office 365 中的内容搜索
 
@@ -335,13 +335,13 @@ ms.locfileid: "36473412"
 
 如果从 Office 365 或 Azure Active Directory 中的一个用户帐户中删除了 Exchange Online 许可证（或整个 Office 365 许可证），那么用户的邮箱将成为*已断开连接的*邮箱。 这意味着邮箱不再与用户帐户相关联。 下面是搜索已断开连接的邮箱时将发生的情况：
 
-- 从邮箱中删除许可证后，邮箱将进入 30 天的宽限期。 在此宽限期内，你仍然可以使用内容搜索来搜索该邮箱。
+- 如果已从邮箱中删除许可证，则邮箱将不再可搜索。 
 
-- 如果该邮箱在 30 天内未重新获得许可，则在下一次处理该邮箱时，会将其标记为永久删除并从 Office 365 中删除。 在 30 天的宽限期到期后，你或许仍可以搜索该邮箱（具体取决于处理该邮箱的时间）。 通常每 7 天处理一次邮箱。 处理后，邮箱将被删除且不再可搜索。
+- 如果现有内容搜索包含某个删除了许可证的邮箱，则在重新运行该内容搜索时，将不会返回来自该已断开连接的邮箱的搜索结果。
 
-- 如果现有内容搜索包含某个删除了许可证的用户邮箱，则在重新运行搜索时将包含该已断开连接的邮箱，直至 30 天的宽限期到期。 宽限期到期且删除该邮箱后，重新运行搜索时将无法再包含该邮箱。
+- 如果使用 **New-ComplianceSearch** cmdlet 创建内容搜索，并将某个已断开连接的邮箱指定为要搜索的 Exchange 内容位置，则该内容搜索不会返回任何来自该已断开连接的邮箱的搜索结果。
 
-- 如果从某个已处于保留状态的邮箱（通过 [Office 365 中的各种保留功能](identify-a-hold-on-an-exchange-online-mailbox.md)中的一个）中删除了许可证，则该邮箱将被无限期保留，并且在 30 天的宽限期后仍保持可搜索状态。
+如果需要保留某个已断开连接的邮箱中的数据以使其可搜索，则必须在删除许可证之前保留该邮箱。 这将保留数据并使已断开连接的邮箱保持可搜索，直至保留被删除。 有关保留的详细信息，请参阅[如何识别为 Exchange Online 邮箱设置的保留类型](identify-a-hold-on-an-exchange-online-mailbox.md)。
 
 ### <a name="previewing-search-results"></a>预览搜索结果
 
