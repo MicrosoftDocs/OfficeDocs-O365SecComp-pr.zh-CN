@@ -15,12 +15,12 @@ ms.assetid: 8f54cd33-4af7-4d1b-b800-68f8818e5b2a
 ms.collection:
 - M365-security-compliance
 description: 了解如何使用威胁调查和响应功能查找和调查恶意电子邮件。
-ms.openlocfilehash: 2049b3b8e0d7b9173639af3c48f75a072744fb7f
-ms.sourcegitcommit: dbcb3df3b313f7a9ea6669425e0a0498be844ae9
+ms.openlocfilehash: 25eb1f4a13ad698d7b6817ea7917ccabea7210ae
+ms.sourcegitcommit: f473bf7f215ba4eb2f49e0dd23a9d2e39fa512c9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/16/2019
-ms.locfileid: "36444863"
+ms.lasthandoff: 08/22/2019
+ms.locfileid: "36566220"
 ---
 # <a name="find-and-investigate-malicious-email-that-was-delivered-in-office-365"></a>查找并调查 Office 365 中提供的恶意电子邮件
 
@@ -88,6 +88,9 @@ ms.locfileid: "36444863"
 > 请记住, "预览" 是一个角色, 而不是一个 new-rolegroup, 并且必须在随后将该角色添加到 New-rolegroup 中。
 
 ![在页面上具有下载和预览链接的威胁资源管理器浮出控件。](media/ThreatExplorerDownloadandPreview.PNG)
+
+> [!IMPORTANT]
+> 此功能不会显示在用户邮箱中从未找到的电子邮件, 如果删除电子邮件或传递失败, 则可能会发生这种情况。 对于从用户邮箱中删除电子邮件的情况, 管理员将看到涉及 "找不到邮件" 的错误。
 
 ### <a name="check-the-delivery-action-and-location"></a>检查传递操作和位置
 

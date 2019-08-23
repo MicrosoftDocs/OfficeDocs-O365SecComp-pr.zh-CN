@@ -3,7 +3,7 @@ title: Office 365 威胁调查和响应
 ms.author: deniseb
 author: denisebmsft
 manager: dansimp
-ms.date: 08/20/2019
+ms.date: 08/22/2019
 audience: Admin
 ms.topic: overview
 ms.service: O365-seccomp
@@ -15,12 +15,12 @@ ms.assetid: 32405da5-bee1-4a4b-82e5-8399df94c512
 ms.collection:
 - M365-security-compliance
 description: 了解 Office 365 中的威胁智能功能。高级威胁防护可帮助您研究组织的威胁、响应恶意软件、网络钓鱼和 Office 365 已代表您检测到的其他攻击, 并搜索威胁指示器.
-ms.openlocfilehash: c99712553646a6ceff22005952289b2ca3e1dbf4
-ms.sourcegitcommit: a5a7e43822336ed18d8f5879167766686cf6b2a3
+ms.openlocfilehash: 774d3d5c6a1ff71c105c3778458cf2a0d0cbed94
+ms.sourcegitcommit: f473bf7f215ba4eb2f49e0dd23a9d2e39fa512c9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/20/2019
-ms.locfileid: "36478181"
+ms.lasthandoff: 08/22/2019
+ms.locfileid: "36566210"
 ---
 # <a name="office-365-threat-investigation-and-response"></a>Office 365 威胁调查和响应
 
@@ -81,7 +81,7 @@ Office 365 中的威胁调查和响应功能[高级威胁防护](office-365-atp.
 Office 365 高级威胁防护计划2和企业版 E5 中包含 office 365 威胁调查和响应功能。 
 
 > [!TIP]
-> 如果你的组织具有不包含这些威胁调查和响应功能的 Office 365 订阅, 你可以将其作为加载项购买, 并附带 Office 365 高级威胁防护。 有关计划选项的详细信息, 请参阅[office 365 Platform 服务说明: office 365 &amp;安全合规性中心](https://docs.microsoft.com/office365/servicedescriptions/office-365-platform-service-description/office-365-securitycompliance-center)和[购买或编辑 Office 365 for business 的加载](https://docs.microsoft.com/office365/admin/subscriptions-and-billing/buy-or-edit-an-add-on)项。
+> 如果您的组织具有不包含这些威胁调查和响应功能的 Office 365 订阅, 则可能会将 Office 365 高级威胁防护计划2作为加载项进行购买。 有关计划选项的详细信息, 请参阅[office 365 高级威胁防护服务说明](https://docs.microsoft.com/en-us/office365/servicedescriptions/office-365-advanced-threat-protection-service-description)和[购买或编辑适用于 Office 365 for business 的加载](https://docs.microsoft.com/office365/admin/subscriptions-and-billing/buy-or-edit-an-add-on)项。
   
 1. 作为 Office 365 全局管理员, 请转到[https://admin.microsoft.com](https://admin.microsoft.com)并使用 Office 365 的工作或学校帐户登录并登录。 
     

@@ -10,12 +10,12 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: 1270a65f-ddc3-4430-b500-4d3a481efb1e
 description: Microsoft Exchange Online Protection (EOP) 是基于云的电子邮件筛选服务，可帮助您的组织防御垃圾邮件和恶意邮件，并包括用于保护您的组织避免违反邮件策略的功能。
-ms.openlocfilehash: 652932403a4a63b280437a609e4bec46da39387e
-ms.sourcegitcommit: 32ecff689ae32c59a39b7633ca0f36a304e7516e
+ms.openlocfilehash: 4035a676bf815642735699a106e6430cf8245a05
+ms.sourcegitcommit: f473bf7f215ba4eb2f49e0dd23a9d2e39fa512c9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/09/2019
-ms.locfileid: "35599698"
+ms.lasthandoff: 08/22/2019
+ms.locfileid: "36566191"
 ---
 # <a name="exchange-online-protection-overview"></a>Exchange Online Protection 概述
 
@@ -34,8 +34,8 @@ Microsoft Exchange Online Protection (EOP) 是基于云的电子邮件筛选服�
 ## <a name="how-eop-works"></a>EOP 如何工作
 
 了解 EOP 如何工作，有助于查看其如何处理传入的电子邮件：
-  
-![EOP-处理电子邮件](../media/EOP-email-processing.png)
+
+![EOP 中的电子邮件进程。](../media/GitHubBugs/emailprocessingineop.png)
   
 传入邮件最初通过连接筛选, 它会检查发件人的信誉并检查邮件中是否存在恶意软件。 大多数垃圾邮件在这时就会被 EOP 阻止并删除。 邮件将继续通过策略筛选, 其中将根据您从模板创建或实施的自定义邮件流规则 (也称为传输规则) 对邮件进行评估。 例如，你可以将规则设置为当收到来自特定发件人的邮件时向管理器发送通知。 (此时也会发生数据丢失防护检查, 如果你具有该功能, 则为; 有关功能可用性的信息, 请参阅[Exchange Online Protection 服务说明](https://go.microsoft.com/fwlink/p/?LinkId=320619)。)接下来, 邮件通过内容筛选, 在其中对内容进行检查, 了解公共的垃圾邮件的术语或属性。 通过内容筛选器确定为垃圾邮件的邮件可以发送到用户的 "垃圾邮件" 文件夹或 "隔离", 具体取决于您的设置。 在邮件成功传递所有这些保护层后, 会将其传递给收件人。
   
