@@ -10,12 +10,12 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: 4bfaf2ab-e633-4227-8bde-effefb41a3db
 description: 定义邮件用户是管理 Exchange Online Protection (EOP) 服务的重要部分。
-ms.openlocfilehash: 6d982b635513050d931397bbc517ae3d76ee3752
-ms.sourcegitcommit: bc25ea19c0b6d318751eadc4f27902b0054d5e2b
+ms.openlocfilehash: 69ed6460966a399ac5b1e3cf71bd985917bec82c
+ms.sourcegitcommit: f57d411e06c955d648dfa1a2a473aa45416e1377
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/01/2019
-ms.locfileid: "36054724"
+ms.lasthandoff: 08/23/2019
+ms.locfileid: "36620486"
 ---
 # <a name="manage-mail-users-in-eop"></a>在 EOP 中管理邮件用户
 
@@ -53,20 +53,20 @@ ms.locfileid: "36054724"
   
 按[准备进行目录同步](https://go.microsoft.com/fwlink/p/?LinkId=308908)中所述，获取所需权限，并准备进行目录同步。
   
-### <a name="to-synchronize-user-directories"></a>同步用户目录的步骤
+### <a name="to-synchronize-user-directories-with-azure-active-directory-connect-aad-connect"></a>将用户目录与 Azure Active Directory Connect 同步 (AAD 连接)
 
-1. 按[激活目录同步](https://go.microsoft.com/fwlink/p/?LinkId=308909)中所述，激活目录同步。
-    
-2. 按[设置目录同步计算机](http://go.microsoft.com/fwlink/p/?LinkId=308911)中所述，设置您的目录同步计算机。
-    
-3. 按[使用配置向导同步目录](http://go.microsoft.com/fwlink/?LinkId=308912)中所述，同步目录。
-    
-    > [!IMPORTANT]
-    > 当您完成 Azure Active Directory 同步工具配置向导时, 将在 Active Directory 林中创建**MSOL_AD_SYNC**帐户。 此帐户用于读取和同步您的本地 Active Directory 信息。 为了使目录同步正常工作，请确保本地目录同步服务器上的 TCP 443 处于打开状态。 
-  
-  4. 按[管理目录同步](http://go.microsoft.com/fwlink/p/?LinkId=308915)中所述，管理目录同步。
-    
-  5. 验证 EOP 是否正确同步。 在 EAC 中, 转到 "**收件人** \> " "**联系人**", 并查看从您的本地环境中正确同步的用户列表。 
+若要将用户同步到 Azure Active Directory (AAD), 您必须首先**激活目录同步**, 如[激活目录同步](https://go.microsoft.com/fwlink/p/?LinkId=308909)中所述。
+
+接下来是安装和配置本地计算机以运行 AAD 连接 (如果尚不存在, 则需要事先检查)。 下面的文章介绍了如何设置帐户并将帐户从本地部署到使用 AAD 连接的 Azure AD。
+
+[以快速方式设置 AAD 连接。](https://docs.microsoft.com/en-us/azure/active-directory/hybrid/how-to-connect-install-express)
+
+但在执行此操作之前, 请确保 "[您满足先决条件]https://docs.microsoft.com/en-us/azure/active-directory/hybrid/how-to-connect-install-prerequisites" (, 并[选择您的安装类型](https://docs.microsoft.com/en-us/azure/active-directory/hybrid/how-to-connect-install-select-installation)。 以上发布的链接指向快速安装的简短文章。 您还可以在[自定义安装](https://docs.microsoft.com/en-us/azure/active-directory/hybrid/how-to-connect-install-custom)中找到文章, 或在需要时[传递身份验证](https://docs.microsoft.com/en-us/azure/active-directory/hybrid/how-to-connect-pta-quick-start)。
+
+> [!IMPORTANT]
+> 当您完成 Azure Active Directory 同步工具配置向导时, 将在 Active Directory 林中创建**MSOL_AD_SYNC**帐户。 此帐户用于读取和同步您的本地 Active Directory 信息。 为了使目录同步正常运行, 请确保本地目录同步服务器上的 TCP 443 处于打开状态 
+
+在配置同步之后, 请务必验证 EOP 是否正确同步。 在 EAC 中, 转到 "**收件人** \> " "**联系人**", 并查看从您的本地环境中正确同步的用户列表。
     
 ## <a name="use-the-eac-to-manage-mail-users"></a>使用 EAC 管理邮件用户
 
