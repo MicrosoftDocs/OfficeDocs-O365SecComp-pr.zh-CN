@@ -1,9 +1,9 @@
 ---
-title: 配置连接筛选器策略
+title: 配置连接筛选器策略、允许列表、阻止列表
 ms.author: tracyp
 author: MSFTTracyP
 manager: dansimp
-ms.date: 10/24/2018
+ms.date: 8/27/2019
 audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
@@ -14,18 +14,25 @@ ms.assetid: 6ae78c12-7bbe-44fa-ab13-c3768387d0e3
 ms.collection:
 - M365-security-compliance
 description: 若要确保从不受信任的人发送的电子邮件被阻止, 可以使用连接筛选器策略创建您信任的 IP 地址的允许列表 (也称为 "安全发件人列表")。 您还可以创建阻止的发件人列表。
-ms.openlocfilehash: 8589f7d714199414e7c5177ff227859da50e3e06
-ms.sourcegitcommit: 32ecff689ae32c59a39b7633ca0f36a304e7516e
+ms.openlocfilehash: a3d9703bc90c0bc1000c2aa755451ffc2cb7d060
+ms.sourcegitcommit: 1947ad3c0dde9163ba9b6834d8b38bd04b4264a5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/09/2019
-ms.locfileid: "35600088"
+ms.lasthandoff: 08/27/2019
+ms.locfileid: "36643214"
 ---
 # <a name="configure-the-connection-filter-policy"></a>配置连接筛选器策略
  
 我们大多数人都有值得信赖的朋友和商业伙伴。若是在垃圾邮件文件夹中发现有来自他们的电子邮件，甚至是完全被垃圾邮件筛选器阻止，这将会是一件很令人沮丧的事情。如果想要确保对您信任的人所发的电子邮件不进行阻止，您可以使用连接筛选策略创建一个由您信任的 IP 地址构成的"允许"名单，也称为白名单。您通常也可以从已知垃圾邮件发送者（您永远不想接收由他们发来的电子邮件）创建一个阻止的发件人名单，也就是由一些 IP 地址组成的列表。
   
+- 考虑*[允许列表](create-safe-sender-lists-in-office-365.md)* 时, 请记住, 连接筛选器策略与筛选器*允许的受信任帐户*密切相关。 这样做是为了更准确地筛选出不受信任或不受信任的发件人, 同时保留您所需的信息。 连接筛选器策略允许列表从更大的帐户和 Ip 池向少数几个受信任的 Ip 进行筛选, 并确保您的受信任的访问者更易于访问。
+
+- 可以将创建阻止列表的连接筛选器策略视为筛选器中的 "仅捕获较少" 或 "不可信" 帐户。
+
  有关适用于整个组织的详细垃圾邮件设置，请参阅[如何帮助确保邮件不会被标记为垃圾邮件](https://go.microsoft.com/fwlink/p/?LinkId=534224)或[使用 Office 365 垃圾邮件筛选器阻止垃圾电子邮件，以防止出现漏报问题](https://go.microsoft.com/fwlink/p/?LinkId=534225)。如果你拥有管理员级别控制，并且你想要防止误报或漏报问题，这些内容会很有帮助。
+
+> [!TIP]
+> 您可能需要暂停并阅读有关如何创建[允许-(或安全发件人)](create-safe-sender-lists-in-office-365.md)和[阻止列表](create-block-sender-lists-in-office-365.md)的说明。
   
 下面的视频显示了连接筛选器策略的配置步骤：
   

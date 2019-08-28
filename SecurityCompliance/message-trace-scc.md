@@ -9,12 +9,12 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: 3e64f99d-ac33-4aba-91c5-9cb4ca476803
 description: 管理员可以使用安全 & 合规性中心中的邮件跟踪来查明邮件发生了什么情况。
-ms.openlocfilehash: af3739174203d7c8d81086a5bf7d036bc2bdd76f
-ms.sourcegitcommit: 73dcdafb15b462223d1a670c781db260eb73c2f5
+ms.openlocfilehash: 3c5efb1d832a52c6b6b5eb9cfb81ece216c64513
+ms.sourcegitcommit: 1947ad3c0dde9163ba9b6834d8b38bd04b4264a5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/01/2019
-ms.locfileid: "36048214"
+ms.lasthandoff: 08/27/2019
+ms.locfileid: "36643254"
 ---
 # <a name="message-trace-in-the-security--compliance-center"></a>安全与合规中心内的消息跟踪
 
@@ -25,7 +25,7 @@ Security & 合规中心中的邮件跟踪在通过 Exchange Online 组织传递�
 Security & 合规性中心中的邮件跟踪改进了在 Exchange 管理中心 (EAC) 中可用的邮件跟踪。 您可以使用邮件跟踪中的信息来有效地回答用户对其邮件发生的问题、解决邮件流问题以及验证策略更改的问题。
 
 > [!NOTE]
-> 返回的邮件数量限制为50000。 在控制台中, 当运行非常大的查询时, Start-historicalsearch cmdlet 报告邮件数超过240000。
+>  邮件计数将在 50 000 停止, 并且报告将在控制台中仅反映此数量。 PowerShell cmdlet Start-historicalsearch cmdlet 将显示真正的邮件计数。
 
 ## <a name="open-message-trace"></a>打开邮件跟踪
 
@@ -320,7 +320,7 @@ Security & 合规性中心中的邮件跟踪改进了在 Exchange 管理中心 (
 
 - **custom_data**: 包含与特定事件类型相关的数据。 有关详细信息, 请参阅以下各节。
 
-#### <a name="customdata-values"></a>custom_data 值
+#### <a name="custom_data-values"></a>custom_data 值
 
 各种**** Exchange Online 代理使用`AGENTINFO`事件的 custom_data 字段来记录消息处理详细信息。 以下各节中介绍了一些更有趣的代理。
 

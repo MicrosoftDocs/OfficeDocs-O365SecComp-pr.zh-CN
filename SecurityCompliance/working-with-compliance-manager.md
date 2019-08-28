@@ -1,7 +1,7 @@
 ---
 title: 使用 Microsoft 合规性管理器 (预览)
-ms.author: robmazz
-author: robmazz
+ms.author: chvukosw
+author: chvukosw
 manager: laurawi
 audience: Admin
 ms.topic: article
@@ -12,12 +12,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Microsoft 合规性管理器是 Microsoft 服务信任门户中基于工作流的免费风险评估工具。 合规性管理器使你能够跟踪、分配和验证与 Microsoft 云服务相关的法规遵从性活动。
-ms.openlocfilehash: 6a6cc7cc51b911feddf21cfc107bc5c85bb959ba
-ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
+ms.openlocfilehash: 07aee08c8929443b8b4f4805d22a94b0ad9db27a
+ms.sourcegitcommit: 1947ad3c0dde9163ba9b6834d8b38bd04b4264a5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "34157864"
+ms.lasthandoff: 08/27/2019
+ms.locfileid: "36643304"
 ---
 # <a name="work-with-microsoft-compliance-manager-preview"></a>使用 Microsoft 合规性管理器 (预览)
 
