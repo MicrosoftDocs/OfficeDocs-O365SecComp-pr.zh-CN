@@ -3,46 +3,6 @@
 
 
 
-## <a name="week-of-july-15-2019"></a>2019年7月15日一周
-
-
-| 发布日期 |主题标题 | 更改 |
-|------|------------|--------|
-| 7/16/2019 | [在 Office 365 中搜索本地用户的基于云的邮箱](/Office365/SecurityCompliance/search-cloud-based-mailboxes-for-on-premises-users) | 修改内容 |
-| 7/16/2019 | [在安全 & 合规性中心中搜索审核日志](/Office365/SecurityCompliance/search-the-audit-log-in-security-and-compliance) | 修改内容 |
-| 7/16/2019 | [Set up Information Rights Management (IRM) in SharePoint admin center](/Office365/SecurityCompliance/set-up-irm-in-sp-admin-center) | 修改内容 |
-| 7/16/2019 | [将 Office 365 中的内容搜索用于目标集合](/Office365/SecurityCompliance/use-content-search-for-targeted-collections) | 修改内容 |
-| 7/17/2019 | [保留标签概述](/Office365/SecurityCompliance/labels) | 修改内容 |
-| 7/17/2019 | [Office 365 SharePoint 数据恢复能力](/Office365/SecurityCompliance/office-365-sharepoint-data-resiliency) | 修改内容 |
-| 7/17/2019 | [保留策略概述](/Office365/SecurityCompliance/retention-policies) | 修改内容 |
-| 7/17/2019 | Office 365 SharePoint 数据恢复能力 | 拆卸 |
-| 7/18/2019 | [首席信息安全监察官 (CISO) 研讨会, 模块 3: 标识和访问管理](/Office365/SecurityCompliance/ciso-workshop-module-3) | 修改内容 |
-| 7/18/2019 | [首席信息安全监察官 (CISO) 研讨会, 模块 4a: 威胁防护策略](/Office365/SecurityCompliance/ciso-workshop-module-4a) | 修改内容 |
-| 7/18/2019 | [首席信息安全监察官 (CISO) 研讨会, 模块 4b: 威胁防护策略](/Office365/SecurityCompliance/ciso-workshop-module-4b) | 修改内容 |
-| 7/18/2019 | [首席信息安全监察官 (CISO) 研讨会, 模块 5: 信息保护](/Office365/SecurityCompliance/ciso-workshop-module-5) | 修改内容 |
-| 7/18/2019 | [Microsoft 合规性管理器和 GDPR](/Office365/SecurityCompliance/compliance-manager-and-the-gdpr) | 修改内容 |
-| 7/18/2019 | [Microsoft 合规性管理器概述](/Office365/SecurityCompliance/compliance-manager-overview) | 修改内容 |
-| 7/18/2019 | [合规性分数方法](/Office365/SecurityCompliance/compliance-score-methodology) | 修改内容 |
-| 7/18/2019 | [Office 365 客户密码箱请求](/Office365/SecurityCompliance/customer-lockbox-requests) | 修改内容 |
-| 7/18/2019 | [合规性管理器有助于在使用 Microsoft 云服务时符合数据保护和法规要求](/Office365/SecurityCompliance/meet-data-protection-and-regulatory-reqs-using-microsoft-cloud) | 修改内容 |
-| 7/18/2019 | [Office 365 中的数据复原能力](/Office365/SecurityCompliance/office-365-data-resiliency-overview) | 修改内容 |
-| 7/18/2019 | [处理数据损坏的 Office 365](/Office365/SecurityCompliance/office-365-dealing-with-data-corruption) | 修改内容 |
-| 7/18/2019 | [Office 365 针对拒绝服务攻击防御云服务](/Office365/SecurityCompliance/office-365-defending-cloud-services-against-dos-attacks) | 修改内容 |
-| 7/18/2019 | [Office 365 Exchange 数据弹性](/Office365/SecurityCompliance/office-365-exchange-data-resiliency) | 修改内容 |
-| 7/18/2019 | [Office 365 Exchange Online 数据删除](/Office365/SecurityCompliance/office-365-exchange-online-data-deletion) | 修改内容 |
-| 7/18/2019 | [将组织品牌添加到加密邮件](/Office365/SecurityCompliance/add-your-organization-brand-to-encrypted-messages) | 修改内容 |
-| 7/18/2019 | [在高级电子数据展示中管理保留](/Office365/SecurityCompliance/compliance20/managing-holds) | 修改内容 |
-| 7/18/2019 | [定义用于加密 Office 365 中的电子邮件的邮件流规则](/Office365/SecurityCompliance/define-mail-flow-rules-to-encrypt-email) | 修改内容 |
-| 7/18/2019 | [Office 365 中的加密](/Office365/SecurityCompliance/encryption) | 修改内容 |
-| 7/18/2019 | [用于 Office Online Server 和 Office Web Apps Server 的 GDPR](/Office365/SecurityCompliance/gdpr-for-office-online-server) | 修改内容 |
-| 7/18/2019 | [向用户授予对 Office 365 安全 & 合规中心的访问权限](/Office365/SecurityCompliance/grant-access-to-the-security-and-compliance-center) | 修改内容 |
-| 7/18/2019 | [Office 365 ATP 安全链接的工作原理](/Office365/SecurityCompliance/how-atp-safe-links-works) | 修改内容 |
-| 7/18/2019 | [独立 SharePoint Online 团队网站开发/测试环境](/Office365/SecurityCompliance/isolated-sharepoint-online-team-site-dev-test-environment) | 修改内容 |
-| 7/18/2019 | [Set up Information Rights Management (IRM) in SharePoint admin center](/Office365/SecurityCompliance/set-up-irm-in-sp-admin-center) | 修改内容 |
-| 7/18/2019 | [设置全新的 Office 365 邮件加密功能](/Office365/SecurityCompliance/set-up-new-message-encryption-capabilities) | 修改内容 |
-| 7/18/2019 | [查看高级电子数据展示中的对话](/Office365/SecurityCompliance/compliance20/conversation-review-sets) | 修改内容 |
-
-
 ## <a name="week-of-july-22-2019"></a>2019年7月22日一周
 
 
@@ -218,3 +178,41 @@
 | 8/16/2019 | [威胁资源管理器和实时检测、新增的威胁资源管理器、威胁资源管理器的更改、Office 365 的新增功能、安全性、云安全性、ATP 中的新安全性、新的 ATP 功能](/Office365/SecurityCompliance/threat-explorer) | 修改内容 |
 | 8/16/2019 | [内容搜索的关键字查询和搜索条件](/Office365/SecurityCompliance/keyword-queries-and-search-conditions) | 修改内容 |
 | 8/16/2019 | [审核共享以查找与外部用户共享的资源](/Office365/SecurityCompliance/use-sharing-auditing) | 修改内容 |
+
+
+## <a name="week-of-august-19-2019"></a>2019年8月19日一周
+
+
+| 发布日期 |主题标题 | 更改 |
+|------|------------|--------|
+| 8/19/2019 | [内容搜索的关键字查询和搜索条件](/Office365/SecurityCompliance/keyword-queries-and-search-conditions) | 修改内容 |
+| 8/19/2019 | [与合作伙伴合作, 以在 Office 365 中存档第三方数据](/Office365/SecurityCompliance/work-with-partner-to-archive-third-party-data) | 修改内容 |
+| 8/20/2019 | [Office 365 中的内容搜索](/Office365/SecurityCompliance/content-search) | 修改内容 |
+| 8/20/2019 | [与合作伙伴合作, 以在 Office 365 中存档第三方数据](/Office365/SecurityCompliance/work-with-partner-to-archive-third-party-data) | 修改内容 |
+| 8/20/2019 | 开始使用 Office 365 威胁调查和响应 | 拆卸 |
+| 8/20/2019 | [Office 365 威胁调查和响应](/Office365/SecurityCompliance/office-365-ti) | 修改内容 |
+| 8/20/2019 | [配置内容搜索的权限筛选](/Office365/SecurityCompliance/permissions-filtering-for-content-search) | 修改内容 |
+| 8/20/2019 | [使用 Office 365 威胁调查和响应功能保持 Office 365 用户安全](/Office365/SecurityCompliance/keep-users-safe-with-office-365-ti) | 修改内容 |
+| 8/20/2019 | [在安全 & 合规中心 PowerShell 中创建自定义敏感信息类型](/Office365/SecurityCompliance/create-a-custom-sensitive-information-type-in-scc-powershell) | 修改内容 |
+| 8/20/2019 | [在安全与合规中心内创建自定义敏感信息类型](/Office365/SecurityCompliance/create-a-custom-sensitive-information-type) | 修改内容 |
+| 8/20/2019 | [创建具有精确数据匹配的自定义敏感信息类型](/Office365/SecurityCompliance/create-custom-sensitive-information-types-with-exact-data-match-based-classification) | 修改内容 |
+| 8/20/2019 | [自定义内置敏感信息类型](/Office365/SecurityCompliance/customize-a-built-in-sensitive-information-type) | 修改内容 |
+| 8/20/2019 | [数据丢失防护概述](/Office365/SecurityCompliance/data-loss-prevention-policies) | 修改内容 |
+| 8/20/2019 | [数据丢失防护和 Microsoft 团队](/Office365/SecurityCompliance/dlp-microsoft-teams) | 修改内容 |
+| 8/20/2019 | [敏感信息类型查找的内容](/Office365/SecurityCompliance/what-the-sensitive-information-types-look-for) | 修改内容 |
+| 8/20/2019 | [使用 Office 365 威胁调查和响应功能保持组织安全](/Office365/SecurityCompliance/keep-users-safe-with-office-365-ti) | 修改内容 |
+| 8/21/2019 | [Office 365 中的数据复原能力](/Office365/SecurityCompliance/office-365-data-resiliency-overview) | 修改内容 |
+| 8/21/2019 | [修正处理数据时出现的错误](/Office365/SecurityCompliance/compliance20/error-remediation) | 修改内容 |
+| 8/21/2019 | [处理调查数据时的错误修正](/Office365/SecurityCompliance/datainvestigations/error-remediation) | 修改内容 |
+| 8/21/2019 | [欧盟国家身份证号](/Office365/SecurityCompliance/eu-national-identification-number) | 修改内容 |
+| 8/21/2019 | [配置组织的监督策略](/Office365/SecurityCompliance/configure-supervision-policies) | 修改内容 |
+| 8/21/2019 | [Office 365 中的监督策略](/Office365/SecurityCompliance/supervision-policies) | 修改内容 |
+| 8/21/2019 | [Office 365 中的内容搜索](/Office365/SecurityCompliance/content-search) | 修改内容 |
+| 8/21/2019 | [如何识别为 Exchange Online 邮箱设置的保留类型](/Office365/SecurityCompliance/identify-a-hold-on-an-exchange-online-mailbox) | 修改内容 |
+| 8/22/2019 | [查找并调查在 Office 365 中传递的恶意电子邮件、TIMailData、安全事件、事件、ATP Powershell、电子邮件恶意软件、已泄露的用户、电子邮件网络钓鱼诈骗、电子邮件恶意软件、阅读电子邮件头、阅读邮件头、打开电子邮件头](/Office365/SecurityCompliance/investigate-malicious-email-that-was-delivered) | 修改内容 |
+| 8/22/2019 | [Office 365 威胁调查和响应](/Office365/SecurityCompliance/office-365-ti) | 修改内容 |
+| 8/22/2019 | [Exchange Online Protection 概述](/Office365/SecurityCompliance/eop/exchange-online-protection-overview) | 修改内容 |
+| 8/23/2019 | [批量投诉级别值、批量邮件发件、BCL 级别、BCL 的工作方式、bcl 评级、反垃圾邮件、反垃圾邮件标头、批量邮件筛选、停止批量邮件](/Office365/SecurityCompliance/bulk-complaint-level-values) | 修改内容 |
+| 8/23/2019 | [在 EOP 中管理邮件用户](/Office365/SecurityCompliance/eop/manage-mail-users-in-eop) | 修改内容 |
+| 8/23/2019 | [在 Office 365 中使用用户垃圾邮件通知来发布和报告已隔离邮件](/Office365/SecurityCompliance/use-spam-notifications-to-release-and-report-quarantined-messages) | 修改内容 |
+| 8/23/2019 | [Exchange Online Protection 概述](/Office365/SecurityCompliance/eop/exchange-online-protection-overview) | 修改内容 |
