@@ -235,50 +235,6 @@
 ## [在 Office 365 中检测并修正 Outlook 规则和自定义窗体注入攻击](detect-and-remediate-outlook-rules-forms-attack.md)
 ## [响应 Office 365 中遭到入侵的电子邮件帐户](responding-to-a-compromised-email-account.md)
 
-# 管理数据管理
-## [导入数据](importing-pst-files-to-office-365.md)
-### [使用网络上传导入 PST 文件](use-network-upload-to-import-pst-files.md)
-### [使用驱动器传送导入 PST 文件](use-drive-shipping-to-import-pst-files-to-office-365.md)
-### [使用 PST 收集工具查找、复制和删除 PST 文件](find-copy-and-delete-pst-files-in-your-organization.md)
-### [导入 PST 文件时筛选数据](filter-data-when-importing-pst-files.md)
-### [使用网络上传导入 RMS 加密的 PST 文件](use-network-upload-to-import-rms-encrypted-pst-files.md)
-### [有关导入 PST 文件的常见问题解答](faqimporting-pst-files-to-office-365.md)
-### [在 Office 365 中存档第三方数据](archiving-third-party-data.md)
-#### [使用示例连接器存档 Facebook 数据](archive-facebook-data-with-sample-connector.md)
-#### [使用示例连接器存档 Twitter 数据](archive-twitter-data-with-sample-connector.md)
-#### [设置连接器以存档 LinkedIn 数据](archive-linkedin-data.md)
-#### [设置连接器以存档 Instant Bloomberg 数据](archive-instant-bloomberg-data.md)
-#### [与合作伙伴联系以存档第三方数据](work-with-partner-to-archive-third-party-data.md)
-## 存储数据
-### [启用存档邮箱](enable-archive-mailboxes.md)
-### [无限制存档概述](unlimited-archiving.md)
-### [启用无限制存档](enable-unlimited-archiving.md)
-### [设置邮箱的存档和删除策略](set-up-an-archive-and-deletion-policy-for-mailboxes.md)
-## 保留数据
-### [保留策略](retention-policies.md)
-### [文件计划管理器](file-plan-manager.md)
-### [保留标签](labels.md)
-### [符合 SEC Rule 17a-4](use-exchange-online-to-comply-with-sec-rule-17a-4.md)
-### [使用 PowerShell 创建和发布保留标签](https://docs.microsoft.com/zh-CN/office365/securitycompliance/bulk-create-publish-labels-using-powershell)
-### [基于事件的保留](event-driven-retention.md)
-### [自动执行基于事件的保留](automate-event-driven-retention.md)
-## [释放数据](disposition-reviews.md)
-## 监督通信
-### [监督策略](supervision-policies.md)
-### [配置组织的监督策略](configure-supervision-policies.md)
-## [管理非活动邮箱](inactive-mailboxes-in-office-365.md)
-### [创建和管理非活动邮箱](create-and-manage-inactive-mailboxes.md)
-### [更改非活动邮箱的保留期](change-the-hold-duration-for-an-inactive-mailbox.md)
-### [恢复非活动邮箱](recover-an-inactive-mailbox.md)
-### [还原非活动邮箱](restore-an-inactive-mailbox.md)
-### [删除非活动邮箱](delete-an-inactive-mailbox.md)
-## 监视数据治理
-### [查看文档的标签活动](view-label-activity-for-documents.md)
-### [使用标签分析查看标签使用情况](label-analytics.md)
-### [查看数据治理报表](view-the-data-governance-reports.md)
-## 数据治理详情
-### [观看 Microsoft 数据治理团队的视频](https://go.microsoft.com/fwlink/?linkid=867039)
-
 # [搜索内容](search-for-content.md)
 ## [使用内容搜索](content-search.md)
 ### [内容搜索的关键字查询和搜索条件](keyword-queries-and-search-conditions.md)
@@ -441,7 +397,6 @@
 ### [保存密件抄送和展开的通讯组收件人](preserve-bcc-and-expanded-distribution-group-recipients-for-ediscovery.md)
 
 # [管理数据调查](datainvestigations/overview-data-investigations.md)
-## [发行说明](datainvestigations/data-investigations-release-notes.md)
 ## [管理数据泄漏事件](datainvestigations/manage-data-spillage-incidents.md)
 ## [创建新调查](datainvestigations/create-new-investigation.md)
 ## [为数据调查分配权限](datainvestigations/permissions.md)
@@ -456,6 +411,7 @@
 ### [注释和编辑文档](datainvestigations/annotate-and-redact-documents.md)
 ### [加载非 Office 365 数据](datainvestigations/load-non-office365-data.md)
 ### [修正处理数据时出现的错误](datainvestigations/error-remediation.md)
+### [从项目的原始位置删除项目](datainvestigations/delete-items-from-original-locations.md)
 
 ## [运行分析功能，加快调查](datainvestigations/run-analytics-to-investigate-faster.md)
 ### [电子邮件会话](datainvestigations/email-threading.md)
@@ -477,6 +433,7 @@
 ### [关闭或删除调查](datainvestigations/close-or-delete-investigation.md)
 
 ## 数据调查参考
+### [发行说明](datainvestigations/data-investigations-release-notes.md)
 ### [数据调查限制](datainvestigations/limits-datainvestigations.md)
 ### [支持的文件类型](datainvestigations/supported-filetypes-datainvestigations.md)
 ### [文档元数据字段](datainvestigations/document-metadata-fields.md)
