@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: 使用 Microsoft 365 中的数据调查时, 使用关键字和条件缩小搜索范围的范围。
-ms.openlocfilehash: 6d6c7e99257d071595365ec9a9557892fe3fe8db
-ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
+ms.openlocfilehash: 913306ff488d9cf2ba715c26eaa49f6f8e1473aa
+ms.sourcegitcommit: 3962de88a143f0eb416b5cfdfd777d731f560ec8
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "34151054"
+ms.lasthandoff: 08/28/2019
+ms.locfileid: "36649937"
 ---
 # <a name="build-search-queries"></a>生成搜索查询
 
@@ -31,7 +31,7 @@ ms.locfileid: "34151054"
 
 在搜索查询的 "**关键字**" 框中键入关键字查询。 您可以指定关键字、电子邮件属性 (如发送和接收日期) 或文档属性 (如文件名称或上次更改文档的日期)。 您可以使用更复杂的查询, 这些查询使用布尔运算符, 例如**AND**、 **OR**、 **NOT**和**NEAR**。 您还可以在 SharePoint 和 OneDrive (而不是电子邮件) 中搜索文档中的敏感信息 (如社会保险号), 或搜索在外部共享的文档。 如果将 "**关键字**" 框留空, 则位于指定内容位置的所有内容都将包含在搜索结果中。
     
-或者, 也可以单击 "**显示关键字列表**" 复选框, 并在每行中键入关键字或关键字短语。 如果执行此操作, 则每行中的关键字都将通过逻辑运算符 (表示为*c:s*) 连接到所创建的搜索查询中的**OR**运算符的功能相似。 这意味着搜索结果中将包含任意行中包含任意关键字的项。
+或者, 也可以单击 "**显示关键字列表**" 复选框, 并在每行中键入关键字或关键字短语。 如果执行此操作, 则每行中的关键字都将通过逻辑运算符 (表示为*c:s*) 连接到创建的搜索查询中的**OR**运算符的功能相似。 这意味着搜索结果中包含任何行中包含任意关键字的项。
 
 ![使用关键字列表获取查询中每个关键字的统计信息](../media/KeywordListSearch.png)
 

@@ -13,12 +13,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Microsoft 合规性管理器是 Microsoft 服务信任门户中基于工作流的免费风险评估工具。 合规性管理器使你能够跟踪、分配和验证与 Microsoft 云服务相关的法规遵从性活动。
-ms.openlocfilehash: af0efa2711215946930c091fc7c38cc1b9f575fd
-ms.sourcegitcommit: f0d23e57b00f07cef5b1b2d366eaeeeacda37e3e
+ms.openlocfilehash: e41b28972dc2ada5c0591de0e73c04ea3306e039
+ms.sourcegitcommit: 3962de88a143f0eb416b5cfdfd777d731f560ec8
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/18/2019
-ms.locfileid: "35786647"
+ms.lasthandoff: 08/28/2019
+ms.locfileid: "36649957"
 ---
 # <a name="microsoft-compliance-manager-and-the-gdpr"></a>Microsoft 合规性管理器和 GDPR
 
@@ -40,7 +40,7 @@ ms.locfileid: "35786647"
 
 2. 正确输入了用户名后, 选择 "**搜索**"。
 
-3. 对于未返回的用户帐户, 页面上将显示 "找不到用户"。 检查用户的电子邮件地址信息, 并根据需要进行更正。 若要重试, 请选择 "**搜索**"。
+3. 对于未返回的用户帐户, 该页面显示 "**找不到用户**"。 检查用户的电子邮件地址信息, 并根据需要进行更正。 若要重试, 请选择 "**搜索**"。
 
 4. 对于返回的用户帐户, 该按钮的文本将从 "**搜索**" 更改为 "**清除**"。 这表示返回的用户帐户是其他函数的操作上下文, 并且这些函数适用于此用户帐户。
 

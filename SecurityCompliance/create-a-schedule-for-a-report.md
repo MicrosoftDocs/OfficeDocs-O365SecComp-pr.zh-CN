@@ -3,7 +3,7 @@ title: 在安全&amp;合规中心中创建报表的日程安排
 ms.author: deniseb
 author: denisebmsft
 manager: laurawi
-ms.date: 6/1/2018
+ms.date: 08/28/2018
 audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
@@ -15,12 +15,12 @@ ms.assetid: a74f637b-3710-4c41-b70f-b5a812929a81
 ms.collection:
 - M365-security-compliance
 description: 了解如何为安全&amp;合规中心中的报告设置计划。
-ms.openlocfilehash: cd7856a55f6d3442d96941012d5d06bf93c3d9d7
-ms.sourcegitcommit: 0d5a863f48914eeaaf29f7d2a2022618de186247
+ms.openlocfilehash: 41831116d98ef7ea430387f1402f572ab6b35443
+ms.sourcegitcommit: 73f1db241c0686020167d43442e7b07a2199ea3a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34077598"
+ms.lasthandoff: 08/28/2019
+ms.locfileid: "36658079"
 ---
 # <a name="create-a-schedule-for-a-report-in-the-security-amp-compliance-center"></a>在安全&amp;合规中心中创建报表的日程安排
 
@@ -33,11 +33,29 @@ ms.locfileid: "34077598"
   
 1. 在 "[安全&amp;合规性中心](https://protection.office.com)" 中, 转到 "**报告** \> "**仪表板**。
     
-2. 选择报告。 对于此示例, 我们将选择 "威胁防护状态报告"。
+2. 选择以下报告之一: 
+
+    - DLP 策略匹配
+    - Exchange 传输规则
+    - DLP 误报和重写
+    - Office 365 ATP 文件类型
+    - Office 365 ATP 邮件处置
+    - 在电子邮件中检测到恶意软件
+    - 主要恶意软件
+    - 主要发件人和收件人
+    - 欺骗检测
+    - 垃圾邮件检测
+    - 发送和接收的电子邮件
+    - DLP 事件
+    - 加密报告
+
+    在此示例中, 我们将选择 "高级威胁防护文件类型" 报告。
     
-3. 在报表的左上角, 选择 " **+ 创建计划**"。
+3. 在报表的左上角, 选择 " **+ 创建计划**"。 
     
-    ![您可以为安全&amp;合规中心中的报告创建计划](media/2311327c-14f6-4a17-b604-0c9ff2d485d1.png)
+    ![创建计划](media/atpfiletypes-createschedule.png)
+
+    (注意: 并非所有报表都有 "**创建计划**" 按钮。)
   
     将打开 "**创建日程安排**" 对话框。 
     

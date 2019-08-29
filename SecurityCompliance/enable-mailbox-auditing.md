@@ -14,17 +14,17 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: aaca8987-5b62-458b-9882-c28476a66918
-description: 默认情况下, 邮箱审核日志记录在 Microsoft 365 (也称为默认邮箱审核或邮箱审核) 中处于打开状态。 这意味着邮箱所有者、代理人和管理员执行的某些操作将自动记录在邮箱审核日志中, 在此日志中可以搜索在邮箱上执行的活动。
-ms.openlocfilehash: 7b50885379b7843ea1c602f08dc2976d5007d8ca
-ms.sourcegitcommit: 32ecff689ae32c59a39b7633ca0f36a304e7516e
+description: 默认情况下, 邮箱审核日志记录在 Office 365 中处于打开状态 (也称为默认邮箱审核或邮箱审核, 默认情况下)。 这意味着邮箱所有者、代理人和管理员执行的某些操作将自动记录在邮箱审核日志中, 在此日志中可以搜索在邮箱上执行的活动。
+ms.openlocfilehash: 049b9fe79ae3389e09fb07017fd2deb810640f35
+ms.sourcegitcommit: 3962de88a143f0eb416b5cfdfd777d731f560ec8
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/09/2019
-ms.locfileid: "35599918"
+ms.lasthandoff: 08/28/2019
+ms.locfileid: "36649907"
 ---
 # <a name="manage-mailbox-auditing"></a>管理邮箱审核
 
-从2019年1月起, Microsoft 将默认为所有 Microsoft 365 组织启用邮箱审核日志记录。 这意味着邮箱所有者、代理人和管理员执行的某些操作将会自动记录, 当您在邮箱审核日志中搜索时, 相应的邮箱审核记录将可用。 默认情况下, 邮箱审核启用前, 您必须为组织中的每个用户邮箱手动启用它。
+从2019年1月起, Microsoft 将默认为所有 Office 365 组织启用邮箱审核日志记录。 这意味着邮箱所有者、代理人和管理员执行的某些操作将会自动记录, 当您在邮箱审核日志中搜索时, 相应的邮箱审核记录将可用。 默认情况下, 邮箱审核启用前, 您必须为组织中的每个用户邮箱手动启用它。
 
 以下是邮箱审核在默认情况下的一些优点:
 
@@ -36,8 +36,8 @@ ms.locfileid: "35599918"
 
 - 您的组织中有一致的邮箱审核策略 (因为您正在审核对所有邮箱的相同操作)。
 
-> [!TIP]
-> 有关默认情况下的邮箱审核发布的重要事项是: 不需要执行任何操作来管理邮箱审核。 但是, 若要了解详细信息, 自定义邮箱审核的默认设置, 或将其全部关闭, 本主题可为你有所帮助。
+> [!NOTE]
+>•默认情况下, 有关邮箱审核发布的重要事项是: 不需要执行任何操作来管理邮箱审核。 但是, 若要了解详细信息, 自定义邮箱审核的默认设置, 或将其全部关闭, 本主题可为你有所帮助。 <br><br>•在默认情况下启用邮箱审核时, 您可能会注意到, 在安全 & 合规性中心或通过 Office 365 管理活动 API 审核日志搜索中找不到某些用户的邮箱审核事件。 有关详细信息, 请参阅本主题中的[详细信息](#more-information)部分。
 
 ## <a name="verify-mailbox-auditing-on-by-default-is-turned-on"></a>默认情况下验证邮箱审核启用
 
@@ -334,7 +334,23 @@ Get-MailboxAuditBypassAssociation -Identity <MailboxIdentity> | Format-List Audi
 
 ## <a name="more-information"></a>更多信息
 
-- 默认情况下, 邮箱审核日志记录会在被删除前的90天后保留。 您可以使用 Exchange Online PowerShell 中的 "**设置邮箱**" cmdlet 上的*AuditLogAgeLimit*参数更改审核日志记录的期限。 但是, 增加此值不会允许您在 Microsoft 365 审核日志中搜索超过90天的事件。
+- 只有在管理员手动启用了邮箱审核日志记录的用户使用 E5 许可证或邮箱时, 才会在安全 & 合规中心或通过 Office 365 管理活动 API 中返回审核日志搜索中的邮箱审核日志事件。
+
+  若要检索没有 E5 许可证的用户的邮箱审核日志条目, 可以执行以下操作:
+
+  - 在 Exchange Online PowerShell 中使用以下 cmdlet:
+
+    - [搜索-search-mailboxauditlog](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-audit/search-mailboxauditlog)以搜索特定用户的邮箱审核日志。
+
+    - [New-mailboxauditlogsearch](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-audit/new-mailboxauditlogsearch)搜索特定用户的邮箱审核日志, 并将结果通过电子邮件发送给指定的收件人。
+
+  - 使用 exchange Online 中的 Exchange 管理中心 (EAC) 执行以下操作:
+
+    - [导出邮箱审核日志](https://docs.microsoft.com/Exchange/security-and-compliance/exchange-auditing-reports/export-mailbox-audit-logs)
+
+    - [运行非所有者邮箱访问报告](https://docs.microsoft.com/Exchange/security-and-compliance/exchange-auditing-reports/non-owner-mailbox-access-report)
+
+- 默认情况下, 邮箱审核日志记录会在被删除前的90天后保留。 您可以使用 Exchange Online PowerShell 中的 "**设置邮箱**" cmdlet 上的*AuditLogAgeLimit*参数更改审核日志记录的期限。 但是, 增加此值不会允许您在 Office 365 审核日志中搜索超过90天的事件。
 
   如果增加期限, 则需要使用 Exchange Online PowerShell 中的[search-mailboxauditlog](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-audit/search-mailboxauditlog) cmdlet 在用户的邮箱审核日志中搜索早于90天的记录。
 
@@ -361,6 +377,6 @@ Get-MailboxAuditBypassAssociation -Identity <MailboxIdentity> | Format-List Audi
       Get-MailboxFolderStatistics -Identity <MailboxIdentity> -FolderScope RecoverableItems | Where-Object {$_.Name -eq 'Audits'} | Format-List FolderPath,FolderSize,ItemsInFolder
       ```
 
-    - 您不能直接访问 "可恢复的项目" 文件夹中的审核日志记录;相反, 您可以使用**search-mailboxauditlog** cmdlet 或搜索 Microsoft 365 审核日志来查找和查看邮箱审核记录。
+    - 您不能直接访问 "可恢复的项目" 文件夹中的审核日志记录;相反, 您可以使用**search-mailboxauditlog** cmdlet 或搜索 Office 365 审核日志来查找和查看邮箱审核记录。
 
 - 如果将邮箱置于保留或分配到合规中心中的保留策略, 则在邮箱的*AuditLogAgeLimit*属性定义的持续时间内仍会保留审核日志记录 (默认情况下为90天)。 若要延长保留邮箱的审核日志记录, 您需要增加邮箱的*AuditLogAgeLimit*值。
