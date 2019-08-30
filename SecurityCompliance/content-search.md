@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: 53390468-eec6-45cb-b6cd-7511f9c909e4
 description: 使用 Office 365 或 Microsoft 365 合规中心中的内容搜索工具搜索邮箱、SharePoint Online 网站、OneDrive 帐户、Microsoft Teams、Office 365 组 和 Skype for Business 对话中的内容。 可以使用关键字搜索查询和搜索条件来缩小搜索结果。 然后预览并导出搜索结果。 内容搜索也是一款有效的工具，可用于搜索与 GDPR 数据主题请求相关的内容。
-ms.openlocfilehash: 2fff94899dabca85338ba1ca924ec37afa1dccf3
-ms.sourcegitcommit: 873c5bc0e6cd1ca3dfdb3a99a5371353b419311f
+ms.openlocfilehash: cc6a385ec639f6df787c2de23fece8cb53a4d25e
+ms.sourcegitcommit: d55dab629ce1f8431b8370afde4131498dfc7471
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2019
-ms.locfileid: "36493163"
+ms.lasthandoff: 08/29/2019
+ms.locfileid: "36675463"
 ---
 # <a name="content-search-in-office-365"></a>Office 365 中的内容搜索
 
@@ -184,6 +184,8 @@ ms.locfileid: "36493163"
 [预览搜索结果](#previewing-search-results)
   
 [部分索引项](#partially-indexed-items)
+
+[在 SharePoint 多地理位置环境中搜索内容](#searching-for-content-in-a-sharepoint-multi-geo-environment)
   
 ### <a name="content-search-limits"></a>内容搜索限制
 
@@ -368,3 +370,40 @@ ms.locfileid: "36493163"
 - 如前面所述，邮箱中的部分索引项将包括在估计的搜索结果中。 SharePoint 和 OneDrive 中的部分索引项不会包括在估计的搜索结果中。 
     
 - 如果部分索引项符合搜索查询（因为其他邮件或文档属性满足搜索条件），则它不会包含在未编入索引的项目的估计数中。 如果部分索引项被搜索条件排除在外，则它不会包括在未索引项的估计数中。 有关详细信息，请参阅 [Office 365 内容搜索中的部分索引项](partially-indexed-items-in-content-search.md)。
+
+### <a name="searching-for-content-in-a-sharepoint-multi-geo-environment"></a>在 SharePoint 多地理位置环境中搜索内容
+
+如果电子数据展示管理器需要在 [ 多地理位置环境](https://go.microsoft.com/fwlink/?linkid=860840)中的不同区域内搜索 SharePoint 和 OneDrive 中的内容，则需要执行以下操作来实现这一点：
+   
+1. 为电子数据展示管理器需要搜索的每个卫星地理位置创建单独的用户帐户。 若要在该地理位置搜索网站中的内容，电子数据展示管理器必须登录到为该位置创建的帐户，然后运行内容搜索。
+
+2. 为电子数据展示管理器需要搜索的每个卫星地理位置（和相应用户帐户）创建搜索权限筛选器。 当电子数据展示管理器登录到与该位置相关联的用户帐户时，其中每一个搜索权限筛选器都会将内容搜索的范围限制为特定地理位置。
+ 
+> [!TIP]
+> 使用[高级电子数据展示](compliance20/overview-ediscovery-20.md)中的搜索工具时，无需使用此策略。 这是因为在高级电子数据展示中搜索 SharePoint 网站和 OneDrive 帐户时，将搜索所有数据中心。 仅当使用内容搜索工具并运行与电子数据展示事例[](ediscovery-cases.md)相关联的搜索时，才必须使用特定于区域的用户帐户的策略和搜索权限筛选器。 
+
+
+例如，假设电子数据展示管理器需要在芝加哥、伦敦和东京的卫星位置搜索 SharePoint 和 OneDrive 内容。 第一步是创建三个用户帐户，每个帐户对应一个位置。 下一步是创建三个搜索权限筛选器，分别对应每个位置和相应的用户帐户。 下面是这种情况下三个搜索权限筛选器的示例。 在上述每个示例中，“**区域**”指定该地理位置的 SharePoint 数据中心位置，而“**Users**”参数指定相应的用户帐户。 
+
+**北美**
+```
+New-ComplianceSecurityFilter -FilterName "SPMultiGeo-Chicago" -Users ediscovery-chicago@contoso.com -Region NAM -Action ALL
+```
+
+**欧洲**
+```
+New-ComplianceSecurityFilter -FilterName "SPMultiGeo-London" -Users ediscovery-london@contoso.com -Region GBR -Action ALL
+```
+
+**亚太地区**
+```
+New-ComplianceSecurityFilter -FilterName "SPMultiGeo-Toyko" -Users ediscovery-tokyo@contoso.com -Region JPN -Action ALL
+```
+
+使用搜索权限筛选器搜索多地理位置环境中的内容时，请记住以下事项：
+
+- **Region** 参数将搜索定向到指定的卫星位置。 如果电子数据展示管理器仅在搜索权限筛选器中指定的区域之外搜索 SharePoint 和 OneDrive 网站，则不返回任何搜索结果。 
+
+- **Region** 参数不控制 Exchange 邮箱的搜索。 搜索邮箱时，将搜索所有数据中心。 
+    
+要详细了解如何在多地理位置环境中使用搜索权限筛选器，请参阅[在 Office 365 中设置电子数据展示调查的合规性边界](set-up-compliance-boundaries.md#searching-and-exporting-content-in-multi-geo-environments)中的“在多地理位置环境中搜索和导出内容”部分。

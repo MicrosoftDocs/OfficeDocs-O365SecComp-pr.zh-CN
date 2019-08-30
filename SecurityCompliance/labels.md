@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Office 365 中的保留标签可有助于对正确的内容执行适当的操作。借助保留标签，可对整个组织中的数据进行分类来管理数据，并根据此分类强制执行保留规则。另外，保留标签还可用于在 Office 365 中实现记录管理。
-ms.openlocfilehash: b3637470e0de1413589fc8e1ba35dc48e6823c4b
-ms.sourcegitcommit: 007af78a01461023bd434768154b5d96503f7e4b
+ms.openlocfilehash: e4028fa9526afbb33cb184adb7b3cd301feae837
+ms.sourcegitcommit: 361aab46b1bb295ed2dcc1a417ac81f699b8ff78
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/17/2019
-ms.locfileid: "35772159"
+ms.lasthandoff: 08/30/2019
+ms.locfileid: "36676652"
 ---
 # <a name="overview-of-retention-labels"></a>保留标签概述
 
@@ -163,7 +163,7 @@ ms.locfileid: "35772159"
   
 - 在保留期到期时触发处置评审。这样一来，必须先评审 SharePoint 和 OneDrive 文档，然后才能删除它们。有关详细信息，请参阅[处置评审概述](disposition-reviews.md)。
     
-- 保留期从内容分配有标签时开始计算，而不是根据内容年限或上次修改时间计算。
+- 保留期从内容分配有标签时开始计算，而不是根据内容年限或上次修改时间计算。 请注意，此选项仅适用于 SharePoint 网站和 OneDrive 帐户中的内容。 对于 Exchange 电子邮件，保留期限始终基于发送或接收邮件的日期，无论此处选择哪个选项，都是如此。
     
 ![包含标签专用选项的保留设置](media/c49118c9-6279-4661-94db-deffa76e27ac.png)
   
