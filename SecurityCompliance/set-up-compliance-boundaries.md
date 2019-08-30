@@ -15,12 +15,12 @@ search.appverid:
 - MET150
 ms.assetid: 1b45c82f-26c8-44fb-9f3b-b45436fe2271
 description: 使用合规性边界在 Office 365 组织中创建用于控制电子数据展示管理器可搜索的用户内容位置的逻辑边界。 合规性边界使用搜索权限筛选 (也称为合规性安全筛选器) 控制特定用户可以搜索哪些邮箱、SharePoint 网站和 OneDrive 帐户。
-ms.openlocfilehash: 44c157b8f155755c6a48830231074643a830f498
-ms.sourcegitcommit: 226adb6d05015da16138b315dd2f5b937bf4354d
+ms.openlocfilehash: abca7624cb5aa97c85686fc570a653c88b6b8b6b
+ms.sourcegitcommit: d55dab629ce1f8431b8370afde4131498dfc7471
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36302421"
+ms.lasthandoff: 08/29/2019
+ms.locfileid: "36675443"
 ---
 # <a name="set-up-compliance-boundaries-for-ediscovery-investigations-in-office-365"></a>在 Office 365 中为电子数据展示调查设置合规性边界
 
@@ -233,7 +233,7 @@ New-ComplianceSecurityFilter -FilterName "Coho Winery Security Filter" -Users "C
   
 - **Region**参数并不控制 Exchange 邮箱的搜索。 搜索邮箱时将搜索所有数据中心。 若要限制可以搜索的 Exchange 邮箱的作用域, 请在创建或更改搜索权限筛选器时使用**Filters**参数。 
     
-- 如果电子数据展示管理器需要跨多个 SharePoint 区域进行搜索, 则需要为该电子数据展示管理器创建一个不同的用户帐户, 该用户帐户可在搜索权限筛选器中用于指定 SharePoint 的备用区域网站或 OneDrive 帐户位于。
+- 如果电子数据展示管理器需要在多个 SharePoint 区域中进行搜索, 则需要为该电子数据展示管理器创建一个不同的用户帐户, 该用户帐户可在搜索权限筛选器中用于指定 SharePoint 网站或OneDrive 帐户位于。 有关对此进行设置的详细信息, 请参阅在[Office 365 中的内容搜索](content-search.md#searching-for-content-in-a-sharepoint-multi-geo-environment)中的 "在 SharePoint 多地理位置环境中搜索内容" 部分。
     
 - 在 SharePoint 和 OneDrive 中搜索内容时,**区域**参数会将搜索定向到电子数据展示管理器将在其中执行电子数据展示调查的主或卫星位置。 如果电子数据展示管理器在搜索权限筛选器中指定的区域之外搜索 SharePoint 和 OneDrive 网站, 则不会返回任何搜索结果。 
     
