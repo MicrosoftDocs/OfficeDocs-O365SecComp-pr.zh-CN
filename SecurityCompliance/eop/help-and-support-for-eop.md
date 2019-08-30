@@ -10,12 +10,12 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: 64535a0a-1044-413f-8bc2-ed8e8a0bc54c
 description: Microsoft 在多处通过多种方法为 EOP 提供帮助，包括自助支持和协助支持。
-ms.openlocfilehash: b1153149897efaeecec2f5003e7dfb10e28dc5ba
-ms.sourcegitcommit: 32ecff689ae32c59a39b7633ca0f36a304e7516e
+ms.openlocfilehash: a60a45833eafd0151ac3a48ff67087b90bd50e31
+ms.sourcegitcommit: 361aab46b1bb295ed2dcc1a417ac81f699b8ff78
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/09/2019
-ms.locfileid: "35599658"
+ms.lasthandoff: 08/30/2019
+ms.locfileid: "36676754"
 ---
 # <a name="help-and-support-for-eop"></a>EOP 帮助与支持
 
@@ -48,40 +48,38 @@ ms.locfileid: "35599658"
 ### <a name="ask-for-help-on-the-web"></a>在 Web 上寻求帮助
 
 1. 登录到 Microsoft 365 管理中心。
-    
+
 2. Go to **Support** \> **Ask for Customer Support** \> **New Service Request**
-    
+
 3. 使用表格添加您的问题信息，搜索以往问题的解决方案，或附上日志或相关文件。
-    
+
 ### <a name="ask-for-help-on-the-telephone"></a>致电寻求帮助
 
 1. 登录到 Microsoft 365 管理中心。
-    
+
 2. For general product issues go to **Support** \> **Ask for Customer Support** \> **Call technical support**.
-    
+
     For questions before you buy EOP, or questions about billing and subscriptions, go to **Support** \> **Ask for Customer Support** \> **Call billing and subscription support**.
-    
+
 3. 使用 Microsoft Office 365 虚拟代理搜索目前最合适的电话号码。
-    
+
 ## <a name="support-telephone-numbers"></a>支持电话号码
 
 Microsoft 针对全球产品支持提供本地或免费电话号码。很多支持中心都可以在工作时间提供本地语言支持，或者全天候提供英文支持。如果下表中未列出您所在的位置，您可以使用上述 Microsoft Office 365 虚拟代理找到本地支持电话号码。
   
 |**国家或地区**|**预购买和帐单问题**|**技术支持问题**|
 |:-----|:-----|:-----|
-|巴西  <br/> |免费电话：08007621146          本地：1147001999  <br/> |相同  <br/> |
-|法国  <br/> |免费电话：0805 540 594           本地：01 57 32 42 97  <br/> |相同  <br/> |
-|德国  <br/> |免费电话：0800 589 2332           本地：069 380 789 508  <br/> |相同  <br/> |
-|日本  <br/> |免费电话：0120-628860          本地：343326257  <br/> |免费电话：0120-996680          本地：357679793  <br/> |
-|韩国  <br/> |免费电话：080-495-0880          本地：234831937  <br/> |相同  <br/> |
-|西班牙  <br/> |免费电话：900 814 197          本地：912 718 160  <br/> |相同  <br/> |
-|英国  <br/> |免费电话：0800 032 6417          本地：0203 450 6455  <br/> |相同  <br/> |
-|美国  <br/> |免费电话：1-877-913-2707  <br/> |免费电话：1-800-865-9408  <br/> |
+|巴西|免费电话: 08007621146 <br/> 本地: 1147001999|相同|
+|法国|免费电话: 0805 540 594 <br/> 本地:01 57 32 42 97|相同|
+|德国|免费电话: 0800 589 2332 <br/>  本地: 069 380 789 508|相同|
+|日本|免费电话: 0120-628860 <br/> 本地: 343326257|免费电话: 0120-996680 <br/> 本地: 357679793|
+|韩国|免费电话: 080-495-0880 <br/> 本地: 234831937|相同|
+|西班牙|免费电话: 900 814 197 <br/> 本地: 912 718 160|相同|
+|英国|免费电话: 0800 032 6417 <br/> 本地: 0203 450 6455|相同|
+|美国|免费电话：1-877-913-2707|免费电话：1-800-865-9408|
    
 ## <a name="for-more-information-about-eop-documentation"></a>有关 EOP 文件的详细信息
 
 [第三方版权声明](third-party-copyright-notices.md)
   
 [面向残障人士的辅助功能](accessibility-for-people-with-disabilities.md)
-  
-

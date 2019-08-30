@@ -15,12 +15,12 @@ search.appverid:
 - MET150
 ms.assetid: aaca8987-5b62-458b-9882-c28476a66918
 description: 默认情况下, 邮箱审核日志记录在 Office 365 中处于打开状态 (也称为默认邮箱审核或邮箱审核, 默认情况下)。 这意味着邮箱所有者、代理人和管理员执行的某些操作将自动记录在邮箱审核日志中, 在此日志中可以搜索在邮箱上执行的活动。
-ms.openlocfilehash: 049b9fe79ae3389e09fb07017fd2deb810640f35
-ms.sourcegitcommit: 3962de88a143f0eb416b5cfdfd777d731f560ec8
+ms.openlocfilehash: 50be60e3ca863c6625693c1b4debce1217571002
+ms.sourcegitcommit: 361aab46b1bb295ed2dcc1a417ac81f699b8ff78
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/28/2019
-ms.locfileid: "36649907"
+ms.lasthandoff: 08/30/2019
+ms.locfileid: "36676862"
 ---
 # <a name="manage-mailbox-auditing"></a>管理邮箱审核
 
@@ -88,7 +88,7 @@ Get-OrganizationConfig | Format-List AuditDisabled
 
     - Exchange Online 中的就地电子数据展示。
 
-  - 可以使用[Microsoft Exchange SERVER MAPI 编辑器](https://go.microsoft.com/fwlink/p/?linkId=204086)访问邮箱。
+  - 可以使用 Microsoft Exchange Server MAPI 编辑器访问邮箱。
 
 ### <a name="mailbox-actions-for-user-mailboxes-and-shared-mailboxes"></a>用户邮箱和共享邮箱的邮箱操作
 
