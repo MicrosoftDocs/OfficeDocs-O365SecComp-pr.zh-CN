@@ -13,12 +13,12 @@ ms.assetid: 8401f520-8e7c-467b-9e06-4a9fdb2ba548
 ms.collection:
 - M365-security-compliance
 description: 您可以创建 Exchange 邮件流规则, 以防止用户将电子邮件发送给 Microsoft 进行分析并在自己的安全过程中使用它们。
-ms.openlocfilehash: 7308de8e3f23a7c210d4d8a4e6ec5e322d40055f
-ms.sourcegitcommit: 32ecff689ae32c59a39b7633ca0f36a304e7516e
+ms.openlocfilehash: d423cc7f85609563acf80ea8efffa8935a2537d3
+ms.sourcegitcommit: 769b506c828c475c713dbb337e115714dcc7f17c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/09/2019
-ms.locfileid: "35600428"
+ms.lasthandoff: 08/31/2019
+ms.locfileid: "36699004"
 ---
 # <a name="use-mail-flow-rules-to-see-what-your-users-are-reporting-to-microsoft"></a>使用邮件流规则来查看用户向 Microsoft 报告的内容
 
@@ -30,7 +30,7 @@ ms.locfileid: "35600428"
   
 您必须先获得权限，然后才能执行此过程或多个过程。 若要查看所需的权限, 请参阅邮件[策略和合规性权限](http://technet.microsoft.com/library/ec4d3b9f-b85a-4cb9-95f5-6fc149c3899b.aspx)主题中的 "邮件流规则" 条目和 "[客户端和移动设备权限](http://technet.microsoft.com/library/57eca42a-5a7f-4c65-89f0-7a84f2dbea19.aspx)" 主题中的 "Outlook on the web 邮箱策略" 条目。 
   
-若要了解本主题中的过程可能适用的键盘快捷键，请参阅 **Exchange 管理中心内的键盘快捷键**。
+有关可能适用于本主题中的过程的键盘快捷方式的信息, 请参阅 exchange [Online 中 exchange 管理中心的键盘快捷方式](https://docs.microsoft.com/Exchange/accessibility/keyboard-shortcuts-in-admin-center)。
   
 ## <a name="use-the-eac-to-create-a-mail-flow-rule-to-view-users-manual-junk-phishing-and-not-junk-reports"></a>使用 EAC 创建邮件流规则, 以查看用户的 "手动垃圾邮件"、"网络钓鱼" 和 "非垃圾邮件" 报告
 

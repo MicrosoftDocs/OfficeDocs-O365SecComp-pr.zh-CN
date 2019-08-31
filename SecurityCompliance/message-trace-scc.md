@@ -9,12 +9,12 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: 3e64f99d-ac33-4aba-91c5-9cb4ca476803
 description: 管理员可以使用安全 & 合规性中心中的邮件跟踪来查明邮件发生了什么情况。
-ms.openlocfilehash: 3c5efb1d832a52c6b6b5eb9cfb81ece216c64513
-ms.sourcegitcommit: 1947ad3c0dde9163ba9b6834d8b38bd04b4264a5
+ms.openlocfilehash: ad5e6e1f5e95b97cf9601890c11129f498fe95b9
+ms.sourcegitcommit: 769b506c828c475c713dbb337e115714dcc7f17c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/27/2019
-ms.locfileid: "36643254"
+ms.lasthandoff: 08/31/2019
+ms.locfileid: "36699220"
 ---
 # <a name="message-trace-in-the-security--compliance-center"></a>安全与合规中心内的消息跟踪
 
@@ -25,7 +25,7 @@ Security & 合规中心中的邮件跟踪在通过 Exchange Online 组织传递�
 Security & 合规性中心中的邮件跟踪改进了在 Exchange 管理中心 (EAC) 中可用的邮件跟踪。 您可以使用邮件跟踪中的信息来有效地回答用户对其邮件发生的问题、解决邮件流问题以及验证策略更改的问题。
 
 > [!NOTE]
->  邮件计数将在 50 000 停止, 并且报告将在控制台中仅反映此数量。 PowerShell cmdlet Start-historicalsearch cmdlet 将显示真正的邮件计数。
+> 结果中仅显示前50000条消息。 Exchange Online PowerShell 或 Exchange Online Protection PowerShell 中的[start-historicalsearch](https://docs.microsoft.com/powershell/module/exchange/reporting/get-historicalsearch) cmdlet 将返回结果中的所有邮件。
 
 ## <a name="open-message-trace"></a>打开邮件跟踪
 
@@ -190,35 +190,39 @@ Security & 合规性中心中的邮件跟踪改进了在 Exchange 管理中心 (
 
 邮件跟踪详细信息包含摘要报告中不存在的以下附加信息:
 
-- **邮件事件**: 本节包含的分类可帮助对邮件所需的操作进行分类。 您可能遇到的一些更有趣的事件是:
+- **邮件事件**: 本节包含的分类可帮助对邮件所需的操作进行分类。 您可能遇到**的一些更有趣的事件**是:
 
-   - **接收**: 服务收到邮件。
+  - **接收**: 服务收到邮件。
 
-   - **发送**: 邮件是由服务发送的。
+  - **发送**: 邮件是由服务发送的。
 
-   - **失败**: 邮件传递失败。
+  - **失败**: 邮件传递失败。
 
-   - **传递**: 邮件已传递到邮箱。
+  - **传递**: 邮件已传递到邮箱。
 
-   - **Expand**: 邮件被发送到展开的通讯组。
+  - **Expand**: 邮件被发送到展开的通讯组。
 
-   - **传输**: 由于内容转换、邮件收件人限制或代理, 收件人被移动到分支邮件。
+  - **传输**: 由于内容转换、邮件收件人限制或代理, 收件人被移动到分支邮件。
 
-   - **Defer**: 邮件传递被推迟, 稍后可能重试。
+  - **Defer**: 邮件传递被推迟, 稍后可能重试。
 
-   - **已解决**: 邮件已重定向到基于 Active Directory 查找的新收件人地址。 当发生这种情况时，原始收件人地址会被列在邮件跟踪中的单独一行，包括邮件的最终传递状态。
+  - **已解决**: 邮件已重定向到基于 Active Directory 查找的新收件人地址。 当发生这种情况时，原始收件人地址会被列在邮件跟踪中的单独一行，包括邮件的最终传递状态。
 
-   请注意, 即使已成功传递的无事件邮件也会在邮件跟踪中生成多个**事件**条目。
+  注意：
+
+  - 成功传递的无事件邮件将在邮件跟踪中生成多个**事件**条目。
+
+  - 此列表不应详尽。 有关更多事件的说明, 请参阅[邮件跟踪日志中的事件类型](https://docs.microsoft.com/Exchange/mail-flow/transport-logs/message-tracking#event-types-in-the-message-tracking-log)。 请注意, 此链接是 Exchange Server (内部部署 Exchange) 主题。
 
 - **详细信息**: 本节包含以下详细信息:
 
-   - **邮件 id**: 此值在本主题前面的[邮件 id](#message-id)部分中进行了描述。 例如，`<d9683b4c-127b-413a-ae2e-fa7dfb32c69d@DM3NAM06BG401.Eop-nam06.prod.protection.outlook.com>`。
+  - **邮件 id**: 此值在本主题前面的[邮件 id](#message-id)部分中进行了描述。 例如，`<d9683b4c-127b-413a-ae2e-fa7dfb32c69d@DM3NAM06BG401.Eop-nam06.prod.protection.outlook.com>`。
 
-   - **邮件大小**
+  - **邮件大小**
 
-   - **发件人 ip**: 发送邮件的计算机的 ip 地址。 对于从 Exchange Online 发送的出站邮件，该值是空值。
+  - **发件人 ip**: 发送邮件的计算机的 ip 地址。 对于从 Exchange Online 发送的出站邮件，该值是空值。
 
-   - **目标 ip**: 服务尝试传递邮件的 ip 地址或地址。 如果邮件有多个收件人, 则会显示这些收件人。 对于发送到 Exchange Online 的入站邮件，该值是空值。
+  - **目标 ip**: 服务尝试传递邮件的 ip 地址或地址。 如果邮件有多个收件人, 则会显示这些收件人。 对于发送到 Exchange Online 的入站邮件，该值是空值。
 
 ### <a name="enhanced-summary-reports"></a>增强的摘要报告
 
@@ -230,11 +234,11 @@ Security & 合规性中心中的邮件跟踪改进了在 Exchange 管理中心 (
 
 - **Recipient_status**: 邮件传递给收件人的状态。 如果邮件发送给多个收件人, 则它将显示所有收件人以及每个收件人的相应状态, 格式为: \<*电子邮件地址*\>##\<*状态*\>。 例如：
 
-   - **# #Receive, Send**表示该邮件由服务接收, 并发送到预定的目标。
+  - **# #Receive, Send**表示该邮件由服务接收, 并发送到预定的目标。
 
-   - **# #Receive, Fail**表示邮件已由服务接收, 但传递到目标目标失败。
+  - **# #Receive, Fail**表示邮件已由服务接收, 但传递到目标目标失败。
 
-   - **# #Receive, 提供**表示邮件已由服务接收, 并已传递到收件人的邮箱。
+  - **# #Receive, 提供**表示邮件已由服务接收, 并已传递到收件人的邮箱。
 
 - **message_subject**: 邮件的 " **subject** " 字段的前256个字符。
 
@@ -268,17 +272,17 @@ Security & 合规性中心中的邮件跟踪改进了在 Exchange 管理中心 (
 
 - **source_context**: 与**源**字段关联的额外信息。 例如：
 
-   - `Protocol Filter Agent`
+  - `Protocol Filter Agent`
 
-   - `3489061114359050000`
+  - `3489061114359050000`
 
 - **源**: 负责事件的 Exchange Online 组件。 例如：
 
-   - `AGENT`
+  - `AGENT`
 
-   - `MAILBOXRULE`
+  - `MAILBOXRULE`
 
-   - `SMTP`
+  - `SMTP`
 
 - **event_id**: 这些值对应于在 "[查找此邮件的相关记录](#find-related-records-for-this-message)" 部分中介绍的**消息事件**值。
 
@@ -292,27 +296,27 @@ Security & 合规性中心中的邮件跟踪改进了在 Exchange 管理中心 (
 
 - **参考**: 此字段包含特定事件类型的其他信息。 例如：
 
-   - **DSN**: 包含报告链接, 如果此事件后面生成 dsn, 则该链接是关联的传递状态通知 (也称为 DSN、未送达报告、NDR 或退回邮件) 的**message_id**值。 如果这是 DSN 邮件, 则此字段包含为其生成 DSN 的原始邮件的**message_id**值。
+  - **DSN**: 包含报告链接, 如果此事件后面生成 dsn, 则该链接是关联的传递状态通知 (也称为 DSN、未送达报告、NDR 或退回邮件) 的**message_id**值。 如果这是 DSN 邮件, 则此字段包含为其生成 DSN 的原始邮件的**message_id**值。
 
-   - **展开**: 包含相关邮件的**related_recipient_address**值。
+  - **展开**: 包含相关邮件的**related_recipient_address**值。
 
-   - **RECEIVE**: 如果邮件是由其他进程生成的 (例如, 收件箱规则), 则可能包含相关邮件的**message_id**值。
+  - **RECEIVE**: 如果邮件是由其他进程生成的 (例如, 收件箱规则), 则可能包含相关邮件的**message_id**值。
 
-   - **SEND**: 包含任何 DSN 邮件的**internal_message_id**值。
+  - **SEND**: 包含任何 DSN 邮件的**internal_message_id**值。
 
-   - **传输**: 包含正在分叉的邮件的**internal_message_id**值 (例如, 通过内容转换、邮件收件人限制或代理)。
+  - **传输**: 包含正在分叉的邮件的**internal_message_id**值 (例如, 通过内容转换、邮件收件人限制或代理)。
 
-   - **MAILBOXRULE**: 包含导致收件箱规则生成出站邮件的入站邮件的**internal_message_id**值。
+  - **MAILBOXRULE**: 包含导致收件箱规则生成出站邮件的入站邮件的**internal_message_id**值。
 
-   对于其他类型的事件, 此字段通常为空。
+    对于其他类型的事件, 此字段通常为空。
 
 - **return_path**: 发送邮件的**邮件发件**人命令指定的返回电子邮件地址。 虽然此字段永远不为空, 但它可以有表示为`<>`的 null 发件人地址值。
 
 - **message_info**: 有关邮件的其他信息。 例如：
 
-   - 的消息起始日期-时间 ( `DELIVER` UTC) 和`SEND`事件。 源日期-时间是邮件第一次进入 Exchange Online 组织的时间。 UTC `yyyy-mm-ddThh:mm:ss.fffZ`日期-时间以 ISO 8601 日期-时间格式表示:, 其中`yyyy` = year, `mm` = month, `dd` = day, `T`表示时间部分的开始时间, `hh` = 小时, `mm` = 分钟, `ss` = 秒, = `fff`秒的小数部分, 并`Z`表示`Zulu`, 这是表示 UTC 的另一种方法。
+  - 的消息起始日期-时间 ( `DELIVER` UTC) 和`SEND`事件。 源日期-时间是邮件第一次进入 Exchange Online 组织的时间。 UTC `yyyy-mm-ddThh:mm:ss.fffZ`日期-时间以 ISO 8601 日期-时间格式表示:, 其中`yyyy` = year, `mm` = month, `dd` = day, `T`表示时间部分的开始时间, `hh` = 小时, `mm` = 分钟, `ss` = 秒, = `fff`秒的小数部分, 并`Z`表示`Zulu`, 这是表示 UTC 的另一种方法。
 
-   - 身份验证错误。 例如, 您可能会看到值`11a`和身份验证错误发生时使用的身份验证类型。
+  - 身份验证错误。 例如, 您可能会看到值`11a`和身份验证错误发生时使用的身份验证类型。
 
 - **tenant_id**: 一个表示 Exchange Online 组织的 GUID 值 (例如`39238e87-b5ab-4ef6-a559-af54c6b07b42`)。
 
