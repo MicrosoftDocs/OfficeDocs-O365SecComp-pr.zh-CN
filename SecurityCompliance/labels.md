@@ -283,14 +283,12 @@ ms.locfileid: "36676652"
 
 有关查询语法的详细信息，请参阅：
 
-- 
-  [关键字查询语言 (KQL) 语法参考](https://docs.microsoft.com/zh-CN/sharepoint/dev/general-development/keyword-query-language-kql-syntax-reference)
+- [关键字查询语言 (KQL) 语法参考](https://docs.microsoft.com/zh-CN/sharepoint/dev/general-development/keyword-query-language-kql-syntax-reference)
 
 基于查询的标签使用搜索索引来标识内容。有关有效可搜索属性的详细信息，请参阅：
 
 - [内容搜索的关键字查询和搜索条件](keyword-queries-and-search-conditions.md)
-- 
-  [已爬网和托管属性在 SharePoint Server 中的概述](https://docs.microsoft.com/zh-CN/SharePoint/technical-reference/crawled-and-managed-properties-overview)
+- [已爬网和托管属性在 SharePoint Server 中的概述](https://docs.microsoft.com/zh-CN/SharePoint/technical-reference/crawled-and-managed-properties-overview)
 
 示例查询：
 

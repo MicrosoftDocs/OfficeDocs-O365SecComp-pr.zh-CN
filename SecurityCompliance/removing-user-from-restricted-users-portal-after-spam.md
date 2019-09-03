@@ -81,12 +81,10 @@ Office 365 安全与合规性警报策略页下有一条“被限制发送电子
 
 [响应遭到入侵的电子邮件帐户](responding-to-a-compromised-email-account.md)
 
-
-  [了解“被限制发送电子邮件的用户”警报](https://docs.microsoft.com/zh-CN/office365/securitycompliance/alert-policies)
+[了解“被限制发送电子邮件的用户”警报](https://docs.microsoft.com/zh-CN/office365/securitycompliance/alert-policies)
 
 [出站邮件的高风险传递池](high-risk-delivery-pool-for-outbound-messages.md)
 
 [安全与合规中心内的权限](permissions-in-the-security-and-compliance-center.md)
 
-
-  [安全与合规中心内的警报策略](https://docs.microsoft.com/zh-CN/office365/securitycompliance/alert-policies)
+[安全与合规中心内的警报策略](https://docs.microsoft.com/zh-CN/office365/securitycompliance/alert-policies)

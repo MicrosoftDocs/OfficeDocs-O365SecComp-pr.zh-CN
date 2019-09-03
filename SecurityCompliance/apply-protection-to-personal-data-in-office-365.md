@@ -248,11 +248,9 @@ Office 365 DLP 的主要用途之一是识别出 Office 365 环境中与欧盟�
 
 详细信息：
 
--   
-  [了解 SharePoint 中的权限级别](https://support.office.com/zh-CN/article/Understanding-permission-levels-in-SharePoint-87ecbb0e-6550-491a-8826-c075e4859848)
+-   [了解 SharePoint 中的权限级别](https://support.office.com/zh-CN/article/Understanding-permission-levels-in-SharePoint-87ecbb0e-6550-491a-8826-c075e4859848)
 
--   
-  [了解 SharePoint 组](https://support.office.com/zh-CN/article/Understanding-SharePoint-groups-94d9b261-161e-4ace-829e-eca1c8cd2eb8)
+-   [了解 SharePoint 组](https://support.office.com/zh-CN/article/Understanding-SharePoint-groups-94d9b261-161e-4ace-829e-eca1c8cd2eb8)
 
 ### <a name="external-sharing-policies-for-sharepoint-and-onedrive-for-business-libraries"></a>适用于 SharePoint 和 OneDrive for Business 库的外部共享策略
 
@@ -302,11 +300,9 @@ Office 365 DLP 的主要用途之一是识别出 Office 365 环境中与欧盟�
 
 详细信息：
 
--   
-  [管理 SharePoint Online 环境的外部共享](https://support.office.com/zh-CN/article/Manage-external-sharing-for-your-SharePoint-Online-environment-C8A462EB-0723-4B0B-8D0A-70FEAFE4BE85?ui=en-US&rs=en-US&ad=US)
+-   [管理 SharePoint Online 环境的外部共享](https://support.office.com/zh-CN/article/Manage-external-sharing-for-your-SharePoint-Online-environment-C8A462EB-0723-4B0B-8D0A-70FEAFE4BE85?ui=en-US&rs=en-US&ad=US)
 
--   
-  [与组织外部的用户共享站点或文档](https://support.office.com/zh-CN/article/Share-sites-or-documents-with-people-outside-your-organization-80e49744-e30f-44db-8d51-16661b1d4232)
+-   [与组织外部的用户共享站点或文档](https://support.office.com/zh-CN/article/Share-sites-or-documents-with-people-outside-your-organization-80e49744-e30f-44db-8d51-16661b1d4232)
 
 ### <a name="site-level-device-access-policies"></a>网站级别的设备访问策略
 

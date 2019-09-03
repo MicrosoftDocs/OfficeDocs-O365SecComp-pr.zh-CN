@@ -47,14 +47,13 @@ ms.locfileid: "35854796"
 有关详细信息，请参阅：
 
 - [使用新的 OME 功能需要什么订阅？](ome-faq.md#what-subscriptions-do-i-need-to-use-the-new-ome-capabilities)检查你的订阅计划是否包含 Azure 信息保护 (包括 Azure RMS 功能)。
-- [Azure 信息保护](https://azure.microsoft.com/en-us/services/information-protection/)获取有关购买符合条件的订阅的信息。  
+- [Azure 信息保护](https://azure.microsoft.com/zh-CN/services/information-protection/)获取有关购买符合条件的订阅的信息。  
 
 ### <a name="manually-activating-azure-rights-management"></a>请手动激活 Azure 权限管理
 
 如果禁用了 Azure RMS，或者由于某种原因未自动激活，则可在以下各项中将其手动激活：
 
-- 
-  **Microsoft 365 管理中心**：有关说明，请参阅[如何从管理中心激活 Azure 权限管理](https://docs.microsoft.com/zh-CN/azure/information-protection/activate-office365)。
+- **Microsoft 365 管理中心**：有关说明，请参阅[如何从管理中心激活 Azure 权限管理](https://docs.microsoft.com/zh-CN/azure/information-protection/activate-office365)。
 - **Azure 门户**：有关说明，请参阅[如何从 Azure 门户激活 Azure 权限管理](https://docs.microsoft.com/en-gb/azure/information-protection/activate-azure)。
 
 ## <a name="configure-management-of-your-azure-information-protection-tenant-key"></a>配置对 Azure 信息保护租户密钥的管理

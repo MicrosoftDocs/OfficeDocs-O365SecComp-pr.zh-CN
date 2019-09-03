@@ -25,8 +25,7 @@ ms.locfileid: "36478191"
 
 ## <a name="overview"></a>概述
 
-
-  [自定义敏感信息类型](https://docs.microsoft.com/zh-CN/office365/securitycompliance/custom-sensitive-info-types) 用于帮助防止无意或不适当的敏感信息共享。 作为管理员，你可以使用 [安全与合规中心](https://docs.microsoft.com/zh-CN/office365/securitycompliance/create-a-custom-sensitive-information-type)或 [PowerShell](https://docs.microsoft.com/zh-CN/office365/securitycompliance/create-a-custom-sensitive-information-type-in-scc-powershell)，根据模式、证据（“员工”、“徽章”、“ID”等关键字）、字符邻近度（特定模式下证据与字符的邻近度）以及可信度来定义自定义敏感信息类型。   ** ** ** 此类自定义敏感信息类型可满足许多组织的业务需求。
+[自定义敏感信息类型](https://docs.microsoft.com/zh-CN/office365/securitycompliance/custom-sensitive-info-types) 用于帮助防止无意或不适当的敏感信息共享。 作为管理员，你可以使用 [安全与合规中心](https://docs.microsoft.com/zh-CN/office365/securitycompliance/create-a-custom-sensitive-information-type)或 [PowerShell](https://docs.microsoft.com/zh-CN/office365/securitycompliance/create-a-custom-sensitive-information-type-in-scc-powershell)，根据模式、证据（“员工”、“徽章”、“ID”等关键字）、字符邻近度（特定模式下证据与字符的邻近度）以及可信度来定义自定义敏感信息类型。   ** ** ** 此类自定义敏感信息类型可满足许多组织的业务需求。
 
 但是，如果你需要自定义敏感信息类型（它使用精确数据值而不是仅与泛型模式匹配），该怎么办？ 通过基于精确数据匹配 (EDM) 的分类，你可以创建专门设计的自定义敏感信息类型：
 
@@ -187,8 +186,7 @@ Remove-DlpEdmSchema -Identity patientrecords
 
 设置规则包时，请确保正确引用 .csv 文件和 edm.xml 文件。 可复制、修改和使用我们的示例。 在此示例 xml 中，需要对以下字段进行自定义，以创建 EDM 敏感类型：
 
-- 
-  **RulePack id & ExactMatch id**：使用 [New-GUID](https://docs.microsoft.com/zh-CN/powershell/module/microsoft.powershell.utility/new-guid?view=powershell-6) 生成 GUID。
+- **RulePack id & ExactMatch id**：使用 [New-GUID](https://docs.microsoft.com/zh-CN/powershell/module/microsoft.powershell.utility/new-guid?view=powershell-6) 生成 GUID。
 
 - **数据存储**：此字段指定要使用的 EDM 查找数据存储。 提供已配置的 EDM 架构的数据源名称。
 
@@ -482,19 +480,15 @@ Office 365 DLP for Exchange Online（电子邮件）、OneDrive for Business（�
 
 ## <a name="related-articles"></a>相关文章
 
+[内置敏感信息类型以及它们查找的内容](https://docs.microsoft.com/zh-CN/office365/securitycompliance/what-the-sensitive-information-types-look-for)
 
-  [内置敏感信息类型以及它们查找的内容](https://docs.microsoft.com/zh-CN/office365/securitycompliance/what-the-sensitive-information-types-look-for)
+[自定义敏感信息类型](https://docs.microsoft.com/zh-CN/office365/securitycompliance/custom-sensitive-info-types)
 
-
-  [自定义敏感信息类型](https://docs.microsoft.com/zh-CN/office365/securitycompliance/custom-sensitive-info-types)
-
-
-  [DLP 策略概述](https://docs.microsoft.com/zh-CN/office365/securitycompliance/data-loss-prevention-policies)
+[DLP 策略概述](https://docs.microsoft.com/zh-CN/office365/securitycompliance/data-loss-prevention-policies)
 
 [Microsoft Cloud App Security](https://docs.microsoft.com/cloud-app-security)
 
-
-  [New-DlpEdmSchema](https://docs.microsoft.com/zh-CN/powershell/module/exchange/policy-and-compliance-dlp/new-dlpedmschema?view=exchange-ps)
+[New-DlpEdmSchema](https://docs.microsoft.com/zh-CN/powershell/module/exchange/policy-and-compliance-dlp/new-dlpedmschema?view=exchange-ps)
 
 ## <a name="feedback"></a>反馈
 已启用 GitHub 反馈，但是添加问题仅适用于公共网站。
