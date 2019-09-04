@@ -15,12 +15,12 @@ ms.assetid: bdd5372d-775e-4442-9c1b-609627b94b5d
 ms.collection:
 - M365-security-compliance
 description: 设置安全链接策略以保护您的组织免受 Word、Excel、PowerPoint 和 Visio 文件以及电子邮件中的恶意链接。
-ms.openlocfilehash: d84c57d1f21ea835d5a29e59a4efe4a11ff876c0
-ms.sourcegitcommit: 7a0cb7e1da39fc485fc29e7325b843d16b9808af
+ms.openlocfilehash: f33f351d9a4875a52854a239cf9f875be8e076d6
+ms.sourcegitcommit: fd3db13cd4fc71cd2cb164fd702007acba3e7399
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/07/2019
-ms.locfileid: "36230336"
+ms.lasthandoff: 09/04/2019
+ms.locfileid: "36717632"
 ---
 # <a name="set-up-office-365-atp-safe-links-policies"></a>设置 Office 365 ATP 安全链接策略
 
@@ -101,7 +101,7 @@ ms.locfileid: "36230336"
     
   - 如果要为组织中的用户发送的邮件启用安全链接 (推荐), 请选择 "**将安全链接应用于在组织内发送的邮件"** 。
     
-  - 选择 **"不允许用户单击到原始 URL"**。
+  - 如果您不希望单个用户覆盖*正在进行的扫描*或*URL 阻止*的通知页面, 请选择 **"不允许用户单击到原始 URL"** 。
     
   - (这是可选的)在 "**不重写以下 url"** 部分, 指定一个或多个被视为对您的组织而言是安全的 url。 (请参阅[设置自定义 "不重写" url 列表使用 ATP 安全链接](set-up-a-custom-do-not-rewrite-urls-list-with-atp.md))
     
