@@ -14,32 +14,32 @@ search.appverid:
 ms.assetid: dc4f704c-6fcc-4cab-9a02-95a824e4fb57
 description: 用于规划安全性和合规性的登录页
 ms.collection: M365-security-compliance
-ms.openlocfilehash: c125bd36494e26d9603b565dc5154b975604f2b3
-ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
+ms.openlocfilehash: 80e6215f1f4f5c04202f15e05622dfddae65d59b
+ms.sourcegitcommit: 4a2bde56178609e75c1ad7ecad2db5e049fc0c45
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "34157504"
+ms.lasthandoff: 09/05/2019
+ms.locfileid: "36761618"
 ---
 # <a name="plan-for-security-amp-compliance-in-office-365"></a>在 Office 365 &amp;中规划安全合规性
 
-管理安全性和合规性是一个合作关系。 您负责保护您的数据、标识和设备, 而 Microsoft 大力保护 Office 365 服务。 您可以结合使用 Office 365 和企业移动性 + 安全性 (EMS) 来帮助您为您的组织实现适当级别的保护。
+管理安全性和合规性是一个合作关系。 您负责保护您的数据、标识和设备，而 Microsoft 大力保护 Office 365 服务。 您可以结合使用 Office 365 和企业移动性 + 安全性（EMS）来帮助您为您的组织实现适当级别的保护。
   
-## <a name="step-1-review-capabilities"></a>步骤 1: 查看功能
+## <a name="step-1-review-capabilities"></a>步骤1：查看功能
 
 为您自己的信息保护功能提供 Office 365 海报的信息保护功能。 
   
 [PDF](https://download.microsoft.com/download/2/3/D/23D91386-8349-4F7A-9470-FD5AED861F16/MSFT_cloud_architecture_informationprotection.pdf) | [Visio](https://download.microsoft.com/download/2/3/D/23D91386-8349-4F7A-9470-FD5AED861F16/MSFT_cloud_architecture_informationprotection.vsd)
   
-## <a name="step-2-check-your-secure-score"></a>步骤 2: 检查安全分数
+## <a name="step-2-check-your-secure-score"></a>步骤2：检查安全分数
 
-设置 Office 365 订阅后, 请记下你的起始分数。 安全分数提供了 Office 365 配置建议, 您可以采用这些建议来增加成绩。 目标是了解为保护您的环境而不会对用户工作效率产生负面影响的机会。
+设置 Office 365 订阅后，请记下你的起始分数。 安全分数提供了 Office 365 配置建议，您可以采用这些建议来增加成绩。 目标是了解为保护您的环境而不会对用户工作效率产生负面影响的机会。
   
 - [引入 Office 365 安全分数](microsoft-secure-score.md)
     
-## <a name="step-3-plan-access-protection-for-identity-and-devices"></a>步骤 3: 规划身份和设备的访问保护
+## <a name="step-3-plan-access-protection-for-identity-and-devices"></a>步骤3：规划身份和设备的访问保护
 
-保护对 Office 365 数据和服务的访问对于防御网络攻击和防止数据丢失至关重要。
+保护对 Office 365 数据和服务的访问对于防御 cyberattacks 和防止数据丢失至关重要。
   
 - [保护对 Office 365 数据和服务的访问](protect-access-to-data-and-services.md)
     
@@ -47,15 +47,15 @@ ms.locfileid: "34157504"
     
 [PDF](https://go.microsoft.com/fwlink/p/?linkid=841656) | [Visio](https://go.microsoft.com/fwlink/p/?linkid=841657) | [更多语言](https://www.microsoft.com/download/details.aspx?id=55032)
   
-## <a name="step-4-plan-data-protection-based-on-data-sensitivity"></a>步骤 4: 根据数据敏感度规划数据保护
+## <a name="step-4-plan-data-protection-based-on-data-sensitivity"></a>步骤4：根据数据敏感度规划数据保护
 
 查看并规划按三个级别的保护组织的文件保护功能。
   
 [PDF](http://download.microsoft.com/download/7/8/9/789645A5-BD10-4541-BC33-F8D1EFF5E911/MSFT_cloud_architecture_O365%20file%20protection.pdf) | [Visio](http://download.microsoft.com/download/7/8/9/789645A5-BD10-4541-BC33-F8D1EFF5E911/MSFT_cloud_architecture_O365%20file%20protection.vsdx)
   
-## <a name="step-5-leverage-the-microsoft-365-security-amp-compliance-center"></a>第5步: 利用 Microsoft 365 安全&amp;合规中心
+## <a name="step-5-leverage-the-microsoft-365-security-amp-compliance-center"></a>第5步：利用 Microsoft 365 安全&amp;合规中心
 
-安全&amp;合规性中心为您提供了用于管理 Office 365 的各种安全性的控件的单一视图, 包括威胁管理、数据管理以及搜索和调查。 
+安全&amp;合规性中心为您提供了用于管理 Office 365 的各种安全性的控件的单一视图，包括威胁管理、数据管理以及搜索和调查。 
   
 - [转到 Office 365 安全&amp;合规中心](go-to-the-securitycompliance-center.md)
     
@@ -63,7 +63,7 @@ ms.locfileid: "34157504"
     
 - [向用户授予对 Office 365 安全&amp;合规中心的访问权限](grant-access-to-the-security-and-compliance-center.md)
     
-## <a name="step-6-use-end-to-end-security-scenarios-as-starting-points"></a>步骤 6: 将端到端安全方案用作起始点
+## <a name="step-6-use-end-to-end-security-scenarios-as-starting-points"></a>步骤6：将端到端安全方案用作起始点
 
 使用这些建议的配置作为企业级扩展或完善的访问安全方案的起点。
   
@@ -73,7 +73,7 @@ ms.locfileid: "34157504"
     
 ## <a name="microsoft-365-admin-centers-and-dashboards"></a>Microsoft 365 管理中心和仪表板
 
-在这些管理中心和仪表板中配置安全和合规性设置, 以保护 Office 365 环境
+在这些管理中心和仪表板中配置安全和合规性设置，以保护 Office 365 环境
   
 |**订购**|**管理 URL**|**仪表板和管理中心**|
 |:-----|:-----|:-----|
