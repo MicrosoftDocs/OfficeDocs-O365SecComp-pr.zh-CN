@@ -12,45 +12,45 @@ search.appverid:
 ms.collection:
 - Strat_O365_IP
 - M365-security-compliance
-description: 拒绝服务 (DoS) 攻击概述。
-ms.openlocfilehash: df3ab233271f02b91f16f8954972a61000bf4d3b
-ms.sourcegitcommit: aa60a6cdf83c67576e858668d1182cd4fffeb5e0
+description: 拒绝服务（DoS）攻击概述。
+ms.openlocfilehash: 94f87a11f396cb8ef09fd6d670d73ba8d1e88eda
+ms.sourcegitcommit: 4a2bde56178609e75c1ad7ecad2db5e049fc0c45
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/06/2019
-ms.locfileid: "33622472"
+ms.lasthandoff: 09/05/2019
+ms.locfileid: "36761658"
 ---
-# <a name="defend-against-denial-of-service-attacks-in-office-365"></a><span data-ttu-id="5fce9-103">防御 Office 365 中的拒绝服务攻击</span><span class="sxs-lookup"><span data-stu-id="5fce9-103">Defend Against Denial-of-Service Attacks in Office 365</span></span>
+# <a name="defend-against-denial-of-service-attacks-in-office-365"></a><span data-ttu-id="f9028-103">防御 Office 365 中的拒绝服务攻击</span><span class="sxs-lookup"><span data-stu-id="f9028-103">Defend Against Denial-of-Service Attacks in Office 365</span></span>
 
-## <a name="introduction"></a><span data-ttu-id="5fce9-104">简介</span><span class="sxs-lookup"><span data-stu-id="5fce9-104">Introduction</span></span>
+## <a name="introduction"></a><span data-ttu-id="f9028-104">简介</span><span class="sxs-lookup"><span data-stu-id="f9028-104">Introduction</span></span>
 
-<span data-ttu-id="5fce9-105">对于托管在超过100个数据中心的全球云基础结构中的200云服务, Microsoft 提供了一个可信赖的基础结构。</span><span class="sxs-lookup"><span data-stu-id="5fce9-105">Microsoft delivers a trustworthy infrastructure for more than 200 cloud services hosted in a global cloud infrastructure of more than 100 datacenters.</span></span> <span data-ttu-id="5fce9-106">具体包括：</span><span class="sxs-lookup"><span data-stu-id="5fce9-106">These include:</span></span>
+<span data-ttu-id="f9028-105">对于托管在超过100个数据中心的全球云基础结构中的200云服务，Microsoft 提供了一个可信赖的基础结构。</span><span class="sxs-lookup"><span data-stu-id="f9028-105">Microsoft delivers a trustworthy infrastructure for more than 200 cloud services hosted in a global cloud infrastructure of more than 100 datacenters.</span></span> <span data-ttu-id="f9028-106">具体包括：</span><span class="sxs-lookup"><span data-stu-id="f9028-106">These include:</span></span>
 
-- <span data-ttu-id="5fce9-107">Microsoft Azure</span><span class="sxs-lookup"><span data-stu-id="5fce9-107">Microsoft Azure</span></span>
-- <span data-ttu-id="5fce9-108">Microsoft Bing</span><span class="sxs-lookup"><span data-stu-id="5fce9-108">Microsoft Bing</span></span>
-- <span data-ttu-id="5fce9-109">Microsoft Dynamics 365</span><span class="sxs-lookup"><span data-stu-id="5fce9-109">Microsoft Dynamics 365</span></span>
-- <span data-ttu-id="5fce9-110">Microsoft Office 365</span><span class="sxs-lookup"><span data-stu-id="5fce9-110">Microsoft Office 365</span></span>
-- <span data-ttu-id="5fce9-111">Microsoft OneDrive</span><span class="sxs-lookup"><span data-stu-id="5fce9-111">Microsoft OneDrive</span></span>
-- <span data-ttu-id="5fce9-112">Skype</span><span class="sxs-lookup"><span data-stu-id="5fce9-112">Skype</span></span>
-- <span data-ttu-id="5fce9-113">Xbox Live</span><span class="sxs-lookup"><span data-stu-id="5fce9-113">Xbox Live</span></span>
+- <span data-ttu-id="f9028-107">Microsoft Azure</span><span class="sxs-lookup"><span data-stu-id="f9028-107">Microsoft Azure</span></span>
+- <span data-ttu-id="f9028-108">Microsoft Bing</span><span class="sxs-lookup"><span data-stu-id="f9028-108">Microsoft Bing</span></span>
+- <span data-ttu-id="f9028-109">Microsoft Dynamics 365</span><span class="sxs-lookup"><span data-stu-id="f9028-109">Microsoft Dynamics 365</span></span>
+- <span data-ttu-id="f9028-110">Microsoft Office 365</span><span class="sxs-lookup"><span data-stu-id="f9028-110">Microsoft Office 365</span></span>
+- <span data-ttu-id="f9028-111">Microsoft OneDrive</span><span class="sxs-lookup"><span data-stu-id="f9028-111">Microsoft OneDrive</span></span>
+- <span data-ttu-id="f9028-112">Skype</span><span class="sxs-lookup"><span data-stu-id="f9028-112">Skype</span></span>
+- <span data-ttu-id="f9028-113">Xbox Live</span><span class="sxs-lookup"><span data-stu-id="f9028-113">Xbox Live</span></span>
 
-<span data-ttu-id="5fce9-114">作为具有大量 Internet 状态以及提供云服务的显著 Internet 属性的全球组织, Microsoft 是黑客和其他恶意用户的一个大型、常见的目标。</span><span class="sxs-lookup"><span data-stu-id="5fce9-114">As a global organization with a significant Internet presence and many prominent Internet properties that provide cloud services, Microsoft is a large, common target for hackers and other malicious individuals.</span></span> <span data-ttu-id="5fce9-115">客户端和 Microsoft 云之间的网络通信层是恶意攻击的最大目标之一。</span><span class="sxs-lookup"><span data-stu-id="5fce9-115">The network communication layer between clients and the Microsoft Cloud is one of the biggest targets of malicious attacks.</span></span> <span data-ttu-id="5fce9-116">事实上, Microsoft 持续且永久地采用某种形式的基于网络的网络攻击。</span><span class="sxs-lookup"><span data-stu-id="5fce9-116">In fact, Microsoft is continuously and persistently under some form of network-based cyber-attack.</span></span> <span data-ttu-id="5fce9-117">根据这一点, Microsoft 使用纵深防御安全原则来保护其云服务和网络。</span><span class="sxs-lookup"><span data-stu-id="5fce9-117">In line with this, Microsoft uses defense-in-depth security principles to protect its cloud services and networks.</span></span> <span data-ttu-id="5fce9-118">如果没有可靠且持久的缓解系统防御这些攻击, Microsoft 的云服务将处于脱机状态, 并且对客户不可用。</span><span class="sxs-lookup"><span data-stu-id="5fce9-118">Without reliable and persistent mitigation systems that defend against these attacks, Microsoft's cloud services would be offline and unavailable to customers.</span></span>
+<span data-ttu-id="f9028-114">作为具有大量 Internet 状态以及提供云服务的显著 Internet 属性的全球组织，Microsoft 是黑客和其他恶意用户的一个大型、常见的目标。</span><span class="sxs-lookup"><span data-stu-id="f9028-114">As a global organization with a significant Internet presence and many prominent Internet properties that provide cloud services, Microsoft is a large, common target for hackers and other malicious individuals.</span></span> <span data-ttu-id="f9028-115">客户端和 Microsoft 云之间的网络通信层是恶意攻击的最大目标之一。</span><span class="sxs-lookup"><span data-stu-id="f9028-115">The network communication layer between clients and the Microsoft Cloud is one of the biggest targets of malicious attacks.</span></span> <span data-ttu-id="f9028-116">事实上，Microsoft 持续且永久地采用某种形式的基于网络的 cyberattack。</span><span class="sxs-lookup"><span data-stu-id="f9028-116">In fact, Microsoft is continuously and persistently under some form of network-based cyberattack.</span></span> <span data-ttu-id="f9028-117">根据这一点，Microsoft 使用纵深防御安全原则来保护其云服务和网络。</span><span class="sxs-lookup"><span data-stu-id="f9028-117">In line with this, Microsoft uses defense-in-depth security principles to protect its cloud services and networks.</span></span> <span data-ttu-id="f9028-118">如果没有可靠且持久的缓解系统防御这些攻击，Microsoft 的云服务将处于脱机状态，并且对客户不可用。</span><span class="sxs-lookup"><span data-stu-id="f9028-118">Without reliable and persistent mitigation systems that defend against these attacks, Microsoft's cloud services would be offline and unavailable to customers.</span></span>
 
-## <a name="definition-and-symptoms-of-denial-of-service-attacks"></a><span data-ttu-id="5fce9-119">拒绝服务攻击的定义和症状</span><span class="sxs-lookup"><span data-stu-id="5fce9-119">Definition and Symptoms of Denial-of-Service Attacks</span></span>
+## <a name="definition-and-symptoms-of-denial-of-service-attacks"></a><span data-ttu-id="f9028-119">拒绝服务攻击的定义和症状</span><span class="sxs-lookup"><span data-stu-id="f9028-119">Definition and Symptoms of Denial-of-Service Attacks</span></span>
 
-<span data-ttu-id="5fce9-120">攻击网络服务的一种方法是, 创建多个针对服务主机的请求, 以使网络和服务器严重遭受向合法用户授予服务的攻击。</span><span class="sxs-lookup"><span data-stu-id="5fce9-120">One way to attack network services is to create many requests against service hosts to overwhelm the network and servers to deny service to legitimate users.</span></span> <span data-ttu-id="5fce9-121">这称为拒绝服务 (DoS) 攻击。</span><span class="sxs-lookup"><span data-stu-id="5fce9-121">This is referred to as a denial-of-service (DoS) attack.</span></span> <span data-ttu-id="5fce9-122">当多个参与者、终结点和/或向量执行攻击时, 它称为分布式拒绝服务 (DDoS) 攻击。</span><span class="sxs-lookup"><span data-stu-id="5fce9-122">When the attack is performed by multiple actors, endpoints, and/or vectors, it is referred to as a distributed denial-of-service (DDoS) attack.</span></span> <span data-ttu-id="5fce9-123">尽管方法、motives 和目标各不相同, 但 DoS 和 DDoS 攻击通常都是为了防止 Internet 站点或服务正常运行, 或者暂时或无限期。</span><span class="sxs-lookup"><span data-stu-id="5fce9-123">Although the means, motives, and targets vary, DoS and DDoS attacks generally consist of efforts to prevent an Internet site or service from functioning correctly or at all, either temporarily or indefinitely.</span></span>
+<span data-ttu-id="f9028-120">攻击网络服务的一种方法是，创建多个针对服务主机的请求，以使网络和服务器严重遭受向合法用户授予服务的攻击。</span><span class="sxs-lookup"><span data-stu-id="f9028-120">One way to attack network services is to create many requests against service hosts to overwhelm the network and servers to deny service to legitimate users.</span></span> <span data-ttu-id="f9028-121">这称为拒绝服务（DoS）攻击。</span><span class="sxs-lookup"><span data-stu-id="f9028-121">This is referred to as a denial-of-service (DoS) attack.</span></span> <span data-ttu-id="f9028-122">当多个参与者、终结点和/或向量执行攻击时，它称为分布式拒绝服务（DDoS）攻击。</span><span class="sxs-lookup"><span data-stu-id="f9028-122">When the attack is performed by multiple actors, endpoints, and/or vectors, it is referred to as a distributed denial-of-service (DDoS) attack.</span></span> <span data-ttu-id="f9028-123">尽管方法、motives 和目标各不相同，但 DoS 和 DDoS 攻击通常都是为了防止 Internet 站点或服务正常运行，或者暂时或无限期。</span><span class="sxs-lookup"><span data-stu-id="f9028-123">Although the means, motives, and targets vary, DoS and DDoS attacks generally consist of efforts to prevent an Internet site or service from functioning correctly or at all, either temporarily or indefinitely.</span></span>
 
-<span data-ttu-id="5fce9-124">[美国计算机紧急就绪团队](https://www.us-cert.gov/)(美国-CERT) 定义 DoS 攻击的症状, 以包括:</span><span class="sxs-lookup"><span data-stu-id="5fce9-124">The [United States Computer Emergency Readiness Team](https://www.us-cert.gov/) (US-CERT) defines symptoms of DoS attacks to include:</span></span>
+<span data-ttu-id="f9028-124">[美国计算机紧急就绪团队](https://www.us-cert.gov/)（美国-CERT）定义 DoS 攻击的症状，以包括：</span><span class="sxs-lookup"><span data-stu-id="f9028-124">The [United States Computer Emergency Readiness Team](https://www.us-cert.gov/) (US-CERT) defines symptoms of DoS attacks to include:</span></span>
 
-- <span data-ttu-id="5fce9-125">网络性能异常慢 (打开文件或访问 Internet 站点时)</span><span class="sxs-lookup"><span data-stu-id="5fce9-125">Unusually slow network performance (when opening files or accessing Internet sites)</span></span>
-- <span data-ttu-id="5fce9-126">网站不可用</span><span class="sxs-lookup"><span data-stu-id="5fce9-126">Unavailability of a Web site</span></span>
-- <span data-ttu-id="5fce9-127">无法访问网站</span><span class="sxs-lookup"><span data-stu-id="5fce9-127">Inability to access a Web site</span></span>
-- <span data-ttu-id="5fce9-128">收到的垃圾邮件大大增加</span><span class="sxs-lookup"><span data-stu-id="5fce9-128">Dramatic increase in received spam</span></span>
-- <span data-ttu-id="5fce9-129">断开无线连接或有线 Internet 连接</span><span class="sxs-lookup"><span data-stu-id="5fce9-129">Disconnection of a wireless or wired Internet connection</span></span>
-- <span data-ttu-id="5fce9-130">长期失去对 Web 或任何 Internet 服务的访问权限</span><span class="sxs-lookup"><span data-stu-id="5fce9-130">Long-term loss of access to the Web or any Internet services</span></span>
+- <span data-ttu-id="f9028-125">网络性能异常慢（打开文件或访问 Internet 站点时）</span><span class="sxs-lookup"><span data-stu-id="f9028-125">Unusually slow network performance (when opening files or accessing Internet sites)</span></span>
+- <span data-ttu-id="f9028-126">网站不可用</span><span class="sxs-lookup"><span data-stu-id="f9028-126">Unavailability of a Web site</span></span>
+- <span data-ttu-id="f9028-127">无法访问网站</span><span class="sxs-lookup"><span data-stu-id="f9028-127">Inability to access a Web site</span></span>
+- <span data-ttu-id="f9028-128">收到的垃圾邮件大大增加</span><span class="sxs-lookup"><span data-stu-id="f9028-128">Dramatic increase in received spam</span></span>
+- <span data-ttu-id="f9028-129">断开无线连接或有线 Internet 连接</span><span class="sxs-lookup"><span data-stu-id="f9028-129">Disconnection of a wireless or wired Internet connection</span></span>
+- <span data-ttu-id="f9028-130">长期失去对 Web 或任何 Internet 服务的访问权限</span><span class="sxs-lookup"><span data-stu-id="f9028-130">Long-term loss of access to the Web or any Internet services</span></span>
 
-## <a name="related-topics"></a><span data-ttu-id="5fce9-131">相关主题</span><span class="sxs-lookup"><span data-stu-id="5fce9-131">Related Topics</span></span>
+## <a name="related-topics"></a><span data-ttu-id="f9028-131">相关主题</span><span class="sxs-lookup"><span data-stu-id="f9028-131">Related Topics</span></span>
 
-- [<span data-ttu-id="5fce9-132">防御拒绝服务攻击的核心原则</span><span class="sxs-lookup"><span data-stu-id="5fce9-132">Core Principles of Defense Against Denial-of-Service Attacks</span></span>](office-365-core-principles-of-defense-against-dos-attacks.md)
-- [<span data-ttu-id="5fce9-133">Microsoft 的拒绝服务防御策略</span><span class="sxs-lookup"><span data-stu-id="5fce9-133">Microsoft's Denial-of-Service Defense Strategy</span></span>](office-365-microsoft-dos-defense-strategy.md)
-- [<span data-ttu-id="5fce9-134">防御拒绝服务攻击的 Microsoft 云服务</span><span class="sxs-lookup"><span data-stu-id="5fce9-134">Defending Microsoft Cloud Services Against Denial-of-Service Attacks</span></span>](office-365-defending-cloud-services-against-dos-attacks.md)
+- [<span data-ttu-id="f9028-132">防御拒绝服务攻击的核心原则</span><span class="sxs-lookup"><span data-stu-id="f9028-132">Core Principles of Defense Against Denial-of-Service Attacks</span></span>](office-365-core-principles-of-defense-against-dos-attacks.md)
+- [<span data-ttu-id="f9028-133">Microsoft 的拒绝服务防御策略</span><span class="sxs-lookup"><span data-stu-id="f9028-133">Microsoft's Denial-of-Service Defense Strategy</span></span>](office-365-microsoft-dos-defense-strategy.md)
+- [<span data-ttu-id="f9028-134">防御拒绝服务攻击的 Microsoft 云服务</span><span class="sxs-lookup"><span data-stu-id="f9028-134">Defending Microsoft Cloud Services Against Denial-of-Service Attacks</span></span>](office-365-defending-cloud-services-against-dos-attacks.md)
