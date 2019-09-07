@@ -4,7 +4,7 @@ keywords: 空气、autoIR、ATP、自动化、调查、响应、修正、威胁�
 ms.author: deniseb
 author: denisebmsft
 manager: dansimp
-ms.date: 09/04/2019
+ms.date: 09/06/2019
 audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 ms.collection: M365-security-compliance
 description: 开始使用 Office 365 中的自动调查和响应功能高级威胁防护计划2。
-ms.openlocfilehash: 2c64ea936170524811839db7c593d67bfe11a928
-ms.sourcegitcommit: 4a2bde56178609e75c1ad7ecad2db5e049fc0c45
+ms.openlocfilehash: c2c2b9a0409c472c99b07293a002f9bdbf6c5090
+ms.sourcegitcommit: e6c0d9aea3172a5ccc6c7943625d69144ba20aca
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/05/2019
-ms.locfileid: "36762017"
+ms.lasthandoff: 09/07/2019
+ms.locfileid: "36790926"
 ---
 # <a name="automatically-investigate-and-respond-to-threats-in-office-365"></a>自动调查并响应 Office 365 中的威胁
 
@@ -89,6 +89,12 @@ ms.locfileid: "36762017"
 5. 选择列表项。 将打开一个浮出控件，其中包含有关该警报的详细信息以及指向其他信息和操作的链接。
 
 6. 查看浮出控件上的信息，根据特定的通知执行操作，如**Resolve**、**隐含**或**通知用户**。 
+
+    - **Resolve**等效于关闭通知
+    
+    - **禁止**使策略在指定时间段内触发警报
+    
+    - **通知用户**启动电子邮件，其中包含已输入的用户电子邮件地址，并允许安全操作团队向这些用户键入邮件。 （这类似于使用[威胁资源管理器](threat-explorer.md)向收件人发送邮件。）  
 
 ## <a name="use-the-office-365-management-activity-api-for-custom-or-third-party-reporting-solutions"></a>将 Office 365 管理活动 API 用于自定义或第三方报告解决方案
 
