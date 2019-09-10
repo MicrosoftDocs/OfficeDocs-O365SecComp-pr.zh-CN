@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 借助保留策略，可主动决定是保留内容还是删除内容，亦或是先保留再删除内容；可将一个策略应用于整个组织，或只应用于特定位置或用户；并能将策略应用于所有内容，或只应用于满足特定条件的内容。
-ms.openlocfilehash: 71c7fbf06709dd9d7e6ba3f084e0377f821ca171
-ms.sourcegitcommit: dbcb3df3b313f7a9ea6669425e0a0498be844ae9
+ms.openlocfilehash: bb5c9a8c3c2443ff6913b3de1b88807d7530384e
+ms.sourcegitcommit: 81b3bff27bc60235a38004c5b0297ac454331b25
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/16/2019
-ms.locfileid: "36444892"
+ms.lasthandoff: 09/10/2019
+ms.locfileid: "36822502"
 ---
 # <a name="overview-of-retention-policies"></a>保留策略概述
 
@@ -51,8 +51,8 @@ ms.locfileid: "36444892"
   
 在下述位置创建和管理保留策略：
 
-- Microsoft 365 合规中心内的“**策略**”页面上。
-- Office 365 安全与合规中心内“**数据管理**”下的“**保留**”页面。
+- [Microsoft 365 合规中心](https://compliance.microsoft.com/)内的“**策略**”页面。
+- [Office 365 安全与合规中心](https://protection.office.com/)内“**数据管理**”下的“**保留**”页面。
   
 ## <a name="how-a-retention-policy-works-with-content-in-place"></a>保留策略如何处理留在原处的内容
 
@@ -187,7 +187,7 @@ ms.locfileid: "36444892"
     
 - OneDrive 帐户
     
-- Office 365 组（适用于组的邮箱、网站和文档内容。即将推出对 Planner、Yammer 和 CRM 中内容的支持。）
+- Office 365 组（适用于组的邮箱、网站和文档中的内容。）
     
 - Exchange 公用文件夹
     
@@ -198,6 +198,8 @@ ms.locfileid: "36444892"
 - 策略可包含任意多个邮箱或网站。
     
 - 对于 Exchange，在保留策略应用后新建的任何邮箱都会自动继承策略。
+
+
   
 ### <a name="a-policy-that-applies-to-entire-locations"></a>应用于位置整体的策略
 
@@ -231,7 +233,7 @@ ms.locfileid: "36444892"
 
 ### <a name="office-365-groups-locations"></a>Office 365 组位置
 
-保留 Office 365 组内容需要使用 Office 365 组位置。即使 Office 365 组有 Exchange 邮箱，包含整个 Exchange 位置的保留策略也不会包含 Office 365 组邮箱中的内容。应用于 Office 365 组的保留策略涵盖组邮箱和站点这两个位置。
+要保留 Office 365 组的内容，需要使用 Office 365 组位置。 即使 Office 365 组有 Exchange 邮箱，涵盖整个 Exchange 位置的保留策略也不会包含 Office 365 组邮箱中的内容。 应用于 Office 365 组的保留策略涵盖组的邮箱和网站。 应用于 Office 365 组的保留策略将保护由 Office 365 组（包括 Microsoft Teams）创建的资源。
 
 此外，不可能通过使用 Exchange 位置来包含或排除某个组邮箱。尽管 Exchange 位置最初允许选择组邮箱，但在尝试保存保留策略时，你将收到一条错误消息，表明 RemoteGroupMailbox 不是有效的 Exchange 位置选项。 
   
@@ -253,7 +255,7 @@ ms.locfileid: "36444892"
     
 - **Teams 最长可能需要 30 天才能清理完已保留内容**：应用于 Teams 的保留策略从所有相关存储位置删除内容。不过，在保留策略发布后，Teams 客户端最长可能需要 30 天，才能根据策略清理完内容。然而，即使内容仍出现在 Teams 客户端中，在保留期到期后也不会出现在内容搜索或电子数据展示中。 
     
-在团队中，聊天中共享的文件存储在共享文件的用户的 OneDrive 帐户中。上传到信道的文件存储在团队的 SharePoint 网站中。因此，若要保留或删除团队中的文件，必须创建应用于 SharePoint 和 OneDrive 位置的保留策略。若要将保留策略只应用于特定团队的文件，可以选择团队的 SharePoint 网站和团队用户的 OneDrive 帐户。
+在团队中，聊天中共享的文件存储在共享文件的用户的 OneDrive 帐户中。 上传到频道的文件存储在团队的 SharePoint 网站中。 因此，要保留或删除团队中的文件，需要创建专门适用于 SharePoint 和 OneDrive 位置的保留策略。 如果希望仅将策略应用于特定团队的文件，可选择该团队的 SharePoint 网站以及该团队中用户的 OneDrive 帐户。
   
 应用于 Teams 的保留策略可使用[保留锁定](#locking-a-retention-policy)。
   
@@ -339,6 +341,8 @@ SharePoint 和 OneDrive 中的此 30 天宽限期对应于 Exchange 中的 30 �
 - [在 Office 365 安全与合规中心内管理电子数据展示案件集](https://support.office.com/article/edea80d6-20a7-40fb-b8c4-5e8c8395f6da)（电子数据展示保留） 
     
 - [就地保留和诉讼保留](https://go.microsoft.com/fwlink/?linkid=846124)（电子数据展示保留） 
+
+- [如何识别为 Exchange Online 邮箱设置的保留类型](https://docs.microsoft.com/office365/securitycompliance/identify-a-hold-on-an-exchange-online-mailbox)
     
 - [保留标记和保留策略](https://go.microsoft.com/fwlink/?linkid=846125)，亦称为[邮件传递记录管理 (MRM)](https://go.microsoft.com/fwlink/?linkid=846126)（仅限删除） 
     
@@ -364,11 +368,11 @@ SharePoint 和 OneDrive 中的此 30 天宽限期对应于 Exchange 中的 30 �
   
 ## <a name="what-happened-to-preservation-policies"></a>旧保留策略有何变化？
 
-如果之前在使用保存策略，则保存策略已自动转换为保留策略 - 只会保留内容，而不会删除内容。 保存策略会继续处理和保存内容，而无需任何改动。 有关这些策略，可查看 Microsoft 365 合规中心的“**策略**”页面，或者安全与合规中心内“**数据管理**”下的“**保留**”页面。 可以编辑保存策略，以更改保存期限，但是无法进行添加或移动位置等其他更改。 
+如果之前在使用保存策略，则保存策略已自动转换为保留策略 - 只会保留内容，而不会删除内容。 保存策略会继续处理和保存内容，而无需任何改动。 有关这些策略，可查看 [Microsoft 365 合规中心](https://compliance.microsoft.com/)的“**策略**”页面，或者[安全与合规中心](https://protection.office.com/)内“**数据管理**”下的“**保留**”页面。 可以编辑保存策略，以更改保存期限，但是无法进行添加或移动位置等其他更改。 
   
 ## <a name="permissions"></a>权限
 
-负责创建保留策略的合规性团队成员必须有权访问安全与合规中心。默认情况下，租户管理员有权访问此位置，并可向合规部主管及其他人员授予对安全与合规中心的访问权限，而不授予租户管理员的所有权限。为此，建议转到安全与合规中心内的“权限”**** 页，编辑“合规性管理员”**** 角色组，再向此角色组添加成员。 
+负责创建保留策略的合规性团队成员必须有权访问[安全与合规中心](https://protection.office.com/)。 默认情况下，租户管理员有权访问此位置，并可向合规部主管及其他人员授予对[安全与合规中心](https://protection.office.com/)的访问权限，而不授予租户管理员的所有权限。为此，建议转到[安全与合规中心](https://protection.office.com/)内的“**权限**”页，编辑“**合规性管理员**”角色组，再向此角色组添加成员。 
   
 有关详细信息，请参阅[向用户授予对 Office 365 安全与合规中心的访问权限](grant-access-to-the-security-and-compliance-center.md)。
   
@@ -385,5 +389,7 @@ SharePoint 和 OneDrive 中的此 30 天宽限期对应于 Exchange 中的 30 �
 ## <a name="more-information"></a>更多信息
 
 - [标签概述](labels.md)
+- [SharePoint Online 限制](https://docs.microsoft.com/office365/servicedescriptions/sharepoint-online-service-description/sharepoint-online-limits)
+- [Microsoft Teams 的限制和规范](https://docs.microsoft.com/zh-CN/microsoftteams/limits-specifications-teams) 
     
 
