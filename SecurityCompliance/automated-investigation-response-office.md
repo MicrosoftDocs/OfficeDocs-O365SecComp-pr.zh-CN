@@ -1,9 +1,9 @@
 ---
-title: Office 365 中的自动化调查和响应（空气）
+title: Office 365 中的自动事件响应（空气）
 ms.author: deniseb
 author: denisebmsft
 manager: dansimp
-ms.date: 09/04/2019
+ms.date: 09/09/2019
 audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
@@ -12,17 +12,17 @@ search.appverid:
 - MET150
 - MOE150
 ms.collection: M365-security-compliance
-description: 了解 Office 365 高级威胁防护中的自动化调查和响应功能。
-ms.openlocfilehash: a62714adb0682d3faf27e25fff365bb1ba6d4fc5
-ms.sourcegitcommit: 4a2bde56178609e75c1ad7ecad2db5e049fc0c45
+description: 了解 Office 365 高级威胁防护中的自动事件响应功能。
+ms.openlocfilehash: 84b68efe35ebefddf4770f491cc3be453a81f577
+ms.sourcegitcommit: 81b3bff27bc60235a38004c5b0297ac454331b25
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/05/2019
-ms.locfileid: "36761698"
+ms.lasthandoff: 09/10/2019
+ms.locfileid: "36822482"
 ---
-# <a name="automated-investigation-and-response-air-in-office-365"></a>Office 365 中的自动化调查和响应（空气）
+# <a name="automated-incident-response-air-in-office-365"></a>Office 365 中的自动事件响应（空气）
 
-自动化调查和响应（空中）功能（包括在[Office 365 高级威胁防护](office-365-atp.md)计划2中）使您能够运行自动调查过程，以应对目前存在的已知威胁。 阅读本文以了解空气的概述，以及它如何帮助您的组织和安全操作团队更有效地缓解威胁。 若要开始使用 AIR，请参阅[在 Office 365 中自动调查和响应威胁](office-365-air.md)。
+自动化事件响应（空中）功能（包括在[Office 365 高级威胁防护](office-365-atp.md)计划2中）使你能够运行自动化的调查过程，以应对目前存在的已知威胁。 阅读本文以了解空气的概述，以及它如何帮助您的组织和安全操作团队更有效地缓解威胁。 若要开始使用 AIR，请参阅[在 Office 365 中自动调查和响应威胁](office-365-air.md)。
 
 > [!NOTE]
 > 您必须是全局管理员、安全管理员、安全操作员或安全读者才能执行本文中所述的任务。 若要了解详细信息，请参阅[Microsoft 365 安全中心：角色和权限](https://docs.microsoft.com/office365/securitycompliance/microsoft-security-and-compliance#required-licenses-and-permissions)。
@@ -102,19 +102,22 @@ ms.locfileid: "36761698"
 - 应用筛选器。 从**调查类型**、**时间范围**、**状态**或这些情况的组合中进行选择。
 - 将数据导出到 .csv 文件。
 
-调查状态指示分析和操作的进度。 在调查运行时，状态更改以指示是否发现威胁，以及是否已批准操作。 
-- **启动**：调查已排入队列，以便尽快开始
-- **正在运行**：调查已开始，正在进行分析
-- **未找到威胁**：调查已完成其分析，未发现任何威胁
-- 已**由系统终止**：调查未关闭并在7天后过期
-- **待处理操作**：调查发现存在建议操作的威胁
-- **发现的威胁**：调查发现威胁，但威胁没有在空中可用的操作
-- 已**修正**：调查已完成且已完全修正（已批准所有操作）
-- **部分修正**：调查已完成，某些建议的操作已获得批准
-- 已**被用户终止**：管理员终止了调查
-- **失败**：调查过程中出现错误，使其无法达到威胁的结论
-- **按限制排队**：调查因系统处理限制而正在等待分析（以保护服务性能）
-- **由限制终止**：由于调查卷和系统处理限制，无法在足够的时间内完成调查。 您可以通过在资源管理器中选择电子邮件并选择调查操作来重新触发调查。
+调查状态指示分析和操作的进度。 在调查运行时，状态更改以指示是否发现威胁，以及是否已批准操作，如下表所述：
+
+|状态 | 说明  |
+|----|----| 
+|**即将开始**|调查已排入队列，以便尽快开始 |
+|**运行** |调查已开始，正在进行分析 |
+|**找不到威胁** |调查已完成其分析，未发现任何威胁 |
+|**已由系统终止** |调查未关闭并在7天后过期 |
+|**挂起操作** |调查发现了与建议的操作有关的威胁 |
+|**发现威胁** |调查发现威胁，但威胁没有在空中可用的操作 |
+|**得以** |调查已完成且已完全修正（已批准所有操作） |
+|**部分修正** |调查已完成，某些建议的操作已获得批准 |
+|**由用户终止** |管理员终止了调查 |
+|**失败**|调查过程中发生错误，阻止它达到威胁的结论 |
+|**按限制排队**|由于系统处理限制，调查正在等待分析（以保护服务性能） |
+|**已通过限制终止**|由于调查卷和系统处理限制，无法在足够的时间内完成调查。 您可以通过在资源管理器中选择电子邮件并选择调查操作来重新触发调查。 |
 
 ### <a name="investigation-graph"></a>调查图形
 
@@ -270,7 +273,7 @@ ms.locfileid: "36761698"
 
 ## <a name="example-a-security-administrator-triggers-an-investigation-from-threat-explorer"></a>示例：安全管理员触发来自威胁资源管理器的调查
 
-除了由警报触发的自动调查之外，组织的安全操作团队可以通过[威胁资源管理器](use-explorer-in-security-and-compliance.md)中的视图触发自动调查。
+除了由警报触发的自动调查之外，组织的安全操作团队还可以通过[威胁资源管理器](use-explorer-in-security-and-compliance.md)中的视图触发自动调查。
 
 例如，假设您正在查看资源管理器中有关用户报告的消息的数据。 您可以在结果列表中选择一个项目，然后单击 "**调查**"。
 
@@ -280,7 +283,7 @@ ms.locfileid: "36761698"
 
 ![在资源管理器中开始调查恶意软件](media/Explorer-Malware-Email-ActionsInvestigate.png)
 
-与由警报触发的行动手册类似，通过资源管理器中的视图触发的自动调查包括根调查、标识和关联威胁的步骤以及缓解这些威胁的建议操作。
+与警报触发的行动手册类似，通过资源管理器中的视图触发的自动调查包括根调查、标识和关联威胁的步骤以及缓解这些威胁的建议操作。
 
 ## <a name="how-to-get-air"></a>如何获取空中
 

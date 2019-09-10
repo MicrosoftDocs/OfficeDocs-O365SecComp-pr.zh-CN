@@ -4,7 +4,7 @@ keywords: 空气、autoIR、ATP、自动化、调查、响应、修正、威胁�
 ms.author: deniseb
 author: denisebmsft
 manager: dansimp
-ms.date: 09/06/2019
+ms.date: 09/09/2019
 audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
@@ -14,18 +14,18 @@ search.appverid:
 - MOE150
 ms.collection: M365-security-compliance
 description: 开始使用 Office 365 中的自动调查和响应功能高级威胁防护计划2。
-ms.openlocfilehash: c2c2b9a0409c472c99b07293a002f9bdbf6c5090
-ms.sourcegitcommit: e6c0d9aea3172a5ccc6c7943625d69144ba20aca
+ms.openlocfilehash: 45fea46a591aac88a8d92c7a67d024d1446e9124
+ms.sourcegitcommit: 81b3bff27bc60235a38004c5b0297ac454331b25
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/07/2019
-ms.locfileid: "36790926"
+ms.lasthandoff: 09/10/2019
+ms.locfileid: "36822492"
 ---
 # <a name="automatically-investigate-and-respond-to-threats-in-office-365"></a>自动调查并响应 Office 365 中的威胁
 
 ## <a name="overview"></a>概述
 
-[Office 365 高级威胁防护](office-365-atp.md)计划2包括自动调查和响应（空气）功能，可节省安全操作团队在处理警报和威胁时的时间和工作。 阅读本文，了解如何开始使用 Office 365 中的空中功能。 若要了解有关空中工作方式的详细信息，请参阅[自动化调查和响应（空中）和 Office 365](automated-investigation-response-office.md)。
+[Office 365 高级威胁防护](office-365-atp.md)计划2包括自动事件响应（空气）功能，可节省安全操作团队在处理警报和威胁时的时间和工作。 阅读本文，了解如何开始使用 Office 365 中的空中功能。 若要了解有关空中工作方式的详细信息，请参阅[Office 365 中的自动化事件响应（空中）](automated-investigation-response-office.md)。
 
 使用 AIR 时，在触发特定警报时，一个或多个安全行动手册启动，并且自动调查开始。 在自动调查过程期间和之后，管理员和安全操作团队可以执行以下操作：
 
@@ -98,7 +98,7 @@ ms.locfileid: "36790926"
 
 ## <a name="use-the-office-365-management-activity-api-for-custom-or-third-party-reporting-solutions"></a>将 Office 365 管理活动 API 用于自定义或第三方报告解决方案
 
-如果您的组织使用的是自定义报告解决方案或第三方报告解决方案，则可以使用 Office 365 管理活动 API 查看有关该解决方案中的自动调查的信息。
+如果您的组织使用自定义或第三方报告解决方案，则可以使用 Office 365 管理活动 API 查看该解决方案中有关自动调查的信息。
 
 使用以下资源对此进行设置：
 
