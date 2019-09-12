@@ -15,12 +15,12 @@ search.appverid:
 - MOE150
 ms.assetid: 8927b8b9-c5bc-45a8-a9f9-96c732e58264
 description: 在 Office 365 和 Microsoft 365 中的安全与合规中心内创建通知策略，以监视潜在威胁、数据丢失和权限问题。 然后，您可以查看和管理用户执行符合通知策略条件的活动时生成的警报。
-ms.openlocfilehash: 688c33438c94467915ff0ed14c8ab4c28fed566b
-ms.sourcegitcommit: 81b3bff27bc60235a38004c5b0297ac454331b25
+ms.openlocfilehash: 02ac10dfb7b98f939e1020b953d8c88ebd71459f
+ms.sourcegitcommit: ff370e93b792204547694139ef99bc0848304570
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/10/2019
-ms.locfileid: "36822462"
+ms.lasthandoff: 09/11/2019
+ms.locfileid: "36852734"
 ---
 # <a name="alert-policies-in-the-security-and-compliance-center"></a>安全与合规中心中的警报策略
 
@@ -56,7 +56,7 @@ ms.locfileid: "36822462"
 - **活动警报正在跟踪**–创建一个策略来跟踪活动或在某些情况下，有一些相关的活动，例如，通过共享的方式共享文件、分配访问权限或创建匿名链接。 当用户执行策略定义的活动时，将根据警报阈值设置触发警报。
 
     > [!NOTE]
-    > 您可以跟踪的活动取决于组织的 Office 365 企业版或 Office 365 美国政府版计划。 一般情况下，与恶意软件市场和网络钓鱼攻击相关的活动需要 E5/G5 订阅或与威胁智能附加订阅的 E1/G1 或 E3/G3 订阅。
+    > 您可以跟踪的活动取决于组织的 Office 365 企业版或 Office 365 美国政府版计划。 一般情况下，与恶意软件市场和网络钓鱼攻击相关的活动需要 E5/G5 订阅或具有 " [Office 365 高级威胁防护](office-365-atp.md)计划 2" 附加订阅的 "E1/G1" 或 "E3/G3" 订阅。
 
 - **活动条件**–对于大多数活动，您可以定义触发警报时必须满足的其他条件。 常见条件包括 IP 地址（以便当用户在具有特定 IP 地址或 IP 地址范围内的计算机上执行活动时，将触发警报）、特定用户或用户执行该活动时是否触发警报以及是否将对特定文件名或 URL 执行活动。 您还可以配置在组织中的任何用户执行活动时触发警报的条件。 可用的条件取决于所选的活动。
 
@@ -102,13 +102,13 @@ Office 365 提供了内置的通知策略，可帮助确定 Exchange 管理员�
 
 |**默认通知策略**|**说明**|**Category**|**Office 365 企业版订阅**|
 |:-----|:-----|:-----|:-----|
-|**检测到潜在的恶意 URL 单击**|当组织中的用户受[Office 365 ATP 安全链接](https://docs.microsoft.com/office365/securitycompliance/atp-safe-links)的保护时，将生成警报。单击恶意链接。 当通过 Office 365 ATP 标识 URL 判定更改时，或者用户替代 Office 365 ATP 安全链接页面（基于组织的 Office 365 ATP 安全链接策略）时，将触发此事件。 此通知策略具有**高**严重性设置。 对于 Office 365 ATP P2，E5，G5 客户，此警报会自动触发[Office 365 自动调查和响应](https://go.microsoft.com/fwlink/?linkid=2084737)。 有关触发此警报的事件的详细信息，请参阅[设置 Office 365 ATP 安全链接策略](https://docs.microsoft.com/office365/securitycompliance/set-up-atp-safe-links-policies)。|威胁管理|E5/G5 或 Office 365 ATP P2 附加订阅|
+|**检测到潜在的恶意 URL 单击**|当组织中的用户受[Office 365 ATP 安全链接](https://docs.microsoft.com/office365/securitycompliance/atp-safe-links)的保护时，将生成警报。单击恶意链接。 当通过 Office 365 ATP 标识 URL 判定更改时，或者用户替代 Office 365 ATP 安全链接页面（基于组织的 Office 365 ATP 安全链接策略）时，将触发此事件。 此通知策略具有**高**严重性设置。 对于 Office 365 ATP P2，E5，G5 客户，此警报会自动触发[Office 365 自动事件响应](https://go.microsoft.com/fwlink/?linkid=2084737)。 有关触发此警报的事件的详细信息，请参阅[设置 Office 365 ATP 安全链接策略](https://docs.microsoft.com/office365/securitycompliance/set-up-atp-safe-links-policies)。|威胁管理|E5/G5 或 Office 365 ATP P2 附加订阅|
 |**创建转发/重定向规则**|当组织中的某个人为其邮箱创建了将邮件转发或重定向到其他电子邮件帐户的收件箱规则时，将生成警报。 此策略仅跟踪使用 web 上的 Outlook （以前称为 Outlook Web App）或 Exchange Online PowerShell 创建的收件箱规则。 此策略的严重性设置**较低**。 有关在 Outlook 网页版中使用收件箱规则转发和重定向电子邮件的详细信息，请参阅在[web 上使用 outlook 中的规则将邮件自动转发到其他帐户](https://support.office.com/article/1433e3a0-7fb0-4999-b536-50e05cb67fed)。|威胁管理|E1/G1、E3/G3 或 E5/G5|
 |**启动或导出的电子数据展示搜索**|当有人使用安全与合规中心中的内容搜索工具时，将生成警报。 执行以下内容搜索活动时，将触发警报： <br/><br/>•已启动内容搜索<br/>•将导出内容搜索的结果<br/>•导出内容搜索报告<br/><br/>在与电子数据展示事例相关联的前一内容搜索活动执行时，也会触发警报。 此策略的严重性设置为**中等**。 有关内容搜索活动的详细信息，请参阅[在 Office 365 审核日志中搜索电子数据展示活动](search-for-ediscovery-activities-in-the-audit-log.md#ediscovery-activities)。|威胁管理|E1/G1、E3/G3 或 E5/G5|
 |**Exchange 管理员权限提升**|在 Exchange Online 组织中向某人分配管理权限时生成警报。 例如，当用户添加到 Exchange Online 中的 "组织管理" 角色组时。 此策略的严重性设置**较低**。|权限|E1/G1、E3/G3 或 E5/G5|
-|**包含在传递后删除的恶意软件的电子邮件**|在将包含恶意软件的任何邮件传递到组织中的邮箱时生成警报。 如果发生此事件，Office 365 将使用[零小时自动清除](https://docs.microsoft.com/en-us/office365/securitycompliance/zero-hour-auto-purge)从 Exchange Online 邮箱中删除受感染的邮件。 此策略具有**信息性**严重性设置，并自动触发[Office 365 自动调查和响应](https://go.microsoft.com/fwlink/?linkid=2084737)。|威胁管理|E5/G5 或 Office 365 ATP P2 附加订阅|
-|**包含投递后删除的网络钓鱼 Url 的电子邮件**|在将包含网络钓鱼的任何邮件传递到组织中的邮箱时生成警报。 如果发生此事件，Office 365 将使用[零小时自动清除](https://docs.microsoft.com/en-us/office365/securitycompliance/zero-hour-auto-purge)从 Exchange Online 邮箱中删除受感染的邮件。 此策略具有**信息性**严重性设置，并自动触发[Office 365 自动调查和响应](https://go.microsoft.com/fwlink/?linkid=2084737)。|威胁管理|E5/G5 或 Office 365 ATP P2 附加订阅|
-|**用户报告为恶意软件或网络钓鱼的电子邮件**|当组织中的用户将邮件报告为使用报告邮件加载项的仿冒电子邮件时，将生成警报。 此策略有一个**信息性**严重性设置。 有关此加载项的详细信息，请参阅[使用报告消息外接程序](https://support.office.com/article/b5caa9f1-cdf3-4443-af8c-ff724ea719d2)。 对于 Office 365 ATP P2，E5，G5 客户，此警报会自动触发[Office 365 自动调查和响应](https://go.microsoft.com/fwlink/?linkid=2084737)。|威胁管理|E1/G1、E3/G3 或 E5/G5|
+|**包含在传递后删除的恶意软件的电子邮件**|在将包含恶意软件的任何邮件传递到组织中的邮箱时生成警报。 如果发生此事件，Office 365 将使用[零小时自动清除](https://docs.microsoft.com/en-us/office365/securitycompliance/zero-hour-auto-purge)从 Exchange Online 邮箱中删除受感染的邮件。 此策略具有**信息性**严重性设置，并自动触发[Office 365 自动事件响应](https://go.microsoft.com/fwlink/?linkid=2084737)。|威胁管理|E5/G5 或 Office 365 ATP P2 附加订阅|
+|**包含投递后删除的网络钓鱼 Url 的电子邮件**|在将包含网络钓鱼的任何邮件传递到组织中的邮箱时生成警报。 如果发生此事件，Office 365 将使用[零小时自动清除](https://docs.microsoft.com/en-us/office365/securitycompliance/zero-hour-auto-purge)从 Exchange Online 邮箱中删除受感染的邮件。 此策略具有**信息性**严重性设置，并自动触发[Office 365 自动事件响应](https://go.microsoft.com/fwlink/?linkid=2084737)。|威胁管理|E5/G5 或 Office 365 ATP P2 附加订阅|
+|**用户报告为恶意软件或网络钓鱼的电子邮件**|当组织中的用户将邮件报告为使用报告邮件加载项的仿冒电子邮件时，将生成警报。 此策略有一个**信息性**严重性设置。 有关此加载项的详细信息，请参阅[使用报告消息外接程序](https://support.office.com/article/b5caa9f1-cdf3-4443-af8c-ff724ea719d2)。 对于 Office 365 ATP P2，E5，G5 客户，此警报会自动触发[Office 365 自动事件响应](https://go.microsoft.com/fwlink/?linkid=2084737)。|威胁管理|E1/G1、E3/G3 或 E5/G5|
 |**邮件已延迟**|当 Office 365 无法使用连接器将电子邮件发送到内部部署组织或合作伙伴服务器时生成警报。 当发生这种情况时，邮件将在 Office 365 中排队。 当队列中有2000个或更多的邮件超过一小时时，将触发此警报。 此策略具有**高**严重性设置。|邮件流|E1/G1、E3/G3 或 E5/G5|
 |**传递后检测到恶意软件市场**|当包含恶意软件的大量邮件传递到组织中的邮箱时，将生成警报。 如果发生此事件，Office 365 将从 Exchange Online 邮箱中删除受感染的邮件。 此策略具有**高**严重性设置。|威胁管理|E5/G5 或 Office 365 ATP P2 附加订阅|
 |**检测到恶意软件市场活动并阻止**|当有人试图向组织中的用户发送包含特定类型的恶意软件的大量电子邮件时生成警报。 如果发生此事件，则受感染的邮件将被 Office 365 阻止，且不会传递到邮箱。 此策略的严重性设置**较低**。|威胁管理|E5/G5 或 Office 365 ATP P2 附加订阅|

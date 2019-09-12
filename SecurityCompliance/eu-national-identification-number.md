@@ -9,17 +9,17 @@ ms.topic: reference
 ms.service: O365-seccomp
 ms.collection: M365-security-compliance
 localization_priority: Normal
-description: 本主题介绍当数据丢失防护 (DLP) 策略检测到欧盟国家身份证的敏感信息类型时, 会对其进行查找。 此敏感信息类型为每个国家/地区定义不同的模式、关键字和其他证据。
-ms.openlocfilehash: cbcacb3f85877f5a84238468fb52d612d90f5f0b
-ms.sourcegitcommit: 3f3f3ecb28ef65d023f3573f9a4e09a0586d8f53
+description: 本主题介绍当数据丢失防护（DLP）策略检测到欧盟国家身份证的敏感信息类型时，会对其进行查找。 此敏感信息类型为每个国家/地区定义不同的模式、关键字和其他证据。
+ms.openlocfilehash: b784b7509eed899f9f03db96ee5e827b9bf70d2e
+ms.sourcegitcommit: ff370e93b792204547694139ef99bc0848304570
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/21/2019
-ms.locfileid: "36490769"
+ms.lasthandoff: 09/11/2019
+ms.locfileid: "36852744"
 ---
 # <a name="eu-national-identification-number"></a>欧盟国家身份证号
 
-本主题介绍当数据丢失防护 (DLP) 策略检测到欧盟国家身份证的敏感信息类型时, 会对其进行查找。 此敏感信息类型为每个国家/地区定义不同的模式、关键字和其他证据。
+本主题介绍当数据丢失防护（DLP）策略检测到欧盟国家身份证的敏感信息类型时，会对其进行查找。 此敏感信息类型为每个国家/地区定义不同的模式、关键字和其他证据。
   
 ## <a name="austria"></a>奥地利
 
@@ -29,11 +29,11 @@ ms.locfileid: "36490769"
   
 ### <a name="pattern"></a>模式
 
-24个字符:
+24个字符：
   
--  22个字母 (不区分大小写)、数字、反斜杠、正斜杠或加号 
+-  22个字母（不区分大小写）、数字、反斜杠、正斜杠或加号 
     
-- 两个字母 (不区分大小写)、数字、反斜杠、正斜杠、加号或等号
+- 两个字母（不区分大小写）、数字、反斜杠、正斜杠、加号或等号
     
 ### <a name="checksum"></a>校验和
 
@@ -73,23 +73,23 @@ personalausweis republik österreich
   
 ## <a name="belgium"></a>比利时
 
-有关详细信息, 请参阅[敏感信息类型查找的内容](what-the-sensitive-information-types-look-for.md)中的 "比利时国家数" 一节。
+有关详细信息，请参阅[敏感信息类型查找的内容](what-the-sensitive-information-types-look-for.md)中的 "比利时国家数" 一节。
   
 ## <a name="bulgaria"></a>保加利亚语
 
 ### <a name="format"></a>Format
 
-10个数字, 无空格和分隔符
+10个数字，无空格和分隔符
   
 ### <a name="pattern"></a>模式
 
-10个数字, 无空格和分隔符
+10个数字，无空格和分隔符
   
--  与出生日期对应的6个数字 (YYMMDD) 
+-  与出生日期对应的6个数字（YYMMDD） 
     
 - 与出生顺序对应的两个数字
     
-- 与性别对应的一位数字: 男的偶数位和用于女的奇数位
+- 与性别对应的一位数字：男的偶数位和用于女的奇数位
     
 - 一个校验位
     
@@ -161,13 +161,13 @@ edinen grazhdanski nomer
   
 ## <a name="croatia"></a>克罗地亚
 
-有关详细信息, 请参阅[敏感信息类型查找的内容](what-the-sensitive-information-types-look-for.md)部分中的 "克罗地亚恒等号码" 一节。
+有关详细信息，请参阅[敏感信息类型查找的内容](what-the-sensitive-information-types-look-for.md)部分中的 "克罗地亚恒等号码" 一节。
   
 ## <a name="cyprus"></a>塞浦路斯
 
 ### <a name="format"></a>Format
 
-10个数字, 无空格和分隔符
+10个数字，无空格和分隔符
   
 ### <a name="pattern"></a>模式
 
@@ -211,27 +211,27 @@ national identification number
   
 ## <a name="czech-republic"></a>捷克共和国
 
-有关详细信息, 请参阅[敏感信息类型查找的内容](what-the-sensitive-information-types-look-for.md)中的 "捷克国家身份证号码" 一节。
+有关详细信息，请参阅[敏感信息类型查找的内容](what-the-sensitive-information-types-look-for.md)中的 "捷克国家身份证号码" 一节。
   
 ## <a name="denmark"></a>丹麦
 
-有关详细信息, 请参阅[敏感信息类型查找的内容](what-the-sensitive-information-types-look-for.md)中的 "丹麦个人识别码" 一节。
+有关详细信息，请参阅[敏感信息类型查找的内容](what-the-sensitive-information-types-look-for.md)中的 "丹麦个人识别码" 一节。
   
 ## <a name="estonia"></a>爱沙尼亚
 
 ### <a name="format"></a>Format
 
-11个数字, 无空格和分隔符
+11个数字，无空格和分隔符
   
 ### <a name="pattern"></a>模式
 
 11 个数字：
   
-- 一种数字, 对应于性别和出生世纪 (奇数号男, 甚至是数字女; 1-2:19 世纪; 3-4:20 世纪; 5-6:21 世纪)
+- 一种数字，对应于性别和出生世纪（奇数号男，甚至是数字女; 1-2：19世纪; 3-4：20世纪; 5-6：21世纪）
     
-- 六个数字, 对应于出生日期 (YYMMDD)
+- 六个数字，对应于出生日期（YYMMDD）
     
-- 三个数字, 对应于将出生在同一日期的人员组成的序列号
+- 三个数字，对应于将出生在同一日期的人员组成的序列号
     
 - 一个校验位
     
@@ -288,19 +288,19 @@ id-kaart
   
 ## <a name="finland"></a>芬兰
 
-有关详细信息, 请参阅[敏感信息类型查找的内容](what-the-sensitive-information-types-look-for.md)中的 "芬兰国 ID" 一节。
+有关详细信息，请参阅[敏感信息类型查找的内容](what-the-sensitive-information-types-look-for.md)中的 "芬兰国 ID" 一节。
   
 ## <a name="france"></a>法国
 
-有关详细信息, 请参阅[敏感信息类型查找的内容](what-the-sensitive-information-types-look-for.md)中的 "法国国家 ID 卡 (CNI)" 一节。
+有关详细信息，请参阅[敏感信息类型查找的内容](what-the-sensitive-information-types-look-for.md)中的 "法国国家 ID 卡（CNI）" 一节。
   
 ## <a name="germany"></a>德国
 
-有关详细信息, 请参阅[敏感信息类型查找的内容](what-the-sensitive-information-types-look-for.md)中的 "德国身份证号码" 一节。
+有关详细信息，请参阅[敏感信息类型查找的内容](what-the-sensitive-information-types-look-for.md)中的 "德国身份证号码" 一节。
   
 ## <a name="greece"></a>希腊
 
-有关详细信息, 请参阅[敏感信息类型查找的内容](what-the-sensitive-information-types-look-for.md)中的 "希腊国家 ID 卡" 一节。
+有关详细信息，请参阅[敏感信息类型查找的内容](what-the-sensitive-information-types-look-for.md)中的 "希腊国家 ID 卡" 一节。
   
 ## <a name="hungary"></a>匈牙利
 
@@ -312,9 +312,9 @@ id-kaart
 
 11 个数字：
   
--  一种与性别对应的数字 (1--男, 2-母, 其他号码也适用于在两个公民前出生的公民的1900或公民) 
+-  一种与性别对应的数字（1--男，2-母，其他号码也适用于在两个公民前出生的公民的1900或公民） 
     
-- 与出生日期对应的6个数字 (YYMMDD)
+- 与出生日期对应的6个数字（YYMMDD）
     
 - 与序列号对应的三个数字
     
@@ -370,21 +370,21 @@ személyazonosító igazolvány
 
 指定模式中的字母、数字和空格的九个字符的组合
   
-从01年1月2013到现在:
+从01年1月2013到现在：
   
 -  七个数字  
     
 - 一个校验位
     
-- 一个空格或大写的字母 "W" (区分大小写)
+- 一个空格或大写的字母 "W" （区分大小写）
     
-在01月1日之前1月 2013:
+在01月1日之前1月2013：
   
 -  七个数字  
     
 - 一个校验位
     
-- 一个空格或大写字母 (区分大小写)
+- 一个空格或大写字母（区分大小写）
     
 ### <a name="checksum"></a>校验和
 
@@ -441,11 +441,11 @@ uimh. psp
 
 ### <a name="format"></a>Format
 
-在指定模式中, 由16个字符组成的字母和数字的组合
+在指定模式中，由16个字符组成的字母和数字的组合
   
 ### <a name="pattern"></a>模式
 
-字母和数字的16个字符的组合:
+字母和数字的16个字符的组合：
   
 - 与系列名称中的前三个辅音对应的三个字母
     
@@ -453,11 +453,11 @@ uimh. psp
     
 - 与出生年份的最后一个数字对应的两个数字
     
-- 一个与出生月份的字母对应的字母–字母按字母顺序使用, 但仅使用字母 A 到 E、H、L、M、P、R 和 T (因此, 一月为 A, 10 月为 R)
+- 一个与出生月份的字母对应的字母–字母按字母顺序使用，但仅使用字母 A 到 E、H、L、M、P、R 和 T （因此，一月为 A，10月为 R）
     
-- 与出生月份的某一天对应的两个数字, 为了区分 genders, 40 已添加到女性的出生日。
+- 与出生月份的某一天对应的两个数字，为了区分 genders，40已添加到女性的出生日。
     
-- 与专用于 municipality 的区域代码相对应的四个数字 (国家/地区内的国家/地区代码适用于外国国家)
+- 与专用于 municipality 的区域代码相对应的四个数字（国家/地区内的国家/地区代码适用于外国国家）
     
 - 一个奇偶校验数字
     
@@ -527,15 +527,15 @@ codice fiscale
   
 ### <a name="pattern"></a>模式
 
-11个数字和一个连字符:
+11个数字和一个连字符：
   
--  与出生日期对应的6个数字 (DDMMYY) 
+-  与出生日期对应的6个数字（DDMMYY） 
     
 - 一个连字符 
     
-- 一个数字, 对应于出生世纪 ("0" 表示19世纪, "1" 表示20世纪, "2" 表示21世纪)
+- 一个数字，对应于出生世纪（"0" 表示19世纪，"1" 表示20世纪，"2" 表示21世纪）
     
-- 四个数字, 随机生成
+- 四个数字，随机生成
     
 ### <a name="checksum"></a>校验和
 
@@ -587,15 +587,15 @@ personalcodeno#
 
 ### <a name="format"></a>Format
 
-11个数字, 无空格和分隔符
+11个数字，无空格和分隔符
   
 ### <a name="pattern"></a>模式
 
-11个数字, 不含空格和分隔符:
+11个数字，不含空格和分隔符：
   
 - 一个与人的性别和出生世纪对应的数字
     
--  与出生日期对应的6个数字 (YYMMDD) 
+-  与出生日期对应的6个数字（YYMMDD） 
     
 - 与出生日期的序列号对应的三个数字
     
@@ -660,7 +660,7 @@ asmens kodas.
 
 ### <a name="format"></a>Format
 
-11个数字, 无空格和分隔符
+11个数字，无空格和分隔符
   
 ### <a name="pattern"></a>模式
 
@@ -668,7 +668,7 @@ asmens kodas.
   
 - 一个与人的性别和出生世纪对应的数字
     
--  与出生日期对应的6个数字 (YYMMDD) 
+-  与出生日期对应的6个数字（YYMMDD） 
     
 - 与出生日期的序列号对应的三个数字
     
@@ -741,11 +741,11 @@ eindeutigeid#
   
 ### <a name="pattern"></a>模式
 
-七位数字后跟一个字母:
+七位数字后跟一个字母：
   
 -  七个数字  
     
-- 一个大写字母 (区分大小写)
+- 一个大写字母（区分大小写）
     
 ### <a name="checksum"></a>校验和
 
@@ -802,7 +802,7 @@ numru ta "identità uniku
 
 ### <a name="format"></a>Format
 
-9个数字, 不带空格或分隔符
+9个数字，不带空格或分隔符
   
 ### <a name="pattern"></a>模式
 
@@ -865,17 +865,17 @@ uniek identiteitsnummer
   
 ## <a name="poland"></a>波兰
 
-有关详细信息, 请参阅[敏感信息类型查找的内容](what-the-sensitive-information-types-look-for.md)中的 "波兰国家 ID (PESEL)" 一节。
+有关详细信息，请参阅[敏感信息类型查找的内容](what-the-sensitive-information-types-look-for.md)中的 "波兰国家 ID （PESEL）" 一节。
   
 ## <a name="portugal"></a>葡萄牙
 
-有关详细信息, 请参阅[敏感信息类型查找的内容](what-the-sensitive-information-types-look-for.md)中的 "葡萄牙公民卡片号" 部分。
+有关详细信息，请参阅[敏感信息类型查找的内容](what-the-sensitive-information-types-look-for.md)中的 "葡萄牙公民卡片号" 部分。
   
 ## <a name="romania"></a>罗马尼亚
 
 ### <a name="format"></a>Format
 
-13位数, 不含空格和分隔符
+13位数，不含空格和分隔符
   
 ### <a name="pattern"></a>模式
 
@@ -956,11 +956,11 @@ numărpersonalunic#
 
 ### <a name="format"></a>Format
 
-10个数字, 包含一个反斜杠
+10个数字，包含一个反斜杠
   
 ### <a name="pattern"></a>模式
 
-10个数字, 包含一个反斜杠:
+10个数字，包含一个反斜杠：
   
 ### <a name="checksum"></a>校验和
 
@@ -1025,17 +1025,17 @@ rodne cislo
 
 ### <a name="format"></a>Format
 
-13位数, 不含空格或分隔符
+13位数，不含空格或分隔符
   
 ### <a name="pattern"></a>模式
 
-指定模式中的13个数字:
+指定模式中的13个数字：
   
--  与出生日期 (DDMMLLL) 对应的七位数, 其中 "LLL" 对应于出生年份的后三个数字 
+-  与出生日期（DDMMLLL）对应的七位数，其中 "LLL" 对应于出生年份的后三个数字 
     
 - 与出生区域对应的两个数字
     
-- 三个数字, 对应于出生在同一天的人的性别和序列号组合 (000-499 的男和500-999 的女)
+- 三个数字，对应于出生在同一天的人的性别和序列号组合（000-499 的男和500-999 的女）
     
 - 一个校验位
     
@@ -1096,15 +1096,15 @@ emšo
 
 ### <a name="format"></a>Format
 
-七位数字后跟一个字符
+8位数，后跟一个字符
   
 ### <a name="pattern"></a>模式
 
-七位数字后跟一个字符
+8位数，后跟一个字符
   
-- 七个数字 
+- 八个数字
     
-- 一个数字或字母 (不区分大小写)
+- 一个数字或字母（不区分大小写）
     
 ### <a name="checksum"></a>校验和
 
@@ -1178,7 +1178,7 @@ identidadúnico#
   
 ## <a name="sweden"></a>瑞典
 
-有关详细信息, 请参阅[敏感信息类型查找的内容](what-the-sensitive-information-types-look-for.md)中的 "瑞典国家 ID" 一节。
+有关详细信息，请参阅[敏感信息类型查找的内容](what-the-sensitive-information-types-look-for.md)中的 "瑞典国家 ID" 一节。
   
 ## <a name="see-also"></a>另请参阅
 

@@ -1,7 +1,7 @@
 ---
 title: Office 365 威胁调查和响应
-ms.author: deniseb
-author: denisebmsft
+ms.author: tracyp
+author: msfttracyp
 manager: dansimp
 ms.date: 08/23/2019
 audience: Admin
@@ -15,12 +15,12 @@ ms.assetid: 32405da5-bee1-4a4b-82e5-8399df94c512
 ms.collection:
 - M365-security-compliance
 description: 了解 Office 365 中的威胁智能功能。高级威胁防护可帮助您研究组织的威胁、响应恶意软件、网络钓鱼和 Office 365 已代表您检测到的其他攻击，并搜索威胁指示器.
-ms.openlocfilehash: 1d31f3a464060f5b72730e15895d918e61aa09a1
-ms.sourcegitcommit: 4a2bde56178609e75c1ad7ecad2db5e049fc0c45
+ms.openlocfilehash: 0edf68f3383759a4cffd9cb7c25260a51913beb0
+ms.sourcegitcommit: ff370e93b792204547694139ef99bc0848304570
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/05/2019
-ms.locfileid: "36761648"
+ms.lasthandoff: 09/11/2019
+ms.locfileid: "36852764"
 ---
 # <a name="office-365-threat-investigation-and-response"></a>Office 365 威胁调查和响应
 
@@ -74,7 +74,7 @@ Office 365 中的威胁调查和响应功能[高级威胁防护](office-365-atp.
 
 ### <a name="automated-investigation-and-response"></a>自动调查和响应
 
-使用自动调查和响应（空气）功能来节省与内容、设备和人员相关的时间和精力，以防止组织中的威胁带来风险。 只要触发了某些警报，或安全操作团队启动时，AIR 进程就可以开始。 若要了解详细信息，请参阅[使用 Office 365 的自动化调查和响应（AIR）](automated-investigation-response-office.md)。 
+使用自动调查和响应（空气）功能来节省与内容、设备和人员相关的时间和精力，以防止组织中的威胁带来风险。 只要触发了某些警报，或安全操作团队启动时，AIR 进程就可以开始。 若要了解详细信息，请参阅[使用 Office 365 的自动化事件响应（AIR）](automated-investigation-response-office.md)。 
   
 ## <a name="threat-intelligence-widgets"></a>威胁智能小部件
 
