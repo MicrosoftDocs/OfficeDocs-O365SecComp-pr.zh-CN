@@ -132,5 +132,4 @@ ms.locfileid: "34156854"
 - [在 Office 365 中检测并修正 Outlook 规则和自定义窗体注入攻击](detect-and-remediate-outlook-rules-forms-attack.md)
 - [Internet 犯罪投诉中心](http://www.ic3.gov/preventiontips.aspx)
 - [证券交易委员会 -“网络钓鱼”诈骗](http://www.sec.gov/investor/pubs/phishing.htm)
-- 
-  [使用报告消息加载项](https://support.office.com/zh-CN/article/Use-the-Report-Message-add-in-b5caa9f1-cdf3-4443-af8c-ff724ea719d2)直接向 Microsoft 和你的管理员报告垃圾邮件
+- [使用报告消息加载项](https://support.office.com/zh-CN/article/Use-the-Report-Message-add-in-b5caa9f1-cdf3-4443-af8c-ff724ea719d2)直接向 Microsoft 和你的管理员报告垃圾邮件

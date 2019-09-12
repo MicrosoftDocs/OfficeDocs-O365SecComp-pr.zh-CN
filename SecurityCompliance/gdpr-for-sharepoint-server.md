@@ -35,9 +35,7 @@ ms.locfileid: "34152734"
 
 对于文件共享和 SharePoint 站点和库，推荐的方法包括下列步骤：
 
-1.  
-  **
-  [安装并配置 Azure 信息保护扫描程序。](https://docs.microsoft.com/zh-CN/azure/information-protection/rms-client/client-admin-guide-install#options-to-install-the-azure-information-protection-client-for-users)**
+1.  **[安装并配置 Azure 信息保护扫描程序。](https://docs.microsoft.com/zh-CN/azure/information-protection/rms-client/client-admin-guide-install#options-to-install-the-azure-information-protection-client-for-users)**
 
     -   决定要使用的敏感数据类型。
 
