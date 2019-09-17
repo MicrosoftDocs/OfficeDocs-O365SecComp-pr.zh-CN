@@ -2,6 +2,7 @@
 
 # 入门
 ## [合规中心的新增功能](whats-new.md)
+## [最新的合规性内容更新](new-updated-compliance-content.md)
 ## [Office 365 安全路线图](security-roadmap.md)
 ## [配置 Office 365 租户以提高安全性](tenant-wide-setup-for-increased-security.md)
 ## [新的 Microsoft 365 安全中心和 Microsoft 365 合规中心](microsoft-security-and-compliance.md)
