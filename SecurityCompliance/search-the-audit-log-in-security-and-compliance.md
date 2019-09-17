@@ -15,18 +15,18 @@ search.appverid:
 - MET150
 ms.assetid: 0d4d0f35-390b-4518-800e-0c7ec95e946c
 description: '使用安全与合规中心搜索统一的审核日志，以查看 Office 365 组织中的用户和管理员活动。 '
-ms.openlocfilehash: f10c6b488683201a2980702cc83efe97bf54f046
-ms.sourcegitcommit: 50a2654d6d56249c3f836607f436446049be7833
+ms.openlocfilehash: 9fa2d1b2d047638ade395a2602ba6f6c8bf2ea79
+ms.sourcegitcommit: 6cc11f46f27a8c4f460100ba4da20c23bfd96f7e
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/11/2019
-ms.locfileid: "36838162"
+ms.lasthandoff: 09/12/2019
+ms.locfileid: "36877311"
 ---
 # <a name="search-the-audit-log-in-the-security--compliance-center"></a>在安全与合规中心搜索审核日志
 
 ## <a name="introduction"></a>简介
 
-需要了解用户是否查看了特定文档或从其邮箱中清除了某项？ 如果是，你可以使用 Office 365 安全 &amp; 合规中心搜索统一的审核日志，以查看 Office 365 组织中的用户和管理员活动。 为什么是统一的审核日志？ 因为你可以在 Office 365 中搜索以下类型的用户和管理员活动：
+需要了解用户是否查看了特定文档或从其邮箱中清除了某项？ 如果是，可以使用 Office 365 安全与合规中心搜索统一的审核日志，以查看 Office 365 组织中的用户和管理员活动。 为什么是统一的审核日志？ 因为你可以在 Office 365 中搜索以下类型的用户和管理员活动：
 
 - SharePoint Online 和 OneDrive for Business 中的用户活动
 
@@ -74,9 +74,12 @@ ms.locfileid: "36838162"
 
 - 当用户或管理员执行审核活动时，将生成审核记录并将其存储在组织的 Office 365 审核日志中。 保留审核记录（并且可在审核日志中搜索）的时间长度取决于你的 Office 365 订阅，具体而言是分配给特定用户的许可证类型。
 
-  - **Office 365 E3：** 审核记录可保留 90 天。 这意味着你可以在审核日志中搜索过去 90 天内执行的活动。
+  - **Office 365 E3：** 审核记录可保留 90 天。 这意味着可以在审核日志中搜索过去 90 天内执行的活动。
 
-  - **Office 365 E5：** 审核记录也可保留 90 天。 对于 E5 用户以及具有 E3 许可证和 Office 365 高级合规版附加许可证的用户，最终可将审核记录保留一年。
+    > [!NOTE]
+    > 即使启用了默认启用的邮箱审核，也可能会发现无法在安全与合规中心的审核日志搜索中找到某些用户的邮箱审核事件，也无法通过 Office 365 管理活动 API 找到这些事件。 有关详细信息，请参阅[有关邮箱审核日志记录的详细信息](enable-mailbox-auditing.md#more-information)。
+
+  - **Office 365 E5：** 审核记录也保留 90 天。 对于 E5 用户以及具有 E3 许可证和 Office 365 高级合规版附加许可证的用户，最终可将审核记录保留一年。
 
     > [!NOTE]
     > 对于 E5 组织（或对于具有高级合规版附加许可证的 E3 组织内的用户），针对审核记录的一年保留期的个人预览版计划已对新注册关闭。 当公共预览版提供一年保留期或正式发布时，本文将更新。
@@ -556,7 +559,7 @@ ms.locfileid: "36838162"
 |已删除用户|删除用户|已删除 Office 365 用户帐户。|
 |重置用户密码|重置用户密码|管理员重置了用户的密码。|
 |已设置强制用户更改密码的属性|设置强制更改用户密码|管理员设置了强制用户在下次登录到 Office 365 时更改密码的属性。|
-|设置许可证属性|设置许可证属性|管理员修改了分配给用户的许可证属性。|
+|设置许可证属性|设置许可证属性|管理员修改分配给用户的许可证属性。|
 |已更新用户|更新用户|管理员更改用户帐户的一个或多个属性。 有关可更新用户属性的列表，请参阅 [Azure Active Directory 审核报告事件](https://go.microsoft.com/fwlink/p/?LinkID=616549)中的“更新用户属性”部分。|
 ||||
 
